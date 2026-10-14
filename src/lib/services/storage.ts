@@ -38,12 +38,14 @@ export const storageService = {
     return emptyData;
   },
 
-  save(data: AppData): void {
+  save(data: AppData): boolean {
     try {
       localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
       notifyListeners();
+      return true;
     } catch (error) {
       console.error("Error saving data to localStorage:", error);
+      return false;
     }
   },
 

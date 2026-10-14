@@ -77,11 +77,11 @@ export default function RootLayout({
 			</head>
 			<body className="min-h-dvh">
 				<UIProvider>
-					<PlaythroughProvider>
-						<ToastProvider>
+					<ToastProvider>
+						<PlaythroughProvider>
 							<AppShell>{children}</AppShell>
-						</ToastProvider>
-					</PlaythroughProvider>
+						</PlaythroughProvider>
+					</ToastProvider>
 				</UIProvider>
 			</body>
 		</html>

@@ -113,4 +113,26 @@
     outline: 2px solid var(--ring);
     outline-offset: 2px;
   }
+
+  /* Tailwind 4 resets buttons to the default cursor. Every control a user can click needs a pointer. */
+  a[href],
+  button:not(:disabled),
+  summary,
+  select:not(:disabled),
+  label[for],
+  [role="button"]:not([aria-disabled="true"]),
+  [role="tab"],
+  [role="switch"],
+  [role="menuitem"],
+  input:is([type="checkbox"], [type="radio"], [type="file"], [type="date"]):not(
+      :disabled
+    ) {
+    cursor: pointer;
+  }
+
+  button:disabled,
+  select:disabled,
+  [aria-disabled="true"] {
+    cursor: not-allowed;
+  }
 }

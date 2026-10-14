@@ -16,7 +16,7 @@ const formatSaved = (savedAt: Date | null, now: number) => {
 };
 
 export function useSavedLabel() {
-	const { lastSavedAt } = usePlaythrough();
+	const { lastSavedAt, saveFailed } = usePlaythrough();
 	const [now, setNow] = useState(() => Date.now());
 
 	useEffect(() => {
@@ -24,6 +24,7 @@ export function useSavedLabel() {
 		return () => clearInterval(timer);
 	}, []);
 
+	if (saveFailed) return "Not saved, storage is full";
 	return formatSaved(lastSavedAt, Math.max(now, lastSavedAt?.getTime() ?? 0));
 }
 

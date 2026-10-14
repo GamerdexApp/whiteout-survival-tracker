@@ -6,8 +6,6 @@ import { Badge } from "@/comps/ui/Badge";
 import { Card } from "@/comps/ui/Card";
 
 const buildPhaseByHref: Record<string, number> = {
-	"/chiefs": 2,
-	"/settings": 2,
 	"/buildings": 3,
 	"/resources": 4,
 	"/bonuses": 4,
@@ -38,11 +36,13 @@ type PageProps = { params: Promise<{ slug: string[] }> };
 const findRoute = async (params: PageProps["params"]) => {
 	const { slug } = await params;
 	const href = `/${slug.join("/")}`;
-	return routes.find((route) => route.href === href);
+	return routes.find((route) => route.href === href && route.href in buildPhaseByHref);
 };
 
 export const generateStaticParams = () =>
-	routes.map((route) => ({ slug: route.href.slice(1).split("/") }));
+	routes
+		.filter((route) => route.href in buildPhaseByHref)
+		.map((route) => ({ slug: route.href.slice(1).split("/") }));
 
 export const dynamicParams = false;
 

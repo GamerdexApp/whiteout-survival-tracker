@@ -1,8 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import type { ButtonHTMLAttributes, KeyboardEvent, ReactNode } from "react";
+import { useDismiss } from "@/lib/hooks/useDismiss";
 
 interface TriggerState {
 	open: boolean;
@@ -23,7 +24,7 @@ export function Menu({ label, trigger, children, className = "" }: MenuProps) {
 	const containerRef = useRef<HTMLDivElement>(null);
 	const panelRef = useRef<HTMLDivElement>(null);
 
-	const close = () => setOpen(false);
+	const close = useCallback(() => setOpen(false), []);
 
 	const focusTrigger = () => {
 		containerRef.current?.querySelector<HTMLElement>("[aria-haspopup]")?.focus();
@@ -33,13 +34,9 @@ export function Menu({ label, trigger, children, className = "" }: MenuProps) {
 		if (!open) return;
 
 		panelRef.current?.querySelector<HTMLElement>(MENU_ITEM_SELECTOR)?.focus();
-
-		const closeOnOutsidePress = (event: PointerEvent) => {
-			if (!containerRef.current?.contains(event.target as Node)) setOpen(false);
-		};
-		document.addEventListener("pointerdown", closeOnOutsidePress);
-		return () => document.removeEventListener("pointerdown", closeOnOutsidePress);
 	}, [open]);
+
+	useDismiss(containerRef, open, close);
 
 	const handleKeyDown = (event: KeyboardEvent<HTMLDivElement>) => {
 		if (event.key === "Escape") {
@@ -85,29 +82,47 @@ export function Menu({ label, trigger, children, className = "" }: MenuProps) {
 }
 
 const menuItemClasses =
-	"flex min-h-11 w-full items-center justify-between gap-2 rounded-md px-2.5 py-1 text-left hover:bg-tint lg:min-h-9";
+	"flex min-h-11 w-full items-center rounded-md px-2.5 py-1 text-left hover:bg-tint lg:min-h-9";
 
 interface MenuItemProps {
 	children: ReactNode;
+	role?: "menuitem" | "button";
 	onSelect?: () => void;
 	href?: string;
 	active?: boolean;
 	className?: string;
 }
 
-export function MenuItem({ children, onSelect, href, active, className = "" }: MenuItemProps) {
+export function MenuItem({
+	children,
+	role = "menuitem",
+	onSelect,
+	href,
+	active,
+	className = "",
+}: MenuItemProps) {
 	const classes = `${menuItemClasses} ${active ? "bg-tint" : ""} ${className}`;
 
 	if (href) {
 		return (
-			<Link role="menuitem" href={href} onClick={onSelect} className={classes}>
+			<Link
+				role={role === "button" ? undefined : role}
+				href={href}
+				onClick={onSelect}
+				className={classes}
+			>
 				{children}
 			</Link>
 		);
 	}
 
 	return (
-		<button type="button" role="menuitem" onClick={onSelect} className={classes}>
+		<button
+			type="button"
+			role={role === "button" ? undefined : role}
+			onClick={onSelect}
+			className={classes}
+		>
 			{children}
 		</button>
 	);

@@ -4,6 +4,9 @@ import React, { createContext, useContext, useEffect, useRef, useState } from "r
 import { LuX } from "react-icons/lu";
 import { Button } from "./Button";
 import { IconButton } from "./IconButton";
+import { SectionLabel } from "./SectionLabel";
+
+type ToastVariant = "success" | "info" | "undo" | "error";
 
 interface ToastAction {
 	label: string;
@@ -11,17 +14,32 @@ interface ToastAction {
 }
 
 interface ToastOptions {
-	message: string;
+	variant: ToastVariant;
+	title: string;
+	message?: string;
 	action?: ToastAction;
-	durationMs?: number;
 }
 
 interface ToastItem extends ToastOptions {
 	id: number;
 }
 
-const DEFAULT_DURATION_MS = 5_000;
-export const UNDO_DURATION_MS = 10_000;
+const SECOND_MS = 1_000;
+
+// An error stays until the player dismisses it.
+const autoCloseMs: Record<ToastVariant, number | null> = {
+	success: 6 * SECOND_MS,
+	info: 6 * SECOND_MS,
+	undo: 10 * SECOND_MS,
+	error: null,
+};
+
+const variantStyles: Record<ToastVariant, { label: string; className: string }> = {
+	success: { label: "Success", className: "text-kept" },
+	info: { label: "Info", className: "text-added" },
+	undo: { label: "Undo", className: "text-changed" },
+	error: { label: "Error", className: "text-danger" },
+};
 
 const ToastContext = createContext<((options: ToastOptions) => void) | undefined>(undefined);
 
@@ -38,11 +56,15 @@ export function ToastProvider({ children }: { children: React.ReactNode }) {
 
 	const show = (options: ToastOptions) => {
 		const id = nextIdRef.current++;
-		setToasts((current) => [...current, { ...options, id }]);
-		timersRef.current.set(
-			id,
-			setTimeout(() => dismiss(id), options.durationMs ?? DEFAULT_DURATION_MS)
-		);
+		setToasts((current) => [{ ...options, id }, ...current]);
+
+		const closeAfterMs = autoCloseMs[options.variant];
+		if (closeAfterMs !== null) {
+			timersRef.current.set(
+				id,
+				setTimeout(() => dismiss(id), closeAfterMs)
+			);
+		}
 	};
 
 	useEffect(() => {
@@ -56,18 +78,23 @@ export function ToastProvider({ children }: { children: React.ReactNode }) {
 			<div
 				role="status"
 				aria-live="polite"
-				className="pointer-events-none fixed inset-x-4 bottom-4 z-50 flex flex-col items-center gap-2"
+				className="pointer-events-none fixed inset-x-4 bottom-4 z-50 flex flex-col items-stretch gap-2 lg:left-auto lg:w-96"
 			>
 				{toasts.map((toast) => (
 					<div
 						key={toast.id}
-						className="border-line bg-surface text-ink pointer-events-auto flex w-full max-w-md items-center gap-2 rounded-md border-[1.5px] py-1 pr-1 pl-4"
+						className="border-line bg-surface text-ink pointer-events-auto flex items-start gap-2 rounded-md border-[1.5px] py-2 pr-1 pl-4"
 					>
-						<span className="flex-1 py-2">{toast.message}</span>
+						<div className="flex min-w-0 flex-1 flex-col gap-0.5 py-1">
+							<SectionLabel className={variantStyles[toast.variant].className}>
+								{variantStyles[toast.variant].label}
+							</SectionLabel>
+							<span className="font-medium">{toast.title}</span>
+							{toast.message && <span className="text-muted">{toast.message}</span>}
+						</div>
 						{toast.action && (
 							<Button
-								variant="ghost"
-								className="text-link"
+								variant="link"
 								onClick={() => {
 									toast.action?.onAction();
 									dismiss(toast.id);
