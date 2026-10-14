@@ -1,0 +1,23 @@
+import coreWebVitals from "eslint-config-next/core-web-vitals";
+
+const config = [
+  ...coreWebVitals,
+  {
+    rules: {
+      "@next/next/no-img-element": "off",
+    },
+  },
+  {
+    ignores: [
+      "node_modules/",
+      ".next/",
+      "out/",
+      "public/",
+      "*.config.js",
+      "*.config.mjs",
+      "dist/",
+    ],
+  },
+];
+
+export default config;

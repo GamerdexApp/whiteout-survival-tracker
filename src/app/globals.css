@@ -1,0 +1,116 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --bg: #f1f6fb;
+  --surface: #ffffff;
+  --line: #cfddeb;
+  --track: #e0eaf4;
+  --ink: #0f1b2d;
+  --muted: #4b5e75;
+  --primary: #1d5fb0;
+  --on-primary: #ffffff;
+  --tint: #e0ecfa;
+  --link: #1d5fb0;
+  --danger: #b3261e;
+  --warn: #8a5a00;
+  --scrim: rgba(15, 27, 45, 0.55);
+  --sb-bg: #0e2240;
+  --sb-text: #eaf3ff;
+  --sb-muted: #9fb6d3;
+  --sb-line: #244268;
+  --sb-active-bg: #7cc4ff;
+  --sb-active-text: #0b1b33;
+  --accent: #7cc4ff;
+  --kept: #1e7a3c;
+  --changed: #8a5a00;
+  --added: #1d5fb0;
+  --fixed: #4b4fa3;
+  --locked: #5a6b80;
+  --ring: var(--primary);
+}
+
+.dark {
+  --bg: #0a1220;
+  --surface: #111c2f;
+  --line: #223652;
+  --track: #1a2a44;
+  --ink: #eaf2ff;
+  --muted: #9db0ca;
+  --primary: #7cc4ff;
+  --on-primary: #06182e;
+  --tint: #16304f;
+  --link: #9bd0ff;
+  --danger: #ff9b93;
+  --warn: #f2b84b;
+  --scrim: rgba(0, 0, 0, 0.62);
+  --sb-bg: #060c16;
+  --sb-text: #eaf2ff;
+  --sb-muted: #8fa4c2;
+  --sb-line: #18263c;
+  --sb-active-bg: #7cc4ff;
+  --sb-active-text: #06182e;
+  --accent: #7cc4ff;
+  --kept: #6ee0a0;
+  --changed: #f2b84b;
+  --added: #9bd0ff;
+  --fixed: #b0b3f5;
+  --locked: #8fa4c2;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-line: var(--line);
+  --color-track: var(--track);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-primary: var(--primary);
+  --color-on-primary: var(--on-primary);
+  --color-tint: var(--tint);
+  --color-link: var(--link);
+  --color-danger: var(--danger);
+  --color-warn: var(--warn);
+  --color-scrim: var(--scrim);
+  --color-sb-bg: var(--sb-bg);
+  --color-sb-text: var(--sb-text);
+  --color-sb-muted: var(--sb-muted);
+  --color-sb-line: var(--sb-line);
+  --color-sb-active-bg: var(--sb-active-bg);
+  --color-sb-active-text: var(--sb-active-text);
+  --color-accent: var(--accent);
+  --color-kept: var(--kept);
+  --color-changed: var(--changed);
+  --color-added: var(--added);
+  --color-fixed: var(--fixed);
+  --color-locked: var(--locked);
+
+  --font-sans: var(--font-plex-sans), system-ui, sans-serif;
+  --font-mono: var(--font-plex-mono), ui-monospace, monospace;
+  --font-brand: var(--font-lilita), var(--font-plex-sans), sans-serif;
+}
+
+@layer base {
+  html {
+    color-scheme: light;
+  }
+
+  html.dark {
+    color-scheme: dark;
+  }
+
+  body {
+    background-color: var(--bg);
+    color: var(--ink);
+    font-family: var(--font-sans);
+    font-size: 14px;
+    line-height: 1.4;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 2px;
+  }
+}
