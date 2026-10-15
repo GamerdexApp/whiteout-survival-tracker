@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { useRouter, useSearchParams } from "next/navigation";
 import { Suspense } from "react";
 import { allBuildings, allFacilities } from "@/data/game/buildings";
@@ -10,8 +11,8 @@ import { PageHeader } from "@/comps/layout/PageHeader";
 import { Tabs } from "@/comps/ui/Tabs";
 
 const tabs = [
-	{ id: "buildings", label: "Buildings", count: allBuildings.length },
-	{ id: "facilities", label: "Facilities", count: allFacilities.length },
+	{ id: "buildings", count: allBuildings.length },
+	{ id: "facilities", count: allFacilities.length },
 ] as const;
 
 type BuildingsTabId = (typeof tabs)[number]["id"];
@@ -20,17 +21,18 @@ const parseTab = (value: string | null): BuildingsTabId =>
 	tabs.find((tab) => tab.id === value)?.id ?? "buildings";
 
 function BuildingsContent() {
+	const t = useTranslations("buildings");
 	const router = useRouter();
 	const activeTab = parseTab(useSearchParams().get("tab"));
 
 	return (
-		<ChiefGate title="Buildings">
+		<ChiefGate title={t("title")}>
 			{(chief) => (
 				<>
-					<PageHeader title="Buildings" />
+					<PageHeader title={t("title")} />
 					<Tabs
-						label="Buildings"
-						tabs={[...tabs]}
+						label={t("title")}
+						tabs={tabs.map((tab) => ({ ...tab, label: t(`tabs.${tab.id}`) }))}
 						activeId={activeTab}
 						onChange={(id) => router.replace(`/buildings?tab=${id}`, { scroll: false })}
 					>

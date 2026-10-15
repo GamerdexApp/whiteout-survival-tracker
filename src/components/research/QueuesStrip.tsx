@@ -1,8 +1,10 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import type { Playthrough } from "@/types/app";
 import type { ResearchQueueId } from "@/types/app";
-import { queueJob, RESEARCH_QUEUES } from "@/service/queues";
+import { formatNumber } from "@/lib/format";
+import { queueJob, RESEARCH_QUEUES, researchQueueLabel } from "@/service/queues";
 import { findResearch } from "@/data/game/research";
 import { JobCard } from "@/comps/queues/JobCard";
 
@@ -12,14 +14,13 @@ interface QueuesStripProps {
 }
 
 export function QueuesStrip({ chief, onManage }: QueuesStripProps) {
+	const t = useTranslations("research");
+
 	return (
-		<section className="flex flex-col gap-2" aria-label="Research queues">
+		<section className="flex flex-col gap-2" aria-label={t("queuesStrip.title")}>
 			<div className="flex flex-wrap items-baseline justify-between gap-2">
-				<h2 className="font-semibold">Research queues</h2>
-				<span className="text-muted text-xs">
-					Growth, Economy and Battle share one queue. T11 and T12 use the War Academy
-					queue.
-				</span>
+				<h2 className="font-semibold">{t("queuesStrip.title")}</h2>
+				<span className="text-muted text-xs">{t("queuesStrip.note")}</span>
 			</div>
 			<div className="grid gap-3 md:grid-cols-2">
 				{RESEARCH_QUEUES.map((queue) => {
@@ -28,11 +29,15 @@ export function QueuesStrip({ chief, onManage }: QueuesStripProps) {
 					return (
 						<JobCard
 							key={queue.id}
-							label={`${queue.name}, ${queue.tabs}`}
-							idleText="One research at a time. Press Start upgrade to begin one."
+							label={researchQueueLabel(queue.id)}
+							idleText={t("queuesStrip.idle")}
 							title={
 								job
-									? `${node?.name ?? job.nodeId}, level ${job.from} to ${job.to}`
+									? t("jobTitle", {
+											name: node?.name ?? job.nodeId,
+											from: formatNumber(job.from),
+											to: formatNumber(job.to),
+										})
 									: undefined
 							}
 							job={job}

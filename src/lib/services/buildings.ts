@@ -1,3 +1,4 @@
+import { translator } from "@/i18n/formatter";
 import type {
   Building,
   BuildingCategory,
@@ -16,7 +17,7 @@ import {
   SHELTER_ID,
 } from "@/data/game/buildings";
 
-export const NOT_BUILT_LABEL = "Not built";
+export const notBuiltLabel = () => translator("buildings")("notBuilt");
 
 export const levelOrder = (
   building: Building,
@@ -44,11 +45,16 @@ export const requirementText = (requirement: {
   building: string;
   level: number | string;
 }) => {
+  const t = translator("buildings");
+  const values = {
+    building: requirement.building,
+    level: String(requirement.level),
+  };
   if (/^Shelter \d+$/.test(requirement.building)) {
-    return `${requirement.building} at level ${requirement.level}`;
+    return t("requirement.shelter", values);
   }
-  if (requirement.building === "Hero Hall") return "Hero Hall built";
-  return `${requirement.building} ${requirement.level}`;
+  if (requirement.building === "Hero Hall") return t("requirement.heroHall");
+  return t("requirement.level", values);
 };
 
 export interface BuildingView {

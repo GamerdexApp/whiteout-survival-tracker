@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { useMemo, useState } from "react";
 import { LuLayoutGrid, LuListFilter, LuNetwork, LuSearch } from "react-icons/lu";
 import type { Playthrough } from "@/types/app";
@@ -30,7 +31,7 @@ import type { MassSetPlan } from "@/service/researchMassSet";
 import { withSavedResearchPlan } from "@/service/researchPlan";
 import type { ResearchPlanControls, ResearchPlanRow } from "@/service/researchPlan";
 import { researchOptions, researchSlots, startResearch } from "@/service/researchUpgrades";
-import { researchTabs } from "@/data/game/research";
+import { researchTabs, tabName } from "@/data/game/research";
 import type { ResearchTab } from "@/data/game/research";
 import { findResearch } from "@/data/game/research";
 import { PageHeader } from "@/comps/layout/PageHeader";
@@ -54,9 +55,11 @@ import { ResearchPlanFlyout } from "./ResearchPlanFlyout";
 import { ResearchTree } from "./ResearchTree";
 
 export function ResearchView({ chief }: { chief: Playthrough }) {
+	const t = useTranslations("research");
+	const tq = useTranslations("queues");
 	const { updateData } = usePlaythrough();
 	const showToast = useToast();
-	const [tabId, setTabId] = useState(researchTabs[0].id);
+	const [tabId, setTabId] = useState<string>(researchTabs[0].id);
 	const [filters, setFilters] = useState<ResearchFilters>(defaultResearchFilters);
 	const [filtersOpen, setFiltersOpen] = useState(false);
 	const [massSetOpen, setMassSetOpen] = useState(false);
@@ -91,9 +94,14 @@ export function ResearchView({ chief }: { chief: Playthrough }) {
 		setMassSetOpen(false);
 		showToast({
 			variant: "success",
-			title: "Mass set applied",
-			message: `${plan.changes.length} ${plan.changes.length === 1 ? "node" : "nodes"} updated.`,
-			action: { label: "Undo", onAction: () => change(() => before) },
+			title: t("view.massSetApplied.title"),
+			message: t("view.massSetApplied.message", {
+				nodes: t("nodeCount", {
+					count: plan.changes.length,
+					amount: formatNumber(plan.changes.length),
+				}),
+			}),
+			action: { label: t("view.undo"), onAction: () => change(() => before) },
 		});
 	};
 
@@ -106,8 +114,12 @@ export function ResearchView({ chief }: { chief: Playthrough }) {
 		setStartOpen(false);
 		showToast({
 			variant: "success",
-			title: "Research started",
-			message: `${option.name}, level ${option.from} to ${option.to}.`,
+			title: t("view.started.title"),
+			message: t("view.started.message", {
+				name: option.name,
+				from: formatNumber(Number(option.from)),
+				to: formatNumber(Number(option.to)),
+			}),
 		});
 	};
 
@@ -118,9 +130,20 @@ export function ResearchView({ chief }: { chief: Playthrough }) {
 		managedJob && managedNode
 			? {
 					title: managedName,
-					summary: `${managedName}, level ${managedJob.from} to ${managedJob.to}`,
-					slotLabel: `${managedJob.queue === "main" ? "Research queue" : "War Academy queue"}, ${managedNode.category}`,
-					finishText: `Finish upgrade sets ${managedName} to level ${managedJob.to}, frees the ${managedJob.queue === "main" ? "Research" : "War Academy"} queue and adds the upgrade to your History. At zero time left the node and the queue card say Ready to finish. Nothing finishes by itself, because you may have used speedups.`,
+					summary: t("jobTitle", {
+						name: managedName,
+						from: formatNumber(managedJob.from),
+						to: formatNumber(managedJob.to),
+					}),
+					slotLabel: t("view.manage.slotLabel", {
+						queue: tq(`researchQueues.${managedJob.queue}.name`),
+						category: managedNode.category,
+					}),
+					finishText: t("view.manage.finishText", {
+						name: managedName,
+						level: formatNumber(managedJob.to),
+						queue: tq(`researchQueues.${managedJob.queue}.shortName`),
+					}),
 					job: managedJob,
 				}
 			: null;
@@ -133,9 +156,9 @@ export function ResearchView({ chief }: { chief: Playthrough }) {
 		setManageQueue(null);
 		showToast({
 			variant: "success",
-			title: `${managedName} researched`,
-			message: `Now level ${managedJob.to}. Added to History.`,
-			action: { label: "Undo", onAction: () => change(() => before) },
+			title: t("view.finished.title", { name: managedName }),
+			message: t("view.finished.message", { level: formatNumber(managedJob.to) }),
+			action: { label: t("view.undo"), onAction: () => change(() => before) },
 		});
 	};
 
@@ -147,9 +170,9 @@ export function ResearchView({ chief }: { chief: Playthrough }) {
 		setManageQueue(null);
 		showToast({
 			variant: "warning",
-			title: `${managedName} research cancelled`,
-			message: "The level stays as it was. Fix your stock on Resources if needed.",
-			action: { label: "Undo", onAction: () => change(() => before) },
+			title: t("view.cancelled.title", { name: managedName }),
+			message: t("view.cancelled.message"),
+			action: { label: t("view.undo"), onAction: () => change(() => before) },
 		});
 	};
 
@@ -162,46 +185,59 @@ export function ResearchView({ chief }: { chief: Playthrough }) {
 	const buildingLevel = (id: string) => chief.buildings?.[id]?.level;
 	const subline = [
 		chief.name,
-		`Research Center ${buildingLevel("research-center") ?? "Unknown"}`,
-		`War Academy ${buildingLevel("war-academy") ?? "Unknown"}`,
+		t("view.subline.researchCenter", {
+			level: buildingLevel("research-center") ?? t("unknown"),
+		}),
+		t("view.subline.warAcademy", { level: buildingLevel("war-academy") ?? t("unknown") }),
 	].join(" · ");
 
 	const activeFilters = countResearchFilters(filters);
 
 	return (
 		<>
-			<PageHeader title="Research" subline={subline} />
+			<PageHeader title={t("title")} subline={subline} />
 			<div className="grid grid-cols-2 gap-3 lg:grid-cols-4">
 				<StatTile
-					value={`${summary.maxed} of ${summary.total}`}
-					label={`Nodes maxed, ${Math.round((summary.maxed / summary.total) * 100)}% of the tree`}
+					value={t("view.ofTotal", {
+						count: formatNumber(summary.maxed),
+						total: formatNumber(summary.total),
+					})}
+					label={t("view.stats.maxed", {
+						percent: formatNumber(Math.round((summary.maxed / summary.total) * 100)),
+					})}
 				/>
 				<StatTile
 					value={formatNumber(summary.power)}
-					label="Research power, the power of every researched level"
+					label={t("view.stats.power")}
 					emphasis
 				/>
 				<StatTile
-					value={`${summary.withoutTime} ${summary.withoutTime === 1 ? "node" : "nodes"}`}
+					value={t("nodeCount", {
+						count: summary.withoutTime,
+						amount: formatNumber(summary.withoutTime),
+					})}
 					label={
 						summary.withoutTime === 0
-							? "Without research time, every level has one"
-							: "Without research time, shown as Unknown"
+							? t("view.stats.withoutTimeNone")
+							: t("view.stats.withoutTimeSome")
 					}
 				/>
 				<StatTile
-					value={`${summary.locked} of ${summary.total}`}
-					label="Locked by server age or requirements"
+					value={t("view.ofTotal", {
+						count: formatNumber(summary.locked),
+						total: formatNumber(summary.total),
+					})}
+					label={t("view.stats.locked")}
 				/>
 			</div>
 
 			<QueuesStrip chief={chief} onManage={setManageQueue} />
 
 			<Tabs
-				label="Research"
+				label={t("title")}
 				tabs={researchTabs.map((item) => ({
 					id: item.id,
-					label: item.name,
+					label: tabName(item),
 					count: nodesOfTabCount(item),
 					locked: tabLockOf(item, chief) !== null,
 				}))}
@@ -210,13 +246,15 @@ export function ResearchView({ chief }: { chief: Playthrough }) {
 			>
 				{tabLock && (
 					<Note tone="warning">
-						{tabLockText(tab, tabLock)} You can still set goals in Plan.
+						{t("view.tabLockedNote", { reason: tabLockText(tab, tabLock) })}
 					</Note>
 				)}
 				{!tabLock && lockedByRequirement > 0 && (
 					<Note>
-						{lockedByRequirement} of {tabViews.length} nodes in this tab are locked by a
-						requirement.
+						{t("view.lockedByRequirement", {
+							count: formatNumber(lockedByRequirement),
+							total: formatNumber(tabViews.length),
+						})}
 					</Note>
 				)}
 
@@ -224,8 +262,8 @@ export function ResearchView({ chief }: { chief: Playthrough }) {
 					<div className="w-full lg:w-auto lg:flex-1">
 						<Input
 							type="search"
-							aria-label="Search nodes"
-							placeholder="Search nodes by name or bonus"
+							aria-label={t("view.search.label")}
+							placeholder={t("view.search.placeholder")}
 							leadingIcon={<LuSearch size={16} />}
 							value={filters.search}
 							onChange={(event) =>
@@ -238,7 +276,7 @@ export function ResearchView({ chief }: { chief: Playthrough }) {
 							className="order-1 flex-1 lg:flex-none"
 							onClick={() => setMassSetOpen(true)}
 						>
-							Mass set
+							{t("view.massSet")}
 						</Button>
 						<Button
 							className="order-2 flex-1 lg:flex-none"
@@ -249,7 +287,7 @@ export function ResearchView({ chief }: { chief: Playthrough }) {
 								aria-hidden="true"
 								className="max-[359px]:hidden"
 							/>
-							Filters
+							{t("filters.title")}
 							{activeFilters > 0 && (
 								<span className="bg-primary text-on-primary rounded-full px-1.5 font-mono text-xs">
 									{activeFilters}
@@ -258,10 +296,10 @@ export function ResearchView({ chief }: { chief: Playthrough }) {
 						</Button>
 						<div className="order-2 lg:order-2">
 							<SegmentedControl
-								label="Layout"
+								label={t("view.layout.label")}
 								options={[
-									{ id: "grid", label: "Grid" },
-									{ id: "tree", label: "Tree" },
+									{ id: "grid", label: t("view.layout.grid") },
+									{ id: "tree", label: t("view.layout.tree") },
 								]}
 								value={layout}
 								onChange={setLayout}
@@ -272,7 +310,7 @@ export function ResearchView({ chief }: { chief: Playthrough }) {
 								className="order-4 w-full lg:order-3 lg:w-auto"
 								onClick={() => setStartOpen(true)}
 							>
-								Start upgrade
+								{tq("start.title")}
 							</Button>
 						)}
 						<Button
@@ -280,14 +318,23 @@ export function ResearchView({ chief }: { chief: Playthrough }) {
 							className="order-3 flex-1 lg:order-4 lg:flex-none"
 							onClick={() => setPlanOpen(true)}
 						>
-							Plan
+							{t("view.plan")}
 						</Button>
 					</div>
 				</div>
 				<p role="status" className="text-muted">
 					{layout === "tree"
-						? `${tabViews.length} nodes in the ${tab.name} tree. Research power in this tab: ${formatNumber(powerOfViews(tabViews))}. Scroll to pan. Nodes that do not match the search or filters are dimmed.`
-						: `Showing ${visible.length} of ${tabViews.length} ${tab.name} nodes. Research power in this tab: ${formatNumber(powerOfViews(tabViews))}. Goals are read only here and are set in Plan.`}
+						? t("view.status.tree", {
+								count: formatNumber(tabViews.length),
+								tab: tabName(tab),
+								power: formatNumber(powerOfViews(tabViews)),
+							})
+						: t("view.status.grid", {
+								shown: formatNumber(visible.length),
+								count: formatNumber(tabViews.length),
+								tab: tabName(tab),
+								power: formatNumber(powerOfViews(tabViews)),
+							})}
 				</p>
 
 				{layout === "tree" ? (
@@ -299,11 +346,11 @@ export function ResearchView({ chief }: { chief: Playthrough }) {
 					/>
 				) : visible.length === 0 ? (
 					<EmptyState
-						title="No nodes match"
-						description="Change the search or reset the filters to see every node."
+						title={t("view.empty.title")}
+						description={t("view.empty.description")}
 						actions={
 							<Button onClick={() => setFilters(defaultResearchFilters())}>
-								Reset search and filters
+								{t("view.empty.reset")}
 							</Button>
 						}
 					/>
@@ -343,14 +390,14 @@ export function ResearchView({ chief }: { chief: Playthrough }) {
 			<StartUpgradeFlyout
 				open={startOpen}
 				chief={chief}
-				description="Mark a research as upgrading"
-				selectLabel="Research to upgrade"
-				selectHelp="Only research you can start now is listed. Locked, maxed and running research is left out. A Growth, Economy or Battle research uses the Research queue. A T11 or T12 research uses the War Academy queue."
-				timeLabel="Research time"
-				speedLabel="Research speed"
+				description={t("view.start.description")}
+				selectLabel={t("view.start.selectLabel")}
+				selectHelp={t("view.start.selectHelp")}
+				timeLabel={t("view.start.timeLabel")}
+				speedLabel={t("view.start.speedLabel")}
 				speedPercent={researchSpeedBonusPercent(chief)}
-				slotLabel="Queue"
-				slotHelp="One research at a time in each queue. When the queue is busy this card says when it frees."
+				slotLabel={t("view.start.slotLabel")}
+				slotHelp={t("view.start.slotHelp")}
 				slots={researchSlots(chief, now)}
 				options={options}
 				onClose={() => setStartOpen(false)}

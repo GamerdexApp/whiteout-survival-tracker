@@ -1,6 +1,8 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import type { Playthrough } from "@/types/app";
+import { formatNumber } from "@/lib/format";
 import { BUILDER_NUMBERS, builderJob } from "@/service/queues";
 import { findBuildingById } from "@/data/game/buildings";
 import { JobCard } from "@/comps/queues/JobCard";
@@ -11,13 +13,12 @@ interface BuildersStripProps {
 }
 
 export function BuildersStrip({ chief, onManage }: BuildersStripProps) {
+	const t = useTranslations("buildings");
 	return (
-		<section className="flex flex-col gap-2" aria-label="Builders">
+		<section className="flex flex-col gap-2" aria-label={t("builders.label")}>
 			<div className="flex flex-wrap items-baseline justify-between gap-2">
-				<h2 className="font-semibold">Builders</h2>
-				<span className="text-muted text-xs">
-					An upgrade you start here shows on Overview as a running queue.
-				</span>
+				<h2 className="font-semibold">{t("builders.label")}</h2>
+				<span className="text-muted text-xs">{t("builders.hint")}</span>
 			</div>
 			<div className="grid gap-3 md:grid-cols-2">
 				{BUILDER_NUMBERS.map((builder) => {
@@ -28,10 +29,16 @@ export function BuildersStrip({ chief, onManage }: BuildersStripProps) {
 					return (
 						<JobCard
 							key={builder}
-							label={`Builder ${builder}`}
-							idleText="Press Start on a building to begin an upgrade."
+							label={t("builderName", { number: formatNumber(builder) })}
+							idleText={t("builders.idle")}
 							title={
-								job ? `${name}, ${job.from ?? "Not built"} to ${job.to}` : undefined
+								job
+									? t("builders.jobTitle", {
+											name,
+											from: job.from ?? t("notBuilt"),
+											to: job.to,
+										})
+									: undefined
 							}
 							job={job}
 							onManage={() => onManage(builder)}

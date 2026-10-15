@@ -1,3 +1,4 @@
+import { formatNumber, translator } from "@/i18n/formatter";
 import { research, researchTree } from "whiteout-survival-data";
 import type {
   ResearchCategory,
@@ -12,9 +13,17 @@ export const findResearch = (id: string) => research().find(id);
 
 export const treeTabs = researchTree();
 
+export type ResearchTabId =
+  | "growth"
+  | "economy"
+  | "battle"
+  | "war-academy-troops"
+  | "t12-infantry"
+  | "t12-marksman"
+  | "t12-lancer";
+
 export interface ResearchTab {
-  id: string;
-  name: string;
+  id: ResearchTabId;
   categories: ResearchCategory[];
   queue: ResearchQueue;
   /** The server age in days at which the tab opens, or null when it is always open. */
@@ -25,52 +34,48 @@ export interface ResearchTab {
 export const WAR_ACADEMY_UNLOCK_DAYS = 150;
 export const T12_UNLOCK_DAYS = 600;
 
+export const tabName = (tab: ResearchTab) =>
+  translator("research")(`tabs.${tab.id}`);
+
 export const researchTabs: ResearchTab[] = [
   {
     id: "growth",
-    name: "Growth",
     categories: ["Growth"],
     queue: "main",
     unlockDays: null,
   },
   {
     id: "economy",
-    name: "Economy",
     categories: ["Economy"],
     queue: "main",
     unlockDays: null,
   },
   {
     id: "battle",
-    name: "Battle",
     categories: ["Battle"],
     queue: "main",
     unlockDays: null,
   },
   {
     id: "war-academy-troops",
-    name: "War Academy T11",
     categories: ["T11 Infantry", "T11 Marksman", "T11 Lancer"],
     queue: "warAcademy",
     unlockDays: WAR_ACADEMY_UNLOCK_DAYS,
   },
   {
     id: "t12-infantry",
-    name: "Infantry T12",
     categories: ["T12 Infantry"],
     queue: "warAcademy",
     unlockDays: T12_UNLOCK_DAYS,
   },
   {
     id: "t12-marksman",
-    name: "Marksman T12",
     categories: ["T12 Marksman"],
     queue: "warAcademy",
     unlockDays: T12_UNLOCK_DAYS,
   },
   {
     id: "t12-lancer",
-    name: "Lancer T12",
     categories: ["T12 Lancer"],
     queue: "warAcademy",
     unlockDays: T12_UNLOCK_DAYS,
@@ -103,7 +108,9 @@ export const troopLineOf = (node: ResearchNode) => {
 
 export const tierLabel = (node: ResearchNode) => {
   const line = troopLineOf(node);
-  return line ? `${line} T${node.tier}` : `Tier ${node.tier}`;
+  const t = translator("research");
+  const tier = formatNumber(node.tier);
+  return line ? t("tier.troopLine", { line, tier }) : t("tier.plain", { tier });
 };
 
 export const isPlaceholder = (node: ResearchNode) =>

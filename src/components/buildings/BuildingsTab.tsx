@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { useMemo, useState } from "react";
 import { LuListFilter, LuPencilLine, LuSearch } from "react-icons/lu";
 import type { Playthrough } from "@/types/app";
@@ -61,11 +62,13 @@ const TOTAL_LEVELLED = 18;
 const TOTAL_ENTERTAINMENT = 9;
 
 interface Group {
+	id: string;
 	label: string;
 	views: BuildingView[];
 }
 
 export function BuildingsTab({ chief }: { chief: Playthrough }) {
+	const t = useTranslations("buildings");
 	const { updateData } = usePlaythrough();
 	const showToast = useToast();
 	const { ui } = useUiSettings();
@@ -89,8 +92,9 @@ export function BuildingsTab({ chief }: { chief: Playthrough }) {
 	const levelsView = views.find((view) => view.building.id === levelsBuildingId) ?? null;
 
 	const groups: Group[] = [
-		{ label: "Pinned", views: pinned },
+		{ id: "pinned", label: t("tab.groupPinned"), views: pinned },
 		...buildingCategories.map((category) => ({
+			id: category,
 			label: category,
 			views: rest.filter((view) => view.building.category === category),
 		})),
@@ -114,8 +118,11 @@ export function BuildingsTab({ chief }: { chief: Playthrough }) {
 		setStartOpen(false);
 		showToast({
 			variant: "success",
-			title: "Upgrade started",
-			message: `${option.name}, ${option.subtitle}.`,
+			title: t("tab.toasts.started.title"),
+			message: t("tab.toasts.started.message", {
+				name: option.name,
+				subtitle: option.subtitle,
+			}),
 		});
 	};
 
@@ -126,9 +133,17 @@ export function BuildingsTab({ chief }: { chief: Playthrough }) {
 	const manageTarget: ManageTarget | null = managedJob
 		? {
 				title: managedName,
-				summary: `${managedName}, ${managedJob.from ?? "Not built"} to ${managedJob.to}`,
-				slotLabel: `Builder ${managedJob.builder}`,
-				finishText: `Finish upgrade sets ${managedName} to ${managedJob.to}, frees Builder ${managedJob.builder} and adds the upgrade to your History. At zero time left the building and the builder card say Ready to finish. Nothing finishes by itself, because you may have used speedups.`,
+				summary: t("builders.jobTitle", {
+					name: managedName,
+					from: managedJob.from ?? t("notBuilt"),
+					to: managedJob.to,
+				}),
+				slotLabel: t("builderName", { number: formatNumber(managedJob.builder) }),
+				finishText: t("tab.manage.finishText", {
+					name: managedName,
+					level: managedJob.to,
+					builder: formatNumber(managedJob.builder),
+				}),
 				job: managedJob,
 			}
 		: null;
@@ -141,9 +156,9 @@ export function BuildingsTab({ chief }: { chief: Playthrough }) {
 		setManageBuilder(null);
 		showToast({
 			variant: "success",
-			title: `${managedName} upgraded`,
-			message: `Now ${managedJob.to}. Added to History.`,
-			action: { label: "Undo", onAction: () => change(() => before) },
+			title: t("tab.toasts.finished.title", { name: managedName }),
+			message: t("tab.toasts.finished.message", { level: managedJob.to }),
+			action: { label: t("undo"), onAction: () => change(() => before) },
 		});
 	};
 
@@ -159,23 +174,21 @@ export function BuildingsTab({ chief }: { chief: Playthrough }) {
 		setManageBuilder(null);
 		showToast({
 			variant: "warning",
-			title: `${managedName} upgrade cancelled`,
-			message: "The level stays as it was. Fix your stock on Resources if needed.",
-			action: { label: "Undo", onAction: () => change(() => before) },
+			title: t("tab.toasts.cancelled.title", { name: managedName }),
+			message: t("tab.toasts.cancelled.message"),
+			action: { label: t("undo"), onAction: () => change(() => before) },
 		});
 	};
 
 	return (
 		<>
-			<p className="text-muted">
-				Current level and goal for every building. Furnace sets what the rest can reach.
-			</p>
+			<p className="text-muted">{t("tab.intro")}</p>
 			<div className="flex flex-wrap items-center gap-3">
 				<div className="w-full lg:w-auto lg:flex-1">
 					<Input
 						type="search"
-						aria-label="Search buildings"
-						placeholder="Search buildings"
+						aria-label={t("tab.searchLabel")}
+						placeholder={t("tab.searchLabel")}
 						leadingIcon={<LuSearch size={16} />}
 						value={filters.search}
 						onChange={(event) => setFilters({ ...filters, search: event.target.value })}
@@ -187,7 +200,7 @@ export function BuildingsTab({ chief }: { chief: Playthrough }) {
 						onClick={() => setFiltersOpen(true)}
 					>
 						<LuListFilter size={16} aria-hidden="true" className="max-[359px]:hidden" />
-						Filters
+						{t("tab.filters")}
 						{activeFilterCount > 0 && (
 							<span className="bg-primary text-on-primary rounded-full px-1.5 font-mono text-xs">
 								{activeFilterCount}
@@ -199,7 +212,7 @@ export function BuildingsTab({ chief }: { chief: Playthrough }) {
 						onClick={() => setMassEditOpen(true)}
 					>
 						<LuPencilLine size={16} aria-hidden="true" className="max-[359px]:hidden" />
-						Mass edit
+						{t("tab.massEdit")}
 					</Button>
 					{options.length > 0 && (
 						<Button
@@ -207,7 +220,7 @@ export function BuildingsTab({ chief }: { chief: Playthrough }) {
 							className="order-4 w-full lg:order-3 lg:w-auto"
 							onClick={() => openStart()}
 						>
-							Start upgrade
+							{t("tab.startUpgrade")}
 						</Button>
 					)}
 					<Button
@@ -215,14 +228,15 @@ export function BuildingsTab({ chief }: { chief: Playthrough }) {
 						className="order-3 flex-1 lg:order-4 lg:flex-none"
 						onClick={() => setPlanOpen(true)}
 					>
-						Plan
+						{t("tab.plan")}
 					</Button>
 				</div>
 			</div>
 			<p role="status" className="text-muted">
-				Showing {shown} of {views.length} buildings. Goals are read only here and are set in
-				Plan. A goal equal to the current level means no goal. Steppers move one level at a
-				time along the game order.
+				{t("tab.status", {
+					shown: formatNumber(shown),
+					total: formatNumber(views.length),
+				})}
 			</p>
 			<BuildersStrip chief={chief} onManage={setManageBuilder} />
 			<div className="grid grid-cols-2 gap-3 lg:grid-cols-3">
@@ -231,38 +245,50 @@ export function BuildingsTab({ chief }: { chief: Playthrough }) {
 						summary.furnaceLevel ? (
 							formatFurnaceLevel(summary.furnaceLevel, ui.furnaceFullLabels)
 						) : (
-							<span className="text-muted">Unknown</span>
+							<span className="text-muted">{t("unknown")}</span>
 						)
 					}
-					label="Furnace, gates every other building"
+					label={t("tab.stats.furnace")}
 				/>
 				<StatTile
 					value={formatNumber(summary.power)}
-					label="Current power, all buildings"
+					label={t("tab.stats.power")}
 					emphasis
 				/>
 				<StatTile
 					value={formatNumber(summary.developmentIndex)}
-					label="Development index, all buildings"
+					label={t("tab.stats.developmentIndex")}
 				/>
 				<StatTile
-					value={`${summary.withGoal} of ${TOTAL_LEVELLED}`}
-					label="Buildings with a goal"
+					value={t("ofTotal", {
+						count: formatNumber(summary.withGoal),
+						total: formatNumber(TOTAL_LEVELLED),
+					})}
+					label={t("tab.stats.withGoal")}
 				/>
-				<StatTile value={`${summary.atMax} of ${TOTAL_LEVELLED}`} label="At max level" />
 				<StatTile
-					value={`${summary.entertainmentBuilt} of ${TOTAL_ENTERTAINMENT}`}
-					label="Entertainment built"
+					value={t("ofTotal", {
+						count: formatNumber(summary.atMax),
+						total: formatNumber(TOTAL_LEVELLED),
+					})}
+					label={t("tab.stats.atMax")}
+				/>
+				<StatTile
+					value={t("ofTotal", {
+						count: formatNumber(summary.entertainmentBuilt),
+						total: formatNumber(TOTAL_ENTERTAINMENT),
+					})}
+					label={t("tab.stats.entertainment")}
 				/>
 			</div>
 
 			{shown === 0 ? (
 				<EmptyState
-					title="No buildings match"
-					description="Change the search or reset the filters to see every building."
+					title={t("tab.empty.title")}
+					description={t("tab.empty.description")}
 					actions={
 						<Button onClick={() => setFilters(defaultBuildingFilters(ui.hideMaxed))}>
-							Reset search and filters
+							{t("tab.empty.reset")}
 						</Button>
 					}
 				/>
@@ -273,19 +299,25 @@ export function BuildingsTab({ chief }: { chief: Playthrough }) {
 							aria-hidden="true"
 							className={`grid ${DESKTOP_COLUMNS} border-line gap-3 border-b-[1.5px] px-4 py-2`}
 						>
-							<SectionLabel className="text-muted">Building</SectionLabel>
-							<SectionLabel className="text-muted">Current</SectionLabel>
-							<SectionLabel className="text-muted">Goal</SectionLabel>
-							<SectionLabel className="text-muted">Power</SectionLabel>
 							<SectionLabel className="text-muted">
-								Progress and next level
+								{t("columns.building")}
 							</SectionLabel>
-							<SectionLabel className="text-muted">Upgrade</SectionLabel>
+							<SectionLabel className="text-muted">
+								{t("columns.current")}
+							</SectionLabel>
+							<SectionLabel className="text-muted">{t("columns.goal")}</SectionLabel>
+							<SectionLabel className="text-muted">{t("columns.power")}</SectionLabel>
+							<SectionLabel className="text-muted">
+								{t("columns.progress")}
+							</SectionLabel>
+							<SectionLabel className="text-muted">
+								{t("columns.upgrade")}
+							</SectionLabel>
 							<span />
 						</div>
 					)}
 					{groups.map((group) => (
-						<section key={group.label} aria-label={group.label}>
+						<section key={group.id} aria-label={group.label}>
 							<div
 								className={
 									isDesktop
@@ -340,23 +372,26 @@ export function BuildingsTab({ chief }: { chief: Playthrough }) {
 					setMassEditOpen(false);
 					showToast({
 						variant: "success",
-						title: "Mass edit applied",
-						message: `${changeCount} ${changeCount === 1 ? "building" : "buildings"} updated.`,
-						action: { label: "Undo", onAction: () => change(() => chief) },
+						title: t("tab.toasts.massEdit.title"),
+						message: t("tab.toasts.massEdit.message", {
+							count: changeCount,
+							amount: formatNumber(changeCount),
+						}),
+						action: { label: t("undo"), onAction: () => change(() => chief) },
 					});
 				}}
 			/>
 			<StartUpgradeFlyout
 				open={startOpen}
 				chief={chief}
-				description="Mark a building as upgrading"
-				selectLabel="Building to upgrade"
-				selectHelp="Only buildings you can start now are listed. Locked, maxed and running buildings are left out. Each upgrade uses one of the two builders."
-				timeLabel="Construction time"
-				speedLabel="Construction speed"
+				description={t("tab.start.description")}
+				selectLabel={t("tab.start.selectLabel")}
+				selectHelp={t("tab.start.selectHelp")}
+				timeLabel={t("tab.start.timeLabel")}
+				speedLabel={t("tab.start.speedLabel")}
 				speedPercent={constructionSpeedBonusPercent(chief)}
-				slotLabel="Builder"
-				slotHelp="Pick an idle builder. A busy builder shows when it frees."
+				slotLabel={t("tab.start.slotLabel")}
+				slotHelp={t("tab.start.slotHelp")}
 				slots={builderSlots(chief, now)}
 				options={options}
 				initialOptionId={startInitialId}

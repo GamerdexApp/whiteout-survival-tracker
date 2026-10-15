@@ -1,10 +1,13 @@
 "use client";
 
+import { translator } from "@/i18n/formatter";
 import { RESEARCH_TREE_LAYOUT } from "whiteout-survival-data";
 import type { ResearchTreeEdge, ResearchTreeNode } from "whiteout-survival-data";
+import { useTranslations } from "next-intl";
+import { formatNumber } from "@/lib/format";
 import type { ResearchNodeView } from "@/service/research";
 import { findItem } from "@/data/game/items";
-import { researchTabs, treeTabs } from "@/data/game/research";
+import { researchTabs, tabName, treeTabs } from "@/data/game/research";
 import { ItemIcon } from "@/comps/ui/ItemIcon";
 
 const { nodeWidth, nodeHeight, labelHeight: layoutLabelHeight } = RESEARCH_TREE_LAYOUT;
@@ -60,39 +63,44 @@ const edgePath = (edge: ResearchTreeEdge, parent: ResearchTreeNode, child: Resea
 };
 
 function Legend() {
+	const t = useTranslations("research.tree");
+
 	return (
 		<ul className="text-muted flex flex-wrap gap-x-4 gap-y-1 text-xs">
 			<li className="flex items-center gap-1.5">
 				<span className="border-primary bg-primary size-3 rounded-sm border-[1.5px]" />
-				Max
+				{t("legend.max")}
 			</li>
 			<li className="flex items-center gap-1.5">
 				<span className="border-primary bg-surface size-3 rounded-sm border-[1.5px]" />
-				In progress
+				{t("legend.inProgress")}
 			</li>
 			<li className="flex items-center gap-1.5">
 				<span className="border-line bg-surface size-3 rounded-sm border-[1.5px]" />
-				Not started
+				{t("legend.notStarted")}
 			</li>
 			<li className="flex items-center gap-1.5">
 				<span className="border-line size-3 rounded-sm border-[1.5px] border-dashed" />
-				Locked
+				{t("legend.locked")}
 			</li>
 		</ul>
 	);
 }
 
 const pillText = (view: ResearchNodeView) => {
-	if (view.locked && view.level === 0) return "Locked";
-	if (view.maxed) return `Max ${view.max}`;
-	return `Lv ${view.level} of ${view.max}`;
+	const t = translator("research");
+	if (view.locked && view.level === 0) return t("tree.legend.locked");
+	if (view.maxed) return t("tree.pillMax", { max: formatNumber(view.max) });
+	return t("tree.pillLevel", { level: formatNumber(view.level), max: formatNumber(view.max) });
 };
 
 export function ResearchTree({ tabId, views, visibleIds, onOpen }: ResearchTreeProps) {
+	const t = useTranslations("research.tree");
 	const tab = treeTabs.find((item) => item.id === tabId);
 	if (!tab) return null;
 
-	const tabName = researchTabs.find((item) => item.id === tabId)?.name ?? tab.name;
+	const researchTab = researchTabs.find((item) => item.id === tabId);
+	const name = researchTab ? tabName(researchTab) : tab.name;
 	const nodesById = new Map(tab.nodes.map((node) => [node.id, node]));
 	const viewsById = new Map(views.map((view) => [view.node.id, view]));
 
@@ -102,7 +110,7 @@ export function ResearchTree({ tabId, views, visibleIds, onOpen }: ResearchTreeP
 			<div
 				className="border-line bg-bg max-h-[70dvh] overflow-auto rounded-md border-[1.5px]"
 				role="region"
-				aria-label={`${tabName} research tree`}
+				aria-label={t("region", { tab: name })}
 				tabIndex={0}
 			>
 				<div className="relative" style={{ width: tab.width, height: tab.height }}>
@@ -190,7 +198,10 @@ export function ResearchTree({ tabId, views, visibleIds, onOpen }: ResearchTreeP
 								key={node.id}
 								type="button"
 								onClick={() => onOpen(node.id)}
-								aria-label={`${view.node.name}, ${pillText(view)}. Open details`}
+								aria-label={t("openNode", {
+									name: view.node.name,
+									pill: pillText(view),
+								})}
 								className={`absolute flex flex-col items-center ${dim}`}
 								style={{ left, top, width: nodeWidth }}
 							>

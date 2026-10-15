@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { formatNumber } from "@/lib/format";
 import { stockShortBy } from "@/service/planStock";
@@ -16,20 +17,21 @@ const unitText = (check: StockCheck, value: number) =>
 	`${formatNumber(value)}${check.unit ? ` ${check.unit}` : ""}`;
 
 export function PlanStockCheck({ checks, timeNote }: PlanStockCheckProps) {
+	const t = useTranslations("queues.planStock");
 	const short = checks.filter((check) => stockShortBy(check) > 0);
 
 	return (
 		<Card className="flex flex-col gap-3 p-4">
 			<div className="flex items-baseline justify-between gap-3">
-				<h3 className="font-semibold">Do you have enough?</h3>
+				<h3 className="font-semibold">{t("title")}</h3>
 				<span className="text-muted font-mono text-xs">
-					{short.length} of {checks.length} short
+					{t("shortCount", {
+						short: formatNumber(short.length),
+						total: formatNumber(checks.length),
+					})}
 				</span>
 			</div>
-			<p className="text-muted">
-				What the plan takes from your stock, checked against what you hold. The full plan is
-				in the result below.
-			</p>
+			<p className="text-muted">{t("description")}</p>
 			<ul className="flex flex-col">
 				{checks.map((check) => {
 					const shortBy = stockShortBy(check);
@@ -43,21 +45,30 @@ export function PlanStockCheck({ checks, timeNote }: PlanStockCheckProps) {
 							<div className="flex items-center justify-between gap-3">
 								<span className="font-medium">{check.name}</span>
 								<Badge tone={enough ? "kept" : "changed"}>
-									{enough ? "Enough" : "Not enough"}
+									{enough ? t("enough") : t("notEnough")}
 								</Badge>
 							</div>
 							<ProgressBar
 								value={coverage}
-								label={`${check.name} covered`}
+								label={t("covered", { name: check.name })}
 								tone={enough ? "kept" : "warn"}
 							/>
 							<div className="flex flex-wrap gap-x-4 gap-y-0.5 font-mono text-xs">
-								<span>Available {unitText(check, check.available)}</span>
-								<span>Needed {unitText(check, check.needed)}</span>
+								<span>
+									{t("available", { amount: unitText(check, check.available) })}
+								</span>
+								<span>
+									{t("needed", { amount: unitText(check, check.needed) })}
+								</span>
 								<span className={enough ? "text-kept" : "text-danger"}>
 									{enough
-										? `${unitText(check, check.available - check.needed)} left over`
-										: `Short by ${unitText(check, shortBy)}`}
+										? t("leftOver", {
+												amount: unitText(
+													check,
+													check.available - check.needed
+												),
+											})
+										: t("shortBy", { amount: unitText(check, shortBy) })}
 								</span>
 							</div>
 							{check.unit && <p className="text-muted text-xs">{timeNote}</p>}
@@ -67,15 +78,15 @@ export function PlanStockCheck({ checks, timeNote }: PlanStockCheckProps) {
 			</ul>
 			{short.length > 0 && (
 				<p className="font-medium">
-					Still needed for the full plan:{" "}
-					{short
-						.map((check) => `${unitText(check, stockShortBy(check))} ${check.name}`)
-						.join(", ")}
-					.
+					{t("stillNeeded", {
+						list: short
+							.map((check) => `${unitText(check, stockShortBy(check))} ${check.name}`)
+							.join(", "),
+					})}
 				</p>
 			)}
 			<Link href="/resources" className="text-link w-fit font-medium underline">
-				Open Resources
+				{t("openResources")}
 			</Link>
 		</Card>
 	);

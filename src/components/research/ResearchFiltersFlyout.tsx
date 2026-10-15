@@ -1,8 +1,10 @@
 "use client";
 
+import { useTranslations } from "next-intl";
+import { formatNumber } from "@/lib/format";
 import type { ResearchFilters, ResearchOrder, ResearchStatus } from "@/service/research";
 import type { ResearchTab } from "@/data/game/research";
-import { nodesOfTab } from "@/data/game/research";
+import { nodesOfTab, tabName } from "@/data/game/research";
 import { Button } from "@/comps/ui/Button";
 import { Flyout } from "@/comps/ui/Flyout";
 import { RadioGroup } from "@/comps/ui/RadioGroup";
@@ -18,20 +20,9 @@ interface ResearchFiltersFlyoutProps {
 	onClose: () => void;
 }
 
-const statusOptions: { id: ResearchStatus; label: string }[] = [
-	{ id: "all", label: "All" },
-	{ id: "progress", label: "In progress" },
-	{ id: "goal", label: "Has goal" },
-	{ id: "maxed", label: "Maxed" },
-	{ id: "locked", label: "Locked" },
-	{ id: "notStarted", label: "Not started" },
-];
+const statusIds: ResearchStatus[] = ["all", "progress", "goal", "maxed", "locked", "notStarted"];
 
-const orderOptions: { id: ResearchOrder; label: string }[] = [
-	{ id: "game", label: "Game order" },
-	{ id: "name", label: "Name, A to Z" },
-	{ id: "level", label: "Level, highest first" },
-];
+const orderIds: ResearchOrder[] = ["game", "name", "level"];
 
 const T11_LINES = ["Infantry", "Marksman", "Lancer"];
 
@@ -44,10 +35,16 @@ export function ResearchFiltersFlyout({
 	onReset,
 	onClose,
 }: ResearchFiltersFlyoutProps) {
+	const t = useTranslations("research");
+	const statusOptions = statusIds.map((id) => ({ id, label: t(`filters.status.${id}`) }));
+	const orderOptions = orderIds.map((id) => ({ id, label: t(`filters.order.${id}`) }));
 	const tiers = [...new Set(nodesOfTab(tab).map((node) => node.tier))].sort((a, b) => a - b);
 	const tierOptions = [
-		{ id: "all", label: "All" },
-		...tiers.map((tier) => ({ id: String(tier), label: `Tier ${tier}` })),
+		{ id: "all", label: t("filters.all") },
+		...tiers.map((tier) => ({
+			id: String(tier),
+			label: t("tier.plain", { tier: formatNumber(tier) }),
+		})),
 	];
 	const showTroopLine = tab.categories.some((category) => category.startsWith("T11"));
 
@@ -55,23 +52,25 @@ export function ResearchFiltersFlyout({
 		<Flyout
 			open={open}
 			onClose={onClose}
-			title="Filters"
-			description={`Choose what the ${tab.name} tab shows`}
+			title={t("filters.title")}
+			description={t("filters.description", { tab: tabName(tab) })}
 			footer={
 				<>
 					<Button variant="link" onClick={onReset} className="mr-auto">
-						Reset
+						{t("filters.reset")}
 					</Button>
 					<Button variant="primary" onClick={onClose}>
-						Show {shown} {shown === 1 ? "node" : "nodes"}
+						{t("filters.show", {
+							nodes: t("nodeCount", { count: shown, amount: formatNumber(shown) }),
+						})}
 					</Button>
 				</>
 			}
 		>
 			<div className="flex flex-col gap-2">
-				<SectionLabel className="text-muted">Tier</SectionLabel>
+				<SectionLabel className="text-muted">{t("filters.tier")}</SectionLabel>
 				<RadioGroup
-					label="Tier"
+					label={t("filters.tier")}
 					options={tierOptions}
 					value={String(filters.tier)}
 					onChange={(value) =>
@@ -80,9 +79,9 @@ export function ResearchFiltersFlyout({
 				/>
 			</div>
 			<div className="flex flex-col gap-2">
-				<SectionLabel className="text-muted">Status</SectionLabel>
+				<SectionLabel className="text-muted">{t("filters.statusLabel")}</SectionLabel>
 				<RadioGroup
-					label="Status"
+					label={t("filters.statusLabel")}
 					options={statusOptions}
 					value={filters.status}
 					onChange={(status) => onChange({ ...filters, status })}
@@ -90,11 +89,11 @@ export function ResearchFiltersFlyout({
 			</div>
 			{showTroopLine && (
 				<div className="flex flex-col gap-2">
-					<SectionLabel className="text-muted">Troop line</SectionLabel>
+					<SectionLabel className="text-muted">{t("filters.troopLine")}</SectionLabel>
 					<RadioGroup
-						label="Troop line"
+						label={t("filters.troopLine")}
 						options={[
-							{ id: "all", label: "All" },
+							{ id: "all", label: t("filters.all") },
 							...T11_LINES.map((line) => ({ id: line, label: line })),
 						]}
 						value={filters.troopLine}
@@ -103,15 +102,15 @@ export function ResearchFiltersFlyout({
 				</div>
 			)}
 			<div className="flex flex-col gap-2">
-				<SectionLabel className="text-muted">Order</SectionLabel>
+				<SectionLabel className="text-muted">{t("filters.orderLabel")}</SectionLabel>
 				<RadioGroup
-					label="Order"
+					label={t("filters.orderLabel")}
 					options={orderOptions}
 					value={filters.order}
 					onChange={(order) => onChange({ ...filters, order })}
 				/>
 			</div>
-			<p className="text-muted">Filters are not saved.</p>
+			<p className="text-muted">{t("filters.notSaved")}</p>
 		</Flyout>
 	);
 }

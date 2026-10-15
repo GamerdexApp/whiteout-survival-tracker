@@ -31,7 +31,4 @@ export const buildingCategories: BuildingCategory[] = [
 
 export const findBuildingById = (id: string) => buildings().find(id);
 
-export const buildingNotes: Record<string, string> = {
-  furnace: "Gates every other building",
-  shelter: "Up to 8 shelters, each with its own level",
-};
+export const buildingNoteIds = ["furnace", "shelter"] as const;

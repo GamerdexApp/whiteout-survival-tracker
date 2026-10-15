@@ -1,3 +1,4 @@
+import { translator } from "@/i18n/formatter";
 import type {
   ConstructionJob,
   Playthrough,
@@ -13,14 +14,18 @@ import { ownedCount, withOwnedCounts } from "./inventory";
 import { withResearchLevel } from "./research";
 
 export const BUILDER_NUMBERS = [1, 2] as const;
-export const RESEARCH_QUEUES: {
-  id: ResearchQueueId;
-  name: string;
-  tabs: string;
-}[] = [
-  { id: "main", name: "Research queue", tabs: "Growth, Economy and Battle" },
-  { id: "warAcademy", name: "War Academy queue", tabs: "T11 and T12" },
+export const RESEARCH_QUEUES: { id: ResearchQueueId }[] = [
+  { id: "main" },
+  { id: "warAcademy" },
 ];
+
+export const researchQueueLabel = (queue: ResearchQueueId) => {
+  const t = translator("queues");
+  return t("researchQueues.label", {
+    name: t(`researchQueues.${queue}.name`),
+    tabs: t(`researchQueues.${queue}.tabs`),
+  });
+};
 
 const SECOND_MS = 1_000;
 const MINUTE_SECONDS = 60;

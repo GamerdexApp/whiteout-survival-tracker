@@ -1,6 +1,8 @@
 "use client";
 
+import { translator } from "@/i18n/formatter";
 import type { ResearchNode } from "whiteout-survival-data";
+import { useTranslations } from "next-intl";
 import type { ResearchQueueId } from "@/types/app";
 import { formatDuration, formatNumber } from "@/lib/format";
 import type { ResearchNodeView } from "@/service/research";
@@ -26,9 +28,13 @@ const levelStopsOf = (node: ResearchNode) =>
 	}));
 
 const nextTimeText = (view: ResearchNodeView) => {
-	if (view.maxed || !view.next) return "All levels researched";
+	const t = translator("research");
+	if (view.maxed || !view.next) return t("nodeCard.allResearched");
 	const seconds = view.next.researchTimeSeconds;
-	return `Level ${view.next.level} time: ${seconds === undefined ? "Unknown" : formatDuration(seconds)}`;
+	return t("nodeCard.nextTime", {
+		level: formatNumber(view.next.level),
+		time: seconds === undefined ? t("unknown") : formatDuration(seconds),
+	});
 };
 
 /**
@@ -39,20 +45,24 @@ const powerText = (view: ResearchNodeView) => {
 	const researched = view.node.levels
 		.filter((item) => item.level <= view.level)
 		.reduce((sum, item) => sum + item.power, 0);
+	const t = translator("research");
 	const parts = [
-		researched > 0 ? `${formatNumber(researched)} researched` : null,
-		view.next ? `+${formatNumber(view.next.power)} next level` : null,
+		researched > 0 ? t("nodeCard.power.researched", { power: formatNumber(researched) }) : null,
+		view.next ? t("nodeCard.power.next", { power: formatNumber(view.next.power) }) : null,
 	].filter(Boolean);
-	return parts.length > 0 ? `Power ${parts.join(" · ")}` : "Power 0";
+	return parts.length > 0
+		? t("nodeCard.power.some", { parts: parts.join(" · ") })
+		: t("nodeCard.power.none");
 };
 
 export function NodeCard({ view, onLevelChange, onOpen, onManageJob }: NodeCardProps) {
+	const t = useTranslations("research.nodeCard");
 	const { node, level, max, goal, hasGoal, tabLock, lockedBy, placeholder } = view;
 	const dashed = view.locked || placeholder ? "border-dashed" : "";
 	const bonus = view.maxed
-		? `Maxed. ${bonusText(node.levels[max - 1]) || "No bonus in the data"}`
+		? t("maxed", { bonus: bonusText(node.levels[max - 1]) || t("noBonus") })
 		: view.next
-			? bonusText(view.next) || "No bonus in the data"
+			? bonusText(view.next) || t("noBonus")
 			: "";
 
 	return (
@@ -74,50 +84,57 @@ export function NodeCard({ view, onLevelChange, onOpen, onManageJob }: NodeCardP
 			</div>
 			<div className="flex items-baseline justify-between gap-3">
 				<span className="font-mono">
-					Level {level} / {max}
+					{t("level", { level: formatNumber(level), max: formatNumber(max) })}
 				</span>
 				<span
 					className={
 						hasGoal ? "text-primary font-mono font-medium" : "text-muted font-mono"
 					}
 				>
-					{hasGoal ? `Goal ${goal}` : "No goal"}
+					{hasGoal ? t("goal", { goal: formatNumber(goal) }) : t("noGoal")}
 				</span>
 			</div>
-			<ProgressBar value={view.progress} label={`${node.name} progress`} />
+			<ProgressBar value={view.progress} label={t("progress", { name: node.name })} />
 			{tabLock ? (
-				<p className="text-muted">Locked: {tabLockText(view.tab, tabLock)}</p>
+				<p className="text-muted">
+					{t("lockedByTab", { reason: tabLockText(view.tab, tabLock) })}
+				</p>
 			) : lockedBy ? (
-				<p className="text-muted">Locked: requires {lockedBy}</p>
+				<p className="text-muted">{t("lockedByRequirement", { requirement: lockedBy })}</p>
 			) : placeholder ? (
-				<p className="text-muted">Placeholder. Cost and bonus are empty in the package.</p>
+				<p className="text-muted">{t("placeholder")}</p>
 			) : (
 				<p className="text-muted">{bonus}</p>
 			)}
 			{!placeholder && <p className="text-muted font-mono text-xs">{nextTimeText(view)}</p>}
 			<p className="font-mono text-xs">{powerText(view)}</p>
 			{!tabLock && view.blockedBy.length > 0 && !lockedBy && (
-				<p className="text-muted text-xs">Needs {view.blockedBy.join(", ")} first</p>
+				<p className="text-muted text-xs">
+					{t("needsFirst", { names: view.blockedBy.join(", ") })}
+				</p>
 			)}
 			{view.job && (
 				<TimeLeftPill
 					job={view.job}
-					label={`${node.name} researching`}
+					label={t("researching", { name: node.name })}
 					onClick={() => onManageJob(view.job!.queue)}
 					fullWidth
 				/>
 			)}
 			<div className="mt-auto flex items-center justify-between gap-2">
 				<LevelStepper
-					label={`${node.name} level`}
+					label={t("levelStepper", { name: node.name })}
 					stops={levelStopsOf(node)}
 					value={String(level)}
 					disabled={tabLock !== null || (lockedBy !== null && level === 0)}
 					limitValue={String(view.reachable)}
 					onChange={(value) => onLevelChange(node.id, Number(value))}
 				/>
-				<Button onClick={() => onOpen(node.id)} aria-label={`Details of ${node.name}`}>
-					Details
+				<Button
+					onClick={() => onOpen(node.id)}
+					aria-label={t("detailsOf", { name: node.name })}
+				>
+					{t("details")}
 				</Button>
 			</div>
 		</li>

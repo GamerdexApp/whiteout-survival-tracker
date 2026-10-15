@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { useState } from "react";
 import type { UpgradeJob } from "@/types/app";
 import { formatDateTime, formatTimeLeft } from "@/lib/format";
@@ -38,6 +39,7 @@ export function ManageUpgradeFlyout({
 	onFinish,
 	onCancel,
 }: ManageUpgradeFlyoutProps) {
+	const t = useTranslations("queues.manage");
 	const now = useNow(15_000);
 	const [speedup, setSpeedup] = useState("");
 	const [hours, setHours] = useState("");
@@ -63,13 +65,13 @@ export function ManageUpgradeFlyout({
 		<Flyout
 			open={target !== null}
 			onClose={onClose}
-			title={target?.title ?? "Manage upgrade"}
-			description="Manage the running upgrade"
+			title={target?.title ?? t("fallbackTitle")}
+			description={t("description")}
 			footer={
 				<>
-					<Button onClick={onClose}>Close</Button>
+					<Button onClick={onClose}>{t("close")}</Button>
 					<Button variant="primary" onClick={onFinish}>
-						Finish upgrade
+						{t("finish")}
 					</Button>
 				</>
 			}
@@ -86,21 +88,20 @@ export function ManageUpgradeFlyout({
 							</span>
 						</div>
 						<span className="text-muted">{target.slotLabel}</span>
-						<ProgressBar
-							value={jobProgress(target.job, now)}
-							label="Upgrade progress"
-						/>
+						<ProgressBar value={jobProgress(target.job, now)} label={t("progress")} />
 						<div className="text-muted flex justify-between gap-3 text-xs">
-							<span>Started {formatDateTime(target.job.startedAt)}</span>
-							<span>Ends {formatDateTime(target.job.endsAt)}</span>
+							<span>
+								{t("started", { date: formatDateTime(target.job.startedAt) })}
+							</span>
+							<span>{t("ends", { date: formatDateTime(target.job.endsAt) })}</span>
 						</div>
 					</Card>
 
 					<Card className="flex flex-col gap-3 p-4">
-						<h3 className="font-semibold">Used a speedup</h3>
+						<h3 className="font-semibold">{t("speedup.title")}</h3>
 						<div className="flex items-end gap-3">
 							<div className="flex-1">
-								<Field label="Minutes used">
+								<Field label={t("speedup.minutesUsed")}>
 									<Input
 										inputMode="numeric"
 										className="text-right"
@@ -121,24 +122,22 @@ export function ManageUpgradeFlyout({
 									setSpeedup("");
 								}}
 							>
-								Apply
+								{t("speedup.apply")}
 							</Button>
 						</div>
 						<div className="border-line flex justify-between gap-3 border-t-[1.5px] pt-2">
-							<span>Time left after applying</span>
+							<span>{t("speedup.timeLeftAfter")}</span>
 							<span className="font-mono font-medium">
 								{speedupMinutes === 0
 									? formatTimeLeft(left)
 									: formatTimeLeft(afterSpeedup)}
 							</span>
 						</div>
-						<p className="text-muted text-xs">
-							Speedups of any kind subtract their minutes from the time left.
-						</p>
+						<p className="text-muted text-xs">{t("speedup.hint")}</p>
 					</Card>
 
 					<Card className="flex flex-col gap-3 p-4">
-						<h3 className="font-semibold">Set the time left</h3>
+						<h3 className="font-semibold">{t("setTime.title")}</h3>
 						<HoursMinutesFields
 							hours={hours}
 							minutes={minutes}
@@ -155,20 +154,18 @@ export function ManageUpgradeFlyout({
 									)
 								}
 							>
-								Set the time left
+								{t("setTime.button")}
 							</Button>
 						</div>
-						<p className="text-muted text-xs">
-							Use this when the game shows a different time.
-						</p>
+						<p className="text-muted text-xs">{t("setTime.hint")}</p>
 					</Card>
 
 					<Card className="flex flex-col gap-3 p-4">
-						<h3 className="font-semibold">When it is done</h3>
+						<h3 className="font-semibold">{t("done.title")}</h3>
 						<p className="text-muted">{target.finishText}</p>
 						<div>
 							<Button variant="danger" onClick={onCancel}>
-								Cancel this upgrade
+								{t("done.cancel")}
 							</Button>
 						</div>
 					</Card>

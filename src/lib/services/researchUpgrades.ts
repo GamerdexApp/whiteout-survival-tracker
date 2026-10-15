@@ -1,12 +1,14 @@
+import { translator } from "@/i18n/formatter";
 import type { Playthrough, ResearchJob, ResearchQueueId } from "@/types/app";
-import { formatTimeLeft } from "@/lib/format";
+import { formatNumber, formatTimeLeft } from "@/lib/format";
 import { findItem } from "@/data/game/items";
-import { findResearch } from "@/data/game/research";
+import { findResearch, tabName } from "@/data/game/research";
 import type { CostLine, SlotInfo, StartPayload, UpgradeOption } from "./queues";
 import {
   queueJob,
   RESEARCH_QUEUES,
   researchJobs,
+  researchQueueLabel,
   secondsLeft,
   withCostTaken,
   withResearchJob,
@@ -25,8 +27,9 @@ export const canStartResearch = (view: ResearchNodeView, chief: Playthrough) =>
 export const researchOptions = (
   views: ResearchNodeView[],
   chief: Playthrough,
-): UpgradeOption[] =>
-  views.flatMap((view) => {
+): UpgradeOption[] => {
+  const t = translator("research");
+  return views.flatMap((view) => {
     if (!view.next || !canStartResearch(view, chief)) return [];
 
     const cost: CostLine[] = view.next.cost.map((line) => ({
@@ -36,14 +39,19 @@ export const researchOptions = (
     }));
     const from = view.level;
     const to = view.level + 1;
+    const range = {
+      from: formatNumber(from),
+      to: formatNumber(to),
+      tab: tabName(view.tab),
+    };
 
     return [
       {
         id: view.node.id,
-        label: `${view.node.name}, ${view.tab.name}, level ${from} to ${to}`,
+        label: t("option.label", { name: view.node.name, ...range }),
         name: view.node.name,
         img: view.node.img || undefined,
-        subtitle: `Level ${from} to level ${to}, ${view.tab.name} tab`,
+        subtitle: t("option.subtitle", range),
         cost,
         baseSeconds: view.next.researchTimeSeconds,
         power: view.next.power,
@@ -53,19 +61,26 @@ export const researchOptions = (
       },
     ];
   });
+};
 
-export const researchSlots = (chief: Playthrough, now: number): SlotInfo[] =>
-  RESEARCH_QUEUES.map((queue) => {
+export const researchSlots = (chief: Playthrough, now: number): SlotInfo[] => {
+  const t = translator("research");
+  return RESEARCH_QUEUES.map((queue) => {
     const job = queueJob(chief, queue.id);
     const node = job ? findResearch(job.nodeId) : undefined;
     return {
       key: queue.id,
-      label: `${queue.name}, ${queue.tabs}`,
+      label: researchQueueLabel(queue.id),
       busyText: job
-        ? `Busy: ${node?.name ?? job.nodeId} level ${job.to}, ${formatTimeLeft(secondsLeft(job, now))}`
+        ? t("option.busy", {
+            name: node?.name ?? job.nodeId,
+            level: formatNumber(job.to),
+            timeLeft: formatTimeLeft(secondsLeft(job, now)),
+          })
         : undefined,
     };
   });
+};
 
 export const startResearch = (
   chief: Playthrough,

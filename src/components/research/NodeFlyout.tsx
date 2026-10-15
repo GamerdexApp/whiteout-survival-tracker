@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import type { Playthrough } from "@/types/app";
 import { formatDuration, formatNumber } from "@/lib/format";
 import type { ResearchNodeView } from "@/service/research";
@@ -15,6 +16,8 @@ import { SectionLabel } from "@/comps/ui/SectionLabel";
 
 const LEVELS_SHOWN = 5;
 
+const upcomingHeads = ["level", "bonus", "time", "power"] as const;
+
 interface NodeFlyoutProps {
 	view: ResearchNodeView | null;
 	chief: Playthrough;
@@ -23,25 +26,28 @@ interface NodeFlyoutProps {
 }
 
 export function NodeFlyout({ view, chief, onClose, onOpenPlan }: NodeFlyoutProps) {
+	const t = useTranslations("research.nodeFlyout");
+
 	return (
 		<Flyout
 			open={view !== null}
 			onClose={onClose}
-			title={view?.node.name ?? "Research"}
+			title={view?.node.name ?? t("fallbackTitle")}
 			description={
 				view
-					? `${view.node.category}, tier ${view.node.tier}, ${maxLevelOf(view.node)} levels`
+					? t("description", {
+							category: view.node.category,
+							tier: formatNumber(view.node.tier),
+							levels: formatNumber(maxLevelOf(view.node)),
+						})
 					: undefined
 			}
-			footer={<Button onClick={onClose}>Close</Button>}
+			footer={<Button onClick={onClose}>{t("close")}</Button>}
 		>
 			{view && <NodeContent view={view} chief={chief} onOpenPlan={onOpenPlan} />}
 		</Flyout>
 	);
 }
-
-const timeText = (seconds: number | undefined) =>
-	seconds === undefined ? "Unknown" : formatDuration(seconds);
 
 function NodeContent({
 	view,
@@ -52,6 +58,9 @@ function NodeContent({
 	chief: Playthrough;
 	onOpenPlan: () => void;
 }) {
+	const t = useTranslations("research.nodeFlyout");
+	const timeText = (seconds: number | undefined) =>
+		seconds === undefined ? t("unknown") : formatDuration(seconds);
 	const { node, level, max, goal, hasGoal, placeholder } = view;
 	const upcoming = node.levels.filter((item) => item.level > level).slice(0, LEVELS_SHOWN);
 	const itemIds = [...new Set(upcoming.flatMap((item) => item.cost.map((cost) => cost.itemId)))];
@@ -86,50 +95,54 @@ function NodeContent({
 					<ItemIcon src={node.img} size={40} />
 					<span>
 						<span className="font-mono font-medium">
-							Level {level} of {max}
+							{t("levelOf", { level: formatNumber(level), max: formatNumber(max) })}
 						</span>{" "}
 						<span className="text-muted">
-							({level === 0 ? "not started" : level === max ? "maxed" : "in progress"}
+							(
+							{level === 0
+								? t("status.notStarted")
+								: level === max
+									? t("status.maxed")
+									: t("status.inProgress")}
 							)
 						</span>
 					</span>
 				</div>
 				<span className="flex items-center gap-3">
 					<span className={hasGoal ? "text-primary font-medium" : "text-muted"}>
-						{hasGoal ? `Goal ${goal}` : "No goal"}
+						{hasGoal ? t("goal", { goal: formatNumber(goal) }) : t("noGoal")}
 					</span>
-					<Button onClick={onOpenPlan}>Open Plan</Button>
+					<Button onClick={onOpenPlan}>{t("openPlan")}</Button>
 				</span>
 			</Card>
 
 			{view.maxed ? (
 				<Card className="flex flex-col gap-1 p-4">
-					<h3 className="font-semibold">Max level</h3>
-					<p className="text-muted">Nothing left to research.</p>
-					<p>{bonusText(node.levels[max - 1]) || "No bonus in the data."}</p>
+					<h3 className="font-semibold">{t("maxLevel.title")}</h3>
+					<p className="text-muted">{t("maxLevel.nothingLeft")}</p>
+					<p>{bonusText(node.levels[max - 1]) || t("maxLevel.noBonus")}</p>
 				</Card>
 			) : placeholder ? (
 				<Card className="flex flex-col gap-1 border-dashed p-4">
-					<h3 className="font-semibold">Placeholder</h3>
-					<p className="text-muted">
-						This node has no cost and no bonus in the package yet. Research time and
-						cost show Unknown.
-					</p>
+					<h3 className="font-semibold">{t("placeholder.title")}</h3>
+					<p className="text-muted">{t("placeholder.description")}</p>
 				</Card>
 			) : (
 				<>
 					<Card className="flex flex-col gap-3 p-4">
 						<h3 className="font-semibold">
-							{level === 0 ? "First levels" : `Next levels after ${level}`}
+							{level === 0
+								? t("upcoming.first")
+								: t("upcoming.after", { level: formatNumber(level) })}
 						</h3>
 						<div className="overflow-x-auto">
 							<table className="w-full min-w-[26rem] text-left">
 								<thead>
 									<tr>
-										{["Level", "Bonus", "Time", "Power"].map((head) => (
+										{upcomingHeads.map((head) => (
 											<th key={head} className="py-1 pr-3">
 												<SectionLabel className="text-muted">
-													{head}
+													{t(`upcoming.heads.${head}`)}
 												</SectionLabel>
 											</th>
 										))}
@@ -146,11 +159,13 @@ function NodeContent({
 												<td className="py-2 pr-3 font-mono">
 													{item.level}{" "}
 													{hasGoal && item.level === goal && (
-														<Badge tone="added">Goal</Badge>
+														<Badge tone="added">
+															{t("upcoming.goalBadge")}
+														</Badge>
 													)}
 												</td>
 												<td className="py-2 pr-3">
-													{bonusText(item) || "None"}
+													{bonusText(item) || t("upcoming.noBonus")}
 												</td>
 												<td className="py-2 pr-3 font-mono">
 													{timeText(item.researchTimeSeconds)}
@@ -164,21 +179,19 @@ function NodeContent({
 								</tbody>
 							</table>
 						</div>
-						{hasGoal && (
-							<p className="text-muted text-xs">
-								Shaded rows are the levels between your level and your goal.
-							</p>
-						)}
+						{hasGoal && <p className="text-muted text-xs">{t("upcoming.shaded")}</p>}
 					</Card>
 
 					<Card className="flex flex-col gap-3 p-4">
-						<h3 className="font-semibold">Cost of the next levels</h3>
+						<h3 className="font-semibold">{t("cost.title")}</h3>
 						<div className="overflow-x-auto">
 							<table className="w-full min-w-[26rem] text-right">
 								<thead>
 									<tr>
 										<th className="py-1 pr-3 text-left">
-											<SectionLabel className="text-muted">Lvl</SectionLabel>
+											<SectionLabel className="text-muted">
+												{t("cost.level")}
+											</SectionLabel>
 										</th>
 										{itemIds.map((id) => (
 											<th key={id} className="py-1 pl-3">
@@ -216,7 +229,10 @@ function NodeContent({
 					{hasGoal && (
 						<Card className="flex flex-col gap-2 p-4">
 							<h3 className="font-semibold">
-								Total to your goal, level {level} to {goal}
+								{t("total.title", {
+									level: formatNumber(level),
+									goal: formatNumber(goal),
+								})}
 							</h3>
 							<ul className="flex flex-col">
 								{[...totals].map(([id, amount]) => (
@@ -233,7 +249,7 @@ function NodeContent({
 								))}
 							</ul>
 							<div className="border-line flex justify-between gap-3 border-t-[1.5px] pt-2">
-								<span>Known research time</span>
+								<span>{t("total.knownTime")}</span>
 								<span className="font-mono">
 									{formatDuration(
 										toGoal.reduce(
@@ -244,7 +260,7 @@ function NodeContent({
 								</span>
 							</div>
 							<div className="flex justify-between gap-3">
-								<span>Power</span>
+								<span>{t("total.power")}</span>
 								<span className="font-mono">
 									{formatNumber(
 										toGoal.reduce((sum, item) => sum + item.power, 0)
@@ -253,18 +269,21 @@ function NodeContent({
 							</div>
 							{missingTimes > 0 && (
 								<p className="text-muted text-xs">
-									{missingTimes}{" "}
-									{missingTimes === 1 ? "level has" : "levels have"} no time in
-									the package and count as 0 here.
+									{t("total.missingTimes", {
+										count: missingTimes,
+										amount: formatNumber(missingTimes),
+									})}
 								</p>
 							)}
 						</Card>
 					)}
 
 					<Card className="flex flex-col gap-2 p-4">
-						<h3 className="font-semibold">Requirements for level {level + 1}</h3>
+						<h3 className="font-semibold">
+							{t("requirements.title", { level: formatNumber(level + 1) })}
+						</h3>
 						{requirements.length === 0 ? (
-							<p className="text-muted">No requirements.</p>
+							<p className="text-muted">{t("requirements.none")}</p>
 						) : (
 							<ul className="flex flex-col">
 								{requirements.map((item) => (
@@ -277,7 +296,9 @@ function NodeContent({
 											<span className="text-muted text-xs">{item.yours}</span>
 										</span>
 										<Badge tone={item.met ? "kept" : "changed"}>
-											{item.met ? "Met" : "Not met"}
+											{item.met
+												? t("requirements.met")
+												: t("requirements.notMet")}
 										</Badge>
 									</li>
 								))}
@@ -285,7 +306,7 @@ function NodeContent({
 						)}
 						{later.length > 0 && (
 							<p className="text-muted text-xs">
-								Later levels ask for: {later.join(", ")}.
+								{t("requirements.later", { list: later.join(", ") })}
 							</p>
 						)}
 					</Card>

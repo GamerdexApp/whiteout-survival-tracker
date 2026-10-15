@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { LuPlus } from "react-icons/lu";
 import type { Playthrough } from "@/types/app";
 import { formatNumber } from "@/lib/format";
@@ -14,7 +15,7 @@ import { MAX_SHELTERS, shelter } from "@/data/game/buildings";
 import { Button } from "@/comps/ui/Button";
 import { Dialog } from "@/comps/ui/Dialog";
 import { LevelStepper } from "@/comps/ui/LevelStepper";
-import { levelStops } from "./stops";
+import { builtStops } from "./stops";
 
 interface ShelterDialogProps {
 	open: boolean;
@@ -24,27 +25,24 @@ interface ShelterDialogProps {
 	onChange: (levels: string[]) => void;
 }
 
-const builtStops = levelStops(shelter).slice(1);
-
 export function ShelterDialog({ open, chief, locked, onClose, onChange }: ShelterDialogProps) {
+	const t = useTranslations("buildings");
+	const stops = builtStops(shelter);
 	const levels = shelterLevels(chief.buildings?.shelter);
 	const requirements = shelterRequirements(levels);
-	const firstLevel = builtStops[0].value;
+	const firstLevel = stops[0].value;
+	const maxShelters = formatNumber(MAX_SHELTERS);
 
 	return (
 		<Dialog
 			open={open}
 			onClose={onClose}
-			title="Shelters"
-			description={`Up to ${MAX_SHELTERS} can be built. Set the level of each one.`}
-			footer={<Button onClick={onClose}>Close</Button>}
+			title={t("shelters.title")}
+			description={t("shelters.description", { max: maxShelters })}
+			footer={<Button onClick={onClose}>{t("close")}</Button>}
 		>
 			{levels.length === 0 ? (
-				<p className="text-muted">
-					{locked
-						? "The Shelter is still locked by your Furnace level."
-						: "No shelters yet."}
-				</p>
+				<p className="text-muted">{locked ? t("shelters.locked") : t("shelters.empty")}</p>
 			) : (
 				<ul className="flex flex-col">
 					{levels.map((level, index) => (
@@ -53,14 +51,20 @@ export function ShelterDialog({ open, chief, locked, onClose, onChange }: Shelte
 							className="border-line flex flex-wrap items-center justify-between gap-x-3 gap-y-1 border-t-[1.5px] py-2 first:border-t-0"
 						>
 							<div className="flex flex-col">
-								<span className="font-medium">Shelter {index + 1}</span>
+								<span className="font-medium">
+									{t("shelterName", { number: formatNumber(index + 1) })}
+								</span>
 								<span className="text-muted font-mono text-xs">
-									Power {formatNumber(findLevel(shelter, level)?.power ?? 0)}
+									{t("shelters.power", {
+										power: formatNumber(findLevel(shelter, level)?.power ?? 0),
+									})}
 								</span>
 							</div>
 							<LevelStepper
-								label={`Shelter ${index + 1} level`}
-								stops={builtStops}
+								label={t("levelOf", {
+									name: t("shelterName", { number: formatNumber(index + 1) }),
+								})}
+								stops={stops}
 								value={level}
 								limitValue={
 									reachableLevel(shelter, levelOrder(shelter, level), chief) ??
@@ -85,36 +89,37 @@ export function ShelterDialog({ open, chief, locked, onClose, onChange }: Shelte
 					onClick={() => onChange([...levels, firstLevel])}
 				>
 					<LuPlus size={16} aria-hidden="true" />
-					Add shelter
+					{t("shelters.add")}
 				</Button>
 				{levels.length > 0 && (
 					<Button variant="danger" onClick={() => onChange(levels.slice(0, -1))}>
-						Remove Shelter {levels.length}
+						{t("shelters.remove", { number: formatNumber(levels.length) })}
 					</Button>
 				)}
 			</div>
 			{levels.length >= MAX_SHELTERS && (
-				<p className="text-muted">All {MAX_SHELTERS} shelters are built.</p>
+				<p className="text-muted">{t("shelters.allBuilt", { max: maxShelters })}</p>
 			)}
 			{requirements.length > 0 && (
 				<div className="flex flex-col gap-1">
-					<h3 className="font-medium">What your Furnace needs from shelters</h3>
+					<h3 className="font-medium">{t("shelters.furnaceNeeds")}</h3>
 					<ul className="flex flex-col gap-0.5">
 						{requirements.map((item) => (
 							<li key={item.furnaceLevel} className="text-muted">
-								Furnace {item.furnaceLevel} needs Shelter {item.shelterNumber} at
-								level {item.level}.{" "}
+								{t("shelters.requirement", {
+									furnaceLevel: item.furnaceLevel,
+									number: formatNumber(item.shelterNumber),
+									level: formatNumber(item.level),
+								})}{" "}
 								<span className="text-ink font-medium">
-									{item.met ? "Met." : "Not met."}
+									{item.met ? t("shelters.met") : t("shelters.notMet")}
 								</span>
 							</li>
 						))}
 					</ul>
 				</div>
 			)}
-			<p className="text-muted">
-				The Plan and the progress bar use your lowest shelter, the next one to upgrade.
-			</p>
+			<p className="text-muted">{t("shelters.footnote")}</p>
 		</Dialog>
 	);
 }

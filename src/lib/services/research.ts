@@ -1,3 +1,4 @@
+import { formatNumber, translator } from "@/i18n/formatter";
 import type {
   ResearchLevel,
   ResearchNode,
@@ -14,6 +15,7 @@ import {
   levelData,
   maxLevelOf,
   nodesOfTab,
+  tabName,
   tabOfNode,
   troopLineOf,
 } from "@/data/game/research";
@@ -70,6 +72,8 @@ export const requirementStatus = (
   requirement: ResearchRequirement,
   chief: Playthrough,
 ): RequirementStatus => {
+  const t = translator("research");
+
   if (requirement.type === "building") {
     const building = findBuildingById(requirement.id);
     const required = String(requirement.level);
@@ -77,7 +81,9 @@ export const requirementStatus = (
     return {
       type: "building",
       text: `${building?.name ?? requirement.id} ${required}`,
-      yours: yours ? `Yours is ${yours}` : "Not built",
+      yours: yours
+        ? t("requirement.yours", { level: yours })
+        : t("requirement.notBuilt"),
       met: building
         ? levelOrder(building, yours) >= levelOrder(building, required)
         : true,
@@ -89,15 +95,18 @@ export const requirementStatus = (
     const have = researchLevelOf(chief, requirement.id);
     return {
       type: "research",
-      text: `${needed?.name ?? requirement.id} level ${requirement.level}`,
-      yours: `Yours is level ${have}`,
+      text: t("requirement.researchLevel", {
+        name: needed?.name ?? requirement.id,
+        level: formatNumber(Number(requirement.level)),
+      }),
+      yours: t("requirement.yoursLevel", { level: formatNumber(have) }),
       met: have >= Number(requirement.level),
     };
   }
 
   return {
     type: requirement.type,
-    text: `${requirement.id} (not released yet)`,
+    text: t("requirement.notReleased", { id: requirement.id }),
     yours: "",
     met: false,
   };
@@ -145,10 +154,13 @@ export const tabLockOf = (
     : { required: tab.unlockDays, yours };
 };
 
-export const tabLockText = (tab: ResearchTab, lock: TabLock) =>
-  lock.yours === null
-    ? `${tab.name} research opens at server age ${lock.required} days. Yours is unknown. Add a server start date in Edit chief.`
-    : `${tab.name} research opens at server age ${lock.required} days. Yours is ${lock.yours}.`;
+export const tabLockText = (tab: ResearchTab, lock: TabLock) => {
+  const t = translator("research");
+  const values = { tab: tabName(tab), days: formatNumber(lock.required) };
+  return lock.yours === null
+    ? t("tabLock.unknownAge", values)
+    : t("tabLock.knownAge", { ...values, yours: formatNumber(lock.yours) });
+};
 
 export interface ResearchNodeView {
   node: ResearchNode;

@@ -1,6 +1,7 @@
 "use client";
 
 import type { BuildingLevel } from "whiteout-survival-data";
+import { useTranslations } from "next-intl";
 import { formatDuration, formatNumber } from "@/lib/format";
 import type { BuildingView } from "@/service/buildings";
 import { findBuildingById } from "@/data/game/buildings";
@@ -46,19 +47,24 @@ interface LevelsFlyoutProps {
 }
 
 export function LevelsFlyout({ view, onClose }: LevelsFlyoutProps) {
+	const t = useTranslations("buildings");
 	const building = view ? findBuildingById(view.building.id) : undefined;
 
 	return (
 		<Flyout
 			open={view !== null}
 			onClose={onClose}
-			title={building?.name ?? "Levels"}
+			title={building?.name ?? t("levels.title")}
 			description={
 				building
-					? `${building.category} · Max ${building.maxLevelLabel} · ${building.levels.length} levels`
+					? t("levels.description", {
+							category: building.category,
+							max: building.maxLevelLabel,
+							count: formatNumber(building.levels.length),
+						})
 					: undefined
 			}
-			footer={<Button onClick={onClose}>Close</Button>}
+			footer={<Button onClick={onClose}>{t("close")}</Button>}
 		>
 			{view && building && <LevelsContent view={view} />}
 		</Flyout>
@@ -66,6 +72,7 @@ export function LevelsFlyout({ view, onClose }: LevelsFlyoutProps) {
 }
 
 function LevelsContent({ view }: { view: BuildingView }) {
+	const t = useTranslations("buildings");
 	const { building } = view;
 	const upcoming = building.levels
 		.filter((level) => level.order > view.order)
@@ -78,32 +85,34 @@ function LevelsContent({ view }: { view: BuildingView }) {
 		<>
 			<div className="flex items-start gap-3">
 				<BuildingIcon view={view} />
-				<p className="text-muted">
-					{building.description ?? "No description in the data yet."}
-				</p>
+				<p className="text-muted">{building.description ?? t("levels.noDescription")}</p>
 			</div>
 			<div className="grid gap-3 sm:grid-cols-3">
-				<Fact label="Current level">{view.level ?? "Not built"}</Fact>
-				<Fact label="Goal level">
-					{view.hasGoal ? <span className="text-primary">{view.goal}</span> : "No goal"}
+				<Fact label={t("levels.current")}>{view.level ?? t("notBuilt")}</Fact>
+				<Fact label={t("levels.goal")}>
+					{view.hasGoal ? (
+						<span className="text-primary">{view.goal}</span>
+					) : (
+						t("levels.noGoal")
+					)}
 				</Fact>
-				<Fact label="Next level needs">
+				<Fact label={t("levels.nextNeeds")}>
 					<span className="font-sans">
-						{view.needs.length > 0 ? view.needs.join(", ") : "No other requirements"}
+						{view.needs.length > 0 ? view.needs.join(", ") : t("noOtherRequirements")}
 					</span>
 				</Fact>
 			</div>
 			<Card className="border-dashed p-3">
-				<p className="text-muted">
-					This table lists only the levels after your current one, since those are done.
-				</p>
+				<p className="text-muted">{t("levels.tableNote")}</p>
 			</Card>
 			{upcoming.length === 0 ? (
-				<p className="font-medium">Max level. Nothing is left to upgrade.</p>
+				<p className="font-medium">{t("levels.maxed")}</p>
 			) : (
 				<div className="flex flex-col gap-2">
 					<h3 className="font-medium">
-						{view.level ? `Next levels after ${view.level}` : "First levels"}
+						{view.level
+							? t("levels.nextAfter", { level: view.level })
+							: t("levels.first")}
 					</h3>
 					<Card className="overflow-hidden">
 						<div
@@ -113,13 +122,17 @@ function LevelsContent({ view }: { view: BuildingView }) {
 									: "grid-cols-[1fr_1fr_1fr_1.6fr]"
 							}`}
 						>
-							<SectionLabel className="text-muted">Level</SectionLabel>
-							<SectionLabel className="text-muted">Time</SectionLabel>
-							<SectionLabel className="text-muted">Power</SectionLabel>
+							<SectionLabel className="text-muted">{t("levels.level")}</SectionLabel>
+							<SectionLabel className="text-muted">{t("levels.time")}</SectionLabel>
+							<SectionLabel className="text-muted">{t("levels.power")}</SectionLabel>
 							{hasCapacity && (
-								<SectionLabel className="text-muted">Capacity</SectionLabel>
+								<SectionLabel className="text-muted">
+									{t("levels.capacity")}
+								</SectionLabel>
 							)}
-							<SectionLabel className="text-muted">Requires</SectionLabel>
+							<SectionLabel className="text-muted">
+								{t("levels.requires")}
+							</SectionLabel>
 						</div>
 						<ul>
 							{upcoming.map((level) => {
@@ -148,18 +161,18 @@ function LevelsContent({ view }: { view: BuildingView }) {
 													}
 												>
 													{capacity === undefined
-														? "Unknown"
+														? t("unknown")
 														: formatNumber(capacity)}
 												</span>
 											)}
 											<span className="text-muted col-span-2 text-xs lg:col-span-1">
-												{requirementsOf(level) || "None"}
+												{requirementsOf(level) || t("none")}
 											</span>
 										</div>
 										<div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs">
 											{view.goal === level.label && view.hasGoal && (
 												<span className="text-primary border-primary rounded-full border-[1.5px] px-2 py-0.5 font-mono text-[11px] uppercase">
-													Goal
+													{t("levels.goalBadge")}
 												</span>
 											)}
 											{level.cost.map((cost) => (
@@ -177,10 +190,7 @@ function LevelsContent({ view }: { view: BuildingView }) {
 						</ul>
 					</Card>
 					{capacityMissing && (
-						<p className="text-muted text-xs">
-							Capacity is only set on tier base rows in the package, so sub-levels
-							show Unknown.
-						</p>
+						<p className="text-muted text-xs">{t("levels.capacityNote")}</p>
 					)}
 				</div>
 			)}

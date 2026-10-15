@@ -1,3 +1,4 @@
+import { translator } from "@/i18n/formatter";
 import type { Building } from "whiteout-survival-data";
 import type { Playthrough } from "@/types/app";
 import {
@@ -64,6 +65,7 @@ export interface MassSetChange {
 }
 
 export const draftChanges = (chief: Playthrough, draft: MassSetDraft) => {
+  const built = translator("buildings")("built");
   const levelChanges: MassSetChange[] = massSetBuildings.flatMap((building) => {
     const from = knownLabel(building, chief.buildings?.[building.id]?.level);
     const to = draft.levels[building.id];
@@ -75,7 +77,7 @@ export const draftChanges = (chief: Playthrough, draft: MassSetDraft) => {
       const to = draft.built[building.id];
       return from === to
         ? []
-        : [{ building, from: from ? "Built" : null, to: to ? "Built" : null }];
+        : [{ building, from: from ? built : null, to: to ? built : null }];
     },
   );
   return [...levelChanges, ...builtChanges];

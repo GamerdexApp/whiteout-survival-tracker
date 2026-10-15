@@ -1,7 +1,9 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { useMemo, useState } from "react";
 import type { Playthrough } from "@/types/app";
+import { formatNumber } from "@/lib/format";
 import type { MassSetDraft } from "@/service/buildingMassSet";
 import {
 	draftBlockers,
@@ -33,6 +35,7 @@ interface MassEditDialogProps {
 const DEFAULT_RAISE_LABEL = "30";
 
 export function MassEditDialog({ open, chief, onClose, onSave }: MassEditDialogProps) {
+	const t = useTranslations("buildings");
 	const [wasOpen, setWasOpen] = useState(false);
 	const [draft, setDraft] = useState<MassSetDraft>(() => draftFromChief(chief));
 	const [raiseLabel, setRaiseLabel] = useState(DEFAULT_RAISE_LABEL);
@@ -49,39 +52,40 @@ export function MassEditDialog({ open, chief, onClose, onSave }: MassEditDialogP
 	const blockers = useMemo(() => draftBlockers(chief, draft), [chief, draft]);
 	const blockedCount = Object.keys(blockers).length;
 	const canSave = changes.length > 0 && blockedCount === 0;
+	const changeCount = { count: changes.length, amount: formatNumber(changes.length) };
 
 	return (
 		<Dialog
 			open={open}
 			onClose={onClose}
 			variant="wide"
-			title="Mass edit buildings"
-			description="Set many buildings at once. Nothing is saved until you press Set buildings."
+			title={t("massEdit.title")}
+			description={t("massEdit.description")}
 			footer={
 				<>
 					<span className="text-muted mr-auto" role="status">
 						{changes.length === 0
-							? "No changes yet"
-							: `${changes.length} ${changes.length === 1 ? "building changes" : "buildings change"}`}
+							? t("massEdit.noChanges")
+							: t("massEdit.changes", changeCount)}
 					</span>
-					<Button onClick={onClose}>Cancel</Button>
+					<Button onClick={onClose}>{t("cancel")}</Button>
 					<Button
 						variant="primary"
 						disabled={!canSave}
 						onClick={() => onSave(draft, changes.length)}
 					>
-						Set {changes.length} {changes.length === 1 ? "building" : "buildings"}
+						{t("massEdit.set", changeCount)}
 					</Button>
 				</>
 			}
 		>
 			<Card className="flex flex-col gap-3 p-4">
-				<h3 className="font-semibold">Raise every building to a level</h3>
+				<h3 className="font-semibold">{t("massEdit.raiseTitle")}</h3>
 				<div className="flex gap-3">
 					<div className="flex-1">
 						<Select
 							data-autofocus
-							aria-label="Raise all buildings to level"
+							aria-label={t("massEdit.raiseLabel")}
 							value={raiseLabel}
 							onChange={(event) => setRaiseLabel(event.target.value)}
 						>
@@ -93,32 +97,30 @@ export function MassEditDialog({ open, chief, onClose, onSave }: MassEditDialogP
 						</Select>
 					</div>
 					<Button onClick={() => setDraft(raiseAllTo(draft, raiseLabel))}>
-						Raise all
+						{t("massEdit.raiseAll")}
 					</Button>
 				</div>
-				<p className="text-muted text-xs">
-					Each building goes up to its highest level at or below this one. A building that
-					is already higher stays, and one that starts later stays not built. Goals are
-					not changed.
-				</p>
+				<p className="text-muted text-xs">{t("massEdit.raiseHint")}</p>
 			</Card>
 
 			{blockedCount > 0 && (
-				<Note tone="warning" title="Some buildings need another building first.">
-					{blockedCount} {blockedCount === 1 ? "building is" : "buildings are"} above what
-					its requirements allow.{" "}
+				<Note tone="warning" title={t("massEdit.blockedTitle")}>
+					{t("massEdit.blocked", {
+						count: blockedCount,
+						amount: formatNumber(blockedCount),
+					})}{" "}
 					<button
 						type="button"
 						className="text-link font-medium underline"
 						onClick={() => setDraft(lowerBlocked(chief, draft))}
 					>
-						Lower them to what is allowed
+						{t("massEdit.lowerBlocked")}
 					</button>
 				</Note>
 			)}
 
 			<div className="flex flex-col gap-1">
-				<SectionLabel className="text-muted">Levels</SectionLabel>
+				<SectionLabel className="text-muted">{t("massEdit.levels")}</SectionLabel>
 				<ul>
 					{massSetBuildings.map((building) => {
 						const value = draft.levels[building.id];
@@ -134,18 +136,20 @@ export function MassEditDialog({ open, chief, onClose, onSave }: MassEditDialogP
 									<span className="font-medium">{building.name}</span>
 									{blocked ? (
 										<span className="text-danger text-xs">
-											Needs {blocked.join(", ")} first
+											{t("massEdit.needsFirst", { list: blocked.join(", ") })}
 										</span>
 									) : (
 										changed && (
 											<span className="text-muted font-mono text-xs">
-												was {saved ?? "Not built"}
+												{t("massEdit.was", {
+													level: saved ?? t("notBuilt"),
+												})}
 											</span>
 										)
 									)}
 								</div>
 								<LevelStepper
-									label={`${building.name} level`}
+									label={t("levelOf", { name: building.name })}
 									stops={levelStops(building)}
 									value={value ?? NOT_BUILT_VALUE}
 									onChange={(next) =>
@@ -167,7 +171,9 @@ export function MassEditDialog({ open, chief, onClose, onSave }: MassEditDialogP
 
 			<div className="flex flex-col gap-1">
 				<div className="flex flex-wrap items-center justify-between gap-2">
-					<SectionLabel className="text-muted">Entertainment</SectionLabel>
+					<SectionLabel className="text-muted">
+						{t("massEdit.entertainment")}
+					</SectionLabel>
 					<span className="flex gap-2">
 						<Button
 							onClick={() =>
@@ -182,7 +188,7 @@ export function MassEditDialog({ open, chief, onClose, onSave }: MassEditDialogP
 								})
 							}
 						>
-							Mark all built
+							{t("massEdit.markAllBuilt")}
 						</Button>
 						<Button
 							onClick={() =>
@@ -197,7 +203,7 @@ export function MassEditDialog({ open, chief, onClose, onSave }: MassEditDialogP
 								})
 							}
 						>
-							Clear all
+							{t("massEdit.clearAll")}
 						</Button>
 					</span>
 				</div>
@@ -211,12 +217,14 @@ export function MassEditDialog({ open, chief, onClose, onSave }: MassEditDialogP
 								<span className="font-medium">{building.name}</span>
 								{blockers[building.id] && (
 									<span className="text-danger text-xs">
-										Needs {blockers[building.id].join(", ")} first
+										{t("massEdit.needsFirst", {
+											list: blockers[building.id].join(", "),
+										})}
 									</span>
 								)}
 							</div>
 							<Switch
-								label={`${building.name} built`}
+								label={t("entry.builtSwitch", { name: building.name })}
 								checked={draft.built[building.id]}
 								onChange={(built) =>
 									setDraft({
@@ -230,11 +238,7 @@ export function MassEditDialog({ open, chief, onClose, onSave }: MassEditDialogP
 				</ul>
 			</div>
 
-			<p className="text-muted">
-				Mass edit changes saved levels only. It never lowers a level on its own and never
-				changes goals. Shelters have a level each, so set them with the Shelters button, and
-				set the Hero Hall on the Facilities tab.
-			</p>
+			<p className="text-muted">{t("massEdit.footnote")}</p>
 		</Dialog>
 	);
 }

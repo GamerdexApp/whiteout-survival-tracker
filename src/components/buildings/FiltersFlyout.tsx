@@ -1,5 +1,7 @@
 "use client";
 
+import { useTranslations } from "next-intl";
+import { formatNumber } from "@/lib/format";
 import type { BuildingFilters, BuildingOrder } from "@/service/buildings";
 import { buildingCategories } from "@/data/game/buildings";
 import { allBuildings } from "@/data/game/buildings";
@@ -18,19 +20,7 @@ interface FiltersFlyoutProps {
 	onClose: () => void;
 }
 
-const categoryOptions = [
-	{ id: "all", label: `All, ${allBuildings.length}` },
-	...buildingCategories.map((category) => ({
-		id: category,
-		label: `${category}, ${allBuildings.filter((building) => building.category === category).length}`,
-	})),
-] as { id: BuildingFilters["category"]; label: string }[];
-
-const orderOptions: { id: BuildingOrder; label: string }[] = [
-	{ id: "game", label: "Game order, Furnace first" },
-	{ id: "name", label: "Name, A to Z" },
-	{ id: "progress", label: "Progress, lowest first" },
-];
+const orderIds: BuildingOrder[] = ["game", "name", "progress"];
 
 export function FiltersFlyout({
 	open,
@@ -40,62 +30,75 @@ export function FiltersFlyout({
 	onReset,
 	onClose,
 }: FiltersFlyoutProps) {
+	const t = useTranslations("buildings.filters");
+	const categoryOptions = [
+		{ id: "all", label: t("categoryAll", { count: formatNumber(allBuildings.length) }) },
+		...buildingCategories.map((category) => ({
+			id: category,
+			label: t("categoryOption", {
+				category,
+				count: formatNumber(
+					allBuildings.filter((building) => building.category === category).length
+				),
+			}),
+		})),
+	] as { id: BuildingFilters["category"]; label: string }[];
+	const orderOptions = orderIds.map((id) => ({ id, label: t(`orders.${id}`) }));
+
 	return (
 		<Flyout
 			open={open}
 			onClose={onClose}
-			title="Filters"
-			description="Choose what the Buildings list shows"
+			title={t("title")}
+			description={t("description")}
 			footer={
 				<>
 					<Button variant="link" onClick={onReset} className="mr-auto">
-						Reset
+						{t("reset")}
 					</Button>
 					<Button variant="primary" onClick={onClose}>
-						Show {shown} {shown === 1 ? "building" : "buildings"}
+						{t("show", { count: shown, amount: formatNumber(shown) })}
 					</Button>
 				</>
 			}
 		>
 			<div className="flex flex-col gap-2">
-				<SectionLabel className="text-muted">Category</SectionLabel>
+				<SectionLabel className="text-muted">{t("category")}</SectionLabel>
 				<RadioGroup
-					label="Category"
+					label={t("category")}
 					options={categoryOptions}
 					value={filters.category}
 					onChange={(category) => onChange({ ...filters, category })}
 				/>
 			</div>
 			<div className="flex flex-col gap-2">
-				<SectionLabel className="text-muted">Show</SectionLabel>
+				<SectionLabel className="text-muted">{t("showSection")}</SectionLabel>
 				<CheckChip
-					label="Hide maxed buildings"
+					label={t("hideMaxed")}
 					checked={filters.hideMaxed}
 					onChange={(hideMaxed) => onChange({ ...filters, hideMaxed })}
 				/>
 				<CheckChip
-					label="Hide locked buildings"
+					label={t("hideLocked")}
 					checked={filters.hideLocked}
 					onChange={(hideLocked) => onChange({ ...filters, hideLocked })}
 				/>
 				<CheckChip
-					label="Only buildings with a goal"
+					label={t("goalsOnly")}
 					checked={filters.goalsOnly}
 					onChange={(goalsOnly) => onChange({ ...filters, goalsOnly })}
 				/>
 			</div>
 			<div className="flex flex-col gap-2">
-				<SectionLabel className="text-muted">Order</SectionLabel>
+				<SectionLabel className="text-muted">{t("order")}</SectionLabel>
 				<RadioGroup
-					label="Order"
+					label={t("order")}
 					options={orderOptions}
 					value={filters.order}
 					onChange={(order) => onChange({ ...filters, order })}
 				/>
 			</div>
-			<p className="text-muted">
-				Furnace stays pinned at the top whatever the filter. Filters are not saved.
-			</p>
+			<p className="text-muted">{t("pinned")}</p>
 		</Flyout>
 	);
 }

@@ -1,10 +1,11 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import { LuPlus, LuTrash2 } from "react-icons/lu";
 import type { Appointment, Playthrough } from "@/types/app";
-import { formatDuration, formatNumber } from "@/lib/format";
+import { formatDateTime, formatDuration, formatNumber } from "@/lib/format";
 import { useUiSettings } from "@/lib/hooks/useUiSettings";
 import { constructionSpeedBonusPercent } from "@/service/bonuses";
 import type { PlanControls, PlanRow } from "@/service/buildingPlan";
@@ -42,24 +43,13 @@ interface PlanFlyoutProps {
 	onSave: (rows: PlanRow[], controls: PlanControls) => void;
 }
 
-const appointmentOptions: { id: Appointment; label: string }[] = [
-	{ id: "none", label: "None" },
-	{ id: "regular", label: "Regular" },
-	{ id: "supreme", label: "Supreme" },
-];
-
-const formatSavedAt = (iso: string) =>
-	new Date(iso).toLocaleString("en-US", {
-		month: "short",
-		day: "numeric",
-		hour: "numeric",
-		minute: "2-digit",
-	});
+const appointmentIds: Appointment[] = ["none", "regular", "supreme"];
 
 // The Pets page decides this percent. Until it exists the skill cannot be turned on.
 const PET_SKILL_PERCENT = 0;
 
 export function PlanFlyout({ open, chief, onClose, onSave }: PlanFlyoutProps) {
+	const t = useTranslations("buildings");
 	const [wasOpen, setWasOpen] = useState(false);
 	const [rows, setRows] = useState<PlanRow[]>([]);
 	const [controls, setControls] = useState<PlanControls>(() => defaultPlanControls(chief));
@@ -78,19 +68,19 @@ export function PlanFlyout({ open, chief, onClose, onSave }: PlanFlyoutProps) {
 		<Flyout
 			open={open}
 			onClose={onClose}
-			title="Plan Buildings"
-			description="Resources, time and power from current level to goal"
+			title={t("plan.title")}
+			description={t("plan.description")}
 			footer={
 				<>
 					{savedAt && (
 						<span className="border-line bg-surface text-muted mr-auto inline-flex h-8 items-center gap-2 rounded-full border-[1.5px] px-3 font-mono text-xs">
 							<span aria-hidden="true" className="bg-kept size-1.5 rounded-full" />
-							Plan saved {formatSavedAt(savedAt)}
+							{t("plan.saved", { time: formatDateTime(savedAt) })}
 						</span>
 					)}
-					<Button onClick={onClose}>Close</Button>
+					<Button onClick={onClose}>{t("close")}</Button>
 					<Button variant="primary" onClick={() => onSave(rows, controls)}>
-						Save plan
+						{t("plan.save")}
 					</Button>
 				</>
 			}
@@ -115,6 +105,7 @@ interface PlanBodyProps {
 }
 
 function PlanBody({ chief, rows, controls, onRowsChange, onControlsChange }: PlanBodyProps) {
+	const t = useTranslations("buildings");
 	const { ui } = useUiSettings();
 	const bonusesPercent = useMemo(
 		() => (ui.calcUseBonuses ? constructionSpeedBonusPercent(chief) : 0),
@@ -128,17 +119,20 @@ function PlanBody({ chief, rows, controls, onRowsChange, onControlsChange }: Pla
 		} catch (error) {
 			return {
 				ok: false as const,
-				error: error instanceof Error ? error.message : "The plan could not be worked out.",
+				error: error instanceof Error ? error.message : t("plan.failed"),
 			};
 		}
-	}, [rows, chief, speedPercent]);
+	}, [rows, chief, speedPercent, t]);
 
 	return (
 		<>
 			<AddBuilding chief={chief} rows={rows} onAdd={(row) => onRowsChange([...rows, row])} />
 			<Card className="flex flex-col gap-4 p-4">
 				<h3 className="font-semibold">
-					Goals, {rows.length} {rows.length === 1 ? "building" : "buildings"}
+					{t("plan.goalsHeading", {
+						count: rows.length,
+						amount: formatNumber(rows.length),
+					})}
 				</h3>
 				<SpeedControls
 					controls={controls}
@@ -148,10 +142,7 @@ function PlanBody({ chief, rows, controls, onRowsChange, onControlsChange }: Pla
 					onChange={onControlsChange}
 				/>
 				{rows.length === 0 ? (
-					<p className="text-muted">
-						No goals yet. Add a building above, then pick the level you want it to
-						reach.
-					</p>
+					<p className="text-muted">{t("plan.noGoals")}</p>
 				) : (
 					<ul className="flex flex-col">
 						{rows.map((row) => (
@@ -172,16 +163,18 @@ function PlanBody({ chief, rows, controls, onRowsChange, onControlsChange }: Pla
 						))}
 					</ul>
 				)}
-				<p className="text-muted text-xs">
-					Prerequisite steps are added for you. A level that needs another building at a
-					higher level counts those steps and flags them.
-				</p>
+				<p className="text-muted text-xs">{t("plan.prerequisiteNote")}</p>
 			</Card>
 			{result && !result.ok && <Note tone="warning">{result.error}</Note>}
 			{result?.ok && (
 				<PlanStockCheck
 					checks={resourceChecks(result.calculation, chief)}
-					timeNote={`The plan takes ${formatDuration(result.calculation.seconds)} after the ${speedPercent}% speed bonus. Your stock: Construction ${formatNumber(minutesOfSpeedup(chief, "construction"))} min, General ${formatNumber(minutesOfSpeedup(chief, "general"))} min. General speedups count toward construction.`}
+					timeNote={t("plan.timeNote", {
+						time: formatDuration(result.calculation.seconds),
+						percent: formatNumber(speedPercent),
+						construction: formatNumber(minutesOfSpeedup(chief, "construction")),
+						general: formatNumber(minutesOfSpeedup(chief, "general")),
+					})}
 				/>
 			)}
 			{result?.ok && (
@@ -200,6 +193,7 @@ function AddBuilding({
 	rows: PlanRow[];
 	onAdd: (row: PlanRow) => void;
 }) {
+	const t = useTranslations("buildings.plan.add");
 	const available = levelledBuildings.filter(
 		(building) => !rows.some((row) => row.id === building.id)
 	);
@@ -215,14 +209,14 @@ function AddBuilding({
 
 	return (
 		<Card className="flex flex-col gap-3 p-4">
-			<h3 className="font-semibold">Add a building</h3>
+			<h3 className="font-semibold">{t("title")}</h3>
 			{available.length === 0 ? (
-				<p className="text-muted">Every building is already in the plan.</p>
+				<p className="text-muted">{t("allAdded")}</p>
 			) : (
 				<div className="flex gap-3">
 					<div className="flex-1">
 						<Select
-							aria-label="Building to add"
+							aria-label={t("selectLabel")}
 							value={selected}
 							onChange={(event) => setSelectedId(event.target.value)}
 						>
@@ -235,7 +229,7 @@ function AddBuilding({
 					</div>
 					<Button variant="primary" onClick={add}>
 						<LuPlus size={16} aria-hidden="true" />
-						Add building
+						{t("button")}
 					</Button>
 				</div>
 			)}
@@ -256,80 +250,84 @@ function SpeedControls({
 	speedPercent: number;
 	onChange: (controls: PlanControls) => void;
 }) {
+	const t = useTranslations("buildings.plan.speed");
+	const percent = (value: number) => t("percent", { value: formatNumber(value) });
+	const plusPercent = (value: number) => t("plusPercent", { value: formatNumber(value) });
+	const strong = (chunks: React.ReactNode) => <strong>{chunks}</strong>;
+	const appointmentOptions = appointmentIds.map((id) => ({
+		id,
+		label: t(`appointments.${id}`),
+	}));
+
 	return (
 		<div className="border-line bg-tint flex flex-col gap-3 rounded-md border-[1.5px] p-3">
 			<div className="flex items-center justify-between gap-3">
-				<span className="font-medium">Construction speed</span>
+				<span className="font-medium">{t("title")}</span>
 				<span className="flex items-center gap-2">
-					<span className="font-mono font-medium">{bonusesPercent}%</span>
-					<Badge tone="added">Read only</Badge>
+					<span className="font-mono font-medium">{percent(bonusesPercent)}</span>
+					<Badge tone="added">{t("readOnly")}</Badge>
 				</span>
 			</div>
 			<p className="text-muted text-xs">
-				{bonusesOn
-					? "Carried over from the Bonuses page."
-					: "Turned off in Settings, under Apply my Bonuses totals."}{" "}
+				{bonusesOn ? t("bonusesOn") : t("bonusesOff")}{" "}
 				<Link href="/bonuses" className="text-link underline">
-					Open Bonuses
+					{t("openBonuses")}
 				</Link>
 			</p>
 			<hr className="border-line border-t-[1.5px]" />
 			<div className="flex flex-wrap items-center justify-between gap-3">
-				<span className="font-medium">President perks and appointment</span>
+				<span className="font-medium">{t("appointment")}</span>
 				<span className="flex items-center gap-2">
 					<SegmentedControl
-						label="President perks and appointment"
+						label={t("appointment")}
 						options={appointmentOptions}
 						value={controls.vicePresident}
 						onChange={(vicePresident) => onChange({ ...controls, vicePresident })}
 					/>
 					<span className="font-mono text-xs">
-						+{APPOINTMENT_PERCENT[controls.vicePresident]}%
+						{plusPercent(APPOINTMENT_PERCENT[controls.vicePresident])}
 					</span>
 				</span>
 			</div>
-			<p className="text-muted text-xs">
-				Regular 10 percent, Supreme 15 percent. <strong>Estimate:</strong> the package
-				states these values for research only.
-			</p>
+			<p className="text-muted text-xs">{t.rich("appointmentNote", { strong })}</p>
 			<hr className="border-line border-t-[1.5px]" />
 			<div className="flex items-center justify-between gap-3">
-				<span className="font-medium">Pet skill, Builder&apos;s Aide</span>
+				<span className="font-medium">{t("petSkill")}</span>
 				<span className="flex items-center gap-2">
 					<Switch
-						label="Pet skill, Builder's Aide"
+						label={t("petSkill")}
 						checked={controls.petSkill}
 						disabled
 						onChange={() => {}}
 					/>
-					<span className="font-mono text-xs">+0%</span>
+					<span className="font-mono text-xs">{plusPercent(PET_SKILL_PERCENT)}</span>
 				</span>
 			</div>
-			<p className="text-muted text-xs">
-				The percent is managed by the Pets page. The switch stays off until that page can
-				tell if the Cave Hyena is unlocked.
-			</p>
+			<p className="text-muted text-xs">{t("petSkillNote")}</p>
 			<hr className="border-line border-t-[1.5px]" />
 			<div className="flex items-center justify-between gap-3">
-				<span className="font-medium">Chief order, Double Time</span>
+				<span className="font-medium">{t("chiefOrder")}</span>
 				<span className="flex items-center gap-2">
 					<Switch
-						label="Chief order, Double Time"
+						label={t("chiefOrder")}
 						checked={controls.chiefOrder}
 						onChange={(chiefOrder) => onChange({ ...controls, chiefOrder })}
 					/>
-					<span className="font-mono text-xs">+{DOUBLE_TIME_PERCENT}%</span>
+					<span className="font-mono text-xs">{plusPercent(DOUBLE_TIME_PERCENT)}</span>
 				</span>
 			</div>
 			<p className="text-muted text-xs">
-				<strong>Estimate:</strong> adds {DOUBLE_TIME_PERCENT} percent construction speed for
-				5 minutes. The package has no chief order data, so the value is entered by the app
-				and applied to the whole time.
+				{t.rich("chiefOrderNote", {
+					strong,
+					percent: formatNumber(DOUBLE_TIME_PERCENT),
+				})}
 			</p>
 			<hr className="border-line border-t-[1.5px]" />
 			<div className="flex items-center justify-between gap-3">
-				<span className="font-semibold">Total construction speed</span>
-				<span className="text-primary font-mono font-semibold">{speedPercent}%</span>
+				<span className="font-semibold">{t("total")}</span>
+				<span className="text-primary font-mono font-semibold">
+					{percent(speedPercent)}
+				</span>
 			</div>
 		</div>
 	);
@@ -344,6 +342,7 @@ function GoalRow({
 	onGoalChange: (goal: string) => void;
 	onRemove: () => void;
 }) {
+	const t = useTranslations("buildings");
 	const building = findBuildingById(row.id);
 	if (!building) return null;
 
@@ -353,11 +352,11 @@ function GoalRow({
 	return (
 		<li className="border-line flex flex-wrap items-center gap-x-3 gap-y-2 border-t-[1.5px] py-2 first:border-t-0">
 			<span className="min-w-32 flex-1 font-medium">{building.name}</span>
-			<span className="font-mono">{row.current ?? "Not built"}</span>
-			<span className="text-muted">to</span>
+			<span className="font-mono">{row.current ?? t("notBuilt")}</span>
+			<span className="text-muted">{t("plan.goal.to")}</span>
 			<div className="w-32">
 				<Select
-					aria-label={`${building.name} goal`}
+					aria-label={t("plan.goal.label", { name: building.name })}
 					value={row.goal}
 					onChange={(event) => onGoalChange(event.target.value)}
 				>
@@ -369,7 +368,7 @@ function GoalRow({
 				</Select>
 			</div>
 			<IconButton
-				label={`Remove ${building.name} from the plan`}
+				label={t("plan.goal.remove", { name: building.name })}
 				onClick={onRemove}
 				className="text-danger hover:bg-tint"
 			>
@@ -386,13 +385,17 @@ function PlanResult({
 	calculation: ReturnType<typeof runPlan>;
 	speedPercent: number;
 }) {
+	const t = useTranslations("buildings");
+	const strong = (chunks: React.ReactNode) => <strong>{chunks}</strong>;
 	const groups = groupSteps(calculation.steps);
 	const amountOf = (itemId: string) =>
 		calculation.resources.find((resource) => resource.itemId === itemId)?.amount ?? 0;
 
 	return (
 		<Card className="flex flex-col gap-4 p-4">
-			<h3 className="font-semibold">Result, {calculation.steps.length} steps</h3>
+			<h3 className="font-semibold">
+				{t("plan.result.title", { count: formatNumber(calculation.steps.length) })}
+			</h3>
 			<div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
 				{RESOURCE_ITEM_IDS.map((itemId) => {
 					const item = findItem(itemId);
@@ -420,22 +423,30 @@ function PlanResult({
 				})}
 			</div>
 			<div className="grid gap-3 sm:grid-cols-2">
-				<Stat label="Power gained" value={`+${formatNumber(calculation.power)}`} />
 				<Stat
-					label="Speedup minutes needed"
+					label={t("plan.result.powerGained")}
+					value={`+${formatNumber(calculation.power)}`}
+				/>
+				<Stat
+					label={t("plan.result.speedupMinutes")}
 					value={formatNumber(calculation.speedupMinutesNeeded)}
 					emphasis
 				/>
-				<Stat label="Base time" value={formatDuration(calculation.baseSeconds)} />
 				<Stat
-					label={`Time with ${speedPercent}% bonus`}
+					label={t("plan.result.baseTime")}
+					value={formatDuration(calculation.baseSeconds)}
+				/>
+				<Stat
+					label={t("plan.result.timeWithBonus", { percent: formatNumber(speedPercent) })}
 					value={formatDuration(calculation.seconds)}
 				/>
 			</div>
 			<p className="text-muted text-xs">
-				Event points: SvS {formatNumber(calculation.eventPoints.svs)}, King of Icefield{" "}
-				{formatNumber(calculation.eventPoints.kingOfIcefield)} (<strong>Estimate</strong>,
-				from the scoring rows of events).
+				{t.rich("plan.result.eventPoints", {
+					strong,
+					svs: formatNumber(calculation.eventPoints.svs),
+					king: formatNumber(calculation.eventPoints.kingOfIcefield),
+				})}
 			</p>
 			{groups.length > 0 && (
 				<ul className="flex flex-col">
@@ -448,21 +459,26 @@ function PlanResult({
 							<span className="text-muted font-mono text-xs">
 								{group.fromLevel === group.toLevel
 									? group.fromLevel
-									: `${group.fromLevel} to ${group.toLevel}`}
+									: t("levelRange", { from: group.fromLevel, to: group.toLevel })}
 							</span>
-							{group.prerequisite && <Badge tone="added">Prerequisite</Badge>}
+							{group.prerequisite && (
+								<Badge tone="added">{t("plan.result.prerequisite")}</Badge>
+							)}
 							<span className="ml-auto text-xs">
-								{group.steps} {group.steps === 1 ? "step" : "steps"}
+								{t("plan.result.steps", {
+									count: group.steps,
+									amount: formatNumber(group.steps),
+								})}
 							</span>
 						</li>
 					))}
 				</ul>
 			)}
 			<div>
-				<SectionLabel className="text-muted">Unmet prerequisites</SectionLabel>
+				<SectionLabel className="text-muted">{t("plan.result.unmetHeading")}</SectionLabel>
 				<p className="mt-1">
 					{calculation.unmetPrerequisites.length === 0
-						? "None for these goals. A building outside the list, such as Hero Hall, would show here."
+						? t("plan.result.unmetNone")
 						: calculation.unmetPrerequisites
 								.map((item) => `${item.building} ${item.level}`)
 								.join(", ")}

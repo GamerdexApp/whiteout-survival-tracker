@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import type { UpgradeJob } from "@/types/app";
 import { formatTimeLeft } from "@/lib/format";
 import { useNow } from "@/lib/hooks/useNow";
@@ -13,6 +14,7 @@ interface TimeLeftPillProps {
 }
 
 export function TimeLeftPill({ job, label, onClick, fullWidth = false }: TimeLeftPillProps) {
+	const t = useTranslations("queues.timeLeftPill");
 	const now = useNow();
 	const left = secondsLeft(job, now);
 
@@ -20,7 +22,7 @@ export function TimeLeftPill({ job, label, onClick, fullWidth = false }: TimeLef
 		<button
 			type="button"
 			onClick={onClick}
-			aria-label={`${label}, ${formatTimeLeft(left)}. Manage upgrade`}
+			aria-label={t("manage", { label, timeLeft: formatTimeLeft(left) })}
 			className={`bg-tint inline-flex min-h-11 items-center justify-center rounded-md px-3 font-mono text-xs font-medium lg:min-h-9 ${
 				left === 0 ? "text-kept" : "text-primary"
 			} ${fullWidth ? "w-full" : ""}`}

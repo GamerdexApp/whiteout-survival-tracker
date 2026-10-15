@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { useId, useState } from "react";
 import type { Playthrough } from "@/types/app";
@@ -39,16 +40,13 @@ interface StartUpgradeFlyoutProps {
 
 type StartMode = "now" | "already";
 
-const startModes: { id: StartMode; label: string }[] = [
-	{ id: "now", label: "Starting now" },
-	{ id: "already", label: "Already started" },
-];
+const startModeIds: StartMode[] = ["now", "already"];
 
 export function StartUpgradeFlyout(props: StartUpgradeFlyoutProps) {
 	const {
 		open,
 		chief,
-		title = "Start upgrade",
+		title,
 		description,
 		selectLabel,
 		selectHelp,
@@ -63,6 +61,7 @@ export function StartUpgradeFlyout(props: StartUpgradeFlyoutProps) {
 		onClose,
 		onStart,
 	} = props;
+	const t = useTranslations("queues.start");
 	const slotGroup = useId();
 	const now = useNow(15_000);
 	const [wasOpen, setWasOpen] = useState(false);
@@ -98,6 +97,8 @@ export function StartUpgradeFlyout(props: StartUpgradeFlyoutProps) {
 	const endsAt = new Date(now + seconds * 1_000);
 	const short = option ? shortLines(chief, option.cost) : [];
 
+	const startModes = startModeIds.map((id) => ({ id, label: t(`modes.${id}`) }));
+
 	const chooseMode = (next: StartMode) => {
 		setMode(next);
 		if (next === "already") {
@@ -110,11 +111,11 @@ export function StartUpgradeFlyout(props: StartUpgradeFlyoutProps) {
 		<Flyout
 			open={open}
 			onClose={onClose}
-			title={title}
+			title={title ?? t("title")}
 			description={description}
 			footer={
 				<>
-					<Button onClick={onClose}>Cancel</Button>
+					<Button onClick={onClose}>{t("cancel")}</Button>
 					<Button
 						variant="primary"
 						disabled={!option || !chosenSlot}
@@ -130,17 +131,14 @@ export function StartUpgradeFlyout(props: StartUpgradeFlyoutProps) {
 							});
 						}}
 					>
-						Start upgrade
+						{t("title")}
 					</Button>
 				</>
 			}
 		>
 			{options.length === 0 ? (
 				<Card className="p-4">
-					<p className="text-muted">
-						Nothing can be started right now. Every item is at its top level, locked, or
-						already upgrading.
-					</p>
+					<p className="text-muted">{t("nothingToStart")}</p>
 				</Card>
 			) : (
 				<>
@@ -190,7 +188,7 @@ export function StartUpgradeFlyout(props: StartUpgradeFlyoutProps) {
 									))}
 								</ul>
 								<div className="border-line flex justify-between gap-3 border-t-[1.5px] pt-2">
-									<span>Power gained</span>
+									<span>{t("powerGained")}</span>
 									<span className="text-kept font-mono font-medium">
 										+{formatNumber(option.power)}
 									</span>
@@ -200,10 +198,10 @@ export function StartUpgradeFlyout(props: StartUpgradeFlyoutProps) {
 							<Card className="flex flex-col gap-2 p-4">
 								<h3 className="font-semibold">{timeLabel}</h3>
 								<div className="flex justify-between gap-3">
-									<span>Package time</span>
+									<span>{t("packageTime")}</span>
 									<span className="font-mono">
 										{option.baseSeconds === undefined
-											? "Unknown"
+											? t("unknown")
 											: formatDuration(option.baseSeconds)}
 									</span>
 								</div>
@@ -211,25 +209,22 @@ export function StartUpgradeFlyout(props: StartUpgradeFlyoutProps) {
 									<span>{speedLabel}</span>
 									<span className="flex items-center gap-2">
 										<span className="font-mono">{speedPercent}%</span>
-										<Badge tone="added">Read only</Badge>
+										<Badge tone="added">{t("readOnly")}</Badge>
 										<Link
 											href="/bonuses"
 											className="text-link text-xs underline"
 										>
-											Open Bonuses
+											{t("openBonuses")}
 										</Link>
 									</span>
 								</div>
 								<div className="border-line flex justify-between gap-3 border-t-[1.5px] pt-2">
-									<span className="font-semibold">Your time</span>
+									<span className="font-semibold">{t("yourTime")}</span>
 									<span className="text-primary font-mono font-semibold">
 										{formatDuration(yourSeconds)}
 									</span>
 								</div>
-								<p className="text-muted text-xs">
-									Only the speed from your Bonuses page is counted. If the game
-									shows another time, change it under When it started.
-								</p>
+								<p className="text-muted text-xs">{t("timeHint")}</p>
 							</Card>
 
 							<Card className="flex flex-col gap-2 p-4">
@@ -273,23 +268,21 @@ export function StartUpgradeFlyout(props: StartUpgradeFlyoutProps) {
 									})}
 								</ul>
 								<p className="text-muted text-xs">
-									{idleSlots.length === 0
-										? "Everything here is busy. Start upgrade is off until one frees."
-										: slotHelp}
+									{idleSlots.length === 0 ? t("allBusy") : slotHelp}
 								</p>
 							</Card>
 
 							<Card className="flex flex-col gap-3 p-4">
-								<h3 className="font-semibold">When it started</h3>
+								<h3 className="font-semibold">{t("whenStarted")}</h3>
 								<SegmentedControl
-									label="When it started"
+									label={t("whenStarted")}
 									options={startModes}
 									value={mode}
 									onChange={chooseMode}
 								/>
 								{mode === "already" && (
 									<HoursMinutesFields
-										hoursLabel="Time left, hours"
+										hoursLabel={t("timeLeftHours")}
 										hours={hours}
 										minutes={minutes}
 										onChange={(nextHours, nextMinutes) => {
@@ -299,29 +292,24 @@ export function StartUpgradeFlyout(props: StartUpgradeFlyoutProps) {
 									/>
 								)}
 								<div className="border-line flex justify-between gap-3 border-t-[1.5px] pt-2">
-									<span>Ends</span>
+									<span>{t("ends")}</span>
 									<span className="font-mono">
 										{formatDateTime(endsAt.toISOString())}
 									</span>
 								</div>
-								<p className="text-muted text-xs">
-									Pick Already started to enter the time the game shows. The end
-									time is worked out from it.
-								</p>
+								<p className="text-muted text-xs">{t("startedHint")}</p>
 							</Card>
 
 							<Card className="flex flex-col gap-2 p-4">
 								<div className="flex items-start justify-between gap-3">
 									<div className="flex flex-col">
-										<span className="font-semibold">
-											Take the cost from Resources
-										</span>
+										<span className="font-semibold">{t("takeCost.title")}</span>
 										<span className="text-muted text-xs">
-											Subtracts the cost above from your stock.
+											{t("takeCost.hint")}
 										</span>
 									</div>
 									<Switch
-										label="Take the cost from Resources"
+										label={t("takeCost.title")}
 										checked={takeCost}
 										onChange={setTakeCost}
 									/>
@@ -329,8 +317,12 @@ export function StartUpgradeFlyout(props: StartUpgradeFlyoutProps) {
 								{takeCost && (
 									<p className={short.length === 0 ? "text-kept" : "text-danger"}>
 										{short.length === 0
-											? "You have enough of every resource."
-											: `You are short on ${short.map((line) => line.name).join(", ")}. You can still start, and the stock stops at 0.`}
+											? t("takeCost.enough")
+											: t("takeCost.short", {
+													names: short
+														.map((line) => line.name)
+														.join(", "),
+												})}
 									</p>
 								)}
 							</Card>

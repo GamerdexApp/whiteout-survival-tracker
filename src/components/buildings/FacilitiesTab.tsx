@@ -1,7 +1,9 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import type { Playthrough } from "@/types/app";
 import { usePlaythrough } from "@/lib/contexts/PlaythroughContext";
+import { formatNumber } from "@/lib/format";
 import { levelOrder, withFacilityBuilt } from "@/service/buildings";
 import { updateChiefById } from "@/service/chiefs";
 import { allFacilities, furnace } from "@/data/game/buildings";
@@ -10,6 +12,7 @@ import { StatTile } from "@/comps/ui/StatTile";
 import { Switch } from "@/comps/ui/Switch";
 
 export function FacilitiesTab({ chief }: { chief: Playthrough }) {
+	const t = useTranslations("buildings");
 	const { updateData } = usePlaythrough();
 	const furnaceOrder = levelOrder(furnace, chief.buildings?.furnace?.level);
 
@@ -21,21 +24,20 @@ export function FacilitiesTab({ chief }: { chief: Playthrough }) {
 	const builtCount = facilities.filter((item) => item.built).length;
 	const unlockedCount = facilities.filter((item) => item.unlocked).length;
 
+	const total = formatNumber(facilities.length);
+
 	return (
 		<>
-			<p className="text-muted">
-				Facilities in your city. Mark the ones you have built. These are city facilities,
-				not the alliance facilities on the Alliance menu.
-			</p>
+			<p className="text-muted">{t("facilities.intro")}</p>
 			<div className="grid grid-cols-2 gap-3 lg:grid-cols-3">
 				<StatTile
-					value={`${builtCount} of ${facilities.length}`}
-					label="Facilities built"
+					value={t("ofTotal", { count: formatNumber(builtCount), total })}
+					label={t("facilities.builtLabel")}
 					emphasis
 				/>
 				<StatTile
-					value={`${unlockedCount} of ${facilities.length}`}
-					label="Unlocked at your Furnace level"
+					value={t("ofTotal", { count: formatNumber(unlockedCount), total })}
+					label={t("facilities.unlockedLabel")}
 				/>
 			</div>
 			<ul className="gap-4 md:columns-2 xl:columns-3">
@@ -56,7 +58,7 @@ export function FacilitiesTab({ chief }: { chief: Playthrough }) {
 									/>
 									<h3 className="flex-1 font-semibold">{facility.name}</h3>
 									<Switch
-										label={`${facility.name} built`}
+										label={t("entry.builtSwitch", { name: facility.name })}
 										checked={built}
 										disabled={locked}
 										onChange={(next) =>
@@ -71,11 +73,15 @@ export function FacilitiesTab({ chief }: { chief: Playthrough }) {
 								<p className="text-muted">{facility.description}</p>
 								<div className="flex items-center justify-between gap-3 text-xs">
 									<span>
-										{locked ? "Requires" : "Unlocks at"} Furnace{" "}
-										{facility.unlockFurnaceLevel}
+										{t(
+											locked ? "facilities.requires" : "facilities.unlocksAt",
+											{
+												level: String(facility.unlockFurnaceLevel),
+											}
+										)}
 									</span>
 									<span className="text-muted font-mono">
-										{built ? "Built" : "Not built"}
+										{built ? t("built") : t("notBuilt")}
 									</span>
 								</div>
 							</Card>
