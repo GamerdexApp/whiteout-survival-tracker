@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { useMemo, useState } from "react";
 import type { Playthrough } from "@/types/app";
 import { formatCompact, formatDateTime, formatNumber } from "@/lib/format";
@@ -32,56 +33,37 @@ interface LadderPlanFlyoutProps {
 	onSave: (goals: PlanGoalMap) => void;
 }
 
-const TEXT = {
-	gear: {
-		title: "Plan Chief Gear",
-		description: "Materials, score and power from current level to goal",
-		savedKey: "chiefGearPlan" as const,
-		stepWord: "Steps",
-		unit: "piece",
-		conversionNote:
-			"The check does not count conversions. The converter has seven exchange rates, each with a weekly limit, for example 10 Design Plans into 1 Lunar Amber up to 500 a week.",
-	},
-	charm: {
-		title: "Plan Chief Charms",
-		description: "Materials, score and power from current level to goal",
-		savedKey: "chiefCharmsPlan" as const,
-		stepWord: "Stages",
-		unit: "charm",
-		conversionNote:
-			"The check does not count conversions: 2 Charm Guides make 1 Charm Design and back, and 40 of either make 1 Charm Secrets.",
-	},
-};
+const SAVED_KEY = { gear: "chiefGearPlan", charm: "chiefCharmsPlan" } as const;
 
 export function LadderPlanFlyout({ open, chief, kind, onClose, onSave }: LadderPlanFlyoutProps) {
 	const [wasOpen, setWasOpen] = useState(false);
 	const [goals, setGoals] = useState<PlanGoalMap>({});
-	const text = TEXT[kind];
+	const t = useTranslations("chiefGear.plan");
 
 	if (open !== wasOpen) {
 		setWasOpen(open);
 		if (open) setGoals(initialGoalMap(itemsOf(kind, chief)));
 	}
 
-	const savedAt = chief[text.savedKey]?.savedAt;
+	const savedAt = chief[SAVED_KEY[kind]]?.savedAt;
 
 	return (
 		<Flyout
 			open={open}
 			onClose={onClose}
-			title={text.title}
-			description={text.description}
+			title={t(`${kind}.title`)}
+			description={t(`${kind}.description`)}
 			footer={
 				<>
 					{savedAt && (
 						<span className="border-line bg-surface text-muted mr-auto inline-flex h-8 items-center gap-2 rounded-full border-[1.5px] px-3 font-mono text-xs">
 							<span aria-hidden="true" className="bg-kept size-1.5 rounded-full" />
-							Plan saved {formatDateTime(savedAt)}
+							{t("saved", { date: formatDateTime(savedAt) })}
 						</span>
 					)}
-					<Button onClick={onClose}>Close</Button>
+					<Button onClick={onClose}>{t("close")}</Button>
 					<Button variant="primary" onClick={() => onSave(goals)}>
-						Save plan
+						{t("save")}
 					</Button>
 				</>
 			}
@@ -113,13 +95,14 @@ function PlanBody({
 }) {
 	const items = useMemo(() => itemsOf(kind, chief), [kind, chief]);
 	const plan = useMemo(() => runItemPlan(items, goals), [items, goals]);
-	const text = TEXT[kind];
+	const t = useTranslations("chiefGear.plan");
+	const stepWord = t(`${kind}.stepWord`);
 	const converter = kind === "gear" ? gearConverter : charmConverter;
 
 	return (
 		<>
 			<Card className="flex flex-col gap-3 p-4">
-				<h3 className="font-semibold">Inputs</h3>
+				<h3 className="font-semibold">{t("inputs")}</h3>
 				<div className="flex flex-col">
 					{chiefGearSlotList.map((slot) => {
 						const group = items.filter((item) => item.slotId === slot.id);
@@ -127,7 +110,7 @@ function PlanBody({
 							<div key={slot.id} className="flex flex-col">
 								{kind === "charm" && (
 									<SectionLabel className="text-muted border-line border-t-[1.5px] pt-2 pb-1">
-										{slot.name}, {slot.troopType}
+										{t("slotTroop", { slot: slot.name, troop: slot.troopType })}
 									</SectionLabel>
 								)}
 								{group.map((item) => (
@@ -139,14 +122,17 @@ function PlanBody({
 											{kind === "gear" ? slot.name : item.label}
 										</span>
 										<span className="text-muted font-mono text-xs">
-											From {levelLabel(kind, item.current)}
+											{t("from", { level: levelLabel(kind, item.current) })}
 										</span>
 										<LevelStepper
 											wide
 											label={
 												kind === "gear"
-													? `${item.label} goal`
-													: `${slot.name} ${item.label} goal`
+													? t("goalLabel", { label: item.label })
+													: t("slotGoalLabel", {
+															slot: slot.name,
+															label: item.label,
+														})
 											}
 											stops={goalStops(item)}
 											value={goals[item.key] ?? NONE_STOP}
@@ -163,22 +149,19 @@ function PlanBody({
 						);
 					})}
 				</div>
-				<p className="text-muted text-xs">
-					The current level is the one on the page. Change it there. Goals are read only
-					on the page and are set here.
-				</p>
+				<p className="text-muted text-xs">{t("inputsHint")}</p>
 			</Card>
 
 			<PlanStockCheck checks={ladderChecks(plan.total.materials, chief)} timeNote="" />
-			<p className="text-muted text-xs">{text.conversionNote}</p>
+			<p className="text-muted text-xs">{t(`${kind}.conversionNote`)}</p>
 
 			<Card className="flex flex-col gap-4 p-4">
-				<h3 className="font-semibold">Result</h3>
+				<h3 className="font-semibold">{t("result")}</h3>
 				<div className="grid grid-cols-3 gap-3">
 					{[
-						[formatNumber(plan.total.steps), text.stepWord],
-						[formatNumber(plan.total.score), "Score"],
-						[formatCompact(plan.total.power), "Power gain"],
+						[formatNumber(plan.total.steps), stepWord],
+						[formatNumber(plan.total.score), t("score")],
+						[formatCompact(plan.total.power), t("powerGain")],
 					].map(([value, label]) => (
 						<div
 							key={label}
@@ -208,10 +191,10 @@ function PlanBody({
 				</ul>
 				<div className="grid grid-cols-2 gap-3">
 					{[
-						["SvS State of Power", plan.total.eventPoints.svs],
-						["Alliance Showdown", plan.total.eventPoints.allianceShowdown],
-						["King of Icefield", plan.total.eventPoints.kingOfIcefield],
-						["Hall of Chief", plan.total.eventPoints.hallOfChief],
+						[t("events.svs"), plan.total.eventPoints.svs],
+						[t("events.allianceShowdown"), plan.total.eventPoints.allianceShowdown],
+						[t("events.kingOfIcefield"), plan.total.eventPoints.kingOfIcefield],
+						[t("events.hallOfChief"), plan.total.eventPoints.hallOfChief],
 					].map(([name, value]) => (
 						<div
 							key={name}
@@ -228,16 +211,18 @@ function PlanBody({
 
 			{plan.byItem.length > 0 && (
 				<Card className="flex flex-col gap-2 p-4">
-					<h3 className="font-semibold">{kind === "gear" ? "By slot" : "By charm"}</h3>
+					<h3 className="font-semibold">
+						{kind === "gear" ? t("bySlot") : t("byCharm")}
+					</h3>
 					<div className="overflow-x-auto">
 						<table className="w-full min-w-[24rem] text-left">
 							<thead>
 								<tr>
 									{[
-										kind === "gear" ? "Slot" : "Charm",
-										text.stepWord,
-										"Score",
-										"Power gain",
+										kind === "gear" ? t("columnSlot") : t("columnCharm"),
+										stepWord,
+										t("score"),
+										t("powerGain"),
 									].map((head) => (
 										<th key={head} className="py-1 pr-3">
 											<SectionLabel className="text-muted">
@@ -253,7 +238,13 @@ function PlanBody({
 										<td className="py-1.5 pr-3 font-medium">
 											{kind === "gear"
 												? item.label
-												: `${chiefGearSlotList.find((slot) => slot.id === item.slotId)?.name} ${item.label}`}
+												: t("slotCharm", {
+														slot:
+															chiefGearSlotList.find(
+																(slot) => slot.id === item.slotId
+															)?.name ?? "",
+														charm: item.label,
+													})}
 										</td>
 										<td className="pr-3 font-mono">{result.steps}</td>
 										<td className="pr-3 font-mono">
@@ -269,12 +260,16 @@ function PlanBody({
 			)}
 
 			<Card className="flex flex-col gap-2 p-4">
-				<h3 className="font-semibold">Material converter</h3>
+				<h3 className="font-semibold">{t("converter.title")}</h3>
 				<div className="overflow-x-auto">
 					<table className="w-full min-w-[22rem] text-left">
 						<thead>
 							<tr>
-								{["Spend", "Get", "Limit"].map((head) => (
+								{[
+									t("converter.spend"),
+									t("converter.get"),
+									t("converter.limit"),
+								].map((head) => (
 									<th key={head} className="py-1 pr-3">
 										<SectionLabel className="text-muted">{head}</SectionLabel>
 									</th>
@@ -285,17 +280,24 @@ function PlanBody({
 							{converter.map((rate) => (
 								<tr key={rate.id} className="border-line border-t-[1.5px]">
 									<td className="py-1.5 pr-3">
-										{rate.fromQuantity}{" "}
-										{findItem(rate.fromItemId)?.name ?? rate.fromItemId}
+										{t("converter.amount", {
+											quantity: String(rate.fromQuantity),
+											name:
+												findItem(rate.fromItemId)?.name ?? rate.fromItemId,
+										})}
 									</td>
 									<td className="pr-3">
-										{rate.toQuantity}{" "}
-										{findItem(rate.toItemId)?.name ?? rate.toItemId}
+										{t("converter.amount", {
+											quantity: String(rate.toQuantity),
+											name: findItem(rate.toItemId)?.name ?? rate.toItemId,
+										})}
 									</td>
 									<td className="text-muted font-mono text-xs">
 										{"weeklyLimit" in rate && rate.weeklyLimit
-											? `${formatNumber(rate.weeklyLimit)} per week`
-											: "No weekly limit"}
+											? t("converter.perWeek", {
+													limit: formatNumber(rate.weeklyLimit),
+												})
+											: t("converter.noLimit")}
 									</td>
 								</tr>
 							))}

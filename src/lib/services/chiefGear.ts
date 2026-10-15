@@ -1,3 +1,4 @@
+import { formatNumber, translator } from "@/i18n/formatter";
 import {
   calculateChiefCharm,
   calculateChiefGear,
@@ -35,7 +36,7 @@ export const ladderRows = (kind: LadderKind): readonly LadderRow[] =>
 export const NONE_STOP = "none";
 
 export const ladderStops = (kind: LadderKind) => [
-  { value: NONE_STOP, label: "None" },
+  { value: NONE_STOP, label: translator("chiefGear")("none") },
   ...ladderRows(kind).map((row) => ({ value: row.id, label: row.name })),
 ];
 
@@ -103,7 +104,9 @@ export const charmItems = (chief: Playthrough): LadderItem[] =>
         key: `${slot.id}:${index}`,
         kind: "charm" as const,
         slotId: slot.id,
-        label: `Charm ${index + 1}`,
+        label: translator("chiefGear")("charmLabel", {
+          number: formatNumber(index + 1),
+        }),
         troopType: slot.troopType,
         current,
         goal: effectiveGoal(
@@ -204,7 +207,7 @@ export const rowOf = (kind: LadderKind, id: string | null) =>
   id === null ? undefined : ladderRows(kind)[positionOf(kind, id)];
 
 export const levelLabel = (kind: LadderKind, id: string | null) =>
-  rowOf(kind, id)?.name ?? "None";
+  rowOf(kind, id)?.name ?? translator("chiefGear")("none");
 
 export const stepsToGoal = (item: LadderItem) =>
   item.goal === null

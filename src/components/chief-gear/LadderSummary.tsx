@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl";
 import { formatCompact, formatNumber } from "@/lib/format";
 import type { LadderSummary as Summary } from "@/service/chiefGear";
 import { findItem } from "@/data/game/items";
@@ -13,17 +14,18 @@ export function LadderSummaryCard({
 	stepWord: string;
 	onOpenPlan: () => void;
 }) {
+	const t = useTranslations("chiefGear.summary");
 	return (
 		<Card className="flex flex-col gap-3 p-4">
 			<div className="flex items-baseline justify-between gap-3">
-				<h3 className="font-semibold">Left to reach all goals</h3>
-				<span className="text-muted font-mono text-xs">Derived</span>
+				<h3 className="font-semibold">{t("title")}</h3>
+				<span className="text-muted font-mono text-xs">{t("derived")}</span>
 			</div>
 			<div className="flex flex-wrap gap-6">
 				{[
 					[formatNumber(summary.steps), stepWord],
-					[formatNumber(summary.scoreToGain), "score"],
-					[formatCompact(summary.powerGain), "power gain"],
+					[formatNumber(summary.scoreToGain), t("score")],
+					[formatCompact(summary.powerGain), t("powerGain")],
 				].map(([value, label]) => (
 					<div key={label} className="flex flex-col">
 						<span className="font-mono text-xl">{value}</span>
@@ -32,7 +34,7 @@ export function LadderSummaryCard({
 				))}
 			</div>
 			{summary.materials.length === 0 ? (
-				<p className="text-muted">No goals set. Set goals in Plan.</p>
+				<p className="text-muted">{t("noGoals")}</p>
 			) : (
 				<ul className="flex flex-col">
 					{summary.materials.map(({ itemId, amount }) => {
@@ -57,7 +59,7 @@ export function LadderSummaryCard({
 				onClick={onOpenPlan}
 				className="text-link w-fit font-medium underline"
 			>
-				Open Plan for event points and a breakdown
+				{t("openPlan")}
 			</button>
 		</Card>
 	);

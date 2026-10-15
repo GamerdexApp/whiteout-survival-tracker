@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { useMemo, useState } from "react";
 import type { Playthrough } from "@/types/app";
 import { usePlaythrough } from "@/lib/contexts/PlaythroughContext";
@@ -24,24 +25,18 @@ import { LadderRow } from "./LadderRow";
 import { LadderSummaryCard } from "./LadderSummary";
 import { SetBonusCard } from "./SetBonusCard";
 
-const TIER_LABELS: Record<string, string> = {
-	EpicT1: "Epic T1",
-	MythicT1: "Mythic T1",
-	MythicT2: "Mythic T2",
-	LegendaryT1: "Legendary T1",
-	LegendaryT2: "Legendary T2",
-	LegendaryT3: "Legendary T3",
-	LegendaryT4: "Legendary T4",
-	LegendaryT5: "Legendary T5",
-	LegendaryT6: "Legendary T6",
-};
-
 export function GearTab({ chief }: { chief: Playthrough }) {
+	const t = useTranslations("chiefGear");
 	const { updateData } = usePlaythrough();
 	const [planOpen, setPlanOpen] = useState(false);
 	const items = useMemo(() => gearItems(chief), [chief]);
 	const summary = useMemo(() => summarizeLadder(items), [items]);
 	const heldTiers = new Set(items.map((item) => rowOf("gear", item.current)?.tier));
+
+	const tierName = (tier: string) =>
+		t.has(`gear.tiers.names.${tier}` as "gear.tiers.names.EpicT1")
+			? t(`gear.tiers.names.${tier}` as "gear.tiers.names.EpicT1")
+			: tier;
 
 	const change = (update: (current: Playthrough) => Playthrough) =>
 		updateData((data) => updateChiefById(data, chief.id, update));
@@ -58,29 +53,22 @@ export function GearTab({ chief }: { chief: Playthrough }) {
 					className="max-lg:w-full"
 					onClick={() => setPlanOpen(true)}
 				>
-					Plan
+					{t("shared.plan")}
 				</Button>
-				<p className="text-muted">
-					Every change saves at once. Steppers move one row at a time in package order.
-				</p>
+				<p className="text-muted">{t("shared.autoSaveHint")}</p>
 			</div>
 
 			<div className="grid grid-cols-2 gap-3 lg:grid-cols-4">
-				<StatTile
-					value={formatNumber(summary.scoreNow)}
-					label="Gear score now, six slots"
-				/>
-				<StatTile value={formatNumber(summary.powerNow)} label="Gear power now" />
-				<StatTile value={formatNumber(summary.steps)} label="Steps to all goals" />
+				<StatTile value={formatNumber(summary.scoreNow)} label={t("gear.scoreNow")} />
+				<StatTile value={formatNumber(summary.powerNow)} label={t("gear.powerNow")} />
+				<StatTile value={formatNumber(summary.steps)} label={t("gear.stepsToGoals")} />
 				<StatTile
 					value={formatNumber(summary.scoreToGain)}
-					label="Score still to gain"
+					label={t("shared.scoreToGain")}
 					emphasis
 				/>
 			</div>
-			<p className="text-muted">
-				Goals are read only here. Set them in Plan and press Save plan.
-			</p>
+			<p className="text-muted">{t("gear.goalsHint")}</p>
 			<SetBonusCard bonuses={setBonusesOf(chief)} />
 
 			<Card>
@@ -116,17 +104,16 @@ export function GearTab({ chief }: { chief: Playthrough }) {
 			<div className="grid items-start gap-3 lg:grid-cols-3">
 				<LadderSummaryCard
 					summary={summary}
-					stepWord="steps"
+					stepWord={t("gear.stepWord")}
 					onOpenPlan={() => setPlanOpen(true)}
 				/>
 				<Card className="flex flex-col gap-3 p-4">
 					<div className="flex items-baseline justify-between gap-3">
-						<h3 className="font-semibold">Tiers</h3>
-						<span className="text-muted font-mono text-xs">Package</span>
+						<h3 className="font-semibold">{t("gear.tiers.title")}</h3>
+						<span className="text-muted font-mono text-xs">{t("shared.package")}</span>
 					</div>
 					<p className="text-muted">
-						The package labels 150 rows with {gearTiers.length} tiers. A highlighted
-						tier holds at least one of your pieces.
+						{t("gear.tiers.description", { count: formatNumber(gearTiers.length) })}
 					</p>
 					<ul className="grid grid-cols-2 gap-2">
 						{gearTiers.map(({ tier, rows }) => (
@@ -134,34 +121,27 @@ export function GearTab({ chief }: { chief: Playthrough }) {
 								key={tier}
 								className={`flex items-baseline justify-between gap-2 rounded-md border-[1.5px] px-2 py-1.5 ${heldTiers.has(tier) ? "border-primary bg-tint" : "border-line"}`}
 							>
-								<span>{TIER_LABELS[tier] ?? tier}</span>
-								<span className="text-muted font-mono text-xs">{rows} rows</span>
+								<span>{tierName(tier)}</span>
+								<span className="text-muted font-mono text-xs">
+									{t("gear.tiers.rows", { rows: formatNumber(rows) })}
+								</span>
 							</li>
 						))}
 					</ul>
 				</Card>
 				<Card className="flex flex-col gap-3 p-4">
-					<h3 className="font-semibold">Notes</h3>
+					<h3 className="font-semibold">{t("shared.notes")}</h3>
 					<div>
-						<p className="font-semibold">Set bonus rules</p>
-						<p className="text-muted">
-							3 pieces of the same tier give Defense and 6 pieces give Attack, for all
-							three troop types. A piece with no level does not count. Each tier has
-							one value.
-						</p>
+						<p className="font-semibold">{t("gear.notes.setBonus.title")}</p>
+						<p className="text-muted">{t("gear.notes.setBonus.body")}</p>
 					</div>
 					<div>
-						<p className="font-semibold">Troop type is hand entered</p>
-						<p className="text-muted">
-							Cap and Watch buff Lancer, Coat and Pants buff Infantry, Ring and Weapon
-							buff Marksman. The package author typed this from wiki text.
-						</p>
+						<p className="font-semibold">{t("gear.notes.troopType.title")}</p>
+						<p className="text-muted">{t("gear.notes.troopType.body")}</p>
 					</div>
 					<div>
-						<p className="font-semibold">Capacity can be Unknown</p>
-						<p className="text-muted">
-							The first 26 rows have no deployment capacity in the package.
-						</p>
+						<p className="font-semibold">{t("gear.notes.capacity.title")}</p>
+						<p className="text-muted">{t("gear.notes.capacity.body")}</p>
 					</div>
 				</Card>
 			</div>

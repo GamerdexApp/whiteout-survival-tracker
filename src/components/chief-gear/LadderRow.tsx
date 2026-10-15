@@ -1,5 +1,6 @@
+import { useTranslations } from "next-intl";
 import type { ReactNode } from "react";
-import { formatCompact, formatNumber } from "@/lib/format";
+import { formatCompact, formatDecimal, formatNumber } from "@/lib/format";
 import type { LadderItem } from "@/service/chiefGear";
 import {
 	ladderRows,
@@ -33,6 +34,7 @@ export function LadderRow({
 	iconBadge,
 	onChange,
 }: LadderRowProps) {
+	const t = useTranslations("chiefGear");
 	const total = ladderRows(item.kind).length;
 	const row = rowOf(item.kind, item.current);
 	const goalRow = rowOf(item.kind, item.goal);
@@ -54,7 +56,7 @@ export function LadderRow({
 			<span className="text-muted max-lg:hidden">{troopLabel}</span>
 			<LevelStepper
 				wide
-				label={`${title} level`}
+				label={t("row.level", { title })}
 				stops={ladderStops(item.kind)}
 				value={item.current ?? NONE_STOP}
 				onChange={(value) => onChange(value === NONE_STOP ? null : value)}
@@ -66,24 +68,33 @@ export function LadderRow({
 						: "text-muted font-mono text-xs"
 				}
 			>
-				{goalRow ? `Goal ${goalRow.name}` : "No goal"}
+				{goalRow ? t("row.goal", { name: goalRow.name }) : t("row.noGoal")}
 			</span>
 			<div className="flex flex-col gap-1">
 				<ProgressBar
 					value={progressOf(item) / total}
-					label={`${title} progress in ${total} rows`}
+					label={t("row.progressLabel", { title, total: formatNumber(total) })}
 				/>
 				<span className="font-mono text-xs">
-					{progressOf(item)} of {total}
-					{steps > 0 ? ` · ${steps} to goal` : ""}
+					{t("row.progress", {
+						progress: formatNumber(progressOf(item)),
+						total: formatNumber(total),
+					})}
+					{steps > 0 ? t("row.stepsToGoal", { steps: formatNumber(steps) }) : ""}
 				</span>
 				<span className="text-muted font-mono text-xs">
-					Stat {row ? `${row.statTotalPercent}%` : "None"} · Power{" "}
-					{row ? formatCompact(row.powerTotal) : "None"}
-					{item.kind === "gear" && row && !capacityKnown && " · Capacity Unknown"}
+					{t("row.stats", {
+						stat: row
+							? t("row.statPercent", { percent: formatDecimal(row.statTotalPercent) })
+							: t("none"),
+						power: row ? formatCompact(row.powerTotal) : t("none"),
+					})}
+					{item.kind === "gear" && row && !capacityKnown && t("row.capacityUnknown")}
 					{item.kind === "gear" &&
 						capacityKnown &&
-						` · Capacity ${formatNumber(row.troopsDeploymentCapacity ?? 0)}`}
+						t("row.capacity", {
+							capacity: formatNumber(row.troopsDeploymentCapacity ?? 0),
+						})}
 				</span>
 			</div>
 		</li>

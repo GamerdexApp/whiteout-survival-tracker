@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { useMemo, useState } from "react";
 import type { Playthrough } from "@/types/app";
 import { usePlaythrough } from "@/lib/contexts/PlaythroughContext";
@@ -23,6 +24,7 @@ import { LadderRow } from "./LadderRow";
 import { LadderSummaryCard } from "./LadderSummary";
 
 export function CharmsTab({ chief }: { chief: Playthrough }) {
+	const t = useTranslations("chiefGear");
 	const { updateData } = usePlaythrough();
 	const [planOpen, setPlanOpen] = useState(false);
 	const items = useMemo(() => charmItems(chief), [chief]);
@@ -43,27 +45,22 @@ export function CharmsTab({ chief }: { chief: Playthrough }) {
 					className="max-lg:w-full"
 					onClick={() => setPlanOpen(true)}
 				>
-					Plan
+					{t("shared.plan")}
 				</Button>
-				<p className="text-muted">
-					Every change saves at once. Steppers move one row at a time in package order.
-				</p>
+				<p className="text-muted">{t("shared.autoSaveHint")}</p>
 			</div>
 
 			<div className="grid grid-cols-2 gap-3 lg:grid-cols-4">
-				<StatTile
-					value={formatNumber(summary.scoreNow)}
-					label="Charm score now, 18 charms"
-				/>
-				<StatTile value={formatNumber(summary.powerNow)} label="Charm power now" />
-				<StatTile value={formatNumber(summary.steps)} label="Stages to all goals" />
+				<StatTile value={formatNumber(summary.scoreNow)} label={t("charms.scoreNow")} />
+				<StatTile value={formatNumber(summary.powerNow)} label={t("charms.powerNow")} />
+				<StatTile value={formatNumber(summary.steps)} label={t("charms.stagesToGoals")} />
 				<StatTile
 					value={formatNumber(summary.scoreToGain)}
-					label="Score still to gain"
+					label={t("shared.scoreToGain")}
 					emphasis
 				/>
 			</div>
-			<p className="text-muted">Goals are read only here and are set in Plan.</p>
+			<p className="text-muted">{t("charms.goalsHint")}</p>
 
 			<Card>
 				{chiefGearSlotList.map((slot) => {
@@ -78,8 +75,12 @@ export function CharmsTab({ chief }: { chief: Playthrough }) {
 							<div className="bg-tint flex items-center justify-between gap-3 px-4 py-2">
 								<h3 className="font-semibold">{slot.name}</h3>
 								<span className="text-muted font-mono text-xs">
-									{slot.troopType} · 3 charms
-									{stagesToGoals > 0 ? `, ${stagesToGoals} stages to goals` : ""}
+									{t("charms.slotMeta", { troop: slot.troopType })}
+									{stagesToGoals > 0
+										? t("charms.slotStages", {
+												stages: formatNumber(stagesToGoals),
+											})
+										: ""}
 								</span>
 							</div>
 							<ul>
@@ -113,31 +114,22 @@ export function CharmsTab({ chief }: { chief: Playthrough }) {
 			<div className="grid items-start gap-3 lg:grid-cols-2">
 				<LadderSummaryCard
 					summary={summary}
-					stepWord="stages"
+					stepWord={t("charms.stepWord")}
 					onOpenPlan={() => setPlanOpen(true)}
 				/>
 				<Card className="flex flex-col gap-3 p-4">
-					<h3 className="font-semibold">Notes</h3>
+					<h3 className="font-semibold">{t("shared.notes")}</h3>
 					<div>
-						<p className="font-semibold">Charm Secrets starts at level 11</p>
-						<p className="text-muted">
-							From Level 11 Stage 1 a stage needs Charm Secrets. Earlier stages list
-							only Charm Guide and Charm Design.
-						</p>
+						<p className="font-semibold">{t("charms.notes.secrets.title")}</p>
+						<p className="text-muted">{t("charms.notes.secrets.body")}</p>
 					</div>
 					<div>
-						<p className="font-semibold">Charms change look at every level</p>
-						<p className="text-muted">
-							Each charm has 18 icons, one per level. Every gear piece carries three
-							charms, and they follow the troop type of the piece.
-						</p>
+						<p className="font-semibold">{t("charms.notes.look.title")}</p>
+						<p className="text-muted">{t("charms.notes.look.body")}</p>
 					</div>
 					<div>
-						<p className="font-semibold">Stage scores are an estimate</p>
-						<p className="text-muted">
-							A level score is shared evenly over the stages that lead to it. The game
-							does not confirm the split.
-						</p>
+						<p className="font-semibold">{t("charms.notes.estimate.title")}</p>
+						<p className="text-muted">{t("charms.notes.estimate.body")}</p>
 					</div>
 				</Card>
 			</div>

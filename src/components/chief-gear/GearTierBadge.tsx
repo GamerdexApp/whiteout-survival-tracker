@@ -1,4 +1,6 @@
+import { useTranslations } from "next-intl";
 import { LuStar } from "react-icons/lu";
+import { formatNumber } from "@/lib/format";
 
 const MAX_STARS = 3;
 
@@ -21,9 +23,18 @@ interface GearTierBadgeProps {
  * the left side from the bottom, under the T.
  */
 export function GearTierBadge({ tier, stars }: GearTierBadgeProps) {
+	const t = useTranslations("chiefGear.badge");
 	const tierNumber = tierNumberOf(tier);
 	const starCount = Math.min(MAX_STARS, Math.max(0, stars ?? 0));
 	if (tierNumber === null && starCount === 0) return null;
+
+	const tierText = tierNumber !== null ? t("tier", { tier: formatNumber(tierNumber) }) : "";
+	const starsText =
+		starCount > 0 ? t("stars", { count: starCount, amount: formatNumber(starCount) }) : "";
+	const screenReaderText =
+		tierText && starsText
+			? t("tierAndStars", { tier: tierText, stars: starsText })
+			: tierText || starsText;
 
 	return (
 		<>
@@ -49,11 +60,7 @@ export function GearTierBadge({ tier, stars }: GearTierBadgeProps) {
 					))}
 				</span>
 			)}
-			<span className="sr-only">
-				{tierNumber !== null ? `Tier ${tierNumber}` : ""}
-				{tierNumber !== null && starCount > 0 ? ", " : ""}
-				{starCount > 0 ? `${starCount} ${starCount === 1 ? "star" : "stars"}` : ""}
-			</span>
+			<span className="sr-only">{screenReaderText}</span>
 		</>
 	);
 }
