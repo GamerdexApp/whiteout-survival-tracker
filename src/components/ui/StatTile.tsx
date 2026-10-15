@@ -10,7 +10,9 @@ interface StatTileProps {
 export function StatTile({ value, label, emphasis = false }: StatTileProps) {
 	return (
 		<Card className="flex flex-col gap-1 px-4 py-3">
-			<span className={`font-mono text-2xl ${emphasis ? "text-primary" : "text-ink"}`}>
+			<span
+				className={`font-mono text-xl sm:text-2xl ${emphasis ? "text-primary" : "text-ink"}`}
+			>
 				{value}
 			</span>
 			<span className="text-muted">{label}</span>

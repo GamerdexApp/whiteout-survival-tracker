@@ -15,6 +15,7 @@
   --link: #1d5fb0;
   --danger: #b3261e;
   --warn: #8a5a00;
+  --gold: #f2b01e;
   --scrim: rgba(15, 27, 45, 0.55);
   --sb-bg: #0e2240;
   --sb-text: #eaf3ff;
@@ -44,6 +45,7 @@
   --link: #9bd0ff;
   --danger: #ff9b93;
   --warn: #f2b84b;
+  --gold: #f5c542;
   --scrim: rgba(0, 0, 0, 0.62);
   --sb-bg: #060c16;
   --sb-text: #eaf2ff;
@@ -72,6 +74,7 @@
   --color-link: var(--link);
   --color-danger: var(--danger);
   --color-warn: var(--warn);
+  --color-gold: var(--gold);
   --color-scrim: var(--scrim);
   --color-sb-bg: var(--sb-bg);
   --color-sb-text: var(--sb-text);

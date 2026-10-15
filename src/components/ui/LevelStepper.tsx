@@ -15,6 +15,7 @@ interface LevelStepperProps {
 	onChange: (value: string) => void;
 	disabled?: boolean;
 	limitValue?: string;
+	wide?: boolean;
 }
 
 /**
@@ -30,6 +31,7 @@ export function LevelStepper({
 	onChange,
 	disabled = false,
 	limitValue,
+	wide = false,
 }: LevelStepperProps) {
 	const index = stops.findIndex((stop) => stop.value === value);
 	const stepTo = (target: number) => onChange(stops[target].value);
@@ -53,7 +55,7 @@ export function LevelStepper({
 				value={value}
 				disabled={disabled}
 				onChange={(event) => onChange(event.target.value)}
-				className="text-ink hover:border-line min-h-11 w-24 appearance-none rounded-md border-[1.5px] border-transparent bg-transparent px-1 text-center font-mono font-medium disabled:opacity-60 lg:min-h-9"
+				className={`text-ink hover:border-line min-h-11 ${wide ? "w-60" : "w-24"} appearance-none rounded-md border-[1.5px] border-transparent bg-transparent px-1 text-center font-mono font-medium disabled:opacity-60 lg:min-h-9`}
 			>
 				{stops.map((stop, position) => (
 					<option key={stop.value} value={stop.value} disabled={position > limitIndex}>

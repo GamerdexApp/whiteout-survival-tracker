@@ -132,6 +132,16 @@ export interface HeroGearPlan {
   savedAt: string;
 }
 
+export interface ChiefGearPlan {
+  goals: Record<string, string>;
+  savedAt: string;
+}
+
+export interface ChiefCharmsPlan {
+  goals: Record<string, (string | null)[]>;
+  savedAt: string;
+}
+
 export interface Playthrough {
   id: string;
   name: string;
@@ -154,6 +164,10 @@ export interface Playthrough {
   heroesPlan?: HeroesPlan;
   heroGear?: { sets: HeroGearSet[] };
   heroGearPlan?: HeroGearPlan;
+  chiefGear?: Record<string, { current?: string | null }>;
+  chiefGearPlan?: ChiefGearPlan;
+  chiefCharms?: Record<string, { current?: string | null }[]>;
+  chiefCharmsPlan?: ChiefCharmsPlan;
 }
 
 export interface AppData {
