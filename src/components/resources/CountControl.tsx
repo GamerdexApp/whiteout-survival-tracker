@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { LuMinus, LuPlus } from "react-icons/lu";
 import { formatNumber } from "@/lib/format";
 import { MAX_COUNT } from "@/service/inventory";
@@ -43,10 +44,12 @@ interface CountControlProps {
 }
 
 export function CountControl({ name, value, step, onChange, className = "" }: CountControlProps) {
+	const t = useTranslations("resources.countControl");
+
 	return (
 		<div className={`flex items-center gap-1 ${className}`}>
 			<IconButton
-				label={`Remove ${formatNumber(step)} ${name}`}
+				label={t("remove", { step: formatNumber(step), name })}
 				disabled={value <= 0}
 				onClick={() => onChange(Math.max(0, value - step))}
 				className="border-line bg-surface hover:bg-tint border-[1.5px] disabled:opacity-40"
@@ -54,13 +57,13 @@ export function CountControl({ name, value, step, onChange, className = "" }: Co
 				<LuMinus size={16} aria-hidden="true" />
 			</IconButton>
 			<CountInput
-				label={`${name} owned`}
+				label={t("owned", { name })}
 				value={value}
 				onChange={onChange}
 				className="w-32 flex-1"
 			/>
 			<IconButton
-				label={`Add ${formatNumber(step)} ${name}`}
+				label={t("add", { step: formatNumber(step), name })}
 				disabled={value >= MAX_COUNT}
 				onClick={() => onChange(Math.min(MAX_COUNT, value + step))}
 				className="border-line bg-surface hover:bg-tint border-[1.5px] disabled:opacity-40"

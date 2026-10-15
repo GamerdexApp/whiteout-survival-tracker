@@ -1,47 +1,40 @@
 import { eventBuff } from "whiteout-survival-data";
-import type { BuffApplicability } from "whiteout-survival-data";
+import { useTranslations } from "next-intl";
+import { formatNumber } from "@/lib/format";
 import { Card } from "@/comps/ui/Card";
 import { SectionLabel } from "@/comps/ui/SectionLabel";
 
-const columns = [
-	{ key: "cityBonusWarsBuffs", label: "City bonus" },
-	{ key: "deploymentCapacity", label: "Deployment" },
-	{ key: "territoryBonuses", label: "Territory" },
-	{ key: "marchAccelerator", label: "March accel." },
+const columnKeys = [
+	"cityBonusWarsBuffs",
+	"deploymentCapacity",
+	"territoryBonuses",
+	"marchAccelerator",
 ] as const;
 
-const wording: Record<BuffApplicability, string> = {
-	yes: "Yes",
-	no: "No",
-	partial: "Partial",
-};
-
 export function EventBuffRules() {
+	const t = useTranslations("bonuses.eventRules");
 	const events = eventBuff().get();
 
 	return (
 		<Card className="flex flex-col gap-3 p-4">
 			<div className="flex flex-wrap items-baseline justify-between gap-2">
-				<h2 className="text-base font-semibold">Event buff rules</h2>
+				<h2 className="text-base font-semibold">{t("title")}</h2>
 				<span className="text-muted font-mono text-xs">
-					eventBuff() has {events.length} rows
+					{t("rows", { count: formatNumber(events.length) })}
 				</span>
 			</div>
-			<p className="text-muted">
-				It says which bonus kinds still apply during an event. These are rules, not numbers,
-				so nothing here is added to the totals above.
-			</p>
+			<p className="text-muted">{t("intro")}</p>
 			<div className="overflow-x-auto">
 				<table className="w-full min-w-[32rem] text-left">
 					<thead>
 						<tr>
 							<th className="py-1 pr-3">
-								<SectionLabel className="text-muted">Event</SectionLabel>
+								<SectionLabel className="text-muted">{t("event")}</SectionLabel>
 							</th>
-							{columns.map((column) => (
-								<th key={column.key} className="py-1 pr-3">
+							{columnKeys.map((column) => (
+								<th key={column} className="py-1 pr-3">
 									<SectionLabel className="text-muted">
-										{column.label}
+										{t(`columns.${column}`)}
 									</SectionLabel>
 								</th>
 							))}
@@ -51,9 +44,9 @@ export function EventBuffRules() {
 						{events.map((event) => (
 							<tr key={event.id} className="border-line border-t-[1.5px]">
 								<td className="py-2 pr-3 font-medium">{event.name}</td>
-								{columns.map((column) => (
-									<td key={column.key} className="py-2 pr-3">
-										{wording[event[column.key]]}
+								{columnKeys.map((column) => (
+									<td key={column} className="py-2 pr-3">
+										{t(`applicability.${event[column]}`)}
 									</td>
 								))}
 							</tr>

@@ -1,6 +1,7 @@
 "use client";
 
 import type { Item, ItemCategory } from "whiteout-survival-data";
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { LuSearch } from "react-icons/lu";
@@ -27,18 +28,11 @@ import { ItemSheet } from "./ItemSheet";
 type CategoryFilter = "all" | ItemCategory;
 type ShowFilter = "all" | "owned" | "unknown";
 
-const showOptions: { id: ShowFilter; label: string }[] = [
-	{ id: "all", label: "All" },
-	{ id: "owned", label: "Owned" },
-	{ id: "unknown", label: "Sources unknown" },
-];
-
-const joinNames = (names: string[]) =>
-	names.length <= 1
-		? (names[0] ?? "")
-		: `${names.slice(0, -1).join(", ")} and ${names[names.length - 1]}`;
+const showFilters: ShowFilter[] = ["all", "owned", "unknown"];
 
 export function ResourcesView({ chief }: { chief: Playthrough }) {
+	const t = useTranslations("resources");
+	const tv = useTranslations("resources.view");
 	const { updateData } = usePlaythrough();
 	const showToast = useToast();
 	const isDesktop = useIsDesktop();
@@ -76,14 +70,22 @@ export function ResourcesView({ chief }: { chief: Playthrough }) {
 		);
 	};
 
+	const joinNames = (names: string[]) =>
+		names.length <= 1
+			? (names[0] ?? "")
+			: t("list.andLast", {
+					rest: names.slice(0, -1).join(t("list.separator")),
+					last: names[names.length - 1],
+				});
+
 	const setToZero = (item: Item) => {
 		const previous = ownedCount(chief, item.id);
 		if (!setCount(item.id, 0)) return;
 		if (!editingSeveral) {
 			showToast({
 				variant: "warning",
-				title: `${item.name} set to 0`,
-				action: { label: "Undo", onAction: () => setCount(item.id, previous) },
+				title: tv("toast.setToZero", { name: item.name }),
+				action: { label: t("undo"), onAction: () => setCount(item.id, previous) },
 			});
 		}
 	};
@@ -98,10 +100,10 @@ export function ResourcesView({ chief }: { chief: Playthrough }) {
 		setEditingSeveral(false);
 		showToast({
 			variant: "success",
-			title: "Counts saved",
-			message: `${count} ${count === 1 ? "count" : "counts"} changed.`,
+			title: tv("toast.savedTitle"),
+			message: tv("toast.savedMessage", { count, amount: formatNumber(count) }),
 			action: {
-				label: "Undo",
+				label: t("undo"),
 				onAction: () => updateData((data) => updateChiefById(data, chief.id, () => chief)),
 			},
 		});
@@ -127,19 +129,27 @@ export function ResourcesView({ chief }: { chief: Playthrough }) {
 		category === "all"
 			? null
 			: itemCategories.find((entry) => entry.category === category)?.count;
-	const subline = `${allItems.length} items in ${itemCategories.length} categories${
-		inCategory ? ` · ${inCategory} in ${category}` : ""
-	}`;
+	const sublineCounts = {
+		items: formatNumber(allItems.length),
+		categories: formatNumber(itemCategories.length),
+	};
+	const subline = inCategory
+		? tv("sublineInCategory", {
+				...sublineCounts,
+				inCategory: formatNumber(inCategory),
+				category,
+			})
+		: tv("subline", sublineCounts);
 
 	return (
 		<>
 			<PageHeader
-				title="Resources"
+				title={t("title")}
 				subline={subline}
 				actions={
 					unsavedCount > 0 ? (
 						<span className="border-changed text-changed inline-flex h-8 items-center rounded-full border-[1.5px] px-3 text-xs font-medium">
-							Unsaved
+							{tv("unsaved")}
 						</span>
 					) : undefined
 				}
@@ -158,9 +168,9 @@ export function ResourcesView({ chief }: { chief: Playthrough }) {
 
 			{shortages.length > 0 && (
 				<Note tone="warning">
-					Planner goals are short on {joinNames(shortages)}.{" "}
+					{tv("shortages", { names: joinNames(shortages) })}{" "}
 					<Link href="/buildings" className="font-medium underline">
-						Open the Buildings plan
+						{tv("shortagesLink")}
 					</Link>
 				</Note>
 			)}
@@ -181,7 +191,7 @@ export function ResourcesView({ chief }: { chief: Playthrough }) {
 										: "border-line bg-surface hover:bg-tint"
 								}`}
 							>
-								{entry.category === "all" ? "All" : entry.category}
+								{entry.category === "all" ? t("all") : entry.category}
 								<span className="font-mono text-xs opacity-80">{entry.count}</span>
 							</button>
 						);
@@ -193,19 +203,28 @@ export function ResourcesView({ chief }: { chief: Playthrough }) {
 				<div className="grid grid-cols-2 gap-3 lg:grid-cols-3">
 					{speedupStock(chief).map((stock) => (
 						<Card key={stock.type} className="flex flex-col gap-0.5 px-3 py-2">
-							<SectionLabel className="text-muted">{stock.label}</SectionLabel>
+							<SectionLabel className="text-muted">
+								{tv(`speedups.types.${stock.type}`)}
+							</SectionLabel>
 							<span className="font-mono text-lg font-medium">
-								{stock.minutes === 0 ? "None" : formatDuration(stock.minutes * 60)}
+								{stock.minutes === 0
+									? tv("speedups.none")
+									: formatDuration(stock.minutes * 60)}
 							</span>
 							<span className="text-muted text-xs">
 								{stock.minutes === 0
-									? "No speedups owned"
-									: `${formatNumber(stock.minutes)} min: ${stock.parts
-											.map(
-												(part) =>
-													`${formatNumber(part.count)} x ${part.name}`
-											)
-											.join(" + ")}`}
+									? tv("speedups.noneOwned")
+									: tv("speedups.owned", {
+											minutes: formatNumber(stock.minutes),
+											parts: stock.parts
+												.map((part) =>
+													tv("speedups.part", {
+														count: formatNumber(part.count),
+														name: part.name,
+													})
+												)
+												.join(tv("speedups.partSeparator")),
+										})}
 							</span>
 						</Card>
 					))}
@@ -216,16 +235,21 @@ export function ResourcesView({ chief }: { chief: Playthrough }) {
 				<div className="w-full lg:w-auto lg:flex-1">
 					<Input
 						type="search"
-						aria-label="Search items"
-						placeholder={`Search ${allItems.length} items`}
+						aria-label={tv("search.label")}
+						placeholder={tv("search.placeholder", {
+							total: formatNumber(allItems.length),
+						})}
 						leadingIcon={<LuSearch size={16} />}
 						value={search}
 						onChange={(event) => setSearch(event.target.value)}
 					/>
 				</div>
 				<SegmentedControl
-					label="Show"
-					options={showOptions}
+					label={tv("show.label")}
+					options={showFilters.map((id) => ({
+						id,
+						label: id === "all" ? t("all") : tv(`show.${id}`),
+					}))}
 					value={show}
 					onChange={setShow}
 				/>
@@ -238,21 +262,21 @@ export function ResourcesView({ chief }: { chief: Playthrough }) {
 						else setEditingSeveral(true);
 					}}
 				>
-					Set several
+					{tv("setSeveral")}
 				</Button>
 			</div>
 
 			<p role="status" className="text-muted">
-				Showing {visibleItems.length} of {allItems.length} items.
-				{editingSeveral
-					? " Set several is on. Changes wait until you press Save changes."
-					: " Every change saves at once."}
+				{tv(editingSeveral ? "showing.several" : "showing.instant", {
+					visible: formatNumber(visibleItems.length),
+					total: formatNumber(allItems.length),
+				})}
 			</p>
 
 			{visibleItems.length === 0 ? (
 				<EmptyState
-					title="No items match"
-					description="Change the search, the category or the Show filter."
+					title={tv("empty.title")}
+					description={tv("empty.description")}
 					actions={
 						<Button
 							onClick={() => {
@@ -261,7 +285,7 @@ export function ResourcesView({ chief }: { chief: Playthrough }) {
 								setCategory("all");
 							}}
 						>
-							Reset filters
+							{tv("empty.reset")}
 						</Button>
 					}
 				/>
@@ -272,9 +296,11 @@ export function ResourcesView({ chief }: { chief: Playthrough }) {
 							aria-hidden="true"
 							className={`border-line grid ${ITEM_COLUMNS} gap-3 border-b-[1.5px] px-4 py-2`}
 						>
-							<SectionLabel className="text-muted">Item</SectionLabel>
-							<SectionLabel className="text-muted">Sources</SectionLabel>
-							<SectionLabel className="text-muted text-right">Owned</SectionLabel>
+							<SectionLabel className="text-muted">{tv("columns.item")}</SectionLabel>
+							<SectionLabel className="text-muted">{t("sources")}</SectionLabel>
+							<SectionLabel className="text-muted text-right">
+								{t("owned")}
+							</SectionLabel>
 						</div>
 					)}
 					<ul>
@@ -296,8 +322,11 @@ export function ResourcesView({ chief }: { chief: Playthrough }) {
 				<div className="border-line bg-surface fixed inset-x-0 bottom-0 z-40 flex flex-wrap items-center justify-between gap-3 border-t-[1.5px] px-4 py-3 lg:left-62">
 					<span role="status" className="font-medium">
 						{unsavedCount === 0
-							? "No unsaved changes"
-							: `${unsavedCount} unsaved ${unsavedCount === 1 ? "change" : "changes"}`}
+							? tv("bar.noChanges")
+							: tv("bar.changes", {
+									count: unsavedCount,
+									amount: formatNumber(unsavedCount),
+								})}
 					</span>
 					<span className="flex gap-2">
 						<Button
@@ -306,10 +335,10 @@ export function ResourcesView({ chief }: { chief: Playthrough }) {
 								setEditingSeveral(false);
 							}}
 						>
-							{unsavedCount === 0 ? "Done" : "Discard"}
+							{unsavedCount === 0 ? t("done") : tv("bar.discard")}
 						</Button>
 						<Button variant="primary" disabled={unsavedCount === 0} onClick={saveDraft}>
-							Save changes
+							{tv("bar.save")}
 						</Button>
 					</span>
 				</div>

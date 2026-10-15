@@ -39,11 +39,11 @@ export const itemCategories: { category: ItemCategory; count: number }[] =
     .map(([category, count]) => ({ category: category as ItemCategory, count }))
     .sort((a, b) => b.count - a.count);
 
-export const speedupTypes: { type: SpeedupType; label: string }[] = [
-  { type: "general", label: "General" },
-  { type: "construction", label: "Construction" },
-  { type: "troop", label: "Troop training" },
-  { type: "research", label: "Research" },
-  { type: "learning", label: "Learning" },
-  { type: "healing", label: "Healing" },
+export const speedupTypes: SpeedupType[] = [
+  "general",
+  "construction",
+  "troop",
+  "research",
+  "learning",
+  "healing",
 ];

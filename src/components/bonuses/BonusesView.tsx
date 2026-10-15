@@ -1,11 +1,13 @@
 "use client";
 
 import type { BuffCategory, BuffGroupId } from "whiteout-survival-data";
+import { useTranslations } from "next-intl";
 import { useMemo, useState } from "react";
 import { LuChevronDown, LuChevronRight, LuSearch } from "react-icons/lu";
 import type { Playthrough } from "@/types/app";
+import { formatNumber } from "@/lib/format";
 import { chiefBuffs, formatBuffValue, mergeResearchSources } from "@/service/bonuses";
-import { pendingSources, sourceTypeNames, unstoredSources } from "@/data/game/bonusSources";
+import { pendingSourceIds, unstoredSourceIds } from "@/data/game/bonusSources";
 import { PageHeader } from "@/comps/layout/PageHeader";
 import { Card } from "@/comps/ui/Card";
 import { EmptyState } from "@/comps/ui/EmptyState";
@@ -18,44 +20,13 @@ import { EventBuffRules } from "./EventBuffRules";
 
 type View = "stat" | "source";
 
-const viewOptions: { id: View; label: string }[] = [
-	{ id: "stat", label: "By stat" },
-	{ id: "source", label: "By source" },
-];
+const views: View[] = ["stat", "source"];
 
-const rules = [
-	{
-		title: "Expert affinity",
-		text: "An expert gives a base bonus that grows with the affinity level. At levels 10, 20 up to 100 the expert must advance. Until then the bonus of the level before counts.",
-	},
-	{
-		title: "Albums count when complete",
-		text: "A Tundra Album gives its buff only when all 9 puzzles are done.",
-	},
-	{
-		title: "Pets use the refined value",
-		text: "Each pet counts its normal or its refined value, as you set on the Pets page.",
-	},
-	{
-		title: "No number, not counted",
-		text: "A source that has no number in the data adds nothing. It is not shown as 0.",
-	},
-	{
-		title: "Kept apart",
-		text: "Percent and flat values are never added together. Infantry, Lancer and Marksman stats are separate from Troops stats.",
-	},
-	{
-		title: "Time stats",
-		text: "Construction Speed Boost is hours saved for each build. Ally Help Time is in seconds. Each shows its unit.",
-	},
-];
-
-const joinNames = (names: string[]) =>
-	names.length <= 1
-		? (names[0] ?? "")
-		: `${names.slice(0, -1).join(", ")} and ${names[names.length - 1]}`;
+const ruleIds = ["affinity", "albums", "pets", "noNumber", "apart", "time"] as const;
 
 export function BonusesView({ chief }: { chief: Playthrough }) {
+	const t = useTranslations("bonuses");
+	const tv = useTranslations("bonuses.view");
 	const buffs = useMemo(() => chiefBuffs(chief), [chief]);
 	const [view, setView] = useState<View>("stat");
 	const [search, setSearch] = useState("");
@@ -66,6 +37,14 @@ export function BonusesView({ chief }: { chief: Playthrough }) {
 	const query = search.trim().toLowerCase();
 	const matches = (name: string) => name.toLowerCase().includes(query);
 	const groupsWithStats = buffs.groups.filter((group) => group.categories.length > 0);
+
+	const joinNames = (names: string[]) =>
+		names.length <= 1
+			? (names[0] ?? "")
+			: t("list.andLast", {
+					rest: names.slice(0, -1).join(t("list.separator")),
+					last: names[names.length - 1],
+				});
 
 	const toggleStat = (key: string) =>
 		setOpenStats((current) => {
@@ -91,7 +70,7 @@ export function BonusesView({ chief }: { chief: Playthrough }) {
 		.filter((source) => source.stats.length > 0);
 
 	const groupChips: { id: "all" | BuffGroupId; name: string; count: number }[] = [
-		{ id: "all", name: "All", count: buffs.categories.length },
+		{ id: "all", name: t("all"), count: buffs.categories.length },
 		...groupsWithStats.map((group) => ({
 			id: group.id,
 			name: group.name,
@@ -103,29 +82,27 @@ export function BonusesView({ chief }: { chief: Playthrough }) {
 
 	return (
 		<>
-			<PageHeader
-				title="Bonuses"
-				subline={`${chief.name} · every bonus added up from the other pages. This page stores nothing.`}
-			/>
+			<PageHeader title={t("title")} subline={tv("subline", { name: chief.name })} />
 			<div className="grid grid-cols-3 gap-2 lg:gap-3">
-				<StatTile value={buffs.categories.length} label="Stats in the result" />
-				<StatTile value={groupsWithStats.length} label="Groups with stats" />
-				<StatTile value={sources.length} label="Source types giving something" />
+				<StatTile value={buffs.categories.length} label={tv("tiles.stats")} />
+				<StatTile value={groupsWithStats.length} label={tv("tiles.groups")} />
+				<StatTile value={sources.length} label={tv("tiles.sources")} />
 			</div>
 
-			<Note tone="warning" title="Not every source is counted yet.">
-				Each source below is read from the page that stores it. Until these pages are built
-				they add nothing: {joinNames(pendingSources.map((source) => source.name))}.{" "}
-				{joinNames(unstoredSources)} are not stored by any page yet.
+			<Note tone="warning" title={tv("pending.title")}>
+				{tv("pending.text", {
+					pending: joinNames(pendingSourceIds.map((id) => t(`sourceTypes.${id}`))),
+					unstored: joinNames(unstoredSourceIds.map((id) => t(`sourceTypes.${id}`))),
+				})}
 			</Note>
 
 			<Card className="flex flex-col gap-3 p-4">
-				<h2 className="text-base font-semibold">How the numbers are counted</h2>
+				<h2 className="text-base font-semibold">{tv("rulesTitle")}</h2>
 				<dl className="grid gap-3 md:grid-cols-2 xl:grid-cols-3">
-					{rules.map((rule) => (
-						<div key={rule.title} className="flex flex-col gap-0.5">
-							<dt className="font-semibold">{rule.title}</dt>
-							<dd className="text-muted">{rule.text}</dd>
+					{ruleIds.map((id) => (
+						<div key={id} className="flex flex-col gap-0.5">
+							<dt className="font-semibold">{tv(`rules.${id}.title`)}</dt>
+							<dd className="text-muted">{tv(`rules.${id}.text`)}</dd>
 						</div>
 					))}
 				</dl>
@@ -135,16 +112,16 @@ export function BonusesView({ chief }: { chief: Playthrough }) {
 				<div className="w-full lg:w-auto lg:flex-1">
 					<Input
 						type="search"
-						aria-label="Search stats"
-						placeholder="Search stats"
+						aria-label={tv("search.label")}
+						placeholder={tv("search.placeholder")}
 						leadingIcon={<LuSearch size={16} />}
 						value={search}
 						onChange={(event) => setSearch(event.target.value)}
 					/>
 				</div>
 				<SegmentedControl
-					label="View"
-					options={viewOptions}
+					label={tv("views.label")}
+					options={views.map((id) => ({ id, label: tv(`views.${id}`) }))}
 					value={view}
 					onChange={setView}
 				/>
@@ -173,11 +150,15 @@ export function BonusesView({ chief }: { chief: Playthrough }) {
 
 			{!hasResults ? (
 				<EmptyState
-					title={buffs.categories.length === 0 ? "No bonuses yet" : "No stats match"}
+					title={
+						buffs.categories.length === 0
+							? tv("empty.noBonusesTitle")
+							: tv("empty.noMatchTitle")
+					}
 					description={
 						buffs.categories.length === 0
-							? "Bonuses appear as the pages that store them are filled in."
-							: "Change the search or the group."
+							? tv("empty.noBonusesDescription")
+							: tv("empty.noMatchDescription")
 					}
 				/>
 			) : view === "stat" ? (
@@ -187,8 +168,10 @@ export function BonusesView({ chief }: { chief: Playthrough }) {
 							<div className="bg-tint flex items-baseline justify-between gap-3 px-4 py-2">
 								<h2 className="font-semibold">{group.name}</h2>
 								<span className="text-muted font-mono text-xs">
-									{group.categories.length}{" "}
-									{group.categories.length === 1 ? "stat" : "stats"}
+									{tv("statCount", {
+										count: group.categories.length,
+										amount: formatNumber(group.categories.length),
+									})}
 								</span>
 							</div>
 							<ul>
@@ -245,6 +228,8 @@ function StatRow({
 	open: boolean;
 	onToggle: () => void;
 }) {
+	const t = useTranslations("bonuses");
+	const tv = useTranslations("bonuses.view");
 	const Chevron = open ? LuChevronDown : LuChevronRight;
 
 	return (
@@ -259,8 +244,10 @@ function StatRow({
 				<span className="flex min-w-0 flex-1 flex-col">
 					<span className="font-semibold">{category.name}</span>
 					<span className="text-muted text-xs">
-						{category.sources.length}{" "}
-						{category.sources.length === 1 ? "source" : "sources"}
+						{tv("sourceCount", {
+							count: category.sources.length,
+							amount: formatNumber(category.sources.length),
+						})}
 					</span>
 				</span>
 				<span className="font-mono font-medium">
@@ -270,9 +257,9 @@ function StatRow({
 			{open && (
 				<div className="bg-surface">
 					<div className="border-line text-muted hidden grid-cols-[1fr_12rem_6rem] gap-3 border-t-[1.5px] px-4 py-1 lg:grid">
-						<SectionLabel>Stat and source</SectionLabel>
-						<SectionLabel>Source type</SectionLabel>
-						<SectionLabel className="text-right">Counted</SectionLabel>
+						<SectionLabel>{tv("columns.statAndSource")}</SectionLabel>
+						<SectionLabel>{tv("columns.sourceType")}</SectionLabel>
+						<SectionLabel className="text-right">{tv("columns.counted")}</SectionLabel>
 					</div>
 					<ul>
 						{category.sources.map((source, index) => (
@@ -281,7 +268,9 @@ function StatRow({
 								className="border-line grid gap-x-3 gap-y-0.5 border-t-[1.5px] py-2 pr-4 pl-11 lg:grid-cols-[1fr_12rem_6rem]"
 							>
 								<span className="break-words">{source.label}</span>
-								<span className="text-muted">{sourceTypeNames[source.type]}</span>
+								<span className="text-muted">
+									{t(`sourceTypes.${source.type}`)}
+								</span>
 								<span className="font-mono lg:text-right">
 									{formatBuffValue(source.amount, category.unit)}
 								</span>

@@ -1,3 +1,4 @@
+import { translator } from "@/i18n/formatter";
 import { calculateBuffs } from "whiteout-survival-data";
 import type {
   BuffCalculation,
@@ -7,6 +8,7 @@ import type {
   BuffUnit,
 } from "whiteout-survival-data";
 import type { Playthrough } from "@/types/app";
+import { formatDecimal } from "@/lib/format";
 import { entertainmentBuildings } from "@/data/game/buildings";
 import { allResearch } from "@/data/game/research";
 import { levelledBuildingLevels } from "./buildings";
@@ -86,16 +88,13 @@ export const constructionSpeedBonusPercent = (chief: Playthrough) =>
 export const researchSpeedBonusPercent = (chief: Playthrough) =>
   speedPercentOf(chief, RESEARCH_SPEED_STAT);
 
-const numberFormat = new Intl.NumberFormat("en-US", {
-  maximumFractionDigits: 2,
-});
-
 export const formatBuffValue = (total: number, unit: BuffUnit) => {
-  const text = numberFormat.format(total);
-  if (unit === "percent") return `${text}%`;
-  if (unit === "hours") return `${text} h`;
-  if (unit === "seconds") return `${text} s`;
-  return text;
+  const t = translator("bonuses");
+  const value = formatDecimal(total);
+  if (unit === "percent") return t("unit.percent", { value });
+  if (unit === "hours") return t("unit.hours", { value });
+  if (unit === "seconds") return t("unit.seconds", { value });
+  return t("unit.plain", { value });
 };
 
 const RESEARCH_SOURCE_IDS = ["research", "warAcademyResearch"];
@@ -126,7 +125,7 @@ export const mergeResearchSources = (
 
   const merged: BuffSourceGroup = {
     id: "research",
-    name: "Research",
+    name: translator("bonuses")("sourceTypes.research"),
     stats: [...totals.values()],
   };
   const firstIndex = sources.findIndex((source) =>

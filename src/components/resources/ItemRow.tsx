@@ -1,6 +1,7 @@
 "use client";
 
 import type { Item } from "whiteout-survival-data";
+import { useTranslations } from "next-intl";
 import { formatNumber } from "@/lib/format";
 import { useIsDesktop } from "@/lib/hooks/useMediaQuery";
 import { stepFor } from "@/service/inventory";
@@ -20,7 +21,9 @@ interface ItemRowProps {
 const MAX_SOURCES_SHOWN = 2;
 
 function Sources({ sources }: { sources: string[] }) {
-	if (sources.length === 0) return <span className="text-muted italic">Sources unknown</span>;
+	const t = useTranslations("resources");
+	if (sources.length === 0)
+		return <span className="text-muted italic">{t("sourcesUnknown")}</span>;
 	const extra = sources.length - MAX_SOURCES_SHOWN;
 	return (
 		<span className="line-clamp-2 break-words">
@@ -31,6 +34,7 @@ function Sources({ sources }: { sources: string[] }) {
 }
 
 export function ItemRow({ item, count, changed, onCountChange, onOpen }: ItemRowProps) {
+	const t = useTranslations("resources.itemRow");
 	const isDesktop = useIsDesktop();
 	const tint = changed ? "bg-tint" : "";
 	const icon = <ItemIcon src={item.img} />;
@@ -41,7 +45,7 @@ export function ItemRow({ item, count, changed, onCountChange, onOpen }: ItemRow
 				<button
 					type="button"
 					onClick={() => onOpen(item)}
-					aria-label={`Edit ${item.name}, ${formatNumber(count)} owned`}
+					aria-label={t("edit", { name: item.name, count: formatNumber(count) })}
 					className="flex min-h-14 w-full items-center gap-3 px-3 py-2 text-left"
 				>
 					{icon}

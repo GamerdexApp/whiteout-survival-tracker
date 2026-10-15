@@ -40,7 +40,6 @@ export const stepFor = (itemId: string) =>
 
 export interface SpeedupStock {
   type: SpeedupType;
-  label: string;
   minutes: number;
   parts: { name: string; count: number }[];
 }
@@ -49,14 +48,13 @@ export interface SpeedupStock {
  * The minutes of speedups on hand for each type, added up from the owned counts.
  */
 export const speedupStock = (chief: Playthrough): SpeedupStock[] =>
-  speedupTypes.map(({ type, label }) => {
+  speedupTypes.map((type) => {
     const owned = allItems
       .filter((item) => item.speedup?.type === type)
       .map((item) => ({ item, count: ownedCount(chief, item.id) }))
       .filter(({ count }) => count > 0);
     return {
       type,
-      label,
       minutes: owned.reduce(
         (sum, { item, count }) => sum + item.speedup!.minutes * count,
         0,

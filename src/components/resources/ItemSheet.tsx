@@ -1,7 +1,9 @@
 "use client";
 
 import type { Item } from "whiteout-survival-data";
+import { useTranslations } from "next-intl";
 import { useState } from "react";
+import { formatNumber } from "@/lib/format";
 import { stepFor } from "@/service/inventory";
 import { Button } from "@/comps/ui/Button";
 import { Dialog } from "@/comps/ui/Dialog";
@@ -20,6 +22,7 @@ interface ItemSheetProps {
 const stepChoices = [1, 10, 100, 1000];
 
 export function ItemSheet({ item, count, onCountChange, onSetToZero, onClose }: ItemSheetProps) {
+	const t = useTranslations("resources");
 	const [chosenStep, setChosenStep] = useState<number | null>(null);
 	const [shownId, setShownId] = useState<string | null>(null);
 
@@ -32,10 +35,10 @@ export function ItemSheet({ item, count, onCountChange, onSetToZero, onClose }: 
 		<Dialog
 			open={item !== null}
 			onClose={onClose}
-			title="Edit owned count"
+			title={t("itemSheet.title")}
 			footer={
 				<Button variant="primary" onClick={onClose}>
-					Done
+					{t("done")}
 				</Button>
 			}
 		>
@@ -49,7 +52,7 @@ export function ItemSheet({ item, count, onCountChange, onSetToZero, onClose }: 
 						</div>
 					</div>
 					<div className="flex flex-col gap-2">
-						<SectionLabel className="text-muted">Owned</SectionLabel>
+						<SectionLabel className="text-muted">{t("owned")}</SectionLabel>
 						<CountControl
 							name={item.name}
 							value={count}
@@ -57,7 +60,7 @@ export function ItemSheet({ item, count, onCountChange, onSetToZero, onClose }: 
 							onChange={(next) => onCountChange(item.id, next)}
 						/>
 						<div className="flex flex-wrap items-center gap-2">
-							<span className="text-muted">Step</span>
+							<span className="text-muted">{t("itemSheet.step")}</span>
 							{stepChoices.map((choice) => (
 								<Button
 									key={choice}
@@ -69,7 +72,7 @@ export function ItemSheet({ item, count, onCountChange, onSetToZero, onClose }: 
 									aria-pressed={(chosenStep ?? stepFor(item.id)) === choice}
 									onClick={() => setChosenStep(choice)}
 								>
-									{choice.toLocaleString("en-US")}
+									{formatNumber(choice)}
 								</Button>
 							))}
 						</div>
@@ -82,20 +85,22 @@ export function ItemSheet({ item, count, onCountChange, onSetToZero, onClose }: 
 									onClose();
 								}}
 							>
-								Set to 0
+								{t("itemSheet.setToZero")}
 							</Button>
 						</div>
 					</div>
 					<div className="flex flex-col gap-1">
-						<SectionLabel className="text-muted">Description</SectionLabel>
+						<SectionLabel className="text-muted">
+							{t("itemSheet.description")}
+						</SectionLabel>
 						<p className={item.description ? "" : "text-muted"}>
-							{item.description ?? "Unknown"}
+							{item.description ?? t("itemSheet.unknown")}
 						</p>
 					</div>
 					<div className="flex flex-col gap-1">
-						<SectionLabel className="text-muted">Sources</SectionLabel>
+						<SectionLabel className="text-muted">{t("sources")}</SectionLabel>
 						{item.sources.length === 0 ? (
-							<p className="text-muted italic">Sources unknown</p>
+							<p className="text-muted italic">{t("sourcesUnknown")}</p>
 						) : (
 							<ul>
 								{item.sources.map((source) => (

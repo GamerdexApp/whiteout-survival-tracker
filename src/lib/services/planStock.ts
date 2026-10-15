@@ -1,3 +1,4 @@
+import { translator } from "@/i18n/formatter";
 import type {
   BuildingCalculation,
   ResearchCalculation,
@@ -35,23 +36,26 @@ export const stockShortBy = (check: StockCheck) =>
 export const resourceChecks = (
   calculation: BuildingCalculation,
   chief: Playthrough,
-): StockCheck[] => [
-  ...RESOURCE_ITEM_IDS.map((id) => ({
-    id,
-    name: findItem(id)?.name ?? id,
-    available: ownedCount(chief, id),
-    needed:
-      calculation.resources.find((resource) => resource.itemId === id)
-        ?.amount ?? 0,
-  })),
-  {
-    id: "construction-time",
-    name: "Construction time, as speedups",
-    available: constructionSpeedupMinutes(chief),
-    needed: calculation.speedupMinutesNeeded,
-    unit: "min",
-  },
-];
+): StockCheck[] => {
+  const t = translator("resources");
+  return [
+    ...RESOURCE_ITEM_IDS.map((id) => ({
+      id,
+      name: findItem(id)?.name ?? id,
+      available: ownedCount(chief, id),
+      needed:
+        calculation.resources.find((resource) => resource.itemId === id)
+          ?.amount ?? 0,
+    })),
+    {
+      id: "construction-time",
+      name: t("planStock.constructionTime"),
+      available: constructionSpeedupMinutes(chief),
+      needed: calculation.speedupMinutesNeeded,
+      unit: t("planStock.minutesUnit"),
+    },
+  ];
+};
 
 /**
  * The same check for a research plan. It lists the items the plan takes, in the order the
@@ -60,21 +64,24 @@ export const resourceChecks = (
 export const researchChecks = (
   calculation: ResearchCalculation,
   chief: Playthrough,
-): StockCheck[] => [
-  ...calculation.resources.map((resource) => ({
-    id: resource.itemId,
-    name: findItem(resource.itemId)?.name ?? resource.itemId,
-    available: ownedCount(chief, resource.itemId),
-    needed: resource.amount,
-  })),
-  {
-    id: "research-time",
-    name: "Research time, as speedups",
-    available: researchSpeedupMinutes(chief),
-    needed: calculation.speedupMinutesNeeded,
-    unit: "min",
-  },
-];
+): StockCheck[] => {
+  const t = translator("resources");
+  return [
+    ...calculation.resources.map((resource) => ({
+      id: resource.itemId,
+      name: findItem(resource.itemId)?.name ?? resource.itemId,
+      available: ownedCount(chief, resource.itemId),
+      needed: resource.amount,
+    })),
+    {
+      id: "research-time",
+      name: t("planStock.researchTime"),
+      available: researchSpeedupMinutes(chief),
+      needed: calculation.speedupMinutesNeeded,
+      unit: t("planStock.minutesUnit"),
+    },
+  ];
+};
 
 const shortNamesOf = (checks: StockCheck[]) =>
   checks

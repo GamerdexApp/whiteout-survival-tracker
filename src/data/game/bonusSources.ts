@@ -1,52 +1,22 @@
-import type { BuffSourceType } from "whiteout-survival-data";
-
-/**
- * One name for each kind of source. The package splits research in two and the island in two, but
- * the page shows one row for each.
- */
-export const sourceTypeNames: Record<BuffSourceType, string> = {
-  account: "Account",
-  hero: "Heroes",
-  expert: "Experts",
-  research: "Research",
-  allianceTech: "Alliance Tech",
-  allianceFacility: "Alliance Facilities",
-  alliancePrestige: "Alliance Prestige Buildings",
-  vip: "VIP",
-  building: "Buildings",
-  skin: "Skins",
-  tundraAlbum: "Tundra Album",
-  collection: "Collection",
-  decoration: "My Island",
-  treeOfLife: "My Island",
-  castleAppointment: "Castle position",
-  pet: "Pets",
-  chiefGear: "Chief Gear",
-  chiefGearSet: "Chief Gear set bonus",
-  chiefCharm: "Chief Charms",
-  chiefOrder: "Chief Orders",
-  presidentSkill: "President skills",
-};
-
 /**
  * The sources that no page stores yet. They add nothing until their page exists, and the page says
- * so instead of showing a total that looks complete.
+ * so instead of showing a total that looks complete. Each id is a key of `bonuses.sourceTypes`.
  */
-export const pendingSources: { name: string; page: string }[] = [
-  { name: "Experts", page: "Experts" },
-  { name: "Alliance Tech", page: "Tech" },
-  { name: "Alliance Facilities", page: "Facilities" },
-  { name: "Alliance Prestige Buildings", page: "Alliance" },
-  { name: "VIP", page: "VIP" },
-  { name: "Skins", page: "Skins" },
-  { name: "Tundra Album", page: "Tundra Album" },
-  { name: "My Island", page: "Daybreak Island" },
-  { name: "Pets", page: "Pets" },
-];
+export const pendingSourceIds = [
+  "expert",
+  "allianceTech",
+  "allianceFacility",
+  "alliancePrestige",
+  "vip",
+  "skin",
+  "tundraAlbum",
+  "decoration",
+  "pet",
+] as const;
 
-export const unstoredSources = [
-  "Castle position",
-  "Chief Orders",
-  "President skills",
-  "the March Queue pack",
-];
+export const unstoredSourceIds = [
+  "castleAppointment",
+  "chiefOrder",
+  "presidentSkill",
+  "marchQueuePack",
+] as const;
