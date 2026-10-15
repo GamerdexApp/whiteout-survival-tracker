@@ -1,5 +1,5 @@
 import type { AppData, ChiefValues, Playthrough } from "@/types/app";
-import { formatFurnaceLevel } from "@/lib/format";
+import { formatFurnaceShort } from "@/lib/format";
 
 export const emptyAppData = (): AppData => ({
   playthroughs: [],
@@ -77,9 +77,7 @@ export const describeChief = (
 ) => {
   const furnaceLevel = chief.buildings?.furnace?.level;
   const parts = [
-    furnaceLevel
-      ? `Furnace ${formatFurnaceLevel(furnaceLevel, fullFurnaceLabels)}`
-      : null,
+    furnaceLevel ? formatFurnaceShort(furnaceLevel, fullFurnaceLabels) : null,
     chief.stateNumber === undefined ? null : `State ${chief.stateNumber}`,
   ].filter(Boolean);
   return parts.length > 0 ? parts.join(" · ") : "No details yet";

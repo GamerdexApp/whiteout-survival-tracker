@@ -54,3 +54,12 @@ export const formatDuration = (totalSeconds: number) => {
  */
 export const formatFurnaceLevel = (label: string, fullLabels: boolean) =>
   fullLabels ? label : label.replace(/-\d+$/, "");
+
+/**
+ * The short Furnace name for tight places such as the chief selector: FC 5 reads FC5 and level 30
+ * reads F30. It follows the same stage or full label choice as `formatFurnaceLevel`.
+ */
+export const formatFurnaceShort = (label: string, fullLabels: boolean) => {
+  const level = formatFurnaceLevel(label, fullLabels);
+  return level.startsWith("FC ") ? level.replace(" ", "") : `F${level}`;
+};
