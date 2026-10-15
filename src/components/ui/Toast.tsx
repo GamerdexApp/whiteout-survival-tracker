@@ -1,5 +1,7 @@
 "use client";
 
+import { translator } from "@/i18n/formatter";
+import { useTranslations } from "next-intl";
 import React, { createContext, useContext, useEffect, useRef, useState } from "react";
 import type { IconType } from "react-icons";
 import { LuBan, LuCircleCheck, LuInfo, LuTriangleAlert, LuX } from "react-icons/lu";
@@ -35,16 +37,17 @@ const closeAfterMs = (options: ToastOptions) => {
 	return options.action ? UNDO_CLOSE_MS : PLAIN_CLOSE_MS;
 };
 
-const variantStyles: Record<ToastVariant, { label: string; Icon: IconType; className: string }> = {
-	success: { label: "Success", Icon: LuCircleCheck, className: "text-kept" },
-	info: { label: "Info", Icon: LuInfo, className: "text-added" },
-	warning: { label: "Warning", Icon: LuTriangleAlert, className: "text-warn" },
-	error: { label: "Error", Icon: LuBan, className: "text-danger" },
+const variantStyles: Record<ToastVariant, { Icon: IconType; className: string }> = {
+	success: { Icon: LuCircleCheck, className: "text-kept" },
+	info: { Icon: LuInfo, className: "text-added" },
+	warning: { Icon: LuTriangleAlert, className: "text-warn" },
+	error: { Icon: LuBan, className: "text-danger" },
 };
 
 const ToastContext = createContext<((options: ToastOptions) => void) | undefined>(undefined);
 
 export function ToastProvider({ children }: { children: React.ReactNode }) {
+	const t = useTranslations("ui.toast");
 	const [toasts, setToasts] = useState<ToastItem[]>([]);
 	const nextIdRef = useRef(0);
 	const timersRef = useRef(new Map<number, ReturnType<typeof setTimeout>>());
@@ -82,7 +85,7 @@ export function ToastProvider({ children }: { children: React.ReactNode }) {
 				className="pointer-events-none fixed inset-x-4 bottom-4 z-50 mx-auto flex max-w-md flex-col items-stretch gap-2"
 			>
 				{toasts.map((toast) => {
-					const { Icon, label, className } = variantStyles[toast.variant];
+					const { Icon, className } = variantStyles[toast.variant];
 					return (
 						<div
 							key={toast.id}
@@ -94,7 +97,7 @@ export function ToastProvider({ children }: { children: React.ReactNode }) {
 								className={`mt-2.5 shrink-0 ${className}`}
 							/>
 							<div className="flex min-w-0 flex-1 flex-col gap-0.5 py-1">
-								<span className="sr-only">{label}</span>
+								<span className="sr-only">{t(`variants.${toast.variant}`)}</span>
 								<span className="font-medium">{toast.title}</span>
 								{toast.message && (
 									<span className="text-muted">{toast.message}</span>
@@ -112,7 +115,7 @@ export function ToastProvider({ children }: { children: React.ReactNode }) {
 								</Button>
 							)}
 							<IconButton
-								label="Dismiss"
+								label={t("dismiss")}
 								className="text-muted hover:bg-tint"
 								onClick={() => dismiss(toast.id)}
 							>
@@ -129,7 +132,7 @@ export function ToastProvider({ children }: { children: React.ReactNode }) {
 export function useToast() {
 	const context = useContext(ToastContext);
 	if (context === undefined) {
-		throw new Error("useToast must be used within a ToastProvider");
+		throw new Error(translator("ui")("toast.missingProvider"));
 	}
 	return context;
 }

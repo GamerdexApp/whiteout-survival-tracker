@@ -1,14 +1,15 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { useId, useState } from "react";
 import type { FormEvent } from "react";
 import type { ChiefValues, CoreEventId, Playthrough } from "@/types/app";
+import { formatNumber } from "@/lib/format";
 import { toChiefValues } from "@/service/chiefs";
 import {
 	allCoreEventIds,
 	CHIEF_NAME_MAX_LENGTH,
 	CHIEF_NOTES_MAX_LENGTH,
-	coreEvents,
 	DEFAULT_HERO_GENERATION,
 	MAX_HERO_GENERATION,
 	STATE_NUMBER_MAX,
@@ -41,12 +42,10 @@ const todayIso = () => {
 	return `${now.getFullYear()}-${pad(now.getMonth() + 1)}-${pad(now.getDate())}`;
 };
 
-const generationLabel = (generation: number) =>
-	generation === 0 ? "Generation 0 (pre-Legendary)" : `Generation ${generation}`;
-
 const generations = Array.from({ length: MAX_HERO_GENERATION + 1 }, (_, index) => index);
 
 export function ChiefDialog({ open, chief, onClose, onSubmit }: ChiefDialogProps) {
+	const t = useTranslations("chiefs.dialog");
 	const formId = useId();
 	const isEditing = chief !== null;
 
@@ -54,13 +53,13 @@ export function ChiefDialog({ open, chief, onClose, onSubmit }: ChiefDialogProps
 		<Dialog
 			open={open}
 			onClose={onClose}
-			title={isEditing ? "Edit chief" : "New chief"}
-			description={isEditing ? undefined : "Name it. The rest is optional."}
+			title={isEditing ? t("editTitle") : t("newTitle")}
+			description={isEditing ? undefined : t("newDescription")}
 			footer={
 				<>
-					<Button onClick={onClose}>Cancel</Button>
+					<Button onClick={onClose}>{t("cancel")}</Button>
 					<Button type="submit" form={formId} variant="primary">
-						{isEditing ? "Save changes" : "Create chief"}
+						{isEditing ? t("save") : t("create")}
 					</Button>
 				</>
 			}
@@ -79,6 +78,8 @@ function ChiefForm({
 	chief: Playthrough | null;
 	onSubmit: (values: ChiefValues) => void;
 }) {
+	const t = useTranslations("chiefs.dialog");
+	const tEvents = useTranslations("chiefs.coreEvents");
 	const initial = chief ? toChiefValues(chief) : null;
 	const [name, setName] = useState(initial?.name ?? "");
 	const [stateNumber, setStateNumber] = useState(initial?.stateNumber?.toString() ?? "");
@@ -101,12 +102,12 @@ function ChiefForm({
 			parsedStateNumber <= STATE_NUMBER_MAX);
 
 	const errors: FormErrors = {};
-	if (name.trim() === "") errors.name = "Enter a name for this chief.";
+	if (name.trim() === "") errors.name = t("errors.name");
 	if (!stateNumberIsValid) {
-		errors.stateNumber = `Enter a whole number from 1 to ${STATE_NUMBER_MAX}.`;
+		errors.stateNumber = t("errors.stateNumber", { max: String(STATE_NUMBER_MAX) });
 	}
 	if (serverStartDate > todayIso()) {
-		errors.serverStartDate = "Enter a date that is not in the future.";
+		errors.serverStartDate = t("errors.serverStartDate");
 	}
 	const visibleErrors = submitted ? errors : {};
 
@@ -135,7 +136,7 @@ function ChiefForm({
 
 	return (
 		<form id={formId} onSubmit={handleSubmit} noValidate className="flex flex-col gap-4">
-			<Field label="Name" error={visibleErrors.name}>
+			<Field label={t("name")} error={visibleErrors.name}>
 				<Input
 					data-autofocus
 					value={name}
@@ -145,9 +146,9 @@ function ChiefForm({
 				/>
 			</Field>
 			<Field
-				label="State number"
+				label={t("stateNumber.label")}
 				optional
-				hint="The state your chief lives in. Whole number."
+				hint={t("stateNumber.hint")}
 				error={visibleErrors.stateNumber}
 			>
 				<Input
@@ -158,21 +159,15 @@ function ChiefForm({
 				/>
 			</Field>
 			<Field
-				label="Server start date"
+				label={t("serverStartDate.label")}
 				optional
 				error={visibleErrors.serverStartDate}
 				labelAction={
-					<InfoPopover label="Where to find the server start date">
-						<p>Open the game and go to the Server screen from your profile.</p>
-						<p>
-							Read the date the server opened. If it only shows the server day number,
-							count back that many days from today.
-						</p>
-						<p>No date on screen? Ask your alliance leader or check state chat.</p>
-						<p>
-							A date within 21 days either way is enough. Research unlocks use 150 and
-							600 days, so three weeks of error rarely changes the result.
-						</p>
+					<InfoPopover label={t("serverStartDate.info.label")}>
+						<p>{t("serverStartDate.info.screen")}</p>
+						<p>{t("serverStartDate.info.date")}</p>
+						<p>{t("serverStartDate.info.missing")}</p>
+						<p>{t("serverStartDate.info.tolerance")}</p>
 					</InfoPopover>
 				}
 			>
@@ -183,44 +178,43 @@ function ChiefForm({
 					onChange={(event) => setServerStartDate(event.target.value)}
 				/>
 			</Field>
-			<Field
-				label="Heroes unlocked up to"
-				hint="Heroes of later generations stay hidden on the Heroes page and in Plan."
-			>
+			<Field label={t("generation.label")} hint={t("generation.hint")}>
 				<Select
 					value={generation}
 					onChange={(event) => setGeneration(Number(event.target.value))}
 				>
 					{generations.map((value) => (
 						<option key={value} value={value}>
-							{generationLabel(value)}
+							{value === 0
+								? t("generation.preLegendary")
+								: t("generation.numbered", { generation: formatNumber(value) })}
 						</option>
 					))}
 				</Select>
 			</Field>
 			<fieldset className="flex flex-col gap-1.5">
 				<legend className="flex w-full items-center gap-2 font-medium">
-					Core events shown
+					{t("events.legend")}
 					<span className="text-muted font-mono text-xs font-normal">
-						{shownEvents.length} of {coreEvents.length}
+						{t("events.shownOf", {
+							shown: formatNumber(shownEvents.length),
+							total: formatNumber(allCoreEventIds.length),
+						})}
 					</span>
 				</legend>
 				<div className="grid gap-2 sm:grid-cols-2">
-					{coreEvents.map((event) => (
+					{allCoreEventIds.map((id) => (
 						<CheckChip
-							key={event.id}
-							label={event.label}
-							checked={shownEvents.includes(event.id)}
-							onChange={(checked) => toggleEvent(event.id, checked)}
+							key={id}
+							label={tEvents(id)}
+							checked={shownEvents.includes(id)}
+							onChange={(checked) => toggleEvent(id, checked)}
 						/>
 					))}
 				</div>
-				<p className="text-muted text-xs">
-					Hidden events leave the Core events tabs and their Event log. Turn them back on
-					any time.
-				</p>
+				<p className="text-muted text-xs">{t("events.hint")}</p>
 			</fieldset>
-			<Field label="Notes" optional>
+			<Field label={t("notes")} optional>
 				<Textarea
 					value={notes}
 					maxLength={CHIEF_NOTES_MAX_LENGTH}

@@ -1,3 +1,4 @@
+import { translator } from "@/i18n/formatter";
 import type { AppData, ChiefValues, Playthrough } from "@/types/app";
 import { formatFurnaceShort } from "@/lib/format";
 
@@ -75,20 +76,18 @@ export const describeChief = (
   chief: Playthrough,
   fullFurnaceLabels = false,
 ) => {
+  const t = translator("chiefs");
   const furnaceLevel = chief.buildings?.furnace?.level;
   const parts = [
     furnaceLevel ? formatFurnaceShort(furnaceLevel, fullFurnaceLabels) : null,
-    chief.stateNumber === undefined ? null : `State ${chief.stateNumber}`,
+    chief.stateNumber === undefined
+      ? null
+      : t("describe.state", { number: String(chief.stateNumber) }),
   ].filter(Boolean);
-  return parts.length > 0 ? parts.join(" · ") : "No details yet";
+  return parts.length > 0 ? parts.join(" · ") : t("describe.empty");
 };
 
-export const formatShortDate = (iso: string) =>
-  new Date(iso).toLocaleDateString("en-US", {
-    month: "short",
-    day: "numeric",
-    year: "numeric",
-  });
+export { formatShortDate } from "@/i18n/formatter";
 
 export const updateChiefById = (
   data: AppData,

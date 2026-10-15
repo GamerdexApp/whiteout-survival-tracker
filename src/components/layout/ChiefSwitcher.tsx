@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { useState } from "react";
 import type { ButtonHTMLAttributes } from "react";
 import { LuChevronDown, LuPlus } from "react-icons/lu";
@@ -18,6 +19,7 @@ interface ChiefChoicesProps {
 }
 
 function ChiefChoices({ inMenu, close, onNavigate }: ChiefChoicesProps) {
+	const t = useTranslations("shell.chiefSwitcher");
 	const { playthroughs, activePlaythrough, setActivePlaythrough } = usePlaythrough();
 	const { ui } = useUiSettings();
 	const role = inMenu ? "menuitem" : "button";
@@ -30,7 +32,7 @@ function ChiefChoices({ inMenu, close, onNavigate }: ChiefChoicesProps) {
 		<>
 			{playthroughs.length > 0 && (
 				<>
-					{inMenu && <MenuLabel>Chiefs</MenuLabel>}
+					{inMenu && <MenuLabel>{t("chiefs")}</MenuLabel>}
 					{playthroughs.map((chief) => {
 						const isActive = chief.id === activePlaythrough?.id;
 						return (
@@ -52,7 +54,7 @@ function ChiefChoices({ inMenu, close, onNavigate }: ChiefChoicesProps) {
 								</span>
 								{isActive && (
 									<span className="text-primary font-mono text-xs font-medium">
-										Active
+										{t("active")}
 									</span>
 								)}
 							</MenuItem>
@@ -67,7 +69,7 @@ function ChiefChoices({ inMenu, close, onNavigate }: ChiefChoicesProps) {
 				onSelect={followLink}
 				className="gap-2 font-medium"
 			>
-				All chiefs
+				{t("allChiefs")}
 			</MenuItem>
 			<MenuItem
 				role={role}
@@ -76,19 +78,20 @@ function ChiefChoices({ inMenu, close, onNavigate }: ChiefChoicesProps) {
 				className="text-primary gap-2.5 font-semibold"
 			>
 				<LuPlus size={16} aria-hidden="true" />
-				New chief
+				{t("newChief")}
 			</MenuItem>
 		</>
 	);
 }
 
 export function ChiefSwitcher({ onNavigate }: { onNavigate?: () => void }) {
+	const t = useTranslations("shell.chiefSwitcher");
 	const { activePlaythrough, isLoaded } = usePlaythrough();
 	const { ui } = useUiSettings();
 	const isDesktop = useIsDesktop();
 	const [sheetOpen, setSheetOpen] = useState(false);
 
-	const triggerName = !isLoaded ? "Loading" : (activePlaythrough?.name ?? "No chief yet");
+	const triggerName = !isLoaded ? t("loading") : (activePlaythrough?.name ?? t("noChiefYet"));
 	const triggerDetail = activePlaythrough
 		? describeChief(activePlaythrough, ui.furnaceFullLabels)
 		: "";
@@ -120,9 +123,9 @@ export function ChiefSwitcher({ onNavigate }: { onNavigate?: () => void }) {
 
 	return (
 		<div className="flex flex-col gap-1.5">
-			<SectionLabel className="text-sb-muted">Chief</SectionLabel>
+			<SectionLabel className="text-sb-muted">{t("sectionLabel")}</SectionLabel>
 			{isDesktop ? (
-				<Menu label="Switch chief" trigger={({ props }) => renderTrigger(props)}>
+				<Menu label={t("switchChief")} trigger={({ props }) => renderTrigger(props)}>
 					{(close) => <ChiefChoices inMenu close={close} onNavigate={onNavigate} />}
 				</Menu>
 			) : (
@@ -134,7 +137,7 @@ export function ChiefSwitcher({ onNavigate }: { onNavigate?: () => void }) {
 					<Dialog
 						open={sheetOpen}
 						onClose={() => setSheetOpen(false)}
-						title="Switch chief"
+						title={t("switchChief")}
 					>
 						<div className="-mx-2 flex flex-col gap-0.5">
 							<ChiefChoices

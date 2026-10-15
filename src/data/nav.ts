@@ -28,84 +28,114 @@ import {
 
 export const APP_NAME = "Whiteout Survival Tracker";
 
+export type NavItemId =
+  | "overview"
+  | "buildings"
+  | "daybreakIsland"
+  | "heroes"
+  | "chiefGear"
+  | "experts"
+  | "pets"
+  | "troops"
+  | "research"
+  | "alliance"
+  | "facilities"
+  | "tech"
+  | "resources"
+  | "bonuses"
+  | "vip"
+  | "skins"
+  | "events"
+  | "tundraAlbum"
+  | "coreEvents"
+  | "dailies"
+  | "history"
+  | "wikiReference"
+  | "wikiTimeline"
+  | "settings";
+
+export type RouteId = NavItemId | "chiefs";
+
+export type NavGroupId = "chief" | "alliance" | "account" | "planner" | "wiki";
+
 export interface NavItem {
-  label: string;
+  id: NavItemId;
   href: string;
   icon: IconType;
   excludedPaths?: string[];
 }
 
 export interface NavGroup {
-  label: string | null;
+  id: NavGroupId | null;
   items: NavItem[];
 }
 
 export const navGroups: NavGroup[] = [
   {
-    label: null,
-    items: [{ label: "Overview", href: "/overview", icon: LuLayoutDashboard }],
+    id: null,
+    items: [{ id: "overview", href: "/overview", icon: LuLayoutDashboard }],
   },
   {
-    label: "Chief",
+    id: "chief",
     items: [
-      { label: "Buildings", href: "/buildings", icon: LuBuilding2 },
-      { label: "Daybreak Island", href: "/daybreak-island", icon: LuTreePine },
-      { label: "Heroes", href: "/heroes", icon: LuSwords },
-      { label: "Chief Gear", href: "/chief-gear", icon: LuShield },
-      { label: "Experts", href: "/experts", icon: LuGraduationCap },
-      { label: "Pets", href: "/pets", icon: LuPawPrint },
-      { label: "Troops", href: "/troops", icon: LuUsers },
-      { label: "Research", href: "/research", icon: LuFlaskConical },
+      { id: "buildings", href: "/buildings", icon: LuBuilding2 },
+      { id: "daybreakIsland", href: "/daybreak-island", icon: LuTreePine },
+      { id: "heroes", href: "/heroes", icon: LuSwords },
+      { id: "chiefGear", href: "/chief-gear", icon: LuShield },
+      { id: "experts", href: "/experts", icon: LuGraduationCap },
+      { id: "pets", href: "/pets", icon: LuPawPrint },
+      { id: "troops", href: "/troops", icon: LuUsers },
+      { id: "research", href: "/research", icon: LuFlaskConical },
     ],
   },
   {
-    label: "Alliance",
+    id: "alliance",
     items: [
-      { label: "Alliance", href: "/alliance", icon: LuHandshake },
-      { label: "Facilities", href: "/facilities", icon: LuWarehouse },
-      { label: "Tech", href: "/tech", icon: LuCpu },
+      { id: "alliance", href: "/alliance", icon: LuHandshake },
+      { id: "facilities", href: "/facilities", icon: LuWarehouse },
+      { id: "tech", href: "/tech", icon: LuCpu },
     ],
   },
   {
-    label: "Account",
+    id: "account",
     items: [
-      { label: "Resources", href: "/resources", icon: LuPackage },
-      { label: "Bonuses", href: "/bonuses", icon: LuTrendingUp },
-      { label: "VIP", href: "/vip", icon: LuCrown },
-      { label: "Skins", href: "/skins", icon: LuShirt },
-      { label: "Events", href: "/events", icon: LuCalendarDays },
-      { label: "Tundra Album", href: "/tundra-album", icon: LuImages },
+      { id: "resources", href: "/resources", icon: LuPackage },
+      { id: "bonuses", href: "/bonuses", icon: LuTrendingUp },
+      { id: "vip", href: "/vip", icon: LuCrown },
+      { id: "skins", href: "/skins", icon: LuShirt },
+      { id: "events", href: "/events", icon: LuCalendarDays },
+      { id: "tundraAlbum", href: "/tundra-album", icon: LuImages },
     ],
   },
   {
-    label: "Planner",
+    id: "planner",
     items: [
-      { label: "Core Events", href: "/core-events", icon: LuTarget },
-      { label: "Dailies", href: "/dailies", icon: LuListChecks },
-      { label: "History", href: "/history", icon: LuHistory },
+      { id: "coreEvents", href: "/core-events", icon: LuTarget },
+      { id: "dailies", href: "/dailies", icon: LuListChecks },
+      { id: "history", href: "/history", icon: LuHistory },
     ],
   },
   {
-    label: "Wiki",
+    id: "wiki",
     items: [
       {
-        label: "Reference",
+        id: "wikiReference",
         href: "/wiki",
         icon: LuBookOpen,
         excludedPaths: ["/wiki/timeline"],
       },
-      { label: "Timeline", href: "/wiki/timeline", icon: LuMilestone },
+      { id: "wikiTimeline", href: "/wiki/timeline", icon: LuMilestone },
     ],
   },
 ];
 
 export const settingsNavItem: NavItem = {
-  label: "Settings",
+  id: "settings",
   href: "/settings",
   icon: LuSettings,
 };
 
-export const chiefsRoute = { label: "Chiefs", href: "/chiefs" };
+export const chiefsRoute = { id: "chiefs" as const, href: "/chiefs" };
 
 const navItems = [
   ...navGroups.flatMap((group) => group.items),
@@ -121,10 +151,10 @@ export const isNavItemActive = (item: NavItem, pathname: string) =>
   isPathWithin(pathname, item.href) &&
   !item.excludedPaths?.some((excluded) => isPathWithin(pathname, excluded));
 
-export const getPageTitle = (pathname: string) => {
+export const getPageRouteId = (pathname: string) => {
   const matches = routes.filter((route) => isPathWithin(pathname, route.href));
   const closest = matches.sort((a, b) => b.href.length - a.href.length)[0];
-  return closest?.label ?? APP_NAME;
+  return closest?.id ?? null;
 };
 
 const editDistance = (a: string, b: string) => {

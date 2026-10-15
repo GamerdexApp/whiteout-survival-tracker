@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { useId } from "react";
 import type { ReactNode } from "react";
 
@@ -20,6 +21,7 @@ export function Switch({
 	describedBy,
 	label,
 }: SwitchProps) {
+	const t = useTranslations("ui.switch");
 	return (
 		<button
 			type="button"
@@ -40,7 +42,7 @@ export function Switch({
 					checked ? "bg-on-primary left-[22px]" : "bg-muted left-0.5"
 				}`}
 			/>
-			<span className="sr-only">{checked ? "On" : "Off"}</span>
+			<span className="sr-only">{checked ? t("on") : t("off")}</span>
 		</button>
 	);
 }

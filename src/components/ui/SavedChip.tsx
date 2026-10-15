@@ -1,21 +1,28 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 import { usePlaythrough } from "@/lib/contexts/PlaythroughContext";
+import { formatNumber, formatTime } from "@/lib/format";
 
 const REFRESH_MS = 30_000;
 const MINUTE_MS = 60_000;
 
-const formatSaved = (savedAt: Date | null, now: number) => {
-	if (!savedAt) return "Saves automatically";
+type SavedTranslator = ReturnType<typeof useTranslations<"ui.savedChip">>;
+
+const formatSaved = (t: SavedTranslator, savedAt: Date | null, now: number) => {
+	if (!savedAt) return t("automatic");
 
 	const elapsed = now - savedAt.getTime();
-	if (elapsed < MINUTE_MS) return "Saved just now";
-	if (elapsed < 60 * MINUTE_MS) return `Saved ${Math.floor(elapsed / MINUTE_MS)} min ago`;
-	return `Saved ${savedAt.toLocaleTimeString([], { hour: "numeric", minute: "2-digit" })}`;
+	if (elapsed < MINUTE_MS) return t("justNow");
+	if (elapsed < 60 * MINUTE_MS) {
+		return t("minutesAgo", { count: formatNumber(Math.floor(elapsed / MINUTE_MS)) });
+	}
+	return t("at", { time: formatTime(savedAt) });
 };
 
 export function useSavedLabel() {
+	const t = useTranslations("ui.savedChip");
 	const { lastSavedAt, saveFailed } = usePlaythrough();
 	const [now, setNow] = useState(() => Date.now());
 
@@ -24,8 +31,8 @@ export function useSavedLabel() {
 		return () => clearInterval(timer);
 	}, []);
 
-	if (saveFailed) return "Not saved, storage is full";
-	return formatSaved(lastSavedAt, Math.max(now, lastSavedAt?.getTime() ?? 0));
+	if (saveFailed) return t("failed");
+	return formatSaved(t, lastSavedAt, Math.max(now, lastSavedAt?.getTime() ?? 0));
 }
 
 export function SavedChip() {

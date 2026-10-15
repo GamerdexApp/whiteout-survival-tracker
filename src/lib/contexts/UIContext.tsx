@@ -35,7 +35,7 @@ export function UIProvider({ children }: { children: React.ReactNode }) {
 export function useUI() {
 	const context = useContext(UIContext);
 	if (context === undefined) {
-		throw new Error("useUI must be used within a UIProvider");
+		throw new Error("useUI must be used within a UIProvider"); // i18n-ignore
 	}
 	return context;
 }

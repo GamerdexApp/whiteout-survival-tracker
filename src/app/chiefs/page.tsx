@@ -1,10 +1,12 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { useRouter, useSearchParams } from "next/navigation";
 import { Suspense, useState } from "react";
 import { LuPlus, LuSearch } from "react-icons/lu";
 import type { ChiefValues, Playthrough } from "@/types/app";
 import { usePlaythrough } from "@/lib/contexts/PlaythroughContext";
+import { formatNumber } from "@/lib/format";
 import { downloadBackup } from "@/service/backup";
 import { addChief, removeChief, restoreChief, updateChief } from "@/service/chiefs";
 import { ChiefCard } from "@/comps/chiefs/ChiefCard";
@@ -20,11 +22,7 @@ import { useToast } from "@/comps/ui/Toast";
 
 type SortKey = "lastModified" | "createdAt" | "name";
 
-const sortOptions: { id: SortKey; label: string }[] = [
-	{ id: "lastModified", label: "Last modified" },
-	{ id: "createdAt", label: "Date created" },
-	{ id: "name", label: "Name" },
-];
+const sortKeys: SortKey[] = ["lastModified", "createdAt", "name"];
 
 const compareBy: Record<SortKey, (a: Playthrough, b: Playthrough) => number> = {
 	lastModified: (a, b) => b.lastModified.localeCompare(a.lastModified),
@@ -32,18 +30,19 @@ const compareBy: Record<SortKey, (a: Playthrough, b: Playthrough) => number> = {
 	name: (a, b) => a.name.localeCompare(b.name),
 };
 
-const countLabel = (count: number) => `${count} ${count === 1 ? "chief" : "chiefs"}`;
-
 function NewChiefButton() {
+	const t = useTranslations("chiefs.page");
 	return (
 		<ButtonLink href="/chiefs?new=1" scroll={false} variant="primary">
 			<LuPlus size={16} aria-hidden="true" />
-			New chief
+			{t("newChief")}
 		</ButtonLink>
 	);
 }
 
 function ChiefsContent() {
+	const t = useTranslations("chiefs.page");
+	const tChiefs = useTranslations("chiefs");
 	const router = useRouter();
 	const showToast = useToast();
 	const isCreating = useSearchParams().get("new") === "1";
@@ -53,6 +52,8 @@ function ChiefsContent() {
 	const [sortKey, setSortKey] = useState<SortKey>("lastModified");
 	const [editingChief, setEditingChief] = useState<Playthrough | null>(null);
 	const [deletingChief, setDeletingChief] = useState<Playthrough | null>(null);
+
+	const countLabel = (count: number) => tChiefs("count", { count, amount: formatNumber(count) });
 
 	const query = search.trim().toLowerCase();
 	const visibleChiefs = playthroughs
@@ -75,7 +76,7 @@ function ChiefsContent() {
 	const exportBackup = () => {
 		showToast({
 			variant: "success",
-			title: "Backup downloaded",
+			title: t("toasts.backupTitle"),
 			message: downloadBackup(appData),
 		});
 	};
@@ -86,9 +87,9 @@ function ChiefsContent() {
 		setDeletingChief(null);
 		showToast({
 			variant: "warning",
-			title: `${chief.name} deleted`,
+			title: t("toasts.deleted", { name: chief.name }),
 			action: {
-				label: "Undo",
+				label: t("toasts.undo"),
 				onAction: () => updateData((current) => restoreChief(current, chief, wasActive)),
 			},
 		});
@@ -97,18 +98,21 @@ function ChiefsContent() {
 	const subline = !isLoaded
 		? undefined
 		: playthroughs.length === 0
-			? "No chiefs yet."
-			: `${countLabel(playthroughs.length)}.${activePlaythrough ? ` ${activePlaythrough.name} is active.` : ""}`;
+			? t("subline.none")
+			: activePlaythrough
+				? t("subline.withActive", {
+						chiefs: countLabel(playthroughs.length),
+						name: activePlaythrough.name,
+					})
+				: t("subline.total", { chiefs: countLabel(playthroughs.length) });
 
 	return (
 		<>
-			<PageHeader title="Chiefs" subline={subline} actions={<NewChiefButton />} />
+			<PageHeader title={t("title")} subline={subline} actions={<NewChiefButton />} />
 
 			{!isLoaded && (
 				<>
-					<p className="text-muted">
-						Reading saved data from this browser. The list appears when it is ready.
-					</p>
+					<p className="text-muted">{t("loading")}</p>
 					<div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
 						<Skeleton className="h-48" />
 						<Skeleton className="h-48" />
@@ -119,14 +123,12 @@ function ChiefsContent() {
 
 			{isLoaded && playthroughs.length === 0 && (
 				<EmptyState
-					title="No chiefs yet"
-					description="Create a chief to track buildings, heroes, gear, research and your upgrade plan. Everything stays in this browser."
+					title={t("empty.title")}
+					description={t("empty.description")}
 					actions={
 						<>
 							<NewChiefButton />
-							<ButtonLink href="/settings?tab=data">
-								Restore a backup in Settings
-							</ButtonLink>
+							<ButtonLink href="/settings?tab=data">{t("empty.restore")}</ButtonLink>
 						</>
 					}
 				/>
@@ -139,22 +141,22 @@ function ChiefsContent() {
 							<Input
 								leadingIcon={<LuSearch size={16} />}
 								type="search"
-								aria-label="Search by name"
-								placeholder="Search by name"
+								aria-label={t("search.label")}
+								placeholder={t("search.label")}
 								value={search}
 								onChange={(event) => setSearch(event.target.value)}
 							/>
 						</div>
 						<label className="flex items-center gap-2 lg:w-64">
-							<span className="text-muted shrink-0">Sort by</span>
+							<span className="text-muted shrink-0">{t("sort.label")}</span>
 							<div className="flex-1">
 								<Select
 									value={sortKey}
 									onChange={(event) => setSortKey(event.target.value as SortKey)}
 								>
-									{sortOptions.map((option) => (
-										<option key={option.id} value={option.id}>
-											{option.label}
+									{sortKeys.map((id) => (
+										<option key={id} value={id}>
+											{t(`sort.options.${id}`)}
 										</option>
 									))}
 								</Select>
@@ -162,14 +164,21 @@ function ChiefsContent() {
 						</label>
 					</div>
 					<p role="status" className="text-muted">
-						Showing {visibleChiefs.length} of {countLabel(playthroughs.length)}
+						{t("search.showing", {
+							shown: formatNumber(visibleChiefs.length),
+							total: countLabel(playthroughs.length),
+						})}
 					</p>
 
 					{visibleChiefs.length === 0 ? (
 						<EmptyState
-							title={`No chiefs match “${search.trim()}”`}
-							description={`Check the spelling or clear the search to see all ${playthroughs.length} chiefs.`}
-							actions={<Button onClick={() => setSearch("")}>Clear search</Button>}
+							title={t("search.noMatchTitle", { search: search.trim() })}
+							description={t("search.noMatchDescription", {
+								count: formatNumber(playthroughs.length),
+							})}
+							actions={
+								<Button onClick={() => setSearch("")}>{t("search.clear")}</Button>
+							}
 						/>
 					) : (
 						<div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">

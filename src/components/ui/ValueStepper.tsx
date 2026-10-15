@@ -1,3 +1,6 @@
+"use client";
+
+import { useTranslations } from "next-intl";
 import { LuMinus, LuPlus } from "react-icons/lu";
 import { IconButton } from "./IconButton";
 
@@ -29,12 +32,13 @@ export function ValueStepper({
 	suffix,
 	disabled = false,
 }: ValueStepperProps) {
+	const t = useTranslations("ui.stepper");
 	return (
 		<span className="relative inline-flex items-center gap-1">
 			{value > min ? (
 				<IconButton
 					compact
-					label={`Lower ${label}`}
+					label={t("lower", { label })}
 					disabled={disabled}
 					onClick={() => onChange(value - 1)}
 					className={BUTTON_CLASSES}
@@ -45,13 +49,13 @@ export function ValueStepper({
 				<span aria-hidden="true" className={SPACER_CLASSES} />
 			)}
 			<span className="min-w-8 text-center font-mono font-medium">
-				<span className="sr-only">{label}, </span>
+				<span className="sr-only">{t("labelPrefix", { label })}</span>
 				{display ?? value}
 			</span>
 			{value < max ? (
 				<IconButton
 					compact
-					label={`Raise ${label}`}
+					label={t("raise", { label })}
 					disabled={disabled}
 					onClick={() => onChange(value + 1)}
 					className={BUTTON_CLASSES}

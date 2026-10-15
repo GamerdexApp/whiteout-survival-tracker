@@ -12,7 +12,9 @@ export function BrandMark({ onNavigate }: { onNavigate?: () => void }) {
 				className="block size-11 shrink-0 rounded-lg"
 			/>
 			<span className="font-brand text-sb-text flex flex-col text-[17px] leading-[1.05]">
+				{/* i18n-ignore */}
 				<span>Whiteout Survival</span>
+				{/* i18n-ignore */}
 				<span className="text-sb-muted">Tracker</span>
 			</span>
 			<span className="sr-only">{APP_NAME}</span>

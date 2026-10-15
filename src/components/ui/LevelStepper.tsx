@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { LuMinus, LuPlus } from "react-icons/lu";
 import { IconButton } from "./IconButton";
 
@@ -33,6 +34,7 @@ export function LevelStepper({
 	limitValue,
 	wide = false,
 }: LevelStepperProps) {
+	const t = useTranslations("ui.stepper");
 	const index = stops.findIndex((stop) => stop.value === value);
 	const stepTo = (target: number) => onChange(stops[target].value);
 	const limitIndex =
@@ -43,7 +45,7 @@ export function LevelStepper({
 	return (
 		<div className="inline-flex items-center gap-1">
 			<IconButton
-				label={`Lower ${label}`}
+				label={t("lower", { label })}
 				disabled={disabled || index <= 0}
 				onClick={() => stepTo(index - 1)}
 				className="border-line bg-surface hover:bg-tint border-[1.5px] disabled:opacity-40"
@@ -64,7 +66,7 @@ export function LevelStepper({
 				))}
 			</select>
 			<IconButton
-				label={`Raise ${label}`}
+				label={t("raise", { label })}
 				disabled={disabled || index >= limitIndex}
 				onClick={() => stepTo(index + 1)}
 				className="border-line bg-surface hover:bg-tint border-[1.5px] disabled:opacity-40"

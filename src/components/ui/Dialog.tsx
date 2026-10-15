@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { useEffect, useId, useRef } from "react";
 import type { ReactNode } from "react";
 import { LuX } from "react-icons/lu";
@@ -37,6 +38,7 @@ export function Dialog({
 	variant = "modal",
 	children,
 }: DialogProps) {
+	const t = useTranslations("ui");
 	const dialogRef = useRef<HTMLDialogElement>(null);
 	const titleId = useId();
 
@@ -75,7 +77,7 @@ export function Dialog({
 							{description && <p className="text-muted">{description}</p>}
 						</div>
 						<IconButton
-							label="Close"
+							label={t("close")}
 							onClick={onClose}
 							className="text-muted hover:bg-tint -mt-1 -mr-2"
 						>

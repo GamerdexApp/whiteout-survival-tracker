@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import type { Playthrough } from "@/types/app";
 import { useUiSettings } from "@/lib/hooks/useUiSettings";
 import { describeChief, formatShortDate } from "@/service/chiefs";
@@ -20,20 +21,21 @@ export function DeleteChiefDialog({
 	onExportBackup,
 	onConfirm,
 }: DeleteChiefDialogProps) {
+	const t = useTranslations("chiefs.delete");
 	const { ui } = useUiSettings();
 
 	return (
 		<Dialog
 			open={chief !== null}
 			onClose={onClose}
-			title="Delete chief"
+			title={t("title")}
 			footer={
 				<>
 					<Button data-autofocus onClick={onClose}>
-						Cancel
+						{t("cancel")}
 					</Button>
 					<Button variant="danger" onClick={() => chief && onConfirm(chief)}>
-						Delete chief
+						{t("confirmButton")}
 					</Button>
 				</>
 			}
@@ -41,23 +43,25 @@ export function DeleteChiefDialog({
 			{chief && (
 				<>
 					<p>
-						Are you sure you want to delete &ldquo;<strong>{chief.name}</strong>&rdquo;?
+						{t.rich("confirm", {
+							name: chief.name,
+							strong: (chunks) => <strong>{chunks}</strong>,
+						})}
 					</p>
 					<p className="text-muted">
-						{describeChief(chief, ui.furnaceFullLabels)} · created{" "}
-						{formatShortDate(chief.createdAt)}
+						{t("summary", {
+							details: describeChief(chief, ui.furnaceFullLabels),
+							date: formatShortDate(chief.createdAt),
+						})}
 					</p>
-					<Note>
-						This removes the chief and all of its levels, goals and notes from this
-						device. There is no way to bring it back after the 10 second Undo ends.
-					</Note>
+					<Note>{t("note")}</Note>
 					<div>
 						<Button
 							variant="ghost"
 							className="text-link -ml-4"
 							onClick={onExportBackup}
 						>
-							Export a backup first
+							{t("exportBackup")}
 						</Button>
 					</div>
 				</>

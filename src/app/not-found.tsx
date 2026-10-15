@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useIsHydrated } from "@/lib/hooks/useIsHydrated";
@@ -9,13 +10,14 @@ import { Card } from "@/comps/ui/Card";
 import { SectionLabel } from "@/comps/ui/SectionLabel";
 
 const jumpLinks = [
-	{ label: "Overview", href: "/overview" },
-	{ label: "Chiefs", href: "/chiefs" },
-	{ label: "Buildings", href: "/buildings" },
-	{ label: "Settings", href: "/settings" },
-];
+	{ id: "overview", href: "/overview" },
+	{ id: "chiefs", href: "/chiefs" },
+	{ id: "buildings", href: "/buildings" },
+	{ id: "settings", href: "/settings" },
+] as const;
 
 export default function NotFound() {
+	const t = useTranslations("shell");
 	const pathname = usePathname();
 	const isHydrated = useIsHydrated();
 	const suggestion = isHydrated ? suggestRoute(pathname) : null;
@@ -23,31 +25,35 @@ export default function NotFound() {
 	return (
 		<Card className="flex flex-col items-start gap-4 p-6">
 			<SectionLabel className="text-muted">404</SectionLabel>
-			<h1 className="text-2xl font-semibold">This page does not exist</h1>
-			<p className="text-muted">
-				The link may be old or mistyped. Your chiefs are safe and nothing was changed.
-			</p>
+			<h1 className="text-2xl font-semibold">{t("notFound.title")}</h1>
+			<p className="text-muted">{t("notFound.description")}</p>
 			{isHydrated && (
 				<code className="bg-track rounded-md px-2 py-1 font-mono text-xs">{pathname}</code>
 			)}
 			{suggestion && (
 				<p>
-					Did you mean{" "}
-					<Link href={suggestion.href} className="text-link font-medium underline">
-						{suggestion.label}
-					</Link>
-					?
+					{t.rich("notFound.didYouMean", {
+						name: t(`nav.items.${suggestion.id}`),
+						link: (chunks) => (
+							<Link
+								href={suggestion.href}
+								className="text-link font-medium underline"
+							>
+								{chunks}
+							</Link>
+						),
+					})}
 				</p>
 			)}
 			<ButtonLink href="/overview" variant="primary">
-				Go to Overview
+				{t("notFound.goToOverview")}
 			</ButtonLink>
 			<div className="flex flex-col gap-2">
-				<SectionLabel className="text-muted">Or jump to</SectionLabel>
+				<SectionLabel className="text-muted">{t("notFound.jumpTo")}</SectionLabel>
 				<div className="flex flex-wrap gap-2">
 					{jumpLinks.map((link) => (
 						<ButtonLink key={link.href} href={link.href}>
-							{link.label}
+							{t(`nav.items.${link.id}`)}
 						</ButtonLink>
 					))}
 				</div>

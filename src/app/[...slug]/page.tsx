@@ -1,9 +1,8 @@
+import { translator } from "@/i18n/formatter";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { routes } from "@/data/nav";
-import { PageHeader } from "@/comps/layout/PageHeader";
-import { Badge } from "@/comps/ui/Badge";
-import { Card } from "@/comps/ui/Card";
+import { PlaceholderCard } from "./PlaceholderCard";
 
 const buildPhaseByHref: Record<string, number> = {
 	"/troops": 7,
@@ -42,23 +41,12 @@ export const dynamicParams = false;
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
 	const route = await findRoute(params);
-	return { title: route?.label };
+	return { title: route && translator("shell")(`nav.items.${route.id}`) };
 }
 
 export default async function PlaceholderPage({ params }: PageProps) {
 	const route = await findRoute(params);
 	if (!route) notFound();
 
-	return (
-		<>
-			<PageHeader title={route.label} />
-			<Card className="flex flex-col items-start gap-3 p-6">
-				<Badge tone="locked">Phase {buildPhaseByHref[route.href]}</Badge>
-				<h2 className="text-lg font-semibold">{route.label} is not built yet</h2>
-				<p className="text-muted">
-					This page arrives in phase {buildPhaseByHref[route.href]} of the build.
-				</p>
-			</Card>
-		</>
-	);
+	return <PlaceholderCard routeId={route.id} phase={buildPhaseByHref[route.href]} />;
 }

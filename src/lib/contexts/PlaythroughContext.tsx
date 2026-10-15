@@ -1,5 +1,6 @@
 "use client";
 
+import { translator } from "@/i18n/formatter";
 import React, { createContext, useContext, useState, useSyncExternalStore } from "react";
 import type { AppData } from "@/types/app";
 import type { PlaythroughContextType } from "@/types/contexts";
@@ -30,11 +31,15 @@ export function PlaythroughProvider({ children }: { children: React.ReactNode })
 		if (saved) {
 			setLastSavedAt(new Date());
 		} else {
+			const t = translator("common");
 			showToast({
 				variant: "error",
-				title: "Not saved",
-				message: "Browser storage is full. Export a backup now.",
-				action: { label: "Export backup", onAction: () => downloadBackup(next) },
+				title: t("saveFailed.title"),
+				message: t("saveFailed.message"),
+				action: {
+					label: t("saveFailed.exportBackup"),
+					onAction: () => downloadBackup(next),
+				},
 			});
 		}
 		return saved ? previous : null;
@@ -74,7 +79,7 @@ export function PlaythroughProvider({ children }: { children: React.ReactNode })
 export function usePlaythrough() {
 	const context = useContext(PlaythroughContext);
 	if (context === undefined) {
-		throw new Error("usePlaythrough must be used within a PlaythroughProvider");
+		throw new Error("usePlaythrough must be used within a PlaythroughProvider"); // i18n-ignore
 	}
 	return context;
 }

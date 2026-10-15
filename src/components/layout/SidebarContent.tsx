@@ -1,8 +1,10 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { usePlaythrough } from "@/lib/contexts/PlaythroughContext";
+import { formatNumber } from "@/lib/format";
 import { constructionJobs, researchJobs } from "@/service/queues";
 import type { NavItem } from "@/data/nav";
 import { isNavItemActive, navGroups, settingsNavItem } from "@/data/nav";
@@ -31,6 +33,7 @@ function SidebarLink({
 	count?: number;
 	onNavigate?: () => void;
 }) {
+	const t = useTranslations("shell.nav");
 	const pathname = usePathname();
 	const active = isNavItemActive(item, pathname);
 	const Icon = item.icon;
@@ -47,14 +50,14 @@ function SidebarLink({
 			}`}
 		>
 			<Icon size={16} aria-hidden="true" className="shrink-0" />
-			<span className="flex-1">{item.label}</span>
+			<span className="flex-1">{t(`items.${item.id}`)}</span>
 			{count > 0 && (
 				<span
 					className={`font-mono text-xs ${active ? "text-sb-active-text" : "text-sb-muted"}`}
 				>
-					<span aria-hidden="true">{count}</span>
+					<span aria-hidden="true">{formatNumber(count)}</span>
 					<span className="sr-only">
-						, {count} {count === 1 ? "upgrade" : "upgrades"} running
+						{t("upgradesRunning", { count, amount: formatNumber(count) })}
 					</span>
 				</span>
 			)}
@@ -63,18 +66,22 @@ function SidebarLink({
 }
 
 export function SidebarContent({ onNavigate }: { onNavigate?: () => void }) {
+	const t = useTranslations("shell.nav");
 	const queueCounts = useQueueCounts();
 
 	return (
 		<div className="flex min-h-0 flex-1 flex-col gap-4 [--ring:var(--color-sb-active-bg)]">
 			<BrandMark onNavigate={onNavigate} />
 			<ChiefSwitcher onNavigate={onNavigate} />
-			<nav aria-label="Main" className="flex min-h-0 flex-1 flex-col gap-0.5 overflow-y-auto">
+			<nav
+				aria-label={t("main")}
+				className="flex min-h-0 flex-1 flex-col gap-0.5 overflow-y-auto"
+			>
 				{navGroups.map((group) => (
-					<div key={group.label ?? "top"} className="flex flex-col gap-0.5">
-						{group.label && (
+					<div key={group.id ?? "top"} className="flex flex-col gap-0.5">
+						{group.id && (
 							<SectionLabel className="text-sb-muted mt-2 px-2.5 pb-0.5">
-								{group.label}
+								{t(`groups.${group.id}`)}
 							</SectionLabel>
 						)}
 						{group.items.map((item) => (

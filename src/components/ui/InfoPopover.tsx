@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { useCallback, useId, useRef, useState } from "react";
 import type { ReactNode } from "react";
 import { LuCircleHelp, LuX } from "react-icons/lu";
@@ -7,6 +8,7 @@ import { useDismiss } from "@/lib/hooks/useDismiss";
 import { IconButton } from "./IconButton";
 
 export function InfoPopover({ label, children }: { label: string; children: ReactNode }) {
+	const t = useTranslations("ui");
 	const [open, setOpen] = useState(false);
 	const containerRef = useRef<HTMLSpanElement>(null);
 	const panelId = useId();
@@ -35,7 +37,7 @@ export function InfoPopover({ label, children }: { label: string; children: Reac
 					<div className="flex items-start justify-between gap-2">
 						<span className="font-medium">{label}</span>
 						<IconButton
-							label="Close"
+							label={t("close")}
 							onClick={close}
 							className="text-muted hover:bg-tint -mt-2 -mr-2 size-8 lg:size-7"
 						>

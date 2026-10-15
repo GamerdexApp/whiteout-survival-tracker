@@ -6,11 +6,9 @@ export const STATE_NUMBER_MAX = 99999;
 export const MAX_HERO_GENERATION = 17;
 export const DEFAULT_HERO_GENERATION = 1;
 
-export const coreEvents: { id: CoreEventId; label: string }[] = [
-  { id: "svs", label: "SvS" },
-  { id: "showdown", label: "Alliance Showdown" },
-  { id: "king", label: "King of Icefield" },
-  { id: "hall", label: "Hall of Chief" },
+export const allCoreEventIds: CoreEventId[] = [
+  "svs",
+  "showdown",
+  "king",
+  "hall",
 ];
-
-export const allCoreEventIds = coreEvents.map((event) => event.id);

@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import type { ReactNode } from "react";
 import type { Playthrough } from "@/types/app";
 import { usePlaythrough } from "@/lib/contexts/PlaythroughContext";
@@ -18,6 +19,7 @@ interface ChiefGateProps {
  * saved data is read and the empty state when there is no chief.
  */
 export function ChiefGate({ title, children }: ChiefGateProps) {
+	const t = useTranslations("shell.chiefGate");
 	const { activePlaythrough, isLoaded } = usePlaythrough();
 
 	if (!isLoaded) {
@@ -34,11 +36,11 @@ export function ChiefGate({ title, children }: ChiefGateProps) {
 			<>
 				<PageHeader title={title} />
 				<EmptyState
-					title="No chief selected"
-					description="Create a chief to start tracking. Everything stays in this browser."
+					title={t("emptyTitle")}
+					description={t("emptyDescription")}
 					actions={
 						<ButtonLink href="/chiefs?new=1" variant="primary">
-							New chief
+							{t("newChief")}
 						</ButtonLink>
 					}
 				/>
