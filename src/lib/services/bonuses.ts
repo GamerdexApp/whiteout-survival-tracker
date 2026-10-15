@@ -9,6 +9,7 @@ import { entertainmentBuildings } from "@/data/game/buildings";
 import { levelledBuildingLevels } from "./buildings";
 
 const CONSTRUCTION_SPEED_STAT = "construction-speed";
+const RESEARCH_SPEED_STAT = "research-speed";
 
 /**
  * Reads the chief state that the other pages save and shapes it for `calculateBuffs`. A page adds
@@ -31,12 +32,16 @@ export const chiefBuffs = (chief: Playthrough): BuffCalculation =>
 /**
  * The construction speed percent that the Plan on Buildings starts from.
  */
-export const constructionSpeedBonusPercent = (chief: Playthrough) =>
+const speedPercentOf = (chief: Playthrough, statKey: string) =>
   chiefBuffs(chief).categories.find(
-    (category) =>
-      category.statKey === CONSTRUCTION_SPEED_STAT &&
-      category.unit === "percent",
+    (category) => category.statKey === statKey && category.unit === "percent",
   )?.total ?? 0;
+
+export const constructionSpeedBonusPercent = (chief: Playthrough) =>
+  speedPercentOf(chief, CONSTRUCTION_SPEED_STAT);
+
+export const researchSpeedBonusPercent = (chief: Playthrough) =>
+  speedPercentOf(chief, RESEARCH_SPEED_STAT);
 
 const numberFormat = new Intl.NumberFormat("en-US", {
   maximumFractionDigits: 2,

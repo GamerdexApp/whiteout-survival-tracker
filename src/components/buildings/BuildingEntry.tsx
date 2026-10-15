@@ -1,9 +1,11 @@
 "use client";
 
+import type { ConstructionJob } from "@/types/app";
 import { formatNumber } from "@/lib/format";
 import { useIsDesktop } from "@/lib/hooks/useMediaQuery";
 import type { BuildingView } from "@/service/buildings";
 import { buildingNotes, isEntertainment, SHELTER_ID } from "@/data/game/buildings";
+import { TimeLeftPill } from "@/comps/queues/TimeLeftPill";
 import { Button } from "@/comps/ui/Button";
 import { LevelStepper } from "@/comps/ui/LevelStepper";
 import { ProgressBar } from "@/comps/ui/ProgressBar";
@@ -18,9 +20,14 @@ export interface BuildingEntryProps {
 	onBuiltChange: (buildingId: string, built: boolean) => void;
 	onOpenLevels: (buildingId: string) => void;
 	onOpenShelters: () => void;
+	job: ConstructionJob | undefined;
+	canStart: boolean;
+	onStartUpgrade: (buildingId: string) => void;
+	onManageUpgrade: (builder: number) => void;
 }
 
-export const DESKTOP_COLUMNS = "grid-cols-[minmax(0,1.6fr)_176px_72px_128px_minmax(0,1.4fr)_80px]";
+export const DESKTOP_COLUMNS =
+	"grid-cols-[minmax(0,1.6fr)_176px_72px_128px_minmax(0,1.4fr)_104px_80px]";
 
 const levelledSubline = (view: BuildingView) => {
 	const { building } = view;
@@ -126,7 +133,17 @@ function CurrentControl({
 
 export function BuildingEntry(props: BuildingEntryProps) {
 	const isDesktop = useIsDesktop();
-	const { view, onLevelChange, onBuiltChange, onOpenLevels, onOpenShelters } = props;
+	const {
+		view,
+		onLevelChange,
+		onBuiltChange,
+		onOpenLevels,
+		onOpenShelters,
+		job,
+		canStart,
+		onStartUpgrade,
+		onManageUpgrade,
+	} = props;
 	const entertainment = isEntertainment(view.building);
 	const dimmed = view.lockedBy ? "opacity-70" : "";
 	const levelsButton = (
@@ -137,6 +154,23 @@ export function BuildingEntry(props: BuildingEntryProps) {
 			Levels
 		</Button>
 	);
+
+	const upgrade = job ? (
+		<TimeLeftPill
+			job={job}
+			label={`${view.building.name} upgrading`}
+			onClick={() => onManageUpgrade(job.builder)}
+			fullWidth={!isDesktop}
+		/>
+	) : canStart ? (
+		<Button
+			className={isDesktop ? "" : "w-full"}
+			onClick={() => onStartUpgrade(view.building.id)}
+			aria-label={`Start upgrade of ${view.building.name}`}
+		>
+			{isDesktop ? "Start" : "Start upgrade"}
+		</Button>
+	) : null;
 
 	if (isDesktop) {
 		return (
@@ -169,6 +203,7 @@ export function BuildingEntry(props: BuildingEntryProps) {
 					)}
 					<span className="text-muted text-xs">{progressText(view)}</span>
 				</div>
+				<div className="flex justify-end">{upgrade}</div>
 				<div className="flex justify-end">{levelsButton}</div>
 			</li>
 		);
@@ -207,6 +242,7 @@ export function BuildingEntry(props: BuildingEntryProps) {
 			<span className="text-muted font-mono text-xs">
 				Power {powerText(view)} · Dev. index {developmentText(view)}
 			</span>
+			{upgrade}
 		</li>
 	);
 }

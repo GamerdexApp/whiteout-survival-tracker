@@ -75,3 +75,14 @@ export const constructionSpeedupMinutes = (chief: Playthrough) =>
   speedupStock(chief)
     .filter(({ type }) => type === "construction" || type === "general")
     .reduce((sum, stock) => sum + stock.minutes, 0);
+
+/**
+ * General speedups work on research, so a research plan counts both.
+ */
+export const researchSpeedupMinutes = (chief: Playthrough) =>
+  speedupStock(chief)
+    .filter(({ type }) => type === "research" || type === "general")
+    .reduce((sum, stock) => sum + stock.minutes, 0);
+
+export const minutesOfSpeedup = (chief: Playthrough, type: SpeedupType) =>
+  speedupStock(chief).find((stock) => stock.type === type)?.minutes ?? 0;

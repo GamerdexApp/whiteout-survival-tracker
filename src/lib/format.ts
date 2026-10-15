@@ -63,3 +63,18 @@ export const formatFurnaceShort = (label: string, fullLabels: boolean) => {
   const level = formatFurnaceLevel(label, fullLabels);
   return level.startsWith("FC ") ? level.replace(" ", "") : `F${level}`;
 };
+
+/**
+ * The time left on a running upgrade. At zero it says Ready to finish, because an upgrade never
+ * finishes by itself.
+ */
+export const formatTimeLeft = (seconds: number) =>
+  seconds === 0 ? "Ready to finish" : `${formatDuration(seconds)} left`;
+
+export const formatDateTime = (iso: string) =>
+  new Date(iso).toLocaleString("en-US", {
+    month: "short",
+    day: "numeric",
+    hour: "numeric",
+    minute: "2-digit",
+  });

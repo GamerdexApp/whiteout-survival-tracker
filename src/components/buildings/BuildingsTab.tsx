@@ -6,7 +6,9 @@ import type { Playthrough } from "@/types/app";
 import { usePlaythrough } from "@/lib/contexts/PlaythroughContext";
 import { formatFurnaceLevel, formatNumber } from "@/lib/format";
 import { useIsDesktop } from "@/lib/hooks/useMediaQuery";
+import { useNow } from "@/lib/hooks/useNow";
 import { useUiSettings } from "@/lib/hooks/useUiSettings";
+import { constructionSpeedBonusPercent } from "@/service/bonuses";
 import { applyDraft } from "@/service/buildingMassSet";
 import { withSavedPlan } from "@/service/buildingPlan";
 import type { BuildingFilters, BuildingView } from "@/service/buildings";
@@ -20,8 +22,26 @@ import {
 	withLevel,
 	withShelterLevels,
 } from "@/service/buildings";
+import {
+	builderSlots,
+	canStartUpgrade,
+	startConstruction,
+	upgradeOptions,
+} from "@/service/buildingUpgrades";
 import { updateChiefById } from "@/service/chiefs";
-import { buildingCategories, SHELTER_ID } from "@/data/game/buildings";
+import {
+	builderJob,
+	buildingJob,
+	cancelJob,
+	endsAtAfter,
+	finishConstruction,
+	withJobEndsAt,
+} from "@/service/queues";
+import type { StartPayload } from "@/service/queues";
+import { buildingCategories, findBuildingById, SHELTER_ID } from "@/data/game/buildings";
+import { ManageUpgradeFlyout } from "@/comps/queues/ManageUpgradeFlyout";
+import type { ManageTarget } from "@/comps/queues/ManageUpgradeFlyout";
+import { StartUpgradeFlyout } from "@/comps/queues/StartUpgradeFlyout";
 import { Button } from "@/comps/ui/Button";
 import { Card } from "@/comps/ui/Card";
 import { EmptyState } from "@/comps/ui/EmptyState";
@@ -29,6 +49,7 @@ import { Input } from "@/comps/ui/Input";
 import { SectionLabel } from "@/comps/ui/SectionLabel";
 import { StatTile } from "@/comps/ui/StatTile";
 import { useToast } from "@/comps/ui/Toast";
+import { BuildersStrip } from "./BuildersStrip";
 import { BuildingEntry, DESKTOP_COLUMNS } from "./BuildingEntry";
 import { FiltersFlyout } from "./FiltersFlyout";
 import { LevelsFlyout } from "./LevelsFlyout";
@@ -57,6 +78,10 @@ export function BuildingsTab({ chief }: { chief: Playthrough }) {
 	const [levelsBuildingId, setLevelsBuildingId] = useState<string | null>(null);
 	const [sheltersOpen, setSheltersOpen] = useState(false);
 	const [massEditOpen, setMassEditOpen] = useState(false);
+	const [startOpen, setStartOpen] = useState(false);
+	const [startInitialId, setStartInitialId] = useState<string | undefined>();
+	const [manageBuilder, setManageBuilder] = useState<number | null>(null);
+	const now = useNow();
 
 	const views = useMemo(() => buildViews(chief), [chief]);
 	const summary = useMemo(() => summarize(views), [views]);
@@ -76,6 +101,70 @@ export function BuildingsTab({ chief }: { chief: Playthrough }) {
 
 	const activeFilterCount = countActiveFilters(filters, ui.hideMaxed);
 
+	const options = useMemo(() => upgradeOptions(views, chief), [views, chief]);
+	const openStart = (buildingId?: string) => {
+		setStartInitialId(buildingId);
+		setStartOpen(true);
+	};
+
+	const startUpgrade = (payload: StartPayload) => {
+		const option = options.find((item) => item.id === payload.optionId);
+		if (!option) return;
+		if (!change((current) => startConstruction(current, option, payload))) return;
+		setStartOpen(false);
+		showToast({
+			variant: "success",
+			title: "Upgrade started",
+			message: `${option.name}, ${option.subtitle}.`,
+		});
+	};
+
+	const managedJob = manageBuilder === null ? undefined : builderJob(chief, manageBuilder);
+	const managedName = managedJob
+		? (findBuildingById(managedJob.buildingId)?.name ?? managedJob.buildingId)
+		: "";
+	const manageTarget: ManageTarget | null = managedJob
+		? {
+				title: managedName,
+				summary: `${managedName}, ${managedJob.from ?? "Not built"} to ${managedJob.to}`,
+				slotLabel: `Builder ${managedJob.builder}`,
+				finishText: `Finish upgrade sets ${managedName} to ${managedJob.to}, frees Builder ${managedJob.builder} and adds the upgrade to your History. At zero time left the building and the builder card say Ready to finish. Nothing finishes by itself, because you may have used speedups.`,
+				job: managedJob,
+			}
+		: null;
+
+	const finishManaged = () => {
+		if (!managedJob) return;
+		const before = chief;
+		if (!change((current) => finishConstruction(current, managedJob, new Date().toISOString())))
+			return;
+		setManageBuilder(null);
+		showToast({
+			variant: "success",
+			title: `${managedName} upgraded`,
+			message: `Now ${managedJob.to}. Added to History.`,
+			action: { label: "Undo", onAction: () => change(() => before) },
+		});
+	};
+
+	const cancelManaged = () => {
+		if (!managedJob) return;
+		const before = chief;
+		if (
+			!change((current) =>
+				cancelJob(current, { kind: "construction", builder: managedJob.builder })
+			)
+		)
+			return;
+		setManageBuilder(null);
+		showToast({
+			variant: "warning",
+			title: `${managedName} upgrade cancelled`,
+			message: "The level stays as it was. Fix your stock on Resources if needed.",
+			action: { label: "Undo", onAction: () => change(() => before) },
+		});
+	};
+
 	return (
 		<>
 			<p className="text-muted">
@@ -92,8 +181,11 @@ export function BuildingsTab({ chief }: { chief: Playthrough }) {
 						onChange={(event) => setFilters({ ...filters, search: event.target.value })}
 					/>
 				</div>
-				<div className="flex w-full gap-3 lg:w-auto">
-					<Button className="flex-1 lg:flex-none" onClick={() => setFiltersOpen(true)}>
+				<div className="flex w-full flex-wrap gap-3 lg:w-auto lg:flex-nowrap">
+					<Button
+						className="order-1 flex-1 lg:flex-none"
+						onClick={() => setFiltersOpen(true)}
+					>
 						<LuListFilter size={16} aria-hidden="true" className="max-[359px]:hidden" />
 						Filters
 						{activeFilterCount > 0 && (
@@ -102,13 +194,25 @@ export function BuildingsTab({ chief }: { chief: Playthrough }) {
 							</span>
 						)}
 					</Button>
-					<Button className="flex-1 lg:flex-none" onClick={() => setMassEditOpen(true)}>
+					<Button
+						className="order-2 flex-1 lg:flex-none"
+						onClick={() => setMassEditOpen(true)}
+					>
 						<LuPencilLine size={16} aria-hidden="true" className="max-[359px]:hidden" />
 						Mass edit
 					</Button>
+					{options.length > 0 && (
+						<Button
+							variant="secondary"
+							className="order-4 w-full lg:order-3 lg:w-auto"
+							onClick={() => openStart()}
+						>
+							Start upgrade
+						</Button>
+					)}
 					<Button
 						variant="primary"
-						className="flex-1 lg:flex-none"
+						className="order-3 flex-1 lg:order-4 lg:flex-none"
 						onClick={() => setPlanOpen(true)}
 					>
 						Plan
@@ -120,6 +224,7 @@ export function BuildingsTab({ chief }: { chief: Playthrough }) {
 				Plan. A goal equal to the current level means no goal. Steppers move one level at a
 				time along the game order.
 			</p>
+			<BuildersStrip chief={chief} onManage={setManageBuilder} />
 			<div className="grid grid-cols-2 gap-3 lg:grid-cols-3">
 				<StatTile
 					value={
@@ -175,6 +280,7 @@ export function BuildingsTab({ chief }: { chief: Playthrough }) {
 							<SectionLabel className="text-muted">
 								Progress and next level
 							</SectionLabel>
+							<SectionLabel className="text-muted">Upgrade</SectionLabel>
 							<span />
 						</div>
 					)}
@@ -205,6 +311,10 @@ export function BuildingsTab({ chief }: { chief: Playthrough }) {
 										}
 										onOpenLevels={setLevelsBuildingId}
 										onOpenShelters={() => setSheltersOpen(true)}
+										job={buildingJob(chief, view.building.id)}
+										canStart={canStartUpgrade(view, chief)}
+										onStartUpgrade={openStart}
+										onManageUpgrade={setManageBuilder}
 									/>
 								))}
 							</ul>
@@ -235,6 +345,39 @@ export function BuildingsTab({ chief }: { chief: Playthrough }) {
 						action: { label: "Undo", onAction: () => change(() => chief) },
 					});
 				}}
+			/>
+			<StartUpgradeFlyout
+				open={startOpen}
+				chief={chief}
+				description="Mark a building as upgrading"
+				selectLabel="Building to upgrade"
+				selectHelp="Only buildings you can start now are listed. Locked, maxed and running buildings are left out. Each upgrade uses one of the two builders."
+				timeLabel="Construction time"
+				speedLabel="Construction speed"
+				speedPercent={constructionSpeedBonusPercent(chief)}
+				slotLabel="Builder"
+				slotHelp="Pick an idle builder. A busy builder shows when it frees."
+				slots={builderSlots(chief, now)}
+				options={options}
+				initialOptionId={startInitialId}
+				onClose={() => setStartOpen(false)}
+				onStart={startUpgrade}
+			/>
+			<ManageUpgradeFlyout
+				target={manageTarget}
+				onClose={() => setManageBuilder(null)}
+				onSetSecondsLeft={(seconds) => {
+					if (manageBuilder === null) return;
+					change((current) =>
+						withJobEndsAt(
+							current,
+							{ kind: "construction", builder: manageBuilder },
+							endsAtAfter(new Date(), seconds)
+						)
+					);
+				}}
+				onFinish={finishManaged}
+				onCancel={cancelManaged}
 			/>
 			<ShelterDialog
 				open={sheltersOpen}

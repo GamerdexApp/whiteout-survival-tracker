@@ -1,28 +1,22 @@
-import type { BuildingCalculation } from "whiteout-survival-data";
 import Link from "next/link";
-import type { Playthrough } from "@/types/app";
-import { formatDuration, formatNumber } from "@/lib/format";
-import { speedupStock } from "@/service/inventory";
-import { resourceChecks, stockShortBy } from "@/service/planStock";
+import { formatNumber } from "@/lib/format";
+import { stockShortBy } from "@/service/planStock";
 import type { StockCheck } from "@/service/planStock";
 import { Badge } from "@/comps/ui/Badge";
 import { Card } from "@/comps/ui/Card";
 import { ProgressBar } from "@/comps/ui/ProgressBar";
 
 interface PlanStockCheckProps {
-	calculation: BuildingCalculation;
-	chief: Playthrough;
-	speedPercent: number;
+	checks: StockCheck[];
+	/** The line under the time row. It says which speedups count and how long the plan takes. */
+	timeNote: string;
 }
 
 const unitText = (check: StockCheck, value: number) =>
 	`${formatNumber(value)}${check.unit ? ` ${check.unit}` : ""}`;
 
-export function PlanStockCheck({ calculation, chief, speedPercent }: PlanStockCheckProps) {
-	const checks = resourceChecks(calculation, chief);
+export function PlanStockCheck({ checks, timeNote }: PlanStockCheckProps) {
 	const short = checks.filter((check) => stockShortBy(check) > 0);
-	const stock = speedupStock(chief);
-	const minutesOf = (type: string) => stock.find((entry) => entry.type === type)?.minutes ?? 0;
 
 	return (
 		<Card className="flex flex-col gap-3 p-4">
@@ -66,15 +60,7 @@ export function PlanStockCheck({ calculation, chief, speedPercent }: PlanStockCh
 										: `Short by ${unitText(check, shortBy)}`}
 								</span>
 							</div>
-							{check.unit && (
-								<p className="text-muted text-xs">
-									The plan takes {formatDuration(calculation.seconds)} after the{" "}
-									{speedPercent}% speed bonus. Your stock: Construction{" "}
-									{formatNumber(minutesOf("construction"))} min, General{" "}
-									{formatNumber(minutesOf("general"))} min. General speedups count
-									toward construction.
-								</p>
-							)}
+							{check.unit && <p className="text-muted text-xs">{timeNote}</p>}
 						</li>
 					);
 				})}

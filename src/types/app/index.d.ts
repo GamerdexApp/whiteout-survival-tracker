@@ -37,6 +37,45 @@ export interface BuildingPlan {
   savedAt: string;
 }
 
+export interface ResearchPlan {
+  goals: Record<string, number>;
+  stateBuff: boolean;
+  vicePresident: Appointment;
+  savedAt: string;
+}
+
+export type ResearchQueueId = "main" | "warAcademy";
+
+export interface UpgradeJob {
+  startedAt: string;
+  endsAt: string;
+}
+
+export interface ConstructionJob extends UpgradeJob {
+  builder: 1 | 2;
+  buildingId: string;
+  from: string | null;
+  to: string;
+  instance?: number;
+}
+
+export interface ResearchJob extends UpgradeJob {
+  queue: ResearchQueueId;
+  nodeId: string;
+  from: number;
+  to: number;
+}
+
+export interface UpgradeLogEntry {
+  at: string;
+  category: "building" | "research";
+  item: string;
+  from: string;
+  to: string;
+  cost: { itemId: string; amount: number }[];
+  power: number;
+}
+
 export interface Playthrough {
   id: string;
   name: string;
@@ -51,6 +90,10 @@ export interface Playthrough {
   facilities?: Record<string, { built?: boolean }>;
   buildingPlan?: BuildingPlan;
   inventory?: Record<string, number>;
+  research?: Record<string, { level: number }>;
+  researchPlan?: ResearchPlan;
+  queues?: { construction?: ConstructionJob[]; research?: ResearchJob[] };
+  upgradeLog?: UpgradeLogEntry[];
 }
 
 export interface AppData {

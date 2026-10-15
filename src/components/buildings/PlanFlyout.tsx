@@ -19,8 +19,11 @@ import {
 	runPlan,
 } from "@/service/buildingPlan";
 import { buildView, levelOrder } from "@/service/buildings";
+import { minutesOfSpeedup } from "@/service/inventory";
+import { resourceChecks } from "@/service/planStock";
 import { findBuildingById, levelledBuildings } from "@/data/game/buildings";
 import { findItem, RESOURCE_ITEM_IDS } from "@/data/game/items";
+import { PlanStockCheck } from "@/comps/queues/PlanStockCheck";
 import { Badge } from "@/comps/ui/Badge";
 import { Button } from "@/comps/ui/Button";
 import { Card } from "@/comps/ui/Card";
@@ -31,7 +34,6 @@ import { SectionLabel } from "@/comps/ui/SectionLabel";
 import { SegmentedControl } from "@/comps/ui/SegmentedControl";
 import { Select } from "@/comps/ui/Select";
 import { Switch } from "@/comps/ui/Switch";
-import { PlanStockCheck } from "./PlanStockCheck";
 
 interface PlanFlyoutProps {
 	open: boolean;
@@ -178,9 +180,8 @@ function PlanBody({ chief, rows, controls, onRowsChange, onControlsChange }: Pla
 			{result && !result.ok && <Note tone="warning">{result.error}</Note>}
 			{result?.ok && (
 				<PlanStockCheck
-					calculation={result.calculation}
-					chief={chief}
-					speedPercent={speedPercent}
+					checks={resourceChecks(result.calculation, chief)}
+					timeNote={`The plan takes ${formatDuration(result.calculation.seconds)} after the ${speedPercent}% speed bonus. Your stock: Construction ${formatNumber(minutesOfSpeedup(chief, "construction"))} min, General ${formatNumber(minutesOfSpeedup(chief, "general"))} min. General speedups count toward construction.`}
 				/>
 			)}
 			{result?.ok && (

@@ -132,6 +132,7 @@
 
   button:disabled,
   select:disabled,
+  input:disabled,
   [aria-disabled="true"] {
     cursor: not-allowed;
   }
