@@ -92,22 +92,28 @@ export function BuildingsTab({ chief }: { chief: Playthrough }) {
 						onChange={(event) => setFilters({ ...filters, search: event.target.value })}
 					/>
 				</div>
-				<Button onClick={() => setFiltersOpen(true)}>
-					<LuListFilter size={16} aria-hidden="true" />
-					Filters
-					{activeFilterCount > 0 && (
-						<span className="bg-primary text-on-primary rounded-full px-1.5 font-mono text-xs">
-							{activeFilterCount}
-						</span>
-					)}
-				</Button>
-				<Button onClick={() => setMassEditOpen(true)}>
-					<LuPencilLine size={16} aria-hidden="true" />
-					Mass edit
-				</Button>
-				<Button variant="primary" onClick={() => setPlanOpen(true)}>
-					Plan
-				</Button>
+				<div className="flex w-full gap-3 lg:w-auto">
+					<Button className="flex-1 lg:flex-none" onClick={() => setFiltersOpen(true)}>
+						<LuListFilter size={16} aria-hidden="true" className="max-[359px]:hidden" />
+						Filters
+						{activeFilterCount > 0 && (
+							<span className="bg-primary text-on-primary rounded-full px-1.5 font-mono text-xs">
+								{activeFilterCount}
+							</span>
+						)}
+					</Button>
+					<Button className="flex-1 lg:flex-none" onClick={() => setMassEditOpen(true)}>
+						<LuPencilLine size={16} aria-hidden="true" className="max-[359px]:hidden" />
+						Mass edit
+					</Button>
+					<Button
+						variant="primary"
+						className="flex-1 lg:flex-none"
+						onClick={() => setPlanOpen(true)}
+					>
+						Plan
+					</Button>
+				</div>
 			</div>
 			<p role="status" className="text-muted">
 				Showing {shown} of {views.length} buildings. Goals are read only here and are set in
