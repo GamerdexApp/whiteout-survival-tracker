@@ -1,4 +1,5 @@
 import type { AppData, ChiefValues, Playthrough } from "@/types/app";
+import { formatFurnaceLevel } from "@/lib/format";
 
 export const emptyAppData = (): AppData => ({
   playthroughs: [],
@@ -70,10 +71,15 @@ export const toChiefValues = (chief: Playthrough): ChiefValues => ({
   notes: chief.notes,
 });
 
-export const describeChief = (chief: Playthrough) => {
+export const describeChief = (
+  chief: Playthrough,
+  fullFurnaceLabels = false,
+) => {
   const furnaceLevel = chief.buildings?.furnace?.level;
   const parts = [
-    furnaceLevel ? `Furnace ${furnaceLevel}` : null,
+    furnaceLevel
+      ? `Furnace ${formatFurnaceLevel(furnaceLevel, fullFurnaceLabels)}`
+      : null,
     chief.stateNumber === undefined ? null : `State ${chief.stateNumber}`,
   ].filter(Boolean);
   return parts.length > 0 ? parts.join(" · ") : "No details yet";
@@ -85,3 +91,14 @@ export const formatShortDate = (iso: string) =>
     day: "numeric",
     year: "numeric",
   });
+
+export const updateChiefById = (
+  data: AppData,
+  id: string,
+  change: (chief: Playthrough) => Playthrough,
+): AppData => ({
+  ...data,
+  playthroughs: data.playthroughs.map((chief) =>
+    chief.id === id ? { ...change(chief), lastModified: nowIso() } : chief,
+  ),
+});

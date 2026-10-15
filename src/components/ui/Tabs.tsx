@@ -5,7 +5,7 @@ import type { KeyboardEvent, ReactNode } from "react";
 
 interface TabsProps<TabId extends string> {
 	label: string;
-	tabs: { id: TabId; label: string }[];
+	tabs: { id: TabId; label: string; count?: number }[];
 	activeId: TabId;
 	onChange: (id: TabId) => void;
 	children: ReactNode;
@@ -58,6 +58,11 @@ export function Tabs<TabId extends string>({
 							}`}
 						>
 							{tab.label}
+							{tab.count !== undefined && (
+								<span className="text-muted ml-2 font-mono text-xs">
+									{tab.count}
+								</span>
+							)}
 						</button>
 					);
 				})}

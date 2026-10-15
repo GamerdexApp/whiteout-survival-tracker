@@ -1,6 +1,7 @@
 "use client";
 
 import type { Playthrough } from "@/types/app";
+import { useUiSettings } from "@/lib/hooks/useUiSettings";
 import { describeChief, formatShortDate } from "@/service/chiefs";
 import { Button } from "@/comps/ui/Button";
 import { Dialog } from "@/comps/ui/Dialog";
@@ -19,6 +20,8 @@ export function DeleteChiefDialog({
 	onExportBackup,
 	onConfirm,
 }: DeleteChiefDialogProps) {
+	const { ui } = useUiSettings();
+
 	return (
 		<Dialog
 			open={chief !== null}
@@ -41,7 +44,8 @@ export function DeleteChiefDialog({
 						Are you sure you want to delete &ldquo;<strong>{chief.name}</strong>&rdquo;?
 					</p>
 					<p className="text-muted">
-						{describeChief(chief)} · created {formatShortDate(chief.createdAt)}
+						{describeChief(chief, ui.furnaceFullLabels)} · created{" "}
+						{formatShortDate(chief.createdAt)}
 					</p>
 					<Note>
 						This removes the chief and all of its levels, goals and notes from this

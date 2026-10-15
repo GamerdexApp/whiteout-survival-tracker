@@ -5,6 +5,7 @@ import type { ButtonHTMLAttributes } from "react";
 import { LuChevronDown, LuPlus } from "react-icons/lu";
 import { usePlaythrough } from "@/lib/contexts/PlaythroughContext";
 import { useIsDesktop } from "@/lib/hooks/useMediaQuery";
+import { useUiSettings } from "@/lib/hooks/useUiSettings";
 import { describeChief } from "@/service/chiefs";
 import { Dialog } from "@/comps/ui/Dialog";
 import { Menu, MenuItem, MenuLabel, MenuSeparator } from "@/comps/ui/Menu";
@@ -18,6 +19,7 @@ interface ChiefChoicesProps {
 
 function ChiefChoices({ inMenu, close, onNavigate }: ChiefChoicesProps) {
 	const { playthroughs, activePlaythrough, setActivePlaythrough } = usePlaythrough();
+	const { ui } = useUiSettings();
 	const role = inMenu ? "menuitem" : "button";
 	const followLink = () => {
 		close();
@@ -45,7 +47,7 @@ function ChiefChoices({ inMenu, close, onNavigate }: ChiefChoicesProps) {
 								<span className="flex min-w-0 flex-col">
 									<span className="truncate font-medium">{chief.name}</span>
 									<span className="text-muted truncate text-xs">
-										{describeChief(chief)}
+										{describeChief(chief, ui.furnaceFullLabels)}
 									</span>
 								</span>
 								{isActive && (
@@ -82,11 +84,14 @@ function ChiefChoices({ inMenu, close, onNavigate }: ChiefChoicesProps) {
 
 export function ChiefSwitcher({ onNavigate }: { onNavigate?: () => void }) {
 	const { activePlaythrough, isLoaded } = usePlaythrough();
+	const { ui } = useUiSettings();
 	const isDesktop = useIsDesktop();
 	const [sheetOpen, setSheetOpen] = useState(false);
 
 	const triggerName = !isLoaded ? "Loading" : (activePlaythrough?.name ?? "No chief yet");
-	const triggerDetail = activePlaythrough ? describeChief(activePlaythrough) : "";
+	const triggerDetail = activePlaythrough
+		? describeChief(activePlaythrough, ui.furnaceFullLabels)
+		: "";
 
 	const renderTrigger = (props: ButtonHTMLAttributes<HTMLButtonElement>) => (
 		<button

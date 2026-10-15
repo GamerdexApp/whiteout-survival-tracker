@@ -23,6 +23,9 @@ importers:
       react-icons:
         specifier: ^5.7.0
         version: 5.7.0(react@19.3.0)
+      whiteout-survival-data:
+        specifier: 0.2.1
+        version: 0.2.1
     devDependencies:
       '@eslint/eslintrc':
         specifier: ^3.3.7
@@ -2108,6 +2111,10 @@ packages:
     resolution: {integrity: sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA==}
     engines: {node: '>= 8'}
     hasBin: true
+
+  whiteout-survival-data@0.2.1:
+    resolution: {integrity: sha512-MocqwRtIuOraFwmzQlBMIrk9E+EzKsHFYJmUpdoUKHmNCK6BVt0G68VZvsMH6aDGL4B4017falK4ky39xTIUWw==}
+    engines: {node: '>=24'}
 
   word-wrap@1.2.5:
     resolution: {integrity: sha512-BN22B5eaMMI9UMtjrGd5g5eCYPpCPDUy0FJXbYsaT5zYxjFOckS53SQDE3pWkVoWpHXVb3BrYcEN4Twa55B5cA==}
@@ -4338,6 +4345,8 @@ snapshots:
   which@2.0.2:
     dependencies:
       isexe: 2.0.0
+
+  whiteout-survival-data@0.2.1: {}
 
   word-wrap@1.2.5: {}
 

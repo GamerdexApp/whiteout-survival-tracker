@@ -1,4 +1,6 @@
 import type { Playthrough } from "@/types/app";
+import { formatFurnaceLevel } from "@/lib/format";
+import { useUiSettings } from "@/lib/hooks/useUiSettings";
 import { formatShortDate } from "@/service/chiefs";
 import { Badge } from "@/comps/ui/Badge";
 import { Button } from "@/comps/ui/Button";
@@ -17,6 +19,7 @@ function Unknown() {
 }
 
 export function ChiefCard({ chief, isActive, onSetActive, onEdit, onDelete }: ChiefCardProps) {
+	const { ui } = useUiSettings();
 	const furnaceLevel = chief.buildings?.furnace?.level;
 
 	return (
@@ -28,7 +31,13 @@ export function ChiefCard({ chief, isActive, onSetActive, onEdit, onDelete }: Ch
 			<p className="text-muted line-clamp-2">{chief.notes ?? "No notes"}</p>
 			<dl className="grid grid-cols-[auto_1fr] gap-x-4 gap-y-1">
 				<dt className="text-muted">Furnace</dt>
-				<dd className="font-medium">{furnaceLevel ?? <Unknown />}</dd>
+				<dd className="font-medium">
+					{furnaceLevel ? (
+						formatFurnaceLevel(furnaceLevel, ui.furnaceFullLabels)
+					) : (
+						<Unknown />
+					)}
+				</dd>
 				<dt className="text-muted">State</dt>
 				<dd className="font-medium">{chief.stateNumber ?? <Unknown />}</dd>
 			</dl>

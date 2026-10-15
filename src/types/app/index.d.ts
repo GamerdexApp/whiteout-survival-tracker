@@ -19,6 +19,22 @@ export interface BuildingState {
   level?: string | null;
   goal?: string | null;
   built?: boolean;
+  instances?: string[];
+}
+
+export type Appointment = "none" | "regular" | "supreme";
+
+export interface BuildingPlanGoal {
+  current: string | null;
+  goal: string;
+}
+
+export interface BuildingPlan {
+  goals: Record<string, BuildingPlanGoal>;
+  vicePresident: Appointment;
+  petSkill: boolean;
+  chiefOrder: boolean;
+  savedAt: string;
 }
 
 export interface Playthrough {
@@ -32,6 +48,8 @@ export interface Playthrough {
   coreEventsShown?: CoreEventId[];
   notes?: string;
   buildings?: Record<string, BuildingState>;
+  facilities?: Record<string, { built?: boolean }>;
+  buildingPlan?: BuildingPlan;
 }
 
 export interface AppData {

@@ -1,4 +1,6 @@
 allowBuilds:
   unrs-resolver: false
+minimumReleaseAgeExclude:
+  - whiteout-survival-data@0.2.1
 overrides:
   deepmerge-ts: ^8.0.2

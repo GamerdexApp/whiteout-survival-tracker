@@ -5,20 +5,38 @@ import type { ReactNode } from "react";
 import { LuX } from "react-icons/lu";
 import { IconButton } from "./IconButton";
 
+type DialogVariant = "modal" | "wide" | "flyout";
+
+const panelClasses: Record<DialogVariant, string> = {
+	modal: "fixed m-0 mt-auto max-h-[90dvh] w-full max-w-none flex-col rounded-t-lg border-[1.5px] p-0 open:flex lg:m-auto lg:w-[calc(100%-2rem)] lg:max-w-xl lg:rounded-md",
+	wide: "fixed m-0 mt-auto max-h-[90dvh] w-full max-w-none flex-col rounded-t-lg border-[1.5px] p-0 open:flex lg:m-auto lg:w-[calc(100%-2rem)] lg:max-w-3xl lg:rounded-md",
+	flyout: "fixed inset-x-0 top-auto bottom-0 m-0 max-h-[90dvh] w-full max-w-none flex-col rounded-t-lg border-[1.5px] p-0 open:flex lg:top-0 lg:right-0 lg:left-auto lg:h-dvh lg:max-h-none lg:w-[640px] lg:rounded-none lg:border-y-0 lg:border-r-0",
+};
+
 interface DialogProps {
 	open: boolean;
 	onClose: () => void;
 	title: string;
 	description?: string;
 	footer?: ReactNode;
+	variant?: DialogVariant;
 	children: ReactNode;
 }
 
 /**
- * A modal on desktop and a bottom sheet on mobile. The children mount only while the dialog is
+ * A modal on desktop and a bottom sheet on mobile. The flyout variant is a 640 px panel on the right
+ * on desktop. The children mount only while the dialog is
  * open, so a form inside always starts from its saved values.
  */
-export function Dialog({ open, onClose, title, description, footer, children }: DialogProps) {
+export function Dialog({
+	open,
+	onClose,
+	title,
+	description,
+	footer,
+	variant = "modal",
+	children,
+}: DialogProps) {
 	const dialogRef = useRef<HTMLDialogElement>(null);
 	const titleId = useId();
 
@@ -41,7 +59,7 @@ export function Dialog({ open, onClose, title, description, footer, children }: 
 			onClick={(event) => {
 				if (event.target === event.currentTarget) onClose();
 			}}
-			className="border-line bg-surface text-ink backdrop:bg-scrim fixed m-0 mt-auto max-h-[90dvh] w-full max-w-none flex-col rounded-t-lg border-[1.5px] p-0 open:flex lg:m-auto lg:w-[calc(100%-2rem)] lg:max-w-xl lg:rounded-md"
+			className={`border-line bg-surface text-ink backdrop:bg-scrim ${panelClasses[variant]}`}
 		>
 			{open && (
 				<>
@@ -64,7 +82,9 @@ export function Dialog({ open, onClose, title, description, footer, children }: 
 							<LuX size={20} aria-hidden="true" />
 						</IconButton>
 					</header>
-					<div className="flex min-h-0 flex-1 flex-col gap-4 overflow-y-auto px-4 py-3">
+					<div
+						className={`flex min-h-0 flex-1 flex-col gap-4 overflow-y-auto px-4 py-3 ${variant === "flyout" ? "bg-bg" : ""}`}
+					>
 						{children}
 					</div>
 					{footer && (

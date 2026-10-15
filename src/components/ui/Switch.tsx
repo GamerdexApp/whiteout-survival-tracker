@@ -3,14 +3,57 @@
 import { useId } from "react";
 import type { ReactNode } from "react";
 
+interface SwitchProps {
+	checked: boolean;
+	onChange: (checked: boolean) => void;
+	disabled?: boolean;
+	labelledBy?: string;
+	describedBy?: string;
+	label?: string;
+}
+
+export function Switch({
+	checked,
+	onChange,
+	disabled = false,
+	labelledBy,
+	describedBy,
+	label,
+}: SwitchProps) {
+	return (
+		<button
+			type="button"
+			role="switch"
+			aria-checked={checked}
+			aria-label={label}
+			aria-labelledby={labelledBy}
+			aria-describedby={describedBy}
+			disabled={disabled}
+			onClick={() => onChange(!checked)}
+			className={`relative h-7 w-12 shrink-0 rounded-full border-[1.5px] transition-colors disabled:opacity-50 ${
+				checked ? "border-primary bg-primary" : "border-line bg-track"
+			}`}
+		>
+			<span
+				aria-hidden="true"
+				className={`absolute top-0.5 size-5 rounded-full transition-all ${
+					checked ? "bg-on-primary left-[22px]" : "bg-muted left-0.5"
+				}`}
+			/>
+			<span className="sr-only">{checked ? "On" : "Off"}</span>
+		</button>
+	);
+}
+
 interface SwitchRowProps {
 	label: string;
 	description?: ReactNode;
 	checked: boolean;
 	onChange: (checked: boolean) => void;
+	disabled?: boolean;
 }
 
-export function SwitchRow({ label, description, checked, onChange }: SwitchRowProps) {
+export function SwitchRow({ label, description, checked, onChange, disabled }: SwitchRowProps) {
 	const labelId = useId();
 	const descriptionId = useId();
 
@@ -26,25 +69,15 @@ export function SwitchRow({ label, description, checked, onChange }: SwitchRowPr
 					</span>
 				)}
 			</div>
-			<button
-				type="button"
-				role="switch"
-				aria-checked={checked}
-				aria-labelledby={labelId}
-				aria-describedby={description ? descriptionId : undefined}
-				onClick={() => onChange(!checked)}
-				className={`relative mt-0.5 h-7 w-12 shrink-0 rounded-full border-[1.5px] transition-colors ${
-					checked ? "border-primary bg-primary" : "border-line bg-track"
-				}`}
-			>
-				<span
-					aria-hidden="true"
-					className={`absolute top-0.5 size-5 rounded-full transition-all ${
-						checked ? "bg-on-primary left-[22px]" : "bg-muted left-0.5"
-					}`}
+			<div className="mt-0.5">
+				<Switch
+					checked={checked}
+					onChange={onChange}
+					disabled={disabled}
+					labelledBy={labelId}
+					describedBy={description ? descriptionId : undefined}
 				/>
-				<span className="sr-only">{checked ? "On" : "Off"}</span>
-			</button>
+			</div>
 		</div>
 	);
 }
