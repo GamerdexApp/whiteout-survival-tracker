@@ -24,8 +24,8 @@ importers:
         specifier: ^5.7.0
         version: 5.7.0(react@19.3.0)
       whiteout-survival-data:
-        specifier: 0.3.0
-        version: 0.3.0
+        specifier: 0.5.0
+        version: 0.5.0
     devDependencies:
       '@eslint/eslintrc':
         specifier: ^3.3.7
@@ -2112,8 +2112,8 @@ packages:
     engines: {node: '>= 8'}
     hasBin: true
 
-  whiteout-survival-data@0.3.0:
-    resolution: {integrity: sha512-VzbXyDDvuYEGZYyobqGZbFvUZk9mt1yFKlh4LxFAjqVhc+zq4ibs5sG9ODjgFOqr6rSzDFGfNdyObMEBpUqxaQ==}
+  whiteout-survival-data@0.5.0:
+    resolution: {integrity: sha512-/aXdImjITLIgFaZWGYakTO2enVh2DdbNT58CuW19pf5Uz4vsaH7PPtdV6S36F1bg8vs0qu4o4PVjp6EYv5ubdA==}
     engines: {node: '>=24'}
 
   word-wrap@1.2.5:
@@ -4346,7 +4346,7 @@ snapshots:
     dependencies:
       isexe: 2.0.0
 
-  whiteout-survival-data@0.3.0: {}
+  whiteout-survival-data@0.5.0: {}
 
   word-wrap@1.2.5: {}
 
