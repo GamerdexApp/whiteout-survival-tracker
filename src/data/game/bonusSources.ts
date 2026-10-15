@@ -35,7 +35,6 @@ export const sourceTypeNames: Record<BuffSourceType, string> = {
 export const pendingSources: { name: string; page: string }[] = [
   { name: "Heroes", page: "Heroes" },
   { name: "Experts", page: "Experts" },
-  { name: "Research", page: "Research" },
   { name: "Alliance Tech", page: "Tech" },
   { name: "Alliance Facilities", page: "Facilities" },
   { name: "Alliance Prestige Buildings", page: "Alliance" },

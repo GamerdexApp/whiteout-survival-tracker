@@ -4,7 +4,7 @@ import type { BuffCategory, BuffGroupId } from "whiteout-survival-data";
 import { useMemo, useState } from "react";
 import { LuChevronDown, LuChevronRight, LuSearch } from "react-icons/lu";
 import type { Playthrough } from "@/types/app";
-import { chiefBuffs, formatBuffValue } from "@/service/bonuses";
+import { chiefBuffs, formatBuffValue, mergeResearchSources } from "@/service/bonuses";
 import { pendingSources, sourceTypeNames, unstoredSources } from "@/data/game/bonusSources";
 import { PageHeader } from "@/comps/layout/PageHeader";
 import { Card } from "@/comps/ui/Card";
@@ -62,6 +62,7 @@ export function BonusesView({ chief }: { chief: Playthrough }) {
 	const [groupId, setGroupId] = useState<"all" | BuffGroupId>("all");
 	const [openStats, setOpenStats] = useState<Set<string>>(new Set());
 
+	const sources = useMemo(() => mergeResearchSources(buffs.bySource), [buffs]);
 	const query = search.trim().toLowerCase();
 	const matches = (name: string) => name.toLowerCase().includes(query);
 	const groupsWithStats = buffs.groups.filter((group) => group.categories.length > 0);
@@ -82,7 +83,7 @@ export function BonusesView({ chief }: { chief: Playthrough }) {
 		}))
 		.filter((group) => group.categories.length > 0);
 
-	const visibleSources = buffs.bySource
+	const visibleSources = sources
 		.map((source) => ({
 			...source,
 			stats: source.stats.filter((stat) => matches(stat.name)),
@@ -109,7 +110,7 @@ export function BonusesView({ chief }: { chief: Playthrough }) {
 			<div className="grid grid-cols-3 gap-2 lg:gap-3">
 				<StatTile value={buffs.categories.length} label="Stats in the result" />
 				<StatTile value={groupsWithStats.length} label="Groups with stats" />
-				<StatTile value={buffs.bySource.length} label="Source types giving something" />
+				<StatTile value={sources.length} label="Source types giving something" />
 			</div>
 
 			<Note tone="warning" title="Not every source is counted yet.">

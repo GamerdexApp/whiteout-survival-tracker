@@ -7,7 +7,12 @@ import { findItem } from "@/data/game/items";
 import { researchTabs, treeTabs } from "@/data/game/research";
 import { ItemIcon } from "@/comps/ui/ItemIcon";
 
-const { nodeWidth, nodeHeight, labelHeight } = RESEARCH_TREE_LAYOUT;
+const { nodeWidth, nodeHeight, labelHeight: layoutLabelHeight } = RESEARCH_TREE_LAYOUT;
+
+// The layout reserves room for a one line label. Ours holds two lines of name and the level pill, so
+// every line starts and ends this much further from the icon.
+const CAPTION_PADDING = 18;
+const labelHeight = layoutLabelHeight + CAPTION_PADDING;
 const HALF_WIDTH = nodeWidth / 2;
 const HALF_HEIGHT = nodeHeight / 2;
 const DEFAULT_SPLIT = 0.5;
@@ -160,7 +165,10 @@ export function ResearchTree({ tabId, views, visibleIds, onOpen }: ResearchTreeP
 									: "border-line bg-surface";
 						const caption = (
 							<>
-								<span className="text-center text-[11px] leading-tight break-words">
+								<span
+									title={view.node.name}
+									className="line-clamp-2 text-center text-[11px] leading-tight break-words"
+								>
 									{view.node.name}
 								</span>
 								<span
@@ -183,13 +191,13 @@ export function ResearchTree({ tabId, views, visibleIds, onOpen }: ResearchTreeP
 								type="button"
 								onClick={() => onOpen(node.id)}
 								aria-label={`${view.node.name}, ${pillText(view)}. Open details`}
-								className={`absolute flex flex-col items-center gap-1 ${dim}`}
+								className={`absolute flex flex-col items-center ${dim}`}
 								style={{ left, top, width: nodeWidth }}
 							>
 								{node.labelAbove && (
 									<span
-										className="flex flex-col items-center gap-1"
-										style={{ minHeight: labelHeight }}
+										className="bg-bg flex flex-col items-center justify-end gap-1 pb-1"
+										style={{ height: labelHeight }}
 									>
 										{caption}
 									</span>
@@ -205,8 +213,8 @@ export function ResearchTree({ tabId, views, visibleIds, onOpen }: ResearchTreeP
 								</span>
 								{!node.labelAbove && (
 									<span
-										className="flex flex-col items-center gap-1"
-										style={{ minHeight: labelHeight }}
+										className="bg-bg flex flex-col items-center justify-start gap-1 pt-1"
+										style={{ height: labelHeight }}
 									>
 										{caption}
 									</span>

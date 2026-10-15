@@ -221,19 +221,23 @@ export interface ResearchSummary {
   locked: number;
 }
 
+/**
+ * The power of every researched level of a node.
+ */
+export const researchedPowerOf = (view: ResearchNodeView) =>
+  view.node.levels
+    .filter((level) => level.level <= view.level)
+    .reduce((sum, level) => sum + level.power, 0);
+
+export const powerOfViews = (views: ResearchNodeView[]) =>
+  views.reduce((sum, view) => sum + researchedPowerOf(view), 0);
+
 export const summarizeResearch = (
   views: ResearchNodeView[],
 ): ResearchSummary => ({
   maxed: views.filter((view) => view.maxed).length,
   total: views.length,
-  power: views.reduce(
-    (sum, view) =>
-      sum +
-      view.node.levels
-        .filter((level) => level.level <= view.level)
-        .reduce((levelSum, level) => levelSum + level.power, 0),
-    0,
-  ),
+  power: powerOfViews(views),
   withoutTime: views.filter((view) =>
     view.node.levels.some((level) => level.researchTimeSeconds === undefined),
   ).length,

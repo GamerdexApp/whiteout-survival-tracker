@@ -52,7 +52,7 @@ export function Tabs<TabId extends string>({
 							aria-controls={`${baseId}-panel`}
 							tabIndex={active ? 0 : -1}
 							onClick={() => onChange(tab.id)}
-							className={`-mb-[1.5px] min-h-11 shrink-0 border-b-[3px] px-4 whitespace-nowrap lg:min-h-10 ${
+							className={`-mb-[1.5px] min-h-11 shrink-0 border-b-[3px] px-3.5 whitespace-nowrap lg:min-h-10 ${
 								active
 									? "border-primary text-ink font-semibold"
 									: "text-muted hover:text-ink border-transparent"

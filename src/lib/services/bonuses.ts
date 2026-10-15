@@ -2,20 +2,37 @@ import { calculateBuffs } from "whiteout-survival-data";
 import type {
   BuffCalculation,
   BuffProfile,
+  BuffSourceGroup,
+  BuffSourceStat,
   BuffUnit,
 } from "whiteout-survival-data";
 import type { Playthrough } from "@/types/app";
 import { entertainmentBuildings } from "@/data/game/buildings";
+import { allResearch } from "@/data/game/research";
 import { levelledBuildingLevels } from "./buildings";
+import { levelOfNode } from "./research";
 
 const CONSTRUCTION_SPEED_STAT = "construction-speed";
 const RESEARCH_SPEED_STAT = "research-speed";
+
+/**
+ * The saved level of every research node. A node the package does not know is left out, so an
+ * edited save cannot make the calculator throw.
+ */
+const researchLevelsOf = (chief: Playthrough) =>
+  Object.fromEntries(
+    allResearch.flatMap((node) => {
+      const level = levelOfNode(chief, node);
+      return level > 0 ? [[node.id, level]] : [];
+    }),
+  );
 
 /**
  * Reads the chief state that the other pages save and shapes it for `calculateBuffs`. A page adds
  * its section here when it is built.
  */
 export const buffProfileOf = (chief: Playthrough): BuffProfile => ({
+  researchLevels: researchLevelsOf(chief),
   buildingLevels: {
     ...levelledBuildingLevels(chief),
     ...Object.fromEntries(
@@ -53,4 +70,49 @@ export const formatBuffValue = (total: number, unit: BuffUnit) => {
   if (unit === "hours") return `${text} h`;
   if (unit === "seconds") return `${text} s`;
   return text;
+};
+
+const RESEARCH_SOURCE_IDS = ["research", "warAcademyResearch"];
+
+/**
+ * The package splits research into the Research Center queue and the War Academy queue. The page
+ * shows one Research row that adds the two, so there are 19 kinds of source and not 20.
+ */
+export const mergeResearchSources = (
+  sources: BuffSourceGroup[],
+): BuffSourceGroup[] => {
+  const research = sources.filter((source) =>
+    RESEARCH_SOURCE_IDS.includes(source.id),
+  );
+  if (research.length < 2) return sources;
+
+  const totals = new Map<string, BuffSourceStat>();
+  research
+    .flatMap((source) => source.stats)
+    .forEach((stat) => {
+      const key = `${stat.statKey}-${stat.unit}`;
+      const known = totals.get(key);
+      totals.set(key, {
+        ...stat,
+        total: Math.round(((known?.total ?? 0) + stat.total) * 10_000) / 10_000,
+      });
+    });
+
+  const merged: BuffSourceGroup = {
+    id: "research",
+    name: "Research",
+    stats: [...totals.values()],
+  };
+  const firstIndex = sources.findIndex((source) =>
+    RESEARCH_SOURCE_IDS.includes(source.id),
+  );
+  return [
+    ...sources
+      .slice(0, firstIndex)
+      .filter((source) => !RESEARCH_SOURCE_IDS.includes(source.id)),
+    merged,
+    ...sources
+      .slice(firstIndex)
+      .filter((source) => !RESEARCH_SOURCE_IDS.includes(source.id)),
+  ];
 };

@@ -2,7 +2,7 @@
 
 import type { ResearchNode } from "whiteout-survival-data";
 import type { ResearchQueueId } from "@/types/app";
-import { formatDuration } from "@/lib/format";
+import { formatDuration, formatNumber } from "@/lib/format";
 import type { ResearchNodeView } from "@/service/research";
 import { bonusText, tabLockText } from "@/service/research";
 import { tierLabel } from "@/data/game/research";
@@ -29,6 +29,21 @@ const nextTimeText = (view: ResearchNodeView) => {
 	if (view.maxed || !view.next) return "All levels researched";
 	const seconds = view.next.researchTimeSeconds;
 	return `Level ${view.next.level} time: ${seconds === undefined ? "Unknown" : formatDuration(seconds)}`;
+};
+
+/**
+ * The power of every researched level, and the power the next level adds. A placeholder has no
+ * cost or bonus but still carries a power value in the package.
+ */
+const powerText = (view: ResearchNodeView) => {
+	const researched = view.node.levels
+		.filter((item) => item.level <= view.level)
+		.reduce((sum, item) => sum + item.power, 0);
+	const parts = [
+		researched > 0 ? `${formatNumber(researched)} researched` : null,
+		view.next ? `+${formatNumber(view.next.power)} next level` : null,
+	].filter(Boolean);
+	return parts.length > 0 ? `Power ${parts.join(" · ")}` : "Power 0";
 };
 
 export function NodeCard({ view, onLevelChange, onOpen, onManageJob }: NodeCardProps) {
@@ -80,6 +95,7 @@ export function NodeCard({ view, onLevelChange, onOpen, onManageJob }: NodeCardP
 				<p className="text-muted">{bonus}</p>
 			)}
 			{!placeholder && <p className="text-muted font-mono text-xs">{nextTimeText(view)}</p>}
+			<p className="font-mono text-xs">{powerText(view)}</p>
 			{!tabLock && view.blockedBy.length > 0 && !lockedBy && (
 				<p className="text-muted text-xs">Needs {view.blockedBy.join(", ")} first</p>
 			)}

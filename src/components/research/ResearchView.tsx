@@ -18,6 +18,7 @@ import {
 	defaultResearchFilters,
 	filterNodeViews,
 	nodesOfTabCount,
+	powerOfViews,
 	summarizeResearch,
 	tabLockOf,
 	tabLockText,
@@ -285,8 +286,8 @@ export function ResearchView({ chief }: { chief: Playthrough }) {
 				</div>
 				<p role="status" className="text-muted">
 					{layout === "tree"
-						? `${tabViews.length} nodes in the ${tab.name} tree. Scroll to pan. Nodes that do not match the search or filters are dimmed.`
-						: `Showing ${visible.length} of ${tabViews.length} ${tab.name} nodes. Goals are read only here and are set in Plan.`}
+						? `${tabViews.length} nodes in the ${tab.name} tree. Research power in this tab: ${formatNumber(powerOfViews(tabViews))}. Scroll to pan. Nodes that do not match the search or filters are dimmed.`
+						: `Showing ${visible.length} of ${tabViews.length} ${tab.name} nodes. Research power in this tab: ${formatNumber(powerOfViews(tabViews))}. Goals are read only here and are set in Plan.`}
 				</p>
 
 				{layout === "tree" ? (
