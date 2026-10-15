@@ -1,0 +1,208 @@
+{
+    "defaultSetName": "Set {number}",
+    "troop": {
+        "infantry": "Infantry",
+        "lancer": "Lancer",
+        "marksman": "Marksman"
+    },
+    "lock": {
+        "needsMythic": "Needs Mythic gear",
+        "needsBoth": "Needs enhancement 100 and mastery forging level 10",
+        "needsEnhancement": "Needs enhancement 100",
+        "needsForging": "Needs mastery forging level 10"
+    },
+    "tab": {
+        "deletedTitle": "{name} deleted",
+        "deletedMessage": "The four pieces and their goals are removed.",
+        "undo": "Undo",
+        "tiles": {
+            "sets": "Gear sets",
+            "power": "Gear power, all sets",
+            "ofPieces": "{count} of {total}",
+            "atEnhancementMax": "Pieces at enhancement 100",
+            "empowered": "Pieces empowered",
+            "ready": "Pieces ready for empowerment"
+        },
+        "search": "Search gear sets",
+        "filters": "Filters",
+        "plan": "Plan",
+        "showing": "Showing {shown} of {total} gear sets. Goals are read only here and are set in Plan.",
+        "empty": {
+            "title": "No gear sets yet",
+            "description": "A gear set holds one Goggles, Gloves, Belt and Boots piece. Add a set to track its levels."
+        },
+        "addSet": "Add gear set",
+        "unknownHero": "Unknown hero",
+        "power": "{amount} power",
+        "enhancementLine": "Enh {line}",
+        "troopHint": "The troop type picks the stat column below.",
+        "editSet": "Edit set",
+        "deleteSet": "Delete set"
+    },
+    "pieceCard": {
+        "name": "{set} {slot}",
+        "forgingRow": "{name} (+{percent}%)",
+        "none": "None",
+        "noGoal": "No goal",
+        "goal": "Goal: {value}",
+        "quality": "Gear quality",
+        "qualities": {
+            "mythic": "Mythic",
+            "epic": "Epic",
+            "rare": "Rare",
+            "uncommon": "Uncommon",
+            "common": "Common"
+        },
+        "forgingRowLabel": "Mastery forging row",
+        "forgingStops": "Mastery forging stops at level 10 until enhancement is 100.",
+        "lowQualityNote": "Only Mythic gear can be forged and empowered. Power follows the Mythic tables with the base power of this quality, which the game has not confirmed.",
+        "enhancement": "Enhancement",
+        "enhancementLabel": "{name} enhancement",
+        "enhancementSlider": "{name} enhancement slider",
+        "empowerment": "Empowerment",
+        "empowermentLabel": "{name} empowerment",
+        "empowermentSlider": "{name} empowerment slider",
+        "outOf": "/ {max}",
+        "milestone": "Empowerment {level} reached: {stat}",
+        "piecePower": "Piece power",
+        "health": "Health",
+        "percent": "{value}%"
+    },
+    "statLines": {
+        "title": "Stat lines, 4 slots by 3 troop types",
+        "troopThisSet": "{troop} (this set)",
+        "stat": "{name} {value}",
+        "health": "HP {value}",
+        "percentStat": "{name} {value}%",
+        "none": "None",
+        "note": "Values at the piece levels of {name}, including mastery forging, rounded down. Stats come from WoS Tools, which stops at 192 of the 200 levels. The highlighted column is the troop type of the set."
+    },
+    "filters": {
+        "title": "Filters",
+        "description": "Choose which gear sets the list shows",
+        "reset": "Reset",
+        "show": "Show {amount} {count, plural, one {set} other {sets}}",
+        "all": "All",
+        "troopType": "Troop type",
+        "linkedHero": "Linked hero",
+        "heroOptions": {
+            "all": "All",
+            "linked": "Linked to a hero",
+            "unlinked": "Not linked"
+        },
+        "order": "Order",
+        "orderOptions": {
+            "power": "Total power, highest first",
+            "created": "Order added",
+            "name": "Name, A to Z",
+            "hero": "Hero name, A to Z"
+        },
+        "notSaved": "Filters are not saved."
+    },
+    "setDialogs": {
+        "cancel": "Cancel",
+        "setName": "Set name",
+        "nameRequired": "Enter a name.",
+        "linkedHero": "Linked hero",
+        "add": {
+            "title": "Add gear set",
+            "linkedHeroHint": "Choosing a hero sets the troop type to its class.",
+            "troopType": "Troop type",
+            "troopTypeHint": "The troop type picks the stat column of the set.",
+            "quality": "Gear quality",
+            "qualityHint": "Only Mythic gear can be forged and empowered.",
+            "qualityHintCopy": "A copied set keeps the quality of each piece.",
+            "qualities": {
+                "mythic": "Mythic",
+                "epic": "Epic",
+                "rare": "Rare",
+                "uncommon": "Uncommon",
+                "common": "Common"
+            },
+            "startFrom": "Start from",
+            "startFromHint": "Goals are not copied. Goals are set in Plan.",
+            "emptySet": "Empty set",
+            "copyFrom": "Copy levels from {name}",
+            "savesAtOnce": "Every change saves at once and the new set appears selected.",
+            "submit": "Add gear set"
+        },
+        "delete": {
+            "title": "Delete {name}?",
+            "titleFallback": "Delete set",
+            "confirm": "Delete set",
+            "body": "The four pieces of {name} and their goals are removed from this device and from synced devices at the next sync.",
+            "undoNote": "You can undo for 10 seconds after deleting.",
+            "exportBackup": "Export a backup first"
+        },
+        "edit": {
+            "title": "Edit {name}",
+            "titleFallback": "Edit set",
+            "submit": "Save set"
+        },
+        "heroSelect": {
+            "none": "No hero",
+            "option": "{name} ({class}, Gen {generation})"
+        }
+    },
+    "plan": {
+        "title": "Plan Hero Gear",
+        "description": "Mastery forging, enhancement and empowerment of any pieces, from any set",
+        "saved": "Plan saved {time}",
+        "close": "Close",
+        "save": "Save plan",
+        "empty": "No pieces in the plan yet. Add a piece above, then raise its goals.",
+        "pieceTitle": "{set} · {slot}",
+        "milestone": "empowerment {level}, {event}, {stat}",
+        "addPiece": {
+            "title": "Add a piece",
+            "noSets": "Add a gear set on the Hero Gear tab first.",
+            "set": "Gear set",
+            "setOption": "{name} ({troop})",
+            "piece": "Piece",
+            "submit": "Add piece",
+            "taken": "This piece is already in the plan."
+        },
+        "qualities": {
+            "mythic": "mythic",
+            "epic": "epic",
+            "rare": "rare",
+            "uncommon": "uncommon",
+            "common": "common"
+        },
+        "remove": "Remove {title} from the plan",
+        "forgingRow": "{name} (+{percent}%)",
+        "none": "None",
+        "forgingCurrent": "Forging current row",
+        "forgingGoal": "Forging goal row",
+        "forgingGoalLabel": "{title} forging goal",
+        "forgingStops": "Mastery forging stops at level 10 until the enhancement goal is 100.",
+        "enhancement": "Enhancement",
+        "enhancementGoal": "{title} enhancement goal",
+        "empowerment": "Empowerment",
+        "empowermentGoal": "{title} empowerment goal",
+        "from": "{value} to",
+        "result": {
+            "title": "Result for {amount} {count, plural, one {piece} other {pieces}}",
+            "power": "Power",
+            "powerLines": {
+                "gained": "Power gained",
+                "before": "Power of these pieces before",
+                "after": "Power of these pieces after"
+            },
+            "columns": {
+                "piece": "Piece",
+                "forgingStatsUp": "Forging stats up",
+                "powerGained": "Power gained"
+            },
+            "forgingStatsUp": "+{percent}% ({steps} steps)",
+            "milestones": "Milestones unlocked",
+            "milestoneLine": "{label}: {stat}",
+            "events": {
+                "svs": "SvS",
+                "allianceShowdown": "Alliance Showdown",
+                "kingOfIcefield": "King of Icefield"
+            },
+            "note": "Plan Hero Gear has no speed or bonus controls. The calculator returns no time."
+        }
+    }
+}

@@ -1,0 +1,158 @@
+{
+    "none": "None",
+    "charmLabel": "Charm {number}",
+    "view": {
+        "title": "Chief Gear",
+        "tabsLabel": "Chief gear",
+        "gearSubline": "{name} · six slots, 150 upgrade rows",
+        "charmsSubline": "{name} · 6 gear pieces, 3 charms each, 75 upgrade rows",
+        "tabs": { "gear": "Chief Gear", "charms": "Chief Charms" }
+    },
+    "shared": {
+        "plan": "Plan",
+        "autoSaveHint": "Every change saves at once. Steppers move one row at a time in package order.",
+        "scoreToGain": "Score still to gain",
+        "notes": "Notes",
+        "package": "Package"
+    },
+    "gear": {
+        "scoreNow": "Gear score now, six slots",
+        "powerNow": "Gear power now",
+        "stepsToGoals": "Steps to all goals",
+        "goalsHint": "Goals are read only here. Set them in Plan and press Save plan.",
+        "stepWord": "steps",
+        "tiers": {
+            "title": "Tiers",
+            "description": "The package labels 150 rows with {count} tiers. A highlighted tier holds at least one of your pieces.",
+            "rows": "{rows} rows",
+            "names": {
+                "EpicT1": "Epic T1",
+                "MythicT1": "Mythic T1",
+                "MythicT2": "Mythic T2",
+                "LegendaryT1": "Legendary T1",
+                "LegendaryT2": "Legendary T2",
+                "LegendaryT3": "Legendary T3",
+                "LegendaryT4": "Legendary T4",
+                "LegendaryT5": "Legendary T5",
+                "LegendaryT6": "Legendary T6"
+            }
+        },
+        "notes": {
+            "setBonus": {
+                "title": "Set bonus rules",
+                "body": "3 pieces of the same tier give Defense and 6 pieces give Attack, for all three troop types. A piece with no level does not count. Each tier has one value."
+            },
+            "troopType": {
+                "title": "Troop type is hand entered",
+                "body": "Cap and Watch buff Lancer, Coat and Pants buff Infantry, Ring and Weapon buff Marksman. The package author typed this from wiki text."
+            },
+            "capacity": {
+                "title": "Capacity can be Unknown",
+                "body": "The first 26 rows have no deployment capacity in the package."
+            }
+        }
+    },
+    "charms": {
+        "scoreNow": "Charm score now, 18 charms",
+        "powerNow": "Charm power now",
+        "stagesToGoals": "Stages to all goals",
+        "goalsHint": "Goals are read only here and are set in Plan.",
+        "stepWord": "stages",
+        "slotMeta": "{troop} · 3 charms",
+        "slotStages": ", {stages} stages to goals",
+        "notes": {
+            "secrets": {
+                "title": "Charm Secrets starts at level 11",
+                "body": "From Level 11 Stage 1 a stage needs Charm Secrets. Earlier stages list only Charm Guide and Charm Design."
+            },
+            "look": {
+                "title": "Charms change look at every level",
+                "body": "Each charm has 18 icons, one per level. Every gear piece carries three charms, and they follow the troop type of the piece."
+            },
+            "estimate": {
+                "title": "Stage scores are an estimate",
+                "body": "A level score is shared evenly over the stages that lead to it. The game does not confirm the split."
+            }
+        }
+    },
+    "badge": {
+        "tier": "Tier {tier}",
+        "stars": "{count, plural, one {{amount} star} other {{amount} stars}}",
+        "tierAndStars": "{tier}, {stars}"
+    },
+    "row": {
+        "level": "{title} level",
+        "progressLabel": "{title} progress in {total} rows",
+        "progress": "{progress} of {total}",
+        "stepsToGoal": " · {steps} to goal",
+        "goal": "Goal {name}",
+        "noGoal": "No goal",
+        "stats": "Stat {stat} · Power {power}",
+        "statPercent": "{percent}%",
+        "capacityUnknown": " · Capacity Unknown",
+        "capacity": " · Capacity {capacity}"
+    },
+    "summary": {
+        "title": "Left to reach all goals",
+        "derived": "Derived",
+        "score": "score",
+        "powerGain": "power gain",
+        "noGoals": "No goals set. Set goals in Plan.",
+        "openPlan": "Open Plan for event points and a breakdown"
+    },
+    "setBonus": {
+        "title": "Set bonuses unlocked",
+        "pieceSet": "{pieces} piece set",
+        "active": "Active",
+        "notActive": "Not active",
+        "value": "{stat} +{percent}%",
+        "appliesTo": "{tierName} pieces, for Infantry, Lancer and Marksman",
+        "needs": "Needs {pieces} pieces of the same tier. {stat} +0% for now."
+    },
+    "plan": {
+        "gear": {
+            "title": "Plan Chief Gear",
+            "description": "Materials, score and power from current level to goal",
+            "stepWord": "Steps",
+            "conversionNote": "The check does not count conversions. The converter has seven exchange rates, each with a weekly limit, for example 10 Design Plans into 1 Lunar Amber up to 500 a week."
+        },
+        "charm": {
+            "title": "Plan Chief Charms",
+            "description": "Materials, score and power from current level to goal",
+            "stepWord": "Stages",
+            "conversionNote": "The check does not count conversions: 2 Charm Guides make 1 Charm Design and back, and 40 of either make 1 Charm Secrets."
+        },
+        "saved": "Plan saved {date}",
+        "close": "Close",
+        "save": "Save plan",
+        "inputs": "Inputs",
+        "slotTroop": "{slot}, {troop}",
+        "from": "From {level}",
+        "goalLabel": "{label} goal",
+        "slotGoalLabel": "{slot} {label} goal",
+        "inputsHint": "The current level is the one on the page. Change it there. Goals are read only on the page and are set here.",
+        "result": "Result",
+        "score": "Score",
+        "powerGain": "Power gain",
+        "events": {
+            "svs": "SvS State of Power",
+            "allianceShowdown": "Alliance Showdown",
+            "kingOfIcefield": "King of Icefield",
+            "hallOfChief": "Hall of Chief"
+        },
+        "bySlot": "By slot",
+        "byCharm": "By charm",
+        "columnSlot": "Slot",
+        "columnCharm": "Charm",
+        "slotCharm": "{slot} {charm}",
+        "converter": {
+            "title": "Material converter",
+            "spend": "Spend",
+            "get": "Get",
+            "limit": "Limit",
+            "amount": "{quantity} {name}",
+            "perWeek": "{limit} per week",
+            "noLimit": "No weekly limit"
+        }
+    }
+}

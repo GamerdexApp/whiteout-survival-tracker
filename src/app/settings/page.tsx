@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { useRouter, useSearchParams } from "next/navigation";
 import { Suspense } from "react";
 import { PageHeader } from "@/comps/layout/PageHeader";
@@ -9,31 +10,24 @@ import { PreferencesTab } from "@/comps/settings/PreferencesTab";
 import { SyncTab } from "@/comps/settings/SyncTab";
 import { Tabs } from "@/comps/ui/Tabs";
 
-const tabs = [
-	{ id: "sync", label: "Sync" },
-	{ id: "preferences", label: "Preferences" },
-	{ id: "data", label: "Backup and data" },
-	{ id: "about", label: "About" },
-] as const;
+const tabIds = ["sync", "preferences", "data", "about"] as const;
 
-type SettingsTabId = (typeof tabs)[number]["id"];
+type SettingsTabId = (typeof tabIds)[number];
 
 const parseTab = (value: string | null): SettingsTabId =>
-	tabs.find((tab) => tab.id === value)?.id ?? "sync";
+	tabIds.find((id) => id === value) ?? "sync";
 
 function SettingsContent() {
+	const t = useTranslations("settings.page");
 	const router = useRouter();
 	const activeTab = parseTab(useSearchParams().get("tab"));
 
 	return (
 		<>
-			<PageHeader
-				title="Settings"
-				subline="Manage your data, sync, chief settings and appearance"
-			/>
+			<PageHeader title={t("title")} subline={t("subline")} />
 			<Tabs
-				label="Settings"
-				tabs={[...tabs]}
+				label={t("tabsLabel")}
+				tabs={tabIds.map((id) => ({ id, label: t(`tabs.${id}`) }))}
 				activeId={activeTab}
 				onChange={(id) => router.replace(`/settings?tab=${id}`, { scroll: false })}
 			>

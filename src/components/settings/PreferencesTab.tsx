@@ -1,11 +1,13 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { usePlaythrough } from "@/lib/contexts/PlaythroughContext";
 import { useMediaQuery } from "@/lib/hooks/useMediaQuery";
 import { useUiSettings } from "@/lib/hooks/useUiSettings";
-import { themeOptions } from "@/data/settings";
+import { themeIds } from "@/data/settings";
 import { RadioGroup } from "@/comps/ui/RadioGroup";
 import { SwitchRow } from "@/comps/ui/Switch";
+import { RegionCard } from "./RegionCard";
 import { SettingsCard } from "./SettingsCard";
 
 function GroupLabel({ children }: { children: string }) {
@@ -17,67 +19,64 @@ function GroupLabel({ children }: { children: string }) {
 }
 
 export function PreferencesTab() {
+	const t = useTranslations("settings.preferences");
 	const { settings, updateSettings } = usePlaythrough();
 	const { ui, setUi } = useUiSettings();
 	const systemIsDark = useMediaQuery("(prefers-color-scheme: dark)");
+	const themeOptions = themeIds.map((id) => ({ id, label: t(`themes.${id}`) }));
+	const systemTheme = t(systemIsDark ? "themes.dark" : "themes.light");
 
 	return (
 		<div className="grid items-start gap-4 lg:grid-cols-2">
-			<SettingsCard title="Chief settings" description="Apply to every chief. Saved at once.">
-				<GroupLabel>Furnace display</GroupLabel>
+			<SettingsCard
+				title={t("chiefSettings.title")}
+				description={t("chiefSettings.description")}
+			>
+				<GroupLabel>{t("chiefSettings.groups.furnaceDisplay")}</GroupLabel>
 				<SwitchRow
-					label="Show full level labels"
-					description="Shows the sub level on the Furnace, for example FC 5-2 instead of FC 5, in the sidebar, on Overview and on Buildings. Other buildings already show their full label."
+					label={t("chiefSettings.fullLevelLabels.label")}
+					description={t("chiefSettings.fullLevelLabels.description")}
 					checked={ui.furnaceFullLabels}
 					onChange={(checked) => setUi({ furnaceFullLabels: checked })}
 				/>
-				<GroupLabel>Lists</GroupLabel>
+				<GroupLabel>{t("chiefSettings.groups.lists")}</GroupLabel>
 				<SwitchRow
-					label="Hide maxed items"
-					description="Hides buildings, heroes, pets and experts that are at their top level. Each list keeps a Show maxed filter, so nothing is lost."
+					label={t("chiefSettings.hideMaxed.label")}
+					description={t("chiefSettings.hideMaxed.description")}
 					checked={ui.hideMaxed}
 					onChange={(checked) => setUi({ hideMaxed: checked })}
 				/>
-				<GroupLabel>Default calculator options</GroupLabel>
+				<GroupLabel>{t("chiefSettings.groups.calculatorOptions")}</GroupLabel>
 				<SwitchRow
-					label="Apply my Bonuses totals"
-					description="New calculators start with the construction speed percent from the Bonuses page. A calculator can still change it for one run."
+					label={t("chiefSettings.useBonuses.label")}
+					description={t("chiefSettings.useBonuses.description")}
 					checked={ui.calcUseBonuses}
 					onChange={(checked) => setUi({ calcUseBonuses: checked })}
 				/>
 				<SwitchRow
-					label="Show speedup minutes"
-					description="Shows the speedup minutes needed under the time in each calculator result."
+					label={t("chiefSettings.showSpeedups.label")}
+					description={t("chiefSettings.showSpeedups.description")}
 					checked={ui.calcShowSpeedups}
 					onChange={(checked) => setUi({ calcShowSpeedups: checked })}
 				/>
 				<SwitchRow
-					label="Show event points"
-					description="Adds the event points line to calculator results that return it."
+					label={t("chiefSettings.showEventPoints.label")}
+					description={t("chiefSettings.showEventPoints.description")}
 					checked={ui.calcShowEventPoints}
 					onChange={(checked) => setUi({ calcShowEventPoints: checked })}
 				/>
-				<p className="text-muted">
-					Changing an option inside a calculator does not change these defaults. The
-					Furnace display only changes how a level is written, never the level itself.
-					Adding or deleting a chief never resets these settings.
-				</p>
+				<p className="text-muted">{t("chiefSettings.footnote")}</p>
 			</SettingsCard>
-			<SettingsCard
-				title="Appearance"
-				description="Pick how the app looks. Saved with your data."
-			>
+			<SettingsCard title={t("appearance.title")} description={t("appearance.description")}>
 				<RadioGroup
-					label="Theme"
+					label={t("appearance.themeLabel")}
 					options={themeOptions}
 					value={settings.theme ?? "system"}
 					onChange={(theme) => updateSettings({ theme })}
 				/>
-				<p className="text-muted">
-					System follows your device and is {systemIsDark ? "Dark" : "Light"} right now.
-					This choice is part of your backup.
-				</p>
+				<p className="text-muted">{t("appearance.themeNote", { current: systemTheme })}</p>
 			</SettingsCard>
+			<RegionCard />
 		</div>
 	);
 }

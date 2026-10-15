@@ -1,0 +1,221 @@
+{
+    "chiefCount": "{count, plural, one {{amount} chief} other {{amount} chiefs}}",
+    "localStorageNote": {
+        "title": "Local storage.",
+        "body": "Your chiefs are stored in this browser only. They are lost if the browser cache is cleared. Export a backup regularly."
+    },
+    "page": {
+        "title": "Settings",
+        "subline": "Manage your data, sync, chief settings and appearance",
+        "tabsLabel": "Settings",
+        "tabs": {
+            "sync": "Sync",
+            "preferences": "Preferences",
+            "data": "Backup and data",
+            "about": "About"
+        }
+    },
+    "about": {
+        "version": "Version {version}",
+        "summary": "Track your Whiteout Survival progress: buildings, heroes, chief gear, experts, pets, troops, research, alliance tech, resources and your planner. Everything is stored in this browser, with optional sync to your own cloud storage.",
+        "wiki": "Whiteout Survival wiki",
+        "disclaimer": "Not affiliated with or endorsed by Century Games. Whiteout Survival is a trademark of Century Games."
+    },
+    "sync": {
+        "title": "Sync across devices",
+        "description": "Keep your chiefs the same on your computer and your phone. Sync is optional and free.",
+        "notConnected": "Not connected",
+        "comingLater": "Coming later",
+        "providers": {
+            "googleDrive": "Google Drive",
+            "dropbox": "Dropbox",
+            "oneDrive": "OneDrive",
+            "gitHub": "GitHub"
+        }
+    },
+    "preferences": {
+        "chiefSettings": {
+            "title": "Chief settings",
+            "description": "Apply to every chief. Saved at once.",
+            "footnote": "Changing an option inside a calculator does not change these defaults. The Furnace display only changes how a level is written, never the level itself. Adding or deleting a chief never resets these settings.",
+            "groups": {
+                "furnaceDisplay": "Furnace display",
+                "lists": "Lists",
+                "calculatorOptions": "Default calculator options"
+            },
+            "fullLevelLabels": {
+                "label": "Show full level labels",
+                "description": "Shows the sub level on the Furnace, for example FC 5-2 instead of FC 5, in the sidebar, on Overview and on Buildings. Other buildings already show their full label."
+            },
+            "hideMaxed": {
+                "label": "Hide maxed items",
+                "description": "Hides buildings, heroes, pets and experts that are at their top level. Each list keeps a Show maxed filter, so nothing is lost."
+            },
+            "useBonuses": {
+                "label": "Apply my Bonuses totals",
+                "description": "New calculators start with the construction speed percent from the Bonuses page. A calculator can still change it for one run."
+            },
+            "showSpeedups": {
+                "label": "Show speedup minutes",
+                "description": "Shows the speedup minutes needed under the time in each calculator result."
+            },
+            "showEventPoints": {
+                "label": "Show event points",
+                "description": "Adds the event points line to calculator results that return it."
+            }
+        },
+        "appearance": {
+            "title": "Appearance",
+            "description": "Pick how the app looks. Saved with your data.",
+            "themeLabel": "Theme",
+            "themeNote": "System follows your device and is {current} right now. This choice is part of your backup."
+        },
+        "themes": {
+            "light": "Light",
+            "dark": "Dark",
+            "system": "System"
+        }
+    },
+    "data": {
+        "backupDownloaded": "Backup downloaded",
+        "merged": "Backup merged",
+        "replaced": "Backup replaced",
+        "undo": "Undo",
+        "resetDone": "All data reset",
+        "resetDoneMessage": "{chiefs} removed and settings cleared.",
+        "management": {
+            "title": "Data management",
+            "description": "One backup file holds every chief and your settings."
+        },
+        "export": {
+            "title": "Export data",
+            "description": "Download a backup file of all your saved chiefs. File name: <file>{fileName}</file>. The date is your local day.",
+            "button": "Export all chiefs"
+        },
+        "import": {
+            "title": "Import data",
+            "description": "Upload a previously exported file (.json). It is checked first, then you choose Merge or Replace and see what changes. Nothing changes until you confirm.",
+            "chooseFile": "Choose file",
+            "noFile": "No file chosen",
+            "review": "Review import"
+        },
+        "reset": {
+            "title": "Reset all data",
+            "warningTitle": "Warning:",
+            "warning": "This will delete all chiefs and reset your chief settings and theme. You can undo for 10 seconds, so export a backup first if you want to keep a copy.",
+            "button": "Reset all data"
+        },
+        "chiefs": {
+            "title": "Chiefs",
+            "description": "Create, rename, edit and delete chiefs on their own page. Export, import and reset apply to all of them.",
+            "manage": "Manage chiefs"
+        }
+    },
+    "importDialog": {
+        "title": "Import backup",
+        "cancel": "Cancel",
+        "close": "Close",
+        "merge": "Merge",
+        "replace": "Replace",
+        "failedTitle": "Import failed.",
+        "checksTitle": "Checks on the file.",
+        "checks": "The chiefs list was found and {count, plural, one {{amount} entry was} other {{amount} entries were}} read. Nothing has been saved yet, so your current chiefs are untouched.",
+        "howToApply": "How should the file be applied?",
+        "modeLabel": "Import mode",
+        "modes": {
+            "merge": "Merge (recommended)",
+            "replace": "Replace everything on this device"
+        },
+        "modeNotes": {
+            "merge": "Adds chiefs that are new and keeps the newer copy of a chief that is in both. Chiefs only on this device stay. Your settings stay.",
+            "replace": "Removes every chief on this device and loads the file as it is, including its settings. Use this to restore an exact copy."
+        },
+        "whatChanges": "What changes",
+        "columns": {
+            "chief": "Chief",
+            "inFile": "In the file",
+            "onDevice": "On this device",
+            "result": "Result"
+        },
+        "results": {
+            "added": "Added",
+            "updated": "Updated from the file",
+            "kept": "Kept the copy on this device",
+            "replaced": "Loaded from the file",
+            "removed": "Removed"
+        },
+        "notThere": "Not there",
+        "noChiefs": "No chiefs in the file.",
+        "undoNote": "Undo stays available for 10 seconds after the import.",
+        "bytes": "{amount} B",
+        "kilobytes": "{amount} KB",
+        "fileInfo": "{name} · {size}"
+    },
+    "resetDialog": {
+        "title": "Reset all data",
+        "cancel": "Cancel",
+        "confirm": "Yes, reset all data",
+        "question": "Delete all {chiefs} from this browser?",
+        "removedTitle": "What is removed",
+        "settingsNote": "Your Light, Dark or System choice returns to System. Chief settings return to their defaults. The active chief is cleared.",
+        "undoNote": "Undo stays available for 10 seconds after the reset. Export a backup first if you want a file copy that stays.",
+        "exportFirst": "Export backup first"
+    },
+    "backup": {
+        "notJson": "The file is not valid JSON. Nothing was changed.",
+        "noChiefsList": "The chiefs list is missing. Nothing was changed.",
+        "duplicateId": "Two chiefs share one id. Nothing was changed.",
+        "withNothingChanged": "{reason} Nothing was changed.",
+        "chief": {
+            "notObject": "Chief {position} is not an object.",
+            "noId": "Chief {position} has no id.",
+            "noName": "Chief {position} has no name.",
+            "noDates": "Chief {position} is missing its dates.",
+            "badStateNumber": "Chief {position} has a state number that is not a whole number.",
+            "badCoreEvent": "Chief {position} has an unknown Core event."
+        },
+        "settings": {
+            "notObject": "The settings are not an object.",
+            "badTheme": "The theme is not Light, Dark or System.",
+            "notText": "The {key} setting is not text.",
+            "uiNotObject": "The interface settings are not an object."
+        },
+        "summary": {
+            "added": "{amount} added",
+            "updated": "{amount} updated from the file",
+            "kept": "{amount} kept as on this device",
+            "replaced": "{amount} loaded from the file",
+            "removed": "{amount} removed"
+        }
+    },
+    "region": {
+        "title": "Language and region",
+        "description": "Pick the language and how numbers and dates are written. Saved with your data.",
+        "language": {
+            "label": "Language",
+            "hint": "Names of heroes, items, buildings and research come from the game data and stay in English for now."
+        },
+        "numberFormat": {
+            "label": "Number format",
+            "hint": "Example: {example}",
+            "options": {
+                "auto": "Automatic, follows the language",
+                "us": "1,234.56 (United States)",
+                "european": "1.234,56 (Germany)",
+                "french": "1 234,56 (France)",
+                "swiss": "1’234.56 (Switzerland)",
+                "indian": "12,34,567.89 (India)"
+            }
+        },
+        "dateFormat": {
+            "label": "Date format",
+            "hint": "Example: {example}",
+            "options": {
+                "auto": "Automatic, follows the language",
+                "mdy": "Month/Day/Year",
+                "dmy": "Day/Month/Year",
+                "ymd": "Year-Month-Day"
+            }
+        }
+    }
+}

@@ -1,0 +1,244 @@
+{
+    "page": { "title": "Heroes" },
+    "view": {
+        "tabsLabel": "Heroes",
+        "heroesTab": "Heroes",
+        "gearTab": "Hero Gear",
+        "heroesSubline": "{chief} · {owned} of {total} owned",
+        "gearSubline": "{chief} · {count, plural, one {{amount} gear set} other {{amount} gear sets}}"
+    },
+    "common": {
+        "owned": "Owned",
+        "ownedLabel": "{hero} owned",
+        "starLabel": "{hero} star",
+        "levelLabel": "{hero} level",
+        "talentLabel": "{hero} talent",
+        "skillLabel": "{hero} {skill}",
+        "weaponLevelLabel": "{hero} {weapon} level",
+        "shardsOwnedLabel": "{hero} shards owned",
+        "starAndTier": "Star and tier",
+        "level": "Level",
+        "noGoal": "No goal",
+        "shards": "Shards",
+        "totalPower": "Total power",
+        "unknown": "Unknown",
+        "plan": "Plan",
+        "generation": "Gen {generation}",
+        "exploration": "Exploration",
+        "expedition": "Expedition",
+        "talent": "Talent",
+        "maxLevelSuffix": "/ {max}",
+        "heroCount": "{count, plural, one {{amount} hero} other {{amount} heroes}}"
+    },
+    "goalText": { "to": "to {goal}" },
+    "card": {
+        "summary": "{rarity} · {heroClass} · {generation}",
+        "talentRow": "Talent {name}",
+        "shardsOf": "of {needed}",
+        "enoughShards": " Enough shards",
+        "shortBy": " Short by {amount}",
+        "gearSet": "Gear set",
+        "notOwnedHint": "Turn on Owned to track star, level and skills.",
+        "details": "Details"
+    },
+    "tab": {
+        "stats": {
+            "generations": "Generations unlocked",
+            "generationsValue": "0 to {max}",
+            "heroesOwned": "Heroes owned of those unlocked",
+            "legendaryOwned": "Legendary owned of those unlocked",
+            "atMaxLevel": "At level 80",
+            "heroPower": "Hero power",
+            "heroPowerUnknown": "Hero power, {amount} Unknown left out",
+            "withGoal": "With a goal"
+        },
+        "search": {
+            "label": "Search heroes",
+            "placeholder": "Search {amount} heroes by name"
+        },
+        "filters": "Filters",
+        "maxOut": "Max out",
+        "status": "Showing {shown} of {total} heroes. Generations 0 to {max} are unlocked on this chief. Goals are read only here and are set in Plan.",
+        "empty": {
+            "title": "No heroes match",
+            "description": "Change the search or reset the filters to see every hero.",
+            "reset": "Reset"
+        },
+        "showMore": "Show more, {amount} more {count, plural, one {hero} other {heroes}}",
+        "toast": {
+            "notOwnedTitle": "{name} not owned",
+            "notOwnedMessage": "Its star, level and skills are kept for when you turn Owned on again.",
+            "undo": "Undo",
+            "maxedTitle": "Heroes maxed out",
+            "maxedMessage": "{heroes} updated."
+        }
+    },
+    "filtersFlyout": {
+        "title": "Filters",
+        "description": "Choose which heroes the page shows",
+        "reset": "Reset",
+        "show": "Show {heroes}",
+        "all": "All",
+        "generation": "Generation",
+        "rarity": "Rarity",
+        "heroClass": "Class",
+        "ownership": "Ownership",
+        "order": "Order",
+        "notSaved": "Filters are not saved.",
+        "rarities": {
+            "Legendary": "Legendary",
+            "Epic": "Epic",
+            "Rare": "Rare"
+        },
+        "classes": {
+            "Infantry": "Infantry",
+            "Lancer": "Lancer",
+            "Marksman": "Marksman"
+        },
+        "ownershipOptions": {
+            "all": "All",
+            "owned": "Owned",
+            "notOwned": "Not owned"
+        },
+        "orderOptions": {
+            "owned": "Owned first, then latest generation",
+            "generation": "Generation, latest first",
+            "name": "Name, A to Z",
+            "power": "Total power, highest first"
+        }
+    },
+    "maxOut": {
+        "title": "Max out heroes",
+        "scopeLabel": "Heroes to max out",
+        "scope": {
+            "owned": "Owned heroes",
+            "unlocked": "All unlocked heroes, marked as owned",
+            "selected": "Choose heroes, marked as owned"
+        },
+        "searchLabel": "Search heroes to choose",
+        "searchPlaceholder": "Search heroes by name",
+        "selectShown": "Select shown",
+        "clear": "Clear",
+        "ownedTag": "owned",
+        "starAndTier": "Star and tier to 5.0",
+        "level": "Level to 80",
+        "levelHint": "Turn off when the skills are maxed and the level of older heroes stays at 1.",
+        "skills": "Skills to 5",
+        "skillsHint": "Exploration, Expedition and Talent.",
+        "weapon": "Exclusive weapon to 10",
+        "note": "Anything switched off stays as it is. Shard counts and goals are not changed. You can undo after applying.",
+        "cancel": "Cancel",
+        "apply": "Max out {heroes}"
+    },
+    "flyout": {
+        "fallbackTitle": "Hero",
+        "description": "{rarity} {heroClass}, generation {generation}",
+        "done": "Done",
+        "status": {
+            "title": "Status",
+            "furnaceNeeded": "Furnace needed for level {level}",
+            "met": "Met",
+            "needsFurnace": "Needs Furnace {required}",
+            "levelPower": "Level power",
+            "skillPower": "Skill power",
+            "starPower": "Star power",
+            "weaponPower": "Weapon power",
+            "totalPower": "Total power",
+            "note": "Power counts the level, the skills, the star label and the weapon level."
+        },
+        "skills": {
+            "title": "Skills",
+            "aside": "Five levels per skill",
+            "toLevel": "To {level}: {manuals} manuals",
+            "needsStar": "Needs star {star}",
+            "starMet": "Star {star} met",
+            "talentTop": "Talent is at its top level.",
+            "talentNeedsStar": "Level {level} needs star {star}",
+            "talentStarMet": "Level {level}: star {star} met"
+        },
+        "weapon": {
+            "title": "Exclusive weapon: {name}",
+            "level": "Weapon level",
+            "widgetsForLevel": "Widgets for level {level}",
+            "widgetsForLevels": "Widgets for levels {from} to {to}",
+            "expeditionBonus": "Expedition bonus",
+            "bonus": "Lethality {lethality}% · Health {health}%",
+            "power": "Weapon power",
+            "unlocksAt": "Unlocks at weapon level {level}"
+        },
+        "shards": {
+            "title": "Shards",
+            "owned": "Shards owned",
+            "goal": "Goal",
+            "neededForGoal": "Needed for goal {goal}",
+            "enough": "Enough shards",
+            "shortBy": "Short by",
+            "yes": "Yes",
+            "sources": "Shard sources"
+        },
+        "stats": {
+            "title": "Stats at level 80",
+            "explorationAt": "Exploration at {stars}",
+            "expeditionAt": "Expedition at {stars}",
+            "explorationFull": "Exploration at 5.0",
+            "expeditionFull": "Expedition at 5.0",
+            "exploration": "Atk {attack} · Def {defense} · HP {health}",
+            "expedition": "Atk {attack}% · Def {defense}%",
+            "estimate": "Estimate"
+        }
+    },
+    "plan": {
+        "title": "Plan Heroes",
+        "description": "Shards, skill manuals and Widgets from current to goal",
+        "saved": "Plan saved {date}",
+        "close": "Close",
+        "save": "Save plan",
+        "noHeroes": "No heroes in the plan yet. Add an owned hero above, then raise its goals.",
+        "add": {
+            "title": "Add a hero",
+            "allIn": "Every owned hero is in the plan. Turn on Owned for a hero to plan it.",
+            "selectLabel": "Hero to add",
+            "button": "Add hero"
+        },
+        "block": {
+            "remove": "Remove {hero} from the plan",
+            "starTo": "{stars} to",
+            "starGoal": "{hero} star goal",
+            "levelTo": "{current} to",
+            "goalLabel": "{hero} {name} goal",
+            "note": "Current values come from the hero on the page. Change them there."
+        },
+        "unmet": {
+            "title": "Skill levels need a higher star.",
+            "item": "{hero}: {skill} level {level} needs star {star}",
+            "message": "{items}. Raise the star goal or lower the skill goal."
+        },
+        "shardsUsed": "Shards used: {own} from the hero and {general} general, {total} in all. A hero uses its own shards first.",
+        "result": {
+            "title": "Result, {steps} steps",
+            "widgets": "Widgets",
+            "weaponSkills": "{count, plural, one {{amount} weapon skill unlocked} other {{amount} weapon skills unlocked}}",
+            "note": "Power is not part of Plan Heroes. The calculator returns no time and takes no speed input.",
+            "heads": {
+                "hero": "Hero",
+                "starSteps": "Star steps",
+                "skillLevels": "Skill levels",
+                "shards": "Shards",
+                "widgets": "Widgets"
+            }
+        },
+        "events": {
+            "svs": "SvS State of Power",
+            "allianceShowdown": "Alliance Showdown",
+            "kingOfIcefield": "King of Icefield",
+            "hallOfChief": "Hall of Chief"
+        }
+    },
+    "service": {
+        "generalShard": {
+            "Legendary": "Mythic General Hero Shard",
+            "Epic": "Epic General Hero Shard",
+            "Rare": "Rare General Hero Shard"
+        }
+    }
+}

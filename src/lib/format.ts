@@ -1,52 +1,50 @@
-const numberFormat = new Intl.NumberFormat("en-US");
+import { formatNumber, translator } from "@/i18n/formatter";
 
-export const formatNumber = (value: number) => numberFormat.format(value);
-
-const compactUnits = [
-  { limit: 1_000_000_000, suffix: "B" },
-  { limit: 1_000_000, suffix: "M" },
-  { limit: 1_000, suffix: "K" },
-];
-
-/**
- * Shortens a count for tight rows, for example 4,200,000 becomes 4.2M. Counts below 1,000 stay whole.
- */
-export const formatCompact = (value: number) => {
-  const unit = compactUnits.find(({ limit }) => value >= limit);
-  if (!unit) return formatNumber(value);
-
-  const scaled = value / unit.limit;
-  return `${scaled.toFixed(1).replace(/\.0$/, "")}${unit.suffix}`;
-};
+export {
+  formatCompact,
+  formatDateTime,
+  formatDecimal,
+  formatNumber,
+  formatShortDate,
+  formatTime,
+} from "@/i18n/formatter";
 
 const SECONDS_PER_MINUTE = 60;
 const SECONDS_PER_HOUR = 3_600;
 const SECONDS_PER_DAY = 86_400;
 
 /**
- * Writes a time as its two largest parts, for example 2 days 5 hours becomes 2d 5h.
+ * Writes a time as its two largest parts, for example 2 days 5 hours becomes 2d 5h. The unit
+ * letters come from the language catalog.
  */
 export const formatDuration = (totalSeconds: number) => {
+  const t = translator("common");
   const parts = [
-    { value: Math.floor(totalSeconds / SECONDS_PER_DAY), unit: "d" },
+    {
+      value: Math.floor(totalSeconds / SECONDS_PER_DAY),
+      key: "duration.days" as const,
+    },
     {
       value: Math.floor((totalSeconds % SECONDS_PER_DAY) / SECONDS_PER_HOUR),
-      unit: "h",
+      key: "duration.hours" as const,
     },
     {
       value: Math.floor((totalSeconds % SECONDS_PER_HOUR) / SECONDS_PER_MINUTE),
-      unit: "m",
+      key: "duration.minutes" as const,
     },
-    { value: totalSeconds % SECONDS_PER_MINUTE, unit: "s" },
+    {
+      value: totalSeconds % SECONDS_PER_MINUTE,
+      key: "duration.seconds" as const,
+    },
   ];
   const firstUsed = parts.findIndex((part) => part.value > 0);
-  if (firstUsed === -1) return "0s";
+  if (firstUsed === -1) return t("duration.zero");
 
   return parts
     .slice(firstUsed, firstUsed + 2)
     .filter((part) => part.value > 0)
-    .map((part) => `${part.value}${part.unit}`)
-    .join(" ");
+    .map((part) => t(part.key, { value: formatNumber(part.value) }))
+    .join(t("duration.separator"));
 };
 
 /**
@@ -68,13 +66,9 @@ export const formatFurnaceShort = (label: string, fullLabels: boolean) => {
  * The time left on a running upgrade. At zero it says Ready to finish, because an upgrade never
  * finishes by itself.
  */
-export const formatTimeLeft = (seconds: number) =>
-  seconds === 0 ? "Ready to finish" : `${formatDuration(seconds)} left`;
-
-export const formatDateTime = (iso: string) =>
-  new Date(iso).toLocaleString("en-US", {
-    month: "short",
-    day: "numeric",
-    hour: "numeric",
-    minute: "2-digit",
-  });
+export const formatTimeLeft = (seconds: number) => {
+  const t = translator("common");
+  return seconds === 0
+    ? t("timeLeft.ready")
+    : t("timeLeft.left", { duration: formatDuration(seconds) });
+};

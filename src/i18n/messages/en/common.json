@@ -1,0 +1,19 @@
+{
+    "duration": {
+        "days": "{value}d",
+        "hours": "{value}h",
+        "minutes": "{value}m",
+        "seconds": "{value}s",
+        "zero": "0s",
+        "separator": " "
+    },
+    "timeLeft": {
+        "left": "{duration} left",
+        "ready": "Ready to finish"
+    },
+    "saveFailed": {
+        "title": "Not saved",
+        "message": "Browser storage is full. Export a backup now.",
+        "exportBackup": "Export backup"
+    }
+}

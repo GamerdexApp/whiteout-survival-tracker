@@ -1,3 +1,4 @@
+import { translator } from "@/i18n/formatter";
 import type {
   AppData,
   CoreEventId,
@@ -5,6 +6,7 @@ import type {
   Settings,
   Theme,
 } from "@/types/app";
+import { formatNumber } from "@/lib/format";
 import {
   allCoreEventIds,
   DEFAULT_HERO_GENERATION,
@@ -22,18 +24,19 @@ const isNonEmptyString = (value: unknown): value is string =>
   typeof value === "string" && value.trim() !== "";
 
 const parseChief = (value: unknown, position: number): Playthrough | string => {
-  const label = `Chief ${position}`;
-  if (!isRecord(value)) return `${label} is not an object.`;
-  if (!isNonEmptyString(value.id)) return `${label} has no id.`;
-  if (!isNonEmptyString(value.name)) return `${label} has no name.`;
+  const t = translator("settings");
+  const values = { position: formatNumber(position) };
+  if (!isRecord(value)) return t("backup.chief.notObject", values);
+  if (!isNonEmptyString(value.id)) return t("backup.chief.noId", values);
+  if (!isNonEmptyString(value.name)) return t("backup.chief.noName", values);
   if (
     !isNonEmptyString(value.createdAt) ||
     !isNonEmptyString(value.lastModified)
   ) {
-    return `${label} is missing its dates.`;
+    return t("backup.chief.noDates", values);
   }
   if (value.stateNumber !== undefined && !Number.isInteger(value.stateNumber)) {
-    return `${label} has a state number that is not a whole number.`;
+    return t("backup.chief.badStateNumber", values);
   }
   if (value.coreEventsShown !== undefined) {
     const valid =
@@ -41,7 +44,7 @@ const parseChief = (value: unknown, position: number): Playthrough | string => {
       value.coreEventsShown.every((id) =>
         allCoreEventIds.includes(id as CoreEventId),
       );
-    if (!valid) return `${label} has an unknown Core event.`;
+    if (!valid) return t("backup.chief.badCoreEvent", values);
   }
 
   const generation = value.heroGenerationUnlocked;
@@ -59,12 +62,18 @@ const parseChief = (value: unknown, position: number): Playthrough | string => {
 };
 
 const parseSettings = (value: unknown): Settings | string => {
-  if (!isRecord(value)) return "The settings are not an object.";
+  const t = translator("settings");
+  if (!isRecord(value)) return t("backup.settings.notObject");
   if (value.theme !== undefined && !themes.includes(value.theme as Theme)) {
-    return "The theme is not Light, Dark or System.";
+    return t("backup.settings.badTheme");
+  }
+  for (const key of ["language", "numberFormat", "dateFormat"] as const) {
+    if (value[key] !== undefined && typeof value[key] !== "string") {
+      return t("backup.settings.notText", { key });
+    }
   }
   if (value.ui !== undefined && !isRecord(value.ui))
-    return "The interface settings are not an object.";
+    return t("backup.settings.uiNotObject");
   return value as Settings;
 };
 
@@ -73,20 +82,21 @@ const parseSettings = (value: unknown): Settings | string => {
  * file from a later version of the app loads unchanged.
  */
 export const parseBackup = (text: string): ParseResult => {
+  const t = translator("settings");
   let raw: unknown;
   try {
     raw = JSON.parse(text);
   } catch {
     return {
       ok: false,
-      error: "The file is not valid JSON. Nothing was changed.",
+      error: t("backup.notJson"),
     };
   }
 
   if (!isRecord(raw) || !Array.isArray(raw.playthroughs)) {
     return {
       ok: false,
-      error: "The chiefs list is missing. Nothing was changed.",
+      error: t("backup.noChiefsList"),
     };
   }
 
@@ -94,7 +104,10 @@ export const parseBackup = (text: string): ParseResult => {
   for (const [index, value] of raw.playthroughs.entries()) {
     const chief = parseChief(value, index + 1);
     if (typeof chief === "string")
-      return { ok: false, error: `${chief} Nothing was changed.` };
+      return {
+        ok: false,
+        error: t("backup.withNothingChanged", { reason: chief }),
+      };
     playthroughs.push(chief);
   }
 
@@ -103,7 +116,7 @@ export const parseBackup = (text: string): ParseResult => {
   ) {
     return {
       ok: false,
-      error: "Two chiefs share one id. Nothing was changed.",
+      error: t("backup.duplicateId"),
     };
   }
 
@@ -111,7 +124,10 @@ export const parseBackup = (text: string): ParseResult => {
   if (raw.settings !== undefined) {
     const parsed = parseSettings(raw.settings);
     if (typeof parsed === "string")
-      return { ok: false, error: `${parsed} Nothing was changed.` };
+      return {
+        ok: false,
+        error: t("backup.withNothingChanged", { reason: parsed }),
+      };
     settings = parsed;
   }
 
@@ -221,18 +237,16 @@ export const applyImport = (
 };
 
 export const summarizeImport = (rows: ImportRow[]) => {
+  const t = translator("settings");
   const count = (result: ImportRowResult) =>
     rows.filter((row) => row.result === result).length;
-  const parts = [
-    [count("added"), "added"],
-    [count("updated"), "updated from the file"],
-    [count("kept"), "kept as on this device"],
-    [count("replaced"), "loaded from the file"],
-    [count("removed"), "removed"],
-  ] as const;
-  return parts
-    .filter(([amount]) => amount > 0)
-    .map(([amount, label]) => `${amount} ${label}`)
+  const results = ["added", "updated", "kept", "replaced", "removed"] as const;
+  return results
+    .map((result) => ({ result, amount: count(result) }))
+    .filter(({ amount }) => amount > 0)
+    .map(({ result, amount }) =>
+      t(`backup.summary.${result}`, { amount: formatNumber(amount) }),
+    )
     .join(", ");
 };
 

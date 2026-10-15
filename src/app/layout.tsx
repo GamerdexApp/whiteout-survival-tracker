@@ -1,3 +1,4 @@
+import { I18nProvider } from "@/i18n/I18nProvider";
 import type { Metadata } from "next";
 import { IBM_Plex_Mono, IBM_Plex_Sans, Lilita_One } from "next/font/google";
 import { PlaythroughProvider } from "@/lib/contexts/PlaythroughContext";
@@ -76,13 +77,15 @@ export default function RootLayout({
 				<script dangerouslySetInnerHTML={{ __html: applyThemeBeforePaint }} />
 			</head>
 			<body className="min-h-dvh">
-				<UIProvider>
-					<ToastProvider>
-						<PlaythroughProvider>
-							<AppShell>{children}</AppShell>
-						</PlaythroughProvider>
-					</ToastProvider>
-				</UIProvider>
+				<I18nProvider>
+					<UIProvider>
+						<ToastProvider>
+							<PlaythroughProvider>
+								<AppShell>{children}</AppShell>
+							</PlaythroughProvider>
+						</ToastProvider>
+					</UIProvider>
+				</I18nProvider>
 			</body>
 		</html>
 	);

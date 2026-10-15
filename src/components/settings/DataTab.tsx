@@ -1,9 +1,11 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { useRef, useState } from "react";
 import type { ChangeEvent } from "react";
 import { LuDownload, LuUpload } from "react-icons/lu";
 import { usePlaythrough } from "@/lib/contexts/PlaythroughContext";
+import { formatNumber } from "@/lib/format";
 import type { ImportMode } from "@/service/backup";
 import { backupFileName, downloadBackup } from "@/service/backup";
 import { emptyAppData } from "@/service/chiefs";
@@ -16,9 +18,8 @@ import type { ImportFile } from "./ImportDialog";
 import { ResetDialog } from "./ResetDialog";
 import { SettingsCard } from "./SettingsCard";
 
-const countLabel = (count: number) => `${count} ${count === 1 ? "chief" : "chiefs"}`;
-
 export function DataTab() {
+	const t = useTranslations("settings");
 	const showToast = useToast();
 	const { appData, playthroughs, updateData } = usePlaythrough();
 	const fileInputRef = useRef<HTMLInputElement>(null);
@@ -27,10 +28,12 @@ export function DataTab() {
 	const [importMode, setImportMode] = useState<ImportMode>("merge");
 	const [resetOpen, setResetOpen] = useState(false);
 
+	const countLabel = (count: number) => t("chiefCount", { count, amount: formatNumber(count) });
+
 	const exportBackup = () => {
 		showToast({
 			variant: "success",
-			title: "Backup downloaded",
+			title: t("data.backupDownloaded"),
 			message: downloadBackup(appData),
 		});
 	};
@@ -57,9 +60,9 @@ export function DataTab() {
 		if (fileInputRef.current) fileInputRef.current.value = "";
 		showToast({
 			variant: "success",
-			title: mode === "merge" ? "Backup merged" : "Backup replaced",
+			title: mode === "merge" ? t("data.merged") : t("data.replaced"),
 			message: summary,
-			action: { label: "Undo", onAction: () => updateData(() => previous) },
+			action: { label: t("data.undo"), onAction: () => updateData(() => previous) },
 		});
 	};
 
@@ -69,45 +72,43 @@ export function DataTab() {
 		setResetOpen(false);
 		showToast({
 			variant: "warning",
-			title: "All data reset",
-			message: `${countLabel(previous.playthroughs.length)} removed and settings cleared.`,
-			action: { label: "Undo", onAction: () => updateData(() => previous) },
+			title: t("data.resetDone"),
+			message: t("data.resetDoneMessage", {
+				chiefs: countLabel(previous.playthroughs.length),
+			}),
+			action: { label: t("data.undo"), onAction: () => updateData(() => previous) },
 		});
 	};
 
 	return (
 		<div className="grid items-start gap-4 lg:grid-cols-2">
 			<div className="flex flex-col gap-4">
-				<Note title="Local storage.">
-					Your chiefs are stored in this browser only. They are lost if the browser cache
-					is cleared. Export a backup regularly.
-				</Note>
+				<Note title={t("localStorageNote.title")}>{t("localStorageNote.body")}</Note>
 				<SettingsCard
-					title="Data management"
-					description="One backup file holds every chief and your settings."
+					title={t("data.management.title")}
+					description={t("data.management.description")}
 					aside={<Badge tone="added">{countLabel(playthroughs.length)}</Badge>}
 				>
 					<section className="border-line flex flex-col gap-2 border-t-[1.5px] pt-3">
-						<h3 className="font-medium">Export data</h3>
+						<h3 className="font-medium">{t("data.export.title")}</h3>
 						<p className="text-muted">
-							Download a backup file of all your saved chiefs. File name:{" "}
-							<code className="font-mono text-xs break-all">{backupFileName()}</code>.
-							The date is your local day.
+							{t.rich("data.export.description", {
+								fileName: backupFileName(),
+								file: (name) => (
+									<code className="font-mono text-xs break-all">{name}</code>
+								),
+							})}
 						</p>
 						<div>
 							<Button onClick={exportBackup}>
 								<LuDownload size={16} aria-hidden="true" />
-								Export all chiefs
+								{t("data.export.button")}
 							</Button>
 						</div>
 					</section>
 					<section className="border-line flex flex-col gap-2 border-t-[1.5px] pt-3">
-						<h3 className="font-medium">Import data</h3>
-						<p className="text-muted">
-							Upload a previously exported file (.json). It is checked first, then you
-							choose Merge or Replace and see what changes. Nothing changes until you
-							confirm.
-						</p>
+						<h3 className="font-medium">{t("data.import.title")}</h3>
+						<p className="text-muted">{t("data.import.description")}</p>
 						<input
 							ref={fileInputRef}
 							type="file"
@@ -120,24 +121,22 @@ export function DataTab() {
 						<div className="flex flex-wrap items-center gap-3">
 							<Button onClick={() => fileInputRef.current?.click()}>
 								<LuUpload size={16} aria-hidden="true" />
-								Choose file
+								{t("data.import.chooseFile")}
 							</Button>
 							<span className="text-muted break-all">
-								{chosenFile?.name ?? "No file chosen"}
+								{chosenFile?.name ?? t("data.import.noFile")}
 							</span>
 						</div>
 						<div>
 							<Button variant="primary" disabled={!chosenFile} onClick={reviewImport}>
-								Review import
+								{t("data.import.review")}
 							</Button>
 						</div>
 					</section>
 					<section className="border-line flex flex-col gap-2 border-t-[1.5px] pt-3">
-						<h3 className="font-medium">Reset all data</h3>
-						<Note tone="warning" title="Warning:">
-							This will delete all chiefs and reset your chief settings and theme. You
-							can undo for 10 seconds, so export a backup first if you want to keep a
-							copy.
+						<h3 className="font-medium">{t("data.reset.title")}</h3>
+						<Note tone="warning" title={t("data.reset.warningTitle")}>
+							{t("data.reset.warning")}
 						</Note>
 						<div>
 							<Button
@@ -145,19 +144,19 @@ export function DataTab() {
 								disabled={playthroughs.length === 0}
 								onClick={() => setResetOpen(true)}
 							>
-								Reset all data
+								{t("data.reset.button")}
 							</Button>
 						</div>
 					</section>
 				</SettingsCard>
 			</div>
 			<SettingsCard
-				title="Chiefs"
-				description="Create, rename, edit and delete chiefs on their own page. Export, import and reset apply to all of them."
+				title={t("data.chiefs.title")}
+				description={t("data.chiefs.description")}
 				aside={<Badge tone="added">{countLabel(playthroughs.length)}</Badge>}
 			>
 				<div>
-					<ButtonLink href="/chiefs">Manage chiefs</ButtonLink>
+					<ButtonLink href="/chiefs">{t("data.chiefs.manage")}</ButtonLink>
 				</div>
 			</SettingsCard>
 

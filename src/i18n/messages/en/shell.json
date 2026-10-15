@@ -1,0 +1,84 @@
+{
+    "nav": {
+        "main": "Main",
+        "groups": {
+            "chief": "Chief",
+            "alliance": "Alliance",
+            "account": "Account",
+            "planner": "Planner",
+            "wiki": "Wiki"
+        },
+        "items": {
+            "overview": "Overview",
+            "buildings": "Buildings",
+            "daybreakIsland": "Daybreak Island",
+            "heroes": "Heroes",
+            "chiefGear": "Chief Gear",
+            "experts": "Experts",
+            "pets": "Pets",
+            "troops": "Troops",
+            "research": "Research",
+            "alliance": "Alliance",
+            "facilities": "Facilities",
+            "tech": "Tech",
+            "resources": "Resources",
+            "bonuses": "Bonuses",
+            "vip": "VIP",
+            "skins": "Skins",
+            "events": "Events",
+            "tundraAlbum": "Tundra Album",
+            "coreEvents": "Core Events",
+            "dailies": "Dailies",
+            "history": "History",
+            "wikiReference": "Reference",
+            "wikiTimeline": "Timeline",
+            "settings": "Settings",
+            "chiefs": "Chiefs"
+        },
+        "upgradesRunning": ", {amount} {count, plural, one {upgrade} other {upgrades}} running"
+    },
+    "appShell": {
+        "skipToContent": "Skip to content",
+        "closeMenu": "Close menu"
+    },
+    "appBar": {
+        "openMenu": "Open menu"
+    },
+    "chiefGate": {
+        "emptyTitle": "No chief selected",
+        "emptyDescription": "Create a chief to start tracking. Everything stays in this browser.",
+        "newChief": "New chief"
+    },
+    "chiefSwitcher": {
+        "chiefs": "Chiefs",
+        "active": "Active",
+        "allChiefs": "All chiefs",
+        "newChief": "New chief",
+        "loading": "Loading",
+        "noChiefYet": "No chief yet",
+        "sectionLabel": "Chief",
+        "switchChief": "Switch chief"
+    },
+    "footer": {
+        "tagline": "Track your Whiteout Survival chiefs, buildings, heroes and research in one place.",
+        "support": "Support",
+        "about": "About",
+        "wiki": "Whiteout Survival wiki",
+        "disclaimerTitle": "Disclaimer",
+        "disclaimer": "This application is not affiliated with, endorsed by, or connected to Whiteout Survival or Century Games. All trademarks and game content are the property of their respective owners.",
+        "copyright": "© {year} {appName}",
+        "framework": "Built with the Gamerdex framework, a shared base for free game progress trackers. Your data stays in your browser."
+    },
+    "notFound": {
+        "title": "This page does not exist",
+        "description": "The link may be old or mistyped. Your chiefs are safe and nothing was changed.",
+        "didYouMean": "Did you mean <link>{name}</link>?",
+        "goToOverview": "Go to Overview",
+        "jumpTo": "Or jump to"
+    },
+    "placeholder": {
+        "phase": "Phase {phase}",
+        "title": "{name} is not built yet",
+        "description": "This page arrives in phase {phase} of the build."
+    }
+}

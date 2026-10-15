@@ -1,0 +1,116 @@
+{
+    "title": "Bonuses",
+    "all": "All",
+    "list": {
+        "separator": ", ",
+        "andLast": "{rest} and {last}"
+    },
+    "sourceTypes": {
+        "account": "Account",
+        "hero": "Heroes",
+        "expert": "Experts",
+        "research": "Research",
+        "allianceTech": "Alliance Tech",
+        "allianceFacility": "Alliance Facilities",
+        "alliancePrestige": "Alliance Prestige Buildings",
+        "vip": "VIP",
+        "building": "Buildings",
+        "skin": "Skins",
+        "tundraAlbum": "Tundra Album",
+        "collection": "Collection",
+        "decoration": "My Island",
+        "treeOfLife": "My Island",
+        "castleAppointment": "Castle position",
+        "pet": "Pets",
+        "chiefGear": "Chief Gear",
+        "chiefGearSet": "Chief Gear set bonus",
+        "chiefCharm": "Chief Charms",
+        "chiefOrder": "Chief Orders",
+        "presidentSkill": "President skills",
+        "marchQueuePack": "the March Queue pack"
+    },
+    "unit": {
+        "percent": "{value}%",
+        "hours": "{value} h",
+        "seconds": "{value} s",
+        "plain": "{value}"
+    },
+    "view": {
+        "subline": "{name} · every bonus added up from the other pages. This page stores nothing.",
+        "tiles": {
+            "stats": "Stats in the result",
+            "groups": "Groups with stats",
+            "sources": "Source types giving something"
+        },
+        "pending": {
+            "title": "Not every source is counted yet.",
+            "text": "Each source below is read from the page that stores it. Until these pages are built they add nothing: {pending}. {unstored} are not stored by any page yet."
+        },
+        "rulesTitle": "How the numbers are counted",
+        "rules": {
+            "affinity": {
+                "title": "Expert affinity",
+                "text": "An expert gives a base bonus that grows with the affinity level. At levels 10, 20 up to 100 the expert must advance. Until then the bonus of the level before counts."
+            },
+            "albums": {
+                "title": "Albums count when complete",
+                "text": "A Tundra Album gives its buff only when all 9 puzzles are done."
+            },
+            "pets": {
+                "title": "Pets use the refined value",
+                "text": "Each pet counts its normal or its refined value, as you set on the Pets page."
+            },
+            "noNumber": {
+                "title": "No number, not counted",
+                "text": "A source that has no number in the data adds nothing. It is not shown as 0."
+            },
+            "apart": {
+                "title": "Kept apart",
+                "text": "Percent and flat values are never added together. Infantry, Lancer and Marksman stats are separate from Troops stats."
+            },
+            "time": {
+                "title": "Time stats",
+                "text": "Construction Speed Boost is hours saved for each build. Ally Help Time is in seconds. Each shows its unit."
+            }
+        },
+        "search": {
+            "label": "Search stats",
+            "placeholder": "Search stats"
+        },
+        "views": {
+            "label": "View",
+            "stat": "By stat",
+            "source": "By source"
+        },
+        "empty": {
+            "noBonusesTitle": "No bonuses yet",
+            "noBonusesDescription": "Bonuses appear as the pages that store them are filled in.",
+            "noMatchTitle": "No stats match",
+            "noMatchDescription": "Change the search or the group."
+        },
+        "statCount": "{count, plural, one {{amount} stat} other {{amount} stats}}",
+        "sourceCount": "{count, plural, one {{amount} source} other {{amount} sources}}",
+        "columns": {
+            "statAndSource": "Stat and source",
+            "sourceType": "Source type",
+            "counted": "Counted"
+        }
+    },
+    "eventRules": {
+        "title": "Event buff rules",
+        "rows": "eventBuff() has {count} rows",
+        "intro": "It says which bonus kinds still apply during an event. These are rules, not numbers, so nothing here is added to the totals above.",
+        "event": "Event",
+        "columns": {
+            "cityBonusWarsBuffs": "City bonus",
+            "deploymentCapacity": "Deployment",
+            "territoryBonuses": "Territory",
+            "marchAccelerator": "March accel."
+        },
+        "applicability": {
+            "yes": "Yes",
+            "no": "No",
+            "partial": "Partial"
+        }
+    }
+}

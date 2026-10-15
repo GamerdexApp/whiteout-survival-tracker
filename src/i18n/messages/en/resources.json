@@ -1,0 +1,88 @@
+{
+    "title": "Resources",
+    "all": "All",
+    "owned": "Owned",
+    "sources": "Sources",
+    "sourcesUnknown": "Sources unknown",
+    "done": "Done",
+    "undo": "Undo",
+    "list": {
+        "separator": ", ",
+        "andLast": "{rest} and {last}"
+    },
+    "countControl": {
+        "remove": "Remove {step} {name}",
+        "add": "Add {step} {name}",
+        "owned": "{name} owned"
+    },
+    "itemRow": {
+        "edit": "Edit {name}, {count} owned"
+    },
+    "itemSheet": {
+        "title": "Edit owned count",
+        "step": "Step",
+        "setToZero": "Set to 0",
+        "description": "Description",
+        "unknown": "Unknown"
+    },
+    "view": {
+        "subline": "{items} items in {categories} categories",
+        "sublineInCategory": "{items} items in {categories} categories · {inCategory} in {category}",
+        "unsaved": "Unsaved",
+        "shortages": "Planner goals are short on {names}.",
+        "shortagesLink": "Open the Buildings plan",
+        "show": {
+            "label": "Show",
+            "owned": "Owned",
+            "unknown": "Sources unknown"
+        },
+        "speedups": {
+            "none": "None",
+            "noneOwned": "No speedups owned",
+            "owned": "{minutes} min: {parts}",
+            "part": "{count} x {name}",
+            "partSeparator": " + ",
+            "types": {
+                "general": "General",
+                "construction": "Construction",
+                "troop": "Troop training",
+                "research": "Research",
+                "learning": "Learning",
+                "healing": "Healing"
+            }
+        },
+        "search": {
+            "label": "Search items",
+            "placeholder": "Search {total} items"
+        },
+        "setSeveral": "Set several",
+        "showing": {
+            "several": "Showing {visible} of {total} items. Set several is on. Changes wait until you press Save changes.",
+            "instant": "Showing {visible} of {total} items. Every change saves at once."
+        },
+        "empty": {
+            "title": "No items match",
+            "description": "Change the search, the category or the Show filter.",
+            "reset": "Reset filters"
+        },
+        "columns": {
+            "item": "Item"
+        },
+        "bar": {
+            "noChanges": "No unsaved changes",
+            "changes": "{count, plural, one {{amount} unsaved change} other {{amount} unsaved changes}}",
+            "discard": "Discard",
+            "save": "Save changes"
+        },
+        "toast": {
+            "setToZero": "{name} set to 0",
+            "savedTitle": "Counts saved",
+            "savedMessage": "{count, plural, one {{amount} count} other {{amount} counts}} changed."
+        }
+    },
+    "planStock": {
+        "constructionTime": "Construction time, as speedups",
+        "researchTime": "Research time, as speedups",
+        "minutesUnit": "min"
+    }
+}

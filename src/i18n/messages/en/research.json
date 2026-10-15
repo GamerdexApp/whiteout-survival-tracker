@@ -1,0 +1,295 @@
+{
+    "title": "Research",
+    "unknown": "Unknown",
+    "nodeCount": "{count, plural, one {{amount} node} other {{amount} nodes}}",
+    "jobTitle": "{name}, level {from} to {to}",
+    "tabs": {
+        "growth": "Growth",
+        "economy": "Economy",
+        "battle": "Battle",
+        "war-academy-troops": "War Academy T11",
+        "t12-infantry": "Infantry T12",
+        "t12-marksman": "Marksman T12",
+        "t12-lancer": "Lancer T12"
+    },
+    "tier": {
+        "plain": "Tier {tier}",
+        "troopLine": "{line} T{tier}"
+    },
+    "requirement": {
+        "yours": "Yours is {level}",
+        "notBuilt": "Not built",
+        "researchLevel": "{name} level {level}",
+        "yoursLevel": "Yours is level {level}",
+        "notReleased": "{id} (not released yet)"
+    },
+    "tabLock": {
+        "unknownAge": "{tab} research opens at server age {days} days. Yours is unknown. Add a server start date in Edit chief.",
+        "knownAge": "{tab} research opens at server age {days} days. Yours is {yours}."
+    },
+    "option": {
+        "label": "{name}, {tab}, level {from} to {to}",
+        "subtitle": "Level {from} to level {to}, {tab} tab",
+        "busy": "Busy: {name} level {level}, {timeLeft}"
+    },
+    "nodeCard": {
+        "allResearched": "All levels researched",
+        "nextTime": "Level {level} time: {time}",
+        "power": {
+            "researched": "{power} researched",
+            "next": "+{power} next level",
+            "some": "Power {parts}",
+            "none": "Power 0"
+        },
+        "maxed": "Maxed. {bonus}",
+        "noBonus": "No bonus in the data",
+        "level": "Level {level} / {max}",
+        "goal": "Goal {goal}",
+        "noGoal": "No goal",
+        "progress": "{name} progress",
+        "lockedByTab": "Locked: {reason}",
+        "lockedByRequirement": "Locked: requires {requirement}",
+        "placeholder": "Placeholder. Cost and bonus are empty in the package.",
+        "needsFirst": "Needs {names} first",
+        "researching": "{name} researching",
+        "levelStepper": "{name} level",
+        "detailsOf": "Details of {name}",
+        "details": "Details"
+    },
+    "queuesStrip": {
+        "title": "Research queues",
+        "note": "Growth, Economy and Battle share one queue. T11 and T12 use the War Academy queue.",
+        "idle": "One research at a time. Press Start upgrade to begin one."
+    },
+    "filters": {
+        "title": "Filters",
+        "description": "Choose what the {tab} tab shows",
+        "reset": "Reset",
+        "show": "Show {nodes}",
+        "tier": "Tier",
+        "statusLabel": "Status",
+        "troopLine": "Troop line",
+        "orderLabel": "Order",
+        "notSaved": "Filters are not saved.",
+        "all": "All",
+        "status": {
+            "all": "All",
+            "progress": "In progress",
+            "goal": "Has goal",
+            "maxed": "Maxed",
+            "locked": "Locked",
+            "notStarted": "Not started"
+        },
+        "order": {
+            "game": "Game order",
+            "name": "Name, A to Z",
+            "level": "Level, highest first"
+        }
+    },
+    "massSet": {
+        "stop": "{level} of {max}",
+        "title": "Mass set, {tab}",
+        "description": "Pick a node and a level. Everything before it in the tree goes to max.",
+        "cancel": "Cancel",
+        "set": "Set {nodes}",
+        "node": "Node",
+        "level": "Level",
+        "levelToSet": "Level to set",
+        "whatChanges": "What changes in the {tab} tab",
+        "nothingChanges": "Nothing changes. Every node here is already at or above this.",
+        "change": "{from} to {to}",
+        "hidden": "and {amount} more earlier nodes",
+        "alreadyMax": "{count, plural, one {{amount} earlier node is} other {{amount} earlier nodes are}} already at max and stay as they are. Nodes later in the tree are not touched. A level that is already higher stays.",
+        "blockersTitle": "Some nodes need a building first.",
+        "blocker": "{name} needs {building}",
+        "blockersMore": " and {amount} more",
+        "blockers": "{list}{more}. Pick an earlier node or raise the building on the Buildings page.",
+        "footnote": "Mass set changes the saved levels of this tab only. It never lowers a level. Goals are not changed."
+    },
+    "nodeFlyout": {
+        "fallbackTitle": "Research",
+        "description": "{category}, tier {tier}, {levels} levels",
+        "close": "Close",
+        "unknown": "Unknown",
+        "levelOf": "Level {level} of {max}",
+        "status": {
+            "notStarted": "not started",
+            "maxed": "maxed",
+            "inProgress": "in progress"
+        },
+        "goal": "Goal {goal}",
+        "noGoal": "No goal",
+        "openPlan": "Open Plan",
+        "maxLevel": {
+            "title": "Max level",
+            "nothingLeft": "Nothing left to research.",
+            "noBonus": "No bonus in the data."
+        },
+        "placeholder": {
+            "title": "Placeholder",
+            "description": "This node has no cost and no bonus in the package yet. Research time and cost show Unknown."
+        },
+        "upcoming": {
+            "first": "First levels",
+            "after": "Next levels after {level}",
+            "heads": {
+                "level": "Level",
+                "bonus": "Bonus",
+                "time": "Time",
+                "power": "Power"
+            },
+            "goalBadge": "Goal",
+            "noBonus": "None",
+            "shaded": "Shaded rows are the levels between your level and your goal."
+        },
+        "cost": {
+            "title": "Cost of the next levels",
+            "level": "Lvl"
+        },
+        "total": {
+            "title": "Total to your goal, level {level} to {goal}",
+            "knownTime": "Known research time",
+            "power": "Power",
+            "missingTimes": "{count, plural, one {{amount} level has} other {{amount} levels have}} no time in the package and count as 0 here."
+        },
+        "requirements": {
+            "title": "Requirements for level {level}",
+            "none": "No requirements.",
+            "met": "Met",
+            "notMet": "Not met",
+            "later": "Later levels ask for: {list}."
+        }
+    },
+    "tree": {
+        "legend": {
+            "max": "Max",
+            "inProgress": "In progress",
+            "notStarted": "Not started",
+            "locked": "Locked"
+        },
+        "pillMax": "Max {max}",
+        "pillLevel": "Lv {level} of {max}",
+        "region": "{tab} research tree",
+        "openNode": "{name}, {pill}. Open details"
+    },
+    "plan": {
+        "title": "Plan Research",
+        "description": "Resources, time and power from current level to goal",
+        "saved": "Plan saved {date}",
+        "close": "Close",
+        "save": "Save plan",
+        "goals": "Goals, {nodes}",
+        "noGoals": "No goals yet. Add a research node above, then pick the level you want it to reach.",
+        "goalsHint": "The current level is the one on the page. Change it there. Goals are read only on the page and are set here.",
+        "failed": "The plan could not be worked out.",
+        "timeNote": "The plan takes {time} after the {percent}% speed bonus. Your stock: Research {research} min, General {general} min. General speedups count toward research.",
+        "percent": "{value}%",
+        "percentPlus": "+{value}%",
+        "appointment": {
+            "none": "None",
+            "regular": "Regular",
+            "supreme": "Supreme"
+        },
+        "add": {
+            "title": "Add a research node",
+            "none": "Every node is already in the plan or at its top level.",
+            "select": "Research node to add",
+            "button": "Add research"
+        },
+        "speed": {
+            "title": "Research speed",
+            "readOnly": "Read only",
+            "carriedOver": "Carried over from the Bonuses page.",
+            "turnedOff": "Turned off in Settings, under Apply my Bonuses totals.",
+            "openBonuses": "Open Bonuses",
+            "stateBuff": "State buff",
+            "vicePresident": "Vice president",
+            "total": "Total research speed"
+        },
+        "goal": {
+            "level": "Level {level}",
+            "to": "to",
+            "label": "{name} goal",
+            "remove": "Remove {name} from the plan"
+        },
+        "result": {
+            "title": "Result, {steps} steps",
+            "powerGained": "Power gained",
+            "speedupMinutes": "Speedup minutes needed",
+            "baseTime": "Base time",
+            "timeWithBonus": "Time with {percent}% bonus",
+            "stepsWithoutTime": "{count, plural, one {{amount} step has} other {{amount} steps have}} no time in the package and count as 0 seconds.",
+            "stepCount": "{count, plural, one {{amount} step} other {{amount} steps}}",
+            "buildingRequirements": "Building requirements",
+            "unmet": "Unmet prerequisites",
+            "unmetNone": "None for these goals.",
+            "unmetItem": "{name} level {level} needs {requires} level {requiresLevel}"
+        }
+    },
+    "view": {
+        "ofTotal": "{count} of {total}",
+        "undo": "Undo",
+        "massSetApplied": {
+            "title": "Mass set applied",
+            "message": "{nodes} updated."
+        },
+        "started": {
+            "title": "Research started",
+            "message": "{name}, level {from} to {to}."
+        },
+        "manage": {
+            "slotLabel": "{queue}, {category}",
+            "finishText": "Finish upgrade sets {name} to level {level}, frees the {queue} queue and adds the upgrade to your History. At zero time left the node and the queue card say Ready to finish. Nothing finishes by itself, because you may have used speedups."
+        },
+        "finished": {
+            "title": "{name} researched",
+            "message": "Now level {level}. Added to History."
+        },
+        "cancelled": {
+            "title": "{name} research cancelled",
+            "message": "The level stays as it was. Fix your stock on Resources if needed."
+        },
+        "subline": {
+            "researchCenter": "Research Center {level}",
+            "warAcademy": "War Academy {level}"
+        },
+        "stats": {
+            "maxed": "Nodes maxed, {percent}% of the tree",
+            "power": "Research power, the power of every researched level",
+            "withoutTimeNone": "Without research time, every level has one",
+            "withoutTimeSome": "Without research time, shown as Unknown",
+            "locked": "Locked by server age or requirements"
+        },
+        "tabLockedNote": "{reason} You can still set goals in Plan.",
+        "lockedByRequirement": "{count} of {total} nodes in this tab are locked by a requirement.",
+        "search": {
+            "label": "Search nodes",
+            "placeholder": "Search nodes by name or bonus"
+        },
+        "massSet": "Mass set",
+        "layout": {
+            "label": "Layout",
+            "grid": "Grid",
+            "tree": "Tree"
+        },
+        "plan": "Plan",
+        "status": {
+            "tree": "{count} nodes in the {tab} tree. Research power in this tab: {power}. Scroll to pan. Nodes that do not match the search or filters are dimmed.",
+            "grid": "Showing {shown} of {count} {tab} nodes. Research power in this tab: {power}. Goals are read only here and are set in Plan."
+        },
+        "empty": {
+            "title": "No nodes match",
+            "description": "Change the search or reset the filters to see every node.",
+            "reset": "Reset search and filters"
+        },
+        "start": {
+            "description": "Mark a research as upgrading",
+            "selectLabel": "Research to upgrade",
+            "selectHelp": "Only research you can start now is listed. Locked, maxed and running research is left out. A Growth, Economy or Battle research uses the Research queue. A T11 or T12 research uses the War Academy queue.",
+            "timeLabel": "Research time",
+            "speedLabel": "Research speed",
+            "slotLabel": "Queue",
+            "slotHelp": "One research at a time in each queue. When the queue is busy this card says when it frees."
+        }
+    }
+}

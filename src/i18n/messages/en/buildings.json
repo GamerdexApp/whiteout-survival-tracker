@@ -1,0 +1,267 @@
+{
+    "title": "Buildings",
+    "tabs": {
+        "buildings": "Buildings",
+        "facilities": "Facilities"
+    },
+    "notBuilt": "Not built",
+    "built": "Built",
+    "none": "None",
+    "unknown": "Unknown",
+    "close": "Close",
+    "cancel": "Cancel",
+    "undo": "Undo",
+    "ofTotal": "{count} of {total}",
+    "noOtherRequirements": "No other requirements",
+    "builderName": "Builder {number}",
+    "shelterName": "Shelter {number}",
+    "levelOf": "{name} level",
+    "levelRange": "{from} to {to}",
+    "requirement": {
+        "shelter": "{building} at level {level}",
+        "heroHall": "Hero Hall built",
+        "level": "{building} {level}"
+    },
+    "columns": {
+        "building": "Building",
+        "current": "Current",
+        "goal": "Goal",
+        "power": "Power",
+        "progress": "Progress and next level",
+        "upgrade": "Upgrade"
+    },
+    "entry": {
+        "notes": {
+            "furnace": "Gates every other building",
+            "shelter": "Up to 8 shelters, each with its own level"
+        },
+        "subline": {
+            "size": "Max {max} · {count} levels",
+            "withNote": "{note} · {size}",
+            "single": "Single build · {power} power"
+        },
+        "progress": {
+            "requires": "Requires {list}",
+            "noRequirements": "No requirements",
+            "maxLevel": "Max level",
+            "blocked": "Blocked: needs {list}",
+            "needs": "Needs {list}"
+        },
+        "builtSwitch": "{name} built",
+        "shelters": {
+            "none": "None built",
+            "editLabel": "Edit shelter levels",
+            "button": "Shelters ({count})"
+        },
+        "levels": "Levels",
+        "levelsLabel": "Levels of {name}",
+        "upgrading": "{name} upgrading",
+        "startLabel": "Start upgrade of {name}",
+        "start": "Start",
+        "startUpgrade": "Start upgrade",
+        "devIndex": "Dev. index {value}",
+        "powerLine": "Power {power} · Dev. index {index}",
+        "progressLabel": "{name} progress"
+    },
+    "builders": {
+        "label": "Builders",
+        "hint": "An upgrade you start here shows on Overview as a running queue.",
+        "idle": "Press Start on a building to begin an upgrade.",
+        "jobTitle": "{name}, {from} to {to}"
+    },
+    "upgrade": {
+        "option": "{subject}, {from} to {to}",
+        "busy": "Busy: {name} to {level}, {timeLeft}"
+    },
+    "facilities": {
+        "intro": "Facilities in your city. Mark the ones you have built. These are city facilities, not the alliance facilities on the Alliance menu.",
+        "builtLabel": "Facilities built",
+        "unlockedLabel": "Unlocked at your Furnace level",
+        "requires": "Requires Furnace {level}",
+        "unlocksAt": "Unlocks at Furnace {level}"
+    },
+    "tab": {
+        "intro": "Current level and goal for every building. Furnace sets what the rest can reach.",
+        "searchLabel": "Search buildings",
+        "filters": "Filters",
+        "massEdit": "Mass edit",
+        "startUpgrade": "Start upgrade",
+        "plan": "Plan",
+        "status": "Showing {shown} of {total} buildings. Goals are read only here and are set in Plan. A goal equal to the current level means no goal. Steppers move one level at a time along the game order.",
+        "groupPinned": "Pinned",
+        "stats": {
+            "furnace": "Furnace, gates every other building",
+            "power": "Current power, all buildings",
+            "developmentIndex": "Development index, all buildings",
+            "withGoal": "Buildings with a goal",
+            "atMax": "At max level",
+            "entertainment": "Entertainment built"
+        },
+        "empty": {
+            "title": "No buildings match",
+            "description": "Change the search or reset the filters to see every building.",
+            "reset": "Reset search and filters"
+        },
+        "start": {
+            "description": "Mark a building as upgrading",
+            "selectLabel": "Building to upgrade",
+            "selectHelp": "Only buildings you can start now are listed. Locked, maxed and running buildings are left out. Each upgrade uses one of the two builders.",
+            "timeLabel": "Construction time",
+            "speedLabel": "Construction speed",
+            "slotLabel": "Builder",
+            "slotHelp": "Pick an idle builder. A busy builder shows when it frees."
+        },
+        "toasts": {
+            "started": {
+                "title": "Upgrade started",
+                "message": "{name}, {subtitle}."
+            },
+            "finished": {
+                "title": "{name} upgraded",
+                "message": "Now {level}. Added to History."
+            },
+            "cancelled": {
+                "title": "{name} upgrade cancelled",
+                "message": "The level stays as it was. Fix your stock on Resources if needed."
+            },
+            "massEdit": {
+                "title": "Mass edit applied",
+                "message": "{count, plural, one {{amount} building} other {{amount} buildings}} updated."
+            }
+        },
+        "manage": {
+            "finishText": "Finish upgrade sets {name} to {level}, frees Builder {builder} and adds the upgrade to your History. At zero time left the building and the builder card say Ready to finish. Nothing finishes by itself, because you may have used speedups."
+        }
+    },
+    "filters": {
+        "title": "Filters",
+        "description": "Choose what the Buildings list shows",
+        "reset": "Reset",
+        "show": "{count, plural, one {Show {amount} building} other {Show {amount} buildings}}",
+        "category": "Category",
+        "categoryAll": "All, {count}",
+        "categoryOption": "{category}, {count}",
+        "showSection": "Show",
+        "hideMaxed": "Hide maxed buildings",
+        "hideLocked": "Hide locked buildings",
+        "goalsOnly": "Only buildings with a goal",
+        "order": "Order",
+        "orders": {
+            "game": "Game order, Furnace first",
+            "name": "Name, A to Z",
+            "progress": "Progress, lowest first"
+        },
+        "pinned": "Furnace stays pinned at the top whatever the filter. Filters are not saved."
+    },
+    "levels": {
+        "title": "Levels",
+        "description": "{category} · Max {max} · {count} levels",
+        "noDescription": "No description in the data yet.",
+        "current": "Current level",
+        "goal": "Goal level",
+        "nextNeeds": "Next level needs",
+        "noGoal": "No goal",
+        "tableNote": "This table lists only the levels after your current one, since those are done.",
+        "maxed": "Max level. Nothing is left to upgrade.",
+        "nextAfter": "Next levels after {level}",
+        "first": "First levels",
+        "level": "Level",
+        "time": "Time",
+        "power": "Power",
+        "capacity": "Capacity",
+        "requires": "Requires",
+        "goalBadge": "Goal",
+        "capacityNote": "Capacity is only set on tier base rows in the package, so sub-levels show Unknown."
+    },
+    "massEdit": {
+        "title": "Mass edit buildings",
+        "description": "Set many buildings at once. Nothing is saved until you press Set buildings.",
+        "noChanges": "No changes yet",
+        "changes": "{count, plural, one {{amount} building changes} other {{amount} buildings change}}",
+        "set": "{count, plural, one {Set {amount} building} other {Set {amount} buildings}}",
+        "raiseTitle": "Raise every building to a level",
+        "raiseLabel": "Raise all buildings to level",
+        "raiseAll": "Raise all",
+        "raiseHint": "Each building goes up to its highest level at or below this one. A building that is already higher stays, and one that starts later stays not built. Goals are not changed.",
+        "blockedTitle": "Some buildings need another building first.",
+        "blocked": "{count, plural, one {{amount} building is} other {{amount} buildings are}} above what its requirements allow.",
+        "lowerBlocked": "Lower them to what is allowed",
+        "levels": "Levels",
+        "needsFirst": "Needs {list} first",
+        "was": "was {level}",
+        "entertainment": "Entertainment",
+        "markAllBuilt": "Mark all built",
+        "clearAll": "Clear all",
+        "footnote": "Mass edit changes saved levels only. It never lowers a level on its own and never changes goals. Shelters have a level each, so set them with the Shelters button, and set the Hero Hall on the Facilities tab."
+    },
+    "shelters": {
+        "title": "Shelters",
+        "description": "Up to {max} can be built. Set the level of each one.",
+        "locked": "The Shelter is still locked by your Furnace level.",
+        "empty": "No shelters yet.",
+        "power": "Power {power}",
+        "add": "Add shelter",
+        "remove": "Remove Shelter {number}",
+        "allBuilt": "All {max} shelters are built.",
+        "furnaceNeeds": "What your Furnace needs from shelters",
+        "requirement": "Furnace {furnaceLevel} needs Shelter {number} at level {level}.",
+        "met": "Met.",
+        "notMet": "Not met.",
+        "footnote": "The Plan and the progress bar use your lowest shelter, the next one to upgrade."
+    },
+    "plan": {
+        "title": "Plan Buildings",
+        "description": "Resources, time and power from current level to goal",
+        "saved": "Plan saved {time}",
+        "save": "Save plan",
+        "failed": "The plan could not be worked out.",
+        "goalsHeading": "{count, plural, one {Goals, {amount} building} other {Goals, {amount} buildings}}",
+        "noGoals": "No goals yet. Add a building above, then pick the level you want it to reach.",
+        "prerequisiteNote": "Prerequisite steps are added for you. A level that needs another building at a higher level counts those steps and flags them.",
+        "timeNote": "The plan takes {time} after the {percent}% speed bonus. Your stock: Construction {construction} min, General {general} min. General speedups count toward construction.",
+        "add": {
+            "title": "Add a building",
+            "allAdded": "Every building is already in the plan.",
+            "selectLabel": "Building to add",
+            "button": "Add building"
+        },
+        "speed": {
+            "title": "Construction speed",
+            "percent": "{value}%",
+            "plusPercent": "+{value}%",
+            "readOnly": "Read only",
+            "bonusesOn": "Carried over from the Bonuses page.",
+            "bonusesOff": "Turned off in Settings, under Apply my Bonuses totals.",
+            "openBonuses": "Open Bonuses",
+            "appointment": "President perks and appointment",
+            "appointments": {
+                "none": "None",
+                "regular": "Regular",
+                "supreme": "Supreme"
+            },
+            "appointmentNote": "Regular 10 percent, Supreme 15 percent. <strong>Estimate:</strong> the package states these values for research only.",
+            "petSkill": "Pet skill, Builder's Aide",
+            "petSkillNote": "The percent is managed by the Pets page. The switch stays off until that page can tell if the Cave Hyena is unlocked.",
+            "chiefOrder": "Chief order, Double Time",
+            "chiefOrderNote": "<strong>Estimate:</strong> adds {percent} percent construction speed for 5 minutes. The package has no chief order data, so the value is entered by the app and applied to the whole time.",
+            "total": "Total construction speed"
+        },
+        "goal": {
+            "to": "to",
+            "label": "{name} goal",
+            "remove": "Remove {name} from the plan"
+        },
+        "result": {
+            "title": "Result, {count} steps",
+            "powerGained": "Power gained",
+            "speedupMinutes": "Speedup minutes needed",
+            "baseTime": "Base time",
+            "timeWithBonus": "Time with {percent}% bonus",
+            "eventPoints": "Event points: SvS {svs}, King of Icefield {king} (<strong>Estimate</strong>, from the scoring rows of events).",
+            "prerequisite": "Prerequisite",
+            "steps": "{count, plural, one {{amount} step} other {{amount} steps}}",
+            "unmetHeading": "Unmet prerequisites",
+            "unmetNone": "None for these goals. A building outside the list, such as Hero Hall, would show here."
+        }
+    }
+}

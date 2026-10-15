@@ -1,0 +1,109 @@
+{
+    "unknown": "Unknown",
+    "describe": {
+        "state": "State {number}",
+        "empty": "No details yet"
+    },
+    "coreEvents": {
+        "svs": "SvS",
+        "showdown": "Alliance Showdown",
+        "king": "King of Icefield",
+        "hall": "Hall of Chief"
+    },
+    "count": "{count, plural, one {{amount} chief} other {{amount} chiefs}}",
+    "card": {
+        "active": "Active",
+        "noNotes": "No notes",
+        "furnace": "Furnace",
+        "state": "State",
+        "created": "Created: {date}",
+        "lastModified": "Last modified: {date}",
+        "setActive": "Set as active",
+        "edit": "Edit",
+        "delete": "Delete"
+    },
+    "dialog": {
+        "editTitle": "Edit chief",
+        "newTitle": "New chief",
+        "newDescription": "Name it. The rest is optional.",
+        "cancel": "Cancel",
+        "save": "Save changes",
+        "create": "Create chief",
+        "errors": {
+            "name": "Enter a name for this chief.",
+            "stateNumber": "Enter a whole number from 1 to {max}.",
+            "serverStartDate": "Enter a date that is not in the future."
+        },
+        "name": "Name",
+        "stateNumber": {
+            "label": "State number",
+            "hint": "The state your chief lives in. Whole number."
+        },
+        "serverStartDate": {
+            "label": "Server start date",
+            "info": {
+                "label": "Where to find the server start date",
+                "screen": "Open the game and go to the Server screen from your profile.",
+                "date": "Read the date the server opened. If it only shows the server day number, count back that many days from today.",
+                "missing": "No date on screen? Ask your alliance leader or check state chat.",
+                "tolerance": "A date within 21 days either way is enough. Research unlocks use 150 and 600 days, so three weeks of error rarely changes the result."
+            }
+        },
+        "generation": {
+            "label": "Heroes unlocked up to",
+            "hint": "Heroes of later generations stay hidden on the Heroes page and in Plan.",
+            "preLegendary": "Generation 0 (pre-Legendary)",
+            "numbered": "Generation {generation}"
+        },
+        "events": {
+            "legend": "Core events shown",
+            "shownOf": "{shown} of {total}",
+            "hint": "Hidden events leave the Core events tabs and their Event log. Turn them back on any time."
+        },
+        "notes": "Notes"
+    },
+    "delete": {
+        "title": "Delete chief",
+        "cancel": "Cancel",
+        "confirmButton": "Delete chief",
+        "confirm": "Are you sure you want to delete “<strong>{name}</strong>”?",
+        "summary": "{details} · created {date}",
+        "note": "This removes the chief and all of its levels, goals and notes from this device. There is no way to bring it back after the 10 second Undo ends.",
+        "exportBackup": "Export a backup first"
+    },
+    "page": {
+        "title": "Chiefs",
+        "newChief": "New chief",
+        "sort": {
+            "label": "Sort by",
+            "options": {
+                "lastModified": "Last modified",
+                "createdAt": "Date created",
+                "name": "Name"
+            }
+        },
+        "subline": {
+            "none": "No chiefs yet.",
+            "total": "{chiefs}.",
+            "withActive": "{chiefs}. {name} is active."
+        },
+        "toasts": {
+            "backupTitle": "Backup downloaded",
+            "deleted": "{name} deleted",
+            "undo": "Undo"
+        },
+        "loading": "Reading saved data from this browser. The list appears when it is ready.",
+        "empty": {
+            "title": "No chiefs yet",
+            "description": "Create a chief to track buildings, heroes, gear, research and your upgrade plan. Everything stays in this browser.",
+            "restore": "Restore a backup in Settings"
+        },
+        "search": {
+            "label": "Search by name",
+            "showing": "Showing {shown} of {total}",
+            "noMatchTitle": "No chiefs match “{search}”",
+            "noMatchDescription": "Check the spelling or clear the search to see all {count} chiefs.",
+            "clear": "Clear search"
+        }
+    }
+}

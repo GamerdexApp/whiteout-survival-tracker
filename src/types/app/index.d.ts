@@ -10,8 +10,15 @@ export interface UiSettings {
   calcShowEventPoints?: boolean;
 }
 
+/**
+ * Language and region choices are saved as text. A value this version does not know, such as a
+ * language from a newer backup, reads as the default.
+ */
 export interface Settings {
   theme?: Theme;
+  language?: string;
+  numberFormat?: string;
+  dateFormat?: string;
   ui?: UiSettings;
 }
 

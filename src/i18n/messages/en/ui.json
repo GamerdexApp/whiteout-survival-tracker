@@ -1,0 +1,35 @@
+{
+    "close": "Close",
+    "field": {
+        "optional": "Optional"
+    },
+    "stepper": {
+        "lower": "Lower {label}",
+        "raise": "Raise {label}",
+        "labelPrefix": "{label}, "
+    },
+    "switch": {
+        "on": "On",
+        "off": "Off"
+    },
+    "tabs": {
+        "locked": " (locked)"
+    },
+    "toast": {
+        "dismiss": "Dismiss",
+        "variants": {
+            "success": "Success",
+            "info": "Info",
+            "warning": "Warning",
+            "error": "Error"
+        },
+        "missingProvider": "useToast must be used within a ToastProvider"
+    },
+    "savedChip": {
+        "automatic": "Saves automatically",
+        "justNow": "Saved just now",
+        "minutesAgo": "Saved {count} min ago",
+        "at": "Saved {time}",
+        "failed": "Not saved, storage is full"
+    }
+}

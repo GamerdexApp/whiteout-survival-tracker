@@ -1,0 +1,94 @@
+{
+    "hoursMinutes": {
+        "hours": "Hours",
+        "minutes": "Minutes"
+    },
+    "jobCard": {
+        "idle": "Idle",
+        "progress": "{title} progress",
+        "ends": "Ends {date}",
+        "manage": "Manage"
+    },
+    "timeLeftPill": {
+        "manage": "{label}, {timeLeft}. Manage upgrade"
+    },
+    "manage": {
+        "fallbackTitle": "Manage upgrade",
+        "description": "Manage the running upgrade",
+        "close": "Close",
+        "finish": "Finish upgrade",
+        "progress": "Upgrade progress",
+        "started": "Started {date}",
+        "ends": "Ends {date}",
+        "speedup": {
+            "title": "Used a speedup",
+            "minutesUsed": "Minutes used",
+            "apply": "Apply",
+            "timeLeftAfter": "Time left after applying",
+            "hint": "Speedups of any kind subtract their minutes from the time left."
+        },
+        "setTime": {
+            "title": "Set the time left",
+            "button": "Set the time left",
+            "hint": "Use this when the game shows a different time."
+        },
+        "done": {
+            "title": "When it is done",
+            "cancel": "Cancel this upgrade"
+        }
+    },
+    "planStock": {
+        "title": "Do you have enough?",
+        "shortCount": "{short} of {total} short",
+        "description": "What the plan takes from your stock, checked against what you hold. The full plan is in the result below.",
+        "enough": "Enough",
+        "notEnough": "Not enough",
+        "covered": "{name} covered",
+        "available": "Available {amount}",
+        "needed": "Needed {amount}",
+        "leftOver": "{amount} left over",
+        "shortBy": "Short by {amount}",
+        "stillNeeded": "Still needed for the full plan: {list}.",
+        "openResources": "Open Resources"
+    },
+    "start": {
+        "title": "Start upgrade",
+        "cancel": "Cancel",
+        "nothingToStart": "Nothing can be started right now. Every item is at its top level, locked, or already upgrading.",
+        "powerGained": "Power gained",
+        "packageTime": "Package time",
+        "unknown": "Unknown",
+        "readOnly": "Read only",
+        "openBonuses": "Open Bonuses",
+        "yourTime": "Your time",
+        "timeHint": "Only the speed from your Bonuses page is counted. If the game shows another time, change it under When it started.",
+        "allBusy": "Everything here is busy. Start upgrade is off until one frees.",
+        "whenStarted": "When it started",
+        "timeLeftHours": "Time left, hours",
+        "ends": "Ends",
+        "startedHint": "Pick Already started to enter the time the game shows. The end time is worked out from it.",
+        "takeCost": {
+            "title": "Take the cost from Resources",
+            "hint": "Subtracts the cost above from your stock.",
+            "enough": "You have enough of every resource.",
+            "short": "You are short on {names}. You can still start, and the stock stops at 0."
+        },
+        "modes": {
+            "now": "Starting now",
+            "already": "Already started"
+        }
+    },
+    "researchQueues": {
+        "label": "{name}, {tabs}",
+        "main": {
+            "name": "Research queue",
+            "tabs": "Growth, Economy and Battle",
+            "shortName": "Research"
+        },
+        "warAcademy": {
+            "name": "War Academy queue",
+            "tabs": "T11 and T12",
+            "shortName": "War Academy"
+        }
+    }
+}

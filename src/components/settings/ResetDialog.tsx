@@ -1,6 +1,8 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import type { Playthrough } from "@/types/app";
+import { formatNumber } from "@/lib/format";
 import { Button } from "@/comps/ui/Button";
 import { Dialog } from "@/comps/ui/Dialog";
 import { Note } from "@/comps/ui/Note";
@@ -20,44 +22,39 @@ export function ResetDialog({
 	onExportBackup,
 	onConfirm,
 }: ResetDialogProps) {
-	const count = `${chiefs.length} ${chiefs.length === 1 ? "chief" : "chiefs"}`;
+	const t = useTranslations("settings");
+	const count = t("chiefCount", { count: chiefs.length, amount: formatNumber(chiefs.length) });
 
 	return (
 		<Dialog
 			open={open}
 			onClose={onClose}
-			title="Reset all data"
+			title={t("resetDialog.title")}
 			footer={
 				<>
 					<Button data-autofocus onClick={onClose}>
-						Cancel
+						{t("resetDialog.cancel")}
 					</Button>
 					<Button variant="danger" onClick={onConfirm}>
-						Yes, reset all data
+						{t("resetDialog.confirm")}
 					</Button>
 				</>
 			}
 		>
-			<p className="font-medium">Delete all {count} from this browser?</p>
+			<p className="font-medium">{t("resetDialog.question", { chiefs: count })}</p>
 			<div className="flex flex-col gap-1">
-				<h3 className="text-muted text-xs">What is removed</h3>
+				<h3 className="text-muted text-xs">{t("resetDialog.removedTitle")}</h3>
 				<ul className="list-inside list-disc">
 					{chiefs.map((chief) => (
 						<li key={chief.id}>{chief.name}</li>
 					))}
 				</ul>
 			</div>
-			<p className="text-muted">
-				Your Light, Dark or System choice returns to System. Chief settings return to their
-				defaults. The active chief is cleared.
-			</p>
-			<Note>
-				Undo stays available for 10 seconds after the reset. Export a backup first if you
-				want a file copy that stays.
-			</Note>
+			<p className="text-muted">{t("resetDialog.settingsNote")}</p>
+			<Note>{t("resetDialog.undoNote")}</Note>
 			<div>
 				<Button variant="ghost" className="text-link -ml-4" onClick={onExportBackup}>
-					Export backup first
+					{t("resetDialog.exportFirst")}
 				</Button>
 			</div>
 		</Dialog>

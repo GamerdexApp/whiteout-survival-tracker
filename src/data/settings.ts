@@ -8,8 +8,4 @@ export const defaultUiSettings: Required<UiSettings> = {
   calcShowEventPoints: false,
 };
 
-export const themeOptions: { id: Theme; label: string }[] = [
-  { id: "light", label: "Light" },
-  { id: "dark", label: "Dark" },
-  { id: "system", label: "System" },
-];
+export const themeIds: Theme[] = ["light", "dark", "system"];
