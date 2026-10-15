@@ -29,6 +29,36 @@ interface ResearchTreeProps {
 
 type Point = { x: number; y: number };
 
+// Room to keep clear between a caption and the node under it, so the tier badge that hangs over the
+// top of a node never touches the level pill above.
+const STACK_GAP = 12;
+
+/**
+ * The layout of the package spaces nodes in a column for a one line label. A node with its two line
+ * name and level pill is taller, so a column of nodes that are close together overlaps. This
+ * stretches every vertical position by the smallest factor that clears the tightest column. A tab
+ * with enough room is left as it is.
+ */
+const spacedTab = (nodes: ResearchTreeNode[], height: number) => {
+	const below = (node: ResearchTreeNode) => (node.labelAbove ? 0 : labelHeight);
+	const above = (node: ResearchTreeNode) => (node.labelAbove ? labelHeight : 0);
+
+	let factor = 1;
+	for (const upper of nodes) {
+		for (const lower of nodes) {
+			const distance = lower.y - upper.y;
+			if (distance <= 0 || Math.abs(lower.x - upper.x) >= nodeWidth) continue;
+			const needed = nodeHeight + below(upper) + above(lower) + STACK_GAP;
+			factor = Math.max(factor, needed / distance);
+		}
+	}
+
+	return {
+		nodes: nodes.map((node) => ({ ...node, y: node.y * factor })),
+		height: height * factor,
+	};
+};
+
 /**
  * The line of a link. A vertical link leaves the bottom of the parent and enters the top of the
  * child, a horizontal one leaves the right side and enters the left side, and an up link leaves the
@@ -101,7 +131,8 @@ export function ResearchTree({ tabId, views, visibleIds, onOpen }: ResearchTreeP
 
 	const researchTab = researchTabs.find((item) => item.id === tabId);
 	const name = researchTab ? tabName(researchTab) : tab.name;
-	const nodesById = new Map(tab.nodes.map((node) => [node.id, node]));
+	const spaced = spacedTab(tab.nodes, tab.height);
+	const nodesById = new Map(spaced.nodes.map((node) => [node.id, node]));
 	const viewsById = new Map(views.map((view) => [view.node.id, view]));
 
 	return (
@@ -113,11 +144,11 @@ export function ResearchTree({ tabId, views, visibleIds, onOpen }: ResearchTreeP
 				aria-label={t("region", { tab: name })}
 				tabIndex={0}
 			>
-				<div className="relative" style={{ width: tab.width, height: tab.height }}>
+				<div className="relative" style={{ width: tab.width, height: spaced.height }}>
 					<svg
 						aria-hidden="true"
 						width={tab.width}
-						height={tab.height}
+						height={spaced.height}
 						className="text-muted pointer-events-none absolute inset-0"
 					>
 						{tab.edges.map((edge) => {
@@ -135,7 +166,7 @@ export function ResearchTree({ tabId, views, visibleIds, onOpen }: ResearchTreeP
 							);
 						})}
 					</svg>
-					{tab.nodes.map((node) => {
+					{spaced.nodes.map((node) => {
 						const view = viewsById.get(node.id);
 						const left = node.x - HALF_WIDTH;
 						const top = node.labelAbove
