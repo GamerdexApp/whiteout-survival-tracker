@@ -51,11 +51,12 @@ export function DataTab() {
 
 	const confirmImport = (next: typeof appData, summary: string, mode: ImportMode) => {
 		const previous = updateData(() => next);
+		if (!previous) return;
 		setReviewedFile(null);
 		setChosenFile(null);
 		if (fileInputRef.current) fileInputRef.current.value = "";
 		showToast({
-			variant: "undo",
+			variant: "success",
 			title: mode === "merge" ? "Backup merged" : "Backup replaced",
 			message: summary,
 			action: { label: "Undo", onAction: () => updateData(() => previous) },
@@ -64,9 +65,10 @@ export function DataTab() {
 
 	const confirmReset = () => {
 		const previous = updateData(() => emptyAppData());
+		if (!previous) return;
 		setResetOpen(false);
 		showToast({
-			variant: "undo",
+			variant: "warning",
 			title: "All data reset",
 			message: `${countLabel(previous.playthroughs.length)} removed and settings cleared.`,
 			action: { label: "Undo", onAction: () => updateData(() => previous) },

@@ -1,13 +1,20 @@
 interface ProgressBarProps {
 	value: number;
 	label: string;
+	tone?: "primary" | "kept" | "warn";
 	className?: string;
 }
 
 /**
  * `value` runs from 0 to 1. The label names what the bar measures for screen readers.
  */
-export function ProgressBar({ value, label, className = "" }: ProgressBarProps) {
+const toneClasses = {
+	primary: "bg-primary",
+	kept: "bg-kept",
+	warn: "bg-warn",
+};
+
+export function ProgressBar({ value, label, tone = "primary", className = "" }: ProgressBarProps) {
 	const percent = Math.round(Math.min(1, Math.max(0, value)) * 100);
 
 	return (
@@ -19,7 +26,10 @@ export function ProgressBar({ value, label, className = "" }: ProgressBarProps) 
 			aria-valuenow={percent}
 			className={`bg-track h-2 overflow-hidden rounded-full ${className}`}
 		>
-			<div className="bg-primary h-full rounded-full" style={{ width: `${percent}%` }} />
+			<div
+				className={`${toneClasses[tone]} h-full rounded-full`}
+				style={{ width: `${percent}%` }}
+			/>
 		</div>
 	);
 }

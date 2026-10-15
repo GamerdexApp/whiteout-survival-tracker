@@ -16,4 +16,11 @@ for folder in "${FOLDERS[@]}"; do
   cp -r "$PACKAGE_DIR/$folder" "$TARGET_DIR/$folder"
 done
 
+# Hero shards are items, so the Resources page needs their icons before the Heroes page copies the
+# whole folder.
+(cd "$PACKAGE_DIR" && find heroes -name '*-Shard.png') | while read -r file; do
+  mkdir -p "$TARGET_DIR/$(dirname "$file")"
+  cp "$PACKAGE_DIR/$file" "$TARGET_DIR/$file"
+done
+
 echo "Copied ${FOLDERS[*]} from whiteout-survival-data to $TARGET_DIR"

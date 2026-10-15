@@ -10,8 +10,10 @@ export interface PlaythroughContextType {
   saveFailed: boolean;
   /**
    * Saves the result of `update` and returns the data as it was before, so a caller can offer Undo.
+   * It returns null when the browser could not store the data. The Not saved toast is already
+   * shown then, so the caller stops and shows no success message.
    */
-  updateData: (update: (current: AppData) => AppData) => AppData;
+  updateData: (update: (current: AppData) => AppData) => AppData | null;
   setActivePlaythrough: (id: string | null) => void;
   updateSettings: (updates: Partial<Settings>) => void;
 }

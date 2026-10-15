@@ -6,8 +6,6 @@ import { Badge } from "@/comps/ui/Badge";
 import { Card } from "@/comps/ui/Card";
 
 const buildPhaseByHref: Record<string, number> = {
-	"/resources": 4,
-	"/bonuses": 4,
 	"/research": 5,
 	"/heroes": 6,
 	"/chief-gear": 6,

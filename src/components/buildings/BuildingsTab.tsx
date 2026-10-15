@@ -226,10 +226,10 @@ export function BuildingsTab({ chief }: { chief: Playthrough }) {
 				chief={chief}
 				onClose={() => setMassEditOpen(false)}
 				onSave={(draft, changeCount) => {
-					change((current) => applyDraft(current, draft));
+					if (!change((current) => applyDraft(current, draft))) return;
 					setMassEditOpen(false);
 					showToast({
-						variant: "undo",
+						variant: "success",
 						title: "Mass edit applied",
 						message: `${changeCount} ${changeCount === 1 ? "building" : "buildings"} updated.`,
 						action: { label: "Undo", onAction: () => change(() => chief) },

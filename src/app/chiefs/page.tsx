@@ -62,13 +62,13 @@ function ChiefsContent() {
 	const closeCreateDialog = () => router.replace("/chiefs", { scroll: false });
 
 	const createChief = (values: ChiefValues) => {
-		updateData((current) => addChief(current, values));
+		if (!updateData((current) => addChief(current, values))) return;
 		router.push("/overview");
 	};
 
 	const saveChief = (values: ChiefValues) => {
 		if (!editingChief) return;
-		updateData((current) => updateChief(current, editingChief.id, values));
+		if (!updateData((current) => updateChief(current, editingChief.id, values))) return;
 		setEditingChief(null);
 	};
 
@@ -82,10 +82,10 @@ function ChiefsContent() {
 
 	const deleteChief = (chief: Playthrough) => {
 		const wasActive = chief.id === appData.activePlaythroughId;
-		updateData((current) => removeChief(current, chief.id));
+		if (!updateData((current) => removeChief(current, chief.id))) return;
 		setDeletingChief(null);
 		showToast({
-			variant: "undo",
+			variant: "warning",
 			title: `${chief.name} deleted`,
 			action: {
 				label: "Undo",

@@ -37,7 +37,7 @@ export function PlaythroughProvider({ children }: { children: React.ReactNode })
 				action: { label: "Export backup", onAction: () => downloadBackup(next) },
 			});
 		}
-		return previous;
+		return saved ? previous : null;
 	};
 
 	const activePlaythrough =

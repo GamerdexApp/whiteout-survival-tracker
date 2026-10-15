@@ -16,11 +16,7 @@ export const formatCompact = (value: number) => {
   if (!unit) return formatNumber(value);
 
   const scaled = value / unit.limit;
-  const text =
-    scaled >= 100
-      ? Math.round(scaled).toString()
-      : scaled.toFixed(1).replace(/\.0$/, "");
-  return `${text}${unit.suffix}`;
+  return `${scaled.toFixed(1).replace(/\.0$/, "")}${unit.suffix}`;
 };
 
 const SECONDS_PER_MINUTE = 60;

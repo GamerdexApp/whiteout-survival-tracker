@@ -1,12 +1,12 @@
 "use client";
 
 import React, { createContext, useContext, useEffect, useRef, useState } from "react";
-import { LuX } from "react-icons/lu";
+import type { IconType } from "react-icons";
+import { LuBan, LuCircleCheck, LuInfo, LuTriangleAlert, LuX } from "react-icons/lu";
 import { Button } from "./Button";
 import { IconButton } from "./IconButton";
-import { SectionLabel } from "./SectionLabel";
 
-type ToastVariant = "success" | "info" | "undo" | "error";
+type ToastVariant = "success" | "info" | "warning" | "error";
 
 interface ToastAction {
 	label: string;
@@ -25,20 +25,21 @@ interface ToastItem extends ToastOptions {
 }
 
 const SECOND_MS = 1_000;
+const PLAIN_CLOSE_MS = 6 * SECOND_MS;
+const UNDO_CLOSE_MS = 10 * SECOND_MS;
 
-// An error stays until the player dismisses it.
-const autoCloseMs: Record<ToastVariant, number | null> = {
-	success: 6 * SECOND_MS,
-	info: 6 * SECOND_MS,
-	undo: 10 * SECOND_MS,
-	error: null,
+// An error stays until the player dismisses it. A toast with an action stays longer, so there is
+// time to press it.
+const closeAfterMs = (options: ToastOptions) => {
+	if (options.variant === "error") return null;
+	return options.action ? UNDO_CLOSE_MS : PLAIN_CLOSE_MS;
 };
 
-const variantStyles: Record<ToastVariant, { label: string; className: string }> = {
-	success: { label: "Success", className: "text-kept" },
-	info: { label: "Info", className: "text-added" },
-	undo: { label: "Undo", className: "text-changed" },
-	error: { label: "Error", className: "text-danger" },
+const variantStyles: Record<ToastVariant, { label: string; Icon: IconType; className: string }> = {
+	success: { label: "Success", Icon: LuCircleCheck, className: "text-kept" },
+	info: { label: "Info", Icon: LuInfo, className: "text-added" },
+	warning: { label: "Warning", Icon: LuTriangleAlert, className: "text-warn" },
+	error: { label: "Error", Icon: LuBan, className: "text-danger" },
 };
 
 const ToastContext = createContext<((options: ToastOptions) => void) | undefined>(undefined);
@@ -58,11 +59,11 @@ export function ToastProvider({ children }: { children: React.ReactNode }) {
 		const id = nextIdRef.current++;
 		setToasts((current) => [{ ...options, id }, ...current]);
 
-		const closeAfterMs = autoCloseMs[options.variant];
-		if (closeAfterMs !== null) {
+		const delay = closeAfterMs(options);
+		if (delay !== null) {
 			timersRef.current.set(
 				id,
-				setTimeout(() => dismiss(id), closeAfterMs)
+				setTimeout(() => dismiss(id), delay)
 			);
 		}
 	};
@@ -78,40 +79,48 @@ export function ToastProvider({ children }: { children: React.ReactNode }) {
 			<div
 				role="status"
 				aria-live="polite"
-				className="pointer-events-none fixed inset-x-4 bottom-4 z-50 flex flex-col items-stretch gap-2 lg:left-auto lg:w-96"
+				className="pointer-events-none fixed inset-x-4 bottom-4 z-50 mx-auto flex max-w-md flex-col items-stretch gap-2"
 			>
-				{toasts.map((toast) => (
-					<div
-						key={toast.id}
-						className="border-line bg-surface text-ink pointer-events-auto flex items-start gap-2 rounded-md border-[1.5px] py-2 pr-1 pl-4"
-					>
-						<div className="flex min-w-0 flex-1 flex-col gap-0.5 py-1">
-							<SectionLabel className={variantStyles[toast.variant].className}>
-								{variantStyles[toast.variant].label}
-							</SectionLabel>
-							<span className="font-medium">{toast.title}</span>
-							{toast.message && <span className="text-muted">{toast.message}</span>}
-						</div>
-						{toast.action && (
-							<Button
-								variant="link"
-								onClick={() => {
-									toast.action?.onAction();
-									dismiss(toast.id);
-								}}
-							>
-								{toast.action.label}
-							</Button>
-						)}
-						<IconButton
-							label="Dismiss"
-							className="text-muted hover:bg-tint"
-							onClick={() => dismiss(toast.id)}
+				{toasts.map((toast) => {
+					const { Icon, label, className } = variantStyles[toast.variant];
+					return (
+						<div
+							key={toast.id}
+							className="border-line bg-surface text-ink pointer-events-auto flex items-start gap-2 rounded-md border-[1.5px] py-2 pr-1 pl-4"
 						>
-							<LuX aria-hidden="true" />
-						</IconButton>
-					</div>
-				))}
+							<Icon
+								aria-hidden="true"
+								size={20}
+								className={`mt-2.5 shrink-0 ${className}`}
+							/>
+							<div className="flex min-w-0 flex-1 flex-col gap-0.5 py-1">
+								<span className="sr-only">{label}</span>
+								<span className="font-medium">{toast.title}</span>
+								{toast.message && (
+									<span className="text-muted">{toast.message}</span>
+								)}
+							</div>
+							{toast.action && (
+								<Button
+									variant="link"
+									onClick={() => {
+										toast.action?.onAction();
+										dismiss(toast.id);
+									}}
+								>
+									{toast.action.label}
+								</Button>
+							)}
+							<IconButton
+								label="Dismiss"
+								className="text-muted hover:bg-tint"
+								onClick={() => dismiss(toast.id)}
+							>
+								<LuX aria-hidden="true" />
+							</IconButton>
+						</div>
+					);
+				})}
 			</div>
 		</ToastContext.Provider>
 	);

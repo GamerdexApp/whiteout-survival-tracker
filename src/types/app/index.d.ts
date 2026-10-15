@@ -50,6 +50,7 @@ export interface Playthrough {
   buildings?: Record<string, BuildingState>;
   facilities?: Record<string, { built?: boolean }>;
   buildingPlan?: BuildingPlan;
+  inventory?: Record<string, number>;
 }
 
 export interface AppData {

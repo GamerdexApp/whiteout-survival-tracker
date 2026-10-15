@@ -12,9 +12,6 @@ export const APPOINTMENT_PERCENT: Record<Appointment, number> = {
 
 export const DOUBLE_TIME_PERCENT = 20;
 
-// The Bonuses page does not exist yet. Phase 4 replaces this with the real total.
-export const BONUSES_CONSTRUCTION_PERCENT = 0;
-
 export interface PlanRow {
   id: string;
   current: string | null;
@@ -47,8 +44,9 @@ export const initialPlanRows = (chief: Playthrough): PlanRow[] =>
 export const constructionSpeedPercent = (
   controls: PlanControls,
   petSkillPercent: number,
+  bonusesPercent: number,
 ) =>
-  BONUSES_CONSTRUCTION_PERCENT +
+  bonusesPercent +
   APPOINTMENT_PERCENT[controls.vicePresident] +
   (controls.petSkill ? petSkillPercent : 0) +
   (controls.chiefOrder ? DOUBLE_TIME_PERCENT : 0);

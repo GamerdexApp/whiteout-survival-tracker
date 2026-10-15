@@ -5,10 +5,11 @@ import { useMemo, useState } from "react";
 import { LuPlus, LuTrash2 } from "react-icons/lu";
 import type { Appointment, Playthrough } from "@/types/app";
 import { formatDuration, formatNumber } from "@/lib/format";
+import { useUiSettings } from "@/lib/hooks/useUiSettings";
+import { constructionSpeedBonusPercent } from "@/service/bonuses";
 import type { PlanControls, PlanRow } from "@/service/buildingPlan";
 import {
 	APPOINTMENT_PERCENT,
-	BONUSES_CONSTRUCTION_PERCENT,
 	constructionSpeedPercent,
 	defaultPlanControls,
 	DOUBLE_TIME_PERCENT,
@@ -30,6 +31,7 @@ import { SectionLabel } from "@/comps/ui/SectionLabel";
 import { SegmentedControl } from "@/comps/ui/SegmentedControl";
 import { Select } from "@/comps/ui/Select";
 import { Switch } from "@/comps/ui/Switch";
+import { PlanStockCheck } from "./PlanStockCheck";
 
 interface PlanFlyoutProps {
 	open: boolean;
@@ -111,7 +113,12 @@ interface PlanBodyProps {
 }
 
 function PlanBody({ chief, rows, controls, onRowsChange, onControlsChange }: PlanBodyProps) {
-	const speedPercent = constructionSpeedPercent(controls, PET_SKILL_PERCENT);
+	const { ui } = useUiSettings();
+	const bonusesPercent = useMemo(
+		() => (ui.calcUseBonuses ? constructionSpeedBonusPercent(chief) : 0),
+		[ui.calcUseBonuses, chief]
+	);
+	const speedPercent = constructionSpeedPercent(controls, PET_SKILL_PERCENT, bonusesPercent);
 	const result = useMemo(() => {
 		if (rows.length === 0) return null;
 		try {
@@ -133,6 +140,8 @@ function PlanBody({ chief, rows, controls, onRowsChange, onControlsChange }: Pla
 				</h3>
 				<SpeedControls
 					controls={controls}
+					bonusesPercent={bonusesPercent}
+					bonusesOn={ui.calcUseBonuses}
 					speedPercent={speedPercent}
 					onChange={onControlsChange}
 				/>
@@ -167,6 +176,13 @@ function PlanBody({ chief, rows, controls, onRowsChange, onControlsChange }: Pla
 				</p>
 			</Card>
 			{result && !result.ok && <Note tone="warning">{result.error}</Note>}
+			{result?.ok && (
+				<PlanStockCheck
+					calculation={result.calculation}
+					chief={chief}
+					speedPercent={speedPercent}
+				/>
+			)}
 			{result?.ok && (
 				<PlanResult calculation={result.calculation} speedPercent={speedPercent} />
 			)}
@@ -228,10 +244,14 @@ function AddBuilding({
 
 function SpeedControls({
 	controls,
+	bonusesPercent,
+	bonusesOn,
 	speedPercent,
 	onChange,
 }: {
 	controls: PlanControls;
+	bonusesPercent: number;
+	bonusesOn: boolean;
 	speedPercent: number;
 	onChange: (controls: PlanControls) => void;
 }) {
@@ -240,12 +260,14 @@ function SpeedControls({
 			<div className="flex items-center justify-between gap-3">
 				<span className="font-medium">Construction speed</span>
 				<span className="flex items-center gap-2">
-					<span className="font-mono font-medium">{BONUSES_CONSTRUCTION_PERCENT}%</span>
+					<span className="font-mono font-medium">{bonusesPercent}%</span>
 					<Badge tone="added">Read only</Badge>
 				</span>
 			</div>
 			<p className="text-muted text-xs">
-				Carried over from the Bonuses page, which is not built yet.{" "}
+				{bonusesOn
+					? "Carried over from the Bonuses page."
+					: "Turned off in Settings, under Apply my Bonuses totals."}{" "}
 				<Link href="/bonuses" className="text-link underline">
 					Open Bonuses
 				</Link>
