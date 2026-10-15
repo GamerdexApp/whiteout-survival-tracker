@@ -1,7 +1,8 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import type { HeroGearPiece, HeroGearQuality, HeroGearSet, HeroGearSlot } from "@/types/app";
-import { formatNumber } from "@/lib/format";
+import { formatDecimal, formatNumber } from "@/lib/format";
 import {
 	empowermentLock,
 	enhancementFloor,
@@ -12,11 +13,12 @@ import {
 	milestonesReached,
 	pieceStats,
 	qualityOf,
+	slotName,
 } from "@/service/heroGear";
 import {
 	forgingIndex,
 	forgingRows,
-	gearQualities,
+	gearQualityIds,
 	gearSlots,
 	MAX_EMPOWERMENT,
 	MAX_ENHANCEMENT,
@@ -35,12 +37,8 @@ interface GearPieceCardProps {
 	onQualityChange: (quality: HeroGearQuality) => void;
 }
 
-const forgingLabel = (id: string | null) => {
-	const row = forgingRows.find((item) => item.id === id);
-	return row ? `${row.name} (+${row.statsUpPercent}%)` : "None";
-};
-
 export function GearPieceCard({ set, slot, goal, onChange, onQualityChange }: GearPieceCardProps) {
+	const t = useTranslations("heroGear.pieceCard");
 	const piece = set.pieces[slot];
 	const info = gearSlots.find((item) => item.id === slot);
 	const mythic = isMythic(piece);
@@ -48,7 +46,13 @@ export function GearPieceCard({ set, slot, goal, onChange, onQualityChange }: Ge
 	const lock = empowermentLock(piece);
 	const limit = forgingLimitIndex(piece.enhancement);
 	const floor = forgingFloorIndex(piece);
-	const name = `${set.name} ${info?.name}`;
+	const name = t("name", { set: set.name, slot: slotName(slot) });
+	const forgingLabel = (id: string | null) => {
+		const row = forgingRows.find((item) => item.id === id);
+		return row
+			? t("forgingRow", { name: row.name, percent: formatDecimal(row.statsUpPercent) })
+			: t("none");
+	};
 	const hasForgingGoal = forgingIndex(goal.forging) > forgingIndex(piece.forging);
 	const milestones = milestonesReached(set.troopType, slot, piece);
 
@@ -66,7 +70,7 @@ export function GearPieceCard({ set, slot, goal, onChange, onQualityChange }: Ge
 				</div>
 
 				<div className="flex items-center justify-between gap-3">
-					<label htmlFor={`${set.id}-${slot}-quality`}>Gear quality</label>
+					<label htmlFor={`${set.id}-${slot}-quality`}>{t("quality")}</label>
 					<div className="w-40">
 						<Select
 							id={`${set.id}-${slot}-quality`}
@@ -75,9 +79,9 @@ export function GearPieceCard({ set, slot, goal, onChange, onQualityChange }: Ge
 								onQualityChange(event.target.value as HeroGearQuality)
 							}
 						>
-							{gearQualities.map((item) => (
-								<option key={item.id} value={item.id}>
-									{item.label}
+							{gearQualityIds.map((id) => (
+								<option key={id} value={id}>
+									{t(`qualities.${id}`)}
 								</option>
 							))}
 						</Select>
@@ -86,14 +90,16 @@ export function GearPieceCard({ set, slot, goal, onChange, onQualityChange }: Ge
 				{mythic && (
 					<div className="flex flex-col gap-1">
 						<div className="flex items-baseline justify-between gap-3">
-							<label htmlFor={`${set.id}-${slot}-forging`}>Mastery forging row</label>
+							<label htmlFor={`${set.id}-${slot}-forging`}>
+								{t("forgingRowLabel")}
+							</label>
 							{!hasForgingGoal && (
-								<span className="text-muted font-mono text-xs">No goal</span>
+								<span className="text-muted font-mono text-xs">{t("noGoal")}</span>
 							)}
 						</div>
 						{hasForgingGoal && (
 							<span className="text-primary font-mono text-xs">
-								Goal: {forgingLabel(goal.forging)}
+								{t("goal", { value: forgingLabel(goal.forging) })}
 							</span>
 						)}
 						<Select
@@ -102,7 +108,7 @@ export function GearPieceCard({ set, slot, goal, onChange, onQualityChange }: Ge
 							onChange={(event) => onChange({ forging: event.target.value || null })}
 						>
 							<option value="" disabled={floor >= 0}>
-								None
+								{t("none")}
 							</option>
 							{forgingRows.map((row, index) => (
 								<option
@@ -115,43 +121,35 @@ export function GearPieceCard({ set, slot, goal, onChange, onQualityChange }: Ge
 							))}
 						</Select>
 						{piece.enhancement < MAX_ENHANCEMENT && (
-							<p className="text-muted text-xs">
-								Mastery forging stops at level 10 until enhancement is 100.
-							</p>
+							<p className="text-muted text-xs">{t("forgingStops")}</p>
 						)}
 					</div>
 				)}
-				{!mythic && (
-					<p className="text-muted text-xs">
-						Only Mythic gear can be forged and empowered. Power follows the Mythic
-						tables with the base power of this quality, which the game has not
-						confirmed.
-					</p>
-				)}
+				{!mythic && <p className="text-muted text-xs">{t("lowQualityNote")}</p>}
 
 				<div className="flex flex-col">
-					<HeroRow label="Enhancement">
+					<HeroRow label={t("enhancement")}>
 						<GoalText
 							goal={
 								goal.enhancement > piece.enhancement
 									? String(goal.enhancement)
 									: null
 							}
-							empty="No goal"
+							empty={t("noGoal")}
 						/>
 						<ValueStepper
-							label={`${name} enhancement`}
+							label={t("enhancementLabel", { name })}
 							value={piece.enhancement}
 							min={enhancementFloor(piece)}
 							max={MAX_ENHANCEMENT}
-							suffix={`/ ${MAX_ENHANCEMENT}`}
+							suffix={t("outOf", { max: formatNumber(MAX_ENHANCEMENT) })}
 							onChange={(enhancement) => onChange({ enhancement })}
 						/>
 					</HeroRow>
 					{enhancementFloor(piece) < MAX_ENHANCEMENT && (
 						<input
 							type="range"
-							aria-label={`${name} enhancement slider`}
+							aria-label={t("enhancementSlider", { name })}
 							min={enhancementFloor(piece)}
 							max={MAX_ENHANCEMENT}
 							value={piece.enhancement}
@@ -165,32 +163,32 @@ export function GearPieceCard({ set, slot, goal, onChange, onQualityChange }: Ge
 
 				{lock ? (
 					<div className="border-line flex flex-wrap items-center justify-between gap-2 rounded-md border-[1.5px] border-dashed p-2">
-						<span>Empowerment</span>
+						<span>{t("empowerment")}</span>
 						<span className="text-muted font-mono text-xs">{lockText(lock)}</span>
 					</div>
 				) : (
 					<div className="flex flex-col">
-						<HeroRow label="Empowerment">
+						<HeroRow label={t("empowerment")}>
 							<GoalText
 								goal={
 									goal.empowerment > piece.empowerment
 										? String(goal.empowerment)
 										: null
 								}
-								empty="No goal"
+								empty={t("noGoal")}
 							/>
 							<ValueStepper
-								label={`${name} empowerment`}
+								label={t("empowermentLabel", { name })}
 								value={piece.empowerment}
 								min={0}
 								max={MAX_EMPOWERMENT}
-								suffix={`/ ${MAX_EMPOWERMENT}`}
+								suffix={t("outOf", { max: formatNumber(MAX_EMPOWERMENT) })}
 								onChange={(empowerment) => onChange({ empowerment })}
 							/>
 						</HeroRow>
 						<input
 							type="range"
-							aria-label={`${name} empowerment slider`}
+							aria-label={t("empowermentSlider", { name })}
 							min={0}
 							max={MAX_EMPOWERMENT}
 							value={piece.empowerment}
@@ -204,12 +202,15 @@ export function GearPieceCard({ set, slot, goal, onChange, onQualityChange }: Ge
 
 				{milestones.map((milestone) => (
 					<p key={milestone.empowermentLevel} className="text-kept text-xs">
-						Empowerment {milestone.empowermentLevel} reached: {milestone.stat}
+						{t("milestone", {
+							level: formatNumber(milestone.empowermentLevel),
+							stat: milestone.stat,
+						})}
 					</p>
 				))}
 
 				<div className="flex flex-col">
-					<HeroRow label="Piece power">
+					<HeroRow label={t("piecePower")}>
 						<span
 							className={
 								stats && stats.power > 0
@@ -217,7 +218,7 @@ export function GearPieceCard({ set, slot, goal, onChange, onQualityChange }: Ge
 									: "text-muted font-mono"
 							}
 						>
-							{stats && stats.power > 0 ? formatNumber(stats.power) : "None"}
+							{stats && stats.power > 0 ? formatNumber(stats.power) : t("none")}
 						</span>
 					</HeroRow>
 					{stats && piece.enhancement > 0 && (
@@ -225,11 +226,13 @@ export function GearPieceCard({ set, slot, goal, onChange, onQualityChange }: Ge
 							<HeroRow label={stats.combatStatName}>
 								<span className="font-mono">{formatNumber(stats.combatStat)}</span>
 							</HeroRow>
-							<HeroRow label="Health">
+							<HeroRow label={t("health")}>
 								<span className="font-mono">{formatNumber(stats.health)}</span>
 							</HeroRow>
 							<HeroRow label={stats.percentStatName}>
-								<span className="font-mono">{stats.percentStat}%</span>
+								<span className="font-mono">
+									{t("percent", { value: formatDecimal(stats.percentStat) })}
+								</span>
 							</HeroRow>
 						</>
 					)}

@@ -1,7 +1,9 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { useState } from "react";
 import type { Playthrough } from "@/types/app";
+import { formatNumber } from "@/lib/format";
 import type { MaxOutOptions } from "@/service/heroes";
 import { buildHeroViews, defaultMaxOutOptions, maxOutTargets } from "@/service/heroes";
 import { Button } from "@/comps/ui/Button";
@@ -9,6 +11,8 @@ import { Dialog } from "@/comps/ui/Dialog";
 import { Input } from "@/comps/ui/Input";
 import { RadioGroup } from "@/comps/ui/RadioGroup";
 import { SwitchRow } from "@/comps/ui/Switch";
+
+const scopeIds: MaxOutOptions["scope"][] = ["owned", "unlocked", "selected"];
 
 interface HeroMaxOutDialogProps {
 	open: boolean;
@@ -18,8 +22,10 @@ interface HeroMaxOutDialogProps {
 }
 
 export function HeroMaxOutDialog({ open, chief, onClose, onApply }: HeroMaxOutDialogProps) {
+	const t = useTranslations("heroes.maxOut");
+
 	return (
-		<Dialog open={open} onClose={onClose} title="Max out heroes">
+		<Dialog open={open} onClose={onClose} title={t("title")}>
 			<MaxOutForm chief={chief} onClose={onClose} onApply={onApply} />
 		</Dialog>
 	);
@@ -34,6 +40,8 @@ function MaxOutForm({
 	onClose: () => void;
 	onApply: (options: MaxOutOptions) => void;
 }) {
+	const t = useTranslations("heroes.maxOut");
+	const tc = useTranslations("heroes.common");
 	const [options, setOptions] = useState<MaxOutOptions>(defaultMaxOutOptions);
 	const count = maxOutTargets(chief, options).length;
 	const anyTrack = options.starAndTier || options.level || options.skills || options.weapon;
@@ -53,12 +61,8 @@ function MaxOutForm({
 	return (
 		<>
 			<RadioGroup
-				label="Heroes to max out"
-				options={[
-					{ id: "owned", label: "Owned heroes" },
-					{ id: "unlocked", label: "All unlocked heroes, marked as owned" },
-					{ id: "selected", label: "Choose heroes, marked as owned" },
-				]}
+				label={t("scopeLabel")}
+				options={scopeIds.map((id) => ({ id, label: t(`scope.${id}`) }))}
 				value={options.scope}
 				onChange={(scope) => set({ scope })}
 			/>
@@ -66,8 +70,8 @@ function MaxOutForm({
 				<div className="flex flex-col gap-2">
 					<Input
 						type="search"
-						aria-label="Search heroes to choose"
-						placeholder="Search heroes by name"
+						aria-label={t("searchLabel")}
+						placeholder={t("searchPlaceholder")}
 						value={search}
 						onChange={(event) => setSearch(event.target.value)}
 					/>
@@ -85,10 +89,10 @@ function MaxOutForm({
 								})
 							}
 						>
-							Select shown
+							{t("selectShown")}
 						</Button>
 						<Button variant="link" onClick={() => set({ heroIds: [] })}>
-							Clear
+							{t("clear")}
 						</Button>
 					</div>
 					<ul className="border-line grid max-h-60 gap-x-3 overflow-y-auto rounded-md border-[1.5px] p-2 sm:grid-cols-2">
@@ -103,7 +107,7 @@ function MaxOutForm({
 									/>
 									<span>{view.hero.name}</span>
 									<span className="text-muted font-mono text-xs">
-										{view.owned ? "owned" : ""}
+										{view.owned ? t("ownedTag") : ""}
 									</span>
 								</label>
 							</li>
@@ -113,40 +117,39 @@ function MaxOutForm({
 			)}
 			<div className="flex flex-col">
 				<SwitchRow
-					label="Star and tier to 5.0"
+					label={t("starAndTier")}
 					checked={options.starAndTier}
 					onChange={(starAndTier) => set({ starAndTier })}
 				/>
 				<SwitchRow
-					label="Level to 80"
-					description="Turn off when the skills are maxed and the level of older heroes stays at 1."
+					label={t("level")}
+					description={t("levelHint")}
 					checked={options.level}
 					onChange={(level) => set({ level })}
 				/>
 				<SwitchRow
-					label="Skills to 5"
-					description="Exploration, Expedition and Talent."
+					label={t("skills")}
+					description={t("skillsHint")}
 					checked={options.skills}
 					onChange={(skills) => set({ skills })}
 				/>
 				<SwitchRow
-					label="Exclusive weapon to 10"
+					label={t("weapon")}
 					checked={options.weapon}
 					onChange={(weapon) => set({ weapon })}
 				/>
 			</div>
-			<p className="text-muted">
-				Anything switched off stays as it is. Shard counts and goals are not changed. You
-				can undo after applying.
-			</p>
+			<p className="text-muted">{t("note")}</p>
 			<div className="flex justify-end gap-2">
-				<Button onClick={onClose}>Cancel</Button>
+				<Button onClick={onClose}>{t("cancel")}</Button>
 				<Button
 					variant="primary"
 					disabled={!anyTrack || count === 0}
 					onClick={() => onApply(options)}
 				>
-					Max out {count} {count === 1 ? "hero" : "heroes"}
+					{t("apply", {
+						heroes: tc("heroCount", { count, amount: formatNumber(count) }),
+					})}
 				</Button>
 			</div>
 		</>

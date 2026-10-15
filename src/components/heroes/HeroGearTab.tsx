@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { useMemo, useState } from "react";
 import { LuListFilter, LuPlus, LuSearch } from "react-icons/lu";
 import type { HeroGearPiece, HeroGearSlot, Playthrough } from "@/types/app";
@@ -46,6 +47,7 @@ import { GearSetFiltersFlyout } from "./GearSetFiltersFlyout";
 import { GearStatLines } from "./GearStatLines";
 
 export function HeroGearTab({ chief }: { chief: Playthrough }) {
+	const t = useTranslations("heroGear.tab");
 	const { updateData } = usePlaythrough();
 	const showToast = useToast();
 	const [filters, setFilters] = useState<GearSetFilters>(defaultGearSetFilters);
@@ -87,9 +89,9 @@ export function HeroGearTab({ chief }: { chief: Playthrough }) {
 		setSelectedId(null);
 		showToast({
 			variant: "warning",
-			title: `${deletingSet.name} deleted`,
-			message: "The four pieces and their goals are removed.",
-			action: { label: "Undo", onAction: () => change(() => before) },
+			title: t("deletedTitle", { name: deletingSet.name }),
+			message: t("deletedMessage"),
+			action: { label: t("undo"), onAction: () => change(() => before) },
 		});
 	};
 
@@ -103,32 +105,35 @@ export function HeroGearTab({ chief }: { chief: Playthrough }) {
 	return (
 		<>
 			<div className="grid grid-cols-2 gap-3 lg:grid-cols-5">
-				<StatTile value={summary.sets} label="Gear sets" />
+				<StatTile value={summary.sets} label={t("tiles.sets")} />
 				<StatTile
 					value={formatNumber(sets.reduce((total, set) => total + setPower(set), 0))}
-					label="Gear power, all sets"
+					label={t("tiles.power")}
 					emphasis
 				/>
 				<StatTile
-					value={`${summary.atEnhancementMax} of ${summary.pieces}`}
-					label="Pieces at enhancement 100"
+					value={t("tiles.ofPieces", {
+						count: formatNumber(summary.atEnhancementMax),
+						total: formatNumber(summary.pieces),
+					})}
+					label={t("tiles.atEnhancementMax")}
 				/>
 				<StatTile
-					value={`${summary.empowered} of ${summary.pieces}`}
-					label="Pieces empowered"
+					value={t("tiles.ofPieces", {
+						count: formatNumber(summary.empowered),
+						total: formatNumber(summary.pieces),
+					})}
+					label={t("tiles.empowered")}
 				/>
-				<StatTile
-					value={summary.readyForEmpowerment}
-					label="Pieces ready for empowerment"
-				/>
+				<StatTile value={summary.readyForEmpowerment} label={t("tiles.ready")} />
 			</div>
 
 			<div className="flex flex-wrap items-center gap-3">
 				<div className="w-full lg:w-auto lg:flex-1">
 					<Input
 						type="search"
-						aria-label="Search gear sets"
-						placeholder="Search gear sets"
+						aria-label={t("search")}
+						placeholder={t("search")}
 						leadingIcon={<LuSearch size={16} />}
 						value={filters.search}
 						onChange={(event) => setFilters({ ...filters, search: event.target.value })}
@@ -137,7 +142,7 @@ export function HeroGearTab({ chief }: { chief: Playthrough }) {
 				<div className="flex w-full gap-3 lg:w-auto">
 					<Button className="flex-1 lg:flex-none" onClick={() => setFiltersOpen(true)}>
 						<LuListFilter size={16} aria-hidden="true" />
-						Filters
+						{t("filters")}
 						{countGearSetFilters(filters) > 0 && (
 							<span className="bg-primary text-on-primary rounded-full px-1.5 font-mono text-xs">
 								{countGearSetFilters(filters)}
@@ -149,22 +154,24 @@ export function HeroGearTab({ chief }: { chief: Playthrough }) {
 						className="flex-1 lg:flex-none"
 						onClick={() => setPlanOpen(true)}
 					>
-						Plan
+						{t("plan")}
 					</Button>
 				</div>
 			</div>
 			<p role="status" className="text-muted">
-				Showing {visible.length} of {sets.length} gear sets. Goals are read only here and
-				are set in Plan.
+				{t("showing", {
+					shown: formatNumber(visible.length),
+					total: formatNumber(sets.length),
+				})}
 			</p>
 
 			{sets.length === 0 ? (
 				<EmptyState
-					title="No gear sets yet"
-					description="A gear set holds one Goggles, Gloves, Belt and Boots piece. Add a set to track its levels."
+					title={t("empty.title")}
+					description={t("empty.description")}
 					actions={
 						<Button variant="primary" onClick={() => setAddOpen(true)}>
-							Add gear set
+							{t("addSet")}
 						</Button>
 					}
 				/>
@@ -173,7 +180,7 @@ export function HeroGearTab({ chief }: { chief: Playthrough }) {
 					<div className="flex min-w-0 flex-col gap-2">
 						<Button variant="link" className="w-full" onClick={() => setAddOpen(true)}>
 							<LuPlus size={16} aria-hidden="true" />
-							Add gear set
+							{t("addSet")}
 						</Button>
 						<ul className="flex gap-2 overflow-x-auto lg:flex-col">
 							{visible.map((set) => (
@@ -197,17 +204,19 @@ export function HeroGearTab({ chief }: { chief: Playthrough }) {
 												<>
 													<span>
 														{findHero(set.heroId)?.name ??
-															"Unknown hero"}
+															t("unknownHero")}
 													</span>
 													<span aria-hidden="true">·</span>
 												</>
 											)}
 											<span className="font-mono">
-												{formatNumber(setPower(set))} power
+												{t("power", {
+													amount: formatNumber(setPower(set)),
+												})}
 											</span>
 										</span>
 										<span className="text-muted font-mono text-xs">
-											Enh {enhancementLine(set)}
+											{t("enhancementLine", { line: enhancementLine(set) })}
 										</span>
 									</button>
 								</li>
@@ -222,21 +231,19 @@ export function HeroGearTab({ chief }: { chief: Playthrough }) {
 								<Badge tone="added">{troopLabel(selected.troopType)}</Badge>
 								{selected.heroId && (
 									<Badge tone="kept">
-										{findHero(selected.heroId)?.name ?? "Unknown hero"}
+										{findHero(selected.heroId)?.name ?? t("unknownHero")}
 									</Badge>
 								)}
-								<span className="text-muted">
-									The troop type picks the stat column below.
-								</span>
+								<span className="text-muted">{t("troopHint")}</span>
 								<span className="ml-auto flex gap-2">
 									<Button onClick={() => setEditing(selected.id)}>
-										Edit set
+										{t("editSet")}
 									</Button>
 									<Button
 										variant="danger"
 										onClick={() => setDeleting(selected.id)}
 									>
-										Delete set
+										{t("deleteSet")}
 									</Button>
 								</span>
 							</div>

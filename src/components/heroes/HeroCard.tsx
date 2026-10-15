@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { formatNumber } from "@/lib/format";
 import type { HeroChange, HeroView } from "@/service/heroes";
 import {
@@ -37,6 +38,7 @@ interface HeroCardProps {
 }
 
 export function HeroCard({ view, onChange, onOpen, onPlan, gearSetNames }: HeroCardProps) {
+	const t = useTranslations("heroes");
 	const { hero, owned } = view;
 	const heroId = hero.id;
 	const exploration = hero.skills.exploration;
@@ -54,13 +56,19 @@ export function HeroCard({ view, onChange, onOpen, onPlan, gearSetNames }: HeroC
 					<div className="flex min-w-0 flex-1 flex-col">
 						<h3 className="truncate font-semibold">{hero.name}</h3>
 						<span className="text-muted font-mono text-xs">
-							{hero.rarity} · {hero.class} · Gen {hero.generation}
+							{t("card.summary", {
+								rarity: hero.rarity,
+								heroClass: hero.class,
+								generation: t("common.generation", {
+									generation: formatNumber(hero.generation),
+								}),
+							})}
 						</span>
 					</div>
 					<span className="flex items-center gap-2">
-						<span className="text-muted text-xs">Owned</span>
+						<span className="text-muted text-xs">{t("common.owned")}</span>
 						<Switch
-							label={`${hero.name} owned`}
+							label={t("common.ownedLabel", { hero: hero.name })}
 							checked={owned}
 							onChange={(next) => onChange({ kind: "owned", heroId, owned: next })}
 						/>
@@ -70,9 +78,9 @@ export function HeroCard({ view, onChange, onOpen, onPlan, gearSetNames }: HeroC
 				{owned && (
 					<>
 						<div className="flex flex-col">
-							<HeroRow label="Star and tier">
+							<HeroRow label={t("common.starAndTier")}>
 								<ValueStepper
-									label={`${hero.name} star`}
+									label={t("common.starLabel", { hero: hero.name })}
 									value={starPosition(view.stars)}
 									min={0}
 									max={MAX_STAR_POSITION}
@@ -91,16 +99,18 @@ export function HeroCard({ view, onChange, onOpen, onPlan, gearSetNames }: HeroC
 											? formatStars({ star: goal.star, tier: goal.tier })
 											: null
 									}
-									empty="No goal"
+									empty={t("common.noGoal")}
 								/>
 							</HeroRow>
-							<HeroRow label="Level">
+							<HeroRow label={t("common.level")}>
 								<ValueStepper
-									label={`${hero.name} level`}
+									label={t("common.levelLabel", { hero: hero.name })}
 									value={view.level}
 									min={1}
 									max={MAX_HERO_LEVEL}
-									suffix={`/ ${MAX_HERO_LEVEL}`}
+									suffix={t("common.maxLevelSuffix", {
+										max: formatNumber(MAX_HERO_LEVEL),
+									})}
 									onChange={(level) => onChange({ kind: "level", heroId, level })}
 								/>
 							</HeroRow>
@@ -108,13 +118,13 @@ export function HeroCard({ view, onChange, onOpen, onPlan, gearSetNames }: HeroC
 
 						<div className="grid gap-3 sm:grid-cols-2">
 							<SkillColumn
-								title="Exploration"
+								title={t("common.exploration")}
 								names={exploration.map((skill) => skill.name)}
 								view={view}
 								onChange={onChange}
 							/>
 							<SkillColumn
-								title="Expedition"
+								title={t("common.expedition")}
 								names={expedition.map((skill) => skill.name)}
 								view={view}
 								onChange={onChange}
@@ -123,13 +133,17 @@ export function HeroCard({ view, onChange, onOpen, onPlan, gearSetNames }: HeroC
 
 						<div className="flex flex-col">
 							{hero.skills.talent && (
-								<HeroRow label={`Talent ${hero.skills.talent.name}`}>
+								<HeroRow
+									label={t("card.talentRow", { name: hero.skills.talent.name })}
+								>
 									<ValueStepper
-										label={`${hero.name} talent`}
+										label={t("common.talentLabel", { hero: hero.name })}
 										value={view.talent}
 										min={1}
 										max={MAX_TALENT_LEVEL}
-										suffix={`/ ${MAX_TALENT_LEVEL}`}
+										suffix={t("common.maxLevelSuffix", {
+											max: formatNumber(MAX_TALENT_LEVEL),
+										})}
 										onChange={(level) =>
 											onChange({ kind: "talent", heroId, level })
 										}
@@ -139,11 +153,16 @@ export function HeroCard({ view, onChange, onOpen, onPlan, gearSetNames }: HeroC
 							{weaponName && (
 								<HeroRow label={weaponName}>
 									<ValueStepper
-										label={`${hero.name} ${weaponName} level`}
+										label={t("common.weaponLevelLabel", {
+											hero: hero.name,
+											weapon: weaponName,
+										})}
 										value={view.weapon}
 										min={0}
 										max={MAX_WEAPON_LEVEL}
-										suffix={`/ ${MAX_WEAPON_LEVEL}`}
+										suffix={t("common.maxLevelSuffix", {
+											max: formatNumber(MAX_WEAPON_LEVEL),
+										})}
 										onChange={(level) =>
 											onChange({ kind: "weapon", heroId, level })
 										}
@@ -156,10 +175,10 @@ export function HeroCard({ view, onChange, onOpen, onPlan, gearSetNames }: HeroC
 				)}
 
 				<div className="flex flex-col">
-					<HeroRow label="Shards">
+					<HeroRow label={t("common.shards")}>
 						<ShardTile src={hero.shardImg} />
 						<ShardsInput
-							label={`${hero.name} shards owned`}
+							label={t("common.shardsOwnedLabel", { hero: hero.name })}
 							value={view.shards}
 							onChange={(shards) => onChange({ kind: "shards", heroId, shards })}
 						/>
@@ -167,22 +186,24 @@ export function HeroCard({ view, onChange, onOpen, onPlan, gearSetNames }: HeroC
 							<span
 								className={`font-mono text-xs ${view.shards >= needed ? "text-kept" : "text-warn"}`}
 							>
-								of {formatNumber(needed)}
+								{t("card.shardsOf", { needed: formatNumber(needed) })}
 								{view.shards >= needed
-									? " Enough shards"
-									: ` Short by ${formatNumber(needed - view.shards)}`}
+									? t("card.enoughShards")
+									: t("card.shortBy", {
+											amount: formatNumber(needed - view.shards),
+										})}
 							</span>
 						)}
 					</HeroRow>
 					{gearSetNames.length > 0 && (
-						<HeroRow label="Gear set">
+						<HeroRow label={t("card.gearSet")}>
 							<span className="font-medium">{gearSetNames.join(", ")}</span>
 						</HeroRow>
 					)}
 					{owned && (
-						<HeroRow label="Total power">
+						<HeroRow label={t("common.totalPower")}>
 							{power === null ? (
-								<span className="text-muted font-mono">Unknown</span>
+								<span className="text-muted font-mono">{t("common.unknown")}</span>
 							) : (
 								<span className="font-mono font-medium">{formatNumber(power)}</span>
 							)}
@@ -190,15 +211,13 @@ export function HeroCard({ view, onChange, onOpen, onPlan, gearSetNames }: HeroC
 					)}
 				</div>
 
-				{!owned && (
-					<p className="text-muted">Turn on Owned to track star, level and skills.</p>
-				)}
+				{!owned && <p className="text-muted">{t("card.notOwnedHint")}</p>}
 
 				<div className={`grid gap-2 ${owned ? "grid-cols-2" : ""}`}>
-					<Button onClick={() => onOpen(heroId)}>Details</Button>
+					<Button onClick={() => onOpen(heroId)}>{t("card.details")}</Button>
 					{owned && (
 						<Button variant="secondary" onClick={() => onPlan(heroId)}>
-							Plan
+							{t("common.plan")}
 						</Button>
 					)}
 				</div>
@@ -218,6 +237,8 @@ function SkillColumn({
 	view: HeroView;
 	onChange: (change: HeroChange) => void;
 }) {
+	const t = useTranslations("heroes.common");
+
 	return (
 		<div className="flex flex-col">
 			<SectionLabel className="text-muted pb-1">{title}</SectionLabel>
@@ -233,7 +254,7 @@ function SkillColumn({
 						</span>
 						<GoalText goal={goal?.toString() ?? null} />
 						<ValueStepper
-							label={`${view.hero.name} ${name}`}
+							label={t("skillLabel", { hero: view.hero.name, skill: name })}
 							value={view.skillLevels[name]}
 							min={1}
 							max={MAX_SKILL_LEVEL}

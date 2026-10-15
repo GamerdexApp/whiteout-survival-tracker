@@ -1,3 +1,4 @@
+import { translator } from "@/i18n/formatter";
 import { calculateHeroUpgrade } from "whiteout-survival-data";
 import type {
   Hero,
@@ -575,7 +576,7 @@ export const shardUse = (plan: HeroPlanResult): ShardUse => {
 const RARITY_ORDER: Hero["rarity"][] = ["Legendary", "Epic", "Rare"];
 
 const rarityShardName = (rarity: Hero["rarity"]) =>
-  `${rarity === "Legendary" ? "Mythic" : rarity} General Hero Shard`;
+  translator("heroes")(`service.generalShard.${rarity}`);
 
 export const heroPlanChecks = (
   plan: HeroPlanResult,

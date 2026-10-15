@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { useMemo, useState } from "react";
 import { LuPlus, LuTrash2 } from "react-icons/lu";
 import type { HeroGoal, Playthrough } from "@/types/app";
@@ -43,6 +44,7 @@ interface HeroPlanFlyoutProps {
 type Goals = Record<string, HeroGoal>;
 
 export function HeroPlanFlyout({ open, chief, focusHeroId, onClose, onSave }: HeroPlanFlyoutProps) {
+	const t = useTranslations("heroes.plan");
 	const [wasOpen, setWasOpen] = useState(false);
 	const [goals, setGoals] = useState<Goals>({});
 
@@ -65,19 +67,19 @@ export function HeroPlanFlyout({ open, chief, focusHeroId, onClose, onSave }: He
 		<Flyout
 			open={open}
 			onClose={onClose}
-			title="Plan Heroes"
-			description="Shards, skill manuals and Widgets from current to goal"
+			title={t("title")}
+			description={t("description")}
 			footer={
 				<>
 					{savedAt && (
 						<span className="border-line bg-surface text-muted mr-auto inline-flex h-8 items-center gap-2 rounded-full border-[1.5px] px-3 font-mono text-xs">
 							<span aria-hidden="true" className="bg-kept size-1.5 rounded-full" />
-							Plan saved {formatDateTime(savedAt)}
+							{t("saved", { date: formatDateTime(savedAt) })}
 						</span>
 					)}
-					<Button onClick={onClose}>Close</Button>
+					<Button onClick={onClose}>{t("close")}</Button>
 					<Button variant="primary" onClick={() => onSave(goals)}>
-						Save plan
+						{t("save")}
 					</Button>
 				</>
 			}
@@ -96,6 +98,7 @@ function PlanBody({
 	goals: Goals;
 	onGoalsChange: (goals: Goals) => void;
 }) {
+	const t = useTranslations("heroes.plan");
 	const views = useMemo(() => buildHeroViews(chief), [chief]);
 	const plan = useMemo(() => runHeroPlan(chief, goals), [chief, goals]);
 	const planned = views.filter((view) => view.owned && goals[view.hero.id]);
@@ -109,9 +112,7 @@ function PlanBody({
 			/>
 			{planned.length === 0 ? (
 				<Card className="p-4">
-					<p className="text-muted">
-						No heroes in the plan yet. Add an owned hero above, then raise its goals.
-					</p>
+					<p className="text-muted">{t("noHeroes")}</p>
 				</Card>
 			) : (
 				planned.map((view) => (
@@ -145,21 +146,20 @@ function PlanBody({
 }
 
 function AddHero({ addable, onAdd }: { addable: HeroView[]; onAdd: (view: HeroView) => void }) {
+	const t = useTranslations("heroes.plan.add");
 	const [selectedId, setSelectedId] = useState("");
 	const selected = addable.find((view) => view.hero.id === selectedId) ?? addable[0];
 
 	return (
 		<Card className="flex flex-col gap-3 p-4">
-			<h3 className="font-semibold">Add a hero</h3>
+			<h3 className="font-semibold">{t("title")}</h3>
 			{!selected ? (
-				<p className="text-muted">
-					Every owned hero is in the plan. Turn on Owned for a hero to plan it.
-				</p>
+				<p className="text-muted">{t("allIn")}</p>
 			) : (
 				<div className="flex gap-3">
 					<div className="flex-1">
 						<Select
-							aria-label="Hero to add"
+							aria-label={t("selectLabel")}
 							value={selected.hero.id}
 							onChange={(event) => setSelectedId(event.target.value)}
 						>
@@ -172,7 +172,7 @@ function AddHero({ addable, onAdd }: { addable: HeroView[]; onAdd: (view: HeroVi
 					</div>
 					<Button variant="primary" onClick={() => onAdd(selected)}>
 						<LuPlus size={16} aria-hidden="true" />
-						Add hero
+						{t("button")}
 					</Button>
 				</div>
 			)}
@@ -191,6 +191,8 @@ function HeroBlock({
 	onGoalChange: (goal: HeroGoal) => void;
 	onRemove: () => void;
 }) {
+	const t = useTranslations("heroes.plan.block");
+	const tc = useTranslations("heroes.common");
 	const { hero } = view;
 	const currentPosition = starPosition(view.stars);
 	const goalPosition = Math.max(starPosition(goal), currentPosition);
@@ -207,12 +209,14 @@ function HeroBlock({
 						<span className="flex flex-wrap gap-1.5">
 							<Badge tone="changed">{hero.rarity}</Badge>
 							<Badge tone="added">{hero.class}</Badge>
-							<Badge tone="locked">Gen {hero.generation}</Badge>
+							<Badge tone="locked">
+								{tc("generation", { generation: formatNumber(hero.generation) })}
+							</Badge>
 						</span>
 					</div>
 				</div>
 				<IconButton
-					label={`Remove ${hero.name} from the plan`}
+					label={t("remove", { hero: hero.name })}
 					onClick={onRemove}
 					className="text-danger hover:bg-tint"
 				>
@@ -220,12 +224,12 @@ function HeroBlock({
 				</IconButton>
 			</div>
 			<div className="flex flex-col">
-				<HeroRow label="Star and tier">
+				<HeroRow label={tc("starAndTier")}>
 					<span className="text-muted font-mono text-xs">
-						{formatStars(view.stars)} to
+						{t("starTo", { stars: formatStars(view.stars) })}
 					</span>
 					<ValueStepper
-						label={`${hero.name} star goal`}
+						label={t("starGoal", { hero: hero.name })}
 						value={goalPosition}
 						min={currentPosition}
 						max={MAX_STAR_POSITION}
@@ -238,9 +242,11 @@ function HeroBlock({
 					const target = Math.max(goal.skills?.[skill.name] ?? current, current);
 					return (
 						<HeroRow key={skill.name} label={skill.name}>
-							<span className="text-muted font-mono text-xs">{current} to</span>
+							<span className="text-muted font-mono text-xs">
+								{t("levelTo", { current: formatNumber(current) })}
+							</span>
 							<ValueStepper
-								label={`${hero.name} ${skill.name} goal`}
+								label={t("goalLabel", { hero: hero.name, name: skill.name })}
 								value={target}
 								min={current}
 								max={MAX_SKILL_LEVEL}
@@ -251,9 +257,14 @@ function HeroBlock({
 				})}
 				{hero.exclusiveWeapon && (
 					<HeroRow label={hero.exclusiveWeapon.name}>
-						<span className="text-muted font-mono text-xs">{view.weapon} to</span>
+						<span className="text-muted font-mono text-xs">
+							{t("levelTo", { current: formatNumber(view.weapon) })}
+						</span>
 						<ValueStepper
-							label={`${hero.name} ${hero.exclusiveWeapon.name} goal`}
+							label={t("goalLabel", {
+								hero: hero.name,
+								name: hero.exclusiveWeapon.name,
+							})}
 							value={Math.max(goal.weapon ?? view.weapon, view.weapon)}
 							min={view.weapon}
 							max={MAX_WEAPON_LEVEL}
@@ -262,54 +273,62 @@ function HeroBlock({
 					</HeroRow>
 				)}
 			</div>
-			<p className="text-muted text-xs">
-				Current values come from the hero on the page. Change them there.
-			</p>
+			<p className="text-muted text-xs">{t("note")}</p>
 		</Card>
 	);
 }
 
 function UnmetCard({ plan }: { plan: HeroPlanResult }) {
+	const t = useTranslations("heroes.plan.unmet");
+	const items = plan.unmet.map((item) =>
+		t("item", {
+			hero: item.heroName,
+			skill: item.skill,
+			level: formatNumber(item.level),
+			star: formatNumber(item.starRequired),
+		})
+	);
+
 	return (
-		<Note tone="warning" title="Skill levels need a higher star.">
-			{plan.unmet
-				.map(
-					(item) =>
-						`${item.heroName}: ${item.skill} level ${item.level} needs star ${item.starRequired}`
-				)
-				.join(". ")}
-			. Raise the star goal or lower the skill goal.
+		<Note tone="warning" title={t("title")}>
+			{t("message", { items: items.join(". ") })}
 		</Note>
 	);
 }
 
 function ShardsUsed({ plan }: { plan: HeroPlanResult }) {
+	const t = useTranslations("heroes.plan");
 	const use = shardUse(plan);
 	if (use.total === 0) return null;
 
 	return (
 		<p className="text-muted">
-			Shards used: {formatNumber(use.fromOwnHero)} from the hero and{" "}
-			{formatNumber(use.fromGeneral)} general, {formatNumber(use.total)} in all. A hero uses
-			its own shards first.
+			{t("shardsUsed", {
+				own: formatNumber(use.fromOwnHero),
+				general: formatNumber(use.fromGeneral),
+				total: formatNumber(use.total),
+			})}
 		</p>
 	);
 }
 
-const EVENTS: { key: keyof HeroPlanResult["eventPoints"]; name: string }[] = [
-	{ key: "svs", name: "SvS State of Power" },
-	{ key: "allianceShowdown", name: "Alliance Showdown" },
-	{ key: "kingOfIcefield", name: "King of Icefield" },
-	{ key: "hallOfChief", name: "Hall of Chief" },
+const EVENT_KEYS: (keyof HeroPlanResult["eventPoints"])[] = [
+	"svs",
+	"allianceShowdown",
+	"kingOfIcefield",
+	"hallOfChief",
 ];
 
+const TABLE_HEADS = ["hero", "starSteps", "skillLevels", "shards", "widgets"] as const;
+
 function PlanResult({ plan }: { plan: HeroPlanResult }) {
+	const t = useTranslations("heroes.plan");
 	const steps = plan.starSteps + plan.skillLevels + plan.weaponLevels;
 	const resources = [...plan.resources.entries()];
 
 	return (
 		<Card className="flex flex-col gap-4 p-4">
-			<h3 className="font-semibold">Result, {formatNumber(steps)} steps</h3>
+			<h3 className="font-semibold">{t("result.title", { steps: formatNumber(steps) })}</h3>
 			<div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
 				{resources.map(([itemId, amount]) => {
 					const item = findItem(itemId);
@@ -327,7 +346,7 @@ function PlanResult({ plan }: { plan: HeroPlanResult }) {
 				})}
 				{plan.widgets > 0 && (
 					<div className="flex flex-col">
-						<span className="text-muted text-xs">Widgets</span>
+						<span className="text-muted text-xs">{t("result.widgets")}</span>
 						<span className="font-mono font-semibold">
 							{formatNumber(plan.widgets)}
 						</span>
@@ -338,13 +357,13 @@ function PlanResult({ plan }: { plan: HeroPlanResult }) {
 				<table className="w-full min-w-[26rem] text-left">
 					<thead>
 						<tr>
-							{["Hero", "Star steps", "Skill levels", "Shards", "Widgets"].map(
-								(head) => (
-									<th key={head} className="py-1 pr-3">
-										<SectionLabel className="text-muted">{head}</SectionLabel>
-									</th>
-								)
-							)}
+							{TABLE_HEADS.map((head) => (
+								<th key={head} className="py-1 pr-3">
+									<SectionLabel className="text-muted">
+										{t(`result.heads.${head}`)}
+									</SectionLabel>
+								</th>
+							))}
 						</tr>
 					</thead>
 					<tbody>
@@ -365,26 +384,25 @@ function PlanResult({ plan }: { plan: HeroPlanResult }) {
 				</table>
 			</div>
 			<p className="font-mono text-xs">
-				{plan.unlockedWeaponSkills} weapon{" "}
-				{plan.unlockedWeaponSkills === 1 ? "skill" : "skills"} unlocked
+				{t("result.weaponSkills", {
+					count: plan.unlockedWeaponSkills,
+					amount: formatNumber(plan.unlockedWeaponSkills),
+				})}
 			</p>
 			<div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
-				{EVENTS.map((event) => (
+				{EVENT_KEYS.map((key) => (
 					<div
-						key={event.key}
+						key={key}
 						className="border-line flex flex-col rounded-md border-[1.5px] p-2"
 					>
-						<span className="text-muted text-xs">{event.name}</span>
+						<span className="text-muted text-xs">{t(`events.${key}`)}</span>
 						<span className="font-mono font-semibold">
-							{formatNumber(plan.eventPoints[event.key])}
+							{formatNumber(plan.eventPoints[key])}
 						</span>
 					</div>
 				))}
 			</div>
-			<p className="text-muted text-xs">
-				Power is not part of Plan Heroes. The calculator returns no time and takes no speed
-				input.
-			</p>
+			<p className="text-muted text-xs">{t("result.note")}</p>
 		</Card>
 	);
 }

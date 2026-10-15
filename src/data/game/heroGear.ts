@@ -31,12 +31,12 @@ export const EMPOWERMENT_FORGING_INDEX = forgingIndex(
 export const statEntry = (slot: HeroGearSlot, troopType: TroopType) =>
   heroGearStats().bySlot(slot).byTroopType(troopType).first();
 
-export const gearQualities: { id: HeroGearQuality; label: string }[] = [
-  { id: "mythic", label: "Mythic" },
-  { id: "epic", label: "Epic" },
-  { id: "rare", label: "Rare" },
-  { id: "uncommon", label: "Uncommon" },
-  { id: "common", label: "Common" },
+export const gearQualityIds: HeroGearQuality[] = [
+  "mythic",
+  "epic",
+  "rare",
+  "uncommon",
+  "common",
 ];
 
 export const DEFAULT_QUALITY: HeroGearQuality = "mythic";

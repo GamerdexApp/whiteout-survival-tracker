@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl";
 import type { ReactNode } from "react";
 import { formatNumber } from "@/lib/format";
 import { ItemIcon } from "@/comps/ui/ItemIcon";
@@ -20,10 +21,12 @@ export function HeroRow({
 }
 
 export function GoalText({ goal, empty }: { goal: string | null; empty?: string }) {
+	const t = useTranslations("heroes.goalText");
+
 	if (goal === null) {
 		return empty ? <span className="text-muted font-mono text-xs">{empty}</span> : null;
 	}
-	return <span className="text-primary font-mono text-xs font-medium">to {goal}</span>;
+	return <span className="text-primary font-mono text-xs font-medium">{t("to", { goal })}</span>;
 }
 
 export function ShardTile({ src }: { src?: string }) {

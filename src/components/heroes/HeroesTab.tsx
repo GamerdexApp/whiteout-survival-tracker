@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { useMemo, useState } from "react";
 import { LuListFilter, LuSearch } from "react-icons/lu";
 import type { HeroGoal, Playthrough } from "@/types/app";
@@ -34,6 +35,8 @@ import { HeroPlanFlyout } from "./HeroPlanFlyout";
 const PAGE_SIZE = 12;
 
 export function HeroesTab({ chief }: { chief: Playthrough }) {
+	const t = useTranslations("heroes.tab");
+	const tc = useTranslations("heroes.common");
 	const { updateData } = usePlaythrough();
 	const showToast = useToast();
 	const [filters, setFilters] = useState<HeroFilters>(defaultHeroFilters);
@@ -65,11 +68,12 @@ export function HeroesTab({ chief }: { chief: Playthrough }) {
 		if (!change((current) => applyHeroChange(current, heroChange))) return;
 		if (heroChange.kind !== "owned" || heroChange.owned) return;
 		const name = views.find((view) => view.hero.id === heroChange.heroId)?.hero.name;
+		if (!name) return;
 		showToast({
 			variant: "info",
-			title: `${name} not owned`,
-			message: "Its star, level and skills are kept for when you turn Owned on again.",
-			action: { label: "Undo", onAction: () => change(() => before) },
+			title: t("toast.notOwnedTitle", { name }),
+			message: t("toast.notOwnedMessage"),
+			action: { label: t("toast.undo"), onAction: () => change(() => before) },
 		});
 	};
 
@@ -80,9 +84,11 @@ export function HeroesTab({ chief }: { chief: Playthrough }) {
 		setMaxOpen(false);
 		showToast({
 			variant: "success",
-			title: "Heroes maxed out",
-			message: `${count} ${count === 1 ? "hero" : "heroes"} updated.`,
-			action: { label: "Undo", onAction: () => change(() => before) },
+			title: t("toast.maxedTitle"),
+			message: t("toast.maxedMessage", {
+				heroes: tc("heroCount", { count, amount: formatNumber(count) }),
+			}),
+			action: { label: t("toast.undo"), onAction: () => change(() => before) },
 		});
 	};
 
@@ -102,36 +108,42 @@ export function HeroesTab({ chief }: { chief: Playthrough }) {
 		<>
 			<div className="grid grid-cols-2 gap-3 lg:grid-cols-6">
 				<StatTile
-					value={`0 to ${summary.unlockedGenerations}`}
-					label="Generations unlocked"
+					value={t("stats.generationsValue", {
+						max: formatNumber(summary.unlockedGenerations),
+					})}
+					label={t("stats.generations")}
 				/>
 				<StatTile
-					value={`${summary.owned} / ${summary.total}`}
-					label="Heroes owned of those unlocked"
+					value={`${formatNumber(summary.owned)} / ${formatNumber(summary.total)}`}
+					label={t("stats.heroesOwned")}
 				/>
 				<StatTile
-					value={`${summary.legendaryOwned} / ${summary.legendaryTotal}`}
-					label="Legendary owned of those unlocked"
+					value={`${formatNumber(summary.legendaryOwned)} / ${formatNumber(summary.legendaryTotal)}`}
+					label={t("stats.legendaryOwned")}
 				/>
-				<StatTile value={summary.atMaxLevel} label="At level 80" />
+				<StatTile value={summary.atMaxLevel} label={t("stats.atMaxLevel")} />
 				<StatTile
 					value={formatNumber(summary.power)}
 					label={
 						summary.unknownPower === 0
-							? "Hero power"
-							: `Hero power, ${summary.unknownPower} Unknown left out`
+							? t("stats.heroPower")
+							: t("stats.heroPowerUnknown", {
+									amount: formatNumber(summary.unknownPower),
+								})
 					}
 					emphasis
 				/>
-				<StatTile value={summary.withGoal} label="With a goal" emphasis />
+				<StatTile value={summary.withGoal} label={t("stats.withGoal")} emphasis />
 			</div>
 
 			<div className="flex flex-wrap items-center gap-3">
 				<div className="w-full lg:w-auto lg:flex-1">
 					<Input
 						type="search"
-						aria-label="Search heroes"
-						placeholder={`Search ${summary.total} heroes by name`}
+						aria-label={t("search.label")}
+						placeholder={t("search.placeholder", {
+							amount: formatNumber(summary.total),
+						})}
 						leadingIcon={<LuSearch size={16} />}
 						value={filters.search}
 						onChange={(event) =>
@@ -142,7 +154,7 @@ export function HeroesTab({ chief }: { chief: Playthrough }) {
 				<div className="flex w-full gap-3 lg:w-auto">
 					<Button className="flex-1 lg:flex-none" onClick={() => setFiltersOpen(true)}>
 						<LuListFilter size={16} aria-hidden="true" />
-						Filters
+						{t("filters")}
 						{activeFilters > 0 && (
 							<span className="bg-primary text-on-primary rounded-full px-1.5 font-mono text-xs">
 								{activeFilters}
@@ -150,29 +162,33 @@ export function HeroesTab({ chief }: { chief: Playthrough }) {
 						)}
 					</Button>
 					<Button className="flex-1 lg:flex-none" onClick={() => setMaxOpen(true)}>
-						Max out
+						{t("maxOut")}
 					</Button>
 					<Button
 						variant="primary"
 						className="flex-1 lg:flex-none"
 						onClick={() => openPlan(null)}
 					>
-						Plan
+						{tc("plan")}
 					</Button>
 				</div>
 			</div>
 			<p role="status" className="text-muted">
-				Showing {shown.length} of {visible.length} heroes. Generations 0 to{" "}
-				{summary.unlockedGenerations} are unlocked on this chief. Goals are read only here
-				and are set in Plan.
+				{t("status", {
+					shown: formatNumber(shown.length),
+					total: formatNumber(visible.length),
+					max: formatNumber(summary.unlockedGenerations),
+				})}
 			</p>
 
 			{visible.length === 0 ? (
 				<EmptyState
-					title="No heroes match"
-					description="Change the search or reset the filters to see every hero."
+					title={t("empty.title")}
+					description={t("empty.description")}
 					actions={
-						<Button onClick={() => changeFilters(defaultHeroFilters())}>Reset</Button>
+						<Button onClick={() => changeFilters(defaultHeroFilters())}>
+							{t("empty.reset")}
+						</Button>
 					}
 				/>
 			) : (
@@ -196,8 +212,10 @@ export function HeroesTab({ chief }: { chief: Playthrough }) {
 							className="w-full"
 							onClick={() => setShownCount(shownCount + PAGE_SIZE)}
 						>
-							Show more, {formatNumber(visible.length - shown.length)} more{" "}
-							{visible.length - shown.length === 1 ? "hero" : "heroes"}
+							{t("showMore", {
+								count: visible.length - shown.length,
+								amount: formatNumber(visible.length - shown.length),
+							})}
 						</Button>
 					)}
 				</>

@@ -1,9 +1,10 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { useMemo, useState } from "react";
 import { LuPlus, LuTrash2 } from "react-icons/lu";
 import type { HeroGearPiece, HeroGearSlot, Playthrough } from "@/types/app";
-import { formatDateTime, formatNumber } from "@/lib/format";
+import { formatDateTime, formatDecimal, formatNumber } from "@/lib/format";
 import type { GearPlanResult, PlanGoals, PlanPieceRef } from "@/service/heroGear";
 import {
 	empowermentLock,
@@ -56,25 +57,26 @@ export function GearPlanFlyout({ open, chief, onClose, onSave }: GearPlanFlyoutP
 		}
 	}
 
+	const t = useTranslations("heroGear.plan");
 	const savedAt = chief.heroGearPlan?.savedAt;
 
 	return (
 		<Flyout
 			open={open}
 			onClose={onClose}
-			title="Plan Hero Gear"
-			description="Mastery forging, enhancement and empowerment of any pieces, from any set"
+			title={t("title")}
+			description={t("description")}
 			footer={
 				<>
 					{savedAt && (
 						<span className="border-line bg-surface text-muted mr-auto inline-flex h-8 items-center gap-2 rounded-full border-[1.5px] px-3 font-mono text-xs">
 							<span aria-hidden="true" className="bg-kept size-1.5 rounded-full" />
-							Plan saved {formatDateTime(savedAt)}
+							{t("saved", { time: formatDateTime(savedAt) })}
 						</span>
 					)}
-					<Button onClick={onClose}>Close</Button>
+					<Button onClick={onClose}>{t("close")}</Button>
 					<Button variant="primary" onClick={() => onSave(refs, goals)}>
-						Save plan
+						{t("save")}
 					</Button>
 				</>
 			}
@@ -103,6 +105,7 @@ function PlanBody({
 	onRefsChange: (refs: PlanPieceRef[]) => void;
 	onGoalsChange: (goals: PlanGoals) => void;
 }) {
+	const t = useTranslations("heroGear.plan");
 	const plan = useMemo(() => runGearPlan(chief, refs, goals), [chief, refs, goals]);
 
 	return (
@@ -110,9 +113,7 @@ function PlanBody({
 			<AddPiece chief={chief} refs={refs} onAdd={(ref) => onRefsChange([...refs, ref])} />
 			{plan.rows.length === 0 ? (
 				<Card className="p-4">
-					<p className="text-muted">
-						No pieces in the plan yet. Add a piece above, then raise its goals.
-					</p>
+					<p className="text-muted">{t("empty")}</p>
 				</Card>
 			) : (
 				plan.rows.map((row) => (
@@ -148,6 +149,7 @@ function AddPiece({
 	refs: PlanPieceRef[];
 	onAdd: (ref: PlanPieceRef) => void;
 }) {
+	const t = useTranslations("heroGear.plan");
 	const sets = gearSetsOf(chief);
 	const [setId, setSetId] = useState("");
 	const [slot, setSlot] = useState<HeroGearSlot>("goggles");
@@ -156,28 +158,31 @@ function AddPiece({
 
 	return (
 		<Card className="flex flex-col gap-3 p-4">
-			<h3 className="font-semibold">Add a piece</h3>
+			<h3 className="font-semibold">{t("addPiece.title")}</h3>
 			{sets.length === 0 ? (
-				<p className="text-muted">Add a gear set on the Hero Gear tab first.</p>
+				<p className="text-muted">{t("addPiece.noSets")}</p>
 			) : (
 				<>
 					<div className="flex flex-wrap gap-3">
 						<div className="min-w-40 flex-1">
 							<Select
-								aria-label="Gear set"
+								aria-label={t("addPiece.set")}
 								value={selectedSetId}
 								onChange={(event) => setSetId(event.target.value)}
 							>
 								{sets.map((set) => (
 									<option key={set.id} value={set.id}>
-										{set.name} ({troopLabel(set.troopType)})
+										{t("addPiece.setOption", {
+											name: set.name,
+											troop: troopLabel(set.troopType),
+										})}
 									</option>
 								))}
 							</Select>
 						</div>
 						<div className="min-w-32 flex-1">
 							<Select
-								aria-label="Piece"
+								aria-label={t("addPiece.piece")}
 								value={slot}
 								onChange={(event) => setSlot(event.target.value as HeroGearSlot)}
 							>
@@ -194,12 +199,10 @@ function AddPiece({
 							onClick={() => onAdd({ setId: selectedSetId, slot })}
 						>
 							<LuPlus size={16} aria-hidden="true" />
-							Add piece
+							{t("addPiece.submit")}
 						</Button>
 					</div>
-					{taken && (
-						<p className="text-muted text-xs">This piece is already in the plan.</p>
-					)}
+					{taken && <p className="text-muted text-xs">{t("addPiece.taken")}</p>}
 				</>
 			)}
 		</Card>
@@ -215,8 +218,18 @@ function PieceBlock({
 	onGoalChange: (goal: HeroGearPiece) => void;
 	onRemove: () => void;
 }) {
+	const t = useTranslations("heroGear.plan");
 	const { set, piece, goal, ref } = row;
-	const title = `${set.name} · ${slotName(ref.slot)}`;
+	const title = t("pieceTitle", { set: set.name, slot: slotName(ref.slot) });
+	const rowLabel = (id: string | null) => {
+		const forgingRow = forgingRows.find((item) => item.id === id);
+		return forgingRow
+			? t("forgingRow", {
+					name: forgingRow.name,
+					percent: formatDecimal(forgingRow.statsUpPercent),
+				})
+			: t("none");
+	};
 	const change = (patch: Partial<HeroGearPiece>) =>
 		onGoalChange(normalizedGoal(piece, { ...goal, ...patch }));
 	const limit = forgingLimitIndex(goal.enhancement);
@@ -229,11 +242,13 @@ function PieceBlock({
 					<h3 className="font-semibold">{title}</h3>
 					<span className="flex gap-1.5">
 						<Badge tone="added">{troopLabel(set.troopType)}</Badge>
-						{!isMythic(piece) && <Badge tone="locked">{qualityOf(piece)}</Badge>}
+						{!isMythic(piece) && (
+							<Badge tone="locked">{t(`qualities.${qualityOf(piece)}`)}</Badge>
+						)}
 					</span>
 				</div>
 				<IconButton
-					label={`Remove ${title} from the plan`}
+					label={t("remove", { title })}
 					onClick={onRemove}
 					className="text-danger hover:bg-tint"
 				>
@@ -244,20 +259,22 @@ function PieceBlock({
 				<>
 					<div className="grid gap-3 sm:grid-cols-2">
 						<div className="flex flex-col gap-1">
-							<SectionLabel className="text-muted">Forging current row</SectionLabel>
+							<SectionLabel className="text-muted">
+								{t("forgingCurrent")}
+							</SectionLabel>
 							<p className="font-mono text-xs">{rowLabel(piece.forging)}</p>
 						</div>
 						<div className="flex flex-col gap-1">
-							<SectionLabel className="text-muted">Forging goal row</SectionLabel>
+							<SectionLabel className="text-muted">{t("forgingGoal")}</SectionLabel>
 							<Select
-								aria-label={`${title} forging goal`}
+								aria-label={t("forgingGoalLabel", { title })}
 								value={goal.forging ?? ""}
 								onChange={(event) =>
 									change({ forging: event.target.value || null })
 								}
 							>
 								<option value="" disabled={piece.forging !== null}>
-									None
+									{t("none")}
 								</option>
 								{forgingRows.map((item, index) => (
 									<option
@@ -274,18 +291,18 @@ function PieceBlock({
 						</div>
 					</div>
 					{goal.enhancement < MAX_ENHANCEMENT && (
-						<p className="text-muted text-xs">
-							Mastery forging stops at level 10 until the enhancement goal is 100.
-						</p>
+						<p className="text-muted text-xs">{t("forgingStops")}</p>
 					)}
 				</>
 			)}
 			<div className="flex items-center justify-between gap-3">
-				<span>Enhancement</span>
+				<span>{t("enhancement")}</span>
 				<span className="flex items-center gap-2">
-					<span className="text-muted font-mono text-xs">{piece.enhancement} to</span>
+					<span className="text-muted font-mono text-xs">
+						{t("from", { value: formatNumber(piece.enhancement) })}
+					</span>
 					<ValueStepper
-						label={`${title} enhancement goal`}
+						label={t("enhancementGoal", { title })}
 						value={goal.enhancement}
 						min={piece.enhancement}
 						max={MAX_ENHANCEMENT}
@@ -295,16 +312,18 @@ function PieceBlock({
 			</div>
 			{lock ? (
 				<div className="border-line flex flex-wrap items-center justify-between gap-2 rounded-md border-[1.5px] border-dashed p-2">
-					<span>Empowerment</span>
+					<span>{t("empowerment")}</span>
 					<span className="text-muted font-mono text-xs">{lockText(lock)}</span>
 				</div>
 			) : (
 				<div className="flex items-center justify-between gap-3">
-					<span>Empowerment</span>
+					<span>{t("empowerment")}</span>
 					<span className="flex items-center gap-2">
-						<span className="text-muted font-mono text-xs">{piece.empowerment} to</span>
+						<span className="text-muted font-mono text-xs">
+							{t("from", { value: formatNumber(piece.empowerment) })}
+						</span>
 						<ValueStepper
-							label={`${title} empowerment goal`}
+							label={t("empowermentGoal", { title })}
 							value={goal.empowerment}
 							min={piece.empowerment}
 							max={MAX_EMPOWERMENT}
@@ -319,16 +338,30 @@ function PieceBlock({
 
 type PlanResultRow = GearPlanResult["rows"][number];
 
-const rowLabel = (id: string | null) => {
-	const row = forgingRows.find((item) => item.id === id);
-	return row ? `${row.name} (+${row.statsUpPercent}%)` : "None";
-};
+const powerLineIds = ["gained", "before", "after"] as const;
+const eventIds = ["svs", "allianceShowdown", "kingOfIcefield"] as const;
+const resultColumnIds = ["piece", "forgingStatsUp", "powerGained"] as const;
 
 function PlanResult({ plan }: { plan: GearPlanResult }) {
+	const t = useTranslations("heroGear.plan");
+	const powerByLine = {
+		gained: plan.power,
+		before: plan.currentPower,
+		after: plan.goalPower,
+	};
+	const pointsByEvent = {
+		svs: plan.eventPoints.svs,
+		allianceShowdown: plan.eventPoints.allianceShowdown,
+		kingOfIcefield: plan.eventPoints.kingOfIcefield,
+	};
+
 	return (
 		<Card className="flex flex-col gap-4 p-4">
 			<h3 className="font-semibold">
-				Result for {plan.rows.length} {plan.rows.length === 1 ? "piece" : "pieces"}
+				{t("result.title", {
+					count: plan.rows.length,
+					amount: formatNumber(plan.rows.length),
+				})}
 			</h3>
 			<div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
 				{[...plan.resources.entries()].map(([itemId, amount]) => {
@@ -347,18 +380,16 @@ function PlanResult({ plan }: { plan: GearPlanResult }) {
 				})}
 			</div>
 			<div className="flex flex-col">
-				<SectionLabel className="text-muted pb-1">Power</SectionLabel>
-				{[
-					["Power gained", plan.power],
-					["Power of these pieces before", plan.currentPower],
-					["Power of these pieces after", plan.goalPower],
-				].map(([label, value]) => (
+				<SectionLabel className="text-muted pb-1">{t("result.power")}</SectionLabel>
+				{powerLineIds.map((id) => (
 					<div
-						key={label}
+						key={id}
 						className="border-line flex justify-between border-t-[1.5px] py-1.5 first:border-t-0"
 					>
-						<span>{label}</span>
-						<span className="font-mono font-medium">{formatNumber(Number(value))}</span>
+						<span>{t(`result.powerLines.${id}`)}</span>
+						<span className="font-mono font-medium">
+							{formatNumber(powerByLine[id])}
+						</span>
 					</div>
 				))}
 			</div>
@@ -366,9 +397,11 @@ function PlanResult({ plan }: { plan: GearPlanResult }) {
 				<table className="w-full min-w-[26rem] text-left">
 					<thead>
 						<tr>
-							{["Piece", "Forging stats up", "Power gained"].map((head) => (
-								<th key={head} className="py-1 pr-3">
-									<SectionLabel className="text-muted">{head}</SectionLabel>
+							{resultColumnIds.map((id) => (
+								<th key={id} className="py-1 pr-3">
+									<SectionLabel className="text-muted">
+										{t(`result.columns.${id}`)}
+									</SectionLabel>
 								</th>
 							))}
 						</tr>
@@ -380,11 +413,18 @@ function PlanResult({ plan }: { plan: GearPlanResult }) {
 								className="border-line border-t-[1.5px]"
 							>
 								<td className="py-1.5 pr-3 font-medium">
-									{row.set.name} · {slotName(row.ref.slot)}
+									{t("pieceTitle", {
+										set: row.set.name,
+										slot: slotName(row.ref.slot),
+									})}
 								</td>
 								<td className="pr-3 font-mono">
-									+{row.calculation.masteryForging.statsUpPercent}% (
-									{row.calculation.masteryForging.steps} steps)
+									{t("result.forgingStatsUp", {
+										percent: formatDecimal(
+											row.calculation.masteryForging.statsUpPercent
+										),
+										steps: formatNumber(row.calculation.masteryForging.steps),
+									})}
 								</td>
 								<td className="font-mono">{formatNumber(row.calculation.power)}</td>
 							</tr>
@@ -394,34 +434,28 @@ function PlanResult({ plan }: { plan: GearPlanResult }) {
 			</div>
 			{plan.milestones.length > 0 && (
 				<div className="flex flex-col gap-1">
-					<SectionLabel className="text-muted">Milestones unlocked</SectionLabel>
+					<SectionLabel className="text-muted">{t("result.milestones")}</SectionLabel>
 					{plan.milestones.map((item) => (
 						<p key={`${item.label}${item.stat}`}>
-							{item.label}: {item.stat}
+							{t("result.milestoneLine", { label: item.label, stat: item.stat })}
 						</p>
 					))}
 				</div>
 			)}
 			<div className="grid grid-cols-3 gap-3">
-				{[
-					["SvS", plan.eventPoints.svs],
-					["Alliance Showdown", plan.eventPoints.allianceShowdown],
-					["King of Icefield", plan.eventPoints.kingOfIcefield],
-				].map(([name, value]) => (
+				{eventIds.map((id) => (
 					<div
-						key={name}
+						key={id}
 						className="border-line flex flex-col rounded-md border-[1.5px] p-2"
 					>
-						<span className="text-muted text-xs">{name}</span>
+						<span className="text-muted text-xs">{t(`result.events.${id}`)}</span>
 						<span className="font-mono font-semibold">
-							{formatNumber(Number(value))}
+							{formatNumber(pointsByEvent[id])}
 						</span>
 					</div>
 				))}
 			</div>
-			<p className="text-muted text-xs">
-				Plan Hero Gear has no speed or bonus controls. The calculator returns no time.
-			</p>
+			<p className="text-muted text-xs">{t("result.note")}</p>
 		</Card>
 	);
 }

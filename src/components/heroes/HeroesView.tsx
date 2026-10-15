@@ -1,7 +1,9 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { useState } from "react";
 import type { Playthrough } from "@/types/app";
+import { formatNumber } from "@/lib/format";
 import { buildHeroViews } from "@/service/heroes";
 import { gearSetsOf } from "@/service/heroGear";
 import { PageHeader } from "@/comps/layout/PageHeader";
@@ -12,6 +14,7 @@ import { HeroGearTab } from "./HeroGearTab";
 type HeroesTabId = "heroes" | "gear";
 
 export function HeroesView({ chief }: { chief: Playthrough }) {
+	const t = useTranslations("heroes.view");
 	const [tabId, setTabId] = useState<HeroesTabId>("heroes");
 	const heroViews = buildHeroViews(chief);
 	const owned = heroViews.filter((view) => view.owned).length;
@@ -20,18 +23,26 @@ export function HeroesView({ chief }: { chief: Playthrough }) {
 	return (
 		<>
 			<PageHeader
-				title="Heroes"
+				title={t("heroesTab")}
 				subline={
 					tabId === "heroes"
-						? `${chief.name} · ${owned} of ${heroViews.length} owned`
-						: `${chief.name} · ${sets.length} gear ${sets.length === 1 ? "set" : "sets"}`
+						? t("heroesSubline", {
+								chief: chief.name,
+								owned: formatNumber(owned),
+								total: formatNumber(heroViews.length),
+							})
+						: t("gearSubline", {
+								chief: chief.name,
+								count: sets.length,
+								amount: formatNumber(sets.length),
+							})
 				}
 			/>
 			<Tabs
-				label="Heroes"
+				label={t("tabsLabel")}
 				tabs={[
-					{ id: "heroes", label: "Heroes", count: heroViews.length },
-					{ id: "gear", label: "Hero Gear", count: sets.length },
+					{ id: "heroes", label: t("heroesTab"), count: heroViews.length },
+					{ id: "gear", label: t("gearTab"), count: sets.length },
 				]}
 				activeId={tabId}
 				onChange={setTabId}

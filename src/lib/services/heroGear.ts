@@ -1,3 +1,4 @@
+import { translator } from "@/i18n/formatter";
 import { calculateHeroGear } from "whiteout-survival-data";
 import type { HeroGearCalculation } from "whiteout-survival-data";
 import type {
@@ -9,13 +10,14 @@ import type {
   Playthrough,
   TroopType,
 } from "@/types/app";
+import { formatNumber } from "@/lib/format";
 import { findHero } from "@/data/game/heroes";
 import {
   DEFAULT_QUALITY,
   EMPOWERMENT_FORGING_INDEX,
   forgingIndex,
   forgingRows,
-  gearQualities,
+  gearQualityIds,
   gearSlots,
   MAX_EMPOWERMENT,
   MAX_ENHANCEMENT,
@@ -54,7 +56,7 @@ const knownForging = (id: string | null | undefined) =>
   forgingIndex(id ?? null) >= 0 ? (id as string) : null;
 
 const knownQuality = (quality: string | undefined): HeroGearQuality =>
-  gearQualities.some((item) => item.id === quality)
+  gearQualityIds.some((id) => id === quality)
     ? (quality as HeroGearQuality)
     : DEFAULT_QUALITY;
 
@@ -107,15 +109,14 @@ export const empowermentLock = (
     : null;
 };
 
-export const lockText = (lock: EmpowermentLock) =>
-  lock.needsMythic
-    ? "Needs Mythic gear"
-    : `Needs ${[
-        lock.needsEnhancement ? "enhancement 100" : null,
-        lock.needsForging ? "mastery forging level 10" : null,
-      ]
-        .filter(Boolean)
-        .join(" and ")}`;
+export const lockText = (lock: EmpowermentLock) => {
+  const t = translator("heroGear");
+  if (lock.needsMythic) return t("lock.needsMythic");
+  if (lock.needsEnhancement && lock.needsForging) return t("lock.needsBoth");
+  return lock.needsEnhancement
+    ? t("lock.needsEnhancement")
+    : t("lock.needsForging");
+};
 
 /**
  * Mastery forging past level 10 needs enhancement 100.
@@ -159,7 +160,10 @@ export const withPieceChange = (
   },
 });
 
-export const nextSetName = (sets: HeroGearSet[]) => `Set ${sets.length + 1}`;
+export const nextSetName = (sets: HeroGearSet[]) =>
+  translator("heroGear")("defaultSetName", {
+    number: formatNumber(sets.length + 1),
+  });
 
 export interface NewSetValues {
   name: string;
@@ -429,7 +433,7 @@ export const enhancementLine = (set: HeroGearSet) =>
   slotIds.map((slot) => set.pieces[slot].enhancement).join(" · ");
 
 export const troopLabel = (troopType: TroopType) =>
-  troopType[0].toUpperCase() + troopType.slice(1);
+  translator("heroGear")(`troop.${troopType}`);
 
 export const allTroopTypes: readonly TroopType[] = troopTypes;
 
@@ -542,6 +546,7 @@ export const runGearPlan = (
   refs: PlanPieceRef[],
   goals: PlanGoals,
 ): GearPlanResult => {
+  const t = translator("heroGear");
   const sets = gearSetsOf(chief);
   const rows = refs.flatMap((ref) => {
     const set = sets.find((item) => item.id === ref.setId);
@@ -583,8 +588,15 @@ export const runGearPlan = (
     },
     milestones: rows.flatMap((row) =>
       (row.calculation.stats?.milestones ?? []).map((milestone) => ({
-        label: `${row.set.name} · ${slotName(row.ref.slot)}`,
-        stat: `empowerment ${milestone.empowermentLevel}, ${milestone.event}, ${milestone.stat}`,
+        label: t("plan.pieceTitle", {
+          set: row.set.name,
+          slot: slotName(row.ref.slot),
+        }),
+        stat: t("plan.milestone", {
+          level: formatNumber(milestone.empowermentLevel),
+          event: milestone.event,
+          stat: milestone.stat,
+        }),
       })),
     ),
   };

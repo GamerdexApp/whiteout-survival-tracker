@@ -1,6 +1,7 @@
 "use client";
 
 import type { Hero, HeroSkill } from "whiteout-survival-data";
+import { useTranslations } from "next-intl";
 import type { Playthrough } from "@/types/app";
 import { formatNumber } from "@/lib/format";
 import type { HeroChange, HeroView } from "@/service/heroes";
@@ -35,6 +36,8 @@ import { Switch } from "@/comps/ui/Switch";
 import { ValueStepper } from "@/comps/ui/ValueStepper";
 import { GoalText, HeroRow, ShardsInput, ShardTile } from "./HeroRows";
 
+type PowerRowId = "levelPower" | "skillPower" | "starPower" | "weaponPower" | "totalPower";
+
 interface HeroFlyoutProps {
 	view: HeroView | null;
 	chief: Playthrough;
@@ -44,25 +47,32 @@ interface HeroFlyoutProps {
 }
 
 export function HeroFlyout({ view, chief, onChange, onPlan, onClose }: HeroFlyoutProps) {
+	const t = useTranslations("heroes.flyout");
+	const tc = useTranslations("heroes.common");
+
 	return (
 		<Flyout
 			open={view !== null}
 			onClose={onClose}
-			title={view?.hero.name ?? "Hero"}
+			title={view?.hero.name ?? t("fallbackTitle")}
 			description={
 				view
-					? `${view.hero.rarity} ${view.hero.class}, generation ${view.hero.generation}`
+					? t("description", {
+							rarity: view.hero.rarity,
+							heroClass: view.hero.class,
+							generation: formatNumber(view.hero.generation),
+						})
 					: undefined
 			}
 			footer={
 				<>
 					{view?.owned && (
 						<Button onClick={() => onPlan(view.hero.id)} className="mr-auto">
-							Plan
+							{tc("plan")}
 						</Button>
 					)}
 					<Button variant="primary" onClick={onClose}>
-						Done
+						{t("done")}
 					</Button>
 				</>
 			}
@@ -81,6 +91,7 @@ function HeroContent({
 	chief: Playthrough;
 	onChange: (change: HeroChange) => void;
 }) {
+	const tc = useTranslations("heroes.common");
 	const { hero } = view;
 
 	return (
@@ -90,13 +101,15 @@ function HeroContent({
 				<div className="flex min-w-0 flex-1 flex-wrap gap-1.5">
 					<Badge tone="changed">{hero.rarity}</Badge>
 					<Badge tone="added">{hero.class}</Badge>
-					<Badge tone="locked">Gen {hero.generation}</Badge>
+					<Badge tone="locked">
+						{tc("generation", { generation: formatNumber(hero.generation) })}
+					</Badge>
 					<Badge tone="locked">{hero.subClass}</Badge>
 				</div>
 				<span className="flex items-center gap-2">
-					<span className="text-muted">Owned</span>
+					<span className="text-muted">{tc("owned")}</span>
 					<Switch
-						label={`${hero.name} owned`}
+						label={tc("ownedLabel", { hero: hero.name })}
 						checked={view.owned}
 						onChange={(owned) => onChange({ kind: "owned", heroId: hero.id, owned })}
 					/>
@@ -143,16 +156,18 @@ function StatusSection({
 	chief: Playthrough;
 	onChange: (change: HeroChange) => void;
 }) {
+	const t = useTranslations("heroes.flyout.status");
+	const tc = useTranslations("heroes.common");
 	const { hero } = view;
 	const goal = effectiveGoal(view);
 	const furnace = furnaceCheck(chief, hero, view.level);
 	const power = heroPowerParts(view);
 
 	return (
-		<Section title="Status">
-			<HeroRow label="Star and tier">
+		<Section title={t("title")}>
+			<HeroRow label={tc("starAndTier")}>
 				<ValueStepper
-					label={`${hero.name} star`}
+					label={tc("starLabel", { hero: hero.name })}
 					value={starPosition(view.stars)}
 					min={0}
 					max={MAX_STAR_POSITION}
@@ -163,45 +178,45 @@ function StatusSection({
 				/>
 				<GoalText
 					goal={hasStarGoal(view) && goal ? formatStars(goal) : null}
-					empty="No goal"
+					empty={tc("noGoal")}
 				/>
 			</HeroRow>
-			<HeroRow label="Level">
+			<HeroRow label={tc("level")}>
 				<ValueStepper
-					label={`${hero.name} level`}
+					label={tc("levelLabel", { hero: hero.name })}
 					value={view.level}
 					min={1}
 					max={MAX_HERO_LEVEL}
-					suffix={`/ ${MAX_HERO_LEVEL}`}
+					suffix={tc("maxLevelSuffix", { max: formatNumber(MAX_HERO_LEVEL) })}
 					onChange={(level) => onChange({ kind: "level", heroId: hero.id, level })}
 				/>
 			</HeroRow>
-			<HeroRow label={`Furnace needed for level ${view.level}`}>
+			<HeroRow label={t("furnaceNeeded", { level: formatNumber(view.level) })}>
 				<span className="font-mono">{furnace.requiredLabel}</span>
 				<span className={furnace.met ? "text-kept" : "text-warn"}>
-					{furnace.met ? "Met" : `Needs Furnace ${furnace.requiredLabel}`}
+					{furnace.met
+						? t("met")
+						: t("needsFurnace", { required: furnace.requiredLabel })}
 				</span>
 			</HeroRow>
 			{[
-				["Level power", power.level],
-				["Skill power", power.skills],
-				["Star power", power.star],
-				...(hero.exclusiveWeapon ? [["Weapon power", power.weapon]] : []),
-				["Total power", power.total],
-			].map(([label, value]) => (
-				<HeroRow key={label as string} label={label as string}>
+				["levelPower", power.level],
+				["skillPower", power.skills],
+				["starPower", power.star],
+				...(hero.exclusiveWeapon ? [["weaponPower", power.weapon]] : []),
+				["totalPower", power.total],
+			].map(([id, value]) => (
+				<HeroRow key={id as string} label={t(id as PowerRowId)}>
 					<span
 						className={
 							value === null ? "text-muted font-mono" : "font-mono font-medium"
 						}
 					>
-						{value === null ? "Unknown" : formatNumber(value as number)}
+						{value === null ? tc("unknown") : formatNumber(value as number)}
 					</span>
 				</HeroRow>
 			))}
-			<p className="text-muted text-xs">
-				Power counts the level, the skills, the star label and the weapon level.
-			</p>
+			<p className="text-muted text-xs">{t("note")}</p>
 		</Section>
 	);
 }
@@ -215,6 +230,8 @@ function SkillRow({
 	skill: HeroSkill;
 	onChange: (change: HeroChange) => void;
 }) {
+	const t = useTranslations("heroes.flyout.skills");
+	const tc = useTranslations("heroes.common");
 	const level = view.skillLevels[skill.name];
 	const next = skill.levels[level];
 	const goal = skillGoalOf(view, skill.name);
@@ -227,11 +244,11 @@ function SkillRow({
 				<span className="flex items-center gap-2">
 					<GoalText goal={goal?.toString() ?? null} />
 					<ValueStepper
-						label={`${view.hero.name} ${skill.name}`}
+						label={tc("skillLabel", { hero: view.hero.name, skill: skill.name })}
 						value={level}
 						min={1}
 						max={MAX_SKILL_LEVEL}
-						suffix={`/ ${MAX_SKILL_LEVEL}`}
+						suffix={tc("maxLevelSuffix", { max: formatNumber(MAX_SKILL_LEVEL) })}
 						onChange={(next) =>
 							onChange({
 								kind: "skill",
@@ -246,12 +263,15 @@ function SkillRow({
 			{next && (
 				<p className="text-muted flex flex-wrap gap-x-3 font-mono text-xs">
 					<span>
-						To {next.level}: {formatNumber(next.manualsRequired)} manuals
+						{t("toLevel", {
+							level: formatNumber(next.level),
+							manuals: formatNumber(next.manualsRequired),
+						})}
 					</span>
 					<span className={starShort ? "text-warn" : "text-kept"}>
 						{starShort
-							? `Needs star ${next.starRequired}`
-							: `Star ${next.starRequired} met`}
+							? t("needsStar", { star: formatNumber(next.starRequired) })
+							: t("starMet", { star: formatNumber(next.starRequired) })}
 					</span>
 				</p>
 			)}
@@ -266,16 +286,18 @@ function SkillsSection({
 	view: HeroView;
 	onChange: (change: HeroChange) => void;
 }) {
+	const t = useTranslations("heroes.flyout.skills");
+	const tc = useTranslations("heroes.common");
 	const { hero } = view;
 	const groups = [
-		{ title: "Exploration", skills: hero.skills.exploration },
-		{ title: "Expedition", skills: hero.skills.expedition },
+		{ id: "exploration", title: tc("exploration"), skills: hero.skills.exploration },
+		{ id: "expedition", title: tc("expedition"), skills: hero.skills.expedition },
 	];
 
 	return (
-		<Section title="Skills" aside="Five levels per skill">
+		<Section title={t("title")} aside={t("aside")}>
 			{groups.map((group) => (
-				<div key={group.title} className="flex flex-col pb-2">
+				<div key={group.id} className="flex flex-col pb-2">
 					<SectionLabel className="text-muted py-1">{group.title}</SectionLabel>
 					{group.skills.map((skill) => (
 						<SkillRow key={skill.name} view={view} skill={skill} onChange={onChange} />
@@ -284,14 +306,14 @@ function SkillsSection({
 			))}
 			{hero.skills.talent && (
 				<div className="flex flex-col pb-2">
-					<SectionLabel className="text-muted py-1">Talent</SectionLabel>
+					<SectionLabel className="text-muted py-1">{tc("talent")}</SectionLabel>
 					<HeroRow label={hero.skills.talent.name}>
 						<ValueStepper
-							label={`${hero.name} talent`}
+							label={tc("talentLabel", { hero: hero.name })}
 							value={view.talent}
 							min={1}
 							max={MAX_TALENT_LEVEL}
-							suffix={`/ ${MAX_TALENT_LEVEL}`}
+							suffix={tc("maxLevelSuffix", { max: formatNumber(MAX_TALENT_LEVEL) })}
 							onChange={(level) =>
 								onChange({ kind: "talent", heroId: hero.id, level })
 							}
@@ -316,42 +338,51 @@ function WeaponSection({
 	view: HeroView;
 	onChange: (change: HeroChange) => void;
 }) {
+	const t = useTranslations("heroes.flyout.weapon");
+	const tc = useTranslations("heroes.common");
 	const { hero, weapon } = view;
 	const exclusive = hero.exclusiveWeapon as NonNullable<Hero["exclusiveWeapon"]>;
 	const maxed = weapon >= MAX_WEAPON_LEVEL;
 
 	return (
-		<Section title={`Exclusive weapon: ${exclusive.name}`}>
-			<HeroRow label="Weapon level">
+		<Section title={t("title", { name: exclusive.name })}>
+			<HeroRow label={t("level")}>
 				<ValueStepper
-					label={`${hero.name} ${exclusive.name} level`}
+					label={tc("weaponLevelLabel", { hero: hero.name, weapon: exclusive.name })}
 					value={weapon}
 					min={0}
 					max={MAX_WEAPON_LEVEL}
-					suffix={`/ ${MAX_WEAPON_LEVEL}`}
+					suffix={tc("maxLevelSuffix", { max: formatNumber(MAX_WEAPON_LEVEL) })}
 					onChange={(level) => onChange({ kind: "weapon", heroId: hero.id, level })}
 				/>
 				<GoalText goal={weaponGoalOf(view)?.toString() ?? null} />
 			</HeroRow>
 			{!maxed && (
 				<>
-					<HeroRow label={`Widgets for level ${weapon + 1}`}>
+					<HeroRow label={t("widgetsForLevel", { level: formatNumber(weapon + 1) })}>
 						<span className="font-mono">{formatNumber(widgetCostOf(weapon + 1))}</span>
 					</HeroRow>
-					<HeroRow label={`Widgets for levels ${weapon + 1} to ${MAX_WEAPON_LEVEL}`}>
+					<HeroRow
+						label={t("widgetsForLevels", {
+							from: formatNumber(weapon + 1),
+							to: formatNumber(MAX_WEAPON_LEVEL),
+						})}
+					>
 						<span className="font-mono">
 							{formatNumber(widgetsForLevels(weapon + 1, MAX_WEAPON_LEVEL))}
 						</span>
 					</HeroRow>
 				</>
 			)}
-			<HeroRow label="Expedition bonus">
+			<HeroRow label={t("expeditionBonus")}>
 				<span className="font-mono">
-					Lethality {exclusive.stats.expedition.lethality}% · Health{" "}
-					{exclusive.stats.expedition.health}%
+					{t("bonus", {
+						lethality: formatNumber(exclusive.stats.expedition.lethality),
+						health: formatNumber(exclusive.stats.expedition.health),
+					})}
 				</span>
 			</HeroRow>
-			<HeroRow label="Weapon power">
+			<HeroRow label={t("power")}>
 				<span className="font-mono">{formatNumber(exclusive.power)}</span>
 			</HeroRow>
 			<div className="flex flex-col gap-2 pt-2">
@@ -366,8 +397,10 @@ function WeaponSection({
 								<span className="font-medium">{skill.name}</span>
 								<span className="text-muted font-mono text-xs">
 									{skill.unlockLevel === undefined
-										? "Unknown"
-										: `Unlocks at weapon level ${skill.unlockLevel}`}
+										? tc("unknown")
+										: t("unlocksAt", {
+												level: formatNumber(skill.unlockLevel),
+											})}
 								</span>
 							</div>
 							<p className="text-muted">{skill.description}</p>
@@ -386,30 +419,32 @@ function ShardsSection({
 	view: HeroView;
 	onChange: (change: HeroChange) => void;
 }) {
+	const t = useTranslations("heroes.flyout.shards");
+	const tc = useTranslations("heroes.common");
 	const { hero } = view;
 	const needed = shardsNeededForGoal(view);
 	const goal = effectiveGoal(view);
 	const sources = hero.shardSources;
 
 	return (
-		<Section title="Shards">
-			<HeroRow label="Shards owned">
+		<Section title={t("title")}>
+			<HeroRow label={t("owned")}>
 				<ShardTile src={hero.shardImg} />
 				<ShardsInput
-					label={`${hero.name} shards owned`}
+					label={tc("shardsOwnedLabel", { hero: hero.name })}
 					value={view.shards}
 					onChange={(shards) => onChange({ kind: "shards", heroId: hero.id, shards })}
 				/>
 			</HeroRow>
 			{view.owned && hasStarGoal(view) && goal && (
 				<>
-					<HeroRow label="Goal">
+					<HeroRow label={t("goal")}>
 						<span className="text-primary font-mono">{formatStars(goal)}</span>
 					</HeroRow>
-					<HeroRow label={`Needed for goal ${formatStars(goal)}`}>
+					<HeroRow label={t("neededForGoal", { goal: formatStars(goal) })}>
 						<span className="font-mono">{formatNumber(needed)}</span>
 					</HeroRow>
-					<HeroRow label={view.shards >= needed ? "Enough shards" : "Short by"}>
+					<HeroRow label={view.shards >= needed ? t("enough") : t("shortBy")}>
 						<span
 							className={
 								view.shards >= needed
@@ -417,14 +452,14 @@ function ShardsSection({
 									: "text-warn font-mono"
 							}
 						>
-							{view.shards >= needed ? "Yes" : formatNumber(needed - view.shards)}
+							{view.shards >= needed ? t("yes") : formatNumber(needed - view.shards)}
 						</span>
 					</HeroRow>
 				</>
 			)}
-			<HeroRow label="Shard sources">
+			<HeroRow label={t("sources")}>
 				<span className={sources.length === 0 ? "text-muted" : "text-right"}>
-					{sources.length === 0 ? "Unknown" : sources.join(", ")}
+					{sources.length === 0 ? tc("unknown") : sources.join(", ")}
 				</span>
 			</HeroRow>
 		</Section>
@@ -432,39 +467,54 @@ function ShardsSection({
 }
 
 function StatsSection({ view }: { view: HeroView }) {
+	const t = useTranslations("heroes.flyout.stats");
 	const { hero, stars } = view;
 	const estimate = estimateHeroStats(hero, stars.star, stars.tier);
 	const full = hero.stats;
 
 	const rows = [
 		{
-			label: `Exploration at ${formatStars(stars)}`,
-			text: `Atk ${formatNumber(estimate.exploration.attack)} · Def ${formatNumber(estimate.exploration.defense)} · HP ${formatNumber(estimate.exploration.health)}`,
+			label: t("explorationAt", { stars: formatStars(stars) }),
+			text: t("exploration", {
+				attack: formatNumber(estimate.exploration.attack),
+				defense: formatNumber(estimate.exploration.defense),
+				health: formatNumber(estimate.exploration.health),
+			}),
 			estimated: estimate.estimated,
 		},
 		{
-			label: `Expedition at ${formatStars(stars)}`,
-			text: `Atk ${estimate.expedition.attack}% · Def ${estimate.expedition.defense}%`,
+			label: t("expeditionAt", { stars: formatStars(stars) }),
+			text: t("expedition", {
+				attack: formatNumber(estimate.expedition.attack),
+				defense: formatNumber(estimate.expedition.defense),
+			}),
 			estimated: estimate.estimated,
 		},
 		{
-			label: "Exploration at 5.0",
-			text: `Atk ${formatNumber(full.exploration.attack)} · Def ${formatNumber(full.exploration.defense)} · HP ${formatNumber(full.exploration.health)}`,
+			label: t("explorationFull"),
+			text: t("exploration", {
+				attack: formatNumber(full.exploration.attack),
+				defense: formatNumber(full.exploration.defense),
+				health: formatNumber(full.exploration.health),
+			}),
 			estimated: false,
 		},
 		{
-			label: "Expedition at 5.0",
-			text: `Atk ${full.expedition.attack}% · Def ${full.expedition.defense}%`,
+			label: t("expeditionFull"),
+			text: t("expedition", {
+				attack: formatNumber(full.expedition.attack),
+				defense: formatNumber(full.expedition.defense),
+			}),
 			estimated: false,
 		},
 	].filter((row, index) => index >= 2 || row.estimated || formatStars(stars) !== "5.0");
 
 	return (
-		<Section title="Stats at level 80">
+		<Section title={t("title")}>
 			{rows.map((row) => (
 				<HeroRow key={row.label} label={row.label}>
 					<span className="font-mono text-xs">{row.text}</span>
-					{row.estimated && <Badge tone="changed">Estimate</Badge>}
+					{row.estimated && <Badge tone="changed">{t("estimate")}</Badge>}
 				</HeroRow>
 			))}
 		</Section>
@@ -472,15 +522,22 @@ function StatsSection({ view }: { view: HeroView }) {
 }
 
 function TalentGate({ view, talent }: { view: HeroView; talent: HeroSkill }) {
+	const t = useTranslations("heroes.flyout.skills");
 	const next = talent.levels[view.talent];
-	if (!next) return <p className="text-muted text-xs">Talent is at its top level.</p>;
+	if (!next) return <p className="text-muted text-xs">{t("talentTop")}</p>;
 	const starShort = view.stars.star < next.starRequired;
 
 	return (
 		<p className={`font-mono text-xs ${starShort ? "text-warn" : "text-kept"}`}>
 			{starShort
-				? `Level ${next.level} needs star ${next.starRequired}`
-				: `Level ${next.level}: star ${next.starRequired} met`}
+				? t("talentNeedsStar", {
+						level: formatNumber(next.level),
+						star: formatNumber(next.starRequired),
+					})
+				: t("talentStarMet", {
+						level: formatNumber(next.level),
+						star: formatNumber(next.starRequired),
+					})}
 		</p>
 	);
 }
