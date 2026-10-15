@@ -10,6 +10,8 @@ import type { Playthrough } from "@/types/app";
 import { entertainmentBuildings } from "@/data/game/buildings";
 import { allResearch } from "@/data/game/research";
 import { levelledBuildingLevels } from "./buildings";
+import { charmItems, gearItems } from "./chiefGear";
+import { buildHeroViews } from "./heroes";
 import { levelOfNode } from "./research";
 
 const CONSTRUCTION_SPEED_STAT = "construction-speed";
@@ -31,7 +33,31 @@ const researchLevelsOf = (chief: Playthrough) =>
  * Reads the chief state that the other pages save and shapes it for `calculateBuffs`. A page adds
  * its section here when it is built.
  */
+const heroSkillsOf = (chief: Playthrough) =>
+  buildHeroViews(chief)
+    .filter((view) => view.owned)
+    .map((view) => ({ heroId: view.hero.id, skills: view.skillLevels }));
+
+const chiefGearOf = (chief: Playthrough) =>
+  Object.fromEntries(
+    gearItems(chief).flatMap((item) =>
+      item.current ? [[item.slotId, item.current]] : [],
+    ),
+  );
+
+const chiefCharmsOf = (chief: Playthrough) => {
+  const bySlot = new Map<string, string[]>();
+  charmItems(chief).forEach((item) => {
+    if (!item.current) return;
+    bySlot.set(item.slotId, [...(bySlot.get(item.slotId) ?? []), item.current]);
+  });
+  return Object.fromEntries(bySlot);
+};
+
 export const buffProfileOf = (chief: Playthrough): BuffProfile => ({
+  heroSkills: heroSkillsOf(chief),
+  chiefGear: chiefGearOf(chief),
+  chiefCharms: chiefCharmsOf(chief),
   researchLevels: researchLevelsOf(chief),
   buildingLevels: {
     ...levelledBuildingLevels(chief),

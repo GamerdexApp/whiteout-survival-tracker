@@ -33,7 +33,6 @@ export const sourceTypeNames: Record<BuffSourceType, string> = {
  * so instead of showing a total that looks complete.
  */
 export const pendingSources: { name: string; page: string }[] = [
-  { name: "Heroes", page: "Heroes" },
   { name: "Experts", page: "Experts" },
   { name: "Alliance Tech", page: "Tech" },
   { name: "Alliance Facilities", page: "Facilities" },
@@ -43,7 +42,6 @@ export const pendingSources: { name: string; page: string }[] = [
   { name: "Tundra Album", page: "Tundra Album" },
   { name: "My Island", page: "Daybreak Island" },
   { name: "Pets", page: "Pets" },
-  { name: "Chief Gear, set bonus and Charms", page: "Chief Gear" },
 ];
 
 export const unstoredSources = [
