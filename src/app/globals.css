@@ -124,9 +124,13 @@
   [role="tab"],
   [role="switch"],
   [role="menuitem"],
-  input:is([type="checkbox"], [type="radio"], [type="file"], [type="date"]):not(
-      :disabled
-    ) {
+  input:is(
+      [type="checkbox"],
+      [type="radio"],
+      [type="file"],
+      [type="date"],
+      [type="range"]
+    ):not(:disabled) {
     cursor: pointer;
   }
 

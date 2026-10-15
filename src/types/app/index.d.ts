@@ -76,6 +76,62 @@ export interface UpgradeLogEntry {
   power: number;
 }
 
+export interface HeroState {
+  owned?: boolean;
+  star?: number;
+  tier?: number;
+  level?: number;
+  skills?: Record<string, number>;
+  talent?: number;
+  weapon?: number;
+  shards?: number;
+}
+
+export interface HeroGoal {
+  star: number;
+  tier: number;
+  skills?: Record<string, number>;
+  weapon?: number;
+}
+
+export interface HeroesPlan {
+  goals: Record<string, HeroGoal>;
+  savedAt: string;
+}
+
+export type TroopType = "infantry" | "lancer" | "marksman";
+export type HeroGearSlot = "goggles" | "gloves" | "belt" | "boots";
+
+export type HeroGearQuality =
+  "common" | "uncommon" | "rare" | "epic" | "mythic";
+
+export interface HeroGearPiece {
+  quality?: HeroGearQuality;
+  enhancement: number;
+  empowerment: number;
+  forging: string | null;
+}
+
+export interface HeroGearSet {
+  id: string;
+  name: string;
+  troopType: TroopType;
+  heroId?: string;
+  pieces: Record<HeroGearSlot, HeroGearPiece>;
+}
+
+export interface HeroGearGoal {
+  enhancement?: number;
+  empowerment?: number;
+  forging?: string | null;
+}
+
+export interface HeroGearPlan {
+  rows: { setId: string; slot: HeroGearSlot }[];
+  goals: Record<string, Partial<Record<HeroGearSlot, HeroGearGoal>>>;
+  savedAt: string;
+}
+
 export interface Playthrough {
   id: string;
   name: string;
@@ -94,6 +150,10 @@ export interface Playthrough {
   researchPlan?: ResearchPlan;
   queues?: { construction?: ConstructionJob[]; research?: ResearchJob[] };
   upgradeLog?: UpgradeLogEntry[];
+  heroes?: Record<string, HeroState>;
+  heroesPlan?: HeroesPlan;
+  heroGear?: { sets: HeroGearSet[] };
+  heroGearPlan?: HeroGearPlan;
 }
 
 export interface AppData {
