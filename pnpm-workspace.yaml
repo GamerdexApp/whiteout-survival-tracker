@@ -1,4 +1,6 @@
 allowBuilds:
+  "@parcel/watcher": false
+  "@swc/core": false
   unrs-resolver: false
 minimumReleaseAgeExclude:
   - whiteout-survival-data@0.5.0
