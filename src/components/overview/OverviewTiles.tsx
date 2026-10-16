@@ -2,18 +2,19 @@ import { useTranslations } from "next-intl";
 import Link from "next/link";
 import type { ReactNode } from "react";
 import type { Playthrough } from "@/types/app";
-import { formatFurnaceLevel, formatNumber, formatTimeLeft } from "@/lib/format";
+import { formatFurnaceLevel, formatNumber } from "@/lib/format";
 import { useUiSettings } from "@/lib/hooks/useUiSettings";
 import { dayLabelOf } from "@/service/coreEvents";
+import {
+	buildDecorationViews,
+	islandUnlocked,
+	summarizeProsperity,
+	unlockFurnaceLabel,
+} from "@/service/daybreak";
 import type { EventsZone } from "@/service/eventsSchedule";
 import { furnaceProgressOf, ownedSkinCountOf, vipLevelOfChief } from "@/service/overview";
 import { dailiesTodayOf, eventsTileOf } from "@/service/overviewEvents";
-import {
-	constructionRowsOf,
-	researchRowsOf,
-	researchTileOf,
-	runningCountOf,
-} from "@/service/overviewQueues";
+import { nextGenerationOf } from "@/service/overviewUnlocks";
 import { packageTotals } from "@/data/game/overviewTotals";
 import { Card } from "@/comps/ui/Card";
 import { SectionLabel } from "@/comps/ui/SectionLabel";
@@ -45,10 +46,10 @@ interface OverviewTilesProps {
 
 export function OverviewTiles({ chief, now, zone }: OverviewTilesProps) {
 	return (
-		<div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7">
+		<div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-7">
 			<FurnaceTile chief={chief} />
-			<ConstructionTile chief={chief} />
-			<ResearchTile chief={chief} now={now} />
+			<GenerationTile chief={chief} now={now} />
+			<ProsperityTile chief={chief} />
 			<DailiesTile chief={chief} now={now} />
 			<EventsTile chief={chief} now={now} zone={zone} />
 			<SkinsTile chief={chief} />
@@ -83,55 +84,42 @@ function FurnaceTile({ chief }: { chief: Playthrough }) {
 	);
 }
 
-function ConstructionTile({ chief }: { chief: Playthrough }) {
-	const t = useTranslations("overview.tiles.construction");
-	const rows = constructionRowsOf(chief);
-	const busy = runningCountOf(rows);
-	const idle = rows.length - busy;
-	const sub =
-		busy === rows.length
-			? t("allBusy")
-			: busy === 0
-				? t("allIdle")
-				: t("someIdle", { count: idle, amount: formatNumber(idle) });
-
-	return (
-		<Tile
-			href="/buildings"
-			label={t("label")}
-			value={t("value", { busy: formatNumber(busy), total: formatNumber(rows.length) })}
-			sub={sub}
-		/>
-	);
-}
-
-function ResearchTile({ chief, now }: { chief: Playthrough; now: number }) {
-	const t = useTranslations("overview.tiles.research");
-	const tQueues = useTranslations("overview.queues");
-	const state = researchTileOf(chief, now);
-	const total = researchRowsOf(chief).length;
-	const nameOf = (slot: unknown) =>
-		slot === "warAcademy" ? tQueues("researchWarAcademy") : tQueues("researchMain");
-
-	const sub =
-		state.running.length === 0
-			? t("bothIdle")
-			: state.running.length === total
-				? t("bothRunning")
-				: t("oneRunning", {
-						name: nameOf(state.running[0].row.slot),
-						left: formatTimeLeft(state.running[0].seconds),
+function GenerationTile({ chief, now }: { chief: Playthrough; now: number }) {
+	const t = useTranslations("overview.tiles.generation");
+	const upcoming = nextGenerationOf(chief, now);
+	const generation = formatNumber(chief.heroGenerationUnlocked);
+	const sub = !upcoming
+		? t("allUnlocked")
+		: upcoming.next.passed
+			? t("shouldBeOpen", { next: formatNumber(upcoming.generation) })
+			: upcoming.next.daysLeft === null
+				? t("onDay", {
+						next: formatNumber(upcoming.generation),
+						day: formatNumber(upcoming.next.day),
+					})
+				: t("inDays", {
+						next: formatNumber(upcoming.generation),
+						days: formatNumber(upcoming.next.daysLeft),
 					});
 
+	return <Tile href="/heroes" label={t("label")} value={generation} sub={sub} />;
+}
+
+function ProsperityTile({ chief }: { chief: Playthrough }) {
+	const t = useTranslations("overview.tiles.prosperity");
+	const unlocked = islandUnlocked(chief);
+	const summary = summarizeProsperity(buildDecorationViews(chief));
+
 	return (
 		<Tile
-			href="/research"
+			href="/daybreak-island"
 			label={t("label")}
-			value={t("value", {
-				running: formatNumber(state.running.length),
-				total: formatNumber(total),
-			})}
-			sub={sub}
+			value={unlocked ? formatNumber(summary.now) : t("locked")}
+			sub={
+				unlocked
+					? t("possible", { max: formatNumber(summary.max) })
+					: t("lockedHint", { level: unlockFurnaceLabel })
+			}
 		/>
 	);
 }

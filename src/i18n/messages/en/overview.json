@@ -15,20 +15,6 @@
             "unknown": "Unknown",
             "unknownHint": "Set the Furnace on Buildings"
         },
-        "construction": {
-            "label": "Construction",
-            "value": "{busy} / {total}",
-            "allBusy": "Both builders busy",
-            "allIdle": "Both builders idle",
-            "someIdle": "{count, plural, one {{amount} builder idle} other {{amount} builders idle}}"
-        },
-        "research": {
-            "label": "Research",
-            "value": "{running} / {total}",
-            "bothIdle": "Both queues idle",
-            "bothRunning": "Both queues running",
-            "oneRunning": "{name} {left}, the other queue is idle"
-        },
         "dailies": {
             "label": "Dailies",
             "value": "{done} / {total}",
@@ -53,6 +39,19 @@
             "unknown": "Unknown",
             "hint": "From your VIP XP",
             "unknownHint": "Enter your VIP XP on VIP"
+        },
+        "prosperity": {
+            "label": "Island prosperity",
+            "possible": "of {max} possible",
+            "locked": "Locked",
+            "lockedHint": "Needs Furnace {level}"
+        },
+        "generation": {
+            "label": "Hero generation",
+            "allUnlocked": "Every generation is unlocked",
+            "shouldBeOpen": "Generation {next} should be open",
+            "onDay": "Generation {next} on server day {day}",
+            "inDays": "Generation {next} in about {days} days"
         }
     },
     "events": {
@@ -183,7 +182,7 @@
     },
     "progress": {
         "title": "Progress per area",
-        "hint": "Owned or levelled against the package totals",
+        "hint": "Owned or leveled against the package totals",
         "count": "{owned} / {total}",
         "furnace": "Furnace",
         "furnaceOf": "{level} of {max}",
