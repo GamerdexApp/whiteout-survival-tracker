@@ -70,7 +70,10 @@
         "label": "Builders",
         "hint": "An upgrade you start here shows on Overview as a running queue.",
         "idle": "Press Start on a building to begin an upgrade.",
-        "jobTitle": "{name}, {from} to {to}"
+        "jobTitle": "{name}, {from} to {to}",
+        "locked": "Locked",
+        "lockedText": "The second builder needs the Construction Pack.",
+        "lockedLink": "Turn it on in Edit chief"
     },
     "upgrade": {
         "option": "{subject}, {from} to {to}",
@@ -124,7 +127,7 @@
                 "message": "Now {level}. Added to History."
             },
             "cancelled": {
-                "title": "{name} upgrade cancelled",
+                "title": "{name} upgrade canceled",
                 "message": "The level stays as it was. Fix your stock on Resources if needed."
             },
             "massEdit": {

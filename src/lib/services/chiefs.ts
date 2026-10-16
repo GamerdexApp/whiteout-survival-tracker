@@ -1,6 +1,7 @@
 import { translator } from "@/i18n/formatter";
 import type { AppData, ChiefValues, Playthrough } from "@/types/app";
 import { formatFurnaceShort } from "@/lib/format";
+import { constructionPackOf } from "./queues";
 
 export const emptyAppData = (): AppData => ({
   playthroughs: [],
@@ -70,6 +71,8 @@ export const toChiefValues = (chief: Playthrough): ChiefValues => ({
   heroGenerationUnlocked: chief.heroGenerationUnlocked,
   coreEventsShown: chief.coreEventsShown ?? ["svs", "showdown", "king", "hall"],
   unlockOverrides: chief.unlockOverrides,
+  marchQueuePack: chief.marchQueuePack,
+  constructionPack: constructionPackOf(chief),
   notes: chief.notes,
 });
 

@@ -173,7 +173,8 @@
             "noDates": "Chief {position} is missing its dates.",
             "badStateNumber": "Chief {position} has a state number that is not a whole number.",
             "badCoreEvent": "Chief {position} has an unknown Core event.",
-            "badUnlock": "Chief {position} has an unlock setting that is not a server day of a known area."
+            "badUnlock": "Chief {position} has an unlock setting that is not a server day of a known area.",
+            "badPack": "Chief {position} has a pack setting that is not on or off."
         },
         "settings": {
             "notObject": "The settings are not an object.",

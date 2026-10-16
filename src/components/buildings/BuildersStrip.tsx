@@ -1,11 +1,14 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import Link from "next/link";
 import type { Playthrough } from "@/types/app";
 import { formatNumber } from "@/lib/format";
-import { BUILDER_NUMBERS, builderJob } from "@/service/queues";
+import { availableBuilders, BUILDER_NUMBERS, builderJob } from "@/service/queues";
 import { findBuildingById } from "@/data/game/buildings";
 import { JobCard } from "@/comps/queues/JobCard";
+import { Card } from "@/comps/ui/Card";
+import { SectionLabel } from "@/comps/ui/SectionLabel";
 
 interface BuildersStripProps {
 	chief: Playthrough;
@@ -23,6 +26,25 @@ export function BuildersStrip({ chief, onManage, onFinish }: BuildersStripProps)
 			</div>
 			<div className="grid gap-3 md:grid-cols-2">
 				{BUILDER_NUMBERS.map((builder) => {
+					if (!availableBuilders(chief).includes(builder)) {
+						return (
+							<Card
+								key={builder}
+								className="flex flex-col gap-1.5 border-dashed p-4 opacity-70"
+							>
+								<SectionLabel className="text-muted">
+									{t("builderName", { number: formatNumber(builder) })}
+								</SectionLabel>
+								<span className="font-semibold">{t("builders.locked")}</span>
+								<span className="text-muted">
+									{t("builders.lockedText")}{" "}
+									<Link href="/chiefs" className="text-link underline">
+										{t("builders.lockedLink")}
+									</Link>
+								</span>
+							</Card>
+						);
+					}
 					const job = builderJob(chief, builder);
 					const name = job
 						? (findBuildingById(job.buildingId)?.name ?? job.buildingId)

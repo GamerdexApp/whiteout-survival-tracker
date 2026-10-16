@@ -7,7 +7,7 @@ import type { BuildingView } from "./buildings";
 import { findLevel, levelOrder, shelterLevels } from "./buildings";
 import type { CostLine, SlotInfo, StartPayload, UpgradeOption } from "./queues";
 import {
-  BUILDER_NUMBERS,
+  availableBuilders,
   builderJob,
   buildingJob,
   secondsLeft,
@@ -80,7 +80,7 @@ export const upgradeOptions = (
         cost: costOf(view.next),
         baseSeconds: view.next.buildTimeSeconds,
         power: view.next.power - (current?.power ?? 0),
-        slotKeys: BUILDER_NUMBERS.map(String),
+        slotKeys: availableBuilders(chief).map(String),
         from,
         to: view.next.label,
         ...(instance === undefined ? {} : { instance }),
@@ -91,7 +91,7 @@ export const upgradeOptions = (
 
 export const builderSlots = (chief: Playthrough, now: number): SlotInfo[] => {
   const t = translator("buildings");
-  return BUILDER_NUMBERS.map((builder) => {
+  return availableBuilders(chief).map((builder) => {
     const job = builderJob(chief, builder);
     return {
       key: String(builder),

@@ -82,6 +82,7 @@ const allianceFacilityLevelsOf = (chief: Playthrough) =>
   );
 
 export const buffProfileOf = (chief: Playthrough): BuffProfile => ({
+  marchQueuePack: chief.marchQueuePack === true,
   ...daybreakBuffInputs(chief),
   ...vipBuffInputs(chief),
   skins: skinBuffInputs(chief),

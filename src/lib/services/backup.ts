@@ -49,6 +49,11 @@ const parseChief = (value: unknown, position: number): Playthrough | string => {
     if (!valid) return t("backup.chief.badCoreEvent", values);
   }
 
+  for (const key of ["marchQueuePack", "constructionPack"] as const) {
+    if (value[key] !== undefined && typeof value[key] !== "boolean") {
+      return t("backup.chief.badPack", values);
+    }
+  }
   if (value.unlockOverrides !== undefined) {
     const valid =
       isRecord(value.unlockOverrides) &&

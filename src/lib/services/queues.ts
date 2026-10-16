@@ -62,8 +62,20 @@ export const queueJob = (chief: Playthrough, queue: ResearchQueueId) =>
 export const buildingJob = (chief: Playthrough, buildingId: string) =>
   constructionJobs(chief).find((job) => job.buildingId === buildingId);
 
+/**
+ * The Construction Pack opens the second builder. A chief with no saved choice keeps the second
+ * builder when it already runs an upgrade, so no running job is stranded.
+ */
+export const constructionPackOf = (chief: Playthrough) =>
+  chief.constructionPack ?? builderJob(chief, 2) !== undefined;
+
+export const availableBuilders = (chief: Playthrough) =>
+  BUILDER_NUMBERS.filter(
+    (builder) => builder === 1 || constructionPackOf(chief),
+  );
+
 export const idleBuilders = (chief: Playthrough) =>
-  BUILDER_NUMBERS.filter((builder) => !builderJob(chief, builder));
+  availableBuilders(chief).filter((builder) => !builderJob(chief, builder));
 
 /**
  * Seconds left. The end time is saved, never a countdown, so the time stays right when the app is

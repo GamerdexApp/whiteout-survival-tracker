@@ -8,5 +8,4 @@ export const unstoredSourceIds = [
   "castleAppointment",
   "chiefOrder",
   "presidentSkill",
-  "marchQueuePack",
 ] as const;

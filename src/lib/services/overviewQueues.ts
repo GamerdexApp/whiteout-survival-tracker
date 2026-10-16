@@ -8,7 +8,7 @@ import { findBuildingById } from "@/data/game/buildings";
 import { findResearch } from "@/data/game/research";
 import { buildExpertViews } from "./experts";
 import {
-  BUILDER_NUMBERS,
+  availableBuilders,
   builderJob,
   campJob,
   learningJob,
@@ -102,7 +102,7 @@ const learningRows = (chief: Playthrough): QueueRow[] => {
 };
 
 export const constructionRowsOf = (chief: Playthrough) =>
-  BUILDER_NUMBERS.map((builder) => constructionRow(chief, builder));
+  availableBuilders(chief).map((builder) => constructionRow(chief, builder));
 
 export const researchRowsOf = (chief: Playthrough) =>
   RESEARCH_QUEUES.map((queue) => researchRow(chief, queue.id));

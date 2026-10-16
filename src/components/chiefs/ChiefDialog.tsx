@@ -6,6 +6,7 @@ import type { FormEvent } from "react";
 import type { ChiefValues, CoreEventId, Playthrough, UnlockOverrides } from "@/types/app";
 import { formatNumber } from "@/lib/format";
 import { toChiefValues } from "@/service/chiefs";
+import { builderJob } from "@/service/queues";
 import {
 	allCoreEventIds,
 	CHIEF_NAME_MAX_LENGTH,
@@ -21,6 +22,7 @@ import { Field } from "@/comps/ui/Field";
 import { InfoPopover } from "@/comps/ui/InfoPopover";
 import { Input } from "@/comps/ui/Input";
 import { Select } from "@/comps/ui/Select";
+import { SwitchRow } from "@/comps/ui/Switch";
 import { Textarea } from "@/comps/ui/Textarea";
 import { UnlockSettings } from "./UnlockSettings";
 
@@ -95,9 +97,12 @@ function ChiefForm({
 	const [unlockOverrides, setUnlockOverrides] = useState<UnlockOverrides>(
 		initial?.unlockOverrides ?? {}
 	);
+	const [marchQueuePack, setMarchQueuePack] = useState(initial?.marchQueuePack ?? false);
+	const [constructionPack, setConstructionPack] = useState(initial?.constructionPack ?? false);
 	const [notes, setNotes] = useState(initial?.notes ?? "");
 	const [submitted, setSubmitted] = useState(false);
 
+	const builderTwoBusy = chief !== null && builderJob(chief, 2) !== undefined;
 	const trimmedStateNumber = stateNumber.trim();
 	const parsedStateNumber = trimmedStateNumber === "" ? undefined : Number(trimmedStateNumber);
 	const stateNumberIsValid =
@@ -136,6 +141,8 @@ function ChiefForm({
 			heroGenerationUnlocked: generation,
 			coreEventsShown: shownEvents,
 			unlockOverrides: Object.keys(unlockOverrides).length > 0 ? unlockOverrides : undefined,
+			marchQueuePack,
+			constructionPack,
 			notes: notes.trim() || undefined,
 		});
 	};
@@ -214,6 +221,28 @@ function ChiefForm({
 				overrides={unlockOverrides}
 				onChange={setUnlockOverrides}
 			/>
+			<fieldset className="flex flex-col gap-1 lg:col-span-2">
+				<legend className="font-medium">{t("packs.legend")}</legend>
+				<div className="grid lg:grid-cols-2 lg:gap-x-6">
+					<SwitchRow
+						label={t("packs.constructionLabel")}
+						description={
+							builderTwoBusy
+								? t("packs.constructionBusy")
+								: t("packs.constructionHint")
+						}
+						checked={constructionPack}
+						disabled={builderTwoBusy}
+						onChange={setConstructionPack}
+					/>
+					<SwitchRow
+						label={t("packs.marchLabel")}
+						description={t("packs.marchHint")}
+						checked={marchQueuePack}
+						onChange={setMarchQueuePack}
+					/>
+				</div>
+			</fieldset>
 			<fieldset className="flex flex-col gap-1.5 lg:col-span-2">
 				<legend className="flex w-full items-center gap-2 font-medium">
 					{t("events.legend")}

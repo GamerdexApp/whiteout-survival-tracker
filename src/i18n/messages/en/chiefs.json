@@ -60,7 +60,15 @@
             "shownOf": "{shown} of {total}",
             "hint": "Hidden events leave the Core events tabs and their Event log. Turn them back on any time."
         },
-        "notes": "Notes"
+        "notes": "Notes",
+        "packs": {
+            "legend": "Packs",
+            "constructionLabel": "Construction Pack",
+            "constructionHint": "Opens the second builder on the Buildings page.",
+            "constructionBusy": "The second builder is running an upgrade. Finish or cancel it first to turn this off.",
+            "marchLabel": "March Queue Pack",
+            "marchHint": "Adds one march queue. It counts on the Bonuses page."
+        }
     },
     "delete": {
         "title": "Delete chief",

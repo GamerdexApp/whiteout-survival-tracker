@@ -180,6 +180,10 @@ export interface Playthrough {
   heroGenerationUnlocked: number;
   coreEventsShown?: CoreEventId[];
   unlockOverrides?: UnlockOverrides;
+  /** The March Queue Pack adds one march queue. */
+  marchQueuePack?: boolean;
+  /** The Construction Pack opens the second builder. */
+  constructionPack?: boolean;
   notes?: string;
   buildings?: Record<string, BuildingState>;
   facilities?: Record<string, { built?: boolean }>;
@@ -236,6 +240,8 @@ export interface ChiefValues {
   heroGenerationUnlocked: number;
   coreEventsShown: CoreEventId[];
   unlockOverrides?: UnlockOverrides;
+  marchQueuePack?: boolean;
+  constructionPack?: boolean;
   notes?: string;
 }
 
