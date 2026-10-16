@@ -5,6 +5,7 @@ import { useMemo, useState } from "react";
 import { LuPlus } from "react-icons/lu";
 import type { Playthrough } from "@/types/app";
 import { formatDateTime, formatDecimal, formatNumber } from "@/lib/format";
+import { exportSpecOf, petPlanScores } from "@/service/petExport";
 import type { PetGoals, PetPlanResult, PetPlanRow, PetView } from "@/service/pets";
 import {
 	buildPetViews,
@@ -18,6 +19,7 @@ import {
 } from "@/service/pets";
 import { findItem } from "@/data/game/items";
 import { PLAN_ITEM_IDS } from "@/data/game/pets";
+import { ExportToEventFlyout } from "@/comps/export/ExportToEventFlyout";
 import { PlanStockCheck } from "@/comps/queues/PlanStockCheck";
 import { Badge } from "@/comps/ui/Badge";
 import { Button } from "@/comps/ui/Button";
@@ -40,6 +42,9 @@ export function PetPlanFlyout({ open, chief, onClose, onSave }: PetPlanFlyoutPro
 	const t = useTranslations("pets.plan");
 	const [wasOpen, setWasOpen] = useState(false);
 	const [goals, setGoals] = useState<PetGoals>({});
+	const [exporting, setExporting] = useState(false);
+	const plan = useMemo(() => runPetPlan(chief, goals), [chief, goals]);
+	const canExport = petPlanScores(plan);
 
 	if (open !== wasOpen) {
 		setWasOpen(open);
@@ -64,13 +69,27 @@ export function PetPlanFlyout({ open, chief, onClose, onSave }: PetPlanFlyoutPro
 						{savedAt ? t("saved", { date: formatDateTime(savedAt) }) : t("notSavedYet")}
 					</span>
 					<Button onClick={onClose}>{t("close")}</Button>
+					<Button
+						variant="ghost"
+						disabled={!canExport}
+						title={canExport ? undefined : t("exportNothing")}
+						onClick={() => setExporting(true)}
+					>
+						{t("exportButton")}
+					</Button>
 					<Button variant="primary" onClick={() => onSave(goals)}>
 						{t("save")}
 					</Button>
 				</>
 			}
 		>
-			<PlanBody chief={chief} goals={goals} onGoalsChange={setGoals} />
+			<PlanBody chief={chief} goals={goals} plan={plan} onGoalsChange={setGoals} />
+			<ExportToEventFlyout
+				open={exporting}
+				chief={chief}
+				spec={exportSpecOf(plan, chief)}
+				onClose={() => setExporting(false)}
+			/>
 		</Flyout>
 	);
 }
@@ -78,15 +97,16 @@ export function PetPlanFlyout({ open, chief, onClose, onSave }: PetPlanFlyoutPro
 function PlanBody({
 	chief,
 	goals,
+	plan,
 	onGoalsChange,
 }: {
 	chief: Playthrough;
 	goals: PetGoals;
+	plan: PetPlanResult;
 	onGoalsChange: (goals: PetGoals) => void;
 }) {
 	const t = useTranslations("pets.plan");
 	const views = useMemo(() => buildPetViews(chief), [chief]);
-	const plan = useMemo(() => runPetPlan(chief, goals), [chief, goals]);
 	const addable = views.filter((view) => view.unlocked && !goals[view.pet.id]);
 
 	return (

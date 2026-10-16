@@ -18,8 +18,10 @@ import {
 	starPosition,
 	startingGoalFor,
 } from "@/service/heroes";
+import { exportSpecOf } from "@/service/heroExport";
 import { MAX_SKILL_LEVEL, MAX_WEAPON_LEVEL, skillsOf } from "@/data/game/heroes";
 import { findItem } from "@/data/game/items";
+import { ExportToEventFlyout } from "@/comps/export/ExportToEventFlyout";
 import { PlanStockCheck } from "@/comps/queues/PlanStockCheck";
 import { Badge } from "@/comps/ui/Badge";
 import { Button } from "@/comps/ui/Button";
@@ -45,8 +47,12 @@ type Goals = Record<string, HeroGoal>;
 
 export function HeroPlanFlyout({ open, chief, focusHeroId, onClose, onSave }: HeroPlanFlyoutProps) {
 	const t = useTranslations("heroes.plan");
+	const te = useTranslations("heroes.export");
 	const [wasOpen, setWasOpen] = useState(false);
 	const [goals, setGoals] = useState<Goals>({});
+	const [exportOpen, setExportOpen] = useState(false);
+	const exportSpec = useMemo(() => exportSpecOf(runHeroPlan(chief, goals)), [chief, goals]);
+	const nothingToExport = exportSpec.groups.length === 0;
 
 	if (open !== wasOpen) {
 		setWasOpen(open);
@@ -78,6 +84,14 @@ export function HeroPlanFlyout({ open, chief, focusHeroId, onClose, onSave }: He
 						</span>
 					)}
 					<Button onClick={onClose}>{t("close")}</Button>
+					<Button
+						variant="ghost"
+						disabled={nothingToExport}
+						title={nothingToExport ? te("nothing") : undefined}
+						onClick={() => setExportOpen(true)}
+					>
+						{te("button")}
+					</Button>
 					<Button variant="primary" onClick={() => onSave(goals)}>
 						{t("save")}
 					</Button>
@@ -85,6 +99,12 @@ export function HeroPlanFlyout({ open, chief, focusHeroId, onClose, onSave }: He
 			}
 		>
 			<PlanBody chief={chief} goals={goals} onGoalsChange={setGoals} />
+			<ExportToEventFlyout
+				open={exportOpen}
+				chief={chief}
+				spec={exportSpec}
+				onClose={() => setExportOpen(false)}
+			/>
 		</Flyout>
 	);
 }

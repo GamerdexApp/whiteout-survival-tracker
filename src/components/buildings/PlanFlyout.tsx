@@ -2,12 +2,13 @@
 
 import { useTranslations } from "next-intl";
 import Link from "next/link";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { LuPlus, LuTrash2 } from "react-icons/lu";
 import type { Appointment, Playthrough } from "@/types/app";
 import { formatDateTime, formatDuration, formatNumber } from "@/lib/format";
 import { useUiSettings } from "@/lib/hooks/useUiSettings";
 import { constructionSpeedBonusPercent } from "@/service/bonuses";
+import { exportSpecOf } from "@/service/buildingExport";
 import type { PlanControls, PlanRow } from "@/service/buildingPlan";
 import {
 	APPOINTMENT_PERCENT,
@@ -20,11 +21,13 @@ import {
 	runPlan,
 } from "@/service/buildingPlan";
 import { buildView, levelOrder } from "@/service/buildings";
+import { exportedPlanOf } from "@/service/eventExport";
 import { minutesOfSpeedup } from "@/service/inventory";
 import { petSkillConstructionPercent } from "@/service/pets";
 import { resourceChecks } from "@/service/planStock";
 import { findBuildingById, levelledBuildings } from "@/data/game/buildings";
 import { findItem, RESOURCE_ITEM_IDS } from "@/data/game/items";
+import { ExportToEventFlyout } from "@/comps/export/ExportToEventFlyout";
 import { PlanStockCheck } from "@/comps/queues/PlanStockCheck";
 import { Badge } from "@/comps/ui/Badge";
 import { Button } from "@/comps/ui/Button";
@@ -49,61 +52,20 @@ const appointmentIds: Appointment[] = ["none", "regular", "supreme"];
 export function PlanFlyout({ open, chief, onClose, onSave }: PlanFlyoutProps) {
 	const t = useTranslations("buildings");
 	const [wasOpen, setWasOpen] = useState(false);
+	const [exportBaseline, setExportBaseline] = useState<{ savedAt: string | null } | null>(null);
 	const [rows, setRows] = useState<PlanRow[]>([]);
 	const [controls, setControls] = useState<PlanControls>(() => defaultPlanControls(chief));
 
 	if (open !== wasOpen) {
 		setWasOpen(open);
 		if (open) {
+			setExportBaseline(null);
 			setRows(initialPlanRows(chief));
 			setControls(defaultPlanControls(chief));
 		}
 	}
 
-	const savedAt = chief.buildingPlan?.savedAt;
-
-	return (
-		<Flyout
-			open={open}
-			onClose={onClose}
-			title={t("plan.title")}
-			description={t("plan.description")}
-			footer={
-				<>
-					{savedAt && (
-						<span className="border-line bg-surface text-muted mr-auto inline-flex h-8 items-center gap-2 rounded-full border-[1.5px] px-3 font-mono text-xs">
-							<span aria-hidden="true" className="bg-kept size-1.5 rounded-full" />
-							{t("plan.saved", { time: formatDateTime(savedAt) })}
-						</span>
-					)}
-					<Button onClick={onClose}>{t("close")}</Button>
-					<Button variant="primary" onClick={() => onSave(rows, controls)}>
-						{t("plan.save")}
-					</Button>
-				</>
-			}
-		>
-			<PlanBody
-				chief={chief}
-				rows={rows}
-				controls={controls}
-				onRowsChange={setRows}
-				onControlsChange={setControls}
-			/>
-		</Flyout>
-	);
-}
-
-interface PlanBodyProps {
-	chief: Playthrough;
-	rows: PlanRow[];
-	controls: PlanControls;
-	onRowsChange: (rows: PlanRow[]) => void;
-	onControlsChange: (controls: PlanControls) => void;
-}
-
-function PlanBody({ chief, rows, controls, onRowsChange, onControlsChange }: PlanBodyProps) {
-	const t = useTranslations("buildings");
+	const [exportOpen, setExportOpen] = useState(false);
 	const { ui } = useUiSettings();
 	const bonusesPercent = useMemo(
 		() => (ui.calcUseBonuses ? constructionSpeedBonusPercent(chief) : 0),
@@ -122,6 +84,109 @@ function PlanBody({ chief, rows, controls, onRowsChange, onControlsChange }: Pla
 			};
 		}
 	}, [rows, chief, speedPercent, t]);
+	const exportSpec = result?.ok ? exportSpecOf(chief, result.calculation) : null;
+	const exportedAt = exportedPlanOf(chief, "buildings")?.savedAt ?? null;
+
+	useEffect(() => {
+		if (!exportOpen && exportBaseline && exportedAt !== exportBaseline.savedAt) {
+			onClose();
+		}
+	}, [exportOpen, exportBaseline, exportedAt, onClose]);
+
+	const openExport = () => {
+		setExportBaseline({ savedAt: exportedAt });
+		setExportOpen(true);
+	};
+
+	const savedAt = chief.buildingPlan?.savedAt;
+
+	return (
+		<>
+			<Flyout
+				open={open}
+				onClose={onClose}
+				title={t("plan.title")}
+				description={t("plan.description")}
+				footer={
+					<>
+						{savedAt && (
+							<span className="border-line bg-surface text-muted mr-auto inline-flex h-8 items-center gap-2 rounded-full border-[1.5px] px-3 font-mono text-xs">
+								<span
+									aria-hidden="true"
+									className="bg-kept size-1.5 rounded-full"
+								/>
+								{t("plan.saved", { time: formatDateTime(savedAt) })}
+							</span>
+						)}
+						<Button onClick={onClose}>{t("close")}</Button>
+						<Button
+							variant="ghost"
+							disabled={!exportSpec}
+							title={exportSpec ? undefined : t("plan.export.empty")}
+							onClick={openExport}
+						>
+							{t("plan.export.button")}
+						</Button>
+						<Button variant="primary" onClick={() => onSave(rows, controls)}>
+							{t("plan.save")}
+						</Button>
+					</>
+				}
+			>
+				<PlanBody
+					chief={chief}
+					rows={rows}
+					controls={controls}
+					result={result}
+					bonusesPercent={bonusesPercent}
+					petSkillPercent={petSkillPercent}
+					speedPercent={speedPercent}
+					bonusesOn={ui.calcUseBonuses}
+					onRowsChange={setRows}
+					onControlsChange={setControls}
+				/>
+			</Flyout>
+			{exportSpec && (
+				<ExportToEventFlyout
+					open={exportOpen}
+					chief={chief}
+					spec={exportSpec}
+					onClose={() => setExportOpen(false)}
+				/>
+			)}
+		</>
+	);
+}
+
+type PlanOutcome =
+	{ ok: true; calculation: ReturnType<typeof runPlan> } | { ok: false; error: string } | null;
+
+interface PlanBodyProps {
+	chief: Playthrough;
+	rows: PlanRow[];
+	controls: PlanControls;
+	result: PlanOutcome;
+	bonusesPercent: number;
+	petSkillPercent: number;
+	speedPercent: number;
+	bonusesOn: boolean;
+	onRowsChange: (rows: PlanRow[]) => void;
+	onControlsChange: (controls: PlanControls) => void;
+}
+
+function PlanBody({
+	chief,
+	rows,
+	controls,
+	result,
+	bonusesPercent,
+	petSkillPercent,
+	speedPercent,
+	bonusesOn,
+	onRowsChange,
+	onControlsChange,
+}: PlanBodyProps) {
+	const t = useTranslations("buildings");
 
 	return (
 		<>
@@ -136,7 +201,7 @@ function PlanBody({ chief, rows, controls, onRowsChange, onControlsChange }: Pla
 				<SpeedControls
 					controls={controls}
 					bonusesPercent={bonusesPercent}
-					bonusesOn={ui.calcUseBonuses}
+					bonusesOn={bonusesOn}
 					petSkillPercent={petSkillPercent}
 					speedPercent={speedPercent}
 					onChange={onControlsChange}

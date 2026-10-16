@@ -185,7 +185,7 @@ export interface TroopsPlanResult {
 const campLevelOf = (chief: Playthrough, camp: TroopId) =>
   campLabelOf(chief, camp) ?? campOf(camp).levels[0].label;
 
-const clampTier = (tier: number | undefined, fallback: number) =>
+export const clampTier = (tier: number | undefined, fallback: number) =>
   Math.min(MAX_TIER, Math.max(MIN_TIER, Math.floor(tier ?? fallback)));
 
 const calculatorRun = (run: TroopRunState, capacity: number): TroopRun => {

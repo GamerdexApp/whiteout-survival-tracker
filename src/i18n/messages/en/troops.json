@@ -54,6 +54,19 @@
         "saved": "Plan saved {date}",
         "close": "Close",
         "save": "Save plan",
+        "export": {
+            "button": "Export to Core Events",
+            "emptyHint": "Add a train to export it.",
+            "computed": "Computed by the app.",
+            "trainedGroup": "for troops trained",
+            "speedupGroup": "for speedup minutes",
+            "trainedTier": "Tier {tier} troops trained",
+            "speedupMinutes": "Training speedup minutes used",
+            "promoted": "Troops promoted",
+            "promotedReason": "Promotion scores only through speedup minutes.",
+            "power": "Power from training and promoting",
+            "powerReason": "The package has no real power per tier yet."
+        },
         "noRuns": "No trains yet. Add a troop to start a plan.",
         "add": {
             "title": "Add a Troop",

@@ -5,6 +5,7 @@ import { useMemo, useState } from "react";
 import { LuPlus } from "react-icons/lu";
 import type { ExpertGoalState, Playthrough } from "@/types/app";
 import { formatDateTime, formatNumber } from "@/lib/format";
+import { expertPlanScores, exportSpecOf } from "@/service/expertExport";
 import type { ExpertPlanRow, ExpertsPlan, ExpertView, Goals } from "@/service/experts";
 import {
 	buildExpertViews,
@@ -16,6 +17,7 @@ import {
 	startingGoalFor,
 } from "@/service/experts";
 import { EXP_PER_LEARNING_MINUTE, MAX_AFFINITY } from "@/data/game/experts";
+import { ExportToEventFlyout } from "@/comps/export/ExportToEventFlyout";
 import { PlanStockCheck } from "@/comps/queues/PlanStockCheck";
 import { Badge } from "@/comps/ui/Badge";
 import { Button } from "@/comps/ui/Button";
@@ -38,6 +40,9 @@ export function ExpertPlanFlyout({ open, chief, onClose, onSave }: ExpertPlanFly
 	const t = useTranslations("experts.plan");
 	const [wasOpen, setWasOpen] = useState(false);
 	const [goals, setGoals] = useState<Goals>({});
+	const [exporting, setExporting] = useState(false);
+	const plan = useMemo(() => runExpertsPlan(chief, goals), [chief, goals]);
+	const canExport = expertPlanScores(plan);
 
 	if (open !== wasOpen) {
 		setWasOpen(open);
@@ -61,13 +66,27 @@ export function ExpertPlanFlyout({ open, chief, onClose, onSave }: ExpertPlanFly
 						</span>
 					)}
 					<Button onClick={onClose}>{t("close")}</Button>
+					<Button
+						variant="ghost"
+						disabled={!canExport}
+						title={canExport ? undefined : t("exportNothing")}
+						onClick={() => setExporting(true)}
+					>
+						{t("exportButton")}
+					</Button>
 					<Button variant="primary" onClick={() => onSave(goals)}>
 						{t("save")}
 					</Button>
 				</>
 			}
 		>
-			<PlanBody chief={chief} goals={goals} onGoalsChange={setGoals} />
+			<PlanBody chief={chief} goals={goals} plan={plan} onGoalsChange={setGoals} />
+			<ExportToEventFlyout
+				open={exporting}
+				chief={chief}
+				spec={exportSpecOf(plan)}
+				onClose={() => setExporting(false)}
+			/>
 		</Flyout>
 	);
 }
@@ -75,15 +94,16 @@ export function ExpertPlanFlyout({ open, chief, onClose, onSave }: ExpertPlanFly
 function PlanBody({
 	chief,
 	goals,
+	plan,
 	onGoalsChange,
 }: {
 	chief: Playthrough;
 	goals: Goals;
+	plan: ExpertsPlan;
 	onGoalsChange: (goals: Goals) => void;
 }) {
 	const t = useTranslations("experts.plan");
 	const views = useMemo(() => buildExpertViews(chief), [chief]);
-	const plan = useMemo(() => runExpertsPlan(chief, goals), [chief, goals]);
 	const planned = views.filter((view) => view.recruited && goals[view.expert.id]);
 	const addable = views.filter((view) => view.recruited && !goals[view.expert.id]);
 	const hasRecruited = views.some((view) => view.recruited);

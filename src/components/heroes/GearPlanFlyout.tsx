@@ -22,8 +22,10 @@ import {
 	slotName,
 	troopLabel,
 } from "@/service/heroGear";
+import { exportSpecOf } from "@/service/heroGearExport";
 import { forgingIndex, forgingRows, MAX_EMPOWERMENT, MAX_ENHANCEMENT } from "@/data/game/heroGear";
 import { findItem } from "@/data/game/items";
+import { ExportToEventFlyout } from "@/comps/export/ExportToEventFlyout";
 import { PlanStockCheck } from "@/comps/queues/PlanStockCheck";
 import { Badge } from "@/comps/ui/Badge";
 import { Button } from "@/comps/ui/Button";
@@ -48,6 +50,12 @@ export function GearPlanFlyout({ open, chief, onClose, onSave }: GearPlanFlyoutP
 	const [wasOpen, setWasOpen] = useState(false);
 	const [refs, setRefs] = useState<PlanPieceRef[]>([]);
 	const [goals, setGoals] = useState<PlanGoals>({});
+	const [exportOpen, setExportOpen] = useState(false);
+	const exportSpec = useMemo(
+		() => exportSpecOf(runGearPlan(chief, refs, goals)),
+		[chief, refs, goals]
+	);
+	const nothingToExport = exportSpec.groups.length === 0;
 
 	if (open !== wasOpen) {
 		setWasOpen(open);
@@ -58,6 +66,7 @@ export function GearPlanFlyout({ open, chief, onClose, onSave }: GearPlanFlyoutP
 	}
 
 	const t = useTranslations("heroGear.plan");
+	const te = useTranslations("heroGear.export");
 	const savedAt = chief.heroGearPlan?.savedAt;
 
 	return (
@@ -75,6 +84,14 @@ export function GearPlanFlyout({ open, chief, onClose, onSave }: GearPlanFlyoutP
 						</span>
 					)}
 					<Button onClick={onClose}>{t("close")}</Button>
+					<Button
+						variant="ghost"
+						disabled={nothingToExport}
+						title={nothingToExport ? te("nothing") : undefined}
+						onClick={() => setExportOpen(true)}
+					>
+						{te("button")}
+					</Button>
 					<Button variant="primary" onClick={() => onSave(refs, goals)}>
 						{t("save")}
 					</Button>
@@ -87,6 +104,12 @@ export function GearPlanFlyout({ open, chief, onClose, onSave }: GearPlanFlyoutP
 				goals={goals}
 				onRefsChange={setRefs}
 				onGoalsChange={setGoals}
+			/>
+			<ExportToEventFlyout
+				open={exportOpen}
+				chief={chief}
+				spec={exportSpec}
+				onClose={() => setExportOpen(false)}
 			/>
 		</Flyout>
 	);

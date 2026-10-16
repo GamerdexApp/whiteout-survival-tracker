@@ -263,6 +263,14 @@
             "steps": "{count, plural, one {{amount} step} other {{amount} steps}}",
             "unmetHeading": "Unmet prerequisites",
             "unmetNone": "None for these goals. A building outside the list, such as Hero Hall, would show here."
+        },
+        "export": {
+            "button": "Export to Core Events",
+            "empty": "Add a goal to the plan to export it.",
+            "speedupMinutes": "Construction speedup minutes",
+            "power": "Power gained through construction",
+            "stockDetail": "Plan needs {needed}, you hold {held}.",
+            "unscored": "No event scores {name}."
         }
     }
 }

@@ -224,6 +224,14 @@
             "unmet": "Unmet prerequisites",
             "unmetNone": "None for these goals.",
             "unmetItem": "{name} level {level} needs {requires} level {requiresLevel}"
+        },
+        "export": {
+            "button": "Export to Core Events",
+            "empty": "Add a goal to the plan to export it.",
+            "speedupMinutes": "Research speedup minutes",
+            "power": "Power gained through research",
+            "computed": "Computed by the app from the plan result.",
+            "unscored": "No event scores {name}."
         }
     },
     "view": {

@@ -2,15 +2,17 @@
 
 import { useTranslations } from "next-intl";
 import Link from "next/link";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { LuPlus, LuTrash2 } from "react-icons/lu";
 import type { Appointment, Playthrough } from "@/types/app";
 import { formatDateTime, formatDuration, formatNumber } from "@/lib/format";
 import { useUiSettings } from "@/lib/hooks/useUiSettings";
 import { researchSpeedBonusPercent } from "@/service/bonuses";
+import { exportedPlanOf } from "@/service/eventExport";
 import { minutesOfSpeedup } from "@/service/inventory";
 import { researchChecks } from "@/service/planStock";
 import { levelOfNode } from "@/service/research";
+import { exportSpecOf } from "@/service/researchExport";
 import type { ResearchPlanControls, ResearchPlanRow } from "@/service/researchPlan";
 import {
 	defaultResearchControls,
@@ -30,6 +32,7 @@ import {
 	researchTabs,
 	tabName,
 } from "@/data/game/research";
+import { ExportToEventFlyout } from "@/comps/export/ExportToEventFlyout";
 import { PlanStockCheck } from "@/comps/queues/PlanStockCheck";
 import { Badge } from "@/comps/ui/Badge";
 import { Button } from "@/comps/ui/Button";
@@ -55,6 +58,7 @@ const appointmentIds: Appointment[] = ["none", "regular", "supreme"];
 export function ResearchPlanFlyout({ open, chief, onClose, onSave }: ResearchPlanFlyoutProps) {
 	const t = useTranslations("research");
 	const [wasOpen, setWasOpen] = useState(false);
+	const [exportBaseline, setExportBaseline] = useState<{ savedAt: string | null } | null>(null);
 	const [rows, setRows] = useState<ResearchPlanRow[]>([]);
 	const [controls, setControls] = useState<ResearchPlanControls>(() =>
 		defaultResearchControls(chief)
@@ -63,62 +67,19 @@ export function ResearchPlanFlyout({ open, chief, onClose, onSave }: ResearchPla
 	if (open !== wasOpen) {
 		setWasOpen(open);
 		if (open) {
+			setExportBaseline(null);
 			setRows(initialResearchRows(chief));
 			setControls(defaultResearchControls(chief));
 		}
 	}
 
-	const savedAt = chief.researchPlan?.savedAt;
-
-	return (
-		<Flyout
-			open={open}
-			onClose={onClose}
-			title={t("plan.title")}
-			description={t("plan.description")}
-			footer={
-				<>
-					{savedAt && (
-						<span className="border-line bg-surface text-muted mr-auto inline-flex h-8 items-center gap-2 rounded-full border-[1.5px] px-3 font-mono text-xs">
-							<span aria-hidden="true" className="bg-kept size-1.5 rounded-full" />
-							{t("plan.saved", { date: formatDateTime(savedAt) })}
-						</span>
-					)}
-					<Button onClick={onClose}>{t("plan.close")}</Button>
-					<Button variant="primary" onClick={() => onSave(rows, controls)}>
-						{t("plan.save")}
-					</Button>
-				</>
-			}
-		>
-			<PlanBody
-				chief={chief}
-				rows={rows}
-				controls={controls}
-				onRowsChange={setRows}
-				onControlsChange={setControls}
-			/>
-		</Flyout>
-	);
-}
-
-interface PlanBodyProps {
-	chief: Playthrough;
-	rows: ResearchPlanRow[];
-	controls: ResearchPlanControls;
-	onRowsChange: (rows: ResearchPlanRow[]) => void;
-	onControlsChange: (controls: ResearchPlanControls) => void;
-}
-
-function PlanBody({ chief, rows, controls, onRowsChange, onControlsChange }: PlanBodyProps) {
-	const t = useTranslations("research");
+	const [exportOpen, setExportOpen] = useState(false);
 	const { ui } = useUiSettings();
 	const bonusesPercent = useMemo(
 		() => (ui.calcUseBonuses ? researchSpeedBonusPercent(chief) : 0),
 		[ui.calcUseBonuses, chief]
 	);
 	const speedPercent = researchSpeedPercent(controls, bonusesPercent);
-
 	const result = useMemo(() => {
 		if (rows.length === 0) return null;
 		try {
@@ -133,6 +94,108 @@ function PlanBody({ chief, rows, controls, onRowsChange, onControlsChange }: Pla
 			};
 		}
 	}, [rows, chief, controls, bonusesPercent]);
+	const exportSpec = result?.ok ? exportSpecOf(rows, result.calculation) : null;
+	const exportedAt = exportedPlanOf(chief, "research")?.savedAt ?? null;
+
+	useEffect(() => {
+		if (!exportOpen && exportBaseline && exportedAt !== exportBaseline.savedAt) {
+			onClose();
+		}
+	}, [exportOpen, exportBaseline, exportedAt, onClose]);
+
+	const openExport = () => {
+		setExportBaseline({ savedAt: exportedAt });
+		setExportOpen(true);
+	};
+
+	const savedAt = chief.researchPlan?.savedAt;
+
+	return (
+		<>
+			<Flyout
+				open={open}
+				onClose={onClose}
+				title={t("plan.title")}
+				description={t("plan.description")}
+				footer={
+					<>
+						{savedAt && (
+							<span className="border-line bg-surface text-muted mr-auto inline-flex h-8 items-center gap-2 rounded-full border-[1.5px] px-3 font-mono text-xs">
+								<span
+									aria-hidden="true"
+									className="bg-kept size-1.5 rounded-full"
+								/>
+								{t("plan.saved", { date: formatDateTime(savedAt) })}
+							</span>
+						)}
+						<Button onClick={onClose}>{t("plan.close")}</Button>
+						<Button
+							variant="ghost"
+							disabled={!exportSpec}
+							title={exportSpec ? undefined : t("plan.export.empty")}
+							onClick={openExport}
+						>
+							{t("plan.export.button")}
+						</Button>
+						<Button variant="primary" onClick={() => onSave(rows, controls)}>
+							{t("plan.save")}
+						</Button>
+					</>
+				}
+			>
+				<PlanBody
+					chief={chief}
+					rows={rows}
+					controls={controls}
+					result={result}
+					bonusesPercent={bonusesPercent}
+					bonusesOn={ui.calcUseBonuses}
+					speedPercent={speedPercent}
+					onRowsChange={setRows}
+					onControlsChange={setControls}
+				/>
+			</Flyout>
+			{exportSpec && (
+				<ExportToEventFlyout
+					open={exportOpen}
+					chief={chief}
+					spec={exportSpec}
+					onClose={() => setExportOpen(false)}
+				/>
+			)}
+		</>
+	);
+}
+
+type PlanOutcome =
+	| { ok: true; calculation: ReturnType<typeof runResearchPlan> }
+	| { ok: false; error: string | null }
+	| null;
+
+interface PlanBodyProps {
+	chief: Playthrough;
+	rows: ResearchPlanRow[];
+	controls: ResearchPlanControls;
+	result: PlanOutcome;
+	bonusesPercent: number;
+	bonusesOn: boolean;
+	speedPercent: number;
+	onRowsChange: (rows: ResearchPlanRow[]) => void;
+	onControlsChange: (controls: ResearchPlanControls) => void;
+}
+
+function PlanBody({
+	chief,
+	rows,
+	controls,
+	result,
+	bonusesPercent,
+	bonusesOn,
+	speedPercent,
+	onRowsChange,
+	onControlsChange,
+}: PlanBodyProps) {
+	const t = useTranslations("research");
 
 	return (
 		<>
@@ -149,7 +212,7 @@ function PlanBody({ chief, rows, controls, onRowsChange, onControlsChange }: Pla
 				<SpeedControls
 					controls={controls}
 					bonusesPercent={bonusesPercent}
-					bonusesOn={ui.calcUseBonuses}
+					bonusesOn={bonusesOn}
 					speedPercent={speedPercent}
 					onChange={onControlsChange}
 				/>

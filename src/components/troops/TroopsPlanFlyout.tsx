@@ -4,6 +4,7 @@ import { useTranslations } from "next-intl";
 import { useMemo, useState } from "react";
 import type { Playthrough } from "@/types/app";
 import { formatDateTime, formatNumber } from "@/lib/format";
+import { exportSpecOf, hasExportLines } from "@/service/troopExport";
 import {
 	draftOfSavedPlan,
 	runTroopsPlan,
@@ -11,6 +12,7 @@ import {
 	troopsStockChecks,
 } from "@/service/troopsPlan";
 import type { TroopsPlanDraft } from "@/service/troopsPlan";
+import { ExportToEventFlyout } from "@/comps/export/ExportToEventFlyout";
 import { PlanStockCheck } from "@/comps/queues/PlanStockCheck";
 import { Button } from "@/comps/ui/Button";
 import { Card } from "@/comps/ui/Card";
@@ -81,6 +83,8 @@ function PlanBody({
 	const t = useTranslations("troops.plan");
 	const result = useMemo(() => runTroopsPlan(chief, draft), [chief, draft]);
 	const stock = troopSpeedupStock(chief);
+	const spec = useMemo(() => exportSpecOf(draft, result), [draft, result]);
+	const [exporting, setExporting] = useState(false);
 
 	return (
 		<>
@@ -127,7 +131,18 @@ function PlanBody({
 							used: formatNumber(result.speedupMinutesUsed),
 						})}
 					/>
-					<TroopsPlanResultCard draft={draft} result={result} />
+					<TroopsPlanResultCard
+						draft={draft}
+						result={result}
+						canExport={hasExportLines(spec)}
+						onExport={() => setExporting(true)}
+					/>
+					<ExportToEventFlyout
+						open={exporting}
+						chief={chief}
+						spec={spec}
+						onClose={() => setExporting(false)}
+					/>
 				</>
 			)}
 		</>

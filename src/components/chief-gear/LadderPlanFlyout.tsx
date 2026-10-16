@@ -1,9 +1,10 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import type { Playthrough } from "@/types/app";
 import { formatCompact, formatDateTime, formatNumber } from "@/lib/format";
+import { exportSpecOf as charmExportSpecOf } from "@/service/chiefCharmExport";
 import type { LadderItem, LadderKind, PlanGoalMap } from "@/service/chiefGear";
 import {
 	initialGoalMap,
@@ -15,8 +16,12 @@ import {
 	positionOf,
 	runItemPlan,
 } from "@/service/chiefGear";
+import { exportSpecOf as gearExportSpecOf } from "@/service/chiefGearExport";
+import type { LadderPlan } from "@/service/chiefGearExport";
+import { exportedPlanOf } from "@/service/eventExport";
 import { charmConverter, chiefGearSlotList, gearConverter } from "@/data/game/chiefGear";
 import { findItem } from "@/data/game/items";
+import { ExportToEventFlyout } from "@/comps/export/ExportToEventFlyout";
 import { PlanStockCheck } from "@/comps/queues/PlanStockCheck";
 import { Button } from "@/comps/ui/Button";
 import { Card } from "@/comps/ui/Card";
@@ -33,12 +38,24 @@ interface LadderPlanFlyoutProps {
 	onSave: (goals: PlanGoalMap) => void;
 }
 
+const EXPORT_PAGE = { gear: "chiefGear", charm: "chiefCharms" } as const;
 const SAVED_KEY = { gear: "chiefGearPlan", charm: "chiefCharmsPlan" } as const;
 
 export function LadderPlanFlyout({ open, chief, kind, onClose, onSave }: LadderPlanFlyoutProps) {
 	const [wasOpen, setWasOpen] = useState(false);
 	const [goals, setGoals] = useState<PlanGoalMap>({});
+	const [exportOpen, setExportOpen] = useState(false);
 	const t = useTranslations("chiefGear.plan");
+	const items = useMemo(() => itemsOf(kind, chief), [kind, chief]);
+	const plan = useMemo(() => runItemPlan(items, goals), [items, goals]);
+	const exportPage = EXPORT_PAGE[kind];
+	const exportedAt = exportedPlanOf(chief, exportPage)?.savedAt;
+	const exportedAtOnOpen = useRef(exportedAt);
+
+	useEffect(() => {
+		if (open && exportedAt !== exportedAtOnOpen.current) onClose();
+		exportedAtOnOpen.current = exportedAt;
+	}, [open, exportedAt, onClose]);
 
 	if (open !== wasOpen) {
 		setWasOpen(open);
@@ -62,13 +79,33 @@ export function LadderPlanFlyout({ open, chief, kind, onClose, onSave }: LadderP
 						</span>
 					)}
 					<Button onClick={onClose}>{t("close")}</Button>
+					<Button
+						disabled={plan.byItem.length === 0}
+						title={plan.byItem.length === 0 ? t("export.nothingToExport") : undefined}
+						onClick={() => setExportOpen(true)}
+					>
+						{t("export.button")}
+					</Button>
 					<Button variant="primary" onClick={() => onSave(goals)}>
 						{t("save")}
 					</Button>
 				</>
 			}
 		>
-			<PlanBody chief={chief} kind={kind} goals={goals} onGoalsChange={setGoals} />
+			<PlanBody
+				chief={chief}
+				kind={kind}
+				goals={goals}
+				onGoalsChange={setGoals}
+				items={items}
+				plan={plan}
+			/>
+			<ExportToEventFlyout
+				open={exportOpen}
+				chief={chief}
+				spec={kind === "gear" ? gearExportSpecOf(plan) : charmExportSpecOf(plan)}
+				onClose={() => setExportOpen(false)}
+			/>
 		</Flyout>
 	);
 }
@@ -87,14 +124,16 @@ function PlanBody({
 	kind,
 	goals,
 	onGoalsChange,
+	items,
+	plan,
 }: {
 	chief: Playthrough;
 	kind: LadderKind;
 	goals: PlanGoalMap;
 	onGoalsChange: (goals: PlanGoalMap) => void;
+	items: LadderItem[];
+	plan: LadderPlan;
 }) {
-	const items = useMemo(() => itemsOf(kind, chief), [kind, chief]);
-	const plan = useMemo(() => runItemPlan(items, goals), [items, goals]);
 	const t = useTranslations("chiefGear.plan");
 	const stepWord = t(`${kind}.stepWord`);
 	const converter = kind === "gear" ? gearConverter : charmConverter;
