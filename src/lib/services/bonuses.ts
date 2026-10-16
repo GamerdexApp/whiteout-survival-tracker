@@ -16,10 +16,12 @@ import { ownedLevelsOf } from "./allianceFacilities";
 import { techLevelOf } from "./allianceTech";
 import { levelledBuildingLevels } from "./buildings";
 import { charmItems, gearItems } from "./chiefGear";
+import { daybreakBuffInputs } from "./daybreak";
 import { expertBuffInputs } from "./experts";
 import { buildHeroViews } from "./heroes";
 import { petBuffInputs } from "./pets";
 import { levelOfNode } from "./research";
+import { tundraAlbumBuffInputs } from "./tundraAlbum";
 
 const CONSTRUCTION_SPEED_STAT = "construction-speed";
 const RESEARCH_SPEED_STAT = "research-speed";
@@ -78,6 +80,8 @@ const allianceFacilityLevelsOf = (chief: Playthrough) =>
   );
 
 export const buffProfileOf = (chief: Playthrough): BuffProfile => ({
+  ...daybreakBuffInputs(chief),
+  tundraAlbums: tundraAlbumBuffInputs(chief),
   allianceTech: allianceTechLevelsOf(chief),
   allianceFacilities: allianceFacilityLevelsOf(chief),
   heroSkills: heroSkillsOf(chief),
