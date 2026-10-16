@@ -4,6 +4,9 @@ import type {
   AllianceTechNodeState,
 } from "./alliance";
 import type { CoreEventsImports, CoreEventState } from "./coreEvents";
+import type { DailiesState } from "./dailies";
+import type { DaybreakState } from "./daybreak";
+import type { EventResultState, UserEventState } from "./events";
 import type {
   ExpertsPlanState,
   ExpertState,
@@ -11,6 +14,7 @@ import type {
 } from "./experts";
 import type { PetsPlanState, PetState } from "./pets";
 import type { TrainingJobState, TroopsPlanState, TroopsState } from "./troops";
+import type { TundraAlbumState } from "./tundraAlbum";
 
 export type Theme = "light" | "dark" | "system";
 
@@ -203,6 +207,12 @@ export interface Playthrough {
   alliance?: AllianceState;
   events?: Partial<Record<CoreEventId, CoreEventState>>;
   coreEvents?: CoreEventsImports;
+  userEvents?: UserEventState[];
+  eventsTimeZone?: "utc" | "local";
+  eventResults?: EventResultState[];
+  dailies?: DailiesState;
+  daybreak?: DaybreakState;
+  tundraAlbum?: Record<string, TundraAlbumState>;
   allianceTech?: Record<string, AllianceTechNodeState>;
   allianceFacilities?: Record<string, AllianceFacilityState>;
 }
@@ -225,5 +235,9 @@ export interface ChiefValues {
 export type * from "./troops";
 export type * from "./alliance";
 export type * from "./coreEvents";
+export type * from "./dailies";
+export type * from "./daybreak";
+export type * from "./events";
+export type * from "./tundraAlbum";
 export type * from "./experts";
 export type * from "./pets";

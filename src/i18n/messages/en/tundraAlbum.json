@@ -1,0 +1,93 @@
+{
+    "page": {
+        "title": "Tundra Album"
+    },
+    "view": {
+        "subline": "{chief} · {details} · {complete} of {total} albums complete"
+    },
+    "wiki": {
+        "button": "Wiki"
+    },
+    "summary": {
+        "label": "Albums complete",
+        "value": "{done} of {total}",
+        "progress": "Albums complete",
+        "inData": "{shown} of {all} albums are in the data"
+    },
+    "buffs": {
+        "title": "Buffs counting now",
+        "derived": "Derived",
+        "none": "No album is complete yet, so no Tundra Album buff counts.",
+        "note": "Only complete albums count. These buffs feed the <link>Bonuses</link> page."
+    },
+    "album": {
+        "status": {
+            "complete": "Complete",
+            "inProgress": "In progress"
+        },
+        "buffWhenComplete": "Buff when complete",
+        "puzzlesDone": "Puzzles done",
+        "puzzlesValue": "{done} of {total}",
+        "puzzlesProgress": "{album} puzzles done",
+        "completionRewards": "Completion rewards",
+        "markComplete": "Mark album complete",
+        "notCounting": "Not counting yet. {buff} counts on the Bonuses page only when all {total} puzzles are done. Mark album complete sets all {total} puzzles and shows an Undo toast.",
+        "counting": "Counting now. {buff} is on the Bonuses page. Unchecking a puzzle takes it off again.",
+        "piecesValue": "{collected} of {total} pieces collected"
+    },
+    "puzzle": {
+        "pieces": "{count, plural, one {{amount} piece} other {{amount} pieces}}, stars 1 to 5: {split}",
+        "reward": "Reward",
+        "done": "Puzzle done, all pieces collected",
+        "doneFor": "Done, {puzzle}",
+        "collectedLabel": "Pieces collected",
+        "collected": "{collected} of {total}",
+        "pieceLabel": "{name}, {stars} stars",
+        "pieceHint": "Select the pieces you have. Marking the puzzle done collects all of them.",
+        "allCollected": "The puzzle is done, so every piece is collected."
+    },
+    "reward": {
+        "line": "{amount} {item}",
+        "sized": "{amount} {item} ({size})",
+        "unknownItem": "Unknown item"
+    },
+    "toast": {
+        "markedTitle": "{album} marked complete",
+        "markedMessage": "All {total} puzzles are done.",
+        "unmarkedTitle": "{puzzle} unmarked",
+        "unmarkedMessage": "{album} is in progress again and its buff left Bonuses.",
+        "undo": "Undo"
+    },
+    "notInData": "The other {count} of the {total} Tundra Albums are not in the data yet. They are added when the package has them.",
+    "pieces": {
+        "label": "Pieces collected",
+        "value": "{collected} of {available}",
+        "progress": "Pieces collected in all albums",
+        "viewRewards": "View piece rewards"
+    },
+    "rewardsFlyout": {
+        "title": "Piece count rewards",
+        "description": "The rewards you get as the pieces you collect in all albums add up",
+        "close": "Close",
+        "collected": "Pieces collected",
+        "collectedValue": "{collected} of {available}",
+        "progress": "Pieces collected in all albums",
+        "reached": "{reached} of {all} piece count rewards reached",
+        "next": "The next reward is at {pieces} pieces, {missing} more to collect.",
+        "allReached": "Every piece count reward in the data is reached.",
+        "totalSoFar": "Rewards earned so far",
+        "tree": "Rewards by pieces collected",
+        "tier": "Reward {tier} at {pieces} pieces",
+        "stateReached": "Collected",
+        "stateNext": "Next, {missing} more",
+        "stateLater": "{missing} more"
+    },
+    "picker": {
+        "label": "Albums",
+        "title": "Albums",
+        "complete": "Album complete",
+        "puzzles": "{done} of {total} puzzles",
+        "pieces": "{collected} of {total} pieces",
+        "piecesProgress": "{album} pieces collected"
+    }
+}

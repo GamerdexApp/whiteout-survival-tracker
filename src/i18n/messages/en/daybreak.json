@@ -1,0 +1,118 @@
+{
+    "page": {
+        "title": "Daybreak Island"
+    },
+    "view": {
+        "subline": "Lumber Camp, Tree of Life and your decorations."
+    },
+    "wiki": {
+        "button": "Wiki",
+        "unavailable": "The Wiki is not built yet."
+    },
+    "locked": {
+        "title": "Requires Furnace {level}",
+        "description": "Daybreak Island unlocks at Furnace {level}. Your Furnace is {current}, so {missing} to go. The page stays visible so you can see what is coming. Editing is off until then.",
+        "noFurnace": "Daybreak Island unlocks at Furnace {level}. Your Furnace level is not set yet. The page stays visible so you can see what is coming. Editing is off until then.",
+        "missing": "{count, plural, one {{amount} more level} other {{amount} more levels}}",
+        "link": "Go to Buildings"
+    },
+    "levelOf": "L{level} of {max}",
+    "camp": {
+        "title": "Lumber Camp",
+        "levelLabel": "Lumber Camp level",
+        "workers": "Workers",
+        "rate": "Rate per second",
+        "essence": "Life Essence to reach this level",
+        "needsTree": "Needs Tree of Life level {required}. Yours is {current}.",
+        "treeTooLow": "Tree of Life level {current} is too low. Level {level} of the Lumber Camp needs Tree of Life level {required}.",
+        "next": "Next, level {level}: {essence} Life Essence, needs Tree of Life level {tree}.",
+        "highest": "This is the highest level."
+    },
+    "tree": {
+        "title": "Tree of Life",
+        "levelLabel": "Tree of Life level",
+        "prosperity": "Prosperity to reach this level",
+        "essence": "Life Essence to reach this level",
+        "perHour": "Life Essence per hour",
+        "buff": "Buff",
+        "next": "Next, level {level}: {prosperity} Prosperity, {essence} Life Essence.",
+        "highest": "This is the highest level."
+    },
+    "decorations": {
+        "title": "Decorations",
+        "owned": "{owned} of {total} owned",
+        "imageNote": "Only {withImage} of {total} decorations have an image in the package. A solid square marks the ones with an image, a dashed square marks the rest."
+    },
+    "search": {
+        "label": "Search decorations",
+        "placeholder": "Search decorations"
+    },
+    "status": {
+        "showing": "Showing {shown} of {total} decorations.",
+        "showMore": "{count, plural, one {Show {amount} more decoration} other {Show {amount} more decorations}}"
+    },
+    "empty": {
+        "title": "No decorations match",
+        "description": "Change the search or the filters to see decorations.",
+        "reset": "Reset filters"
+    },
+    "card": {
+        "costEach": "Cost each",
+        "cost": "{amount} {item}",
+        "limit": "Limit",
+        "buffAtLevel": "Buff at level {level}",
+        "buffAtMax": "Buff at max level",
+        "buffValue": "{value} {stat}",
+        "prosperityAtMax": "Prosperity at max",
+        "essenceCost": "Life Essence cost",
+        "unknown": "Unknown",
+        "owned": "Owned",
+        "notOwned": "Not owned",
+        "ownedLabel": "{name} owned",
+        "levelLabel": "{name} level",
+        "countLabel": "{name} count",
+        "limited": "Limited",
+        "ownedCount": "Owned {count} of {limit}"
+    },
+    "categories": {
+        "Basic": "Basic",
+        "Vegetation": "Vegetation",
+        "Common": "Common",
+        "Uncommon": "Uncommon",
+        "Rare": "Rare",
+        "Epic": "Epic",
+        "Mythic": "Mythic",
+        "Unique": "Unique"
+    },
+    "filters": {
+        "button": "Filters",
+        "title": "Filters",
+        "description": "Narrow the decoration list. Filters are not saved.",
+        "category": "Category",
+        "categoryAll": "All {amount}",
+        "categoryOption": "{category} {amount}",
+        "show": "Show",
+        "ownedOnly": "Owned only",
+        "limitedOnly": "Limited only",
+        "unknownBuffOnly": "Unknown buff only",
+        "sort": "Sort",
+        "order": {
+            "game": "Package order",
+            "name": "Name A to Z",
+            "level": "Level highest first"
+        },
+        "reset": "Reset",
+        "showButton": "{count, plural, one {Show {amount} decoration} other {Show {amount} decorations}}",
+        "nonLimitedOnly": "Non limited only",
+        "notOwnedOnly": "Not owned only"
+    },
+    "prosperity": {
+        "label": "Your prosperity score",
+        "progress": "Prosperity score of your decorations",
+        "possible": "Out of {max} with every decoration at its top level and limit",
+        "levelled": "Levelled decorations, prosperity of the level reached",
+        "limited": "Decorations with a limit, owned times prosperity each",
+        "ofMax": "{value} of {max}",
+        "withoutValue": "{count, plural, one {{amount} owned decoration has} other {{amount} owned decorations have}} no prosperity value in the data and {count, plural, one {is} other {are}} not counted."
+    }
+}
