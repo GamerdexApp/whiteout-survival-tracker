@@ -241,10 +241,11 @@
             },
             "appointmentNote": "Regular 10 percent, Supreme 15 percent. <strong>Estimate:</strong> the package states these values for research only.",
             "petSkill": "Pet skill, Builder's Aide",
-            "petSkillNote": "The percent is managed by the Pets page. The switch stays off until that page can tell if the Cave Hyena is unlocked.",
+            "petSkillNote": "The percent comes from the Cave Hyena on the Pets page, at its current level.",
             "chiefOrder": "Chief order, Double Time",
             "chiefOrderNote": "<strong>Estimate:</strong> adds {percent} percent construction speed for 5 minutes. The package has no chief order data, so the value is entered by the app and applied to the whole time.",
-            "total": "Total construction speed"
+            "total": "Total construction speed",
+            "petSkillNoteLocked": "The Cave Hyena is not unlocked on the Pets page, so the skill adds nothing. Unlock it there to turn this on."
         },
         "goal": {
             "to": "to",

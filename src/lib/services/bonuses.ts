@@ -13,7 +13,9 @@ import { entertainmentBuildings } from "@/data/game/buildings";
 import { allResearch } from "@/data/game/research";
 import { levelledBuildingLevels } from "./buildings";
 import { charmItems, gearItems } from "./chiefGear";
+import { expertBuffInputs } from "./experts";
 import { buildHeroViews } from "./heroes";
+import { petBuffInputs } from "./pets";
 import { levelOfNode } from "./research";
 
 const CONSTRUCTION_SPEED_STAT = "construction-speed";
@@ -58,6 +60,8 @@ const chiefCharmsOf = (chief: Playthrough) => {
 
 export const buffProfileOf = (chief: Playthrough): BuffProfile => ({
   heroSkills: heroSkillsOf(chief),
+  ...expertBuffInputs(chief),
+  pets: petBuffInputs(chief),
   chiefGear: chiefGearOf(chief),
   chiefCharms: chiefCharmsOf(chief),
   researchLevels: researchLevelsOf(chief),

@@ -21,6 +21,7 @@ import {
 } from "@/service/buildingPlan";
 import { buildView, levelOrder } from "@/service/buildings";
 import { minutesOfSpeedup } from "@/service/inventory";
+import { petSkillConstructionPercent } from "@/service/pets";
 import { resourceChecks } from "@/service/planStock";
 import { findBuildingById, levelledBuildings } from "@/data/game/buildings";
 import { findItem, RESOURCE_ITEM_IDS } from "@/data/game/items";
@@ -44,9 +45,6 @@ interface PlanFlyoutProps {
 }
 
 const appointmentIds: Appointment[] = ["none", "regular", "supreme"];
-
-// The Pets page decides this percent. Until it exists the skill cannot be turned on.
-const PET_SKILL_PERCENT = 0;
 
 export function PlanFlyout({ open, chief, onClose, onSave }: PlanFlyoutProps) {
 	const t = useTranslations("buildings");
@@ -111,7 +109,8 @@ function PlanBody({ chief, rows, controls, onRowsChange, onControlsChange }: Pla
 		() => (ui.calcUseBonuses ? constructionSpeedBonusPercent(chief) : 0),
 		[ui.calcUseBonuses, chief]
 	);
-	const speedPercent = constructionSpeedPercent(controls, PET_SKILL_PERCENT, bonusesPercent);
+	const petSkillPercent = petSkillConstructionPercent(chief);
+	const speedPercent = constructionSpeedPercent(controls, petSkillPercent, bonusesPercent);
 	const result = useMemo(() => {
 		if (rows.length === 0) return null;
 		try {
@@ -138,6 +137,7 @@ function PlanBody({ chief, rows, controls, onRowsChange, onControlsChange }: Pla
 					controls={controls}
 					bonusesPercent={bonusesPercent}
 					bonusesOn={ui.calcUseBonuses}
+					petSkillPercent={petSkillPercent}
 					speedPercent={speedPercent}
 					onChange={onControlsChange}
 				/>
@@ -241,12 +241,14 @@ function SpeedControls({
 	controls,
 	bonusesPercent,
 	bonusesOn,
+	petSkillPercent,
 	speedPercent,
 	onChange,
 }: {
 	controls: PlanControls;
 	bonusesPercent: number;
 	bonusesOn: boolean;
+	petSkillPercent: number;
 	speedPercent: number;
 	onChange: (controls: PlanControls) => void;
 }) {
@@ -297,13 +299,15 @@ function SpeedControls({
 					<Switch
 						label={t("petSkill")}
 						checked={controls.petSkill}
-						disabled
-						onChange={() => {}}
+						disabled={petSkillPercent === 0}
+						onChange={(petSkill) => onChange({ ...controls, petSkill })}
 					/>
-					<span className="font-mono text-xs">{plusPercent(PET_SKILL_PERCENT)}</span>
+					<span className="font-mono text-xs">{plusPercent(petSkillPercent)}</span>
 				</span>
 			</div>
-			<p className="text-muted text-xs">{t("petSkillNote")}</p>
+			<p className="text-muted text-xs">
+				{petSkillPercent === 0 ? t("petSkillNoteLocked") : t("petSkillNote")}
+			</p>
 			<hr className="border-line border-t-[1.5px]" />
 			<div className="flex items-center justify-between gap-3">
 				<span className="font-medium">{t("chiefOrder")}</span>

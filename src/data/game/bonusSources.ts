@@ -3,7 +3,6 @@
  * so instead of showing a total that looks complete. Each id is a key of `bonuses.sourceTypes`.
  */
 export const pendingSourceIds = [
-  "expert",
   "allianceTech",
   "allianceFacility",
   "alliancePrestige",
@@ -11,7 +10,6 @@ export const pendingSourceIds = [
   "skin",
   "tundraAlbum",
   "decoration",
-  "pet",
 ] as const;
 
 export const unstoredSourceIds = [
