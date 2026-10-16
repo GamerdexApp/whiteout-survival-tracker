@@ -485,7 +485,9 @@ const goalToCalculatorInput = (view: HeroView, goal: HeroGoal) => {
     id: view.hero.id,
     stars: { current: view.stars, goal: starsGoal },
     skills,
-    widgets: { current: view.weapon, goal: Math.max(weaponGoal, view.weapon) },
+    widgets: view.hero.exclusiveWeapon
+      ? { current: view.weapon, goal: Math.max(weaponGoal, view.weapon) }
+      : undefined,
   };
 };
 
