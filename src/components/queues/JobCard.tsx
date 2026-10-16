@@ -16,9 +16,10 @@ interface JobCardProps {
 	title?: string;
 	job?: UpgradeJob;
 	onManage: () => void;
+	onFinish: () => void;
 }
 
-export function JobCard({ label, idleText, title, job, onManage }: JobCardProps) {
+export function JobCard({ label, idleText, title, job, onManage, onFinish }: JobCardProps) {
 	const t = useTranslations("queues.jobCard");
 	const now = useNow();
 
@@ -50,7 +51,14 @@ export function JobCard({ label, idleText, title, job, onManage }: JobCardProps)
 				<span className="text-muted text-xs">
 					{t("ends", { date: formatDateTime(job.endsAt) })}
 				</span>
-				<Button onClick={onManage}>{t("manage")}</Button>
+				<span className="flex items-center gap-2">
+					<Button onClick={onManage}>{t("manage")}</Button>
+					{left === 0 && (
+						<Button variant="primary" onClick={onFinish}>
+							{t("finish", { title })}
+						</Button>
+					)}
+				</span>
 			</div>
 		</Card>
 	);

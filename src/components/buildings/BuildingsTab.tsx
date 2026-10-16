@@ -148,18 +148,25 @@ export function BuildingsTab({ chief }: { chief: Playthrough }) {
 			}
 		: null;
 
-	const finishManaged = () => {
-		if (!managedJob) return;
+	const finishBuilder = (builder: number) => {
+		const job = builderJob(chief, builder);
+		if (!job) return;
 		const before = chief;
-		if (!change((current) => finishConstruction(current, managedJob, new Date().toISOString())))
+		if (!change((current) => finishConstruction(current, job, new Date().toISOString())))
 			return;
 		setManageBuilder(null);
 		showToast({
 			variant: "success",
-			title: t("tab.toasts.finished.title", { name: managedName }),
-			message: t("tab.toasts.finished.message", { level: managedJob.to }),
+			title: t("tab.toasts.finished.title", {
+				name: findBuildingById(job.buildingId)?.name ?? job.buildingId,
+			}),
+			message: t("tab.toasts.finished.message", { level: job.to }),
 			action: { label: t("undo"), onAction: () => change(() => before) },
 		});
+	};
+
+	const finishManaged = () => {
+		if (manageBuilder !== null) finishBuilder(manageBuilder);
 	};
 
 	const cancelManaged = () => {
@@ -238,7 +245,7 @@ export function BuildingsTab({ chief }: { chief: Playthrough }) {
 					total: formatNumber(views.length),
 				})}
 			</p>
-			<BuildersStrip chief={chief} onManage={setManageBuilder} />
+			<BuildersStrip chief={chief} onManage={setManageBuilder} onFinish={finishBuilder} />
 			<div className="grid grid-cols-2 gap-3 lg:grid-cols-3">
 				<StatTile
 					value={

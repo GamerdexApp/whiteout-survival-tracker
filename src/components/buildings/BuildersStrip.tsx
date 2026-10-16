@@ -10,9 +10,10 @@ import { JobCard } from "@/comps/queues/JobCard";
 interface BuildersStripProps {
 	chief: Playthrough;
 	onManage: (builder: number) => void;
+	onFinish: (builder: number) => void;
 }
 
-export function BuildersStrip({ chief, onManage }: BuildersStripProps) {
+export function BuildersStrip({ chief, onManage, onFinish }: BuildersStripProps) {
 	const t = useTranslations("buildings");
 	return (
 		<section className="flex flex-col gap-2" aria-label={t("builders.label")}>
@@ -42,6 +43,7 @@ export function BuildersStrip({ chief, onManage }: BuildersStripProps) {
 							}
 							job={job}
 							onManage={() => onManage(builder)}
+							onFinish={() => onFinish(builder)}
 						/>
 					);
 				})}

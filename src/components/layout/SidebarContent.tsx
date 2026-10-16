@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { usePlaythrough } from "@/lib/contexts/PlaythroughContext";
 import { formatNumber } from "@/lib/format";
-import { constructionJobs, researchJobs } from "@/service/queues";
+import { constructionJobs, learningJobs, researchJobs, trainingJobs } from "@/service/queues";
 import type { NavItem } from "@/data/nav";
 import { isNavItemActive, navGroups, settingsNavItem } from "@/data/nav";
 import { SectionLabel } from "@/comps/ui/SectionLabel";
@@ -21,6 +21,8 @@ function useQueueCounts(): Record<string, number> {
 	return {
 		"/buildings": constructionJobs(activePlaythrough).length,
 		"/research": researchJobs(activePlaythrough).length,
+		"/troops": trainingJobs(activePlaythrough).length,
+		"/experts": learningJobs(activePlaythrough).length,
 	};
 }
 

@@ -1,0 +1,237 @@
+{
+    "page": {
+        "title": "Troops"
+    },
+    "view": {
+        "title": "Troops",
+        "subline": "{chief} · {camps}",
+        "campLevel": "{name} Camp {level}",
+        "notBuilt": "not built",
+        "intro": "Camp levels, capacity and speed bonuses come from other pages and are read only. Plan works out what training and promotion take. Start training marks a batch that a camp is running.",
+        "plan": "Plan"
+    },
+    "cards": {
+        "tileSummary": "troops · power {power}",
+        "allTroops": "All troops",
+        "totalPower": "Total power",
+        "troops": "Troops",
+        "power": "Power",
+        "powerNote": "Power per troop comes from the package. Tiers 10 and 11 follow the Fire Crystal level of each camp.",
+        "campLevel": "{level} camp",
+        "campNotBuilt": "Camp not built",
+        "highestTier": "Highest tier",
+        "tierShort": "T{tier}",
+        "noTier": "None"
+    },
+    "tiers": {
+        "title": "{name} tiers",
+        "hideLow": "Hide Tier 9 and lower",
+        "typeLabel": "Troop type",
+        "hiddenNote": "Tier 1 to 9 are hidden. Furnace {furnace} is level 30 or higher.",
+        "heads": {
+            "tier": "Tier",
+            "troops": "Troops",
+            "train": "Train",
+            "power": "Power"
+        },
+        "requires": {
+            "list": "Needs {list}",
+            "camp": "{name} Camp {level}",
+            "building": "{name} {level}",
+            "research": "{name} level {level}"
+        },
+        "tier": "Tier {tier}",
+        "locked": "Locked",
+        "countLabel": "{name} {tier} troops",
+        "train": "Train",
+        "seconds": "{value} s",
+        "each": "each",
+        "mobilePower": "Power"
+    },
+    "plan": {
+        "title": "Plan Troops",
+        "description": "Training and promotion for the three troop types",
+        "saved": "Plan saved {date}",
+        "close": "Close",
+        "save": "Save plan",
+        "noRuns": "No trains yet. Add a troop to start a plan.",
+        "add": {
+            "title": "Add a Troop",
+            "typeLabel": "Troop type",
+            "modeLabel": "Training or Promotion",
+            "button": "Add Troop"
+        },
+        "run": {
+            "tier": "Tier {tier}",
+            "modes": {
+                "training": "Training",
+                "promotion": "Promotion"
+            },
+            "remove": "Remove {name} train",
+            "removeButton": "Remove",
+            "modeLabel": "{name} training or promotion",
+            "tierLabel": "{name} tier",
+            "fromLabel": "{name} promote from tier",
+            "toLabel": "{name} promote to tier",
+            "to": "to",
+            "troops": "Troops",
+            "max": "Max",
+            "maxValue": "Max ({capacity})",
+            "batches": "Batches"
+        },
+        "speed": {
+            "readOnlyNote": "Read only values are carried over from other pages. Change them there.",
+            "openBonuses": "Open Bonuses",
+            "title": "Capacity and speed",
+            "appointment": "Appointment",
+            "position": "Position",
+            "rank": "Rank",
+            "positions": {
+                "none": "None",
+                "ministerOfEducation": "Minister of Education",
+                "vicePresident": "Vice President"
+            },
+            "ranks": {
+                "regular": "Regular",
+                "supreme": "Supreme"
+            },
+            "appointmentEffect": "+{capacity} capacity, +{speed}% speed",
+            "appointmentNote": "Only one of the two appointments can be on. Minister of Education adds {moeCapacity} capacity and {moeSpeed} percent speed (Supreme {moeCapacitySupreme} and {moeSpeedSupreme}). Vice President adds {vpSpeed} percent speed (Supreme {vpSpeedSupreme}).",
+            "capacity": "Capacity",
+            "researchCapacity": "Research capacity",
+            "troops": "{value} troops",
+            "readOnly": "Read only",
+            "capacityBoost": "Capacity boost",
+            "boostTotal": "Total x{multiplier}",
+            "capacityPerBatch": "Capacity per batch",
+            "trainingSpeed": "Training speed",
+            "gameSpeed": "Game training speed",
+            "appointmentSpeed": "Appointment",
+            "mobilize": "Mobilize",
+            "advancedTraining": "Advanced Training",
+            "speedUsed": "Training speed used",
+            "percent": "{value}%",
+            "percentPlus": "+{value}%"
+        },
+        "stock": {
+            "name": "Training speedups",
+            "minutesUnit": "min",
+            "note": "Your stock: Training {training} min, General {general} min. General speedups count toward training. Training that a speedup does not cover finishes in normal time, so only the speedups you hold are used: {used} min."
+        },
+        "result": {
+            "title": "Result",
+            "resources": "Resources",
+            "changes": "Troop changes by tier",
+            "heads": {
+                "tier": "Tier",
+                "infantry": "Inf.",
+                "lancer": "Lan.",
+                "marksman": "Mark.",
+                "all": "All"
+            },
+            "tier": "Tier {tier}",
+            "total": "Total",
+            "time": "Time, no speedups",
+            "totalTime": "Total, all troop types (speedup time)",
+            "longest": "Longest troop type",
+            "minutesNeeded": "Speedup minutes needed",
+            "minutesUsed": "Speedup minutes used (in stock)",
+            "minutes": "{value} min",
+            "tier12Note": "The package says the Tier 12 costs are partly derived. The Marksman promotion cost was measured in the game, and the Infantry and Lancer costs were scaled from it."
+        }
+    },
+    "queue": {
+        "title": "Training queues",
+        "note": "Each camp trains one batch at a time. Finish adds the troops to your counts.",
+        "idle": "Nothing is training. Start a batch to use this camp.",
+        "startButton": "Start training",
+        "jobTitle": {
+            "training": "Training {count} {name} T{tier}",
+            "promotion": "Promoting {count} {name} T{from} to T{to}"
+        },
+        "manage": {
+            "slotLabel": "{camp}, one batch at a time",
+            "finishText": "Finish upgrade adds the troops to your counts, frees the camp and adds the batch to your History. At zero time left the card says Ready to finish. Nothing finishes by itself, because you may have used speedups."
+        },
+        "flyout": {
+            "title": "Start training",
+            "description": "Mark a batch as training or promoting in a camp",
+            "camp": "Camp",
+            "campHelp": "One batch at a time in each camp. A busy camp says when it frees.",
+            "busy": "Busy until {date}",
+            "notBuilt": "Camp not built",
+            "action": "Action",
+            "training": "Training",
+            "promotion": "Promotion",
+            "tier": "Tier",
+            "tierOption": "Tier {tier}",
+            "fromTier": "From tier",
+            "toTier": "To tier",
+            "troops": "Troops in the batch",
+            "max": "Max",
+            "capacityHint": "A batch holds up to {capacity} troops. This is the research capacity plus your camp levels.",
+            "noTiers": "This camp has no tier to train yet. Raise the camp level on the Buildings page.",
+            "cost": "Cost of the batch",
+            "time": "Training time",
+            "packageTime": "Package time",
+            "speed": "Training speed",
+            "readOnly": "Read only",
+            "openBonuses": "Open Bonuses",
+            "yourTime": "Your time",
+            "timeHint": "Training speed comes from the Bonuses page. Use Already started when the game shows a different time.",
+            "whenStarted": "When did it start?",
+            "modes": {
+                "now": "Starting now",
+                "already": "Already started"
+            },
+            "timeLeftHours": "Time left, hours",
+            "ends": "Ends",
+            "takeCost": {
+                "title": "Take the cost from my stock",
+                "hint": "Takes the resources of the batch from Resources. A count never goes below 0.",
+                "enough": "You have enough.",
+                "short": "Short on {names}. The stock goes to 0 for those."
+            },
+            "cancel": "Cancel",
+            "start": "Start training",
+            "allCamps": "All free camps ({count})",
+            "allCampsHint": "Starts the same batch in every free camp at once. Each camp keeps its own time. Tiers shown are the ones every free camp can train.",
+            "campTime": "{camp}: {time}"
+        },
+        "toasts": {
+            "started": {
+                "title": "Training started",
+                "message": "{what}."
+            },
+            "finished": {
+                "title": "{what} trained",
+                "message": "Added to your troop counts and to History."
+            },
+            "cancelled": {
+                "title": "{what} cancelled",
+                "message": "Your troop counts stay as they were. Fix your stock on Resources if needed."
+            },
+            "undo": "Undo"
+        },
+        "batchName": {
+            "training": "{count} {name} T{tier}",
+            "promotion": "{count} {name} T{from} to T{to}"
+        }
+    },
+    "callOfWar": {
+        "title": "Call of War",
+        "note": "Romulus skill. One free claim for each UTC day, for all camps together. It resets at 00:00 UTC.",
+        "available": "{troops} free troops today",
+        "claimed": "Claimed today. A new claim is free in {time}.",
+        "notUnlocked": "Needs Romulus recruited and Call of War at level 1 or higher on the Experts page.",
+        "level": "Call of War level {level}",
+        "add": "Add to {camp}",
+        "addHint": "{troops} troops go to tier {tier}",
+        "noTier": "No tier unlocked",
+        "toast": {
+            "title": "Call of War claimed",
+            "message": "{troops} troops added to {camp} tier {tier}.",
+            "undo": "Undo"
+        }
+    }
+}

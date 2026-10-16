@@ -1,0 +1,229 @@
+{
+    "page": {
+        "title": "Experts"
+    },
+    "view": {
+        "subline": "{chief} · Dawn Academy experts, {total} in the game",
+        "ghost": "Experts"
+    },
+    "common": {
+        "plan": "Plan",
+        "generation": "Generation {generation}",
+        "unknown": "Unknown",
+        "and": "{first} and {last}",
+        "expertCount": "{count, plural, one {{amount} expert} other {{amount} experts}}"
+    },
+    "stats": {
+        "recruited": "Experts recruited",
+        "recruitedValue": "{count} of {total}",
+        "powerNow": "Expert power now, recruited only",
+        "powerAtMax": "Power at max, all {total}",
+        "highest": "Highest affinity",
+        "highestValue": "{name} at {affinity}",
+        "highestNone": "None recruited"
+    },
+    "toolbar": {
+        "searchLabel": "Search experts",
+        "searchPlaceholder": "Search experts",
+        "filters": "Filters",
+        "emptyTitle": "No experts match",
+        "emptyDescription": "Change the search or the filters to see more experts.",
+        "reset": "Reset filters",
+        "status": "Showing {shown} of {total}. Goals are read only here and are set in Plan. At a level divisible by 10 the bonus of the level before counts until the expert is advanced. Every change saves at once."
+    },
+    "toast": {
+        "notRecruitedTitle": "{name} is not recruited",
+        "notRecruitedMessage": "The levels stay saved and switch back on with Recruited.",
+        "undo": "Undo"
+    },
+    "card": {
+        "recruited": "Recruited",
+        "recruitedLabel": "{expert} recruited",
+        "summary": "{title} · {specialty} · {generation}",
+        "affinityLevel": "Affinity level",
+        "affinityLabel": "{expert} affinity level",
+        "affinityDisplay": "{level} / {max}",
+        "affinityProgress": "{expert} affinity progress",
+        "goal": "Goal {goal}",
+        "advanced": "Advanced",
+        "notAdvanced": "Not advanced",
+        "advancedLabel": "{expert} advanced at level {level}",
+        "relationship": "Relationship level",
+        "affinityAvailable": "Affinity available",
+        "affinityAvailableLabel": "{expert} affinity points held",
+        "affinityOf": "of {need} for level {level}",
+        "bonusTitle": "Base bonus now",
+        "bonusNow": "{amount}% {stats}",
+        "bonusOwnLevel": "Level {level} is not a multiple of 10, so its own bonus counts.",
+        "bonusAdvanced": "Level {level} is advanced, so its own bonus counts.",
+        "bonusNotAdvanced": "Level {level} is not advanced, so the level {counted} bonus counts.",
+        "bonusAtMax": "At level 100: {amount}%.",
+        "feeds": "Feeds",
+        "bonuses": "Bonuses",
+        "nextAdvancement": "Next advancement: level {level}, {sigils} sigils",
+        "allAdvanced": "All advancements are done.",
+        "skills": "Skills",
+        "skillLabel": "{expert} {skill} level",
+        "skillDisplay": "{level} / {max}",
+        "expAvailable": "EXP available",
+        "expAvailableLabel": "{expert} {skill} EXP held",
+        "expOf": "of {need} for level {level}",
+        "maxLevel": "Max level, no EXP needed",
+        "talent": "Talent: {name}",
+        "talentLevel": "Level {level} of {max}",
+        "talentFollows": "Follows {relationship}. {effect}.",
+        "power": "Power {now} of {max}",
+        "derived": "Derived",
+        "notRecruitedHint": "Not recruited. Recruit this expert in Tundra Trek, then switch Recruited on.",
+        "recruitmentCost": "Recruitment cost: {cost}",
+        "maxPower": "Max power {max}",
+        "buffs": "Buffs {stats}",
+        "expEnough": "Enough for level {level}",
+        "affinityEnough": "Enough for level {level}",
+        "skillLocked": "Not unlocked. Raise it to level 1 to unlock it.",
+        "sigilsOwned": "Sigils owned",
+        "sigilsOwnedLabel": "{expert} sigils owned",
+        "sigilsHint": "The same count as the sigil on the Resources page."
+    },
+    "filtersFlyout": {
+        "title": "Filters",
+        "description": "Narrow the list of experts and pick the order.",
+        "generation": "Generation",
+        "all": "All",
+        "show": "Show",
+        "order": "Order",
+        "reset": "Reset",
+        "showButton": "Show {experts}",
+        "notSaved": "Filters are not saved.",
+        "showOptions": {
+            "everything": "Everything",
+            "recruited": "Recruited only",
+            "notRecruited": "Not recruited only"
+        },
+        "orderOptions": {
+            "generation": "Generation",
+            "affinity": "Affinity level",
+            "power": "Power",
+            "name": "Name"
+        }
+    },
+    "plan": {
+        "title": "Plan experts",
+        "description": "Books of Knowledge, sigils, skill EXP and affinity points for affinity and skill goals.",
+        "saved": "Plan saved {date}",
+        "close": "Close",
+        "save": "Save plan",
+        "noExperts": "No experts in the plan yet. Add a recruited expert to set its goals.",
+        "add": {
+            "title": "Add an expert",
+            "selectLabel": "Expert to add",
+            "button": "Add expert",
+            "allIn": "Every recruited expert is in the plan.",
+            "noneRecruited": "Recruit an expert on the page to plan it."
+        },
+        "block": {
+            "remove": "Remove",
+            "removeLabel": "Remove {expert} from the plan",
+            "part": "Part",
+            "current": "Current",
+            "goalHeading": "Goal",
+            "affinity": "Affinity level",
+            "affinityHeld": "Affinity available {amount}",
+            "expHeld": "EXP available {amount}",
+            "currentLevel": "Level {level}",
+            "currentAffinity": "{level}, advanced",
+            "currentAffinityPlain": "{level}",
+            "affinityGoalLabel": "{expert} affinity goal",
+            "skillGoalLabel": "{expert} {skill} goal",
+            "advanceAtGoal": "Advance at level {level}",
+            "advanceAtGoalLabel": "{expert} advance at the goal"
+        },
+        "checks": {
+            "affinity": "Affinity points",
+            "learning": "Skill EXP as learning speedups",
+            "minutesUnit": "min"
+        },
+        "stock": {
+            "sigils": "The plan needs {total} sigils. Your expert sigils cover {own} of them, so {common} must come from Common Expert Sigils. Each expert sigil you hold only counts for that expert.",
+            "books": "The plan needs {amount} Books of Knowledge for the skill levels.",
+            "affinity": "The plan needs {needed} affinity points. What you hold on the expert cards covers {held}, so {left} are still to get. The package has no affinity item, so nothing is checked against a stock.",
+            "learning": "The plan needs {exp} skill EXP. Your skills hold {held}, so {left} must come from learning speedups. One minute of learning gives {rate} EXP, so that is {minutes} minutes."
+        },
+        "byExpert": {
+            "title": "By expert",
+            "sigils": "Sigils: {needed} needed, {own} covered by your {name} sigil, {common} to come from Common Expert Sigils",
+            "affinity": "Affinity: {needed} needed, {held} available, {left} still to get",
+            "exp": "Skill EXP: {needed} needed, {held} available, {left} still to get"
+        },
+        "result": {
+            "title": "Result",
+            "derived": "Derived",
+            "books": "Books of Knowledge",
+            "sigils": "Sigils",
+            "exp": "Skill EXP",
+            "affinity": "Affinity points",
+            "advancements": "Advancements",
+            "skillLevels": "Skill levels",
+            "affinityLevels": "Affinity levels",
+            "heads": {
+                "expert": "Expert",
+                "books": "Books",
+                "sigils": "Sigils",
+                "exp": "EXP",
+                "levels": "Levels",
+                "advancements": "Adv.",
+                "affinity": "Affinity"
+            },
+            "empty": "Add an expert and raise a goal to see the result."
+        }
+    },
+    "learning": {
+        "title": "Learning",
+        "note": "One skill learns at a time. Finish adds the EXP to that skill.",
+        "idle": "Nothing is learning. Start a session to add EXP to a skill.",
+        "startButton": "Start learning",
+        "slotLabel": "Learning, one session at a time",
+        "jobTitle": "{expert}, {skill}, {session}",
+        "manageFinishText": "Finish upgrade adds the EXP of the session to the skill, frees the learning queue and adds the session to your History. At zero time left the card says Ready to finish. Nothing finishes by itself, because you may have used speedups.",
+        "flyout": {
+            "title": "Start learning",
+            "description": "Mark a learning session as running for an expert skill",
+            "expert": "Expert",
+            "skill": "Skill",
+            "skillOption": "{name}, level {level} of {max}",
+            "session": "Session",
+            "sessionOption": "{label}, {exp} EXP",
+            "sessionHint": "A session earns 60 EXP for each minute. The sessions are the ones of the game.",
+            "expEarned": "EXP earned",
+            "heldAfter": "Held EXP after",
+            "tooMuch": "The skill can only use {room} more EXP, so the rest is lost.",
+            "whenStarted": "When did it start?",
+            "modes": {
+                "now": "Starting now",
+                "already": "Already started"
+            },
+            "timeLeftHours": "Time left, hours",
+            "ends": "Ends",
+            "startedHint": "Use Already started when the session is running in the game. Enter the time it shows.",
+            "nothingToLearn": "No skill can learn right now. Recruit an expert and unlock a skill that is not at its top level.",
+            "busy": "A session is already running. Finish or cancel it in Manage first.",
+            "cancel": "Cancel",
+            "start": "Start learning"
+        },
+        "toasts": {
+            "started": {
+                "title": "Learning started",
+                "message": "{what}."
+            },
+            "finished": {
+                "title": "{what} learned",
+                "message": "The EXP was added to the skill and to History."
+            },
+            "cancelled": {
+                "title": "{what} cancelled",
+                "message": "The skill keeps the EXP it had."
+            },
+            "undo": "Undo"
+        }
+    }
+}

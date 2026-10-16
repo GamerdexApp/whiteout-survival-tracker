@@ -1,0 +1,195 @@
+{
+    "page": { "title": "Pets" },
+    "view": { "subline": "{chief} · {details} · {unlocked} of {total} pets unlocked" },
+    "rarities": {
+        "Common": "Common",
+        "Uncommon": "Uncommon",
+        "Rare": "Rare",
+        "Epic": "Epic",
+        "Legendary": "Legendary"
+    },
+    "unlock": {
+        "afterFurnace": "Day {days} and Furnace {level}",
+        "afterPet": "Day {days} and {pet} level {level}"
+    },
+    "summary": {
+        "unlocked": "Unlocked",
+        "unlockedValue": "{count} of {total}",
+        "unlockedNote": "Set by you",
+        "power": "Total power",
+        "powerNote": "Sum of unlocked pets",
+        "powerUnknown": "Sum of unlocked pets, {amount} unknown",
+        "next": "Next to unlock",
+        "allUnlocked": "All unlocked",
+        "allUnlockedNote": "Every pet is unlocked"
+    },
+    "totals": {
+        "attackDefense": "Troop Attack and Defense",
+        "attack": "Attack",
+        "defense": "Defense",
+        "lethality": "Lethality",
+        "health": "Health",
+        "gain": "+{value}%",
+        "types": {
+            "infantry": "Infantry",
+            "lancer": "Lancer",
+            "marksman": "Marksman"
+        }
+    },
+    "search": {
+        "label": "Search pets",
+        "placeholder": "Search {amount} pets by name"
+    },
+    "status": {
+        "showing": "Showing {shown} of {total} {count, plural, one {pet} other {pets}}.",
+        "filters": " Filters: {list}.",
+        "filterNames": {
+            "rarity": "Rarity",
+            "status": "Status",
+            "advanced": "Advanced",
+            "order": "Order"
+        },
+        "readOnlyGoals": "Goals are read only here and are set in Plan. A goal equal to the current value means no goal.",
+        "showMore": "Show {count, plural, one {{amount} more pet} other {{amount} more pets}}"
+    },
+    "empty": {
+        "title": "No pets match",
+        "description": "Change the search or the filters to see more pets.",
+        "reset": "Reset filters"
+    },
+    "toast": {
+        "lockedTitle": "{name} locked",
+        "lockedMessage": "Its level, advancement and refinement are kept.",
+        "undo": "Undo"
+    },
+    "card": {
+        "summary": "{rarity} · max level {max}",
+        "unlocked": "Unlocked",
+        "unlockedLabel": "{pet} unlocked",
+        "cooldown": "{time} cooldown",
+        "cooldownByTier": "Cooldown changes by tier",
+        "cooldownUnknown": "Cooldown Unknown",
+        "skillTiers": "{count, plural, one {{amount} skill tier} other {{amount} skill tiers}}",
+        "unlockRule": "Unlock rule",
+        "ruleMet": "You meet this rule",
+        "level": "Level (max {max})",
+        "levelLabel": "{pet} level",
+        "goal": "Goal {level}",
+        "noGoal": "No goal",
+        "advanced": "Advanced",
+        "advancedHint": "Advanced can be set at levels 10, 20, 30 and so on.",
+        "refinement": "Refinement",
+        "refinementMax": "max {max}% each",
+        "refineLabel": "{pet} {stat}",
+        "percentSign": "%",
+        "attack": "Atk +{value}%",
+        "defense": "Def +{value}%",
+        "power": "Power {value}",
+        "powerUnknown": "Power Unknown"
+    },
+    "filters": {
+        "button": "Filters",
+        "title": "Filters",
+        "description": "Choose what the Pets list shows",
+        "rarity": "Rarity",
+        "rarityAll": "All {amount}",
+        "rarityOption": "{rarity} {amount}",
+        "rarities": {
+            "Common": "Common",
+            "Uncommon": "Uncommon",
+            "Rare": "Rare",
+            "Epic": "Epic",
+            "Legendary": "Legendary"
+        },
+        "status": "Status",
+        "statusOptions": {
+            "all": "All pets",
+            "unlocked": "Unlocked",
+            "locked": "Locked"
+        },
+        "advanced": "Advanced",
+        "advancedOptions": {
+            "any": "Any",
+            "advanced": "Advanced",
+            "notAdvanced": "Not advanced"
+        },
+        "order": "Order",
+        "orderOptions": {
+            "game": "Game order",
+            "name": "Name, A to Z",
+            "level": "Level, highest first"
+        },
+        "notSaved": "Filters are not saved.",
+        "reset": "Reset",
+        "show": "Show {count, plural, one {{amount} pet} other {{amount} pets}}"
+    },
+    "plan": {
+        "button": "Plan",
+        "title": "Plan Pets",
+        "description": "Food, items, stats and event points to reach your goals",
+        "saved": "Plan saved {date}",
+        "notSavedYet": "Plan not saved yet",
+        "close": "Close",
+        "save": "Save plan",
+        "noPets": "Add an unlocked pet to plan its levels.",
+        "add": {
+            "title": "Add a pet",
+            "selectLabel": "Pet to add",
+            "button": "Add pet",
+            "allIn": "Every unlocked pet is in the plan.",
+            "noneUnlocked": "Unlock a pet on the Pets page to plan it."
+        },
+        "block": {
+            "rarities": {
+                "Common": "Common",
+                "Uncommon": "Uncommon",
+                "Rare": "Rare",
+                "Epic": "Epic",
+                "Legendary": "Legendary"
+            },
+            "maxLevel": "Max level {max}",
+            "remove": "Remove",
+            "removeLabel": "Remove {pet} from the plan",
+            "current": "Current level",
+            "to": "to",
+            "goal": "Goal level (max {max})",
+            "goalLabel": "{pet} goal level",
+            "payAdvancement": "Pay advancement at goal",
+            "paysCurrent": "Not advanced at level {level}, so that advancement is paid."
+        },
+        "result": {
+            "title": "Result for {count, plural, one {{amount} pet} other {{amount} pets}}",
+            "resources": "Resources, all pets",
+            "byPet": "By pet",
+            "heads": {
+                "pet": "Pet",
+                "levels": "Levels",
+                "food": "Food",
+                "power": "Power"
+            },
+            "powerGain": "+{value}",
+            "percentGain": "+{value}%",
+            "unknown": "Unknown",
+            "gains": "Gains",
+            "gainNames": {
+                "levels": "Levels gained",
+                "advancements": "Advancements",
+                "attack": "Troop Attack",
+                "defense": "Troop Defense",
+                "power": "Power",
+                "score": "Advancement score"
+            },
+            "unknownPowerNote": "The package has no advanced power for a level in this plan, so the power gain is Unknown.",
+            "eventPoints": "Event points",
+            "events": {
+                "svs": "SvS",
+                "allianceShowdown": "Alliance Showdown",
+                "kingOfIcefield": "King of Icefield",
+                "hallOfChief": "Hall of Chief"
+            },
+            "notScored": "Not scored",
+            "eventNote": "Event points are the advancement score times the points of the scoring row of each event.",
+            "scoreSourceNote": "Advancement scores for levels 40 to 100 match the event notes. Levels 10 to 30 come from one source (WoS Tools)."
+        }
+    }
+}

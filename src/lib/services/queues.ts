@@ -1,17 +1,22 @@
 import { translator } from "@/i18n/formatter";
 import type {
   ConstructionJob,
+  LearningJobState,
   Playthrough,
   ResearchJob,
   ResearchQueueId,
+  TrainingJobState,
+  TroopId,
   UpgradeJob,
   UpgradeLogEntry,
 } from "@/types/app";
 import { findBuildingById } from "@/data/game/buildings";
 import { findResearch, levelData } from "@/data/game/research";
 import { shelterLevels, withLevel, withShelterLevels } from "./buildings";
+import { applyExpertChange, buildExpertViews } from "./experts";
 import { ownedCount, withOwnedCounts } from "./inventory";
 import { withResearchLevel } from "./research";
+import { buildTroopViews, countOf, withTroopCount } from "./troops";
 
 export const BUILDER_NUMBERS = [1, 2] as const;
 export const RESEARCH_QUEUES: { id: ResearchQueueId }[] = [
@@ -35,6 +40,18 @@ export const constructionJobs = (chief: Playthrough): ConstructionJob[] =>
 
 export const researchJobs = (chief: Playthrough): ResearchJob[] =>
   chief.queues?.research ?? [];
+
+export const trainingJobs = (chief: Playthrough): TrainingJobState[] =>
+  chief.queues?.training ?? [];
+
+export const learningJobs = (chief: Playthrough): LearningJobState[] =>
+  chief.queues?.learning ?? [];
+
+/** One learning session runs at a time, so the queue holds at most one job. */
+export const learningJob = (chief: Playthrough) => learningJobs(chief)[0];
+
+export const campJob = (chief: Playthrough, camp: TroopId) =>
+  trainingJobs(chief).find((job) => job.camp === camp);
 
 export const builderJob = (chief: Playthrough, builder: number) =>
   constructionJobs(chief).find((job) => job.builder === builder);
@@ -144,14 +161,38 @@ export const withResearchJob = (
   queues: { ...chief.queues, research: [...researchJobs(chief), job] },
 });
 
+export const withTrainingJob = (
+  chief: Playthrough,
+  job: TrainingJobState,
+): Playthrough => ({
+  ...chief,
+  queues: { ...chief.queues, training: [...trainingJobs(chief), job] },
+});
+
+export const withLearningJob = (
+  chief: Playthrough,
+  job: LearningJobState,
+): Playthrough => ({
+  ...chief,
+  queues: { ...chief.queues, learning: [job] },
+});
+
 export type JobRef =
   | { kind: "construction"; builder: number }
-  | { kind: "research"; queue: ResearchQueueId };
+  | { kind: "research"; queue: ResearchQueueId }
+  | { kind: "training"; camp: TroopId }
+  | { kind: "learning" };
 
-const matches = (ref: JobRef, job: ConstructionJob | ResearchJob) =>
-  ref.kind === "construction"
-    ? "builder" in job && job.builder === ref.builder
-    : "queue" in job && job.queue === ref.queue;
+const matches = (
+  ref: JobRef,
+  job: ConstructionJob | ResearchJob | TrainingJobState | LearningJobState,
+) => {
+  if (ref.kind === "learning") return "expertId" in job;
+  if (ref.kind === "construction")
+    return "builder" in job && job.builder === ref.builder;
+  if (ref.kind === "research") return "queue" in job && job.queue === ref.queue;
+  return "camp" in job && job.camp === ref.camp;
+};
 
 const withoutJob = (chief: Playthrough, ref: JobRef): Playthrough => ({
   ...chief,
@@ -165,6 +206,14 @@ const withoutJob = (chief: Playthrough, ref: JobRef): Playthrough => ({
       ref.kind === "research"
         ? researchJobs(chief).filter((job) => !matches(ref, job))
         : researchJobs(chief),
+    training:
+      ref.kind === "training"
+        ? trainingJobs(chief).filter((job) => !matches(ref, job))
+        : trainingJobs(chief),
+    learning:
+      ref.kind === "learning"
+        ? learningJobs(chief).filter((job) => !matches(ref, job))
+        : learningJobs(chief),
   },
 });
 
@@ -183,6 +232,12 @@ export const withJobEndsAt = (
     ),
     research: researchJobs(chief).map((job) =>
       ref.kind === "research" && matches(ref, job) ? { ...job, endsAt } : job,
+    ),
+    training: trainingJobs(chief).map((job) =>
+      ref.kind === "training" && matches(ref, job) ? { ...job, endsAt } : job,
+    ),
+    learning: learningJobs(chief).map((job) =>
+      ref.kind === "learning" && matches(ref, job) ? { ...job, endsAt } : job,
     ),
   },
 });
@@ -260,4 +315,92 @@ export const finishResearch = (
       power: level?.power ?? 0,
     },
   );
+};
+
+/**
+ * Finish adds the troops to the saved counts, frees the camp and adds the batch to the log. A
+ * promotion takes the troops from the lower tier, and a count never goes below 0.
+ */
+export const finishTraining = (
+  chief: Playthrough,
+  job: TrainingJobState,
+  at: string,
+): Playthrough => {
+  const view = buildTroopViews(chief).find((item) => item.id === job.camp);
+  const targetTier = job.mode === "training" ? job.tier : job.toTier;
+  if (!view || targetTier === undefined)
+    return withoutJob(chief, { kind: "training", camp: job.camp });
+
+  const unitPower = (tier: number | undefined) =>
+    view.tiers.find((item) => item.tier === tier)?.unitPower ?? 0;
+  const before = countOf(chief, job.camp, targetTier);
+
+  let updated = withTroopCount(chief, job.camp, targetTier, before + job.count);
+  if (job.mode === "promotion" && job.fromTier !== undefined) {
+    updated = withTroopCount(
+      updated,
+      job.camp,
+      job.fromTier,
+      Math.max(0, countOf(chief, job.camp, job.fromTier) - job.count),
+    );
+  }
+
+  const tierText =
+    job.mode === "training"
+      ? `T${job.tier}`
+      : `T${job.fromTier} to T${job.toTier}`;
+  const power =
+    job.mode === "training"
+      ? job.count * unitPower(job.tier)
+      : job.count * (unitPower(job.toTier) - unitPower(job.fromTier));
+
+  return withLogEntry(
+    withoutJob(updated, { kind: "training", camp: job.camp }),
+    {
+      at,
+      category: "training",
+      item: `${view.name} ${tierText}`, // i18n-ignore
+      from: String(before),
+      to: String(before + job.count),
+      cost: job.cost ?? [],
+      power,
+    },
+  );
+};
+
+/**
+ * Finish adds the EXP of the session to the skill, up to the EXP that the skill can still use, and
+ * frees the learning queue. The log keeps the held EXP before and after.
+ */
+export const finishLearning = (
+  chief: Playthrough,
+  job: LearningJobState,
+  at: string,
+): Playthrough => {
+  const view = buildExpertViews(chief).find(
+    (item) => item.expert.id === job.expertId,
+  );
+  const skill = view?.expert.skills[job.skillIndex];
+  if (!view || !skill) return withoutJob(chief, { kind: "learning" });
+
+  const before = view.skillExp[job.skillIndex];
+  const updated = applyExpertChange(chief, {
+    kind: "skillExp",
+    expertId: job.expertId,
+    index: job.skillIndex,
+    exp: before + job.exp,
+  });
+  const after =
+    buildExpertViews(updated).find((item) => item.expert.id === job.expertId)
+      ?.skillExp[job.skillIndex] ?? before;
+
+  return withLogEntry(withoutJob(updated, { kind: "learning" }), {
+    at,
+    category: "learning",
+    item: `${view.expert.name} ${skill.name}`, // i18n-ignore
+    from: String(before),
+    to: String(after),
+    cost: [],
+    power: 0,
+  });
 };

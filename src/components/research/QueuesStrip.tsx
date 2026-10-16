@@ -11,9 +11,10 @@ import { JobCard } from "@/comps/queues/JobCard";
 interface QueuesStripProps {
 	chief: Playthrough;
 	onManage: (queue: ResearchQueueId) => void;
+	onFinish: (queue: ResearchQueueId) => void;
 }
 
-export function QueuesStrip({ chief, onManage }: QueuesStripProps) {
+export function QueuesStrip({ chief, onManage, onFinish }: QueuesStripProps) {
 	const t = useTranslations("research");
 
 	return (
@@ -42,6 +43,7 @@ export function QueuesStrip({ chief, onManage }: QueuesStripProps) {
 							}
 							job={job}
 							onManage={() => onManage(queue.id)}
+							onFinish={() => onFinish(queue.id)}
 						/>
 					);
 				})}

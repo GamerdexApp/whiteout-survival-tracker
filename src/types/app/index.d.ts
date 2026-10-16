@@ -1,3 +1,11 @@
+import type {
+  ExpertsPlanState,
+  ExpertState,
+  LearningJobState,
+} from "./experts";
+import type { PetsPlanState, PetState } from "./pets";
+import type { TrainingJobState, TroopsPlanState, TroopsState } from "./troops";
+
 export type Theme = "light" | "dark" | "system";
 
 export type CoreEventId = "svs" | "showdown" | "king" | "hall";
@@ -75,7 +83,7 @@ export interface ResearchJob extends UpgradeJob {
 
 export interface UpgradeLogEntry {
   at: string;
-  category: "building" | "research";
+  category: "building" | "research" | "training" | "learning";
   item: string;
   from: string;
   to: string;
@@ -165,7 +173,12 @@ export interface Playthrough {
   inventory?: Record<string, number>;
   research?: Record<string, { level: number }>;
   researchPlan?: ResearchPlan;
-  queues?: { construction?: ConstructionJob[]; research?: ResearchJob[] };
+  queues?: {
+    construction?: ConstructionJob[];
+    research?: ResearchJob[];
+    training?: TrainingJobState[];
+    learning?: LearningJobState[];
+  };
   upgradeLog?: UpgradeLogEntry[];
   heroes?: Record<string, HeroState>;
   heroesPlan?: HeroesPlan;
@@ -175,6 +188,12 @@ export interface Playthrough {
   chiefGearPlan?: ChiefGearPlan;
   chiefCharms?: Record<string, { current?: string | null }[]>;
   chiefCharmsPlan?: ChiefCharmsPlan;
+  troops?: TroopsState;
+  troopsPlan?: TroopsPlanState;
+  experts?: Record<string, ExpertState>;
+  expertsPlan?: ExpertsPlanState;
+  pets?: Record<string, PetState>;
+  petsPlan?: PetsPlanState;
 }
 
 export interface AppData {
@@ -191,3 +210,7 @@ export interface ChiefValues {
   coreEventsShown: CoreEventId[];
   notes?: string;
 }
+
+export type * from "./troops";
+export type * from "./experts";
+export type * from "./pets";

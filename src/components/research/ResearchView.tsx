@@ -148,18 +148,22 @@ export function ResearchView({ chief }: { chief: Playthrough }) {
 				}
 			: null;
 
-	const finishManaged = () => {
-		if (!managedJob) return;
+	const finishQueue = (queue: ResearchQueueId) => {
+		const job = queueJob(chief, queue);
+		if (!job) return;
 		const before = chief;
-		if (!change((current) => finishResearch(current, managedJob, new Date().toISOString())))
-			return;
+		if (!change((current) => finishResearch(current, job, new Date().toISOString()))) return;
 		setManageQueue(null);
 		showToast({
 			variant: "success",
-			title: t("view.finished.title", { name: managedName }),
-			message: t("view.finished.message", { level: formatNumber(managedJob.to) }),
+			title: t("view.finished.title", { name: findResearch(job.nodeId)?.name ?? job.nodeId }),
+			message: t("view.finished.message", { level: formatNumber(job.to) }),
 			action: { label: t("view.undo"), onAction: () => change(() => before) },
 		});
+	};
+
+	const finishManaged = () => {
+		if (manageQueue !== null) finishQueue(manageQueue);
 	};
 
 	const cancelManaged = () => {
@@ -231,7 +235,7 @@ export function ResearchView({ chief }: { chief: Playthrough }) {
 				/>
 			</div>
 
-			<QueuesStrip chief={chief} onManage={setManageQueue} />
+			<QueuesStrip chief={chief} onManage={setManageQueue} onFinish={finishQueue} />
 
 			<Tabs
 				label={t("title")}
