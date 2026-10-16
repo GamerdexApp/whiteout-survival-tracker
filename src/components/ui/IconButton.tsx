@@ -12,7 +12,10 @@ export function IconButton({
 	type = "button",
 	...props
 }: IconButtonProps) {
-	const size = compact ? "size-8 lg:size-7" : "size-11 lg:size-9";
+	// A compact button keeps its look and gets a 44 px touch area on small screens.
+	const size = compact
+		? "relative size-8 lg:size-7 max-lg:z-[1] max-lg:before:absolute max-lg:before:-inset-2 max-lg:before:content-['']"
+		: "size-11 lg:size-9";
 
 	return (
 		<button
