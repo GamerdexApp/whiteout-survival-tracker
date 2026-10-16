@@ -4,10 +4,14 @@ import buildings from "./en/buildings.json";
 import chiefGear from "./en/chiefGear.json";
 import chiefs from "./en/chiefs.json";
 import common from "./en/common.json";
+import coreEvents from "./en/coreEvents.json";
+import eventExport from "./en/eventExport.json";
+import eventLog from "./en/eventLog.json";
 import experts from "./en/experts.json";
 import facilities from "./en/facilities.json";
 import heroes from "./en/heroes.json";
 import heroGear from "./en/heroGear.json";
+import history from "./en/history.json";
 import pets from "./en/pets.json";
 import queues from "./en/queues.json";
 import research from "./en/research.json";
@@ -42,6 +46,10 @@ const en = {
   alliance,
   tech,
   facilities,
+  coreEvents,
+  eventLog,
+  history,
+  eventExport,
 };
 
 export default en;

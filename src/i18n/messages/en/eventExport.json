@@ -1,0 +1,32 @@
+{
+    "title": "Export to Core Events",
+    "description": "Choose the event, then the days",
+    "events": {
+        "svs": "SvS",
+        "showdown": "Alliance Showdown",
+        "king": "King of Icefield",
+        "hall": "Hall of Chief"
+    },
+    "stepEvent": "1. Event",
+    "stepDay": "{number}. Event day {group}",
+    "stepDayPlain": "Event day",
+    "stepItems": "{number}. Items from this plan",
+    "noDay": "{event} has no scoring row for these items.",
+    "daysHint": "Only the days whose scoring rows count an item are listed. Hall of Chief lists stages instead of days. Each group of items gets its own day.",
+    "lineEach": "{points} each on {day}.",
+    "lineNotScored": "{event} has no scoring row for this.",
+    "notScored": "Not scored",
+    "points": "{points} points",
+    "addedTo": "Added to {event}",
+    "nothingScores": "Nothing in this plan scores in {event} on the chosen days.",
+    "summaryTitle": "Summary of the export",
+    "summaryHint": "What the same items would score in each event when every item is spent on a day that scores it. Only the selected event and days receive them. The Core Events page shows them as counts you can change.",
+    "selected": "Selected",
+    "cancel": "Cancel",
+    "export": "Export to {event}",
+    "toast": {
+        "title": "Exported to Core Events",
+        "message": "{points} points added to {event}.",
+        "undo": "Undo"
+    }
+}

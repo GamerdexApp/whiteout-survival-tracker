@@ -3,6 +3,7 @@ import type {
   AllianceState,
   AllianceTechNodeState,
 } from "./alliance";
+import type { CoreEventsImports, CoreEventState } from "./coreEvents";
 import type {
   ExpertsPlanState,
   ExpertState,
@@ -200,6 +201,8 @@ export interface Playthrough {
   pets?: Record<string, PetState>;
   petsPlan?: PetsPlanState;
   alliance?: AllianceState;
+  events?: Partial<Record<CoreEventId, CoreEventState>>;
+  coreEvents?: CoreEventsImports;
   allianceTech?: Record<string, AllianceTechNodeState>;
   allianceFacilities?: Record<string, AllianceFacilityState>;
 }
@@ -221,5 +224,6 @@ export interface ChiefValues {
 
 export type * from "./troops";
 export type * from "./alliance";
+export type * from "./coreEvents";
 export type * from "./experts";
 export type * from "./pets";

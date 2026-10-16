@@ -1,0 +1,109 @@
+{
+    "days": {
+        "day": "Day {number}",
+        "battle": "Battle",
+        "range": "Days {range}",
+        "stage": "Stage {number}"
+    },
+    "page": {
+        "title": "Core Events",
+        "subline": "{chief} · {details}"
+    },
+    "events": {
+        "svs": "SvS",
+        "showdown": "Alliance Showdown",
+        "king": "King of Icefield",
+        "hall": "Hall of Chief"
+    },
+    "tabs": {
+        "label": "Core events"
+    },
+    "empty": {
+        "title": "No events shown",
+        "description": "All four events are hidden for this chief. Turn them on in Edit chief.",
+        "action": "Edit chief"
+    },
+    "strip": {
+        "live": "Event live",
+        "dates": "{start} to {end}",
+        "noDates": "Dates are set in the Event log.",
+        "today": "Today is {day}",
+        "checklist": "Checklist",
+        "log": "Event log"
+    },
+    "bonus": {
+        "title": "{expert} {skill} level",
+        "level": "Level {level}",
+        "levelWithPercent": "Level {level} · {percent}%",
+        "none": "No level set, so no bonus is added.",
+        "readOnly": "Read only",
+        "openExperts": "Open Experts",
+        "svsHelp": "Adds 2% per level to the points of days 1 to 5, rounded per day, and extra tiers to the point thresholds. The Battle Phase gets no bonus. Read only here, the level is set on the Experts page.",
+        "showdownHelp": "Adds 5% per level to every action except the Escort and Raid truck actions. Read only here, the level is set on the Experts page.",
+        "noneTitle": "No expert bonus",
+        "kingNote": "No expert changes the points of King of Icefield.",
+        "hallNote": "No expert changes the points of Hall of Chief."
+    },
+    "daysSection": {
+        "title": "Days",
+        "stages": "Stages",
+        "totalPerDay": "Total points per day",
+        "totalPerStage": "Total points per stage",
+        "hallSeason": "The season is set on the account and is Season 1 until then.",
+        "showdownScope": "Personal points only. No alliance totals and no victory points."
+    },
+    "table": {
+        "title": "{day}: {name}",
+        "phasePreparation": "Preparation Phase",
+        "phaseBattle": "Battle Phase",
+        "action": "Action",
+        "pointsEach": "Points each",
+        "count": "Count",
+        "points": "Points",
+        "lower": "Lower count for {action}",
+        "raise": "Raise count for {action}",
+        "countLabel": "Count for {action}",
+        "fromPlans": "{amount} from plans",
+        "noDawnHymn": "No Dawn Hymn bonus",
+        "base": "Base {amount}",
+        "bonus": "Bonus {amount}",
+        "total": "Total {amount}"
+    },
+    "result": {
+        "totalTitle": "Total points, all days",
+        "totalTitleHall": "Total points, selected stage",
+        "baseBonus": "Base {base}, bonus {bonus}",
+        "battle": "Battle Phase",
+        "battleNoBonus": "No bonus on the Battle Phase",
+        "seasonSum": "Season stages added up: {amount}. Not a ranking.",
+        "selectedDayTotal": "{day}: {amount}",
+        "selectedDayBonus": "Bonus {percent}%"
+    },
+    "perDay": {
+        "title": "Points per day",
+        "titleHall": "Points per stage",
+        "bar": "Share of the largest day for {day}"
+    },
+    "thresholds": {
+        "title": "Point thresholds",
+        "estimate": "Estimate",
+        "help": "Milestones for {day}, compared with the day total.",
+        "reached": "Reached",
+        "needs": "Needs {amount} more",
+        "extraTier": "Extra tier {number}, from Valeria",
+        "extraTierUnknown": "Points and reward are not in the package",
+        "unknown": "Unknown",
+        "noneEvent": "The package has no point thresholds for this event.",
+        "noneDay": "The package has no point thresholds for this day."
+    },
+    "ranks": {
+        "title": "Rank thresholds",
+        "note": "These are player rankings. A rank has no points cutoff.",
+        "rank": "Rank",
+        "reward": "Reward",
+        "gems": "{amount} Gems",
+        "unknown": "Unknown",
+        "notConfirmed": "Not confirmed",
+        "noneShowdown": "The package has no personal ranking for Alliance Showdown."
+    }
+}

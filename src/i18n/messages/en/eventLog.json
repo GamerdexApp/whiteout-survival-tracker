@@ -1,0 +1,129 @@
+{
+    "title": "Event log",
+    "events": {
+        "svs": "SvS, State of Power",
+        "showdown": "Alliance Showdown",
+        "king": "King of Icefield",
+        "hall": "Hall of Chief"
+    },
+    "tabs": {
+        "label": "Event log views",
+        "current": "Current event",
+        "history": "History"
+    },
+    "dates": {
+        "title": "Event dates",
+        "start": "Start",
+        "end": "End",
+        "days": "{count, plural, one {{amount} day} other {{amount} days}}",
+        "endBeforeStart": "The end date is before the start date."
+    },
+    "results": {
+        "rank": "Rank",
+        "alliance": "Alliance",
+        "score": "Score",
+        "allianceShort": "Ally",
+        "scoreOf": "{day}, score",
+        "rankOf": "{day}, rank",
+        "allianceOf": "{day}, alliance rank",
+        "plan": "Plan {total}",
+        "notStarted": "Not started",
+        "opensLater": "Opens later",
+        "empty": "Empty",
+        "locked": "Locked",
+        "lock": "Lock",
+        "unlock": "Unlock",
+        "lockDay": "Lock {day}",
+        "unlockDay": "Unlock {day}"
+    },
+    "cards": {
+        "svsDays": "Preparation days 1 to 5",
+        "days": "Days",
+        "stages": "Stages",
+        "rankHint": "Rank is your state rank. Alliance is your alliance rank.",
+        "battleTitle": "Battle Phase",
+        "battleNote": "Battle score and rank are their own result. They are not added to Days 1 to 5."
+    },
+    "overall": {
+        "svsTitle": "Overall result, Days 1 to 5",
+        "title": "Overall result",
+        "rank": "Overall rank",
+        "alliance": "Overall alliance rank",
+        "svsTotal": "Total of locked days 1 to 5",
+        "daysTotal": "Total of locked days",
+        "stagesTotal": "Total of locked stages",
+        "hint": "Locking keeps a number from changing while you play on. Locked numbers can be unlocked."
+    },
+    "footer": {
+        "close": "Close",
+        "endEvent": "End event",
+        "readOnly": "History is read only"
+    },
+    "end": {
+        "title": "End {event} and save it to history?",
+        "dates": "{event}, {start} to {end}",
+        "noDates": "{event}, no dates entered",
+        "lockedTotal": "Total of locked days: {total}.",
+        "lockedTotalSvs": "Total of locked days 1 to 5: {total}.",
+        "noRanks": "Overall rank and alliance rank are empty.",
+        "allLocked": "Every day is locked.",
+        "unlocked": "{count, plural, one {{amount} day is not locked.} other {{amount} days are not locked.}} They are saved as entered, and days with no numbers stay empty.",
+        "unlockedList": "Not locked: {days}.",
+        "what": "What happens",
+        "saves": "Saves the dates, the daily scores and ranks, and the overall result to History, with the planned total of each day.",
+        "clearsCounts": "Clears the counts for every day, so every day of the plan starts at 0.",
+        "clearsPlans": "Clears the plans exported to this event and the checklist checks.",
+        "keeps": "Only this event is cleared. Your goals and plans on other pages stay.",
+        "cancel": "Cancel",
+        "confirm": "End event and start new",
+        "toastTitle": "Event ended",
+        "toastMessage": "{event} is saved to History. The event starts new with no dates.",
+        "undo": "Undo",
+        "lockedTotalStages": "Total of locked stages: {total}."
+    },
+    "history": {
+        "intro": "{event} events you ended, newest first. Ending an event saves its log here and cannot be edited later, only removed. <link>Open History for plan against actual and planned upgrades.</link>",
+        "empty": "No ended events yet. End an event to save its log here.",
+        "cardTitle": "{event}, {start} to {end}",
+        "cardNoDates": "{event}, no dates",
+        "ended": "Ended {date}",
+        "svsTotal": "Days 1 to 5",
+        "total": "Total score",
+        "overallRank": "Overall rank",
+        "allianceRank": "Alliance rank",
+        "notSet": "Not set",
+        "showDays": "Show days",
+        "hideDays": "Hide days",
+        "remove": "Remove from history",
+        "removedTitle": "Removed from history",
+        "removedMessage": "{event} was removed from History.",
+        "undo": "Undo",
+        "noValue": "-"
+    },
+    "checklist": {
+        "title": "Plan checklist",
+        "description": "{day}, what to do",
+        "dayChips": "Day",
+        "castleTitle": "Sign up for a Castle position for {day}",
+        "castleBody": "Castle positions give bonuses for the next day. Sign up before today ends so the bonus is on for {day}.",
+        "castleCheck": "Signed up for {day}",
+        "done": "{done} of {total} done",
+        "progress": "Checked actions",
+        "planLine": "Plan for the day: {points} points. Only actions with a count above 0 are listed. Counts come from the Core events page.",
+        "empty": "No action has a count for this day. Add counts on the Core events page.",
+        "resources": "Resources to use",
+        "resourcesHint": "Items the day spends. Check your stock before you start.",
+        "actions": "Actions",
+        "count": "x{count}",
+        "points": "{points} pts",
+        "clear": "Clear checks",
+        "close": "Close",
+        "dayTitle": "{day}: {name}"
+    },
+    "eventShort": {
+        "svs": "SvS",
+        "showdown": "Alliance Showdown",
+        "king": "King of Icefield",
+        "hall": "Hall of Chief"
+    }
+}

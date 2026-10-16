@@ -1,0 +1,102 @@
+{
+    "page": { "title": "History" },
+    "events": {
+        "svs": "SvS",
+        "showdown": "Alliance Showdown",
+        "king": "King of Icefield",
+        "hall": "Hall of Chief"
+    },
+    "title": {
+        "dated": "{event}, {start} to {end}",
+        "undated": "{event}"
+    },
+    "ended": "Ended {date}",
+    "tabs": { "label": "Filter by event", "all": "All events" },
+    "list": {
+        "intro": "Events you ended from the Event log, newest first. Scores are Days 1 to 5 for SvS, and the Battle Phase is kept apart. Open an event to see its plan against actual and its planned upgrades.",
+        "event": "Event",
+        "plan": "Plan",
+        "actual": "Actual",
+        "diff": "Diff",
+        "rank": "Rank",
+        "alliance": "Alliance",
+        "rankLine": "Rank {rank}, alliance {alliance}",
+        "open": "Open",
+        "openEvent": "Open {name}",
+        "none": "No ended events of this type yet.",
+        "diffWithPercent": "{amount} ({percent}%)"
+    },
+    "empty": {
+        "title": "No events yet",
+        "description": "Events you end from the Event log on Core Events are saved here with their plan and results.",
+        "action": "Open Core Events"
+    },
+    "notFound": {
+        "title": "Event not found",
+        "description": "This event is not in the history of the active chief. It may have been removed, or the event is hidden on Core Events.",
+        "action": "Back to History"
+    },
+    "unknown": "Not set",
+    "belowPlan": "Below plan",
+    "atOrAbovePlan": "At or above plan",
+    "breadcrumb": { "label": "Breadcrumb" },
+    "tiles": {
+        "plan": "Plan",
+        "actual": "Actual",
+        "difference": "Difference",
+        "overall": "Overall",
+        "alliance": "Alliance",
+        "days": "Days 1 to 5",
+        "rank": "Rank",
+        "rankDays": "Rank, Days 1 to 5",
+        "percent": "{percent}%"
+    },
+    "compare": {
+        "title": "Plan against actual",
+        "titleDays": "Plan against actual, Days 1 to 5",
+        "day": "Day",
+        "plan": "Plan",
+        "actual": "Actual",
+        "diff": "Diff",
+        "rank": "Rank",
+        "ally": "Ally",
+        "total": "Total",
+        "share": "{percent}% of plan",
+        "shareLine": "{percent}% of plan, rank {rank}, ally {ally}",
+        "barLabel": "{day}, actual as a share of plan"
+    },
+    "battle": {
+        "title": "Battle Phase",
+        "note": "Its own score and rank. Not added to the Days 1 to 5 total."
+    },
+    "upgrades": {
+        "title": "Planned upgrades",
+        "titleCount": "Planned upgrades, {count}",
+        "summary": "The upgrades in the plan of this event, grouped by type. {done} of {count} were done.",
+        "summaryUnchecked": "The upgrades in the plan of this event, grouped by type.",
+        "none": "No plan was exported to this event, so there are no planned upgrades to show.",
+        "groupTitle": "{name}, {count}",
+        "groupStats": "{done} of {count} done, power +{power}, Fire Crystals {fireCrystals}",
+        "groupStatsUnchecked": "Power +{power}, Fire Crystals {fireCrystals}",
+        "power": "+{power} power",
+        "plannedDay": "Planned {day}",
+        "done": "Done",
+        "notDone": "Not done",
+        "levelsFrom": "{from} to {to}",
+        "levelsTo": "to {to}",
+        "levelsResearchFrom": "Level {from} to {to}",
+        "levelsResearchTo": "to level {to}",
+        "costAmount": "{amount} {name}"
+    },
+    "pages": {
+        "buildings": "Buildings",
+        "research": "Research",
+        "chiefGear": "Chief Gear",
+        "chiefCharms": "Chief Charms",
+        "heroGear": "Hero Gear",
+        "heroes": "Heroes",
+        "pets": "Pets",
+        "experts": "Experts",
+        "troops": "Troops"
+    }
+}
