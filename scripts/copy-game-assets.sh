@@ -7,7 +7,7 @@ set -e
 
 PACKAGE_DIR="node_modules/whiteout-survival-data/images"
 TARGET_DIR="public/images"
-FOLDERS=(buildings facilities items research heroes hero-gear chief-gear chief-charm experts pets)
+FOLDERS=(alliance-tech buildings facilities items research heroes hero-gear chief-gear chief-charm experts pets)
 
 rm -rf "$TARGET_DIR"
 mkdir -p "$TARGET_DIR"

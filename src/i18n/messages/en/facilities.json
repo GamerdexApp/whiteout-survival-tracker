@@ -1,0 +1,86 @@
+{
+    "page": {
+        "title": "Facilities"
+    },
+    "view": {
+        "subline": "{chief} · {facilities} map facilities, castle, {strongholds} strongholds and {fortresses} fortresses"
+    },
+    "summary": {
+        "owned": "Facilities owned",
+        "ownedValue": "{owned} of {total}",
+        "strongholds": "Strongholds, reference",
+        "fortresses": "Fortresses, reference",
+        "castle": "Castle, reference"
+    },
+    "tabs": {
+        "label": "Facility views",
+        "facilities": "Facilities",
+        "fortresses": "Fortresses",
+        "map": "Map"
+    },
+    "show": {
+        "label": "Show",
+        "all": "All",
+        "owned": "Owned",
+        "notOwned": "Not owned"
+    },
+    "card": {
+        "owned": "{count} owned",
+        "level": "Level {level}",
+        "ownedSwitch": "Owned",
+        "switchLabel": "{facility} level {level} owned",
+        "booster": "Booster",
+        "injured": "Heavily injured",
+        "losses": "Losses",
+        "ownLimit": "Own limit {limit}. {spots} {spotWord} on the map.",
+        "spot": "spot",
+        "spots": "spots"
+    },
+    "empty": {
+        "title": "Nothing to show",
+        "description": "No facility level matches this filter.",
+        "reset": "Show all"
+    },
+    "fortress": {
+        "kind": {
+            "castle": "Castle",
+            "stronghold": "Stronghold",
+            "fortress": "Fortress"
+        },
+        "coordinates": "x {x}, y {y}",
+        "rewardsHeading": "Reward by phase",
+        "phase": "Phase {phase}",
+        "noRewards": "The castle has no rewards in the package.",
+        "referenceNote": "Reference only. The castle, strongholds and fortresses change every week, so nothing here is owned or tracked.",
+        "kindLabel": "Kind",
+        "allKinds": "All kinds",
+        "rewardLabel": "Reward",
+        "allRewards": "All rewards",
+        "shown": "{shown} of {total} structures shown",
+        "empty": "No structure matches the filters.",
+        "reset": "Reset filters",
+        "filters": "Filters",
+        "filtersTitle": "Filters",
+        "filtersDescription": "Filter the structures by kind and reward",
+        "done": "Show {count}"
+    },
+    "map": {
+        "highlight": "Highlight a facility",
+        "layers": "Layers",
+        "layerFacilities": "Facilities",
+        "layerStrongholds": "Strongholds",
+        "layerFortresses": "Fortresses",
+        "spotsHeading": "Facility spots, {count} in all",
+        "spotLegend": "{name} ({count})",
+        "codeHint": "The digit after the code is the level, for example Co1 is Construction level 1. The highlighted facility is filled.",
+        "structures": "Structures",
+        "castleStrongholdLegend": "Castle (1) and strongholds S1 to S4 ({count})",
+        "fortressLegend": "Fortress 1 to {count}",
+        "selected": "Selected on map",
+        "selectedNone": "Select a castle, stronghold or fortress on the map.",
+        "mapLabel": "Alliance map",
+        "note": "Wireframe of the alliance map. Positions use the package x and y on a {size} by {size} grid, one grid square is {step}. A spot is a place where a facility can appear, so owned facilities are not marked. There is no terrain art in the package.",
+        "spotLabel": "{name} level {level}, x {x}, y {y}",
+        "structureLabel": "{name}, x {x}, y {y}"
+    }
+}

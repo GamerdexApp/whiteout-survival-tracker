@@ -1,4 +1,9 @@
 import type {
+  AllianceFacilityState,
+  AllianceState,
+  AllianceTechNodeState,
+} from "./alliance";
+import type {
   ExpertsPlanState,
   ExpertState,
   LearningJobState,
@@ -194,6 +199,9 @@ export interface Playthrough {
   expertsPlan?: ExpertsPlanState;
   pets?: Record<string, PetState>;
   petsPlan?: PetsPlanState;
+  alliance?: AllianceState;
+  allianceTech?: Record<string, AllianceTechNodeState>;
+  allianceFacilities?: Record<string, AllianceFacilityState>;
 }
 
 export interface AppData {
@@ -212,5 +220,6 @@ export interface ChiefValues {
 }
 
 export type * from "./troops";
+export type * from "./alliance";
 export type * from "./experts";
 export type * from "./pets";

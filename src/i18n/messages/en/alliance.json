@@ -1,0 +1,50 @@
+{
+    "page": {
+        "title": "Alliance"
+    },
+    "view": {
+        "subline": "{chief} · {details} · banner level {level}"
+    },
+    "banner": {
+        "title": "Alliance banner",
+        "currentLevel": "Current level",
+        "levelLabel": "Banner level",
+        "maxHint": "Whole levels from 0 to {max}.",
+        "rangeChip": "{range}",
+        "costHeading": "Cost per level in {range}",
+        "noTimeOrPower": "Banners have no build time or power in the package, so none is shown.",
+        "noCost": "No cost",
+        "none": "None",
+        "lower": "Lower banner level",
+        "raise": "Raise banner level"
+    },
+    "structures": {
+        "title": "Alliance structures",
+        "tech": {
+            "title": "Tech",
+            "description": "{count} nodes in Growth, Territory and Battle",
+            "status": "{maxed} maxed, {progress} in progress, {locked} locked"
+        },
+        "facilities": {
+            "title": "Facilities",
+            "description": "{count} map facilities",
+            "owned": "{owned} owned"
+        },
+        "fortresses": {
+            "title": "Fortresses",
+            "description": "Castle, {strongholds} strongholds, {fortresses} fortresses",
+            "reference": "Reference only"
+        }
+    },
+    "table": {
+        "title": "Banner cost by level range",
+        "note": "{count} ranges, every level in a range costs the same",
+        "range": "Range",
+        "state": "State",
+        "built": "Built",
+        "current": "Current",
+        "notBuilt": "Not built",
+        "none": "None",
+        "noCost": "No cost"
+    }
+}

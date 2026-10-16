@@ -1,0 +1,98 @@
+{
+    "page": {
+        "title": "Tech"
+    },
+    "view": {
+        "subline": "{chief} · {count} alliance tech nodes in Growth, Territory and Battle"
+    },
+    "summary": {
+        "maxed": "Maxed",
+        "inProgress": "In progress",
+        "notStarted": "Not started",
+        "locked": "Locked"
+    },
+    "status": {
+        "maxed": "Maxed",
+        "inProgress": "In progress",
+        "notStarted": "Not started",
+        "locked": "Locked"
+    },
+    "tabs": {
+        "label": "Tech categories"
+    },
+    "categories": {
+        "Growth": "Growth",
+        "Territory": "Territory",
+        "Battle": "Battle"
+    },
+    "filters": {
+        "search": "Search",
+        "searchLabel": "Search tech nodes",
+        "searchPlaceholder": "Node name",
+        "tier": "Tier",
+        "allTiers": "All tiers",
+        "tierOption": "Tier {tier}",
+        "status": "Status",
+        "allStatuses": "All",
+        "button": "Search and filters",
+        "title": "Search and filters",
+        "description": "Find tech nodes by name, tier and status",
+        "reset": "Reset filters",
+        "done": "Show {count}",
+        "shown": "{shown} of {total} nodes shown"
+    },
+    "table": {
+        "node": "Node",
+        "level": "Level",
+        "bonus": "Bonus",
+        "cost": "Next level cost",
+        "time": "Time",
+        "needs": "Needs"
+    },
+    "node": {
+        "tierDescription": "Tier {tier} · {description}",
+        "levelLabel": "{name} level",
+        "levelOf": "{level} / {max}",
+        "open": "Open {name}",
+        "bonusOf": "{now} of {max}",
+        "bonusNone": "None yet, max {max}",
+        "noBonus": "No bonus",
+        "maxed": "Maxed",
+        "noTime": "No time",
+        "readyToUpgrade": "Ready to upgrade",
+        "nothingNeeded": "Nothing needed",
+        "needsPart": "Needs {name} level {level}",
+        "costLine": "{name} {amount}",
+        "lockedHint": "Locked until {names}",
+        "requirementPart": "{name} level {level}"
+    },
+    "flyout": {
+        "title": "{name}",
+        "subtitle": "{category}, tier {tier}. {description}",
+        "close": "Close",
+        "level": "Level",
+        "bonusNow": "Bonus now",
+        "needsFor": "Needs for level {level}",
+        "needsNothing": "Nothing needed.",
+        "needsLine": "Needs level {need}, you have level {have}",
+        "met": "Met",
+        "notMet": "Not met",
+        "requiredBy": "Required by",
+        "requiredByNone": "No other node needs this one.",
+        "requiredByLine": "{category}, tier {tier}, from level {from} needs {name} level {need}",
+        "allLevels": "All levels",
+        "levelRow": "Level {level}",
+        "done": "Done",
+        "next": "Next",
+        "later": "Later",
+        "remaining": "Remaining to max",
+        "derived": "Derived",
+        "remainingNone": "Nothing left. This node is maxed.",
+        "remainingLine": "{cost}",
+        "remainingTime": "{time}"
+    },
+    "empty": {
+        "title": "No nodes match",
+        "description": "Change the search or the filters to see more nodes."
+    }
+}
