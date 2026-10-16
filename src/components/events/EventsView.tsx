@@ -200,7 +200,7 @@ export function EventsView({ chief }: { chief: Playthrough }) {
 					activeId={tab}
 					onChange={setTab}
 				>
-					<div className="flex gap-3 lg:absolute lg:top-0.5 lg:right-0">
+					<div className="flex gap-3 lg:absolute lg:-top-2 lg:right-0">
 						<Button
 							className="flex-1 lg:flex-none"
 							onClick={() => setResult({ kind: "new" })}
