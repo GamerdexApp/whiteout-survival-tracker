@@ -1,6 +1,5 @@
 import { eventBuff } from "whiteout-survival-data";
 import { useTranslations } from "next-intl";
-import { formatNumber } from "@/lib/format";
 import { Card } from "@/comps/ui/Card";
 import { SectionLabel } from "@/comps/ui/SectionLabel";
 
@@ -17,12 +16,7 @@ export function EventBuffRules() {
 
 	return (
 		<Card className="flex flex-col gap-3 p-4">
-			<div className="flex flex-wrap items-baseline justify-between gap-2">
-				<h2 className="text-base font-semibold">{t("title")}</h2>
-				<span className="text-muted font-mono text-xs">
-					{t("rows", { count: formatNumber(events.length) })}
-				</span>
-			</div>
+			<h2 className="text-base font-semibold">{t("title")}</h2>
 			<p className="text-muted">{t("intro")}</p>
 			<div className="overflow-x-auto">
 				<table className="w-full min-w-[32rem] text-left">
