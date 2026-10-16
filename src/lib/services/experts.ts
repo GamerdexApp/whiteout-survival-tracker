@@ -24,12 +24,18 @@ import {
 import { findItem } from "@/data/game/items";
 import { ownedCount, speedupStock, withOwnedCount } from "./inventory";
 import type { StockCheck } from "./planStock";
+import { expertUnlockDay, isExpertUnlockedByAge } from "./unlocks";
 
 export const SKILL_COUNT = 4;
 
 export interface ExpertView {
   expert: Expert;
+  /** True when the chief recruited the expert and the server age allows it. Only these count. */
   recruited: boolean;
+  /** True when the server age or an override keeps the expert locked. The saved data stays. */
+  locked: boolean;
+  /** The server day the expert needs while it is locked. */
+  lockDay: number | null;
   affinity: number;
   affinityAvailable: number;
   advanced: boolean;
@@ -60,9 +66,12 @@ const sigilCountOf = (chief: Playthrough, expertId: string) => {
 export const buildExpertViews = (chief: Playthrough): ExpertView[] =>
   allExperts.map((expert) => {
     const saved: ExpertState = chief.experts?.[expert.id] ?? {};
+    const locked = !isExpertUnlockedByAge(chief, expert);
     return {
       expert,
-      recruited: saved.recruited === true,
+      recruited: !locked && saved.recruited === true,
+      locked,
+      lockDay: locked ? expertUnlockDay(expert) : null,
       affinity: clamp(wholeOr(saved.affinity, 1), 1, MAX_AFFINITY),
       affinityAvailable: Math.max(0, wholeOr(saved.affinityAvailable, 0)),
       advanced: saved.advanced === true,
@@ -74,7 +83,7 @@ export const buildExpertViews = (chief: Playthrough): ExpertView[] =>
       ),
       sigilItemId: sigilItemIdOf(expert.id),
       sigils: sigilCountOf(chief, expert.id),
-      goal: chief.expertsPlan?.goals[expert.id],
+      goal: locked ? undefined : chief.expertsPlan?.goals[expert.id],
     };
   });
 
@@ -97,7 +106,7 @@ export const applyExpertChange = (
   const view = buildExpertViews(chief).find(
     (candidate) => candidate.expert.id === change.expertId,
   );
-  if (!view) return chief;
+  if (!view || view.locked) return chief;
   if (change.kind === "sigils") {
     return view.sigilItemId
       ? withOwnedCount(chief, view.sigilItemId, change.count)
@@ -319,6 +328,8 @@ export const expertPowerOf = (view: ExpertView): ExpertPower => ({
 export interface ExpertsSummary {
   recruited: number;
   total: number;
+  /** Experts that the server age keeps locked. */
+  lockedByAge: number;
   powerNow: number;
   powerAtMax: number;
   highest: { name: string; affinity: number } | null;
@@ -333,6 +344,7 @@ export const summarizeExperts = (views: ExpertView[]): ExpertsSummary => {
   return {
     recruited: recruited.length,
     total: views.length,
+    lockedByAge: views.filter((view) => view.locked).length,
     powerNow: recruited.reduce((sum, view) => sum + expertPowerOf(view).now, 0),
     powerAtMax: views.reduce((sum, view) => sum + expertPowerOf(view).max, 0),
     highest: highest
@@ -579,7 +591,9 @@ export const runExpertsPlan = (
   chief: Playthrough,
   goals: Goals,
 ): ExpertsPlan => {
-  const views = buildExpertViews(chief).filter((view) => goals[view.expert.id]);
+  const views = buildExpertViews(chief).filter(
+    (view) => view.recruited && goals[view.expert.id],
+  );
   const total = calculateExperts(
     views.map((view) => calculatorGoalOf(view, goals[view.expert.id])),
   );

@@ -3,7 +3,7 @@
 import { useTranslations } from "next-intl";
 import { useId, useState } from "react";
 import type { FormEvent } from "react";
-import type { ChiefValues, CoreEventId, Playthrough } from "@/types/app";
+import type { ChiefValues, CoreEventId, Playthrough, UnlockOverrides } from "@/types/app";
 import { formatNumber } from "@/lib/format";
 import { toChiefValues } from "@/service/chiefs";
 import {
@@ -22,6 +22,7 @@ import { InfoPopover } from "@/comps/ui/InfoPopover";
 import { Input } from "@/comps/ui/Input";
 import { Select } from "@/comps/ui/Select";
 import { Textarea } from "@/comps/ui/Textarea";
+import { UnlockSettings } from "./UnlockSettings";
 
 interface ChiefDialogProps {
 	open: boolean;
@@ -53,6 +54,7 @@ export function ChiefDialog({ open, chief, onClose, onSubmit }: ChiefDialogProps
 		<Dialog
 			open={open}
 			onClose={onClose}
+			variant="wide"
 			title={isEditing ? t("editTitle") : t("newTitle")}
 			description={isEditing ? undefined : t("newDescription")}
 			footer={
@@ -89,6 +91,9 @@ function ChiefForm({
 	);
 	const [shownEvents, setShownEvents] = useState<CoreEventId[]>(
 		initial?.coreEventsShown ?? allCoreEventIds
+	);
+	const [unlockOverrides, setUnlockOverrides] = useState<UnlockOverrides>(
+		initial?.unlockOverrides ?? {}
 	);
 	const [notes, setNotes] = useState(initial?.notes ?? "");
 	const [submitted, setSubmitted] = useState(false);
@@ -130,12 +135,18 @@ function ChiefForm({
 			serverStartDate: serverStartDate || undefined,
 			heroGenerationUnlocked: generation,
 			coreEventsShown: shownEvents,
+			unlockOverrides: Object.keys(unlockOverrides).length > 0 ? unlockOverrides : undefined,
 			notes: notes.trim() || undefined,
 		});
 	};
 
 	return (
-		<form id={formId} onSubmit={handleSubmit} noValidate className="flex flex-col gap-4">
+		<form
+			id={formId}
+			onSubmit={handleSubmit}
+			noValidate
+			className="flex flex-col gap-4 lg:grid lg:grid-cols-2 lg:gap-x-6"
+		>
 			<Field label={t("name")} error={visibleErrors.name}>
 				<Input
 					data-autofocus
@@ -163,12 +174,14 @@ function ChiefForm({
 				optional
 				error={visibleErrors.serverStartDate}
 				labelAction={
-					<InfoPopover label={t("serverStartDate.info.label")}>
-						<p>{t("serverStartDate.info.screen")}</p>
-						<p>{t("serverStartDate.info.date")}</p>
-						<p>{t("serverStartDate.info.missing")}</p>
-						<p>{t("serverStartDate.info.tolerance")}</p>
-					</InfoPopover>
+					<span className="-my-2 inline-flex">
+						<InfoPopover label={t("serverStartDate.info.label")}>
+							<p>{t("serverStartDate.info.screen")}</p>
+							<p>{t("serverStartDate.info.date")}</p>
+							<p>{t("serverStartDate.info.missing")}</p>
+							<p>{t("serverStartDate.info.tolerance")}</p>
+						</InfoPopover>
+					</span>
 				}
 			>
 				<Input
@@ -178,21 +191,30 @@ function ChiefForm({
 					onChange={(event) => setServerStartDate(event.target.value)}
 				/>
 			</Field>
-			<Field label={t("generation.label")} hint={t("generation.hint")}>
-				<Select
-					value={generation}
-					onChange={(event) => setGeneration(Number(event.target.value))}
-				>
-					{generations.map((value) => (
-						<option key={value} value={value}>
-							{value === 0
-								? t("generation.preLegendary")
-								: t("generation.numbered", { generation: formatNumber(value) })}
-						</option>
-					))}
-				</Select>
-			</Field>
-			<fieldset className="flex flex-col gap-1.5">
+			<UnlockSettings
+				leading={
+					<Field label={t("generation.label")} hint={t("generation.hint")}>
+						<Select
+							value={generation}
+							onChange={(event) => setGeneration(Number(event.target.value))}
+						>
+							{generations.map((value) => (
+								<option key={value} value={value}>
+									{value === 0
+										? t("generation.preLegendary")
+										: t("generation.numbered", {
+												generation: formatNumber(value),
+											})}
+								</option>
+							))}
+						</Select>
+					</Field>
+				}
+				serverStartDate={serverStartDate}
+				overrides={unlockOverrides}
+				onChange={setUnlockOverrides}
+			/>
+			<fieldset className="flex flex-col gap-1.5 lg:col-span-2">
 				<legend className="flex w-full items-center gap-2 font-medium">
 					{t("events.legend")}
 					<span className="text-muted font-mono text-xs font-normal">
@@ -214,13 +236,15 @@ function ChiefForm({
 				</div>
 				<p className="text-muted text-xs">{t("events.hint")}</p>
 			</fieldset>
-			<Field label={t("notes")} optional>
-				<Textarea
-					value={notes}
-					maxLength={CHIEF_NOTES_MAX_LENGTH}
-					onChange={(event) => setNotes(event.target.value)}
-				/>
-			</Field>
+			<div className="lg:col-span-2">
+				<Field label={t("notes")} optional>
+					<Textarea
+						value={notes}
+						maxLength={CHIEF_NOTES_MAX_LENGTH}
+						onChange={(event) => setNotes(event.target.value)}
+					/>
+				</Field>
+			</div>
 		</form>
 	);
 }

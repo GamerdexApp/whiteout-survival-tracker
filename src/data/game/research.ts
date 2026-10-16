@@ -6,6 +6,7 @@ import type {
   ResearchNode,
   ResearchQueue,
 } from "whiteout-survival-data";
+import { unlockDayOfKey } from "./serverTimeline";
 
 export const allResearch: ResearchNode[] = research().get();
 
@@ -30,9 +31,8 @@ export interface ResearchTab {
   unlockDays: number | null;
 }
 
-// Estimates. The package has no unlock age for these tabs, so one constant sets each.
-export const WAR_ACADEMY_UNLOCK_DAYS = 150;
-export const T12_UNLOCK_DAYS = 600;
+export const WAR_ACADEMY_UNLOCK_DAYS = unlockDayOfKey("war-academy");
+export const T12_UNLOCK_DAYS = unlockDayOfKey("t12-research");
 
 export const tabName = (tab: ResearchTab) =>
   translator("research")(`tabs.${tab.id}`);

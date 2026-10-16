@@ -18,6 +18,7 @@ import {
 	countActiveFilters,
 	defaultBuildingFilters,
 	filterViews,
+	lockedFcHints,
 	summarize,
 	withBuilt,
 	withLevel,
@@ -87,6 +88,7 @@ export function BuildingsTab({ chief }: { chief: Playthrough }) {
 	const now = useNow();
 
 	const views = useMemo(() => buildViews(chief), [chief]);
+	const fcHints = useMemo(() => lockedFcHints(chief), [chief]);
 	const summary = useMemo(() => summarize(views), [views]);
 	const { pinned, rest, shown } = filterViews(views, filters);
 	const levelsView = views.find((view) => view.building.id === levelsBuildingId) ?? null;
@@ -342,6 +344,7 @@ export function BuildingsTab({ chief }: { chief: Playthrough }) {
 									<BuildingEntry
 										key={view.building.id}
 										view={view}
+										fcHints={fcHints}
 										onLevelChange={(id, level) =>
 											change((current) => withLevel(current, id, level))
 										}
@@ -428,7 +431,11 @@ export function BuildingsTab({ chief }: { chief: Playthrough }) {
 				onClose={() => setSheltersOpen(false)}
 				onChange={(levels) => change((current) => withShelterLevels(current, levels))}
 			/>
-			<LevelsFlyout view={levelsView} onClose={() => setLevelsBuildingId(null)} />
+			<LevelsFlyout
+				view={levelsView}
+				fcHints={fcHints}
+				onClose={() => setLevelsBuildingId(null)}
+			/>
 			<PlanFlyout
 				open={planOpen}
 				chief={chief}

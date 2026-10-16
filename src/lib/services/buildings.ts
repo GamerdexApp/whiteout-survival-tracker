@@ -16,6 +16,11 @@ import {
   shelter,
   SHELTER_ID,
 } from "@/data/game/buildings";
+import {
+  fcLabelUnlockDay,
+  isBuildingLevelUnlocked,
+  unlockText,
+} from "./unlocks";
 
 export const notBuiltLabel = () => translator("buildings")("notBuilt");
 
@@ -57,6 +62,36 @@ export const requirementText = (requirement: {
   return t("requirement.level", values);
 };
 
+/** The unlock text of a level the server age does not reach yet. Null for an open level. */
+export const levelAgeLock = (
+  chief: Playthrough,
+  label: string | null | undefined,
+) => {
+  const day = label ? fcLabelUnlockDay(label) : null;
+  return day === null || isBuildingLevelUnlocked(chief, label as string)
+    ? null
+    : unlockText(chief, day);
+};
+
+/** The unlock text of each Fire Crystal level label that is locked, by level label. */
+export type AgeHints = Map<string, string>;
+
+export const lockedFcHints = (chief: Playthrough): AgeHints =>
+  new Map(
+    furnace.levels.flatMap((level) => {
+      const text = levelAgeLock(chief, level.label);
+      return text === null ? [] : [[level.label, text] as const];
+    }),
+  );
+
+export const ageHintOf = (hints: AgeHints, label: string) => hints.get(label);
+
+/** The highest level of the building that the server age has unlocked. */
+export const highestUnlockedLabel = (building: Building, chief: Playthrough) =>
+  building.levels.findLast((level) =>
+    isBuildingLevelUnlocked(chief, level.label),
+  )?.label ?? null;
+
 export interface BuildingView {
   building: Building;
   level: string | null;
@@ -69,6 +104,9 @@ export interface BuildingView {
   lockedBy: string | null;
   blockedBy: string[];
   reachable: string | null;
+  levelAgeLock: string | null;
+  goalAgeLock: string | null;
+  nextAgeLock: string | null;
   next: BuildingLevel | undefined;
   needs: string[];
   held: string[];
@@ -157,7 +195,7 @@ export const unmetRequirements = (
 
 /**
  * The highest level the chief can reach from `fromOrder` now. Every level on the way must have
- * its requirements met, so one blocked level stops the climb.
+ * its requirements met and be unlocked by the server age, so one blocked level stops the climb.
  */
 export const reachableLevel = (
   building: Building,
@@ -170,6 +208,7 @@ export const reachableLevel = (
     (item) => item.order > fromOrder,
   )) {
     if (
+      !isBuildingLevelUnlocked(chief, level.label) ||
       unmetRequirements(building, level, chief, trackedBuildingsOnly).length > 0
     )
       break;
@@ -202,6 +241,9 @@ export const buildView = (
       lockedBy: unmet.length > 0 ? unmet.map(requirementText).join(", ") : null,
       blockedBy: [],
       reachable: built ? only.label : null,
+      levelAgeLock: null,
+      goalAgeLock: null,
+      nextAgeLock: null,
       next: built ? undefined : only,
       needs: (only.prerequisites ?? []).map(requirementText),
       held: built ? [only.label] : [],
@@ -238,6 +280,9 @@ export const buildView = (
     lockedBy: order === 0 && blockedBy.length > 0 ? blockedBy.join(", ") : null,
     blockedBy,
     reachable: reachableLevel(building, order, chief),
+    levelAgeLock: levelAgeLock(chief, level),
+    goalAgeLock: levelAgeLock(chief, goal),
+    nextAgeLock: levelAgeLock(chief, next?.label),
     next,
     needs: (next?.prerequisites ?? [])
       .filter((item) => item.building !== building.name)

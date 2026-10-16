@@ -1,6 +1,10 @@
 {
-    "page": { "title": "Pets" },
-    "view": { "subline": "{chief} · {details} · {unlocked} of {total} pets unlocked" },
+    "page": {
+        "title": "Pets"
+    },
+    "view": {
+        "subline": "{chief} · {details} · {unlocked} of {total} pets unlocked"
+    },
     "rarities": {
         "Common": "Common",
         "Uncommon": "Uncommon",
@@ -17,11 +21,12 @@
         "unlockedValue": "{count} of {total}",
         "unlockedNote": "Set by you",
         "power": "Total power",
-        "powerNote": "Sum of unlocked pets",
-        "powerUnknown": "Sum of unlocked pets, {amount} unknown",
+        "powerNote": "Level, advancement and refining power of unlocked pets",
+        "powerUnknown": "Level, advancement and refining power of unlocked pets, {amount} unknown",
         "next": "Next to unlock",
         "allUnlocked": "All unlocked",
-        "allUnlockedNote": "Every pet is unlocked"
+        "allUnlockedNote": "Every pet is unlocked",
+        "lockedNote": "{count} locked until a later server day"
     },
     "totals": {
         "attackDefense": "Troop Attack and Defense",
@@ -85,7 +90,8 @@
         "attack": "Atk +{value}%",
         "defense": "Def +{value}%",
         "power": "Power {value}",
-        "powerUnknown": "Power Unknown"
+        "powerUnknown": "Power Unknown",
+        "powerParts": "Level and advancement {base}, refining {refining}"
     },
     "filters": {
         "button": "Filters",

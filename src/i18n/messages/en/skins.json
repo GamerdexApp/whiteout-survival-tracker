@@ -1,0 +1,82 @@
+{
+    "page": {
+        "title": "Skins"
+    },
+    "view": {
+        "subline": "{chief} · {details} · {owned} of {total} skins owned"
+    },
+    "wiki": {
+        "button": "Wiki",
+        "unavailable": "The Wiki is not built yet."
+    },
+    "owned": {
+        "label": "Owned",
+        "value": "{owned} of {total}",
+        "progress": "Skins owned",
+        "withBonus": "{withBonus} of {total} skins have a bonus"
+    },
+    "totals": {
+        "title": "Bonuses from owned skins",
+        "estimate": "Estimate",
+        "percent": "+{amount}%",
+        "flat": "+{amount}",
+        "none": "No owned skin has a bonus yet.",
+        "note": "{count, plural, one {Sum of the bonus of {amount} owned skin} other {Sum of the bonus of {amount} owned skins}}, per stat, calculated by the app. It assumes every owned skin applies at once. Troop Attack and Troops Attack are added together."
+    },
+    "expiry": {
+        "title": "Expiry is not tracked.",
+        "text": "The duration (permanent, 30 day, per rank) is only in the description text. A timed skin stays owned until you clear it."
+    },
+    "search": {
+        "label": "Search skins",
+        "placeholder": "Search skins by name or source"
+    },
+    "filters": {
+        "button": "Filters",
+        "title": "Filters",
+        "description": "Choose what the Skins list shows",
+        "reset": "Reset",
+        "showButton": "{count, plural, one {Show {amount} skin} other {Show {amount} skins}}",
+        "skinType": "Skin type",
+        "typeAll": "All {amount}",
+        "typeOption": "{type} {amount}",
+        "owned": "Owned",
+        "bonus": "Bonus",
+        "order": "Order",
+        "notSaved": "Filters are not saved.",
+        "ownedOptions": {
+            "all": "All skins",
+            "owned": "Owned",
+            "notOwned": "Not owned"
+        },
+        "bonusOptions": {
+            "any": "Any",
+            "has": "Has a bonus",
+            "none": "No bonus"
+        },
+        "orderOptions": {
+            "game": "Game order",
+            "name": "Name, A to Z",
+            "owned": "Owned first"
+        }
+    },
+    "status": {
+        "showing": "Showing {shown} of {total} skins.",
+        "showingFiltered": "Showing {shown} of {total} skins. Filters: {filters}.",
+        "showMore": "{count, plural, one {Show {amount} more skin} other {Show {amount} more skins}}"
+    },
+    "empty": {
+        "title": "No skins match",
+        "description": "Change the search or the filters to see skins.",
+        "reset": "Reset filters"
+    },
+    "card": {
+        "bonus": "Bonus",
+        "source": "Source",
+        "unknown": "Unknown",
+        "bonusValue": "{value} {stat}",
+        "owned": "Owned",
+        "ownedLabel": "Owned: {name}, {type}",
+        "domainWarning": "Domain bonus text is in the description and is not counted."
+    }
+}

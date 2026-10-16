@@ -9,6 +9,7 @@ import {
 } from "@/data/game/buildings";
 import {
   knownLabel,
+  levelAgeLock,
   levelOrder,
   reachableLevel,
   requirementText,
@@ -92,9 +93,11 @@ export const rankLabels = furnace.levels.map((level) => level.label);
 /**
  * Raises each building to its highest level at or below `label` in the shared sequence. A building
  * that starts later (War Academy starts at FC 1) stays where it is when the label is before its
- * first level. A building that is already higher is never lowered.
+ * first level. A building that is already higher is never lowered. A level the server age has not
+ * unlocked is never chosen.
  */
 export const raiseAllTo = (
+  chief: Playthrough,
   draft: MassSetDraft,
   label: string,
 ): MassSetDraft => {
@@ -103,7 +106,11 @@ export const raiseAllTo = (
 
   massSetBuildings.forEach((building) => {
     const target = building.levels
-      .filter((level) => levelOrder(furnace, level.label) <= rank)
+      .filter(
+        (level) =>
+          levelOrder(furnace, level.label) <= rank &&
+          levelAgeLock(chief, level.label) === null,
+      )
       .reduce<number>((highest, level) => Math.max(highest, level.order), 0);
     const currentOrder = levelOrder(building, levels[building.id]);
     if (target > currentOrder) {

@@ -6,7 +6,10 @@
         "tabsLabel": "Chief gear",
         "gearSubline": "{name} · six slots, 150 upgrade rows",
         "charmsSubline": "{name} · 6 gear pieces, 3 charms each, 75 upgrade rows",
-        "tabs": { "gear": "Chief Gear", "charms": "Chief Charms" }
+        "tabs": {
+            "gear": "Chief Gear",
+            "charms": "Chief Charms"
+        }
     },
     "shared": {
         "plan": "Plan",
@@ -90,7 +93,9 @@
         "stats": "Stat {stat} · Power {power}",
         "statPercent": "{percent}%",
         "capacityUnknown": " · Capacity Unknown",
-        "capacity": " · Capacity {capacity}"
+        "capacity": " · Capacity {capacity}",
+        "lockedCurrent": "Saved level {name} is locked by server age and not counted. {requirement}.",
+        "lockedGoal": "Saved goal {name} is locked by server age and not planned. {requirement}."
     },
     "summary": {
         "title": "Left to reach all goals",
@@ -161,6 +166,12 @@
             "amount": "{quantity} {name}",
             "perWeek": "{limit} per week",
             "noLimit": "No weekly limit"
-        }
+        },
+        "lockedCurrent": "Saved level {name} is locked by server age. {requirement}."
+    },
+    "lock": {
+        "title": "Locked by server age",
+        "stop": "{name} (locked, day {day})",
+        "group": "From {name}: {requirement}."
     }
 }

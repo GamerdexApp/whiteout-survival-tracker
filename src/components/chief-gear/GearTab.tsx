@@ -23,6 +23,7 @@ import { GearTierBadge } from "./GearTierBadge";
 import { LadderPlanFlyout } from "./LadderPlanFlyout";
 import { LadderRow } from "./LadderRow";
 import { LadderSummaryCard } from "./LadderSummary";
+import { LockNotice } from "./LockNotice";
 import { SetBonusCard } from "./SetBonusCard";
 
 export function GearTab({ chief }: { chief: Playthrough }) {
@@ -69,6 +70,7 @@ export function GearTab({ chief }: { chief: Playthrough }) {
 				/>
 			</div>
 			<p className="text-muted">{t("gear.goalsHint")}</p>
+			<LockNotice chief={chief} kind="gear" />
 			<SetBonusCard bonuses={setBonusesOf(chief)} />
 
 			<Card>
@@ -78,6 +80,7 @@ export function GearTab({ chief }: { chief: Playthrough }) {
 						const row = rowOf("gear", item.current);
 						return (
 							<LadderRow
+								chief={chief}
 								key={item.key}
 								item={item}
 								title={item.label}

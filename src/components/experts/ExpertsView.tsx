@@ -213,6 +213,8 @@ export function ExpertsView({ chief }: { chief: Playthrough }) {
 					shown: formatNumber(visible.length),
 					total: formatNumber(views.length),
 				})}
+				{summary.lockedByAge > 0 &&
+					` ${t("toolbar.lockedNote", { count: formatNumber(summary.lockedByAge) })}`}
 			</p>
 
 			<ExpertLearning
@@ -234,7 +236,12 @@ export function ExpertsView({ chief }: { chief: Playthrough }) {
 			) : (
 				<ul className="lg:columns-2 lg:gap-3">
 					{visible.map((view) => (
-						<ExpertCard key={view.expert.id} view={view} onChange={applyChange} />
+						<ExpertCard
+							key={view.expert.id}
+							view={view}
+							chief={chief}
+							onChange={applyChange}
+						/>
 					))}
 				</ul>
 			)}

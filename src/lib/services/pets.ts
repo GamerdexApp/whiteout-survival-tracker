@@ -24,12 +24,14 @@ import {
   findPet,
   PET_ADVANCEMENT_INTERVAL,
   PET_REFINEMENT_STATS,
+  petRefiningPower,
   PLAN_ITEM_IDS,
 } from "@/data/game/pets";
 import { levelOrder } from "./buildings";
 import { ownedCount } from "./inventory";
 import type { StockCheck } from "./planStock";
 import { serverAgeDays } from "./research";
+import { isPetUnlockedByAge, petUnlockDay } from "./unlocks";
 
 export const REFINE_STEP = 0.1;
 const REFINE_DECIMALS = 2;
@@ -59,7 +61,12 @@ const knownPower = (value: number | undefined) =>
 
 export interface PetView {
   pet: Pet;
+  /** True when the chief unlocked the pet and the server age allows it. Only these pets count. */
   unlocked: boolean;
+  /** True when the server age or an override keeps the pet locked. The saved data stays. */
+  locked: boolean;
+  /** The server day the pet needs while it is locked. */
+  lockDay: number | null;
   level: number;
   advanced: boolean;
   canAdvance: boolean;
@@ -67,6 +74,11 @@ export interface PetView {
   goal: PetGoalState | null;
   attack: number;
   defense: number;
+  /** Level Power plus Advancement Power from the level table. Null when the package has none. */
+  levelPower: number | null;
+  /** The Refining Power of the six refined percents of the pet. */
+  refiningPower: number;
+  /** Level, Advancement and Refining Power together. Null when the level power is unknown. */
   power: number | null;
 }
 
@@ -79,21 +91,29 @@ export const buildPetView = (chief: Playthrough, pet: Pet): PetView => {
   const canAdvance = isAdvanceLevel(level);
   const advanced = canAdvance && state?.advanced === true;
   const row = pet.levels[level - 1];
-  const savedGoal = chief.petsPlan?.goals?.[pet.id];
+  const locked = !isPetUnlockedByAge(chief, pet);
+  const savedGoal = locked ? undefined : chief.petsPlan?.goals?.[pet.id];
+  const refine = Array.from({ length: REFINE_COUNT }, (_, index) =>
+    clampRefine(state?.refine?.[index] ?? 0, pet),
+  );
+  const levelPower = knownPower(statAt(row.troopsPower, advanced));
+  const refiningPower = Math.round(petRefiningPower(refine));
 
   return {
     pet,
-    unlocked: state?.unlocked === true,
+    unlocked: !locked && state?.unlocked === true,
+    locked,
+    lockDay: locked ? petUnlockDay(pet) : null,
     level,
     advanced,
     canAdvance,
-    refine: Array.from({ length: REFINE_COUNT }, (_, index) =>
-      clampRefine(state?.refine?.[index] ?? 0, pet),
-    ),
+    refine,
     goal: savedGoal ? normalizeGoal(savedGoal, pet) : null,
     attack: statAt(row.troopAttack, advanced),
     defense: statAt(row.troopDefense, advanced),
-    power: knownPower(statAt(row.troopsPower, advanced)),
+    levelPower,
+    refiningPower,
+    power: levelPower === null ? null : levelPower + refiningPower,
   };
 };
 
@@ -196,7 +216,11 @@ export const unlockRuleMet = (chief: Playthrough, pet: Pet, nowMs: number) => {
 export interface PetsSummary {
   unlocked: number;
   total: number;
+  /** Pets that the server age keeps locked. */
+  lockedByAge: number;
   power: number;
+  /** The part of the power that comes from refinement. */
+  refiningPower: number;
   unknownPower: number;
   next: PetView | null;
 }
@@ -206,7 +230,12 @@ export const summarizePets = (views: PetView[]): PetsSummary => {
   return {
     unlocked: active.length,
     total: views.length,
+    lockedByAge: views.filter((view) => view.locked).length,
     power: active.reduce((total, view) => total + (view.power ?? 0), 0),
+    refiningPower: active.reduce(
+      (total, view) => total + view.refiningPower,
+      0,
+    ),
     unknownPower: active.filter((view) => view.power === null).length,
     next: views.find((view) => !view.unlocked) ?? null,
   };
@@ -317,6 +346,7 @@ export const applyPetChange = (
   change: PetChange,
 ): Playthrough => {
   const pet = findPet(change.petId) as Pet;
+  if (!isPetUnlockedByAge(chief, pet)) return chief;
   const state = savedState(chief, pet);
   let next: Required<PetState> = state;
 

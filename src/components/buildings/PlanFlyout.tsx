@@ -20,7 +20,8 @@ import {
 	rowFor,
 	runPlan,
 } from "@/service/buildingPlan";
-import { buildView, levelOrder } from "@/service/buildings";
+import type { AgeHints } from "@/service/buildings";
+import { ageHintOf, buildView, levelOrder, lockedFcHints } from "@/service/buildings";
 import { exportedPlanOf } from "@/service/eventExport";
 import { minutesOfSpeedup } from "@/service/inventory";
 import { petSkillConstructionPercent } from "@/service/pets";
@@ -187,6 +188,7 @@ function PlanBody({
 	onControlsChange,
 }: PlanBodyProps) {
 	const t = useTranslations("buildings");
+	const fcHints = useMemo(() => lockedFcHints(chief), [chief]);
 
 	return (
 		<>
@@ -214,6 +216,7 @@ function PlanBody({
 							<GoalRow
 								key={row.id}
 								row={row}
+								fcHints={fcHints}
 								onGoalChange={(goal) =>
 									onRowsChange(
 										rows.map((item) =>
@@ -259,13 +262,17 @@ function AddBuilding({
 	onAdd: (row: PlanRow) => void;
 }) {
 	const t = useTranslations("buildings.plan.add");
-	const available = levelledBuildings.filter(
-		(building) => !rows.some((row) => row.id === building.id)
-	);
+	const available = levelledBuildings
+		.filter((building) => !rows.some((row) => row.id === building.id))
+		.map((building) => ({
+			building,
+			ageLock: buildView(building, chief).nextAgeLock,
+		}));
 	const [selectedId, setSelectedId] = useState("");
-	const selected = available.some((building) => building.id === selectedId)
+	const addable = available.filter((item) => item.ageLock === null);
+	const selected = addable.some((item) => item.building.id === selectedId)
 		? selectedId
-		: (available[0]?.id ?? "");
+		: (addable[0]?.building.id ?? "");
 
 	const add = () => {
 		const row = rowFor(chief, selected);
@@ -285,14 +292,18 @@ function AddBuilding({
 							value={selected}
 							onChange={(event) => setSelectedId(event.target.value)}
 						>
-							{available.map((building) => (
-								<option key={building.id} value={building.id}>
-									{building.name}
+							{available.map(({ building, ageLock }) => (
+								<option
+									key={building.id}
+									value={building.id}
+									disabled={ageLock !== null}
+								>
+									{ageLock ? `${building.name} (${ageLock})` : building.name}
 								</option>
 							))}
 						</Select>
 					</div>
-					<Button variant="primary" onClick={add}>
+					<Button variant="primary" disabled={selected === ""} onClick={add}>
 						<LuPlus size={16} aria-hidden="true" />
 						{t("button")}
 					</Button>
@@ -404,10 +415,12 @@ function SpeedControls({
 
 function GoalRow({
 	row,
+	fcHints,
 	onGoalChange,
 	onRemove,
 }: {
 	row: PlanRow;
+	fcHints: AgeHints;
 	onGoalChange: (goal: string) => void;
 	onRemove: () => void;
 }) {
@@ -429,11 +442,18 @@ function GoalRow({
 					value={row.goal}
 					onChange={(event) => onGoalChange(event.target.value)}
 				>
-					{goals.map((level) => (
-						<option key={level.id} value={level.label}>
-							{level.label}
-						</option>
-					))}
+					{goals.map((level) => {
+						const hint = ageHintOf(fcHints, level.label);
+						return (
+							<option
+								key={level.id}
+								value={level.label}
+								disabled={hint !== undefined}
+							>
+								{hint ? `${level.label} (${hint})` : level.label}
+							</option>
+						);
+					})}
 				</Select>
 			</div>
 			<IconButton

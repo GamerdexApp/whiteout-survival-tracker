@@ -5,6 +5,7 @@ import type {
   Playthrough,
   Settings,
   Theme,
+  UnlockArea,
 } from "@/types/app";
 import { formatNumber } from "@/lib/format";
 import {
@@ -12,6 +13,7 @@ import {
   DEFAULT_HERO_GENERATION,
   MAX_HERO_GENERATION,
 } from "@/data/chief";
+import { UNLOCK_AREAS } from "./unlocks";
 
 type ParseResult = { ok: true; data: AppData } | { ok: false; error: string };
 
@@ -45,6 +47,18 @@ const parseChief = (value: unknown, position: number): Playthrough | string => {
         allCoreEventIds.includes(id as CoreEventId),
       );
     if (!valid) return t("backup.chief.badCoreEvent", values);
+  }
+
+  if (value.unlockOverrides !== undefined) {
+    const valid =
+      isRecord(value.unlockOverrides) &&
+      Object.entries(value.unlockOverrides).every(
+        ([area, day]) =>
+          UNLOCK_AREAS.includes(area as UnlockArea) &&
+          Number.isInteger(day) &&
+          (day as number) >= 0,
+      );
+    if (!valid) return t("backup.chief.badUnlock", values);
   }
 
   const generation = value.heroGenerationUnlocked;

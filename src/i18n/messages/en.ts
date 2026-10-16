@@ -15,16 +15,20 @@ import facilities from "./en/facilities.json";
 import heroes from "./en/heroes.json";
 import heroGear from "./en/heroGear.json";
 import history from "./en/history.json";
+import overview from "./en/overview.json";
 import pets from "./en/pets.json";
 import queues from "./en/queues.json";
 import research from "./en/research.json";
 import resources from "./en/resources.json";
 import settings from "./en/settings.json";
 import shell from "./en/shell.json";
+import skins from "./en/skins.json";
 import tech from "./en/tech.json";
 import troops from "./en/troops.json";
 import tundraAlbum from "./en/tundraAlbum.json";
 import ui from "./en/ui.json";
+import unlocks from "./en/unlocks.json";
+import vip from "./en/vip.json";
 
 /**
  * The English catalog is the source of truth for the key names and their types. One file for each
@@ -58,6 +62,10 @@ const en = {
   dailies,
   daybreak,
   tundraAlbum,
+  overview,
+  skins,
+  vip,
+  unlocks,
 };
 
 export default en;

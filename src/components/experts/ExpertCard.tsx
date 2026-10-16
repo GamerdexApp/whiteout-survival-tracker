@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import Link from "next/link";
+import type { Playthrough } from "@/types/app";
 import { formatDecimal, formatNumber } from "@/lib/format";
 import type { ExpertChange, ExpertView } from "@/service/experts";
 import {
@@ -19,6 +20,7 @@ import {
 	talentEffectOf,
 	talentLevelOf,
 } from "@/service/experts";
+import { unlockText } from "@/service/unlocks";
 import { MAX_AFFINITY, relationshipAt } from "@/data/game/experts";
 import { findItem } from "@/data/game/items";
 import { Badge } from "@/comps/ui/Badge";
@@ -32,6 +34,7 @@ import { ExpertRow, GoalText, HeldInput } from "./ExpertRows";
 
 interface ExpertCardProps {
 	view: ExpertView;
+	chief: Playthrough;
 	onChange: (change: ExpertChange) => void;
 }
 
@@ -43,17 +46,20 @@ export function useStatNames() {
 			: t("and", { first: names.slice(0, -1).join(", "), last: names[names.length - 1] });
 }
 
-export function ExpertCard({ view, onChange }: ExpertCardProps) {
+export function ExpertCard({ view, chief, onChange }: ExpertCardProps) {
 	const t = useTranslations("experts");
 	const joinNames = useStatNames();
-	const { expert, recruited } = view;
+	const { expert, recruited, locked, lockDay } = view;
 	const expertId = expert.id;
 	const power = expertPowerOf(view);
 	const stats = joinNames(statNamesOf(expert));
 
 	return (
 		<li className="mb-3 break-inside-avoid">
-			<Card className={`flex flex-col gap-3 p-3 ${recruited ? "" : "opacity-70"}`}>
+			<Card
+				className={`flex flex-col gap-3 p-3 ${recruited ? "" : locked ? "opacity-60" : "opacity-70"}`}
+				data-locked={locked}
+			>
 				<div className="flex items-center gap-3">
 					<ItemIcon src={expert.img} size={44} />
 					<div className="flex min-w-0 flex-1 flex-col">
@@ -73,12 +79,15 @@ export function ExpertCard({ view, onChange }: ExpertCardProps) {
 						<Switch
 							label={t("card.recruitedLabel", { expert: expert.name })}
 							checked={recruited}
+							disabled={locked}
 							onChange={(next) =>
 								onChange({ kind: "recruited", expertId, recruited: next })
 							}
 						/>
 					</span>
 				</div>
+
+				{lockDay !== null && <p className="font-medium">{unlockText(chief, lockDay)}</p>}
 
 				{view.sigilItemId && (
 					<div className="flex flex-col">
@@ -87,6 +96,7 @@ export function ExpertCard({ view, onChange }: ExpertCardProps) {
 							<HeldInput
 								label={t("card.sigilsOwnedLabel", { expert: expert.name })}
 								value={view.sigils}
+								disabled={locked}
 								onChange={(count) => onChange({ kind: "sigils", expertId, count })}
 							/>
 						</ExpertRow>
@@ -98,7 +108,7 @@ export function ExpertCard({ view, onChange }: ExpertCardProps) {
 					<RecruitedBody view={view} onChange={onChange} stats={stats} />
 				) : (
 					<div className="flex flex-col gap-1">
-						<p className="text-muted">{t("card.notRecruitedHint")}</p>
+						{!locked && <p className="text-muted">{t("card.notRecruitedHint")}</p>}
 						<p className="text-muted font-mono text-xs">
 							{t("card.recruitmentCost", { cost: t("common.unknown") })}
 						</p>

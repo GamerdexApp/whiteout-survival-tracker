@@ -45,7 +45,10 @@
             "noRequirements": "No requirements",
             "maxLevel": "Max level",
             "blocked": "Blocked: needs {list}",
-            "needs": "Needs {list}"
+            "needs": "Needs {list}",
+            "levelAgeLocked": "Saved level {level} is not open on this server yet. {text}",
+            "goalAgeLocked": "Goal {goal} is not open on this server yet. {text}",
+            "nextAgeLocked": "Next level {level} is locked. {text}"
         },
         "builtSwitch": "{name} built",
         "shelters": {

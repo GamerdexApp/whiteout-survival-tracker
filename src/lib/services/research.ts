@@ -20,20 +20,12 @@ import {
   troopLineOf,
 } from "@/data/game/research";
 import { levelOrder } from "./buildings";
+import { serverAgeDays } from "./serverAge";
+import { isWarAcademyOpenOnDay } from "./unlocks";
 
 const MS_PER_DAY = 86_400_000;
 
-/**
- * The server age in days is today minus the server start date. It is never saved.
- */
-export const serverAgeDays = (chief: Playthrough, now = new Date()) => {
-  if (!chief.serverStartDate) return null;
-  const start = new Date(`${chief.serverStartDate}T00:00:00`);
-  return Math.max(
-    0,
-    Math.floor((now.getTime() - start.getTime()) / MS_PER_DAY),
-  );
-};
+export { serverAgeDays };
 
 export const researchLevelOf = (chief: Playthrough, nodeId: string) =>
   chief.research?.[nodeId]?.level ?? 0;
@@ -148,10 +140,9 @@ export const tabLockOf = (
   chief: Playthrough,
 ): TabLock | null => {
   if (tab.unlockDays === null) return null;
-  const yours = serverAgeDays(chief);
-  return yours !== null && yours >= tab.unlockDays
+  return isWarAcademyOpenOnDay(chief, tab.unlockDays)
     ? null
-    : { required: tab.unlockDays, yours };
+    : { required: tab.unlockDays, yours: serverAgeDays(chief) };
 };
 
 export const tabLockText = (tab: ResearchTab, lock: TabLock) => {

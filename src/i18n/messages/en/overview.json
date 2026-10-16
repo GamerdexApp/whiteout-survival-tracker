@@ -1,0 +1,232 @@
+{
+    "page": {
+        "title": "Overview"
+    },
+    "header": {
+        "state": "State {number}",
+        "furnace": "Furnace {level}",
+        "serverAge": "Server age about {days} days",
+        "derived": "Built from your other pages"
+    },
+    "tiles": {
+        "furnace": {
+            "label": "Furnace",
+            "steps": "{order} of {total} steps",
+            "unknown": "Unknown",
+            "unknownHint": "Set the Furnace on Buildings"
+        },
+        "construction": {
+            "label": "Construction",
+            "value": "{busy} / {total}",
+            "allBusy": "Both builders busy",
+            "allIdle": "Both builders idle",
+            "someIdle": "{count, plural, one {{amount} builder idle} other {{amount} builders idle}}"
+        },
+        "research": {
+            "label": "Research",
+            "value": "{running} / {total}",
+            "bothIdle": "Both queues idle",
+            "bothRunning": "Both queues running",
+            "oneRunning": "{name} {left}, the other queue is idle"
+        },
+        "dailies": {
+            "label": "Dailies",
+            "value": "{done} / {total}",
+            "tasks": "My tasks done today",
+            "missions": "In-game missions done"
+        },
+        "events": {
+            "label": "Events",
+            "live": "{amount} live",
+            "coreDay": "{event} {day}",
+            "moreThisWeek": "{amount} more this week",
+            "noneThisWeek": "None this week"
+        },
+        "skins": {
+            "label": "Skins",
+            "value": "{owned} / {total}",
+            "hint": "Skins owned"
+        },
+        "vip": {
+            "label": "VIP",
+            "value": "VIP {level}",
+            "unknown": "Unknown",
+            "hint": "From your VIP XP",
+            "unknownHint": "Enter your VIP XP on VIP"
+        }
+    },
+    "events": {
+        "title": "Events",
+        "openCalendar": "Open calendar",
+        "liveNow": "Live now",
+        "liveBadge": "Live now",
+        "nextUp": "Next up, from your events page",
+        "coreLine": "{day} of {count}, {name}. Core events",
+        "runLine": "{length}. Live now",
+        "empty": "No events added",
+        "addEvent": "Add event",
+        "noLive": "Nothing is running now."
+    },
+    "coreToday": {
+        "title": "{event} today",
+        "open": "Core events",
+        "dayLine": "{day}, {name}",
+        "plan": "Plan for today {points} points",
+        "checklist": "Checklist",
+        "done": "{done} of {total} done",
+        "progress": "Checklist progress",
+        "noActions": "No actions are planned for today.",
+        "castleSignedUp": "Signed up for a Castle position for {day}",
+        "castleOpen": "Sign up for a Castle position for {day}",
+        "logLocked": "{locked} of {total} days are locked in the Event log.",
+        "todayLocked": "{day} is locked.",
+        "todayOpen": "{day} is not logged yet.",
+        "openChecklist": "Open checklist",
+        "openLog": "Open event log"
+    },
+    "queues": {
+        "title": "Running queues",
+        "running": "{count} running",
+        "construction": "Construction {number}",
+        "researchMain": "Research",
+        "researchWarAcademy": "War Academy",
+        "training": "Training {name}",
+        "learning": "Learning",
+        "task": {
+            "construction": "{name} to {level}",
+            "research": "{name} to level {level}",
+            "training": "{tier} troops",
+            "learning": "{name}, {skill}"
+        },
+        "idle": "Idle",
+        "idleBuildings": "Idle, press Start upgrade on Buildings",
+        "idleResearch": "Idle, press Start upgrade on Research",
+        "progress": "Progress of {title}"
+    },
+    "lastResult": {
+        "title": "Last event result",
+        "open": "Open in History",
+        "days": "Days 1 to 5. The Battle Phase is kept apart.",
+        "plan": "Plan",
+        "actual": "Actual",
+        "difference": "Difference",
+        "overall": "Overall rank",
+        "alliance": "Alliance rank",
+        "upgrades": "Planned upgrades done",
+        "upgradesOf": "{done} of {total}"
+    },
+    "server": {
+        "title": "Server age",
+        "edit": "Edit chief",
+        "age": "About {days} days, plus or minus {tolerance}",
+        "unknown": "Unknown. Add the server start date in Edit chief.",
+        "fromDate": "From the server start date, {date}.",
+        "warAcademy": "War Academy research",
+        "t12": "T12 research",
+        "open": "Open",
+        "opensIn": "Opens in about {days} days",
+        "unknownUnlock": "Unknown",
+        "heroes": "Heroes unlocked up to",
+        "generation": "Generation {number}",
+        "estimate": "The unlock days come from the server timeline. Change them in Edit chief if your server is a bit off.",
+        "areas": {
+            "fireCrystal": "Fire Crystal levels",
+            "pets": "Pets",
+            "experts": "Experts"
+        },
+        "fcUpTo": "Up to {level}",
+        "nothingYet": "None yet",
+        "countOf": "{unlocked} of {total} unlocked",
+        "allUnlocked": "Everything is unlocked.",
+        "generationName": "Generation {number}",
+        "allGenerations": "Every generation is unlocked.",
+        "next": {
+            "withDate": "Next: {names}, server day {day}, {date}. In about {days} days.",
+            "noDate": "Next: {names}, server day {day}. In about {days} days.",
+            "unknownAge": "Next: {names}, server day {day}.",
+            "passed": "{names} should be open by your server age, server day {day}. Raise the setting in Edit chief."
+        }
+    },
+    "dailies": {
+        "title": "Dailies today",
+        "open": "Open Dailies",
+        "activeness": "{now} of {top} Activeness",
+        "activenessBar": "Activeness today",
+        "missions": "In-game missions: {done} of {total} done",
+        "tasks": "{done} of {total} My tasks",
+        "tasksBar": "My tasks done today",
+        "stillOpen": "Still open in My tasks, first {shown} of {total}",
+        "allDone": "Every task in My tasks is done for today.",
+        "noTasks": "No tasks in My tasks yet."
+    },
+    "planner": {
+        "title": "Planner shortages",
+        "short": "{amount} short",
+        "covered": "No shortages",
+        "goals": "Goals from {pages}. Costs come from the package, stock from Resources.",
+        "noGoals": "No goals are set. Set goals with Plan on Buildings, Research and the other pages.",
+        "pages": {
+            "buildings": "Buildings",
+            "research": "Research",
+            "heroes": "Heroes",
+            "troops": "Troops",
+            "pets": "Pets",
+            "chiefGear": "Chief Gear",
+            "chiefCharms": "Chief Charms"
+        },
+        "separator": ", ",
+        "line": "Need {need} · Have {have}",
+        "shortBy": "Short {amount}",
+        "enough": "Enough",
+        "updateStock": "Update stock in Resources",
+        "incomplete": "A goal level has an Unknown cost in the package, so these totals are incomplete."
+    },
+    "progress": {
+        "title": "Progress per area",
+        "hint": "Owned or levelled against the package totals",
+        "count": "{owned} / {total}",
+        "furnace": "Furnace",
+        "furnaceOf": "{level} of {max}",
+        "furnaceUnknown": "Unknown",
+        "areas": {
+            "buildings": "Buildings",
+            "heroes": "Heroes",
+            "chiefGear": "Chief gear",
+            "chiefCharms": "Chief charms",
+            "experts": "Experts",
+            "pets": "Pets",
+            "research": "Research",
+            "allianceTech": "Alliance tech",
+            "skins": "Skins"
+        },
+        "locked": {
+            "daybreakIsland": "Daybreak Island",
+            "requirement": "Locked. Needs Furnace {level}, {count, plural, one {{amount} level} other {{amount} levels}} to go"
+        }
+    },
+    "power": {
+        "title": "Power",
+        "total": "Total power",
+        "complete": "Current power compared with the most each group can give with everything at its top level in the content your unlock settings open. Groups with no maximum count as they are.",
+        "incomplete": "Same comparison. {count, plural, one {{amount} item has} other {{amount} items have}} no power value in the data and {count, plural, one {is} other {are}} not counted.",
+        "groupWithoutValue": "{count, plural, one {{amount} item has} other {{amount} items have}} no power value in the data",
+        "groups": {
+            "buildings": "Buildings",
+            "research": "Research",
+            "heroes": "Heroes",
+            "heroGear": "Hero Gear",
+            "chiefGear": "Chief Gear",
+            "chiefCharms": "Chief Charms",
+            "experts": "Experts",
+            "pets": "Pets",
+            "troops": "Troops"
+        },
+        "ofPossible": "of {possible} possible",
+        "totalProgress": "Total power compared with the most possible",
+        "percentOfPossible": "{percent}% of the most possible",
+        "rowOfPossible": "{power} of {possible}",
+        "progress": "{group} power compared with the most possible",
+        "noMaximum": "No maximum, it depends on what you enter",
+        "noCapNote": "Troops and Hero Gear have no cap, so your total power can go above the possible total by training more troops and improving hero gear. Both count as they are in the possible total."
+    }
+}

@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import type { ReactNode } from "react";
+import type { Playthrough } from "@/types/app";
 import { formatCompact, formatDecimal, formatNumber } from "@/lib/format";
 import type { LadderItem } from "@/service/chiefGear";
 import {
@@ -10,12 +11,14 @@ import {
 	progressOf,
 	rowOf,
 	stepsToGoal,
+	unlockedLimitStop,
 } from "@/service/chiefGear";
 import { ItemIcon } from "@/comps/ui/ItemIcon";
 import { LevelStepper } from "@/comps/ui/LevelStepper";
 import { ProgressBar } from "@/comps/ui/ProgressBar";
 
 interface LadderRowProps {
+	chief: Playthrough;
 	item: LadderItem;
 	title: string;
 	subtitle?: string;
@@ -26,6 +29,7 @@ interface LadderRowProps {
 }
 
 export function LadderRow({
+	chief,
 	item,
 	title,
 	subtitle,
@@ -57,8 +61,9 @@ export function LadderRow({
 			<LevelStepper
 				wide
 				label={t("row.level", { title })}
-				stops={ladderStops(item.kind)}
-				value={item.current ?? NONE_STOP}
+				stops={ladderStops(item.kind, chief)}
+				limitValue={unlockedLimitStop(chief, item.kind)}
+				value={item.lockedCurrent?.id ?? item.current ?? NONE_STOP}
 				onChange={(value) => onChange(value === NONE_STOP ? null : value)}
 			/>
 			<span
@@ -71,6 +76,26 @@ export function LadderRow({
 				{goalRow ? t("row.goal", { name: goalRow.name }) : t("row.noGoal")}
 			</span>
 			<div className="flex flex-col gap-1">
+				{(item.lockedCurrent || item.lockedGoal) && (
+					<div className="text-muted flex flex-col gap-0.5 text-xs">
+						{item.lockedCurrent && (
+							<span>
+								{t("row.lockedCurrent", {
+									name: item.lockedCurrent.name,
+									requirement: item.lockedCurrent.requirement,
+								})}
+							</span>
+						)}
+						{item.lockedGoal && (
+							<span>
+								{t("row.lockedGoal", {
+									name: item.lockedGoal.name,
+									requirement: item.lockedGoal.requirement,
+								})}
+							</span>
+						)}
+					</div>
+				)}
 				<ProgressBar
 					value={progressOf(item) / total}
 					label={t("row.progressLabel", { title, total: formatNumber(total) })}

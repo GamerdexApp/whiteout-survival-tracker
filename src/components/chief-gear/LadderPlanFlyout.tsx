@@ -15,6 +15,7 @@ import {
 	NONE_STOP,
 	positionOf,
 	runItemPlan,
+	unlockedLimitStop,
 } from "@/service/chiefGear";
 import { exportSpecOf as gearExportSpecOf } from "@/service/chiefGearExport";
 import type { LadderPlan } from "@/service/chiefGearExport";
@@ -110,8 +111,8 @@ export function LadderPlanFlyout({ open, chief, kind, onClose, onSave }: LadderP
 	);
 }
 
-const goalStops = (item: LadderItem) =>
-	ladderStops(item.kind).filter((stop) => {
+const goalStops = (item: LadderItem, chief: Playthrough) =>
+	ladderStops(item.kind, chief).filter((stop) => {
 		const position = stop.value === NONE_STOP ? -1 : positionOf(item.kind, stop.value);
 		return (
 			position >= positionOf(item.kind, item.current) &&
@@ -163,6 +164,14 @@ function PlanBody({
 										<span className="text-muted font-mono text-xs">
 											{t("from", { level: levelLabel(kind, item.current) })}
 										</span>
+										{item.lockedCurrent && (
+											<span className="text-muted basis-full text-xs">
+												{t("lockedCurrent", {
+													name: item.lockedCurrent.name,
+													requirement: item.lockedCurrent.requirement,
+												})}
+											</span>
+										)}
 										<LevelStepper
 											wide
 											label={
@@ -173,7 +182,9 @@ function PlanBody({
 															label: item.label,
 														})
 											}
-											stops={goalStops(item)}
+											stops={goalStops(item, chief)}
+											limitValue={unlockedLimitStop(chief, kind)}
+											disabled={item.lockedCurrent !== null}
 											value={goals[item.key] ?? NONE_STOP}
 											onChange={(value) =>
 												onGoalsChange({

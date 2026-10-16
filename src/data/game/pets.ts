@@ -1,6 +1,8 @@
 import {
   PET_ADVANCEMENT_INTERVAL,
   PET_REFINEMENT_STATS,
+  PET_REFINING_POWER_PER_PERCENT,
+  petRefiningPower,
   pets,
 } from "whiteout-survival-data";
 import type { Pet, PetRarity } from "whiteout-survival-data";
@@ -9,7 +11,12 @@ export const allPets: Pet[] = pets().get();
 
 export const findPet = (id: string) => pets().find(id);
 
-export { PET_ADVANCEMENT_INTERVAL, PET_REFINEMENT_STATS };
+export {
+  PET_ADVANCEMENT_INTERVAL,
+  PET_REFINEMENT_STATS,
+  PET_REFINING_POWER_PER_PERCENT,
+  petRefiningPower,
+};
 
 export const petRarities: PetRarity[] = [
   "Common",

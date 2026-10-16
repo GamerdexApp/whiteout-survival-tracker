@@ -165,7 +165,12 @@ export function PetsView({ chief }: { chief: Playthrough }) {
 							<PetCard
 								key={view.pet.id}
 								view={view}
-								ruleMet={!view.unlocked && unlockRuleMet(chief, view.pet, now)}
+								chief={chief}
+								ruleMet={
+									!view.unlocked &&
+									!view.locked &&
+									unlockRuleMet(chief, view.pet, now)
+								}
 								onChange={applyChange}
 							/>
 						))}

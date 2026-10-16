@@ -27,10 +27,12 @@ const parseCount = (text: string) => Number(text.replace(/\D/g, "") || 0);
 export function HeldInput({
 	label,
 	value,
+	disabled = false,
 	onChange,
 }: {
 	label: string;
 	value: number;
+	disabled?: boolean;
 	onChange: (value: number) => void;
 }) {
 	return (
@@ -38,8 +40,9 @@ export function HeldInput({
 			inputMode="numeric"
 			aria-label={label}
 			value={formatNumber(value)}
+			disabled={disabled}
 			onChange={(event) => onChange(parseCount(event.target.value))}
-			className="border-line bg-surface text-ink min-h-11 w-28 rounded-md border-[1.5px] px-2 text-right font-mono font-medium lg:min-h-8"
+			className="border-line bg-surface text-ink min-h-11 w-28 rounded-md border-[1.5px] px-2 text-right font-mono font-medium disabled:opacity-60 lg:min-h-8"
 		/>
 	);
 }

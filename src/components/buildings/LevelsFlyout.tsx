@@ -3,7 +3,8 @@
 import type { BuildingLevel } from "whiteout-survival-data";
 import { useTranslations } from "next-intl";
 import { formatDuration, formatNumber } from "@/lib/format";
-import type { BuildingView } from "@/service/buildings";
+import type { AgeHints, BuildingView } from "@/service/buildings";
+import { ageHintOf } from "@/service/buildings";
 import { findBuildingById } from "@/data/game/buildings";
 import { Button } from "@/comps/ui/Button";
 import { Card } from "@/comps/ui/Card";
@@ -43,10 +44,11 @@ function Fact({ label, children }: { label: string; children: React.ReactNode })
 
 interface LevelsFlyoutProps {
 	view: BuildingView | null;
+	fcHints: AgeHints;
 	onClose: () => void;
 }
 
-export function LevelsFlyout({ view, onClose }: LevelsFlyoutProps) {
+export function LevelsFlyout({ view, fcHints, onClose }: LevelsFlyoutProps) {
 	const t = useTranslations("buildings");
 	const building = view ? findBuildingById(view.building.id) : undefined;
 
@@ -66,12 +68,12 @@ export function LevelsFlyout({ view, onClose }: LevelsFlyoutProps) {
 			}
 			footer={<Button onClick={onClose}>{t("close")}</Button>}
 		>
-			{view && building && <LevelsContent view={view} />}
+			{view && building && <LevelsContent view={view} fcHints={fcHints} />}
 		</Flyout>
 	);
 }
 
-function LevelsContent({ view }: { view: BuildingView }) {
+function LevelsContent({ view, fcHints }: { view: BuildingView; fcHints: AgeHints }) {
 	const t = useTranslations("buildings");
 	const { building } = view;
 	const upcoming = building.levels
@@ -137,10 +139,11 @@ function LevelsContent({ view }: { view: BuildingView }) {
 						<ul>
 							{upcoming.map((level) => {
 								const capacity = capacityOf(level);
+								const ageHint = ageHintOf(fcHints, level.label);
 								return (
 									<li
 										key={level.id}
-										className="border-line flex flex-col gap-2 border-t-[1.5px] px-3 py-3 first:border-t-0"
+										className={`border-line flex flex-col gap-2 border-t-[1.5px] px-3 py-3 first:border-t-0 ${ageHint ? "opacity-70" : ""}`}
 									>
 										<div
 											className={`grid items-start gap-3 ${
@@ -170,6 +173,9 @@ function LevelsContent({ view }: { view: BuildingView }) {
 											</span>
 										</div>
 										<div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs">
+											{ageHint && (
+												<span className="text-muted">{ageHint}</span>
+											)}
 											{view.goal === level.label && view.hasGoal && (
 												<span className="text-primary border-primary rounded-full border-[1.5px] px-2 py-0.5 font-mono text-[11px] uppercase">
 													{t("levels.goalBadge")}

@@ -2,7 +2,12 @@ import { calculateBuildings } from "whiteout-survival-data";
 import type { BuildingCalculation, BuildingStep } from "whiteout-survival-data";
 import type { Appointment, Playthrough } from "@/types/app";
 import { findBuildingById, levelledBuildings } from "@/data/game/buildings";
-import { buildView, knownLabel, levelledBuildingLevels } from "./buildings";
+import {
+  buildView,
+  knownLabel,
+  levelAgeLock,
+  levelledBuildingLevels,
+} from "./buildings";
 
 export const APPOINTMENT_PERCENT: Record<Appointment, number> = {
   none: 0,
@@ -31,12 +36,14 @@ export const defaultPlanControls = (chief: Playthrough): PlanControls => ({
 });
 
 /**
- * One row for each building whose goal is above its current level.
+ * One row for each building whose goal is above its current level. A goal or a current level that
+ * the server age has not unlocked cannot be reached, so its building has no row.
  */
 export const initialPlanRows = (chief: Playthrough): PlanRow[] =>
   levelledBuildings.flatMap((building) => {
     const view = buildView(building, chief);
-    return view.hasGoal && view.goal
+    const reachable = view.levelAgeLock === null && view.goalAgeLock === null;
+    return view.hasGoal && view.goal && reachable
       ? [{ id: building.id, current: view.level, goal: view.goal }]
       : [];
   });
@@ -109,13 +116,14 @@ export const rowFor = (
   const building = findBuildingById(buildingId);
   if (!building) return undefined;
   const view = buildView(building, chief);
+  if (view.nextAgeLock !== null) return undefined;
   const goal = view.next?.label ?? view.level;
   return goal ? { id: buildingId, current: view.level, goal } : undefined;
 };
 
 /**
  * Writes the plan goals to the buildings and keeps the plan itself. A building that is not in the
- * plan loses its goal.
+ * plan loses its goal, except a goal the server age has not unlocked, which stays as saved.
  */
 export const withSavedPlan = (
   chief: Playthrough,
@@ -131,7 +139,7 @@ export const withSavedPlan = (
     const existing = buildings[building.id];
     if (goal) {
       buildings[building.id] = { ...existing, goal };
-    } else if (existing?.goal) {
+    } else if (existing?.goal && levelAgeLock(chief, existing.goal) === null) {
       buildings[building.id] = { ...existing, goal: null };
     }
   });

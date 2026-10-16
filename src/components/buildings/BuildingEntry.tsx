@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl";
 import type { ConstructionJob } from "@/types/app";
 import { formatNumber } from "@/lib/format";
 import { useIsDesktop } from "@/lib/hooks/useMediaQuery";
-import type { BuildingView } from "@/service/buildings";
+import type { AgeHints, BuildingView } from "@/service/buildings";
 import { buildingNoteIds, isEntertainment, SHELTER_ID } from "@/data/game/buildings";
 import { TimeLeftPill } from "@/comps/queues/TimeLeftPill";
 import { Button } from "@/comps/ui/Button";
@@ -17,6 +17,7 @@ import { levelStops, NOT_BUILT_VALUE } from "./stops";
 
 export interface BuildingEntryProps {
 	view: BuildingView;
+	fcHints: AgeHints;
 	onLevelChange: (buildingId: string, level: string | null) => void;
 	onBuiltChange: (buildingId: string, built: boolean) => void;
 	onOpenLevels: (buildingId: string) => void;
@@ -49,6 +50,12 @@ const subline = (view: BuildingView, t: Translate) =>
 
 const progressText = (view: BuildingView, t: Translate) => {
 	if (view.lockedBy) return t("entry.progress.requires", { list: view.lockedBy });
+	if (view.levelAgeLock && view.level) {
+		return t("entry.progress.levelAgeLocked", { level: view.level, text: view.levelAgeLock });
+	}
+	if (view.goalAgeLock && view.goal) {
+		return t("entry.progress.goalAgeLocked", { goal: view.goal, text: view.goalAgeLock });
+	}
 	if (isEntertainment(view.building)) {
 		return view.needs.length > 0
 			? t("entry.progress.requires", { list: view.needs.join(", ") })
@@ -57,6 +64,12 @@ const progressText = (view: BuildingView, t: Translate) => {
 	if (view.maxed && view.built) return t("entry.progress.maxLevel");
 	if (view.blockedBy.length > 0) {
 		return t("entry.progress.blocked", { list: view.blockedBy.join(", ") });
+	}
+	if (view.nextAgeLock && view.next) {
+		return t("entry.progress.nextAgeLocked", {
+			level: view.next.label,
+			text: view.nextAgeLock,
+		});
 	}
 	return view.needs.length > 0
 		? t("entry.progress.needs", { list: view.needs.join(", ") })
@@ -121,12 +134,16 @@ function ShelterSummary({
 	);
 }
 
-function Stepper({ view, onLevelChange }: Pick<BuildingEntryProps, "view" | "onLevelChange">) {
+function Stepper({
+	view,
+	fcHints,
+	onLevelChange,
+}: Pick<BuildingEntryProps, "view" | "fcHints" | "onLevelChange">) {
 	const t = useTranslations("buildings");
 	return (
 		<LevelStepper
 			label={t("levelOf", { name: view.building.name })}
-			stops={levelStops(view.building)}
+			stops={levelStops(view.building, fcHints)}
 			value={view.level ?? NOT_BUILT_VALUE}
 			disabled={view.lockedBy !== null}
 			limitValue={view.reachable ?? NOT_BUILT_VALUE}
@@ -139,13 +156,14 @@ function Stepper({ view, onLevelChange }: Pick<BuildingEntryProps, "view" | "onL
 
 function CurrentControl({
 	view,
+	fcHints,
 	onLevelChange,
 	onOpenShelters,
-}: Pick<BuildingEntryProps, "view" | "onLevelChange" | "onOpenShelters">) {
+}: Pick<BuildingEntryProps, "view" | "fcHints" | "onLevelChange" | "onOpenShelters">) {
 	return view.building.id === SHELTER_ID ? (
 		<ShelterSummary view={view} onOpenShelters={onOpenShelters} />
 	) : (
-		<Stepper view={view} onLevelChange={onLevelChange} />
+		<Stepper view={view} fcHints={fcHints} onLevelChange={onLevelChange} />
 	);
 }
 
@@ -154,6 +172,7 @@ export function BuildingEntry(props: BuildingEntryProps) {
 	const isDesktop = useIsDesktop();
 	const {
 		view,
+		fcHints,
 		onLevelChange,
 		onBuiltChange,
 		onOpenLevels,
@@ -203,6 +222,7 @@ export function BuildingEntry(props: BuildingEntryProps) {
 					) : (
 						<CurrentControl
 							view={view}
+							fcHints={fcHints}
 							onLevelChange={onLevelChange}
 							onOpenShelters={onOpenShelters}
 						/>
@@ -246,6 +266,7 @@ export function BuildingEntry(props: BuildingEntryProps) {
 						<SectionLabel className="text-muted">{t("columns.current")}</SectionLabel>
 						<CurrentControl
 							view={view}
+							fcHints={fcHints}
 							onLevelChange={onLevelChange}
 							onOpenShelters={onOpenShelters}
 						/>

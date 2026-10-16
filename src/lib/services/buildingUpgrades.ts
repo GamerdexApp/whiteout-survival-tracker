@@ -43,6 +43,7 @@ export const shelterInstanceToUpgrade = (chief: Playthrough) => {
 export const canStartUpgrade = (view: BuildingView, chief: Playthrough) =>
   view.next !== undefined &&
   view.lockedBy === null &&
+  view.nextAgeLock === null &&
   view.blockedBy.length === 0 &&
   buildingJob(chief, view.building.id) === undefined;
 

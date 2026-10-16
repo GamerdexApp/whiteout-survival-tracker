@@ -75,6 +75,11 @@ export function TypeDetails({ view, className = "" }: { view: TroopTypeView; cla
 					{view.campLabel ? t("campLevel", { level: view.campLabel }) : t("campNotBuilt")}
 				</span>
 			</div>
+			{view.campAgeLock && (
+				<p className="text-muted text-xs">
+					{t("campAgeLocked", { text: view.campAgeLock })}
+				</p>
+			)}
 			<div className="flex items-baseline justify-between gap-3">
 				<span className="text-muted">{t("highestTier")}</span>
 				<span className="font-mono font-medium">

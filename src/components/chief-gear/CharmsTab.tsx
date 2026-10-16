@@ -22,6 +22,7 @@ import { StatTile } from "@/comps/ui/StatTile";
 import { LadderPlanFlyout } from "./LadderPlanFlyout";
 import { LadderRow } from "./LadderRow";
 import { LadderSummaryCard } from "./LadderSummary";
+import { LockNotice } from "./LockNotice";
 
 export function CharmsTab({ chief }: { chief: Playthrough }) {
 	const t = useTranslations("chiefGear");
@@ -61,6 +62,7 @@ export function CharmsTab({ chief }: { chief: Playthrough }) {
 				/>
 			</div>
 			<p className="text-muted">{t("charms.goalsHint")}</p>
+			<LockNotice chief={chief} kind="charm" />
 
 			<Card>
 				{chiefGearSlotList.map((slot) => {
@@ -89,6 +91,7 @@ export function CharmsTab({ chief }: { chief: Playthrough }) {
 									const level = row?.level ?? 1;
 									return (
 										<LadderRow
+											chief={chief}
 											key={item.key}
 											item={item}
 											title={item.label}

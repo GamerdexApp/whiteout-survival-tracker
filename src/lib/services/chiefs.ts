@@ -69,6 +69,7 @@ export const toChiefValues = (chief: Playthrough): ChiefValues => ({
   serverStartDate: chief.serverStartDate,
   heroGenerationUnlocked: chief.heroGenerationUnlocked,
   coreEventsShown: chief.coreEventsShown ?? ["svs", "showdown", "king", "hall"],
+  unlockOverrides: chief.unlockOverrides,
   notes: chief.notes,
 });
 

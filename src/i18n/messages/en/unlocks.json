@@ -1,0 +1,27 @@
+{
+    "lock": {
+        "day": "Unlocks on server day {day}",
+        "dayAndDate": "Unlocks on server day {day}, {date}"
+    },
+    "areas": {
+        "pets": "Pets",
+        "fireCrystal": "Fire Crystal levels",
+        "experts": "Experts",
+        "chiefGear": "Chief Gear",
+        "chiefCharms": "Chief Charms",
+        "warAcademy": "War Academy and T12 research"
+    },
+    "dialog": {
+        "legend": "Unlocked content",
+        "hint": "Locks follow the server age from the server start date. If your server is a bit off, choose the step you really have. Locked items stay visible and your saved data is kept.",
+        "auto": "Auto, {current}",
+        "autoUnknown": "Auto, set the server start date to use it",
+        "autoNone": "nothing unlocked yet",
+        "none": "Nothing unlocked",
+        "stepPets": "Day {day}, {count} of {total} pets",
+        "stepExperts": "Day {day}, {count} of {total} experts",
+        "stepFc": "Day {day}, up to {last}, without its stages",
+        "stepNamed": "Day {day}, {name}",
+        "pickLabel": "{area} unlocked through"
+    }
+}

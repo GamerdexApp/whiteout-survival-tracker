@@ -10,7 +10,7 @@ import {
   troopPower,
 } from "@/data/game/troops";
 import type { TroopData, TroopTier } from "@/data/game/troops";
-import { knownLabel, levelOrder } from "./buildings";
+import { knownLabel, levelAgeLock, levelOrder } from "./buildings";
 import { levelOfNode } from "./research";
 
 export const TROOP_IDS: TroopId[] = allTroops.map((troop) => troop.id);
@@ -142,6 +142,7 @@ export interface TroopTypeView {
   id: TroopId;
   name: string;
   campLabel: string | null;
+  campAgeLock: string | null;
   highestTier: number;
   total: number;
   power: number;
@@ -170,6 +171,7 @@ const buildTypeView = (chief: Playthrough, troop: TroopData): TroopTypeView => {
     id: troop.id,
     name: troop.name,
     campLabel,
+    campAgeLock: levelAgeLock(chief, campLabel),
     highestTier,
     total: tiers.reduce((sum, tier) => sum + tier.count, 0),
     power: tiers.reduce((sum, tier) => sum + tier.power, 0),

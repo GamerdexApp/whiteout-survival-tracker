@@ -15,6 +15,13 @@ import {
 import { findItem } from "@/data/game/items";
 import { ownedCount } from "./inventory";
 import type { StockCheck } from "./planStock";
+import {
+  charmUnlockDay,
+  gearUnlockDay,
+  isCharmLevelUnlocked,
+  isGearTierUnlocked,
+  unlockText,
+} from "./unlocks";
 
 export type LadderKind = "gear" | "charm";
 
@@ -35,10 +42,80 @@ export const ladderRows = (kind: LadderKind): readonly LadderRow[] =>
 
 export const NONE_STOP = "none";
 
-export const ladderStops = (kind: LadderKind) => [
-  { value: NONE_STOP, label: translator("chiefGear")("none") },
-  ...ladderRows(kind).map((row) => ({ value: row.id, label: row.name })),
-];
+const rowUnlockDay = (kind: LadderKind, row: LadderRow) =>
+  kind === "gear"
+    ? gearUnlockDay(row.tier ?? "Common")
+    : charmUnlockDay(row.level ?? 1);
+
+const isRowUnlocked = (chief: Playthrough, kind: LadderKind, row: LadderRow) =>
+  kind === "gear"
+    ? isGearTierUnlocked(chief, row.tier ?? "Common")
+    : isCharmLevelUnlocked(chief, row.level ?? 1);
+
+/** The position of the last row the server age unlocks, or -1 when no row is unlocked. */
+export const unlockedLimitOf = (chief: Playthrough, kind: LadderKind) =>
+  ladderRows(kind).findLastIndex((row) => isRowUnlocked(chief, kind, row));
+
+export const unlockedLimitStop = (chief: Playthrough, kind: LadderKind) => {
+  const limit = unlockedLimitOf(chief, kind);
+  return limit < 0 ? NONE_STOP : ladderRows(kind)[limit].id;
+};
+
+export const ladderStops = (kind: LadderKind, chief: Playthrough) => {
+  const t = translator("chiefGear");
+  const limit = unlockedLimitOf(chief, kind);
+  return [
+    { value: NONE_STOP, label: t("none") },
+    ...ladderRows(kind).map((row, position) => ({
+      value: row.id,
+      label:
+        position > limit
+          ? t("lock.stop", {
+              name: row.name,
+              day: formatNumber(rowUnlockDay(kind, row)),
+            })
+          : row.name,
+    })),
+  ];
+};
+
+export interface LockedLevel {
+  id: string;
+  name: string;
+  requirement: string;
+}
+
+const lockedLevelOf = (
+  chief: Playthrough,
+  kind: LadderKind,
+  id: string,
+): LockedLevel => {
+  const row = ladderRows(kind)[positionOf(kind, id)];
+  return {
+    id,
+    name: row.name,
+    requirement: unlockText(chief, rowUnlockDay(kind, row)),
+  };
+};
+
+/** One line for each server day that locks rows, naming the first locked row of that day. */
+export const lockRequirementsOf = (chief: Playthrough, kind: LadderKind) => {
+  const t = translator("chiefGear");
+  const rows = ladderRows(kind);
+  const limit = unlockedLimitOf(chief, kind);
+  const days = new Set<number>();
+  return rows.slice(limit + 1).flatMap((row) => {
+    const day = rowUnlockDay(kind, row);
+    if (days.has(day)) return [];
+    days.add(day);
+    return [
+      t("lock.group", {
+        name: row.name,
+        requirement: unlockText(chief, day),
+      }),
+    ];
+  });
+};
 
 /**
  * The place of a level in the ordered rows. A piece with no level yet sits at -1.
@@ -55,15 +132,15 @@ export interface LadderItem {
   slotId: string;
   label: string;
   troopType: string;
+  /** The current level, null when the piece has none or its saved level is locked by server age. */
   current: string | null;
+  /** The goal above the current level, null when it is locked by server age. */
   goal: string | null;
+  /** The position of the last row the server age unlocks. */
+  limit: number;
+  lockedCurrent: LockedLevel | null;
+  lockedGoal: LockedLevel | null;
 }
-
-const gearCurrent = (chief: Playthrough, slotId: string) =>
-  knownId("gear", chief.chiefGear?.[slotId]?.current);
-
-const charmCurrent = (chief: Playthrough, slotId: string, index: number) =>
-  knownId("charm", chief.chiefCharms?.[slotId]?.[index]?.current);
 
 const effectiveGoal = (
   kind: LadderKind,
@@ -78,44 +155,61 @@ const effectiveGoal = (
 
 export const CHARMS_PER_PIECE = 3;
 
+const ladderStateOf = (
+  chief: Playthrough,
+  kind: LadderKind,
+  savedCurrent: string | null | undefined,
+  savedGoal: string | null | undefined,
+) => {
+  const limit = unlockedLimitOf(chief, kind);
+  const saved = knownId(kind, savedCurrent);
+  const goal = effectiveGoal(kind, saved, savedGoal);
+  const currentLocked = saved !== null && positionOf(kind, saved) > limit;
+  const goalLocked = goal !== null && positionOf(kind, goal) > limit;
+  return {
+    limit,
+    current: currentLocked ? null : saved,
+    goal: currentLocked || goalLocked ? null : goal,
+    lockedCurrent: currentLocked ? lockedLevelOf(chief, kind, saved) : null,
+    lockedGoal:
+      goal !== null && (currentLocked || goalLocked)
+        ? lockedLevelOf(chief, kind, goal)
+        : null,
+  };
+};
+
 export const gearItems = (chief: Playthrough): LadderItem[] =>
-  chiefGearSlotList.map((slot) => {
-    const current = gearCurrent(chief, slot.id);
-    return {
-      key: slot.id,
-      kind: "gear",
-      slotId: slot.id,
-      label: slot.name,
-      troopType: slot.troopType,
-      current,
-      goal: effectiveGoal(
-        "gear",
-        current,
-        chief.chiefGearPlan?.goals?.[slot.id],
-      ),
-    };
-  });
+  chiefGearSlotList.map((slot) => ({
+    key: slot.id,
+    kind: "gear",
+    slotId: slot.id,
+    label: slot.name,
+    troopType: slot.troopType,
+    ...ladderStateOf(
+      chief,
+      "gear",
+      chief.chiefGear?.[slot.id]?.current,
+      chief.chiefGearPlan?.goals?.[slot.id],
+    ),
+  }));
 
 export const charmItems = (chief: Playthrough): LadderItem[] =>
   chiefGearSlotList.flatMap((slot) =>
-    Array.from({ length: CHARMS_PER_PIECE }, (_, index) => {
-      const current = charmCurrent(chief, slot.id, index);
-      return {
-        key: `${slot.id}:${index}`,
-        kind: "charm" as const,
-        slotId: slot.id,
-        label: translator("chiefGear")("charmLabel", {
-          number: formatNumber(index + 1),
-        }),
-        troopType: slot.troopType,
-        current,
-        goal: effectiveGoal(
-          "charm",
-          current,
-          chief.chiefCharmsPlan?.goals?.[slot.id]?.[index],
-        ),
-      };
-    }),
+    Array.from({ length: CHARMS_PER_PIECE }, (_, index) => ({
+      key: `${slot.id}:${index}`,
+      kind: "charm" as const,
+      slotId: slot.id,
+      label: translator("chiefGear")("charmLabel", {
+        number: formatNumber(index + 1),
+      }),
+      troopType: slot.troopType,
+      ...ladderStateOf(
+        chief,
+        "charm",
+        chief.chiefCharms?.[slot.id]?.[index]?.current,
+        chief.chiefCharmsPlan?.goals?.[slot.id]?.[index],
+      ),
+    })),
   );
 
 export const itemsOf = (kind: LadderKind, chief: Playthrough) =>
@@ -162,7 +256,10 @@ export type PlanGoalMap = Record<string, string | null>;
 
 export const initialGoalMap = (items: LadderItem[]): PlanGoalMap =>
   Object.fromEntries(
-    items.map((item) => [item.key, item.goal ?? item.current]),
+    items.map((item) => [
+      item.key,
+      item.lockedGoal?.id ?? item.goal ?? item.current,
+    ]),
   );
 
 export const withSavedGoals = (
@@ -278,7 +375,9 @@ export const runItemPlan = (
   const planned = items.flatMap((item) => {
     const goal = goals[item.key];
     return goal &&
-      positionOf(item.kind, goal) > positionOf(item.kind, item.current)
+      item.lockedCurrent === null &&
+      positionOf(item.kind, goal) > positionOf(item.kind, item.current) &&
+      positionOf(item.kind, goal) <= item.limit
       ? [{ ...item, goal }]
       : [];
   });

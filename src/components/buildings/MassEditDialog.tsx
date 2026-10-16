@@ -14,6 +14,7 @@ import {
 	raiseAllTo,
 	rankLabels,
 } from "@/service/buildingMassSet";
+import { ageHintOf, highestUnlockedLabel, lockedFcHints } from "@/service/buildings";
 import { entertainmentBuildings } from "@/data/game/buildings";
 import { Button } from "@/comps/ui/Button";
 import { Card } from "@/comps/ui/Card";
@@ -48,6 +49,7 @@ export function MassEditDialog({ open, chief, onClose, onSave }: MassEditDialogP
 		}
 	}
 
+	const fcHints = useMemo(() => lockedFcHints(chief), [chief]);
 	const changes = useMemo(() => draftChanges(chief, draft), [chief, draft]);
 	const blockers = useMemo(() => draftBlockers(chief, draft), [chief, draft]);
 	const blockedCount = Object.keys(blockers).length;
@@ -89,14 +91,17 @@ export function MassEditDialog({ open, chief, onClose, onSave }: MassEditDialogP
 							value={raiseLabel}
 							onChange={(event) => setRaiseLabel(event.target.value)}
 						>
-							{rankLabels.map((label) => (
-								<option key={label} value={label}>
-									{label}
-								</option>
-							))}
+							{rankLabels.map((label) => {
+								const hint = ageHintOf(fcHints, label);
+								return (
+									<option key={label} value={label} disabled={hint !== undefined}>
+										{hint ? `${label} (${hint})` : label}
+									</option>
+								);
+							})}
 						</Select>
 					</div>
-					<Button onClick={() => setDraft(raiseAllTo(draft, raiseLabel))}>
+					<Button onClick={() => setDraft(raiseAllTo(chief, draft, raiseLabel))}>
 						{t("massEdit.raiseAll")}
 					</Button>
 				</div>
@@ -150,8 +155,11 @@ export function MassEditDialog({ open, chief, onClose, onSave }: MassEditDialogP
 								</div>
 								<LevelStepper
 									label={t("levelOf", { name: building.name })}
-									stops={levelStops(building)}
+									stops={levelStops(building, fcHints)}
 									value={value ?? NOT_BUILT_VALUE}
+									limitValue={
+										highestUnlockedLabel(building, chief) ?? NOT_BUILT_VALUE
+									}
 									onChange={(next) =>
 										setDraft({
 											...draft,

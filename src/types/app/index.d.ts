@@ -13,8 +13,11 @@ import type {
   LearningJobState,
 } from "./experts";
 import type { PetsPlanState, PetState } from "./pets";
+import type { SkinState } from "./skins";
 import type { TrainingJobState, TroopsPlanState, TroopsState } from "./troops";
 import type { TundraAlbumState } from "./tundraAlbum";
+import type { UnlockOverrides } from "./unlocks";
+import type { VipState } from "./vip";
 
 export type Theme = "light" | "dark" | "system";
 
@@ -176,6 +179,7 @@ export interface Playthrough {
   serverStartDate?: string;
   heroGenerationUnlocked: number;
   coreEventsShown?: CoreEventId[];
+  unlockOverrides?: UnlockOverrides;
   notes?: string;
   buildings?: Record<string, BuildingState>;
   facilities?: Record<string, { built?: boolean }>;
@@ -213,6 +217,8 @@ export interface Playthrough {
   dailies?: DailiesState;
   daybreak?: DaybreakState;
   tundraAlbum?: Record<string, TundraAlbumState>;
+  skins?: Record<string, SkinState>;
+  vip?: VipState;
   allianceTech?: Record<string, AllianceTechNodeState>;
   allianceFacilities?: Record<string, AllianceFacilityState>;
 }
@@ -229,6 +235,7 @@ export interface ChiefValues {
   serverStartDate?: string;
   heroGenerationUnlocked: number;
   coreEventsShown: CoreEventId[];
+  unlockOverrides?: UnlockOverrides;
   notes?: string;
 }
 
@@ -238,6 +245,9 @@ export type * from "./coreEvents";
 export type * from "./dailies";
 export type * from "./daybreak";
 export type * from "./events";
+export type * from "./skins";
 export type * from "./tundraAlbum";
+export type * from "./unlocks";
+export type * from "./vip";
 export type * from "./experts";
 export type * from "./pets";

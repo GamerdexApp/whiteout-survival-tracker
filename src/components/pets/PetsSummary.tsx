@@ -41,7 +41,11 @@ export function PetsSummaryTiles({ summary }: { summary: Summary }) {
 					count: formatNumber(summary.unlocked),
 					total: formatNumber(summary.total),
 				})}
-				note={t("unlockedNote")}
+				note={
+					summary.lockedByAge === 0
+						? t("unlockedNote")
+						: t("lockedNote", { count: formatNumber(summary.lockedByAge) })
+				}
 			/>
 			<SummaryTile
 				label={t("power")}

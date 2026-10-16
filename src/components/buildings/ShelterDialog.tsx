@@ -1,12 +1,14 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { useMemo } from "react";
 import { LuPlus } from "react-icons/lu";
 import type { Playthrough } from "@/types/app";
 import { formatNumber } from "@/lib/format";
 import {
 	findLevel,
 	levelOrder,
+	lockedFcHints,
 	reachableLevel,
 	shelterLevels,
 	shelterRequirements,
@@ -15,7 +17,7 @@ import { MAX_SHELTERS, shelter } from "@/data/game/buildings";
 import { Button } from "@/comps/ui/Button";
 import { Dialog } from "@/comps/ui/Dialog";
 import { LevelStepper } from "@/comps/ui/LevelStepper";
-import { builtStops } from "./stops";
+import { hintedStops } from "./stops";
 
 interface ShelterDialogProps {
 	open: boolean;
@@ -27,7 +29,7 @@ interface ShelterDialogProps {
 
 export function ShelterDialog({ open, chief, locked, onClose, onChange }: ShelterDialogProps) {
 	const t = useTranslations("buildings");
-	const stops = builtStops(shelter);
+	const stops = useMemo(() => hintedStops(shelter, lockedFcHints(chief)), [chief]);
 	const levels = shelterLevels(chief.buildings?.shelter);
 	const requirements = shelterRequirements(levels);
 	const firstLevel = stops[0].value;

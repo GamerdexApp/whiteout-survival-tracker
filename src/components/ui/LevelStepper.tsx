@@ -7,6 +7,7 @@ import { IconButton } from "./IconButton";
 export interface StepperStop {
 	value: string;
 	label: string;
+	hint?: string;
 }
 
 interface LevelStepperProps {
@@ -23,7 +24,8 @@ interface LevelStepperProps {
  * Moves one stop at a time with the buttons. The list in the middle jumps to any stop, which
  * matters when a building has 80 levels. Stops follow the order they are given, never arithmetic.
  * Stops after `limitValue` cannot be picked, which keeps a level out of reach until its
- * requirements are met. Lowering is always allowed.
+ * requirements are met. Lowering is always allowed. A stop with a `hint` shows it after its label
+ * in the list, unless it is the selected stop.
  */
 export function LevelStepper({
 	label,
@@ -60,8 +62,15 @@ export function LevelStepper({
 				className={`text-ink hover:border-line min-h-11 ${wide ? "w-60" : "w-24"} appearance-none rounded-md border-[1.5px] border-transparent bg-transparent px-1 text-center font-mono font-medium disabled:opacity-60 lg:min-h-9`}
 			>
 				{stops.map((stop, position) => (
-					<option key={stop.value} value={stop.value} disabled={position > limitIndex}>
-						{stop.label}
+					<option
+						key={stop.value}
+						value={stop.value}
+						disabled={position > limitIndex}
+						title={stop.hint}
+					>
+						{stop.hint && stop.value !== value
+							? `${stop.label} (${stop.hint})`
+							: stop.label}
 					</option>
 				))}
 			</select>

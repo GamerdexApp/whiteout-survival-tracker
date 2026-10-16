@@ -5,6 +5,7 @@ import {
   expertRelationships,
   experts,
   items,
+  unreleasedExperts,
 } from "whiteout-survival-data";
 import type {
   Expert,
@@ -15,6 +16,10 @@ import type {
 export const allExperts: Expert[] = experts().get();
 
 export const findExpert = (id: string) => experts().find(id);
+
+/** The name of an expert the game has not released. It is on the server timeline only. */
+export const unreleasedExpertName = (id: string) =>
+  unreleasedExperts().find(id)?.name;
 
 export const MAX_AFFINITY = EXPERT_MAX_LEVEL;
 export const EXP_PER_LEARNING_MINUTE = EXPERT_SKILL_EXP_PER_LEARNING_MINUTE;

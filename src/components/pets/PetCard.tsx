@@ -1,9 +1,11 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import type { Playthrough } from "@/types/app";
 import { formatDecimal, formatNumber } from "@/lib/format";
 import type { PetChange, PetView } from "@/service/pets";
 import { activeGoalOf, REFINE_STEP, skillCooldownText, unlockRuleText } from "@/service/pets";
+import { unlockText } from "@/service/unlocks";
 import { PET_REFINEMENT_STATS } from "@/data/game/pets";
 import { Badge } from "@/comps/ui/Badge";
 import { Card } from "@/comps/ui/Card";
@@ -14,20 +16,22 @@ import { PetNumberField } from "./PetNumberField";
 
 interface PetCardProps {
 	view: PetView;
+	chief: Playthrough;
 	ruleMet: boolean;
 	onChange: (change: PetChange) => void;
 }
 
-export function PetCard({ view, ruleMet, onChange }: PetCardProps) {
+export function PetCard({ view, chief, ruleMet, onChange }: PetCardProps) {
 	const t = useTranslations("pets");
-	const { pet, unlocked } = view;
+	const { pet, unlocked, locked, lockDay } = view;
 	const petId = pet.id;
 
 	return (
 		<li className="mb-3 break-inside-avoid">
 			<Card
-				className={`flex flex-col gap-3 p-3 ${unlocked ? "" : "border-dashed"}`}
+				className={`flex flex-col gap-3 p-3 ${unlocked ? "" : "border-dashed"} ${locked ? "opacity-60" : ""}`}
 				data-unlocked={unlocked}
+				data-locked={locked}
 			>
 				<div className="flex items-center gap-3">
 					<ItemIcon src={pet.img} size={44} className={unlocked ? "" : "opacity-60"} />
@@ -45,12 +49,15 @@ export function PetCard({ view, ruleMet, onChange }: PetCardProps) {
 						<Switch
 							label={t("card.unlockedLabel", { pet: pet.name })}
 							checked={unlocked}
+							disabled={locked}
 							onChange={(next) =>
 								onChange({ kind: "unlocked", petId, unlocked: next })
 							}
 						/>
 					</span>
 				</div>
+
+				{lockDay !== null && <p className="font-medium">{unlockText(chief, lockDay)}</p>}
 
 				{unlocked ? (
 					<UnlockedBody view={view} onChange={onChange} />
@@ -204,6 +211,14 @@ function UnlockedBody({
 						: t("power", { value: formatNumber(view.power) })}
 				</span>
 			</div>
+			{view.power !== null && view.refiningPower > 0 && (
+				<p className="text-muted font-mono text-xs">
+					{t("powerParts", {
+						base: formatNumber(view.levelPower ?? 0),
+						refining: formatNumber(view.refiningPower),
+					})}
+				</p>
+			)}
 		</>
 	);
 }
