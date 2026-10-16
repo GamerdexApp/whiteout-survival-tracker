@@ -5,9 +5,6 @@ import { routes } from "@/data/nav";
 import { PlaceholderCard } from "./PlaceholderCard";
 
 const buildPhaseByHref: Record<string, number> = {
-	"/overview": 11,
-	"/skins": 11,
-	"/vip": 11,
 	"/wiki": 12,
 	"/wiki/timeline": 12,
 };

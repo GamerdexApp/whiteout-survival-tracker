@@ -21,7 +21,9 @@ import { expertBuffInputs } from "./experts";
 import { buildHeroViews } from "./heroes";
 import { petBuffInputs } from "./pets";
 import { levelOfNode } from "./research";
+import { skinBuffInputs } from "./skins";
 import { tundraAlbumBuffInputs } from "./tundraAlbum";
+import { vipBuffInputs } from "./vip";
 
 const CONSTRUCTION_SPEED_STAT = "construction-speed";
 const RESEARCH_SPEED_STAT = "research-speed";
@@ -81,6 +83,8 @@ const allianceFacilityLevelsOf = (chief: Playthrough) =>
 
 export const buffProfileOf = (chief: Playthrough): BuffProfile => ({
   ...daybreakBuffInputs(chief),
+  ...vipBuffInputs(chief),
+  skins: skinBuffInputs(chief),
   tundraAlbums: tundraAlbumBuffInputs(chief),
   allianceTech: allianceTechLevelsOf(chief),
   allianceFacilities: allianceFacilityLevelsOf(chief),
