@@ -22,6 +22,7 @@ import { Tabs } from "@/comps/ui/Tabs";
 import { useToast } from "@/comps/ui/Toast";
 import { AddEventFlyout } from "./AddEventFlyout";
 import { CalendarTab } from "./CalendarTab";
+import { CoreCyclesCard, CYCLE_EVENT_IDS } from "./CoreCyclesCard";
 import { HistoryTab } from "./HistoryTab";
 import { MyEventsTab } from "./MyEventsTab";
 import { ResultFlyout } from "./ResultFlyout";
@@ -82,7 +83,9 @@ export function EventsView({ chief }: { chief: Playthrough }) {
 		const nowMs = Date.now();
 		if (!change((current) => withUserEvent(rolled(current, nowMs), state))) return;
 		setSchedule(null);
-		setTab((current) => (current === "history" ? current : "mine"));
+		setTab((current) =>
+			current === "history" || CYCLE_EVENT_IDS.includes(state.eventId) ? current : "mine"
+		);
 	};
 
 	const removeEvent = (state: UserEventState) => {
@@ -113,6 +116,16 @@ export function EventsView({ chief }: { chief: Playthrough }) {
 		});
 		return true;
 	};
+
+	const cycles = (
+		<CoreCyclesCard
+			states={chief.userEvents ?? []}
+			zone={zone}
+			nowMs={now}
+			onSet={openAdd}
+			onEdit={openEdit}
+		/>
+	);
 
 	const header = (
 		<PageHeader
@@ -152,6 +165,7 @@ export function EventsView({ chief }: { chief: Playthrough }) {
 		return (
 			<>
 				{header}
+				{cycles}
 				<Card className="flex flex-col items-center gap-4 border-dashed px-6 py-12 text-center">
 					<h2 className="text-lg font-semibold">{t("empty.title")}</h2>
 					<p className="text-muted max-w-lg">{t("empty.description")}</p>
@@ -216,7 +230,13 @@ export function EventsView({ chief }: { chief: Playthrough }) {
 						</Button>
 					</div>
 					{tab === "calendar" && (
-						<CalendarTab entries={entries} zone={zone} nowMs={now} onZone={setZone} />
+						<CalendarTab
+							entries={entries}
+							cycles={cycles}
+							zone={zone}
+							nowMs={now}
+							onZone={setZone}
+						/>
 					)}
 					{tab === "mine" && (
 						<MyEventsTab

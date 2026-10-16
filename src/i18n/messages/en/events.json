@@ -361,5 +361,13 @@
         "changePercentVs": "{percent}% vs {month}",
         "noPrevious": "No earlier result",
         "noTrend": "This event has no score or rank to chart. Its results are in the list below."
+    },
+    "cycles": {
+        "title": "Core event cycles",
+        "hint": "SvS, Alliance Showdown and King of Icefield run on a fixed cycle. Set the next start once and they repeat on the calendar.",
+        "next": "Next {date}, repeats {repeat}",
+        "notSet": "Not set",
+        "set": "Set cycle",
+        "edit": "Edit cycle"
     }
 }

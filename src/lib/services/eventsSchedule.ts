@@ -357,10 +357,13 @@ export const suggestedRuns = (
   const runs: UserEventRun[] = [];
   source.forEach((run, index) => {
     const previous = runs[index - 1];
+    const earliest = previous
+      ? startOfUtcDayMs(Date.parse(previous.startsAt))
+      : tomorrow;
     const dayMs = run.startWeekday
-      ? weekdayOnOrAfter(tomorrow, WEEKDAY_INDEX[run.startWeekday])
+      ? weekdayOnOrAfter(earliest, WEEKDAY_INDEX[run.startWeekday])
       : previous
-        ? startOfUtcDayMs(Date.parse(previous.startsAt)) + runLengthMs(previous)
+        ? earliest + runLengthMs(previous)
         : tomorrow;
     runs.push({
       label: run.label,

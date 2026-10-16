@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { useState } from "react";
+import type { ReactNode } from "react";
 import { LuChevronLeft, LuChevronRight } from "react-icons/lu";
 import { formatNumber } from "@/lib/format";
 import { monthTitleText, timeText } from "@/service/eventsFormat";
@@ -26,6 +27,7 @@ import { UpcomingList } from "./UpcomingList";
 
 interface CalendarTabProps {
 	entries: EventEntry[];
+	cycles: ReactNode;
 	zone: EventsZone;
 	nowMs: number;
 	onZone: (zone: EventsZone) => void;
@@ -41,7 +43,7 @@ const chipsOfDay = (day: CalendarDay, chips: DayChip[]) =>
 		.filter(({ instance }) => instance.startMs < day.endMs && instance.endMs > day.startMs)
 		.sort((a, b) => a.instance.startMs - b.instance.startMs);
 
-export function CalendarTab({ entries, zone, nowMs, onZone }: CalendarTabProps) {
+export function CalendarTab({ entries, cycles, zone, nowMs, onZone }: CalendarTabProps) {
 	const t = useTranslations("events");
 	const [offset, setOffset] = useState(0);
 
@@ -81,6 +83,7 @@ export function CalendarTab({ entries, zone, nowMs, onZone }: CalendarTabProps) 
 
 	return (
 		<>
+			{cycles}
 			<Card className="flex flex-col gap-3 p-4">
 				<div className="flex flex-wrap items-center justify-between gap-3">
 					<div className="flex items-center gap-2">
