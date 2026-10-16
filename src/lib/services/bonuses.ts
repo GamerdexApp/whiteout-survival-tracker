@@ -9,8 +9,11 @@ import type {
 } from "whiteout-survival-data";
 import type { Playthrough } from "@/types/app";
 import { formatDecimal } from "@/lib/format";
+import { facilities, techNodes } from "@/data/game/alliance";
 import { entertainmentBuildings } from "@/data/game/buildings";
 import { allResearch } from "@/data/game/research";
+import { ownedLevelsOf } from "./allianceFacilities";
+import { techLevelOf } from "./allianceTech";
 import { levelledBuildingLevels } from "./buildings";
 import { charmItems, gearItems } from "./chiefGear";
 import { expertBuffInputs } from "./experts";
@@ -58,7 +61,25 @@ const chiefCharmsOf = (chief: Playthrough) => {
   return Object.fromEntries(bySlot);
 };
 
+const allianceTechLevelsOf = (chief: Playthrough) =>
+  Object.fromEntries(
+    techNodes.flatMap((node) => {
+      const level = techLevelOf(chief, node);
+      return level > 0 ? [[node.id, level]] : [];
+    }),
+  );
+
+const allianceFacilityLevelsOf = (chief: Playthrough) =>
+  Object.fromEntries(
+    facilities.flatMap((facility) => {
+      const owned = ownedLevelsOf(chief, facility.id);
+      return owned.length > 0 ? [[facility.id, owned]] : [];
+    }),
+  );
+
 export const buffProfileOf = (chief: Playthrough): BuffProfile => ({
+  allianceTech: allianceTechLevelsOf(chief),
+  allianceFacilities: allianceFacilityLevelsOf(chief),
   heroSkills: heroSkillsOf(chief),
   ...expertBuffInputs(chief),
   pets: petBuffInputs(chief),
