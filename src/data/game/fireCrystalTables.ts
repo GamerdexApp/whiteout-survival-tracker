@@ -14,8 +14,11 @@ export type {
 
 const FIRE_CRYSTAL_RANGES = {
   all: undefined,
-  early: { from: 1, to: 5 },
-  late: { from: 6, to: 10 },
+  fc1to3: { from: 1, to: 3 },
+  fc1to5: { from: 1, to: 5 },
+  fc4to5: { from: 4, to: 5 },
+  fc6to8: { from: 6, to: 8 },
+  fc9to10: { from: 9, to: 10 },
 } satisfies Record<string, FireCrystalLevelRange | undefined>;
 
 export type FireCrystalRangeId = keyof typeof FIRE_CRYSTAL_RANGES;
