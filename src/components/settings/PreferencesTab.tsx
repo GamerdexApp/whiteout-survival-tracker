@@ -67,16 +67,23 @@ export function PreferencesTab() {
 				/>
 				<p className="text-muted">{t("chiefSettings.footnote")}</p>
 			</SettingsCard>
-			<SettingsCard title={t("appearance.title")} description={t("appearance.description")}>
-				<RadioGroup
-					label={t("appearance.themeLabel")}
-					options={themeOptions}
-					value={settings.theme ?? "system"}
-					onChange={(theme) => updateSettings({ theme })}
-				/>
-				<p className="text-muted">{t("appearance.themeNote", { current: systemTheme })}</p>
-			</SettingsCard>
-			<RegionCard />
+			<div className="flex flex-col gap-4">
+				<RegionCard />
+				<SettingsCard
+					title={t("appearance.title")}
+					description={t("appearance.description")}
+				>
+					<RadioGroup
+						label={t("appearance.themeLabel")}
+						options={themeOptions}
+						value={settings.theme ?? "system"}
+						onChange={(theme) => updateSettings({ theme })}
+					/>
+					<p className="text-muted">
+						{t("appearance.themeNote", { current: systemTheme })}
+					</p>
+				</SettingsCard>
+			</div>
 		</div>
 	);
 }
