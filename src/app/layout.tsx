@@ -5,7 +5,9 @@ import { PlaythroughProvider } from "@/lib/contexts/PlaythroughContext";
 import { UIProvider } from "@/lib/contexts/UIContext";
 import { STORAGE_KEY } from "@/service/storage";
 import { APP_NAME } from "@/data/nav";
+import { SITE_DESCRIPTION, SITE_URL } from "@/data/site";
 import { AppShell } from "@/comps/layout/AppShell";
+import { SiteJsonLd } from "@/comps/seo/SiteJsonLd";
 import { ToastProvider } from "@/comps/ui/Toast";
 import "./globals.css";
 
@@ -27,21 +29,14 @@ const lilita = Lilita_One({
 	weight: "400",
 });
 
-const siteUrl = "https://whiteout-survival.gamerdex.app";
-const description =
-	"Track your Whiteout Survival chiefs, buildings, heroes, research and events in one place. Your data stays in your browser.";
-
 export const metadata: Metadata = {
-	metadataBase: new URL(siteUrl),
+	metadataBase: new URL(SITE_URL),
 	title: {
 		default: APP_NAME,
 		template: `%s | ${APP_NAME}`,
 	},
-	description,
+	description: SITE_DESCRIPTION,
 	keywords: ["Whiteout Survival", "progress tracker", "game companion", "planner"],
-	alternates: {
-		canonical: "/",
-	},
 	robots: {
 		index: true,
 		follow: true,
@@ -50,13 +45,12 @@ export const metadata: Metadata = {
 		type: "website",
 		siteName: APP_NAME,
 		title: APP_NAME,
-		description,
-		url: siteUrl,
+		description: SITE_DESCRIPTION,
 	},
 	twitter: {
 		card: "summary_large_image",
 		title: APP_NAME,
-		description,
+		description: SITE_DESCRIPTION,
 	},
 };
 
@@ -77,6 +71,7 @@ export default function RootLayout({
 				<script dangerouslySetInnerHTML={{ __html: applyThemeBeforePaint }} />
 			</head>
 			<body className="min-h-dvh">
+				<SiteJsonLd />
 				<I18nProvider>
 					<UIProvider>
 						<ToastProvider>

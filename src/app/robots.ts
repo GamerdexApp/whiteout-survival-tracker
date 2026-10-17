@@ -1,13 +1,17 @@
 import type { MetadataRoute } from "next";
+import { routes } from "@/data/nav";
+import { SITE_URL } from "@/data/site";
 
-const SITE_URL = "https://whiteout-survival.gamerdex.app";
+const trackerPaths = routes
+  .map((route) => route.href)
+  .filter((href) => !href.startsWith("/wiki"));
 
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: {
       userAgent: "*",
-      allow: "/",
-      disallow: ["/settings/"],
+      allow: ["/", "/wiki"],
+      disallow: trackerPaths,
     },
     sitemap: `${SITE_URL}/sitemap.xml`,
   };
