@@ -2,7 +2,15 @@
 
 import { useTranslations } from "next-intl";
 import { useMemo, useState } from "react";
-import { LuLayoutGrid, LuListFilter, LuNetwork, LuSearch } from "react-icons/lu";
+import {
+	LuClipboardList,
+	LuLayoutGrid,
+	LuListFilter,
+	LuNetwork,
+	LuPencilLine,
+	LuPlay,
+	LuSearch,
+} from "react-icons/lu";
 import type { Playthrough } from "@/types/app";
 import type { ResearchQueueId } from "@/types/app";
 import { usePlaythrough } from "@/lib/contexts/PlaythroughContext";
@@ -280,6 +288,11 @@ export function ResearchView({ chief }: { chief: Playthrough }) {
 							className="order-1 flex-1 lg:flex-none"
 							onClick={() => setMassSetOpen(true)}
 						>
+							<LuPencilLine
+								size={16}
+								aria-hidden="true"
+								className="max-[359px]:hidden"
+							/>
 							{t("view.massSet")}
 						</Button>
 						<Button
@@ -302,8 +315,16 @@ export function ResearchView({ chief }: { chief: Playthrough }) {
 							<SegmentedControl
 								label={t("view.layout.label")}
 								options={[
-									{ id: "grid", label: t("view.layout.grid") },
-									{ id: "tree", label: t("view.layout.tree") },
+									{
+										id: "grid",
+										label: t("view.layout.grid"),
+										icon: <LuLayoutGrid size={16} aria-hidden="true" />,
+									},
+									{
+										id: "tree",
+										label: t("view.layout.tree"),
+										icon: <LuNetwork size={16} aria-hidden="true" />,
+									},
 								]}
 								value={layout}
 								onChange={setLayout}
@@ -314,6 +335,11 @@ export function ResearchView({ chief }: { chief: Playthrough }) {
 								className="order-4 w-full lg:order-3 lg:w-auto"
 								onClick={() => setStartOpen(true)}
 							>
+								<LuPlay
+									size={16}
+									aria-hidden="true"
+									className="max-[359px]:hidden"
+								/>
 								{tq("start.title")}
 							</Button>
 						)}
@@ -322,6 +348,11 @@ export function ResearchView({ chief }: { chief: Playthrough }) {
 							className="order-3 flex-1 lg:order-4 lg:flex-none"
 							onClick={() => setPlanOpen(true)}
 						>
+							<LuClipboardList
+								size={16}
+								aria-hidden="true"
+								className="max-[359px]:hidden"
+							/>
 							{t("view.plan")}
 						</Button>
 					</div>

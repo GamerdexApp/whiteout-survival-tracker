@@ -3,7 +3,7 @@
 import type { ResearchNode } from "whiteout-survival-data";
 import { useTranslations } from "next-intl";
 import { useState } from "react";
-import { LuSearch } from "react-icons/lu";
+import { LuList, LuNetwork, LuSearch } from "react-icons/lu";
 import { formatNumber } from "@/lib/format";
 import {
 	filterWikiNodes,
@@ -154,8 +154,16 @@ function ResearchList() {
 							<SegmentedControl
 								label={t("view.label")}
 								options={[
-									{ id: "list", label: t("view.list") },
-									{ id: "tree", label: t("view.tree") },
+									{
+										id: "list",
+										label: t("view.list"),
+										icon: <LuList size={16} aria-hidden="true" />,
+									},
+									{
+										id: "tree",
+										label: t("view.tree"),
+										icon: <LuNetwork size={16} aria-hidden="true" />,
+									},
 								]}
 								value={view}
 								onChange={setView}
