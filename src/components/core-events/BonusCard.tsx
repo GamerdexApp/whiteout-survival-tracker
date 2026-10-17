@@ -25,7 +25,7 @@ export function BonusCard({ chief, event, bonusPercent }: BonusCardProps) {
 				</h2>
 				<p className="text-muted">{event === "svs" ? t("svsHelp") : t("showdownHelp")}</p>
 			</div>
-			<div className="flex shrink-0 flex-col gap-2 lg:items-end">
+			<div className="flex flex-col gap-2 lg:max-w-56 lg:items-end lg:text-end">
 				<div className="flex items-center gap-2">
 					<span className="font-mono font-semibold">
 						{bonus.level === null
