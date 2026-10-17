@@ -29,15 +29,15 @@
             "description": "Пакет делит 150 строк на ступени: {count}. Выделенная ступень содержит хотя бы один ваш предмет.",
             "rows": "строк: {rows}",
             "names": {
-                "EpicT1": "Epic T1",
-                "MythicT1": "Mythic T1",
-                "MythicT2": "Mythic T2",
-                "LegendaryT1": "Legendary T1",
-                "LegendaryT2": "Legendary T2",
-                "LegendaryT3": "Legendary T3",
-                "LegendaryT4": "Legendary T4",
-                "LegendaryT5": "Legendary T5",
-                "LegendaryT6": "Legendary T6"
+                "EpicT1": "Эпический T1",
+                "MythicT1": "Мифический T1",
+                "MythicT2": "Мифический T2",
+                "LegendaryT1": "Легендарный T1",
+                "LegendaryT2": "Легендарный T2",
+                "LegendaryT3": "Легендарный T3",
+                "LegendaryT4": "Легендарный T4",
+                "LegendaryT5": "Легендарный T5",
+                "LegendaryT6": "Легендарный T6"
             }
         },
         "notes": {
@@ -47,7 +47,7 @@
             },
             "troopType": {
                 "title": "Тип войск введён вручную",
-                "body": "Cap и Watch усиливают Lancer, Coat и Pants усиливают Infantry, Ring и Weapon усиливают Marksman. Автор пакета ввёл это по тексту вики."
+                "body": "Cap и Watch усиливают копейщиков, Coat и Pants усиливают пехоту, Ring и Weapon усиливают стрелков. Автор пакета ввёл это по тексту вики."
             },
             "capacity": {
                 "title": "Вместимость 0 в первых строках",
@@ -110,7 +110,7 @@
         "active": "Действует",
         "notActive": "Не действует",
         "value": "{stat} +{percent}%",
-        "appliesTo": "Предметы {tierName}, для Infantry, Lancer и Marksman",
+        "appliesTo": "Предметы {tierName}, для пехоты, копейщиков и стрелков",
         "needs": "Нужно {pieces} предметов одной ступени. {stat} +0% пока."
     },
     "plan": {

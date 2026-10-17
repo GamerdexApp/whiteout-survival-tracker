@@ -1,12 +1,12 @@
 {
     "defaultSetName": "Set {number}",
     "troop": {
-        "infantry": "Infantry",
-        "lancer": "Lancer",
-        "marksman": "Marksman"
+        "infantry": "Infanterie",
+        "lancer": "Lancier",
+        "marksman": "Tireur d'élite"
     },
     "lock": {
-        "needsMythic": "Nécessite un équipement Mythic",
+        "needsMythic": "Nécessite un équipement Mythique",
         "needsBoth": "Nécessite renforcement 100 et forge de maîtrise niveau 10",
         "needsEnhancement": "Nécessite renforcement 100",
         "needsForging": "Nécessite forge de maîtrise niveau 10"
@@ -47,15 +47,15 @@
         "goal": "Objectif : {value}",
         "quality": "Qualité de l'équipement",
         "qualities": {
-            "mythic": "Mythic",
-            "epic": "Epic",
+            "mythic": "Mythique",
+            "epic": "Épique",
             "rare": "Rare",
-            "uncommon": "Uncommon",
-            "common": "Common"
+            "uncommon": "Peu commun",
+            "common": "Commun"
         },
         "forgingRowLabel": "Ligne de forge de maîtrise",
         "forgingStops": "La forge de maîtrise s'arrête au niveau 10 tant que le renforcement n'est pas à 100.",
-        "lowQualityNote": "Seul l'équipement Mythic peut être forgé et amplifié. La puissance suit les tables Mythic avec la puissance de base de cette qualité, ce que le jeu n'a pas confirmé.",
+        "lowQualityNote": "Seul l'équipement Mythique peut être forgé et amplifié. La puissance suit les tables Mythique avec la puissance de base de cette qualité, ce que le jeu n'a pas confirmé.",
         "enhancement": "Renforcement",
         "enhancementLabel": "Renforcement de {name}",
         "enhancementSlider": "Curseur de renforcement de {name}",
@@ -110,14 +110,14 @@
             "troopType": "Type de troupe",
             "troopTypeHint": "Le type de troupe choisit la colonne de stats du set.",
             "quality": "Qualité de l'équipement",
-            "qualityHint": "Seul l'équipement Mythic peut être forgé et amplifié.",
+            "qualityHint": "Seul l'équipement Mythique peut être forgé et amplifié.",
             "qualityHintCopy": "Un set copié garde la qualité de chaque pièce.",
             "qualities": {
-                "mythic": "Mythic",
-                "epic": "Epic",
+                "mythic": "Mythique",
+                "epic": "Épique",
                 "rare": "Rare",
-                "uncommon": "Uncommon",
-                "common": "Common"
+                "uncommon": "Peu commun",
+                "common": "Commun"
             },
             "startFrom": "Partir de",
             "startFromHint": "Les objectifs ne sont pas copiés. Ils se définissent dans Plan.",
@@ -163,11 +163,11 @@
             "taken": "Cette pièce est déjà dans le plan."
         },
         "qualities": {
-            "mythic": "mythic",
-            "epic": "epic",
+            "mythic": "mythique",
+            "epic": "épique",
             "rare": "rare",
-            "uncommon": "uncommon",
-            "common": "common"
+            "uncommon": "peu commun",
+            "common": "commun"
         },
         "remove": "Retirer {title} du plan",
         "forgingRow": "{name} (+{percent} %)",

@@ -6,7 +6,7 @@
         "marksman": "Xạ thủ"
     },
     "lock": {
-        "needsMythic": "Cần trang bị Mythic",
+        "needsMythic": "Cần trang bị Thần thoại",
         "needsBoth": "Cần cường hóa 100 và rèn tinh thông cấp 10",
         "needsEnhancement": "Cần cường hóa 100",
         "needsForging": "Cần rèn tinh thông cấp 10"
@@ -47,15 +47,15 @@
         "goal": "Mục tiêu: {value}",
         "quality": "Phẩm chất trang bị",
         "qualities": {
-            "mythic": "Mythic",
-            "epic": "Epic",
-            "rare": "Rare",
-            "uncommon": "Uncommon",
-            "common": "Common"
+            "mythic": "Thần thoại",
+            "epic": "Sử thi",
+            "rare": "Hiếm",
+            "uncommon": "Không phổ biến",
+            "common": "Thường"
         },
         "forgingRowLabel": "Dòng rèn tinh thông",
         "forgingStops": "Rèn tinh thông dừng ở cấp 10 cho đến khi cường hóa đạt 100.",
-        "lowQualityNote": "Chỉ trang bị Mythic mới rèn và gia cường được. Sức mạnh theo bảng Mythic với sức mạnh gốc của phẩm chất này, điều mà game chưa xác nhận.",
+        "lowQualityNote": "Chỉ trang bị Thần thoại mới rèn và gia cường được. Sức mạnh theo bảng Thần thoại với sức mạnh gốc của phẩm chất này, điều mà game chưa xác nhận.",
         "enhancement": "Cường hóa",
         "enhancementLabel": "Cường hóa {name}",
         "enhancementSlider": "Thanh trượt cường hóa {name}",
@@ -110,14 +110,14 @@
             "troopType": "Loại quân",
             "troopTypeHint": "Loại quân quyết định cột chỉ số của bộ.",
             "quality": "Phẩm chất trang bị",
-            "qualityHint": "Chỉ trang bị Mythic mới rèn và gia cường được.",
+            "qualityHint": "Chỉ trang bị Thần thoại mới rèn và gia cường được.",
             "qualityHintCopy": "Bộ sao chép giữ phẩm chất của từng món.",
             "qualities": {
-                "mythic": "Mythic",
-                "epic": "Epic",
-                "rare": "Rare",
-                "uncommon": "Uncommon",
-                "common": "Common"
+                "mythic": "Thần thoại",
+                "epic": "Sử thi",
+                "rare": "Hiếm",
+                "uncommon": "Không phổ biến",
+                "common": "Thường"
             },
             "startFrom": "Bắt đầu từ",
             "startFromHint": "Mục tiêu không được sao chép. Mục tiêu được đặt trong Kế hoạch.",
@@ -163,11 +163,11 @@
             "taken": "Món này đã có trong kế hoạch."
         },
         "qualities": {
-            "mythic": "mythic",
-            "epic": "epic",
-            "rare": "rare",
-            "uncommon": "uncommon",
-            "common": "common"
+            "mythic": "thần thoại",
+            "epic": "sử thi",
+            "rare": "hiếm",
+            "uncommon": "không phổ biến",
+            "common": "thường"
         },
         "remove": "Xóa {title} khỏi kế hoạch",
         "forgingRow": "{name} (+{percent}%)",

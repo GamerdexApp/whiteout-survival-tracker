@@ -1,12 +1,12 @@
 {
     "defaultSetName": "Комплект {number}",
     "troop": {
-        "infantry": "Infantry",
-        "lancer": "Lancer",
-        "marksman": "Marksman"
+        "infantry": "Пехота",
+        "lancer": "Копейщик",
+        "marksman": "Стрелок"
     },
     "lock": {
-        "needsMythic": "Нужно снаряжение Mythic",
+        "needsMythic": "Нужно мифическое снаряжение",
         "needsBoth": "Нужны усиление 100 и ковка мастерства 10 ур.",
         "needsEnhancement": "Нужно усиление 100",
         "needsForging": "Нужна ковка мастерства 10 ур."
@@ -47,15 +47,15 @@
         "goal": "Цель: {value}",
         "quality": "Качество снаряжения",
         "qualities": {
-            "mythic": "Mythic",
-            "epic": "Epic",
-            "rare": "Rare",
-            "uncommon": "Uncommon",
-            "common": "Common"
+            "mythic": "Мифический",
+            "epic": "Эпический",
+            "rare": "Редкий",
+            "uncommon": "Необычный",
+            "common": "Обычный"
         },
         "forgingRowLabel": "Строка ковки мастерства",
         "forgingStops": "Ковка мастерства останавливается на 10 уровне, пока усиление не достигнет 100.",
-        "lowQualityNote": "Ковать и наделять можно только снаряжение Mythic. Мощь считается по таблицам Mythic с базовой мощью этого качества, игра это не подтверждает.",
+        "lowQualityNote": "Ковать и наделять можно только мифическое снаряжение. Мощь считается по таблицам мифического снаряжения с базовой мощью этого качества, игра это не подтверждает.",
         "enhancement": "Усиление",
         "enhancementLabel": "Усиление: {name}",
         "enhancementSlider": "Ползунок усиления: {name}",
@@ -110,14 +110,14 @@
             "troopType": "Тип войск",
             "troopTypeHint": "Тип войск выбирает столбец характеристик комплекта.",
             "quality": "Качество снаряжения",
-            "qualityHint": "Ковать и наделять можно только снаряжение Mythic.",
+            "qualityHint": "Ковать и наделять можно только мифическое снаряжение.",
             "qualityHintCopy": "Копия комплекта сохраняет качество каждого предмета.",
             "qualities": {
-                "mythic": "Mythic",
-                "epic": "Epic",
-                "rare": "Rare",
-                "uncommon": "Uncommon",
-                "common": "Common"
+                "mythic": "Мифический",
+                "epic": "Эпический",
+                "rare": "Редкий",
+                "uncommon": "Необычный",
+                "common": "Обычный"
             },
             "startFrom": "Начать с",
             "startFromHint": "Цели не копируются. Цели задаются в плане.",
@@ -163,11 +163,11 @@
             "taken": "Этот предмет уже в плане."
         },
         "qualities": {
-            "mythic": "Mythic",
-            "epic": "Epic",
-            "rare": "Rare",
-            "uncommon": "Uncommon",
-            "common": "Common"
+            "mythic": "Мифический",
+            "epic": "Эпический",
+            "rare": "Редкий",
+            "uncommon": "Необычный",
+            "common": "Обычный"
         },
         "remove": "Убрать {title} из плана",
         "forgingRow": "{name} (+{percent}%)",

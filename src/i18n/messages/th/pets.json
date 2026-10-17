@@ -6,11 +6,11 @@
         "subline": "{chief} · {details} · ปลดล็อกสัตว์เลี้ยง {unlocked} จาก {total}"
     },
     "rarities": {
-        "Common": "Common",
-        "Uncommon": "Uncommon",
-        "Rare": "Rare",
-        "Epic": "Epic",
-        "Legendary": "Legendary"
+        "Common": "ธรรมดา",
+        "Uncommon": "ไม่ธรรมดา",
+        "Rare": "หายาก",
+        "Epic": "เอพิค",
+        "Legendary": "ตำนาน"
     },
     "unlock": {
         "afterFurnace": "วันที่ {days} และ Furnace {level}",
@@ -36,9 +36,9 @@
         "health": "Health",
         "gain": "+{value}%",
         "types": {
-            "infantry": "Infantry",
-            "lancer": "Lancer",
-            "marksman": "Marksman"
+            "infantry": "ทหารราบ",
+            "lancer": "ทหารหอก",
+            "marksman": "พลซุ่มยิง"
         }
     },
     "search": {
@@ -101,11 +101,11 @@
         "rarityAll": "ทั้งหมด {amount}",
         "rarityOption": "{rarity} {amount}",
         "rarities": {
-            "Common": "Common",
-            "Uncommon": "Uncommon",
-            "Rare": "Rare",
-            "Epic": "Epic",
-            "Legendary": "Legendary"
+            "Common": "ธรรมดา",
+            "Uncommon": "ไม่ธรรมดา",
+            "Rare": "หายาก",
+            "Epic": "เอพิค",
+            "Legendary": "ตำนาน"
         },
         "status": "สถานะ",
         "statusOptions": {
@@ -155,11 +155,11 @@
         },
         "block": {
             "rarities": {
-                "Common": "Common",
-                "Uncommon": "Uncommon",
-                "Rare": "Rare",
-                "Epic": "Epic",
-                "Legendary": "Legendary"
+                "Common": "ธรรมดา",
+                "Uncommon": "ไม่ธรรมดา",
+                "Rare": "หายาก",
+                "Epic": "เอพิค",
+                "Legendary": "ตำนาน"
             },
             "maxLevel": "เลเวลสูงสุด {max}",
             "remove": "ลบ",

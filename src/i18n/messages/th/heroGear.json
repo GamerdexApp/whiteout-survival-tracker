@@ -1,12 +1,12 @@
 {
     "defaultSetName": "ชุด {number}",
     "troop": {
-        "infantry": "Infantry",
-        "lancer": "Lancer",
-        "marksman": "Marksman"
+        "infantry": "ทหารราบ",
+        "lancer": "ทหารหอก",
+        "marksman": "พลซุ่มยิง"
     },
     "lock": {
-        "needsMythic": "ต้องใช้อุปกรณ์ Mythic",
+        "needsMythic": "ต้องใช้อุปกรณ์ มีธิค",
         "needsBoth": "ต้องเสริมแกร่ง 100 และเลเวลหลอมชำนาญ 10",
         "needsEnhancement": "ต้องเสริมแกร่ง 100",
         "needsForging": "ต้องเลเวลหลอมชำนาญ 10"
@@ -47,15 +47,15 @@
         "goal": "เป้าหมาย: {value}",
         "quality": "คุณภาพอุปกรณ์",
         "qualities": {
-            "mythic": "Mythic",
-            "epic": "Epic",
-            "rare": "Rare",
-            "uncommon": "Uncommon",
-            "common": "Common"
+            "mythic": "มีธิค",
+            "epic": "เอพิค",
+            "rare": "หายาก",
+            "uncommon": "ไม่ธรรมดา",
+            "common": "ธรรมดา"
         },
         "forgingRowLabel": "แถวหลอมชำนาญ",
         "forgingStops": "การหลอมชำนาญหยุดที่เลเวล 10 จนกว่าการเสริมแกร่งจะถึง 100",
-        "lowQualityNote": "เฉพาะอุปกรณ์ Mythic เท่านั้นที่หลอมและเพิ่มพลังพิเศษได้ พลังใช้ตาราง Mythic กับพลังพื้นฐานของคุณภาพนี้ ซึ่งเกมยังไม่ยืนยัน",
+        "lowQualityNote": "เฉพาะอุปกรณ์ มีธิค เท่านั้นที่หลอมและเพิ่มพลังพิเศษได้ พลังใช้ตาราง มีธิค กับพลังพื้นฐานของคุณภาพนี้ ซึ่งเกมยังไม่ยืนยัน",
         "enhancement": "เสริมแกร่ง",
         "enhancementLabel": "เสริมแกร่ง {name}",
         "enhancementSlider": "แถบเลื่อนเสริมแกร่ง {name}",
@@ -110,14 +110,14 @@
             "troopType": "ประเภททหาร",
             "troopTypeHint": "ประเภททหารเลือกคอลัมน์ค่าสถานะของชุด",
             "quality": "คุณภาพอุปกรณ์",
-            "qualityHint": "เฉพาะอุปกรณ์ Mythic เท่านั้นที่หลอมและเพิ่มพลังพิเศษได้",
+            "qualityHint": "เฉพาะอุปกรณ์ มีธิค เท่านั้นที่หลอมและเพิ่มพลังพิเศษได้",
             "qualityHintCopy": "ชุดที่คัดลอกจะคงคุณภาพของแต่ละชิ้น",
             "qualities": {
-                "mythic": "Mythic",
-                "epic": "Epic",
-                "rare": "Rare",
-                "uncommon": "Uncommon",
-                "common": "Common"
+                "mythic": "มีธิค",
+                "epic": "เอพิค",
+                "rare": "หายาก",
+                "uncommon": "ไม่ธรรมดา",
+                "common": "ธรรมดา"
             },
             "startFrom": "เริ่มจาก",
             "startFromHint": "ไม่คัดลอกเป้าหมาย ตั้งเป้าหมายในแผน",
@@ -163,11 +163,11 @@
             "taken": "ชิ้นนี้อยู่ในแผนแล้ว"
         },
         "qualities": {
-            "mythic": "Mythic",
-            "epic": "Epic",
-            "rare": "Rare",
-            "uncommon": "Uncommon",
-            "common": "Common"
+            "mythic": "มีธิค",
+            "epic": "เอพิค",
+            "rare": "หายาก",
+            "uncommon": "ไม่ธรรมดา",
+            "common": "ธรรมดา"
         },
         "remove": "ลบ {title} ออกจากแผน",
         "forgingRow": "{name} (+{percent}%)",

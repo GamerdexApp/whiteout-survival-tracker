@@ -29,15 +29,15 @@
             "description": "Les données répartissent 150 lignes en {count} paliers. Un palier en surbrillance contient au moins une de vos pièces.",
             "rows": "{rows} lignes",
             "names": {
-                "EpicT1": "Epic T1",
-                "MythicT1": "Mythic T1",
-                "MythicT2": "Mythic T2",
-                "LegendaryT1": "Legendary T1",
-                "LegendaryT2": "Legendary T2",
-                "LegendaryT3": "Legendary T3",
-                "LegendaryT4": "Legendary T4",
-                "LegendaryT5": "Legendary T5",
-                "LegendaryT6": "Legendary T6"
+                "EpicT1": "Épique T1",
+                "MythicT1": "Mythique T1",
+                "MythicT2": "Mythique T2",
+                "LegendaryT1": "Légendaire T1",
+                "LegendaryT2": "Légendaire T2",
+                "LegendaryT3": "Légendaire T3",
+                "LegendaryT4": "Légendaire T4",
+                "LegendaryT5": "Légendaire T5",
+                "LegendaryT6": "Légendaire T6"
             }
         },
         "notes": {
@@ -47,7 +47,7 @@
             },
             "troopType": {
                 "title": "Le type de troupe est saisi à la main",
-                "body": "Cap et Watch renforcent les Lancer, Coat et Pants renforcent l'Infantry, Ring et Weapon renforcent les Marksman. L'auteur des données l'a saisi d'après le texte du wiki."
+                "body": "Cap et Watch renforcent les Lanciers, Coat et Pants renforcent l'Infanterie, Ring et Weapon renforcent les Tireurs d'élite. L'auteur des données l'a saisi d'après le texte du wiki."
             },
             "capacity": {
                 "title": "La capacité vaut 0 sur les premières lignes",
@@ -110,7 +110,7 @@
         "active": "Actif",
         "notActive": "Inactif",
         "value": "{stat} +{percent} %",
-        "appliesTo": "Pièces {tierName}, pour Infantry, Lancer et Marksman",
+        "appliesTo": "Pièces {tierName}, pour Infanterie, Lancier et Tireur d'élite",
         "needs": "Nécessite {pieces} pièces du même palier. {stat} +0 % pour l'instant."
     },
     "plan": {

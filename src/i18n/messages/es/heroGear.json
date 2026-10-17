@@ -1,12 +1,12 @@
 {
     "defaultSetName": "Conjunto {number}",
     "troop": {
-        "infantry": "Infantry",
-        "lancer": "Lancer",
-        "marksman": "Marksman"
+        "infantry": "Infantería",
+        "lancer": "Lancero",
+        "marksman": "Tirador"
     },
     "lock": {
-        "needsMythic": "Requiere equipo Mythic",
+        "needsMythic": "Requiere equipo Mítico",
         "needsBoth": "Requiere refuerzo 100 y forja de maestría nivel 10",
         "needsEnhancement": "Requiere refuerzo 100",
         "needsForging": "Requiere forja de maestría nivel 10"
@@ -47,15 +47,15 @@
         "goal": "Objetivo: {value}",
         "quality": "Calidad del equipo",
         "qualities": {
-            "mythic": "Mythic",
-            "epic": "Epic",
-            "rare": "Rare",
-            "uncommon": "Uncommon",
-            "common": "Common"
+            "mythic": "Mítico",
+            "epic": "Épico",
+            "rare": "Raro",
+            "uncommon": "Poco común",
+            "common": "Común"
         },
         "forgingRowLabel": "Fila de forja de maestría",
         "forgingStops": "La forja de maestría se detiene en el nivel 10 hasta que el refuerzo sea 100.",
-        "lowQualityNote": "Solo el equipo Mythic se puede forjar y potenciar. El poder sigue las tablas Mythic con el poder base de esta calidad, algo que el juego no ha confirmado.",
+        "lowQualityNote": "Solo el equipo Mítico se puede forjar y potenciar. El poder sigue las tablas Míticas con el poder base de esta calidad, algo que el juego no ha confirmado.",
         "enhancement": "Refuerzo",
         "enhancementLabel": "Refuerzo de {name}",
         "enhancementSlider": "Control de refuerzo de {name}",
@@ -110,14 +110,14 @@
             "troopType": "Tipo de tropa",
             "troopTypeHint": "El tipo de tropa elige la columna de estadísticas del conjunto.",
             "quality": "Calidad del equipo",
-            "qualityHint": "Solo el equipo Mythic se puede forjar y potenciar.",
+            "qualityHint": "Solo el equipo Mítico se puede forjar y potenciar.",
             "qualityHintCopy": "Un conjunto copiado conserva la calidad de cada pieza.",
             "qualities": {
-                "mythic": "Mythic",
-                "epic": "Epic",
-                "rare": "Rare",
-                "uncommon": "Uncommon",
-                "common": "Common"
+                "mythic": "Mítico",
+                "epic": "Épico",
+                "rare": "Raro",
+                "uncommon": "Poco común",
+                "common": "Común"
             },
             "startFrom": "Empezar desde",
             "startFromHint": "Los objetivos no se copian. Los objetivos se fijan en Plan.",
@@ -163,11 +163,11 @@
             "taken": "Esta pieza ya está en el plan."
         },
         "qualities": {
-            "mythic": "mythic",
-            "epic": "epic",
-            "rare": "rare",
-            "uncommon": "uncommon",
-            "common": "common"
+            "mythic": "mítico",
+            "epic": "épico",
+            "rare": "raro",
+            "uncommon": "poco común",
+            "common": "común"
         },
         "remove": "Quitar {title} del plan",
         "forgingRow": "{name} (+{percent}%)",

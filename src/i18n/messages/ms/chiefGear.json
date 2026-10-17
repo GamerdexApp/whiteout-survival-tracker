@@ -29,15 +29,15 @@
             "description": "Pakej melabelkan 150 baris dengan {count} peringkat. Peringkat yang diserlahkan mengandungi sekurang-kurangnya satu keping anda.",
             "rows": "{rows} baris",
             "names": {
-                "EpicT1": "Epic T1",
-                "MythicT1": "Mythic T1",
-                "MythicT2": "Mythic T2",
-                "LegendaryT1": "Legendary T1",
-                "LegendaryT2": "Legendary T2",
-                "LegendaryT3": "Legendary T3",
-                "LegendaryT4": "Legendary T4",
-                "LegendaryT5": "Legendary T5",
-                "LegendaryT6": "Legendary T6"
+                "EpicT1": "Epik T1",
+                "MythicT1": "Mitos T1",
+                "MythicT2": "Mitos T2",
+                "LegendaryT1": "Lagenda T1",
+                "LegendaryT2": "Lagenda T2",
+                "LegendaryT3": "Lagenda T3",
+                "LegendaryT4": "Lagenda T4",
+                "LegendaryT5": "Lagenda T5",
+                "LegendaryT6": "Lagenda T6"
             }
         },
         "notes": {
@@ -47,7 +47,7 @@
             },
             "troopType": {
                 "title": "Jenis tentera dimasukkan secara manual",
-                "body": "Cap dan Watch menguatkan Lancer, Coat dan Pants menguatkan Infantry, Ring dan Weapon menguatkan Marksman. Penulis pakej menaipnya daripada teks wiki."
+                "body": "Cap dan Watch menguatkan Penombak, Coat dan Pants menguatkan Infantri, Ring dan Weapon menguatkan Penembak tepat. Penulis pakej menaipnya daripada teks wiki."
             },
             "capacity": {
                 "title": "Kapasiti ialah 0 pada baris awal",
@@ -110,7 +110,7 @@
         "active": "Aktif",
         "notActive": "Tidak aktif",
         "value": "{stat} +{percent}%",
-        "appliesTo": "Keping {tierName}, untuk Infantry, Lancer dan Marksman",
+        "appliesTo": "Keping {tierName}, untuk Infantri, Penombak dan Penembak tepat",
         "needs": "Perlu {pieces} keping peringkat yang sama. {stat} +0% buat masa ini."
     },
     "plan": {

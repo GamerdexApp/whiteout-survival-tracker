@@ -1,12 +1,12 @@
 {
     "defaultSetName": "Set {number}",
     "troop": {
-        "infantry": "Infantry",
-        "lancer": "Lancer",
-        "marksman": "Marksman"
+        "infantry": "Infantri",
+        "lancer": "Penombak",
+        "marksman": "Penembak tepat"
     },
     "lock": {
-        "needsMythic": "Perlu gear Mythic",
+        "needsMythic": "Perlu gear Mitos",
         "needsBoth": "Perlu peningkatan 100 dan tahap penempaan penguasaan 10",
         "needsEnhancement": "Perlu peningkatan 100",
         "needsForging": "Perlu tahap penempaan penguasaan 10"
@@ -47,15 +47,15 @@
         "goal": "Matlamat: {value}",
         "quality": "Kualiti gear",
         "qualities": {
-            "mythic": "Mythic",
-            "epic": "Epic",
-            "rare": "Rare",
-            "uncommon": "Uncommon",
-            "common": "Common"
+            "mythic": "Mitos",
+            "epic": "Epik",
+            "rare": "Jarang",
+            "uncommon": "Tidak Biasa",
+            "common": "Biasa"
         },
         "forgingRowLabel": "Baris penempaan penguasaan",
         "forgingStops": "Penempaan penguasaan berhenti pada tahap 10 sehingga peningkatan ialah 100.",
-        "lowQualityNote": "Hanya gear Mythic boleh ditempa dan diperkasa. Kuasa mengikut jadual Mythic dengan kuasa asas kualiti ini, yang belum disahkan oleh permainan.",
+        "lowQualityNote": "Hanya gear Mitos boleh ditempa dan diperkasa. Kuasa mengikut jadual Mitos dengan kuasa asas kualiti ini, yang belum disahkan oleh permainan.",
         "enhancement": "Peningkatan",
         "enhancementLabel": "Peningkatan {name}",
         "enhancementSlider": "Peluncur peningkatan {name}",
@@ -110,14 +110,14 @@
             "troopType": "Jenis tentera",
             "troopTypeHint": "Jenis tentera memilih lajur statistik set.",
             "quality": "Kualiti gear",
-            "qualityHint": "Hanya gear Mythic boleh ditempa dan diperkasa.",
+            "qualityHint": "Hanya gear Mitos boleh ditempa dan diperkasa.",
             "qualityHintCopy": "Set yang disalin mengekalkan kualiti setiap keping.",
             "qualities": {
-                "mythic": "Mythic",
-                "epic": "Epic",
-                "rare": "Rare",
-                "uncommon": "Uncommon",
-                "common": "Common"
+                "mythic": "Mitos",
+                "epic": "Epik",
+                "rare": "Jarang",
+                "uncommon": "Tidak Biasa",
+                "common": "Biasa"
             },
             "startFrom": "Mula dari",
             "startFromHint": "Matlamat tidak disalin. Matlamat ditetapkan dalam Rancang.",
@@ -163,11 +163,11 @@
             "taken": "Keping ini sudah ada dalam pelan."
         },
         "qualities": {
-            "mythic": "mythic",
-            "epic": "epic",
-            "rare": "rare",
-            "uncommon": "uncommon",
-            "common": "common"
+            "mythic": "mitos",
+            "epic": "epik",
+            "rare": "jarang",
+            "uncommon": "tidak biasa",
+            "common": "biasa"
         },
         "remove": "Buang {title} daripada pelan",
         "forgingRow": "{name} (+{percent}%)",

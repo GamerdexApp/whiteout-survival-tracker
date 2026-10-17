@@ -6,7 +6,7 @@
         "marksman": "Atirador"
     },
     "lock": {
-        "needsMythic": "Requer equipamento Mythic",
+        "needsMythic": "Requer equipamento Mítico",
         "needsBoth": "Requer aprimoramento 100 e forja de mestria nível 10",
         "needsEnhancement": "Requer aprimoramento 100",
         "needsForging": "Requer forja de mestria nível 10"
@@ -47,15 +47,15 @@
         "goal": "Objetivo: {value}",
         "quality": "Qualidade do equipamento",
         "qualities": {
-            "mythic": "Mythic",
-            "epic": "Epic",
-            "rare": "Rare",
-            "uncommon": "Uncommon",
-            "common": "Common"
+            "mythic": "Mítico",
+            "epic": "Épico",
+            "rare": "Raro",
+            "uncommon": "Incomum",
+            "common": "Comum"
         },
         "forgingRowLabel": "Linha de forja de mestria",
         "forgingStops": "A forja de mestria pára no nível 10 até o aprimoramento chegar a 100.",
-        "lowQualityNote": "Só o equipamento Mythic pode ser forjado e potenciado. O poder segue as tabelas Mythic com o poder base desta qualidade, que o jogo não confirmou.",
+        "lowQualityNote": "Só o equipamento Mítico pode ser forjado e potenciado. O poder segue as tabelas Míticas com o poder base desta qualidade, que o jogo não confirmou.",
         "enhancement": "Aprimoramento",
         "enhancementLabel": "Aprimoramento de {name}",
         "enhancementSlider": "Controlo de aprimoramento de {name}",
@@ -110,14 +110,14 @@
             "troopType": "Tipo de tropa",
             "troopTypeHint": "O tipo de tropa escolhe a coluna de atributos do conjunto.",
             "quality": "Qualidade do equipamento",
-            "qualityHint": "Só o equipamento Mythic pode ser forjado e potenciado.",
+            "qualityHint": "Só o equipamento Mítico pode ser forjado e potenciado.",
             "qualityHintCopy": "Um conjunto copiado mantém a qualidade de cada peça.",
             "qualities": {
-                "mythic": "Mythic",
-                "epic": "Epic",
-                "rare": "Rare",
-                "uncommon": "Uncommon",
-                "common": "Common"
+                "mythic": "Mítico",
+                "epic": "Épico",
+                "rare": "Raro",
+                "uncommon": "Incomum",
+                "common": "Comum"
             },
             "startFrom": "Começar a partir de",
             "startFromHint": "Os objetivos não são copiados. Os objetivos definem-se no Plano.",
@@ -163,11 +163,11 @@
             "taken": "Esta peça já está no plano."
         },
         "qualities": {
-            "mythic": "mythic",
-            "epic": "epic",
-            "rare": "rare",
-            "uncommon": "uncommon",
-            "common": "common"
+            "mythic": "mítico",
+            "epic": "épico",
+            "rare": "raro",
+            "uncommon": "incomum",
+            "common": "comum"
         },
         "remove": "Remover {title} do plano",
         "forgingRow": "{name} (+{percent}%)",

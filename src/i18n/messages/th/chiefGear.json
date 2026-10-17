@@ -29,15 +29,15 @@
             "description": "แพ็กเกจข้อมูลแบ่ง 150 แถวเป็น {count} ระดับ ระดับที่เน้นสีมีอุปกรณ์ของคุณอย่างน้อยหนึ่งชิ้น",
             "rows": "{rows} แถว",
             "names": {
-                "EpicT1": "Epic T1",
-                "MythicT1": "Mythic T1",
-                "MythicT2": "Mythic T2",
-                "LegendaryT1": "Legendary T1",
-                "LegendaryT2": "Legendary T2",
-                "LegendaryT3": "Legendary T3",
-                "LegendaryT4": "Legendary T4",
-                "LegendaryT5": "Legendary T5",
-                "LegendaryT6": "Legendary T6"
+                "EpicT1": "เอพิค T1",
+                "MythicT1": "มีธิค T1",
+                "MythicT2": "มีธิค T2",
+                "LegendaryT1": "ตำนาน T1",
+                "LegendaryT2": "ตำนาน T2",
+                "LegendaryT3": "ตำนาน T3",
+                "LegendaryT4": "ตำนาน T4",
+                "LegendaryT5": "ตำนาน T5",
+                "LegendaryT6": "ตำนาน T6"
             }
         },
         "notes": {
@@ -47,7 +47,7 @@
             },
             "troopType": {
                 "title": "ประเภททหารกรอกด้วยมือ",
-                "body": "Cap และ Watch เสริม Lancer, Coat และ Pants เสริม Infantry, Ring และ Weapon เสริม Marksman ผู้จัดทำแพ็กเกจพิมพ์ข้อมูลนี้จากข้อความในวิกิ"
+                "body": "Cap และ Watch เสริม ทหารหอก, Coat และ Pants เสริม ทหารราบ, Ring และ Weapon เสริม พลซุ่มยิง ผู้จัดทำแพ็กเกจพิมพ์ข้อมูลนี้จากข้อความในวิกิ"
             },
             "capacity": {
                 "title": "ความจุเป็น 0 ในแถวแรก ๆ",
@@ -110,7 +110,7 @@
         "active": "ใช้งานอยู่",
         "notActive": "ยังไม่ใช้งาน",
         "value": "{stat} +{percent}%",
-        "appliesTo": "อุปกรณ์ {tierName} สำหรับ Infantry, Lancer และ Marksman",
+        "appliesTo": "อุปกรณ์ {tierName} สำหรับ ทหารราบ, ทหารหอก และ พลซุ่มยิง",
         "needs": "ต้องมีอุปกรณ์ระดับเดียวกัน {pieces} ชิ้น {stat} +0% ในตอนนี้"
     },
     "plan": {

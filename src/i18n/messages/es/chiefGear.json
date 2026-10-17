@@ -29,15 +29,15 @@
             "description": "El paquete etiqueta 150 filas con {count} tiers. Un tier resaltado contiene al menos una de tus piezas.",
             "rows": "{rows} filas",
             "names": {
-                "EpicT1": "Epic T1",
-                "MythicT1": "Mythic T1",
-                "MythicT2": "Mythic T2",
-                "LegendaryT1": "Legendary T1",
-                "LegendaryT2": "Legendary T2",
-                "LegendaryT3": "Legendary T3",
-                "LegendaryT4": "Legendary T4",
-                "LegendaryT5": "Legendary T5",
-                "LegendaryT6": "Legendary T6"
+                "EpicT1": "Épico T1",
+                "MythicT1": "Mítico T1",
+                "MythicT2": "Mítico T2",
+                "LegendaryT1": "Legendario T1",
+                "LegendaryT2": "Legendario T2",
+                "LegendaryT3": "Legendario T3",
+                "LegendaryT4": "Legendario T4",
+                "LegendaryT5": "Legendario T5",
+                "LegendaryT6": "Legendario T6"
             }
         },
         "notes": {
@@ -47,7 +47,7 @@
             },
             "troopType": {
                 "title": "El tipo de tropa se introdujo a mano",
-                "body": "Cap y Watch mejoran Lancer, Coat y Pants mejoran Infantry, Ring y Weapon mejoran Marksman. El autor del paquete lo copió de un texto de la wiki."
+                "body": "Cap y Watch mejoran al Lancero, Coat y Pants a la Infantería, Ring y Weapon al Tirador. El autor del paquete lo copió de un texto de la wiki."
             },
             "capacity": {
                 "title": "La capacidad es 0 en las primeras filas",
@@ -110,7 +110,7 @@
         "active": "Activa",
         "notActive": "Inactiva",
         "value": "{stat} +{percent}%",
-        "appliesTo": "Piezas {tierName}, para Infantry, Lancer y Marksman",
+        "appliesTo": "Piezas {tierName}, para Infantería, Lancero y Tirador",
         "needs": "Requiere {pieces} piezas del mismo tier. {stat} +0% por ahora."
     },
     "plan": {

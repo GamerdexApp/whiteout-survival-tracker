@@ -2,11 +2,11 @@
     "defaultSetName": "Set {number}",
     "troop": {
         "infantry": "Infanteri",
-        "lancer": "Lancer",
-        "marksman": "Marksman"
+        "lancer": "Penombak",
+        "marksman": "Penembak jitu"
     },
     "lock": {
-        "needsMythic": "Butuh perlengkapan Mythic",
+        "needsMythic": "Butuh perlengkapan Mitos",
         "needsBoth": "Butuh peningkatan 100 dan penempaan mastery level 10",
         "needsEnhancement": "Butuh peningkatan 100",
         "needsForging": "Butuh penempaan mastery level 10"
@@ -47,15 +47,15 @@
         "goal": "Target: {value}",
         "quality": "Kualitas perlengkapan",
         "qualities": {
-            "mythic": "Mythic",
-            "epic": "Epic",
-            "rare": "Rare",
-            "uncommon": "Uncommon",
-            "common": "Common"
+            "mythic": "Mitos",
+            "epic": "Epik",
+            "rare": "Langka",
+            "uncommon": "Tidak Umum",
+            "common": "Umum"
         },
         "forgingRowLabel": "Baris penempaan mastery",
         "forgingStops": "Penempaan mastery berhenti di level 10 sampai peningkatan mencapai 100.",
-        "lowQualityNote": "Hanya perlengkapan Mythic yang bisa ditempa dan dikuatkan. Kekuatan mengikuti tabel Mythic dengan kekuatan dasar kualitas ini, yang belum dikonfirmasi game.",
+        "lowQualityNote": "Hanya perlengkapan Mitos yang bisa ditempa dan dikuatkan. Kekuatan mengikuti tabel Mitos dengan kekuatan dasar kualitas ini, yang belum dikonfirmasi game.",
         "enhancement": "Peningkatan",
         "enhancementLabel": "Peningkatan {name}",
         "enhancementSlider": "Penggeser peningkatan {name}",
@@ -110,14 +110,14 @@
             "troopType": "Jenis pasukan",
             "troopTypeHint": "Jenis pasukan menentukan kolom statistik set.",
             "quality": "Kualitas perlengkapan",
-            "qualityHint": "Hanya perlengkapan Mythic yang bisa ditempa dan dikuatkan.",
+            "qualityHint": "Hanya perlengkapan Mitos yang bisa ditempa dan dikuatkan.",
             "qualityHintCopy": "Set salinan mempertahankan kualitas tiap bagian.",
             "qualities": {
-                "mythic": "Mythic",
-                "epic": "Epic",
-                "rare": "Rare",
-                "uncommon": "Uncommon",
-                "common": "Common"
+                "mythic": "Mitos",
+                "epic": "Epik",
+                "rare": "Langka",
+                "uncommon": "Tidak Umum",
+                "common": "Umum"
             },
             "startFrom": "Mulai dari",
             "startFromHint": "Target tidak disalin. Target diatur di Rencana.",
@@ -163,11 +163,11 @@
             "taken": "Bagian ini sudah ada di rencana."
         },
         "qualities": {
-            "mythic": "mythic",
-            "epic": "epic",
-            "rare": "rare",
-            "uncommon": "uncommon",
-            "common": "common"
+            "mythic": "mitos",
+            "epic": "epik",
+            "rare": "langka",
+            "uncommon": "tidak umum",
+            "common": "umum"
         },
         "remove": "Hapus {title} dari rencana",
         "forgingRow": "{name} (+{percent}%)",

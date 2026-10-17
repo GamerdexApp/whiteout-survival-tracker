@@ -29,15 +29,15 @@
             "description": "Paket data memberi label 150 baris dengan {count} tier. Tier yang disorot memuat setidaknya satu bagianmu.",
             "rows": "{rows} baris",
             "names": {
-                "EpicT1": "Epic T1",
-                "MythicT1": "Mythic T1",
-                "MythicT2": "Mythic T2",
-                "LegendaryT1": "Legendary T1",
-                "LegendaryT2": "Legendary T2",
-                "LegendaryT3": "Legendary T3",
-                "LegendaryT4": "Legendary T4",
-                "LegendaryT5": "Legendary T5",
-                "LegendaryT6": "Legendary T6"
+                "EpicT1": "Epik T1",
+                "MythicT1": "Mitos T1",
+                "MythicT2": "Mitos T2",
+                "LegendaryT1": "Legendaris T1",
+                "LegendaryT2": "Legendaris T2",
+                "LegendaryT3": "Legendaris T3",
+                "LegendaryT4": "Legendaris T4",
+                "LegendaryT5": "Legendaris T5",
+                "LegendaryT6": "Legendaris T6"
             }
         },
         "notes": {
@@ -47,7 +47,7 @@
             },
             "troopType": {
                 "title": "Jenis pasukan diisi manual",
-                "body": "Cap dan Watch memberi buff Lancer, Coat dan Pants memberi buff Infantry, Ring dan Weapon memberi buff Marksman. Penulis paket data mengetiknya dari teks wiki."
+                "body": "Cap dan Watch memberi buff Penombak, Coat dan Pants memberi buff Infanteri, Ring dan Weapon memberi buff Penembak jitu. Penulis paket data mengetiknya dari teks wiki."
             },
             "capacity": {
                 "title": "Kapasitas 0 di baris awal",
@@ -110,7 +110,7 @@
         "active": "Aktif",
         "notActive": "Tidak aktif",
         "value": "{stat} +{percent}%",
-        "appliesTo": "Bagian {tierName}, untuk Infantry, Lancer, dan Marksman",
+        "appliesTo": "Bagian {tierName}, untuk Infanteri, Penombak, dan Penembak jitu",
         "needs": "Butuh {pieces} bagian dengan tier sama. {stat} +0% untuk sementara."
     },
     "plan": {
