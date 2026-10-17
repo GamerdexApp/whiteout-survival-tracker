@@ -1,0 +1,50 @@
+{
+    "setAll": {
+        "title": "すべてのチャームを設定",
+        "hint": "各装備にチャームが3個あります。ここで開始レベルと目標レベルを選び、18個すべてに適用してから、個別のチャームを変更できます。",
+        "fromLabel": "開始",
+        "toLabel": "目標",
+        "apply": "すべてに適用",
+        "reset": "すべてリセット"
+    },
+    "fields": {
+        "notStarted": "なし（未開始）",
+        "skip": "なし（対象外）"
+    },
+    "result": {
+        "title": "結果",
+        "score": "チャームスコア",
+        "power": "獲得戦力",
+        "steps": "上げるレベル",
+        "charms": "強化するチャーム",
+        "materials": "素材",
+        "noMaterials": "チャームの目標レベルを選ぶと、素材が表示されます。",
+        "eventPoints": "イベントポイント",
+        "eventPointsNote": "イベントポイントは、チャームスコアに、各イベントの「Raise Chief Charm max score」の行のポイントを掛けた値です。"
+    },
+    "charms": {
+        "title": "チーフチャーム",
+        "hint": "各チャームの現在のレベルと目標レベルを選んでください。なし（対象外）のチャームは計算に含まれません。",
+        "charmLabel": "チャーム{number}",
+        "charmName": "{piece}のチャーム{number}",
+        "fromLabel": "開始",
+        "toLabel": "目標",
+        "fromName": "開始（{charm}）",
+        "toName": "目標（{charm}）"
+    },
+    "breakdown": {
+        "title": "チャームごと",
+        "empty": "開始レベルより目標が高いチャームはまだありません。",
+        "charm": "チャーム",
+        "charmName": "{piece}のチャーム{number}",
+        "levels": "レベル",
+        "levelRange": "{from}から{to}",
+        "stat": "ステータスボーナス",
+        "percent": "{value}%",
+        "steps": "上げるレベル",
+        "score": "スコア",
+        "power": "戦力",
+        "materials": "素材",
+        "none": "なし"
+    }
+}

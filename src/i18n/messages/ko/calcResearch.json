@@ -1,0 +1,118 @@
+{
+    "speed": {
+        "title": "연구 속도",
+        "reset": "모두 초기화",
+        "percentLabel": "연구 속도 (%)",
+        "percentHint": "게임에 표시되는 속도예요. 여기서 설정하는 버프는 포함하지 않아요.",
+        "stateBuff": "주 버프",
+        "percentPlus": "+{value}%",
+        "percent": "{value}%",
+        "vicePresident": {
+            "label": "부통령",
+            "none": "없음",
+            "regular": "일반",
+            "supreme": "최상급"
+        },
+        "total": "총 연구 속도"
+    },
+    "lines": {
+        "title": "연구 항목",
+        "description": "항목마다 현재 레벨과 원하는 레벨을 고르세요. 게임처럼 항목의 단계마다 별도의 항목이에요. 아무것도 저장되지 않아요.",
+        "tabsLabel": "연구 트리",
+        "tabs": {
+            "growth": "성장",
+            "economy": "경제",
+            "battle": "전투",
+            "war-academy-troops": "War Academy T11",
+            "t12-infantry": "보병 T12",
+            "t12-marksman": "궁병 T12",
+            "t12-lancer": "창병 T12"
+        },
+        "tableLabel": "이 트리의 연구 항목",
+        "columns": {
+            "line": "연구 항목",
+            "current": "현재 레벨",
+            "goal": "목표 레벨"
+        },
+        "levelLabel": {
+            "current": "{name} 현재 레벨",
+            "goal": "{name} 목표 레벨"
+        },
+        "levelMax": "{level} (최대)",
+        "tier": {
+            "plain": "{tier}단계",
+            "troopLine": "{line} T{tier}"
+        },
+        "bulk": {
+            "current": "모든 현재 레벨 설정",
+            "goal": "모든 목표 설정",
+            "pick": "레벨 선택"
+        }
+    },
+    "results": {
+        "title": "결과",
+        "empty": "연구 항목의 목표를 현재 레벨보다 높게 올리면 자원, 시간, 전투력, 이벤트 점수가 표시돼요.",
+        "plus": "+{value}",
+        "stats": {
+            "steps": "연구할 레벨",
+            "baseTime": "속도 적용 전 시간",
+            "time": "속도 {percent}% 적용 시간",
+            "power": "얻는 전투력",
+            "speedupMinutes": "필요한 가속 분"
+        },
+        "resources": {
+            "title": "자원"
+        },
+        "bonuses": {
+            "title": "얻는 보너스",
+            "percentGain": "+{value}%",
+            "flatGain": "+{value}",
+            "none": "이 레벨들은 보너스를 주지 않아요."
+        },
+        "events": {
+            "title": "이벤트 점수",
+            "columns": {
+                "event": "이벤트",
+                "shardPoints": "Fire Crystal Shards",
+                "speedupPoints": "가속",
+                "total": "합계",
+                "pointsPerPower": "점수",
+                "days": "이벤트 일차",
+                "points": "전투력으로 얻는 점수"
+            },
+            "names": {
+                "svs": "SvS",
+                "allianceShowdown": "Alliance Showdown",
+                "kingOfIcefield": "King of Icefield",
+                "hallOfChief": "Hall of Chief"
+            },
+            "speedupTableLabel": "Fire Crystal Shard와 가속 점수",
+            "speedupNote": "가속 점수는 연구 시간 {minutes}분 전체를 연구 가속으로 채우는 경우의 값이에요.",
+            "hallTableLabel": "전투력으로 얻는 Hall of Chief 점수",
+            "hallNote": "Hall of Chief는 연구로 얻은 전투력 1마다 점수를 줘요. 배율은 이벤트 일차에 따라 달라요.",
+            "pointsPerPower": "전투력 1당 {value}",
+            "daySeparator": ", "
+        },
+        "requirements": {
+            "buildings": "필요한 건물:",
+            "buildingLevel": "{building} {level}레벨",
+            "listSeparator": ", ",
+            "unmetTitle": "{count, plural, other {{amount}개 레벨에는}} 계획이 닿지 않는 레벨의 다른 연구 항목이 필요해요:",
+            "unmetItem": "{name} {level}레벨에는 {requires} {requiresLevel}레벨이 필요해요 (계획: {planned})",
+            "unmetMore": "그 외 {amount}개.",
+            "stepsWithoutTime": "{count, plural, other {{amount}개 레벨은}} 데이터에 연구 시간이 없어서 시간을 0으로 계산해요.",
+            "placeholders": "{names}의 비용과 시간 데이터가 아직 없어요. 자원과 시간에 포함하지 않아요."
+        },
+        "breakdown": {
+            "title": "연구 항목별",
+            "plus": "+{value}",
+            "columns": {
+                "line": "연구 항목",
+                "steps": "레벨",
+                "baseTime": "속도 적용 전 시간",
+                "power": "전투력",
+                "resources": "자원"
+            }
+        }
+    }
+}

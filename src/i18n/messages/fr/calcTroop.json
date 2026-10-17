@@ -1,0 +1,117 @@
+{
+    "intro": "Réglez le niveau de chaque camp et ce qu'il entraîne ou promeut. Les trois camps partagent une seule capacité d'entraînement : la capacité des trois niveaux de camp additionnés, plus les bonus ci-dessous.",
+    "reset": "Tout réinitialiser",
+    "tier": "T{tier}",
+    "bonuses": {
+        "title": "Capacité et vitesse",
+        "researchCapacity": "Capacité de recherche",
+        "researchCapacityHint": "Capacité d'entraînement issue de la recherche, telle que le jeu l'affiche.",
+        "trainingSpeed": "Vitesse d'entraînement (%)",
+        "trainingSpeedHint": "Votre vitesse telle que le jeu l'affiche, sans les bonus ci-dessous.",
+        "position": "Nomination",
+        "positions": {
+            "none": "Aucune",
+            "ministerOfEducation": "Ministre de l'Éducation",
+            "vicePresident": "Vice-président"
+        },
+        "rank": "Rang",
+        "ranks": {
+            "regular": "Normal",
+            "supreme": "Suprême"
+        },
+        "appointmentEffect": "+{capacity} de capacité, +{speed} % de vitesse d'entraînement",
+        "capacityBoost": "Boost de capacité",
+        "capacityBoostEffect": "Multiplie la capacité totale par {multiplier}.",
+        "mobilize": "Mobilize",
+        "advancedTraining": "Advanced Training",
+        "speedEffect": "+{speed} % de vitesse d'entraînement",
+        "costReduction": "Réduction de coût",
+        "costReductionLabel": "Réduction de coût de {name} (%)",
+        "costReductionHint": "De 0 à {max} %."
+    },
+    "camps": {
+        "title": "Camps",
+        "level": "Niveau du camp",
+        "levelOption": "{level} (capacité {capacity})",
+        "mode": "Action",
+        "modes": {
+            "none": "N'entraîne pas",
+            "training": "Entraînement",
+            "promotion": "Promotion",
+            "both": "Entraînement et promotion"
+        },
+        "trainingTitle": "Entraînement",
+        "promotionTitle": "Promotion",
+        "trainTier": "Palier à entraîner",
+        "fromTier": "Promouvoir de",
+        "toTier": "Promouvoir vers",
+        "troopsPerBatch": "Troupes par lot",
+        "max": "Max",
+        "maxValue": "Max ({capacity})",
+        "batches": "Lots",
+        "runTime": "Durée {time}"
+    },
+    "results": {
+        "title": "Résultats",
+        "capacity": "Capacité par lot",
+        "troops": "Troupes gagnées",
+        "power": "Puissance gagnée",
+        "speedUsed": "Vitesse d'entraînement utilisée",
+        "totalTime": "Accélérations nécessaires",
+        "longest": "Camp le plus long",
+        "percent": "{value} %",
+        "noRuns": "Réglez au moins un camp sur l'entraînement ou la promotion pour voir les troupes, la puissance, les ressources et la durée.",
+        "noChange": "Ces lancements ne changent aucune troupe. Réglez un nombre supérieur à 0."
+    },
+    "tiers": {
+        "troopsTitle": "Troupes par palier",
+        "powerTitle": "Puissance par palier",
+        "heads": {
+            "tier": "Palier",
+            "total": "Total"
+        },
+        "total": "Total",
+        "promotionNote": "Une promotion retire des troupes et leur puissance du palier inférieur et les ajoute au palier supérieur, donc le palier inférieur affiche un changement négatif.",
+        "fireCrystalNote": "La puissance utilise le niveau de Fire Crystal de chaque camp : {levels}. Seuls les paliers 10 et 11 changent avec le niveau. Les bonus de stats de la recherche ou de l'équipement ne sont pas inclus.",
+        "fireCrystalLevel": "{name} {level}"
+    },
+    "resources": {
+        "title": "Ressources",
+        "tableLabel": "Ressources nécessaires",
+        "heads": {
+            "resource": "Ressource",
+            "amount": "Quantité"
+        }
+    },
+    "time": {
+        "title": "Durée",
+        "heads": {
+            "camp": "Camp",
+            "action": "Action",
+            "troopsPerBatch": "Troupes par lot",
+            "batches": "Lots",
+            "time": "Durée"
+        },
+        "training": "Entraînement {tier}",
+        "promotion": "Promotion {from} vers {to}",
+        "campTotal": "Camp {name}",
+        "totalTime": "Tous les camps additionnés (accélérations nécessaires)",
+        "longest": "Camp le plus long (les camps s'entraînent en même temps)",
+        "minutesNeeded": "Minutes d'accélération nécessaires",
+        "minutes": "{value} min",
+        "note": "La durée d'un lot est la durée d'une troupe multipliée par le nombre de troupes, divisée par 1 plus la vitesse d'entraînement, avant les accélérations."
+    },
+    "events": {
+        "title": "Points d'événement",
+        "tableLabel": "Points d'événement",
+        "heads": {
+            "event": "Événement",
+            "training": "Points d'entraînement",
+            "perMinute": "Points d'accélération par minute",
+            "speedup": "Points d'accélération",
+            "total": "Total"
+        },
+        "noSpeedup": "Aucun",
+        "note": "Les points d'entraînement comptent les troupes des lancements d'entraînement à leur palier. Une promotion ne donne aucun point d'entraînement. Les points d'accélération utilisent les {minutes} minutes d'accélération nécessaires pour tous les camps. Les points de Hall of Chief valent pour une saison, et ses points pour la hausse de puissance ne sont pas inclus."
+    }
+}

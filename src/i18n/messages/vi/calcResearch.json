@@ -1,0 +1,118 @@
+{
+    "speed": {
+        "title": "Tốc độ nghiên cứu",
+        "reset": "Đặt lại tất cả",
+        "percentLabel": "Tốc độ nghiên cứu %",
+        "percentHint": "Tốc độ của bạn như game hiển thị, chưa tính các buff ở đây.",
+        "stateBuff": "Buff State",
+        "percentPlus": "+{value}%",
+        "percent": "{value}%",
+        "vicePresident": {
+            "label": "Phó chủ tịch",
+            "none": "Không có",
+            "regular": "Thường",
+            "supreme": "Tối cao"
+        },
+        "total": "Tổng tốc độ nghiên cứu"
+    },
+    "lines": {
+        "title": "Các dòng nghiên cứu",
+        "description": "Chọn cấp bạn đang có và cấp bạn muốn cho từng dòng. Mỗi bậc của một dòng là một dòng riêng, như trong game. Không có gì được lưu.",
+        "tabsLabel": "Cây nghiên cứu",
+        "tabs": {
+            "growth": "Tăng trưởng",
+            "economy": "Kinh tế",
+            "battle": "Chiến đấu",
+            "war-academy-troops": "War Academy T11",
+            "t12-infantry": "Bộ binh T12",
+            "t12-marksman": "Xạ thủ T12",
+            "t12-lancer": "Kỵ binh T12"
+        },
+        "tableLabel": "Các dòng nghiên cứu của cây này",
+        "columns": {
+            "line": "Dòng nghiên cứu",
+            "current": "Cấp hiện tại",
+            "goal": "Cấp mục tiêu"
+        },
+        "levelLabel": {
+            "current": "Cấp hiện tại của {name}",
+            "goal": "Cấp mục tiêu của {name}"
+        },
+        "levelMax": "{level} (tối đa)",
+        "tier": {
+            "plain": "Bậc {tier}",
+            "troopLine": "{line} T{tier}"
+        },
+        "bulk": {
+            "current": "Đặt mọi cấp hiện tại về",
+            "goal": "Đặt mọi mục tiêu về",
+            "pick": "Chọn một cấp"
+        }
+    },
+    "results": {
+        "title": "Kết quả",
+        "empty": "Hãy chọn mục tiêu cao hơn cấp hiện tại của một dòng nghiên cứu để xem tài nguyên, thời gian, sức mạnh và điểm sự kiện.",
+        "plus": "+{value}",
+        "stats": {
+            "steps": "Cấp cần nghiên cứu",
+            "baseTime": "Thời gian trước khi tăng tốc",
+            "time": "Thời gian ở tốc độ {percent}%",
+            "power": "Sức mạnh nhận được",
+            "speedupMinutes": "Số phút tăng tốc cần"
+        },
+        "resources": {
+            "title": "Tài nguyên"
+        },
+        "bonuses": {
+            "title": "Chỉ số cộng thêm nhận được",
+            "percentGain": "+{value}%",
+            "flatGain": "+{value}",
+            "none": "Các cấp này không cho chỉ số cộng thêm."
+        },
+        "events": {
+            "title": "Điểm sự kiện",
+            "columns": {
+                "event": "Sự kiện",
+                "shardPoints": "Fire Crystal Shard",
+                "speedupPoints": "Tăng tốc",
+                "total": "Tổng",
+                "pointsPerPower": "Điểm",
+                "days": "Ngày sự kiện",
+                "points": "Điểm từ sức mạnh"
+            },
+            "names": {
+                "svs": "SvS",
+                "allianceShowdown": "Alliance Showdown",
+                "kingOfIcefield": "King of Icefield",
+                "hallOfChief": "Hall of Chief"
+            },
+            "speedupTableLabel": "Điểm Fire Crystal Shard và tăng tốc",
+            "speedupNote": "Điểm tăng tốc giả định bạn hoàn tất toàn bộ {minutes} phút nghiên cứu bằng vật phẩm tăng tốc nghiên cứu.",
+            "hallTableLabel": "Điểm Hall of Chief từ sức mạnh",
+            "hallNote": "Hall of Chief tính điểm cho mỗi điểm sức mạnh nhận được từ nghiên cứu. Hệ số phụ thuộc vào ngày của sự kiện.",
+            "pointsPerPower": "{value} mỗi điểm sức mạnh",
+            "daySeparator": ", "
+        },
+        "requirements": {
+            "buildings": "Công trình cần có:",
+            "buildingLevel": "{building} cấp {level}",
+            "listSeparator": ", ",
+            "unmetTitle": "{count, plural, other {{amount} cấp cần}} một dòng nghiên cứu khác ở mức mà kế hoạch của bạn chưa đạt:",
+            "unmetItem": "{name} cấp {level} cần {requires} cấp {requiresLevel} (đã định {planned})",
+            "unmetMore": "Và {amount} mục nữa.",
+            "stepsWithoutTime": "{count, plural, other {{amount} cấp không có}} thời gian nghiên cứu trong dữ liệu, nên thời gian được tính là 0.",
+            "placeholders": "Chưa có dữ liệu chi phí hoặc thời gian cho {names}. Tài nguyên và thời gian của chúng không được tính."
+        },
+        "breakdown": {
+            "title": "Theo dòng nghiên cứu",
+            "plus": "+{value}",
+            "columns": {
+                "line": "Dòng nghiên cứu",
+                "steps": "Cấp",
+                "baseTime": "Thời gian trước khi tăng tốc",
+                "power": "Sức mạnh",
+                "resources": "Tài nguyên"
+            }
+        }
+    }
+}

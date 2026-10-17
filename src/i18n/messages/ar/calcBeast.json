@@ -1,0 +1,65 @@
+{
+    "levelBand": "المستوى من {low} إلى {high}",
+    "stamina": {
+        "title": "الطاقة",
+        "stamina": "الطاقة",
+        "cans": "علب الطاقة",
+        "cansHint": "{amount} طاقة لكل علبة",
+        "gina": "Endurance Training لدى Gina",
+        "ginaNone": "غير مستخدمة",
+        "ginaLevel": "المستوى {level}، طاقة أقل بنسبة {percent}%",
+        "beastLevel": "مستوى الوحش للطاقة المتبقية",
+        "beastLevelHint": "الوحوش في المجموعة الواحدة تحقق النقاط نفسها في State of Power."
+    },
+    "planned": {
+        "title": "الصيد المخطط له",
+        "hint": "عمليات صيد تنفذها على أي حال، مثل وحوش مهام المعلومات. تُدفع طاقتها أولًا.",
+        "empty": "لا توجد عمليات صيد وحوش مخطط لها.",
+        "runLevel": "مستوى الوحش",
+        "runCount": "الوحوش",
+        "add": "إضافة صيد وحوش",
+        "remove": "إزالة صيد الوحوش {band}",
+        "polarTerrors": "Polar Terror المخطط لها"
+    },
+    "result": {
+        "pointsNote": "النقاط قبل أي ميزة إضافية، مثل Valeria في State of Power. عمليات الصيد التي ليست وحوشًا أو Polar Terror، مثل Bear Hunt، لا تُحتسب.",
+        "tiles": {
+            "title": "الطاقة",
+            "percent": "{percent}%",
+            "total": "إجمالي الطاقة",
+            "ginaReduction": "تخفيض Gina",
+            "beastCost": "الطاقة لكل وحش",
+            "polarTerrorCost": "الطاقة لكل Polar Terror",
+            "planned": "الطاقة للصيد المخطط له",
+            "left": "الطاقة المتبقية",
+            "short": "نقص الطاقة",
+            "shortNote": "الصيد المخطط له يحتاج إلى {amount} طاقة أكثر مما لديك. لا تكفي الطاقة المتبقية لأي صيد إضافي."
+        },
+        "leftover": {
+            "title": "الطاقة المتبقية بعد الصيد المخطط له",
+            "hint": "كل صف ينفق كل الطاقة المتبقية على نوع واحد من الصيد.",
+            "hunt": "الصيد",
+            "onlyBeasts": "الوحوش فقط، {band}",
+            "onlyPolarTerrors": "Polar Terror فقط",
+            "count": "صيد إضافي",
+            "staminaLeft": "الطاقة المتبقية"
+        },
+        "events": {
+            "title": "نقاط الفعالية",
+            "hint": "المخطط له هو نقاط الصيد المخطط له. العمودان الأخيران يضيفان الصيد الذي تكفيه الطاقة المتبقية.",
+            "event": "الفعالية",
+            "perBeast": "لكل وحش",
+            "perPolarTerror": "لكل Polar Terror",
+            "planned": "المخطط له",
+            "withBeasts": "الخطة والوحوش",
+            "withPolarTerrors": "الخطة وPolar Terror"
+        },
+        "plannedPoints": {
+            "title": "نقاط الصيد المخطط له",
+            "hunt": "الصيد",
+            "beasts": "{count, plural, zero {{amount} وحش، {band}} one {{amount} وحش، {band}} two {{amount} وحشان، {band}} few {{amount} وحوش، {band}} many {{amount} وحشًا، {band}} other {{amount} وحش، {band}}}",
+            "polarTerrors": "{count, plural, zero {{amount} Polar Terror} one {{amount} Polar Terror} two {{amount} Polar Terror} few {{amount} Polar Terror} many {{amount} Polar Terror} other {{amount} Polar Terror}}",
+            "total": "الإجمالي"
+        }
+    }
+}

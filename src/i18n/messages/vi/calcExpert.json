@@ -1,0 +1,67 @@
+{
+    "intro": "Chọn cấp thân thiết và cấp kỹ năng hiện tại của từng chuyên gia, cùng mức bạn muốn. Máy tính cộng dồn Books of Knowledge, sigil chuyên gia, EXP kỹ năng và điểm thân thiết. Chuyên gia thăng tiến ở mỗi cấp thứ mười và cần sigil để vượt qua. Bật Nâng cao khi chuyên gia đã thăng tiến ở cấp hiện tại, hoặc để tính chi phí thăng tiến ở cấp mục tiêu. Thiên phú tăng cấp theo quan hệ và không tốn gì.",
+    "goals": {
+        "title": "Chuyên gia",
+        "empty": "Thêm một chuyên gia để xem Books of Knowledge, sigil và điểm sự kiện."
+    },
+    "add": {
+        "label": "Chuyên gia cần thêm",
+        "button": "Thêm",
+        "allAdded": "Mọi chuyên gia đã có trong máy tính."
+    },
+    "expert": {
+        "meta": "{title}, {specialty}",
+        "remove": "Xóa",
+        "removeLabel": "Xóa {expert}",
+        "affinity": "Cấp thân thiết",
+        "current": "Hiện tại",
+        "goal": "Mục tiêu",
+        "advancedAtCurrent": "Đã thăng tiến ở cấp {level}",
+        "advanceAtGoal": "Thăng tiến ở cấp {level}",
+        "skillMax": "Tối đa {level}"
+    },
+    "results": {
+        "title": "Kết quả",
+        "stats": {
+            "books": "Books of Knowledge",
+            "sigils": "Sigil chuyên gia",
+            "exp": "EXP kỹ năng",
+            "learningTime": "Thời gian học",
+            "affinity": "Điểm thân thiết",
+            "levels": "Cấp thân thiết",
+            "skillLevels": "Cấp kỹ năng",
+            "advancements": "Lần thăng tiến"
+        }
+    },
+    "resources": {
+        "title": "Tài nguyên",
+        "nothing": "Các mục tiêu này không cần Books of Knowledge hay sigil.",
+        "commonSigils": "Common Expert Sigils đổi được thành sigil của bất kỳ chuyên gia nào."
+    },
+    "events": {
+        "title": "Điểm sự kiện",
+        "heads": {
+            "event": "Sự kiện",
+            "items": "Sách và sigil",
+            "perMinute": "Mỗi phút tăng tốc",
+            "speedups": "Tăng tốc",
+            "total": "Tổng"
+        },
+        "hint": "Điểm tăng tốc tính theo việc dùng vật phẩm tăng tốc Learning hoặc General cho toàn bộ thời gian học {duration}."
+    },
+    "byExpert": {
+        "title": "Theo chuyên gia",
+        "nothing": "Chưa có chuyên gia nào có mục tiêu cao hơn cấp hiện tại.",
+        "heads": {
+            "expert": "Chuyên gia",
+            "levels": "Cấp thân thiết",
+            "advancements": "Lần thăng tiến",
+            "skillLevels": "Cấp kỹ năng",
+            "books": "Sách",
+            "sigils": "Sigil",
+            "exp": "EXP kỹ năng",
+            "learningTime": "Thời gian học",
+            "affinity": "Điểm thân thiết"
+        }
+    }
+}

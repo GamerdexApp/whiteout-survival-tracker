@@ -1,0 +1,46 @@
+{
+    "intro": "Pick the level each gear piece is at now and the level you want. The results add up the materials, the gear score, the power gained and the event points. Leave a goal on None to skip that piece. Nothing is saved.",
+    "level": {
+        "plain": "{tier} Star {stars}",
+        "withStage": "{tier} Star {stars} Stage {stage}",
+        "notCrafted": "None (not crafted)",
+        "skip": "None (skip)"
+    },
+    "all": {
+        "heading": "Set every piece",
+        "current": "Current level",
+        "goal": "Goal level",
+        "apply": "Apply to all",
+        "reset": "Reset all"
+    },
+    "pieces": {
+        "heading": "Gear pieces",
+        "troopGroup": "{troop} pieces",
+        "current": "Current level",
+        "goal": "Goal level",
+        "currentLabel": "{piece} current level",
+        "goalLabel": "{piece} goal level"
+    },
+    "results": {
+        "heading": "Results",
+        "score": "Gear score",
+        "power": "Power gained",
+        "steps": "Steps",
+        "materials": "Materials",
+        "noMaterials": "Pick a goal level for a piece to see the materials.",
+        "events": "Event points",
+        "eventsNote": "Event points are the gear score times the points that the \"Raise Chief Gear max score\" row pays in each event."
+    },
+    "byPiece": {
+        "heading": "By piece",
+        "piece": "Piece",
+        "levels": "Levels",
+        "levelRange": "{from} to {to}",
+        "steps": "Steps",
+        "score": "Score",
+        "power": "Power",
+        "stats": "Stat bonus",
+        "statRange": "{from}% to {to}%",
+        "noLevel": "Not crafted"
+    }
+}

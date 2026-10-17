@@ -1,0 +1,50 @@
+{
+    "setAll": {
+        "title": "Atur semua jimat",
+        "hint": "Tiap bagian perlengkapan punya 3 jimat. Pilih level awal dan target di sini lalu terapkan ke semua 18 jimat, kemudian ubah jimat satu per satu di bawah.",
+        "fromLabel": "Dari",
+        "toLabel": "Ke",
+        "apply": "Terapkan ke semua",
+        "reset": "Atur ulang semua"
+    },
+    "fields": {
+        "notStarted": "Tidak ada (belum mulai)",
+        "skip": "Tidak ada (lewati)"
+    },
+    "result": {
+        "title": "Hasil",
+        "score": "Skor jimat",
+        "power": "Kekuatan didapat",
+        "steps": "Level dibeli",
+        "charms": "Jimat di-upgrade",
+        "materials": "Material",
+        "noMaterials": "Pilih level target untuk sebuah jimat agar material tampil.",
+        "eventPoints": "Poin event",
+        "eventPointsNote": "Poin event adalah skor jimat dikali poin yang diberikan baris \"Raise Chief Charm max score\" di tiap event."
+    },
+    "charms": {
+        "title": "Jimat Chief",
+        "hint": "Pilih level tiap jimat sekarang dan level yang kamu mau. Jimat yang dibiarkan di Tidak ada (lewati) tidak dihitung.",
+        "charmLabel": "Jimat {number}",
+        "charmName": "{piece} jimat {number}",
+        "fromLabel": "Dari",
+        "toLabel": "Ke",
+        "fromName": "Dari ({charm})",
+        "toName": "Ke ({charm})"
+    },
+    "breakdown": {
+        "title": "Menurut jimat",
+        "empty": "Belum ada jimat dengan target di atas level awalnya.",
+        "charm": "Jimat",
+        "charmName": "{piece} jimat {number}",
+        "levels": "Level",
+        "levelRange": "{from} ke {to}",
+        "stat": "Bonus statistik",
+        "percent": "{value}%",
+        "steps": "Level dibeli",
+        "score": "Skor",
+        "power": "Kekuatan",
+        "materials": "Material",
+        "none": "Tidak ada"
+    }
+}

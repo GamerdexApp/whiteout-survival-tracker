@@ -1,0 +1,61 @@
+{
+    "intro": "Adicionar os mascotes a subir. Para cada mascote, escolher o nível em que está agora e o nível pretendido. Um mascote avança em cada nível múltiplo de 10 e precisa do avanço para passar desse nível.",
+    "picker": {
+        "petLabel": "Mascote",
+        "add": "Adicionar mascote",
+        "addAll": "Adicionar todos os mascotes",
+        "allAdded": "Todos os mascotes estão na lista.",
+        "setAllMax": "Definir todos os objetivos para o máximo",
+        "advanceAtMax": "Avançar também no nível máximo",
+        "removeAll": "Remover tudo"
+    },
+    "row": {
+        "maxLevel": "Nível máximo {max}",
+        "current": "Nível atual",
+        "goal": "Nível objetivo",
+        "currentAdvanced": "Já avançado",
+        "goalAdvanced": "Avançar no objetivo",
+        "keepsAdvancement": "O mascote mantém o avanço neste nível.",
+        "remove": "Remover {pet}"
+    },
+    "empty": "Nenhum mascote adicionado ainda. Adicionar um mascote acima para ver a comida, os itens de avanço e os ganhos.",
+    "results": {
+        "title": "Resultados",
+        "stats": {
+            "levels": "Níveis",
+            "advancements": "Avanços",
+            "troopAttack": "Ataque das tropas ganho",
+            "troopDefense": "Defesa das tropas ganha",
+            "power": "Poder ganho",
+            "advancementScore": "Pontuação de avanço"
+        },
+        "percent": "{value}%",
+        "unknown": "Desconhecido",
+        "unknownPowerNote": "Os dados do jogo não têm poder avançado para alguns níveis de avanço, por isso o ganho de poder destes mascotes é Desconhecido.",
+        "resources": {
+            "title": "Recursos",
+            "empty": "Escolher um objetivo acima do nível atual para ver os recursos."
+        },
+        "events": {
+            "title": "Pontos de evento da pontuação de avanço",
+            "noPoints": "Sem pontos",
+            "note": "Os pontos de evento são a pontuação de avanço vezes os pontos da linha \"Pet advancement score increases by 1\" de cada evento. {hallOfChief} não tem linha de mascotes."
+        },
+        "byPet": {
+            "title": "Por mascote",
+            "tableLabel": "Resultados por mascote",
+            "empty": "Nenhum mascote ganha ainda um nível ou um avanço.",
+            "heads": {
+                "pet": "Mascote",
+                "levels": "Níveis",
+                "advancements": "Avanços",
+                "score": "Pontuação",
+                "resources": "Recursos",
+                "troopAttack": "Ataque das tropas",
+                "troopDefense": "Defesa das tropas",
+                "power": "Poder"
+            },
+            "noResources": "Nenhum"
+        }
+    }
+}

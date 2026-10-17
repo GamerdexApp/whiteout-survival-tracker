@@ -1,0 +1,65 @@
+{
+    "levelBand": "Level {low} to {high}",
+    "stamina": {
+        "title": "Stamina",
+        "stamina": "Stamina",
+        "cans": "Stamina cans",
+        "cansHint": "{amount} stamina each",
+        "gina": "Gina's Endurance Training",
+        "ginaNone": "Not used",
+        "ginaLevel": "Level {level}, {percent}% less stamina",
+        "beastLevel": "Beast level for the stamina left",
+        "beastLevelHint": "Beasts in one group score the same points in State of Power."
+    },
+    "planned": {
+        "title": "Planned hunts",
+        "hint": "Hunts you do anyway, such as the beasts of the Intel missions. They are paid first.",
+        "empty": "No planned beast hunts.",
+        "runLevel": "Beast level",
+        "runCount": "Beasts",
+        "add": "Add beast hunt",
+        "remove": "Remove the {band} beast hunt",
+        "polarTerrors": "Planned Polar Terrors"
+    },
+    "result": {
+        "pointsNote": "The points are before any bonus, such as Valeria in State of Power. Hunts that are not beasts or Polar Terrors, such as the Bear Hunt, are not counted.",
+        "tiles": {
+            "title": "Stamina",
+            "percent": "{percent}%",
+            "total": "Total stamina",
+            "ginaReduction": "Gina reduction",
+            "beastCost": "Stamina per beast",
+            "polarTerrorCost": "Stamina per Polar Terror",
+            "planned": "Stamina for the planned hunts",
+            "left": "Stamina left",
+            "short": "Stamina short",
+            "shortNote": "The planned hunts need {amount} more stamina than you have. The stamina left pays for no extra hunts."
+        },
+        "leftover": {
+            "title": "Stamina left after the planned hunts",
+            "hint": "Each row spends all of the stamina left on one kind of hunt.",
+            "hunt": "Hunt",
+            "onlyBeasts": "Only beasts, {band}",
+            "onlyPolarTerrors": "Only Polar Terrors",
+            "count": "More hunts",
+            "staminaLeft": "Stamina left"
+        },
+        "events": {
+            "title": "Event points",
+            "hint": "Planned is the points of the planned hunts. The last two columns add the hunts that the stamina left pays for.",
+            "event": "Event",
+            "perBeast": "Per beast",
+            "perPolarTerror": "Per Polar Terror",
+            "planned": "Planned",
+            "withBeasts": "Plan and beasts",
+            "withPolarTerrors": "Plan and Polar Terrors"
+        },
+        "plannedPoints": {
+            "title": "Points of the planned hunts",
+            "hunt": "Hunt",
+            "beasts": "{count, plural, one {{amount} beast, {band}} other {{amount} beasts, {band}}}",
+            "polarTerrors": "{count, plural, one {{amount} Polar Terror} other {{amount} Polar Terrors}}",
+            "total": "Total"
+        }
+    }
+}

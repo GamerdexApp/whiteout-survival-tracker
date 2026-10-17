@@ -1,0 +1,65 @@
+{
+    "levelBand": "Cấp {low} đến {high}",
+    "stamina": {
+        "title": "Thể lực",
+        "stamina": "Thể lực",
+        "cans": "Bình thể lực",
+        "cansHint": "Mỗi bình {amount} thể lực",
+        "gina": "Endurance Training của Gina",
+        "ginaNone": "Không dùng",
+        "ginaLevel": "Cấp {level}, giảm {percent}% thể lực",
+        "beastLevel": "Cấp quái thú cho thể lực còn lại",
+        "beastLevelHint": "Quái thú trong cùng một nhóm cho cùng số điểm trong State of Power."
+    },
+    "planned": {
+        "title": "Lượt săn đã định",
+        "hint": "Những lượt săn bạn vẫn làm, như quái thú của nhiệm vụ Intel. Chúng được trừ thể lực trước.",
+        "empty": "Chưa có lượt săn quái thú nào.",
+        "runLevel": "Cấp quái thú",
+        "runCount": "Quái thú",
+        "add": "Thêm lượt săn quái thú",
+        "remove": "Xóa lượt săn quái thú {band}",
+        "polarTerrors": "Polar Terror đã định"
+    },
+    "result": {
+        "pointsNote": "Điểm chưa tính cộng thêm nào, như Valeria trong State of Power. Các lượt săn không phải quái thú hay Polar Terror, như Bear Hunt, không được tính.",
+        "tiles": {
+            "title": "Thể lực",
+            "percent": "{percent}%",
+            "total": "Tổng thể lực",
+            "ginaReduction": "Giảm từ Gina",
+            "beastCost": "Thể lực cho một quái thú",
+            "polarTerrorCost": "Thể lực cho một Polar Terror",
+            "planned": "Thể lực cho các lượt săn đã định",
+            "left": "Thể lực còn lại",
+            "short": "Thể lực thiếu",
+            "shortNote": "Các lượt săn đã định cần thêm {amount} thể lực so với bạn đang có. Thể lực còn lại không đủ cho lượt săn nào thêm."
+        },
+        "leftover": {
+            "title": "Thể lực còn lại sau các lượt săn đã định",
+            "hint": "Mỗi dòng dùng hết thể lực còn lại cho một loại lượt săn.",
+            "hunt": "Lượt săn",
+            "onlyBeasts": "Chỉ quái thú, {band}",
+            "onlyPolarTerrors": "Chỉ Polar Terror",
+            "count": "Thêm lượt săn",
+            "staminaLeft": "Thể lực còn lại"
+        },
+        "events": {
+            "title": "Điểm sự kiện",
+            "hint": "Đã định là điểm của các lượt săn đã định. Hai cột cuối cộng thêm các lượt săn mà thể lực còn lại đủ trả.",
+            "event": "Sự kiện",
+            "perBeast": "Mỗi quái thú",
+            "perPolarTerror": "Mỗi Polar Terror",
+            "planned": "Đã định",
+            "withBeasts": "Kế hoạch và quái thú",
+            "withPolarTerrors": "Kế hoạch và Polar Terror"
+        },
+        "plannedPoints": {
+            "title": "Điểm của các lượt săn đã định",
+            "hunt": "Lượt săn",
+            "beasts": "{count, plural, other {{amount} quái thú, {band}}}",
+            "polarTerrors": "{count, plural, other {{amount} Polar Terror}}",
+            "total": "Tổng"
+        }
+    }
+}

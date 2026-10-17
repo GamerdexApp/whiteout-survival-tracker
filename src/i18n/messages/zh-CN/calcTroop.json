@@ -1,0 +1,117 @@
+{
+    "intro": "设置每个兵营的等级，以及它训练或晋升的内容。三个兵营共用一个训练容量：三个兵营等级的容量相加，再加上下方的加成。",
+    "reset": "全部重置",
+    "tier": "T{tier}",
+    "bonuses": {
+        "title": "容量与速度",
+        "researchCapacity": "研究容量",
+        "researchCapacityHint": "来自研究的训练容量，按游戏中显示的填写。",
+        "trainingSpeed": "训练速度（%）",
+        "trainingSpeedHint": "填写游戏中显示的速度，不含下方的增益。",
+        "position": "任命",
+        "positions": {
+            "none": "无",
+            "ministerOfEducation": "教育部长",
+            "vicePresident": "副总统"
+        },
+        "rank": "等级",
+        "ranks": {
+            "regular": "普通",
+            "supreme": "至高"
+        },
+        "appointmentEffect": "容量 +{capacity}，训练速度 +{speed}%",
+        "capacityBoost": "容量提升",
+        "capacityBoostEffect": "总容量乘以 {multiplier}。",
+        "mobilize": "Mobilize",
+        "advancedTraining": "Advanced Training",
+        "speedEffect": "训练速度 +{speed}%",
+        "costReduction": "费用减免",
+        "costReductionLabel": "{name}费用减免（%）",
+        "costReductionHint": "范围 0 到 {max}%。"
+    },
+    "camps": {
+        "title": "兵营",
+        "level": "兵营等级",
+        "levelOption": "{level}（容量 {capacity}）",
+        "mode": "操作",
+        "modes": {
+            "none": "不训练",
+            "training": "训练",
+            "promotion": "晋升",
+            "both": "训练和晋升"
+        },
+        "trainingTitle": "训练",
+        "promotionTitle": "晋升",
+        "trainTier": "训练的阶",
+        "fromTier": "晋升自",
+        "toTier": "晋升至",
+        "troopsPerBatch": "每批部队数",
+        "max": "最大",
+        "maxValue": "最大（{capacity}）",
+        "batches": "批次",
+        "runTime": "时间 {time}"
+    },
+    "results": {
+        "title": "结果",
+        "capacity": "每批容量",
+        "troops": "获得部队",
+        "power": "获得战力",
+        "speedUsed": "使用的训练速度",
+        "totalTime": "所需加速",
+        "longest": "最长的兵营",
+        "percent": "{value}%",
+        "noRuns": "至少设置一个兵营训练或晋升，即可查看部队、战力、资源和时间。",
+        "noChange": "这些操作不会改变部队数量。请把数量设为大于 0。"
+    },
+    "tiers": {
+        "troopsTitle": "各阶部队",
+        "powerTitle": "各阶战力",
+        "heads": {
+            "tier": "阶",
+            "total": "合计"
+        },
+        "total": "合计",
+        "promotionNote": "晋升会从较低的阶取走部队及其战力，并加到较高的阶，因此较低的阶显示为负变化。",
+        "fireCrystalNote": "战力按各兵营的 Fire Crystal 等级计算：{levels}。只有 10 阶和 11 阶会随等级变化。研究或装备带来的属性加成不计入。",
+        "fireCrystalLevel": "{name} {level}"
+    },
+    "resources": {
+        "title": "资源",
+        "tableLabel": "所需资源",
+        "heads": {
+            "resource": "资源",
+            "amount": "数量"
+        }
+    },
+    "time": {
+        "title": "时间",
+        "heads": {
+            "camp": "兵营",
+            "action": "操作",
+            "troopsPerBatch": "每批部队数",
+            "batches": "批次",
+            "time": "时间"
+        },
+        "training": "训练 {tier}",
+        "promotion": "晋升 {from} 到 {to}",
+        "campTotal": "{name}兵营",
+        "totalTime": "所有兵营合计（所需加速）",
+        "longest": "最长的兵营（各兵营同时训练）",
+        "minutesNeeded": "所需加速分钟数",
+        "minutes": "{value} 分钟",
+        "note": "一批的时间是单个部队的时间乘以部队数，再除以 1 加训练速度，未计加速。"
+    },
+    "events": {
+        "title": "活动积分",
+        "tableLabel": "活动积分",
+        "heads": {
+            "event": "活动",
+            "training": "训练积分",
+            "perMinute": "每分钟加速积分",
+            "speedup": "加速积分",
+            "total": "合计"
+        },
+        "noSpeedup": "无",
+        "note": "训练积分按训练操作中部队所属的阶计算。晋升不给训练积分。加速积分使用所有兵营所需的 {minutes} 加速分钟数。Hall of Chief 积分按一个赛季计算，不含提升战力的积分。"
+    }
+}

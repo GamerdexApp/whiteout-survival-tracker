@@ -1,0 +1,70 @@
+{
+    "intro": "Planeje um herói por vez. As estrelas usam o rótulo do jogo, então 3.1 é estrela 3 e tier 1, e 5.0 é o último rótulo. Nada é salvo, e recarregar a página apaga suas escolhas.",
+    "hero": {
+        "label": "Herói",
+        "option": "{name} (Gen {generation})",
+        "generation": "Gen {generation}",
+        "reset": "Redefinir herói"
+    },
+    "range": {
+        "current": "Atual",
+        "goal": "Meta"
+    },
+    "stars": {
+        "title": "Estrelas",
+        "row": "Estrela e tier"
+    },
+    "skills": {
+        "title": "Habilidades",
+        "exploration": "Exploração",
+        "expedition": "Expedição"
+    },
+    "weapon": {
+        "title": "Arma exclusiva",
+        "row": "Nível da arma",
+        "none": "{hero} não tem arma exclusiva."
+    },
+    "result": {
+        "title": "Necessário",
+        "unmetTitle": "Precisa de mais estrelas.",
+        "unmet": "{items}. Se o herói já tem essas estrelas, defina a meta de estrelas nelas.",
+        "unmetItem": "{skill} nível {level} requer estrela {star}",
+        "tiles": {
+            "starSteps": "Passos de estrela",
+            "shards": "Fragmentos",
+            "skillLevels": "Níveis de habilidade",
+            "weaponLevels": "Níveis da arma",
+            "widgets": "Widgets",
+            "powerGain": "Poder ganho"
+        },
+        "resources": {
+            "title": "Recursos",
+            "item": "Item",
+            "amount": "Quantidade",
+            "widgets": "Widgets",
+            "empty": "Nada selecionado ainda. Defina uma meta acima do nível atual.",
+            "ownShards": "{own} contam como {general}."
+        },
+        "unlocked": {
+            "title": "Desbloqueia habilidades da arma"
+        },
+        "stats": {
+            "title": "Atributos no nível 80",
+            "stat": "Atributo",
+            "estimate": "Estimativa",
+            "estimateNote": "Os atributos abaixo de 5 estrelas são estimativas calculadas a partir dos atributos de 5 estrelas.",
+            "exploration": "Exploração",
+            "expedition": "Expedição",
+            "attack": "Ataque",
+            "defense": "Defesa",
+            "health": "Vida",
+            "percent": "{value}%"
+        },
+        "events": {
+            "title": "Pontos de evento",
+            "event": "Evento",
+            "points": "Pontos"
+        },
+        "powerNote": "O poder conta os níveis de estrela, habilidade e arma. Um rótulo de estrela sem dados de poder deixa o ganho Desconhecido."
+    }
+}

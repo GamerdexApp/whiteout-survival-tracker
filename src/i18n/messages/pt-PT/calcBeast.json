@@ -1,0 +1,65 @@
+{
+    "levelBand": "Nível {low} a {high}",
+    "stamina": {
+        "title": "Stamina",
+        "stamina": "Stamina",
+        "cans": "Latas de stamina",
+        "cansHint": "{amount} de stamina cada",
+        "gina": "Endurance Training da Gina",
+        "ginaNone": "Não usado",
+        "ginaLevel": "Nível {level}, {percent}% menos stamina",
+        "beastLevel": "Nível da fera para a stamina restante",
+        "beastLevelHint": "As feras do mesmo grupo dão os mesmos pontos no State of Power."
+    },
+    "planned": {
+        "title": "Caças planeadas",
+        "hint": "Caças que se fazem de qualquer forma, como as feras das missões de Intel. São pagas primeiro.",
+        "empty": "Sem caças a feras planeadas.",
+        "runLevel": "Nível da fera",
+        "runCount": "Feras",
+        "add": "Adicionar caça a fera",
+        "remove": "Remover a caça a feras de {band}",
+        "polarTerrors": "Polar Terrors planeados"
+    },
+    "result": {
+        "pointsNote": "Os pontos não incluem bónus, como a Valeria no State of Power. As caças que não são a feras nem a Polar Terrors, como a Bear Hunt, não contam.",
+        "tiles": {
+            "title": "Stamina",
+            "percent": "{percent}%",
+            "total": "Stamina total",
+            "ginaReduction": "Redução da Gina",
+            "beastCost": "Stamina por fera",
+            "polarTerrorCost": "Stamina por Polar Terror",
+            "planned": "Stamina das caças planeadas",
+            "left": "Stamina restante",
+            "short": "Stamina em falta",
+            "shortNote": "As caças planeadas precisam de mais {amount} de stamina do que há. A stamina restante não paga caças extra."
+        },
+        "leftover": {
+            "title": "Stamina restante depois das caças planeadas",
+            "hint": "Cada linha gasta toda a stamina restante num só tipo de caça.",
+            "hunt": "Caça",
+            "onlyBeasts": "Só feras, {band}",
+            "onlyPolarTerrors": "Só Polar Terrors",
+            "count": "Mais caças",
+            "staminaLeft": "Stamina restante"
+        },
+        "events": {
+            "title": "Pontos de evento",
+            "hint": "Planeado são os pontos das caças planeadas. As duas últimas colunas somam as caças que a stamina restante paga.",
+            "event": "Evento",
+            "perBeast": "Por fera",
+            "perPolarTerror": "Por Polar Terror",
+            "planned": "Planeado",
+            "withBeasts": "Plano e feras",
+            "withPolarTerrors": "Plano e Polar Terrors"
+        },
+        "plannedPoints": {
+            "title": "Pontos das caças planeadas",
+            "hunt": "Caça",
+            "beasts": "{count, plural, one {{amount} fera, {band}} other {{amount} feras, {band}}}",
+            "polarTerrors": "{count, plural, one {{amount} Polar Terror} other {{amount} Polar Terrors}}",
+            "total": "Total"
+        }
+    }
+}

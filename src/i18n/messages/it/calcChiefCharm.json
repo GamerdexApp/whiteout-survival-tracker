@@ -1,0 +1,50 @@
+{
+    "setAll": {
+        "title": "Imposta tutti gli amuleti",
+        "hint": "Ogni pezzo di equipaggiamento ha 3 amuleti. Scegli qui un livello iniziale e un obiettivo e applicali a tutti i 18 amuleti, poi cambia i singoli amuleti qui sotto.",
+        "fromLabel": "Da",
+        "toLabel": "A",
+        "apply": "Applica a tutti",
+        "reset": "Azzera tutto"
+    },
+    "fields": {
+        "notStarted": "Nessuno (non iniziato)",
+        "skip": "Nessuno (salta)"
+    },
+    "result": {
+        "title": "Risultato",
+        "score": "Punteggio amuleti",
+        "power": "Potenza guadagnata",
+        "steps": "Livelli acquistati",
+        "charms": "Amuleti potenziati",
+        "materials": "Materiali",
+        "noMaterials": "Scegli un livello obiettivo per un amuleto per vedere i materiali.",
+        "eventPoints": "Punti evento",
+        "eventPointsNote": "I punti evento sono il punteggio amuleti per i punti che la riga \"Raise Chief Charm max score\" assegna in ogni evento."
+    },
+    "charms": {
+        "title": "Amuleti del capo",
+        "hint": "Scegli il livello a cui è ogni amuleto ora e quello che vuoi. Un amuleto lasciato su Nessuno (salta) non viene contato.",
+        "charmLabel": "Amuleto {number}",
+        "charmName": "Amuleto {number} di {piece}",
+        "fromLabel": "Da",
+        "toLabel": "A",
+        "fromName": "Da ({charm})",
+        "toName": "A ({charm})"
+    },
+    "breakdown": {
+        "title": "Per amuleto",
+        "empty": "Nessun amuleto ha ancora un obiettivo sopra il livello iniziale.",
+        "charm": "Amuleto",
+        "charmName": "Amuleto {number} di {piece}",
+        "levels": "Livelli",
+        "levelRange": "da {from} a {to}",
+        "stat": "Bonus statistica",
+        "percent": "{value}%",
+        "steps": "Livelli acquistati",
+        "score": "Punteggio",
+        "power": "Potenza",
+        "materials": "Materiali",
+        "none": "Nessuno"
+    }
+}

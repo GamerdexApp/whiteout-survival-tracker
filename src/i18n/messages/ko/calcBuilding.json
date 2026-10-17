@@ -1,0 +1,103 @@
+{
+    "speed": {
+        "title": "건설 속도",
+        "reset": "모두 초기화",
+        "percentLabel": "건설 속도 (%)",
+        "percentHint": "게임에 표시되는 보너스예요. 부통령과 Double Time은 포함하지 않아요.",
+        "percentPlus": "+{value}%",
+        "percent": "{value}%",
+        "vicePresident": {
+            "label": "부통령",
+            "none": "없음",
+            "regular": "일반",
+            "supreme": "최상급"
+        },
+        "speedupLabel": "사용할 가속 분",
+        "speedupHint": "이 업그레이드에 쓰는 건설 가속이에요. 이벤트 점수에 더해져요.",
+        "doubleTime": "Double Time",
+        "doubleTimeNote": "영주 명령은 활성화된 동안 시작한 업그레이드에 {value}%를 더해요.",
+        "total": "총 건설 속도"
+    },
+    "buildings": {
+        "title": "건물",
+        "description": "건물마다 현재 레벨과 원하는 레벨을 고르세요. 단계에 필요한 레벨보다 낮은 선행 건물은 계획에 추가돼요. 가진 모든 건물의 현재 레벨을 설정하세요. 설정하지 않으면 건설하지 않은 것으로 계산해요. 아무것도 저장되지 않아요.",
+        "tableLabel": "현재 레벨과 목표 레벨별 건물",
+        "columns": {
+            "building": "건물",
+            "current": "현재 레벨",
+            "goal": "목표 레벨"
+        },
+        "levelLabel": {
+            "current": "{name} 현재 레벨",
+            "goal": "{name} 목표 레벨"
+        },
+        "notBuilt": "미건설"
+    },
+    "results": {
+        "title": "결과",
+        "empty": "건물의 목표를 현재 레벨보다 높게 올리면 자원, 시간, 전투력, 이벤트 점수가 표시돼요.",
+        "plus": "+{value}",
+        "stats": {
+            "steps": "건설할 레벨",
+            "baseTime": "속도 적용 전 시간",
+            "time": "속도 {percent}% 적용 시간",
+            "power": "얻는 전투력",
+            "speedupMinutes": "필요한 가속 분"
+        },
+        "unmet": {
+            "title": "데이터에 없는 건물의 선행 조건은 단계를 추가하지 않아요:",
+            "item": "{building} {level}레벨",
+            "listSeparator": ", "
+        },
+        "resources": {
+            "title": "자원"
+        },
+        "events": {
+            "title": "이벤트 점수",
+            "columns": {
+                "event": "이벤트",
+                "crystalPoints": "Fire Crystals",
+                "speedupPoints": "가속",
+                "total": "합계",
+                "pointsPerPower": "점수",
+                "days": "이벤트 일차",
+                "points": "전투력으로 얻는 점수"
+            },
+            "scoreTableLabel": "Fire Crystal과 가속 점수",
+            "speedupNote": "가속 점수는 건설 시간에 필요한 {needed}분 중 {used}분만 세요. 그보다 많은 분은 점수가 없어요.",
+            "hallTableLabel": "전투력으로 얻는 {name} 점수",
+            "hallNote": "{name}는 건설로 얻은 전투력 1마다 점수를 줘요. 배율은 이벤트 일차에 따라 달라요.",
+            "pointsPerPower": "전투력 1당 {value}",
+            "daySeparator": ", "
+        },
+        "breakdown": {
+            "title": "건물별",
+            "plus": "+{value}",
+            "levelRange": "{from}~{to}",
+            "prerequisite": "선행 조건",
+            "free": "비용 없음",
+            "columns": {
+                "building": "건물",
+                "levels": "레벨",
+                "steps": "단계",
+                "power": "전투력",
+                "baseTime": "속도 적용 전 시간",
+                "resources": "자원"
+            }
+        },
+        "stepDetails": {
+            "title": "{count, plural, other {단계 상세 ({amount}단계)}}",
+            "tableLabel": "건설 순서대로 정리한 각 레벨",
+            "plus": "+{value}",
+            "prerequisite": "선행 조건",
+            "free": "비용 없음",
+            "columns": {
+                "building": "건물",
+                "level": "레벨",
+                "power": "전투력",
+                "baseTime": "속도 적용 전 시간",
+                "cost": "비용"
+            }
+        }
+    }
+}

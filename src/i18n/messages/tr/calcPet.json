@@ -1,0 +1,61 @@
+{
+    "intro": "Seviyesini yükseltmek istediğin evcil hayvanları ekle. Her evcil hayvan için şu anki seviyeyi ve istediğin seviyeyi seç. Evcil hayvan, 10'un katı olan her seviyede aşama atlar ve o seviyeyi geçmek için aşama atlama gerekir.",
+    "picker": {
+        "petLabel": "Evcil hayvan",
+        "add": "Evcil hayvan ekle",
+        "addAll": "Tüm evcil hayvanları ekle",
+        "allAdded": "Tüm evcil hayvanlar listede.",
+        "setAllMax": "Tüm hedefleri maksimuma ayarla",
+        "advanceAtMax": "Son seviyede de aşama atla",
+        "removeAll": "Tümünü kaldır"
+    },
+    "row": {
+        "maxLevel": "Son seviye {max}",
+        "current": "Mevcut seviye",
+        "goal": "Hedef seviye",
+        "currentAdvanced": "Zaten aşama atladı",
+        "goalAdvanced": "Hedefte aşama atla",
+        "keepsAdvancement": "Evcil hayvan bu seviyede aşama atlamasını korur.",
+        "remove": "Kaldır: {pet}"
+    },
+    "empty": "Henüz evcil hayvan eklenmedi. Yiyecek, aşama atlama öğeleri ve kazanımları görmek için yukarıdan bir evcil hayvan ekle.",
+    "results": {
+        "title": "Sonuçlar",
+        "stats": {
+            "levels": "Seviyeler",
+            "advancements": "Aşama atlamalar",
+            "troopAttack": "Kazanılan Birlik Saldırısı",
+            "troopDefense": "Kazanılan Birlik Savunması",
+            "power": "Kazanılan güç",
+            "advancementScore": "Aşama atlama skoru"
+        },
+        "percent": "%{value}",
+        "unknown": "Bilinmiyor",
+        "unknownPowerNote": "Oyun verisinde bazı aşama atlama seviyeleri için aşama atlamış güç yok, bu yüzden bu evcil hayvanların güç kazancı Bilinmiyor.",
+        "resources": {
+            "title": "Kaynaklar",
+            "empty": "Kaynakları görmek için mevcut seviyenin üstünde bir hedef seç."
+        },
+        "events": {
+            "title": "Aşama atlama skorundan etkinlik puanı",
+            "noPoints": "Puan yok",
+            "note": "Etkinlik puanı, aşama atlama skoru ile her etkinlikte \"Pet advancement score increases by 1\" satırının verdiği puanın çarpımıdır. {hallOfChief} etkinliğinde evcil hayvan satırı yok."
+        },
+        "byPet": {
+            "title": "Evcil hayvana göre",
+            "tableLabel": "Evcil hayvana göre sonuçlar",
+            "empty": "Henüz seviye ya da aşama atlama kazanan evcil hayvan yok.",
+            "heads": {
+                "pet": "Evcil hayvan",
+                "levels": "Seviyeler",
+                "advancements": "Aşama atlamalar",
+                "score": "Skor",
+                "resources": "Kaynaklar",
+                "troopAttack": "Birlik Saldırısı",
+                "troopDefense": "Birlik Savunması",
+                "power": "Güç"
+            },
+            "noResources": "Yok"
+        }
+    }
+}

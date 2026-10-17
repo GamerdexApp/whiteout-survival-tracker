@@ -1,0 +1,117 @@
+{
+    "intro": "設定每個營地的等級，以及它訓練或晉升的內容。三個營地共用一個訓練容量：三個營地等級的容量相加，再加上下方的加成。",
+    "reset": "全部重設",
+    "tier": "T{tier}",
+    "bonuses": {
+        "title": "容量與速度",
+        "researchCapacity": "研究容量",
+        "researchCapacityHint": "來自研究的訓練容量，依遊戲中顯示的填入。",
+        "trainingSpeed": "訓練速度（%）",
+        "trainingSpeedHint": "填入遊戲中顯示的速度，不含下方的增益。",
+        "position": "任命",
+        "positions": {
+            "none": "無",
+            "ministerOfEducation": "教育部長",
+            "vicePresident": "副總統"
+        },
+        "rank": "等級",
+        "ranks": {
+            "regular": "一般",
+            "supreme": "最高"
+        },
+        "appointmentEffect": "容量 +{capacity}，訓練速度 +{speed}%",
+        "capacityBoost": "容量提升",
+        "capacityBoostEffect": "總容量乘以 {multiplier}。",
+        "mobilize": "Mobilize",
+        "advancedTraining": "Advanced Training",
+        "speedEffect": "訓練速度 +{speed}%",
+        "costReduction": "花費減免",
+        "costReductionLabel": "{name}花費減免（%）",
+        "costReductionHint": "範圍 0 到 {max}%。"
+    },
+    "camps": {
+        "title": "營地",
+        "level": "營地等級",
+        "levelOption": "{level}（容量 {capacity}）",
+        "mode": "動作",
+        "modes": {
+            "none": "不訓練",
+            "training": "訓練",
+            "promotion": "晉升",
+            "both": "訓練和晉升"
+        },
+        "trainingTitle": "訓練",
+        "promotionTitle": "晉升",
+        "trainTier": "訓練的階級",
+        "fromTier": "晉升自",
+        "toTier": "晉升至",
+        "troopsPerBatch": "每批部隊數",
+        "max": "最大",
+        "maxValue": "最大（{capacity}）",
+        "batches": "批次",
+        "runTime": "時間 {time}"
+    },
+    "results": {
+        "title": "結果",
+        "capacity": "每批容量",
+        "troops": "獲得部隊",
+        "power": "獲得戰力",
+        "speedUsed": "使用的訓練速度",
+        "totalTime": "所需加速",
+        "longest": "最久的營地",
+        "percent": "{value}%",
+        "noRuns": "至少設定一個營地訓練或晉升，即可查看部隊、戰力、資源和時間。",
+        "noChange": "這些動作不會改變部隊數量。請把數量設為大於 0。"
+    },
+    "tiers": {
+        "troopsTitle": "各階級部隊",
+        "powerTitle": "各階級戰力",
+        "heads": {
+            "tier": "階級",
+            "total": "合計"
+        },
+        "total": "合計",
+        "promotionNote": "晉升會從較低的階級取走部隊及其戰力，並加到較高的階級，因此較低的階級顯示為負變化。",
+        "fireCrystalNote": "戰力依各營地的 Fire Crystal 等級計算：{levels}。只有第 10 和 11 階會隨等級變化。研究或裝備帶來的數值加成不計入。",
+        "fireCrystalLevel": "{name} {level}"
+    },
+    "resources": {
+        "title": "資源",
+        "tableLabel": "所需資源",
+        "heads": {
+            "resource": "資源",
+            "amount": "數量"
+        }
+    },
+    "time": {
+        "title": "時間",
+        "heads": {
+            "camp": "營地",
+            "action": "動作",
+            "troopsPerBatch": "每批部隊數",
+            "batches": "批次",
+            "time": "時間"
+        },
+        "training": "訓練 {tier}",
+        "promotion": "晉升 {from} 到 {to}",
+        "campTotal": "{name}營地",
+        "totalTime": "所有營地合計（所需加速）",
+        "longest": "最久的營地（各營地同時訓練）",
+        "minutesNeeded": "所需加速分鐘數",
+        "minutes": "{value} 分鐘",
+        "note": "一批的時間是單一部隊的時間乘以部隊數，再除以 1 加訓練速度，未計加速。"
+    },
+    "events": {
+        "title": "活動積分",
+        "tableLabel": "活動積分",
+        "heads": {
+            "event": "活動",
+            "training": "訓練積分",
+            "perMinute": "每分鐘加速積分",
+            "speedup": "加速積分",
+            "total": "合計"
+        },
+        "noSpeedup": "無",
+        "note": "訓練積分依訓練動作中部隊所屬的階級計算。晉升不給訓練積分。加速積分使用所有營地所需的 {minutes} 加速分鐘數。Hall of Chief 積分以一個賽季計算，不含提升戰力的積分。"
+    }
+}

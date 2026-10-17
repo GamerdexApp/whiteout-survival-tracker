@@ -1,0 +1,70 @@
+{
+    "intro": "Plan one hero at a time. Stars use the in-game label, so 3.1 is star 3 and tier 1, and 5.0 is the last label. Nothing is saved, and reloading the page clears your choices.",
+    "hero": {
+        "label": "Hero",
+        "option": "{name} (Gen {generation})",
+        "generation": "Gen {generation}",
+        "reset": "Reset hero"
+    },
+    "range": {
+        "current": "Current",
+        "goal": "Goal"
+    },
+    "stars": {
+        "title": "Stars",
+        "row": "Star and tier"
+    },
+    "skills": {
+        "title": "Skills",
+        "exploration": "Exploration",
+        "expedition": "Expedition"
+    },
+    "weapon": {
+        "title": "Exclusive weapon",
+        "row": "Weapon level",
+        "none": "{hero} has no exclusive weapon."
+    },
+    "result": {
+        "title": "Required",
+        "unmetTitle": "Needs more stars.",
+        "unmet": "{items}. If the hero already has these stars, set the star goal to them.",
+        "unmetItem": "{skill} level {level} needs star {star}",
+        "tiles": {
+            "starSteps": "Star steps",
+            "shards": "Shards",
+            "skillLevels": "Skill levels",
+            "weaponLevels": "Weapon levels",
+            "widgets": "Widgets",
+            "powerGain": "Power gain"
+        },
+        "resources": {
+            "title": "Resources",
+            "item": "Item",
+            "amount": "Amount",
+            "widgets": "Widgets",
+            "empty": "Nothing selected yet. Set a goal above the current level.",
+            "ownShards": "{own} count the same as {general}."
+        },
+        "unlocked": {
+            "title": "Unlocks weapon skills"
+        },
+        "stats": {
+            "title": "Stats at level 80",
+            "stat": "Stat",
+            "estimate": "Estimate",
+            "estimateNote": "Stats below 5 stars are estimates scaled from the 5 star stats.",
+            "exploration": "Exploration",
+            "expedition": "Expedition",
+            "attack": "Attack",
+            "defense": "Defense",
+            "health": "Health",
+            "percent": "{value}%"
+        },
+        "events": {
+            "title": "Event points",
+            "event": "Event",
+            "points": "Points"
+        },
+        "powerNote": "Power counts the star, skill and weapon levels. A star label without power data makes the gain Unknown."
+    }
+}

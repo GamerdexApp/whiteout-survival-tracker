@@ -1,0 +1,77 @@
+{
+    "piece": {
+        "title": "Keping gear",
+        "quality": "Kualiti",
+        "slot": "Keping",
+        "troopType": "Jenis tentera",
+        "name": "{troop} {slot}",
+        "mythicOnly": "Hanya gear Mitos boleh ditempa dan diperkasakan. Mastery Forging dan Pemerkasaan dimatikan untuk kualiti ini."
+    },
+    "tracks": {
+        "enhancement": "Peningkatan",
+        "masteryForging": "Mastery Forging",
+        "empowerment": "Pemerkasaan",
+        "current": "Semasa",
+        "goal": "Matlamat",
+        "range": "Tahap {from} ke {to}",
+        "none": "Tiada",
+        "forgingRow": "{name} (+{percent}%)",
+        "needsMythic": "Perlu gear Mitos",
+        "reset": "Tetap semula tahap"
+    },
+    "unmet": {
+        "title": "Belum boleh dicapai.",
+        "enhancement": "{track} memerlukan Peningkatan tahap {level} dahulu.",
+        "masteryForging": "{track} memerlukan Mastery Forging {row} dahulu.",
+        "quality": "{track} memerlukan gear Mitos.",
+        "hint": "Jika keping itu sudah sampai, tetapkan tahap semasa mengikutnya."
+    },
+    "noForging": "Pemerkasaan memerlukan Mastery Forging pada {row}. Mastery Forging berada pada Tiada, jadi kuasa dan statistik tidak mengira penempaan.",
+    "summary": {
+        "title": "Hasil",
+        "powerGained": "Kuasa diperoleh",
+        "currentPower": "Kuasa sekarang",
+        "goalPower": "Kuasa selepas pelan",
+        "forgingStatsUp": "Statistik Mastery Forging meningkat",
+        "percent": "+{value}%"
+    },
+    "resources": {
+        "title": "Sumber diperlukan",
+        "item": "Item",
+        "amount": "Jumlah",
+        "empty": "Tiada apa untuk dinaik taraf. Naikkan matlamat melebihi tahap semasa."
+    },
+    "stats": {
+        "title": "Statistik keping",
+        "tableLabel": "Statistik keping, sekarang dan selepas pelan",
+        "stat": "Statistik",
+        "current": "Sekarang",
+        "goal": "Selepas pelan",
+        "gain": "Perolehan",
+        "power": "Kuasa",
+        "health": "Health",
+        "percentStat": "{name} (%)",
+        "percentValue": "{value}%",
+        "note": "Statistik termasuk mastery forging dan dibundarkan ke bawah."
+    },
+    "milestones": {
+        "title": "Pencapaian Mithril dibuka",
+        "line": "Pemerkasaan {level}: {event}, {stat}",
+        "empty": "Pelan ini tidak membuka sebarang pencapaian Mithril."
+    },
+    "tracksTable": {
+        "title": "Mengikut trek",
+        "label": "Langkah, perolehan dan sumber setiap trek",
+        "track": "Trek",
+        "steps": "Langkah",
+        "gain": "Perolehan",
+        "powerGain": "{value} kuasa sebelum penempaan",
+        "statsUp": "+{value}% statistik",
+        "resources": "Sumber",
+        "none": "Tiada apa"
+    },
+    "events": {
+        "title": "Mata acara",
+        "note": "Mata untuk Essence Stones dan Mithril dalam pelan."
+    }
+}

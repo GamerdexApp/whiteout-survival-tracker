@@ -1,0 +1,77 @@
+{
+    "piece": {
+        "title": "Gear piece",
+        "quality": "Quality",
+        "slot": "Piece",
+        "troopType": "Troop type",
+        "name": "{troop} {slot}",
+        "mythicOnly": "Only Mythic gear can be forged and empowered. Mastery Forging and Empowerment are off for this quality."
+    },
+    "tracks": {
+        "enhancement": "Enhancement",
+        "masteryForging": "Mastery Forging",
+        "empowerment": "Empowerment",
+        "current": "Current",
+        "goal": "Goal",
+        "range": "Levels {from} to {to}",
+        "none": "None",
+        "forgingRow": "{name} (+{percent}%)",
+        "needsMythic": "Needs Mythic gear",
+        "reset": "Reset levels"
+    },
+    "unmet": {
+        "title": "Not reachable yet.",
+        "enhancement": "{track} needs Enhancement level {level} first.",
+        "masteryForging": "{track} needs Mastery Forging {row} first.",
+        "quality": "{track} needs Mythic gear.",
+        "hint": "If the piece is already there, set the current level to match."
+    },
+    "noForging": "Empowerment needs Mastery Forging at {row}. Mastery Forging is on None, so power and stats count no forging.",
+    "summary": {
+        "title": "Result",
+        "powerGained": "Power gained",
+        "currentPower": "Power now",
+        "goalPower": "Power after the plan",
+        "forgingStatsUp": "Mastery Forging stats up",
+        "percent": "+{value}%"
+    },
+    "resources": {
+        "title": "Resources needed",
+        "item": "Item",
+        "amount": "Amount",
+        "empty": "Nothing to upgrade. Raise a goal above its current level."
+    },
+    "stats": {
+        "title": "Piece stats",
+        "tableLabel": "Piece stats, now and after the plan",
+        "stat": "Stat",
+        "current": "Now",
+        "goal": "After plan",
+        "gain": "Gain",
+        "power": "Power",
+        "health": "Health",
+        "percentStat": "{name} (%)",
+        "percentValue": "{value}%",
+        "note": "Stats include mastery forging and are rounded down."
+    },
+    "milestones": {
+        "title": "Mithril milestones unlocked",
+        "line": "Empowerment {level}: {event}, {stat}",
+        "empty": "This plan unlocks no Mithril milestone."
+    },
+    "tracksTable": {
+        "title": "By track",
+        "label": "Steps, gain and resources of each track",
+        "track": "Track",
+        "steps": "Steps",
+        "gain": "Gain",
+        "powerGain": "{value} power before forging",
+        "statsUp": "+{value}% stats",
+        "resources": "Resources",
+        "none": "Nothing"
+    },
+    "events": {
+        "title": "Event points",
+        "note": "Points for the Essence Stones and Mithril of the plan."
+    }
+}

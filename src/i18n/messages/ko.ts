@@ -2,6 +2,16 @@ import type { PartialMessages } from "../locales";
 import alliance from "./ko/alliance.json";
 import bonuses from "./ko/bonuses.json";
 import buildings from "./ko/buildings.json";
+import calcBeast from "./ko/calcBeast.json";
+import calcBuilding from "./ko/calcBuilding.json";
+import calcChiefCharm from "./ko/calcChiefCharm.json";
+import calcChiefGear from "./ko/calcChiefGear.json";
+import calcExpert from "./ko/calcExpert.json";
+import calcHeroGear from "./ko/calcHeroGear.json";
+import calcHeroUpgrade from "./ko/calcHeroUpgrade.json";
+import calcPet from "./ko/calcPet.json";
+import calcResearch from "./ko/calcResearch.json";
+import calcTroop from "./ko/calcTroop.json";
 import chiefGear from "./ko/chiefGear.json";
 import chiefs from "./ko/chiefs.json";
 import common from "./ko/common.json";
@@ -36,6 +46,7 @@ import wiki from "./ko/wiki.json";
 import wikiAllianceStructures from "./ko/wikiAllianceStructures.json";
 import wikiAllianceTech from "./ko/wikiAllianceTech.json";
 import wikiBuildings from "./ko/wikiBuildings.json";
+import wikiCalculator from "./ko/wikiCalculator.json";
 import wikiChiefCharms from "./ko/wikiChiefCharms.json";
 import wikiChiefGear from "./ko/wikiChiefGear.json";
 import wikiDailies from "./ko/wikiDailies.json";
@@ -59,6 +70,16 @@ const ko: PartialMessages = {
   alliance,
   bonuses,
   buildings,
+  calcBeast,
+  calcBuilding,
+  calcChiefCharm,
+  calcChiefGear,
+  calcExpert,
+  calcHeroGear,
+  calcHeroUpgrade,
+  calcPet,
+  calcResearch,
+  calcTroop,
   chiefGear,
   chiefs,
   common,
@@ -93,6 +114,7 @@ const ko: PartialMessages = {
   wikiAllianceStructures,
   wikiAllianceTech,
   wikiBuildings,
+  wikiCalculator,
   wikiChiefCharms,
   wikiChiefGear,
   wikiDailies,

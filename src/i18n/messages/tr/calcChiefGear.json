@@ -1,0 +1,46 @@
+{
+    "intro": "Her ekipman parçasının şu anki seviyesini ve istediğin seviyeyi seç. Sonuçlar malzemeleri, ekipman skorunu, kazanılan gücü ve etkinlik puanını toplar. Bir parçayı atlamak için hedefini Yok bırak. Hiçbir şey kaydedilmez.",
+    "level": {
+        "plain": "{tier} Yıldız {stars}",
+        "withStage": "{tier} Yıldız {stars} Aşama {stage}",
+        "notCrafted": "Yok (üretilmedi)",
+        "skip": "Yok (atla)"
+    },
+    "all": {
+        "heading": "Tüm parçaları ayarla",
+        "current": "Mevcut seviye",
+        "goal": "Hedef seviye",
+        "apply": "Tümüne uygula",
+        "reset": "Tümünü sıfırla"
+    },
+    "pieces": {
+        "heading": "Ekipman parçaları",
+        "troopGroup": "{troop} parçaları",
+        "current": "Mevcut seviye",
+        "goal": "Hedef seviye",
+        "currentLabel": "{piece} mevcut seviye",
+        "goalLabel": "{piece} hedef seviye"
+    },
+    "results": {
+        "heading": "Sonuçlar",
+        "score": "Ekipman skoru",
+        "power": "Kazanılan güç",
+        "steps": "Adımlar",
+        "materials": "Malzemeler",
+        "noMaterials": "Malzemeleri görmek için bir parça için hedef seviye seç.",
+        "events": "Etkinlik puanı",
+        "eventsNote": "Etkinlik puanı, ekipman skoru ile her etkinlikte \"Raise Chief Gear max score\" satırının verdiği puanın çarpımıdır."
+    },
+    "byPiece": {
+        "heading": "Parçaya göre",
+        "piece": "Parça",
+        "levels": "Seviyeler",
+        "levelRange": "{from} - {to}",
+        "steps": "Adımlar",
+        "score": "Skor",
+        "power": "Güç",
+        "stats": "Özellik bonusu",
+        "statRange": "%{from} - %{to}",
+        "noLevel": "Üretilmedi"
+    }
+}

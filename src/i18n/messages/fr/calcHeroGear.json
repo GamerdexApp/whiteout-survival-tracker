@@ -1,0 +1,77 @@
+{
+    "piece": {
+        "title": "Pièce d'équipement",
+        "quality": "Qualité",
+        "slot": "Pièce",
+        "troopType": "Type de troupe",
+        "name": "{troop} {slot}",
+        "mythicOnly": "Seul l'équipement Mythique peut être forgé et amplifié. La forge de maîtrise et l'amplification sont désactivées pour cette qualité."
+    },
+    "tracks": {
+        "enhancement": "Renforcement",
+        "masteryForging": "Forge de maîtrise",
+        "empowerment": "Amplification",
+        "current": "Actuel",
+        "goal": "Objectif",
+        "range": "Niveaux {from} à {to}",
+        "none": "Aucun",
+        "forgingRow": "{name} (+{percent} %)",
+        "needsMythic": "Nécessite un équipement Mythique",
+        "reset": "Réinitialiser les niveaux"
+    },
+    "unmet": {
+        "title": "Pas encore atteignable.",
+        "enhancement": "{track} nécessite d'abord le niveau de renforcement {level}.",
+        "masteryForging": "{track} nécessite d'abord la forge de maîtrise {row}.",
+        "quality": "{track} nécessite un équipement Mythique.",
+        "hint": "Si la pièce y est déjà, réglez le niveau actuel en conséquence."
+    },
+    "noForging": "L'amplification nécessite la forge de maîtrise à {row}. La forge de maîtrise est sur Aucun, donc la puissance et les stats ne comptent aucune forge.",
+    "summary": {
+        "title": "Résultat",
+        "powerGained": "Puissance gagnée",
+        "currentPower": "Puissance actuelle",
+        "goalPower": "Puissance après le plan",
+        "forgingStatsUp": "Hausse des stats de forge de maîtrise",
+        "percent": "+{value} %"
+    },
+    "resources": {
+        "title": "Ressources nécessaires",
+        "item": "Objet",
+        "amount": "Quantité",
+        "empty": "Rien à améliorer. Placez un objectif au-dessus du niveau actuel."
+    },
+    "stats": {
+        "title": "Stats de la pièce",
+        "tableLabel": "Stats de la pièce, maintenant et après le plan",
+        "stat": "Stat",
+        "current": "Actuel",
+        "goal": "Après le plan",
+        "gain": "Gain",
+        "power": "Puissance",
+        "health": "Santé",
+        "percentStat": "{name} (%)",
+        "percentValue": "{value} %",
+        "note": "Les stats incluent la forge de maîtrise et sont arrondies à l'inférieur."
+    },
+    "milestones": {
+        "title": "Jalons de Mithril débloqués",
+        "line": "Amplification {level} : {event}, {stat}",
+        "empty": "Ce plan ne débloque aucun jalon de Mithril."
+    },
+    "tracksTable": {
+        "title": "Par progression",
+        "label": "Étapes, gain et ressources de chaque progression",
+        "track": "Progression",
+        "steps": "Étapes",
+        "gain": "Gain",
+        "powerGain": "{value} de puissance avant forge",
+        "statsUp": "+{value} % de stats",
+        "resources": "Ressources",
+        "none": "Rien"
+    },
+    "events": {
+        "title": "Points d'événement",
+        "note": "Points pour les Essence Stones et le Mithril du plan."
+    }
+}

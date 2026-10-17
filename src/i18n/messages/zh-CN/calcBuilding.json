@@ -1,0 +1,103 @@
+{
+    "speed": {
+        "title": "建造速度",
+        "reset": "全部重置",
+        "percentLabel": "建造速度 %",
+        "percentHint": "填写游戏中显示的加成，不含副总统和 Double Time。",
+        "percentPlus": "+{value}%",
+        "percent": "{value}%",
+        "vicePresident": {
+            "label": "副总统",
+            "none": "无",
+            "regular": "普通",
+            "supreme": "至高"
+        },
+        "speedupLabel": "你使用的加速分钟数",
+        "speedupHint": "用于这些升级的建造加速。它们会增加活动积分。",
+        "doubleTime": "Double Time",
+        "doubleTimeNote": "Chief Order 会为其生效期间开始的升级增加 {value}%。",
+        "total": "建造速度总计"
+    },
+    "buildings": {
+        "title": "建筑",
+        "description": "为每座建筑选择当前等级和目标等级。低于某一步所需等级的前置建筑会加入计划，所以请设置你所有建筑的当前等级，否则会按未建造计算。这里不会保存任何内容。",
+        "tableLabel": "含当前等级和目标等级的建筑",
+        "columns": {
+            "building": "建筑",
+            "current": "当前等级",
+            "goal": "目标等级"
+        },
+        "levelLabel": {
+            "current": "{name}当前等级",
+            "goal": "{name}目标等级"
+        },
+        "notBuilt": "未建造"
+    },
+    "results": {
+        "title": "结果",
+        "empty": "把某座建筑的目标设为高于当前等级，即可查看资源、时间、战力和活动积分。",
+        "plus": "+{value}",
+        "stats": {
+            "steps": "需建造的等级数",
+            "baseTime": "加速前时间",
+            "time": "{percent}% 速度下的时间",
+            "power": "获得战力",
+            "speedupMinutes": "所需加速分钟数"
+        },
+        "unmet": {
+            "title": "数据中没有的建筑的前置条件不会增加步骤：",
+            "item": "{building} {level}级",
+            "listSeparator": "，"
+        },
+        "resources": {
+            "title": "资源"
+        },
+        "events": {
+            "title": "活动积分",
+            "columns": {
+                "event": "活动",
+                "crystalPoints": "Fire Crystals",
+                "speedupPoints": "加速",
+                "total": "合计",
+                "pointsPerPower": "积分",
+                "days": "活动日",
+                "points": "战力带来的积分"
+            },
+            "scoreTableLabel": "Fire Crystal 和加速积分",
+            "speedupNote": "加速积分按建造时间所需 {needed} 分钟中的 {used} 分钟计算。超出的分钟不计分。",
+            "hallTableLabel": "战力带来的 {name} 积分",
+            "hallNote": "{name} 对建造获得的每点战力计分。倍率取决于活动日。",
+            "pointsPerPower": "每点战力 {value}",
+            "daySeparator": "，"
+        },
+        "breakdown": {
+            "title": "按建筑",
+            "plus": "+{value}",
+            "levelRange": "{from} 到 {to}",
+            "prerequisite": "前置",
+            "free": "无消耗",
+            "columns": {
+                "building": "建筑",
+                "levels": "等级",
+                "steps": "步骤",
+                "power": "战力",
+                "baseTime": "加速前时间",
+                "resources": "资源"
+            }
+        },
+        "stepDetails": {
+            "title": "{count, plural, other {步骤详情（{amount} 步）}}",
+            "tableLabel": "每个建造的等级，按建造顺序",
+            "plus": "+{value}",
+            "prerequisite": "前置",
+            "free": "无消耗",
+            "columns": {
+                "building": "建筑",
+                "level": "等级",
+                "power": "战力",
+                "baseTime": "加速前时间",
+                "cost": "消耗"
+            }
+        }
+    }
+}

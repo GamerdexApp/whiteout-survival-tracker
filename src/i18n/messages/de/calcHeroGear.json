@@ -1,0 +1,77 @@
+{
+    "piece": {
+        "title": "Gear-Teil",
+        "quality": "Qualität",
+        "slot": "Teil",
+        "troopType": "Truppentyp",
+        "name": "{troop} {slot}",
+        "mythicOnly": "Nur mythisches Gear lässt sich schmieden und stärken. Meisterschmieden und Stärkung sind für diese Qualität aus."
+    },
+    "tracks": {
+        "enhancement": "Verbesserung",
+        "masteryForging": "Meisterschmieden",
+        "empowerment": "Stärkung",
+        "current": "Aktuell",
+        "goal": "Ziel",
+        "range": "Stufen {from} bis {to}",
+        "none": "Keine",
+        "forgingRow": "{name} (+{percent}%)",
+        "needsMythic": "Braucht mythisches Gear",
+        "reset": "Stufen zurücksetzen"
+    },
+    "unmet": {
+        "title": "Noch nicht erreichbar.",
+        "enhancement": "{track} braucht zuerst Verbesserung Stufe {level}.",
+        "masteryForging": "{track} braucht zuerst Meisterschmieden {row}.",
+        "quality": "{track} braucht mythisches Gear.",
+        "hint": "Wenn das Teil schon so weit ist, setze die aktuelle Stufe entsprechend."
+    },
+    "noForging": "Stärkung braucht Meisterschmieden bei {row}. Meisterschmieden steht auf Keine, daher zählen Macht und Werte kein Schmieden.",
+    "summary": {
+        "title": "Ergebnis",
+        "powerGained": "Gewonnene Macht",
+        "currentPower": "Macht jetzt",
+        "goalPower": "Macht nach dem Plan",
+        "forgingStatsUp": "Werte durch Meisterschmieden",
+        "percent": "+{value}%"
+    },
+    "resources": {
+        "title": "Benötigte Ressourcen",
+        "item": "Item",
+        "amount": "Menge",
+        "empty": "Nichts aufzuwerten. Setze ein Ziel über die aktuelle Stufe."
+    },
+    "stats": {
+        "title": "Teilwerte",
+        "tableLabel": "Teilwerte, jetzt und nach dem Plan",
+        "stat": "Wert",
+        "current": "Jetzt",
+        "goal": "Nach Plan",
+        "gain": "Zuwachs",
+        "power": "Macht",
+        "health": "Gesundheit",
+        "percentStat": "{name} (%)",
+        "percentValue": "{value}%",
+        "note": "Die Werte enthalten Meisterschmieden und sind abgerundet."
+    },
+    "milestones": {
+        "title": "Freigeschaltete Mithril-Meilensteine",
+        "line": "Stärkung {level}: {event}, {stat}",
+        "empty": "Dieser Plan schaltet keinen Mithril-Meilenstein frei."
+    },
+    "tracksTable": {
+        "title": "Nach Strang",
+        "label": "Schritte, Zuwachs und Ressourcen jedes Strangs",
+        "track": "Strang",
+        "steps": "Schritte",
+        "gain": "Zuwachs",
+        "powerGain": "{value} Macht vor dem Schmieden",
+        "statsUp": "+{value}% Werte",
+        "resources": "Ressourcen",
+        "none": "Nichts"
+    },
+    "events": {
+        "title": "Event-Punkte",
+        "note": "Punkte für die Essence Stones und das Mithril des Plans."
+    }
+}

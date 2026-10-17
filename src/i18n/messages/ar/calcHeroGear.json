@@ -1,0 +1,77 @@
+{
+    "piece": {
+        "title": "قطعة المعدات",
+        "quality": "الجودة",
+        "slot": "القطعة",
+        "troopType": "نوع القوات",
+        "name": "{slot} {troop}",
+        "mythicOnly": "يمكن سبك المعدات الخرافية وتمكينها فقط. سبك الإتقان والتمكين متوقفان لهذه الجودة."
+    },
+    "tracks": {
+        "enhancement": "التحسين",
+        "masteryForging": "سبك الإتقان",
+        "empowerment": "التمكين",
+        "current": "الحالي",
+        "goal": "الهدف",
+        "range": "المستويات من {from} إلى {to}",
+        "none": "لا شيء",
+        "forgingRow": "{name} (‎+{percent}%)",
+        "needsMythic": "يتطلب معدات خرافية",
+        "reset": "إعادة ضبط المستويات"
+    },
+    "unmet": {
+        "title": "لا يمكن بلوغه بعد.",
+        "enhancement": "{track} يتطلب التحسين بالمستوى {level} أولًا.",
+        "masteryForging": "{track} يتطلب سبك الإتقان {row} أولًا.",
+        "quality": "{track} يتطلب معدات خرافية.",
+        "hint": "إذا كانت القطعة قد بلغت ذلك بالفعل، اضبط المستوى الحالي ليطابقه."
+    },
+    "noForging": "التمكين يتطلب سبك الإتقان عند {row}. سبك الإتقان على لا شيء، لذا لا تحتسب القوة والإحصائيات أي سبك.",
+    "summary": {
+        "title": "النتيجة",
+        "powerGained": "القوة المكتسبة",
+        "currentPower": "القوة الآن",
+        "goalPower": "القوة بعد الخطة",
+        "forgingStatsUp": "ارتفاع إحصائيات سبك الإتقان",
+        "percent": "‎+{value}%"
+    },
+    "resources": {
+        "title": "الموارد المطلوبة",
+        "item": "العنصر",
+        "amount": "الكمية",
+        "empty": "لا شيء للترقية. ارفع هدفًا فوق مستواه الحالي."
+    },
+    "stats": {
+        "title": "إحصائيات القطعة",
+        "tableLabel": "إحصائيات القطعة، الآن وبعد الخطة",
+        "stat": "الإحصائية",
+        "current": "الآن",
+        "goal": "بعد الخطة",
+        "gain": "المكسب",
+        "power": "القوة",
+        "health": "الصحة",
+        "percentStat": "{name} (%)",
+        "percentValue": "{value}%",
+        "note": "تشمل الإحصائيات سبك الإتقان وتُقرَّب للأسفل."
+    },
+    "milestones": {
+        "title": "معالم Mithril المفتوحة",
+        "line": "التمكين {level}: {event}، {stat}",
+        "empty": "هذه الخطة لا تفتح أي معلم من Mithril."
+    },
+    "tracksTable": {
+        "title": "حسب المسار",
+        "label": "خطوات كل مسار ومكسبه وموارده",
+        "track": "المسار",
+        "steps": "الخطوات",
+        "gain": "المكسب",
+        "powerGain": "{value} قوة قبل السبك",
+        "statsUp": "‎+{value}% إحصائيات",
+        "resources": "الموارد",
+        "none": "لا شيء"
+    },
+    "events": {
+        "title": "نقاط الفعالية",
+        "note": "نقاط Essence Stones وMithril في الخطة."
+    }
+}

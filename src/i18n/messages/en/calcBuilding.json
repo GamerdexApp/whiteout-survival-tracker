@@ -1,0 +1,103 @@
+{
+    "speed": {
+        "title": "Construction speed",
+        "reset": "Reset all",
+        "percentLabel": "Construction speed %",
+        "percentHint": "Your bonus as the game shows it, without the Vice President and Double Time.",
+        "percentPlus": "+{value}%",
+        "percent": "{value}%",
+        "vicePresident": {
+            "label": "Vice President",
+            "none": "None",
+            "regular": "Regular",
+            "supreme": "Supreme"
+        },
+        "speedupLabel": "Speedup minutes you spend",
+        "speedupHint": "Construction speedups you use on these upgrades. They add to the event points.",
+        "doubleTime": "Double Time",
+        "doubleTimeNote": "The Chief Order adds {value}% to upgrades started while it is active.",
+        "total": "Total construction speed"
+    },
+    "buildings": {
+        "title": "Buildings",
+        "description": "Pick the level you have now and the level you want for each building. Prerequisite buildings below the level a step needs are added to the plan, so set the current level of every building you have, or it counts as not built. Nothing is saved.",
+        "tableLabel": "Buildings with current and goal levels",
+        "columns": {
+            "building": "Building",
+            "current": "Current level",
+            "goal": "Goal level"
+        },
+        "levelLabel": {
+            "current": "{name} current level",
+            "goal": "{name} goal level"
+        },
+        "notBuilt": "Not built"
+    },
+    "results": {
+        "title": "Results",
+        "empty": "Pick a goal above the current level of a building to see the resources, time, power and event points.",
+        "plus": "+{value}",
+        "stats": {
+            "steps": "Levels to build",
+            "baseTime": "Time before speed",
+            "time": "Time at {percent}% speed",
+            "power": "Power gained",
+            "speedupMinutes": "Speedup minutes needed"
+        },
+        "unmet": {
+            "title": "Prerequisites on buildings that are not in the data add no steps:",
+            "item": "{building} level {level}",
+            "listSeparator": ", "
+        },
+        "resources": {
+            "title": "Resources"
+        },
+        "events": {
+            "title": "Event points",
+            "columns": {
+                "event": "Event",
+                "crystalPoints": "Fire Crystals",
+                "speedupPoints": "Speedups",
+                "total": "Total",
+                "pointsPerPower": "Points",
+                "days": "Event days",
+                "points": "Points from power"
+            },
+            "scoreTableLabel": "Fire Crystal and speedup points",
+            "speedupNote": "Speedup points count {used} of the {needed} minutes the build time needs. Minutes above that score nothing.",
+            "hallTableLabel": "{name} points from power",
+            "hallNote": "{name} scores each point of power gained through construction. The multiplier depends on the event day.",
+            "pointsPerPower": "{value} per power",
+            "daySeparator": ", "
+        },
+        "breakdown": {
+            "title": "By building",
+            "plus": "+{value}",
+            "levelRange": "{from} to {to}",
+            "prerequisite": "Prerequisite",
+            "free": "No cost",
+            "columns": {
+                "building": "Building",
+                "levels": "Levels",
+                "steps": "Steps",
+                "power": "Power",
+                "baseTime": "Time before speed",
+                "resources": "Resources"
+            }
+        },
+        "stepDetails": {
+            "title": "{count, plural, one {Step details ({amount} step)} other {Step details ({amount} steps)}}",
+            "tableLabel": "Each level built, in build order",
+            "plus": "+{value}",
+            "prerequisite": "Prerequisite",
+            "free": "No cost",
+            "columns": {
+                "building": "Building",
+                "level": "Level",
+                "power": "Power",
+                "baseTime": "Time before speed",
+                "cost": "Cost"
+            }
+        }
+    }
+}

@@ -1,0 +1,67 @@
+{
+    "intro": "Wähle die Affinitätsstufe und die Fähigkeitsstufen, die jeder Experte jetzt hat, und die, die du willst. Der Rechner addiert die Books of Knowledge, Experten-Sigils, Fähigkeits-EXP und Affinitätspunkte. Ein Experte steigt bei jeder zehnten Stufe auf und braucht Sigils, um darüber hinauszukommen. Schalte Erweitert ein, wenn der Experte auf der aktuellen Stufe schon aufgestiegen ist, oder um den Aufstieg auf der Zielstufe zu bezahlen. Das Talent steigt mit der Beziehung und kostet nichts.",
+    "goals": {
+        "title": "Experten",
+        "empty": "Füge einen Experten hinzu, um die Books of Knowledge, Sigils und Event-Punkte zu sehen."
+    },
+    "add": {
+        "label": "Experte zum Hinzufügen",
+        "button": "Hinzufügen",
+        "allAdded": "Jeder Experte ist im Rechner."
+    },
+    "expert": {
+        "meta": "{title}, {specialty}",
+        "remove": "Entfernen",
+        "removeLabel": "{expert} entfernen",
+        "affinity": "Affinitätsstufe",
+        "current": "Aktuell",
+        "goal": "Ziel",
+        "advancedAtCurrent": "Aufgestiegen auf Stufe {level}",
+        "advanceAtGoal": "Aufstieg auf Stufe {level}",
+        "skillMax": "Max {level}"
+    },
+    "results": {
+        "title": "Ergebnisse",
+        "stats": {
+            "books": "Books of Knowledge",
+            "sigils": "Experten-Sigils",
+            "exp": "Fähigkeits-EXP",
+            "learningTime": "Lernzeit",
+            "affinity": "Affinitätspunkte",
+            "levels": "Affinitätsstufen",
+            "skillLevels": "Fähigkeitsstufen",
+            "advancements": "Aufstiege"
+        }
+    },
+    "resources": {
+        "title": "Ressourcen",
+        "nothing": "Diese Ziele brauchen keine Books of Knowledge oder Sigils.",
+        "commonSigils": "Common Expert Sigils lassen sich in die Sigils jedes Experten umwandeln."
+    },
+    "events": {
+        "title": "Event-Punkte",
+        "heads": {
+            "event": "Event",
+            "items": "Books und Sigils",
+            "perMinute": "Pro Beschleuniger-Minute",
+            "speedups": "Beschleuniger",
+            "total": "Gesamt"
+        },
+        "hint": "Beschleuniger-Punkte zählen Lern- oder allgemeine Beschleuniger für die gesamte Lernzeit von {duration}."
+    },
+    "byExpert": {
+        "title": "Nach Experte",
+        "nothing": "Noch kein Experte hat ein Ziel über seiner aktuellen Stufe.",
+        "heads": {
+            "expert": "Experte",
+            "levels": "Affinitätsstufen",
+            "advancements": "Aufstiege",
+            "skillLevels": "Fähigkeitsstufen",
+            "books": "Books",
+            "sigils": "Sigils",
+            "exp": "Fähigkeits-EXP",
+            "learningTime": "Lernzeit",
+            "affinity": "Affinitätspunkte"
+        }
+    }
+}

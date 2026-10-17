@@ -1,0 +1,65 @@
+{
+    "levelBand": "Livello da {low} a {high}",
+    "stamina": {
+        "title": "Resistenza",
+        "stamina": "Resistenza",
+        "cans": "Lattine di resistenza",
+        "cansHint": "{amount} di resistenza ciascuna",
+        "gina": "Endurance Training di Gina",
+        "ginaNone": "Non usata",
+        "ginaLevel": "Livello {level}, {percent}% di resistenza in meno",
+        "beastLevel": "Livello delle bestie per la resistenza rimasta",
+        "beastLevelHint": "Le bestie dello stesso gruppo fanno gli stessi punti in State of Power."
+    },
+    "planned": {
+        "title": "Cacce pianificate",
+        "hint": "Cacce che fai comunque, come le bestie delle missioni Intel. Si pagano per prime.",
+        "empty": "Nessuna caccia alle bestie pianificata.",
+        "runLevel": "Livello della bestia",
+        "runCount": "Bestie",
+        "add": "Aggiungi caccia alle bestie",
+        "remove": "Rimuovi la caccia alle bestie {band}",
+        "polarTerrors": "Polar Terror pianificati"
+    },
+    "result": {
+        "pointsNote": "I punti sono prima di ogni bonus, come Valeria in State of Power. Le cacce che non sono bestie o Polar Terror, come la Bear Hunt, non sono contate.",
+        "tiles": {
+            "title": "Resistenza",
+            "percent": "{percent}%",
+            "total": "Resistenza totale",
+            "ginaReduction": "Riduzione di Gina",
+            "beastCost": "Resistenza per bestia",
+            "polarTerrorCost": "Resistenza per Polar Terror",
+            "planned": "Resistenza per le cacce pianificate",
+            "left": "Resistenza rimasta",
+            "short": "Resistenza mancante",
+            "shortNote": "Le cacce pianificate richiedono {amount} di resistenza in più di quella che hai. La resistenza rimasta non paga altre cacce."
+        },
+        "leftover": {
+            "title": "Resistenza rimasta dopo le cacce pianificate",
+            "hint": "Ogni riga spende tutta la resistenza rimasta in un solo tipo di caccia.",
+            "hunt": "Caccia",
+            "onlyBeasts": "Solo bestie, {band}",
+            "onlyPolarTerrors": "Solo Polar Terror",
+            "count": "Altre cacce",
+            "staminaLeft": "Resistenza rimasta"
+        },
+        "events": {
+            "title": "Punti evento",
+            "hint": "Pianificato sono i punti delle cacce pianificate. Le ultime due colonne aggiungono le cacce che la resistenza rimasta paga.",
+            "event": "Evento",
+            "perBeast": "Per bestia",
+            "perPolarTerror": "Per Polar Terror",
+            "planned": "Pianificato",
+            "withBeasts": "Piano e bestie",
+            "withPolarTerrors": "Piano e Polar Terror"
+        },
+        "plannedPoints": {
+            "title": "Punti delle cacce pianificate",
+            "hunt": "Caccia",
+            "beasts": "{count, plural, one {{amount} bestia, {band}} other {{amount} bestie, {band}}}",
+            "polarTerrors": "{count, plural, one {{amount} Polar Terror} other {{amount} Polar Terror}}",
+            "total": "Totale"
+        }
+    }
+}

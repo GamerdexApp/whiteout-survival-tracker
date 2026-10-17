@@ -5,6 +5,7 @@ import type { WikiPageId } from "@/data/wiki";
 import { AllianceStructuresPage } from "./pages/AllianceStructuresPage";
 import { AllianceTechPage } from "./pages/AllianceTechPage";
 import { BuildingsPage } from "./pages/BuildingsPage";
+import { CalculatorPage } from "./pages/CalculatorPage";
 import { ChiefCharmsPage } from "./pages/ChiefCharmsPage";
 import { ChiefGearPage } from "./pages/ChiefGearPage";
 import { DailiesPage } from "./pages/DailiesPage";
@@ -47,4 +48,5 @@ export const wikiPageComponents: Record<WikiPageId, ComponentType<WikiPageProps>
 	vip: VipPage,
 	tundraAlbum: TundraAlbumPage,
 	dailies: DailiesPage,
+	calculator: CalculatorPage,
 };

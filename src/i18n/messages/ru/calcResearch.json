@@ -1,0 +1,118 @@
+{
+    "speed": {
+        "title": "Скорость исследований",
+        "reset": "Сбросить всё",
+        "percentLabel": "Скорость исследований %",
+        "percentHint": "Ваша скорость как в игре, без бонусов отсюда.",
+        "stateBuff": "Бонус штата",
+        "percentPlus": "+{value}%",
+        "percent": "{value}%",
+        "vicePresident": {
+            "label": "Вице-президент",
+            "none": "Нет",
+            "regular": "Обычный",
+            "supreme": "Высший"
+        },
+        "total": "Общая скорость исследований"
+    },
+    "lines": {
+        "title": "Линии исследований",
+        "description": "Выберите текущий и нужный уровень для каждой линии. Каждая ступень линии это отдельная линия, как в игре. Ничего не сохраняется.",
+        "tabsLabel": "Деревья исследований",
+        "tabs": {
+            "growth": "Рост",
+            "economy": "Экономика",
+            "battle": "Бой",
+            "war-academy-troops": "War Academy T11",
+            "t12-infantry": "Пехота T12",
+            "t12-marksman": "Стрелок T12",
+            "t12-lancer": "Копейщик T12"
+        },
+        "tableLabel": "Линии исследований этого дерева",
+        "columns": {
+            "line": "Линия исследований",
+            "current": "Текущий уровень",
+            "goal": "Целевой уровень"
+        },
+        "levelLabel": {
+            "current": "Текущий уровень: {name}",
+            "goal": "Целевой уровень: {name}"
+        },
+        "levelMax": "{level} (макс.)",
+        "tier": {
+            "plain": "Ступень {tier}",
+            "troopLine": "{line} T{tier}"
+        },
+        "bulk": {
+            "current": "Все текущие уровни на",
+            "goal": "Все цели на",
+            "pick": "Выберите уровень"
+        }
+    },
+    "results": {
+        "title": "Результаты",
+        "empty": "Выберите цель выше текущего уровня линии исследований, чтобы увидеть ресурсы, время, мощь и очки событий.",
+        "plus": "+{value}",
+        "stats": {
+            "steps": "Уровней исследовать",
+            "baseTime": "Время без скорости",
+            "time": "Время при скорости {percent}%",
+            "power": "Прирост мощи",
+            "speedupMinutes": "Нужно минут ускорений"
+        },
+        "resources": {
+            "title": "Ресурсы"
+        },
+        "bonuses": {
+            "title": "Полученные бонусы",
+            "percentGain": "+{value}%",
+            "flatGain": "+{value}",
+            "none": "Эти уровни не дают бонусов."
+        },
+        "events": {
+            "title": "Очки событий",
+            "columns": {
+                "event": "Событие",
+                "shardPoints": "Fire Crystal Shards",
+                "speedupPoints": "Ускорения",
+                "total": "Итого",
+                "pointsPerPower": "Очки",
+                "days": "Дни события",
+                "points": "Очки за мощь"
+            },
+            "names": {
+                "svs": "SvS",
+                "allianceShowdown": "Alliance Showdown",
+                "kingOfIcefield": "King of Icefield",
+                "hallOfChief": "Hall of Chief"
+            },
+            "speedupTableLabel": "Очки за Fire Crystal Shards и ускорения",
+            "speedupNote": "Очки ускорений считаются так, будто все {minutes} минут времени исследований закрыты ускорениями исследований.",
+            "hallTableLabel": "Очки Hall of Chief за мощь",
+            "hallNote": "Hall of Chief начисляет очки за каждую единицу мощи, полученную за исследования. Множитель зависит от дня события.",
+            "pointsPerPower": "{value} за мощь",
+            "daySeparator": ", "
+        },
+        "requirements": {
+            "buildings": "Нужные здания:",
+            "buildingLevel": "{building}, уровень {level}",
+            "listSeparator": ", ",
+            "unmetTitle": "{count, plural, one {{amount} уровню нужна} few {{amount} уровням нужна} many {{amount} уровням нужна} other {{amount} уровням нужна}} другая линия исследований на уровне, которого ваш план не достигает:",
+            "unmetItem": "{name}, уровень {level}: нужна линия {requires} уровня {requiresLevel} (в плане {planned})",
+            "unmetMore": "И ещё {amount}.",
+            "stepsWithoutTime": "{count, plural, one {У {amount} уровня нет} few {У {amount} уровней нет} many {У {amount} уровней нет} other {У {amount} уровня нет}} времени исследования в данных, поэтому время считается как 0.",
+            "placeholders": "Пока нет данных о цене и времени для: {names}. Их ресурсы и время не учитываются."
+        },
+        "breakdown": {
+            "title": "По линиям исследований",
+            "plus": "+{value}",
+            "columns": {
+                "line": "Линия исследований",
+                "steps": "Уровни",
+                "baseTime": "Время без скорости",
+                "power": "Мощь",
+                "resources": "Ресурсы"
+            }
+        }
+    }
+}

@@ -1,0 +1,118 @@
+{
+    "speed": {
+        "title": "研究速度",
+        "reset": "全部重設",
+        "percentLabel": "研究速度 %",
+        "percentHint": "填入遊戲中顯示的速度，不含這裡的增益。",
+        "stateBuff": "州增益",
+        "percentPlus": "+{value}%",
+        "percent": "{value}%",
+        "vicePresident": {
+            "label": "副總統",
+            "none": "無",
+            "regular": "一般",
+            "supreme": "最高"
+        },
+        "total": "研究速度總計"
+    },
+    "lines": {
+        "title": "研究項目",
+        "description": "為每個項目選擇目前等級和你想要的等級。與遊戲中一樣，項目的每個階級都是獨立的項目。這裡不會儲存任何內容。",
+        "tabsLabel": "研究樹",
+        "tabs": {
+            "growth": "成長",
+            "economy": "經濟",
+            "battle": "戰鬥",
+            "war-academy-troops": "War Academy T11",
+            "t12-infantry": "步兵 T12",
+            "t12-marksman": "弓兵 T12",
+            "t12-lancer": "騎兵 T12"
+        },
+        "tableLabel": "此研究樹的研究項目",
+        "columns": {
+            "line": "研究項目",
+            "current": "目前等級",
+            "goal": "目標等級"
+        },
+        "levelLabel": {
+            "current": "{name}目前等級",
+            "goal": "{name}目標等級"
+        },
+        "levelMax": "{level}（滿級）",
+        "tier": {
+            "plain": "第 {tier} 階級",
+            "troopLine": "{line} T{tier}"
+        },
+        "bulk": {
+            "current": "把所有目前等級設為",
+            "goal": "把所有目標設為",
+            "pick": "選擇等級"
+        }
+    },
+    "results": {
+        "title": "結果",
+        "empty": "把某個研究項目的目標設為高於目前等級，即可查看資源、時間、戰力和活動積分。",
+        "plus": "+{value}",
+        "stats": {
+            "steps": "需研究的等級數",
+            "baseTime": "加速前時間",
+            "time": "{percent}% 速度下的時間",
+            "power": "獲得戰力",
+            "speedupMinutes": "所需加速分鐘數"
+        },
+        "resources": {
+            "title": "資源"
+        },
+        "bonuses": {
+            "title": "獲得的加成",
+            "percentGain": "+{value}%",
+            "flatGain": "+{value}",
+            "none": "這些等級沒有加成。"
+        },
+        "events": {
+            "title": "活動積分",
+            "columns": {
+                "event": "活動",
+                "shardPoints": "Fire Crystal Shards",
+                "speedupPoints": "加速",
+                "total": "合計",
+                "pointsPerPower": "積分",
+                "days": "活動日",
+                "points": "戰力帶來的積分"
+            },
+            "names": {
+                "svs": "SvS",
+                "allianceShowdown": "Alliance Showdown",
+                "kingOfIcefield": "King of Icefield",
+                "hallOfChief": "Hall of Chief"
+            },
+            "speedupTableLabel": "Fire Crystal Shard 和加速積分",
+            "speedupNote": "加速積分假設你用研究加速道具完成全部 {minutes} 分鐘的研究時間。",
+            "hallTableLabel": "戰力帶來的 Hall of Chief 積分",
+            "hallNote": "Hall of Chief 對研究獲得的每點戰力計分。倍率依活動日而定。",
+            "pointsPerPower": "每點戰力 {value}",
+            "daySeparator": "，"
+        },
+        "requirements": {
+            "buildings": "所需建築：",
+            "buildingLevel": "{building} {level} 級",
+            "listSeparator": "，",
+            "unmetTitle": "{count, plural, other {{amount} 個等級}}需要另一個研究項目達到你的規劃沒有涵蓋的等級：",
+            "unmetItem": "{name} {level} 級需要{requires} {requiresLevel} 級（規劃 {planned}）",
+            "unmetMore": "還有 {amount} 個。",
+            "stepsWithoutTime": "{count, plural, other {{amount} 個等級}}在資料中沒有研究時間，因此時間以 0 計算。",
+            "placeholders": "{names}目前沒有花費或時間資料，其資源和時間不計入。"
+        },
+        "breakdown": {
+            "title": "依研究項目",
+            "plus": "+{value}",
+            "columns": {
+                "line": "研究項目",
+                "steps": "等級",
+                "baseTime": "加速前時間",
+                "power": "戰力",
+                "resources": "資源"
+            }
+        }
+    }
+}

@@ -1,0 +1,118 @@
+{
+    "speed": {
+        "title": "研究速度",
+        "reset": "すべてリセット",
+        "percentLabel": "研究速度（%）",
+        "percentHint": "ゲーム内に表示される速度です。ここで設定するバフは含みません。",
+        "stateBuff": "ステートバフ",
+        "percentPlus": "+{value}%",
+        "percent": "{value}%",
+        "vicePresident": {
+            "label": "副大統領",
+            "none": "なし",
+            "regular": "通常",
+            "supreme": "最上級"
+        },
+        "total": "研究速度の合計"
+    },
+    "lines": {
+        "title": "研究ライン",
+        "description": "ラインごとに、現在のレベルと目標のレベルを選んでください。ゲームと同じく、ラインの各ティアは別のラインです。何も保存されません。",
+        "tabsLabel": "研究ツリー",
+        "tabs": {
+            "growth": "成長",
+            "economy": "経済",
+            "battle": "戦闘",
+            "war-academy-troops": "War Academy T11",
+            "t12-infantry": "歩兵 T12",
+            "t12-marksman": "弓兵 T12",
+            "t12-lancer": "槍兵 T12"
+        },
+        "tableLabel": "このツリーの研究ライン",
+        "columns": {
+            "line": "研究ライン",
+            "current": "現在のレベル",
+            "goal": "目標レベル"
+        },
+        "levelLabel": {
+            "current": "{name}の現在のレベル",
+            "goal": "{name}の目標レベル"
+        },
+        "levelMax": "{level}（最大）",
+        "tier": {
+            "plain": "ティア{tier}",
+            "troopLine": "{line} T{tier}"
+        },
+        "bulk": {
+            "current": "すべての現在のレベルを設定",
+            "goal": "すべての目標を設定",
+            "pick": "レベルを選択"
+        }
+    },
+    "results": {
+        "title": "結果",
+        "empty": "研究ラインの目標を現在のレベルより高くすると、資源、時間、戦力、イベントポイントが表示されます。",
+        "plus": "+{value}",
+        "stats": {
+            "steps": "研究するレベル",
+            "baseTime": "速度適用前の時間",
+            "time": "速度{percent}%での時間",
+            "power": "獲得戦力",
+            "speedupMinutes": "必要なスピードアップの分数"
+        },
+        "resources": {
+            "title": "資源"
+        },
+        "bonuses": {
+            "title": "獲得するボーナス",
+            "percentGain": "+{value}%",
+            "flatGain": "+{value}",
+            "none": "これらのレベルではボーナスを獲得できません。"
+        },
+        "events": {
+            "title": "イベントポイント",
+            "columns": {
+                "event": "イベント",
+                "shardPoints": "Fire Crystal Shards",
+                "speedupPoints": "スピードアップ",
+                "total": "合計",
+                "pointsPerPower": "ポイント",
+                "days": "イベント日",
+                "points": "戦力によるポイント"
+            },
+            "names": {
+                "svs": "SvS",
+                "allianceShowdown": "Alliance Showdown",
+                "kingOfIcefield": "King of Icefield",
+                "hallOfChief": "Hall of Chief"
+            },
+            "speedupTableLabel": "Fire Crystal Shardとスピードアップのポイント",
+            "speedupNote": "スピードアップのポイントは、研究時間{minutes}分すべてを研究スピードアップで進めた場合の値です。",
+            "hallTableLabel": "戦力によるHall of Chiefのポイント",
+            "hallNote": "Hall of Chiefでは、研究で獲得した戦力1ごとにポイントが入ります。倍率はイベント日によって変わります。",
+            "pointsPerPower": "戦力1につき{value}",
+            "daySeparator": "、"
+        },
+        "requirements": {
+            "buildings": "必要な建物:",
+            "buildingLevel": "{building}レベル{level}",
+            "listSeparator": "、",
+            "unmetTitle": "{count, plural, other {{amount}レベルには}}、プランが届かないレベルの別の研究ラインが必要です:",
+            "unmetItem": "{name}のレベル{level}には、{requires}のレベル{requiresLevel}が必要です（プラン: {planned}）",
+            "unmetMore": "ほか{amount}件。",
+            "stepsWithoutTime": "{count, plural, other {{amount}レベルは}}データに研究時間がないため、時間は0として数えます。",
+            "placeholders": "{names}のコストと時間のデータはまだありません。資源と時間は含まれません。"
+        },
+        "breakdown": {
+            "title": "研究ラインごと",
+            "plus": "+{value}",
+            "columns": {
+                "line": "研究ライン",
+                "steps": "レベル",
+                "baseTime": "速度適用前の時間",
+                "power": "戦力",
+                "resources": "資源"
+            }
+        }
+    }
+}

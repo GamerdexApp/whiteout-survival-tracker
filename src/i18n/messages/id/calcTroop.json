@@ -1,0 +1,117 @@
+{
+    "intro": "Atur level tiap camp dan apa yang dilatih atau dipromosikan. Ketiga camp berbagi satu kapasitas latihan: kapasitas dari tiga level camp dijumlahkan, ditambah bonus di bawah.",
+    "reset": "Atur ulang semua",
+    "tier": "T{tier}",
+    "bonuses": {
+        "title": "Kapasitas dan kecepatan",
+        "researchCapacity": "Kapasitas riset",
+        "researchCapacityHint": "Kapasitas latihan dari riset, seperti tampil di game.",
+        "trainingSpeed": "Kecepatan latihan (%)",
+        "trainingSpeedHint": "Kecepatanmu seperti tampil di game, tanpa buff di bawah.",
+        "position": "Jabatan",
+        "positions": {
+            "none": "Tidak ada",
+            "ministerOfEducation": "Minister of Education",
+            "vicePresident": "Vice President"
+        },
+        "rank": "Peringkat",
+        "ranks": {
+            "regular": "Biasa",
+            "supreme": "Supreme"
+        },
+        "appointmentEffect": "+{capacity} kapasitas, +{speed}% kecepatan latihan",
+        "capacityBoost": "Capacity boost",
+        "capacityBoostEffect": "Mengalikan total kapasitas dengan {multiplier}.",
+        "mobilize": "Mobilize",
+        "advancedTraining": "Advanced Training",
+        "speedEffect": "+{speed}% kecepatan latihan",
+        "costReduction": "Pengurangan biaya",
+        "costReductionLabel": "Pengurangan biaya {name} (%)",
+        "costReductionHint": "Dari 0 sampai {max}%."
+    },
+    "camps": {
+        "title": "Camp",
+        "level": "Level camp",
+        "levelOption": "{level} (kapasitas {capacity})",
+        "mode": "Aksi",
+        "modes": {
+            "none": "Tidak berlatih",
+            "training": "Latihan",
+            "promotion": "Promosi",
+            "both": "Latihan dan promosi"
+        },
+        "trainingTitle": "Latihan",
+        "promotionTitle": "Promosi",
+        "trainTier": "Tier yang dilatih",
+        "fromTier": "Promosi dari",
+        "toTier": "Promosi ke",
+        "troopsPerBatch": "Pasukan tiap batch",
+        "max": "Maks",
+        "maxValue": "Maks ({capacity})",
+        "batches": "Batch",
+        "runTime": "Waktu {time}"
+    },
+    "results": {
+        "title": "Hasil",
+        "capacity": "Kapasitas per batch",
+        "troops": "Pasukan didapat",
+        "power": "Kekuatan didapat",
+        "speedUsed": "Kecepatan latihan dipakai",
+        "totalTime": "Percepatan dibutuhkan",
+        "longest": "Camp terlama",
+        "percent": "{value}%",
+        "noRuns": "Atur setidaknya satu camp untuk berlatih atau promosi agar pasukan, kekuatan, sumber daya, dan waktu tampil.",
+        "noChange": "Proses ini tidak mengubah pasukan. Atur jumlah di atas 0."
+    },
+    "tiers": {
+        "troopsTitle": "Pasukan menurut tier",
+        "powerTitle": "Kekuatan menurut tier",
+        "heads": {
+            "tier": "Tier",
+            "total": "Total"
+        },
+        "total": "Total",
+        "promotionNote": "Promosi mengambil pasukan dan kekuatannya dari tier bawah lalu menambahkannya ke tier atas, jadi tier bawah menampilkan perubahan negatif.",
+        "fireCrystalNote": "Kekuatan memakai level Fire Crystal tiap camp: {levels}. Hanya tier 10 dan 11 yang berubah menurut level. Bonus statistik dari riset atau perlengkapan tidak termasuk.",
+        "fireCrystalLevel": "{name} {level}"
+    },
+    "resources": {
+        "title": "Sumber daya",
+        "tableLabel": "Sumber daya dibutuhkan",
+        "heads": {
+            "resource": "Sumber daya",
+            "amount": "Jumlah"
+        }
+    },
+    "time": {
+        "title": "Waktu",
+        "heads": {
+            "camp": "Camp",
+            "action": "Aksi",
+            "troopsPerBatch": "Pasukan per batch",
+            "batches": "Batch",
+            "time": "Waktu"
+        },
+        "training": "Latihan {tier}",
+        "promotion": "Promosi {from} ke {to}",
+        "campTotal": "Camp {name}",
+        "totalTime": "Semua camp dijumlahkan (percepatan dibutuhkan)",
+        "longest": "Camp terlama (semua camp berlatih bersamaan)",
+        "minutesNeeded": "Menit percepatan dibutuhkan",
+        "minutes": "{value} mnt",
+        "note": "Waktu sebuah batch adalah waktu satu pasukan dikali jumlah pasukan, dibagi 1 ditambah kecepatan latihan, sebelum percepatan."
+    },
+    "events": {
+        "title": "Poin event",
+        "tableLabel": "Poin event",
+        "heads": {
+            "event": "Event",
+            "training": "Poin latihan",
+            "perMinute": "Poin percepatan per menit",
+            "speedup": "Poin percepatan",
+            "total": "Total"
+        },
+        "noSpeedup": "Tidak ada",
+        "note": "Poin latihan menghitung pasukan dari proses latihan menurut tiernya. Promosi tidak memberi poin latihan. Poin percepatan memakai {minutes} menit percepatan yang dibutuhkan semua camp. Poin Hall of Chief untuk satu musim, dan poinnya untuk menaikkan kekuatan tidak termasuk."
+    }
+}

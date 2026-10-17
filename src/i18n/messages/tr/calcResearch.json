@@ -1,0 +1,118 @@
+{
+    "speed": {
+        "title": "Araştırma hızı",
+        "reset": "Tümünü sıfırla",
+        "percentLabel": "Araştırma hızı %",
+        "percentHint": "Oyunda gördüğün hız, buradaki bonuslar olmadan.",
+        "stateBuff": "State bonusu",
+        "percentPlus": "+%{value}",
+        "percent": "%{value}",
+        "vicePresident": {
+            "label": "Başkan yardımcısı",
+            "none": "Yok",
+            "regular": "Normal",
+            "supreme": "Üstün"
+        },
+        "total": "Toplam araştırma hızı"
+    },
+    "lines": {
+        "title": "Araştırma hatları",
+        "description": "Her hat için şu anki seviyeyi ve istediğin seviyeyi seç. Bir hattın her kademesi, oyundaki gibi ayrı bir hattır. Hiçbir şey kaydedilmez.",
+        "tabsLabel": "Araştırma ağaçları",
+        "tabs": {
+            "growth": "Büyüme",
+            "economy": "Ekonomi",
+            "battle": "Savaş",
+            "war-academy-troops": "War Academy T11",
+            "t12-infantry": "Piyade T12",
+            "t12-marksman": "Nişancı T12",
+            "t12-lancer": "Mızrakçı T12"
+        },
+        "tableLabel": "Bu ağacın araştırma hatları",
+        "columns": {
+            "line": "Araştırma hattı",
+            "current": "Mevcut seviye",
+            "goal": "Hedef seviye"
+        },
+        "levelLabel": {
+            "current": "{name} mevcut seviye",
+            "goal": "{name} hedef seviye"
+        },
+        "levelMax": "{level} (maks.)",
+        "tier": {
+            "plain": "Kademe {tier}",
+            "troopLine": "{line} T{tier}"
+        },
+        "bulk": {
+            "current": "Tüm mevcut seviyeleri şuna ayarla",
+            "goal": "Tüm hedefleri şuna ayarla",
+            "pick": "Bir seviye seç"
+        }
+    },
+    "results": {
+        "title": "Sonuçlar",
+        "empty": "Kaynakları, süreyi, gücü ve etkinlik puanını görmek için bir araştırma hattının mevcut seviyesinin üstünde bir hedef seç.",
+        "plus": "+{value}",
+        "stats": {
+            "steps": "Araştırılacak seviyeler",
+            "baseTime": "Hızdan önceki süre",
+            "time": "%{percent} hızda süre",
+            "power": "Kazanılan güç",
+            "speedupMinutes": "Gereken hızlandırma dakikası"
+        },
+        "resources": {
+            "title": "Kaynaklar"
+        },
+        "bonuses": {
+            "title": "Kazanılan bonuslar",
+            "percentGain": "+%{value}",
+            "flatGain": "+{value}",
+            "none": "Bu seviyeler bonus vermiyor."
+        },
+        "events": {
+            "title": "Etkinlik puanı",
+            "columns": {
+                "event": "Etkinlik",
+                "shardPoints": "Fire Crystal Shard",
+                "speedupPoints": "Hızlandırmalar",
+                "total": "Toplam",
+                "pointsPerPower": "Puan",
+                "days": "Etkinlik günleri",
+                "points": "Güçten gelen puan"
+            },
+            "names": {
+                "svs": "SvS",
+                "allianceShowdown": "Alliance Showdown",
+                "kingOfIcefield": "King of Icefield",
+                "hallOfChief": "Hall of Chief"
+            },
+            "speedupTableLabel": "Fire Crystal Shard ve hızlandırma puanları",
+            "speedupNote": "Hızlandırma puanı, araştırma süresinin {minutes} dakikasının tamamını araştırma hızlandırmalarıyla bitirdiğini varsayar.",
+            "hallTableLabel": "Güçten gelen Hall of Chief puanları",
+            "hallNote": "Hall of Chief, araştırmayla kazanılan her güç puanını skorlar. Çarpan etkinlik gününe bağlıdır.",
+            "pointsPerPower": "Güç başına {value}",
+            "daySeparator": ", "
+        },
+        "requirements": {
+            "buildings": "Gereken binalar:",
+            "buildingLevel": "{building} seviye {level}",
+            "listSeparator": ", ",
+            "unmetTitle": "{count, plural, one {{amount} seviye} other {{amount} seviye}} için planının ulaşmadığı bir seviyede başka bir araştırma hattı gerekir:",
+            "unmetItem": "{name} seviye {level} için {requires} seviye {requiresLevel} gerekir (planlanan {planned})",
+            "unmetMore": "Ve {amount} tane daha.",
+            "stepsWithoutTime": "{count, plural, one {{amount} seviyenin} other {{amount} seviyenin}} verisinde araştırma süresi yok, bu yüzden süre 0 sayılır.",
+            "placeholders": "{names} için henüz maliyet ya da süre verisi yok. Kaynakları ve süreleri sayılmıyor."
+        },
+        "breakdown": {
+            "title": "Araştırma hattına göre",
+            "plus": "+{value}",
+            "columns": {
+                "line": "Araştırma hattı",
+                "steps": "Seviyeler",
+                "baseTime": "Hızdan önceki süre",
+                "power": "Güç",
+                "resources": "Kaynaklar"
+            }
+        }
+    }
+}

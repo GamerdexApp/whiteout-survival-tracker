@@ -1,0 +1,117 @@
+{
+    "intro": "캠프마다 레벨과 훈련 또는 승급 내용을 설정하세요. 세 캠프는 훈련 한도 하나를 같이 써요. 한도는 세 캠프 레벨의 한도를 더한 값에 아래 보너스를 더한 값이에요.",
+    "reset": "모두 초기화",
+    "tier": "T{tier}",
+    "bonuses": {
+        "title": "한도와 속도",
+        "researchCapacity": "연구 한도",
+        "researchCapacityHint": "게임에 표시되는 연구의 훈련 한도예요.",
+        "trainingSpeed": "훈련 속도 (%)",
+        "trainingSpeedHint": "게임에 표시되는 속도예요. 아래 버프는 포함하지 않아요.",
+        "position": "임명",
+        "positions": {
+            "none": "없음",
+            "ministerOfEducation": "Minister of Education",
+            "vicePresident": "Vice President"
+        },
+        "rank": "등급",
+        "ranks": {
+            "regular": "일반",
+            "supreme": "최상급"
+        },
+        "appointmentEffect": "한도 +{capacity}, 훈련 속도 +{speed}%",
+        "capacityBoost": "한도 증가",
+        "capacityBoostEffect": "총 한도에 {multiplier}배를 곱해요.",
+        "mobilize": "Mobilize",
+        "advancedTraining": "Advanced Training",
+        "speedEffect": "훈련 속도 +{speed}%",
+        "costReduction": "비용 감소",
+        "costReductionLabel": "{name} 비용 감소 (%)",
+        "costReductionHint": "0부터 {max}%까지."
+    },
+    "camps": {
+        "title": "캠프",
+        "level": "캠프 레벨",
+        "levelOption": "{level} (한도 {capacity})",
+        "mode": "행동",
+        "modes": {
+            "none": "훈련 안 함",
+            "training": "훈련",
+            "promotion": "승급",
+            "both": "훈련과 승급"
+        },
+        "trainingTitle": "훈련",
+        "promotionTitle": "승급",
+        "trainTier": "훈련할 단계",
+        "fromTier": "승급 전 단계",
+        "toTier": "승급 후 단계",
+        "troopsPerBatch": "배치당 병력",
+        "max": "최대",
+        "maxValue": "최대 ({capacity})",
+        "batches": "배치",
+        "runTime": "시간 {time}"
+    },
+    "results": {
+        "title": "결과",
+        "capacity": "배치당 한도",
+        "troops": "늘어나는 병력",
+        "power": "얻는 전투력",
+        "speedUsed": "적용한 훈련 속도",
+        "totalTime": "필요한 가속",
+        "longest": "가장 긴 캠프",
+        "percent": "{value}%",
+        "noRuns": "훈련하거나 승급할 캠프를 하나 이상 설정하면 병력, 전투력, 자원, 시간이 표시돼요.",
+        "noChange": "이 설정으로는 병력이 바뀌지 않아요. 수를 0보다 크게 설정하세요."
+    },
+    "tiers": {
+        "troopsTitle": "단계별 병력",
+        "powerTitle": "단계별 전투력",
+        "heads": {
+            "tier": "단계",
+            "total": "합계"
+        },
+        "total": "합계",
+        "promotionNote": "승급은 낮은 단계에서 병력과 그 전투력을 빼서 높은 단계에 더해요. 그래서 낮은 단계의 변화는 음수로 표시돼요.",
+        "fireCrystalNote": "전투력은 캠프별 Fire Crystal 레벨로 계산해요: {levels}. 레벨에 따라 바뀌는 것은 10단계와 11단계뿐이에요. 연구나 장비의 능력치 보너스는 포함하지 않아요.",
+        "fireCrystalLevel": "{name} {level}"
+    },
+    "resources": {
+        "title": "자원",
+        "tableLabel": "필요한 자원",
+        "heads": {
+            "resource": "자원",
+            "amount": "수량"
+        }
+    },
+    "time": {
+        "title": "시간",
+        "heads": {
+            "camp": "캠프",
+            "action": "행동",
+            "troopsPerBatch": "배치당 병력",
+            "batches": "배치",
+            "time": "시간"
+        },
+        "training": "{tier} 훈련",
+        "promotion": "{from}에서 {to}로 승급",
+        "campTotal": "{name} 캠프",
+        "totalTime": "모든 캠프 합계 (필요한 가속)",
+        "longest": "가장 긴 캠프 (캠프는 동시에 훈련해요)",
+        "minutesNeeded": "필요한 가속 분",
+        "minutes": "{value}분",
+        "note": "배치 시간은 병력 1명의 시간에 병력 수를 곱하고 1에 훈련 속도를 더한 값으로 나눈 값이며, 가속을 적용하기 전 값이에요."
+    },
+    "events": {
+        "title": "이벤트 점수",
+        "tableLabel": "이벤트 점수",
+        "heads": {
+            "event": "이벤트",
+            "training": "훈련 점수",
+            "perMinute": "분당 가속 점수",
+            "speedup": "가속 점수",
+            "total": "합계"
+        },
+        "noSpeedup": "없음",
+        "note": "훈련 점수는 훈련한 병력을 해당 단계로 계산한 값이에요. 승급은 훈련 점수를 주지 않아요. 가속 점수는 모든 캠프에 필요한 가속 {minutes}분을 사용해요. Hall of Chief 점수는 한 시즌 기준이며 전투력 상승으로 얻는 점수는 포함하지 않아요."
+    }
+}

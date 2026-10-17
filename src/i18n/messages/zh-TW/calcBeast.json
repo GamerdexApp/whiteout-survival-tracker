@@ -1,0 +1,65 @@
+{
+    "levelBand": "{low} 到 {high} 級",
+    "stamina": {
+        "title": "體力",
+        "stamina": "體力",
+        "cans": "體力罐",
+        "cansHint": "每個 {amount} 體力",
+        "gina": "Gina 的 Endurance Training",
+        "ginaNone": "未使用",
+        "ginaLevel": "{level} 級，體力消耗減少 {percent}%",
+        "beastLevel": "剩餘體力對應的野獸等級",
+        "beastLevelHint": "同一組的野獸在 State of Power 中得分相同。"
+    },
+    "planned": {
+        "title": "規劃中的狩獵",
+        "hint": "無論如何都會進行的狩獵，例如情報任務中的野獸。會優先扣除體力。",
+        "empty": "沒有規劃中的野獸狩獵。",
+        "runLevel": "野獸等級",
+        "runCount": "野獸",
+        "add": "新增野獸狩獵",
+        "remove": "移除{band}野獸狩獵",
+        "polarTerrors": "規劃中的 Polar Terror"
+    },
+    "result": {
+        "pointsNote": "積分未計入任何加成，例如 State of Power 中的 Valeria。野獸和 Polar Terror 以外的狩獵，例如 Bear Hunt，不計入。",
+        "tiles": {
+            "title": "體力",
+            "percent": "{percent}%",
+            "total": "體力總計",
+            "ginaReduction": "Gina 減免",
+            "beastCost": "每隻野獸所需體力",
+            "polarTerrorCost": "每隻 Polar Terror 所需體力",
+            "planned": "規劃的狩獵所需體力",
+            "left": "剩餘體力",
+            "short": "體力不足",
+            "shortNote": "規劃的狩獵比你現有的體力多需要 {amount} 體力。剩餘體力不足以進行額外狩獵。"
+        },
+        "leftover": {
+            "title": "規劃的狩獵之後的剩餘體力",
+            "hint": "每一列都把全部剩餘體力用於一種狩獵。",
+            "hunt": "狩獵",
+            "onlyBeasts": "只打野獸，{band}",
+            "onlyPolarTerrors": "只打 Polar Terror",
+            "count": "額外狩獵",
+            "staminaLeft": "剩餘體力"
+        },
+        "events": {
+            "title": "活動積分",
+            "hint": "規劃是規劃的狩獵的積分。最後兩欄再加上剩餘體力可打的狩獵。",
+            "event": "活動",
+            "perBeast": "每隻野獸",
+            "perPolarTerror": "每隻 Polar Terror",
+            "planned": "規劃",
+            "withBeasts": "規劃加野獸",
+            "withPolarTerrors": "規劃加 Polar Terror"
+        },
+        "plannedPoints": {
+            "title": "規劃的狩獵的積分",
+            "hunt": "狩獵",
+            "beasts": "{count, plural, other {{amount} 隻野獸，{band}}}",
+            "polarTerrors": "{count, plural, other {{amount} 隻 Polar Terror}}",
+            "total": "合計"
+        }
+    }
+}

@@ -1,0 +1,67 @@
+{
+    "intro": "选择每位专家当前的亲密度等级和技能等级，以及你想要的等级。计算器会汇总 Books of Knowledge、专家徽章、技能 EXP 和亲密度点数。专家每十级进阶一次，越过该等级需要徽章。如果专家在当前等级已经进阶，或要为目标等级的进阶付费，请开启“进阶”。天赋随关系升级，不需要花费。",
+    "goals": {
+        "title": "专家",
+        "empty": "添加专家即可查看 Books of Knowledge、徽章和活动积分。"
+    },
+    "add": {
+        "label": "要添加的专家",
+        "button": "添加",
+        "allAdded": "所有专家都已在计算器中。"
+    },
+    "expert": {
+        "meta": "{title}，{specialty}",
+        "remove": "移除",
+        "removeLabel": "移除{expert}",
+        "affinity": "亲密度等级",
+        "current": "当前",
+        "goal": "目标",
+        "advancedAtCurrent": "在{level}级已进阶",
+        "advanceAtGoal": "在{level}级进阶",
+        "skillMax": "最高 {level}"
+    },
+    "results": {
+        "title": "结果",
+        "stats": {
+            "books": "Books of Knowledge",
+            "sigils": "专家徽章",
+            "exp": "技能 EXP",
+            "learningTime": "学习时间",
+            "affinity": "亲密度点数",
+            "levels": "亲密度等级",
+            "skillLevels": "技能等级",
+            "advancements": "进阶"
+        }
+    },
+    "resources": {
+        "title": "资源",
+        "nothing": "这些目标不需要 Books of Knowledge 或徽章。",
+        "commonSigils": "Common Expert Sigils 可以转换成任何专家的徽章。"
+    },
+    "events": {
+        "title": "活动积分",
+        "heads": {
+            "event": "活动",
+            "items": "书和徽章",
+            "perMinute": "每加速分钟",
+            "speedups": "加速",
+            "total": "合计"
+        },
+        "hint": "加速积分按整个学习时间 {duration} 使用学习加速或通用加速计算。"
+    },
+    "byExpert": {
+        "title": "按专家",
+        "nothing": "还没有专家的目标高于当前等级。",
+        "heads": {
+            "expert": "专家",
+            "levels": "亲密度等级",
+            "advancements": "进阶",
+            "skillLevels": "技能等级",
+            "books": "书",
+            "sigils": "徽章",
+            "exp": "技能 EXP",
+            "learningTime": "学习时间",
+            "affinity": "亲密度点数"
+        }
+    }
+}

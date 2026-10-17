@@ -1,0 +1,118 @@
+{
+    "speed": {
+        "title": "Research speed",
+        "reset": "Reset all",
+        "percentLabel": "Research speed %",
+        "percentHint": "Your speed as the game shows it, without the buffs here.",
+        "stateBuff": "State buff",
+        "percentPlus": "+{value}%",
+        "percent": "{value}%",
+        "vicePresident": {
+            "label": "Vice President",
+            "none": "None",
+            "regular": "Regular",
+            "supreme": "Supreme"
+        },
+        "total": "Total research speed"
+    },
+    "lines": {
+        "title": "Research lines",
+        "description": "Pick the level you have now and the level you want for each line. Each tier of a line is its own line, as in the game. Nothing is saved.",
+        "tabsLabel": "Research trees",
+        "tabs": {
+            "growth": "Growth",
+            "economy": "Economy",
+            "battle": "Battle",
+            "war-academy-troops": "War Academy T11",
+            "t12-infantry": "Infantry T12",
+            "t12-marksman": "Marksman T12",
+            "t12-lancer": "Lancer T12"
+        },
+        "tableLabel": "Research lines of this tree",
+        "columns": {
+            "line": "Research line",
+            "current": "Current level",
+            "goal": "Goal level"
+        },
+        "levelLabel": {
+            "current": "{name} current level",
+            "goal": "{name} goal level"
+        },
+        "levelMax": "{level} (max)",
+        "tier": {
+            "plain": "Tier {tier}",
+            "troopLine": "{line} T{tier}"
+        },
+        "bulk": {
+            "current": "Set all current levels to",
+            "goal": "Set all goals to",
+            "pick": "Pick a level"
+        }
+    },
+    "results": {
+        "title": "Results",
+        "empty": "Pick a goal above the current level of a research line to see the resources, time, power and event points.",
+        "plus": "+{value}",
+        "stats": {
+            "steps": "Levels to research",
+            "baseTime": "Time before speed",
+            "time": "Time at {percent}% speed",
+            "power": "Power gained",
+            "speedupMinutes": "Speedup minutes needed"
+        },
+        "resources": {
+            "title": "Resources"
+        },
+        "bonuses": {
+            "title": "Bonuses gained",
+            "percentGain": "+{value}%",
+            "flatGain": "+{value}",
+            "none": "These levels give no bonus."
+        },
+        "events": {
+            "title": "Event points",
+            "columns": {
+                "event": "Event",
+                "shardPoints": "Fire Crystal Shards",
+                "speedupPoints": "Speedups",
+                "total": "Total",
+                "pointsPerPower": "Points",
+                "days": "Event days",
+                "points": "Points from power"
+            },
+            "names": {
+                "svs": "SvS",
+                "allianceShowdown": "Alliance Showdown",
+                "kingOfIcefield": "King of Icefield",
+                "hallOfChief": "Hall of Chief"
+            },
+            "speedupTableLabel": "Fire Crystal Shard and speedup points",
+            "speedupNote": "Speedup points assume you finish all {minutes} minutes of research time with research speedups.",
+            "hallTableLabel": "Hall of Chief points from power",
+            "hallNote": "Hall of Chief scores each point of power gained through research. The multiplier depends on the event day.",
+            "pointsPerPower": "{value} per power",
+            "daySeparator": ", "
+        },
+        "requirements": {
+            "buildings": "Buildings needed:",
+            "buildingLevel": "{building} level {level}",
+            "listSeparator": ", ",
+            "unmetTitle": "{count, plural, one {{amount} level needs} other {{amount} levels need}} another research line at a level your plan does not reach:",
+            "unmetItem": "{name} level {level} needs {requires} level {requiresLevel} (planned {planned})",
+            "unmetMore": "And {amount} more.",
+            "stepsWithoutTime": "{count, plural, one {{amount} level has} other {{amount} levels have}} no research time in the data, so the time counts as 0.",
+            "placeholders": "No cost or time data yet for {names}. Their resources and time are not counted."
+        },
+        "breakdown": {
+            "title": "By research line",
+            "plus": "+{value}",
+            "columns": {
+                "line": "Research line",
+                "steps": "Levels",
+                "baseTime": "Time before speed",
+                "power": "Power",
+                "resources": "Resources"
+            }
+        }
+    }
+}

@@ -1,0 +1,103 @@
+{
+    "speed": {
+        "title": "Tốc độ xây dựng",
+        "reset": "Đặt lại tất cả",
+        "percentLabel": "Tốc độ xây dựng %",
+        "percentHint": "Chỉ số cộng thêm của bạn như game hiển thị, chưa tính Phó chủ tịch và Double Time.",
+        "percentPlus": "+{value}%",
+        "percent": "{value}%",
+        "vicePresident": {
+            "label": "Phó chủ tịch",
+            "none": "Không có",
+            "regular": "Thường",
+            "supreme": "Tối cao"
+        },
+        "speedupLabel": "Số phút tăng tốc bạn dùng",
+        "speedupHint": "Vật phẩm tăng tốc xây dựng bạn dùng cho các lần nâng cấp này. Chúng được cộng vào điểm sự kiện.",
+        "doubleTime": "Double Time",
+        "doubleTimeNote": "Lệnh Thủ lĩnh cộng thêm {value}% cho các lần nâng cấp bắt đầu khi lệnh đang có hiệu lực.",
+        "total": "Tổng tốc độ xây dựng"
+    },
+    "buildings": {
+        "title": "Công trình",
+        "description": "Chọn cấp bạn đang có và cấp bạn muốn cho từng công trình. Các công trình tiên quyết dưới cấp mà một bước cần sẽ được thêm vào kế hoạch, nên hãy đặt cấp hiện tại của mọi công trình bạn có, nếu không nó sẽ được tính là chưa xây. Không có gì được lưu.",
+        "tableLabel": "Công trình với cấp hiện tại và cấp mục tiêu",
+        "columns": {
+            "building": "Công trình",
+            "current": "Cấp hiện tại",
+            "goal": "Cấp mục tiêu"
+        },
+        "levelLabel": {
+            "current": "Cấp hiện tại của {name}",
+            "goal": "Cấp mục tiêu của {name}"
+        },
+        "notBuilt": "Chưa xây"
+    },
+    "results": {
+        "title": "Kết quả",
+        "empty": "Hãy chọn mục tiêu cao hơn cấp hiện tại của một công trình để xem tài nguyên, thời gian, sức mạnh và điểm sự kiện.",
+        "plus": "+{value}",
+        "stats": {
+            "steps": "Cấp cần xây",
+            "baseTime": "Thời gian trước khi tăng tốc",
+            "time": "Thời gian ở tốc độ {percent}%",
+            "power": "Sức mạnh nhận được",
+            "speedupMinutes": "Số phút tăng tốc cần"
+        },
+        "unmet": {
+            "title": "Công trình tiên quyết không có trong dữ liệu sẽ không thêm bước nào:",
+            "item": "{building} cấp {level}",
+            "listSeparator": ", "
+        },
+        "resources": {
+            "title": "Tài nguyên"
+        },
+        "events": {
+            "title": "Điểm sự kiện",
+            "columns": {
+                "event": "Sự kiện",
+                "crystalPoints": "Fire Crystal",
+                "speedupPoints": "Tăng tốc",
+                "total": "Tổng",
+                "pointsPerPower": "Điểm",
+                "days": "Ngày sự kiện",
+                "points": "Điểm từ sức mạnh"
+            },
+            "scoreTableLabel": "Điểm Fire Crystal và tăng tốc",
+            "speedupNote": "Điểm tăng tốc tính {used} trong {needed} phút mà thời gian xây cần. Số phút vượt quá không được điểm.",
+            "hallTableLabel": "Điểm {name} từ sức mạnh",
+            "hallNote": "{name} tính điểm cho mỗi điểm sức mạnh nhận được từ xây dựng. Hệ số phụ thuộc vào ngày của sự kiện.",
+            "pointsPerPower": "{value} mỗi điểm sức mạnh",
+            "daySeparator": ", "
+        },
+        "breakdown": {
+            "title": "Theo công trình",
+            "plus": "+{value}",
+            "levelRange": "{from} đến {to}",
+            "prerequisite": "Tiên quyết",
+            "free": "Không tốn",
+            "columns": {
+                "building": "Công trình",
+                "levels": "Cấp",
+                "steps": "Bước",
+                "power": "Sức mạnh",
+                "baseTime": "Thời gian trước khi tăng tốc",
+                "resources": "Tài nguyên"
+            }
+        },
+        "stepDetails": {
+            "title": "{count, plural, other {Chi tiết các bước ({amount} bước)}}",
+            "tableLabel": "Từng cấp được xây, theo thứ tự xây",
+            "plus": "+{value}",
+            "prerequisite": "Tiên quyết",
+            "free": "Không tốn",
+            "columns": {
+                "building": "Công trình",
+                "level": "Cấp",
+                "power": "Sức mạnh",
+                "baseTime": "Thời gian trước khi tăng tốc",
+                "cost": "Chi phí"
+            }
+        }
+    }
+}

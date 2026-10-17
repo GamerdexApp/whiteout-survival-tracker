@@ -1,0 +1,67 @@
+{
+    "intro": "전문가마다 현재와 목표 친밀도 레벨, 스킬 레벨을 고르세요. Books of Knowledge, 인장, 스킬 경험치, 친밀도 포인트의 합계를 계산해요. 전문가는 10레벨마다 승급하고, 그 이상 올리려면 인장이 필요해요. 현재 레벨에서 이미 승급했거나 목표 레벨의 승급 비용도 포함하려면 고급을 켜세요. 재능은 관계와 함께 오르고 비용이 들지 않아요.",
+    "goals": {
+        "title": "전문가",
+        "empty": "전문가를 추가하면 Books of Knowledge, 인장, 이벤트 점수가 표시돼요."
+    },
+    "add": {
+        "label": "추가할 전문가",
+        "button": "추가",
+        "allAdded": "모든 전문가가 계산기에 들어 있어요."
+    },
+    "expert": {
+        "meta": "{title}, {specialty}",
+        "remove": "삭제",
+        "removeLabel": "{expert} 삭제",
+        "affinity": "친밀도 레벨",
+        "current": "현재",
+        "goal": "목표",
+        "advancedAtCurrent": "{level}레벨에서 승급함",
+        "advanceAtGoal": "{level}레벨에서 승급",
+        "skillMax": "최대 {level}"
+    },
+    "results": {
+        "title": "결과",
+        "stats": {
+            "books": "Books of Knowledge",
+            "sigils": "전문가 인장",
+            "exp": "스킬 경험치",
+            "learningTime": "학습 시간",
+            "affinity": "친밀도 포인트",
+            "levels": "친밀도 레벨",
+            "skillLevels": "스킬 레벨",
+            "advancements": "승급"
+        }
+    },
+    "resources": {
+        "title": "자원",
+        "nothing": "이 목표에는 Books of Knowledge도 인장도 필요하지 않아요.",
+        "commonSigils": "Common Expert Sigils는 어떤 전문가의 인장으로도 바꿀 수 있어요."
+    },
+    "events": {
+        "title": "이벤트 점수",
+        "heads": {
+            "event": "이벤트",
+            "items": "책과 인장",
+            "perMinute": "가속 1분당",
+            "speedups": "가속",
+            "total": "합계"
+        },
+        "hint": "가속 점수는 학습 시간 {duration} 전체를 학습 가속이나 일반 가속으로 채운 경우의 값이에요."
+    },
+    "byExpert": {
+        "title": "전문가별",
+        "nothing": "목표가 현재 레벨보다 높은 전문가가 아직 없어요.",
+        "heads": {
+            "expert": "전문가",
+            "levels": "친밀도 레벨",
+            "advancements": "승급",
+            "skillLevels": "스킬 레벨",
+            "books": "책",
+            "sigils": "인장",
+            "exp": "스킬 경험치",
+            "learningTime": "학습 시간",
+            "affinity": "친밀도 포인트"
+        }
+    }
+}

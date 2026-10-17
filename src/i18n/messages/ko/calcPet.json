@@ -1,0 +1,61 @@
+{
+    "intro": "레벨업할 펫을 추가하세요. 펫마다 현재 레벨과 원하는 레벨을 고르세요. 펫은 10의 배수 레벨마다 승급하고, 그 레벨을 넘으려면 승급이 필요해요.",
+    "picker": {
+        "petLabel": "펫",
+        "add": "펫 추가",
+        "addAll": "모든 펫 추가",
+        "allAdded": "모든 펫이 목록에 있어요.",
+        "setAllMax": "모든 목표를 최대로 설정",
+        "advanceAtMax": "최대 레벨에서도 승급",
+        "removeAll": "모두 삭제"
+    },
+    "row": {
+        "maxLevel": "최대 레벨 {max}",
+        "current": "현재 레벨",
+        "goal": "목표 레벨",
+        "currentAdvanced": "이미 승급함",
+        "goalAdvanced": "목표에서 승급",
+        "keepsAdvancement": "이 레벨에서는 펫이 승급을 유지해요.",
+        "remove": "{pet} 삭제"
+    },
+    "empty": "아직 추가한 펫이 없어요. 위에서 펫을 추가하면 펫 먹이, 승급 아이템, 상승 수치가 표시돼요.",
+    "results": {
+        "title": "결과",
+        "stats": {
+            "levels": "레벨",
+            "advancements": "승급",
+            "troopAttack": "얻는 병력 공격",
+            "troopDefense": "얻는 병력 방어",
+            "power": "얻는 전투력",
+            "advancementScore": "승급 점수"
+        },
+        "percent": "{value}%",
+        "unknown": "알 수 없음",
+        "unknownPowerNote": "일부 승급 레벨에는 승급 후 전투력 데이터가 없어서 해당 펫의 전투력 상승은 알 수 없음으로 표시돼요.",
+        "resources": {
+            "title": "자원",
+            "empty": "목표를 현재 레벨보다 높게 올리면 자원이 표시돼요."
+        },
+        "events": {
+            "title": "승급 점수로 얻는 이벤트 점수",
+            "noPoints": "점수 없음",
+            "note": "이벤트 점수는 승급 점수에 각 이벤트의 \"Pet advancement score increases by 1\" 행 점수를 곱한 값이에요. {hallOfChief}에는 펫 행이 없어요."
+        },
+        "byPet": {
+            "title": "펫별",
+            "tableLabel": "펫별 결과",
+            "empty": "레벨이나 승급이 오르는 펫이 아직 없어요.",
+            "heads": {
+                "pet": "펫",
+                "levels": "레벨",
+                "advancements": "승급",
+                "score": "점수",
+                "resources": "자원",
+                "troopAttack": "병력 공격",
+                "troopDefense": "병력 방어",
+                "power": "전투력"
+            },
+            "noResources": "없음"
+        }
+    }
+}

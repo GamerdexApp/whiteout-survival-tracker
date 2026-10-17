@@ -1,0 +1,67 @@
+{
+    "intro": "選擇每位專家目前的親密度等級和技能等級，以及你想要的等級。計算器會彙總 Books of Knowledge、Expert Sigils、技能 EXP 和親密度點數。專家每十級進階一次，超過該等級需要 Sigil。如果專家在目前等級已經進階，或要為目標等級的進階付出花費，請開啟「進階」。天賦會隨關係升級，不需要花費。",
+    "goals": {
+        "title": "專家",
+        "empty": "新增專家即可查看 Books of Knowledge、Sigil 和活動積分。"
+    },
+    "add": {
+        "label": "要新增的專家",
+        "button": "新增",
+        "allAdded": "所有專家都已在計算器中。"
+    },
+    "expert": {
+        "meta": "{title}，{specialty}",
+        "remove": "移除",
+        "removeLabel": "移除{expert}",
+        "affinity": "親密度等級",
+        "current": "目前",
+        "goal": "目標",
+        "advancedAtCurrent": "在 {level} 級已進階",
+        "advanceAtGoal": "在 {level} 級進階",
+        "skillMax": "最高 {level}"
+    },
+    "results": {
+        "title": "結果",
+        "stats": {
+            "books": "Books of Knowledge",
+            "sigils": "Expert Sigils",
+            "exp": "技能 EXP",
+            "learningTime": "學習時間",
+            "affinity": "親密度點數",
+            "levels": "親密度等級",
+            "skillLevels": "技能等級",
+            "advancements": "進階"
+        }
+    },
+    "resources": {
+        "title": "資源",
+        "nothing": "這些目標不需要 Books of Knowledge 或 Sigil。",
+        "commonSigils": "Common Expert Sigils 可以轉換成任何專家的 Sigil。"
+    },
+    "events": {
+        "title": "活動積分",
+        "heads": {
+            "event": "活動",
+            "items": "書和 Sigil",
+            "perMinute": "每加速分鐘",
+            "speedups": "加速",
+            "total": "合計"
+        },
+        "hint": "加速積分依整段學習時間 {duration}，以學習加速或通用加速計算。"
+    },
+    "byExpert": {
+        "title": "依專家",
+        "nothing": "還沒有專家的目標高於目前等級。",
+        "heads": {
+            "expert": "專家",
+            "levels": "親密度等級",
+            "advancements": "進階",
+            "skillLevels": "技能等級",
+            "books": "書",
+            "sigils": "Sigil",
+            "exp": "技能 EXP",
+            "learningTime": "學習時間",
+            "affinity": "親密度點數"
+        }
+    }
+}

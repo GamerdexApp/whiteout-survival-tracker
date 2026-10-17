@@ -1,0 +1,70 @@
+{
+    "intro": "Bir seferde tek kahramanı planla. Yıldızlar oyundaki etiketi kullanır, yani 3.1 yıldız 3 ve kademe 1, 5.0 ise son etikettir. Hiçbir şey kaydedilmez, sayfayı yenilemek seçimlerini siler.",
+    "hero": {
+        "label": "Kahraman",
+        "option": "{name} (Nesil {generation})",
+        "generation": "Nesil {generation}",
+        "reset": "Kahramanı sıfırla"
+    },
+    "range": {
+        "current": "Mevcut",
+        "goal": "Hedef"
+    },
+    "stars": {
+        "title": "Yıldızlar",
+        "row": "Yıldız ve kademe"
+    },
+    "skills": {
+        "title": "Beceriler",
+        "exploration": "Keşif",
+        "expedition": "Sefer"
+    },
+    "weapon": {
+        "title": "Özel silah",
+        "row": "Silah seviyesi",
+        "none": "{hero} için özel silah yok."
+    },
+    "result": {
+        "title": "Gerekenler",
+        "unmetTitle": "Daha fazla yıldız gerekir.",
+        "unmet": "{items}. Kahramanın bu yıldızları zaten varsa yıldız hedefini onlara ayarla.",
+        "unmetItem": "{skill} seviye {level} için yıldız {star} gerekir",
+        "tiles": {
+            "starSteps": "Yıldız adımları",
+            "shards": "Shard",
+            "skillLevels": "Beceri seviyeleri",
+            "weaponLevels": "Silah seviyeleri",
+            "widgets": "Widgets",
+            "powerGain": "Güç kazancı"
+        },
+        "resources": {
+            "title": "Kaynaklar",
+            "item": "Öğe",
+            "amount": "Miktar",
+            "widgets": "Widgets",
+            "empty": "Henüz bir şey seçilmedi. Bir hedefi mevcut seviyenin üstüne çıkar.",
+            "ownShards": "{own}, {general} ile aynı sayılır."
+        },
+        "unlocked": {
+            "title": "Silah becerilerini açar"
+        },
+        "stats": {
+            "title": "Seviye 80'deki istatistikler",
+            "stat": "İstatistik",
+            "estimate": "Tahmin",
+            "estimateNote": "5 yıldızın altındaki istatistikler, 5 yıldız istatistiklerinden ölçeklenen tahminlerdir.",
+            "exploration": "Keşif",
+            "expedition": "Sefer",
+            "attack": "Saldırı",
+            "defense": "Savunma",
+            "health": "Can",
+            "percent": "%{value}"
+        },
+        "events": {
+            "title": "Etkinlik puanı",
+            "event": "Etkinlik",
+            "points": "Puan"
+        },
+        "powerNote": "Güç; yıldız, beceri ve silah seviyelerini sayar. Güç verisi olmayan bir yıldız etiketi, kazancı Bilinmiyor yapar."
+    }
+}

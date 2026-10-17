@@ -1,0 +1,61 @@
+{
+    "intro": "Aggiungi gli animali che vuoi far salire di livello. Per ogni animale scegli il livello a cui è ora e quello che vuoi. Un animale avanza a ogni livello multiplo di 10 e ha bisogno dell'avanzamento per superare quel livello.",
+    "picker": {
+        "petLabel": "Animale",
+        "add": "Aggiungi animale",
+        "addAll": "Aggiungi tutti gli animali",
+        "allAdded": "Ogni animale è nell'elenco.",
+        "setAllMax": "Imposta ogni obiettivo al massimo",
+        "advanceAtMax": "Avanza anche al livello massimo",
+        "removeAll": "Rimuovi tutti"
+    },
+    "row": {
+        "maxLevel": "Livello massimo {max}",
+        "current": "Livello attuale",
+        "goal": "Livello obiettivo",
+        "currentAdvanced": "Già avanzato",
+        "goalAdvanced": "Avanza all'obiettivo",
+        "keepsAdvancement": "L'animale mantiene il suo avanzamento a questo livello.",
+        "remove": "Rimuovi {pet}"
+    },
+    "empty": "Nessun animale aggiunto. Aggiungi un animale qui sopra per vedere il cibo per animali, gli oggetti di avanzamento e i guadagni.",
+    "results": {
+        "title": "Risultati",
+        "stats": {
+            "levels": "Livelli",
+            "advancements": "Avanzamenti",
+            "troopAttack": "Attacco delle truppe guadagnato",
+            "troopDefense": "Difesa delle truppe guadagnata",
+            "power": "Potenza guadagnata",
+            "advancementScore": "Punteggio di avanzamento"
+        },
+        "percent": "{value}%",
+        "unknown": "Sconosciuta",
+        "unknownPowerNote": "I dati di gioco non hanno la potenza avanzata per alcuni livelli di avanzamento, quindi il guadagno di potenza di questi animali è Sconosciuto.",
+        "resources": {
+            "title": "Risorse",
+            "empty": "Scegli un obiettivo sopra il livello attuale per vedere le risorse."
+        },
+        "events": {
+            "title": "Punti evento dal punteggio di avanzamento",
+            "noPoints": "Nessun punto",
+            "note": "I punti evento sono il punteggio di avanzamento per i punti della riga \"Pet advancement score increases by 1\" di ogni evento. {hallOfChief} non ha una riga per gli animali."
+        },
+        "byPet": {
+            "title": "Per animale",
+            "tableLabel": "Risultati per animale",
+            "empty": "Nessun animale guadagna ancora un livello o un avanzamento.",
+            "heads": {
+                "pet": "Animale",
+                "levels": "Livelli",
+                "advancements": "Avanzamenti",
+                "score": "Punteggio",
+                "resources": "Risorse",
+                "troopAttack": "Attacco delle truppe",
+                "troopDefense": "Difesa delle truppe",
+                "power": "Potenza"
+            },
+            "noResources": "Nessuna"
+        }
+    }
+}

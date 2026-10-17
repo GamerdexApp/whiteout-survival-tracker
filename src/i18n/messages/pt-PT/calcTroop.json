@@ -1,0 +1,117 @@
+{
+    "intro": "Definir o nível de cada campo e o que treina ou promove. Os três campos partilham uma capacidade de treino: a soma da capacidade dos três níveis de campo, mais os bónus abaixo.",
+    "reset": "Repor tudo",
+    "tier": "T{tier}",
+    "bonuses": {
+        "title": "Capacidade e velocidade",
+        "researchCapacity": "Capacidade da investigação",
+        "researchCapacityHint": "Capacidade de treino da investigação, como o jogo a mostra.",
+        "trainingSpeed": "Velocidade de treino (%)",
+        "trainingSpeedHint": "A velocidade como o jogo a mostra, sem os bónus abaixo.",
+        "position": "Nomeação",
+        "positions": {
+            "none": "Nenhuma",
+            "ministerOfEducation": "Ministro da Educação",
+            "vicePresident": "Vice-presidente"
+        },
+        "rank": "Grau",
+        "ranks": {
+            "regular": "Normal",
+            "supreme": "Supremo"
+        },
+        "appointmentEffect": "+{capacity} de capacidade, +{speed}% de velocidade de treino",
+        "capacityBoost": "Aumento de capacidade",
+        "capacityBoostEffect": "Multiplica a capacidade total por {multiplier}.",
+        "mobilize": "Mobilize",
+        "advancedTraining": "Advanced Training",
+        "speedEffect": "+{speed}% de velocidade de treino",
+        "costReduction": "Redução de custo",
+        "costReductionLabel": "Redução de custo de {name} (%)",
+        "costReductionHint": "De 0 a {max}%."
+    },
+    "camps": {
+        "title": "Campos",
+        "level": "Nível do campo",
+        "levelOption": "{level} (capacidade {capacity})",
+        "mode": "Ação",
+        "modes": {
+            "none": "Sem treino",
+            "training": "Treino",
+            "promotion": "Promoção",
+            "both": "Treino e promoção"
+        },
+        "trainingTitle": "Treino",
+        "promotionTitle": "Promoção",
+        "trainTier": "Tier a treinar",
+        "fromTier": "Promover de",
+        "toTier": "Promover para",
+        "troopsPerBatch": "Tropas em cada lote",
+        "max": "Máx.",
+        "maxValue": "Máx. ({capacity})",
+        "batches": "Lotes",
+        "runTime": "Tempo {time}"
+    },
+    "results": {
+        "title": "Resultados",
+        "capacity": "Capacidade por lote",
+        "troops": "Tropas ganhas",
+        "power": "Poder ganho",
+        "speedUsed": "Velocidade de treino usada",
+        "totalTime": "Aceleradores necessários",
+        "longest": "Campo mais longo",
+        "percent": "{value}%",
+        "noRuns": "Definir pelo menos um campo para treinar ou promover para ver as tropas, o poder, os recursos e o tempo.",
+        "noChange": "Estas execuções não alteram tropas. Definir uma quantidade acima de 0."
+    },
+    "tiers": {
+        "troopsTitle": "Tropas por tier",
+        "powerTitle": "Poder por tier",
+        "heads": {
+            "tier": "Tier",
+            "total": "Total"
+        },
+        "total": "Total",
+        "promotionNote": "Uma promoção tira tropas e o respetivo poder do tier inferior e junta-os ao tier superior, por isso o tier inferior mostra uma variação negativa.",
+        "fireCrystalNote": "O poder usa o nível de Fire Crystal de cada campo: {levels}. Só os tiers 10 e 11 mudam com o nível. Os bónus de atributos da investigação ou do equipamento não estão incluídos.",
+        "fireCrystalLevel": "{name} {level}"
+    },
+    "resources": {
+        "title": "Recursos",
+        "tableLabel": "Recursos necessários",
+        "heads": {
+            "resource": "Recurso",
+            "amount": "Quantidade"
+        }
+    },
+    "time": {
+        "title": "Tempo",
+        "heads": {
+            "camp": "Campo",
+            "action": "Ação",
+            "troopsPerBatch": "Tropas por lote",
+            "batches": "Lotes",
+            "time": "Tempo"
+        },
+        "training": "Treino {tier}",
+        "promotion": "Promoção {from} a {to}",
+        "campTotal": "Campo {name}",
+        "totalTime": "Todos os campos somados (aceleradores necessários)",
+        "longest": "Campo mais longo (os campos treinam ao mesmo tempo)",
+        "minutesNeeded": "Minutos de aceleração necessários",
+        "minutes": "{value} min",
+        "note": "O tempo de um lote é o tempo de uma tropa vezes as tropas, a dividir por 1 mais a velocidade de treino, antes dos aceleradores."
+    },
+    "events": {
+        "title": "Pontos de evento",
+        "tableLabel": "Pontos de evento",
+        "heads": {
+            "event": "Evento",
+            "training": "Pontos de treino",
+            "perMinute": "Pontos de aceleração por minuto",
+            "speedup": "Pontos de aceleração",
+            "total": "Total"
+        },
+        "noSpeedup": "Nenhum",
+        "note": "Os pontos de treino contam as tropas das execuções de treino no respetivo tier. Uma promoção não dá pontos de treino. Os pontos de aceleração usam os {minutes} minutos de aceleração necessários para todos os campos. Os pontos de Hall of Chief são de uma temporada e os pontos por subir o poder não estão incluídos."
+    }
+}

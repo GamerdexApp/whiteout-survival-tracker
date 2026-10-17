@@ -1,0 +1,50 @@
+{
+    "setAll": {
+        "title": "Definir todos os amuletos",
+        "hint": "Cada peça de equipamento tem 3 amuletos. Escolha aqui um nível inicial e uma meta e aplique aos 18 amuletos, depois mude cada amuleto abaixo.",
+        "fromLabel": "De",
+        "toLabel": "Para",
+        "apply": "Aplicar a todos",
+        "reset": "Redefinir tudo"
+    },
+    "fields": {
+        "notStarted": "Nenhum (não iniciado)",
+        "skip": "Nenhum (pular)"
+    },
+    "result": {
+        "title": "Resultado",
+        "score": "Pontuação dos amuletos",
+        "power": "Poder ganho",
+        "steps": "Níveis comprados",
+        "charms": "Amuletos melhorados",
+        "materials": "Materiais",
+        "noMaterials": "Escolha um nível de meta para um amuleto para ver os materiais.",
+        "eventPoints": "Pontos de evento",
+        "eventPointsNote": "Os pontos de evento são a pontuação dos amuletos vezes os pontos que a linha \"Raise Chief Charm max score\" rende em cada evento."
+    },
+    "charms": {
+        "title": "Amuletos do Chefe",
+        "hint": "Escolha o nível em que cada amuleto está agora e o nível que você quer. Um amuleto deixado em Nenhum (pular) não é contado.",
+        "charmLabel": "Amuleto {number}",
+        "charmName": "Amuleto {number} de {piece}",
+        "fromLabel": "De",
+        "toLabel": "Para",
+        "fromName": "De ({charm})",
+        "toName": "Para ({charm})"
+    },
+    "breakdown": {
+        "title": "Por amuleto",
+        "empty": "Nenhum amuleto tem meta acima do nível inicial ainda.",
+        "charm": "Amuleto",
+        "charmName": "Amuleto {number} de {piece}",
+        "levels": "Níveis",
+        "levelRange": "{from} a {to}",
+        "stat": "Bônus de atributo",
+        "percent": "{value}%",
+        "steps": "Níveis comprados",
+        "score": "Pontuação",
+        "power": "Poder",
+        "materials": "Materiais",
+        "none": "Nenhum"
+    }
+}

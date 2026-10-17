@@ -1,0 +1,46 @@
+{
+    "intro": "Pilih tahap setiap keping gear sekarang dan tahap yang anda mahu. Hasil menjumlahkan bahan, skor gear, kuasa diperoleh dan mata acara. Biarkan matlamat pada Tiada untuk melangkau keping itu. Tiada apa disimpan.",
+    "level": {
+        "plain": "{tier} Bintang {stars}",
+        "withStage": "{tier} Bintang {stars} Peringkat {stage}",
+        "notCrafted": "Tiada (belum dibuat)",
+        "skip": "Tiada (langkau)"
+    },
+    "all": {
+        "heading": "Tetapkan setiap keping",
+        "current": "Tahap semasa",
+        "goal": "Tahap matlamat",
+        "apply": "Guna pada semua",
+        "reset": "Tetap semula semua"
+    },
+    "pieces": {
+        "heading": "Keping gear",
+        "troopGroup": "Keping {troop}",
+        "current": "Tahap semasa",
+        "goal": "Tahap matlamat",
+        "currentLabel": "Tahap semasa {piece}",
+        "goalLabel": "Tahap matlamat {piece}"
+    },
+    "results": {
+        "heading": "Hasil",
+        "score": "Skor gear",
+        "power": "Kuasa diperoleh",
+        "steps": "Langkah",
+        "materials": "Bahan",
+        "noMaterials": "Pilih tahap matlamat untuk satu keping bagi melihat bahan.",
+        "events": "Mata acara",
+        "eventsNote": "Mata acara ialah skor gear didarab mata yang dibayar baris \"Raise Chief Gear max score\" dalam setiap acara."
+    },
+    "byPiece": {
+        "heading": "Mengikut keping",
+        "piece": "Keping",
+        "levels": "Tahap",
+        "levelRange": "{from} ke {to}",
+        "steps": "Langkah",
+        "score": "Skor",
+        "power": "Kuasa",
+        "stats": "Bonus statistik",
+        "statRange": "{from}% ke {to}%",
+        "noLevel": "Belum dibuat"
+    }
+}

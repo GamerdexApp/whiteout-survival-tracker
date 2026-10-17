@@ -1,0 +1,46 @@
+{
+    "intro": "Pilih level tiap bagian perlengkapan sekarang dan level yang kamu mau. Hasilnya menjumlahkan material, skor perlengkapan, kekuatan didapat, dan poin event. Biarkan target di Tidak ada untuk melewati bagian itu. Tidak ada yang disimpan.",
+    "level": {
+        "plain": "{tier} Bintang {stars}",
+        "withStage": "{tier} Bintang {stars} Tahap {stage}",
+        "notCrafted": "Tidak ada (belum dibuat)",
+        "skip": "Tidak ada (lewati)"
+    },
+    "all": {
+        "heading": "Atur semua bagian",
+        "current": "Level saat ini",
+        "goal": "Level target",
+        "apply": "Terapkan ke semua",
+        "reset": "Atur ulang semua"
+    },
+    "pieces": {
+        "heading": "Bagian perlengkapan",
+        "troopGroup": "Bagian {troop}",
+        "current": "Level saat ini",
+        "goal": "Level target",
+        "currentLabel": "Level saat ini {piece}",
+        "goalLabel": "Level target {piece}"
+    },
+    "results": {
+        "heading": "Hasil",
+        "score": "Skor perlengkapan",
+        "power": "Kekuatan didapat",
+        "steps": "Langkah",
+        "materials": "Material",
+        "noMaterials": "Pilih level target untuk sebuah bagian agar material tampil.",
+        "events": "Poin event",
+        "eventsNote": "Poin event adalah skor perlengkapan dikali poin yang diberikan baris \"Raise Chief Gear max score\" di tiap event."
+    },
+    "byPiece": {
+        "heading": "Menurut bagian",
+        "piece": "Bagian",
+        "levels": "Level",
+        "levelRange": "{from} ke {to}",
+        "steps": "Langkah",
+        "score": "Skor",
+        "power": "Kekuatan",
+        "stats": "Bonus statistik",
+        "statRange": "{from}% ke {to}%",
+        "noLevel": "Belum dibuat"
+    }
+}

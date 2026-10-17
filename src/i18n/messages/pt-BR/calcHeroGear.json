@@ -1,0 +1,77 @@
+{
+    "piece": {
+        "title": "Peça de equipamento",
+        "quality": "Qualidade",
+        "slot": "Peça",
+        "troopType": "Tipo de tropa",
+        "name": "{slot} de {troop}",
+        "mythicOnly": "Só o equipamento Mítico pode ser forjado e potencializado. Forja de maestria e Potencialização ficam desativadas para esta qualidade."
+    },
+    "tracks": {
+        "enhancement": "Aprimoramento",
+        "masteryForging": "Forja de maestria",
+        "empowerment": "Potencialização",
+        "current": "Atual",
+        "goal": "Meta",
+        "range": "Níveis {from} a {to}",
+        "none": "Nenhum",
+        "forgingRow": "{name} (+{percent}%)",
+        "needsMythic": "Requer equipamento Mítico",
+        "reset": "Redefinir níveis"
+    },
+    "unmet": {
+        "title": "Ainda não é possível.",
+        "enhancement": "{track} requer antes o nível de aprimoramento {level}.",
+        "masteryForging": "{track} requer antes Forja de maestria {row}.",
+        "quality": "{track} requer equipamento Mítico.",
+        "hint": "Se a peça já está nesse ponto, defina o nível atual de acordo."
+    },
+    "noForging": "Potencialização requer Forja de maestria em {row}. A Forja de maestria está em Nenhum, então poder e atributos não contam forja.",
+    "summary": {
+        "title": "Resultado",
+        "powerGained": "Poder ganho",
+        "currentPower": "Poder agora",
+        "goalPower": "Poder depois do plano",
+        "forgingStatsUp": "Atributos da Forja de maestria em alta",
+        "percent": "+{value}%"
+    },
+    "resources": {
+        "title": "Recursos necessários",
+        "item": "Item",
+        "amount": "Quantidade",
+        "empty": "Nada para melhorar. Aumente uma meta acima do nível atual."
+    },
+    "stats": {
+        "title": "Atributos da peça",
+        "tableLabel": "Atributos da peça, agora e depois do plano",
+        "stat": "Atributo",
+        "current": "Agora",
+        "goal": "Depois do plano",
+        "gain": "Ganho",
+        "power": "Poder",
+        "health": "Vida",
+        "percentStat": "{name} (%)",
+        "percentValue": "{value}%",
+        "note": "Os atributos incluem a forja de maestria e são arredondados para baixo."
+    },
+    "milestones": {
+        "title": "Marcos de Mithril desbloqueados",
+        "line": "Potencialização {level}: {event}, {stat}",
+        "empty": "Este plano não desbloqueia nenhum marco de Mithril."
+    },
+    "tracksTable": {
+        "title": "Por trilha",
+        "label": "Passos, ganho e recursos de cada trilha",
+        "track": "Trilha",
+        "steps": "Passos",
+        "gain": "Ganho",
+        "powerGain": "{value} de poder antes da forja",
+        "statsUp": "+{value}% de atributos",
+        "resources": "Recursos",
+        "none": "Nada"
+    },
+    "events": {
+        "title": "Pontos de evento",
+        "note": "Pontos pelas Essence Stones e pelo Mithril do plano."
+    }
+}

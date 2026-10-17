@@ -1,0 +1,117 @@
+{
+    "intro": "各キャンプのレベルと、訓練または昇格の内容を設定してください。3つのキャンプは1つの訓練容量を共有します。容量は、3つのキャンプレベルの容量の合計に、下のボーナスを加えた値です。",
+    "reset": "すべてリセット",
+    "tier": "T{tier}",
+    "bonuses": {
+        "title": "容量と速度",
+        "researchCapacity": "研究の容量",
+        "researchCapacityHint": "ゲーム内に表示される、研究による訓練容量です。",
+        "trainingSpeed": "訓練速度（%）",
+        "trainingSpeedHint": "ゲーム内に表示される速度です。下のバフは含みません。",
+        "position": "任命",
+        "positions": {
+            "none": "なし",
+            "ministerOfEducation": "教育大臣",
+            "vicePresident": "副大統領"
+        },
+        "rank": "ランク",
+        "ranks": {
+            "regular": "通常",
+            "supreme": "最上級"
+        },
+        "appointmentEffect": "容量+{capacity}、訓練速度+{speed}%",
+        "capacityBoost": "容量ブースト",
+        "capacityBoostEffect": "合計容量を{multiplier}倍にします。",
+        "mobilize": "Mobilize",
+        "advancedTraining": "Advanced Training",
+        "speedEffect": "訓練速度+{speed}%",
+        "costReduction": "コスト減少",
+        "costReductionLabel": "{name}のコスト減少（%）",
+        "costReductionHint": "0から{max}%まで。"
+    },
+    "camps": {
+        "title": "キャンプ",
+        "level": "キャンプレベル",
+        "levelOption": "{level}（容量{capacity}）",
+        "mode": "行動",
+        "modes": {
+            "none": "訓練しない",
+            "training": "訓練",
+            "promotion": "昇格",
+            "both": "訓練と昇格"
+        },
+        "trainingTitle": "訓練",
+        "promotionTitle": "昇格",
+        "trainTier": "訓練するティア",
+        "fromTier": "昇格元",
+        "toTier": "昇格先",
+        "troopsPerBatch": "1バッチあたりの部隊数",
+        "max": "最大",
+        "maxValue": "最大（{capacity}）",
+        "batches": "バッチ",
+        "runTime": "時間 {time}"
+    },
+    "results": {
+        "title": "結果",
+        "capacity": "バッチごとの容量",
+        "troops": "増える部隊",
+        "power": "獲得戦力",
+        "speedUsed": "使用する訓練速度",
+        "totalTime": "必要なスピードアップ",
+        "longest": "最長のキャンプ",
+        "percent": "{value}%",
+        "noRuns": "訓練または昇格するキャンプを1つ以上設定すると、部隊、戦力、資源、時間が表示されます。",
+        "noChange": "この設定では部隊が変わりません。数を0より大きくしてください。"
+    },
+    "tiers": {
+        "troopsTitle": "ティアごとの部隊",
+        "powerTitle": "ティアごとの戦力",
+        "heads": {
+            "tier": "ティア",
+            "total": "合計"
+        },
+        "total": "合計",
+        "promotionNote": "昇格では、下のティアから部隊とその戦力が減り、上のティアに加わります。そのため、下のティアの変化はマイナスで表示されます。",
+        "fireCrystalNote": "戦力には各キャンプのFire Crystalレベルを使います: {levels}。レベルで変わるのはティア10と11だけです。研究や装備によるステータスボーナスは含まれません。",
+        "fireCrystalLevel": "{name} {level}"
+    },
+    "resources": {
+        "title": "資源",
+        "tableLabel": "必要な資源",
+        "heads": {
+            "resource": "資源",
+            "amount": "数量"
+        }
+    },
+    "time": {
+        "title": "時間",
+        "heads": {
+            "camp": "キャンプ",
+            "action": "行動",
+            "troopsPerBatch": "バッチごとの部隊数",
+            "batches": "バッチ",
+            "time": "時間"
+        },
+        "training": "{tier}の訓練",
+        "promotion": "{from}から{to}への昇格",
+        "campTotal": "{name}キャンプ",
+        "totalTime": "すべてのキャンプの合計（必要なスピードアップ）",
+        "longest": "最長のキャンプ（キャンプは同時に訓練します）",
+        "minutesNeeded": "必要なスピードアップの分数",
+        "minutes": "{value}分",
+        "note": "1バッチの時間は、部隊1体の時間に部隊数を掛け、1に訓練速度を足した値で割ったもので、スピードアップ適用前の値です。"
+    },
+    "events": {
+        "title": "イベントポイント",
+        "tableLabel": "イベントポイント",
+        "heads": {
+            "event": "イベント",
+            "training": "訓練のポイント",
+            "perMinute": "1分あたりのスピードアップポイント",
+            "speedup": "スピードアップのポイント",
+            "total": "合計"
+        },
+        "noSpeedup": "なし",
+        "note": "訓練のポイントは、訓練した部隊をそのティアで数えた値です。昇格では訓練のポイントは入りません。スピードアップのポイントには、全キャンプに必要なスピードアップ{minutes}分を使います。Hall of Chiefのポイントは1シーズン分で、戦力上昇によるポイントは含まれません。"
+    }
+}

@@ -1,0 +1,50 @@
+{
+    "setAll": {
+        "title": "统一设置所有饰品",
+        "hint": "每件装备有 3 个饰品。先在这里选好起始等级和目标等级并应用到全部 18 个饰品，再单独调整个别饰品。",
+        "fromLabel": "起始",
+        "toLabel": "目标",
+        "apply": "应用到全部",
+        "reset": "全部重置"
+    },
+    "fields": {
+        "notStarted": "无（未开始）",
+        "skip": "无（跳过）"
+    },
+    "result": {
+        "title": "结果",
+        "score": "饰品分数",
+        "power": "获得战力",
+        "steps": "购买的等级数",
+        "charms": "升级的饰品数",
+        "materials": "材料",
+        "noMaterials": "为饰品选择目标等级后即可查看材料。",
+        "eventPoints": "活动积分",
+        "eventPointsNote": "活动积分等于饰品分数乘以各活动中“Raise Chief Charm max score”一行给出的积分。"
+    },
+    "charms": {
+        "title": "领主饰品",
+        "hint": "选择每个饰品当前的等级和你想要的等级。保持为“无（跳过）”的饰品不计入。",
+        "charmLabel": "饰品 {number}",
+        "charmName": "{piece}饰品 {number}",
+        "fromLabel": "起始",
+        "toLabel": "目标",
+        "fromName": "起始（{charm}）",
+        "toName": "目标（{charm}）"
+    },
+    "breakdown": {
+        "title": "按饰品",
+        "empty": "还没有饰品的目标高于起始等级。",
+        "charm": "饰品",
+        "charmName": "{piece}饰品 {number}",
+        "levels": "等级",
+        "levelRange": "{from}到{to}",
+        "stat": "属性加成",
+        "percent": "{value}%",
+        "steps": "购买的等级数",
+        "score": "分数",
+        "power": "战力",
+        "materials": "材料",
+        "none": "无"
+    }
+}

@@ -1,0 +1,118 @@
+{
+    "speed": {
+        "title": "سرعة البحث",
+        "reset": "إعادة ضبط الكل",
+        "percentLabel": "سرعة البحث %",
+        "percentHint": "سرعتك كما تظهرها اللعبة، دون التعزيزات هنا.",
+        "stateBuff": "تعزيز الولاية",
+        "percentPlus": "‎+{value}%",
+        "percent": "{value}%",
+        "vicePresident": {
+            "label": "نائب الرئيس",
+            "none": "لا شيء",
+            "regular": "عادي",
+            "supreme": "أعلى"
+        },
+        "total": "إجمالي سرعة البحث"
+    },
+    "lines": {
+        "title": "خطوط البحث",
+        "description": "اختر مستواك الحالي والمستوى الذي تريده لكل خط. كل فئة من الخط هي خط مستقل، كما في اللعبة. لا يُحفظ شيء.",
+        "tabsLabel": "أشجار البحث",
+        "tabs": {
+            "growth": "Growth",
+            "economy": "Economy",
+            "battle": "Battle",
+            "war-academy-troops": "War Academy T11",
+            "t12-infantry": "المشاة T12",
+            "t12-marksman": "الرماة T12",
+            "t12-lancer": "الفرسان T12"
+        },
+        "tableLabel": "خطوط البحث في هذه الشجرة",
+        "columns": {
+            "line": "خط البحث",
+            "current": "المستوى الحالي",
+            "goal": "مستوى الهدف"
+        },
+        "levelLabel": {
+            "current": "المستوى الحالي لـ {name}",
+            "goal": "مستوى الهدف لـ {name}"
+        },
+        "levelMax": "{level} (الأقصى)",
+        "tier": {
+            "plain": "الفئة {tier}",
+            "troopLine": "{line} T{tier}"
+        },
+        "bulk": {
+            "current": "ضبط كل المستويات الحالية على",
+            "goal": "ضبط كل الأهداف على",
+            "pick": "اختر مستوى"
+        }
+    },
+    "results": {
+        "title": "النتائج",
+        "empty": "اختر هدفًا فوق المستوى الحالي لخط بحث لعرض الموارد والوقت والقوة ونقاط الفعالية.",
+        "plus": "‎+{value}",
+        "stats": {
+            "steps": "مستويات للبحث",
+            "baseTime": "الوقت قبل السرعة",
+            "time": "الوقت بسرعة {percent}%",
+            "power": "القوة المكتسبة",
+            "speedupMinutes": "دقائق التسريع المطلوبة"
+        },
+        "resources": {
+            "title": "الموارد"
+        },
+        "bonuses": {
+            "title": "المزايا المكتسبة",
+            "percentGain": "‎+{value}%",
+            "flatGain": "‎+{value}",
+            "none": "هذه المستويات لا تمنح أي ميزة."
+        },
+        "events": {
+            "title": "نقاط الفعالية",
+            "columns": {
+                "event": "الفعالية",
+                "shardPoints": "Fire Crystal Shards",
+                "speedupPoints": "التسريعات",
+                "total": "الإجمالي",
+                "pointsPerPower": "النقاط",
+                "days": "أيام الفعالية",
+                "points": "النقاط من القوة"
+            },
+            "names": {
+                "svs": "SvS",
+                "allianceShowdown": "Alliance Showdown",
+                "kingOfIcefield": "King of Icefield",
+                "hallOfChief": "Hall of Chief"
+            },
+            "speedupTableLabel": "نقاط Fire Crystal Shard والتسريعات",
+            "speedupNote": "تفترض نقاط التسريع أنك تنهي كل {minutes} دقيقة من وقت البحث بتسريعات البحث.",
+            "hallTableLabel": "نقاط Hall of Chief من القوة",
+            "hallNote": "يحتسب Hall of Chief كل نقطة قوة مكتسبة عبر البحث. يعتمد المضاعف على يوم الفعالية.",
+            "pointsPerPower": "{value} لكل قوة",
+            "daySeparator": "، "
+        },
+        "requirements": {
+            "buildings": "المباني المطلوبة:",
+            "buildingLevel": "{building} المستوى {level}",
+            "listSeparator": "، ",
+            "unmetTitle": "{count, plural, zero {{amount} مستوى يحتاج} one {{amount} مستوى يحتاج} two {{amount} مستويان يحتاجان} few {{amount} مستويات تحتاج} many {{amount} مستوى يحتاج} other {{amount} مستوى يحتاج}} إلى خط بحث آخر بمستوى لا تبلغه خطتك:",
+            "unmetItem": "{name} المستوى {level} يتطلب {requires} المستوى {requiresLevel} (المخطط {planned})",
+            "unmetMore": "و{amount} أخرى.",
+            "stepsWithoutTime": "{count, plural, zero {{amount} مستوى ليس له} one {{amount} مستوى ليس له} two {{amount} مستويان ليس لهما} few {{amount} مستويات ليس لها} many {{amount} مستوى ليس له} other {{amount} مستوى ليس له}} وقت بحث في البيانات، لذا يُحتسب الوقت 0.",
+            "placeholders": "لا توجد بيانات تكلفة أو وقت لـ {names} بعد. لا تُحتسب مواردها ووقتها."
+        },
+        "breakdown": {
+            "title": "حسب خط البحث",
+            "plus": "‎+{value}",
+            "columns": {
+                "line": "خط البحث",
+                "steps": "المستويات",
+                "baseTime": "الوقت قبل السرعة",
+                "power": "القوة",
+                "resources": "الموارد"
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+{
+    "intro": "Wähle die aktuelle Stufe jedes Gear-Teils und die gewünschte Stufe. Die Ergebnisse addieren die Materialien, den Gear-Score, die gewonnene Macht und die Event-Punkte. Lass ein Ziel auf Keine, um das Teil zu überspringen. Nichts wird gespeichert.",
+    "level": {
+        "plain": "{tier} Stern {stars}",
+        "withStage": "{tier} Stern {stars} Stage {stage}",
+        "notCrafted": "Keine (nicht hergestellt)",
+        "skip": "Keine (überspringen)"
+    },
+    "all": {
+        "heading": "Alle Teile setzen",
+        "current": "Aktuelle Stufe",
+        "goal": "Zielstufe",
+        "apply": "Auf alle anwenden",
+        "reset": "Alle zurücksetzen"
+    },
+    "pieces": {
+        "heading": "Gear-Teile",
+        "troopGroup": "{troop}-Teile",
+        "current": "Aktuelle Stufe",
+        "goal": "Zielstufe",
+        "currentLabel": "Aktuelle Stufe {piece}",
+        "goalLabel": "Zielstufe {piece}"
+    },
+    "results": {
+        "heading": "Ergebnisse",
+        "score": "Gear-Score",
+        "power": "Gewonnene Macht",
+        "steps": "Schritte",
+        "materials": "Materialien",
+        "noMaterials": "Wähle für ein Teil eine Zielstufe, um die Materialien zu sehen.",
+        "events": "Event-Punkte",
+        "eventsNote": "Event-Punkte sind der Gear-Score mal die Punkte, die die Zeile \"Raise Chief Gear max score\" in jedem Event bringt."
+    },
+    "byPiece": {
+        "heading": "Nach Teil",
+        "piece": "Teil",
+        "levels": "Stufen",
+        "levelRange": "{from} bis {to}",
+        "steps": "Schritte",
+        "score": "Score",
+        "power": "Macht",
+        "stats": "Wertebonus",
+        "statRange": "{from}% bis {to}%",
+        "noLevel": "Nicht hergestellt"
+    }
+}

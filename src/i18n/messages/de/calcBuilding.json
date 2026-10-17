@@ -1,0 +1,103 @@
+{
+    "speed": {
+        "title": "Baugeschwindigkeit",
+        "reset": "Alle zurücksetzen",
+        "percentLabel": "Baugeschwindigkeit %",
+        "percentHint": "Dein Bonus, wie das Spiel ihn anzeigt, ohne Vizepräsident und Double Time.",
+        "percentPlus": "+{value}%",
+        "percent": "{value}%",
+        "vicePresident": {
+            "label": "Vizepräsident",
+            "none": "Keiner",
+            "regular": "Regulär",
+            "supreme": "Höchste"
+        },
+        "speedupLabel": "Beschleuniger-Minuten, die du einsetzt",
+        "speedupHint": "Bau-Beschleuniger, die du für diese Upgrades nutzt. Sie zählen zu den Event-Punkten.",
+        "doubleTime": "Double Time",
+        "doubleTimeNote": "Der Häuptlingsbefehl gibt {value}% auf Upgrades, die starten, solange er aktiv ist.",
+        "total": "Baugeschwindigkeit gesamt"
+    },
+    "buildings": {
+        "title": "Gebäude",
+        "description": "Wähle für jedes Gebäude die aktuelle Stufe und die gewünschte Stufe. Gebäude, die ein Schritt als Voraussetzung braucht und die unter der geforderten Stufe liegen, kommen in den Plan. Setze deshalb die aktuelle Stufe jedes Gebäudes, das du hast, sonst zählt es als nicht gebaut. Nichts wird gespeichert.",
+        "tableLabel": "Gebäude mit aktueller Stufe und Zielstufe",
+        "columns": {
+            "building": "Gebäude",
+            "current": "Aktuelle Stufe",
+            "goal": "Zielstufe"
+        },
+        "levelLabel": {
+            "current": "Aktuelle Stufe {name}",
+            "goal": "Zielstufe {name}"
+        },
+        "notBuilt": "Nicht gebaut"
+    },
+    "results": {
+        "title": "Ergebnisse",
+        "empty": "Wähle ein Ziel über der aktuellen Stufe eines Gebäudes, um Ressourcen, Zeit, Macht und Event-Punkte zu sehen.",
+        "plus": "+{value}",
+        "stats": {
+            "steps": "Stufen zu bauen",
+            "baseTime": "Zeit vor dem Tempo",
+            "time": "Zeit bei {percent}% Tempo",
+            "power": "Gewonnene Macht",
+            "speedupMinutes": "Benötigte Beschleuniger-Minuten"
+        },
+        "unmet": {
+            "title": "Voraussetzungen an Gebäuden, die nicht in den Daten sind, fügen keine Schritte hinzu:",
+            "item": "{building} Stufe {level}",
+            "listSeparator": ", "
+        },
+        "resources": {
+            "title": "Ressourcen"
+        },
+        "events": {
+            "title": "Event-Punkte",
+            "columns": {
+                "event": "Event",
+                "crystalPoints": "Fire Crystals",
+                "speedupPoints": "Beschleuniger",
+                "total": "Gesamt",
+                "pointsPerPower": "Punkte",
+                "days": "Eventtage",
+                "points": "Punkte aus Macht"
+            },
+            "scoreTableLabel": "Punkte für Fire Crystals und Beschleuniger",
+            "speedupNote": "Die Beschleuniger-Punkte zählen {used} der {needed} Minuten, die die Bauzeit braucht. Weitere Minuten geben keine Punkte.",
+            "hallTableLabel": "{name}-Punkte aus Macht",
+            "hallNote": "{name} wertet jeden Punkt Macht, der durch Bauen dazukommt. Der Multiplikator hängt vom Eventtag ab.",
+            "pointsPerPower": "{value} pro Macht",
+            "daySeparator": ", "
+        },
+        "breakdown": {
+            "title": "Nach Gebäude",
+            "plus": "+{value}",
+            "levelRange": "{from} bis {to}",
+            "prerequisite": "Voraussetzung",
+            "free": "Keine Kosten",
+            "columns": {
+                "building": "Gebäude",
+                "levels": "Stufen",
+                "steps": "Schritte",
+                "power": "Macht",
+                "baseTime": "Zeit vor dem Tempo",
+                "resources": "Ressourcen"
+            }
+        },
+        "stepDetails": {
+            "title": "{count, plural, one {Schrittdetails ({amount} Schritt)} other {Schrittdetails ({amount} Schritte)}}",
+            "tableLabel": "Jede gebaute Stufe, in Baureihenfolge",
+            "plus": "+{value}",
+            "prerequisite": "Voraussetzung",
+            "free": "Keine Kosten",
+            "columns": {
+                "building": "Gebäude",
+                "level": "Stufe",
+                "power": "Macht",
+                "baseTime": "Zeit vor dem Tempo",
+                "cost": "Kosten"
+            }
+        }
+    }
+}

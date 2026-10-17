@@ -1,0 +1,70 @@
+{
+    "intro": "Pianifica un eroe alla volta. Le stelle usano l'etichetta del gioco: 3.1 è stella 3 e grado 1, e 5.0 è l'ultima etichetta. Niente viene salvato e ricaricare la pagina cancella le tue scelte.",
+    "hero": {
+        "label": "Eroe",
+        "option": "{name} (Gen {generation})",
+        "generation": "Gen {generation}",
+        "reset": "Azzera eroe"
+    },
+    "range": {
+        "current": "Attuale",
+        "goal": "Obiettivo"
+    },
+    "stars": {
+        "title": "Stelle",
+        "row": "Stelle e grado"
+    },
+    "skills": {
+        "title": "Abilità",
+        "exploration": "Esplorazione",
+        "expedition": "Spedizione"
+    },
+    "weapon": {
+        "title": "Arma esclusiva",
+        "row": "Livello dell'arma",
+        "none": "{hero} non ha un'arma esclusiva."
+    },
+    "result": {
+        "title": "Necessario",
+        "unmetTitle": "Servono più stelle.",
+        "unmet": "{items}. Se l'eroe ha già queste stelle, imposta l'obiettivo di stelle su di esse.",
+        "unmetItem": "{skill} livello {level} richiede stella {star}",
+        "tiles": {
+            "starSteps": "Passi di stella",
+            "shards": "Frammenti",
+            "skillLevels": "Livelli abilità",
+            "weaponLevels": "Livelli arma",
+            "widgets": "Widget",
+            "powerGain": "Potenza guadagnata"
+        },
+        "resources": {
+            "title": "Risorse",
+            "item": "Oggetto",
+            "amount": "Quantità",
+            "widgets": "Widget",
+            "empty": "Ancora niente di selezionato. Imposta un obiettivo sopra il livello attuale.",
+            "ownShards": "{own} contano come {general}."
+        },
+        "unlocked": {
+            "title": "Sblocca abilità dell'arma"
+        },
+        "stats": {
+            "title": "Statistiche al livello 80",
+            "stat": "Statistica",
+            "estimate": "Stima",
+            "estimateNote": "Le statistiche sotto le 5 stelle sono stime ricavate in proporzione dalle statistiche a 5 stelle.",
+            "exploration": "Esplorazione",
+            "expedition": "Spedizione",
+            "attack": "Attacco",
+            "defense": "Difesa",
+            "health": "Salute",
+            "percent": "{value}%"
+        },
+        "events": {
+            "title": "Punti evento",
+            "event": "Evento",
+            "points": "Punti"
+        },
+        "powerNote": "La potenza conta i livelli di stella, abilità e arma. Un'etichetta di stella senza dati di potenza rende il guadagno Sconosciuto."
+    }
+}

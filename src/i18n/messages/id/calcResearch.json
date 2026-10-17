@@ -1,0 +1,118 @@
+{
+    "speed": {
+        "title": "Kecepatan riset",
+        "reset": "Atur ulang semua",
+        "percentLabel": "Kecepatan riset %",
+        "percentHint": "Kecepatanmu seperti tampil di game, tanpa buff di sini.",
+        "stateBuff": "Buff State",
+        "percentPlus": "+{value}%",
+        "percent": "{value}%",
+        "vicePresident": {
+            "label": "Vice President",
+            "none": "Tidak ada",
+            "regular": "Biasa",
+            "supreme": "Supreme"
+        },
+        "total": "Total kecepatan riset"
+    },
+    "lines": {
+        "title": "Jalur riset",
+        "description": "Pilih level sekarang dan level yang kamu mau untuk tiap jalur. Tiap tier dari sebuah jalur adalah jalur sendiri, seperti di game. Tidak ada yang disimpan.",
+        "tabsLabel": "Pohon riset",
+        "tabs": {
+            "growth": "Pertumbuhan",
+            "economy": "Ekonomi",
+            "battle": "Pertempuran",
+            "war-academy-troops": "War Academy T11",
+            "t12-infantry": "Infanteri T12",
+            "t12-marksman": "Penembak jitu T12",
+            "t12-lancer": "Penombak T12"
+        },
+        "tableLabel": "Jalur riset pohon ini",
+        "columns": {
+            "line": "Jalur riset",
+            "current": "Level saat ini",
+            "goal": "Level target"
+        },
+        "levelLabel": {
+            "current": "Level saat ini {name}",
+            "goal": "Level target {name}"
+        },
+        "levelMax": "{level} (maks)",
+        "tier": {
+            "plain": "Tier {tier}",
+            "troopLine": "{line} T{tier}"
+        },
+        "bulk": {
+            "current": "Atur semua level saat ini ke",
+            "goal": "Atur semua target ke",
+            "pick": "Pilih level"
+        }
+    },
+    "results": {
+        "title": "Hasil",
+        "empty": "Pilih target di atas level saat ini sebuah jalur riset untuk melihat sumber daya, waktu, kekuatan, dan poin event.",
+        "plus": "+{value}",
+        "stats": {
+            "steps": "Level yang diriset",
+            "baseTime": "Waktu sebelum percepatan",
+            "time": "Waktu di kecepatan {percent}%",
+            "power": "Kekuatan didapat",
+            "speedupMinutes": "Menit percepatan dibutuhkan"
+        },
+        "resources": {
+            "title": "Sumber daya"
+        },
+        "bonuses": {
+            "title": "Bonus didapat",
+            "percentGain": "+{value}%",
+            "flatGain": "+{value}",
+            "none": "Level ini tidak memberi bonus."
+        },
+        "events": {
+            "title": "Poin event",
+            "columns": {
+                "event": "Event",
+                "shardPoints": "Fire Crystal Shards",
+                "speedupPoints": "Percepatan",
+                "total": "Total",
+                "pointsPerPower": "Poin",
+                "days": "Hari event",
+                "points": "Poin dari kekuatan"
+            },
+            "names": {
+                "svs": "SvS",
+                "allianceShowdown": "Alliance Showdown",
+                "kingOfIcefield": "King of Icefield",
+                "hallOfChief": "Hall of Chief"
+            },
+            "speedupTableLabel": "Poin Fire Crystal Shard dan percepatan",
+            "speedupNote": "Poin percepatan mengasumsikan kamu menyelesaikan seluruh {minutes} menit waktu riset dengan percepatan riset.",
+            "hallTableLabel": "Poin Hall of Chief dari kekuatan",
+            "hallNote": "Hall of Chief memberi skor untuk setiap kekuatan yang didapat lewat riset. Pengalinya tergantung hari event.",
+            "pointsPerPower": "{value} per kekuatan",
+            "daySeparator": ", "
+        },
+        "requirements": {
+            "buildings": "Bangunan dibutuhkan:",
+            "buildingLevel": "{building} level {level}",
+            "listSeparator": ", ",
+            "unmetTitle": "{count, plural, other {{amount} level butuh}} jalur riset lain di level yang tidak dicapai rencanamu:",
+            "unmetItem": "{name} level {level} butuh {requires} level {requiresLevel} (direncanakan {planned})",
+            "unmetMore": "Dan {amount} lagi.",
+            "stepsWithoutTime": "{count, plural, other {{amount} level}} tidak punya waktu riset di data, jadi waktunya dihitung 0.",
+            "placeholders": "Belum ada data biaya atau waktu untuk {names}. Sumber daya dan waktunya tidak dihitung."
+        },
+        "breakdown": {
+            "title": "Menurut jalur riset",
+            "plus": "+{value}",
+            "columns": {
+                "line": "Jalur riset",
+                "steps": "Level",
+                "baseTime": "Waktu sebelum percepatan",
+                "power": "Kekuatan",
+                "resources": "Sumber daya"
+            }
+        }
+    }
+}

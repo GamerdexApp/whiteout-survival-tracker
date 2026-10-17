@@ -1,0 +1,61 @@
+{
+    "intro": "レベルを上げたいペットを追加してください。ペットごとに、現在のレベルと目標のレベルを選びます。ペットは10の倍数のレベルごとに昇格し、そのレベルを超えるには昇格が必要です。",
+    "picker": {
+        "petLabel": "ペット",
+        "add": "ペットを追加",
+        "addAll": "すべてのペットを追加",
+        "allAdded": "すべてのペットがリストに入っています。",
+        "setAllMax": "すべての目標を最大にする",
+        "advanceAtMax": "最大レベルでも昇格する",
+        "removeAll": "すべて削除"
+    },
+    "row": {
+        "maxLevel": "最大レベル{max}",
+        "current": "現在のレベル",
+        "goal": "目標レベル",
+        "currentAdvanced": "昇格済み",
+        "goalAdvanced": "目標で昇格",
+        "keepsAdvancement": "このレベルでは、ペットは昇格を引き継ぎます。",
+        "remove": "{pet}を削除"
+    },
+    "empty": "まだペットが追加されていません。上でペットを追加すると、ペットフード、昇格アイテム、上昇値が表示されます。",
+    "results": {
+        "title": "結果",
+        "stats": {
+            "levels": "レベル",
+            "advancements": "昇格",
+            "troopAttack": "獲得した部隊の攻撃",
+            "troopDefense": "獲得した部隊の防御",
+            "power": "獲得戦力",
+            "advancementScore": "昇格スコア"
+        },
+        "percent": "{value}%",
+        "unknown": "不明",
+        "unknownPowerNote": "一部の昇格レベルには昇格後の戦力データがないため、これらのペットの獲得戦力は不明になります。",
+        "resources": {
+            "title": "資源",
+            "empty": "目標を現在のレベルより高くすると、資源が表示されます。"
+        },
+        "events": {
+            "title": "昇格スコアによるイベントポイント",
+            "noPoints": "ポイントなし",
+            "note": "イベントポイントは、昇格スコアに、各イベントの「Pet advancement score increases by 1」の行のポイントを掛けた値です。{hallOfChief}にはペットの行がありません。"
+        },
+        "byPet": {
+            "title": "ペットごと",
+            "tableLabel": "ペットごとの結果",
+            "empty": "レベルも昇格も上がるペットはまだありません。",
+            "heads": {
+                "pet": "ペット",
+                "levels": "レベル",
+                "advancements": "昇格",
+                "score": "スコア",
+                "resources": "資源",
+                "troopAttack": "部隊の攻撃",
+                "troopDefense": "部隊の防御",
+                "power": "戦力"
+            },
+            "noResources": "なし"
+        }
+    }
+}

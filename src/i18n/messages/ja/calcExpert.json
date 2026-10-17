@@ -1,0 +1,67 @@
+{
+    "intro": "各エキスパートの現在と目標の親密度レベルとスキルレベルを選んでください。Books of Knowledge、シジル、スキルEXP、親密度ポイントの合計を計算します。エキスパートは10レベルごとに昇格し、その先に進むにはシジルが必要です。現在のレベルですでに昇格済みの場合や、目標レベルの昇格分も含める場合は、詳細設定をオンにします。タレントは関係とともにレベルが上がり、コストはかかりません。",
+    "goals": {
+        "title": "エキスパート",
+        "empty": "エキスパートを追加すると、Books of Knowledge、シジル、イベントポイントが表示されます。"
+    },
+    "add": {
+        "label": "追加するエキスパート",
+        "button": "追加",
+        "allAdded": "すべてのエキスパートが計算機に入っています。"
+    },
+    "expert": {
+        "meta": "{title}、{specialty}",
+        "remove": "削除",
+        "removeLabel": "{expert}を削除",
+        "affinity": "親密度レベル",
+        "current": "現在",
+        "goal": "目標",
+        "advancedAtCurrent": "レベル{level}で昇格済み",
+        "advanceAtGoal": "レベル{level}で昇格",
+        "skillMax": "最大{level}"
+    },
+    "results": {
+        "title": "結果",
+        "stats": {
+            "books": "Books of Knowledge",
+            "sigils": "エキスパートシジル",
+            "exp": "スキルEXP",
+            "learningTime": "学習時間",
+            "affinity": "親密度ポイント",
+            "levels": "親密度レベル",
+            "skillLevels": "スキルレベル",
+            "advancements": "昇格"
+        }
+    },
+    "resources": {
+        "title": "資源",
+        "nothing": "この目標にはBooks of Knowledgeもシジルも必要ありません。",
+        "commonSigils": "Common Expert Sigilsは、どのエキスパートのシジルにも変換できます。"
+    },
+    "events": {
+        "title": "イベントポイント",
+        "heads": {
+            "event": "イベント",
+            "items": "本とシジル",
+            "perMinute": "スピードアップ1分あたり",
+            "speedups": "スピードアップ",
+            "total": "合計"
+        },
+        "hint": "スピードアップのポイントは、学習時間{duration}の全体を学習スピードアップまたは汎用スピードアップで進めた場合の値です。"
+    },
+    "byExpert": {
+        "title": "エキスパートごと",
+        "nothing": "現在より目標が高いエキスパートはまだいません。",
+        "heads": {
+            "expert": "エキスパート",
+            "levels": "親密度レベル",
+            "advancements": "昇格",
+            "skillLevels": "スキルレベル",
+            "books": "本",
+            "sigils": "シジル",
+            "exp": "スキルEXP",
+            "learningTime": "学習時間",
+            "affinity": "親密度ポイント"
+        }
+    }
+}

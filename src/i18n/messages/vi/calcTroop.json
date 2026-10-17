@@ -1,0 +1,117 @@
+{
+    "intro": "Đặt cấp của từng trại và việc nó huấn luyện hoặc thăng cấp. Cả ba trại dùng chung một sức chứa huấn luyện: tổng sức chứa của ba cấp trại, cộng thêm các chỉ số bên dưới.",
+    "reset": "Đặt lại tất cả",
+    "tier": "T{tier}",
+    "bonuses": {
+        "title": "Sức chứa và tốc độ",
+        "researchCapacity": "Sức chứa từ nghiên cứu",
+        "researchCapacityHint": "Sức chứa huấn luyện từ nghiên cứu, như game hiển thị.",
+        "trainingSpeed": "Tốc độ huấn luyện (%)",
+        "trainingSpeedHint": "Tốc độ của bạn như game hiển thị, chưa tính các buff bên dưới.",
+        "position": "Chức vụ",
+        "positions": {
+            "none": "Không có",
+            "ministerOfEducation": "Bộ trưởng Giáo dục",
+            "vicePresident": "Phó chủ tịch"
+        },
+        "rank": "Hạng",
+        "ranks": {
+            "regular": "Thường",
+            "supreme": "Tối cao"
+        },
+        "appointmentEffect": "+{capacity} sức chứa, +{speed}% tốc độ huấn luyện",
+        "capacityBoost": "Tăng sức chứa",
+        "capacityBoostEffect": "Nhân tổng sức chứa với {multiplier}.",
+        "mobilize": "Mobilize",
+        "advancedTraining": "Advanced Training",
+        "speedEffect": "+{speed}% tốc độ huấn luyện",
+        "costReduction": "Giảm chi phí",
+        "costReductionLabel": "Giảm chi phí {name} (%)",
+        "costReductionHint": "Từ 0 đến {max}%."
+    },
+    "camps": {
+        "title": "Trại",
+        "level": "Cấp trại",
+        "levelOption": "{level} ({capacity} sức chứa)",
+        "mode": "Hành động",
+        "modes": {
+            "none": "Không huấn luyện",
+            "training": "Huấn luyện",
+            "promotion": "Thăng cấp",
+            "both": "Huấn luyện và thăng cấp"
+        },
+        "trainingTitle": "Huấn luyện",
+        "promotionTitle": "Thăng cấp",
+        "trainTier": "Bậc cần huấn luyện",
+        "fromTier": "Thăng cấp từ",
+        "toTier": "Thăng cấp lên",
+        "troopsPerBatch": "Quân mỗi lô",
+        "max": "Tối đa",
+        "maxValue": "Tối đa ({capacity})",
+        "batches": "Số lô",
+        "runTime": "Thời gian {time}"
+    },
+    "results": {
+        "title": "Kết quả",
+        "capacity": "Sức chứa mỗi lô",
+        "troops": "Quân nhận được",
+        "power": "Sức mạnh nhận được",
+        "speedUsed": "Tốc độ huấn luyện đã dùng",
+        "totalTime": "Tăng tốc cần",
+        "longest": "Trại lâu nhất",
+        "percent": "{value}%",
+        "noRuns": "Hãy đặt ít nhất một trại huấn luyện hoặc thăng cấp để xem quân, sức mạnh, tài nguyên và thời gian.",
+        "noChange": "Các lượt này không đổi quân nào. Hãy đặt số lượng lớn hơn 0."
+    },
+    "tiers": {
+        "troopsTitle": "Quân theo bậc",
+        "powerTitle": "Sức mạnh theo bậc",
+        "heads": {
+            "tier": "Bậc",
+            "total": "Tổng"
+        },
+        "total": "Tổng",
+        "promotionNote": "Thăng cấp lấy quân và sức mạnh của chúng từ bậc thấp rồi cộng vào bậc cao, nên bậc thấp hiện mức thay đổi âm.",
+        "fireCrystalNote": "Sức mạnh dùng cấp Fire Crystal của từng trại: {levels}. Chỉ bậc 10 và 11 thay đổi theo cấp. Chỉ số cộng thêm từ nghiên cứu hoặc trang bị không được tính.",
+        "fireCrystalLevel": "{name} {level}"
+    },
+    "resources": {
+        "title": "Tài nguyên",
+        "tableLabel": "Tài nguyên cần",
+        "heads": {
+            "resource": "Tài nguyên",
+            "amount": "Số lượng"
+        }
+    },
+    "time": {
+        "title": "Thời gian",
+        "heads": {
+            "camp": "Trại",
+            "action": "Hành động",
+            "troopsPerBatch": "Quân mỗi lô",
+            "batches": "Số lô",
+            "time": "Thời gian"
+        },
+        "training": "Huấn luyện {tier}",
+        "promotion": "Thăng cấp {from} lên {to}",
+        "campTotal": "Trại {name}",
+        "totalTime": "Tổng mọi trại (tăng tốc cần)",
+        "longest": "Trại lâu nhất (các trại huấn luyện cùng lúc)",
+        "minutesNeeded": "Số phút tăng tốc cần",
+        "minutes": "{value} phút",
+        "note": "Thời gian của một lô bằng thời gian huấn luyện một quân nhân với số quân, chia cho 1 cộng tốc độ huấn luyện, trước khi tăng tốc."
+    },
+    "events": {
+        "title": "Điểm sự kiện",
+        "tableLabel": "Điểm sự kiện",
+        "heads": {
+            "event": "Sự kiện",
+            "training": "Điểm huấn luyện",
+            "perMinute": "Điểm tăng tốc mỗi phút",
+            "speedup": "Điểm tăng tốc",
+            "total": "Tổng"
+        },
+        "noSpeedup": "Không có",
+        "note": "Điểm huấn luyện tính quân của các lượt huấn luyện theo bậc của chúng. Thăng cấp không cho điểm huấn luyện. Điểm tăng tốc dùng {minutes} phút tăng tốc cần cho mọi trại. Điểm Hall of Chief tính cho một mùa và không gồm điểm từ việc tăng sức mạnh."
+    }
+}

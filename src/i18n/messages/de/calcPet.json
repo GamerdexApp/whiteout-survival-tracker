@@ -1,0 +1,61 @@
+{
+    "intro": "Füge die Haustiere hinzu, die du leveln willst. Wähle für jedes Haustier die aktuelle Stufe und die gewünschte Stufe. Ein Haustier steigt auf jeder Stufe auf, die ein Vielfaches von 10 ist, und braucht den Aufstieg, um darüber hinauszukommen.",
+    "picker": {
+        "petLabel": "Haustier",
+        "add": "Haustier hinzufügen",
+        "addAll": "Alle Haustiere hinzufügen",
+        "allAdded": "Alle Haustiere sind in der Liste.",
+        "setAllMax": "Alle Ziele auf Max setzen",
+        "advanceAtMax": "Auch auf der Maximalstufe aufsteigen",
+        "removeAll": "Alle entfernen"
+    },
+    "row": {
+        "maxLevel": "Maximalstufe {max}",
+        "current": "Aktuelle Stufe",
+        "goal": "Zielstufe",
+        "currentAdvanced": "Schon aufgestiegen",
+        "goalAdvanced": "Aufstieg am Ziel",
+        "keepsAdvancement": "Das Haustier behält seinen Aufstieg auf dieser Stufe.",
+        "remove": "{pet} entfernen"
+    },
+    "empty": "Noch kein Haustier hinzugefügt. Füge oben ein Haustier hinzu, um Futter, Aufstiegs-Items und Zuwächse zu sehen.",
+    "results": {
+        "title": "Ergebnisse",
+        "stats": {
+            "levels": "Stufen",
+            "advancements": "Aufstiege",
+            "troopAttack": "Gewonnener Truppenangriff",
+            "troopDefense": "Gewonnene Truppenverteidigung",
+            "power": "Gewonnene Macht",
+            "advancementScore": "Aufstiegs-Score"
+        },
+        "percent": "{value}%",
+        "unknown": "Unbekannt",
+        "unknownPowerNote": "Die Spieldaten haben für manche Aufstiegsstufen keine Macht nach dem Aufstieg, daher ist der Machtgewinn dieser Haustiere Unbekannt.",
+        "resources": {
+            "title": "Ressourcen",
+            "empty": "Wähle ein Ziel über der aktuellen Stufe, um die Ressourcen zu sehen."
+        },
+        "events": {
+            "title": "Event-Punkte aus dem Aufstiegs-Score",
+            "noPoints": "Keine Punkte",
+            "note": "Event-Punkte sind der Aufstiegs-Score mal die Punkte der Zeile \"Pet advancement score increases by 1\" jedes Events. {hallOfChief} hat keine Haustier-Zeile."
+        },
+        "byPet": {
+            "title": "Nach Haustier",
+            "tableLabel": "Ergebnisse nach Haustier",
+            "empty": "Noch kein Haustier gewinnt eine Stufe oder einen Aufstieg.",
+            "heads": {
+                "pet": "Haustier",
+                "levels": "Stufen",
+                "advancements": "Aufstiege",
+                "score": "Score",
+                "resources": "Ressourcen",
+                "troopAttack": "Truppenangriff",
+                "troopDefense": "Truppenverteidigung",
+                "power": "Macht"
+            },
+            "noResources": "Keine"
+        }
+    }
+}

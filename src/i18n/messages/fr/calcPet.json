@@ -1,0 +1,61 @@
+{
+    "intro": "Ajoutez les familiers que vous voulez monter. Pour chaque familier, choisissez son niveau actuel et le niveau voulu. Un familier avance à chaque niveau multiple de 10 et a besoin de l'avancement pour dépasser ce niveau.",
+    "picker": {
+        "petLabel": "Familier",
+        "add": "Ajouter le familier",
+        "addAll": "Ajouter tous les familiers",
+        "allAdded": "Tous les familiers sont dans la liste.",
+        "setAllMax": "Mettre tous les objectifs au max",
+        "advanceAtMax": "Avancer aussi au niveau max",
+        "removeAll": "Tout retirer"
+    },
+    "row": {
+        "maxLevel": "Niveau max {max}",
+        "current": "Niveau actuel",
+        "goal": "Niveau objectif",
+        "currentAdvanced": "Déjà avancé",
+        "goalAdvanced": "Avancer à l'objectif",
+        "keepsAdvancement": "Le familier garde son avancement à ce niveau.",
+        "remove": "Retirer {pet}"
+    },
+    "empty": "Aucun familier ajouté pour l'instant. Ajoutez un familier ci-dessus pour voir la nourriture, les objets d'avancement et les gains.",
+    "results": {
+        "title": "Résultats",
+        "stats": {
+            "levels": "Niveaux",
+            "advancements": "Avancements",
+            "troopAttack": "Attaque des troupes gagnée",
+            "troopDefense": "Défense des troupes gagnée",
+            "power": "Puissance gagnée",
+            "advancementScore": "Score d'avancement"
+        },
+        "percent": "{value} %",
+        "unknown": "Inconnu",
+        "unknownPowerNote": "Les données du jeu n'ont pas la puissance avancée pour certains niveaux d'avancement, donc le gain de puissance de ces familiers est Inconnu.",
+        "resources": {
+            "title": "Ressources",
+            "empty": "Choisissez un objectif au-dessus du niveau actuel pour voir les ressources."
+        },
+        "events": {
+            "title": "Points d'événement du score d'avancement",
+            "noPoints": "Aucun point",
+            "note": "Les points d'événement sont le score d'avancement multiplié par les points de la ligne \"Pet advancement score increases by 1\" de chaque événement. {hallOfChief} n'a pas de ligne de familiers."
+        },
+        "byPet": {
+            "title": "Par familier",
+            "tableLabel": "Résultats par familier",
+            "empty": "Aucun familier ne gagne encore de niveau ni d'avancement.",
+            "heads": {
+                "pet": "Familier",
+                "levels": "Niveaux",
+                "advancements": "Avancements",
+                "score": "Score",
+                "resources": "Ressources",
+                "troopAttack": "Attaque des troupes",
+                "troopDefense": "Défense des troupes",
+                "power": "Puissance"
+            },
+            "noResources": "Aucune"
+        }
+    }
+}

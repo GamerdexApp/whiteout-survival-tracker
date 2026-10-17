@@ -1,0 +1,103 @@
+{
+    "speed": {
+        "title": "سرعة البناء",
+        "reset": "إعادة ضبط الكل",
+        "percentLabel": "سرعة البناء %",
+        "percentHint": "سرعتك كما تظهرها اللعبة، دون نائب الرئيس وDouble Time.",
+        "percentPlus": "‎+{value}%",
+        "percent": "{value}%",
+        "vicePresident": {
+            "label": "نائب الرئيس",
+            "none": "لا شيء",
+            "regular": "عادي",
+            "supreme": "أعلى"
+        },
+        "speedupLabel": "دقائق التسريع التي تستخدمها",
+        "speedupHint": "تسريعات البناء التي تستخدمها في هذه الترقيات. تضاف إلى نقاط الفعالية.",
+        "doubleTime": "Double Time",
+        "doubleTimeNote": "يضيف Chief Order ‏{value}% إلى الترقيات التي تبدأ أثناء تفعيله.",
+        "total": "إجمالي سرعة البناء"
+    },
+    "buildings": {
+        "title": "المباني",
+        "description": "اختر مستواك الحالي والمستوى الذي تريده لكل مبنى. تُضاف إلى الخطة المباني المطلوبة التي هي دون المستوى الذي تحتاجه الخطوة، لذا اضبط المستوى الحالي لكل مبنى لديك، وإلا يُحتسب غير مبني. لا يُحفظ شيء.",
+        "tableLabel": "المباني بمستوياتها الحالية ومستويات الهدف",
+        "columns": {
+            "building": "المبنى",
+            "current": "المستوى الحالي",
+            "goal": "مستوى الهدف"
+        },
+        "levelLabel": {
+            "current": "المستوى الحالي لـ {name}",
+            "goal": "مستوى الهدف لـ {name}"
+        },
+        "notBuilt": "غير مبني"
+    },
+    "results": {
+        "title": "النتائج",
+        "empty": "اختر هدفًا فوق المستوى الحالي لمبنى لعرض الموارد والوقت والقوة ونقاط الفعالية.",
+        "plus": "‎+{value}",
+        "stats": {
+            "steps": "مستويات للبناء",
+            "baseTime": "الوقت قبل السرعة",
+            "time": "الوقت بسرعة {percent}%",
+            "power": "القوة المكتسبة",
+            "speedupMinutes": "دقائق التسريع المطلوبة"
+        },
+        "unmet": {
+            "title": "المتطلبات على مبانٍ غير موجودة في البيانات لا تضيف خطوات:",
+            "item": "{building} المستوى {level}",
+            "listSeparator": "، "
+        },
+        "resources": {
+            "title": "الموارد"
+        },
+        "events": {
+            "title": "نقاط الفعالية",
+            "columns": {
+                "event": "الفعالية",
+                "crystalPoints": "Fire Crystals",
+                "speedupPoints": "التسريعات",
+                "total": "الإجمالي",
+                "pointsPerPower": "النقاط",
+                "days": "أيام الفعالية",
+                "points": "النقاط من القوة"
+            },
+            "scoreTableLabel": "نقاط Fire Crystal والتسريعات",
+            "speedupNote": "تحتسب نقاط التسريع {used} من أصل {needed} دقيقة يحتاجها وقت البناء. الدقائق الزائدة عن ذلك لا تمنح نقاطًا.",
+            "hallTableLabel": "نقاط {name} من القوة",
+            "hallNote": "يحتسب {name} كل نقطة قوة مكتسبة عبر البناء. يعتمد المضاعف على يوم الفعالية.",
+            "pointsPerPower": "{value} لكل قوة",
+            "daySeparator": "، "
+        },
+        "breakdown": {
+            "title": "حسب المبنى",
+            "plus": "‎+{value}",
+            "levelRange": "{from} إلى {to}",
+            "prerequisite": "متطلب",
+            "free": "بلا تكلفة",
+            "columns": {
+                "building": "المبنى",
+                "levels": "المستويات",
+                "steps": "الخطوات",
+                "power": "القوة",
+                "baseTime": "الوقت قبل السرعة",
+                "resources": "الموارد"
+            }
+        },
+        "stepDetails": {
+            "title": "{count, plural, zero {تفاصيل الخطوات ({amount} خطوة)} one {تفاصيل الخطوة ({amount} خطوة)} two {تفاصيل الخطوات ({amount} خطوتان)} few {تفاصيل الخطوات ({amount} خطوات)} many {تفاصيل الخطوات ({amount} خطوة)} other {تفاصيل الخطوات ({amount} خطوة)}}",
+            "tableLabel": "كل مستوى يُبنى، بترتيب البناء",
+            "plus": "‎+{value}",
+            "prerequisite": "متطلب",
+            "free": "بلا تكلفة",
+            "columns": {
+                "building": "المبنى",
+                "level": "المستوى",
+                "power": "القوة",
+                "baseTime": "الوقت قبل السرعة",
+                "cost": "التكلفة"
+            }
+        }
+    }
+}

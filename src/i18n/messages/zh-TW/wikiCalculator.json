@@ -1,0 +1,46 @@
+{
+    "line": "遊戲資料的自由輸入計算器。這裡不會讀取你的領主，也不會儲存任何內容。",
+    "recordLine": "請自行輸入數字。這裡不會讀取你的領主，也不會儲存任何內容。",
+    "calculators": {
+        "beast": {
+            "title": "野獸計算器",
+            "description": "算出一份體力預算夠打多少野獸和 Polar Terror，以及它們的活動積分。"
+        },
+        "building": {
+            "title": "建築計算器",
+            "description": "升級建築所需的資源、建造時間、戰力和活動積分。"
+        },
+        "chiefCharm": {
+            "title": "領主護符計算器",
+            "description": "升級領主護符所需的材料、護符分數、戰力和活動積分。"
+        },
+        "chiefGear": {
+            "title": "領主裝備計算器",
+            "description": "升級領主裝備所需的材料、裝備分數、戰力和活動積分。"
+        },
+        "expert": {
+            "title": "專家計算器",
+            "description": "提升專家及其技能所需的 Books of Knowledge 和 Expert Sigils。"
+        },
+        "heroGear": {
+            "title": "英雄裝備計算器",
+            "description": "升級一件英雄裝備所需的資源、戰力、數值和活動積分。"
+        },
+        "heroUpgrade": {
+            "title": "英雄升級計算器",
+            "description": "升級一名英雄所需的碎片、技能書和 Widgets。"
+        },
+        "pet": {
+            "title": "寵物計算器",
+            "description": "升級寵物所需的寵物飼料、進階道具和數值提升。"
+        },
+        "research": {
+            "title": "研究計算器",
+            "description": "把研究項目升到目標等級所需的資源、時間和戰力。"
+        },
+        "troop": {
+            "title": "部隊計算器",
+            "description": "各營地訓練或晉升的部隊，以及所需資源和時間。"
+        }
+    }
+}

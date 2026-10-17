@@ -1,0 +1,70 @@
+{
+    "intro": "ヒーローを1人ずつ計画します。星の表記はゲーム内と同じで、3.1は星3のティア1、5.0は最後の表記です。何も保存されず、ページを再読み込みすると選択はリセットされます。",
+    "hero": {
+        "label": "ヒーロー",
+        "option": "{name}（第{generation}世代）",
+        "generation": "第{generation}世代",
+        "reset": "ヒーローをリセット"
+    },
+    "range": {
+        "current": "現在",
+        "goal": "目標"
+    },
+    "stars": {
+        "title": "星",
+        "row": "星とティア"
+    },
+    "skills": {
+        "title": "スキル",
+        "exploration": "探索",
+        "expedition": "遠征"
+    },
+    "weapon": {
+        "title": "専用武器",
+        "row": "武器レベル",
+        "none": "{hero}には専用武器がありません。"
+    },
+    "result": {
+        "title": "必要なもの",
+        "unmetTitle": "星が足りません。",
+        "unmet": "{items}。すでにその星に達している場合は、星の目標をそれに合わせてください。",
+        "unmetItem": "{skill}のレベル{level}には星{star}が必要",
+        "tiles": {
+            "starSteps": "星の段階",
+            "shards": "シャード",
+            "skillLevels": "スキルレベル",
+            "weaponLevels": "武器レベル",
+            "widgets": "Widgets",
+            "powerGain": "獲得戦力"
+        },
+        "resources": {
+            "title": "資源",
+            "item": "アイテム",
+            "amount": "数量",
+            "widgets": "Widgets",
+            "empty": "まだ何も選ばれていません。目標を現在のレベルより高くしてください。",
+            "ownShards": "{own}は{general}と同じ数として数えます。"
+        },
+        "unlocked": {
+            "title": "解放される武器スキル"
+        },
+        "stats": {
+            "title": "レベル80のステータス",
+            "stat": "ステータス",
+            "estimate": "推定",
+            "estimateNote": "星5未満のステータスは、星5のステータスから換算した推定値です。",
+            "exploration": "探索",
+            "expedition": "遠征",
+            "attack": "攻撃",
+            "defense": "防御",
+            "health": "体力",
+            "percent": "{value}%"
+        },
+        "events": {
+            "title": "イベントポイント",
+            "event": "イベント",
+            "points": "ポイント"
+        },
+        "powerNote": "戦力には星、スキル、武器のレベルが含まれます。戦力データのない星の表記では、獲得戦力は不明になります。"
+    }
+}

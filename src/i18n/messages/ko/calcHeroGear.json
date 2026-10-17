@@ -1,0 +1,77 @@
+{
+    "piece": {
+        "title": "장비",
+        "quality": "품질",
+        "slot": "부위",
+        "troopType": "병종",
+        "name": "{troop} {slot}",
+        "mythicOnly": "단조와 강림은 신화 장비만 할 수 있어요. 이 품질에서는 숙련 단조와 강림이 꺼져 있어요."
+    },
+    "tracks": {
+        "enhancement": "강화",
+        "masteryForging": "숙련 단조",
+        "empowerment": "강림",
+        "current": "현재",
+        "goal": "목표",
+        "range": "{from}~{to}레벨",
+        "none": "없음",
+        "forgingRow": "{name} (+{percent}%)",
+        "needsMythic": "신화 장비 필요",
+        "reset": "레벨 초기화"
+    },
+    "unmet": {
+        "title": "아직 도달할 수 없어요.",
+        "enhancement": "{track}에는 먼저 강화 {level}레벨이 필요해요.",
+        "masteryForging": "{track}에는 먼저 숙련 단조 {row}이(가) 필요해요.",
+        "quality": "{track}에는 신화 장비가 필요해요.",
+        "hint": "이미 도달했다면 현재 레벨을 맞춰 주세요."
+    },
+    "noForging": "강림에는 숙련 단조 {row}이(가) 필요해요. 숙련 단조가 없음이라서 전투력과 능력치에 단조가 포함되지 않아요.",
+    "summary": {
+        "title": "결과",
+        "powerGained": "얻는 전투력",
+        "currentPower": "현재 전투력",
+        "goalPower": "계획 후 전투력",
+        "forgingStatsUp": "숙련 단조 능력치 상승",
+        "percent": "+{value}%"
+    },
+    "resources": {
+        "title": "필요한 자원",
+        "item": "아이템",
+        "amount": "수량",
+        "empty": "업그레이드할 것이 없어요. 목표를 현재 레벨보다 높게 올리세요."
+    },
+    "stats": {
+        "title": "장비 능력치",
+        "tableLabel": "장비 능력치, 현재와 계획 후",
+        "stat": "능력치",
+        "current": "현재",
+        "goal": "계획 후",
+        "gain": "상승",
+        "power": "전투력",
+        "health": "체력",
+        "percentStat": "{name} (%)",
+        "percentValue": "{value}%",
+        "note": "능력치에는 숙련 단조가 포함되고 소수점 이하는 버려요."
+    },
+    "milestones": {
+        "title": "해금되는 Mithril 마일스톤",
+        "line": "강림 {level}: {event}, {stat}",
+        "empty": "이 계획으로 해금되는 Mithril 마일스톤이 없어요."
+    },
+    "tracksTable": {
+        "title": "항목별",
+        "label": "항목별 단계, 상승, 자원",
+        "track": "항목",
+        "steps": "단계",
+        "gain": "상승",
+        "powerGain": "단조 전 전투력 {value}",
+        "statsUp": "능력치 +{value}%",
+        "resources": "자원",
+        "none": "없음"
+    },
+    "events": {
+        "title": "이벤트 점수",
+        "note": "계획의 Essence Stones와 Mithril로 얻는 점수예요."
+    }
+}

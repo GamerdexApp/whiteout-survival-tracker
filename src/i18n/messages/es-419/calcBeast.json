@@ -1,0 +1,65 @@
+{
+    "levelBand": "Nivel {low} a {high}",
+    "stamina": {
+        "title": "Vigor",
+        "stamina": "Vigor",
+        "cans": "Botes de vigor",
+        "cansHint": "{amount} de vigor cada uno",
+        "gina": "Endurance Training de Gina",
+        "ginaNone": "No se usa",
+        "ginaLevel": "Nivel {level}, {percent}% menos de vigor",
+        "beastLevel": "Nivel de la bestia para el vigor restante",
+        "beastLevelHint": "Las bestias de un mismo grupo dan los mismos puntos en State of Power."
+    },
+    "planned": {
+        "title": "Cacerías planificadas",
+        "hint": "Cacerías que haces de todos modos, como las bestias de las misiones de Intel. Se pagan primero.",
+        "empty": "No hay cacerías de bestias planificadas.",
+        "runLevel": "Nivel de la bestia",
+        "runCount": "Bestias",
+        "add": "Agregar cacería de bestias",
+        "remove": "Quitar la cacería de bestias de {band}",
+        "polarTerrors": "Polar Terrors planificados"
+    },
+    "result": {
+        "pointsNote": "Los puntos no incluyen ninguna bonificación, como la de Valeria en State of Power. Las cacerías que no son bestias ni Polar Terrors, como la Bear Hunt, no se cuentan.",
+        "tiles": {
+            "title": "Vigor",
+            "percent": "{percent}%",
+            "total": "Vigor total",
+            "ginaReduction": "Reducción de Gina",
+            "beastCost": "Vigor por bestia",
+            "polarTerrorCost": "Vigor por Polar Terror",
+            "planned": "Vigor para las cacerías planificadas",
+            "left": "Vigor restante",
+            "short": "Vigor que falta",
+            "shortNote": "Las cacerías planificadas necesitan {amount} de vigor más del que tienes. El vigor restante no paga cacerías extra."
+        },
+        "leftover": {
+            "title": "Vigor restante tras las cacerías planificadas",
+            "hint": "Cada fila gasta todo el vigor restante en un solo tipo de cacería.",
+            "hunt": "Cacería",
+            "onlyBeasts": "Solo bestias, {band}",
+            "onlyPolarTerrors": "Solo Polar Terrors",
+            "count": "Más cacerías",
+            "staminaLeft": "Vigor restante"
+        },
+        "events": {
+            "title": "Puntos de eventos",
+            "hint": "Planificado son los puntos de las cacerías planificadas. Las dos últimas columnas suman las cacerías que paga el vigor restante.",
+            "event": "Evento",
+            "perBeast": "Por bestia",
+            "perPolarTerror": "Por Polar Terror",
+            "planned": "Planificado",
+            "withBeasts": "Plan y bestias",
+            "withPolarTerrors": "Plan y Polar Terrors"
+        },
+        "plannedPoints": {
+            "title": "Puntos de las cacerías planificadas",
+            "hunt": "Cacería",
+            "beasts": "{count, plural, one {{amount} bestia, {band}} other {{amount} bestias, {band}}}",
+            "polarTerrors": "{count, plural, one {{amount} Polar Terror} other {{amount} Polar Terrors}}",
+            "total": "Total"
+        }
+    }
+}

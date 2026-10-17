@@ -1,0 +1,61 @@
+{
+    "intro": "Tambah hewan yang ingin dinaikkan levelnya. Untuk tiap hewan, pilih level saat ini dan level yang kamu mau. Hewan naik tingkat di setiap level kelipatan 10 dan butuh kenaikan tingkat untuk melewati level itu.",
+    "picker": {
+        "petLabel": "Hewan",
+        "add": "Tambah hewan",
+        "addAll": "Tambah semua hewan",
+        "allAdded": "Semua hewan sudah ada di daftar.",
+        "setAllMax": "Atur semua target ke maks",
+        "advanceAtMax": "Naik tingkat juga di level maks",
+        "removeAll": "Hapus semua"
+    },
+    "row": {
+        "maxLevel": "Level maks {max}",
+        "current": "Level saat ini",
+        "goal": "Level target",
+        "currentAdvanced": "Sudah naik tingkat",
+        "goalAdvanced": "Naik tingkat di target",
+        "keepsAdvancement": "Hewan mempertahankan kenaikan tingkatnya di level ini.",
+        "remove": "Hapus {pet}"
+    },
+    "empty": "Belum ada hewan. Tambah hewan di atas untuk melihat makanan hewan, item kenaikan tingkat, dan tambahan statistik.",
+    "results": {
+        "title": "Hasil",
+        "stats": {
+            "levels": "Level",
+            "advancements": "Kenaikan tingkat",
+            "troopAttack": "Serangan Pasukan didapat",
+            "troopDefense": "Pertahanan Pasukan didapat",
+            "power": "Kekuatan didapat",
+            "advancementScore": "Skor kenaikan tingkat"
+        },
+        "percent": "{value}%",
+        "unknown": "Tidak diketahui",
+        "unknownPowerNote": "Data game tidak punya kekuatan setelah naik tingkat untuk beberapa level, jadi tambahan kekuatan hewan ini Tidak diketahui.",
+        "resources": {
+            "title": "Sumber daya",
+            "empty": "Pilih target di atas level saat ini untuk melihat sumber daya."
+        },
+        "events": {
+            "title": "Poin event dari skor kenaikan tingkat",
+            "noPoints": "Tidak ada poin",
+            "note": "Poin event adalah skor kenaikan tingkat dikali poin baris \"Pet advancement score increases by 1\" di tiap event. {hallOfChief} tidak punya baris hewan."
+        },
+        "byPet": {
+            "title": "Menurut hewan",
+            "tableLabel": "Hasil menurut hewan",
+            "empty": "Belum ada hewan yang naik level atau naik tingkat.",
+            "heads": {
+                "pet": "Hewan",
+                "levels": "Level",
+                "advancements": "Kenaikan tingkat",
+                "score": "Skor",
+                "resources": "Sumber daya",
+                "troopAttack": "Serangan Pasukan",
+                "troopDefense": "Pertahanan Pasukan",
+                "power": "Kekuatan"
+            },
+            "noResources": "Tidak ada"
+        }
+    }
+}

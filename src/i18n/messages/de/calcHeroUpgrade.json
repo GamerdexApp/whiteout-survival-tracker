@@ -1,0 +1,70 @@
+{
+    "intro": "Plane einen Helden nach dem anderen. Sterne nutzen die Anzeige im Spiel: 3.1 ist Stern 3 und Tier 1, und 5.0 ist die letzte Anzeige. Nichts wird gespeichert, und beim Neuladen der Seite werden deine Auswahlen gelöscht.",
+    "hero": {
+        "label": "Held",
+        "option": "{name} (Gen {generation})",
+        "generation": "Gen {generation}",
+        "reset": "Helden zurücksetzen"
+    },
+    "range": {
+        "current": "Aktuell",
+        "goal": "Ziel"
+    },
+    "stars": {
+        "title": "Sterne",
+        "row": "Stern und Tier"
+    },
+    "skills": {
+        "title": "Fähigkeiten",
+        "exploration": "Erkundung",
+        "expedition": "Expedition"
+    },
+    "weapon": {
+        "title": "Exklusivwaffe",
+        "row": "Waffenstufe",
+        "none": "{hero} hat keine Exklusivwaffe."
+    },
+    "result": {
+        "title": "Benötigt",
+        "unmetTitle": "Braucht mehr Sterne.",
+        "unmet": "{items}. Wenn der Held diese Sterne schon hat, setze das Sternziel darauf.",
+        "unmetItem": "{skill} Stufe {level} braucht Stern {star}",
+        "tiles": {
+            "starSteps": "Sternschritte",
+            "shards": "Splitter",
+            "skillLevels": "Fähigkeitsstufen",
+            "weaponLevels": "Waffenstufen",
+            "widgets": "Widgets",
+            "powerGain": "Machtgewinn"
+        },
+        "resources": {
+            "title": "Ressourcen",
+            "item": "Item",
+            "amount": "Menge",
+            "widgets": "Widgets",
+            "empty": "Noch nichts gewählt. Setze ein Ziel über die aktuelle Stufe.",
+            "ownShards": "{own} zählen wie {general}."
+        },
+        "unlocked": {
+            "title": "Schaltet Waffenfähigkeiten frei"
+        },
+        "stats": {
+            "title": "Werte auf Stufe 80",
+            "stat": "Wert",
+            "estimate": "Schätzung",
+            "estimateNote": "Werte unter 5 Sternen sind Schätzungen, hochgerechnet aus den Werten bei 5 Sternen.",
+            "exploration": "Erkundung",
+            "expedition": "Expedition",
+            "attack": "Angriff",
+            "defense": "Verteidigung",
+            "health": "Gesundheit",
+            "percent": "{value}%"
+        },
+        "events": {
+            "title": "Event-Punkte",
+            "event": "Event",
+            "points": "Punkte"
+        },
+        "powerNote": "Die Macht zählt die Stern-, Fähigkeits- und Waffenstufen. Eine Sternanzeige ohne Machtdaten macht den Zuwachs Unbekannt."
+    }
+}

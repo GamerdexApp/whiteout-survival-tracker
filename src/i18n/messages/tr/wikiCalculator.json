@@ -1,0 +1,46 @@
+{
+    "line": "Oyun verileri için serbest hesaplayıcılar. Şefinden hiçbir şey okunmaz ve hiçbir şey kaydedilmez.",
+    "recordLine": "Sayıları kendin gir. Şefinden hiçbir şey okunmaz ve hiçbir şey kaydedilmez.",
+    "calculators": {
+        "beast": {
+            "title": "Canavar hesaplayıcı",
+            "description": "Bir dayanıklılık bütçesinin kaç canavar ve Polar Terror avına yettiği ve getirdikleri etkinlik puanı."
+        },
+        "building": {
+            "title": "Bina hesaplayıcı",
+            "description": "Binaları yükseltmek için kaynaklar, inşaat süresi, güç ve etkinlik puanı."
+        },
+        "chiefCharm": {
+            "title": "Şef Tılsımı hesaplayıcı",
+            "description": "Şef Tılsımlarını yükseltmek için malzemeler, tılsım skoru, güç ve etkinlik puanı."
+        },
+        "chiefGear": {
+            "title": "Şef Ekipmanı hesaplayıcı",
+            "description": "Şef Ekipmanını yükseltmek için malzemeler, ekipman skoru, güç ve etkinlik puanı."
+        },
+        "expert": {
+            "title": "Uzman hesaplayıcı",
+            "description": "Uzmanların ve becerilerinin seviyesini yükseltmek için Books of Knowledge ve uzman sigilleri."
+        },
+        "heroGear": {
+            "title": "Kahraman Ekipmanı hesaplayıcı",
+            "description": "Bir Kahraman Ekipmanı parçasının seviyesini yükseltmek için kaynaklar, güç, özellikler ve etkinlik puanı."
+        },
+        "heroUpgrade": {
+            "title": "Kahraman yükseltme hesaplayıcı",
+            "description": "Bir kahramanı yükseltmek için Shard, beceri kılavuzları ve Widgets."
+        },
+        "pet": {
+            "title": "Evcil hayvan hesaplayıcı",
+            "description": "Evcil hayvanların seviyesini yükseltmek için yiyecek, aşama atlama öğeleri ve özellik kazanımları."
+        },
+        "research": {
+            "title": "Araştırma hesaplayıcı",
+            "description": "Araştırma hatlarını hedef seviyeye çıkarmak için kaynaklar, süre ve güç."
+        },
+        "troop": {
+            "title": "Birlik hesaplayıcı",
+            "description": "Her kampın eğittiği ya da terfi ettirdiği birlikler, kaynaklar ve süre."
+        }
+    }
+}

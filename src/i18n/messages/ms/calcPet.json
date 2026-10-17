@@ -1,0 +1,61 @@
+{
+    "intro": "Tambah haiwan peliharaan yang anda mahu naikkan tahap. Untuk setiap haiwan, pilih tahap semasa dan tahap yang anda mahu. Haiwan naik pangkat pada setiap tahap gandaan 10 dan memerlukan kenaikan pangkat untuk melepasi tahap itu.",
+    "picker": {
+        "petLabel": "Haiwan peliharaan",
+        "add": "Tambah haiwan",
+        "addAll": "Tambah semua haiwan",
+        "allAdded": "Semua haiwan sudah ada dalam senarai.",
+        "setAllMax": "Tetapkan semua matlamat ke maks",
+        "advanceAtMax": "Naik pangkat juga pada tahap maks",
+        "removeAll": "Buang semua"
+    },
+    "row": {
+        "maxLevel": "Tahap maks {max}",
+        "current": "Tahap semasa",
+        "goal": "Tahap matlamat",
+        "currentAdvanced": "Sudah naik pangkat",
+        "goalAdvanced": "Naik pangkat pada matlamat",
+        "keepsAdvancement": "Haiwan mengekalkan kenaikan pangkatnya pada tahap ini.",
+        "remove": "Buang {pet}"
+    },
+    "empty": "Belum ada haiwan ditambah. Tambah haiwan di atas untuk melihat makanan haiwan, item kenaikan pangkat dan perolehan.",
+    "results": {
+        "title": "Hasil",
+        "stats": {
+            "levels": "Tahap",
+            "advancements": "Kenaikan pangkat",
+            "troopAttack": "Serangan Tentera diperoleh",
+            "troopDefense": "Pertahanan Tentera diperoleh",
+            "power": "Kuasa diperoleh",
+            "advancementScore": "Skor kenaikan pangkat"
+        },
+        "percent": "{value}%",
+        "unknown": "Tidak diketahui",
+        "unknownPowerNote": "Data permainan tiada kuasa naik pangkat untuk sesetengah tahap kenaikan pangkat, jadi perolehan kuasa haiwan ini Tidak diketahui.",
+        "resources": {
+            "title": "Sumber",
+            "empty": "Pilih matlamat melebihi tahap semasa untuk melihat sumber."
+        },
+        "events": {
+            "title": "Mata acara daripada skor kenaikan pangkat",
+            "noPoints": "Tiada mata",
+            "note": "Mata acara ialah skor kenaikan pangkat didarab mata baris \"Pet advancement score increases by 1\" bagi setiap acara. {hallOfChief} tiada baris haiwan."
+        },
+        "byPet": {
+            "title": "Mengikut haiwan",
+            "tableLabel": "Hasil mengikut haiwan",
+            "empty": "Belum ada haiwan yang mendapat tahap atau kenaikan pangkat.",
+            "heads": {
+                "pet": "Haiwan",
+                "levels": "Tahap",
+                "advancements": "Kenaikan pangkat",
+                "score": "Skor",
+                "resources": "Sumber",
+                "troopAttack": "Serangan Tentera",
+                "troopDefense": "Pertahanan Tentera",
+                "power": "Kuasa"
+            },
+            "noResources": "Tiada"
+        }
+    }
+}

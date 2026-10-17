@@ -1,0 +1,50 @@
+{
+    "setAll": {
+        "title": "모든 참 설정",
+        "hint": "장비마다 참이 3개 있어요. 여기서 시작 레벨과 목표 레벨을 골라 참 18개 전체에 적용한 뒤, 아래에서 참을 하나씩 바꿀 수 있어요.",
+        "fromLabel": "시작",
+        "toLabel": "목표",
+        "apply": "모두 적용",
+        "reset": "모두 초기화"
+    },
+    "fields": {
+        "notStarted": "없음 (시작 전)",
+        "skip": "없음 (제외)"
+    },
+    "result": {
+        "title": "결과",
+        "score": "참 점수",
+        "power": "얻는 전투력",
+        "steps": "올리는 레벨",
+        "charms": "업그레이드하는 참",
+        "materials": "재료",
+        "noMaterials": "참의 목표 레벨을 고르면 재료가 표시돼요.",
+        "eventPoints": "이벤트 점수",
+        "eventPointsNote": "이벤트 점수는 참 점수에 각 이벤트의 \"Raise Chief Charm max score\" 행 점수를 곱한 값이에요."
+    },
+    "charms": {
+        "title": "영주 참",
+        "hint": "참마다 현재 레벨과 원하는 레벨을 고르세요. 없음 (제외)로 둔 참은 계산하지 않아요.",
+        "charmLabel": "참 {number}",
+        "charmName": "{piece} 참 {number}",
+        "fromLabel": "시작",
+        "toLabel": "목표",
+        "fromName": "시작 ({charm})",
+        "toName": "목표 ({charm})"
+    },
+    "breakdown": {
+        "title": "참별",
+        "empty": "목표가 시작 레벨보다 높은 참이 아직 없어요.",
+        "charm": "참",
+        "charmName": "{piece} 참 {number}",
+        "levels": "레벨",
+        "levelRange": "{from}~{to}",
+        "stat": "능력치 보너스",
+        "percent": "{value}%",
+        "steps": "올리는 레벨",
+        "score": "점수",
+        "power": "전투력",
+        "materials": "재료",
+        "none": "없음"
+    }
+}

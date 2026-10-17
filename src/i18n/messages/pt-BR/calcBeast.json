@@ -1,0 +1,65 @@
+{
+    "levelBand": "Nível {low} a {high}",
+    "stamina": {
+        "title": "Resistência",
+        "stamina": "Resistência",
+        "cans": "Latas de resistência",
+        "cansHint": "{amount} de resistência cada",
+        "gina": "Endurance Training da Gina",
+        "ginaNone": "Não usado",
+        "ginaLevel": "Nível {level}, {percent}% menos resistência",
+        "beastLevel": "Nível das feras para a resistência restante",
+        "beastLevelHint": "Feras do mesmo grupo rendem os mesmos pontos em State of Power."
+    },
+    "planned": {
+        "title": "Caçadas planejadas",
+        "hint": "Caçadas que você faz de qualquer jeito, como as feras das missões de Intel. São pagas primeiro.",
+        "empty": "Nenhuma caçada de feras planejada.",
+        "runLevel": "Nível da fera",
+        "runCount": "Feras",
+        "add": "Adicionar caçada de feras",
+        "remove": "Remover a caçada de feras de {band}",
+        "polarTerrors": "Polar Terrors planejados"
+    },
+    "result": {
+        "pointsNote": "Os pontos são antes de qualquer bônus, como a Valeria em State of Power. Caçadas que não são feras nem Polar Terrors, como a Bear Hunt, não são contadas.",
+        "tiles": {
+            "title": "Resistência",
+            "percent": "{percent}%",
+            "total": "Resistência total",
+            "ginaReduction": "Redução da Gina",
+            "beastCost": "Resistência por fera",
+            "polarTerrorCost": "Resistência por Polar Terror",
+            "planned": "Resistência das caçadas planejadas",
+            "left": "Resistência restante",
+            "short": "Resistência faltando",
+            "shortNote": "As caçadas planejadas precisam de {amount} a mais de resistência do que você tem. A resistência restante não paga caçadas extras."
+        },
+        "leftover": {
+            "title": "Resistência restante depois das caçadas planejadas",
+            "hint": "Cada linha gasta toda a resistência restante em um só tipo de caçada.",
+            "hunt": "Caçada",
+            "onlyBeasts": "Só feras, {band}",
+            "onlyPolarTerrors": "Só Polar Terrors",
+            "count": "Mais caçadas",
+            "staminaLeft": "Resistência restante"
+        },
+        "events": {
+            "title": "Pontos de evento",
+            "hint": "Planejado são os pontos das caçadas planejadas. As duas últimas colunas somam as caçadas que a resistência restante paga.",
+            "event": "Evento",
+            "perBeast": "Por fera",
+            "perPolarTerror": "Por Polar Terror",
+            "planned": "Planejado",
+            "withBeasts": "Plano e feras",
+            "withPolarTerrors": "Plano e Polar Terrors"
+        },
+        "plannedPoints": {
+            "title": "Pontos das caçadas planejadas",
+            "hunt": "Caçada",
+            "beasts": "{count, plural, one {{amount} fera, {band}} other {{amount} feras, {band}}}",
+            "polarTerrors": "{count, plural, one {{amount} Polar Terror} other {{amount} Polar Terrors}}",
+            "total": "Total"
+        }
+    }
+}

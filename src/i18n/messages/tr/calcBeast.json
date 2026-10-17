@@ -1,0 +1,65 @@
+{
+    "levelBand": "Seviye {low} - {high}",
+    "stamina": {
+        "title": "Dayanıklılık",
+        "stamina": "Dayanıklılık",
+        "cans": "Dayanıklılık kutuları",
+        "cansHint": "Her biri {amount} dayanıklılık",
+        "gina": "Gina'nın Endurance Training becerisi",
+        "ginaNone": "Kullanılmıyor",
+        "ginaLevel": "Seviye {level}, %{percent} daha az dayanıklılık",
+        "beastLevel": "Kalan dayanıklılık için canavar seviyesi",
+        "beastLevelHint": "Aynı gruptaki canavarlar State of Power'da aynı puanı verir."
+    },
+    "planned": {
+        "title": "Planlanan avlar",
+        "hint": "Zaten yapacağın avlar, örneğin Intel görevlerinin canavarları. Dayanıklılık önce bunlara harcanır.",
+        "empty": "Planlanan canavar avı yok.",
+        "runLevel": "Canavar seviyesi",
+        "runCount": "Canavar",
+        "add": "Canavar avı ekle",
+        "remove": "{band} canavar avını kaldır",
+        "polarTerrors": "Planlanan Polar Terror"
+    },
+    "result": {
+        "pointsNote": "Puanlar, State of Power'daki Valeria gibi bonuslardan önceki değerdir. Bear Hunt gibi canavar ya da Polar Terror olmayan avlar sayılmaz.",
+        "tiles": {
+            "title": "Dayanıklılık",
+            "percent": "%{percent}",
+            "total": "Toplam dayanıklılık",
+            "ginaReduction": "Gina indirimi",
+            "beastCost": "Bir canavar için dayanıklılık",
+            "polarTerrorCost": "Bir Polar Terror için dayanıklılık",
+            "planned": "Planlanan avlar için dayanıklılık",
+            "left": "Kalan dayanıklılık",
+            "short": "Eksik dayanıklılık",
+            "shortNote": "Planlanan avlar, elindekinden {amount} fazla dayanıklılık istiyor. Kalan dayanıklılık ek ava yetmiyor."
+        },
+        "leftover": {
+            "title": "Planlanan avlardan sonra kalan dayanıklılık",
+            "hint": "Her satır, kalan dayanıklılığın tamamını tek bir av türüne harcar.",
+            "hunt": "Av",
+            "onlyBeasts": "Yalnızca canavar, {band}",
+            "onlyPolarTerrors": "Yalnızca Polar Terror",
+            "count": "Ek av",
+            "staminaLeft": "Kalan dayanıklılık"
+        },
+        "events": {
+            "title": "Etkinlik puanı",
+            "hint": "Planlanan, planlanan avların puanıdır. Son iki sütun, kalan dayanıklılığın karşıladığı avları ekler.",
+            "event": "Etkinlik",
+            "perBeast": "Canavar başına",
+            "perPolarTerror": "Polar Terror başına",
+            "planned": "Planlanan",
+            "withBeasts": "Plan ve canavar",
+            "withPolarTerrors": "Plan ve Polar Terror"
+        },
+        "plannedPoints": {
+            "title": "Planlanan avların puanı",
+            "hunt": "Av",
+            "beasts": "{count, plural, one {{amount} canavar, {band}} other {{amount} canavar, {band}}}",
+            "polarTerrors": "{count, plural, one {{amount} Polar Terror} other {{amount} Polar Terror}}",
+            "total": "Toplam"
+        }
+    }
+}

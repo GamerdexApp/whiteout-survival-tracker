@@ -1,0 +1,46 @@
+{
+    "intro": "Elige el nivel actual de cada pieza de equipo y el que quieres. Los resultados suman los materiales, la puntuación del equipo, el poder ganado y los puntos de evento. Deja un objetivo en Ninguno para omitir esa pieza. No se guarda nada.",
+    "level": {
+        "plain": "{tier} estrella {stars}",
+        "withStage": "{tier} estrella {stars} etapa {stage}",
+        "notCrafted": "Ninguno (sin fabricar)",
+        "skip": "Ninguno (omitir)"
+    },
+    "all": {
+        "heading": "Ajustar todas las piezas",
+        "current": "Nivel actual",
+        "goal": "Nivel objetivo",
+        "apply": "Aplicar a todas",
+        "reset": "Restablecer todo"
+    },
+    "pieces": {
+        "heading": "Piezas de equipo",
+        "troopGroup": "Piezas de {troop}",
+        "current": "Nivel actual",
+        "goal": "Nivel objetivo",
+        "currentLabel": "Nivel actual de {piece}",
+        "goalLabel": "Nivel objetivo de {piece}"
+    },
+    "results": {
+        "heading": "Resultados",
+        "score": "Puntuación del equipo",
+        "power": "Poder ganado",
+        "steps": "Pasos",
+        "materials": "Materiales",
+        "noMaterials": "Elige un nivel objetivo para una pieza y verás los materiales.",
+        "events": "Puntos de evento",
+        "eventsNote": "Los puntos de evento son la puntuación del equipo por los puntos que paga la fila \"Raise Chief Gear max score\" en cada evento."
+    },
+    "byPiece": {
+        "heading": "Por pieza",
+        "piece": "Pieza",
+        "levels": "Niveles",
+        "levelRange": "{from} a {to}",
+        "steps": "Pasos",
+        "score": "Puntuación",
+        "power": "Poder",
+        "stats": "Bonificación de estadística",
+        "statRange": "{from}% a {to}%",
+        "noLevel": "Sin fabricar"
+    }
+}

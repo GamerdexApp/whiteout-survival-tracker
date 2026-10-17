@@ -1,0 +1,70 @@
+{
+    "intro": "Planifiez un héros à la fois. Les étoiles utilisent le libellé du jeu : 3.1 est l'étoile 3 et le palier 1, et 5.0 est le dernier libellé. Rien n'est enregistré, et recharger la page efface vos choix.",
+    "hero": {
+        "label": "Héros",
+        "option": "{name} (Gén. {generation})",
+        "generation": "Gén. {generation}",
+        "reset": "Réinitialiser le héros"
+    },
+    "range": {
+        "current": "Actuel",
+        "goal": "Objectif"
+    },
+    "stars": {
+        "title": "Étoiles",
+        "row": "Étoile et palier"
+    },
+    "skills": {
+        "title": "Compétences",
+        "exploration": "Exploration",
+        "expedition": "Expédition"
+    },
+    "weapon": {
+        "title": "Arme exclusive",
+        "row": "Niveau de l'arme",
+        "none": "{hero} n'a pas d'arme exclusive."
+    },
+    "result": {
+        "title": "Nécessaire",
+        "unmetTitle": "Demande plus d'étoiles.",
+        "unmet": "{items}. Si le héros a déjà ces étoiles, réglez l'objectif d'étoiles sur celles-ci.",
+        "unmetItem": "{skill} niveau {level} nécessite l'étoile {star}",
+        "tiles": {
+            "starSteps": "Paliers d'étoile",
+            "shards": "Fragments",
+            "skillLevels": "Niveaux de compétence",
+            "weaponLevels": "Niveaux d'arme",
+            "widgets": "Widgets",
+            "powerGain": "Gain de puissance"
+        },
+        "resources": {
+            "title": "Ressources",
+            "item": "Objet",
+            "amount": "Quantité",
+            "widgets": "Widgets",
+            "empty": "Rien de sélectionné pour l'instant. Placez un objectif au-dessus du niveau actuel.",
+            "ownShards": "{own} comptent comme {general}."
+        },
+        "unlocked": {
+            "title": "Débloque des compétences d'arme"
+        },
+        "stats": {
+            "title": "Stats au niveau 80",
+            "stat": "Stat",
+            "estimate": "Estimation",
+            "estimateNote": "Les stats sous 5 étoiles sont des estimations calculées à partir des stats à 5 étoiles.",
+            "exploration": "Exploration",
+            "expedition": "Expédition",
+            "attack": "Attaque",
+            "defense": "Défense",
+            "health": "Santé",
+            "percent": "{value} %"
+        },
+        "events": {
+            "title": "Points d'événement",
+            "event": "Événement",
+            "points": "Points"
+        },
+        "powerNote": "La puissance compte les niveaux d'étoile, de compétence et d'arme. Un libellé d'étoile sans donnée de puissance rend le gain Inconnu."
+    }
+}

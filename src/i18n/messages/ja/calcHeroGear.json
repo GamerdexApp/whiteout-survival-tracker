@@ -1,0 +1,77 @@
+{
+    "piece": {
+        "title": "装備",
+        "quality": "品質",
+        "slot": "装備",
+        "troopType": "部隊タイプ",
+        "name": "{troop}{slot}",
+        "mythicOnly": "鍛造とエンパワーができるのはミシック装備だけです。この品質ではマスタリー鍛造とエンパワーはオフです。"
+    },
+    "tracks": {
+        "enhancement": "強化",
+        "masteryForging": "マスタリー鍛造",
+        "empowerment": "エンパワー",
+        "current": "現在",
+        "goal": "目標",
+        "range": "レベル{from}から{to}",
+        "none": "なし",
+        "forgingRow": "{name}（+{percent}%）",
+        "needsMythic": "ミシック装備が必要",
+        "reset": "レベルをリセット"
+    },
+    "unmet": {
+        "title": "まだ到達できません。",
+        "enhancement": "{track}には、先に強化レベル{level}が必要です。",
+        "masteryForging": "{track}には、先にマスタリー鍛造{row}が必要です。",
+        "quality": "{track}にはミシック装備が必要です。",
+        "hint": "すでに到達している場合は、現在のレベルを合わせてください。"
+    },
+    "noForging": "エンパワーにはマスタリー鍛造{row}が必要です。マスタリー鍛造がなしのため、戦力とステータスに鍛造は含まれません。",
+    "summary": {
+        "title": "結果",
+        "powerGained": "獲得戦力",
+        "currentPower": "現在の戦力",
+        "goalPower": "プラン後の戦力",
+        "forgingStatsUp": "マスタリー鍛造のステータス上昇",
+        "percent": "+{value}%"
+    },
+    "resources": {
+        "title": "必要な資源",
+        "item": "アイテム",
+        "amount": "数量",
+        "empty": "強化するものがありません。目標を現在のレベルより高くしてください。"
+    },
+    "stats": {
+        "title": "装備のステータス",
+        "tableLabel": "装備のステータス、現在とプラン後",
+        "stat": "ステータス",
+        "current": "現在",
+        "goal": "プラン後",
+        "gain": "上昇",
+        "power": "戦力",
+        "health": "体力",
+        "percentStat": "{name}（%）",
+        "percentValue": "{value}%",
+        "note": "ステータスにはマスタリー鍛造が含まれ、小数点以下は切り捨てです。"
+    },
+    "milestones": {
+        "title": "解放されるMithrilマイルストーン",
+        "line": "エンパワー{level}: {event}、{stat}",
+        "empty": "このプランで解放されるMithrilマイルストーンはありません。"
+    },
+    "tracksTable": {
+        "title": "項目ごと",
+        "label": "各項目の段階、上昇、資源",
+        "track": "項目",
+        "steps": "段階",
+        "gain": "上昇",
+        "powerGain": "鍛造前の戦力{value}",
+        "statsUp": "ステータス+{value}%",
+        "resources": "資源",
+        "none": "なし"
+    },
+    "events": {
+        "title": "イベントポイント",
+        "note": "プランのEssence StonesとMithrilによるポイントです。"
+    }
+}

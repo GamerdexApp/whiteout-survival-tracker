@@ -1,6 +1,16 @@
 import alliance from "./en/alliance.json";
 import bonuses from "./en/bonuses.json";
 import buildings from "./en/buildings.json";
+import calcBeast from "./en/calcBeast.json";
+import calcBuilding from "./en/calcBuilding.json";
+import calcChiefCharm from "./en/calcChiefCharm.json";
+import calcChiefGear from "./en/calcChiefGear.json";
+import calcExpert from "./en/calcExpert.json";
+import calcHeroGear from "./en/calcHeroGear.json";
+import calcHeroUpgrade from "./en/calcHeroUpgrade.json";
+import calcPet from "./en/calcPet.json";
+import calcResearch from "./en/calcResearch.json";
+import calcTroop from "./en/calcTroop.json";
 import chiefGear from "./en/chiefGear.json";
 import chiefs from "./en/chiefs.json";
 import common from "./en/common.json";
@@ -35,6 +45,7 @@ import wiki from "./en/wiki.json";
 import wikiAllianceStructures from "./en/wikiAllianceStructures.json";
 import wikiAllianceTech from "./en/wikiAllianceTech.json";
 import wikiBuildings from "./en/wikiBuildings.json";
+import wikiCalculator from "./en/wikiCalculator.json";
 import wikiChiefCharms from "./en/wikiChiefCharms.json";
 import wikiChiefGear from "./en/wikiChiefGear.json";
 import wikiDailies from "./en/wikiDailies.json";
@@ -92,6 +103,17 @@ const en = {
   vip,
   unlocks,
   wiki,
+  calcBeast,
+  calcBuilding,
+  calcChiefCharm,
+  calcChiefGear,
+  calcExpert,
+  calcHeroGear,
+  calcHeroUpgrade,
+  calcPet,
+  calcResearch,
+  calcTroop,
+  wikiCalculator,
   gameLabels,
   wikiBuildings,
   wikiFireCrystal,

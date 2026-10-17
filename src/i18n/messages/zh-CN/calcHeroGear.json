@@ -1,0 +1,77 @@
+{
+    "piece": {
+        "title": "英雄装备",
+        "quality": "品质",
+        "slot": "装备",
+        "troopType": "兵种",
+        "name": "{troop}{slot}",
+        "mythicOnly": "只有神话装备可以锻造和赋能。此品质下精通锻造和赋能不可用。"
+    },
+    "tracks": {
+        "enhancement": "强化",
+        "masteryForging": "精通锻造",
+        "empowerment": "赋能",
+        "current": "当前",
+        "goal": "目标",
+        "range": "{from}到{to}级",
+        "none": "无",
+        "forgingRow": "{name}（+{percent}%）",
+        "needsMythic": "需要神话装备",
+        "reset": "重置等级"
+    },
+    "unmet": {
+        "title": "暂时无法达成。",
+        "enhancement": "{track}需要先达到强化 {level} 级。",
+        "masteryForging": "{track}需要先达到精通锻造 {row}。",
+        "quality": "{track}需要神话装备。",
+        "hint": "如果这件装备已经达到，请把当前等级设为相同。"
+    },
+    "noForging": "赋能需要精通锻造达到 {row}。精通锻造为“无”，因此战力和属性不计锻造。",
+    "summary": {
+        "title": "结果",
+        "powerGained": "获得战力",
+        "currentPower": "当前战力",
+        "goalPower": "计划完成后的战力",
+        "forgingStatsUp": "精通锻造属性提升",
+        "percent": "+{value}%"
+    },
+    "resources": {
+        "title": "所需资源",
+        "item": "道具",
+        "amount": "数量",
+        "empty": "没有可升级的内容。请把目标调到高于当前等级。"
+    },
+    "stats": {
+        "title": "装备属性",
+        "tableLabel": "装备属性，当前与计划完成后",
+        "stat": "属性",
+        "current": "当前",
+        "goal": "计划后",
+        "gain": "提升",
+        "power": "战力",
+        "health": "生命",
+        "percentStat": "{name}（%）",
+        "percentValue": "{value}%",
+        "note": "属性包含精通锻造，并向下取整。"
+    },
+    "milestones": {
+        "title": "解锁的 Mithril 里程碑",
+        "line": "赋能 {level}：{event}，{stat}",
+        "empty": "该计划不会解锁任何 Mithril 里程碑。"
+    },
+    "tracksTable": {
+        "title": "按类别",
+        "label": "各类别的步数、提升和资源",
+        "track": "类别",
+        "steps": "步数",
+        "gain": "提升",
+        "powerGain": "锻造前战力 {value}",
+        "statsUp": "属性 +{value}%",
+        "resources": "资源",
+        "none": "无"
+    },
+    "events": {
+        "title": "活动积分",
+        "note": "计划所需 Essence Stones 和 Mithril 的积分。"
+    }
+}

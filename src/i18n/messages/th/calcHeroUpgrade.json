@@ -1,0 +1,70 @@
+{
+    "intro": "วางแผนทีละฮีโร่ ดาวใช้ป้ายในเกม โดย 3.1 คือดาว 3 ระดับ 1 และ 5.0 คือป้ายสุดท้าย ไม่มีอะไรถูกบันทึก และการโหลดหน้าใหม่จะล้างตัวเลือกของคุณ",
+    "hero": {
+        "label": "ฮีโร่",
+        "option": "{name} (รุ่น {generation})",
+        "generation": "รุ่น {generation}",
+        "reset": "รีเซ็ตฮีโร่"
+    },
+    "range": {
+        "current": "ปัจจุบัน",
+        "goal": "เป้าหมาย"
+    },
+    "stars": {
+        "title": "ดาว",
+        "row": "ดาวและระดับ"
+    },
+    "skills": {
+        "title": "ทักษะ",
+        "exploration": "Exploration",
+        "expedition": "Expedition"
+    },
+    "weapon": {
+        "title": "อาวุธเฉพาะ",
+        "row": "เลเวลอาวุธ",
+        "none": "{hero} ไม่มีอาวุธเฉพาะ"
+    },
+    "result": {
+        "title": "ที่ต้องใช้",
+        "unmetTitle": "ต้องมีดาวเพิ่ม",
+        "unmet": "{items} ถ้าฮีโร่มีดาวเหล่านี้แล้ว ให้ตั้งเป้าหมายดาวให้ตรง",
+        "unmetItem": "{skill} เลเวล {level} ต้องมีดาว {star}",
+        "tiles": {
+            "starSteps": "ขั้นของดาว",
+            "shards": "เศษ",
+            "skillLevels": "เลเวลทักษะ",
+            "weaponLevels": "เลเวลอาวุธ",
+            "widgets": "Widgets",
+            "powerGain": "พลังที่เพิ่ม"
+        },
+        "resources": {
+            "title": "ทรัพยากร",
+            "item": "ไอเทม",
+            "amount": "จำนวน",
+            "widgets": "Widgets",
+            "empty": "ยังไม่ได้เลือกอะไร ตั้งเป้าหมายให้สูงกว่าเลเวลปัจจุบัน",
+            "ownShards": "{own} นับเท่ากับ {general}"
+        },
+        "unlocked": {
+            "title": "ปลดล็อกทักษะอาวุธ"
+        },
+        "stats": {
+            "title": "ค่าสถานะที่เลเวล 80",
+            "stat": "ค่าสถานะ",
+            "estimate": "ค่าประมาณ",
+            "estimateNote": "ค่าสถานะต่ำกว่า 5 ดาวเป็นค่าประมาณจากค่าสถานะ 5 ดาว",
+            "exploration": "Exploration",
+            "expedition": "Expedition",
+            "attack": "Attack",
+            "defense": "Defense",
+            "health": "Health",
+            "percent": "{value}%"
+        },
+        "events": {
+            "title": "คะแนนกิจกรรม",
+            "event": "กิจกรรม",
+            "points": "คะแนน"
+        },
+        "powerNote": "พลังนับเลเวลดาว ทักษะ และอาวุธ ป้ายดาวที่ไม่มีข้อมูลพลังจะทำให้พลังที่เพิ่มเป็นไม่ทราบ"
+    }
+}

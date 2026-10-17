@@ -1,0 +1,50 @@
+{
+    "setAll": {
+        "title": "Tüm tılsımları ayarla",
+        "hint": "Her ekipman parçasında 3 tılsım var. Burada bir başlangıç ve hedef seviye seçip 18 tılsımın hepsine uygula, sonra aşağıdan tek tek değiştir.",
+        "fromLabel": "Başlangıç",
+        "toLabel": "Hedef",
+        "apply": "Tümüne uygula",
+        "reset": "Tümünü sıfırla"
+    },
+    "fields": {
+        "notStarted": "Yok (başlamadı)",
+        "skip": "Yok (atla)"
+    },
+    "result": {
+        "title": "Sonuç",
+        "score": "Tılsım skoru",
+        "power": "Kazanılan güç",
+        "steps": "Alınan seviyeler",
+        "charms": "Yükseltilen tılsımlar",
+        "materials": "Malzemeler",
+        "noMaterials": "Malzemeleri görmek için bir tılsım için hedef seviye seç.",
+        "eventPoints": "Etkinlik puanı",
+        "eventPointsNote": "Etkinlik puanı, tılsım skoru ile her etkinlikte \"Raise Chief Charm max score\" satırının verdiği puanın çarpımıdır."
+    },
+    "charms": {
+        "title": "Şef Tılsımları",
+        "hint": "Her tılsımın şu anki seviyesini ve istediğin seviyeyi seç. Yok (atla) olarak bırakılan tılsım sayılmaz.",
+        "charmLabel": "Tılsım {number}",
+        "charmName": "{piece} tılsım {number}",
+        "fromLabel": "Başlangıç",
+        "toLabel": "Hedef",
+        "fromName": "Başlangıç ({charm})",
+        "toName": "Hedef ({charm})"
+    },
+    "breakdown": {
+        "title": "Tılsıma göre",
+        "empty": "Henüz hedefi başlangıç seviyesinin üstünde olan tılsım yok.",
+        "charm": "Tılsım",
+        "charmName": "{piece} tılsım {number}",
+        "levels": "Seviyeler",
+        "levelRange": "{from} - {to}",
+        "stat": "Özellik bonusu",
+        "percent": "%{value}",
+        "steps": "Alınan seviyeler",
+        "score": "Skor",
+        "power": "Güç",
+        "materials": "Malzemeler",
+        "none": "Yok"
+    }
+}

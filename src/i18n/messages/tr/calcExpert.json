@@ -1,0 +1,67 @@
+{
+    "intro": "Her uzmanın şu anki yakınlık seviyesini ve beceri seviyelerini, bir de istediklerini seç. Hesaplayıcı Books of Knowledge, uzman sigilleri, beceri EXP ve yakınlık puanını toplar. Bir uzman her onuncu seviyede aşama atlar ve onu geçmek için sigil gerekir. Uzman mevcut seviyede zaten aşama atladıysa ya da hedef seviyedeki aşama atlamanın bedelini de saymak istiyorsan Gelişmiş'i aç. Yetenek, ilişkiyle birlikte yükselir ve hiçbir şeye mal olmaz.",
+    "goals": {
+        "title": "Uzmanlar",
+        "empty": "Books of Knowledge, sigil ve etkinlik puanını görmek için bir uzman ekle."
+    },
+    "add": {
+        "label": "Eklenecek uzman",
+        "button": "Ekle",
+        "allAdded": "Tüm uzmanlar hesaplayıcıda."
+    },
+    "expert": {
+        "meta": "{title}, {specialty}",
+        "remove": "Kaldır",
+        "removeLabel": "Kaldır: {expert}",
+        "affinity": "Yakınlık seviyesi",
+        "current": "Mevcut",
+        "goal": "Hedef",
+        "advancedAtCurrent": "Seviye {level} için aşama atladı",
+        "advanceAtGoal": "Seviye {level} için aşama atla",
+        "skillMax": "Maks. {level}"
+    },
+    "results": {
+        "title": "Sonuçlar",
+        "stats": {
+            "books": "Books of Knowledge",
+            "sigils": "Uzman sigilleri",
+            "exp": "Beceri EXP",
+            "learningTime": "Öğrenme süresi",
+            "affinity": "Yakınlık puanı",
+            "levels": "Yakınlık seviyeleri",
+            "skillLevels": "Beceri seviyeleri",
+            "advancements": "Aşama atlamalar"
+        }
+    },
+    "resources": {
+        "title": "Kaynaklar",
+        "nothing": "Bu hedefler Books of Knowledge ya da sigil gerektirmiyor.",
+        "commonSigils": "Common Expert Sigils, herhangi bir uzmanın sigiline dönüşür."
+    },
+    "events": {
+        "title": "Etkinlik puanı",
+        "heads": {
+            "event": "Etkinlik",
+            "items": "Kitap ve sigil",
+            "perMinute": "Hızlandırma dakikası başına",
+            "speedups": "Hızlandırmalar",
+            "total": "Toplam"
+        },
+        "hint": "Hızlandırma puanı, {duration} olan öğrenme süresinin tamamı için Learning ya da General hızlandırmaları kullanmayı varsayar."
+    },
+    "byExpert": {
+        "title": "Uzmana göre",
+        "nothing": "Henüz hedefi mevcut seviyesinin üstünde olan uzman yok.",
+        "heads": {
+            "expert": "Uzman",
+            "levels": "Yakınlık seviyeleri",
+            "advancements": "Aşama atlamalar",
+            "skillLevels": "Beceri seviyeleri",
+            "books": "Kitap",
+            "sigils": "Sigil",
+            "exp": "Beceri EXP",
+            "learningTime": "Öğrenme süresi",
+            "affinity": "Yakınlık puanı"
+        }
+    }
+}

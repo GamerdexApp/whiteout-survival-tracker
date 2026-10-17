@@ -1,0 +1,70 @@
+{
+    "intro": "Planifica un héroe cada vez. Las estrellas usan la etiqueta del juego: 3.1 es estrella 3 y tier 1, y 5.0 es la última etiqueta. No se guarda nada y al recargar la página se borran tus elecciones.",
+    "hero": {
+        "label": "Héroe",
+        "option": "{name} (Gen {generation})",
+        "generation": "Gen {generation}",
+        "reset": "Restablecer héroe"
+    },
+    "range": {
+        "current": "Actual",
+        "goal": "Objetivo"
+    },
+    "stars": {
+        "title": "Estrellas",
+        "row": "Estrella y tier"
+    },
+    "skills": {
+        "title": "Habilidades",
+        "exploration": "Exploración",
+        "expedition": "Expedición"
+    },
+    "weapon": {
+        "title": "Arma exclusiva",
+        "row": "Nivel del arma",
+        "none": "{hero} no tiene arma exclusiva."
+    },
+    "result": {
+        "title": "Necesario",
+        "unmetTitle": "Hacen falta más estrellas.",
+        "unmet": "{items}. Si el héroe ya tiene esas estrellas, pon el objetivo de estrellas igual.",
+        "unmetItem": "{skill} nivel {level} requiere la estrella {star}",
+        "tiles": {
+            "starSteps": "Pasos de estrella",
+            "shards": "Fragmentos",
+            "skillLevels": "Niveles de habilidad",
+            "weaponLevels": "Niveles de arma",
+            "widgets": "Widgets",
+            "powerGain": "Poder ganado"
+        },
+        "resources": {
+            "title": "Recursos",
+            "item": "Objeto",
+            "amount": "Cantidad",
+            "widgets": "Widgets",
+            "empty": "Aún no hay nada elegido. Pon un objetivo por encima del nivel actual.",
+            "ownShards": "{own} cuentan igual que {general}."
+        },
+        "unlocked": {
+            "title": "Desbloquea habilidades de arma"
+        },
+        "stats": {
+            "title": "Estadísticas al nivel 80",
+            "stat": "Estadística",
+            "estimate": "Estimación",
+            "estimateNote": "Las estadísticas por debajo de 5 estrellas son estimaciones escaladas a partir de las de 5 estrellas.",
+            "exploration": "Exploración",
+            "expedition": "Expedición",
+            "attack": "Ataque",
+            "defense": "Defensa",
+            "health": "Salud",
+            "percent": "{value}%"
+        },
+        "events": {
+            "title": "Puntos de evento",
+            "event": "Evento",
+            "points": "Puntos"
+        },
+        "powerNote": "El poder cuenta los niveles de estrella, habilidad y arma. Una etiqueta de estrella sin datos de poder deja la mejora como Desconocida."
+    }
+}

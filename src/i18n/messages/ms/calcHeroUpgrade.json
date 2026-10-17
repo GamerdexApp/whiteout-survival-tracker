@@ -1,0 +1,70 @@
+{
+    "intro": "Rancang satu hero pada satu masa. Bintang menggunakan label dalam permainan, jadi 3.1 ialah bintang 3 peringkat 1, dan 5.0 ialah label terakhir. Tiada apa disimpan, dan memuat semula halaman memadam pilihan anda.",
+    "hero": {
+        "label": "Hero",
+        "option": "{name} (Gen {generation})",
+        "generation": "Gen {generation}",
+        "reset": "Tetap semula hero"
+    },
+    "range": {
+        "current": "Semasa",
+        "goal": "Matlamat"
+    },
+    "stars": {
+        "title": "Bintang",
+        "row": "Bintang dan peringkat"
+    },
+    "skills": {
+        "title": "Kemahiran",
+        "exploration": "Exploration",
+        "expedition": "Expedition"
+    },
+    "weapon": {
+        "title": "Senjata eksklusif",
+        "row": "Tahap senjata",
+        "none": "{hero} tiada senjata eksklusif."
+    },
+    "result": {
+        "title": "Diperlukan",
+        "unmetTitle": "Perlu lebih banyak bintang.",
+        "unmet": "{items}. Jika hero sudah mempunyai bintang ini, tetapkan matlamat bintang kepadanya.",
+        "unmetItem": "{skill} tahap {level} perlu bintang {star}",
+        "tiles": {
+            "starSteps": "Langkah bintang",
+            "shards": "Serpihan",
+            "skillLevels": "Tahap kemahiran",
+            "weaponLevels": "Tahap senjata",
+            "widgets": "Widget",
+            "powerGain": "Perolehan kuasa"
+        },
+        "resources": {
+            "title": "Sumber",
+            "item": "Item",
+            "amount": "Jumlah",
+            "widgets": "Widget",
+            "empty": "Belum ada yang dipilih. Tetapkan matlamat melebihi tahap semasa.",
+            "ownShards": "{own} dikira sama seperti {general}."
+        },
+        "unlocked": {
+            "title": "Membuka kemahiran senjata"
+        },
+        "stats": {
+            "title": "Statistik pada tahap 80",
+            "stat": "Statistik",
+            "estimate": "Anggaran",
+            "estimateNote": "Statistik di bawah 5 bintang ialah anggaran yang diskalakan daripada statistik 5 bintang.",
+            "exploration": "Exploration",
+            "expedition": "Expedition",
+            "attack": "Serangan",
+            "defense": "Pertahanan",
+            "health": "Health",
+            "percent": "{value}%"
+        },
+        "events": {
+            "title": "Mata acara",
+            "event": "Acara",
+            "points": "Mata"
+        },
+        "powerNote": "Kuasa mengira tahap bintang, kemahiran dan senjata. Label bintang tanpa data kuasa menjadikan perolehan Tidak diketahui."
+    }
+}

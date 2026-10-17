@@ -1,0 +1,46 @@
+{
+    "intro": "Escolha o nível em que cada peça está agora e o nível que você quer. Os resultados somam os materiais, a pontuação do equipamento, o poder ganho e os pontos de evento. Deixe uma meta em Nenhum para pular a peça. Nada é salvo.",
+    "level": {
+        "plain": "{tier} Estrela {stars}",
+        "withStage": "{tier} Estrela {stars} Etapa {stage}",
+        "notCrafted": "Nenhum (não criado)",
+        "skip": "Nenhum (pular)"
+    },
+    "all": {
+        "heading": "Definir todas as peças",
+        "current": "Nível atual",
+        "goal": "Nível da meta",
+        "apply": "Aplicar a todas",
+        "reset": "Redefinir tudo"
+    },
+    "pieces": {
+        "heading": "Peças de equipamento",
+        "troopGroup": "Peças de {troop}",
+        "current": "Nível atual",
+        "goal": "Nível da meta",
+        "currentLabel": "Nível atual de {piece}",
+        "goalLabel": "Nível da meta de {piece}"
+    },
+    "results": {
+        "heading": "Resultados",
+        "score": "Pontuação do equipamento",
+        "power": "Poder ganho",
+        "steps": "Passos",
+        "materials": "Materiais",
+        "noMaterials": "Escolha um nível de meta para uma peça para ver os materiais.",
+        "events": "Pontos de evento",
+        "eventsNote": "Os pontos de evento são a pontuação do equipamento vezes os pontos que a linha \"Raise Chief Gear max score\" rende em cada evento."
+    },
+    "byPiece": {
+        "heading": "Por peça",
+        "piece": "Peça",
+        "levels": "Níveis",
+        "levelRange": "{from} a {to}",
+        "steps": "Passos",
+        "score": "Pontuação",
+        "power": "Poder",
+        "stats": "Bônus de atributo",
+        "statRange": "{from}% a {to}%",
+        "noLevel": "Não criado"
+    }
+}

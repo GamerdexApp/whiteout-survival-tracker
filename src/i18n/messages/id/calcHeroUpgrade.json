@@ -1,0 +1,70 @@
+{
+    "intro": "Rencanakan satu pahlawan sekali waktu. Bintang memakai label di game, jadi 3.1 adalah bintang 3 tier 1, dan 5.0 adalah label terakhir. Tidak ada yang disimpan, dan memuat ulang halaman menghapus pilihanmu.",
+    "hero": {
+        "label": "Pahlawan",
+        "option": "{name} (Gen {generation})",
+        "generation": "Gen {generation}",
+        "reset": "Atur ulang pahlawan"
+    },
+    "range": {
+        "current": "Saat ini",
+        "goal": "Target"
+    },
+    "stars": {
+        "title": "Bintang",
+        "row": "Bintang dan tier"
+    },
+    "skills": {
+        "title": "Skill",
+        "exploration": "Eksplorasi",
+        "expedition": "Ekspedisi"
+    },
+    "weapon": {
+        "title": "Senjata eksklusif",
+        "row": "Level senjata",
+        "none": "{hero} tidak punya senjata eksklusif."
+    },
+    "result": {
+        "title": "Dibutuhkan",
+        "unmetTitle": "Butuh lebih banyak bintang.",
+        "unmet": "{items}. Jika pahlawan sudah punya bintang ini, atur target bintang sesuai itu.",
+        "unmetItem": "{skill} level {level} butuh bintang {star}",
+        "tiles": {
+            "starSteps": "Langkah bintang",
+            "shards": "Pecahan",
+            "skillLevels": "Level skill",
+            "weaponLevels": "Level senjata",
+            "widgets": "Widget",
+            "powerGain": "Tambahan kekuatan"
+        },
+        "resources": {
+            "title": "Sumber daya",
+            "item": "Item",
+            "amount": "Jumlah",
+            "widgets": "Widget",
+            "empty": "Belum ada yang dipilih. Atur target di atas level saat ini.",
+            "ownShards": "{own} dihitung sama dengan {general}."
+        },
+        "unlocked": {
+            "title": "Membuka skill senjata"
+        },
+        "stats": {
+            "title": "Statistik di level 80",
+            "stat": "Statistik",
+            "estimate": "Perkiraan",
+            "estimateNote": "Statistik di bawah 5 bintang adalah perkiraan yang diskalakan dari statistik 5 bintang.",
+            "exploration": "Eksplorasi",
+            "expedition": "Ekspedisi",
+            "attack": "Serangan",
+            "defense": "Pertahanan",
+            "health": "Darah",
+            "percent": "{value}%"
+        },
+        "events": {
+            "title": "Poin event",
+            "event": "Event",
+            "points": "Poin"
+        },
+        "powerNote": "Kekuatan menghitung level bintang, skill, dan senjata. Label bintang tanpa data kekuatan membuat tambahan kekuatan Tidak diketahui."
+    }
+}

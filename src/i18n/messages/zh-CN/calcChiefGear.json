@@ -1,0 +1,46 @@
+{
+    "intro": "选择每件装备当前的等级和你想要的等级。结果会汇总材料、装备分数、获得战力和活动积分。把目标保持为“无”即可跳过该装备。这里不会保存任何内容。",
+    "level": {
+        "plain": "{tier} {stars}星",
+        "withStage": "{tier} {stars}星 第{stage}阶",
+        "notCrafted": "无（未制作）",
+        "skip": "无（跳过）"
+    },
+    "all": {
+        "heading": "统一设置所有装备",
+        "current": "当前等级",
+        "goal": "目标等级",
+        "apply": "应用到全部",
+        "reset": "全部重置"
+    },
+    "pieces": {
+        "heading": "装备",
+        "troopGroup": "{troop}装备",
+        "current": "当前等级",
+        "goal": "目标等级",
+        "currentLabel": "{piece}当前等级",
+        "goalLabel": "{piece}目标等级"
+    },
+    "results": {
+        "heading": "结果",
+        "score": "装备分数",
+        "power": "获得战力",
+        "steps": "步数",
+        "materials": "材料",
+        "noMaterials": "为装备选择目标等级后即可查看材料。",
+        "events": "活动积分",
+        "eventsNote": "活动积分等于装备分数乘以各活动中“Raise Chief Gear max score”一行给出的积分。"
+    },
+    "byPiece": {
+        "heading": "按装备",
+        "piece": "装备",
+        "levels": "等级",
+        "levelRange": "{from}到{to}",
+        "steps": "步数",
+        "score": "分数",
+        "power": "战力",
+        "stats": "属性加成",
+        "statRange": "{from}%到{to}%",
+        "noLevel": "未制作"
+    }
+}

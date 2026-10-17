@@ -1,0 +1,65 @@
+{
+    "levelBand": "Tahap {low} ke {high}",
+    "stamina": {
+        "title": "Stamina",
+        "stamina": "Stamina",
+        "cans": "Tin stamina",
+        "cansHint": "{amount} stamina setiap satu",
+        "gina": "Endurance Training milik Gina",
+        "ginaNone": "Tidak digunakan",
+        "ginaLevel": "Tahap {level}, stamina {percent}% lebih jimat",
+        "beastLevel": "Tahap raksasa untuk stamina berbaki",
+        "beastLevelHint": "Raksasa dalam satu kumpulan mendapat mata yang sama dalam State of Power."
+    },
+    "planned": {
+        "title": "Pemburuan dirancang",
+        "hint": "Pemburuan yang anda buat juga, seperti raksasa misi Intel. Stamina digunakan untuk ini dahulu.",
+        "empty": "Tiada pemburuan raksasa dirancang.",
+        "runLevel": "Tahap raksasa",
+        "runCount": "Raksasa",
+        "add": "Tambah pemburuan raksasa",
+        "remove": "Buang pemburuan raksasa {band}",
+        "polarTerrors": "Polar Terror dirancang"
+    },
+    "result": {
+        "pointsNote": "Mata dikira sebelum sebarang bonus, seperti Valeria dalam State of Power. Pemburuan selain raksasa dan Polar Terror, seperti Bear Hunt, tidak dikira.",
+        "tiles": {
+            "title": "Stamina",
+            "percent": "{percent}%",
+            "total": "Jumlah stamina",
+            "ginaReduction": "Pengurangan Gina",
+            "beastCost": "Stamina setiap raksasa",
+            "polarTerrorCost": "Stamina setiap Polar Terror",
+            "planned": "Stamina untuk pemburuan dirancang",
+            "left": "Stamina berbaki",
+            "short": "Stamina kurang",
+            "shortNote": "Pemburuan dirancang memerlukan {amount} stamina lebih daripada yang anda ada. Stamina berbaki tidak cukup untuk pemburuan tambahan."
+        },
+        "leftover": {
+            "title": "Stamina berbaki selepas pemburuan dirancang",
+            "hint": "Setiap baris menggunakan semua stamina berbaki untuk satu jenis pemburuan.",
+            "hunt": "Pemburuan",
+            "onlyBeasts": "Raksasa sahaja, {band}",
+            "onlyPolarTerrors": "Polar Terror sahaja",
+            "count": "Pemburuan tambahan",
+            "staminaLeft": "Stamina berbaki"
+        },
+        "events": {
+            "title": "Mata acara",
+            "hint": "Dirancang ialah mata pemburuan dirancang. Dua lajur terakhir menambah pemburuan yang dibiayai stamina berbaki.",
+            "event": "Acara",
+            "perBeast": "Setiap raksasa",
+            "perPolarTerror": "Setiap Polar Terror",
+            "planned": "Dirancang",
+            "withBeasts": "Pelan dan raksasa",
+            "withPolarTerrors": "Pelan dan Polar Terror"
+        },
+        "plannedPoints": {
+            "title": "Mata pemburuan dirancang",
+            "hunt": "Pemburuan",
+            "beasts": "{count, plural, other {{amount} raksasa, {band}}}",
+            "polarTerrors": "{count, plural, other {{amount} Polar Terror}}",
+            "total": "Jumlah"
+        }
+    }
+}

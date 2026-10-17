@@ -1,0 +1,46 @@
+{
+    "line": "游戏数据的自由输入计算器。这里不会读取你的领主，也不会保存任何内容。",
+    "recordLine": "请自己输入数字。这里不会读取你的领主，也不会保存任何内容。",
+    "calculators": {
+        "beast": {
+            "title": "野兽计算器",
+            "description": "算出一份体力预算够打多少野兽和 Polar Terror，以及它们的活动积分。"
+        },
+        "building": {
+            "title": "建筑计算器",
+            "description": "升级建筑所需的资源、建造时间、战力和活动积分。"
+        },
+        "chiefCharm": {
+            "title": "领主饰品计算器",
+            "description": "升级领主饰品所需的材料、饰品分数、战力和活动积分。"
+        },
+        "chiefGear": {
+            "title": "领主装备计算器",
+            "description": "升级领主装备所需的材料、装备分数、战力和活动积分。"
+        },
+        "expert": {
+            "title": "专家计算器",
+            "description": "提升专家及其技能所需的 Books of Knowledge 和专家徽章。"
+        },
+        "heroGear": {
+            "title": "英雄装备计算器",
+            "description": "升级一件英雄装备所需的资源、战力、属性和活动积分。"
+        },
+        "heroUpgrade": {
+            "title": "英雄升级计算器",
+            "description": "升级一名英雄所需的碎片、技能书和 Widgets。"
+        },
+        "pet": {
+            "title": "宠物计算器",
+            "description": "升级宠物所需的宠物粮、进阶道具和属性提升。"
+        },
+        "research": {
+            "title": "研究计算器",
+            "description": "把研究项目升到目标等级所需的资源、时间和战力。"
+        },
+        "troop": {
+            "title": "部队计算器",
+            "description": "各兵营训练或晋升的部队，以及所需资源和时间。"
+        }
+    }
+}

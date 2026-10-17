@@ -1,0 +1,61 @@
+{
+    "intro": "新增你想升級的寵物。為每隻寵物選擇目前等級和你想要的等級。寵物在每個 10 的倍數等級進階，超過該等級需要先進階。",
+    "picker": {
+        "petLabel": "寵物",
+        "add": "新增寵物",
+        "addAll": "新增所有寵物",
+        "allAdded": "所有寵物都已在清單中。",
+        "setAllMax": "把所有目標設為滿級",
+        "advanceAtMax": "滿級時也進階",
+        "removeAll": "全部移除"
+    },
+    "row": {
+        "maxLevel": "最高 {max} 級",
+        "current": "目前等級",
+        "goal": "目標等級",
+        "currentAdvanced": "已進階",
+        "goalAdvanced": "在目標等級進階",
+        "keepsAdvancement": "寵物在此等級保持進階。",
+        "remove": "移除{pet}"
+    },
+    "empty": "還沒有新增寵物。在上方新增寵物，即可查看寵物飼料、進階道具和提升。",
+    "results": {
+        "title": "結果",
+        "stats": {
+            "levels": "等級",
+            "advancements": "進階",
+            "troopAttack": "獲得部隊攻擊",
+            "troopDefense": "獲得部隊防禦",
+            "power": "獲得戰力",
+            "advancementScore": "進階分數"
+        },
+        "percent": "{value}%",
+        "unknown": "未知",
+        "unknownPowerNote": "遊戲資料中缺少部分進階等級的進階戰力，因此這些寵物的戰力提升顯示為未知。",
+        "resources": {
+            "title": "資源",
+            "empty": "選擇高於目前等級的目標即可查看資源。"
+        },
+        "events": {
+            "title": "進階分數帶來的活動積分",
+            "noPoints": "沒有積分",
+            "note": "活動積分等於進階分數乘以各活動中「Pet advancement score increases by 1」一列的積分。{hallOfChief}沒有寵物列。"
+        },
+        "byPet": {
+            "title": "依寵物",
+            "tableLabel": "依寵物的結果",
+            "empty": "還沒有寵物提升等級或進階。",
+            "heads": {
+                "pet": "寵物",
+                "levels": "等級",
+                "advancements": "進階",
+                "score": "分數",
+                "resources": "資源",
+                "troopAttack": "部隊攻擊",
+                "troopDefense": "部隊防禦",
+                "power": "戰力"
+            },
+            "noResources": "無"
+        }
+    }
+}

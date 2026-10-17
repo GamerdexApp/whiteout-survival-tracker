@@ -1,0 +1,103 @@
+{
+    "speed": {
+        "title": "Kelajuan pembinaan",
+        "reset": "Tetap semula semua",
+        "percentLabel": "Kelajuan pembinaan %",
+        "percentHint": "Kelajuan anda seperti dipaparkan permainan, tanpa Naib Presiden dan Double Time.",
+        "percentPlus": "+{value}%",
+        "percent": "{value}%",
+        "vicePresident": {
+            "label": "Naib Presiden",
+            "none": "Tiada",
+            "regular": "Biasa",
+            "supreme": "Tertinggi"
+        },
+        "speedupLabel": "Minit pecutan yang anda guna",
+        "speedupHint": "Pecutan pembinaan yang anda guna untuk naik taraf ini. Ia menambah mata acara.",
+        "doubleTime": "Double Time",
+        "doubleTimeNote": "Chief Order menambah {value}% pada naik taraf yang bermula semasa ia aktif.",
+        "total": "Jumlah kelajuan pembinaan"
+    },
+    "buildings": {
+        "title": "Bangunan",
+        "description": "Pilih tahap anda sekarang dan tahap yang anda mahu untuk setiap bangunan. Bangunan prasyarat di bawah tahap yang diperlukan sesuatu langkah ditambah pada pelan, jadi tetapkan tahap semasa setiap bangunan yang anda ada, atau ia dikira belum dibina. Tiada apa disimpan.",
+        "tableLabel": "Bangunan dengan tahap semasa dan tahap matlamat",
+        "columns": {
+            "building": "Bangunan",
+            "current": "Tahap semasa",
+            "goal": "Tahap matlamat"
+        },
+        "levelLabel": {
+            "current": "Tahap semasa {name}",
+            "goal": "Tahap matlamat {name}"
+        },
+        "notBuilt": "Belum dibina"
+    },
+    "results": {
+        "title": "Hasil",
+        "empty": "Pilih matlamat melebihi tahap semasa sesebuah bangunan untuk melihat sumber, masa, kuasa dan mata acara.",
+        "plus": "+{value}",
+        "stats": {
+            "steps": "Tahap untuk dibina",
+            "baseTime": "Masa sebelum kelajuan",
+            "time": "Masa pada kelajuan {percent}%",
+            "power": "Kuasa diperoleh",
+            "speedupMinutes": "Minit pecutan diperlukan"
+        },
+        "unmet": {
+            "title": "Prasyarat pada bangunan yang tiada dalam data tidak menambah langkah:",
+            "item": "{building} tahap {level}",
+            "listSeparator": ", "
+        },
+        "resources": {
+            "title": "Sumber"
+        },
+        "events": {
+            "title": "Mata acara",
+            "columns": {
+                "event": "Acara",
+                "crystalPoints": "Fire Crystals",
+                "speedupPoints": "Pecutan",
+                "total": "Jumlah",
+                "pointsPerPower": "Mata",
+                "days": "Hari acara",
+                "points": "Mata daripada kuasa"
+            },
+            "scoreTableLabel": "Mata Fire Crystal dan pecutan",
+            "speedupNote": "Mata pecutan mengira {used} daripada {needed} minit yang diperlukan masa pembinaan. Minit melebihi itu tidak mendapat skor.",
+            "hallTableLabel": "Mata {name} daripada kuasa",
+            "hallNote": "{name} memarkahkan setiap mata kuasa yang diperoleh melalui pembinaan. Pengganda bergantung pada hari acara.",
+            "pointsPerPower": "{value} setiap kuasa",
+            "daySeparator": ", "
+        },
+        "breakdown": {
+            "title": "Mengikut bangunan",
+            "plus": "+{value}",
+            "levelRange": "{from} hingga {to}",
+            "prerequisite": "Prasyarat",
+            "free": "Tanpa kos",
+            "columns": {
+                "building": "Bangunan",
+                "levels": "Tahap",
+                "steps": "Langkah",
+                "power": "Kuasa",
+                "baseTime": "Masa sebelum kelajuan",
+                "resources": "Sumber"
+            }
+        },
+        "stepDetails": {
+            "title": "{count, plural, other {Butiran langkah ({amount} langkah)}}",
+            "tableLabel": "Setiap tahap yang dibina, mengikut turutan pembinaan",
+            "plus": "+{value}",
+            "prerequisite": "Prasyarat",
+            "free": "Tanpa kos",
+            "columns": {
+                "building": "Bangunan",
+                "level": "Tahap",
+                "power": "Kuasa",
+                "baseTime": "Masa sebelum kelajuan",
+                "cost": "Kos"
+            }
+        }
+    }
+}

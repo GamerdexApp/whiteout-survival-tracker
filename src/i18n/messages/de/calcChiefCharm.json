@@ -1,0 +1,50 @@
+{
+    "setAll": {
+        "title": "Alle Amulette setzen",
+        "hint": "Jedes Gear-Teil hat 3 Amulette. Wähle hier Start- und Zielstufe und wende sie auf alle 18 Amulette an. Ändere danach einzelne Amulette weiter unten.",
+        "fromLabel": "Von",
+        "toLabel": "Zu",
+        "apply": "Auf alle anwenden",
+        "reset": "Alle zurücksetzen"
+    },
+    "fields": {
+        "notStarted": "Keine (nicht begonnen)",
+        "skip": "Keine (überspringen)"
+    },
+    "result": {
+        "title": "Ergebnis",
+        "score": "Amulett-Score",
+        "power": "Gewonnene Macht",
+        "steps": "Gekaufte Stufen",
+        "charms": "Aufgewertete Amulette",
+        "materials": "Materialien",
+        "noMaterials": "Wähle für ein Amulett eine Zielstufe, um die Materialien zu sehen.",
+        "eventPoints": "Event-Punkte",
+        "eventPointsNote": "Event-Punkte sind der Amulett-Score mal die Punkte, die die Zeile \"Raise Chief Charm max score\" in jedem Event bringt."
+    },
+    "charms": {
+        "title": "Häuptlingsamulette",
+        "hint": "Wähle die aktuelle Stufe jedes Amuletts und die gewünschte Stufe. Ein Amulett auf Keine (überspringen) wird nicht gezählt.",
+        "charmLabel": "Amulett {number}",
+        "charmName": "{piece} Amulett {number}",
+        "fromLabel": "Von",
+        "toLabel": "Zu",
+        "fromName": "Von ({charm})",
+        "toName": "Zu ({charm})"
+    },
+    "breakdown": {
+        "title": "Nach Amulett",
+        "empty": "Noch kein Amulett hat ein Ziel über seiner Startstufe.",
+        "charm": "Amulett",
+        "charmName": "{piece} Amulett {number}",
+        "levels": "Stufen",
+        "levelRange": "{from} bis {to}",
+        "stat": "Wertebonus",
+        "percent": "{value}%",
+        "steps": "Gekaufte Stufen",
+        "score": "Score",
+        "power": "Macht",
+        "materials": "Materialien",
+        "none": "Keine"
+    }
+}

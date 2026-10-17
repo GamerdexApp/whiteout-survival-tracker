@@ -1,0 +1,65 @@
+{
+    "levelBand": "Niveau {low} à {high}",
+    "stamina": {
+        "title": "Endurance",
+        "stamina": "Endurance",
+        "cans": "Canettes d'endurance",
+        "cansHint": "{amount} d'endurance chacune",
+        "gina": "Endurance Training de Gina",
+        "ginaNone": "Non utilisé",
+        "ginaLevel": "Niveau {level}, {percent} % d'endurance en moins",
+        "beastLevel": "Niveau des bêtes pour l'endurance restante",
+        "beastLevelHint": "Les bêtes d'un même groupe rapportent les mêmes points dans State of Power."
+    },
+    "planned": {
+        "title": "Chasses prévues",
+        "hint": "Chasses que vous faites de toute façon, comme les bêtes des missions Intel. Elles sont payées en premier.",
+        "empty": "Aucune chasse de bêtes prévue.",
+        "runLevel": "Niveau de la bête",
+        "runCount": "Bêtes",
+        "add": "Ajouter une chasse de bêtes",
+        "remove": "Retirer la chasse de bêtes : {band}",
+        "polarTerrors": "Polar Terrors prévus"
+    },
+    "result": {
+        "pointsNote": "Les points sont comptés avant tout bonus, comme Valeria dans State of Power. Les chasses qui ne sont ni des bêtes ni des Polar Terrors, comme la Bear Hunt, ne sont pas comptées.",
+        "tiles": {
+            "title": "Endurance",
+            "percent": "{percent} %",
+            "total": "Endurance totale",
+            "ginaReduction": "Réduction de Gina",
+            "beastCost": "Endurance par bête",
+            "polarTerrorCost": "Endurance par Polar Terror",
+            "planned": "Endurance des chasses prévues",
+            "left": "Endurance restante",
+            "short": "Endurance manquante",
+            "shortNote": "Les chasses prévues demandent {amount} d'endurance de plus que vous n'en avez. L'endurance restante ne paie aucune chasse en plus."
+        },
+        "leftover": {
+            "title": "Endurance restante après les chasses prévues",
+            "hint": "Chaque ligne dépense toute l'endurance restante pour un seul type de chasse.",
+            "hunt": "Chasse",
+            "onlyBeasts": "Seulement des bêtes, {band}",
+            "onlyPolarTerrors": "Seulement des Polar Terrors",
+            "count": "Chasses en plus",
+            "staminaLeft": "Endurance restante"
+        },
+        "events": {
+            "title": "Points d'événement",
+            "hint": "Prévu correspond aux points des chasses prévues. Les deux dernières colonnes ajoutent les chasses que paie l'endurance restante.",
+            "event": "Événement",
+            "perBeast": "Par bête",
+            "perPolarTerror": "Par Polar Terror",
+            "planned": "Prévu",
+            "withBeasts": "Plan et bêtes",
+            "withPolarTerrors": "Plan et Polar Terrors"
+        },
+        "plannedPoints": {
+            "title": "Points des chasses prévues",
+            "hunt": "Chasse",
+            "beasts": "{count, plural, one {{amount} bête, {band}} other {{amount} bêtes, {band}}}",
+            "polarTerrors": "{count, plural, one {{amount} Polar Terror} other {{amount} Polar Terrors}}",
+            "total": "Total"
+        }
+    }
+}

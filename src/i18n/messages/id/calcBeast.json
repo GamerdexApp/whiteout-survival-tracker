@@ -1,0 +1,65 @@
+{
+    "levelBand": "Level {low} ke {high}",
+    "stamina": {
+        "title": "Stamina",
+        "stamina": "Stamina",
+        "cans": "Kaleng stamina",
+        "cansHint": "{amount} stamina per kaleng",
+        "gina": "Endurance Training milik Gina",
+        "ginaNone": "Tidak dipakai",
+        "ginaLevel": "Level {level}, stamina {percent}% lebih hemat",
+        "beastLevel": "Level monster untuk sisa stamina",
+        "beastLevelHint": "Monster dalam satu grup mendapat poin yang sama di State of Power."
+    },
+    "planned": {
+        "title": "Perburuan terencana",
+        "hint": "Perburuan yang tetap kamu lakukan, seperti monster dari misi Intel. Stamina dipakai untuk ini lebih dulu.",
+        "empty": "Belum ada perburuan monster terencana.",
+        "runLevel": "Level monster",
+        "runCount": "Monster",
+        "add": "Tambah perburuan monster",
+        "remove": "Hapus perburuan monster {band}",
+        "polarTerrors": "Polar Terror terencana"
+    },
+    "result": {
+        "pointsNote": "Poin dihitung sebelum bonus apa pun, seperti Valeria di State of Power. Perburuan selain monster dan Polar Terror, seperti Bear Hunt, tidak dihitung.",
+        "tiles": {
+            "title": "Stamina",
+            "percent": "{percent}%",
+            "total": "Total stamina",
+            "ginaReduction": "Potongan dari Gina",
+            "beastCost": "Stamina per monster",
+            "polarTerrorCost": "Stamina per Polar Terror",
+            "planned": "Stamina untuk perburuan terencana",
+            "left": "Sisa stamina",
+            "short": "Stamina kurang",
+            "shortNote": "Perburuan terencana butuh {amount} stamina lebih banyak dari yang kamu punya. Sisa stamina tidak cukup untuk perburuan tambahan."
+        },
+        "leftover": {
+            "title": "Sisa stamina setelah perburuan terencana",
+            "hint": "Tiap baris memakai seluruh sisa stamina untuk satu jenis perburuan.",
+            "hunt": "Perburuan",
+            "onlyBeasts": "Hanya monster, {band}",
+            "onlyPolarTerrors": "Hanya Polar Terror",
+            "count": "Perburuan tambahan",
+            "staminaLeft": "Sisa stamina"
+        },
+        "events": {
+            "title": "Poin event",
+            "hint": "Terencana adalah poin dari perburuan terencana. Dua kolom terakhir menambah perburuan yang bisa dibayar sisa stamina.",
+            "event": "Event",
+            "perBeast": "Per monster",
+            "perPolarTerror": "Per Polar Terror",
+            "planned": "Terencana",
+            "withBeasts": "Rencana dan monster",
+            "withPolarTerrors": "Rencana dan Polar Terror"
+        },
+        "plannedPoints": {
+            "title": "Poin perburuan terencana",
+            "hunt": "Perburuan",
+            "beasts": "{count, plural, other {{amount} monster, {band}}}",
+            "polarTerrors": "{count, plural, other {{amount} Polar Terror}}",
+            "total": "Total"
+        }
+    }
+}

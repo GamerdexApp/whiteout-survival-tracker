@@ -1,0 +1,117 @@
+{
+    "intro": "Her kampın seviyesini ve neyi eğittiğini ya da terfi ettirdiğini ayarla. Üç kamp tek bir eğitim kapasitesini paylaşır: üç kamp seviyesinin kapasitesi toplanır, üstüne aşağıdaki bonuslar eklenir.",
+    "reset": "Tümünü sıfırla",
+    "tier": "T{tier}",
+    "bonuses": {
+        "title": "Kapasite ve hız",
+        "researchCapacity": "Araştırma kapasitesi",
+        "researchCapacityHint": "Araştırmadan gelen eğitim kapasitesi, oyunda gördüğün gibi.",
+        "trainingSpeed": "Eğitim hızı (%)",
+        "trainingSpeedHint": "Oyunda gördüğün hız, aşağıdaki bonuslar olmadan.",
+        "position": "Atama",
+        "positions": {
+            "none": "Yok",
+            "ministerOfEducation": "Eğitim Bakanı",
+            "vicePresident": "Başkan Yardımcısı"
+        },
+        "rank": "Rütbe",
+        "ranks": {
+            "regular": "Normal",
+            "supreme": "Üstün"
+        },
+        "appointmentEffect": "+{capacity} kapasite, +%{speed} eğitim hızı",
+        "capacityBoost": "Kapasite artışı",
+        "capacityBoostEffect": "Toplam kapasiteyi {multiplier} ile çarpar.",
+        "mobilize": "Mobilize",
+        "advancedTraining": "Advanced Training",
+        "speedEffect": "+%{speed} eğitim hızı",
+        "costReduction": "Maliyet indirimi",
+        "costReductionLabel": "{name} maliyet indirimi (%)",
+        "costReductionHint": "0 ile %{max} arası."
+    },
+    "camps": {
+        "title": "Kamplar",
+        "level": "Kamp seviyesi",
+        "levelOption": "{level} ({capacity} kapasite)",
+        "mode": "İşlem",
+        "modes": {
+            "none": "Eğitim yok",
+            "training": "Eğitim",
+            "promotion": "Terfi",
+            "both": "Eğitim ve terfi"
+        },
+        "trainingTitle": "Eğitim",
+        "promotionTitle": "Terfi",
+        "trainTier": "Eğitilecek kademe",
+        "fromTier": "Başlangıç kademesi",
+        "toTier": "Hedef kademe",
+        "troopsPerBatch": "Her gruptaki birlik",
+        "max": "Maks.",
+        "maxValue": "Maks. ({capacity})",
+        "batches": "Gruplar",
+        "runTime": "Süre {time}"
+    },
+    "results": {
+        "title": "Sonuçlar",
+        "capacity": "Grup başına kapasite",
+        "troops": "Kazanılan birlik",
+        "power": "Kazanılan güç",
+        "speedUsed": "Kullanılan eğitim hızı",
+        "totalTime": "Gereken hızlandırma",
+        "longest": "En uzun kamp",
+        "percent": "%{value}",
+        "noRuns": "Birlikleri, gücü, kaynakları ve süreyi görmek için en az bir kampı eğitim ya da terfi için ayarla.",
+        "noChange": "Bu işlemler hiçbir birliği değiştirmiyor. Sayıyı 0'ın üstüne çıkar."
+    },
+    "tiers": {
+        "troopsTitle": "Kademeye göre birlik",
+        "powerTitle": "Kademeye göre güç",
+        "heads": {
+            "tier": "Kademe",
+            "total": "Toplam"
+        },
+        "total": "Toplam",
+        "promotionNote": "Terfi, birlikleri ve güçlerini alt kademeden alıp üst kademeye ekler, bu yüzden alt kademede negatif değişim görünür.",
+        "fireCrystalNote": "Güç, her kampın Fire Crystal seviyesini kullanır: {levels}. Seviyeyle yalnızca kademe 10 ve 11 değişir. Araştırma ya da ekipmandan gelen özellik bonusları dahil değildir.",
+        "fireCrystalLevel": "{name} {level}"
+    },
+    "resources": {
+        "title": "Kaynaklar",
+        "tableLabel": "Gereken kaynaklar",
+        "heads": {
+            "resource": "Kaynak",
+            "amount": "Miktar"
+        }
+    },
+    "time": {
+        "title": "Süre",
+        "heads": {
+            "camp": "Kamp",
+            "action": "İşlem",
+            "troopsPerBatch": "Grup başına birlik",
+            "batches": "Gruplar",
+            "time": "Süre"
+        },
+        "training": "Eğitim {tier}",
+        "promotion": "Terfi {from} - {to}",
+        "campTotal": "{name} kampı",
+        "totalTime": "Tüm kamplar toplamı (gereken hızlandırma)",
+        "longest": "En uzun kamp (kamplar aynı anda eğitir)",
+        "minutesNeeded": "Gereken hızlandırma dakikası",
+        "minutes": "{value} dk",
+        "note": "Bir grubun süresi, tek birliğin süresi ile birlik sayısının çarpımının 1 artı eğitim hızına bölünmesidir ve hızlandırmalardan öncedir."
+    },
+    "events": {
+        "title": "Etkinlik puanı",
+        "tableLabel": "Etkinlik puanı",
+        "heads": {
+            "event": "Etkinlik",
+            "training": "Eğitim puanı",
+            "perMinute": "Dakika başına hızlandırma puanı",
+            "speedup": "Hızlandırma puanı",
+            "total": "Toplam"
+        },
+        "noSpeedup": "Yok",
+        "note": "Eğitim puanı, eğitim işlemlerindeki birlikleri kendi kademesinden sayar. Terfi eğitim puanı vermez. Hızlandırma puanı, tüm kamplar için gereken {minutes} hızlandırma dakikasını kullanır. Hall of Chief puanları tek sezon içindir ve güç artışından gelen puanları dahil değildir."
+    }
+}

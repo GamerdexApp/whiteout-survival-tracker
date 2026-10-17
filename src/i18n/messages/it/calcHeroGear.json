@@ -1,0 +1,77 @@
+{
+    "piece": {
+        "title": "Pezzo di equipaggiamento",
+        "quality": "Qualità",
+        "slot": "Pezzo",
+        "troopType": "Tipo di truppa",
+        "name": "{slot} {troop}",
+        "mythicOnly": "Solo l'equipaggiamento Mythic può essere forgiato e potenziato con Empowerment. Forgiatura maestria ed Empowerment sono disattivati per questa qualità."
+    },
+    "tracks": {
+        "enhancement": "Potenziamento",
+        "masteryForging": "Forgiatura maestria",
+        "empowerment": "Empowerment",
+        "current": "Attuale",
+        "goal": "Obiettivo",
+        "range": "Livelli da {from} a {to}",
+        "none": "Nessuno",
+        "forgingRow": "{name} (+{percent}%)",
+        "needsMythic": "Richiede equipaggiamento Mythic",
+        "reset": "Azzera livelli"
+    },
+    "unmet": {
+        "title": "Non ancora raggiungibile.",
+        "enhancement": "{track} richiede prima il livello di potenziamento {level}.",
+        "masteryForging": "{track} richiede prima Forgiatura maestria {row}.",
+        "quality": "{track} richiede equipaggiamento Mythic.",
+        "hint": "Se il pezzo è già a quel punto, imposta il livello attuale di conseguenza."
+    },
+    "noForging": "Empowerment richiede Forgiatura maestria a {row}. Forgiatura maestria è su Nessuno, quindi potenza e statistiche non contano la forgiatura.",
+    "summary": {
+        "title": "Risultato",
+        "powerGained": "Potenza guadagnata",
+        "currentPower": "Potenza ora",
+        "goalPower": "Potenza dopo il piano",
+        "forgingStatsUp": "Statistiche di Forgiatura maestria in aumento",
+        "percent": "+{value}%"
+    },
+    "resources": {
+        "title": "Risorse necessarie",
+        "item": "Oggetto",
+        "amount": "Quantità",
+        "empty": "Niente da potenziare. Alza un obiettivo sopra il livello attuale."
+    },
+    "stats": {
+        "title": "Statistiche del pezzo",
+        "tableLabel": "Statistiche del pezzo, ora e dopo il piano",
+        "stat": "Statistica",
+        "current": "Ora",
+        "goal": "Dopo il piano",
+        "gain": "Guadagno",
+        "power": "Potenza",
+        "health": "Salute",
+        "percentStat": "{name} (%)",
+        "percentValue": "{value}%",
+        "note": "Le statistiche includono la forgiatura maestria e sono arrotondate per difetto."
+    },
+    "milestones": {
+        "title": "Traguardi Mithril sbloccati",
+        "line": "Empowerment {level}: {event}, {stat}",
+        "empty": "Questo piano non sblocca nessun traguardo Mithril."
+    },
+    "tracksTable": {
+        "title": "Per percorso",
+        "label": "Passi, guadagno e risorse di ogni percorso",
+        "track": "Percorso",
+        "steps": "Passi",
+        "gain": "Guadagno",
+        "powerGain": "{value} di potenza prima della forgiatura",
+        "statsUp": "+{value}% statistiche",
+        "resources": "Risorse",
+        "none": "Niente"
+    },
+    "events": {
+        "title": "Punti evento",
+        "note": "Punti per le Essence Stones e il Mithril del piano."
+    }
+}

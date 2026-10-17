@@ -1,0 +1,67 @@
+{
+    "intro": "Elige el nivel de afinidad y los niveles de habilidad que tiene cada experto ahora y los que quieres. La calculadora suma los Books of Knowledge, los sigilos de experto, la EXP de habilidad y los puntos de afinidad. Un experto avanza en cada nivel múltiplo de 10 y necesita sigilos para pasarlo. Activa Avanzado cuando el experto ya haya avanzado en el nivel actual, o para pagar el avance en el nivel meta. El talento sube con la relación y no cuesta nada.",
+    "goals": {
+        "title": "Expertos",
+        "empty": "Agrega un experto para ver los Books of Knowledge, los sigilos y los puntos de eventos."
+    },
+    "add": {
+        "label": "Experto por agregar",
+        "button": "Agregar",
+        "allAdded": "Todos los expertos están en la calculadora."
+    },
+    "expert": {
+        "meta": "{title}, {specialty}",
+        "remove": "Quitar",
+        "removeLabel": "Quitar a {expert}",
+        "affinity": "Nivel de afinidad",
+        "current": "Actual",
+        "goal": "Meta",
+        "advancedAtCurrent": "Avanzado en el nivel {level}",
+        "advanceAtGoal": "Avanzar en el nivel {level}",
+        "skillMax": "Máx. {level}"
+    },
+    "results": {
+        "title": "Resultados",
+        "stats": {
+            "books": "Books of Knowledge",
+            "sigils": "Sigilos de experto",
+            "exp": "EXP de habilidad",
+            "learningTime": "Tiempo de aprendizaje",
+            "affinity": "Puntos de afinidad",
+            "levels": "Niveles de afinidad",
+            "skillLevels": "Niveles de habilidad",
+            "advancements": "Avances"
+        }
+    },
+    "resources": {
+        "title": "Recursos",
+        "nothing": "Estas metas no necesitan Books of Knowledge ni sigilos.",
+        "commonSigils": "Los Common Expert Sigils se convierten en los sigilos de cualquier experto."
+    },
+    "events": {
+        "title": "Puntos de eventos",
+        "heads": {
+            "event": "Evento",
+            "items": "Libros y sigilos",
+            "perMinute": "Por minuto de aceleraciones",
+            "speedups": "Aceleraciones",
+            "total": "Total"
+        },
+        "hint": "Los puntos de aceleraciones cuentan aceleraciones de Aprendizaje o Generales para todo el tiempo de aprendizaje de {duration}."
+    },
+    "byExpert": {
+        "title": "Por experto",
+        "nothing": "Ningún experto tiene aún una meta por encima de su nivel actual.",
+        "heads": {
+            "expert": "Experto",
+            "levels": "Niveles de afinidad",
+            "advancements": "Avances",
+            "skillLevels": "Niveles de habilidad",
+            "books": "Libros",
+            "sigils": "Sigilos",
+            "exp": "EXP de habilidad",
+            "learningTime": "Tiempo de aprendizaje",
+            "affinity": "Puntos de afinidad"
+        }
+    }
+}

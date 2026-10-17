@@ -1,0 +1,61 @@
+{
+    "intro": "Agrega las mascotas que quieres subir de nivel. Para cada mascota, elige el nivel actual y el que quieres. Una mascota avanza en cada nivel múltiplo de 10 y necesita el avance para pasar de ese nivel.",
+    "picker": {
+        "petLabel": "Mascota",
+        "add": "Agregar mascota",
+        "addAll": "Agregar todas las mascotas",
+        "allAdded": "Todas las mascotas están en la lista.",
+        "setAllMax": "Poner todas las metas al máximo",
+        "advanceAtMax": "Avanzar también en el nivel máximo",
+        "removeAll": "Quitar todas"
+    },
+    "row": {
+        "maxLevel": "Nivel máx. {max}",
+        "current": "Nivel actual",
+        "goal": "Nivel meta",
+        "currentAdvanced": "Ya avanzada",
+        "goalAdvanced": "Avanzar en la meta",
+        "keepsAdvancement": "La mascota conserva su avance en este nivel.",
+        "remove": "Quitar a {pet}"
+    },
+    "empty": "Aún no hay mascotas agregadas. Agrega una mascota arriba para ver la comida de mascota, los objetos de avance y las mejoras.",
+    "results": {
+        "title": "Resultados",
+        "stats": {
+            "levels": "Niveles",
+            "advancements": "Avances",
+            "troopAttack": "Ataque de tropas ganado",
+            "troopDefense": "Defensa de tropas ganada",
+            "power": "Poder ganado",
+            "advancementScore": "Puntaje de avance"
+        },
+        "percent": "{value}%",
+        "unknown": "Desconocido",
+        "unknownPowerNote": "Los datos del juego no tienen el poder avanzado de algunos niveles de avance, así que la mejora de poder de estas mascotas es Desconocida.",
+        "resources": {
+            "title": "Recursos",
+            "empty": "Elige una meta por encima del nivel actual para ver los recursos."
+        },
+        "events": {
+            "title": "Puntos de eventos por el puntaje de avance",
+            "noPoints": "Sin puntos",
+            "note": "Los puntos de eventos son el puntaje de avance por los puntos de la fila \"Pet advancement score increases by 1\" de cada evento. {hallOfChief} no tiene fila de mascotas."
+        },
+        "byPet": {
+            "title": "Por mascota",
+            "tableLabel": "Resultados por mascota",
+            "empty": "Ninguna mascota gana aún un nivel ni un avance.",
+            "heads": {
+                "pet": "Mascota",
+                "levels": "Niveles",
+                "advancements": "Avances",
+                "score": "Puntaje",
+                "resources": "Recursos",
+                "troopAttack": "Ataque de tropas",
+                "troopDefense": "Defensa de tropas",
+                "power": "Poder"
+            },
+            "noResources": "Ninguno"
+        }
+    }
+}

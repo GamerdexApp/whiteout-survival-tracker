@@ -1,0 +1,46 @@
+{
+    "line": "게임 데이터용 자유 입력 계산기예요. 영주 데이터는 읽지 않고 아무것도 저장되지 않아요.",
+    "recordLine": "숫자를 직접 입력하세요. 영주 데이터는 읽지 않고 아무것도 저장되지 않아요.",
+    "calculators": {
+        "beast": {
+            "title": "야수 계산기",
+            "description": "스태미나로 야수와 Polar Terror를 몇 마리 잡을 수 있는지, 얻는 이벤트 점수는 얼마인지 계산해요."
+        },
+        "building": {
+            "title": "건물 계산기",
+            "description": "건물 업그레이드에 필요한 자원, 건설 시간, 전투력, 이벤트 점수를 계산해요."
+        },
+        "chiefCharm": {
+            "title": "영주 참 계산기",
+            "description": "영주 참 업그레이드에 필요한 재료, 참 점수, 전투력, 이벤트 점수."
+        },
+        "chiefGear": {
+            "title": "영주 장비 계산기",
+            "description": "영주 장비 업그레이드에 필요한 재료, 장비 점수, 전투력, 이벤트 점수."
+        },
+        "expert": {
+            "title": "전문가 계산기",
+            "description": "전문가와 스킬 레벨업에 필요한 Books of Knowledge와 인장."
+        },
+        "heroGear": {
+            "title": "영웅 장비 계산기",
+            "description": "영웅 장비 1개 레벨업에 필요한 자원, 전투력, 능력치, 이벤트 점수."
+        },
+        "heroUpgrade": {
+            "title": "영웅 강화 계산기",
+            "description": "영웅 1명 강화에 필요한 조각, 스킬 매뉴얼, Widgets."
+        },
+        "pet": {
+            "title": "펫 계산기",
+            "description": "펫 레벨업에 필요한 펫 먹이, 승급 아이템, 능력치 상승."
+        },
+        "research": {
+            "title": "연구 계산기",
+            "description": "연구 항목을 목표 레벨까지 올리는 데 필요한 자원, 시간, 전투력."
+        },
+        "troop": {
+            "title": "병력 계산기",
+            "description": "캠프별로 훈련하거나 승급하는 병력과 필요한 자원, 시간."
+        }
+    }
+}

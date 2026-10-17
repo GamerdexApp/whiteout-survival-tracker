@@ -1,0 +1,65 @@
+{
+    "levelBand": "레벨 {low}~{high}",
+    "stamina": {
+        "title": "스태미나",
+        "stamina": "스태미나",
+        "cans": "스태미나 캔",
+        "cansHint": "개당 스태미나 {amount}",
+        "gina": "Gina의 Endurance Training",
+        "ginaNone": "사용 안 함",
+        "ginaLevel": "레벨 {level}, 스태미나 {percent}% 감소",
+        "beastLevel": "남은 스태미나로 잡는 야수 레벨",
+        "beastLevelHint": "같은 그룹의 야수는 State of Power에서 같은 점수를 줘요."
+    },
+    "planned": {
+        "title": "계획한 사냥",
+        "hint": "어차피 하는 사냥이에요. 예를 들면 Intel 임무의 야수예요. 스태미나를 먼저 써요.",
+        "empty": "계획한 야수 사냥이 없어요.",
+        "runLevel": "야수 레벨",
+        "runCount": "야수",
+        "add": "야수 사냥 추가",
+        "remove": "{band} 야수 사냥 삭제",
+        "polarTerrors": "계획한 Polar Terror"
+    },
+    "result": {
+        "pointsNote": "점수는 State of Power의 Valeria 같은 보너스를 적용하기 전 값이에요. Bear Hunt처럼 야수와 Polar Terror가 아닌 사냥은 포함하지 않아요.",
+        "tiles": {
+            "title": "스태미나",
+            "percent": "{percent}%",
+            "total": "총 스태미나",
+            "ginaReduction": "Gina 감소량",
+            "beastCost": "야수 1마리당 스태미나",
+            "polarTerrorCost": "Polar Terror 1마리당 스태미나",
+            "planned": "계획한 사냥의 스태미나",
+            "left": "남은 스태미나",
+            "short": "부족한 스태미나",
+            "shortNote": "계획한 사냥에 스태미나가 {amount} 더 필요해요. 남은 스태미나로는 추가 사냥을 할 수 없어요."
+        },
+        "leftover": {
+            "title": "계획한 사냥 뒤에 남은 스태미나",
+            "hint": "각 행은 남은 스태미나를 모두 한 종류의 사냥에 쓴 경우예요.",
+            "hunt": "사냥",
+            "onlyBeasts": "야수만, {band}",
+            "onlyPolarTerrors": "Polar Terror만",
+            "count": "추가 사냥",
+            "staminaLeft": "남은 스태미나"
+        },
+        "events": {
+            "title": "이벤트 점수",
+            "hint": "계획은 계획한 사냥의 점수예요. 마지막 두 열은 남은 스태미나로 할 수 있는 사냥을 더한 값이에요.",
+            "event": "이벤트",
+            "perBeast": "야수당",
+            "perPolarTerror": "Polar Terror당",
+            "planned": "계획",
+            "withBeasts": "계획과 야수",
+            "withPolarTerrors": "계획과 Polar Terror"
+        },
+        "plannedPoints": {
+            "title": "계획한 사냥의 점수",
+            "hunt": "사냥",
+            "beasts": "{count, plural, other {야수 {amount}마리, {band}}}",
+            "polarTerrors": "{count, plural, other {Polar Terror {amount}마리}}",
+            "total": "합계"
+        }
+    }
+}

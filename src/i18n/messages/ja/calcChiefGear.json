@@ -1,0 +1,46 @@
+{
+    "intro": "各装備の現在のレベルと目標レベルを選んでください。素材、装備スコア、獲得戦力、イベントポイントの合計が結果に表示されます。装備を対象外にするには、目標をなしのままにします。何も保存されません。",
+    "level": {
+        "plain": "{tier} 星{stars}",
+        "withStage": "{tier} 星{stars} ステージ{stage}",
+        "notCrafted": "なし（未作成）",
+        "skip": "なし（対象外）"
+    },
+    "all": {
+        "heading": "すべての装備を設定",
+        "current": "現在のレベル",
+        "goal": "目標レベル",
+        "apply": "すべてに適用",
+        "reset": "すべてリセット"
+    },
+    "pieces": {
+        "heading": "装備",
+        "troopGroup": "{troop}の装備",
+        "current": "現在のレベル",
+        "goal": "目標レベル",
+        "currentLabel": "{piece}の現在のレベル",
+        "goalLabel": "{piece}の目標レベル"
+    },
+    "results": {
+        "heading": "結果",
+        "score": "装備スコア",
+        "power": "獲得戦力",
+        "steps": "段階",
+        "materials": "素材",
+        "noMaterials": "装備の目標レベルを選ぶと、素材が表示されます。",
+        "events": "イベントポイント",
+        "eventsNote": "イベントポイントは、装備スコアに、各イベントの「Raise Chief Gear max score」の行のポイントを掛けた値です。"
+    },
+    "byPiece": {
+        "heading": "装備ごと",
+        "piece": "装備",
+        "levels": "レベル",
+        "levelRange": "{from}から{to}",
+        "steps": "段階",
+        "score": "スコア",
+        "power": "戦力",
+        "stats": "ステータスボーナス",
+        "statRange": "{from}%から{to}%",
+        "noLevel": "未作成"
+    }
+}

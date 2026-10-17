@@ -1,0 +1,117 @@
+{
+    "intro": "Lege die Stufe jedes Camps fest und was es trainiert oder befördert. Alle drei Camps teilen sich eine Trainingskapazität: die Kapazität der drei Camp-Stufen zusammen, plus die Boni unten.",
+    "reset": "Alle zurücksetzen",
+    "tier": "T{tier}",
+    "bonuses": {
+        "title": "Kapazität und Tempo",
+        "researchCapacity": "Forschungskapazität",
+        "researchCapacityHint": "Trainingskapazität aus der Forschung, wie das Spiel sie anzeigt.",
+        "trainingSpeed": "Trainingstempo (%)",
+        "trainingSpeedHint": "Dein Tempo, wie das Spiel es anzeigt, ohne die Buffs unten.",
+        "position": "Ernennung",
+        "positions": {
+            "none": "Keine",
+            "ministerOfEducation": "Minister of Education",
+            "vicePresident": "Vizepräsident"
+        },
+        "rank": "Rang",
+        "ranks": {
+            "regular": "Regulär",
+            "supreme": "Höchste"
+        },
+        "appointmentEffect": "+{capacity} Kapazität, +{speed}% Trainingstempo",
+        "capacityBoost": "Kapazitätsbonus",
+        "capacityBoostEffect": "Multipliziert die Gesamtkapazität mit {multiplier}.",
+        "mobilize": "Mobilize",
+        "advancedTraining": "Advanced Training",
+        "speedEffect": "+{speed}% Trainingstempo",
+        "costReduction": "Kostensenkung",
+        "costReductionLabel": "Kostensenkung {name} (%)",
+        "costReductionHint": "Von 0 bis {max}%."
+    },
+    "camps": {
+        "title": "Camps",
+        "level": "Camp-Stufe",
+        "levelOption": "{level} ({capacity} Kapazität)",
+        "mode": "Aktion",
+        "modes": {
+            "none": "Kein Training",
+            "training": "Training",
+            "promotion": "Beförderung",
+            "both": "Training und Beförderung"
+        },
+        "trainingTitle": "Training",
+        "promotionTitle": "Beförderung",
+        "trainTier": "Tier zum Trainieren",
+        "fromTier": "Befördern von",
+        "toTier": "Befördern auf",
+        "troopsPerBatch": "Truppen pro Charge",
+        "max": "Max",
+        "maxValue": "Max ({capacity})",
+        "batches": "Chargen",
+        "runTime": "Zeit {time}"
+    },
+    "results": {
+        "title": "Ergebnisse",
+        "capacity": "Kapazität pro Charge",
+        "troops": "Gewonnene Truppen",
+        "power": "Gewonnene Macht",
+        "speedUsed": "Genutztes Trainingstempo",
+        "totalTime": "Benötigte Beschleuniger",
+        "longest": "Längstes Camp",
+        "percent": "{value}%",
+        "noRuns": "Stelle mindestens ein Camp auf Training oder Beförderung, um Truppen, Macht, Ressourcen und Zeit zu sehen.",
+        "noChange": "Diese Durchläufe ändern keine Truppen. Setze eine Anzahl über 0."
+    },
+    "tiers": {
+        "troopsTitle": "Truppen nach Tier",
+        "powerTitle": "Macht nach Tier",
+        "heads": {
+            "tier": "Tier",
+            "total": "Gesamt"
+        },
+        "total": "Gesamt",
+        "promotionNote": "Eine Beförderung nimmt Truppen und ihre Macht vom niedrigeren Tier und fügt sie dem höheren Tier hinzu, daher zeigt das niedrigere Tier eine negative Änderung.",
+        "fireCrystalNote": "Die Macht nutzt die Fire-Crystal-Stufe jedes Camps: {levels}. Nur Tier 10 und 11 ändern sich mit der Stufe. Wertebonus aus Forschung oder Gear ist nicht enthalten.",
+        "fireCrystalLevel": "{name} {level}"
+    },
+    "resources": {
+        "title": "Ressourcen",
+        "tableLabel": "Benötigte Ressourcen",
+        "heads": {
+            "resource": "Ressource",
+            "amount": "Menge"
+        }
+    },
+    "time": {
+        "title": "Zeit",
+        "heads": {
+            "camp": "Camp",
+            "action": "Aktion",
+            "troopsPerBatch": "Truppen pro Charge",
+            "batches": "Chargen",
+            "time": "Zeit"
+        },
+        "training": "Training {tier}",
+        "promotion": "Beförderung {from} auf {to}",
+        "campTotal": "Camp {name}",
+        "totalTime": "Alle Camps zusammen (benötigte Beschleuniger)",
+        "longest": "Längstes Camp (die Camps trainieren gleichzeitig)",
+        "minutesNeeded": "Benötigte Beschleuniger-Minuten",
+        "minutes": "{value} Min",
+        "note": "Die Zeit einer Charge ist die Zeit einer Truppe mal die Anzahl der Truppen, geteilt durch 1 plus das Trainingstempo, vor den Beschleunigern."
+    },
+    "events": {
+        "title": "Event-Punkte",
+        "tableLabel": "Event-Punkte",
+        "heads": {
+            "event": "Event",
+            "training": "Trainingspunkte",
+            "perMinute": "Beschleuniger-Punkte pro Minute",
+            "speedup": "Beschleuniger-Punkte",
+            "total": "Gesamt"
+        },
+        "noSpeedup": "Keine",
+        "note": "Trainingspunkte zählen die Truppen von Trainingsdurchläufen auf ihrem Tier. Eine Beförderung gibt keine Trainingspunkte. Die Beschleuniger-Punkte nutzen die {minutes} benötigten Beschleuniger-Minuten für alle Camps. Hall-of-Chief-Punkte gelten für eine Saison, und seine Punkte für Machtsteigerung sind nicht enthalten."
+    }
+}

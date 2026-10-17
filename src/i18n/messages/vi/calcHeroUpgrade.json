@@ -1,0 +1,70 @@
+{
+    "intro": "Lập kế hoạch cho từng anh hùng một. Sao dùng nhãn trong game, nên 3.1 là sao 3 bậc 1, và 5.0 là nhãn cuối. Không có gì được lưu, tải lại trang sẽ xóa các lựa chọn của bạn.",
+    "hero": {
+        "label": "Anh hùng",
+        "option": "{name} (Thế hệ {generation})",
+        "generation": "Thế hệ {generation}",
+        "reset": "Đặt lại anh hùng"
+    },
+    "range": {
+        "current": "Hiện tại",
+        "goal": "Mục tiêu"
+    },
+    "stars": {
+        "title": "Sao",
+        "row": "Sao và bậc"
+    },
+    "skills": {
+        "title": "Kỹ năng",
+        "exploration": "Thám hiểm",
+        "expedition": "Viễn chinh"
+    },
+    "weapon": {
+        "title": "Vũ khí độc quyền",
+        "row": "Cấp vũ khí",
+        "none": "{hero} không có vũ khí độc quyền."
+    },
+    "result": {
+        "title": "Cần có",
+        "unmetTitle": "Cần thêm sao.",
+        "unmet": "{items}. Nếu anh hùng đã có các sao này, hãy đặt mục tiêu sao bằng chúng.",
+        "unmetItem": "{skill} cấp {level} cần sao {star}",
+        "tiles": {
+            "starSteps": "Bước sao",
+            "shards": "Mảnh",
+            "skillLevels": "Cấp kỹ năng",
+            "weaponLevels": "Cấp vũ khí",
+            "widgets": "Widgets",
+            "powerGain": "Sức mạnh tăng"
+        },
+        "resources": {
+            "title": "Tài nguyên",
+            "item": "Vật phẩm",
+            "amount": "Số lượng",
+            "widgets": "Widgets",
+            "empty": "Chưa chọn gì. Hãy đặt một mục tiêu cao hơn cấp hiện tại.",
+            "ownShards": "{own} được tính như {general}."
+        },
+        "unlocked": {
+            "title": "Mở kỹ năng vũ khí"
+        },
+        "stats": {
+            "title": "Chỉ số ở cấp 80",
+            "stat": "Chỉ số",
+            "estimate": "Ước tính",
+            "estimateNote": "Chỉ số dưới 5 sao là ước tính, quy đổi từ chỉ số 5 sao.",
+            "exploration": "Thám hiểm",
+            "expedition": "Viễn chinh",
+            "attack": "Tấn công",
+            "defense": "Phòng thủ",
+            "health": "HP",
+            "percent": "{value}%"
+        },
+        "events": {
+            "title": "Điểm sự kiện",
+            "event": "Sự kiện",
+            "points": "Điểm"
+        },
+        "powerNote": "Sức mạnh tính theo cấp sao, kỹ năng và vũ khí. Nhãn sao không có dữ liệu sức mạnh sẽ làm mức tăng thành Không rõ."
+    }
+}

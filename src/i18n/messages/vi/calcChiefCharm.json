@@ -1,0 +1,50 @@
+{
+    "setAll": {
+        "title": "Đặt cho mọi bùa",
+        "hint": "Mỗi món trang bị có 3 bùa. Chọn cấp bắt đầu và cấp mục tiêu ở đây để áp dụng cho cả 18 bùa, rồi chỉnh từng bùa ở dưới.",
+        "fromLabel": "Từ",
+        "toLabel": "Đến",
+        "apply": "Áp dụng cho tất cả",
+        "reset": "Đặt lại tất cả"
+    },
+    "fields": {
+        "notStarted": "Không có (chưa bắt đầu)",
+        "skip": "Không có (bỏ qua)"
+    },
+    "result": {
+        "title": "Kết quả",
+        "score": "Điểm bùa",
+        "power": "Sức mạnh nhận được",
+        "steps": "Cấp cần nâng",
+        "charms": "Bùa được nâng cấp",
+        "materials": "Vật liệu",
+        "noMaterials": "Hãy chọn cấp mục tiêu cho một bùa để xem vật liệu.",
+        "eventPoints": "Điểm sự kiện",
+        "eventPointsNote": "Điểm sự kiện bằng điểm bùa nhân với số điểm mà dòng \"Raise Chief Charm max score\" cho trong mỗi sự kiện."
+    },
+    "charms": {
+        "title": "Bùa Thủ lĩnh",
+        "hint": "Chọn cấp hiện tại của từng bùa và cấp bạn muốn. Bùa để ở Không có (bỏ qua) sẽ không được tính.",
+        "charmLabel": "Bùa {number}",
+        "charmName": "Bùa {number} của {piece}",
+        "fromLabel": "Từ",
+        "toLabel": "Đến",
+        "fromName": "Từ ({charm})",
+        "toName": "Đến ({charm})"
+    },
+    "breakdown": {
+        "title": "Theo bùa",
+        "empty": "Chưa có bùa nào có mục tiêu cao hơn cấp bắt đầu.",
+        "charm": "Bùa",
+        "charmName": "Bùa {number} của {piece}",
+        "levels": "Cấp",
+        "levelRange": "{from} đến {to}",
+        "stat": "Chỉ số cộng thêm",
+        "percent": "{value}%",
+        "steps": "Cấp cần nâng",
+        "score": "Điểm",
+        "power": "Sức mạnh",
+        "materials": "Vật liệu",
+        "none": "Không có"
+    }
+}

@@ -1,0 +1,103 @@
+{
+    "speed": {
+        "title": "Velocidade de construção",
+        "reset": "Repor tudo",
+        "percentLabel": "Velocidade de construção %",
+        "percentHint": "A velocidade como o jogo a mostra, sem o Vice-presidente e o Double Time.",
+        "percentPlus": "+{value}%",
+        "percent": "{value}%",
+        "vicePresident": {
+            "label": "Vice-presidente",
+            "none": "Nenhum",
+            "regular": "Normal",
+            "supreme": "Supremo"
+        },
+        "speedupLabel": "Minutos de aceleração que gasta",
+        "speedupHint": "Aceleradores de construção que usa nestas melhorias. Somam aos pontos de evento.",
+        "doubleTime": "Double Time",
+        "doubleTimeNote": "A Chief Order soma {value}% às melhorias iniciadas enquanto está ativa.",
+        "total": "Velocidade de construção total"
+    },
+    "buildings": {
+        "title": "Edifícios",
+        "description": "Escolher o nível atual e o nível pretendido de cada edifício. Os edifícios pré-requisito abaixo do nível que um passo exige entram no plano, por isso o nível atual de todos os edifícios existentes tem de estar definido, ou contam como por construir. Nada é guardado.",
+        "tableLabel": "Edifícios com nível atual e nível objetivo",
+        "columns": {
+            "building": "Edifício",
+            "current": "Nível atual",
+            "goal": "Nível objetivo"
+        },
+        "levelLabel": {
+            "current": "Nível atual de {name}",
+            "goal": "Nível objetivo de {name}"
+        },
+        "notBuilt": "Por construir"
+    },
+    "results": {
+        "title": "Resultados",
+        "empty": "Escolher um objetivo acima do nível atual de um edifício para ver os recursos, o tempo, o poder e os pontos de evento.",
+        "plus": "+{value}",
+        "stats": {
+            "steps": "Níveis a construir",
+            "baseTime": "Tempo antes da velocidade",
+            "time": "Tempo a {percent}% de velocidade",
+            "power": "Poder ganho",
+            "speedupMinutes": "Minutos de aceleração necessários"
+        },
+        "unmet": {
+            "title": "Os pré-requisitos de edifícios que não estão nos dados não somam passos:",
+            "item": "{building} nível {level}",
+            "listSeparator": ", "
+        },
+        "resources": {
+            "title": "Recursos"
+        },
+        "events": {
+            "title": "Pontos de evento",
+            "columns": {
+                "event": "Evento",
+                "crystalPoints": "Fire Crystals",
+                "speedupPoints": "Aceleradores",
+                "total": "Total",
+                "pointsPerPower": "Pontos",
+                "days": "Dias do evento",
+                "points": "Pontos do poder"
+            },
+            "scoreTableLabel": "Pontos de Fire Crystals e de aceleradores",
+            "speedupNote": "Os pontos de aceleração contam {used} dos {needed} minutos que o tempo de construção exige. Os minutos acima disso não pontuam.",
+            "hallTableLabel": "Pontos de {name} do poder",
+            "hallNote": "{name} pontua cada ponto de poder ganho com a construção. O multiplicador depende do dia do evento.",
+            "pointsPerPower": "{value} por poder",
+            "daySeparator": ", "
+        },
+        "breakdown": {
+            "title": "Por edifício",
+            "plus": "+{value}",
+            "levelRange": "{from} a {to}",
+            "prerequisite": "Pré-requisito",
+            "free": "Sem custo",
+            "columns": {
+                "building": "Edifício",
+                "levels": "Níveis",
+                "steps": "Passos",
+                "power": "Poder",
+                "baseTime": "Tempo antes da velocidade",
+                "resources": "Recursos"
+            }
+        },
+        "stepDetails": {
+            "title": "{count, plural, one {Detalhe do passo ({amount} passo)} other {Detalhe dos passos ({amount} passos)}}",
+            "tableLabel": "Cada nível construído, por ordem de construção",
+            "plus": "+{value}",
+            "prerequisite": "Pré-requisito",
+            "free": "Sem custo",
+            "columns": {
+                "building": "Edifício",
+                "level": "Nível",
+                "power": "Poder",
+                "baseTime": "Tempo antes da velocidade",
+                "cost": "Custo"
+            }
+        }
+    }
+}

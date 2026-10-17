@@ -1,0 +1,117 @@
+{
+    "intro": "اضبط مستوى كل معسكر وما يدربه أو يرتقي به. تتشارك المعسكرات الثلاثة سعة تدريب واحدة: مجموع سعات مستويات المعسكرات الثلاثة، مضافًا إليه الميزات بالأسفل.",
+    "reset": "إعادة ضبط الكل",
+    "tier": "T{tier}",
+    "bonuses": {
+        "title": "السعة والسرعة",
+        "researchCapacity": "سعة الأبحاث",
+        "researchCapacityHint": "سعة التدريب من الأبحاث، كما تظهرها اللعبة.",
+        "trainingSpeed": "سرعة التدريب (%)",
+        "trainingSpeedHint": "سرعتك كما تظهرها اللعبة، دون التعزيزات بالأسفل.",
+        "position": "التعيين",
+        "positions": {
+            "none": "لا شيء",
+            "ministerOfEducation": "وزير التعليم",
+            "vicePresident": "نائب الرئيس"
+        },
+        "rank": "الرتبة",
+        "ranks": {
+            "regular": "عادي",
+            "supreme": "أعلى"
+        },
+        "appointmentEffect": "‎+{capacity} سعة، ‎+{speed}% سرعة تدريب",
+        "capacityBoost": "زيادة السعة",
+        "capacityBoostEffect": "يضرب إجمالي السعة في {multiplier}.",
+        "mobilize": "Mobilize",
+        "advancedTraining": "Advanced Training",
+        "speedEffect": "‎+{speed}% سرعة تدريب",
+        "costReduction": "تخفيض التكلفة",
+        "costReductionLabel": "تخفيض تكلفة {name} (%)",
+        "costReductionHint": "من 0 إلى {max}%."
+    },
+    "camps": {
+        "title": "المعسكرات",
+        "level": "مستوى المعسكر",
+        "levelOption": "{level} (السعة {capacity})",
+        "mode": "الإجراء",
+        "modes": {
+            "none": "لا تدريب",
+            "training": "التدريب",
+            "promotion": "الارتقاء",
+            "both": "التدريب والارتقاء"
+        },
+        "trainingTitle": "التدريب",
+        "promotionTitle": "الارتقاء",
+        "trainTier": "الفئة المراد تدريبها",
+        "fromTier": "الارتقاء من",
+        "toTier": "الارتقاء إلى",
+        "troopsPerBatch": "القوات في كل دفعة",
+        "max": "الأقصى",
+        "maxValue": "الأقصى ({capacity})",
+        "batches": "الدفعات",
+        "runTime": "الوقت {time}"
+    },
+    "results": {
+        "title": "النتائج",
+        "capacity": "السعة لكل دفعة",
+        "troops": "القوات المكتسبة",
+        "power": "القوة المكتسبة",
+        "speedUsed": "سرعة التدريب المستخدمة",
+        "totalTime": "التسريعات المطلوبة",
+        "longest": "أطول معسكر",
+        "percent": "{value}%",
+        "noRuns": "اضبط معسكرًا واحدًا على الأقل للتدريب أو الارتقاء لعرض القوات والقوة والموارد والوقت.",
+        "noChange": "هذه الدفعات لا تغيّر القوات. اضبط عددًا أكبر من 0."
+    },
+    "tiers": {
+        "troopsTitle": "القوات حسب الفئة",
+        "powerTitle": "القوة حسب الفئة",
+        "heads": {
+            "tier": "الفئة",
+            "total": "الإجمالي"
+        },
+        "total": "الإجمالي",
+        "promotionNote": "يأخذ الارتقاء القوات وقوتها من الفئة الأدنى ويضيفها إلى الفئة الأعلى، لذا تظهر الفئة الأدنى بتغيّر سالب.",
+        "fireCrystalNote": "تستخدم القوة مستوى Fire Crystal لكل معسكر: {levels}. تتغير الفئتان 10 و11 فقط مع المستوى. لا تشمل ميزات الإحصائيات من الأبحاث أو المعدات.",
+        "fireCrystalLevel": "{name} {level}"
+    },
+    "resources": {
+        "title": "الموارد",
+        "tableLabel": "الموارد المطلوبة",
+        "heads": {
+            "resource": "المورد",
+            "amount": "الكمية"
+        }
+    },
+    "time": {
+        "title": "الوقت",
+        "heads": {
+            "camp": "المعسكر",
+            "action": "الإجراء",
+            "troopsPerBatch": "القوات لكل دفعة",
+            "batches": "الدفعات",
+            "time": "الوقت"
+        },
+        "training": "التدريب {tier}",
+        "promotion": "الارتقاء من {from} إلى {to}",
+        "campTotal": "معسكر {name}",
+        "totalTime": "كل المعسكرات مجموعة (التسريعات المطلوبة)",
+        "longest": "أطول معسكر (تدرب المعسكرات في الوقت نفسه)",
+        "minutesNeeded": "دقائق التسريع المطلوبة",
+        "minutes": "{value} د",
+        "note": "وقت الدفعة هو وقت جندي واحد مضروبًا في عدد القوات، ومقسومًا على 1 زائد سرعة التدريب، قبل التسريعات."
+    },
+    "events": {
+        "title": "نقاط الفعالية",
+        "tableLabel": "نقاط الفعالية",
+        "heads": {
+            "event": "الفعالية",
+            "training": "نقاط التدريب",
+            "perMinute": "نقاط التسريع لكل دقيقة",
+            "speedup": "نقاط التسريع",
+            "total": "الإجمالي"
+        },
+        "noSpeedup": "لا شيء",
+        "note": "تحتسب نقاط التدريب قوات دفعات التدريب عند فئتها. لا يمنح الارتقاء نقاط تدريب. تستخدم نقاط التسريع {minutes} دقيقة تسريع المطلوبة لكل المعسكرات. نقاط Hall of Chief لموسم واحد، ولا تشمل نقاطه لرفع القوة."
+    }
+}

@@ -1,0 +1,117 @@
+{
+    "intro": "Tetapkan tahap setiap camp dan apa yang dilatih atau dinaikkan pangkat. Ketiga-tiga camp berkongsi satu kapasiti latihan: kapasiti tiga tahap camp ditambah bersama, ditambah bonus di bawah.",
+    "reset": "Tetap semula semua",
+    "tier": "T{tier}",
+    "bonuses": {
+        "title": "Kapasiti dan kelajuan",
+        "researchCapacity": "Kapasiti penyelidikan",
+        "researchCapacityHint": "Kapasiti latihan daripada penyelidikan, seperti dipaparkan permainan.",
+        "trainingSpeed": "Kelajuan latihan (%)",
+        "trainingSpeedHint": "Kelajuan anda seperti dipaparkan permainan, tanpa buff di bawah.",
+        "position": "Pelantikan",
+        "positions": {
+            "none": "Tiada",
+            "ministerOfEducation": "Menteri Pendidikan",
+            "vicePresident": "Naib Presiden"
+        },
+        "rank": "Kedudukan",
+        "ranks": {
+            "regular": "Biasa",
+            "supreme": "Tertinggi"
+        },
+        "appointmentEffect": "+{capacity} kapasiti, +{speed}% kelajuan latihan",
+        "capacityBoost": "Peningkatan kapasiti",
+        "capacityBoostEffect": "Mendarab jumlah kapasiti dengan {multiplier}.",
+        "mobilize": "Mobilize",
+        "advancedTraining": "Advanced Training",
+        "speedEffect": "+{speed}% kelajuan latihan",
+        "costReduction": "Pengurangan kos",
+        "costReductionLabel": "Pengurangan kos {name} (%)",
+        "costReductionHint": "Dari 0 hingga {max}%."
+    },
+    "camps": {
+        "title": "Camp",
+        "level": "Tahap camp",
+        "levelOption": "{level} (kapasiti {capacity})",
+        "mode": "Tindakan",
+        "modes": {
+            "none": "Tidak melatih",
+            "training": "Latihan",
+            "promotion": "Kenaikan pangkat",
+            "both": "Latihan dan kenaikan pangkat"
+        },
+        "trainingTitle": "Latihan",
+        "promotionTitle": "Kenaikan pangkat",
+        "trainTier": "Peringkat untuk dilatih",
+        "fromTier": "Naik pangkat dari",
+        "toTier": "Naik pangkat ke",
+        "troopsPerBatch": "Tentera dalam setiap kumpulan",
+        "max": "Maks",
+        "maxValue": "Maks ({capacity})",
+        "batches": "Kumpulan",
+        "runTime": "Masa {time}"
+    },
+    "results": {
+        "title": "Hasil",
+        "capacity": "Kapasiti setiap kumpulan",
+        "troops": "Tentera diperoleh",
+        "power": "Kuasa diperoleh",
+        "speedUsed": "Kelajuan latihan digunakan",
+        "totalTime": "Pecutan diperlukan",
+        "longest": "Camp terlama",
+        "percent": "{value}%",
+        "noRuns": "Tetapkan sekurang-kurangnya satu camp untuk melatih atau menaikkan pangkat bagi melihat tentera, kuasa, sumber dan masa.",
+        "noChange": "Larian ini tidak mengubah tentera. Tetapkan bilangan melebihi 0."
+    },
+    "tiers": {
+        "troopsTitle": "Tentera mengikut peringkat",
+        "powerTitle": "Kuasa mengikut peringkat",
+        "heads": {
+            "tier": "Peringkat",
+            "total": "Jumlah"
+        },
+        "total": "Jumlah",
+        "promotionNote": "Kenaikan pangkat mengambil tentera dan kuasanya daripada peringkat lebih rendah dan menambahnya pada peringkat lebih tinggi, jadi peringkat lebih rendah menunjukkan perubahan negatif.",
+        "fireCrystalNote": "Kuasa menggunakan tahap Fire Crystal setiap camp: {levels}. Hanya peringkat 10 dan 11 berubah mengikut tahap. Bonus statistik daripada penyelidikan atau gear tidak termasuk.",
+        "fireCrystalLevel": "{name} {level}"
+    },
+    "resources": {
+        "title": "Sumber",
+        "tableLabel": "Sumber diperlukan",
+        "heads": {
+            "resource": "Sumber",
+            "amount": "Jumlah"
+        }
+    },
+    "time": {
+        "title": "Masa",
+        "heads": {
+            "camp": "Camp",
+            "action": "Tindakan",
+            "troopsPerBatch": "Tentera setiap kumpulan",
+            "batches": "Kumpulan",
+            "time": "Masa"
+        },
+        "training": "Latihan {tier}",
+        "promotion": "Kenaikan pangkat {from} ke {to}",
+        "campTotal": "Camp {name}",
+        "totalTime": "Semua camp ditambah bersama (pecutan diperlukan)",
+        "longest": "Camp terlama (camp melatih pada masa yang sama)",
+        "minutesNeeded": "Minit pecutan diperlukan",
+        "minutes": "{value} min",
+        "note": "Masa satu kumpulan ialah masa satu tentera didarab bilangan tentera, dibahagi 1 campur kelajuan latihan, sebelum pecutan."
+    },
+    "events": {
+        "title": "Mata acara",
+        "tableLabel": "Mata acara",
+        "heads": {
+            "event": "Acara",
+            "training": "Mata latihan",
+            "perMinute": "Mata pecutan setiap minit",
+            "speedup": "Mata pecutan",
+            "total": "Jumlah"
+        },
+        "noSpeedup": "Tiada",
+        "note": "Mata latihan mengira tentera larian latihan pada peringkatnya. Kenaikan pangkat tidak memberi mata latihan. Mata pecutan menggunakan {minutes} minit pecutan yang diperlukan untuk semua camp. Mata Hall of Chief adalah untuk satu musim, dan mata untuk menaikkan kuasa tidak termasuk."
+    }
+}

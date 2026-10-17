@@ -1,0 +1,77 @@
+{
+    "piece": {
+        "title": "Pieza de equipo",
+        "quality": "Calidad",
+        "slot": "Pieza",
+        "troopType": "Tipo de tropa",
+        "name": "{slot} de {troop}",
+        "mythicOnly": "Solo el equipo Mítico se puede forjar y fortalecer. La forja de maestría y el fortalecimiento están desactivados para esta calidad."
+    },
+    "tracks": {
+        "enhancement": "Potenciación",
+        "masteryForging": "Forja de maestría",
+        "empowerment": "Fortalecimiento",
+        "current": "Actual",
+        "goal": "Meta",
+        "range": "Niveles {from} a {to}",
+        "none": "Ninguno",
+        "forgingRow": "{name} (+{percent}%)",
+        "needsMythic": "Requiere equipo Mítico",
+        "reset": "Restablecer niveles"
+    },
+    "unmet": {
+        "title": "Aún no se puede alcanzar.",
+        "enhancement": "{track} requiere antes potenciación nivel {level}.",
+        "masteryForging": "{track} requiere antes forja de maestría {row}.",
+        "quality": "{track} requiere equipo Mítico.",
+        "hint": "Si la pieza ya está ahí, pon el nivel actual igual."
+    },
+    "noForging": "El fortalecimiento requiere forja de maestría en {row}. La forja de maestría está en Ninguno, así que el poder y las estadísticas no cuentan la forja.",
+    "summary": {
+        "title": "Resultado",
+        "powerGained": "Poder ganado",
+        "currentPower": "Poder actual",
+        "goalPower": "Poder tras el plan",
+        "forgingStatsUp": "Mejora de estadísticas por forja de maestría",
+        "percent": "+{value}%"
+    },
+    "resources": {
+        "title": "Recursos necesarios",
+        "item": "Objeto",
+        "amount": "Cantidad",
+        "empty": "Nada que mejorar. Sube una meta por encima de su nivel actual."
+    },
+    "stats": {
+        "title": "Estadísticas de la pieza",
+        "tableLabel": "Estadísticas de la pieza, ahora y tras el plan",
+        "stat": "Estadística",
+        "current": "Ahora",
+        "goal": "Tras el plan",
+        "gain": "Mejora",
+        "power": "Poder",
+        "health": "Salud",
+        "percentStat": "{name} (%)",
+        "percentValue": "{value}%",
+        "note": "Las estadísticas incluyen la forja de maestría y se redondean a la baja."
+    },
+    "milestones": {
+        "title": "Hitos de Mithril desbloqueados",
+        "line": "Fortalecimiento {level}: {event}, {stat}",
+        "empty": "Este plan no desbloquea ningún hito de Mithril."
+    },
+    "tracksTable": {
+        "title": "Por mejora",
+        "label": "Pasos, mejora y recursos de cada mejora",
+        "track": "Mejora",
+        "steps": "Pasos",
+        "gain": "Mejora",
+        "powerGain": "{value} de poder antes de la forja",
+        "statsUp": "+{value}% de estadísticas",
+        "resources": "Recursos",
+        "none": "Nada"
+    },
+    "events": {
+        "title": "Puntos de eventos",
+        "note": "Puntos por las Essence Stones y el Mithril del plan."
+    }
+}

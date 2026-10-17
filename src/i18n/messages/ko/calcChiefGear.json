@@ -1,0 +1,46 @@
+{
+    "intro": "장비마다 현재 레벨과 원하는 레벨을 고르세요. 재료, 장비 점수, 얻는 전투력, 이벤트 점수의 합계가 결과에 표시돼요. 장비를 제외하려면 목표를 없음으로 두세요. 아무것도 저장되지 않아요.",
+    "level": {
+        "plain": "{tier} 별 {stars}",
+        "withStage": "{tier} 별 {stars} 단계 {stage}",
+        "notCrafted": "없음 (제작 전)",
+        "skip": "없음 (제외)"
+    },
+    "all": {
+        "heading": "모든 장비 설정",
+        "current": "현재 레벨",
+        "goal": "목표 레벨",
+        "apply": "모두 적용",
+        "reset": "모두 초기화"
+    },
+    "pieces": {
+        "heading": "장비",
+        "troopGroup": "{troop} 장비",
+        "current": "현재 레벨",
+        "goal": "목표 레벨",
+        "currentLabel": "{piece} 현재 레벨",
+        "goalLabel": "{piece} 목표 레벨"
+    },
+    "results": {
+        "heading": "결과",
+        "score": "장비 점수",
+        "power": "얻는 전투력",
+        "steps": "단계",
+        "materials": "재료",
+        "noMaterials": "장비의 목표 레벨을 고르면 재료가 표시돼요.",
+        "events": "이벤트 점수",
+        "eventsNote": "이벤트 점수는 장비 점수에 각 이벤트의 \"Raise Chief Gear max score\" 행 점수를 곱한 값이에요."
+    },
+    "byPiece": {
+        "heading": "장비별",
+        "piece": "장비",
+        "levels": "레벨",
+        "levelRange": "{from}~{to}",
+        "steps": "단계",
+        "score": "점수",
+        "power": "전투력",
+        "stats": "능력치 보너스",
+        "statRange": "{from}%~{to}%",
+        "noLevel": "제작 전"
+    }
+}

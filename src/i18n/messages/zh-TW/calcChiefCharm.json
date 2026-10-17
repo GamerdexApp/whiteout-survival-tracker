@@ -1,0 +1,50 @@
+{
+    "setAll": {
+        "title": "統一設定所有護符",
+        "hint": "每件裝備有 3 個護符。先在這裡選好起始等級和目標等級並套用到全部 18 個護符，再單獨調整個別護符。",
+        "fromLabel": "起始",
+        "toLabel": "目標",
+        "apply": "套用到全部",
+        "reset": "全部重設"
+    },
+    "fields": {
+        "notStarted": "無（未開始）",
+        "skip": "無（略過）"
+    },
+    "result": {
+        "title": "結果",
+        "score": "護符分數",
+        "power": "獲得戰力",
+        "steps": "購買的等級數",
+        "charms": "升級的護符數",
+        "materials": "材料",
+        "noMaterials": "為護符選擇目標等級後即可查看材料。",
+        "eventPoints": "活動積分",
+        "eventPointsNote": "活動積分等於護符分數乘以各活動中「Raise Chief Charm max score」一列給出的積分。"
+    },
+    "charms": {
+        "title": "領主護符",
+        "hint": "選擇每個護符目前的等級和你想要的等級。保持為「無（略過）」的護符不計入。",
+        "charmLabel": "護符 {number}",
+        "charmName": "{piece}護符 {number}",
+        "fromLabel": "起始",
+        "toLabel": "目標",
+        "fromName": "起始（{charm}）",
+        "toName": "目標（{charm}）"
+    },
+    "breakdown": {
+        "title": "依護符",
+        "empty": "還沒有護符的目標高於起始等級。",
+        "charm": "護符",
+        "charmName": "{piece}護符 {number}",
+        "levels": "等級",
+        "levelRange": "{from} 到 {to}",
+        "stat": "數值加成",
+        "percent": "{value}%",
+        "steps": "購買的等級數",
+        "score": "分數",
+        "power": "戰力",
+        "materials": "材料",
+        "none": "無"
+    }
+}

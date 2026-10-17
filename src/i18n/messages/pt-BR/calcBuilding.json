@@ -1,0 +1,103 @@
+{
+    "speed": {
+        "title": "Velocidade de construção",
+        "reset": "Redefinir tudo",
+        "percentLabel": "Velocidade de construção %",
+        "percentHint": "Seu bônus como o jogo mostra, sem o vice-presidente e o Double Time.",
+        "percentPlus": "+{value}%",
+        "percent": "{value}%",
+        "vicePresident": {
+            "label": "Vice-presidente",
+            "none": "Nenhum",
+            "regular": "Comum",
+            "supreme": "Suprema"
+        },
+        "speedupLabel": "Minutos de aceleração que você usa",
+        "speedupHint": "Aceleradores de construção que você usa nestas melhorias. Eles somam aos pontos de evento.",
+        "doubleTime": "Double Time",
+        "doubleTimeNote": "A ordem do chefe soma {value}% às melhorias iniciadas enquanto ela está ativa.",
+        "total": "Velocidade de construção total"
+    },
+    "buildings": {
+        "title": "Construções",
+        "description": "Escolha o nível que você tem agora e o nível que você quer para cada construção. As construções requisito abaixo do nível que uma etapa pede são adicionadas ao plano, então defina o nível atual de cada construção que você tem, ou ela conta como não construída. Nada é salvo.",
+        "tableLabel": "Construções com nível atual e nível da meta",
+        "columns": {
+            "building": "Construção",
+            "current": "Nível atual",
+            "goal": "Nível da meta"
+        },
+        "levelLabel": {
+            "current": "Nível atual de {name}",
+            "goal": "Nível da meta de {name}"
+        },
+        "notBuilt": "Não construída"
+    },
+    "results": {
+        "title": "Resultados",
+        "empty": "Escolha uma meta acima do nível atual de uma construção para ver os recursos, o tempo, o poder e os pontos de evento.",
+        "plus": "+{value}",
+        "stats": {
+            "steps": "Níveis a construir",
+            "baseTime": "Tempo antes da velocidade",
+            "time": "Tempo com velocidade de {percent}%",
+            "power": "Poder ganho",
+            "speedupMinutes": "Minutos de aceleração necessários"
+        },
+        "unmet": {
+            "title": "Requisitos em construções que não estão nos dados não adicionam etapas:",
+            "item": "{building} nível {level}",
+            "listSeparator": ", "
+        },
+        "resources": {
+            "title": "Recursos"
+        },
+        "events": {
+            "title": "Pontos de evento",
+            "columns": {
+                "event": "Evento",
+                "crystalPoints": "Fire Crystals",
+                "speedupPoints": "Aceleradores",
+                "total": "Total",
+                "pointsPerPower": "Pontos",
+                "days": "Dias do evento",
+                "points": "Pontos do poder"
+            },
+            "scoreTableLabel": "Pontos de Fire Crystals e de aceleradores",
+            "speedupNote": "Os pontos de aceleração contam {used} dos {needed} minutos que o tempo de construção pede. Minutos além disso não pontuam.",
+            "hallTableLabel": "Pontos do {name} pelo poder",
+            "hallNote": "O {name} pontua cada ponto de poder ganho com construção. O multiplicador depende do dia do evento.",
+            "pointsPerPower": "{value} por poder",
+            "daySeparator": ", "
+        },
+        "breakdown": {
+            "title": "Por construção",
+            "plus": "+{value}",
+            "levelRange": "{from} a {to}",
+            "prerequisite": "Requisito",
+            "free": "Sem custo",
+            "columns": {
+                "building": "Construção",
+                "levels": "Níveis",
+                "steps": "Etapas",
+                "power": "Poder",
+                "baseTime": "Tempo antes da velocidade",
+                "resources": "Recursos"
+            }
+        },
+        "stepDetails": {
+            "title": "{count, plural, one {Detalhes da etapa ({amount} etapa)} other {Detalhes das etapas ({amount} etapas)}}",
+            "tableLabel": "Cada nível construído, na ordem de construção",
+            "plus": "+{value}",
+            "prerequisite": "Requisito",
+            "free": "Sem custo",
+            "columns": {
+                "building": "Construção",
+                "level": "Nível",
+                "power": "Poder",
+                "baseTime": "Tempo antes da velocidade",
+                "cost": "Custo"
+            }
+        }
+    }
+}

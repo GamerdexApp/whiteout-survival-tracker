@@ -1,0 +1,61 @@
+{
+    "intro": "Thêm các thú cưng bạn muốn nâng cấp. Với mỗi thú cưng, chọn cấp hiện tại và cấp bạn muốn. Thú cưng thăng tiến ở mỗi cấp là bội số của 10 và cần thăng tiến để vượt qua cấp đó.",
+    "picker": {
+        "petLabel": "Thú cưng",
+        "add": "Thêm thú cưng",
+        "addAll": "Thêm mọi thú cưng",
+        "allAdded": "Mọi thú cưng đã có trong danh sách.",
+        "setAllMax": "Đặt mọi mục tiêu về tối đa",
+        "advanceAtMax": "Thăng tiến cả ở cấp tối đa",
+        "removeAll": "Xóa tất cả"
+    },
+    "row": {
+        "maxLevel": "Cấp tối đa {max}",
+        "current": "Cấp hiện tại",
+        "goal": "Cấp mục tiêu",
+        "currentAdvanced": "Đã thăng tiến",
+        "goalAdvanced": "Thăng tiến ở mục tiêu",
+        "keepsAdvancement": "Thú cưng giữ lần thăng tiến ở cấp này.",
+        "remove": "Xóa {pet}"
+    },
+    "empty": "Chưa thêm thú cưng nào. Hãy thêm một thú cưng ở trên để xem thức ăn, vật phẩm thăng tiến và mức tăng.",
+    "results": {
+        "title": "Kết quả",
+        "stats": {
+            "levels": "Cấp",
+            "advancements": "Lần thăng tiến",
+            "troopAttack": "Tấn công quân tăng",
+            "troopDefense": "Phòng thủ quân tăng",
+            "power": "Sức mạnh nhận được",
+            "advancementScore": "Điểm thăng tiến"
+        },
+        "percent": "{value}%",
+        "unknown": "Không rõ",
+        "unknownPowerNote": "Dữ liệu game không có sức mạnh sau thăng tiến cho một số cấp thăng tiến, nên mức tăng sức mạnh của các thú cưng này là Không rõ.",
+        "resources": {
+            "title": "Tài nguyên",
+            "empty": "Hãy chọn mục tiêu cao hơn cấp hiện tại để xem tài nguyên."
+        },
+        "events": {
+            "title": "Điểm sự kiện từ điểm thăng tiến",
+            "noPoints": "Không có điểm",
+            "note": "Điểm sự kiện bằng điểm thăng tiến nhân với số điểm của dòng \"Pet advancement score increases by 1\" trong mỗi sự kiện. {hallOfChief} không có dòng thú cưng."
+        },
+        "byPet": {
+            "title": "Theo thú cưng",
+            "tableLabel": "Kết quả theo thú cưng",
+            "empty": "Chưa có thú cưng nào tăng cấp hoặc thăng tiến.",
+            "heads": {
+                "pet": "Thú cưng",
+                "levels": "Cấp",
+                "advancements": "Lần thăng tiến",
+                "score": "Điểm",
+                "resources": "Tài nguyên",
+                "troopAttack": "Tấn công quân",
+                "troopDefense": "Phòng thủ quân",
+                "power": "Sức mạnh"
+            },
+            "noResources": "Không có"
+        }
+    }
+}

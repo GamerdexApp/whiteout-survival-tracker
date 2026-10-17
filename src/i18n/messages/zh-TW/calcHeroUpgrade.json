@@ -1,0 +1,70 @@
+{
+    "intro": "一次規劃一名英雄。星級使用遊戲內的標示，3.1 表示 3 星 1 階，5.0 是最後一個標示。這裡不會儲存任何內容，重新整理頁面會清除你的選擇。",
+    "hero": {
+        "label": "英雄",
+        "option": "{name}（第 {generation} 世代）",
+        "generation": "第 {generation} 世代",
+        "reset": "重設英雄"
+    },
+    "range": {
+        "current": "目前",
+        "goal": "目標"
+    },
+    "stars": {
+        "title": "星級",
+        "row": "星級與階級"
+    },
+    "skills": {
+        "title": "技能",
+        "exploration": "探索",
+        "expedition": "遠征"
+    },
+    "weapon": {
+        "title": "專屬武器",
+        "row": "武器等級",
+        "none": "{hero}沒有專屬武器。"
+    },
+    "result": {
+        "title": "所需內容",
+        "unmetTitle": "需要更多星級。",
+        "unmet": "{items}。如果英雄已經有這些星級，請把星級目標設為相同。",
+        "unmetItem": "{skill} {level} 級需要 {star} 星",
+        "tiles": {
+            "starSteps": "星級步驟",
+            "shards": "碎片",
+            "skillLevels": "技能等級",
+            "weaponLevels": "武器等級",
+            "widgets": "Widgets",
+            "powerGain": "戰力提升"
+        },
+        "resources": {
+            "title": "資源",
+            "item": "道具",
+            "amount": "數量",
+            "widgets": "Widgets",
+            "empty": "還沒有選擇任何內容。請把目標設為高於目前等級。",
+            "ownShards": "{own}與{general}等同計算。"
+        },
+        "unlocked": {
+            "title": "解鎖武器技能"
+        },
+        "stats": {
+            "title": "80 級時的數值",
+            "stat": "數值",
+            "estimate": "估計值",
+            "estimateNote": "5 星以下的數值是依 5 星數值換算的估計值。",
+            "exploration": "探索",
+            "expedition": "遠征",
+            "attack": "攻擊",
+            "defense": "防禦",
+            "health": "生命",
+            "percent": "{value}%"
+        },
+        "events": {
+            "title": "活動積分",
+            "event": "活動",
+            "points": "積分"
+        },
+        "powerNote": "戰力包含星級、技能和武器等級。沒有戰力資料的星級標示會使提升顯示為未知。"
+    }
+}

@@ -1,0 +1,117 @@
+{
+    "intro": "Set the level of each camp and what it trains or promotes. All three camps share one training capacity: the capacity of the three camp levels added together, plus the bonuses below.",
+    "reset": "Reset all",
+    "tier": "T{tier}",
+    "bonuses": {
+        "title": "Capacity and speed",
+        "researchCapacity": "Research capacity",
+        "researchCapacityHint": "Training capacity from research, as the game shows it.",
+        "trainingSpeed": "Training speed (%)",
+        "trainingSpeedHint": "Your speed as the game shows it, without the buffs below.",
+        "position": "Appointment",
+        "positions": {
+            "none": "None",
+            "ministerOfEducation": "Minister of Education",
+            "vicePresident": "Vice President"
+        },
+        "rank": "Rank",
+        "ranks": {
+            "regular": "Regular",
+            "supreme": "Supreme"
+        },
+        "appointmentEffect": "+{capacity} capacity, +{speed}% training speed",
+        "capacityBoost": "Capacity boost",
+        "capacityBoostEffect": "Multiplies the total capacity by {multiplier}.",
+        "mobilize": "Mobilize",
+        "advancedTraining": "Advanced Training",
+        "speedEffect": "+{speed}% training speed",
+        "costReduction": "Cost reduction",
+        "costReductionLabel": "{name} cost reduction (%)",
+        "costReductionHint": "From 0 to {max}%."
+    },
+    "camps": {
+        "title": "Camps",
+        "level": "Camp level",
+        "levelOption": "{level} ({capacity} capacity)",
+        "mode": "Action",
+        "modes": {
+            "none": "Not training",
+            "training": "Training",
+            "promotion": "Promotion",
+            "both": "Training and promotion"
+        },
+        "trainingTitle": "Training",
+        "promotionTitle": "Promotion",
+        "trainTier": "Tier to train",
+        "fromTier": "Promote from",
+        "toTier": "Promote to",
+        "troopsPerBatch": "Troops in each batch",
+        "max": "Max",
+        "maxValue": "Max ({capacity})",
+        "batches": "Batches",
+        "runTime": "Time {time}"
+    },
+    "results": {
+        "title": "Results",
+        "capacity": "Capacity per batch",
+        "troops": "Troops gained",
+        "power": "Power gained",
+        "speedUsed": "Training speed used",
+        "totalTime": "Speedups needed",
+        "longest": "Longest camp",
+        "percent": "{value}%",
+        "noRuns": "Set at least one camp to train or promote to see the troops, power, resources and time.",
+        "noChange": "These runs change no troops. Set a count above 0."
+    },
+    "tiers": {
+        "troopsTitle": "Troops by tier",
+        "powerTitle": "Power by tier",
+        "heads": {
+            "tier": "Tier",
+            "total": "Total"
+        },
+        "total": "Total",
+        "promotionNote": "A promotion takes troops and their power from the lower tier and adds them to the higher tier, so the lower tier shows a negative change.",
+        "fireCrystalNote": "Power uses the Fire Crystal level of each camp: {levels}. Only tiers 10 and 11 change with the level. Stat bonuses from research or gear are not included.",
+        "fireCrystalLevel": "{name} {level}"
+    },
+    "resources": {
+        "title": "Resources",
+        "tableLabel": "Resources needed",
+        "heads": {
+            "resource": "Resource",
+            "amount": "Amount"
+        }
+    },
+    "time": {
+        "title": "Time",
+        "heads": {
+            "camp": "Camp",
+            "action": "Action",
+            "troopsPerBatch": "Troops per batch",
+            "batches": "Batches",
+            "time": "Time"
+        },
+        "training": "Training {tier}",
+        "promotion": "Promotion {from} to {to}",
+        "campTotal": "{name} camp",
+        "totalTime": "All camps added together (speedups needed)",
+        "longest": "Longest camp (the camps train at the same time)",
+        "minutesNeeded": "Speedup minutes needed",
+        "minutes": "{value} min",
+        "note": "The time of a batch is the time of one troop times the troops, divided by 1 plus the training speed, before speedups."
+    },
+    "events": {
+        "title": "Event points",
+        "tableLabel": "Event points",
+        "heads": {
+            "event": "Event",
+            "training": "Training points",
+            "perMinute": "Speedup points per minute",
+            "speedup": "Speedup points",
+            "total": "Total"
+        },
+        "noSpeedup": "None",
+        "note": "Training points count the troops of training runs at their tier. A promotion gives no training points. Speedup points use the {minutes} speedup minutes needed for all camps. Hall of Chief points are for one season, and its points for raising power are not included."
+    }
+}

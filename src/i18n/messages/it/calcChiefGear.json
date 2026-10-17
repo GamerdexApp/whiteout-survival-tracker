@@ -1,0 +1,46 @@
+{
+    "intro": "Scegli il livello a cui è ogni pezzo ora e quello che vuoi. I risultati sommano i materiali, il punteggio equipaggiamento, la potenza guadagnata e i punti evento. Lascia un obiettivo su Nessuno per saltare quel pezzo. Niente viene salvato.",
+    "level": {
+        "plain": "{tier} Stella {stars}",
+        "withStage": "{tier} Stella {stars} Fase {stage}",
+        "notCrafted": "Nessuno (non creato)",
+        "skip": "Nessuno (salta)"
+    },
+    "all": {
+        "heading": "Imposta tutti i pezzi",
+        "current": "Livello attuale",
+        "goal": "Livello obiettivo",
+        "apply": "Applica a tutti",
+        "reset": "Azzera tutto"
+    },
+    "pieces": {
+        "heading": "Pezzi di equipaggiamento",
+        "troopGroup": "Pezzi {troop}",
+        "current": "Livello attuale",
+        "goal": "Livello obiettivo",
+        "currentLabel": "Livello attuale di {piece}",
+        "goalLabel": "Livello obiettivo di {piece}"
+    },
+    "results": {
+        "heading": "Risultati",
+        "score": "Punteggio equipaggiamento",
+        "power": "Potenza guadagnata",
+        "steps": "Passi",
+        "materials": "Materiali",
+        "noMaterials": "Scegli un livello obiettivo per un pezzo per vedere i materiali.",
+        "events": "Punti evento",
+        "eventsNote": "I punti evento sono il punteggio equipaggiamento per i punti che la riga \"Raise Chief Gear max score\" assegna in ogni evento."
+    },
+    "byPiece": {
+        "heading": "Per pezzo",
+        "piece": "Pezzo",
+        "levels": "Livelli",
+        "levelRange": "da {from} a {to}",
+        "steps": "Passi",
+        "score": "Punteggio",
+        "power": "Potenza",
+        "stats": "Bonus statistica",
+        "statRange": "da {from}% a {to}%",
+        "noLevel": "Non creato"
+    }
+}

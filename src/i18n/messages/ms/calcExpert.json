@@ -1,0 +1,67 @@
+{
+    "intro": "Pilih tahap afiniti dan tahap kemahiran yang dimiliki setiap pakar sekarang dan yang anda mahu. Kalkulator menjumlahkan Books of Knowledge, sigil pakar, EXP kemahiran dan mata afiniti. Pakar naik pangkat pada setiap tahap kesepuluh dan memerlukan sigil untuk melepasinya. Hidupkan Lanjutan apabila pakar sudah naik pangkat pada tahap semasa, atau untuk membayar kenaikan pangkat pada tahap matlamat. Bakat naik tahap bersama hubungan dan tidak berkos.",
+    "goals": {
+        "title": "Pakar",
+        "empty": "Tambah pakar untuk melihat Books of Knowledge, sigil dan mata acara."
+    },
+    "add": {
+        "label": "Pakar untuk ditambah",
+        "button": "Tambah",
+        "allAdded": "Semua pakar sudah ada dalam kalkulator."
+    },
+    "expert": {
+        "meta": "{title}, {specialty}",
+        "remove": "Buang",
+        "removeLabel": "Buang {expert}",
+        "affinity": "Tahap afiniti",
+        "current": "Semasa",
+        "goal": "Matlamat",
+        "advancedAtCurrent": "Sudah naik pangkat pada tahap {level}",
+        "advanceAtGoal": "Naik pangkat pada tahap {level}",
+        "skillMax": "Maks {level}"
+    },
+    "results": {
+        "title": "Hasil",
+        "stats": {
+            "books": "Books of Knowledge",
+            "sigils": "Sigil pakar",
+            "exp": "EXP kemahiran",
+            "learningTime": "Masa pembelajaran",
+            "affinity": "Mata afiniti",
+            "levels": "Tahap afiniti",
+            "skillLevels": "Tahap kemahiran",
+            "advancements": "Kenaikan pangkat"
+        }
+    },
+    "resources": {
+        "title": "Sumber",
+        "nothing": "Matlamat ini tidak memerlukan Books of Knowledge atau sigil.",
+        "commonSigils": "Common Expert Sigils bertukar menjadi sigil mana-mana pakar."
+    },
+    "events": {
+        "title": "Mata acara",
+        "heads": {
+            "event": "Acara",
+            "items": "Buku dan sigil",
+            "perMinute": "Setiap minit pecutan",
+            "speedups": "Pecutan",
+            "total": "Jumlah"
+        },
+        "hint": "Mata pecutan mengira pecutan Pembelajaran atau Umum untuk seluruh masa pembelajaran {duration}."
+    },
+    "byExpert": {
+        "title": "Mengikut pakar",
+        "nothing": "Belum ada pakar dengan matlamat melebihi tahap semasanya.",
+        "heads": {
+            "expert": "Pakar",
+            "levels": "Tahap afiniti",
+            "advancements": "Kenaikan pangkat",
+            "skillLevels": "Tahap kemahiran",
+            "books": "Buku",
+            "sigils": "Sigil",
+            "exp": "EXP kemahiran",
+            "learningTime": "Masa pembelajaran",
+            "affinity": "Mata afiniti"
+        }
+    }
+}

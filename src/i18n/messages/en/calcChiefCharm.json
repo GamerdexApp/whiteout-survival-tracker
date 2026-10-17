@@ -1,0 +1,50 @@
+{
+    "setAll": {
+        "title": "Set every charm",
+        "hint": "Each gear piece has 3 charms. Pick a start and goal level here and apply it to all 18 charms, then change single charms below.",
+        "fromLabel": "From",
+        "toLabel": "To",
+        "apply": "Apply to all",
+        "reset": "Reset all"
+    },
+    "fields": {
+        "notStarted": "None (not started)",
+        "skip": "None (skip)"
+    },
+    "result": {
+        "title": "Result",
+        "score": "Charm score",
+        "power": "Power gained",
+        "steps": "Levels bought",
+        "charms": "Charms upgraded",
+        "materials": "Materials",
+        "noMaterials": "Choose a goal level for a charm to see the materials.",
+        "eventPoints": "Event points",
+        "eventPointsNote": "Event points are the charm score times the points that the \"Raise Chief Charm max score\" row pays in each event."
+    },
+    "charms": {
+        "title": "Chief charms",
+        "hint": "Pick the level each charm is at now and the level you want. A charm left on None (skip) is not counted.",
+        "charmLabel": "Charm {number}",
+        "charmName": "{piece} charm {number}",
+        "fromLabel": "From",
+        "toLabel": "To",
+        "fromName": "From ({charm})",
+        "toName": "To ({charm})"
+    },
+    "breakdown": {
+        "title": "By charm",
+        "empty": "No charm has a goal above its start level yet.",
+        "charm": "Charm",
+        "charmName": "{piece} charm {number}",
+        "levels": "Levels",
+        "levelRange": "{from} to {to}",
+        "stat": "Stat bonus",
+        "percent": "{value}%",
+        "steps": "Levels bought",
+        "score": "Score",
+        "power": "Power",
+        "materials": "Materials",
+        "none": "None"
+    }
+}

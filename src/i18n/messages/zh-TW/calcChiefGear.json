@@ -1,0 +1,46 @@
+{
+    "intro": "選擇每件裝備目前的等級和你想要的等級。結果會彙總材料、裝備分數、獲得戰力和活動積分。把目標保持為「無」即可略過該裝備。這裡不會儲存任何內容。",
+    "level": {
+        "plain": "{tier} {stars} 星",
+        "withStage": "{tier} {stars} 星 第 {stage} 階段",
+        "notCrafted": "無（未製作）",
+        "skip": "無（略過）"
+    },
+    "all": {
+        "heading": "統一設定所有裝備",
+        "current": "目前等級",
+        "goal": "目標等級",
+        "apply": "套用到全部",
+        "reset": "全部重設"
+    },
+    "pieces": {
+        "heading": "裝備",
+        "troopGroup": "{troop}裝備",
+        "current": "目前等級",
+        "goal": "目標等級",
+        "currentLabel": "{piece}目前等級",
+        "goalLabel": "{piece}目標等級"
+    },
+    "results": {
+        "heading": "結果",
+        "score": "裝備分數",
+        "power": "獲得戰力",
+        "steps": "步驟",
+        "materials": "材料",
+        "noMaterials": "為裝備選擇目標等級後即可查看材料。",
+        "events": "活動積分",
+        "eventsNote": "活動積分等於裝備分數乘以各活動中「Raise Chief Gear max score」一列給出的積分。"
+    },
+    "byPiece": {
+        "heading": "依裝備",
+        "piece": "裝備",
+        "levels": "等級",
+        "levelRange": "{from} 到 {to}",
+        "steps": "步驟",
+        "score": "分數",
+        "power": "戰力",
+        "stats": "數值加成",
+        "statRange": "{from}% 到 {to}%",
+        "noLevel": "未製作"
+    }
+}

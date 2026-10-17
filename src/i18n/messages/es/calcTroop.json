@@ -1,0 +1,117 @@
+{
+    "intro": "Elige el nivel de cada campamento y lo que entrena o asciende. Los tres campamentos comparten una capacidad de entrenamiento: la suma de la capacidad de los tres niveles de campamento, más las bonificaciones de abajo.",
+    "reset": "Restablecer todo",
+    "tier": "T{tier}",
+    "bonuses": {
+        "title": "Capacidad y velocidad",
+        "researchCapacity": "Capacidad de investigación",
+        "researchCapacityHint": "Capacidad de entrenamiento por investigación, tal como la muestra el juego.",
+        "trainingSpeed": "Velocidad de entrenamiento (%)",
+        "trainingSpeedHint": "Tu velocidad tal como la muestra el juego, sin las mejoras de abajo.",
+        "position": "Nombramiento",
+        "positions": {
+            "none": "Ninguno",
+            "ministerOfEducation": "Ministro de Educación",
+            "vicePresident": "Vicepresidente"
+        },
+        "rank": "Rango",
+        "ranks": {
+            "regular": "Normal",
+            "supreme": "Supremo"
+        },
+        "appointmentEffect": "+{capacity} de capacidad, +{speed}% de velocidad de entrenamiento",
+        "capacityBoost": "Aumento de capacidad",
+        "capacityBoostEffect": "Multiplica la capacidad total por {multiplier}.",
+        "mobilize": "Mobilize",
+        "advancedTraining": "Advanced Training",
+        "speedEffect": "+{speed}% de velocidad de entrenamiento",
+        "costReduction": "Reducción de costes",
+        "costReductionLabel": "Reducción de costes de {name} (%)",
+        "costReductionHint": "De 0 a {max}%."
+    },
+    "camps": {
+        "title": "Campamentos",
+        "level": "Nivel del campamento",
+        "levelOption": "{level} ({capacity} de capacidad)",
+        "mode": "Acción",
+        "modes": {
+            "none": "Sin entrenar",
+            "training": "Entrenamiento",
+            "promotion": "Ascenso",
+            "both": "Entrenamiento y ascenso"
+        },
+        "trainingTitle": "Entrenamiento",
+        "promotionTitle": "Ascenso",
+        "trainTier": "Tier que entrenar",
+        "fromTier": "Ascender desde",
+        "toTier": "Ascender a",
+        "troopsPerBatch": "Tropas en cada lote",
+        "max": "Máx.",
+        "maxValue": "Máx. ({capacity})",
+        "batches": "Lotes",
+        "runTime": "Tiempo {time}"
+    },
+    "results": {
+        "title": "Resultados",
+        "capacity": "Capacidad por lote",
+        "troops": "Tropas ganadas",
+        "power": "Poder ganado",
+        "speedUsed": "Velocidad de entrenamiento usada",
+        "totalTime": "Aceleradores necesarios",
+        "longest": "Campamento más largo",
+        "percent": "{value}%",
+        "noRuns": "Pon al menos un campamento a entrenar o ascender para ver las tropas, el poder, los recursos y el tiempo.",
+        "noChange": "Estos entrenamientos no cambian ninguna tropa. Pon una cantidad mayor que 0."
+    },
+    "tiers": {
+        "troopsTitle": "Tropas por tier",
+        "powerTitle": "Poder por tier",
+        "heads": {
+            "tier": "Tier",
+            "total": "Total"
+        },
+        "total": "Total",
+        "promotionNote": "Un ascenso quita tropas y su poder del tier inferior y los suma al tier superior, así que el tier inferior muestra un cambio negativo.",
+        "fireCrystalNote": "El poder usa el nivel de Fire Crystal de cada campamento: {levels}. Solo los tiers 10 y 11 cambian con el nivel. No se incluyen las bonificaciones de estadísticas de la investigación ni del equipo.",
+        "fireCrystalLevel": "{name} {level}"
+    },
+    "resources": {
+        "title": "Recursos",
+        "tableLabel": "Recursos necesarios",
+        "heads": {
+            "resource": "Recurso",
+            "amount": "Cantidad"
+        }
+    },
+    "time": {
+        "title": "Tiempo",
+        "heads": {
+            "camp": "Campamento",
+            "action": "Acción",
+            "troopsPerBatch": "Tropas por lote",
+            "batches": "Lotes",
+            "time": "Tiempo"
+        },
+        "training": "Entrenamiento {tier}",
+        "promotion": "Ascenso {from} a {to}",
+        "campTotal": "Campamento de {name}",
+        "totalTime": "Todos los campamentos sumados (aceleradores necesarios)",
+        "longest": "Campamento más largo (los campamentos entrenan a la vez)",
+        "minutesNeeded": "Minutos de aceleradores necesarios",
+        "minutes": "{value} min",
+        "note": "El tiempo de un lote es el tiempo de una tropa por las tropas, dividido entre 1 más la velocidad de entrenamiento, antes de los aceleradores."
+    },
+    "events": {
+        "title": "Puntos de evento",
+        "tableLabel": "Puntos de evento",
+        "heads": {
+            "event": "Evento",
+            "training": "Puntos de entrenamiento",
+            "perMinute": "Puntos de aceleradores por minuto",
+            "speedup": "Puntos de aceleradores",
+            "total": "Total"
+        },
+        "noSpeedup": "Ninguno",
+        "note": "Los puntos de entrenamiento cuentan las tropas de los entrenamientos en su tier. Un ascenso no da puntos de entrenamiento. Los puntos de aceleradores usan los {minutes} minutos de aceleradores necesarios para todos los campamentos. Los puntos de Hall of Chief son de una temporada y no incluyen sus puntos por subir poder."
+    }
+}

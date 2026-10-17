@@ -1,0 +1,118 @@
+{
+    "speed": {
+        "title": "Kelajuan penyelidikan",
+        "reset": "Tetap semula semua",
+        "percentLabel": "Kelajuan penyelidikan %",
+        "percentHint": "Kelajuan anda seperti dipaparkan permainan, tanpa buff di sini.",
+        "stateBuff": "Buff negeri",
+        "percentPlus": "+{value}%",
+        "percent": "{value}%",
+        "vicePresident": {
+            "label": "Naib Presiden",
+            "none": "Tiada",
+            "regular": "Biasa",
+            "supreme": "Tertinggi"
+        },
+        "total": "Jumlah kelajuan penyelidikan"
+    },
+    "lines": {
+        "title": "Barisan penyelidikan",
+        "description": "Pilih tahap anda sekarang dan tahap yang anda mahu untuk setiap barisan. Setiap peringkat sesebuah barisan ialah barisannya sendiri, seperti dalam permainan. Tiada apa disimpan.",
+        "tabsLabel": "Pokok penyelidikan",
+        "tabs": {
+            "growth": "Growth",
+            "economy": "Economy",
+            "battle": "Battle",
+            "war-academy-troops": "War Academy T11",
+            "t12-infantry": "Infantri T12",
+            "t12-marksman": "Penembak tepat T12",
+            "t12-lancer": "Penombak T12"
+        },
+        "tableLabel": "Barisan penyelidikan pokok ini",
+        "columns": {
+            "line": "Barisan penyelidikan",
+            "current": "Tahap semasa",
+            "goal": "Tahap matlamat"
+        },
+        "levelLabel": {
+            "current": "Tahap semasa {name}",
+            "goal": "Tahap matlamat {name}"
+        },
+        "levelMax": "{level} (maks)",
+        "tier": {
+            "plain": "Peringkat {tier}",
+            "troopLine": "{line} T{tier}"
+        },
+        "bulk": {
+            "current": "Tetapkan semua tahap semasa kepada",
+            "goal": "Tetapkan semua matlamat kepada",
+            "pick": "Pilih tahap"
+        }
+    },
+    "results": {
+        "title": "Hasil",
+        "empty": "Pilih matlamat melebihi tahap semasa sesebuah barisan penyelidikan untuk melihat sumber, masa, kuasa dan mata acara.",
+        "plus": "+{value}",
+        "stats": {
+            "steps": "Tahap untuk diselidik",
+            "baseTime": "Masa sebelum kelajuan",
+            "time": "Masa pada kelajuan {percent}%",
+            "power": "Kuasa diperoleh",
+            "speedupMinutes": "Minit pecutan diperlukan"
+        },
+        "resources": {
+            "title": "Sumber"
+        },
+        "bonuses": {
+            "title": "Bonus diperoleh",
+            "percentGain": "+{value}%",
+            "flatGain": "+{value}",
+            "none": "Tahap ini tidak memberi bonus."
+        },
+        "events": {
+            "title": "Mata acara",
+            "columns": {
+                "event": "Acara",
+                "shardPoints": "Fire Crystal Shards",
+                "speedupPoints": "Pecutan",
+                "total": "Jumlah",
+                "pointsPerPower": "Mata",
+                "days": "Hari acara",
+                "points": "Mata daripada kuasa"
+            },
+            "names": {
+                "svs": "SvS",
+                "allianceShowdown": "Alliance Showdown",
+                "kingOfIcefield": "King of Icefield",
+                "hallOfChief": "Hall of Chief"
+            },
+            "speedupTableLabel": "Mata Fire Crystal Shard dan pecutan",
+            "speedupNote": "Mata pecutan menganggap anda menamatkan kesemua {minutes} minit masa penyelidikan dengan pecutan penyelidikan.",
+            "hallTableLabel": "Mata Hall of Chief daripada kuasa",
+            "hallNote": "Hall of Chief memarkahkan setiap mata kuasa yang diperoleh melalui penyelidikan. Pengganda bergantung pada hari acara.",
+            "pointsPerPower": "{value} setiap kuasa",
+            "daySeparator": ", "
+        },
+        "requirements": {
+            "buildings": "Bangunan diperlukan:",
+            "buildingLevel": "{building} tahap {level}",
+            "listSeparator": ", ",
+            "unmetTitle": "{count, plural, other {{amount} tahap memerlukan}} barisan penyelidikan lain pada tahap yang tidak dicapai pelan anda:",
+            "unmetItem": "{name} tahap {level} memerlukan {requires} tahap {requiresLevel} (dirancang {planned})",
+            "unmetMore": "Dan {amount} lagi.",
+            "stepsWithoutTime": "{count, plural, other {{amount} tahap tiada}} masa penyelidikan dalam data, jadi masanya dikira 0.",
+            "placeholders": "Belum ada data kos atau masa untuk {names}. Sumber dan masa mereka tidak dikira."
+        },
+        "breakdown": {
+            "title": "Mengikut barisan penyelidikan",
+            "plus": "+{value}",
+            "columns": {
+                "line": "Barisan penyelidikan",
+                "steps": "Tahap",
+                "baseTime": "Masa sebelum kelajuan",
+                "power": "Kuasa",
+                "resources": "Sumber"
+            }
+        }
+    }
+}

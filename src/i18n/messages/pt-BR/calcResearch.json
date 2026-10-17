@@ -1,0 +1,118 @@
+{
+    "speed": {
+        "title": "Velocidade de pesquisa",
+        "reset": "Redefinir tudo",
+        "percentLabel": "Velocidade de pesquisa %",
+        "percentHint": "Sua velocidade como o jogo mostra, sem os buffs daqui.",
+        "stateBuff": "Buff do estado",
+        "percentPlus": "+{value}%",
+        "percent": "{value}%",
+        "vicePresident": {
+            "label": "Vice-presidente",
+            "none": "Nenhum",
+            "regular": "Comum",
+            "supreme": "Suprema"
+        },
+        "total": "Velocidade de pesquisa total"
+    },
+    "lines": {
+        "title": "Linhas de pesquisa",
+        "description": "Escolha o nível que você tem agora e o nível que você quer para cada linha. Cada tier de uma linha é uma linha própria, como no jogo. Nada é salvo.",
+        "tabsLabel": "Árvores de pesquisa",
+        "tabs": {
+            "growth": "Crescimento",
+            "economy": "Economia",
+            "battle": "Batalha",
+            "war-academy-troops": "War Academy T11",
+            "t12-infantry": "Infantaria T12",
+            "t12-marksman": "Atirador T12",
+            "t12-lancer": "Lanceiro T12"
+        },
+        "tableLabel": "Linhas de pesquisa desta árvore",
+        "columns": {
+            "line": "Linha de pesquisa",
+            "current": "Nível atual",
+            "goal": "Nível da meta"
+        },
+        "levelLabel": {
+            "current": "Nível atual de {name}",
+            "goal": "Nível da meta de {name}"
+        },
+        "levelMax": "{level} (máx.)",
+        "tier": {
+            "plain": "Tier {tier}",
+            "troopLine": "{line} T{tier}"
+        },
+        "bulk": {
+            "current": "Definir todos os níveis atuais em",
+            "goal": "Definir todas as metas em",
+            "pick": "Escolha um nível"
+        }
+    },
+    "results": {
+        "title": "Resultados",
+        "empty": "Escolha uma meta acima do nível atual de uma linha de pesquisa para ver os recursos, o tempo, o poder e os pontos de evento.",
+        "plus": "+{value}",
+        "stats": {
+            "steps": "Níveis a pesquisar",
+            "baseTime": "Tempo antes da velocidade",
+            "time": "Tempo com velocidade de {percent}%",
+            "power": "Poder ganho",
+            "speedupMinutes": "Minutos de aceleração necessários"
+        },
+        "resources": {
+            "title": "Recursos"
+        },
+        "bonuses": {
+            "title": "Bônus ganhos",
+            "percentGain": "+{value}%",
+            "flatGain": "+{value}",
+            "none": "Estes níveis não dão bônus."
+        },
+        "events": {
+            "title": "Pontos de evento",
+            "columns": {
+                "event": "Evento",
+                "shardPoints": "Fire Crystal Shards",
+                "speedupPoints": "Aceleradores",
+                "total": "Total",
+                "pointsPerPower": "Pontos",
+                "days": "Dias do evento",
+                "points": "Pontos do poder"
+            },
+            "names": {
+                "svs": "SvS",
+                "allianceShowdown": "Alliance Showdown",
+                "kingOfIcefield": "King of Icefield",
+                "hallOfChief": "Hall of Chief"
+            },
+            "speedupTableLabel": "Pontos de Fire Crystal Shard e de aceleradores",
+            "speedupNote": "Os pontos de aceleração supõem que você termine todos os {minutes} minutos de tempo de pesquisa com aceleradores de pesquisa.",
+            "hallTableLabel": "Pontos do Hall of Chief pelo poder",
+            "hallNote": "O Hall of Chief pontua cada ponto de poder ganho com pesquisa. O multiplicador depende do dia do evento.",
+            "pointsPerPower": "{value} por poder",
+            "daySeparator": ", "
+        },
+        "requirements": {
+            "buildings": "Construções necessárias:",
+            "buildingLevel": "{building} nível {level}",
+            "listSeparator": ", ",
+            "unmetTitle": "{count, plural, one {{amount} nível requer} other {{amount} níveis requerem}} outra linha de pesquisa em um nível que seu plano não alcança:",
+            "unmetItem": "{name} nível {level} requer {requires} nível {requiresLevel} (planejado {planned})",
+            "unmetMore": "E mais {amount}.",
+            "stepsWithoutTime": "{count, plural, one {{amount} nível não tem} other {{amount} níveis não têm}} tempo de pesquisa nos dados, então o tempo conta como 0.",
+            "placeholders": "Ainda não há dados de custo ou tempo para {names}. Os recursos e o tempo deles não são contados."
+        },
+        "breakdown": {
+            "title": "Por linha de pesquisa",
+            "plus": "+{value}",
+            "columns": {
+                "line": "Linha de pesquisa",
+                "steps": "Níveis",
+                "baseTime": "Tempo antes da velocidade",
+                "power": "Poder",
+                "resources": "Recursos"
+            }
+        }
+    }
+}

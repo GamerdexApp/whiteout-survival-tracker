@@ -1,0 +1,50 @@
+{
+    "setAll": {
+        "title": "Tetapkan setiap charm",
+        "hint": "Setiap keping gear mempunyai 3 charm. Pilih tahap mula dan matlamat di sini dan guna pada semua 18 charm, kemudian ubah charm tunggal di bawah.",
+        "fromLabel": "Dari",
+        "toLabel": "Ke",
+        "apply": "Guna pada semua",
+        "reset": "Tetap semula semua"
+    },
+    "fields": {
+        "notStarted": "Tiada (belum bermula)",
+        "skip": "Tiada (langkau)"
+    },
+    "result": {
+        "title": "Hasil",
+        "score": "Skor charm",
+        "power": "Kuasa diperoleh",
+        "steps": "Tahap dibeli",
+        "charms": "Charm dinaik taraf",
+        "materials": "Bahan",
+        "noMaterials": "Pilih tahap matlamat untuk satu charm bagi melihat bahan.",
+        "eventPoints": "Mata acara",
+        "eventPointsNote": "Mata acara ialah skor charm didarab mata yang dibayar baris \"Raise Chief Charm max score\" dalam setiap acara."
+    },
+    "charms": {
+        "title": "Chief Charms",
+        "hint": "Pilih tahap setiap charm sekarang dan tahap yang anda mahu. Charm yang dibiarkan pada Tiada (langkau) tidak dikira.",
+        "charmLabel": "Charm {number}",
+        "charmName": "Charm {number} {piece}",
+        "fromLabel": "Dari",
+        "toLabel": "Ke",
+        "fromName": "Dari ({charm})",
+        "toName": "Ke ({charm})"
+    },
+    "breakdown": {
+        "title": "Mengikut charm",
+        "empty": "Belum ada charm dengan matlamat melebihi tahap mulanya.",
+        "charm": "Charm",
+        "charmName": "Charm {number} {piece}",
+        "levels": "Tahap",
+        "levelRange": "{from} ke {to}",
+        "stat": "Bonus statistik",
+        "percent": "{value}%",
+        "steps": "Tahap dibeli",
+        "score": "Skor",
+        "power": "Kuasa",
+        "materials": "Bahan",
+        "none": "Tiada"
+    }
+}

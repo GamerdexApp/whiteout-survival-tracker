@@ -1,0 +1,103 @@
+{
+    "speed": {
+        "title": "建設速度",
+        "reset": "すべてリセット",
+        "percentLabel": "建設速度（%）",
+        "percentHint": "ゲーム内に表示されるボーナスです。副大統領とDouble Timeは含みません。",
+        "percentPlus": "+{value}%",
+        "percent": "{value}%",
+        "vicePresident": {
+            "label": "副大統領",
+            "none": "なし",
+            "regular": "通常",
+            "supreme": "最上級"
+        },
+        "speedupLabel": "使用するスピードアップの分数",
+        "speedupHint": "これらのアップグレードに使う建設スピードアップです。イベントポイントに加算されます。",
+        "doubleTime": "Double Time",
+        "doubleTimeNote": "チーフオーダーは、有効な間に開始したアップグレードに{value}%を加えます。",
+        "total": "建設速度の合計"
+    },
+    "buildings": {
+        "title": "建物",
+        "description": "建物ごとに、現在のレベルと目標のレベルを選んでください。ステップに必要なレベル未満の前提建物はプランに追加されます。持っている建物はすべて現在のレベルを設定してください。設定しないと未建設として数えます。何も保存されません。",
+        "tableLabel": "現在と目標のレベルを設定する建物",
+        "columns": {
+            "building": "建物",
+            "current": "現在のレベル",
+            "goal": "目標レベル"
+        },
+        "levelLabel": {
+            "current": "{name}の現在のレベル",
+            "goal": "{name}の目標レベル"
+        },
+        "notBuilt": "未建設"
+    },
+    "results": {
+        "title": "結果",
+        "empty": "建物の目標を現在のレベルより高くすると、資源、時間、戦力、イベントポイントが表示されます。",
+        "plus": "+{value}",
+        "stats": {
+            "steps": "建設するレベル",
+            "baseTime": "速度適用前の時間",
+            "time": "速度{percent}%での時間",
+            "power": "獲得戦力",
+            "speedupMinutes": "必要なスピードアップの分数"
+        },
+        "unmet": {
+            "title": "データにない建物の前提条件は、ステップに追加されません:",
+            "item": "{building}レベル{level}",
+            "listSeparator": "、"
+        },
+        "resources": {
+            "title": "資源"
+        },
+        "events": {
+            "title": "イベントポイント",
+            "columns": {
+                "event": "イベント",
+                "crystalPoints": "Fire Crystals",
+                "speedupPoints": "スピードアップ",
+                "total": "合計",
+                "pointsPerPower": "ポイント",
+                "days": "イベント日",
+                "points": "戦力によるポイント"
+            },
+            "scoreTableLabel": "Fire Crystalとスピードアップのポイント",
+            "speedupNote": "スピードアップのポイントは、建設時間に必要な{needed}分のうち{used}分を数えます。それを超える分はポイントになりません。",
+            "hallTableLabel": "戦力による{name}のポイント",
+            "hallNote": "{name}では、建設で獲得した戦力1ごとにポイントが入ります。倍率はイベント日によって変わります。",
+            "pointsPerPower": "戦力1につき{value}",
+            "daySeparator": "、"
+        },
+        "breakdown": {
+            "title": "建物ごと",
+            "plus": "+{value}",
+            "levelRange": "{from}から{to}",
+            "prerequisite": "前提条件",
+            "free": "コストなし",
+            "columns": {
+                "building": "建物",
+                "levels": "レベル",
+                "steps": "ステップ",
+                "power": "戦力",
+                "baseTime": "速度適用前の時間",
+                "resources": "資源"
+            }
+        },
+        "stepDetails": {
+            "title": "{count, plural, other {ステップの詳細（{amount}ステップ）}}",
+            "tableLabel": "建設順に並べた、建設する各レベル",
+            "plus": "+{value}",
+            "prerequisite": "前提条件",
+            "free": "コストなし",
+            "columns": {
+                "building": "建物",
+                "level": "レベル",
+                "power": "戦力",
+                "baseTime": "速度適用前の時間",
+                "cost": "コスト"
+            }
+        }
+    }
+}

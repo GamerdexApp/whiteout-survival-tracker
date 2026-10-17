@@ -1,0 +1,77 @@
+{
+    "piece": {
+        "title": "Món trang bị",
+        "quality": "Phẩm chất",
+        "slot": "Món",
+        "troopType": "Loại quân",
+        "name": "{slot} {troop}",
+        "mythicOnly": "Chỉ trang bị Thần thoại mới rèn và gia cường được. Rèn tinh thông và Gia cường bị tắt với phẩm chất này."
+    },
+    "tracks": {
+        "enhancement": "Cường hóa",
+        "masteryForging": "Rèn tinh thông",
+        "empowerment": "Gia cường",
+        "current": "Hiện tại",
+        "goal": "Mục tiêu",
+        "range": "Cấp {from} đến {to}",
+        "none": "Không có",
+        "forgingRow": "{name} (+{percent}%)",
+        "needsMythic": "Cần trang bị Thần thoại",
+        "reset": "Đặt lại các cấp"
+    },
+    "unmet": {
+        "title": "Chưa đạt được.",
+        "enhancement": "{track} cần Cường hóa cấp {level} trước.",
+        "masteryForging": "{track} cần Rèn tinh thông {row} trước.",
+        "quality": "{track} cần trang bị Thần thoại.",
+        "hint": "Nếu món đã đạt mức đó, hãy đặt cấp hiện tại cho khớp."
+    },
+    "noForging": "Gia cường cần Rèn tinh thông ở {row}. Rèn tinh thông đang ở Không có, nên sức mạnh và chỉ số không tính rèn.",
+    "summary": {
+        "title": "Kết quả",
+        "powerGained": "Sức mạnh nhận được",
+        "currentPower": "Sức mạnh hiện tại",
+        "goalPower": "Sức mạnh sau kế hoạch",
+        "forgingStatsUp": "Chỉ số rèn tăng",
+        "percent": "+{value}%"
+    },
+    "resources": {
+        "title": "Tài nguyên cần",
+        "item": "Vật phẩm",
+        "amount": "Số lượng",
+        "empty": "Không có gì để nâng cấp. Hãy nâng một mục tiêu lên cao hơn cấp hiện tại."
+    },
+    "stats": {
+        "title": "Chỉ số của món",
+        "tableLabel": "Chỉ số của món, hiện tại và sau kế hoạch",
+        "stat": "Chỉ số",
+        "current": "Hiện tại",
+        "goal": "Sau kế hoạch",
+        "gain": "Tăng",
+        "power": "Sức mạnh",
+        "health": "HP",
+        "percentStat": "{name} (%)",
+        "percentValue": "{value}%",
+        "note": "Chỉ số đã gồm rèn tinh thông và được làm tròn xuống."
+    },
+    "milestones": {
+        "title": "Mốc Mithril đã mở",
+        "line": "Gia cường {level}: {event}, {stat}",
+        "empty": "Kế hoạch này không mở mốc Mithril nào."
+    },
+    "tracksTable": {
+        "title": "Theo dòng nâng",
+        "label": "Số bước, mức tăng và tài nguyên của từng dòng nâng",
+        "track": "Dòng nâng",
+        "steps": "Số bước",
+        "gain": "Mức tăng",
+        "powerGain": "{value} sức mạnh trước khi rèn",
+        "statsUp": "+{value}% chỉ số",
+        "resources": "Tài nguyên",
+        "none": "Không có gì"
+    },
+    "events": {
+        "title": "Điểm sự kiện",
+        "note": "Điểm cho Essence Stones và Mithril của kế hoạch."
+    }
+}

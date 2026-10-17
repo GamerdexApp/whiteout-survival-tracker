@@ -1,0 +1,67 @@
+{
+    "intro": "Pick the affinity level and the skill levels each expert has now and the ones you want. The calculator adds up the Books of Knowledge, expert sigils, skill EXP and affinity points. An expert advances at every tenth level and needs sigils to go past it. Turn on Advanced when the expert has already advanced at the current level, or to pay for the advancement at the goal level. The talent levels with the relationship and costs nothing.",
+    "goals": {
+        "title": "Experts",
+        "empty": "Add an expert to see the Books of Knowledge, sigils and event points."
+    },
+    "add": {
+        "label": "Expert to add",
+        "button": "Add",
+        "allAdded": "Every expert is in the calculator."
+    },
+    "expert": {
+        "meta": "{title}, {specialty}",
+        "remove": "Remove",
+        "removeLabel": "Remove {expert}",
+        "affinity": "Affinity level",
+        "current": "Current",
+        "goal": "Goal",
+        "advancedAtCurrent": "Advanced at level {level}",
+        "advanceAtGoal": "Advance at level {level}",
+        "skillMax": "Max {level}"
+    },
+    "results": {
+        "title": "Results",
+        "stats": {
+            "books": "Books of Knowledge",
+            "sigils": "Expert sigils",
+            "exp": "Skill EXP",
+            "learningTime": "Learning time",
+            "affinity": "Affinity points",
+            "levels": "Affinity levels",
+            "skillLevels": "Skill levels",
+            "advancements": "Advancements"
+        }
+    },
+    "resources": {
+        "title": "Resources",
+        "nothing": "These goals need no Books of Knowledge or sigils.",
+        "commonSigils": "Common Expert Sigils convert into the sigils of any expert."
+    },
+    "events": {
+        "title": "Event points",
+        "heads": {
+            "event": "Event",
+            "items": "Books and sigils",
+            "perMinute": "Per speedup minute",
+            "speedups": "Speedups",
+            "total": "Total"
+        },
+        "hint": "Speedup points count Learning or General Speedups for the whole learning time of {duration}."
+    },
+    "byExpert": {
+        "title": "By expert",
+        "nothing": "No expert has a goal above its current level yet.",
+        "heads": {
+            "expert": "Expert",
+            "levels": "Affinity levels",
+            "advancements": "Advancements",
+            "skillLevels": "Skill levels",
+            "books": "Books",
+            "sigils": "Sigils",
+            "exp": "Skill EXP",
+            "learningTime": "Learning time",
+            "affinity": "Affinity points"
+        }
+    }
+}

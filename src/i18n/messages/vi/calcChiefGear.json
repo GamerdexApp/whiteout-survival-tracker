@@ -1,0 +1,46 @@
+{
+    "intro": "Chọn cấp hiện tại của từng món trang bị và cấp bạn muốn. Kết quả cộng dồn vật liệu, điểm trang bị, sức mạnh nhận được và điểm sự kiện. Để mục tiêu ở Không có để bỏ qua món đó. Không có gì được lưu.",
+    "level": {
+        "plain": "{tier} {stars} sao",
+        "withStage": "{tier} {stars} sao giai đoạn {stage}",
+        "notCrafted": "Không có (chưa chế tạo)",
+        "skip": "Không có (bỏ qua)"
+    },
+    "all": {
+        "heading": "Đặt cho mọi món",
+        "current": "Cấp hiện tại",
+        "goal": "Cấp mục tiêu",
+        "apply": "Áp dụng cho tất cả",
+        "reset": "Đặt lại tất cả"
+    },
+    "pieces": {
+        "heading": "Các món trang bị",
+        "troopGroup": "Các món {troop}",
+        "current": "Cấp hiện tại",
+        "goal": "Cấp mục tiêu",
+        "currentLabel": "Cấp hiện tại của {piece}",
+        "goalLabel": "Cấp mục tiêu của {piece}"
+    },
+    "results": {
+        "heading": "Kết quả",
+        "score": "Điểm trang bị",
+        "power": "Sức mạnh nhận được",
+        "steps": "Số bước",
+        "materials": "Vật liệu",
+        "noMaterials": "Hãy chọn cấp mục tiêu cho một món để xem vật liệu.",
+        "events": "Điểm sự kiện",
+        "eventsNote": "Điểm sự kiện bằng điểm trang bị nhân với số điểm mà dòng \"Raise Chief Gear max score\" cho trong mỗi sự kiện."
+    },
+    "byPiece": {
+        "heading": "Theo món",
+        "piece": "Món",
+        "levels": "Cấp",
+        "levelRange": "{from} đến {to}",
+        "steps": "Số bước",
+        "score": "Điểm",
+        "power": "Sức mạnh",
+        "stats": "Chỉ số cộng thêm",
+        "statRange": "{from}% đến {to}%",
+        "noLevel": "Chưa chế tạo"
+    }
+}

@@ -1,0 +1,61 @@
+{
+    "intro": "添加你想升级的宠物。为每只宠物选择当前等级和你想要的等级。宠物在每个 10 的倍数等级进阶，越过该等级需要先进阶。",
+    "picker": {
+        "petLabel": "宠物",
+        "add": "添加宠物",
+        "addAll": "添加所有宠物",
+        "allAdded": "所有宠物都已在列表中。",
+        "setAllMax": "把所有目标设为满级",
+        "advanceAtMax": "满级时也进阶",
+        "removeAll": "全部移除"
+    },
+    "row": {
+        "maxLevel": "最高 {max} 级",
+        "current": "当前等级",
+        "goal": "目标等级",
+        "currentAdvanced": "已进阶",
+        "goalAdvanced": "在目标处进阶",
+        "keepsAdvancement": "宠物在此等级保持进阶。",
+        "remove": "移除{pet}"
+    },
+    "empty": "还没有添加宠物。在上方添加宠物，即可查看宠物粮、进阶道具和提升。",
+    "results": {
+        "title": "结果",
+        "stats": {
+            "levels": "等级",
+            "advancements": "进阶",
+            "troopAttack": "获得部队攻击",
+            "troopDefense": "获得部队防御",
+            "power": "获得战力",
+            "advancementScore": "进阶分数"
+        },
+        "percent": "{value}%",
+        "unknown": "未知",
+        "unknownPowerNote": "游戏数据中缺少部分进阶等级的进阶战力，因此这些宠物的战力提升显示为未知。",
+        "resources": {
+            "title": "资源",
+            "empty": "选择高于当前等级的目标即可查看资源。"
+        },
+        "events": {
+            "title": "进阶分数带来的活动积分",
+            "noPoints": "没有积分",
+            "note": "活动积分等于进阶分数乘以各活动中“Pet advancement score increases by 1”一行的积分。{hallOfChief}没有宠物行。"
+        },
+        "byPet": {
+            "title": "按宠物",
+            "tableLabel": "按宠物的结果",
+            "empty": "还没有宠物提升等级或进阶。",
+            "heads": {
+                "pet": "宠物",
+                "levels": "等级",
+                "advancements": "进阶",
+                "score": "分数",
+                "resources": "资源",
+                "troopAttack": "部队攻击",
+                "troopDefense": "部队防御",
+                "power": "战力"
+            },
+            "noResources": "无"
+        }
+    }
+}

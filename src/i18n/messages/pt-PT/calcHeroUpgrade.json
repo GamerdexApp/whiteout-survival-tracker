@@ -1,0 +1,70 @@
+{
+    "intro": "Planear um herói de cada vez. As estrelas usam a etiqueta do jogo: 3.1 é a estrela 3 e o tier 1, e 5.0 é a última etiqueta. Nada é guardado e recarregar a página apaga as escolhas.",
+    "hero": {
+        "label": "Herói",
+        "option": "{name} (Ger. {generation})",
+        "generation": "Ger. {generation}",
+        "reset": "Repor herói"
+    },
+    "range": {
+        "current": "Atual",
+        "goal": "Objetivo"
+    },
+    "stars": {
+        "title": "Estrelas",
+        "row": "Estrela e tier"
+    },
+    "skills": {
+        "title": "Habilidades",
+        "exploration": "Exploration",
+        "expedition": "Expedition"
+    },
+    "weapon": {
+        "title": "Arma exclusiva",
+        "row": "Nível da arma",
+        "none": "{hero} não tem arma exclusiva."
+    },
+    "result": {
+        "title": "Necessário",
+        "unmetTitle": "Requer mais estrelas.",
+        "unmet": "{items}. Se o herói já tiver estas estrelas, definir o objetivo de estrelas para elas.",
+        "unmetItem": "{skill} nível {level} requer a estrela {star}",
+        "tiles": {
+            "starSteps": "Passos de estrela",
+            "shards": "Fragmentos",
+            "skillLevels": "Níveis de habilidade",
+            "weaponLevels": "Níveis de arma",
+            "widgets": "Widgets",
+            "powerGain": "Ganho de poder"
+        },
+        "resources": {
+            "title": "Recursos",
+            "item": "Item",
+            "amount": "Quantidade",
+            "widgets": "Widgets",
+            "empty": "Nada selecionado ainda. Definir um objetivo acima do nível atual.",
+            "ownShards": "{own} contam o mesmo que {general}."
+        },
+        "unlocked": {
+            "title": "Desbloqueia habilidades da arma"
+        },
+        "stats": {
+            "title": "Atributos no nível 80",
+            "stat": "Atributo",
+            "estimate": "Estimativa",
+            "estimateNote": "Os atributos abaixo de 5 estrelas são estimativas escaladas a partir dos atributos de 5 estrelas.",
+            "exploration": "Exploration",
+            "expedition": "Expedition",
+            "attack": "Ataque",
+            "defense": "Defesa",
+            "health": "Vida",
+            "percent": "{value}%"
+        },
+        "events": {
+            "title": "Pontos de evento",
+            "event": "Evento",
+            "points": "Pontos"
+        },
+        "powerNote": "O poder conta os níveis de estrela, habilidade e arma. Uma etiqueta de estrela sem dados de poder deixa o ganho Desconhecido."
+    }
+}

@@ -1,0 +1,61 @@
+{
+    "intro": "Adicione os pets que você quer subir de nível. Para cada pet, escolha o nível em que ele está agora e o nível que você quer. Um pet avança em todo nível múltiplo de 10 e precisa do avanço para passar desse nível.",
+    "picker": {
+        "petLabel": "Pet",
+        "add": "Adicionar pet",
+        "addAll": "Adicionar todos os pets",
+        "allAdded": "Todos os pets estão na lista.",
+        "setAllMax": "Definir todas as metas no máximo",
+        "advanceAtMax": "Avançar também no nível máximo",
+        "removeAll": "Remover todos"
+    },
+    "row": {
+        "maxLevel": "Nível máximo {max}",
+        "current": "Nível atual",
+        "goal": "Nível da meta",
+        "currentAdvanced": "Já avançado",
+        "goalAdvanced": "Avançar na meta",
+        "keepsAdvancement": "O pet mantém o avanço neste nível.",
+        "remove": "Remover {pet}"
+    },
+    "empty": "Nenhum pet adicionado ainda. Adicione um pet acima para ver a comida de pet, os itens de avanço e os ganhos.",
+    "results": {
+        "title": "Resultados",
+        "stats": {
+            "levels": "Níveis",
+            "advancements": "Avanços",
+            "troopAttack": "Ataque das tropas ganho",
+            "troopDefense": "Defesa das tropas ganha",
+            "power": "Poder ganho",
+            "advancementScore": "Pontuação de avanço"
+        },
+        "percent": "{value}%",
+        "unknown": "Desconhecido",
+        "unknownPowerNote": "Os dados do jogo não têm o poder avançado de alguns níveis de avanço, então o ganho de poder desses pets é Desconhecido.",
+        "resources": {
+            "title": "Recursos",
+            "empty": "Escolha uma meta acima do nível atual para ver os recursos."
+        },
+        "events": {
+            "title": "Pontos de evento da pontuação de avanço",
+            "noPoints": "Sem pontos",
+            "note": "Os pontos de evento são a pontuação de avanço vezes os pontos da linha \"Pet advancement score increases by 1\" de cada evento. {hallOfChief} não tem linha de pet."
+        },
+        "byPet": {
+            "title": "Por pet",
+            "tableLabel": "Resultados por pet",
+            "empty": "Nenhum pet ganha nível ou avanço ainda.",
+            "heads": {
+                "pet": "Pet",
+                "levels": "Níveis",
+                "advancements": "Avanços",
+                "score": "Pontuação",
+                "resources": "Recursos",
+                "troopAttack": "Ataque das tropas",
+                "troopDefense": "Defesa das tropas",
+                "power": "Poder"
+            },
+            "noResources": "Nenhum"
+        }
+    }
+}

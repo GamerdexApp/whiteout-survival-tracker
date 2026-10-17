@@ -1,0 +1,65 @@
+{
+    "levelBand": "Stufe {low} bis {high}",
+    "stamina": {
+        "title": "Ausdauer",
+        "stamina": "Ausdauer",
+        "cans": "Ausdauer-Dosen",
+        "cansHint": "je {amount} Ausdauer",
+        "gina": "Endurance Training von Gina",
+        "ginaNone": "Nicht genutzt",
+        "ginaLevel": "Stufe {level}, {percent}% weniger Ausdauer",
+        "beastLevel": "Biest-Stufe für die Restausdauer",
+        "beastLevelHint": "Biester einer Gruppe bringen in State of Power gleich viele Punkte."
+    },
+    "planned": {
+        "title": "Geplante Jagden",
+        "hint": "Jagden, die du sowieso machst, etwa die Biester der Intel-Missionen. Sie werden zuerst bezahlt.",
+        "empty": "Keine Biesterjagden geplant.",
+        "runLevel": "Biest-Stufe",
+        "runCount": "Biester",
+        "add": "Biesterjagd hinzufügen",
+        "remove": "Biesterjagd entfernen: {band}",
+        "polarTerrors": "Geplante Polar Terrors"
+    },
+    "result": {
+        "pointsNote": "Die Punkte gelten vor jedem Bonus, etwa Valeria in State of Power. Jagden, die keine Biester oder Polar Terrors sind, etwa die Bear Hunt, zählen nicht.",
+        "tiles": {
+            "title": "Ausdauer",
+            "percent": "{percent}%",
+            "total": "Ausdauer gesamt",
+            "ginaReduction": "Ersparnis durch Gina",
+            "beastCost": "Ausdauer pro Biest",
+            "polarTerrorCost": "Ausdauer pro Polar Terror",
+            "planned": "Ausdauer für die geplanten Jagden",
+            "left": "Restausdauer",
+            "short": "Fehlende Ausdauer",
+            "shortNote": "Die geplanten Jagden brauchen {amount} Ausdauer mehr, als du hast. Die Restausdauer bezahlt keine weiteren Jagden."
+        },
+        "leftover": {
+            "title": "Restausdauer nach den geplanten Jagden",
+            "hint": "Jede Zeile gibt die ganze Restausdauer für eine Art von Jagd aus.",
+            "hunt": "Jagd",
+            "onlyBeasts": "Nur Biester, {band}",
+            "onlyPolarTerrors": "Nur Polar Terrors",
+            "count": "Weitere Jagden",
+            "staminaLeft": "Restausdauer"
+        },
+        "events": {
+            "title": "Event-Punkte",
+            "hint": "Geplant sind die Punkte der geplanten Jagden. Die letzten beiden Spalten addieren die Jagden, die die Restausdauer bezahlt.",
+            "event": "Event",
+            "perBeast": "Pro Biest",
+            "perPolarTerror": "Pro Polar Terror",
+            "planned": "Geplant",
+            "withBeasts": "Plan und Biester",
+            "withPolarTerrors": "Plan und Polar Terrors"
+        },
+        "plannedPoints": {
+            "title": "Punkte der geplanten Jagden",
+            "hunt": "Jagd",
+            "beasts": "{count, plural, one {{amount} Biest, {band}} other {{amount} Biester, {band}}}",
+            "polarTerrors": "{count, plural, one {{amount} Polar Terror} other {{amount} Polar Terrors}}",
+            "total": "Gesamt"
+        }
+    }
+}

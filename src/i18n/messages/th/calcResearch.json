@@ -1,0 +1,118 @@
+{
+    "speed": {
+        "title": "ความเร็ววิจัย",
+        "reset": "รีเซ็ตทั้งหมด",
+        "percentLabel": "ความเร็ววิจัย %",
+        "percentHint": "ความเร็วของคุณตามที่เกมแสดง ไม่รวมบัฟที่ตั้งไว้ที่นี่",
+        "stateBuff": "บัฟรัฐ",
+        "percentPlus": "+{value}%",
+        "percent": "{value}%",
+        "vicePresident": {
+            "label": "รองประธานาธิบดี",
+            "none": "ไม่มี",
+            "regular": "ปกติ",
+            "supreme": "สูงสุด"
+        },
+        "total": "ความเร็ววิจัยรวม"
+    },
+    "lines": {
+        "title": "สายวิจัย",
+        "description": "เลือกเลเวลที่มีตอนนี้และเลเวลที่ต้องการของแต่ละสาย แต่ละระดับของสายเป็นสายแยกกันเหมือนในเกม ไม่มีอะไรถูกบันทึก",
+        "tabsLabel": "แผนผังวิจัย",
+        "tabs": {
+            "growth": "การเติบโต",
+            "economy": "เศรษฐกิจ",
+            "battle": "การรบ",
+            "war-academy-troops": "War Academy T11",
+            "t12-infantry": "ทหารราบ T12",
+            "t12-marksman": "พลซุ่มยิง T12",
+            "t12-lancer": "ทหารหอก T12"
+        },
+        "tableLabel": "สายวิจัยของแผนผังนี้",
+        "columns": {
+            "line": "สายวิจัย",
+            "current": "เลเวลปัจจุบัน",
+            "goal": "เลเวลเป้าหมาย"
+        },
+        "levelLabel": {
+            "current": "เลเวลปัจจุบันของ {name}",
+            "goal": "เลเวลเป้าหมายของ {name}"
+        },
+        "levelMax": "{level} (สูงสุด)",
+        "tier": {
+            "plain": "ระดับ {tier}",
+            "troopLine": "{line} T{tier}"
+        },
+        "bulk": {
+            "current": "ตั้งทุกเลเวลปัจจุบันเป็น",
+            "goal": "ตั้งทุกเป้าหมายเป็น",
+            "pick": "เลือกเลเวล"
+        }
+    },
+    "results": {
+        "title": "ผลลัพธ์",
+        "empty": "เลือกเป้าหมายที่สูงกว่าเลเวลปัจจุบันของสายวิจัยเพื่อดูทรัพยากร เวลา พลัง และคะแนนกิจกรรม",
+        "plus": "+{value}",
+        "stats": {
+            "steps": "เลเวลที่ต้องวิจัย",
+            "baseTime": "เวลาก่อนเร่ง",
+            "time": "เวลาที่ความเร็ว {percent}%",
+            "power": "พลังที่ได้รับ",
+            "speedupMinutes": "นาทีตัวเร่งเวลาที่ต้องใช้"
+        },
+        "resources": {
+            "title": "ทรัพยากร"
+        },
+        "bonuses": {
+            "title": "โบนัสที่ได้รับ",
+            "percentGain": "+{value}%",
+            "flatGain": "+{value}",
+            "none": "เลเวลเหล่านี้ไม่ให้โบนัส"
+        },
+        "events": {
+            "title": "คะแนนกิจกรรม",
+            "columns": {
+                "event": "กิจกรรม",
+                "shardPoints": "Fire Crystal Shards",
+                "speedupPoints": "ตัวเร่งเวลา",
+                "total": "รวม",
+                "pointsPerPower": "คะแนน",
+                "days": "วันของกิจกรรม",
+                "points": "คะแนนจากพลัง"
+            },
+            "names": {
+                "svs": "SvS",
+                "allianceShowdown": "Alliance Showdown",
+                "kingOfIcefield": "King of Icefield",
+                "hallOfChief": "Hall of Chief"
+            },
+            "speedupTableLabel": "คะแนน Fire Crystal Shard และตัวเร่งเวลา",
+            "speedupNote": "คะแนนตัวเร่งเวลาสมมติว่าคุณวิจัยครบ {minutes} นาทีด้วยตัวเร่งเวลาวิจัย",
+            "hallTableLabel": "คะแนน Hall of Chief จากพลัง",
+            "hallNote": "Hall of Chief ให้คะแนนทุกพลังที่ได้จากการวิจัย ตัวคูณขึ้นอยู่กับวันของกิจกรรม",
+            "pointsPerPower": "{value} ต่อพลัง",
+            "daySeparator": ", "
+        },
+        "requirements": {
+            "buildings": "อาคารที่ต้องมี:",
+            "buildingLevel": "{building} เลเวล {level}",
+            "listSeparator": ", ",
+            "unmetTitle": "{count, plural, other {{amount} เลเวลต้องใช้}}สายวิจัยอื่นที่เลเวลซึ่งแผนของคุณยังไปไม่ถึง:",
+            "unmetItem": "{name} เลเวล {level} ต้องมี {requires} เลเวล {requiresLevel} (วางแผนไว้ {planned})",
+            "unmetMore": "และอีก {amount}",
+            "stepsWithoutTime": "{count, plural, other {{amount} เลเวล}}ไม่มีเวลาวิจัยในข้อมูล จึงนับเวลาเป็น 0",
+            "placeholders": "ยังไม่มีข้อมูลค่าใช้จ่ายหรือเวลาของ {names} ทรัพยากรและเวลาของสายเหล่านี้ไม่ถูกนับ"
+        },
+        "breakdown": {
+            "title": "ตามสายวิจัย",
+            "plus": "+{value}",
+            "columns": {
+                "line": "สายวิจัย",
+                "steps": "เลเวล",
+                "baseTime": "เวลาก่อนเร่ง",
+                "power": "พลัง",
+                "resources": "ทรัพยากร"
+            }
+        }
+    }
+}

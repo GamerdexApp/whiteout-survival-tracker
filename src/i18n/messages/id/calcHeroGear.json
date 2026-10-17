@@ -1,0 +1,77 @@
+{
+    "piece": {
+        "title": "Bagian perlengkapan",
+        "quality": "Kualitas",
+        "slot": "Bagian",
+        "troopType": "Jenis pasukan",
+        "name": "{troop} {slot}",
+        "mythicOnly": "Hanya perlengkapan Mitos yang bisa ditempa dan dikuatkan. Penempaan Mastery dan Penguatan nonaktif untuk kualitas ini."
+    },
+    "tracks": {
+        "enhancement": "Peningkatan",
+        "masteryForging": "Penempaan Mastery",
+        "empowerment": "Penguatan",
+        "current": "Saat ini",
+        "goal": "Target",
+        "range": "Level {from} ke {to}",
+        "none": "Tidak ada",
+        "forgingRow": "{name} (+{percent}%)",
+        "needsMythic": "Butuh perlengkapan Mitos",
+        "reset": "Atur ulang level"
+    },
+    "unmet": {
+        "title": "Belum bisa dicapai.",
+        "enhancement": "{track} butuh Peningkatan level {level} dulu.",
+        "masteryForging": "{track} butuh Penempaan Mastery {row} dulu.",
+        "quality": "{track} butuh perlengkapan Mitos.",
+        "hint": "Jika bagian ini sudah di sana, atur level saat ini agar sesuai."
+    },
+    "noForging": "Penguatan butuh Penempaan Mastery di {row}. Penempaan Mastery ada di Tidak ada, jadi kekuatan dan statistik tidak menghitung penempaan.",
+    "summary": {
+        "title": "Hasil",
+        "powerGained": "Kekuatan didapat",
+        "currentPower": "Kekuatan sekarang",
+        "goalPower": "Kekuatan setelah rencana",
+        "forgingStatsUp": "Statistik penempaan naik",
+        "percent": "+{value}%"
+    },
+    "resources": {
+        "title": "Sumber daya dibutuhkan",
+        "item": "Item",
+        "amount": "Jumlah",
+        "empty": "Tidak ada yang di-upgrade. Naikkan target di atas level saat ini."
+    },
+    "stats": {
+        "title": "Statistik bagian",
+        "tableLabel": "Statistik bagian, sekarang dan setelah rencana",
+        "stat": "Statistik",
+        "current": "Sekarang",
+        "goal": "Setelah rencana",
+        "gain": "Tambahan",
+        "power": "Kekuatan",
+        "health": "Darah",
+        "percentStat": "{name} (%)",
+        "percentValue": "{value}%",
+        "note": "Statistik sudah termasuk penempaan mastery dan dibulatkan ke bawah."
+    },
+    "milestones": {
+        "title": "Tonggak Mithril terbuka",
+        "line": "Penguatan {level}: {event}, {stat}",
+        "empty": "Rencana ini tidak membuka tonggak Mithril."
+    },
+    "tracksTable": {
+        "title": "Menurut jalur",
+        "label": "Langkah, tambahan, dan sumber daya tiap jalur",
+        "track": "Jalur",
+        "steps": "Langkah",
+        "gain": "Tambahan",
+        "powerGain": "{value} kekuatan sebelum penempaan",
+        "statsUp": "+{value}% statistik",
+        "resources": "Sumber daya",
+        "none": "Tidak ada"
+    },
+    "events": {
+        "title": "Poin event",
+        "note": "Poin untuk Essence Stones dan Mithril dari rencana."
+    }
+}

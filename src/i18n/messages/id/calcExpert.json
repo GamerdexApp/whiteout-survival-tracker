@@ -1,0 +1,67 @@
+{
+    "intro": "Pilih level afinitas dan level skill tiap ahli sekarang dan yang kamu mau. Kalkulator menjumlahkan Books of Knowledge, sigil ahli, EXP skill, dan poin afinitas. Ahli naik tingkat di setiap level kelipatan sepuluh dan butuh sigil untuk melewatinya. Aktifkan Lanjutan jika ahli sudah naik tingkat di level saat ini, atau untuk membayar kenaikan tingkat di level target. Talenta naik level bersama hubungan dan tidak butuh biaya.",
+    "goals": {
+        "title": "Ahli",
+        "empty": "Tambah ahli untuk melihat Books of Knowledge, sigil, dan poin event."
+    },
+    "add": {
+        "label": "Ahli yang ditambah",
+        "button": "Tambah",
+        "allAdded": "Semua ahli sudah ada di kalkulator."
+    },
+    "expert": {
+        "meta": "{title}, {specialty}",
+        "remove": "Hapus",
+        "removeLabel": "Hapus {expert}",
+        "affinity": "Level afinitas",
+        "current": "Saat ini",
+        "goal": "Target",
+        "advancedAtCurrent": "Naik tingkat di level {level}",
+        "advanceAtGoal": "Naik tingkat di level {level}",
+        "skillMax": "Maks {level}"
+    },
+    "results": {
+        "title": "Hasil",
+        "stats": {
+            "books": "Books of Knowledge",
+            "sigils": "Sigil ahli",
+            "exp": "EXP skill",
+            "learningTime": "Waktu belajar",
+            "affinity": "Poin afinitas",
+            "levels": "Level afinitas",
+            "skillLevels": "Level skill",
+            "advancements": "Kenaikan tingkat"
+        }
+    },
+    "resources": {
+        "title": "Sumber Daya",
+        "nothing": "Target ini tidak butuh Books of Knowledge atau sigil.",
+        "commonSigils": "Common Expert Sigils bisa diubah menjadi sigil ahli mana pun."
+    },
+    "events": {
+        "title": "Poin event",
+        "heads": {
+            "event": "Event",
+            "items": "Buku dan sigil",
+            "perMinute": "Per menit percepatan",
+            "speedups": "Percepatan",
+            "total": "Total"
+        },
+        "hint": "Poin percepatan menghitung percepatan Belajar atau Umum untuk seluruh waktu belajar {duration}."
+    },
+    "byExpert": {
+        "title": "Menurut ahli",
+        "nothing": "Belum ada ahli dengan target di atas level saat ini.",
+        "heads": {
+            "expert": "Ahli",
+            "levels": "Level afinitas",
+            "advancements": "Kenaikan tingkat",
+            "skillLevels": "Level skill",
+            "books": "Buku",
+            "sigils": "Sigil",
+            "exp": "EXP skill",
+            "learningTime": "Waktu belajar",
+            "affinity": "Poin afinitas"
+        }
+    }
+}

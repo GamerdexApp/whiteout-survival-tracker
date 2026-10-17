@@ -1,0 +1,118 @@
+{
+    "speed": {
+        "title": "Forschungstempo",
+        "reset": "Alle zurücksetzen",
+        "percentLabel": "Forschungstempo %",
+        "percentHint": "Dein Tempo, wie das Spiel es anzeigt, ohne die Buffs hier.",
+        "stateBuff": "State-Buff",
+        "percentPlus": "+{value}%",
+        "percent": "{value}%",
+        "vicePresident": {
+            "label": "Vizepräsident",
+            "none": "Keiner",
+            "regular": "Regulär",
+            "supreme": "Höchste"
+        },
+        "total": "Forschungstempo gesamt"
+    },
+    "lines": {
+        "title": "Forschungslinien",
+        "description": "Wähle für jede Linie die aktuelle Stufe und die gewünschte Stufe. Jedes Tier einer Linie ist eine eigene Linie, wie im Spiel. Nichts wird gespeichert.",
+        "tabsLabel": "Forschungsbäume",
+        "tabs": {
+            "growth": "Wachstum",
+            "economy": "Wirtschaft",
+            "battle": "Kampf",
+            "war-academy-troops": "War Academy T11",
+            "t12-infantry": "Infanterie T12",
+            "t12-marksman": "Schütze T12",
+            "t12-lancer": "Lanzenträger T12"
+        },
+        "tableLabel": "Forschungslinien dieses Baums",
+        "columns": {
+            "line": "Forschungslinie",
+            "current": "Aktuelle Stufe",
+            "goal": "Zielstufe"
+        },
+        "levelLabel": {
+            "current": "Aktuelle Stufe {name}",
+            "goal": "Zielstufe {name}"
+        },
+        "levelMax": "{level} (max)",
+        "tier": {
+            "plain": "Tier {tier}",
+            "troopLine": "{line} T{tier}"
+        },
+        "bulk": {
+            "current": "Alle aktuellen Stufen setzen auf",
+            "goal": "Alle Ziele setzen auf",
+            "pick": "Stufe wählen"
+        }
+    },
+    "results": {
+        "title": "Ergebnisse",
+        "empty": "Wähle ein Ziel über der aktuellen Stufe einer Forschungslinie, um Ressourcen, Zeit, Macht und Event-Punkte zu sehen.",
+        "plus": "+{value}",
+        "stats": {
+            "steps": "Stufen zu erforschen",
+            "baseTime": "Zeit vor dem Tempo",
+            "time": "Zeit bei {percent}% Tempo",
+            "power": "Gewonnene Macht",
+            "speedupMinutes": "Benötigte Beschleuniger-Minuten"
+        },
+        "resources": {
+            "title": "Ressourcen"
+        },
+        "bonuses": {
+            "title": "Gewonnene Boni",
+            "percentGain": "+{value}%",
+            "flatGain": "+{value}",
+            "none": "Diese Stufen geben keinen Bonus."
+        },
+        "events": {
+            "title": "Event-Punkte",
+            "columns": {
+                "event": "Event",
+                "shardPoints": "Fire Crystal Shards",
+                "speedupPoints": "Beschleuniger",
+                "total": "Gesamt",
+                "pointsPerPower": "Punkte",
+                "days": "Eventtage",
+                "points": "Punkte aus Macht"
+            },
+            "names": {
+                "svs": "SvS",
+                "allianceShowdown": "Alliance Showdown",
+                "kingOfIcefield": "King of Icefield",
+                "hallOfChief": "Hall of Chief"
+            },
+            "speedupTableLabel": "Punkte für Fire Crystal Shards und Beschleuniger",
+            "speedupNote": "Die Beschleuniger-Punkte gehen davon aus, dass du alle {minutes} Minuten Forschungszeit mit Forschungs-Beschleunigern abschließt.",
+            "hallTableLabel": "Hall-of-Chief-Punkte aus Macht",
+            "hallNote": "Hall of Chief wertet jeden Punkt Macht, der durch Forschung dazukommt. Der Multiplikator hängt vom Eventtag ab.",
+            "pointsPerPower": "{value} pro Macht",
+            "daySeparator": ", "
+        },
+        "requirements": {
+            "buildings": "Benötigte Gebäude:",
+            "buildingLevel": "{building} Stufe {level}",
+            "listSeparator": ", ",
+            "unmetTitle": "{count, plural, one {{amount} Stufe braucht} other {{amount} Stufen brauchen}} eine andere Forschungslinie auf einer Stufe, die dein Plan nicht erreicht:",
+            "unmetItem": "{name} Stufe {level} braucht {requires} Stufe {requiresLevel} (geplant {planned})",
+            "unmetMore": "Und {amount} weitere.",
+            "stepsWithoutTime": "{count, plural, one {{amount} Stufe hat} other {{amount} Stufen haben}} keine Forschungszeit in den Daten, daher zählt die Zeit als 0.",
+            "placeholders": "Noch keine Kosten- und Zeitdaten für {names}. Ihre Ressourcen und Zeit werden nicht gezählt."
+        },
+        "breakdown": {
+            "title": "Nach Forschungslinie",
+            "plus": "+{value}",
+            "columns": {
+                "line": "Forschungslinie",
+                "steps": "Stufen",
+                "baseTime": "Zeit vor dem Tempo",
+                "power": "Macht",
+                "resources": "Ressourcen"
+            }
+        }
+    }
+}

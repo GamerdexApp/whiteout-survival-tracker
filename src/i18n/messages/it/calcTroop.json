@@ -1,0 +1,117 @@
+{
+    "intro": "Imposta il livello di ogni campo e cosa addestra o promuove. Tutti e tre i campi condividono una sola capacità di addestramento: la capacità dei tre livelli dei campi sommata, più i bonus qui sotto.",
+    "reset": "Azzera tutto",
+    "tier": "T{tier}",
+    "bonuses": {
+        "title": "Capacità e velocità",
+        "researchCapacity": "Capacità dalla ricerca",
+        "researchCapacityHint": "Capacità di addestramento dalla ricerca, come la mostra il gioco.",
+        "trainingSpeed": "Velocità di addestramento (%)",
+        "trainingSpeedHint": "La tua velocità come la mostra il gioco, senza i bonus qui sotto.",
+        "position": "Nomina",
+        "positions": {
+            "none": "Nessuna",
+            "ministerOfEducation": "Minister of Education",
+            "vicePresident": "Vice President"
+        },
+        "rank": "Grado",
+        "ranks": {
+            "regular": "Normale",
+            "supreme": "Suprema"
+        },
+        "appointmentEffect": "+{capacity} capacità, +{speed}% velocità di addestramento",
+        "capacityBoost": "Aumento di capacità",
+        "capacityBoostEffect": "Moltiplica la capacità totale per {multiplier}.",
+        "mobilize": "Mobilize",
+        "advancedTraining": "Advanced Training",
+        "speedEffect": "+{speed}% velocità di addestramento",
+        "costReduction": "Riduzione del costo",
+        "costReductionLabel": "Riduzione del costo di {name} (%)",
+        "costReductionHint": "Da 0 a {max}%."
+    },
+    "camps": {
+        "title": "Campi",
+        "level": "Livello del campo",
+        "levelOption": "{level} (capacità {capacity})",
+        "mode": "Azione",
+        "modes": {
+            "none": "Nessun addestramento",
+            "training": "Addestramento",
+            "promotion": "Promozione",
+            "both": "Addestramento e promozione"
+        },
+        "trainingTitle": "Addestramento",
+        "promotionTitle": "Promozione",
+        "trainTier": "Grado da addestrare",
+        "fromTier": "Promuovi da",
+        "toTier": "Promuovi a",
+        "troopsPerBatch": "Truppe in ogni gruppo",
+        "max": "Max",
+        "maxValue": "Max ({capacity})",
+        "batches": "Gruppi",
+        "runTime": "Tempo {time}"
+    },
+    "results": {
+        "title": "Risultati",
+        "capacity": "Capacità per gruppo",
+        "troops": "Truppe guadagnate",
+        "power": "Potenza guadagnata",
+        "speedUsed": "Velocità di addestramento usata",
+        "totalTime": "Accelerazioni necessarie",
+        "longest": "Campo più lungo",
+        "percent": "{value}%",
+        "noRuns": "Imposta almeno un campo su addestramento o promozione per vedere truppe, potenza, risorse e tempo.",
+        "noChange": "Questi cicli non cambiano nessuna truppa. Imposta un numero sopra 0."
+    },
+    "tiers": {
+        "troopsTitle": "Truppe per grado",
+        "powerTitle": "Potenza per grado",
+        "heads": {
+            "tier": "Grado",
+            "total": "Totale"
+        },
+        "total": "Totale",
+        "promotionNote": "Una promozione toglie truppe e la loro potenza dal grado inferiore e le aggiunge al grado superiore, quindi il grado inferiore mostra una variazione negativa.",
+        "fireCrystalNote": "La potenza usa il livello Fire Crystal di ogni campo: {levels}. Solo i gradi 10 e 11 cambiano con il livello. I bonus alle statistiche da ricerca o equipaggiamento non sono inclusi.",
+        "fireCrystalLevel": "{name} {level}"
+    },
+    "resources": {
+        "title": "Risorse",
+        "tableLabel": "Risorse necessarie",
+        "heads": {
+            "resource": "Risorsa",
+            "amount": "Quantità"
+        }
+    },
+    "time": {
+        "title": "Tempo",
+        "heads": {
+            "camp": "Campo",
+            "action": "Azione",
+            "troopsPerBatch": "Truppe per gruppo",
+            "batches": "Gruppi",
+            "time": "Tempo"
+        },
+        "training": "Addestramento {tier}",
+        "promotion": "Promozione da {from} a {to}",
+        "campTotal": "Campo {name}",
+        "totalTime": "Tutti i campi sommati (accelerazioni necessarie)",
+        "longest": "Campo più lungo (i campi addestrano nello stesso momento)",
+        "minutesNeeded": "Minuti di accelerazione necessari",
+        "minutes": "{value} min",
+        "note": "Il tempo di un gruppo è il tempo di una truppa per il numero di truppe, diviso per 1 più la velocità di addestramento, prima delle accelerazioni."
+    },
+    "events": {
+        "title": "Punti evento",
+        "tableLabel": "Punti evento",
+        "heads": {
+            "event": "Evento",
+            "training": "Punti di addestramento",
+            "perMinute": "Punti accelerazione al minuto",
+            "speedup": "Punti accelerazione",
+            "total": "Totale"
+        },
+        "noSpeedup": "Nessuno",
+        "note": "I punti di addestramento contano le truppe dei cicli di addestramento al loro grado. Una promozione non dà punti di addestramento. I punti accelerazione usano i {minutes} minuti di accelerazione necessari per tutti i campi. I punti di Hall of Chief sono per una stagione e i suoi punti per l'aumento di potenza non sono inclusi."
+    }
+}

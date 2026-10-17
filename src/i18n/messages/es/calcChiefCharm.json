@@ -1,0 +1,50 @@
+{
+    "setAll": {
+        "title": "Ajustar todos los amuletos",
+        "hint": "Cada pieza de equipo tiene 3 amuletos. Elige aquí un nivel inicial y uno objetivo y aplícalos a los 18 amuletos. Después cambia los amuletos uno a uno.",
+        "fromLabel": "Desde",
+        "toLabel": "Hasta",
+        "apply": "Aplicar a todos",
+        "reset": "Restablecer todo"
+    },
+    "fields": {
+        "notStarted": "Ninguno (sin empezar)",
+        "skip": "Ninguno (omitir)"
+    },
+    "result": {
+        "title": "Resultado",
+        "score": "Puntuación de amuletos",
+        "power": "Poder ganado",
+        "steps": "Niveles comprados",
+        "charms": "Amuletos mejorados",
+        "materials": "Materiales",
+        "noMaterials": "Elige un nivel objetivo para un amuleto y verás los materiales.",
+        "eventPoints": "Puntos de evento",
+        "eventPointsNote": "Los puntos de evento son la puntuación de amuletos por los puntos que paga la fila \"Raise Chief Charm max score\" en cada evento."
+    },
+    "charms": {
+        "title": "Amuletos del jefe",
+        "hint": "Elige el nivel actual de cada amuleto y el que quieres. Un amuleto en Ninguno (omitir) no se cuenta.",
+        "charmLabel": "Amuleto {number}",
+        "charmName": "Amuleto {number} de {piece}",
+        "fromLabel": "Desde",
+        "toLabel": "Hasta",
+        "fromName": "Desde ({charm})",
+        "toName": "Hasta ({charm})"
+    },
+    "breakdown": {
+        "title": "Por amuleto",
+        "empty": "Ningún amuleto tiene aún un objetivo por encima de su nivel inicial.",
+        "charm": "Amuleto",
+        "charmName": "Amuleto {number} de {piece}",
+        "levels": "Niveles",
+        "levelRange": "{from} a {to}",
+        "stat": "Bonificación de estadística",
+        "percent": "{value}%",
+        "steps": "Niveles comprados",
+        "score": "Puntuación",
+        "power": "Poder",
+        "materials": "Materiales",
+        "none": "Ninguno"
+    }
+}

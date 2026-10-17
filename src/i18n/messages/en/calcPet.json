@@ -1,0 +1,61 @@
+{
+    "intro": "Add the pets you want to level. For each pet, pick the level it is at now and the level you want. A pet advances at every level that is a multiple of 10 and needs the advancement to go past that level.",
+    "picker": {
+        "petLabel": "Pet",
+        "add": "Add pet",
+        "addAll": "Add every pet",
+        "allAdded": "Every pet is in the list.",
+        "setAllMax": "Set every goal to max",
+        "advanceAtMax": "Also advance at the max level",
+        "removeAll": "Remove all"
+    },
+    "row": {
+        "maxLevel": "Max level {max}",
+        "current": "Current level",
+        "goal": "Goal level",
+        "currentAdvanced": "Already advanced",
+        "goalAdvanced": "Advance at the goal",
+        "keepsAdvancement": "The pet keeps its advancement at this level.",
+        "remove": "Remove {pet}"
+    },
+    "empty": "No pet added yet. Add a pet above to see the pet food, the advancement items and the gains.",
+    "results": {
+        "title": "Results",
+        "stats": {
+            "levels": "Levels",
+            "advancements": "Advancements",
+            "troopAttack": "Troop Attack gained",
+            "troopDefense": "Troop Defense gained",
+            "power": "Power gained",
+            "advancementScore": "Advancement score"
+        },
+        "percent": "{value}%",
+        "unknown": "Unknown",
+        "unknownPowerNote": "The game data has no advanced power for some advancement levels, so the power gain of these pets is Unknown.",
+        "resources": {
+            "title": "Resources",
+            "empty": "Choose a goal above the current level to see the resources."
+        },
+        "events": {
+            "title": "Event points from the advancement score",
+            "noPoints": "No points",
+            "note": "Event points are the advancement score times the points of the \"Pet advancement score increases by 1\" row of each event. {hallOfChief} has no pet row."
+        },
+        "byPet": {
+            "title": "By pet",
+            "tableLabel": "Results by pet",
+            "empty": "No pet gains a level or an advancement yet.",
+            "heads": {
+                "pet": "Pet",
+                "levels": "Levels",
+                "advancements": "Advancements",
+                "score": "Score",
+                "resources": "Resources",
+                "troopAttack": "Troop Attack",
+                "troopDefense": "Troop Defense",
+                "power": "Power"
+            },
+            "noResources": "None"
+        }
+    }
+}

@@ -1,0 +1,65 @@
+{
+    "levelBand": "Уровень с {low} до {high}",
+    "stamina": {
+        "title": "Выносливость",
+        "stamina": "Выносливость",
+        "cans": "Банки выносливости",
+        "cansHint": "По {amount} выносливости",
+        "gina": "Endurance Training (Gina)",
+        "ginaNone": "Не используется",
+        "ginaLevel": "Уровень {level}, на {percent}% меньше выносливости",
+        "beastLevel": "Уровень зверя для остатка выносливости",
+        "beastLevelHint": "Звери одной группы дают одинаковые очки в State of Power."
+    },
+    "planned": {
+        "title": "Запланированные охоты",
+        "hint": "Охоты, которые вы проведёте в любом случае, например на зверей из заданий Intel. Оплачиваются первыми.",
+        "empty": "Охот на зверей не запланировано.",
+        "runLevel": "Уровень зверя",
+        "runCount": "Звери",
+        "add": "Добавить охоту на зверей",
+        "remove": "Убрать охоту на зверей: {band}",
+        "polarTerrors": "Запланированные Polar Terrors"
+    },
+    "result": {
+        "pointsNote": "Очки указаны без бонусов, например Valeria в State of Power. Охоты не на зверей и не на Polar Terrors, например Bear Hunt, не считаются.",
+        "tiles": {
+            "title": "Выносливость",
+            "percent": "{percent}%",
+            "total": "Всего выносливости",
+            "ginaReduction": "Скидка от Gina",
+            "beastCost": "Выносливость на зверя",
+            "polarTerrorCost": "Выносливость на Polar Terror",
+            "planned": "Выносливость на запланированные охоты",
+            "left": "Остаток выносливости",
+            "short": "Не хватает выносливости",
+            "shortNote": "Запланированным охотам не хватает {amount} выносливости. На дополнительные охоты остатка нет."
+        },
+        "leftover": {
+            "title": "Остаток выносливости после запланированных охот",
+            "hint": "В каждой строке весь остаток выносливости уходит на один вид охоты.",
+            "hunt": "Охота",
+            "onlyBeasts": "Только звери: {band}",
+            "onlyPolarTerrors": "Только Polar Terrors",
+            "count": "Ещё охот",
+            "staminaLeft": "Остаток выносливости"
+        },
+        "events": {
+            "title": "Очки событий",
+            "hint": "План: очки запланированных охот. Два последних столбца добавляют охоты, которые покрывает остаток выносливости.",
+            "event": "Событие",
+            "perBeast": "За зверя",
+            "perPolarTerror": "За Polar Terror",
+            "planned": "План",
+            "withBeasts": "План и звери",
+            "withPolarTerrors": "План и Polar Terrors"
+        },
+        "plannedPoints": {
+            "title": "Очки запланированных охот",
+            "hunt": "Охота",
+            "beasts": "{count, plural, one {{amount} зверь, {band}} few {{amount} зверя, {band}} many {{amount} зверей, {band}} other {{amount} зверя, {band}}}",
+            "polarTerrors": "{count, plural, one {{amount} Polar Terror} few {{amount} Polar Terrors} many {{amount} Polar Terrors} other {{amount} Polar Terrors}}",
+            "total": "Итого"
+        }
+    }
+}

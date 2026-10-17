@@ -1,0 +1,67 @@
+{
+    "intro": "Choisissez le niveau d'affinité et les niveaux de compétence que chaque expert a maintenant et ceux que vous voulez. Le calculateur additionne les Books of Knowledge, les sceaux d'expert, l'EXP de compétence et les points d'affinité. Un expert avance à chaque dixième niveau et a besoin de sceaux pour aller au-delà. Activez Avancé quand l'expert a déjà avancé au niveau actuel, ou pour payer l'avancement au niveau objectif. Le talent monte avec la relation et ne coûte rien.",
+    "goals": {
+        "title": "Experts",
+        "empty": "Ajoutez un expert pour voir les Books of Knowledge, les sceaux et les points d'événement."
+    },
+    "add": {
+        "label": "Expert à ajouter",
+        "button": "Ajouter",
+        "allAdded": "Tous les experts sont dans le calculateur."
+    },
+    "expert": {
+        "meta": "{title}, {specialty}",
+        "remove": "Retirer",
+        "removeLabel": "Retirer {expert}",
+        "affinity": "Niveau d'affinité",
+        "current": "Actuel",
+        "goal": "Objectif",
+        "advancedAtCurrent": "Avancé au niveau {level}",
+        "advanceAtGoal": "Avancer au niveau {level}",
+        "skillMax": "Max {level}"
+    },
+    "results": {
+        "title": "Résultats",
+        "stats": {
+            "books": "Books of Knowledge",
+            "sigils": "Sceaux d'expert",
+            "exp": "EXP de compétence",
+            "learningTime": "Durée d'apprentissage",
+            "affinity": "Points d'affinité",
+            "levels": "Niveaux d'affinité",
+            "skillLevels": "Niveaux de compétence",
+            "advancements": "Avancements"
+        }
+    },
+    "resources": {
+        "title": "Ressources",
+        "nothing": "Ces objectifs ne demandent ni Books of Knowledge ni sceaux.",
+        "commonSigils": "Les Common Expert Sigils se convertissent en sceaux de n'importe quel expert."
+    },
+    "events": {
+        "title": "Points d'événement",
+        "heads": {
+            "event": "Événement",
+            "items": "Livres et sceaux",
+            "perMinute": "Par minute d'accélération",
+            "speedups": "Accélérations",
+            "total": "Total"
+        },
+        "hint": "Les points d'accélération comptent des accélérations d'apprentissage ou générales pour toute la durée d'apprentissage de {duration}."
+    },
+    "byExpert": {
+        "title": "Par expert",
+        "nothing": "Aucun expert n'a encore un objectif au-dessus de son niveau actuel.",
+        "heads": {
+            "expert": "Expert",
+            "levels": "Niveaux d'affinité",
+            "advancements": "Avancements",
+            "skillLevels": "Niveaux de compétence",
+            "books": "Livres",
+            "sigils": "Sceaux",
+            "exp": "EXP de compétence",
+            "learningTime": "Durée d'apprentissage",
+            "affinity": "Points d'affinité"
+        }
+    }
+}

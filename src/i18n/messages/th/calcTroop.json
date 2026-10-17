@@ -1,0 +1,117 @@
+{
+    "intro": "ตั้งเลเวลของแต่ละค่ายและสิ่งที่ค่ายฝึกหรือเลื่อนขั้น ทั้งสามค่ายใช้ความจุการฝึกร่วมกัน คือความจุของเลเวลทั้งสามค่ายรวมกัน บวกโบนัสด้านล่าง",
+    "reset": "รีเซ็ตทั้งหมด",
+    "tier": "T{tier}",
+    "bonuses": {
+        "title": "ความจุและความเร็ว",
+        "researchCapacity": "ความจุจากวิจัย",
+        "researchCapacityHint": "ความจุการฝึกจากการวิจัย ตามที่เกมแสดง",
+        "trainingSpeed": "ความเร็วฝึก (%)",
+        "trainingSpeedHint": "ความเร็วของคุณตามที่เกมแสดง ไม่รวมบัฟด้านล่าง",
+        "position": "ตำแหน่งแต่งตั้ง",
+        "positions": {
+            "none": "ไม่มี",
+            "ministerOfEducation": "รัฐมนตรีศึกษา",
+            "vicePresident": "รองประธานาธิบดี"
+        },
+        "rank": "ระดับ",
+        "ranks": {
+            "regular": "ปกติ",
+            "supreme": "สูงสุด"
+        },
+        "appointmentEffect": "ความจุ +{capacity}, ความเร็วฝึก +{speed}%",
+        "capacityBoost": "Capacity boost",
+        "capacityBoostEffect": "คูณความจุรวมด้วย {multiplier}",
+        "mobilize": "Mobilize",
+        "advancedTraining": "Advanced Training",
+        "speedEffect": "ความเร็วฝึก +{speed}%",
+        "costReduction": "ลดค่าใช้จ่าย",
+        "costReductionLabel": "ลดค่าใช้จ่าย{name} (%)",
+        "costReductionHint": "ตั้งแต่ 0 ถึง {max}%"
+    },
+    "camps": {
+        "title": "ค่าย",
+        "level": "เลเวลค่าย",
+        "levelOption": "{level} (ความจุ {capacity})",
+        "mode": "การดำเนินการ",
+        "modes": {
+            "none": "ไม่ฝึก",
+            "training": "ฝึก",
+            "promotion": "เลื่อนขั้น",
+            "both": "ฝึกและเลื่อนขั้น"
+        },
+        "trainingTitle": "ฝึก",
+        "promotionTitle": "เลื่อนขั้น",
+        "trainTier": "ระดับที่จะฝึก",
+        "fromTier": "เลื่อนขั้นจาก",
+        "toTier": "เลื่อนขั้นเป็น",
+        "troopsPerBatch": "ทหารในแต่ละชุด",
+        "max": "สูงสุด",
+        "maxValue": "สูงสุด ({capacity})",
+        "batches": "ชุด",
+        "runTime": "เวลา {time}"
+    },
+    "results": {
+        "title": "ผลลัพธ์",
+        "capacity": "ความจุต่อชุด",
+        "troops": "ทหารที่ได้",
+        "power": "พลังที่ได้รับ",
+        "speedUsed": "ความเร็วฝึกที่ใช้",
+        "totalTime": "ตัวเร่งเวลาที่ต้องใช้",
+        "longest": "ค่ายที่นานที่สุด",
+        "percent": "{value}%",
+        "noRuns": "ตั้งอย่างน้อยหนึ่งค่ายให้ฝึกหรือเลื่อนขั้นเพื่อดูทหาร พลัง ทรัพยากร และเวลา",
+        "noChange": "รอบเหล่านี้ไม่เปลี่ยนจำนวนทหาร ตั้งจำนวนให้มากกว่า 0"
+    },
+    "tiers": {
+        "troopsTitle": "ทหารตามระดับ",
+        "powerTitle": "พลังตามระดับ",
+        "heads": {
+            "tier": "ระดับ",
+            "total": "รวม"
+        },
+        "total": "รวม",
+        "promotionNote": "การเลื่อนขั้นนำทหารและพลังของระดับล่างไปเพิ่มให้ระดับสูงกว่า ระดับล่างจึงแสดงการเปลี่ยนแปลงติดลบ",
+        "fireCrystalNote": "พลังใช้เลเวล Fire Crystal ของแต่ละค่าย: {levels} มีเพียงระดับ 10 และ 11 ที่เปลี่ยนตามเลเวล ไม่รวมโบนัสค่าสถานะจากวิจัยหรืออุปกรณ์",
+        "fireCrystalLevel": "{name} {level}"
+    },
+    "resources": {
+        "title": "ทรัพยากร",
+        "tableLabel": "ทรัพยากรที่ต้องใช้",
+        "heads": {
+            "resource": "ทรัพยากร",
+            "amount": "จำนวน"
+        }
+    },
+    "time": {
+        "title": "เวลา",
+        "heads": {
+            "camp": "ค่าย",
+            "action": "การดำเนินการ",
+            "troopsPerBatch": "ทหารต่อชุด",
+            "batches": "ชุด",
+            "time": "เวลา"
+        },
+        "training": "ฝึก {tier}",
+        "promotion": "เลื่อนขั้น {from} เป็น {to}",
+        "campTotal": "ค่าย {name}",
+        "totalTime": "ทุกค่ายรวมกัน (ตัวเร่งเวลาที่ต้องใช้)",
+        "longest": "ค่ายที่นานที่สุด (แต่ละค่ายฝึกพร้อมกัน)",
+        "minutesNeeded": "นาทีตัวเร่งเวลาที่ต้องใช้",
+        "minutes": "{value} นาที",
+        "note": "เวลาของแต่ละชุดคือเวลาต่อทหารหนึ่งนายคูณจำนวนทหาร หารด้วย 1 บวกความเร็วฝึก ก่อนใช้ตัวเร่งเวลา"
+    },
+    "events": {
+        "title": "คะแนนกิจกรรม",
+        "tableLabel": "คะแนนกิจกรรม",
+        "heads": {
+            "event": "กิจกรรม",
+            "training": "คะแนนการฝึก",
+            "perMinute": "คะแนนตัวเร่งเวลาต่อนาที",
+            "speedup": "คะแนนตัวเร่งเวลา",
+            "total": "รวม"
+        },
+        "noSpeedup": "ไม่มี",
+        "note": "คะแนนการฝึกนับทหารของรอบฝึกตามระดับของทหาร การเลื่อนขั้นไม่ให้คะแนนการฝึก คะแนนตัวเร่งเวลาใช้ {minutes} นาทีตัวเร่งเวลาที่ต้องใช้สำหรับทุกค่าย คะแนน Hall of Chief เป็นของหนึ่งซีซัน และไม่รวมคะแนนจากการเพิ่มพลัง"
+    }
+}

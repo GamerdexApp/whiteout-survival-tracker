@@ -1,0 +1,103 @@
+{
+    "speed": {
+        "title": "Vitesse de construction",
+        "reset": "Tout réinitialiser",
+        "percentLabel": "Vitesse de construction %",
+        "percentHint": "Votre bonus tel que le jeu l'affiche, sans le Vice-président ni le Double Time.",
+        "percentPlus": "+{value} %",
+        "percent": "{value} %",
+        "vicePresident": {
+            "label": "Vice-président",
+            "none": "Aucun",
+            "regular": "Normal",
+            "supreme": "Suprême"
+        },
+        "speedupLabel": "Minutes d'accélération que vous utilisez",
+        "speedupHint": "Accélérations de construction que vous utilisez sur ces améliorations. Elles s'ajoutent aux points d'événement.",
+        "doubleTime": "Double Time",
+        "doubleTimeNote": "L'Ordre du Chef ajoute {value} % aux améliorations lancées tant qu'il est actif.",
+        "total": "Vitesse de construction totale"
+    },
+    "buildings": {
+        "title": "Bâtiments",
+        "description": "Choisissez le niveau actuel et le niveau voulu pour chaque bâtiment. Les bâtiments prérequis sous le niveau qu'une étape exige sont ajoutés au plan, donc réglez le niveau actuel de chaque bâtiment que vous avez, sinon il compte comme non construit. Rien n'est enregistré.",
+        "tableLabel": "Bâtiments avec niveau actuel et niveau objectif",
+        "columns": {
+            "building": "Bâtiment",
+            "current": "Niveau actuel",
+            "goal": "Niveau objectif"
+        },
+        "levelLabel": {
+            "current": "Niveau actuel de {name}",
+            "goal": "Niveau objectif de {name}"
+        },
+        "notBuilt": "Non construit"
+    },
+    "results": {
+        "title": "Résultats",
+        "empty": "Choisissez un objectif au-dessus du niveau actuel d'un bâtiment pour voir les ressources, la durée, la puissance et les points d'événement.",
+        "plus": "+{value}",
+        "stats": {
+            "steps": "Niveaux à construire",
+            "baseTime": "Durée avant la vitesse",
+            "time": "Durée à {percent} % de vitesse",
+            "power": "Puissance gagnée",
+            "speedupMinutes": "Minutes d'accélération nécessaires"
+        },
+        "unmet": {
+            "title": "Les prérequis sur des bâtiments absents des données n'ajoutent aucune étape :",
+            "item": "{building} niveau {level}",
+            "listSeparator": ", "
+        },
+        "resources": {
+            "title": "Ressources"
+        },
+        "events": {
+            "title": "Points d'événement",
+            "columns": {
+                "event": "Événement",
+                "crystalPoints": "Fire Crystals",
+                "speedupPoints": "Accélérations",
+                "total": "Total",
+                "pointsPerPower": "Points",
+                "days": "Jours de l'événement",
+                "points": "Points de puissance"
+            },
+            "scoreTableLabel": "Points des Fire Crystals et des accélérations",
+            "speedupNote": "Les points d'accélération comptent {used} des {needed} minutes que demande la construction. Les minutes au-delà ne rapportent rien.",
+            "hallTableLabel": "Points de puissance de {name}",
+            "hallNote": "{name} note chaque point de puissance gagné par la construction. Le multiplicateur dépend du jour de l'événement.",
+            "pointsPerPower": "{value} par point de puissance",
+            "daySeparator": ", "
+        },
+        "breakdown": {
+            "title": "Par bâtiment",
+            "plus": "+{value}",
+            "levelRange": "{from} à {to}",
+            "prerequisite": "Prérequis",
+            "free": "Sans coût",
+            "columns": {
+                "building": "Bâtiment",
+                "levels": "Niveaux",
+                "steps": "Étapes",
+                "power": "Puissance",
+                "baseTime": "Durée avant la vitesse",
+                "resources": "Ressources"
+            }
+        },
+        "stepDetails": {
+            "title": "{count, plural, one {Détail des étapes ({amount} étape)} other {Détail des étapes ({amount} étapes)}}",
+            "tableLabel": "Chaque niveau construit, dans l'ordre de construction",
+            "plus": "+{value}",
+            "prerequisite": "Prérequis",
+            "free": "Sans coût",
+            "columns": {
+                "building": "Bâtiment",
+                "level": "Niveau",
+                "power": "Puissance",
+                "baseTime": "Durée avant la vitesse",
+                "cost": "Coût"
+            }
+        }
+    }
+}

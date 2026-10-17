@@ -1,0 +1,103 @@
+{
+    "speed": {
+        "title": "Kecepatan konstruksi",
+        "reset": "Atur ulang semua",
+        "percentLabel": "Kecepatan konstruksi %",
+        "percentHint": "Kecepatanmu seperti tampil di game, tanpa Vice President dan Double Time.",
+        "percentPlus": "+{value}%",
+        "percent": "{value}%",
+        "vicePresident": {
+            "label": "Vice President",
+            "none": "Tidak ada",
+            "regular": "Biasa",
+            "supreme": "Supreme"
+        },
+        "speedupLabel": "Menit percepatan yang kamu pakai",
+        "speedupHint": "Percepatan konstruksi yang kamu pakai untuk upgrade ini. Menit ini menambah poin event.",
+        "doubleTime": "Double Time",
+        "doubleTimeNote": "Chief Order menambah {value}% untuk upgrade yang dimulai saat aktif.",
+        "total": "Total kecepatan konstruksi"
+    },
+    "buildings": {
+        "title": "Bangunan",
+        "description": "Pilih level kamu sekarang dan level yang kamu mau untuk tiap bangunan. Bangunan prasyarat di bawah level yang dibutuhkan sebuah langkah ditambahkan ke rencana, jadi atur level saat ini semua bangunan yang kamu punya, atau dianggap belum dibangun. Tidak ada yang disimpan.",
+        "tableLabel": "Bangunan dengan level saat ini dan target",
+        "columns": {
+            "building": "Bangunan",
+            "current": "Level saat ini",
+            "goal": "Level target"
+        },
+        "levelLabel": {
+            "current": "Level saat ini {name}",
+            "goal": "Level target {name}"
+        },
+        "notBuilt": "Belum dibangun"
+    },
+    "results": {
+        "title": "Hasil",
+        "empty": "Pilih target di atas level saat ini sebuah bangunan untuk melihat sumber daya, waktu, kekuatan, dan poin event.",
+        "plus": "+{value}",
+        "stats": {
+            "steps": "Level yang dibangun",
+            "baseTime": "Waktu sebelum percepatan",
+            "time": "Waktu di kecepatan {percent}%",
+            "power": "Kekuatan didapat",
+            "speedupMinutes": "Menit percepatan dibutuhkan"
+        },
+        "unmet": {
+            "title": "Prasyarat pada bangunan yang tidak ada di data tidak menambah langkah:",
+            "item": "{building} level {level}",
+            "listSeparator": ", "
+        },
+        "resources": {
+            "title": "Sumber daya"
+        },
+        "events": {
+            "title": "Poin event",
+            "columns": {
+                "event": "Event",
+                "crystalPoints": "Fire Crystals",
+                "speedupPoints": "Percepatan",
+                "total": "Total",
+                "pointsPerPower": "Poin",
+                "days": "Hari event",
+                "points": "Poin dari kekuatan"
+            },
+            "scoreTableLabel": "Poin Fire Crystal dan percepatan",
+            "speedupNote": "Poin percepatan menghitung {used} dari {needed} menit yang dibutuhkan waktu bangun. Menit di atas itu tidak memberi skor.",
+            "hallTableLabel": "Poin {name} dari kekuatan",
+            "hallNote": "{name} memberi skor untuk setiap kekuatan yang didapat lewat konstruksi. Pengalinya tergantung hari event.",
+            "pointsPerPower": "{value} per kekuatan",
+            "daySeparator": ", "
+        },
+        "breakdown": {
+            "title": "Menurut bangunan",
+            "plus": "+{value}",
+            "levelRange": "{from} sampai {to}",
+            "prerequisite": "Prasyarat",
+            "free": "Tanpa biaya",
+            "columns": {
+                "building": "Bangunan",
+                "levels": "Level",
+                "steps": "Langkah",
+                "power": "Kekuatan",
+                "baseTime": "Waktu sebelum percepatan",
+                "resources": "Sumber daya"
+            }
+        },
+        "stepDetails": {
+            "title": "{count, plural, other {Detail langkah ({amount} langkah)}}",
+            "tableLabel": "Tiap level yang dibangun, sesuai urutan bangun",
+            "plus": "+{value}",
+            "prerequisite": "Prasyarat",
+            "free": "Tanpa biaya",
+            "columns": {
+                "building": "Bangunan",
+                "level": "Level",
+                "power": "Kekuatan",
+                "baseTime": "Waktu sebelum percepatan",
+                "cost": "Biaya"
+            }
+        }
+    }
+}

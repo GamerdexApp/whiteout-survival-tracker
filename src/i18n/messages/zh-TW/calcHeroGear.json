@@ -1,0 +1,77 @@
+{
+    "piece": {
+        "title": "英雄裝備",
+        "quality": "品質",
+        "slot": "裝備",
+        "troopType": "部隊類型",
+        "name": "{troop}{slot}",
+        "mythicOnly": "只有神話裝備可以鍛造和賦能。此品質下精通鍛造和賦能不可用。"
+    },
+    "tracks": {
+        "enhancement": "強化",
+        "masteryForging": "精通鍛造",
+        "empowerment": "賦能",
+        "current": "目前",
+        "goal": "目標",
+        "range": "{from} 到 {to} 級",
+        "none": "無",
+        "forgingRow": "{name}（+{percent}%）",
+        "needsMythic": "需要神話裝備",
+        "reset": "重設等級"
+    },
+    "unmet": {
+        "title": "目前還無法達成。",
+        "enhancement": "{track}需要先達到強化 {level} 級。",
+        "masteryForging": "{track}需要先達到精通鍛造 {row}。",
+        "quality": "{track}需要神話裝備。",
+        "hint": "如果這件裝備已經達到，請把目前等級設為相同。"
+    },
+    "noForging": "賦能需要精通鍛造達到 {row}。精通鍛造為「無」，因此戰力和數值不計鍛造。",
+    "summary": {
+        "title": "結果",
+        "powerGained": "獲得戰力",
+        "currentPower": "目前戰力",
+        "goalPower": "規劃完成後的戰力",
+        "forgingStatsUp": "精通鍛造數值提升",
+        "percent": "+{value}%"
+    },
+    "resources": {
+        "title": "所需資源",
+        "item": "道具",
+        "amount": "數量",
+        "empty": "沒有可升級的內容。請把目標調到高於目前等級。"
+    },
+    "stats": {
+        "title": "裝備數值",
+        "tableLabel": "裝備數值，目前與規劃完成後",
+        "stat": "數值",
+        "current": "目前",
+        "goal": "規劃後",
+        "gain": "提升",
+        "power": "戰力",
+        "health": "生命",
+        "percentStat": "{name}（%）",
+        "percentValue": "{value}%",
+        "note": "數值包含精通鍛造，並無條件捨去。"
+    },
+    "milestones": {
+        "title": "解鎖的 Mithril 里程碑",
+        "line": "賦能 {level}：{event}，{stat}",
+        "empty": "這份規劃不會解鎖任何 Mithril 里程碑。"
+    },
+    "tracksTable": {
+        "title": "依類別",
+        "label": "各類別的步驟、提升和資源",
+        "track": "類別",
+        "steps": "步驟",
+        "gain": "提升",
+        "powerGain": "鍛造前戰力 {value}",
+        "statsUp": "數值 +{value}%",
+        "resources": "資源",
+        "none": "無"
+    },
+    "events": {
+        "title": "活動積分",
+        "note": "規劃所需 Essence Stones 和 Mithril 的積分。"
+    }
+}

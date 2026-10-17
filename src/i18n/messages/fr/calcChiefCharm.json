@@ -1,0 +1,50 @@
+{
+    "setAll": {
+        "title": "Régler tous les charmes",
+        "hint": "Chaque pièce d'équipement a 3 charmes. Choisissez ici un niveau de départ et un niveau objectif et appliquez-les aux 18 charmes, puis modifiez chaque charme plus bas.",
+        "fromLabel": "De",
+        "toLabel": "Vers",
+        "apply": "Appliquer à tous",
+        "reset": "Tout réinitialiser"
+    },
+    "fields": {
+        "notStarted": "Aucun (pas commencé)",
+        "skip": "Aucun (ignorer)"
+    },
+    "result": {
+        "title": "Résultat",
+        "score": "Score de charmes",
+        "power": "Puissance gagnée",
+        "steps": "Niveaux achetés",
+        "charms": "Charmes améliorés",
+        "materials": "Matériaux",
+        "noMaterials": "Choisissez un niveau objectif pour un charme afin de voir les matériaux.",
+        "eventPoints": "Points d'événement",
+        "eventPointsNote": "Les points d'événement sont le score de charmes multiplié par les points que paie la ligne \"Raise Chief Charm max score\" dans chaque événement."
+    },
+    "charms": {
+        "title": "Charmes du chef",
+        "hint": "Choisissez le niveau actuel de chaque charme et le niveau voulu. Un charme laissé sur Aucun (ignorer) n'est pas compté.",
+        "charmLabel": "Charme {number}",
+        "charmName": "{piece} charme {number}",
+        "fromLabel": "De",
+        "toLabel": "Vers",
+        "fromName": "De ({charm})",
+        "toName": "Vers ({charm})"
+    },
+    "breakdown": {
+        "title": "Par charme",
+        "empty": "Aucun charme n'a encore un objectif au-dessus de son niveau de départ.",
+        "charm": "Charme",
+        "charmName": "{piece} charme {number}",
+        "levels": "Niveaux",
+        "levelRange": "{from} à {to}",
+        "stat": "Bonus de stat",
+        "percent": "{value} %",
+        "steps": "Niveaux achetés",
+        "score": "Score",
+        "power": "Puissance",
+        "materials": "Matériaux",
+        "none": "Aucun"
+    }
+}

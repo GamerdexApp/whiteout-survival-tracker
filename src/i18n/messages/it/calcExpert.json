@@ -1,0 +1,67 @@
+{
+    "intro": "Scegli il livello di affinità e i livelli delle abilità che ogni esperto ha ora e quelli che vuoi. Il calcolatore somma i Books of Knowledge, i sigilli degli esperti, gli EXP delle abilità e i punti affinità. Un esperto avanza a ogni decimo livello e servono sigilli per andare oltre. Attiva Avanzato quando l'esperto è già avanzato al livello attuale, o per pagare l'avanzamento al livello obiettivo. Il talento sale con la relazione e non costa nulla.",
+    "goals": {
+        "title": "Esperti",
+        "empty": "Aggiungi un esperto per vedere i Books of Knowledge, i sigilli e i punti evento."
+    },
+    "add": {
+        "label": "Esperto da aggiungere",
+        "button": "Aggiungi",
+        "allAdded": "Ogni esperto è nel calcolatore."
+    },
+    "expert": {
+        "meta": "{title}, {specialty}",
+        "remove": "Rimuovi",
+        "removeLabel": "Rimuovi {expert}",
+        "affinity": "Livello di affinità",
+        "current": "Attuale",
+        "goal": "Obiettivo",
+        "advancedAtCurrent": "Avanzato al livello {level}",
+        "advanceAtGoal": "Avanza al livello {level}",
+        "skillMax": "Max {level}"
+    },
+    "results": {
+        "title": "Risultati",
+        "stats": {
+            "books": "Books of Knowledge",
+            "sigils": "Sigilli degli esperti",
+            "exp": "EXP delle abilità",
+            "learningTime": "Tempo di apprendimento",
+            "affinity": "Punti affinità",
+            "levels": "Livelli di affinità",
+            "skillLevels": "Livelli abilità",
+            "advancements": "Avanzamenti"
+        }
+    },
+    "resources": {
+        "title": "Risorse",
+        "nothing": "Questi obiettivi non richiedono Books of Knowledge né sigilli.",
+        "commonSigils": "I Common Expert Sigils si convertono nei sigilli di qualsiasi esperto."
+    },
+    "events": {
+        "title": "Punti evento",
+        "heads": {
+            "event": "Evento",
+            "items": "Libri e sigilli",
+            "perMinute": "Per minuto di accelerazione",
+            "speedups": "Accelerazioni",
+            "total": "Totale"
+        },
+        "hint": "I punti delle accelerazioni contano le accelerazioni di Apprendimento o Generali per tutto il tempo di apprendimento di {duration}."
+    },
+    "byExpert": {
+        "title": "Per esperto",
+        "nothing": "Nessun esperto ha ancora un obiettivo sopra il livello attuale.",
+        "heads": {
+            "expert": "Esperto",
+            "levels": "Livelli di affinità",
+            "advancements": "Avanzamenti",
+            "skillLevels": "Livelli abilità",
+            "books": "Libri",
+            "sigils": "Sigilli",
+            "exp": "EXP delle abilità",
+            "learningTime": "Tempo di apprendimento",
+            "affinity": "Punti affinità"
+        }
+    }
+}

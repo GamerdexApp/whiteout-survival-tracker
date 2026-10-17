@@ -1,0 +1,118 @@
+{
+    "speed": {
+        "title": "研究速度",
+        "reset": "全部重置",
+        "percentLabel": "研究速度 %",
+        "percentHint": "填写游戏中显示的速度，不含这里的增益。",
+        "stateBuff": "State 增益",
+        "percentPlus": "+{value}%",
+        "percent": "{value}%",
+        "vicePresident": {
+            "label": "副总统",
+            "none": "无",
+            "regular": "普通",
+            "supreme": "至高"
+        },
+        "total": "研究速度总计"
+    },
+    "lines": {
+        "title": "研究项目",
+        "description": "为每个项目选择当前等级和你想要的等级。与游戏中一样，项目的每个阶都是独立的项目。这里不会保存任何内容。",
+        "tabsLabel": "研究树",
+        "tabs": {
+            "growth": "成长",
+            "economy": "经济",
+            "battle": "战斗",
+            "war-academy-troops": "War Academy T11",
+            "t12-infantry": "盾兵 T12",
+            "t12-marksman": "弓兵 T12",
+            "t12-lancer": "矛兵 T12"
+        },
+        "tableLabel": "此研究树的研究项目",
+        "columns": {
+            "line": "研究项目",
+            "current": "当前等级",
+            "goal": "目标等级"
+        },
+        "levelLabel": {
+            "current": "{name}当前等级",
+            "goal": "{name}目标等级"
+        },
+        "levelMax": "{level}（满级）",
+        "tier": {
+            "plain": "第{tier}阶",
+            "troopLine": "{line} T{tier}"
+        },
+        "bulk": {
+            "current": "把所有当前等级设为",
+            "goal": "把所有目标设为",
+            "pick": "选择等级"
+        }
+    },
+    "results": {
+        "title": "结果",
+        "empty": "把某个研究项目的目标设为高于当前等级，即可查看资源、时间、战力和活动积分。",
+        "plus": "+{value}",
+        "stats": {
+            "steps": "需研究的等级数",
+            "baseTime": "加速前时间",
+            "time": "{percent}% 速度下的时间",
+            "power": "获得战力",
+            "speedupMinutes": "所需加速分钟数"
+        },
+        "resources": {
+            "title": "资源"
+        },
+        "bonuses": {
+            "title": "获得的加成",
+            "percentGain": "+{value}%",
+            "flatGain": "+{value}",
+            "none": "这些等级没有加成。"
+        },
+        "events": {
+            "title": "活动积分",
+            "columns": {
+                "event": "活动",
+                "shardPoints": "Fire Crystal Shards",
+                "speedupPoints": "加速",
+                "total": "合计",
+                "pointsPerPower": "积分",
+                "days": "活动日",
+                "points": "战力带来的积分"
+            },
+            "names": {
+                "svs": "SvS",
+                "allianceShowdown": "Alliance Showdown",
+                "kingOfIcefield": "King of Icefield",
+                "hallOfChief": "Hall of Chief"
+            },
+            "speedupTableLabel": "Fire Crystal Shard 和加速积分",
+            "speedupNote": "加速积分假设你用研究加速完成全部 {minutes} 分钟的研究时间。",
+            "hallTableLabel": "战力带来的 Hall of Chief 积分",
+            "hallNote": "Hall of Chief 对研究获得的每点战力计分。倍率取决于活动日。",
+            "pointsPerPower": "每点战力 {value}",
+            "daySeparator": "，"
+        },
+        "requirements": {
+            "buildings": "所需建筑：",
+            "buildingLevel": "{building} {level}级",
+            "listSeparator": "，",
+            "unmetTitle": "{count, plural, other {{amount}个等级}}需要另一个研究项目达到你的计划没有覆盖的等级：",
+            "unmetItem": "{name} {level}级需要{requires} {requiresLevel}级（计划 {planned}）",
+            "unmetMore": "还有 {amount} 个。",
+            "stepsWithoutTime": "{count, plural, other {{amount}个等级}}在数据中没有研究时间，因此时间按 0 计算。",
+            "placeholders": "{names}暂时没有花费或时间数据，其资源和时间不计入。"
+        },
+        "breakdown": {
+            "title": "按研究项目",
+            "plus": "+{value}",
+            "columns": {
+                "line": "研究项目",
+                "steps": "等级",
+                "baseTime": "加速前时间",
+                "power": "战力",
+                "resources": "资源"
+            }
+        }
+    }
+}

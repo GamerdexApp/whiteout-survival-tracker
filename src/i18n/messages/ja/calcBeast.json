@@ -1,0 +1,65 @@
+{
+    "levelBand": "レベル{low}から{high}",
+    "stamina": {
+        "title": "スタミナ",
+        "stamina": "スタミナ",
+        "cans": "スタミナ缶",
+        "cansHint": "1個につきスタミナ{amount}",
+        "gina": "GinaのEndurance Training",
+        "ginaNone": "使わない",
+        "ginaLevel": "レベル{level}、スタミナ{percent}%減",
+        "beastLevel": "残りスタミナで倒すビーストのレベル",
+        "beastLevelHint": "同じグループのビーストは、State of Powerで同じポイントになります。"
+    },
+    "planned": {
+        "title": "予定した討伐",
+        "hint": "どのみち行う討伐です。例えばIntelミッションのビーストです。先にスタミナを消費します。",
+        "empty": "予定したビースト討伐はありません。",
+        "runLevel": "ビーストのレベル",
+        "runCount": "ビースト",
+        "add": "ビースト討伐を追加",
+        "remove": "{band}のビースト討伐を削除",
+        "polarTerrors": "予定したPolar Terror"
+    },
+    "result": {
+        "pointsNote": "ポイントはボーナス適用前の値です。State of PowerのValeriaなどは含まれません。Bear Huntなど、ビーストとPolar Terror以外の討伐は含まれません。",
+        "tiles": {
+            "title": "スタミナ",
+            "percent": "{percent}%",
+            "total": "スタミナの合計",
+            "ginaReduction": "Ginaによる減少",
+            "beastCost": "ビースト1体のスタミナ",
+            "polarTerrorCost": "Polar Terror 1体のスタミナ",
+            "planned": "予定した討伐のスタミナ",
+            "left": "残りスタミナ",
+            "short": "不足スタミナ",
+            "shortNote": "予定した討伐には、持っているスタミナより{amount}多く必要です。残りスタミナでは追加の討伐はできません。"
+        },
+        "leftover": {
+            "title": "予定した討伐後の残りスタミナ",
+            "hint": "各行は、残りスタミナをすべて1種類の討伐に使った場合です。",
+            "hunt": "討伐",
+            "onlyBeasts": "ビーストのみ、{band}",
+            "onlyPolarTerrors": "Polar Terrorのみ",
+            "count": "追加の討伐",
+            "staminaLeft": "残りスタミナ"
+        },
+        "events": {
+            "title": "イベントポイント",
+            "hint": "予定は、予定した討伐のポイントです。最後の2列は、残りスタミナで行える討伐を加えた値です。",
+            "event": "イベント",
+            "perBeast": "ビーストごと",
+            "perPolarTerror": "Polar Terrorごと",
+            "planned": "予定",
+            "withBeasts": "予定とビースト",
+            "withPolarTerrors": "予定とPolar Terror"
+        },
+        "plannedPoints": {
+            "title": "予定した討伐のポイント",
+            "hunt": "討伐",
+            "beasts": "{count, plural, other {ビースト{amount}体、{band}}}",
+            "polarTerrors": "{count, plural, other {Polar Terror {amount}体}}",
+            "total": "合計"
+        }
+    }
+}

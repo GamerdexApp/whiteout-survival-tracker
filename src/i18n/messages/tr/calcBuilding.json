@@ -1,0 +1,103 @@
+{
+    "speed": {
+        "title": "İnşaat hızı",
+        "reset": "Tümünü sıfırla",
+        "percentLabel": "İnşaat hızı %",
+        "percentHint": "Oyunda gördüğün bonus, Başkan yardımcısı ve Double Time olmadan.",
+        "percentPlus": "+%{value}",
+        "percent": "%{value}",
+        "vicePresident": {
+            "label": "Başkan yardımcısı",
+            "none": "Yok",
+            "regular": "Normal",
+            "supreme": "Üstün"
+        },
+        "speedupLabel": "Harcadığın hızlandırma dakikası",
+        "speedupHint": "Bu yükseltmelerde kullandığın inşaat hızlandırmaları. Etkinlik puanına eklenir.",
+        "doubleTime": "Double Time",
+        "doubleTimeNote": "Şef emri, etkinken başlayan yükseltmelere %{value} ekler.",
+        "total": "Toplam inşaat hızı"
+    },
+    "buildings": {
+        "title": "Binalar",
+        "description": "Her bina için şu anki seviyeyi ve istediğin seviyeyi seç. Bir adımın gerektirdiği seviyenin altındaki ön koşul binalar plana eklenir, bu yüzden sahip olduğun her binanın mevcut seviyesini ayarla, yoksa inşa edilmemiş sayılır. Hiçbir şey kaydedilmez.",
+        "tableLabel": "Mevcut ve hedef seviyeli binalar",
+        "columns": {
+            "building": "Bina",
+            "current": "Mevcut seviye",
+            "goal": "Hedef seviye"
+        },
+        "levelLabel": {
+            "current": "{name} mevcut seviye",
+            "goal": "{name} hedef seviye"
+        },
+        "notBuilt": "İnşa edilmedi"
+    },
+    "results": {
+        "title": "Sonuçlar",
+        "empty": "Kaynakları, süreyi, gücü ve etkinlik puanını görmek için bir binanın mevcut seviyesinin üstünde bir hedef seç.",
+        "plus": "+{value}",
+        "stats": {
+            "steps": "İnşa edilecek seviyeler",
+            "baseTime": "Hızdan önceki süre",
+            "time": "%{percent} hızda süre",
+            "power": "Kazanılan güç",
+            "speedupMinutes": "Gereken hızlandırma dakikası"
+        },
+        "unmet": {
+            "title": "Veride olmayan binalardaki ön koşullar adım eklemez:",
+            "item": "{building} seviye {level}",
+            "listSeparator": ", "
+        },
+        "resources": {
+            "title": "Kaynaklar"
+        },
+        "events": {
+            "title": "Etkinlik puanı",
+            "columns": {
+                "event": "Etkinlik",
+                "crystalPoints": "Fire Crystal",
+                "speedupPoints": "Hızlandırmalar",
+                "total": "Toplam",
+                "pointsPerPower": "Puan",
+                "days": "Etkinlik günleri",
+                "points": "Güçten gelen puan"
+            },
+            "scoreTableLabel": "Fire Crystal ve hızlandırma puanları",
+            "speedupNote": "Hızlandırma puanı, inşaat süresinin gerektirdiği {needed} dakikanın {used} dakikasını sayar. Bunun üstündeki dakikalar puan vermez.",
+            "hallTableLabel": "{name} güçten gelen puanlar",
+            "hallNote": "{name}, inşaatla kazanılan her güç puanını skorlar. Çarpan etkinlik gününe bağlıdır.",
+            "pointsPerPower": "Güç başına {value}",
+            "daySeparator": ", "
+        },
+        "breakdown": {
+            "title": "Binaya göre",
+            "plus": "+{value}",
+            "levelRange": "{from} - {to}",
+            "prerequisite": "Ön koşul",
+            "free": "Maliyet yok",
+            "columns": {
+                "building": "Bina",
+                "levels": "Seviyeler",
+                "steps": "Adımlar",
+                "power": "Güç",
+                "baseTime": "Hızdan önceki süre",
+                "resources": "Kaynaklar"
+            }
+        },
+        "stepDetails": {
+            "title": "{count, plural, one {Adım ayrıntıları ({amount} adım)} other {Adım ayrıntıları ({amount} adım)}}",
+            "tableLabel": "İnşa edilen her seviye, inşa sırasıyla",
+            "plus": "+{value}",
+            "prerequisite": "Ön koşul",
+            "free": "Maliyet yok",
+            "columns": {
+                "building": "Bina",
+                "level": "Seviye",
+                "power": "Güç",
+                "baseTime": "Hızdan önceki süre",
+                "cost": "Maliyet"
+            }
+        }
+    }
+}

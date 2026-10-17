@@ -1,6 +1,7 @@
 import type { IconType } from "react-icons";
 import {
   LuBuilding2,
+  LuCalculator,
   LuCalendarDays,
   LuCpu,
   LuCrown,
@@ -45,6 +46,7 @@ export const WIKI_PAGE_IDS = [
   "vip",
   "tundraAlbum",
   "dailies",
+  "calculator",
 ] as const;
 
 export type WikiPageId = (typeof WIKI_PAGE_IDS)[number];
@@ -144,6 +146,7 @@ export const wikiPages: WikiPageInfo[] = [
     icon: LuListChecks,
     trackerHref: "/dailies",
   },
+  { id: "calculator", slug: "calculator", icon: LuCalculator },
 ];
 
 export const wikiPageBySlug = (slug: string) =>

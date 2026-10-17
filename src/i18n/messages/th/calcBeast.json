@@ -1,0 +1,65 @@
+{
+    "levelBand": "เลเวล {low} ถึง {high}",
+    "stamina": {
+        "title": "สเตมินา",
+        "stamina": "สเตมินา",
+        "cans": "ขวดสเตมินา",
+        "cansHint": "ขวดละ {amount} สเตมินา",
+        "gina": "Endurance Training ของ Gina",
+        "ginaNone": "ไม่ใช้",
+        "ginaLevel": "เลเวล {level} ลดสเตมินา {percent}%",
+        "beastLevel": "เลเวลสัตว์ร้ายสำหรับสเตมินาที่เหลือ",
+        "beastLevelHint": "สัตว์ร้ายในกลุ่มเดียวกันได้คะแนนเท่ากันใน State of Power"
+    },
+    "planned": {
+        "title": "การล่าที่วางแผนไว้",
+        "hint": "การล่าที่คุณทำอยู่แล้ว เช่น สัตว์ร้ายของภารกิจ Intel หักสเตมินาส่วนนี้ก่อน",
+        "empty": "ไม่มีการล่าสัตว์ร้ายที่วางแผนไว้",
+        "runLevel": "เลเวลสัตว์ร้าย",
+        "runCount": "สัตว์ร้าย",
+        "add": "เพิ่มการล่าสัตว์ร้าย",
+        "remove": "ลบการล่าสัตว์ร้าย {band}",
+        "polarTerrors": "Polar Terror ที่วางแผนไว้"
+    },
+    "result": {
+        "pointsNote": "คะแนนนี้ยังไม่รวมโบนัส เช่น Valeria ใน State of Power การล่าที่ไม่ใช่สัตว์ร้ายหรือ Polar Terror เช่น Bear Hunt ไม่นับ",
+        "tiles": {
+            "title": "สเตมินา",
+            "percent": "{percent}%",
+            "total": "สเตมินารวม",
+            "ginaReduction": "สเตมินาที่ Gina ลด",
+            "beastCost": "สเตมินาต่อสัตว์ร้าย",
+            "polarTerrorCost": "สเตมินาต่อ Polar Terror",
+            "planned": "สเตมินาสำหรับการล่าที่วางแผนไว้",
+            "left": "สเตมินาที่เหลือ",
+            "short": "สเตมินาที่ขาด",
+            "shortNote": "การล่าที่วางแผนไว้ต้องใช้สเตมินาเพิ่มอีก {amount} จากที่คุณมี สเตมินาที่เหลือจึงล่าเพิ่มไม่ได้"
+        },
+        "leftover": {
+            "title": "สเตมินาที่เหลือหลังการล่าที่วางแผนไว้",
+            "hint": "แต่ละแถวใช้สเตมินาที่เหลือทั้งหมดกับการล่าแบบเดียว",
+            "hunt": "การล่า",
+            "onlyBeasts": "เฉพาะสัตว์ร้าย {band}",
+            "onlyPolarTerrors": "เฉพาะ Polar Terror",
+            "count": "ล่าเพิ่มได้",
+            "staminaLeft": "สเตมินาที่เหลือ"
+        },
+        "events": {
+            "title": "คะแนนกิจกรรม",
+            "hint": "วางแผนไว้คือคะแนนของการล่าที่วางแผนไว้ สองคอลัมน์สุดท้ายรวมการล่าที่สเตมินาที่เหลือจ่ายได้",
+            "event": "กิจกรรม",
+            "perBeast": "ต่อสัตว์ร้าย",
+            "perPolarTerror": "ต่อ Polar Terror",
+            "planned": "วางแผนไว้",
+            "withBeasts": "แผนและสัตว์ร้าย",
+            "withPolarTerrors": "แผนและ Polar Terror"
+        },
+        "plannedPoints": {
+            "title": "คะแนนของการล่าที่วางแผนไว้",
+            "hunt": "การล่า",
+            "beasts": "{count, plural, other {สัตว์ร้าย {amount} ตัว, {band}}}",
+            "polarTerrors": "{count, plural, other {Polar Terror {amount} ตัว}}",
+            "total": "รวม"
+        }
+    }
+}

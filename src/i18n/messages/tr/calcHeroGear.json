@@ -1,0 +1,77 @@
+{
+    "piece": {
+        "title": "Ekipman parçası",
+        "quality": "Kalite",
+        "slot": "Parça",
+        "troopType": "Birlik türü",
+        "name": "{troop} {slot}",
+        "mythicOnly": "Yalnızca Mitik ekipman dövülebilir ve güçlendirilebilir. Ustalık Dövme ve Güçlendirme bu kalite için kapalı."
+    },
+    "tracks": {
+        "enhancement": "Geliştirme",
+        "masteryForging": "Ustalık Dövme",
+        "empowerment": "Güçlendirme",
+        "current": "Mevcut",
+        "goal": "Hedef",
+        "range": "Seviye {from} - {to}",
+        "none": "Yok",
+        "forgingRow": "{name} (+%{percent})",
+        "needsMythic": "Mitik ekipman gerekir",
+        "reset": "Seviyeleri sıfırla"
+    },
+    "unmet": {
+        "title": "Henüz ulaşılamıyor.",
+        "enhancement": "{track} için önce Geliştirme seviye {level} gerekir.",
+        "masteryForging": "{track} için önce Ustalık Dövme {row} gerekir.",
+        "quality": "{track} için Mitik ekipman gerekir.",
+        "hint": "Parça zaten oradaysa mevcut seviyeyi ona göre ayarla."
+    },
+    "noForging": "Güçlendirme için Ustalık Dövme {row} seviyesinde olmalı. Ustalık Dövme Yok'ta, bu yüzden güç ve özelliklerde dövme sayılmaz.",
+    "summary": {
+        "title": "Sonuç",
+        "powerGained": "Kazanılan güç",
+        "currentPower": "Şu anki güç",
+        "goalPower": "Plandan sonraki güç",
+        "forgingStatsUp": "Dövme özellik artışı",
+        "percent": "+%{value}"
+    },
+    "resources": {
+        "title": "Gereken kaynaklar",
+        "item": "Öğe",
+        "amount": "Miktar",
+        "empty": "Yükseltilecek bir şey yok. Bir hedefi mevcut seviyesinin üstüne çıkar."
+    },
+    "stats": {
+        "title": "Parça özellikleri",
+        "tableLabel": "Parça özellikleri, şimdi ve plandan sonra",
+        "stat": "Özellik",
+        "current": "Şimdi",
+        "goal": "Plandan sonra",
+        "gain": "Kazanç",
+        "power": "Güç",
+        "health": "Can",
+        "percentStat": "{name} (%)",
+        "percentValue": "%{value}",
+        "note": "Özellikler ustalık dövmeyi içerir ve aşağı yuvarlanır."
+    },
+    "milestones": {
+        "title": "Açılan Mithril kilometre taşları",
+        "line": "Güçlendirme {level}: {event}, {stat}",
+        "empty": "Bu plan hiçbir Mithril kilometre taşı açmıyor."
+    },
+    "tracksTable": {
+        "title": "Hatta göre",
+        "label": "Her hattın adımları, kazancı ve kaynakları",
+        "track": "Hat",
+        "steps": "Adımlar",
+        "gain": "Kazanç",
+        "powerGain": "Dövmeden önce {value} güç",
+        "statsUp": "+%{value} özellik",
+        "resources": "Kaynaklar",
+        "none": "Hiçbir şey"
+    },
+    "events": {
+        "title": "Etkinlik puanı",
+        "note": "Planın Essence Stones ve Mithril puanları."
+    }
+}
