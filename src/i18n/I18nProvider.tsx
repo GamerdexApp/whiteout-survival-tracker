@@ -11,7 +11,7 @@ import {
 	isNumberFormatId,
 } from "./formats";
 import { configureI18n } from "./formatter";
-import { DEFAULT_LOCALE, isSupportedLocale, loadMessages } from "./locales";
+import { DEFAULT_LOCALE, directionOf, isSupportedLocale, loadMessages } from "./locales";
 import type { Locale, Messages } from "./locales";
 import en from "./messages/en";
 import { isTimeZoneId } from "./zones";
@@ -59,6 +59,7 @@ export function I18nProvider({ children }: { children: ReactNode }) {
 
 	useEffect(() => {
 		document.documentElement.lang = locale;
+		document.documentElement.dir = directionOf(locale);
 	}, [locale]);
 
 	// A language shows English until its catalog has loaded, so a message is never missing.
@@ -68,7 +69,11 @@ export function I18nProvider({ children }: { children: ReactNode }) {
 	configureI18n({ locale: activeLocale, messages, numberFormat, dateFormat, timeZone });
 
 	return (
-		<NextIntlClientProvider locale={activeLocale} messages={messages}>
+		<NextIntlClientProvider
+			locale={activeLocale}
+			messages={messages}
+			timeZone={timeZone ?? "UTC"}
+		>
 			<Fragment key={`${activeLocale}|${numberFormat}|${dateFormat}|${timeZone ?? "auto"}`}>
 				{children}
 			</Fragment>
