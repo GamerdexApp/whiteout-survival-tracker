@@ -1,5 +1,9 @@
 import { formatNumber, translator } from "@/i18n/formatter";
-import { research, researchTree } from "whiteout-survival-data";
+import {
+  research,
+  RESEARCH_TREE_LAYOUT,
+  researchTree,
+} from "whiteout-survival-data";
 import type {
   ResearchCategory,
   ResearchLevel,
@@ -13,6 +17,8 @@ export const allResearch: ResearchNode[] = research().get();
 export const findResearch = (id: string) => research().find(id);
 
 export const treeTabs = researchTree();
+
+export const treeLayout = RESEARCH_TREE_LAYOUT;
 
 export type ResearchTabId =
   | "growth"
