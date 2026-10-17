@@ -1,69 +1,69 @@
 {
-  "line": "Lumber camp와 Tree of Life 레벨 표, 그리고 분류별 장식 {decorations}개의 비용, 번영도, 버프예요.",
-  "lumberCamp": {
-    "title": "Lumber camp",
-    "levels": "{count, plural, other {{amount}레벨}}",
-    "table": "Lumber camp 레벨",
-    "level": "레벨",
-    "workers": "일꾼",
-    "perSecond": "초당",
-    "treeLevel": "나무 레벨",
-    "lifeEssence": "Life Essence"
-  },
-  "tree": {
-    "title": "Tree of Life",
-    "table": "Tree of Life 레벨",
-    "level": "레벨",
-    "prosperity": "번영도",
-    "lifeEssence": "Life Essence",
-    "perHour": "시간당",
-    "buff": "버프"
-  },
-  "decorations": {
-    "title": "장식",
-    "showing": "{total}개 중 {shown}개 표시",
-    "search": "검색",
-    "searchPlaceholder": "이름이나 버프로 장식 검색",
-    "categoryLabel": "분류",
-    "all": "전체",
-    "costFilter": "비용 종류",
-    "table": "장식",
-    "name": "장식",
-    "category": "분류",
-    "limit": "한도",
-    "levels": "레벨",
-    "cost": "비용",
-    "prosperityAtMax": "최대 레벨 번영도",
-    "buffAtMax": "최대 레벨 버프",
-    "emptyTitle": "일치하는 장식이 없어요",
-    "emptyDescription": "검색어, 분류, 비용 종류를 바꿔보세요."
-  },
-  "costFilter": {
-    "any": "모든 비용",
-    "lifeEssence": "Life Essence",
-    "items": "자원",
-    "limited": "한정",
-    "unknown": "데이터에 비용 없음"
-  },
-  "cost": {
-    "lifeEssence": "Life Essence {amount}",
-    "limited": "없음, 한정 장식"
-  },
-  "detail": {
-    "title": "상세",
-    "category": "분류",
-    "limit": "한도",
-    "cost": "비용",
-    "levels": "레벨",
-    "image": "이미지",
-    "imageMissing": "없음",
-    "levelsTitle": "{name}의 레벨",
-    "levelsMeta": "{count, plural, other {{amount}레벨}}",
-    "levelsTable": "장식 레벨",
-    "level": "레벨",
-    "levelCost": "비용",
-    "prosperity": "번영도",
-    "buff": "버프",
-    "noLevels": "이 장식의 레벨 표가 데이터에 없어요."
-  }
+    "line": "Lumber camp와 Tree of Life 레벨 표, 그리고 분류별 장식 {decorations}개의 비용, 번영도, 버프예요.",
+    "lumberCamp": {
+        "title": "Lumber camp",
+        "levels": "{count, plural, other {{amount}레벨}}",
+        "table": "Lumber camp 레벨",
+        "level": "레벨",
+        "workers": "일꾼",
+        "perSecond": "초당",
+        "treeLevel": "나무 레벨",
+        "lifeEssence": "Life Essence"
+    },
+    "tree": {
+        "title": "Tree of Life",
+        "table": "Tree of Life 레벨",
+        "level": "레벨",
+        "prosperity": "번영도",
+        "lifeEssence": "Life Essence",
+        "perHour": "시간당",
+        "buff": "버프"
+    },
+    "decorations": {
+        "title": "장식",
+        "showing": "{total}개 중 {shown}개 표시",
+        "search": "검색",
+        "searchPlaceholder": "이름이나 버프로 장식 검색",
+        "categoryLabel": "분류",
+        "all": "전체",
+        "costFilter": "비용 종류",
+        "table": "장식",
+        "name": "장식",
+        "category": "분류",
+        "limit": "한도",
+        "levels": "레벨",
+        "cost": "비용",
+        "prosperityAtMax": "최대 레벨 번영도",
+        "buffAtMax": "최대 레벨 버프",
+        "emptyTitle": "일치하는 장식이 없어요",
+        "emptyDescription": "검색어, 분류, 비용 종류를 바꿔보세요."
+    },
+    "costFilter": {
+        "any": "모든 비용",
+        "lifeEssence": "Life Essence",
+        "items": "자원",
+        "limited": "한정",
+        "unknown": "데이터에 비용 없음"
+    },
+    "cost": {
+        "lifeEssence": "Life Essence {amount}",
+        "limited": "없음, 한정 장식"
+    },
+    "detail": {
+        "title": "상세",
+        "category": "분류",
+        "limit": "한도",
+        "cost": "비용",
+        "levels": "레벨",
+        "image": "이미지",
+        "imageMissing": "없음",
+        "levelsTitle": "{name}의 레벨",
+        "levelsMeta": "{count, plural, other {{amount}레벨}}",
+        "levelsTable": "장식 레벨",
+        "level": "레벨",
+        "levelCost": "비용",
+        "prosperity": "번영도",
+        "buff": "버프",
+        "noLevels": "이 장식의 레벨 표가 데이터에 없어요."
+    }
 }

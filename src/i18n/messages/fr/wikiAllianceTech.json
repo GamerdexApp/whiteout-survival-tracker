@@ -1,54 +1,54 @@
 {
-  "line": "{total} technologies en trois arbres : Croissance {growth}, Territoire {territory}, Combat {battle}. Référence uniquement, rien ici n'est enregistré.",
-  "list": {
-    "title": "Nœuds de technologie",
-    "categoriesLabel": "Arbres de technologie",
-    "categories": {
-      "all": "Tous",
-      "Growth": "Croissance",
-      "Territory": "Territoire",
-      "Battle": "Combat"
+    "line": "{total} technologies en trois arbres : Croissance {growth}, Territoire {territory}, Combat {battle}. Référence uniquement, rien ici n'est enregistré.",
+    "list": {
+        "title": "Nœuds de technologie",
+        "categoriesLabel": "Arbres de technologie",
+        "categories": {
+            "all": "Tous",
+            "Growth": "Croissance",
+            "Territory": "Territoire",
+            "Battle": "Combat"
+        },
+        "search": "Rechercher",
+        "searchPlaceholder": "Rechercher une technologie par nom ou effet",
+        "tier": "Palier",
+        "allTiers": "Tous les paliers",
+        "tierOption": "Palier {tier}",
+        "empty": "Aucun nœud de technologie ne correspond à cette recherche.",
+        "emptyHint": "Effacez la recherche ou un filtre.",
+        "columns": {
+            "tech": "Technologie",
+            "category": "Catégorie",
+            "tier": "Palier",
+            "levels": "Niveaux",
+            "maxBonus": "Bonus max",
+            "cost": "Coût niveau 1",
+            "time": "Durée niveau 1",
+            "requires": "Prérequis niveau 1"
+        },
+        "mobileMeta": "{category}, palier {tier}, {levels}",
+        "count": "{count, plural, one {{amount} technologie} other {{amount} technologies}}"
     },
-    "search": "Rechercher",
-    "searchPlaceholder": "Rechercher une technologie par nom ou effet",
-    "tier": "Palier",
-    "allTiers": "Tous les paliers",
-    "tierOption": "Palier {tier}",
-    "empty": "Aucun nœud de technologie ne correspond à cette recherche.",
-    "emptyHint": "Effacez la recherche ou un filtre.",
-    "columns": {
-      "tech": "Technologie",
-      "category": "Catégorie",
-      "tier": "Palier",
-      "levels": "Niveaux",
-      "maxBonus": "Bonus max",
-      "cost": "Coût niveau 1",
-      "time": "Durée niveau 1",
-      "requires": "Prérequis niveau 1"
-    },
-    "mobileMeta": "{category}, palier {tier}, {levels}",
-    "count": "{count, plural, one {{amount} technologie} other {{amount} technologies}}"
-  },
-  "levels": "{count, plural, one {{amount} niveau} other {{amount} niveaux}}",
-  "detail": {
-    "facts": "Détails",
-    "levelsTitle": "Niveaux",
-    "none": "Aucun",
-    "fields": {
-      "category": "Catégorie",
-      "tier": "Palier",
-      "effect": "Effet",
-      "stat": "Stat",
-      "levels": "Niveaux"
-    },
-    "columns": {
-      "level": "Niveau",
-      "bonus": "Bonus",
-      "cost": "Coût",
-      "time": "Durée",
-      "requires": "Prérequis"
-    },
-    "level": "Niveau {level}",
-    "requirement": "{name} niveau {level}"
-  }
+    "levels": "{count, plural, one {{amount} niveau} other {{amount} niveaux}}",
+    "detail": {
+        "facts": "Détails",
+        "levelsTitle": "Niveaux",
+        "none": "Aucun",
+        "fields": {
+            "category": "Catégorie",
+            "tier": "Palier",
+            "effect": "Effet",
+            "stat": "Stat",
+            "levels": "Niveaux"
+        },
+        "columns": {
+            "level": "Niveau",
+            "bonus": "Bonus",
+            "cost": "Coût",
+            "time": "Durée",
+            "requires": "Prérequis"
+        },
+        "level": "Niveau {level}",
+        "requirement": "{name} niveau {level}"
+    }
 }

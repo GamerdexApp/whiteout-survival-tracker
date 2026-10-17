@@ -1,32 +1,32 @@
 {
-  "line": "O pacote de dados tem {have} dos {total} álbuns. Cada um tem um buff, recompensas de conclusão e {puzzles} quebra-cabeças.",
-  "note": "Os outros {missing} álbuns são adicionados quando o pacote de dados os tiver.",
-  "albums": "Álbuns",
-  "puzzleCount": "{count, plural, one {{amount} quebra-cabeça} other {{amount} quebra-cabeças}}",
-  "pieceCount": "{count, plural, one {{amount} peça} other {{amount} peças}}",
-  "view": {
-    "label": "Visualização",
-    "puzzles": "Quebra-cabeças",
-    "pieces": "Todas as peças"
-  },
-  "album": {
-    "counts": "{puzzles}, {pieces}",
-    "buff": "Buff ao completar",
-    "buffValue": "{stat} {value}",
-    "rewards": "Recompensas de conclusão",
-    "buffNote": "O buff só conta quando todos os {puzzles} quebra-cabeças estão feitos."
-  },
-  "puzzles": {
-    "title": "Quebra-cabeças",
-    "puzzle": "Quebra-cabeça",
-    "pieces": "Peças",
-    "star": "Estrela {stars}",
-    "reward": "Recompensa"
-  },
-  "allPieces": {
-    "title": "Todas as peças",
-    "summary": "{pieces} em {puzzles}",
-    "imageNote": "As imagens das peças vêm do pacote de dados. Uma peça sem imagem mostra um quadrado liso.",
-    "stars": "{count, plural, one {{amount} estrela} other {{amount} estrelas}}"
-  }
+    "line": "O pacote de dados tem {have} dos {total} álbuns. Cada um tem um buff, recompensas de conclusão e {puzzles} quebra-cabeças.",
+    "note": "Os outros {missing} álbuns são adicionados quando o pacote de dados os tiver.",
+    "albums": "Álbuns",
+    "puzzleCount": "{count, plural, one {{amount} quebra-cabeça} other {{amount} quebra-cabeças}}",
+    "pieceCount": "{count, plural, one {{amount} peça} other {{amount} peças}}",
+    "view": {
+        "label": "Visualização",
+        "puzzles": "Quebra-cabeças",
+        "pieces": "Todas as peças"
+    },
+    "album": {
+        "counts": "{puzzles}, {pieces}",
+        "buff": "Buff ao completar",
+        "buffValue": "{stat} {value}",
+        "rewards": "Recompensas de conclusão",
+        "buffNote": "O buff só conta quando todos os {puzzles} quebra-cabeças estão feitos."
+    },
+    "puzzles": {
+        "title": "Quebra-cabeças",
+        "puzzle": "Quebra-cabeça",
+        "pieces": "Peças",
+        "star": "Estrela {stars}",
+        "reward": "Recompensa"
+    },
+    "allPieces": {
+        "title": "Todas as peças",
+        "summary": "{pieces} em {puzzles}",
+        "imageNote": "As imagens das peças vêm do pacote de dados. Uma peça sem imagem mostra um quadrado liso.",
+        "stars": "{count, plural, one {{amount} estrela} other {{amount} estrelas}}"
+    }
 }

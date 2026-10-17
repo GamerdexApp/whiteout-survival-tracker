@@ -1,114 +1,114 @@
 {
-  "page": {
-    "title": "Daybreak Island"
-  },
-  "view": {
-    "subline": "Lumber Camp, Tree of Life, 내 장식."
-  },
-  "locked": {
-    "title": "Furnace {level} 필요",
-    "description": "Daybreak Island는 Furnace {level}에서 해금돼요. 현재 Furnace는 {current}이고 {missing} 남았어요. 앞으로 무엇이 열리는지 볼 수 있도록 페이지는 계속 보여요. 그때까지 편집은 꺼져 있어요.",
-    "noFurnace": "Daybreak Island는 Furnace {level}에서 해금돼요. Furnace 레벨이 아직 설정되지 않았어요. 앞으로 무엇이 열리는지 볼 수 있도록 페이지는 계속 보여요. 그때까지 편집은 꺼져 있어요.",
-    "missing": "{count, plural, other {{amount}레벨 더}}",
-    "link": "건물로 이동"
-  },
-  "levelOf": "L{level} / {max}",
-  "camp": {
-    "title": "Lumber Camp",
-    "levelLabel": "Lumber Camp 레벨",
-    "workers": "일꾼",
-    "rate": "초당 생산량",
-    "essence": "이 레벨까지 필요한 Life Essence",
-    "needsTree": "Tree of Life {required}레벨이 필요해요. 현재 {current}레벨이에요.",
-    "treeTooLow": "Tree of Life {current}레벨은 너무 낮아요. Lumber Camp {level}레벨에는 Tree of Life {required}레벨이 필요해요.",
-    "next": "다음 {level}레벨: Life Essence {essence}, Tree of Life {tree}레벨 필요.",
-    "highest": "최고 레벨이에요."
-  },
-  "tree": {
-    "title": "Tree of Life",
-    "levelLabel": "Tree of Life 레벨",
-    "prosperity": "이 레벨까지 필요한 번영도",
-    "essence": "이 레벨까지 필요한 Life Essence",
-    "perHour": "시간당 Life Essence",
-    "buff": "버프",
-    "next": "다음 {level}레벨: 번영도 {prosperity}, Life Essence {essence}.",
-    "highest": "최고 레벨이에요."
-  },
-  "decorations": {
-    "title": "장식",
-    "owned": "{total}개 중 {owned}개 보유",
-    "imageNote": "패키지에서 장식 {total}개 중 {withImage}개만 이미지가 있어요. 실선 사각형은 이미지가 있는 장식, 점선 사각형은 나머지예요."
-  },
-  "search": {
-    "label": "장식 검색",
-    "placeholder": "장식 검색"
-  },
-  "status": {
-    "showing": "장식 {total}개 중 {shown}개 표시 중.",
-    "showMore": "{count, plural, other {장식 {amount}개 더 보기}}"
-  },
-  "empty": {
-    "title": "일치하는 장식이 없어요",
-    "description": "검색어나 필터를 바꿔 장식을 찾아보세요.",
-    "reset": "필터 초기화"
-  },
-  "card": {
-    "costEach": "개당 비용",
-    "cost": "{item} {amount}",
-    "limit": "한도",
-    "buffAtLevel": "{level}레벨 버프",
-    "buffAtMax": "최대 레벨 버프",
-    "buffValue": "{value} {stat}",
-    "prosperityAtMax": "최대 레벨 번영도",
-    "essenceCost": "Life Essence 비용",
-    "unknown": "알 수 없음",
-    "owned": "보유",
-    "notOwned": "미보유",
-    "ownedLabel": "보유 {name}",
-    "levelLabel": "{name} 레벨",
-    "countLabel": "{name} 수량",
-    "limited": "한정",
-    "ownedCount": "{limit}개 중 {count}개 보유"
-  },
-  "categories": {
-    "Basic": "기본",
-    "Vegetation": "식물",
-    "Common": "일반",
-    "Uncommon": "고급",
-    "Rare": "희귀",
-    "Epic": "에픽",
-    "Mythic": "신화",
-    "Unique": "고유"
-  },
-  "filters": {
-    "button": "필터",
-    "title": "필터",
-    "description": "장식 목록을 좁혀요. 필터는 저장되지 않아요.",
-    "category": "분류",
-    "categoryAll": "전체 {amount}",
-    "categoryOption": "{category} {amount}",
-    "show": "표시",
-    "ownedOnly": "보유만",
-    "limitedOnly": "한정만",
-    "unknownBuffOnly": "버프 알 수 없음만",
-    "sort": "정렬",
-    "order": {
-      "game": "패키지 순서",
-      "name": "이름순",
-      "level": "높은 레벨순"
+    "page": {
+        "title": "Daybreak Island"
     },
-    "reset": "초기화",
-    "showButton": "{count, plural, other {장식 {amount}개 보기}}",
-    "nonLimitedOnly": "한정 제외",
-    "notOwnedOnly": "미보유만"
-  },
-  "prosperity": {
-    "label": "내 번영도 점수",
-    "progress": "내 장식의 번영도 점수",
-    "possible": "모든 장식이 최고 레벨과 한도일 때 최대 {max}",
-    "levelled": "레벨이 있는 장식, 도달한 레벨의 번영도",
-    "limited": "한도가 있는 장식, 보유 수량 x 개당 번영도",
-    "ofMax": "{max} 중 {value}",
-    "withoutValue": "{count, plural, other {보유한 장식 {amount}개}}에는 데이터에 번영도 값이 없어서 {count, plural, other {계산에 포함되지 않아요.}}"
-  }
+    "view": {
+        "subline": "Lumber Camp, Tree of Life, 내 장식."
+    },
+    "locked": {
+        "title": "Furnace {level} 필요",
+        "description": "Daybreak Island는 Furnace {level}에서 해금돼요. 현재 Furnace는 {current}이고 {missing} 남았어요. 앞으로 무엇이 열리는지 볼 수 있도록 페이지는 계속 보여요. 그때까지 편집은 꺼져 있어요.",
+        "noFurnace": "Daybreak Island는 Furnace {level}에서 해금돼요. Furnace 레벨이 아직 설정되지 않았어요. 앞으로 무엇이 열리는지 볼 수 있도록 페이지는 계속 보여요. 그때까지 편집은 꺼져 있어요.",
+        "missing": "{count, plural, other {{amount}레벨 더}}",
+        "link": "건물로 이동"
+    },
+    "levelOf": "L{level} / {max}",
+    "camp": {
+        "title": "Lumber Camp",
+        "levelLabel": "Lumber Camp 레벨",
+        "workers": "일꾼",
+        "rate": "초당 생산량",
+        "essence": "이 레벨까지 필요한 Life Essence",
+        "needsTree": "Tree of Life {required}레벨이 필요해요. 현재 {current}레벨이에요.",
+        "treeTooLow": "Tree of Life {current}레벨은 너무 낮아요. Lumber Camp {level}레벨에는 Tree of Life {required}레벨이 필요해요.",
+        "next": "다음 {level}레벨: Life Essence {essence}, Tree of Life {tree}레벨 필요.",
+        "highest": "최고 레벨이에요."
+    },
+    "tree": {
+        "title": "Tree of Life",
+        "levelLabel": "Tree of Life 레벨",
+        "prosperity": "이 레벨까지 필요한 번영도",
+        "essence": "이 레벨까지 필요한 Life Essence",
+        "perHour": "시간당 Life Essence",
+        "buff": "버프",
+        "next": "다음 {level}레벨: 번영도 {prosperity}, Life Essence {essence}.",
+        "highest": "최고 레벨이에요."
+    },
+    "decorations": {
+        "title": "장식",
+        "owned": "{total}개 중 {owned}개 보유",
+        "imageNote": "패키지에서 장식 {total}개 중 {withImage}개만 이미지가 있어요. 실선 사각형은 이미지가 있는 장식, 점선 사각형은 나머지예요."
+    },
+    "search": {
+        "label": "장식 검색",
+        "placeholder": "장식 검색"
+    },
+    "status": {
+        "showing": "장식 {total}개 중 {shown}개 표시 중.",
+        "showMore": "{count, plural, other {장식 {amount}개 더 보기}}"
+    },
+    "empty": {
+        "title": "일치하는 장식이 없어요",
+        "description": "검색어나 필터를 바꿔 장식을 찾아보세요.",
+        "reset": "필터 초기화"
+    },
+    "card": {
+        "costEach": "개당 비용",
+        "cost": "{item} {amount}",
+        "limit": "한도",
+        "buffAtLevel": "{level}레벨 버프",
+        "buffAtMax": "최대 레벨 버프",
+        "buffValue": "{value} {stat}",
+        "prosperityAtMax": "최대 레벨 번영도",
+        "essenceCost": "Life Essence 비용",
+        "unknown": "알 수 없음",
+        "owned": "보유",
+        "notOwned": "미보유",
+        "ownedLabel": "보유 {name}",
+        "levelLabel": "{name} 레벨",
+        "countLabel": "{name} 수량",
+        "limited": "한정",
+        "ownedCount": "{limit}개 중 {count}개 보유"
+    },
+    "categories": {
+        "Basic": "기본",
+        "Vegetation": "식물",
+        "Common": "일반",
+        "Uncommon": "고급",
+        "Rare": "희귀",
+        "Epic": "에픽",
+        "Mythic": "신화",
+        "Unique": "고유"
+    },
+    "filters": {
+        "button": "필터",
+        "title": "필터",
+        "description": "장식 목록을 좁혀요. 필터는 저장되지 않아요.",
+        "category": "분류",
+        "categoryAll": "전체 {amount}",
+        "categoryOption": "{category} {amount}",
+        "show": "표시",
+        "ownedOnly": "보유만",
+        "limitedOnly": "한정만",
+        "unknownBuffOnly": "버프 알 수 없음만",
+        "sort": "정렬",
+        "order": {
+            "game": "패키지 순서",
+            "name": "이름순",
+            "level": "높은 레벨순"
+        },
+        "reset": "초기화",
+        "showButton": "{count, plural, other {장식 {amount}개 보기}}",
+        "nonLimitedOnly": "한정 제외",
+        "notOwnedOnly": "미보유만"
+    },
+    "prosperity": {
+        "label": "내 번영도 점수",
+        "progress": "내 장식의 번영도 점수",
+        "possible": "모든 장식이 최고 레벨과 한도일 때 최대 {max}",
+        "levelled": "레벨이 있는 장식, 도달한 레벨의 번영도",
+        "limited": "한도가 있는 장식, 보유 수량 x 개당 번영도",
+        "ofMax": "{max} 중 {value}",
+        "withoutValue": "{count, plural, other {보유한 장식 {amount}개}}에는 데이터에 번영도 값이 없어서 {count, plural, other {계산에 포함되지 않아요.}}"
+    }
 }

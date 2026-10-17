@@ -1,26 +1,26 @@
 {
-  "line": "{types}种兵种，每种{tiers}个阶。仅供参考，这里的内容不会保存到你的领主。",
-  "tiers": {
-    "heading": "部队阶级",
-    "meta": "{types}种 × {tiers}阶 = {rows}行",
-    "typeLabel": "兵种",
-    "tableLabel": "{type}各阶"
-  },
-  "detail": {
-    "heading": "记录详情",
-    "meta": "{tier}阶，三种兵种",
-    "tableLabel": "{tier}阶按兵种"
-  },
-  "columns": {
-    "tier": "阶",
-    "type": "类型",
-    "cost": "单兵费用",
-    "topCost": "阶级费用",
-    "time": "训练时间",
-    "promotion": "晋升费用"
-  },
-  "cells": {
-    "tier": "{tier}阶",
-    "none": "无"
-  }
+    "line": "{types}种兵种，每种{tiers}个阶。仅供参考，这里的内容不会保存到你的领主。",
+    "tiers": {
+        "heading": "部队阶级",
+        "meta": "{types}种 × {tiers}阶 = {rows}行",
+        "typeLabel": "兵种",
+        "tableLabel": "{type}各阶"
+    },
+    "detail": {
+        "heading": "记录详情",
+        "meta": "{tier}阶，三种兵种",
+        "tableLabel": "{tier}阶按兵种"
+    },
+    "columns": {
+        "tier": "阶",
+        "type": "类型",
+        "cost": "单兵费用",
+        "topCost": "阶级费用",
+        "time": "训练时间",
+        "promotion": "晋升费用"
+    },
+    "cells": {
+        "tier": "{tier}阶",
+        "none": "无"
+    }
 }

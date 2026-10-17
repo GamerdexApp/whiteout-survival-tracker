@@ -1,104 +1,104 @@
 {
-  "line": "{banners}个旗帜范围、{facilities}个设施，以及{fortresses}条 Castle、据点和要塞记录。仅供参考，这里的内容不会保存。",
-  "filters": {
-    "search": "搜索",
-    "searchPlaceholder": "搜索范围、设施、要塞",
-    "structure": "建筑",
-    "structures": {
-      "all": "全部建筑",
-      "banners": "旗帜",
-      "facilities": "地图设施",
-      "castle": "Castle",
-      "stronghold": "据点",
-      "fortress": "要塞"
-    }
-  },
-  "empty": "此列表中没有符合搜索的内容。",
-  "none": "无",
-  "banners": {
-    "title": "旗帜建造费用",
-    "columns": {
-      "range": "等级范围",
-      "min": "最低",
-      "max": "最高",
-      "cost": "每级费用"
+    "line": "{banners}个旗帜范围、{facilities}个设施，以及{fortresses}条 Castle、据点和要塞记录。仅供参考，这里的内容不会保存。",
+    "filters": {
+        "search": "搜索",
+        "searchPlaceholder": "搜索范围、设施、要塞",
+        "structure": "建筑",
+        "structures": {
+            "all": "全部建筑",
+            "banners": "旗帜",
+            "facilities": "地图设施",
+            "castle": "Castle",
+            "stronghold": "据点",
+            "fortress": "要塞"
+        }
     },
-    "noCost": "未列出",
-    "count": "{count, plural, other {{amount}个范围}}",
+    "empty": "此列表中没有符合搜索的内容。",
+    "none": "无",
+    "banners": {
+        "title": "旗帜建造费用",
+        "columns": {
+            "range": "等级范围",
+            "min": "最低",
+            "max": "最高",
+            "cost": "每级费用"
+        },
+        "noCost": "未列出",
+        "count": "{count, plural, other {{amount}个范围}}",
+        "detail": {
+            "title": "旗帜费用",
+            "fields": {
+                "range": "等级范围",
+                "min": "最低等级",
+                "max": "最高等级",
+                "cost": "每级费用"
+            }
+        }
+    },
+    "facilities": {
+        "title": "地图设施",
+        "count": "{count, plural, other {{amount}个设施}}",
+        "columns": {
+            "facility": "设施",
+            "bonus": "加成",
+            "level": "{level}级",
+            "listed": "已列出的等级",
+            "ownLimit": "自有上限"
+        },
+        "cell": "地图上{available}个",
+        "listedOf": "{listed} / {total}",
+        "levelsNote": "数据列出了此设施{total}个等级中的{listed}个。未列出的等级显示为未知。",
+        "detail": {
+            "title": "{name}的各等级",
+            "level": "{level}级",
+            "columns": {
+                "level": "等级",
+                "booster": "增益",
+                "injured": "重伤",
+                "losses": "损失",
+                "ownLimit": "自有上限",
+                "available": "地图上",
+                "locations": "位置 (x, y)"
+            },
+            "percent": "{value}%",
+            "location": "{x}, {y}"
+        }
+    },
+    "fortresses": {
+        "title": "Castle、据点和要塞",
+        "kinds": {
+            "castle": "Castle",
+            "stronghold": "据点",
+            "fortress": "要塞"
+        },
+        "columns": {
+            "name": "名称",
+            "kind": "类型",
+            "x": "X",
+            "y": "Y",
+            "phases": "阶段",
+            "phaseOne": "第 1 阶段奖励"
+        },
+        "mobileMeta": "{kind}，x {x}，y {y}",
+        "count": "{count, plural, other {{amount}个建筑}}"
+    },
+    "map": {
+        "title": "地图占位",
+        "label": "按 x 和 y 值绘制的 Castle、据点和要塞地图",
+        "note": "按 x 和 y 值绘制在{size} x {size}方格上的 Castle、据点和要塞。方格大小为估算值，数据包中没有地图尺寸。",
+        "legend": {
+            "castle": "方形：Castle",
+            "stronghold": "菱形：据点",
+            "fortress": "圆形：要塞"
+        }
+    },
     "detail": {
-      "title": "旗帜费用",
-      "fields": {
-        "range": "等级范围",
-        "min": "最低等级",
-        "max": "最高等级",
-        "cost": "每级费用"
-      }
+        "title": "阶段奖励",
+        "phases": "{count, plural, other {{amount}个阶段}}",
+        "columns": {
+            "phase": "阶段",
+            "reward": "奖励"
+        },
+        "noRewards": "数据包中没有此建筑的阶段奖励。"
     }
-  },
-  "facilities": {
-    "title": "地图设施",
-    "count": "{count, plural, other {{amount}个设施}}",
-    "columns": {
-      "facility": "设施",
-      "bonus": "加成",
-      "level": "{level}级",
-      "listed": "已列出的等级",
-      "ownLimit": "自有上限"
-    },
-    "cell": "地图上{available}个",
-    "listedOf": "{listed} / {total}",
-    "levelsNote": "数据列出了此设施{total}个等级中的{listed}个。未列出的等级显示为未知。",
-    "detail": {
-      "title": "{name}的各等级",
-      "level": "{level}级",
-      "columns": {
-        "level": "等级",
-        "booster": "增益",
-        "injured": "重伤",
-        "losses": "损失",
-        "ownLimit": "自有上限",
-        "available": "地图上",
-        "locations": "位置 (x, y)"
-      },
-      "percent": "{value}%",
-      "location": "{x}, {y}"
-    }
-  },
-  "fortresses": {
-    "title": "Castle、据点和要塞",
-    "kinds": {
-      "castle": "Castle",
-      "stronghold": "据点",
-      "fortress": "要塞"
-    },
-    "columns": {
-      "name": "名称",
-      "kind": "类型",
-      "x": "X",
-      "y": "Y",
-      "phases": "阶段",
-      "phaseOne": "第 1 阶段奖励"
-    },
-    "mobileMeta": "{kind}，x {x}，y {y}",
-    "count": "{count, plural, other {{amount}个建筑}}"
-  },
-  "map": {
-    "title": "地图占位",
-    "label": "按 x 和 y 值绘制的 Castle、据点和要塞地图",
-    "note": "按 x 和 y 值绘制在{size} x {size}方格上的 Castle、据点和要塞。方格大小为估算值，数据包中没有地图尺寸。",
-    "legend": {
-      "castle": "方形：Castle",
-      "stronghold": "菱形：据点",
-      "fortress": "圆形：要塞"
-    }
-  },
-  "detail": {
-    "title": "阶段奖励",
-    "phases": "{count, plural, other {{amount}个阶段}}",
-    "columns": {
-      "phase": "阶段",
-      "reward": "奖励"
-    },
-    "noRewards": "数据包中没有此建筑的阶段奖励。"
-  }
 }

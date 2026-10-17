@@ -1,40 +1,40 @@
 {
-  "line": "{skins}，分属{types}，含加成、获取方式和持续时间。",
-  "skinCount": "{count, plural, other {{amount}款皮肤}}",
-  "typeCount": "{count, plural, other {{amount}种类型}}",
-  "gallery": {
-    "title": "皮肤图鉴",
-    "showing": "显示{shown} / {total}",
-    "search": "搜索",
-    "searchPlaceholder": "按名称或来源搜索皮肤",
-    "bonusStat": "加成属性",
-    "anyStat": "任意属性",
-    "noBonus": "无加成",
-    "duration": "时长",
-    "anyDuration": "任意时长",
-    "permanent": "永久",
-    "timed": "限时",
-    "notStated": "未说明",
-    "types": "皮肤类型",
-    "allTypes": "全部",
-    "empty": {
-      "title": "没有匹配的皮肤",
-      "description": "修改搜索或筛选，即可查看皮肤。"
+    "line": "{skins}，分属{types}，含加成、获取方式和持续时间。",
+    "skinCount": "{count, plural, other {{amount}款皮肤}}",
+    "typeCount": "{count, plural, other {{amount}种类型}}",
+    "gallery": {
+        "title": "皮肤图鉴",
+        "showing": "显示{shown} / {total}",
+        "search": "搜索",
+        "searchPlaceholder": "按名称或来源搜索皮肤",
+        "bonusStat": "加成属性",
+        "anyStat": "任意属性",
+        "noBonus": "无加成",
+        "duration": "时长",
+        "anyDuration": "任意时长",
+        "permanent": "永久",
+        "timed": "限时",
+        "notStated": "未说明",
+        "types": "皮肤类型",
+        "allTypes": "全部",
+        "empty": {
+            "title": "没有匹配的皮肤",
+            "description": "修改搜索或筛选，即可查看皮肤。"
+        }
+    },
+    "columns": {
+        "skin": "皮肤",
+        "type": "类型",
+        "bonus": "加成",
+        "duration": "时长（自由文本）",
+        "sources": "来源"
+    },
+    "bonusValue": "{stat} {value}",
+    "detail": {
+        "type": "类型",
+        "bonus": "加成",
+        "duration": "时长",
+        "sources": "来源",
+        "description": "说明"
     }
-  },
-  "columns": {
-    "skin": "皮肤",
-    "type": "类型",
-    "bonus": "加成",
-    "duration": "时长（自由文本）",
-    "sources": "来源"
-  },
-  "bonusValue": "{stat} {value}",
-  "detail": {
-    "type": "类型",
-    "bonus": "加成",
-    "duration": "时长",
-    "sources": "来源",
-    "description": "说明"
-  }
 }

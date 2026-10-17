@@ -1,115 +1,115 @@
 {
-  "title": "Bonus",
-  "all": "Tutti",
-  "list": {
-    "separator": ", ",
-    "andLast": "{rest} e {last}"
-  },
-  "sourceTypes": {
-    "account": "Account",
-    "hero": "Eroi",
-    "expert": "Esperti",
-    "research": "Ricerca",
-    "allianceTech": "Tecnologia alleanza",
-    "allianceFacility": "Strutture dell'alleanza",
-    "alliancePrestige": "Edifici di prestigio dell'alleanza",
-    "vip": "VIP",
-    "building": "Edifici",
-    "skin": "Skin",
-    "tundraAlbum": "Album della Tundra",
-    "collection": "Collezione",
-    "decoration": "La mia isola",
-    "treeOfLife": "La mia isola",
-    "castleAppointment": "Posizione del Castello",
-    "pet": "Animali",
-    "chiefGear": "Equipaggiamento del capo",
-    "chiefGearSet": "Bonus set dell'equipaggiamento del capo",
-    "chiefCharm": "Amuleti del capo",
-    "chiefOrder": "Ordini del capo",
-    "presidentSkill": "Abilità del presidente",
-    "marchQueuePack": "il pacchetto Coda marcia"
-  },
-  "unit": {
-    "percent": "{value}%",
-    "hours": "{value} h",
-    "seconds": "{value} s",
-    "plain": "{value}"
-  },
-  "view": {
-    "subline": "{name} · ogni bonus sommato dalle altre pagine. Questa pagina non salva nulla.",
-    "tiles": {
-      "stats": "Statistiche nel risultato",
-      "groups": "Gruppi con statistiche",
-      "sources": "Tipi di fonte che danno qualcosa"
+    "title": "Bonus",
+    "all": "Tutti",
+    "list": {
+        "separator": ", ",
+        "andLast": "{rest} e {last}"
     },
-    "pending": {
-      "title": "Non ogni fonte è ancora contata.",
-      "text": "Ogni fonte qui sotto è letta dalla pagina che la salva. Finché queste pagine non sono pronte non aggiungono nulla: {pending}. {unstored} non sono ancora salvate da nessuna pagina."
+    "sourceTypes": {
+        "account": "Account",
+        "hero": "Eroi",
+        "expert": "Esperti",
+        "research": "Ricerca",
+        "allianceTech": "Tecnologia alleanza",
+        "allianceFacility": "Strutture dell'alleanza",
+        "alliancePrestige": "Edifici di prestigio dell'alleanza",
+        "vip": "VIP",
+        "building": "Edifici",
+        "skin": "Skin",
+        "tundraAlbum": "Album della Tundra",
+        "collection": "Collezione",
+        "decoration": "La mia isola",
+        "treeOfLife": "La mia isola",
+        "castleAppointment": "Posizione del Castello",
+        "pet": "Animali",
+        "chiefGear": "Equipaggiamento del capo",
+        "chiefGearSet": "Bonus set dell'equipaggiamento del capo",
+        "chiefCharm": "Amuleti del capo",
+        "chiefOrder": "Ordini del capo",
+        "presidentSkill": "Abilità del presidente",
+        "marchQueuePack": "il pacchetto Coda marcia"
     },
-    "rulesTitle": "Come si contano i numeri",
-    "rules": {
-      "affinity": {
-        "title": "Affinità degli esperti",
-        "text": "Un esperto dà un bonus base che cresce con il livello di affinità. Ai livelli 10, 20 fino a 100 l'esperto deve avanzare. Fino ad allora conta il bonus del livello precedente."
-      },
-      "albums": {
-        "title": "Gli album contano da completi",
-        "text": "Un Album della Tundra dà il suo bonus solo quando tutti i 9 puzzle sono completati."
-      },
-      "pets": {
-        "title": "Gli animali usano il valore perfezionato",
-        "text": "Ogni animale conta il valore normale o quello perfezionato, come imposti nella pagina Animali."
-      },
-      "noNumber": {
-        "title": "Nessun numero, non contato",
-        "text": "Una fonte senza numero nei dati non aggiunge nulla. Non viene mostrata come 0."
-      },
-      "apart": {
-        "title": "Tenuti separati",
-        "text": "I valori percentuali e fissi non si sommano mai tra loro. Le statistiche di Fanteria, Lanciere e Tiratore sono separate da quelle delle Truppe."
-      },
-      "time": {
-        "title": "Statistiche di tempo",
-        "text": "Construction Speed Boost sono le ore risparmiate a ogni costruzione. Ally Help Time è in secondi. Ognuna mostra la sua unità."
-      }
+    "unit": {
+        "percent": "{value}%",
+        "hours": "{value} h",
+        "seconds": "{value} s",
+        "plain": "{value}"
     },
-    "search": {
-      "label": "Cerca statistiche",
-      "placeholder": "Cerca statistiche"
+    "view": {
+        "subline": "{name} · ogni bonus sommato dalle altre pagine. Questa pagina non salva nulla.",
+        "tiles": {
+            "stats": "Statistiche nel risultato",
+            "groups": "Gruppi con statistiche",
+            "sources": "Tipi di fonte che danno qualcosa"
+        },
+        "pending": {
+            "title": "Non ogni fonte è ancora contata.",
+            "text": "Ogni fonte qui sotto è letta dalla pagina che la salva. Finché queste pagine non sono pronte non aggiungono nulla: {pending}. {unstored} non sono ancora salvate da nessuna pagina."
+        },
+        "rulesTitle": "Come si contano i numeri",
+        "rules": {
+            "affinity": {
+                "title": "Affinità degli esperti",
+                "text": "Un esperto dà un bonus base che cresce con il livello di affinità. Ai livelli 10, 20 fino a 100 l'esperto deve avanzare. Fino ad allora conta il bonus del livello precedente."
+            },
+            "albums": {
+                "title": "Gli album contano da completi",
+                "text": "Un Album della Tundra dà il suo bonus solo quando tutti i 9 puzzle sono completati."
+            },
+            "pets": {
+                "title": "Gli animali usano il valore perfezionato",
+                "text": "Ogni animale conta il valore normale o quello perfezionato, come imposti nella pagina Animali."
+            },
+            "noNumber": {
+                "title": "Nessun numero, non contato",
+                "text": "Una fonte senza numero nei dati non aggiunge nulla. Non viene mostrata come 0."
+            },
+            "apart": {
+                "title": "Tenuti separati",
+                "text": "I valori percentuali e fissi non si sommano mai tra loro. Le statistiche di Fanteria, Lanciere e Tiratore sono separate da quelle delle Truppe."
+            },
+            "time": {
+                "title": "Statistiche di tempo",
+                "text": "Construction Speed Boost sono le ore risparmiate a ogni costruzione. Ally Help Time è in secondi. Ognuna mostra la sua unità."
+            }
+        },
+        "search": {
+            "label": "Cerca statistiche",
+            "placeholder": "Cerca statistiche"
+        },
+        "views": {
+            "label": "Vista",
+            "stat": "Per statistica",
+            "source": "Per fonte"
+        },
+        "empty": {
+            "noBonusesTitle": "Ancora nessun bonus",
+            "noBonusesDescription": "I bonus compaiono man mano che si compilano le pagine che li salvano.",
+            "noMatchTitle": "Nessuna statistica corrisponde",
+            "noMatchDescription": "Cambia la ricerca o il gruppo."
+        },
+        "statCount": "{count, plural, one {{amount} statistica} other {{amount} statistiche}}",
+        "sourceCount": "{count, plural, one {{amount} fonte} other {{amount} fonti}}",
+        "columns": {
+            "statAndSource": "Statistica e fonte",
+            "sourceType": "Tipo di fonte",
+            "counted": "Contato"
+        }
     },
-    "views": {
-      "label": "Vista",
-      "stat": "Per statistica",
-      "source": "Per fonte"
-    },
-    "empty": {
-      "noBonusesTitle": "Ancora nessun bonus",
-      "noBonusesDescription": "I bonus compaiono man mano che si compilano le pagine che li salvano.",
-      "noMatchTitle": "Nessuna statistica corrisponde",
-      "noMatchDescription": "Cambia la ricerca o il gruppo."
-    },
-    "statCount": "{count, plural, one {{amount} statistica} other {{amount} statistiche}}",
-    "sourceCount": "{count, plural, one {{amount} fonte} other {{amount} fonti}}",
-    "columns": {
-      "statAndSource": "Statistica e fonte",
-      "sourceType": "Tipo di fonte",
-      "counted": "Contato"
+    "eventRules": {
+        "title": "Regole dei bonus negli eventi",
+        "intro": "Indica quali tipi di bonus valgono ancora durante un evento. Sono regole, non numeri, quindi qui nulla viene aggiunto ai totali sopra.",
+        "event": "Evento",
+        "columns": {
+            "cityBonusWarsBuffs": "Bonus città",
+            "deploymentCapacity": "Schieramento",
+            "territoryBonuses": "Territorio",
+            "marchAccelerator": "Accel. marcia"
+        },
+        "applicability": {
+            "yes": "Sì",
+            "no": "No",
+            "partial": "In parte"
+        }
     }
-  },
-  "eventRules": {
-    "title": "Regole dei bonus negli eventi",
-    "intro": "Indica quali tipi di bonus valgono ancora durante un evento. Sono regole, non numeri, quindi qui nulla viene aggiunto ai totali sopra.",
-    "event": "Evento",
-    "columns": {
-      "cityBonusWarsBuffs": "Bonus città",
-      "deploymentCapacity": "Schieramento",
-      "territoryBonuses": "Territorio",
-      "marchAccelerator": "Accel. marcia"
-    },
-    "applicability": {
-      "yes": "Sì",
-      "no": "No",
-      "partial": "In parte"
-    }
-  }
 }

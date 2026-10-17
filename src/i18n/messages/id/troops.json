@@ -1,251 +1,251 @@
 {
-  "page": {
-    "title": "Pasukan"
-  },
-  "view": {
-    "title": "Pasukan",
-    "subline": "{chief} · {camps}",
-    "campLevel": "{name} Camp {level}",
-    "notBuilt": "belum dibangun",
-    "intro": "Level camp, kapasitas, dan bonus kecepatan berasal dari halaman lain dan hanya bisa dibaca. Rencana menghitung kebutuhan latihan dan promosi. Mulai latihan menandai batch yang sedang dijalankan camp.",
-    "plan": "Rencana"
-  },
-  "cards": {
-    "tileSummary": "pasukan · kekuatan {power}",
-    "allTroops": "Semua pasukan",
-    "totalPower": "Total kekuatan",
-    "troops": "Pasukan",
-    "power": "Kekuatan",
-    "powerNote": "Kekuatan per pasukan berasal dari paket data. Tier 10 dan 11 mengikuti level Fire Crystal tiap camp.",
-    "campLevel": "Camp {level}",
-    "campNotBuilt": "Camp belum dibangun",
-    "campAgeLocked": "Level camp tersimpan belum terbuka di server ini. {text}",
-    "highestTier": "Tier tertinggi",
-    "tierShort": "T{tier}",
-    "noTier": "Tidak ada"
-  },
-  "tiers": {
-    "title": "Tier {name}",
-    "hideLow": "Sembunyikan Tier 9 ke bawah",
-    "typeLabel": "Jenis pasukan",
-    "hiddenNote": "Tier 1 sampai 9 disembunyikan. Furnace {furnace} adalah level 30 atau lebih.",
-    "heads": {
-      "tier": "Tier",
-      "troops": "Pasukan",
-      "train": "Latih",
-      "power": "Kekuatan"
+    "page": {
+        "title": "Pasukan"
     },
-    "requires": {
-      "list": "Butuh {list}",
-      "camp": "{name} Camp {level}",
-      "building": "{name} {level}",
-      "research": "{name} level {level}"
+    "view": {
+        "title": "Pasukan",
+        "subline": "{chief} · {camps}",
+        "campLevel": "{name} Camp {level}",
+        "notBuilt": "belum dibangun",
+        "intro": "Level camp, kapasitas, dan bonus kecepatan berasal dari halaman lain dan hanya bisa dibaca. Rencana menghitung kebutuhan latihan dan promosi. Mulai latihan menandai batch yang sedang dijalankan camp.",
+        "plan": "Rencana"
     },
-    "tier": "Tier {tier}",
-    "locked": "Terkunci",
-    "countLabel": "Pasukan {name} {tier}",
-    "train": "Latih",
-    "seconds": "{value} dtk",
-    "each": "per pasukan",
-    "mobilePower": "Kekuatan"
-  },
-  "plan": {
-    "title": "Rencanakan Pasukan",
-    "description": "Latihan dan promosi untuk ketiga jenis pasukan",
-    "saved": "Rencana disimpan {date}",
-    "close": "Tutup",
-    "save": "Simpan rencana",
-    "export": {
-      "button": "Ekspor ke Core Events",
-      "emptyHint": "Tambah latihan untuk mengekspornya.",
-      "computed": "Dihitung oleh aplikasi.",
-      "trainedGroup": "untuk pasukan yang dilatih",
-      "speedupGroup": "untuk menit percepatan",
-      "trainedTier": "Pasukan Tier {tier} dilatih",
-      "speedupMinutes": "Menit percepatan latihan terpakai",
-      "promoted": "Pasukan dipromosikan",
-      "promotedReason": "Promosi hanya diskor lewat menit percepatan.",
-      "power": "Kekuatan dari melatih dan mempromosikan",
-      "powerReason": "Paket data belum punya kekuatan asli per tier."
+    "cards": {
+        "tileSummary": "pasukan · kekuatan {power}",
+        "allTroops": "Semua pasukan",
+        "totalPower": "Total kekuatan",
+        "troops": "Pasukan",
+        "power": "Kekuatan",
+        "powerNote": "Kekuatan per pasukan berasal dari paket data. Tier 10 dan 11 mengikuti level Fire Crystal tiap camp.",
+        "campLevel": "Camp {level}",
+        "campNotBuilt": "Camp belum dibangun",
+        "campAgeLocked": "Level camp tersimpan belum terbuka di server ini. {text}",
+        "highestTier": "Tier tertinggi",
+        "tierShort": "T{tier}",
+        "noTier": "Tidak ada"
     },
-    "noRuns": "Belum ada latihan. Tambah pasukan untuk memulai rencana.",
-    "add": {
-      "title": "Tambah Pasukan",
-      "typeLabel": "Jenis pasukan",
-      "modeLabel": "Latihan atau Promosi",
-      "button": "Tambah Pasukan"
+    "tiers": {
+        "title": "Tier {name}",
+        "hideLow": "Sembunyikan Tier 9 ke bawah",
+        "typeLabel": "Jenis pasukan",
+        "hiddenNote": "Tier 1 sampai 9 disembunyikan. Furnace {furnace} adalah level 30 atau lebih.",
+        "heads": {
+            "tier": "Tier",
+            "troops": "Pasukan",
+            "train": "Latih",
+            "power": "Kekuatan"
+        },
+        "requires": {
+            "list": "Butuh {list}",
+            "camp": "{name} Camp {level}",
+            "building": "{name} {level}",
+            "research": "{name} level {level}"
+        },
+        "tier": "Tier {tier}",
+        "locked": "Terkunci",
+        "countLabel": "Pasukan {name} {tier}",
+        "train": "Latih",
+        "seconds": "{value} dtk",
+        "each": "per pasukan",
+        "mobilePower": "Kekuatan"
     },
-    "run": {
-      "tier": "Tier {tier}",
-      "modes": {
-        "training": "Latihan",
-        "promotion": "Promosi"
-      },
-      "remove": "Hapus latihan {name}",
-      "removeButton": "Hapus",
-      "modeLabel": "Latihan atau promosi {name}",
-      "tierLabel": "Tier {name}",
-      "fromLabel": "Tier awal promosi {name}",
-      "toLabel": "Tier tujuan promosi {name}",
-      "to": "ke",
-      "troops": "Pasukan",
-      "max": "Maks",
-      "maxValue": "Maks ({capacity})",
-      "batches": "Batch"
+    "plan": {
+        "title": "Rencanakan Pasukan",
+        "description": "Latihan dan promosi untuk ketiga jenis pasukan",
+        "saved": "Rencana disimpan {date}",
+        "close": "Tutup",
+        "save": "Simpan rencana",
+        "export": {
+            "button": "Ekspor ke Core Events",
+            "emptyHint": "Tambah latihan untuk mengekspornya.",
+            "computed": "Dihitung oleh aplikasi.",
+            "trainedGroup": "untuk pasukan yang dilatih",
+            "speedupGroup": "untuk menit percepatan",
+            "trainedTier": "Pasukan Tier {tier} dilatih",
+            "speedupMinutes": "Menit percepatan latihan terpakai",
+            "promoted": "Pasukan dipromosikan",
+            "promotedReason": "Promosi hanya diskor lewat menit percepatan.",
+            "power": "Kekuatan dari melatih dan mempromosikan",
+            "powerReason": "Paket data belum punya kekuatan asli per tier."
+        },
+        "noRuns": "Belum ada latihan. Tambah pasukan untuk memulai rencana.",
+        "add": {
+            "title": "Tambah Pasukan",
+            "typeLabel": "Jenis pasukan",
+            "modeLabel": "Latihan atau Promosi",
+            "button": "Tambah Pasukan"
+        },
+        "run": {
+            "tier": "Tier {tier}",
+            "modes": {
+                "training": "Latihan",
+                "promotion": "Promosi"
+            },
+            "remove": "Hapus latihan {name}",
+            "removeButton": "Hapus",
+            "modeLabel": "Latihan atau promosi {name}",
+            "tierLabel": "Tier {name}",
+            "fromLabel": "Tier awal promosi {name}",
+            "toLabel": "Tier tujuan promosi {name}",
+            "to": "ke",
+            "troops": "Pasukan",
+            "max": "Maks",
+            "maxValue": "Maks ({capacity})",
+            "batches": "Batch"
+        },
+        "speed": {
+            "readOnlyNote": "Nilai hanya baca dibawa dari halaman lain. Ubah di sana.",
+            "openBonuses": "Buka Bonus",
+            "title": "Kapasitas dan kecepatan",
+            "appointment": "Jabatan",
+            "position": "Posisi",
+            "rank": "Pangkat",
+            "positions": {
+                "none": "Tidak ada",
+                "ministerOfEducation": "Minister of Education",
+                "vicePresident": "Vice President"
+            },
+            "ranks": {
+                "regular": "Biasa",
+                "supreme": "Supreme"
+            },
+            "appointmentEffect": "+{capacity} kapasitas, +{speed}% kecepatan",
+            "appointmentNote": "Hanya satu dari dua jabatan yang bisa aktif. Minister of Education menambah kapasitas {moeCapacity} dan kecepatan {moeSpeed} persen (Supreme {moeCapacitySupreme} dan {moeSpeedSupreme}). Vice President menambah kecepatan {vpSpeed} persen (Supreme {vpSpeedSupreme}).",
+            "capacity": "Kapasitas",
+            "researchCapacity": "Kapasitas riset",
+            "troops": "{value} pasukan",
+            "readOnly": "Hanya baca",
+            "capacityBoost": "Peningkat kapasitas",
+            "boostTotal": "Total x{multiplier}",
+            "capacityPerBatch": "Kapasitas per batch",
+            "trainingSpeed": "Kecepatan latihan",
+            "gameSpeed": "Kecepatan latihan game",
+            "appointmentSpeed": "Jabatan",
+            "mobilize": "Mobilize",
+            "advancedTraining": "Advanced Training",
+            "speedUsed": "Kecepatan latihan terpakai",
+            "percent": "{value}%",
+            "percentPlus": "+{value}%"
+        },
+        "stock": {
+            "name": "Percepatan latihan",
+            "minutesUnit": "mnt",
+            "note": "Stokmu: Latihan {training} mnt, Umum {general} mnt. Percepatan Umum dihitung untuk latihan. Latihan yang tidak tercakup percepatan selesai dalam waktu normal, jadi hanya percepatan yang kamu punya yang dipakai: {used} mnt."
+        },
+        "result": {
+            "title": "Hasil",
+            "resources": "Sumber daya",
+            "changes": "Perubahan pasukan per tier",
+            "heads": {
+                "tier": "Tier",
+                "infantry": "Inf.",
+                "lancer": "Lan.",
+                "marksman": "Mark.",
+                "all": "Semua"
+            },
+            "tier": "Tier {tier}",
+            "total": "Total",
+            "time": "Waktu, tanpa percepatan",
+            "totalTime": "Total, semua jenis pasukan (waktu percepatan)",
+            "longest": "Jenis pasukan terlama",
+            "minutesNeeded": "Menit percepatan dibutuhkan",
+            "minutesUsed": "Menit percepatan terpakai (dari stok)",
+            "minutes": "{value} mnt",
+            "tier12Note": "Paket data menyebut biaya Tier 12 sebagian diturunkan. Biaya promosi Marksman diukur di game, dan biaya Infantry dan Lancer diskalakan darinya."
+        }
     },
-    "speed": {
-      "readOnlyNote": "Nilai hanya baca dibawa dari halaman lain. Ubah di sana.",
-      "openBonuses": "Buka Bonus",
-      "title": "Kapasitas dan kecepatan",
-      "appointment": "Jabatan",
-      "position": "Posisi",
-      "rank": "Pangkat",
-      "positions": {
-        "none": "Tidak ada",
-        "ministerOfEducation": "Minister of Education",
-        "vicePresident": "Vice President"
-      },
-      "ranks": {
-        "regular": "Biasa",
-        "supreme": "Supreme"
-      },
-      "appointmentEffect": "+{capacity} kapasitas, +{speed}% kecepatan",
-      "appointmentNote": "Hanya satu dari dua jabatan yang bisa aktif. Minister of Education menambah kapasitas {moeCapacity} dan kecepatan {moeSpeed} persen (Supreme {moeCapacitySupreme} dan {moeSpeedSupreme}). Vice President menambah kecepatan {vpSpeed} persen (Supreme {vpSpeedSupreme}).",
-      "capacity": "Kapasitas",
-      "researchCapacity": "Kapasitas riset",
-      "troops": "{value} pasukan",
-      "readOnly": "Hanya baca",
-      "capacityBoost": "Peningkat kapasitas",
-      "boostTotal": "Total x{multiplier}",
-      "capacityPerBatch": "Kapasitas per batch",
-      "trainingSpeed": "Kecepatan latihan",
-      "gameSpeed": "Kecepatan latihan game",
-      "appointmentSpeed": "Jabatan",
-      "mobilize": "Mobilize",
-      "advancedTraining": "Advanced Training",
-      "speedUsed": "Kecepatan latihan terpakai",
-      "percent": "{value}%",
-      "percentPlus": "+{value}%"
+    "queue": {
+        "title": "Antrean latihan",
+        "note": "Tiap camp melatih satu batch sekaligus. Selesaikan menambah pasukan ke jumlahmu.",
+        "idle": "Tidak ada yang berlatih. Mulai batch untuk memakai camp ini.",
+        "startButton": "Mulai latihan",
+        "jobTitle": {
+            "training": "Melatih {count} {name} T{tier}",
+            "promotion": "Mempromosikan {count} {name} T{from} ke T{to}"
+        },
+        "manage": {
+            "slotLabel": "{camp}, satu batch sekaligus",
+            "finishText": "Selesaikan upgrade menambah pasukan ke jumlahmu, mengosongkan camp, dan menambah batch ke Riwayat. Saat sisa waktu nol, kartu menampilkan Siap diselesaikan. Tidak ada yang selesai sendiri, karena kamu mungkin memakai percepatan."
+        },
+        "flyout": {
+            "title": "Mulai latihan",
+            "description": "Tandai batch sebagai berlatih atau dipromosikan di sebuah camp",
+            "camp": "Camp",
+            "campHelp": "Satu batch sekaligus di tiap camp. Camp yang sibuk menampilkan kapan kosong.",
+            "busy": "Sibuk sampai {date}",
+            "notBuilt": "Camp belum dibangun",
+            "action": "Aksi",
+            "training": "Latihan",
+            "promotion": "Promosi",
+            "tier": "Tier",
+            "tierOption": "Tier {tier}",
+            "fromTier": "Dari tier",
+            "toTier": "Ke tier",
+            "troops": "Pasukan dalam batch",
+            "max": "Maks",
+            "capacityHint": "Satu batch memuat sampai {capacity} pasukan. Ini kapasitas riset ditambah level camp-mu.",
+            "noTiers": "Camp ini belum punya tier untuk dilatih. Naikkan level camp di halaman Bangunan.",
+            "cost": "Biaya batch",
+            "time": "Waktu latihan",
+            "packageTime": "Waktu paket data",
+            "speed": "Kecepatan latihan",
+            "readOnly": "Hanya baca",
+            "openBonuses": "Buka Bonus",
+            "yourTime": "Waktumu",
+            "timeHint": "Kecepatan latihan berasal dari halaman Bonus. Pakai Sudah dimulai jika game menampilkan waktu yang berbeda.",
+            "whenStarted": "Kapan mulainya?",
+            "modes": {
+                "now": "Mulai sekarang",
+                "already": "Sudah dimulai"
+            },
+            "timeLeftHours": "Sisa waktu, jam",
+            "ends": "Selesai",
+            "takeCost": {
+                "title": "Ambil biaya dari stokku",
+                "hint": "Mengambil sumber daya batch dari Sumber Daya. Jumlah tidak pernah di bawah 0.",
+                "enough": "Kamu punya cukup.",
+                "short": "Kurang {names}. Stok untuk itu menjadi 0."
+            },
+            "cancel": "Batal",
+            "start": "Mulai latihan",
+            "allCamps": "Semua camp kosong ({count})",
+            "allCampsHint": "Memulai batch yang sama di setiap camp kosong sekaligus. Tiap camp punya waktunya sendiri. Tier yang tampil adalah yang bisa dilatih semua camp kosong.",
+            "campTime": "{camp}: {time}"
+        },
+        "toasts": {
+            "started": {
+                "title": "Latihan dimulai",
+                "message": "{what}."
+            },
+            "finished": {
+                "title": "{what} selesai dilatih",
+                "message": "Ditambahkan ke jumlah pasukan dan ke Riwayat."
+            },
+            "cancelled": {
+                "title": "{what} dibatalkan",
+                "message": "Jumlah pasukanmu tetap seperti semula. Perbaiki stokmu di Sumber Daya jika perlu."
+            },
+            "undo": "Urungkan"
+        },
+        "batchName": {
+            "training": "{count} {name} T{tier}",
+            "promotion": "{count} {name} T{from} ke T{to}"
+        }
     },
-    "stock": {
-      "name": "Percepatan latihan",
-      "minutesUnit": "mnt",
-      "note": "Stokmu: Latihan {training} mnt, Umum {general} mnt. Percepatan Umum dihitung untuk latihan. Latihan yang tidak tercakup percepatan selesai dalam waktu normal, jadi hanya percepatan yang kamu punya yang dipakai: {used} mnt."
-    },
-    "result": {
-      "title": "Hasil",
-      "resources": "Sumber daya",
-      "changes": "Perubahan pasukan per tier",
-      "heads": {
-        "tier": "Tier",
-        "infantry": "Inf.",
-        "lancer": "Lan.",
-        "marksman": "Mark.",
-        "all": "Semua"
-      },
-      "tier": "Tier {tier}",
-      "total": "Total",
-      "time": "Waktu, tanpa percepatan",
-      "totalTime": "Total, semua jenis pasukan (waktu percepatan)",
-      "longest": "Jenis pasukan terlama",
-      "minutesNeeded": "Menit percepatan dibutuhkan",
-      "minutesUsed": "Menit percepatan terpakai (dari stok)",
-      "minutes": "{value} mnt",
-      "tier12Note": "Paket data menyebut biaya Tier 12 sebagian diturunkan. Biaya promosi Marksman diukur di game, dan biaya Infantry dan Lancer diskalakan darinya."
+    "callOfWar": {
+        "title": "Call of War",
+        "note": "Skill Romulus. Satu klaim gratis tiap hari UTC, untuk semua camp bersama. Reset pukul 00:00 UTC.",
+        "available": "{troops} pasukan gratis hari ini",
+        "claimed": "Sudah diklaim hari ini. Klaim baru gratis dalam {time}.",
+        "notUnlocked": "Butuh Romulus direkrut dan Call of War di level 1 atau lebih di halaman Ahli.",
+        "level": "Call of War level {level}",
+        "add": "Tambah ke {camp}",
+        "addHint": "{troops} pasukan masuk ke tier {tier}",
+        "noTier": "Belum ada tier terbuka",
+        "toast": {
+            "title": "Call of War diklaim",
+            "message": "{troops} pasukan ditambahkan ke {camp} tier {tier}.",
+            "undo": "Urungkan"
+        }
     }
-  },
-  "queue": {
-    "title": "Antrean latihan",
-    "note": "Tiap camp melatih satu batch sekaligus. Selesaikan menambah pasukan ke jumlahmu.",
-    "idle": "Tidak ada yang berlatih. Mulai batch untuk memakai camp ini.",
-    "startButton": "Mulai latihan",
-    "jobTitle": {
-      "training": "Melatih {count} {name} T{tier}",
-      "promotion": "Mempromosikan {count} {name} T{from} ke T{to}"
-    },
-    "manage": {
-      "slotLabel": "{camp}, satu batch sekaligus",
-      "finishText": "Selesaikan upgrade menambah pasukan ke jumlahmu, mengosongkan camp, dan menambah batch ke Riwayat. Saat sisa waktu nol, kartu menampilkan Siap diselesaikan. Tidak ada yang selesai sendiri, karena kamu mungkin memakai percepatan."
-    },
-    "flyout": {
-      "title": "Mulai latihan",
-      "description": "Tandai batch sebagai berlatih atau dipromosikan di sebuah camp",
-      "camp": "Camp",
-      "campHelp": "Satu batch sekaligus di tiap camp. Camp yang sibuk menampilkan kapan kosong.",
-      "busy": "Sibuk sampai {date}",
-      "notBuilt": "Camp belum dibangun",
-      "action": "Aksi",
-      "training": "Latihan",
-      "promotion": "Promosi",
-      "tier": "Tier",
-      "tierOption": "Tier {tier}",
-      "fromTier": "Dari tier",
-      "toTier": "Ke tier",
-      "troops": "Pasukan dalam batch",
-      "max": "Maks",
-      "capacityHint": "Satu batch memuat sampai {capacity} pasukan. Ini kapasitas riset ditambah level camp-mu.",
-      "noTiers": "Camp ini belum punya tier untuk dilatih. Naikkan level camp di halaman Bangunan.",
-      "cost": "Biaya batch",
-      "time": "Waktu latihan",
-      "packageTime": "Waktu paket data",
-      "speed": "Kecepatan latihan",
-      "readOnly": "Hanya baca",
-      "openBonuses": "Buka Bonus",
-      "yourTime": "Waktumu",
-      "timeHint": "Kecepatan latihan berasal dari halaman Bonus. Pakai Sudah dimulai jika game menampilkan waktu yang berbeda.",
-      "whenStarted": "Kapan mulainya?",
-      "modes": {
-        "now": "Mulai sekarang",
-        "already": "Sudah dimulai"
-      },
-      "timeLeftHours": "Sisa waktu, jam",
-      "ends": "Selesai",
-      "takeCost": {
-        "title": "Ambil biaya dari stokku",
-        "hint": "Mengambil sumber daya batch dari Sumber Daya. Jumlah tidak pernah di bawah 0.",
-        "enough": "Kamu punya cukup.",
-        "short": "Kurang {names}. Stok untuk itu menjadi 0."
-      },
-      "cancel": "Batal",
-      "start": "Mulai latihan",
-      "allCamps": "Semua camp kosong ({count})",
-      "allCampsHint": "Memulai batch yang sama di setiap camp kosong sekaligus. Tiap camp punya waktunya sendiri. Tier yang tampil adalah yang bisa dilatih semua camp kosong.",
-      "campTime": "{camp}: {time}"
-    },
-    "toasts": {
-      "started": {
-        "title": "Latihan dimulai",
-        "message": "{what}."
-      },
-      "finished": {
-        "title": "{what} selesai dilatih",
-        "message": "Ditambahkan ke jumlah pasukan dan ke Riwayat."
-      },
-      "cancelled": {
-        "title": "{what} dibatalkan",
-        "message": "Jumlah pasukanmu tetap seperti semula. Perbaiki stokmu di Sumber Daya jika perlu."
-      },
-      "undo": "Urungkan"
-    },
-    "batchName": {
-      "training": "{count} {name} T{tier}",
-      "promotion": "{count} {name} T{from} ke T{to}"
-    }
-  },
-  "callOfWar": {
-    "title": "Call of War",
-    "note": "Skill Romulus. Satu klaim gratis tiap hari UTC, untuk semua camp bersama. Reset pukul 00:00 UTC.",
-    "available": "{troops} pasukan gratis hari ini",
-    "claimed": "Sudah diklaim hari ini. Klaim baru gratis dalam {time}.",
-    "notUnlocked": "Butuh Romulus direkrut dan Call of War di level 1 atau lebih di halaman Ahli.",
-    "level": "Call of War level {level}",
-    "add": "Tambah ke {camp}",
-    "addHint": "{troops} pasukan masuk ke tier {tier}",
-    "noTier": "Belum ada tier terbuka",
-    "toast": {
-      "title": "Call of War diklaim",
-      "message": "{troops} pasukan ditambahkan ke {camp} tier {tier}.",
-      "undo": "Urungkan"
-    }
-  }
 }

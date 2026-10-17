@@ -1,109 +1,109 @@
 {
-  "page": {
-    "title": "기록"
-  },
-  "events": {
-    "svs": "SvS",
-    "showdown": "Alliance Showdown",
-    "king": "King of Icefield",
-    "hall": "Hall of Chief"
-  },
-  "title": {
-    "dated": "{event}, {start}부터 {end}까지",
-    "undated": "{event}"
-  },
-  "ended": "{date} 종료",
-  "tabs": {
-    "label": "이벤트별 필터",
-    "all": "모든 이벤트"
-  },
-  "list": {
-    "intro": "이벤트 로그에서 종료한 이벤트를 최신순으로 보여줘요. 점수는 SvS의 1~5일차 기준이며 전투 단계는 따로 보관해요. 이벤트를 열면 계획과 실제 비교, 계획한 업그레이드를 볼 수 있어요.",
-    "event": "이벤트",
-    "plan": "계획",
-    "actual": "실제",
-    "diff": "차이",
-    "rank": "순위",
-    "alliance": "연맹",
-    "rankLine": "{rank}위, 연맹 {alliance}",
-    "open": "열기",
-    "openEvent": "{name} 열기",
-    "none": "종료한 이 종류의 이벤트가 아직 없어요.",
-    "diffWithPercent": "{amount} ({percent}%)"
-  },
-  "empty": {
-    "title": "아직 이벤트가 없어요",
-    "description": "핵심 이벤트의 이벤트 로그에서 종료한 이벤트가 계획과 결과와 함께 여기에 저장돼요.",
-    "action": "핵심 이벤트 열기"
-  },
-  "notFound": {
-    "title": "이벤트를 찾을 수 없어요",
-    "description": "사용 중인 영주의 기록에 이 이벤트가 없어요. 삭제됐거나 핵심 이벤트에서 숨겨졌을 수 있어요.",
-    "action": "기록으로 돌아가기"
-  },
-  "unknown": "미설정",
-  "belowPlan": "계획 미달",
-  "atOrAbovePlan": "계획 이상",
-  "breadcrumb": {
-    "label": "탐색 경로"
-  },
-  "tiles": {
-    "plan": "계획",
-    "actual": "실제",
-    "difference": "차이",
-    "overall": "전체",
-    "alliance": "연맹",
-    "days": "1~5일차",
-    "rank": "순위",
-    "rankDays": "순위, 1~5일차",
-    "percent": "{percent}%"
-  },
-  "compare": {
-    "title": "계획과 실제 비교",
-    "titleDays": "계획과 실제 비교, 1~5일차",
-    "day": "일차",
-    "plan": "계획",
-    "actual": "실제",
-    "diff": "차이",
-    "rank": "순위",
-    "ally": "연맹",
-    "total": "합계",
-    "share": "계획의 {percent}%",
-    "shareLine": "계획의 {percent}%, {rank}위, 연맹 {ally}",
-    "barLabel": "{day}, 계획 대비 실제 비율"
-  },
-  "battle": {
-    "title": "전투 단계",
-    "note": "별도의 점수와 순위예요. 1~5일차 합계에 더하지 않아요."
-  },
-  "upgrades": {
-    "title": "계획한 업그레이드",
-    "titleCount": "계획한 업그레이드, {count}",
-    "summary": "이 이벤트 계획의 업그레이드를 종류별로 묶었어요. {count}개 중 {done}개를 완료했어요.",
-    "summaryUnchecked": "이 이벤트 계획의 업그레이드를 종류별로 묶었어요.",
-    "none": "이 이벤트로 내보낸 계획이 없어서 표시할 계획 업그레이드가 없어요.",
-    "groupTitle": "{name}, {count}",
-    "groupStats": "{count}개 중 {done}개 완료, 전투력 +{power}, Fire Crystal {fireCrystals}",
-    "groupStatsUnchecked": "전투력 +{power}, Fire Crystal {fireCrystals}",
-    "power": "전투력 +{power}",
-    "plannedDay": "{day} 예정",
-    "done": "완료",
-    "notDone": "미완료",
-    "levelsFrom": "{from}에서 {to}",
-    "levelsTo": "{to}까지",
-    "levelsResearchFrom": "{from}레벨에서 {to}레벨",
-    "levelsResearchTo": "{to}레벨까지",
-    "costAmount": "{name} {amount}"
-  },
-  "pages": {
-    "buildings": "건물",
-    "research": "연구",
-    "chiefGear": "영주 장비",
-    "chiefCharms": "영주 참",
-    "heroGear": "영웅 장비",
-    "heroes": "영웅",
-    "pets": "펫",
-    "experts": "전문가",
-    "troops": "병력"
-  }
+    "page": {
+        "title": "기록"
+    },
+    "events": {
+        "svs": "SvS",
+        "showdown": "Alliance Showdown",
+        "king": "King of Icefield",
+        "hall": "Hall of Chief"
+    },
+    "title": {
+        "dated": "{event}, {start}부터 {end}까지",
+        "undated": "{event}"
+    },
+    "ended": "{date} 종료",
+    "tabs": {
+        "label": "이벤트별 필터",
+        "all": "모든 이벤트"
+    },
+    "list": {
+        "intro": "이벤트 로그에서 종료한 이벤트를 최신순으로 보여줘요. 점수는 SvS의 1~5일차 기준이며 전투 단계는 따로 보관해요. 이벤트를 열면 계획과 실제 비교, 계획한 업그레이드를 볼 수 있어요.",
+        "event": "이벤트",
+        "plan": "계획",
+        "actual": "실제",
+        "diff": "차이",
+        "rank": "순위",
+        "alliance": "연맹",
+        "rankLine": "{rank}위, 연맹 {alliance}",
+        "open": "열기",
+        "openEvent": "{name} 열기",
+        "none": "종료한 이 종류의 이벤트가 아직 없어요.",
+        "diffWithPercent": "{amount} ({percent}%)"
+    },
+    "empty": {
+        "title": "아직 이벤트가 없어요",
+        "description": "핵심 이벤트의 이벤트 로그에서 종료한 이벤트가 계획과 결과와 함께 여기에 저장돼요.",
+        "action": "핵심 이벤트 열기"
+    },
+    "notFound": {
+        "title": "이벤트를 찾을 수 없어요",
+        "description": "사용 중인 영주의 기록에 이 이벤트가 없어요. 삭제됐거나 핵심 이벤트에서 숨겨졌을 수 있어요.",
+        "action": "기록으로 돌아가기"
+    },
+    "unknown": "미설정",
+    "belowPlan": "계획 미달",
+    "atOrAbovePlan": "계획 이상",
+    "breadcrumb": {
+        "label": "탐색 경로"
+    },
+    "tiles": {
+        "plan": "계획",
+        "actual": "실제",
+        "difference": "차이",
+        "overall": "전체",
+        "alliance": "연맹",
+        "days": "1~5일차",
+        "rank": "순위",
+        "rankDays": "순위, 1~5일차",
+        "percent": "{percent}%"
+    },
+    "compare": {
+        "title": "계획과 실제 비교",
+        "titleDays": "계획과 실제 비교, 1~5일차",
+        "day": "일차",
+        "plan": "계획",
+        "actual": "실제",
+        "diff": "차이",
+        "rank": "순위",
+        "ally": "연맹",
+        "total": "합계",
+        "share": "계획의 {percent}%",
+        "shareLine": "계획의 {percent}%, {rank}위, 연맹 {ally}",
+        "barLabel": "{day}, 계획 대비 실제 비율"
+    },
+    "battle": {
+        "title": "전투 단계",
+        "note": "별도의 점수와 순위예요. 1~5일차 합계에 더하지 않아요."
+    },
+    "upgrades": {
+        "title": "계획한 업그레이드",
+        "titleCount": "계획한 업그레이드, {count}",
+        "summary": "이 이벤트 계획의 업그레이드를 종류별로 묶었어요. {count}개 중 {done}개를 완료했어요.",
+        "summaryUnchecked": "이 이벤트 계획의 업그레이드를 종류별로 묶었어요.",
+        "none": "이 이벤트로 내보낸 계획이 없어서 표시할 계획 업그레이드가 없어요.",
+        "groupTitle": "{name}, {count}",
+        "groupStats": "{count}개 중 {done}개 완료, 전투력 +{power}, Fire Crystal {fireCrystals}",
+        "groupStatsUnchecked": "전투력 +{power}, Fire Crystal {fireCrystals}",
+        "power": "전투력 +{power}",
+        "plannedDay": "{day} 예정",
+        "done": "완료",
+        "notDone": "미완료",
+        "levelsFrom": "{from}에서 {to}",
+        "levelsTo": "{to}까지",
+        "levelsResearchFrom": "{from}레벨에서 {to}레벨",
+        "levelsResearchTo": "{to}레벨까지",
+        "costAmount": "{name} {amount}"
+    },
+    "pages": {
+        "buildings": "건물",
+        "research": "연구",
+        "chiefGear": "영주 장비",
+        "chiefCharms": "영주 참",
+        "heroGear": "영웅 장비",
+        "heroes": "영웅",
+        "pets": "펫",
+        "experts": "전문가",
+        "troops": "병력"
+    }
 }

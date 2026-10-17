@@ -1,78 +1,78 @@
 {
-  "page": {
-    "title": "Skins"
-  },
-  "view": {
-    "subline": "{chief} · {details} · {owned} de {total} skins obtidas"
-  },
-  "owned": {
-    "label": "Obtidas",
-    "value": "{owned} de {total}",
-    "progress": "Skins obtidas",
-    "withBonus": "{withBonus} de {total} skins têm bónus"
-  },
-  "totals": {
-    "title": "Bónus das skins obtidas",
-    "estimate": "Estimativa",
-    "percent": "+{amount}%",
-    "flat": "+{amount}",
-    "none": "Nenhuma skin obtida tem bónus ainda.",
-    "note": "{count, plural, one {Soma do bónus de {amount} skin obtida} other {Soma do bónus de {amount} skins obtidas}}, por atributo, calculada pela aplicação. Assume que todas as skins obtidas se aplicam ao mesmo tempo. Troop Attack e Troops Attack são somados."
-  },
-  "expiry": {
-    "title": "A validade não é registada.",
-    "text": "A duração (permanente, 30 dias, por classificação) só consta do texto da descrição. Uma skin temporária continua como obtida até ser desmarcada."
-  },
-  "search": {
-    "label": "Pesquisar skins",
-    "placeholder": "Pesquisar skins por nome ou fonte"
-  },
-  "filters": {
-    "button": "Filtros",
-    "title": "Filtros",
-    "description": "Escolher o que a lista de Skins mostra",
-    "reset": "Repor",
-    "showButton": "{count, plural, one {Mostrar {amount} skin} other {Mostrar {amount} skins}}",
-    "skinType": "Tipo de skin",
-    "typeAll": "Todos {amount}",
-    "typeOption": "{type} {amount}",
-    "owned": "Obtidas",
-    "bonus": "Bónus",
-    "order": "Ordem",
-    "notSaved": "Os filtros não são guardados.",
-    "ownedOptions": {
-      "all": "Todas as skins",
-      "owned": "Obtidas",
-      "notOwned": "Não obtidas"
+    "page": {
+        "title": "Skins"
     },
-    "bonusOptions": {
-      "any": "Qualquer",
-      "has": "Com bónus",
-      "none": "Sem bónus"
+    "view": {
+        "subline": "{chief} · {details} · {owned} de {total} skins obtidas"
     },
-    "orderOptions": {
-      "game": "Ordem do jogo",
-      "name": "Nome, A a Z",
-      "owned": "Obtidas primeiro"
+    "owned": {
+        "label": "Obtidas",
+        "value": "{owned} de {total}",
+        "progress": "Skins obtidas",
+        "withBonus": "{withBonus} de {total} skins têm bónus"
+    },
+    "totals": {
+        "title": "Bónus das skins obtidas",
+        "estimate": "Estimativa",
+        "percent": "+{amount}%",
+        "flat": "+{amount}",
+        "none": "Nenhuma skin obtida tem bónus ainda.",
+        "note": "{count, plural, one {Soma do bónus de {amount} skin obtida} other {Soma do bónus de {amount} skins obtidas}}, por atributo, calculada pela aplicação. Assume que todas as skins obtidas se aplicam ao mesmo tempo. Troop Attack e Troops Attack são somados."
+    },
+    "expiry": {
+        "title": "A validade não é registada.",
+        "text": "A duração (permanente, 30 dias, por classificação) só consta do texto da descrição. Uma skin temporária continua como obtida até ser desmarcada."
+    },
+    "search": {
+        "label": "Pesquisar skins",
+        "placeholder": "Pesquisar skins por nome ou fonte"
+    },
+    "filters": {
+        "button": "Filtros",
+        "title": "Filtros",
+        "description": "Escolher o que a lista de Skins mostra",
+        "reset": "Repor",
+        "showButton": "{count, plural, one {Mostrar {amount} skin} other {Mostrar {amount} skins}}",
+        "skinType": "Tipo de skin",
+        "typeAll": "Todos {amount}",
+        "typeOption": "{type} {amount}",
+        "owned": "Obtidas",
+        "bonus": "Bónus",
+        "order": "Ordem",
+        "notSaved": "Os filtros não são guardados.",
+        "ownedOptions": {
+            "all": "Todas as skins",
+            "owned": "Obtidas",
+            "notOwned": "Não obtidas"
+        },
+        "bonusOptions": {
+            "any": "Qualquer",
+            "has": "Com bónus",
+            "none": "Sem bónus"
+        },
+        "orderOptions": {
+            "game": "Ordem do jogo",
+            "name": "Nome, A a Z",
+            "owned": "Obtidas primeiro"
+        }
+    },
+    "status": {
+        "showing": "A mostrar {shown} de {total} skins.",
+        "showingFiltered": "A mostrar {shown} de {total} skins. Filtros: {filters}.",
+        "showMore": "{count, plural, one {Mostrar mais {amount} skin} other {Mostrar mais {amount} skins}}"
+    },
+    "empty": {
+        "title": "Nenhuma skin corresponde",
+        "description": "Alterar a pesquisa ou os filtros para ver skins.",
+        "reset": "Repor filtros"
+    },
+    "card": {
+        "bonus": "Bónus",
+        "source": "Fonte",
+        "unknown": "Desconhecida",
+        "bonusValue": "{value} {stat}",
+        "owned": "Obtida",
+        "ownedLabel": "Obtida: {name}, {type}",
+        "domainWarning": "O texto do bónus de domínio está na descrição e não é contado."
     }
-  },
-  "status": {
-    "showing": "A mostrar {shown} de {total} skins.",
-    "showingFiltered": "A mostrar {shown} de {total} skins. Filtros: {filters}.",
-    "showMore": "{count, plural, one {Mostrar mais {amount} skin} other {Mostrar mais {amount} skins}}"
-  },
-  "empty": {
-    "title": "Nenhuma skin corresponde",
-    "description": "Alterar a pesquisa ou os filtros para ver skins.",
-    "reset": "Repor filtros"
-  },
-  "card": {
-    "bonus": "Bónus",
-    "source": "Fonte",
-    "unknown": "Desconhecida",
-    "bonusValue": "{value} {stat}",
-    "owned": "Obtida",
-    "ownedLabel": "Obtida: {name}, {type}",
-    "domainWarning": "O texto do bónus de domínio está na descrição e não é contado."
-  }
 }

@@ -1,79 +1,79 @@
 {
-  "line": "{items} oggetti in {categories} categorie, con fonti e probabilità di bottino di {chests} forzieri.",
-  "catalog": {
-    "title": "Catalogo oggetti",
-    "showing": "Mostrati {shown} su {total}",
-    "search": "Cerca",
-    "searchPlaceholder": "Cerca oggetti per nome o descrizione",
-    "table": "Oggetti",
-    "item": "Oggetto",
-    "category": "Categoria",
-    "sources": "Fonti",
-    "lootRates": "Probabilità di bottino",
-    "description": "Descrizione",
-    "emptyTitle": "Nessun oggetto corrisponde",
-    "emptyDescription": "Cambia la ricerca o i filtri."
-  },
-  "filters": {
-    "title": "Filtri",
-    "button": "Filtri",
-    "summary": "Filtri: {category}. Fonti: {sources}",
-    "edit": "Modifica",
-    "category": "Categoria",
-    "all": "Tutte",
-    "sources": "Fonti",
-    "lootRates": "Probabilità di bottino",
-    "reset": "Azzera",
-    "show": "{count, plural, one {Mostra {amount} oggetto} other {Mostra {amount} oggetti}}"
-  },
-  "sourcesFilter": {
-    "any": "Qualsiasi fonte",
-    "has": "Con fonti",
-    "none": "Senza fonti"
-  },
-  "sourcesChip": {
-    "any": "Qualsiasi",
-    "has": "Con fonti",
-    "none": "Senza fonti ({amount})"
-  },
-  "lootFilter": {
-    "any": "Qualsiasi",
-    "has": "Con probabilità di bottino"
-  },
-  "lootChip": {
-    "any": "Qualsiasi",
-    "has": "Con probabilità di bottino ({amount} forzieri)"
-  },
-  "loot": {
-    "yes": "Sì",
-    "no": "No",
-    "notChest": "Non è un forziere"
-  },
-  "detail": {
-    "title": "Dettagli",
-    "category": "Categoria",
-    "sources": "Fonti",
-    "speedup": "Accelerazione",
-    "speedupValue": "{type}, {minutes} minuti",
-    "description": "Descrizione",
-    "lootRates": "Probabilità di bottino",
-    "lootRowsListed": "{count, plural, one {{amount} riga elencata} other {{amount} righe elencate}}",
-    "noLootRates": "Nessuna probabilità di bottino nei dati per questo forziere",
-    "lootTitle": "Probabilità di bottino",
-    "lootMeta": "{count, plural, one {{amount} ricompensa} other {{amount} ricompense}}",
-    "lootTable": "Probabilità di bottino del forziere",
-    "reward": "Ricompensa",
-    "amount": "Quantità",
-    "chance": "Probabilità",
-    "chanceValue": "{percent}%",
-    "name": "Nome"
-  },
-  "speedupType": {
-    "general": "Generale",
-    "construction": "Costruzione",
-    "troop": "Truppe",
-    "research": "Ricerca",
-    "learning": "Apprendimento",
-    "healing": "Cura"
-  }
+    "line": "{items} oggetti in {categories} categorie, con fonti e probabilità di bottino di {chests} forzieri.",
+    "catalog": {
+        "title": "Catalogo oggetti",
+        "showing": "Mostrati {shown} su {total}",
+        "search": "Cerca",
+        "searchPlaceholder": "Cerca oggetti per nome o descrizione",
+        "table": "Oggetti",
+        "item": "Oggetto",
+        "category": "Categoria",
+        "sources": "Fonti",
+        "lootRates": "Probabilità di bottino",
+        "description": "Descrizione",
+        "emptyTitle": "Nessun oggetto corrisponde",
+        "emptyDescription": "Cambia la ricerca o i filtri."
+    },
+    "filters": {
+        "title": "Filtri",
+        "button": "Filtri",
+        "summary": "Filtri: {category}. Fonti: {sources}",
+        "edit": "Modifica",
+        "category": "Categoria",
+        "all": "Tutte",
+        "sources": "Fonti",
+        "lootRates": "Probabilità di bottino",
+        "reset": "Azzera",
+        "show": "{count, plural, one {Mostra {amount} oggetto} other {Mostra {amount} oggetti}}"
+    },
+    "sourcesFilter": {
+        "any": "Qualsiasi fonte",
+        "has": "Con fonti",
+        "none": "Senza fonti"
+    },
+    "sourcesChip": {
+        "any": "Qualsiasi",
+        "has": "Con fonti",
+        "none": "Senza fonti ({amount})"
+    },
+    "lootFilter": {
+        "any": "Qualsiasi",
+        "has": "Con probabilità di bottino"
+    },
+    "lootChip": {
+        "any": "Qualsiasi",
+        "has": "Con probabilità di bottino ({amount} forzieri)"
+    },
+    "loot": {
+        "yes": "Sì",
+        "no": "No",
+        "notChest": "Non è un forziere"
+    },
+    "detail": {
+        "title": "Dettagli",
+        "category": "Categoria",
+        "sources": "Fonti",
+        "speedup": "Accelerazione",
+        "speedupValue": "{type}, {minutes} minuti",
+        "description": "Descrizione",
+        "lootRates": "Probabilità di bottino",
+        "lootRowsListed": "{count, plural, one {{amount} riga elencata} other {{amount} righe elencate}}",
+        "noLootRates": "Nessuna probabilità di bottino nei dati per questo forziere",
+        "lootTitle": "Probabilità di bottino",
+        "lootMeta": "{count, plural, one {{amount} ricompensa} other {{amount} ricompense}}",
+        "lootTable": "Probabilità di bottino del forziere",
+        "reward": "Ricompensa",
+        "amount": "Quantità",
+        "chance": "Probabilità",
+        "chanceValue": "{percent}%",
+        "name": "Nome"
+    },
+    "speedupType": {
+        "general": "Generale",
+        "construction": "Costruzione",
+        "troop": "Truppe",
+        "research": "Ricerca",
+        "learning": "Apprendimento",
+        "healing": "Cura"
+    }
 }

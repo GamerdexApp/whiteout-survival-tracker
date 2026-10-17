@@ -1,239 +1,239 @@
 {
-  "page": {
-    "title": "Эксперты"
-  },
-  "view": {
-    "subline": "{chief} · эксперты Dawn Academy, всего в игре: {total}",
-    "ghost": "Эксперты"
-  },
-  "common": {
-    "plan": "План",
-    "generation": "Поколение {generation}",
-    "unknown": "Неизвестно",
-    "and": "{first} и {last}",
-    "expertCount": "{count, plural, one {{amount} эксперт} few {{amount} эксперта} many {{amount} экспертов} other {{amount} эксперта}}"
-  },
-  "stats": {
-    "recruited": "Нанято экспертов",
-    "recruitedValue": "{count} из {total}",
-    "powerNow": "Мощь экспертов сейчас, только нанятые",
-    "powerAtMax": "Мощь на максимуме, все {total}",
-    "highest": "Высшая близость",
-    "highestValue": "{name}: {affinity}",
-    "highestNone": "Никто не нанят"
-  },
-  "toolbar": {
-    "searchLabel": "Поиск экспертов",
-    "searchPlaceholder": "Поиск экспертов",
-    "filters": "Фильтры",
-    "emptyTitle": "Подходящих экспертов нет",
-    "emptyDescription": "Измените поиск или фильтры, чтобы увидеть больше экспертов.",
-    "reset": "Сбросить фильтры",
-    "status": "Показано {shown} из {total}. Цели здесь только для чтения, их задают в плане. На уровне, кратном 10, действует бонус предыдущего уровня, пока эксперт не продвинут. Каждое изменение сохраняется сразу.",
-    "lockedNote": "Закрыто до более позднего дня сервера: {count}."
-  },
-  "toast": {
-    "notRecruitedTitle": "{name} не нанят",
-    "notRecruitedMessage": "Уровни сохранены и вернутся, когда вы снова включите «Нанят».",
-    "undo": "Отменить"
-  },
-  "card": {
-    "recruited": "Нанят",
-    "recruitedLabel": "{expert}: нанят",
-    "summary": "{title} · {specialty} · {generation}",
-    "affinityLevel": "Уровень близости",
-    "affinityLabel": "Уровень близости: {expert}",
-    "affinityDisplay": "{level} / {max}",
-    "affinityProgress": "Прогресс близости: {expert}",
-    "goal": "Цель {goal}",
-    "advanced": "Продвинут",
-    "notAdvanced": "Не продвинут",
-    "advancedLabel": "{expert}: продвижение на уровне {level}",
-    "relationship": "Уровень отношений",
-    "affinityAvailable": "Очки близости",
-    "affinityAvailableLabel": "Очков близости у {expert}",
-    "affinityOf": "из {need} до уровня {level}",
-    "bonusTitle": "Базовый бонус сейчас",
-    "bonusNow": "{amount}% {stats}",
-    "bonusOwnLevel": "Уровень {level} не кратен 10, поэтому действует его собственный бонус.",
-    "bonusAdvanced": "Уровень {level} продвинут, поэтому действует его собственный бонус.",
-    "bonusNotAdvanced": "Уровень {level} не продвинут, поэтому действует бонус уровня {counted}.",
-    "bonusAtMax": "На уровне 100: {amount}%.",
-    "feeds": "Усиливает",
-    "bonuses": "Бонусы",
-    "nextAdvancement": "Следующее продвижение: уровень {level}, сигилов: {sigils}",
-    "allAdvanced": "Все продвижения выполнены.",
-    "skills": "Навыки",
-    "skillLabel": "Уровень навыка {skill}: {expert}",
-    "skillDisplay": "{level} / {max}",
-    "expAvailable": "Доступно EXP",
-    "expAvailableLabel": "EXP навыка {skill} у {expert}",
-    "expOf": "из {need} до уровня {level}",
-    "maxLevel": "Макс. уровень, EXP не нужен",
-    "talent": "Талант: {name}",
-    "talentLevel": "Уровень {level} из {max}",
-    "talentFollows": "Зависит от: {relationship}. {effect}.",
-    "power": "Мощь {now} из {max}",
-    "derived": "Расчёт",
-    "notRecruitedHint": "Не нанят. Наймите эксперта в Tundra Trek и включите «Нанят».",
-    "recruitmentCost": "Цена найма: {cost}",
-    "maxPower": "Макс. мощь {max}",
-    "buffs": "Усиливает: {stats}",
-    "expEnough": "Хватает на уровень {level}",
-    "affinityEnough": "Хватает на уровень {level}",
-    "skillLocked": "Не открыт. Поднимите его до уровня 1, чтобы открыть.",
-    "sigilsOwned": "Есть сигилов",
-    "sigilsOwnedLabel": "Сигилов у {expert}",
-    "sigilsHint": "Это то же число, что и у сигила на странице ресурсов."
-  },
-  "filtersFlyout": {
-    "title": "Фильтры",
-    "description": "Сузьте список экспертов и выберите порядок.",
-    "generation": "Поколение",
-    "all": "Все",
-    "show": "Показывать",
-    "order": "Порядок",
-    "reset": "Сбросить",
-    "showButton": "Показать: {experts}",
-    "notSaved": "Фильтры не сохраняются.",
-    "showOptions": {
-      "everything": "Все",
-      "recruited": "Только нанятые",
-      "notRecruited": "Только не нанятые"
+    "page": {
+        "title": "Эксперты"
     },
-    "orderOptions": {
-      "generation": "Поколение",
-      "affinity": "Уровень близости",
-      "power": "Мощь",
-      "name": "Имя"
+    "view": {
+        "subline": "{chief} · эксперты Dawn Academy, всего в игре: {total}",
+        "ghost": "Эксперты"
+    },
+    "common": {
+        "plan": "План",
+        "generation": "Поколение {generation}",
+        "unknown": "Неизвестно",
+        "and": "{first} и {last}",
+        "expertCount": "{count, plural, one {{amount} эксперт} few {{amount} эксперта} many {{amount} экспертов} other {{amount} эксперта}}"
+    },
+    "stats": {
+        "recruited": "Нанято экспертов",
+        "recruitedValue": "{count} из {total}",
+        "powerNow": "Мощь экспертов сейчас, только нанятые",
+        "powerAtMax": "Мощь на максимуме, все {total}",
+        "highest": "Высшая близость",
+        "highestValue": "{name}: {affinity}",
+        "highestNone": "Никто не нанят"
+    },
+    "toolbar": {
+        "searchLabel": "Поиск экспертов",
+        "searchPlaceholder": "Поиск экспертов",
+        "filters": "Фильтры",
+        "emptyTitle": "Подходящих экспертов нет",
+        "emptyDescription": "Измените поиск или фильтры, чтобы увидеть больше экспертов.",
+        "reset": "Сбросить фильтры",
+        "status": "Показано {shown} из {total}. Цели здесь только для чтения, их задают в плане. На уровне, кратном 10, действует бонус предыдущего уровня, пока эксперт не продвинут. Каждое изменение сохраняется сразу.",
+        "lockedNote": "Закрыто до более позднего дня сервера: {count}."
+    },
+    "toast": {
+        "notRecruitedTitle": "{name} не нанят",
+        "notRecruitedMessage": "Уровни сохранены и вернутся, когда вы снова включите «Нанят».",
+        "undo": "Отменить"
+    },
+    "card": {
+        "recruited": "Нанят",
+        "recruitedLabel": "{expert}: нанят",
+        "summary": "{title} · {specialty} · {generation}",
+        "affinityLevel": "Уровень близости",
+        "affinityLabel": "Уровень близости: {expert}",
+        "affinityDisplay": "{level} / {max}",
+        "affinityProgress": "Прогресс близости: {expert}",
+        "goal": "Цель {goal}",
+        "advanced": "Продвинут",
+        "notAdvanced": "Не продвинут",
+        "advancedLabel": "{expert}: продвижение на уровне {level}",
+        "relationship": "Уровень отношений",
+        "affinityAvailable": "Очки близости",
+        "affinityAvailableLabel": "Очков близости у {expert}",
+        "affinityOf": "из {need} до уровня {level}",
+        "bonusTitle": "Базовый бонус сейчас",
+        "bonusNow": "{amount}% {stats}",
+        "bonusOwnLevel": "Уровень {level} не кратен 10, поэтому действует его собственный бонус.",
+        "bonusAdvanced": "Уровень {level} продвинут, поэтому действует его собственный бонус.",
+        "bonusNotAdvanced": "Уровень {level} не продвинут, поэтому действует бонус уровня {counted}.",
+        "bonusAtMax": "На уровне 100: {amount}%.",
+        "feeds": "Усиливает",
+        "bonuses": "Бонусы",
+        "nextAdvancement": "Следующее продвижение: уровень {level}, сигилов: {sigils}",
+        "allAdvanced": "Все продвижения выполнены.",
+        "skills": "Навыки",
+        "skillLabel": "Уровень навыка {skill}: {expert}",
+        "skillDisplay": "{level} / {max}",
+        "expAvailable": "Доступно EXP",
+        "expAvailableLabel": "EXP навыка {skill} у {expert}",
+        "expOf": "из {need} до уровня {level}",
+        "maxLevel": "Макс. уровень, EXP не нужен",
+        "talent": "Талант: {name}",
+        "talentLevel": "Уровень {level} из {max}",
+        "talentFollows": "Зависит от: {relationship}. {effect}.",
+        "power": "Мощь {now} из {max}",
+        "derived": "Расчёт",
+        "notRecruitedHint": "Не нанят. Наймите эксперта в Tundra Trek и включите «Нанят».",
+        "recruitmentCost": "Цена найма: {cost}",
+        "maxPower": "Макс. мощь {max}",
+        "buffs": "Усиливает: {stats}",
+        "expEnough": "Хватает на уровень {level}",
+        "affinityEnough": "Хватает на уровень {level}",
+        "skillLocked": "Не открыт. Поднимите его до уровня 1, чтобы открыть.",
+        "sigilsOwned": "Есть сигилов",
+        "sigilsOwnedLabel": "Сигилов у {expert}",
+        "sigilsHint": "Это то же число, что и у сигила на странице ресурсов."
+    },
+    "filtersFlyout": {
+        "title": "Фильтры",
+        "description": "Сузьте список экспертов и выберите порядок.",
+        "generation": "Поколение",
+        "all": "Все",
+        "show": "Показывать",
+        "order": "Порядок",
+        "reset": "Сбросить",
+        "showButton": "Показать: {experts}",
+        "notSaved": "Фильтры не сохраняются.",
+        "showOptions": {
+            "everything": "Все",
+            "recruited": "Только нанятые",
+            "notRecruited": "Только не нанятые"
+        },
+        "orderOptions": {
+            "generation": "Поколение",
+            "affinity": "Уровень близости",
+            "power": "Мощь",
+            "name": "Имя"
+        }
+    },
+    "plan": {
+        "title": "План экспертов",
+        "description": "Books of Knowledge, сигилы, EXP навыков и очки близости для целей по близости и навыкам.",
+        "saved": "План сохранён {date}",
+        "close": "Закрыть",
+        "save": "Сохранить план",
+        "exportButton": "Экспорт в главные события",
+        "exportNothing": "Для плана не нужны книги или сигилы, экспортировать нечего.",
+        "export": {
+            "books": "Books of Knowledge",
+            "sigils": "Сигилы экспертов",
+            "exp": "EXP навыков",
+            "expReason": "Ни одно событие не начисляет очки за EXP навыков."
+        },
+        "noExperts": "В плане пока нет экспертов. Добавьте нанятого эксперта, чтобы задать цели.",
+        "add": {
+            "title": "Добавить эксперта",
+            "selectLabel": "Эксперт для добавления",
+            "button": "Добавить эксперта",
+            "allIn": "Все нанятые эксперты уже в плане.",
+            "noneRecruited": "Наймите эксперта на странице, чтобы запланировать его."
+        },
+        "block": {
+            "remove": "Убрать",
+            "removeLabel": "Убрать {expert} из плана",
+            "part": "Часть",
+            "current": "Сейчас",
+            "goalHeading": "Цель",
+            "affinity": "Уровень близости",
+            "affinityHeld": "Очков близости: {amount}",
+            "expHeld": "Доступно EXP: {amount}",
+            "currentLevel": "Уровень {level}",
+            "currentAffinity": "{level}, продвинут",
+            "currentAffinityPlain": "{level}",
+            "affinityGoalLabel": "Цель по близости: {expert}",
+            "skillGoalLabel": "Цель по навыку {skill}: {expert}",
+            "advanceAtGoal": "Продвинуть на уровне {level}",
+            "advanceAtGoalLabel": "{expert}: продвинуть на цели"
+        },
+        "checks": {
+            "affinity": "Очки близости",
+            "learning": "EXP навыков как ускорения обучения",
+            "minutesUnit": "мин"
+        },
+        "stock": {
+            "sigils": "Плану нужно сигилов: {total}. Ваши сигилы экспертов покрывают {own}, остальные {common} нужно взять из Common Expert Sigils. Каждый сигил эксперта считается только для этого эксперта.",
+            "books": "Плану нужно Books of Knowledge для уровней навыков: {amount}.",
+            "affinity": "Плану нужно очков близости: {needed}. Того, что указано на карточках экспертов, хватает на {held}, ещё нужно добыть {left}. В пакете нет предмета близости, поэтому запас не проверяется.",
+            "learning": "Плану нужно EXP навыков: {exp}. В ваших навыках {held}, остальные {left} нужно взять из ускорений обучения. Одна минута обучения даёт {rate} EXP, то есть нужно минут: {minutes}."
+        },
+        "byExpert": {
+            "title": "По экспертам",
+            "sigils": "Сигилы: нужно {needed}, покрывает ваш сигил {name}: {own}, из Common Expert Sigils: {common}",
+            "affinity": "Близость: нужно {needed}, есть {held}, осталось добыть {left}",
+            "exp": "EXP навыков: нужно {needed}, есть {held}, осталось добыть {left}"
+        },
+        "result": {
+            "title": "Итог",
+            "derived": "Расчёт",
+            "books": "Books of Knowledge",
+            "sigils": "Сигилы",
+            "exp": "EXP навыков",
+            "affinity": "Очки близости",
+            "advancements": "Продвижения",
+            "skillLevels": "Уровни навыков",
+            "affinityLevels": "Уровни близости",
+            "heads": {
+                "expert": "Эксперт",
+                "books": "Книги",
+                "sigils": "Сигилы",
+                "exp": "EXP",
+                "levels": "Уровни",
+                "advancements": "Прод.",
+                "affinity": "Близость"
+            },
+            "empty": "Добавьте эксперта и повысьте цель, чтобы увидеть итог.",
+            "tableLabel": "Таблица итогов плана"
+        }
+    },
+    "learning": {
+        "title": "Обучение",
+        "note": "Навык учится по одному. «Завершить» добавляет EXP этому навыку.",
+        "idle": "Ничего не изучается. Начните занятие, чтобы добавить EXP навыку.",
+        "startButton": "Начать обучение",
+        "slotLabel": "Обучение, одно занятие за раз",
+        "jobTitle": "{expert}, {skill}, {session}",
+        "manageFinishText": "«Завершить улучшение» добавляет EXP занятия навыку, освобождает очередь обучения и добавляет занятие в историю. Когда время вышло, на карточке появится надпись «Можно завершить». Само ничего не завершается, ведь вы могли использовать ускорения.",
+        "flyout": {
+            "title": "Начать обучение",
+            "description": "Отметьте занятие по навыку эксперта как идущее",
+            "expert": "Эксперт",
+            "skill": "Навык",
+            "skillOption": "{name}, уровень {level} из {max}",
+            "session": "Занятие",
+            "sessionOption": "{label}, {exp} EXP",
+            "sessionHint": "Занятие даёт 60 EXP за минуту. Занятия такие же, как в игре.",
+            "expEarned": "Получено EXP",
+            "heldAfter": "EXP после",
+            "tooMuch": "Навык примет ещё только {room} EXP, остальное пропадёт.",
+            "whenStarted": "Когда началось?",
+            "modes": {
+                "now": "Начинается сейчас",
+                "already": "Уже началось"
+            },
+            "timeLeftHours": "Осталось времени, часы",
+            "ends": "Закончится",
+            "startedHint": "Выберите «Уже началось», если занятие идёт в игре. Введите время, которое там показано.",
+            "nothingToLearn": "Сейчас ни один навык не может учиться. Наймите эксперта и откройте навык, который не на высшем уровне.",
+            "busy": "Занятие уже идёт. Сначала завершите или отмените его в разделе управления.",
+            "cancel": "Отмена",
+            "start": "Начать обучение"
+        },
+        "toasts": {
+            "started": {
+                "title": "Обучение началось",
+                "message": "{what}."
+            },
+            "finished": {
+                "title": "{what}: изучено",
+                "message": "EXP добавлен навыку и в историю."
+            },
+            "cancelled": {
+                "title": "{what}: отменено",
+                "message": "У навыка остаётся прежний EXP."
+            },
+            "undo": "Отменить"
+        }
     }
-  },
-  "plan": {
-    "title": "План экспертов",
-    "description": "Books of Knowledge, сигилы, EXP навыков и очки близости для целей по близости и навыкам.",
-    "saved": "План сохранён {date}",
-    "close": "Закрыть",
-    "save": "Сохранить план",
-    "exportButton": "Экспорт в главные события",
-    "exportNothing": "Для плана не нужны книги или сигилы, экспортировать нечего.",
-    "export": {
-      "books": "Books of Knowledge",
-      "sigils": "Сигилы экспертов",
-      "exp": "EXP навыков",
-      "expReason": "Ни одно событие не начисляет очки за EXP навыков."
-    },
-    "noExperts": "В плане пока нет экспертов. Добавьте нанятого эксперта, чтобы задать цели.",
-    "add": {
-      "title": "Добавить эксперта",
-      "selectLabel": "Эксперт для добавления",
-      "button": "Добавить эксперта",
-      "allIn": "Все нанятые эксперты уже в плане.",
-      "noneRecruited": "Наймите эксперта на странице, чтобы запланировать его."
-    },
-    "block": {
-      "remove": "Убрать",
-      "removeLabel": "Убрать {expert} из плана",
-      "part": "Часть",
-      "current": "Сейчас",
-      "goalHeading": "Цель",
-      "affinity": "Уровень близости",
-      "affinityHeld": "Очков близости: {amount}",
-      "expHeld": "Доступно EXP: {amount}",
-      "currentLevel": "Уровень {level}",
-      "currentAffinity": "{level}, продвинут",
-      "currentAffinityPlain": "{level}",
-      "affinityGoalLabel": "Цель по близости: {expert}",
-      "skillGoalLabel": "Цель по навыку {skill}: {expert}",
-      "advanceAtGoal": "Продвинуть на уровне {level}",
-      "advanceAtGoalLabel": "{expert}: продвинуть на цели"
-    },
-    "checks": {
-      "affinity": "Очки близости",
-      "learning": "EXP навыков как ускорения обучения",
-      "minutesUnit": "мин"
-    },
-    "stock": {
-      "sigils": "Плану нужно сигилов: {total}. Ваши сигилы экспертов покрывают {own}, остальные {common} нужно взять из Common Expert Sigils. Каждый сигил эксперта считается только для этого эксперта.",
-      "books": "Плану нужно Books of Knowledge для уровней навыков: {amount}.",
-      "affinity": "Плану нужно очков близости: {needed}. Того, что указано на карточках экспертов, хватает на {held}, ещё нужно добыть {left}. В пакете нет предмета близости, поэтому запас не проверяется.",
-      "learning": "Плану нужно EXP навыков: {exp}. В ваших навыках {held}, остальные {left} нужно взять из ускорений обучения. Одна минута обучения даёт {rate} EXP, то есть нужно минут: {minutes}."
-    },
-    "byExpert": {
-      "title": "По экспертам",
-      "sigils": "Сигилы: нужно {needed}, покрывает ваш сигил {name}: {own}, из Common Expert Sigils: {common}",
-      "affinity": "Близость: нужно {needed}, есть {held}, осталось добыть {left}",
-      "exp": "EXP навыков: нужно {needed}, есть {held}, осталось добыть {left}"
-    },
-    "result": {
-      "title": "Итог",
-      "derived": "Расчёт",
-      "books": "Books of Knowledge",
-      "sigils": "Сигилы",
-      "exp": "EXP навыков",
-      "affinity": "Очки близости",
-      "advancements": "Продвижения",
-      "skillLevels": "Уровни навыков",
-      "affinityLevels": "Уровни близости",
-      "heads": {
-        "expert": "Эксперт",
-        "books": "Книги",
-        "sigils": "Сигилы",
-        "exp": "EXP",
-        "levels": "Уровни",
-        "advancements": "Прод.",
-        "affinity": "Близость"
-      },
-      "empty": "Добавьте эксперта и повысьте цель, чтобы увидеть итог.",
-      "tableLabel": "Таблица итогов плана"
-    }
-  },
-  "learning": {
-    "title": "Обучение",
-    "note": "Навык учится по одному. «Завершить» добавляет EXP этому навыку.",
-    "idle": "Ничего не изучается. Начните занятие, чтобы добавить EXP навыку.",
-    "startButton": "Начать обучение",
-    "slotLabel": "Обучение, одно занятие за раз",
-    "jobTitle": "{expert}, {skill}, {session}",
-    "manageFinishText": "«Завершить улучшение» добавляет EXP занятия навыку, освобождает очередь обучения и добавляет занятие в историю. Когда время вышло, на карточке появится надпись «Можно завершить». Само ничего не завершается, ведь вы могли использовать ускорения.",
-    "flyout": {
-      "title": "Начать обучение",
-      "description": "Отметьте занятие по навыку эксперта как идущее",
-      "expert": "Эксперт",
-      "skill": "Навык",
-      "skillOption": "{name}, уровень {level} из {max}",
-      "session": "Занятие",
-      "sessionOption": "{label}, {exp} EXP",
-      "sessionHint": "Занятие даёт 60 EXP за минуту. Занятия такие же, как в игре.",
-      "expEarned": "Получено EXP",
-      "heldAfter": "EXP после",
-      "tooMuch": "Навык примет ещё только {room} EXP, остальное пропадёт.",
-      "whenStarted": "Когда началось?",
-      "modes": {
-        "now": "Начинается сейчас",
-        "already": "Уже началось"
-      },
-      "timeLeftHours": "Осталось времени, часы",
-      "ends": "Закончится",
-      "startedHint": "Выберите «Уже началось», если занятие идёт в игре. Введите время, которое там показано.",
-      "nothingToLearn": "Сейчас ни один навык не может учиться. Наймите эксперта и откройте навык, который не на высшем уровне.",
-      "busy": "Занятие уже идёт. Сначала завершите или отмените его в разделе управления.",
-      "cancel": "Отмена",
-      "start": "Начать обучение"
-    },
-    "toasts": {
-      "started": {
-        "title": "Обучение началось",
-        "message": "{what}."
-      },
-      "finished": {
-        "title": "{what}: изучено",
-        "message": "EXP добавлен навыку и в историю."
-      },
-      "cancelled": {
-        "title": "{what}: отменено",
-        "message": "У навыка остаётся прежний EXP."
-      },
-      "undo": "Отменить"
-    }
-  }
 }

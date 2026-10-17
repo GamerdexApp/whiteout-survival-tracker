@@ -1,251 +1,251 @@
 {
-  "page": {
-    "title": "병력"
-  },
-  "view": {
-    "title": "병력",
-    "subline": "{chief} · {camps}",
-    "campLevel": "{name} Camp {level}",
-    "notBuilt": "미건설",
-    "intro": "캠프 레벨, 한도, 속도 보너스는 다른 페이지에서 가져오며 읽기 전용이에요. 계획은 훈련과 승급에 드는 양을 계산해요. 훈련 시작은 캠프에서 진행 중인 배치를 표시해요.",
-    "plan": "계획"
-  },
-  "cards": {
-    "tileSummary": "병력 · 전투력 {power}",
-    "allTroops": "모든 병력",
-    "totalPower": "총 전투력",
-    "troops": "병력",
-    "power": "전투력",
-    "powerNote": "병력당 전투력은 패키지에서 가져와요. 10단계와 11단계는 각 캠프의 Fire Crystal 레벨을 따라요.",
-    "campLevel": "{level} 캠프",
-    "campNotBuilt": "캠프 미건설",
-    "campAgeLocked": "저장된 캠프 레벨이 이 서버에서는 아직 열리지 않았어요. {text}",
-    "highestTier": "최고 단계",
-    "tierShort": "T{tier}",
-    "noTier": "없음"
-  },
-  "tiers": {
-    "title": "{name} 단계",
-    "hideLow": "9단계 이하 숨기기",
-    "typeLabel": "병종",
-    "hiddenNote": "1~9단계는 숨겨져 있어요. Furnace {furnace}은(는) 30레벨 이상이에요.",
-    "heads": {
-      "tier": "단계",
-      "troops": "병력",
-      "train": "훈련",
-      "power": "전투력"
+    "page": {
+        "title": "병력"
     },
-    "requires": {
-      "list": "{list} 필요",
-      "camp": "{name} Camp {level}",
-      "building": "{name} {level}",
-      "research": "{name} {level}레벨"
+    "view": {
+        "title": "병력",
+        "subline": "{chief} · {camps}",
+        "campLevel": "{name} Camp {level}",
+        "notBuilt": "미건설",
+        "intro": "캠프 레벨, 한도, 속도 보너스는 다른 페이지에서 가져오며 읽기 전용이에요. 계획은 훈련과 승급에 드는 양을 계산해요. 훈련 시작은 캠프에서 진행 중인 배치를 표시해요.",
+        "plan": "계획"
     },
-    "tier": "{tier}단계",
-    "locked": "잠김",
-    "countLabel": "{name} {tier}단계 병력",
-    "train": "훈련",
-    "seconds": "{value}초",
-    "each": "개당",
-    "mobilePower": "전투력"
-  },
-  "plan": {
-    "title": "병력 계획",
-    "description": "병종 3종의 훈련과 승급",
-    "saved": "{date}에 계획 저장됨",
-    "close": "닫기",
-    "save": "계획 저장",
-    "export": {
-      "button": "핵심 이벤트로 내보내기",
-      "emptyHint": "훈련을 추가하면 내보낼 수 있어요.",
-      "computed": "앱이 계산했어요.",
-      "trainedGroup": "훈련한 병력용",
-      "speedupGroup": "가속 분용",
-      "trainedTier": "{tier}단계 훈련 병력",
-      "speedupMinutes": "사용한 훈련 가속 분",
-      "promoted": "승급한 병력",
-      "promotedReason": "승급은 가속 분으로만 점수를 받아요.",
-      "power": "훈련과 승급으로 얻는 전투력",
-      "powerReason": "패키지에 단계별 실제 전투력이 아직 없어요."
+    "cards": {
+        "tileSummary": "병력 · 전투력 {power}",
+        "allTroops": "모든 병력",
+        "totalPower": "총 전투력",
+        "troops": "병력",
+        "power": "전투력",
+        "powerNote": "병력당 전투력은 패키지에서 가져와요. 10단계와 11단계는 각 캠프의 Fire Crystal 레벨을 따라요.",
+        "campLevel": "{level} 캠프",
+        "campNotBuilt": "캠프 미건설",
+        "campAgeLocked": "저장된 캠프 레벨이 이 서버에서는 아직 열리지 않았어요. {text}",
+        "highestTier": "최고 단계",
+        "tierShort": "T{tier}",
+        "noTier": "없음"
     },
-    "noRuns": "아직 훈련이 없어요. 병력을 추가해 계획을 시작하세요.",
-    "add": {
-      "title": "병력 추가",
-      "typeLabel": "병종",
-      "modeLabel": "훈련 또는 승급",
-      "button": "병력 추가"
+    "tiers": {
+        "title": "{name} 단계",
+        "hideLow": "9단계 이하 숨기기",
+        "typeLabel": "병종",
+        "hiddenNote": "1~9단계는 숨겨져 있어요. Furnace {furnace}은(는) 30레벨 이상이에요.",
+        "heads": {
+            "tier": "단계",
+            "troops": "병력",
+            "train": "훈련",
+            "power": "전투력"
+        },
+        "requires": {
+            "list": "{list} 필요",
+            "camp": "{name} Camp {level}",
+            "building": "{name} {level}",
+            "research": "{name} {level}레벨"
+        },
+        "tier": "{tier}단계",
+        "locked": "잠김",
+        "countLabel": "{name} {tier}단계 병력",
+        "train": "훈련",
+        "seconds": "{value}초",
+        "each": "개당",
+        "mobilePower": "전투력"
     },
-    "run": {
-      "tier": "{tier}단계",
-      "modes": {
-        "training": "훈련",
-        "promotion": "승급"
-      },
-      "remove": "{name} 훈련 삭제",
-      "removeButton": "삭제",
-      "modeLabel": "{name} 훈련 또는 승급",
-      "tierLabel": "{name} 단계",
-      "fromLabel": "{name} 승급 시작 단계",
-      "toLabel": "{name} 승급 목표 단계",
-      "to": "에서",
-      "troops": "병력",
-      "max": "최대",
-      "maxValue": "최대 ({capacity})",
-      "batches": "배치"
+    "plan": {
+        "title": "병력 계획",
+        "description": "병종 3종의 훈련과 승급",
+        "saved": "{date}에 계획 저장됨",
+        "close": "닫기",
+        "save": "계획 저장",
+        "export": {
+            "button": "핵심 이벤트로 내보내기",
+            "emptyHint": "훈련을 추가하면 내보낼 수 있어요.",
+            "computed": "앱이 계산했어요.",
+            "trainedGroup": "훈련한 병력용",
+            "speedupGroup": "가속 분용",
+            "trainedTier": "{tier}단계 훈련 병력",
+            "speedupMinutes": "사용한 훈련 가속 분",
+            "promoted": "승급한 병력",
+            "promotedReason": "승급은 가속 분으로만 점수를 받아요.",
+            "power": "훈련과 승급으로 얻는 전투력",
+            "powerReason": "패키지에 단계별 실제 전투력이 아직 없어요."
+        },
+        "noRuns": "아직 훈련이 없어요. 병력을 추가해 계획을 시작하세요.",
+        "add": {
+            "title": "병력 추가",
+            "typeLabel": "병종",
+            "modeLabel": "훈련 또는 승급",
+            "button": "병력 추가"
+        },
+        "run": {
+            "tier": "{tier}단계",
+            "modes": {
+                "training": "훈련",
+                "promotion": "승급"
+            },
+            "remove": "{name} 훈련 삭제",
+            "removeButton": "삭제",
+            "modeLabel": "{name} 훈련 또는 승급",
+            "tierLabel": "{name} 단계",
+            "fromLabel": "{name} 승급 시작 단계",
+            "toLabel": "{name} 승급 목표 단계",
+            "to": "에서",
+            "troops": "병력",
+            "max": "최대",
+            "maxValue": "최대 ({capacity})",
+            "batches": "배치"
+        },
+        "speed": {
+            "readOnlyNote": "읽기 전용 값은 다른 페이지에서 가져와요. 거기서 바꾸세요.",
+            "openBonuses": "보너스 열기",
+            "title": "한도와 속도",
+            "appointment": "임명",
+            "position": "직책",
+            "rank": "등급",
+            "positions": {
+                "none": "없음",
+                "ministerOfEducation": "Minister of Education",
+                "vicePresident": "Vice President"
+            },
+            "ranks": {
+                "regular": "일반",
+                "supreme": "최상급"
+            },
+            "appointmentEffect": "한도 +{capacity}, 속도 +{speed}%",
+            "appointmentNote": "두 임명 중 하나만 켤 수 있어요. Minister of Education은 한도 {moeCapacity}와 속도 {moeSpeed}%를 더해요 (최상급은 {moeCapacitySupreme}와 {moeSpeedSupreme}). Vice President는 속도 {vpSpeed}%를 더해요 (최상급은 {vpSpeedSupreme}).",
+            "capacity": "한도",
+            "researchCapacity": "연구 한도",
+            "troops": "병력 {value}",
+            "readOnly": "읽기 전용",
+            "capacityBoost": "한도 증가",
+            "boostTotal": "합계 x{multiplier}",
+            "capacityPerBatch": "배치당 한도",
+            "trainingSpeed": "훈련 속도",
+            "gameSpeed": "게임 훈련 속도",
+            "appointmentSpeed": "임명",
+            "mobilize": "Mobilize",
+            "advancedTraining": "Advanced Training",
+            "speedUsed": "사용한 훈련 속도",
+            "percent": "{value}%",
+            "percentPlus": "+{value}%"
+        },
+        "stock": {
+            "name": "훈련 가속",
+            "minutesUnit": "분",
+            "note": "보유량: 훈련 {training}분, 일반 {general}분. 일반 가속도 훈련에 쓸 수 있어요. 가속이 다 덮지 못하는 훈련은 일반 시간으로 끝나므로 가지고 있는 가속만 사용해요: {used}분."
+        },
+        "result": {
+            "title": "결과",
+            "resources": "자원",
+            "changes": "단계별 병력 변화",
+            "heads": {
+                "tier": "단계",
+                "infantry": "보병",
+                "lancer": "창병",
+                "marksman": "궁병",
+                "all": "전체"
+            },
+            "tier": "{tier}단계",
+            "total": "합계",
+            "time": "시간, 가속 제외",
+            "totalTime": "합계, 모든 병종 (가속 시간)",
+            "longest": "가장 오래 걸리는 병종",
+            "minutesNeeded": "필요한 가속 분",
+            "minutesUsed": "사용한 가속 분 (보유 기준)",
+            "minutes": "{value}분",
+            "tier12Note": "패키지에 따르면 12단계 비용은 일부 계산값이에요. 궁병 승급 비용은 게임에서 측정했고 보병과 창병 비용은 이를 기준으로 환산했어요."
+        }
     },
-    "speed": {
-      "readOnlyNote": "읽기 전용 값은 다른 페이지에서 가져와요. 거기서 바꾸세요.",
-      "openBonuses": "보너스 열기",
-      "title": "한도와 속도",
-      "appointment": "임명",
-      "position": "직책",
-      "rank": "등급",
-      "positions": {
-        "none": "없음",
-        "ministerOfEducation": "Minister of Education",
-        "vicePresident": "Vice President"
-      },
-      "ranks": {
-        "regular": "일반",
-        "supreme": "최상급"
-      },
-      "appointmentEffect": "한도 +{capacity}, 속도 +{speed}%",
-      "appointmentNote": "두 임명 중 하나만 켤 수 있어요. Minister of Education은 한도 {moeCapacity}와 속도 {moeSpeed}%를 더해요 (최상급은 {moeCapacitySupreme}와 {moeSpeedSupreme}). Vice President는 속도 {vpSpeed}%를 더해요 (최상급은 {vpSpeedSupreme}).",
-      "capacity": "한도",
-      "researchCapacity": "연구 한도",
-      "troops": "병력 {value}",
-      "readOnly": "읽기 전용",
-      "capacityBoost": "한도 증가",
-      "boostTotal": "합계 x{multiplier}",
-      "capacityPerBatch": "배치당 한도",
-      "trainingSpeed": "훈련 속도",
-      "gameSpeed": "게임 훈련 속도",
-      "appointmentSpeed": "임명",
-      "mobilize": "Mobilize",
-      "advancedTraining": "Advanced Training",
-      "speedUsed": "사용한 훈련 속도",
-      "percent": "{value}%",
-      "percentPlus": "+{value}%"
+    "queue": {
+        "title": "훈련 대기열",
+        "note": "캠프마다 한 번에 배치 하나를 훈련해요. 완료하면 병력이 보유 수량에 더해져요.",
+        "idle": "훈련 중인 것이 없어요. 배치를 시작해 이 캠프를 사용하세요.",
+        "startButton": "훈련 시작",
+        "jobTitle": {
+            "training": "{name} T{tier} {count}명 훈련",
+            "promotion": "{name} T{from}에서 T{to}로 {count}명 승급"
+        },
+        "manage": {
+            "slotLabel": "{camp}, 한 번에 배치 하나",
+            "finishText": "업그레이드 완료를 누르면 병력이 보유 수량에 더해지고, 캠프가 비며, 배치가 기록에 추가돼요. 남은 시간이 0이면 카드에 완료 가능이라고 표시돼요. 가속을 썼을 수 있으므로 저절로 완료되는 것은 없어요."
+        },
+        "flyout": {
+            "title": "훈련 시작",
+            "description": "캠프에서 훈련 또는 승급 중인 배치를 표시해요",
+            "camp": "캠프",
+            "campHelp": "캠프마다 한 번에 배치 하나예요. 사용 중인 캠프는 비는 시간을 알려줘요.",
+            "busy": "{date}까지 사용 중",
+            "notBuilt": "캠프 미건설",
+            "action": "행동",
+            "training": "훈련",
+            "promotion": "승급",
+            "tier": "단계",
+            "tierOption": "{tier}단계",
+            "fromTier": "시작 단계",
+            "toTier": "목표 단계",
+            "troops": "배치의 병력",
+            "max": "최대",
+            "capacityHint": "배치 하나에 병력 {capacity}명까지 들어가요. 연구 한도에 캠프 레벨을 더한 값이에요.",
+            "noTiers": "이 캠프는 아직 훈련할 단계가 없어요. 건물 페이지에서 캠프 레벨을 올리세요.",
+            "cost": "배치 비용",
+            "time": "훈련 시간",
+            "packageTime": "패키지 시간",
+            "speed": "훈련 속도",
+            "readOnly": "읽기 전용",
+            "openBonuses": "보너스 열기",
+            "yourTime": "내 시간",
+            "timeHint": "훈련 속도는 보너스 페이지에서 가져와요. 게임에 다른 시간이 표시되면 이미 시작함을 사용하세요.",
+            "whenStarted": "언제 시작했나요?",
+            "modes": {
+                "now": "지금 시작",
+                "already": "이미 시작함"
+            },
+            "timeLeftHours": "남은 시간(시간)",
+            "ends": "종료",
+            "takeCost": {
+                "title": "보유 재고에서 비용 차감",
+                "hint": "배치의 자원을 자원 페이지에서 빼요. 수량은 0 아래로 내려가지 않아요.",
+                "enough": "충분히 있어요.",
+                "short": "{names}이(가) 부족해요. 해당 재고는 0이 돼요."
+            },
+            "cancel": "취소",
+            "start": "훈련 시작",
+            "allCamps": "비어 있는 모든 캠프 ({count})",
+            "allCampsHint": "비어 있는 모든 캠프에서 같은 배치를 한 번에 시작해요. 캠프마다 시간은 따로 유지돼요. 표시된 단계는 비어 있는 모든 캠프가 훈련할 수 있는 단계예요.",
+            "campTime": "{camp}: {time}"
+        },
+        "toasts": {
+            "started": {
+                "title": "훈련을 시작했어요",
+                "message": "{what}."
+            },
+            "finished": {
+                "title": "{what} 훈련 완료",
+                "message": "병력 수량과 기록에 추가했어요."
+            },
+            "cancelled": {
+                "title": "{what} 취소됨",
+                "message": "병력 수량은 그대로예요. 필요하면 자원에서 재고를 고치세요."
+            },
+            "undo": "실행 취소"
+        },
+        "batchName": {
+            "training": "{name} T{tier} {count}명",
+            "promotion": "{name} T{from}에서 T{to}로 {count}명"
+        }
     },
-    "stock": {
-      "name": "훈련 가속",
-      "minutesUnit": "분",
-      "note": "보유량: 훈련 {training}분, 일반 {general}분. 일반 가속도 훈련에 쓸 수 있어요. 가속이 다 덮지 못하는 훈련은 일반 시간으로 끝나므로 가지고 있는 가속만 사용해요: {used}분."
-    },
-    "result": {
-      "title": "결과",
-      "resources": "자원",
-      "changes": "단계별 병력 변화",
-      "heads": {
-        "tier": "단계",
-        "infantry": "보병",
-        "lancer": "창병",
-        "marksman": "궁병",
-        "all": "전체"
-      },
-      "tier": "{tier}단계",
-      "total": "합계",
-      "time": "시간, 가속 제외",
-      "totalTime": "합계, 모든 병종 (가속 시간)",
-      "longest": "가장 오래 걸리는 병종",
-      "minutesNeeded": "필요한 가속 분",
-      "minutesUsed": "사용한 가속 분 (보유 기준)",
-      "minutes": "{value}분",
-      "tier12Note": "패키지에 따르면 12단계 비용은 일부 계산값이에요. 궁병 승급 비용은 게임에서 측정했고 보병과 창병 비용은 이를 기준으로 환산했어요."
+    "callOfWar": {
+        "title": "Call of War",
+        "note": "Romulus 스킬이에요. UTC 하루에 한 번 모든 캠프에 합쳐서 무료로 받을 수 있어요. 00:00 UTC에 초기화돼요.",
+        "available": "오늘 무료 병력 {troops}명",
+        "claimed": "오늘 받았어요. 새로 받을 수 있는 시간은 {time} 후예요.",
+        "notUnlocked": "전문가 페이지에서 Romulus를 영입하고 Call of War를 1레벨 이상으로 올려야 해요.",
+        "level": "Call of War {level}레벨",
+        "add": "{camp}에 추가",
+        "addHint": "병력 {troops}명이 {tier}단계로 들어가요",
+        "noTier": "해금된 단계 없음",
+        "toast": {
+            "title": "Call of War를 받았어요",
+            "message": "병력 {troops}명을 {camp} {tier}단계에 추가했어요.",
+            "undo": "실행 취소"
+        }
     }
-  },
-  "queue": {
-    "title": "훈련 대기열",
-    "note": "캠프마다 한 번에 배치 하나를 훈련해요. 완료하면 병력이 보유 수량에 더해져요.",
-    "idle": "훈련 중인 것이 없어요. 배치를 시작해 이 캠프를 사용하세요.",
-    "startButton": "훈련 시작",
-    "jobTitle": {
-      "training": "{name} T{tier} {count}명 훈련",
-      "promotion": "{name} T{from}에서 T{to}로 {count}명 승급"
-    },
-    "manage": {
-      "slotLabel": "{camp}, 한 번에 배치 하나",
-      "finishText": "업그레이드 완료를 누르면 병력이 보유 수량에 더해지고, 캠프가 비며, 배치가 기록에 추가돼요. 남은 시간이 0이면 카드에 완료 가능이라고 표시돼요. 가속을 썼을 수 있으므로 저절로 완료되는 것은 없어요."
-    },
-    "flyout": {
-      "title": "훈련 시작",
-      "description": "캠프에서 훈련 또는 승급 중인 배치를 표시해요",
-      "camp": "캠프",
-      "campHelp": "캠프마다 한 번에 배치 하나예요. 사용 중인 캠프는 비는 시간을 알려줘요.",
-      "busy": "{date}까지 사용 중",
-      "notBuilt": "캠프 미건설",
-      "action": "행동",
-      "training": "훈련",
-      "promotion": "승급",
-      "tier": "단계",
-      "tierOption": "{tier}단계",
-      "fromTier": "시작 단계",
-      "toTier": "목표 단계",
-      "troops": "배치의 병력",
-      "max": "최대",
-      "capacityHint": "배치 하나에 병력 {capacity}명까지 들어가요. 연구 한도에 캠프 레벨을 더한 값이에요.",
-      "noTiers": "이 캠프는 아직 훈련할 단계가 없어요. 건물 페이지에서 캠프 레벨을 올리세요.",
-      "cost": "배치 비용",
-      "time": "훈련 시간",
-      "packageTime": "패키지 시간",
-      "speed": "훈련 속도",
-      "readOnly": "읽기 전용",
-      "openBonuses": "보너스 열기",
-      "yourTime": "내 시간",
-      "timeHint": "훈련 속도는 보너스 페이지에서 가져와요. 게임에 다른 시간이 표시되면 이미 시작함을 사용하세요.",
-      "whenStarted": "언제 시작했나요?",
-      "modes": {
-        "now": "지금 시작",
-        "already": "이미 시작함"
-      },
-      "timeLeftHours": "남은 시간(시간)",
-      "ends": "종료",
-      "takeCost": {
-        "title": "보유 재고에서 비용 차감",
-        "hint": "배치의 자원을 자원 페이지에서 빼요. 수량은 0 아래로 내려가지 않아요.",
-        "enough": "충분히 있어요.",
-        "short": "{names}이(가) 부족해요. 해당 재고는 0이 돼요."
-      },
-      "cancel": "취소",
-      "start": "훈련 시작",
-      "allCamps": "비어 있는 모든 캠프 ({count})",
-      "allCampsHint": "비어 있는 모든 캠프에서 같은 배치를 한 번에 시작해요. 캠프마다 시간은 따로 유지돼요. 표시된 단계는 비어 있는 모든 캠프가 훈련할 수 있는 단계예요.",
-      "campTime": "{camp}: {time}"
-    },
-    "toasts": {
-      "started": {
-        "title": "훈련을 시작했어요",
-        "message": "{what}."
-      },
-      "finished": {
-        "title": "{what} 훈련 완료",
-        "message": "병력 수량과 기록에 추가했어요."
-      },
-      "cancelled": {
-        "title": "{what} 취소됨",
-        "message": "병력 수량은 그대로예요. 필요하면 자원에서 재고를 고치세요."
-      },
-      "undo": "실행 취소"
-    },
-    "batchName": {
-      "training": "{name} T{tier} {count}명",
-      "promotion": "{name} T{from}에서 T{to}로 {count}명"
-    }
-  },
-  "callOfWar": {
-    "title": "Call of War",
-    "note": "Romulus 스킬이에요. UTC 하루에 한 번 모든 캠프에 합쳐서 무료로 받을 수 있어요. 00:00 UTC에 초기화돼요.",
-    "available": "오늘 무료 병력 {troops}명",
-    "claimed": "오늘 받았어요. 새로 받을 수 있는 시간은 {time} 후예요.",
-    "notUnlocked": "전문가 페이지에서 Romulus를 영입하고 Call of War를 1레벨 이상으로 올려야 해요.",
-    "level": "Call of War {level}레벨",
-    "add": "{camp}에 추가",
-    "addHint": "병력 {troops}명이 {tier}단계로 들어가요",
-    "noTier": "해금된 단계 없음",
-    "toast": {
-      "title": "Call of War를 받았어요",
-      "message": "병력 {troops}명을 {camp} {tier}단계에 추가했어요.",
-      "undo": "실행 취소"
-    }
-  }
 }

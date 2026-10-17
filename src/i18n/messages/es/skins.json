@@ -1,78 +1,78 @@
 {
-  "page": {
-    "title": "Skins"
-  },
-  "view": {
-    "subline": "{chief} · {details} · {owned} de {total} skins conseguidas"
-  },
-  "owned": {
-    "label": "Conseguidas",
-    "value": "{owned} de {total}",
-    "progress": "Skins conseguidas",
-    "withBonus": "{withBonus} de {total} skins tienen bonificación"
-  },
-  "totals": {
-    "title": "Bonificaciones de las skins conseguidas",
-    "estimate": "Estimación",
-    "percent": "+{amount}%",
-    "flat": "+{amount}",
-    "none": "Ninguna skin conseguida tiene bonificación todavía.",
-    "note": "{count, plural, one {Suma de la bonificación de {amount} skin conseguida} other {Suma de la bonificación de {amount} skins conseguidas}}, por estadística, calculada por la app. Supone que todas las skins conseguidas se aplican a la vez. Troop Attack y Troops Attack se suman."
-  },
-  "expiry": {
-    "title": "No se sigue la caducidad.",
-    "text": "La duración (permanente, 30 días, por rango) solo está en el texto de la descripción. Una skin temporal sigue como conseguida hasta que la quites."
-  },
-  "search": {
-    "label": "Buscar skins",
-    "placeholder": "Buscar skins por nombre o fuente"
-  },
-  "filters": {
-    "button": "Filtros",
-    "title": "Filtros",
-    "description": "Elige qué muestra la lista de Skins",
-    "reset": "Restablecer",
-    "showButton": "{count, plural, one {Mostrar {amount} skin} other {Mostrar {amount} skins}}",
-    "skinType": "Tipo de skin",
-    "typeAll": "Todos {amount}",
-    "typeOption": "{type} {amount}",
-    "owned": "Conseguidas",
-    "bonus": "Bonificación",
-    "order": "Orden",
-    "notSaved": "Los filtros no se guardan.",
-    "ownedOptions": {
-      "all": "Todas las skins",
-      "owned": "Conseguidas",
-      "notOwned": "Sin conseguir"
+    "page": {
+        "title": "Skins"
     },
-    "bonusOptions": {
-      "any": "Cualquiera",
-      "has": "Con bonificación",
-      "none": "Sin bonificación"
+    "view": {
+        "subline": "{chief} · {details} · {owned} de {total} skins conseguidas"
     },
-    "orderOptions": {
-      "game": "Orden del juego",
-      "name": "Nombre, de A a Z",
-      "owned": "Conseguidas primero"
+    "owned": {
+        "label": "Conseguidas",
+        "value": "{owned} de {total}",
+        "progress": "Skins conseguidas",
+        "withBonus": "{withBonus} de {total} skins tienen bonificación"
+    },
+    "totals": {
+        "title": "Bonificaciones de las skins conseguidas",
+        "estimate": "Estimación",
+        "percent": "+{amount}%",
+        "flat": "+{amount}",
+        "none": "Ninguna skin conseguida tiene bonificación todavía.",
+        "note": "{count, plural, one {Suma de la bonificación de {amount} skin conseguida} other {Suma de la bonificación de {amount} skins conseguidas}}, por estadística, calculada por la app. Supone que todas las skins conseguidas se aplican a la vez. Troop Attack y Troops Attack se suman."
+    },
+    "expiry": {
+        "title": "No se sigue la caducidad.",
+        "text": "La duración (permanente, 30 días, por rango) solo está en el texto de la descripción. Una skin temporal sigue como conseguida hasta que la quites."
+    },
+    "search": {
+        "label": "Buscar skins",
+        "placeholder": "Buscar skins por nombre o fuente"
+    },
+    "filters": {
+        "button": "Filtros",
+        "title": "Filtros",
+        "description": "Elige qué muestra la lista de Skins",
+        "reset": "Restablecer",
+        "showButton": "{count, plural, one {Mostrar {amount} skin} other {Mostrar {amount} skins}}",
+        "skinType": "Tipo de skin",
+        "typeAll": "Todos {amount}",
+        "typeOption": "{type} {amount}",
+        "owned": "Conseguidas",
+        "bonus": "Bonificación",
+        "order": "Orden",
+        "notSaved": "Los filtros no se guardan.",
+        "ownedOptions": {
+            "all": "Todas las skins",
+            "owned": "Conseguidas",
+            "notOwned": "Sin conseguir"
+        },
+        "bonusOptions": {
+            "any": "Cualquiera",
+            "has": "Con bonificación",
+            "none": "Sin bonificación"
+        },
+        "orderOptions": {
+            "game": "Orden del juego",
+            "name": "Nombre, de A a Z",
+            "owned": "Conseguidas primero"
+        }
+    },
+    "status": {
+        "showing": "Mostrando {shown} de {total} skins.",
+        "showingFiltered": "Mostrando {shown} de {total} skins. Filtros: {filters}.",
+        "showMore": "{count, plural, one {Mostrar {amount} skin más} other {Mostrar {amount} skins más}}"
+    },
+    "empty": {
+        "title": "Ninguna skin coincide",
+        "description": "Cambia la búsqueda o los filtros para ver skins.",
+        "reset": "Restablecer filtros"
+    },
+    "card": {
+        "bonus": "Bonificación",
+        "source": "Fuente",
+        "unknown": "Desconocido",
+        "bonusValue": "{value} {stat}",
+        "owned": "Conseguida",
+        "ownedLabel": "Conseguida: {name}, {type}",
+        "domainWarning": "El texto de bonificación de dominio está en la descripción y no se cuenta."
     }
-  },
-  "status": {
-    "showing": "Mostrando {shown} de {total} skins.",
-    "showingFiltered": "Mostrando {shown} de {total} skins. Filtros: {filters}.",
-    "showMore": "{count, plural, one {Mostrar {amount} skin más} other {Mostrar {amount} skins más}}"
-  },
-  "empty": {
-    "title": "Ninguna skin coincide",
-    "description": "Cambia la búsqueda o los filtros para ver skins.",
-    "reset": "Restablecer filtros"
-  },
-  "card": {
-    "bonus": "Bonificación",
-    "source": "Fuente",
-    "unknown": "Desconocido",
-    "bonusValue": "{value} {stat}",
-    "owned": "Conseguida",
-    "ownedLabel": "Conseguida: {name}, {type}",
-    "domainWarning": "El texto de bonificación de dominio está en la descripción y no se cuenta."
-  }
 }

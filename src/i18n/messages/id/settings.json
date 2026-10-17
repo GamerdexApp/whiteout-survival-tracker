@@ -1,216 +1,216 @@
 {
-  "chiefCount": "{count, plural, other {{amount} Chief}}",
-  "localStorageNote": {
-    "title": "Penyimpanan lokal.",
-    "body": "Chief-mu hanya disimpan di browser ini. Data hilang jika cache browser dihapus. Ekspor cadangan secara berkala."
-  },
-  "page": {
-    "title": "Pengaturan",
-    "subline": "Kelola data, pengaturan Chief, dan tampilanmu",
-    "tabsLabel": "Pengaturan",
-    "tabs": {
-      "preferences": "Preferensi",
-      "data": "Cadangan dan data",
-      "about": "Tentang"
+    "chiefCount": "{count, plural, other {{amount} Chief}}",
+    "localStorageNote": {
+        "title": "Penyimpanan lokal.",
+        "body": "Chief-mu hanya disimpan di browser ini. Data hilang jika cache browser dihapus. Ekspor cadangan secara berkala."
+    },
+    "page": {
+        "title": "Pengaturan",
+        "subline": "Kelola data, pengaturan Chief, dan tampilanmu",
+        "tabsLabel": "Pengaturan",
+        "tabs": {
+            "preferences": "Preferensi",
+            "data": "Cadangan dan data",
+            "about": "Tentang"
+        }
+    },
+    "about": {
+        "version": "Versi {version}",
+        "summary": "Lacak progres Whiteout Survival-mu: bangunan, pahlawan, perlengkapan Chief, ahli, hewan peliharaan, pasukan, riset, teknologi aliansi, sumber daya, dan perencanamu. Semuanya disimpan di browser ini.",
+        "wiki": "Wiki Whiteout Survival",
+        "disclaimer": "Tidak berafiliasi dengan atau didukung oleh Century Games. Whiteout Survival adalah merek dagang Century Games."
+    },
+    "preferences": {
+        "chiefSettings": {
+            "title": "Pengaturan Chief",
+            "description": "Berlaku untuk semua Chief. Langsung tersimpan.",
+            "footnote": "Mengubah opsi di dalam kalkulator tidak mengubah bawaan ini. Tampilan Furnace hanya mengubah cara level ditulis, bukan levelnya. Menambah atau menghapus Chief tidak pernah mengatur ulang pengaturan ini.",
+            "groups": {
+                "furnaceDisplay": "Tampilan Furnace",
+                "lists": "Daftar",
+                "calculatorOptions": "Opsi kalkulator bawaan"
+            },
+            "fullLevelLabels": {
+                "label": "Tampilkan label level lengkap",
+                "description": "Menampilkan sub level pada Furnace, misalnya FC 5-2 bukan FC 5, di bilah samping, Ringkasan, dan Bangunan. Bangunan lain sudah menampilkan label lengkapnya."
+            },
+            "hideMaxed": {
+                "label": "Sembunyikan item maksimal",
+                "description": "Menyembunyikan bangunan, pahlawan, hewan peliharaan, dan ahli yang sudah di level tertinggi. Tiap daftar tetap punya filter Tampilkan maksimal, jadi tidak ada yang hilang."
+            },
+            "useBonuses": {
+                "label": "Terapkan total Bonus-ku",
+                "description": "Kalkulator baru mulai dengan persen kecepatan konstruksi dari halaman Bonus. Kalkulator tetap bisa mengubahnya untuk satu kali hitung."
+            },
+            "showSpeedups": {
+                "label": "Tampilkan menit percepatan",
+                "description": "Menampilkan menit percepatan yang dibutuhkan di bawah waktu pada tiap hasil kalkulator."
+            },
+            "showEventPoints": {
+                "label": "Tampilkan poin event",
+                "description": "Menambah baris poin event pada hasil kalkulator yang menyediakannya."
+            }
+        },
+        "appearance": {
+            "title": "Tampilan",
+            "description": "Pilih tampilan aplikasi. Disimpan bersama datamu.",
+            "themeLabel": "Tema",
+            "themeNote": "Sistem mengikuti perangkatmu dan saat ini {current}. Pilihan ini ikut dalam cadanganmu."
+        },
+        "themes": {
+            "light": "Terang",
+            "dark": "Gelap",
+            "system": "Sistem"
+        }
+    },
+    "data": {
+        "backupDownloaded": "Cadangan diunduh",
+        "merged": "Cadangan digabung",
+        "replaced": "Cadangan diganti",
+        "undo": "Urungkan",
+        "resetDone": "Semua data direset",
+        "resetDoneMessage": "{chiefs} dihapus dan pengaturan dikosongkan.",
+        "management": {
+            "title": "Pengelolaan data",
+            "description": "Satu berkas cadangan berisi semua Chief dan pengaturanmu."
+        },
+        "export": {
+            "title": "Ekspor data",
+            "description": "Unduh berkas cadangan semua Chief yang tersimpan. Nama berkas: <file>{fileName}</file>. Tanggalnya adalah hari lokalmu.",
+            "button": "Ekspor semua Chief"
+        },
+        "import": {
+            "title": "Impor data",
+            "description": "Unggah berkas hasil ekspor sebelumnya (.json). Berkas diperiksa dulu, lalu kamu memilih Gabung atau Ganti dan melihat apa yang berubah. Tidak ada yang berubah sampai kamu konfirmasi.",
+            "chooseFile": "Pilih berkas",
+            "noFile": "Belum ada berkas dipilih",
+            "review": "Tinjau impor"
+        },
+        "reset": {
+            "title": "Reset semua data",
+            "warningTitle": "Peringatan:",
+            "warning": "Ini akan menghapus semua Chief dan mengatur ulang pengaturan Chief dan temamu. Kamu bisa mengurungkan selama 10 detik, jadi ekspor cadangan dulu jika ingin menyimpan salinan.",
+            "button": "Reset semua data"
+        },
+        "chiefs": {
+            "title": "Chief",
+            "description": "Buat, ganti nama, ubah, dan hapus Chief di halamannya sendiri. Ekspor, impor, dan reset berlaku untuk semuanya.",
+            "manage": "Kelola Chief"
+        }
+    },
+    "importDialog": {
+        "title": "Impor cadangan",
+        "cancel": "Batal",
+        "close": "Tutup",
+        "merge": "Gabung",
+        "replace": "Ganti",
+        "failedTitle": "Impor gagal.",
+        "checksTitle": "Pemeriksaan berkas.",
+        "checks": "Daftar Chief ditemukan dan {count, plural, other {{amount} entri}} dibaca. Belum ada yang disimpan, jadi Chief-mu saat ini tidak tersentuh.",
+        "howToApply": "Bagaimana berkas diterapkan?",
+        "modeLabel": "Mode impor",
+        "modes": {
+            "merge": "Gabung (disarankan)",
+            "replace": "Ganti semuanya di perangkat ini"
+        },
+        "modeNotes": {
+            "merge": "Menambah Chief yang baru dan mempertahankan salinan lebih baru dari Chief yang ada di keduanya. Chief yang hanya ada di perangkat ini tetap ada. Pengaturanmu tetap.",
+            "replace": "Menghapus setiap Chief di perangkat ini dan memuat berkas apa adanya, termasuk pengaturannya. Pakai ini untuk memulihkan salinan yang persis sama."
+        },
+        "whatChanges": "Yang berubah",
+        "columns": {
+            "chief": "Chief",
+            "inFile": "Di berkas",
+            "onDevice": "Di perangkat ini",
+            "result": "Hasil"
+        },
+        "results": {
+            "added": "Ditambahkan",
+            "updated": "Diperbarui dari berkas",
+            "kept": "Salinan di perangkat ini dipertahankan",
+            "replaced": "Dimuat dari berkas",
+            "removed": "Dihapus"
+        },
+        "notThere": "Tidak ada",
+        "noChiefs": "Tidak ada Chief di berkas.",
+        "undoNote": "Urungkan tersedia selama 10 detik setelah impor.",
+        "bytes": "{amount} B",
+        "kilobytes": "{amount} KB",
+        "fileInfo": "{name} · {size}"
+    },
+    "resetDialog": {
+        "title": "Reset semua data",
+        "cancel": "Batal",
+        "confirm": "Ya, reset semua data",
+        "question": "Hapus semua {chiefs} dari browser ini?",
+        "removedTitle": "Yang dihapus",
+        "settingsNote": "Pilihan Terang, Gelap, atau Sistem kembali ke Sistem. Pengaturan Chief kembali ke bawaan. Chief aktif dikosongkan.",
+        "undoNote": "Urungkan tersedia selama 10 detik setelah reset. Ekspor cadangan dulu jika ingin salinan berkas yang tetap ada.",
+        "exportFirst": "Ekspor cadangan dulu"
+    },
+    "backup": {
+        "notJson": "Berkas bukan JSON yang valid. Tidak ada yang diubah.",
+        "noChiefsList": "Daftar Chief tidak ada. Tidak ada yang diubah.",
+        "duplicateId": "Dua Chief memakai id yang sama. Tidak ada yang diubah.",
+        "withNothingChanged": "{reason} Tidak ada yang diubah.",
+        "chief": {
+            "notObject": "Chief {position} bukan objek.",
+            "noId": "Chief {position} tidak punya id.",
+            "noName": "Chief {position} tidak punya nama.",
+            "noDates": "Chief {position} kehilangan tanggalnya.",
+            "badStateNumber": "Chief {position} punya nomor state yang bukan bilangan bulat.",
+            "badCoreEvent": "Chief {position} punya Core event yang tidak dikenal.",
+            "badUnlock": "Chief {position} punya pengaturan unlock yang bukan hari server dari area yang dikenal.",
+            "badPack": "Chief {position} punya pengaturan paket yang bukan aktif atau nonaktif."
+        },
+        "settings": {
+            "notObject": "Pengaturan bukan objek.",
+            "badTheme": "Tema bukan Terang, Gelap, atau Sistem.",
+            "notText": "Pengaturan {key} bukan teks.",
+            "uiNotObject": "Pengaturan antarmuka bukan objek.",
+            "badTimeZone": "Zona waktu tidak dikenal browser."
+        },
+        "summary": {
+            "added": "{amount} ditambahkan",
+            "updated": "{amount} diperbarui dari berkas",
+            "kept": "{amount} dipertahankan seperti di perangkat ini",
+            "replaced": "{amount} dimuat dari berkas",
+            "removed": "{amount} dihapus"
+        }
+    },
+    "region": {
+        "title": "Bahasa dan wilayah",
+        "description": "Pilih bahasa dan cara penulisan angka serta tanggal. Disimpan bersama datamu.",
+        "language": {
+            "label": "Bahasa",
+            "hint": "Nama pahlawan, item, bangunan, dan riset berasal dari data game dan untuk saat ini tetap dalam bahasa Inggris."
+        },
+        "numberFormat": {
+            "label": "Format angka",
+            "hint": "Contoh: {example}",
+            "options": {
+                "auto": "Otomatis, mengikuti bahasa",
+                "us": "1,234.56 (Amerika Serikat)",
+                "european": "1.234,56 (Jerman)",
+                "french": "1 234,56 (Prancis)",
+                "swiss": "1’234.56 (Swiss)",
+                "indian": "12,34,567.89 (India)"
+            }
+        },
+        "dateFormat": {
+            "label": "Format tanggal",
+            "hint": "Contoh: {example}",
+            "options": {
+                "auto": "Otomatis, mengikuti bahasa",
+                "mdy": "Bulan/Hari/Tahun",
+                "dmy": "Hari/Bulan/Tahun",
+                "ymd": "Tahun-Bulan-Hari"
+            }
+        },
+        "timeZone": {
+            "label": "Zona waktu",
+            "hint": "Dipakai untuk tanggal dan waktu, dan untuk Waktuku di Event. Contoh: 14:05 UTC tampil sebagai {example}.",
+            "auto": "Otomatis, mengikuti perangkatmu ({zone})"
+        }
     }
-  },
-  "about": {
-    "version": "Versi {version}",
-    "summary": "Lacak progres Whiteout Survival-mu: bangunan, pahlawan, perlengkapan Chief, ahli, hewan peliharaan, pasukan, riset, teknologi aliansi, sumber daya, dan perencanamu. Semuanya disimpan di browser ini.",
-    "wiki": "Wiki Whiteout Survival",
-    "disclaimer": "Tidak berafiliasi dengan atau didukung oleh Century Games. Whiteout Survival adalah merek dagang Century Games."
-  },
-  "preferences": {
-    "chiefSettings": {
-      "title": "Pengaturan Chief",
-      "description": "Berlaku untuk semua Chief. Langsung tersimpan.",
-      "footnote": "Mengubah opsi di dalam kalkulator tidak mengubah bawaan ini. Tampilan Furnace hanya mengubah cara level ditulis, bukan levelnya. Menambah atau menghapus Chief tidak pernah mengatur ulang pengaturan ini.",
-      "groups": {
-        "furnaceDisplay": "Tampilan Furnace",
-        "lists": "Daftar",
-        "calculatorOptions": "Opsi kalkulator bawaan"
-      },
-      "fullLevelLabels": {
-        "label": "Tampilkan label level lengkap",
-        "description": "Menampilkan sub level pada Furnace, misalnya FC 5-2 bukan FC 5, di bilah samping, Ringkasan, dan Bangunan. Bangunan lain sudah menampilkan label lengkapnya."
-      },
-      "hideMaxed": {
-        "label": "Sembunyikan item maksimal",
-        "description": "Menyembunyikan bangunan, pahlawan, hewan peliharaan, dan ahli yang sudah di level tertinggi. Tiap daftar tetap punya filter Tampilkan maksimal, jadi tidak ada yang hilang."
-      },
-      "useBonuses": {
-        "label": "Terapkan total Bonus-ku",
-        "description": "Kalkulator baru mulai dengan persen kecepatan konstruksi dari halaman Bonus. Kalkulator tetap bisa mengubahnya untuk satu kali hitung."
-      },
-      "showSpeedups": {
-        "label": "Tampilkan menit percepatan",
-        "description": "Menampilkan menit percepatan yang dibutuhkan di bawah waktu pada tiap hasil kalkulator."
-      },
-      "showEventPoints": {
-        "label": "Tampilkan poin event",
-        "description": "Menambah baris poin event pada hasil kalkulator yang menyediakannya."
-      }
-    },
-    "appearance": {
-      "title": "Tampilan",
-      "description": "Pilih tampilan aplikasi. Disimpan bersama datamu.",
-      "themeLabel": "Tema",
-      "themeNote": "Sistem mengikuti perangkatmu dan saat ini {current}. Pilihan ini ikut dalam cadanganmu."
-    },
-    "themes": {
-      "light": "Terang",
-      "dark": "Gelap",
-      "system": "Sistem"
-    }
-  },
-  "data": {
-    "backupDownloaded": "Cadangan diunduh",
-    "merged": "Cadangan digabung",
-    "replaced": "Cadangan diganti",
-    "undo": "Urungkan",
-    "resetDone": "Semua data direset",
-    "resetDoneMessage": "{chiefs} dihapus dan pengaturan dikosongkan.",
-    "management": {
-      "title": "Pengelolaan data",
-      "description": "Satu berkas cadangan berisi semua Chief dan pengaturanmu."
-    },
-    "export": {
-      "title": "Ekspor data",
-      "description": "Unduh berkas cadangan semua Chief yang tersimpan. Nama berkas: <file>{fileName}</file>. Tanggalnya adalah hari lokalmu.",
-      "button": "Ekspor semua Chief"
-    },
-    "import": {
-      "title": "Impor data",
-      "description": "Unggah berkas hasil ekspor sebelumnya (.json). Berkas diperiksa dulu, lalu kamu memilih Gabung atau Ganti dan melihat apa yang berubah. Tidak ada yang berubah sampai kamu konfirmasi.",
-      "chooseFile": "Pilih berkas",
-      "noFile": "Belum ada berkas dipilih",
-      "review": "Tinjau impor"
-    },
-    "reset": {
-      "title": "Reset semua data",
-      "warningTitle": "Peringatan:",
-      "warning": "Ini akan menghapus semua Chief dan mengatur ulang pengaturan Chief dan temamu. Kamu bisa mengurungkan selama 10 detik, jadi ekspor cadangan dulu jika ingin menyimpan salinan.",
-      "button": "Reset semua data"
-    },
-    "chiefs": {
-      "title": "Chief",
-      "description": "Buat, ganti nama, ubah, dan hapus Chief di halamannya sendiri. Ekspor, impor, dan reset berlaku untuk semuanya.",
-      "manage": "Kelola Chief"
-    }
-  },
-  "importDialog": {
-    "title": "Impor cadangan",
-    "cancel": "Batal",
-    "close": "Tutup",
-    "merge": "Gabung",
-    "replace": "Ganti",
-    "failedTitle": "Impor gagal.",
-    "checksTitle": "Pemeriksaan berkas.",
-    "checks": "Daftar Chief ditemukan dan {count, plural, other {{amount} entri}} dibaca. Belum ada yang disimpan, jadi Chief-mu saat ini tidak tersentuh.",
-    "howToApply": "Bagaimana berkas diterapkan?",
-    "modeLabel": "Mode impor",
-    "modes": {
-      "merge": "Gabung (disarankan)",
-      "replace": "Ganti semuanya di perangkat ini"
-    },
-    "modeNotes": {
-      "merge": "Menambah Chief yang baru dan mempertahankan salinan lebih baru dari Chief yang ada di keduanya. Chief yang hanya ada di perangkat ini tetap ada. Pengaturanmu tetap.",
-      "replace": "Menghapus setiap Chief di perangkat ini dan memuat berkas apa adanya, termasuk pengaturannya. Pakai ini untuk memulihkan salinan yang persis sama."
-    },
-    "whatChanges": "Yang berubah",
-    "columns": {
-      "chief": "Chief",
-      "inFile": "Di berkas",
-      "onDevice": "Di perangkat ini",
-      "result": "Hasil"
-    },
-    "results": {
-      "added": "Ditambahkan",
-      "updated": "Diperbarui dari berkas",
-      "kept": "Salinan di perangkat ini dipertahankan",
-      "replaced": "Dimuat dari berkas",
-      "removed": "Dihapus"
-    },
-    "notThere": "Tidak ada",
-    "noChiefs": "Tidak ada Chief di berkas.",
-    "undoNote": "Urungkan tersedia selama 10 detik setelah impor.",
-    "bytes": "{amount} B",
-    "kilobytes": "{amount} KB",
-    "fileInfo": "{name} · {size}"
-  },
-  "resetDialog": {
-    "title": "Reset semua data",
-    "cancel": "Batal",
-    "confirm": "Ya, reset semua data",
-    "question": "Hapus semua {chiefs} dari browser ini?",
-    "removedTitle": "Yang dihapus",
-    "settingsNote": "Pilihan Terang, Gelap, atau Sistem kembali ke Sistem. Pengaturan Chief kembali ke bawaan. Chief aktif dikosongkan.",
-    "undoNote": "Urungkan tersedia selama 10 detik setelah reset. Ekspor cadangan dulu jika ingin salinan berkas yang tetap ada.",
-    "exportFirst": "Ekspor cadangan dulu"
-  },
-  "backup": {
-    "notJson": "Berkas bukan JSON yang valid. Tidak ada yang diubah.",
-    "noChiefsList": "Daftar Chief tidak ada. Tidak ada yang diubah.",
-    "duplicateId": "Dua Chief memakai id yang sama. Tidak ada yang diubah.",
-    "withNothingChanged": "{reason} Tidak ada yang diubah.",
-    "chief": {
-      "notObject": "Chief {position} bukan objek.",
-      "noId": "Chief {position} tidak punya id.",
-      "noName": "Chief {position} tidak punya nama.",
-      "noDates": "Chief {position} kehilangan tanggalnya.",
-      "badStateNumber": "Chief {position} punya nomor state yang bukan bilangan bulat.",
-      "badCoreEvent": "Chief {position} punya Core event yang tidak dikenal.",
-      "badUnlock": "Chief {position} punya pengaturan unlock yang bukan hari server dari area yang dikenal.",
-      "badPack": "Chief {position} punya pengaturan paket yang bukan aktif atau nonaktif."
-    },
-    "settings": {
-      "notObject": "Pengaturan bukan objek.",
-      "badTheme": "Tema bukan Terang, Gelap, atau Sistem.",
-      "notText": "Pengaturan {key} bukan teks.",
-      "uiNotObject": "Pengaturan antarmuka bukan objek.",
-      "badTimeZone": "Zona waktu tidak dikenal browser."
-    },
-    "summary": {
-      "added": "{amount} ditambahkan",
-      "updated": "{amount} diperbarui dari berkas",
-      "kept": "{amount} dipertahankan seperti di perangkat ini",
-      "replaced": "{amount} dimuat dari berkas",
-      "removed": "{amount} dihapus"
-    }
-  },
-  "region": {
-    "title": "Bahasa dan wilayah",
-    "description": "Pilih bahasa dan cara penulisan angka serta tanggal. Disimpan bersama datamu.",
-    "language": {
-      "label": "Bahasa",
-      "hint": "Nama pahlawan, item, bangunan, dan riset berasal dari data game dan untuk saat ini tetap dalam bahasa Inggris."
-    },
-    "numberFormat": {
-      "label": "Format angka",
-      "hint": "Contoh: {example}",
-      "options": {
-        "auto": "Otomatis, mengikuti bahasa",
-        "us": "1,234.56 (Amerika Serikat)",
-        "european": "1.234,56 (Jerman)",
-        "french": "1 234,56 (Prancis)",
-        "swiss": "1’234.56 (Swiss)",
-        "indian": "12,34,567.89 (India)"
-      }
-    },
-    "dateFormat": {
-      "label": "Format tanggal",
-      "hint": "Contoh: {example}",
-      "options": {
-        "auto": "Otomatis, mengikuti bahasa",
-        "mdy": "Bulan/Hari/Tahun",
-        "dmy": "Hari/Bulan/Tahun",
-        "ymd": "Tahun-Bulan-Hari"
-      }
-    },
-    "timeZone": {
-      "label": "Zona waktu",
-      "hint": "Dipakai untuk tanggal dan waktu, dan untuk Waktuku di Event. Contoh: 14:05 UTC tampil sebagai {example}.",
-      "auto": "Otomatis, mengikuti perangkatmu ({zone})"
-    }
-  }
 }

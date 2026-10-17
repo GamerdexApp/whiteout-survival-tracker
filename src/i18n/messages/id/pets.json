@@ -1,209 +1,209 @@
 {
-  "page": {
-    "title": "Hewan Peliharaan"
-  },
-  "view": {
-    "subline": "{chief} · {details} · {unlocked} dari {total} hewan peliharaan terbuka"
-  },
-  "rarities": {
-    "Common": "Common",
-    "Uncommon": "Uncommon",
-    "Rare": "Rare",
-    "Epic": "Epic",
-    "Legendary": "Legendary"
-  },
-  "unlock": {
-    "afterFurnace": "Hari {days} dan Furnace {level}",
-    "afterPet": "Hari {days} dan {pet} level {level}"
-  },
-  "summary": {
-    "unlocked": "Terbuka",
-    "unlockedValue": "{count} dari {total}",
-    "unlockedNote": "Diatur olehmu",
-    "power": "Total kekuatan",
-    "powerNote": "Kekuatan level, kenaikan tingkat, dan penyulingan hewan yang terbuka",
-    "powerUnknown": "Kekuatan level, kenaikan tingkat, dan penyulingan hewan yang terbuka, {amount} tidak diketahui",
-    "next": "Berikutnya terbuka",
-    "allUnlocked": "Semua terbuka",
-    "allUnlockedNote": "Semua hewan peliharaan terbuka",
-    "lockedNote": "{count} terkunci sampai hari server berikutnya"
-  },
-  "totals": {
-    "attackDefense": "Serangan dan Pertahanan Pasukan",
-    "attack": "Serangan",
-    "defense": "Pertahanan",
-    "lethality": "Lethality",
-    "health": "Darah",
-    "gain": "+{value}%",
-    "types": {
-      "infantry": "Infanteri",
-      "lancer": "Lancer",
-      "marksman": "Marksman"
-    }
-  },
-  "search": {
-    "label": "Cari hewan peliharaan",
-    "placeholder": "Cari {amount} hewan peliharaan menurut nama"
-  },
-  "status": {
-    "showing": "Menampilkan {shown} dari {total} {count, plural, other {hewan peliharaan}}.",
-    "filters": " Filter: {list}.",
-    "filterNames": {
-      "rarity": "Kelangkaan",
-      "status": "Status",
-      "advanced": "Kenaikan tingkat",
-      "order": "Urutan"
+    "page": {
+        "title": "Hewan Peliharaan"
     },
-    "readOnlyGoals": "Target hanya bisa dibaca di sini dan diatur di Rencana. Target yang sama dengan nilai saat ini berarti tanpa target.",
-    "showMore": "Tampilkan {count, plural, other {{amount} hewan peliharaan lagi}}"
-  },
-  "empty": {
-    "title": "Tidak ada hewan peliharaan yang cocok",
-    "description": "Ubah pencarian atau filter untuk melihat lebih banyak hewan peliharaan.",
-    "reset": "Atur ulang filter"
-  },
-  "toast": {
-    "lockedTitle": "{name} terkunci",
-    "lockedMessage": "Level, kenaikan tingkat, dan penyulingannya tetap tersimpan.",
-    "undo": "Urungkan"
-  },
-  "card": {
-    "summary": "{rarity} · level maks {max}",
-    "unlocked": "Terbuka",
-    "unlockedLabel": "{pet} terbuka",
-    "cooldown": "Cooldown {time}",
-    "cooldownByTier": "Cooldown berubah menurut tier",
-    "cooldownUnknown": "Cooldown Tidak diketahui",
-    "skillTiers": "{count, plural, other {{amount} tier skill}}",
-    "unlockRule": "Aturan buka",
-    "ruleMet": "Kamu memenuhi aturan ini",
-    "level": "Level (maks {max})",
-    "levelLabel": "Level {pet}",
-    "goal": "Target {level}",
-    "noGoal": "Tanpa target",
-    "advanced": "Naik tingkat",
-    "advancedHint": "Kenaikan tingkat bisa diatur di level 10, 20, 30, dan seterusnya.",
-    "refinement": "Penyulingan",
-    "refinementMax": "maks {max}% masing-masing",
-    "refineLabel": "{pet} {stat}",
-    "percentSign": "%",
-    "attack": "Atk +{value}%",
-    "defense": "Def +{value}%",
-    "power": "Kekuatan {value}",
-    "powerUnknown": "Kekuatan Tidak diketahui",
-    "powerParts": "Level dan kenaikan tingkat {base}, penyulingan {refining}"
-  },
-  "filters": {
-    "button": "Filter",
-    "title": "Filter",
-    "description": "Pilih yang ditampilkan di daftar Hewan Peliharaan",
-    "rarity": "Kelangkaan",
-    "rarityAll": "Semua {amount}",
-    "rarityOption": "{rarity} {amount}",
+    "view": {
+        "subline": "{chief} · {details} · {unlocked} dari {total} hewan peliharaan terbuka"
+    },
     "rarities": {
-      "Common": "Common",
-      "Uncommon": "Uncommon",
-      "Rare": "Rare",
-      "Epic": "Epic",
-      "Legendary": "Legendary"
-    },
-    "status": "Status",
-    "statusOptions": {
-      "all": "Semua hewan peliharaan",
-      "unlocked": "Terbuka",
-      "locked": "Terkunci"
-    },
-    "advanced": "Naik tingkat",
-    "advancedOptions": {
-      "any": "Semua",
-      "advanced": "Naik tingkat",
-      "notAdvanced": "Belum naik tingkat"
-    },
-    "order": "Urutan",
-    "orderOptions": {
-      "game": "Urutan game",
-      "name": "Nama, A ke Z",
-      "level": "Level, tertinggi dulu"
-    },
-    "notSaved": "Filter tidak disimpan.",
-    "reset": "Atur ulang",
-    "show": "Tampilkan {count, plural, other {{amount} hewan peliharaan}}"
-  },
-  "plan": {
-    "button": "Rencana",
-    "title": "Rencanakan Hewan Peliharaan",
-    "description": "Makanan, item, statistik, dan poin event untuk mencapai targetmu",
-    "saved": "Rencana disimpan {date}",
-    "notSavedYet": "Rencana belum disimpan",
-    "close": "Tutup",
-    "save": "Simpan rencana",
-    "exportButton": "Ekspor ke Core Events",
-    "exportNothing": "Rencana tidak punya skor kenaikan tingkat untuk diekspor.",
-    "export": {
-      "advancement": "Skor kenaikan tingkat hewan",
-      "commonMark": "Common Wild Marks",
-      "advancedMark": "Advanced Wild Marks",
-      "marksDetail": "Dihitung dari Sumber Daya."
-    },
-    "noPets": "Tambah hewan peliharaan yang terbuka untuk merencanakan levelnya.",
-    "add": {
-      "title": "Tambah hewan peliharaan",
-      "selectLabel": "Hewan yang ditambah",
-      "button": "Tambah hewan",
-      "allIn": "Semua hewan peliharaan yang terbuka sudah ada di rencana.",
-      "noneUnlocked": "Buka hewan peliharaan di halaman Hewan Peliharaan untuk merencanakannya."
-    },
-    "block": {
-      "rarities": {
         "Common": "Common",
         "Uncommon": "Uncommon",
         "Rare": "Rare",
         "Epic": "Epic",
         "Legendary": "Legendary"
-      },
-      "maxLevel": "Level maks {max}",
-      "remove": "Hapus",
-      "removeLabel": "Hapus {pet} dari rencana",
-      "current": "Level saat ini",
-      "to": "ke",
-      "goal": "Level target (maks {max})",
-      "goalLabel": "Level target {pet}",
-      "payAdvancement": "Bayar kenaikan tingkat di target",
-      "paysCurrent": "Belum naik tingkat di level {level}, jadi kenaikan tingkat itu dibayar."
     },
-    "result": {
-      "title": "Hasil untuk {count, plural, other {{amount} hewan peliharaan}}",
-      "resources": "Sumber daya, semua hewan",
-      "byPet": "Menurut hewan",
-      "heads": {
-        "pet": "Hewan",
-        "levels": "Level",
-        "food": "Makanan",
-        "power": "Kekuatan"
-      },
-      "powerGain": "+{value}",
-      "percentGain": "+{value}%",
-      "unknown": "Tidak diketahui",
-      "gains": "Peningkatan",
-      "gainNames": {
-        "levels": "Level bertambah",
-        "advancements": "Kenaikan tingkat",
-        "attack": "Serangan Pasukan",
-        "defense": "Pertahanan Pasukan",
-        "power": "Kekuatan",
-        "score": "Skor kenaikan tingkat"
-      },
-      "unknownPowerNote": "Paket data tidak punya kekuatan kenaikan tingkat untuk sebuah level di rencana ini, jadi tambahan kekuatan Tidak diketahui.",
-      "eventPoints": "Poin event",
-      "events": {
-        "svs": "SvS",
-        "allianceShowdown": "Alliance Showdown",
-        "kingOfIcefield": "King of Icefield",
-        "hallOfChief": "Hall of Chief"
-      },
-      "notScored": "Tidak diskor",
-      "eventNote": "Poin event adalah skor kenaikan tingkat dikali poin baris skor tiap event.",
-      "scoreSourceNote": "Skor kenaikan tingkat untuk level 40 sampai 100 sesuai catatan event. Level 10 sampai 30 berasal dari satu sumber (WoS Tools)."
+    "unlock": {
+        "afterFurnace": "Hari {days} dan Furnace {level}",
+        "afterPet": "Hari {days} dan {pet} level {level}"
+    },
+    "summary": {
+        "unlocked": "Terbuka",
+        "unlockedValue": "{count} dari {total}",
+        "unlockedNote": "Diatur olehmu",
+        "power": "Total kekuatan",
+        "powerNote": "Kekuatan level, kenaikan tingkat, dan penyulingan hewan yang terbuka",
+        "powerUnknown": "Kekuatan level, kenaikan tingkat, dan penyulingan hewan yang terbuka, {amount} tidak diketahui",
+        "next": "Berikutnya terbuka",
+        "allUnlocked": "Semua terbuka",
+        "allUnlockedNote": "Semua hewan peliharaan terbuka",
+        "lockedNote": "{count} terkunci sampai hari server berikutnya"
+    },
+    "totals": {
+        "attackDefense": "Serangan dan Pertahanan Pasukan",
+        "attack": "Serangan",
+        "defense": "Pertahanan",
+        "lethality": "Lethality",
+        "health": "Darah",
+        "gain": "+{value}%",
+        "types": {
+            "infantry": "Infanteri",
+            "lancer": "Lancer",
+            "marksman": "Marksman"
+        }
+    },
+    "search": {
+        "label": "Cari hewan peliharaan",
+        "placeholder": "Cari {amount} hewan peliharaan menurut nama"
+    },
+    "status": {
+        "showing": "Menampilkan {shown} dari {total} {count, plural, other {hewan peliharaan}}.",
+        "filters": " Filter: {list}.",
+        "filterNames": {
+            "rarity": "Kelangkaan",
+            "status": "Status",
+            "advanced": "Kenaikan tingkat",
+            "order": "Urutan"
+        },
+        "readOnlyGoals": "Target hanya bisa dibaca di sini dan diatur di Rencana. Target yang sama dengan nilai saat ini berarti tanpa target.",
+        "showMore": "Tampilkan {count, plural, other {{amount} hewan peliharaan lagi}}"
+    },
+    "empty": {
+        "title": "Tidak ada hewan peliharaan yang cocok",
+        "description": "Ubah pencarian atau filter untuk melihat lebih banyak hewan peliharaan.",
+        "reset": "Atur ulang filter"
+    },
+    "toast": {
+        "lockedTitle": "{name} terkunci",
+        "lockedMessage": "Level, kenaikan tingkat, dan penyulingannya tetap tersimpan.",
+        "undo": "Urungkan"
+    },
+    "card": {
+        "summary": "{rarity} · level maks {max}",
+        "unlocked": "Terbuka",
+        "unlockedLabel": "{pet} terbuka",
+        "cooldown": "Cooldown {time}",
+        "cooldownByTier": "Cooldown berubah menurut tier",
+        "cooldownUnknown": "Cooldown Tidak diketahui",
+        "skillTiers": "{count, plural, other {{amount} tier skill}}",
+        "unlockRule": "Aturan buka",
+        "ruleMet": "Kamu memenuhi aturan ini",
+        "level": "Level (maks {max})",
+        "levelLabel": "Level {pet}",
+        "goal": "Target {level}",
+        "noGoal": "Tanpa target",
+        "advanced": "Naik tingkat",
+        "advancedHint": "Kenaikan tingkat bisa diatur di level 10, 20, 30, dan seterusnya.",
+        "refinement": "Penyulingan",
+        "refinementMax": "maks {max}% masing-masing",
+        "refineLabel": "{pet} {stat}",
+        "percentSign": "%",
+        "attack": "Atk +{value}%",
+        "defense": "Def +{value}%",
+        "power": "Kekuatan {value}",
+        "powerUnknown": "Kekuatan Tidak diketahui",
+        "powerParts": "Level dan kenaikan tingkat {base}, penyulingan {refining}"
+    },
+    "filters": {
+        "button": "Filter",
+        "title": "Filter",
+        "description": "Pilih yang ditampilkan di daftar Hewan Peliharaan",
+        "rarity": "Kelangkaan",
+        "rarityAll": "Semua {amount}",
+        "rarityOption": "{rarity} {amount}",
+        "rarities": {
+            "Common": "Common",
+            "Uncommon": "Uncommon",
+            "Rare": "Rare",
+            "Epic": "Epic",
+            "Legendary": "Legendary"
+        },
+        "status": "Status",
+        "statusOptions": {
+            "all": "Semua hewan peliharaan",
+            "unlocked": "Terbuka",
+            "locked": "Terkunci"
+        },
+        "advanced": "Naik tingkat",
+        "advancedOptions": {
+            "any": "Semua",
+            "advanced": "Naik tingkat",
+            "notAdvanced": "Belum naik tingkat"
+        },
+        "order": "Urutan",
+        "orderOptions": {
+            "game": "Urutan game",
+            "name": "Nama, A ke Z",
+            "level": "Level, tertinggi dulu"
+        },
+        "notSaved": "Filter tidak disimpan.",
+        "reset": "Atur ulang",
+        "show": "Tampilkan {count, plural, other {{amount} hewan peliharaan}}"
+    },
+    "plan": {
+        "button": "Rencana",
+        "title": "Rencanakan Hewan Peliharaan",
+        "description": "Makanan, item, statistik, dan poin event untuk mencapai targetmu",
+        "saved": "Rencana disimpan {date}",
+        "notSavedYet": "Rencana belum disimpan",
+        "close": "Tutup",
+        "save": "Simpan rencana",
+        "exportButton": "Ekspor ke Core Events",
+        "exportNothing": "Rencana tidak punya skor kenaikan tingkat untuk diekspor.",
+        "export": {
+            "advancement": "Skor kenaikan tingkat hewan",
+            "commonMark": "Common Wild Marks",
+            "advancedMark": "Advanced Wild Marks",
+            "marksDetail": "Dihitung dari Sumber Daya."
+        },
+        "noPets": "Tambah hewan peliharaan yang terbuka untuk merencanakan levelnya.",
+        "add": {
+            "title": "Tambah hewan peliharaan",
+            "selectLabel": "Hewan yang ditambah",
+            "button": "Tambah hewan",
+            "allIn": "Semua hewan peliharaan yang terbuka sudah ada di rencana.",
+            "noneUnlocked": "Buka hewan peliharaan di halaman Hewan Peliharaan untuk merencanakannya."
+        },
+        "block": {
+            "rarities": {
+                "Common": "Common",
+                "Uncommon": "Uncommon",
+                "Rare": "Rare",
+                "Epic": "Epic",
+                "Legendary": "Legendary"
+            },
+            "maxLevel": "Level maks {max}",
+            "remove": "Hapus",
+            "removeLabel": "Hapus {pet} dari rencana",
+            "current": "Level saat ini",
+            "to": "ke",
+            "goal": "Level target (maks {max})",
+            "goalLabel": "Level target {pet}",
+            "payAdvancement": "Bayar kenaikan tingkat di target",
+            "paysCurrent": "Belum naik tingkat di level {level}, jadi kenaikan tingkat itu dibayar."
+        },
+        "result": {
+            "title": "Hasil untuk {count, plural, other {{amount} hewan peliharaan}}",
+            "resources": "Sumber daya, semua hewan",
+            "byPet": "Menurut hewan",
+            "heads": {
+                "pet": "Hewan",
+                "levels": "Level",
+                "food": "Makanan",
+                "power": "Kekuatan"
+            },
+            "powerGain": "+{value}",
+            "percentGain": "+{value}%",
+            "unknown": "Tidak diketahui",
+            "gains": "Peningkatan",
+            "gainNames": {
+                "levels": "Level bertambah",
+                "advancements": "Kenaikan tingkat",
+                "attack": "Serangan Pasukan",
+                "defense": "Pertahanan Pasukan",
+                "power": "Kekuatan",
+                "score": "Skor kenaikan tingkat"
+            },
+            "unknownPowerNote": "Paket data tidak punya kekuatan kenaikan tingkat untuk sebuah level di rencana ini, jadi tambahan kekuatan Tidak diketahui.",
+            "eventPoints": "Poin event",
+            "events": {
+                "svs": "SvS",
+                "allianceShowdown": "Alliance Showdown",
+                "kingOfIcefield": "King of Icefield",
+                "hallOfChief": "Hall of Chief"
+            },
+            "notScored": "Tidak diskor",
+            "eventNote": "Poin event adalah skor kenaikan tingkat dikali poin baris skor tiap event.",
+            "scoreSourceNote": "Skor kenaikan tingkat untuk level 40 sampai 100 sesuai catatan event. Level 10 sampai 30 berasal dari satu sumber (WoS Tools)."
+        }
     }
-  }
 }

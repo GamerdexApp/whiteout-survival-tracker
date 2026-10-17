@@ -1,108 +1,108 @@
 {
-  "days": {
-    "day": "Dia {number}",
-    "battle": "Batalha",
-    "range": "Dias {range}",
-    "stage": "Etapa {number}"
-  },
-  "page": {
-    "title": "Eventos principais",
-    "subline": "{chief} · {details}"
-  },
-  "events": {
-    "svs": "SvS",
-    "showdown": "Alliance Showdown",
-    "king": "King of Icefield",
-    "hall": "Hall of Chief"
-  },
-  "tabs": {
-    "label": "Eventos principais"
-  },
-  "empty": {
-    "title": "Nenhum evento exibido",
-    "description": "Os quatro eventos estão ocultos para este chefe. Ative-os em Editar chefe.",
-    "action": "Editar chefe"
-  },
-  "strip": {
-    "live": "Evento ao vivo",
-    "dates": "{start} a {end}",
-    "noDates": "As datas são definidas no Registro do evento.",
-    "today": "Hoje é {day}",
-    "checklist": "Lista",
-    "log": "Registro do evento"
-  },
-  "bonus": {
-    "title": "Nível de {skill} de {expert}",
-    "level": "Nível {level}",
-    "levelWithPercent": "Nível {level} · {percent}%",
-    "none": "Nenhum nível definido, então nenhum bônus é somado.",
-    "readOnly": "Só leitura",
-    "openExperts": "Abrir Especialistas",
-    "svsHelp": "Soma 2% por nível aos pontos dos dias 1 a 5, arredondado por dia, e tiers extras aos limites de pontos. A Fase de Batalha não recebe bônus. Só leitura aqui, o nível é definido na página Especialistas.",
-    "showdownHelp": "Soma 5% por nível a cada ação. Só leitura aqui, o nível é definido na página Especialistas.",
-    "noneTitle": "Sem bônus de especialista",
-    "kingNote": "Nenhum especialista muda os pontos do King of Icefield.",
-    "hallNote": "Nenhum especialista muda os pontos do Hall of Chief."
-  },
-  "daysSection": {
-    "title": "Dias",
-    "stages": "Etapas",
-    "totalPerDay": "Total de pontos por dia",
-    "totalPerStage": "Total de pontos por etapa",
-    "hallSeason": "A temporada é definida na conta e é a Temporada 1 até lá.",
-    "showdownScope": "Só pontos pessoais. Sem totais da aliança e sem pontos de vitória."
-  },
-  "table": {
-    "title": "{day}: {name}",
-    "phasePreparation": "Fase de Preparação",
-    "phaseBattle": "Fase de Batalha",
-    "action": "Ação",
-    "pointsEach": "Pontos cada",
-    "count": "Qtd.",
-    "points": "Pontos",
-    "lower": "Diminuir a quantidade de {action}",
-    "raise": "Aumentar a quantidade de {action}",
-    "countLabel": "Quantidade de {action}",
-    "fromPlans": "{amount} dos planos",
-    "base": "Base {amount}",
-    "bonus": "Bônus {amount}",
-    "total": "Total {amount}"
-  },
-  "result": {
-    "totalTitle": "Total de pontos, todos os dias",
-    "totalTitleHall": "Total de pontos, etapa selecionada",
-    "baseBonus": "Base {base}, bônus {bonus}",
-    "battle": "Fase de Batalha",
-    "battleNoBonus": "Sem bônus na Fase de Batalha",
-    "seasonSum": "Soma das etapas da temporada: {amount}. Não é um ranking.",
-    "selectedDayTotal": "{day}: {amount}",
-    "selectedDayBonus": "Bônus de {percent}%"
-  },
-  "perDay": {
-    "title": "Pontos por dia",
-    "titleHall": "Pontos por etapa",
-    "bar": "Parte do maior dia para {day}"
-  },
-  "thresholds": {
-    "title": "Limites de pontos",
-    "estimate": "Estimativa",
-    "help": "Marcos de {day}, comparados com o total do dia.",
-    "reached": "Alcançado",
-    "needs": "Faltam {amount}",
-    "extraTier": "Tier extra {number}, da Valeria",
-    "extraTierUnknown": "Pontos e recompensa não estão no pacote de dados",
-    "unknown": "Desconhecido",
-    "noneEvent": "O pacote de dados não tem limites de pontos para este evento.",
-    "noneDay": "O pacote de dados não tem limites de pontos para este dia."
-  },
-  "ranks": {
-    "title": "Limites de posição",
-    "note": "São rankings de jogadores. Uma posição não tem corte de pontos.",
-    "rank": "Posição",
-    "reward": "Recompensa",
-    "gems": "{amount} Gems",
-    "unknown": "Desconhecido",
-    "notConfirmed": "Não confirmado",
-    "noneShowdown": "O pacote de dados não tem ranking pessoal para o Alliance Showdown."
-  }
+    "days": {
+        "day": "Dia {number}",
+        "battle": "Batalha",
+        "range": "Dias {range}",
+        "stage": "Etapa {number}"
+    },
+    "page": {
+        "title": "Eventos principais",
+        "subline": "{chief} · {details}"
+    },
+    "events": {
+        "svs": "SvS",
+        "showdown": "Alliance Showdown",
+        "king": "King of Icefield",
+        "hall": "Hall of Chief"
+    },
+    "tabs": {
+        "label": "Eventos principais"
+    },
+    "empty": {
+        "title": "Nenhum evento exibido",
+        "description": "Os quatro eventos estão ocultos para este chefe. Ative-os em Editar chefe.",
+        "action": "Editar chefe"
+    },
+    "strip": {
+        "live": "Evento ao vivo",
+        "dates": "{start} a {end}",
+        "noDates": "As datas são definidas no Registro do evento.",
+        "today": "Hoje é {day}",
+        "checklist": "Lista",
+        "log": "Registro do evento"
+    },
+    "bonus": {
+        "title": "Nível de {skill} de {expert}",
+        "level": "Nível {level}",
+        "levelWithPercent": "Nível {level} · {percent}%",
+        "none": "Nenhum nível definido, então nenhum bônus é somado.",
+        "readOnly": "Só leitura",
+        "openExperts": "Abrir Especialistas",
+        "svsHelp": "Soma 2% por nível aos pontos dos dias 1 a 5, arredondado por dia, e tiers extras aos limites de pontos. A Fase de Batalha não recebe bônus. Só leitura aqui, o nível é definido na página Especialistas.",
+        "showdownHelp": "Soma 5% por nível a cada ação. Só leitura aqui, o nível é definido na página Especialistas.",
+        "noneTitle": "Sem bônus de especialista",
+        "kingNote": "Nenhum especialista muda os pontos do King of Icefield.",
+        "hallNote": "Nenhum especialista muda os pontos do Hall of Chief."
+    },
+    "daysSection": {
+        "title": "Dias",
+        "stages": "Etapas",
+        "totalPerDay": "Total de pontos por dia",
+        "totalPerStage": "Total de pontos por etapa",
+        "hallSeason": "A temporada é definida na conta e é a Temporada 1 até lá.",
+        "showdownScope": "Só pontos pessoais. Sem totais da aliança e sem pontos de vitória."
+    },
+    "table": {
+        "title": "{day}: {name}",
+        "phasePreparation": "Fase de Preparação",
+        "phaseBattle": "Fase de Batalha",
+        "action": "Ação",
+        "pointsEach": "Pontos cada",
+        "count": "Qtd.",
+        "points": "Pontos",
+        "lower": "Diminuir a quantidade de {action}",
+        "raise": "Aumentar a quantidade de {action}",
+        "countLabel": "Quantidade de {action}",
+        "fromPlans": "{amount} dos planos",
+        "base": "Base {amount}",
+        "bonus": "Bônus {amount}",
+        "total": "Total {amount}"
+    },
+    "result": {
+        "totalTitle": "Total de pontos, todos os dias",
+        "totalTitleHall": "Total de pontos, etapa selecionada",
+        "baseBonus": "Base {base}, bônus {bonus}",
+        "battle": "Fase de Batalha",
+        "battleNoBonus": "Sem bônus na Fase de Batalha",
+        "seasonSum": "Soma das etapas da temporada: {amount}. Não é um ranking.",
+        "selectedDayTotal": "{day}: {amount}",
+        "selectedDayBonus": "Bônus de {percent}%"
+    },
+    "perDay": {
+        "title": "Pontos por dia",
+        "titleHall": "Pontos por etapa",
+        "bar": "Parte do maior dia para {day}"
+    },
+    "thresholds": {
+        "title": "Limites de pontos",
+        "estimate": "Estimativa",
+        "help": "Marcos de {day}, comparados com o total do dia.",
+        "reached": "Alcançado",
+        "needs": "Faltam {amount}",
+        "extraTier": "Tier extra {number}, da Valeria",
+        "extraTierUnknown": "Pontos e recompensa não estão no pacote de dados",
+        "unknown": "Desconhecido",
+        "noneEvent": "O pacote de dados não tem limites de pontos para este evento.",
+        "noneDay": "O pacote de dados não tem limites de pontos para este dia."
+    },
+    "ranks": {
+        "title": "Limites de posição",
+        "note": "São rankings de jogadores. Uma posição não tem corte de pontos.",
+        "rank": "Posição",
+        "reward": "Recompensa",
+        "gems": "{amount} Gems",
+        "unknown": "Desconhecido",
+        "notConfirmed": "Não confirmado",
+        "noneShowdown": "O pacote de dados não tem ranking pessoal para o Alliance Showdown."
+    }
 }

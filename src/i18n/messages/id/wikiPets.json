@@ -1,52 +1,52 @@
 {
-  "line": "{pets} hewan peliharaan. Hanya referensi, tidak ada yang disimpan.",
-  "roster": {
-    "title": "Hewan Peliharaan",
-    "count": "{shown} dari {total} hewan peliharaan",
-    "search": "Cari",
-    "searchPlaceholder": "Cari {count} hewan peliharaan",
-    "rarity": "Kelangkaan",
-    "all": "Semua",
-    "empty": "Tidak ada hewan peliharaan yang cocok dengan filter.",
-    "summary": "Level maks {level}, penyulingan sampai {percent}",
-    "percentValue": "{value}%"
-  },
-  "unlock": {
-    "withFurnace": "Hari {days}, Furnace {level}",
-    "withPet": "Hari {days}, {pet} {level}",
-    "daysOnly": "Hari {days}",
-    "label": "Syarat buka: {requirement}"
-  },
-  "detail": {
-    "maxLevel": "Level maks",
-    "maxRefinement": "Penyulingan maks",
-    "unlock": "Syarat buka",
-    "cooldown": "Cooldown skill",
-    "duration": "Durasi skill",
-    "tierCooldown": "{value}",
-    "maxPower": "Kekuatan maks",
-    "levelPower": "Kekuatan level dan kenaikan tingkat di level maks",
-    "refiningPower": "Kekuatan penyulingan di penyulingan maks"
-  },
-  "skill": {
-    "title": "Skill",
-    "meta": "{count, plural, other {{amount} level}}",
-    "level": "Lv {level}",
-    "percent": "{value}%"
-  },
-  "levels": {
-    "title": "Tabel level",
-    "level": "Level {level}",
-    "columns": {
-      "level": "Level",
-      "food": "Makanan hewan",
-      "attack": "Serangan pasukan",
-      "defense": "Pertahanan pasukan",
-      "power": "Kekuatan pasukan",
-      "materials": "Bahan kenaikan tingkat"
+    "line": "{pets} hewan peliharaan. Hanya referensi, tidak ada yang disimpan.",
+    "roster": {
+        "title": "Hewan Peliharaan",
+        "count": "{shown} dari {total} hewan peliharaan",
+        "search": "Cari",
+        "searchPlaceholder": "Cari {count} hewan peliharaan",
+        "rarity": "Kelangkaan",
+        "all": "Semua",
+        "empty": "Tidak ada hewan peliharaan yang cocok dengan filter.",
+        "summary": "Level maks {level}, penyulingan sampai {percent}",
+        "percentValue": "{value}%"
     },
-    "refined": "{value} (disuling {refined})",
-    "none": "Tidak ada"
-  },
-  "recordLine": "Hewan peliharaan {rarity}, level maks {level}. Hanya referensi, tidak ada yang disimpan."
+    "unlock": {
+        "withFurnace": "Hari {days}, Furnace {level}",
+        "withPet": "Hari {days}, {pet} {level}",
+        "daysOnly": "Hari {days}",
+        "label": "Syarat buka: {requirement}"
+    },
+    "detail": {
+        "maxLevel": "Level maks",
+        "maxRefinement": "Penyulingan maks",
+        "unlock": "Syarat buka",
+        "cooldown": "Cooldown skill",
+        "duration": "Durasi skill",
+        "tierCooldown": "{value}",
+        "maxPower": "Kekuatan maks",
+        "levelPower": "Kekuatan level dan kenaikan tingkat di level maks",
+        "refiningPower": "Kekuatan penyulingan di penyulingan maks"
+    },
+    "skill": {
+        "title": "Skill",
+        "meta": "{count, plural, other {{amount} level}}",
+        "level": "Lv {level}",
+        "percent": "{value}%"
+    },
+    "levels": {
+        "title": "Tabel level",
+        "level": "Level {level}",
+        "columns": {
+            "level": "Level",
+            "food": "Makanan hewan",
+            "attack": "Serangan pasukan",
+            "defense": "Pertahanan pasukan",
+            "power": "Kekuatan pasukan",
+            "materials": "Bahan kenaikan tingkat"
+        },
+        "refined": "{value} (disuling {refined})",
+        "none": "Tidak ada"
+    },
+    "recordLine": "Hewan peliharaan {rarity}, level maks {level}. Hanya referensi, tidak ada yang disimpan."
 }

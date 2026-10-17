@@ -1,215 +1,215 @@
 {
-  "defaultSetName": "Комплект {number}",
-  "troop": {
-    "infantry": "Infantry",
-    "lancer": "Lancer",
-    "marksman": "Marksman"
-  },
-  "lock": {
-    "needsMythic": "Нужно снаряжение Mythic",
-    "needsBoth": "Нужны усиление 100 и ковка мастерства 10 ур.",
-    "needsEnhancement": "Нужно усиление 100",
-    "needsForging": "Нужна ковка мастерства 10 ур."
-  },
-  "tab": {
-    "deletedTitle": "{name}: удалён",
-    "deletedMessage": "Четыре предмета и их цели удалены.",
-    "undo": "Отменить",
-    "tiles": {
-      "sets": "Комплектов снаряжения",
-      "power": "Мощь снаряжения, все комплекты",
-      "ofPieces": "{count} из {total}",
-      "atEnhancementMax": "Предметов с усилением 100",
-      "empowered": "Предметов с наделением",
-      "ready": "Предметов, готовых к наделению"
+    "defaultSetName": "Комплект {number}",
+    "troop": {
+        "infantry": "Infantry",
+        "lancer": "Lancer",
+        "marksman": "Marksman"
     },
-    "search": "Поиск комплектов",
-    "filters": "Фильтры",
-    "plan": "План",
-    "showing": "Показано комплектов: {shown} из {total}. Цели здесь только для чтения, их задают в плане.",
-    "empty": {
-      "title": "Комплектов пока нет",
-      "description": "В комплекте по одному предмету Goggles, Gloves, Belt и Boots. Добавьте комплект, чтобы вести учёт его уровней."
+    "lock": {
+        "needsMythic": "Нужно снаряжение Mythic",
+        "needsBoth": "Нужны усиление 100 и ковка мастерства 10 ур.",
+        "needsEnhancement": "Нужно усиление 100",
+        "needsForging": "Нужна ковка мастерства 10 ур."
     },
-    "addSet": "Добавить комплект",
-    "unknownHero": "Неизвестный герой",
-    "power": "Мощь {amount}",
-    "enhancementLine": "Усил. {line}",
-    "troopHint": "Тип войск выбирает столбец характеристик ниже.",
-    "editSet": "Изменить комплект",
-    "deleteSet": "Удалить комплект"
-  },
-  "pieceCard": {
-    "name": "{set} {slot}",
-    "forgingRow": "{name} (+{percent}%)",
-    "none": "Нет",
-    "noGoal": "Нет цели",
-    "goal": "Цель: {value}",
-    "quality": "Качество снаряжения",
-    "qualities": {
-      "mythic": "Mythic",
-      "epic": "Epic",
-      "rare": "Rare",
-      "uncommon": "Uncommon",
-      "common": "Common"
+    "tab": {
+        "deletedTitle": "{name}: удалён",
+        "deletedMessage": "Четыре предмета и их цели удалены.",
+        "undo": "Отменить",
+        "tiles": {
+            "sets": "Комплектов снаряжения",
+            "power": "Мощь снаряжения, все комплекты",
+            "ofPieces": "{count} из {total}",
+            "atEnhancementMax": "Предметов с усилением 100",
+            "empowered": "Предметов с наделением",
+            "ready": "Предметов, готовых к наделению"
+        },
+        "search": "Поиск комплектов",
+        "filters": "Фильтры",
+        "plan": "План",
+        "showing": "Показано комплектов: {shown} из {total}. Цели здесь только для чтения, их задают в плане.",
+        "empty": {
+            "title": "Комплектов пока нет",
+            "description": "В комплекте по одному предмету Goggles, Gloves, Belt и Boots. Добавьте комплект, чтобы вести учёт его уровней."
+        },
+        "addSet": "Добавить комплект",
+        "unknownHero": "Неизвестный герой",
+        "power": "Мощь {amount}",
+        "enhancementLine": "Усил. {line}",
+        "troopHint": "Тип войск выбирает столбец характеристик ниже.",
+        "editSet": "Изменить комплект",
+        "deleteSet": "Удалить комплект"
     },
-    "forgingRowLabel": "Строка ковки мастерства",
-    "forgingStops": "Ковка мастерства останавливается на 10 уровне, пока усиление не достигнет 100.",
-    "lowQualityNote": "Ковать и наделять можно только снаряжение Mythic. Мощь считается по таблицам Mythic с базовой мощью этого качества, игра это не подтверждает.",
-    "enhancement": "Усиление",
-    "enhancementLabel": "Усиление: {name}",
-    "enhancementSlider": "Ползунок усиления: {name}",
-    "empowerment": "Наделение",
-    "empowermentLabel": "Наделение: {name}",
-    "empowermentSlider": "Ползунок наделения: {name}",
-    "outOf": "/ {max}",
-    "milestone": "Наделение {level} достигнуто: {stat}",
-    "piecePower": "Мощь предмета",
-    "health": "Здоровье",
-    "percent": "{value}%"
-  },
-  "statLines": {
-    "title": "Строки характеристик: 4 слота на 3 типа войск",
-    "troopThisSet": "{troop} (этот комплект)",
-    "stat": "{name} {value}",
-    "health": "ЗДР {value}",
-    "percentStat": "{name} {value}%",
-    "none": "Нет",
-    "note": "Значения на уровнях предметов {name} с учётом ковки мастерства, с округлением вниз. Характеристики взяты из WoS Tools, где данные заканчиваются на 192 из 200 уровней. Выделенный столбец это тип войск комплекта."
-  },
-  "filters": {
-    "title": "Фильтры",
-    "description": "Какие комплекты показывать в списке",
-    "reset": "Сбросить",
-    "show": "{count, plural, one {Показать {amount} комплект} few {Показать {amount} комплекта} many {Показать {amount} комплектов} other {Показать {amount} комплекта}}",
-    "all": "Все",
-    "troopType": "Тип войск",
-    "linkedHero": "Привязанный герой",
-    "heroOptions": {
-      "all": "Все",
-      "linked": "Привязан к герою",
-      "unlinked": "Не привязан"
+    "pieceCard": {
+        "name": "{set} {slot}",
+        "forgingRow": "{name} (+{percent}%)",
+        "none": "Нет",
+        "noGoal": "Нет цели",
+        "goal": "Цель: {value}",
+        "quality": "Качество снаряжения",
+        "qualities": {
+            "mythic": "Mythic",
+            "epic": "Epic",
+            "rare": "Rare",
+            "uncommon": "Uncommon",
+            "common": "Common"
+        },
+        "forgingRowLabel": "Строка ковки мастерства",
+        "forgingStops": "Ковка мастерства останавливается на 10 уровне, пока усиление не достигнет 100.",
+        "lowQualityNote": "Ковать и наделять можно только снаряжение Mythic. Мощь считается по таблицам Mythic с базовой мощью этого качества, игра это не подтверждает.",
+        "enhancement": "Усиление",
+        "enhancementLabel": "Усиление: {name}",
+        "enhancementSlider": "Ползунок усиления: {name}",
+        "empowerment": "Наделение",
+        "empowermentLabel": "Наделение: {name}",
+        "empowermentSlider": "Ползунок наделения: {name}",
+        "outOf": "/ {max}",
+        "milestone": "Наделение {level} достигнуто: {stat}",
+        "piecePower": "Мощь предмета",
+        "health": "Здоровье",
+        "percent": "{value}%"
     },
-    "order": "Порядок",
-    "orderOptions": {
-      "power": "По общей мощи, сначала большая",
-      "created": "По порядку добавления",
-      "name": "По названию, А–Я",
-      "hero": "По имени героя, А–Я"
+    "statLines": {
+        "title": "Строки характеристик: 4 слота на 3 типа войск",
+        "troopThisSet": "{troop} (этот комплект)",
+        "stat": "{name} {value}",
+        "health": "ЗДР {value}",
+        "percentStat": "{name} {value}%",
+        "none": "Нет",
+        "note": "Значения на уровнях предметов {name} с учётом ковки мастерства, с округлением вниз. Характеристики взяты из WoS Tools, где данные заканчиваются на 192 из 200 уровней. Выделенный столбец это тип войск комплекта."
     },
-    "notSaved": "Фильтры не сохраняются."
-  },
-  "setDialogs": {
-    "cancel": "Отмена",
-    "setName": "Название комплекта",
-    "nameRequired": "Введите название.",
-    "linkedHero": "Привязанный герой",
-    "add": {
-      "title": "Добавить комплект",
-      "linkedHeroHint": "При выборе героя тип войск ставится по его классу.",
-      "troopType": "Тип войск",
-      "troopTypeHint": "Тип войск выбирает столбец характеристик комплекта.",
-      "quality": "Качество снаряжения",
-      "qualityHint": "Ковать и наделять можно только снаряжение Mythic.",
-      "qualityHintCopy": "Копия комплекта сохраняет качество каждого предмета.",
-      "qualities": {
-        "mythic": "Mythic",
-        "epic": "Epic",
-        "rare": "Rare",
-        "uncommon": "Uncommon",
-        "common": "Common"
-      },
-      "startFrom": "Начать с",
-      "startFromHint": "Цели не копируются. Цели задаются в плане.",
-      "emptySet": "Пустой комплект",
-      "copyFrom": "Скопировать уровни из: {name}",
-      "savesAtOnce": "Каждое изменение сохраняется сразу, новый комплект выбирается автоматически.",
-      "submit": "Добавить комплект"
+    "filters": {
+        "title": "Фильтры",
+        "description": "Какие комплекты показывать в списке",
+        "reset": "Сбросить",
+        "show": "{count, plural, one {Показать {amount} комплект} few {Показать {amount} комплекта} many {Показать {amount} комплектов} other {Показать {amount} комплекта}}",
+        "all": "Все",
+        "troopType": "Тип войск",
+        "linkedHero": "Привязанный герой",
+        "heroOptions": {
+            "all": "Все",
+            "linked": "Привязан к герою",
+            "unlinked": "Не привязан"
+        },
+        "order": "Порядок",
+        "orderOptions": {
+            "power": "По общей мощи, сначала большая",
+            "created": "По порядку добавления",
+            "name": "По названию, А–Я",
+            "hero": "По имени героя, А–Я"
+        },
+        "notSaved": "Фильтры не сохраняются."
     },
-    "delete": {
-      "title": "Удалить {name}?",
-      "titleFallback": "Удалить комплект",
-      "confirm": "Удалить комплект",
-      "body": "Четыре предмета комплекта {name} и их цели будут удалены с этого устройства.",
-      "undoNote": "После удаления у вас есть 10 секунд на отмену.",
-      "exportBackup": "Сначала экспортировать копию"
+    "setDialogs": {
+        "cancel": "Отмена",
+        "setName": "Название комплекта",
+        "nameRequired": "Введите название.",
+        "linkedHero": "Привязанный герой",
+        "add": {
+            "title": "Добавить комплект",
+            "linkedHeroHint": "При выборе героя тип войск ставится по его классу.",
+            "troopType": "Тип войск",
+            "troopTypeHint": "Тип войск выбирает столбец характеристик комплекта.",
+            "quality": "Качество снаряжения",
+            "qualityHint": "Ковать и наделять можно только снаряжение Mythic.",
+            "qualityHintCopy": "Копия комплекта сохраняет качество каждого предмета.",
+            "qualities": {
+                "mythic": "Mythic",
+                "epic": "Epic",
+                "rare": "Rare",
+                "uncommon": "Uncommon",
+                "common": "Common"
+            },
+            "startFrom": "Начать с",
+            "startFromHint": "Цели не копируются. Цели задаются в плане.",
+            "emptySet": "Пустой комплект",
+            "copyFrom": "Скопировать уровни из: {name}",
+            "savesAtOnce": "Каждое изменение сохраняется сразу, новый комплект выбирается автоматически.",
+            "submit": "Добавить комплект"
+        },
+        "delete": {
+            "title": "Удалить {name}?",
+            "titleFallback": "Удалить комплект",
+            "confirm": "Удалить комплект",
+            "body": "Четыре предмета комплекта {name} и их цели будут удалены с этого устройства.",
+            "undoNote": "После удаления у вас есть 10 секунд на отмену.",
+            "exportBackup": "Сначала экспортировать копию"
+        },
+        "edit": {
+            "title": "Изменить {name}",
+            "titleFallback": "Изменить комплект",
+            "submit": "Сохранить комплект"
+        },
+        "heroSelect": {
+            "none": "Без героя",
+            "option": "{name} ({class}, пок. {generation})"
+        }
     },
-    "edit": {
-      "title": "Изменить {name}",
-      "titleFallback": "Изменить комплект",
-      "submit": "Сохранить комплект"
+    "plan": {
+        "title": "План снаряжения героев",
+        "description": "Ковка мастерства, усиление и наделение любых предметов из любого комплекта",
+        "saved": "План сохранён {time}",
+        "close": "Закрыть",
+        "save": "Сохранить план",
+        "empty": "В плане пока нет предметов. Добавьте предмет выше и повысьте его цели.",
+        "pieceTitle": "{set} · {slot}",
+        "milestone": "наделение {level}, {event}, {stat}",
+        "addPiece": {
+            "title": "Добавить предмет",
+            "noSets": "Сначала добавьте комплект на вкладке снаряжения героев.",
+            "set": "Комплект",
+            "setOption": "{name} ({troop})",
+            "piece": "Предмет",
+            "submit": "Добавить предмет",
+            "taken": "Этот предмет уже в плане."
+        },
+        "qualities": {
+            "mythic": "Mythic",
+            "epic": "Epic",
+            "rare": "Rare",
+            "uncommon": "Uncommon",
+            "common": "Common"
+        },
+        "remove": "Убрать {title} из плана",
+        "forgingRow": "{name} (+{percent}%)",
+        "none": "Нет",
+        "forgingCurrent": "Текущая строка ковки",
+        "forgingGoal": "Целевая строка ковки",
+        "forgingGoalLabel": "Цель ковки: {title}",
+        "forgingStops": "Ковка мастерства останавливается на 10 уровне, пока цель усиления не достигнет 100.",
+        "enhancement": "Усиление",
+        "enhancementGoal": "Цель усиления: {title}",
+        "empowerment": "Наделение",
+        "empowermentGoal": "Цель наделения: {title}",
+        "from": "{value} до",
+        "result": {
+            "title": "Итог для {count, plural, one {{amount} предмета} few {{amount} предметов} many {{amount} предметов} other {{amount} предмета}}",
+            "power": "Мощь",
+            "powerLines": {
+                "gained": "Прирост мощи",
+                "before": "Мощь этих предметов до",
+                "after": "Мощь этих предметов после"
+            },
+            "columns": {
+                "piece": "Предмет",
+                "forgingStatsUp": "Рост от ковки",
+                "powerGained": "Прирост мощи"
+            },
+            "forgingStatsUp": "+{percent}% (шагов: {steps})",
+            "milestones": "Открытые рубежи",
+            "milestoneLine": "{label}: {stat}",
+            "events": {
+                "svs": "SvS",
+                "allianceShowdown": "Alliance Showdown",
+                "kingOfIcefield": "King of Icefield"
+            },
+            "note": "В плане снаряжения героев нет настроек скорости и бонусов. Калькулятор не возвращает время.",
+            "tableLabel": "Таблица итогов плана"
+        }
     },
-    "heroSelect": {
-      "none": "Без героя",
-      "option": "{name} ({class}, пок. {generation})"
+    "export": {
+        "button": "Экспорт в главные события",
+        "nothing": "Для плана не нужны Essence Stones или Mithril, экспортировать нечего.",
+        "essenceStones": "Essence Stones",
+        "mithril": "Mithril"
     }
-  },
-  "plan": {
-    "title": "План снаряжения героев",
-    "description": "Ковка мастерства, усиление и наделение любых предметов из любого комплекта",
-    "saved": "План сохранён {time}",
-    "close": "Закрыть",
-    "save": "Сохранить план",
-    "empty": "В плане пока нет предметов. Добавьте предмет выше и повысьте его цели.",
-    "pieceTitle": "{set} · {slot}",
-    "milestone": "наделение {level}, {event}, {stat}",
-    "addPiece": {
-      "title": "Добавить предмет",
-      "noSets": "Сначала добавьте комплект на вкладке снаряжения героев.",
-      "set": "Комплект",
-      "setOption": "{name} ({troop})",
-      "piece": "Предмет",
-      "submit": "Добавить предмет",
-      "taken": "Этот предмет уже в плане."
-    },
-    "qualities": {
-      "mythic": "Mythic",
-      "epic": "Epic",
-      "rare": "Rare",
-      "uncommon": "Uncommon",
-      "common": "Common"
-    },
-    "remove": "Убрать {title} из плана",
-    "forgingRow": "{name} (+{percent}%)",
-    "none": "Нет",
-    "forgingCurrent": "Текущая строка ковки",
-    "forgingGoal": "Целевая строка ковки",
-    "forgingGoalLabel": "Цель ковки: {title}",
-    "forgingStops": "Ковка мастерства останавливается на 10 уровне, пока цель усиления не достигнет 100.",
-    "enhancement": "Усиление",
-    "enhancementGoal": "Цель усиления: {title}",
-    "empowerment": "Наделение",
-    "empowermentGoal": "Цель наделения: {title}",
-    "from": "{value} до",
-    "result": {
-      "title": "Итог для {count, plural, one {{amount} предмета} few {{amount} предметов} many {{amount} предметов} other {{amount} предмета}}",
-      "power": "Мощь",
-      "powerLines": {
-        "gained": "Прирост мощи",
-        "before": "Мощь этих предметов до",
-        "after": "Мощь этих предметов после"
-      },
-      "columns": {
-        "piece": "Предмет",
-        "forgingStatsUp": "Рост от ковки",
-        "powerGained": "Прирост мощи"
-      },
-      "forgingStatsUp": "+{percent}% (шагов: {steps})",
-      "milestones": "Открытые рубежи",
-      "milestoneLine": "{label}: {stat}",
-      "events": {
-        "svs": "SvS",
-        "allianceShowdown": "Alliance Showdown",
-        "kingOfIcefield": "King of Icefield"
-      },
-      "note": "В плане снаряжения героев нет настроек скорости и бонусов. Калькулятор не возвращает время.",
-      "tableLabel": "Таблица итогов плана"
-    }
-  },
-  "export": {
-    "button": "Экспорт в главные события",
-    "nothing": "Для плана не нужны Essence Stones или Mithril, экспортировать нечего.",
-    "essenceStones": "Essence Stones",
-    "mithril": "Mithril"
-  }
 }

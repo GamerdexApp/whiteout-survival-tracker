@@ -1,52 +1,52 @@
 {
-  "line": "Питомцев: {pets}. Только справка, здесь ничего не сохраняется.",
-  "roster": {
-    "title": "Питомцы",
-    "count": "Питомцев: {shown} из {total}",
-    "search": "Поиск",
-    "searchPlaceholder": "Поиск среди питомцев: {count}",
-    "rarity": "Редкость",
-    "all": "Все",
-    "empty": "Подходящих питомцев нет.",
-    "summary": "Макс. уровень {level}, доводка до {percent}",
-    "percentValue": "{value}%"
-  },
-  "unlock": {
-    "withFurnace": "День {days}, Furnace {level}",
-    "withPet": "День {days}, {pet} {level}",
-    "daysOnly": "День {days}",
-    "label": "Открытие: {requirement}"
-  },
-  "detail": {
-    "maxLevel": "Макс. уровень",
-    "maxRefinement": "Макс. доводка",
-    "unlock": "Требование для открытия",
-    "cooldown": "Перезарядка навыка",
-    "duration": "Длительность навыка",
-    "tierCooldown": "{value}",
-    "maxPower": "Макс. мощь",
-    "levelPower": "Мощь уровня и продвижения на макс. уровне",
-    "refiningPower": "Мощь доводки на макс. доводке"
-  },
-  "skill": {
-    "title": "Навык",
-    "meta": "{count, plural, one {{amount} уровень} few {{amount} уровня} many {{amount} уровней} other {{amount} уровня}}",
-    "level": "Ур. {level}",
-    "percent": "{value}%"
-  },
-  "levels": {
-    "title": "Таблица уровней",
-    "level": "Уровень {level}",
-    "columns": {
-      "level": "Уровень",
-      "food": "Еда питомца",
-      "attack": "Атака войск",
-      "defense": "Защита войск",
-      "power": "Мощь войск",
-      "materials": "Материалы продвижения"
+    "line": "Питомцев: {pets}. Только справка, здесь ничего не сохраняется.",
+    "roster": {
+        "title": "Питомцы",
+        "count": "Питомцев: {shown} из {total}",
+        "search": "Поиск",
+        "searchPlaceholder": "Поиск среди питомцев: {count}",
+        "rarity": "Редкость",
+        "all": "Все",
+        "empty": "Подходящих питомцев нет.",
+        "summary": "Макс. уровень {level}, доводка до {percent}",
+        "percentValue": "{value}%"
     },
-    "refined": "{value} (с доводкой {refined})",
-    "none": "Нет"
-  },
-  "recordLine": "Питомец ({rarity}), макс. уровень {level}. Только справка, здесь ничего не сохраняется."
+    "unlock": {
+        "withFurnace": "День {days}, Furnace {level}",
+        "withPet": "День {days}, {pet} {level}",
+        "daysOnly": "День {days}",
+        "label": "Открытие: {requirement}"
+    },
+    "detail": {
+        "maxLevel": "Макс. уровень",
+        "maxRefinement": "Макс. доводка",
+        "unlock": "Требование для открытия",
+        "cooldown": "Перезарядка навыка",
+        "duration": "Длительность навыка",
+        "tierCooldown": "{value}",
+        "maxPower": "Макс. мощь",
+        "levelPower": "Мощь уровня и продвижения на макс. уровне",
+        "refiningPower": "Мощь доводки на макс. доводке"
+    },
+    "skill": {
+        "title": "Навык",
+        "meta": "{count, plural, one {{amount} уровень} few {{amount} уровня} many {{amount} уровней} other {{amount} уровня}}",
+        "level": "Ур. {level}",
+        "percent": "{value}%"
+    },
+    "levels": {
+        "title": "Таблица уровней",
+        "level": "Уровень {level}",
+        "columns": {
+            "level": "Уровень",
+            "food": "Еда питомца",
+            "attack": "Атака войск",
+            "defense": "Защита войск",
+            "power": "Мощь войск",
+            "materials": "Материалы продвижения"
+        },
+        "refined": "{value} (с доводкой {refined})",
+        "none": "Нет"
+    },
+    "recordLine": "Питомец ({rarity}), макс. уровень {level}. Только справка, здесь ничего не сохраняется."
 }

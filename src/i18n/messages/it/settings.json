@@ -1,216 +1,216 @@
 {
-  "chiefCount": "{count, plural, one {{amount} capo} other {{amount} capi}}",
-  "localStorageNote": {
-    "title": "Memoria locale.",
-    "body": "I tuoi capi sono salvati solo in questo browser. Si perdono se la cache del browser viene cancellata. Esporta un backup con regolarità."
-  },
-  "page": {
-    "title": "Impostazioni",
-    "subline": "Gestisci dati, impostazioni dei capi e aspetto",
-    "tabsLabel": "Impostazioni",
-    "tabs": {
-      "preferences": "Preferenze",
-      "data": "Backup e dati",
-      "about": "Informazioni"
+    "chiefCount": "{count, plural, one {{amount} capo} other {{amount} capi}}",
+    "localStorageNote": {
+        "title": "Memoria locale.",
+        "body": "I tuoi capi sono salvati solo in questo browser. Si perdono se la cache del browser viene cancellata. Esporta un backup con regolarità."
+    },
+    "page": {
+        "title": "Impostazioni",
+        "subline": "Gestisci dati, impostazioni dei capi e aspetto",
+        "tabsLabel": "Impostazioni",
+        "tabs": {
+            "preferences": "Preferenze",
+            "data": "Backup e dati",
+            "about": "Informazioni"
+        }
+    },
+    "about": {
+        "version": "Versione {version}",
+        "summary": "Tieni traccia dei progressi in Whiteout Survival: edifici, eroi, equipaggiamento del capo, esperti, animali, truppe, ricerca, tecnologia dell'alleanza, risorse e il tuo pianificatore. Tutto è salvato in questo browser.",
+        "wiki": "Wiki di Whiteout Survival",
+        "disclaimer": "Non affiliato né approvato da Century Games. Whiteout Survival è un marchio di Century Games."
+    },
+    "preferences": {
+        "chiefSettings": {
+            "title": "Impostazioni dei capi",
+            "description": "Valgono per ogni capo. Salvate subito.",
+            "footnote": "Cambiare un'opzione dentro un calcolatore non cambia questi valori predefiniti. La visualizzazione della Furnace cambia solo come si scrive un livello, mai il livello stesso. Aggiungere o eliminare un capo non azzera mai queste impostazioni.",
+            "groups": {
+                "furnaceDisplay": "Visualizzazione Furnace",
+                "lists": "Elenchi",
+                "calculatorOptions": "Opzioni predefinite dei calcolatori"
+            },
+            "fullLevelLabels": {
+                "label": "Mostra le etichette complete dei livelli",
+                "description": "Mostra il sottolivello della Furnace, per esempio FC 5-2 invece di FC 5, nella barra laterale, nella Panoramica e in Edifici. Gli altri edifici mostrano già l'etichetta completa."
+            },
+            "hideMaxed": {
+                "label": "Nascondi elementi al massimo",
+                "description": "Nasconde edifici, eroi, animali ed esperti che sono al livello massimo. Ogni elenco ha un filtro Mostra al massimo, quindi non si perde nulla."
+            },
+            "useBonuses": {
+                "label": "Applica i totali dei miei Bonus",
+                "description": "I nuovi calcolatori partono con la percentuale di velocità di costruzione dalla pagina Bonus. Un calcolatore può comunque cambiarla per un singolo calcolo."
+            },
+            "showSpeedups": {
+                "label": "Mostra i minuti di accelerazione",
+                "description": "Mostra i minuti di accelerazione necessari sotto il tempo nel risultato di ogni calcolatore."
+            },
+            "showEventPoints": {
+                "label": "Mostra i punti evento",
+                "description": "Aggiunge la riga dei punti evento ai risultati dei calcolatori che la forniscono."
+            }
+        },
+        "appearance": {
+            "title": "Aspetto",
+            "description": "Scegli come appare l'app. Salvato con i tuoi dati.",
+            "themeLabel": "Tema",
+            "themeNote": "Sistema segue il tuo dispositivo e ora è {current}. Questa scelta fa parte del tuo backup."
+        },
+        "themes": {
+            "light": "Chiaro",
+            "dark": "Scuro",
+            "system": "Sistema"
+        }
+    },
+    "data": {
+        "backupDownloaded": "Backup scaricato",
+        "merged": "Backup unito",
+        "replaced": "Backup sostituito",
+        "undo": "Annulla",
+        "resetDone": "Tutti i dati azzerati",
+        "resetDoneMessage": "{chiefs} rimossi e impostazioni cancellate.",
+        "management": {
+            "title": "Gestione dei dati",
+            "description": "Un unico file di backup contiene tutti i capi e le tue impostazioni."
+        },
+        "export": {
+            "title": "Esporta dati",
+            "description": "Scarica un file di backup di tutti i tuoi capi salvati. Nome del file: <file>{fileName}</file>. La data è il tuo giorno locale.",
+            "button": "Esporta tutti i capi"
+        },
+        "import": {
+            "title": "Importa dati",
+            "description": "Carica un file esportato in precedenza (.json). Viene prima controllato, poi scegli Unisci o Sostituisci e vedi cosa cambia. Nulla cambia finché non confermi.",
+            "chooseFile": "Scegli file",
+            "noFile": "Nessun file scelto",
+            "review": "Controlla importazione"
+        },
+        "reset": {
+            "title": "Azzera tutti i dati",
+            "warningTitle": "Attenzione:",
+            "warning": "Elimina tutti i capi e azzera le impostazioni dei capi e il tema. Puoi annullare per 10 secondi, quindi esporta prima un backup se vuoi tenerne una copia.",
+            "button": "Azzera tutti i dati"
+        },
+        "chiefs": {
+            "title": "Capi",
+            "description": "Crea, rinomina, modifica ed elimina i capi nella loro pagina. Esporta, importa e azzera valgono per tutti.",
+            "manage": "Gestisci i capi"
+        }
+    },
+    "importDialog": {
+        "title": "Importa backup",
+        "cancel": "Annulla",
+        "close": "Chiudi",
+        "merge": "Unisci",
+        "replace": "Sostituisci",
+        "failedTitle": "Importazione non riuscita.",
+        "checksTitle": "Controlli sul file.",
+        "checks": "L'elenco dei capi è stato trovato e {count, plural, one {{amount} voce è stata letta} other {{amount} voci sono state lette}}. Nulla è stato ancora salvato, quindi i tuoi capi attuali non sono toccati.",
+        "howToApply": "Come vuoi applicare il file?",
+        "modeLabel": "Modalità di importazione",
+        "modes": {
+            "merge": "Unisci (consigliato)",
+            "replace": "Sostituisci tutto su questo dispositivo"
+        },
+        "modeNotes": {
+            "merge": "Aggiunge i capi nuovi e tiene la copia più recente di un capo presente in entrambi. I capi solo su questo dispositivo restano. Le tue impostazioni restano.",
+            "replace": "Rimuove ogni capo su questo dispositivo e carica il file così com'è, impostazioni incluse. Usalo per ripristinare una copia esatta."
+        },
+        "whatChanges": "Cosa cambia",
+        "columns": {
+            "chief": "Capo",
+            "inFile": "Nel file",
+            "onDevice": "Su questo dispositivo",
+            "result": "Risultato"
+        },
+        "results": {
+            "added": "Aggiunto",
+            "updated": "Aggiornato dal file",
+            "kept": "Tenuta la copia di questo dispositivo",
+            "replaced": "Caricato dal file",
+            "removed": "Rimosso"
+        },
+        "notThere": "Assente",
+        "noChiefs": "Nessun capo nel file.",
+        "undoNote": "Puoi annullare per 10 secondi dopo l'importazione.",
+        "bytes": "{amount} B",
+        "kilobytes": "{amount} KB",
+        "fileInfo": "{name} · {size}"
+    },
+    "resetDialog": {
+        "title": "Azzera tutti i dati",
+        "cancel": "Annulla",
+        "confirm": "Sì, azzera tutti i dati",
+        "question": "Eliminare {chiefs} da questo browser?",
+        "removedTitle": "Cosa viene rimosso",
+        "settingsNote": "La tua scelta tra Chiaro, Scuro o Sistema torna a Sistema. Le impostazioni dei capi tornano ai valori predefiniti. Il capo attivo viene deselezionato.",
+        "undoNote": "Puoi annullare per 10 secondi dopo l'azzeramento. Esporta prima un backup se vuoi una copia su file che resti.",
+        "exportFirst": "Esporta prima un backup"
+    },
+    "backup": {
+        "notJson": "Il file non è un JSON valido. Nulla è stato cambiato.",
+        "noChiefsList": "Manca l'elenco dei capi. Nulla è stato cambiato.",
+        "duplicateId": "Due capi hanno lo stesso id. Nulla è stato cambiato.",
+        "withNothingChanged": "{reason} Nulla è stato cambiato.",
+        "chief": {
+            "notObject": "Il capo {position} non è un oggetto.",
+            "noId": "Il capo {position} non ha un id.",
+            "noName": "Il capo {position} non ha un nome.",
+            "noDates": "Al capo {position} mancano le date.",
+            "badStateNumber": "Il capo {position} ha un numero di stato che non è un intero.",
+            "badCoreEvent": "Il capo {position} ha un evento principale sconosciuto.",
+            "badUnlock": "Il capo {position} ha un'impostazione di sblocco che non è un giorno del server di un'area nota.",
+            "badPack": "Il capo {position} ha un'impostazione di pacchetto che non è attivo o disattivo."
+        },
+        "settings": {
+            "notObject": "Le impostazioni non sono un oggetto.",
+            "badTheme": "Il tema non è Chiaro, Scuro o Sistema.",
+            "notText": "L'impostazione {key} non è un testo.",
+            "uiNotObject": "Le impostazioni dell'interfaccia non sono un oggetto.",
+            "badTimeZone": "Il fuso orario non è tra quelli noti al browser."
+        },
+        "summary": {
+            "added": "{amount} aggiunti",
+            "updated": "{amount} aggiornati dal file",
+            "kept": "{amount} tenuti come su questo dispositivo",
+            "replaced": "{amount} caricati dal file",
+            "removed": "{amount} rimossi"
+        }
+    },
+    "region": {
+        "title": "Lingua e regione",
+        "description": "Scegli la lingua e come si scrivono numeri e date. Salvato con i tuoi dati.",
+        "language": {
+            "label": "Lingua",
+            "hint": "I nomi di eroi, oggetti, edifici e ricerche vengono dai dati di gioco e per ora restano in inglese."
+        },
+        "numberFormat": {
+            "label": "Formato dei numeri",
+            "hint": "Esempio: {example}",
+            "options": {
+                "auto": "Automatico, segue la lingua",
+                "us": "1,234.56 (Stati Uniti)",
+                "european": "1.234,56 (Germania)",
+                "french": "1 234,56 (Francia)",
+                "swiss": "1’234.56 (Svizzera)",
+                "indian": "12,34,567.89 (India)"
+            }
+        },
+        "dateFormat": {
+            "label": "Formato della data",
+            "hint": "Esempio: {example}",
+            "options": {
+                "auto": "Automatico, segue la lingua",
+                "mdy": "Mese/Giorno/Anno",
+                "dmy": "Giorno/Mese/Anno",
+                "ymd": "Anno-Mese-Giorno"
+            }
+        },
+        "timeZone": {
+            "label": "Fuso orario",
+            "hint": "Usato per date e orari e per Il mio orario in Eventi. Esempio: 14:05 UTC appare come {example}.",
+            "auto": "Automatico, segue il tuo dispositivo ({zone})"
+        }
     }
-  },
-  "about": {
-    "version": "Versione {version}",
-    "summary": "Tieni traccia dei progressi in Whiteout Survival: edifici, eroi, equipaggiamento del capo, esperti, animali, truppe, ricerca, tecnologia dell'alleanza, risorse e il tuo pianificatore. Tutto è salvato in questo browser.",
-    "wiki": "Wiki di Whiteout Survival",
-    "disclaimer": "Non affiliato né approvato da Century Games. Whiteout Survival è un marchio di Century Games."
-  },
-  "preferences": {
-    "chiefSettings": {
-      "title": "Impostazioni dei capi",
-      "description": "Valgono per ogni capo. Salvate subito.",
-      "footnote": "Cambiare un'opzione dentro un calcolatore non cambia questi valori predefiniti. La visualizzazione della Furnace cambia solo come si scrive un livello, mai il livello stesso. Aggiungere o eliminare un capo non azzera mai queste impostazioni.",
-      "groups": {
-        "furnaceDisplay": "Visualizzazione Furnace",
-        "lists": "Elenchi",
-        "calculatorOptions": "Opzioni predefinite dei calcolatori"
-      },
-      "fullLevelLabels": {
-        "label": "Mostra le etichette complete dei livelli",
-        "description": "Mostra il sottolivello della Furnace, per esempio FC 5-2 invece di FC 5, nella barra laterale, nella Panoramica e in Edifici. Gli altri edifici mostrano già l'etichetta completa."
-      },
-      "hideMaxed": {
-        "label": "Nascondi elementi al massimo",
-        "description": "Nasconde edifici, eroi, animali ed esperti che sono al livello massimo. Ogni elenco ha un filtro Mostra al massimo, quindi non si perde nulla."
-      },
-      "useBonuses": {
-        "label": "Applica i totali dei miei Bonus",
-        "description": "I nuovi calcolatori partono con la percentuale di velocità di costruzione dalla pagina Bonus. Un calcolatore può comunque cambiarla per un singolo calcolo."
-      },
-      "showSpeedups": {
-        "label": "Mostra i minuti di accelerazione",
-        "description": "Mostra i minuti di accelerazione necessari sotto il tempo nel risultato di ogni calcolatore."
-      },
-      "showEventPoints": {
-        "label": "Mostra i punti evento",
-        "description": "Aggiunge la riga dei punti evento ai risultati dei calcolatori che la forniscono."
-      }
-    },
-    "appearance": {
-      "title": "Aspetto",
-      "description": "Scegli come appare l'app. Salvato con i tuoi dati.",
-      "themeLabel": "Tema",
-      "themeNote": "Sistema segue il tuo dispositivo e ora è {current}. Questa scelta fa parte del tuo backup."
-    },
-    "themes": {
-      "light": "Chiaro",
-      "dark": "Scuro",
-      "system": "Sistema"
-    }
-  },
-  "data": {
-    "backupDownloaded": "Backup scaricato",
-    "merged": "Backup unito",
-    "replaced": "Backup sostituito",
-    "undo": "Annulla",
-    "resetDone": "Tutti i dati azzerati",
-    "resetDoneMessage": "{chiefs} rimossi e impostazioni cancellate.",
-    "management": {
-      "title": "Gestione dei dati",
-      "description": "Un unico file di backup contiene tutti i capi e le tue impostazioni."
-    },
-    "export": {
-      "title": "Esporta dati",
-      "description": "Scarica un file di backup di tutti i tuoi capi salvati. Nome del file: <file>{fileName}</file>. La data è il tuo giorno locale.",
-      "button": "Esporta tutti i capi"
-    },
-    "import": {
-      "title": "Importa dati",
-      "description": "Carica un file esportato in precedenza (.json). Viene prima controllato, poi scegli Unisci o Sostituisci e vedi cosa cambia. Nulla cambia finché non confermi.",
-      "chooseFile": "Scegli file",
-      "noFile": "Nessun file scelto",
-      "review": "Controlla importazione"
-    },
-    "reset": {
-      "title": "Azzera tutti i dati",
-      "warningTitle": "Attenzione:",
-      "warning": "Elimina tutti i capi e azzera le impostazioni dei capi e il tema. Puoi annullare per 10 secondi, quindi esporta prima un backup se vuoi tenerne una copia.",
-      "button": "Azzera tutti i dati"
-    },
-    "chiefs": {
-      "title": "Capi",
-      "description": "Crea, rinomina, modifica ed elimina i capi nella loro pagina. Esporta, importa e azzera valgono per tutti.",
-      "manage": "Gestisci i capi"
-    }
-  },
-  "importDialog": {
-    "title": "Importa backup",
-    "cancel": "Annulla",
-    "close": "Chiudi",
-    "merge": "Unisci",
-    "replace": "Sostituisci",
-    "failedTitle": "Importazione non riuscita.",
-    "checksTitle": "Controlli sul file.",
-    "checks": "L'elenco dei capi è stato trovato e {count, plural, one {{amount} voce è stata letta} other {{amount} voci sono state lette}}. Nulla è stato ancora salvato, quindi i tuoi capi attuali non sono toccati.",
-    "howToApply": "Come vuoi applicare il file?",
-    "modeLabel": "Modalità di importazione",
-    "modes": {
-      "merge": "Unisci (consigliato)",
-      "replace": "Sostituisci tutto su questo dispositivo"
-    },
-    "modeNotes": {
-      "merge": "Aggiunge i capi nuovi e tiene la copia più recente di un capo presente in entrambi. I capi solo su questo dispositivo restano. Le tue impostazioni restano.",
-      "replace": "Rimuove ogni capo su questo dispositivo e carica il file così com'è, impostazioni incluse. Usalo per ripristinare una copia esatta."
-    },
-    "whatChanges": "Cosa cambia",
-    "columns": {
-      "chief": "Capo",
-      "inFile": "Nel file",
-      "onDevice": "Su questo dispositivo",
-      "result": "Risultato"
-    },
-    "results": {
-      "added": "Aggiunto",
-      "updated": "Aggiornato dal file",
-      "kept": "Tenuta la copia di questo dispositivo",
-      "replaced": "Caricato dal file",
-      "removed": "Rimosso"
-    },
-    "notThere": "Assente",
-    "noChiefs": "Nessun capo nel file.",
-    "undoNote": "Puoi annullare per 10 secondi dopo l'importazione.",
-    "bytes": "{amount} B",
-    "kilobytes": "{amount} KB",
-    "fileInfo": "{name} · {size}"
-  },
-  "resetDialog": {
-    "title": "Azzera tutti i dati",
-    "cancel": "Annulla",
-    "confirm": "Sì, azzera tutti i dati",
-    "question": "Eliminare {chiefs} da questo browser?",
-    "removedTitle": "Cosa viene rimosso",
-    "settingsNote": "La tua scelta tra Chiaro, Scuro o Sistema torna a Sistema. Le impostazioni dei capi tornano ai valori predefiniti. Il capo attivo viene deselezionato.",
-    "undoNote": "Puoi annullare per 10 secondi dopo l'azzeramento. Esporta prima un backup se vuoi una copia su file che resti.",
-    "exportFirst": "Esporta prima un backup"
-  },
-  "backup": {
-    "notJson": "Il file non è un JSON valido. Nulla è stato cambiato.",
-    "noChiefsList": "Manca l'elenco dei capi. Nulla è stato cambiato.",
-    "duplicateId": "Due capi hanno lo stesso id. Nulla è stato cambiato.",
-    "withNothingChanged": "{reason} Nulla è stato cambiato.",
-    "chief": {
-      "notObject": "Il capo {position} non è un oggetto.",
-      "noId": "Il capo {position} non ha un id.",
-      "noName": "Il capo {position} non ha un nome.",
-      "noDates": "Al capo {position} mancano le date.",
-      "badStateNumber": "Il capo {position} ha un numero di stato che non è un intero.",
-      "badCoreEvent": "Il capo {position} ha un evento principale sconosciuto.",
-      "badUnlock": "Il capo {position} ha un'impostazione di sblocco che non è un giorno del server di un'area nota.",
-      "badPack": "Il capo {position} ha un'impostazione di pacchetto che non è attivo o disattivo."
-    },
-    "settings": {
-      "notObject": "Le impostazioni non sono un oggetto.",
-      "badTheme": "Il tema non è Chiaro, Scuro o Sistema.",
-      "notText": "L'impostazione {key} non è un testo.",
-      "uiNotObject": "Le impostazioni dell'interfaccia non sono un oggetto.",
-      "badTimeZone": "Il fuso orario non è tra quelli noti al browser."
-    },
-    "summary": {
-      "added": "{amount} aggiunti",
-      "updated": "{amount} aggiornati dal file",
-      "kept": "{amount} tenuti come su questo dispositivo",
-      "replaced": "{amount} caricati dal file",
-      "removed": "{amount} rimossi"
-    }
-  },
-  "region": {
-    "title": "Lingua e regione",
-    "description": "Scegli la lingua e come si scrivono numeri e date. Salvato con i tuoi dati.",
-    "language": {
-      "label": "Lingua",
-      "hint": "I nomi di eroi, oggetti, edifici e ricerche vengono dai dati di gioco e per ora restano in inglese."
-    },
-    "numberFormat": {
-      "label": "Formato dei numeri",
-      "hint": "Esempio: {example}",
-      "options": {
-        "auto": "Automatico, segue la lingua",
-        "us": "1,234.56 (Stati Uniti)",
-        "european": "1.234,56 (Germania)",
-        "french": "1 234,56 (Francia)",
-        "swiss": "1’234.56 (Svizzera)",
-        "indian": "12,34,567.89 (India)"
-      }
-    },
-    "dateFormat": {
-      "label": "Formato della data",
-      "hint": "Esempio: {example}",
-      "options": {
-        "auto": "Automatico, segue la lingua",
-        "mdy": "Mese/Giorno/Anno",
-        "dmy": "Giorno/Mese/Anno",
-        "ymd": "Anno-Mese-Giorno"
-      }
-    },
-    "timeZone": {
-      "label": "Fuso orario",
-      "hint": "Usato per date e orari e per Il mio orario in Eventi. Esempio: 14:05 UTC appare come {example}.",
-      "auto": "Automatico, segue il tuo dispositivo ({zone})"
-    }
-  }
 }

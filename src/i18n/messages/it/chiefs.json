@@ -1,117 +1,117 @@
 {
-  "unknown": "Sconosciuto",
-  "describe": {
-    "state": "Stato {number}",
-    "empty": "Ancora nessun dettaglio"
-  },
-  "coreEvents": {
-    "svs": "SvS",
-    "showdown": "Alliance Showdown",
-    "king": "King of Icefield",
-    "hall": "Hall of Chief"
-  },
-  "count": "{count, plural, one {{amount} capo} other {{amount} capi}}",
-  "card": {
-    "active": "Attivo",
-    "noNotes": "Nessuna nota",
-    "furnace": "Furnace",
-    "state": "Stato",
-    "created": "Creato: {date}",
-    "lastModified": "Ultima modifica: {date}",
-    "setActive": "Imposta come attivo",
-    "edit": "Modifica",
-    "delete": "Elimina"
-  },
-  "dialog": {
-    "editTitle": "Modifica capo",
-    "newTitle": "Nuovo capo",
-    "newDescription": "Dagli un nome. Il resto è facoltativo.",
-    "cancel": "Annulla",
-    "save": "Salva modifiche",
-    "create": "Crea capo",
-    "errors": {
-      "name": "Inserisci un nome per questo capo.",
-      "stateNumber": "Inserisci un numero intero da 1 a {max}.",
-      "serverStartDate": "Inserisci una data non futura."
+    "unknown": "Sconosciuto",
+    "describe": {
+        "state": "Stato {number}",
+        "empty": "Ancora nessun dettaglio"
     },
-    "name": "Nome",
-    "stateNumber": {
-      "label": "Numero dello stato",
-      "hint": "Lo stato in cui vive il tuo capo. Numero intero."
+    "coreEvents": {
+        "svs": "SvS",
+        "showdown": "Alliance Showdown",
+        "king": "King of Icefield",
+        "hall": "Hall of Chief"
     },
-    "serverStartDate": {
-      "label": "Data di avvio del server",
-      "info": {
-        "label": "Dove trovare la data di avvio del server",
-        "screen": "Apri il gioco e vai alla schermata Server dal tuo profilo.",
-        "date": "Leggi la data in cui il server è stato aperto. Se mostra solo il numero del giorno del server, conta quei giorni a ritroso da oggi.",
-        "missing": "Nessuna data a schermo? Chiedi al leader della tua alleanza o controlla la chat dello stato.",
-        "tolerance": "Basta una data entro 21 giorni in più o in meno. Gli sblocchi della ricerca usano 150 e 600 giorni, quindi tre settimane di errore raramente cambiano il risultato."
-      }
+    "count": "{count, plural, one {{amount} capo} other {{amount} capi}}",
+    "card": {
+        "active": "Attivo",
+        "noNotes": "Nessuna nota",
+        "furnace": "Furnace",
+        "state": "Stato",
+        "created": "Creato: {date}",
+        "lastModified": "Ultima modifica: {date}",
+        "setActive": "Imposta come attivo",
+        "edit": "Modifica",
+        "delete": "Elimina"
     },
-    "generation": {
-      "label": "Eroi sbloccati fino a",
-      "hint": "Gli eroi delle generazioni successive restano nascosti nella pagina Eroi e in Piano.",
-      "preLegendary": "Generazione 0 (pre-Leggendari)",
-      "numbered": "Generazione {generation}"
+    "dialog": {
+        "editTitle": "Modifica capo",
+        "newTitle": "Nuovo capo",
+        "newDescription": "Dagli un nome. Il resto è facoltativo.",
+        "cancel": "Annulla",
+        "save": "Salva modifiche",
+        "create": "Crea capo",
+        "errors": {
+            "name": "Inserisci un nome per questo capo.",
+            "stateNumber": "Inserisci un numero intero da 1 a {max}.",
+            "serverStartDate": "Inserisci una data non futura."
+        },
+        "name": "Nome",
+        "stateNumber": {
+            "label": "Numero dello stato",
+            "hint": "Lo stato in cui vive il tuo capo. Numero intero."
+        },
+        "serverStartDate": {
+            "label": "Data di avvio del server",
+            "info": {
+                "label": "Dove trovare la data di avvio del server",
+                "screen": "Apri il gioco e vai alla schermata Server dal tuo profilo.",
+                "date": "Leggi la data in cui il server è stato aperto. Se mostra solo il numero del giorno del server, conta quei giorni a ritroso da oggi.",
+                "missing": "Nessuna data a schermo? Chiedi al leader della tua alleanza o controlla la chat dello stato.",
+                "tolerance": "Basta una data entro 21 giorni in più o in meno. Gli sblocchi della ricerca usano 150 e 600 giorni, quindi tre settimane di errore raramente cambiano il risultato."
+            }
+        },
+        "generation": {
+            "label": "Eroi sbloccati fino a",
+            "hint": "Gli eroi delle generazioni successive restano nascosti nella pagina Eroi e in Piano.",
+            "preLegendary": "Generazione 0 (pre-Leggendari)",
+            "numbered": "Generazione {generation}"
+        },
+        "events": {
+            "legend": "Eventi principali mostrati",
+            "shownOf": "{shown} su {total}",
+            "hint": "Gli eventi nascosti escono dalle schede Eventi principali e dal loro Registro eventi. Puoi riattivarli quando vuoi."
+        },
+        "notes": "Note",
+        "packs": {
+            "legend": "Pacchetti",
+            "constructionLabel": "Pacchetto costruzione",
+            "constructionHint": "Apre il secondo costruttore nella pagina Edifici.",
+            "constructionBusy": "Il secondo costruttore sta eseguendo un potenziamento. Completalo o annullalo prima di disattivare questa opzione.",
+            "marchLabel": "Pacchetto Coda marcia",
+            "marchHint": "Aggiunge una coda di marcia. Conta nella pagina Bonus."
+        }
     },
-    "events": {
-      "legend": "Eventi principali mostrati",
-      "shownOf": "{shown} su {total}",
-      "hint": "Gli eventi nascosti escono dalle schede Eventi principali e dal loro Registro eventi. Puoi riattivarli quando vuoi."
+    "delete": {
+        "title": "Elimina capo",
+        "cancel": "Annulla",
+        "confirmButton": "Elimina capo",
+        "confirm": "Vuoi davvero eliminare “<strong>{name}</strong>”?",
+        "summary": "{details} · creato {date}",
+        "note": "Rimuove il capo e tutti i suoi livelli, obiettivi e note da questo dispositivo. Non c'è modo di recuperarlo dopo la fine dei 10 secondi di Annulla.",
+        "exportBackup": "Esporta prima un backup"
     },
-    "notes": "Note",
-    "packs": {
-      "legend": "Pacchetti",
-      "constructionLabel": "Pacchetto costruzione",
-      "constructionHint": "Apre il secondo costruttore nella pagina Edifici.",
-      "constructionBusy": "Il secondo costruttore sta eseguendo un potenziamento. Completalo o annullalo prima di disattivare questa opzione.",
-      "marchLabel": "Pacchetto Coda marcia",
-      "marchHint": "Aggiunge una coda di marcia. Conta nella pagina Bonus."
+    "page": {
+        "title": "Capi",
+        "newChief": "Nuovo capo",
+        "sort": {
+            "label": "Ordina per",
+            "options": {
+                "lastModified": "Ultima modifica",
+                "createdAt": "Data di creazione",
+                "name": "Nome"
+            }
+        },
+        "subline": {
+            "none": "Ancora nessun capo.",
+            "total": "{chiefs}.",
+            "withActive": "{chiefs}. {name} è attivo."
+        },
+        "toasts": {
+            "backupTitle": "Backup scaricato",
+            "deleted": "{name} eliminato",
+            "undo": "Annulla"
+        },
+        "loading": "Lettura dei dati salvati da questo browser. L'elenco compare quando è pronto.",
+        "empty": {
+            "title": "Ancora nessun capo",
+            "description": "Crea un capo per tracciare edifici, eroi, equipaggiamento, ricerca e il tuo piano di potenziamenti. Tutto resta in questo browser.",
+            "restore": "Ripristina un backup in Impostazioni"
+        },
+        "search": {
+            "label": "Cerca per nome",
+            "showing": "Mostrati {shown} su {total}",
+            "noMatchTitle": "Nessun capo corrisponde a “{search}”",
+            "noMatchDescription": "Controlla l'ortografia o cancella la ricerca per vedere tutti i {count} capi.",
+            "clear": "Cancella ricerca"
+        }
     }
-  },
-  "delete": {
-    "title": "Elimina capo",
-    "cancel": "Annulla",
-    "confirmButton": "Elimina capo",
-    "confirm": "Vuoi davvero eliminare “<strong>{name}</strong>”?",
-    "summary": "{details} · creato {date}",
-    "note": "Rimuove il capo e tutti i suoi livelli, obiettivi e note da questo dispositivo. Non c'è modo di recuperarlo dopo la fine dei 10 secondi di Annulla.",
-    "exportBackup": "Esporta prima un backup"
-  },
-  "page": {
-    "title": "Capi",
-    "newChief": "Nuovo capo",
-    "sort": {
-      "label": "Ordina per",
-      "options": {
-        "lastModified": "Ultima modifica",
-        "createdAt": "Data di creazione",
-        "name": "Nome"
-      }
-    },
-    "subline": {
-      "none": "Ancora nessun capo.",
-      "total": "{chiefs}.",
-      "withActive": "{chiefs}. {name} è attivo."
-    },
-    "toasts": {
-      "backupTitle": "Backup scaricato",
-      "deleted": "{name} eliminato",
-      "undo": "Annulla"
-    },
-    "loading": "Lettura dei dati salvati da questo browser. L'elenco compare quando è pronto.",
-    "empty": {
-      "title": "Ancora nessun capo",
-      "description": "Crea un capo per tracciare edifici, eroi, equipaggiamento, ricerca e il tuo piano di potenziamenti. Tutto resta in questo browser.",
-      "restore": "Ripristina un backup in Impostazioni"
-    },
-    "search": {
-      "label": "Cerca per nome",
-      "showing": "Mostrati {shown} su {total}",
-      "noMatchTitle": "Nessun capo corrisponde a “{search}”",
-      "noMatchDescription": "Controlla l'ortografia o cancella la ricerca per vedere tutti i {count} capi.",
-      "clear": "Cancella ricerca"
-    }
-  }
 }

@@ -1,215 +1,215 @@
 {
-  "defaultSetName": "Set {number}",
-  "troop": {
-    "infantry": "Fanteria",
-    "lancer": "Lanciere",
-    "marksman": "Tiratore"
-  },
-  "lock": {
-    "needsMythic": "Richiede equipaggiamento Mythic",
-    "needsBoth": "Richiede potenziamento 100 e forgiatura maestria livello 10",
-    "needsEnhancement": "Richiede potenziamento 100",
-    "needsForging": "Richiede forgiatura maestria livello 10"
-  },
-  "tab": {
-    "deletedTitle": "{name} eliminato",
-    "deletedMessage": "I quattro pezzi e i loro obiettivi sono stati rimossi.",
-    "undo": "Annulla",
-    "tiles": {
-      "sets": "Set di equipaggiamento",
-      "power": "Potenza equipaggiamento, tutti i set",
-      "ofPieces": "{count} su {total}",
-      "atEnhancementMax": "Pezzi a potenziamento 100",
-      "empowered": "Pezzi con empowerment",
-      "ready": "Pezzi pronti per l'empowerment"
+    "defaultSetName": "Set {number}",
+    "troop": {
+        "infantry": "Fanteria",
+        "lancer": "Lanciere",
+        "marksman": "Tiratore"
     },
-    "search": "Cerca set di equipaggiamento",
-    "filters": "Filtri",
-    "plan": "Piano",
-    "showing": "Mostrati {shown} set di equipaggiamento su {total}. Qui gli obiettivi sono in sola lettura e si impostano in Piano.",
-    "empty": {
-      "title": "Ancora nessun set di equipaggiamento",
-      "description": "Un set contiene un pezzo ciascuno di Goggles, Gloves, Belt e Boots. Aggiungi un set per tracciarne i livelli."
+    "lock": {
+        "needsMythic": "Richiede equipaggiamento Mythic",
+        "needsBoth": "Richiede potenziamento 100 e forgiatura maestria livello 10",
+        "needsEnhancement": "Richiede potenziamento 100",
+        "needsForging": "Richiede forgiatura maestria livello 10"
     },
-    "addSet": "Aggiungi set",
-    "unknownHero": "Eroe sconosciuto",
-    "power": "Potenza {amount}",
-    "enhancementLine": "Pot {line}",
-    "troopHint": "Il tipo di truppa sceglie la colonna delle statistiche qui sotto.",
-    "editSet": "Modifica set",
-    "deleteSet": "Elimina set"
-  },
-  "pieceCard": {
-    "name": "{set} {slot}",
-    "forgingRow": "{name} (+{percent}%)",
-    "none": "Nessuna",
-    "noGoal": "Nessun obiettivo",
-    "goal": "Obiettivo: {value}",
-    "quality": "Qualità dell'equipaggiamento",
-    "qualities": {
-      "mythic": "Mitico",
-      "epic": "Epico",
-      "rare": "Raro",
-      "uncommon": "Non comune",
-      "common": "Comune"
+    "tab": {
+        "deletedTitle": "{name} eliminato",
+        "deletedMessage": "I quattro pezzi e i loro obiettivi sono stati rimossi.",
+        "undo": "Annulla",
+        "tiles": {
+            "sets": "Set di equipaggiamento",
+            "power": "Potenza equipaggiamento, tutti i set",
+            "ofPieces": "{count} su {total}",
+            "atEnhancementMax": "Pezzi a potenziamento 100",
+            "empowered": "Pezzi con empowerment",
+            "ready": "Pezzi pronti per l'empowerment"
+        },
+        "search": "Cerca set di equipaggiamento",
+        "filters": "Filtri",
+        "plan": "Piano",
+        "showing": "Mostrati {shown} set di equipaggiamento su {total}. Qui gli obiettivi sono in sola lettura e si impostano in Piano.",
+        "empty": {
+            "title": "Ancora nessun set di equipaggiamento",
+            "description": "Un set contiene un pezzo ciascuno di Goggles, Gloves, Belt e Boots. Aggiungi un set per tracciarne i livelli."
+        },
+        "addSet": "Aggiungi set",
+        "unknownHero": "Eroe sconosciuto",
+        "power": "Potenza {amount}",
+        "enhancementLine": "Pot {line}",
+        "troopHint": "Il tipo di truppa sceglie la colonna delle statistiche qui sotto.",
+        "editSet": "Modifica set",
+        "deleteSet": "Elimina set"
     },
-    "forgingRowLabel": "Riga di forgiatura maestria",
-    "forgingStops": "La forgiatura maestria si ferma al livello 10 finché il potenziamento non è 100.",
-    "lowQualityNote": "Solo l'equipaggiamento Mitico può essere forgiato e potenziato con empowerment. La potenza segue le tabelle Mitico con la potenza base di questa qualità, che il gioco non ha confermato.",
-    "enhancement": "Potenziamento",
-    "enhancementLabel": "Potenziamento di {name}",
-    "enhancementSlider": "Cursore del potenziamento di {name}",
-    "empowerment": "Empowerment",
-    "empowermentLabel": "Empowerment di {name}",
-    "empowermentSlider": "Cursore dell'empowerment di {name}",
-    "outOf": "/ {max}",
-    "milestone": "Empowerment {level} raggiunto: {stat}",
-    "piecePower": "Potenza del pezzo",
-    "health": "Salute",
-    "percent": "{value}%"
-  },
-  "statLines": {
-    "title": "Righe di statistiche, 4 slot per 3 tipi di truppa",
-    "troopThisSet": "{troop} (questo set)",
-    "stat": "{name} {value}",
-    "health": "PS {value}",
-    "percentStat": "{name} {value}%",
-    "none": "Nessuna",
-    "note": "Valori ai livelli dei pezzi di {name}, inclusa la forgiatura maestria, arrotondati per difetto. Le statistiche vengono da WoS Tools, che si ferma a 192 dei 200 livelli. La colonna evidenziata è il tipo di truppa del set."
-  },
-  "filters": {
-    "title": "Filtri",
-    "description": "Scegli quali set di equipaggiamento mostra l'elenco",
-    "reset": "Azzera",
-    "show": "Mostra {amount} {count, plural, one {set} other {set}}",
-    "all": "Tutti",
-    "troopType": "Tipo di truppa",
-    "linkedHero": "Eroe collegato",
-    "heroOptions": {
-      "all": "Tutti",
-      "linked": "Collegati a un eroe",
-      "unlinked": "Non collegati"
+    "pieceCard": {
+        "name": "{set} {slot}",
+        "forgingRow": "{name} (+{percent}%)",
+        "none": "Nessuna",
+        "noGoal": "Nessun obiettivo",
+        "goal": "Obiettivo: {value}",
+        "quality": "Qualità dell'equipaggiamento",
+        "qualities": {
+            "mythic": "Mitico",
+            "epic": "Epico",
+            "rare": "Raro",
+            "uncommon": "Non comune",
+            "common": "Comune"
+        },
+        "forgingRowLabel": "Riga di forgiatura maestria",
+        "forgingStops": "La forgiatura maestria si ferma al livello 10 finché il potenziamento non è 100.",
+        "lowQualityNote": "Solo l'equipaggiamento Mitico può essere forgiato e potenziato con empowerment. La potenza segue le tabelle Mitico con la potenza base di questa qualità, che il gioco non ha confermato.",
+        "enhancement": "Potenziamento",
+        "enhancementLabel": "Potenziamento di {name}",
+        "enhancementSlider": "Cursore del potenziamento di {name}",
+        "empowerment": "Empowerment",
+        "empowermentLabel": "Empowerment di {name}",
+        "empowermentSlider": "Cursore dell'empowerment di {name}",
+        "outOf": "/ {max}",
+        "milestone": "Empowerment {level} raggiunto: {stat}",
+        "piecePower": "Potenza del pezzo",
+        "health": "Salute",
+        "percent": "{value}%"
     },
-    "order": "Ordine",
-    "orderOptions": {
-      "power": "Potenza totale, prima la più alta",
-      "created": "Ordine di aggiunta",
-      "name": "Nome, dalla A alla Z",
-      "hero": "Nome dell'eroe, dalla A alla Z"
+    "statLines": {
+        "title": "Righe di statistiche, 4 slot per 3 tipi di truppa",
+        "troopThisSet": "{troop} (questo set)",
+        "stat": "{name} {value}",
+        "health": "PS {value}",
+        "percentStat": "{name} {value}%",
+        "none": "Nessuna",
+        "note": "Valori ai livelli dei pezzi di {name}, inclusa la forgiatura maestria, arrotondati per difetto. Le statistiche vengono da WoS Tools, che si ferma a 192 dei 200 livelli. La colonna evidenziata è il tipo di truppa del set."
     },
-    "notSaved": "I filtri non vengono salvati."
-  },
-  "setDialogs": {
-    "cancel": "Annulla",
-    "setName": "Nome del set",
-    "nameRequired": "Inserisci un nome.",
-    "linkedHero": "Eroe collegato",
-    "add": {
-      "title": "Aggiungi set",
-      "linkedHeroHint": "Scegliendo un eroe, il tipo di truppa diventa quello della sua classe.",
-      "troopType": "Tipo di truppa",
-      "troopTypeHint": "Il tipo di truppa sceglie la colonna delle statistiche del set.",
-      "quality": "Qualità dell'equipaggiamento",
-      "qualityHint": "Solo l'equipaggiamento Mitico può essere forgiato e potenziato con empowerment.",
-      "qualityHintCopy": "Un set copiato mantiene la qualità di ogni pezzo.",
-      "qualities": {
-        "mythic": "Mitico",
-        "epic": "Epico",
-        "rare": "Raro",
-        "uncommon": "Non comune",
-        "common": "Comune"
-      },
-      "startFrom": "Parti da",
-      "startFromHint": "Gli obiettivi non vengono copiati. Gli obiettivi si impostano in Piano.",
-      "emptySet": "Set vuoto",
-      "copyFrom": "Copia i livelli da {name}",
-      "savesAtOnce": "Ogni modifica si salva subito e il nuovo set appare selezionato.",
-      "submit": "Aggiungi set"
+    "filters": {
+        "title": "Filtri",
+        "description": "Scegli quali set di equipaggiamento mostra l'elenco",
+        "reset": "Azzera",
+        "show": "Mostra {amount} {count, plural, one {set} other {set}}",
+        "all": "Tutti",
+        "troopType": "Tipo di truppa",
+        "linkedHero": "Eroe collegato",
+        "heroOptions": {
+            "all": "Tutti",
+            "linked": "Collegati a un eroe",
+            "unlinked": "Non collegati"
+        },
+        "order": "Ordine",
+        "orderOptions": {
+            "power": "Potenza totale, prima la più alta",
+            "created": "Ordine di aggiunta",
+            "name": "Nome, dalla A alla Z",
+            "hero": "Nome dell'eroe, dalla A alla Z"
+        },
+        "notSaved": "I filtri non vengono salvati."
     },
-    "delete": {
-      "title": "Eliminare {name}?",
-      "titleFallback": "Elimina set",
-      "confirm": "Elimina set",
-      "body": "I quattro pezzi di {name} e i loro obiettivi vengono rimossi da questo dispositivo.",
-      "undoNote": "Puoi annullare per 10 secondi dopo l'eliminazione.",
-      "exportBackup": "Esporta prima un backup"
+    "setDialogs": {
+        "cancel": "Annulla",
+        "setName": "Nome del set",
+        "nameRequired": "Inserisci un nome.",
+        "linkedHero": "Eroe collegato",
+        "add": {
+            "title": "Aggiungi set",
+            "linkedHeroHint": "Scegliendo un eroe, il tipo di truppa diventa quello della sua classe.",
+            "troopType": "Tipo di truppa",
+            "troopTypeHint": "Il tipo di truppa sceglie la colonna delle statistiche del set.",
+            "quality": "Qualità dell'equipaggiamento",
+            "qualityHint": "Solo l'equipaggiamento Mitico può essere forgiato e potenziato con empowerment.",
+            "qualityHintCopy": "Un set copiato mantiene la qualità di ogni pezzo.",
+            "qualities": {
+                "mythic": "Mitico",
+                "epic": "Epico",
+                "rare": "Raro",
+                "uncommon": "Non comune",
+                "common": "Comune"
+            },
+            "startFrom": "Parti da",
+            "startFromHint": "Gli obiettivi non vengono copiati. Gli obiettivi si impostano in Piano.",
+            "emptySet": "Set vuoto",
+            "copyFrom": "Copia i livelli da {name}",
+            "savesAtOnce": "Ogni modifica si salva subito e il nuovo set appare selezionato.",
+            "submit": "Aggiungi set"
+        },
+        "delete": {
+            "title": "Eliminare {name}?",
+            "titleFallback": "Elimina set",
+            "confirm": "Elimina set",
+            "body": "I quattro pezzi di {name} e i loro obiettivi vengono rimossi da questo dispositivo.",
+            "undoNote": "Puoi annullare per 10 secondi dopo l'eliminazione.",
+            "exportBackup": "Esporta prima un backup"
+        },
+        "edit": {
+            "title": "Modifica {name}",
+            "titleFallback": "Modifica set",
+            "submit": "Salva set"
+        },
+        "heroSelect": {
+            "none": "Nessun eroe",
+            "option": "{name} ({class}, Gen {generation})"
+        }
     },
-    "edit": {
-      "title": "Modifica {name}",
-      "titleFallback": "Modifica set",
-      "submit": "Salva set"
+    "plan": {
+        "title": "Pianifica Equip. degli eroi",
+        "description": "Forgiatura maestria, potenziamento ed empowerment di qualsiasi pezzo, di qualsiasi set",
+        "saved": "Piano salvato {time}",
+        "close": "Chiudi",
+        "save": "Salva piano",
+        "empty": "Ancora nessun pezzo nel piano. Aggiungi sopra un pezzo, poi alza i suoi obiettivi.",
+        "pieceTitle": "{set} · {slot}",
+        "milestone": "empowerment {level}, {event}, {stat}",
+        "addPiece": {
+            "title": "Aggiungi un pezzo",
+            "noSets": "Aggiungi prima un set nella scheda Equip. degli eroi.",
+            "set": "Set di equipaggiamento",
+            "setOption": "{name} ({troop})",
+            "piece": "Pezzo",
+            "submit": "Aggiungi pezzo",
+            "taken": "Questo pezzo è già nel piano."
+        },
+        "qualities": {
+            "mythic": "mitico",
+            "epic": "epico",
+            "rare": "raro",
+            "uncommon": "non comune",
+            "common": "comune"
+        },
+        "remove": "Rimuovi {title} dal piano",
+        "forgingRow": "{name} (+{percent}%)",
+        "none": "Nessuna",
+        "forgingCurrent": "Riga di forgiatura attuale",
+        "forgingGoal": "Riga di forgiatura obiettivo",
+        "forgingGoalLabel": "Obiettivo di forgiatura di {title}",
+        "forgingStops": "La forgiatura maestria si ferma al livello 10 finché l'obiettivo di potenziamento non è 100.",
+        "enhancement": "Potenziamento",
+        "enhancementGoal": "Obiettivo di potenziamento di {title}",
+        "empowerment": "Empowerment",
+        "empowermentGoal": "Obiettivo di empowerment di {title}",
+        "from": "{value} a",
+        "result": {
+            "title": "Risultato per {amount} {count, plural, one {pezzo} other {pezzi}}",
+            "power": "Potenza",
+            "powerLines": {
+                "gained": "Potenza guadagnata",
+                "before": "Potenza di questi pezzi prima",
+                "after": "Potenza di questi pezzi dopo"
+            },
+            "columns": {
+                "piece": "Pezzo",
+                "forgingStatsUp": "Statistiche di forgiatura in aumento",
+                "powerGained": "Potenza guadagnata"
+            },
+            "forgingStatsUp": "+{percent}% ({steps} passi)",
+            "milestones": "Traguardi sbloccati",
+            "milestoneLine": "{label}: {stat}",
+            "events": {
+                "svs": "SvS",
+                "allianceShowdown": "Alliance Showdown",
+                "kingOfIcefield": "King of Icefield"
+            },
+            "note": "Pianifica Equip. degli eroi non ha controlli di velocità o bonus. Il calcolatore non restituisce un tempo.",
+            "tableLabel": "Tabella del risultato del piano"
+        }
     },
-    "heroSelect": {
-      "none": "Nessun eroe",
-      "option": "{name} ({class}, Gen {generation})"
+    "export": {
+        "button": "Esporta negli Eventi principali",
+        "nothing": "Il piano non richiede Essence Stones o Mithril da esportare.",
+        "essenceStones": "Essence Stones",
+        "mithril": "Mithril"
     }
-  },
-  "plan": {
-    "title": "Pianifica Equip. degli eroi",
-    "description": "Forgiatura maestria, potenziamento ed empowerment di qualsiasi pezzo, di qualsiasi set",
-    "saved": "Piano salvato {time}",
-    "close": "Chiudi",
-    "save": "Salva piano",
-    "empty": "Ancora nessun pezzo nel piano. Aggiungi sopra un pezzo, poi alza i suoi obiettivi.",
-    "pieceTitle": "{set} · {slot}",
-    "milestone": "empowerment {level}, {event}, {stat}",
-    "addPiece": {
-      "title": "Aggiungi un pezzo",
-      "noSets": "Aggiungi prima un set nella scheda Equip. degli eroi.",
-      "set": "Set di equipaggiamento",
-      "setOption": "{name} ({troop})",
-      "piece": "Pezzo",
-      "submit": "Aggiungi pezzo",
-      "taken": "Questo pezzo è già nel piano."
-    },
-    "qualities": {
-      "mythic": "mitico",
-      "epic": "epico",
-      "rare": "raro",
-      "uncommon": "non comune",
-      "common": "comune"
-    },
-    "remove": "Rimuovi {title} dal piano",
-    "forgingRow": "{name} (+{percent}%)",
-    "none": "Nessuna",
-    "forgingCurrent": "Riga di forgiatura attuale",
-    "forgingGoal": "Riga di forgiatura obiettivo",
-    "forgingGoalLabel": "Obiettivo di forgiatura di {title}",
-    "forgingStops": "La forgiatura maestria si ferma al livello 10 finché l'obiettivo di potenziamento non è 100.",
-    "enhancement": "Potenziamento",
-    "enhancementGoal": "Obiettivo di potenziamento di {title}",
-    "empowerment": "Empowerment",
-    "empowermentGoal": "Obiettivo di empowerment di {title}",
-    "from": "{value} a",
-    "result": {
-      "title": "Risultato per {amount} {count, plural, one {pezzo} other {pezzi}}",
-      "power": "Potenza",
-      "powerLines": {
-        "gained": "Potenza guadagnata",
-        "before": "Potenza di questi pezzi prima",
-        "after": "Potenza di questi pezzi dopo"
-      },
-      "columns": {
-        "piece": "Pezzo",
-        "forgingStatsUp": "Statistiche di forgiatura in aumento",
-        "powerGained": "Potenza guadagnata"
-      },
-      "forgingStatsUp": "+{percent}% ({steps} passi)",
-      "milestones": "Traguardi sbloccati",
-      "milestoneLine": "{label}: {stat}",
-      "events": {
-        "svs": "SvS",
-        "allianceShowdown": "Alliance Showdown",
-        "kingOfIcefield": "King of Icefield"
-      },
-      "note": "Pianifica Equip. degli eroi non ha controlli di velocità o bonus. Il calcolatore non restituisce un tempo.",
-      "tableLabel": "Tabella del risultato del piano"
-    }
-  },
-  "export": {
-    "button": "Esporta negli Eventi principali",
-    "nothing": "Il piano non richiede Essence Stones o Mithril da esportare.",
-    "essenceStones": "Essence Stones",
-    "mithril": "Mithril"
-  }
 }

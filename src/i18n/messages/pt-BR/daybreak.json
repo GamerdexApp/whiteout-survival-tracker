@@ -1,114 +1,114 @@
 {
-  "page": {
-    "title": "Daybreak Island"
-  },
-  "view": {
-    "subline": "Lumber Camp, Tree of Life e suas decorações."
-  },
-  "locked": {
-    "title": "Requer Furnace {level}",
-    "description": "A Daybreak Island desbloqueia na Furnace {level}. Sua Furnace é {current}, então {missing} para chegar. A página fica visível para você ver o que vem por aí. A edição fica desligada até lá.",
-    "noFurnace": "A Daybreak Island desbloqueia na Furnace {level}. O nível da sua Furnace ainda não foi definido. A página fica visível para você ver o que vem por aí. A edição fica desligada até lá.",
-    "missing": "{count, plural, one {falta {amount} nível} other {faltam {amount} níveis}}",
-    "link": "Ir para Construções"
-  },
-  "levelOf": "N{level} de {max}",
-  "camp": {
-    "title": "Lumber Camp",
-    "levelLabel": "Nível do Lumber Camp",
-    "workers": "Trabalhadores",
-    "rate": "Taxa por segundo",
-    "essence": "Life Essence para chegar a este nível",
-    "needsTree": "Requer Tree of Life nível {required}. O seu é {current}.",
-    "treeTooLow": "A Tree of Life nível {current} é baixa demais. O nível {level} do Lumber Camp requer Tree of Life nível {required}.",
-    "next": "Próximo, nível {level}: {essence} de Life Essence, requer Tree of Life nível {tree}.",
-    "highest": "Este é o maior nível."
-  },
-  "tree": {
-    "title": "Tree of Life",
-    "levelLabel": "Nível da Tree of Life",
-    "prosperity": "Prosperidade para chegar a este nível",
-    "essence": "Life Essence para chegar a este nível",
-    "perHour": "Life Essence por hora",
-    "buff": "Buff",
-    "next": "Próximo, nível {level}: {prosperity} de Prosperidade, {essence} de Life Essence.",
-    "highest": "Este é o maior nível."
-  },
-  "decorations": {
-    "title": "Decorações",
-    "owned": "{owned} de {total} obtidas",
-    "imageNote": "Só {withImage} de {total} decorações têm imagem no pacote de dados. Um quadrado cheio marca as que têm imagem, um quadrado tracejado marca as outras."
-  },
-  "search": {
-    "label": "Buscar decorações",
-    "placeholder": "Buscar decorações"
-  },
-  "status": {
-    "showing": "Mostrando {shown} de {total} decorações.",
-    "showMore": "{count, plural, one {Mostrar mais {amount} decoração} other {Mostrar mais {amount} decorações}}"
-  },
-  "empty": {
-    "title": "Nenhuma decoração encontrada",
-    "description": "Mude a busca ou os filtros para ver decorações.",
-    "reset": "Redefinir filtros"
-  },
-  "card": {
-    "costEach": "Custo de cada",
-    "cost": "{amount} {item}",
-    "limit": "Limite",
-    "buffAtLevel": "Buff no nível {level}",
-    "buffAtMax": "Buff no nível máximo",
-    "buffValue": "{value} {stat}",
-    "prosperityAtMax": "Prosperidade no máximo",
-    "essenceCost": "Custo de Life Essence",
-    "unknown": "Desconhecido",
-    "owned": "Obtida",
-    "notOwned": "Não obtida",
-    "ownedLabel": "{name} obtida",
-    "levelLabel": "Nível de {name}",
-    "countLabel": "Quantidade de {name}",
-    "limited": "Limitada",
-    "ownedCount": "Obtidas {count} de {limit}"
-  },
-  "categories": {
-    "Basic": "Básica",
-    "Vegetation": "Vegetação",
-    "Common": "Comum",
-    "Uncommon": "Incomum",
-    "Rare": "Rara",
-    "Epic": "Épica",
-    "Mythic": "Mítica",
-    "Unique": "Única"
-  },
-  "filters": {
-    "button": "Filtros",
-    "title": "Filtros",
-    "description": "Restrinja a lista de decorações. Os filtros não são salvos.",
-    "category": "Categoria",
-    "categoryAll": "Todas {amount}",
-    "categoryOption": "{category} {amount}",
-    "show": "Mostrar",
-    "ownedOnly": "Só obtidas",
-    "limitedOnly": "Só limitadas",
-    "unknownBuffOnly": "Só com buff desconhecido",
-    "sort": "Ordenar",
-    "order": {
-      "game": "Ordem do pacote de dados",
-      "name": "Nome de A a Z",
-      "level": "Nível, maior primeiro"
+    "page": {
+        "title": "Daybreak Island"
     },
-    "reset": "Redefinir",
-    "showButton": "{count, plural, one {Mostrar {amount} decoração} other {Mostrar {amount} decorações}}",
-    "nonLimitedOnly": "Só sem limite",
-    "notOwnedOnly": "Só não obtidas"
-  },
-  "prosperity": {
-    "label": "Sua pontuação de prosperidade",
-    "progress": "Pontuação de prosperidade das suas decorações",
-    "possible": "De {max} com todas as decorações no nível e limite máximos",
-    "levelled": "Decorações com nível, prosperidade do nível alcançado",
-    "limited": "Decorações com limite, quantidade obtida vezes a prosperidade de cada",
-    "ofMax": "{value} de {max}",
-    "withoutValue": "{count, plural, one {{amount} decoração obtida não tem} other {{amount} decorações obtidas não têm}} valor de prosperidade nos dados e {count, plural, one {não é contada} other {não são contadas}}."
-  }
+    "view": {
+        "subline": "Lumber Camp, Tree of Life e suas decorações."
+    },
+    "locked": {
+        "title": "Requer Furnace {level}",
+        "description": "A Daybreak Island desbloqueia na Furnace {level}. Sua Furnace é {current}, então {missing} para chegar. A página fica visível para você ver o que vem por aí. A edição fica desligada até lá.",
+        "noFurnace": "A Daybreak Island desbloqueia na Furnace {level}. O nível da sua Furnace ainda não foi definido. A página fica visível para você ver o que vem por aí. A edição fica desligada até lá.",
+        "missing": "{count, plural, one {falta {amount} nível} other {faltam {amount} níveis}}",
+        "link": "Ir para Construções"
+    },
+    "levelOf": "N{level} de {max}",
+    "camp": {
+        "title": "Lumber Camp",
+        "levelLabel": "Nível do Lumber Camp",
+        "workers": "Trabalhadores",
+        "rate": "Taxa por segundo",
+        "essence": "Life Essence para chegar a este nível",
+        "needsTree": "Requer Tree of Life nível {required}. O seu é {current}.",
+        "treeTooLow": "A Tree of Life nível {current} é baixa demais. O nível {level} do Lumber Camp requer Tree of Life nível {required}.",
+        "next": "Próximo, nível {level}: {essence} de Life Essence, requer Tree of Life nível {tree}.",
+        "highest": "Este é o maior nível."
+    },
+    "tree": {
+        "title": "Tree of Life",
+        "levelLabel": "Nível da Tree of Life",
+        "prosperity": "Prosperidade para chegar a este nível",
+        "essence": "Life Essence para chegar a este nível",
+        "perHour": "Life Essence por hora",
+        "buff": "Buff",
+        "next": "Próximo, nível {level}: {prosperity} de Prosperidade, {essence} de Life Essence.",
+        "highest": "Este é o maior nível."
+    },
+    "decorations": {
+        "title": "Decorações",
+        "owned": "{owned} de {total} obtidas",
+        "imageNote": "Só {withImage} de {total} decorações têm imagem no pacote de dados. Um quadrado cheio marca as que têm imagem, um quadrado tracejado marca as outras."
+    },
+    "search": {
+        "label": "Buscar decorações",
+        "placeholder": "Buscar decorações"
+    },
+    "status": {
+        "showing": "Mostrando {shown} de {total} decorações.",
+        "showMore": "{count, plural, one {Mostrar mais {amount} decoração} other {Mostrar mais {amount} decorações}}"
+    },
+    "empty": {
+        "title": "Nenhuma decoração encontrada",
+        "description": "Mude a busca ou os filtros para ver decorações.",
+        "reset": "Redefinir filtros"
+    },
+    "card": {
+        "costEach": "Custo de cada",
+        "cost": "{amount} {item}",
+        "limit": "Limite",
+        "buffAtLevel": "Buff no nível {level}",
+        "buffAtMax": "Buff no nível máximo",
+        "buffValue": "{value} {stat}",
+        "prosperityAtMax": "Prosperidade no máximo",
+        "essenceCost": "Custo de Life Essence",
+        "unknown": "Desconhecido",
+        "owned": "Obtida",
+        "notOwned": "Não obtida",
+        "ownedLabel": "{name} obtida",
+        "levelLabel": "Nível de {name}",
+        "countLabel": "Quantidade de {name}",
+        "limited": "Limitada",
+        "ownedCount": "Obtidas {count} de {limit}"
+    },
+    "categories": {
+        "Basic": "Básica",
+        "Vegetation": "Vegetação",
+        "Common": "Comum",
+        "Uncommon": "Incomum",
+        "Rare": "Rara",
+        "Epic": "Épica",
+        "Mythic": "Mítica",
+        "Unique": "Única"
+    },
+    "filters": {
+        "button": "Filtros",
+        "title": "Filtros",
+        "description": "Restrinja a lista de decorações. Os filtros não são salvos.",
+        "category": "Categoria",
+        "categoryAll": "Todas {amount}",
+        "categoryOption": "{category} {amount}",
+        "show": "Mostrar",
+        "ownedOnly": "Só obtidas",
+        "limitedOnly": "Só limitadas",
+        "unknownBuffOnly": "Só com buff desconhecido",
+        "sort": "Ordenar",
+        "order": {
+            "game": "Ordem do pacote de dados",
+            "name": "Nome de A a Z",
+            "level": "Nível, maior primeiro"
+        },
+        "reset": "Redefinir",
+        "showButton": "{count, plural, one {Mostrar {amount} decoração} other {Mostrar {amount} decorações}}",
+        "nonLimitedOnly": "Só sem limite",
+        "notOwnedOnly": "Só não obtidas"
+    },
+    "prosperity": {
+        "label": "Sua pontuação de prosperidade",
+        "progress": "Pontuação de prosperidade das suas decorações",
+        "possible": "De {max} com todas as decorações no nível e limite máximos",
+        "levelled": "Decorações com nível, prosperidade do nível alcançado",
+        "limited": "Decorações com limite, quantidade obtida vezes a prosperidade de cada",
+        "ofMax": "{value} de {max}",
+        "withoutValue": "{count, plural, one {{amount} decoração obtida não tem} other {{amount} decorações obtidas não têm}} valor de prosperidade nos dados e {count, plural, one {não é contada} other {não são contadas}}."
+    }
 }

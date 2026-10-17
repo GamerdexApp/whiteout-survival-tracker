@@ -1,19 +1,19 @@
 {
-  "duration": {
-    "days": "{value} д",
-    "hours": "{value} ч",
-    "minutes": "{value} мин",
-    "seconds": "{value} с",
-    "zero": "0 с",
-    "separator": " "
-  },
-  "timeLeft": {
-    "left": "осталось {duration}",
-    "ready": "Можно завершить"
-  },
-  "saveFailed": {
-    "title": "Не сохранено",
-    "message": "Хранилище браузера заполнено. Экспортируйте резервную копию сейчас.",
-    "exportBackup": "Экспорт копии"
-  }
+    "duration": {
+        "days": "{value} д",
+        "hours": "{value} ч",
+        "minutes": "{value} мин",
+        "seconds": "{value} с",
+        "zero": "0 с",
+        "separator": " "
+    },
+    "timeLeft": {
+        "left": "осталось {duration}",
+        "ready": "Можно завершить"
+    },
+    "saveFailed": {
+        "title": "Не сохранено",
+        "message": "Хранилище браузера заполнено. Экспортируйте резервную копию сейчас.",
+        "exportBackup": "Экспорт копии"
+    }
 }

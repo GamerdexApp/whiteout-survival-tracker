@@ -1,86 +1,86 @@
 {
-  "page": {
-    "title": "Instalações"
-  },
-  "view": {
-    "subline": "{chief} · {facilities} instalações no mapa, castelo, {strongholds} fortes e {fortresses} fortalezas"
-  },
-  "summary": {
-    "owned": "Instalações obtidas",
-    "ownedValue": "{owned} de {total}",
-    "strongholds": "Fortes, referência",
-    "fortresses": "Fortalezas, referência",
-    "castle": "Castelo, referência"
-  },
-  "tabs": {
-    "label": "Visualizações de instalações",
-    "facilities": "Instalações",
-    "fortresses": "Fortalezas",
-    "map": "Mapa"
-  },
-  "show": {
-    "label": "Mostrar",
-    "all": "Todas",
-    "owned": "Obtidas",
-    "notOwned": "Não obtidas"
-  },
-  "card": {
-    "owned": "{count} obtidas",
-    "level": "Nível {level}",
-    "ownedSwitch": "Obtida",
-    "switchLabel": "{facility} nível {level} obtida",
-    "booster": "Reforço",
-    "injured": "Gravemente feridos",
-    "losses": "Perdas",
-    "ownLimit": "Limite próprio {limit}. {spots} {spotWord} no mapa.",
-    "spot": "ponto",
-    "spots": "pontos"
-  },
-  "empty": {
-    "title": "Nada para mostrar",
-    "description": "Nenhum nível de instalação corresponde a este filtro.",
-    "reset": "Mostrar todas"
-  },
-  "fortress": {
-    "kind": {
-      "castle": "Castelo",
-      "stronghold": "Forte",
-      "fortress": "Fortaleza"
+    "page": {
+        "title": "Instalações"
     },
-    "coordinates": "x {x}, y {y}",
-    "rewardsHeading": "Recompensa por fase",
-    "phase": "Fase {phase}",
-    "noRewards": "O castelo não tem recompensas no pacote de dados.",
-    "referenceNote": "Só referência. O castelo, os fortes e as fortalezas mudam toda semana, então nada aqui é obtido nem acompanhado.",
-    "kindLabel": "Tipo",
-    "allKinds": "Todos os tipos",
-    "rewardLabel": "Recompensa",
-    "allRewards": "Todas as recompensas",
-    "shown": "{shown} de {total} estruturas exibidas",
-    "empty": "Nenhuma estrutura corresponde aos filtros.",
-    "reset": "Redefinir filtros",
-    "filters": "Filtros",
-    "filtersTitle": "Filtros",
-    "filtersDescription": "Filtre as estruturas por tipo e recompensa",
-    "done": "Mostrar {count}"
-  },
-  "map": {
-    "highlight": "Destacar uma instalação",
-    "layers": "Camadas",
-    "layerFacilities": "Instalações",
-    "layerStrongholds": "Fortes",
-    "layerFortresses": "Fortalezas",
-    "spotsHeading": "Pontos de instalação, {count} no total",
-    "spotLegend": "{name} ({count})",
-    "codeHint": "O dígito depois do código é o nível, por exemplo Co1 é Construção nível 1. A instalação destacada aparece preenchida.",
-    "structures": "Estruturas",
-    "castleStrongholdLegend": "Castelo (1) e fortes S1 a S4 ({count})",
-    "fortressLegend": "Fortaleza 1 a {count}",
-    "selected": "Selecionado no mapa",
-    "selectedNone": "Selecione um castelo, forte ou fortaleza no mapa.",
-    "mapLabel": "Mapa da aliança",
-    "note": "Esboço do mapa da aliança. As posições usam x e y do pacote de dados em uma grade de {size} por {size}, e cada quadrado da grade vale {step}. Um ponto é um lugar onde uma instalação pode aparecer, então as instalações obtidas não são marcadas. O pacote de dados não tem arte de terreno.",
-    "spotLabel": "{name} nível {level}, x {x}, y {y}",
-    "structureLabel": "{name}, x {x}, y {y}"
-  }
+    "view": {
+        "subline": "{chief} · {facilities} instalações no mapa, castelo, {strongholds} fortes e {fortresses} fortalezas"
+    },
+    "summary": {
+        "owned": "Instalações obtidas",
+        "ownedValue": "{owned} de {total}",
+        "strongholds": "Fortes, referência",
+        "fortresses": "Fortalezas, referência",
+        "castle": "Castelo, referência"
+    },
+    "tabs": {
+        "label": "Visualizações de instalações",
+        "facilities": "Instalações",
+        "fortresses": "Fortalezas",
+        "map": "Mapa"
+    },
+    "show": {
+        "label": "Mostrar",
+        "all": "Todas",
+        "owned": "Obtidas",
+        "notOwned": "Não obtidas"
+    },
+    "card": {
+        "owned": "{count} obtidas",
+        "level": "Nível {level}",
+        "ownedSwitch": "Obtida",
+        "switchLabel": "{facility} nível {level} obtida",
+        "booster": "Reforço",
+        "injured": "Gravemente feridos",
+        "losses": "Perdas",
+        "ownLimit": "Limite próprio {limit}. {spots} {spotWord} no mapa.",
+        "spot": "ponto",
+        "spots": "pontos"
+    },
+    "empty": {
+        "title": "Nada para mostrar",
+        "description": "Nenhum nível de instalação corresponde a este filtro.",
+        "reset": "Mostrar todas"
+    },
+    "fortress": {
+        "kind": {
+            "castle": "Castelo",
+            "stronghold": "Forte",
+            "fortress": "Fortaleza"
+        },
+        "coordinates": "x {x}, y {y}",
+        "rewardsHeading": "Recompensa por fase",
+        "phase": "Fase {phase}",
+        "noRewards": "O castelo não tem recompensas no pacote de dados.",
+        "referenceNote": "Só referência. O castelo, os fortes e as fortalezas mudam toda semana, então nada aqui é obtido nem acompanhado.",
+        "kindLabel": "Tipo",
+        "allKinds": "Todos os tipos",
+        "rewardLabel": "Recompensa",
+        "allRewards": "Todas as recompensas",
+        "shown": "{shown} de {total} estruturas exibidas",
+        "empty": "Nenhuma estrutura corresponde aos filtros.",
+        "reset": "Redefinir filtros",
+        "filters": "Filtros",
+        "filtersTitle": "Filtros",
+        "filtersDescription": "Filtre as estruturas por tipo e recompensa",
+        "done": "Mostrar {count}"
+    },
+    "map": {
+        "highlight": "Destacar uma instalação",
+        "layers": "Camadas",
+        "layerFacilities": "Instalações",
+        "layerStrongholds": "Fortes",
+        "layerFortresses": "Fortalezas",
+        "spotsHeading": "Pontos de instalação, {count} no total",
+        "spotLegend": "{name} ({count})",
+        "codeHint": "O dígito depois do código é o nível, por exemplo Co1 é Construção nível 1. A instalação destacada aparece preenchida.",
+        "structures": "Estruturas",
+        "castleStrongholdLegend": "Castelo (1) e fortes S1 a S4 ({count})",
+        "fortressLegend": "Fortaleza 1 a {count}",
+        "selected": "Selecionado no mapa",
+        "selectedNone": "Selecione um castelo, forte ou fortaleza no mapa.",
+        "mapLabel": "Mapa da aliança",
+        "note": "Esboço do mapa da aliança. As posições usam x e y do pacote de dados em uma grade de {size} por {size}, e cada quadrado da grade vale {step}. Um ponto é um lugar onde uma instalação pode aparecer, então as instalações obtidas não são marcadas. O pacote de dados não tem arte de terreno.",
+        "spotLabel": "{name} nível {level}, x {x}, y {y}",
+        "structureLabel": "{name}, x {x}, y {y}"
+    }
 }

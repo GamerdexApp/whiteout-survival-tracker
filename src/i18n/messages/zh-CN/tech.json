@@ -1,98 +1,98 @@
 {
-  "page": {
-    "title": "科技"
-  },
-  "view": {
-    "subline": "{chief} · 成长、领地和战斗共{count}个联盟科技节点"
-  },
-  "summary": {
-    "maxed": "已满级",
-    "inProgress": "进行中",
-    "notStarted": "未开始",
-    "locked": "未解锁"
-  },
-  "status": {
-    "maxed": "已满级",
-    "inProgress": "进行中",
-    "notStarted": "未开始",
-    "locked": "未解锁"
-  },
-  "tabs": {
-    "label": "科技分类"
-  },
-  "categories": {
-    "Growth": "成长",
-    "Territory": "领地",
-    "Battle": "战斗"
-  },
-  "filters": {
-    "search": "搜索",
-    "searchLabel": "搜索科技节点",
-    "searchPlaceholder": "节点名称",
-    "tier": "阶",
-    "allTiers": "全部阶",
-    "tierOption": "{tier}阶",
-    "status": "状态",
-    "allStatuses": "全部",
-    "button": "搜索与筛选",
-    "title": "搜索与筛选",
-    "description": "按名称、阶和状态查找科技节点",
-    "reset": "重置筛选",
-    "done": "显示{count}",
-    "shown": "显示{shown} / {total}个节点"
-  },
-  "table": {
-    "node": "节点",
-    "level": "等级",
-    "bonus": "加成",
-    "cost": "下一级费用",
-    "time": "时间",
-    "needs": "需要"
-  },
-  "node": {
-    "tierDescription": "{tier}阶 · {description}",
-    "levelLabel": "{name}等级",
-    "levelOf": "{level} / {max}",
-    "open": "打开{name}",
-    "bonusOf": "{now} / {max}",
-    "bonusNone": "暂无，最高{max}",
-    "noBonus": "无加成",
-    "maxed": "已满级",
-    "noTime": "无时间",
-    "readyToUpgrade": "可升级",
-    "nothingNeeded": "无需求",
-    "needsPart": "需要{name} {level}级",
-    "costLine": "{name} {amount}",
-    "lockedHint": "需先解锁{names}",
-    "requirementPart": "{name} {level}级"
-  },
-  "flyout": {
-    "title": "{name}",
-    "subtitle": "{category}，{tier}阶。{description}",
-    "close": "关闭",
-    "level": "等级",
-    "bonusNow": "当前加成",
-    "needsFor": "{level}级所需",
-    "needsNothing": "无需求。",
-    "needsLine": "需要{need}级，你是{have}级",
-    "met": "已满足",
-    "notMet": "未满足",
-    "requiredBy": "被以下节点需要",
-    "requiredByNone": "没有其他节点需要此节点。",
-    "requiredByLine": "{category}，{tier}阶，从{from}级起需要{name} {need}级",
-    "allLevels": "全部等级",
-    "levelRow": "{level}级",
-    "done": "已完成",
-    "next": "下一级",
-    "later": "之后",
-    "remaining": "距满级还需",
-    "derived": "推算",
-    "remainingNone": "没有剩余。此节点已满级。",
-    "remainingLine": "{cost}",
-    "remainingTime": "{time}"
-  },
-  "empty": {
-    "title": "没有匹配的节点",
-    "description": "修改搜索或筛选，即可查看更多节点。"
-  }
+    "page": {
+        "title": "科技"
+    },
+    "view": {
+        "subline": "{chief} · 成长、领地和战斗共{count}个联盟科技节点"
+    },
+    "summary": {
+        "maxed": "已满级",
+        "inProgress": "进行中",
+        "notStarted": "未开始",
+        "locked": "未解锁"
+    },
+    "status": {
+        "maxed": "已满级",
+        "inProgress": "进行中",
+        "notStarted": "未开始",
+        "locked": "未解锁"
+    },
+    "tabs": {
+        "label": "科技分类"
+    },
+    "categories": {
+        "Growth": "成长",
+        "Territory": "领地",
+        "Battle": "战斗"
+    },
+    "filters": {
+        "search": "搜索",
+        "searchLabel": "搜索科技节点",
+        "searchPlaceholder": "节点名称",
+        "tier": "阶",
+        "allTiers": "全部阶",
+        "tierOption": "{tier}阶",
+        "status": "状态",
+        "allStatuses": "全部",
+        "button": "搜索与筛选",
+        "title": "搜索与筛选",
+        "description": "按名称、阶和状态查找科技节点",
+        "reset": "重置筛选",
+        "done": "显示{count}",
+        "shown": "显示{shown} / {total}个节点"
+    },
+    "table": {
+        "node": "节点",
+        "level": "等级",
+        "bonus": "加成",
+        "cost": "下一级费用",
+        "time": "时间",
+        "needs": "需要"
+    },
+    "node": {
+        "tierDescription": "{tier}阶 · {description}",
+        "levelLabel": "{name}等级",
+        "levelOf": "{level} / {max}",
+        "open": "打开{name}",
+        "bonusOf": "{now} / {max}",
+        "bonusNone": "暂无，最高{max}",
+        "noBonus": "无加成",
+        "maxed": "已满级",
+        "noTime": "无时间",
+        "readyToUpgrade": "可升级",
+        "nothingNeeded": "无需求",
+        "needsPart": "需要{name} {level}级",
+        "costLine": "{name} {amount}",
+        "lockedHint": "需先解锁{names}",
+        "requirementPart": "{name} {level}级"
+    },
+    "flyout": {
+        "title": "{name}",
+        "subtitle": "{category}，{tier}阶。{description}",
+        "close": "关闭",
+        "level": "等级",
+        "bonusNow": "当前加成",
+        "needsFor": "{level}级所需",
+        "needsNothing": "无需求。",
+        "needsLine": "需要{need}级，你是{have}级",
+        "met": "已满足",
+        "notMet": "未满足",
+        "requiredBy": "被以下节点需要",
+        "requiredByNone": "没有其他节点需要此节点。",
+        "requiredByLine": "{category}，{tier}阶，从{from}级起需要{name} {need}级",
+        "allLevels": "全部等级",
+        "levelRow": "{level}级",
+        "done": "已完成",
+        "next": "下一级",
+        "later": "之后",
+        "remaining": "距满级还需",
+        "derived": "推算",
+        "remainingNone": "没有剩余。此节点已满级。",
+        "remainingLine": "{cost}",
+        "remainingTime": "{time}"
+    },
+    "empty": {
+        "title": "没有匹配的节点",
+        "description": "修改搜索或筛选，即可查看更多节点。"
+    }
 }

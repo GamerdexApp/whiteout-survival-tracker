@@ -1,71 +1,71 @@
 {
-  "line": "{buildings} edifici e {facilities} strutture. Solo riferimento, nulla viene salvato nel tuo capo.",
-  "list": {
-    "heading": "Edifici e strutture",
-    "searchLabel": "Cerca",
-    "searchPlaceholder": "Cerca edifici e strutture",
-    "categoryLabel": "Categoria",
-    "categories": {
-      "all": "Tutti",
-      "Military": "Militari",
-      "Inner City": "Città interna",
-      "Entertainment": "Intrattenimento"
+    "line": "{buildings} edifici e {facilities} strutture. Solo riferimento, nulla viene salvato nel tuo capo.",
+    "list": {
+        "heading": "Edifici e strutture",
+        "searchLabel": "Cerca",
+        "searchPlaceholder": "Cerca edifici e strutture",
+        "categoryLabel": "Categoria",
+        "categories": {
+            "all": "Tutti",
+            "Military": "Militari",
+            "Inner City": "Città interna",
+            "Entertainment": "Intrattenimento"
+        },
+        "buildingMeta": "{category}, max {maxLevel}, {count, plural, one {{amount} livello} other {{amount} livelli}}",
+        "empty": "Nessun edificio corrisponde alla ricerca.",
+        "categoryOption": "{category} {count}"
     },
-    "buildingMeta": "{category}, max {maxLevel}, {count, plural, one {{amount} livello} other {{amount} livelli}}",
-    "empty": "Nessun edificio corrisponde alla ricerca.",
-    "categoryOption": "{category} {count}"
-  },
-  "detail": {
-    "levelsTotal": "Livelli in totale",
-    "standardLevels": "Livelli standard, da 1 a 30",
-    "fireCrystalLevels": "Livelli Fire Crystal, da 30-1 a FC 10",
-    "maxLevel": "Etichetta del livello massimo",
-    "rangeLabel": "Fascia di livelli",
-    "rangeOption": "{range} {count}",
-    "ranges": {
-      "all": "Tutti",
-      "standard": "da 1 a 30",
-      "fc3": "da 30-1 a FC 3",
-      "fc5": "da FC 3-1 a FC 5",
-      "fc8": "da FC 5-1 a FC 8",
-      "fc10": "da FC 8-1 a FC 10"
+    "detail": {
+        "levelsTotal": "Livelli in totale",
+        "standardLevels": "Livelli standard, da 1 a 30",
+        "fireCrystalLevels": "Livelli Fire Crystal, da 30-1 a FC 10",
+        "maxLevel": "Etichetta del livello massimo",
+        "rangeLabel": "Fascia di livelli",
+        "rangeOption": "{range} {count}",
+        "ranges": {
+            "all": "Tutti",
+            "standard": "da 1 a 30",
+            "fc3": "da 30-1 a FC 3",
+            "fc5": "da FC 3-1 a FC 5",
+            "fc8": "da FC 5-1 a FC 8",
+            "fc10": "da FC 8-1 a FC 10"
+        },
+        "tableLabel": "Livelli di {name}",
+        "levels": "Livelli",
+        "totalTitle": "Totale necessario, {range}, {count, plural, one {{amount} livello} other {{amount} livelli}}",
+        "totalTime": "Tempo di costruzione totale"
     },
-    "tableLabel": "Livelli di {name}",
-    "levels": "Livelli",
-    "totalTitle": "Totale necessario, {range}, {count, plural, one {{amount} livello} other {{amount} livelli}}",
-    "totalTime": "Tempo di costruzione totale"
-  },
-  "columns": {
-    "level": "Livello",
-    "cost": "Costo",
-    "time": "Tempo",
-    "power": "Potenza",
-    "requires": "Richiede",
-    "stats": {
-      "rallyCapacity": "Capacità di raduno",
-      "marchCapacity": "Capacità di marcia",
-      "trainingCapacity": "Capacità di addestramento",
-      "trainingSpeedBonusPercent": "Velocità di addestramento",
-      "researchSpeedBonusPercent": "Velocità di ricerca",
-      "infirmaryCapacity": "Capacità dell'infermeria",
-      "allyAssists": "Aiuti degli alleati",
-      "allyHelpTimeSeconds": "Tempo di aiuto degli alleati",
-      "reinforceCapacity": "Capacità di rinforzo",
-      "storehouseCapacity": "Capacità del magazzino",
-      "barricadeDurability": "Durabilità della barricata",
-      "troopDeploymentCapacity": "Capacità di schieramento"
+    "columns": {
+        "level": "Livello",
+        "cost": "Costo",
+        "time": "Tempo",
+        "power": "Potenza",
+        "requires": "Richiede",
+        "stats": {
+            "rallyCapacity": "Capacità di raduno",
+            "marchCapacity": "Capacità di marcia",
+            "trainingCapacity": "Capacità di addestramento",
+            "trainingSpeedBonusPercent": "Velocità di addestramento",
+            "researchSpeedBonusPercent": "Velocità di ricerca",
+            "infirmaryCapacity": "Capacità dell'infermeria",
+            "allyAssists": "Aiuti degli alleati",
+            "allyHelpTimeSeconds": "Tempo di aiuto degli alleati",
+            "reinforceCapacity": "Capacità di rinforzo",
+            "storehouseCapacity": "Capacità del magazzino",
+            "barricadeDurability": "Durabilità della barricata",
+            "troopDeploymentCapacity": "Capacità di schieramento"
+        }
+    },
+    "cells": {
+        "none": "Nessuno",
+        "requirement": "{building} {level}",
+        "pricePerItem": "{price} ciascuno",
+        "percent": "{value}%"
+    },
+    "facilities": {
+        "heading": "Strutture",
+        "meta": "Nessun livello, potenza o costo di costruzione",
+        "unlock": "Si sblocca al livello Furnace {level}",
+        "empty": "Nessuna struttura corrisponde alla ricerca."
     }
-  },
-  "cells": {
-    "none": "Nessuno",
-    "requirement": "{building} {level}",
-    "pricePerItem": "{price} ciascuno",
-    "percent": "{value}%"
-  },
-  "facilities": {
-    "heading": "Strutture",
-    "meta": "Nessun livello, potenza o costo di costruzione",
-    "unlock": "Si sblocca al livello Furnace {level}",
-    "empty": "Nessuna struttura corrisponde alla ricerca."
-  }
 }

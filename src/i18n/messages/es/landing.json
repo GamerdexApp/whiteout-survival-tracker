@@ -1,165 +1,165 @@
 {
-  "topBar": {
-    "navLabel": "Página de inicio",
-    "links": {
-      "how": "Cómo funciona",
-      "features": "Funciones",
-      "privacy": "Tus datos",
-      "faq": "Preguntas"
-    }
-  },
-  "action": {
-    "createFirstChief": "Crea tu primer jefe",
-    "goToOverview": "Ir al Resumen",
-    "newChief": "Nuevo jefe",
-    "allChiefs": "Todos los jefes"
-  },
-  "hero": {
-    "label": "Whiteout Survival Tracker",
-    "title": "Sigue a cada jefe. Planifica cada mejora.",
-    "description": "Un compañero gratuito para Whiteout Survival. Reúne tus edificios, héroes, equipo e investigación en un solo sitio, planifica la próxima mejora y gestiona tus eventos clave desde el primer día hasta el historial.",
-    "note": "Gratis. Tus datos se quedan en este navegador.",
-    "learnMore": "Saber más"
-  },
-  "continue": {
-    "label": "Te damos la bienvenida",
-    "title": "Seguir con {name}",
-    "chiefCount": "{count, plural, one {{amount} jefe guardado en este navegador} other {{amount} jefes guardados en este navegador}}"
-  },
-  "how": {
-    "label": "Cómo funciona",
-    "title": "De tu primer jefe al historial de eventos en cuatro pasos",
-    "steps": {
-      "create": {
-        "title": "Crea un jefe",
-        "description": "Ponle un nombre. El número de servidor y las notas son opcionales."
-      },
-      "levels": {
-        "title": "Indica tus niveles",
-        "description": "Introduce el nivel de tu Furnace y de tus edificios, y rellena héroes, equipo e investigación según avances."
-      },
-      "plan": {
-        "title": "Planifica mejoras",
-        "description": "Consulta los recursos, el tiempo y el poder que necesitas para tus objetivos, y lo que aún te falta."
-      },
-      "events": {
-        "title": "Gestiona tus eventos",
-        "description": "Cuenta puntos, registra puntuaciones y puestos, y guarda el evento en el Historial."
-      }
-    }
-  },
-  "features": {
-    "label": "Qué puedes hacer",
-    "title": "Planifícalo, juégalo y míralo después",
-    "open": "Abrir {page}",
-    "items": {
-      "plan": {
-        "title": "Planifica cualquier mejora",
-        "description": "Marca un objetivo en el panel Plan de Edificios, Héroes, Equipo del jefe e Investigación. Verás los recursos, el tiempo y el poder que necesita, con los aceleradores y bonificaciones de tu página de Bonificaciones.",
-        "page": "Edificios"
-      },
-      "coreEvents": {
-        "title": "Calculadoras de eventos clave",
-        "description": "SvS, Alliance Showdown, King of Icefield y Hall of Chief. Cuenta los puntos de cada acción, suma las bonificaciones de tus expertos y revisa umbrales y recompensas por puesto.",
-        "page": "Eventos clave"
-      },
-      "eventLog": {
-        "title": "Registro de eventos y lista diaria",
-        "description": "Registra la puntuación y el puesto de cada día de un evento. Una lista te muestra las acciones que puedes hacer cada día.",
-        "page": "Eventos clave"
-      },
-      "history": {
-        "title": "Historial: plan frente a resultado",
-        "description": "Termina un evento para guardarlo. Compara tu plan con lo que hiciste y comprueba qué mejoras planificadas están hechas y cuáles no.",
-        "page": "Historial"
-      },
-      "research": {
-        "title": "Árboles de investigación",
-        "description": "Growth, Economy, Battle, War Academy y las pestañas T12, en cuadrícula o en árbol, con desbloqueos según la antigüedad del servidor.",
-        "page": "Investigación"
-      },
-      "alliance": {
-        "title": "Tecnología y mapas de alianza",
-        "description": "Sigue el estandarte, la tecnología y las instalaciones de tu alianza, y consulta la disposición del castillo, los bastiones y las fortalezas.",
-        "page": "Alianza"
-      }
-    }
-  },
-  "numbers": {
-    "title": "Qué cubre el tracker",
-    "buildings": "edificios con costes y tiempos",
-    "heroes": "héroes",
-    "research": "tecnologías de investigación",
-    "coreEvents": "calculadoras de eventos clave",
-    "wiki": "páginas de referencia en la wiki, más una cronología"
-  },
-  "pages": {
-    "label": "Todas las páginas",
-    "title": "Agrupadas como en el juego",
-    "description": "Las mismas páginas que el menú lateral dentro de la app.",
-    "listLabel": "Páginas de {group}",
-    "general": "General"
-  },
-  "privacy": {
-    "label": "Tus datos",
-    "title": "Privados por defecto, portátiles cuando quieras",
-    "items": {
-      "browser": {
-        "title": "Se quedan en tu navegador",
-        "description": "No hay que crear ninguna cuenta. Tus jefes se guardan en este navegador, en este dispositivo."
-      },
-      "file": {
-        "title": "Un único archivo guardado",
-        "description": "Todo lo que introduces se guarda en un solo archivo del navegador, así carga rápido y nada queda repartido en varios sitios."
-      },
-      "chiefs": {
-        "title": "Varios jefes",
-        "description": "Ten tu cuenta principal y tus secundarias. Cambia de una a otra desde el menú lateral."
-      },
-      "backup": {
-        "title": "Copia de seguridad y restauración",
-        "description": "Exporta tus datos a un archivo desde Ajustes e impórtalo en otro navegador o dispositivo."
-      }
+    "topBar": {
+        "navLabel": "Página de inicio",
+        "links": {
+            "how": "Cómo funciona",
+            "features": "Funciones",
+            "privacy": "Tus datos",
+            "faq": "Preguntas"
+        }
     },
-    "backupLink": "Abrir Copia y datos"
-  },
-  "faq": {
-    "label": "¿Dudas?",
-    "title": "Preguntas frecuentes",
-    "items": {
-      "free": {
-        "question": "¿Es gratis?",
-        "answer": "Sí. No hay nada que pagar ni nada que desbloquear."
-      },
-      "data": {
-        "question": "¿Dónde están mis datos?",
-        "answer": "En este navegador, en el almacenamiento local de este sitio. No se envían a ningún servidor. Si borras los datos del sitio para esta página, se eliminan los jefes, así que exporta antes una copia de seguridad."
-      },
-      "move": {
-        "question": "¿Cómo paso a otro dispositivo?",
-        "answer": "Abre Ajustes, luego Copia y datos, y exporta un archivo de copia. En el otro dispositivo, abre esta misma página, ve a Ajustes, Copia y datos, e importa ese archivo."
-      },
-      "chiefs": {
-        "question": "¿Puedo tener varios jefes?",
-        "answer": "Sí. No hay límite. Cada jefe tiene sus propios edificios, héroes, investigación y eventos, y cambias de uno a otro en el menú lateral."
-      },
-      "account": {
-        "question": "¿Necesito una cuenta o un archivo de guardado del juego?",
-        "answer": "No. Tú introduces tus niveles. Los datos del juego sobre costes, tiempos y estadísticas vienen incluidos en el tracker."
-      },
-      "official": {
-        "question": "¿Es una app oficial?",
-        "answer": "No. Es una herramienta no oficial hecha por fans. No está afiliada a Whiteout Survival ni a Century Games. El pie de página incluye el aviso completo."
-      },
-      "wiki": {
-        "question": "¿Qué es la Wiki?",
-        "answer": "Un conjunto de páginas de referencia con los datos del juego, como edificios, héroes, mascotas, objetos y eventos, además de una cronología de servidor. Puedes leerla sin crear un jefe."
-      }
+    "action": {
+        "createFirstChief": "Crea tu primer jefe",
+        "goToOverview": "Ir al Resumen",
+        "newChief": "Nuevo jefe",
+        "allChiefs": "Todos los jefes"
+    },
+    "hero": {
+        "label": "Whiteout Survival Tracker",
+        "title": "Sigue a cada jefe. Planifica cada mejora.",
+        "description": "Un compañero gratuito para Whiteout Survival. Reúne tus edificios, héroes, equipo e investigación en un solo sitio, planifica la próxima mejora y gestiona tus eventos clave desde el primer día hasta el historial.",
+        "note": "Gratis. Tus datos se quedan en este navegador.",
+        "learnMore": "Saber más"
+    },
+    "continue": {
+        "label": "Te damos la bienvenida",
+        "title": "Seguir con {name}",
+        "chiefCount": "{count, plural, one {{amount} jefe guardado en este navegador} other {{amount} jefes guardados en este navegador}}"
+    },
+    "how": {
+        "label": "Cómo funciona",
+        "title": "De tu primer jefe al historial de eventos en cuatro pasos",
+        "steps": {
+            "create": {
+                "title": "Crea un jefe",
+                "description": "Ponle un nombre. El número de servidor y las notas son opcionales."
+            },
+            "levels": {
+                "title": "Indica tus niveles",
+                "description": "Introduce el nivel de tu Furnace y de tus edificios, y rellena héroes, equipo e investigación según avances."
+            },
+            "plan": {
+                "title": "Planifica mejoras",
+                "description": "Consulta los recursos, el tiempo y el poder que necesitas para tus objetivos, y lo que aún te falta."
+            },
+            "events": {
+                "title": "Gestiona tus eventos",
+                "description": "Cuenta puntos, registra puntuaciones y puestos, y guarda el evento en el Historial."
+            }
+        }
+    },
+    "features": {
+        "label": "Qué puedes hacer",
+        "title": "Planifícalo, juégalo y míralo después",
+        "open": "Abrir {page}",
+        "items": {
+            "plan": {
+                "title": "Planifica cualquier mejora",
+                "description": "Marca un objetivo en el panel Plan de Edificios, Héroes, Equipo del jefe e Investigación. Verás los recursos, el tiempo y el poder que necesita, con los aceleradores y bonificaciones de tu página de Bonificaciones.",
+                "page": "Edificios"
+            },
+            "coreEvents": {
+                "title": "Calculadoras de eventos clave",
+                "description": "SvS, Alliance Showdown, King of Icefield y Hall of Chief. Cuenta los puntos de cada acción, suma las bonificaciones de tus expertos y revisa umbrales y recompensas por puesto.",
+                "page": "Eventos clave"
+            },
+            "eventLog": {
+                "title": "Registro de eventos y lista diaria",
+                "description": "Registra la puntuación y el puesto de cada día de un evento. Una lista te muestra las acciones que puedes hacer cada día.",
+                "page": "Eventos clave"
+            },
+            "history": {
+                "title": "Historial: plan frente a resultado",
+                "description": "Termina un evento para guardarlo. Compara tu plan con lo que hiciste y comprueba qué mejoras planificadas están hechas y cuáles no.",
+                "page": "Historial"
+            },
+            "research": {
+                "title": "Árboles de investigación",
+                "description": "Growth, Economy, Battle, War Academy y las pestañas T12, en cuadrícula o en árbol, con desbloqueos según la antigüedad del servidor.",
+                "page": "Investigación"
+            },
+            "alliance": {
+                "title": "Tecnología y mapas de alianza",
+                "description": "Sigue el estandarte, la tecnología y las instalaciones de tu alianza, y consulta la disposición del castillo, los bastiones y las fortalezas.",
+                "page": "Alianza"
+            }
+        }
+    },
+    "numbers": {
+        "title": "Qué cubre el tracker",
+        "buildings": "edificios con costes y tiempos",
+        "heroes": "héroes",
+        "research": "tecnologías de investigación",
+        "coreEvents": "calculadoras de eventos clave",
+        "wiki": "páginas de referencia en la wiki, más una cronología"
+    },
+    "pages": {
+        "label": "Todas las páginas",
+        "title": "Agrupadas como en el juego",
+        "description": "Las mismas páginas que el menú lateral dentro de la app.",
+        "listLabel": "Páginas de {group}",
+        "general": "General"
+    },
+    "privacy": {
+        "label": "Tus datos",
+        "title": "Privados por defecto, portátiles cuando quieras",
+        "items": {
+            "browser": {
+                "title": "Se quedan en tu navegador",
+                "description": "No hay que crear ninguna cuenta. Tus jefes se guardan en este navegador, en este dispositivo."
+            },
+            "file": {
+                "title": "Un único archivo guardado",
+                "description": "Todo lo que introduces se guarda en un solo archivo del navegador, así carga rápido y nada queda repartido en varios sitios."
+            },
+            "chiefs": {
+                "title": "Varios jefes",
+                "description": "Ten tu cuenta principal y tus secundarias. Cambia de una a otra desde el menú lateral."
+            },
+            "backup": {
+                "title": "Copia de seguridad y restauración",
+                "description": "Exporta tus datos a un archivo desde Ajustes e impórtalo en otro navegador o dispositivo."
+            }
+        },
+        "backupLink": "Abrir Copia y datos"
+    },
+    "faq": {
+        "label": "¿Dudas?",
+        "title": "Preguntas frecuentes",
+        "items": {
+            "free": {
+                "question": "¿Es gratis?",
+                "answer": "Sí. No hay nada que pagar ni nada que desbloquear."
+            },
+            "data": {
+                "question": "¿Dónde están mis datos?",
+                "answer": "En este navegador, en el almacenamiento local de este sitio. No se envían a ningún servidor. Si borras los datos del sitio para esta página, se eliminan los jefes, así que exporta antes una copia de seguridad."
+            },
+            "move": {
+                "question": "¿Cómo paso a otro dispositivo?",
+                "answer": "Abre Ajustes, luego Copia y datos, y exporta un archivo de copia. En el otro dispositivo, abre esta misma página, ve a Ajustes, Copia y datos, e importa ese archivo."
+            },
+            "chiefs": {
+                "question": "¿Puedo tener varios jefes?",
+                "answer": "Sí. No hay límite. Cada jefe tiene sus propios edificios, héroes, investigación y eventos, y cambias de uno a otro en el menú lateral."
+            },
+            "account": {
+                "question": "¿Necesito una cuenta o un archivo de guardado del juego?",
+                "answer": "No. Tú introduces tus niveles. Los datos del juego sobre costes, tiempos y estadísticas vienen incluidos en el tracker."
+            },
+            "official": {
+                "question": "¿Es una app oficial?",
+                "answer": "No. Es una herramienta no oficial hecha por fans. No está afiliada a Whiteout Survival ni a Century Games. El pie de página incluye el aviso completo."
+            },
+            "wiki": {
+                "question": "¿Qué es la Wiki?",
+                "answer": "Un conjunto de páginas de referencia con los datos del juego, como edificios, héroes, mascotas, objetos y eventos, además de una cronología de servidor. Puedes leerla sin crear un jefe."
+            }
+        }
+    },
+    "closing": {
+        "title": "Empieza hoy mismo",
+        "description": "Tu primer jefe solo necesita un nombre. Después puedes cambiar lo que quieras.",
+        "wiki": "Explorar la Wiki"
     }
-  },
-  "closing": {
-    "title": "Empieza hoy mismo",
-    "description": "Tu primer jefe solo necesita un nombre. Después puedes cambiar lo que quieras.",
-    "wiki": "Explorar la Wiki"
-  }
 }

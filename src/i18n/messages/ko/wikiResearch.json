@@ -1,77 +1,77 @@
 {
-  "line": "연구 노드 {nodes}개, 탭 {tabs}개예요. 참고용이며 저장되지 않아요.",
-  "tabsLabel": "연구 분류",
-  "tabs": {
-    "battle": "전투",
-    "growth": "성장",
-    "economy": "경제",
-    "t11": "T11",
-    "t12": "T12"
-  },
-  "search": {
-    "label": "검색",
-    "placeholder": "연구 노드 {amount}개 검색"
-  },
-  "filters": {
-    "tier": "단계",
-    "allTiers": "전체",
-    "tierOption": "{tier}단계",
-    "troop": "병종",
-    "allTroops": "전체",
-    "troops": {
-      "Infantry": "보병",
-      "Marksman": "궁병",
-      "Lancer": "창병"
+    "line": "연구 노드 {nodes}개, 탭 {tabs}개예요. 참고용이며 저장되지 않아요.",
+    "tabsLabel": "연구 분류",
+    "tabs": {
+        "battle": "전투",
+        "growth": "성장",
+        "economy": "경제",
+        "t11": "T11",
+        "t12": "T12"
     },
-    "data": "데이터",
-    "dataOptions": {
-      "all": "모든 노드",
-      "placeholders": "임시 노드",
-      "missingTime": "시간 없음"
+    "search": {
+        "label": "검색",
+        "placeholder": "연구 노드 {amount}개 검색"
+    },
+    "filters": {
+        "tier": "단계",
+        "allTiers": "전체",
+        "tierOption": "{tier}단계",
+        "troop": "병종",
+        "allTroops": "전체",
+        "troops": {
+            "Infantry": "보병",
+            "Marksman": "궁병",
+            "Lancer": "창병"
+        },
+        "data": "데이터",
+        "dataOptions": {
+            "all": "모든 노드",
+            "placeholders": "임시 노드",
+            "missingTime": "시간 없음"
+        }
+    },
+    "list": {
+        "title": "노드",
+        "empty": "검색에 맞는 연구 노드가 없어요.",
+        "emptyHint": "검색어나 필터를 지워보세요.",
+        "columns": {
+            "node": "노드",
+            "tier": "단계",
+            "levels": "레벨",
+            "bonus": "1레벨 보너스",
+            "time": "시간, 1레벨",
+            "power": "전투력"
+        },
+        "mobileMeta": "{category}, {tier}단계, {levels}",
+        "count": "{count, plural, other {노드 {amount}개}}"
+    },
+    "levels": "{count, plural, other {{amount}레벨}}",
+    "detail": {
+        "columns": {
+            "level": "레벨",
+            "requires": "조건",
+            "cost": "비용",
+            "time": "시간",
+            "bonus": "보너스",
+            "power": "전투력"
+        },
+        "level": "{level}레벨",
+        "none": "없음",
+        "placeholderNote": "이 노드는 임시 노드예요. 패키지에 비용과 보너스가 없어요.",
+        "requirement": {
+            "building": "{name} {level}",
+            "research": "{name} {level}레벨"
+        },
+        "levelsTitle": "레벨"
+    },
+    "view": {
+        "label": "보기",
+        "list": "목록",
+        "tree": "트리"
+    },
+    "tree": {
+        "region": "{tab} 연구 트리",
+        "openNode": "{name}, {levels}",
+        "tier": "T{tier}"
     }
-  },
-  "list": {
-    "title": "노드",
-    "empty": "검색에 맞는 연구 노드가 없어요.",
-    "emptyHint": "검색어나 필터를 지워보세요.",
-    "columns": {
-      "node": "노드",
-      "tier": "단계",
-      "levels": "레벨",
-      "bonus": "1레벨 보너스",
-      "time": "시간, 1레벨",
-      "power": "전투력"
-    },
-    "mobileMeta": "{category}, {tier}단계, {levels}",
-    "count": "{count, plural, other {노드 {amount}개}}"
-  },
-  "levels": "{count, plural, other {{amount}레벨}}",
-  "detail": {
-    "columns": {
-      "level": "레벨",
-      "requires": "조건",
-      "cost": "비용",
-      "time": "시간",
-      "bonus": "보너스",
-      "power": "전투력"
-    },
-    "level": "{level}레벨",
-    "none": "없음",
-    "placeholderNote": "이 노드는 임시 노드예요. 패키지에 비용과 보너스가 없어요.",
-    "requirement": {
-      "building": "{name} {level}",
-      "research": "{name} {level}레벨"
-    },
-    "levelsTitle": "레벨"
-  },
-  "view": {
-    "label": "보기",
-    "list": "목록",
-    "tree": "트리"
-  },
-  "tree": {
-    "region": "{tab} 연구 트리",
-    "openNode": "{name}, {levels}",
-    "tier": "T{tier}"
-  }
 }

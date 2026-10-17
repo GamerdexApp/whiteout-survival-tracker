@@ -1,63 +1,63 @@
 {
-  "page": {
-    "title": "VIP"
-  },
-  "view": {
-    "sublineKnown": "{chief} · {details} · VIP {level} con {xp} XP",
-    "sublineUnknown": "{chief} · {details} · VIP non impostato"
-  },
-  "input": {
-    "title": "Il tuo VIP",
-    "enterAs": "Inserisci il VIP come",
-    "modeXp": "XP totali",
-    "modeLevel": "Livello VIP",
-    "xpLabel": "XP VIP totali",
-    "xpHint": "XP interi da 0 a {max}.",
-    "levelLabel": "Livello VIP",
-    "notSet": "Non impostato",
-    "levelHint": "Un livello imposta gli XP totali al minimo di quel livello. Scrivi gli XP reali per essere precisi.",
-    "reached": "Livello raggiunto",
-    "levelName": "VIP {level}",
-    "unknown": "Sconosciuto"
-  },
-  "progress": {
-    "label": "Avanzamento dentro VIP {level}",
-    "toNext": "{xp} XP a VIP {level}",
-    "percent": "{percent}%",
-    "range": "Da {from} a {to} XP totali per questo livello.",
-    "estimate": "Stima. È stato inserito il livello, quindi gli XP sono il minimo totale di VIP {level}. Scrivi gli XP reali per un valore preciso.",
-    "maxLevel": "Livello massimo",
-    "maxHint": "VIP {level} è l'ultimo livello."
-  },
-  "perks": {
-    "title": "Cosa dà VIP {level}",
-    "subtitle": "Totali a questo livello, non la variazione rispetto al precedente.",
-    "unknown": "Inserisci il tuo VIP per vedere cosa dà."
-  },
-  "next": {
-    "title": "VIP {level} aggiunge",
-    "subtitle": "Rispetto a VIP {from}.",
-    "new": "nuovo",
-    "was": "era {value}",
-    "maxLevel": "Livello massimo. Non c'è un livello successivo da mostrare.",
-    "unknown": "Inserisci il tuo VIP per vedere il livello successivo."
-  },
-  "table": {
-    "title": "Tutti i {count} livelli, {total} XP in totale",
-    "level": "Livello",
-    "xpFromLast": "XP dall'ultimo",
-    "totalXp": "XP totali",
-    "bonuses": "Bonus nuovi o più alti",
-    "state": "Stato",
-    "xpFromLastMobile": "XP dall'ultimo {xp}",
-    "totalMobile": "Totale {xp}",
-    "unknown": "Sconosciuto",
-    "states": {
-      "reached": "Raggiunto",
-      "current": "Attuale",
-      "ahead": "Da raggiungere",
-      "unknown": "Sconosciuto"
+    "page": {
+        "title": "VIP"
     },
-    "levelName": "VIP {level}"
-  }
+    "view": {
+        "sublineKnown": "{chief} · {details} · VIP {level} con {xp} XP",
+        "sublineUnknown": "{chief} · {details} · VIP non impostato"
+    },
+    "input": {
+        "title": "Il tuo VIP",
+        "enterAs": "Inserisci il VIP come",
+        "modeXp": "XP totali",
+        "modeLevel": "Livello VIP",
+        "xpLabel": "XP VIP totali",
+        "xpHint": "XP interi da 0 a {max}.",
+        "levelLabel": "Livello VIP",
+        "notSet": "Non impostato",
+        "levelHint": "Un livello imposta gli XP totali al minimo di quel livello. Scrivi gli XP reali per essere precisi.",
+        "reached": "Livello raggiunto",
+        "levelName": "VIP {level}",
+        "unknown": "Sconosciuto"
+    },
+    "progress": {
+        "label": "Avanzamento dentro VIP {level}",
+        "toNext": "{xp} XP a VIP {level}",
+        "percent": "{percent}%",
+        "range": "Da {from} a {to} XP totali per questo livello.",
+        "estimate": "Stima. È stato inserito il livello, quindi gli XP sono il minimo totale di VIP {level}. Scrivi gli XP reali per un valore preciso.",
+        "maxLevel": "Livello massimo",
+        "maxHint": "VIP {level} è l'ultimo livello."
+    },
+    "perks": {
+        "title": "Cosa dà VIP {level}",
+        "subtitle": "Totali a questo livello, non la variazione rispetto al precedente.",
+        "unknown": "Inserisci il tuo VIP per vedere cosa dà."
+    },
+    "next": {
+        "title": "VIP {level} aggiunge",
+        "subtitle": "Rispetto a VIP {from}.",
+        "new": "nuovo",
+        "was": "era {value}",
+        "maxLevel": "Livello massimo. Non c'è un livello successivo da mostrare.",
+        "unknown": "Inserisci il tuo VIP per vedere il livello successivo."
+    },
+    "table": {
+        "title": "Tutti i {count} livelli, {total} XP in totale",
+        "level": "Livello",
+        "xpFromLast": "XP dall'ultimo",
+        "totalXp": "XP totali",
+        "bonuses": "Bonus nuovi o più alti",
+        "state": "Stato",
+        "xpFromLastMobile": "XP dall'ultimo {xp}",
+        "totalMobile": "Totale {xp}",
+        "unknown": "Sconosciuto",
+        "states": {
+            "reached": "Raggiunto",
+            "current": "Attuale",
+            "ahead": "Da raggiungere",
+            "unknown": "Sconosciuto"
+        },
+        "levelName": "VIP {level}"
+    }
 }

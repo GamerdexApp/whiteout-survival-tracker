@@ -1,99 +1,99 @@
 {
-  "line": "{heroes} héros et {widgets} niveaux de widgets. Référence uniquement, rien ici n'est enregistré.",
-  "roster": {
-    "title": "Liste",
-    "count": "{shown} héros sur {total}",
-    "search": "Rechercher",
-    "searchPlaceholder": "Rechercher parmi {count} héros",
-    "generation": "Génération",
-    "rarity": "Rareté",
-    "class": "Classe",
-    "subClass": "Sous-classe",
-    "all": "Tous",
-    "empty": "Aucun héros ne correspond à ces filtres.",
-    "columns": {
-      "hero": "Héros",
-      "generation": "Gén.",
-      "rarity": "Rareté",
-      "class": "Classe",
-      "subClass": "Sous-classe",
-      "power": "Puissance, 5 étoiles",
-      "weapon": "Arme exclusive"
+    "line": "{heroes} héros et {widgets} niveaux de widgets. Référence uniquement, rien ici n'est enregistré.",
+    "roster": {
+        "title": "Liste",
+        "count": "{shown} héros sur {total}",
+        "search": "Rechercher",
+        "searchPlaceholder": "Rechercher parmi {count} héros",
+        "generation": "Génération",
+        "rarity": "Rareté",
+        "class": "Classe",
+        "subClass": "Sous-classe",
+        "all": "Tous",
+        "empty": "Aucun héros ne correspond à ces filtres.",
+        "columns": {
+            "hero": "Héros",
+            "generation": "Gén.",
+            "rarity": "Rareté",
+            "class": "Classe",
+            "subClass": "Sous-classe",
+            "power": "Puissance, 5 étoiles",
+            "weapon": "Arme exclusive"
+        },
+        "none": "Aucune"
     },
-    "none": "Aucune"
-  },
-  "detail": {
-    "generation": "Génération {generation}",
-    "source": "Source : {sources}",
-    "noSource": "Source : Inconnue",
-    "explorationAttack": "Attaque en exploration",
-    "explorationDefense": "Défense en exploration",
-    "explorationHealth": "Santé en exploration",
-    "expeditionAttack": "Attaque en expédition",
-    "expeditionDefense": "Défense en expédition",
-    "powerAtLevel80": "Puissance au niveau 80",
-    "powerAtFiveStars": "Puissance à 5 étoiles",
-    "powerAtZeroStars": "Puissance à 0 étoile",
-    "powerMissing": "La puissance des niveaux de héros et des fragments manque à partir de la génération 6. Elle s'affiche comme Inconnu tant que les données ne sont pas obtenues."
-  },
-  "skills": {
-    "title": "Compétences",
-    "count": "{count, plural, one {{amount} compétence} other {{amount} compétences}}",
-    "branch": {
-      "exploration": "Exploration",
-      "expedition": "Expédition",
-      "talent": "Talent"
+    "detail": {
+        "generation": "Génération {generation}",
+        "source": "Source : {sources}",
+        "noSource": "Source : Inconnue",
+        "explorationAttack": "Attaque en exploration",
+        "explorationDefense": "Défense en exploration",
+        "explorationHealth": "Santé en exploration",
+        "expeditionAttack": "Attaque en expédition",
+        "expeditionDefense": "Défense en expédition",
+        "powerAtLevel80": "Puissance au niveau 80",
+        "powerAtFiveStars": "Puissance à 5 étoiles",
+        "powerAtZeroStars": "Puissance à 0 étoile",
+        "powerMissing": "La puissance des niveaux de héros et des fragments manque à partir de la génération 6. Elle s'affiche comme Inconnu tant que les données ne sont pas obtenues."
+    },
+    "skills": {
+        "title": "Compétences",
+        "count": "{count, plural, one {{amount} compétence} other {{amount} compétences}}",
+        "branch": {
+            "exploration": "Exploration",
+            "expedition": "Expédition",
+            "talent": "Talent"
+        },
+        "levels": {
+            "columns": {
+                "level": "Niveau",
+                "star": "Étoile requise",
+                "manuals": "Manuels",
+                "power": "Gain de puissance",
+                "effects": "Effet"
+            },
+            "effect": {
+                "percentOfAttack": "{name} {amount} % de l'Attaque",
+                "percent": "{name} {amount} %",
+                "seconds": "{name} {amount} s",
+                "number": "{name} {amount}"
+            }
+        }
+    },
+    "shards": {
+        "title": "Coûts en fragments par étoile",
+        "columns": {
+            "star": "Étoile",
+            "tiers": "Fragments par palier",
+            "total": "Total",
+            "power": "Puissance à l'étoile"
+        },
+        "star": "{star} étoile"
+    },
+    "weapon": {
+        "title": "Arme exclusive",
+        "power": "Puissance de l'arme",
+        "exploration": "Att / déf / PV en exploration",
+        "expedition": "Létalité / PV en expédition",
+        "unlocksAt": "se débloque au niveau d'arme {level}",
+        "levelsTitle": "Niveaux d'arme",
+        "columns": {
+            "level": "Niveau d'arme",
+            "power": "Puissance",
+            "widgets": "Widgets"
+        },
+        "level": "Niveau {level}"
     },
     "levels": {
-      "columns": {
-        "level": "Niveau",
-        "star": "Étoile requise",
-        "manuals": "Manuels",
-        "power": "Gain de puissance",
-        "effects": "Effet"
-      },
-      "effect": {
-        "percentOfAttack": "{name} {amount} % de l'Attaque",
-        "percent": "{name} {amount} %",
-        "seconds": "{name} {amount} s",
-        "number": "{name} {amount}"
-      }
-    }
-  },
-  "shards": {
-    "title": "Coûts en fragments par étoile",
-    "columns": {
-      "star": "Étoile",
-      "tiers": "Fragments par palier",
-      "total": "Total",
-      "power": "Puissance à l'étoile"
+        "title": "Niveaux de héros",
+        "columns": {
+            "level": "Niveau du héros",
+            "furnace": "Prérequis",
+            "xp": "XP pour l'atteindre",
+            "power": "Puissance"
+        },
+        "level": "Niveau {level}",
+        "furnace": "Furnace {level}"
     },
-    "star": "{star} étoile"
-  },
-  "weapon": {
-    "title": "Arme exclusive",
-    "power": "Puissance de l'arme",
-    "exploration": "Att / déf / PV en exploration",
-    "expedition": "Létalité / PV en expédition",
-    "unlocksAt": "se débloque au niveau d'arme {level}",
-    "levelsTitle": "Niveaux d'arme",
-    "columns": {
-      "level": "Niveau d'arme",
-      "power": "Puissance",
-      "widgets": "Widgets"
-    },
-    "level": "Niveau {level}"
-  },
-  "levels": {
-    "title": "Niveaux de héros",
-    "columns": {
-      "level": "Niveau du héros",
-      "furnace": "Prérequis",
-      "xp": "XP pour l'atteindre",
-      "power": "Puissance"
-    },
-    "level": "Niveau {level}",
-    "furnace": "Furnace {level}"
-  },
-  "recordLine": "{rarity} {heroClass}, génération {generation}. Référence uniquement, rien ici n'est enregistré."
+    "recordLine": "{rarity} {heroClass}, génération {generation}. Référence uniquement, rien ici n'est enregistré."
 }

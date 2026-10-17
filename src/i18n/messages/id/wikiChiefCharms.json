@@ -1,49 +1,49 @@
 {
-  "line": "{rows} baris jimat, {slots} slot, dan {rates} kurs tukar. Hanya referensi, tidak ada yang disimpan ke Chief-mu.",
-  "slots": {
-    "heading": "Slot jimat",
-    "meta": "{slots} slot, satu untuk tiap jenis pasukan",
-    "icons": "{count, plural, other {{amount} ikon level}}",
-    "recordLine": "Memberi buff pasukan {troopType}. Satu ikon untuk tiap level."
-  },
-  "table": {
-    "heading": "Tabel jimat",
-    "meta": "{rows} baris, {levels} level",
-    "searchLabel": "Cari",
-    "searchPlaceholder": "Cari {rows} baris jimat",
-    "levelLabel": "Level",
-    "allLevels": "Semua level",
-    "levelOption": "Level {level}",
-    "stageLabel": "Tahap",
-    "allStages": "Semua tahap",
-    "stageOption": "Tahap {stage}",
-    "empty": "Tidak ada baris jimat yang cocok dengan filter."
-  },
-  "columns": {
-    "row": "Baris",
-    "materials": "Bahan",
-    "stats": "Statistik",
-    "power": "Kekuatan",
-    "score": "Skor"
-  },
-  "cells": {
-    "none": "Tidak ada",
-    "percent": "{value}%"
-  },
-  "levels": {
-    "heading": "Level",
-    "level": "Level",
-    "levelName": "Level {level}",
-    "rows": "Baris",
-    "stats": "Statistik, pertama sampai terakhir",
-    "power": "Kekuatan di baris terakhir",
-    "statsRange": "{first}% sampai {last}%"
-  },
-  "exchange": {
-    "heading": "Kurs tukar bahan",
-    "exchange": "Tukar",
-    "from": "Dari",
-    "to": "Ke",
-    "weeklyLimit": "Batas mingguan"
-  }
+    "line": "{rows} baris jimat, {slots} slot, dan {rates} kurs tukar. Hanya referensi, tidak ada yang disimpan ke Chief-mu.",
+    "slots": {
+        "heading": "Slot jimat",
+        "meta": "{slots} slot, satu untuk tiap jenis pasukan",
+        "icons": "{count, plural, other {{amount} ikon level}}",
+        "recordLine": "Memberi buff pasukan {troopType}. Satu ikon untuk tiap level."
+    },
+    "table": {
+        "heading": "Tabel jimat",
+        "meta": "{rows} baris, {levels} level",
+        "searchLabel": "Cari",
+        "searchPlaceholder": "Cari {rows} baris jimat",
+        "levelLabel": "Level",
+        "allLevels": "Semua level",
+        "levelOption": "Level {level}",
+        "stageLabel": "Tahap",
+        "allStages": "Semua tahap",
+        "stageOption": "Tahap {stage}",
+        "empty": "Tidak ada baris jimat yang cocok dengan filter."
+    },
+    "columns": {
+        "row": "Baris",
+        "materials": "Bahan",
+        "stats": "Statistik",
+        "power": "Kekuatan",
+        "score": "Skor"
+    },
+    "cells": {
+        "none": "Tidak ada",
+        "percent": "{value}%"
+    },
+    "levels": {
+        "heading": "Level",
+        "level": "Level",
+        "levelName": "Level {level}",
+        "rows": "Baris",
+        "stats": "Statistik, pertama sampai terakhir",
+        "power": "Kekuatan di baris terakhir",
+        "statsRange": "{first}% sampai {last}%"
+    },
+    "exchange": {
+        "heading": "Kurs tukar bahan",
+        "exchange": "Tukar",
+        "from": "Dari",
+        "to": "Ke",
+        "weeklyLimit": "Batas mingguan"
+    }
 }

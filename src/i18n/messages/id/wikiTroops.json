@@ -1,26 +1,26 @@
 {
-  "line": "{types} jenis pasukan dengan masing-masing {tiers} tier. Hanya referensi, tidak ada yang disimpan ke Chief-mu.",
-  "tiers": {
-    "heading": "Tier pasukan",
-    "meta": "{types} jenis kali {tiers} tier = {rows} baris",
-    "typeLabel": "Jenis pasukan",
-    "tableLabel": "Tier {type}"
-  },
-  "detail": {
-    "heading": "Detail data",
-    "meta": "Tier {tier}, ketiga jenis",
-    "tableLabel": "Tier {tier} menurut jenis pasukan"
-  },
-  "columns": {
-    "tier": "Tier",
-    "type": "Jenis",
-    "cost": "Biaya per pasukan",
-    "topCost": "Biaya tier",
-    "time": "Waktu latihan",
-    "promotion": "Biaya promosi"
-  },
-  "cells": {
-    "tier": "Tier {tier}",
-    "none": "Tidak ada"
-  }
+    "line": "{types} jenis pasukan dengan masing-masing {tiers} tier. Hanya referensi, tidak ada yang disimpan ke Chief-mu.",
+    "tiers": {
+        "heading": "Tier pasukan",
+        "meta": "{types} jenis kali {tiers} tier = {rows} baris",
+        "typeLabel": "Jenis pasukan",
+        "tableLabel": "Tier {type}"
+    },
+    "detail": {
+        "heading": "Detail data",
+        "meta": "Tier {tier}, ketiga jenis",
+        "tableLabel": "Tier {tier} menurut jenis pasukan"
+    },
+    "columns": {
+        "tier": "Tier",
+        "type": "Jenis",
+        "cost": "Biaya per pasukan",
+        "topCost": "Biaya tier",
+        "time": "Waktu latihan",
+        "promotion": "Biaya promosi"
+    },
+    "cells": {
+        "tier": "Tier {tier}",
+        "none": "Tidak ada"
+    }
 }

@@ -1,209 +1,209 @@
 {
-  "page": {
-    "title": "宠物"
-  },
-  "view": {
-    "subline": "{chief} · {details} · 已解锁{unlocked} / {total}只宠物"
-  },
-  "rarities": {
-    "Common": "普通",
-    "Uncommon": "优秀",
-    "Rare": "稀有",
-    "Epic": "史诗",
-    "Legendary": "传说"
-  },
-  "unlock": {
-    "afterFurnace": "第{days}天且 Furnace {level}",
-    "afterPet": "第{days}天且{pet} {level}级"
-  },
-  "summary": {
-    "unlocked": "已解锁",
-    "unlockedValue": "{count} / {total}",
-    "unlockedNote": "由你设置",
-    "power": "总战力",
-    "powerNote": "已解锁宠物的等级、进阶和精炼战力",
-    "powerUnknown": "已解锁宠物的等级、进阶和精炼战力，另有{amount}项未知",
-    "next": "下一个解锁",
-    "allUnlocked": "全部已解锁",
-    "allUnlockedNote": "所有宠物均已解锁",
-    "lockedNote": "{count}只在之后的开服天数前未解锁"
-  },
-  "totals": {
-    "attackDefense": "部队攻击与防御",
-    "attack": "攻击",
-    "defense": "防御",
-    "lethality": "杀伤",
-    "health": "生命",
-    "gain": "+{value}%",
-    "types": {
-      "infantry": "盾兵",
-      "lancer": "矛兵",
-      "marksman": "弓兵"
-    }
-  },
-  "search": {
-    "label": "搜索宠物",
-    "placeholder": "按名称搜索{amount}只宠物"
-  },
-  "status": {
-    "showing": "显示{shown} / {total} {count, plural, other {只宠物}}。",
-    "filters": " 筛选：{list}。",
-    "filterNames": {
-      "rarity": "稀有度",
-      "status": "状态",
-      "advanced": "进阶",
-      "order": "排序"
+    "page": {
+        "title": "宠物"
     },
-    "readOnlyGoals": "目标在此处只读，请在计划中设置。目标与当前值相同表示没有目标。",
-    "showMore": "{count, plural, other {再显示{amount}只宠物}}"
-  },
-  "empty": {
-    "title": "没有匹配的宠物",
-    "description": "修改搜索或筛选，即可查看更多宠物。",
-    "reset": "重置筛选"
-  },
-  "toast": {
-    "lockedTitle": "已锁定{name}",
-    "lockedMessage": "其等级、进阶和精炼会保留。",
-    "undo": "撤销"
-  },
-  "card": {
-    "summary": "{rarity} · 最高{max}级",
-    "unlocked": "已解锁",
-    "unlockedLabel": "{pet}已解锁",
-    "cooldown": "冷却{time}",
-    "cooldownByTier": "冷却时间随阶段变化",
-    "cooldownUnknown": "冷却时间未知",
-    "skillTiers": "{count, plural, other {{amount}个技能阶段}}",
-    "unlockRule": "解锁条件",
-    "ruleMet": "你已满足此条件",
-    "level": "等级（最高{max}）",
-    "levelLabel": "{pet}等级",
-    "goal": "目标{level}",
-    "noGoal": "无目标",
-    "advanced": "进阶",
-    "advancedHint": "可在 10、20、30 级等设置进阶。",
-    "refinement": "精炼",
-    "refinementMax": "每项最高{max}%",
-    "refineLabel": "{pet} {stat}",
-    "percentSign": "%",
-    "attack": "攻击 +{value}%",
-    "defense": "防御 +{value}%",
-    "power": "战力{value}",
-    "powerUnknown": "战力未知",
-    "powerParts": "等级与进阶{base}，精炼{refining}"
-  },
-  "filters": {
-    "button": "筛选",
-    "title": "筛选",
-    "description": "选择宠物列表显示的内容",
-    "rarity": "稀有度",
-    "rarityAll": "全部{amount}",
-    "rarityOption": "{rarity} {amount}",
+    "view": {
+        "subline": "{chief} · {details} · 已解锁{unlocked} / {total}只宠物"
+    },
     "rarities": {
-      "Common": "普通",
-      "Uncommon": "优秀",
-      "Rare": "稀有",
-      "Epic": "史诗",
-      "Legendary": "传说"
-    },
-    "status": "状态",
-    "statusOptions": {
-      "all": "全部宠物",
-      "unlocked": "已解锁",
-      "locked": "未解锁"
-    },
-    "advanced": "进阶",
-    "advancedOptions": {
-      "any": "不限",
-      "advanced": "已进阶",
-      "notAdvanced": "未进阶"
-    },
-    "order": "排序",
-    "orderOptions": {
-      "game": "游戏顺序",
-      "name": "名称 A 到 Z",
-      "level": "等级，最高在前"
-    },
-    "notSaved": "筛选不会保存。",
-    "reset": "重置",
-    "show": "{count, plural, other {显示{amount}只宠物}}"
-  },
-  "plan": {
-    "button": "计划",
-    "title": "宠物计划",
-    "description": "达成目标所需的食物、道具、属性和活动积分",
-    "saved": "计划已保存{date}",
-    "notSavedYet": "计划尚未保存",
-    "close": "关闭",
-    "save": "保存计划",
-    "exportButton": "导出到核心活动",
-    "exportNothing": "该计划没有可导出的进阶分数。",
-    "export": {
-      "advancement": "宠物进阶分数",
-      "commonMark": "Common Wild Marks",
-      "advancedMark": "Advanced Wild Marks",
-      "marksDetail": "按资源页统计。"
-    },
-    "noPets": "添加已解锁的宠物即可规划其等级。",
-    "add": {
-      "title": "添加宠物",
-      "selectLabel": "要添加的宠物",
-      "button": "添加宠物",
-      "allIn": "所有已解锁的宠物都已在计划中。",
-      "noneUnlocked": "请先在宠物页解锁宠物，才能为其制定计划。"
-    },
-    "block": {
-      "rarities": {
         "Common": "普通",
         "Uncommon": "优秀",
         "Rare": "稀有",
         "Epic": "史诗",
         "Legendary": "传说"
-      },
-      "maxLevel": "最高{max}级",
-      "remove": "移除",
-      "removeLabel": "从计划中移除{pet}",
-      "current": "当前等级",
-      "to": "到",
-      "goal": "目标等级（最高{max}）",
-      "goalLabel": "{pet}目标等级",
-      "payAdvancement": "在目标处支付进阶",
-      "paysCurrent": "{level}级时未进阶，因此要支付该次进阶。"
     },
-    "result": {
-      "title": "{count, plural, other {{amount}只宠物}}的结果",
-      "resources": "资源，全部宠物",
-      "byPet": "按宠物",
-      "heads": {
-        "pet": "宠物",
-        "levels": "等级",
-        "food": "食物",
-        "power": "战力"
-      },
-      "powerGain": "+{value}",
-      "percentGain": "+{value}%",
-      "unknown": "未知",
-      "gains": "收益",
-      "gainNames": {
-        "levels": "提升的等级",
-        "advancements": "进阶",
-        "attack": "部队攻击",
-        "defense": "部队防御",
-        "power": "战力",
-        "score": "进阶分数"
-      },
-      "unknownPowerNote": "数据包中没有此计划中某个等级的进阶战力，因此战力增加为未知。",
-      "eventPoints": "活动积分",
-      "events": {
-        "svs": "SvS",
-        "allianceShowdown": "Alliance Showdown",
-        "kingOfIcefield": "King of Icefield",
-        "hallOfChief": "Hall of Chief"
-      },
-      "notScored": "不计分",
-      "eventNote": "活动积分等于进阶分数乘以各活动计分行的积分。",
-      "scoreSourceNote": "40 到 100 级的进阶分数与活动说明一致。10 到 30 级来自同一来源（WoS Tools）。"
+    "unlock": {
+        "afterFurnace": "第{days}天且 Furnace {level}",
+        "afterPet": "第{days}天且{pet} {level}级"
+    },
+    "summary": {
+        "unlocked": "已解锁",
+        "unlockedValue": "{count} / {total}",
+        "unlockedNote": "由你设置",
+        "power": "总战力",
+        "powerNote": "已解锁宠物的等级、进阶和精炼战力",
+        "powerUnknown": "已解锁宠物的等级、进阶和精炼战力，另有{amount}项未知",
+        "next": "下一个解锁",
+        "allUnlocked": "全部已解锁",
+        "allUnlockedNote": "所有宠物均已解锁",
+        "lockedNote": "{count}只在之后的开服天数前未解锁"
+    },
+    "totals": {
+        "attackDefense": "部队攻击与防御",
+        "attack": "攻击",
+        "defense": "防御",
+        "lethality": "杀伤",
+        "health": "生命",
+        "gain": "+{value}%",
+        "types": {
+            "infantry": "盾兵",
+            "lancer": "矛兵",
+            "marksman": "弓兵"
+        }
+    },
+    "search": {
+        "label": "搜索宠物",
+        "placeholder": "按名称搜索{amount}只宠物"
+    },
+    "status": {
+        "showing": "显示{shown} / {total} {count, plural, other {只宠物}}。",
+        "filters": " 筛选：{list}。",
+        "filterNames": {
+            "rarity": "稀有度",
+            "status": "状态",
+            "advanced": "进阶",
+            "order": "排序"
+        },
+        "readOnlyGoals": "目标在此处只读，请在计划中设置。目标与当前值相同表示没有目标。",
+        "showMore": "{count, plural, other {再显示{amount}只宠物}}"
+    },
+    "empty": {
+        "title": "没有匹配的宠物",
+        "description": "修改搜索或筛选，即可查看更多宠物。",
+        "reset": "重置筛选"
+    },
+    "toast": {
+        "lockedTitle": "已锁定{name}",
+        "lockedMessage": "其等级、进阶和精炼会保留。",
+        "undo": "撤销"
+    },
+    "card": {
+        "summary": "{rarity} · 最高{max}级",
+        "unlocked": "已解锁",
+        "unlockedLabel": "{pet}已解锁",
+        "cooldown": "冷却{time}",
+        "cooldownByTier": "冷却时间随阶段变化",
+        "cooldownUnknown": "冷却时间未知",
+        "skillTiers": "{count, plural, other {{amount}个技能阶段}}",
+        "unlockRule": "解锁条件",
+        "ruleMet": "你已满足此条件",
+        "level": "等级（最高{max}）",
+        "levelLabel": "{pet}等级",
+        "goal": "目标{level}",
+        "noGoal": "无目标",
+        "advanced": "进阶",
+        "advancedHint": "可在 10、20、30 级等设置进阶。",
+        "refinement": "精炼",
+        "refinementMax": "每项最高{max}%",
+        "refineLabel": "{pet} {stat}",
+        "percentSign": "%",
+        "attack": "攻击 +{value}%",
+        "defense": "防御 +{value}%",
+        "power": "战力{value}",
+        "powerUnknown": "战力未知",
+        "powerParts": "等级与进阶{base}，精炼{refining}"
+    },
+    "filters": {
+        "button": "筛选",
+        "title": "筛选",
+        "description": "选择宠物列表显示的内容",
+        "rarity": "稀有度",
+        "rarityAll": "全部{amount}",
+        "rarityOption": "{rarity} {amount}",
+        "rarities": {
+            "Common": "普通",
+            "Uncommon": "优秀",
+            "Rare": "稀有",
+            "Epic": "史诗",
+            "Legendary": "传说"
+        },
+        "status": "状态",
+        "statusOptions": {
+            "all": "全部宠物",
+            "unlocked": "已解锁",
+            "locked": "未解锁"
+        },
+        "advanced": "进阶",
+        "advancedOptions": {
+            "any": "不限",
+            "advanced": "已进阶",
+            "notAdvanced": "未进阶"
+        },
+        "order": "排序",
+        "orderOptions": {
+            "game": "游戏顺序",
+            "name": "名称 A 到 Z",
+            "level": "等级，最高在前"
+        },
+        "notSaved": "筛选不会保存。",
+        "reset": "重置",
+        "show": "{count, plural, other {显示{amount}只宠物}}"
+    },
+    "plan": {
+        "button": "计划",
+        "title": "宠物计划",
+        "description": "达成目标所需的食物、道具、属性和活动积分",
+        "saved": "计划已保存{date}",
+        "notSavedYet": "计划尚未保存",
+        "close": "关闭",
+        "save": "保存计划",
+        "exportButton": "导出到核心活动",
+        "exportNothing": "该计划没有可导出的进阶分数。",
+        "export": {
+            "advancement": "宠物进阶分数",
+            "commonMark": "Common Wild Marks",
+            "advancedMark": "Advanced Wild Marks",
+            "marksDetail": "按资源页统计。"
+        },
+        "noPets": "添加已解锁的宠物即可规划其等级。",
+        "add": {
+            "title": "添加宠物",
+            "selectLabel": "要添加的宠物",
+            "button": "添加宠物",
+            "allIn": "所有已解锁的宠物都已在计划中。",
+            "noneUnlocked": "请先在宠物页解锁宠物，才能为其制定计划。"
+        },
+        "block": {
+            "rarities": {
+                "Common": "普通",
+                "Uncommon": "优秀",
+                "Rare": "稀有",
+                "Epic": "史诗",
+                "Legendary": "传说"
+            },
+            "maxLevel": "最高{max}级",
+            "remove": "移除",
+            "removeLabel": "从计划中移除{pet}",
+            "current": "当前等级",
+            "to": "到",
+            "goal": "目标等级（最高{max}）",
+            "goalLabel": "{pet}目标等级",
+            "payAdvancement": "在目标处支付进阶",
+            "paysCurrent": "{level}级时未进阶，因此要支付该次进阶。"
+        },
+        "result": {
+            "title": "{count, plural, other {{amount}只宠物}}的结果",
+            "resources": "资源，全部宠物",
+            "byPet": "按宠物",
+            "heads": {
+                "pet": "宠物",
+                "levels": "等级",
+                "food": "食物",
+                "power": "战力"
+            },
+            "powerGain": "+{value}",
+            "percentGain": "+{value}%",
+            "unknown": "未知",
+            "gains": "收益",
+            "gainNames": {
+                "levels": "提升的等级",
+                "advancements": "进阶",
+                "attack": "部队攻击",
+                "defense": "部队防御",
+                "power": "战力",
+                "score": "进阶分数"
+            },
+            "unknownPowerNote": "数据包中没有此计划中某个等级的进阶战力，因此战力增加为未知。",
+            "eventPoints": "活动积分",
+            "events": {
+                "svs": "SvS",
+                "allianceShowdown": "Alliance Showdown",
+                "kingOfIcefield": "King of Icefield",
+                "hallOfChief": "Hall of Chief"
+            },
+            "notScored": "不计分",
+            "eventNote": "活动积分等于进阶分数乘以各活动计分行的积分。",
+            "scoreSourceNote": "40 到 100 级的进阶分数与活动说明一致。10 到 30 级来自同一来源（WoS Tools）。"
+        }
     }
-  }
 }

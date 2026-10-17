@@ -1,46 +1,46 @@
 {
-  "line": "Las {missions} misiones diarias del juego con todos los niveles conocidos, las recompensas de la barra de actividad y las tareas de rutina.",
-  "missionCount": "{count, plural, one {{amount} misión} other {{amount} misiones}}",
-  "tabs": {
-    "label": "Tareas diarias",
-    "missions": "Misiones del juego",
-    "routine": "Tareas de rutina"
-  },
-  "totals": {
-    "title": "Totales de actividad",
-    "missions": "Misiones del juego",
-    "levelOne": "Nivel 1 de cada misión",
-    "allLevels": "Todos los niveles conocidos",
-    "topReward": "Nivel de la recompensa máxima",
-    "explanation": "Una misión suma la Actividad de cada nivel completado, hasta el nivel alcanzado. El nivel 1 de las {missions} misiones suma {levelOne} de Actividad. Todos los niveles conocidos de las {missions} misiones suman {allLevels}."
-  },
-  "bar": {
-    "title": "Recompensas de la barra de actividad",
-    "activeness": "Actividad",
-    "rewards": "Recompensas"
-  },
-  "missions": {
-    "title": "Misiones del juego",
-    "summary": "{missions}, {levels}",
-    "levelCount": "{count, plural, one {{amount} nivel conocido} other {{amount} niveles conocidos}}",
-    "level": "Nivel",
-    "task": "Tarea",
-    "target": "Meta",
-    "activeness": "Actividad",
-    "otherRewards": "Otras recompensas",
-    "levelLabel": "N{level}",
-    "sumOne": "1 nivel: {total} de Actividad",
-    "sumMany": "{count} niveles: {parts} = {total} de Actividad",
-    "plus": "+{amount}",
-    "noOtherRewards": "Ninguna"
-  },
-  "routine": {
-    "title": "Tareas de rutina",
-    "count": "{count, plural, one {{amount} tarea} other {{amount} tareas}}"
-  },
-  "missing": {
-    "title": "Aún no está en los datos",
-    "levels": "Otros niveles de misiones. Cada misión tiene de {min} a {max} niveles conocidos. Los niveles más altos aún no están en el paquete de datos, así que los totales pueden crecer.",
-    "reset": "Hora de reinicio diario. El paquete de datos no la incluye. El rastreador usa su propio valor predeterminado de {time} UTC y lo marca como predeterminado de la app."
-  }
+    "line": "Las {missions} misiones diarias del juego con todos los niveles conocidos, las recompensas de la barra de actividad y las tareas de rutina.",
+    "missionCount": "{count, plural, one {{amount} misión} other {{amount} misiones}}",
+    "tabs": {
+        "label": "Tareas diarias",
+        "missions": "Misiones del juego",
+        "routine": "Tareas de rutina"
+    },
+    "totals": {
+        "title": "Totales de actividad",
+        "missions": "Misiones del juego",
+        "levelOne": "Nivel 1 de cada misión",
+        "allLevels": "Todos los niveles conocidos",
+        "topReward": "Nivel de la recompensa máxima",
+        "explanation": "Una misión suma la Actividad de cada nivel completado, hasta el nivel alcanzado. El nivel 1 de las {missions} misiones suma {levelOne} de Actividad. Todos los niveles conocidos de las {missions} misiones suman {allLevels}."
+    },
+    "bar": {
+        "title": "Recompensas de la barra de actividad",
+        "activeness": "Actividad",
+        "rewards": "Recompensas"
+    },
+    "missions": {
+        "title": "Misiones del juego",
+        "summary": "{missions}, {levels}",
+        "levelCount": "{count, plural, one {{amount} nivel conocido} other {{amount} niveles conocidos}}",
+        "level": "Nivel",
+        "task": "Tarea",
+        "target": "Meta",
+        "activeness": "Actividad",
+        "otherRewards": "Otras recompensas",
+        "levelLabel": "N{level}",
+        "sumOne": "1 nivel: {total} de Actividad",
+        "sumMany": "{count} niveles: {parts} = {total} de Actividad",
+        "plus": "+{amount}",
+        "noOtherRewards": "Ninguna"
+    },
+    "routine": {
+        "title": "Tareas de rutina",
+        "count": "{count, plural, one {{amount} tarea} other {{amount} tareas}}"
+    },
+    "missing": {
+        "title": "Aún no está en los datos",
+        "levels": "Otros niveles de misiones. Cada misión tiene de {min} a {max} niveles conocidos. Los niveles más altos aún no están en el paquete de datos, así que los totales pueden crecer.",
+        "reset": "Hora de reinicio diario. El paquete de datos no la incluye. El rastreador usa su propio valor predeterminado de {time} UTC y lo marca como predeterminado de la app."
+    }
 }

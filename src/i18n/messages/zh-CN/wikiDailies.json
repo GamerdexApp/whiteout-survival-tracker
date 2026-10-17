@@ -1,46 +1,46 @@
 {
-  "line": "{missions}游戏内每日任务，含所有已知等级，另有活跃度进度条奖励和日常任务。",
-  "missionCount": "{count, plural, other {{amount}个}}",
-  "tabs": {
-    "label": "每日任务",
-    "missions": "游戏内任务",
-    "routine": "日常任务"
-  },
-  "totals": {
-    "title": "活跃度合计",
-    "missions": "游戏内任务",
-    "levelOne": "每个任务的 1 级",
-    "allLevels": "所有已知等级",
-    "topReward": "最高奖励等级",
-    "explanation": "每个任务会累加直到已达等级的每一级活跃度。全部{missions}个任务的 1 级共{levelOne}活跃度。全部{missions}个任务的所有已知等级共{allLevels}。"
-  },
-  "bar": {
-    "title": "活跃度进度条奖励",
-    "activeness": "活跃度",
-    "rewards": "奖励"
-  },
-  "missions": {
-    "title": "游戏内任务",
-    "summary": "{missions}，{levels}",
-    "levelCount": "{count, plural, other {{amount}个已知等级}}",
-    "level": "等级",
-    "task": "任务",
-    "target": "目标",
-    "activeness": "活跃度",
-    "otherRewards": "其他奖励",
-    "levelLabel": "{level}级",
-    "sumOne": "1 级：{total}活跃度",
-    "sumMany": "{count}级：{parts} = {total}活跃度",
-    "plus": "+{amount}",
-    "noOtherRewards": "无"
-  },
-  "routine": {
-    "title": "日常任务",
-    "count": "{count, plural, other {{amount}项任务}}"
-  },
-  "missing": {
-    "title": "数据中尚未收录",
-    "levels": "其他任务等级。每个任务有{min}到{max}个已知等级。更高等级尚未收录到数据包中，因此合计可能增加。",
-    "reset": "每日重置时间。数据包中没有。工具使用自己的默认值{time} UTC，并标注为应用默认。"
-  }
+    "line": "{missions}游戏内每日任务，含所有已知等级，另有活跃度进度条奖励和日常任务。",
+    "missionCount": "{count, plural, other {{amount}个}}",
+    "tabs": {
+        "label": "每日任务",
+        "missions": "游戏内任务",
+        "routine": "日常任务"
+    },
+    "totals": {
+        "title": "活跃度合计",
+        "missions": "游戏内任务",
+        "levelOne": "每个任务的 1 级",
+        "allLevels": "所有已知等级",
+        "topReward": "最高奖励等级",
+        "explanation": "每个任务会累加直到已达等级的每一级活跃度。全部{missions}个任务的 1 级共{levelOne}活跃度。全部{missions}个任务的所有已知等级共{allLevels}。"
+    },
+    "bar": {
+        "title": "活跃度进度条奖励",
+        "activeness": "活跃度",
+        "rewards": "奖励"
+    },
+    "missions": {
+        "title": "游戏内任务",
+        "summary": "{missions}，{levels}",
+        "levelCount": "{count, plural, other {{amount}个已知等级}}",
+        "level": "等级",
+        "task": "任务",
+        "target": "目标",
+        "activeness": "活跃度",
+        "otherRewards": "其他奖励",
+        "levelLabel": "{level}级",
+        "sumOne": "1 级：{total}活跃度",
+        "sumMany": "{count}级：{parts} = {total}活跃度",
+        "plus": "+{amount}",
+        "noOtherRewards": "无"
+    },
+    "routine": {
+        "title": "日常任务",
+        "count": "{count, plural, other {{amount}项任务}}"
+    },
+    "missing": {
+        "title": "数据中尚未收录",
+        "levels": "其他任务等级。每个任务有{min}到{max}个已知等级。更高等级尚未收录到数据包中，因此合计可能增加。",
+        "reset": "每日重置时间。数据包中没有。工具使用自己的默认值{time} UTC，并标注为应用默认。"
+    }
 }

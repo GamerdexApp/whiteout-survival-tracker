@@ -1,215 +1,215 @@
 {
-  "defaultSetName": "Set {number}",
-  "troop": {
-    "infantry": "Infanteri",
-    "lancer": "Lancer",
-    "marksman": "Marksman"
-  },
-  "lock": {
-    "needsMythic": "Butuh perlengkapan Mythic",
-    "needsBoth": "Butuh peningkatan 100 dan penempaan mastery level 10",
-    "needsEnhancement": "Butuh peningkatan 100",
-    "needsForging": "Butuh penempaan mastery level 10"
-  },
-  "tab": {
-    "deletedTitle": "{name} dihapus",
-    "deletedMessage": "Keempat bagian dan targetnya dihapus.",
-    "undo": "Urungkan",
-    "tiles": {
-      "sets": "Set perlengkapan",
-      "power": "Kekuatan perlengkapan, semua set",
-      "ofPieces": "{count} dari {total}",
-      "atEnhancementMax": "Bagian di peningkatan 100",
-      "empowered": "Bagian yang dikuatkan",
-      "ready": "Bagian siap dikuatkan"
+    "defaultSetName": "Set {number}",
+    "troop": {
+        "infantry": "Infanteri",
+        "lancer": "Lancer",
+        "marksman": "Marksman"
     },
-    "search": "Cari set perlengkapan",
-    "filters": "Filter",
-    "plan": "Rencana",
-    "showing": "Menampilkan {shown} dari {total} set perlengkapan. Target hanya bisa dibaca di sini dan diatur di Rencana.",
-    "empty": {
-      "title": "Belum ada set perlengkapan",
-      "description": "Satu set perlengkapan berisi satu Goggles, Gloves, Belt, dan Boots. Tambah set untuk melacak levelnya."
+    "lock": {
+        "needsMythic": "Butuh perlengkapan Mythic",
+        "needsBoth": "Butuh peningkatan 100 dan penempaan mastery level 10",
+        "needsEnhancement": "Butuh peningkatan 100",
+        "needsForging": "Butuh penempaan mastery level 10"
     },
-    "addSet": "Tambah set perlengkapan",
-    "unknownHero": "Pahlawan tidak diketahui",
-    "power": "Kekuatan {amount}",
-    "enhancementLine": "Peningk. {line}",
-    "troopHint": "Jenis pasukan menentukan kolom statistik di bawah.",
-    "editSet": "Ubah set",
-    "deleteSet": "Hapus set"
-  },
-  "pieceCard": {
-    "name": "{set} {slot}",
-    "forgingRow": "{name} (+{percent}%)",
-    "none": "Tidak ada",
-    "noGoal": "Tanpa target",
-    "goal": "Target: {value}",
-    "quality": "Kualitas perlengkapan",
-    "qualities": {
-      "mythic": "Mythic",
-      "epic": "Epic",
-      "rare": "Rare",
-      "uncommon": "Uncommon",
-      "common": "Common"
+    "tab": {
+        "deletedTitle": "{name} dihapus",
+        "deletedMessage": "Keempat bagian dan targetnya dihapus.",
+        "undo": "Urungkan",
+        "tiles": {
+            "sets": "Set perlengkapan",
+            "power": "Kekuatan perlengkapan, semua set",
+            "ofPieces": "{count} dari {total}",
+            "atEnhancementMax": "Bagian di peningkatan 100",
+            "empowered": "Bagian yang dikuatkan",
+            "ready": "Bagian siap dikuatkan"
+        },
+        "search": "Cari set perlengkapan",
+        "filters": "Filter",
+        "plan": "Rencana",
+        "showing": "Menampilkan {shown} dari {total} set perlengkapan. Target hanya bisa dibaca di sini dan diatur di Rencana.",
+        "empty": {
+            "title": "Belum ada set perlengkapan",
+            "description": "Satu set perlengkapan berisi satu Goggles, Gloves, Belt, dan Boots. Tambah set untuk melacak levelnya."
+        },
+        "addSet": "Tambah set perlengkapan",
+        "unknownHero": "Pahlawan tidak diketahui",
+        "power": "Kekuatan {amount}",
+        "enhancementLine": "Peningk. {line}",
+        "troopHint": "Jenis pasukan menentukan kolom statistik di bawah.",
+        "editSet": "Ubah set",
+        "deleteSet": "Hapus set"
     },
-    "forgingRowLabel": "Baris penempaan mastery",
-    "forgingStops": "Penempaan mastery berhenti di level 10 sampai peningkatan mencapai 100.",
-    "lowQualityNote": "Hanya perlengkapan Mythic yang bisa ditempa dan dikuatkan. Kekuatan mengikuti tabel Mythic dengan kekuatan dasar kualitas ini, yang belum dikonfirmasi game.",
-    "enhancement": "Peningkatan",
-    "enhancementLabel": "Peningkatan {name}",
-    "enhancementSlider": "Penggeser peningkatan {name}",
-    "empowerment": "Penguatan",
-    "empowermentLabel": "Penguatan {name}",
-    "empowermentSlider": "Penggeser penguatan {name}",
-    "outOf": "/ {max}",
-    "milestone": "Penguatan {level} tercapai: {stat}",
-    "piecePower": "Kekuatan bagian",
-    "health": "Darah",
-    "percent": "{value}%"
-  },
-  "statLines": {
-    "title": "Baris statistik, 4 slot kali 3 jenis pasukan",
-    "troopThisSet": "{troop} (set ini)",
-    "stat": "{name} {value}",
-    "health": "HP {value}",
-    "percentStat": "{name} {value}%",
-    "none": "Tidak ada",
-    "note": "Nilai pada level bagian {name}, termasuk penempaan mastery, dibulatkan ke bawah. Statistik berasal dari WoS Tools, yang berhenti di 192 dari 200 level. Kolom yang disorot adalah jenis pasukan set ini."
-  },
-  "filters": {
-    "title": "Filter",
-    "description": "Pilih set perlengkapan yang ditampilkan daftar",
-    "reset": "Atur ulang",
-    "show": "Tampilkan {amount} {count, plural, other {set}}",
-    "all": "Semua",
-    "troopType": "Jenis pasukan",
-    "linkedHero": "Pahlawan terhubung",
-    "heroOptions": {
-      "all": "Semua",
-      "linked": "Terhubung ke pahlawan",
-      "unlinked": "Tidak terhubung"
+    "pieceCard": {
+        "name": "{set} {slot}",
+        "forgingRow": "{name} (+{percent}%)",
+        "none": "Tidak ada",
+        "noGoal": "Tanpa target",
+        "goal": "Target: {value}",
+        "quality": "Kualitas perlengkapan",
+        "qualities": {
+            "mythic": "Mythic",
+            "epic": "Epic",
+            "rare": "Rare",
+            "uncommon": "Uncommon",
+            "common": "Common"
+        },
+        "forgingRowLabel": "Baris penempaan mastery",
+        "forgingStops": "Penempaan mastery berhenti di level 10 sampai peningkatan mencapai 100.",
+        "lowQualityNote": "Hanya perlengkapan Mythic yang bisa ditempa dan dikuatkan. Kekuatan mengikuti tabel Mythic dengan kekuatan dasar kualitas ini, yang belum dikonfirmasi game.",
+        "enhancement": "Peningkatan",
+        "enhancementLabel": "Peningkatan {name}",
+        "enhancementSlider": "Penggeser peningkatan {name}",
+        "empowerment": "Penguatan",
+        "empowermentLabel": "Penguatan {name}",
+        "empowermentSlider": "Penggeser penguatan {name}",
+        "outOf": "/ {max}",
+        "milestone": "Penguatan {level} tercapai: {stat}",
+        "piecePower": "Kekuatan bagian",
+        "health": "Darah",
+        "percent": "{value}%"
     },
-    "order": "Urutan",
-    "orderOptions": {
-      "power": "Total kekuatan, tertinggi dulu",
-      "created": "Urutan ditambahkan",
-      "name": "Nama, A ke Z",
-      "hero": "Nama pahlawan, A ke Z"
+    "statLines": {
+        "title": "Baris statistik, 4 slot kali 3 jenis pasukan",
+        "troopThisSet": "{troop} (set ini)",
+        "stat": "{name} {value}",
+        "health": "HP {value}",
+        "percentStat": "{name} {value}%",
+        "none": "Tidak ada",
+        "note": "Nilai pada level bagian {name}, termasuk penempaan mastery, dibulatkan ke bawah. Statistik berasal dari WoS Tools, yang berhenti di 192 dari 200 level. Kolom yang disorot adalah jenis pasukan set ini."
     },
-    "notSaved": "Filter tidak disimpan."
-  },
-  "setDialogs": {
-    "cancel": "Batal",
-    "setName": "Nama set",
-    "nameRequired": "Isi nama.",
-    "linkedHero": "Pahlawan terhubung",
-    "add": {
-      "title": "Tambah set perlengkapan",
-      "linkedHeroHint": "Memilih pahlawan mengatur jenis pasukan sesuai kelasnya.",
-      "troopType": "Jenis pasukan",
-      "troopTypeHint": "Jenis pasukan menentukan kolom statistik set.",
-      "quality": "Kualitas perlengkapan",
-      "qualityHint": "Hanya perlengkapan Mythic yang bisa ditempa dan dikuatkan.",
-      "qualityHintCopy": "Set salinan mempertahankan kualitas tiap bagian.",
-      "qualities": {
-        "mythic": "Mythic",
-        "epic": "Epic",
-        "rare": "Rare",
-        "uncommon": "Uncommon",
-        "common": "Common"
-      },
-      "startFrom": "Mulai dari",
-      "startFromHint": "Target tidak disalin. Target diatur di Rencana.",
-      "emptySet": "Set kosong",
-      "copyFrom": "Salin level dari {name}",
-      "savesAtOnce": "Setiap perubahan langsung tersimpan dan set baru tampil terpilih.",
-      "submit": "Tambah set perlengkapan"
+    "filters": {
+        "title": "Filter",
+        "description": "Pilih set perlengkapan yang ditampilkan daftar",
+        "reset": "Atur ulang",
+        "show": "Tampilkan {amount} {count, plural, other {set}}",
+        "all": "Semua",
+        "troopType": "Jenis pasukan",
+        "linkedHero": "Pahlawan terhubung",
+        "heroOptions": {
+            "all": "Semua",
+            "linked": "Terhubung ke pahlawan",
+            "unlinked": "Tidak terhubung"
+        },
+        "order": "Urutan",
+        "orderOptions": {
+            "power": "Total kekuatan, tertinggi dulu",
+            "created": "Urutan ditambahkan",
+            "name": "Nama, A ke Z",
+            "hero": "Nama pahlawan, A ke Z"
+        },
+        "notSaved": "Filter tidak disimpan."
     },
-    "delete": {
-      "title": "Hapus {name}?",
-      "titleFallback": "Hapus set",
-      "confirm": "Hapus set",
-      "body": "Keempat bagian {name} dan targetnya dihapus dari perangkat ini.",
-      "undoNote": "Kamu bisa mengurungkan selama 10 detik setelah menghapus.",
-      "exportBackup": "Ekspor cadangan dulu"
+    "setDialogs": {
+        "cancel": "Batal",
+        "setName": "Nama set",
+        "nameRequired": "Isi nama.",
+        "linkedHero": "Pahlawan terhubung",
+        "add": {
+            "title": "Tambah set perlengkapan",
+            "linkedHeroHint": "Memilih pahlawan mengatur jenis pasukan sesuai kelasnya.",
+            "troopType": "Jenis pasukan",
+            "troopTypeHint": "Jenis pasukan menentukan kolom statistik set.",
+            "quality": "Kualitas perlengkapan",
+            "qualityHint": "Hanya perlengkapan Mythic yang bisa ditempa dan dikuatkan.",
+            "qualityHintCopy": "Set salinan mempertahankan kualitas tiap bagian.",
+            "qualities": {
+                "mythic": "Mythic",
+                "epic": "Epic",
+                "rare": "Rare",
+                "uncommon": "Uncommon",
+                "common": "Common"
+            },
+            "startFrom": "Mulai dari",
+            "startFromHint": "Target tidak disalin. Target diatur di Rencana.",
+            "emptySet": "Set kosong",
+            "copyFrom": "Salin level dari {name}",
+            "savesAtOnce": "Setiap perubahan langsung tersimpan dan set baru tampil terpilih.",
+            "submit": "Tambah set perlengkapan"
+        },
+        "delete": {
+            "title": "Hapus {name}?",
+            "titleFallback": "Hapus set",
+            "confirm": "Hapus set",
+            "body": "Keempat bagian {name} dan targetnya dihapus dari perangkat ini.",
+            "undoNote": "Kamu bisa mengurungkan selama 10 detik setelah menghapus.",
+            "exportBackup": "Ekspor cadangan dulu"
+        },
+        "edit": {
+            "title": "Ubah {name}",
+            "titleFallback": "Ubah set",
+            "submit": "Simpan set"
+        },
+        "heroSelect": {
+            "none": "Tanpa pahlawan",
+            "option": "{name} ({class}, Gen {generation})"
+        }
     },
-    "edit": {
-      "title": "Ubah {name}",
-      "titleFallback": "Ubah set",
-      "submit": "Simpan set"
+    "plan": {
+        "title": "Rencanakan Perlengkapan Pahlawan",
+        "description": "Penempaan mastery, peningkatan, dan penguatan bagian apa pun, dari set mana pun",
+        "saved": "Rencana disimpan {time}",
+        "close": "Tutup",
+        "save": "Simpan rencana",
+        "empty": "Belum ada bagian di rencana. Tambah bagian di atas, lalu naikkan targetnya.",
+        "pieceTitle": "{set} · {slot}",
+        "milestone": "penguatan {level}, {event}, {stat}",
+        "addPiece": {
+            "title": "Tambah bagian",
+            "noSets": "Tambah set perlengkapan di tab Perlengkapan Pahlawan dulu.",
+            "set": "Set perlengkapan",
+            "setOption": "{name} ({troop})",
+            "piece": "Bagian",
+            "submit": "Tambah bagian",
+            "taken": "Bagian ini sudah ada di rencana."
+        },
+        "qualities": {
+            "mythic": "mythic",
+            "epic": "epic",
+            "rare": "rare",
+            "uncommon": "uncommon",
+            "common": "common"
+        },
+        "remove": "Hapus {title} dari rencana",
+        "forgingRow": "{name} (+{percent}%)",
+        "none": "Tidak ada",
+        "forgingCurrent": "Baris penempaan saat ini",
+        "forgingGoal": "Baris penempaan target",
+        "forgingGoalLabel": "Target penempaan {title}",
+        "forgingStops": "Penempaan mastery berhenti di level 10 sampai target peningkatan mencapai 100.",
+        "enhancement": "Peningkatan",
+        "enhancementGoal": "Target peningkatan {title}",
+        "empowerment": "Penguatan",
+        "empowermentGoal": "Target penguatan {title}",
+        "from": "{value} ke",
+        "result": {
+            "title": "Hasil untuk {amount} {count, plural, other {bagian}}",
+            "power": "Kekuatan",
+            "powerLines": {
+                "gained": "Kekuatan didapat",
+                "before": "Kekuatan bagian ini sebelumnya",
+                "after": "Kekuatan bagian ini sesudahnya"
+            },
+            "columns": {
+                "piece": "Bagian",
+                "forgingStatsUp": "Statistik penempaan naik",
+                "powerGained": "Kekuatan didapat"
+            },
+            "forgingStatsUp": "+{percent}% ({steps} langkah)",
+            "milestones": "Tonggak terbuka",
+            "milestoneLine": "{label}: {stat}",
+            "events": {
+                "svs": "SvS",
+                "allianceShowdown": "Alliance Showdown",
+                "kingOfIcefield": "King of Icefield"
+            },
+            "note": "Rencana Perlengkapan Pahlawan tidak punya kontrol kecepatan atau bonus. Kalkulator tidak mengembalikan waktu.",
+            "tableLabel": "Tabel hasil rencana"
+        }
     },
-    "heroSelect": {
-      "none": "Tanpa pahlawan",
-      "option": "{name} ({class}, Gen {generation})"
+    "export": {
+        "button": "Ekspor ke Core Events",
+        "nothing": "Rencana tidak butuh Essence Stones atau Mithril untuk diekspor.",
+        "essenceStones": "Essence Stones",
+        "mithril": "Mithril"
     }
-  },
-  "plan": {
-    "title": "Rencanakan Perlengkapan Pahlawan",
-    "description": "Penempaan mastery, peningkatan, dan penguatan bagian apa pun, dari set mana pun",
-    "saved": "Rencana disimpan {time}",
-    "close": "Tutup",
-    "save": "Simpan rencana",
-    "empty": "Belum ada bagian di rencana. Tambah bagian di atas, lalu naikkan targetnya.",
-    "pieceTitle": "{set} · {slot}",
-    "milestone": "penguatan {level}, {event}, {stat}",
-    "addPiece": {
-      "title": "Tambah bagian",
-      "noSets": "Tambah set perlengkapan di tab Perlengkapan Pahlawan dulu.",
-      "set": "Set perlengkapan",
-      "setOption": "{name} ({troop})",
-      "piece": "Bagian",
-      "submit": "Tambah bagian",
-      "taken": "Bagian ini sudah ada di rencana."
-    },
-    "qualities": {
-      "mythic": "mythic",
-      "epic": "epic",
-      "rare": "rare",
-      "uncommon": "uncommon",
-      "common": "common"
-    },
-    "remove": "Hapus {title} dari rencana",
-    "forgingRow": "{name} (+{percent}%)",
-    "none": "Tidak ada",
-    "forgingCurrent": "Baris penempaan saat ini",
-    "forgingGoal": "Baris penempaan target",
-    "forgingGoalLabel": "Target penempaan {title}",
-    "forgingStops": "Penempaan mastery berhenti di level 10 sampai target peningkatan mencapai 100.",
-    "enhancement": "Peningkatan",
-    "enhancementGoal": "Target peningkatan {title}",
-    "empowerment": "Penguatan",
-    "empowermentGoal": "Target penguatan {title}",
-    "from": "{value} ke",
-    "result": {
-      "title": "Hasil untuk {amount} {count, plural, other {bagian}}",
-      "power": "Kekuatan",
-      "powerLines": {
-        "gained": "Kekuatan didapat",
-        "before": "Kekuatan bagian ini sebelumnya",
-        "after": "Kekuatan bagian ini sesudahnya"
-      },
-      "columns": {
-        "piece": "Bagian",
-        "forgingStatsUp": "Statistik penempaan naik",
-        "powerGained": "Kekuatan didapat"
-      },
-      "forgingStatsUp": "+{percent}% ({steps} langkah)",
-      "milestones": "Tonggak terbuka",
-      "milestoneLine": "{label}: {stat}",
-      "events": {
-        "svs": "SvS",
-        "allianceShowdown": "Alliance Showdown",
-        "kingOfIcefield": "King of Icefield"
-      },
-      "note": "Rencana Perlengkapan Pahlawan tidak punya kontrol kecepatan atau bonus. Kalkulator tidak mengembalikan waktu.",
-      "tableLabel": "Tabel hasil rencana"
-    }
-  },
-  "export": {
-    "button": "Ekspor ke Core Events",
-    "nothing": "Rencana tidak butuh Essence Stones atau Mithril untuk diekspor.",
-    "essenceStones": "Essence Stones",
-    "mithril": "Mithril"
-  }
 }

@@ -1,85 +1,85 @@
 {
-  "nav": {
-    "main": "Principal",
-    "groups": {
-      "chief": "Chefe",
-      "alliance": "Aliança",
-      "account": "Conta",
-      "planner": "Planejador",
-      "wiki": "Wiki"
+    "nav": {
+        "main": "Principal",
+        "groups": {
+            "chief": "Chefe",
+            "alliance": "Aliança",
+            "account": "Conta",
+            "planner": "Planejador",
+            "wiki": "Wiki"
+        },
+        "items": {
+            "overview": "Visão geral",
+            "buildings": "Construções",
+            "daybreakIsland": "Daybreak Island",
+            "heroes": "Heróis",
+            "chiefGear": "Equipamento do Chefe",
+            "experts": "Especialistas",
+            "pets": "Pets",
+            "troops": "Tropas",
+            "research": "Pesquisa",
+            "alliance": "Aliança",
+            "facilities": "Instalações",
+            "tech": "Tecnologia",
+            "resources": "Recursos",
+            "bonuses": "Bônus",
+            "vip": "VIP",
+            "skins": "Skins",
+            "events": "Eventos",
+            "tundraAlbum": "Álbum da Tundra",
+            "coreEvents": "Eventos principais",
+            "dailies": "Diárias",
+            "history": "Histórico",
+            "wikiReference": "Referência",
+            "wikiTimeline": "Linha do tempo",
+            "settings": "Configurações",
+            "chiefs": "Chefes"
+        },
+        "upgradesRunning": ", {amount} {count, plural, one {melhoria} other {melhorias}} em andamento"
     },
-    "items": {
-      "overview": "Visão geral",
-      "buildings": "Construções",
-      "daybreakIsland": "Daybreak Island",
-      "heroes": "Heróis",
-      "chiefGear": "Equipamento do Chefe",
-      "experts": "Especialistas",
-      "pets": "Pets",
-      "troops": "Tropas",
-      "research": "Pesquisa",
-      "alliance": "Aliança",
-      "facilities": "Instalações",
-      "tech": "Tecnologia",
-      "resources": "Recursos",
-      "bonuses": "Bônus",
-      "vip": "VIP",
-      "skins": "Skins",
-      "events": "Eventos",
-      "tundraAlbum": "Álbum da Tundra",
-      "coreEvents": "Eventos principais",
-      "dailies": "Diárias",
-      "history": "Histórico",
-      "wikiReference": "Referência",
-      "wikiTimeline": "Linha do tempo",
-      "settings": "Configurações",
-      "chiefs": "Chefes"
+    "appShell": {
+        "skipToContent": "Ir para o conteúdo",
+        "closeMenu": "Fechar menu"
     },
-    "upgradesRunning": ", {amount} {count, plural, one {melhoria} other {melhorias}} em andamento"
-  },
-  "appShell": {
-    "skipToContent": "Ir para o conteúdo",
-    "closeMenu": "Fechar menu"
-  },
-  "appBar": {
-    "openMenu": "Abrir menu"
-  },
-  "chiefGate": {
-    "emptyTitle": "Nenhum chefe selecionado",
-    "emptyDescription": "Crie um chefe para começar a acompanhar. Tudo fica neste navegador.",
-    "newChief": "Novo chefe"
-  },
-  "chiefSwitcher": {
-    "chiefs": "Chefes",
-    "active": "Ativo",
-    "allChiefs": "Todos os chefes",
-    "newChief": "Novo chefe",
-    "loading": "Carregando",
-    "noChiefYet": "Nenhum chefe ainda",
-    "sectionLabel": "Chefe",
-    "switchChief": "Trocar de chefe"
-  },
-  "footer": {
-    "tagline": "Acompanhe seus chefes, construções, heróis e pesquisas de Whiteout Survival em um só lugar.",
-    "product": "Tracker",
-    "support": "Suporte",
-    "wikiReference": "Referência da Wiki",
-    "wikiTimeline": "Linha do tempo da Wiki",
-    "backupAndData": "Backup e dados",
-    "aboutApp": "Sobre",
-    "disclaimerTitle": "Aviso legal",
-    "disclaimer": "Este aplicativo não é afiliado, endossado nem conectado a Whiteout Survival ou à Century Games. Todas as marcas e todo o conteúdo do jogo pertencem aos seus respectivos donos.",
-    "copyright": "© {year} {appName}",
-    "framework": "Criado com o framework Gamerdex, uma base compartilhada para trackers gratuitos de progresso em jogos. Seus dados ficam no seu navegador."
-  },
-  "notFound": {
-    "title": "Esta página não existe",
-    "description": "O link pode ser antigo ou ter sido digitado errado. Seus chefes estão seguros e nada foi alterado.",
-    "didYouMean": "Você quis dizer <link>{name}</link>?",
-    "goToOverview": "Ir para a Visão geral",
-    "jumpTo": "Ou vá para"
-  },
-  "pageHeader": {
-    "wiki": "Wiki"
-  }
+    "appBar": {
+        "openMenu": "Abrir menu"
+    },
+    "chiefGate": {
+        "emptyTitle": "Nenhum chefe selecionado",
+        "emptyDescription": "Crie um chefe para começar a acompanhar. Tudo fica neste navegador.",
+        "newChief": "Novo chefe"
+    },
+    "chiefSwitcher": {
+        "chiefs": "Chefes",
+        "active": "Ativo",
+        "allChiefs": "Todos os chefes",
+        "newChief": "Novo chefe",
+        "loading": "Carregando",
+        "noChiefYet": "Nenhum chefe ainda",
+        "sectionLabel": "Chefe",
+        "switchChief": "Trocar de chefe"
+    },
+    "footer": {
+        "tagline": "Acompanhe seus chefes, construções, heróis e pesquisas de Whiteout Survival em um só lugar.",
+        "product": "Tracker",
+        "support": "Suporte",
+        "wikiReference": "Referência da Wiki",
+        "wikiTimeline": "Linha do tempo da Wiki",
+        "backupAndData": "Backup e dados",
+        "aboutApp": "Sobre",
+        "disclaimerTitle": "Aviso legal",
+        "disclaimer": "Este aplicativo não é afiliado, endossado nem conectado a Whiteout Survival ou à Century Games. Todas as marcas e todo o conteúdo do jogo pertencem aos seus respectivos donos.",
+        "copyright": "© {year} {appName}",
+        "framework": "Criado com o framework Gamerdex, uma base compartilhada para trackers gratuitos de progresso em jogos. Seus dados ficam no seu navegador."
+    },
+    "notFound": {
+        "title": "Esta página não existe",
+        "description": "O link pode ser antigo ou ter sido digitado errado. Seus chefes estão seguros e nada foi alterado.",
+        "didYouMean": "Você quis dizer <link>{name}</link>?",
+        "goToOverview": "Ir para a Visão geral",
+        "jumpTo": "Ou vá para"
+    },
+    "pageHeader": {
+        "wiki": "Wiki"
+    }
 }

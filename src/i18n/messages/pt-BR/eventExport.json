@@ -1,32 +1,32 @@
 {
-  "title": "Exportar para Eventos principais",
-  "description": "Escolha o evento e depois os dias",
-  "events": {
-    "svs": "SvS",
-    "showdown": "Alliance Showdown",
-    "king": "King of Icefield",
-    "hall": "Hall of Chief"
-  },
-  "stepEvent": "1. Evento",
-  "stepDay": "{number}. Dia do evento {group}",
-  "stepDayPlain": "Dia do evento",
-  "stepItems": "{number}. Itens deste plano",
-  "noDay": "{event} não tem linha de pontuação para estes itens.",
-  "daysHint": "Só aparecem os dias cujas linhas de pontuação contam um item. O Hall of Chief lista etapas em vez de dias. Cada grupo de itens recebe o próprio dia.",
-  "lineEach": "{points} cada em {day}.",
-  "lineNotScored": "{event} não tem linha de pontuação para isto.",
-  "notScored": "Não pontua",
-  "points": "{points} pontos",
-  "addedTo": "Adicionado a {event}",
-  "nothingScores": "Nada neste plano pontua em {event} nos dias escolhidos.",
-  "summaryTitle": "Resumo da exportação",
-  "summaryHint": "O que os mesmos itens pontuariam em cada evento se cada item fosse gasto em um dia que o pontua. Só o evento e os dias selecionados os recebem. A página Eventos principais os mostra como quantidades que você pode mudar.",
-  "selected": "Selecionado",
-  "cancel": "Cancelar",
-  "export": "Exportar para {event}",
-  "toast": {
-    "title": "Exportado para Eventos principais",
-    "message": "{points} pontos adicionados a {event}.",
-    "undo": "Desfazer"
-  }
+    "title": "Exportar para Eventos principais",
+    "description": "Escolha o evento e depois os dias",
+    "events": {
+        "svs": "SvS",
+        "showdown": "Alliance Showdown",
+        "king": "King of Icefield",
+        "hall": "Hall of Chief"
+    },
+    "stepEvent": "1. Evento",
+    "stepDay": "{number}. Dia do evento {group}",
+    "stepDayPlain": "Dia do evento",
+    "stepItems": "{number}. Itens deste plano",
+    "noDay": "{event} não tem linha de pontuação para estes itens.",
+    "daysHint": "Só aparecem os dias cujas linhas de pontuação contam um item. O Hall of Chief lista etapas em vez de dias. Cada grupo de itens recebe o próprio dia.",
+    "lineEach": "{points} cada em {day}.",
+    "lineNotScored": "{event} não tem linha de pontuação para isto.",
+    "notScored": "Não pontua",
+    "points": "{points} pontos",
+    "addedTo": "Adicionado a {event}",
+    "nothingScores": "Nada neste plano pontua em {event} nos dias escolhidos.",
+    "summaryTitle": "Resumo da exportação",
+    "summaryHint": "O que os mesmos itens pontuariam em cada evento se cada item fosse gasto em um dia que o pontua. Só o evento e os dias selecionados os recebem. A página Eventos principais os mostra como quantidades que você pode mudar.",
+    "selected": "Selecionado",
+    "cancel": "Cancelar",
+    "export": "Exportar para {event}",
+    "toast": {
+        "title": "Exportado para Eventos principais",
+        "message": "{points} pontos adicionados a {event}.",
+        "undo": "Desfazer"
+    }
 }

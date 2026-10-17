@@ -1,303 +1,303 @@
 {
-  "title": "연구",
-  "unknown": "알 수 없음",
-  "nodeCount": "{count, plural, other {노드 {amount}개}}",
-  "jobTitle": "{name}, {from}레벨에서 {to}레벨",
-  "tabs": {
-    "growth": "성장",
-    "economy": "경제",
-    "battle": "전투",
-    "war-academy-troops": "전쟁 아카데미 T11",
-    "t12-infantry": "보병 T12",
-    "t12-marksman": "궁병 T12",
-    "t12-lancer": "창병 T12"
-  },
-  "tier": {
-    "plain": "{tier}단계",
-    "troopLine": "{line} T{tier}"
-  },
-  "requirement": {
-    "yours": "내 값은 {level}",
-    "notBuilt": "미건설",
-    "researchLevel": "{name} {level}레벨",
-    "yoursLevel": "내 값은 {level}레벨",
-    "notReleased": "{id} (아직 출시 전)"
-  },
-  "tabLock": {
-    "unknownAge": "{tab} 연구는 서버 경과일 {days}일에 열려요. 내 경과일을 알 수 없어요. 영주 편집에서 서버 시작일을 추가하세요.",
-    "knownAge": "{tab} 연구는 서버 경과일 {days}일에 열려요. 내 경과일은 {yours}이에요."
-  },
-  "option": {
-    "label": "{name}, {tab}, {from}레벨에서 {to}레벨",
-    "subtitle": "{from}레벨에서 {to}레벨, {tab} 탭",
-    "busy": "사용 중: {name} {level}레벨, {timeLeft}"
-  },
-  "nodeCard": {
-    "allResearched": "모든 레벨 연구 완료",
-    "nextTime": "{level}레벨 시간: {time}",
-    "power": {
-      "researched": "연구한 전투력 {power}",
-      "next": "다음 레벨 +{power}",
-      "some": "전투력 {parts}",
-      "none": "전투력 0"
-    },
-    "maxed": "최대. {bonus}",
-    "noBonus": "데이터에 보너스 없음",
-    "level": "{level} / {max}레벨",
-    "goal": "목표 {goal}",
-    "noGoal": "목표 없음",
-    "progress": "{name} 진행도",
-    "lockedByTab": "잠김: {reason}",
-    "lockedByRequirement": "잠김: {requirement} 필요",
-    "placeholder": "임시 노드예요. 패키지에 비용과 보너스가 비어 있어요.",
-    "needsFirst": "먼저 {names} 필요",
-    "researching": "{name} 연구 중",
-    "levelStepper": "{name} 레벨",
-    "detailsOf": "{name} 상세",
-    "details": "상세"
-  },
-  "queuesStrip": {
-    "title": "연구 대기열",
-    "note": "성장, 경제, 전투는 대기열 하나를 함께 써요. T11과 T12는 전쟁 아카데미 대기열을 써요.",
-    "idle": "연구는 한 번에 하나씩 가능해요. 업그레이드 시작을 눌러 시작하세요."
-  },
-  "filters": {
-    "title": "필터",
-    "description": "{tab} 탭에 표시할 항목을 고르세요",
-    "reset": "초기화",
-    "show": "{nodes} 보기",
-    "tier": "단계",
-    "statusLabel": "상태",
-    "troopLine": "병종 계열",
-    "orderLabel": "정렬",
-    "notSaved": "필터는 저장되지 않아요.",
-    "all": "전체",
-    "status": {
-      "all": "전체",
-      "progress": "진행 중",
-      "goal": "목표 있음",
-      "maxed": "최대",
-      "locked": "잠김",
-      "notStarted": "시작 전"
-    },
-    "order": {
-      "game": "게임 순서",
-      "name": "이름순",
-      "level": "높은 레벨순"
-    }
-  },
-  "massSet": {
-    "stop": "{max} 중 {level}",
-    "title": "일괄 설정, {tab}",
-    "description": "노드와 레벨을 고르세요. 트리에서 그 앞에 있는 모든 노드가 최대가 돼요.",
-    "cancel": "취소",
-    "set": "{nodes} 설정",
-    "node": "노드",
-    "level": "레벨",
-    "levelToSet": "설정할 레벨",
-    "whatChanges": "{tab} 탭에서 바뀌는 내용",
-    "nothingChanges": "바뀌는 것이 없어요. 여기 있는 모든 노드가 이미 이 값 이상이에요.",
-    "change": "{from}에서 {to}",
-    "hidden": "앞선 노드 {amount}개 더",
-    "alreadyMax": "{count, plural, other {앞선 노드 {amount}개}}는 이미 최대라서 그대로 유지돼요. 트리에서 뒤에 있는 노드는 건드리지 않아요. 이미 더 높은 레벨은 그대로예요.",
-    "blockersTitle": "일부 노드는 먼저 건물이 필요해요.",
-    "blocker": "{name}에 {building} 필요",
-    "blockersMore": " 외 {amount}개",
-    "blockers": "{list}{more}. 앞선 노드를 고르거나 건물 페이지에서 건물을 올리세요.",
-    "footnote": "일괄 설정은 이 탭의 저장된 레벨만 바꿔요. 레벨을 낮추지 않아요. 목표는 바뀌지 않아요."
-  },
-  "nodeFlyout": {
-    "fallbackTitle": "연구",
-    "description": "{category}, {tier}단계, {levels}레벨",
-    "close": "닫기",
+    "title": "연구",
     "unknown": "알 수 없음",
-    "levelOf": "{max}레벨 중 {level}레벨",
-    "status": {
-      "notStarted": "시작 전",
-      "maxed": "최대",
-      "inProgress": "진행 중"
+    "nodeCount": "{count, plural, other {노드 {amount}개}}",
+    "jobTitle": "{name}, {from}레벨에서 {to}레벨",
+    "tabs": {
+        "growth": "성장",
+        "economy": "경제",
+        "battle": "전투",
+        "war-academy-troops": "전쟁 아카데미 T11",
+        "t12-infantry": "보병 T12",
+        "t12-marksman": "궁병 T12",
+        "t12-lancer": "창병 T12"
     },
-    "goal": "목표 {goal}",
-    "noGoal": "목표 없음",
-    "openPlan": "계획 열기",
-    "maxLevel": {
-      "title": "최대 레벨",
-      "nothingLeft": "더 연구할 것이 없어요.",
-      "noBonus": "데이터에 보너스 없음."
+    "tier": {
+        "plain": "{tier}단계",
+        "troopLine": "{line} T{tier}"
     },
-    "placeholder": {
-      "title": "임시 노드",
-      "description": "이 노드는 패키지에 아직 비용과 보너스가 없어요. 연구 시간과 비용은 알 수 없음으로 표시돼요."
+    "requirement": {
+        "yours": "내 값은 {level}",
+        "notBuilt": "미건설",
+        "researchLevel": "{name} {level}레벨",
+        "yoursLevel": "내 값은 {level}레벨",
+        "notReleased": "{id} (아직 출시 전)"
     },
-    "upcoming": {
-      "first": "첫 레벨",
-      "after": "{level}레벨 이후 다음 레벨",
-      "heads": {
+    "tabLock": {
+        "unknownAge": "{tab} 연구는 서버 경과일 {days}일에 열려요. 내 경과일을 알 수 없어요. 영주 편집에서 서버 시작일을 추가하세요.",
+        "knownAge": "{tab} 연구는 서버 경과일 {days}일에 열려요. 내 경과일은 {yours}이에요."
+    },
+    "option": {
+        "label": "{name}, {tab}, {from}레벨에서 {to}레벨",
+        "subtitle": "{from}레벨에서 {to}레벨, {tab} 탭",
+        "busy": "사용 중: {name} {level}레벨, {timeLeft}"
+    },
+    "nodeCard": {
+        "allResearched": "모든 레벨 연구 완료",
+        "nextTime": "{level}레벨 시간: {time}",
+        "power": {
+            "researched": "연구한 전투력 {power}",
+            "next": "다음 레벨 +{power}",
+            "some": "전투력 {parts}",
+            "none": "전투력 0"
+        },
+        "maxed": "최대. {bonus}",
+        "noBonus": "데이터에 보너스 없음",
+        "level": "{level} / {max}레벨",
+        "goal": "목표 {goal}",
+        "noGoal": "목표 없음",
+        "progress": "{name} 진행도",
+        "lockedByTab": "잠김: {reason}",
+        "lockedByRequirement": "잠김: {requirement} 필요",
+        "placeholder": "임시 노드예요. 패키지에 비용과 보너스가 비어 있어요.",
+        "needsFirst": "먼저 {names} 필요",
+        "researching": "{name} 연구 중",
+        "levelStepper": "{name} 레벨",
+        "detailsOf": "{name} 상세",
+        "details": "상세"
+    },
+    "queuesStrip": {
+        "title": "연구 대기열",
+        "note": "성장, 경제, 전투는 대기열 하나를 함께 써요. T11과 T12는 전쟁 아카데미 대기열을 써요.",
+        "idle": "연구는 한 번에 하나씩 가능해요. 업그레이드 시작을 눌러 시작하세요."
+    },
+    "filters": {
+        "title": "필터",
+        "description": "{tab} 탭에 표시할 항목을 고르세요",
+        "reset": "초기화",
+        "show": "{nodes} 보기",
+        "tier": "단계",
+        "statusLabel": "상태",
+        "troopLine": "병종 계열",
+        "orderLabel": "정렬",
+        "notSaved": "필터는 저장되지 않아요.",
+        "all": "전체",
+        "status": {
+            "all": "전체",
+            "progress": "진행 중",
+            "goal": "목표 있음",
+            "maxed": "최대",
+            "locked": "잠김",
+            "notStarted": "시작 전"
+        },
+        "order": {
+            "game": "게임 순서",
+            "name": "이름순",
+            "level": "높은 레벨순"
+        }
+    },
+    "massSet": {
+        "stop": "{max} 중 {level}",
+        "title": "일괄 설정, {tab}",
+        "description": "노드와 레벨을 고르세요. 트리에서 그 앞에 있는 모든 노드가 최대가 돼요.",
+        "cancel": "취소",
+        "set": "{nodes} 설정",
+        "node": "노드",
         "level": "레벨",
-        "bonus": "보너스",
-        "time": "시간",
-        "power": "전투력"
-      },
-      "goalBadge": "목표",
-      "noBonus": "없음",
-      "shaded": "음영 행은 내 레벨과 목표 사이의 레벨이에요."
+        "levelToSet": "설정할 레벨",
+        "whatChanges": "{tab} 탭에서 바뀌는 내용",
+        "nothingChanges": "바뀌는 것이 없어요. 여기 있는 모든 노드가 이미 이 값 이상이에요.",
+        "change": "{from}에서 {to}",
+        "hidden": "앞선 노드 {amount}개 더",
+        "alreadyMax": "{count, plural, other {앞선 노드 {amount}개}}는 이미 최대라서 그대로 유지돼요. 트리에서 뒤에 있는 노드는 건드리지 않아요. 이미 더 높은 레벨은 그대로예요.",
+        "blockersTitle": "일부 노드는 먼저 건물이 필요해요.",
+        "blocker": "{name}에 {building} 필요",
+        "blockersMore": " 외 {amount}개",
+        "blockers": "{list}{more}. 앞선 노드를 고르거나 건물 페이지에서 건물을 올리세요.",
+        "footnote": "일괄 설정은 이 탭의 저장된 레벨만 바꿔요. 레벨을 낮추지 않아요. 목표는 바뀌지 않아요."
     },
-    "cost": {
-      "title": "다음 레벨 비용",
-      "level": "Lv"
+    "nodeFlyout": {
+        "fallbackTitle": "연구",
+        "description": "{category}, {tier}단계, {levels}레벨",
+        "close": "닫기",
+        "unknown": "알 수 없음",
+        "levelOf": "{max}레벨 중 {level}레벨",
+        "status": {
+            "notStarted": "시작 전",
+            "maxed": "최대",
+            "inProgress": "진행 중"
+        },
+        "goal": "목표 {goal}",
+        "noGoal": "목표 없음",
+        "openPlan": "계획 열기",
+        "maxLevel": {
+            "title": "최대 레벨",
+            "nothingLeft": "더 연구할 것이 없어요.",
+            "noBonus": "데이터에 보너스 없음."
+        },
+        "placeholder": {
+            "title": "임시 노드",
+            "description": "이 노드는 패키지에 아직 비용과 보너스가 없어요. 연구 시간과 비용은 알 수 없음으로 표시돼요."
+        },
+        "upcoming": {
+            "first": "첫 레벨",
+            "after": "{level}레벨 이후 다음 레벨",
+            "heads": {
+                "level": "레벨",
+                "bonus": "보너스",
+                "time": "시간",
+                "power": "전투력"
+            },
+            "goalBadge": "목표",
+            "noBonus": "없음",
+            "shaded": "음영 행은 내 레벨과 목표 사이의 레벨이에요."
+        },
+        "cost": {
+            "title": "다음 레벨 비용",
+            "level": "Lv"
+        },
+        "total": {
+            "title": "목표까지 합계, {level}레벨에서 {goal}레벨",
+            "knownTime": "알려진 연구 시간",
+            "power": "전투력",
+            "missingTimes": "{count, plural, other {{amount}레벨}}은 패키지에 시간이 없어서 여기서는 0으로 계산해요."
+        },
+        "requirements": {
+            "title": "{level}레벨 조건",
+            "none": "조건 없음.",
+            "met": "충족",
+            "notMet": "미충족",
+            "later": "이후 레벨에서 요구하는 것: {list}."
+        }
     },
-    "total": {
-      "title": "목표까지 합계, {level}레벨에서 {goal}레벨",
-      "knownTime": "알려진 연구 시간",
-      "power": "전투력",
-      "missingTimes": "{count, plural, other {{amount}레벨}}은 패키지에 시간이 없어서 여기서는 0으로 계산해요."
+    "tree": {
+        "legend": {
+            "max": "최대",
+            "inProgress": "진행 중",
+            "notStarted": "시작 전",
+            "locked": "잠김"
+        },
+        "pillMax": "최대 {max}",
+        "pillLevel": "Lv {level} / {max}",
+        "region": "{tab} 연구 트리",
+        "openNode": "{name}, {pill}. 상세 열기"
     },
-    "requirements": {
-      "title": "{level}레벨 조건",
-      "none": "조건 없음.",
-      "met": "충족",
-      "notMet": "미충족",
-      "later": "이후 레벨에서 요구하는 것: {list}."
+    "plan": {
+        "title": "연구 계획",
+        "description": "현재 레벨에서 목표까지 필요한 자원, 시간, 전투력",
+        "saved": "{date}에 계획 저장됨",
+        "close": "닫기",
+        "save": "계획 저장",
+        "goals": "목표, {nodes}",
+        "noGoals": "아직 목표가 없어요. 위에서 연구 노드를 추가한 다음 도달하려는 레벨을 고르세요.",
+        "goalsHint": "현재 레벨은 페이지에 있는 값이에요. 거기서 바꾸세요. 목표는 페이지에서 읽기 전용이며 여기서 설정해요.",
+        "failed": "계획을 계산할 수 없었어요.",
+        "timeNote": "속도 보너스 {percent}%를 적용하면 계획에 {time}이 걸려요. 보유량: 연구 {research}분, 일반 {general}분. 일반 가속도 연구에 쓸 수 있어요.",
+        "percent": "{value}%",
+        "percentPlus": "+{value}%",
+        "appointment": {
+            "none": "없음",
+            "regular": "일반",
+            "supreme": "최상급"
+        },
+        "add": {
+            "title": "연구 노드 추가",
+            "none": "모든 노드가 이미 계획에 있거나 최고 레벨이에요.",
+            "select": "추가할 연구 노드",
+            "button": "연구 추가"
+        },
+        "speed": {
+            "title": "연구 속도",
+            "readOnly": "읽기 전용",
+            "carriedOver": "보너스 페이지에서 가져왔어요.",
+            "turnedOff": "설정의 내 보너스 합계 적용이 꺼져 있어요.",
+            "openBonuses": "보너스 열기",
+            "stateBuff": "서버 버프",
+            "vicePresident": "부통령",
+            "total": "총 연구 속도"
+        },
+        "goal": {
+            "level": "{level}레벨",
+            "to": "에서",
+            "label": "{name} 목표",
+            "remove": "계획에서 {name} 삭제"
+        },
+        "result": {
+            "title": "결과, {steps}단계",
+            "powerGained": "얻는 전투력",
+            "speedupMinutes": "필요한 가속 분",
+            "baseTime": "기본 시간",
+            "timeWithBonus": "보너스 {percent}% 적용 시간",
+            "stepsWithoutTime": "{count, plural, other {{amount}단계}}는 패키지에 시간이 없어서 0초로 계산해요.",
+            "stepCount": "{count, plural, other {{amount}단계}}",
+            "buildingRequirements": "건물 조건",
+            "unmet": "미충족 선행 조건",
+            "unmetNone": "이 목표에는 없어요.",
+            "unmetItem": "{name} {level}레벨에 {requires} {requiresLevel}레벨 필요"
+        },
+        "export": {
+            "button": "핵심 이벤트로 내보내기",
+            "empty": "계획에 목표를 추가하면 내보낼 수 있어요.",
+            "speedupMinutes": "연구 가속 분",
+            "power": "연구로 얻는 전투력",
+            "computed": "계획 결과로 앱이 계산했어요.",
+            "unscored": "{name}에 점수를 주는 이벤트는 없어요."
+        }
+    },
+    "view": {
+        "ofTotal": "{total}개 중 {count}개",
+        "undo": "실행 취소",
+        "massSetApplied": {
+            "title": "일괄 설정을 적용했어요",
+            "message": "{nodes}을(를) 업데이트했어요."
+        },
+        "started": {
+            "title": "연구를 시작했어요",
+            "message": "{name}, {from}레벨에서 {to}레벨."
+        },
+        "manage": {
+            "slotLabel": "{queue}, {category}",
+            "finishText": "업그레이드 완료를 누르면 {name}이(가) {level}레벨로 설정되고, {queue} 대기열이 비며, 업그레이드가 기록에 추가돼요. 남은 시간이 0이면 노드와 대기열 카드에 완료 가능이라고 표시돼요. 가속을 썼을 수 있으므로 저절로 완료되는 것은 없어요."
+        },
+        "finished": {
+            "title": "{name} 연구 완료",
+            "message": "이제 {level}레벨이에요. 기록에 추가했어요."
+        },
+        "cancelled": {
+            "title": "{name} 연구 취소됨",
+            "message": "레벨은 그대로예요. 필요하면 자원에서 재고를 고치세요."
+        },
+        "subline": {
+            "researchCenter": "Research Center {level}",
+            "warAcademy": "War Academy {level}"
+        },
+        "stats": {
+            "maxed": "최대 노드, 트리의 {percent}%",
+            "power": "연구 전투력, 연구한 모든 레벨의 전투력",
+            "withoutTimeNone": "연구 시간이 없는 경우, 모든 레벨에 시간이 있어요",
+            "withoutTimeSome": "연구 시간이 없는 경우, 알 수 없음으로 표시돼요",
+            "locked": "서버 경과일이나 조건으로 잠김"
+        },
+        "tabLockedNote": "{reason} 계획에서는 계속 목표를 설정할 수 있어요.",
+        "lockedByRequirement": "이 탭의 노드 {total}개 중 {count}개가 조건 때문에 잠겨 있어요.",
+        "search": {
+            "label": "노드 검색",
+            "placeholder": "이름이나 보너스로 노드 검색"
+        },
+        "massSet": "일괄 설정",
+        "layout": {
+            "label": "배치",
+            "grid": "격자",
+            "tree": "트리"
+        },
+        "plan": "계획",
+        "status": {
+            "tree": "{tab} 트리에 노드 {count}개. 이 탭의 연구 전투력: {power}. 스크롤해서 이동하세요. 검색이나 필터에 맞지 않는 노드는 흐리게 표시돼요.",
+            "grid": "{tab} 노드 {count}개 중 {shown}개 표시 중. 이 탭의 연구 전투력: {power}. 목표는 여기서 읽기 전용이며 계획에서 설정해요."
+        },
+        "empty": {
+            "title": "일치하는 노드가 없어요",
+            "description": "검색어를 바꾸거나 필터를 초기화해 모든 노드를 보세요.",
+            "reset": "검색과 필터 초기화"
+        },
+        "start": {
+            "description": "연구를 업그레이드 중으로 표시해요",
+            "selectLabel": "업그레이드할 연구",
+            "selectHelp": "지금 시작할 수 있는 연구만 표시돼요. 잠겼거나, 최대이거나, 진행 중인 연구는 빠져요. 성장, 경제, 전투 연구는 연구 대기열을 써요. T11이나 T12 연구는 전쟁 아카데미 대기열을 써요.",
+            "timeLabel": "연구 시간",
+            "speedLabel": "연구 속도",
+            "slotLabel": "대기열",
+            "slotHelp": "대기열마다 한 번에 연구 하나예요. 대기열이 사용 중이면 이 카드가 비는 시간을 알려줘요."
+        }
     }
-  },
-  "tree": {
-    "legend": {
-      "max": "최대",
-      "inProgress": "진행 중",
-      "notStarted": "시작 전",
-      "locked": "잠김"
-    },
-    "pillMax": "최대 {max}",
-    "pillLevel": "Lv {level} / {max}",
-    "region": "{tab} 연구 트리",
-    "openNode": "{name}, {pill}. 상세 열기"
-  },
-  "plan": {
-    "title": "연구 계획",
-    "description": "현재 레벨에서 목표까지 필요한 자원, 시간, 전투력",
-    "saved": "{date}에 계획 저장됨",
-    "close": "닫기",
-    "save": "계획 저장",
-    "goals": "목표, {nodes}",
-    "noGoals": "아직 목표가 없어요. 위에서 연구 노드를 추가한 다음 도달하려는 레벨을 고르세요.",
-    "goalsHint": "현재 레벨은 페이지에 있는 값이에요. 거기서 바꾸세요. 목표는 페이지에서 읽기 전용이며 여기서 설정해요.",
-    "failed": "계획을 계산할 수 없었어요.",
-    "timeNote": "속도 보너스 {percent}%를 적용하면 계획에 {time}이 걸려요. 보유량: 연구 {research}분, 일반 {general}분. 일반 가속도 연구에 쓸 수 있어요.",
-    "percent": "{value}%",
-    "percentPlus": "+{value}%",
-    "appointment": {
-      "none": "없음",
-      "regular": "일반",
-      "supreme": "최상급"
-    },
-    "add": {
-      "title": "연구 노드 추가",
-      "none": "모든 노드가 이미 계획에 있거나 최고 레벨이에요.",
-      "select": "추가할 연구 노드",
-      "button": "연구 추가"
-    },
-    "speed": {
-      "title": "연구 속도",
-      "readOnly": "읽기 전용",
-      "carriedOver": "보너스 페이지에서 가져왔어요.",
-      "turnedOff": "설정의 내 보너스 합계 적용이 꺼져 있어요.",
-      "openBonuses": "보너스 열기",
-      "stateBuff": "서버 버프",
-      "vicePresident": "부통령",
-      "total": "총 연구 속도"
-    },
-    "goal": {
-      "level": "{level}레벨",
-      "to": "에서",
-      "label": "{name} 목표",
-      "remove": "계획에서 {name} 삭제"
-    },
-    "result": {
-      "title": "결과, {steps}단계",
-      "powerGained": "얻는 전투력",
-      "speedupMinutes": "필요한 가속 분",
-      "baseTime": "기본 시간",
-      "timeWithBonus": "보너스 {percent}% 적용 시간",
-      "stepsWithoutTime": "{count, plural, other {{amount}단계}}는 패키지에 시간이 없어서 0초로 계산해요.",
-      "stepCount": "{count, plural, other {{amount}단계}}",
-      "buildingRequirements": "건물 조건",
-      "unmet": "미충족 선행 조건",
-      "unmetNone": "이 목표에는 없어요.",
-      "unmetItem": "{name} {level}레벨에 {requires} {requiresLevel}레벨 필요"
-    },
-    "export": {
-      "button": "핵심 이벤트로 내보내기",
-      "empty": "계획에 목표를 추가하면 내보낼 수 있어요.",
-      "speedupMinutes": "연구 가속 분",
-      "power": "연구로 얻는 전투력",
-      "computed": "계획 결과로 앱이 계산했어요.",
-      "unscored": "{name}에 점수를 주는 이벤트는 없어요."
-    }
-  },
-  "view": {
-    "ofTotal": "{total}개 중 {count}개",
-    "undo": "실행 취소",
-    "massSetApplied": {
-      "title": "일괄 설정을 적용했어요",
-      "message": "{nodes}을(를) 업데이트했어요."
-    },
-    "started": {
-      "title": "연구를 시작했어요",
-      "message": "{name}, {from}레벨에서 {to}레벨."
-    },
-    "manage": {
-      "slotLabel": "{queue}, {category}",
-      "finishText": "업그레이드 완료를 누르면 {name}이(가) {level}레벨로 설정되고, {queue} 대기열이 비며, 업그레이드가 기록에 추가돼요. 남은 시간이 0이면 노드와 대기열 카드에 완료 가능이라고 표시돼요. 가속을 썼을 수 있으므로 저절로 완료되는 것은 없어요."
-    },
-    "finished": {
-      "title": "{name} 연구 완료",
-      "message": "이제 {level}레벨이에요. 기록에 추가했어요."
-    },
-    "cancelled": {
-      "title": "{name} 연구 취소됨",
-      "message": "레벨은 그대로예요. 필요하면 자원에서 재고를 고치세요."
-    },
-    "subline": {
-      "researchCenter": "Research Center {level}",
-      "warAcademy": "War Academy {level}"
-    },
-    "stats": {
-      "maxed": "최대 노드, 트리의 {percent}%",
-      "power": "연구 전투력, 연구한 모든 레벨의 전투력",
-      "withoutTimeNone": "연구 시간이 없는 경우, 모든 레벨에 시간이 있어요",
-      "withoutTimeSome": "연구 시간이 없는 경우, 알 수 없음으로 표시돼요",
-      "locked": "서버 경과일이나 조건으로 잠김"
-    },
-    "tabLockedNote": "{reason} 계획에서는 계속 목표를 설정할 수 있어요.",
-    "lockedByRequirement": "이 탭의 노드 {total}개 중 {count}개가 조건 때문에 잠겨 있어요.",
-    "search": {
-      "label": "노드 검색",
-      "placeholder": "이름이나 보너스로 노드 검색"
-    },
-    "massSet": "일괄 설정",
-    "layout": {
-      "label": "배치",
-      "grid": "격자",
-      "tree": "트리"
-    },
-    "plan": "계획",
-    "status": {
-      "tree": "{tab} 트리에 노드 {count}개. 이 탭의 연구 전투력: {power}. 스크롤해서 이동하세요. 검색이나 필터에 맞지 않는 노드는 흐리게 표시돼요.",
-      "grid": "{tab} 노드 {count}개 중 {shown}개 표시 중. 이 탭의 연구 전투력: {power}. 목표는 여기서 읽기 전용이며 계획에서 설정해요."
-    },
-    "empty": {
-      "title": "일치하는 노드가 없어요",
-      "description": "검색어를 바꾸거나 필터를 초기화해 모든 노드를 보세요.",
-      "reset": "검색과 필터 초기화"
-    },
-    "start": {
-      "description": "연구를 업그레이드 중으로 표시해요",
-      "selectLabel": "업그레이드할 연구",
-      "selectHelp": "지금 시작할 수 있는 연구만 표시돼요. 잠겼거나, 최대이거나, 진행 중인 연구는 빠져요. 성장, 경제, 전투 연구는 연구 대기열을 써요. T11이나 T12 연구는 전쟁 아카데미 대기열을 써요.",
-      "timeLabel": "연구 시간",
-      "speedLabel": "연구 속도",
-      "slotLabel": "대기열",
-      "slotHelp": "대기열마다 한 번에 연구 하나예요. 대기열이 사용 중이면 이 카드가 비는 시간을 알려줘요."
-    }
-  }
 }

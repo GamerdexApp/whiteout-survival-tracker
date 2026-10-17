@@ -1,115 +1,115 @@
 {
-  "title": "Bonus",
-  "all": "Semua",
-  "list": {
-    "separator": ", ",
-    "andLast": "{rest} dan {last}"
-  },
-  "sourceTypes": {
-    "account": "Akun",
-    "hero": "Pahlawan",
-    "expert": "Ahli",
-    "research": "Riset",
-    "allianceTech": "Teknologi Aliansi",
-    "allianceFacility": "Fasilitas Aliansi",
-    "alliancePrestige": "Bangunan Prestise Aliansi",
-    "vip": "VIP",
-    "building": "Bangunan",
-    "skin": "Skin",
-    "tundraAlbum": "Tundra Album",
-    "collection": "Koleksi",
-    "decoration": "My Island",
-    "treeOfLife": "My Island",
-    "castleAppointment": "Jabatan Castle",
-    "pet": "Hewan Peliharaan",
-    "chiefGear": "Perlengkapan Chief",
-    "chiefGearSet": "Bonus set Perlengkapan Chief",
-    "chiefCharm": "Jimat Chief",
-    "chiefOrder": "Chief Orders",
-    "presidentSkill": "Skill President",
-    "marchQueuePack": "paket March Queue"
-  },
-  "unit": {
-    "percent": "{value}%",
-    "hours": "{value} j",
-    "seconds": "{value} dtk",
-    "plain": "{value}"
-  },
-  "view": {
-    "subline": "{name} · semua bonus dijumlahkan dari halaman lain. Halaman ini tidak menyimpan apa pun.",
-    "tiles": {
-      "stats": "Statistik di hasil",
-      "groups": "Grup dengan statistik",
-      "sources": "Jenis sumber yang memberi sesuatu"
+    "title": "Bonus",
+    "all": "Semua",
+    "list": {
+        "separator": ", ",
+        "andLast": "{rest} dan {last}"
     },
-    "pending": {
-      "title": "Belum semua sumber dihitung.",
-      "text": "Setiap sumber di bawah dibaca dari halaman yang menyimpannya. Sampai halaman ini selesai dibuat, sumbernya tidak menambah apa pun: {pending}. {unstored} belum disimpan oleh halaman mana pun."
+    "sourceTypes": {
+        "account": "Akun",
+        "hero": "Pahlawan",
+        "expert": "Ahli",
+        "research": "Riset",
+        "allianceTech": "Teknologi Aliansi",
+        "allianceFacility": "Fasilitas Aliansi",
+        "alliancePrestige": "Bangunan Prestise Aliansi",
+        "vip": "VIP",
+        "building": "Bangunan",
+        "skin": "Skin",
+        "tundraAlbum": "Tundra Album",
+        "collection": "Koleksi",
+        "decoration": "My Island",
+        "treeOfLife": "My Island",
+        "castleAppointment": "Jabatan Castle",
+        "pet": "Hewan Peliharaan",
+        "chiefGear": "Perlengkapan Chief",
+        "chiefGearSet": "Bonus set Perlengkapan Chief",
+        "chiefCharm": "Jimat Chief",
+        "chiefOrder": "Chief Orders",
+        "presidentSkill": "Skill President",
+        "marchQueuePack": "paket March Queue"
     },
-    "rulesTitle": "Cara angka dihitung",
-    "rules": {
-      "affinity": {
-        "title": "Afinitas ahli",
-        "text": "Ahli memberi bonus dasar yang naik bersama level afinitas. Di level 10, 20 sampai 100, ahli harus naik tingkat. Sampai saat itu, bonus level sebelumnya yang dihitung."
-      },
-      "albums": {
-        "title": "Album dihitung saat selesai",
-        "text": "Tundra Album memberi buff-nya hanya saat semua 9 puzzle selesai."
-      },
-      "pets": {
-        "title": "Hewan peliharaan memakai nilai suling",
-        "text": "Tiap hewan peliharaan dihitung dengan nilai normal atau nilai sulingnya, sesuai pengaturanmu di halaman Hewan Peliharaan."
-      },
-      "noNumber": {
-        "title": "Tanpa angka, tidak dihitung",
-        "text": "Sumber yang tidak punya angka di data tidak menambah apa pun. Tidak ditampilkan sebagai 0."
-      },
-      "apart": {
-        "title": "Dipisah",
-        "text": "Nilai persen dan nilai tetap tidak pernah dijumlahkan. Statistik Infantry, Lancer, dan Marksman terpisah dari statistik Troops."
-      },
-      "time": {
-        "title": "Statistik waktu",
-        "text": "Construction Speed Boost adalah jam yang dihemat tiap bangunan. Ally Help Time dalam detik. Masing-masing menampilkan satuannya."
-      }
+    "unit": {
+        "percent": "{value}%",
+        "hours": "{value} j",
+        "seconds": "{value} dtk",
+        "plain": "{value}"
     },
-    "search": {
-      "label": "Cari statistik",
-      "placeholder": "Cari statistik"
+    "view": {
+        "subline": "{name} · semua bonus dijumlahkan dari halaman lain. Halaman ini tidak menyimpan apa pun.",
+        "tiles": {
+            "stats": "Statistik di hasil",
+            "groups": "Grup dengan statistik",
+            "sources": "Jenis sumber yang memberi sesuatu"
+        },
+        "pending": {
+            "title": "Belum semua sumber dihitung.",
+            "text": "Setiap sumber di bawah dibaca dari halaman yang menyimpannya. Sampai halaman ini selesai dibuat, sumbernya tidak menambah apa pun: {pending}. {unstored} belum disimpan oleh halaman mana pun."
+        },
+        "rulesTitle": "Cara angka dihitung",
+        "rules": {
+            "affinity": {
+                "title": "Afinitas ahli",
+                "text": "Ahli memberi bonus dasar yang naik bersama level afinitas. Di level 10, 20 sampai 100, ahli harus naik tingkat. Sampai saat itu, bonus level sebelumnya yang dihitung."
+            },
+            "albums": {
+                "title": "Album dihitung saat selesai",
+                "text": "Tundra Album memberi buff-nya hanya saat semua 9 puzzle selesai."
+            },
+            "pets": {
+                "title": "Hewan peliharaan memakai nilai suling",
+                "text": "Tiap hewan peliharaan dihitung dengan nilai normal atau nilai sulingnya, sesuai pengaturanmu di halaman Hewan Peliharaan."
+            },
+            "noNumber": {
+                "title": "Tanpa angka, tidak dihitung",
+                "text": "Sumber yang tidak punya angka di data tidak menambah apa pun. Tidak ditampilkan sebagai 0."
+            },
+            "apart": {
+                "title": "Dipisah",
+                "text": "Nilai persen dan nilai tetap tidak pernah dijumlahkan. Statistik Infantry, Lancer, dan Marksman terpisah dari statistik Troops."
+            },
+            "time": {
+                "title": "Statistik waktu",
+                "text": "Construction Speed Boost adalah jam yang dihemat tiap bangunan. Ally Help Time dalam detik. Masing-masing menampilkan satuannya."
+            }
+        },
+        "search": {
+            "label": "Cari statistik",
+            "placeholder": "Cari statistik"
+        },
+        "views": {
+            "label": "Tampilan",
+            "stat": "Menurut statistik",
+            "source": "Menurut sumber"
+        },
+        "empty": {
+            "noBonusesTitle": "Belum ada bonus",
+            "noBonusesDescription": "Bonus muncul saat halaman yang menyimpannya diisi.",
+            "noMatchTitle": "Tidak ada statistik yang cocok",
+            "noMatchDescription": "Ubah pencarian atau grup."
+        },
+        "statCount": "{count, plural, other {{amount} statistik}}",
+        "sourceCount": "{count, plural, other {{amount} sumber}}",
+        "columns": {
+            "statAndSource": "Statistik dan sumber",
+            "sourceType": "Jenis sumber",
+            "counted": "Dihitung"
+        }
     },
-    "views": {
-      "label": "Tampilan",
-      "stat": "Menurut statistik",
-      "source": "Menurut sumber"
-    },
-    "empty": {
-      "noBonusesTitle": "Belum ada bonus",
-      "noBonusesDescription": "Bonus muncul saat halaman yang menyimpannya diisi.",
-      "noMatchTitle": "Tidak ada statistik yang cocok",
-      "noMatchDescription": "Ubah pencarian atau grup."
-    },
-    "statCount": "{count, plural, other {{amount} statistik}}",
-    "sourceCount": "{count, plural, other {{amount} sumber}}",
-    "columns": {
-      "statAndSource": "Statistik dan sumber",
-      "sourceType": "Jenis sumber",
-      "counted": "Dihitung"
+    "eventRules": {
+        "title": "Aturan buff event",
+        "intro": "Menunjukkan jenis bonus mana yang tetap berlaku selama event. Ini aturan, bukan angka, jadi tidak ada yang ditambahkan ke total di atas.",
+        "event": "Event",
+        "columns": {
+            "cityBonusWarsBuffs": "Bonus kota",
+            "deploymentCapacity": "Kerahan",
+            "territoryBonuses": "Wilayah",
+            "marchAccelerator": "Akselerasi march"
+        },
+        "applicability": {
+            "yes": "Ya",
+            "no": "Tidak",
+            "partial": "Sebagian"
+        }
     }
-  },
-  "eventRules": {
-    "title": "Aturan buff event",
-    "intro": "Menunjukkan jenis bonus mana yang tetap berlaku selama event. Ini aturan, bukan angka, jadi tidak ada yang ditambahkan ke total di atas.",
-    "event": "Event",
-    "columns": {
-      "cityBonusWarsBuffs": "Bonus kota",
-      "deploymentCapacity": "Kerahan",
-      "territoryBonuses": "Wilayah",
-      "marchAccelerator": "Akselerasi march"
-    },
-    "applicability": {
-      "yes": "Ya",
-      "no": "Tidak",
-      "partial": "Sebagian"
-    }
-  }
 }

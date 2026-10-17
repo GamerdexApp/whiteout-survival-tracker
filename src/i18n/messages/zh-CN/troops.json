@@ -1,251 +1,251 @@
 {
-  "page": {
-    "title": "部队"
-  },
-  "view": {
-    "title": "部队",
-    "subline": "{chief} · {camps}",
-    "campLevel": "{name} Camp {level}",
-    "notBuilt": "未建造",
-    "intro": "兵营等级、容量和速度加成来自其他页面，此处只读。计划会算出训练和晋升所需的内容。开始训练会标记兵营正在进行的一批训练。",
-    "plan": "计划"
-  },
-  "cards": {
-    "tileSummary": "部队 · 战力{power}",
-    "allTroops": "全部部队",
-    "totalPower": "总战力",
-    "troops": "部队",
-    "power": "战力",
-    "powerNote": "每个单位的战力取自数据包。10 阶和 11 阶部队跟随各兵营的 Fire Crystal 等级。",
-    "campLevel": "{level}兵营",
-    "campNotBuilt": "兵营未建造",
-    "campAgeLocked": "已保存的兵营等级在此服务器尚未开放。{text}",
-    "highestTier": "最高阶",
-    "tierShort": "T{tier}",
-    "noTier": "无"
-  },
-  "tiers": {
-    "title": "{name}各阶",
-    "hideLow": "隐藏 9 阶及以下",
-    "typeLabel": "兵种",
-    "hiddenNote": "1 到 9 阶已隐藏。Furnace {furnace}为 30 级或更高。",
-    "heads": {
-      "tier": "阶",
-      "troops": "部队",
-      "train": "训练",
-      "power": "战力"
+    "page": {
+        "title": "部队"
     },
-    "requires": {
-      "list": "需要{list}",
-      "camp": "{name} Camp {level}",
-      "building": "{name} {level}",
-      "research": "{name} {level}级"
+    "view": {
+        "title": "部队",
+        "subline": "{chief} · {camps}",
+        "campLevel": "{name} Camp {level}",
+        "notBuilt": "未建造",
+        "intro": "兵营等级、容量和速度加成来自其他页面，此处只读。计划会算出训练和晋升所需的内容。开始训练会标记兵营正在进行的一批训练。",
+        "plan": "计划"
     },
-    "tier": "{tier}阶",
-    "locked": "未解锁",
-    "countLabel": "{name} {tier}阶部队",
-    "train": "训练",
-    "seconds": "{value}秒",
-    "each": "每个",
-    "mobilePower": "战力"
-  },
-  "plan": {
-    "title": "部队计划",
-    "description": "三种兵种的训练与晋升",
-    "saved": "计划已保存{date}",
-    "close": "关闭",
-    "save": "保存计划",
-    "export": {
-      "button": "导出到核心活动",
-      "emptyHint": "请先添加训练，再导出。",
-      "computed": "由应用计算。",
-      "trainedGroup": "训练的部队",
-      "speedupGroup": "加速分钟数",
-      "trainedTier": "已训练{tier}阶部队",
-      "speedupMinutes": "已用训练加速分钟数",
-      "promoted": "已晋升的部队",
-      "promotedReason": "晋升只通过加速分钟数计分。",
-      "power": "训练和晋升获得的战力",
-      "powerReason": "数据包中还没有各阶的真实战力。"
+    "cards": {
+        "tileSummary": "部队 · 战力{power}",
+        "allTroops": "全部部队",
+        "totalPower": "总战力",
+        "troops": "部队",
+        "power": "战力",
+        "powerNote": "每个单位的战力取自数据包。10 阶和 11 阶部队跟随各兵营的 Fire Crystal 等级。",
+        "campLevel": "{level}兵营",
+        "campNotBuilt": "兵营未建造",
+        "campAgeLocked": "已保存的兵营等级在此服务器尚未开放。{text}",
+        "highestTier": "最高阶",
+        "tierShort": "T{tier}",
+        "noTier": "无"
     },
-    "noRuns": "还没有训练。添加部队即可开始计划。",
-    "add": {
-      "title": "添加部队",
-      "typeLabel": "兵种",
-      "modeLabel": "训练或晋升",
-      "button": "添加部队"
+    "tiers": {
+        "title": "{name}各阶",
+        "hideLow": "隐藏 9 阶及以下",
+        "typeLabel": "兵种",
+        "hiddenNote": "1 到 9 阶已隐藏。Furnace {furnace}为 30 级或更高。",
+        "heads": {
+            "tier": "阶",
+            "troops": "部队",
+            "train": "训练",
+            "power": "战力"
+        },
+        "requires": {
+            "list": "需要{list}",
+            "camp": "{name} Camp {level}",
+            "building": "{name} {level}",
+            "research": "{name} {level}级"
+        },
+        "tier": "{tier}阶",
+        "locked": "未解锁",
+        "countLabel": "{name} {tier}阶部队",
+        "train": "训练",
+        "seconds": "{value}秒",
+        "each": "每个",
+        "mobilePower": "战力"
     },
-    "run": {
-      "tier": "{tier}阶",
-      "modes": {
-        "training": "训练",
-        "promotion": "晋升"
-      },
-      "remove": "移除{name}训练",
-      "removeButton": "移除",
-      "modeLabel": "{name}训练或晋升",
-      "tierLabel": "{name}阶",
-      "fromLabel": "{name}晋升起始阶",
-      "toLabel": "{name}晋升目标阶",
-      "to": "到",
-      "troops": "部队",
-      "max": "最大",
-      "maxValue": "最大（{capacity}）",
-      "batches": "批次"
+    "plan": {
+        "title": "部队计划",
+        "description": "三种兵种的训练与晋升",
+        "saved": "计划已保存{date}",
+        "close": "关闭",
+        "save": "保存计划",
+        "export": {
+            "button": "导出到核心活动",
+            "emptyHint": "请先添加训练，再导出。",
+            "computed": "由应用计算。",
+            "trainedGroup": "训练的部队",
+            "speedupGroup": "加速分钟数",
+            "trainedTier": "已训练{tier}阶部队",
+            "speedupMinutes": "已用训练加速分钟数",
+            "promoted": "已晋升的部队",
+            "promotedReason": "晋升只通过加速分钟数计分。",
+            "power": "训练和晋升获得的战力",
+            "powerReason": "数据包中还没有各阶的真实战力。"
+        },
+        "noRuns": "还没有训练。添加部队即可开始计划。",
+        "add": {
+            "title": "添加部队",
+            "typeLabel": "兵种",
+            "modeLabel": "训练或晋升",
+            "button": "添加部队"
+        },
+        "run": {
+            "tier": "{tier}阶",
+            "modes": {
+                "training": "训练",
+                "promotion": "晋升"
+            },
+            "remove": "移除{name}训练",
+            "removeButton": "移除",
+            "modeLabel": "{name}训练或晋升",
+            "tierLabel": "{name}阶",
+            "fromLabel": "{name}晋升起始阶",
+            "toLabel": "{name}晋升目标阶",
+            "to": "到",
+            "troops": "部队",
+            "max": "最大",
+            "maxValue": "最大（{capacity}）",
+            "batches": "批次"
+        },
+        "speed": {
+            "readOnlyNote": "只读的数值来自其他页面。请在那里修改。",
+            "openBonuses": "打开加成",
+            "title": "容量与速度",
+            "appointment": "任命",
+            "position": "职位",
+            "rank": "等级",
+            "positions": {
+                "none": "无",
+                "ministerOfEducation": "教育部长",
+                "vicePresident": "副总统"
+            },
+            "ranks": {
+                "regular": "普通",
+                "supreme": "至高"
+            },
+            "appointmentEffect": "容量 +{capacity}，速度 +{speed}%",
+            "appointmentNote": "两种任命只能开启一种。教育部长增加{moeCapacity}容量和{moeSpeed}% 速度（至高为{moeCapacitySupreme}和{moeSpeedSupreme}）。副总统增加{vpSpeed}% 速度（至高为{vpSpeedSupreme}）。",
+            "capacity": "容量",
+            "researchCapacity": "研究容量",
+            "troops": "{value}部队",
+            "readOnly": "只读",
+            "capacityBoost": "容量提升",
+            "boostTotal": "合计 x{multiplier}",
+            "capacityPerBatch": "每批容量",
+            "trainingSpeed": "训练速度",
+            "gameSpeed": "游戏训练速度",
+            "appointmentSpeed": "任命",
+            "mobilize": "Mobilize",
+            "advancedTraining": "Advanced Training",
+            "speedUsed": "使用的训练速度",
+            "percent": "{value}%",
+            "percentPlus": "+{value}%"
+        },
+        "stock": {
+            "name": "训练加速",
+            "minutesUnit": "分",
+            "note": "你的库存：训练{training}分，通用{general}分。通用加速也可用于训练。加速未覆盖的训练按正常时间完成，因此只会用到你持有的加速：{used}分。"
+        },
+        "result": {
+            "title": "结果",
+            "resources": "资源",
+            "changes": "各阶部队变化",
+            "heads": {
+                "tier": "阶",
+                "infantry": "盾",
+                "lancer": "矛",
+                "marksman": "弓",
+                "all": "全部"
+            },
+            "tier": "{tier}阶",
+            "total": "合计",
+            "time": "时间，不含加速",
+            "totalTime": "合计，所有兵种（加速时间）",
+            "longest": "耗时最长的兵种",
+            "minutesNeeded": "所需加速分钟数",
+            "minutesUsed": "已用加速分钟数（库存内）",
+            "minutes": "{value}分",
+            "tier12Note": "数据包说明 12 阶的费用有一部分是推算的。弓兵晋升费用在游戏中实测，盾兵和矛兵的费用按它换算。"
+        }
     },
-    "speed": {
-      "readOnlyNote": "只读的数值来自其他页面。请在那里修改。",
-      "openBonuses": "打开加成",
-      "title": "容量与速度",
-      "appointment": "任命",
-      "position": "职位",
-      "rank": "等级",
-      "positions": {
-        "none": "无",
-        "ministerOfEducation": "教育部长",
-        "vicePresident": "副总统"
-      },
-      "ranks": {
-        "regular": "普通",
-        "supreme": "至高"
-      },
-      "appointmentEffect": "容量 +{capacity}，速度 +{speed}%",
-      "appointmentNote": "两种任命只能开启一种。教育部长增加{moeCapacity}容量和{moeSpeed}% 速度（至高为{moeCapacitySupreme}和{moeSpeedSupreme}）。副总统增加{vpSpeed}% 速度（至高为{vpSpeedSupreme}）。",
-      "capacity": "容量",
-      "researchCapacity": "研究容量",
-      "troops": "{value}部队",
-      "readOnly": "只读",
-      "capacityBoost": "容量提升",
-      "boostTotal": "合计 x{multiplier}",
-      "capacityPerBatch": "每批容量",
-      "trainingSpeed": "训练速度",
-      "gameSpeed": "游戏训练速度",
-      "appointmentSpeed": "任命",
-      "mobilize": "Mobilize",
-      "advancedTraining": "Advanced Training",
-      "speedUsed": "使用的训练速度",
-      "percent": "{value}%",
-      "percentPlus": "+{value}%"
+    "queue": {
+        "title": "训练队列",
+        "note": "每个兵营一次训练一批。完成后部队会计入你的数量。",
+        "idle": "没有训练。开始一批训练即可使用此兵营。",
+        "startButton": "开始训练",
+        "jobTitle": {
+            "training": "训练{count} {name} T{tier}",
+            "promotion": "晋升{count} {name} T{from}到 T{to}"
+        },
+        "manage": {
+            "slotLabel": "{camp}，一次一批",
+            "finishText": "完成升级会把部队计入你的数量，释放兵营，并把这批训练加入历史。剩余时间为零时，卡片会显示可完成。不会自动完成，因为你可能用过加速。"
+        },
+        "flyout": {
+            "title": "开始训练",
+            "description": "将兵营中的一批部队标记为训练或晋升中",
+            "camp": "兵营",
+            "campHelp": "每个兵营一次一批。占用中的兵营会显示何时空闲。",
+            "busy": "占用至{date}",
+            "notBuilt": "兵营未建造",
+            "action": "操作",
+            "training": "训练",
+            "promotion": "晋升",
+            "tier": "阶",
+            "tierOption": "{tier}阶",
+            "fromTier": "起始阶",
+            "toTier": "目标阶",
+            "troops": "本批部队数量",
+            "max": "最大",
+            "capacityHint": "一批最多{capacity}个部队。这是研究容量加上兵营等级。",
+            "noTiers": "此兵营还没有可训练的阶。请在建筑页提升兵营等级。",
+            "cost": "本批费用",
+            "time": "训练时间",
+            "packageTime": "数据包时间",
+            "speed": "训练速度",
+            "readOnly": "只读",
+            "openBonuses": "打开加成",
+            "yourTime": "你的时间",
+            "timeHint": "训练速度来自加成页面。游戏显示的时间不同时，请使用已经开始。",
+            "whenStarted": "什么时候开始的？",
+            "modes": {
+                "now": "现在开始",
+                "already": "已经开始"
+            },
+            "timeLeftHours": "剩余时间，小时",
+            "ends": "结束于",
+            "takeCost": {
+                "title": "从我的库存中扣除费用",
+                "hint": "从资源页扣除本批所需的资源。数量不会低于 0。",
+                "enough": "你的资源足够。",
+                "short": "{names}不足。这些资源的库存将变为 0。"
+            },
+            "cancel": "取消",
+            "start": "开始训练",
+            "allCamps": "所有空闲兵营（{count}）",
+            "allCampsHint": "同时在每个空闲兵营开始同一批训练。每个兵营保留各自的时间。显示的阶是所有空闲兵营都能训练的阶。",
+            "campTime": "{camp}：{time}"
+        },
+        "toasts": {
+            "started": {
+                "title": "已开始训练",
+                "message": "{what}。"
+            },
+            "finished": {
+                "title": "已训练{what}",
+                "message": "已计入你的部队数量和历史。"
+            },
+            "cancelled": {
+                "title": "已取消{what}",
+                "message": "你的部队数量保持不变。如有需要，请在资源页修正库存。"
+            },
+            "undo": "撤销"
+        },
+        "batchName": {
+            "training": "{count} {name} T{tier}",
+            "promotion": "{count} {name} T{from}到 T{to}"
+        }
     },
-    "stock": {
-      "name": "训练加速",
-      "minutesUnit": "分",
-      "note": "你的库存：训练{training}分，通用{general}分。通用加速也可用于训练。加速未覆盖的训练按正常时间完成，因此只会用到你持有的加速：{used}分。"
-    },
-    "result": {
-      "title": "结果",
-      "resources": "资源",
-      "changes": "各阶部队变化",
-      "heads": {
-        "tier": "阶",
-        "infantry": "盾",
-        "lancer": "矛",
-        "marksman": "弓",
-        "all": "全部"
-      },
-      "tier": "{tier}阶",
-      "total": "合计",
-      "time": "时间，不含加速",
-      "totalTime": "合计，所有兵种（加速时间）",
-      "longest": "耗时最长的兵种",
-      "minutesNeeded": "所需加速分钟数",
-      "minutesUsed": "已用加速分钟数（库存内）",
-      "minutes": "{value}分",
-      "tier12Note": "数据包说明 12 阶的费用有一部分是推算的。弓兵晋升费用在游戏中实测，盾兵和矛兵的费用按它换算。"
+    "callOfWar": {
+        "title": "Call of War",
+        "note": "Romulus 的技能。每个 UTC 日可免费领取一次，所有兵营合计。在 00:00 UTC 重置。",
+        "available": "今日免费部队{troops}",
+        "claimed": "今日已领取。{time}后可再次免费领取。",
+        "notUnlocked": "需要已招募 Romulus，且专家页的 Call of War 达到 1 级或更高。",
+        "level": "Call of War {level}级",
+        "add": "加入{camp}",
+        "addHint": "{troops}部队将进入{tier}阶",
+        "noTier": "未解锁任何阶",
+        "toast": {
+            "title": "已领取 Call of War",
+            "message": "已将{troops}部队加入{camp}的{tier}阶。",
+            "undo": "撤销"
+        }
     }
-  },
-  "queue": {
-    "title": "训练队列",
-    "note": "每个兵营一次训练一批。完成后部队会计入你的数量。",
-    "idle": "没有训练。开始一批训练即可使用此兵营。",
-    "startButton": "开始训练",
-    "jobTitle": {
-      "training": "训练{count} {name} T{tier}",
-      "promotion": "晋升{count} {name} T{from}到 T{to}"
-    },
-    "manage": {
-      "slotLabel": "{camp}，一次一批",
-      "finishText": "完成升级会把部队计入你的数量，释放兵营，并把这批训练加入历史。剩余时间为零时，卡片会显示可完成。不会自动完成，因为你可能用过加速。"
-    },
-    "flyout": {
-      "title": "开始训练",
-      "description": "将兵营中的一批部队标记为训练或晋升中",
-      "camp": "兵营",
-      "campHelp": "每个兵营一次一批。占用中的兵营会显示何时空闲。",
-      "busy": "占用至{date}",
-      "notBuilt": "兵营未建造",
-      "action": "操作",
-      "training": "训练",
-      "promotion": "晋升",
-      "tier": "阶",
-      "tierOption": "{tier}阶",
-      "fromTier": "起始阶",
-      "toTier": "目标阶",
-      "troops": "本批部队数量",
-      "max": "最大",
-      "capacityHint": "一批最多{capacity}个部队。这是研究容量加上兵营等级。",
-      "noTiers": "此兵营还没有可训练的阶。请在建筑页提升兵营等级。",
-      "cost": "本批费用",
-      "time": "训练时间",
-      "packageTime": "数据包时间",
-      "speed": "训练速度",
-      "readOnly": "只读",
-      "openBonuses": "打开加成",
-      "yourTime": "你的时间",
-      "timeHint": "训练速度来自加成页面。游戏显示的时间不同时，请使用已经开始。",
-      "whenStarted": "什么时候开始的？",
-      "modes": {
-        "now": "现在开始",
-        "already": "已经开始"
-      },
-      "timeLeftHours": "剩余时间，小时",
-      "ends": "结束于",
-      "takeCost": {
-        "title": "从我的库存中扣除费用",
-        "hint": "从资源页扣除本批所需的资源。数量不会低于 0。",
-        "enough": "你的资源足够。",
-        "short": "{names}不足。这些资源的库存将变为 0。"
-      },
-      "cancel": "取消",
-      "start": "开始训练",
-      "allCamps": "所有空闲兵营（{count}）",
-      "allCampsHint": "同时在每个空闲兵营开始同一批训练。每个兵营保留各自的时间。显示的阶是所有空闲兵营都能训练的阶。",
-      "campTime": "{camp}：{time}"
-    },
-    "toasts": {
-      "started": {
-        "title": "已开始训练",
-        "message": "{what}。"
-      },
-      "finished": {
-        "title": "已训练{what}",
-        "message": "已计入你的部队数量和历史。"
-      },
-      "cancelled": {
-        "title": "已取消{what}",
-        "message": "你的部队数量保持不变。如有需要，请在资源页修正库存。"
-      },
-      "undo": "撤销"
-    },
-    "batchName": {
-      "training": "{count} {name} T{tier}",
-      "promotion": "{count} {name} T{from}到 T{to}"
-    }
-  },
-  "callOfWar": {
-    "title": "Call of War",
-    "note": "Romulus 的技能。每个 UTC 日可免费领取一次，所有兵营合计。在 00:00 UTC 重置。",
-    "available": "今日免费部队{troops}",
-    "claimed": "今日已领取。{time}后可再次免费领取。",
-    "notUnlocked": "需要已招募 Romulus，且专家页的 Call of War 达到 1 级或更高。",
-    "level": "Call of War {level}级",
-    "add": "加入{camp}",
-    "addHint": "{troops}部队将进入{tier}阶",
-    "noTier": "未解锁任何阶",
-    "toast": {
-      "title": "已领取 Call of War",
-      "message": "已将{troops}部队加入{camp}的{tier}阶。",
-      "undo": "撤销"
-    }
-  }
 }

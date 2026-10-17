@@ -1,215 +1,215 @@
 {
-  "defaultSetName": "Set {number}",
-  "troop": {
-    "infantry": "Infantry",
-    "lancer": "Lancer",
-    "marksman": "Marksman"
-  },
-  "lock": {
-    "needsMythic": "Nécessite un équipement Mythic",
-    "needsBoth": "Nécessite renforcement 100 et forge de maîtrise niveau 10",
-    "needsEnhancement": "Nécessite renforcement 100",
-    "needsForging": "Nécessite forge de maîtrise niveau 10"
-  },
-  "tab": {
-    "deletedTitle": "{name} supprimé",
-    "deletedMessage": "Les quatre pièces et leurs objectifs sont retirés.",
-    "undo": "Annuler",
-    "tiles": {
-      "sets": "Sets d'équipement",
-      "power": "Puissance d'équipement, tous les sets",
-      "ofPieces": "{count} sur {total}",
-      "atEnhancementMax": "Pièces au renforcement 100",
-      "empowered": "Pièces amplifiées",
-      "ready": "Pièces prêtes pour l'amplification"
+    "defaultSetName": "Set {number}",
+    "troop": {
+        "infantry": "Infantry",
+        "lancer": "Lancer",
+        "marksman": "Marksman"
     },
-    "search": "Rechercher des sets d'équipement",
-    "filters": "Filtres",
-    "plan": "Plan",
-    "showing": "{shown} sets d'équipement affichés sur {total}. Les objectifs sont en lecture seule ici et se définissent dans Plan.",
-    "empty": {
-      "title": "Aucun set d'équipement",
-      "description": "Un set d'équipement contient une pièce Goggles, Gloves, Belt et Boots. Ajoutez un set pour suivre ses niveaux."
+    "lock": {
+        "needsMythic": "Nécessite un équipement Mythic",
+        "needsBoth": "Nécessite renforcement 100 et forge de maîtrise niveau 10",
+        "needsEnhancement": "Nécessite renforcement 100",
+        "needsForging": "Nécessite forge de maîtrise niveau 10"
     },
-    "addSet": "Ajouter un set",
-    "unknownHero": "Héros inconnu",
-    "power": "Puissance {amount}",
-    "enhancementLine": "Renf. {line}",
-    "troopHint": "Le type de troupe choisit la colonne de stats ci-dessous.",
-    "editSet": "Modifier le set",
-    "deleteSet": "Supprimer le set"
-  },
-  "pieceCard": {
-    "name": "{set} {slot}",
-    "forgingRow": "{name} (+{percent} %)",
-    "none": "Aucune",
-    "noGoal": "Aucun objectif",
-    "goal": "Objectif : {value}",
-    "quality": "Qualité de l'équipement",
-    "qualities": {
-      "mythic": "Mythic",
-      "epic": "Epic",
-      "rare": "Rare",
-      "uncommon": "Uncommon",
-      "common": "Common"
+    "tab": {
+        "deletedTitle": "{name} supprimé",
+        "deletedMessage": "Les quatre pièces et leurs objectifs sont retirés.",
+        "undo": "Annuler",
+        "tiles": {
+            "sets": "Sets d'équipement",
+            "power": "Puissance d'équipement, tous les sets",
+            "ofPieces": "{count} sur {total}",
+            "atEnhancementMax": "Pièces au renforcement 100",
+            "empowered": "Pièces amplifiées",
+            "ready": "Pièces prêtes pour l'amplification"
+        },
+        "search": "Rechercher des sets d'équipement",
+        "filters": "Filtres",
+        "plan": "Plan",
+        "showing": "{shown} sets d'équipement affichés sur {total}. Les objectifs sont en lecture seule ici et se définissent dans Plan.",
+        "empty": {
+            "title": "Aucun set d'équipement",
+            "description": "Un set d'équipement contient une pièce Goggles, Gloves, Belt et Boots. Ajoutez un set pour suivre ses niveaux."
+        },
+        "addSet": "Ajouter un set",
+        "unknownHero": "Héros inconnu",
+        "power": "Puissance {amount}",
+        "enhancementLine": "Renf. {line}",
+        "troopHint": "Le type de troupe choisit la colonne de stats ci-dessous.",
+        "editSet": "Modifier le set",
+        "deleteSet": "Supprimer le set"
     },
-    "forgingRowLabel": "Ligne de forge de maîtrise",
-    "forgingStops": "La forge de maîtrise s'arrête au niveau 10 tant que le renforcement n'est pas à 100.",
-    "lowQualityNote": "Seul l'équipement Mythic peut être forgé et amplifié. La puissance suit les tables Mythic avec la puissance de base de cette qualité, ce que le jeu n'a pas confirmé.",
-    "enhancement": "Renforcement",
-    "enhancementLabel": "Renforcement de {name}",
-    "enhancementSlider": "Curseur de renforcement de {name}",
-    "empowerment": "Amplification",
-    "empowermentLabel": "Amplification de {name}",
-    "empowermentSlider": "Curseur d'amplification de {name}",
-    "outOf": "/ {max}",
-    "milestone": "Amplification {level} atteinte : {stat}",
-    "piecePower": "Puissance de la pièce",
-    "health": "Santé",
-    "percent": "{value} %"
-  },
-  "statLines": {
-    "title": "Lignes de stats, 4 emplacements par 3 types de troupe",
-    "troopThisSet": "{troop} (ce set)",
-    "stat": "{name} {value}",
-    "health": "PV {value}",
-    "percentStat": "{name} {value} %",
-    "none": "Aucune",
-    "note": "Valeurs aux niveaux des pièces de {name}, forge de maîtrise comprise, arrondies à l'inférieur. Les stats viennent de WoS Tools, qui s'arrête à 192 des 200 niveaux. La colonne en évidence est le type de troupe du set."
-  },
-  "filters": {
-    "title": "Filtres",
-    "description": "Choisissez les sets d'équipement que la liste affiche",
-    "reset": "Réinitialiser",
-    "show": "Afficher {amount} {count, plural, one {set} other {sets}}",
-    "all": "Tous",
-    "troopType": "Type de troupe",
-    "linkedHero": "Héros lié",
-    "heroOptions": {
-      "all": "Tous",
-      "linked": "Liés à un héros",
-      "unlinked": "Non liés"
+    "pieceCard": {
+        "name": "{set} {slot}",
+        "forgingRow": "{name} (+{percent} %)",
+        "none": "Aucune",
+        "noGoal": "Aucun objectif",
+        "goal": "Objectif : {value}",
+        "quality": "Qualité de l'équipement",
+        "qualities": {
+            "mythic": "Mythic",
+            "epic": "Epic",
+            "rare": "Rare",
+            "uncommon": "Uncommon",
+            "common": "Common"
+        },
+        "forgingRowLabel": "Ligne de forge de maîtrise",
+        "forgingStops": "La forge de maîtrise s'arrête au niveau 10 tant que le renforcement n'est pas à 100.",
+        "lowQualityNote": "Seul l'équipement Mythic peut être forgé et amplifié. La puissance suit les tables Mythic avec la puissance de base de cette qualité, ce que le jeu n'a pas confirmé.",
+        "enhancement": "Renforcement",
+        "enhancementLabel": "Renforcement de {name}",
+        "enhancementSlider": "Curseur de renforcement de {name}",
+        "empowerment": "Amplification",
+        "empowermentLabel": "Amplification de {name}",
+        "empowermentSlider": "Curseur d'amplification de {name}",
+        "outOf": "/ {max}",
+        "milestone": "Amplification {level} atteinte : {stat}",
+        "piecePower": "Puissance de la pièce",
+        "health": "Santé",
+        "percent": "{value} %"
     },
-    "order": "Ordre",
-    "orderOptions": {
-      "power": "Puissance totale, la plus haute d'abord",
-      "created": "Ordre d'ajout",
-      "name": "Nom, A à Z",
-      "hero": "Nom du héros, A à Z"
+    "statLines": {
+        "title": "Lignes de stats, 4 emplacements par 3 types de troupe",
+        "troopThisSet": "{troop} (ce set)",
+        "stat": "{name} {value}",
+        "health": "PV {value}",
+        "percentStat": "{name} {value} %",
+        "none": "Aucune",
+        "note": "Valeurs aux niveaux des pièces de {name}, forge de maîtrise comprise, arrondies à l'inférieur. Les stats viennent de WoS Tools, qui s'arrête à 192 des 200 niveaux. La colonne en évidence est le type de troupe du set."
     },
-    "notSaved": "Les filtres ne sont pas enregistrés."
-  },
-  "setDialogs": {
-    "cancel": "Annuler",
-    "setName": "Nom du set",
-    "nameRequired": "Saisissez un nom.",
-    "linkedHero": "Héros lié",
-    "add": {
-      "title": "Ajouter un set d'équipement",
-      "linkedHeroHint": "Choisir un héros règle le type de troupe sur sa classe.",
-      "troopType": "Type de troupe",
-      "troopTypeHint": "Le type de troupe choisit la colonne de stats du set.",
-      "quality": "Qualité de l'équipement",
-      "qualityHint": "Seul l'équipement Mythic peut être forgé et amplifié.",
-      "qualityHintCopy": "Un set copié garde la qualité de chaque pièce.",
-      "qualities": {
-        "mythic": "Mythic",
-        "epic": "Epic",
-        "rare": "Rare",
-        "uncommon": "Uncommon",
-        "common": "Common"
-      },
-      "startFrom": "Partir de",
-      "startFromHint": "Les objectifs ne sont pas copiés. Ils se définissent dans Plan.",
-      "emptySet": "Set vide",
-      "copyFrom": "Copier les niveaux de {name}",
-      "savesAtOnce": "Chaque modification est enregistrée aussitôt et le nouveau set apparaît sélectionné.",
-      "submit": "Ajouter le set"
+    "filters": {
+        "title": "Filtres",
+        "description": "Choisissez les sets d'équipement que la liste affiche",
+        "reset": "Réinitialiser",
+        "show": "Afficher {amount} {count, plural, one {set} other {sets}}",
+        "all": "Tous",
+        "troopType": "Type de troupe",
+        "linkedHero": "Héros lié",
+        "heroOptions": {
+            "all": "Tous",
+            "linked": "Liés à un héros",
+            "unlinked": "Non liés"
+        },
+        "order": "Ordre",
+        "orderOptions": {
+            "power": "Puissance totale, la plus haute d'abord",
+            "created": "Ordre d'ajout",
+            "name": "Nom, A à Z",
+            "hero": "Nom du héros, A à Z"
+        },
+        "notSaved": "Les filtres ne sont pas enregistrés."
     },
-    "delete": {
-      "title": "Supprimer {name} ?",
-      "titleFallback": "Supprimer le set",
-      "confirm": "Supprimer le set",
-      "body": "Les quatre pièces de {name} et leurs objectifs sont retirés de cet appareil.",
-      "undoNote": "Vous pouvez annuler pendant 10 secondes après la suppression.",
-      "exportBackup": "Exporter d'abord une sauvegarde"
+    "setDialogs": {
+        "cancel": "Annuler",
+        "setName": "Nom du set",
+        "nameRequired": "Saisissez un nom.",
+        "linkedHero": "Héros lié",
+        "add": {
+            "title": "Ajouter un set d'équipement",
+            "linkedHeroHint": "Choisir un héros règle le type de troupe sur sa classe.",
+            "troopType": "Type de troupe",
+            "troopTypeHint": "Le type de troupe choisit la colonne de stats du set.",
+            "quality": "Qualité de l'équipement",
+            "qualityHint": "Seul l'équipement Mythic peut être forgé et amplifié.",
+            "qualityHintCopy": "Un set copié garde la qualité de chaque pièce.",
+            "qualities": {
+                "mythic": "Mythic",
+                "epic": "Epic",
+                "rare": "Rare",
+                "uncommon": "Uncommon",
+                "common": "Common"
+            },
+            "startFrom": "Partir de",
+            "startFromHint": "Les objectifs ne sont pas copiés. Ils se définissent dans Plan.",
+            "emptySet": "Set vide",
+            "copyFrom": "Copier les niveaux de {name}",
+            "savesAtOnce": "Chaque modification est enregistrée aussitôt et le nouveau set apparaît sélectionné.",
+            "submit": "Ajouter le set"
+        },
+        "delete": {
+            "title": "Supprimer {name} ?",
+            "titleFallback": "Supprimer le set",
+            "confirm": "Supprimer le set",
+            "body": "Les quatre pièces de {name} et leurs objectifs sont retirés de cet appareil.",
+            "undoNote": "Vous pouvez annuler pendant 10 secondes après la suppression.",
+            "exportBackup": "Exporter d'abord une sauvegarde"
+        },
+        "edit": {
+            "title": "Modifier {name}",
+            "titleFallback": "Modifier le set",
+            "submit": "Enregistrer le set"
+        },
+        "heroSelect": {
+            "none": "Aucun héros",
+            "option": "{name} ({class}, Gén. {generation})"
+        }
     },
-    "edit": {
-      "title": "Modifier {name}",
-      "titleFallback": "Modifier le set",
-      "submit": "Enregistrer le set"
+    "plan": {
+        "title": "Planifier l'équipement de héros",
+        "description": "Forge de maîtrise, renforcement et amplification de n'importe quelles pièces, de n'importe quel set",
+        "saved": "Plan enregistré {time}",
+        "close": "Fermer",
+        "save": "Enregistrer le plan",
+        "empty": "Aucune pièce dans le plan pour l'instant. Ajoutez une pièce ci-dessus, puis augmentez ses objectifs.",
+        "pieceTitle": "{set} · {slot}",
+        "milestone": "amplification {level}, {event}, {stat}",
+        "addPiece": {
+            "title": "Ajouter une pièce",
+            "noSets": "Ajoutez d'abord un set d'équipement dans l'onglet Équipement de héros.",
+            "set": "Set d'équipement",
+            "setOption": "{name} ({troop})",
+            "piece": "Pièce",
+            "submit": "Ajouter la pièce",
+            "taken": "Cette pièce est déjà dans le plan."
+        },
+        "qualities": {
+            "mythic": "mythic",
+            "epic": "epic",
+            "rare": "rare",
+            "uncommon": "uncommon",
+            "common": "common"
+        },
+        "remove": "Retirer {title} du plan",
+        "forgingRow": "{name} (+{percent} %)",
+        "none": "Aucune",
+        "forgingCurrent": "Ligne de forge actuelle",
+        "forgingGoal": "Ligne de forge visée",
+        "forgingGoalLabel": "Objectif de forge de {title}",
+        "forgingStops": "La forge de maîtrise s'arrête au niveau 10 tant que l'objectif de renforcement n'est pas 100.",
+        "enhancement": "Renforcement",
+        "enhancementGoal": "Objectif de renforcement de {title}",
+        "empowerment": "Amplification",
+        "empowermentGoal": "Objectif d'amplification de {title}",
+        "from": "{value} à",
+        "result": {
+            "title": "Résultat pour {amount} {count, plural, one {pièce} other {pièces}}",
+            "power": "Puissance",
+            "powerLines": {
+                "gained": "Puissance gagnée",
+                "before": "Puissance de ces pièces avant",
+                "after": "Puissance de ces pièces après"
+            },
+            "columns": {
+                "piece": "Pièce",
+                "forgingStatsUp": "Hausse des stats de forge",
+                "powerGained": "Puissance gagnée"
+            },
+            "forgingStatsUp": "+{percent} % ({steps} étapes)",
+            "milestones": "Paliers débloqués",
+            "milestoneLine": "{label} : {stat}",
+            "events": {
+                "svs": "SvS",
+                "allianceShowdown": "Alliance Showdown",
+                "kingOfIcefield": "King of Icefield"
+            },
+            "note": "Planifier l'équipement de héros n'a aucun réglage de vitesse ou de bonus. Le calculateur ne renvoie aucune durée.",
+            "tableLabel": "Tableau du résultat du plan"
+        }
     },
-    "heroSelect": {
-      "none": "Aucun héros",
-      "option": "{name} ({class}, Gén. {generation})"
+    "export": {
+        "button": "Exporter vers Événements clés",
+        "nothing": "Le plan n'a besoin ni d'Essence Stones ni de Mithril à exporter.",
+        "essenceStones": "Essence Stones",
+        "mithril": "Mithril"
     }
-  },
-  "plan": {
-    "title": "Planifier l'équipement de héros",
-    "description": "Forge de maîtrise, renforcement et amplification de n'importe quelles pièces, de n'importe quel set",
-    "saved": "Plan enregistré {time}",
-    "close": "Fermer",
-    "save": "Enregistrer le plan",
-    "empty": "Aucune pièce dans le plan pour l'instant. Ajoutez une pièce ci-dessus, puis augmentez ses objectifs.",
-    "pieceTitle": "{set} · {slot}",
-    "milestone": "amplification {level}, {event}, {stat}",
-    "addPiece": {
-      "title": "Ajouter une pièce",
-      "noSets": "Ajoutez d'abord un set d'équipement dans l'onglet Équipement de héros.",
-      "set": "Set d'équipement",
-      "setOption": "{name} ({troop})",
-      "piece": "Pièce",
-      "submit": "Ajouter la pièce",
-      "taken": "Cette pièce est déjà dans le plan."
-    },
-    "qualities": {
-      "mythic": "mythic",
-      "epic": "epic",
-      "rare": "rare",
-      "uncommon": "uncommon",
-      "common": "common"
-    },
-    "remove": "Retirer {title} du plan",
-    "forgingRow": "{name} (+{percent} %)",
-    "none": "Aucune",
-    "forgingCurrent": "Ligne de forge actuelle",
-    "forgingGoal": "Ligne de forge visée",
-    "forgingGoalLabel": "Objectif de forge de {title}",
-    "forgingStops": "La forge de maîtrise s'arrête au niveau 10 tant que l'objectif de renforcement n'est pas 100.",
-    "enhancement": "Renforcement",
-    "enhancementGoal": "Objectif de renforcement de {title}",
-    "empowerment": "Amplification",
-    "empowermentGoal": "Objectif d'amplification de {title}",
-    "from": "{value} à",
-    "result": {
-      "title": "Résultat pour {amount} {count, plural, one {pièce} other {pièces}}",
-      "power": "Puissance",
-      "powerLines": {
-        "gained": "Puissance gagnée",
-        "before": "Puissance de ces pièces avant",
-        "after": "Puissance de ces pièces après"
-      },
-      "columns": {
-        "piece": "Pièce",
-        "forgingStatsUp": "Hausse des stats de forge",
-        "powerGained": "Puissance gagnée"
-      },
-      "forgingStatsUp": "+{percent} % ({steps} étapes)",
-      "milestones": "Paliers débloqués",
-      "milestoneLine": "{label} : {stat}",
-      "events": {
-        "svs": "SvS",
-        "allianceShowdown": "Alliance Showdown",
-        "kingOfIcefield": "King of Icefield"
-      },
-      "note": "Planifier l'équipement de héros n'a aucun réglage de vitesse ou de bonus. Le calculateur ne renvoie aucune durée.",
-      "tableLabel": "Tableau du résultat du plan"
-    }
-  },
-  "export": {
-    "button": "Exporter vers Événements clés",
-    "nothing": "Le plan n'a besoin ni d'Essence Stones ni de Mithril à exporter.",
-    "essenceStones": "Essence Stones",
-    "mithril": "Mithril"
-  }
 }

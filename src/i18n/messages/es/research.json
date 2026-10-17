@@ -1,303 +1,303 @@
 {
-  "title": "Investigación",
-  "unknown": "Desconocido",
-  "nodeCount": "{count, plural, one {{amount} nodo} other {{amount} nodos}}",
-  "jobTitle": "{name}, nivel {from} a {to}",
-  "tabs": {
-    "growth": "Growth",
-    "economy": "Economy",
-    "battle": "Battle",
-    "war-academy-troops": "War Academy T11",
-    "t12-infantry": "Infantry T12",
-    "t12-marksman": "Marksman T12",
-    "t12-lancer": "Lancer T12"
-  },
-  "tier": {
-    "plain": "Tier {tier}",
-    "troopLine": "{line} T{tier}"
-  },
-  "requirement": {
-    "yours": "El tuyo es {level}",
-    "notBuilt": "Sin construir",
-    "researchLevel": "{name} nivel {level}",
-    "yoursLevel": "El tuyo es nivel {level}",
-    "notReleased": "{id} (aún no publicado)"
-  },
-  "tabLock": {
-    "unknownAge": "La investigación de {tab} se abre con una antigüedad de servidor de {days} días. La tuya es desconocida. Añade la fecha de inicio del servidor en Editar jefe.",
-    "knownAge": "La investigación de {tab} se abre con una antigüedad de servidor de {days} días. La tuya es {yours}."
-  },
-  "option": {
-    "label": "{name}, {tab}, nivel {from} a {to}",
-    "subtitle": "Nivel {from} a nivel {to}, pestaña {tab}",
-    "busy": "Ocupado: {name} nivel {level}, {timeLeft}"
-  },
-  "nodeCard": {
-    "allResearched": "Todos los niveles investigados",
-    "nextTime": "Tiempo del nivel {level}: {time}",
-    "power": {
-      "researched": "{power} investigado",
-      "next": "+{power} el siguiente nivel",
-      "some": "Poder {parts}",
-      "none": "Poder 0"
-    },
-    "maxed": "Al máximo. {bonus}",
-    "noBonus": "Sin bonificación en los datos",
-    "level": "Nivel {level} / {max}",
-    "goal": "Objetivo {goal}",
-    "noGoal": "Sin objetivo",
-    "progress": "Progreso de {name}",
-    "lockedByTab": "Bloqueado: {reason}",
-    "lockedByRequirement": "Bloqueado: requiere {requirement}",
-    "placeholder": "Marcador de posición. El coste y la bonificación están vacíos en el paquete.",
-    "needsFirst": "Necesita {names} antes",
-    "researching": "{name} en investigación",
-    "levelStepper": "Nivel de {name}",
-    "detailsOf": "Detalles de {name}",
-    "details": "Detalles"
-  },
-  "queuesStrip": {
-    "title": "Colas de investigación",
-    "note": "Growth, Economy y Battle comparten una cola. T11 y T12 usan la cola de War Academy.",
-    "idle": "Una investigación a la vez. Pulsa Iniciar mejora para empezar una."
-  },
-  "filters": {
-    "title": "Filtros",
-    "description": "Elige qué muestra la pestaña {tab}",
-    "reset": "Restablecer",
-    "show": "Mostrar {nodes}",
-    "tier": "Tier",
-    "statusLabel": "Estado",
-    "troopLine": "Línea de tropa",
-    "orderLabel": "Orden",
-    "notSaved": "Los filtros no se guardan.",
-    "all": "Todos",
-    "status": {
-      "all": "Todos",
-      "progress": "En curso",
-      "goal": "Con objetivo",
-      "maxed": "Al máximo",
-      "locked": "Bloqueados",
-      "notStarted": "Sin empezar"
-    },
-    "order": {
-      "game": "Orden del juego",
-      "name": "Nombre, de A a Z",
-      "level": "Nivel, mayor primero"
-    }
-  },
-  "massSet": {
-    "stop": "{level} de {max}",
-    "title": "Ajuste masivo, {tab}",
-    "description": "Elige un nodo y un nivel. Todo lo anterior en el árbol pasa al máximo.",
-    "cancel": "Cancelar",
-    "set": "Aplicar a {nodes}",
-    "node": "Nodo",
-    "level": "Nivel",
-    "levelToSet": "Nivel a aplicar",
-    "whatChanges": "Qué cambia en la pestaña {tab}",
-    "nothingChanges": "No cambia nada. Todos los nodos de aquí ya están en este nivel o por encima.",
-    "change": "{from} a {to}",
-    "hidden": "y {amount} nodos anteriores más",
-    "alreadyMax": "{count, plural, one {{amount} nodo anterior ya está} other {{amount} nodos anteriores ya están}} al máximo y se quedan como están. Los nodos posteriores del árbol no se tocan. Un nivel que ya es más alto se queda.",
-    "blockersTitle": "Algunos nodos necesitan antes un edificio.",
-    "blocker": "{name} necesita {building}",
-    "blockersMore": " y {amount} más",
-    "blockers": "{list}{more}. Elige un nodo anterior o sube el edificio en la página de Edificios.",
-    "footnote": "El ajuste masivo solo cambia los niveles guardados de esta pestaña. Nunca baja un nivel. Los objetivos no cambian."
-  },
-  "nodeFlyout": {
-    "fallbackTitle": "Investigación",
-    "description": "{category}, tier {tier}, {levels} niveles",
-    "close": "Cerrar",
+    "title": "Investigación",
     "unknown": "Desconocido",
-    "levelOf": "Nivel {level} de {max}",
-    "status": {
-      "notStarted": "sin empezar",
-      "maxed": "al máximo",
-      "inProgress": "en curso"
+    "nodeCount": "{count, plural, one {{amount} nodo} other {{amount} nodos}}",
+    "jobTitle": "{name}, nivel {from} a {to}",
+    "tabs": {
+        "growth": "Growth",
+        "economy": "Economy",
+        "battle": "Battle",
+        "war-academy-troops": "War Academy T11",
+        "t12-infantry": "Infantry T12",
+        "t12-marksman": "Marksman T12",
+        "t12-lancer": "Lancer T12"
     },
-    "goal": "Objetivo {goal}",
-    "noGoal": "Sin objetivo",
-    "openPlan": "Abrir Plan",
-    "maxLevel": {
-      "title": "Nivel máximo",
-      "nothingLeft": "No queda nada por investigar.",
-      "noBonus": "Sin bonificación en los datos."
+    "tier": {
+        "plain": "Tier {tier}",
+        "troopLine": "{line} T{tier}"
     },
-    "placeholder": {
-      "title": "Marcador de posición",
-      "description": "Este nodo aún no tiene coste ni bonificación en el paquete. El tiempo y el coste de investigación muestran Desconocido."
+    "requirement": {
+        "yours": "El tuyo es {level}",
+        "notBuilt": "Sin construir",
+        "researchLevel": "{name} nivel {level}",
+        "yoursLevel": "El tuyo es nivel {level}",
+        "notReleased": "{id} (aún no publicado)"
     },
-    "upcoming": {
-      "first": "Primeros niveles",
-      "after": "Siguientes niveles tras {level}",
-      "heads": {
+    "tabLock": {
+        "unknownAge": "La investigación de {tab} se abre con una antigüedad de servidor de {days} días. La tuya es desconocida. Añade la fecha de inicio del servidor en Editar jefe.",
+        "knownAge": "La investigación de {tab} se abre con una antigüedad de servidor de {days} días. La tuya es {yours}."
+    },
+    "option": {
+        "label": "{name}, {tab}, nivel {from} a {to}",
+        "subtitle": "Nivel {from} a nivel {to}, pestaña {tab}",
+        "busy": "Ocupado: {name} nivel {level}, {timeLeft}"
+    },
+    "nodeCard": {
+        "allResearched": "Todos los niveles investigados",
+        "nextTime": "Tiempo del nivel {level}: {time}",
+        "power": {
+            "researched": "{power} investigado",
+            "next": "+{power} el siguiente nivel",
+            "some": "Poder {parts}",
+            "none": "Poder 0"
+        },
+        "maxed": "Al máximo. {bonus}",
+        "noBonus": "Sin bonificación en los datos",
+        "level": "Nivel {level} / {max}",
+        "goal": "Objetivo {goal}",
+        "noGoal": "Sin objetivo",
+        "progress": "Progreso de {name}",
+        "lockedByTab": "Bloqueado: {reason}",
+        "lockedByRequirement": "Bloqueado: requiere {requirement}",
+        "placeholder": "Marcador de posición. El coste y la bonificación están vacíos en el paquete.",
+        "needsFirst": "Necesita {names} antes",
+        "researching": "{name} en investigación",
+        "levelStepper": "Nivel de {name}",
+        "detailsOf": "Detalles de {name}",
+        "details": "Detalles"
+    },
+    "queuesStrip": {
+        "title": "Colas de investigación",
+        "note": "Growth, Economy y Battle comparten una cola. T11 y T12 usan la cola de War Academy.",
+        "idle": "Una investigación a la vez. Pulsa Iniciar mejora para empezar una."
+    },
+    "filters": {
+        "title": "Filtros",
+        "description": "Elige qué muestra la pestaña {tab}",
+        "reset": "Restablecer",
+        "show": "Mostrar {nodes}",
+        "tier": "Tier",
+        "statusLabel": "Estado",
+        "troopLine": "Línea de tropa",
+        "orderLabel": "Orden",
+        "notSaved": "Los filtros no se guardan.",
+        "all": "Todos",
+        "status": {
+            "all": "Todos",
+            "progress": "En curso",
+            "goal": "Con objetivo",
+            "maxed": "Al máximo",
+            "locked": "Bloqueados",
+            "notStarted": "Sin empezar"
+        },
+        "order": {
+            "game": "Orden del juego",
+            "name": "Nombre, de A a Z",
+            "level": "Nivel, mayor primero"
+        }
+    },
+    "massSet": {
+        "stop": "{level} de {max}",
+        "title": "Ajuste masivo, {tab}",
+        "description": "Elige un nodo y un nivel. Todo lo anterior en el árbol pasa al máximo.",
+        "cancel": "Cancelar",
+        "set": "Aplicar a {nodes}",
+        "node": "Nodo",
         "level": "Nivel",
-        "bonus": "Bonificación",
-        "time": "Tiempo",
-        "power": "Poder"
-      },
-      "goalBadge": "Objetivo",
-      "noBonus": "Ninguna",
-      "shaded": "Las filas sombreadas son los niveles entre tu nivel y tu objetivo."
+        "levelToSet": "Nivel a aplicar",
+        "whatChanges": "Qué cambia en la pestaña {tab}",
+        "nothingChanges": "No cambia nada. Todos los nodos de aquí ya están en este nivel o por encima.",
+        "change": "{from} a {to}",
+        "hidden": "y {amount} nodos anteriores más",
+        "alreadyMax": "{count, plural, one {{amount} nodo anterior ya está} other {{amount} nodos anteriores ya están}} al máximo y se quedan como están. Los nodos posteriores del árbol no se tocan. Un nivel que ya es más alto se queda.",
+        "blockersTitle": "Algunos nodos necesitan antes un edificio.",
+        "blocker": "{name} necesita {building}",
+        "blockersMore": " y {amount} más",
+        "blockers": "{list}{more}. Elige un nodo anterior o sube el edificio en la página de Edificios.",
+        "footnote": "El ajuste masivo solo cambia los niveles guardados de esta pestaña. Nunca baja un nivel. Los objetivos no cambian."
     },
-    "cost": {
-      "title": "Coste de los siguientes niveles",
-      "level": "Niv"
+    "nodeFlyout": {
+        "fallbackTitle": "Investigación",
+        "description": "{category}, tier {tier}, {levels} niveles",
+        "close": "Cerrar",
+        "unknown": "Desconocido",
+        "levelOf": "Nivel {level} de {max}",
+        "status": {
+            "notStarted": "sin empezar",
+            "maxed": "al máximo",
+            "inProgress": "en curso"
+        },
+        "goal": "Objetivo {goal}",
+        "noGoal": "Sin objetivo",
+        "openPlan": "Abrir Plan",
+        "maxLevel": {
+            "title": "Nivel máximo",
+            "nothingLeft": "No queda nada por investigar.",
+            "noBonus": "Sin bonificación en los datos."
+        },
+        "placeholder": {
+            "title": "Marcador de posición",
+            "description": "Este nodo aún no tiene coste ni bonificación en el paquete. El tiempo y el coste de investigación muestran Desconocido."
+        },
+        "upcoming": {
+            "first": "Primeros niveles",
+            "after": "Siguientes niveles tras {level}",
+            "heads": {
+                "level": "Nivel",
+                "bonus": "Bonificación",
+                "time": "Tiempo",
+                "power": "Poder"
+            },
+            "goalBadge": "Objetivo",
+            "noBonus": "Ninguna",
+            "shaded": "Las filas sombreadas son los niveles entre tu nivel y tu objetivo."
+        },
+        "cost": {
+            "title": "Coste de los siguientes niveles",
+            "level": "Niv"
+        },
+        "total": {
+            "title": "Total hasta tu objetivo, nivel {level} a {goal}",
+            "knownTime": "Tiempo de investigación conocido",
+            "power": "Poder",
+            "missingTimes": "{count, plural, one {{amount} nivel no tiene} other {{amount} niveles no tienen}} tiempo en el paquete y aquí cuentan como 0."
+        },
+        "requirements": {
+            "title": "Requisitos para el nivel {level}",
+            "none": "Sin requisitos.",
+            "met": "Cumplido",
+            "notMet": "Sin cumplir",
+            "later": "Los niveles posteriores piden: {list}."
+        }
     },
-    "total": {
-      "title": "Total hasta tu objetivo, nivel {level} a {goal}",
-      "knownTime": "Tiempo de investigación conocido",
-      "power": "Poder",
-      "missingTimes": "{count, plural, one {{amount} nivel no tiene} other {{amount} niveles no tienen}} tiempo en el paquete y aquí cuentan como 0."
+    "tree": {
+        "legend": {
+            "max": "Máx.",
+            "inProgress": "En curso",
+            "notStarted": "Sin empezar",
+            "locked": "Bloqueado"
+        },
+        "pillMax": "Máx. {max}",
+        "pillLevel": "Nv {level} de {max}",
+        "region": "Árbol de investigación de {tab}",
+        "openNode": "{name}, {pill}. Abrir detalles"
     },
-    "requirements": {
-      "title": "Requisitos para el nivel {level}",
-      "none": "Sin requisitos.",
-      "met": "Cumplido",
-      "notMet": "Sin cumplir",
-      "later": "Los niveles posteriores piden: {list}."
+    "plan": {
+        "title": "Plan de Investigación",
+        "description": "Recursos, tiempo y poder del nivel actual al objetivo",
+        "saved": "Plan guardado {date}",
+        "close": "Cerrar",
+        "save": "Guardar plan",
+        "goals": "Objetivos, {nodes}",
+        "noGoals": "Aún no hay objetivos. Añade un nodo de investigación arriba y elige el nivel que quieres alcanzar.",
+        "goalsHint": "El nivel actual es el de la página. Cámbialo allí. Los objetivos son de solo lectura en la página y se fijan aquí.",
+        "failed": "No se ha podido calcular el plan.",
+        "timeNote": "El plan tarda {time} tras la bonificación de velocidad del {percent}%. Tus existencias: Investigación {research} min, General {general} min. Los aceleradores generales cuentan para investigación.",
+        "percent": "{value}%",
+        "percentPlus": "+{value}%",
+        "appointment": {
+            "none": "Ninguno",
+            "regular": "Normal",
+            "supreme": "Supremo"
+        },
+        "add": {
+            "title": "Añadir un nodo de investigación",
+            "none": "Todos los nodos ya están en el plan o en su nivel máximo.",
+            "select": "Nodo de investigación a añadir",
+            "button": "Añadir investigación"
+        },
+        "speed": {
+            "title": "Velocidad de investigación",
+            "readOnly": "Solo lectura",
+            "carriedOver": "Traída de la página de Bonificaciones.",
+            "turnedOff": "Desactivada en Ajustes, en Aplicar mis totales de Bonificaciones.",
+            "openBonuses": "Abrir Bonificaciones",
+            "stateBuff": "Mejora de estado",
+            "vicePresident": "Vicepresidente",
+            "total": "Velocidad de investigación total"
+        },
+        "goal": {
+            "level": "Nivel {level}",
+            "to": "a",
+            "label": "Objetivo de {name}",
+            "remove": "Quitar {name} del plan"
+        },
+        "result": {
+            "title": "Resultado, {steps} pasos",
+            "powerGained": "Poder ganado",
+            "speedupMinutes": "Minutos de aceleradores necesarios",
+            "baseTime": "Tiempo base",
+            "timeWithBonus": "Tiempo con bonificación del {percent}%",
+            "stepsWithoutTime": "{count, plural, one {{amount} paso no tiene} other {{amount} pasos no tienen}} tiempo en el paquete y cuentan como 0 segundos.",
+            "stepCount": "{count, plural, one {{amount} paso} other {{amount} pasos}}",
+            "buildingRequirements": "Requisitos de edificios",
+            "unmet": "Requisitos previos sin cumplir",
+            "unmetNone": "Ninguno para estos objetivos.",
+            "unmetItem": "{name} nivel {level} necesita {requires} nivel {requiresLevel}"
+        },
+        "export": {
+            "button": "Exportar a Eventos clave",
+            "empty": "Añade un objetivo al plan para exportarlo.",
+            "speedupMinutes": "Minutos de aceleradores de investigación",
+            "power": "Poder ganado con la investigación",
+            "computed": "Calculado por la app a partir del resultado del plan.",
+            "unscored": "Ningún evento puntúa {name}."
+        }
+    },
+    "view": {
+        "ofTotal": "{count} de {total}",
+        "undo": "Deshacer",
+        "massSetApplied": {
+            "title": "Ajuste masivo aplicado",
+            "message": "{nodes} actualizados."
+        },
+        "started": {
+            "title": "Investigación iniciada",
+            "message": "{name}, nivel {from} a {to}."
+        },
+        "manage": {
+            "slotLabel": "{queue}, {category}",
+            "finishText": "Terminar mejora pone {name} en el nivel {level}, libera la cola {queue} y añade la mejora a tu Historial. Con cero tiempo restante, el nodo y la tarjeta de la cola indican Listo para terminar. Nada termina solo, porque puede que hayas usado aceleradores."
+        },
+        "finished": {
+            "title": "{name} investigado",
+            "message": "Ahora nivel {level}. Añadido al Historial."
+        },
+        "cancelled": {
+            "title": "Investigación de {name} cancelada",
+            "message": "El nivel se queda como estaba. Corrige tus existencias en Recursos si hace falta."
+        },
+        "subline": {
+            "researchCenter": "Research Center {level}",
+            "warAcademy": "War Academy {level}"
+        },
+        "stats": {
+            "maxed": "Nodos al máximo, {percent}% del árbol",
+            "power": "Poder de investigación, el de cada nivel investigado",
+            "withoutTimeNone": "Sin tiempo de investigación, todos los niveles tienen uno",
+            "withoutTimeSome": "Sin tiempo de investigación, se muestra como Desconocido",
+            "locked": "Bloqueados por antigüedad del servidor o requisitos"
+        },
+        "tabLockedNote": "{reason} Aun así puedes fijar objetivos en Plan.",
+        "lockedByRequirement": "{count} de {total} nodos de esta pestaña están bloqueados por un requisito.",
+        "search": {
+            "label": "Buscar nodos",
+            "placeholder": "Buscar nodos por nombre o bonificación"
+        },
+        "massSet": "Ajuste masivo",
+        "layout": {
+            "label": "Vista",
+            "grid": "Cuadrícula",
+            "tree": "Árbol"
+        },
+        "plan": "Plan",
+        "status": {
+            "tree": "{count} nodos en el árbol de {tab}. Poder de investigación en esta pestaña: {power}. Desplázate para moverte. Los nodos que no coinciden con la búsqueda o los filtros se atenúan.",
+            "grid": "Mostrando {shown} de {count} nodos de {tab}. Poder de investigación en esta pestaña: {power}. Aquí los objetivos son de solo lectura y se fijan en Plan."
+        },
+        "empty": {
+            "title": "Ningún nodo coincide",
+            "description": "Cambia la búsqueda o restablece los filtros para ver todos los nodos.",
+            "reset": "Restablecer búsqueda y filtros"
+        },
+        "start": {
+            "description": "Marca una investigación como en mejora",
+            "selectLabel": "Investigación a mejorar",
+            "selectHelp": "Solo aparecen las investigaciones que puedes iniciar ahora. Las bloqueadas, al máximo y en curso no se muestran. Una investigación de Growth, Economy o Battle usa la cola de Investigación. Una de T11 o T12 usa la cola de War Academy.",
+            "timeLabel": "Tiempo de investigación",
+            "speedLabel": "Velocidad de investigación",
+            "slotLabel": "Cola",
+            "slotHelp": "Una investigación a la vez en cada cola. Si la cola está ocupada, esta tarjeta indica cuándo queda libre."
+        }
     }
-  },
-  "tree": {
-    "legend": {
-      "max": "Máx.",
-      "inProgress": "En curso",
-      "notStarted": "Sin empezar",
-      "locked": "Bloqueado"
-    },
-    "pillMax": "Máx. {max}",
-    "pillLevel": "Nv {level} de {max}",
-    "region": "Árbol de investigación de {tab}",
-    "openNode": "{name}, {pill}. Abrir detalles"
-  },
-  "plan": {
-    "title": "Plan de Investigación",
-    "description": "Recursos, tiempo y poder del nivel actual al objetivo",
-    "saved": "Plan guardado {date}",
-    "close": "Cerrar",
-    "save": "Guardar plan",
-    "goals": "Objetivos, {nodes}",
-    "noGoals": "Aún no hay objetivos. Añade un nodo de investigación arriba y elige el nivel que quieres alcanzar.",
-    "goalsHint": "El nivel actual es el de la página. Cámbialo allí. Los objetivos son de solo lectura en la página y se fijan aquí.",
-    "failed": "No se ha podido calcular el plan.",
-    "timeNote": "El plan tarda {time} tras la bonificación de velocidad del {percent}%. Tus existencias: Investigación {research} min, General {general} min. Los aceleradores generales cuentan para investigación.",
-    "percent": "{value}%",
-    "percentPlus": "+{value}%",
-    "appointment": {
-      "none": "Ninguno",
-      "regular": "Normal",
-      "supreme": "Supremo"
-    },
-    "add": {
-      "title": "Añadir un nodo de investigación",
-      "none": "Todos los nodos ya están en el plan o en su nivel máximo.",
-      "select": "Nodo de investigación a añadir",
-      "button": "Añadir investigación"
-    },
-    "speed": {
-      "title": "Velocidad de investigación",
-      "readOnly": "Solo lectura",
-      "carriedOver": "Traída de la página de Bonificaciones.",
-      "turnedOff": "Desactivada en Ajustes, en Aplicar mis totales de Bonificaciones.",
-      "openBonuses": "Abrir Bonificaciones",
-      "stateBuff": "Mejora de estado",
-      "vicePresident": "Vicepresidente",
-      "total": "Velocidad de investigación total"
-    },
-    "goal": {
-      "level": "Nivel {level}",
-      "to": "a",
-      "label": "Objetivo de {name}",
-      "remove": "Quitar {name} del plan"
-    },
-    "result": {
-      "title": "Resultado, {steps} pasos",
-      "powerGained": "Poder ganado",
-      "speedupMinutes": "Minutos de aceleradores necesarios",
-      "baseTime": "Tiempo base",
-      "timeWithBonus": "Tiempo con bonificación del {percent}%",
-      "stepsWithoutTime": "{count, plural, one {{amount} paso no tiene} other {{amount} pasos no tienen}} tiempo en el paquete y cuentan como 0 segundos.",
-      "stepCount": "{count, plural, one {{amount} paso} other {{amount} pasos}}",
-      "buildingRequirements": "Requisitos de edificios",
-      "unmet": "Requisitos previos sin cumplir",
-      "unmetNone": "Ninguno para estos objetivos.",
-      "unmetItem": "{name} nivel {level} necesita {requires} nivel {requiresLevel}"
-    },
-    "export": {
-      "button": "Exportar a Eventos clave",
-      "empty": "Añade un objetivo al plan para exportarlo.",
-      "speedupMinutes": "Minutos de aceleradores de investigación",
-      "power": "Poder ganado con la investigación",
-      "computed": "Calculado por la app a partir del resultado del plan.",
-      "unscored": "Ningún evento puntúa {name}."
-    }
-  },
-  "view": {
-    "ofTotal": "{count} de {total}",
-    "undo": "Deshacer",
-    "massSetApplied": {
-      "title": "Ajuste masivo aplicado",
-      "message": "{nodes} actualizados."
-    },
-    "started": {
-      "title": "Investigación iniciada",
-      "message": "{name}, nivel {from} a {to}."
-    },
-    "manage": {
-      "slotLabel": "{queue}, {category}",
-      "finishText": "Terminar mejora pone {name} en el nivel {level}, libera la cola {queue} y añade la mejora a tu Historial. Con cero tiempo restante, el nodo y la tarjeta de la cola indican Listo para terminar. Nada termina solo, porque puede que hayas usado aceleradores."
-    },
-    "finished": {
-      "title": "{name} investigado",
-      "message": "Ahora nivel {level}. Añadido al Historial."
-    },
-    "cancelled": {
-      "title": "Investigación de {name} cancelada",
-      "message": "El nivel se queda como estaba. Corrige tus existencias en Recursos si hace falta."
-    },
-    "subline": {
-      "researchCenter": "Research Center {level}",
-      "warAcademy": "War Academy {level}"
-    },
-    "stats": {
-      "maxed": "Nodos al máximo, {percent}% del árbol",
-      "power": "Poder de investigación, el de cada nivel investigado",
-      "withoutTimeNone": "Sin tiempo de investigación, todos los niveles tienen uno",
-      "withoutTimeSome": "Sin tiempo de investigación, se muestra como Desconocido",
-      "locked": "Bloqueados por antigüedad del servidor o requisitos"
-    },
-    "tabLockedNote": "{reason} Aun así puedes fijar objetivos en Plan.",
-    "lockedByRequirement": "{count} de {total} nodos de esta pestaña están bloqueados por un requisito.",
-    "search": {
-      "label": "Buscar nodos",
-      "placeholder": "Buscar nodos por nombre o bonificación"
-    },
-    "massSet": "Ajuste masivo",
-    "layout": {
-      "label": "Vista",
-      "grid": "Cuadrícula",
-      "tree": "Árbol"
-    },
-    "plan": "Plan",
-    "status": {
-      "tree": "{count} nodos en el árbol de {tab}. Poder de investigación en esta pestaña: {power}. Desplázate para moverte. Los nodos que no coinciden con la búsqueda o los filtros se atenúan.",
-      "grid": "Mostrando {shown} de {count} nodos de {tab}. Poder de investigación en esta pestaña: {power}. Aquí los objetivos son de solo lectura y se fijan en Plan."
-    },
-    "empty": {
-      "title": "Ningún nodo coincide",
-      "description": "Cambia la búsqueda o restablece los filtros para ver todos los nodos.",
-      "reset": "Restablecer búsqueda y filtros"
-    },
-    "start": {
-      "description": "Marca una investigación como en mejora",
-      "selectLabel": "Investigación a mejorar",
-      "selectHelp": "Solo aparecen las investigaciones que puedes iniciar ahora. Las bloqueadas, al máximo y en curso no se muestran. Una investigación de Growth, Economy o Battle usa la cola de Investigación. Una de T11 o T12 usa la cola de War Academy.",
-      "timeLabel": "Tiempo de investigación",
-      "speedLabel": "Velocidad de investigación",
-      "slotLabel": "Cola",
-      "slotHelp": "Una investigación a la vez en cada cola. Si la cola está ocupada, esta tarjeta indica cuándo queda libre."
-    }
-  }
 }

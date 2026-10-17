@@ -1,35 +1,35 @@
 {
-  "close": "Chiudi",
-  "field": {
-    "optional": "Facoltativo"
-  },
-  "stepper": {
-    "lower": "Diminuisci {label}",
-    "raise": "Aumenta {label}",
-    "labelPrefix": "{label}, "
-  },
-  "switch": {
-    "on": "Attivo",
-    "off": "Disattivo"
-  },
-  "tabs": {
-    "locked": " (bloccato)"
-  },
-  "toast": {
-    "dismiss": "Ignora",
-    "variants": {
-      "success": "Operazione riuscita",
-      "info": "Info",
-      "warning": "Attenzione",
-      "error": "Errore"
+    "close": "Chiudi",
+    "field": {
+        "optional": "Facoltativo"
     },
-    "missingProvider": "useToast must be used within a ToastProvider"
-  },
-  "savedChip": {
-    "automatic": "Salvataggio automatico",
-    "justNow": "Salvato ora",
-    "minutesAgo": "Salvato {count} min fa",
-    "at": "Salvato alle {time}",
-    "failed": "Non salvato, memoria piena"
-  }
+    "stepper": {
+        "lower": "Diminuisci {label}",
+        "raise": "Aumenta {label}",
+        "labelPrefix": "{label}, "
+    },
+    "switch": {
+        "on": "Attivo",
+        "off": "Disattivo"
+    },
+    "tabs": {
+        "locked": " (bloccato)"
+    },
+    "toast": {
+        "dismiss": "Ignora",
+        "variants": {
+            "success": "Operazione riuscita",
+            "info": "Info",
+            "warning": "Attenzione",
+            "error": "Errore"
+        },
+        "missingProvider": "useToast must be used within a ToastProvider"
+    },
+    "savedChip": {
+        "automatic": "Salvataggio automatico",
+        "justNow": "Salvato ora",
+        "minutesAgo": "Salvato {count} min fa",
+        "at": "Salvato alle {time}",
+        "failed": "Non salvato, memoria piena"
+    }
 }

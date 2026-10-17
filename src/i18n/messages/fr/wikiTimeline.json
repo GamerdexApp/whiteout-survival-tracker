@@ -1,49 +1,49 @@
 {
-  "title": "Chronologie du serveur",
-  "line": "{rows, plural, one {{amount} étape} other {{amount} étapes}} du jour {first} au jour {last}",
-  "subline": "Ce qui se débloque à chaque âge du serveur. Référence uniquement, rien ici n'est enregistré.",
-  "place": {
-    "label": "Afficher ma position pour",
-    "option": "{name}, environ jour {days}, à {window} près",
-    "optionNoDate": "{name}, sans date de lancement du serveur",
-    "jump": "Aller à ma position"
-  },
-  "filters": {
-    "label": "Afficher",
-    "events": "Événements {amount}",
-    "features": "Fonctions {amount}",
-    "pets": "Familiers {amount}",
-    "experts": "Experts {amount}",
-    "heroes": "Héros {amount}"
-  },
-  "help": "La ligne représente l'âge du serveur en jours. Les héros sont à droite, tout le reste à gauche. Votre position vient de la date de lancement du serveur de votre chef, avec une marge de {window} jours en plus ou en moins.",
-  "noChief": "Il n'y a pas encore de chef, donc votre position n'est pas affichée.",
-  "addChief": "Ajouter un chef",
-  "noStartDate": "{name} n'a pas de date de lancement du serveur. Ajoutez-en une pour voir votre position sur la ligne.",
-  "editChief": "Modifier le chef",
-  "columns": {
-    "left": "Événements, fonctions, familiers, experts",
-    "right": "Héros"
-  },
-  "tags": {
-    "event": "Événement",
-    "feature": "Fonction",
-    "pets": "Familiers",
-    "experts": "Experts"
-  },
-  "fireCrystalLevels": "Niveaux de Fire Crystal {names}",
-  "heroGeneration": "Héros, génération {generation}",
-  "day": "Jour {day}",
-  "status": {
-    "unlocked": "Débloqué",
-    "near": "Proche de votre âge",
-    "future": "{count, plural, one {Dans {amount} jour} other {Dans {amount} jours}}"
-  },
-  "marker": {
-    "label": "Vous êtes ici",
-    "title": "{name}, âge du serveur environ {days} jours",
-    "window": "Marge de {window} jours : jour {from} à {to}"
-  },
-  "empty": "Rien à afficher avec ces filtres.",
-  "source": "Source : la chronologie du serveur des données."
+    "title": "Chronologie du serveur",
+    "line": "{rows, plural, one {{amount} étape} other {{amount} étapes}} du jour {first} au jour {last}",
+    "subline": "Ce qui se débloque à chaque âge du serveur. Référence uniquement, rien ici n'est enregistré.",
+    "place": {
+        "label": "Afficher ma position pour",
+        "option": "{name}, environ jour {days}, à {window} près",
+        "optionNoDate": "{name}, sans date de lancement du serveur",
+        "jump": "Aller à ma position"
+    },
+    "filters": {
+        "label": "Afficher",
+        "events": "Événements {amount}",
+        "features": "Fonctions {amount}",
+        "pets": "Familiers {amount}",
+        "experts": "Experts {amount}",
+        "heroes": "Héros {amount}"
+    },
+    "help": "La ligne représente l'âge du serveur en jours. Les héros sont à droite, tout le reste à gauche. Votre position vient de la date de lancement du serveur de votre chef, avec une marge de {window} jours en plus ou en moins.",
+    "noChief": "Il n'y a pas encore de chef, donc votre position n'est pas affichée.",
+    "addChief": "Ajouter un chef",
+    "noStartDate": "{name} n'a pas de date de lancement du serveur. Ajoutez-en une pour voir votre position sur la ligne.",
+    "editChief": "Modifier le chef",
+    "columns": {
+        "left": "Événements, fonctions, familiers, experts",
+        "right": "Héros"
+    },
+    "tags": {
+        "event": "Événement",
+        "feature": "Fonction",
+        "pets": "Familiers",
+        "experts": "Experts"
+    },
+    "fireCrystalLevels": "Niveaux de Fire Crystal {names}",
+    "heroGeneration": "Héros, génération {generation}",
+    "day": "Jour {day}",
+    "status": {
+        "unlocked": "Débloqué",
+        "near": "Proche de votre âge",
+        "future": "{count, plural, one {Dans {amount} jour} other {Dans {amount} jours}}"
+    },
+    "marker": {
+        "label": "Vous êtes ici",
+        "title": "{name}, âge du serveur environ {days} jours",
+        "window": "Marge de {window} jours : jour {from} à {to}"
+    },
+    "empty": "Rien à afficher avec ces filtres.",
+    "source": "Source : la chronologie du serveur des données."
 }

@@ -1,70 +1,70 @@
 {
-  "line": "{experts} ahli dan {relationships} tahap hubungan. Hanya referensi, tidak ada yang disimpan.",
-  "roster": {
-    "title": "Ahli",
-    "count": "{shown} dari {total} ahli",
-    "search": "Cari",
-    "searchPlaceholder": "Cari {count} ahli menurut nama, gelar, atau spesialisasi",
-    "generation": "Generasi",
-    "all": "Semua",
-    "empty": "Tidak ada ahli yang cocok dengan filter.",
-    "generationValue": "Generasi {generation}",
-    "unlock": "Terbuka: hari server {days}",
-    "unlockUnknown": "Terbuka:",
-    "unreleased": "Belum dirilis"
-  },
-  "detail": {
-    "subline": "{title} · spesialisasi {specialty} · generasi {generation}",
-    "baseBonus": "Dasar: {bonus}",
-    "bonus": "{stat} {value}",
-    "percentValue": "{value}%",
-    "skills": "Skill",
-    "talent": "Bakat, level maks {level}",
-    "affinityLevels": "Level afinitas",
-    "baseBonusLabel": "Bonus dasar",
-    "unlock": "Terbuka di hari server {days}"
-  },
-  "skills": {
-    "title": "Skill dan bakat",
-    "columns": {
-      "skill": "Skill",
-      "max": "Maks",
-      "effect": "Efek",
-      "books": "Buku sampai maks",
-      "exp": "EXP sampai maks"
+    "line": "{experts} ahli dan {relationships} tahap hubungan. Hanya referensi, tidak ada yang disimpan.",
+    "roster": {
+        "title": "Ahli",
+        "count": "{shown} dari {total} ahli",
+        "search": "Cari",
+        "searchPlaceholder": "Cari {count} ahli menurut nama, gelar, atau spesialisasi",
+        "generation": "Generasi",
+        "all": "Semua",
+        "empty": "Tidak ada ahli yang cocok dengan filter.",
+        "generationValue": "Generasi {generation}",
+        "unlock": "Terbuka: hari server {days}",
+        "unlockUnknown": "Terbuka:",
+        "unreleased": "Belum dirilis"
     },
-    "talent": "{name} (bakat)",
-    "none": "Tidak ada",
-    "selectHint": "Pilih skill untuk melihat detailnya."
-  },
-  "skillLevels": {
-    "title": "Tabel level skill",
-    "meta": "{name}, level 1 sampai {max}",
-    "level": "Level {level}",
-    "columns": {
-      "level": "Level",
-      "exp": "EXP",
-      "books": "Buku"
+    "detail": {
+        "subline": "{title} · spesialisasi {specialty} · generasi {generation}",
+        "baseBonus": "Dasar: {bonus}",
+        "bonus": "{stat} {value}",
+        "percentValue": "{value}%",
+        "skills": "Skill",
+        "talent": "Bakat, level maks {level}",
+        "affinityLevels": "Level afinitas",
+        "baseBonusLabel": "Bonus dasar",
+        "unlock": "Terbuka di hari server {days}"
     },
-    "none": "Tidak ada"
-  },
-  "affinity": {
-    "title": "Level afinitas",
-    "level": "Level {level}",
-    "columns": {
-      "level": "Level",
-      "required": "Afinitas dibutuhkan",
-      "bonus": "Bonus statistik",
-      "affinityPower": "Kekuatan afinitas",
-      "levelPower": "Kekuatan level",
-      "advancement": "Biaya kenaikan tingkat"
+    "skills": {
+        "title": "Skill dan bakat",
+        "columns": {
+            "skill": "Skill",
+            "max": "Maks",
+            "effect": "Efek",
+            "books": "Buku sampai maks",
+            "exp": "EXP sampai maks"
+        },
+        "talent": "{name} (bakat)",
+        "none": "Tidak ada",
+        "selectHint": "Pilih skill untuk melihat detailnya."
     },
-    "noAdvancement": "Tanpa kenaikan tingkat",
-    "startNote": "Afinitas yang dibutuhkan di level 1 adalah nilai awal {start}. Mulai level 2, jumlahnya adalah biaya untuk mencapai level itu."
-  },
-  "relationships": {
-    "title": "Tahap hubungan",
-    "fromLevel": "mulai level {level}"
-  },
-  "recordLine": "{title}, spesialisasi {specialty}, generasi {generation}. Hanya referensi, tidak ada yang disimpan."
+    "skillLevels": {
+        "title": "Tabel level skill",
+        "meta": "{name}, level 1 sampai {max}",
+        "level": "Level {level}",
+        "columns": {
+            "level": "Level",
+            "exp": "EXP",
+            "books": "Buku"
+        },
+        "none": "Tidak ada"
+    },
+    "affinity": {
+        "title": "Level afinitas",
+        "level": "Level {level}",
+        "columns": {
+            "level": "Level",
+            "required": "Afinitas dibutuhkan",
+            "bonus": "Bonus statistik",
+            "affinityPower": "Kekuatan afinitas",
+            "levelPower": "Kekuatan level",
+            "advancement": "Biaya kenaikan tingkat"
+        },
+        "noAdvancement": "Tanpa kenaikan tingkat",
+        "startNote": "Afinitas yang dibutuhkan di level 1 adalah nilai awal {start}. Mulai level 2, jumlahnya adalah biaya untuk mencapai level itu."
+    },
+    "relationships": {
+        "title": "Tahap hubungan",
+        "fromLevel": "mulai level {level}"
+    },
+    "recordLine": "{title}, spesialisasi {specialty}, generasi {generation}. Hanya referensi, tidak ada yang disimpan."
 }

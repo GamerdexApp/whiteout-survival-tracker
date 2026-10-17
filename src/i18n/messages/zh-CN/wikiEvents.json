@@ -1,145 +1,145 @@
 {
-  "line": "{events}个活动：联盟{alliance}，个人{solo}，新手{rookie}，节日{holiday}。数据包中有的内容包括阶段、计分、奖励、提示、商店和排名。",
-  "list": {
-    "title": "活动",
-    "showing": "显示{shown} / {total}",
-    "search": "搜索",
-    "searchPlaceholder": "按名称搜索活动",
-    "scoringFilter": "计分",
-    "categoryLabel": "分类",
-    "all": "全部",
-    "table": "活动",
-    "event": "活动",
-    "category": "分类",
-    "frequency": "频率（自由文本）",
-    "duration": "时长（自由文本）",
-    "scoringRows": "计分行",
-    "noScoringRows": "无计分行",
-    "emptyTitle": "没有匹配的活动",
-    "emptyDescription": "修改搜索、分类或计分。"
-  },
-  "category": {
-    "alliance": "联盟",
-    "solo": "个人",
-    "rookie": "新手",
-    "holiday": "节日"
-  },
-  "scoring": {
-    "any": "任意计分",
-    "ranking": "排名",
-    "tier": "段位",
-    "milestones": "里程碑",
-    "waves": "波次",
-    "participation": "参与"
-  },
-  "parts": {
-    "days": "{count, plural, other {{amount}天}}",
-    "tiers": "{count, plural, other {{amount}个段位}}",
-    "missions": "{count, plural, other {{amount}个任务}}",
-    "waves": "{count, plural, other {{amount}波}}",
-    "versions": "{count, plural, other {{amount}个版本}}",
-    "levels": "{count, plural, other {{amount}级}}"
-  },
-  "detail": {
-    "title": "详情",
-    "category": "分类",
-    "frequency": "频率",
-    "duration": "时长",
-    "summary": "概要",
-    "requirements": "要求",
-    "scoring": "计分",
-    "noRequirements": "无"
-  },
-  "phases": {
-    "title": "阶段",
-    "table": "活动阶段",
-    "phase": "阶段",
-    "description": "说明"
-  },
-  "scoringRows": {
-    "title": "计分行：{name}",
-    "table": "计分行动",
-    "action": "行动",
-    "points": "积分",
-    "victoryPoints": "{amount}胜利积分",
-    "milestones": "{name}的里程碑",
-    "allianceMilestones": "{name}的联盟里程碑"
-  },
-  "missions": {
-    "title": "任务",
-    "table": "活动任务",
-    "mission": "任务",
-    "group": "分组",
-    "points": "积分",
-    "rewards": "奖励"
-  },
-  "tiers": {
-    "title": "段位",
-    "table": "活动段位",
-    "tier": "段位",
-    "score": "目标",
-    "scoreValue": "{amount} {unit}",
-    "scoreValuePoints": "{amount}分",
-    "rewards": "奖励",
-    "note": "备注"
-  },
-  "rankings": {
-    "title": "排名奖励",
-    "personal": "个人排名奖励",
-    "alliance": "联盟排名奖励",
-    "basedOn": "排名奖励依据：{basis}",
-    "table": "排名奖励",
-    "rank": "排名",
-    "starChange": "星级变化",
-    "rewards": "奖励"
-  },
-  "rewards": {
-    "title": "奖励",
-    "partial": "此奖励列表不完整。",
-    "amountName": "{amount} {name}"
-  },
-  "pointLevels": {
-    "title": "积分等级",
-    "table": "积分等级",
-    "level": "等级",
-    "personal": "个人积分",
-    "alliance": "联盟积分",
-    "rewards": "奖励"
-  },
-  "waves": {
-    "title": "波次",
-    "table": "进攻波次",
-    "wave": "波次",
-    "target": "目标",
-    "rule": "规则",
-    "city": "城市",
-    "headquarters": "总部"
-  },
-  "zones": {
-    "title": "区域",
-    "table": "活动区域",
-    "zone": "区域",
-    "days": "天数",
-    "statSources": "属性来源",
-    "unlock": "解锁"
-  },
-  "shop": {
-    "title": "商店",
-    "titleNamed": "商店：{name}",
-    "table": "商店商品",
-    "offer": "商品",
-    "cost": "费用",
-    "costValue": "{amount} {currency}",
-    "limit": "限购",
-    "contents": "内容"
-  },
-  "versions": {
-    "title": "{name}",
-    "missions": "任务",
-    "chests": "宝箱"
-  },
-  "tips": {
-    "title": "提示"
-  },
-  "recordLine": "{category}活动，含阶段、计分、奖励和排名。"
+    "line": "{events}个活动：联盟{alliance}，个人{solo}，新手{rookie}，节日{holiday}。数据包中有的内容包括阶段、计分、奖励、提示、商店和排名。",
+    "list": {
+        "title": "活动",
+        "showing": "显示{shown} / {total}",
+        "search": "搜索",
+        "searchPlaceholder": "按名称搜索活动",
+        "scoringFilter": "计分",
+        "categoryLabel": "分类",
+        "all": "全部",
+        "table": "活动",
+        "event": "活动",
+        "category": "分类",
+        "frequency": "频率（自由文本）",
+        "duration": "时长（自由文本）",
+        "scoringRows": "计分行",
+        "noScoringRows": "无计分行",
+        "emptyTitle": "没有匹配的活动",
+        "emptyDescription": "修改搜索、分类或计分。"
+    },
+    "category": {
+        "alliance": "联盟",
+        "solo": "个人",
+        "rookie": "新手",
+        "holiday": "节日"
+    },
+    "scoring": {
+        "any": "任意计分",
+        "ranking": "排名",
+        "tier": "段位",
+        "milestones": "里程碑",
+        "waves": "波次",
+        "participation": "参与"
+    },
+    "parts": {
+        "days": "{count, plural, other {{amount}天}}",
+        "tiers": "{count, plural, other {{amount}个段位}}",
+        "missions": "{count, plural, other {{amount}个任务}}",
+        "waves": "{count, plural, other {{amount}波}}",
+        "versions": "{count, plural, other {{amount}个版本}}",
+        "levels": "{count, plural, other {{amount}级}}"
+    },
+    "detail": {
+        "title": "详情",
+        "category": "分类",
+        "frequency": "频率",
+        "duration": "时长",
+        "summary": "概要",
+        "requirements": "要求",
+        "scoring": "计分",
+        "noRequirements": "无"
+    },
+    "phases": {
+        "title": "阶段",
+        "table": "活动阶段",
+        "phase": "阶段",
+        "description": "说明"
+    },
+    "scoringRows": {
+        "title": "计分行：{name}",
+        "table": "计分行动",
+        "action": "行动",
+        "points": "积分",
+        "victoryPoints": "{amount}胜利积分",
+        "milestones": "{name}的里程碑",
+        "allianceMilestones": "{name}的联盟里程碑"
+    },
+    "missions": {
+        "title": "任务",
+        "table": "活动任务",
+        "mission": "任务",
+        "group": "分组",
+        "points": "积分",
+        "rewards": "奖励"
+    },
+    "tiers": {
+        "title": "段位",
+        "table": "活动段位",
+        "tier": "段位",
+        "score": "目标",
+        "scoreValue": "{amount} {unit}",
+        "scoreValuePoints": "{amount}分",
+        "rewards": "奖励",
+        "note": "备注"
+    },
+    "rankings": {
+        "title": "排名奖励",
+        "personal": "个人排名奖励",
+        "alliance": "联盟排名奖励",
+        "basedOn": "排名奖励依据：{basis}",
+        "table": "排名奖励",
+        "rank": "排名",
+        "starChange": "星级变化",
+        "rewards": "奖励"
+    },
+    "rewards": {
+        "title": "奖励",
+        "partial": "此奖励列表不完整。",
+        "amountName": "{amount} {name}"
+    },
+    "pointLevels": {
+        "title": "积分等级",
+        "table": "积分等级",
+        "level": "等级",
+        "personal": "个人积分",
+        "alliance": "联盟积分",
+        "rewards": "奖励"
+    },
+    "waves": {
+        "title": "波次",
+        "table": "进攻波次",
+        "wave": "波次",
+        "target": "目标",
+        "rule": "规则",
+        "city": "城市",
+        "headquarters": "总部"
+    },
+    "zones": {
+        "title": "区域",
+        "table": "活动区域",
+        "zone": "区域",
+        "days": "天数",
+        "statSources": "属性来源",
+        "unlock": "解锁"
+    },
+    "shop": {
+        "title": "商店",
+        "titleNamed": "商店：{name}",
+        "table": "商店商品",
+        "offer": "商品",
+        "cost": "费用",
+        "costValue": "{amount} {currency}",
+        "limit": "限购",
+        "contents": "内容"
+    },
+    "versions": {
+        "title": "{name}",
+        "missions": "任务",
+        "chests": "宝箱"
+    },
+    "tips": {
+        "title": "提示"
+    },
+    "recordLine": "{category}活动，含阶段、计分、奖励和排名。"
 }

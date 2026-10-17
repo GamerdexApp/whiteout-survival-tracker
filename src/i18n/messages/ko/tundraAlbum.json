@@ -1,90 +1,90 @@
 {
-  "page": {
-    "title": "Tundra Album"
-  },
-  "view": {
-    "subline": "{chief} · {details} · 앨범 {total}개 중 {complete}개 완성"
-  },
-  "summary": {
-    "label": "완성한 앨범",
-    "value": "{total}개 중 {done}개",
-    "progress": "완성한 앨범",
-    "inData": "앨범 {all}개 중 {shown}개가 데이터에 있어요"
-  },
-  "buffs": {
-    "title": "현재 적용 중인 버프",
-    "derived": "계산값",
-    "none": "완성한 앨범이 아직 없어서 적용되는 Tundra Album 버프가 없어요.",
-    "note": "완성한 앨범만 적용돼요. 이 버프는 <link>보너스</link> 페이지에 반영돼요."
-  },
-  "album": {
-    "status": {
-      "complete": "완성",
-      "inProgress": "진행 중"
+    "page": {
+        "title": "Tundra Album"
     },
-    "buffWhenComplete": "완성 시 버프",
-    "puzzlesDone": "완료한 퍼즐",
-    "puzzlesValue": "{total}개 중 {done}개",
-    "puzzlesProgress": "{album} 완료한 퍼즐",
-    "completionRewards": "완성 보상",
-    "markComplete": "앨범 완성으로 표시",
-    "notCounting": "아직 적용되지 않아요. {buff}은(는) 퍼즐 {total}개를 모두 완료해야 보너스 페이지에 반영돼요. 앨범 완성으로 표시하면 퍼즐 {total}개가 모두 완료 처리되고 실행 취소 알림이 나와요.",
-    "counting": "현재 적용 중이에요. {buff}이(가) 보너스 페이지에 있어요. 퍼즐 체크를 해제하면 다시 빠져요.",
-    "piecesValue": "조각 {total}개 중 {collected}개 수집"
-  },
-  "puzzle": {
-    "pieces": "{count, plural, other {조각 {amount}개}}, 별 1~5: {split}",
-    "reward": "보상",
-    "done": "퍼즐 완료, 모든 조각 수집",
-    "doneFor": "완료, {puzzle}",
-    "collectedLabel": "수집한 조각",
-    "collected": "{total}개 중 {collected}개",
-    "pieceLabel": "{name}, 별 {stars}개",
-    "pieceHint": "가지고 있는 조각을 선택하세요. 퍼즐을 완료로 표시하면 모든 조각을 수집한 것으로 처리돼요.",
-    "allCollected": "퍼즐이 완료돼서 모든 조각을 수집했어요."
-  },
-  "reward": {
-    "line": "{item} {amount}",
-    "sized": "{item} {amount} ({size})",
-    "unknownItem": "알 수 없는 아이템"
-  },
-  "toast": {
-    "markedTitle": "{album}을(를) 완성으로 표시했어요",
-    "markedMessage": "퍼즐 {total}개를 모두 완료했어요.",
-    "unmarkedTitle": "{puzzle} 표시를 해제했어요",
-    "unmarkedMessage": "{album}이(가) 다시 진행 중이 됐고 버프가 보너스에서 빠졌어요.",
-    "undo": "실행 취소"
-  },
-  "notInData": "Tundra Album {total}개 중 나머지 {count}개는 아직 데이터에 없어요. 패키지에 추가되면 반영돼요.",
-  "pieces": {
-    "label": "수집한 조각",
-    "value": "{available}개 중 {collected}개",
-    "progress": "모든 앨범에서 수집한 조각",
-    "viewRewards": "조각 보상 보기"
-  },
-  "rewardsFlyout": {
-    "title": "조각 수 보상",
-    "description": "모든 앨범에서 수집한 조각이 쌓이면 받는 보상이에요",
-    "close": "닫기",
-    "collected": "수집한 조각",
-    "collectedValue": "{available}개 중 {collected}개",
-    "progress": "모든 앨범에서 수집한 조각",
-    "reached": "조각 수 보상 {all}개 중 {reached}개 달성",
-    "next": "다음 보상은 조각 {pieces}개일 때예요. {missing}개 더 모아야 해요.",
-    "allReached": "데이터에 있는 모든 조각 수 보상을 달성했어요.",
-    "totalSoFar": "지금까지 받은 보상",
-    "tree": "수집한 조각 수별 보상",
-    "tier": "조각 {pieces}개일 때 보상 {tier}",
-    "stateReached": "수집함",
-    "stateNext": "다음, {missing}개 더",
-    "stateLater": "{missing}개 더"
-  },
-  "picker": {
-    "label": "앨범",
-    "title": "앨범",
-    "complete": "앨범 완성",
-    "puzzles": "퍼즐 {total}개 중 {done}개",
-    "pieces": "조각 {total}개 중 {collected}개",
-    "piecesProgress": "{album} 수집한 조각"
-  }
+    "view": {
+        "subline": "{chief} · {details} · 앨범 {total}개 중 {complete}개 완성"
+    },
+    "summary": {
+        "label": "완성한 앨범",
+        "value": "{total}개 중 {done}개",
+        "progress": "완성한 앨범",
+        "inData": "앨범 {all}개 중 {shown}개가 데이터에 있어요"
+    },
+    "buffs": {
+        "title": "현재 적용 중인 버프",
+        "derived": "계산값",
+        "none": "완성한 앨범이 아직 없어서 적용되는 Tundra Album 버프가 없어요.",
+        "note": "완성한 앨범만 적용돼요. 이 버프는 <link>보너스</link> 페이지에 반영돼요."
+    },
+    "album": {
+        "status": {
+            "complete": "완성",
+            "inProgress": "진행 중"
+        },
+        "buffWhenComplete": "완성 시 버프",
+        "puzzlesDone": "완료한 퍼즐",
+        "puzzlesValue": "{total}개 중 {done}개",
+        "puzzlesProgress": "{album} 완료한 퍼즐",
+        "completionRewards": "완성 보상",
+        "markComplete": "앨범 완성으로 표시",
+        "notCounting": "아직 적용되지 않아요. {buff}은(는) 퍼즐 {total}개를 모두 완료해야 보너스 페이지에 반영돼요. 앨범 완성으로 표시하면 퍼즐 {total}개가 모두 완료 처리되고 실행 취소 알림이 나와요.",
+        "counting": "현재 적용 중이에요. {buff}이(가) 보너스 페이지에 있어요. 퍼즐 체크를 해제하면 다시 빠져요.",
+        "piecesValue": "조각 {total}개 중 {collected}개 수집"
+    },
+    "puzzle": {
+        "pieces": "{count, plural, other {조각 {amount}개}}, 별 1~5: {split}",
+        "reward": "보상",
+        "done": "퍼즐 완료, 모든 조각 수집",
+        "doneFor": "완료, {puzzle}",
+        "collectedLabel": "수집한 조각",
+        "collected": "{total}개 중 {collected}개",
+        "pieceLabel": "{name}, 별 {stars}개",
+        "pieceHint": "가지고 있는 조각을 선택하세요. 퍼즐을 완료로 표시하면 모든 조각을 수집한 것으로 처리돼요.",
+        "allCollected": "퍼즐이 완료돼서 모든 조각을 수집했어요."
+    },
+    "reward": {
+        "line": "{item} {amount}",
+        "sized": "{item} {amount} ({size})",
+        "unknownItem": "알 수 없는 아이템"
+    },
+    "toast": {
+        "markedTitle": "{album}을(를) 완성으로 표시했어요",
+        "markedMessage": "퍼즐 {total}개를 모두 완료했어요.",
+        "unmarkedTitle": "{puzzle} 표시를 해제했어요",
+        "unmarkedMessage": "{album}이(가) 다시 진행 중이 됐고 버프가 보너스에서 빠졌어요.",
+        "undo": "실행 취소"
+    },
+    "notInData": "Tundra Album {total}개 중 나머지 {count}개는 아직 데이터에 없어요. 패키지에 추가되면 반영돼요.",
+    "pieces": {
+        "label": "수집한 조각",
+        "value": "{available}개 중 {collected}개",
+        "progress": "모든 앨범에서 수집한 조각",
+        "viewRewards": "조각 보상 보기"
+    },
+    "rewardsFlyout": {
+        "title": "조각 수 보상",
+        "description": "모든 앨범에서 수집한 조각이 쌓이면 받는 보상이에요",
+        "close": "닫기",
+        "collected": "수집한 조각",
+        "collectedValue": "{available}개 중 {collected}개",
+        "progress": "모든 앨범에서 수집한 조각",
+        "reached": "조각 수 보상 {all}개 중 {reached}개 달성",
+        "next": "다음 보상은 조각 {pieces}개일 때예요. {missing}개 더 모아야 해요.",
+        "allReached": "데이터에 있는 모든 조각 수 보상을 달성했어요.",
+        "totalSoFar": "지금까지 받은 보상",
+        "tree": "수집한 조각 수별 보상",
+        "tier": "조각 {pieces}개일 때 보상 {tier}",
+        "stateReached": "수집함",
+        "stateNext": "다음, {missing}개 더",
+        "stateLater": "{missing}개 더"
+    },
+    "picker": {
+        "label": "앨범",
+        "title": "앨범",
+        "complete": "앨범 완성",
+        "puzzles": "퍼즐 {total}개 중 {done}개",
+        "pieces": "조각 {total}개 중 {collected}개",
+        "piecesProgress": "{album} 수집한 조각"
+    }
 }

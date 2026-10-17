@@ -1,40 +1,40 @@
 {
-  "line": "{types}의 {skins}, 보너스와 획득처, 지속 기간이에요.",
-  "skinCount": "{count, plural, other {스킨 {amount}개}}",
-  "typeCount": "{count, plural, other {종류 {amount}개}}",
-  "gallery": {
-    "title": "스킨 갤러리",
-    "showing": "{total}개 중 {shown}개 표시",
-    "search": "검색",
-    "searchPlaceholder": "이름이나 획득처로 스킨 검색",
-    "bonusStat": "보너스 능력치",
-    "anyStat": "모든 능력치",
-    "noBonus": "보너스 없음",
-    "duration": "지속 기간",
-    "anyDuration": "모든 기간",
-    "permanent": "영구",
-    "timed": "기간제",
-    "notStated": "표기 없음",
-    "types": "스킨 종류",
-    "allTypes": "전체",
-    "empty": {
-      "title": "일치하는 스킨이 없어요",
-      "description": "검색어나 필터를 바꿔 스킨을 찾아보세요."
+    "line": "{types}의 {skins}, 보너스와 획득처, 지속 기간이에요.",
+    "skinCount": "{count, plural, other {스킨 {amount}개}}",
+    "typeCount": "{count, plural, other {종류 {amount}개}}",
+    "gallery": {
+        "title": "스킨 갤러리",
+        "showing": "{total}개 중 {shown}개 표시",
+        "search": "검색",
+        "searchPlaceholder": "이름이나 획득처로 스킨 검색",
+        "bonusStat": "보너스 능력치",
+        "anyStat": "모든 능력치",
+        "noBonus": "보너스 없음",
+        "duration": "지속 기간",
+        "anyDuration": "모든 기간",
+        "permanent": "영구",
+        "timed": "기간제",
+        "notStated": "표기 없음",
+        "types": "스킨 종류",
+        "allTypes": "전체",
+        "empty": {
+            "title": "일치하는 스킨이 없어요",
+            "description": "검색어나 필터를 바꿔 스킨을 찾아보세요."
+        }
+    },
+    "columns": {
+        "skin": "스킨",
+        "type": "종류",
+        "bonus": "보너스",
+        "duration": "지속 기간(자유 입력)",
+        "sources": "획득처"
+    },
+    "bonusValue": "{stat} {value}",
+    "detail": {
+        "type": "종류",
+        "bonus": "보너스",
+        "duration": "지속 기간",
+        "sources": "획득처",
+        "description": "설명"
     }
-  },
-  "columns": {
-    "skin": "스킨",
-    "type": "종류",
-    "bonus": "보너스",
-    "duration": "지속 기간(자유 입력)",
-    "sources": "획득처"
-  },
-  "bonusValue": "{stat} {value}",
-  "detail": {
-    "type": "종류",
-    "bonus": "보너스",
-    "duration": "지속 기간",
-    "sources": "획득처",
-    "description": "설명"
-  }
 }

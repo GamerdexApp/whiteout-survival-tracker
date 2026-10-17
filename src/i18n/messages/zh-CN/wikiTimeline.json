@@ -1,49 +1,49 @@
 {
-  "title": "服务器时间线",
-  "line": "{rows, plural, other {{amount}个里程碑}}，从第{first}天到第{last}天",
-  "subline": "各服务器天数解锁的内容。仅供参考，这里的内容不会保存。",
-  "place": {
-    "label": "显示我的位置，对应",
-    "option": "{name}，约第{days}天，上下浮动{window}天",
-    "optionNoDate": "{name}，没有开服日期",
-    "jump": "跳到我的位置"
-  },
-  "filters": {
-    "label": "显示",
-    "events": "活动{amount}",
-    "features": "功能{amount}",
-    "pets": "宠物{amount}",
-    "experts": "专家{amount}",
-    "heroes": "英雄{amount}"
-  },
-  "help": "时间轴按服务器天数排列。英雄在右侧，其余在左侧。你的位置来自领主的开服日期，上下浮动{window}天。",
-  "noChief": "还没有领主，因此不显示你的位置。",
-  "addChief": "添加领主",
-  "noStartDate": "{name}没有开服日期。添加后即可在时间轴上看到你的位置。",
-  "editChief": "编辑领主",
-  "columns": {
-    "left": "活动、功能、宠物、专家",
-    "right": "英雄"
-  },
-  "tags": {
-    "event": "活动",
-    "feature": "功能",
-    "pets": "宠物",
-    "experts": "专家"
-  },
-  "fireCrystalLevels": "Fire Crystal 等级{names}",
-  "heroGeneration": "英雄，第{generation}代",
-  "day": "第{day}天",
-  "status": {
-    "unlocked": "已解锁",
-    "near": "接近你的天数",
-    "future": "{count, plural, other {{amount}天后}}"
-  },
-  "marker": {
-    "label": "你在这里",
-    "title": "{name}，服务器约{days}天",
-    "window": "上下浮动{window}天：第{from}到{to}天"
-  },
-  "empty": "这些筛选下没有可显示的内容。",
-  "source": "来源：数据包的服务器时间线。"
+    "title": "服务器时间线",
+    "line": "{rows, plural, other {{amount}个里程碑}}，从第{first}天到第{last}天",
+    "subline": "各服务器天数解锁的内容。仅供参考，这里的内容不会保存。",
+    "place": {
+        "label": "显示我的位置，对应",
+        "option": "{name}，约第{days}天，上下浮动{window}天",
+        "optionNoDate": "{name}，没有开服日期",
+        "jump": "跳到我的位置"
+    },
+    "filters": {
+        "label": "显示",
+        "events": "活动{amount}",
+        "features": "功能{amount}",
+        "pets": "宠物{amount}",
+        "experts": "专家{amount}",
+        "heroes": "英雄{amount}"
+    },
+    "help": "时间轴按服务器天数排列。英雄在右侧，其余在左侧。你的位置来自领主的开服日期，上下浮动{window}天。",
+    "noChief": "还没有领主，因此不显示你的位置。",
+    "addChief": "添加领主",
+    "noStartDate": "{name}没有开服日期。添加后即可在时间轴上看到你的位置。",
+    "editChief": "编辑领主",
+    "columns": {
+        "left": "活动、功能、宠物、专家",
+        "right": "英雄"
+    },
+    "tags": {
+        "event": "活动",
+        "feature": "功能",
+        "pets": "宠物",
+        "experts": "专家"
+    },
+    "fireCrystalLevels": "Fire Crystal 等级{names}",
+    "heroGeneration": "英雄，第{generation}代",
+    "day": "第{day}天",
+    "status": {
+        "unlocked": "已解锁",
+        "near": "接近你的天数",
+        "future": "{count, plural, other {{amount}天后}}"
+    },
+    "marker": {
+        "label": "你在这里",
+        "title": "{name}，服务器约{days}天",
+        "window": "上下浮动{window}天：第{from}到{to}天"
+    },
+    "empty": "这些筛选下没有可显示的内容。",
+    "source": "来源：数据包的服务器时间线。"
 }

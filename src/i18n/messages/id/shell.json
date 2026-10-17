@@ -1,85 +1,85 @@
 {
-  "nav": {
-    "main": "Utama",
-    "groups": {
-      "chief": "Chief",
-      "alliance": "Aliansi",
-      "account": "Akun",
-      "planner": "Perencana",
-      "wiki": "Wiki"
+    "nav": {
+        "main": "Utama",
+        "groups": {
+            "chief": "Chief",
+            "alliance": "Aliansi",
+            "account": "Akun",
+            "planner": "Perencana",
+            "wiki": "Wiki"
+        },
+        "items": {
+            "overview": "Ringkasan",
+            "buildings": "Bangunan",
+            "daybreakIsland": "Daybreak Island",
+            "heroes": "Pahlawan",
+            "chiefGear": "Perlengkapan Chief",
+            "experts": "Ahli",
+            "pets": "Hewan Peliharaan",
+            "troops": "Pasukan",
+            "research": "Riset",
+            "alliance": "Aliansi",
+            "facilities": "Fasilitas",
+            "tech": "Teknologi",
+            "resources": "Sumber Daya",
+            "bonuses": "Bonus",
+            "vip": "VIP",
+            "skins": "Skin",
+            "events": "Event",
+            "tundraAlbum": "Tundra Album",
+            "coreEvents": "Core Events",
+            "dailies": "Harian",
+            "history": "Riwayat",
+            "wikiReference": "Referensi",
+            "wikiTimeline": "Linimasa",
+            "settings": "Pengaturan",
+            "chiefs": "Chief"
+        },
+        "upgradesRunning": ", {amount} {count, plural, other {upgrade}} berjalan"
     },
-    "items": {
-      "overview": "Ringkasan",
-      "buildings": "Bangunan",
-      "daybreakIsland": "Daybreak Island",
-      "heroes": "Pahlawan",
-      "chiefGear": "Perlengkapan Chief",
-      "experts": "Ahli",
-      "pets": "Hewan Peliharaan",
-      "troops": "Pasukan",
-      "research": "Riset",
-      "alliance": "Aliansi",
-      "facilities": "Fasilitas",
-      "tech": "Teknologi",
-      "resources": "Sumber Daya",
-      "bonuses": "Bonus",
-      "vip": "VIP",
-      "skins": "Skin",
-      "events": "Event",
-      "tundraAlbum": "Tundra Album",
-      "coreEvents": "Core Events",
-      "dailies": "Harian",
-      "history": "Riwayat",
-      "wikiReference": "Referensi",
-      "wikiTimeline": "Linimasa",
-      "settings": "Pengaturan",
-      "chiefs": "Chief"
+    "appShell": {
+        "skipToContent": "Lewati ke konten",
+        "closeMenu": "Tutup menu"
     },
-    "upgradesRunning": ", {amount} {count, plural, other {upgrade}} berjalan"
-  },
-  "appShell": {
-    "skipToContent": "Lewati ke konten",
-    "closeMenu": "Tutup menu"
-  },
-  "appBar": {
-    "openMenu": "Buka menu"
-  },
-  "chiefGate": {
-    "emptyTitle": "Belum ada Chief dipilih",
-    "emptyDescription": "Buat Chief untuk mulai melacak. Semuanya tersimpan di browser ini.",
-    "newChief": "Chief baru"
-  },
-  "chiefSwitcher": {
-    "chiefs": "Chief",
-    "active": "Aktif",
-    "allChiefs": "Semua Chief",
-    "newChief": "Chief baru",
-    "loading": "Memuat",
-    "noChiefYet": "Belum ada Chief",
-    "sectionLabel": "Chief",
-    "switchChief": "Ganti Chief"
-  },
-  "footer": {
-    "tagline": "Lacak Chief, bangunan, pahlawan, dan riset Whiteout Survival-mu di satu tempat.",
-    "product": "Tracker",
-    "support": "Dukungan",
-    "wikiReference": "Referensi Wiki",
-    "wikiTimeline": "Linimasa Wiki",
-    "backupAndData": "Cadangan dan data",
-    "aboutApp": "Tentang",
-    "disclaimerTitle": "Penafian",
-    "disclaimer": "Aplikasi ini tidak berafiliasi dengan, didukung oleh, atau terhubung dengan Whiteout Survival atau Century Games. Semua merek dagang dan konten game adalah milik pemiliknya masing-masing.",
-    "copyright": "© {year} {appName}",
-    "framework": "Dibuat dengan kerangka Gamerdex, dasar bersama untuk pelacak progres game gratis. Datamu tetap di browser."
-  },
-  "notFound": {
-    "title": "Halaman ini tidak ada",
-    "description": "Tautannya mungkin sudah lama atau salah ketik. Chief-mu aman dan tidak ada yang berubah.",
-    "didYouMean": "Maksudmu <link>{name}</link>?",
-    "goToOverview": "Ke Ringkasan",
-    "jumpTo": "Atau langsung ke"
-  },
-  "pageHeader": {
-    "wiki": "Wiki"
-  }
+    "appBar": {
+        "openMenu": "Buka menu"
+    },
+    "chiefGate": {
+        "emptyTitle": "Belum ada Chief dipilih",
+        "emptyDescription": "Buat Chief untuk mulai melacak. Semuanya tersimpan di browser ini.",
+        "newChief": "Chief baru"
+    },
+    "chiefSwitcher": {
+        "chiefs": "Chief",
+        "active": "Aktif",
+        "allChiefs": "Semua Chief",
+        "newChief": "Chief baru",
+        "loading": "Memuat",
+        "noChiefYet": "Belum ada Chief",
+        "sectionLabel": "Chief",
+        "switchChief": "Ganti Chief"
+    },
+    "footer": {
+        "tagline": "Lacak Chief, bangunan, pahlawan, dan riset Whiteout Survival-mu di satu tempat.",
+        "product": "Tracker",
+        "support": "Dukungan",
+        "wikiReference": "Referensi Wiki",
+        "wikiTimeline": "Linimasa Wiki",
+        "backupAndData": "Cadangan dan data",
+        "aboutApp": "Tentang",
+        "disclaimerTitle": "Penafian",
+        "disclaimer": "Aplikasi ini tidak berafiliasi dengan, didukung oleh, atau terhubung dengan Whiteout Survival atau Century Games. Semua merek dagang dan konten game adalah milik pemiliknya masing-masing.",
+        "copyright": "© {year} {appName}",
+        "framework": "Dibuat dengan kerangka Gamerdex, dasar bersama untuk pelacak progres game gratis. Datamu tetap di browser."
+    },
+    "notFound": {
+        "title": "Halaman ini tidak ada",
+        "description": "Tautannya mungkin sudah lama atau salah ketik. Chief-mu aman dan tidak ada yang berubah.",
+        "didYouMean": "Maksudmu <link>{name}</link>?",
+        "goToOverview": "Ke Ringkasan",
+        "jumpTo": "Atau langsung ke"
+    },
+    "pageHeader": {
+        "wiki": "Wiki"
+    }
 }

@@ -1,95 +1,95 @@
 {
-  "hoursMinutes": {
-    "hours": "小时",
-    "minutes": "分钟"
-  },
-  "jobCard": {
-    "idle": "空闲",
-    "progress": "{title}进度",
-    "ends": "结束于{date}",
-    "manage": "管理",
-    "finish": "完成"
-  },
-  "timeLeftPill": {
-    "manage": "{label}，{timeLeft}。管理升级"
-  },
-  "manage": {
-    "fallbackTitle": "管理升级",
-    "description": "管理正在进行的升级",
-    "close": "关闭",
-    "finish": "完成升级",
-    "progress": "升级进度",
-    "started": "开始于{date}",
-    "ends": "结束于{date}",
-    "speedup": {
-      "title": "使用了加速",
-      "minutesUsed": "已用分钟数",
-      "apply": "应用",
-      "timeLeftAfter": "应用后的剩余时间",
-      "hint": "任何类型的加速都会从剩余时间中扣除相应分钟数。"
+    "hoursMinutes": {
+        "hours": "小时",
+        "minutes": "分钟"
     },
-    "setTime": {
-      "title": "设置剩余时间",
-      "button": "设置剩余时间",
-      "hint": "游戏显示的时间不同时使用。"
+    "jobCard": {
+        "idle": "空闲",
+        "progress": "{title}进度",
+        "ends": "结束于{date}",
+        "manage": "管理",
+        "finish": "完成"
     },
-    "done": {
-      "title": "完成时",
-      "cancel": "取消此升级"
+    "timeLeftPill": {
+        "manage": "{label}，{timeLeft}。管理升级"
+    },
+    "manage": {
+        "fallbackTitle": "管理升级",
+        "description": "管理正在进行的升级",
+        "close": "关闭",
+        "finish": "完成升级",
+        "progress": "升级进度",
+        "started": "开始于{date}",
+        "ends": "结束于{date}",
+        "speedup": {
+            "title": "使用了加速",
+            "minutesUsed": "已用分钟数",
+            "apply": "应用",
+            "timeLeftAfter": "应用后的剩余时间",
+            "hint": "任何类型的加速都会从剩余时间中扣除相应分钟数。"
+        },
+        "setTime": {
+            "title": "设置剩余时间",
+            "button": "设置剩余时间",
+            "hint": "游戏显示的时间不同时使用。"
+        },
+        "done": {
+            "title": "完成时",
+            "cancel": "取消此升级"
+        }
+    },
+    "planStock": {
+        "title": "你的库存够吗？",
+        "shortCount": "缺{short} / {total}",
+        "description": "计划会从你的库存中扣除的内容，已与你持有的数量对照。完整计划见下方结果。",
+        "enough": "足够",
+        "notEnough": "不足",
+        "covered": "{name}已满足",
+        "available": "可用{amount}",
+        "needed": "需要{amount}",
+        "leftOver": "剩余{amount}",
+        "shortBy": "缺{amount}",
+        "stillNeeded": "完整计划仍需：{list}。",
+        "openResources": "打开资源"
+    },
+    "start": {
+        "title": "开始升级",
+        "cancel": "取消",
+        "nothingToStart": "目前无法开始任何升级。每个项目要么已达最高等级，要么未解锁，要么已在升级中。",
+        "powerGained": "获得战力",
+        "packageTime": "数据包时间",
+        "unknown": "未知",
+        "readOnly": "只读",
+        "openBonuses": "打开加成",
+        "yourTime": "你的时间",
+        "timeHint": "只计入加成页面中的速度。如果游戏显示的时间不同，请在开始时间中修改。",
+        "allBusy": "这里的所有项目都在占用中。有空闲之前，开始升级不可用。",
+        "whenStarted": "开始时间",
+        "timeLeftHours": "剩余时间，小时",
+        "ends": "结束于",
+        "startedHint": "选择已经开始，输入游戏显示的时间。结束时间会据此算出。",
+        "takeCost": {
+            "title": "从资源中扣除费用",
+            "hint": "从你的库存中减去上方的费用。",
+            "enough": "每种资源你都足够。",
+            "short": "{names}不足。你仍可以开始，库存最低为 0。"
+        },
+        "modes": {
+            "now": "现在开始",
+            "already": "已经开始"
+        }
+    },
+    "researchQueues": {
+        "label": "{name}，{tabs}",
+        "main": {
+            "name": "研究队列",
+            "tabs": "成长、经济和战斗",
+            "shortName": "研究"
+        },
+        "warAcademy": {
+            "name": "War Academy 队列",
+            "tabs": "T11 和 T12",
+            "shortName": "War Academy"
+        }
     }
-  },
-  "planStock": {
-    "title": "你的库存够吗？",
-    "shortCount": "缺{short} / {total}",
-    "description": "计划会从你的库存中扣除的内容，已与你持有的数量对照。完整计划见下方结果。",
-    "enough": "足够",
-    "notEnough": "不足",
-    "covered": "{name}已满足",
-    "available": "可用{amount}",
-    "needed": "需要{amount}",
-    "leftOver": "剩余{amount}",
-    "shortBy": "缺{amount}",
-    "stillNeeded": "完整计划仍需：{list}。",
-    "openResources": "打开资源"
-  },
-  "start": {
-    "title": "开始升级",
-    "cancel": "取消",
-    "nothingToStart": "目前无法开始任何升级。每个项目要么已达最高等级，要么未解锁，要么已在升级中。",
-    "powerGained": "获得战力",
-    "packageTime": "数据包时间",
-    "unknown": "未知",
-    "readOnly": "只读",
-    "openBonuses": "打开加成",
-    "yourTime": "你的时间",
-    "timeHint": "只计入加成页面中的速度。如果游戏显示的时间不同，请在开始时间中修改。",
-    "allBusy": "这里的所有项目都在占用中。有空闲之前，开始升级不可用。",
-    "whenStarted": "开始时间",
-    "timeLeftHours": "剩余时间，小时",
-    "ends": "结束于",
-    "startedHint": "选择已经开始，输入游戏显示的时间。结束时间会据此算出。",
-    "takeCost": {
-      "title": "从资源中扣除费用",
-      "hint": "从你的库存中减去上方的费用。",
-      "enough": "每种资源你都足够。",
-      "short": "{names}不足。你仍可以开始，库存最低为 0。"
-    },
-    "modes": {
-      "now": "现在开始",
-      "already": "已经开始"
-    }
-  },
-  "researchQueues": {
-    "label": "{name}，{tabs}",
-    "main": {
-      "name": "研究队列",
-      "tabs": "成长、经济和战斗",
-      "shortName": "研究"
-    },
-    "warAcademy": {
-      "name": "War Academy 队列",
-      "tabs": "T11 和 T12",
-      "shortName": "War Academy"
-    }
-  }
 }

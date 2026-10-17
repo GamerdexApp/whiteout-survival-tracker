@@ -1,216 +1,216 @@
 {
-  "chiefCount": "{count, plural, one {{amount} jefe} other {{amount} jefes}}",
-  "localStorageNote": {
-    "title": "Almacenamiento local.",
-    "body": "Tus jefes se guardan solo en este navegador. Se pierden si se borra la caché del navegador. Exporta un respaldo con frecuencia."
-  },
-  "page": {
-    "title": "Ajustes",
-    "subline": "Administra tus datos, los ajustes de jefe y la apariencia",
-    "tabsLabel": "Ajustes",
-    "tabs": {
-      "preferences": "Preferencias",
-      "data": "Respaldo y datos",
-      "about": "Acerca de"
+    "chiefCount": "{count, plural, one {{amount} jefe} other {{amount} jefes}}",
+    "localStorageNote": {
+        "title": "Almacenamiento local.",
+        "body": "Tus jefes se guardan solo en este navegador. Se pierden si se borra la caché del navegador. Exporta un respaldo con frecuencia."
+    },
+    "page": {
+        "title": "Ajustes",
+        "subline": "Administra tus datos, los ajustes de jefe y la apariencia",
+        "tabsLabel": "Ajustes",
+        "tabs": {
+            "preferences": "Preferencias",
+            "data": "Respaldo y datos",
+            "about": "Acerca de"
+        }
+    },
+    "about": {
+        "version": "Versión {version}",
+        "summary": "Lleva el registro de tu progreso en Whiteout Survival: edificios, héroes, equipo del jefe, expertos, mascotas, tropas, investigación, tecnología de alianza, recursos y tu planificador. Todo se guarda en este navegador.",
+        "wiki": "Wiki de Whiteout Survival",
+        "disclaimer": "No está afiliada ni respaldada por Century Games. Whiteout Survival es una marca registrada de Century Games."
+    },
+    "preferences": {
+        "chiefSettings": {
+            "title": "Ajustes de jefe",
+            "description": "Se aplican a todos los jefes. Se guardan al instante.",
+            "footnote": "Cambiar una opción dentro de una calculadora no cambia estos valores predeterminados. La visualización del Furnace solo cambia cómo se escribe un nivel, nunca el nivel en sí. Agregar o eliminar un jefe nunca restablece estos ajustes.",
+            "groups": {
+                "furnaceDisplay": "Visualización del Furnace",
+                "lists": "Listas",
+                "calculatorOptions": "Opciones predeterminadas de calculadoras"
+            },
+            "fullLevelLabels": {
+                "label": "Mostrar etiquetas de nivel completas",
+                "description": "Muestra el subnivel del Furnace, por ejemplo FC 5-2 en lugar de FC 5, en la barra lateral, en el Resumen y en Edificios. Los demás edificios ya muestran su etiqueta completa."
+            },
+            "hideMaxed": {
+                "label": "Ocultar elementos al máximo",
+                "description": "Oculta edificios, héroes, mascotas y expertos que están en su nivel máximo. Cada lista conserva un filtro Mostrar al máximo, así que no se pierde nada."
+            },
+            "useBonuses": {
+                "label": "Aplicar los totales de mis Bonificaciones",
+                "description": "Las calculadoras nuevas empiezan con el porcentaje de velocidad de construcción de la página de Bonificaciones. Una calculadora aún puede cambiarlo en un cálculo."
+            },
+            "showSpeedups": {
+                "label": "Mostrar minutos de aceleración",
+                "description": "Muestra los minutos de aceleración necesarios debajo del tiempo en cada resultado de calculadora."
+            },
+            "showEventPoints": {
+                "label": "Mostrar puntos de eventos",
+                "description": "Agrega la línea de puntos de eventos a los resultados de calculadora que la devuelven."
+            }
+        },
+        "appearance": {
+            "title": "Apariencia",
+            "description": "Elige cómo se ve la app. Se guarda con tus datos.",
+            "themeLabel": "Tema",
+            "themeNote": "Sistema sigue tu dispositivo y ahora mismo es {current}. Esta opción forma parte de tu respaldo."
+        },
+        "themes": {
+            "light": "Claro",
+            "dark": "Oscuro",
+            "system": "Sistema"
+        }
+    },
+    "data": {
+        "backupDownloaded": "Respaldo descargado",
+        "merged": "Respaldo combinado",
+        "replaced": "Respaldo reemplazado",
+        "undo": "Deshacer",
+        "resetDone": "Todos los datos restablecidos",
+        "resetDoneMessage": "{chiefs} eliminados y ajustes borrados.",
+        "management": {
+            "title": "Administración de datos",
+            "description": "Un archivo de respaldo contiene a todos los jefes y tus ajustes."
+        },
+        "export": {
+            "title": "Exportar datos",
+            "description": "Descarga un archivo de respaldo con todos tus jefes guardados. Nombre del archivo: <file>{fileName}</file>. La fecha es tu día local.",
+            "button": "Exportar todos los jefes"
+        },
+        "import": {
+            "title": "Importar datos",
+            "description": "Sube un archivo exportado antes (.json). Primero se revisa, luego eliges Combinar o Reemplazar y ves qué cambia. No cambia nada hasta que lo confirmes.",
+            "chooseFile": "Elegir archivo",
+            "noFile": "Ningún archivo elegido",
+            "review": "Revisar importación"
+        },
+        "reset": {
+            "title": "Restablecer todos los datos",
+            "warningTitle": "Advertencia:",
+            "warning": "Esto eliminará a todos los jefes y restablecerá los ajustes de jefe y el tema. Puedes deshacer durante 10 segundos, así que exporta un respaldo antes si quieres conservar una copia.",
+            "button": "Restablecer todos los datos"
+        },
+        "chiefs": {
+            "title": "Jefes",
+            "description": "Crea, renombra, edita y elimina jefes en su propia página. Exportar, importar y restablecer se aplican a todos.",
+            "manage": "Administrar jefes"
+        }
+    },
+    "importDialog": {
+        "title": "Importar respaldo",
+        "cancel": "Cancelar",
+        "close": "Cerrar",
+        "merge": "Combinar",
+        "replace": "Reemplazar",
+        "failedTitle": "Falló la importación.",
+        "checksTitle": "Revisiones del archivo.",
+        "checks": "Se encontró la lista de jefes y se {count, plural, one {leyó {amount} entrada} other {leyeron {amount} entradas}}. Aún no se guardó nada, así que tus jefes actuales no han cambiado.",
+        "howToApply": "¿Cómo se debe aplicar el archivo?",
+        "modeLabel": "Modo de importación",
+        "modes": {
+            "merge": "Combinar (recomendado)",
+            "replace": "Reemplazar todo en este dispositivo"
+        },
+        "modeNotes": {
+            "merge": "Agrega los jefes nuevos y conserva la copia más reciente de un jefe que está en ambos. Los jefes que solo están en este dispositivo se quedan. Tus ajustes se quedan.",
+            "replace": "Elimina a todos los jefes de este dispositivo y carga el archivo tal cual, con sus ajustes. Úsalo para restaurar una copia exacta."
+        },
+        "whatChanges": "Qué cambia",
+        "columns": {
+            "chief": "Jefe",
+            "inFile": "En el archivo",
+            "onDevice": "En este dispositivo",
+            "result": "Resultado"
+        },
+        "results": {
+            "added": "Agregado",
+            "updated": "Actualizado desde el archivo",
+            "kept": "Se conservó la copia de este dispositivo",
+            "replaced": "Cargado desde el archivo",
+            "removed": "Eliminado"
+        },
+        "notThere": "No está",
+        "noChiefs": "No hay jefes en el archivo.",
+        "undoNote": "Deshacer sigue disponible durante 10 segundos después de la importación.",
+        "bytes": "{amount} B",
+        "kilobytes": "{amount} KB",
+        "fileInfo": "{name} · {size}"
+    },
+    "resetDialog": {
+        "title": "Restablecer todos los datos",
+        "cancel": "Cancelar",
+        "confirm": "Sí, restablecer todos los datos",
+        "question": "¿Eliminar {chiefs} de este navegador?",
+        "removedTitle": "Qué se elimina",
+        "settingsNote": "Tu elección de Claro, Oscuro o Sistema vuelve a Sistema. Los ajustes de jefe vuelven a sus valores predeterminados. Se borra el jefe activo.",
+        "undoNote": "Deshacer sigue disponible durante 10 segundos después del restablecimiento. Exporta un respaldo antes si quieres una copia en archivo que se conserve.",
+        "exportFirst": "Exportar respaldo primero"
+    },
+    "backup": {
+        "notJson": "El archivo no es un JSON válido. No se cambió nada.",
+        "noChiefsList": "Falta la lista de jefes. No se cambió nada.",
+        "duplicateId": "Dos jefes comparten un mismo id. No se cambió nada.",
+        "withNothingChanged": "{reason} No se cambió nada.",
+        "chief": {
+            "notObject": "El jefe {position} no es un objeto.",
+            "noId": "El jefe {position} no tiene id.",
+            "noName": "El jefe {position} no tiene nombre.",
+            "noDates": "Al jefe {position} le faltan sus fechas.",
+            "badStateNumber": "El jefe {position} tiene un número de estado que no es un número entero.",
+            "badCoreEvent": "El jefe {position} tiene un evento principal desconocido.",
+            "badUnlock": "El jefe {position} tiene un ajuste de desbloqueo que no es un día de servidor de un área conocida.",
+            "badPack": "El jefe {position} tiene un ajuste de paquete que no está activado ni desactivado."
+        },
+        "settings": {
+            "notObject": "Los ajustes no son un objeto.",
+            "badTheme": "El tema no es Claro, Oscuro ni Sistema.",
+            "notText": "El ajuste {key} no es texto.",
+            "uiNotObject": "Los ajustes de la interfaz no son un objeto.",
+            "badTimeZone": "La zona horaria no es una que el navegador conozca."
+        },
+        "summary": {
+            "added": "{amount} agregados",
+            "updated": "{amount} actualizados desde el archivo",
+            "kept": "{amount} conservados como en este dispositivo",
+            "replaced": "{amount} cargados desde el archivo",
+            "removed": "{amount} eliminados"
+        }
+    },
+    "region": {
+        "title": "Idioma y región",
+        "description": "Elige el idioma y cómo se escriben los números y las fechas. Se guarda con tus datos.",
+        "language": {
+            "label": "Idioma",
+            "hint": "Los nombres de héroes, objetos, edificios e investigación vienen de los datos del juego y por ahora se quedan en inglés."
+        },
+        "numberFormat": {
+            "label": "Formato de números",
+            "hint": "Ejemplo: {example}",
+            "options": {
+                "auto": "Automático, según el idioma",
+                "us": "1,234.56 (Estados Unidos)",
+                "european": "1.234,56 (Alemania)",
+                "french": "1 234,56 (Francia)",
+                "swiss": "1’234.56 (Suiza)",
+                "indian": "12,34,567.89 (India)"
+            }
+        },
+        "dateFormat": {
+            "label": "Formato de fechas",
+            "hint": "Ejemplo: {example}",
+            "options": {
+                "auto": "Automático, según el idioma",
+                "mdy": "Mes/Día/Año",
+                "dmy": "Día/Mes/Año",
+                "ymd": "Año-Mes-Día"
+            }
+        },
+        "timeZone": {
+            "label": "Zona horaria",
+            "hint": "Se usa para fechas y horas, y para Mi hora en Eventos. Ejemplo: 14:05 UTC se muestra como {example}.",
+            "auto": "Automática, según tu dispositivo ({zone})"
+        }
     }
-  },
-  "about": {
-    "version": "Versión {version}",
-    "summary": "Lleva el registro de tu progreso en Whiteout Survival: edificios, héroes, equipo del jefe, expertos, mascotas, tropas, investigación, tecnología de alianza, recursos y tu planificador. Todo se guarda en este navegador.",
-    "wiki": "Wiki de Whiteout Survival",
-    "disclaimer": "No está afiliada ni respaldada por Century Games. Whiteout Survival es una marca registrada de Century Games."
-  },
-  "preferences": {
-    "chiefSettings": {
-      "title": "Ajustes de jefe",
-      "description": "Se aplican a todos los jefes. Se guardan al instante.",
-      "footnote": "Cambiar una opción dentro de una calculadora no cambia estos valores predeterminados. La visualización del Furnace solo cambia cómo se escribe un nivel, nunca el nivel en sí. Agregar o eliminar un jefe nunca restablece estos ajustes.",
-      "groups": {
-        "furnaceDisplay": "Visualización del Furnace",
-        "lists": "Listas",
-        "calculatorOptions": "Opciones predeterminadas de calculadoras"
-      },
-      "fullLevelLabels": {
-        "label": "Mostrar etiquetas de nivel completas",
-        "description": "Muestra el subnivel del Furnace, por ejemplo FC 5-2 en lugar de FC 5, en la barra lateral, en el Resumen y en Edificios. Los demás edificios ya muestran su etiqueta completa."
-      },
-      "hideMaxed": {
-        "label": "Ocultar elementos al máximo",
-        "description": "Oculta edificios, héroes, mascotas y expertos que están en su nivel máximo. Cada lista conserva un filtro Mostrar al máximo, así que no se pierde nada."
-      },
-      "useBonuses": {
-        "label": "Aplicar los totales de mis Bonificaciones",
-        "description": "Las calculadoras nuevas empiezan con el porcentaje de velocidad de construcción de la página de Bonificaciones. Una calculadora aún puede cambiarlo en un cálculo."
-      },
-      "showSpeedups": {
-        "label": "Mostrar minutos de aceleración",
-        "description": "Muestra los minutos de aceleración necesarios debajo del tiempo en cada resultado de calculadora."
-      },
-      "showEventPoints": {
-        "label": "Mostrar puntos de eventos",
-        "description": "Agrega la línea de puntos de eventos a los resultados de calculadora que la devuelven."
-      }
-    },
-    "appearance": {
-      "title": "Apariencia",
-      "description": "Elige cómo se ve la app. Se guarda con tus datos.",
-      "themeLabel": "Tema",
-      "themeNote": "Sistema sigue tu dispositivo y ahora mismo es {current}. Esta opción forma parte de tu respaldo."
-    },
-    "themes": {
-      "light": "Claro",
-      "dark": "Oscuro",
-      "system": "Sistema"
-    }
-  },
-  "data": {
-    "backupDownloaded": "Respaldo descargado",
-    "merged": "Respaldo combinado",
-    "replaced": "Respaldo reemplazado",
-    "undo": "Deshacer",
-    "resetDone": "Todos los datos restablecidos",
-    "resetDoneMessage": "{chiefs} eliminados y ajustes borrados.",
-    "management": {
-      "title": "Administración de datos",
-      "description": "Un archivo de respaldo contiene a todos los jefes y tus ajustes."
-    },
-    "export": {
-      "title": "Exportar datos",
-      "description": "Descarga un archivo de respaldo con todos tus jefes guardados. Nombre del archivo: <file>{fileName}</file>. La fecha es tu día local.",
-      "button": "Exportar todos los jefes"
-    },
-    "import": {
-      "title": "Importar datos",
-      "description": "Sube un archivo exportado antes (.json). Primero se revisa, luego eliges Combinar o Reemplazar y ves qué cambia. No cambia nada hasta que lo confirmes.",
-      "chooseFile": "Elegir archivo",
-      "noFile": "Ningún archivo elegido",
-      "review": "Revisar importación"
-    },
-    "reset": {
-      "title": "Restablecer todos los datos",
-      "warningTitle": "Advertencia:",
-      "warning": "Esto eliminará a todos los jefes y restablecerá los ajustes de jefe y el tema. Puedes deshacer durante 10 segundos, así que exporta un respaldo antes si quieres conservar una copia.",
-      "button": "Restablecer todos los datos"
-    },
-    "chiefs": {
-      "title": "Jefes",
-      "description": "Crea, renombra, edita y elimina jefes en su propia página. Exportar, importar y restablecer se aplican a todos.",
-      "manage": "Administrar jefes"
-    }
-  },
-  "importDialog": {
-    "title": "Importar respaldo",
-    "cancel": "Cancelar",
-    "close": "Cerrar",
-    "merge": "Combinar",
-    "replace": "Reemplazar",
-    "failedTitle": "Falló la importación.",
-    "checksTitle": "Revisiones del archivo.",
-    "checks": "Se encontró la lista de jefes y se {count, plural, one {leyó {amount} entrada} other {leyeron {amount} entradas}}. Aún no se guardó nada, así que tus jefes actuales no han cambiado.",
-    "howToApply": "¿Cómo se debe aplicar el archivo?",
-    "modeLabel": "Modo de importación",
-    "modes": {
-      "merge": "Combinar (recomendado)",
-      "replace": "Reemplazar todo en este dispositivo"
-    },
-    "modeNotes": {
-      "merge": "Agrega los jefes nuevos y conserva la copia más reciente de un jefe que está en ambos. Los jefes que solo están en este dispositivo se quedan. Tus ajustes se quedan.",
-      "replace": "Elimina a todos los jefes de este dispositivo y carga el archivo tal cual, con sus ajustes. Úsalo para restaurar una copia exacta."
-    },
-    "whatChanges": "Qué cambia",
-    "columns": {
-      "chief": "Jefe",
-      "inFile": "En el archivo",
-      "onDevice": "En este dispositivo",
-      "result": "Resultado"
-    },
-    "results": {
-      "added": "Agregado",
-      "updated": "Actualizado desde el archivo",
-      "kept": "Se conservó la copia de este dispositivo",
-      "replaced": "Cargado desde el archivo",
-      "removed": "Eliminado"
-    },
-    "notThere": "No está",
-    "noChiefs": "No hay jefes en el archivo.",
-    "undoNote": "Deshacer sigue disponible durante 10 segundos después de la importación.",
-    "bytes": "{amount} B",
-    "kilobytes": "{amount} KB",
-    "fileInfo": "{name} · {size}"
-  },
-  "resetDialog": {
-    "title": "Restablecer todos los datos",
-    "cancel": "Cancelar",
-    "confirm": "Sí, restablecer todos los datos",
-    "question": "¿Eliminar {chiefs} de este navegador?",
-    "removedTitle": "Qué se elimina",
-    "settingsNote": "Tu elección de Claro, Oscuro o Sistema vuelve a Sistema. Los ajustes de jefe vuelven a sus valores predeterminados. Se borra el jefe activo.",
-    "undoNote": "Deshacer sigue disponible durante 10 segundos después del restablecimiento. Exporta un respaldo antes si quieres una copia en archivo que se conserve.",
-    "exportFirst": "Exportar respaldo primero"
-  },
-  "backup": {
-    "notJson": "El archivo no es un JSON válido. No se cambió nada.",
-    "noChiefsList": "Falta la lista de jefes. No se cambió nada.",
-    "duplicateId": "Dos jefes comparten un mismo id. No se cambió nada.",
-    "withNothingChanged": "{reason} No se cambió nada.",
-    "chief": {
-      "notObject": "El jefe {position} no es un objeto.",
-      "noId": "El jefe {position} no tiene id.",
-      "noName": "El jefe {position} no tiene nombre.",
-      "noDates": "Al jefe {position} le faltan sus fechas.",
-      "badStateNumber": "El jefe {position} tiene un número de estado que no es un número entero.",
-      "badCoreEvent": "El jefe {position} tiene un evento principal desconocido.",
-      "badUnlock": "El jefe {position} tiene un ajuste de desbloqueo que no es un día de servidor de un área conocida.",
-      "badPack": "El jefe {position} tiene un ajuste de paquete que no está activado ni desactivado."
-    },
-    "settings": {
-      "notObject": "Los ajustes no son un objeto.",
-      "badTheme": "El tema no es Claro, Oscuro ni Sistema.",
-      "notText": "El ajuste {key} no es texto.",
-      "uiNotObject": "Los ajustes de la interfaz no son un objeto.",
-      "badTimeZone": "La zona horaria no es una que el navegador conozca."
-    },
-    "summary": {
-      "added": "{amount} agregados",
-      "updated": "{amount} actualizados desde el archivo",
-      "kept": "{amount} conservados como en este dispositivo",
-      "replaced": "{amount} cargados desde el archivo",
-      "removed": "{amount} eliminados"
-    }
-  },
-  "region": {
-    "title": "Idioma y región",
-    "description": "Elige el idioma y cómo se escriben los números y las fechas. Se guarda con tus datos.",
-    "language": {
-      "label": "Idioma",
-      "hint": "Los nombres de héroes, objetos, edificios e investigación vienen de los datos del juego y por ahora se quedan en inglés."
-    },
-    "numberFormat": {
-      "label": "Formato de números",
-      "hint": "Ejemplo: {example}",
-      "options": {
-        "auto": "Automático, según el idioma",
-        "us": "1,234.56 (Estados Unidos)",
-        "european": "1.234,56 (Alemania)",
-        "french": "1 234,56 (Francia)",
-        "swiss": "1’234.56 (Suiza)",
-        "indian": "12,34,567.89 (India)"
-      }
-    },
-    "dateFormat": {
-      "label": "Formato de fechas",
-      "hint": "Ejemplo: {example}",
-      "options": {
-        "auto": "Automático, según el idioma",
-        "mdy": "Mes/Día/Año",
-        "dmy": "Día/Mes/Año",
-        "ymd": "Año-Mes-Día"
-      }
-    },
-    "timeZone": {
-      "label": "Zona horaria",
-      "hint": "Se usa para fechas y horas, y para Mi hora en Eventos. Ejemplo: 14:05 UTC se muestra como {example}.",
-      "auto": "Automática, según tu dispositivo ({zone})"
-    }
-  }
 }

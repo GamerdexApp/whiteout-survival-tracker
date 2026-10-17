@@ -1,50 +1,50 @@
 {
-  "page": {
-    "title": "Alianza"
-  },
-  "view": {
-    "subline": "{chief} · {details} · nivel de estandarte {level}"
-  },
-  "banner": {
-    "title": "Estandarte de la alianza",
-    "currentLevel": "Nivel actual",
-    "levelLabel": "Nivel del estandarte",
-    "maxHint": "Niveles enteros de 0 a {max}.",
-    "rangeChip": "{range}",
-    "costHeading": "Costo por nivel en {range}",
-    "noTimeOrPower": "Los estandartes no tienen tiempo de construcción ni poder en el paquete de datos, por eso no se muestran.",
-    "noCost": "Sin costo",
-    "none": "Ninguno",
-    "lower": "Bajar nivel del estandarte",
-    "raise": "Subir nivel del estandarte"
-  },
-  "structures": {
-    "title": "Estructuras de la alianza",
-    "tech": {
-      "title": "Tecnología",
-      "description": "{count} nodos en Crecimiento, Territorio y Batalla",
-      "status": "{maxed} al máximo, {progress} en progreso, {locked} bloqueados"
+    "page": {
+        "title": "Alianza"
     },
-    "facilities": {
-      "title": "Instalaciones",
-      "description": "{count} instalaciones del mapa",
-      "owned": "{owned} propias"
+    "view": {
+        "subline": "{chief} · {details} · nivel de estandarte {level}"
     },
-    "fortresses": {
-      "title": "Fortalezas",
-      "description": "Castillo, {strongholds} baluartes, {fortresses} fortalezas",
-      "reference": "Solo referencia"
+    "banner": {
+        "title": "Estandarte de la alianza",
+        "currentLevel": "Nivel actual",
+        "levelLabel": "Nivel del estandarte",
+        "maxHint": "Niveles enteros de 0 a {max}.",
+        "rangeChip": "{range}",
+        "costHeading": "Costo por nivel en {range}",
+        "noTimeOrPower": "Los estandartes no tienen tiempo de construcción ni poder en el paquete de datos, por eso no se muestran.",
+        "noCost": "Sin costo",
+        "none": "Ninguno",
+        "lower": "Bajar nivel del estandarte",
+        "raise": "Subir nivel del estandarte"
+    },
+    "structures": {
+        "title": "Estructuras de la alianza",
+        "tech": {
+            "title": "Tecnología",
+            "description": "{count} nodos en Crecimiento, Territorio y Batalla",
+            "status": "{maxed} al máximo, {progress} en progreso, {locked} bloqueados"
+        },
+        "facilities": {
+            "title": "Instalaciones",
+            "description": "{count} instalaciones del mapa",
+            "owned": "{owned} propias"
+        },
+        "fortresses": {
+            "title": "Fortalezas",
+            "description": "Castillo, {strongholds} baluartes, {fortresses} fortalezas",
+            "reference": "Solo referencia"
+        }
+    },
+    "table": {
+        "title": "Costo del estandarte por rango de niveles",
+        "note": "{count} rangos, todos los niveles de un rango cuestan lo mismo",
+        "range": "Rango",
+        "state": "Estado",
+        "built": "Construido",
+        "current": "Actual",
+        "notBuilt": "Sin construir",
+        "none": "Ninguno",
+        "noCost": "Sin costo"
     }
-  },
-  "table": {
-    "title": "Costo del estandarte por rango de niveles",
-    "note": "{count} rangos, todos los niveles de un rango cuestan lo mismo",
-    "range": "Rango",
-    "state": "Estado",
-    "built": "Construido",
-    "current": "Actual",
-    "notBuilt": "Sin construir",
-    "none": "Ninguno",
-    "noCost": "Sin costo"
-  }
 }

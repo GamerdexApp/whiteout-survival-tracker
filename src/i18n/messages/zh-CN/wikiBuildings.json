@@ -1,71 +1,71 @@
 {
-  "line": "{buildings}个建筑和{facilities}个设施。仅供参考，这里的内容不会保存到你的领主。",
-  "list": {
-    "heading": "建筑和设施",
-    "searchLabel": "搜索",
-    "searchPlaceholder": "搜索建筑和设施",
-    "categoryLabel": "分类",
-    "categories": {
-      "all": "全部",
-      "Military": "军事",
-      "Inner City": "内城",
-      "Entertainment": "娱乐"
+    "line": "{buildings}个建筑和{facilities}个设施。仅供参考，这里的内容不会保存到你的领主。",
+    "list": {
+        "heading": "建筑和设施",
+        "searchLabel": "搜索",
+        "searchPlaceholder": "搜索建筑和设施",
+        "categoryLabel": "分类",
+        "categories": {
+            "all": "全部",
+            "Military": "军事",
+            "Inner City": "内城",
+            "Entertainment": "娱乐"
+        },
+        "buildingMeta": "{category}，最高{maxLevel}，{count, plural, other {{amount}级}}",
+        "empty": "没有符合搜索的建筑。",
+        "categoryOption": "{category} {count}"
     },
-    "buildingMeta": "{category}，最高{maxLevel}，{count, plural, other {{amount}级}}",
-    "empty": "没有符合搜索的建筑。",
-    "categoryOption": "{category} {count}"
-  },
-  "detail": {
-    "levelsTotal": "等级总数",
-    "standardLevels": "标准等级，1 到 30",
-    "fireCrystalLevels": "Fire Crystal 等级，30-1 到 FC 10",
-    "maxLevel": "最高等级标签",
-    "rangeLabel": "等级范围",
-    "rangeOption": "{range} {count}",
-    "ranges": {
-      "all": "全部",
-      "standard": "1 到 30",
-      "fc3": "30-1 到 FC 3",
-      "fc5": "FC 3-1 到 FC 5",
-      "fc8": "FC 5-1 到 FC 8",
-      "fc10": "FC 8-1 到 FC 10"
+    "detail": {
+        "levelsTotal": "等级总数",
+        "standardLevels": "标准等级，1 到 30",
+        "fireCrystalLevels": "Fire Crystal 等级，30-1 到 FC 10",
+        "maxLevel": "最高等级标签",
+        "rangeLabel": "等级范围",
+        "rangeOption": "{range} {count}",
+        "ranges": {
+            "all": "全部",
+            "standard": "1 到 30",
+            "fc3": "30-1 到 FC 3",
+            "fc5": "FC 3-1 到 FC 5",
+            "fc8": "FC 5-1 到 FC 8",
+            "fc10": "FC 8-1 到 FC 10"
+        },
+        "tableLabel": "{name}各等级",
+        "levels": "等级",
+        "totalTitle": "合计所需，{range}，{count, plural, other {{amount}级}}",
+        "totalTime": "总建造时间"
     },
-    "tableLabel": "{name}各等级",
-    "levels": "等级",
-    "totalTitle": "合计所需，{range}，{count, plural, other {{amount}级}}",
-    "totalTime": "总建造时间"
-  },
-  "columns": {
-    "level": "等级",
-    "cost": "费用",
-    "time": "时间",
-    "power": "战力",
-    "requires": "要求",
-    "stats": {
-      "rallyCapacity": "集结容量",
-      "marchCapacity": "行军容量",
-      "trainingCapacity": "训练容量",
-      "trainingSpeedBonusPercent": "训练速度",
-      "researchSpeedBonusPercent": "研究速度",
-      "infirmaryCapacity": "Infirmary 容量",
-      "allyAssists": "盟友协助次数",
-      "allyHelpTimeSeconds": "盟友帮助时间",
-      "reinforceCapacity": "增援容量",
-      "storehouseCapacity": "Storehouse 容量",
-      "barricadeDurability": "Barricade 耐久",
-      "troopDeploymentCapacity": "出兵容量"
+    "columns": {
+        "level": "等级",
+        "cost": "费用",
+        "time": "时间",
+        "power": "战力",
+        "requires": "要求",
+        "stats": {
+            "rallyCapacity": "集结容量",
+            "marchCapacity": "行军容量",
+            "trainingCapacity": "训练容量",
+            "trainingSpeedBonusPercent": "训练速度",
+            "researchSpeedBonusPercent": "研究速度",
+            "infirmaryCapacity": "Infirmary 容量",
+            "allyAssists": "盟友协助次数",
+            "allyHelpTimeSeconds": "盟友帮助时间",
+            "reinforceCapacity": "增援容量",
+            "storehouseCapacity": "Storehouse 容量",
+            "barricadeDurability": "Barricade 耐久",
+            "troopDeploymentCapacity": "出兵容量"
+        }
+    },
+    "cells": {
+        "none": "无",
+        "requirement": "{building} {level}",
+        "pricePerItem": "每个{price}",
+        "percent": "{value}%"
+    },
+    "facilities": {
+        "heading": "设施",
+        "meta": "无等级、战力或建造费用",
+        "unlock": "Furnace {level}解锁",
+        "empty": "没有符合搜索的设施。"
     }
-  },
-  "cells": {
-    "none": "无",
-    "requirement": "{building} {level}",
-    "pricePerItem": "每个{price}",
-    "percent": "{value}%"
-  },
-  "facilities": {
-    "heading": "设施",
-    "meta": "无等级、战力或建造费用",
-    "unlock": "Furnace {level}解锁",
-    "empty": "没有符合搜索的设施。"
-  }
 }

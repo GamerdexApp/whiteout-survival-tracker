@@ -1,77 +1,77 @@
 {
-  "line": "{nodes} nodos de investigación en {tabs} pestañas. Solo referencia, aquí no se guarda nada.",
-  "tabsLabel": "Categorías de investigación",
-  "tabs": {
-    "battle": "Battle",
-    "growth": "Growth",
-    "economy": "Economy",
-    "t11": "T11",
-    "t12": "T12"
-  },
-  "search": {
-    "label": "Buscar",
-    "placeholder": "Buscar entre {amount} nodos de investigación"
-  },
-  "filters": {
-    "tier": "Tier",
-    "allTiers": "Todos",
-    "tierOption": "Tier {tier}",
-    "troop": "Tipo de tropa",
-    "allTroops": "Todos",
-    "troops": {
-      "Infantry": "Infantry",
-      "Marksman": "Marksman",
-      "Lancer": "Lancer"
+    "line": "{nodes} nodos de investigación en {tabs} pestañas. Solo referencia, aquí no se guarda nada.",
+    "tabsLabel": "Categorías de investigación",
+    "tabs": {
+        "battle": "Battle",
+        "growth": "Growth",
+        "economy": "Economy",
+        "t11": "T11",
+        "t12": "T12"
     },
-    "data": "Datos",
-    "dataOptions": {
-      "all": "Todos los nodos",
-      "placeholders": "Marcadores de posición",
-      "missingTime": "Sin tiempo"
+    "search": {
+        "label": "Buscar",
+        "placeholder": "Buscar entre {amount} nodos de investigación"
+    },
+    "filters": {
+        "tier": "Tier",
+        "allTiers": "Todos",
+        "tierOption": "Tier {tier}",
+        "troop": "Tipo de tropa",
+        "allTroops": "Todos",
+        "troops": {
+            "Infantry": "Infantry",
+            "Marksman": "Marksman",
+            "Lancer": "Lancer"
+        },
+        "data": "Datos",
+        "dataOptions": {
+            "all": "Todos los nodos",
+            "placeholders": "Marcadores de posición",
+            "missingTime": "Sin tiempo"
+        }
+    },
+    "list": {
+        "title": "Nodos",
+        "empty": "Ningún nodo de investigación coincide con esta búsqueda.",
+        "emptyHint": "Borra la búsqueda o un filtro.",
+        "columns": {
+            "node": "Nodo",
+            "tier": "Tier",
+            "levels": "Niveles",
+            "bonus": "Bonificación nivel 1",
+            "time": "Tiempo, nivel 1",
+            "power": "Poder"
+        },
+        "mobileMeta": "{category}, tier {tier}, {levels}",
+        "count": "{count, plural, one {{amount} nodo} other {{amount} nodos}}"
+    },
+    "levels": "{count, plural, one {{amount} nivel} other {{amount} niveles}}",
+    "detail": {
+        "columns": {
+            "level": "Nivel",
+            "requires": "Requisitos",
+            "cost": "Coste",
+            "time": "Tiempo",
+            "bonus": "Bonificación",
+            "power": "Poder"
+        },
+        "level": "Nivel {level}",
+        "none": "Ninguno",
+        "placeholderNote": "Este nodo es un marcador de posición. El paquete no tiene coste ni bonificación para él.",
+        "requirement": {
+            "building": "{name} {level}",
+            "research": "{name} nivel {level}"
+        },
+        "levelsTitle": "Niveles"
+    },
+    "view": {
+        "label": "Vista",
+        "list": "Lista",
+        "tree": "Árbol"
+    },
+    "tree": {
+        "region": "Árbol de investigación de {tab}",
+        "openNode": "{name}, {levels}",
+        "tier": "T{tier}"
     }
-  },
-  "list": {
-    "title": "Nodos",
-    "empty": "Ningún nodo de investigación coincide con esta búsqueda.",
-    "emptyHint": "Borra la búsqueda o un filtro.",
-    "columns": {
-      "node": "Nodo",
-      "tier": "Tier",
-      "levels": "Niveles",
-      "bonus": "Bonificación nivel 1",
-      "time": "Tiempo, nivel 1",
-      "power": "Poder"
-    },
-    "mobileMeta": "{category}, tier {tier}, {levels}",
-    "count": "{count, plural, one {{amount} nodo} other {{amount} nodos}}"
-  },
-  "levels": "{count, plural, one {{amount} nivel} other {{amount} niveles}}",
-  "detail": {
-    "columns": {
-      "level": "Nivel",
-      "requires": "Requisitos",
-      "cost": "Coste",
-      "time": "Tiempo",
-      "bonus": "Bonificación",
-      "power": "Poder"
-    },
-    "level": "Nivel {level}",
-    "none": "Ninguno",
-    "placeholderNote": "Este nodo es un marcador de posición. El paquete no tiene coste ni bonificación para él.",
-    "requirement": {
-      "building": "{name} {level}",
-      "research": "{name} nivel {level}"
-    },
-    "levelsTitle": "Niveles"
-  },
-  "view": {
-    "label": "Vista",
-    "list": "Lista",
-    "tree": "Árbol"
-  },
-  "tree": {
-    "region": "Árbol de investigación de {tab}",
-    "openNode": "{name}, {levels}",
-    "tier": "T{tier}"
-  }
 }

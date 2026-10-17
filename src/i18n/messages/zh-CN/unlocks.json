@@ -1,27 +1,27 @@
 {
-  "lock": {
-    "day": "开服第{day}天解锁",
-    "dayAndDate": "开服第{day}天解锁，{date}"
-  },
-  "areas": {
-    "pets": "宠物",
-    "fireCrystal": "Fire Crystal 等级",
-    "experts": "专家",
-    "chiefGear": "领主装备",
-    "chiefCharms": "领主饰品",
-    "warAcademy": "War Academy 和 T12 研究"
-  },
-  "dialog": {
-    "legend": "已解锁的内容",
-    "hint": "解锁情况跟随开服日期算出的服务器天数。如果你的服务器略有偏差，请选择你实际所处的阶段。未解锁的项目仍然可见，你已保存的数据也会保留。",
-    "auto": "自动，{current}",
-    "autoUnknown": "自动，请设置开服日期后使用",
-    "autoNone": "尚未解锁任何内容",
-    "none": "未解锁任何内容",
-    "stepPets": "第{day}天，{count} / {total}只宠物",
-    "stepExperts": "第{day}天，{count} / {total}位专家",
-    "stepFc": "第{day}天，最高{last}，不含其阶段",
-    "stepNamed": "第{day}天，{name}",
-    "pickLabel": "{area}解锁至"
-  }
+    "lock": {
+        "day": "开服第{day}天解锁",
+        "dayAndDate": "开服第{day}天解锁，{date}"
+    },
+    "areas": {
+        "pets": "宠物",
+        "fireCrystal": "Fire Crystal 等级",
+        "experts": "专家",
+        "chiefGear": "领主装备",
+        "chiefCharms": "领主饰品",
+        "warAcademy": "War Academy 和 T12 研究"
+    },
+    "dialog": {
+        "legend": "已解锁的内容",
+        "hint": "解锁情况跟随开服日期算出的服务器天数。如果你的服务器略有偏差，请选择你实际所处的阶段。未解锁的项目仍然可见，你已保存的数据也会保留。",
+        "auto": "自动，{current}",
+        "autoUnknown": "自动，请设置开服日期后使用",
+        "autoNone": "尚未解锁任何内容",
+        "none": "未解锁任何内容",
+        "stepPets": "第{day}天，{count} / {total}只宠物",
+        "stepExperts": "第{day}天，{count} / {total}位专家",
+        "stepFc": "第{day}天，最高{last}，不含其阶段",
+        "stepNamed": "第{day}天，{name}",
+        "pickLabel": "{area}解锁至"
+    }
 }

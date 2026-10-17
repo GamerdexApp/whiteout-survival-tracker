@@ -1,108 +1,108 @@
 {
-  "days": {
-    "day": "Hari {number}",
-    "battle": "Battle",
-    "range": "Hari {range}",
-    "stage": "Tahap {number}"
-  },
-  "page": {
-    "title": "Core Events",
-    "subline": "{chief} · {details}"
-  },
-  "events": {
-    "svs": "SvS",
-    "showdown": "Alliance Showdown",
-    "king": "King of Icefield",
-    "hall": "Hall of Chief"
-  },
-  "tabs": {
-    "label": "Core event"
-  },
-  "empty": {
-    "title": "Tidak ada event ditampilkan",
-    "description": "Keempat event disembunyikan untuk Chief ini. Aktifkan di Ubah Chief.",
-    "action": "Ubah Chief"
-  },
-  "strip": {
-    "live": "Event berlangsung",
-    "dates": "{start} sampai {end}",
-    "noDates": "Tanggal diatur di Log event.",
-    "today": "Hari ini {day}",
-    "checklist": "Daftar periksa",
-    "log": "Log event"
-  },
-  "bonus": {
-    "title": "{expert} level {skill}",
-    "level": "Level {level}",
-    "levelWithPercent": "Level {level} · {percent}%",
-    "none": "Level belum diatur, jadi tidak ada bonus.",
-    "readOnly": "Hanya baca",
-    "openExperts": "Buka Ahli",
-    "svsHelp": "Menambah 2% per level pada poin hari 1 sampai 5, dibulatkan per hari, dan tier tambahan pada ambang poin. Battle Phase tidak mendapat bonus. Hanya baca di sini, levelnya diatur di halaman Ahli.",
-    "showdownHelp": "Menambah 5% per level pada setiap aksi. Hanya baca di sini, levelnya diatur di halaman Ahli.",
-    "noneTitle": "Tanpa bonus ahli",
-    "kingNote": "Tidak ada ahli yang mengubah poin King of Icefield.",
-    "hallNote": "Tidak ada ahli yang mengubah poin Hall of Chief."
-  },
-  "daysSection": {
-    "title": "Hari",
-    "stages": "Tahap",
-    "totalPerDay": "Total poin per hari",
-    "totalPerStage": "Total poin per tahap",
-    "hallSeason": "Musim diatur di akun dan Musim 1 sampai diatur.",
-    "showdownScope": "Hanya poin pribadi. Tanpa total aliansi dan tanpa poin kemenangan."
-  },
-  "table": {
-    "title": "{day}: {name}",
-    "phasePreparation": "Preparation Phase",
-    "phaseBattle": "Battle Phase",
-    "action": "Aksi",
-    "pointsEach": "Poin per aksi",
-    "count": "Jumlah",
-    "points": "Poin",
-    "lower": "Kurangi jumlah {action}",
-    "raise": "Tambah jumlah {action}",
-    "countLabel": "Jumlah {action}",
-    "fromPlans": "{amount} dari rencana",
-    "base": "Dasar {amount}",
-    "bonus": "Bonus {amount}",
-    "total": "Total {amount}"
-  },
-  "result": {
-    "totalTitle": "Total poin, semua hari",
-    "totalTitleHall": "Total poin, tahap terpilih",
-    "baseBonus": "Dasar {base}, bonus {bonus}",
-    "battle": "Battle Phase",
-    "battleNoBonus": "Tanpa bonus di Battle Phase",
-    "seasonSum": "Tahap musim dijumlahkan: {amount}. Bukan peringkat.",
-    "selectedDayTotal": "{day}: {amount}",
-    "selectedDayBonus": "Bonus {percent}%"
-  },
-  "perDay": {
-    "title": "Poin per hari",
-    "titleHall": "Poin per tahap",
-    "bar": "Bagian dari hari terbesar untuk {day}"
-  },
-  "thresholds": {
-    "title": "Ambang poin",
-    "estimate": "Perkiraan",
-    "help": "Tonggak untuk {day}, dibandingkan dengan total hari.",
-    "reached": "Tercapai",
-    "needs": "Butuh {amount} lagi",
-    "extraTier": "Tier tambahan {number}, dari Valeria",
-    "extraTierUnknown": "Poin dan hadiah tidak ada di paket data",
-    "unknown": "Tidak diketahui",
-    "noneEvent": "Paket data tidak punya ambang poin untuk event ini.",
-    "noneDay": "Paket data tidak punya ambang poin untuk hari ini."
-  },
-  "ranks": {
-    "title": "Ambang peringkat",
-    "note": "Ini peringkat pemain. Peringkat tidak punya batas poin.",
-    "rank": "Peringkat",
-    "reward": "Hadiah",
-    "gems": "{amount} Gems",
-    "unknown": "Tidak diketahui",
-    "notConfirmed": "Belum dipastikan",
-    "noneShowdown": "Paket data tidak punya peringkat pribadi untuk Alliance Showdown."
-  }
+    "days": {
+        "day": "Hari {number}",
+        "battle": "Battle",
+        "range": "Hari {range}",
+        "stage": "Tahap {number}"
+    },
+    "page": {
+        "title": "Core Events",
+        "subline": "{chief} · {details}"
+    },
+    "events": {
+        "svs": "SvS",
+        "showdown": "Alliance Showdown",
+        "king": "King of Icefield",
+        "hall": "Hall of Chief"
+    },
+    "tabs": {
+        "label": "Core event"
+    },
+    "empty": {
+        "title": "Tidak ada event ditampilkan",
+        "description": "Keempat event disembunyikan untuk Chief ini. Aktifkan di Ubah Chief.",
+        "action": "Ubah Chief"
+    },
+    "strip": {
+        "live": "Event berlangsung",
+        "dates": "{start} sampai {end}",
+        "noDates": "Tanggal diatur di Log event.",
+        "today": "Hari ini {day}",
+        "checklist": "Daftar periksa",
+        "log": "Log event"
+    },
+    "bonus": {
+        "title": "{expert} level {skill}",
+        "level": "Level {level}",
+        "levelWithPercent": "Level {level} · {percent}%",
+        "none": "Level belum diatur, jadi tidak ada bonus.",
+        "readOnly": "Hanya baca",
+        "openExperts": "Buka Ahli",
+        "svsHelp": "Menambah 2% per level pada poin hari 1 sampai 5, dibulatkan per hari, dan tier tambahan pada ambang poin. Battle Phase tidak mendapat bonus. Hanya baca di sini, levelnya diatur di halaman Ahli.",
+        "showdownHelp": "Menambah 5% per level pada setiap aksi. Hanya baca di sini, levelnya diatur di halaman Ahli.",
+        "noneTitle": "Tanpa bonus ahli",
+        "kingNote": "Tidak ada ahli yang mengubah poin King of Icefield.",
+        "hallNote": "Tidak ada ahli yang mengubah poin Hall of Chief."
+    },
+    "daysSection": {
+        "title": "Hari",
+        "stages": "Tahap",
+        "totalPerDay": "Total poin per hari",
+        "totalPerStage": "Total poin per tahap",
+        "hallSeason": "Musim diatur di akun dan Musim 1 sampai diatur.",
+        "showdownScope": "Hanya poin pribadi. Tanpa total aliansi dan tanpa poin kemenangan."
+    },
+    "table": {
+        "title": "{day}: {name}",
+        "phasePreparation": "Preparation Phase",
+        "phaseBattle": "Battle Phase",
+        "action": "Aksi",
+        "pointsEach": "Poin per aksi",
+        "count": "Jumlah",
+        "points": "Poin",
+        "lower": "Kurangi jumlah {action}",
+        "raise": "Tambah jumlah {action}",
+        "countLabel": "Jumlah {action}",
+        "fromPlans": "{amount} dari rencana",
+        "base": "Dasar {amount}",
+        "bonus": "Bonus {amount}",
+        "total": "Total {amount}"
+    },
+    "result": {
+        "totalTitle": "Total poin, semua hari",
+        "totalTitleHall": "Total poin, tahap terpilih",
+        "baseBonus": "Dasar {base}, bonus {bonus}",
+        "battle": "Battle Phase",
+        "battleNoBonus": "Tanpa bonus di Battle Phase",
+        "seasonSum": "Tahap musim dijumlahkan: {amount}. Bukan peringkat.",
+        "selectedDayTotal": "{day}: {amount}",
+        "selectedDayBonus": "Bonus {percent}%"
+    },
+    "perDay": {
+        "title": "Poin per hari",
+        "titleHall": "Poin per tahap",
+        "bar": "Bagian dari hari terbesar untuk {day}"
+    },
+    "thresholds": {
+        "title": "Ambang poin",
+        "estimate": "Perkiraan",
+        "help": "Tonggak untuk {day}, dibandingkan dengan total hari.",
+        "reached": "Tercapai",
+        "needs": "Butuh {amount} lagi",
+        "extraTier": "Tier tambahan {number}, dari Valeria",
+        "extraTierUnknown": "Poin dan hadiah tidak ada di paket data",
+        "unknown": "Tidak diketahui",
+        "noneEvent": "Paket data tidak punya ambang poin untuk event ini.",
+        "noneDay": "Paket data tidak punya ambang poin untuk hari ini."
+    },
+    "ranks": {
+        "title": "Ambang peringkat",
+        "note": "Ini peringkat pemain. Peringkat tidak punya batas poin.",
+        "rank": "Peringkat",
+        "reward": "Hadiah",
+        "gems": "{amount} Gems",
+        "unknown": "Tidak diketahui",
+        "notConfirmed": "Belum dipastikan",
+        "noneShowdown": "Paket data tidak punya peringkat pribadi untuk Alliance Showdown."
+    }
 }

@@ -1,98 +1,98 @@
 {
-  "page": {
-    "title": "Технологии"
-  },
-  "view": {
-    "subline": "{chief} · узлов технологий альянса: {count} (Рост, Территория, Бой)"
-  },
-  "summary": {
-    "maxed": "Максимум",
-    "inProgress": "В процессе",
-    "notStarted": "Не начато",
-    "locked": "Закрыто"
-  },
-  "status": {
-    "maxed": "Максимум",
-    "inProgress": "В процессе",
-    "notStarted": "Не начато",
-    "locked": "Закрыто"
-  },
-  "tabs": {
-    "label": "Категории технологий"
-  },
-  "categories": {
-    "Growth": "Рост",
-    "Territory": "Территория",
-    "Battle": "Бой"
-  },
-  "filters": {
-    "search": "Поиск",
-    "searchLabel": "Поиск узлов технологий",
-    "searchPlaceholder": "Название узла",
-    "tier": "Ступень",
-    "allTiers": "Все ступени",
-    "tierOption": "Ступень {tier}",
-    "status": "Статус",
-    "allStatuses": "Все",
-    "button": "Поиск и фильтры",
-    "title": "Поиск и фильтры",
-    "description": "Найдите узлы технологий по названию, ступени и статусу",
-    "reset": "Сбросить фильтры",
-    "done": "Показать {count}",
-    "shown": "Показано узлов: {shown} из {total}"
-  },
-  "table": {
-    "node": "Узел",
-    "level": "Уровень",
-    "bonus": "Бонус",
-    "cost": "Цена след. уровня",
-    "time": "Время",
-    "needs": "Требуется"
-  },
-  "node": {
-    "tierDescription": "Ступень {tier} · {description}",
-    "levelLabel": "Уровень: {name}",
-    "levelOf": "{level} / {max}",
-    "open": "Открыть: {name}",
-    "bonusOf": "{now} из {max}",
-    "bonusNone": "Пока нет, макс. {max}",
-    "noBonus": "Нет бонуса",
-    "maxed": "Максимум",
-    "noTime": "Нет времени",
-    "readyToUpgrade": "Можно улучшать",
-    "nothingNeeded": "Ничего не нужно",
-    "needsPart": "Нужен {name} уровня {level}",
-    "costLine": "{name} {amount}",
-    "lockedHint": "Закрыто, пока не будет: {names}",
-    "requirementPart": "{name} уровня {level}"
-  },
-  "flyout": {
-    "title": "{name}",
-    "subtitle": "{category}, ступень {tier}. {description}",
-    "close": "Закрыть",
-    "level": "Уровень",
-    "bonusNow": "Бонус сейчас",
-    "needsFor": "Нужно для уровня {level}",
-    "needsNothing": "Ничего не нужно.",
-    "needsLine": "Нужен уровень {need}, у вас уровень {have}",
-    "met": "Выполнено",
-    "notMet": "Не выполнено",
-    "requiredBy": "Требуется для",
-    "requiredByNone": "Ни одному другому узлу этот узел не нужен.",
-    "requiredByLine": "{category}, ступень {tier}, с уровня {from} нужен {name} уровня {need}",
-    "allLevels": "Все уровни",
-    "levelRow": "Уровень {level}",
-    "done": "Готово",
-    "next": "Далее",
-    "later": "Позже",
-    "remaining": "Осталось до максимума",
-    "derived": "Расчёт",
-    "remainingNone": "Ничего не осталось. Узел на максимуме.",
-    "remainingLine": "{cost}",
-    "remainingTime": "{time}"
-  },
-  "empty": {
-    "title": "Подходящих узлов нет",
-    "description": "Измените поиск или фильтры, чтобы увидеть больше узлов."
-  }
+    "page": {
+        "title": "Технологии"
+    },
+    "view": {
+        "subline": "{chief} · узлов технологий альянса: {count} (Рост, Территория, Бой)"
+    },
+    "summary": {
+        "maxed": "Максимум",
+        "inProgress": "В процессе",
+        "notStarted": "Не начато",
+        "locked": "Закрыто"
+    },
+    "status": {
+        "maxed": "Максимум",
+        "inProgress": "В процессе",
+        "notStarted": "Не начато",
+        "locked": "Закрыто"
+    },
+    "tabs": {
+        "label": "Категории технологий"
+    },
+    "categories": {
+        "Growth": "Рост",
+        "Territory": "Территория",
+        "Battle": "Бой"
+    },
+    "filters": {
+        "search": "Поиск",
+        "searchLabel": "Поиск узлов технологий",
+        "searchPlaceholder": "Название узла",
+        "tier": "Ступень",
+        "allTiers": "Все ступени",
+        "tierOption": "Ступень {tier}",
+        "status": "Статус",
+        "allStatuses": "Все",
+        "button": "Поиск и фильтры",
+        "title": "Поиск и фильтры",
+        "description": "Найдите узлы технологий по названию, ступени и статусу",
+        "reset": "Сбросить фильтры",
+        "done": "Показать {count}",
+        "shown": "Показано узлов: {shown} из {total}"
+    },
+    "table": {
+        "node": "Узел",
+        "level": "Уровень",
+        "bonus": "Бонус",
+        "cost": "Цена след. уровня",
+        "time": "Время",
+        "needs": "Требуется"
+    },
+    "node": {
+        "tierDescription": "Ступень {tier} · {description}",
+        "levelLabel": "Уровень: {name}",
+        "levelOf": "{level} / {max}",
+        "open": "Открыть: {name}",
+        "bonusOf": "{now} из {max}",
+        "bonusNone": "Пока нет, макс. {max}",
+        "noBonus": "Нет бонуса",
+        "maxed": "Максимум",
+        "noTime": "Нет времени",
+        "readyToUpgrade": "Можно улучшать",
+        "nothingNeeded": "Ничего не нужно",
+        "needsPart": "Нужен {name} уровня {level}",
+        "costLine": "{name} {amount}",
+        "lockedHint": "Закрыто, пока не будет: {names}",
+        "requirementPart": "{name} уровня {level}"
+    },
+    "flyout": {
+        "title": "{name}",
+        "subtitle": "{category}, ступень {tier}. {description}",
+        "close": "Закрыть",
+        "level": "Уровень",
+        "bonusNow": "Бонус сейчас",
+        "needsFor": "Нужно для уровня {level}",
+        "needsNothing": "Ничего не нужно.",
+        "needsLine": "Нужен уровень {need}, у вас уровень {have}",
+        "met": "Выполнено",
+        "notMet": "Не выполнено",
+        "requiredBy": "Требуется для",
+        "requiredByNone": "Ни одному другому узлу этот узел не нужен.",
+        "requiredByLine": "{category}, ступень {tier}, с уровня {from} нужен {name} уровня {need}",
+        "allLevels": "Все уровни",
+        "levelRow": "Уровень {level}",
+        "done": "Готово",
+        "next": "Далее",
+        "later": "Позже",
+        "remaining": "Осталось до максимума",
+        "derived": "Расчёт",
+        "remainingNone": "Ничего не осталось. Узел на максимуме.",
+        "remainingLine": "{cost}",
+        "remainingTime": "{time}"
+    },
+    "empty": {
+        "title": "Подходящих узлов нет",
+        "description": "Измените поиск или фильтры, чтобы увидеть больше узлов."
+    }
 }

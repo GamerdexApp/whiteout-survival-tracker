@@ -1,63 +1,63 @@
 {
-  "page": {
-    "title": "VIP"
-  },
-  "view": {
-    "sublineKnown": "{chief} · {details} · VIP {level}, 경험치 {xp}",
-    "sublineUnknown": "{chief} · {details} · VIP 미설정"
-  },
-  "input": {
-    "title": "내 VIP",
-    "enterAs": "VIP 입력 방식",
-    "modeXp": "총 경험치",
-    "modeLevel": "VIP 레벨",
-    "xpLabel": "총 VIP 경험치",
-    "xpHint": "0부터 {max}까지 정수 경험치예요.",
-    "levelLabel": "VIP 레벨",
-    "notSet": "미설정",
-    "levelHint": "레벨을 고르면 총 경험치가 그 레벨의 최소값으로 설정돼요. 정확하게 하려면 실제 경험치를 입력하세요.",
-    "reached": "도달한 레벨",
-    "levelName": "VIP {level}",
-    "unknown": "알 수 없음"
-  },
-  "progress": {
-    "label": "VIP {level} 안의 진행도",
-    "toNext": "VIP {level}까지 경험치 {xp}",
-    "percent": "{percent}%",
-    "range": "이 레벨의 총 경험치는 {from}부터 {to}까지예요.",
-    "estimate": "추정값이에요. 레벨을 입력해서 경험치가 VIP {level}의 최소값으로 설정됐어요. 정확한 값은 실제 경험치를 입력하세요.",
-    "maxLevel": "최대 레벨",
-    "maxHint": "VIP {level}이 마지막 레벨이에요."
-  },
-  "perks": {
-    "title": "VIP {level}의 혜택",
-    "subtitle": "이전 레벨과의 차이가 아닌 이 레벨의 합계예요.",
-    "unknown": "VIP를 입력하면 혜택을 볼 수 있어요."
-  },
-  "next": {
-    "title": "VIP {level}에서 추가되는 혜택",
-    "subtitle": "VIP {from}과 비교한 결과예요.",
-    "new": "신규",
-    "was": "이전 {value}",
-    "maxLevel": "최대 레벨이에요. 미리 볼 다음 레벨이 없어요.",
-    "unknown": "VIP를 입력하면 다음 레벨을 볼 수 있어요."
-  },
-  "table": {
-    "title": "전체 {count}레벨, 총 경험치 {total}",
-    "level": "레벨",
-    "xpFromLast": "이전부터 경험치",
-    "totalXp": "총 경험치",
-    "bonuses": "신규 또는 상승 보너스",
-    "state": "상태",
-    "xpFromLastMobile": "이전부터 경험치 {xp}",
-    "totalMobile": "총 {xp}",
-    "unknown": "알 수 없음",
-    "states": {
-      "reached": "도달",
-      "current": "현재",
-      "ahead": "남음",
-      "unknown": "알 수 없음"
+    "page": {
+        "title": "VIP"
     },
-    "levelName": "VIP {level}"
-  }
+    "view": {
+        "sublineKnown": "{chief} · {details} · VIP {level}, 경험치 {xp}",
+        "sublineUnknown": "{chief} · {details} · VIP 미설정"
+    },
+    "input": {
+        "title": "내 VIP",
+        "enterAs": "VIP 입력 방식",
+        "modeXp": "총 경험치",
+        "modeLevel": "VIP 레벨",
+        "xpLabel": "총 VIP 경험치",
+        "xpHint": "0부터 {max}까지 정수 경험치예요.",
+        "levelLabel": "VIP 레벨",
+        "notSet": "미설정",
+        "levelHint": "레벨을 고르면 총 경험치가 그 레벨의 최소값으로 설정돼요. 정확하게 하려면 실제 경험치를 입력하세요.",
+        "reached": "도달한 레벨",
+        "levelName": "VIP {level}",
+        "unknown": "알 수 없음"
+    },
+    "progress": {
+        "label": "VIP {level} 안의 진행도",
+        "toNext": "VIP {level}까지 경험치 {xp}",
+        "percent": "{percent}%",
+        "range": "이 레벨의 총 경험치는 {from}부터 {to}까지예요.",
+        "estimate": "추정값이에요. 레벨을 입력해서 경험치가 VIP {level}의 최소값으로 설정됐어요. 정확한 값은 실제 경험치를 입력하세요.",
+        "maxLevel": "최대 레벨",
+        "maxHint": "VIP {level}이 마지막 레벨이에요."
+    },
+    "perks": {
+        "title": "VIP {level}의 혜택",
+        "subtitle": "이전 레벨과의 차이가 아닌 이 레벨의 합계예요.",
+        "unknown": "VIP를 입력하면 혜택을 볼 수 있어요."
+    },
+    "next": {
+        "title": "VIP {level}에서 추가되는 혜택",
+        "subtitle": "VIP {from}과 비교한 결과예요.",
+        "new": "신규",
+        "was": "이전 {value}",
+        "maxLevel": "최대 레벨이에요. 미리 볼 다음 레벨이 없어요.",
+        "unknown": "VIP를 입력하면 다음 레벨을 볼 수 있어요."
+    },
+    "table": {
+        "title": "전체 {count}레벨, 총 경험치 {total}",
+        "level": "레벨",
+        "xpFromLast": "이전부터 경험치",
+        "totalXp": "총 경험치",
+        "bonuses": "신규 또는 상승 보너스",
+        "state": "상태",
+        "xpFromLastMobile": "이전부터 경험치 {xp}",
+        "totalMobile": "총 {xp}",
+        "unknown": "알 수 없음",
+        "states": {
+            "reached": "도달",
+            "current": "현재",
+            "ahead": "남음",
+            "unknown": "알 수 없음"
+        },
+        "levelName": "VIP {level}"
+    }
 }

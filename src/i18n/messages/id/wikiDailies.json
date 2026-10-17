@@ -1,46 +1,46 @@
 {
-  "line": "{missions} misi harian dalam game dengan semua level yang diketahui, hadiah bilah aktivitas, dan tugas rutin.",
-  "missionCount": "{count, plural, other {{amount} misi}}",
-  "tabs": {
-    "label": "Harian",
-    "missions": "Misi dalam game",
-    "routine": "Tugas rutin"
-  },
-  "totals": {
-    "title": "Total Activeness",
-    "missions": "Misi dalam game",
-    "levelOne": "Level 1 tiap misi",
-    "allLevels": "Semua level yang diketahui",
-    "topReward": "Level hadiah teratas",
-    "explanation": "Sebuah misi menambah Activeness dari setiap level yang selesai, sampai level yang dicapai. Level 1 dari semua {missions} misi berjumlah {levelOne} Activeness. Semua level yang diketahui dari semua {missions} misi berjumlah {allLevels}."
-  },
-  "bar": {
-    "title": "Hadiah bilah aktivitas",
-    "activeness": "Activeness",
-    "rewards": "Hadiah"
-  },
-  "missions": {
-    "title": "Misi dalam game",
-    "summary": "{missions}, {levels}",
-    "levelCount": "{count, plural, other {{amount} level diketahui}}",
-    "level": "Level",
-    "task": "Tugas",
-    "target": "Target",
-    "activeness": "Activeness",
-    "otherRewards": "Hadiah lain",
-    "levelLabel": "L{level}",
-    "sumOne": "1 level: {total} Activeness",
-    "sumMany": "{count} level: {parts} = {total} Activeness",
-    "plus": "+{amount}",
-    "noOtherRewards": "Tidak ada"
-  },
-  "routine": {
-    "title": "Tugas rutin",
-    "count": "{count, plural, other {{amount} tugas}}"
-  },
-  "missing": {
-    "title": "Belum ada di data",
-    "levels": "Level misi lainnya. Setiap misi punya {min} sampai {max} level yang diketahui. Level yang lebih tinggi belum ada di paket data, jadi totalnya bisa bertambah.",
-    "reset": "Waktu reset harian. Paket data tidak punya. Tracker memakai bawaannya sendiri, {time} UTC, dan menandainya sebagai bawaan aplikasi."
-  }
+    "line": "{missions} misi harian dalam game dengan semua level yang diketahui, hadiah bilah aktivitas, dan tugas rutin.",
+    "missionCount": "{count, plural, other {{amount} misi}}",
+    "tabs": {
+        "label": "Harian",
+        "missions": "Misi dalam game",
+        "routine": "Tugas rutin"
+    },
+    "totals": {
+        "title": "Total Activeness",
+        "missions": "Misi dalam game",
+        "levelOne": "Level 1 tiap misi",
+        "allLevels": "Semua level yang diketahui",
+        "topReward": "Level hadiah teratas",
+        "explanation": "Sebuah misi menambah Activeness dari setiap level yang selesai, sampai level yang dicapai. Level 1 dari semua {missions} misi berjumlah {levelOne} Activeness. Semua level yang diketahui dari semua {missions} misi berjumlah {allLevels}."
+    },
+    "bar": {
+        "title": "Hadiah bilah aktivitas",
+        "activeness": "Activeness",
+        "rewards": "Hadiah"
+    },
+    "missions": {
+        "title": "Misi dalam game",
+        "summary": "{missions}, {levels}",
+        "levelCount": "{count, plural, other {{amount} level diketahui}}",
+        "level": "Level",
+        "task": "Tugas",
+        "target": "Target",
+        "activeness": "Activeness",
+        "otherRewards": "Hadiah lain",
+        "levelLabel": "L{level}",
+        "sumOne": "1 level: {total} Activeness",
+        "sumMany": "{count} level: {parts} = {total} Activeness",
+        "plus": "+{amount}",
+        "noOtherRewards": "Tidak ada"
+    },
+    "routine": {
+        "title": "Tugas rutin",
+        "count": "{count, plural, other {{amount} tugas}}"
+    },
+    "missing": {
+        "title": "Belum ada di data",
+        "levels": "Level misi lainnya. Setiap misi punya {min} sampai {max} level yang diketahui. Level yang lebih tinggi belum ada di paket data, jadi totalnya bisa bertambah.",
+        "reset": "Waktu reset harian. Paket data tidak punya. Tracker memakai bawaannya sendiri, {time} UTC, dan menandainya sebagai bawaan aplikasi."
+    }
 }

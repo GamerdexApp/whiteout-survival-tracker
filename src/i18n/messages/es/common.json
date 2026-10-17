@@ -1,19 +1,19 @@
 {
-  "duration": {
-    "days": "{value}d",
-    "hours": "{value}h",
-    "minutes": "{value}min",
-    "seconds": "{value}s",
-    "zero": "0s",
-    "separator": " "
-  },
-  "timeLeft": {
-    "left": "Quedan {duration}",
-    "ready": "Listo para terminar"
-  },
-  "saveFailed": {
-    "title": "No guardado",
-    "message": "El almacenamiento del navegador está lleno. Exporta una copia de seguridad ya.",
-    "exportBackup": "Exportar copia"
-  }
+    "duration": {
+        "days": "{value}d",
+        "hours": "{value}h",
+        "minutes": "{value}min",
+        "seconds": "{value}s",
+        "zero": "0s",
+        "separator": " "
+    },
+    "timeLeft": {
+        "left": "Quedan {duration}",
+        "ready": "Listo para terminar"
+    },
+    "saveFailed": {
+        "title": "No guardado",
+        "message": "El almacenamiento del navegador está lleno. Exporta una copia de seguridad ya.",
+        "exportBackup": "Exportar copia"
+    }
 }

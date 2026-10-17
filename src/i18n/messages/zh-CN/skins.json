@@ -1,78 +1,78 @@
 {
-  "page": {
-    "title": "皮肤"
-  },
-  "view": {
-    "subline": "{chief} · {details} · 已拥有{owned} / {total}款皮肤"
-  },
-  "owned": {
-    "label": "已拥有",
-    "value": "{owned} / {total}",
-    "progress": "已拥有的皮肤",
-    "withBonus": "{total}款皮肤中有{withBonus}款带加成"
-  },
-  "totals": {
-    "title": "已拥有皮肤的加成",
-    "estimate": "估算",
-    "percent": "+{amount}%",
-    "flat": "+{amount}",
-    "none": "已拥有的皮肤中还没有带加成的。",
-    "note": "{count, plural, other {{amount}款已拥有皮肤的加成之和}}，按属性分列，由应用计算。假设所有已拥有的皮肤同时生效。Troop Attack 和 Troops Attack 会相加。"
-  },
-  "expiry": {
-    "title": "不记录到期时间。",
-    "text": "时长（永久、30 天、按段位）只出现在说明文字中。限时皮肤会一直保持已拥有，直到你清除。"
-  },
-  "search": {
-    "label": "搜索皮肤",
-    "placeholder": "按名称或来源搜索皮肤"
-  },
-  "filters": {
-    "button": "筛选",
-    "title": "筛选",
-    "description": "选择皮肤列表显示的内容",
-    "reset": "重置",
-    "showButton": "{count, plural, other {显示{amount}款皮肤}}",
-    "skinType": "皮肤类型",
-    "typeAll": "全部{amount}",
-    "typeOption": "{type} {amount}",
-    "owned": "已拥有",
-    "bonus": "加成",
-    "order": "排序",
-    "notSaved": "筛选不会保存。",
-    "ownedOptions": {
-      "all": "全部皮肤",
-      "owned": "已拥有",
-      "notOwned": "未拥有"
+    "page": {
+        "title": "皮肤"
     },
-    "bonusOptions": {
-      "any": "不限",
-      "has": "有加成",
-      "none": "无加成"
+    "view": {
+        "subline": "{chief} · {details} · 已拥有{owned} / {total}款皮肤"
     },
-    "orderOptions": {
-      "game": "游戏顺序",
-      "name": "名称 A 到 Z",
-      "owned": "已拥有在前"
+    "owned": {
+        "label": "已拥有",
+        "value": "{owned} / {total}",
+        "progress": "已拥有的皮肤",
+        "withBonus": "{total}款皮肤中有{withBonus}款带加成"
+    },
+    "totals": {
+        "title": "已拥有皮肤的加成",
+        "estimate": "估算",
+        "percent": "+{amount}%",
+        "flat": "+{amount}",
+        "none": "已拥有的皮肤中还没有带加成的。",
+        "note": "{count, plural, other {{amount}款已拥有皮肤的加成之和}}，按属性分列，由应用计算。假设所有已拥有的皮肤同时生效。Troop Attack 和 Troops Attack 会相加。"
+    },
+    "expiry": {
+        "title": "不记录到期时间。",
+        "text": "时长（永久、30 天、按段位）只出现在说明文字中。限时皮肤会一直保持已拥有，直到你清除。"
+    },
+    "search": {
+        "label": "搜索皮肤",
+        "placeholder": "按名称或来源搜索皮肤"
+    },
+    "filters": {
+        "button": "筛选",
+        "title": "筛选",
+        "description": "选择皮肤列表显示的内容",
+        "reset": "重置",
+        "showButton": "{count, plural, other {显示{amount}款皮肤}}",
+        "skinType": "皮肤类型",
+        "typeAll": "全部{amount}",
+        "typeOption": "{type} {amount}",
+        "owned": "已拥有",
+        "bonus": "加成",
+        "order": "排序",
+        "notSaved": "筛选不会保存。",
+        "ownedOptions": {
+            "all": "全部皮肤",
+            "owned": "已拥有",
+            "notOwned": "未拥有"
+        },
+        "bonusOptions": {
+            "any": "不限",
+            "has": "有加成",
+            "none": "无加成"
+        },
+        "orderOptions": {
+            "game": "游戏顺序",
+            "name": "名称 A 到 Z",
+            "owned": "已拥有在前"
+        }
+    },
+    "status": {
+        "showing": "显示{shown} / {total}款皮肤。",
+        "showingFiltered": "显示{shown} / {total}款皮肤。筛选：{filters}。",
+        "showMore": "{count, plural, other {再显示{amount}款皮肤}}"
+    },
+    "empty": {
+        "title": "没有匹配的皮肤",
+        "description": "修改搜索或筛选，即可查看皮肤。",
+        "reset": "重置筛选"
+    },
+    "card": {
+        "bonus": "加成",
+        "source": "来源",
+        "unknown": "未知",
+        "bonusValue": "{value} {stat}",
+        "owned": "已拥有",
+        "ownedLabel": "已拥有：{name}，{type}",
+        "domainWarning": "领域加成文字在说明中，未计入。"
     }
-  },
-  "status": {
-    "showing": "显示{shown} / {total}款皮肤。",
-    "showingFiltered": "显示{shown} / {total}款皮肤。筛选：{filters}。",
-    "showMore": "{count, plural, other {再显示{amount}款皮肤}}"
-  },
-  "empty": {
-    "title": "没有匹配的皮肤",
-    "description": "修改搜索或筛选，即可查看皮肤。",
-    "reset": "重置筛选"
-  },
-  "card": {
-    "bonus": "加成",
-    "source": "来源",
-    "unknown": "未知",
-    "bonusValue": "{value} {stat}",
-    "owned": "已拥有",
-    "ownedLabel": "已拥有：{name}，{type}",
-    "domainWarning": "领域加成文字在说明中，未计入。"
-  }
 }

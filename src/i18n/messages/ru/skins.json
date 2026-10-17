@@ -1,78 +1,78 @@
 {
-  "page": {
-    "title": "Скины"
-  },
-  "view": {
-    "subline": "{chief} · {details} · скинов есть: {owned} из {total}"
-  },
-  "owned": {
-    "label": "Есть",
-    "value": "{owned} из {total}",
-    "progress": "Скинов есть",
-    "withBonus": "Бонус есть у {withBonus} из {total} скинов"
-  },
-  "totals": {
-    "title": "Бонусы от имеющихся скинов",
-    "estimate": "Оценка",
-    "percent": "+{amount}%",
-    "flat": "+{amount}",
-    "none": "Ни у одного имеющегося скина пока нет бонуса.",
-    "note": "{count, plural, one {Сумма бонуса {amount} имеющегося скина} few {Сумма бонусов {amount} имеющихся скинов} many {Сумма бонусов {amount} имеющихся скинов} other {Сумма бонусов {amount} имеющихся скинов}} по каждой характеристике, рассчитана приложением. Предполагается, что все имеющиеся скины действуют одновременно. Troop Attack и Troops Attack складываются."
-  },
-  "expiry": {
-    "title": "Срок действия не отслеживается.",
-    "text": "Длительность (постоянный, 30 дней, за ранг) указана только в тексте описания. Скин с ограниченным сроком остаётся в списке имеющихся, пока вы его не уберёте."
-  },
-  "search": {
-    "label": "Поиск скинов",
-    "placeholder": "Поиск скинов по названию или источнику"
-  },
-  "filters": {
-    "button": "Фильтры",
-    "title": "Фильтры",
-    "description": "Что показывать в списке скинов",
-    "reset": "Сбросить",
-    "showButton": "{count, plural, one {Показать {amount} скин} few {Показать {amount} скина} many {Показать {amount} скинов} other {Показать {amount} скина}}",
-    "skinType": "Тип скина",
-    "typeAll": "Все {amount}",
-    "typeOption": "{type} {amount}",
-    "owned": "Наличие",
-    "bonus": "Бонус",
-    "order": "Порядок",
-    "notSaved": "Фильтры не сохраняются.",
-    "ownedOptions": {
-      "all": "Все скины",
-      "owned": "Есть",
-      "notOwned": "Нет"
+    "page": {
+        "title": "Скины"
     },
-    "bonusOptions": {
-      "any": "Любой",
-      "has": "С бонусом",
-      "none": "Без бонуса"
+    "view": {
+        "subline": "{chief} · {details} · скинов есть: {owned} из {total}"
     },
-    "orderOptions": {
-      "game": "Игровой порядок",
-      "name": "По названию, А–Я",
-      "owned": "Сначала имеющиеся"
+    "owned": {
+        "label": "Есть",
+        "value": "{owned} из {total}",
+        "progress": "Скинов есть",
+        "withBonus": "Бонус есть у {withBonus} из {total} скинов"
+    },
+    "totals": {
+        "title": "Бонусы от имеющихся скинов",
+        "estimate": "Оценка",
+        "percent": "+{amount}%",
+        "flat": "+{amount}",
+        "none": "Ни у одного имеющегося скина пока нет бонуса.",
+        "note": "{count, plural, one {Сумма бонуса {amount} имеющегося скина} few {Сумма бонусов {amount} имеющихся скинов} many {Сумма бонусов {amount} имеющихся скинов} other {Сумма бонусов {amount} имеющихся скинов}} по каждой характеристике, рассчитана приложением. Предполагается, что все имеющиеся скины действуют одновременно. Troop Attack и Troops Attack складываются."
+    },
+    "expiry": {
+        "title": "Срок действия не отслеживается.",
+        "text": "Длительность (постоянный, 30 дней, за ранг) указана только в тексте описания. Скин с ограниченным сроком остаётся в списке имеющихся, пока вы его не уберёте."
+    },
+    "search": {
+        "label": "Поиск скинов",
+        "placeholder": "Поиск скинов по названию или источнику"
+    },
+    "filters": {
+        "button": "Фильтры",
+        "title": "Фильтры",
+        "description": "Что показывать в списке скинов",
+        "reset": "Сбросить",
+        "showButton": "{count, plural, one {Показать {amount} скин} few {Показать {amount} скина} many {Показать {amount} скинов} other {Показать {amount} скина}}",
+        "skinType": "Тип скина",
+        "typeAll": "Все {amount}",
+        "typeOption": "{type} {amount}",
+        "owned": "Наличие",
+        "bonus": "Бонус",
+        "order": "Порядок",
+        "notSaved": "Фильтры не сохраняются.",
+        "ownedOptions": {
+            "all": "Все скины",
+            "owned": "Есть",
+            "notOwned": "Нет"
+        },
+        "bonusOptions": {
+            "any": "Любой",
+            "has": "С бонусом",
+            "none": "Без бонуса"
+        },
+        "orderOptions": {
+            "game": "Игровой порядок",
+            "name": "По названию, А–Я",
+            "owned": "Сначала имеющиеся"
+        }
+    },
+    "status": {
+        "showing": "Показано скинов: {shown} из {total}.",
+        "showingFiltered": "Показано скинов: {shown} из {total}. Фильтры: {filters}.",
+        "showMore": "{count, plural, one {Показать ещё {amount} скин} few {Показать ещё {amount} скина} many {Показать ещё {amount} скинов} other {Показать ещё {amount} скина}}"
+    },
+    "empty": {
+        "title": "Подходящих скинов нет",
+        "description": "Измените поиск или фильтры, чтобы увидеть скины.",
+        "reset": "Сбросить фильтры"
+    },
+    "card": {
+        "bonus": "Бонус",
+        "source": "Источник",
+        "unknown": "Неизвестно",
+        "bonusValue": "{value} {stat}",
+        "owned": "Есть",
+        "ownedLabel": "Есть: {name}, {type}",
+        "domainWarning": "Текст бонуса домена есть в описании и не учитывается."
     }
-  },
-  "status": {
-    "showing": "Показано скинов: {shown} из {total}.",
-    "showingFiltered": "Показано скинов: {shown} из {total}. Фильтры: {filters}.",
-    "showMore": "{count, plural, one {Показать ещё {amount} скин} few {Показать ещё {amount} скина} many {Показать ещё {amount} скинов} other {Показать ещё {amount} скина}}"
-  },
-  "empty": {
-    "title": "Подходящих скинов нет",
-    "description": "Измените поиск или фильтры, чтобы увидеть скины.",
-    "reset": "Сбросить фильтры"
-  },
-  "card": {
-    "bonus": "Бонус",
-    "source": "Источник",
-    "unknown": "Неизвестно",
-    "bonusValue": "{value} {stat}",
-    "owned": "Есть",
-    "ownedLabel": "Есть: {name}, {type}",
-    "domainWarning": "Текст бонуса домена есть в описании и не учитывается."
-  }
 }

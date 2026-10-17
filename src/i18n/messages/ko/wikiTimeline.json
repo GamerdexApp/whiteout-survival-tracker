@@ -1,49 +1,49 @@
 {
-  "title": "서버 타임라인",
-  "line": "{first}일차부터 {last}일차까지 {rows, plural, other {이정표 {amount}개}}",
-  "subline": "서버 경과일별로 해금되는 항목이에요. 참고용이며 저장되지 않아요.",
-  "place": {
-    "label": "내 위치 표시 기준",
-    "option": "{name}, 약 {days}일차, 오차 {window}일",
-    "optionNoDate": "{name}, 서버 시작일 없음",
-    "jump": "내 위치로 이동"
-  },
-  "filters": {
-    "label": "표시",
-    "events": "이벤트 {amount}",
-    "features": "기능 {amount}",
-    "pets": "펫 {amount}",
-    "experts": "전문가 {amount}",
-    "heroes": "영웅 {amount}"
-  },
-  "help": "선은 서버 경과일이에요. 영웅은 오른쪽, 나머지는 왼쪽에 있어요. 내 위치는 영주에게 설정한 서버 시작일로 계산하며 오차는 {window}일이에요.",
-  "noChief": "아직 영주가 없어서 내 위치를 표시하지 않아요.",
-  "addChief": "영주 추가",
-  "noStartDate": "{name}에게 서버 시작일이 없어요. 시작일을 추가하면 선에서 내 위치를 볼 수 있어요.",
-  "editChief": "영주 편집",
-  "columns": {
-    "left": "이벤트, 기능, 펫, 전문가",
-    "right": "영웅"
-  },
-  "tags": {
-    "event": "이벤트",
-    "feature": "기능",
-    "pets": "펫",
-    "experts": "전문가"
-  },
-  "fireCrystalLevels": "Fire Crystal 레벨 {names}",
-  "heroGeneration": "영웅, {generation}세대",
-  "day": "{day}일차",
-  "status": {
-    "unlocked": "해금됨",
-    "near": "내 경과일 근처",
-    "future": "{count, plural, other {{amount}일 후}}"
-  },
-  "marker": {
-    "label": "현재 위치",
-    "title": "{name}, 서버 경과일 약 {days}일",
-    "window": "오차 {window}일: {from}일차부터 {to}일차"
-  },
-  "empty": "이 필터로 표시할 항목이 없어요.",
-  "source": "출처: 데이터 패키지의 서버 타임라인."
+    "title": "서버 타임라인",
+    "line": "{first}일차부터 {last}일차까지 {rows, plural, other {이정표 {amount}개}}",
+    "subline": "서버 경과일별로 해금되는 항목이에요. 참고용이며 저장되지 않아요.",
+    "place": {
+        "label": "내 위치 표시 기준",
+        "option": "{name}, 약 {days}일차, 오차 {window}일",
+        "optionNoDate": "{name}, 서버 시작일 없음",
+        "jump": "내 위치로 이동"
+    },
+    "filters": {
+        "label": "표시",
+        "events": "이벤트 {amount}",
+        "features": "기능 {amount}",
+        "pets": "펫 {amount}",
+        "experts": "전문가 {amount}",
+        "heroes": "영웅 {amount}"
+    },
+    "help": "선은 서버 경과일이에요. 영웅은 오른쪽, 나머지는 왼쪽에 있어요. 내 위치는 영주에게 설정한 서버 시작일로 계산하며 오차는 {window}일이에요.",
+    "noChief": "아직 영주가 없어서 내 위치를 표시하지 않아요.",
+    "addChief": "영주 추가",
+    "noStartDate": "{name}에게 서버 시작일이 없어요. 시작일을 추가하면 선에서 내 위치를 볼 수 있어요.",
+    "editChief": "영주 편집",
+    "columns": {
+        "left": "이벤트, 기능, 펫, 전문가",
+        "right": "영웅"
+    },
+    "tags": {
+        "event": "이벤트",
+        "feature": "기능",
+        "pets": "펫",
+        "experts": "전문가"
+    },
+    "fireCrystalLevels": "Fire Crystal 레벨 {names}",
+    "heroGeneration": "영웅, {generation}세대",
+    "day": "{day}일차",
+    "status": {
+        "unlocked": "해금됨",
+        "near": "내 경과일 근처",
+        "future": "{count, plural, other {{amount}일 후}}"
+    },
+    "marker": {
+        "label": "현재 위치",
+        "title": "{name}, 서버 경과일 약 {days}일",
+        "window": "오차 {window}일: {from}일차부터 {to}일차"
+    },
+    "empty": "이 필터로 표시할 항목이 없어요.",
+    "source": "출처: 데이터 패키지의 서버 타임라인."
 }

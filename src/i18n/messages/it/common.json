@@ -1,19 +1,19 @@
 {
-  "duration": {
-    "days": "{value}g",
-    "hours": "{value}h",
-    "minutes": "{value}m",
-    "seconds": "{value}s",
-    "zero": "0s",
-    "separator": " "
-  },
-  "timeLeft": {
-    "left": "{duration} rimanenti",
-    "ready": "Pronto da completare"
-  },
-  "saveFailed": {
-    "title": "Non salvato",
-    "message": "La memoria del browser è piena. Esporta subito un backup.",
-    "exportBackup": "Esporta backup"
-  }
+    "duration": {
+        "days": "{value}g",
+        "hours": "{value}h",
+        "minutes": "{value}m",
+        "seconds": "{value}s",
+        "zero": "0s",
+        "separator": " "
+    },
+    "timeLeft": {
+        "left": "{duration} rimanenti",
+        "ready": "Pronto da completare"
+    },
+    "saveFailed": {
+        "title": "Non salvato",
+        "message": "La memoria del browser è piena. Esporta subito un backup.",
+        "exportBackup": "Esporta backup"
+    }
 }

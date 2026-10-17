@@ -1,231 +1,231 @@
 {
-  "page": {
-    "title": "总览"
-  },
-  "header": {
-    "state": "State {number}",
-    "furnace": "Furnace {level}",
-    "serverAge": "服务器约开服{days}天",
-    "derived": "由你的其他页面汇总而成"
-  },
-  "tiles": {
-    "furnace": {
-      "label": "Furnace",
-      "steps": "第{order}步，共{total}步",
-      "unknown": "未知",
-      "unknownHint": "请在建筑页设置 Furnace"
+    "page": {
+        "title": "总览"
     },
-    "dailies": {
-      "label": "每日任务",
-      "value": "{done} / {total}",
-      "tasks": "今日已完成的我的任务",
-      "missions": "已完成的游戏内任务"
+    "header": {
+        "state": "State {number}",
+        "furnace": "Furnace {level}",
+        "serverAge": "服务器约开服{days}天",
+        "derived": "由你的其他页面汇总而成"
+    },
+    "tiles": {
+        "furnace": {
+            "label": "Furnace",
+            "steps": "第{order}步，共{total}步",
+            "unknown": "未知",
+            "unknownHint": "请在建筑页设置 Furnace"
+        },
+        "dailies": {
+            "label": "每日任务",
+            "value": "{done} / {total}",
+            "tasks": "今日已完成的我的任务",
+            "missions": "已完成的游戏内任务"
+        },
+        "events": {
+            "label": "活动",
+            "live": "{amount}个进行中",
+            "coreDay": "{event} {day}",
+            "moreThisWeek": "本周还有{amount}个",
+            "noneThisWeek": "本周没有"
+        },
+        "skins": {
+            "label": "皮肤",
+            "value": "{owned} / {total}",
+            "hint": "已拥有的皮肤"
+        },
+        "vip": {
+            "label": "VIP",
+            "value": "VIP {level}",
+            "unknown": "未知",
+            "hint": "根据你的 VIP 经验",
+            "unknownHint": "请在 VIP 页输入你的 VIP 经验"
+        },
+        "prosperity": {
+            "label": "岛屿繁荣度",
+            "possible": "上限{max}",
+            "locked": "未解锁",
+            "lockedHint": "需要 Furnace {level}"
+        },
+        "generation": {
+            "label": "英雄世代",
+            "allUnlocked": "所有世代均已解锁",
+            "shouldBeOpen": "第{next}代应已开放",
+            "onDay": "第{next}代于开服第{day}天",
+            "inDays": "第{next}代约{days}天后"
+        }
     },
     "events": {
-      "label": "活动",
-      "live": "{amount}个进行中",
-      "coreDay": "{event} {day}",
-      "moreThisWeek": "本周还有{amount}个",
-      "noneThisWeek": "本周没有"
+        "title": "活动",
+        "openCalendar": "打开日历",
+        "liveNow": "进行中",
+        "liveBadge": "进行中",
+        "nextUp": "接下来，来自你的活动页",
+        "coreLine": "第{day}天，共{count}天，{name}。核心活动",
+        "runLine": "{length}。进行中",
+        "empty": "尚未添加活动",
+        "addEvent": "添加活动",
+        "noLive": "目前没有进行中的活动。"
     },
-    "skins": {
-      "label": "皮肤",
-      "value": "{owned} / {total}",
-      "hint": "已拥有的皮肤"
+    "coreToday": {
+        "title": "今日{event}",
+        "open": "核心活动",
+        "dayLine": "{day}，{name}",
+        "plan": "今日计划{points}分",
+        "checklist": "清单",
+        "done": "已完成{done} / {total}",
+        "progress": "清单进度",
+        "noActions": "今天没有计划的行动。",
+        "castleSignedUp": "已报名{day}的 Castle 席位",
+        "castleOpen": "报名{day}的 Castle 席位",
+        "logLocked": "活动记录中有{locked} / {total}天已锁定。",
+        "todayLocked": "{day}已锁定。",
+        "todayOpen": "{day}尚未记录。",
+        "openChecklist": "打开清单",
+        "openLog": "打开活动记录"
     },
-    "vip": {
-      "label": "VIP",
-      "value": "VIP {level}",
-      "unknown": "未知",
-      "hint": "根据你的 VIP 经验",
-      "unknownHint": "请在 VIP 页输入你的 VIP 经验"
+    "queues": {
+        "title": "进行中的队列",
+        "running": "{count}个进行中",
+        "construction": "建造{number}",
+        "researchMain": "研究",
+        "researchWarAcademy": "War Academy",
+        "training": "训练{name}",
+        "learning": "学习中",
+        "task": {
+            "construction": "{name}到{level}",
+            "research": "{name}到{level}级",
+            "training": "{tier}部队",
+            "learning": "{name}，{skill}"
+        },
+        "idle": "空闲",
+        "idleBuildings": "空闲，请在建筑页点击开始升级",
+        "idleResearch": "空闲，请在研究页点击开始升级",
+        "progress": "{title}的进度"
     },
-    "prosperity": {
-      "label": "岛屿繁荣度",
-      "possible": "上限{max}",
-      "locked": "未解锁",
-      "lockedHint": "需要 Furnace {level}"
+    "lastResult": {
+        "title": "上次活动结果",
+        "open": "在历史中打开",
+        "days": "第 1 到 5 天。Battle Phase 单独计算。",
+        "plan": "计划",
+        "actual": "实际",
+        "difference": "差值",
+        "overall": "总排名",
+        "alliance": "联盟排名",
+        "upgrades": "已完成的计划升级",
+        "upgradesOf": "{done} / {total}"
     },
-    "generation": {
-      "label": "英雄世代",
-      "allUnlocked": "所有世代均已解锁",
-      "shouldBeOpen": "第{next}代应已开放",
-      "onDay": "第{next}代于开服第{day}天",
-      "inDays": "第{next}代约{days}天后"
+    "server": {
+        "title": "服务器天数",
+        "edit": "编辑领主",
+        "age": "约{days}天，上下浮动{tolerance}天",
+        "unknown": "未知。请在编辑领主中添加开服日期。",
+        "fromDate": "根据开服日期{date}。",
+        "warAcademy": "War Academy 研究",
+        "t12": "T12 研究",
+        "open": "已开放",
+        "opensIn": "约{days}天后开放",
+        "unknownUnlock": "未知",
+        "heroes": "英雄已解锁至",
+        "generation": "第{number}代",
+        "estimate": "解锁天数来自服务器时间线。如果你的服务器略有偏差，请在编辑领主中修改。",
+        "areas": {
+            "fireCrystal": "Fire Crystal 等级",
+            "pets": "宠物",
+            "experts": "专家"
+        },
+        "fcUpTo": "最高{level}",
+        "nothingYet": "暂无",
+        "countOf": "已解锁{unlocked} / {total}",
+        "allUnlocked": "已全部解锁。",
+        "generationName": "第{number}代",
+        "allGenerations": "所有世代均已解锁。",
+        "next": {
+            "withDate": "下一个：{names}，开服第{day}天，{date}。约{days}天后。",
+            "noDate": "下一个：{names}，开服第{day}天。约{days}天后。",
+            "unknownAge": "下一个：{names}，开服第{day}天。",
+            "passed": "按你的服务器天数，{names}应已开放，即开服第{day}天。请在编辑领主中调高该设置。"
+        }
+    },
+    "dailies": {
+        "title": "今日每日任务",
+        "open": "打开每日任务",
+        "activeness": "活跃度{now} / {top}",
+        "activenessBar": "今日活跃度",
+        "missions": "游戏内任务：已完成{done} / {total}",
+        "tasks": "我的任务{done} / {total}",
+        "tasksBar": "今日已完成的我的任务",
+        "stillOpen": "我的任务中仍未完成的，前{shown}个，共{total}个",
+        "allDone": "我的任务中的所有任务今天都已完成。",
+        "noTasks": "我的任务中还没有任务。"
+    },
+    "planner": {
+        "title": "规划缺口",
+        "short": "缺{amount}",
+        "covered": "没有缺口",
+        "goals": "目标来自{pages}。费用来自数据包，库存来自资源页。",
+        "noGoals": "尚未设定目标。请在建筑、研究等页面用计划设定目标。",
+        "pages": {
+            "buildings": "建筑",
+            "research": "研究",
+            "heroes": "英雄",
+            "troops": "部队",
+            "pets": "宠物",
+            "chiefGear": "领主装备",
+            "chiefCharms": "领主饰品"
+        },
+        "separator": "、",
+        "line": "需要{need} · 已有{have}",
+        "shortBy": "缺{amount}",
+        "enough": "足够",
+        "updateStock": "在资源页更新库存",
+        "incomplete": "某个目标等级在数据包中的费用为未知，因此这些合计不完整。"
+    },
+    "progress": {
+        "title": "各领域进度",
+        "hint": "已拥有或已升级的数量，对比数据包总数",
+        "count": "{owned} / {total}",
+        "furnace": "Furnace",
+        "furnaceOf": "{level} / {max}",
+        "furnaceUnknown": "未知",
+        "areas": {
+            "buildings": "建筑",
+            "heroes": "英雄",
+            "chiefGear": "领主装备",
+            "chiefCharms": "领主饰品",
+            "experts": "专家",
+            "pets": "宠物",
+            "research": "研究",
+            "allianceTech": "联盟科技",
+            "skins": "皮肤"
+        },
+        "locked": {
+            "daybreakIsland": "黎明岛",
+            "requirement": "未解锁。需要 Furnace {level}，还差{count, plural, other {{amount}级}}"
+        }
+    },
+    "power": {
+        "title": "战力",
+        "total": "总战力",
+        "complete": "当前战力与各组在你的解锁设置所开放的内容中全部升到最高等级时能提供的最大值对比。没有上限的组按现有值计入。",
+        "incomplete": "同样的对比。{count, plural, other {有{amount}项}}在数据中没有战力值，{count, plural, other {它们}}未计入。",
+        "groupWithoutValue": "{count, plural, other {有{amount}项}}在数据中没有战力值",
+        "groups": {
+            "buildings": "建筑",
+            "research": "研究",
+            "heroes": "英雄",
+            "heroGear": "英雄装备",
+            "chiefGear": "领主装备",
+            "chiefCharms": "领主饰品",
+            "experts": "专家",
+            "pets": "宠物",
+            "troops": "部队"
+        },
+        "ofPossible": "上限{possible}",
+        "totalProgress": "总战力与可达上限的对比",
+        "percentOfPossible": "达到可达上限的{percent}%",
+        "rowOfPossible": "{power} / {possible}",
+        "progress": "{group}战力与可达上限的对比",
+        "noMaximum": "没有上限，取决于你的输入",
+        "noCapNote": "部队和英雄装备没有上限，因此多训练部队、多提升英雄装备，总战力可以超过可达总值。两者在可达总值中都按现有值计入。"
     }
-  },
-  "events": {
-    "title": "活动",
-    "openCalendar": "打开日历",
-    "liveNow": "进行中",
-    "liveBadge": "进行中",
-    "nextUp": "接下来，来自你的活动页",
-    "coreLine": "第{day}天，共{count}天，{name}。核心活动",
-    "runLine": "{length}。进行中",
-    "empty": "尚未添加活动",
-    "addEvent": "添加活动",
-    "noLive": "目前没有进行中的活动。"
-  },
-  "coreToday": {
-    "title": "今日{event}",
-    "open": "核心活动",
-    "dayLine": "{day}，{name}",
-    "plan": "今日计划{points}分",
-    "checklist": "清单",
-    "done": "已完成{done} / {total}",
-    "progress": "清单进度",
-    "noActions": "今天没有计划的行动。",
-    "castleSignedUp": "已报名{day}的 Castle 席位",
-    "castleOpen": "报名{day}的 Castle 席位",
-    "logLocked": "活动记录中有{locked} / {total}天已锁定。",
-    "todayLocked": "{day}已锁定。",
-    "todayOpen": "{day}尚未记录。",
-    "openChecklist": "打开清单",
-    "openLog": "打开活动记录"
-  },
-  "queues": {
-    "title": "进行中的队列",
-    "running": "{count}个进行中",
-    "construction": "建造{number}",
-    "researchMain": "研究",
-    "researchWarAcademy": "War Academy",
-    "training": "训练{name}",
-    "learning": "学习中",
-    "task": {
-      "construction": "{name}到{level}",
-      "research": "{name}到{level}级",
-      "training": "{tier}部队",
-      "learning": "{name}，{skill}"
-    },
-    "idle": "空闲",
-    "idleBuildings": "空闲，请在建筑页点击开始升级",
-    "idleResearch": "空闲，请在研究页点击开始升级",
-    "progress": "{title}的进度"
-  },
-  "lastResult": {
-    "title": "上次活动结果",
-    "open": "在历史中打开",
-    "days": "第 1 到 5 天。Battle Phase 单独计算。",
-    "plan": "计划",
-    "actual": "实际",
-    "difference": "差值",
-    "overall": "总排名",
-    "alliance": "联盟排名",
-    "upgrades": "已完成的计划升级",
-    "upgradesOf": "{done} / {total}"
-  },
-  "server": {
-    "title": "服务器天数",
-    "edit": "编辑领主",
-    "age": "约{days}天，上下浮动{tolerance}天",
-    "unknown": "未知。请在编辑领主中添加开服日期。",
-    "fromDate": "根据开服日期{date}。",
-    "warAcademy": "War Academy 研究",
-    "t12": "T12 研究",
-    "open": "已开放",
-    "opensIn": "约{days}天后开放",
-    "unknownUnlock": "未知",
-    "heroes": "英雄已解锁至",
-    "generation": "第{number}代",
-    "estimate": "解锁天数来自服务器时间线。如果你的服务器略有偏差，请在编辑领主中修改。",
-    "areas": {
-      "fireCrystal": "Fire Crystal 等级",
-      "pets": "宠物",
-      "experts": "专家"
-    },
-    "fcUpTo": "最高{level}",
-    "nothingYet": "暂无",
-    "countOf": "已解锁{unlocked} / {total}",
-    "allUnlocked": "已全部解锁。",
-    "generationName": "第{number}代",
-    "allGenerations": "所有世代均已解锁。",
-    "next": {
-      "withDate": "下一个：{names}，开服第{day}天，{date}。约{days}天后。",
-      "noDate": "下一个：{names}，开服第{day}天。约{days}天后。",
-      "unknownAge": "下一个：{names}，开服第{day}天。",
-      "passed": "按你的服务器天数，{names}应已开放，即开服第{day}天。请在编辑领主中调高该设置。"
-    }
-  },
-  "dailies": {
-    "title": "今日每日任务",
-    "open": "打开每日任务",
-    "activeness": "活跃度{now} / {top}",
-    "activenessBar": "今日活跃度",
-    "missions": "游戏内任务：已完成{done} / {total}",
-    "tasks": "我的任务{done} / {total}",
-    "tasksBar": "今日已完成的我的任务",
-    "stillOpen": "我的任务中仍未完成的，前{shown}个，共{total}个",
-    "allDone": "我的任务中的所有任务今天都已完成。",
-    "noTasks": "我的任务中还没有任务。"
-  },
-  "planner": {
-    "title": "规划缺口",
-    "short": "缺{amount}",
-    "covered": "没有缺口",
-    "goals": "目标来自{pages}。费用来自数据包，库存来自资源页。",
-    "noGoals": "尚未设定目标。请在建筑、研究等页面用计划设定目标。",
-    "pages": {
-      "buildings": "建筑",
-      "research": "研究",
-      "heroes": "英雄",
-      "troops": "部队",
-      "pets": "宠物",
-      "chiefGear": "领主装备",
-      "chiefCharms": "领主饰品"
-    },
-    "separator": "、",
-    "line": "需要{need} · 已有{have}",
-    "shortBy": "缺{amount}",
-    "enough": "足够",
-    "updateStock": "在资源页更新库存",
-    "incomplete": "某个目标等级在数据包中的费用为未知，因此这些合计不完整。"
-  },
-  "progress": {
-    "title": "各领域进度",
-    "hint": "已拥有或已升级的数量，对比数据包总数",
-    "count": "{owned} / {total}",
-    "furnace": "Furnace",
-    "furnaceOf": "{level} / {max}",
-    "furnaceUnknown": "未知",
-    "areas": {
-      "buildings": "建筑",
-      "heroes": "英雄",
-      "chiefGear": "领主装备",
-      "chiefCharms": "领主饰品",
-      "experts": "专家",
-      "pets": "宠物",
-      "research": "研究",
-      "allianceTech": "联盟科技",
-      "skins": "皮肤"
-    },
-    "locked": {
-      "daybreakIsland": "黎明岛",
-      "requirement": "未解锁。需要 Furnace {level}，还差{count, plural, other {{amount}级}}"
-    }
-  },
-  "power": {
-    "title": "战力",
-    "total": "总战力",
-    "complete": "当前战力与各组在你的解锁设置所开放的内容中全部升到最高等级时能提供的最大值对比。没有上限的组按现有值计入。",
-    "incomplete": "同样的对比。{count, plural, other {有{amount}项}}在数据中没有战力值，{count, plural, other {它们}}未计入。",
-    "groupWithoutValue": "{count, plural, other {有{amount}项}}在数据中没有战力值",
-    "groups": {
-      "buildings": "建筑",
-      "research": "研究",
-      "heroes": "英雄",
-      "heroGear": "英雄装备",
-      "chiefGear": "领主装备",
-      "chiefCharms": "领主饰品",
-      "experts": "专家",
-      "pets": "宠物",
-      "troops": "部队"
-    },
-    "ofPossible": "上限{possible}",
-    "totalProgress": "总战力与可达上限的对比",
-    "percentOfPossible": "达到可达上限的{percent}%",
-    "rowOfPossible": "{power} / {possible}",
-    "progress": "{group}战力与可达上限的对比",
-    "noMaximum": "没有上限，取决于你的输入",
-    "noCapNote": "部队和英雄装备没有上限，因此多训练部队、多提升英雄装备，总战力可以超过可达总值。两者在可达总值中都按现有值计入。"
-  }
 }

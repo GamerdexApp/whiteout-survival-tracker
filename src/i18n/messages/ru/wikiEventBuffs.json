@@ -1,67 +1,67 @@
 {
-  "line": "Какие источники бонусов действуют в каждом из игровых режимов ({modes}): да, нет или частично для типов бонусов ({sources}).",
-  "matrix": {
-    "title": "Матрица бонусов",
-    "meta": "Режимов: {modes}, типов бонусов: {sources}",
-    "table": "Источники бонусов по игровым режимам",
-    "mode": "Игровой режим"
-  },
-  "sources": {
-    "cityBonusWarsBuffs": {
-      "short": "Бонус города",
-      "full": "Бонус города и бонусы войн"
+    "line": "Какие источники бонусов действуют в каждом из игровых режимов ({modes}): да, нет или частично для типов бонусов ({sources}).",
+    "matrix": {
+        "title": "Матрица бонусов",
+        "meta": "Режимов: {modes}, типов бонусов: {sources}",
+        "table": "Источники бонусов по игровым режимам",
+        "mode": "Игровой режим"
     },
-    "deploymentCapacity": {
-      "short": "Развёрт.",
-      "full": "Вместимость развёртывания"
+    "sources": {
+        "cityBonusWarsBuffs": {
+            "short": "Бонус города",
+            "full": "Бонус города и бонусы войн"
+        },
+        "deploymentCapacity": {
+            "short": "Развёрт.",
+            "full": "Вместимость развёртывания"
+        },
+        "petSkills": {
+            "short": "Питомцы",
+            "full": "Навыки питомцев"
+        },
+        "daybreakIsland": {
+            "short": "Daybreak",
+            "full": "Daybreak Island"
+        },
+        "presidentSkills": {
+            "short": "Президент",
+            "full": "Навыки президента"
+        },
+        "ministerBuff": {
+            "short": "Министр",
+            "full": "Бонус министра"
+        },
+        "territoryBonuses": {
+            "short": "Территория",
+            "full": "Бонусы территории"
+        },
+        "facilityBuff": {
+            "short": "Сооружение",
+            "full": "Бонус сооружения"
+        },
+        "marchAccelerator": {
+            "short": "Ускор. похода",
+            "full": "Ускоритель похода"
+        },
+        "frostdragonTyrantTitles": {
+            "short": "Tyrant",
+            "full": "Титулы Frostdragon Tyrant"
+        },
+        "frostSphereDomainBonus": {
+            "short": "Frost Sphere",
+            "full": "Бонус домена Frost Sphere"
+        }
     },
-    "petSkills": {
-      "short": "Питомцы",
-      "full": "Навыки питомцев"
+    "applicability": {
+        "yes": "Да",
+        "no": "Нет",
+        "partial": "Частично"
     },
-    "daybreakIsland": {
-      "short": "Daybreak",
-      "full": "Daybreak Island"
-    },
-    "presidentSkills": {
-      "short": "Президент",
-      "full": "Навыки президента"
-    },
-    "ministerBuff": {
-      "short": "Министр",
-      "full": "Бонус министра"
-    },
-    "territoryBonuses": {
-      "short": "Территория",
-      "full": "Бонусы территории"
-    },
-    "facilityBuff": {
-      "short": "Сооружение",
-      "full": "Бонус сооружения"
-    },
-    "marchAccelerator": {
-      "short": "Ускор. похода",
-      "full": "Ускоритель похода"
-    },
-    "frostdragonTyrantTitles": {
-      "short": "Tyrant",
-      "full": "Титулы Frostdragon Tyrant"
-    },
-    "frostSphereDomainBonus": {
-      "short": "Frost Sphere",
-      "full": "Бонус домена Frost Sphere"
+    "notes": {
+        "title": "Заметки по игровым режимам",
+        "table": "Заметки по игровым режимам",
+        "petSkillsAutoApplied": "Навыки питомцев применяются автоматически",
+        "note": "Заметка",
+        "noNote": "Нет"
     }
-  },
-  "applicability": {
-    "yes": "Да",
-    "no": "Нет",
-    "partial": "Частично"
-  },
-  "notes": {
-    "title": "Заметки по игровым режимам",
-    "table": "Заметки по игровым режимам",
-    "petSkillsAutoApplied": "Навыки питомцев применяются автоматически",
-    "note": "Заметка",
-    "noNote": "Нет"
-  }
 }

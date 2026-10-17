@@ -1,35 +1,35 @@
 {
-  "close": "Fermer",
-  "field": {
-    "optional": "Facultatif"
-  },
-  "stepper": {
-    "lower": "Diminuer {label}",
-    "raise": "Augmenter {label}",
-    "labelPrefix": "{label}, "
-  },
-  "switch": {
-    "on": "Activé",
-    "off": "Désactivé"
-  },
-  "tabs": {
-    "locked": " (verrouillé)"
-  },
-  "toast": {
-    "dismiss": "Ignorer",
-    "variants": {
-      "success": "Succès",
-      "info": "Info",
-      "warning": "Avertissement",
-      "error": "Erreur"
+    "close": "Fermer",
+    "field": {
+        "optional": "Facultatif"
     },
-    "missingProvider": "useToast must be used within a ToastProvider"
-  },
-  "savedChip": {
-    "automatic": "Enregistrement automatique",
-    "justNow": "Enregistré à l'instant",
-    "minutesAgo": "Enregistré il y a {count} min",
-    "at": "Enregistré {time}",
-    "failed": "Non enregistré, stockage plein"
-  }
+    "stepper": {
+        "lower": "Diminuer {label}",
+        "raise": "Augmenter {label}",
+        "labelPrefix": "{label}, "
+    },
+    "switch": {
+        "on": "Activé",
+        "off": "Désactivé"
+    },
+    "tabs": {
+        "locked": " (verrouillé)"
+    },
+    "toast": {
+        "dismiss": "Ignorer",
+        "variants": {
+            "success": "Succès",
+            "info": "Info",
+            "warning": "Avertissement",
+            "error": "Erreur"
+        },
+        "missingProvider": "useToast must be used within a ToastProvider"
+    },
+    "savedChip": {
+        "automatic": "Enregistrement automatique",
+        "justNow": "Enregistré à l'instant",
+        "minutesAgo": "Enregistré il y a {count} min",
+        "at": "Enregistré {time}",
+        "failed": "Non enregistré, stockage plein"
+    }
 }

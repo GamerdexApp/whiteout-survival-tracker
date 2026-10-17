@@ -1,282 +1,282 @@
 {
-  "title": "Bangunan",
-  "tabs": {
-    "buildings": "Bangunan",
-    "facilities": "Fasilitas"
-  },
-  "notBuilt": "Belum dibangun",
-  "built": "Terbangun",
-  "none": "Tidak ada",
-  "unknown": "Tidak diketahui",
-  "close": "Tutup",
-  "cancel": "Batal",
-  "undo": "Urungkan",
-  "ofTotal": "{count} dari {total}",
-  "noOtherRequirements": "Tanpa syarat lain",
-  "builderName": "Pembangun {number}",
-  "shelterName": "Shelter {number}",
-  "levelOf": "Level {name}",
-  "levelRange": "{from} ke {to}",
-  "requirement": {
-    "shelter": "{building} di level {level}",
-    "heroHall": "Hero Hall terbangun",
-    "level": "{building} {level}"
-  },
-  "columns": {
-    "building": "Bangunan",
-    "current": "Saat ini",
-    "goal": "Target",
-    "power": "Kekuatan",
-    "progress": "Progres dan level berikutnya",
-    "upgrade": "Upgrade"
-  },
-  "entry": {
-    "notes": {
-      "furnace": "Menjadi syarat semua bangunan lain",
-      "shelter": "Sampai 8 shelter, masing-masing dengan levelnya sendiri"
+    "title": "Bangunan",
+    "tabs": {
+        "buildings": "Bangunan",
+        "facilities": "Fasilitas"
     },
-    "subline": {
-      "size": "Maks {max} · {count} level",
-      "withNote": "{note} · {size}",
-      "single": "Satu bangunan · kekuatan {power}"
+    "notBuilt": "Belum dibangun",
+    "built": "Terbangun",
+    "none": "Tidak ada",
+    "unknown": "Tidak diketahui",
+    "close": "Tutup",
+    "cancel": "Batal",
+    "undo": "Urungkan",
+    "ofTotal": "{count} dari {total}",
+    "noOtherRequirements": "Tanpa syarat lain",
+    "builderName": "Pembangun {number}",
+    "shelterName": "Shelter {number}",
+    "levelOf": "Level {name}",
+    "levelRange": "{from} ke {to}",
+    "requirement": {
+        "shelter": "{building} di level {level}",
+        "heroHall": "Hero Hall terbangun",
+        "level": "{building} {level}"
     },
-    "progress": {
-      "requires": "Butuh {list}",
-      "noRequirements": "Tanpa syarat",
-      "maxLevel": "Level maks",
-      "blocked": "Terhalang: butuh {list}",
-      "needs": "Butuh {list}",
-      "levelAgeLocked": "Level tersimpan {level} belum terbuka di server ini. {text}",
-      "goalAgeLocked": "Target {goal} belum terbuka di server ini. {text}",
-      "nextAgeLocked": "Level berikutnya {level} terkunci. {text}"
+    "columns": {
+        "building": "Bangunan",
+        "current": "Saat ini",
+        "goal": "Target",
+        "power": "Kekuatan",
+        "progress": "Progres dan level berikutnya",
+        "upgrade": "Upgrade"
     },
-    "builtSwitch": "{name} terbangun",
+    "entry": {
+        "notes": {
+            "furnace": "Menjadi syarat semua bangunan lain",
+            "shelter": "Sampai 8 shelter, masing-masing dengan levelnya sendiri"
+        },
+        "subline": {
+            "size": "Maks {max} · {count} level",
+            "withNote": "{note} · {size}",
+            "single": "Satu bangunan · kekuatan {power}"
+        },
+        "progress": {
+            "requires": "Butuh {list}",
+            "noRequirements": "Tanpa syarat",
+            "maxLevel": "Level maks",
+            "blocked": "Terhalang: butuh {list}",
+            "needs": "Butuh {list}",
+            "levelAgeLocked": "Level tersimpan {level} belum terbuka di server ini. {text}",
+            "goalAgeLocked": "Target {goal} belum terbuka di server ini. {text}",
+            "nextAgeLocked": "Level berikutnya {level} terkunci. {text}"
+        },
+        "builtSwitch": "{name} terbangun",
+        "shelters": {
+            "none": "Belum ada yang dibangun",
+            "editLabel": "Shelter ({count}), ubah level",
+            "button": "Shelter ({count})"
+        },
+        "levels": "Level",
+        "levelsLabel": "Level {name}",
+        "upgrading": "{name} di-upgrade",
+        "startLabel": "Mulai upgrade {name}",
+        "start": "Mulai",
+        "startUpgrade": "Mulai upgrade",
+        "devIndex": "Indeks pengemb. {value}",
+        "powerLine": "Kekuatan {power} · Indeks pengemb. {index}",
+        "progressLabel": "Progres {name}"
+    },
+    "builders": {
+        "label": "Pembangun",
+        "hint": "Upgrade yang kamu mulai di sini tampil di Ringkasan sebagai antrean berjalan.",
+        "idle": "Tekan Mulai pada bangunan untuk memulai upgrade.",
+        "jobTitle": "{name}, {from} ke {to}",
+        "locked": "Terkunci",
+        "lockedText": "Pembangun kedua butuh Construction Pack.",
+        "lockedLink": "Aktifkan di Ubah Chief"
+    },
+    "upgrade": {
+        "option": "{subject}, {from} ke {to}",
+        "busy": "Sibuk: {name} ke {level}, {timeLeft}"
+    },
+    "facilities": {
+        "intro": "Fasilitas di kotamu. Tandai yang sudah kamu bangun. Ini fasilitas kota, bukan fasilitas aliansi di menu Aliansi.",
+        "builtLabel": "Fasilitas terbangun",
+        "unlockedLabel": "Terbuka di level Furnace-mu",
+        "requires": "Butuh Furnace {level}",
+        "unlocksAt": "Terbuka di Furnace {level}"
+    },
+    "tab": {
+        "intro": "Level saat ini dan target untuk setiap bangunan. Furnace menentukan batas bangunan lain.",
+        "searchLabel": "Cari bangunan",
+        "filters": "Filter",
+        "massEdit": "Ubah massal",
+        "startUpgrade": "Mulai upgrade",
+        "plan": "Rencana",
+        "status": "Menampilkan {shown} dari {total} bangunan. Target hanya bisa dibaca di sini dan diatur di Rencana. Target yang sama dengan level saat ini berarti tanpa target. Tombol tambah-kurang bergerak satu level sesuai urutan game.",
+        "groupPinned": "Disematkan",
+        "stats": {
+            "furnace": "Furnace, syarat semua bangunan lain",
+            "power": "Kekuatan saat ini, semua bangunan",
+            "developmentIndex": "Indeks pengembangan, semua bangunan",
+            "withGoal": "Bangunan dengan target",
+            "atMax": "Di level maks",
+            "entertainment": "Hiburan terbangun"
+        },
+        "empty": {
+            "title": "Tidak ada bangunan yang cocok",
+            "description": "Ubah pencarian atau atur ulang filter untuk melihat semua bangunan.",
+            "reset": "Atur ulang pencarian dan filter"
+        },
+        "start": {
+            "description": "Tandai bangunan sebagai sedang di-upgrade",
+            "selectLabel": "Bangunan yang di-upgrade",
+            "selectHelp": "Hanya bangunan yang bisa dimulai sekarang yang tercantum. Bangunan terkunci, maksimal, dan berjalan tidak disertakan. Tiap upgrade memakai salah satu dari dua pembangun.",
+            "timeLabel": "Waktu konstruksi",
+            "speedLabel": "Kecepatan konstruksi",
+            "slotLabel": "Pembangun",
+            "slotHelp": "Pilih pembangun yang kosong. Pembangun yang sibuk menampilkan kapan kosong."
+        },
+        "toasts": {
+            "started": {
+                "title": "Upgrade dimulai",
+                "message": "{name}, {subtitle}."
+            },
+            "finished": {
+                "title": "{name} di-upgrade",
+                "message": "Sekarang {level}. Ditambahkan ke Riwayat."
+            },
+            "cancelled": {
+                "title": "Upgrade {name} dibatalkan",
+                "message": "Level tetap seperti semula. Perbaiki stokmu di Sumber Daya jika perlu."
+            },
+            "massEdit": {
+                "title": "Ubah massal diterapkan",
+                "message": "{count, plural, other {{amount} bangunan}} diperbarui."
+            }
+        },
+        "manage": {
+            "finishText": "Selesaikan upgrade mengatur {name} ke {level}, mengosongkan Pembangun {builder}, dan menambah upgrade ke Riwayat. Saat sisa waktu nol, bangunan dan kartu pembangun menampilkan Siap diselesaikan. Tidak ada yang selesai sendiri, karena kamu mungkin memakai percepatan."
+        }
+    },
+    "filters": {
+        "title": "Filter",
+        "description": "Pilih yang ditampilkan daftar Bangunan",
+        "reset": "Atur ulang",
+        "show": "{count, plural, other {Tampilkan {amount} bangunan}}",
+        "category": "Kategori",
+        "categoryAll": "Semua, {count}",
+        "categoryOption": "{category}, {count}",
+        "showSection": "Tampilkan",
+        "hideMaxed": "Sembunyikan bangunan maksimal",
+        "hideLocked": "Sembunyikan bangunan terkunci",
+        "goalsOnly": "Hanya bangunan dengan target",
+        "order": "Urutan",
+        "orders": {
+            "game": "Urutan game, Furnace dulu",
+            "name": "Nama, A ke Z",
+            "progress": "Progres, terendah dulu"
+        },
+        "pinned": "Furnace tetap disematkan di atas apa pun filternya. Filter tidak disimpan."
+    },
+    "levels": {
+        "title": "Level",
+        "description": "{category} · Maks {max} · {count} level",
+        "noDescription": "Belum ada deskripsi di data.",
+        "current": "Level saat ini",
+        "goal": "Level target",
+        "nextNeeds": "Level berikutnya butuh",
+        "noGoal": "Tanpa target",
+        "tableNote": "Tabel ini hanya mencantumkan level setelah levelmu saat ini, karena yang lain sudah selesai.",
+        "maxed": "Level maks. Tidak ada lagi yang bisa di-upgrade.",
+        "nextAfter": "Level berikutnya setelah {level}",
+        "first": "Level pertama",
+        "level": "Level",
+        "time": "Waktu",
+        "power": "Kekuatan",
+        "capacity": "Kapasitas",
+        "requires": "Syarat",
+        "goalBadge": "Target",
+        "capacityNote": "Kapasitas hanya diatur pada baris tier dasar di paket data, jadi sub level tampil Tidak diketahui."
+    },
+    "massEdit": {
+        "title": "Ubah massal bangunan",
+        "description": "Atur banyak bangunan sekaligus. Tidak ada yang disimpan sampai kamu menekan Atur bangunan.",
+        "noChanges": "Belum ada perubahan",
+        "changes": "{count, plural, other {{amount} bangunan berubah}}",
+        "set": "{count, plural, other {Atur {amount} bangunan}}",
+        "raiseTitle": "Naikkan semua bangunan ke suatu level",
+        "raiseLabel": "Naikkan semua bangunan ke level",
+        "raiseAll": "Naikkan semua",
+        "raiseHint": "Tiap bangunan naik ke level tertingginya yang sama atau di bawah level ini. Bangunan yang sudah lebih tinggi tetap, dan yang mulai belakangan tetap belum dibangun. Target tidak berubah.",
+        "blockedTitle": "Beberapa bangunan butuh bangunan lain dulu.",
+        "blocked": "{count, plural, other {{amount} bangunan}} di atas batas yang diizinkan syaratnya.",
+        "lowerBlocked": "Turunkan ke yang diizinkan",
+        "levels": "Level",
+        "needsFirst": "Butuh {list} dulu",
+        "was": "dulu {level}",
+        "entertainment": "Hiburan",
+        "markAllBuilt": "Tandai semua terbangun",
+        "clearAll": "Hapus semua",
+        "footnote": "Ubah massal hanya mengubah level tersimpan. Tidak pernah menurunkan level sendiri dan tidak pernah mengubah target. Shelter punya level masing-masing, jadi atur dengan tombol Shelter, dan atur Hero Hall di tab Fasilitas."
+    },
     "shelters": {
-      "none": "Belum ada yang dibangun",
-      "editLabel": "Shelter ({count}), ubah level",
-      "button": "Shelter ({count})"
+        "title": "Shelter",
+        "description": "Sampai {max} bisa dibangun. Atur level masing-masing.",
+        "locked": "Shelter masih terkunci oleh level Furnace-mu.",
+        "empty": "Belum ada shelter.",
+        "power": "Kekuatan {power}",
+        "add": "Tambah shelter",
+        "remove": "Hapus Shelter {number}",
+        "allBuilt": "Semua {max} shelter terbangun.",
+        "furnaceNeeds": "Yang dibutuhkan Furnace-mu dari shelter",
+        "requirement": "Furnace {furnaceLevel} butuh Shelter {number} di level {level}.",
+        "met": "Terpenuhi.",
+        "notMet": "Belum terpenuhi.",
+        "footnote": "Rencana dan bilah progres memakai shelter terendahmu, yang berikutnya di-upgrade."
     },
-    "levels": "Level",
-    "levelsLabel": "Level {name}",
-    "upgrading": "{name} di-upgrade",
-    "startLabel": "Mulai upgrade {name}",
-    "start": "Mulai",
-    "startUpgrade": "Mulai upgrade",
-    "devIndex": "Indeks pengemb. {value}",
-    "powerLine": "Kekuatan {power} · Indeks pengemb. {index}",
-    "progressLabel": "Progres {name}"
-  },
-  "builders": {
-    "label": "Pembangun",
-    "hint": "Upgrade yang kamu mulai di sini tampil di Ringkasan sebagai antrean berjalan.",
-    "idle": "Tekan Mulai pada bangunan untuk memulai upgrade.",
-    "jobTitle": "{name}, {from} ke {to}",
-    "locked": "Terkunci",
-    "lockedText": "Pembangun kedua butuh Construction Pack.",
-    "lockedLink": "Aktifkan di Ubah Chief"
-  },
-  "upgrade": {
-    "option": "{subject}, {from} ke {to}",
-    "busy": "Sibuk: {name} ke {level}, {timeLeft}"
-  },
-  "facilities": {
-    "intro": "Fasilitas di kotamu. Tandai yang sudah kamu bangun. Ini fasilitas kota, bukan fasilitas aliansi di menu Aliansi.",
-    "builtLabel": "Fasilitas terbangun",
-    "unlockedLabel": "Terbuka di level Furnace-mu",
-    "requires": "Butuh Furnace {level}",
-    "unlocksAt": "Terbuka di Furnace {level}"
-  },
-  "tab": {
-    "intro": "Level saat ini dan target untuk setiap bangunan. Furnace menentukan batas bangunan lain.",
-    "searchLabel": "Cari bangunan",
-    "filters": "Filter",
-    "massEdit": "Ubah massal",
-    "startUpgrade": "Mulai upgrade",
-    "plan": "Rencana",
-    "status": "Menampilkan {shown} dari {total} bangunan. Target hanya bisa dibaca di sini dan diatur di Rencana. Target yang sama dengan level saat ini berarti tanpa target. Tombol tambah-kurang bergerak satu level sesuai urutan game.",
-    "groupPinned": "Disematkan",
-    "stats": {
-      "furnace": "Furnace, syarat semua bangunan lain",
-      "power": "Kekuatan saat ini, semua bangunan",
-      "developmentIndex": "Indeks pengembangan, semua bangunan",
-      "withGoal": "Bangunan dengan target",
-      "atMax": "Di level maks",
-      "entertainment": "Hiburan terbangun"
-    },
-    "empty": {
-      "title": "Tidak ada bangunan yang cocok",
-      "description": "Ubah pencarian atau atur ulang filter untuk melihat semua bangunan.",
-      "reset": "Atur ulang pencarian dan filter"
-    },
-    "start": {
-      "description": "Tandai bangunan sebagai sedang di-upgrade",
-      "selectLabel": "Bangunan yang di-upgrade",
-      "selectHelp": "Hanya bangunan yang bisa dimulai sekarang yang tercantum. Bangunan terkunci, maksimal, dan berjalan tidak disertakan. Tiap upgrade memakai salah satu dari dua pembangun.",
-      "timeLabel": "Waktu konstruksi",
-      "speedLabel": "Kecepatan konstruksi",
-      "slotLabel": "Pembangun",
-      "slotHelp": "Pilih pembangun yang kosong. Pembangun yang sibuk menampilkan kapan kosong."
-    },
-    "toasts": {
-      "started": {
-        "title": "Upgrade dimulai",
-        "message": "{name}, {subtitle}."
-      },
-      "finished": {
-        "title": "{name} di-upgrade",
-        "message": "Sekarang {level}. Ditambahkan ke Riwayat."
-      },
-      "cancelled": {
-        "title": "Upgrade {name} dibatalkan",
-        "message": "Level tetap seperti semula. Perbaiki stokmu di Sumber Daya jika perlu."
-      },
-      "massEdit": {
-        "title": "Ubah massal diterapkan",
-        "message": "{count, plural, other {{amount} bangunan}} diperbarui."
-      }
-    },
-    "manage": {
-      "finishText": "Selesaikan upgrade mengatur {name} ke {level}, mengosongkan Pembangun {builder}, dan menambah upgrade ke Riwayat. Saat sisa waktu nol, bangunan dan kartu pembangun menampilkan Siap diselesaikan. Tidak ada yang selesai sendiri, karena kamu mungkin memakai percepatan."
+    "plan": {
+        "title": "Rencanakan Bangunan",
+        "description": "Sumber daya, waktu, dan kekuatan dari level saat ini sampai target",
+        "saved": "Rencana disimpan {time}",
+        "save": "Simpan rencana",
+        "failed": "Rencana tidak bisa dihitung.",
+        "goalsHeading": "{count, plural, other {Target, {amount} bangunan}}",
+        "noGoals": "Belum ada target. Tambah bangunan di atas, lalu pilih level yang ingin dicapai.",
+        "prerequisiteNote": "Langkah prasyarat ditambahkan untukmu. Level yang butuh bangunan lain di level lebih tinggi menghitung langkah itu dan menandainya.",
+        "timeNote": "Rencana memakan {time} setelah bonus kecepatan {percent}%. Stokmu: Konstruksi {construction} mnt, Umum {general} mnt. Percepatan Umum dihitung untuk konstruksi.",
+        "add": {
+            "title": "Tambah bangunan",
+            "allAdded": "Semua bangunan sudah ada di rencana.",
+            "selectLabel": "Bangunan yang ditambah",
+            "button": "Tambah bangunan"
+        },
+        "speed": {
+            "title": "Kecepatan konstruksi",
+            "percent": "{value}%",
+            "plusPercent": "+{value}%",
+            "readOnly": "Hanya baca",
+            "bonusesOn": "Dibawa dari halaman Bonus.",
+            "bonusesOff": "Dimatikan di Pengaturan, di bawah Terapkan total Bonus-ku.",
+            "openBonuses": "Buka Bonus",
+            "appointment": "Keuntungan dan jabatan President",
+            "appointments": {
+                "none": "Tidak ada",
+                "regular": "Biasa",
+                "supreme": "Supreme"
+            },
+            "appointmentNote": "Biasa 10 persen, Supreme 15 persen. <strong>Perkiraan:</strong> paket data hanya menyebut nilai ini untuk riset.",
+            "petSkill": "Skill hewan peliharaan, Builder's Aide",
+            "petSkillNote": "Persennya berasal dari Cave Hyena di halaman Hewan Peliharaan, pada levelnya saat ini.",
+            "chiefOrder": "Chief order, Double Time",
+            "chiefOrderNote": "<strong>Perkiraan:</strong> menambah kecepatan konstruksi {percent} persen selama 5 menit. Paket data tidak punya data chief order, jadi nilainya diisi aplikasi dan diterapkan ke seluruh waktu.",
+            "total": "Total kecepatan konstruksi",
+            "petSkillNoteLocked": "Cave Hyena belum terbuka di halaman Hewan Peliharaan, jadi skill tidak menambah apa pun. Buka di sana untuk mengaktifkan ini."
+        },
+        "goal": {
+            "to": "ke",
+            "label": "Target {name}",
+            "remove": "Hapus {name} dari rencana"
+        },
+        "result": {
+            "title": "Hasil, {count} langkah",
+            "powerGained": "Kekuatan didapat",
+            "speedupMinutes": "Menit percepatan dibutuhkan",
+            "baseTime": "Waktu dasar",
+            "timeWithBonus": "Waktu dengan bonus {percent}%",
+            "eventPoints": "Poin event: SvS {svs}, King of Icefield {king} (<strong>Perkiraan</strong>, dari baris skor event).",
+            "prerequisite": "Prasyarat",
+            "steps": "{count, plural, other {{amount} langkah}}",
+            "unmetHeading": "Prasyarat belum terpenuhi",
+            "unmetNone": "Tidak ada untuk target ini. Bangunan di luar daftar, seperti Hero Hall, akan tampil di sini."
+        },
+        "export": {
+            "button": "Ekspor ke Core Events",
+            "empty": "Tambah target ke rencana untuk mengekspornya.",
+            "speedupMinutes": "Menit percepatan konstruksi",
+            "power": "Kekuatan didapat lewat konstruksi",
+            "stockDetail": "Rencana butuh {needed}, kamu punya {held}.",
+            "unscored": "Tidak ada event yang menskor {name}."
+        }
     }
-  },
-  "filters": {
-    "title": "Filter",
-    "description": "Pilih yang ditampilkan daftar Bangunan",
-    "reset": "Atur ulang",
-    "show": "{count, plural, other {Tampilkan {amount} bangunan}}",
-    "category": "Kategori",
-    "categoryAll": "Semua, {count}",
-    "categoryOption": "{category}, {count}",
-    "showSection": "Tampilkan",
-    "hideMaxed": "Sembunyikan bangunan maksimal",
-    "hideLocked": "Sembunyikan bangunan terkunci",
-    "goalsOnly": "Hanya bangunan dengan target",
-    "order": "Urutan",
-    "orders": {
-      "game": "Urutan game, Furnace dulu",
-      "name": "Nama, A ke Z",
-      "progress": "Progres, terendah dulu"
-    },
-    "pinned": "Furnace tetap disematkan di atas apa pun filternya. Filter tidak disimpan."
-  },
-  "levels": {
-    "title": "Level",
-    "description": "{category} · Maks {max} · {count} level",
-    "noDescription": "Belum ada deskripsi di data.",
-    "current": "Level saat ini",
-    "goal": "Level target",
-    "nextNeeds": "Level berikutnya butuh",
-    "noGoal": "Tanpa target",
-    "tableNote": "Tabel ini hanya mencantumkan level setelah levelmu saat ini, karena yang lain sudah selesai.",
-    "maxed": "Level maks. Tidak ada lagi yang bisa di-upgrade.",
-    "nextAfter": "Level berikutnya setelah {level}",
-    "first": "Level pertama",
-    "level": "Level",
-    "time": "Waktu",
-    "power": "Kekuatan",
-    "capacity": "Kapasitas",
-    "requires": "Syarat",
-    "goalBadge": "Target",
-    "capacityNote": "Kapasitas hanya diatur pada baris tier dasar di paket data, jadi sub level tampil Tidak diketahui."
-  },
-  "massEdit": {
-    "title": "Ubah massal bangunan",
-    "description": "Atur banyak bangunan sekaligus. Tidak ada yang disimpan sampai kamu menekan Atur bangunan.",
-    "noChanges": "Belum ada perubahan",
-    "changes": "{count, plural, other {{amount} bangunan berubah}}",
-    "set": "{count, plural, other {Atur {amount} bangunan}}",
-    "raiseTitle": "Naikkan semua bangunan ke suatu level",
-    "raiseLabel": "Naikkan semua bangunan ke level",
-    "raiseAll": "Naikkan semua",
-    "raiseHint": "Tiap bangunan naik ke level tertingginya yang sama atau di bawah level ini. Bangunan yang sudah lebih tinggi tetap, dan yang mulai belakangan tetap belum dibangun. Target tidak berubah.",
-    "blockedTitle": "Beberapa bangunan butuh bangunan lain dulu.",
-    "blocked": "{count, plural, other {{amount} bangunan}} di atas batas yang diizinkan syaratnya.",
-    "lowerBlocked": "Turunkan ke yang diizinkan",
-    "levels": "Level",
-    "needsFirst": "Butuh {list} dulu",
-    "was": "dulu {level}",
-    "entertainment": "Hiburan",
-    "markAllBuilt": "Tandai semua terbangun",
-    "clearAll": "Hapus semua",
-    "footnote": "Ubah massal hanya mengubah level tersimpan. Tidak pernah menurunkan level sendiri dan tidak pernah mengubah target. Shelter punya level masing-masing, jadi atur dengan tombol Shelter, dan atur Hero Hall di tab Fasilitas."
-  },
-  "shelters": {
-    "title": "Shelter",
-    "description": "Sampai {max} bisa dibangun. Atur level masing-masing.",
-    "locked": "Shelter masih terkunci oleh level Furnace-mu.",
-    "empty": "Belum ada shelter.",
-    "power": "Kekuatan {power}",
-    "add": "Tambah shelter",
-    "remove": "Hapus Shelter {number}",
-    "allBuilt": "Semua {max} shelter terbangun.",
-    "furnaceNeeds": "Yang dibutuhkan Furnace-mu dari shelter",
-    "requirement": "Furnace {furnaceLevel} butuh Shelter {number} di level {level}.",
-    "met": "Terpenuhi.",
-    "notMet": "Belum terpenuhi.",
-    "footnote": "Rencana dan bilah progres memakai shelter terendahmu, yang berikutnya di-upgrade."
-  },
-  "plan": {
-    "title": "Rencanakan Bangunan",
-    "description": "Sumber daya, waktu, dan kekuatan dari level saat ini sampai target",
-    "saved": "Rencana disimpan {time}",
-    "save": "Simpan rencana",
-    "failed": "Rencana tidak bisa dihitung.",
-    "goalsHeading": "{count, plural, other {Target, {amount} bangunan}}",
-    "noGoals": "Belum ada target. Tambah bangunan di atas, lalu pilih level yang ingin dicapai.",
-    "prerequisiteNote": "Langkah prasyarat ditambahkan untukmu. Level yang butuh bangunan lain di level lebih tinggi menghitung langkah itu dan menandainya.",
-    "timeNote": "Rencana memakan {time} setelah bonus kecepatan {percent}%. Stokmu: Konstruksi {construction} mnt, Umum {general} mnt. Percepatan Umum dihitung untuk konstruksi.",
-    "add": {
-      "title": "Tambah bangunan",
-      "allAdded": "Semua bangunan sudah ada di rencana.",
-      "selectLabel": "Bangunan yang ditambah",
-      "button": "Tambah bangunan"
-    },
-    "speed": {
-      "title": "Kecepatan konstruksi",
-      "percent": "{value}%",
-      "plusPercent": "+{value}%",
-      "readOnly": "Hanya baca",
-      "bonusesOn": "Dibawa dari halaman Bonus.",
-      "bonusesOff": "Dimatikan di Pengaturan, di bawah Terapkan total Bonus-ku.",
-      "openBonuses": "Buka Bonus",
-      "appointment": "Keuntungan dan jabatan President",
-      "appointments": {
-        "none": "Tidak ada",
-        "regular": "Biasa",
-        "supreme": "Supreme"
-      },
-      "appointmentNote": "Biasa 10 persen, Supreme 15 persen. <strong>Perkiraan:</strong> paket data hanya menyebut nilai ini untuk riset.",
-      "petSkill": "Skill hewan peliharaan, Builder's Aide",
-      "petSkillNote": "Persennya berasal dari Cave Hyena di halaman Hewan Peliharaan, pada levelnya saat ini.",
-      "chiefOrder": "Chief order, Double Time",
-      "chiefOrderNote": "<strong>Perkiraan:</strong> menambah kecepatan konstruksi {percent} persen selama 5 menit. Paket data tidak punya data chief order, jadi nilainya diisi aplikasi dan diterapkan ke seluruh waktu.",
-      "total": "Total kecepatan konstruksi",
-      "petSkillNoteLocked": "Cave Hyena belum terbuka di halaman Hewan Peliharaan, jadi skill tidak menambah apa pun. Buka di sana untuk mengaktifkan ini."
-    },
-    "goal": {
-      "to": "ke",
-      "label": "Target {name}",
-      "remove": "Hapus {name} dari rencana"
-    },
-    "result": {
-      "title": "Hasil, {count} langkah",
-      "powerGained": "Kekuatan didapat",
-      "speedupMinutes": "Menit percepatan dibutuhkan",
-      "baseTime": "Waktu dasar",
-      "timeWithBonus": "Waktu dengan bonus {percent}%",
-      "eventPoints": "Poin event: SvS {svs}, King of Icefield {king} (<strong>Perkiraan</strong>, dari baris skor event).",
-      "prerequisite": "Prasyarat",
-      "steps": "{count, plural, other {{amount} langkah}}",
-      "unmetHeading": "Prasyarat belum terpenuhi",
-      "unmetNone": "Tidak ada untuk target ini. Bangunan di luar daftar, seperti Hero Hall, akan tampil di sini."
-    },
-    "export": {
-      "button": "Ekspor ke Core Events",
-      "empty": "Tambah target ke rencana untuk mengekspornya.",
-      "speedupMinutes": "Menit percepatan konstruksi",
-      "power": "Kekuatan didapat lewat konstruksi",
-      "stockDetail": "Rencana butuh {needed}, kamu punya {held}.",
-      "unscored": "Tidak ada event yang menskor {name}."
-    }
-  }
 }

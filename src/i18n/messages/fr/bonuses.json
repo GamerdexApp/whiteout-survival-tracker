@@ -1,115 +1,115 @@
 {
-  "title": "Bonus",
-  "all": "Tous",
-  "list": {
-    "separator": ", ",
-    "andLast": "{rest} et {last}"
-  },
-  "sourceTypes": {
-    "account": "Compte",
-    "hero": "Héros",
-    "expert": "Experts",
-    "research": "Recherche",
-    "allianceTech": "Technologie d'alliance",
-    "allianceFacility": "Installations d'alliance",
-    "alliancePrestige": "Bâtiments de prestige d'alliance",
-    "vip": "VIP",
-    "building": "Bâtiments",
-    "skin": "Skins",
-    "tundraAlbum": "Tundra Album",
-    "collection": "Collection",
-    "decoration": "My Island",
-    "treeOfLife": "My Island",
-    "castleAppointment": "Poste au château",
-    "pet": "Familiers",
-    "chiefGear": "Équipement du chef",
-    "chiefGearSet": "Bonus de set d'équipement du chef",
-    "chiefCharm": "Charmes du chef",
-    "chiefOrder": "Ordres du chef",
-    "presidentSkill": "Compétences du président",
-    "marchQueuePack": "le pack March Queue"
-  },
-  "unit": {
-    "percent": "{value} %",
-    "hours": "{value} h",
-    "seconds": "{value} s",
-    "plain": "{value}"
-  },
-  "view": {
-    "subline": "{name} · tous les bonus additionnés à partir des autres pages. Cette page ne stocke rien.",
-    "tiles": {
-      "stats": "Stats dans le résultat",
-      "groups": "Groupes avec des stats",
-      "sources": "Types de source qui apportent quelque chose"
+    "title": "Bonus",
+    "all": "Tous",
+    "list": {
+        "separator": ", ",
+        "andLast": "{rest} et {last}"
     },
-    "pending": {
-      "title": "Toutes les sources ne sont pas encore comptées.",
-      "text": "Chaque source ci-dessous est lue depuis la page qui la stocke. Tant que ces pages ne sont pas créées, elles n'ajoutent rien : {pending}. {unstored} ne sont stockées par aucune page pour l'instant."
+    "sourceTypes": {
+        "account": "Compte",
+        "hero": "Héros",
+        "expert": "Experts",
+        "research": "Recherche",
+        "allianceTech": "Technologie d'alliance",
+        "allianceFacility": "Installations d'alliance",
+        "alliancePrestige": "Bâtiments de prestige d'alliance",
+        "vip": "VIP",
+        "building": "Bâtiments",
+        "skin": "Skins",
+        "tundraAlbum": "Tundra Album",
+        "collection": "Collection",
+        "decoration": "My Island",
+        "treeOfLife": "My Island",
+        "castleAppointment": "Poste au château",
+        "pet": "Familiers",
+        "chiefGear": "Équipement du chef",
+        "chiefGearSet": "Bonus de set d'équipement du chef",
+        "chiefCharm": "Charmes du chef",
+        "chiefOrder": "Ordres du chef",
+        "presidentSkill": "Compétences du président",
+        "marchQueuePack": "le pack March Queue"
     },
-    "rulesTitle": "Comment les chiffres sont comptés",
-    "rules": {
-      "affinity": {
-        "title": "Affinité des experts",
-        "text": "Un expert donne un bonus de base qui augmente avec le niveau d'affinité. Aux niveaux 10, 20 jusqu'à 100, l'expert doit progresser. D'ici là, le bonus du niveau précédent s'applique."
-      },
-      "albums": {
-        "title": "Les albums comptent une fois complets",
-        "text": "Un Tundra Album ne donne son bonus que lorsque les 9 puzzles sont terminés."
-      },
-      "pets": {
-        "title": "Les familiers utilisent la valeur raffinée",
-        "text": "Chaque familier compte sa valeur normale ou raffinée, selon votre choix sur la page Familiers."
-      },
-      "noNumber": {
-        "title": "Pas de chiffre, pas de comptage",
-        "text": "Une source sans chiffre dans les données n'ajoute rien. Elle n'est pas affichée comme 0."
-      },
-      "apart": {
-        "title": "Gardés séparés",
-        "text": "Les valeurs en pourcentage et les valeurs fixes ne sont jamais additionnées. Les stats d'Infantry, Lancer et Marksman sont séparées des stats de Troupes."
-      },
-      "time": {
-        "title": "Stats de temps",
-        "text": "Construction Speed Boost correspond aux heures économisées par construction. Ally Help Time est en secondes. Chacun affiche son unité."
-      }
+    "unit": {
+        "percent": "{value} %",
+        "hours": "{value} h",
+        "seconds": "{value} s",
+        "plain": "{value}"
     },
-    "search": {
-      "label": "Rechercher des stats",
-      "placeholder": "Rechercher des stats"
+    "view": {
+        "subline": "{name} · tous les bonus additionnés à partir des autres pages. Cette page ne stocke rien.",
+        "tiles": {
+            "stats": "Stats dans le résultat",
+            "groups": "Groupes avec des stats",
+            "sources": "Types de source qui apportent quelque chose"
+        },
+        "pending": {
+            "title": "Toutes les sources ne sont pas encore comptées.",
+            "text": "Chaque source ci-dessous est lue depuis la page qui la stocke. Tant que ces pages ne sont pas créées, elles n'ajoutent rien : {pending}. {unstored} ne sont stockées par aucune page pour l'instant."
+        },
+        "rulesTitle": "Comment les chiffres sont comptés",
+        "rules": {
+            "affinity": {
+                "title": "Affinité des experts",
+                "text": "Un expert donne un bonus de base qui augmente avec le niveau d'affinité. Aux niveaux 10, 20 jusqu'à 100, l'expert doit progresser. D'ici là, le bonus du niveau précédent s'applique."
+            },
+            "albums": {
+                "title": "Les albums comptent une fois complets",
+                "text": "Un Tundra Album ne donne son bonus que lorsque les 9 puzzles sont terminés."
+            },
+            "pets": {
+                "title": "Les familiers utilisent la valeur raffinée",
+                "text": "Chaque familier compte sa valeur normale ou raffinée, selon votre choix sur la page Familiers."
+            },
+            "noNumber": {
+                "title": "Pas de chiffre, pas de comptage",
+                "text": "Une source sans chiffre dans les données n'ajoute rien. Elle n'est pas affichée comme 0."
+            },
+            "apart": {
+                "title": "Gardés séparés",
+                "text": "Les valeurs en pourcentage et les valeurs fixes ne sont jamais additionnées. Les stats d'Infantry, Lancer et Marksman sont séparées des stats de Troupes."
+            },
+            "time": {
+                "title": "Stats de temps",
+                "text": "Construction Speed Boost correspond aux heures économisées par construction. Ally Help Time est en secondes. Chacun affiche son unité."
+            }
+        },
+        "search": {
+            "label": "Rechercher des stats",
+            "placeholder": "Rechercher des stats"
+        },
+        "views": {
+            "label": "Vue",
+            "stat": "Par stat",
+            "source": "Par source"
+        },
+        "empty": {
+            "noBonusesTitle": "Aucun bonus pour l'instant",
+            "noBonusesDescription": "Les bonus apparaissent au fur et à mesure que les pages qui les stockent sont remplies.",
+            "noMatchTitle": "Aucune stat ne correspond",
+            "noMatchDescription": "Modifiez la recherche ou le groupe."
+        },
+        "statCount": "{count, plural, one {{amount} stat} other {{amount} stats}}",
+        "sourceCount": "{count, plural, one {{amount} source} other {{amount} sources}}",
+        "columns": {
+            "statAndSource": "Stat et source",
+            "sourceType": "Type de source",
+            "counted": "Compté"
+        }
     },
-    "views": {
-      "label": "Vue",
-      "stat": "Par stat",
-      "source": "Par source"
-    },
-    "empty": {
-      "noBonusesTitle": "Aucun bonus pour l'instant",
-      "noBonusesDescription": "Les bonus apparaissent au fur et à mesure que les pages qui les stockent sont remplies.",
-      "noMatchTitle": "Aucune stat ne correspond",
-      "noMatchDescription": "Modifiez la recherche ou le groupe."
-    },
-    "statCount": "{count, plural, one {{amount} stat} other {{amount} stats}}",
-    "sourceCount": "{count, plural, one {{amount} source} other {{amount} sources}}",
-    "columns": {
-      "statAndSource": "Stat et source",
-      "sourceType": "Type de source",
-      "counted": "Compté"
+    "eventRules": {
+        "title": "Règles des bonus en événement",
+        "intro": "Indique quels types de bonus s'appliquent encore pendant un événement. Ce sont des règles, pas des chiffres, donc rien ici n'est ajouté aux totaux ci-dessus.",
+        "event": "Événement",
+        "columns": {
+            "cityBonusWarsBuffs": "Bonus de ville",
+            "deploymentCapacity": "Déploiement",
+            "territoryBonuses": "Territoire",
+            "marchAccelerator": "Accél. marche"
+        },
+        "applicability": {
+            "yes": "Oui",
+            "no": "Non",
+            "partial": "Partiel"
+        }
     }
-  },
-  "eventRules": {
-    "title": "Règles des bonus en événement",
-    "intro": "Indique quels types de bonus s'appliquent encore pendant un événement. Ce sont des règles, pas des chiffres, donc rien ici n'est ajouté aux totaux ci-dessus.",
-    "event": "Événement",
-    "columns": {
-      "cityBonusWarsBuffs": "Bonus de ville",
-      "deploymentCapacity": "Déploiement",
-      "territoryBonuses": "Territoire",
-      "marchAccelerator": "Accél. marche"
-    },
-    "applicability": {
-      "yes": "Oui",
-      "no": "Non",
-      "partial": "Partiel"
-    }
-  }
 }

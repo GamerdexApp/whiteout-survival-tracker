@@ -1,262 +1,262 @@
 {
-  "page": {
-    "title": "Pahlawan"
-  },
-  "view": {
-    "tabsLabel": "Pahlawan",
-    "heroesTab": "Pahlawan",
-    "gearTab": "Perlengkapan Pahlawan",
-    "heroesSubline": "{chief} · {owned} dari {total} dimiliki",
-    "gearSubline": "{chief} · {count, plural, other {{amount} set perlengkapan}}"
-  },
-  "common": {
-    "owned": "Dimiliki",
-    "ownedLabel": "{hero} dimiliki",
-    "starLabel": "Bintang {hero}",
-    "levelLabel": "Level {hero}",
-    "talentLabel": "Bakat {hero}",
-    "skillLabel": "{hero} {skill}",
-    "weaponLevelLabel": "Level {weapon} {hero}",
-    "shardsOwnedLabel": "Pecahan {hero} dimiliki",
-    "starAndTier": "Bintang dan tier",
-    "level": "Level",
-    "noGoal": "Tanpa target",
-    "shards": "Pecahan",
-    "totalPower": "Total kekuatan",
-    "unknown": "Tidak diketahui",
-    "plan": "Rencana",
-    "generation": "Gen {generation}",
-    "exploration": "Eksplorasi",
-    "expedition": "Ekspedisi",
-    "talent": "Bakat",
-    "maxLevelSuffix": "/ {max}",
-    "heroCount": "{count, plural, other {{amount} pahlawan}}"
-  },
-  "goalText": {
-    "to": "ke {goal}"
-  },
-  "card": {
-    "summary": "{rarity} · {heroClass} · {generation}",
-    "talentRow": "Bakat {name}",
-    "shardsOf": "dari {needed}",
-    "enoughShards": " Pecahan cukup",
-    "shortBy": " Kurang {amount}",
-    "gearSet": "Set perlengkapan",
-    "notOwnedHint": "Aktifkan Dimiliki untuk melacak bintang, level, dan skill.",
-    "details": "Detail"
-  },
-  "tab": {
-    "stats": {
-      "generations": "Generasi terbuka",
-      "generationsValue": "0 sampai {max}",
-      "heroesOwned": "Pahlawan dimiliki dari yang terbuka",
-      "legendaryOwned": "Legendary dimiliki dari yang terbuka",
-      "atMaxLevel": "Di level 80",
-      "heroPower": "Kekuatan pahlawan",
-      "heroPowerUnknown": "Kekuatan pahlawan, {amount} Tidak diketahui tidak dihitung",
-      "withGoal": "Dengan target"
+    "page": {
+        "title": "Pahlawan"
     },
-    "search": {
-      "label": "Cari pahlawan",
-      "placeholder": "Cari {amount} pahlawan menurut nama"
+    "view": {
+        "tabsLabel": "Pahlawan",
+        "heroesTab": "Pahlawan",
+        "gearTab": "Perlengkapan Pahlawan",
+        "heroesSubline": "{chief} · {owned} dari {total} dimiliki",
+        "gearSubline": "{chief} · {count, plural, other {{amount} set perlengkapan}}"
     },
-    "filters": "Filter",
-    "maxOut": "Maksimalkan",
-    "status": "Menampilkan {shown} dari {total} pahlawan. Generasi 0 sampai {max} terbuka di Chief ini. Target hanya bisa dibaca di sini dan diatur di Rencana.",
-    "empty": {
-      "title": "Tidak ada pahlawan yang cocok",
-      "description": "Ubah pencarian atau atur ulang filter untuk melihat semua pahlawan.",
-      "reset": "Atur ulang"
-    },
-    "showMore": "Tampilkan lagi, {amount} {count, plural, other {pahlawan}} lagi",
-    "toast": {
-      "notOwnedTitle": "{name} tidak dimiliki",
-      "notOwnedMessage": "Bintang, level, dan skill-nya tetap tersimpan sampai kamu mengaktifkan Dimiliki lagi.",
-      "undo": "Urungkan",
-      "maxedTitle": "Pahlawan dimaksimalkan",
-      "maxedMessage": "{heroes} diperbarui."
-    }
-  },
-  "filtersFlyout": {
-    "title": "Filter",
-    "description": "Pilih pahlawan yang ditampilkan halaman",
-    "reset": "Atur ulang",
-    "show": "Tampilkan {heroes}",
-    "all": "Semua",
-    "generation": "Generasi",
-    "rarity": "Kelangkaan",
-    "heroClass": "Kelas",
-    "ownership": "Kepemilikan",
-    "order": "Urutan",
-    "notSaved": "Filter tidak disimpan.",
-    "rarities": {
-      "Legendary": "Legendary",
-      "Epic": "Epic",
-      "Rare": "Rare"
-    },
-    "classes": {
-      "Infantry": "Infanteri",
-      "Lancer": "Lancer",
-      "Marksman": "Marksman"
-    },
-    "ownershipOptions": {
-      "all": "Semua",
-      "owned": "Dimiliki",
-      "notOwned": "Belum dimiliki"
-    },
-    "orderOptions": {
-      "owned": "Dimiliki dulu, lalu generasi terbaru",
-      "generation": "Generasi, terbaru dulu",
-      "name": "Nama, A ke Z",
-      "power": "Total kekuatan, tertinggi dulu"
-    }
-  },
-  "maxOut": {
-    "title": "Maksimalkan pahlawan",
-    "scopeLabel": "Pahlawan yang dimaksimalkan",
-    "scope": {
-      "owned": "Pahlawan yang dimiliki",
-      "unlocked": "Semua pahlawan terbuka, ditandai dimiliki",
-      "selected": "Pilih pahlawan, ditandai dimiliki"
-    },
-    "searchLabel": "Cari pahlawan untuk dipilih",
-    "searchPlaceholder": "Cari pahlawan menurut nama",
-    "selectShown": "Pilih yang tampil",
-    "clear": "Hapus",
-    "ownedTag": "dimiliki",
-    "starAndTier": "Bintang dan tier sampai 5.0",
-    "level": "Level sampai 80",
-    "levelHint": "Matikan jika skill sudah maksimal dan level pahlawan lama tetap di 1.",
-    "skills": "Skill sampai 5",
-    "skillsHint": "Eksplorasi, Ekspedisi, dan Bakat.",
-    "weapon": "Senjata eksklusif sampai 10",
-    "note": "Yang dimatikan tetap seperti adanya. Jumlah pecahan dan target tidak berubah. Kamu bisa mengurungkan setelah diterapkan.",
-    "cancel": "Batal",
-    "apply": "Maksimalkan {heroes}"
-  },
-  "flyout": {
-    "fallbackTitle": "Pahlawan",
-    "description": "{heroClass} {rarity}, generasi {generation}",
-    "done": "Selesai",
-    "status": {
-      "title": "Status",
-      "furnaceNeeded": "Furnace dibutuhkan untuk level {level}",
-      "met": "Terpenuhi",
-      "needsFurnace": "Butuh Furnace {required}",
-      "levelPower": "Kekuatan level",
-      "skillPower": "Kekuatan skill",
-      "starPower": "Kekuatan bintang",
-      "weaponPower": "Kekuatan senjata",
-      "totalPower": "Total kekuatan",
-      "note": "Kekuatan menghitung level, skill, label bintang, dan level senjata."
-    },
-    "skills": {
-      "title": "Skill",
-      "aside": "Lima level per skill",
-      "toLevel": "Ke {level}: {manuals} manual",
-      "needsStar": "Butuh bintang {star}",
-      "starMet": "Bintang {star} terpenuhi",
-      "talentTop": "Bakat sudah di level tertinggi.",
-      "talentNeedsStar": "Level {level} butuh bintang {star}",
-      "talentStarMet": "Level {level}: bintang {star} terpenuhi"
-    },
-    "weapon": {
-      "title": "Senjata eksklusif: {name}",
-      "level": "Level senjata",
-      "widgetsForLevel": "Widget untuk level {level}",
-      "widgetsForLevels": "Widget untuk level {from} sampai {to}",
-      "expeditionBonus": "Bonus ekspedisi",
-      "bonus": "Lethality {lethality}% · Darah {health}%",
-      "power": "Kekuatan senjata",
-      "unlocksAt": "Terbuka di level senjata {level}"
-    },
-    "shards": {
-      "title": "Pecahan",
-      "owned": "Pecahan dimiliki",
-      "goal": "Target",
-      "neededForGoal": "Dibutuhkan untuk target {goal}",
-      "enough": "Pecahan cukup",
-      "shortBy": "Kurang",
-      "yes": "Ya",
-      "sources": "Sumber pecahan"
-    },
-    "stats": {
-      "title": "Statistik di level 80",
-      "explorationAt": "Eksplorasi di {stars}",
-      "expeditionAt": "Ekspedisi di {stars}",
-      "explorationFull": "Eksplorasi di 5.0",
-      "expeditionFull": "Ekspedisi di 5.0",
-      "exploration": "Atk {attack} · Def {defense} · HP {health}",
-      "expedition": "Atk {attack}% · Def {defense}%",
-      "estimate": "Perkiraan"
-    }
-  },
-  "plan": {
-    "title": "Rencanakan Pahlawan",
-    "description": "Pecahan, manual skill, dan Widget dari saat ini sampai target",
-    "saved": "Rencana disimpan {date}",
-    "close": "Tutup",
-    "save": "Simpan rencana",
-    "noHeroes": "Belum ada pahlawan di rencana. Tambah pahlawan yang dimiliki di atas, lalu naikkan targetnya.",
-    "add": {
-      "title": "Tambah pahlawan",
-      "allIn": "Semua pahlawan yang dimiliki sudah ada di rencana. Aktifkan Dimiliki untuk pahlawan agar bisa direncanakan.",
-      "selectLabel": "Pahlawan yang ditambah",
-      "button": "Tambah pahlawan"
-    },
-    "block": {
-      "remove": "Hapus {hero} dari rencana",
-      "starTo": "{stars} ke",
-      "starGoal": "Target bintang {hero}",
-      "levelTo": "{current} ke",
-      "goalLabel": "Target {name} {hero}",
-      "note": "Nilai saat ini berasal dari pahlawan di halaman. Ubah di sana."
-    },
-    "unmet": {
-      "title": "Level skill butuh bintang lebih tinggi.",
-      "item": "{hero}: {skill} level {level} butuh bintang {star}",
-      "message": "{items}. Naikkan target bintang atau turunkan target skill."
-    },
-    "shardsUsed": "Pecahan terpakai: {own} dari pahlawan dan {general} umum, {total} semuanya. Pahlawan memakai pecahannya sendiri dulu.",
-    "result": {
-      "title": "Hasil, {steps} langkah",
-      "widgets": "Widget",
-      "weaponSkills": "{count, plural, other {{amount} skill senjata terbuka}}",
-      "note": "Kekuatan bukan bagian dari Rencanakan Pahlawan. Kalkulator tidak mengembalikan waktu dan tidak menerima input kecepatan.",
-      "heads": {
-        "hero": "Pahlawan",
-        "starSteps": "Langkah bintang",
-        "skillLevels": "Level skill",
+    "common": {
+        "owned": "Dimiliki",
+        "ownedLabel": "{hero} dimiliki",
+        "starLabel": "Bintang {hero}",
+        "levelLabel": "Level {hero}",
+        "talentLabel": "Bakat {hero}",
+        "skillLabel": "{hero} {skill}",
+        "weaponLevelLabel": "Level {weapon} {hero}",
+        "shardsOwnedLabel": "Pecahan {hero} dimiliki",
+        "starAndTier": "Bintang dan tier",
+        "level": "Level",
+        "noGoal": "Tanpa target",
         "shards": "Pecahan",
-        "widgets": "Widget"
-      },
-      "tableLabel": "Tabel hasil rencana"
+        "totalPower": "Total kekuatan",
+        "unknown": "Tidak diketahui",
+        "plan": "Rencana",
+        "generation": "Gen {generation}",
+        "exploration": "Eksplorasi",
+        "expedition": "Ekspedisi",
+        "talent": "Bakat",
+        "maxLevelSuffix": "/ {max}",
+        "heroCount": "{count, plural, other {{amount} pahlawan}}"
     },
-    "events": {
-      "svs": "SvS State of Power",
-      "allianceShowdown": "Alliance Showdown",
-      "kingOfIcefield": "King of Icefield",
-      "hallOfChief": "Hall of Chief"
+    "goalText": {
+        "to": "ke {goal}"
+    },
+    "card": {
+        "summary": "{rarity} · {heroClass} · {generation}",
+        "talentRow": "Bakat {name}",
+        "shardsOf": "dari {needed}",
+        "enoughShards": " Pecahan cukup",
+        "shortBy": " Kurang {amount}",
+        "gearSet": "Set perlengkapan",
+        "notOwnedHint": "Aktifkan Dimiliki untuk melacak bintang, level, dan skill.",
+        "details": "Detail"
+    },
+    "tab": {
+        "stats": {
+            "generations": "Generasi terbuka",
+            "generationsValue": "0 sampai {max}",
+            "heroesOwned": "Pahlawan dimiliki dari yang terbuka",
+            "legendaryOwned": "Legendary dimiliki dari yang terbuka",
+            "atMaxLevel": "Di level 80",
+            "heroPower": "Kekuatan pahlawan",
+            "heroPowerUnknown": "Kekuatan pahlawan, {amount} Tidak diketahui tidak dihitung",
+            "withGoal": "Dengan target"
+        },
+        "search": {
+            "label": "Cari pahlawan",
+            "placeholder": "Cari {amount} pahlawan menurut nama"
+        },
+        "filters": "Filter",
+        "maxOut": "Maksimalkan",
+        "status": "Menampilkan {shown} dari {total} pahlawan. Generasi 0 sampai {max} terbuka di Chief ini. Target hanya bisa dibaca di sini dan diatur di Rencana.",
+        "empty": {
+            "title": "Tidak ada pahlawan yang cocok",
+            "description": "Ubah pencarian atau atur ulang filter untuk melihat semua pahlawan.",
+            "reset": "Atur ulang"
+        },
+        "showMore": "Tampilkan lagi, {amount} {count, plural, other {pahlawan}} lagi",
+        "toast": {
+            "notOwnedTitle": "{name} tidak dimiliki",
+            "notOwnedMessage": "Bintang, level, dan skill-nya tetap tersimpan sampai kamu mengaktifkan Dimiliki lagi.",
+            "undo": "Urungkan",
+            "maxedTitle": "Pahlawan dimaksimalkan",
+            "maxedMessage": "{heroes} diperbarui."
+        }
+    },
+    "filtersFlyout": {
+        "title": "Filter",
+        "description": "Pilih pahlawan yang ditampilkan halaman",
+        "reset": "Atur ulang",
+        "show": "Tampilkan {heroes}",
+        "all": "Semua",
+        "generation": "Generasi",
+        "rarity": "Kelangkaan",
+        "heroClass": "Kelas",
+        "ownership": "Kepemilikan",
+        "order": "Urutan",
+        "notSaved": "Filter tidak disimpan.",
+        "rarities": {
+            "Legendary": "Legendary",
+            "Epic": "Epic",
+            "Rare": "Rare"
+        },
+        "classes": {
+            "Infantry": "Infanteri",
+            "Lancer": "Lancer",
+            "Marksman": "Marksman"
+        },
+        "ownershipOptions": {
+            "all": "Semua",
+            "owned": "Dimiliki",
+            "notOwned": "Belum dimiliki"
+        },
+        "orderOptions": {
+            "owned": "Dimiliki dulu, lalu generasi terbaru",
+            "generation": "Generasi, terbaru dulu",
+            "name": "Nama, A ke Z",
+            "power": "Total kekuatan, tertinggi dulu"
+        }
+    },
+    "maxOut": {
+        "title": "Maksimalkan pahlawan",
+        "scopeLabel": "Pahlawan yang dimaksimalkan",
+        "scope": {
+            "owned": "Pahlawan yang dimiliki",
+            "unlocked": "Semua pahlawan terbuka, ditandai dimiliki",
+            "selected": "Pilih pahlawan, ditandai dimiliki"
+        },
+        "searchLabel": "Cari pahlawan untuk dipilih",
+        "searchPlaceholder": "Cari pahlawan menurut nama",
+        "selectShown": "Pilih yang tampil",
+        "clear": "Hapus",
+        "ownedTag": "dimiliki",
+        "starAndTier": "Bintang dan tier sampai 5.0",
+        "level": "Level sampai 80",
+        "levelHint": "Matikan jika skill sudah maksimal dan level pahlawan lama tetap di 1.",
+        "skills": "Skill sampai 5",
+        "skillsHint": "Eksplorasi, Ekspedisi, dan Bakat.",
+        "weapon": "Senjata eksklusif sampai 10",
+        "note": "Yang dimatikan tetap seperti adanya. Jumlah pecahan dan target tidak berubah. Kamu bisa mengurungkan setelah diterapkan.",
+        "cancel": "Batal",
+        "apply": "Maksimalkan {heroes}"
+    },
+    "flyout": {
+        "fallbackTitle": "Pahlawan",
+        "description": "{heroClass} {rarity}, generasi {generation}",
+        "done": "Selesai",
+        "status": {
+            "title": "Status",
+            "furnaceNeeded": "Furnace dibutuhkan untuk level {level}",
+            "met": "Terpenuhi",
+            "needsFurnace": "Butuh Furnace {required}",
+            "levelPower": "Kekuatan level",
+            "skillPower": "Kekuatan skill",
+            "starPower": "Kekuatan bintang",
+            "weaponPower": "Kekuatan senjata",
+            "totalPower": "Total kekuatan",
+            "note": "Kekuatan menghitung level, skill, label bintang, dan level senjata."
+        },
+        "skills": {
+            "title": "Skill",
+            "aside": "Lima level per skill",
+            "toLevel": "Ke {level}: {manuals} manual",
+            "needsStar": "Butuh bintang {star}",
+            "starMet": "Bintang {star} terpenuhi",
+            "talentTop": "Bakat sudah di level tertinggi.",
+            "talentNeedsStar": "Level {level} butuh bintang {star}",
+            "talentStarMet": "Level {level}: bintang {star} terpenuhi"
+        },
+        "weapon": {
+            "title": "Senjata eksklusif: {name}",
+            "level": "Level senjata",
+            "widgetsForLevel": "Widget untuk level {level}",
+            "widgetsForLevels": "Widget untuk level {from} sampai {to}",
+            "expeditionBonus": "Bonus ekspedisi",
+            "bonus": "Lethality {lethality}% · Darah {health}%",
+            "power": "Kekuatan senjata",
+            "unlocksAt": "Terbuka di level senjata {level}"
+        },
+        "shards": {
+            "title": "Pecahan",
+            "owned": "Pecahan dimiliki",
+            "goal": "Target",
+            "neededForGoal": "Dibutuhkan untuk target {goal}",
+            "enough": "Pecahan cukup",
+            "shortBy": "Kurang",
+            "yes": "Ya",
+            "sources": "Sumber pecahan"
+        },
+        "stats": {
+            "title": "Statistik di level 80",
+            "explorationAt": "Eksplorasi di {stars}",
+            "expeditionAt": "Ekspedisi di {stars}",
+            "explorationFull": "Eksplorasi di 5.0",
+            "expeditionFull": "Ekspedisi di 5.0",
+            "exploration": "Atk {attack} · Def {defense} · HP {health}",
+            "expedition": "Atk {attack}% · Def {defense}%",
+            "estimate": "Perkiraan"
+        }
+    },
+    "plan": {
+        "title": "Rencanakan Pahlawan",
+        "description": "Pecahan, manual skill, dan Widget dari saat ini sampai target",
+        "saved": "Rencana disimpan {date}",
+        "close": "Tutup",
+        "save": "Simpan rencana",
+        "noHeroes": "Belum ada pahlawan di rencana. Tambah pahlawan yang dimiliki di atas, lalu naikkan targetnya.",
+        "add": {
+            "title": "Tambah pahlawan",
+            "allIn": "Semua pahlawan yang dimiliki sudah ada di rencana. Aktifkan Dimiliki untuk pahlawan agar bisa direncanakan.",
+            "selectLabel": "Pahlawan yang ditambah",
+            "button": "Tambah pahlawan"
+        },
+        "block": {
+            "remove": "Hapus {hero} dari rencana",
+            "starTo": "{stars} ke",
+            "starGoal": "Target bintang {hero}",
+            "levelTo": "{current} ke",
+            "goalLabel": "Target {name} {hero}",
+            "note": "Nilai saat ini berasal dari pahlawan di halaman. Ubah di sana."
+        },
+        "unmet": {
+            "title": "Level skill butuh bintang lebih tinggi.",
+            "item": "{hero}: {skill} level {level} butuh bintang {star}",
+            "message": "{items}. Naikkan target bintang atau turunkan target skill."
+        },
+        "shardsUsed": "Pecahan terpakai: {own} dari pahlawan dan {general} umum, {total} semuanya. Pahlawan memakai pecahannya sendiri dulu.",
+        "result": {
+            "title": "Hasil, {steps} langkah",
+            "widgets": "Widget",
+            "weaponSkills": "{count, plural, other {{amount} skill senjata terbuka}}",
+            "note": "Kekuatan bukan bagian dari Rencanakan Pahlawan. Kalkulator tidak mengembalikan waktu dan tidak menerima input kecepatan.",
+            "heads": {
+                "hero": "Pahlawan",
+                "starSteps": "Langkah bintang",
+                "skillLevels": "Level skill",
+                "shards": "Pecahan",
+                "widgets": "Widget"
+            },
+            "tableLabel": "Tabel hasil rencana"
+        },
+        "events": {
+            "svs": "SvS State of Power",
+            "allianceShowdown": "Alliance Showdown",
+            "kingOfIcefield": "King of Icefield",
+            "hallOfChief": "Hall of Chief"
+        }
+    },
+    "export": {
+        "button": "Ekspor ke Core Events",
+        "nothing": "Rencana tidak butuh pecahan atau Widget untuk diekspor.",
+        "shardsGroup": "untuk pecahan",
+        "widgetsGroup": "untuk Widget",
+        "widgets": "Widget",
+        "manualsReason": "Tidak ada event yang menskor manual skill",
+        "shards": {
+            "Legendary": "Mythic Hero Shards",
+            "Epic": "Epic Hero Shards",
+            "Rare": "Rare Hero Shards"
+        }
+    },
+    "service": {
+        "generalShard": {
+            "Legendary": "Mythic General Hero Shard",
+            "Epic": "Epic General Hero Shard",
+            "Rare": "Rare General Hero Shard"
+        }
     }
-  },
-  "export": {
-    "button": "Ekspor ke Core Events",
-    "nothing": "Rencana tidak butuh pecahan atau Widget untuk diekspor.",
-    "shardsGroup": "untuk pecahan",
-    "widgetsGroup": "untuk Widget",
-    "widgets": "Widget",
-    "manualsReason": "Tidak ada event yang menskor manual skill",
-    "shards": {
-      "Legendary": "Mythic Hero Shards",
-      "Epic": "Epic Hero Shards",
-      "Rare": "Rare Hero Shards"
-    }
-  },
-  "service": {
-    "generalShard": {
-      "Legendary": "Mythic General Hero Shard",
-      "Epic": "Epic General Hero Shard",
-      "Rare": "Rare General Hero Shard"
-    }
-  }
 }

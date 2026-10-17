@@ -1,26 +1,26 @@
 {
-  "line": "병종 {types}종, 각 {tiers}단계예요. 참고용이며 여기 있는 내용은 영주에게 저장되지 않아요.",
-  "tiers": {
-    "heading": "병력 단계",
-    "meta": "{types}종 x {tiers}단계 = {rows}행",
-    "typeLabel": "병종",
-    "tableLabel": "{type} 단계"
-  },
-  "detail": {
-    "heading": "기록 상세",
-    "meta": "{tier}단계, 세 병종 모두",
-    "tableLabel": "병종별 {tier}단계"
-  },
-  "columns": {
-    "tier": "단계",
-    "type": "병종",
-    "cost": "병력당 비용",
-    "topCost": "단계 비용",
-    "time": "훈련 시간",
-    "promotion": "승급 비용"
-  },
-  "cells": {
-    "tier": "{tier}단계",
-    "none": "없음"
-  }
+    "line": "병종 {types}종, 각 {tiers}단계예요. 참고용이며 여기 있는 내용은 영주에게 저장되지 않아요.",
+    "tiers": {
+        "heading": "병력 단계",
+        "meta": "{types}종 x {tiers}단계 = {rows}행",
+        "typeLabel": "병종",
+        "tableLabel": "{type} 단계"
+    },
+    "detail": {
+        "heading": "기록 상세",
+        "meta": "{tier}단계, 세 병종 모두",
+        "tableLabel": "병종별 {tier}단계"
+    },
+    "columns": {
+        "tier": "단계",
+        "type": "병종",
+        "cost": "병력당 비용",
+        "topCost": "단계 비용",
+        "time": "훈련 시간",
+        "promotion": "승급 비용"
+    },
+    "cells": {
+        "tier": "{tier}단계",
+        "none": "없음"
+    }
 }

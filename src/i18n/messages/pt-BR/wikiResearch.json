@@ -1,77 +1,77 @@
 {
-  "line": "{nodes} nós de pesquisa em {tabs} abas. Só referência, nada aqui é salvo.",
-  "tabsLabel": "Categorias de pesquisa",
-  "tabs": {
-    "battle": "Batalha",
-    "growth": "Crescimento",
-    "economy": "Economia",
-    "t11": "T11",
-    "t12": "T12"
-  },
-  "search": {
-    "label": "Buscar",
-    "placeholder": "Buscar entre {amount} nós de pesquisa"
-  },
-  "filters": {
-    "tier": "Tier",
-    "allTiers": "Todos",
-    "tierOption": "Tier {tier}",
-    "troop": "Tipo de tropa",
-    "allTroops": "Todos",
-    "troops": {
-      "Infantry": "Infantaria",
-      "Marksman": "Atirador",
-      "Lancer": "Lanceiro"
+    "line": "{nodes} nós de pesquisa em {tabs} abas. Só referência, nada aqui é salvo.",
+    "tabsLabel": "Categorias de pesquisa",
+    "tabs": {
+        "battle": "Batalha",
+        "growth": "Crescimento",
+        "economy": "Economia",
+        "t11": "T11",
+        "t12": "T12"
     },
-    "data": "Dados",
-    "dataOptions": {
-      "all": "Todos os nós",
-      "placeholders": "Provisórios",
-      "missingTime": "Sem tempo"
+    "search": {
+        "label": "Buscar",
+        "placeholder": "Buscar entre {amount} nós de pesquisa"
+    },
+    "filters": {
+        "tier": "Tier",
+        "allTiers": "Todos",
+        "tierOption": "Tier {tier}",
+        "troop": "Tipo de tropa",
+        "allTroops": "Todos",
+        "troops": {
+            "Infantry": "Infantaria",
+            "Marksman": "Atirador",
+            "Lancer": "Lanceiro"
+        },
+        "data": "Dados",
+        "dataOptions": {
+            "all": "Todos os nós",
+            "placeholders": "Provisórios",
+            "missingTime": "Sem tempo"
+        }
+    },
+    "list": {
+        "title": "Nós",
+        "empty": "Nenhum nó de pesquisa corresponde a esta busca.",
+        "emptyHint": "Limpe a busca ou um filtro.",
+        "columns": {
+            "node": "Nó",
+            "tier": "Tier",
+            "levels": "Níveis",
+            "bonus": "Bônus no nível 1",
+            "time": "Tempo, nível 1",
+            "power": "Poder"
+        },
+        "mobileMeta": "{category}, tier {tier}, {levels}",
+        "count": "{count, plural, one {{amount} nó} other {{amount} nós}}"
+    },
+    "levels": "{count, plural, one {{amount} nível} other {{amount} níveis}}",
+    "detail": {
+        "columns": {
+            "level": "Nível",
+            "requires": "Requer",
+            "cost": "Custo",
+            "time": "Tempo",
+            "bonus": "Bônus",
+            "power": "Poder"
+        },
+        "level": "Nível {level}",
+        "none": "Nenhum",
+        "placeholderNote": "Este nó é provisório. O pacote de dados não tem custo nem bônus para ele.",
+        "requirement": {
+            "building": "{name} {level}",
+            "research": "{name} nível {level}"
+        },
+        "levelsTitle": "Níveis"
+    },
+    "view": {
+        "label": "Visualização",
+        "list": "Lista",
+        "tree": "Árvore"
+    },
+    "tree": {
+        "region": "Árvore de pesquisa {tab}",
+        "openNode": "{name}, {levels}",
+        "tier": "T{tier}"
     }
-  },
-  "list": {
-    "title": "Nós",
-    "empty": "Nenhum nó de pesquisa corresponde a esta busca.",
-    "emptyHint": "Limpe a busca ou um filtro.",
-    "columns": {
-      "node": "Nó",
-      "tier": "Tier",
-      "levels": "Níveis",
-      "bonus": "Bônus no nível 1",
-      "time": "Tempo, nível 1",
-      "power": "Poder"
-    },
-    "mobileMeta": "{category}, tier {tier}, {levels}",
-    "count": "{count, plural, one {{amount} nó} other {{amount} nós}}"
-  },
-  "levels": "{count, plural, one {{amount} nível} other {{amount} níveis}}",
-  "detail": {
-    "columns": {
-      "level": "Nível",
-      "requires": "Requer",
-      "cost": "Custo",
-      "time": "Tempo",
-      "bonus": "Bônus",
-      "power": "Poder"
-    },
-    "level": "Nível {level}",
-    "none": "Nenhum",
-    "placeholderNote": "Este nó é provisório. O pacote de dados não tem custo nem bônus para ele.",
-    "requirement": {
-      "building": "{name} {level}",
-      "research": "{name} nível {level}"
-    },
-    "levelsTitle": "Níveis"
-  },
-  "view": {
-    "label": "Visualização",
-    "list": "Lista",
-    "tree": "Árvore"
-  },
-  "tree": {
-    "region": "Árvore de pesquisa {tab}",
-    "openNode": "{name}, {levels}",
-    "tier": "T{tier}"
-  }
 }

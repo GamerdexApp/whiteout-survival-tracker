@@ -1,104 +1,104 @@
 {
-  "line": "Диапазонов знамён: {banners}, сооружений: {facilities}, записей о замке, форпостах и крепостях: {fortresses}. Только справка, здесь ничего не сохраняется.",
-  "filters": {
-    "search": "Поиск",
-    "searchPlaceholder": "Поиск диапазонов, сооружений, крепостей",
-    "structure": "Постройка",
-    "structures": {
-      "all": "Все постройки",
-      "banners": "Знамёна",
-      "facilities": "Сооружения на карте",
-      "castle": "Замок",
-      "stronghold": "Форпосты",
-      "fortress": "Крепости"
-    }
-  },
-  "empty": "В этом списке ничего не подходит под поиск.",
-  "none": "Нет",
-  "banners": {
-    "title": "Цена постройки знамени",
-    "columns": {
-      "range": "Диапазон уровней",
-      "min": "Мин.",
-      "max": "Макс.",
-      "cost": "Цена за уровень"
+    "line": "Диапазонов знамён: {banners}, сооружений: {facilities}, записей о замке, форпостах и крепостях: {fortresses}. Только справка, здесь ничего не сохраняется.",
+    "filters": {
+        "search": "Поиск",
+        "searchPlaceholder": "Поиск диапазонов, сооружений, крепостей",
+        "structure": "Постройка",
+        "structures": {
+            "all": "Все постройки",
+            "banners": "Знамёна",
+            "facilities": "Сооружения на карте",
+            "castle": "Замок",
+            "stronghold": "Форпосты",
+            "fortress": "Крепости"
+        }
     },
-    "noCost": "Не указана",
-    "count": "{count, plural, one {{amount} диапазон} few {{amount} диапазона} many {{amount} диапазонов} other {{amount} диапазона}}",
+    "empty": "В этом списке ничего не подходит под поиск.",
+    "none": "Нет",
+    "banners": {
+        "title": "Цена постройки знамени",
+        "columns": {
+            "range": "Диапазон уровней",
+            "min": "Мин.",
+            "max": "Макс.",
+            "cost": "Цена за уровень"
+        },
+        "noCost": "Не указана",
+        "count": "{count, plural, one {{amount} диапазон} few {{amount} диапазона} many {{amount} диапазонов} other {{amount} диапазона}}",
+        "detail": {
+            "title": "Цена знамени",
+            "fields": {
+                "range": "Диапазон уровней",
+                "min": "Низший уровень",
+                "max": "Высший уровень",
+                "cost": "Цена за уровень"
+            }
+        }
+    },
+    "facilities": {
+        "title": "Сооружения на карте",
+        "count": "{count, plural, one {{amount} сооружение} few {{amount} сооружения} many {{amount} сооружений} other {{amount} сооружения}}",
+        "columns": {
+            "facility": "Сооружение",
+            "bonus": "Бонус",
+            "level": "Уровень {level}",
+            "listed": "Уровней в списке",
+            "ownLimit": "Свой лимит"
+        },
+        "cell": "На карте: {available}",
+        "listedOf": "{listed} из {total}",
+        "levelsNote": "В данных указано уровней этого сооружения: {listed} из {total}. Не указанные уровни показаны как «Неизвестно».",
+        "detail": {
+            "title": "Уровни: {name}",
+            "level": "Уровень {level}",
+            "columns": {
+                "level": "Уровень",
+                "booster": "Усилитель",
+                "injured": "Тяжело раненые",
+                "losses": "Потери",
+                "ownLimit": "Свой лимит",
+                "available": "На карте",
+                "locations": "Места (x, y)"
+            },
+            "percent": "{value}%",
+            "location": "{x}, {y}"
+        }
+    },
+    "fortresses": {
+        "title": "Замок, форпосты и крепости",
+        "kinds": {
+            "castle": "Замок",
+            "stronghold": "Форпост",
+            "fortress": "Крепость"
+        },
+        "columns": {
+            "name": "Название",
+            "kind": "Вид",
+            "x": "X",
+            "y": "Y",
+            "phases": "Фазы",
+            "phaseOne": "Награда фазы 1"
+        },
+        "mobileMeta": "{kind}, x {x}, y {y}",
+        "count": "{count, plural, one {{amount} постройка} few {{amount} постройки} many {{amount} построек} other {{amount} постройки}}"
+    },
+    "map": {
+        "title": "Макет карты",
+        "label": "Карта замка, форпостов и крепостей по значениям x и y",
+        "note": "Замок, форпосты и крепости, нанесённые по значениям x и y на квадрат {size} на {size}. Размер квадрата приблизительный, размера карты в пакете нет.",
+        "legend": {
+            "castle": "Квадрат: замок",
+            "stronghold": "Ромб: форпост",
+            "fortress": "Круг: крепость"
+        }
+    },
     "detail": {
-      "title": "Цена знамени",
-      "fields": {
-        "range": "Диапазон уровней",
-        "min": "Низший уровень",
-        "max": "Высший уровень",
-        "cost": "Цена за уровень"
-      }
+        "title": "Награды фаз",
+        "phases": "{count, plural, one {{amount} фаза} few {{amount} фазы} many {{amount} фаз} other {{amount} фазы}}",
+        "columns": {
+            "phase": "Фаза",
+            "reward": "Награда"
+        },
+        "noRewards": "В пакете нет наград фаз для этой постройки."
     }
-  },
-  "facilities": {
-    "title": "Сооружения на карте",
-    "count": "{count, plural, one {{amount} сооружение} few {{amount} сооружения} many {{amount} сооружений} other {{amount} сооружения}}",
-    "columns": {
-      "facility": "Сооружение",
-      "bonus": "Бонус",
-      "level": "Уровень {level}",
-      "listed": "Уровней в списке",
-      "ownLimit": "Свой лимит"
-    },
-    "cell": "На карте: {available}",
-    "listedOf": "{listed} из {total}",
-    "levelsNote": "В данных указано уровней этого сооружения: {listed} из {total}. Не указанные уровни показаны как «Неизвестно».",
-    "detail": {
-      "title": "Уровни: {name}",
-      "level": "Уровень {level}",
-      "columns": {
-        "level": "Уровень",
-        "booster": "Усилитель",
-        "injured": "Тяжело раненые",
-        "losses": "Потери",
-        "ownLimit": "Свой лимит",
-        "available": "На карте",
-        "locations": "Места (x, y)"
-      },
-      "percent": "{value}%",
-      "location": "{x}, {y}"
-    }
-  },
-  "fortresses": {
-    "title": "Замок, форпосты и крепости",
-    "kinds": {
-      "castle": "Замок",
-      "stronghold": "Форпост",
-      "fortress": "Крепость"
-    },
-    "columns": {
-      "name": "Название",
-      "kind": "Вид",
-      "x": "X",
-      "y": "Y",
-      "phases": "Фазы",
-      "phaseOne": "Награда фазы 1"
-    },
-    "mobileMeta": "{kind}, x {x}, y {y}",
-    "count": "{count, plural, one {{amount} постройка} few {{amount} постройки} many {{amount} построек} other {{amount} постройки}}"
-  },
-  "map": {
-    "title": "Макет карты",
-    "label": "Карта замка, форпостов и крепостей по значениям x и y",
-    "note": "Замок, форпосты и крепости, нанесённые по значениям x и y на квадрат {size} на {size}. Размер квадрата приблизительный, размера карты в пакете нет.",
-    "legend": {
-      "castle": "Квадрат: замок",
-      "stronghold": "Ромб: форпост",
-      "fortress": "Круг: крепость"
-    }
-  },
-  "detail": {
-    "title": "Награды фаз",
-    "phases": "{count, plural, one {{amount} фаза} few {{amount} фазы} many {{amount} фаз} other {{amount} фазы}}",
-    "columns": {
-      "phase": "Фаза",
-      "reward": "Награда"
-    },
-    "noRewards": "В пакете нет наград фаз для этой постройки."
-  }
 }

@@ -1,45 +1,45 @@
 {
-  "line": "강화 {enhancement}레벨, 강림 {empowerment}레벨, 숙련 단조 {mastery}행, 능력치 항목 {stats}개예요. 참고용이며 저장되지 않아요.",
-  "tabsLabel": "영웅 장비 표",
-  "tabs": {
-    "enhancement": "강화",
-    "empowerment": "강림",
-    "mastery": "숙련 단조",
-    "stats": "능력치"
-  },
-  "levels": {
-    "columns": {
-      "level": "레벨",
-      "cost": "비용",
-      "power": "전투력",
-      "gain": "이전 대비 증가",
-      "milestonePower": "이정표 전투력",
-      "stage": "단계",
-      "statsUp": "능력치 상승"
+    "line": "강화 {enhancement}레벨, 강림 {empowerment}레벨, 숙련 단조 {mastery}행, 능력치 항목 {stats}개예요. 참고용이며 저장되지 않아요.",
+    "tabsLabel": "영웅 장비 표",
+    "tabs": {
+        "enhancement": "강화",
+        "empowerment": "강림",
+        "mastery": "숙련 단조",
+        "stats": "능력치"
     },
-    "none": "없음",
-    "percent": "{value}%",
-    "gainValue": "+{value}"
-  },
-  "stats": {
-    "slot": "슬롯",
-    "troopType": "병종",
-    "troop": {
-      "infantry": "보병",
-      "lancer": "창병",
-      "marksman": "궁병"
+    "levels": {
+        "columns": {
+            "level": "레벨",
+            "cost": "비용",
+            "power": "전투력",
+            "gain": "이전 대비 증가",
+            "milestonePower": "이정표 전투력",
+            "stage": "단계",
+            "statsUp": "능력치 상승"
+        },
+        "none": "없음",
+        "percent": "{value}%",
+        "gainValue": "+{value}"
     },
-    "note": "능력치 레벨 101~200은 강림 레벨 1~100이에요.",
-    "columns": {
-      "level": "레벨",
-      "combat": "{stat}",
-      "health": "체력",
-      "percent": "{stat}"
-    },
-    "level": "{level}레벨",
-    "empowermentLevel": "{level}레벨, 강림 {empowerment}",
-    "milestonesTitle": "이정표",
-    "milestone": "강림 {level}레벨, {event}: {stat}",
-    "percentValue": "{value}%"
-  }
+    "stats": {
+        "slot": "슬롯",
+        "troopType": "병종",
+        "troop": {
+            "infantry": "보병",
+            "lancer": "창병",
+            "marksman": "궁병"
+        },
+        "note": "능력치 레벨 101~200은 강림 레벨 1~100이에요.",
+        "columns": {
+            "level": "레벨",
+            "combat": "{stat}",
+            "health": "체력",
+            "percent": "{stat}"
+        },
+        "level": "{level}레벨",
+        "empowermentLevel": "{level}레벨, 강림 {empowerment}",
+        "milestonesTitle": "이정표",
+        "milestone": "강림 {level}레벨, {event}: {stat}",
+        "percentValue": "{value}%"
+    }
 }

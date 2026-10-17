@@ -1,54 +1,54 @@
 {
-  "line": "{total} teknologi di tiga pohon: Pertumbuhan {growth}, Wilayah {territory}, Pertempuran {battle}. Hanya referensi, tidak ada yang disimpan.",
-  "list": {
-    "title": "Node teknologi",
-    "categoriesLabel": "Pohon teknologi",
-    "categories": {
-      "all": "Semua",
-      "Growth": "Pertumbuhan",
-      "Territory": "Wilayah",
-      "Battle": "Pertempuran"
+    "line": "{total} teknologi di tiga pohon: Pertumbuhan {growth}, Wilayah {territory}, Pertempuran {battle}. Hanya referensi, tidak ada yang disimpan.",
+    "list": {
+        "title": "Node teknologi",
+        "categoriesLabel": "Pohon teknologi",
+        "categories": {
+            "all": "Semua",
+            "Growth": "Pertumbuhan",
+            "Territory": "Wilayah",
+            "Battle": "Pertempuran"
+        },
+        "search": "Cari",
+        "searchPlaceholder": "Cari teknologi menurut nama atau efek",
+        "tier": "Tier",
+        "allTiers": "Semua tier",
+        "tierOption": "Tier {tier}",
+        "empty": "Tidak ada node teknologi yang cocok dengan pencarian ini.",
+        "emptyHint": "Hapus pencarian atau filter.",
+        "columns": {
+            "tech": "Teknologi",
+            "category": "Kategori",
+            "tier": "Tier",
+            "levels": "Level",
+            "maxBonus": "Bonus maks",
+            "cost": "Biaya level 1",
+            "time": "Waktu level 1",
+            "requires": "Syarat level 1"
+        },
+        "mobileMeta": "{category}, tier {tier}, {levels}",
+        "count": "{count, plural, other {{amount} teknologi}}"
     },
-    "search": "Cari",
-    "searchPlaceholder": "Cari teknologi menurut nama atau efek",
-    "tier": "Tier",
-    "allTiers": "Semua tier",
-    "tierOption": "Tier {tier}",
-    "empty": "Tidak ada node teknologi yang cocok dengan pencarian ini.",
-    "emptyHint": "Hapus pencarian atau filter.",
-    "columns": {
-      "tech": "Teknologi",
-      "category": "Kategori",
-      "tier": "Tier",
-      "levels": "Level",
-      "maxBonus": "Bonus maks",
-      "cost": "Biaya level 1",
-      "time": "Waktu level 1",
-      "requires": "Syarat level 1"
-    },
-    "mobileMeta": "{category}, tier {tier}, {levels}",
-    "count": "{count, plural, other {{amount} teknologi}}"
-  },
-  "levels": "{count, plural, other {{amount} level}}",
-  "detail": {
-    "facts": "Detail",
-    "levelsTitle": "Level",
-    "none": "Tidak ada",
-    "fields": {
-      "category": "Kategori",
-      "tier": "Tier",
-      "effect": "Efek",
-      "stat": "Statistik",
-      "levels": "Level"
-    },
-    "columns": {
-      "level": "Level",
-      "bonus": "Bonus",
-      "cost": "Biaya",
-      "time": "Waktu",
-      "requires": "Syarat"
-    },
-    "level": "Level {level}",
-    "requirement": "{name} level {level}"
-  }
+    "levels": "{count, plural, other {{amount} level}}",
+    "detail": {
+        "facts": "Detail",
+        "levelsTitle": "Level",
+        "none": "Tidak ada",
+        "fields": {
+            "category": "Kategori",
+            "tier": "Tier",
+            "effect": "Efek",
+            "stat": "Statistik",
+            "levels": "Level"
+        },
+        "columns": {
+            "level": "Level",
+            "bonus": "Bonus",
+            "cost": "Biaya",
+            "time": "Waktu",
+            "requires": "Syarat"
+        },
+        "level": "Level {level}",
+        "requirement": "{name} level {level}"
+    }
 }

@@ -1,56 +1,56 @@
 {
-  "line": "{rows} linhas de equipamento, {slots} ranhuras e {rates} taxas de câmbio. Só referência, nada aqui é guardado no chefe.",
-  "slots": {
-    "heading": "Ranhuras de equipamento",
-    "rarities": "Ícones de {first} a {last}",
-    "detailLine": "Reforça as tropas {troopType}. Um ícone por raridade."
-  },
-  "table": {
-    "heading": "Tabela de equipamento",
-    "meta": "{rows} linhas, {tiers} tiers",
-    "searchLabel": "Pesquisar",
-    "searchPlaceholder": "Pesquisar {rows} linhas de equipamento",
-    "tierLabel": "Tier",
-    "allTiers": "Todos os tiers",
-    "starsLabel": "Estrelas",
-    "allStars": "Todas as estrelas",
-    "starsOption": "Estrelas {stars}",
-    "empty": "Nenhuma linha de equipamento corresponde aos filtros."
-  },
-  "columns": {
-    "row": "Linha",
-    "materials": "Materiais",
-    "stats": "Atributos",
-    "power": "Poder",
-    "score": "Pontuação",
-    "capacity": "Cap. destac."
-  },
-  "cells": {
-    "none": "Nenhum",
-    "percent": "{value}%"
-  },
-  "tiers": {
-    "heading": "Tiers",
-    "meta": "{tiers} nomes de tier",
-    "tier": "Tier",
-    "rows": "Linhas",
-    "stats": "Atributos, do primeiro ao último",
-    "power": "Poder na última linha",
-    "statsRange": "{first}% a {last}%"
-  },
-  "exchange": {
-    "heading": "Taxas de câmbio de materiais",
-    "exchange": "Câmbio",
-    "from": "De",
-    "to": "Para",
-    "weeklyLimit": "Limite semanal"
-  },
-  "setBonus": {
-    "heading": "Bónus de conjunto",
-    "meta": "{tiers} tiers",
-    "hint": "Equipar 3 peças dá um bónus de Defesa e 6 peças dão um bónus de Ataque. A percentagem depende do tier das peças equipadas. Aplica-se às tropas {types}.",
-    "pieceSet": "Conjunto de {pieces} peças",
-    "tier": "Tier",
-    "pieces": "{pieces} peças, {stat}"
-  }
+    "line": "{rows} linhas de equipamento, {slots} ranhuras e {rates} taxas de câmbio. Só referência, nada aqui é guardado no chefe.",
+    "slots": {
+        "heading": "Ranhuras de equipamento",
+        "rarities": "Ícones de {first} a {last}",
+        "detailLine": "Reforça as tropas {troopType}. Um ícone por raridade."
+    },
+    "table": {
+        "heading": "Tabela de equipamento",
+        "meta": "{rows} linhas, {tiers} tiers",
+        "searchLabel": "Pesquisar",
+        "searchPlaceholder": "Pesquisar {rows} linhas de equipamento",
+        "tierLabel": "Tier",
+        "allTiers": "Todos os tiers",
+        "starsLabel": "Estrelas",
+        "allStars": "Todas as estrelas",
+        "starsOption": "Estrelas {stars}",
+        "empty": "Nenhuma linha de equipamento corresponde aos filtros."
+    },
+    "columns": {
+        "row": "Linha",
+        "materials": "Materiais",
+        "stats": "Atributos",
+        "power": "Poder",
+        "score": "Pontuação",
+        "capacity": "Cap. destac."
+    },
+    "cells": {
+        "none": "Nenhum",
+        "percent": "{value}%"
+    },
+    "tiers": {
+        "heading": "Tiers",
+        "meta": "{tiers} nomes de tier",
+        "tier": "Tier",
+        "rows": "Linhas",
+        "stats": "Atributos, do primeiro ao último",
+        "power": "Poder na última linha",
+        "statsRange": "{first}% a {last}%"
+    },
+    "exchange": {
+        "heading": "Taxas de câmbio de materiais",
+        "exchange": "Câmbio",
+        "from": "De",
+        "to": "Para",
+        "weeklyLimit": "Limite semanal"
+    },
+    "setBonus": {
+        "heading": "Bónus de conjunto",
+        "meta": "{tiers} tiers",
+        "hint": "Equipar 3 peças dá um bónus de Defesa e 6 peças dão um bónus de Ataque. A percentagem depende do tier das peças equipadas. Aplica-se às tropas {types}.",
+        "pieceSet": "Conjunto de {pieces} peças",
+        "tier": "Tier",
+        "pieces": "{pieces} peças, {stat}"
+    }
 }

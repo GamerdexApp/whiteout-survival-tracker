@@ -1,95 +1,95 @@
 {
-  "hoursMinutes": {
-    "hours": "Horas",
-    "minutes": "Minutos"
-  },
-  "jobCard": {
-    "idle": "Livre",
-    "progress": "Progresso de {title}",
-    "ends": "Termina {date}",
-    "manage": "Gerenciar",
-    "finish": "Concluir"
-  },
-  "timeLeftPill": {
-    "manage": "{label}, {timeLeft}. Gerenciar melhoria"
-  },
-  "manage": {
-    "fallbackTitle": "Gerenciar melhoria",
-    "description": "Gerencie a melhoria em andamento",
-    "close": "Fechar",
-    "finish": "Concluir melhoria",
-    "progress": "Progresso da melhoria",
-    "started": "Iniciada {date}",
-    "ends": "Termina {date}",
-    "speedup": {
-      "title": "Usou um acelerador",
-      "minutesUsed": "Minutos usados",
-      "apply": "Aplicar",
-      "timeLeftAfter": "Tempo restante depois de aplicar",
-      "hint": "Aceleradores de qualquer tipo descontam seus minutos do tempo restante."
+    "hoursMinutes": {
+        "hours": "Horas",
+        "minutes": "Minutos"
     },
-    "setTime": {
-      "title": "Definir o tempo restante",
-      "button": "Definir o tempo restante",
-      "hint": "Use quando o jogo mostrar outro tempo."
+    "jobCard": {
+        "idle": "Livre",
+        "progress": "Progresso de {title}",
+        "ends": "Termina {date}",
+        "manage": "Gerenciar",
+        "finish": "Concluir"
     },
-    "done": {
-      "title": "Quando terminar",
-      "cancel": "Cancelar esta melhoria"
+    "timeLeftPill": {
+        "manage": "{label}, {timeLeft}. Gerenciar melhoria"
+    },
+    "manage": {
+        "fallbackTitle": "Gerenciar melhoria",
+        "description": "Gerencie a melhoria em andamento",
+        "close": "Fechar",
+        "finish": "Concluir melhoria",
+        "progress": "Progresso da melhoria",
+        "started": "Iniciada {date}",
+        "ends": "Termina {date}",
+        "speedup": {
+            "title": "Usou um acelerador",
+            "minutesUsed": "Minutos usados",
+            "apply": "Aplicar",
+            "timeLeftAfter": "Tempo restante depois de aplicar",
+            "hint": "Aceleradores de qualquer tipo descontam seus minutos do tempo restante."
+        },
+        "setTime": {
+            "title": "Definir o tempo restante",
+            "button": "Definir o tempo restante",
+            "hint": "Use quando o jogo mostrar outro tempo."
+        },
+        "done": {
+            "title": "Quando terminar",
+            "cancel": "Cancelar esta melhoria"
+        }
+    },
+    "planStock": {
+        "title": "Você tem o suficiente?",
+        "shortCount": "faltam em {short} de {total}",
+        "description": "O que o plano tira do seu estoque, conferido com o que você tem. O plano completo está no resultado abaixo.",
+        "enough": "Suficiente",
+        "notEnough": "Insuficiente",
+        "covered": "{name} coberto",
+        "available": "Disponível {amount}",
+        "needed": "Necessário {amount}",
+        "leftOver": "Sobram {amount}",
+        "shortBy": "Faltam {amount}",
+        "stillNeeded": "Ainda necessário para o plano completo: {list}.",
+        "openResources": "Abrir Recursos"
+    },
+    "start": {
+        "title": "Iniciar melhoria",
+        "cancel": "Cancelar",
+        "nothingToStart": "Nada pode ser iniciado agora. Todos os itens estão no nível máximo, bloqueados ou já em melhoria.",
+        "powerGained": "Poder ganho",
+        "packageTime": "Tempo do pacote de dados",
+        "unknown": "Desconhecido",
+        "readOnly": "Só leitura",
+        "openBonuses": "Abrir Bônus",
+        "yourTime": "Seu tempo",
+        "timeHint": "Só a velocidade da sua página Bônus é contada. Se o jogo mostrar outro tempo, mude em Quando começou.",
+        "allBusy": "Tudo aqui está ocupado. Iniciar melhoria fica desligado até algo ficar livre.",
+        "whenStarted": "Quando começou",
+        "timeLeftHours": "Tempo restante, horas",
+        "ends": "Termina",
+        "startedHint": "Escolha Já começou para informar o tempo que o jogo mostra. O horário de término é calculado a partir dele.",
+        "takeCost": {
+            "title": "Descontar o custo de Recursos",
+            "hint": "Subtrai o custo acima do seu estoque.",
+            "enough": "Você tem o suficiente de todos os recursos.",
+            "short": "Faltam {names}. Você ainda pode iniciar, e o estoque para em 0."
+        },
+        "modes": {
+            "now": "Começando agora",
+            "already": "Já começou"
+        }
+    },
+    "researchQueues": {
+        "label": "{name}, {tabs}",
+        "main": {
+            "name": "Fila de pesquisa",
+            "tabs": "Crescimento, Economia e Batalha",
+            "shortName": "Pesquisa"
+        },
+        "warAcademy": {
+            "name": "Fila da War Academy",
+            "tabs": "T11 e T12",
+            "shortName": "War Academy"
+        }
     }
-  },
-  "planStock": {
-    "title": "Você tem o suficiente?",
-    "shortCount": "faltam em {short} de {total}",
-    "description": "O que o plano tira do seu estoque, conferido com o que você tem. O plano completo está no resultado abaixo.",
-    "enough": "Suficiente",
-    "notEnough": "Insuficiente",
-    "covered": "{name} coberto",
-    "available": "Disponível {amount}",
-    "needed": "Necessário {amount}",
-    "leftOver": "Sobram {amount}",
-    "shortBy": "Faltam {amount}",
-    "stillNeeded": "Ainda necessário para o plano completo: {list}.",
-    "openResources": "Abrir Recursos"
-  },
-  "start": {
-    "title": "Iniciar melhoria",
-    "cancel": "Cancelar",
-    "nothingToStart": "Nada pode ser iniciado agora. Todos os itens estão no nível máximo, bloqueados ou já em melhoria.",
-    "powerGained": "Poder ganho",
-    "packageTime": "Tempo do pacote de dados",
-    "unknown": "Desconhecido",
-    "readOnly": "Só leitura",
-    "openBonuses": "Abrir Bônus",
-    "yourTime": "Seu tempo",
-    "timeHint": "Só a velocidade da sua página Bônus é contada. Se o jogo mostrar outro tempo, mude em Quando começou.",
-    "allBusy": "Tudo aqui está ocupado. Iniciar melhoria fica desligado até algo ficar livre.",
-    "whenStarted": "Quando começou",
-    "timeLeftHours": "Tempo restante, horas",
-    "ends": "Termina",
-    "startedHint": "Escolha Já começou para informar o tempo que o jogo mostra. O horário de término é calculado a partir dele.",
-    "takeCost": {
-      "title": "Descontar o custo de Recursos",
-      "hint": "Subtrai o custo acima do seu estoque.",
-      "enough": "Você tem o suficiente de todos os recursos.",
-      "short": "Faltam {names}. Você ainda pode iniciar, e o estoque para em 0."
-    },
-    "modes": {
-      "now": "Começando agora",
-      "already": "Já começou"
-    }
-  },
-  "researchQueues": {
-    "label": "{name}, {tabs}",
-    "main": {
-      "name": "Fila de pesquisa",
-      "tabs": "Crescimento, Economia e Batalha",
-      "shortName": "Pesquisa"
-    },
-    "warAcademy": {
-      "name": "Fila da War Academy",
-      "tabs": "T11 e T12",
-      "shortName": "War Academy"
-    }
-  }
 }

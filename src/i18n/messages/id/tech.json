@@ -1,98 +1,98 @@
 {
-  "page": {
-    "title": "Teknologi"
-  },
-  "view": {
-    "subline": "{chief} · {count} node teknologi aliansi di Pertumbuhan, Wilayah, dan Pertempuran"
-  },
-  "summary": {
-    "maxed": "Maksimal",
-    "inProgress": "Berjalan",
-    "notStarted": "Belum mulai",
-    "locked": "Terkunci"
-  },
-  "status": {
-    "maxed": "Maksimal",
-    "inProgress": "Berjalan",
-    "notStarted": "Belum mulai",
-    "locked": "Terkunci"
-  },
-  "tabs": {
-    "label": "Kategori teknologi"
-  },
-  "categories": {
-    "Growth": "Pertumbuhan",
-    "Territory": "Wilayah",
-    "Battle": "Pertempuran"
-  },
-  "filters": {
-    "search": "Cari",
-    "searchLabel": "Cari node teknologi",
-    "searchPlaceholder": "Nama node",
-    "tier": "Tier",
-    "allTiers": "Semua tier",
-    "tierOption": "Tier {tier}",
-    "status": "Status",
-    "allStatuses": "Semua",
-    "button": "Cari dan filter",
-    "title": "Cari dan filter",
-    "description": "Temukan node teknologi menurut nama, tier, dan status",
-    "reset": "Atur ulang filter",
-    "done": "Tampilkan {count}",
-    "shown": "{shown} dari {total} node ditampilkan"
-  },
-  "table": {
-    "node": "Node",
-    "level": "Level",
-    "bonus": "Bonus",
-    "cost": "Biaya level berikutnya",
-    "time": "Waktu",
-    "needs": "Syarat"
-  },
-  "node": {
-    "tierDescription": "Tier {tier} · {description}",
-    "levelLabel": "Level {name}",
-    "levelOf": "{level} / {max}",
-    "open": "Buka {name}",
-    "bonusOf": "{now} dari {max}",
-    "bonusNone": "Belum ada, maks {max}",
-    "noBonus": "Tanpa bonus",
-    "maxed": "Maksimal",
-    "noTime": "Tanpa waktu",
-    "readyToUpgrade": "Siap di-upgrade",
-    "nothingNeeded": "Tanpa syarat",
-    "needsPart": "Butuh {name} level {level}",
-    "costLine": "{name} {amount}",
-    "lockedHint": "Terkunci sampai {names}",
-    "requirementPart": "{name} level {level}"
-  },
-  "flyout": {
-    "title": "{name}",
-    "subtitle": "{category}, tier {tier}. {description}",
-    "close": "Tutup",
-    "level": "Level",
-    "bonusNow": "Bonus saat ini",
-    "needsFor": "Syarat untuk level {level}",
-    "needsNothing": "Tanpa syarat.",
-    "needsLine": "Butuh level {need}, kamu punya level {have}",
-    "met": "Terpenuhi",
-    "notMet": "Belum terpenuhi",
-    "requiredBy": "Dibutuhkan oleh",
-    "requiredByNone": "Tidak ada node lain yang membutuhkan node ini.",
-    "requiredByLine": "{category}, tier {tier}, mulai level {from} butuh {name} level {need}",
-    "allLevels": "Semua level",
-    "levelRow": "Level {level}",
-    "done": "Selesai",
-    "next": "Berikutnya",
-    "later": "Nanti",
-    "remaining": "Sisa sampai maks",
-    "derived": "Turunan",
-    "remainingNone": "Tidak ada sisa. Node ini sudah maksimal.",
-    "remainingLine": "{cost}",
-    "remainingTime": "{time}"
-  },
-  "empty": {
-    "title": "Tidak ada node yang cocok",
-    "description": "Ubah pencarian atau filter untuk melihat lebih banyak node."
-  }
+    "page": {
+        "title": "Teknologi"
+    },
+    "view": {
+        "subline": "{chief} · {count} node teknologi aliansi di Pertumbuhan, Wilayah, dan Pertempuran"
+    },
+    "summary": {
+        "maxed": "Maksimal",
+        "inProgress": "Berjalan",
+        "notStarted": "Belum mulai",
+        "locked": "Terkunci"
+    },
+    "status": {
+        "maxed": "Maksimal",
+        "inProgress": "Berjalan",
+        "notStarted": "Belum mulai",
+        "locked": "Terkunci"
+    },
+    "tabs": {
+        "label": "Kategori teknologi"
+    },
+    "categories": {
+        "Growth": "Pertumbuhan",
+        "Territory": "Wilayah",
+        "Battle": "Pertempuran"
+    },
+    "filters": {
+        "search": "Cari",
+        "searchLabel": "Cari node teknologi",
+        "searchPlaceholder": "Nama node",
+        "tier": "Tier",
+        "allTiers": "Semua tier",
+        "tierOption": "Tier {tier}",
+        "status": "Status",
+        "allStatuses": "Semua",
+        "button": "Cari dan filter",
+        "title": "Cari dan filter",
+        "description": "Temukan node teknologi menurut nama, tier, dan status",
+        "reset": "Atur ulang filter",
+        "done": "Tampilkan {count}",
+        "shown": "{shown} dari {total} node ditampilkan"
+    },
+    "table": {
+        "node": "Node",
+        "level": "Level",
+        "bonus": "Bonus",
+        "cost": "Biaya level berikutnya",
+        "time": "Waktu",
+        "needs": "Syarat"
+    },
+    "node": {
+        "tierDescription": "Tier {tier} · {description}",
+        "levelLabel": "Level {name}",
+        "levelOf": "{level} / {max}",
+        "open": "Buka {name}",
+        "bonusOf": "{now} dari {max}",
+        "bonusNone": "Belum ada, maks {max}",
+        "noBonus": "Tanpa bonus",
+        "maxed": "Maksimal",
+        "noTime": "Tanpa waktu",
+        "readyToUpgrade": "Siap di-upgrade",
+        "nothingNeeded": "Tanpa syarat",
+        "needsPart": "Butuh {name} level {level}",
+        "costLine": "{name} {amount}",
+        "lockedHint": "Terkunci sampai {names}",
+        "requirementPart": "{name} level {level}"
+    },
+    "flyout": {
+        "title": "{name}",
+        "subtitle": "{category}, tier {tier}. {description}",
+        "close": "Tutup",
+        "level": "Level",
+        "bonusNow": "Bonus saat ini",
+        "needsFor": "Syarat untuk level {level}",
+        "needsNothing": "Tanpa syarat.",
+        "needsLine": "Butuh level {need}, kamu punya level {have}",
+        "met": "Terpenuhi",
+        "notMet": "Belum terpenuhi",
+        "requiredBy": "Dibutuhkan oleh",
+        "requiredByNone": "Tidak ada node lain yang membutuhkan node ini.",
+        "requiredByLine": "{category}, tier {tier}, mulai level {from} butuh {name} level {need}",
+        "allLevels": "Semua level",
+        "levelRow": "Level {level}",
+        "done": "Selesai",
+        "next": "Berikutnya",
+        "later": "Nanti",
+        "remaining": "Sisa sampai maks",
+        "derived": "Turunan",
+        "remainingNone": "Tidak ada sisa. Node ini sudah maksimal.",
+        "remainingLine": "{cost}",
+        "remainingTime": "{time}"
+    },
+    "empty": {
+        "title": "Tidak ada node yang cocok",
+        "description": "Ubah pencarian atau filter untuk melihat lebih banyak node."
+    }
 }

@@ -1,90 +1,90 @@
 {
-  "page": {
-    "title": "Tundra Album"
-  },
-  "view": {
-    "subline": "{chief} · {details} · {complete} de {total} álbumes completos"
-  },
-  "summary": {
-    "label": "Álbumes completos",
-    "value": "{done} de {total}",
-    "progress": "Álbumes completos",
-    "inData": "{shown} de {all} álbumes están en los datos"
-  },
-  "buffs": {
-    "title": "Bonificaciones que cuentan ahora",
-    "derived": "Calculado",
-    "none": "Aún no hay álbumes completos, así que no cuenta ninguna bonificación de Tundra Album.",
-    "note": "Solo cuentan los álbumes completos. Estas bonificaciones alimentan la página de <link>Bonificaciones</link>."
-  },
-  "album": {
-    "status": {
-      "complete": "Completo",
-      "inProgress": "En progreso"
+    "page": {
+        "title": "Tundra Album"
     },
-    "buffWhenComplete": "Bonificación al completar",
-    "puzzlesDone": "Rompecabezas hechos",
-    "puzzlesValue": "{done} de {total}",
-    "puzzlesProgress": "Rompecabezas hechos de {album}",
-    "completionRewards": "Recompensas por completar",
-    "markComplete": "Marcar álbum como completo",
-    "notCounting": "Aún no cuenta. {buff} cuenta en la página de Bonificaciones solo cuando los {total} rompecabezas están hechos. Marcar álbum como completo marca los {total} rompecabezas y muestra un aviso con Deshacer.",
-    "counting": "Cuenta ahora. {buff} está en la página de Bonificaciones. Si desmarcas un rompecabezas, se quita de nuevo.",
-    "piecesValue": "{collected} de {total} piezas reunidas"
-  },
-  "puzzle": {
-    "pieces": "{count, plural, one {{amount} pieza} other {{amount} piezas}}, estrellas 1 a 5: {split}",
-    "reward": "Recompensa",
-    "done": "Rompecabezas hecho, todas las piezas reunidas",
-    "doneFor": "Hecho, {puzzle}",
-    "collectedLabel": "Piezas reunidas",
-    "collected": "{collected} de {total}",
-    "pieceLabel": "{name}, {stars} estrellas",
-    "pieceHint": "Selecciona las piezas que tienes. Al marcar el rompecabezas como hecho se reúnen todas.",
-    "allCollected": "El rompecabezas está hecho, así que todas las piezas están reunidas."
-  },
-  "reward": {
-    "line": "{amount} {item}",
-    "sized": "{amount} {item} ({size})",
-    "unknownItem": "Objeto desconocido"
-  },
-  "toast": {
-    "markedTitle": "{album} marcado como completo",
-    "markedMessage": "Los {total} rompecabezas están hechos.",
-    "unmarkedTitle": "{puzzle} desmarcado",
-    "unmarkedMessage": "{album} vuelve a estar en progreso y su bonificación salió de Bonificaciones.",
-    "undo": "Deshacer"
-  },
-  "notInData": "Los otros {count} de los {total} Tundra Albums aún no están en los datos. Se agregan cuando el paquete de datos los incluya.",
-  "pieces": {
-    "label": "Piezas reunidas",
-    "value": "{collected} de {available}",
-    "progress": "Piezas reunidas en todos los álbumes",
-    "viewRewards": "Ver recompensas por piezas"
-  },
-  "rewardsFlyout": {
-    "title": "Recompensas por cantidad de piezas",
-    "description": "Las recompensas que obtienes a medida que suman las piezas reunidas en todos los álbumes",
-    "close": "Cerrar",
-    "collected": "Piezas reunidas",
-    "collectedValue": "{collected} de {available}",
-    "progress": "Piezas reunidas en todos los álbumes",
-    "reached": "{reached} de {all} recompensas por piezas alcanzadas",
-    "next": "La siguiente recompensa es a las {pieces} piezas, faltan {missing} por reunir.",
-    "allReached": "Se alcanzaron todas las recompensas por piezas de los datos.",
-    "totalSoFar": "Recompensas obtenidas hasta ahora",
-    "tree": "Recompensas por piezas reunidas",
-    "tier": "Recompensa {tier} a las {pieces} piezas",
-    "stateReached": "Reunidas",
-    "stateNext": "Siguiente, faltan {missing}",
-    "stateLater": "Faltan {missing}"
-  },
-  "picker": {
-    "label": "Álbumes",
-    "title": "Álbumes",
-    "complete": "Álbum completo",
-    "puzzles": "{done} de {total} rompecabezas",
-    "pieces": "{collected} de {total} piezas",
-    "piecesProgress": "Piezas reunidas de {album}"
-  }
+    "view": {
+        "subline": "{chief} · {details} · {complete} de {total} álbumes completos"
+    },
+    "summary": {
+        "label": "Álbumes completos",
+        "value": "{done} de {total}",
+        "progress": "Álbumes completos",
+        "inData": "{shown} de {all} álbumes están en los datos"
+    },
+    "buffs": {
+        "title": "Bonificaciones que cuentan ahora",
+        "derived": "Calculado",
+        "none": "Aún no hay álbumes completos, así que no cuenta ninguna bonificación de Tundra Album.",
+        "note": "Solo cuentan los álbumes completos. Estas bonificaciones alimentan la página de <link>Bonificaciones</link>."
+    },
+    "album": {
+        "status": {
+            "complete": "Completo",
+            "inProgress": "En progreso"
+        },
+        "buffWhenComplete": "Bonificación al completar",
+        "puzzlesDone": "Rompecabezas hechos",
+        "puzzlesValue": "{done} de {total}",
+        "puzzlesProgress": "Rompecabezas hechos de {album}",
+        "completionRewards": "Recompensas por completar",
+        "markComplete": "Marcar álbum como completo",
+        "notCounting": "Aún no cuenta. {buff} cuenta en la página de Bonificaciones solo cuando los {total} rompecabezas están hechos. Marcar álbum como completo marca los {total} rompecabezas y muestra un aviso con Deshacer.",
+        "counting": "Cuenta ahora. {buff} está en la página de Bonificaciones. Si desmarcas un rompecabezas, se quita de nuevo.",
+        "piecesValue": "{collected} de {total} piezas reunidas"
+    },
+    "puzzle": {
+        "pieces": "{count, plural, one {{amount} pieza} other {{amount} piezas}}, estrellas 1 a 5: {split}",
+        "reward": "Recompensa",
+        "done": "Rompecabezas hecho, todas las piezas reunidas",
+        "doneFor": "Hecho, {puzzle}",
+        "collectedLabel": "Piezas reunidas",
+        "collected": "{collected} de {total}",
+        "pieceLabel": "{name}, {stars} estrellas",
+        "pieceHint": "Selecciona las piezas que tienes. Al marcar el rompecabezas como hecho se reúnen todas.",
+        "allCollected": "El rompecabezas está hecho, así que todas las piezas están reunidas."
+    },
+    "reward": {
+        "line": "{amount} {item}",
+        "sized": "{amount} {item} ({size})",
+        "unknownItem": "Objeto desconocido"
+    },
+    "toast": {
+        "markedTitle": "{album} marcado como completo",
+        "markedMessage": "Los {total} rompecabezas están hechos.",
+        "unmarkedTitle": "{puzzle} desmarcado",
+        "unmarkedMessage": "{album} vuelve a estar en progreso y su bonificación salió de Bonificaciones.",
+        "undo": "Deshacer"
+    },
+    "notInData": "Los otros {count} de los {total} Tundra Albums aún no están en los datos. Se agregan cuando el paquete de datos los incluya.",
+    "pieces": {
+        "label": "Piezas reunidas",
+        "value": "{collected} de {available}",
+        "progress": "Piezas reunidas en todos los álbumes",
+        "viewRewards": "Ver recompensas por piezas"
+    },
+    "rewardsFlyout": {
+        "title": "Recompensas por cantidad de piezas",
+        "description": "Las recompensas que obtienes a medida que suman las piezas reunidas en todos los álbumes",
+        "close": "Cerrar",
+        "collected": "Piezas reunidas",
+        "collectedValue": "{collected} de {available}",
+        "progress": "Piezas reunidas en todos los álbumes",
+        "reached": "{reached} de {all} recompensas por piezas alcanzadas",
+        "next": "La siguiente recompensa es a las {pieces} piezas, faltan {missing} por reunir.",
+        "allReached": "Se alcanzaron todas las recompensas por piezas de los datos.",
+        "totalSoFar": "Recompensas obtenidas hasta ahora",
+        "tree": "Recompensas por piezas reunidas",
+        "tier": "Recompensa {tier} a las {pieces} piezas",
+        "stateReached": "Reunidas",
+        "stateNext": "Siguiente, faltan {missing}",
+        "stateLater": "Faltan {missing}"
+    },
+    "picker": {
+        "label": "Álbumes",
+        "title": "Álbumes",
+        "complete": "Álbum completo",
+        "puzzles": "{done} de {total} rompecabezas",
+        "pieces": "{collected} de {total} piezas",
+        "piecesProgress": "Piezas reunidas de {album}"
+    }
 }

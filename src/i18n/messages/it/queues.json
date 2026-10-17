@@ -1,95 +1,95 @@
 {
-  "hoursMinutes": {
-    "hours": "Ore",
-    "minutes": "Minuti"
-  },
-  "jobCard": {
-    "idle": "Inattiva",
-    "progress": "Avanzamento di {title}",
-    "ends": "Termina {date}",
-    "manage": "Gestisci",
-    "finish": "Completa"
-  },
-  "timeLeftPill": {
-    "manage": "{label}, {timeLeft}. Gestisci il potenziamento"
-  },
-  "manage": {
-    "fallbackTitle": "Gestisci potenziamento",
-    "description": "Gestisci il potenziamento in corso",
-    "close": "Chiudi",
-    "finish": "Completa potenziamento",
-    "progress": "Avanzamento del potenziamento",
-    "started": "Iniziato {date}",
-    "ends": "Termina {date}",
-    "speedup": {
-      "title": "Ho usato un'accelerazione",
-      "minutesUsed": "Minuti usati",
-      "apply": "Applica",
-      "timeLeftAfter": "Tempo rimanente dopo l'applicazione",
-      "hint": "Le accelerazioni di qualsiasi tipo sottraggono i loro minuti dal tempo rimanente."
+    "hoursMinutes": {
+        "hours": "Ore",
+        "minutes": "Minuti"
     },
-    "setTime": {
-      "title": "Imposta il tempo rimanente",
-      "button": "Imposta il tempo rimanente",
-      "hint": "Usalo quando il gioco mostra un tempo diverso."
+    "jobCard": {
+        "idle": "Inattiva",
+        "progress": "Avanzamento di {title}",
+        "ends": "Termina {date}",
+        "manage": "Gestisci",
+        "finish": "Completa"
     },
-    "done": {
-      "title": "Quando è finito",
-      "cancel": "Annulla questo potenziamento"
+    "timeLeftPill": {
+        "manage": "{label}, {timeLeft}. Gestisci il potenziamento"
+    },
+    "manage": {
+        "fallbackTitle": "Gestisci potenziamento",
+        "description": "Gestisci il potenziamento in corso",
+        "close": "Chiudi",
+        "finish": "Completa potenziamento",
+        "progress": "Avanzamento del potenziamento",
+        "started": "Iniziato {date}",
+        "ends": "Termina {date}",
+        "speedup": {
+            "title": "Ho usato un'accelerazione",
+            "minutesUsed": "Minuti usati",
+            "apply": "Applica",
+            "timeLeftAfter": "Tempo rimanente dopo l'applicazione",
+            "hint": "Le accelerazioni di qualsiasi tipo sottraggono i loro minuti dal tempo rimanente."
+        },
+        "setTime": {
+            "title": "Imposta il tempo rimanente",
+            "button": "Imposta il tempo rimanente",
+            "hint": "Usalo quando il gioco mostra un tempo diverso."
+        },
+        "done": {
+            "title": "Quando è finito",
+            "cancel": "Annulla questo potenziamento"
+        }
+    },
+    "planStock": {
+        "title": "Ne hai abbastanza?",
+        "shortCount": "ne mancano {short} su {total}",
+        "description": "Ciò che il piano toglie dalle tue scorte, controllato rispetto a ciò che possiedi. Il piano completo è nel risultato qui sotto.",
+        "enough": "Sufficiente",
+        "notEnough": "Non sufficiente",
+        "covered": "{name} coperto",
+        "available": "Disponibili {amount}",
+        "needed": "Necessari {amount}",
+        "leftOver": "{amount} in avanzo",
+        "shortBy": "Mancano {amount}",
+        "stillNeeded": "Ancora necessari per il piano completo: {list}.",
+        "openResources": "Apri Risorse"
+    },
+    "start": {
+        "title": "Avvia potenziamento",
+        "cancel": "Annulla",
+        "nothingToStart": "Al momento non si può avviare nulla. Ogni elemento è al livello massimo, bloccato o già in potenziamento.",
+        "powerGained": "Potenza guadagnata",
+        "packageTime": "Tempo del pacchetto",
+        "unknown": "Sconosciuto",
+        "readOnly": "Sola lettura",
+        "openBonuses": "Apri Bonus",
+        "yourTime": "Il tuo tempo",
+        "timeHint": "Si conta solo la velocità dalla tua pagina Bonus. Se il gioco mostra un altro tempo, cambialo sotto Quando è iniziato.",
+        "allBusy": "Qui è tutto occupato. Avvia potenziamento è disattivato finché uno non si libera.",
+        "whenStarted": "Quando è iniziato",
+        "timeLeftHours": "Tempo rimanente, ore",
+        "ends": "Termina",
+        "startedHint": "Scegli Già avviato per inserire il tempo che mostra il gioco. L'ora di fine si calcola da quello.",
+        "takeCost": {
+            "title": "Scala il costo da Risorse",
+            "hint": "Sottrae il costo qui sopra dalle tue scorte.",
+            "enough": "Hai abbastanza di ogni risorsa.",
+            "short": "Ti mancano {names}. Puoi comunque avviare, e le scorte si fermano a 0."
+        },
+        "modes": {
+            "now": "Inizia ora",
+            "already": "Già avviato"
+        }
+    },
+    "researchQueues": {
+        "label": "{name}, {tabs}",
+        "main": {
+            "name": "Coda di ricerca",
+            "tabs": "Crescita, Economia e Battaglia",
+            "shortName": "Ricerca"
+        },
+        "warAcademy": {
+            "name": "Coda della War Academy",
+            "tabs": "T11 e T12",
+            "shortName": "War Academy"
+        }
     }
-  },
-  "planStock": {
-    "title": "Ne hai abbastanza?",
-    "shortCount": "ne mancano {short} su {total}",
-    "description": "Ciò che il piano toglie dalle tue scorte, controllato rispetto a ciò che possiedi. Il piano completo è nel risultato qui sotto.",
-    "enough": "Sufficiente",
-    "notEnough": "Non sufficiente",
-    "covered": "{name} coperto",
-    "available": "Disponibili {amount}",
-    "needed": "Necessari {amount}",
-    "leftOver": "{amount} in avanzo",
-    "shortBy": "Mancano {amount}",
-    "stillNeeded": "Ancora necessari per il piano completo: {list}.",
-    "openResources": "Apri Risorse"
-  },
-  "start": {
-    "title": "Avvia potenziamento",
-    "cancel": "Annulla",
-    "nothingToStart": "Al momento non si può avviare nulla. Ogni elemento è al livello massimo, bloccato o già in potenziamento.",
-    "powerGained": "Potenza guadagnata",
-    "packageTime": "Tempo del pacchetto",
-    "unknown": "Sconosciuto",
-    "readOnly": "Sola lettura",
-    "openBonuses": "Apri Bonus",
-    "yourTime": "Il tuo tempo",
-    "timeHint": "Si conta solo la velocità dalla tua pagina Bonus. Se il gioco mostra un altro tempo, cambialo sotto Quando è iniziato.",
-    "allBusy": "Qui è tutto occupato. Avvia potenziamento è disattivato finché uno non si libera.",
-    "whenStarted": "Quando è iniziato",
-    "timeLeftHours": "Tempo rimanente, ore",
-    "ends": "Termina",
-    "startedHint": "Scegli Già avviato per inserire il tempo che mostra il gioco. L'ora di fine si calcola da quello.",
-    "takeCost": {
-      "title": "Scala il costo da Risorse",
-      "hint": "Sottrae il costo qui sopra dalle tue scorte.",
-      "enough": "Hai abbastanza di ogni risorsa.",
-      "short": "Ti mancano {names}. Puoi comunque avviare, e le scorte si fermano a 0."
-    },
-    "modes": {
-      "now": "Inizia ora",
-      "already": "Già avviato"
-    }
-  },
-  "researchQueues": {
-    "label": "{name}, {tabs}",
-    "main": {
-      "name": "Coda di ricerca",
-      "tabs": "Crescita, Economia e Battaglia",
-      "shortName": "Ricerca"
-    },
-    "warAcademy": {
-      "name": "Coda della War Academy",
-      "tabs": "T11 e T12",
-      "shortName": "War Academy"
-    }
-  }
 }

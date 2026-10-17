@@ -1,26 +1,26 @@
 {
-  "line": "{types} tipos de tropa com {tiers} tiers cada. Só referência, nada aqui é salvo no seu chefe.",
-  "tiers": {
-    "heading": "Tiers de tropas",
-    "meta": "{types} tipos por {tiers} tiers = {rows} linhas",
-    "typeLabel": "Tipo de tropa",
-    "tableLabel": "Tiers de {type}"
-  },
-  "detail": {
-    "heading": "Detalhe do registro",
-    "meta": "Tier {tier}, os três tipos",
-    "tableLabel": "Tier {tier} por tipo de tropa"
-  },
-  "columns": {
-    "tier": "Tier",
-    "type": "Tipo",
-    "cost": "Custo por tropa",
-    "topCost": "Custo do tier",
-    "time": "Tempo de treino",
-    "promotion": "Custo de promoção"
-  },
-  "cells": {
-    "tier": "Tier {tier}",
-    "none": "Nenhum"
-  }
+    "line": "{types} tipos de tropa com {tiers} tiers cada. Só referência, nada aqui é salvo no seu chefe.",
+    "tiers": {
+        "heading": "Tiers de tropas",
+        "meta": "{types} tipos por {tiers} tiers = {rows} linhas",
+        "typeLabel": "Tipo de tropa",
+        "tableLabel": "Tiers de {type}"
+    },
+    "detail": {
+        "heading": "Detalhe do registro",
+        "meta": "Tier {tier}, os três tipos",
+        "tableLabel": "Tier {tier} por tipo de tropa"
+    },
+    "columns": {
+        "tier": "Tier",
+        "type": "Tipo",
+        "cost": "Custo por tropa",
+        "topCost": "Custo do tier",
+        "time": "Tempo de treino",
+        "promotion": "Custo de promoção"
+    },
+    "cells": {
+        "tier": "Tier {tier}",
+        "none": "Nenhum"
+    }
 }

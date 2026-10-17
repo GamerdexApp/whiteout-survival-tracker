@@ -1,63 +1,63 @@
 {
-  "page": {
-    "title": "VIP"
-  },
-  "view": {
-    "sublineKnown": "{chief} · {details} · VIP {level} dengan {xp} XP",
-    "sublineUnknown": "{chief} · {details} · VIP belum diatur"
-  },
-  "input": {
-    "title": "VIP-mu",
-    "enterAs": "Isi VIP sebagai",
-    "modeXp": "Total XP",
-    "modeLevel": "Level VIP",
-    "xpLabel": "Total XP VIP",
-    "xpHint": "XP bulat dari 0 sampai {max}.",
-    "levelLabel": "Level VIP",
-    "notSet": "Belum diatur",
-    "levelHint": "Memilih level mengatur total XP ke total terendah level itu. Ketik XP asli agar tepat.",
-    "reached": "Level tercapai",
-    "levelName": "VIP {level}",
-    "unknown": "Tidak diketahui"
-  },
-  "progress": {
-    "label": "Progres di dalam VIP {level}",
-    "toNext": "{xp} XP ke VIP {level}",
-    "percent": "{percent}%",
-    "range": "Total XP {from} sampai {to} untuk level ini.",
-    "estimate": "Perkiraan. Yang diisi adalah level, jadi XP-nya total terendah VIP {level}. Ketik XP asli untuk nilai yang tepat.",
-    "maxLevel": "Level maksimal",
-    "maxHint": "VIP {level} adalah level terakhir."
-  },
-  "perks": {
-    "title": "Yang diberikan VIP {level}",
-    "subtitle": "Total di level ini, bukan selisih dari level sebelumnya.",
-    "unknown": "Isi VIP-mu untuk melihat yang didapat."
-  },
-  "next": {
-    "title": "VIP {level} menambah",
-    "subtitle": "Dibandingkan dengan VIP {from}.",
-    "new": "baru",
-    "was": "dulu {value}",
-    "maxLevel": "Level maksimal. Tidak ada level berikutnya untuk dilihat.",
-    "unknown": "Isi VIP-mu untuk melihat level berikutnya."
-  },
-  "table": {
-    "title": "Semua {count} level, total {total} XP",
-    "level": "Level",
-    "xpFromLast": "XP dari level lalu",
-    "totalXp": "Total XP",
-    "bonuses": "Bonus baru atau lebih tinggi",
-    "state": "Status",
-    "xpFromLastMobile": "XP dari level lalu {xp}",
-    "totalMobile": "Total {xp}",
-    "unknown": "Tidak diketahui",
-    "states": {
-      "reached": "Tercapai",
-      "current": "Saat ini",
-      "ahead": "Berikutnya",
-      "unknown": "Tidak diketahui"
+    "page": {
+        "title": "VIP"
     },
-    "levelName": "VIP {level}"
-  }
+    "view": {
+        "sublineKnown": "{chief} · {details} · VIP {level} dengan {xp} XP",
+        "sublineUnknown": "{chief} · {details} · VIP belum diatur"
+    },
+    "input": {
+        "title": "VIP-mu",
+        "enterAs": "Isi VIP sebagai",
+        "modeXp": "Total XP",
+        "modeLevel": "Level VIP",
+        "xpLabel": "Total XP VIP",
+        "xpHint": "XP bulat dari 0 sampai {max}.",
+        "levelLabel": "Level VIP",
+        "notSet": "Belum diatur",
+        "levelHint": "Memilih level mengatur total XP ke total terendah level itu. Ketik XP asli agar tepat.",
+        "reached": "Level tercapai",
+        "levelName": "VIP {level}",
+        "unknown": "Tidak diketahui"
+    },
+    "progress": {
+        "label": "Progres di dalam VIP {level}",
+        "toNext": "{xp} XP ke VIP {level}",
+        "percent": "{percent}%",
+        "range": "Total XP {from} sampai {to} untuk level ini.",
+        "estimate": "Perkiraan. Yang diisi adalah level, jadi XP-nya total terendah VIP {level}. Ketik XP asli untuk nilai yang tepat.",
+        "maxLevel": "Level maksimal",
+        "maxHint": "VIP {level} adalah level terakhir."
+    },
+    "perks": {
+        "title": "Yang diberikan VIP {level}",
+        "subtitle": "Total di level ini, bukan selisih dari level sebelumnya.",
+        "unknown": "Isi VIP-mu untuk melihat yang didapat."
+    },
+    "next": {
+        "title": "VIP {level} menambah",
+        "subtitle": "Dibandingkan dengan VIP {from}.",
+        "new": "baru",
+        "was": "dulu {value}",
+        "maxLevel": "Level maksimal. Tidak ada level berikutnya untuk dilihat.",
+        "unknown": "Isi VIP-mu untuk melihat level berikutnya."
+    },
+    "table": {
+        "title": "Semua {count} level, total {total} XP",
+        "level": "Level",
+        "xpFromLast": "XP dari level lalu",
+        "totalXp": "Total XP",
+        "bonuses": "Bonus baru atau lebih tinggi",
+        "state": "Status",
+        "xpFromLastMobile": "XP dari level lalu {xp}",
+        "totalMobile": "Total {xp}",
+        "unknown": "Tidak diketahui",
+        "states": {
+            "reached": "Tercapai",
+            "current": "Saat ini",
+            "ahead": "Berikutnya",
+            "unknown": "Tidak diketahui"
+        },
+        "levelName": "VIP {level}"
+    }
 }

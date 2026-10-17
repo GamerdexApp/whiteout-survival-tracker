@@ -1,216 +1,216 @@
 {
-  "chiefCount": "{count, plural, one {{amount} chef} other {{amount} chefs}}",
-  "localStorageNote": {
-    "title": "Stockage local.",
-    "body": "Vos chefs sont stockés uniquement dans ce navigateur. Ils sont perdus si le cache du navigateur est vidé. Exportez régulièrement une sauvegarde."
-  },
-  "page": {
-    "title": "Paramètres",
-    "subline": "Gérez vos données, les réglages des chefs et l'apparence",
-    "tabsLabel": "Paramètres",
-    "tabs": {
-      "preferences": "Préférences",
-      "data": "Sauvegarde et données",
-      "about": "À propos"
+    "chiefCount": "{count, plural, one {{amount} chef} other {{amount} chefs}}",
+    "localStorageNote": {
+        "title": "Stockage local.",
+        "body": "Vos chefs sont stockés uniquement dans ce navigateur. Ils sont perdus si le cache du navigateur est vidé. Exportez régulièrement une sauvegarde."
+    },
+    "page": {
+        "title": "Paramètres",
+        "subline": "Gérez vos données, les réglages des chefs et l'apparence",
+        "tabsLabel": "Paramètres",
+        "tabs": {
+            "preferences": "Préférences",
+            "data": "Sauvegarde et données",
+            "about": "À propos"
+        }
+    },
+    "about": {
+        "version": "Version {version}",
+        "summary": "Suivez votre progression dans Whiteout Survival : bâtiments, héros, équipement du chef, experts, familiers, troupes, recherche, technologie d'alliance, ressources et votre planificateur. Tout est stocké dans ce navigateur.",
+        "wiki": "Wiki de Whiteout Survival",
+        "disclaimer": "Non affilié à Century Games et non approuvé par lui. Whiteout Survival est une marque de Century Games."
+    },
+    "preferences": {
+        "chiefSettings": {
+            "title": "Réglages des chefs",
+            "description": "S'appliquent à tous les chefs. Enregistrés aussitôt.",
+            "footnote": "Changer une option dans un calculateur ne modifie pas ces valeurs par défaut. L'affichage du Furnace change seulement la façon d'écrire un niveau, jamais le niveau lui-même. Ajouter ou supprimer un chef ne réinitialise jamais ces réglages.",
+            "groups": {
+                "furnaceDisplay": "Affichage du Furnace",
+                "lists": "Listes",
+                "calculatorOptions": "Options par défaut des calculateurs"
+            },
+            "fullLevelLabels": {
+                "label": "Afficher les niveaux complets",
+                "description": "Affiche le sous-niveau du Furnace, par exemple FC 5-2 au lieu de FC 5, dans la barre latérale, la vue d'ensemble et Bâtiments. Les autres bâtiments affichent déjà leur niveau complet."
+            },
+            "hideMaxed": {
+                "label": "Masquer les éléments au max",
+                "description": "Masque les bâtiments, héros, familiers et experts qui sont à leur niveau maximum. Chaque liste garde un filtre Afficher les maxés, donc rien n'est perdu."
+            },
+            "useBonuses": {
+                "label": "Appliquer mes totaux de Bonus",
+                "description": "Les nouveaux calculateurs démarrent avec le pourcentage de vitesse de construction de la page Bonus. Un calculateur peut le modifier pour un calcul."
+            },
+            "showSpeedups": {
+                "label": "Afficher les minutes d'accélération",
+                "description": "Affiche les minutes d'accélération nécessaires sous la durée dans chaque résultat de calculateur."
+            },
+            "showEventPoints": {
+                "label": "Afficher les points d'événement",
+                "description": "Ajoute la ligne des points d'événement aux résultats de calculateur qui la fournissent."
+            }
+        },
+        "appearance": {
+            "title": "Apparence",
+            "description": "Choisissez l'aspect de l'application. Enregistré avec vos données.",
+            "themeLabel": "Thème",
+            "themeNote": "Système suit votre appareil et vaut {current} actuellement. Ce choix fait partie de votre sauvegarde."
+        },
+        "themes": {
+            "light": "Clair",
+            "dark": "Sombre",
+            "system": "Système"
+        }
+    },
+    "data": {
+        "backupDownloaded": "Sauvegarde téléchargée",
+        "merged": "Sauvegarde fusionnée",
+        "replaced": "Sauvegarde remplacée",
+        "undo": "Annuler",
+        "resetDone": "Toutes les données réinitialisées",
+        "resetDoneMessage": "{chiefs} supprimés et réglages effacés.",
+        "management": {
+            "title": "Gestion des données",
+            "description": "Un seul fichier de sauvegarde contient tous les chefs et vos réglages."
+        },
+        "export": {
+            "title": "Exporter les données",
+            "description": "Téléchargez un fichier de sauvegarde de tous vos chefs enregistrés. Nom du fichier : <file>{fileName}</file>. La date est celle de votre jour local.",
+            "button": "Exporter tous les chefs"
+        },
+        "import": {
+            "title": "Importer des données",
+            "description": "Envoyez un fichier exporté auparavant (.json). Il est d'abord vérifié, puis vous choisissez Fusionner ou Remplacer et voyez ce qui change. Rien ne change avant votre confirmation.",
+            "chooseFile": "Choisir un fichier",
+            "noFile": "Aucun fichier choisi",
+            "review": "Vérifier l'import"
+        },
+        "reset": {
+            "title": "Réinitialiser toutes les données",
+            "warningTitle": "Attention :",
+            "warning": "Cela supprime tous les chefs et réinitialise les réglages des chefs et le thème. Vous pouvez annuler pendant 10 secondes, alors exportez d'abord une sauvegarde si vous voulez en garder une copie.",
+            "button": "Réinitialiser toutes les données"
+        },
+        "chiefs": {
+            "title": "Chefs",
+            "description": "Créez, renommez, modifiez et supprimez les chefs sur leur propre page. L'export, l'import et la réinitialisation s'appliquent à tous.",
+            "manage": "Gérer les chefs"
+        }
+    },
+    "importDialog": {
+        "title": "Importer une sauvegarde",
+        "cancel": "Annuler",
+        "close": "Fermer",
+        "merge": "Fusionner",
+        "replace": "Remplacer",
+        "failedTitle": "Échec de l'import.",
+        "checksTitle": "Vérifications du fichier.",
+        "checks": "La liste des chefs a été trouvée et {count, plural, one {{amount} entrée a été lue} other {{amount} entrées ont été lues}}. Rien n'est encore enregistré, vos chefs actuels sont donc intacts.",
+        "howToApply": "Comment appliquer le fichier ?",
+        "modeLabel": "Mode d'import",
+        "modes": {
+            "merge": "Fusionner (recommandé)",
+            "replace": "Tout remplacer sur cet appareil"
+        },
+        "modeNotes": {
+            "merge": "Ajoute les nouveaux chefs et garde la copie la plus récente d'un chef présent des deux côtés. Les chefs uniquement sur cet appareil restent. Vos réglages restent.",
+            "replace": "Supprime tous les chefs de cet appareil et charge le fichier tel quel, réglages compris. Utilisez-le pour restaurer une copie exacte."
+        },
+        "whatChanges": "Ce qui change",
+        "columns": {
+            "chief": "Chef",
+            "inFile": "Dans le fichier",
+            "onDevice": "Sur cet appareil",
+            "result": "Résultat"
+        },
+        "results": {
+            "added": "Ajouté",
+            "updated": "Mis à jour depuis le fichier",
+            "kept": "Copie de cet appareil conservée",
+            "replaced": "Chargé depuis le fichier",
+            "removed": "Supprimé"
+        },
+        "notThere": "Absent",
+        "noChiefs": "Aucun chef dans le fichier.",
+        "undoNote": "L'annulation reste disponible pendant 10 secondes après l'import.",
+        "bytes": "{amount} o",
+        "kilobytes": "{amount} Ko",
+        "fileInfo": "{name} · {size}"
+    },
+    "resetDialog": {
+        "title": "Réinitialiser toutes les données",
+        "cancel": "Annuler",
+        "confirm": "Oui, tout réinitialiser",
+        "question": "Supprimer tous les {chiefs} de ce navigateur ?",
+        "removedTitle": "Ce qui est supprimé",
+        "settingsNote": "Votre choix Clair, Sombre ou Système revient sur Système. Les réglages des chefs reviennent à leurs valeurs par défaut. Le chef actif est effacé.",
+        "undoNote": "L'annulation reste disponible pendant 10 secondes après la réinitialisation. Exportez d'abord une sauvegarde si vous voulez une copie de fichier durable.",
+        "exportFirst": "Exporter d'abord une sauvegarde"
+    },
+    "backup": {
+        "notJson": "Le fichier n'est pas un JSON valide. Rien n'a été modifié.",
+        "noChiefsList": "La liste des chefs est absente. Rien n'a été modifié.",
+        "duplicateId": "Deux chefs partagent le même identifiant. Rien n'a été modifié.",
+        "withNothingChanged": "{reason} Rien n'a été modifié.",
+        "chief": {
+            "notObject": "Le chef {position} n'est pas un objet.",
+            "noId": "Le chef {position} n'a pas d'identifiant.",
+            "noName": "Le chef {position} n'a pas de nom.",
+            "noDates": "Le chef {position} n'a pas ses dates.",
+            "badStateNumber": "Le chef {position} a un numéro d'état qui n'est pas un nombre entier.",
+            "badCoreEvent": "Le chef {position} a un événement clé inconnu.",
+            "badUnlock": "Le chef {position} a un réglage de déblocage qui n'est pas un jour de serveur d'un domaine connu.",
+            "badPack": "Le chef {position} a un réglage de pack qui n'est ni activé ni désactivé."
+        },
+        "settings": {
+            "notObject": "Les réglages ne sont pas un objet.",
+            "badTheme": "Le thème n'est ni Clair, ni Sombre, ni Système.",
+            "notText": "Le réglage {key} n'est pas un texte.",
+            "uiNotObject": "Les réglages de l'interface ne sont pas un objet.",
+            "badTimeZone": "Le fuseau horaire n'est pas connu du navigateur."
+        },
+        "summary": {
+            "added": "{amount} ajouté(s)",
+            "updated": "{amount} mis à jour depuis le fichier",
+            "kept": "{amount} conservé(s) comme sur cet appareil",
+            "replaced": "{amount} chargé(s) depuis le fichier",
+            "removed": "{amount} supprimé(s)"
+        }
+    },
+    "region": {
+        "title": "Langue et région",
+        "description": "Choisissez la langue et l'écriture des nombres et des dates. Enregistré avec vos données.",
+        "language": {
+            "label": "Langue",
+            "hint": "Les noms des héros, objets, bâtiments et recherches viennent des données du jeu et restent en anglais pour l'instant."
+        },
+        "numberFormat": {
+            "label": "Format des nombres",
+            "hint": "Exemple : {example}",
+            "options": {
+                "auto": "Automatique, suit la langue",
+                "us": "1,234.56 (États-Unis)",
+                "european": "1.234,56 (Allemagne)",
+                "french": "1 234,56 (France)",
+                "swiss": "1’234.56 (Suisse)",
+                "indian": "12,34,567.89 (Inde)"
+            }
+        },
+        "dateFormat": {
+            "label": "Format des dates",
+            "hint": "Exemple : {example}",
+            "options": {
+                "auto": "Automatique, suit la langue",
+                "mdy": "Mois/Jour/Année",
+                "dmy": "Jour/Mois/Année",
+                "ymd": "Année-Mois-Jour"
+            }
+        },
+        "timeZone": {
+            "label": "Fuseau horaire",
+            "hint": "Utilisé pour les dates et heures, et pour Mon heure dans Événements. Exemple : 14:05 UTC s'affiche {example}.",
+            "auto": "Automatique, suit votre appareil ({zone})"
+        }
     }
-  },
-  "about": {
-    "version": "Version {version}",
-    "summary": "Suivez votre progression dans Whiteout Survival : bâtiments, héros, équipement du chef, experts, familiers, troupes, recherche, technologie d'alliance, ressources et votre planificateur. Tout est stocké dans ce navigateur.",
-    "wiki": "Wiki de Whiteout Survival",
-    "disclaimer": "Non affilié à Century Games et non approuvé par lui. Whiteout Survival est une marque de Century Games."
-  },
-  "preferences": {
-    "chiefSettings": {
-      "title": "Réglages des chefs",
-      "description": "S'appliquent à tous les chefs. Enregistrés aussitôt.",
-      "footnote": "Changer une option dans un calculateur ne modifie pas ces valeurs par défaut. L'affichage du Furnace change seulement la façon d'écrire un niveau, jamais le niveau lui-même. Ajouter ou supprimer un chef ne réinitialise jamais ces réglages.",
-      "groups": {
-        "furnaceDisplay": "Affichage du Furnace",
-        "lists": "Listes",
-        "calculatorOptions": "Options par défaut des calculateurs"
-      },
-      "fullLevelLabels": {
-        "label": "Afficher les niveaux complets",
-        "description": "Affiche le sous-niveau du Furnace, par exemple FC 5-2 au lieu de FC 5, dans la barre latérale, la vue d'ensemble et Bâtiments. Les autres bâtiments affichent déjà leur niveau complet."
-      },
-      "hideMaxed": {
-        "label": "Masquer les éléments au max",
-        "description": "Masque les bâtiments, héros, familiers et experts qui sont à leur niveau maximum. Chaque liste garde un filtre Afficher les maxés, donc rien n'est perdu."
-      },
-      "useBonuses": {
-        "label": "Appliquer mes totaux de Bonus",
-        "description": "Les nouveaux calculateurs démarrent avec le pourcentage de vitesse de construction de la page Bonus. Un calculateur peut le modifier pour un calcul."
-      },
-      "showSpeedups": {
-        "label": "Afficher les minutes d'accélération",
-        "description": "Affiche les minutes d'accélération nécessaires sous la durée dans chaque résultat de calculateur."
-      },
-      "showEventPoints": {
-        "label": "Afficher les points d'événement",
-        "description": "Ajoute la ligne des points d'événement aux résultats de calculateur qui la fournissent."
-      }
-    },
-    "appearance": {
-      "title": "Apparence",
-      "description": "Choisissez l'aspect de l'application. Enregistré avec vos données.",
-      "themeLabel": "Thème",
-      "themeNote": "Système suit votre appareil et vaut {current} actuellement. Ce choix fait partie de votre sauvegarde."
-    },
-    "themes": {
-      "light": "Clair",
-      "dark": "Sombre",
-      "system": "Système"
-    }
-  },
-  "data": {
-    "backupDownloaded": "Sauvegarde téléchargée",
-    "merged": "Sauvegarde fusionnée",
-    "replaced": "Sauvegarde remplacée",
-    "undo": "Annuler",
-    "resetDone": "Toutes les données réinitialisées",
-    "resetDoneMessage": "{chiefs} supprimés et réglages effacés.",
-    "management": {
-      "title": "Gestion des données",
-      "description": "Un seul fichier de sauvegarde contient tous les chefs et vos réglages."
-    },
-    "export": {
-      "title": "Exporter les données",
-      "description": "Téléchargez un fichier de sauvegarde de tous vos chefs enregistrés. Nom du fichier : <file>{fileName}</file>. La date est celle de votre jour local.",
-      "button": "Exporter tous les chefs"
-    },
-    "import": {
-      "title": "Importer des données",
-      "description": "Envoyez un fichier exporté auparavant (.json). Il est d'abord vérifié, puis vous choisissez Fusionner ou Remplacer et voyez ce qui change. Rien ne change avant votre confirmation.",
-      "chooseFile": "Choisir un fichier",
-      "noFile": "Aucun fichier choisi",
-      "review": "Vérifier l'import"
-    },
-    "reset": {
-      "title": "Réinitialiser toutes les données",
-      "warningTitle": "Attention :",
-      "warning": "Cela supprime tous les chefs et réinitialise les réglages des chefs et le thème. Vous pouvez annuler pendant 10 secondes, alors exportez d'abord une sauvegarde si vous voulez en garder une copie.",
-      "button": "Réinitialiser toutes les données"
-    },
-    "chiefs": {
-      "title": "Chefs",
-      "description": "Créez, renommez, modifiez et supprimez les chefs sur leur propre page. L'export, l'import et la réinitialisation s'appliquent à tous.",
-      "manage": "Gérer les chefs"
-    }
-  },
-  "importDialog": {
-    "title": "Importer une sauvegarde",
-    "cancel": "Annuler",
-    "close": "Fermer",
-    "merge": "Fusionner",
-    "replace": "Remplacer",
-    "failedTitle": "Échec de l'import.",
-    "checksTitle": "Vérifications du fichier.",
-    "checks": "La liste des chefs a été trouvée et {count, plural, one {{amount} entrée a été lue} other {{amount} entrées ont été lues}}. Rien n'est encore enregistré, vos chefs actuels sont donc intacts.",
-    "howToApply": "Comment appliquer le fichier ?",
-    "modeLabel": "Mode d'import",
-    "modes": {
-      "merge": "Fusionner (recommandé)",
-      "replace": "Tout remplacer sur cet appareil"
-    },
-    "modeNotes": {
-      "merge": "Ajoute les nouveaux chefs et garde la copie la plus récente d'un chef présent des deux côtés. Les chefs uniquement sur cet appareil restent. Vos réglages restent.",
-      "replace": "Supprime tous les chefs de cet appareil et charge le fichier tel quel, réglages compris. Utilisez-le pour restaurer une copie exacte."
-    },
-    "whatChanges": "Ce qui change",
-    "columns": {
-      "chief": "Chef",
-      "inFile": "Dans le fichier",
-      "onDevice": "Sur cet appareil",
-      "result": "Résultat"
-    },
-    "results": {
-      "added": "Ajouté",
-      "updated": "Mis à jour depuis le fichier",
-      "kept": "Copie de cet appareil conservée",
-      "replaced": "Chargé depuis le fichier",
-      "removed": "Supprimé"
-    },
-    "notThere": "Absent",
-    "noChiefs": "Aucun chef dans le fichier.",
-    "undoNote": "L'annulation reste disponible pendant 10 secondes après l'import.",
-    "bytes": "{amount} o",
-    "kilobytes": "{amount} Ko",
-    "fileInfo": "{name} · {size}"
-  },
-  "resetDialog": {
-    "title": "Réinitialiser toutes les données",
-    "cancel": "Annuler",
-    "confirm": "Oui, tout réinitialiser",
-    "question": "Supprimer tous les {chiefs} de ce navigateur ?",
-    "removedTitle": "Ce qui est supprimé",
-    "settingsNote": "Votre choix Clair, Sombre ou Système revient sur Système. Les réglages des chefs reviennent à leurs valeurs par défaut. Le chef actif est effacé.",
-    "undoNote": "L'annulation reste disponible pendant 10 secondes après la réinitialisation. Exportez d'abord une sauvegarde si vous voulez une copie de fichier durable.",
-    "exportFirst": "Exporter d'abord une sauvegarde"
-  },
-  "backup": {
-    "notJson": "Le fichier n'est pas un JSON valide. Rien n'a été modifié.",
-    "noChiefsList": "La liste des chefs est absente. Rien n'a été modifié.",
-    "duplicateId": "Deux chefs partagent le même identifiant. Rien n'a été modifié.",
-    "withNothingChanged": "{reason} Rien n'a été modifié.",
-    "chief": {
-      "notObject": "Le chef {position} n'est pas un objet.",
-      "noId": "Le chef {position} n'a pas d'identifiant.",
-      "noName": "Le chef {position} n'a pas de nom.",
-      "noDates": "Le chef {position} n'a pas ses dates.",
-      "badStateNumber": "Le chef {position} a un numéro d'état qui n'est pas un nombre entier.",
-      "badCoreEvent": "Le chef {position} a un événement clé inconnu.",
-      "badUnlock": "Le chef {position} a un réglage de déblocage qui n'est pas un jour de serveur d'un domaine connu.",
-      "badPack": "Le chef {position} a un réglage de pack qui n'est ni activé ni désactivé."
-    },
-    "settings": {
-      "notObject": "Les réglages ne sont pas un objet.",
-      "badTheme": "Le thème n'est ni Clair, ni Sombre, ni Système.",
-      "notText": "Le réglage {key} n'est pas un texte.",
-      "uiNotObject": "Les réglages de l'interface ne sont pas un objet.",
-      "badTimeZone": "Le fuseau horaire n'est pas connu du navigateur."
-    },
-    "summary": {
-      "added": "{amount} ajouté(s)",
-      "updated": "{amount} mis à jour depuis le fichier",
-      "kept": "{amount} conservé(s) comme sur cet appareil",
-      "replaced": "{amount} chargé(s) depuis le fichier",
-      "removed": "{amount} supprimé(s)"
-    }
-  },
-  "region": {
-    "title": "Langue et région",
-    "description": "Choisissez la langue et l'écriture des nombres et des dates. Enregistré avec vos données.",
-    "language": {
-      "label": "Langue",
-      "hint": "Les noms des héros, objets, bâtiments et recherches viennent des données du jeu et restent en anglais pour l'instant."
-    },
-    "numberFormat": {
-      "label": "Format des nombres",
-      "hint": "Exemple : {example}",
-      "options": {
-        "auto": "Automatique, suit la langue",
-        "us": "1,234.56 (États-Unis)",
-        "european": "1.234,56 (Allemagne)",
-        "french": "1 234,56 (France)",
-        "swiss": "1’234.56 (Suisse)",
-        "indian": "12,34,567.89 (Inde)"
-      }
-    },
-    "dateFormat": {
-      "label": "Format des dates",
-      "hint": "Exemple : {example}",
-      "options": {
-        "auto": "Automatique, suit la langue",
-        "mdy": "Mois/Jour/Année",
-        "dmy": "Jour/Mois/Année",
-        "ymd": "Année-Mois-Jour"
-      }
-    },
-    "timeZone": {
-      "label": "Fuseau horaire",
-      "hint": "Utilisé pour les dates et heures, et pour Mon heure dans Événements. Exemple : 14:05 UTC s'affiche {example}.",
-      "auto": "Automatique, suit votre appareil ({zone})"
-    }
-  }
 }

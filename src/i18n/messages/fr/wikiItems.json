@@ -1,79 +1,79 @@
 {
-  "line": "{items} objets dans {categories} catégories, avec sources et taux de butin de {chests} coffres.",
-  "catalog": {
-    "title": "Catalogue d'objets",
-    "showing": "{shown} sur {total} affichés",
-    "search": "Rechercher",
-    "searchPlaceholder": "Rechercher des objets par nom ou description",
-    "table": "Objets",
-    "item": "Objet",
-    "category": "Catégorie",
-    "sources": "Sources",
-    "lootRates": "Taux de butin",
-    "description": "Description",
-    "emptyTitle": "Aucun objet ne correspond",
-    "emptyDescription": "Modifiez la recherche ou les filtres."
-  },
-  "filters": {
-    "title": "Filtres",
-    "button": "Filtres",
-    "summary": "Filtres : {category}. Sources : {sources}",
-    "edit": "Modifier",
-    "category": "Catégorie",
-    "all": "Toutes",
-    "sources": "Sources",
-    "lootRates": "Taux de butin",
-    "reset": "Réinitialiser",
-    "show": "{count, plural, one {Afficher {amount} objet} other {Afficher {amount} objets}}"
-  },
-  "sourcesFilter": {
-    "any": "Toutes sources",
-    "has": "Avec sources",
-    "none": "Sans sources"
-  },
-  "sourcesChip": {
-    "any": "Toutes",
-    "has": "Avec sources",
-    "none": "Sans sources ({amount})"
-  },
-  "lootFilter": {
-    "any": "Tous",
-    "has": "Avec taux de butin"
-  },
-  "lootChip": {
-    "any": "Tous",
-    "has": "Avec taux de butin ({amount} coffres)"
-  },
-  "loot": {
-    "yes": "Oui",
-    "no": "Non",
-    "notChest": "Pas un coffre"
-  },
-  "detail": {
-    "title": "Détails",
-    "category": "Catégorie",
-    "sources": "Sources",
-    "speedup": "Accélération",
-    "speedupValue": "{type}, {minutes} minutes",
-    "description": "Description",
-    "lootRates": "Taux de butin",
-    "lootRowsListed": "{count, plural, one {{amount} ligne listée} other {{amount} lignes listées}}",
-    "noLootRates": "Aucun taux de butin dans les données pour ce coffre",
-    "lootTitle": "Taux de butin",
-    "lootMeta": "{count, plural, one {{amount} récompense} other {{amount} récompenses}}",
-    "lootTable": "Taux de butin du coffre",
-    "reward": "Récompense",
-    "amount": "Quantité",
-    "chance": "Chance",
-    "chanceValue": "{percent} %",
-    "name": "Nom"
-  },
-  "speedupType": {
-    "general": "Générale",
-    "construction": "Construction",
-    "troop": "Troupes",
-    "research": "Recherche",
-    "learning": "Apprentissage",
-    "healing": "Soins"
-  }
+    "line": "{items} objets dans {categories} catégories, avec sources et taux de butin de {chests} coffres.",
+    "catalog": {
+        "title": "Catalogue d'objets",
+        "showing": "{shown} sur {total} affichés",
+        "search": "Rechercher",
+        "searchPlaceholder": "Rechercher des objets par nom ou description",
+        "table": "Objets",
+        "item": "Objet",
+        "category": "Catégorie",
+        "sources": "Sources",
+        "lootRates": "Taux de butin",
+        "description": "Description",
+        "emptyTitle": "Aucun objet ne correspond",
+        "emptyDescription": "Modifiez la recherche ou les filtres."
+    },
+    "filters": {
+        "title": "Filtres",
+        "button": "Filtres",
+        "summary": "Filtres : {category}. Sources : {sources}",
+        "edit": "Modifier",
+        "category": "Catégorie",
+        "all": "Toutes",
+        "sources": "Sources",
+        "lootRates": "Taux de butin",
+        "reset": "Réinitialiser",
+        "show": "{count, plural, one {Afficher {amount} objet} other {Afficher {amount} objets}}"
+    },
+    "sourcesFilter": {
+        "any": "Toutes sources",
+        "has": "Avec sources",
+        "none": "Sans sources"
+    },
+    "sourcesChip": {
+        "any": "Toutes",
+        "has": "Avec sources",
+        "none": "Sans sources ({amount})"
+    },
+    "lootFilter": {
+        "any": "Tous",
+        "has": "Avec taux de butin"
+    },
+    "lootChip": {
+        "any": "Tous",
+        "has": "Avec taux de butin ({amount} coffres)"
+    },
+    "loot": {
+        "yes": "Oui",
+        "no": "Non",
+        "notChest": "Pas un coffre"
+    },
+    "detail": {
+        "title": "Détails",
+        "category": "Catégorie",
+        "sources": "Sources",
+        "speedup": "Accélération",
+        "speedupValue": "{type}, {minutes} minutes",
+        "description": "Description",
+        "lootRates": "Taux de butin",
+        "lootRowsListed": "{count, plural, one {{amount} ligne listée} other {{amount} lignes listées}}",
+        "noLootRates": "Aucun taux de butin dans les données pour ce coffre",
+        "lootTitle": "Taux de butin",
+        "lootMeta": "{count, plural, one {{amount} récompense} other {{amount} récompenses}}",
+        "lootTable": "Taux de butin du coffre",
+        "reward": "Récompense",
+        "amount": "Quantité",
+        "chance": "Chance",
+        "chanceValue": "{percent} %",
+        "name": "Nom"
+    },
+    "speedupType": {
+        "general": "Générale",
+        "construction": "Construction",
+        "troop": "Troupes",
+        "research": "Recherche",
+        "learning": "Apprentissage",
+        "healing": "Soins"
+    }
 }

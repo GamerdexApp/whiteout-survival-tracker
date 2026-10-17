@@ -1,215 +1,215 @@
 {
-  "defaultSetName": "套装{number}",
-  "troop": {
-    "infantry": "盾兵",
-    "lancer": "矛兵",
-    "marksman": "弓兵"
-  },
-  "lock": {
-    "needsMythic": "需要神话装备",
-    "needsBoth": "需要强化 100 和精通锻造 10 级",
-    "needsEnhancement": "需要强化 100",
-    "needsForging": "需要精通锻造 10 级"
-  },
-  "tab": {
-    "deletedTitle": "已删除{name}",
-    "deletedMessage": "四件装备及其目标已移除。",
-    "undo": "撤销",
-    "tiles": {
-      "sets": "装备套装",
-      "power": "装备战力，全部套装",
-      "ofPieces": "{count} / {total}",
-      "atEnhancementMax": "强化达到 100 的装备",
-      "empowered": "已强化赋能的装备",
-      "ready": "可赋能的装备"
+    "defaultSetName": "套装{number}",
+    "troop": {
+        "infantry": "盾兵",
+        "lancer": "矛兵",
+        "marksman": "弓兵"
     },
-    "search": "搜索装备套装",
-    "filters": "筛选",
-    "plan": "计划",
-    "showing": "显示{shown} / {total}套装备。目标在此处只读，请在计划中设置。",
-    "empty": {
-      "title": "还没有装备套装",
-      "description": "一套装备包含一件 Goggles、Gloves、Belt 和 Boots。添加一套即可记录其等级。"
+    "lock": {
+        "needsMythic": "需要神话装备",
+        "needsBoth": "需要强化 100 和精通锻造 10 级",
+        "needsEnhancement": "需要强化 100",
+        "needsForging": "需要精通锻造 10 级"
     },
-    "addSet": "添加装备套装",
-    "unknownHero": "未知英雄",
-    "power": "战力{amount}",
-    "enhancementLine": "强化{line}",
-    "troopHint": "兵种决定下方使用哪一列属性。",
-    "editSet": "编辑套装",
-    "deleteSet": "删除套装"
-  },
-  "pieceCard": {
-    "name": "{set} {slot}",
-    "forgingRow": "{name}（+{percent}%）",
-    "none": "无",
-    "noGoal": "无目标",
-    "goal": "目标：{value}",
-    "quality": "装备品质",
-    "qualities": {
-      "mythic": "神话",
-      "epic": "史诗",
-      "rare": "稀有",
-      "uncommon": "优秀",
-      "common": "普通"
+    "tab": {
+        "deletedTitle": "已删除{name}",
+        "deletedMessage": "四件装备及其目标已移除。",
+        "undo": "撤销",
+        "tiles": {
+            "sets": "装备套装",
+            "power": "装备战力，全部套装",
+            "ofPieces": "{count} / {total}",
+            "atEnhancementMax": "强化达到 100 的装备",
+            "empowered": "已强化赋能的装备",
+            "ready": "可赋能的装备"
+        },
+        "search": "搜索装备套装",
+        "filters": "筛选",
+        "plan": "计划",
+        "showing": "显示{shown} / {total}套装备。目标在此处只读，请在计划中设置。",
+        "empty": {
+            "title": "还没有装备套装",
+            "description": "一套装备包含一件 Goggles、Gloves、Belt 和 Boots。添加一套即可记录其等级。"
+        },
+        "addSet": "添加装备套装",
+        "unknownHero": "未知英雄",
+        "power": "战力{amount}",
+        "enhancementLine": "强化{line}",
+        "troopHint": "兵种决定下方使用哪一列属性。",
+        "editSet": "编辑套装",
+        "deleteSet": "删除套装"
     },
-    "forgingRowLabel": "精通锻造行",
-    "forgingStops": "强化达到 100 之前，精通锻造最高到 10 级。",
-    "lowQualityNote": "只有神话装备可以锻造和赋能。战力按神话表计算，使用该品质的基础战力，游戏未确认。",
-    "enhancement": "强化",
-    "enhancementLabel": "{name}强化",
-    "enhancementSlider": "{name}强化滑块",
-    "empowerment": "赋能",
-    "empowermentLabel": "{name}赋能",
-    "empowermentSlider": "{name}赋能滑块",
-    "outOf": "/ {max}",
-    "milestone": "已达成赋能{level}：{stat}",
-    "piecePower": "装备战力",
-    "health": "生命",
-    "percent": "{value}%"
-  },
-  "statLines": {
-    "title": "属性行，4 个槽位 × 3 种兵种",
-    "troopThisSet": "{troop}（本套装）",
-    "stat": "{name} {value}",
-    "health": "生命{value}",
-    "percentStat": "{name} {value}%",
-    "none": "无",
-    "note": "{name}在各装备等级下的数值，含精通锻造，向下取整。属性来自 WoS Tools，数据只到 200 级中的 192 级。高亮列是该套装的兵种。"
-  },
-  "filters": {
-    "title": "筛选",
-    "description": "选择列表显示哪些装备套装",
-    "reset": "重置",
-    "show": "显示{amount} {count, plural, other {套}}",
-    "all": "全部",
-    "troopType": "兵种",
-    "linkedHero": "关联英雄",
-    "heroOptions": {
-      "all": "全部",
-      "linked": "已关联英雄",
-      "unlinked": "未关联"
+    "pieceCard": {
+        "name": "{set} {slot}",
+        "forgingRow": "{name}（+{percent}%）",
+        "none": "无",
+        "noGoal": "无目标",
+        "goal": "目标：{value}",
+        "quality": "装备品质",
+        "qualities": {
+            "mythic": "神话",
+            "epic": "史诗",
+            "rare": "稀有",
+            "uncommon": "优秀",
+            "common": "普通"
+        },
+        "forgingRowLabel": "精通锻造行",
+        "forgingStops": "强化达到 100 之前，精通锻造最高到 10 级。",
+        "lowQualityNote": "只有神话装备可以锻造和赋能。战力按神话表计算，使用该品质的基础战力，游戏未确认。",
+        "enhancement": "强化",
+        "enhancementLabel": "{name}强化",
+        "enhancementSlider": "{name}强化滑块",
+        "empowerment": "赋能",
+        "empowermentLabel": "{name}赋能",
+        "empowermentSlider": "{name}赋能滑块",
+        "outOf": "/ {max}",
+        "milestone": "已达成赋能{level}：{stat}",
+        "piecePower": "装备战力",
+        "health": "生命",
+        "percent": "{value}%"
     },
-    "order": "排序",
-    "orderOptions": {
-      "power": "总战力，最高在前",
-      "created": "添加顺序",
-      "name": "名称 A 到 Z",
-      "hero": "英雄名称 A 到 Z"
+    "statLines": {
+        "title": "属性行，4 个槽位 × 3 种兵种",
+        "troopThisSet": "{troop}（本套装）",
+        "stat": "{name} {value}",
+        "health": "生命{value}",
+        "percentStat": "{name} {value}%",
+        "none": "无",
+        "note": "{name}在各装备等级下的数值，含精通锻造，向下取整。属性来自 WoS Tools，数据只到 200 级中的 192 级。高亮列是该套装的兵种。"
     },
-    "notSaved": "筛选不会保存。"
-  },
-  "setDialogs": {
-    "cancel": "取消",
-    "setName": "套装名称",
-    "nameRequired": "请输入名称。",
-    "linkedHero": "关联英雄",
-    "add": {
-      "title": "添加装备套装",
-      "linkedHeroHint": "选择英雄后，兵种会设为其职业。",
-      "troopType": "兵种",
-      "troopTypeHint": "兵种决定该套装使用哪一列属性。",
-      "quality": "装备品质",
-      "qualityHint": "只有神话装备可以锻造和赋能。",
-      "qualityHintCopy": "复制的套装保留每件装备的品质。",
-      "qualities": {
-        "mythic": "神话",
-        "epic": "史诗",
-        "rare": "稀有",
-        "uncommon": "优秀",
-        "common": "普通"
-      },
-      "startFrom": "起始方式",
-      "startFromHint": "不会复制目标。目标请在计划中设置。",
-      "emptySet": "空套装",
-      "copyFrom": "复制{name}的等级",
-      "savesAtOnce": "每次更改都会立即保存，新套装会显示为已选中。",
-      "submit": "添加装备套装"
+    "filters": {
+        "title": "筛选",
+        "description": "选择列表显示哪些装备套装",
+        "reset": "重置",
+        "show": "显示{amount} {count, plural, other {套}}",
+        "all": "全部",
+        "troopType": "兵种",
+        "linkedHero": "关联英雄",
+        "heroOptions": {
+            "all": "全部",
+            "linked": "已关联英雄",
+            "unlinked": "未关联"
+        },
+        "order": "排序",
+        "orderOptions": {
+            "power": "总战力，最高在前",
+            "created": "添加顺序",
+            "name": "名称 A 到 Z",
+            "hero": "英雄名称 A 到 Z"
+        },
+        "notSaved": "筛选不会保存。"
     },
-    "delete": {
-      "title": "删除{name}？",
-      "titleFallback": "删除套装",
-      "confirm": "删除套装",
-      "body": "{name}的四件装备及其目标将从此设备移除。",
-      "undoNote": "删除后 10 秒内可以撤销。",
-      "exportBackup": "先导出备份"
+    "setDialogs": {
+        "cancel": "取消",
+        "setName": "套装名称",
+        "nameRequired": "请输入名称。",
+        "linkedHero": "关联英雄",
+        "add": {
+            "title": "添加装备套装",
+            "linkedHeroHint": "选择英雄后，兵种会设为其职业。",
+            "troopType": "兵种",
+            "troopTypeHint": "兵种决定该套装使用哪一列属性。",
+            "quality": "装备品质",
+            "qualityHint": "只有神话装备可以锻造和赋能。",
+            "qualityHintCopy": "复制的套装保留每件装备的品质。",
+            "qualities": {
+                "mythic": "神话",
+                "epic": "史诗",
+                "rare": "稀有",
+                "uncommon": "优秀",
+                "common": "普通"
+            },
+            "startFrom": "起始方式",
+            "startFromHint": "不会复制目标。目标请在计划中设置。",
+            "emptySet": "空套装",
+            "copyFrom": "复制{name}的等级",
+            "savesAtOnce": "每次更改都会立即保存，新套装会显示为已选中。",
+            "submit": "添加装备套装"
+        },
+        "delete": {
+            "title": "删除{name}？",
+            "titleFallback": "删除套装",
+            "confirm": "删除套装",
+            "body": "{name}的四件装备及其目标将从此设备移除。",
+            "undoNote": "删除后 10 秒内可以撤销。",
+            "exportBackup": "先导出备份"
+        },
+        "edit": {
+            "title": "编辑{name}",
+            "titleFallback": "编辑套装",
+            "submit": "保存套装"
+        },
+        "heroSelect": {
+            "none": "无英雄",
+            "option": "{name}（{class}，第{generation}代）"
+        }
     },
-    "edit": {
-      "title": "编辑{name}",
-      "titleFallback": "编辑套装",
-      "submit": "保存套装"
+    "plan": {
+        "title": "英雄装备计划",
+        "description": "任意套装中任意装备的精通锻造、强化和赋能",
+        "saved": "计划已保存{time}",
+        "close": "关闭",
+        "save": "保存计划",
+        "empty": "计划中还没有装备。请先在上方添加装备，再提高其目标。",
+        "pieceTitle": "{set} · {slot}",
+        "milestone": "赋能{level}，{event}，{stat}",
+        "addPiece": {
+            "title": "添加装备",
+            "noSets": "请先在英雄装备标签页添加装备套装。",
+            "set": "装备套装",
+            "setOption": "{name}（{troop}）",
+            "piece": "装备",
+            "submit": "添加装备",
+            "taken": "这件装备已在计划中。"
+        },
+        "qualities": {
+            "mythic": "神话",
+            "epic": "史诗",
+            "rare": "稀有",
+            "uncommon": "优秀",
+            "common": "普通"
+        },
+        "remove": "从计划中移除{title}",
+        "forgingRow": "{name}（+{percent}%）",
+        "none": "无",
+        "forgingCurrent": "当前锻造行",
+        "forgingGoal": "目标锻造行",
+        "forgingGoalLabel": "{title}锻造目标",
+        "forgingStops": "强化目标达到 100 之前，精通锻造最高到 10 级。",
+        "enhancement": "强化",
+        "enhancementGoal": "{title}强化目标",
+        "empowerment": "赋能",
+        "empowermentGoal": "{title}赋能目标",
+        "from": "{value}到",
+        "result": {
+            "title": "{amount} {count, plural, other {件装备}}的结果",
+            "power": "战力",
+            "powerLines": {
+                "gained": "获得战力",
+                "before": "这些装备之前的战力",
+                "after": "这些装备之后的战力"
+            },
+            "columns": {
+                "piece": "装备",
+                "forgingStatsUp": "锻造属性提升",
+                "powerGained": "获得战力"
+            },
+            "forgingStatsUp": "+{percent}%（{steps}步）",
+            "milestones": "已解锁的里程碑",
+            "milestoneLine": "{label}：{stat}",
+            "events": {
+                "svs": "SvS",
+                "allianceShowdown": "Alliance Showdown",
+                "kingOfIcefield": "King of Icefield"
+            },
+            "note": "英雄装备计划没有速度或加成选项。计算器不返回时间。",
+            "tableLabel": "计划结果表"
+        }
     },
-    "heroSelect": {
-      "none": "无英雄",
-      "option": "{name}（{class}，第{generation}代）"
+    "export": {
+        "button": "导出到核心活动",
+        "nothing": "该计划不需要 Essence Stones 或 Mithril，无需导出。",
+        "essenceStones": "Essence Stones",
+        "mithril": "Mithril"
     }
-  },
-  "plan": {
-    "title": "英雄装备计划",
-    "description": "任意套装中任意装备的精通锻造、强化和赋能",
-    "saved": "计划已保存{time}",
-    "close": "关闭",
-    "save": "保存计划",
-    "empty": "计划中还没有装备。请先在上方添加装备，再提高其目标。",
-    "pieceTitle": "{set} · {slot}",
-    "milestone": "赋能{level}，{event}，{stat}",
-    "addPiece": {
-      "title": "添加装备",
-      "noSets": "请先在英雄装备标签页添加装备套装。",
-      "set": "装备套装",
-      "setOption": "{name}（{troop}）",
-      "piece": "装备",
-      "submit": "添加装备",
-      "taken": "这件装备已在计划中。"
-    },
-    "qualities": {
-      "mythic": "神话",
-      "epic": "史诗",
-      "rare": "稀有",
-      "uncommon": "优秀",
-      "common": "普通"
-    },
-    "remove": "从计划中移除{title}",
-    "forgingRow": "{name}（+{percent}%）",
-    "none": "无",
-    "forgingCurrent": "当前锻造行",
-    "forgingGoal": "目标锻造行",
-    "forgingGoalLabel": "{title}锻造目标",
-    "forgingStops": "强化目标达到 100 之前，精通锻造最高到 10 级。",
-    "enhancement": "强化",
-    "enhancementGoal": "{title}强化目标",
-    "empowerment": "赋能",
-    "empowermentGoal": "{title}赋能目标",
-    "from": "{value}到",
-    "result": {
-      "title": "{amount} {count, plural, other {件装备}}的结果",
-      "power": "战力",
-      "powerLines": {
-        "gained": "获得战力",
-        "before": "这些装备之前的战力",
-        "after": "这些装备之后的战力"
-      },
-      "columns": {
-        "piece": "装备",
-        "forgingStatsUp": "锻造属性提升",
-        "powerGained": "获得战力"
-      },
-      "forgingStatsUp": "+{percent}%（{steps}步）",
-      "milestones": "已解锁的里程碑",
-      "milestoneLine": "{label}：{stat}",
-      "events": {
-        "svs": "SvS",
-        "allianceShowdown": "Alliance Showdown",
-        "kingOfIcefield": "King of Icefield"
-      },
-      "note": "英雄装备计划没有速度或加成选项。计算器不返回时间。",
-      "tableLabel": "计划结果表"
-    }
-  },
-  "export": {
-    "button": "导出到核心活动",
-    "nothing": "该计划不需要 Essence Stones 或 Mithril，无需导出。",
-    "essenceStones": "Essence Stones",
-    "mithril": "Mithril"
-  }
 }

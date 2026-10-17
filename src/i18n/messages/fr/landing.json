@@ -1,165 +1,165 @@
 {
-  "topBar": {
-    "navLabel": "Page d'accueil",
-    "links": {
-      "how": "Comment ça marche",
-      "features": "Fonctions",
-      "privacy": "Vos données",
-      "faq": "FAQ"
-    }
-  },
-  "action": {
-    "createFirstChief": "Créez votre premier chef",
-    "goToOverview": "Aller à la vue d'ensemble",
-    "newChief": "Nouveau chef",
-    "allChiefs": "Tous les chefs"
-  },
-  "hero": {
-    "label": "Whiteout Survival Tracker",
-    "title": "Suivez chaque chef. Planifiez chaque amélioration.",
-    "description": "Un compagnon gratuit pour Whiteout Survival. Gardez vos bâtiments, héros, équipement et recherches au même endroit, planifiez la prochaine amélioration et gérez vos événements clés du premier jour à l'historique.",
-    "note": "Gratuit. Vos données restent dans ce navigateur.",
-    "learnMore": "En savoir plus"
-  },
-  "continue": {
-    "label": "Bon retour",
-    "title": "Continuer avec {name}",
-    "chiefCount": "{count, plural, one {{amount} chef enregistré dans ce navigateur} other {{amount} chefs enregistrés dans ce navigateur}}"
-  },
-  "how": {
-    "label": "Comment ça marche",
-    "title": "De votre premier chef à l'historique des événements en quatre étapes",
-    "steps": {
-      "create": {
-        "title": "Créez un chef",
-        "description": "Donnez-lui un nom. Le numéro de serveur et les notes sont facultatifs."
-      },
-      "levels": {
-        "title": "Réglez vos niveaux",
-        "description": "Saisissez vos niveaux de Furnace et de bâtiments, puis remplissez héros, équipement et recherche au fil du temps."
-      },
-      "plan": {
-        "title": "Planifiez les améliorations",
-        "description": "Voyez les ressources, la durée et la puissance pour vos objectifs, et ce qui manque encore."
-      },
-      "events": {
-        "title": "Gérez vos événements",
-        "description": "Comptez les points, notez scores et rangs, puis enregistrez l'événement dans l'Historique."
-      }
-    }
-  },
-  "features": {
-    "label": "Ce que vous pouvez faire",
-    "title": "Planifiez, jouez, puis regardez en arrière",
-    "open": "Ouvrir {page}",
-    "items": {
-      "plan": {
-        "title": "Planifiez n'importe quelle amélioration",
-        "description": "Définissez un objectif dans un panneau Plan sur Bâtiments, Héros, Équipement du chef et Recherche. Voyez les ressources, la durée et la puissance nécessaires, avec les accélérations et bonus lus depuis votre page Bonus.",
-        "page": "Bâtiments"
-      },
-      "coreEvents": {
-        "title": "Calculateurs d'événements clés",
-        "description": "SvS, Alliance Showdown, King of Icefield et Hall of Chief. Comptez les points de chaque action, ajoutez vos bonus d'experts et vérifiez les seuils et les récompenses de rang.",
-        "page": "Événements clés"
-      },
-      "eventLog": {
-        "title": "Journal d'événement et liste quotidienne",
-        "description": "Notez le score et le rang de chaque jour d'un événement. Une liste de tâches détaille les actions possibles chaque jour.",
-        "page": "Événements clés"
-      },
-      "history": {
-        "title": "Historique : plan face au réel",
-        "description": "Terminez un événement pour l'enregistrer. Comparez votre plan à ce que vous avez fait, et voyez chaque amélioration prévue comme faite ou non faite.",
-        "page": "Historique"
-      },
-      "research": {
-        "title": "Arbres de recherche",
-        "description": "Croissance, Économie, Combat, War Academy et les onglets T12, en grille ou en arbre, avec les déblocages selon l'âge du serveur.",
-        "page": "Recherche"
-      },
-      "alliance": {
-        "title": "Technologie d'alliance et cartes",
-        "description": "Suivez la bannière, la technologie et les installations de votre alliance, et consultez la disposition du château, des bastions et des forteresses.",
-        "page": "Alliance"
-      }
-    }
-  },
-  "numbers": {
-    "title": "Ce que couvre le tracker",
-    "buildings": "bâtiments avec coûts et durées",
-    "heroes": "héros",
-    "research": "technologies de recherche",
-    "coreEvents": "calculateurs d'événements clés",
-    "wiki": "pages de référence du wiki, plus une chronologie"
-  },
-  "pages": {
-    "label": "Toutes les pages",
-    "title": "Groupées comme dans le jeu",
-    "description": "Les mêmes pages que la barre latérale dans l'application.",
-    "listLabel": "Pages {group}",
-    "general": "Général"
-  },
-  "privacy": {
-    "label": "Vos données",
-    "title": "Privé par défaut, portable quand vous voulez",
-    "items": {
-      "browser": {
-        "title": "Reste dans votre navigateur",
-        "description": "Aucun compte à créer. Vos chefs sont enregistrés dans ce navigateur sur cet appareil."
-      },
-      "file": {
-        "title": "Un seul fichier enregistré",
-        "description": "Tout ce que vous saisissez est gardé dans un seul fichier enregistré dans le navigateur, donc il se charge vite et rien n'est dispersé."
-      },
-      "chiefs": {
-        "title": "Plusieurs chefs",
-        "description": "Gardez un chef principal et vos seconds comptes. Passez de l'un à l'autre depuis la barre latérale."
-      },
-      "backup": {
-        "title": "Sauvegarde et restauration",
-        "description": "Exportez vos données vers un fichier depuis Paramètres et importez-le dans un autre navigateur ou appareil."
-      }
+    "topBar": {
+        "navLabel": "Page d'accueil",
+        "links": {
+            "how": "Comment ça marche",
+            "features": "Fonctions",
+            "privacy": "Vos données",
+            "faq": "FAQ"
+        }
     },
-    "backupLink": "Ouvrir Sauvegarde et données"
-  },
-  "faq": {
-    "label": "Des questions",
-    "title": "Questions fréquentes",
-    "items": {
-      "free": {
-        "question": "Est-ce gratuit ?",
-        "answer": "Oui. Il n'y a rien à payer et rien à débloquer."
-      },
-      "data": {
-        "question": "Où sont mes données ?",
-        "answer": "Dans ce navigateur, dans le stockage local de ce site. Elles ne sont envoyées à aucun serveur. Si vous effacez les données du site pour cette page, les chefs sont supprimés, alors exportez d'abord une sauvegarde."
-      },
-      "move": {
-        "question": "Comment passer sur un autre appareil ?",
-        "answer": "Ouvrez Paramètres, puis Sauvegarde et données, et exportez un fichier de sauvegarde. Sur l'autre appareil, ouvrez la même page, allez dans Paramètres, Sauvegarde et données, et importez ce fichier."
-      },
-      "chiefs": {
-        "question": "Puis-je avoir plusieurs chefs ?",
-        "answer": "Oui. Il n'y a pas de limite. Chaque chef a ses propres bâtiments, héros, recherches et événements, et vous passez de l'un à l'autre dans la barre latérale."
-      },
-      "account": {
-        "question": "Ai-je besoin d'un compte ou d'une sauvegarde du jeu ?",
-        "answer": "Non. Vous saisissez vous-même vos niveaux. Les données du jeu pour les coûts, durées et stats sont fournies avec le tracker."
-      },
-      "official": {
-        "question": "Est-ce une application officielle ?",
-        "answer": "Non. C'est un outil de fan non officiel. Il n'est pas affilié à Whiteout Survival ni à Century Games. Le pied de page contient l'avis complet."
-      },
-      "wiki": {
-        "question": "Qu'est-ce que le Wiki ?",
-        "answer": "Un ensemble de pages de référence sur les données du jeu, comme les bâtiments, héros, familiers, objets et événements, plus une chronologie du serveur. Vous pouvez le lire sans créer de chef."
-      }
+    "action": {
+        "createFirstChief": "Créez votre premier chef",
+        "goToOverview": "Aller à la vue d'ensemble",
+        "newChief": "Nouveau chef",
+        "allChiefs": "Tous les chefs"
+    },
+    "hero": {
+        "label": "Whiteout Survival Tracker",
+        "title": "Suivez chaque chef. Planifiez chaque amélioration.",
+        "description": "Un compagnon gratuit pour Whiteout Survival. Gardez vos bâtiments, héros, équipement et recherches au même endroit, planifiez la prochaine amélioration et gérez vos événements clés du premier jour à l'historique.",
+        "note": "Gratuit. Vos données restent dans ce navigateur.",
+        "learnMore": "En savoir plus"
+    },
+    "continue": {
+        "label": "Bon retour",
+        "title": "Continuer avec {name}",
+        "chiefCount": "{count, plural, one {{amount} chef enregistré dans ce navigateur} other {{amount} chefs enregistrés dans ce navigateur}}"
+    },
+    "how": {
+        "label": "Comment ça marche",
+        "title": "De votre premier chef à l'historique des événements en quatre étapes",
+        "steps": {
+            "create": {
+                "title": "Créez un chef",
+                "description": "Donnez-lui un nom. Le numéro de serveur et les notes sont facultatifs."
+            },
+            "levels": {
+                "title": "Réglez vos niveaux",
+                "description": "Saisissez vos niveaux de Furnace et de bâtiments, puis remplissez héros, équipement et recherche au fil du temps."
+            },
+            "plan": {
+                "title": "Planifiez les améliorations",
+                "description": "Voyez les ressources, la durée et la puissance pour vos objectifs, et ce qui manque encore."
+            },
+            "events": {
+                "title": "Gérez vos événements",
+                "description": "Comptez les points, notez scores et rangs, puis enregistrez l'événement dans l'Historique."
+            }
+        }
+    },
+    "features": {
+        "label": "Ce que vous pouvez faire",
+        "title": "Planifiez, jouez, puis regardez en arrière",
+        "open": "Ouvrir {page}",
+        "items": {
+            "plan": {
+                "title": "Planifiez n'importe quelle amélioration",
+                "description": "Définissez un objectif dans un panneau Plan sur Bâtiments, Héros, Équipement du chef et Recherche. Voyez les ressources, la durée et la puissance nécessaires, avec les accélérations et bonus lus depuis votre page Bonus.",
+                "page": "Bâtiments"
+            },
+            "coreEvents": {
+                "title": "Calculateurs d'événements clés",
+                "description": "SvS, Alliance Showdown, King of Icefield et Hall of Chief. Comptez les points de chaque action, ajoutez vos bonus d'experts et vérifiez les seuils et les récompenses de rang.",
+                "page": "Événements clés"
+            },
+            "eventLog": {
+                "title": "Journal d'événement et liste quotidienne",
+                "description": "Notez le score et le rang de chaque jour d'un événement. Une liste de tâches détaille les actions possibles chaque jour.",
+                "page": "Événements clés"
+            },
+            "history": {
+                "title": "Historique : plan face au réel",
+                "description": "Terminez un événement pour l'enregistrer. Comparez votre plan à ce que vous avez fait, et voyez chaque amélioration prévue comme faite ou non faite.",
+                "page": "Historique"
+            },
+            "research": {
+                "title": "Arbres de recherche",
+                "description": "Croissance, Économie, Combat, War Academy et les onglets T12, en grille ou en arbre, avec les déblocages selon l'âge du serveur.",
+                "page": "Recherche"
+            },
+            "alliance": {
+                "title": "Technologie d'alliance et cartes",
+                "description": "Suivez la bannière, la technologie et les installations de votre alliance, et consultez la disposition du château, des bastions et des forteresses.",
+                "page": "Alliance"
+            }
+        }
+    },
+    "numbers": {
+        "title": "Ce que couvre le tracker",
+        "buildings": "bâtiments avec coûts et durées",
+        "heroes": "héros",
+        "research": "technologies de recherche",
+        "coreEvents": "calculateurs d'événements clés",
+        "wiki": "pages de référence du wiki, plus une chronologie"
+    },
+    "pages": {
+        "label": "Toutes les pages",
+        "title": "Groupées comme dans le jeu",
+        "description": "Les mêmes pages que la barre latérale dans l'application.",
+        "listLabel": "Pages {group}",
+        "general": "Général"
+    },
+    "privacy": {
+        "label": "Vos données",
+        "title": "Privé par défaut, portable quand vous voulez",
+        "items": {
+            "browser": {
+                "title": "Reste dans votre navigateur",
+                "description": "Aucun compte à créer. Vos chefs sont enregistrés dans ce navigateur sur cet appareil."
+            },
+            "file": {
+                "title": "Un seul fichier enregistré",
+                "description": "Tout ce que vous saisissez est gardé dans un seul fichier enregistré dans le navigateur, donc il se charge vite et rien n'est dispersé."
+            },
+            "chiefs": {
+                "title": "Plusieurs chefs",
+                "description": "Gardez un chef principal et vos seconds comptes. Passez de l'un à l'autre depuis la barre latérale."
+            },
+            "backup": {
+                "title": "Sauvegarde et restauration",
+                "description": "Exportez vos données vers un fichier depuis Paramètres et importez-le dans un autre navigateur ou appareil."
+            }
+        },
+        "backupLink": "Ouvrir Sauvegarde et données"
+    },
+    "faq": {
+        "label": "Des questions",
+        "title": "Questions fréquentes",
+        "items": {
+            "free": {
+                "question": "Est-ce gratuit ?",
+                "answer": "Oui. Il n'y a rien à payer et rien à débloquer."
+            },
+            "data": {
+                "question": "Où sont mes données ?",
+                "answer": "Dans ce navigateur, dans le stockage local de ce site. Elles ne sont envoyées à aucun serveur. Si vous effacez les données du site pour cette page, les chefs sont supprimés, alors exportez d'abord une sauvegarde."
+            },
+            "move": {
+                "question": "Comment passer sur un autre appareil ?",
+                "answer": "Ouvrez Paramètres, puis Sauvegarde et données, et exportez un fichier de sauvegarde. Sur l'autre appareil, ouvrez la même page, allez dans Paramètres, Sauvegarde et données, et importez ce fichier."
+            },
+            "chiefs": {
+                "question": "Puis-je avoir plusieurs chefs ?",
+                "answer": "Oui. Il n'y a pas de limite. Chaque chef a ses propres bâtiments, héros, recherches et événements, et vous passez de l'un à l'autre dans la barre latérale."
+            },
+            "account": {
+                "question": "Ai-je besoin d'un compte ou d'une sauvegarde du jeu ?",
+                "answer": "Non. Vous saisissez vous-même vos niveaux. Les données du jeu pour les coûts, durées et stats sont fournies avec le tracker."
+            },
+            "official": {
+                "question": "Est-ce une application officielle ?",
+                "answer": "Non. C'est un outil de fan non officiel. Il n'est pas affilié à Whiteout Survival ni à Century Games. Le pied de page contient l'avis complet."
+            },
+            "wiki": {
+                "question": "Qu'est-ce que le Wiki ?",
+                "answer": "Un ensemble de pages de référence sur les données du jeu, comme les bâtiments, héros, familiers, objets et événements, plus une chronologie du serveur. Vous pouvez le lire sans créer de chef."
+            }
+        }
+    },
+    "closing": {
+        "title": "Commencez le suivi dès aujourd'hui",
+        "description": "Votre premier chef ne demande qu'un nom. Vous pourrez tout changer ensuite.",
+        "wiki": "Parcourir le Wiki"
     }
-  },
-  "closing": {
-    "title": "Commencez le suivi dès aujourd'hui",
-    "description": "Votre premier chef ne demande qu'un nom. Vous pourrez tout changer ensuite.",
-    "wiki": "Parcourir le Wiki"
-  }
 }

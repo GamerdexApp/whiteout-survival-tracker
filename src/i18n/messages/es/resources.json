@@ -1,88 +1,88 @@
 {
-  "title": "Recursos",
-  "all": "Todos",
-  "owned": "Que tienes",
-  "sources": "Fuentes",
-  "sourcesUnknown": "Fuentes desconocidas",
-  "done": "Hecho",
-  "undo": "Deshacer",
-  "list": {
-    "separator": ", ",
-    "andLast": "{rest} y {last}"
-  },
-  "countControl": {
-    "remove": "Quitar {step} de {name}",
-    "add": "Añadir {step} de {name}",
-    "owned": "{name} que tienes"
-  },
-  "itemRow": {
-    "owned": "en posesión"
-  },
-  "itemSheet": {
-    "title": "Editar cantidad",
-    "step": "Paso",
-    "setToZero": "Poner a 0",
-    "description": "Descripción",
-    "unknown": "Desconocido"
-  },
-  "view": {
-    "subline": "{items} objetos en {categories} categorías",
-    "sublineInCategory": "{items} objetos en {categories} categorías · {inCategory} en {category}",
-    "unsaved": "Sin guardar",
-    "shortages": "A los objetivos del planificador les faltan {names}.",
-    "shortagesLink": "Abrir el plan de Edificios",
-    "show": {
-      "label": "Mostrar",
-      "owned": "Que tienes",
-      "unknown": "Fuentes desconocidas"
+    "title": "Recursos",
+    "all": "Todos",
+    "owned": "Que tienes",
+    "sources": "Fuentes",
+    "sourcesUnknown": "Fuentes desconocidas",
+    "done": "Hecho",
+    "undo": "Deshacer",
+    "list": {
+        "separator": ", ",
+        "andLast": "{rest} y {last}"
     },
-    "speedups": {
-      "none": "Ninguno",
-      "noneOwned": "No tienes aceleradores",
-      "owned": "{minutes} min: {parts}",
-      "part": "{count} x {name}",
-      "partSeparator": " + ",
-      "types": {
-        "general": "General",
-        "construction": "Construcción",
-        "troop": "Entrenamiento de tropas",
-        "research": "Investigación",
-        "learning": "Aprendizaje",
-        "healing": "Curación"
-      }
+    "countControl": {
+        "remove": "Quitar {step} de {name}",
+        "add": "Añadir {step} de {name}",
+        "owned": "{name} que tienes"
     },
-    "search": {
-      "label": "Buscar objetos",
-      "placeholder": "Buscar entre {total} objetos"
+    "itemRow": {
+        "owned": "en posesión"
     },
-    "setSeveral": "Ajustar varios",
-    "showing": {
-      "several": "Mostrando {visible} de {total} objetos. Ajustar varios está activado. Los cambios esperan hasta que pulses Guardar cambios.",
-      "instant": "Mostrando {visible} de {total} objetos. Cada cambio se guarda al momento."
+    "itemSheet": {
+        "title": "Editar cantidad",
+        "step": "Paso",
+        "setToZero": "Poner a 0",
+        "description": "Descripción",
+        "unknown": "Desconocido"
     },
-    "empty": {
-      "title": "Ningún objeto coincide",
-      "description": "Cambia la búsqueda, la categoría o el filtro Mostrar.",
-      "reset": "Restablecer filtros"
+    "view": {
+        "subline": "{items} objetos en {categories} categorías",
+        "sublineInCategory": "{items} objetos en {categories} categorías · {inCategory} en {category}",
+        "unsaved": "Sin guardar",
+        "shortages": "A los objetivos del planificador les faltan {names}.",
+        "shortagesLink": "Abrir el plan de Edificios",
+        "show": {
+            "label": "Mostrar",
+            "owned": "Que tienes",
+            "unknown": "Fuentes desconocidas"
+        },
+        "speedups": {
+            "none": "Ninguno",
+            "noneOwned": "No tienes aceleradores",
+            "owned": "{minutes} min: {parts}",
+            "part": "{count} x {name}",
+            "partSeparator": " + ",
+            "types": {
+                "general": "General",
+                "construction": "Construcción",
+                "troop": "Entrenamiento de tropas",
+                "research": "Investigación",
+                "learning": "Aprendizaje",
+                "healing": "Curación"
+            }
+        },
+        "search": {
+            "label": "Buscar objetos",
+            "placeholder": "Buscar entre {total} objetos"
+        },
+        "setSeveral": "Ajustar varios",
+        "showing": {
+            "several": "Mostrando {visible} de {total} objetos. Ajustar varios está activado. Los cambios esperan hasta que pulses Guardar cambios.",
+            "instant": "Mostrando {visible} de {total} objetos. Cada cambio se guarda al momento."
+        },
+        "empty": {
+            "title": "Ningún objeto coincide",
+            "description": "Cambia la búsqueda, la categoría o el filtro Mostrar.",
+            "reset": "Restablecer filtros"
+        },
+        "columns": {
+            "item": "Objeto"
+        },
+        "bar": {
+            "noChanges": "Sin cambios pendientes",
+            "changes": "{count, plural, one {{amount} cambio sin guardar} other {{amount} cambios sin guardar}}",
+            "discard": "Descartar",
+            "save": "Guardar cambios"
+        },
+        "toast": {
+            "setToZero": "{name} puesto a 0",
+            "savedTitle": "Cantidades guardadas",
+            "savedMessage": "{count, plural, one {{amount} cantidad cambiada} other {{amount} cantidades cambiadas}}."
+        }
     },
-    "columns": {
-      "item": "Objeto"
-    },
-    "bar": {
-      "noChanges": "Sin cambios pendientes",
-      "changes": "{count, plural, one {{amount} cambio sin guardar} other {{amount} cambios sin guardar}}",
-      "discard": "Descartar",
-      "save": "Guardar cambios"
-    },
-    "toast": {
-      "setToZero": "{name} puesto a 0",
-      "savedTitle": "Cantidades guardadas",
-      "savedMessage": "{count, plural, one {{amount} cantidad cambiada} other {{amount} cantidades cambiadas}}."
+    "planStock": {
+        "constructionTime": "Tiempo de construcción, en aceleradores",
+        "researchTime": "Tiempo de investigación, en aceleradores",
+        "minutesUnit": "min"
     }
-  },
-  "planStock": {
-    "constructionTime": "Tiempo de construcción, en aceleradores",
-    "researchTime": "Tiempo de investigación, en aceleradores",
-    "minutesUnit": "min"
-  }
 }

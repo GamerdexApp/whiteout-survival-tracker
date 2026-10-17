@@ -1,262 +1,262 @@
 {
-  "page": {
-    "title": "英雄"
-  },
-  "view": {
-    "tabsLabel": "英雄",
-    "heroesTab": "英雄",
-    "gearTab": "英雄装备",
-    "heroesSubline": "{chief} · 已拥有{owned} / {total}",
-    "gearSubline": "{chief} · {count, plural, other {{amount}套装备}}"
-  },
-  "common": {
-    "owned": "已拥有",
-    "ownedLabel": "{hero}已拥有",
-    "starLabel": "{hero}星级",
-    "levelLabel": "{hero}等级",
-    "talentLabel": "{hero}天赋",
-    "skillLabel": "{hero} {skill}",
-    "weaponLevelLabel": "{hero} {weapon}等级",
-    "shardsOwnedLabel": "{hero}已有碎片",
-    "starAndTier": "星级与阶位",
-    "level": "等级",
-    "noGoal": "无目标",
-    "shards": "碎片",
-    "totalPower": "总战力",
-    "unknown": "未知",
-    "plan": "计划",
-    "generation": "第{generation}代",
-    "exploration": "探索",
-    "expedition": "远征",
-    "talent": "天赋",
-    "maxLevelSuffix": "/ {max}",
-    "heroCount": "{count, plural, other {{amount}位英雄}}"
-  },
-  "goalText": {
-    "to": "到{goal}"
-  },
-  "card": {
-    "summary": "{rarity} · {heroClass} · {generation}",
-    "talentRow": "天赋{name}",
-    "shardsOf": "/ {needed}",
-    "enoughShards": " 碎片足够",
-    "shortBy": " 缺{amount}",
-    "gearSet": "装备套装",
-    "notOwnedHint": "开启已拥有，即可记录星级、等级和技能。",
-    "details": "详情"
-  },
-  "tab": {
-    "stats": {
-      "generations": "已解锁世代",
-      "generationsValue": "0 到{max}",
-      "heroesOwned": "已解锁英雄中的已拥有数",
-      "legendaryOwned": "已解锁传说英雄中的已拥有数",
-      "atMaxLevel": "80 级",
-      "heroPower": "英雄战力",
-      "heroPowerUnknown": "英雄战力，另有{amount}项未知未计入",
-      "withGoal": "设有目标"
+    "page": {
+        "title": "英雄"
     },
-    "search": {
-      "label": "搜索英雄",
-      "placeholder": "按名称搜索{amount}位英雄"
+    "view": {
+        "tabsLabel": "英雄",
+        "heroesTab": "英雄",
+        "gearTab": "英雄装备",
+        "heroesSubline": "{chief} · 已拥有{owned} / {total}",
+        "gearSubline": "{chief} · {count, plural, other {{amount}套装备}}"
     },
-    "filters": "筛选",
-    "maxOut": "一键满级",
-    "status": "显示{shown} / {total}位英雄。此领主已解锁第 0 到{max}代。目标在此处只读，请在计划中设置。",
-    "empty": {
-      "title": "没有匹配的英雄",
-      "description": "修改搜索或重置筛选，即可查看全部英雄。",
-      "reset": "重置"
-    },
-    "showMore": "显示更多，再看{amount}位{count, plural, other {英雄}}",
-    "toast": {
-      "notOwnedTitle": "未拥有{name}",
-      "notOwnedMessage": "其星级、等级和技能会保留，再次开启已拥有时恢复。",
-      "undo": "撤销",
-      "maxedTitle": "英雄已满级",
-      "maxedMessage": "已更新{heroes}。"
-    }
-  },
-  "filtersFlyout": {
-    "title": "筛选",
-    "description": "选择页面显示哪些英雄",
-    "reset": "重置",
-    "show": "显示{heroes}",
-    "all": "全部",
-    "generation": "世代",
-    "rarity": "稀有度",
-    "heroClass": "职业",
-    "ownership": "拥有状态",
-    "order": "排序",
-    "notSaved": "筛选不会保存。",
-    "rarities": {
-      "Legendary": "传说",
-      "Epic": "史诗",
-      "Rare": "稀有"
-    },
-    "classes": {
-      "Infantry": "盾兵",
-      "Lancer": "矛兵",
-      "Marksman": "弓兵"
-    },
-    "ownershipOptions": {
-      "all": "全部",
-      "owned": "已拥有",
-      "notOwned": "未拥有"
-    },
-    "orderOptions": {
-      "owned": "已拥有在前，其次最新世代",
-      "generation": "世代，最新在前",
-      "name": "名称 A 到 Z",
-      "power": "总战力，最高在前"
-    }
-  },
-  "maxOut": {
-    "title": "英雄一键满级",
-    "scopeLabel": "要满级的英雄",
-    "scope": {
-      "owned": "已拥有的英雄",
-      "unlocked": "所有已解锁的英雄，并标为已拥有",
-      "selected": "自选英雄，并标为已拥有"
-    },
-    "searchLabel": "搜索要选择的英雄",
-    "searchPlaceholder": "按名称搜索英雄",
-    "selectShown": "选择当前显示的",
-    "clear": "清除",
-    "ownedTag": "已拥有",
-    "starAndTier": "星级与阶位升到 5.0",
-    "level": "等级升到 80",
-    "levelHint": "如果技能已满级，且旧英雄的等级保持 1 级，请关闭。",
-    "skills": "技能升到 5",
-    "skillsHint": "探索、远征和天赋。",
-    "weapon": "专属武器升到 10",
-    "note": "关闭的项目保持不变。碎片数量和目标不会更改。应用后可以撤销。",
-    "cancel": "取消",
-    "apply": "{heroes}一键满级"
-  },
-  "flyout": {
-    "fallbackTitle": "英雄",
-    "description": "{rarity} {heroClass}，第{generation}代",
-    "done": "完成",
-    "status": {
-      "title": "状态",
-      "furnaceNeeded": "{level}级所需的 Furnace",
-      "met": "已满足",
-      "needsFurnace": "需要 Furnace {required}",
-      "levelPower": "等级战力",
-      "skillPower": "技能战力",
-      "starPower": "星级战力",
-      "weaponPower": "武器战力",
-      "totalPower": "总战力",
-      "note": "战力计入等级、技能、星级标签和武器等级。"
-    },
-    "skills": {
-      "title": "技能",
-      "aside": "每个技能五级",
-      "toLevel": "到{level}级：{manuals}本技能书",
-      "needsStar": "需要{star}星",
-      "starMet": "已满足{star}星",
-      "talentTop": "天赋已是最高等级。",
-      "talentNeedsStar": "{level}级需要{star}星",
-      "talentStarMet": "{level}级：已满足{star}星"
-    },
-    "weapon": {
-      "title": "专属武器：{name}",
-      "level": "武器等级",
-      "widgetsForLevel": "{level}级所需的 Widgets",
-      "widgetsForLevels": "{from}到{to}级所需的 Widgets",
-      "expeditionBonus": "远征加成",
-      "bonus": "杀伤{lethality}% · 生命{health}%",
-      "power": "武器战力",
-      "unlocksAt": "武器{level}级解锁"
-    },
-    "shards": {
-      "title": "碎片",
-      "owned": "已有碎片",
-      "goal": "目标",
-      "neededForGoal": "达到目标{goal}所需",
-      "enough": "碎片足够",
-      "shortBy": "缺少",
-      "yes": "是",
-      "sources": "碎片来源"
-    },
-    "stats": {
-      "title": "80 级属性",
-      "explorationAt": "{stars}时的探索",
-      "expeditionAt": "{stars}时的远征",
-      "explorationFull": "5.0 时的探索",
-      "expeditionFull": "5.0 时的远征",
-      "exploration": "攻{attack} · 防{defense} · 生命{health}",
-      "expedition": "攻{attack}% · 防{defense}%",
-      "estimate": "估算"
-    }
-  },
-  "plan": {
-    "title": "英雄计划",
-    "description": "从当前到目标所需的碎片、技能书和 Widgets",
-    "saved": "计划已保存{date}",
-    "close": "关闭",
-    "save": "保存计划",
-    "noHeroes": "计划中还没有英雄。请先在上方添加已拥有的英雄，再提高其目标。",
-    "add": {
-      "title": "添加英雄",
-      "allIn": "所有已拥有的英雄都已在计划中。为英雄开启已拥有后才能加入计划。",
-      "selectLabel": "要添加的英雄",
-      "button": "添加英雄"
-    },
-    "block": {
-      "remove": "从计划中移除{hero}",
-      "starTo": "{stars}到",
-      "starGoal": "{hero}星级目标",
-      "levelTo": "{current}到",
-      "goalLabel": "{hero} {name}目标",
-      "note": "当前值取自页面上的英雄。请在那里修改。"
-    },
-    "unmet": {
-      "title": "技能等级需要更高的星级。",
-      "item": "{hero}：{skill} {level}级需要{star}星",
-      "message": "{items}。请提高星级目标，或降低技能目标。"
-    },
-    "shardsUsed": "已用碎片：英雄自身{own}，通用{general}，共{total}。英雄会先用自己的碎片。",
-    "result": {
-      "title": "结果，{steps}步",
-      "widgets": "Widgets",
-      "weaponSkills": "{count, plural, other {已解锁{amount}个武器技能}}",
-      "note": "战力不属于英雄计划。计算器不返回时间，也不接受速度输入。",
-      "heads": {
-        "hero": "英雄",
-        "starSteps": "星级步数",
-        "skillLevels": "技能等级",
+    "common": {
+        "owned": "已拥有",
+        "ownedLabel": "{hero}已拥有",
+        "starLabel": "{hero}星级",
+        "levelLabel": "{hero}等级",
+        "talentLabel": "{hero}天赋",
+        "skillLabel": "{hero} {skill}",
+        "weaponLevelLabel": "{hero} {weapon}等级",
+        "shardsOwnedLabel": "{hero}已有碎片",
+        "starAndTier": "星级与阶位",
+        "level": "等级",
+        "noGoal": "无目标",
         "shards": "碎片",
-        "widgets": "Widgets"
-      },
-      "tableLabel": "计划结果表"
+        "totalPower": "总战力",
+        "unknown": "未知",
+        "plan": "计划",
+        "generation": "第{generation}代",
+        "exploration": "探索",
+        "expedition": "远征",
+        "talent": "天赋",
+        "maxLevelSuffix": "/ {max}",
+        "heroCount": "{count, plural, other {{amount}位英雄}}"
     },
-    "events": {
-      "svs": "SvS State of Power",
-      "allianceShowdown": "Alliance Showdown",
-      "kingOfIcefield": "King of Icefield",
-      "hallOfChief": "Hall of Chief"
+    "goalText": {
+        "to": "到{goal}"
+    },
+    "card": {
+        "summary": "{rarity} · {heroClass} · {generation}",
+        "talentRow": "天赋{name}",
+        "shardsOf": "/ {needed}",
+        "enoughShards": " 碎片足够",
+        "shortBy": " 缺{amount}",
+        "gearSet": "装备套装",
+        "notOwnedHint": "开启已拥有，即可记录星级、等级和技能。",
+        "details": "详情"
+    },
+    "tab": {
+        "stats": {
+            "generations": "已解锁世代",
+            "generationsValue": "0 到{max}",
+            "heroesOwned": "已解锁英雄中的已拥有数",
+            "legendaryOwned": "已解锁传说英雄中的已拥有数",
+            "atMaxLevel": "80 级",
+            "heroPower": "英雄战力",
+            "heroPowerUnknown": "英雄战力，另有{amount}项未知未计入",
+            "withGoal": "设有目标"
+        },
+        "search": {
+            "label": "搜索英雄",
+            "placeholder": "按名称搜索{amount}位英雄"
+        },
+        "filters": "筛选",
+        "maxOut": "一键满级",
+        "status": "显示{shown} / {total}位英雄。此领主已解锁第 0 到{max}代。目标在此处只读，请在计划中设置。",
+        "empty": {
+            "title": "没有匹配的英雄",
+            "description": "修改搜索或重置筛选，即可查看全部英雄。",
+            "reset": "重置"
+        },
+        "showMore": "显示更多，再看{amount}位{count, plural, other {英雄}}",
+        "toast": {
+            "notOwnedTitle": "未拥有{name}",
+            "notOwnedMessage": "其星级、等级和技能会保留，再次开启已拥有时恢复。",
+            "undo": "撤销",
+            "maxedTitle": "英雄已满级",
+            "maxedMessage": "已更新{heroes}。"
+        }
+    },
+    "filtersFlyout": {
+        "title": "筛选",
+        "description": "选择页面显示哪些英雄",
+        "reset": "重置",
+        "show": "显示{heroes}",
+        "all": "全部",
+        "generation": "世代",
+        "rarity": "稀有度",
+        "heroClass": "职业",
+        "ownership": "拥有状态",
+        "order": "排序",
+        "notSaved": "筛选不会保存。",
+        "rarities": {
+            "Legendary": "传说",
+            "Epic": "史诗",
+            "Rare": "稀有"
+        },
+        "classes": {
+            "Infantry": "盾兵",
+            "Lancer": "矛兵",
+            "Marksman": "弓兵"
+        },
+        "ownershipOptions": {
+            "all": "全部",
+            "owned": "已拥有",
+            "notOwned": "未拥有"
+        },
+        "orderOptions": {
+            "owned": "已拥有在前，其次最新世代",
+            "generation": "世代，最新在前",
+            "name": "名称 A 到 Z",
+            "power": "总战力，最高在前"
+        }
+    },
+    "maxOut": {
+        "title": "英雄一键满级",
+        "scopeLabel": "要满级的英雄",
+        "scope": {
+            "owned": "已拥有的英雄",
+            "unlocked": "所有已解锁的英雄，并标为已拥有",
+            "selected": "自选英雄，并标为已拥有"
+        },
+        "searchLabel": "搜索要选择的英雄",
+        "searchPlaceholder": "按名称搜索英雄",
+        "selectShown": "选择当前显示的",
+        "clear": "清除",
+        "ownedTag": "已拥有",
+        "starAndTier": "星级与阶位升到 5.0",
+        "level": "等级升到 80",
+        "levelHint": "如果技能已满级，且旧英雄的等级保持 1 级，请关闭。",
+        "skills": "技能升到 5",
+        "skillsHint": "探索、远征和天赋。",
+        "weapon": "专属武器升到 10",
+        "note": "关闭的项目保持不变。碎片数量和目标不会更改。应用后可以撤销。",
+        "cancel": "取消",
+        "apply": "{heroes}一键满级"
+    },
+    "flyout": {
+        "fallbackTitle": "英雄",
+        "description": "{rarity} {heroClass}，第{generation}代",
+        "done": "完成",
+        "status": {
+            "title": "状态",
+            "furnaceNeeded": "{level}级所需的 Furnace",
+            "met": "已满足",
+            "needsFurnace": "需要 Furnace {required}",
+            "levelPower": "等级战力",
+            "skillPower": "技能战力",
+            "starPower": "星级战力",
+            "weaponPower": "武器战力",
+            "totalPower": "总战力",
+            "note": "战力计入等级、技能、星级标签和武器等级。"
+        },
+        "skills": {
+            "title": "技能",
+            "aside": "每个技能五级",
+            "toLevel": "到{level}级：{manuals}本技能书",
+            "needsStar": "需要{star}星",
+            "starMet": "已满足{star}星",
+            "talentTop": "天赋已是最高等级。",
+            "talentNeedsStar": "{level}级需要{star}星",
+            "talentStarMet": "{level}级：已满足{star}星"
+        },
+        "weapon": {
+            "title": "专属武器：{name}",
+            "level": "武器等级",
+            "widgetsForLevel": "{level}级所需的 Widgets",
+            "widgetsForLevels": "{from}到{to}级所需的 Widgets",
+            "expeditionBonus": "远征加成",
+            "bonus": "杀伤{lethality}% · 生命{health}%",
+            "power": "武器战力",
+            "unlocksAt": "武器{level}级解锁"
+        },
+        "shards": {
+            "title": "碎片",
+            "owned": "已有碎片",
+            "goal": "目标",
+            "neededForGoal": "达到目标{goal}所需",
+            "enough": "碎片足够",
+            "shortBy": "缺少",
+            "yes": "是",
+            "sources": "碎片来源"
+        },
+        "stats": {
+            "title": "80 级属性",
+            "explorationAt": "{stars}时的探索",
+            "expeditionAt": "{stars}时的远征",
+            "explorationFull": "5.0 时的探索",
+            "expeditionFull": "5.0 时的远征",
+            "exploration": "攻{attack} · 防{defense} · 生命{health}",
+            "expedition": "攻{attack}% · 防{defense}%",
+            "estimate": "估算"
+        }
+    },
+    "plan": {
+        "title": "英雄计划",
+        "description": "从当前到目标所需的碎片、技能书和 Widgets",
+        "saved": "计划已保存{date}",
+        "close": "关闭",
+        "save": "保存计划",
+        "noHeroes": "计划中还没有英雄。请先在上方添加已拥有的英雄，再提高其目标。",
+        "add": {
+            "title": "添加英雄",
+            "allIn": "所有已拥有的英雄都已在计划中。为英雄开启已拥有后才能加入计划。",
+            "selectLabel": "要添加的英雄",
+            "button": "添加英雄"
+        },
+        "block": {
+            "remove": "从计划中移除{hero}",
+            "starTo": "{stars}到",
+            "starGoal": "{hero}星级目标",
+            "levelTo": "{current}到",
+            "goalLabel": "{hero} {name}目标",
+            "note": "当前值取自页面上的英雄。请在那里修改。"
+        },
+        "unmet": {
+            "title": "技能等级需要更高的星级。",
+            "item": "{hero}：{skill} {level}级需要{star}星",
+            "message": "{items}。请提高星级目标，或降低技能目标。"
+        },
+        "shardsUsed": "已用碎片：英雄自身{own}，通用{general}，共{total}。英雄会先用自己的碎片。",
+        "result": {
+            "title": "结果，{steps}步",
+            "widgets": "Widgets",
+            "weaponSkills": "{count, plural, other {已解锁{amount}个武器技能}}",
+            "note": "战力不属于英雄计划。计算器不返回时间，也不接受速度输入。",
+            "heads": {
+                "hero": "英雄",
+                "starSteps": "星级步数",
+                "skillLevels": "技能等级",
+                "shards": "碎片",
+                "widgets": "Widgets"
+            },
+            "tableLabel": "计划结果表"
+        },
+        "events": {
+            "svs": "SvS State of Power",
+            "allianceShowdown": "Alliance Showdown",
+            "kingOfIcefield": "King of Icefield",
+            "hallOfChief": "Hall of Chief"
+        }
+    },
+    "export": {
+        "button": "导出到核心活动",
+        "nothing": "该计划不需要碎片或 Widgets，无需导出。",
+        "shardsGroup": "碎片",
+        "widgetsGroup": "Widgets",
+        "widgets": "Widgets",
+        "manualsReason": "没有活动为技能书计分",
+        "shards": {
+            "Legendary": "Mythic Hero Shards",
+            "Epic": "Epic Hero Shards",
+            "Rare": "Rare Hero Shards"
+        }
+    },
+    "service": {
+        "generalShard": {
+            "Legendary": "Mythic General Hero Shard",
+            "Epic": "Epic General Hero Shard",
+            "Rare": "Rare General Hero Shard"
+        }
     }
-  },
-  "export": {
-    "button": "导出到核心活动",
-    "nothing": "该计划不需要碎片或 Widgets，无需导出。",
-    "shardsGroup": "碎片",
-    "widgetsGroup": "Widgets",
-    "widgets": "Widgets",
-    "manualsReason": "没有活动为技能书计分",
-    "shards": {
-      "Legendary": "Mythic Hero Shards",
-      "Epic": "Epic Hero Shards",
-      "Rare": "Rare Hero Shards"
-    }
-  },
-  "service": {
-    "generalShard": {
-      "Legendary": "Mythic General Hero Shard",
-      "Epic": "Epic General Hero Shard",
-      "Rare": "Rare General Hero Shard"
-    }
-  }
 }

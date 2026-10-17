@@ -1,165 +1,165 @@
 {
-  "topBar": {
-    "navLabel": "Halaman depan",
-    "links": {
-      "how": "Cara kerja",
-      "features": "Fitur",
-      "privacy": "Datamu",
-      "faq": "FAQ"
-    }
-  },
-  "action": {
-    "createFirstChief": "Buat Chief pertamamu",
-    "goToOverview": "Ke Ringkasan",
-    "newChief": "Chief baru",
-    "allChiefs": "Semua Chief"
-  },
-  "hero": {
-    "label": "Whiteout Survival Tracker",
-    "title": "Lacak setiap Chief. Rencanakan setiap upgrade.",
-    "description": "Pendamping gratis untuk Whiteout Survival. Simpan bangunan, pahlawan, perlengkapan, dan risetmu di satu tempat, rencanakan upgrade berikutnya, dan jalankan Core events dari hari pertama sampai riwayat.",
-    "note": "Gratis. Datamu tetap di browser ini.",
-    "learnMore": "Pelajari lebih lanjut"
-  },
-  "continue": {
-    "label": "Selamat datang kembali",
-    "title": "Lanjutkan dengan {name}",
-    "chiefCount": "{count, plural, other {{amount} Chief tersimpan di browser ini}}"
-  },
-  "how": {
-    "label": "Cara kerja",
-    "title": "Dari Chief pertama sampai riwayat event dalam empat langkah",
-    "steps": {
-      "create": {
-        "title": "Buat Chief",
-        "description": "Beri nama. Nomor server dan catatan opsional."
-      },
-      "levels": {
-        "title": "Isi levelmu",
-        "description": "Isi level Furnace dan bangunanmu, lalu isi pahlawan, perlengkapan, dan riset seiring waktu."
-      },
-      "plan": {
-        "title": "Rencanakan upgrade",
-        "description": "Lihat sumber daya, waktu, dan kekuatan untuk targetmu, dan apa yang masih kurang."
-      },
-      "events": {
-        "title": "Jalankan event-mu",
-        "description": "Hitung poin, catat skor dan peringkat, lalu simpan event ke Riwayat."
-      }
-    }
-  },
-  "features": {
-    "label": "Yang bisa kamu lakukan",
-    "title": "Rencanakan, mainkan, lalu tengok kembali",
-    "open": "Buka {page}",
-    "items": {
-      "plan": {
-        "title": "Rencanakan upgrade apa pun",
-        "description": "Tetapkan target di flyout Rencana pada Bangunan, Pahlawan, Perlengkapan Chief, dan Riset. Lihat sumber daya, waktu, dan kekuatan yang dibutuhkan, dengan percepatan dan bonus dari halaman Bonus-mu.",
-        "page": "Bangunan"
-      },
-      "coreEvents": {
-        "title": "Kalkulator Core event",
-        "description": "SvS, Alliance Showdown, King of Icefield, dan Hall of Chief. Hitung poin tiap aksi, tambahkan bonus ahlimu, dan cek ambang serta hadiah peringkat.",
-        "page": "Core Events"
-      },
-      "eventLog": {
-        "title": "Log event dan daftar periksa harian",
-        "description": "Catat skor dan peringkat tiap hari event. Daftar periksa mencantumkan aksi yang bisa kamu lakukan tiap hari.",
-        "page": "Core Events"
-      },
-      "history": {
-        "title": "Riwayat: rencana lawan aktual",
-        "description": "Akhiri event untuk menyimpannya. Bandingkan rencanamu dengan yang kamu lakukan, dan lihat tiap upgrade terencana sebagai selesai atau belum.",
-        "page": "Riwayat"
-      },
-      "research": {
-        "title": "Pohon riset",
-        "description": "Tab Pertumbuhan, Ekonomi, Pertempuran, War Academy, dan T12, sebagai kisi atau pohon, dengan pembukaan menurut usia server.",
-        "page": "Riset"
-      },
-      "alliance": {
-        "title": "Teknologi dan peta aliansi",
-        "description": "Lacak panji, teknologi, dan fasilitas aliansimu, dan baca tata letak castle, stronghold, dan benteng.",
-        "page": "Aliansi"
-      }
-    }
-  },
-  "numbers": {
-    "title": "Yang dicakup tracker",
-    "buildings": "bangunan dengan biaya dan waktu",
-    "heroes": "pahlawan",
-    "research": "teknologi riset",
-    "coreEvents": "kalkulator Core event",
-    "wiki": "halaman referensi wiki, ditambah linimasa"
-  },
-  "pages": {
-    "label": "Semua halaman",
-    "title": "Dikelompokkan seperti di game",
-    "description": "Halaman yang sama dengan bilah samping di dalam aplikasi.",
-    "listLabel": "Halaman {group}",
-    "general": "Umum"
-  },
-  "privacy": {
-    "label": "Datamu",
-    "title": "Privat secara bawaan, mudah dipindah saat kamu mau",
-    "items": {
-      "browser": {
-        "title": "Tetap di browsermu",
-        "description": "Tidak perlu membuat akun. Chief-mu tersimpan di browser ini, di perangkat ini."
-      },
-      "file": {
-        "title": "Satu berkas tersimpan",
-        "description": "Semua yang kamu isi disimpan dalam satu berkas di browser, jadi cepat dimuat dan tidak tersebar di banyak tempat."
-      },
-      "chiefs": {
-        "title": "Beberapa Chief",
-        "description": "Simpan akun utama dan alt-mu. Pindah antar Chief dari bilah samping."
-      },
-      "backup": {
-        "title": "Cadangkan dan pulihkan",
-        "description": "Ekspor datamu ke berkas dari Pengaturan dan impor di browser atau perangkat lain."
-      }
+    "topBar": {
+        "navLabel": "Halaman depan",
+        "links": {
+            "how": "Cara kerja",
+            "features": "Fitur",
+            "privacy": "Datamu",
+            "faq": "FAQ"
+        }
     },
-    "backupLink": "Buka Cadangan dan data"
-  },
-  "faq": {
-    "label": "Ada pertanyaan",
-    "title": "Pertanyaan yang sering diajukan",
-    "items": {
-      "free": {
-        "question": "Apakah gratis?",
-        "answer": "Ya. Tidak ada yang perlu dibayar dan tidak ada yang perlu dibuka."
-      },
-      "data": {
-        "question": "Di mana datamu?",
-        "answer": "Di browser ini, di penyimpanan lokal untuk situs ini. Data tidak dikirim ke server. Jika kamu menghapus data situs untuk halaman ini, Chief-mu ikut terhapus, jadi ekspor cadangan dulu."
-      },
-      "move": {
-        "question": "Bagaimana cara pindah ke perangkat lain?",
-        "answer": "Buka Pengaturan, lalu Cadangan dan data, dan ekspor berkas cadangan. Di perangkat lain, buka halaman yang sama, masuk ke Pengaturan, Cadangan dan data, lalu impor berkas itu."
-      },
-      "chiefs": {
-        "question": "Bisakah punya beberapa Chief?",
-        "answer": "Bisa. Tidak ada batas. Setiap Chief punya bangunan, pahlawan, riset, dan event sendiri, dan kamu berpindah antar Chief di bilah samping."
-      },
-      "account": {
-        "question": "Apakah perlu akun atau berkas simpanan dari game?",
-        "answer": "Tidak. Kamu mengisi levelmu sendiri. Data game untuk biaya, waktu, dan statistik sudah termasuk di tracker."
-      },
-      "official": {
-        "question": "Apakah ini aplikasi resmi?",
-        "answer": "Bukan. Ini alat penggemar tidak resmi. Tidak berafiliasi dengan Whiteout Survival atau Century Games. Pemberitahuan lengkap ada di footer."
-      },
-      "wiki": {
-        "question": "Apa itu Wiki?",
-        "answer": "Kumpulan halaman referensi untuk data game, seperti bangunan, pahlawan, hewan peliharaan, item, dan event, ditambah linimasa server. Bisa dibaca tanpa membuat Chief."
-      }
+    "action": {
+        "createFirstChief": "Buat Chief pertamamu",
+        "goToOverview": "Ke Ringkasan",
+        "newChief": "Chief baru",
+        "allChiefs": "Semua Chief"
+    },
+    "hero": {
+        "label": "Whiteout Survival Tracker",
+        "title": "Lacak setiap Chief. Rencanakan setiap upgrade.",
+        "description": "Pendamping gratis untuk Whiteout Survival. Simpan bangunan, pahlawan, perlengkapan, dan risetmu di satu tempat, rencanakan upgrade berikutnya, dan jalankan Core events dari hari pertama sampai riwayat.",
+        "note": "Gratis. Datamu tetap di browser ini.",
+        "learnMore": "Pelajari lebih lanjut"
+    },
+    "continue": {
+        "label": "Selamat datang kembali",
+        "title": "Lanjutkan dengan {name}",
+        "chiefCount": "{count, plural, other {{amount} Chief tersimpan di browser ini}}"
+    },
+    "how": {
+        "label": "Cara kerja",
+        "title": "Dari Chief pertama sampai riwayat event dalam empat langkah",
+        "steps": {
+            "create": {
+                "title": "Buat Chief",
+                "description": "Beri nama. Nomor server dan catatan opsional."
+            },
+            "levels": {
+                "title": "Isi levelmu",
+                "description": "Isi level Furnace dan bangunanmu, lalu isi pahlawan, perlengkapan, dan riset seiring waktu."
+            },
+            "plan": {
+                "title": "Rencanakan upgrade",
+                "description": "Lihat sumber daya, waktu, dan kekuatan untuk targetmu, dan apa yang masih kurang."
+            },
+            "events": {
+                "title": "Jalankan event-mu",
+                "description": "Hitung poin, catat skor dan peringkat, lalu simpan event ke Riwayat."
+            }
+        }
+    },
+    "features": {
+        "label": "Yang bisa kamu lakukan",
+        "title": "Rencanakan, mainkan, lalu tengok kembali",
+        "open": "Buka {page}",
+        "items": {
+            "plan": {
+                "title": "Rencanakan upgrade apa pun",
+                "description": "Tetapkan target di flyout Rencana pada Bangunan, Pahlawan, Perlengkapan Chief, dan Riset. Lihat sumber daya, waktu, dan kekuatan yang dibutuhkan, dengan percepatan dan bonus dari halaman Bonus-mu.",
+                "page": "Bangunan"
+            },
+            "coreEvents": {
+                "title": "Kalkulator Core event",
+                "description": "SvS, Alliance Showdown, King of Icefield, dan Hall of Chief. Hitung poin tiap aksi, tambahkan bonus ahlimu, dan cek ambang serta hadiah peringkat.",
+                "page": "Core Events"
+            },
+            "eventLog": {
+                "title": "Log event dan daftar periksa harian",
+                "description": "Catat skor dan peringkat tiap hari event. Daftar periksa mencantumkan aksi yang bisa kamu lakukan tiap hari.",
+                "page": "Core Events"
+            },
+            "history": {
+                "title": "Riwayat: rencana lawan aktual",
+                "description": "Akhiri event untuk menyimpannya. Bandingkan rencanamu dengan yang kamu lakukan, dan lihat tiap upgrade terencana sebagai selesai atau belum.",
+                "page": "Riwayat"
+            },
+            "research": {
+                "title": "Pohon riset",
+                "description": "Tab Pertumbuhan, Ekonomi, Pertempuran, War Academy, dan T12, sebagai kisi atau pohon, dengan pembukaan menurut usia server.",
+                "page": "Riset"
+            },
+            "alliance": {
+                "title": "Teknologi dan peta aliansi",
+                "description": "Lacak panji, teknologi, dan fasilitas aliansimu, dan baca tata letak castle, stronghold, dan benteng.",
+                "page": "Aliansi"
+            }
+        }
+    },
+    "numbers": {
+        "title": "Yang dicakup tracker",
+        "buildings": "bangunan dengan biaya dan waktu",
+        "heroes": "pahlawan",
+        "research": "teknologi riset",
+        "coreEvents": "kalkulator Core event",
+        "wiki": "halaman referensi wiki, ditambah linimasa"
+    },
+    "pages": {
+        "label": "Semua halaman",
+        "title": "Dikelompokkan seperti di game",
+        "description": "Halaman yang sama dengan bilah samping di dalam aplikasi.",
+        "listLabel": "Halaman {group}",
+        "general": "Umum"
+    },
+    "privacy": {
+        "label": "Datamu",
+        "title": "Privat secara bawaan, mudah dipindah saat kamu mau",
+        "items": {
+            "browser": {
+                "title": "Tetap di browsermu",
+                "description": "Tidak perlu membuat akun. Chief-mu tersimpan di browser ini, di perangkat ini."
+            },
+            "file": {
+                "title": "Satu berkas tersimpan",
+                "description": "Semua yang kamu isi disimpan dalam satu berkas di browser, jadi cepat dimuat dan tidak tersebar di banyak tempat."
+            },
+            "chiefs": {
+                "title": "Beberapa Chief",
+                "description": "Simpan akun utama dan alt-mu. Pindah antar Chief dari bilah samping."
+            },
+            "backup": {
+                "title": "Cadangkan dan pulihkan",
+                "description": "Ekspor datamu ke berkas dari Pengaturan dan impor di browser atau perangkat lain."
+            }
+        },
+        "backupLink": "Buka Cadangan dan data"
+    },
+    "faq": {
+        "label": "Ada pertanyaan",
+        "title": "Pertanyaan yang sering diajukan",
+        "items": {
+            "free": {
+                "question": "Apakah gratis?",
+                "answer": "Ya. Tidak ada yang perlu dibayar dan tidak ada yang perlu dibuka."
+            },
+            "data": {
+                "question": "Di mana datamu?",
+                "answer": "Di browser ini, di penyimpanan lokal untuk situs ini. Data tidak dikirim ke server. Jika kamu menghapus data situs untuk halaman ini, Chief-mu ikut terhapus, jadi ekspor cadangan dulu."
+            },
+            "move": {
+                "question": "Bagaimana cara pindah ke perangkat lain?",
+                "answer": "Buka Pengaturan, lalu Cadangan dan data, dan ekspor berkas cadangan. Di perangkat lain, buka halaman yang sama, masuk ke Pengaturan, Cadangan dan data, lalu impor berkas itu."
+            },
+            "chiefs": {
+                "question": "Bisakah punya beberapa Chief?",
+                "answer": "Bisa. Tidak ada batas. Setiap Chief punya bangunan, pahlawan, riset, dan event sendiri, dan kamu berpindah antar Chief di bilah samping."
+            },
+            "account": {
+                "question": "Apakah perlu akun atau berkas simpanan dari game?",
+                "answer": "Tidak. Kamu mengisi levelmu sendiri. Data game untuk biaya, waktu, dan statistik sudah termasuk di tracker."
+            },
+            "official": {
+                "question": "Apakah ini aplikasi resmi?",
+                "answer": "Bukan. Ini alat penggemar tidak resmi. Tidak berafiliasi dengan Whiteout Survival atau Century Games. Pemberitahuan lengkap ada di footer."
+            },
+            "wiki": {
+                "question": "Apa itu Wiki?",
+                "answer": "Kumpulan halaman referensi untuk data game, seperti bangunan, pahlawan, hewan peliharaan, item, dan event, ditambah linimasa server. Bisa dibaca tanpa membuat Chief."
+            }
+        }
+    },
+    "closing": {
+        "title": "Mulai melacak hari ini",
+        "description": "Chief pertamamu hanya butuh satu nama. Semuanya bisa diubah nanti.",
+        "wiki": "Jelajahi Wiki"
     }
-  },
-  "closing": {
-    "title": "Mulai melacak hari ini",
-    "description": "Chief pertamamu hanya butuh satu nama. Semuanya bisa diubah nanti.",
-    "wiki": "Jelajahi Wiki"
-  }
 }

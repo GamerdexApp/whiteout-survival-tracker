@@ -1,79 +1,79 @@
 {
-  "line": "Предметов: {items}, категорий: {categories}, с источниками и шансами выпадения из сундуков ({chests}).",
-  "catalog": {
-    "title": "Каталог предметов",
-    "showing": "Показано {shown} из {total}",
-    "search": "Поиск",
-    "searchPlaceholder": "Поиск предметов по названию или описанию",
-    "table": "Предметы",
-    "item": "Предмет",
-    "category": "Категория",
-    "sources": "Источники",
-    "lootRates": "Шансы выпадения",
-    "description": "Описание",
-    "emptyTitle": "Подходящих предметов нет",
-    "emptyDescription": "Измените поиск или фильтры."
-  },
-  "filters": {
-    "title": "Фильтры",
-    "button": "Фильтры",
-    "summary": "Фильтры: {category}. Источники: {sources}",
-    "edit": "Изменить",
-    "category": "Категория",
-    "all": "Все",
-    "sources": "Источники",
-    "lootRates": "Шансы выпадения",
-    "reset": "Сбросить",
-    "show": "{count, plural, one {Показать {amount} предмет} few {Показать {amount} предмета} many {Показать {amount} предметов} other {Показать {amount} предмета}}"
-  },
-  "sourcesFilter": {
-    "any": "Любые источники",
-    "has": "С источниками",
-    "none": "Без источников"
-  },
-  "sourcesChip": {
-    "any": "Любые",
-    "has": "С источниками",
-    "none": "Без источников ({amount})"
-  },
-  "lootFilter": {
-    "any": "Любые",
-    "has": "Есть шансы выпадения"
-  },
-  "lootChip": {
-    "any": "Любые",
-    "has": "Есть шансы выпадения (сундуков: {amount})"
-  },
-  "loot": {
-    "yes": "Да",
-    "no": "Нет",
-    "notChest": "Не сундук"
-  },
-  "detail": {
-    "title": "Подробности",
-    "category": "Категория",
-    "sources": "Источники",
-    "speedup": "Ускорение",
-    "speedupValue": "{type}, минут: {minutes}",
-    "description": "Описание",
-    "lootRates": "Шансы выпадения",
-    "lootRowsListed": "{count, plural, one {Указана {amount} строка} few {Указано {amount} строки} many {Указано {amount} строк} other {Указано {amount} строки}}",
-    "noLootRates": "В данных нет шансов выпадения для этого сундука",
-    "lootTitle": "Шансы выпадения",
-    "lootMeta": "{count, plural, one {{amount} награда} few {{amount} награды} many {{amount} наград} other {{amount} награды}}",
-    "lootTable": "Шансы выпадения из сундука",
-    "reward": "Награда",
-    "amount": "Количество",
-    "chance": "Шанс",
-    "chanceValue": "{percent}%",
-    "name": "Название"
-  },
-  "speedupType": {
-    "general": "Общее",
-    "construction": "Строительство",
-    "troop": "Войска",
-    "research": "Исследования",
-    "learning": "Обучение",
-    "healing": "Лечение"
-  }
+    "line": "Предметов: {items}, категорий: {categories}, с источниками и шансами выпадения из сундуков ({chests}).",
+    "catalog": {
+        "title": "Каталог предметов",
+        "showing": "Показано {shown} из {total}",
+        "search": "Поиск",
+        "searchPlaceholder": "Поиск предметов по названию или описанию",
+        "table": "Предметы",
+        "item": "Предмет",
+        "category": "Категория",
+        "sources": "Источники",
+        "lootRates": "Шансы выпадения",
+        "description": "Описание",
+        "emptyTitle": "Подходящих предметов нет",
+        "emptyDescription": "Измените поиск или фильтры."
+    },
+    "filters": {
+        "title": "Фильтры",
+        "button": "Фильтры",
+        "summary": "Фильтры: {category}. Источники: {sources}",
+        "edit": "Изменить",
+        "category": "Категория",
+        "all": "Все",
+        "sources": "Источники",
+        "lootRates": "Шансы выпадения",
+        "reset": "Сбросить",
+        "show": "{count, plural, one {Показать {amount} предмет} few {Показать {amount} предмета} many {Показать {amount} предметов} other {Показать {amount} предмета}}"
+    },
+    "sourcesFilter": {
+        "any": "Любые источники",
+        "has": "С источниками",
+        "none": "Без источников"
+    },
+    "sourcesChip": {
+        "any": "Любые",
+        "has": "С источниками",
+        "none": "Без источников ({amount})"
+    },
+    "lootFilter": {
+        "any": "Любые",
+        "has": "Есть шансы выпадения"
+    },
+    "lootChip": {
+        "any": "Любые",
+        "has": "Есть шансы выпадения (сундуков: {amount})"
+    },
+    "loot": {
+        "yes": "Да",
+        "no": "Нет",
+        "notChest": "Не сундук"
+    },
+    "detail": {
+        "title": "Подробности",
+        "category": "Категория",
+        "sources": "Источники",
+        "speedup": "Ускорение",
+        "speedupValue": "{type}, минут: {minutes}",
+        "description": "Описание",
+        "lootRates": "Шансы выпадения",
+        "lootRowsListed": "{count, plural, one {Указана {amount} строка} few {Указано {amount} строки} many {Указано {amount} строк} other {Указано {amount} строки}}",
+        "noLootRates": "В данных нет шансов выпадения для этого сундука",
+        "lootTitle": "Шансы выпадения",
+        "lootMeta": "{count, plural, one {{amount} награда} few {{amount} награды} many {{amount} наград} other {{amount} награды}}",
+        "lootTable": "Шансы выпадения из сундука",
+        "reward": "Награда",
+        "amount": "Количество",
+        "chance": "Шанс",
+        "chanceValue": "{percent}%",
+        "name": "Название"
+    },
+    "speedupType": {
+        "general": "Общее",
+        "construction": "Строительство",
+        "troop": "Войска",
+        "research": "Исследования",
+        "learning": "Обучение",
+        "healing": "Лечение"
+    }
 }

@@ -1,176 +1,176 @@
 {
-  "none": "无",
-  "charmLabel": "饰品{number}",
-  "view": {
-    "title": "领主装备",
-    "tabsLabel": "领主装备",
-    "gearSubline": "{name} · 六个槽位，150 个升级行",
-    "charmsSubline": "{name} · 6 件装备，每件 3 个饰品，75 个升级行",
-    "tabs": {
-      "gear": "领主装备",
-      "charms": "领主饰品"
-    }
-  },
-  "shared": {
-    "plan": "计划",
-    "autoSaveHint": "每次更改都会立即保存。加减按钮按数据包顺序每次移动一行。",
-    "scoreToGain": "还可获得的分数",
-    "notes": "备注",
-    "package": "数据包"
-  },
-  "gear": {
-    "scoreNow": "当前装备分数，六个槽位",
-    "powerNow": "当前装备战力",
-    "stepsToGoals": "达成全部目标的步数",
-    "goalsHint": "目标在此处只读。请在计划中设置，并点击保存计划。",
-    "stepWord": "步",
-    "tiers": {
-      "title": "阶段",
-      "description": "数据包把 150 行分为{count}个阶段。高亮的阶段至少包含你的一件装备。",
-      "rows": "{rows}行",
-      "names": {
-        "EpicT1": "Epic T1",
-        "MythicT1": "Mythic T1",
-        "MythicT2": "Mythic T2",
-        "LegendaryT1": "Legendary T1",
-        "LegendaryT2": "Legendary T2",
-        "LegendaryT3": "Legendary T3",
-        "LegendaryT4": "Legendary T4",
-        "LegendaryT5": "Legendary T5",
-        "LegendaryT6": "Legendary T6"
-      }
+    "none": "无",
+    "charmLabel": "饰品{number}",
+    "view": {
+        "title": "领主装备",
+        "tabsLabel": "领主装备",
+        "gearSubline": "{name} · 六个槽位，150 个升级行",
+        "charmsSubline": "{name} · 6 件装备，每件 3 个饰品，75 个升级行",
+        "tabs": {
+            "gear": "领主装备",
+            "charms": "领主饰品"
+        }
     },
-    "notes": {
-      "setBonus": {
-        "title": "套装加成规则",
-        "body": "3 件同阶段装备提供防御，6 件提供攻击，对三种兵种都有效。没有等级的装备不计入。每个阶段只有一个数值。"
-      },
-      "troopType": {
-        "title": "兵种为手工录入",
-        "body": "Cap 和 Watch 增益矛兵，Coat 和 Pants 增益盾兵，Ring 和 Weapon 增益弓兵。这是数据包作者根据百科文字录入的。"
-      },
-      "capacity": {
-        "title": "前期行的容量为 0",
-        "body": "前 26 行在数据包中没有出兵容量，因此在数据补全之前显示 0。"
-      }
-    }
-  },
-  "charms": {
-    "scoreNow": "当前饰品分数，18 个饰品",
-    "powerNow": "当前饰品战力",
-    "stagesToGoals": "达成全部目标的阶数",
-    "goalsHint": "目标在此处只读，请在计划中设置。",
-    "stepWord": "阶",
-    "slotMeta": "{troop} · 3 个饰品",
-    "slotStages": "，距目标{stages}阶",
-    "notes": {
-      "secrets": {
-        "title": "Charm Secrets 从 11 级开始",
-        "body": "从 11 级第 1 阶起，每阶需要 Charm Secrets。之前的阶段只列出 Charm Guide 和 Charm Design。"
-      },
-      "look": {
-        "title": "饰品每级外观都会变化",
-        "body": "每个饰品有 18 个图标，每级一个。每件装备带有三个饰品，它们跟随该装备的兵种。"
-      },
-      "estimate": {
-        "title": "各阶分数为估算",
-        "body": "一个等级的分数平均分给通向它的各个阶。游戏并未确认这种划分。"
-      }
-    }
-  },
-  "badge": {
-    "tier": "{tier}阶",
-    "stars": "{count, plural, other {{amount}星}}",
-    "tierAndStars": "{tier}，{stars}"
-  },
-  "row": {
-    "level": "{title}等级",
-    "progressLabel": "{title}在{total}行中的进度",
-    "progress": "{progress} / {total}",
-    "stepsToGoal": " · 距目标{steps}",
-    "goal": "目标{name}",
-    "noGoal": "无目标",
-    "stats": "属性{stat} · 战力{power}",
-    "statPercent": "{percent}%",
-    "capacity": " · 容量{capacity}",
-    "lockedCurrent": "已保存的等级{name}被服务器天数锁定，未计入。{requirement}。",
-    "lockedGoal": "已保存的目标{name}被服务器天数锁定，未纳入计划。{requirement}。"
-  },
-  "summary": {
-    "title": "达成全部目标还差",
-    "derived": "推算",
-    "score": "分数",
-    "powerGain": "战力增加",
-    "noGoals": "尚未设置目标。请在计划中设置目标。",
-    "openPlan": "打开计划，查看活动积分和明细"
-  },
-  "setBonus": {
-    "title": "已解锁的套装加成",
-    "pieceSet": "{pieces}件套",
-    "active": "已生效",
-    "notActive": "未生效",
-    "value": "{stat} +{percent}%",
-    "appliesTo": "{tierName}装备，适用于盾兵、矛兵和弓兵",
-    "needs": "需要{pieces}件同阶段装备。目前{stat} +0%。"
-  },
-  "plan": {
+    "shared": {
+        "plan": "计划",
+        "autoSaveHint": "每次更改都会立即保存。加减按钮按数据包顺序每次移动一行。",
+        "scoreToGain": "还可获得的分数",
+        "notes": "备注",
+        "package": "数据包"
+    },
     "gear": {
-      "title": "领主装备计划",
-      "description": "从当前等级到目标所需的材料、分数和战力",
-      "stepWord": "步数",
-      "conversionNote": "检查不计入兑换。兑换器有七种兑换比例，各有每周上限，例如 10 个 Design Plans 兑换 1 个 Lunar Amber，每周最多 500。"
+        "scoreNow": "当前装备分数，六个槽位",
+        "powerNow": "当前装备战力",
+        "stepsToGoals": "达成全部目标的步数",
+        "goalsHint": "目标在此处只读。请在计划中设置，并点击保存计划。",
+        "stepWord": "步",
+        "tiers": {
+            "title": "阶段",
+            "description": "数据包把 150 行分为{count}个阶段。高亮的阶段至少包含你的一件装备。",
+            "rows": "{rows}行",
+            "names": {
+                "EpicT1": "Epic T1",
+                "MythicT1": "Mythic T1",
+                "MythicT2": "Mythic T2",
+                "LegendaryT1": "Legendary T1",
+                "LegendaryT2": "Legendary T2",
+                "LegendaryT3": "Legendary T3",
+                "LegendaryT4": "Legendary T4",
+                "LegendaryT5": "Legendary T5",
+                "LegendaryT6": "Legendary T6"
+            }
+        },
+        "notes": {
+            "setBonus": {
+                "title": "套装加成规则",
+                "body": "3 件同阶段装备提供防御，6 件提供攻击，对三种兵种都有效。没有等级的装备不计入。每个阶段只有一个数值。"
+            },
+            "troopType": {
+                "title": "兵种为手工录入",
+                "body": "Cap 和 Watch 增益矛兵，Coat 和 Pants 增益盾兵，Ring 和 Weapon 增益弓兵。这是数据包作者根据百科文字录入的。"
+            },
+            "capacity": {
+                "title": "前期行的容量为 0",
+                "body": "前 26 行在数据包中没有出兵容量，因此在数据补全之前显示 0。"
+            }
+        }
     },
-    "charm": {
-      "title": "领主饰品计划",
-      "description": "从当前等级到目标所需的材料、分数和战力",
-      "stepWord": "阶数",
-      "conversionNote": "检查不计入兑换：2 个 Charm Guide 可换 1 个 Charm Design，反之亦然，任意一种 40 个可换 1 个 Charm Secrets。"
+    "charms": {
+        "scoreNow": "当前饰品分数，18 个饰品",
+        "powerNow": "当前饰品战力",
+        "stagesToGoals": "达成全部目标的阶数",
+        "goalsHint": "目标在此处只读，请在计划中设置。",
+        "stepWord": "阶",
+        "slotMeta": "{troop} · 3 个饰品",
+        "slotStages": "，距目标{stages}阶",
+        "notes": {
+            "secrets": {
+                "title": "Charm Secrets 从 11 级开始",
+                "body": "从 11 级第 1 阶起，每阶需要 Charm Secrets。之前的阶段只列出 Charm Guide 和 Charm Design。"
+            },
+            "look": {
+                "title": "饰品每级外观都会变化",
+                "body": "每个饰品有 18 个图标，每级一个。每件装备带有三个饰品，它们跟随该装备的兵种。"
+            },
+            "estimate": {
+                "title": "各阶分数为估算",
+                "body": "一个等级的分数平均分给通向它的各个阶。游戏并未确认这种划分。"
+            }
+        }
     },
-    "saved": "计划已保存{date}",
-    "close": "关闭",
-    "save": "保存计划",
-    "export": {
-      "button": "导出到核心活动",
-      "nothingToExport": "请把目标设得高于当前等级，才能导出计划。",
-      "gearScore": "领主装备分数",
-      "charmScore": "领主饰品分数",
-      "power": "获得战力",
-      "powerReason": "核心活动中没有为领主装备或领主饰品战力计分的行。"
+    "badge": {
+        "tier": "{tier}阶",
+        "stars": "{count, plural, other {{amount}星}}",
+        "tierAndStars": "{tier}，{stars}"
     },
-    "inputs": "输入",
-    "slotTroop": "{slot}，{troop}",
-    "from": "从{level}",
-    "goalLabel": "{label}目标",
-    "slotGoalLabel": "{slot} {label}目标",
-    "inputsHint": "当前等级以页面上的为准，请在那里修改。目标在页面上只读，请在这里设置。",
-    "result": "结果",
-    "score": "分数",
-    "powerGain": "战力增加",
-    "events": {
-      "svs": "SvS State of Power",
-      "allianceShowdown": "Alliance Showdown",
-      "kingOfIcefield": "King of Icefield",
-      "hallOfChief": "Hall of Chief"
+    "row": {
+        "level": "{title}等级",
+        "progressLabel": "{title}在{total}行中的进度",
+        "progress": "{progress} / {total}",
+        "stepsToGoal": " · 距目标{steps}",
+        "goal": "目标{name}",
+        "noGoal": "无目标",
+        "stats": "属性{stat} · 战力{power}",
+        "statPercent": "{percent}%",
+        "capacity": " · 容量{capacity}",
+        "lockedCurrent": "已保存的等级{name}被服务器天数锁定，未计入。{requirement}。",
+        "lockedGoal": "已保存的目标{name}被服务器天数锁定，未纳入计划。{requirement}。"
     },
-    "bySlot": "按槽位",
-    "byCharm": "按饰品",
-    "columnSlot": "槽位",
-    "columnCharm": "饰品",
-    "slotCharm": "{slot} {charm}",
-    "converter": {
-      "title": "材料兑换器",
-      "spend": "消耗",
-      "get": "获得",
-      "limit": "上限",
-      "amount": "{quantity} {name}",
-      "perWeek": "每周{limit}",
-      "noLimit": "无每周上限"
+    "summary": {
+        "title": "达成全部目标还差",
+        "derived": "推算",
+        "score": "分数",
+        "powerGain": "战力增加",
+        "noGoals": "尚未设置目标。请在计划中设置目标。",
+        "openPlan": "打开计划，查看活动积分和明细"
     },
-    "lockedCurrent": "已保存的等级{name}被服务器天数锁定。{requirement}。"
-  },
-  "lock": {
-    "title": "被服务器天数锁定",
-    "stop": "{name}（未解锁，第{day}天）",
-    "group": "自{name}：{requirement}。"
-  }
+    "setBonus": {
+        "title": "已解锁的套装加成",
+        "pieceSet": "{pieces}件套",
+        "active": "已生效",
+        "notActive": "未生效",
+        "value": "{stat} +{percent}%",
+        "appliesTo": "{tierName}装备，适用于盾兵、矛兵和弓兵",
+        "needs": "需要{pieces}件同阶段装备。目前{stat} +0%。"
+    },
+    "plan": {
+        "gear": {
+            "title": "领主装备计划",
+            "description": "从当前等级到目标所需的材料、分数和战力",
+            "stepWord": "步数",
+            "conversionNote": "检查不计入兑换。兑换器有七种兑换比例，各有每周上限，例如 10 个 Design Plans 兑换 1 个 Lunar Amber，每周最多 500。"
+        },
+        "charm": {
+            "title": "领主饰品计划",
+            "description": "从当前等级到目标所需的材料、分数和战力",
+            "stepWord": "阶数",
+            "conversionNote": "检查不计入兑换：2 个 Charm Guide 可换 1 个 Charm Design，反之亦然，任意一种 40 个可换 1 个 Charm Secrets。"
+        },
+        "saved": "计划已保存{date}",
+        "close": "关闭",
+        "save": "保存计划",
+        "export": {
+            "button": "导出到核心活动",
+            "nothingToExport": "请把目标设得高于当前等级，才能导出计划。",
+            "gearScore": "领主装备分数",
+            "charmScore": "领主饰品分数",
+            "power": "获得战力",
+            "powerReason": "核心活动中没有为领主装备或领主饰品战力计分的行。"
+        },
+        "inputs": "输入",
+        "slotTroop": "{slot}，{troop}",
+        "from": "从{level}",
+        "goalLabel": "{label}目标",
+        "slotGoalLabel": "{slot} {label}目标",
+        "inputsHint": "当前等级以页面上的为准，请在那里修改。目标在页面上只读，请在这里设置。",
+        "result": "结果",
+        "score": "分数",
+        "powerGain": "战力增加",
+        "events": {
+            "svs": "SvS State of Power",
+            "allianceShowdown": "Alliance Showdown",
+            "kingOfIcefield": "King of Icefield",
+            "hallOfChief": "Hall of Chief"
+        },
+        "bySlot": "按槽位",
+        "byCharm": "按饰品",
+        "columnSlot": "槽位",
+        "columnCharm": "饰品",
+        "slotCharm": "{slot} {charm}",
+        "converter": {
+            "title": "材料兑换器",
+            "spend": "消耗",
+            "get": "获得",
+            "limit": "上限",
+            "amount": "{quantity} {name}",
+            "perWeek": "每周{limit}",
+            "noLimit": "无每周上限"
+        },
+        "lockedCurrent": "已保存的等级{name}被服务器天数锁定。{requirement}。"
+    },
+    "lock": {
+        "title": "被服务器天数锁定",
+        "stop": "{name}（未解锁，第{day}天）",
+        "group": "自{name}：{requirement}。"
+    }
 }

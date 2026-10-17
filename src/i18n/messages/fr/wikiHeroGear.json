@@ -1,45 +1,45 @@
 {
-  "line": "{enhancement} niveaux de renforcement, {empowerment} niveaux d'amplification, {mastery} lignes de forge de maîtrise et {stats} entrées de stats. Référence uniquement, rien ici n'est enregistré.",
-  "tabsLabel": "Tables d'équipement de héros",
-  "tabs": {
-    "enhancement": "Renforcement",
-    "empowerment": "Amplification",
-    "mastery": "Forge de maîtrise",
-    "stats": "Stats"
-  },
-  "levels": {
-    "columns": {
-      "level": "Niveau",
-      "cost": "Coût",
-      "power": "Puissance",
-      "gain": "Gain sur le précédent",
-      "milestonePower": "Puissance du palier",
-      "stage": "Stade",
-      "statsUp": "Hausse des stats"
+    "line": "{enhancement} niveaux de renforcement, {empowerment} niveaux d'amplification, {mastery} lignes de forge de maîtrise et {stats} entrées de stats. Référence uniquement, rien ici n'est enregistré.",
+    "tabsLabel": "Tables d'équipement de héros",
+    "tabs": {
+        "enhancement": "Renforcement",
+        "empowerment": "Amplification",
+        "mastery": "Forge de maîtrise",
+        "stats": "Stats"
     },
-    "none": "Aucun",
-    "percent": "{value} %",
-    "gainValue": "+{value}"
-  },
-  "stats": {
-    "slot": "Emplacement",
-    "troopType": "Type de troupe",
-    "troop": {
-      "infantry": "Infantry",
-      "lancer": "Lancer",
-      "marksman": "Marksman"
+    "levels": {
+        "columns": {
+            "level": "Niveau",
+            "cost": "Coût",
+            "power": "Puissance",
+            "gain": "Gain sur le précédent",
+            "milestonePower": "Puissance du palier",
+            "stage": "Stade",
+            "statsUp": "Hausse des stats"
+        },
+        "none": "Aucun",
+        "percent": "{value} %",
+        "gainValue": "+{value}"
     },
-    "note": "Les niveaux de stats 101 à 200 sont les niveaux d'amplification 1 à 100.",
-    "columns": {
-      "level": "Niveau",
-      "combat": "{stat}",
-      "health": "Santé",
-      "percent": "{stat}"
-    },
-    "level": "Niveau {level}",
-    "empowermentLevel": "Niveau {level}, amplification {empowerment}",
-    "milestonesTitle": "Paliers",
-    "milestone": "Niveau d'amplification {level}, {event} : {stat}",
-    "percentValue": "{value} %"
-  }
+    "stats": {
+        "slot": "Emplacement",
+        "troopType": "Type de troupe",
+        "troop": {
+            "infantry": "Infantry",
+            "lancer": "Lancer",
+            "marksman": "Marksman"
+        },
+        "note": "Les niveaux de stats 101 à 200 sont les niveaux d'amplification 1 à 100.",
+        "columns": {
+            "level": "Niveau",
+            "combat": "{stat}",
+            "health": "Santé",
+            "percent": "{stat}"
+        },
+        "level": "Niveau {level}",
+        "empowermentLevel": "Niveau {level}, amplification {empowerment}",
+        "milestonesTitle": "Paliers",
+        "milestone": "Niveau d'amplification {level}, {event} : {stat}",
+        "percentValue": "{value} %"
+    }
 }

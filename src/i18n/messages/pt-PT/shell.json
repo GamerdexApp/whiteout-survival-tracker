@@ -1,85 +1,85 @@
 {
-  "nav": {
-    "main": "Principal",
-    "groups": {
-      "chief": "Chefe",
-      "alliance": "Aliança",
-      "account": "Conta",
-      "planner": "Planeamento",
-      "wiki": "Wiki"
+    "nav": {
+        "main": "Principal",
+        "groups": {
+            "chief": "Chefe",
+            "alliance": "Aliança",
+            "account": "Conta",
+            "planner": "Planeamento",
+            "wiki": "Wiki"
+        },
+        "items": {
+            "overview": "Resumo",
+            "buildings": "Edifícios",
+            "daybreakIsland": "Daybreak Island",
+            "heroes": "Heróis",
+            "chiefGear": "Equipamento do chefe",
+            "experts": "Especialistas",
+            "pets": "Mascotes",
+            "troops": "Tropas",
+            "research": "Investigação",
+            "alliance": "Aliança",
+            "facilities": "Instalações",
+            "tech": "Tecnologia",
+            "resources": "Recursos",
+            "bonuses": "Bónus",
+            "vip": "VIP",
+            "skins": "Skins",
+            "events": "Eventos",
+            "tundraAlbum": "Álbum da Tundra",
+            "coreEvents": "Eventos principais",
+            "dailies": "Diárias",
+            "history": "Histórico",
+            "wikiReference": "Referência",
+            "wikiTimeline": "Cronologia",
+            "settings": "Definições",
+            "chiefs": "Chefes"
+        },
+        "upgradesRunning": ", {amount} {count, plural, one {melhoria} other {melhorias}} em curso"
     },
-    "items": {
-      "overview": "Resumo",
-      "buildings": "Edifícios",
-      "daybreakIsland": "Daybreak Island",
-      "heroes": "Heróis",
-      "chiefGear": "Equipamento do chefe",
-      "experts": "Especialistas",
-      "pets": "Mascotes",
-      "troops": "Tropas",
-      "research": "Investigação",
-      "alliance": "Aliança",
-      "facilities": "Instalações",
-      "tech": "Tecnologia",
-      "resources": "Recursos",
-      "bonuses": "Bónus",
-      "vip": "VIP",
-      "skins": "Skins",
-      "events": "Eventos",
-      "tundraAlbum": "Álbum da Tundra",
-      "coreEvents": "Eventos principais",
-      "dailies": "Diárias",
-      "history": "Histórico",
-      "wikiReference": "Referência",
-      "wikiTimeline": "Cronologia",
-      "settings": "Definições",
-      "chiefs": "Chefes"
+    "appShell": {
+        "skipToContent": "Saltar para o conteúdo",
+        "closeMenu": "Fechar menu"
     },
-    "upgradesRunning": ", {amount} {count, plural, one {melhoria} other {melhorias}} em curso"
-  },
-  "appShell": {
-    "skipToContent": "Saltar para o conteúdo",
-    "closeMenu": "Fechar menu"
-  },
-  "appBar": {
-    "openMenu": "Abrir menu"
-  },
-  "chiefGate": {
-    "emptyTitle": "Nenhum chefe selecionado",
-    "emptyDescription": "Crie um chefe para começar o registo. Tudo fica neste navegador.",
-    "newChief": "Novo chefe"
-  },
-  "chiefSwitcher": {
-    "chiefs": "Chefes",
-    "active": "Ativo",
-    "allChiefs": "Todos os chefes",
-    "newChief": "Novo chefe",
-    "loading": "A carregar",
-    "noChiefYet": "Ainda sem chefe",
-    "sectionLabel": "Chefe",
-    "switchChief": "Mudar de chefe"
-  },
-  "footer": {
-    "tagline": "Registe os seus chefes, edifícios, heróis e investigação de Whiteout Survival num só lugar.",
-    "product": "Tracker",
-    "support": "Apoio",
-    "wikiReference": "Referência da Wiki",
-    "wikiTimeline": "Cronologia da Wiki",
-    "backupAndData": "Cópia de segurança e dados",
-    "aboutApp": "Sobre",
-    "disclaimerTitle": "Aviso legal",
-    "disclaimer": "Esta aplicação não é afiliada, aprovada nem ligada a Whiteout Survival ou à Century Games. Todas as marcas e todo o conteúdo do jogo são propriedade dos respetivos donos.",
-    "copyright": "© {year} {appName}",
-    "framework": "Criada com a framework Gamerdex, uma base partilhada para trackers gratuitos de progresso em jogos. Os dados ficam no navegador."
-  },
-  "notFound": {
-    "title": "Esta página não existe",
-    "description": "A ligação pode ser antiga ou ter um erro. Os chefes estão seguros e nada foi alterado.",
-    "didYouMean": "Queria dizer <link>{name}</link>?",
-    "goToOverview": "Ir para o Resumo",
-    "jumpTo": "Ou ir para"
-  },
-  "pageHeader": {
-    "wiki": "Wiki"
-  }
+    "appBar": {
+        "openMenu": "Abrir menu"
+    },
+    "chiefGate": {
+        "emptyTitle": "Nenhum chefe selecionado",
+        "emptyDescription": "Crie um chefe para começar o registo. Tudo fica neste navegador.",
+        "newChief": "Novo chefe"
+    },
+    "chiefSwitcher": {
+        "chiefs": "Chefes",
+        "active": "Ativo",
+        "allChiefs": "Todos os chefes",
+        "newChief": "Novo chefe",
+        "loading": "A carregar",
+        "noChiefYet": "Ainda sem chefe",
+        "sectionLabel": "Chefe",
+        "switchChief": "Mudar de chefe"
+    },
+    "footer": {
+        "tagline": "Registe os seus chefes, edifícios, heróis e investigação de Whiteout Survival num só lugar.",
+        "product": "Tracker",
+        "support": "Apoio",
+        "wikiReference": "Referência da Wiki",
+        "wikiTimeline": "Cronologia da Wiki",
+        "backupAndData": "Cópia de segurança e dados",
+        "aboutApp": "Sobre",
+        "disclaimerTitle": "Aviso legal",
+        "disclaimer": "Esta aplicação não é afiliada, aprovada nem ligada a Whiteout Survival ou à Century Games. Todas as marcas e todo o conteúdo do jogo são propriedade dos respetivos donos.",
+        "copyright": "© {year} {appName}",
+        "framework": "Criada com a framework Gamerdex, uma base partilhada para trackers gratuitos de progresso em jogos. Os dados ficam no navegador."
+    },
+    "notFound": {
+        "title": "Esta página não existe",
+        "description": "A ligação pode ser antiga ou ter um erro. Os chefes estão seguros e nada foi alterado.",
+        "didYouMean": "Queria dizer <link>{name}</link>?",
+        "goToOverview": "Ir para o Resumo",
+        "jumpTo": "Ou ir para"
+    },
+    "pageHeader": {
+        "wiki": "Wiki"
+    }
 }

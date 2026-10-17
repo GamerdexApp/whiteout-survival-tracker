@@ -1,85 +1,85 @@
 {
-  "nav": {
-    "main": "Principale",
-    "groups": {
-      "chief": "Capo",
-      "alliance": "Alleanza",
-      "account": "Account",
-      "planner": "Pianificatore",
-      "wiki": "Wiki"
+    "nav": {
+        "main": "Principale",
+        "groups": {
+            "chief": "Capo",
+            "alliance": "Alleanza",
+            "account": "Account",
+            "planner": "Pianificatore",
+            "wiki": "Wiki"
+        },
+        "items": {
+            "overview": "Panoramica",
+            "buildings": "Edifici",
+            "daybreakIsland": "Daybreak Island",
+            "heroes": "Eroi",
+            "chiefGear": "Equipaggiamento del capo",
+            "experts": "Esperti",
+            "pets": "Animali",
+            "troops": "Truppe",
+            "research": "Ricerca",
+            "alliance": "Alleanza",
+            "facilities": "Strutture",
+            "tech": "Tecnologia",
+            "resources": "Risorse",
+            "bonuses": "Bonus",
+            "vip": "VIP",
+            "skins": "Skin",
+            "events": "Eventi",
+            "tundraAlbum": "Album della Tundra",
+            "coreEvents": "Eventi principali",
+            "dailies": "Giornaliere",
+            "history": "Cronologia",
+            "wikiReference": "Riferimento",
+            "wikiTimeline": "Linea temporale",
+            "settings": "Impostazioni",
+            "chiefs": "Capi"
+        },
+        "upgradesRunning": ", {amount} {count, plural, one {potenziamento} other {potenziamenti}} in corso"
     },
-    "items": {
-      "overview": "Panoramica",
-      "buildings": "Edifici",
-      "daybreakIsland": "Daybreak Island",
-      "heroes": "Eroi",
-      "chiefGear": "Equipaggiamento del capo",
-      "experts": "Esperti",
-      "pets": "Animali",
-      "troops": "Truppe",
-      "research": "Ricerca",
-      "alliance": "Alleanza",
-      "facilities": "Strutture",
-      "tech": "Tecnologia",
-      "resources": "Risorse",
-      "bonuses": "Bonus",
-      "vip": "VIP",
-      "skins": "Skin",
-      "events": "Eventi",
-      "tundraAlbum": "Album della Tundra",
-      "coreEvents": "Eventi principali",
-      "dailies": "Giornaliere",
-      "history": "Cronologia",
-      "wikiReference": "Riferimento",
-      "wikiTimeline": "Linea temporale",
-      "settings": "Impostazioni",
-      "chiefs": "Capi"
+    "appShell": {
+        "skipToContent": "Vai al contenuto",
+        "closeMenu": "Chiudi il menu"
     },
-    "upgradesRunning": ", {amount} {count, plural, one {potenziamento} other {potenziamenti}} in corso"
-  },
-  "appShell": {
-    "skipToContent": "Vai al contenuto",
-    "closeMenu": "Chiudi il menu"
-  },
-  "appBar": {
-    "openMenu": "Apri il menu"
-  },
-  "chiefGate": {
-    "emptyTitle": "Nessun capo selezionato",
-    "emptyDescription": "Crea un capo per iniziare a tracciare. Tutto resta in questo browser.",
-    "newChief": "Nuovo capo"
-  },
-  "chiefSwitcher": {
-    "chiefs": "Capi",
-    "active": "Attivo",
-    "allChiefs": "Tutti i capi",
-    "newChief": "Nuovo capo",
-    "loading": "Caricamento",
-    "noChiefYet": "Ancora nessun capo",
-    "sectionLabel": "Capo",
-    "switchChief": "Cambia capo"
-  },
-  "footer": {
-    "tagline": "Tieni in un unico posto i tuoi capi, edifici, eroi e ricerche di Whiteout Survival.",
-    "product": "Tracker",
-    "support": "Supporto",
-    "wikiReference": "Riferimento Wiki",
-    "wikiTimeline": "Linea temporale Wiki",
-    "backupAndData": "Backup e dati",
-    "aboutApp": "Informazioni",
-    "disclaimerTitle": "Avvertenza",
-    "disclaimer": "Questa applicazione non è affiliata, approvata né collegata a Whiteout Survival o a Century Games. Tutti i marchi e i contenuti di gioco appartengono ai rispettivi proprietari.",
-    "copyright": "© {year} {appName}",
-    "framework": "Creata con il framework Gamerdex, una base condivisa per tracker gratuiti dei progressi nei giochi. I tuoi dati restano nel browser."
-  },
-  "notFound": {
-    "title": "Questa pagina non esiste",
-    "description": "Il link potrebbe essere vecchio o scritto male. I tuoi capi sono al sicuro e non è cambiato nulla.",
-    "didYouMean": "Intendevi <link>{name}</link>?",
-    "goToOverview": "Vai alla Panoramica",
-    "jumpTo": "Oppure vai a"
-  },
-  "pageHeader": {
-    "wiki": "Wiki"
-  }
+    "appBar": {
+        "openMenu": "Apri il menu"
+    },
+    "chiefGate": {
+        "emptyTitle": "Nessun capo selezionato",
+        "emptyDescription": "Crea un capo per iniziare a tracciare. Tutto resta in questo browser.",
+        "newChief": "Nuovo capo"
+    },
+    "chiefSwitcher": {
+        "chiefs": "Capi",
+        "active": "Attivo",
+        "allChiefs": "Tutti i capi",
+        "newChief": "Nuovo capo",
+        "loading": "Caricamento",
+        "noChiefYet": "Ancora nessun capo",
+        "sectionLabel": "Capo",
+        "switchChief": "Cambia capo"
+    },
+    "footer": {
+        "tagline": "Tieni in un unico posto i tuoi capi, edifici, eroi e ricerche di Whiteout Survival.",
+        "product": "Tracker",
+        "support": "Supporto",
+        "wikiReference": "Riferimento Wiki",
+        "wikiTimeline": "Linea temporale Wiki",
+        "backupAndData": "Backup e dati",
+        "aboutApp": "Informazioni",
+        "disclaimerTitle": "Avvertenza",
+        "disclaimer": "Questa applicazione non è affiliata, approvata né collegata a Whiteout Survival o a Century Games. Tutti i marchi e i contenuti di gioco appartengono ai rispettivi proprietari.",
+        "copyright": "© {year} {appName}",
+        "framework": "Creata con il framework Gamerdex, una base condivisa per tracker gratuiti dei progressi nei giochi. I tuoi dati restano nel browser."
+    },
+    "notFound": {
+        "title": "Questa pagina non esiste",
+        "description": "Il link potrebbe essere vecchio o scritto male. I tuoi capi sono al sicuro e non è cambiato nulla.",
+        "didYouMean": "Intendevi <link>{name}</link>?",
+        "goToOverview": "Vai alla Panoramica",
+        "jumpTo": "Oppure vai a"
+    },
+    "pageHeader": {
+        "wiki": "Wiki"
+    }
 }

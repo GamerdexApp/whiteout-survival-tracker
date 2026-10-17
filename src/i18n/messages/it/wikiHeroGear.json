@@ -1,45 +1,45 @@
 {
-  "line": "{enhancement} livelli di potenziamento, {empowerment} livelli di empowerment, {mastery} righe di forgiatura maestria e {stats} voci di statistiche. Solo riferimento, qui nulla viene salvato.",
-  "tabsLabel": "Tabelle equip. degli eroi",
-  "tabs": {
-    "enhancement": "Potenziamento",
-    "empowerment": "Empowerment",
-    "mastery": "Forgiatura maestria",
-    "stats": "Statistiche"
-  },
-  "levels": {
-    "columns": {
-      "level": "Livello",
-      "cost": "Costo",
-      "power": "Potenza",
-      "gain": "Aumento sul precedente",
-      "milestonePower": "Potenza del traguardo",
-      "stage": "Fase",
-      "statsUp": "Statistiche in aumento"
+    "line": "{enhancement} livelli di potenziamento, {empowerment} livelli di empowerment, {mastery} righe di forgiatura maestria e {stats} voci di statistiche. Solo riferimento, qui nulla viene salvato.",
+    "tabsLabel": "Tabelle equip. degli eroi",
+    "tabs": {
+        "enhancement": "Potenziamento",
+        "empowerment": "Empowerment",
+        "mastery": "Forgiatura maestria",
+        "stats": "Statistiche"
     },
-    "none": "Nessuno",
-    "percent": "{value}%",
-    "gainValue": "+{value}"
-  },
-  "stats": {
-    "slot": "Slot",
-    "troopType": "Tipo di truppa",
-    "troop": {
-      "infantry": "Fanteria",
-      "lancer": "Lanciere",
-      "marksman": "Tiratore"
+    "levels": {
+        "columns": {
+            "level": "Livello",
+            "cost": "Costo",
+            "power": "Potenza",
+            "gain": "Aumento sul precedente",
+            "milestonePower": "Potenza del traguardo",
+            "stage": "Fase",
+            "statsUp": "Statistiche in aumento"
+        },
+        "none": "Nessuno",
+        "percent": "{value}%",
+        "gainValue": "+{value}"
     },
-    "note": "I livelli di statistiche da 101 a 200 sono i livelli di empowerment da 1 a 100.",
-    "columns": {
-      "level": "Livello",
-      "combat": "{stat}",
-      "health": "Salute",
-      "percent": "{stat}"
-    },
-    "level": "Livello {level}",
-    "empowermentLevel": "Livello {level}, empowerment {empowerment}",
-    "milestonesTitle": "Traguardi",
-    "milestone": "Livello di empowerment {level}, {event}: {stat}",
-    "percentValue": "{value}%"
-  }
+    "stats": {
+        "slot": "Slot",
+        "troopType": "Tipo di truppa",
+        "troop": {
+            "infantry": "Fanteria",
+            "lancer": "Lanciere",
+            "marksman": "Tiratore"
+        },
+        "note": "I livelli di statistiche da 101 a 200 sono i livelli di empowerment da 1 a 100.",
+        "columns": {
+            "level": "Livello",
+            "combat": "{stat}",
+            "health": "Salute",
+            "percent": "{stat}"
+        },
+        "level": "Livello {level}",
+        "empowermentLevel": "Livello {level}, empowerment {empowerment}",
+        "milestonesTitle": "Traguardi",
+        "milestone": "Livello di empowerment {level}, {event}: {stat}",
+        "percentValue": "{value}%"
+    }
 }

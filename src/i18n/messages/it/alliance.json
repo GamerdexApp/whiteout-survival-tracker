@@ -1,50 +1,50 @@
 {
-  "page": {
-    "title": "Alleanza"
-  },
-  "view": {
-    "subline": "{chief} · {details} · stendardo livello {level}"
-  },
-  "banner": {
-    "title": "Stendardo dell'alleanza",
-    "currentLevel": "Livello attuale",
-    "levelLabel": "Livello dello stendardo",
-    "maxHint": "Livelli interi da 0 a {max}.",
-    "rangeChip": "{range}",
-    "costHeading": "Costo per livello in {range}",
-    "noTimeOrPower": "Gli stendardi non hanno tempo di costruzione né potenza nel pacchetto, quindi non vengono mostrati.",
-    "noCost": "Nessun costo",
-    "none": "Nessuno",
-    "lower": "Diminuisci il livello dello stendardo",
-    "raise": "Aumenta il livello dello stendardo"
-  },
-  "structures": {
-    "title": "Strutture dell'alleanza",
-    "tech": {
-      "title": "Tecnologia",
-      "description": "{count} nodi in Crescita, Territorio e Battaglia",
-      "status": "{maxed} al massimo, {progress} in corso, {locked} bloccati"
+    "page": {
+        "title": "Alleanza"
     },
-    "facilities": {
-      "title": "Strutture",
-      "description": "{count} strutture sulla mappa",
-      "owned": "{owned} possedute"
+    "view": {
+        "subline": "{chief} · {details} · stendardo livello {level}"
     },
-    "fortresses": {
-      "title": "Fortezze",
-      "description": "Castello, {strongholds} roccaforti, {fortresses} fortezze",
-      "reference": "Solo riferimento"
+    "banner": {
+        "title": "Stendardo dell'alleanza",
+        "currentLevel": "Livello attuale",
+        "levelLabel": "Livello dello stendardo",
+        "maxHint": "Livelli interi da 0 a {max}.",
+        "rangeChip": "{range}",
+        "costHeading": "Costo per livello in {range}",
+        "noTimeOrPower": "Gli stendardi non hanno tempo di costruzione né potenza nel pacchetto, quindi non vengono mostrati.",
+        "noCost": "Nessun costo",
+        "none": "Nessuno",
+        "lower": "Diminuisci il livello dello stendardo",
+        "raise": "Aumenta il livello dello stendardo"
+    },
+    "structures": {
+        "title": "Strutture dell'alleanza",
+        "tech": {
+            "title": "Tecnologia",
+            "description": "{count} nodi in Crescita, Territorio e Battaglia",
+            "status": "{maxed} al massimo, {progress} in corso, {locked} bloccati"
+        },
+        "facilities": {
+            "title": "Strutture",
+            "description": "{count} strutture sulla mappa",
+            "owned": "{owned} possedute"
+        },
+        "fortresses": {
+            "title": "Fortezze",
+            "description": "Castello, {strongholds} roccaforti, {fortresses} fortezze",
+            "reference": "Solo riferimento"
+        }
+    },
+    "table": {
+        "title": "Costo dello stendardo per fascia di livelli",
+        "note": "{count} fasce, ogni livello di una fascia costa uguale",
+        "range": "Fascia",
+        "state": "Stato",
+        "built": "Costruito",
+        "current": "Attuale",
+        "notBuilt": "Non costruito",
+        "none": "Nessuno",
+        "noCost": "Nessun costo"
     }
-  },
-  "table": {
-    "title": "Costo dello stendardo per fascia di livelli",
-    "note": "{count} fasce, ogni livello di una fascia costa uguale",
-    "range": "Fascia",
-    "state": "Stato",
-    "built": "Costruito",
-    "current": "Attuale",
-    "notBuilt": "Non costruito",
-    "none": "Nessuno",
-    "noCost": "Nessun costo"
-  }
 }

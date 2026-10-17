@@ -1,27 +1,27 @@
 {
-  "lock": {
-    "day": "Desbloqueia no dia {day} do servidor",
-    "dayAndDate": "Desbloqueia no dia {day} do servidor, {date}"
-  },
-  "areas": {
-    "pets": "Pets",
-    "fireCrystal": "Níveis de Fire Crystal",
-    "experts": "Especialistas",
-    "chiefGear": "Equipamento do Chefe",
-    "chiefCharms": "Amuletos do Chefe",
-    "warAcademy": "War Academy e pesquisa T12"
-  },
-  "dialog": {
-    "legend": "Conteúdo desbloqueado",
-    "hint": "Os bloqueios seguem a idade do servidor a partir da data de início. Se o seu servidor estiver um pouco diferente, escolha a etapa que você realmente tem. Os itens bloqueados continuam visíveis e seus dados salvos são mantidos.",
-    "auto": "Automático, {current}",
-    "autoUnknown": "Automático, defina a data de início do servidor para usar",
-    "autoNone": "nada desbloqueado ainda",
-    "none": "Nada desbloqueado",
-    "stepPets": "Dia {day}, {count} de {total} pets",
-    "stepExperts": "Dia {day}, {count} de {total} especialistas",
-    "stepFc": "Dia {day}, até {last}, sem as etapas",
-    "stepNamed": "Dia {day}, {name}",
-    "pickLabel": "{area} desbloqueado até"
-  }
+    "lock": {
+        "day": "Desbloqueia no dia {day} do servidor",
+        "dayAndDate": "Desbloqueia no dia {day} do servidor, {date}"
+    },
+    "areas": {
+        "pets": "Pets",
+        "fireCrystal": "Níveis de Fire Crystal",
+        "experts": "Especialistas",
+        "chiefGear": "Equipamento do Chefe",
+        "chiefCharms": "Amuletos do Chefe",
+        "warAcademy": "War Academy e pesquisa T12"
+    },
+    "dialog": {
+        "legend": "Conteúdo desbloqueado",
+        "hint": "Os bloqueios seguem a idade do servidor a partir da data de início. Se o seu servidor estiver um pouco diferente, escolha a etapa que você realmente tem. Os itens bloqueados continuam visíveis e seus dados salvos são mantidos.",
+        "auto": "Automático, {current}",
+        "autoUnknown": "Automático, defina a data de início do servidor para usar",
+        "autoNone": "nada desbloqueado ainda",
+        "none": "Nada desbloqueado",
+        "stepPets": "Dia {day}, {count} de {total} pets",
+        "stepExperts": "Dia {day}, {count} de {total} especialistas",
+        "stepFc": "Dia {day}, até {last}, sem as etapas",
+        "stepNamed": "Dia {day}, {name}",
+        "pickLabel": "{area} desbloqueado até"
+    }
 }

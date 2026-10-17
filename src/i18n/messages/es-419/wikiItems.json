@@ -1,79 +1,79 @@
 {
-  "line": "{items} objetos en {categories} categorías, con orígenes y las probabilidades de botín de {chests} cofres.",
-  "catalog": {
-    "title": "Catálogo de objetos",
-    "showing": "Mostrando {shown} de {total}",
-    "search": "Buscar",
-    "searchPlaceholder": "Busca objetos por nombre o descripción",
-    "table": "Objetos",
-    "item": "Objeto",
-    "category": "Categoría",
-    "sources": "Orígenes",
-    "lootRates": "Probabilidades de botín",
-    "description": "Descripción",
-    "emptyTitle": "Ningún objeto coincide",
-    "emptyDescription": "Cambia la búsqueda o los filtros."
-  },
-  "filters": {
-    "title": "Filtros",
-    "button": "Filtros",
-    "summary": "Filtros: {category}. Orígenes: {sources}",
-    "edit": "Editar",
-    "category": "Categoría",
-    "all": "Todas",
-    "sources": "Orígenes",
-    "lootRates": "Probabilidades de botín",
-    "reset": "Restablecer",
-    "show": "{count, plural, one {Mostrar {amount} objeto} other {Mostrar {amount} objetos}}"
-  },
-  "sourcesFilter": {
-    "any": "Cualquier origen",
-    "has": "Con orígenes",
-    "none": "Sin orígenes"
-  },
-  "sourcesChip": {
-    "any": "Cualquiera",
-    "has": "Con orígenes",
-    "none": "Sin orígenes ({amount})"
-  },
-  "lootFilter": {
-    "any": "Cualquiera",
-    "has": "Con probabilidades de botín"
-  },
-  "lootChip": {
-    "any": "Cualquiera",
-    "has": "Con probabilidades de botín ({amount} cofres)"
-  },
-  "loot": {
-    "yes": "Sí",
-    "no": "No",
-    "notChest": "No es un cofre"
-  },
-  "detail": {
-    "title": "Detalles",
-    "category": "Categoría",
-    "sources": "Orígenes",
-    "speedup": "Aceleración",
-    "speedupValue": "{type}, {minutes} minutos",
-    "description": "Descripción",
-    "lootRates": "Probabilidades de botín",
-    "lootRowsListed": "{count, plural, one {{amount} fila listada} other {{amount} filas listadas}}",
-    "noLootRates": "Los datos no tienen probabilidades de botín para este cofre",
-    "lootTitle": "Probabilidades de botín",
-    "lootMeta": "{count, plural, one {{amount} recompensa} other {{amount} recompensas}}",
-    "lootTable": "Probabilidades de botín del cofre",
-    "reward": "Recompensa",
-    "amount": "Cantidad",
-    "chance": "Probabilidad",
-    "chanceValue": "{percent}%",
-    "name": "Nombre"
-  },
-  "speedupType": {
-    "general": "General",
-    "construction": "Construcción",
-    "troop": "Tropas",
-    "research": "Investigación",
-    "learning": "Aprendizaje",
-    "healing": "Curación"
-  }
+    "line": "{items} objetos en {categories} categorías, con orígenes y las probabilidades de botín de {chests} cofres.",
+    "catalog": {
+        "title": "Catálogo de objetos",
+        "showing": "Mostrando {shown} de {total}",
+        "search": "Buscar",
+        "searchPlaceholder": "Busca objetos por nombre o descripción",
+        "table": "Objetos",
+        "item": "Objeto",
+        "category": "Categoría",
+        "sources": "Orígenes",
+        "lootRates": "Probabilidades de botín",
+        "description": "Descripción",
+        "emptyTitle": "Ningún objeto coincide",
+        "emptyDescription": "Cambia la búsqueda o los filtros."
+    },
+    "filters": {
+        "title": "Filtros",
+        "button": "Filtros",
+        "summary": "Filtros: {category}. Orígenes: {sources}",
+        "edit": "Editar",
+        "category": "Categoría",
+        "all": "Todas",
+        "sources": "Orígenes",
+        "lootRates": "Probabilidades de botín",
+        "reset": "Restablecer",
+        "show": "{count, plural, one {Mostrar {amount} objeto} other {Mostrar {amount} objetos}}"
+    },
+    "sourcesFilter": {
+        "any": "Cualquier origen",
+        "has": "Con orígenes",
+        "none": "Sin orígenes"
+    },
+    "sourcesChip": {
+        "any": "Cualquiera",
+        "has": "Con orígenes",
+        "none": "Sin orígenes ({amount})"
+    },
+    "lootFilter": {
+        "any": "Cualquiera",
+        "has": "Con probabilidades de botín"
+    },
+    "lootChip": {
+        "any": "Cualquiera",
+        "has": "Con probabilidades de botín ({amount} cofres)"
+    },
+    "loot": {
+        "yes": "Sí",
+        "no": "No",
+        "notChest": "No es un cofre"
+    },
+    "detail": {
+        "title": "Detalles",
+        "category": "Categoría",
+        "sources": "Orígenes",
+        "speedup": "Aceleración",
+        "speedupValue": "{type}, {minutes} minutos",
+        "description": "Descripción",
+        "lootRates": "Probabilidades de botín",
+        "lootRowsListed": "{count, plural, one {{amount} fila listada} other {{amount} filas listadas}}",
+        "noLootRates": "Los datos no tienen probabilidades de botín para este cofre",
+        "lootTitle": "Probabilidades de botín",
+        "lootMeta": "{count, plural, one {{amount} recompensa} other {{amount} recompensas}}",
+        "lootTable": "Probabilidades de botín del cofre",
+        "reward": "Recompensa",
+        "amount": "Cantidad",
+        "chance": "Probabilidad",
+        "chanceValue": "{percent}%",
+        "name": "Nombre"
+    },
+    "speedupType": {
+        "general": "General",
+        "construction": "Construcción",
+        "troop": "Tropas",
+        "research": "Investigación",
+        "learning": "Aprendizaje",
+        "healing": "Curación"
+    }
 }

@@ -1,114 +1,114 @@
 {
-  "page": {
-    "title": "黎明岛"
-  },
-  "view": {
-    "subline": "Lumber Camp、Tree of Life 和你的装饰。"
-  },
-  "locked": {
-    "title": "需要 Furnace {level}",
-    "description": "黎明岛在 Furnace {level}解锁。你的 Furnace 是{current}，还差{missing}。页面保持可见，方便你了解后续内容。在此之前无法编辑。",
-    "noFurnace": "黎明岛在 Furnace {level}解锁。你的 Furnace 等级尚未设置。页面保持可见，方便你了解后续内容。在此之前无法编辑。",
-    "missing": "{count, plural, other {{amount}级}}",
-    "link": "前往建筑"
-  },
-  "levelOf": "{level} / {max}级",
-  "camp": {
-    "title": "Lumber Camp",
-    "levelLabel": "Lumber Camp 等级",
-    "workers": "工人",
-    "rate": "每秒产量",
-    "essence": "达到此等级所需的 Life Essence",
-    "needsTree": "需要 Tree of Life {required}级。你的是{current}。",
-    "treeTooLow": "Tree of Life {current}级过低。Lumber Camp {level}级需要 Tree of Life {required}级。",
-    "next": "下一级，{level}级：{essence} Life Essence，需要 Tree of Life {tree}级。",
-    "highest": "这已是最高等级。"
-  },
-  "tree": {
-    "title": "Tree of Life",
-    "levelLabel": "Tree of Life 等级",
-    "prosperity": "达到此等级所需的繁荣度",
-    "essence": "达到此等级所需的 Life Essence",
-    "perHour": "每小时 Life Essence",
-    "buff": "增益",
-    "next": "下一级，{level}级：{prosperity}繁荣度，{essence} Life Essence。",
-    "highest": "这已是最高等级。"
-  },
-  "decorations": {
-    "title": "装饰",
-    "owned": "已拥有{owned} / {total}",
-    "imageNote": "数据包中{total}个装饰里只有{withImage}个有图片。实线方框表示有图片，虚线方框表示其余的。"
-  },
-  "search": {
-    "label": "搜索装饰",
-    "placeholder": "搜索装饰"
-  },
-  "status": {
-    "showing": "显示{shown} / {total}个装饰。",
-    "showMore": "{count, plural, other {再显示{amount}个装饰}}"
-  },
-  "empty": {
-    "title": "没有匹配的装饰",
-    "description": "修改搜索或筛选，即可查看装饰。",
-    "reset": "重置筛选"
-  },
-  "card": {
-    "costEach": "单个费用",
-    "cost": "{amount} {item}",
-    "limit": "上限",
-    "buffAtLevel": "{level}级时的增益",
-    "buffAtMax": "满级时的增益",
-    "buffValue": "{value} {stat}",
-    "prosperityAtMax": "满级时的繁荣度",
-    "essenceCost": "Life Essence 费用",
-    "unknown": "未知",
-    "owned": "已拥有",
-    "notOwned": "未拥有",
-    "ownedLabel": "{name}已拥有",
-    "levelLabel": "{name}等级",
-    "countLabel": "{name}数量",
-    "limited": "限量",
-    "ownedCount": "已拥有{count} / {limit}"
-  },
-  "categories": {
-    "Basic": "基础",
-    "Vegetation": "植被",
-    "Common": "普通",
-    "Uncommon": "优秀",
-    "Rare": "稀有",
-    "Epic": "史诗",
-    "Mythic": "神话",
-    "Unique": "独特"
-  },
-  "filters": {
-    "button": "筛选",
-    "title": "筛选",
-    "description": "缩小装饰列表范围。筛选不会保存。",
-    "category": "分类",
-    "categoryAll": "全部{amount}",
-    "categoryOption": "{category} {amount}",
-    "show": "显示",
-    "ownedOnly": "仅已拥有",
-    "limitedOnly": "仅限量",
-    "unknownBuffOnly": "仅增益未知",
-    "sort": "排序",
-    "order": {
-      "game": "数据包顺序",
-      "name": "名称 A 到 Z",
-      "level": "等级，最高在前"
+    "page": {
+        "title": "黎明岛"
     },
-    "reset": "重置",
-    "showButton": "{count, plural, other {显示{amount}个装饰}}",
-    "nonLimitedOnly": "仅非限量",
-    "notOwnedOnly": "仅未拥有"
-  },
-  "prosperity": {
-    "label": "你的繁荣度分数",
-    "progress": "你的装饰的繁荣度分数",
-    "possible": "所有装饰达到最高等级和上限时为{max}",
-    "levelled": "有等级的装饰，按已达等级的繁荣度计算",
-    "limited": "有数量上限的装饰，已拥有数量乘以各自的繁荣度",
-    "ofMax": "{value} / {max}",
-    "withoutValue": "{count, plural, other {已拥有的装饰中有{amount}个}}在数据中没有繁荣度值，{count, plural, other {它们}}未计入。"
-  }
+    "view": {
+        "subline": "Lumber Camp、Tree of Life 和你的装饰。"
+    },
+    "locked": {
+        "title": "需要 Furnace {level}",
+        "description": "黎明岛在 Furnace {level}解锁。你的 Furnace 是{current}，还差{missing}。页面保持可见，方便你了解后续内容。在此之前无法编辑。",
+        "noFurnace": "黎明岛在 Furnace {level}解锁。你的 Furnace 等级尚未设置。页面保持可见，方便你了解后续内容。在此之前无法编辑。",
+        "missing": "{count, plural, other {{amount}级}}",
+        "link": "前往建筑"
+    },
+    "levelOf": "{level} / {max}级",
+    "camp": {
+        "title": "Lumber Camp",
+        "levelLabel": "Lumber Camp 等级",
+        "workers": "工人",
+        "rate": "每秒产量",
+        "essence": "达到此等级所需的 Life Essence",
+        "needsTree": "需要 Tree of Life {required}级。你的是{current}。",
+        "treeTooLow": "Tree of Life {current}级过低。Lumber Camp {level}级需要 Tree of Life {required}级。",
+        "next": "下一级，{level}级：{essence} Life Essence，需要 Tree of Life {tree}级。",
+        "highest": "这已是最高等级。"
+    },
+    "tree": {
+        "title": "Tree of Life",
+        "levelLabel": "Tree of Life 等级",
+        "prosperity": "达到此等级所需的繁荣度",
+        "essence": "达到此等级所需的 Life Essence",
+        "perHour": "每小时 Life Essence",
+        "buff": "增益",
+        "next": "下一级，{level}级：{prosperity}繁荣度，{essence} Life Essence。",
+        "highest": "这已是最高等级。"
+    },
+    "decorations": {
+        "title": "装饰",
+        "owned": "已拥有{owned} / {total}",
+        "imageNote": "数据包中{total}个装饰里只有{withImage}个有图片。实线方框表示有图片，虚线方框表示其余的。"
+    },
+    "search": {
+        "label": "搜索装饰",
+        "placeholder": "搜索装饰"
+    },
+    "status": {
+        "showing": "显示{shown} / {total}个装饰。",
+        "showMore": "{count, plural, other {再显示{amount}个装饰}}"
+    },
+    "empty": {
+        "title": "没有匹配的装饰",
+        "description": "修改搜索或筛选，即可查看装饰。",
+        "reset": "重置筛选"
+    },
+    "card": {
+        "costEach": "单个费用",
+        "cost": "{amount} {item}",
+        "limit": "上限",
+        "buffAtLevel": "{level}级时的增益",
+        "buffAtMax": "满级时的增益",
+        "buffValue": "{value} {stat}",
+        "prosperityAtMax": "满级时的繁荣度",
+        "essenceCost": "Life Essence 费用",
+        "unknown": "未知",
+        "owned": "已拥有",
+        "notOwned": "未拥有",
+        "ownedLabel": "{name}已拥有",
+        "levelLabel": "{name}等级",
+        "countLabel": "{name}数量",
+        "limited": "限量",
+        "ownedCount": "已拥有{count} / {limit}"
+    },
+    "categories": {
+        "Basic": "基础",
+        "Vegetation": "植被",
+        "Common": "普通",
+        "Uncommon": "优秀",
+        "Rare": "稀有",
+        "Epic": "史诗",
+        "Mythic": "神话",
+        "Unique": "独特"
+    },
+    "filters": {
+        "button": "筛选",
+        "title": "筛选",
+        "description": "缩小装饰列表范围。筛选不会保存。",
+        "category": "分类",
+        "categoryAll": "全部{amount}",
+        "categoryOption": "{category} {amount}",
+        "show": "显示",
+        "ownedOnly": "仅已拥有",
+        "limitedOnly": "仅限量",
+        "unknownBuffOnly": "仅增益未知",
+        "sort": "排序",
+        "order": {
+            "game": "数据包顺序",
+            "name": "名称 A 到 Z",
+            "level": "等级，最高在前"
+        },
+        "reset": "重置",
+        "showButton": "{count, plural, other {显示{amount}个装饰}}",
+        "nonLimitedOnly": "仅非限量",
+        "notOwnedOnly": "仅未拥有"
+    },
+    "prosperity": {
+        "label": "你的繁荣度分数",
+        "progress": "你的装饰的繁荣度分数",
+        "possible": "所有装饰达到最高等级和上限时为{max}",
+        "levelled": "有等级的装饰，按已达等级的繁荣度计算",
+        "limited": "有数量上限的装饰，已拥有数量乘以各自的繁荣度",
+        "ofMax": "{value} / {max}",
+        "withoutValue": "{count, plural, other {已拥有的装饰中有{amount}个}}在数据中没有繁荣度值，{count, plural, other {它们}}未计入。"
+    }
 }

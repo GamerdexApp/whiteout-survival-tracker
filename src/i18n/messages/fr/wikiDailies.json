@@ -1,46 +1,46 @@
 {
-  "line": "Les {missions} missions quotidiennes du jeu avec tous les niveaux connus, les récompenses de la barre d'activité et les tâches de routine.",
-  "missionCount": "{count, plural, one {{amount} mission} other {{amount} missions}}",
-  "tabs": {
-    "label": "Quotidiennes",
-    "missions": "Missions du jeu",
-    "routine": "Tâches de routine"
-  },
-  "totals": {
-    "title": "Totaux d'Activité",
-    "missions": "Missions du jeu",
-    "levelOne": "Niveau 1 de chaque mission",
-    "allLevels": "Tous les niveaux connus",
-    "topReward": "Niveau de la meilleure récompense",
-    "explanation": "Une mission ajoute l'Activité de chaque niveau terminé, jusqu'au niveau atteint. Le niveau 1 des {missions} missions fait {levelOne} d'Activité. Tous les niveaux connus des {missions} missions font {allLevels}."
-  },
-  "bar": {
-    "title": "Récompenses de la barre d'activité",
-    "activeness": "Activité",
-    "rewards": "Récompenses"
-  },
-  "missions": {
-    "title": "Missions du jeu",
-    "summary": "{missions}, {levels}",
-    "levelCount": "{count, plural, one {{amount} niveau connu} other {{amount} niveaux connus}}",
-    "level": "Niveau",
-    "task": "Tâche",
-    "target": "Objectif",
-    "activeness": "Activité",
-    "otherRewards": "Autres récompenses",
-    "levelLabel": "N{level}",
-    "sumOne": "1 niveau : {total} d'Activité",
-    "sumMany": "{count} niveaux : {parts} = {total} d'Activité",
-    "plus": "+{amount}",
-    "noOtherRewards": "Aucune"
-  },
-  "routine": {
-    "title": "Tâches de routine",
-    "count": "{count, plural, one {{amount} tâche} other {{amount} tâches}}"
-  },
-  "missing": {
-    "title": "Pas encore dans les données",
-    "levels": "Autres niveaux de mission. Chaque mission a de {min} à {max} niveaux connus. Les niveaux supérieurs ne sont pas encore dans les données, donc les totaux peuvent augmenter.",
-    "reset": "Heure de réinitialisation quotidienne. Les données n'en ont pas. Le tracker utilise sa propre valeur par défaut de {time} UTC et l'indique comme valeur par défaut de l'application."
-  }
+    "line": "Les {missions} missions quotidiennes du jeu avec tous les niveaux connus, les récompenses de la barre d'activité et les tâches de routine.",
+    "missionCount": "{count, plural, one {{amount} mission} other {{amount} missions}}",
+    "tabs": {
+        "label": "Quotidiennes",
+        "missions": "Missions du jeu",
+        "routine": "Tâches de routine"
+    },
+    "totals": {
+        "title": "Totaux d'Activité",
+        "missions": "Missions du jeu",
+        "levelOne": "Niveau 1 de chaque mission",
+        "allLevels": "Tous les niveaux connus",
+        "topReward": "Niveau de la meilleure récompense",
+        "explanation": "Une mission ajoute l'Activité de chaque niveau terminé, jusqu'au niveau atteint. Le niveau 1 des {missions} missions fait {levelOne} d'Activité. Tous les niveaux connus des {missions} missions font {allLevels}."
+    },
+    "bar": {
+        "title": "Récompenses de la barre d'activité",
+        "activeness": "Activité",
+        "rewards": "Récompenses"
+    },
+    "missions": {
+        "title": "Missions du jeu",
+        "summary": "{missions}, {levels}",
+        "levelCount": "{count, plural, one {{amount} niveau connu} other {{amount} niveaux connus}}",
+        "level": "Niveau",
+        "task": "Tâche",
+        "target": "Objectif",
+        "activeness": "Activité",
+        "otherRewards": "Autres récompenses",
+        "levelLabel": "N{level}",
+        "sumOne": "1 niveau : {total} d'Activité",
+        "sumMany": "{count} niveaux : {parts} = {total} d'Activité",
+        "plus": "+{amount}",
+        "noOtherRewards": "Aucune"
+    },
+    "routine": {
+        "title": "Tâches de routine",
+        "count": "{count, plural, one {{amount} tâche} other {{amount} tâches}}"
+    },
+    "missing": {
+        "title": "Pas encore dans les données",
+        "levels": "Autres niveaux de mission. Chaque mission a de {min} à {max} niveaux connus. Les niveaux supérieurs ne sont pas encore dans les données, donc les totaux peuvent augmenter.",
+        "reset": "Heure de réinitialisation quotidienne. Les données n'en ont pas. Le tracker utilise sa propre valeur par défaut de {time} UTC et l'indique comme valeur par défaut de l'application."
+    }
 }

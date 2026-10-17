@@ -1,99 +1,99 @@
 {
-  "line": "{heroes}位英雄和{widgets}个 Widgets 等级。仅供参考，这里的内容不会保存。",
-  "roster": {
-    "title": "名录",
-    "count": "{shown} / {total}位英雄",
-    "search": "搜索",
-    "searchPlaceholder": "搜索{count}位英雄",
-    "generation": "世代",
-    "rarity": "稀有度",
-    "class": "职业",
-    "subClass": "子职业",
-    "all": "全部",
-    "empty": "没有符合这些筛选的英雄。",
-    "columns": {
-      "hero": "英雄",
-      "generation": "世代",
-      "rarity": "稀有度",
-      "class": "职业",
-      "subClass": "子职业",
-      "power": "战力，5 星",
-      "weapon": "专属武器"
+    "line": "{heroes}位英雄和{widgets}个 Widgets 等级。仅供参考，这里的内容不会保存。",
+    "roster": {
+        "title": "名录",
+        "count": "{shown} / {total}位英雄",
+        "search": "搜索",
+        "searchPlaceholder": "搜索{count}位英雄",
+        "generation": "世代",
+        "rarity": "稀有度",
+        "class": "职业",
+        "subClass": "子职业",
+        "all": "全部",
+        "empty": "没有符合这些筛选的英雄。",
+        "columns": {
+            "hero": "英雄",
+            "generation": "世代",
+            "rarity": "稀有度",
+            "class": "职业",
+            "subClass": "子职业",
+            "power": "战力，5 星",
+            "weapon": "专属武器"
+        },
+        "none": "无"
     },
-    "none": "无"
-  },
-  "detail": {
-    "generation": "第{generation}代",
-    "source": "来源：{sources}",
-    "noSource": "来源：未知",
-    "explorationAttack": "探索攻击",
-    "explorationDefense": "探索防御",
-    "explorationHealth": "探索生命",
-    "expeditionAttack": "远征攻击",
-    "expeditionDefense": "远征防御",
-    "powerAtLevel80": "80 级战力",
-    "powerAtFiveStars": "5 星战力",
-    "powerAtZeroStars": "0 星战力",
-    "powerMissing": "第 6 代及以后缺少英雄等级和碎片的战力数据。在取得数据之前显示为未知。"
-  },
-  "skills": {
-    "title": "技能",
-    "count": "{count, plural, other {{amount}个技能}}",
-    "branch": {
-      "exploration": "探索",
-      "expedition": "远征",
-      "talent": "天赋"
+    "detail": {
+        "generation": "第{generation}代",
+        "source": "来源：{sources}",
+        "noSource": "来源：未知",
+        "explorationAttack": "探索攻击",
+        "explorationDefense": "探索防御",
+        "explorationHealth": "探索生命",
+        "expeditionAttack": "远征攻击",
+        "expeditionDefense": "远征防御",
+        "powerAtLevel80": "80 级战力",
+        "powerAtFiveStars": "5 星战力",
+        "powerAtZeroStars": "0 星战力",
+        "powerMissing": "第 6 代及以后缺少英雄等级和碎片的战力数据。在取得数据之前显示为未知。"
+    },
+    "skills": {
+        "title": "技能",
+        "count": "{count, plural, other {{amount}个技能}}",
+        "branch": {
+            "exploration": "探索",
+            "expedition": "远征",
+            "talent": "天赋"
+        },
+        "levels": {
+            "columns": {
+                "level": "等级",
+                "star": "所需星级",
+                "manuals": "技能书",
+                "power": "战力提升",
+                "effects": "效果"
+            },
+            "effect": {
+                "percentOfAttack": "{name}攻击的{amount}%",
+                "percent": "{name} {amount}%",
+                "seconds": "{name} {amount}秒",
+                "number": "{name} {amount}"
+            }
+        }
+    },
+    "shards": {
+        "title": "按星级的碎片费用",
+        "columns": {
+            "star": "星级",
+            "tiers": "每阶碎片",
+            "total": "合计",
+            "power": "该星级战力"
+        },
+        "star": "{star}星"
+    },
+    "weapon": {
+        "title": "专属武器",
+        "power": "武器战力",
+        "exploration": "探索 攻 / 防 / 生命",
+        "expedition": "远征 杀伤 / 生命",
+        "unlocksAt": "武器{level}级解锁",
+        "levelsTitle": "武器等级",
+        "columns": {
+            "level": "武器等级",
+            "power": "战力",
+            "widgets": "Widgets"
+        },
+        "level": "{level}级"
     },
     "levels": {
-      "columns": {
-        "level": "等级",
-        "star": "所需星级",
-        "manuals": "技能书",
-        "power": "战力提升",
-        "effects": "效果"
-      },
-      "effect": {
-        "percentOfAttack": "{name}攻击的{amount}%",
-        "percent": "{name} {amount}%",
-        "seconds": "{name} {amount}秒",
-        "number": "{name} {amount}"
-      }
-    }
-  },
-  "shards": {
-    "title": "按星级的碎片费用",
-    "columns": {
-      "star": "星级",
-      "tiers": "每阶碎片",
-      "total": "合计",
-      "power": "该星级战力"
+        "title": "英雄等级",
+        "columns": {
+            "level": "英雄等级",
+            "furnace": "需要",
+            "xp": "达到所需 XP",
+            "power": "战力"
+        },
+        "level": "{level}级",
+        "furnace": "Furnace {level}"
     },
-    "star": "{star}星"
-  },
-  "weapon": {
-    "title": "专属武器",
-    "power": "武器战力",
-    "exploration": "探索 攻 / 防 / 生命",
-    "expedition": "远征 杀伤 / 生命",
-    "unlocksAt": "武器{level}级解锁",
-    "levelsTitle": "武器等级",
-    "columns": {
-      "level": "武器等级",
-      "power": "战力",
-      "widgets": "Widgets"
-    },
-    "level": "{level}级"
-  },
-  "levels": {
-    "title": "英雄等级",
-    "columns": {
-      "level": "英雄等级",
-      "furnace": "需要",
-      "xp": "达到所需 XP",
-      "power": "战力"
-    },
-    "level": "{level}级",
-    "furnace": "Furnace {level}"
-  },
-  "recordLine": "{rarity}{heroClass}，第{generation}代。仅供参考，这里的内容不会保存。"
+    "recordLine": "{rarity}{heroClass}，第{generation}代。仅供参考，这里的内容不会保存。"
 }

@@ -1,49 +1,49 @@
 {
-  "line": "{rows} righe di amuleti, {slots} slot e {rates} tassi di cambio. Solo riferimento, nulla viene salvato nel tuo capo.",
-  "slots": {
-    "heading": "Slot degli amuleti",
-    "meta": "{slots} slot, uno per tipo di truppa",
-    "icons": "{count, plural, one {{amount} icona di livello} other {{amount} icone di livello}}",
-    "recordLine": "Potenzia le truppe {troopType}. Un'icona per ogni livello."
-  },
-  "table": {
-    "heading": "Tabella degli amuleti",
-    "meta": "{rows} righe, {levels} livelli",
-    "searchLabel": "Cerca",
-    "searchPlaceholder": "Cerca tra {rows} righe di amuleti",
-    "levelLabel": "Livello",
-    "allLevels": "Tutti i livelli",
-    "levelOption": "Livello {level}",
-    "stageLabel": "Fase",
-    "allStages": "Tutte le fasi",
-    "stageOption": "Fase {stage}",
-    "empty": "Nessuna riga di amuleti corrisponde ai filtri."
-  },
-  "columns": {
-    "row": "Riga",
-    "materials": "Materiali",
-    "stats": "Statistiche",
-    "power": "Potenza",
-    "score": "Punteggio"
-  },
-  "cells": {
-    "none": "Nessuno",
-    "percent": "{value}%"
-  },
-  "levels": {
-    "heading": "Livelli",
-    "level": "Livello",
-    "levelName": "Livello {level}",
-    "rows": "Righe",
-    "stats": "Statistiche, dalla prima all'ultima",
-    "power": "Potenza all'ultima riga",
-    "statsRange": "da {first}% a {last}%"
-  },
-  "exchange": {
-    "heading": "Tassi di cambio dei materiali",
-    "exchange": "Cambio",
-    "from": "Da",
-    "to": "A",
-    "weeklyLimit": "Limite settimanale"
-  }
+    "line": "{rows} righe di amuleti, {slots} slot e {rates} tassi di cambio. Solo riferimento, nulla viene salvato nel tuo capo.",
+    "slots": {
+        "heading": "Slot degli amuleti",
+        "meta": "{slots} slot, uno per tipo di truppa",
+        "icons": "{count, plural, one {{amount} icona di livello} other {{amount} icone di livello}}",
+        "recordLine": "Potenzia le truppe {troopType}. Un'icona per ogni livello."
+    },
+    "table": {
+        "heading": "Tabella degli amuleti",
+        "meta": "{rows} righe, {levels} livelli",
+        "searchLabel": "Cerca",
+        "searchPlaceholder": "Cerca tra {rows} righe di amuleti",
+        "levelLabel": "Livello",
+        "allLevels": "Tutti i livelli",
+        "levelOption": "Livello {level}",
+        "stageLabel": "Fase",
+        "allStages": "Tutte le fasi",
+        "stageOption": "Fase {stage}",
+        "empty": "Nessuna riga di amuleti corrisponde ai filtri."
+    },
+    "columns": {
+        "row": "Riga",
+        "materials": "Materiali",
+        "stats": "Statistiche",
+        "power": "Potenza",
+        "score": "Punteggio"
+    },
+    "cells": {
+        "none": "Nessuno",
+        "percent": "{value}%"
+    },
+    "levels": {
+        "heading": "Livelli",
+        "level": "Livello",
+        "levelName": "Livello {level}",
+        "rows": "Righe",
+        "stats": "Statistiche, dalla prima all'ultima",
+        "power": "Potenza all'ultima riga",
+        "statsRange": "da {first}% a {last}%"
+    },
+    "exchange": {
+        "heading": "Tassi di cambio dei materiali",
+        "exchange": "Cambio",
+        "from": "Da",
+        "to": "A",
+        "weeklyLimit": "Limite settimanale"
+    }
 }

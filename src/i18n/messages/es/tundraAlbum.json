@@ -1,90 +1,90 @@
 {
-  "page": {
-    "title": "Tundra Album"
-  },
-  "view": {
-    "subline": "{chief} · {details} · {complete} de {total} álbumes completos"
-  },
-  "summary": {
-    "label": "Álbumes completos",
-    "value": "{done} de {total}",
-    "progress": "Álbumes completos",
-    "inData": "{shown} de {all} álbumes están en los datos"
-  },
-  "buffs": {
-    "title": "Mejoras que cuentan ahora",
-    "derived": "Calculado",
-    "none": "Aún no hay ningún álbum completo, así que no cuenta ninguna mejora de Tundra Album.",
-    "note": "Solo cuentan los álbumes completos. Estas mejoras alimentan la página de <link>Bonificaciones</link>."
-  },
-  "album": {
-    "status": {
-      "complete": "Completo",
-      "inProgress": "En curso"
+    "page": {
+        "title": "Tundra Album"
     },
-    "buffWhenComplete": "Mejora al completarse",
-    "puzzlesDone": "Puzles hechos",
-    "puzzlesValue": "{done} de {total}",
-    "puzzlesProgress": "Puzles hechos de {album}",
-    "completionRewards": "Recompensas por completarlo",
-    "markComplete": "Marcar álbum como completo",
-    "notCounting": "Aún no cuenta. {buff} cuenta en la página de Bonificaciones solo cuando se han hecho los {total} puzles. Marcar álbum como completo marca los {total} puzles y muestra un aviso para Deshacer.",
-    "counting": "Cuenta ahora. {buff} está en la página de Bonificaciones. Si desmarcas un puzle, deja de contar.",
-    "piecesValue": "{collected} de {total} piezas conseguidas"
-  },
-  "puzzle": {
-    "pieces": "{count, plural, one {{amount} pieza} other {{amount} piezas}}, estrellas 1 a 5: {split}",
-    "reward": "Recompensa",
-    "done": "Puzle hecho, todas las piezas conseguidas",
-    "doneFor": "Hecho, {puzzle}",
-    "collectedLabel": "Piezas conseguidas",
-    "collected": "{collected} de {total}",
-    "pieceLabel": "{name}, {stars} estrellas",
-    "pieceHint": "Selecciona las piezas que tienes. Marcar el puzle como hecho las consigue todas.",
-    "allCollected": "El puzle está hecho, así que todas las piezas están conseguidas."
-  },
-  "reward": {
-    "line": "{amount} {item}",
-    "sized": "{amount} {item} ({size})",
-    "unknownItem": "Objeto desconocido"
-  },
-  "toast": {
-    "markedTitle": "{album} marcado como completo",
-    "markedMessage": "Los {total} puzles están hechos.",
-    "unmarkedTitle": "{puzzle} desmarcado",
-    "unmarkedMessage": "{album} vuelve a estar en curso y su mejora ha salido de Bonificaciones.",
-    "undo": "Deshacer"
-  },
-  "notInData": "Los otros {count} de los {total} Tundra Albums aún no están en los datos. Se añaden cuando el paquete los incluya.",
-  "pieces": {
-    "label": "Piezas conseguidas",
-    "value": "{collected} de {available}",
-    "progress": "Piezas conseguidas en todos los álbumes",
-    "viewRewards": "Ver recompensas por piezas"
-  },
-  "rewardsFlyout": {
-    "title": "Recompensas por número de piezas",
-    "description": "Las recompensas que recibes según suman las piezas que consigues en todos los álbumes",
-    "close": "Cerrar",
-    "collected": "Piezas conseguidas",
-    "collectedValue": "{collected} de {available}",
-    "progress": "Piezas conseguidas en todos los álbumes",
-    "reached": "{reached} de {all} recompensas por número de piezas alcanzadas",
-    "next": "La siguiente recompensa está en {pieces} piezas, faltan {missing} por conseguir.",
-    "allReached": "Se han alcanzado todas las recompensas por número de piezas de los datos.",
-    "totalSoFar": "Recompensas obtenidas hasta ahora",
-    "tree": "Recompensas por piezas conseguidas",
-    "tier": "Recompensa {tier} con {pieces} piezas",
-    "stateReached": "Conseguida",
-    "stateNext": "Siguiente, {missing} más",
-    "stateLater": "{missing} más"
-  },
-  "picker": {
-    "label": "Álbumes",
-    "title": "Álbumes",
-    "complete": "Álbum completo",
-    "puzzles": "{done} de {total} puzles",
-    "pieces": "{collected} de {total} piezas",
-    "piecesProgress": "Piezas conseguidas de {album}"
-  }
+    "view": {
+        "subline": "{chief} · {details} · {complete} de {total} álbumes completos"
+    },
+    "summary": {
+        "label": "Álbumes completos",
+        "value": "{done} de {total}",
+        "progress": "Álbumes completos",
+        "inData": "{shown} de {all} álbumes están en los datos"
+    },
+    "buffs": {
+        "title": "Mejoras que cuentan ahora",
+        "derived": "Calculado",
+        "none": "Aún no hay ningún álbum completo, así que no cuenta ninguna mejora de Tundra Album.",
+        "note": "Solo cuentan los álbumes completos. Estas mejoras alimentan la página de <link>Bonificaciones</link>."
+    },
+    "album": {
+        "status": {
+            "complete": "Completo",
+            "inProgress": "En curso"
+        },
+        "buffWhenComplete": "Mejora al completarse",
+        "puzzlesDone": "Puzles hechos",
+        "puzzlesValue": "{done} de {total}",
+        "puzzlesProgress": "Puzles hechos de {album}",
+        "completionRewards": "Recompensas por completarlo",
+        "markComplete": "Marcar álbum como completo",
+        "notCounting": "Aún no cuenta. {buff} cuenta en la página de Bonificaciones solo cuando se han hecho los {total} puzles. Marcar álbum como completo marca los {total} puzles y muestra un aviso para Deshacer.",
+        "counting": "Cuenta ahora. {buff} está en la página de Bonificaciones. Si desmarcas un puzle, deja de contar.",
+        "piecesValue": "{collected} de {total} piezas conseguidas"
+    },
+    "puzzle": {
+        "pieces": "{count, plural, one {{amount} pieza} other {{amount} piezas}}, estrellas 1 a 5: {split}",
+        "reward": "Recompensa",
+        "done": "Puzle hecho, todas las piezas conseguidas",
+        "doneFor": "Hecho, {puzzle}",
+        "collectedLabel": "Piezas conseguidas",
+        "collected": "{collected} de {total}",
+        "pieceLabel": "{name}, {stars} estrellas",
+        "pieceHint": "Selecciona las piezas que tienes. Marcar el puzle como hecho las consigue todas.",
+        "allCollected": "El puzle está hecho, así que todas las piezas están conseguidas."
+    },
+    "reward": {
+        "line": "{amount} {item}",
+        "sized": "{amount} {item} ({size})",
+        "unknownItem": "Objeto desconocido"
+    },
+    "toast": {
+        "markedTitle": "{album} marcado como completo",
+        "markedMessage": "Los {total} puzles están hechos.",
+        "unmarkedTitle": "{puzzle} desmarcado",
+        "unmarkedMessage": "{album} vuelve a estar en curso y su mejora ha salido de Bonificaciones.",
+        "undo": "Deshacer"
+    },
+    "notInData": "Los otros {count} de los {total} Tundra Albums aún no están en los datos. Se añaden cuando el paquete los incluya.",
+    "pieces": {
+        "label": "Piezas conseguidas",
+        "value": "{collected} de {available}",
+        "progress": "Piezas conseguidas en todos los álbumes",
+        "viewRewards": "Ver recompensas por piezas"
+    },
+    "rewardsFlyout": {
+        "title": "Recompensas por número de piezas",
+        "description": "Las recompensas que recibes según suman las piezas que consigues en todos los álbumes",
+        "close": "Cerrar",
+        "collected": "Piezas conseguidas",
+        "collectedValue": "{collected} de {available}",
+        "progress": "Piezas conseguidas en todos los álbumes",
+        "reached": "{reached} de {all} recompensas por número de piezas alcanzadas",
+        "next": "La siguiente recompensa está en {pieces} piezas, faltan {missing} por conseguir.",
+        "allReached": "Se han alcanzado todas las recompensas por número de piezas de los datos.",
+        "totalSoFar": "Recompensas obtenidas hasta ahora",
+        "tree": "Recompensas por piezas conseguidas",
+        "tier": "Recompensa {tier} con {pieces} piezas",
+        "stateReached": "Conseguida",
+        "stateNext": "Siguiente, {missing} más",
+        "stateLater": "{missing} más"
+    },
+    "picker": {
+        "label": "Álbumes",
+        "title": "Álbumes",
+        "complete": "Álbum completo",
+        "puzzles": "{done} de {total} puzles",
+        "pieces": "{collected} de {total} piezas",
+        "piecesProgress": "Piezas conseguidas de {album}"
+    }
 }

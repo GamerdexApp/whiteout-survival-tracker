@@ -1,99 +1,99 @@
 {
-  "line": "Героев: {heroes}, уровней Widgets: {widgets}. Только справка, здесь ничего не сохраняется.",
-  "roster": {
-    "title": "Состав",
-    "count": "Героев: {shown} из {total}",
-    "search": "Поиск",
-    "searchPlaceholder": "Поиск среди героев: {count}",
-    "generation": "Поколение",
-    "rarity": "Редкость",
-    "class": "Класс",
-    "subClass": "Подкласс",
-    "all": "Все",
-    "empty": "Подходящих героев нет.",
-    "columns": {
-      "hero": "Герой",
-      "generation": "Пок.",
-      "rarity": "Редкость",
-      "class": "Класс",
-      "subClass": "Подкласс",
-      "power": "Мощь, 5 звёзд",
-      "weapon": "Эксклюзивное оружие"
+    "line": "Героев: {heroes}, уровней Widgets: {widgets}. Только справка, здесь ничего не сохраняется.",
+    "roster": {
+        "title": "Состав",
+        "count": "Героев: {shown} из {total}",
+        "search": "Поиск",
+        "searchPlaceholder": "Поиск среди героев: {count}",
+        "generation": "Поколение",
+        "rarity": "Редкость",
+        "class": "Класс",
+        "subClass": "Подкласс",
+        "all": "Все",
+        "empty": "Подходящих героев нет.",
+        "columns": {
+            "hero": "Герой",
+            "generation": "Пок.",
+            "rarity": "Редкость",
+            "class": "Класс",
+            "subClass": "Подкласс",
+            "power": "Мощь, 5 звёзд",
+            "weapon": "Эксклюзивное оружие"
+        },
+        "none": "Нет"
     },
-    "none": "Нет"
-  },
-  "detail": {
-    "generation": "Поколение {generation}",
-    "source": "Источник: {sources}",
-    "noSource": "Источник: неизвестен",
-    "explorationAttack": "Атака в Exploration",
-    "explorationDefense": "Защита в Exploration",
-    "explorationHealth": "Здоровье в Exploration",
-    "expeditionAttack": "Атака в Expedition",
-    "expeditionDefense": "Защита в Expedition",
-    "powerAtLevel80": "Мощь на уровне 80",
-    "powerAtFiveStars": "Мощь на 5 звёздах",
-    "powerAtZeroStars": "Мощь на 0 звёзд",
-    "powerMissing": "Мощи для уровней героев и осколков нет для поколения 6 и выше. Она показана как «Неизвестно», пока данные не получены."
-  },
-  "skills": {
-    "title": "Навыки",
-    "count": "{count, plural, one {{amount} навык} few {{amount} навыка} many {{amount} навыков} other {{amount} навыка}}",
-    "branch": {
-      "exploration": "Exploration",
-      "expedition": "Expedition",
-      "talent": "Талант"
+    "detail": {
+        "generation": "Поколение {generation}",
+        "source": "Источник: {sources}",
+        "noSource": "Источник: неизвестен",
+        "explorationAttack": "Атака в Exploration",
+        "explorationDefense": "Защита в Exploration",
+        "explorationHealth": "Здоровье в Exploration",
+        "expeditionAttack": "Атака в Expedition",
+        "expeditionDefense": "Защита в Expedition",
+        "powerAtLevel80": "Мощь на уровне 80",
+        "powerAtFiveStars": "Мощь на 5 звёздах",
+        "powerAtZeroStars": "Мощь на 0 звёзд",
+        "powerMissing": "Мощи для уровней героев и осколков нет для поколения 6 и выше. Она показана как «Неизвестно», пока данные не получены."
+    },
+    "skills": {
+        "title": "Навыки",
+        "count": "{count, plural, one {{amount} навык} few {{amount} навыка} many {{amount} навыков} other {{amount} навыка}}",
+        "branch": {
+            "exploration": "Exploration",
+            "expedition": "Expedition",
+            "talent": "Талант"
+        },
+        "levels": {
+            "columns": {
+                "level": "Уровень",
+                "star": "Нужна звезда",
+                "manuals": "Руководства",
+                "power": "Прирост мощи",
+                "effects": "Эффект"
+            },
+            "effect": {
+                "percentOfAttack": "{name} {amount}% от атаки",
+                "percent": "{name} {amount}%",
+                "seconds": "{name} {amount} с",
+                "number": "{name} {amount}"
+            }
+        }
+    },
+    "shards": {
+        "title": "Цена осколков по звёздам",
+        "columns": {
+            "star": "Звезда",
+            "tiers": "Осколков на ступень",
+            "total": "Итого",
+            "power": "Мощь на звезде"
+        },
+        "star": "Звезда {star}"
+    },
+    "weapon": {
+        "title": "Эксклюзивное оружие",
+        "power": "Мощь оружия",
+        "exploration": "Exploration: атк / защ / здр",
+        "expedition": "Expedition: lethality / здр",
+        "unlocksAt": "откроется на уровне оружия {level}",
+        "levelsTitle": "Уровни оружия",
+        "columns": {
+            "level": "Уровень оружия",
+            "power": "Мощь",
+            "widgets": "Widgets"
+        },
+        "level": "Уровень {level}"
     },
     "levels": {
-      "columns": {
-        "level": "Уровень",
-        "star": "Нужна звезда",
-        "manuals": "Руководства",
-        "power": "Прирост мощи",
-        "effects": "Эффект"
-      },
-      "effect": {
-        "percentOfAttack": "{name} {amount}% от атаки",
-        "percent": "{name} {amount}%",
-        "seconds": "{name} {amount} с",
-        "number": "{name} {amount}"
-      }
-    }
-  },
-  "shards": {
-    "title": "Цена осколков по звёздам",
-    "columns": {
-      "star": "Звезда",
-      "tiers": "Осколков на ступень",
-      "total": "Итого",
-      "power": "Мощь на звезде"
+        "title": "Уровни героя",
+        "columns": {
+            "level": "Уровень героя",
+            "furnace": "Требуется",
+            "xp": "XP до достижения",
+            "power": "Мощь"
+        },
+        "level": "Уровень {level}",
+        "furnace": "Furnace {level}"
     },
-    "star": "Звезда {star}"
-  },
-  "weapon": {
-    "title": "Эксклюзивное оружие",
-    "power": "Мощь оружия",
-    "exploration": "Exploration: атк / защ / здр",
-    "expedition": "Expedition: lethality / здр",
-    "unlocksAt": "откроется на уровне оружия {level}",
-    "levelsTitle": "Уровни оружия",
-    "columns": {
-      "level": "Уровень оружия",
-      "power": "Мощь",
-      "widgets": "Widgets"
-    },
-    "level": "Уровень {level}"
-  },
-  "levels": {
-    "title": "Уровни героя",
-    "columns": {
-      "level": "Уровень героя",
-      "furnace": "Требуется",
-      "xp": "XP до достижения",
-      "power": "Мощь"
-    },
-    "level": "Уровень {level}",
-    "furnace": "Furnace {level}"
-  },
-  "recordLine": "{rarity} {heroClass}, поколение {generation}. Только справка, здесь ничего не сохраняется."
+    "recordLine": "{rarity} {heroClass}, поколение {generation}. Только справка, здесь ничего не сохраняется."
 }

@@ -1,32 +1,32 @@
 {
-  "line": "Paket data punya {have} dari {total} album. Setiap album punya buff, hadiah penyelesaian, dan {puzzles} puzzle.",
-  "note": "{missing} album lainnya ditambahkan saat paket data memilikinya.",
-  "albums": "Album",
-  "puzzleCount": "{count, plural, other {{amount} puzzle}}",
-  "pieceCount": "{count, plural, other {{amount} keping}}",
-  "view": {
-    "label": "Tampilan",
-    "puzzles": "Puzzle",
-    "pieces": "Semua keping"
-  },
-  "album": {
-    "counts": "{puzzles}, {pieces}",
-    "buff": "Buff saat selesai",
-    "buffValue": "{stat} {value}",
-    "rewards": "Hadiah penyelesaian",
-    "buffNote": "Buff hanya berlaku saat semua {puzzles} puzzle selesai."
-  },
-  "puzzles": {
-    "title": "Puzzle",
-    "puzzle": "Puzzle",
-    "pieces": "Keping",
-    "star": "Bintang {stars}",
-    "reward": "Hadiah"
-  },
-  "allPieces": {
-    "title": "Semua keping",
-    "summary": "{pieces} di {puzzles}",
-    "imageNote": "Gambar keping berasal dari paket data. Keping tanpa gambar tampil sebagai kotak polos.",
-    "stars": "{count, plural, other {{amount} bintang}}"
-  }
+    "line": "Paket data punya {have} dari {total} album. Setiap album punya buff, hadiah penyelesaian, dan {puzzles} puzzle.",
+    "note": "{missing} album lainnya ditambahkan saat paket data memilikinya.",
+    "albums": "Album",
+    "puzzleCount": "{count, plural, other {{amount} puzzle}}",
+    "pieceCount": "{count, plural, other {{amount} keping}}",
+    "view": {
+        "label": "Tampilan",
+        "puzzles": "Puzzle",
+        "pieces": "Semua keping"
+    },
+    "album": {
+        "counts": "{puzzles}, {pieces}",
+        "buff": "Buff saat selesai",
+        "buffValue": "{stat} {value}",
+        "rewards": "Hadiah penyelesaian",
+        "buffNote": "Buff hanya berlaku saat semua {puzzles} puzzle selesai."
+    },
+    "puzzles": {
+        "title": "Puzzle",
+        "puzzle": "Puzzle",
+        "pieces": "Keping",
+        "star": "Bintang {stars}",
+        "reward": "Hadiah"
+    },
+    "allPieces": {
+        "title": "Semua keping",
+        "summary": "{pieces} di {puzzles}",
+        "imageNote": "Gambar keping berasal dari paket data. Keping tanpa gambar tampil sebagai kotak polos.",
+        "stars": "{count, plural, other {{amount} bintang}}"
+    }
 }

@@ -1,209 +1,209 @@
 {
-  "page": {
-    "title": "Mascotes"
-  },
-  "view": {
-    "subline": "{chief} · {details} · {unlocked} de {total} mascotes desbloqueados"
-  },
-  "rarities": {
-    "Common": "Common",
-    "Uncommon": "Uncommon",
-    "Rare": "Rare",
-    "Epic": "Epic",
-    "Legendary": "Legendary"
-  },
-  "unlock": {
-    "afterFurnace": "Dia {days} e Furnace {level}",
-    "afterPet": "Dia {days} e {pet} nível {level}"
-  },
-  "summary": {
-    "unlocked": "Desbloqueados",
-    "unlockedValue": "{count} de {total}",
-    "unlockedNote": "Definido manualmente",
-    "power": "Poder total",
-    "powerNote": "Poder de nível, avanço e refinamento dos mascotes desbloqueados",
-    "powerUnknown": "Poder de nível, avanço e refinamento dos mascotes desbloqueados, {amount} desconhecidos",
-    "next": "Próximo a desbloquear",
-    "allUnlocked": "Todos desbloqueados",
-    "allUnlockedNote": "Todos os mascotes estão desbloqueados",
-    "lockedNote": "{count} bloqueados até um dia de servidor posterior"
-  },
-  "totals": {
-    "attackDefense": "Ataque e Defesa das tropas",
-    "attack": "Ataque",
-    "defense": "Defesa",
-    "lethality": "Letalidade",
-    "health": "Vida",
-    "gain": "+{value}%",
-    "types": {
-      "infantry": "Infantaria",
-      "lancer": "Lanceiro",
-      "marksman": "Atirador"
-    }
-  },
-  "search": {
-    "label": "Pesquisar mascotes",
-    "placeholder": "Pesquisar {amount} mascotes por nome"
-  },
-  "status": {
-    "showing": "A mostrar {shown} de {total} {count, plural, one {mascote} other {mascotes}}.",
-    "filters": " Filtros: {list}.",
-    "filterNames": {
-      "rarity": "Raridade",
-      "status": "Estado",
-      "advanced": "Avançado",
-      "order": "Ordem"
+    "page": {
+        "title": "Mascotes"
     },
-    "readOnlyGoals": "Aqui os objetivos são só de leitura e definem-se no Plano. Um objetivo igual ao valor atual significa sem objetivo.",
-    "showMore": "Mostrar {count, plural, one {mais {amount} mascote} other {mais {amount} mascotes}}"
-  },
-  "empty": {
-    "title": "Nenhum mascote corresponde",
-    "description": "Alterar a pesquisa ou os filtros para ver mais mascotes.",
-    "reset": "Repor filtros"
-  },
-  "toast": {
-    "lockedTitle": "{name} bloqueado",
-    "lockedMessage": "O nível, o avanço e o refinamento ficam guardados.",
-    "undo": "Anular"
-  },
-  "card": {
-    "summary": "{rarity} · nível máximo {max}",
-    "unlocked": "Desbloqueado",
-    "unlockedLabel": "{pet} desbloqueado",
-    "cooldown": "Recarga de {time}",
-    "cooldownByTier": "A recarga muda conforme o tier",
-    "cooldownUnknown": "Recarga desconhecida",
-    "skillTiers": "{count, plural, one {{amount} tier de habilidade} other {{amount} tiers de habilidade}}",
-    "unlockRule": "Regra de desbloqueio",
-    "ruleMet": "Esta regra está cumprida",
-    "level": "Nível (máx. {max})",
-    "levelLabel": "Nível de {pet}",
-    "goal": "Objetivo {level}",
-    "noGoal": "Sem objetivo",
-    "advanced": "Avançado",
-    "advancedHint": "Avançado pode ser definido nos níveis 10, 20, 30 e assim por diante.",
-    "refinement": "Refinamento",
-    "refinementMax": "máx. {max}% cada",
-    "refineLabel": "{stat} de {pet}",
-    "percentSign": "%",
-    "attack": "Atq +{value}%",
-    "defense": "Def +{value}%",
-    "power": "Poder {value}",
-    "powerUnknown": "Poder desconhecido",
-    "powerParts": "Nível e avanço {base}, refinamento {refining}"
-  },
-  "filters": {
-    "button": "Filtros",
-    "title": "Filtros",
-    "description": "Escolher o que a lista de Mascotes mostra",
-    "rarity": "Raridade",
-    "rarityAll": "Todas {amount}",
-    "rarityOption": "{rarity} {amount}",
+    "view": {
+        "subline": "{chief} · {details} · {unlocked} de {total} mascotes desbloqueados"
+    },
     "rarities": {
-      "Common": "Common",
-      "Uncommon": "Uncommon",
-      "Rare": "Rare",
-      "Epic": "Epic",
-      "Legendary": "Legendary"
-    },
-    "status": "Estado",
-    "statusOptions": {
-      "all": "Todos os mascotes",
-      "unlocked": "Desbloqueados",
-      "locked": "Bloqueados"
-    },
-    "advanced": "Avançado",
-    "advancedOptions": {
-      "any": "Qualquer",
-      "advanced": "Avançado",
-      "notAdvanced": "Não avançado"
-    },
-    "order": "Ordem",
-    "orderOptions": {
-      "game": "Ordem do jogo",
-      "name": "Nome, A a Z",
-      "level": "Nível, maior primeiro"
-    },
-    "notSaved": "Os filtros não são guardados.",
-    "reset": "Repor",
-    "show": "Mostrar {count, plural, one {{amount} mascote} other {{amount} mascotes}}"
-  },
-  "plan": {
-    "button": "Plano",
-    "title": "Plano de Mascotes",
-    "description": "Comida, itens, atributos e pontos de evento para atingir os objetivos",
-    "saved": "Plano guardado {date}",
-    "notSavedYet": "Plano ainda não guardado",
-    "close": "Fechar",
-    "save": "Guardar plano",
-    "exportButton": "Exportar para Eventos principais",
-    "exportNothing": "O plano não tem pontuação de avanço para exportar.",
-    "export": {
-      "advancement": "Pontuação de avanço de mascotes",
-      "commonMark": "Common Wild Marks",
-      "advancedMark": "Advanced Wild Marks",
-      "marksDetail": "Contado a partir de Recursos."
-    },
-    "noPets": "Adicionar um mascote desbloqueado para planear os níveis.",
-    "add": {
-      "title": "Adicionar um mascote",
-      "selectLabel": "Mascote a adicionar",
-      "button": "Adicionar mascote",
-      "allIn": "Todos os mascotes desbloqueados estão no plano.",
-      "noneUnlocked": "Desbloquear um mascote na página Mascotes para o planear."
-    },
-    "block": {
-      "rarities": {
         "Common": "Common",
         "Uncommon": "Uncommon",
         "Rare": "Rare",
         "Epic": "Epic",
         "Legendary": "Legendary"
-      },
-      "maxLevel": "Nível máximo {max}",
-      "remove": "Remover",
-      "removeLabel": "Remover {pet} do plano",
-      "current": "Nível atual",
-      "to": "para",
-      "goal": "Nível objetivo (máx. {max})",
-      "goalLabel": "Nível objetivo de {pet}",
-      "payAdvancement": "Pagar o avanço no objetivo",
-      "paysCurrent": "Não avançado no nível {level}, por isso esse avanço é pago."
     },
-    "result": {
-      "title": "Resultado para {count, plural, one {{amount} mascote} other {{amount} mascotes}}",
-      "resources": "Recursos, todos os mascotes",
-      "byPet": "Por mascote",
-      "heads": {
-        "pet": "Mascote",
-        "levels": "Níveis",
-        "food": "Comida",
-        "power": "Poder"
-      },
-      "powerGain": "+{value}",
-      "percentGain": "+{value}%",
-      "unknown": "Desconhecido",
-      "gains": "Ganhos",
-      "gainNames": {
-        "levels": "Níveis ganhos",
-        "advancements": "Avanços",
-        "attack": "Ataque das tropas",
-        "defense": "Defesa das tropas",
-        "power": "Poder",
-        "score": "Pontuação de avanço"
-      },
-      "unknownPowerNote": "O pacote de dados não tem poder avançado para um nível deste plano, por isso o ganho de poder é Desconhecido.",
-      "eventPoints": "Pontos de evento",
-      "events": {
-        "svs": "SvS",
-        "allianceShowdown": "Alliance Showdown",
-        "kingOfIcefield": "King of Icefield",
-        "hallOfChief": "Hall of Chief"
-      },
-      "notScored": "Sem pontuação",
-      "eventNote": "Os pontos de evento são a pontuação de avanço vezes os pontos da linha de pontuação de cada evento.",
-      "scoreSourceNote": "As pontuações de avanço dos níveis 40 a 100 coincidem com as notas dos eventos. Os níveis 10 a 30 vêm de uma só fonte (WoS Tools)."
+    "unlock": {
+        "afterFurnace": "Dia {days} e Furnace {level}",
+        "afterPet": "Dia {days} e {pet} nível {level}"
+    },
+    "summary": {
+        "unlocked": "Desbloqueados",
+        "unlockedValue": "{count} de {total}",
+        "unlockedNote": "Definido manualmente",
+        "power": "Poder total",
+        "powerNote": "Poder de nível, avanço e refinamento dos mascotes desbloqueados",
+        "powerUnknown": "Poder de nível, avanço e refinamento dos mascotes desbloqueados, {amount} desconhecidos",
+        "next": "Próximo a desbloquear",
+        "allUnlocked": "Todos desbloqueados",
+        "allUnlockedNote": "Todos os mascotes estão desbloqueados",
+        "lockedNote": "{count} bloqueados até um dia de servidor posterior"
+    },
+    "totals": {
+        "attackDefense": "Ataque e Defesa das tropas",
+        "attack": "Ataque",
+        "defense": "Defesa",
+        "lethality": "Letalidade",
+        "health": "Vida",
+        "gain": "+{value}%",
+        "types": {
+            "infantry": "Infantaria",
+            "lancer": "Lanceiro",
+            "marksman": "Atirador"
+        }
+    },
+    "search": {
+        "label": "Pesquisar mascotes",
+        "placeholder": "Pesquisar {amount} mascotes por nome"
+    },
+    "status": {
+        "showing": "A mostrar {shown} de {total} {count, plural, one {mascote} other {mascotes}}.",
+        "filters": " Filtros: {list}.",
+        "filterNames": {
+            "rarity": "Raridade",
+            "status": "Estado",
+            "advanced": "Avançado",
+            "order": "Ordem"
+        },
+        "readOnlyGoals": "Aqui os objetivos são só de leitura e definem-se no Plano. Um objetivo igual ao valor atual significa sem objetivo.",
+        "showMore": "Mostrar {count, plural, one {mais {amount} mascote} other {mais {amount} mascotes}}"
+    },
+    "empty": {
+        "title": "Nenhum mascote corresponde",
+        "description": "Alterar a pesquisa ou os filtros para ver mais mascotes.",
+        "reset": "Repor filtros"
+    },
+    "toast": {
+        "lockedTitle": "{name} bloqueado",
+        "lockedMessage": "O nível, o avanço e o refinamento ficam guardados.",
+        "undo": "Anular"
+    },
+    "card": {
+        "summary": "{rarity} · nível máximo {max}",
+        "unlocked": "Desbloqueado",
+        "unlockedLabel": "{pet} desbloqueado",
+        "cooldown": "Recarga de {time}",
+        "cooldownByTier": "A recarga muda conforme o tier",
+        "cooldownUnknown": "Recarga desconhecida",
+        "skillTiers": "{count, plural, one {{amount} tier de habilidade} other {{amount} tiers de habilidade}}",
+        "unlockRule": "Regra de desbloqueio",
+        "ruleMet": "Esta regra está cumprida",
+        "level": "Nível (máx. {max})",
+        "levelLabel": "Nível de {pet}",
+        "goal": "Objetivo {level}",
+        "noGoal": "Sem objetivo",
+        "advanced": "Avançado",
+        "advancedHint": "Avançado pode ser definido nos níveis 10, 20, 30 e assim por diante.",
+        "refinement": "Refinamento",
+        "refinementMax": "máx. {max}% cada",
+        "refineLabel": "{stat} de {pet}",
+        "percentSign": "%",
+        "attack": "Atq +{value}%",
+        "defense": "Def +{value}%",
+        "power": "Poder {value}",
+        "powerUnknown": "Poder desconhecido",
+        "powerParts": "Nível e avanço {base}, refinamento {refining}"
+    },
+    "filters": {
+        "button": "Filtros",
+        "title": "Filtros",
+        "description": "Escolher o que a lista de Mascotes mostra",
+        "rarity": "Raridade",
+        "rarityAll": "Todas {amount}",
+        "rarityOption": "{rarity} {amount}",
+        "rarities": {
+            "Common": "Common",
+            "Uncommon": "Uncommon",
+            "Rare": "Rare",
+            "Epic": "Epic",
+            "Legendary": "Legendary"
+        },
+        "status": "Estado",
+        "statusOptions": {
+            "all": "Todos os mascotes",
+            "unlocked": "Desbloqueados",
+            "locked": "Bloqueados"
+        },
+        "advanced": "Avançado",
+        "advancedOptions": {
+            "any": "Qualquer",
+            "advanced": "Avançado",
+            "notAdvanced": "Não avançado"
+        },
+        "order": "Ordem",
+        "orderOptions": {
+            "game": "Ordem do jogo",
+            "name": "Nome, A a Z",
+            "level": "Nível, maior primeiro"
+        },
+        "notSaved": "Os filtros não são guardados.",
+        "reset": "Repor",
+        "show": "Mostrar {count, plural, one {{amount} mascote} other {{amount} mascotes}}"
+    },
+    "plan": {
+        "button": "Plano",
+        "title": "Plano de Mascotes",
+        "description": "Comida, itens, atributos e pontos de evento para atingir os objetivos",
+        "saved": "Plano guardado {date}",
+        "notSavedYet": "Plano ainda não guardado",
+        "close": "Fechar",
+        "save": "Guardar plano",
+        "exportButton": "Exportar para Eventos principais",
+        "exportNothing": "O plano não tem pontuação de avanço para exportar.",
+        "export": {
+            "advancement": "Pontuação de avanço de mascotes",
+            "commonMark": "Common Wild Marks",
+            "advancedMark": "Advanced Wild Marks",
+            "marksDetail": "Contado a partir de Recursos."
+        },
+        "noPets": "Adicionar um mascote desbloqueado para planear os níveis.",
+        "add": {
+            "title": "Adicionar um mascote",
+            "selectLabel": "Mascote a adicionar",
+            "button": "Adicionar mascote",
+            "allIn": "Todos os mascotes desbloqueados estão no plano.",
+            "noneUnlocked": "Desbloquear um mascote na página Mascotes para o planear."
+        },
+        "block": {
+            "rarities": {
+                "Common": "Common",
+                "Uncommon": "Uncommon",
+                "Rare": "Rare",
+                "Epic": "Epic",
+                "Legendary": "Legendary"
+            },
+            "maxLevel": "Nível máximo {max}",
+            "remove": "Remover",
+            "removeLabel": "Remover {pet} do plano",
+            "current": "Nível atual",
+            "to": "para",
+            "goal": "Nível objetivo (máx. {max})",
+            "goalLabel": "Nível objetivo de {pet}",
+            "payAdvancement": "Pagar o avanço no objetivo",
+            "paysCurrent": "Não avançado no nível {level}, por isso esse avanço é pago."
+        },
+        "result": {
+            "title": "Resultado para {count, plural, one {{amount} mascote} other {{amount} mascotes}}",
+            "resources": "Recursos, todos os mascotes",
+            "byPet": "Por mascote",
+            "heads": {
+                "pet": "Mascote",
+                "levels": "Níveis",
+                "food": "Comida",
+                "power": "Poder"
+            },
+            "powerGain": "+{value}",
+            "percentGain": "+{value}%",
+            "unknown": "Desconhecido",
+            "gains": "Ganhos",
+            "gainNames": {
+                "levels": "Níveis ganhos",
+                "advancements": "Avanços",
+                "attack": "Ataque das tropas",
+                "defense": "Defesa das tropas",
+                "power": "Poder",
+                "score": "Pontuação de avanço"
+            },
+            "unknownPowerNote": "O pacote de dados não tem poder avançado para um nível deste plano, por isso o ganho de poder é Desconhecido.",
+            "eventPoints": "Pontos de evento",
+            "events": {
+                "svs": "SvS",
+                "allianceShowdown": "Alliance Showdown",
+                "kingOfIcefield": "King of Icefield",
+                "hallOfChief": "Hall of Chief"
+            },
+            "notScored": "Sem pontuação",
+            "eventNote": "Os pontos de evento são a pontuação de avanço vezes os pontos da linha de pontuação de cada evento.",
+            "scoreSourceNote": "As pontuações de avanço dos níveis 40 a 100 coincidem com as notas dos eventos. Os níveis 10 a 30 vêm de uma só fonte (WoS Tools)."
+        }
     }
-  }
 }

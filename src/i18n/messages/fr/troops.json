@@ -1,251 +1,251 @@
 {
-  "page": {
-    "title": "Troupes"
-  },
-  "view": {
-    "title": "Troupes",
-    "subline": "{chief} · {camps}",
-    "campLevel": "{name} Camp {level}",
-    "notBuilt": "non construit",
-    "intro": "Les niveaux de camp, la capacité et les bonus de vitesse viennent d'autres pages et sont en lecture seule. Plan calcule ce que prennent l'entraînement et la promotion. Lancer l'entraînement marque un lot qu'un camp est en train de traiter.",
-    "plan": "Plan"
-  },
-  "cards": {
-    "tileSummary": "troupes · puissance {power}",
-    "allTroops": "Toutes les troupes",
-    "totalPower": "Puissance totale",
-    "troops": "Troupes",
-    "power": "Puissance",
-    "powerNote": "La puissance par troupe vient des données. Les paliers 10 et 11 suivent le niveau de Fire Crystal de chaque camp.",
-    "campLevel": "Camp niveau {level}",
-    "campNotBuilt": "Camp non construit",
-    "campAgeLocked": "Le niveau de camp enregistré n'est pas encore ouvert sur ce serveur. {text}",
-    "highestTier": "Palier le plus haut",
-    "tierShort": "T{tier}",
-    "noTier": "Aucun"
-  },
-  "tiers": {
-    "title": "Paliers {name}",
-    "hideLow": "Masquer le palier 9 et moins",
-    "typeLabel": "Type de troupe",
-    "hiddenNote": "Les paliers 1 à 9 sont masqués. Furnace {furnace} est niveau 30 ou plus.",
-    "heads": {
-      "tier": "Palier",
-      "troops": "Troupes",
-      "train": "Entraîner",
-      "power": "Puissance"
+    "page": {
+        "title": "Troupes"
     },
-    "requires": {
-      "list": "Nécessite {list}",
-      "camp": "{name} Camp {level}",
-      "building": "{name} {level}",
-      "research": "{name} niveau {level}"
+    "view": {
+        "title": "Troupes",
+        "subline": "{chief} · {camps}",
+        "campLevel": "{name} Camp {level}",
+        "notBuilt": "non construit",
+        "intro": "Les niveaux de camp, la capacité et les bonus de vitesse viennent d'autres pages et sont en lecture seule. Plan calcule ce que prennent l'entraînement et la promotion. Lancer l'entraînement marque un lot qu'un camp est en train de traiter.",
+        "plan": "Plan"
     },
-    "tier": "Palier {tier}",
-    "locked": "Verrouillé",
-    "countLabel": "Troupes {name} {tier}",
-    "train": "Entraîner",
-    "seconds": "{value} s",
-    "each": "l'unité",
-    "mobilePower": "Puissance"
-  },
-  "plan": {
-    "title": "Planifier les troupes",
-    "description": "Entraînement et promotion pour les trois types de troupes",
-    "saved": "Plan enregistré {date}",
-    "close": "Fermer",
-    "save": "Enregistrer le plan",
-    "export": {
-      "button": "Exporter vers Événements clés",
-      "emptyHint": "Ajoutez un entraînement pour l'exporter.",
-      "computed": "Calculé par l'application.",
-      "trainedGroup": "pour les troupes entraînées",
-      "speedupGroup": "pour les minutes d'accélération",
-      "trainedTier": "Troupes de palier {tier} entraînées",
-      "speedupMinutes": "Minutes d'accélération d'entraînement utilisées",
-      "promoted": "Troupes promues",
-      "promotedReason": "La promotion ne rapporte des points que par les minutes d'accélération.",
-      "power": "Puissance de l'entraînement et de la promotion",
-      "powerReason": "Les données n'ont pas encore de vraie puissance par palier."
+    "cards": {
+        "tileSummary": "troupes · puissance {power}",
+        "allTroops": "Toutes les troupes",
+        "totalPower": "Puissance totale",
+        "troops": "Troupes",
+        "power": "Puissance",
+        "powerNote": "La puissance par troupe vient des données. Les paliers 10 et 11 suivent le niveau de Fire Crystal de chaque camp.",
+        "campLevel": "Camp niveau {level}",
+        "campNotBuilt": "Camp non construit",
+        "campAgeLocked": "Le niveau de camp enregistré n'est pas encore ouvert sur ce serveur. {text}",
+        "highestTier": "Palier le plus haut",
+        "tierShort": "T{tier}",
+        "noTier": "Aucun"
     },
-    "noRuns": "Aucun entraînement pour l'instant. Ajoutez une troupe pour commencer un plan.",
-    "add": {
-      "title": "Ajouter une troupe",
-      "typeLabel": "Type de troupe",
-      "modeLabel": "Entraînement ou promotion",
-      "button": "Ajouter la troupe"
+    "tiers": {
+        "title": "Paliers {name}",
+        "hideLow": "Masquer le palier 9 et moins",
+        "typeLabel": "Type de troupe",
+        "hiddenNote": "Les paliers 1 à 9 sont masqués. Furnace {furnace} est niveau 30 ou plus.",
+        "heads": {
+            "tier": "Palier",
+            "troops": "Troupes",
+            "train": "Entraîner",
+            "power": "Puissance"
+        },
+        "requires": {
+            "list": "Nécessite {list}",
+            "camp": "{name} Camp {level}",
+            "building": "{name} {level}",
+            "research": "{name} niveau {level}"
+        },
+        "tier": "Palier {tier}",
+        "locked": "Verrouillé",
+        "countLabel": "Troupes {name} {tier}",
+        "train": "Entraîner",
+        "seconds": "{value} s",
+        "each": "l'unité",
+        "mobilePower": "Puissance"
     },
-    "run": {
-      "tier": "Palier {tier}",
-      "modes": {
-        "training": "Entraînement",
-        "promotion": "Promotion"
-      },
-      "remove": "Retirer l'entraînement {name}",
-      "removeButton": "Retirer",
-      "modeLabel": "Entraînement ou promotion de {name}",
-      "tierLabel": "Palier de {name}",
-      "fromLabel": "Promotion de {name} depuis le palier",
-      "toLabel": "Promotion de {name} vers le palier",
-      "to": "à",
-      "troops": "Troupes",
-      "max": "Max",
-      "maxValue": "Max ({capacity})",
-      "batches": "Lots"
+    "plan": {
+        "title": "Planifier les troupes",
+        "description": "Entraînement et promotion pour les trois types de troupes",
+        "saved": "Plan enregistré {date}",
+        "close": "Fermer",
+        "save": "Enregistrer le plan",
+        "export": {
+            "button": "Exporter vers Événements clés",
+            "emptyHint": "Ajoutez un entraînement pour l'exporter.",
+            "computed": "Calculé par l'application.",
+            "trainedGroup": "pour les troupes entraînées",
+            "speedupGroup": "pour les minutes d'accélération",
+            "trainedTier": "Troupes de palier {tier} entraînées",
+            "speedupMinutes": "Minutes d'accélération d'entraînement utilisées",
+            "promoted": "Troupes promues",
+            "promotedReason": "La promotion ne rapporte des points que par les minutes d'accélération.",
+            "power": "Puissance de l'entraînement et de la promotion",
+            "powerReason": "Les données n'ont pas encore de vraie puissance par palier."
+        },
+        "noRuns": "Aucun entraînement pour l'instant. Ajoutez une troupe pour commencer un plan.",
+        "add": {
+            "title": "Ajouter une troupe",
+            "typeLabel": "Type de troupe",
+            "modeLabel": "Entraînement ou promotion",
+            "button": "Ajouter la troupe"
+        },
+        "run": {
+            "tier": "Palier {tier}",
+            "modes": {
+                "training": "Entraînement",
+                "promotion": "Promotion"
+            },
+            "remove": "Retirer l'entraînement {name}",
+            "removeButton": "Retirer",
+            "modeLabel": "Entraînement ou promotion de {name}",
+            "tierLabel": "Palier de {name}",
+            "fromLabel": "Promotion de {name} depuis le palier",
+            "toLabel": "Promotion de {name} vers le palier",
+            "to": "à",
+            "troops": "Troupes",
+            "max": "Max",
+            "maxValue": "Max ({capacity})",
+            "batches": "Lots"
+        },
+        "speed": {
+            "readOnlyNote": "Les valeurs en lecture seule viennent d'autres pages. Modifiez-les là-bas.",
+            "openBonuses": "Ouvrir Bonus",
+            "title": "Capacité et vitesse",
+            "appointment": "Nomination",
+            "position": "Poste",
+            "rank": "Rang",
+            "positions": {
+                "none": "Aucun",
+                "ministerOfEducation": "Ministre de l'Éducation",
+                "vicePresident": "Vice-président"
+            },
+            "ranks": {
+                "regular": "Normal",
+                "supreme": "Suprême"
+            },
+            "appointmentEffect": "+{capacity} de capacité, +{speed} % de vitesse",
+            "appointmentNote": "Une seule des deux nominations peut être active. Le ministre de l'Éducation ajoute {moeCapacity} de capacité et {moeSpeed} pour cent de vitesse (Suprême {moeCapacitySupreme} et {moeSpeedSupreme}). Le vice-président ajoute {vpSpeed} pour cent de vitesse (Suprême {vpSpeedSupreme}).",
+            "capacity": "Capacité",
+            "researchCapacity": "Capacité de recherche",
+            "troops": "{value} troupes",
+            "readOnly": "Lecture seule",
+            "capacityBoost": "Boost de capacité",
+            "boostTotal": "Total x{multiplier}",
+            "capacityPerBatch": "Capacité par lot",
+            "trainingSpeed": "Vitesse d'entraînement",
+            "gameSpeed": "Vitesse d'entraînement du jeu",
+            "appointmentSpeed": "Nomination",
+            "mobilize": "Mobilize",
+            "advancedTraining": "Advanced Training",
+            "speedUsed": "Vitesse d'entraînement utilisée",
+            "percent": "{value} %",
+            "percentPlus": "+{value} %"
+        },
+        "stock": {
+            "name": "Accélérations d'entraînement",
+            "minutesUnit": "min",
+            "note": "Votre stock : Entraînement {training} min, Général {general} min. Les accélérations générales comptent pour l'entraînement. Un entraînement non couvert par une accélération se termine en temps normal, donc seules les accélérations que vous avez sont utilisées : {used} min."
+        },
+        "result": {
+            "title": "Résultat",
+            "resources": "Ressources",
+            "changes": "Changements de troupes par palier",
+            "heads": {
+                "tier": "Palier",
+                "infantry": "Inf.",
+                "lancer": "Lan.",
+                "marksman": "Mark.",
+                "all": "Tous"
+            },
+            "tier": "Palier {tier}",
+            "total": "Total",
+            "time": "Durée, sans accélération",
+            "totalTime": "Total, tous types de troupes (durée avec accélérations)",
+            "longest": "Type de troupe le plus long",
+            "minutesNeeded": "Minutes d'accélération nécessaires",
+            "minutesUsed": "Minutes d'accélération utilisées (en stock)",
+            "minutes": "{value} min",
+            "tier12Note": "Les données indiquent que les coûts du palier 12 sont en partie déduits. Le coût de promotion des Marksman a été mesuré dans le jeu, et les coûts des Infantry et Lancer en ont été extrapolés."
+        }
     },
-    "speed": {
-      "readOnlyNote": "Les valeurs en lecture seule viennent d'autres pages. Modifiez-les là-bas.",
-      "openBonuses": "Ouvrir Bonus",
-      "title": "Capacité et vitesse",
-      "appointment": "Nomination",
-      "position": "Poste",
-      "rank": "Rang",
-      "positions": {
-        "none": "Aucun",
-        "ministerOfEducation": "Ministre de l'Éducation",
-        "vicePresident": "Vice-président"
-      },
-      "ranks": {
-        "regular": "Normal",
-        "supreme": "Suprême"
-      },
-      "appointmentEffect": "+{capacity} de capacité, +{speed} % de vitesse",
-      "appointmentNote": "Une seule des deux nominations peut être active. Le ministre de l'Éducation ajoute {moeCapacity} de capacité et {moeSpeed} pour cent de vitesse (Suprême {moeCapacitySupreme} et {moeSpeedSupreme}). Le vice-président ajoute {vpSpeed} pour cent de vitesse (Suprême {vpSpeedSupreme}).",
-      "capacity": "Capacité",
-      "researchCapacity": "Capacité de recherche",
-      "troops": "{value} troupes",
-      "readOnly": "Lecture seule",
-      "capacityBoost": "Boost de capacité",
-      "boostTotal": "Total x{multiplier}",
-      "capacityPerBatch": "Capacité par lot",
-      "trainingSpeed": "Vitesse d'entraînement",
-      "gameSpeed": "Vitesse d'entraînement du jeu",
-      "appointmentSpeed": "Nomination",
-      "mobilize": "Mobilize",
-      "advancedTraining": "Advanced Training",
-      "speedUsed": "Vitesse d'entraînement utilisée",
-      "percent": "{value} %",
-      "percentPlus": "+{value} %"
+    "queue": {
+        "title": "Files d'entraînement",
+        "note": "Chaque camp entraîne un lot à la fois. Terminer ajoute les troupes à vos nombres.",
+        "idle": "Rien ne s'entraîne. Lancez un lot pour utiliser ce camp.",
+        "startButton": "Lancer l'entraînement",
+        "jobTitle": {
+            "training": "Entraînement de {count} {name} T{tier}",
+            "promotion": "Promotion de {count} {name} T{from} à T{to}"
+        },
+        "manage": {
+            "slotLabel": "{camp}, un lot à la fois",
+            "finishText": "Terminer l'amélioration ajoute les troupes à vos nombres, libère le camp et ajoute le lot à votre Historique. Quand il ne reste plus de temps, la carte indique Prêt à terminer. Rien ne se termine tout seul, car vous avez pu utiliser des accélérations."
+        },
+        "flyout": {
+            "title": "Lancer l'entraînement",
+            "description": "Marquer un lot comme en entraînement ou en promotion dans un camp",
+            "camp": "Camp",
+            "campHelp": "Un lot à la fois dans chaque camp. Un camp occupé indique quand il se libère.",
+            "busy": "Occupé jusqu'au {date}",
+            "notBuilt": "Camp non construit",
+            "action": "Action",
+            "training": "Entraînement",
+            "promotion": "Promotion",
+            "tier": "Palier",
+            "tierOption": "Palier {tier}",
+            "fromTier": "Depuis le palier",
+            "toTier": "Vers le palier",
+            "troops": "Troupes dans le lot",
+            "max": "Max",
+            "capacityHint": "Un lot contient jusqu'à {capacity} troupes. C'est la capacité de recherche plus vos niveaux de camp.",
+            "noTiers": "Ce camp n'a pas encore de palier à entraîner. Montez le niveau du camp dans la page Bâtiments.",
+            "cost": "Coût du lot",
+            "time": "Durée d'entraînement",
+            "packageTime": "Durée des données",
+            "speed": "Vitesse d'entraînement",
+            "readOnly": "Lecture seule",
+            "openBonuses": "Ouvrir Bonus",
+            "yourTime": "Votre durée",
+            "timeHint": "La vitesse d'entraînement vient de la page Bonus. Utilisez Déjà commencé quand le jeu affiche une autre durée.",
+            "whenStarted": "Quand a-t-il commencé ?",
+            "modes": {
+                "now": "Commence maintenant",
+                "already": "Déjà commencé"
+            },
+            "timeLeftHours": "Temps restant, heures",
+            "ends": "Fin",
+            "takeCost": {
+                "title": "Prélever le coût sur mon stock",
+                "hint": "Prélève les ressources du lot sur Ressources. Un nombre ne descend jamais sous 0.",
+                "enough": "Vous en avez assez.",
+                "short": "Il manque {names}. Le stock passe à 0 pour ceux-là."
+            },
+            "cancel": "Annuler",
+            "start": "Lancer l'entraînement",
+            "allCamps": "Tous les camps libres ({count})",
+            "allCampsHint": "Lance le même lot dans chaque camp libre en une fois. Chaque camp garde sa propre durée. Les paliers affichés sont ceux que tous les camps libres peuvent entraîner.",
+            "campTime": "{camp} : {time}"
+        },
+        "toasts": {
+            "started": {
+                "title": "Entraînement lancé",
+                "message": "{what}."
+            },
+            "finished": {
+                "title": "{what} entraîné",
+                "message": "Ajouté à vos nombres de troupes et à l'Historique."
+            },
+            "cancelled": {
+                "title": "{what} annulé",
+                "message": "Vos nombres de troupes restent inchangés. Corrigez votre stock dans Ressources si besoin."
+            },
+            "undo": "Annuler"
+        },
+        "batchName": {
+            "training": "{count} {name} T{tier}",
+            "promotion": "{count} {name} T{from} à T{to}"
+        }
     },
-    "stock": {
-      "name": "Accélérations d'entraînement",
-      "minutesUnit": "min",
-      "note": "Votre stock : Entraînement {training} min, Général {general} min. Les accélérations générales comptent pour l'entraînement. Un entraînement non couvert par une accélération se termine en temps normal, donc seules les accélérations que vous avez sont utilisées : {used} min."
-    },
-    "result": {
-      "title": "Résultat",
-      "resources": "Ressources",
-      "changes": "Changements de troupes par palier",
-      "heads": {
-        "tier": "Palier",
-        "infantry": "Inf.",
-        "lancer": "Lan.",
-        "marksman": "Mark.",
-        "all": "Tous"
-      },
-      "tier": "Palier {tier}",
-      "total": "Total",
-      "time": "Durée, sans accélération",
-      "totalTime": "Total, tous types de troupes (durée avec accélérations)",
-      "longest": "Type de troupe le plus long",
-      "minutesNeeded": "Minutes d'accélération nécessaires",
-      "minutesUsed": "Minutes d'accélération utilisées (en stock)",
-      "minutes": "{value} min",
-      "tier12Note": "Les données indiquent que les coûts du palier 12 sont en partie déduits. Le coût de promotion des Marksman a été mesuré dans le jeu, et les coûts des Infantry et Lancer en ont été extrapolés."
+    "callOfWar": {
+        "title": "Call of War",
+        "note": "Compétence de Romulus. Une récupération gratuite par jour UTC, pour tous les camps ensemble. Réinitialisation à 00:00 UTC.",
+        "available": "{troops} troupes gratuites aujourd'hui",
+        "claimed": "Récupéré aujourd'hui. Une nouvelle récupération sera gratuite dans {time}.",
+        "notUnlocked": "Nécessite Romulus recruté et Call of War au niveau 1 ou plus sur la page Experts.",
+        "level": "Call of War niveau {level}",
+        "add": "Ajouter à {camp}",
+        "addHint": "{troops} troupes vont au palier {tier}",
+        "noTier": "Aucun palier débloqué",
+        "toast": {
+            "title": "Call of War récupéré",
+            "message": "{troops} troupes ajoutées à {camp} palier {tier}.",
+            "undo": "Annuler"
+        }
     }
-  },
-  "queue": {
-    "title": "Files d'entraînement",
-    "note": "Chaque camp entraîne un lot à la fois. Terminer ajoute les troupes à vos nombres.",
-    "idle": "Rien ne s'entraîne. Lancez un lot pour utiliser ce camp.",
-    "startButton": "Lancer l'entraînement",
-    "jobTitle": {
-      "training": "Entraînement de {count} {name} T{tier}",
-      "promotion": "Promotion de {count} {name} T{from} à T{to}"
-    },
-    "manage": {
-      "slotLabel": "{camp}, un lot à la fois",
-      "finishText": "Terminer l'amélioration ajoute les troupes à vos nombres, libère le camp et ajoute le lot à votre Historique. Quand il ne reste plus de temps, la carte indique Prêt à terminer. Rien ne se termine tout seul, car vous avez pu utiliser des accélérations."
-    },
-    "flyout": {
-      "title": "Lancer l'entraînement",
-      "description": "Marquer un lot comme en entraînement ou en promotion dans un camp",
-      "camp": "Camp",
-      "campHelp": "Un lot à la fois dans chaque camp. Un camp occupé indique quand il se libère.",
-      "busy": "Occupé jusqu'au {date}",
-      "notBuilt": "Camp non construit",
-      "action": "Action",
-      "training": "Entraînement",
-      "promotion": "Promotion",
-      "tier": "Palier",
-      "tierOption": "Palier {tier}",
-      "fromTier": "Depuis le palier",
-      "toTier": "Vers le palier",
-      "troops": "Troupes dans le lot",
-      "max": "Max",
-      "capacityHint": "Un lot contient jusqu'à {capacity} troupes. C'est la capacité de recherche plus vos niveaux de camp.",
-      "noTiers": "Ce camp n'a pas encore de palier à entraîner. Montez le niveau du camp dans la page Bâtiments.",
-      "cost": "Coût du lot",
-      "time": "Durée d'entraînement",
-      "packageTime": "Durée des données",
-      "speed": "Vitesse d'entraînement",
-      "readOnly": "Lecture seule",
-      "openBonuses": "Ouvrir Bonus",
-      "yourTime": "Votre durée",
-      "timeHint": "La vitesse d'entraînement vient de la page Bonus. Utilisez Déjà commencé quand le jeu affiche une autre durée.",
-      "whenStarted": "Quand a-t-il commencé ?",
-      "modes": {
-        "now": "Commence maintenant",
-        "already": "Déjà commencé"
-      },
-      "timeLeftHours": "Temps restant, heures",
-      "ends": "Fin",
-      "takeCost": {
-        "title": "Prélever le coût sur mon stock",
-        "hint": "Prélève les ressources du lot sur Ressources. Un nombre ne descend jamais sous 0.",
-        "enough": "Vous en avez assez.",
-        "short": "Il manque {names}. Le stock passe à 0 pour ceux-là."
-      },
-      "cancel": "Annuler",
-      "start": "Lancer l'entraînement",
-      "allCamps": "Tous les camps libres ({count})",
-      "allCampsHint": "Lance le même lot dans chaque camp libre en une fois. Chaque camp garde sa propre durée. Les paliers affichés sont ceux que tous les camps libres peuvent entraîner.",
-      "campTime": "{camp} : {time}"
-    },
-    "toasts": {
-      "started": {
-        "title": "Entraînement lancé",
-        "message": "{what}."
-      },
-      "finished": {
-        "title": "{what} entraîné",
-        "message": "Ajouté à vos nombres de troupes et à l'Historique."
-      },
-      "cancelled": {
-        "title": "{what} annulé",
-        "message": "Vos nombres de troupes restent inchangés. Corrigez votre stock dans Ressources si besoin."
-      },
-      "undo": "Annuler"
-    },
-    "batchName": {
-      "training": "{count} {name} T{tier}",
-      "promotion": "{count} {name} T{from} à T{to}"
-    }
-  },
-  "callOfWar": {
-    "title": "Call of War",
-    "note": "Compétence de Romulus. Une récupération gratuite par jour UTC, pour tous les camps ensemble. Réinitialisation à 00:00 UTC.",
-    "available": "{troops} troupes gratuites aujourd'hui",
-    "claimed": "Récupéré aujourd'hui. Une nouvelle récupération sera gratuite dans {time}.",
-    "notUnlocked": "Nécessite Romulus recruté et Call of War au niveau 1 ou plus sur la page Experts.",
-    "level": "Call of War niveau {level}",
-    "add": "Ajouter à {camp}",
-    "addHint": "{troops} troupes vont au palier {tier}",
-    "noTier": "Aucun palier débloqué",
-    "toast": {
-      "title": "Call of War récupéré",
-      "message": "{troops} troupes ajoutées à {camp} palier {tier}.",
-      "undo": "Annuler"
-    }
-  }
 }

@@ -1,67 +1,67 @@
 {
-  "line": "Qué fuentes de bonificación se aplican en cada uno de los {modes} modos de juego: sí, no o parcial para {sources} tipos de bonificación.",
-  "matrix": {
-    "title": "Matriz de bonificaciones",
-    "meta": "{modes} modos, {sources} tipos de bonificación",
-    "table": "Fuentes de bonificación por modo de juego",
-    "mode": "Modo de juego"
-  },
-  "sources": {
-    "cityBonusWarsBuffs": {
-      "short": "Bonif. ciudad",
-      "full": "Bonificación de ciudad y de guerras"
+    "line": "Qué fuentes de bonificación se aplican en cada uno de los {modes} modos de juego: sí, no o parcial para {sources} tipos de bonificación.",
+    "matrix": {
+        "title": "Matriz de bonificaciones",
+        "meta": "{modes} modos, {sources} tipos de bonificación",
+        "table": "Fuentes de bonificación por modo de juego",
+        "mode": "Modo de juego"
     },
-    "deploymentCapacity": {
-      "short": "Cap. despliegue",
-      "full": "Capacidad de despliegue"
+    "sources": {
+        "cityBonusWarsBuffs": {
+            "short": "Bonif. ciudad",
+            "full": "Bonificación de ciudad y de guerras"
+        },
+        "deploymentCapacity": {
+            "short": "Cap. despliegue",
+            "full": "Capacidad de despliegue"
+        },
+        "petSkills": {
+            "short": "Hab. mascotas",
+            "full": "Habilidades de mascotas"
+        },
+        "daybreakIsland": {
+            "short": "Daybreak",
+            "full": "Daybreak Island"
+        },
+        "presidentSkills": {
+            "short": "Presidente",
+            "full": "Habilidades del presidente"
+        },
+        "ministerBuff": {
+            "short": "Ministro",
+            "full": "Bonificación de ministro"
+        },
+        "territoryBonuses": {
+            "short": "Territorio",
+            "full": "Bonificaciones de territorio"
+        },
+        "facilityBuff": {
+            "short": "Instalación",
+            "full": "Bonificación de instalación"
+        },
+        "marchAccelerator": {
+            "short": "Acel. marcha",
+            "full": "Acelerador de marcha"
+        },
+        "frostdragonTyrantTitles": {
+            "short": "Títulos Tirano",
+            "full": "Títulos del Tirano Dragón de Escarcha"
+        },
+        "frostSphereDomainBonus": {
+            "short": "Frost Sphere",
+            "full": "Bonificación de dominio de Frost Sphere"
+        }
     },
-    "petSkills": {
-      "short": "Hab. mascotas",
-      "full": "Habilidades de mascotas"
+    "applicability": {
+        "yes": "Sí",
+        "no": "No",
+        "partial": "Parcial"
     },
-    "daybreakIsland": {
-      "short": "Daybreak",
-      "full": "Daybreak Island"
-    },
-    "presidentSkills": {
-      "short": "Presidente",
-      "full": "Habilidades del presidente"
-    },
-    "ministerBuff": {
-      "short": "Ministro",
-      "full": "Bonificación de ministro"
-    },
-    "territoryBonuses": {
-      "short": "Territorio",
-      "full": "Bonificaciones de territorio"
-    },
-    "facilityBuff": {
-      "short": "Instalación",
-      "full": "Bonificación de instalación"
-    },
-    "marchAccelerator": {
-      "short": "Acel. marcha",
-      "full": "Acelerador de marcha"
-    },
-    "frostdragonTyrantTitles": {
-      "short": "Títulos Tirano",
-      "full": "Títulos del Tirano Dragón de Escarcha"
-    },
-    "frostSphereDomainBonus": {
-      "short": "Frost Sphere",
-      "full": "Bonificación de dominio de Frost Sphere"
+    "notes": {
+        "title": "Notas por modo de juego",
+        "table": "Notas por modo de juego",
+        "petSkillsAutoApplied": "Las habilidades de mascotas se aplican solas",
+        "note": "Nota",
+        "noNote": "Ninguna"
     }
-  },
-  "applicability": {
-    "yes": "Sí",
-    "no": "No",
-    "partial": "Parcial"
-  },
-  "notes": {
-    "title": "Notas por modo de juego",
-    "table": "Notas por modo de juego",
-    "petSkillsAutoApplied": "Las habilidades de mascotas se aplican solas",
-    "note": "Nota",
-    "noNote": "Ninguna"
-  }
 }

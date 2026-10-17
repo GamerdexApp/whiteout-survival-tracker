@@ -1,50 +1,50 @@
 {
-  "page": {
-    "title": "Aliança"
-  },
-  "view": {
-    "subline": "{chief} · {details} · estandarte nível {level}"
-  },
-  "banner": {
-    "title": "Estandarte da aliança",
-    "currentLevel": "Nível atual",
-    "levelLabel": "Nível do estandarte",
-    "maxHint": "Níveis inteiros de 0 a {max}.",
-    "rangeChip": "{range}",
-    "costHeading": "Custo por nível em {range}",
-    "noTimeOrPower": "Os estandartes não têm tempo de construção nem poder no pacote de dados, então nada é mostrado.",
-    "noCost": "Sem custo",
-    "none": "Nenhum",
-    "lower": "Diminuir nível do estandarte",
-    "raise": "Aumentar nível do estandarte"
-  },
-  "structures": {
-    "title": "Estruturas da aliança",
-    "tech": {
-      "title": "Tecnologia",
-      "description": "{count} nós em Crescimento, Território e Batalha",
-      "status": "{maxed} no máximo, {progress} em andamento, {locked} bloqueados"
+    "page": {
+        "title": "Aliança"
     },
-    "facilities": {
-      "title": "Instalações",
-      "description": "{count} instalações no mapa",
-      "owned": "{owned} obtidas"
+    "view": {
+        "subline": "{chief} · {details} · estandarte nível {level}"
     },
-    "fortresses": {
-      "title": "Fortalezas",
-      "description": "Castelo, {strongholds} fortes, {fortresses} fortalezas",
-      "reference": "Só referência"
+    "banner": {
+        "title": "Estandarte da aliança",
+        "currentLevel": "Nível atual",
+        "levelLabel": "Nível do estandarte",
+        "maxHint": "Níveis inteiros de 0 a {max}.",
+        "rangeChip": "{range}",
+        "costHeading": "Custo por nível em {range}",
+        "noTimeOrPower": "Os estandartes não têm tempo de construção nem poder no pacote de dados, então nada é mostrado.",
+        "noCost": "Sem custo",
+        "none": "Nenhum",
+        "lower": "Diminuir nível do estandarte",
+        "raise": "Aumentar nível do estandarte"
+    },
+    "structures": {
+        "title": "Estruturas da aliança",
+        "tech": {
+            "title": "Tecnologia",
+            "description": "{count} nós em Crescimento, Território e Batalha",
+            "status": "{maxed} no máximo, {progress} em andamento, {locked} bloqueados"
+        },
+        "facilities": {
+            "title": "Instalações",
+            "description": "{count} instalações no mapa",
+            "owned": "{owned} obtidas"
+        },
+        "fortresses": {
+            "title": "Fortalezas",
+            "description": "Castelo, {strongholds} fortes, {fortresses} fortalezas",
+            "reference": "Só referência"
+        }
+    },
+    "table": {
+        "title": "Custo do estandarte por faixa de nível",
+        "note": "{count} faixas, todos os níveis de uma faixa custam o mesmo",
+        "range": "Faixa",
+        "state": "Situação",
+        "built": "Construído",
+        "current": "Atual",
+        "notBuilt": "Não construído",
+        "none": "Nenhum",
+        "noCost": "Sem custo"
     }
-  },
-  "table": {
-    "title": "Custo do estandarte por faixa de nível",
-    "note": "{count} faixas, todos os níveis de uma faixa custam o mesmo",
-    "range": "Faixa",
-    "state": "Situação",
-    "built": "Construído",
-    "current": "Atual",
-    "notBuilt": "Não construído",
-    "none": "Nenhum",
-    "noCost": "Sem custo"
-  }
 }

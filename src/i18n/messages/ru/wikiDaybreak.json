@@ -1,69 +1,69 @@
 {
-  "line": "Таблицы уровней Lumber Camp и Tree of Life, а также украшения ({decorations}) по категориям с ценой, процветанием и бонусами.",
-  "lumberCamp": {
-    "title": "Lumber Camp",
-    "levels": "{count, plural, one {{amount} уровень} few {{amount} уровня} many {{amount} уровней} other {{amount} уровня}}",
-    "table": "Уровни Lumber Camp",
-    "level": "Уровень",
-    "workers": "Рабочие",
-    "perSecond": "В сек.",
-    "treeLevel": "Уровень дерева",
-    "lifeEssence": "Life Essence"
-  },
-  "tree": {
-    "title": "Tree of Life",
-    "table": "Уровни Tree of Life",
-    "level": "Уровень",
-    "prosperity": "Процветание",
-    "lifeEssence": "Life Essence",
-    "perHour": "В час",
-    "buff": "Бонус"
-  },
-  "decorations": {
-    "title": "Украшения",
-    "showing": "Показано {shown} из {total}",
-    "search": "Поиск",
-    "searchPlaceholder": "Поиск украшений по названию или бонусу",
-    "categoryLabel": "Категория",
-    "all": "Все",
-    "costFilter": "Тип цены",
-    "table": "Украшения",
-    "name": "Украшение",
-    "category": "Категория",
-    "limit": "Лимит",
-    "levels": "Уровни",
-    "cost": "Цена",
-    "prosperityAtMax": "Процветание на максимуме",
-    "buffAtMax": "Бонус на макс. уровне",
-    "emptyTitle": "Подходящих украшений нет",
-    "emptyDescription": "Измените поиск, категорию или тип цены."
-  },
-  "costFilter": {
-    "any": "Любая цена",
-    "lifeEssence": "Life Essence",
-    "items": "Ресурсы",
-    "limited": "С лимитом",
-    "unknown": "Цены нет в данных"
-  },
-  "cost": {
-    "lifeEssence": "{amount} Life Essence",
-    "limited": "Нет, украшение с лимитом"
-  },
-  "detail": {
-    "title": "Подробности",
-    "category": "Категория",
-    "limit": "Лимит",
-    "cost": "Цена",
-    "levels": "Уровни",
-    "image": "Картинка",
-    "imageMissing": "Нет",
-    "levelsTitle": "Уровни: {name}",
-    "levelsMeta": "{count, plural, one {{amount} уровень} few {{amount} уровня} many {{amount} уровней} other {{amount} уровня}}",
-    "levelsTable": "Уровни украшения",
-    "level": "Уровень",
-    "levelCost": "Цена",
-    "prosperity": "Процветание",
-    "buff": "Бонус",
-    "noLevels": "В данных нет таблицы уровней для этого украшения."
-  }
+    "line": "Таблицы уровней Lumber Camp и Tree of Life, а также украшения ({decorations}) по категориям с ценой, процветанием и бонусами.",
+    "lumberCamp": {
+        "title": "Lumber Camp",
+        "levels": "{count, plural, one {{amount} уровень} few {{amount} уровня} many {{amount} уровней} other {{amount} уровня}}",
+        "table": "Уровни Lumber Camp",
+        "level": "Уровень",
+        "workers": "Рабочие",
+        "perSecond": "В сек.",
+        "treeLevel": "Уровень дерева",
+        "lifeEssence": "Life Essence"
+    },
+    "tree": {
+        "title": "Tree of Life",
+        "table": "Уровни Tree of Life",
+        "level": "Уровень",
+        "prosperity": "Процветание",
+        "lifeEssence": "Life Essence",
+        "perHour": "В час",
+        "buff": "Бонус"
+    },
+    "decorations": {
+        "title": "Украшения",
+        "showing": "Показано {shown} из {total}",
+        "search": "Поиск",
+        "searchPlaceholder": "Поиск украшений по названию или бонусу",
+        "categoryLabel": "Категория",
+        "all": "Все",
+        "costFilter": "Тип цены",
+        "table": "Украшения",
+        "name": "Украшение",
+        "category": "Категория",
+        "limit": "Лимит",
+        "levels": "Уровни",
+        "cost": "Цена",
+        "prosperityAtMax": "Процветание на максимуме",
+        "buffAtMax": "Бонус на макс. уровне",
+        "emptyTitle": "Подходящих украшений нет",
+        "emptyDescription": "Измените поиск, категорию или тип цены."
+    },
+    "costFilter": {
+        "any": "Любая цена",
+        "lifeEssence": "Life Essence",
+        "items": "Ресурсы",
+        "limited": "С лимитом",
+        "unknown": "Цены нет в данных"
+    },
+    "cost": {
+        "lifeEssence": "{amount} Life Essence",
+        "limited": "Нет, украшение с лимитом"
+    },
+    "detail": {
+        "title": "Подробности",
+        "category": "Категория",
+        "limit": "Лимит",
+        "cost": "Цена",
+        "levels": "Уровни",
+        "image": "Картинка",
+        "imageMissing": "Нет",
+        "levelsTitle": "Уровни: {name}",
+        "levelsMeta": "{count, plural, one {{amount} уровень} few {{amount} уровня} many {{amount} уровней} other {{amount} уровня}}",
+        "levelsTable": "Уровни украшения",
+        "level": "Уровень",
+        "levelCost": "Цена",
+        "prosperity": "Процветание",
+        "buff": "Бонус",
+        "noLevels": "В данных нет таблицы уровней для этого украшения."
+    }
 }

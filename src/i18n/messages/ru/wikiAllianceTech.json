@@ -1,54 +1,54 @@
 {
-  "line": "Технологий в трёх деревьях: {total} (Рост {growth}, Территория {territory}, Бой {battle}). Только справка, здесь ничего не сохраняется.",
-  "list": {
-    "title": "Узлы технологий",
-    "categoriesLabel": "Деревья технологий",
-    "categories": {
-      "all": "Все",
-      "Growth": "Рост",
-      "Territory": "Территория",
-      "Battle": "Бой"
+    "line": "Технологий в трёх деревьях: {total} (Рост {growth}, Территория {territory}, Бой {battle}). Только справка, здесь ничего не сохраняется.",
+    "list": {
+        "title": "Узлы технологий",
+        "categoriesLabel": "Деревья технологий",
+        "categories": {
+            "all": "Все",
+            "Growth": "Рост",
+            "Territory": "Территория",
+            "Battle": "Бой"
+        },
+        "search": "Поиск",
+        "searchPlaceholder": "Поиск технологий по названию или эффекту",
+        "tier": "Ступень",
+        "allTiers": "Все ступени",
+        "tierOption": "Ступень {tier}",
+        "empty": "Подходящих узлов технологий нет.",
+        "emptyHint": "Очистите поиск или фильтр.",
+        "columns": {
+            "tech": "Технология",
+            "category": "Категория",
+            "tier": "Ступень",
+            "levels": "Уровни",
+            "maxBonus": "Макс. бонус",
+            "cost": "Цена уровня 1",
+            "time": "Время уровня 1",
+            "requires": "Требуется для уровня 1"
+        },
+        "mobileMeta": "{category}, ступень {tier}, {levels}",
+        "count": "{count, plural, one {{amount} технология} few {{amount} технологии} many {{amount} технологий} other {{amount} технологии}}"
     },
-    "search": "Поиск",
-    "searchPlaceholder": "Поиск технологий по названию или эффекту",
-    "tier": "Ступень",
-    "allTiers": "Все ступени",
-    "tierOption": "Ступень {tier}",
-    "empty": "Подходящих узлов технологий нет.",
-    "emptyHint": "Очистите поиск или фильтр.",
-    "columns": {
-      "tech": "Технология",
-      "category": "Категория",
-      "tier": "Ступень",
-      "levels": "Уровни",
-      "maxBonus": "Макс. бонус",
-      "cost": "Цена уровня 1",
-      "time": "Время уровня 1",
-      "requires": "Требуется для уровня 1"
-    },
-    "mobileMeta": "{category}, ступень {tier}, {levels}",
-    "count": "{count, plural, one {{amount} технология} few {{amount} технологии} many {{amount} технологий} other {{amount} технологии}}"
-  },
-  "levels": "{count, plural, one {{amount} уровень} few {{amount} уровня} many {{amount} уровней} other {{amount} уровня}}",
-  "detail": {
-    "facts": "Подробности",
-    "levelsTitle": "Уровни",
-    "none": "Нет",
-    "fields": {
-      "category": "Категория",
-      "tier": "Ступень",
-      "effect": "Эффект",
-      "stat": "Характеристика",
-      "levels": "Уровни"
-    },
-    "columns": {
-      "level": "Уровень",
-      "bonus": "Бонус",
-      "cost": "Цена",
-      "time": "Время",
-      "requires": "Требуется"
-    },
-    "level": "Уровень {level}",
-    "requirement": "{name} уровня {level}"
-  }
+    "levels": "{count, plural, one {{amount} уровень} few {{amount} уровня} many {{amount} уровней} other {{amount} уровня}}",
+    "detail": {
+        "facts": "Подробности",
+        "levelsTitle": "Уровни",
+        "none": "Нет",
+        "fields": {
+            "category": "Категория",
+            "tier": "Ступень",
+            "effect": "Эффект",
+            "stat": "Характеристика",
+            "levels": "Уровни"
+        },
+        "columns": {
+            "level": "Уровень",
+            "bonus": "Бонус",
+            "cost": "Цена",
+            "time": "Время",
+            "requires": "Требуется"
+        },
+        "level": "Уровень {level}",
+        "requirement": "{name} уровня {level}"
+    }
 }

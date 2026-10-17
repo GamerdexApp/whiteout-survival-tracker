@@ -1,32 +1,32 @@
 {
-  "line": "패키지에는 앨범 {total}개 중 {have}개가 있어요. 각 앨범에는 버프, 완성 보상, 퍼즐 {puzzles}개가 있어요.",
-  "note": "나머지 앨범 {missing}개는 패키지에 추가되면 반영돼요.",
-  "albums": "앨범",
-  "puzzleCount": "{count, plural, other {퍼즐 {amount}개}}",
-  "pieceCount": "{count, plural, other {조각 {amount}개}}",
-  "view": {
-    "label": "보기",
-    "puzzles": "퍼즐",
-    "pieces": "전체 조각"
-  },
-  "album": {
-    "counts": "{puzzles}, {pieces}",
-    "buff": "완성 시 버프",
-    "buffValue": "{stat} {value}",
-    "rewards": "완성 보상",
-    "buffNote": "퍼즐 {puzzles}개를 모두 완성해야 버프가 적용돼요."
-  },
-  "puzzles": {
-    "title": "퍼즐",
-    "puzzle": "퍼즐",
-    "pieces": "조각",
-    "star": "별 {stars}",
-    "reward": "보상"
-  },
-  "allPieces": {
-    "title": "전체 조각",
-    "summary": "{puzzles} 중 {pieces}",
-    "imageNote": "조각 이미지는 패키지에서 가져와요. 이미지가 없는 조각은 빈 사각형으로 표시돼요.",
-    "stars": "{count, plural, other {별 {amount}개}}"
-  }
+    "line": "패키지에는 앨범 {total}개 중 {have}개가 있어요. 각 앨범에는 버프, 완성 보상, 퍼즐 {puzzles}개가 있어요.",
+    "note": "나머지 앨범 {missing}개는 패키지에 추가되면 반영돼요.",
+    "albums": "앨범",
+    "puzzleCount": "{count, plural, other {퍼즐 {amount}개}}",
+    "pieceCount": "{count, plural, other {조각 {amount}개}}",
+    "view": {
+        "label": "보기",
+        "puzzles": "퍼즐",
+        "pieces": "전체 조각"
+    },
+    "album": {
+        "counts": "{puzzles}, {pieces}",
+        "buff": "완성 시 버프",
+        "buffValue": "{stat} {value}",
+        "rewards": "완성 보상",
+        "buffNote": "퍼즐 {puzzles}개를 모두 완성해야 버프가 적용돼요."
+    },
+    "puzzles": {
+        "title": "퍼즐",
+        "puzzle": "퍼즐",
+        "pieces": "조각",
+        "star": "별 {stars}",
+        "reward": "보상"
+    },
+    "allPieces": {
+        "title": "전체 조각",
+        "summary": "{puzzles} 중 {pieces}",
+        "imageNote": "조각 이미지는 패키지에서 가져와요. 이미지가 없는 조각은 빈 사각형으로 표시돼요.",
+        "stars": "{count, plural, other {별 {amount}개}}"
+    }
 }

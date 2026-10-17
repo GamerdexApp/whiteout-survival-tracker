@@ -1,91 +1,91 @@
 {
-  "title": "Référence",
-  "subline": "Pages en lecture seule pour les données du jeu. Rien ici n'est enregistré.",
-  "status": "Les données sont encore en construction. Les valeurs qu'elles n'ont pas encore s'affichent comme Inconnu.",
-  "breadcrumb": "Wiki",
-  "openInTracker": "Ouvrir dans le tracker",
-  "unknown": "Inconnu",
-  "pages": {
-    "buildings": {
-      "title": "Bâtiments",
-      "description": "Chaque bâtiment et ses niveaux avec coût, durée, puissance et prérequis, plus les neuf installations."
+    "title": "Référence",
+    "subline": "Pages en lecture seule pour les données du jeu. Rien ici n'est enregistré.",
+    "status": "Les données sont encore en construction. Les valeurs qu'elles n'ont pas encore s'affichent comme Inconnu.",
+    "breadcrumb": "Wiki",
+    "openInTracker": "Ouvrir dans le tracker",
+    "unknown": "Inconnu",
+    "pages": {
+        "buildings": {
+            "title": "Bâtiments",
+            "description": "Chaque bâtiment et ses niveaux avec coût, durée, puissance et prérequis, plus les neuf installations."
+        },
+        "heroes": {
+            "title": "Héros",
+            "description": "La liste des héros avec stats, compétences, coûts en fragments, armes exclusives et widgets."
+        },
+        "heroGear": {
+            "title": "Tables d'équipement de héros",
+            "description": "Tables de renforcement, d'amplification, de forge de maîtrise et de stats pour l'équipement de héros."
+        },
+        "experts": {
+            "title": "Experts",
+            "description": "Les dix experts avec compétences, talents, niveaux d'affinité et étapes de relation."
+        },
+        "pets": {
+            "title": "Familiers",
+            "description": "Chaque familier avec sa compétence, sa table de niveaux, son coût en nourriture, ses stats et ses matériaux d'avancement."
+        },
+        "chiefGear": {
+            "title": "Équipement du chef",
+            "description": "Emplacements et paliers d'équipement avec puissance et score, plus les taux d'échange."
+        },
+        "chiefCharms": {
+            "title": "Charmes du chef",
+            "description": "Emplacements, niveaux et stades des charmes, plus les taux d'échange."
+        },
+        "troops": {
+            "title": "Troupes",
+            "description": "Les trois types de troupes et leurs douze paliers avec coût et durée d'entraînement."
+        },
+        "research": {
+            "title": "Arbre de recherche",
+            "description": "Nœuds de recherche par catégorie avec coûts de niveau, prérequis, bonus et durée."
+        },
+        "allianceTech": {
+            "title": "Technologie d'alliance",
+            "description": "Technologie d'alliance par catégorie et palier."
+        },
+        "allianceStructures": {
+            "title": "Structures d'alliance",
+            "description": "Bannières, installations de la carte, château, bastions et forteresses."
+        },
+        "daybreak": {
+            "title": "Daybreak Island",
+            "description": "Le Lumber Camp, le Tree of Life et chaque décoration."
+        },
+        "events": {
+            "title": "Événements",
+            "description": "Chaque événement du jeu avec phases, scores et récompenses."
+        },
+        "eventBuffs": {
+            "title": "Bonus d'événement",
+            "description": "Quelles sources de bonus s'appliquent à chaque mode de jeu."
+        },
+        "items": {
+            "title": "Objets",
+            "description": "Le catalogue d'objets par catégorie avec sources et taux de butin des coffres."
+        },
+        "skins": {
+            "title": "Skins",
+            "description": "La galerie de skins par type avec bonus et durée."
+        },
+        "vip": {
+            "title": "VIP",
+            "description": "Niveaux VIP 1 à 12 avec XP et les bonus qu'ils ajoutent."
+        },
+        "tundraAlbum": {
+            "title": "Tundra Album",
+            "description": "Albums avec leur bonus, récompenses de complétion, puzzles et pièces."
+        },
+        "dailies": {
+            "title": "Quotidiennes",
+            "description": "Missions du jeu, récompenses de la barre d'activité et tâches de routine."
+        }
     },
-    "heroes": {
-      "title": "Héros",
-      "description": "La liste des héros avec stats, compétences, coûts en fragments, armes exclusives et widgets."
-    },
-    "heroGear": {
-      "title": "Tables d'équipement de héros",
-      "description": "Tables de renforcement, d'amplification, de forge de maîtrise et de stats pour l'équipement de héros."
-    },
-    "experts": {
-      "title": "Experts",
-      "description": "Les dix experts avec compétences, talents, niveaux d'affinité et étapes de relation."
-    },
-    "pets": {
-      "title": "Familiers",
-      "description": "Chaque familier avec sa compétence, sa table de niveaux, son coût en nourriture, ses stats et ses matériaux d'avancement."
-    },
-    "chiefGear": {
-      "title": "Équipement du chef",
-      "description": "Emplacements et paliers d'équipement avec puissance et score, plus les taux d'échange."
-    },
-    "chiefCharms": {
-      "title": "Charmes du chef",
-      "description": "Emplacements, niveaux et stades des charmes, plus les taux d'échange."
-    },
-    "troops": {
-      "title": "Troupes",
-      "description": "Les trois types de troupes et leurs douze paliers avec coût et durée d'entraînement."
-    },
-    "research": {
-      "title": "Arbre de recherche",
-      "description": "Nœuds de recherche par catégorie avec coûts de niveau, prérequis, bonus et durée."
-    },
-    "allianceTech": {
-      "title": "Technologie d'alliance",
-      "description": "Technologie d'alliance par catégorie et palier."
-    },
-    "allianceStructures": {
-      "title": "Structures d'alliance",
-      "description": "Bannières, installations de la carte, château, bastions et forteresses."
-    },
-    "daybreak": {
-      "title": "Daybreak Island",
-      "description": "Le Lumber Camp, le Tree of Life et chaque décoration."
-    },
-    "events": {
-      "title": "Événements",
-      "description": "Chaque événement du jeu avec phases, scores et récompenses."
-    },
-    "eventBuffs": {
-      "title": "Bonus d'événement",
-      "description": "Quelles sources de bonus s'appliquent à chaque mode de jeu."
-    },
-    "items": {
-      "title": "Objets",
-      "description": "Le catalogue d'objets par catégorie avec sources et taux de butin des coffres."
-    },
-    "skins": {
-      "title": "Skins",
-      "description": "La galerie de skins par type avec bonus et durée."
-    },
-    "vip": {
-      "title": "VIP",
-      "description": "Niveaux VIP 1 à 12 avec XP et les bonus qu'ils ajoutent."
-    },
-    "tundraAlbum": {
-      "title": "Tundra Album",
-      "description": "Albums avec leur bonus, récompenses de complétion, puzzles et pièces."
-    },
-    "dailies": {
-      "title": "Quotidiennes",
-      "description": "Missions du jeu, récompenses de la barre d'activité et tâches de routine."
+    "recordMissing": {
+        "title": "Fiche introuvable",
+        "description": "Les données n'ont aucune fiche à cette adresse.",
+        "back": "Retour à {page}"
     }
-  },
-  "recordMissing": {
-    "title": "Fiche introuvable",
-    "description": "Les données n'ont aucune fiche à cette adresse.",
-    "back": "Retour à {page}"
-  }
 }

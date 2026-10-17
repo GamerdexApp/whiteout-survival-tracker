@@ -1,50 +1,50 @@
 {
-  "page": {
-    "title": "联盟"
-  },
-  "view": {
-    "subline": "{chief} · {details} · 旗帜等级{level}"
-  },
-  "banner": {
-    "title": "联盟旗帜",
-    "currentLevel": "当前等级",
-    "levelLabel": "旗帜等级",
-    "maxHint": "0 到{max}的整数等级。",
-    "rangeChip": "{range}",
-    "costHeading": "{range}中每级的费用",
-    "noTimeOrPower": "数据包中旗帜没有建造时间或战力，因此不显示。",
-    "noCost": "无费用",
-    "none": "无",
-    "lower": "降低旗帜等级",
-    "raise": "提高旗帜等级"
-  },
-  "structures": {
-    "title": "联盟建筑",
-    "tech": {
-      "title": "科技",
-      "description": "成长、领地和战斗共{count}个节点",
-      "status": "{maxed}个已满级，{progress}个进行中，{locked}个未解锁"
+    "page": {
+        "title": "联盟"
     },
-    "facilities": {
-      "title": "设施",
-      "description": "{count}个地图设施",
-      "owned": "已拥有{owned}"
+    "view": {
+        "subline": "{chief} · {details} · 旗帜等级{level}"
     },
-    "fortresses": {
-      "title": "要塞",
-      "description": "Castle，{strongholds}个据点，{fortresses}个要塞",
-      "reference": "仅供参考"
+    "banner": {
+        "title": "联盟旗帜",
+        "currentLevel": "当前等级",
+        "levelLabel": "旗帜等级",
+        "maxHint": "0 到{max}的整数等级。",
+        "rangeChip": "{range}",
+        "costHeading": "{range}中每级的费用",
+        "noTimeOrPower": "数据包中旗帜没有建造时间或战力，因此不显示。",
+        "noCost": "无费用",
+        "none": "无",
+        "lower": "降低旗帜等级",
+        "raise": "提高旗帜等级"
+    },
+    "structures": {
+        "title": "联盟建筑",
+        "tech": {
+            "title": "科技",
+            "description": "成长、领地和战斗共{count}个节点",
+            "status": "{maxed}个已满级，{progress}个进行中，{locked}个未解锁"
+        },
+        "facilities": {
+            "title": "设施",
+            "description": "{count}个地图设施",
+            "owned": "已拥有{owned}"
+        },
+        "fortresses": {
+            "title": "要塞",
+            "description": "Castle，{strongholds}个据点，{fortresses}个要塞",
+            "reference": "仅供参考"
+        }
+    },
+    "table": {
+        "title": "按等级范围的旗帜费用",
+        "note": "共{count}个范围，同一范围内每级费用相同",
+        "range": "范围",
+        "state": "状态",
+        "built": "已建造",
+        "current": "当前",
+        "notBuilt": "未建造",
+        "none": "无",
+        "noCost": "无费用"
     }
-  },
-  "table": {
-    "title": "按等级范围的旗帜费用",
-    "note": "共{count}个范围，同一范围内每级费用相同",
-    "range": "范围",
-    "state": "状态",
-    "built": "已建造",
-    "current": "当前",
-    "notBuilt": "未建造",
-    "none": "无",
-    "noCost": "无费用"
-  }
 }

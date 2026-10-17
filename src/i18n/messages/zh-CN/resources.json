@@ -1,88 +1,88 @@
 {
-  "title": "资源",
-  "all": "全部",
-  "owned": "已拥有",
-  "sources": "来源",
-  "sourcesUnknown": "来源未知",
-  "done": "完成",
-  "undo": "撤销",
-  "list": {
-    "separator": "、",
-    "andLast": "{rest}和{last}"
-  },
-  "countControl": {
-    "remove": "减少{step} {name}",
-    "add": "增加{step} {name}",
-    "owned": "已有{name}"
-  },
-  "itemRow": {
-    "owned": "已有"
-  },
-  "itemSheet": {
-    "title": "编辑已有数量",
-    "step": "步长",
-    "setToZero": "设为 0",
-    "description": "说明",
-    "unknown": "未知"
-  },
-  "view": {
-    "subline": "{categories}个分类共{items}个道具",
-    "sublineInCategory": "{categories}个分类共{items}个道具 · {category}中有{inCategory}个",
-    "unsaved": "未保存",
-    "shortagesLink": "打开建筑计划",
-    "shortages": "规划目标缺少{names}。",
-    "show": {
-      "label": "显示",
-      "owned": "已拥有",
-      "unknown": "来源未知"
+    "title": "资源",
+    "all": "全部",
+    "owned": "已拥有",
+    "sources": "来源",
+    "sourcesUnknown": "来源未知",
+    "done": "完成",
+    "undo": "撤销",
+    "list": {
+        "separator": "、",
+        "andLast": "{rest}和{last}"
     },
-    "speedups": {
-      "none": "无",
-      "noneOwned": "没有加速道具",
-      "owned": "{minutes}分：{parts}",
-      "part": "{count} x {name}",
-      "partSeparator": " + ",
-      "types": {
-        "general": "通用",
-        "construction": "建造",
-        "troop": "训练",
-        "research": "研究",
-        "learning": "学习",
-        "healing": "治疗"
-      }
+    "countControl": {
+        "remove": "减少{step} {name}",
+        "add": "增加{step} {name}",
+        "owned": "已有{name}"
     },
-    "search": {
-      "label": "搜索道具",
-      "placeholder": "搜索{total}个道具"
+    "itemRow": {
+        "owned": "已有"
     },
-    "setSeveral": "批量设置",
-    "showing": {
-      "several": "显示{visible} / {total}个道具。批量设置已开启。点击保存更改之前，修改不会生效。",
-      "instant": "显示{visible} / {total}个道具。每次更改都会立即保存。"
+    "itemSheet": {
+        "title": "编辑已有数量",
+        "step": "步长",
+        "setToZero": "设为 0",
+        "description": "说明",
+        "unknown": "未知"
     },
-    "empty": {
-      "title": "没有匹配的道具",
-      "description": "修改搜索、分类或显示筛选。",
-      "reset": "重置筛选"
+    "view": {
+        "subline": "{categories}个分类共{items}个道具",
+        "sublineInCategory": "{categories}个分类共{items}个道具 · {category}中有{inCategory}个",
+        "unsaved": "未保存",
+        "shortagesLink": "打开建筑计划",
+        "shortages": "规划目标缺少{names}。",
+        "show": {
+            "label": "显示",
+            "owned": "已拥有",
+            "unknown": "来源未知"
+        },
+        "speedups": {
+            "none": "无",
+            "noneOwned": "没有加速道具",
+            "owned": "{minutes}分：{parts}",
+            "part": "{count} x {name}",
+            "partSeparator": " + ",
+            "types": {
+                "general": "通用",
+                "construction": "建造",
+                "troop": "训练",
+                "research": "研究",
+                "learning": "学习",
+                "healing": "治疗"
+            }
+        },
+        "search": {
+            "label": "搜索道具",
+            "placeholder": "搜索{total}个道具"
+        },
+        "setSeveral": "批量设置",
+        "showing": {
+            "several": "显示{visible} / {total}个道具。批量设置已开启。点击保存更改之前，修改不会生效。",
+            "instant": "显示{visible} / {total}个道具。每次更改都会立即保存。"
+        },
+        "empty": {
+            "title": "没有匹配的道具",
+            "description": "修改搜索、分类或显示筛选。",
+            "reset": "重置筛选"
+        },
+        "columns": {
+            "item": "道具"
+        },
+        "bar": {
+            "noChanges": "没有未保存的更改",
+            "changes": "{count, plural, other {{amount}项未保存的更改}}",
+            "discard": "放弃",
+            "save": "保存更改"
+        },
+        "toast": {
+            "setToZero": "已将{name}设为 0",
+            "savedTitle": "数量已保存",
+            "savedMessage": "{count, plural, other {已更改{amount}项数量}}。"
+        }
     },
-    "columns": {
-      "item": "道具"
-    },
-    "bar": {
-      "noChanges": "没有未保存的更改",
-      "changes": "{count, plural, other {{amount}项未保存的更改}}",
-      "discard": "放弃",
-      "save": "保存更改"
-    },
-    "toast": {
-      "setToZero": "已将{name}设为 0",
-      "savedTitle": "数量已保存",
-      "savedMessage": "{count, plural, other {已更改{amount}项数量}}。"
+    "planStock": {
+        "constructionTime": "建造时间，折合加速",
+        "researchTime": "研究时间，折合加速",
+        "minutesUnit": "分"
     }
-  },
-  "planStock": {
-    "constructionTime": "建造时间，折合加速",
-    "researchTime": "研究时间，折合加速",
-    "minutesUnit": "分"
-  }
 }

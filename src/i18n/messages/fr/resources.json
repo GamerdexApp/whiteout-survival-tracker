@@ -1,88 +1,88 @@
 {
-  "title": "Ressources",
-  "all": "Tous",
-  "owned": "Possédés",
-  "sources": "Sources",
-  "sourcesUnknown": "Sources inconnues",
-  "done": "Terminé",
-  "undo": "Annuler",
-  "list": {
-    "separator": ", ",
-    "andLast": "{rest} et {last}"
-  },
-  "countControl": {
-    "remove": "Retirer {step} {name}",
-    "add": "Ajouter {step} {name}",
-    "owned": "{name} possédé"
-  },
-  "itemRow": {
-    "owned": "possédé"
-  },
-  "itemSheet": {
-    "title": "Modifier la quantité possédée",
-    "step": "Pas",
-    "setToZero": "Mettre à 0",
-    "description": "Description",
-    "unknown": "Inconnu"
-  },
-  "view": {
-    "subline": "{items} objets dans {categories} catégories",
-    "sublineInCategory": "{items} objets dans {categories} catégories · {inCategory} dans {category}",
-    "unsaved": "Non enregistré",
-    "shortages": "Les objectifs du planificateur manquent de {names}.",
-    "shortagesLink": "Ouvrir le plan des Bâtiments",
-    "show": {
-      "label": "Afficher",
-      "owned": "Possédés",
-      "unknown": "Sources inconnues"
+    "title": "Ressources",
+    "all": "Tous",
+    "owned": "Possédés",
+    "sources": "Sources",
+    "sourcesUnknown": "Sources inconnues",
+    "done": "Terminé",
+    "undo": "Annuler",
+    "list": {
+        "separator": ", ",
+        "andLast": "{rest} et {last}"
     },
-    "speedups": {
-      "none": "Aucune",
-      "noneOwned": "Aucune accélération possédée",
-      "owned": "{minutes} min : {parts}",
-      "part": "{count} x {name}",
-      "partSeparator": " + ",
-      "types": {
-        "general": "Générale",
-        "construction": "Construction",
-        "troop": "Entraînement des troupes",
-        "research": "Recherche",
-        "learning": "Apprentissage",
-        "healing": "Soins"
-      }
+    "countControl": {
+        "remove": "Retirer {step} {name}",
+        "add": "Ajouter {step} {name}",
+        "owned": "{name} possédé"
     },
-    "search": {
-      "label": "Rechercher des objets",
-      "placeholder": "Rechercher parmi {total} objets"
+    "itemRow": {
+        "owned": "possédé"
     },
-    "setSeveral": "Régler plusieurs",
-    "showing": {
-      "several": "{visible} objets affichés sur {total}. Régler plusieurs est activé. Les changements attendent que vous appuyiez sur Enregistrer.",
-      "instant": "{visible} objets affichés sur {total}. Chaque modification est enregistrée aussitôt."
+    "itemSheet": {
+        "title": "Modifier la quantité possédée",
+        "step": "Pas",
+        "setToZero": "Mettre à 0",
+        "description": "Description",
+        "unknown": "Inconnu"
     },
-    "empty": {
-      "title": "Aucun objet ne correspond",
-      "description": "Modifiez la recherche, la catégorie ou le filtre Afficher.",
-      "reset": "Réinitialiser les filtres"
+    "view": {
+        "subline": "{items} objets dans {categories} catégories",
+        "sublineInCategory": "{items} objets dans {categories} catégories · {inCategory} dans {category}",
+        "unsaved": "Non enregistré",
+        "shortages": "Les objectifs du planificateur manquent de {names}.",
+        "shortagesLink": "Ouvrir le plan des Bâtiments",
+        "show": {
+            "label": "Afficher",
+            "owned": "Possédés",
+            "unknown": "Sources inconnues"
+        },
+        "speedups": {
+            "none": "Aucune",
+            "noneOwned": "Aucune accélération possédée",
+            "owned": "{minutes} min : {parts}",
+            "part": "{count} x {name}",
+            "partSeparator": " + ",
+            "types": {
+                "general": "Générale",
+                "construction": "Construction",
+                "troop": "Entraînement des troupes",
+                "research": "Recherche",
+                "learning": "Apprentissage",
+                "healing": "Soins"
+            }
+        },
+        "search": {
+            "label": "Rechercher des objets",
+            "placeholder": "Rechercher parmi {total} objets"
+        },
+        "setSeveral": "Régler plusieurs",
+        "showing": {
+            "several": "{visible} objets affichés sur {total}. Régler plusieurs est activé. Les changements attendent que vous appuyiez sur Enregistrer.",
+            "instant": "{visible} objets affichés sur {total}. Chaque modification est enregistrée aussitôt."
+        },
+        "empty": {
+            "title": "Aucun objet ne correspond",
+            "description": "Modifiez la recherche, la catégorie ou le filtre Afficher.",
+            "reset": "Réinitialiser les filtres"
+        },
+        "columns": {
+            "item": "Objet"
+        },
+        "bar": {
+            "noChanges": "Aucune modification non enregistrée",
+            "changes": "{count, plural, one {{amount} modification non enregistrée} other {{amount} modifications non enregistrées}}",
+            "discard": "Abandonner",
+            "save": "Enregistrer"
+        },
+        "toast": {
+            "setToZero": "{name} mis à 0",
+            "savedTitle": "Quantités enregistrées",
+            "savedMessage": "{count, plural, one {{amount} quantité modifiée} other {{amount} quantités modifiées}}."
+        }
     },
-    "columns": {
-      "item": "Objet"
-    },
-    "bar": {
-      "noChanges": "Aucune modification non enregistrée",
-      "changes": "{count, plural, one {{amount} modification non enregistrée} other {{amount} modifications non enregistrées}}",
-      "discard": "Abandonner",
-      "save": "Enregistrer"
-    },
-    "toast": {
-      "setToZero": "{name} mis à 0",
-      "savedTitle": "Quantités enregistrées",
-      "savedMessage": "{count, plural, one {{amount} quantité modifiée} other {{amount} quantités modifiées}}."
+    "planStock": {
+        "constructionTime": "Durée de construction, en accélérations",
+        "researchTime": "Durée de recherche, en accélérations",
+        "minutesUnit": "min"
     }
-  },
-  "planStock": {
-    "constructionTime": "Durée de construction, en accélérations",
-    "researchTime": "Durée de recherche, en accélérations",
-    "minutesUnit": "min"
-  }
 }

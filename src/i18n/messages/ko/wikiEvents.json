@@ -1,145 +1,145 @@
 {
-  "line": "이벤트 {events}개: 연맹 {alliance}개, 솔로 {solo}개, 초보 {rookie}개, 휴일 {holiday}개. 패키지에 있는 단계, 점수, 보상, 팁, 상점, 순위를 보여줘요.",
-  "list": {
-    "title": "이벤트",
-    "showing": "{total}개 중 {shown}개 표시",
-    "search": "검색",
-    "searchPlaceholder": "이름으로 이벤트 검색",
-    "scoringFilter": "점수 방식",
-    "categoryLabel": "분류",
-    "all": "전체",
-    "table": "이벤트",
-    "event": "이벤트",
-    "category": "분류",
-    "frequency": "빈도(자유 입력)",
-    "duration": "지속 기간(자유 입력)",
-    "scoringRows": "점수 항목",
-    "noScoringRows": "점수 항목 없음",
-    "emptyTitle": "일치하는 이벤트가 없어요",
-    "emptyDescription": "검색어, 분류, 점수 방식을 바꿔보세요."
-  },
-  "category": {
-    "alliance": "연맹",
-    "solo": "솔로",
-    "rookie": "초보",
-    "holiday": "휴일"
-  },
-  "scoring": {
-    "any": "모든 점수 방식",
-    "ranking": "순위",
-    "tier": "단계",
-    "milestones": "이정표",
-    "waves": "웨이브",
-    "participation": "참여"
-  },
-  "parts": {
-    "days": "{count, plural, other {{amount}일}}",
-    "tiers": "{count, plural, other {{amount}단계}}",
-    "missions": "{count, plural, other {임무 {amount}개}}",
-    "waves": "{count, plural, other {웨이브 {amount}개}}",
-    "versions": "{count, plural, other {버전 {amount}개}}",
-    "levels": "{count, plural, other {{amount}레벨}}"
-  },
-  "detail": {
-    "title": "상세",
-    "category": "분류",
-    "frequency": "빈도",
-    "duration": "지속 기간",
-    "summary": "요약",
-    "requirements": "조건",
-    "scoring": "점수",
-    "noRequirements": "없음"
-  },
-  "phases": {
-    "title": "단계",
-    "table": "이벤트 단계",
-    "phase": "단계",
-    "description": "설명"
-  },
-  "scoringRows": {
-    "title": "점수 항목: {name}",
-    "table": "점수 행동",
-    "action": "행동",
-    "points": "점수",
-    "victoryPoints": "승리 점수 {amount}",
-    "milestones": "{name}의 이정표",
-    "allianceMilestones": "{name}의 연맹 이정표"
-  },
-  "missions": {
-    "title": "임무",
-    "table": "이벤트 임무",
-    "mission": "임무",
-    "group": "그룹",
-    "points": "점수",
-    "rewards": "보상"
-  },
-  "tiers": {
-    "title": "단계",
-    "table": "이벤트 단계",
-    "tier": "단계",
-    "score": "목표",
-    "scoreValue": "{amount} {unit}",
-    "scoreValuePoints": "{amount}점",
-    "rewards": "보상",
-    "note": "메모"
-  },
-  "rankings": {
-    "title": "순위 보상",
-    "personal": "개인 순위 보상",
-    "alliance": "연맹 순위 보상",
-    "basedOn": "{basis} 기준 순위 보상",
-    "table": "순위 보상",
-    "rank": "순위",
-    "starChange": "별 변화",
-    "rewards": "보상"
-  },
-  "rewards": {
-    "title": "보상",
-    "partial": "이 보상 목록은 완전하지 않아요.",
-    "amountName": "{name} {amount}"
-  },
-  "pointLevels": {
-    "title": "점수 레벨",
-    "table": "점수 레벨",
-    "level": "레벨",
-    "personal": "개인 점수",
-    "alliance": "연맹 점수",
-    "rewards": "보상"
-  },
-  "waves": {
-    "title": "웨이브",
-    "table": "공격 웨이브",
-    "wave": "웨이브",
-    "target": "목표",
-    "rule": "규칙",
-    "city": "도시",
-    "headquarters": "본부"
-  },
-  "zones": {
-    "title": "구역",
-    "table": "이벤트 구역",
-    "zone": "구역",
-    "days": "일차",
-    "statSources": "능력치 출처",
-    "unlock": "해금"
-  },
-  "shop": {
-    "title": "상점",
-    "titleNamed": "상점: {name}",
-    "table": "상점 상품",
-    "offer": "상품",
-    "cost": "비용",
-    "costValue": "{currency} {amount}",
-    "limit": "한도",
-    "contents": "구성"
-  },
-  "versions": {
-    "title": "{name}",
-    "missions": "임무",
-    "chests": "상자"
-  },
-  "tips": {
-    "title": "팁"
-  },
-  "recordLine": "단계, 점수, 보상, 순위가 있는 {category} 이벤트."
+    "line": "이벤트 {events}개: 연맹 {alliance}개, 솔로 {solo}개, 초보 {rookie}개, 휴일 {holiday}개. 패키지에 있는 단계, 점수, 보상, 팁, 상점, 순위를 보여줘요.",
+    "list": {
+        "title": "이벤트",
+        "showing": "{total}개 중 {shown}개 표시",
+        "search": "검색",
+        "searchPlaceholder": "이름으로 이벤트 검색",
+        "scoringFilter": "점수 방식",
+        "categoryLabel": "분류",
+        "all": "전체",
+        "table": "이벤트",
+        "event": "이벤트",
+        "category": "분류",
+        "frequency": "빈도(자유 입력)",
+        "duration": "지속 기간(자유 입력)",
+        "scoringRows": "점수 항목",
+        "noScoringRows": "점수 항목 없음",
+        "emptyTitle": "일치하는 이벤트가 없어요",
+        "emptyDescription": "검색어, 분류, 점수 방식을 바꿔보세요."
+    },
+    "category": {
+        "alliance": "연맹",
+        "solo": "솔로",
+        "rookie": "초보",
+        "holiday": "휴일"
+    },
+    "scoring": {
+        "any": "모든 점수 방식",
+        "ranking": "순위",
+        "tier": "단계",
+        "milestones": "이정표",
+        "waves": "웨이브",
+        "participation": "참여"
+    },
+    "parts": {
+        "days": "{count, plural, other {{amount}일}}",
+        "tiers": "{count, plural, other {{amount}단계}}",
+        "missions": "{count, plural, other {임무 {amount}개}}",
+        "waves": "{count, plural, other {웨이브 {amount}개}}",
+        "versions": "{count, plural, other {버전 {amount}개}}",
+        "levels": "{count, plural, other {{amount}레벨}}"
+    },
+    "detail": {
+        "title": "상세",
+        "category": "분류",
+        "frequency": "빈도",
+        "duration": "지속 기간",
+        "summary": "요약",
+        "requirements": "조건",
+        "scoring": "점수",
+        "noRequirements": "없음"
+    },
+    "phases": {
+        "title": "단계",
+        "table": "이벤트 단계",
+        "phase": "단계",
+        "description": "설명"
+    },
+    "scoringRows": {
+        "title": "점수 항목: {name}",
+        "table": "점수 행동",
+        "action": "행동",
+        "points": "점수",
+        "victoryPoints": "승리 점수 {amount}",
+        "milestones": "{name}의 이정표",
+        "allianceMilestones": "{name}의 연맹 이정표"
+    },
+    "missions": {
+        "title": "임무",
+        "table": "이벤트 임무",
+        "mission": "임무",
+        "group": "그룹",
+        "points": "점수",
+        "rewards": "보상"
+    },
+    "tiers": {
+        "title": "단계",
+        "table": "이벤트 단계",
+        "tier": "단계",
+        "score": "목표",
+        "scoreValue": "{amount} {unit}",
+        "scoreValuePoints": "{amount}점",
+        "rewards": "보상",
+        "note": "메모"
+    },
+    "rankings": {
+        "title": "순위 보상",
+        "personal": "개인 순위 보상",
+        "alliance": "연맹 순위 보상",
+        "basedOn": "{basis} 기준 순위 보상",
+        "table": "순위 보상",
+        "rank": "순위",
+        "starChange": "별 변화",
+        "rewards": "보상"
+    },
+    "rewards": {
+        "title": "보상",
+        "partial": "이 보상 목록은 완전하지 않아요.",
+        "amountName": "{name} {amount}"
+    },
+    "pointLevels": {
+        "title": "점수 레벨",
+        "table": "점수 레벨",
+        "level": "레벨",
+        "personal": "개인 점수",
+        "alliance": "연맹 점수",
+        "rewards": "보상"
+    },
+    "waves": {
+        "title": "웨이브",
+        "table": "공격 웨이브",
+        "wave": "웨이브",
+        "target": "목표",
+        "rule": "규칙",
+        "city": "도시",
+        "headquarters": "본부"
+    },
+    "zones": {
+        "title": "구역",
+        "table": "이벤트 구역",
+        "zone": "구역",
+        "days": "일차",
+        "statSources": "능력치 출처",
+        "unlock": "해금"
+    },
+    "shop": {
+        "title": "상점",
+        "titleNamed": "상점: {name}",
+        "table": "상점 상품",
+        "offer": "상품",
+        "cost": "비용",
+        "costValue": "{currency} {amount}",
+        "limit": "한도",
+        "contents": "구성"
+    },
+    "versions": {
+        "title": "{name}",
+        "missions": "임무",
+        "chests": "상자"
+    },
+    "tips": {
+        "title": "팁"
+    },
+    "recordLine": "단계, 점수, 보상, 순위가 있는 {category} 이벤트."
 }

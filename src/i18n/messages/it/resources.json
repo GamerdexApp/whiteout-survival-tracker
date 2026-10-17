@@ -1,88 +1,88 @@
 {
-  "title": "Risorse",
-  "all": "Tutti",
-  "owned": "Posseduti",
-  "sources": "Fonti",
-  "sourcesUnknown": "Fonti sconosciute",
-  "done": "Fatto",
-  "undo": "Annulla",
-  "list": {
-    "separator": ", ",
-    "andLast": "{rest} e {last}"
-  },
-  "countControl": {
-    "remove": "Rimuovi {step} {name}",
-    "add": "Aggiungi {step} {name}",
-    "owned": "{name} posseduti"
-  },
-  "itemRow": {
-    "owned": "posseduti"
-  },
-  "itemSheet": {
-    "title": "Modifica quantità posseduta",
-    "step": "Passo",
-    "setToZero": "Imposta a 0",
-    "description": "Descrizione",
-    "unknown": "Sconosciuto"
-  },
-  "view": {
-    "subline": "{items} oggetti in {categories} categorie",
-    "sublineInCategory": "{items} oggetti in {categories} categorie · {inCategory} in {category}",
-    "unsaved": "Non salvato",
-    "shortages": "Gli obiettivi del pianificatore sono scarsi di {names}.",
-    "shortagesLink": "Apri il piano di Edifici",
-    "show": {
-      "label": "Mostra",
-      "owned": "Posseduti",
-      "unknown": "Fonti sconosciute"
+    "title": "Risorse",
+    "all": "Tutti",
+    "owned": "Posseduti",
+    "sources": "Fonti",
+    "sourcesUnknown": "Fonti sconosciute",
+    "done": "Fatto",
+    "undo": "Annulla",
+    "list": {
+        "separator": ", ",
+        "andLast": "{rest} e {last}"
     },
-    "speedups": {
-      "none": "Nessuna",
-      "noneOwned": "Nessuna accelerazione posseduta",
-      "owned": "{minutes} min: {parts}",
-      "part": "{count} x {name}",
-      "partSeparator": " + ",
-      "types": {
-        "general": "Generale",
-        "construction": "Costruzione",
-        "troop": "Addestramento truppe",
-        "research": "Ricerca",
-        "learning": "Apprendimento",
-        "healing": "Cura"
-      }
+    "countControl": {
+        "remove": "Rimuovi {step} {name}",
+        "add": "Aggiungi {step} {name}",
+        "owned": "{name} posseduti"
     },
-    "search": {
-      "label": "Cerca oggetti",
-      "placeholder": "Cerca tra {total} oggetti"
+    "itemRow": {
+        "owned": "posseduti"
     },
-    "setSeveral": "Imposta più voci",
-    "showing": {
-      "several": "Mostrati {visible} oggetti su {total}. Imposta più voci è attivo. Le modifiche aspettano che premi Salva modifiche.",
-      "instant": "Mostrati {visible} oggetti su {total}. Ogni modifica si salva subito."
+    "itemSheet": {
+        "title": "Modifica quantità posseduta",
+        "step": "Passo",
+        "setToZero": "Imposta a 0",
+        "description": "Descrizione",
+        "unknown": "Sconosciuto"
     },
-    "empty": {
-      "title": "Nessun oggetto corrisponde",
-      "description": "Cambia la ricerca, la categoria o il filtro Mostra.",
-      "reset": "Azzera filtri"
+    "view": {
+        "subline": "{items} oggetti in {categories} categorie",
+        "sublineInCategory": "{items} oggetti in {categories} categorie · {inCategory} in {category}",
+        "unsaved": "Non salvato",
+        "shortages": "Gli obiettivi del pianificatore sono scarsi di {names}.",
+        "shortagesLink": "Apri il piano di Edifici",
+        "show": {
+            "label": "Mostra",
+            "owned": "Posseduti",
+            "unknown": "Fonti sconosciute"
+        },
+        "speedups": {
+            "none": "Nessuna",
+            "noneOwned": "Nessuna accelerazione posseduta",
+            "owned": "{minutes} min: {parts}",
+            "part": "{count} x {name}",
+            "partSeparator": " + ",
+            "types": {
+                "general": "Generale",
+                "construction": "Costruzione",
+                "troop": "Addestramento truppe",
+                "research": "Ricerca",
+                "learning": "Apprendimento",
+                "healing": "Cura"
+            }
+        },
+        "search": {
+            "label": "Cerca oggetti",
+            "placeholder": "Cerca tra {total} oggetti"
+        },
+        "setSeveral": "Imposta più voci",
+        "showing": {
+            "several": "Mostrati {visible} oggetti su {total}. Imposta più voci è attivo. Le modifiche aspettano che premi Salva modifiche.",
+            "instant": "Mostrati {visible} oggetti su {total}. Ogni modifica si salva subito."
+        },
+        "empty": {
+            "title": "Nessun oggetto corrisponde",
+            "description": "Cambia la ricerca, la categoria o il filtro Mostra.",
+            "reset": "Azzera filtri"
+        },
+        "columns": {
+            "item": "Oggetto"
+        },
+        "bar": {
+            "noChanges": "Nessuna modifica non salvata",
+            "changes": "{count, plural, one {{amount} modifica non salvata} other {{amount} modifiche non salvate}}",
+            "discard": "Scarta",
+            "save": "Salva modifiche"
+        },
+        "toast": {
+            "setToZero": "{name} impostato a 0",
+            "savedTitle": "Quantità salvate",
+            "savedMessage": "{count, plural, one {{amount} quantità cambiata} other {{amount} quantità cambiate}}."
+        }
     },
-    "columns": {
-      "item": "Oggetto"
-    },
-    "bar": {
-      "noChanges": "Nessuna modifica non salvata",
-      "changes": "{count, plural, one {{amount} modifica non salvata} other {{amount} modifiche non salvate}}",
-      "discard": "Scarta",
-      "save": "Salva modifiche"
-    },
-    "toast": {
-      "setToZero": "{name} impostato a 0",
-      "savedTitle": "Quantità salvate",
-      "savedMessage": "{count, plural, one {{amount} quantità cambiata} other {{amount} quantità cambiate}}."
+    "planStock": {
+        "constructionTime": "Tempo di costruzione, in accelerazioni",
+        "researchTime": "Tempo di ricerca, in accelerazioni",
+        "minutesUnit": "min"
     }
-  },
-  "planStock": {
-    "constructionTime": "Tempo di costruzione, in accelerazioni",
-    "researchTime": "Tempo di ricerca, in accelerazioni",
-    "minutesUnit": "min"
-  }
 }

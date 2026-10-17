@@ -1,88 +1,88 @@
 {
-  "title": "Recursos",
-  "all": "Todos",
-  "owned": "Obtidos",
-  "sources": "Fontes",
-  "sourcesUnknown": "Fontes desconhecidas",
-  "done": "Concluído",
-  "undo": "Anular",
-  "list": {
-    "separator": ", ",
-    "andLast": "{rest} e {last}"
-  },
-  "countControl": {
-    "remove": "Remover {step} {name}",
-    "add": "Adicionar {step} {name}",
-    "owned": "{name} obtidos"
-  },
-  "itemRow": {
-    "owned": "obtidos"
-  },
-  "itemSheet": {
-    "title": "Editar quantidade obtida",
-    "step": "Passo",
-    "setToZero": "Pôr a 0",
-    "description": "Descrição",
-    "unknown": "Desconhecido"
-  },
-  "view": {
-    "subline": "{items} itens em {categories} categorias",
-    "sublineInCategory": "{items} itens em {categories} categorias · {inCategory} em {category}",
-    "unsaved": "Por guardar",
-    "shortages": "Os objetivos do planeamento têm falta de {names}.",
-    "shortagesLink": "Abrir o plano de Edifícios",
-    "show": {
-      "label": "Mostrar",
-      "owned": "Obtidos",
-      "unknown": "Fontes desconhecidas"
+    "title": "Recursos",
+    "all": "Todos",
+    "owned": "Obtidos",
+    "sources": "Fontes",
+    "sourcesUnknown": "Fontes desconhecidas",
+    "done": "Concluído",
+    "undo": "Anular",
+    "list": {
+        "separator": ", ",
+        "andLast": "{rest} e {last}"
     },
-    "speedups": {
-      "none": "Nenhum",
-      "noneOwned": "Nenhum acelerador obtido",
-      "owned": "{minutes} min: {parts}",
-      "part": "{count} x {name}",
-      "partSeparator": " + ",
-      "types": {
-        "general": "Geral",
-        "construction": "Construção",
-        "troop": "Treino de tropas",
-        "research": "Investigação",
-        "learning": "Aprendizagem",
-        "healing": "Cura"
-      }
+    "countControl": {
+        "remove": "Remover {step} {name}",
+        "add": "Adicionar {step} {name}",
+        "owned": "{name} obtidos"
     },
-    "search": {
-      "label": "Pesquisar itens",
-      "placeholder": "Pesquisar {total} itens"
+    "itemRow": {
+        "owned": "obtidos"
     },
-    "setSeveral": "Definir vários",
-    "showing": {
-      "several": "A mostrar {visible} de {total} itens. Definir vários está ativo. As alterações esperam até premir Guardar alterações.",
-      "instant": "A mostrar {visible} de {total} itens. Cada alteração é guardada de imediato."
+    "itemSheet": {
+        "title": "Editar quantidade obtida",
+        "step": "Passo",
+        "setToZero": "Pôr a 0",
+        "description": "Descrição",
+        "unknown": "Desconhecido"
     },
-    "empty": {
-      "title": "Nenhum item corresponde",
-      "description": "Alterar a pesquisa, a categoria ou o filtro Mostrar.",
-      "reset": "Repor filtros"
+    "view": {
+        "subline": "{items} itens em {categories} categorias",
+        "sublineInCategory": "{items} itens em {categories} categorias · {inCategory} em {category}",
+        "unsaved": "Por guardar",
+        "shortages": "Os objetivos do planeamento têm falta de {names}.",
+        "shortagesLink": "Abrir o plano de Edifícios",
+        "show": {
+            "label": "Mostrar",
+            "owned": "Obtidos",
+            "unknown": "Fontes desconhecidas"
+        },
+        "speedups": {
+            "none": "Nenhum",
+            "noneOwned": "Nenhum acelerador obtido",
+            "owned": "{minutes} min: {parts}",
+            "part": "{count} x {name}",
+            "partSeparator": " + ",
+            "types": {
+                "general": "Geral",
+                "construction": "Construção",
+                "troop": "Treino de tropas",
+                "research": "Investigação",
+                "learning": "Aprendizagem",
+                "healing": "Cura"
+            }
+        },
+        "search": {
+            "label": "Pesquisar itens",
+            "placeholder": "Pesquisar {total} itens"
+        },
+        "setSeveral": "Definir vários",
+        "showing": {
+            "several": "A mostrar {visible} de {total} itens. Definir vários está ativo. As alterações esperam até premir Guardar alterações.",
+            "instant": "A mostrar {visible} de {total} itens. Cada alteração é guardada de imediato."
+        },
+        "empty": {
+            "title": "Nenhum item corresponde",
+            "description": "Alterar a pesquisa, a categoria ou o filtro Mostrar.",
+            "reset": "Repor filtros"
+        },
+        "columns": {
+            "item": "Item"
+        },
+        "bar": {
+            "noChanges": "Sem alterações por guardar",
+            "changes": "{count, plural, one {{amount} alteração por guardar} other {{amount} alterações por guardar}}",
+            "discard": "Descartar",
+            "save": "Guardar alterações"
+        },
+        "toast": {
+            "setToZero": "{name} posto a 0",
+            "savedTitle": "Quantidades guardadas",
+            "savedMessage": "{count, plural, one {{amount} quantidade alterada} other {{amount} quantidades alteradas}}."
+        }
     },
-    "columns": {
-      "item": "Item"
-    },
-    "bar": {
-      "noChanges": "Sem alterações por guardar",
-      "changes": "{count, plural, one {{amount} alteração por guardar} other {{amount} alterações por guardar}}",
-      "discard": "Descartar",
-      "save": "Guardar alterações"
-    },
-    "toast": {
-      "setToZero": "{name} posto a 0",
-      "savedTitle": "Quantidades guardadas",
-      "savedMessage": "{count, plural, one {{amount} quantidade alterada} other {{amount} quantidades alteradas}}."
+    "planStock": {
+        "constructionTime": "Tempo de construção, em aceleradores",
+        "researchTime": "Tempo de investigação, em aceleradores",
+        "minutesUnit": "min"
     }
-  },
-  "planStock": {
-    "constructionTime": "Tempo de construção, em aceleradores",
-    "researchTime": "Tempo de investigação, em aceleradores",
-    "minutesUnit": "min"
-  }
 }

@@ -1,50 +1,50 @@
 {
-  "page": {
-    "title": "Альянс"
-  },
-  "view": {
-    "subline": "{chief} · {details} · уровень знамени {level}"
-  },
-  "banner": {
-    "title": "Знамя альянса",
-    "currentLevel": "Текущий уровень",
-    "levelLabel": "Уровень знамени",
-    "maxHint": "Целые уровни от 0 до {max}.",
-    "rangeChip": "{range}",
-    "costHeading": "Цена за уровень: {range}",
-    "noTimeOrPower": "В данных пакета у знамён нет времени постройки и мощи, поэтому они не показаны.",
-    "noCost": "Бесплатно",
-    "none": "Нет",
-    "lower": "Уменьшить уровень знамени",
-    "raise": "Увеличить уровень знамени"
-  },
-  "structures": {
-    "title": "Постройки альянса",
-    "tech": {
-      "title": "Технологии",
-      "description": "Узлов: {count} (Рост, Территория, Бой)",
-      "status": "максимум: {maxed}, в процессе: {progress}, закрыто: {locked}"
+    "page": {
+        "title": "Альянс"
     },
-    "facilities": {
-      "title": "Сооружения",
-      "description": "Сооружения на карте: {count}",
-      "owned": "Во владении: {owned}"
+    "view": {
+        "subline": "{chief} · {details} · уровень знамени {level}"
     },
-    "fortresses": {
-      "title": "Крепости",
-      "description": "Замок, форпостов: {strongholds}, крепостей: {fortresses}",
-      "reference": "Только справка"
+    "banner": {
+        "title": "Знамя альянса",
+        "currentLevel": "Текущий уровень",
+        "levelLabel": "Уровень знамени",
+        "maxHint": "Целые уровни от 0 до {max}.",
+        "rangeChip": "{range}",
+        "costHeading": "Цена за уровень: {range}",
+        "noTimeOrPower": "В данных пакета у знамён нет времени постройки и мощи, поэтому они не показаны.",
+        "noCost": "Бесплатно",
+        "none": "Нет",
+        "lower": "Уменьшить уровень знамени",
+        "raise": "Увеличить уровень знамени"
+    },
+    "structures": {
+        "title": "Постройки альянса",
+        "tech": {
+            "title": "Технологии",
+            "description": "Узлов: {count} (Рост, Территория, Бой)",
+            "status": "максимум: {maxed}, в процессе: {progress}, закрыто: {locked}"
+        },
+        "facilities": {
+            "title": "Сооружения",
+            "description": "Сооружения на карте: {count}",
+            "owned": "Во владении: {owned}"
+        },
+        "fortresses": {
+            "title": "Крепости",
+            "description": "Замок, форпостов: {strongholds}, крепостей: {fortresses}",
+            "reference": "Только справка"
+        }
+    },
+    "table": {
+        "title": "Цена знамени по диапазонам уровней",
+        "note": "Диапазонов: {count}, все уровни в диапазоне стоят одинаково",
+        "range": "Диапазон",
+        "state": "Состояние",
+        "built": "Построено",
+        "current": "Текущий",
+        "notBuilt": "Не построено",
+        "none": "Нет",
+        "noCost": "Бесплатно"
     }
-  },
-  "table": {
-    "title": "Цена знамени по диапазонам уровней",
-    "note": "Диапазонов: {count}, все уровни в диапазоне стоят одинаково",
-    "range": "Диапазон",
-    "state": "Состояние",
-    "built": "Построено",
-    "current": "Текущий",
-    "notBuilt": "Не построено",
-    "none": "Нет",
-    "noCost": "Бесплатно"
-  }
 }

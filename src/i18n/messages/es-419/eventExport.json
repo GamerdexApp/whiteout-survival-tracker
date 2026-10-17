@@ -1,32 +1,32 @@
 {
-  "title": "Exportar a Eventos principales",
-  "description": "Elige el evento y luego los días",
-  "events": {
-    "svs": "SvS",
-    "showdown": "Alliance Showdown",
-    "king": "King of Icefield",
-    "hall": "Hall of Chief"
-  },
-  "stepEvent": "1. Evento",
-  "stepDay": "{number}. Día del evento {group}",
-  "stepDayPlain": "Día del evento",
-  "stepItems": "{number}. Objetos de este plan",
-  "noDay": "{event} no tiene fila de puntuación para estos objetos.",
-  "daysHint": "Solo se muestran los días cuyas filas de puntuación cuentan un objeto. Hall of Chief muestra etapas en lugar de días. Cada grupo de objetos tiene su propio día.",
-  "lineEach": "{points} cada uno el {day}.",
-  "lineNotScored": "{event} no tiene fila de puntuación para esto.",
-  "notScored": "Sin puntos",
-  "points": "{points} puntos",
-  "addedTo": "Agregado a {event}",
-  "nothingScores": "Nada de este plan puntúa en {event} en los días elegidos.",
-  "summaryTitle": "Resumen de la exportación",
-  "summaryHint": "Lo que sumarían los mismos objetos en cada evento si se gastan todos en un día que los puntúe. Solo el evento y los días seleccionados los reciben. La página Eventos principales los muestra como cantidades que puedes cambiar.",
-  "selected": "Seleccionado",
-  "cancel": "Cancelar",
-  "export": "Exportar a {event}",
-  "toast": {
-    "title": "Exportado a Eventos principales",
-    "message": "Se agregaron {points} puntos a {event}.",
-    "undo": "Deshacer"
-  }
+    "title": "Exportar a Eventos principales",
+    "description": "Elige el evento y luego los días",
+    "events": {
+        "svs": "SvS",
+        "showdown": "Alliance Showdown",
+        "king": "King of Icefield",
+        "hall": "Hall of Chief"
+    },
+    "stepEvent": "1. Evento",
+    "stepDay": "{number}. Día del evento {group}",
+    "stepDayPlain": "Día del evento",
+    "stepItems": "{number}. Objetos de este plan",
+    "noDay": "{event} no tiene fila de puntuación para estos objetos.",
+    "daysHint": "Solo se muestran los días cuyas filas de puntuación cuentan un objeto. Hall of Chief muestra etapas en lugar de días. Cada grupo de objetos tiene su propio día.",
+    "lineEach": "{points} cada uno el {day}.",
+    "lineNotScored": "{event} no tiene fila de puntuación para esto.",
+    "notScored": "Sin puntos",
+    "points": "{points} puntos",
+    "addedTo": "Agregado a {event}",
+    "nothingScores": "Nada de este plan puntúa en {event} en los días elegidos.",
+    "summaryTitle": "Resumen de la exportación",
+    "summaryHint": "Lo que sumarían los mismos objetos en cada evento si se gastan todos en un día que los puntúe. Solo el evento y los días seleccionados los reciben. La página Eventos principales los muestra como cantidades que puedes cambiar.",
+    "selected": "Seleccionado",
+    "cancel": "Cancelar",
+    "export": "Exportar a {event}",
+    "toast": {
+        "title": "Exportado a Eventos principales",
+        "message": "Se agregaron {points} puntos a {event}.",
+        "undo": "Deshacer"
+    }
 }

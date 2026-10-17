@@ -1,67 +1,67 @@
 {
-  "line": "Quali fonti di bonus valgono in ognuna delle {modes} modalità di gioco: sì, no o in parte per {sources} tipi di bonus.",
-  "matrix": {
-    "title": "Matrice dei bonus",
-    "meta": "{modes} modalità, {sources} tipi di bonus",
-    "table": "Fonti di bonus per modalità di gioco",
-    "mode": "Modalità di gioco"
-  },
-  "sources": {
-    "cityBonusWarsBuffs": {
-      "short": "Bonus città",
-      "full": "Bonus città e bonus di guerra"
+    "line": "Quali fonti di bonus valgono in ognuna delle {modes} modalità di gioco: sì, no o in parte per {sources} tipi di bonus.",
+    "matrix": {
+        "title": "Matrice dei bonus",
+        "meta": "{modes} modalità, {sources} tipi di bonus",
+        "table": "Fonti di bonus per modalità di gioco",
+        "mode": "Modalità di gioco"
     },
-    "deploymentCapacity": {
-      "short": "Cap. schier.",
-      "full": "Capacità di schieramento"
+    "sources": {
+        "cityBonusWarsBuffs": {
+            "short": "Bonus città",
+            "full": "Bonus città e bonus di guerra"
+        },
+        "deploymentCapacity": {
+            "short": "Cap. schier.",
+            "full": "Capacità di schieramento"
+        },
+        "petSkills": {
+            "short": "Abil. animali",
+            "full": "Abilità degli animali"
+        },
+        "daybreakIsland": {
+            "short": "Daybreak",
+            "full": "Daybreak Island"
+        },
+        "presidentSkills": {
+            "short": "Presidente",
+            "full": "Abilità del presidente"
+        },
+        "ministerBuff": {
+            "short": "Ministro",
+            "full": "Bonus del ministro"
+        },
+        "territoryBonuses": {
+            "short": "Territorio",
+            "full": "Bonus del territorio"
+        },
+        "facilityBuff": {
+            "short": "Struttura",
+            "full": "Bonus delle strutture"
+        },
+        "marchAccelerator": {
+            "short": "Accel. marcia",
+            "full": "Acceleratore di marcia"
+        },
+        "frostdragonTyrantTitles": {
+            "short": "Titoli Tyrant",
+            "full": "Titoli Frostdragon Tyrant"
+        },
+        "frostSphereDomainBonus": {
+            "short": "Frost Sphere",
+            "full": "Bonus dominio Frost Sphere"
+        }
     },
-    "petSkills": {
-      "short": "Abil. animali",
-      "full": "Abilità degli animali"
+    "applicability": {
+        "yes": "Sì",
+        "no": "No",
+        "partial": "In parte"
     },
-    "daybreakIsland": {
-      "short": "Daybreak",
-      "full": "Daybreak Island"
-    },
-    "presidentSkills": {
-      "short": "Presidente",
-      "full": "Abilità del presidente"
-    },
-    "ministerBuff": {
-      "short": "Ministro",
-      "full": "Bonus del ministro"
-    },
-    "territoryBonuses": {
-      "short": "Territorio",
-      "full": "Bonus del territorio"
-    },
-    "facilityBuff": {
-      "short": "Struttura",
-      "full": "Bonus delle strutture"
-    },
-    "marchAccelerator": {
-      "short": "Accel. marcia",
-      "full": "Acceleratore di marcia"
-    },
-    "frostdragonTyrantTitles": {
-      "short": "Titoli Tyrant",
-      "full": "Titoli Frostdragon Tyrant"
-    },
-    "frostSphereDomainBonus": {
-      "short": "Frost Sphere",
-      "full": "Bonus dominio Frost Sphere"
+    "notes": {
+        "title": "Note per modalità di gioco",
+        "table": "Note per modalità di gioco",
+        "petSkillsAutoApplied": "Abilità degli animali applicate in automatico",
+        "note": "Nota",
+        "noNote": "Nessuna"
     }
-  },
-  "applicability": {
-    "yes": "Sì",
-    "no": "No",
-    "partial": "In parte"
-  },
-  "notes": {
-    "title": "Note per modalità di gioco",
-    "table": "Note per modalità di gioco",
-    "petSkillsAutoApplied": "Abilità degli animali applicate in automatico",
-    "note": "Nota",
-    "noNote": "Nessuna"
-  }
 }

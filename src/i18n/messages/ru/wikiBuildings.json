@@ -1,71 +1,71 @@
 {
-  "line": "Зданий: {buildings}, сооружений: {facilities}. Только справка, ничего не сохраняется для вашего вождя.",
-  "list": {
-    "heading": "Здания и сооружения",
-    "searchLabel": "Поиск",
-    "searchPlaceholder": "Поиск зданий и сооружений",
-    "categoryLabel": "Категория",
-    "categories": {
-      "all": "Все",
-      "Military": "Military",
-      "Inner City": "Inner City",
-      "Entertainment": "Entertainment"
+    "line": "Зданий: {buildings}, сооружений: {facilities}. Только справка, ничего не сохраняется для вашего вождя.",
+    "list": {
+        "heading": "Здания и сооружения",
+        "searchLabel": "Поиск",
+        "searchPlaceholder": "Поиск зданий и сооружений",
+        "categoryLabel": "Категория",
+        "categories": {
+            "all": "Все",
+            "Military": "Military",
+            "Inner City": "Inner City",
+            "Entertainment": "Entertainment"
+        },
+        "buildingMeta": "{category}, макс. {maxLevel}, {count, plural, one {{amount} уровень} few {{amount} уровня} many {{amount} уровней} other {{amount} уровня}}",
+        "empty": "Подходящих зданий нет.",
+        "categoryOption": "{category} {count}"
     },
-    "buildingMeta": "{category}, макс. {maxLevel}, {count, plural, one {{amount} уровень} few {{amount} уровня} many {{amount} уровней} other {{amount} уровня}}",
-    "empty": "Подходящих зданий нет.",
-    "categoryOption": "{category} {count}"
-  },
-  "detail": {
-    "levelsTotal": "Всего уровней",
-    "standardLevels": "Обычные уровни, 1–30",
-    "fireCrystalLevels": "Уровни Fire Crystal, от 30-1 до FC 10",
-    "maxLevel": "Метка макс. уровня",
-    "rangeLabel": "Диапазон уровней",
-    "rangeOption": "{range} {count}",
-    "ranges": {
-      "all": "Все",
-      "standard": "1–30",
-      "fc3": "30-1 до FC 3",
-      "fc5": "FC 3-1 до FC 5",
-      "fc8": "FC 5-1 до FC 8",
-      "fc10": "FC 8-1 до FC 10"
+    "detail": {
+        "levelsTotal": "Всего уровней",
+        "standardLevels": "Обычные уровни, 1–30",
+        "fireCrystalLevels": "Уровни Fire Crystal, от 30-1 до FC 10",
+        "maxLevel": "Метка макс. уровня",
+        "rangeLabel": "Диапазон уровней",
+        "rangeOption": "{range} {count}",
+        "ranges": {
+            "all": "Все",
+            "standard": "1–30",
+            "fc3": "30-1 до FC 3",
+            "fc5": "FC 3-1 до FC 5",
+            "fc8": "FC 5-1 до FC 8",
+            "fc10": "FC 8-1 до FC 10"
+        },
+        "tableLabel": "Уровни: {name}",
+        "levels": "Уровни",
+        "totalTitle": "Всего нужно, {range}, {count, plural, one {{amount} уровень} few {{amount} уровня} many {{amount} уровней} other {{amount} уровня}}",
+        "totalTime": "Общее время постройки"
     },
-    "tableLabel": "Уровни: {name}",
-    "levels": "Уровни",
-    "totalTitle": "Всего нужно, {range}, {count, plural, one {{amount} уровень} few {{amount} уровня} many {{amount} уровней} other {{amount} уровня}}",
-    "totalTime": "Общее время постройки"
-  },
-  "columns": {
-    "level": "Уровень",
-    "cost": "Цена",
-    "time": "Время",
-    "power": "Мощь",
-    "requires": "Требуется",
-    "stats": {
-      "rallyCapacity": "Вместимость сбора",
-      "marchCapacity": "Вместимость похода",
-      "trainingCapacity": "Вместимость тренировки",
-      "trainingSpeedBonusPercent": "Скорость тренировки",
-      "researchSpeedBonusPercent": "Скорость исследований",
-      "infirmaryCapacity": "Вместимость лазарета",
-      "allyAssists": "Помощь союзников",
-      "allyHelpTimeSeconds": "Время помощи союзников",
-      "reinforceCapacity": "Вместимость подкрепления",
-      "storehouseCapacity": "Вместимость склада",
-      "barricadeDurability": "Прочность баррикады",
-      "troopDeploymentCapacity": "Вместимость развёртывания"
+    "columns": {
+        "level": "Уровень",
+        "cost": "Цена",
+        "time": "Время",
+        "power": "Мощь",
+        "requires": "Требуется",
+        "stats": {
+            "rallyCapacity": "Вместимость сбора",
+            "marchCapacity": "Вместимость похода",
+            "trainingCapacity": "Вместимость тренировки",
+            "trainingSpeedBonusPercent": "Скорость тренировки",
+            "researchSpeedBonusPercent": "Скорость исследований",
+            "infirmaryCapacity": "Вместимость лазарета",
+            "allyAssists": "Помощь союзников",
+            "allyHelpTimeSeconds": "Время помощи союзников",
+            "reinforceCapacity": "Вместимость подкрепления",
+            "storehouseCapacity": "Вместимость склада",
+            "barricadeDurability": "Прочность баррикады",
+            "troopDeploymentCapacity": "Вместимость развёртывания"
+        }
+    },
+    "cells": {
+        "none": "Нет",
+        "requirement": "{building} {level}",
+        "pricePerItem": "{price} за штуку",
+        "percent": "{value}%"
+    },
+    "facilities": {
+        "heading": "Сооружения",
+        "meta": "Без уровней, мощи и цены постройки",
+        "unlock": "Откроется на уровне Furnace {level}",
+        "empty": "Подходящих сооружений нет."
     }
-  },
-  "cells": {
-    "none": "Нет",
-    "requirement": "{building} {level}",
-    "pricePerItem": "{price} за штуку",
-    "percent": "{value}%"
-  },
-  "facilities": {
-    "heading": "Сооружения",
-    "meta": "Без уровней, мощи и цены постройки",
-    "unlock": "Откроется на уровне Furnace {level}",
-    "empty": "Подходящих сооружений нет."
-  }
 }

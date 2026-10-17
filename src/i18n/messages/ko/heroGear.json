@@ -1,215 +1,215 @@
 {
-  "defaultSetName": "세트 {number}",
-  "troop": {
-    "infantry": "보병",
-    "lancer": "창병",
-    "marksman": "궁병"
-  },
-  "lock": {
-    "needsMythic": "Mythic 장비가 필요해요",
-    "needsBoth": "강화 100과 숙련 단조 10레벨이 필요해요",
-    "needsEnhancement": "강화 100이 필요해요",
-    "needsForging": "숙련 단조 10레벨이 필요해요"
-  },
-  "tab": {
-    "deletedTitle": "{name}을(를) 삭제했어요",
-    "deletedMessage": "장비 4부위와 목표를 삭제했어요.",
-    "undo": "실행 취소",
-    "tiles": {
-      "sets": "장비 세트",
-      "power": "장비 전투력, 모든 세트",
-      "ofPieces": "{total} 중 {count}",
-      "atEnhancementMax": "강화 100인 장비",
-      "empowered": "강림한 장비",
-      "ready": "강림 가능한 장비"
+    "defaultSetName": "세트 {number}",
+    "troop": {
+        "infantry": "보병",
+        "lancer": "창병",
+        "marksman": "궁병"
     },
-    "search": "장비 세트 검색",
-    "filters": "필터",
-    "plan": "계획",
-    "showing": "장비 세트 {total}개 중 {shown}개 표시 중. 목표는 여기서 읽기 전용이며 계획에서 설정해요.",
-    "empty": {
-      "title": "아직 장비 세트가 없어요",
-      "description": "장비 세트에는 Goggles, Gloves, Belt, Boots가 하나씩 들어가요. 세트를 추가해 레벨을 추적하세요."
+    "lock": {
+        "needsMythic": "Mythic 장비가 필요해요",
+        "needsBoth": "강화 100과 숙련 단조 10레벨이 필요해요",
+        "needsEnhancement": "강화 100이 필요해요",
+        "needsForging": "숙련 단조 10레벨이 필요해요"
     },
-    "addSet": "장비 세트 추가",
-    "unknownHero": "알 수 없는 영웅",
-    "power": "전투력 {amount}",
-    "enhancementLine": "강화 {line}",
-    "troopHint": "병종에 따라 아래 능력치 열이 정해져요.",
-    "editSet": "세트 편집",
-    "deleteSet": "세트 삭제"
-  },
-  "pieceCard": {
-    "name": "{set} {slot}",
-    "forgingRow": "{name} (+{percent}%)",
-    "none": "없음",
-    "noGoal": "목표 없음",
-    "goal": "목표: {value}",
-    "quality": "장비 품질",
-    "qualities": {
-      "mythic": "신화",
-      "epic": "에픽",
-      "rare": "희귀",
-      "uncommon": "고급",
-      "common": "일반"
+    "tab": {
+        "deletedTitle": "{name}을(를) 삭제했어요",
+        "deletedMessage": "장비 4부위와 목표를 삭제했어요.",
+        "undo": "실행 취소",
+        "tiles": {
+            "sets": "장비 세트",
+            "power": "장비 전투력, 모든 세트",
+            "ofPieces": "{total} 중 {count}",
+            "atEnhancementMax": "강화 100인 장비",
+            "empowered": "강림한 장비",
+            "ready": "강림 가능한 장비"
+        },
+        "search": "장비 세트 검색",
+        "filters": "필터",
+        "plan": "계획",
+        "showing": "장비 세트 {total}개 중 {shown}개 표시 중. 목표는 여기서 읽기 전용이며 계획에서 설정해요.",
+        "empty": {
+            "title": "아직 장비 세트가 없어요",
+            "description": "장비 세트에는 Goggles, Gloves, Belt, Boots가 하나씩 들어가요. 세트를 추가해 레벨을 추적하세요."
+        },
+        "addSet": "장비 세트 추가",
+        "unknownHero": "알 수 없는 영웅",
+        "power": "전투력 {amount}",
+        "enhancementLine": "강화 {line}",
+        "troopHint": "병종에 따라 아래 능력치 열이 정해져요.",
+        "editSet": "세트 편집",
+        "deleteSet": "세트 삭제"
     },
-    "forgingRowLabel": "숙련 단조 행",
-    "forgingStops": "강화가 100이 될 때까지 숙련 단조는 10레벨에서 멈춰요.",
-    "lowQualityNote": "신화 장비만 단조와 강림을 할 수 있어요. 전투력은 이 품질의 기본 전투력을 적용한 신화 표를 따르며 게임에서 확인된 값은 아니에요.",
-    "enhancement": "강화",
-    "enhancementLabel": "{name} 강화",
-    "enhancementSlider": "{name} 강화 슬라이더",
-    "empowerment": "강림",
-    "empowermentLabel": "{name} 강림",
-    "empowermentSlider": "{name} 강림 슬라이더",
-    "outOf": "/ {max}",
-    "milestone": "강림 {level} 달성: {stat}",
-    "piecePower": "장비 전투력",
-    "health": "체력",
-    "percent": "{value}%"
-  },
-  "statLines": {
-    "title": "능력치 줄, 슬롯 4개 x 병종 3종",
-    "troopThisSet": "{troop} (이 세트)",
-    "stat": "{name} {value}",
-    "health": "HP {value}",
-    "percentStat": "{name} {value}%",
-    "none": "없음",
-    "note": "{name}의 장비 레벨에서 숙련 단조를 포함해 내림한 값이에요. 능력치는 WoS Tools에서 가져왔고 200레벨 중 192레벨까지만 있어요. 강조된 열은 세트의 병종이에요."
-  },
-  "filters": {
-    "title": "필터",
-    "description": "목록에 표시할 장비 세트를 고르세요",
-    "reset": "초기화",
-    "show": "{count, plural, other {세트 {amount}개 보기}}",
-    "all": "전체",
-    "troopType": "병종",
-    "linkedHero": "연결된 영웅",
-    "heroOptions": {
-      "all": "전체",
-      "linked": "영웅과 연결됨",
-      "unlinked": "연결 안 됨"
+    "pieceCard": {
+        "name": "{set} {slot}",
+        "forgingRow": "{name} (+{percent}%)",
+        "none": "없음",
+        "noGoal": "목표 없음",
+        "goal": "목표: {value}",
+        "quality": "장비 품질",
+        "qualities": {
+            "mythic": "신화",
+            "epic": "에픽",
+            "rare": "희귀",
+            "uncommon": "고급",
+            "common": "일반"
+        },
+        "forgingRowLabel": "숙련 단조 행",
+        "forgingStops": "강화가 100이 될 때까지 숙련 단조는 10레벨에서 멈춰요.",
+        "lowQualityNote": "신화 장비만 단조와 강림을 할 수 있어요. 전투력은 이 품질의 기본 전투력을 적용한 신화 표를 따르며 게임에서 확인된 값은 아니에요.",
+        "enhancement": "강화",
+        "enhancementLabel": "{name} 강화",
+        "enhancementSlider": "{name} 강화 슬라이더",
+        "empowerment": "강림",
+        "empowermentLabel": "{name} 강림",
+        "empowermentSlider": "{name} 강림 슬라이더",
+        "outOf": "/ {max}",
+        "milestone": "강림 {level} 달성: {stat}",
+        "piecePower": "장비 전투력",
+        "health": "체력",
+        "percent": "{value}%"
     },
-    "order": "정렬",
-    "orderOptions": {
-      "power": "총 전투력 높은 순",
-      "created": "추가한 순서",
-      "name": "이름순",
-      "hero": "영웅 이름순"
+    "statLines": {
+        "title": "능력치 줄, 슬롯 4개 x 병종 3종",
+        "troopThisSet": "{troop} (이 세트)",
+        "stat": "{name} {value}",
+        "health": "HP {value}",
+        "percentStat": "{name} {value}%",
+        "none": "없음",
+        "note": "{name}의 장비 레벨에서 숙련 단조를 포함해 내림한 값이에요. 능력치는 WoS Tools에서 가져왔고 200레벨 중 192레벨까지만 있어요. 강조된 열은 세트의 병종이에요."
     },
-    "notSaved": "필터는 저장되지 않아요."
-  },
-  "setDialogs": {
-    "cancel": "취소",
-    "setName": "세트 이름",
-    "nameRequired": "이름을 입력하세요.",
-    "linkedHero": "연결된 영웅",
-    "add": {
-      "title": "장비 세트 추가",
-      "linkedHeroHint": "영웅을 고르면 병종이 그 영웅의 직업으로 설정돼요.",
-      "troopType": "병종",
-      "troopTypeHint": "병종에 따라 세트의 능력치 열이 정해져요.",
-      "quality": "장비 품질",
-      "qualityHint": "신화 장비만 단조와 강림을 할 수 있어요.",
-      "qualityHintCopy": "복사한 세트는 각 장비의 품질을 그대로 유지해요.",
-      "qualities": {
-        "mythic": "신화",
-        "epic": "에픽",
-        "rare": "희귀",
-        "uncommon": "고급",
-        "common": "일반"
-      },
-      "startFrom": "시작 방식",
-      "startFromHint": "목표는 복사되지 않아요. 목표는 계획에서 설정해요.",
-      "emptySet": "빈 세트",
-      "copyFrom": "{name}의 레벨 복사",
-      "savesAtOnce": "변경 사항은 바로 저장되고 새 세트가 선택된 상태로 나타나요.",
-      "submit": "장비 세트 추가"
+    "filters": {
+        "title": "필터",
+        "description": "목록에 표시할 장비 세트를 고르세요",
+        "reset": "초기화",
+        "show": "{count, plural, other {세트 {amount}개 보기}}",
+        "all": "전체",
+        "troopType": "병종",
+        "linkedHero": "연결된 영웅",
+        "heroOptions": {
+            "all": "전체",
+            "linked": "영웅과 연결됨",
+            "unlinked": "연결 안 됨"
+        },
+        "order": "정렬",
+        "orderOptions": {
+            "power": "총 전투력 높은 순",
+            "created": "추가한 순서",
+            "name": "이름순",
+            "hero": "영웅 이름순"
+        },
+        "notSaved": "필터는 저장되지 않아요."
     },
-    "delete": {
-      "title": "{name}을(를) 삭제할까요?",
-      "titleFallback": "세트 삭제",
-      "confirm": "세트 삭제",
-      "body": "{name}의 장비 4부위와 목표가 이 기기에서 삭제돼요.",
-      "undoNote": "삭제 후 10초 동안 실행 취소할 수 있어요.",
-      "exportBackup": "먼저 백업 내보내기"
+    "setDialogs": {
+        "cancel": "취소",
+        "setName": "세트 이름",
+        "nameRequired": "이름을 입력하세요.",
+        "linkedHero": "연결된 영웅",
+        "add": {
+            "title": "장비 세트 추가",
+            "linkedHeroHint": "영웅을 고르면 병종이 그 영웅의 직업으로 설정돼요.",
+            "troopType": "병종",
+            "troopTypeHint": "병종에 따라 세트의 능력치 열이 정해져요.",
+            "quality": "장비 품질",
+            "qualityHint": "신화 장비만 단조와 강림을 할 수 있어요.",
+            "qualityHintCopy": "복사한 세트는 각 장비의 품질을 그대로 유지해요.",
+            "qualities": {
+                "mythic": "신화",
+                "epic": "에픽",
+                "rare": "희귀",
+                "uncommon": "고급",
+                "common": "일반"
+            },
+            "startFrom": "시작 방식",
+            "startFromHint": "목표는 복사되지 않아요. 목표는 계획에서 설정해요.",
+            "emptySet": "빈 세트",
+            "copyFrom": "{name}의 레벨 복사",
+            "savesAtOnce": "변경 사항은 바로 저장되고 새 세트가 선택된 상태로 나타나요.",
+            "submit": "장비 세트 추가"
+        },
+        "delete": {
+            "title": "{name}을(를) 삭제할까요?",
+            "titleFallback": "세트 삭제",
+            "confirm": "세트 삭제",
+            "body": "{name}의 장비 4부위와 목표가 이 기기에서 삭제돼요.",
+            "undoNote": "삭제 후 10초 동안 실행 취소할 수 있어요.",
+            "exportBackup": "먼저 백업 내보내기"
+        },
+        "edit": {
+            "title": "{name} 편집",
+            "titleFallback": "세트 편집",
+            "submit": "세트 저장"
+        },
+        "heroSelect": {
+            "none": "영웅 없음",
+            "option": "{name} ({class}, {generation}세대)"
+        }
     },
-    "edit": {
-      "title": "{name} 편집",
-      "titleFallback": "세트 편집",
-      "submit": "세트 저장"
+    "plan": {
+        "title": "영웅 장비 계획",
+        "description": "모든 세트의 어떤 장비든 숙련 단조, 강화, 강림을 계획해요",
+        "saved": "{time}에 계획 저장됨",
+        "close": "닫기",
+        "save": "계획 저장",
+        "empty": "계획에 장비가 아직 없어요. 위에서 장비를 추가한 뒤 목표를 올리세요.",
+        "pieceTitle": "{set} · {slot}",
+        "milestone": "강림 {level}, {event}, {stat}",
+        "addPiece": {
+            "title": "장비 추가",
+            "noSets": "먼저 영웅 장비 탭에서 장비 세트를 추가하세요.",
+            "set": "장비 세트",
+            "setOption": "{name} ({troop})",
+            "piece": "장비",
+            "submit": "장비 추가",
+            "taken": "이 장비는 이미 계획에 있어요."
+        },
+        "qualities": {
+            "mythic": "신화",
+            "epic": "에픽",
+            "rare": "희귀",
+            "uncommon": "고급",
+            "common": "일반"
+        },
+        "remove": "계획에서 {title} 삭제",
+        "forgingRow": "{name} (+{percent}%)",
+        "none": "없음",
+        "forgingCurrent": "현재 단조 행",
+        "forgingGoal": "목표 단조 행",
+        "forgingGoalLabel": "{title} 단조 목표",
+        "forgingStops": "강화 목표가 100이 될 때까지 숙련 단조는 10레벨에서 멈춰요.",
+        "enhancement": "강화",
+        "enhancementGoal": "{title} 강화 목표",
+        "empowerment": "강림",
+        "empowermentGoal": "{title} 강림 목표",
+        "from": "{value}에서",
+        "result": {
+            "title": "{count, plural, other {장비 {amount}개}} 결과",
+            "power": "전투력",
+            "powerLines": {
+                "gained": "얻는 전투력",
+                "before": "이 장비들의 이전 전투력",
+                "after": "이 장비들의 이후 전투력"
+            },
+            "columns": {
+                "piece": "장비",
+                "forgingStatsUp": "단조 능력치 상승",
+                "powerGained": "얻는 전투력"
+            },
+            "forgingStatsUp": "+{percent}% ({steps}단계)",
+            "milestones": "해금된 이정표",
+            "milestoneLine": "{label}: {stat}",
+            "events": {
+                "svs": "SvS",
+                "allianceShowdown": "Alliance Showdown",
+                "kingOfIcefield": "King of Icefield"
+            },
+            "note": "영웅 장비 계획에는 속도나 보너스 설정이 없어요. 계산기는 시간을 반환하지 않아요.",
+            "tableLabel": "계획 결과 표"
+        }
     },
-    "heroSelect": {
-      "none": "영웅 없음",
-      "option": "{name} ({class}, {generation}세대)"
+    "export": {
+        "button": "핵심 이벤트로 내보내기",
+        "nothing": "내보낼 계획에 Essence Stones나 Mithril이 필요하지 않아요.",
+        "essenceStones": "Essence Stones",
+        "mithril": "Mithril"
     }
-  },
-  "plan": {
-    "title": "영웅 장비 계획",
-    "description": "모든 세트의 어떤 장비든 숙련 단조, 강화, 강림을 계획해요",
-    "saved": "{time}에 계획 저장됨",
-    "close": "닫기",
-    "save": "계획 저장",
-    "empty": "계획에 장비가 아직 없어요. 위에서 장비를 추가한 뒤 목표를 올리세요.",
-    "pieceTitle": "{set} · {slot}",
-    "milestone": "강림 {level}, {event}, {stat}",
-    "addPiece": {
-      "title": "장비 추가",
-      "noSets": "먼저 영웅 장비 탭에서 장비 세트를 추가하세요.",
-      "set": "장비 세트",
-      "setOption": "{name} ({troop})",
-      "piece": "장비",
-      "submit": "장비 추가",
-      "taken": "이 장비는 이미 계획에 있어요."
-    },
-    "qualities": {
-      "mythic": "신화",
-      "epic": "에픽",
-      "rare": "희귀",
-      "uncommon": "고급",
-      "common": "일반"
-    },
-    "remove": "계획에서 {title} 삭제",
-    "forgingRow": "{name} (+{percent}%)",
-    "none": "없음",
-    "forgingCurrent": "현재 단조 행",
-    "forgingGoal": "목표 단조 행",
-    "forgingGoalLabel": "{title} 단조 목표",
-    "forgingStops": "강화 목표가 100이 될 때까지 숙련 단조는 10레벨에서 멈춰요.",
-    "enhancement": "강화",
-    "enhancementGoal": "{title} 강화 목표",
-    "empowerment": "강림",
-    "empowermentGoal": "{title} 강림 목표",
-    "from": "{value}에서",
-    "result": {
-      "title": "{count, plural, other {장비 {amount}개}} 결과",
-      "power": "전투력",
-      "powerLines": {
-        "gained": "얻는 전투력",
-        "before": "이 장비들의 이전 전투력",
-        "after": "이 장비들의 이후 전투력"
-      },
-      "columns": {
-        "piece": "장비",
-        "forgingStatsUp": "단조 능력치 상승",
-        "powerGained": "얻는 전투력"
-      },
-      "forgingStatsUp": "+{percent}% ({steps}단계)",
-      "milestones": "해금된 이정표",
-      "milestoneLine": "{label}: {stat}",
-      "events": {
-        "svs": "SvS",
-        "allianceShowdown": "Alliance Showdown",
-        "kingOfIcefield": "King of Icefield"
-      },
-      "note": "영웅 장비 계획에는 속도나 보너스 설정이 없어요. 계산기는 시간을 반환하지 않아요.",
-      "tableLabel": "계획 결과 표"
-    }
-  },
-  "export": {
-    "button": "핵심 이벤트로 내보내기",
-    "nothing": "내보낼 계획에 Essence Stones나 Mithril이 필요하지 않아요.",
-    "essenceStones": "Essence Stones",
-    "mithril": "Mithril"
-  }
 }

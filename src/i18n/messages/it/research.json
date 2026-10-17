@@ -1,303 +1,303 @@
 {
-  "title": "Ricerca",
-  "unknown": "Sconosciuto",
-  "nodeCount": "{count, plural, one {{amount} nodo} other {{amount} nodi}}",
-  "jobTitle": "{name}, da livello {from} a {to}",
-  "tabs": {
-    "growth": "Crescita",
-    "economy": "Economia",
-    "battle": "Battaglia",
-    "war-academy-troops": "War Academy T11",
-    "t12-infantry": "Fanteria T12",
-    "t12-marksman": "Tiratore T12",
-    "t12-lancer": "Lanciere T12"
-  },
-  "tier": {
-    "plain": "Grado {tier}",
-    "troopLine": "{line} T{tier}"
-  },
-  "requirement": {
-    "yours": "Il tuo è {level}",
-    "notBuilt": "Non costruito",
-    "researchLevel": "{name} livello {level}",
-    "yoursLevel": "Il tuo è il livello {level}",
-    "notReleased": "{id} (non ancora uscito)"
-  },
-  "tabLock": {
-    "unknownAge": "La ricerca {tab} si apre a un'età del server di {days} giorni. La tua è sconosciuta. Aggiungi una data di avvio del server in Modifica capo.",
-    "knownAge": "La ricerca {tab} si apre a un'età del server di {days} giorni. La tua è {yours}."
-  },
-  "option": {
-    "label": "{name}, {tab}, da livello {from} a {to}",
-    "subtitle": "Da livello {from} a livello {to}, scheda {tab}",
-    "busy": "Occupata: {name} livello {level}, {timeLeft}"
-  },
-  "nodeCard": {
-    "allResearched": "Tutti i livelli ricercati",
-    "nextTime": "Tempo del livello {level}: {time}",
-    "power": {
-      "researched": "{power} ricercata",
-      "next": "+{power} al livello successivo",
-      "some": "Potenza {parts}",
-      "none": "Potenza 0"
-    },
-    "maxed": "Al massimo. {bonus}",
-    "noBonus": "Nessun bonus nei dati",
-    "level": "Livello {level} / {max}",
-    "goal": "Obiettivo {goal}",
-    "noGoal": "Nessun obiettivo",
-    "progress": "Avanzamento di {name}",
-    "lockedByTab": "Bloccato: {reason}",
-    "lockedByRequirement": "Bloccato: richiede {requirement}",
-    "placeholder": "Segnaposto. Costo e bonus sono vuoti nel pacchetto.",
-    "needsFirst": "Richiede prima {names}",
-    "researching": "{name} in ricerca",
-    "levelStepper": "Livello di {name}",
-    "detailsOf": "Dettagli di {name}",
-    "details": "Dettagli"
-  },
-  "queuesStrip": {
-    "title": "Code di ricerca",
-    "note": "Crescita, Economia e Battaglia condividono una coda. T11 e T12 usano la coda della War Academy.",
-    "idle": "Una ricerca alla volta. Premi Avvia potenziamento per iniziarne una."
-  },
-  "filters": {
-    "title": "Filtri",
-    "description": "Scegli cosa mostra la scheda {tab}",
-    "reset": "Azzera",
-    "show": "Mostra {nodes}",
-    "tier": "Grado",
-    "statusLabel": "Stato",
-    "troopLine": "Linea di truppe",
-    "orderLabel": "Ordine",
-    "notSaved": "I filtri non vengono salvati.",
-    "all": "Tutti",
-    "status": {
-      "all": "Tutti",
-      "progress": "In corso",
-      "goal": "Con obiettivo",
-      "maxed": "Al massimo",
-      "locked": "Bloccati",
-      "notStarted": "Non iniziati"
-    },
-    "order": {
-      "game": "Ordine del gioco",
-      "name": "Nome, dalla A alla Z",
-      "level": "Livello, prima il più alto"
-    }
-  },
-  "massSet": {
-    "stop": "{level} di {max}",
-    "title": "Imposta in blocco, {tab}",
-    "description": "Scegli un nodo e un livello. Tutto ciò che lo precede nell'albero va al massimo.",
-    "cancel": "Annulla",
-    "set": "Imposta {nodes}",
-    "node": "Nodo",
-    "level": "Livello",
-    "levelToSet": "Livello da impostare",
-    "whatChanges": "Cosa cambia nella scheda {tab}",
-    "nothingChanges": "Non cambia nulla. Ogni nodo qui è già a questo livello o sopra.",
-    "change": "da {from} a {to}",
-    "hidden": "e altri {amount} nodi precedenti",
-    "alreadyMax": "{count, plural, one {{amount} nodo precedente è già al massimo e resta} other {{amount} nodi precedenti sono già al massimo e restano}} com'è. I nodi successivi nell'albero non vengono toccati. Un livello già più alto resta.",
-    "blockersTitle": "Alcuni nodi richiedono prima un edificio.",
-    "blocker": "{name} richiede {building}",
-    "blockersMore": " e altri {amount}",
-    "blockers": "{list}{more}. Scegli un nodo precedente o potenzia l'edificio nella pagina Edifici.",
-    "footnote": "Imposta in blocco cambia solo i livelli salvati di questa scheda. Non abbassa mai un livello. Gli obiettivi non cambiano."
-  },
-  "nodeFlyout": {
-    "fallbackTitle": "Ricerca",
-    "description": "{category}, grado {tier}, {levels} livelli",
-    "close": "Chiudi",
+    "title": "Ricerca",
     "unknown": "Sconosciuto",
-    "levelOf": "Livello {level} di {max}",
-    "status": {
-      "notStarted": "non iniziato",
-      "maxed": "al massimo",
-      "inProgress": "in corso"
+    "nodeCount": "{count, plural, one {{amount} nodo} other {{amount} nodi}}",
+    "jobTitle": "{name}, da livello {from} a {to}",
+    "tabs": {
+        "growth": "Crescita",
+        "economy": "Economia",
+        "battle": "Battaglia",
+        "war-academy-troops": "War Academy T11",
+        "t12-infantry": "Fanteria T12",
+        "t12-marksman": "Tiratore T12",
+        "t12-lancer": "Lanciere T12"
     },
-    "goal": "Obiettivo {goal}",
-    "noGoal": "Nessun obiettivo",
-    "openPlan": "Apri Piano",
-    "maxLevel": {
-      "title": "Livello massimo",
-      "nothingLeft": "Non resta nulla da ricercare.",
-      "noBonus": "Nessun bonus nei dati."
+    "tier": {
+        "plain": "Grado {tier}",
+        "troopLine": "{line} T{tier}"
     },
-    "placeholder": {
-      "title": "Segnaposto",
-      "description": "Questo nodo non ha ancora costo né bonus nel pacchetto. Tempo e costo di ricerca mostrano Sconosciuto."
+    "requirement": {
+        "yours": "Il tuo è {level}",
+        "notBuilt": "Non costruito",
+        "researchLevel": "{name} livello {level}",
+        "yoursLevel": "Il tuo è il livello {level}",
+        "notReleased": "{id} (non ancora uscito)"
     },
-    "upcoming": {
-      "first": "Primi livelli",
-      "after": "Livelli successivi al {level}",
-      "heads": {
+    "tabLock": {
+        "unknownAge": "La ricerca {tab} si apre a un'età del server di {days} giorni. La tua è sconosciuta. Aggiungi una data di avvio del server in Modifica capo.",
+        "knownAge": "La ricerca {tab} si apre a un'età del server di {days} giorni. La tua è {yours}."
+    },
+    "option": {
+        "label": "{name}, {tab}, da livello {from} a {to}",
+        "subtitle": "Da livello {from} a livello {to}, scheda {tab}",
+        "busy": "Occupata: {name} livello {level}, {timeLeft}"
+    },
+    "nodeCard": {
+        "allResearched": "Tutti i livelli ricercati",
+        "nextTime": "Tempo del livello {level}: {time}",
+        "power": {
+            "researched": "{power} ricercata",
+            "next": "+{power} al livello successivo",
+            "some": "Potenza {parts}",
+            "none": "Potenza 0"
+        },
+        "maxed": "Al massimo. {bonus}",
+        "noBonus": "Nessun bonus nei dati",
+        "level": "Livello {level} / {max}",
+        "goal": "Obiettivo {goal}",
+        "noGoal": "Nessun obiettivo",
+        "progress": "Avanzamento di {name}",
+        "lockedByTab": "Bloccato: {reason}",
+        "lockedByRequirement": "Bloccato: richiede {requirement}",
+        "placeholder": "Segnaposto. Costo e bonus sono vuoti nel pacchetto.",
+        "needsFirst": "Richiede prima {names}",
+        "researching": "{name} in ricerca",
+        "levelStepper": "Livello di {name}",
+        "detailsOf": "Dettagli di {name}",
+        "details": "Dettagli"
+    },
+    "queuesStrip": {
+        "title": "Code di ricerca",
+        "note": "Crescita, Economia e Battaglia condividono una coda. T11 e T12 usano la coda della War Academy.",
+        "idle": "Una ricerca alla volta. Premi Avvia potenziamento per iniziarne una."
+    },
+    "filters": {
+        "title": "Filtri",
+        "description": "Scegli cosa mostra la scheda {tab}",
+        "reset": "Azzera",
+        "show": "Mostra {nodes}",
+        "tier": "Grado",
+        "statusLabel": "Stato",
+        "troopLine": "Linea di truppe",
+        "orderLabel": "Ordine",
+        "notSaved": "I filtri non vengono salvati.",
+        "all": "Tutti",
+        "status": {
+            "all": "Tutti",
+            "progress": "In corso",
+            "goal": "Con obiettivo",
+            "maxed": "Al massimo",
+            "locked": "Bloccati",
+            "notStarted": "Non iniziati"
+        },
+        "order": {
+            "game": "Ordine del gioco",
+            "name": "Nome, dalla A alla Z",
+            "level": "Livello, prima il più alto"
+        }
+    },
+    "massSet": {
+        "stop": "{level} di {max}",
+        "title": "Imposta in blocco, {tab}",
+        "description": "Scegli un nodo e un livello. Tutto ciò che lo precede nell'albero va al massimo.",
+        "cancel": "Annulla",
+        "set": "Imposta {nodes}",
+        "node": "Nodo",
         "level": "Livello",
-        "bonus": "Bonus",
-        "time": "Tempo",
-        "power": "Potenza"
-      },
-      "goalBadge": "Obiettivo",
-      "noBonus": "Nessuno",
-      "shaded": "Le righe in ombra sono i livelli tra il tuo livello e il tuo obiettivo."
+        "levelToSet": "Livello da impostare",
+        "whatChanges": "Cosa cambia nella scheda {tab}",
+        "nothingChanges": "Non cambia nulla. Ogni nodo qui è già a questo livello o sopra.",
+        "change": "da {from} a {to}",
+        "hidden": "e altri {amount} nodi precedenti",
+        "alreadyMax": "{count, plural, one {{amount} nodo precedente è già al massimo e resta} other {{amount} nodi precedenti sono già al massimo e restano}} com'è. I nodi successivi nell'albero non vengono toccati. Un livello già più alto resta.",
+        "blockersTitle": "Alcuni nodi richiedono prima un edificio.",
+        "blocker": "{name} richiede {building}",
+        "blockersMore": " e altri {amount}",
+        "blockers": "{list}{more}. Scegli un nodo precedente o potenzia l'edificio nella pagina Edifici.",
+        "footnote": "Imposta in blocco cambia solo i livelli salvati di questa scheda. Non abbassa mai un livello. Gli obiettivi non cambiano."
     },
-    "cost": {
-      "title": "Costo dei livelli successivi",
-      "level": "Liv"
+    "nodeFlyout": {
+        "fallbackTitle": "Ricerca",
+        "description": "{category}, grado {tier}, {levels} livelli",
+        "close": "Chiudi",
+        "unknown": "Sconosciuto",
+        "levelOf": "Livello {level} di {max}",
+        "status": {
+            "notStarted": "non iniziato",
+            "maxed": "al massimo",
+            "inProgress": "in corso"
+        },
+        "goal": "Obiettivo {goal}",
+        "noGoal": "Nessun obiettivo",
+        "openPlan": "Apri Piano",
+        "maxLevel": {
+            "title": "Livello massimo",
+            "nothingLeft": "Non resta nulla da ricercare.",
+            "noBonus": "Nessun bonus nei dati."
+        },
+        "placeholder": {
+            "title": "Segnaposto",
+            "description": "Questo nodo non ha ancora costo né bonus nel pacchetto. Tempo e costo di ricerca mostrano Sconosciuto."
+        },
+        "upcoming": {
+            "first": "Primi livelli",
+            "after": "Livelli successivi al {level}",
+            "heads": {
+                "level": "Livello",
+                "bonus": "Bonus",
+                "time": "Tempo",
+                "power": "Potenza"
+            },
+            "goalBadge": "Obiettivo",
+            "noBonus": "Nessuno",
+            "shaded": "Le righe in ombra sono i livelli tra il tuo livello e il tuo obiettivo."
+        },
+        "cost": {
+            "title": "Costo dei livelli successivi",
+            "level": "Liv"
+        },
+        "total": {
+            "title": "Totale fino all'obiettivo, da livello {level} a {goal}",
+            "knownTime": "Tempo di ricerca noto",
+            "power": "Potenza",
+            "missingTimes": "{count, plural, one {{amount} livello non ha un tempo nel pacchetto e qui conta come 0.} other {{amount} livelli non hanno un tempo nel pacchetto e qui contano come 0.}}"
+        },
+        "requirements": {
+            "title": "Requisiti per il livello {level}",
+            "none": "Nessun requisito.",
+            "met": "Soddisfatto",
+            "notMet": "Non soddisfatto",
+            "later": "I livelli successivi richiedono: {list}."
+        }
     },
-    "total": {
-      "title": "Totale fino all'obiettivo, da livello {level} a {goal}",
-      "knownTime": "Tempo di ricerca noto",
-      "power": "Potenza",
-      "missingTimes": "{count, plural, one {{amount} livello non ha un tempo nel pacchetto e qui conta come 0.} other {{amount} livelli non hanno un tempo nel pacchetto e qui contano come 0.}}"
+    "tree": {
+        "legend": {
+            "max": "Max",
+            "inProgress": "In corso",
+            "notStarted": "Non iniziato",
+            "locked": "Bloccato"
+        },
+        "pillMax": "Max {max}",
+        "pillLevel": "Lv {level} di {max}",
+        "region": "Albero di ricerca {tab}",
+        "openNode": "{name}, {pill}. Apri i dettagli"
     },
-    "requirements": {
-      "title": "Requisiti per il livello {level}",
-      "none": "Nessun requisito.",
-      "met": "Soddisfatto",
-      "notMet": "Non soddisfatto",
-      "later": "I livelli successivi richiedono: {list}."
+    "plan": {
+        "title": "Pianifica Ricerca",
+        "description": "Risorse, tempo e potenza dal livello attuale all'obiettivo",
+        "saved": "Piano salvato {date}",
+        "close": "Chiudi",
+        "save": "Salva piano",
+        "goals": "Obiettivi, {nodes}",
+        "noGoals": "Ancora nessun obiettivo. Aggiungi sopra un nodo di ricerca, poi scegli il livello da raggiungere.",
+        "goalsHint": "Il livello attuale è quello nella pagina. Cambialo lì. Nella pagina gli obiettivi sono in sola lettura e si impostano qui.",
+        "failed": "Non è stato possibile calcolare il piano.",
+        "timeNote": "Il piano richiede {time} dopo il bonus velocità del {percent}%. Le tue scorte: Ricerca {research} min, Generale {general} min. Le accelerazioni generali contano per la ricerca.",
+        "percent": "{value}%",
+        "percentPlus": "+{value}%",
+        "appointment": {
+            "none": "Nessuna",
+            "regular": "Normale",
+            "supreme": "Suprema"
+        },
+        "add": {
+            "title": "Aggiungi un nodo di ricerca",
+            "none": "Ogni nodo è già nel piano o al livello massimo.",
+            "select": "Nodo di ricerca da aggiungere",
+            "button": "Aggiungi ricerca"
+        },
+        "speed": {
+            "title": "Velocità di ricerca",
+            "readOnly": "Sola lettura",
+            "carriedOver": "Ripresa dalla pagina Bonus.",
+            "turnedOff": "Disattivata in Impostazioni, sotto Applica i totali dei miei Bonus.",
+            "openBonuses": "Apri Bonus",
+            "stateBuff": "Bonus dello stato",
+            "vicePresident": "Vicepresidente",
+            "total": "Velocità di ricerca totale"
+        },
+        "goal": {
+            "level": "Livello {level}",
+            "to": "a",
+            "label": "Obiettivo di {name}",
+            "remove": "Rimuovi {name} dal piano"
+        },
+        "result": {
+            "title": "Risultato, {steps} passi",
+            "powerGained": "Potenza guadagnata",
+            "speedupMinutes": "Minuti di accelerazione necessari",
+            "baseTime": "Tempo base",
+            "timeWithBonus": "Tempo con bonus del {percent}%",
+            "stepsWithoutTime": "{count, plural, one {{amount} passo non ha un tempo nel pacchetto e conta come 0 secondi.} other {{amount} passi non hanno un tempo nel pacchetto e contano come 0 secondi.}}",
+            "stepCount": "{count, plural, one {{amount} passo} other {{amount} passi}}",
+            "buildingRequirements": "Requisiti degli edifici",
+            "unmet": "Prerequisiti non soddisfatti",
+            "unmetNone": "Nessuno per questi obiettivi.",
+            "unmetItem": "{name} livello {level} richiede {requires} livello {requiresLevel}"
+        },
+        "export": {
+            "button": "Esporta negli Eventi principali",
+            "empty": "Aggiungi un obiettivo al piano per esportarlo.",
+            "speedupMinutes": "Minuti di accelerazione ricerca",
+            "power": "Potenza guadagnata con la ricerca",
+            "computed": "Calcolato dall'app dal risultato del piano.",
+            "unscored": "Nessun evento assegna punti a {name}."
+        }
+    },
+    "view": {
+        "ofTotal": "{count} di {total}",
+        "undo": "Annulla",
+        "massSetApplied": {
+            "title": "Impostazione in blocco applicata",
+            "message": "{nodes} aggiornati."
+        },
+        "started": {
+            "title": "Ricerca avviata",
+            "message": "{name}, da livello {from} a {to}."
+        },
+        "manage": {
+            "slotLabel": "{queue}, {category}",
+            "finishText": "Completa potenziamento porta {name} al livello {level}, libera la coda {queue} e aggiunge il potenziamento alla tua Cronologia. A zero tempo rimasto, il nodo e la scheda della coda dicono Pronto da completare. Niente si completa da solo, perché potresti aver usato accelerazioni."
+        },
+        "finished": {
+            "title": "{name} ricercato",
+            "message": "Ora livello {level}. Aggiunto alla Cronologia."
+        },
+        "cancelled": {
+            "title": "Ricerca di {name} annullata",
+            "message": "Il livello resta com'era. Correggi le scorte in Risorse se serve."
+        },
+        "subline": {
+            "researchCenter": "Research Center {level}",
+            "warAcademy": "War Academy {level}"
+        },
+        "stats": {
+            "maxed": "Nodi al massimo, {percent}% dell'albero",
+            "power": "Potenza di ricerca, la potenza di ogni livello ricercato",
+            "withoutTimeNone": "Senza tempo di ricerca, ogni livello ne ha uno",
+            "withoutTimeSome": "Senza tempo di ricerca, mostrato come Sconosciuto",
+            "locked": "Bloccati da età del server o requisiti"
+        },
+        "tabLockedNote": "{reason} Puoi comunque impostare obiettivi in Piano.",
+        "lockedByRequirement": "{count} nodi su {total} in questa scheda sono bloccati da un requisito.",
+        "search": {
+            "label": "Cerca nodi",
+            "placeholder": "Cerca nodi per nome o bonus"
+        },
+        "massSet": "Imposta in blocco",
+        "layout": {
+            "label": "Vista",
+            "grid": "Griglia",
+            "tree": "Albero"
+        },
+        "plan": "Piano",
+        "status": {
+            "tree": "{count} nodi nell'albero {tab}. Potenza di ricerca in questa scheda: {power}. Scorri per spostarti. I nodi che non corrispondono a ricerca o filtri sono attenuati.",
+            "grid": "Mostrati {shown} nodi {tab} su {count}. Potenza di ricerca in questa scheda: {power}. Qui gli obiettivi sono in sola lettura e si impostano in Piano."
+        },
+        "empty": {
+            "title": "Nessun nodo corrisponde",
+            "description": "Cambia la ricerca o azzera i filtri per vedere tutti i nodi.",
+            "reset": "Azzera ricerca e filtri"
+        },
+        "start": {
+            "description": "Segna una ricerca come in potenziamento",
+            "selectLabel": "Ricerca da potenziare",
+            "selectHelp": "Sono elencate solo le ricerche che puoi avviare ora. Quelle bloccate, al massimo o già in corso sono escluse. Una ricerca di Crescita, Economia o Battaglia usa la coda Ricerca. Una ricerca T11 o T12 usa la coda della War Academy.",
+            "timeLabel": "Tempo di ricerca",
+            "speedLabel": "Velocità di ricerca",
+            "slotLabel": "Coda",
+            "slotHelp": "Una ricerca alla volta in ogni coda. Quando la coda è occupata, questa scheda dice quando si libera."
+        }
     }
-  },
-  "tree": {
-    "legend": {
-      "max": "Max",
-      "inProgress": "In corso",
-      "notStarted": "Non iniziato",
-      "locked": "Bloccato"
-    },
-    "pillMax": "Max {max}",
-    "pillLevel": "Lv {level} di {max}",
-    "region": "Albero di ricerca {tab}",
-    "openNode": "{name}, {pill}. Apri i dettagli"
-  },
-  "plan": {
-    "title": "Pianifica Ricerca",
-    "description": "Risorse, tempo e potenza dal livello attuale all'obiettivo",
-    "saved": "Piano salvato {date}",
-    "close": "Chiudi",
-    "save": "Salva piano",
-    "goals": "Obiettivi, {nodes}",
-    "noGoals": "Ancora nessun obiettivo. Aggiungi sopra un nodo di ricerca, poi scegli il livello da raggiungere.",
-    "goalsHint": "Il livello attuale è quello nella pagina. Cambialo lì. Nella pagina gli obiettivi sono in sola lettura e si impostano qui.",
-    "failed": "Non è stato possibile calcolare il piano.",
-    "timeNote": "Il piano richiede {time} dopo il bonus velocità del {percent}%. Le tue scorte: Ricerca {research} min, Generale {general} min. Le accelerazioni generali contano per la ricerca.",
-    "percent": "{value}%",
-    "percentPlus": "+{value}%",
-    "appointment": {
-      "none": "Nessuna",
-      "regular": "Normale",
-      "supreme": "Suprema"
-    },
-    "add": {
-      "title": "Aggiungi un nodo di ricerca",
-      "none": "Ogni nodo è già nel piano o al livello massimo.",
-      "select": "Nodo di ricerca da aggiungere",
-      "button": "Aggiungi ricerca"
-    },
-    "speed": {
-      "title": "Velocità di ricerca",
-      "readOnly": "Sola lettura",
-      "carriedOver": "Ripresa dalla pagina Bonus.",
-      "turnedOff": "Disattivata in Impostazioni, sotto Applica i totali dei miei Bonus.",
-      "openBonuses": "Apri Bonus",
-      "stateBuff": "Bonus dello stato",
-      "vicePresident": "Vicepresidente",
-      "total": "Velocità di ricerca totale"
-    },
-    "goal": {
-      "level": "Livello {level}",
-      "to": "a",
-      "label": "Obiettivo di {name}",
-      "remove": "Rimuovi {name} dal piano"
-    },
-    "result": {
-      "title": "Risultato, {steps} passi",
-      "powerGained": "Potenza guadagnata",
-      "speedupMinutes": "Minuti di accelerazione necessari",
-      "baseTime": "Tempo base",
-      "timeWithBonus": "Tempo con bonus del {percent}%",
-      "stepsWithoutTime": "{count, plural, one {{amount} passo non ha un tempo nel pacchetto e conta come 0 secondi.} other {{amount} passi non hanno un tempo nel pacchetto e contano come 0 secondi.}}",
-      "stepCount": "{count, plural, one {{amount} passo} other {{amount} passi}}",
-      "buildingRequirements": "Requisiti degli edifici",
-      "unmet": "Prerequisiti non soddisfatti",
-      "unmetNone": "Nessuno per questi obiettivi.",
-      "unmetItem": "{name} livello {level} richiede {requires} livello {requiresLevel}"
-    },
-    "export": {
-      "button": "Esporta negli Eventi principali",
-      "empty": "Aggiungi un obiettivo al piano per esportarlo.",
-      "speedupMinutes": "Minuti di accelerazione ricerca",
-      "power": "Potenza guadagnata con la ricerca",
-      "computed": "Calcolato dall'app dal risultato del piano.",
-      "unscored": "Nessun evento assegna punti a {name}."
-    }
-  },
-  "view": {
-    "ofTotal": "{count} di {total}",
-    "undo": "Annulla",
-    "massSetApplied": {
-      "title": "Impostazione in blocco applicata",
-      "message": "{nodes} aggiornati."
-    },
-    "started": {
-      "title": "Ricerca avviata",
-      "message": "{name}, da livello {from} a {to}."
-    },
-    "manage": {
-      "slotLabel": "{queue}, {category}",
-      "finishText": "Completa potenziamento porta {name} al livello {level}, libera la coda {queue} e aggiunge il potenziamento alla tua Cronologia. A zero tempo rimasto, il nodo e la scheda della coda dicono Pronto da completare. Niente si completa da solo, perché potresti aver usato accelerazioni."
-    },
-    "finished": {
-      "title": "{name} ricercato",
-      "message": "Ora livello {level}. Aggiunto alla Cronologia."
-    },
-    "cancelled": {
-      "title": "Ricerca di {name} annullata",
-      "message": "Il livello resta com'era. Correggi le scorte in Risorse se serve."
-    },
-    "subline": {
-      "researchCenter": "Research Center {level}",
-      "warAcademy": "War Academy {level}"
-    },
-    "stats": {
-      "maxed": "Nodi al massimo, {percent}% dell'albero",
-      "power": "Potenza di ricerca, la potenza di ogni livello ricercato",
-      "withoutTimeNone": "Senza tempo di ricerca, ogni livello ne ha uno",
-      "withoutTimeSome": "Senza tempo di ricerca, mostrato come Sconosciuto",
-      "locked": "Bloccati da età del server o requisiti"
-    },
-    "tabLockedNote": "{reason} Puoi comunque impostare obiettivi in Piano.",
-    "lockedByRequirement": "{count} nodi su {total} in questa scheda sono bloccati da un requisito.",
-    "search": {
-      "label": "Cerca nodi",
-      "placeholder": "Cerca nodi per nome o bonus"
-    },
-    "massSet": "Imposta in blocco",
-    "layout": {
-      "label": "Vista",
-      "grid": "Griglia",
-      "tree": "Albero"
-    },
-    "plan": "Piano",
-    "status": {
-      "tree": "{count} nodi nell'albero {tab}. Potenza di ricerca in questa scheda: {power}. Scorri per spostarti. I nodi che non corrispondono a ricerca o filtri sono attenuati.",
-      "grid": "Mostrati {shown} nodi {tab} su {count}. Potenza di ricerca in questa scheda: {power}. Qui gli obiettivi sono in sola lettura e si impostano in Piano."
-    },
-    "empty": {
-      "title": "Nessun nodo corrisponde",
-      "description": "Cambia la ricerca o azzera i filtri per vedere tutti i nodi.",
-      "reset": "Azzera ricerca e filtri"
-    },
-    "start": {
-      "description": "Segna una ricerca come in potenziamento",
-      "selectLabel": "Ricerca da potenziare",
-      "selectHelp": "Sono elencate solo le ricerche che puoi avviare ora. Quelle bloccate, al massimo o già in corso sono escluse. Una ricerca di Crescita, Economia o Battaglia usa la coda Ricerca. Una ricerca T11 o T12 usa la coda della War Academy.",
-      "timeLabel": "Tempo di ricerca",
-      "speedLabel": "Velocità di ricerca",
-      "slotLabel": "Coda",
-      "slotHelp": "Una ricerca alla volta in ogni coda. Quando la coda è occupata, questa scheda dice quando si libera."
-    }
-  }
 }

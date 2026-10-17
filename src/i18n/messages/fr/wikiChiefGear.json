@@ -1,56 +1,56 @@
 {
-  "line": "{rows} lignes d'équipement, {slots} emplacements et {rates} taux d'échange. Référence uniquement, rien ici n'est enregistré pour votre chef.",
-  "slots": {
-    "heading": "Emplacements d'équipement",
-    "rarities": "Icônes {first} à {last}",
-    "detailLine": "Renforce les troupes {troopType}. Une icône par rareté."
-  },
-  "table": {
-    "heading": "Table d'équipement",
-    "meta": "{rows} lignes, {tiers} paliers",
-    "searchLabel": "Rechercher",
-    "searchPlaceholder": "Rechercher parmi {rows} lignes d'équipement",
-    "tierLabel": "Palier",
-    "allTiers": "Tous les paliers",
-    "starsLabel": "Étoiles",
-    "allStars": "Toutes les étoiles",
-    "starsOption": "Étoiles {stars}",
-    "empty": "Aucune ligne d'équipement ne correspond à vos filtres."
-  },
-  "columns": {
-    "row": "Ligne",
-    "materials": "Matériaux",
-    "stats": "Stats",
-    "power": "Puissance",
-    "score": "Score",
-    "capacity": "Cap. déploiement"
-  },
-  "cells": {
-    "none": "Aucun",
-    "percent": "{value} %"
-  },
-  "tiers": {
-    "heading": "Paliers",
-    "meta": "{tiers} libellés de palier",
-    "tier": "Palier",
-    "rows": "Lignes",
-    "stats": "Stats, première à dernière",
-    "power": "Puissance à la dernière ligne",
-    "statsRange": "{first} % à {last} %"
-  },
-  "exchange": {
-    "heading": "Taux d'échange des matériaux",
-    "exchange": "Échange",
-    "from": "De",
-    "to": "Vers",
-    "weeklyLimit": "Limite hebdomadaire"
-  },
-  "setBonus": {
-    "heading": "Bonus de set",
-    "meta": "{tiers} paliers",
-    "hint": "Portez 3 pièces pour un bonus de Défense et 6 pièces pour un bonus d'Attaque. Le pourcentage dépend du palier des pièces portées. Il s'applique aux troupes {types}.",
-    "pieceSet": "Set de {pieces} pièces",
-    "tier": "Palier",
-    "pieces": "{pieces} pièces, {stat}"
-  }
+    "line": "{rows} lignes d'équipement, {slots} emplacements et {rates} taux d'échange. Référence uniquement, rien ici n'est enregistré pour votre chef.",
+    "slots": {
+        "heading": "Emplacements d'équipement",
+        "rarities": "Icônes {first} à {last}",
+        "detailLine": "Renforce les troupes {troopType}. Une icône par rareté."
+    },
+    "table": {
+        "heading": "Table d'équipement",
+        "meta": "{rows} lignes, {tiers} paliers",
+        "searchLabel": "Rechercher",
+        "searchPlaceholder": "Rechercher parmi {rows} lignes d'équipement",
+        "tierLabel": "Palier",
+        "allTiers": "Tous les paliers",
+        "starsLabel": "Étoiles",
+        "allStars": "Toutes les étoiles",
+        "starsOption": "Étoiles {stars}",
+        "empty": "Aucune ligne d'équipement ne correspond à vos filtres."
+    },
+    "columns": {
+        "row": "Ligne",
+        "materials": "Matériaux",
+        "stats": "Stats",
+        "power": "Puissance",
+        "score": "Score",
+        "capacity": "Cap. déploiement"
+    },
+    "cells": {
+        "none": "Aucun",
+        "percent": "{value} %"
+    },
+    "tiers": {
+        "heading": "Paliers",
+        "meta": "{tiers} libellés de palier",
+        "tier": "Palier",
+        "rows": "Lignes",
+        "stats": "Stats, première à dernière",
+        "power": "Puissance à la dernière ligne",
+        "statsRange": "{first} % à {last} %"
+    },
+    "exchange": {
+        "heading": "Taux d'échange des matériaux",
+        "exchange": "Échange",
+        "from": "De",
+        "to": "Vers",
+        "weeklyLimit": "Limite hebdomadaire"
+    },
+    "setBonus": {
+        "heading": "Bonus de set",
+        "meta": "{tiers} paliers",
+        "hint": "Portez 3 pièces pour un bonus de Défense et 6 pièces pour un bonus d'Attaque. Le pourcentage dépend du palier des pièces portées. Il s'applique aux troupes {types}.",
+        "pieceSet": "Set de {pieces} pièces",
+        "tier": "Palier",
+        "pieces": "{pieces} pièces, {stat}"
+    }
 }

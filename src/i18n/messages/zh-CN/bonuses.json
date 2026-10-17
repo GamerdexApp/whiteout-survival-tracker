@@ -1,115 +1,115 @@
 {
-  "title": "加成",
-  "all": "全部",
-  "list": {
-    "separator": "、",
-    "andLast": "{rest}和{last}"
-  },
-  "sourceTypes": {
-    "account": "账号",
-    "hero": "英雄",
-    "expert": "专家",
-    "research": "研究",
-    "allianceTech": "联盟科技",
-    "allianceFacility": "联盟设施",
-    "alliancePrestige": "联盟声望建筑",
-    "vip": "VIP",
-    "building": "建筑",
-    "skin": "皮肤",
-    "tundraAlbum": "冰原相册",
-    "collection": "收藏",
-    "decoration": "我的岛屿",
-    "treeOfLife": "我的岛屿",
-    "castleAppointment": "Castle 席位",
-    "pet": "宠物",
-    "chiefGear": "领主装备",
-    "chiefGearSet": "领主装备套装加成",
-    "chiefCharm": "领主饰品",
-    "chiefOrder": "领主命令",
-    "presidentSkill": "总统技能",
-    "marchQueuePack": "行军队列礼包"
-  },
-  "unit": {
-    "percent": "{value}%",
-    "hours": "{value}小时",
-    "seconds": "{value}秒",
-    "plain": "{value}"
-  },
-  "view": {
-    "subline": "{name} · 汇总其他页面的所有加成。此页面不存储任何内容。",
-    "tiles": {
-      "stats": "结果中的属性",
-      "groups": "含属性的分组",
-      "sources": "有贡献的来源类型"
+    "title": "加成",
+    "all": "全部",
+    "list": {
+        "separator": "、",
+        "andLast": "{rest}和{last}"
     },
-    "pending": {
-      "title": "尚未计入所有来源。",
-      "text": "下方每个来源都从存储它的页面读取。这些页面建好之前不会有贡献：{pending}。{unstored}尚未被任何页面存储。"
+    "sourceTypes": {
+        "account": "账号",
+        "hero": "英雄",
+        "expert": "专家",
+        "research": "研究",
+        "allianceTech": "联盟科技",
+        "allianceFacility": "联盟设施",
+        "alliancePrestige": "联盟声望建筑",
+        "vip": "VIP",
+        "building": "建筑",
+        "skin": "皮肤",
+        "tundraAlbum": "冰原相册",
+        "collection": "收藏",
+        "decoration": "我的岛屿",
+        "treeOfLife": "我的岛屿",
+        "castleAppointment": "Castle 席位",
+        "pet": "宠物",
+        "chiefGear": "领主装备",
+        "chiefGearSet": "领主装备套装加成",
+        "chiefCharm": "领主饰品",
+        "chiefOrder": "领主命令",
+        "presidentSkill": "总统技能",
+        "marchQueuePack": "行军队列礼包"
     },
-    "rulesTitle": "数字的计算方式",
-    "rules": {
-      "affinity": {
-        "title": "专家亲密度",
-        "text": "专家提供的基础加成随亲密度等级增长。在 10、20 直到 100 级时，专家必须进阶。在此之前，按上一级的加成计算。"
-      },
-      "albums": {
-        "title": "相册集齐后才计入",
-        "text": "Tundra Album 只有在 9 个拼图全部完成后才提供增益。"
-      },
-      "pets": {
-        "title": "宠物使用精炼值",
-        "text": "每只宠物按你在宠物页的设置，计入普通值或精炼值。"
-      },
-      "noNumber": {
-        "title": "没有数字就不计入",
-        "text": "数据中没有数字的来源不会产生加成，也不会显示为 0。"
-      },
-      "apart": {
-        "title": "分开计算",
-        "text": "百分比和固定值不会相加。盾兵、矛兵和弓兵的属性与部队属性分开。"
-      },
-      "time": {
-        "title": "时间属性",
-        "text": "建造速度加成是每次建造节省的小时数。盟友帮助时间以秒计。每项都显示其单位。"
-      }
+    "unit": {
+        "percent": "{value}%",
+        "hours": "{value}小时",
+        "seconds": "{value}秒",
+        "plain": "{value}"
     },
-    "search": {
-      "label": "搜索属性",
-      "placeholder": "搜索属性"
+    "view": {
+        "subline": "{name} · 汇总其他页面的所有加成。此页面不存储任何内容。",
+        "tiles": {
+            "stats": "结果中的属性",
+            "groups": "含属性的分组",
+            "sources": "有贡献的来源类型"
+        },
+        "pending": {
+            "title": "尚未计入所有来源。",
+            "text": "下方每个来源都从存储它的页面读取。这些页面建好之前不会有贡献：{pending}。{unstored}尚未被任何页面存储。"
+        },
+        "rulesTitle": "数字的计算方式",
+        "rules": {
+            "affinity": {
+                "title": "专家亲密度",
+                "text": "专家提供的基础加成随亲密度等级增长。在 10、20 直到 100 级时，专家必须进阶。在此之前，按上一级的加成计算。"
+            },
+            "albums": {
+                "title": "相册集齐后才计入",
+                "text": "Tundra Album 只有在 9 个拼图全部完成后才提供增益。"
+            },
+            "pets": {
+                "title": "宠物使用精炼值",
+                "text": "每只宠物按你在宠物页的设置，计入普通值或精炼值。"
+            },
+            "noNumber": {
+                "title": "没有数字就不计入",
+                "text": "数据中没有数字的来源不会产生加成，也不会显示为 0。"
+            },
+            "apart": {
+                "title": "分开计算",
+                "text": "百分比和固定值不会相加。盾兵、矛兵和弓兵的属性与部队属性分开。"
+            },
+            "time": {
+                "title": "时间属性",
+                "text": "建造速度加成是每次建造节省的小时数。盟友帮助时间以秒计。每项都显示其单位。"
+            }
+        },
+        "search": {
+            "label": "搜索属性",
+            "placeholder": "搜索属性"
+        },
+        "views": {
+            "label": "视图",
+            "stat": "按属性",
+            "source": "按来源"
+        },
+        "empty": {
+            "noBonusesTitle": "还没有加成",
+            "noBonusesDescription": "存储加成的页面填写后，加成就会出现。",
+            "noMatchTitle": "没有匹配的属性",
+            "noMatchDescription": "修改搜索或分组。"
+        },
+        "statCount": "{count, plural, other {{amount}项属性}}",
+        "sourceCount": "{count, plural, other {{amount}个来源}}",
+        "columns": {
+            "statAndSource": "属性与来源",
+            "sourceType": "来源类型",
+            "counted": "计入值"
+        }
     },
-    "views": {
-      "label": "视图",
-      "stat": "按属性",
-      "source": "按来源"
-    },
-    "empty": {
-      "noBonusesTitle": "还没有加成",
-      "noBonusesDescription": "存储加成的页面填写后，加成就会出现。",
-      "noMatchTitle": "没有匹配的属性",
-      "noMatchDescription": "修改搜索或分组。"
-    },
-    "statCount": "{count, plural, other {{amount}项属性}}",
-    "sourceCount": "{count, plural, other {{amount}个来源}}",
-    "columns": {
-      "statAndSource": "属性与来源",
-      "sourceType": "来源类型",
-      "counted": "计入值"
+    "eventRules": {
+        "title": "活动增益规则",
+        "intro": "说明活动期间哪些加成类型仍然有效。这些是规则而不是数字，因此不会加到上方的合计中。",
+        "event": "活动",
+        "columns": {
+            "cityBonusWarsBuffs": "城市加成",
+            "deploymentCapacity": "出兵容量",
+            "territoryBonuses": "领地",
+            "marchAccelerator": "行军加速"
+        },
+        "applicability": {
+            "yes": "是",
+            "no": "否",
+            "partial": "部分"
+        }
     }
-  },
-  "eventRules": {
-    "title": "活动增益规则",
-    "intro": "说明活动期间哪些加成类型仍然有效。这些是规则而不是数字，因此不会加到上方的合计中。",
-    "event": "活动",
-    "columns": {
-      "cityBonusWarsBuffs": "城市加成",
-      "deploymentCapacity": "出兵容量",
-      "territoryBonuses": "领地",
-      "marchAccelerator": "行军加速"
-    },
-    "applicability": {
-      "yes": "是",
-      "no": "否",
-      "partial": "部分"
-    }
-  }
 }

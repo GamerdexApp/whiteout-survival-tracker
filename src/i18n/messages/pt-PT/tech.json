@@ -1,98 +1,98 @@
 {
-  "page": {
-    "title": "Tecnologia"
-  },
-  "view": {
-    "subline": "{chief} · {count} nós de tecnologia da aliança em Growth, Territory e Battle"
-  },
-  "summary": {
-    "maxed": "No máximo",
-    "inProgress": "Em curso",
-    "notStarted": "Não iniciado",
-    "locked": "Bloqueado"
-  },
-  "status": {
-    "maxed": "No máximo",
-    "inProgress": "Em curso",
-    "notStarted": "Não iniciado",
-    "locked": "Bloqueado"
-  },
-  "tabs": {
-    "label": "Categorias de tecnologia"
-  },
-  "categories": {
-    "Growth": "Growth",
-    "Territory": "Territory",
-    "Battle": "Battle"
-  },
-  "filters": {
-    "search": "Pesquisar",
-    "searchLabel": "Pesquisar nós de tecnologia",
-    "searchPlaceholder": "Nome do nó",
-    "tier": "Tier",
-    "allTiers": "Todos os tiers",
-    "tierOption": "Tier {tier}",
-    "status": "Estado",
-    "allStatuses": "Todos",
-    "button": "Pesquisa e filtros",
-    "title": "Pesquisa e filtros",
-    "description": "Encontrar nós de tecnologia por nome, tier e estado",
-    "reset": "Repor filtros",
-    "done": "Mostrar {count}",
-    "shown": "{shown} de {total} nós mostrados"
-  },
-  "table": {
-    "node": "Nó",
-    "level": "Nível",
-    "bonus": "Bónus",
-    "cost": "Custo do nível seguinte",
-    "time": "Tempo",
-    "needs": "Requer"
-  },
-  "node": {
-    "tierDescription": "Tier {tier} · {description}",
-    "levelLabel": "Nível de {name}",
-    "levelOf": "{level} / {max}",
-    "open": "Abrir {name}",
-    "bonusOf": "{now} de {max}",
-    "bonusNone": "Ainda nenhum, máx. {max}",
-    "noBonus": "Sem bónus",
-    "maxed": "No máximo",
-    "noTime": "Sem tempo",
-    "readyToUpgrade": "Pronto a melhorar",
-    "nothingNeeded": "Nada necessário",
-    "needsPart": "Requer {name} nível {level}",
-    "costLine": "{name} {amount}",
-    "lockedHint": "Bloqueado até {names}",
-    "requirementPart": "{name} nível {level}"
-  },
-  "flyout": {
-    "title": "{name}",
-    "subtitle": "{category}, tier {tier}. {description}",
-    "close": "Fechar",
-    "level": "Nível",
-    "bonusNow": "Bónus agora",
-    "needsFor": "Requer para o nível {level}",
-    "needsNothing": "Nada necessário.",
-    "needsLine": "Requer o nível {need}, o atual é o nível {have}",
-    "met": "Cumprido",
-    "notMet": "Não cumprido",
-    "requiredBy": "Exigido por",
-    "requiredByNone": "Nenhum outro nó precisa deste.",
-    "requiredByLine": "{category}, tier {tier}, a partir do nível {from} requer {name} nível {need}",
-    "allLevels": "Todos os níveis",
-    "levelRow": "Nível {level}",
-    "done": "Feito",
-    "next": "Seguinte",
-    "later": "Mais tarde",
-    "remaining": "Falta até ao máximo",
-    "derived": "Calculado",
-    "remainingNone": "Nada em falta. Este nó está no máximo.",
-    "remainingLine": "{cost}",
-    "remainingTime": "{time}"
-  },
-  "empty": {
-    "title": "Nenhum nó corresponde",
-    "description": "Alterar a pesquisa ou os filtros para ver mais nós."
-  }
+    "page": {
+        "title": "Tecnologia"
+    },
+    "view": {
+        "subline": "{chief} · {count} nós de tecnologia da aliança em Growth, Territory e Battle"
+    },
+    "summary": {
+        "maxed": "No máximo",
+        "inProgress": "Em curso",
+        "notStarted": "Não iniciado",
+        "locked": "Bloqueado"
+    },
+    "status": {
+        "maxed": "No máximo",
+        "inProgress": "Em curso",
+        "notStarted": "Não iniciado",
+        "locked": "Bloqueado"
+    },
+    "tabs": {
+        "label": "Categorias de tecnologia"
+    },
+    "categories": {
+        "Growth": "Growth",
+        "Territory": "Territory",
+        "Battle": "Battle"
+    },
+    "filters": {
+        "search": "Pesquisar",
+        "searchLabel": "Pesquisar nós de tecnologia",
+        "searchPlaceholder": "Nome do nó",
+        "tier": "Tier",
+        "allTiers": "Todos os tiers",
+        "tierOption": "Tier {tier}",
+        "status": "Estado",
+        "allStatuses": "Todos",
+        "button": "Pesquisa e filtros",
+        "title": "Pesquisa e filtros",
+        "description": "Encontrar nós de tecnologia por nome, tier e estado",
+        "reset": "Repor filtros",
+        "done": "Mostrar {count}",
+        "shown": "{shown} de {total} nós mostrados"
+    },
+    "table": {
+        "node": "Nó",
+        "level": "Nível",
+        "bonus": "Bónus",
+        "cost": "Custo do nível seguinte",
+        "time": "Tempo",
+        "needs": "Requer"
+    },
+    "node": {
+        "tierDescription": "Tier {tier} · {description}",
+        "levelLabel": "Nível de {name}",
+        "levelOf": "{level} / {max}",
+        "open": "Abrir {name}",
+        "bonusOf": "{now} de {max}",
+        "bonusNone": "Ainda nenhum, máx. {max}",
+        "noBonus": "Sem bónus",
+        "maxed": "No máximo",
+        "noTime": "Sem tempo",
+        "readyToUpgrade": "Pronto a melhorar",
+        "nothingNeeded": "Nada necessário",
+        "needsPart": "Requer {name} nível {level}",
+        "costLine": "{name} {amount}",
+        "lockedHint": "Bloqueado até {names}",
+        "requirementPart": "{name} nível {level}"
+    },
+    "flyout": {
+        "title": "{name}",
+        "subtitle": "{category}, tier {tier}. {description}",
+        "close": "Fechar",
+        "level": "Nível",
+        "bonusNow": "Bónus agora",
+        "needsFor": "Requer para o nível {level}",
+        "needsNothing": "Nada necessário.",
+        "needsLine": "Requer o nível {need}, o atual é o nível {have}",
+        "met": "Cumprido",
+        "notMet": "Não cumprido",
+        "requiredBy": "Exigido por",
+        "requiredByNone": "Nenhum outro nó precisa deste.",
+        "requiredByLine": "{category}, tier {tier}, a partir do nível {from} requer {name} nível {need}",
+        "allLevels": "Todos os níveis",
+        "levelRow": "Nível {level}",
+        "done": "Feito",
+        "next": "Seguinte",
+        "later": "Mais tarde",
+        "remaining": "Falta até ao máximo",
+        "derived": "Calculado",
+        "remainingNone": "Nada em falta. Este nó está no máximo.",
+        "remainingLine": "{cost}",
+        "remainingTime": "{time}"
+    },
+    "empty": {
+        "title": "Nenhum nó corresponde",
+        "description": "Alterar a pesquisa ou os filtros para ver mais nós."
+    }
 }

@@ -1,49 +1,49 @@
 {
-  "line": "Строк амулетов: {rows}, слотов: {slots}, курсов обмена: {rates}. Только справка, ничего не сохраняется для вашего вождя.",
-  "slots": {
-    "heading": "Слоты амулетов",
-    "meta": "Слотов: {slots}, по одному на каждый тип войск",
-    "icons": "{count, plural, one {{amount} значок уровня} few {{amount} значка уровня} many {{amount} значков уровня} other {{amount} значка уровня}}",
-    "recordLine": "Усиливает войска ({troopType}). По одному значку на каждый уровень."
-  },
-  "table": {
-    "heading": "Таблица амулетов",
-    "meta": "Строк: {rows}, уровней: {levels}",
-    "searchLabel": "Поиск",
-    "searchPlaceholder": "Поиск среди строк амулетов: {rows}",
-    "levelLabel": "Уровень",
-    "allLevels": "Все уровни",
-    "levelOption": "Уровень {level}",
-    "stageLabel": "Этап",
-    "allStages": "Все этапы",
-    "stageOption": "Этап {stage}",
-    "empty": "Подходящих строк амулетов нет."
-  },
-  "columns": {
-    "row": "Строка",
-    "materials": "Материалы",
-    "stats": "Характеристики",
-    "power": "Мощь",
-    "score": "Очки"
-  },
-  "cells": {
-    "none": "Нет",
-    "percent": "{value}%"
-  },
-  "levels": {
-    "heading": "Уровни",
-    "level": "Уровень",
-    "levelName": "Уровень {level}",
-    "rows": "Строки",
-    "stats": "Характеристики, от первой к последней",
-    "power": "Мощь в последней строке",
-    "statsRange": "от {first}% до {last}%"
-  },
-  "exchange": {
-    "heading": "Курсы обмена материалов",
-    "exchange": "Обмен",
-    "from": "Отдать",
-    "to": "Получить",
-    "weeklyLimit": "Недельный лимит"
-  }
+    "line": "Строк амулетов: {rows}, слотов: {slots}, курсов обмена: {rates}. Только справка, ничего не сохраняется для вашего вождя.",
+    "slots": {
+        "heading": "Слоты амулетов",
+        "meta": "Слотов: {slots}, по одному на каждый тип войск",
+        "icons": "{count, plural, one {{amount} значок уровня} few {{amount} значка уровня} many {{amount} значков уровня} other {{amount} значка уровня}}",
+        "recordLine": "Усиливает войска ({troopType}). По одному значку на каждый уровень."
+    },
+    "table": {
+        "heading": "Таблица амулетов",
+        "meta": "Строк: {rows}, уровней: {levels}",
+        "searchLabel": "Поиск",
+        "searchPlaceholder": "Поиск среди строк амулетов: {rows}",
+        "levelLabel": "Уровень",
+        "allLevels": "Все уровни",
+        "levelOption": "Уровень {level}",
+        "stageLabel": "Этап",
+        "allStages": "Все этапы",
+        "stageOption": "Этап {stage}",
+        "empty": "Подходящих строк амулетов нет."
+    },
+    "columns": {
+        "row": "Строка",
+        "materials": "Материалы",
+        "stats": "Характеристики",
+        "power": "Мощь",
+        "score": "Очки"
+    },
+    "cells": {
+        "none": "Нет",
+        "percent": "{value}%"
+    },
+    "levels": {
+        "heading": "Уровни",
+        "level": "Уровень",
+        "levelName": "Уровень {level}",
+        "rows": "Строки",
+        "stats": "Характеристики, от первой к последней",
+        "power": "Мощь в последней строке",
+        "statsRange": "от {first}% до {last}%"
+    },
+    "exchange": {
+        "heading": "Курсы обмена материалов",
+        "exchange": "Обмен",
+        "from": "Отдать",
+        "to": "Получить",
+        "weeklyLimit": "Недельный лимит"
+    }
 }

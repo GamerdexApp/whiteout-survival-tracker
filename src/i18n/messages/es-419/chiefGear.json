@@ -1,176 +1,176 @@
 {
-  "none": "Ninguno",
-  "charmLabel": "Amuleto {number}",
-  "view": {
-    "title": "Equipo del Jefe",
-    "tabsLabel": "Equipo del jefe",
-    "gearSubline": "{name} · seis ranuras, 150 filas de mejora",
-    "charmsSubline": "{name} · 6 piezas de equipo, 3 amuletos cada una, 75 filas de mejora",
-    "tabs": {
-      "gear": "Equipo del Jefe",
-      "charms": "Amuletos del Jefe"
-    }
-  },
-  "shared": {
-    "plan": "Plan",
-    "autoSaveHint": "Cada cambio se guarda al instante. Los botones avanzan una fila a la vez en el orden del paquete.",
-    "scoreToGain": "Puntaje por ganar",
-    "notes": "Notas",
-    "package": "Paquete"
-  },
-  "gear": {
-    "scoreNow": "Puntaje actual del equipo, seis ranuras",
-    "powerNow": "Poder actual del equipo",
-    "stepsToGoals": "Pasos para todas las metas",
-    "goalsHint": "Aquí las metas son de solo lectura. Defínelas en Plan y presiona Guardar plan.",
-    "stepWord": "pasos",
-    "tiers": {
-      "title": "Rangos",
-      "description": "El paquete etiqueta 150 filas con {count} rangos. Un rango resaltado tiene al menos una de tus piezas.",
-      "rows": "{rows} filas",
-      "names": {
-        "EpicT1": "Epic T1",
-        "MythicT1": "Mythic T1",
-        "MythicT2": "Mythic T2",
-        "LegendaryT1": "Legendary T1",
-        "LegendaryT2": "Legendary T2",
-        "LegendaryT3": "Legendary T3",
-        "LegendaryT4": "Legendary T4",
-        "LegendaryT5": "Legendary T5",
-        "LegendaryT6": "Legendary T6"
-      }
+    "none": "Ninguno",
+    "charmLabel": "Amuleto {number}",
+    "view": {
+        "title": "Equipo del Jefe",
+        "tabsLabel": "Equipo del jefe",
+        "gearSubline": "{name} · seis ranuras, 150 filas de mejora",
+        "charmsSubline": "{name} · 6 piezas de equipo, 3 amuletos cada una, 75 filas de mejora",
+        "tabs": {
+            "gear": "Equipo del Jefe",
+            "charms": "Amuletos del Jefe"
+        }
     },
-    "notes": {
-      "setBonus": {
-        "title": "Reglas de bonificación de conjunto",
-        "body": "3 piezas del mismo rango dan Defensa y 6 piezas dan Ataque, para los tres tipos de tropa. Una pieza sin nivel no cuenta. Cada rango tiene un solo valor."
-      },
-      "troopType": {
-        "title": "El tipo de tropa se ingresó a mano",
-        "body": "Cap y Watch mejoran a los Lancer, Coat y Pants a la Infantry, Ring y Weapon a los Marksman. El autor del paquete lo escribió a partir del texto de la wiki."
-      },
-      "capacity": {
-        "title": "La capacidad es 0 en las primeras filas",
-        "body": "Las primeras 26 filas no tienen capacidad de despliegue en el paquete, por eso muestra 0 hasta que los datos tengan valores."
-      }
-    }
-  },
-  "charms": {
-    "scoreNow": "Puntaje actual de amuletos, 18 amuletos",
-    "powerNow": "Poder actual de amuletos",
-    "stagesToGoals": "Etapas para todas las metas",
-    "goalsHint": "Aquí las metas son de solo lectura y se definen en Plan.",
-    "stepWord": "etapas",
-    "slotMeta": "{troop} · 3 amuletos",
-    "slotStages": ", {stages} etapas para las metas",
-    "notes": {
-      "secrets": {
-        "title": "Charm Secrets empieza en el nivel 11",
-        "body": "Desde el nivel 11 etapa 1, una etapa requiere Charm Secrets. Las etapas anteriores solo listan Charm Guide y Charm Design."
-      },
-      "look": {
-        "title": "Los amuletos cambian de aspecto en cada nivel",
-        "body": "Cada amuleto tiene 18 íconos, uno por nivel. Cada pieza de equipo lleva tres amuletos, y siguen el tipo de tropa de la pieza."
-      },
-      "estimate": {
-        "title": "Los puntajes por etapa son una estimación",
-        "body": "El puntaje de un nivel se reparte por igual entre las etapas que llevan a él. El juego no confirma el reparto."
-      }
-    }
-  },
-  "badge": {
-    "tier": "Rango {tier}",
-    "stars": "{count, plural, one {{amount} estrella} other {{amount} estrellas}}",
-    "tierAndStars": "{tier}, {stars}"
-  },
-  "row": {
-    "level": "Nivel de {title}",
-    "progressLabel": "Progreso de {title} en {total} filas",
-    "progress": "{progress} de {total}",
-    "stepsToGoal": " · {steps} para la meta",
-    "goal": "Meta {name}",
-    "noGoal": "Sin meta",
-    "stats": "Estadística {stat} · Poder {power}",
-    "statPercent": "{percent}%",
-    "capacity": " · Capacidad {capacity}",
-    "lockedCurrent": "El nivel guardado {name} está bloqueado por la antigüedad del servidor y no se cuenta. {requirement}.",
-    "lockedGoal": "La meta guardada {name} está bloqueada por la antigüedad del servidor y no se planifica. {requirement}."
-  },
-  "summary": {
-    "title": "Falta para todas las metas",
-    "derived": "Calculado",
-    "score": "puntaje",
-    "powerGain": "aumento de poder",
-    "noGoals": "No hay metas definidas. Defínelas en Plan.",
-    "openPlan": "Abre Plan para ver puntos de eventos y el desglose"
-  },
-  "setBonus": {
-    "title": "Bonificaciones de conjunto desbloqueadas",
-    "pieceSet": "Conjunto de {pieces} piezas",
-    "active": "Activa",
-    "notActive": "Inactiva",
-    "value": "{stat} +{percent}%",
-    "appliesTo": "Piezas {tierName}, para Infantería, Lancero y Tirador",
-    "needs": "Requiere {pieces} piezas del mismo rango. {stat} +0% por ahora."
-  },
-  "plan": {
+    "shared": {
+        "plan": "Plan",
+        "autoSaveHint": "Cada cambio se guarda al instante. Los botones avanzan una fila a la vez en el orden del paquete.",
+        "scoreToGain": "Puntaje por ganar",
+        "notes": "Notas",
+        "package": "Paquete"
+    },
     "gear": {
-      "title": "Planificar Equipo del Jefe",
-      "description": "Materiales, puntaje y poder del nivel actual a la meta",
-      "stepWord": "Pasos",
-      "conversionNote": "La verificación no cuenta las conversiones. El convertidor tiene siete tasas de intercambio, cada una con un límite semanal, por ejemplo 10 Design Plans por 1 Lunar Amber hasta 500 por semana."
+        "scoreNow": "Puntaje actual del equipo, seis ranuras",
+        "powerNow": "Poder actual del equipo",
+        "stepsToGoals": "Pasos para todas las metas",
+        "goalsHint": "Aquí las metas son de solo lectura. Defínelas en Plan y presiona Guardar plan.",
+        "stepWord": "pasos",
+        "tiers": {
+            "title": "Rangos",
+            "description": "El paquete etiqueta 150 filas con {count} rangos. Un rango resaltado tiene al menos una de tus piezas.",
+            "rows": "{rows} filas",
+            "names": {
+                "EpicT1": "Epic T1",
+                "MythicT1": "Mythic T1",
+                "MythicT2": "Mythic T2",
+                "LegendaryT1": "Legendary T1",
+                "LegendaryT2": "Legendary T2",
+                "LegendaryT3": "Legendary T3",
+                "LegendaryT4": "Legendary T4",
+                "LegendaryT5": "Legendary T5",
+                "LegendaryT6": "Legendary T6"
+            }
+        },
+        "notes": {
+            "setBonus": {
+                "title": "Reglas de bonificación de conjunto",
+                "body": "3 piezas del mismo rango dan Defensa y 6 piezas dan Ataque, para los tres tipos de tropa. Una pieza sin nivel no cuenta. Cada rango tiene un solo valor."
+            },
+            "troopType": {
+                "title": "El tipo de tropa se ingresó a mano",
+                "body": "Cap y Watch mejoran a los Lancer, Coat y Pants a la Infantry, Ring y Weapon a los Marksman. El autor del paquete lo escribió a partir del texto de la wiki."
+            },
+            "capacity": {
+                "title": "La capacidad es 0 en las primeras filas",
+                "body": "Las primeras 26 filas no tienen capacidad de despliegue en el paquete, por eso muestra 0 hasta que los datos tengan valores."
+            }
+        }
     },
-    "charm": {
-      "title": "Planificar Amuletos del Jefe",
-      "description": "Materiales, puntaje y poder del nivel actual a la meta",
-      "stepWord": "Etapas",
-      "conversionNote": "La verificación no cuenta las conversiones: 2 Charm Guides hacen 1 Charm Design y al revés, y 40 de cualquiera hacen 1 Charm Secrets."
+    "charms": {
+        "scoreNow": "Puntaje actual de amuletos, 18 amuletos",
+        "powerNow": "Poder actual de amuletos",
+        "stagesToGoals": "Etapas para todas las metas",
+        "goalsHint": "Aquí las metas son de solo lectura y se definen en Plan.",
+        "stepWord": "etapas",
+        "slotMeta": "{troop} · 3 amuletos",
+        "slotStages": ", {stages} etapas para las metas",
+        "notes": {
+            "secrets": {
+                "title": "Charm Secrets empieza en el nivel 11",
+                "body": "Desde el nivel 11 etapa 1, una etapa requiere Charm Secrets. Las etapas anteriores solo listan Charm Guide y Charm Design."
+            },
+            "look": {
+                "title": "Los amuletos cambian de aspecto en cada nivel",
+                "body": "Cada amuleto tiene 18 íconos, uno por nivel. Cada pieza de equipo lleva tres amuletos, y siguen el tipo de tropa de la pieza."
+            },
+            "estimate": {
+                "title": "Los puntajes por etapa son una estimación",
+                "body": "El puntaje de un nivel se reparte por igual entre las etapas que llevan a él. El juego no confirma el reparto."
+            }
+        }
     },
-    "saved": "Plan guardado {date}",
-    "close": "Cerrar",
-    "save": "Guardar plan",
-    "export": {
-      "button": "Exportar a Eventos principales",
-      "nothingToExport": "Define una meta por encima del nivel actual para exportar un plan.",
-      "gearScore": "Puntaje del Equipo del Jefe",
-      "charmScore": "Puntaje de los Amuletos del Jefe",
-      "power": "Poder ganado",
-      "powerReason": "Ninguna fila de Eventos principales puntúa el poder del Equipo ni de los Amuletos del Jefe."
+    "badge": {
+        "tier": "Rango {tier}",
+        "stars": "{count, plural, one {{amount} estrella} other {{amount} estrellas}}",
+        "tierAndStars": "{tier}, {stars}"
     },
-    "inputs": "Datos de entrada",
-    "slotTroop": "{slot}, {troop}",
-    "from": "Desde {level}",
-    "goalLabel": "Meta de {label}",
-    "slotGoalLabel": "Meta de {label} en {slot}",
-    "inputsHint": "El nivel actual es el de la página. Cámbialo allí. Las metas son de solo lectura en la página y se definen aquí.",
-    "result": "Resultado",
-    "score": "Puntaje",
-    "powerGain": "Aumento de poder",
-    "events": {
-      "svs": "SvS State of Power",
-      "allianceShowdown": "Alliance Showdown",
-      "kingOfIcefield": "King of Icefield",
-      "hallOfChief": "Hall of Chief"
+    "row": {
+        "level": "Nivel de {title}",
+        "progressLabel": "Progreso de {title} en {total} filas",
+        "progress": "{progress} de {total}",
+        "stepsToGoal": " · {steps} para la meta",
+        "goal": "Meta {name}",
+        "noGoal": "Sin meta",
+        "stats": "Estadística {stat} · Poder {power}",
+        "statPercent": "{percent}%",
+        "capacity": " · Capacidad {capacity}",
+        "lockedCurrent": "El nivel guardado {name} está bloqueado por la antigüedad del servidor y no se cuenta. {requirement}.",
+        "lockedGoal": "La meta guardada {name} está bloqueada por la antigüedad del servidor y no se planifica. {requirement}."
     },
-    "bySlot": "Por ranura",
-    "byCharm": "Por amuleto",
-    "columnSlot": "Ranura",
-    "columnCharm": "Amuleto",
-    "slotCharm": "{slot} {charm}",
-    "converter": {
-      "title": "Convertidor de materiales",
-      "spend": "Gastar",
-      "get": "Obtener",
-      "limit": "Límite",
-      "amount": "{quantity} {name}",
-      "perWeek": "{limit} por semana",
-      "noLimit": "Sin límite semanal"
+    "summary": {
+        "title": "Falta para todas las metas",
+        "derived": "Calculado",
+        "score": "puntaje",
+        "powerGain": "aumento de poder",
+        "noGoals": "No hay metas definidas. Defínelas en Plan.",
+        "openPlan": "Abre Plan para ver puntos de eventos y el desglose"
     },
-    "lockedCurrent": "El nivel guardado {name} está bloqueado por la antigüedad del servidor. {requirement}."
-  },
-  "lock": {
-    "title": "Bloqueado por la antigüedad del servidor",
-    "stop": "{name} (bloqueado, día {day})",
-    "group": "Desde {name}: {requirement}."
-  }
+    "setBonus": {
+        "title": "Bonificaciones de conjunto desbloqueadas",
+        "pieceSet": "Conjunto de {pieces} piezas",
+        "active": "Activa",
+        "notActive": "Inactiva",
+        "value": "{stat} +{percent}%",
+        "appliesTo": "Piezas {tierName}, para Infantería, Lancero y Tirador",
+        "needs": "Requiere {pieces} piezas del mismo rango. {stat} +0% por ahora."
+    },
+    "plan": {
+        "gear": {
+            "title": "Planificar Equipo del Jefe",
+            "description": "Materiales, puntaje y poder del nivel actual a la meta",
+            "stepWord": "Pasos",
+            "conversionNote": "La verificación no cuenta las conversiones. El convertidor tiene siete tasas de intercambio, cada una con un límite semanal, por ejemplo 10 Design Plans por 1 Lunar Amber hasta 500 por semana."
+        },
+        "charm": {
+            "title": "Planificar Amuletos del Jefe",
+            "description": "Materiales, puntaje y poder del nivel actual a la meta",
+            "stepWord": "Etapas",
+            "conversionNote": "La verificación no cuenta las conversiones: 2 Charm Guides hacen 1 Charm Design y al revés, y 40 de cualquiera hacen 1 Charm Secrets."
+        },
+        "saved": "Plan guardado {date}",
+        "close": "Cerrar",
+        "save": "Guardar plan",
+        "export": {
+            "button": "Exportar a Eventos principales",
+            "nothingToExport": "Define una meta por encima del nivel actual para exportar un plan.",
+            "gearScore": "Puntaje del Equipo del Jefe",
+            "charmScore": "Puntaje de los Amuletos del Jefe",
+            "power": "Poder ganado",
+            "powerReason": "Ninguna fila de Eventos principales puntúa el poder del Equipo ni de los Amuletos del Jefe."
+        },
+        "inputs": "Datos de entrada",
+        "slotTroop": "{slot}, {troop}",
+        "from": "Desde {level}",
+        "goalLabel": "Meta de {label}",
+        "slotGoalLabel": "Meta de {label} en {slot}",
+        "inputsHint": "El nivel actual es el de la página. Cámbialo allí. Las metas son de solo lectura en la página y se definen aquí.",
+        "result": "Resultado",
+        "score": "Puntaje",
+        "powerGain": "Aumento de poder",
+        "events": {
+            "svs": "SvS State of Power",
+            "allianceShowdown": "Alliance Showdown",
+            "kingOfIcefield": "King of Icefield",
+            "hallOfChief": "Hall of Chief"
+        },
+        "bySlot": "Por ranura",
+        "byCharm": "Por amuleto",
+        "columnSlot": "Ranura",
+        "columnCharm": "Amuleto",
+        "slotCharm": "{slot} {charm}",
+        "converter": {
+            "title": "Convertidor de materiales",
+            "spend": "Gastar",
+            "get": "Obtener",
+            "limit": "Límite",
+            "amount": "{quantity} {name}",
+            "perWeek": "{limit} por semana",
+            "noLimit": "Sin límite semanal"
+        },
+        "lockedCurrent": "El nivel guardado {name} está bloqueado por la antigüedad del servidor. {requirement}."
+    },
+    "lock": {
+        "title": "Bloqueado por la antigüedad del servidor",
+        "stop": "{name} (bloqueado, día {day})",
+        "group": "Desde {name}: {requirement}."
+    }
 }

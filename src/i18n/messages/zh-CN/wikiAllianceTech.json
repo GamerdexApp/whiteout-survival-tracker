@@ -1,54 +1,54 @@
 {
-  "line": "三个科技树共{total}项科技：成长{growth}，领地{territory}，战斗{battle}。仅供参考，这里的内容不会保存。",
-  "list": {
-    "title": "科技节点",
-    "categoriesLabel": "科技树",
-    "categories": {
-      "all": "全部",
-      "Growth": "成长",
-      "Territory": "领地",
-      "Battle": "战斗"
+    "line": "三个科技树共{total}项科技：成长{growth}，领地{territory}，战斗{battle}。仅供参考，这里的内容不会保存。",
+    "list": {
+        "title": "科技节点",
+        "categoriesLabel": "科技树",
+        "categories": {
+            "all": "全部",
+            "Growth": "成长",
+            "Territory": "领地",
+            "Battle": "战斗"
+        },
+        "search": "搜索",
+        "searchPlaceholder": "按名称或效果搜索科技",
+        "tier": "阶",
+        "allTiers": "全部阶",
+        "tierOption": "{tier}阶",
+        "empty": "没有符合此搜索的科技节点。",
+        "emptyHint": "清除搜索或筛选。",
+        "columns": {
+            "tech": "科技",
+            "category": "分类",
+            "tier": "阶",
+            "levels": "等级数",
+            "maxBonus": "最高加成",
+            "cost": "1 级费用",
+            "time": "1 级时间",
+            "requires": "1 级要求"
+        },
+        "mobileMeta": "{category}，{tier}阶，{levels}",
+        "count": "{count, plural, other {{amount}项科技}}"
     },
-    "search": "搜索",
-    "searchPlaceholder": "按名称或效果搜索科技",
-    "tier": "阶",
-    "allTiers": "全部阶",
-    "tierOption": "{tier}阶",
-    "empty": "没有符合此搜索的科技节点。",
-    "emptyHint": "清除搜索或筛选。",
-    "columns": {
-      "tech": "科技",
-      "category": "分类",
-      "tier": "阶",
-      "levels": "等级数",
-      "maxBonus": "最高加成",
-      "cost": "1 级费用",
-      "time": "1 级时间",
-      "requires": "1 级要求"
-    },
-    "mobileMeta": "{category}，{tier}阶，{levels}",
-    "count": "{count, plural, other {{amount}项科技}}"
-  },
-  "levels": "{count, plural, other {{amount}级}}",
-  "detail": {
-    "facts": "详情",
-    "levelsTitle": "等级",
-    "none": "无",
-    "fields": {
-      "category": "分类",
-      "tier": "阶",
-      "effect": "效果",
-      "stat": "属性",
-      "levels": "等级数"
-    },
-    "columns": {
-      "level": "等级",
-      "bonus": "加成",
-      "cost": "费用",
-      "time": "时间",
-      "requires": "要求"
-    },
-    "level": "{level}级",
-    "requirement": "{name} {level}级"
-  }
+    "levels": "{count, plural, other {{amount}级}}",
+    "detail": {
+        "facts": "详情",
+        "levelsTitle": "等级",
+        "none": "无",
+        "fields": {
+            "category": "分类",
+            "tier": "阶",
+            "effect": "效果",
+            "stat": "属性",
+            "levels": "等级数"
+        },
+        "columns": {
+            "level": "等级",
+            "bonus": "加成",
+            "cost": "费用",
+            "time": "时间",
+            "requires": "要求"
+        },
+        "level": "{level}级",
+        "requirement": "{name} {level}级"
+    }
 }

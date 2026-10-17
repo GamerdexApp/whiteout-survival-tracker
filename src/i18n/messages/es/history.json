@@ -1,102 +1,102 @@
 {
-  "page": { "title": "Historial" },
-  "events": {
-    "svs": "SvS",
-    "showdown": "Alliance Showdown",
-    "king": "King of Icefield",
-    "hall": "Hall of Chief"
-  },
-  "title": {
-    "dated": "{event}, {start} a {end}",
-    "undated": "{event}"
-  },
-  "ended": "Terminado {date}",
-  "tabs": { "label": "Filtrar por evento", "all": "Todos los eventos" },
-  "list": {
-    "intro": "Eventos que terminaste desde el Registro de eventos, del más reciente al más antiguo. Las puntuaciones son los Días 1 a 5 en SvS, y la fase de batalla se cuenta aparte. Abre un evento para ver su plan frente al resultado y sus mejoras planificadas.",
-    "event": "Evento",
-    "plan": "Plan",
-    "actual": "Real",
-    "diff": "Dif.",
-    "rank": "Puesto",
-    "alliance": "Alianza",
-    "rankLine": "Puesto {rank}, alianza {alliance}",
-    "open": "Abrir",
-    "openEvent": "Abrir {name}",
-    "none": "Aún no hay eventos terminados de este tipo.",
-    "diffWithPercent": "{amount} ({percent}%)"
-  },
-  "empty": {
-    "title": "Aún no hay eventos",
-    "description": "Los eventos que termines desde el Registro de eventos en Eventos clave se guardan aquí con su plan y sus resultados.",
-    "action": "Abrir Eventos clave"
-  },
-  "notFound": {
-    "title": "Evento no encontrado",
-    "description": "Este evento no está en el historial del jefe activo. Puede que se haya quitado, o que el evento esté oculto en Eventos clave.",
-    "action": "Volver al Historial"
-  },
-  "unknown": "Sin indicar",
-  "belowPlan": "Por debajo del plan",
-  "atOrAbovePlan": "En el plan o por encima",
-  "breadcrumb": { "label": "Ruta de navegación" },
-  "tiles": {
-    "plan": "Plan",
-    "actual": "Real",
-    "difference": "Diferencia",
-    "overall": "Global",
-    "alliance": "Alianza",
-    "days": "Días 1 a 5",
-    "rank": "Puesto",
-    "rankDays": "Puesto, Días 1 a 5",
-    "percent": "{percent}%"
-  },
-  "compare": {
-    "title": "Plan frente a resultado",
-    "titleDays": "Plan frente a resultado, Días 1 a 5",
-    "day": "Día",
-    "plan": "Plan",
-    "actual": "Real",
-    "diff": "Dif.",
-    "rank": "Puesto",
-    "ally": "Alian.",
-    "total": "Total",
-    "share": "{percent}% del plan",
-    "shareLine": "{percent}% del plan, puesto {rank}, alianza {ally}",
-    "barLabel": "{day}, resultado real como proporción del plan"
-  },
-  "battle": {
-    "title": "Fase de batalla",
-    "note": "Tiene su propia puntuación y puesto. No se suma al total de los Días 1 a 5."
-  },
-  "upgrades": {
-    "title": "Mejoras planificadas",
-    "titleCount": "Mejoras planificadas, {count}",
-    "summary": "Las mejoras del plan de este evento, agrupadas por tipo. Se hicieron {done} de {count}.",
-    "summaryUnchecked": "Las mejoras del plan de este evento, agrupadas por tipo.",
-    "none": "No se exportó ningún plan a este evento, así que no hay mejoras planificadas que mostrar.",
-    "groupTitle": "{name}, {count}",
-    "groupStats": "{done} de {count} hechas, poder +{power}, Fire Crystals {fireCrystals}",
-    "groupStatsUnchecked": "Poder +{power}, Fire Crystals {fireCrystals}",
-    "power": "+{power} de poder",
-    "plannedDay": "Planificada {day}",
-    "done": "Hecha",
-    "notDone": "Sin hacer",
-    "levelsFrom": "{from} a {to}",
-    "levelsTo": "a {to}",
-    "levelsResearchFrom": "Nivel {from} a {to}",
-    "levelsResearchTo": "a nivel {to}",
-    "costAmount": "{amount} {name}"
-  },
-  "pages": {
-    "buildings": "Edificios",
-    "research": "Investigación",
-    "chiefGear": "Equipo del jefe",
-    "chiefCharms": "Amuletos del jefe",
-    "heroGear": "Equipo de héroe",
-    "heroes": "Héroes",
-    "pets": "Mascotas",
-    "experts": "Expertos",
-    "troops": "Tropas"
-  }
+    "page": { "title": "Historial" },
+    "events": {
+        "svs": "SvS",
+        "showdown": "Alliance Showdown",
+        "king": "King of Icefield",
+        "hall": "Hall of Chief"
+    },
+    "title": {
+        "dated": "{event}, {start} a {end}",
+        "undated": "{event}"
+    },
+    "ended": "Terminado {date}",
+    "tabs": { "label": "Filtrar por evento", "all": "Todos los eventos" },
+    "list": {
+        "intro": "Eventos que terminaste desde el Registro de eventos, del más reciente al más antiguo. Las puntuaciones son los Días 1 a 5 en SvS, y la fase de batalla se cuenta aparte. Abre un evento para ver su plan frente al resultado y sus mejoras planificadas.",
+        "event": "Evento",
+        "plan": "Plan",
+        "actual": "Real",
+        "diff": "Dif.",
+        "rank": "Puesto",
+        "alliance": "Alianza",
+        "rankLine": "Puesto {rank}, alianza {alliance}",
+        "open": "Abrir",
+        "openEvent": "Abrir {name}",
+        "none": "Aún no hay eventos terminados de este tipo.",
+        "diffWithPercent": "{amount} ({percent}%)"
+    },
+    "empty": {
+        "title": "Aún no hay eventos",
+        "description": "Los eventos que termines desde el Registro de eventos en Eventos clave se guardan aquí con su plan y sus resultados.",
+        "action": "Abrir Eventos clave"
+    },
+    "notFound": {
+        "title": "Evento no encontrado",
+        "description": "Este evento no está en el historial del jefe activo. Puede que se haya quitado, o que el evento esté oculto en Eventos clave.",
+        "action": "Volver al Historial"
+    },
+    "unknown": "Sin indicar",
+    "belowPlan": "Por debajo del plan",
+    "atOrAbovePlan": "En el plan o por encima",
+    "breadcrumb": { "label": "Ruta de navegación" },
+    "tiles": {
+        "plan": "Plan",
+        "actual": "Real",
+        "difference": "Diferencia",
+        "overall": "Global",
+        "alliance": "Alianza",
+        "days": "Días 1 a 5",
+        "rank": "Puesto",
+        "rankDays": "Puesto, Días 1 a 5",
+        "percent": "{percent}%"
+    },
+    "compare": {
+        "title": "Plan frente a resultado",
+        "titleDays": "Plan frente a resultado, Días 1 a 5",
+        "day": "Día",
+        "plan": "Plan",
+        "actual": "Real",
+        "diff": "Dif.",
+        "rank": "Puesto",
+        "ally": "Alian.",
+        "total": "Total",
+        "share": "{percent}% del plan",
+        "shareLine": "{percent}% del plan, puesto {rank}, alianza {ally}",
+        "barLabel": "{day}, resultado real como proporción del plan"
+    },
+    "battle": {
+        "title": "Fase de batalla",
+        "note": "Tiene su propia puntuación y puesto. No se suma al total de los Días 1 a 5."
+    },
+    "upgrades": {
+        "title": "Mejoras planificadas",
+        "titleCount": "Mejoras planificadas, {count}",
+        "summary": "Las mejoras del plan de este evento, agrupadas por tipo. Se hicieron {done} de {count}.",
+        "summaryUnchecked": "Las mejoras del plan de este evento, agrupadas por tipo.",
+        "none": "No se exportó ningún plan a este evento, así que no hay mejoras planificadas que mostrar.",
+        "groupTitle": "{name}, {count}",
+        "groupStats": "{done} de {count} hechas, poder +{power}, Fire Crystals {fireCrystals}",
+        "groupStatsUnchecked": "Poder +{power}, Fire Crystals {fireCrystals}",
+        "power": "+{power} de poder",
+        "plannedDay": "Planificada {day}",
+        "done": "Hecha",
+        "notDone": "Sin hacer",
+        "levelsFrom": "{from} a {to}",
+        "levelsTo": "a {to}",
+        "levelsResearchFrom": "Nivel {from} a {to}",
+        "levelsResearchTo": "a nivel {to}",
+        "costAmount": "{amount} {name}"
+    },
+    "pages": {
+        "buildings": "Edificios",
+        "research": "Investigación",
+        "chiefGear": "Equipo del jefe",
+        "chiefCharms": "Amuletos del jefe",
+        "heroGear": "Equipo de héroe",
+        "heroes": "Héroes",
+        "pets": "Mascotas",
+        "experts": "Expertos",
+        "troops": "Tropas"
+    }
 }

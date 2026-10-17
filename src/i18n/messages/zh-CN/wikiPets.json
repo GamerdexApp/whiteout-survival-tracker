@@ -1,52 +1,52 @@
 {
-  "line": "{pets}只宠物。仅供参考，这里的内容不会保存。",
-  "roster": {
-    "title": "宠物",
-    "count": "{shown} / {total}只宠物",
-    "search": "搜索",
-    "searchPlaceholder": "搜索{count}只宠物",
-    "rarity": "稀有度",
-    "all": "全部",
-    "empty": "没有符合这些筛选的宠物。",
-    "summary": "最高{level}级，精炼最高{percent}",
-    "percentValue": "{value}%"
-  },
-  "unlock": {
-    "withFurnace": "第{days}天，Furnace {level}",
-    "withPet": "第{days}天，{pet} {level}",
-    "daysOnly": "第{days}天",
-    "label": "解锁：{requirement}"
-  },
-  "detail": {
-    "maxLevel": "最高等级",
-    "maxRefinement": "最高精炼",
-    "unlock": "解锁条件",
-    "cooldown": "技能冷却",
-    "duration": "技能持续时间",
-    "tierCooldown": "{value}",
-    "maxPower": "最大战力",
-    "levelPower": "满级时的等级与进阶战力",
-    "refiningPower": "最高精炼时的精炼战力"
-  },
-  "skill": {
-    "title": "技能",
-    "meta": "{count, plural, other {{amount}级}}",
-    "level": "Lv {level}",
-    "percent": "{value}%"
-  },
-  "levels": {
-    "title": "等级表",
-    "level": "{level}级",
-    "columns": {
-      "level": "等级",
-      "food": "宠物食物",
-      "attack": "部队攻击",
-      "defense": "部队防御",
-      "power": "部队战力",
-      "materials": "进阶材料"
+    "line": "{pets}只宠物。仅供参考，这里的内容不会保存。",
+    "roster": {
+        "title": "宠物",
+        "count": "{shown} / {total}只宠物",
+        "search": "搜索",
+        "searchPlaceholder": "搜索{count}只宠物",
+        "rarity": "稀有度",
+        "all": "全部",
+        "empty": "没有符合这些筛选的宠物。",
+        "summary": "最高{level}级，精炼最高{percent}",
+        "percentValue": "{value}%"
     },
-    "refined": "{value}（精炼{refined}）",
-    "none": "无"
-  },
-  "recordLine": "{rarity}宠物，最高{level}级。仅供参考，这里的内容不会保存。"
+    "unlock": {
+        "withFurnace": "第{days}天，Furnace {level}",
+        "withPet": "第{days}天，{pet} {level}",
+        "daysOnly": "第{days}天",
+        "label": "解锁：{requirement}"
+    },
+    "detail": {
+        "maxLevel": "最高等级",
+        "maxRefinement": "最高精炼",
+        "unlock": "解锁条件",
+        "cooldown": "技能冷却",
+        "duration": "技能持续时间",
+        "tierCooldown": "{value}",
+        "maxPower": "最大战力",
+        "levelPower": "满级时的等级与进阶战力",
+        "refiningPower": "最高精炼时的精炼战力"
+    },
+    "skill": {
+        "title": "技能",
+        "meta": "{count, plural, other {{amount}级}}",
+        "level": "Lv {level}",
+        "percent": "{value}%"
+    },
+    "levels": {
+        "title": "等级表",
+        "level": "{level}级",
+        "columns": {
+            "level": "等级",
+            "food": "宠物食物",
+            "attack": "部队攻击",
+            "defense": "部队防御",
+            "power": "部队战力",
+            "materials": "进阶材料"
+        },
+        "refined": "{value}（精炼{refined}）",
+        "none": "无"
+    },
+    "recordLine": "{rarity}宠物，最高{level}级。仅供参考，这里的内容不会保存。"
 }

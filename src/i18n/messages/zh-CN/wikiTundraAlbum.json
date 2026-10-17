@@ -1,32 +1,32 @@
 {
-  "line": "数据包有{total}本相册中的{have}本。每本都有增益、集齐奖励和{puzzles}个拼图。",
-  "note": "其余{missing}本相册会在数据包收录后加入。",
-  "albums": "相册",
-  "puzzleCount": "{count, plural, other {{amount}个拼图}}",
-  "pieceCount": "{count, plural, other {{amount}块碎片}}",
-  "view": {
-    "label": "视图",
-    "puzzles": "拼图",
-    "pieces": "全部碎片"
-  },
-  "album": {
-    "counts": "{puzzles}，{pieces}",
-    "buff": "集齐后的增益",
-    "buffValue": "{stat} {value}",
-    "rewards": "集齐奖励",
-    "buffNote": "只有全部{puzzles}个拼图完成后，增益才会计入。"
-  },
-  "puzzles": {
-    "title": "拼图",
-    "puzzle": "拼图",
-    "pieces": "碎片",
-    "star": "{stars}星",
-    "reward": "奖励"
-  },
-  "allPieces": {
-    "title": "全部碎片",
-    "summary": "{puzzles}中的{pieces}",
-    "imageNote": "碎片图片来自数据包。没有图片的碎片显示为纯色方块。",
-    "stars": "{count, plural, other {{amount}星}}"
-  }
+    "line": "数据包有{total}本相册中的{have}本。每本都有增益、集齐奖励和{puzzles}个拼图。",
+    "note": "其余{missing}本相册会在数据包收录后加入。",
+    "albums": "相册",
+    "puzzleCount": "{count, plural, other {{amount}个拼图}}",
+    "pieceCount": "{count, plural, other {{amount}块碎片}}",
+    "view": {
+        "label": "视图",
+        "puzzles": "拼图",
+        "pieces": "全部碎片"
+    },
+    "album": {
+        "counts": "{puzzles}，{pieces}",
+        "buff": "集齐后的增益",
+        "buffValue": "{stat} {value}",
+        "rewards": "集齐奖励",
+        "buffNote": "只有全部{puzzles}个拼图完成后，增益才会计入。"
+    },
+    "puzzles": {
+        "title": "拼图",
+        "puzzle": "拼图",
+        "pieces": "碎片",
+        "star": "{stars}星",
+        "reward": "奖励"
+    },
+    "allPieces": {
+        "title": "全部碎片",
+        "summary": "{puzzles}中的{pieces}",
+        "imageNote": "碎片图片来自数据包。没有图片的碎片显示为纯色方块。",
+        "stars": "{count, plural, other {{amount}星}}"
+    }
 }

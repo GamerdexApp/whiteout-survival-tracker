@@ -1,26 +1,26 @@
 {
-  "line": "{types} types de troupes avec {tiers} paliers chacun. Référence uniquement, rien ici n'est enregistré pour votre chef.",
-  "tiers": {
-    "heading": "Paliers de troupes",
-    "meta": "{types} types sur {tiers} paliers = {rows} lignes",
-    "typeLabel": "Type de troupe",
-    "tableLabel": "Paliers {type}"
-  },
-  "detail": {
-    "heading": "Détail de la fiche",
-    "meta": "Palier {tier}, les trois types",
-    "tableLabel": "Palier {tier} par type de troupe"
-  },
-  "columns": {
-    "tier": "Palier",
-    "type": "Type",
-    "cost": "Coût par troupe",
-    "topCost": "Coût du palier",
-    "time": "Durée d'entraînement",
-    "promotion": "Coût de promotion"
-  },
-  "cells": {
-    "tier": "Palier {tier}",
-    "none": "Aucun"
-  }
+    "line": "{types} types de troupes avec {tiers} paliers chacun. Référence uniquement, rien ici n'est enregistré pour votre chef.",
+    "tiers": {
+        "heading": "Paliers de troupes",
+        "meta": "{types} types sur {tiers} paliers = {rows} lignes",
+        "typeLabel": "Type de troupe",
+        "tableLabel": "Paliers {type}"
+    },
+    "detail": {
+        "heading": "Détail de la fiche",
+        "meta": "Palier {tier}, les trois types",
+        "tableLabel": "Palier {tier} par type de troupe"
+    },
+    "columns": {
+        "tier": "Palier",
+        "type": "Type",
+        "cost": "Coût par troupe",
+        "topCost": "Coût du palier",
+        "time": "Durée d'entraînement",
+        "promotion": "Coût de promotion"
+    },
+    "cells": {
+        "tier": "Palier {tier}",
+        "none": "Aucun"
+    }
 }

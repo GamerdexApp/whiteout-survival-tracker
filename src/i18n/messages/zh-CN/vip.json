@@ -1,63 +1,63 @@
 {
-  "page": {
-    "title": "VIP"
-  },
-  "view": {
-    "sublineKnown": "{chief} · {details} · VIP {level}，{xp} XP",
-    "sublineUnknown": "{chief} · {details} · 未设置 VIP"
-  },
-  "input": {
-    "title": "你的 VIP",
-    "enterAs": "输入方式",
-    "modeXp": "总 XP",
-    "modeLevel": "VIP 等级",
-    "xpLabel": "VIP 总 XP",
-    "xpHint": "0 到{max}的整数 XP。",
-    "levelLabel": "VIP 等级",
-    "notSet": "未设置",
-    "levelHint": "选择等级会把总 XP 设为该等级的最低总 XP。输入真实 XP 可得到精确值。",
-    "reached": "已达等级",
-    "levelName": "VIP {level}",
-    "unknown": "未知"
-  },
-  "progress": {
-    "label": "VIP {level}内的进度",
-    "toNext": "距 VIP {level}还差{xp} XP",
-    "percent": "{percent}%",
-    "range": "此等级的总 XP 范围：{from}到{to}。",
-    "estimate": "估算。输入的是等级，因此 XP 取 VIP {level}的最低总 XP。输入真实 XP 可得到精确值。",
-    "maxLevel": "已满级",
-    "maxHint": "VIP {level}是最后一级。"
-  },
-  "perks": {
-    "title": "VIP {level}提供的内容",
-    "subtitle": "此等级的合计值，而非相对上一级的变化。",
-    "unknown": "输入你的 VIP 即可查看它提供的内容。"
-  },
-  "next": {
-    "title": "VIP {level}新增",
-    "subtitle": "与 VIP {from}对比。",
-    "new": "新增",
-    "was": "原为{value}",
-    "maxLevel": "已满级。没有更高等级可预览。",
-    "unknown": "输入你的 VIP 即可查看下一级。"
-  },
-  "table": {
-    "title": "全部{count}级，共{total} XP",
-    "level": "等级",
-    "xpFromLast": "距上一级 XP",
-    "totalXp": "总 XP",
-    "bonuses": "新增或提高的加成",
-    "state": "状态",
-    "xpFromLastMobile": "距上一级 XP {xp}",
-    "totalMobile": "总计{xp}",
-    "unknown": "未知",
-    "states": {
-      "reached": "已达成",
-      "current": "当前",
-      "ahead": "未达成",
-      "unknown": "未知"
+    "page": {
+        "title": "VIP"
     },
-    "levelName": "VIP {level}"
-  }
+    "view": {
+        "sublineKnown": "{chief} · {details} · VIP {level}，{xp} XP",
+        "sublineUnknown": "{chief} · {details} · 未设置 VIP"
+    },
+    "input": {
+        "title": "你的 VIP",
+        "enterAs": "输入方式",
+        "modeXp": "总 XP",
+        "modeLevel": "VIP 等级",
+        "xpLabel": "VIP 总 XP",
+        "xpHint": "0 到{max}的整数 XP。",
+        "levelLabel": "VIP 等级",
+        "notSet": "未设置",
+        "levelHint": "选择等级会把总 XP 设为该等级的最低总 XP。输入真实 XP 可得到精确值。",
+        "reached": "已达等级",
+        "levelName": "VIP {level}",
+        "unknown": "未知"
+    },
+    "progress": {
+        "label": "VIP {level}内的进度",
+        "toNext": "距 VIP {level}还差{xp} XP",
+        "percent": "{percent}%",
+        "range": "此等级的总 XP 范围：{from}到{to}。",
+        "estimate": "估算。输入的是等级，因此 XP 取 VIP {level}的最低总 XP。输入真实 XP 可得到精确值。",
+        "maxLevel": "已满级",
+        "maxHint": "VIP {level}是最后一级。"
+    },
+    "perks": {
+        "title": "VIP {level}提供的内容",
+        "subtitle": "此等级的合计值，而非相对上一级的变化。",
+        "unknown": "输入你的 VIP 即可查看它提供的内容。"
+    },
+    "next": {
+        "title": "VIP {level}新增",
+        "subtitle": "与 VIP {from}对比。",
+        "new": "新增",
+        "was": "原为{value}",
+        "maxLevel": "已满级。没有更高等级可预览。",
+        "unknown": "输入你的 VIP 即可查看下一级。"
+    },
+    "table": {
+        "title": "全部{count}级，共{total} XP",
+        "level": "等级",
+        "xpFromLast": "距上一级 XP",
+        "totalXp": "总 XP",
+        "bonuses": "新增或提高的加成",
+        "state": "状态",
+        "xpFromLastMobile": "距上一级 XP {xp}",
+        "totalMobile": "总计{xp}",
+        "unknown": "未知",
+        "states": {
+            "reached": "已达成",
+            "current": "当前",
+            "ahead": "未达成",
+            "unknown": "未知"
+        },
+        "levelName": "VIP {level}"
+    }
 }

@@ -1,70 +1,70 @@
 {
-  "line": "{experts}位专家和{relationships}个关系阶段。仅供参考，这里的内容不会保存。",
-  "roster": {
-    "title": "专家",
-    "count": "{shown} / {total}位专家",
-    "search": "搜索",
-    "searchPlaceholder": "按名称、头衔或专长搜索{count}位专家",
-    "generation": "世代",
-    "all": "全部",
-    "empty": "没有符合这些筛选的专家。",
-    "generationValue": "第{generation}代",
-    "unlock": "解锁：开服第{days}天",
-    "unlockUnknown": "解锁：",
-    "unreleased": "尚未上线"
-  },
-  "detail": {
-    "subline": "{title} · 专长{specialty} · 第{generation}代",
-    "baseBonus": "基础：{bonus}",
-    "bonus": "{stat} {value}",
-    "percentValue": "{value}%",
-    "skills": "技能",
-    "talent": "天赋，最高{level}级",
-    "affinityLevels": "亲密度等级",
-    "baseBonusLabel": "基础加成",
-    "unlock": "开服第{days}天解锁"
-  },
-  "skills": {
-    "title": "技能与天赋",
-    "columns": {
-      "skill": "技能",
-      "max": "最高",
-      "effect": "效果",
-      "books": "满级所需书",
-      "exp": "满级所需 EXP"
+    "line": "{experts}位专家和{relationships}个关系阶段。仅供参考，这里的内容不会保存。",
+    "roster": {
+        "title": "专家",
+        "count": "{shown} / {total}位专家",
+        "search": "搜索",
+        "searchPlaceholder": "按名称、头衔或专长搜索{count}位专家",
+        "generation": "世代",
+        "all": "全部",
+        "empty": "没有符合这些筛选的专家。",
+        "generationValue": "第{generation}代",
+        "unlock": "解锁：开服第{days}天",
+        "unlockUnknown": "解锁：",
+        "unreleased": "尚未上线"
     },
-    "talent": "{name}（天赋）",
-    "none": "无",
-    "selectHint": "选择技能即可查看详情。"
-  },
-  "skillLevels": {
-    "title": "技能等级表",
-    "meta": "{name}，1 到{max}级",
-    "level": "{level}级",
-    "columns": {
-      "level": "等级",
-      "exp": "EXP",
-      "books": "书"
+    "detail": {
+        "subline": "{title} · 专长{specialty} · 第{generation}代",
+        "baseBonus": "基础：{bonus}",
+        "bonus": "{stat} {value}",
+        "percentValue": "{value}%",
+        "skills": "技能",
+        "talent": "天赋，最高{level}级",
+        "affinityLevels": "亲密度等级",
+        "baseBonusLabel": "基础加成",
+        "unlock": "开服第{days}天解锁"
     },
-    "none": "无"
-  },
-  "affinity": {
-    "title": "亲密度等级",
-    "level": "{level}级",
-    "columns": {
-      "level": "等级",
-      "required": "所需亲密度",
-      "bonus": "属性加成",
-      "affinityPower": "亲密度战力",
-      "levelPower": "等级战力",
-      "advancement": "进阶费用"
+    "skills": {
+        "title": "技能与天赋",
+        "columns": {
+            "skill": "技能",
+            "max": "最高",
+            "effect": "效果",
+            "books": "满级所需书",
+            "exp": "满级所需 EXP"
+        },
+        "talent": "{name}（天赋）",
+        "none": "无",
+        "selectHint": "选择技能即可查看详情。"
     },
-    "noAdvancement": "无进阶",
-    "startNote": "1 级所需亲密度是起始值{start}。从 2 级起，数量是达到该等级的费用。"
-  },
-  "relationships": {
-    "title": "关系阶段",
-    "fromLevel": "从{level}级起"
-  },
-  "recordLine": "{title}，专长{specialty}，第{generation}代。仅供参考，这里的内容不会保存。"
+    "skillLevels": {
+        "title": "技能等级表",
+        "meta": "{name}，1 到{max}级",
+        "level": "{level}级",
+        "columns": {
+            "level": "等级",
+            "exp": "EXP",
+            "books": "书"
+        },
+        "none": "无"
+    },
+    "affinity": {
+        "title": "亲密度等级",
+        "level": "{level}级",
+        "columns": {
+            "level": "等级",
+            "required": "所需亲密度",
+            "bonus": "属性加成",
+            "affinityPower": "亲密度战力",
+            "levelPower": "等级战力",
+            "advancement": "进阶费用"
+        },
+        "noAdvancement": "无进阶",
+        "startNote": "1 级所需亲密度是起始值{start}。从 2 级起，数量是达到该等级的费用。"
+    },
+    "relationships": {
+        "title": "关系阶段",
+        "fromLevel": "从{level}级起"
+    },
+    "recordLine": "{title}，专长{specialty}，第{generation}代。仅供参考，这里的内容不会保存。"
 }

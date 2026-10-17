@@ -1,45 +1,45 @@
 {
-  "line": "{enhancement} niveles de potenciación, {empowerment} niveles de fortalecimiento, {mastery} filas de forja de maestría y {stats} entradas de estadísticas. Solo es referencia, nada de aquí se guarda.",
-  "tabsLabel": "Tablas de equipo de héroe",
-  "tabs": {
-    "enhancement": "Potenciación",
-    "empowerment": "Fortalecimiento",
-    "mastery": "Forja de maestría",
-    "stats": "Estadísticas"
-  },
-  "levels": {
-    "columns": {
-      "level": "Nivel",
-      "cost": "Costo",
-      "power": "Poder",
-      "gain": "Aumento sobre el anterior",
-      "milestonePower": "Poder del hito",
-      "stage": "Etapa",
-      "statsUp": "Estadísticas al alza"
+    "line": "{enhancement} niveles de potenciación, {empowerment} niveles de fortalecimiento, {mastery} filas de forja de maestría y {stats} entradas de estadísticas. Solo es referencia, nada de aquí se guarda.",
+    "tabsLabel": "Tablas de equipo de héroe",
+    "tabs": {
+        "enhancement": "Potenciación",
+        "empowerment": "Fortalecimiento",
+        "mastery": "Forja de maestría",
+        "stats": "Estadísticas"
     },
-    "none": "Ninguno",
-    "percent": "{value}%",
-    "gainValue": "+{value}"
-  },
-  "stats": {
-    "slot": "Ranura",
-    "troopType": "Tipo de tropa",
-    "troop": {
-      "infantry": "Infantería",
-      "lancer": "Lancero",
-      "marksman": "Tirador"
+    "levels": {
+        "columns": {
+            "level": "Nivel",
+            "cost": "Costo",
+            "power": "Poder",
+            "gain": "Aumento sobre el anterior",
+            "milestonePower": "Poder del hito",
+            "stage": "Etapa",
+            "statsUp": "Estadísticas al alza"
+        },
+        "none": "Ninguno",
+        "percent": "{value}%",
+        "gainValue": "+{value}"
     },
-    "note": "Los niveles de estadísticas 101 a 200 son los niveles de fortalecimiento 1 a 100.",
-    "columns": {
-      "level": "Nivel",
-      "combat": "{stat}",
-      "health": "Salud",
-      "percent": "{stat}"
-    },
-    "level": "Nivel {level}",
-    "empowermentLevel": "Nivel {level}, fortalecimiento {empowerment}",
-    "milestonesTitle": "Hitos",
-    "milestone": "Nivel de fortalecimiento {level}, {event}: {stat}",
-    "percentValue": "{value}%"
-  }
+    "stats": {
+        "slot": "Ranura",
+        "troopType": "Tipo de tropa",
+        "troop": {
+            "infantry": "Infantería",
+            "lancer": "Lancero",
+            "marksman": "Tirador"
+        },
+        "note": "Los niveles de estadísticas 101 a 200 son los niveles de fortalecimiento 1 a 100.",
+        "columns": {
+            "level": "Nivel",
+            "combat": "{stat}",
+            "health": "Salud",
+            "percent": "{stat}"
+        },
+        "level": "Nivel {level}",
+        "empowermentLevel": "Nivel {level}, fortalecimiento {empowerment}",
+        "milestonesTitle": "Hitos",
+        "milestone": "Nivel de fortalecimiento {level}, {event}: {stat}",
+        "percentValue": "{value}%"
+    }
 }

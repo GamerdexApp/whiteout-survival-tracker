@@ -1,50 +1,50 @@
 {
-  "page": {
-    "title": "Aliansi"
-  },
-  "view": {
-    "subline": "{chief} · {details} · level panji {level}"
-  },
-  "banner": {
-    "title": "Panji aliansi",
-    "currentLevel": "Level saat ini",
-    "levelLabel": "Level panji",
-    "maxHint": "Level bulat dari 0 sampai {max}.",
-    "rangeChip": "{range}",
-    "costHeading": "Biaya per level di {range}",
-    "noTimeOrPower": "Panji tidak punya waktu bangun atau kekuatan di paket data, jadi tidak ditampilkan.",
-    "noCost": "Tanpa biaya",
-    "none": "Tidak ada",
-    "lower": "Kurangi level panji",
-    "raise": "Tambah level panji"
-  },
-  "structures": {
-    "title": "Struktur aliansi",
-    "tech": {
-      "title": "Teknologi",
-      "description": "{count} node di Pertumbuhan, Wilayah, dan Pertempuran",
-      "status": "{maxed} maksimal, {progress} berjalan, {locked} terkunci"
+    "page": {
+        "title": "Aliansi"
     },
-    "facilities": {
-      "title": "Fasilitas",
-      "description": "{count} fasilitas peta",
-      "owned": "{owned} dimiliki"
+    "view": {
+        "subline": "{chief} · {details} · level panji {level}"
     },
-    "fortresses": {
-      "title": "Benteng",
-      "description": "Castle, {strongholds} stronghold, {fortresses} benteng",
-      "reference": "Hanya referensi"
+    "banner": {
+        "title": "Panji aliansi",
+        "currentLevel": "Level saat ini",
+        "levelLabel": "Level panji",
+        "maxHint": "Level bulat dari 0 sampai {max}.",
+        "rangeChip": "{range}",
+        "costHeading": "Biaya per level di {range}",
+        "noTimeOrPower": "Panji tidak punya waktu bangun atau kekuatan di paket data, jadi tidak ditampilkan.",
+        "noCost": "Tanpa biaya",
+        "none": "Tidak ada",
+        "lower": "Kurangi level panji",
+        "raise": "Tambah level panji"
+    },
+    "structures": {
+        "title": "Struktur aliansi",
+        "tech": {
+            "title": "Teknologi",
+            "description": "{count} node di Pertumbuhan, Wilayah, dan Pertempuran",
+            "status": "{maxed} maksimal, {progress} berjalan, {locked} terkunci"
+        },
+        "facilities": {
+            "title": "Fasilitas",
+            "description": "{count} fasilitas peta",
+            "owned": "{owned} dimiliki"
+        },
+        "fortresses": {
+            "title": "Benteng",
+            "description": "Castle, {strongholds} stronghold, {fortresses} benteng",
+            "reference": "Hanya referensi"
+        }
+    },
+    "table": {
+        "title": "Biaya panji menurut rentang level",
+        "note": "{count} rentang, setiap level dalam satu rentang berbiaya sama",
+        "range": "Rentang",
+        "state": "Status",
+        "built": "Terbangun",
+        "current": "Saat ini",
+        "notBuilt": "Belum dibangun",
+        "none": "Tidak ada",
+        "noCost": "Tanpa biaya"
     }
-  },
-  "table": {
-    "title": "Biaya panji menurut rentang level",
-    "note": "{count} rentang, setiap level dalam satu rentang berbiaya sama",
-    "range": "Rentang",
-    "state": "Status",
-    "built": "Terbangun",
-    "current": "Saat ini",
-    "notBuilt": "Belum dibangun",
-    "none": "Tidak ada",
-    "noCost": "Tanpa biaya"
-  }
 }

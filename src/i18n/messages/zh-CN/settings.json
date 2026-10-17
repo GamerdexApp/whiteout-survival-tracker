@@ -1,216 +1,216 @@
 {
-  "chiefCount": "{count, plural, other {{amount}个领主}}",
-  "localStorageNote": {
-    "title": "本地存储。",
-    "body": "你的领主只保存在此浏览器中。清除浏览器缓存后会丢失。请定期导出备份。"
-  },
-  "page": {
-    "title": "设置",
-    "subline": "管理你的数据、领主设置和外观",
-    "tabsLabel": "设置",
-    "tabs": {
-      "preferences": "偏好设置",
-      "data": "备份与数据",
-      "about": "关于"
+    "chiefCount": "{count, plural, other {{amount}个领主}}",
+    "localStorageNote": {
+        "title": "本地存储。",
+        "body": "你的领主只保存在此浏览器中。清除浏览器缓存后会丢失。请定期导出备份。"
+    },
+    "page": {
+        "title": "设置",
+        "subline": "管理你的数据、领主设置和外观",
+        "tabsLabel": "设置",
+        "tabs": {
+            "preferences": "偏好设置",
+            "data": "备份与数据",
+            "about": "关于"
+        }
+    },
+    "about": {
+        "version": "版本{version}",
+        "summary": "记录你的 Whiteout Survival 进度：建筑、英雄、领主装备、专家、宠物、部队、研究、联盟科技、资源和你的规划。所有内容都保存在此浏览器中。",
+        "wiki": "Whiteout Survival 百科",
+        "disclaimer": "与 Century Games 无隶属或认可关系。Whiteout Survival 是 Century Games 的商标。"
+    },
+    "preferences": {
+        "chiefSettings": {
+            "title": "领主设置",
+            "description": "适用于所有领主。即时保存。",
+            "footnote": "在计算器中更改选项不会改变这些默认值。Furnace 显示只改变等级的写法，不改变等级本身。添加或删除领主不会重置这些设置。",
+            "groups": {
+                "furnaceDisplay": "Furnace 显示",
+                "lists": "列表",
+                "calculatorOptions": "计算器默认选项"
+            },
+            "fullLevelLabels": {
+                "label": "显示完整等级标签",
+                "description": "在侧边栏、总览和建筑页显示 Furnace 的子等级，例如 FC 5-2 而不是 FC 5。其他建筑已显示完整标签。"
+            },
+            "hideMaxed": {
+                "label": "隐藏已满级项目",
+                "description": "隐藏已达最高等级的建筑、英雄、宠物和专家。每个列表都保留显示已满级的筛选，不会丢失任何内容。"
+            },
+            "useBonuses": {
+                "label": "应用我的加成合计",
+                "description": "新的计算器默认使用加成页面中的建造速度百分比。单次计算时仍可修改。"
+            },
+            "showSpeedups": {
+                "label": "显示加速分钟数",
+                "description": "在每个计算结果的时间下方显示所需的加速分钟数。"
+            },
+            "showEventPoints": {
+                "label": "显示活动积分",
+                "description": "在会返回活动积分的计算结果中添加活动积分一行。"
+            }
+        },
+        "appearance": {
+            "title": "外观",
+            "description": "选择应用的外观。随数据一起保存。",
+            "themeLabel": "主题",
+            "themeNote": "跟随系统会使用你设备的设置，目前为{current}。此选择包含在备份中。"
+        },
+        "themes": {
+            "light": "浅色",
+            "dark": "深色",
+            "system": "跟随系统"
+        }
+    },
+    "data": {
+        "backupDownloaded": "备份已下载",
+        "merged": "备份已合并",
+        "replaced": "备份已替换",
+        "undo": "撤销",
+        "resetDone": "所有数据已重置",
+        "resetDoneMessage": "已移除{chiefs}并清除设置。",
+        "management": {
+            "title": "数据管理",
+            "description": "一个备份文件包含所有领主和你的设置。"
+        },
+        "export": {
+            "title": "导出数据",
+            "description": "下载包含所有已保存领主的备份文件。文件名：<file>{fileName}</file>。日期为你的本地日期。",
+            "button": "导出全部领主"
+        },
+        "import": {
+            "title": "导入数据",
+            "description": "上传之前导出的文件（.json）。会先检查文件，然后你选择合并或替换，并查看有哪些更改。确认之前不会有任何改动。",
+            "chooseFile": "选择文件",
+            "noFile": "未选择文件",
+            "review": "查看导入"
+        },
+        "reset": {
+            "title": "重置所有数据",
+            "warningTitle": "警告：",
+            "warning": "这将删除所有领主，并重置领主设置和主题。10 秒内可以撤销，如需保留副本，请先导出备份。",
+            "button": "重置所有数据"
+        },
+        "chiefs": {
+            "title": "领主",
+            "description": "在领主页面创建、重命名、编辑和删除领主。导出、导入和重置适用于全部领主。",
+            "manage": "管理领主"
+        }
+    },
+    "importDialog": {
+        "title": "导入备份",
+        "cancel": "取消",
+        "close": "关闭",
+        "merge": "合并",
+        "replace": "替换",
+        "failedTitle": "导入失败。",
+        "checksTitle": "文件检查结果。",
+        "checks": "已找到领主列表，读取了{count, plural, other {{amount}条记录}}。尚未保存任何内容，因此你当前的领主不受影响。",
+        "howToApply": "如何应用该文件？",
+        "modeLabel": "导入方式",
+        "modes": {
+            "merge": "合并（推荐）",
+            "replace": "替换此设备上的所有内容"
+        },
+        "modeNotes": {
+            "merge": "添加新的领主；两边都有的领主保留较新的副本。只在此设备上的领主保留。你的设置保持不变。",
+            "replace": "移除此设备上的所有领主，并原样载入文件，包括其设置。用于恢复一份完全相同的副本。"
+        },
+        "whatChanges": "有哪些更改",
+        "columns": {
+            "chief": "领主",
+            "inFile": "文件中",
+            "onDevice": "此设备上",
+            "result": "结果"
+        },
+        "results": {
+            "added": "已添加",
+            "updated": "已用文件更新",
+            "kept": "保留此设备上的副本",
+            "replaced": "已从文件载入",
+            "removed": "已移除"
+        },
+        "notThere": "没有",
+        "noChiefs": "文件中没有领主。",
+        "undoNote": "导入后 10 秒内可以撤销。",
+        "bytes": "{amount} B",
+        "kilobytes": "{amount} KB",
+        "fileInfo": "{name} · {size}"
+    },
+    "resetDialog": {
+        "title": "重置所有数据",
+        "cancel": "取消",
+        "confirm": "是，重置所有数据",
+        "question": "要从此浏览器删除全部{chiefs}吗？",
+        "removedTitle": "将移除的内容",
+        "settingsNote": "你选择的浅色、深色或跟随系统会恢复为跟随系统。领主设置恢复为默认值。当前领主会被清除。",
+        "undoNote": "重置后 10 秒内可以撤销。如需长期保留文件副本，请先导出备份。",
+        "exportFirst": "先导出备份"
+    },
+    "backup": {
+        "notJson": "该文件不是有效的 JSON。未做任何更改。",
+        "noChiefsList": "缺少领主列表。未做任何更改。",
+        "duplicateId": "两个领主使用了同一个 id。未做任何更改。",
+        "withNothingChanged": "{reason}未做任何更改。",
+        "chief": {
+            "notObject": "第{position}个领主不是对象。",
+            "noId": "第{position}个领主没有 id。",
+            "noName": "第{position}个领主没有名称。",
+            "noDates": "第{position}个领主缺少日期。",
+            "badStateNumber": "第{position}个领主的 State 编号不是整数。",
+            "badCoreEvent": "第{position}个领主有未知的核心活动。",
+            "badUnlock": "第{position}个领主的解锁设置不是已知领域的开服天数。",
+            "badPack": "第{position}个领主的礼包设置不是开或关。"
+        },
+        "settings": {
+            "notObject": "设置不是对象。",
+            "badTheme": "主题不是浅色、深色或跟随系统。",
+            "notText": "设置{key}不是文本。",
+            "uiNotObject": "界面设置不是对象。",
+            "badTimeZone": "该时区不是浏览器已知的时区。"
+        },
+        "summary": {
+            "added": "已添加{amount}",
+            "updated": "{amount}个已用文件更新",
+            "kept": "{amount}个保留为此设备上的副本",
+            "replaced": "{amount}个已从文件载入",
+            "removed": "已移除{amount}"
+        }
+    },
+    "region": {
+        "title": "语言和地区",
+        "description": "选择语言，以及数字和日期的写法。随数据一起保存。",
+        "language": {
+            "label": "语言",
+            "hint": "英雄、道具、建筑和研究的名称来自游戏数据，目前保持英文。"
+        },
+        "numberFormat": {
+            "label": "数字格式",
+            "hint": "示例：{example}",
+            "options": {
+                "auto": "自动，跟随语言",
+                "us": "1,234.56（美国）",
+                "european": "1.234,56（德国）",
+                "french": "1 234,56（法国）",
+                "swiss": "1’234.56（瑞士）",
+                "indian": "12,34,567.89（印度）"
+            }
+        },
+        "dateFormat": {
+            "label": "日期格式",
+            "hint": "示例：{example}",
+            "options": {
+                "auto": "自动，跟随语言",
+                "mdy": "月/日/年",
+                "dmy": "日/月/年",
+                "ymd": "年-月-日"
+            }
+        },
+        "timeZone": {
+            "label": "时区",
+            "hint": "用于日期和时间，以及活动页的我的时间。示例：14:05 UTC 显示为{example}。",
+            "auto": "自动，跟随你的设备（{zone}）"
+        }
     }
-  },
-  "about": {
-    "version": "版本{version}",
-    "summary": "记录你的 Whiteout Survival 进度：建筑、英雄、领主装备、专家、宠物、部队、研究、联盟科技、资源和你的规划。所有内容都保存在此浏览器中。",
-    "wiki": "Whiteout Survival 百科",
-    "disclaimer": "与 Century Games 无隶属或认可关系。Whiteout Survival 是 Century Games 的商标。"
-  },
-  "preferences": {
-    "chiefSettings": {
-      "title": "领主设置",
-      "description": "适用于所有领主。即时保存。",
-      "footnote": "在计算器中更改选项不会改变这些默认值。Furnace 显示只改变等级的写法，不改变等级本身。添加或删除领主不会重置这些设置。",
-      "groups": {
-        "furnaceDisplay": "Furnace 显示",
-        "lists": "列表",
-        "calculatorOptions": "计算器默认选项"
-      },
-      "fullLevelLabels": {
-        "label": "显示完整等级标签",
-        "description": "在侧边栏、总览和建筑页显示 Furnace 的子等级，例如 FC 5-2 而不是 FC 5。其他建筑已显示完整标签。"
-      },
-      "hideMaxed": {
-        "label": "隐藏已满级项目",
-        "description": "隐藏已达最高等级的建筑、英雄、宠物和专家。每个列表都保留显示已满级的筛选，不会丢失任何内容。"
-      },
-      "useBonuses": {
-        "label": "应用我的加成合计",
-        "description": "新的计算器默认使用加成页面中的建造速度百分比。单次计算时仍可修改。"
-      },
-      "showSpeedups": {
-        "label": "显示加速分钟数",
-        "description": "在每个计算结果的时间下方显示所需的加速分钟数。"
-      },
-      "showEventPoints": {
-        "label": "显示活动积分",
-        "description": "在会返回活动积分的计算结果中添加活动积分一行。"
-      }
-    },
-    "appearance": {
-      "title": "外观",
-      "description": "选择应用的外观。随数据一起保存。",
-      "themeLabel": "主题",
-      "themeNote": "跟随系统会使用你设备的设置，目前为{current}。此选择包含在备份中。"
-    },
-    "themes": {
-      "light": "浅色",
-      "dark": "深色",
-      "system": "跟随系统"
-    }
-  },
-  "data": {
-    "backupDownloaded": "备份已下载",
-    "merged": "备份已合并",
-    "replaced": "备份已替换",
-    "undo": "撤销",
-    "resetDone": "所有数据已重置",
-    "resetDoneMessage": "已移除{chiefs}并清除设置。",
-    "management": {
-      "title": "数据管理",
-      "description": "一个备份文件包含所有领主和你的设置。"
-    },
-    "export": {
-      "title": "导出数据",
-      "description": "下载包含所有已保存领主的备份文件。文件名：<file>{fileName}</file>。日期为你的本地日期。",
-      "button": "导出全部领主"
-    },
-    "import": {
-      "title": "导入数据",
-      "description": "上传之前导出的文件（.json）。会先检查文件，然后你选择合并或替换，并查看有哪些更改。确认之前不会有任何改动。",
-      "chooseFile": "选择文件",
-      "noFile": "未选择文件",
-      "review": "查看导入"
-    },
-    "reset": {
-      "title": "重置所有数据",
-      "warningTitle": "警告：",
-      "warning": "这将删除所有领主，并重置领主设置和主题。10 秒内可以撤销，如需保留副本，请先导出备份。",
-      "button": "重置所有数据"
-    },
-    "chiefs": {
-      "title": "领主",
-      "description": "在领主页面创建、重命名、编辑和删除领主。导出、导入和重置适用于全部领主。",
-      "manage": "管理领主"
-    }
-  },
-  "importDialog": {
-    "title": "导入备份",
-    "cancel": "取消",
-    "close": "关闭",
-    "merge": "合并",
-    "replace": "替换",
-    "failedTitle": "导入失败。",
-    "checksTitle": "文件检查结果。",
-    "checks": "已找到领主列表，读取了{count, plural, other {{amount}条记录}}。尚未保存任何内容，因此你当前的领主不受影响。",
-    "howToApply": "如何应用该文件？",
-    "modeLabel": "导入方式",
-    "modes": {
-      "merge": "合并（推荐）",
-      "replace": "替换此设备上的所有内容"
-    },
-    "modeNotes": {
-      "merge": "添加新的领主；两边都有的领主保留较新的副本。只在此设备上的领主保留。你的设置保持不变。",
-      "replace": "移除此设备上的所有领主，并原样载入文件，包括其设置。用于恢复一份完全相同的副本。"
-    },
-    "whatChanges": "有哪些更改",
-    "columns": {
-      "chief": "领主",
-      "inFile": "文件中",
-      "onDevice": "此设备上",
-      "result": "结果"
-    },
-    "results": {
-      "added": "已添加",
-      "updated": "已用文件更新",
-      "kept": "保留此设备上的副本",
-      "replaced": "已从文件载入",
-      "removed": "已移除"
-    },
-    "notThere": "没有",
-    "noChiefs": "文件中没有领主。",
-    "undoNote": "导入后 10 秒内可以撤销。",
-    "bytes": "{amount} B",
-    "kilobytes": "{amount} KB",
-    "fileInfo": "{name} · {size}"
-  },
-  "resetDialog": {
-    "title": "重置所有数据",
-    "cancel": "取消",
-    "confirm": "是，重置所有数据",
-    "question": "要从此浏览器删除全部{chiefs}吗？",
-    "removedTitle": "将移除的内容",
-    "settingsNote": "你选择的浅色、深色或跟随系统会恢复为跟随系统。领主设置恢复为默认值。当前领主会被清除。",
-    "undoNote": "重置后 10 秒内可以撤销。如需长期保留文件副本，请先导出备份。",
-    "exportFirst": "先导出备份"
-  },
-  "backup": {
-    "notJson": "该文件不是有效的 JSON。未做任何更改。",
-    "noChiefsList": "缺少领主列表。未做任何更改。",
-    "duplicateId": "两个领主使用了同一个 id。未做任何更改。",
-    "withNothingChanged": "{reason}未做任何更改。",
-    "chief": {
-      "notObject": "第{position}个领主不是对象。",
-      "noId": "第{position}个领主没有 id。",
-      "noName": "第{position}个领主没有名称。",
-      "noDates": "第{position}个领主缺少日期。",
-      "badStateNumber": "第{position}个领主的 State 编号不是整数。",
-      "badCoreEvent": "第{position}个领主有未知的核心活动。",
-      "badUnlock": "第{position}个领主的解锁设置不是已知领域的开服天数。",
-      "badPack": "第{position}个领主的礼包设置不是开或关。"
-    },
-    "settings": {
-      "notObject": "设置不是对象。",
-      "badTheme": "主题不是浅色、深色或跟随系统。",
-      "notText": "设置{key}不是文本。",
-      "uiNotObject": "界面设置不是对象。",
-      "badTimeZone": "该时区不是浏览器已知的时区。"
-    },
-    "summary": {
-      "added": "已添加{amount}",
-      "updated": "{amount}个已用文件更新",
-      "kept": "{amount}个保留为此设备上的副本",
-      "replaced": "{amount}个已从文件载入",
-      "removed": "已移除{amount}"
-    }
-  },
-  "region": {
-    "title": "语言和地区",
-    "description": "选择语言，以及数字和日期的写法。随数据一起保存。",
-    "language": {
-      "label": "语言",
-      "hint": "英雄、道具、建筑和研究的名称来自游戏数据，目前保持英文。"
-    },
-    "numberFormat": {
-      "label": "数字格式",
-      "hint": "示例：{example}",
-      "options": {
-        "auto": "自动，跟随语言",
-        "us": "1,234.56（美国）",
-        "european": "1.234,56（德国）",
-        "french": "1 234,56（法国）",
-        "swiss": "1’234.56（瑞士）",
-        "indian": "12,34,567.89（印度）"
-      }
-    },
-    "dateFormat": {
-      "label": "日期格式",
-      "hint": "示例：{example}",
-      "options": {
-        "auto": "自动，跟随语言",
-        "mdy": "月/日/年",
-        "dmy": "日/月/年",
-        "ymd": "年-月-日"
-      }
-    },
-    "timeZone": {
-      "label": "时区",
-      "hint": "用于日期和时间，以及活动页的我的时间。示例：14:05 UTC 显示为{example}。",
-      "auto": "自动，跟随你的设备（{zone}）"
-    }
-  }
 }

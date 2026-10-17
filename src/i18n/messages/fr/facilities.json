@@ -1,86 +1,86 @@
 {
-  "page": {
-    "title": "Installations"
-  },
-  "view": {
-    "subline": "{chief} · {facilities} installations de la carte, château, {strongholds} bastions et {fortresses} forteresses"
-  },
-  "summary": {
-    "owned": "Installations possédées",
-    "ownedValue": "{owned} sur {total}",
-    "strongholds": "Bastions, référence",
-    "fortresses": "Forteresses, référence",
-    "castle": "Château, référence"
-  },
-  "tabs": {
-    "label": "Vues des installations",
-    "facilities": "Installations",
-    "fortresses": "Forteresses",
-    "map": "Carte"
-  },
-  "show": {
-    "label": "Afficher",
-    "all": "Toutes",
-    "owned": "Possédées",
-    "notOwned": "Non possédées"
-  },
-  "card": {
-    "owned": "{count} possédées",
-    "level": "Niveau {level}",
-    "ownedSwitch": "Possédée",
-    "switchLabel": "{facility} niveau {level} possédée",
-    "booster": "Booster",
-    "injured": "Grièvement blessés",
-    "losses": "Pertes",
-    "ownLimit": "Limite personnelle {limit}. {spots} {spotWord} sur la carte.",
-    "spot": "emplacement",
-    "spots": "emplacements"
-  },
-  "empty": {
-    "title": "Rien à afficher",
-    "description": "Aucun niveau d'installation ne correspond à ce filtre.",
-    "reset": "Tout afficher"
-  },
-  "fortress": {
-    "kind": {
-      "castle": "Château",
-      "stronghold": "Bastion",
-      "fortress": "Forteresse"
+    "page": {
+        "title": "Installations"
     },
-    "coordinates": "x {x}, y {y}",
-    "rewardsHeading": "Récompense par phase",
-    "phase": "Phase {phase}",
-    "noRewards": "Le château n'a aucune récompense dans les données.",
-    "referenceNote": "Référence uniquement. Le château, les bastions et les forteresses changent chaque semaine, donc rien ici n'est possédé ni suivi.",
-    "kindLabel": "Type",
-    "allKinds": "Tous les types",
-    "rewardLabel": "Récompense",
-    "allRewards": "Toutes les récompenses",
-    "shown": "{shown} structures affichées sur {total}",
-    "empty": "Aucune structure ne correspond aux filtres.",
-    "reset": "Réinitialiser les filtres",
-    "filters": "Filtres",
-    "filtersTitle": "Filtres",
-    "filtersDescription": "Filtrer les structures par type et récompense",
-    "done": "Afficher {count}"
-  },
-  "map": {
-    "highlight": "Mettre une installation en évidence",
-    "layers": "Calques",
-    "layerFacilities": "Installations",
-    "layerStrongholds": "Bastions",
-    "layerFortresses": "Forteresses",
-    "spotsHeading": "Emplacements d'installations, {count} au total",
-    "spotLegend": "{name} ({count})",
-    "codeHint": "Le chiffre après le code est le niveau, par exemple Co1 est Construction niveau 1. L'installation en évidence est remplie.",
-    "structures": "Structures",
-    "castleStrongholdLegend": "Château (1) et bastions S1 à S4 ({count})",
-    "fortressLegend": "Forteresse 1 à {count}",
-    "selected": "Sélectionné sur la carte",
-    "selectedNone": "Sélectionnez un château, un bastion ou une forteresse sur la carte.",
-    "mapLabel": "Carte d'alliance",
-    "note": "Schéma de la carte d'alliance. Les positions utilisent les x et y des données sur une grille de {size} par {size}, une case de la grille vaut {step}. Un emplacement est un endroit où une installation peut apparaître, les installations possédées ne sont donc pas marquées. Les données n'ont pas de dessin du terrain.",
-    "spotLabel": "{name} niveau {level}, x {x}, y {y}",
-    "structureLabel": "{name}, x {x}, y {y}"
-  }
+    "view": {
+        "subline": "{chief} · {facilities} installations de la carte, château, {strongholds} bastions et {fortresses} forteresses"
+    },
+    "summary": {
+        "owned": "Installations possédées",
+        "ownedValue": "{owned} sur {total}",
+        "strongholds": "Bastions, référence",
+        "fortresses": "Forteresses, référence",
+        "castle": "Château, référence"
+    },
+    "tabs": {
+        "label": "Vues des installations",
+        "facilities": "Installations",
+        "fortresses": "Forteresses",
+        "map": "Carte"
+    },
+    "show": {
+        "label": "Afficher",
+        "all": "Toutes",
+        "owned": "Possédées",
+        "notOwned": "Non possédées"
+    },
+    "card": {
+        "owned": "{count} possédées",
+        "level": "Niveau {level}",
+        "ownedSwitch": "Possédée",
+        "switchLabel": "{facility} niveau {level} possédée",
+        "booster": "Booster",
+        "injured": "Grièvement blessés",
+        "losses": "Pertes",
+        "ownLimit": "Limite personnelle {limit}. {spots} {spotWord} sur la carte.",
+        "spot": "emplacement",
+        "spots": "emplacements"
+    },
+    "empty": {
+        "title": "Rien à afficher",
+        "description": "Aucun niveau d'installation ne correspond à ce filtre.",
+        "reset": "Tout afficher"
+    },
+    "fortress": {
+        "kind": {
+            "castle": "Château",
+            "stronghold": "Bastion",
+            "fortress": "Forteresse"
+        },
+        "coordinates": "x {x}, y {y}",
+        "rewardsHeading": "Récompense par phase",
+        "phase": "Phase {phase}",
+        "noRewards": "Le château n'a aucune récompense dans les données.",
+        "referenceNote": "Référence uniquement. Le château, les bastions et les forteresses changent chaque semaine, donc rien ici n'est possédé ni suivi.",
+        "kindLabel": "Type",
+        "allKinds": "Tous les types",
+        "rewardLabel": "Récompense",
+        "allRewards": "Toutes les récompenses",
+        "shown": "{shown} structures affichées sur {total}",
+        "empty": "Aucune structure ne correspond aux filtres.",
+        "reset": "Réinitialiser les filtres",
+        "filters": "Filtres",
+        "filtersTitle": "Filtres",
+        "filtersDescription": "Filtrer les structures par type et récompense",
+        "done": "Afficher {count}"
+    },
+    "map": {
+        "highlight": "Mettre une installation en évidence",
+        "layers": "Calques",
+        "layerFacilities": "Installations",
+        "layerStrongholds": "Bastions",
+        "layerFortresses": "Forteresses",
+        "spotsHeading": "Emplacements d'installations, {count} au total",
+        "spotLegend": "{name} ({count})",
+        "codeHint": "Le chiffre après le code est le niveau, par exemple Co1 est Construction niveau 1. L'installation en évidence est remplie.",
+        "structures": "Structures",
+        "castleStrongholdLegend": "Château (1) et bastions S1 à S4 ({count})",
+        "fortressLegend": "Forteresse 1 à {count}",
+        "selected": "Sélectionné sur la carte",
+        "selectedNone": "Sélectionnez un château, un bastion ou une forteresse sur la carte.",
+        "mapLabel": "Carte d'alliance",
+        "note": "Schéma de la carte d'alliance. Les positions utilisent les x et y des données sur une grille de {size} par {size}, une case de la grille vaut {step}. Un emplacement est un endroit où une installation peut apparaître, les installations possédées ne sont donc pas marquées. Les données n'ont pas de dessin du terrain.",
+        "spotLabel": "{name} niveau {level}, x {x}, y {y}",
+        "structureLabel": "{name}, x {x}, y {y}"
+    }
 }

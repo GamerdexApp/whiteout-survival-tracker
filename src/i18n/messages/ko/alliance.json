@@ -1,50 +1,50 @@
 {
-  "page": {
-    "title": "연맹"
-  },
-  "view": {
-    "subline": "{chief} · {details} · 깃발 레벨 {level}"
-  },
-  "banner": {
-    "title": "연맹 깃발",
-    "currentLevel": "현재 레벨",
-    "levelLabel": "깃발 레벨",
-    "maxHint": "0부터 {max}까지 정수 레벨이에요.",
-    "rangeChip": "{range}",
-    "costHeading": "{range} 구간의 레벨당 비용",
-    "noTimeOrPower": "패키지에 깃발의 건설 시간과 전투력이 없어서 표시하지 않아요.",
-    "noCost": "비용 없음",
-    "none": "없음",
-    "lower": "깃발 레벨 낮추기",
-    "raise": "깃발 레벨 올리기"
-  },
-  "structures": {
-    "title": "연맹 시설",
-    "tech": {
-      "title": "기술",
-      "description": "성장, 영토, 전투 노드 {count}개",
-      "status": "최대 {maxed}, 진행 중 {progress}, 잠김 {locked}"
+    "page": {
+        "title": "연맹"
     },
-    "facilities": {
-      "title": "시설",
-      "description": "지도 시설 {count}개",
-      "owned": "{owned}개 보유"
+    "view": {
+        "subline": "{chief} · {details} · 깃발 레벨 {level}"
     },
-    "fortresses": {
-      "title": "요새",
-      "description": "성채, 거점 {strongholds}개, 요새 {fortresses}개",
-      "reference": "참고용"
+    "banner": {
+        "title": "연맹 깃발",
+        "currentLevel": "현재 레벨",
+        "levelLabel": "깃발 레벨",
+        "maxHint": "0부터 {max}까지 정수 레벨이에요.",
+        "rangeChip": "{range}",
+        "costHeading": "{range} 구간의 레벨당 비용",
+        "noTimeOrPower": "패키지에 깃발의 건설 시간과 전투력이 없어서 표시하지 않아요.",
+        "noCost": "비용 없음",
+        "none": "없음",
+        "lower": "깃발 레벨 낮추기",
+        "raise": "깃발 레벨 올리기"
+    },
+    "structures": {
+        "title": "연맹 시설",
+        "tech": {
+            "title": "기술",
+            "description": "성장, 영토, 전투 노드 {count}개",
+            "status": "최대 {maxed}, 진행 중 {progress}, 잠김 {locked}"
+        },
+        "facilities": {
+            "title": "시설",
+            "description": "지도 시설 {count}개",
+            "owned": "{owned}개 보유"
+        },
+        "fortresses": {
+            "title": "요새",
+            "description": "성채, 거점 {strongholds}개, 요새 {fortresses}개",
+            "reference": "참고용"
+        }
+    },
+    "table": {
+        "title": "레벨 구간별 깃발 비용",
+        "note": "구간 {count}개, 한 구간 안의 모든 레벨은 비용이 같아요",
+        "range": "구간",
+        "state": "상태",
+        "built": "건설됨",
+        "current": "현재",
+        "notBuilt": "미건설",
+        "none": "없음",
+        "noCost": "비용 없음"
     }
-  },
-  "table": {
-    "title": "레벨 구간별 깃발 비용",
-    "note": "구간 {count}개, 한 구간 안의 모든 레벨은 비용이 같아요",
-    "range": "구간",
-    "state": "상태",
-    "built": "건설됨",
-    "current": "현재",
-    "notBuilt": "미건설",
-    "none": "없음",
-    "noCost": "비용 없음"
-  }
 }

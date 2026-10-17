@@ -1,209 +1,209 @@
 {
-  "page": {
-    "title": "펫"
-  },
-  "view": {
-    "subline": "{chief} · {details} · 펫 {total}종 중 {unlocked}종 해금"
-  },
-  "rarities": {
-    "Common": "일반",
-    "Uncommon": "고급",
-    "Rare": "희귀",
-    "Epic": "에픽",
-    "Legendary": "전설"
-  },
-  "unlock": {
-    "afterFurnace": "{days}일차 및 Furnace {level}",
-    "afterPet": "{days}일차 및 {pet} {level}레벨"
-  },
-  "summary": {
-    "unlocked": "해금",
-    "unlockedValue": "{total}종 중 {count}종",
-    "unlockedNote": "직접 설정",
-    "power": "총 전투력",
-    "powerNote": "해금한 펫의 레벨, 승급, 정제 전투력",
-    "powerUnknown": "해금한 펫의 레벨, 승급, 정제 전투력, 알 수 없음 {amount}",
-    "next": "다음 해금",
-    "allUnlocked": "모두 해금",
-    "allUnlockedNote": "모든 펫을 해금했어요",
-    "lockedNote": "{count}종은 이후 서버 일차까지 잠김"
-  },
-  "totals": {
-    "attackDefense": "병력 공격 및 방어",
-    "attack": "공격",
-    "defense": "방어",
-    "lethality": "살상력",
-    "health": "체력",
-    "gain": "+{value}%",
-    "types": {
-      "infantry": "보병",
-      "lancer": "창병",
-      "marksman": "궁병"
-    }
-  },
-  "search": {
-    "label": "펫 검색",
-    "placeholder": "이름으로 펫 {amount}종 검색"
-  },
-  "status": {
-    "showing": "{count, plural, other {펫}} {total}종 중 {shown}종 표시 중.",
-    "filters": " 필터: {list}.",
-    "filterNames": {
-      "rarity": "희귀도",
-      "status": "상태",
-      "advanced": "승급",
-      "order": "정렬"
+    "page": {
+        "title": "펫"
     },
-    "readOnlyGoals": "목표는 여기서 읽기 전용이며 계획에서 설정해요. 현재 값과 같은 목표는 목표 없음이에요.",
-    "showMore": "{count, plural, other {펫 {amount}종 더 보기}}"
-  },
-  "empty": {
-    "title": "일치하는 펫이 없어요",
-    "description": "검색어나 필터를 바꿔 더 많은 펫을 찾아보세요.",
-    "reset": "필터 초기화"
-  },
-  "toast": {
-    "lockedTitle": "{name} 잠김",
-    "lockedMessage": "레벨, 승급, 정제는 그대로 유지돼요.",
-    "undo": "실행 취소"
-  },
-  "card": {
-    "summary": "{rarity} · 최대 레벨 {max}",
-    "unlocked": "해금",
-    "unlockedLabel": "{pet} 해금",
-    "cooldown": "쿨타임 {time}",
-    "cooldownByTier": "쿨타임은 단계에 따라 달라요",
-    "cooldownUnknown": "쿨타임 알 수 없음",
-    "skillTiers": "{count, plural, other {스킬 단계 {amount}개}}",
-    "unlockRule": "해금 규칙",
-    "ruleMet": "이 규칙을 충족해요",
-    "level": "레벨 (최대 {max})",
-    "levelLabel": "{pet} 레벨",
-    "goal": "목표 {level}",
-    "noGoal": "목표 없음",
-    "advanced": "승급",
-    "advancedHint": "승급은 10, 20, 30레벨 등에서 설정할 수 있어요.",
-    "refinement": "정제",
-    "refinementMax": "각 최대 {max}%",
-    "refineLabel": "{pet} {stat}",
-    "percentSign": "%",
-    "attack": "공격 +{value}%",
-    "defense": "방어 +{value}%",
-    "power": "전투력 {value}",
-    "powerUnknown": "전투력 알 수 없음",
-    "powerParts": "레벨과 승급 {base}, 정제 {refining}"
-  },
-  "filters": {
-    "button": "필터",
-    "title": "필터",
-    "description": "펫 목록에 표시할 항목을 고르세요",
-    "rarity": "희귀도",
-    "rarityAll": "전체 {amount}",
-    "rarityOption": "{rarity} {amount}",
+    "view": {
+        "subline": "{chief} · {details} · 펫 {total}종 중 {unlocked}종 해금"
+    },
     "rarities": {
-      "Common": "일반",
-      "Uncommon": "고급",
-      "Rare": "희귀",
-      "Epic": "에픽",
-      "Legendary": "전설"
-    },
-    "status": "상태",
-    "statusOptions": {
-      "all": "모든 펫",
-      "unlocked": "해금",
-      "locked": "잠김"
-    },
-    "advanced": "승급",
-    "advancedOptions": {
-      "any": "전체",
-      "advanced": "승급함",
-      "notAdvanced": "승급 안 함"
-    },
-    "order": "정렬",
-    "orderOptions": {
-      "game": "게임 순서",
-      "name": "이름순",
-      "level": "높은 레벨순"
-    },
-    "notSaved": "필터는 저장되지 않아요.",
-    "reset": "초기화",
-    "show": "{count, plural, other {펫 {amount}종 보기}}"
-  },
-  "plan": {
-    "button": "계획",
-    "title": "펫 계획",
-    "description": "목표 달성에 필요한 먹이, 아이템, 능력치, 이벤트 점수",
-    "saved": "{date}에 계획 저장됨",
-    "notSavedYet": "계획이 아직 저장되지 않았어요",
-    "close": "닫기",
-    "save": "계획 저장",
-    "exportButton": "핵심 이벤트로 내보내기",
-    "exportNothing": "계획에 내보낼 승급 점수가 없어요.",
-    "export": {
-      "advancement": "펫 승급 점수",
-      "commonMark": "Common Wild Marks",
-      "advancedMark": "Advanced Wild Marks",
-      "marksDetail": "자원에서 계산해요."
-    },
-    "noPets": "해금한 펫을 추가하면 레벨을 계획할 수 있어요.",
-    "add": {
-      "title": "펫 추가",
-      "selectLabel": "추가할 펫",
-      "button": "펫 추가",
-      "allIn": "해금한 모든 펫이 계획에 있어요.",
-      "noneUnlocked": "펫 페이지에서 펫을 해금하면 계획할 수 있어요."
-    },
-    "block": {
-      "rarities": {
         "Common": "일반",
         "Uncommon": "고급",
         "Rare": "희귀",
         "Epic": "에픽",
         "Legendary": "전설"
-      },
-      "maxLevel": "최대 레벨 {max}",
-      "remove": "삭제",
-      "removeLabel": "계획에서 {pet} 삭제",
-      "current": "현재 레벨",
-      "to": "에서",
-      "goal": "목표 레벨 (최대 {max})",
-      "goalLabel": "{pet} 목표 레벨",
-      "payAdvancement": "목표 도달 시 승급 비용 지불",
-      "paysCurrent": "{level}레벨에서 승급하지 않았으므로 그 승급 비용을 지불해요."
     },
-    "result": {
-      "title": "{count, plural, other {펫 {amount}종}} 결과",
-      "resources": "자원, 모든 펫",
-      "byPet": "펫별",
-      "heads": {
-        "pet": "펫",
-        "levels": "레벨",
-        "food": "먹이",
-        "power": "전투력"
-      },
-      "powerGain": "+{value}",
-      "percentGain": "+{value}%",
-      "unknown": "알 수 없음",
-      "gains": "증가량",
-      "gainNames": {
-        "levels": "오른 레벨",
-        "advancements": "승급",
-        "attack": "병력 공격",
-        "defense": "병력 방어",
-        "power": "전투력",
-        "score": "승급 점수"
-      },
-      "unknownPowerNote": "이 계획의 일부 레벨은 패키지에 승급 전투력이 없어서 전투력 증가를 알 수 없어요.",
-      "eventPoints": "이벤트 점수",
-      "events": {
-        "svs": "SvS",
-        "allianceShowdown": "Alliance Showdown",
-        "kingOfIcefield": "King of Icefield",
-        "hallOfChief": "Hall of Chief"
-      },
-      "notScored": "점수 없음",
-      "eventNote": "이벤트 점수는 승급 점수에 각 이벤트 점수 항목의 점수를 곱한 값이에요.",
-      "scoreSourceNote": "40~100레벨의 승급 점수는 이벤트 안내와 일치해요. 10~30레벨은 한 출처(WoS Tools)에서 가져왔어요."
+    "unlock": {
+        "afterFurnace": "{days}일차 및 Furnace {level}",
+        "afterPet": "{days}일차 및 {pet} {level}레벨"
+    },
+    "summary": {
+        "unlocked": "해금",
+        "unlockedValue": "{total}종 중 {count}종",
+        "unlockedNote": "직접 설정",
+        "power": "총 전투력",
+        "powerNote": "해금한 펫의 레벨, 승급, 정제 전투력",
+        "powerUnknown": "해금한 펫의 레벨, 승급, 정제 전투력, 알 수 없음 {amount}",
+        "next": "다음 해금",
+        "allUnlocked": "모두 해금",
+        "allUnlockedNote": "모든 펫을 해금했어요",
+        "lockedNote": "{count}종은 이후 서버 일차까지 잠김"
+    },
+    "totals": {
+        "attackDefense": "병력 공격 및 방어",
+        "attack": "공격",
+        "defense": "방어",
+        "lethality": "살상력",
+        "health": "체력",
+        "gain": "+{value}%",
+        "types": {
+            "infantry": "보병",
+            "lancer": "창병",
+            "marksman": "궁병"
+        }
+    },
+    "search": {
+        "label": "펫 검색",
+        "placeholder": "이름으로 펫 {amount}종 검색"
+    },
+    "status": {
+        "showing": "{count, plural, other {펫}} {total}종 중 {shown}종 표시 중.",
+        "filters": " 필터: {list}.",
+        "filterNames": {
+            "rarity": "희귀도",
+            "status": "상태",
+            "advanced": "승급",
+            "order": "정렬"
+        },
+        "readOnlyGoals": "목표는 여기서 읽기 전용이며 계획에서 설정해요. 현재 값과 같은 목표는 목표 없음이에요.",
+        "showMore": "{count, plural, other {펫 {amount}종 더 보기}}"
+    },
+    "empty": {
+        "title": "일치하는 펫이 없어요",
+        "description": "검색어나 필터를 바꿔 더 많은 펫을 찾아보세요.",
+        "reset": "필터 초기화"
+    },
+    "toast": {
+        "lockedTitle": "{name} 잠김",
+        "lockedMessage": "레벨, 승급, 정제는 그대로 유지돼요.",
+        "undo": "실행 취소"
+    },
+    "card": {
+        "summary": "{rarity} · 최대 레벨 {max}",
+        "unlocked": "해금",
+        "unlockedLabel": "{pet} 해금",
+        "cooldown": "쿨타임 {time}",
+        "cooldownByTier": "쿨타임은 단계에 따라 달라요",
+        "cooldownUnknown": "쿨타임 알 수 없음",
+        "skillTiers": "{count, plural, other {스킬 단계 {amount}개}}",
+        "unlockRule": "해금 규칙",
+        "ruleMet": "이 규칙을 충족해요",
+        "level": "레벨 (최대 {max})",
+        "levelLabel": "{pet} 레벨",
+        "goal": "목표 {level}",
+        "noGoal": "목표 없음",
+        "advanced": "승급",
+        "advancedHint": "승급은 10, 20, 30레벨 등에서 설정할 수 있어요.",
+        "refinement": "정제",
+        "refinementMax": "각 최대 {max}%",
+        "refineLabel": "{pet} {stat}",
+        "percentSign": "%",
+        "attack": "공격 +{value}%",
+        "defense": "방어 +{value}%",
+        "power": "전투력 {value}",
+        "powerUnknown": "전투력 알 수 없음",
+        "powerParts": "레벨과 승급 {base}, 정제 {refining}"
+    },
+    "filters": {
+        "button": "필터",
+        "title": "필터",
+        "description": "펫 목록에 표시할 항목을 고르세요",
+        "rarity": "희귀도",
+        "rarityAll": "전체 {amount}",
+        "rarityOption": "{rarity} {amount}",
+        "rarities": {
+            "Common": "일반",
+            "Uncommon": "고급",
+            "Rare": "희귀",
+            "Epic": "에픽",
+            "Legendary": "전설"
+        },
+        "status": "상태",
+        "statusOptions": {
+            "all": "모든 펫",
+            "unlocked": "해금",
+            "locked": "잠김"
+        },
+        "advanced": "승급",
+        "advancedOptions": {
+            "any": "전체",
+            "advanced": "승급함",
+            "notAdvanced": "승급 안 함"
+        },
+        "order": "정렬",
+        "orderOptions": {
+            "game": "게임 순서",
+            "name": "이름순",
+            "level": "높은 레벨순"
+        },
+        "notSaved": "필터는 저장되지 않아요.",
+        "reset": "초기화",
+        "show": "{count, plural, other {펫 {amount}종 보기}}"
+    },
+    "plan": {
+        "button": "계획",
+        "title": "펫 계획",
+        "description": "목표 달성에 필요한 먹이, 아이템, 능력치, 이벤트 점수",
+        "saved": "{date}에 계획 저장됨",
+        "notSavedYet": "계획이 아직 저장되지 않았어요",
+        "close": "닫기",
+        "save": "계획 저장",
+        "exportButton": "핵심 이벤트로 내보내기",
+        "exportNothing": "계획에 내보낼 승급 점수가 없어요.",
+        "export": {
+            "advancement": "펫 승급 점수",
+            "commonMark": "Common Wild Marks",
+            "advancedMark": "Advanced Wild Marks",
+            "marksDetail": "자원에서 계산해요."
+        },
+        "noPets": "해금한 펫을 추가하면 레벨을 계획할 수 있어요.",
+        "add": {
+            "title": "펫 추가",
+            "selectLabel": "추가할 펫",
+            "button": "펫 추가",
+            "allIn": "해금한 모든 펫이 계획에 있어요.",
+            "noneUnlocked": "펫 페이지에서 펫을 해금하면 계획할 수 있어요."
+        },
+        "block": {
+            "rarities": {
+                "Common": "일반",
+                "Uncommon": "고급",
+                "Rare": "희귀",
+                "Epic": "에픽",
+                "Legendary": "전설"
+            },
+            "maxLevel": "최대 레벨 {max}",
+            "remove": "삭제",
+            "removeLabel": "계획에서 {pet} 삭제",
+            "current": "현재 레벨",
+            "to": "에서",
+            "goal": "목표 레벨 (최대 {max})",
+            "goalLabel": "{pet} 목표 레벨",
+            "payAdvancement": "목표 도달 시 승급 비용 지불",
+            "paysCurrent": "{level}레벨에서 승급하지 않았으므로 그 승급 비용을 지불해요."
+        },
+        "result": {
+            "title": "{count, plural, other {펫 {amount}종}} 결과",
+            "resources": "자원, 모든 펫",
+            "byPet": "펫별",
+            "heads": {
+                "pet": "펫",
+                "levels": "레벨",
+                "food": "먹이",
+                "power": "전투력"
+            },
+            "powerGain": "+{value}",
+            "percentGain": "+{value}%",
+            "unknown": "알 수 없음",
+            "gains": "증가량",
+            "gainNames": {
+                "levels": "오른 레벨",
+                "advancements": "승급",
+                "attack": "병력 공격",
+                "defense": "병력 방어",
+                "power": "전투력",
+                "score": "승급 점수"
+            },
+            "unknownPowerNote": "이 계획의 일부 레벨은 패키지에 승급 전투력이 없어서 전투력 증가를 알 수 없어요.",
+            "eventPoints": "이벤트 점수",
+            "events": {
+                "svs": "SvS",
+                "allianceShowdown": "Alliance Showdown",
+                "kingOfIcefield": "King of Icefield",
+                "hallOfChief": "Hall of Chief"
+            },
+            "notScored": "점수 없음",
+            "eventNote": "이벤트 점수는 승급 점수에 각 이벤트 점수 항목의 점수를 곱한 값이에요.",
+            "scoreSourceNote": "40~100레벨의 승급 점수는 이벤트 안내와 일치해요. 10~30레벨은 한 출처(WoS Tools)에서 가져왔어요."
+        }
     }
-  }
 }

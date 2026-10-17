@@ -1,77 +1,77 @@
 {
-  "line": "{nodes} node riset di {tabs} tab. Hanya referensi, tidak ada yang disimpan.",
-  "tabsLabel": "Kategori riset",
-  "tabs": {
-    "battle": "Pertempuran",
-    "growth": "Pertumbuhan",
-    "economy": "Ekonomi",
-    "t11": "T11",
-    "t12": "T12"
-  },
-  "search": {
-    "label": "Cari",
-    "placeholder": "Cari {amount} node riset"
-  },
-  "filters": {
-    "tier": "Tier",
-    "allTiers": "Semua",
-    "tierOption": "Tier {tier}",
-    "troop": "Jenis pasukan",
-    "allTroops": "Semua",
-    "troops": {
-      "Infantry": "Infanteri",
-      "Marksman": "Marksman",
-      "Lancer": "Lancer"
+    "line": "{nodes} node riset di {tabs} tab. Hanya referensi, tidak ada yang disimpan.",
+    "tabsLabel": "Kategori riset",
+    "tabs": {
+        "battle": "Pertempuran",
+        "growth": "Pertumbuhan",
+        "economy": "Ekonomi",
+        "t11": "T11",
+        "t12": "T12"
     },
-    "data": "Data",
-    "dataOptions": {
-      "all": "Semua node",
-      "placeholders": "Placeholder",
-      "missingTime": "Waktu kosong"
+    "search": {
+        "label": "Cari",
+        "placeholder": "Cari {amount} node riset"
+    },
+    "filters": {
+        "tier": "Tier",
+        "allTiers": "Semua",
+        "tierOption": "Tier {tier}",
+        "troop": "Jenis pasukan",
+        "allTroops": "Semua",
+        "troops": {
+            "Infantry": "Infanteri",
+            "Marksman": "Marksman",
+            "Lancer": "Lancer"
+        },
+        "data": "Data",
+        "dataOptions": {
+            "all": "Semua node",
+            "placeholders": "Placeholder",
+            "missingTime": "Waktu kosong"
+        }
+    },
+    "list": {
+        "title": "Node",
+        "empty": "Tidak ada node riset yang cocok dengan pencarian ini.",
+        "emptyHint": "Hapus pencarian atau filter.",
+        "columns": {
+            "node": "Node",
+            "tier": "Tier",
+            "levels": "Level",
+            "bonus": "Bonus di level 1",
+            "time": "Waktu, level 1",
+            "power": "Kekuatan"
+        },
+        "mobileMeta": "{category}, tier {tier}, {levels}",
+        "count": "{count, plural, other {{amount} node}}"
+    },
+    "levels": "{count, plural, other {{amount} level}}",
+    "detail": {
+        "columns": {
+            "level": "Level",
+            "requires": "Syarat",
+            "cost": "Biaya",
+            "time": "Waktu",
+            "bonus": "Bonus",
+            "power": "Kekuatan"
+        },
+        "level": "Level {level}",
+        "none": "Tidak ada",
+        "placeholderNote": "Node ini hanya placeholder. Paket data tidak punya biaya maupun bonus untuknya.",
+        "requirement": {
+            "building": "{name} {level}",
+            "research": "{name} level {level}"
+        },
+        "levelsTitle": "Level"
+    },
+    "view": {
+        "label": "Tampilan",
+        "list": "Daftar",
+        "tree": "Pohon"
+    },
+    "tree": {
+        "region": "Pohon riset {tab}",
+        "openNode": "{name}, {levels}",
+        "tier": "T{tier}"
     }
-  },
-  "list": {
-    "title": "Node",
-    "empty": "Tidak ada node riset yang cocok dengan pencarian ini.",
-    "emptyHint": "Hapus pencarian atau filter.",
-    "columns": {
-      "node": "Node",
-      "tier": "Tier",
-      "levels": "Level",
-      "bonus": "Bonus di level 1",
-      "time": "Waktu, level 1",
-      "power": "Kekuatan"
-    },
-    "mobileMeta": "{category}, tier {tier}, {levels}",
-    "count": "{count, plural, other {{amount} node}}"
-  },
-  "levels": "{count, plural, other {{amount} level}}",
-  "detail": {
-    "columns": {
-      "level": "Level",
-      "requires": "Syarat",
-      "cost": "Biaya",
-      "time": "Waktu",
-      "bonus": "Bonus",
-      "power": "Kekuatan"
-    },
-    "level": "Level {level}",
-    "none": "Tidak ada",
-    "placeholderNote": "Node ini hanya placeholder. Paket data tidak punya biaya maupun bonus untuknya.",
-    "requirement": {
-      "building": "{name} {level}",
-      "research": "{name} level {level}"
-    },
-    "levelsTitle": "Level"
-  },
-  "view": {
-    "label": "Tampilan",
-    "list": "Daftar",
-    "tree": "Pohon"
-  },
-  "tree": {
-    "region": "Pohon riset {tab}",
-    "openNode": "{name}, {levels}",
-    "tier": "T{tier}"
-  }
 }

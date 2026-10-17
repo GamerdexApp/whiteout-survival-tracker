@@ -1,145 +1,145 @@
 {
-  "line": "Событий: {events} (альянсовых {alliance}, одиночных {solo}, для новичков {rookie}, праздничных {holiday}). Фазы, начисление очков, награды, советы, магазины и рейтинги там, где они есть в пакете.",
-  "list": {
-    "title": "События",
-    "showing": "Показано {shown} из {total}",
-    "search": "Поиск",
-    "searchPlaceholder": "Поиск событий по названию",
-    "scoringFilter": "Начисление очков",
-    "categoryLabel": "Категория",
-    "all": "Все",
-    "table": "События",
-    "event": "Событие",
-    "category": "Категория",
-    "frequency": "Частота (свободный текст)",
-    "duration": "Длительность (свободный текст)",
-    "scoringRows": "Строки начисления",
-    "noScoringRows": "Нет строк начисления",
-    "emptyTitle": "Подходящих событий нет",
-    "emptyDescription": "Измените поиск, категорию или начисление очков."
-  },
-  "category": {
-    "alliance": "Альянс",
-    "solo": "Одиночные",
-    "rookie": "Новичкам",
-    "holiday": "Праздники"
-  },
-  "scoring": {
-    "any": "Любое начисление",
-    "ranking": "Рейтинг",
-    "tier": "Ступени",
-    "milestones": "Рубежи",
-    "waves": "Волны",
-    "participation": "Участие"
-  },
-  "parts": {
-    "days": "{count, plural, one {{amount} день} few {{amount} дня} many {{amount} дней} other {{amount} дня}}",
-    "tiers": "{count, plural, one {{amount} ступень} few {{amount} ступени} many {{amount} ступеней} other {{amount} ступени}}",
-    "missions": "{count, plural, one {{amount} задание} few {{amount} задания} many {{amount} заданий} other {{amount} задания}}",
-    "waves": "{count, plural, one {{amount} волна} few {{amount} волны} many {{amount} волн} other {{amount} волны}}",
-    "versions": "{count, plural, one {{amount} версия} few {{amount} версии} many {{amount} версий} other {{amount} версии}}",
-    "levels": "{count, plural, one {{amount} уровень} few {{amount} уровня} many {{amount} уровней} other {{amount} уровня}}"
-  },
-  "detail": {
-    "title": "Подробности",
-    "category": "Категория",
-    "frequency": "Частота",
-    "duration": "Длительность",
-    "summary": "Кратко",
-    "requirements": "Требования",
-    "scoring": "Начисление очков",
-    "noRequirements": "Нет"
-  },
-  "phases": {
-    "title": "Фазы",
-    "table": "Фазы события",
-    "phase": "Фаза",
-    "description": "Описание"
-  },
-  "scoringRows": {
-    "title": "Строки начисления: {name}",
-    "table": "Действия с очками",
-    "action": "Действие",
-    "points": "Очки",
-    "victoryPoints": "Очков победы: {amount}",
-    "milestones": "Рубежи: {name}",
-    "allianceMilestones": "Рубежи альянса: {name}"
-  },
-  "missions": {
-    "title": "Задания",
-    "table": "Задания события",
-    "mission": "Задание",
-    "group": "Группа",
-    "points": "Очки",
-    "rewards": "Награды"
-  },
-  "tiers": {
-    "title": "Ступени",
-    "table": "Ступени события",
-    "tier": "Ступень",
-    "score": "Цель",
-    "scoreValue": "{amount} {unit}",
-    "scoreValuePoints": "Очков: {amount}",
-    "rewards": "Награды",
-    "note": "Заметка"
-  },
-  "rankings": {
-    "title": "Награды за место",
-    "personal": "Награды личного рейтинга",
-    "alliance": "Награды рейтинга альянса",
-    "basedOn": "Награды за место по: {basis}",
-    "table": "Награды за место",
-    "rank": "Место",
-    "starChange": "Изменение звёзд",
-    "rewards": "Награды"
-  },
-  "rewards": {
-    "title": "Награды",
-    "partial": "Этот список наград неполный.",
-    "amountName": "{amount} {name}"
-  },
-  "pointLevels": {
-    "title": "Уровни очков",
-    "table": "Уровни очков",
-    "level": "Уровень",
-    "personal": "Личные очки",
-    "alliance": "Очки альянса",
-    "rewards": "Награды"
-  },
-  "waves": {
-    "title": "Волны",
-    "table": "Волны атак",
-    "wave": "Волна",
-    "target": "Цель",
-    "rule": "Правило",
-    "city": "Город",
-    "headquarters": "Штаб"
-  },
-  "zones": {
-    "title": "Зоны",
-    "table": "Зоны события",
-    "zone": "Зона",
-    "days": "Дни",
-    "statSources": "Источники характеристик",
-    "unlock": "Открытие"
-  },
-  "shop": {
-    "title": "Магазин",
-    "titleNamed": "Магазин: {name}",
-    "table": "Предложения магазина",
-    "offer": "Предложение",
-    "cost": "Цена",
-    "costValue": "{amount} {currency}",
-    "limit": "Лимит",
-    "contents": "Содержимое"
-  },
-  "versions": {
-    "title": "{name}",
-    "missions": "Задания",
-    "chests": "Сундуки"
-  },
-  "tips": {
-    "title": "Советы"
-  },
-  "recordLine": "Событие ({category}) с фазами, начислением очков, наградами и рейтингами."
+    "line": "Событий: {events} (альянсовых {alliance}, одиночных {solo}, для новичков {rookie}, праздничных {holiday}). Фазы, начисление очков, награды, советы, магазины и рейтинги там, где они есть в пакете.",
+    "list": {
+        "title": "События",
+        "showing": "Показано {shown} из {total}",
+        "search": "Поиск",
+        "searchPlaceholder": "Поиск событий по названию",
+        "scoringFilter": "Начисление очков",
+        "categoryLabel": "Категория",
+        "all": "Все",
+        "table": "События",
+        "event": "Событие",
+        "category": "Категория",
+        "frequency": "Частота (свободный текст)",
+        "duration": "Длительность (свободный текст)",
+        "scoringRows": "Строки начисления",
+        "noScoringRows": "Нет строк начисления",
+        "emptyTitle": "Подходящих событий нет",
+        "emptyDescription": "Измените поиск, категорию или начисление очков."
+    },
+    "category": {
+        "alliance": "Альянс",
+        "solo": "Одиночные",
+        "rookie": "Новичкам",
+        "holiday": "Праздники"
+    },
+    "scoring": {
+        "any": "Любое начисление",
+        "ranking": "Рейтинг",
+        "tier": "Ступени",
+        "milestones": "Рубежи",
+        "waves": "Волны",
+        "participation": "Участие"
+    },
+    "parts": {
+        "days": "{count, plural, one {{amount} день} few {{amount} дня} many {{amount} дней} other {{amount} дня}}",
+        "tiers": "{count, plural, one {{amount} ступень} few {{amount} ступени} many {{amount} ступеней} other {{amount} ступени}}",
+        "missions": "{count, plural, one {{amount} задание} few {{amount} задания} many {{amount} заданий} other {{amount} задания}}",
+        "waves": "{count, plural, one {{amount} волна} few {{amount} волны} many {{amount} волн} other {{amount} волны}}",
+        "versions": "{count, plural, one {{amount} версия} few {{amount} версии} many {{amount} версий} other {{amount} версии}}",
+        "levels": "{count, plural, one {{amount} уровень} few {{amount} уровня} many {{amount} уровней} other {{amount} уровня}}"
+    },
+    "detail": {
+        "title": "Подробности",
+        "category": "Категория",
+        "frequency": "Частота",
+        "duration": "Длительность",
+        "summary": "Кратко",
+        "requirements": "Требования",
+        "scoring": "Начисление очков",
+        "noRequirements": "Нет"
+    },
+    "phases": {
+        "title": "Фазы",
+        "table": "Фазы события",
+        "phase": "Фаза",
+        "description": "Описание"
+    },
+    "scoringRows": {
+        "title": "Строки начисления: {name}",
+        "table": "Действия с очками",
+        "action": "Действие",
+        "points": "Очки",
+        "victoryPoints": "Очков победы: {amount}",
+        "milestones": "Рубежи: {name}",
+        "allianceMilestones": "Рубежи альянса: {name}"
+    },
+    "missions": {
+        "title": "Задания",
+        "table": "Задания события",
+        "mission": "Задание",
+        "group": "Группа",
+        "points": "Очки",
+        "rewards": "Награды"
+    },
+    "tiers": {
+        "title": "Ступени",
+        "table": "Ступени события",
+        "tier": "Ступень",
+        "score": "Цель",
+        "scoreValue": "{amount} {unit}",
+        "scoreValuePoints": "Очков: {amount}",
+        "rewards": "Награды",
+        "note": "Заметка"
+    },
+    "rankings": {
+        "title": "Награды за место",
+        "personal": "Награды личного рейтинга",
+        "alliance": "Награды рейтинга альянса",
+        "basedOn": "Награды за место по: {basis}",
+        "table": "Награды за место",
+        "rank": "Место",
+        "starChange": "Изменение звёзд",
+        "rewards": "Награды"
+    },
+    "rewards": {
+        "title": "Награды",
+        "partial": "Этот список наград неполный.",
+        "amountName": "{amount} {name}"
+    },
+    "pointLevels": {
+        "title": "Уровни очков",
+        "table": "Уровни очков",
+        "level": "Уровень",
+        "personal": "Личные очки",
+        "alliance": "Очки альянса",
+        "rewards": "Награды"
+    },
+    "waves": {
+        "title": "Волны",
+        "table": "Волны атак",
+        "wave": "Волна",
+        "target": "Цель",
+        "rule": "Правило",
+        "city": "Город",
+        "headquarters": "Штаб"
+    },
+    "zones": {
+        "title": "Зоны",
+        "table": "Зоны события",
+        "zone": "Зона",
+        "days": "Дни",
+        "statSources": "Источники характеристик",
+        "unlock": "Открытие"
+    },
+    "shop": {
+        "title": "Магазин",
+        "titleNamed": "Магазин: {name}",
+        "table": "Предложения магазина",
+        "offer": "Предложение",
+        "cost": "Цена",
+        "costValue": "{amount} {currency}",
+        "limit": "Лимит",
+        "contents": "Содержимое"
+    },
+    "versions": {
+        "title": "{name}",
+        "missions": "Задания",
+        "chests": "Сундуки"
+    },
+    "tips": {
+        "title": "Советы"
+    },
+    "recordLine": "Событие ({category}) с фазами, начислением очков, наградами и рейтингами."
 }

@@ -1,49 +1,49 @@
 {
-  "title": "Linimasa server",
-  "line": "{rows, plural, other {{amount} tonggak}} dari hari {first} sampai hari {last}",
-  "subline": "Apa yang terbuka di tiap usia server. Hanya referensi, tidak ada yang disimpan.",
-  "place": {
-    "label": "Tampilkan posisiku untuk",
-    "option": "{name}, sekitar hari {days}, lebih kurang {window}",
-    "optionNoDate": "{name}, tanpa tanggal mulai server",
-    "jump": "Lompat ke posisiku"
-  },
-  "filters": {
-    "label": "Tampilkan",
-    "events": "Event {amount}",
-    "features": "Fitur {amount}",
-    "pets": "Hewan {amount}",
-    "experts": "Ahli {amount}",
-    "heroes": "Pahlawan {amount}"
-  },
-  "help": "Garis ini adalah usia server dalam hari. Pahlawan ada di kanan, yang lain di kiri. Posisimu berasal dari tanggal mulai server di Chief-mu, dengan rentang lebih kurang {window} hari.",
-  "noChief": "Belum ada Chief, jadi posisimu tidak ditampilkan.",
-  "addChief": "Tambah Chief",
-  "noStartDate": "{name} belum punya tanggal mulai server. Isi tanggalnya untuk melihat posisimu di garis.",
-  "editChief": "Ubah Chief",
-  "columns": {
-    "left": "Event, fitur, hewan peliharaan, ahli",
-    "right": "Pahlawan"
-  },
-  "tags": {
-    "event": "Event",
-    "feature": "Fitur",
-    "pets": "Hewan",
-    "experts": "Ahli"
-  },
-  "fireCrystalLevels": "Level Fire Crystal {names}",
-  "heroGeneration": "Pahlawan, generasi {generation}",
-  "day": "Hari {day}",
-  "status": {
-    "unlocked": "Terbuka",
-    "near": "Dekat usiamu",
-    "future": "{count, plural, other {{amount} hari lagi}}"
-  },
-  "marker": {
-    "label": "Kamu di sini",
-    "title": "{name}, usia server sekitar {days} hari",
-    "window": "Lebih kurang {window} hari: hari {from} sampai {to}"
-  },
-  "empty": "Tidak ada yang ditampilkan dengan filter ini.",
-  "source": "Sumber: linimasa server dari paket data."
+    "title": "Linimasa server",
+    "line": "{rows, plural, other {{amount} tonggak}} dari hari {first} sampai hari {last}",
+    "subline": "Apa yang terbuka di tiap usia server. Hanya referensi, tidak ada yang disimpan.",
+    "place": {
+        "label": "Tampilkan posisiku untuk",
+        "option": "{name}, sekitar hari {days}, lebih kurang {window}",
+        "optionNoDate": "{name}, tanpa tanggal mulai server",
+        "jump": "Lompat ke posisiku"
+    },
+    "filters": {
+        "label": "Tampilkan",
+        "events": "Event {amount}",
+        "features": "Fitur {amount}",
+        "pets": "Hewan {amount}",
+        "experts": "Ahli {amount}",
+        "heroes": "Pahlawan {amount}"
+    },
+    "help": "Garis ini adalah usia server dalam hari. Pahlawan ada di kanan, yang lain di kiri. Posisimu berasal dari tanggal mulai server di Chief-mu, dengan rentang lebih kurang {window} hari.",
+    "noChief": "Belum ada Chief, jadi posisimu tidak ditampilkan.",
+    "addChief": "Tambah Chief",
+    "noStartDate": "{name} belum punya tanggal mulai server. Isi tanggalnya untuk melihat posisimu di garis.",
+    "editChief": "Ubah Chief",
+    "columns": {
+        "left": "Event, fitur, hewan peliharaan, ahli",
+        "right": "Pahlawan"
+    },
+    "tags": {
+        "event": "Event",
+        "feature": "Fitur",
+        "pets": "Hewan",
+        "experts": "Ahli"
+    },
+    "fireCrystalLevels": "Level Fire Crystal {names}",
+    "heroGeneration": "Pahlawan, generasi {generation}",
+    "day": "Hari {day}",
+    "status": {
+        "unlocked": "Terbuka",
+        "near": "Dekat usiamu",
+        "future": "{count, plural, other {{amount} hari lagi}}"
+    },
+    "marker": {
+        "label": "Kamu di sini",
+        "title": "{name}, usia server sekitar {days} hari",
+        "window": "Lebih kurang {window} hari: hari {from} sampai {to}"
+    },
+    "empty": "Tidak ada yang ditampilkan dengan filter ini.",
+    "source": "Sumber: linimasa server dari paket data."
 }

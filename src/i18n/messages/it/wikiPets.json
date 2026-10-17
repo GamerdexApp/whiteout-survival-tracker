@@ -1,52 +1,52 @@
 {
-  "line": "{pets} animali. Solo riferimento, qui nulla viene salvato.",
-  "roster": {
-    "title": "Animali",
-    "count": "{shown} animali su {total}",
-    "search": "Cerca",
-    "searchPlaceholder": "Cerca tra {count} animali",
-    "rarity": "Rarità",
-    "all": "Tutti",
-    "empty": "Nessun animale corrisponde a questi filtri.",
-    "summary": "Livello massimo {level}, perfezionamento fino a {percent}",
-    "percentValue": "{value}%"
-  },
-  "unlock": {
-    "withFurnace": "Giorno {days}, Furnace {level}",
-    "withPet": "Giorno {days}, {pet} {level}",
-    "daysOnly": "Giorno {days}",
-    "label": "Sblocco: {requirement}"
-  },
-  "detail": {
-    "maxLevel": "Livello massimo",
-    "maxRefinement": "Perfezionamento massimo",
-    "unlock": "Requisito di sblocco",
-    "cooldown": "Ricarica dell'abilità",
-    "duration": "Durata dell'abilità",
-    "tierCooldown": "{value}",
-    "maxPower": "Potenza massima",
-    "levelPower": "Potenza di livello e avanzamento al livello massimo",
-    "refiningPower": "Potenza di perfezionamento al perfezionamento massimo"
-  },
-  "skill": {
-    "title": "Abilità",
-    "meta": "{count, plural, one {{amount} livello} other {{amount} livelli}}",
-    "level": "Lv {level}",
-    "percent": "{value}%"
-  },
-  "levels": {
-    "title": "Tabella dei livelli",
-    "level": "Livello {level}",
-    "columns": {
-      "level": "Livello",
-      "food": "Cibo per animali",
-      "attack": "Attacco delle truppe",
-      "defense": "Difesa delle truppe",
-      "power": "Potenza delle truppe",
-      "materials": "Materiali di avanzamento"
+    "line": "{pets} animali. Solo riferimento, qui nulla viene salvato.",
+    "roster": {
+        "title": "Animali",
+        "count": "{shown} animali su {total}",
+        "search": "Cerca",
+        "searchPlaceholder": "Cerca tra {count} animali",
+        "rarity": "Rarità",
+        "all": "Tutti",
+        "empty": "Nessun animale corrisponde a questi filtri.",
+        "summary": "Livello massimo {level}, perfezionamento fino a {percent}",
+        "percentValue": "{value}%"
     },
-    "refined": "{value} (perfezionato {refined})",
-    "none": "Nessuno"
-  },
-  "recordLine": "Animale {rarity}, livello massimo {level}. Solo riferimento, qui nulla viene salvato."
+    "unlock": {
+        "withFurnace": "Giorno {days}, Furnace {level}",
+        "withPet": "Giorno {days}, {pet} {level}",
+        "daysOnly": "Giorno {days}",
+        "label": "Sblocco: {requirement}"
+    },
+    "detail": {
+        "maxLevel": "Livello massimo",
+        "maxRefinement": "Perfezionamento massimo",
+        "unlock": "Requisito di sblocco",
+        "cooldown": "Ricarica dell'abilità",
+        "duration": "Durata dell'abilità",
+        "tierCooldown": "{value}",
+        "maxPower": "Potenza massima",
+        "levelPower": "Potenza di livello e avanzamento al livello massimo",
+        "refiningPower": "Potenza di perfezionamento al perfezionamento massimo"
+    },
+    "skill": {
+        "title": "Abilità",
+        "meta": "{count, plural, one {{amount} livello} other {{amount} livelli}}",
+        "level": "Lv {level}",
+        "percent": "{value}%"
+    },
+    "levels": {
+        "title": "Tabella dei livelli",
+        "level": "Livello {level}",
+        "columns": {
+            "level": "Livello",
+            "food": "Cibo per animali",
+            "attack": "Attacco delle truppe",
+            "defense": "Difesa delle truppe",
+            "power": "Potenza delle truppe",
+            "materials": "Materiali di avanzamento"
+        },
+        "refined": "{value} (perfezionato {refined})",
+        "none": "Nessuno"
+    },
+    "recordLine": "Animale {rarity}, livello massimo {level}. Solo riferimento, qui nulla viene salvato."
 }

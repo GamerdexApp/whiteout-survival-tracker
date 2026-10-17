@@ -1,239 +1,239 @@
 {
-  "page": {
-    "title": "专家"
-  },
-  "view": {
-    "subline": "{chief} · Dawn Academy 专家，游戏中共{total}位",
-    "ghost": "专家"
-  },
-  "common": {
-    "plan": "计划",
-    "generation": "第{generation}代",
-    "unknown": "未知",
-    "and": "{first}和{last}",
-    "expertCount": "{count, plural, other {{amount}位专家}}"
-  },
-  "stats": {
-    "recruited": "已招募专家",
-    "recruitedValue": "{count} / {total}",
-    "powerNow": "当前专家战力，仅已招募",
-    "powerAtMax": "满级战力，全部{total}位",
-    "highest": "最高亲密度",
-    "highestValue": "{name}，{affinity}",
-    "highestNone": "尚未招募"
-  },
-  "toolbar": {
-    "searchLabel": "搜索专家",
-    "searchPlaceholder": "搜索专家",
-    "filters": "筛选",
-    "emptyTitle": "没有匹配的专家",
-    "emptyDescription": "修改搜索或筛选，即可查看更多专家。",
-    "reset": "重置筛选",
-    "status": "显示{shown} / {total}。目标在此处只读，请在计划中设置。等级为 10 的倍数时，在专家进阶之前，按上一级的加成计算。每次更改都会立即保存。",
-    "lockedNote": "{count}位在之后的开服天数前未解锁。"
-  },
-  "toast": {
-    "notRecruitedTitle": "未招募{name}",
-    "notRecruitedMessage": "等级会保留，重新开启已招募后恢复。",
-    "undo": "撤销"
-  },
-  "card": {
-    "recruited": "已招募",
-    "recruitedLabel": "{expert}已招募",
-    "summary": "{title} · {specialty} · {generation}",
-    "affinityLevel": "亲密度等级",
-    "affinityLabel": "{expert}亲密度等级",
-    "affinityDisplay": "{level} / {max}",
-    "affinityProgress": "{expert}亲密度进度",
-    "goal": "目标{goal}",
-    "advanced": "已进阶",
-    "notAdvanced": "未进阶",
-    "advancedLabel": "{expert}在{level}级进阶",
-    "relationship": "关系等级",
-    "affinityAvailable": "可用亲密度",
-    "affinityAvailableLabel": "{expert}持有的亲密度点数",
-    "affinityOf": "/ {need}，用于{level}级",
-    "bonusTitle": "当前基础加成",
-    "bonusNow": "{amount}% {stats}",
-    "bonusOwnLevel": "{level}级不是 10 的倍数，因此按其自身加成计算。",
-    "bonusAdvanced": "{level}级已进阶，因此按其自身加成计算。",
-    "bonusNotAdvanced": "{level}级未进阶，因此按{counted}级的加成计算。",
-    "bonusAtMax": "100 级时：{amount}%。",
-    "feeds": "作用于",
-    "bonuses": "加成",
-    "nextAdvancement": "下次进阶：{level}级，{sigils}个徽章",
-    "allAdvanced": "所有进阶均已完成。",
-    "skills": "技能",
-    "skillLabel": "{expert} {skill}等级",
-    "skillDisplay": "{level} / {max}",
-    "expAvailable": "可用 EXP",
-    "expAvailableLabel": "{expert} {skill}持有的 EXP",
-    "expOf": "/ {need}，用于{level}级",
-    "maxLevel": "已满级，无需 EXP",
-    "talent": "天赋：{name}",
-    "talentLevel": "{level} / {max}级",
-    "talentFollows": "跟随{relationship}。{effect}。",
-    "power": "战力{now} / {max}",
-    "derived": "推算",
-    "notRecruitedHint": "未招募。请在 Tundra Trek 中招募此专家，然后开启已招募。",
-    "recruitmentCost": "招募费用：{cost}",
-    "maxPower": "满级战力{max}",
-    "buffs": "增益{stats}",
-    "expEnough": "足够升到{level}级",
-    "affinityEnough": "足够升到{level}级",
-    "skillLocked": "未解锁。升到 1 级即可解锁。",
-    "sigilsOwned": "已有徽章",
-    "sigilsOwnedLabel": "{expert}已有徽章",
-    "sigilsHint": "与资源页中的徽章数量相同。"
-  },
-  "filtersFlyout": {
-    "title": "筛选",
-    "description": "缩小专家列表范围并选择排序。",
-    "generation": "世代",
-    "all": "全部",
-    "show": "显示",
-    "order": "排序",
-    "reset": "重置",
-    "showButton": "显示{experts}",
-    "notSaved": "筛选不会保存。",
-    "showOptions": {
-      "everything": "全部",
-      "recruited": "仅已招募",
-      "notRecruited": "仅未招募"
+    "page": {
+        "title": "专家"
     },
-    "orderOptions": {
-      "generation": "世代",
-      "affinity": "亲密度等级",
-      "power": "战力",
-      "name": "名称"
+    "view": {
+        "subline": "{chief} · Dawn Academy 专家，游戏中共{total}位",
+        "ghost": "专家"
+    },
+    "common": {
+        "plan": "计划",
+        "generation": "第{generation}代",
+        "unknown": "未知",
+        "and": "{first}和{last}",
+        "expertCount": "{count, plural, other {{amount}位专家}}"
+    },
+    "stats": {
+        "recruited": "已招募专家",
+        "recruitedValue": "{count} / {total}",
+        "powerNow": "当前专家战力，仅已招募",
+        "powerAtMax": "满级战力，全部{total}位",
+        "highest": "最高亲密度",
+        "highestValue": "{name}，{affinity}",
+        "highestNone": "尚未招募"
+    },
+    "toolbar": {
+        "searchLabel": "搜索专家",
+        "searchPlaceholder": "搜索专家",
+        "filters": "筛选",
+        "emptyTitle": "没有匹配的专家",
+        "emptyDescription": "修改搜索或筛选，即可查看更多专家。",
+        "reset": "重置筛选",
+        "status": "显示{shown} / {total}。目标在此处只读，请在计划中设置。等级为 10 的倍数时，在专家进阶之前，按上一级的加成计算。每次更改都会立即保存。",
+        "lockedNote": "{count}位在之后的开服天数前未解锁。"
+    },
+    "toast": {
+        "notRecruitedTitle": "未招募{name}",
+        "notRecruitedMessage": "等级会保留，重新开启已招募后恢复。",
+        "undo": "撤销"
+    },
+    "card": {
+        "recruited": "已招募",
+        "recruitedLabel": "{expert}已招募",
+        "summary": "{title} · {specialty} · {generation}",
+        "affinityLevel": "亲密度等级",
+        "affinityLabel": "{expert}亲密度等级",
+        "affinityDisplay": "{level} / {max}",
+        "affinityProgress": "{expert}亲密度进度",
+        "goal": "目标{goal}",
+        "advanced": "已进阶",
+        "notAdvanced": "未进阶",
+        "advancedLabel": "{expert}在{level}级进阶",
+        "relationship": "关系等级",
+        "affinityAvailable": "可用亲密度",
+        "affinityAvailableLabel": "{expert}持有的亲密度点数",
+        "affinityOf": "/ {need}，用于{level}级",
+        "bonusTitle": "当前基础加成",
+        "bonusNow": "{amount}% {stats}",
+        "bonusOwnLevel": "{level}级不是 10 的倍数，因此按其自身加成计算。",
+        "bonusAdvanced": "{level}级已进阶，因此按其自身加成计算。",
+        "bonusNotAdvanced": "{level}级未进阶，因此按{counted}级的加成计算。",
+        "bonusAtMax": "100 级时：{amount}%。",
+        "feeds": "作用于",
+        "bonuses": "加成",
+        "nextAdvancement": "下次进阶：{level}级，{sigils}个徽章",
+        "allAdvanced": "所有进阶均已完成。",
+        "skills": "技能",
+        "skillLabel": "{expert} {skill}等级",
+        "skillDisplay": "{level} / {max}",
+        "expAvailable": "可用 EXP",
+        "expAvailableLabel": "{expert} {skill}持有的 EXP",
+        "expOf": "/ {need}，用于{level}级",
+        "maxLevel": "已满级，无需 EXP",
+        "talent": "天赋：{name}",
+        "talentLevel": "{level} / {max}级",
+        "talentFollows": "跟随{relationship}。{effect}。",
+        "power": "战力{now} / {max}",
+        "derived": "推算",
+        "notRecruitedHint": "未招募。请在 Tundra Trek 中招募此专家，然后开启已招募。",
+        "recruitmentCost": "招募费用：{cost}",
+        "maxPower": "满级战力{max}",
+        "buffs": "增益{stats}",
+        "expEnough": "足够升到{level}级",
+        "affinityEnough": "足够升到{level}级",
+        "skillLocked": "未解锁。升到 1 级即可解锁。",
+        "sigilsOwned": "已有徽章",
+        "sigilsOwnedLabel": "{expert}已有徽章",
+        "sigilsHint": "与资源页中的徽章数量相同。"
+    },
+    "filtersFlyout": {
+        "title": "筛选",
+        "description": "缩小专家列表范围并选择排序。",
+        "generation": "世代",
+        "all": "全部",
+        "show": "显示",
+        "order": "排序",
+        "reset": "重置",
+        "showButton": "显示{experts}",
+        "notSaved": "筛选不会保存。",
+        "showOptions": {
+            "everything": "全部",
+            "recruited": "仅已招募",
+            "notRecruited": "仅未招募"
+        },
+        "orderOptions": {
+            "generation": "世代",
+            "affinity": "亲密度等级",
+            "power": "战力",
+            "name": "名称"
+        }
+    },
+    "plan": {
+        "title": "专家计划",
+        "description": "达成亲密度和技能目标所需的 Books of Knowledge、徽章、技能 EXP 和亲密度点数。",
+        "saved": "计划已保存{date}",
+        "close": "关闭",
+        "save": "保存计划",
+        "exportButton": "导出到核心活动",
+        "exportNothing": "该计划不需要书或徽章，无需导出。",
+        "export": {
+            "books": "Books of Knowledge",
+            "sigils": "专家徽章",
+            "exp": "技能 EXP",
+            "expReason": "没有活动为技能 EXP 计分。"
+        },
+        "noExperts": "计划中还没有专家。添加已招募的专家即可设置其目标。",
+        "add": {
+            "title": "添加专家",
+            "selectLabel": "要添加的专家",
+            "button": "添加专家",
+            "allIn": "所有已招募的专家都已在计划中。",
+            "noneRecruited": "请先在页面上招募专家，才能为其制定计划。"
+        },
+        "block": {
+            "remove": "移除",
+            "removeLabel": "从计划中移除{expert}",
+            "part": "部分",
+            "current": "当前",
+            "goalHeading": "目标",
+            "affinity": "亲密度等级",
+            "affinityHeld": "可用亲密度{amount}",
+            "expHeld": "可用 EXP {amount}",
+            "currentLevel": "{level}级",
+            "currentAffinity": "{level}，已进阶",
+            "currentAffinityPlain": "{level}",
+            "affinityGoalLabel": "{expert}亲密度目标",
+            "skillGoalLabel": "{expert} {skill}目标",
+            "advanceAtGoal": "在{level}级进阶",
+            "advanceAtGoalLabel": "{expert}在目标处进阶"
+        },
+        "checks": {
+            "affinity": "亲密度点数",
+            "learning": "学习加速所需的技能 EXP",
+            "minutesUnit": "分"
+        },
+        "stock": {
+            "sigils": "计划需要{total}个徽章。你的专家徽章可覆盖其中{own}个，其余{common}个需要来自 Common Expert Sigils。你持有的每个专家徽章只对该专家有效。",
+            "books": "计划需要{amount}本 Books of Knowledge，用于技能升级。",
+            "affinity": "计划需要{needed}亲密度点数。专家卡片上持有的可覆盖{held}，还差{left}。数据包中没有亲密度道具，因此不会对照库存检查。",
+            "learning": "计划需要{exp}技能 EXP。你的技能持有{held}，其余{left}需要通过学习加速获得。学习 1 分钟获得{rate} EXP，因此需要{minutes}分钟。"
+        },
+        "byExpert": {
+            "title": "按专家",
+            "sigils": "徽章：需要{needed}，你的{name}徽章覆盖{own}，其余{common}来自 Common Expert Sigils",
+            "affinity": "亲密度：需要{needed}，可用{held}，还差{left}",
+            "exp": "技能 EXP：需要{needed}，可用{held}，还差{left}"
+        },
+        "result": {
+            "title": "结果",
+            "derived": "推算",
+            "books": "Books of Knowledge",
+            "sigils": "徽章",
+            "exp": "技能 EXP",
+            "affinity": "亲密度点数",
+            "advancements": "进阶",
+            "skillLevels": "技能等级",
+            "affinityLevels": "亲密度等级",
+            "heads": {
+                "expert": "专家",
+                "books": "书",
+                "sigils": "徽章",
+                "exp": "EXP",
+                "levels": "等级",
+                "advancements": "进阶",
+                "affinity": "亲密度"
+            },
+            "empty": "添加专家并提高目标，即可查看结果。",
+            "tableLabel": "计划结果表"
+        }
+    },
+    "learning": {
+        "title": "学习",
+        "note": "一次只能学习一个技能。完成后 EXP 会加到该技能。",
+        "idle": "没有在学习。开始一次学习即可为技能增加 EXP。",
+        "startButton": "开始学习",
+        "slotLabel": "学习，一次一场",
+        "jobTitle": "{expert}，{skill}，{session}",
+        "manageFinishText": "完成升级会把本场的 EXP 加到技能上，释放学习队列，并把本场加入历史。剩余时间为零时，卡片会显示可完成。不会自动完成，因为你可能用过加速。",
+        "flyout": {
+            "title": "开始学习",
+            "description": "将专家技能标记为学习中",
+            "expert": "专家",
+            "skill": "技能",
+            "skillOption": "{name}，{level} / {max}级",
+            "session": "学习场次",
+            "sessionOption": "{label}，{exp} EXP",
+            "sessionHint": "每场每分钟获得 60 EXP。场次与游戏中的一致。",
+            "expEarned": "获得的 EXP",
+            "heldAfter": "之后持有的 EXP",
+            "tooMuch": "该技能只能再使用{room} EXP，多出的部分会浪费。",
+            "whenStarted": "什么时候开始的？",
+            "modes": {
+                "now": "现在开始",
+                "already": "已经开始"
+            },
+            "timeLeftHours": "剩余时间，小时",
+            "ends": "结束于",
+            "startedHint": "游戏中该场学习正在进行时，请使用已经开始，并输入游戏显示的时间。",
+            "nothingToLearn": "目前没有可学习的技能。请招募专家，并解锁未满级的技能。",
+            "busy": "已有一场正在进行。请先在管理中完成或取消。",
+            "cancel": "取消",
+            "start": "开始学习"
+        },
+        "toasts": {
+            "started": {
+                "title": "已开始学习",
+                "message": "{what}。"
+            },
+            "finished": {
+                "title": "已学习{what}",
+                "message": "EXP 已加到技能并计入历史。"
+            },
+            "cancelled": {
+                "title": "已取消{what}",
+                "message": "技能保留原有的 EXP。"
+            },
+            "undo": "撤销"
+        }
     }
-  },
-  "plan": {
-    "title": "专家计划",
-    "description": "达成亲密度和技能目标所需的 Books of Knowledge、徽章、技能 EXP 和亲密度点数。",
-    "saved": "计划已保存{date}",
-    "close": "关闭",
-    "save": "保存计划",
-    "exportButton": "导出到核心活动",
-    "exportNothing": "该计划不需要书或徽章，无需导出。",
-    "export": {
-      "books": "Books of Knowledge",
-      "sigils": "专家徽章",
-      "exp": "技能 EXP",
-      "expReason": "没有活动为技能 EXP 计分。"
-    },
-    "noExperts": "计划中还没有专家。添加已招募的专家即可设置其目标。",
-    "add": {
-      "title": "添加专家",
-      "selectLabel": "要添加的专家",
-      "button": "添加专家",
-      "allIn": "所有已招募的专家都已在计划中。",
-      "noneRecruited": "请先在页面上招募专家，才能为其制定计划。"
-    },
-    "block": {
-      "remove": "移除",
-      "removeLabel": "从计划中移除{expert}",
-      "part": "部分",
-      "current": "当前",
-      "goalHeading": "目标",
-      "affinity": "亲密度等级",
-      "affinityHeld": "可用亲密度{amount}",
-      "expHeld": "可用 EXP {amount}",
-      "currentLevel": "{level}级",
-      "currentAffinity": "{level}，已进阶",
-      "currentAffinityPlain": "{level}",
-      "affinityGoalLabel": "{expert}亲密度目标",
-      "skillGoalLabel": "{expert} {skill}目标",
-      "advanceAtGoal": "在{level}级进阶",
-      "advanceAtGoalLabel": "{expert}在目标处进阶"
-    },
-    "checks": {
-      "affinity": "亲密度点数",
-      "learning": "学习加速所需的技能 EXP",
-      "minutesUnit": "分"
-    },
-    "stock": {
-      "sigils": "计划需要{total}个徽章。你的专家徽章可覆盖其中{own}个，其余{common}个需要来自 Common Expert Sigils。你持有的每个专家徽章只对该专家有效。",
-      "books": "计划需要{amount}本 Books of Knowledge，用于技能升级。",
-      "affinity": "计划需要{needed}亲密度点数。专家卡片上持有的可覆盖{held}，还差{left}。数据包中没有亲密度道具，因此不会对照库存检查。",
-      "learning": "计划需要{exp}技能 EXP。你的技能持有{held}，其余{left}需要通过学习加速获得。学习 1 分钟获得{rate} EXP，因此需要{minutes}分钟。"
-    },
-    "byExpert": {
-      "title": "按专家",
-      "sigils": "徽章：需要{needed}，你的{name}徽章覆盖{own}，其余{common}来自 Common Expert Sigils",
-      "affinity": "亲密度：需要{needed}，可用{held}，还差{left}",
-      "exp": "技能 EXP：需要{needed}，可用{held}，还差{left}"
-    },
-    "result": {
-      "title": "结果",
-      "derived": "推算",
-      "books": "Books of Knowledge",
-      "sigils": "徽章",
-      "exp": "技能 EXP",
-      "affinity": "亲密度点数",
-      "advancements": "进阶",
-      "skillLevels": "技能等级",
-      "affinityLevels": "亲密度等级",
-      "heads": {
-        "expert": "专家",
-        "books": "书",
-        "sigils": "徽章",
-        "exp": "EXP",
-        "levels": "等级",
-        "advancements": "进阶",
-        "affinity": "亲密度"
-      },
-      "empty": "添加专家并提高目标，即可查看结果。",
-      "tableLabel": "计划结果表"
-    }
-  },
-  "learning": {
-    "title": "学习",
-    "note": "一次只能学习一个技能。完成后 EXP 会加到该技能。",
-    "idle": "没有在学习。开始一次学习即可为技能增加 EXP。",
-    "startButton": "开始学习",
-    "slotLabel": "学习，一次一场",
-    "jobTitle": "{expert}，{skill}，{session}",
-    "manageFinishText": "完成升级会把本场的 EXP 加到技能上，释放学习队列，并把本场加入历史。剩余时间为零时，卡片会显示可完成。不会自动完成，因为你可能用过加速。",
-    "flyout": {
-      "title": "开始学习",
-      "description": "将专家技能标记为学习中",
-      "expert": "专家",
-      "skill": "技能",
-      "skillOption": "{name}，{level} / {max}级",
-      "session": "学习场次",
-      "sessionOption": "{label}，{exp} EXP",
-      "sessionHint": "每场每分钟获得 60 EXP。场次与游戏中的一致。",
-      "expEarned": "获得的 EXP",
-      "heldAfter": "之后持有的 EXP",
-      "tooMuch": "该技能只能再使用{room} EXP，多出的部分会浪费。",
-      "whenStarted": "什么时候开始的？",
-      "modes": {
-        "now": "现在开始",
-        "already": "已经开始"
-      },
-      "timeLeftHours": "剩余时间，小时",
-      "ends": "结束于",
-      "startedHint": "游戏中该场学习正在进行时，请使用已经开始，并输入游戏显示的时间。",
-      "nothingToLearn": "目前没有可学习的技能。请招募专家，并解锁未满级的技能。",
-      "busy": "已有一场正在进行。请先在管理中完成或取消。",
-      "cancel": "取消",
-      "start": "开始学习"
-    },
-    "toasts": {
-      "started": {
-        "title": "已开始学习",
-        "message": "{what}。"
-      },
-      "finished": {
-        "title": "已学习{what}",
-        "message": "EXP 已加到技能并计入历史。"
-      },
-      "cancelled": {
-        "title": "已取消{what}",
-        "message": "技能保留原有的 EXP。"
-      },
-      "undo": "撤销"
-    }
-  }
 }

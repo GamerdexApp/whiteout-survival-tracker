@@ -1,98 +1,98 @@
 {
-  "page": {
-    "title": "기술"
-  },
-  "view": {
-    "subline": "{chief} · 성장, 영토, 전투의 연맹 기술 노드 {count}개"
-  },
-  "summary": {
-    "maxed": "최대",
-    "inProgress": "진행 중",
-    "notStarted": "시작 전",
-    "locked": "잠김"
-  },
-  "status": {
-    "maxed": "최대",
-    "inProgress": "진행 중",
-    "notStarted": "시작 전",
-    "locked": "잠김"
-  },
-  "tabs": {
-    "label": "기술 분류"
-  },
-  "categories": {
-    "Growth": "성장",
-    "Territory": "영토",
-    "Battle": "전투"
-  },
-  "filters": {
-    "search": "검색",
-    "searchLabel": "기술 노드 검색",
-    "searchPlaceholder": "노드 이름",
-    "tier": "단계",
-    "allTiers": "모든 단계",
-    "tierOption": "{tier}단계",
-    "status": "상태",
-    "allStatuses": "전체",
-    "button": "검색 및 필터",
-    "title": "검색 및 필터",
-    "description": "이름, 단계, 상태로 기술 노드를 찾아요",
-    "reset": "필터 초기화",
-    "done": "{count}개 보기",
-    "shown": "노드 {total}개 중 {shown}개 표시"
-  },
-  "table": {
-    "node": "노드",
-    "level": "레벨",
-    "bonus": "보너스",
-    "cost": "다음 레벨 비용",
-    "time": "시간",
-    "needs": "조건"
-  },
-  "node": {
-    "tierDescription": "{tier}단계 · {description}",
-    "levelLabel": "{name} 레벨",
-    "levelOf": "{level} / {max}",
-    "open": "{name} 열기",
-    "bonusOf": "{now} / {max}",
-    "bonusNone": "아직 없음, 최대 {max}",
-    "noBonus": "보너스 없음",
-    "maxed": "최대",
-    "noTime": "시간 없음",
-    "readyToUpgrade": "업그레이드 가능",
-    "nothingNeeded": "필요한 것 없음",
-    "needsPart": "{name} {level}레벨 필요",
-    "costLine": "{name} {amount}",
-    "lockedHint": "{names}까지 잠김",
-    "requirementPart": "{name} {level}레벨"
-  },
-  "flyout": {
-    "title": "{name}",
-    "subtitle": "{category}, {tier}단계. {description}",
-    "close": "닫기",
-    "level": "레벨",
-    "bonusNow": "현재 보너스",
-    "needsFor": "{level}레벨 조건",
-    "needsNothing": "필요한 것 없음.",
-    "needsLine": "{need}레벨 필요, 현재 {have}레벨",
-    "met": "충족",
-    "notMet": "미충족",
-    "requiredBy": "필요로 하는 노드",
-    "requiredByNone": "이 노드를 필요로 하는 다른 노드가 없어요.",
-    "requiredByLine": "{category}, {tier}단계, {from}레벨부터 {name} {need}레벨 필요",
-    "allLevels": "모든 레벨",
-    "levelRow": "{level}레벨",
-    "done": "완료",
-    "next": "다음",
-    "later": "이후",
-    "remaining": "최대까지 남은 양",
-    "derived": "계산값",
-    "remainingNone": "남은 것이 없어요. 이 노드는 최대예요.",
-    "remainingLine": "{cost}",
-    "remainingTime": "{time}"
-  },
-  "empty": {
-    "title": "일치하는 노드가 없어요",
-    "description": "검색어나 필터를 바꿔 더 많은 노드를 찾아보세요."
-  }
+    "page": {
+        "title": "기술"
+    },
+    "view": {
+        "subline": "{chief} · 성장, 영토, 전투의 연맹 기술 노드 {count}개"
+    },
+    "summary": {
+        "maxed": "최대",
+        "inProgress": "진행 중",
+        "notStarted": "시작 전",
+        "locked": "잠김"
+    },
+    "status": {
+        "maxed": "최대",
+        "inProgress": "진행 중",
+        "notStarted": "시작 전",
+        "locked": "잠김"
+    },
+    "tabs": {
+        "label": "기술 분류"
+    },
+    "categories": {
+        "Growth": "성장",
+        "Territory": "영토",
+        "Battle": "전투"
+    },
+    "filters": {
+        "search": "검색",
+        "searchLabel": "기술 노드 검색",
+        "searchPlaceholder": "노드 이름",
+        "tier": "단계",
+        "allTiers": "모든 단계",
+        "tierOption": "{tier}단계",
+        "status": "상태",
+        "allStatuses": "전체",
+        "button": "검색 및 필터",
+        "title": "검색 및 필터",
+        "description": "이름, 단계, 상태로 기술 노드를 찾아요",
+        "reset": "필터 초기화",
+        "done": "{count}개 보기",
+        "shown": "노드 {total}개 중 {shown}개 표시"
+    },
+    "table": {
+        "node": "노드",
+        "level": "레벨",
+        "bonus": "보너스",
+        "cost": "다음 레벨 비용",
+        "time": "시간",
+        "needs": "조건"
+    },
+    "node": {
+        "tierDescription": "{tier}단계 · {description}",
+        "levelLabel": "{name} 레벨",
+        "levelOf": "{level} / {max}",
+        "open": "{name} 열기",
+        "bonusOf": "{now} / {max}",
+        "bonusNone": "아직 없음, 최대 {max}",
+        "noBonus": "보너스 없음",
+        "maxed": "최대",
+        "noTime": "시간 없음",
+        "readyToUpgrade": "업그레이드 가능",
+        "nothingNeeded": "필요한 것 없음",
+        "needsPart": "{name} {level}레벨 필요",
+        "costLine": "{name} {amount}",
+        "lockedHint": "{names}까지 잠김",
+        "requirementPart": "{name} {level}레벨"
+    },
+    "flyout": {
+        "title": "{name}",
+        "subtitle": "{category}, {tier}단계. {description}",
+        "close": "닫기",
+        "level": "레벨",
+        "bonusNow": "현재 보너스",
+        "needsFor": "{level}레벨 조건",
+        "needsNothing": "필요한 것 없음.",
+        "needsLine": "{need}레벨 필요, 현재 {have}레벨",
+        "met": "충족",
+        "notMet": "미충족",
+        "requiredBy": "필요로 하는 노드",
+        "requiredByNone": "이 노드를 필요로 하는 다른 노드가 없어요.",
+        "requiredByLine": "{category}, {tier}단계, {from}레벨부터 {name} {need}레벨 필요",
+        "allLevels": "모든 레벨",
+        "levelRow": "{level}레벨",
+        "done": "완료",
+        "next": "다음",
+        "later": "이후",
+        "remaining": "최대까지 남은 양",
+        "derived": "계산값",
+        "remainingNone": "남은 것이 없어요. 이 노드는 최대예요.",
+        "remainingLine": "{cost}",
+        "remainingTime": "{time}"
+    },
+    "empty": {
+        "title": "일치하는 노드가 없어요",
+        "description": "검색어나 필터를 바꿔 더 많은 노드를 찾아보세요."
+    }
 }

@@ -1,90 +1,90 @@
 {
-  "page": {
-    "title": "Tundra Album"
-  },
-  "view": {
-    "subline": "{chief} · {details} · альбомов собрано: {complete} из {total}"
-  },
-  "summary": {
-    "label": "Альбомов собрано",
-    "value": "{done} из {total}",
-    "progress": "Альбомов собрано",
-    "inData": "В данных альбомов: {shown} из {all}"
-  },
-  "buffs": {
-    "title": "Бонусы, действующие сейчас",
-    "derived": "Расчёт",
-    "none": "Ни один альбом ещё не собран, поэтому бонусы Tundra Album не действуют.",
-    "note": "Считаются только собранные альбомы. Эти бонусы идут на страницу <link>«Бонусы»</link>."
-  },
-  "album": {
-    "status": {
-      "complete": "Собран",
-      "inProgress": "В процессе"
+    "page": {
+        "title": "Tundra Album"
     },
-    "buffWhenComplete": "Бонус за сбор",
-    "puzzlesDone": "Пазлов собрано",
-    "puzzlesValue": "{done} из {total}",
-    "puzzlesProgress": "Пазлов собрано: {album}",
-    "completionRewards": "Награды за сбор",
-    "markComplete": "Отметить альбом собранным",
-    "notCounting": "Пока не действует. {buff} учитывается на странице бонусов, только когда собраны все пазлы ({total}). «Отметить альбом собранным» отмечает все пазлы ({total}) и показывает уведомление с отменой.",
-    "counting": "Действует сейчас. {buff} есть на странице бонусов. Если снять отметку с пазла, бонус снова пропадёт.",
-    "piecesValue": "Собрано частей: {collected} из {total}"
-  },
-  "puzzle": {
-    "pieces": "{count, plural, one {{amount} часть} few {{amount} части} many {{amount} частей} other {{amount} части}}, звёзды от 1 до 5: {split}",
-    "reward": "Награда",
-    "done": "Пазл собран, все части получены",
-    "doneFor": "Собран: {puzzle}",
-    "collectedLabel": "Частей получено",
-    "collected": "{collected} из {total}",
-    "pieceLabel": "{name}, звёзд: {stars}",
-    "pieceHint": "Отметьте части, которые у вас есть. Если отметить пазл собранным, все части будут получены.",
-    "allCollected": "Пазл собран, поэтому все части получены."
-  },
-  "reward": {
-    "line": "{amount} {item}",
-    "sized": "{amount} {item} ({size})",
-    "unknownItem": "Неизвестный предмет"
-  },
-  "toast": {
-    "markedTitle": "{album}: отмечен собранным",
-    "markedMessage": "Все пазлы ({total}) собраны.",
-    "unmarkedTitle": "{puzzle}: отметка снята",
-    "unmarkedMessage": "{album} снова в процессе, его бонус пропал из бонусов.",
-    "undo": "Отменить"
-  },
-  "notInData": "Остальных альбомов Tundra Album ({count} из {total}) в данных пока нет. Они добавятся, когда появятся в пакете.",
-  "pieces": {
-    "label": "Частей получено",
-    "value": "{collected} из {available}",
-    "progress": "Частей получено во всех альбомах",
-    "viewRewards": "Награды за части"
-  },
-  "rewardsFlyout": {
-    "title": "Награды за число частей",
-    "description": "Награды, которые вы получаете по мере того, как складывается число частей во всех альбомах",
-    "close": "Закрыть",
-    "collected": "Частей получено",
-    "collectedValue": "{collected} из {available}",
-    "progress": "Частей получено во всех альбомах",
-    "reached": "Получено наград за число частей: {reached} из {all}",
-    "next": "Следующая награда при {pieces} частях, осталось собрать: {missing}.",
-    "allReached": "Все награды за число частей из данных получены.",
-    "totalSoFar": "Награды, полученные на данный момент",
-    "tree": "Награды по числу частей",
-    "tier": "Награда {tier} при {pieces} частях",
-    "stateReached": "Получено",
-    "stateNext": "Далее, ещё {missing}",
-    "stateLater": "Ещё {missing}"
-  },
-  "picker": {
-    "label": "Альбомы",
-    "title": "Альбомы",
-    "complete": "Альбом собран",
-    "puzzles": "Пазлов: {done} из {total}",
-    "pieces": "Частей: {collected} из {total}",
-    "piecesProgress": "Частей получено: {album}"
-  }
+    "view": {
+        "subline": "{chief} · {details} · альбомов собрано: {complete} из {total}"
+    },
+    "summary": {
+        "label": "Альбомов собрано",
+        "value": "{done} из {total}",
+        "progress": "Альбомов собрано",
+        "inData": "В данных альбомов: {shown} из {all}"
+    },
+    "buffs": {
+        "title": "Бонусы, действующие сейчас",
+        "derived": "Расчёт",
+        "none": "Ни один альбом ещё не собран, поэтому бонусы Tundra Album не действуют.",
+        "note": "Считаются только собранные альбомы. Эти бонусы идут на страницу <link>«Бонусы»</link>."
+    },
+    "album": {
+        "status": {
+            "complete": "Собран",
+            "inProgress": "В процессе"
+        },
+        "buffWhenComplete": "Бонус за сбор",
+        "puzzlesDone": "Пазлов собрано",
+        "puzzlesValue": "{done} из {total}",
+        "puzzlesProgress": "Пазлов собрано: {album}",
+        "completionRewards": "Награды за сбор",
+        "markComplete": "Отметить альбом собранным",
+        "notCounting": "Пока не действует. {buff} учитывается на странице бонусов, только когда собраны все пазлы ({total}). «Отметить альбом собранным» отмечает все пазлы ({total}) и показывает уведомление с отменой.",
+        "counting": "Действует сейчас. {buff} есть на странице бонусов. Если снять отметку с пазла, бонус снова пропадёт.",
+        "piecesValue": "Собрано частей: {collected} из {total}"
+    },
+    "puzzle": {
+        "pieces": "{count, plural, one {{amount} часть} few {{amount} части} many {{amount} частей} other {{amount} части}}, звёзды от 1 до 5: {split}",
+        "reward": "Награда",
+        "done": "Пазл собран, все части получены",
+        "doneFor": "Собран: {puzzle}",
+        "collectedLabel": "Частей получено",
+        "collected": "{collected} из {total}",
+        "pieceLabel": "{name}, звёзд: {stars}",
+        "pieceHint": "Отметьте части, которые у вас есть. Если отметить пазл собранным, все части будут получены.",
+        "allCollected": "Пазл собран, поэтому все части получены."
+    },
+    "reward": {
+        "line": "{amount} {item}",
+        "sized": "{amount} {item} ({size})",
+        "unknownItem": "Неизвестный предмет"
+    },
+    "toast": {
+        "markedTitle": "{album}: отмечен собранным",
+        "markedMessage": "Все пазлы ({total}) собраны.",
+        "unmarkedTitle": "{puzzle}: отметка снята",
+        "unmarkedMessage": "{album} снова в процессе, его бонус пропал из бонусов.",
+        "undo": "Отменить"
+    },
+    "notInData": "Остальных альбомов Tundra Album ({count} из {total}) в данных пока нет. Они добавятся, когда появятся в пакете.",
+    "pieces": {
+        "label": "Частей получено",
+        "value": "{collected} из {available}",
+        "progress": "Частей получено во всех альбомах",
+        "viewRewards": "Награды за части"
+    },
+    "rewardsFlyout": {
+        "title": "Награды за число частей",
+        "description": "Награды, которые вы получаете по мере того, как складывается число частей во всех альбомах",
+        "close": "Закрыть",
+        "collected": "Частей получено",
+        "collectedValue": "{collected} из {available}",
+        "progress": "Частей получено во всех альбомах",
+        "reached": "Получено наград за число частей: {reached} из {all}",
+        "next": "Следующая награда при {pieces} частях, осталось собрать: {missing}.",
+        "allReached": "Все награды за число частей из данных получены.",
+        "totalSoFar": "Награды, полученные на данный момент",
+        "tree": "Награды по числу частей",
+        "tier": "Награда {tier} при {pieces} частях",
+        "stateReached": "Получено",
+        "stateNext": "Далее, ещё {missing}",
+        "stateLater": "Ещё {missing}"
+    },
+    "picker": {
+        "label": "Альбомы",
+        "title": "Альбомы",
+        "complete": "Альбом собран",
+        "puzzles": "Пазлов: {done} из {total}",
+        "pieces": "Частей: {collected} из {total}",
+        "piecesProgress": "Частей получено: {album}"
+    }
 }

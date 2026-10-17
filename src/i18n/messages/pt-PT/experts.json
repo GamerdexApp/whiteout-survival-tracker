@@ -1,239 +1,239 @@
 {
-  "page": {
-    "title": "Especialistas"
-  },
-  "view": {
-    "subline": "{chief} · especialistas da Dawn Academy, {total} no jogo",
-    "ghost": "Especialistas"
-  },
-  "common": {
-    "plan": "Plano",
-    "generation": "Geração {generation}",
-    "unknown": "Desconhecido",
-    "and": "{first} e {last}",
-    "expertCount": "{count, plural, one {{amount} especialista} other {{amount} especialistas}}"
-  },
-  "stats": {
-    "recruited": "Especialistas recrutados",
-    "recruitedValue": "{count} de {total}",
-    "powerNow": "Poder dos especialistas agora, só recrutados",
-    "powerAtMax": "Poder no máximo, todos os {total}",
-    "highest": "Maior afinidade",
-    "highestValue": "{name} em {affinity}",
-    "highestNone": "Nenhum recrutado"
-  },
-  "toolbar": {
-    "searchLabel": "Pesquisar especialistas",
-    "searchPlaceholder": "Pesquisar especialistas",
-    "filters": "Filtros",
-    "emptyTitle": "Nenhum especialista corresponde",
-    "emptyDescription": "Alterar a pesquisa ou os filtros para ver mais especialistas.",
-    "reset": "Repor filtros",
-    "status": "A mostrar {shown} de {total}. Aqui os objetivos são só de leitura e definem-se no Plano. Num nível divisível por 10, conta o bónus do nível anterior até o especialista avançar. Cada alteração é guardada de imediato.",
-    "lockedNote": "{count} bloqueados até um dia de servidor posterior."
-  },
-  "toast": {
-    "notRecruitedTitle": "{name} não está recrutado",
-    "notRecruitedMessage": "Os níveis ficam guardados e voltam a ativar-se com Recrutado.",
-    "undo": "Anular"
-  },
-  "card": {
-    "recruited": "Recrutado",
-    "recruitedLabel": "{expert} recrutado",
-    "summary": "{title} · {specialty} · {generation}",
-    "affinityLevel": "Nível de afinidade",
-    "affinityLabel": "Nível de afinidade de {expert}",
-    "affinityDisplay": "{level} / {max}",
-    "affinityProgress": "Progresso de afinidade de {expert}",
-    "goal": "Objetivo {goal}",
-    "advanced": "Avançado",
-    "notAdvanced": "Não avançado",
-    "advancedLabel": "{expert} avançado no nível {level}",
-    "relationship": "Nível de relação",
-    "affinityAvailable": "Afinidade disponível",
-    "affinityAvailableLabel": "Pontos de afinidade de {expert} em posse",
-    "affinityOf": "de {need} para o nível {level}",
-    "bonusTitle": "Bónus base agora",
-    "bonusNow": "{amount}% {stats}",
-    "bonusOwnLevel": "O nível {level} não é múltiplo de 10, por isso conta o bónus do próprio nível.",
-    "bonusAdvanced": "O nível {level} está avançado, por isso conta o bónus do próprio nível.",
-    "bonusNotAdvanced": "O nível {level} não está avançado, por isso conta o bónus do nível {counted}.",
-    "bonusAtMax": "No nível 100: {amount}%.",
-    "feeds": "Alimenta",
-    "bonuses": "Bónus",
-    "nextAdvancement": "Próximo avanço: nível {level}, {sigils} sigilos",
-    "allAdvanced": "Todos os avanços estão feitos.",
-    "skills": "Habilidades",
-    "skillLabel": "Nível de {skill} de {expert}",
-    "skillDisplay": "{level} / {max}",
-    "expAvailable": "EXP disponível",
-    "expAvailableLabel": "EXP de {skill} de {expert} em posse",
-    "expOf": "de {need} para o nível {level}",
-    "maxLevel": "Nível máximo, sem EXP necessário",
-    "talent": "Talento: {name}",
-    "talentLevel": "Nível {level} de {max}",
-    "talentFollows": "Segue {relationship}. {effect}.",
-    "power": "Poder {now} de {max}",
-    "derived": "Calculado",
-    "notRecruitedHint": "Não recrutado. Recrutar este especialista em Tundra Trek e depois ativar Recrutado.",
-    "recruitmentCost": "Custo de recrutamento: {cost}",
-    "maxPower": "Poder máximo {max}",
-    "buffs": "Reforça {stats}",
-    "expEnough": "Suficiente para o nível {level}",
-    "affinityEnough": "Suficiente para o nível {level}",
-    "skillLocked": "Não desbloqueada. Subir ao nível 1 para a desbloquear.",
-    "sigilsOwned": "Sigilos obtidos",
-    "sigilsOwnedLabel": "Sigilos de {expert} obtidos",
-    "sigilsHint": "A mesma quantidade do sigilo na página Recursos."
-  },
-  "filtersFlyout": {
-    "title": "Filtros",
-    "description": "Restringir a lista de especialistas e escolher a ordem.",
-    "generation": "Geração",
-    "all": "Todas",
-    "show": "Mostrar",
-    "order": "Ordem",
-    "reset": "Repor",
-    "showButton": "Mostrar {experts}",
-    "notSaved": "Os filtros não são guardados.",
-    "showOptions": {
-      "everything": "Tudo",
-      "recruited": "Só recrutados",
-      "notRecruited": "Só não recrutados"
+    "page": {
+        "title": "Especialistas"
     },
-    "orderOptions": {
-      "generation": "Geração",
-      "affinity": "Nível de afinidade",
-      "power": "Poder",
-      "name": "Nome"
+    "view": {
+        "subline": "{chief} · especialistas da Dawn Academy, {total} no jogo",
+        "ghost": "Especialistas"
+    },
+    "common": {
+        "plan": "Plano",
+        "generation": "Geração {generation}",
+        "unknown": "Desconhecido",
+        "and": "{first} e {last}",
+        "expertCount": "{count, plural, one {{amount} especialista} other {{amount} especialistas}}"
+    },
+    "stats": {
+        "recruited": "Especialistas recrutados",
+        "recruitedValue": "{count} de {total}",
+        "powerNow": "Poder dos especialistas agora, só recrutados",
+        "powerAtMax": "Poder no máximo, todos os {total}",
+        "highest": "Maior afinidade",
+        "highestValue": "{name} em {affinity}",
+        "highestNone": "Nenhum recrutado"
+    },
+    "toolbar": {
+        "searchLabel": "Pesquisar especialistas",
+        "searchPlaceholder": "Pesquisar especialistas",
+        "filters": "Filtros",
+        "emptyTitle": "Nenhum especialista corresponde",
+        "emptyDescription": "Alterar a pesquisa ou os filtros para ver mais especialistas.",
+        "reset": "Repor filtros",
+        "status": "A mostrar {shown} de {total}. Aqui os objetivos são só de leitura e definem-se no Plano. Num nível divisível por 10, conta o bónus do nível anterior até o especialista avançar. Cada alteração é guardada de imediato.",
+        "lockedNote": "{count} bloqueados até um dia de servidor posterior."
+    },
+    "toast": {
+        "notRecruitedTitle": "{name} não está recrutado",
+        "notRecruitedMessage": "Os níveis ficam guardados e voltam a ativar-se com Recrutado.",
+        "undo": "Anular"
+    },
+    "card": {
+        "recruited": "Recrutado",
+        "recruitedLabel": "{expert} recrutado",
+        "summary": "{title} · {specialty} · {generation}",
+        "affinityLevel": "Nível de afinidade",
+        "affinityLabel": "Nível de afinidade de {expert}",
+        "affinityDisplay": "{level} / {max}",
+        "affinityProgress": "Progresso de afinidade de {expert}",
+        "goal": "Objetivo {goal}",
+        "advanced": "Avançado",
+        "notAdvanced": "Não avançado",
+        "advancedLabel": "{expert} avançado no nível {level}",
+        "relationship": "Nível de relação",
+        "affinityAvailable": "Afinidade disponível",
+        "affinityAvailableLabel": "Pontos de afinidade de {expert} em posse",
+        "affinityOf": "de {need} para o nível {level}",
+        "bonusTitle": "Bónus base agora",
+        "bonusNow": "{amount}% {stats}",
+        "bonusOwnLevel": "O nível {level} não é múltiplo de 10, por isso conta o bónus do próprio nível.",
+        "bonusAdvanced": "O nível {level} está avançado, por isso conta o bónus do próprio nível.",
+        "bonusNotAdvanced": "O nível {level} não está avançado, por isso conta o bónus do nível {counted}.",
+        "bonusAtMax": "No nível 100: {amount}%.",
+        "feeds": "Alimenta",
+        "bonuses": "Bónus",
+        "nextAdvancement": "Próximo avanço: nível {level}, {sigils} sigilos",
+        "allAdvanced": "Todos os avanços estão feitos.",
+        "skills": "Habilidades",
+        "skillLabel": "Nível de {skill} de {expert}",
+        "skillDisplay": "{level} / {max}",
+        "expAvailable": "EXP disponível",
+        "expAvailableLabel": "EXP de {skill} de {expert} em posse",
+        "expOf": "de {need} para o nível {level}",
+        "maxLevel": "Nível máximo, sem EXP necessário",
+        "talent": "Talento: {name}",
+        "talentLevel": "Nível {level} de {max}",
+        "talentFollows": "Segue {relationship}. {effect}.",
+        "power": "Poder {now} de {max}",
+        "derived": "Calculado",
+        "notRecruitedHint": "Não recrutado. Recrutar este especialista em Tundra Trek e depois ativar Recrutado.",
+        "recruitmentCost": "Custo de recrutamento: {cost}",
+        "maxPower": "Poder máximo {max}",
+        "buffs": "Reforça {stats}",
+        "expEnough": "Suficiente para o nível {level}",
+        "affinityEnough": "Suficiente para o nível {level}",
+        "skillLocked": "Não desbloqueada. Subir ao nível 1 para a desbloquear.",
+        "sigilsOwned": "Sigilos obtidos",
+        "sigilsOwnedLabel": "Sigilos de {expert} obtidos",
+        "sigilsHint": "A mesma quantidade do sigilo na página Recursos."
+    },
+    "filtersFlyout": {
+        "title": "Filtros",
+        "description": "Restringir a lista de especialistas e escolher a ordem.",
+        "generation": "Geração",
+        "all": "Todas",
+        "show": "Mostrar",
+        "order": "Ordem",
+        "reset": "Repor",
+        "showButton": "Mostrar {experts}",
+        "notSaved": "Os filtros não são guardados.",
+        "showOptions": {
+            "everything": "Tudo",
+            "recruited": "Só recrutados",
+            "notRecruited": "Só não recrutados"
+        },
+        "orderOptions": {
+            "generation": "Geração",
+            "affinity": "Nível de afinidade",
+            "power": "Poder",
+            "name": "Nome"
+        }
+    },
+    "plan": {
+        "title": "Plano de especialistas",
+        "description": "Books of Knowledge, sigilos, EXP de habilidade e pontos de afinidade para objetivos de afinidade e habilidade.",
+        "saved": "Plano guardado {date}",
+        "close": "Fechar",
+        "save": "Guardar plano",
+        "exportButton": "Exportar para Eventos principais",
+        "exportNothing": "O plano não requer livros nem sigilos para exportar.",
+        "export": {
+            "books": "Books of Knowledge",
+            "sigils": "Sigilos de especialista",
+            "exp": "EXP de habilidade",
+            "expReason": "Nenhum evento pontua EXP de habilidade."
+        },
+        "noExperts": "Ainda sem especialistas no plano. Adicionar um especialista recrutado para definir os objetivos.",
+        "add": {
+            "title": "Adicionar um especialista",
+            "selectLabel": "Especialista a adicionar",
+            "button": "Adicionar especialista",
+            "allIn": "Todos os especialistas recrutados estão no plano.",
+            "noneRecruited": "Recrutar um especialista na página para o planear."
+        },
+        "block": {
+            "remove": "Remover",
+            "removeLabel": "Remover {expert} do plano",
+            "part": "Parte",
+            "current": "Atual",
+            "goalHeading": "Objetivo",
+            "affinity": "Nível de afinidade",
+            "affinityHeld": "Afinidade disponível {amount}",
+            "expHeld": "EXP disponível {amount}",
+            "currentLevel": "Nível {level}",
+            "currentAffinity": "{level}, avançado",
+            "currentAffinityPlain": "{level}",
+            "affinityGoalLabel": "Objetivo de afinidade de {expert}",
+            "skillGoalLabel": "Objetivo de {skill} de {expert}",
+            "advanceAtGoal": "Avançar no nível {level}",
+            "advanceAtGoalLabel": "{expert} avança no objetivo"
+        },
+        "checks": {
+            "affinity": "Pontos de afinidade",
+            "learning": "EXP de habilidade como aceleradores de aprendizagem",
+            "minutesUnit": "min"
+        },
+        "stock": {
+            "sigils": "O plano requer {total} sigilos. Os sigilos de especialista cobrem {own}, por isso {common} têm de vir de Common Expert Sigils. Cada sigilo de especialista só conta para esse especialista.",
+            "books": "O plano requer {amount} Books of Knowledge para os níveis de habilidade.",
+            "affinity": "O plano requer {needed} pontos de afinidade. O que consta nos cartões de especialista cobre {held}, por isso faltam {left}. O pacote de dados não tem item de afinidade, por isso nada é verificado contra reservas.",
+            "learning": "O plano requer {exp} de EXP de habilidade. As habilidades têm {held}, por isso {left} têm de vir de aceleradores de aprendizagem. Um minuto de aprendizagem dá {rate} de EXP, o que são {minutes} minutos."
+        },
+        "byExpert": {
+            "title": "Por especialista",
+            "sigils": "Sigilos: {needed} necessários, {own} cobertos pelo sigilo de {name}, {common} a vir de Common Expert Sigils",
+            "affinity": "Afinidade: {needed} necessários, {held} disponíveis, faltam {left}",
+            "exp": "EXP de habilidade: {needed} necessários, {held} disponíveis, faltam {left}"
+        },
+        "result": {
+            "title": "Resultado",
+            "derived": "Calculado",
+            "books": "Books of Knowledge",
+            "sigils": "Sigilos",
+            "exp": "EXP de habilidade",
+            "affinity": "Pontos de afinidade",
+            "advancements": "Avanços",
+            "skillLevels": "Níveis de habilidade",
+            "affinityLevels": "Níveis de afinidade",
+            "heads": {
+                "expert": "Especialista",
+                "books": "Livros",
+                "sigils": "Sigilos",
+                "exp": "EXP",
+                "levels": "Níveis",
+                "advancements": "Avanç.",
+                "affinity": "Afinidade"
+            },
+            "empty": "Adicionar um especialista e subir um objetivo para ver o resultado.",
+            "tableLabel": "Tabela de resultado do plano"
+        }
+    },
+    "learning": {
+        "title": "Aprendizagem",
+        "note": "Aprende-se uma habilidade de cada vez. Concluir acrescenta o EXP a essa habilidade.",
+        "idle": "Nada em aprendizagem. Iniciar uma sessão para acrescentar EXP a uma habilidade.",
+        "startButton": "Iniciar aprendizagem",
+        "slotLabel": "Aprendizagem, uma sessão de cada vez",
+        "jobTitle": "{expert}, {skill}, {session}",
+        "manageFinishText": "Concluir melhoria acrescenta o EXP da sessão à habilidade, liberta a fila de aprendizagem e adiciona a sessão ao Histórico. Quando o tempo chega a zero, o cartão mostra Pronto a concluir. Nada termina sozinho, porque podem ter sido usados aceleradores.",
+        "flyout": {
+            "title": "Iniciar aprendizagem",
+            "description": "Marcar uma sessão de aprendizagem como em curso para a habilidade de um especialista",
+            "expert": "Especialista",
+            "skill": "Habilidade",
+            "skillOption": "{name}, nível {level} de {max}",
+            "session": "Sessão",
+            "sessionOption": "{label}, {exp} de EXP",
+            "sessionHint": "Uma sessão ganha 60 de EXP por minuto. As sessões são as do jogo.",
+            "expEarned": "EXP ganho",
+            "heldAfter": "EXP em posse depois",
+            "tooMuch": "A habilidade só consegue usar mais {room} de EXP, por isso o resto perde-se.",
+            "whenStarted": "Quando começou?",
+            "modes": {
+                "now": "A começar agora",
+                "already": "Já começou"
+            },
+            "timeLeftHours": "Tempo restante, horas",
+            "ends": "Termina",
+            "startedHint": "Usar Já começou quando a sessão está a decorrer no jogo. Introduzir o tempo que o jogo mostra.",
+            "nothingToLearn": "Nenhuma habilidade pode aprender agora. Recrutar um especialista e desbloquear uma habilidade que não esteja no nível máximo.",
+            "busy": "Já há uma sessão em curso. Concluí-la ou cancelá-la primeiro em Gerir.",
+            "cancel": "Cancelar",
+            "start": "Iniciar aprendizagem"
+        },
+        "toasts": {
+            "started": {
+                "title": "Aprendizagem iniciada",
+                "message": "{what}."
+            },
+            "finished": {
+                "title": "{what} aprendido",
+                "message": "O EXP foi adicionado à habilidade e ao Histórico."
+            },
+            "cancelled": {
+                "title": "{what} cancelado",
+                "message": "A habilidade mantém o EXP que tinha."
+            },
+            "undo": "Anular"
+        }
     }
-  },
-  "plan": {
-    "title": "Plano de especialistas",
-    "description": "Books of Knowledge, sigilos, EXP de habilidade e pontos de afinidade para objetivos de afinidade e habilidade.",
-    "saved": "Plano guardado {date}",
-    "close": "Fechar",
-    "save": "Guardar plano",
-    "exportButton": "Exportar para Eventos principais",
-    "exportNothing": "O plano não requer livros nem sigilos para exportar.",
-    "export": {
-      "books": "Books of Knowledge",
-      "sigils": "Sigilos de especialista",
-      "exp": "EXP de habilidade",
-      "expReason": "Nenhum evento pontua EXP de habilidade."
-    },
-    "noExperts": "Ainda sem especialistas no plano. Adicionar um especialista recrutado para definir os objetivos.",
-    "add": {
-      "title": "Adicionar um especialista",
-      "selectLabel": "Especialista a adicionar",
-      "button": "Adicionar especialista",
-      "allIn": "Todos os especialistas recrutados estão no plano.",
-      "noneRecruited": "Recrutar um especialista na página para o planear."
-    },
-    "block": {
-      "remove": "Remover",
-      "removeLabel": "Remover {expert} do plano",
-      "part": "Parte",
-      "current": "Atual",
-      "goalHeading": "Objetivo",
-      "affinity": "Nível de afinidade",
-      "affinityHeld": "Afinidade disponível {amount}",
-      "expHeld": "EXP disponível {amount}",
-      "currentLevel": "Nível {level}",
-      "currentAffinity": "{level}, avançado",
-      "currentAffinityPlain": "{level}",
-      "affinityGoalLabel": "Objetivo de afinidade de {expert}",
-      "skillGoalLabel": "Objetivo de {skill} de {expert}",
-      "advanceAtGoal": "Avançar no nível {level}",
-      "advanceAtGoalLabel": "{expert} avança no objetivo"
-    },
-    "checks": {
-      "affinity": "Pontos de afinidade",
-      "learning": "EXP de habilidade como aceleradores de aprendizagem",
-      "minutesUnit": "min"
-    },
-    "stock": {
-      "sigils": "O plano requer {total} sigilos. Os sigilos de especialista cobrem {own}, por isso {common} têm de vir de Common Expert Sigils. Cada sigilo de especialista só conta para esse especialista.",
-      "books": "O plano requer {amount} Books of Knowledge para os níveis de habilidade.",
-      "affinity": "O plano requer {needed} pontos de afinidade. O que consta nos cartões de especialista cobre {held}, por isso faltam {left}. O pacote de dados não tem item de afinidade, por isso nada é verificado contra reservas.",
-      "learning": "O plano requer {exp} de EXP de habilidade. As habilidades têm {held}, por isso {left} têm de vir de aceleradores de aprendizagem. Um minuto de aprendizagem dá {rate} de EXP, o que são {minutes} minutos."
-    },
-    "byExpert": {
-      "title": "Por especialista",
-      "sigils": "Sigilos: {needed} necessários, {own} cobertos pelo sigilo de {name}, {common} a vir de Common Expert Sigils",
-      "affinity": "Afinidade: {needed} necessários, {held} disponíveis, faltam {left}",
-      "exp": "EXP de habilidade: {needed} necessários, {held} disponíveis, faltam {left}"
-    },
-    "result": {
-      "title": "Resultado",
-      "derived": "Calculado",
-      "books": "Books of Knowledge",
-      "sigils": "Sigilos",
-      "exp": "EXP de habilidade",
-      "affinity": "Pontos de afinidade",
-      "advancements": "Avanços",
-      "skillLevels": "Níveis de habilidade",
-      "affinityLevels": "Níveis de afinidade",
-      "heads": {
-        "expert": "Especialista",
-        "books": "Livros",
-        "sigils": "Sigilos",
-        "exp": "EXP",
-        "levels": "Níveis",
-        "advancements": "Avanç.",
-        "affinity": "Afinidade"
-      },
-      "empty": "Adicionar um especialista e subir um objetivo para ver o resultado.",
-      "tableLabel": "Tabela de resultado do plano"
-    }
-  },
-  "learning": {
-    "title": "Aprendizagem",
-    "note": "Aprende-se uma habilidade de cada vez. Concluir acrescenta o EXP a essa habilidade.",
-    "idle": "Nada em aprendizagem. Iniciar uma sessão para acrescentar EXP a uma habilidade.",
-    "startButton": "Iniciar aprendizagem",
-    "slotLabel": "Aprendizagem, uma sessão de cada vez",
-    "jobTitle": "{expert}, {skill}, {session}",
-    "manageFinishText": "Concluir melhoria acrescenta o EXP da sessão à habilidade, liberta a fila de aprendizagem e adiciona a sessão ao Histórico. Quando o tempo chega a zero, o cartão mostra Pronto a concluir. Nada termina sozinho, porque podem ter sido usados aceleradores.",
-    "flyout": {
-      "title": "Iniciar aprendizagem",
-      "description": "Marcar uma sessão de aprendizagem como em curso para a habilidade de um especialista",
-      "expert": "Especialista",
-      "skill": "Habilidade",
-      "skillOption": "{name}, nível {level} de {max}",
-      "session": "Sessão",
-      "sessionOption": "{label}, {exp} de EXP",
-      "sessionHint": "Uma sessão ganha 60 de EXP por minuto. As sessões são as do jogo.",
-      "expEarned": "EXP ganho",
-      "heldAfter": "EXP em posse depois",
-      "tooMuch": "A habilidade só consegue usar mais {room} de EXP, por isso o resto perde-se.",
-      "whenStarted": "Quando começou?",
-      "modes": {
-        "now": "A começar agora",
-        "already": "Já começou"
-      },
-      "timeLeftHours": "Tempo restante, horas",
-      "ends": "Termina",
-      "startedHint": "Usar Já começou quando a sessão está a decorrer no jogo. Introduzir o tempo que o jogo mostra.",
-      "nothingToLearn": "Nenhuma habilidade pode aprender agora. Recrutar um especialista e desbloquear uma habilidade que não esteja no nível máximo.",
-      "busy": "Já há uma sessão em curso. Concluí-la ou cancelá-la primeiro em Gerir.",
-      "cancel": "Cancelar",
-      "start": "Iniciar aprendizagem"
-    },
-    "toasts": {
-      "started": {
-        "title": "Aprendizagem iniciada",
-        "message": "{what}."
-      },
-      "finished": {
-        "title": "{what} aprendido",
-        "message": "O EXP foi adicionado à habilidade e ao Histórico."
-      },
-      "cancelled": {
-        "title": "{what} cancelado",
-        "message": "A habilidade mantém o EXP que tinha."
-      },
-      "undo": "Anular"
-    }
-  }
 }

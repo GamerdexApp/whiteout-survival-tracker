@@ -1,50 +1,50 @@
 {
-  "page": {
-    "title": "Alliance"
-  },
-  "view": {
-    "subline": "{chief} · {details} · niveau de bannière {level}"
-  },
-  "banner": {
-    "title": "Bannière d'alliance",
-    "currentLevel": "Niveau actuel",
-    "levelLabel": "Niveau de bannière",
-    "maxHint": "Niveaux entiers de 0 à {max}.",
-    "rangeChip": "{range}",
-    "costHeading": "Coût par niveau de {range}",
-    "noTimeOrPower": "Les bannières n'ont ni durée de construction ni puissance dans les données, donc rien n'est affiché.",
-    "noCost": "Aucun coût",
-    "none": "Aucune",
-    "lower": "Diminuer le niveau de bannière",
-    "raise": "Augmenter le niveau de bannière"
-  },
-  "structures": {
-    "title": "Structures d'alliance",
-    "tech": {
-      "title": "Technologie",
-      "description": "{count} nœuds en Croissance, Territoire et Combat",
-      "status": "{maxed} au max, {progress} en cours, {locked} verrouillés"
+    "page": {
+        "title": "Alliance"
     },
-    "facilities": {
-      "title": "Installations",
-      "description": "{count} installations de la carte",
-      "owned": "{owned} possédées"
+    "view": {
+        "subline": "{chief} · {details} · niveau de bannière {level}"
     },
-    "fortresses": {
-      "title": "Forteresses",
-      "description": "Château, {strongholds} bastions, {fortresses} forteresses",
-      "reference": "Référence uniquement"
+    "banner": {
+        "title": "Bannière d'alliance",
+        "currentLevel": "Niveau actuel",
+        "levelLabel": "Niveau de bannière",
+        "maxHint": "Niveaux entiers de 0 à {max}.",
+        "rangeChip": "{range}",
+        "costHeading": "Coût par niveau de {range}",
+        "noTimeOrPower": "Les bannières n'ont ni durée de construction ni puissance dans les données, donc rien n'est affiché.",
+        "noCost": "Aucun coût",
+        "none": "Aucune",
+        "lower": "Diminuer le niveau de bannière",
+        "raise": "Augmenter le niveau de bannière"
+    },
+    "structures": {
+        "title": "Structures d'alliance",
+        "tech": {
+            "title": "Technologie",
+            "description": "{count} nœuds en Croissance, Territoire et Combat",
+            "status": "{maxed} au max, {progress} en cours, {locked} verrouillés"
+        },
+        "facilities": {
+            "title": "Installations",
+            "description": "{count} installations de la carte",
+            "owned": "{owned} possédées"
+        },
+        "fortresses": {
+            "title": "Forteresses",
+            "description": "Château, {strongholds} bastions, {fortresses} forteresses",
+            "reference": "Référence uniquement"
+        }
+    },
+    "table": {
+        "title": "Coût de la bannière par tranche de niveaux",
+        "note": "{count} tranches, chaque niveau d'une tranche coûte pareil",
+        "range": "Tranche",
+        "state": "État",
+        "built": "Construite",
+        "current": "Actuelle",
+        "notBuilt": "Non construite",
+        "none": "Aucune",
+        "noCost": "Aucun coût"
     }
-  },
-  "table": {
-    "title": "Coût de la bannière par tranche de niveaux",
-    "note": "{count} tranches, chaque niveau d'une tranche coûte pareil",
-    "range": "Tranche",
-    "state": "État",
-    "built": "Construite",
-    "current": "Actuelle",
-    "notBuilt": "Non construite",
-    "none": "Aucune",
-    "noCost": "Aucun coût"
-  }
 }

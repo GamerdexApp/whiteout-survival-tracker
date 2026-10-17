@@ -1,104 +1,104 @@
 {
-  "line": "{banners} fasce di stendardi, {facilities} strutture e {fortresses} voci tra castello, roccaforti e fortezze. Solo riferimento, qui nulla viene salvato.",
-  "filters": {
-    "search": "Cerca",
-    "searchPlaceholder": "Cerca fasce, strutture, fortezze",
-    "structure": "Struttura",
-    "structures": {
-      "all": "Tutte le strutture",
-      "banners": "Stendardi",
-      "facilities": "Strutture sulla mappa",
-      "castle": "Castello",
-      "stronghold": "Roccaforti",
-      "fortress": "Fortezze"
-    }
-  },
-  "empty": "Nulla in questo elenco corrisponde alla ricerca.",
-  "none": "Nessuno",
-  "banners": {
-    "title": "Costi di costruzione degli stendardi",
-    "columns": {
-      "range": "Fascia di livelli",
-      "min": "Min",
-      "max": "Max",
-      "cost": "Costo per livello"
+    "line": "{banners} fasce di stendardi, {facilities} strutture e {fortresses} voci tra castello, roccaforti e fortezze. Solo riferimento, qui nulla viene salvato.",
+    "filters": {
+        "search": "Cerca",
+        "searchPlaceholder": "Cerca fasce, strutture, fortezze",
+        "structure": "Struttura",
+        "structures": {
+            "all": "Tutte le strutture",
+            "banners": "Stendardi",
+            "facilities": "Strutture sulla mappa",
+            "castle": "Castello",
+            "stronghold": "Roccaforti",
+            "fortress": "Fortezze"
+        }
     },
-    "noCost": "Nessuno elencato",
-    "count": "{count, plural, one {{amount} fascia} other {{amount} fasce}}",
+    "empty": "Nulla in questo elenco corrisponde alla ricerca.",
+    "none": "Nessuno",
+    "banners": {
+        "title": "Costi di costruzione degli stendardi",
+        "columns": {
+            "range": "Fascia di livelli",
+            "min": "Min",
+            "max": "Max",
+            "cost": "Costo per livello"
+        },
+        "noCost": "Nessuno elencato",
+        "count": "{count, plural, one {{amount} fascia} other {{amount} fasce}}",
+        "detail": {
+            "title": "Costo dello stendardo",
+            "fields": {
+                "range": "Fascia di livelli",
+                "min": "Livello più basso",
+                "max": "Livello più alto",
+                "cost": "Costo per livello"
+            }
+        }
+    },
+    "facilities": {
+        "title": "Strutture sulla mappa",
+        "count": "{count, plural, one {{amount} struttura} other {{amount} strutture}}",
+        "columns": {
+            "facility": "Struttura",
+            "bonus": "Bonus",
+            "level": "Livello {level}",
+            "listed": "Livelli elencati",
+            "ownLimit": "Limite personale"
+        },
+        "cell": "{available} sulla mappa",
+        "listedOf": "{listed} su {total}",
+        "levelsNote": "I dati elencano {listed} livelli su {total} per questa struttura. I livelli non elencati compaiono come Sconosciuto.",
+        "detail": {
+            "title": "Livelli di {name}",
+            "level": "Livello {level}",
+            "columns": {
+                "level": "Livello",
+                "booster": "Potenziatore",
+                "injured": "Gravemente feriti",
+                "losses": "Perdite",
+                "ownLimit": "Limite personale",
+                "available": "Sulla mappa",
+                "locations": "Posizioni (x, y)"
+            },
+            "percent": "{value}%",
+            "location": "{x}, {y}"
+        }
+    },
+    "fortresses": {
+        "title": "Castello, roccaforti e fortezze",
+        "kinds": {
+            "castle": "Castello",
+            "stronghold": "Roccaforte",
+            "fortress": "Fortezza"
+        },
+        "columns": {
+            "name": "Nome",
+            "kind": "Tipo",
+            "x": "X",
+            "y": "Y",
+            "phases": "Fasi",
+            "phaseOne": "Ricompensa fase 1"
+        },
+        "mobileMeta": "{kind}, x {x}, y {y}",
+        "count": "{count, plural, one {{amount} struttura} other {{amount} strutture}}"
+    },
+    "map": {
+        "title": "Segnaposto della mappa",
+        "label": "Mappa di castello, roccaforti e fortezze secondo i valori x e y",
+        "note": "Castello, roccaforti e fortezze disegnati dai valori x e y su un quadrato di {size} per {size}. La dimensione del quadrato è una stima, il pacchetto non ha una dimensione della mappa.",
+        "legend": {
+            "castle": "Quadrato: castello",
+            "stronghold": "Rombo: roccaforte",
+            "fortress": "Cerchio: fortezza"
+        }
+    },
     "detail": {
-      "title": "Costo dello stendardo",
-      "fields": {
-        "range": "Fascia di livelli",
-        "min": "Livello più basso",
-        "max": "Livello più alto",
-        "cost": "Costo per livello"
-      }
+        "title": "Ricompense per fase",
+        "phases": "{count, plural, one {{amount} fase} other {{amount} fasi}}",
+        "columns": {
+            "phase": "Fase",
+            "reward": "Ricompensa"
+        },
+        "noRewards": "Il pacchetto non ha ricompense per fase per questa struttura."
     }
-  },
-  "facilities": {
-    "title": "Strutture sulla mappa",
-    "count": "{count, plural, one {{amount} struttura} other {{amount} strutture}}",
-    "columns": {
-      "facility": "Struttura",
-      "bonus": "Bonus",
-      "level": "Livello {level}",
-      "listed": "Livelli elencati",
-      "ownLimit": "Limite personale"
-    },
-    "cell": "{available} sulla mappa",
-    "listedOf": "{listed} su {total}",
-    "levelsNote": "I dati elencano {listed} livelli su {total} per questa struttura. I livelli non elencati compaiono come Sconosciuto.",
-    "detail": {
-      "title": "Livelli di {name}",
-      "level": "Livello {level}",
-      "columns": {
-        "level": "Livello",
-        "booster": "Potenziatore",
-        "injured": "Gravemente feriti",
-        "losses": "Perdite",
-        "ownLimit": "Limite personale",
-        "available": "Sulla mappa",
-        "locations": "Posizioni (x, y)"
-      },
-      "percent": "{value}%",
-      "location": "{x}, {y}"
-    }
-  },
-  "fortresses": {
-    "title": "Castello, roccaforti e fortezze",
-    "kinds": {
-      "castle": "Castello",
-      "stronghold": "Roccaforte",
-      "fortress": "Fortezza"
-    },
-    "columns": {
-      "name": "Nome",
-      "kind": "Tipo",
-      "x": "X",
-      "y": "Y",
-      "phases": "Fasi",
-      "phaseOne": "Ricompensa fase 1"
-    },
-    "mobileMeta": "{kind}, x {x}, y {y}",
-    "count": "{count, plural, one {{amount} struttura} other {{amount} strutture}}"
-  },
-  "map": {
-    "title": "Segnaposto della mappa",
-    "label": "Mappa di castello, roccaforti e fortezze secondo i valori x e y",
-    "note": "Castello, roccaforti e fortezze disegnati dai valori x e y su un quadrato di {size} per {size}. La dimensione del quadrato è una stima, il pacchetto non ha una dimensione della mappa.",
-    "legend": {
-      "castle": "Quadrato: castello",
-      "stronghold": "Rombo: roccaforte",
-      "fortress": "Cerchio: fortezza"
-    }
-  },
-  "detail": {
-    "title": "Ricompense per fase",
-    "phases": "{count, plural, one {{amount} fase} other {{amount} fasi}}",
-    "columns": {
-      "phase": "Fase",
-      "reward": "Ricompensa"
-    },
-    "noRewards": "Il pacchetto non ha ricompense per fase per questa struttura."
-  }
 }

@@ -1,90 +1,90 @@
 {
-  "page": {
-    "title": "Tundra Album"
-  },
-  "view": {
-    "subline": "{chief} · {details} · {complete} albums complets sur {total}"
-  },
-  "summary": {
-    "label": "Albums complets",
-    "value": "{done} sur {total}",
-    "progress": "Albums complets",
-    "inData": "{shown} albums sur {all} sont dans les données"
-  },
-  "buffs": {
-    "title": "Bonus actifs",
-    "derived": "Calculé",
-    "none": "Aucun album n'est complet, donc aucun bonus de Tundra Album ne compte.",
-    "note": "Seuls les albums complets comptent. Ces bonus alimentent la page <link>Bonus</link>."
-  },
-  "album": {
-    "status": {
-      "complete": "Complet",
-      "inProgress": "En cours"
+    "page": {
+        "title": "Tundra Album"
     },
-    "buffWhenComplete": "Bonus une fois complet",
-    "puzzlesDone": "Puzzles terminés",
-    "puzzlesValue": "{done} sur {total}",
-    "puzzlesProgress": "Puzzles terminés de {album}",
-    "completionRewards": "Récompenses de complétion",
-    "markComplete": "Marquer l'album complet",
-    "notCounting": "Ne compte pas encore. {buff} ne compte dans la page Bonus que lorsque les {total} puzzles sont terminés. Marquer l'album complet règle les {total} puzzles et affiche une notification Annuler.",
-    "counting": "Compte actuellement. {buff} est dans la page Bonus. Décocher un puzzle le retire.",
-    "piecesValue": "{collected} pièces sur {total} collectées"
-  },
-  "puzzle": {
-    "pieces": "{count, plural, one {{amount} pièce} other {{amount} pièces}}, étoiles 1 à 5 : {split}",
-    "reward": "Récompense",
-    "done": "Puzzle terminé, toutes les pièces collectées",
-    "doneFor": "Terminé, {puzzle}",
-    "collectedLabel": "Pièces collectées",
-    "collected": "{collected} sur {total}",
-    "pieceLabel": "{name}, {stars} étoiles",
-    "pieceHint": "Sélectionnez les pièces que vous avez. Marquer le puzzle terminé les collecte toutes.",
-    "allCollected": "Le puzzle est terminé, donc toutes les pièces sont collectées."
-  },
-  "reward": {
-    "line": "{amount} {item}",
-    "sized": "{amount} {item} ({size})",
-    "unknownItem": "Objet inconnu"
-  },
-  "toast": {
-    "markedTitle": "{album} marqué complet",
-    "markedMessage": "Les {total} puzzles sont terminés.",
-    "unmarkedTitle": "{puzzle} décoché",
-    "unmarkedMessage": "{album} est de nouveau en cours et son bonus a quitté Bonus.",
-    "undo": "Annuler"
-  },
-  "notInData": "Les {count} autres Tundra Albums sur {total} ne sont pas encore dans les données. Ils sont ajoutés quand les données les contiennent.",
-  "pieces": {
-    "label": "Pièces collectées",
-    "value": "{collected} sur {available}",
-    "progress": "Pièces collectées dans tous les albums",
-    "viewRewards": "Voir les récompenses de pièces"
-  },
-  "rewardsFlyout": {
-    "title": "Récompenses par nombre de pièces",
-    "description": "Les récompenses obtenues à mesure que les pièces collectées dans tous les albums s'additionnent",
-    "close": "Fermer",
-    "collected": "Pièces collectées",
-    "collectedValue": "{collected} sur {available}",
-    "progress": "Pièces collectées dans tous les albums",
-    "reached": "{reached} récompenses sur {all} atteintes",
-    "next": "La prochaine récompense est à {pieces} pièces, encore {missing} à collecter.",
-    "allReached": "Toutes les récompenses par nombre de pièces des données sont atteintes.",
-    "totalSoFar": "Récompenses obtenues jusqu'ici",
-    "tree": "Récompenses par pièces collectées",
-    "tier": "Récompense {tier} à {pieces} pièces",
-    "stateReached": "Collectée",
-    "stateNext": "Prochaine, encore {missing}",
-    "stateLater": "Encore {missing}"
-  },
-  "picker": {
-    "label": "Albums",
-    "title": "Albums",
-    "complete": "Album complet",
-    "puzzles": "{done} puzzles sur {total}",
-    "pieces": "{collected} pièces sur {total}",
-    "piecesProgress": "Pièces collectées de {album}"
-  }
+    "view": {
+        "subline": "{chief} · {details} · {complete} albums complets sur {total}"
+    },
+    "summary": {
+        "label": "Albums complets",
+        "value": "{done} sur {total}",
+        "progress": "Albums complets",
+        "inData": "{shown} albums sur {all} sont dans les données"
+    },
+    "buffs": {
+        "title": "Bonus actifs",
+        "derived": "Calculé",
+        "none": "Aucun album n'est complet, donc aucun bonus de Tundra Album ne compte.",
+        "note": "Seuls les albums complets comptent. Ces bonus alimentent la page <link>Bonus</link>."
+    },
+    "album": {
+        "status": {
+            "complete": "Complet",
+            "inProgress": "En cours"
+        },
+        "buffWhenComplete": "Bonus une fois complet",
+        "puzzlesDone": "Puzzles terminés",
+        "puzzlesValue": "{done} sur {total}",
+        "puzzlesProgress": "Puzzles terminés de {album}",
+        "completionRewards": "Récompenses de complétion",
+        "markComplete": "Marquer l'album complet",
+        "notCounting": "Ne compte pas encore. {buff} ne compte dans la page Bonus que lorsque les {total} puzzles sont terminés. Marquer l'album complet règle les {total} puzzles et affiche une notification Annuler.",
+        "counting": "Compte actuellement. {buff} est dans la page Bonus. Décocher un puzzle le retire.",
+        "piecesValue": "{collected} pièces sur {total} collectées"
+    },
+    "puzzle": {
+        "pieces": "{count, plural, one {{amount} pièce} other {{amount} pièces}}, étoiles 1 à 5 : {split}",
+        "reward": "Récompense",
+        "done": "Puzzle terminé, toutes les pièces collectées",
+        "doneFor": "Terminé, {puzzle}",
+        "collectedLabel": "Pièces collectées",
+        "collected": "{collected} sur {total}",
+        "pieceLabel": "{name}, {stars} étoiles",
+        "pieceHint": "Sélectionnez les pièces que vous avez. Marquer le puzzle terminé les collecte toutes.",
+        "allCollected": "Le puzzle est terminé, donc toutes les pièces sont collectées."
+    },
+    "reward": {
+        "line": "{amount} {item}",
+        "sized": "{amount} {item} ({size})",
+        "unknownItem": "Objet inconnu"
+    },
+    "toast": {
+        "markedTitle": "{album} marqué complet",
+        "markedMessage": "Les {total} puzzles sont terminés.",
+        "unmarkedTitle": "{puzzle} décoché",
+        "unmarkedMessage": "{album} est de nouveau en cours et son bonus a quitté Bonus.",
+        "undo": "Annuler"
+    },
+    "notInData": "Les {count} autres Tundra Albums sur {total} ne sont pas encore dans les données. Ils sont ajoutés quand les données les contiennent.",
+    "pieces": {
+        "label": "Pièces collectées",
+        "value": "{collected} sur {available}",
+        "progress": "Pièces collectées dans tous les albums",
+        "viewRewards": "Voir les récompenses de pièces"
+    },
+    "rewardsFlyout": {
+        "title": "Récompenses par nombre de pièces",
+        "description": "Les récompenses obtenues à mesure que les pièces collectées dans tous les albums s'additionnent",
+        "close": "Fermer",
+        "collected": "Pièces collectées",
+        "collectedValue": "{collected} sur {available}",
+        "progress": "Pièces collectées dans tous les albums",
+        "reached": "{reached} récompenses sur {all} atteintes",
+        "next": "La prochaine récompense est à {pieces} pièces, encore {missing} à collecter.",
+        "allReached": "Toutes les récompenses par nombre de pièces des données sont atteintes.",
+        "totalSoFar": "Récompenses obtenues jusqu'ici",
+        "tree": "Récompenses par pièces collectées",
+        "tier": "Récompense {tier} à {pieces} pièces",
+        "stateReached": "Collectée",
+        "stateNext": "Prochaine, encore {missing}",
+        "stateLater": "Encore {missing}"
+    },
+    "picker": {
+        "label": "Albums",
+        "title": "Albums",
+        "complete": "Album complet",
+        "puzzles": "{done} puzzles sur {total}",
+        "pieces": "{collected} pièces sur {total}",
+        "piecesProgress": "Pièces collectées de {album}"
+    }
 }

@@ -1,98 +1,98 @@
 {
-  "page": {
-    "title": "Tecnología"
-  },
-  "view": {
-    "subline": "{chief} · {count} nodos de tecnología de alianza en Growth, Territory y Battle"
-  },
-  "summary": {
-    "maxed": "Al máximo",
-    "inProgress": "En curso",
-    "notStarted": "Sin empezar",
-    "locked": "Bloqueados"
-  },
-  "status": {
-    "maxed": "Al máximo",
-    "inProgress": "En curso",
-    "notStarted": "Sin empezar",
-    "locked": "Bloqueado"
-  },
-  "tabs": {
-    "label": "Categorías de tecnología"
-  },
-  "categories": {
-    "Growth": "Growth",
-    "Territory": "Territory",
-    "Battle": "Battle"
-  },
-  "filters": {
-    "search": "Buscar",
-    "searchLabel": "Buscar nodos de tecnología",
-    "searchPlaceholder": "Nombre del nodo",
-    "tier": "Tier",
-    "allTiers": "Todos los tiers",
-    "tierOption": "Tier {tier}",
-    "status": "Estado",
-    "allStatuses": "Todos",
-    "button": "Búsqueda y filtros",
-    "title": "Búsqueda y filtros",
-    "description": "Encuentra nodos de tecnología por nombre, tier y estado",
-    "reset": "Restablecer filtros",
-    "done": "Mostrar {count}",
-    "shown": "{shown} de {total} nodos mostrados"
-  },
-  "table": {
-    "node": "Nodo",
-    "level": "Nivel",
-    "bonus": "Bonificación",
-    "cost": "Coste del siguiente nivel",
-    "time": "Tiempo",
-    "needs": "Requiere"
-  },
-  "node": {
-    "tierDescription": "Tier {tier} · {description}",
-    "levelLabel": "Nivel de {name}",
-    "levelOf": "{level} / {max}",
-    "open": "Abrir {name}",
-    "bonusOf": "{now} de {max}",
-    "bonusNone": "Ninguna aún, máx. {max}",
-    "noBonus": "Sin bonificación",
-    "maxed": "Al máximo",
-    "noTime": "Sin tiempo",
-    "readyToUpgrade": "Listo para mejorar",
-    "nothingNeeded": "No hace falta nada",
-    "needsPart": "Requiere {name} nivel {level}",
-    "costLine": "{name} {amount}",
-    "lockedHint": "Bloqueado hasta {names}",
-    "requirementPart": "{name} nivel {level}"
-  },
-  "flyout": {
-    "title": "{name}",
-    "subtitle": "{category}, tier {tier}. {description}",
-    "close": "Cerrar",
-    "level": "Nivel",
-    "bonusNow": "Bonificación ahora",
-    "needsFor": "Requiere para el nivel {level}",
-    "needsNothing": "No hace falta nada.",
-    "needsLine": "Requiere nivel {need}, tienes nivel {have}",
-    "met": "Cumplido",
-    "notMet": "Sin cumplir",
-    "requiredBy": "Requerido por",
-    "requiredByNone": "Ningún otro nodo necesita este.",
-    "requiredByLine": "{category}, tier {tier}, desde el nivel {from} requiere {name} nivel {need}",
-    "allLevels": "Todos los niveles",
-    "levelRow": "Nivel {level}",
-    "done": "Hecho",
-    "next": "Siguiente",
-    "later": "Más adelante",
-    "remaining": "Lo que falta hasta el máximo",
-    "derived": "Calculado",
-    "remainingNone": "No queda nada. Este nodo está al máximo.",
-    "remainingLine": "{cost}",
-    "remainingTime": "{time}"
-  },
-  "empty": {
-    "title": "Ningún nodo coincide",
-    "description": "Cambia la búsqueda o los filtros para ver más nodos."
-  }
+    "page": {
+        "title": "Tecnología"
+    },
+    "view": {
+        "subline": "{chief} · {count} nodos de tecnología de alianza en Growth, Territory y Battle"
+    },
+    "summary": {
+        "maxed": "Al máximo",
+        "inProgress": "En curso",
+        "notStarted": "Sin empezar",
+        "locked": "Bloqueados"
+    },
+    "status": {
+        "maxed": "Al máximo",
+        "inProgress": "En curso",
+        "notStarted": "Sin empezar",
+        "locked": "Bloqueado"
+    },
+    "tabs": {
+        "label": "Categorías de tecnología"
+    },
+    "categories": {
+        "Growth": "Growth",
+        "Territory": "Territory",
+        "Battle": "Battle"
+    },
+    "filters": {
+        "search": "Buscar",
+        "searchLabel": "Buscar nodos de tecnología",
+        "searchPlaceholder": "Nombre del nodo",
+        "tier": "Tier",
+        "allTiers": "Todos los tiers",
+        "tierOption": "Tier {tier}",
+        "status": "Estado",
+        "allStatuses": "Todos",
+        "button": "Búsqueda y filtros",
+        "title": "Búsqueda y filtros",
+        "description": "Encuentra nodos de tecnología por nombre, tier y estado",
+        "reset": "Restablecer filtros",
+        "done": "Mostrar {count}",
+        "shown": "{shown} de {total} nodos mostrados"
+    },
+    "table": {
+        "node": "Nodo",
+        "level": "Nivel",
+        "bonus": "Bonificación",
+        "cost": "Coste del siguiente nivel",
+        "time": "Tiempo",
+        "needs": "Requiere"
+    },
+    "node": {
+        "tierDescription": "Tier {tier} · {description}",
+        "levelLabel": "Nivel de {name}",
+        "levelOf": "{level} / {max}",
+        "open": "Abrir {name}",
+        "bonusOf": "{now} de {max}",
+        "bonusNone": "Ninguna aún, máx. {max}",
+        "noBonus": "Sin bonificación",
+        "maxed": "Al máximo",
+        "noTime": "Sin tiempo",
+        "readyToUpgrade": "Listo para mejorar",
+        "nothingNeeded": "No hace falta nada",
+        "needsPart": "Requiere {name} nivel {level}",
+        "costLine": "{name} {amount}",
+        "lockedHint": "Bloqueado hasta {names}",
+        "requirementPart": "{name} nivel {level}"
+    },
+    "flyout": {
+        "title": "{name}",
+        "subtitle": "{category}, tier {tier}. {description}",
+        "close": "Cerrar",
+        "level": "Nivel",
+        "bonusNow": "Bonificación ahora",
+        "needsFor": "Requiere para el nivel {level}",
+        "needsNothing": "No hace falta nada.",
+        "needsLine": "Requiere nivel {need}, tienes nivel {have}",
+        "met": "Cumplido",
+        "notMet": "Sin cumplir",
+        "requiredBy": "Requerido por",
+        "requiredByNone": "Ningún otro nodo necesita este.",
+        "requiredByLine": "{category}, tier {tier}, desde el nivel {from} requiere {name} nivel {need}",
+        "allLevels": "Todos los niveles",
+        "levelRow": "Nivel {level}",
+        "done": "Hecho",
+        "next": "Siguiente",
+        "later": "Más adelante",
+        "remaining": "Lo que falta hasta el máximo",
+        "derived": "Calculado",
+        "remainingNone": "No queda nada. Este nodo está al máximo.",
+        "remainingLine": "{cost}",
+        "remainingTime": "{time}"
+    },
+    "empty": {
+        "title": "Ningún nodo coincide",
+        "description": "Cambia la búsqueda o los filtros para ver más nodos."
+    }
 }

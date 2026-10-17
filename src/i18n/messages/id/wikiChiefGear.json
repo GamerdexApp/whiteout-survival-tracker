@@ -1,56 +1,56 @@
 {
-  "line": "{rows} baris perlengkapan, {slots} slot, dan {rates} kurs tukar. Hanya referensi, tidak ada yang disimpan ke Chief-mu.",
-  "slots": {
-    "heading": "Slot perlengkapan",
-    "rarities": "Ikon {first} sampai {last}",
-    "detailLine": "Memberi buff pasukan {troopType}. Satu ikon untuk tiap kelangkaan."
-  },
-  "table": {
-    "heading": "Tabel perlengkapan",
-    "meta": "{rows} baris, {tiers} tier",
-    "searchLabel": "Cari",
-    "searchPlaceholder": "Cari {rows} baris perlengkapan",
-    "tierLabel": "Tier",
-    "allTiers": "Semua tier",
-    "starsLabel": "Bintang",
-    "allStars": "Semua bintang",
-    "starsOption": "Bintang {stars}",
-    "empty": "Tidak ada baris perlengkapan yang cocok dengan filter."
-  },
-  "columns": {
-    "row": "Baris",
-    "materials": "Bahan",
-    "stats": "Statistik",
-    "power": "Kekuatan",
-    "score": "Skor",
-    "capacity": "Kap. kerahan"
-  },
-  "cells": {
-    "none": "Tidak ada",
-    "percent": "{value}%"
-  },
-  "tiers": {
-    "heading": "Tier",
-    "meta": "{tiers} label tier",
-    "tier": "Tier",
-    "rows": "Baris",
-    "stats": "Statistik, pertama sampai terakhir",
-    "power": "Kekuatan di baris terakhir",
-    "statsRange": "{first}% sampai {last}%"
-  },
-  "exchange": {
-    "heading": "Kurs tukar bahan",
-    "exchange": "Tukar",
-    "from": "Dari",
-    "to": "Ke",
-    "weeklyLimit": "Batas mingguan"
-  },
-  "setBonus": {
-    "heading": "Bonus set",
-    "meta": "{tiers} tier",
-    "hint": "Pakai 3 bagian untuk bonus Pertahanan dan 6 bagian untuk bonus Serangan. Persentasenya bergantung pada tier bagian yang kamu pakai. Berlaku untuk pasukan {types}.",
-    "pieceSet": "Set {pieces} bagian",
-    "tier": "Tier",
-    "pieces": "{pieces} bagian, {stat}"
-  }
+    "line": "{rows} baris perlengkapan, {slots} slot, dan {rates} kurs tukar. Hanya referensi, tidak ada yang disimpan ke Chief-mu.",
+    "slots": {
+        "heading": "Slot perlengkapan",
+        "rarities": "Ikon {first} sampai {last}",
+        "detailLine": "Memberi buff pasukan {troopType}. Satu ikon untuk tiap kelangkaan."
+    },
+    "table": {
+        "heading": "Tabel perlengkapan",
+        "meta": "{rows} baris, {tiers} tier",
+        "searchLabel": "Cari",
+        "searchPlaceholder": "Cari {rows} baris perlengkapan",
+        "tierLabel": "Tier",
+        "allTiers": "Semua tier",
+        "starsLabel": "Bintang",
+        "allStars": "Semua bintang",
+        "starsOption": "Bintang {stars}",
+        "empty": "Tidak ada baris perlengkapan yang cocok dengan filter."
+    },
+    "columns": {
+        "row": "Baris",
+        "materials": "Bahan",
+        "stats": "Statistik",
+        "power": "Kekuatan",
+        "score": "Skor",
+        "capacity": "Kap. kerahan"
+    },
+    "cells": {
+        "none": "Tidak ada",
+        "percent": "{value}%"
+    },
+    "tiers": {
+        "heading": "Tier",
+        "meta": "{tiers} label tier",
+        "tier": "Tier",
+        "rows": "Baris",
+        "stats": "Statistik, pertama sampai terakhir",
+        "power": "Kekuatan di baris terakhir",
+        "statsRange": "{first}% sampai {last}%"
+    },
+    "exchange": {
+        "heading": "Kurs tukar bahan",
+        "exchange": "Tukar",
+        "from": "Dari",
+        "to": "Ke",
+        "weeklyLimit": "Batas mingguan"
+    },
+    "setBonus": {
+        "heading": "Bonus set",
+        "meta": "{tiers} tier",
+        "hint": "Pakai 3 bagian untuk bonus Pertahanan dan 6 bagian untuk bonus Serangan. Persentasenya bergantung pada tier bagian yang kamu pakai. Berlaku untuk pasukan {types}.",
+        "pieceSet": "Set {pieces} bagian",
+        "tier": "Tier",
+        "pieces": "{pieces} bagian, {stat}"
+    }
 }

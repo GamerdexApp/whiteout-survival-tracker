@@ -1,114 +1,114 @@
 {
-  "page": {
-    "title": "Daybreak Island"
-  },
-  "view": {
-    "subline": "Lumber Camp, Tree of Life и ваши украшения."
-  },
-  "locked": {
-    "title": "Нужен Furnace {level}",
-    "description": "Daybreak Island открывается на Furnace {level}. Сейчас у вас Furnace {current}, осталось: {missing}. Страница остаётся видимой, чтобы вы видели, что вас ждёт. Изменения отключены до этого момента.",
-    "noFurnace": "Daybreak Island открывается на Furnace {level}. Уровень вашего Furnace пока не задан. Страница остаётся видимой, чтобы вы видели, что вас ждёт. Изменения отключены до этого момента.",
-    "missing": "{count, plural, one {{amount} уровень} few {{amount} уровня} many {{amount} уровней} other {{amount} уровня}}",
-    "link": "Перейти к зданиям"
-  },
-  "levelOf": "Ур. {level} из {max}",
-  "camp": {
-    "title": "Lumber Camp",
-    "levelLabel": "Уровень Lumber Camp",
-    "workers": "Рабочие",
-    "rate": "Скорость в секунду",
-    "essence": "Life Essence до этого уровня",
-    "needsTree": "Нужен Tree of Life уровня {required}. У вас {current}.",
-    "treeTooLow": "Tree of Life уровня {current} слишком низкий. Для уровня {level} Lumber Camp нужен Tree of Life уровня {required}.",
-    "next": "Далее, уровень {level}: {essence} Life Essence, нужен Tree of Life уровня {tree}.",
-    "highest": "Это высший уровень."
-  },
-  "tree": {
-    "title": "Tree of Life",
-    "levelLabel": "Уровень Tree of Life",
-    "prosperity": "Процветание до этого уровня",
-    "essence": "Life Essence до этого уровня",
-    "perHour": "Life Essence в час",
-    "buff": "Бонус",
-    "next": "Далее, уровень {level}: {prosperity} процветания, {essence} Life Essence.",
-    "highest": "Это высший уровень."
-  },
-  "decorations": {
-    "title": "Украшения",
-    "owned": "Есть {owned} из {total}",
-    "imageNote": "Только у {withImage} из {total} украшений есть картинка в пакете. Сплошной квадрат отмечает украшения с картинкой, пунктирный отмечает остальные."
-  },
-  "search": {
-    "label": "Поиск украшений",
-    "placeholder": "Поиск украшений"
-  },
-  "status": {
-    "showing": "Показано {shown} из {total} украшений.",
-    "showMore": "{count, plural, one {Показать ещё {amount} украшение} few {Показать ещё {amount} украшения} many {Показать ещё {amount} украшений} other {Показать ещё {amount} украшения}}"
-  },
-  "empty": {
-    "title": "Подходящих украшений нет",
-    "description": "Измените поиск или фильтры, чтобы увидеть украшения.",
-    "reset": "Сбросить фильтры"
-  },
-  "card": {
-    "costEach": "Цена за штуку",
-    "cost": "{amount} {item}",
-    "limit": "Лимит",
-    "buffAtLevel": "Бонус на уровне {level}",
-    "buffAtMax": "Бонус на макс. уровне",
-    "buffValue": "{value} {stat}",
-    "prosperityAtMax": "Процветание на максимуме",
-    "essenceCost": "Цена в Life Essence",
-    "unknown": "Неизвестно",
-    "owned": "Есть",
-    "notOwned": "Нет",
-    "ownedLabel": "{name}: есть",
-    "levelLabel": "Уровень: {name}",
-    "countLabel": "Количество: {name}",
-    "limited": "Лимит",
-    "ownedCount": "Есть {count} из {limit}"
-  },
-  "categories": {
-    "Basic": "Базовые",
-    "Vegetation": "Растения",
-    "Common": "Обычные",
-    "Uncommon": "Необычные",
-    "Rare": "Редкие",
-    "Epic": "Эпические",
-    "Mythic": "Мифические",
-    "Unique": "Уникальные"
-  },
-  "filters": {
-    "button": "Фильтры",
-    "title": "Фильтры",
-    "description": "Сузьте список украшений. Фильтры не сохраняются.",
-    "category": "Категория",
-    "categoryAll": "Все {amount}",
-    "categoryOption": "{category} {amount}",
-    "show": "Показывать",
-    "ownedOnly": "Только имеющиеся",
-    "limitedOnly": "Только с лимитом",
-    "unknownBuffOnly": "Только с неизвестным бонусом",
-    "sort": "Сортировка",
-    "order": {
-      "game": "Порядок пакета",
-      "name": "По названию, А–Я",
-      "level": "По уровню, сначала высшие"
+    "page": {
+        "title": "Daybreak Island"
     },
-    "reset": "Сбросить",
-    "showButton": "{count, plural, one {Показать {amount} украшение} few {Показать {amount} украшения} many {Показать {amount} украшений} other {Показать {amount} украшения}}",
-    "nonLimitedOnly": "Только без лимита",
-    "notOwnedOnly": "Только отсутствующие"
-  },
-  "prosperity": {
-    "label": "Ваши очки процветания",
-    "progress": "Очки процветания ваших украшений",
-    "possible": "Из {max} при высшем уровне и лимите каждого украшения",
-    "levelled": "Украшения с уровнями, процветание достигнутого уровня",
-    "limited": "Украшения с лимитом, количество умножено на процветание штуки",
-    "ofMax": "{value} из {max}",
-    "withoutValue": "У {count, plural, one {{amount} имеющегося украшения} few {{amount} имеющихся украшений} many {{amount} имеющихся украшений} other {{amount} имеющихся украшений}} нет значения процветания в данных, {count, plural, one {оно не учитывается} few {они не учитываются} many {они не учитываются} other {они не учитываются}}."
-  }
+    "view": {
+        "subline": "Lumber Camp, Tree of Life и ваши украшения."
+    },
+    "locked": {
+        "title": "Нужен Furnace {level}",
+        "description": "Daybreak Island открывается на Furnace {level}. Сейчас у вас Furnace {current}, осталось: {missing}. Страница остаётся видимой, чтобы вы видели, что вас ждёт. Изменения отключены до этого момента.",
+        "noFurnace": "Daybreak Island открывается на Furnace {level}. Уровень вашего Furnace пока не задан. Страница остаётся видимой, чтобы вы видели, что вас ждёт. Изменения отключены до этого момента.",
+        "missing": "{count, plural, one {{amount} уровень} few {{amount} уровня} many {{amount} уровней} other {{amount} уровня}}",
+        "link": "Перейти к зданиям"
+    },
+    "levelOf": "Ур. {level} из {max}",
+    "camp": {
+        "title": "Lumber Camp",
+        "levelLabel": "Уровень Lumber Camp",
+        "workers": "Рабочие",
+        "rate": "Скорость в секунду",
+        "essence": "Life Essence до этого уровня",
+        "needsTree": "Нужен Tree of Life уровня {required}. У вас {current}.",
+        "treeTooLow": "Tree of Life уровня {current} слишком низкий. Для уровня {level} Lumber Camp нужен Tree of Life уровня {required}.",
+        "next": "Далее, уровень {level}: {essence} Life Essence, нужен Tree of Life уровня {tree}.",
+        "highest": "Это высший уровень."
+    },
+    "tree": {
+        "title": "Tree of Life",
+        "levelLabel": "Уровень Tree of Life",
+        "prosperity": "Процветание до этого уровня",
+        "essence": "Life Essence до этого уровня",
+        "perHour": "Life Essence в час",
+        "buff": "Бонус",
+        "next": "Далее, уровень {level}: {prosperity} процветания, {essence} Life Essence.",
+        "highest": "Это высший уровень."
+    },
+    "decorations": {
+        "title": "Украшения",
+        "owned": "Есть {owned} из {total}",
+        "imageNote": "Только у {withImage} из {total} украшений есть картинка в пакете. Сплошной квадрат отмечает украшения с картинкой, пунктирный отмечает остальные."
+    },
+    "search": {
+        "label": "Поиск украшений",
+        "placeholder": "Поиск украшений"
+    },
+    "status": {
+        "showing": "Показано {shown} из {total} украшений.",
+        "showMore": "{count, plural, one {Показать ещё {amount} украшение} few {Показать ещё {amount} украшения} many {Показать ещё {amount} украшений} other {Показать ещё {amount} украшения}}"
+    },
+    "empty": {
+        "title": "Подходящих украшений нет",
+        "description": "Измените поиск или фильтры, чтобы увидеть украшения.",
+        "reset": "Сбросить фильтры"
+    },
+    "card": {
+        "costEach": "Цена за штуку",
+        "cost": "{amount} {item}",
+        "limit": "Лимит",
+        "buffAtLevel": "Бонус на уровне {level}",
+        "buffAtMax": "Бонус на макс. уровне",
+        "buffValue": "{value} {stat}",
+        "prosperityAtMax": "Процветание на максимуме",
+        "essenceCost": "Цена в Life Essence",
+        "unknown": "Неизвестно",
+        "owned": "Есть",
+        "notOwned": "Нет",
+        "ownedLabel": "{name}: есть",
+        "levelLabel": "Уровень: {name}",
+        "countLabel": "Количество: {name}",
+        "limited": "Лимит",
+        "ownedCount": "Есть {count} из {limit}"
+    },
+    "categories": {
+        "Basic": "Базовые",
+        "Vegetation": "Растения",
+        "Common": "Обычные",
+        "Uncommon": "Необычные",
+        "Rare": "Редкие",
+        "Epic": "Эпические",
+        "Mythic": "Мифические",
+        "Unique": "Уникальные"
+    },
+    "filters": {
+        "button": "Фильтры",
+        "title": "Фильтры",
+        "description": "Сузьте список украшений. Фильтры не сохраняются.",
+        "category": "Категория",
+        "categoryAll": "Все {amount}",
+        "categoryOption": "{category} {amount}",
+        "show": "Показывать",
+        "ownedOnly": "Только имеющиеся",
+        "limitedOnly": "Только с лимитом",
+        "unknownBuffOnly": "Только с неизвестным бонусом",
+        "sort": "Сортировка",
+        "order": {
+            "game": "Порядок пакета",
+            "name": "По названию, А–Я",
+            "level": "По уровню, сначала высшие"
+        },
+        "reset": "Сбросить",
+        "showButton": "{count, plural, one {Показать {amount} украшение} few {Показать {amount} украшения} many {Показать {amount} украшений} other {Показать {amount} украшения}}",
+        "nonLimitedOnly": "Только без лимита",
+        "notOwnedOnly": "Только отсутствующие"
+    },
+    "prosperity": {
+        "label": "Ваши очки процветания",
+        "progress": "Очки процветания ваших украшений",
+        "possible": "Из {max} при высшем уровне и лимите каждого украшения",
+        "levelled": "Украшения с уровнями, процветание достигнутого уровня",
+        "limited": "Украшения с лимитом, количество умножено на процветание штуки",
+        "ofMax": "{value} из {max}",
+        "withoutValue": "У {count, plural, one {{amount} имеющегося украшения} few {{amount} имеющихся украшений} many {{amount} имеющихся украшений} other {{amount} имеющихся украшений}} нет значения процветания в данных, {count, plural, one {оно не учитывается} few {они не учитываются} many {они не учитываются} other {они не учитываются}}."
+    }
 }

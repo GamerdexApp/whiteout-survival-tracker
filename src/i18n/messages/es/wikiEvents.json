@@ -1,145 +1,145 @@
 {
-  "line": "{events} eventos: {alliance} de alianza, {solo} individuales, {rookie} de novatos y {holiday} festivos. Fases, puntuación, recompensas, consejos, tiendas y clasificaciones donde el paquete los tiene.",
-  "list": {
-    "title": "Eventos",
-    "showing": "Mostrando {shown} de {total}",
-    "search": "Buscar",
-    "searchPlaceholder": "Buscar eventos por nombre",
-    "scoringFilter": "Puntuación",
-    "categoryLabel": "Categoría",
-    "all": "Todos",
-    "table": "Eventos",
-    "event": "Evento",
-    "category": "Categoría",
-    "frequency": "Frecuencia (texto libre)",
-    "duration": "Duración (texto libre)",
-    "scoringRows": "Filas de puntuación",
-    "noScoringRows": "Sin filas de puntuación",
-    "emptyTitle": "Ningún evento coincide",
-    "emptyDescription": "Cambia la búsqueda, la categoría o la puntuación."
-  },
-  "category": {
-    "alliance": "Alianza",
-    "solo": "Individual",
-    "rookie": "Novato",
-    "holiday": "Festivo"
-  },
-  "scoring": {
-    "any": "Cualquier puntuación",
-    "ranking": "Clasificación",
-    "tier": "Tiers",
-    "milestones": "Hitos",
-    "waves": "Oleadas",
-    "participation": "Participación"
-  },
-  "parts": {
-    "days": "{count, plural, one {{amount} día} other {{amount} días}}",
-    "tiers": "{count, plural, one {{amount} tier} other {{amount} tiers}}",
-    "missions": "{count, plural, one {{amount} misión} other {{amount} misiones}}",
-    "waves": "{count, plural, one {{amount} oleada} other {{amount} oleadas}}",
-    "versions": "{count, plural, one {{amount} versión} other {{amount} versiones}}",
-    "levels": "{count, plural, one {{amount} nivel} other {{amount} niveles}}"
-  },
-  "detail": {
-    "title": "Detalles",
-    "category": "Categoría",
-    "frequency": "Frecuencia",
-    "duration": "Duración",
-    "summary": "Resumen",
-    "requirements": "Requisitos",
-    "scoring": "Puntuación",
-    "noRequirements": "Ninguno"
-  },
-  "phases": {
-    "title": "Fases",
-    "table": "Fases del evento",
-    "phase": "Fase",
-    "description": "Descripción"
-  },
-  "scoringRows": {
-    "title": "Filas de puntuación: {name}",
-    "table": "Acciones que puntúan",
-    "action": "Acción",
-    "points": "Puntos",
-    "victoryPoints": "{amount} puntos de victoria",
-    "milestones": "Hitos de {name}",
-    "allianceMilestones": "Hitos de alianza de {name}"
-  },
-  "missions": {
-    "title": "Misiones",
-    "table": "Misiones del evento",
-    "mission": "Misión",
-    "group": "Grupo",
-    "points": "Puntos",
-    "rewards": "Recompensas"
-  },
-  "tiers": {
-    "title": "Tiers",
-    "table": "Tiers del evento",
-    "tier": "Tier",
-    "score": "Objetivo",
-    "scoreValue": "{amount} {unit}",
-    "scoreValuePoints": "{amount} puntos",
-    "rewards": "Recompensas",
-    "note": "Nota"
-  },
-  "rankings": {
-    "title": "Recompensas de clasificación",
-    "personal": "Recompensas de clasificación personal",
-    "alliance": "Recompensas de clasificación de alianza",
-    "basedOn": "Recompensas de clasificación según {basis}",
-    "table": "Recompensas de clasificación",
-    "rank": "Puesto",
-    "starChange": "Cambio de estrellas",
-    "rewards": "Recompensas"
-  },
-  "rewards": {
-    "title": "Recompensas",
-    "partial": "Esta lista de recompensas no está completa.",
-    "amountName": "{amount} {name}"
-  },
-  "pointLevels": {
-    "title": "Niveles de puntos",
-    "table": "Niveles de puntos",
-    "level": "Nivel",
-    "personal": "Puntos personales",
-    "alliance": "Puntos de alianza",
-    "rewards": "Recompensas"
-  },
-  "waves": {
-    "title": "Oleadas",
-    "table": "Oleadas de ataque",
-    "wave": "Oleada",
-    "target": "Objetivo",
-    "rule": "Regla",
-    "city": "Ciudad",
-    "headquarters": "Cuartel general"
-  },
-  "zones": {
-    "title": "Zonas",
-    "table": "Zonas del evento",
-    "zone": "Zona",
-    "days": "Días",
-    "statSources": "Fuentes de estadísticas",
-    "unlock": "Desbloqueo"
-  },
-  "shop": {
-    "title": "Tienda",
-    "titleNamed": "Tienda: {name}",
-    "table": "Ofertas de la tienda",
-    "offer": "Oferta",
-    "cost": "Coste",
-    "costValue": "{amount} {currency}",
-    "limit": "Límite",
-    "contents": "Contenido"
-  },
-  "versions": {
-    "title": "{name}",
-    "missions": "Misiones",
-    "chests": "Cofres"
-  },
-  "tips": {
-    "title": "Consejos"
-  },
-  "recordLine": "Evento de {category} con sus fases, puntuación, recompensas y clasificaciones."
+    "line": "{events} eventos: {alliance} de alianza, {solo} individuales, {rookie} de novatos y {holiday} festivos. Fases, puntuación, recompensas, consejos, tiendas y clasificaciones donde el paquete los tiene.",
+    "list": {
+        "title": "Eventos",
+        "showing": "Mostrando {shown} de {total}",
+        "search": "Buscar",
+        "searchPlaceholder": "Buscar eventos por nombre",
+        "scoringFilter": "Puntuación",
+        "categoryLabel": "Categoría",
+        "all": "Todos",
+        "table": "Eventos",
+        "event": "Evento",
+        "category": "Categoría",
+        "frequency": "Frecuencia (texto libre)",
+        "duration": "Duración (texto libre)",
+        "scoringRows": "Filas de puntuación",
+        "noScoringRows": "Sin filas de puntuación",
+        "emptyTitle": "Ningún evento coincide",
+        "emptyDescription": "Cambia la búsqueda, la categoría o la puntuación."
+    },
+    "category": {
+        "alliance": "Alianza",
+        "solo": "Individual",
+        "rookie": "Novato",
+        "holiday": "Festivo"
+    },
+    "scoring": {
+        "any": "Cualquier puntuación",
+        "ranking": "Clasificación",
+        "tier": "Tiers",
+        "milestones": "Hitos",
+        "waves": "Oleadas",
+        "participation": "Participación"
+    },
+    "parts": {
+        "days": "{count, plural, one {{amount} día} other {{amount} días}}",
+        "tiers": "{count, plural, one {{amount} tier} other {{amount} tiers}}",
+        "missions": "{count, plural, one {{amount} misión} other {{amount} misiones}}",
+        "waves": "{count, plural, one {{amount} oleada} other {{amount} oleadas}}",
+        "versions": "{count, plural, one {{amount} versión} other {{amount} versiones}}",
+        "levels": "{count, plural, one {{amount} nivel} other {{amount} niveles}}"
+    },
+    "detail": {
+        "title": "Detalles",
+        "category": "Categoría",
+        "frequency": "Frecuencia",
+        "duration": "Duración",
+        "summary": "Resumen",
+        "requirements": "Requisitos",
+        "scoring": "Puntuación",
+        "noRequirements": "Ninguno"
+    },
+    "phases": {
+        "title": "Fases",
+        "table": "Fases del evento",
+        "phase": "Fase",
+        "description": "Descripción"
+    },
+    "scoringRows": {
+        "title": "Filas de puntuación: {name}",
+        "table": "Acciones que puntúan",
+        "action": "Acción",
+        "points": "Puntos",
+        "victoryPoints": "{amount} puntos de victoria",
+        "milestones": "Hitos de {name}",
+        "allianceMilestones": "Hitos de alianza de {name}"
+    },
+    "missions": {
+        "title": "Misiones",
+        "table": "Misiones del evento",
+        "mission": "Misión",
+        "group": "Grupo",
+        "points": "Puntos",
+        "rewards": "Recompensas"
+    },
+    "tiers": {
+        "title": "Tiers",
+        "table": "Tiers del evento",
+        "tier": "Tier",
+        "score": "Objetivo",
+        "scoreValue": "{amount} {unit}",
+        "scoreValuePoints": "{amount} puntos",
+        "rewards": "Recompensas",
+        "note": "Nota"
+    },
+    "rankings": {
+        "title": "Recompensas de clasificación",
+        "personal": "Recompensas de clasificación personal",
+        "alliance": "Recompensas de clasificación de alianza",
+        "basedOn": "Recompensas de clasificación según {basis}",
+        "table": "Recompensas de clasificación",
+        "rank": "Puesto",
+        "starChange": "Cambio de estrellas",
+        "rewards": "Recompensas"
+    },
+    "rewards": {
+        "title": "Recompensas",
+        "partial": "Esta lista de recompensas no está completa.",
+        "amountName": "{amount} {name}"
+    },
+    "pointLevels": {
+        "title": "Niveles de puntos",
+        "table": "Niveles de puntos",
+        "level": "Nivel",
+        "personal": "Puntos personales",
+        "alliance": "Puntos de alianza",
+        "rewards": "Recompensas"
+    },
+    "waves": {
+        "title": "Oleadas",
+        "table": "Oleadas de ataque",
+        "wave": "Oleada",
+        "target": "Objetivo",
+        "rule": "Regla",
+        "city": "Ciudad",
+        "headquarters": "Cuartel general"
+    },
+    "zones": {
+        "title": "Zonas",
+        "table": "Zonas del evento",
+        "zone": "Zona",
+        "days": "Días",
+        "statSources": "Fuentes de estadísticas",
+        "unlock": "Desbloqueo"
+    },
+    "shop": {
+        "title": "Tienda",
+        "titleNamed": "Tienda: {name}",
+        "table": "Ofertas de la tienda",
+        "offer": "Oferta",
+        "cost": "Coste",
+        "costValue": "{amount} {currency}",
+        "limit": "Límite",
+        "contents": "Contenido"
+    },
+    "versions": {
+        "title": "{name}",
+        "missions": "Misiones",
+        "chests": "Cofres"
+    },
+    "tips": {
+        "title": "Consejos"
+    },
+    "recordLine": "Evento de {category} con sus fases, puntuación, recompensas y clasificaciones."
 }

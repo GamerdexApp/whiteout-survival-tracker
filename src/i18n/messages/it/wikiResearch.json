@@ -1,77 +1,77 @@
 {
-  "line": "{nodes} nodi di ricerca in {tabs} schede. Solo riferimento, qui nulla viene salvato.",
-  "tabsLabel": "Categorie di ricerca",
-  "tabs": {
-    "battle": "Battaglia",
-    "growth": "Crescita",
-    "economy": "Economia",
-    "t11": "T11",
-    "t12": "T12"
-  },
-  "search": {
-    "label": "Cerca",
-    "placeholder": "Cerca tra {amount} nodi di ricerca"
-  },
-  "filters": {
-    "tier": "Grado",
-    "allTiers": "Tutti",
-    "tierOption": "Grado {tier}",
-    "troop": "Tipo di truppa",
-    "allTroops": "Tutti",
-    "troops": {
-      "Infantry": "Fanteria",
-      "Marksman": "Tiratore",
-      "Lancer": "Lanciere"
+    "line": "{nodes} nodi di ricerca in {tabs} schede. Solo riferimento, qui nulla viene salvato.",
+    "tabsLabel": "Categorie di ricerca",
+    "tabs": {
+        "battle": "Battaglia",
+        "growth": "Crescita",
+        "economy": "Economia",
+        "t11": "T11",
+        "t12": "T12"
     },
-    "data": "Dati",
-    "dataOptions": {
-      "all": "Tutti i nodi",
-      "placeholders": "Segnaposto",
-      "missingTime": "Tempo mancante"
+    "search": {
+        "label": "Cerca",
+        "placeholder": "Cerca tra {amount} nodi di ricerca"
+    },
+    "filters": {
+        "tier": "Grado",
+        "allTiers": "Tutti",
+        "tierOption": "Grado {tier}",
+        "troop": "Tipo di truppa",
+        "allTroops": "Tutti",
+        "troops": {
+            "Infantry": "Fanteria",
+            "Marksman": "Tiratore",
+            "Lancer": "Lanciere"
+        },
+        "data": "Dati",
+        "dataOptions": {
+            "all": "Tutti i nodi",
+            "placeholders": "Segnaposto",
+            "missingTime": "Tempo mancante"
+        }
+    },
+    "list": {
+        "title": "Nodi",
+        "empty": "Nessun nodo di ricerca corrisponde a questa ricerca.",
+        "emptyHint": "Cancella la ricerca o un filtro.",
+        "columns": {
+            "node": "Nodo",
+            "tier": "Grado",
+            "levels": "Livelli",
+            "bonus": "Bonus al livello 1",
+            "time": "Tempo, livello 1",
+            "power": "Potenza"
+        },
+        "mobileMeta": "{category}, grado {tier}, {levels}",
+        "count": "{count, plural, one {{amount} nodo} other {{amount} nodi}}"
+    },
+    "levels": "{count, plural, one {{amount} livello} other {{amount} livelli}}",
+    "detail": {
+        "columns": {
+            "level": "Livello",
+            "requires": "Richiede",
+            "cost": "Costo",
+            "time": "Tempo",
+            "bonus": "Bonus",
+            "power": "Potenza"
+        },
+        "level": "Livello {level}",
+        "none": "Nessuno",
+        "placeholderNote": "Questo nodo è un segnaposto. Il pacchetto non ha costo né bonus per esso.",
+        "requirement": {
+            "building": "{name} {level}",
+            "research": "{name} livello {level}"
+        },
+        "levelsTitle": "Livelli"
+    },
+    "view": {
+        "label": "Vista",
+        "list": "Elenco",
+        "tree": "Albero"
+    },
+    "tree": {
+        "region": "Albero di ricerca {tab}",
+        "openNode": "{name}, {levels}",
+        "tier": "T{tier}"
     }
-  },
-  "list": {
-    "title": "Nodi",
-    "empty": "Nessun nodo di ricerca corrisponde a questa ricerca.",
-    "emptyHint": "Cancella la ricerca o un filtro.",
-    "columns": {
-      "node": "Nodo",
-      "tier": "Grado",
-      "levels": "Livelli",
-      "bonus": "Bonus al livello 1",
-      "time": "Tempo, livello 1",
-      "power": "Potenza"
-    },
-    "mobileMeta": "{category}, grado {tier}, {levels}",
-    "count": "{count, plural, one {{amount} nodo} other {{amount} nodi}}"
-  },
-  "levels": "{count, plural, one {{amount} livello} other {{amount} livelli}}",
-  "detail": {
-    "columns": {
-      "level": "Livello",
-      "requires": "Richiede",
-      "cost": "Costo",
-      "time": "Tempo",
-      "bonus": "Bonus",
-      "power": "Potenza"
-    },
-    "level": "Livello {level}",
-    "none": "Nessuno",
-    "placeholderNote": "Questo nodo è un segnaposto. Il pacchetto non ha costo né bonus per esso.",
-    "requirement": {
-      "building": "{name} {level}",
-      "research": "{name} livello {level}"
-    },
-    "levelsTitle": "Livelli"
-  },
-  "view": {
-    "label": "Vista",
-    "list": "Elenco",
-    "tree": "Albero"
-  },
-  "tree": {
-    "region": "Albero di ricerca {tab}",
-    "openNode": "{name}, {levels}",
-    "tier": "T{tier}"
-  }
 }

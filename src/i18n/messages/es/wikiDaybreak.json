@@ -1,69 +1,69 @@
 {
-  "line": "Tablas de niveles del Lumber Camp y el Tree of Life, y {decorations} decoraciones por categoría con costes, prosperidad y mejoras.",
-  "lumberCamp": {
-    "title": "Lumber Camp",
-    "levels": "{count, plural, one {{amount} nivel} other {{amount} niveles}}",
-    "table": "Niveles del Lumber Camp",
-    "level": "Nivel",
-    "workers": "Trabajadores",
-    "perSecond": "Por s",
-    "treeLevel": "Nivel del árbol",
-    "lifeEssence": "Life Essence"
-  },
-  "tree": {
-    "title": "Tree of Life",
-    "table": "Niveles del Tree of Life",
-    "level": "Nivel",
-    "prosperity": "Prosperidad",
-    "lifeEssence": "Life Essence",
-    "perHour": "Por hora",
-    "buff": "Mejora"
-  },
-  "decorations": {
-    "title": "Decoraciones",
-    "showing": "Mostrando {shown} de {total}",
-    "search": "Buscar",
-    "searchPlaceholder": "Buscar decoraciones por nombre o mejora",
-    "categoryLabel": "Categoría",
-    "all": "Todas",
-    "costFilter": "Tipo de coste",
-    "table": "Decoraciones",
-    "name": "Decoración",
-    "category": "Categoría",
-    "limit": "Límite",
-    "levels": "Niveles",
-    "cost": "Coste",
-    "prosperityAtMax": "Prosperidad al máximo",
-    "buffAtMax": "Mejora al nivel máximo",
-    "emptyTitle": "Ninguna decoración coincide",
-    "emptyDescription": "Cambia la búsqueda, la categoría o el tipo de coste."
-  },
-  "costFilter": {
-    "any": "Cualquier coste",
-    "lifeEssence": "Life Essence",
-    "items": "Recursos",
-    "limited": "Limitadas",
-    "unknown": "Coste no incluido en los datos"
-  },
-  "cost": {
-    "lifeEssence": "{amount} de Life Essence",
-    "limited": "Ninguno, decoración limitada"
-  },
-  "detail": {
-    "title": "Detalles",
-    "category": "Categoría",
-    "limit": "Límite",
-    "cost": "Coste",
-    "levels": "Niveles",
-    "image": "Imagen",
-    "imageMissing": "Ninguna",
-    "levelsTitle": "Niveles de {name}",
-    "levelsMeta": "{count, plural, one {{amount} nivel} other {{amount} niveles}}",
-    "levelsTable": "Niveles de la decoración",
-    "level": "Nivel",
-    "levelCost": "Coste",
-    "prosperity": "Prosperidad",
-    "buff": "Mejora",
-    "noLevels": "Los datos no tienen tabla de niveles para esta decoración."
-  }
+    "line": "Tablas de niveles del Lumber Camp y el Tree of Life, y {decorations} decoraciones por categoría con costes, prosperidad y mejoras.",
+    "lumberCamp": {
+        "title": "Lumber Camp",
+        "levels": "{count, plural, one {{amount} nivel} other {{amount} niveles}}",
+        "table": "Niveles del Lumber Camp",
+        "level": "Nivel",
+        "workers": "Trabajadores",
+        "perSecond": "Por s",
+        "treeLevel": "Nivel del árbol",
+        "lifeEssence": "Life Essence"
+    },
+    "tree": {
+        "title": "Tree of Life",
+        "table": "Niveles del Tree of Life",
+        "level": "Nivel",
+        "prosperity": "Prosperidad",
+        "lifeEssence": "Life Essence",
+        "perHour": "Por hora",
+        "buff": "Mejora"
+    },
+    "decorations": {
+        "title": "Decoraciones",
+        "showing": "Mostrando {shown} de {total}",
+        "search": "Buscar",
+        "searchPlaceholder": "Buscar decoraciones por nombre o mejora",
+        "categoryLabel": "Categoría",
+        "all": "Todas",
+        "costFilter": "Tipo de coste",
+        "table": "Decoraciones",
+        "name": "Decoración",
+        "category": "Categoría",
+        "limit": "Límite",
+        "levels": "Niveles",
+        "cost": "Coste",
+        "prosperityAtMax": "Prosperidad al máximo",
+        "buffAtMax": "Mejora al nivel máximo",
+        "emptyTitle": "Ninguna decoración coincide",
+        "emptyDescription": "Cambia la búsqueda, la categoría o el tipo de coste."
+    },
+    "costFilter": {
+        "any": "Cualquier coste",
+        "lifeEssence": "Life Essence",
+        "items": "Recursos",
+        "limited": "Limitadas",
+        "unknown": "Coste no incluido en los datos"
+    },
+    "cost": {
+        "lifeEssence": "{amount} de Life Essence",
+        "limited": "Ninguno, decoración limitada"
+    },
+    "detail": {
+        "title": "Detalles",
+        "category": "Categoría",
+        "limit": "Límite",
+        "cost": "Coste",
+        "levels": "Niveles",
+        "image": "Imagen",
+        "imageMissing": "Ninguna",
+        "levelsTitle": "Niveles de {name}",
+        "levelsMeta": "{count, plural, one {{amount} nivel} other {{amount} niveles}}",
+        "levelsTable": "Niveles de la decoración",
+        "level": "Nivel",
+        "levelCost": "Coste",
+        "prosperity": "Prosperidad",
+        "buff": "Mejora",
+        "noLevels": "Los datos no tienen tabla de niveles para esta decoración."
+    }
 }

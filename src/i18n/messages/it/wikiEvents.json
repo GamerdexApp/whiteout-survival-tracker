@@ -1,145 +1,145 @@
 {
-  "line": "{events} eventi: {alliance} di alleanza, {solo} singoli, {rookie} per novizi e {holiday} festivi. Fasi, punteggi, ricompense, consigli, negozi e classifiche dove il pacchetto li ha.",
-  "list": {
-    "title": "Eventi",
-    "showing": "Mostrati {shown} su {total}",
-    "search": "Cerca",
-    "searchPlaceholder": "Cerca eventi per nome",
-    "scoringFilter": "Punteggio",
-    "categoryLabel": "Categoria",
-    "all": "Tutti",
-    "table": "Eventi",
-    "event": "Evento",
-    "category": "Categoria",
-    "frequency": "Frequenza (testo libero)",
-    "duration": "Durata (testo libero)",
-    "scoringRows": "Righe di punteggio",
-    "noScoringRows": "Nessuna riga di punteggio",
-    "emptyTitle": "Nessun evento corrisponde",
-    "emptyDescription": "Cambia la ricerca, la categoria o il punteggio."
-  },
-  "category": {
-    "alliance": "Alleanza",
-    "solo": "Singolo",
-    "rookie": "Novizi",
-    "holiday": "Festività"
-  },
-  "scoring": {
-    "any": "Qualsiasi punteggio",
-    "ranking": "Classifica",
-    "tier": "Gradi",
-    "milestones": "Traguardi",
-    "waves": "Ondate",
-    "participation": "Partecipazione"
-  },
-  "parts": {
-    "days": "{count, plural, one {{amount} giorno} other {{amount} giorni}}",
-    "tiers": "{count, plural, one {{amount} grado} other {{amount} gradi}}",
-    "missions": "{count, plural, one {{amount} missione} other {{amount} missioni}}",
-    "waves": "{count, plural, one {{amount} ondata} other {{amount} ondate}}",
-    "versions": "{count, plural, one {{amount} versione} other {{amount} versioni}}",
-    "levels": "{count, plural, one {{amount} livello} other {{amount} livelli}}"
-  },
-  "detail": {
-    "title": "Dettagli",
-    "category": "Categoria",
-    "frequency": "Frequenza",
-    "duration": "Durata",
-    "summary": "Riepilogo",
-    "requirements": "Requisiti",
-    "scoring": "Punteggio",
-    "noRequirements": "Nessuno"
-  },
-  "phases": {
-    "title": "Fasi",
-    "table": "Fasi dell'evento",
-    "phase": "Fase",
-    "description": "Descrizione"
-  },
-  "scoringRows": {
-    "title": "Righe di punteggio: {name}",
-    "table": "Azioni con punteggio",
-    "action": "Azione",
-    "points": "Punti",
-    "victoryPoints": "{amount} punti vittoria",
-    "milestones": "Traguardi di {name}",
-    "allianceMilestones": "Traguardi dell'alleanza di {name}"
-  },
-  "missions": {
-    "title": "Missioni",
-    "table": "Missioni dell'evento",
-    "mission": "Missione",
-    "group": "Gruppo",
-    "points": "Punti",
-    "rewards": "Ricompense"
-  },
-  "tiers": {
-    "title": "Gradi",
-    "table": "Gradi dell'evento",
-    "tier": "Grado",
-    "score": "Obiettivo",
-    "scoreValue": "{amount} {unit}",
-    "scoreValuePoints": "{amount} punti",
-    "rewards": "Ricompense",
-    "note": "Nota"
-  },
-  "rankings": {
-    "title": "Ricompense di classifica",
-    "personal": "Ricompense della classifica personale",
-    "alliance": "Ricompense della classifica dell'alleanza",
-    "basedOn": "Ricompense di classifica basate su {basis}",
-    "table": "Ricompense di classifica",
-    "rank": "Posizione",
-    "starChange": "Variazione di stelle",
-    "rewards": "Ricompense"
-  },
-  "rewards": {
-    "title": "Ricompense",
-    "partial": "Questo elenco di ricompense non è completo.",
-    "amountName": "{amount} {name}"
-  },
-  "pointLevels": {
-    "title": "Livelli di punti",
-    "table": "Livelli di punti",
-    "level": "Livello",
-    "personal": "Punti personali",
-    "alliance": "Punti alleanza",
-    "rewards": "Ricompense"
-  },
-  "waves": {
-    "title": "Ondate",
-    "table": "Ondate di attacco",
-    "wave": "Ondata",
-    "target": "Obiettivo",
-    "rule": "Regola",
-    "city": "Città",
-    "headquarters": "Quartier generale"
-  },
-  "zones": {
-    "title": "Zone",
-    "table": "Zone dell'evento",
-    "zone": "Zona",
-    "days": "Giorni",
-    "statSources": "Fonti delle statistiche",
-    "unlock": "Sblocco"
-  },
-  "shop": {
-    "title": "Negozio",
-    "titleNamed": "Negozio: {name}",
-    "table": "Offerte del negozio",
-    "offer": "Offerta",
-    "cost": "Costo",
-    "costValue": "{amount} {currency}",
-    "limit": "Limite",
-    "contents": "Contenuto"
-  },
-  "versions": {
-    "title": "{name}",
-    "missions": "Missioni",
-    "chests": "Forzieri"
-  },
-  "tips": {
-    "title": "Consigli"
-  },
-  "recordLine": "Evento {category} con fasi, punteggi, ricompense e classifiche."
+    "line": "{events} eventi: {alliance} di alleanza, {solo} singoli, {rookie} per novizi e {holiday} festivi. Fasi, punteggi, ricompense, consigli, negozi e classifiche dove il pacchetto li ha.",
+    "list": {
+        "title": "Eventi",
+        "showing": "Mostrati {shown} su {total}",
+        "search": "Cerca",
+        "searchPlaceholder": "Cerca eventi per nome",
+        "scoringFilter": "Punteggio",
+        "categoryLabel": "Categoria",
+        "all": "Tutti",
+        "table": "Eventi",
+        "event": "Evento",
+        "category": "Categoria",
+        "frequency": "Frequenza (testo libero)",
+        "duration": "Durata (testo libero)",
+        "scoringRows": "Righe di punteggio",
+        "noScoringRows": "Nessuna riga di punteggio",
+        "emptyTitle": "Nessun evento corrisponde",
+        "emptyDescription": "Cambia la ricerca, la categoria o il punteggio."
+    },
+    "category": {
+        "alliance": "Alleanza",
+        "solo": "Singolo",
+        "rookie": "Novizi",
+        "holiday": "Festività"
+    },
+    "scoring": {
+        "any": "Qualsiasi punteggio",
+        "ranking": "Classifica",
+        "tier": "Gradi",
+        "milestones": "Traguardi",
+        "waves": "Ondate",
+        "participation": "Partecipazione"
+    },
+    "parts": {
+        "days": "{count, plural, one {{amount} giorno} other {{amount} giorni}}",
+        "tiers": "{count, plural, one {{amount} grado} other {{amount} gradi}}",
+        "missions": "{count, plural, one {{amount} missione} other {{amount} missioni}}",
+        "waves": "{count, plural, one {{amount} ondata} other {{amount} ondate}}",
+        "versions": "{count, plural, one {{amount} versione} other {{amount} versioni}}",
+        "levels": "{count, plural, one {{amount} livello} other {{amount} livelli}}"
+    },
+    "detail": {
+        "title": "Dettagli",
+        "category": "Categoria",
+        "frequency": "Frequenza",
+        "duration": "Durata",
+        "summary": "Riepilogo",
+        "requirements": "Requisiti",
+        "scoring": "Punteggio",
+        "noRequirements": "Nessuno"
+    },
+    "phases": {
+        "title": "Fasi",
+        "table": "Fasi dell'evento",
+        "phase": "Fase",
+        "description": "Descrizione"
+    },
+    "scoringRows": {
+        "title": "Righe di punteggio: {name}",
+        "table": "Azioni con punteggio",
+        "action": "Azione",
+        "points": "Punti",
+        "victoryPoints": "{amount} punti vittoria",
+        "milestones": "Traguardi di {name}",
+        "allianceMilestones": "Traguardi dell'alleanza di {name}"
+    },
+    "missions": {
+        "title": "Missioni",
+        "table": "Missioni dell'evento",
+        "mission": "Missione",
+        "group": "Gruppo",
+        "points": "Punti",
+        "rewards": "Ricompense"
+    },
+    "tiers": {
+        "title": "Gradi",
+        "table": "Gradi dell'evento",
+        "tier": "Grado",
+        "score": "Obiettivo",
+        "scoreValue": "{amount} {unit}",
+        "scoreValuePoints": "{amount} punti",
+        "rewards": "Ricompense",
+        "note": "Nota"
+    },
+    "rankings": {
+        "title": "Ricompense di classifica",
+        "personal": "Ricompense della classifica personale",
+        "alliance": "Ricompense della classifica dell'alleanza",
+        "basedOn": "Ricompense di classifica basate su {basis}",
+        "table": "Ricompense di classifica",
+        "rank": "Posizione",
+        "starChange": "Variazione di stelle",
+        "rewards": "Ricompense"
+    },
+    "rewards": {
+        "title": "Ricompense",
+        "partial": "Questo elenco di ricompense non è completo.",
+        "amountName": "{amount} {name}"
+    },
+    "pointLevels": {
+        "title": "Livelli di punti",
+        "table": "Livelli di punti",
+        "level": "Livello",
+        "personal": "Punti personali",
+        "alliance": "Punti alleanza",
+        "rewards": "Ricompense"
+    },
+    "waves": {
+        "title": "Ondate",
+        "table": "Ondate di attacco",
+        "wave": "Ondata",
+        "target": "Obiettivo",
+        "rule": "Regola",
+        "city": "Città",
+        "headquarters": "Quartier generale"
+    },
+    "zones": {
+        "title": "Zone",
+        "table": "Zone dell'evento",
+        "zone": "Zona",
+        "days": "Giorni",
+        "statSources": "Fonti delle statistiche",
+        "unlock": "Sblocco"
+    },
+    "shop": {
+        "title": "Negozio",
+        "titleNamed": "Negozio: {name}",
+        "table": "Offerte del negozio",
+        "offer": "Offerta",
+        "cost": "Costo",
+        "costValue": "{amount} {currency}",
+        "limit": "Limite",
+        "contents": "Contenuto"
+    },
+    "versions": {
+        "title": "{name}",
+        "missions": "Missioni",
+        "chests": "Forzieri"
+    },
+    "tips": {
+        "title": "Consigli"
+    },
+    "recordLine": "Evento {category} con fasi, punteggi, ricompense e classifiche."
 }

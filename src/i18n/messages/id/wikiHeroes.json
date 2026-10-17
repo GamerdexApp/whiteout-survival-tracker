@@ -1,99 +1,99 @@
 {
-  "line": "{heroes} pahlawan dan {widgets} level widget. Hanya referensi, tidak ada yang disimpan.",
-  "roster": {
-    "title": "Daftar",
-    "count": "{shown} dari {total} pahlawan",
-    "search": "Cari",
-    "searchPlaceholder": "Cari {count} pahlawan",
-    "generation": "Generasi",
-    "rarity": "Kelangkaan",
-    "class": "Kelas",
-    "subClass": "Subkelas",
-    "all": "Semua",
-    "empty": "Tidak ada pahlawan yang cocok dengan filter.",
-    "columns": {
-      "hero": "Pahlawan",
-      "generation": "Gen",
-      "rarity": "Kelangkaan",
-      "class": "Kelas",
-      "subClass": "Subkelas",
-      "power": "Kekuatan, 5 bintang",
-      "weapon": "Senjata eksklusif"
+    "line": "{heroes} pahlawan dan {widgets} level widget. Hanya referensi, tidak ada yang disimpan.",
+    "roster": {
+        "title": "Daftar",
+        "count": "{shown} dari {total} pahlawan",
+        "search": "Cari",
+        "searchPlaceholder": "Cari {count} pahlawan",
+        "generation": "Generasi",
+        "rarity": "Kelangkaan",
+        "class": "Kelas",
+        "subClass": "Subkelas",
+        "all": "Semua",
+        "empty": "Tidak ada pahlawan yang cocok dengan filter.",
+        "columns": {
+            "hero": "Pahlawan",
+            "generation": "Gen",
+            "rarity": "Kelangkaan",
+            "class": "Kelas",
+            "subClass": "Subkelas",
+            "power": "Kekuatan, 5 bintang",
+            "weapon": "Senjata eksklusif"
+        },
+        "none": "Tidak ada"
     },
-    "none": "Tidak ada"
-  },
-  "detail": {
-    "generation": "Generasi {generation}",
-    "source": "Sumber: {sources}",
-    "noSource": "Sumber: Tidak diketahui",
-    "explorationAttack": "Serangan eksplorasi",
-    "explorationDefense": "Pertahanan eksplorasi",
-    "explorationHealth": "Darah eksplorasi",
-    "expeditionAttack": "Serangan ekspedisi",
-    "expeditionDefense": "Pertahanan ekspedisi",
-    "powerAtLevel80": "Kekuatan di level 80",
-    "powerAtFiveStars": "Kekuatan di 5 bintang",
-    "powerAtZeroStars": "Kekuatan di 0 bintang",
-    "powerMissing": "Kekuatan untuk level pahlawan dan pecahan belum ada untuk Generasi 6 ke atas. Tampil sebagai Tidak diketahui sampai datanya didapat."
-  },
-  "skills": {
-    "title": "Skill",
-    "count": "{count, plural, other {{amount} skill}}",
-    "branch": {
-      "exploration": "Eksplorasi",
-      "expedition": "Ekspedisi",
-      "talent": "Bakat"
+    "detail": {
+        "generation": "Generasi {generation}",
+        "source": "Sumber: {sources}",
+        "noSource": "Sumber: Tidak diketahui",
+        "explorationAttack": "Serangan eksplorasi",
+        "explorationDefense": "Pertahanan eksplorasi",
+        "explorationHealth": "Darah eksplorasi",
+        "expeditionAttack": "Serangan ekspedisi",
+        "expeditionDefense": "Pertahanan ekspedisi",
+        "powerAtLevel80": "Kekuatan di level 80",
+        "powerAtFiveStars": "Kekuatan di 5 bintang",
+        "powerAtZeroStars": "Kekuatan di 0 bintang",
+        "powerMissing": "Kekuatan untuk level pahlawan dan pecahan belum ada untuk Generasi 6 ke atas. Tampil sebagai Tidak diketahui sampai datanya didapat."
+    },
+    "skills": {
+        "title": "Skill",
+        "count": "{count, plural, other {{amount} skill}}",
+        "branch": {
+            "exploration": "Eksplorasi",
+            "expedition": "Ekspedisi",
+            "talent": "Bakat"
+        },
+        "levels": {
+            "columns": {
+                "level": "Level",
+                "star": "Bintang dibutuhkan",
+                "manuals": "Manual",
+                "power": "Tambahan kekuatan",
+                "effects": "Efek"
+            },
+            "effect": {
+                "percentOfAttack": "{name} {amount}% dari Serangan",
+                "percent": "{name} {amount}%",
+                "seconds": "{name} {amount} dtk",
+                "number": "{name} {amount}"
+            }
+        }
+    },
+    "shards": {
+        "title": "Biaya pecahan per bintang",
+        "columns": {
+            "star": "Bintang",
+            "tiers": "Pecahan per tier",
+            "total": "Total",
+            "power": "Kekuatan di bintang ini"
+        },
+        "star": "{star} bintang"
+    },
+    "weapon": {
+        "title": "Senjata eksklusif",
+        "power": "Kekuatan senjata",
+        "exploration": "Eksplorasi serangan / pertahanan / darah",
+        "expedition": "Ekspedisi lethality / darah",
+        "unlocksAt": "terbuka di level senjata {level}",
+        "levelsTitle": "Level senjata",
+        "columns": {
+            "level": "Level senjata",
+            "power": "Kekuatan",
+            "widgets": "Widget"
+        },
+        "level": "Level {level}"
     },
     "levels": {
-      "columns": {
-        "level": "Level",
-        "star": "Bintang dibutuhkan",
-        "manuals": "Manual",
-        "power": "Tambahan kekuatan",
-        "effects": "Efek"
-      },
-      "effect": {
-        "percentOfAttack": "{name} {amount}% dari Serangan",
-        "percent": "{name} {amount}%",
-        "seconds": "{name} {amount} dtk",
-        "number": "{name} {amount}"
-      }
-    }
-  },
-  "shards": {
-    "title": "Biaya pecahan per bintang",
-    "columns": {
-      "star": "Bintang",
-      "tiers": "Pecahan per tier",
-      "total": "Total",
-      "power": "Kekuatan di bintang ini"
+        "title": "Level pahlawan",
+        "columns": {
+            "level": "Level pahlawan",
+            "furnace": "Syarat",
+            "xp": "XP untuk mencapai",
+            "power": "Kekuatan"
+        },
+        "level": "Level {level}",
+        "furnace": "Furnace {level}"
     },
-    "star": "{star} bintang"
-  },
-  "weapon": {
-    "title": "Senjata eksklusif",
-    "power": "Kekuatan senjata",
-    "exploration": "Eksplorasi serangan / pertahanan / darah",
-    "expedition": "Ekspedisi lethality / darah",
-    "unlocksAt": "terbuka di level senjata {level}",
-    "levelsTitle": "Level senjata",
-    "columns": {
-      "level": "Level senjata",
-      "power": "Kekuatan",
-      "widgets": "Widget"
-    },
-    "level": "Level {level}"
-  },
-  "levels": {
-    "title": "Level pahlawan",
-    "columns": {
-      "level": "Level pahlawan",
-      "furnace": "Syarat",
-      "xp": "XP untuk mencapai",
-      "power": "Kekuatan"
-    },
-    "level": "Level {level}",
-    "furnace": "Furnace {level}"
-  },
-  "recordLine": "{heroClass} {rarity}, generasi {generation}. Hanya referensi, tidak ada yang disimpan."
+    "recordLine": "{heroClass} {rarity}, generasi {generation}. Hanya referensi, tidak ada yang disimpan."
 }

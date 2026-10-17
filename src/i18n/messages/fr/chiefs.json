@@ -1,117 +1,117 @@
 {
-  "unknown": "Inconnu",
-  "describe": {
-    "state": "État {number}",
-    "empty": "Aucun détail"
-  },
-  "coreEvents": {
-    "svs": "SvS",
-    "showdown": "Alliance Showdown",
-    "king": "King of Icefield",
-    "hall": "Hall of Chief"
-  },
-  "count": "{count, plural, one {{amount} chef} other {{amount} chefs}}",
-  "card": {
-    "active": "Actif",
-    "noNotes": "Aucune note",
-    "furnace": "Furnace",
-    "state": "État",
-    "created": "Créé le : {date}",
-    "lastModified": "Dernière modification : {date}",
-    "setActive": "Définir comme actif",
-    "edit": "Modifier",
-    "delete": "Supprimer"
-  },
-  "dialog": {
-    "editTitle": "Modifier le chef",
-    "newTitle": "Nouveau chef",
-    "newDescription": "Donnez-lui un nom. Le reste est facultatif.",
-    "cancel": "Annuler",
-    "save": "Enregistrer les modifications",
-    "create": "Créer le chef",
-    "errors": {
-      "name": "Saisissez un nom pour ce chef.",
-      "stateNumber": "Saisissez un nombre entier de 1 à {max}.",
-      "serverStartDate": "Saisissez une date qui n'est pas dans le futur."
+    "unknown": "Inconnu",
+    "describe": {
+        "state": "État {number}",
+        "empty": "Aucun détail"
     },
-    "name": "Nom",
-    "stateNumber": {
-      "label": "Numéro d'état",
-      "hint": "L'état où vit votre chef. Nombre entier."
+    "coreEvents": {
+        "svs": "SvS",
+        "showdown": "Alliance Showdown",
+        "king": "King of Icefield",
+        "hall": "Hall of Chief"
     },
-    "serverStartDate": {
-      "label": "Date de lancement du serveur",
-      "info": {
-        "label": "Où trouver la date de lancement du serveur",
-        "screen": "Ouvrez le jeu et allez à l'écran Serveur depuis votre profil.",
-        "date": "Lisez la date d'ouverture du serveur. Si seul le numéro du jour du serveur s'affiche, comptez ce nombre de jours en arrière à partir d'aujourd'hui.",
-        "missing": "Pas de date à l'écran ? Demandez au chef de votre alliance ou consultez le chat de l'état.",
-        "tolerance": "Une date à 21 jours près suffit. Les déblocages de recherche utilisent 150 et 600 jours, donc trois semaines d'erreur changent rarement le résultat."
-      }
+    "count": "{count, plural, one {{amount} chef} other {{amount} chefs}}",
+    "card": {
+        "active": "Actif",
+        "noNotes": "Aucune note",
+        "furnace": "Furnace",
+        "state": "État",
+        "created": "Créé le : {date}",
+        "lastModified": "Dernière modification : {date}",
+        "setActive": "Définir comme actif",
+        "edit": "Modifier",
+        "delete": "Supprimer"
     },
-    "generation": {
-      "label": "Héros débloqués jusqu'à",
-      "hint": "Les héros des générations suivantes restent masqués sur la page Héros et dans Plan.",
-      "preLegendary": "Génération 0 (avant Legendary)",
-      "numbered": "Génération {generation}"
+    "dialog": {
+        "editTitle": "Modifier le chef",
+        "newTitle": "Nouveau chef",
+        "newDescription": "Donnez-lui un nom. Le reste est facultatif.",
+        "cancel": "Annuler",
+        "save": "Enregistrer les modifications",
+        "create": "Créer le chef",
+        "errors": {
+            "name": "Saisissez un nom pour ce chef.",
+            "stateNumber": "Saisissez un nombre entier de 1 à {max}.",
+            "serverStartDate": "Saisissez une date qui n'est pas dans le futur."
+        },
+        "name": "Nom",
+        "stateNumber": {
+            "label": "Numéro d'état",
+            "hint": "L'état où vit votre chef. Nombre entier."
+        },
+        "serverStartDate": {
+            "label": "Date de lancement du serveur",
+            "info": {
+                "label": "Où trouver la date de lancement du serveur",
+                "screen": "Ouvrez le jeu et allez à l'écran Serveur depuis votre profil.",
+                "date": "Lisez la date d'ouverture du serveur. Si seul le numéro du jour du serveur s'affiche, comptez ce nombre de jours en arrière à partir d'aujourd'hui.",
+                "missing": "Pas de date à l'écran ? Demandez au chef de votre alliance ou consultez le chat de l'état.",
+                "tolerance": "Une date à 21 jours près suffit. Les déblocages de recherche utilisent 150 et 600 jours, donc trois semaines d'erreur changent rarement le résultat."
+            }
+        },
+        "generation": {
+            "label": "Héros débloqués jusqu'à",
+            "hint": "Les héros des générations suivantes restent masqués sur la page Héros et dans Plan.",
+            "preLegendary": "Génération 0 (avant Legendary)",
+            "numbered": "Génération {generation}"
+        },
+        "events": {
+            "legend": "Événements clés affichés",
+            "shownOf": "{shown} sur {total}",
+            "hint": "Les événements masqués disparaissent des onglets Événements clés et de leur journal. Réactivez-les quand vous voulez."
+        },
+        "notes": "Notes",
+        "packs": {
+            "legend": "Packs",
+            "constructionLabel": "Construction Pack",
+            "constructionHint": "Ouvre le deuxième bâtisseur sur la page Bâtiments.",
+            "constructionBusy": "Le deuxième bâtisseur est en pleine amélioration. Terminez-la ou annulez-la d'abord pour désactiver cette option.",
+            "marchLabel": "March Queue Pack",
+            "marchHint": "Ajoute une file de marche. Elle compte sur la page Bonus."
+        }
     },
-    "events": {
-      "legend": "Événements clés affichés",
-      "shownOf": "{shown} sur {total}",
-      "hint": "Les événements masqués disparaissent des onglets Événements clés et de leur journal. Réactivez-les quand vous voulez."
+    "delete": {
+        "title": "Supprimer le chef",
+        "cancel": "Annuler",
+        "confirmButton": "Supprimer le chef",
+        "confirm": "Voulez-vous vraiment supprimer « <strong>{name}</strong> » ?",
+        "summary": "{details} · créé le {date}",
+        "note": "Cela supprime le chef avec tous ses niveaux, objectifs et notes de cet appareil. Il est impossible de le récupérer une fois les 10 secondes d'annulation écoulées.",
+        "exportBackup": "Exporter d'abord une sauvegarde"
     },
-    "notes": "Notes",
-    "packs": {
-      "legend": "Packs",
-      "constructionLabel": "Construction Pack",
-      "constructionHint": "Ouvre le deuxième bâtisseur sur la page Bâtiments.",
-      "constructionBusy": "Le deuxième bâtisseur est en pleine amélioration. Terminez-la ou annulez-la d'abord pour désactiver cette option.",
-      "marchLabel": "March Queue Pack",
-      "marchHint": "Ajoute une file de marche. Elle compte sur la page Bonus."
+    "page": {
+        "title": "Chefs",
+        "newChief": "Nouveau chef",
+        "sort": {
+            "label": "Trier par",
+            "options": {
+                "lastModified": "Dernière modification",
+                "createdAt": "Date de création",
+                "name": "Nom"
+            }
+        },
+        "subline": {
+            "none": "Aucun chef pour l'instant.",
+            "total": "{chiefs}.",
+            "withActive": "{chiefs}. {name} est actif."
+        },
+        "toasts": {
+            "backupTitle": "Sauvegarde téléchargée",
+            "deleted": "{name} supprimé",
+            "undo": "Annuler"
+        },
+        "loading": "Lecture des données enregistrées dans ce navigateur. La liste apparaît quand elle est prête.",
+        "empty": {
+            "title": "Aucun chef pour l'instant",
+            "description": "Créez un chef pour suivre bâtiments, héros, équipement, recherche et votre plan d'amélioration. Tout reste dans ce navigateur.",
+            "restore": "Restaurer une sauvegarde dans Paramètres"
+        },
+        "search": {
+            "label": "Rechercher par nom",
+            "showing": "{shown} affichés sur {total}",
+            "noMatchTitle": "Aucun chef ne correspond à « {search} »",
+            "noMatchDescription": "Vérifiez l'orthographe ou effacez la recherche pour voir les {count} chefs.",
+            "clear": "Effacer la recherche"
+        }
     }
-  },
-  "delete": {
-    "title": "Supprimer le chef",
-    "cancel": "Annuler",
-    "confirmButton": "Supprimer le chef",
-    "confirm": "Voulez-vous vraiment supprimer « <strong>{name}</strong> » ?",
-    "summary": "{details} · créé le {date}",
-    "note": "Cela supprime le chef avec tous ses niveaux, objectifs et notes de cet appareil. Il est impossible de le récupérer une fois les 10 secondes d'annulation écoulées.",
-    "exportBackup": "Exporter d'abord une sauvegarde"
-  },
-  "page": {
-    "title": "Chefs",
-    "newChief": "Nouveau chef",
-    "sort": {
-      "label": "Trier par",
-      "options": {
-        "lastModified": "Dernière modification",
-        "createdAt": "Date de création",
-        "name": "Nom"
-      }
-    },
-    "subline": {
-      "none": "Aucun chef pour l'instant.",
-      "total": "{chiefs}.",
-      "withActive": "{chiefs}. {name} est actif."
-    },
-    "toasts": {
-      "backupTitle": "Sauvegarde téléchargée",
-      "deleted": "{name} supprimé",
-      "undo": "Annuler"
-    },
-    "loading": "Lecture des données enregistrées dans ce navigateur. La liste apparaît quand elle est prête.",
-    "empty": {
-      "title": "Aucun chef pour l'instant",
-      "description": "Créez un chef pour suivre bâtiments, héros, équipement, recherche et votre plan d'amélioration. Tout reste dans ce navigateur.",
-      "restore": "Restaurer une sauvegarde dans Paramètres"
-    },
-    "search": {
-      "label": "Rechercher par nom",
-      "showing": "{shown} affichés sur {total}",
-      "noMatchTitle": "Aucun chef ne correspond à « {search} »",
-      "noMatchDescription": "Vérifiez l'orthographe ou effacez la recherche pour voir les {count} chefs.",
-      "clear": "Effacer la recherche"
-    }
-  }
 }

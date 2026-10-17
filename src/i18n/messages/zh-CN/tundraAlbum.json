@@ -1,90 +1,90 @@
 {
-  "page": {
-    "title": "冰原相册"
-  },
-  "view": {
-    "subline": "{chief} · {details} · 已集齐{complete} / {total}本相册"
-  },
-  "summary": {
-    "label": "已集齐的相册",
-    "value": "{done} / {total}",
-    "progress": "已集齐的相册",
-    "inData": "数据中有{shown} / {all}本相册"
-  },
-  "buffs": {
-    "title": "当前生效的增益",
-    "derived": "推算",
-    "none": "还没有集齐任何相册，因此没有冰原相册增益生效。",
-    "note": "只有集齐的相册才计入。这些增益会汇入<link>加成</link>页面。"
-  },
-  "album": {
-    "status": {
-      "complete": "已集齐",
-      "inProgress": "进行中"
+    "page": {
+        "title": "冰原相册"
     },
-    "buffWhenComplete": "集齐后的增益",
-    "puzzlesDone": "已完成的拼图",
-    "puzzlesValue": "{done} / {total}",
-    "puzzlesProgress": "{album}已完成的拼图",
-    "completionRewards": "集齐奖励",
-    "markComplete": "标记相册已集齐",
-    "notCounting": "尚未生效。只有全部{total}个拼图完成后，{buff}才会计入加成页面。标记相册已集齐会设置全部{total}个拼图，并显示撤销提示。",
-    "counting": "已生效。{buff}已在加成页面中。取消勾选某个拼图会再次移除。",
-    "piecesValue": "已收集{collected} / {total}块"
-  },
-  "puzzle": {
-    "pieces": "{count, plural, other {{amount}块}}，1 到 5 星：{split}",
-    "reward": "奖励",
-    "done": "拼图已完成，所有碎片已收集",
-    "doneFor": "已完成，{puzzle}",
-    "collectedLabel": "已收集的碎片",
-    "collected": "{collected} / {total}",
-    "pieceLabel": "{name}，{stars}星",
-    "pieceHint": "选择你拥有的碎片。将拼图标记为完成会收集全部碎片。",
-    "allCollected": "拼图已完成，因此每块碎片都已收集。"
-  },
-  "reward": {
-    "line": "{amount} {item}",
-    "sized": "{amount} {item}（{size}）",
-    "unknownItem": "未知道具"
-  },
-  "toast": {
-    "markedTitle": "已将{album}标记为集齐",
-    "markedMessage": "全部{total}个拼图已完成。",
-    "unmarkedTitle": "已取消标记{puzzle}",
-    "unmarkedMessage": "{album}重新变为进行中，其增益已从加成中移除。",
-    "undo": "撤销"
-  },
-  "notInData": "{total}本冰原相册中的其余{count}本尚未收录到数据中。数据包有了之后会补上。",
-  "pieces": {
-    "label": "已收集的碎片",
-    "value": "{collected} / {available}",
-    "progress": "所有相册中已收集的碎片",
-    "viewRewards": "查看碎片奖励"
-  },
-  "rewardsFlyout": {
-    "title": "碎片数量奖励",
-    "description": "随着你在所有相册中收集的碎片累计增加而获得的奖励",
-    "close": "关闭",
-    "collected": "已收集的碎片",
-    "collectedValue": "{collected} / {available}",
-    "progress": "所有相册中已收集的碎片",
-    "reached": "已达成{reached} / {all}个碎片数量奖励",
-    "next": "下一个奖励在{pieces}块，还需收集{missing}块。",
-    "allReached": "数据中的每个碎片数量奖励都已达成。",
-    "totalSoFar": "目前已获得的奖励",
-    "tree": "按收集碎片数的奖励",
-    "tier": "{pieces}块时的奖励{tier}",
-    "stateReached": "已收集",
-    "stateNext": "下一个，还差{missing}",
-    "stateLater": "还差{missing}"
-  },
-  "picker": {
-    "label": "相册",
-    "title": "相册",
-    "complete": "相册已集齐",
-    "puzzles": "{done} / {total}个拼图",
-    "pieces": "{collected} / {total}块",
-    "piecesProgress": "{album}已收集的碎片"
-  }
+    "view": {
+        "subline": "{chief} · {details} · 已集齐{complete} / {total}本相册"
+    },
+    "summary": {
+        "label": "已集齐的相册",
+        "value": "{done} / {total}",
+        "progress": "已集齐的相册",
+        "inData": "数据中有{shown} / {all}本相册"
+    },
+    "buffs": {
+        "title": "当前生效的增益",
+        "derived": "推算",
+        "none": "还没有集齐任何相册，因此没有冰原相册增益生效。",
+        "note": "只有集齐的相册才计入。这些增益会汇入<link>加成</link>页面。"
+    },
+    "album": {
+        "status": {
+            "complete": "已集齐",
+            "inProgress": "进行中"
+        },
+        "buffWhenComplete": "集齐后的增益",
+        "puzzlesDone": "已完成的拼图",
+        "puzzlesValue": "{done} / {total}",
+        "puzzlesProgress": "{album}已完成的拼图",
+        "completionRewards": "集齐奖励",
+        "markComplete": "标记相册已集齐",
+        "notCounting": "尚未生效。只有全部{total}个拼图完成后，{buff}才会计入加成页面。标记相册已集齐会设置全部{total}个拼图，并显示撤销提示。",
+        "counting": "已生效。{buff}已在加成页面中。取消勾选某个拼图会再次移除。",
+        "piecesValue": "已收集{collected} / {total}块"
+    },
+    "puzzle": {
+        "pieces": "{count, plural, other {{amount}块}}，1 到 5 星：{split}",
+        "reward": "奖励",
+        "done": "拼图已完成，所有碎片已收集",
+        "doneFor": "已完成，{puzzle}",
+        "collectedLabel": "已收集的碎片",
+        "collected": "{collected} / {total}",
+        "pieceLabel": "{name}，{stars}星",
+        "pieceHint": "选择你拥有的碎片。将拼图标记为完成会收集全部碎片。",
+        "allCollected": "拼图已完成，因此每块碎片都已收集。"
+    },
+    "reward": {
+        "line": "{amount} {item}",
+        "sized": "{amount} {item}（{size}）",
+        "unknownItem": "未知道具"
+    },
+    "toast": {
+        "markedTitle": "已将{album}标记为集齐",
+        "markedMessage": "全部{total}个拼图已完成。",
+        "unmarkedTitle": "已取消标记{puzzle}",
+        "unmarkedMessage": "{album}重新变为进行中，其增益已从加成中移除。",
+        "undo": "撤销"
+    },
+    "notInData": "{total}本冰原相册中的其余{count}本尚未收录到数据中。数据包有了之后会补上。",
+    "pieces": {
+        "label": "已收集的碎片",
+        "value": "{collected} / {available}",
+        "progress": "所有相册中已收集的碎片",
+        "viewRewards": "查看碎片奖励"
+    },
+    "rewardsFlyout": {
+        "title": "碎片数量奖励",
+        "description": "随着你在所有相册中收集的碎片累计增加而获得的奖励",
+        "close": "关闭",
+        "collected": "已收集的碎片",
+        "collectedValue": "{collected} / {available}",
+        "progress": "所有相册中已收集的碎片",
+        "reached": "已达成{reached} / {all}个碎片数量奖励",
+        "next": "下一个奖励在{pieces}块，还需收集{missing}块。",
+        "allReached": "数据中的每个碎片数量奖励都已达成。",
+        "totalSoFar": "目前已获得的奖励",
+        "tree": "按收集碎片数的奖励",
+        "tier": "{pieces}块时的奖励{tier}",
+        "stateReached": "已收集",
+        "stateNext": "下一个，还差{missing}",
+        "stateLater": "还差{missing}"
+    },
+    "picker": {
+        "label": "相册",
+        "title": "相册",
+        "complete": "相册已集齐",
+        "puzzles": "{done} / {total}个拼图",
+        "pieces": "{collected} / {total}块",
+        "piecesProgress": "{album}已收集的碎片"
+    }
 }

@@ -1,104 +1,104 @@
 {
-  "line": "{banners} rentang panji, {facilities} fasilitas, dan {fortresses} entri castle, stronghold, dan benteng. Hanya referensi, tidak ada yang disimpan.",
-  "filters": {
-    "search": "Cari",
-    "searchPlaceholder": "Cari rentang, fasilitas, benteng",
-    "structure": "Struktur",
-    "structures": {
-      "all": "Semua struktur",
-      "banners": "Panji",
-      "facilities": "Fasilitas peta",
-      "castle": "Castle",
-      "stronghold": "Stronghold",
-      "fortress": "Benteng"
-    }
-  },
-  "empty": "Tidak ada di daftar ini yang cocok dengan pencarian.",
-  "none": "Tidak ada",
-  "banners": {
-    "title": "Biaya bangun panji",
-    "columns": {
-      "range": "Rentang level",
-      "min": "Min",
-      "max": "Maks",
-      "cost": "Biaya per level"
+    "line": "{banners} rentang panji, {facilities} fasilitas, dan {fortresses} entri castle, stronghold, dan benteng. Hanya referensi, tidak ada yang disimpan.",
+    "filters": {
+        "search": "Cari",
+        "searchPlaceholder": "Cari rentang, fasilitas, benteng",
+        "structure": "Struktur",
+        "structures": {
+            "all": "Semua struktur",
+            "banners": "Panji",
+            "facilities": "Fasilitas peta",
+            "castle": "Castle",
+            "stronghold": "Stronghold",
+            "fortress": "Benteng"
+        }
     },
-    "noCost": "Tidak tercantum",
-    "count": "{count, plural, other {{amount} rentang}}",
+    "empty": "Tidak ada di daftar ini yang cocok dengan pencarian.",
+    "none": "Tidak ada",
+    "banners": {
+        "title": "Biaya bangun panji",
+        "columns": {
+            "range": "Rentang level",
+            "min": "Min",
+            "max": "Maks",
+            "cost": "Biaya per level"
+        },
+        "noCost": "Tidak tercantum",
+        "count": "{count, plural, other {{amount} rentang}}",
+        "detail": {
+            "title": "Biaya panji",
+            "fields": {
+                "range": "Rentang level",
+                "min": "Level terendah",
+                "max": "Level tertinggi",
+                "cost": "Biaya per level"
+            }
+        }
+    },
+    "facilities": {
+        "title": "Fasilitas peta",
+        "count": "{count, plural, other {{amount} fasilitas}}",
+        "columns": {
+            "facility": "Fasilitas",
+            "bonus": "Bonus",
+            "level": "Level {level}",
+            "listed": "Level tercantum",
+            "ownLimit": "Batas kepemilikan"
+        },
+        "cell": "{available} di peta",
+        "listedOf": "{listed} dari {total}",
+        "levelsNote": "Data mencantumkan {listed} dari {total} level untuk fasilitas ini. Level yang tidak tercantum tampil sebagai Tidak diketahui.",
+        "detail": {
+            "title": "Level {name}",
+            "level": "Level {level}",
+            "columns": {
+                "level": "Level",
+                "booster": "Booster",
+                "injured": "Luka berat",
+                "losses": "Kerugian",
+                "ownLimit": "Batas kepemilikan",
+                "available": "Di peta",
+                "locations": "Lokasi (x, y)"
+            },
+            "percent": "{value}%",
+            "location": "{x}, {y}"
+        }
+    },
+    "fortresses": {
+        "title": "Castle, stronghold, dan benteng",
+        "kinds": {
+            "castle": "Castle",
+            "stronghold": "Stronghold",
+            "fortress": "Benteng"
+        },
+        "columns": {
+            "name": "Nama",
+            "kind": "Jenis",
+            "x": "X",
+            "y": "Y",
+            "phases": "Fase",
+            "phaseOne": "Hadiah fase 1"
+        },
+        "mobileMeta": "{kind}, x {x}, y {y}",
+        "count": "{count, plural, other {{amount} struktur}}"
+    },
+    "map": {
+        "title": "Placeholder peta",
+        "label": "Peta castle, stronghold, dan benteng menurut nilai x dan y",
+        "note": "Castle, stronghold, dan benteng digambar dari nilai x dan y pada persegi {size} kali {size}. Ukuran persegi adalah perkiraan, paket data tidak punya ukuran peta.",
+        "legend": {
+            "castle": "Persegi: castle",
+            "stronghold": "Belah ketupat: stronghold",
+            "fortress": "Lingkaran: benteng"
+        }
+    },
     "detail": {
-      "title": "Biaya panji",
-      "fields": {
-        "range": "Rentang level",
-        "min": "Level terendah",
-        "max": "Level tertinggi",
-        "cost": "Biaya per level"
-      }
+        "title": "Hadiah fase",
+        "phases": "{count, plural, other {{amount} fase}}",
+        "columns": {
+            "phase": "Fase",
+            "reward": "Hadiah"
+        },
+        "noRewards": "Paket data tidak punya hadiah fase untuk struktur ini."
     }
-  },
-  "facilities": {
-    "title": "Fasilitas peta",
-    "count": "{count, plural, other {{amount} fasilitas}}",
-    "columns": {
-      "facility": "Fasilitas",
-      "bonus": "Bonus",
-      "level": "Level {level}",
-      "listed": "Level tercantum",
-      "ownLimit": "Batas kepemilikan"
-    },
-    "cell": "{available} di peta",
-    "listedOf": "{listed} dari {total}",
-    "levelsNote": "Data mencantumkan {listed} dari {total} level untuk fasilitas ini. Level yang tidak tercantum tampil sebagai Tidak diketahui.",
-    "detail": {
-      "title": "Level {name}",
-      "level": "Level {level}",
-      "columns": {
-        "level": "Level",
-        "booster": "Booster",
-        "injured": "Luka berat",
-        "losses": "Kerugian",
-        "ownLimit": "Batas kepemilikan",
-        "available": "Di peta",
-        "locations": "Lokasi (x, y)"
-      },
-      "percent": "{value}%",
-      "location": "{x}, {y}"
-    }
-  },
-  "fortresses": {
-    "title": "Castle, stronghold, dan benteng",
-    "kinds": {
-      "castle": "Castle",
-      "stronghold": "Stronghold",
-      "fortress": "Benteng"
-    },
-    "columns": {
-      "name": "Nama",
-      "kind": "Jenis",
-      "x": "X",
-      "y": "Y",
-      "phases": "Fase",
-      "phaseOne": "Hadiah fase 1"
-    },
-    "mobileMeta": "{kind}, x {x}, y {y}",
-    "count": "{count, plural, other {{amount} struktur}}"
-  },
-  "map": {
-    "title": "Placeholder peta",
-    "label": "Peta castle, stronghold, dan benteng menurut nilai x dan y",
-    "note": "Castle, stronghold, dan benteng digambar dari nilai x dan y pada persegi {size} kali {size}. Ukuran persegi adalah perkiraan, paket data tidak punya ukuran peta.",
-    "legend": {
-      "castle": "Persegi: castle",
-      "stronghold": "Belah ketupat: stronghold",
-      "fortress": "Lingkaran: benteng"
-    }
-  },
-  "detail": {
-    "title": "Hadiah fase",
-    "phases": "{count, plural, other {{amount} fase}}",
-    "columns": {
-      "phase": "Fase",
-      "reward": "Hadiah"
-    },
-    "noRewards": "Paket data tidak punya hadiah fase untuk struktur ini."
-  }
 }

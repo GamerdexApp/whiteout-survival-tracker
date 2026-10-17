@@ -1,45 +1,45 @@
 {
-  "line": "{enhancement}个强化等级，{empowerment}个赋能等级，{mastery}行精通锻造和{stats}条属性。仅供参考，这里的内容不会保存。",
-  "tabsLabel": "英雄装备表",
-  "tabs": {
-    "enhancement": "强化",
-    "empowerment": "赋能",
-    "mastery": "精通锻造",
-    "stats": "属性"
-  },
-  "levels": {
-    "columns": {
-      "level": "等级",
-      "cost": "费用",
-      "power": "战力",
-      "gain": "较上一级增加",
-      "milestonePower": "里程碑战力",
-      "stage": "阶段",
-      "statsUp": "属性提升"
+    "line": "{enhancement}个强化等级，{empowerment}个赋能等级，{mastery}行精通锻造和{stats}条属性。仅供参考，这里的内容不会保存。",
+    "tabsLabel": "英雄装备表",
+    "tabs": {
+        "enhancement": "强化",
+        "empowerment": "赋能",
+        "mastery": "精通锻造",
+        "stats": "属性"
     },
-    "none": "无",
-    "percent": "{value}%",
-    "gainValue": "+{value}"
-  },
-  "stats": {
-    "slot": "槽位",
-    "troopType": "兵种",
-    "troop": {
-      "infantry": "盾兵",
-      "lancer": "矛兵",
-      "marksman": "弓兵"
+    "levels": {
+        "columns": {
+            "level": "等级",
+            "cost": "费用",
+            "power": "战力",
+            "gain": "较上一级增加",
+            "milestonePower": "里程碑战力",
+            "stage": "阶段",
+            "statsUp": "属性提升"
+        },
+        "none": "无",
+        "percent": "{value}%",
+        "gainValue": "+{value}"
     },
-    "note": "属性的 101 到 200 级对应赋能 1 到 100 级。",
-    "columns": {
-      "level": "等级",
-      "combat": "{stat}",
-      "health": "生命",
-      "percent": "{stat}"
-    },
-    "level": "{level}级",
-    "empowermentLevel": "{level}级，赋能{empowerment}",
-    "milestonesTitle": "里程碑",
-    "milestone": "赋能{level}级，{event}：{stat}",
-    "percentValue": "{value}%"
-  }
+    "stats": {
+        "slot": "槽位",
+        "troopType": "兵种",
+        "troop": {
+            "infantry": "盾兵",
+            "lancer": "矛兵",
+            "marksman": "弓兵"
+        },
+        "note": "属性的 101 到 200 级对应赋能 1 到 100 级。",
+        "columns": {
+            "level": "等级",
+            "combat": "{stat}",
+            "health": "生命",
+            "percent": "{stat}"
+        },
+        "level": "{level}级",
+        "empowermentLevel": "{level}级，赋能{empowerment}",
+        "milestonesTitle": "里程碑",
+        "milestone": "赋能{level}级，{event}：{stat}",
+        "percentValue": "{value}%"
+    }
 }

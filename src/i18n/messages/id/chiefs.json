@@ -1,117 +1,117 @@
 {
-  "unknown": "Tidak diketahui",
-  "describe": {
-    "state": "State {number}",
-    "empty": "Belum ada detail"
-  },
-  "coreEvents": {
-    "svs": "SvS",
-    "showdown": "Alliance Showdown",
-    "king": "King of Icefield",
-    "hall": "Hall of Chief"
-  },
-  "count": "{count, plural, other {{amount} Chief}}",
-  "card": {
-    "active": "Aktif",
-    "noNotes": "Tanpa catatan",
-    "furnace": "Furnace",
-    "state": "State",
-    "created": "Dibuat: {date}",
-    "lastModified": "Terakhir diubah: {date}",
-    "setActive": "Jadikan aktif",
-    "edit": "Ubah",
-    "delete": "Hapus"
-  },
-  "dialog": {
-    "editTitle": "Ubah Chief",
-    "newTitle": "Chief baru",
-    "newDescription": "Beri nama. Sisanya opsional.",
-    "cancel": "Batal",
-    "save": "Simpan perubahan",
-    "create": "Buat Chief",
-    "errors": {
-      "name": "Isi nama untuk Chief ini.",
-      "stateNumber": "Isi bilangan bulat dari 1 sampai {max}.",
-      "serverStartDate": "Isi tanggal yang bukan di masa depan."
+    "unknown": "Tidak diketahui",
+    "describe": {
+        "state": "State {number}",
+        "empty": "Belum ada detail"
     },
-    "name": "Nama",
-    "stateNumber": {
-      "label": "Nomor state",
-      "hint": "State tempat Chief-mu berada. Bilangan bulat."
+    "coreEvents": {
+        "svs": "SvS",
+        "showdown": "Alliance Showdown",
+        "king": "King of Icefield",
+        "hall": "Hall of Chief"
     },
-    "serverStartDate": {
-      "label": "Tanggal mulai server",
-      "info": {
-        "label": "Di mana menemukan tanggal mulai server",
-        "screen": "Buka game dan masuk ke layar Server dari profilmu.",
-        "date": "Baca tanggal server dibuka. Jika hanya tampil nomor hari server, hitung mundur sebanyak itu hari dari hari ini.",
-        "missing": "Tidak ada tanggal di layar? Tanya pemimpin aliansimu atau cek obrolan state.",
-        "tolerance": "Tanggal dengan selisih 21 hari ke mana pun sudah cukup. Pembukaan riset memakai 150 dan 600 hari, jadi selisih tiga minggu jarang mengubah hasil."
-      }
+    "count": "{count, plural, other {{amount} Chief}}",
+    "card": {
+        "active": "Aktif",
+        "noNotes": "Tanpa catatan",
+        "furnace": "Furnace",
+        "state": "State",
+        "created": "Dibuat: {date}",
+        "lastModified": "Terakhir diubah: {date}",
+        "setActive": "Jadikan aktif",
+        "edit": "Ubah",
+        "delete": "Hapus"
     },
-    "generation": {
-      "label": "Pahlawan terbuka sampai",
-      "hint": "Pahlawan generasi berikutnya tetap tersembunyi di halaman Pahlawan dan di Rencana.",
-      "preLegendary": "Generasi 0 (pra-Legendary)",
-      "numbered": "Generasi {generation}"
+    "dialog": {
+        "editTitle": "Ubah Chief",
+        "newTitle": "Chief baru",
+        "newDescription": "Beri nama. Sisanya opsional.",
+        "cancel": "Batal",
+        "save": "Simpan perubahan",
+        "create": "Buat Chief",
+        "errors": {
+            "name": "Isi nama untuk Chief ini.",
+            "stateNumber": "Isi bilangan bulat dari 1 sampai {max}.",
+            "serverStartDate": "Isi tanggal yang bukan di masa depan."
+        },
+        "name": "Nama",
+        "stateNumber": {
+            "label": "Nomor state",
+            "hint": "State tempat Chief-mu berada. Bilangan bulat."
+        },
+        "serverStartDate": {
+            "label": "Tanggal mulai server",
+            "info": {
+                "label": "Di mana menemukan tanggal mulai server",
+                "screen": "Buka game dan masuk ke layar Server dari profilmu.",
+                "date": "Baca tanggal server dibuka. Jika hanya tampil nomor hari server, hitung mundur sebanyak itu hari dari hari ini.",
+                "missing": "Tidak ada tanggal di layar? Tanya pemimpin aliansimu atau cek obrolan state.",
+                "tolerance": "Tanggal dengan selisih 21 hari ke mana pun sudah cukup. Pembukaan riset memakai 150 dan 600 hari, jadi selisih tiga minggu jarang mengubah hasil."
+            }
+        },
+        "generation": {
+            "label": "Pahlawan terbuka sampai",
+            "hint": "Pahlawan generasi berikutnya tetap tersembunyi di halaman Pahlawan dan di Rencana.",
+            "preLegendary": "Generasi 0 (pra-Legendary)",
+            "numbered": "Generasi {generation}"
+        },
+        "events": {
+            "legend": "Core event yang ditampilkan",
+            "shownOf": "{shown} dari {total}",
+            "hint": "Event yang disembunyikan hilang dari tab Core event dan Log event-nya. Aktifkan kembali kapan saja."
+        },
+        "notes": "Catatan",
+        "packs": {
+            "legend": "Paket",
+            "constructionLabel": "Construction Pack",
+            "constructionHint": "Membuka pembangun kedua di halaman Bangunan.",
+            "constructionBusy": "Pembangun kedua sedang menjalankan upgrade. Selesaikan atau batalkan dulu untuk menonaktifkan ini.",
+            "marchLabel": "March Queue Pack",
+            "marchHint": "Menambah satu antrean march. Dihitung di halaman Bonus."
+        }
     },
-    "events": {
-      "legend": "Core event yang ditampilkan",
-      "shownOf": "{shown} dari {total}",
-      "hint": "Event yang disembunyikan hilang dari tab Core event dan Log event-nya. Aktifkan kembali kapan saja."
+    "delete": {
+        "title": "Hapus Chief",
+        "cancel": "Batal",
+        "confirmButton": "Hapus Chief",
+        "confirm": "Yakin ingin menghapus “<strong>{name}</strong>”?",
+        "summary": "{details} · dibuat {date}",
+        "note": "Ini menghapus Chief beserta semua level, target, dan catatannya dari perangkat ini. Tidak ada cara mengembalikannya setelah Urungkan 10 detik berakhir.",
+        "exportBackup": "Ekspor cadangan dulu"
     },
-    "notes": "Catatan",
-    "packs": {
-      "legend": "Paket",
-      "constructionLabel": "Construction Pack",
-      "constructionHint": "Membuka pembangun kedua di halaman Bangunan.",
-      "constructionBusy": "Pembangun kedua sedang menjalankan upgrade. Selesaikan atau batalkan dulu untuk menonaktifkan ini.",
-      "marchLabel": "March Queue Pack",
-      "marchHint": "Menambah satu antrean march. Dihitung di halaman Bonus."
+    "page": {
+        "title": "Chief",
+        "newChief": "Chief baru",
+        "sort": {
+            "label": "Urutkan",
+            "options": {
+                "lastModified": "Terakhir diubah",
+                "createdAt": "Tanggal dibuat",
+                "name": "Nama"
+            }
+        },
+        "subline": {
+            "none": "Belum ada Chief.",
+            "total": "{chiefs}.",
+            "withActive": "{chiefs}. {name} aktif."
+        },
+        "toasts": {
+            "backupTitle": "Cadangan diunduh",
+            "deleted": "{name} dihapus",
+            "undo": "Urungkan"
+        },
+        "loading": "Membaca data tersimpan dari browser ini. Daftar muncul saat siap.",
+        "empty": {
+            "title": "Belum ada Chief",
+            "description": "Buat Chief untuk melacak bangunan, pahlawan, perlengkapan, riset, dan rencana upgrade. Semuanya tetap di browser ini.",
+            "restore": "Pulihkan cadangan di Pengaturan"
+        },
+        "search": {
+            "label": "Cari menurut nama",
+            "showing": "Menampilkan {shown} dari {total}",
+            "noMatchTitle": "Tidak ada Chief yang cocok dengan “{search}”",
+            "noMatchDescription": "Periksa ejaan atau hapus pencarian untuk melihat semua {count} Chief.",
+            "clear": "Hapus pencarian"
+        }
     }
-  },
-  "delete": {
-    "title": "Hapus Chief",
-    "cancel": "Batal",
-    "confirmButton": "Hapus Chief",
-    "confirm": "Yakin ingin menghapus “<strong>{name}</strong>”?",
-    "summary": "{details} · dibuat {date}",
-    "note": "Ini menghapus Chief beserta semua level, target, dan catatannya dari perangkat ini. Tidak ada cara mengembalikannya setelah Urungkan 10 detik berakhir.",
-    "exportBackup": "Ekspor cadangan dulu"
-  },
-  "page": {
-    "title": "Chief",
-    "newChief": "Chief baru",
-    "sort": {
-      "label": "Urutkan",
-      "options": {
-        "lastModified": "Terakhir diubah",
-        "createdAt": "Tanggal dibuat",
-        "name": "Nama"
-      }
-    },
-    "subline": {
-      "none": "Belum ada Chief.",
-      "total": "{chiefs}.",
-      "withActive": "{chiefs}. {name} aktif."
-    },
-    "toasts": {
-      "backupTitle": "Cadangan diunduh",
-      "deleted": "{name} dihapus",
-      "undo": "Urungkan"
-    },
-    "loading": "Membaca data tersimpan dari browser ini. Daftar muncul saat siap.",
-    "empty": {
-      "title": "Belum ada Chief",
-      "description": "Buat Chief untuk melacak bangunan, pahlawan, perlengkapan, riset, dan rencana upgrade. Semuanya tetap di browser ini.",
-      "restore": "Pulihkan cadangan di Pengaturan"
-    },
-    "search": {
-      "label": "Cari menurut nama",
-      "showing": "Menampilkan {shown} dari {total}",
-      "noMatchTitle": "Tidak ada Chief yang cocok dengan “{search}”",
-      "noMatchDescription": "Periksa ejaan atau hapus pencarian untuk melihat semua {count} Chief.",
-      "clear": "Hapus pencarian"
-    }
-  }
 }

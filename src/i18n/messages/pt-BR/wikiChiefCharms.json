@@ -1,49 +1,49 @@
 {
-  "line": "{rows} linhas de amuleto, {slots} espaços e {rates} taxas de câmbio. Só referência, nada aqui é salvo no seu chefe.",
-  "slots": {
-    "heading": "Espaços de amuleto",
-    "meta": "{slots} espaços, um para cada tipo de tropa",
-    "icons": "{count, plural, one {{amount} ícone de nível} other {{amount} ícones de nível}}",
-    "recordLine": "Reforça tropas de {troopType}. Um ícone para cada nível."
-  },
-  "table": {
-    "heading": "Tabela de amuletos",
-    "meta": "{rows} linhas, {levels} níveis",
-    "searchLabel": "Buscar",
-    "searchPlaceholder": "Buscar entre {rows} linhas de amuleto",
-    "levelLabel": "Nível",
-    "allLevels": "Todos os níveis",
-    "levelOption": "Nível {level}",
-    "stageLabel": "Etapa",
-    "allStages": "Todas as etapas",
-    "stageOption": "Etapa {stage}",
-    "empty": "Nenhuma linha de amuleto corresponde aos filtros."
-  },
-  "columns": {
-    "row": "Linha",
-    "materials": "Materiais",
-    "stats": "Atributos",
-    "power": "Poder",
-    "score": "Pontuação"
-  },
-  "cells": {
-    "none": "Nenhum",
-    "percent": "{value}%"
-  },
-  "levels": {
-    "heading": "Níveis",
-    "level": "Nível",
-    "levelName": "Nível {level}",
-    "rows": "Linhas",
-    "stats": "Atributos, do primeiro ao último",
-    "power": "Poder na última linha",
-    "statsRange": "{first}% a {last}%"
-  },
-  "exchange": {
-    "heading": "Taxas de câmbio de materiais",
-    "exchange": "Câmbio",
-    "from": "De",
-    "to": "Para",
-    "weeklyLimit": "Limite semanal"
-  }
+    "line": "{rows} linhas de amuleto, {slots} espaços e {rates} taxas de câmbio. Só referência, nada aqui é salvo no seu chefe.",
+    "slots": {
+        "heading": "Espaços de amuleto",
+        "meta": "{slots} espaços, um para cada tipo de tropa",
+        "icons": "{count, plural, one {{amount} ícone de nível} other {{amount} ícones de nível}}",
+        "recordLine": "Reforça tropas de {troopType}. Um ícone para cada nível."
+    },
+    "table": {
+        "heading": "Tabela de amuletos",
+        "meta": "{rows} linhas, {levels} níveis",
+        "searchLabel": "Buscar",
+        "searchPlaceholder": "Buscar entre {rows} linhas de amuleto",
+        "levelLabel": "Nível",
+        "allLevels": "Todos os níveis",
+        "levelOption": "Nível {level}",
+        "stageLabel": "Etapa",
+        "allStages": "Todas as etapas",
+        "stageOption": "Etapa {stage}",
+        "empty": "Nenhuma linha de amuleto corresponde aos filtros."
+    },
+    "columns": {
+        "row": "Linha",
+        "materials": "Materiais",
+        "stats": "Atributos",
+        "power": "Poder",
+        "score": "Pontuação"
+    },
+    "cells": {
+        "none": "Nenhum",
+        "percent": "{value}%"
+    },
+    "levels": {
+        "heading": "Níveis",
+        "level": "Nível",
+        "levelName": "Nível {level}",
+        "rows": "Linhas",
+        "stats": "Atributos, do primeiro ao último",
+        "power": "Poder na última linha",
+        "statsRange": "{first}% a {last}%"
+    },
+    "exchange": {
+        "heading": "Taxas de câmbio de materiais",
+        "exchange": "Câmbio",
+        "from": "De",
+        "to": "Para",
+        "weeklyLimit": "Limite semanal"
+    }
 }

@@ -1,32 +1,32 @@
 {
-  "title": "Exporter vers Événements clés",
-  "description": "Choisissez l'événement, puis les jours",
-  "events": {
-    "svs": "SvS",
-    "showdown": "Alliance Showdown",
-    "king": "King of Icefield",
-    "hall": "Hall of Chief"
-  },
-  "stepEvent": "1. Événement",
-  "stepDay": "{number}. Jour d'événement {group}",
-  "stepDayPlain": "Jour d'événement",
-  "stepItems": "{number}. Objets de ce plan",
-  "noDay": "{event} n'a pas de ligne de score pour ces objets.",
-  "daysHint": "Seuls les jours dont les lignes de score comptent un objet sont listés. Hall of Chief liste des stades au lieu de jours. Chaque groupe d'objets a son propre jour.",
-  "lineEach": "{points} l'unité le {day}.",
-  "lineNotScored": "{event} n'a pas de ligne de score pour cela.",
-  "notScored": "Sans score",
-  "points": "{points} points",
-  "addedTo": "Ajouté à {event}",
-  "nothingScores": "Rien dans ce plan ne rapporte de points dans {event} les jours choisis.",
-  "summaryTitle": "Résumé de l'export",
-  "summaryHint": "Ce que les mêmes objets rapporteraient dans chaque événement si chacun était dépensé un jour qui le note. Seuls l'événement et les jours choisis les reçoivent. La page Événements clés les affiche comme des nombres modifiables.",
-  "selected": "Sélectionné",
-  "cancel": "Annuler",
-  "export": "Exporter vers {event}",
-  "toast": {
-    "title": "Exporté vers Événements clés",
-    "message": "{points} points ajoutés à {event}.",
-    "undo": "Annuler"
-  }
+    "title": "Exporter vers Événements clés",
+    "description": "Choisissez l'événement, puis les jours",
+    "events": {
+        "svs": "SvS",
+        "showdown": "Alliance Showdown",
+        "king": "King of Icefield",
+        "hall": "Hall of Chief"
+    },
+    "stepEvent": "1. Événement",
+    "stepDay": "{number}. Jour d'événement {group}",
+    "stepDayPlain": "Jour d'événement",
+    "stepItems": "{number}. Objets de ce plan",
+    "noDay": "{event} n'a pas de ligne de score pour ces objets.",
+    "daysHint": "Seuls les jours dont les lignes de score comptent un objet sont listés. Hall of Chief liste des stades au lieu de jours. Chaque groupe d'objets a son propre jour.",
+    "lineEach": "{points} l'unité le {day}.",
+    "lineNotScored": "{event} n'a pas de ligne de score pour cela.",
+    "notScored": "Sans score",
+    "points": "{points} points",
+    "addedTo": "Ajouté à {event}",
+    "nothingScores": "Rien dans ce plan ne rapporte de points dans {event} les jours choisis.",
+    "summaryTitle": "Résumé de l'export",
+    "summaryHint": "Ce que les mêmes objets rapporteraient dans chaque événement si chacun était dépensé un jour qui le note. Seuls l'événement et les jours choisis les reçoivent. La page Événements clés les affiche comme des nombres modifiables.",
+    "selected": "Sélectionné",
+    "cancel": "Annuler",
+    "export": "Exporter vers {event}",
+    "toast": {
+        "title": "Exporté vers Événements clés",
+        "message": "{points} points ajoutés à {event}.",
+        "undo": "Annuler"
+    }
 }

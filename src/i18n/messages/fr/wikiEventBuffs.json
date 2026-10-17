@@ -1,67 +1,67 @@
 {
-  "line": "Quelles sources de bonus s'appliquent dans chacun des {modes} modes de jeu : oui, non ou partiel pour {sources} types de bonus.",
-  "matrix": {
-    "title": "Matrice des bonus",
-    "meta": "{modes} modes, {sources} types de bonus",
-    "table": "Sources de bonus par mode de jeu",
-    "mode": "Mode de jeu"
-  },
-  "sources": {
-    "cityBonusWarsBuffs": {
-      "short": "Bonus de ville",
-      "full": "Bonus de ville et bonus de guerre"
+    "line": "Quelles sources de bonus s'appliquent dans chacun des {modes} modes de jeu : oui, non ou partiel pour {sources} types de bonus.",
+    "matrix": {
+        "title": "Matrice des bonus",
+        "meta": "{modes} modes, {sources} types de bonus",
+        "table": "Sources de bonus par mode de jeu",
+        "mode": "Mode de jeu"
     },
-    "deploymentCapacity": {
-      "short": "Cap. déploiement",
-      "full": "Capacité de déploiement"
+    "sources": {
+        "cityBonusWarsBuffs": {
+            "short": "Bonus de ville",
+            "full": "Bonus de ville et bonus de guerre"
+        },
+        "deploymentCapacity": {
+            "short": "Cap. déploiement",
+            "full": "Capacité de déploiement"
+        },
+        "petSkills": {
+            "short": "Compét. familiers",
+            "full": "Compétences de familiers"
+        },
+        "daybreakIsland": {
+            "short": "Daybreak",
+            "full": "Daybreak Island"
+        },
+        "presidentSkills": {
+            "short": "Président",
+            "full": "Compétences du président"
+        },
+        "ministerBuff": {
+            "short": "Ministre",
+            "full": "Bonus de ministre"
+        },
+        "territoryBonuses": {
+            "short": "Territoire",
+            "full": "Bonus de territoire"
+        },
+        "facilityBuff": {
+            "short": "Installation",
+            "full": "Bonus d'installation"
+        },
+        "marchAccelerator": {
+            "short": "Accél. marche",
+            "full": "Accélérateur de marche"
+        },
+        "frostdragonTyrantTitles": {
+            "short": "Titres Tyrant",
+            "full": "Titres Frostdragon Tyrant"
+        },
+        "frostSphereDomainBonus": {
+            "short": "Frost Sphere",
+            "full": "Bonus de domaine Frost Sphere"
+        }
     },
-    "petSkills": {
-      "short": "Compét. familiers",
-      "full": "Compétences de familiers"
+    "applicability": {
+        "yes": "Oui",
+        "no": "Non",
+        "partial": "Partiel"
     },
-    "daybreakIsland": {
-      "short": "Daybreak",
-      "full": "Daybreak Island"
-    },
-    "presidentSkills": {
-      "short": "Président",
-      "full": "Compétences du président"
-    },
-    "ministerBuff": {
-      "short": "Ministre",
-      "full": "Bonus de ministre"
-    },
-    "territoryBonuses": {
-      "short": "Territoire",
-      "full": "Bonus de territoire"
-    },
-    "facilityBuff": {
-      "short": "Installation",
-      "full": "Bonus d'installation"
-    },
-    "marchAccelerator": {
-      "short": "Accél. marche",
-      "full": "Accélérateur de marche"
-    },
-    "frostdragonTyrantTitles": {
-      "short": "Titres Tyrant",
-      "full": "Titres Frostdragon Tyrant"
-    },
-    "frostSphereDomainBonus": {
-      "short": "Frost Sphere",
-      "full": "Bonus de domaine Frost Sphere"
+    "notes": {
+        "title": "Notes par mode de jeu",
+        "table": "Notes par mode de jeu",
+        "petSkillsAutoApplied": "Compétences de familiers appliquées automatiquement",
+        "note": "Note",
+        "noNote": "Aucune"
     }
-  },
-  "applicability": {
-    "yes": "Oui",
-    "no": "Non",
-    "partial": "Partiel"
-  },
-  "notes": {
-    "title": "Notes par mode de jeu",
-    "table": "Notes par mode de jeu",
-    "petSkillsAutoApplied": "Compétences de familiers appliquées automatiquement",
-    "note": "Note",
-    "noNote": "Aucune"
-  }
 }

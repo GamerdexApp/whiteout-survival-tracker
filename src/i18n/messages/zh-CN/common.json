@@ -1,19 +1,19 @@
 {
-  "duration": {
-    "days": "{value}天",
-    "hours": "{value}小时",
-    "minutes": "{value}分",
-    "seconds": "{value}秒",
-    "zero": "0秒",
-    "separator": " "
-  },
-  "timeLeft": {
-    "left": "剩余{duration}",
-    "ready": "可完成"
-  },
-  "saveFailed": {
-    "title": "未保存",
-    "message": "浏览器存储空间已满。请立即导出备份。",
-    "exportBackup": "导出备份"
-  }
+    "duration": {
+        "days": "{value}天",
+        "hours": "{value}小时",
+        "minutes": "{value}分",
+        "seconds": "{value}秒",
+        "zero": "0秒",
+        "separator": " "
+    },
+    "timeLeft": {
+        "left": "剩余{duration}",
+        "ready": "可完成"
+    },
+    "saveFailed": {
+        "title": "未保存",
+        "message": "浏览器存储空间已满。请立即导出备份。",
+        "exportBackup": "导出备份"
+    }
 }

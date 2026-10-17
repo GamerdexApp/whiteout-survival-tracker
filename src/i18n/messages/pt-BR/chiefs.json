@@ -1,117 +1,117 @@
 {
-  "unknown": "Desconhecido",
-  "describe": {
-    "state": "Estado {number}",
-    "empty": "Sem detalhes ainda"
-  },
-  "coreEvents": {
-    "svs": "SvS",
-    "showdown": "Alliance Showdown",
-    "king": "King of Icefield",
-    "hall": "Hall of Chief"
-  },
-  "count": "{count, plural, one {{amount} chefe} other {{amount} chefes}}",
-  "card": {
-    "active": "Ativo",
-    "noNotes": "Sem notas",
-    "furnace": "Furnace",
-    "state": "Estado",
-    "created": "Criado em: {date}",
-    "lastModified": "Última alteração: {date}",
-    "setActive": "Definir como ativo",
-    "edit": "Editar",
-    "delete": "Excluir"
-  },
-  "dialog": {
-    "editTitle": "Editar chefe",
-    "newTitle": "Novo chefe",
-    "newDescription": "Dê um nome. O resto é opcional.",
-    "cancel": "Cancelar",
-    "save": "Salvar alterações",
-    "create": "Criar chefe",
-    "errors": {
-      "name": "Informe um nome para este chefe.",
-      "stateNumber": "Informe um número inteiro de 1 a {max}.",
-      "serverStartDate": "Informe uma data que não seja futura."
+    "unknown": "Desconhecido",
+    "describe": {
+        "state": "Estado {number}",
+        "empty": "Sem detalhes ainda"
     },
-    "name": "Nome",
-    "stateNumber": {
-      "label": "Número do estado",
-      "hint": "O estado em que seu chefe vive. Número inteiro."
+    "coreEvents": {
+        "svs": "SvS",
+        "showdown": "Alliance Showdown",
+        "king": "King of Icefield",
+        "hall": "Hall of Chief"
     },
-    "serverStartDate": {
-      "label": "Data de início do servidor",
-      "info": {
-        "label": "Onde achar a data de início do servidor",
-        "screen": "Abra o jogo e vá à tela Servidor pelo seu perfil.",
-        "date": "Leia a data em que o servidor abriu. Se só aparecer o número do dia do servidor, conte esses dias para trás a partir de hoje.",
-        "missing": "Sem data na tela? Pergunte ao líder da sua aliança ou veja o chat do estado.",
-        "tolerance": "Uma data com até 21 dias de diferença para mais ou para menos basta. Os desbloqueios de pesquisa usam 150 e 600 dias, então três semanas de erro raramente mudam o resultado."
-      }
+    "count": "{count, plural, one {{amount} chefe} other {{amount} chefes}}",
+    "card": {
+        "active": "Ativo",
+        "noNotes": "Sem notas",
+        "furnace": "Furnace",
+        "state": "Estado",
+        "created": "Criado em: {date}",
+        "lastModified": "Última alteração: {date}",
+        "setActive": "Definir como ativo",
+        "edit": "Editar",
+        "delete": "Excluir"
     },
-    "generation": {
-      "label": "Heróis liberados até",
-      "hint": "Os heróis de gerações posteriores ficam ocultos na página Heróis e em Plano.",
-      "preLegendary": "Geração 0 (pré-Lendário)",
-      "numbered": "Geração {generation}"
+    "dialog": {
+        "editTitle": "Editar chefe",
+        "newTitle": "Novo chefe",
+        "newDescription": "Dê um nome. O resto é opcional.",
+        "cancel": "Cancelar",
+        "save": "Salvar alterações",
+        "create": "Criar chefe",
+        "errors": {
+            "name": "Informe um nome para este chefe.",
+            "stateNumber": "Informe um número inteiro de 1 a {max}.",
+            "serverStartDate": "Informe uma data que não seja futura."
+        },
+        "name": "Nome",
+        "stateNumber": {
+            "label": "Número do estado",
+            "hint": "O estado em que seu chefe vive. Número inteiro."
+        },
+        "serverStartDate": {
+            "label": "Data de início do servidor",
+            "info": {
+                "label": "Onde achar a data de início do servidor",
+                "screen": "Abra o jogo e vá à tela Servidor pelo seu perfil.",
+                "date": "Leia a data em que o servidor abriu. Se só aparecer o número do dia do servidor, conte esses dias para trás a partir de hoje.",
+                "missing": "Sem data na tela? Pergunte ao líder da sua aliança ou veja o chat do estado.",
+                "tolerance": "Uma data com até 21 dias de diferença para mais ou para menos basta. Os desbloqueios de pesquisa usam 150 e 600 dias, então três semanas de erro raramente mudam o resultado."
+            }
+        },
+        "generation": {
+            "label": "Heróis liberados até",
+            "hint": "Os heróis de gerações posteriores ficam ocultos na página Heróis e em Plano.",
+            "preLegendary": "Geração 0 (pré-Lendário)",
+            "numbered": "Geração {generation}"
+        },
+        "events": {
+            "legend": "Eventos principais exibidos",
+            "shownOf": "{shown} de {total}",
+            "hint": "Os eventos ocultos saem das abas de Eventos principais e do Registro do evento. Ative de novo quando quiser."
+        },
+        "notes": "Notas",
+        "packs": {
+            "legend": "Pacotes",
+            "constructionLabel": "Pacote de Construção",
+            "constructionHint": "Abre o segundo construtor na página Construções.",
+            "constructionBusy": "O segundo construtor está executando uma melhoria. Conclua ou cancele antes para desativar isto.",
+            "marchLabel": "Pacote de Fila de Marcha",
+            "marchHint": "Adiciona uma fila de marcha. Conta na página Bônus."
+        }
     },
-    "events": {
-      "legend": "Eventos principais exibidos",
-      "shownOf": "{shown} de {total}",
-      "hint": "Os eventos ocultos saem das abas de Eventos principais e do Registro do evento. Ative de novo quando quiser."
+    "delete": {
+        "title": "Excluir chefe",
+        "cancel": "Cancelar",
+        "confirmButton": "Excluir chefe",
+        "confirm": "Tem certeza de que quer excluir “<strong>{name}</strong>”?",
+        "summary": "{details} · criado em {date}",
+        "note": "Isto remove o chefe e todos os níveis, metas e notas dele deste dispositivo. Não há como recuperá-lo depois que os 10 segundos de Desfazer acabam.",
+        "exportBackup": "Exportar um backup antes"
     },
-    "notes": "Notas",
-    "packs": {
-      "legend": "Pacotes",
-      "constructionLabel": "Pacote de Construção",
-      "constructionHint": "Abre o segundo construtor na página Construções.",
-      "constructionBusy": "O segundo construtor está executando uma melhoria. Conclua ou cancele antes para desativar isto.",
-      "marchLabel": "Pacote de Fila de Marcha",
-      "marchHint": "Adiciona uma fila de marcha. Conta na página Bônus."
+    "page": {
+        "title": "Chefes",
+        "newChief": "Novo chefe",
+        "sort": {
+            "label": "Ordenar por",
+            "options": {
+                "lastModified": "Última alteração",
+                "createdAt": "Data de criação",
+                "name": "Nome"
+            }
+        },
+        "subline": {
+            "none": "Nenhum chefe ainda.",
+            "total": "{chiefs}.",
+            "withActive": "{chiefs}. {name} está ativo."
+        },
+        "toasts": {
+            "backupTitle": "Backup baixado",
+            "deleted": "{name} excluído",
+            "undo": "Desfazer"
+        },
+        "loading": "Lendo os dados salvos neste navegador. A lista aparece quando estiver pronta.",
+        "empty": {
+            "title": "Nenhum chefe ainda",
+            "description": "Crie um chefe para acompanhar construções, heróis, equipamentos, pesquisas e seu plano de melhorias. Tudo fica neste navegador.",
+            "restore": "Restaurar um backup em Configurações"
+        },
+        "search": {
+            "label": "Buscar pelo nome",
+            "showing": "Mostrando {shown} de {total}",
+            "noMatchTitle": "Nenhum chefe corresponde a “{search}”",
+            "noMatchDescription": "Confira a grafia ou limpe a busca para ver todos os {count} chefes.",
+            "clear": "Limpar busca"
+        }
     }
-  },
-  "delete": {
-    "title": "Excluir chefe",
-    "cancel": "Cancelar",
-    "confirmButton": "Excluir chefe",
-    "confirm": "Tem certeza de que quer excluir “<strong>{name}</strong>”?",
-    "summary": "{details} · criado em {date}",
-    "note": "Isto remove o chefe e todos os níveis, metas e notas dele deste dispositivo. Não há como recuperá-lo depois que os 10 segundos de Desfazer acabam.",
-    "exportBackup": "Exportar um backup antes"
-  },
-  "page": {
-    "title": "Chefes",
-    "newChief": "Novo chefe",
-    "sort": {
-      "label": "Ordenar por",
-      "options": {
-        "lastModified": "Última alteração",
-        "createdAt": "Data de criação",
-        "name": "Nome"
-      }
-    },
-    "subline": {
-      "none": "Nenhum chefe ainda.",
-      "total": "{chiefs}.",
-      "withActive": "{chiefs}. {name} está ativo."
-    },
-    "toasts": {
-      "backupTitle": "Backup baixado",
-      "deleted": "{name} excluído",
-      "undo": "Desfazer"
-    },
-    "loading": "Lendo os dados salvos neste navegador. A lista aparece quando estiver pronta.",
-    "empty": {
-      "title": "Nenhum chefe ainda",
-      "description": "Crie um chefe para acompanhar construções, heróis, equipamentos, pesquisas e seu plano de melhorias. Tudo fica neste navegador.",
-      "restore": "Restaurar um backup em Configurações"
-    },
-    "search": {
-      "label": "Buscar pelo nome",
-      "showing": "Mostrando {shown} de {total}",
-      "noMatchTitle": "Nenhum chefe corresponde a “{search}”",
-      "noMatchDescription": "Confira a grafia ou limpe a busca para ver todos os {count} chefes.",
-      "clear": "Limpar busca"
-    }
-  }
 }
