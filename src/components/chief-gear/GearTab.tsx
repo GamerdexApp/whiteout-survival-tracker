@@ -114,7 +114,7 @@ export function GearTab({ chief }: { chief: Playthrough }) {
 				/>
 				<Card className="flex flex-col gap-3 p-4">
 					<div className="flex items-baseline justify-between gap-3">
-						<h3 className="font-semibold">{t("gear.tiers.title")}</h3>
+						<h2 className="font-semibold">{t("gear.tiers.title")}</h2>
 						<span className="text-muted font-mono text-xs">{t("shared.package")}</span>
 					</div>
 					<p className="text-muted">
@@ -135,7 +135,7 @@ export function GearTab({ chief }: { chief: Playthrough }) {
 					</ul>
 				</Card>
 				<Card className="flex flex-col gap-3 p-4">
-					<h3 className="font-semibold">{t("shared.notes")}</h3>
+					<h2 className="font-semibold">{t("shared.notes")}</h2>
 					<div>
 						<p className="font-semibold">{t("gear.notes.setBonus.title")}</p>
 						<p className="text-muted">{t("gear.notes.setBonus.body")}</p>

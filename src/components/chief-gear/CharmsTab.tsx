@@ -77,7 +77,7 @@ export function CharmsTab({ chief }: { chief: Playthrough }) {
 					return (
 						<section key={slot.id}>
 							<div className="bg-tint flex items-center justify-between gap-3 px-4 py-2">
-								<h3 className="font-semibold">{slot.name}</h3>
+								<h2 className="font-semibold">{slot.name}</h2>
 								<span className="text-muted font-mono text-xs">
 									{t("charms.slotMeta", { troop: slot.troopType })}
 									{stagesToGoals > 0
@@ -123,7 +123,7 @@ export function CharmsTab({ chief }: { chief: Playthrough }) {
 					onOpenPlan={() => setPlanOpen(true)}
 				/>
 				<Card className="flex flex-col gap-3 p-4">
-					<h3 className="font-semibold">{t("shared.notes")}</h3>
+					<h2 className="font-semibold">{t("shared.notes")}</h2>
 					<div>
 						<p className="font-semibold">{t("charms.notes.secrets.title")}</p>
 						<p className="text-muted">{t("charms.notes.secrets.body")}</p>

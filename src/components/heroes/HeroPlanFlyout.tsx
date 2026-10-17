@@ -30,6 +30,7 @@ import { Flyout } from "@/comps/ui/Flyout";
 import { IconButton } from "@/comps/ui/IconButton";
 import { ItemIcon } from "@/comps/ui/ItemIcon";
 import { Note } from "@/comps/ui/Note";
+import { ScrollRegion } from "@/comps/ui/ScrollRegion";
 import { SectionLabel } from "@/comps/ui/SectionLabel";
 import { Select } from "@/comps/ui/Select";
 import { ValueStepper } from "@/comps/ui/ValueStepper";
@@ -373,7 +374,7 @@ function PlanResult({ plan }: { plan: HeroPlanResult }) {
 					</div>
 				)}
 			</div>
-			<div className="overflow-x-auto">
+			<ScrollRegion label={t("result.tableLabel")}>
 				<table className="w-full min-w-[26rem] text-left">
 					<thead>
 						<tr>
@@ -402,7 +403,7 @@ function PlanResult({ plan }: { plan: HeroPlanResult }) {
 						))}
 					</tbody>
 				</table>
-			</div>
+			</ScrollRegion>
 			<p className="font-mono text-xs">
 				{t("result.weaponSkills", {
 					count: plan.unlockedWeaponSkills,

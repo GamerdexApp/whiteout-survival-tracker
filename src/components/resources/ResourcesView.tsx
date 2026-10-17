@@ -175,7 +175,10 @@ export function ResourcesView({ chief }: { chief: Playthrough }) {
 				</Note>
 			)}
 
-			<div className="-mx-4 flex gap-2 overflow-x-auto px-4 pb-1 lg:mx-0 lg:flex-wrap lg:px-0">
+			<div
+				data-focus-inset
+				className="-mx-4 flex gap-2 overflow-x-auto px-4 pb-1 lg:mx-0 lg:flex-wrap lg:px-0"
+			>
 				{[{ category: "all" as const, count: allItems.length }, ...itemCategories].map(
 					(entry) => {
 						const active = category === entry.category;
@@ -184,6 +187,12 @@ export function ResourcesView({ chief }: { chief: Playthrough }) {
 								key={entry.category}
 								type="button"
 								aria-pressed={active}
+								onFocus={(event) =>
+									event.currentTarget.scrollIntoView({
+										block: "nearest",
+										inline: "nearest",
+									})
+								}
 								onClick={() => setCategory(entry.category)}
 								className={`inline-flex min-h-11 shrink-0 items-center gap-2 rounded-full border-[1.5px] px-3 whitespace-nowrap lg:min-h-9 ${
 									active
@@ -290,7 +299,7 @@ export function ResourcesView({ chief }: { chief: Playthrough }) {
 					}
 				/>
 			) : (
-				<Card className="overflow-hidden">
+				<Card data-focus-inset className="overflow-hidden">
 					{isDesktop && (
 						<div
 							aria-hidden="true"

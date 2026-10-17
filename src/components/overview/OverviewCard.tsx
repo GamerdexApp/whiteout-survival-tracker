@@ -27,7 +27,7 @@ export function OverviewCard({
 				{href && linkLabel && (
 					<Link
 						href={href}
-						className="text-link inline-flex min-h-11 items-center underline lg:min-h-9"
+						className="text-link inline-flex min-h-11 min-w-11 items-center justify-center underline lg:min-h-9 lg:min-w-9"
 					>
 						{linkLabel}
 					</Link>

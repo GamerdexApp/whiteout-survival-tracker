@@ -55,7 +55,7 @@ export function HeroCard({ view, onChange, onOpen, onPlan, gearSetNames }: HeroC
 				<div className="flex items-center gap-3">
 					<ItemIcon src={hero.img} size={44} />
 					<div className="flex min-w-0 flex-1 flex-col">
-						<h3 className="truncate font-semibold">{hero.name}</h3>
+						<h2 className="truncate font-semibold">{hero.name}</h2>
 						<span className="text-muted font-mono text-xs">
 							{t("card.summary", {
 								rarity: hero.rarity,

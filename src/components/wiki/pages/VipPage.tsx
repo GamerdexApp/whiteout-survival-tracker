@@ -8,6 +8,7 @@ import { MAX_VIP_LEVEL, vipLevels } from "@/data/game/vip";
 import type { VipLevel } from "@/data/game/vip";
 import { Card } from "@/comps/ui/Card";
 import { Flyout } from "@/comps/ui/Flyout";
+import { ScrollRegion } from "@/comps/ui/ScrollRegion";
 import { SectionLabel } from "@/comps/ui/SectionLabel";
 import { RecordSection } from "../records/RecordParts";
 import type { WikiPageProps } from "../WikiPageProps";
@@ -38,66 +39,68 @@ function Ladder({ onOpen }: { onOpen: (level: VipLevel) => void }) {
 	const cell = "px-2 py-2 text-center font-mono";
 
 	return (
-		<Card className="hidden overflow-x-auto lg:block">
-			<table className="w-full border-collapse">
-				<thead>
-					<tr>
-						<th scope="col" className="px-2 py-2 text-left">
-							<SectionLabel className="text-muted">{t("row")}</SectionLabel>
-						</th>
-						{vipLevels.map((level) => (
-							<th key={level.id} scope="col" className="px-0.5 py-1">
-								<LevelButton
-									level={level}
-									onOpen={onOpen}
-									className="w-full text-xs"
-								/>
+		<Card className="hidden lg:block">
+			<ScrollRegion label={t("title")}>
+				<table className="w-full border-collapse">
+					<thead>
+						<tr>
+							<th scope="col" className="px-2 py-2 text-left">
+								<SectionLabel className="text-muted">{t("row")}</SectionLabel>
 							</th>
-						))}
-					</tr>
-				</thead>
-				<tbody>
-					<tr className="border-line border-t">
-						<th scope="row" className="px-2 py-2 text-left font-normal">
-							{t("xp")}
-						</th>
-						{vipLevels.map((level) => (
-							<td key={level.id} className={cell}>
-								{formatCompact(level.xpRequired)}
-							</td>
-						))}
-					</tr>
-					<tr className="border-line border-t">
-						<th scope="row" className="px-2 py-2 text-left font-normal">
-							{t("running")}
-						</th>
-						{vipLevels.map((level) => (
-							<td key={level.id} className={cell}>
-								{formatCompact(vipRunningXp(level))}
-							</td>
-						))}
-					</tr>
-					{vipStatRows.map((row) => (
-						<tr key={row.statKey} className="border-line border-t">
-							<th scope="row" className="px-2 py-2 text-left font-normal">
-								{row.stat}
-							</th>
-							{vipLevels.map((level) => {
-								const bonus = vipBonusAt(level, row.statKey);
-								return (
-									<td key={level.id} className={cell}>
-										{bonus ? (
-											bonus.value
-										) : (
-											<span className="text-muted">{t("none")}</span>
-										)}
-									</td>
-								);
-							})}
+							{vipLevels.map((level) => (
+								<th key={level.id} scope="col" className="px-0.5 py-1">
+									<LevelButton
+										level={level}
+										onOpen={onOpen}
+										className="w-full text-xs"
+									/>
+								</th>
+							))}
 						</tr>
-					))}
-				</tbody>
-			</table>
+					</thead>
+					<tbody>
+						<tr className="border-line border-t">
+							<th scope="row" className="px-2 py-2 text-left font-normal">
+								{t("xp")}
+							</th>
+							{vipLevels.map((level) => (
+								<td key={level.id} className={cell}>
+									{formatCompact(level.xpRequired)}
+								</td>
+							))}
+						</tr>
+						<tr className="border-line border-t">
+							<th scope="row" className="px-2 py-2 text-left font-normal">
+								{t("running")}
+							</th>
+							{vipLevels.map((level) => (
+								<td key={level.id} className={cell}>
+									{formatCompact(vipRunningXp(level))}
+								</td>
+							))}
+						</tr>
+						{vipStatRows.map((row) => (
+							<tr key={row.statKey} className="border-line border-t">
+								<th scope="row" className="px-2 py-2 text-left font-normal">
+									{row.stat}
+								</th>
+								{vipLevels.map((level) => {
+									const bonus = vipBonusAt(level, row.statKey);
+									return (
+										<td key={level.id} className={cell}>
+											{bonus ? (
+												bonus.value
+											) : (
+												<span className="text-muted">{t("none")}</span>
+											)}
+										</td>
+									);
+								})}
+							</tr>
+						))}
+					</tbody>
+				</table>
+			</ScrollRegion>
 		</Card>
 	);
 }

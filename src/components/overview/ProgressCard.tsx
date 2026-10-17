@@ -70,14 +70,14 @@ export function ProgressCard({ chief, className }: { chief: Playthrough; classNa
 				))}
 			</ul>
 			{locked.length > 0 && (
-				<ul className="border-line divide-line divide-y-[1.5px] border-t-[1.5px] opacity-60">
+				<ul className="border-line divide-line divide-y-[1.5px] border-t-[1.5px]">
 					{locked.map((area) => (
 						<li key={area.id}>
 							<Link
 								href={area.href}
 								className="flex min-h-11 flex-wrap items-center justify-between gap-x-4"
 							>
-								<span>{t(`locked.${area.id}`)}</span>
+								<span className="text-muted">{t(`locked.${area.id}`)}</span>
 								<span className="text-muted text-sm">
 									{t("locked.requirement", {
 										level: area.furnaceLevel,

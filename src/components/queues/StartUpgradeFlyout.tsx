@@ -238,7 +238,7 @@ export function StartUpgradeFlyout(props: StartUpgradeFlyoutProps) {
 												<label
 													className={`flex min-h-11 items-start gap-3 rounded-md border-[1.5px] p-3 ${
 														busy
-															? "border-line cursor-not-allowed opacity-70"
+															? "border-line bg-tint cursor-not-allowed"
 															: selected
 																? "border-primary bg-tint cursor-pointer"
 																: "border-line cursor-pointer"

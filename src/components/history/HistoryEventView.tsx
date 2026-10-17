@@ -27,7 +27,8 @@ interface HistoryEventViewProps {
 	entryId: string;
 }
 
-const BREADCRUMB_LINK = "text-link inline-flex min-h-11 items-center underline lg:min-h-0";
+const BREADCRUMB_LINK =
+	"text-link inline-flex min-h-11 min-w-11 items-center justify-center underline lg:min-h-9 lg:min-w-9";
 
 export function HistoryEventView({ chief, event, entryId }: HistoryEventViewProps) {
 	const t = useTranslations("history");

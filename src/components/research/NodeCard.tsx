@@ -59,6 +59,7 @@ export function NodeCard({ view, onLevelChange, onOpen, onManageJob }: NodeCardP
 	const t = useTranslations("research.nodeCard");
 	const { node, level, max, goal, hasGoal, tabLock, lockedBy, placeholder } = view;
 	const dashed = view.locked || placeholder ? "border-dashed" : "";
+	const surface = view.locked ? "bg-tint" : "bg-surface";
 	const bonus = view.maxed
 		? t("maxed", { bonus: bonusText(node.levels[max - 1]) || t("noBonus") })
 		: view.next
@@ -67,14 +68,14 @@ export function NodeCard({ view, onLevelChange, onOpen, onManageJob }: NodeCardP
 
 	return (
 		<li
-			className={`border-line bg-surface flex flex-col gap-3 rounded-md border-[1.5px] p-3 ${dashed} ${view.locked ? "opacity-80" : ""}`}
+			className={`border-line ${surface} flex flex-col gap-3 rounded-md border-[1.5px] p-3 ${dashed}`}
 		>
 			<div className="flex items-start gap-3">
 				<ItemIcon src={node.img} />
 				<button
 					type="button"
 					onClick={() => onOpen(node.id)}
-					className="hover:text-link min-w-0 flex-1 text-left font-semibold"
+					className="hover:text-link min-h-11 min-w-0 flex-1 text-left font-semibold lg:min-h-9"
 				>
 					{node.name}
 				</button>

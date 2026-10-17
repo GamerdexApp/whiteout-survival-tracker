@@ -32,7 +32,7 @@ export function Switch({
 			aria-describedby={describedBy}
 			disabled={disabled}
 			onClick={() => onChange(!checked)}
-			className={`relative h-7 w-12 shrink-0 rounded-full border-[1.5px] transition-colors disabled:opacity-50 max-lg:z-[1] max-lg:before:absolute max-lg:before:-inset-2.5 max-lg:before:content-[''] ${
+			className={`relative z-[1] h-7 w-12 shrink-0 rounded-full border-[1.5px] transition-colors before:absolute before:-inset-2.5 before:content-[''] disabled:opacity-50 lg:before:-inset-x-0 lg:before:-inset-y-1.5 ${
 				checked ? "border-primary bg-primary" : "border-line bg-track"
 			}`}
 		>

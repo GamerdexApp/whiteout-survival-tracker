@@ -32,7 +32,7 @@ export function FacilityCards({ views, onOwnedChange }: FacilityCardsProps) {
 						<div className="flex items-center gap-3">
 							<ItemIcon size={40} />
 							<div className="flex min-w-0 flex-1 flex-col">
-								<h3 className="font-semibold">{facility.name}</h3>
+								<h2 className="font-semibold">{facility.name}</h2>
 								<span className="text-muted">{facility.bonusStat}</span>
 							</div>
 							<span className="text-muted font-mono text-xs">

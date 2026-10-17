@@ -3,6 +3,7 @@ import type { HeroGearSet } from "@/types/app";
 import { formatDecimal, formatNumber } from "@/lib/format";
 import { allTroopTypes, pieceStats, slotIds, slotName, troopLabel } from "@/service/heroGear";
 import { Card } from "@/comps/ui/Card";
+import { ScrollRegion } from "@/comps/ui/ScrollRegion";
 import { SectionLabel } from "@/comps/ui/SectionLabel";
 
 export function GearStatLines({ set }: { set: HeroGearSet }) {
@@ -10,7 +11,7 @@ export function GearStatLines({ set }: { set: HeroGearSet }) {
 	return (
 		<Card className="flex flex-col gap-3 p-4">
 			<h3 className="font-semibold">{t("title")}</h3>
-			<div className="overflow-x-auto">
+			<ScrollRegion label={t("title")}>
 				<table className="w-full min-w-[34rem] text-left">
 					<thead>
 						<tr>
@@ -73,7 +74,7 @@ export function GearStatLines({ set }: { set: HeroGearSet }) {
 						))}
 					</tbody>
 				</table>
-			</div>
+			</ScrollRegion>
 			<p className="text-muted text-xs">{t("note", { name: set.name })}</p>
 		</Card>
 	);

@@ -18,7 +18,7 @@ export function LadderSummaryCard({
 	return (
 		<Card className="flex flex-col gap-3 p-4">
 			<div className="flex items-baseline justify-between gap-3">
-				<h3 className="font-semibold">{t("title")}</h3>
+				<h2 className="font-semibold">{t("title")}</h2>
 				<span className="text-muted font-mono text-xs">{t("derived")}</span>
 			</div>
 			<div className="flex flex-wrap gap-6">
@@ -57,7 +57,7 @@ export function LadderSummaryCard({
 			<button
 				type="button"
 				onClick={onOpenPlan}
-				className="text-link w-fit font-medium underline"
+				className="text-link inline-flex min-h-11 w-fit items-center font-medium underline lg:min-h-9"
 			>
 				{t("openPlan")}
 			</button>

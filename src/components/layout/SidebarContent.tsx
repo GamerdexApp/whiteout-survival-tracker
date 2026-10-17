@@ -45,7 +45,7 @@ function SidebarLink({
 			href={item.href}
 			onClick={onNavigate}
 			aria-current={active ? "page" : undefined}
-			className={`flex h-10 items-center gap-2.5 rounded-md px-2.5 lg:h-[34px] ${
+			className={`flex h-10 items-center gap-2.5 rounded-md px-2.5 lg:h-9 ${
 				active
 					? "bg-sb-active-bg text-sb-active-text font-semibold"
 					: "text-sb-text hover:bg-sb-line"
@@ -77,6 +77,7 @@ export function SidebarContent({ onNavigate }: { onNavigate?: () => void }) {
 			<ChiefSwitcher onNavigate={onNavigate} />
 			<nav
 				aria-label={t("main")}
+				data-focus-inset
 				className="flex min-h-0 flex-1 flex-col gap-0.5 overflow-y-auto"
 			>
 				{navGroups.map((group) => (

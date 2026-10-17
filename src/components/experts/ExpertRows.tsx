@@ -42,7 +42,7 @@ export function HeldInput({
 			value={formatNumber(value)}
 			disabled={disabled}
 			onChange={(event) => onChange(parseCount(event.target.value))}
-			className="border-line bg-surface text-ink min-h-11 w-28 rounded-md border-[1.5px] px-2 text-right font-mono font-medium disabled:opacity-60 lg:min-h-8"
+			className="border-line bg-surface text-ink min-h-11 w-28 rounded-md border-[1.5px] px-2 text-right font-mono font-medium disabled:opacity-60 lg:min-h-9"
 		/>
 	);
 }

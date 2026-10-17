@@ -8,6 +8,7 @@ import { bannerRows } from "@/service/alliance";
 import { BANNER_RESOURCE_IDS } from "@/data/game/alliance";
 import { findItem } from "@/data/game/items";
 import { Card } from "@/comps/ui/Card";
+import { ScrollRegion } from "@/comps/ui/ScrollRegion";
 
 const stateTone = {
 	built: "text-kept",
@@ -36,7 +37,11 @@ export function BannerTable({ chief }: { chief: Playthrough }) {
 					{t("note", { count: formatNumber(rows.length) })}
 				</span>
 			</div>
-			<div ref={scrollRef} className="relative max-h-[32rem] overflow-auto">
+			<ScrollRegion
+				ref={scrollRef}
+				label={t("title")}
+				className="relative max-h-[32rem] overflow-auto"
+			>
 				<table className="w-full min-w-[34rem] border-collapse text-left">
 					<thead className="bg-surface sticky top-0">
 						<tr className="border-line text-muted border-y-[1.5px] font-mono text-xs uppercase">
@@ -78,7 +83,7 @@ export function BannerTable({ chief }: { chief: Playthrough }) {
 						))}
 					</tbody>
 				</table>
-			</div>
+			</ScrollRegion>
 		</Card>
 	);
 }

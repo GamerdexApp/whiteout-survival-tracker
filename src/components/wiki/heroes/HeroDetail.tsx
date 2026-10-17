@@ -32,7 +32,7 @@ export function HeroDetail({ hero }: { hero: Hero }) {
 				<div className="flex items-center gap-3">
 					<ItemIcon src={hero.img} size={64} />
 					<div className="flex min-w-0 flex-col gap-2">
-						<h3 className="text-xl font-semibold">{hero.name}</h3>
+						<h2 className="text-xl font-semibold">{hero.name}</h2>
 						<div className="flex flex-wrap gap-2">
 							<Badge tone="changed">{hero.rarity}</Badge>
 							<Badge tone="kept">{hero.class}</Badge>

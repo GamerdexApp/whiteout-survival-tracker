@@ -28,10 +28,7 @@ export function BuildersStrip({ chief, onManage, onFinish }: BuildersStripProps)
 				{BUILDER_NUMBERS.map((builder) => {
 					if (!availableBuilders(chief).includes(builder)) {
 						return (
-							<Card
-								key={builder}
-								className="flex flex-col gap-1.5 border-dashed p-4 opacity-70"
-							>
+							<Card key={builder} dimmed className="flex flex-col gap-1.5 p-4">
 								<SectionLabel className="text-muted">
 									{t("builderName", { number: formatNumber(builder) })}
 								</SectionLabel>

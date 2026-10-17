@@ -397,7 +397,7 @@ function WeaponSection({
 					return (
 						<div
 							key={skill.name}
-							className={`border-line rounded-md border-[1.5px] border-dashed p-3 ${reached ? "" : "opacity-70"}`}
+							className={`border-line rounded-md border-[1.5px] border-dashed p-3 ${reached ? "" : "bg-tint"}`}
 						>
 							<div className="flex items-baseline justify-between gap-3">
 								<span className="font-medium">{skill.name}</span>

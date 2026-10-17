@@ -29,6 +29,7 @@ import { Card } from "@/comps/ui/Card";
 import { Flyout } from "@/comps/ui/Flyout";
 import { ItemIcon } from "@/comps/ui/ItemIcon";
 import { LevelStepper } from "@/comps/ui/LevelStepper";
+import { ScrollRegion } from "@/comps/ui/ScrollRegion";
 import { SectionLabel } from "@/comps/ui/SectionLabel";
 
 interface LadderPlanFlyoutProps {
@@ -264,7 +265,7 @@ function PlanBody({
 					<h3 className="font-semibold">
 						{kind === "gear" ? t("bySlot") : t("byCharm")}
 					</h3>
-					<div className="overflow-x-auto">
+					<ScrollRegion label={kind === "gear" ? t("bySlot") : t("byCharm")}>
 						<table className="w-full min-w-[24rem] text-left">
 							<thead>
 								<tr>
@@ -305,13 +306,13 @@ function PlanBody({
 								))}
 							</tbody>
 						</table>
-					</div>
+					</ScrollRegion>
 				</Card>
 			)}
 
 			<Card className="flex flex-col gap-2 p-4">
 				<h3 className="font-semibold">{t("converter.title")}</h3>
-				<div className="overflow-x-auto">
+				<ScrollRegion label={t("converter.title")}>
 					<table className="w-full min-w-[22rem] text-left">
 						<thead>
 							<tr>
@@ -353,7 +354,7 @@ function PlanBody({
 							))}
 						</tbody>
 					</table>
-				</div>
+				</ScrollRegion>
 			</Card>
 		</>
 	);

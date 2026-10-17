@@ -56,12 +56,13 @@ export function ExpertCard({ view, chief, onChange }: ExpertCardProps) {
 
 	return (
 		<li className="mb-3 break-inside-avoid">
-			<Card
-				className={`flex flex-col gap-3 p-3 ${recruited ? "" : locked ? "opacity-60" : "opacity-70"}`}
-				data-locked={locked}
-			>
+			<Card dimmed={!recruited} className="flex flex-col gap-3 p-3" data-locked={locked}>
 				<div className="flex items-center gap-3">
-					<ItemIcon src={expert.img} size={44} />
+					<ItemIcon
+						src={expert.img}
+						size={44}
+						className={recruited ? "" : "opacity-60"}
+					/>
 					<div className="flex min-w-0 flex-1 flex-col">
 						<h3 className="truncate font-semibold">{expert.name}</h3>
 						<span className="text-muted font-mono text-xs">
@@ -180,7 +181,7 @@ function RecruitedBody({
 							onClick={() =>
 								onChange({ kind: "advanced", expertId, advanced: !view.advanced })
 							}
-							className={`inline-flex min-h-11 items-center rounded-full border-[1.5px] px-2 font-mono text-[11px] tracking-[0.06em] uppercase lg:min-h-8 ${
+							className={`inline-flex min-h-11 items-center rounded-full border-[1.5px] px-2 font-mono text-[11px] tracking-[0.06em] uppercase lg:min-h-9 ${
 								view.advanced ? "text-kept" : "text-muted"
 							}`}
 						>

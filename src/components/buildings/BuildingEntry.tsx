@@ -127,7 +127,12 @@ function ShelterSummary({
 			<span className="font-mono text-xs">
 				{view.held.length === 0 ? t("entry.shelters.none") : view.held.join(" · ")}
 			</span>
-			<Button onClick={onOpenShelters} aria-label={t("entry.shelters.editLabel")}>
+			<Button
+				onClick={onOpenShelters}
+				aria-label={t("entry.shelters.editLabel", {
+					count: formatNumber(view.held.length),
+				})}
+			>
 				{t("entry.shelters.button", { count: formatNumber(view.held.length) })}
 			</Button>
 		</div>
@@ -183,7 +188,7 @@ export function BuildingEntry(props: BuildingEntryProps) {
 		onManageUpgrade,
 	} = props;
 	const entertainment = isEntertainment(view.building);
-	const dimmed = view.lockedBy ? "opacity-70" : "";
+	const locked = view.lockedBy !== null;
 	const levelsButton = (
 		<Button
 			onClick={() => onOpenLevels(view.building.id)}
@@ -213,7 +218,7 @@ export function BuildingEntry(props: BuildingEntryProps) {
 	if (isDesktop) {
 		return (
 			<li
-				className={`border-line grid ${DESKTOP_COLUMNS} items-center gap-3 border-t-[1.5px] px-4 py-3 ${dimmed}`}
+				className={`border-line grid ${DESKTOP_COLUMNS} items-center gap-3 border-t-[1.5px] px-4 py-3 ${locked ? "bg-tint" : ""}`}
 			>
 				<Name view={view} />
 				<div>
@@ -252,7 +257,7 @@ export function BuildingEntry(props: BuildingEntryProps) {
 
 	return (
 		<li
-			className={`border-line bg-surface flex flex-col gap-3 rounded-md border-[1.5px] p-3 ${dimmed}`}
+			className={`border-line ${locked ? "bg-tint border-dashed" : "bg-surface"} flex flex-col gap-3 rounded-md border-[1.5px] p-3`}
 		>
 			<div className="flex items-start justify-between gap-3">
 				<Name view={view} />

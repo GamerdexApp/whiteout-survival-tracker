@@ -45,9 +45,7 @@ export function FacilitiesTab({ chief }: { chief: Playthrough }) {
 					const locked = !built && !unlocked;
 					return (
 						<li key={facility.id} className="mb-4 break-inside-avoid">
-							<Card
-								className={`flex flex-col gap-3 p-4 ${locked ? "opacity-70" : ""}`}
-							>
+							<Card dimmed={locked} className="flex flex-col gap-3 p-4">
 								<div className="flex items-center gap-3">
 									<img
 										src={facility.img}

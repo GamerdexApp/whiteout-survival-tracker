@@ -10,6 +10,7 @@ import { Button } from "@/comps/ui/Button";
 import { Dialog } from "@/comps/ui/Dialog";
 import { Note } from "@/comps/ui/Note";
 import { RadioGroup } from "@/comps/ui/RadioGroup";
+import { ScrollRegion } from "@/comps/ui/ScrollRegion";
 
 export interface ImportFile {
 	name: string;
@@ -104,7 +105,7 @@ export function ImportDialog({
 					</div>
 					<div className="flex flex-col gap-2">
 						<h3 className="font-medium">{t("whatChanges")}</h3>
-						<div className="overflow-x-auto">
+						<ScrollRegion label={t("whatChanges")}>
 							<table className="w-full text-left">
 								<thead className="text-muted text-xs">
 									<tr>
@@ -138,7 +139,7 @@ export function ImportDialog({
 									))}
 								</tbody>
 							</table>
-						</div>
+						</ScrollRegion>
 						<p className="text-muted">{summary || t("noChiefs")}</p>
 						<p className="text-muted">{t("undoNote")}</p>
 					</div>

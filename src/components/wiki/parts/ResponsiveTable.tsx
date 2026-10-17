@@ -74,7 +74,7 @@ export function ResponsiveTable<Row>({
 											{column === titleColumn && href ? (
 												<Link
 													href={href}
-													className="inline-flex min-h-11 items-center font-semibold underline lg:min-h-9"
+													className="inline-flex min-h-11 min-w-11 items-center font-semibold underline lg:min-h-9 lg:min-w-9"
 												>
 													{column.render(row)}
 												</Link>
@@ -83,7 +83,7 @@ export function ResponsiveTable<Row>({
 													type="button"
 													aria-haspopup="dialog"
 													onClick={() => onRowSelect(row)}
-													className="inline-flex min-h-11 items-center text-left font-semibold underline lg:min-h-9"
+													className="inline-flex min-h-11 min-w-11 items-center text-left font-semibold underline lg:min-h-9 lg:min-w-9"
 												>
 													{column.render(row)}
 												</button>

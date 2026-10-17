@@ -130,7 +130,7 @@
             "title": "Delete {name}?",
             "titleFallback": "Delete set",
             "confirm": "Delete set",
-            "body": "The four pieces of {name} and their goals are removed from this device and from synced devices at the next sync.",
+            "body": "The four pieces of {name} and their goals are removed from this device.",
             "undoNote": "You can undo for 10 seconds after deleting.",
             "exportBackup": "Export a backup first"
         },
@@ -202,7 +202,8 @@
                 "allianceShowdown": "Alliance Showdown",
                 "kingOfIcefield": "King of Icefield"
             },
-            "note": "Plan Hero Gear has no speed or bonus controls. The calculator returns no time."
+            "note": "Plan Hero Gear has no speed or bonus controls. The calculator returns no time.",
+            "tableLabel": "Plan result table"
         }
     },
     "export": {

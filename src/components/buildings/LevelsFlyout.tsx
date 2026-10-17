@@ -143,7 +143,7 @@ function LevelsContent({ view, fcHints }: { view: BuildingView; fcHints: AgeHint
 								return (
 									<li
 										key={level.id}
-										className={`border-line flex flex-col gap-2 border-t-[1.5px] px-3 py-3 first:border-t-0 ${ageHint ? "opacity-70" : ""}`}
+										className={`border-line flex flex-col gap-2 border-t-[1.5px] px-3 py-3 first:border-t-0 ${ageHint ? "bg-tint" : ""}`}
 									>
 										<div
 											className={`grid items-start gap-3 ${

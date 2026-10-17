@@ -98,14 +98,14 @@ export function TasksCard({ state, cycle, actions, onEditList, onAddTask }: Task
 									<div className="flex gap-3 pb-1 pl-8 max-lg:hidden">
 										<button
 											type="button"
-											className="text-link text-sm"
+											className="text-link min-h-9 text-sm"
 											onClick={() => setRenamingId(task.id)}
 										>
 											{t("rename")}
 										</button>
 										<button
 											type="button"
-											className="text-danger text-sm"
+											className="text-danger min-h-9 text-sm"
 											onClick={() => actions.remove(task.id)}
 										>
 											{t("remove")}

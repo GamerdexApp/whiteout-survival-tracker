@@ -33,6 +33,7 @@ import { Card } from "@/comps/ui/Card";
 import { Flyout } from "@/comps/ui/Flyout";
 import { IconButton } from "@/comps/ui/IconButton";
 import { ItemIcon } from "@/comps/ui/ItemIcon";
+import { ScrollRegion } from "@/comps/ui/ScrollRegion";
 import { SectionLabel } from "@/comps/ui/SectionLabel";
 import { Select } from "@/comps/ui/Select";
 import { ValueStepper } from "@/comps/ui/ValueStepper";
@@ -416,7 +417,7 @@ function PlanResult({ plan }: { plan: GearPlanResult }) {
 					</div>
 				))}
 			</div>
-			<div className="overflow-x-auto">
+			<ScrollRegion label={t("result.tableLabel")}>
 				<table className="w-full min-w-[26rem] text-left">
 					<thead>
 						<tr>
@@ -454,7 +455,7 @@ function PlanResult({ plan }: { plan: GearPlanResult }) {
 						))}
 					</tbody>
 				</table>
-			</div>
+			</ScrollRegion>
 			{plan.milestones.length > 0 && (
 				<div className="flex flex-col gap-1">
 					<SectionLabel className="text-muted">{t("result.milestones")}</SectionLabel>

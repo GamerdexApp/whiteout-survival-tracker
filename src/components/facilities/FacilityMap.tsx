@@ -29,7 +29,7 @@ function Layer({
 	onChange: (checked: boolean) => void;
 }) {
 	return (
-		<label className="flex min-h-11 cursor-pointer items-center gap-2 lg:min-h-8">
+		<label className="flex min-h-11 cursor-pointer items-center gap-2 lg:min-h-9">
 			<input
 				type="checkbox"
 				checked={checked}
@@ -67,7 +67,7 @@ export function FacilityMap() {
 								type="button"
 								aria-pressed={highlightId === facility.id}
 								onClick={() => setHighlightId(facility.id)}
-								className={`min-h-11 rounded-full border-[1.5px] px-3 font-medium lg:min-h-8 ${highlightId === facility.id ? "border-primary bg-tint text-primary" : "border-line bg-surface hover:bg-tint"}`}
+								className={`min-h-11 rounded-full border-[1.5px] px-3 font-medium lg:min-h-9 ${highlightId === facility.id ? "border-primary bg-tint text-primary" : "border-line bg-surface hover:bg-tint"}`}
 							>
 								{facility.name}
 							</button>

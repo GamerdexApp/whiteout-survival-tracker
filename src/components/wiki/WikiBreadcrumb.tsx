@@ -9,7 +9,8 @@ export interface BreadcrumbStep {
 	href?: string;
 }
 
-const linkClasses = "hover:text-ink inline-flex min-h-11 items-center underline lg:min-h-0";
+const linkClasses =
+	"hover:text-ink inline-flex min-h-11 items-center underline min-w-11 justify-center lg:min-h-9 lg:min-w-9";
 
 /** Wiki first, then the steps down to the current page. */
 export function WikiBreadcrumb({ steps }: { steps: BreadcrumbStep[] }) {

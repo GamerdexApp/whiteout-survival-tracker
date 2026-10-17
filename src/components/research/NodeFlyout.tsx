@@ -12,6 +12,7 @@ import { Button } from "@/comps/ui/Button";
 import { Card } from "@/comps/ui/Card";
 import { Flyout } from "@/comps/ui/Flyout";
 import { ItemIcon } from "@/comps/ui/ItemIcon";
+import { ScrollRegion } from "@/comps/ui/ScrollRegion";
 import { SectionLabel } from "@/comps/ui/SectionLabel";
 
 const LEVELS_SHOWN = 5;
@@ -62,6 +63,8 @@ function NodeContent({
 	const timeText = (seconds: number | undefined) =>
 		seconds === undefined ? t("unknown") : formatDuration(seconds);
 	const { node, level, max, goal, hasGoal, placeholder } = view;
+	const upcomingTitle =
+		level === 0 ? t("upcoming.first") : t("upcoming.after", { level: formatNumber(level) });
 	const upcoming = node.levels.filter((item) => item.level > level).slice(0, LEVELS_SHOWN);
 	const itemIds = [...new Set(upcoming.flatMap((item) => item.cost.map((cost) => cost.itemId)))];
 	const toGoal = hasGoal
@@ -130,12 +133,8 @@ function NodeContent({
 			) : (
 				<>
 					<Card className="flex flex-col gap-3 p-4">
-						<h3 className="font-semibold">
-							{level === 0
-								? t("upcoming.first")
-								: t("upcoming.after", { level: formatNumber(level) })}
-						</h3>
-						<div className="overflow-x-auto">
+						<h3 className="font-semibold">{upcomingTitle}</h3>
+						<ScrollRegion label={upcomingTitle}>
 							<table className="w-full min-w-[26rem] text-left">
 								<thead>
 									<tr>
@@ -178,13 +177,13 @@ function NodeContent({
 									})}
 								</tbody>
 							</table>
-						</div>
+						</ScrollRegion>
 						{hasGoal && <p className="text-muted text-xs">{t("upcoming.shaded")}</p>}
 					</Card>
 
 					<Card className="flex flex-col gap-3 p-4">
 						<h3 className="font-semibold">{t("cost.title")}</h3>
-						<div className="overflow-x-auto">
+						<ScrollRegion label={t("cost.title")}>
 							<table className="w-full min-w-[26rem] text-right">
 								<thead>
 									<tr>
@@ -223,7 +222,7 @@ function NodeContent({
 									))}
 								</tbody>
 							</table>
-						</div>
+						</ScrollRegion>
 					</Card>
 
 					{hasGoal && (

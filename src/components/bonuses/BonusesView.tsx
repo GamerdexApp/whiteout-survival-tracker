@@ -128,12 +128,21 @@ export function BonusesView({ chief }: { chief: Playthrough }) {
 			</div>
 
 			{view === "stat" && (
-				<div className="-mx-4 flex gap-2 overflow-x-auto px-4 pb-1 lg:mx-0 lg:flex-wrap lg:px-0">
+				<div
+					data-focus-inset
+					className="-mx-4 flex gap-2 overflow-x-auto px-4 pb-1 lg:mx-0 lg:flex-wrap lg:px-0"
+				>
 					{groupChips.map((chip) => (
 						<button
 							key={chip.id}
 							type="button"
 							aria-pressed={groupId === chip.id}
+							onFocus={(event) =>
+								event.currentTarget.scrollIntoView({
+									block: "nearest",
+									inline: "nearest",
+								})
+							}
 							onClick={() => setGroupId(chip.id)}
 							className={`inline-flex min-h-11 shrink-0 items-center gap-2 rounded-full border-[1.5px] px-3 whitespace-nowrap lg:min-h-9 ${
 								groupId === chip.id
@@ -162,7 +171,7 @@ export function BonusesView({ chief }: { chief: Playthrough }) {
 					}
 				/>
 			) : view === "stat" ? (
-				<Card className="overflow-hidden">
+				<Card data-focus-inset className="overflow-hidden">
 					{visibleGroups.map((group) => (
 						<section key={group.id} aria-label={group.name}>
 							<div className="bg-tint flex items-baseline justify-between gap-3 px-4 py-2">
@@ -192,7 +201,7 @@ export function BonusesView({ chief }: { chief: Playthrough }) {
 			) : (
 				<div className="flex flex-col gap-3">
 					{visibleSources.map((source) => (
-						<Card key={source.id} className="overflow-hidden">
+						<Card key={source.id} data-focus-inset className="overflow-hidden">
 							<div className="bg-tint px-4 py-2">
 								<h2 className="font-semibold">{source.name}</h2>
 							</div>

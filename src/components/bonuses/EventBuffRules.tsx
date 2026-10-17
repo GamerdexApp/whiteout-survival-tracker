@@ -1,6 +1,7 @@
 import { eventBuff } from "whiteout-survival-data";
 import { useTranslations } from "next-intl";
 import { Card } from "@/comps/ui/Card";
+import { ScrollRegion } from "@/comps/ui/ScrollRegion";
 import { SectionLabel } from "@/comps/ui/SectionLabel";
 
 const columnKeys = [
@@ -18,7 +19,7 @@ export function EventBuffRules() {
 		<Card className="flex flex-col gap-3 p-4">
 			<h2 className="text-base font-semibold">{t("title")}</h2>
 			<p className="text-muted">{t("intro")}</p>
-			<div className="overflow-x-auto">
+			<ScrollRegion label={t("title")}>
 				<table className="w-full min-w-[32rem] text-left">
 					<thead>
 						<tr>
@@ -47,7 +48,7 @@ export function EventBuffRules() {
 						))}
 					</tbody>
 				</table>
-			</div>
+			</ScrollRegion>
 		</Card>
 	);
 }

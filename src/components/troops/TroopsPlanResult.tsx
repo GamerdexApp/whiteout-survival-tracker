@@ -7,6 +7,7 @@ import { allTroops, MAX_TIER } from "@/data/game/troops";
 import { Button } from "@/comps/ui/Button";
 import { Card } from "@/comps/ui/Card";
 import { ItemIcon } from "@/comps/ui/ItemIcon";
+import { ScrollRegion } from "@/comps/ui/ScrollRegion";
 import { SectionLabel } from "@/comps/ui/SectionLabel";
 
 const signed = (value: number) => (value > 0 ? `+${formatNumber(value)}` : formatNumber(value));
@@ -56,7 +57,7 @@ export function TroopsPlanResultCard({
 			</div>
 			<div className="flex flex-col gap-2">
 				<SectionLabel className="text-muted">{t("changes")}</SectionLabel>
-				<div className="overflow-x-auto">
+				<ScrollRegion label={t("changes")}>
 					<table className="w-full text-right">
 						<thead>
 							<tr>
@@ -106,7 +107,7 @@ export function TroopsPlanResultCard({
 							</tr>
 						</tbody>
 					</table>
-				</div>
+				</ScrollRegion>
 			</div>
 			<div className="flex flex-col gap-1">
 				<SectionLabel className="text-muted">{t("time")}</SectionLabel>

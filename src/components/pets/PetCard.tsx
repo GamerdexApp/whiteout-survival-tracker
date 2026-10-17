@@ -29,14 +29,15 @@ export function PetCard({ view, chief, ruleMet, onChange }: PetCardProps) {
 	return (
 		<li className="mb-3 break-inside-avoid">
 			<Card
-				className={`flex flex-col gap-3 p-3 ${unlocked ? "" : "border-dashed"} ${locked ? "opacity-60" : ""}`}
+				dimmed={!unlocked}
+				className="flex flex-col gap-3 p-3"
 				data-unlocked={unlocked}
 				data-locked={locked}
 			>
 				<div className="flex items-center gap-3">
 					<ItemIcon src={pet.img} size={44} className={unlocked ? "" : "opacity-60"} />
 					<div className="flex min-w-0 flex-1 flex-col">
-						<h3 className="font-semibold">{pet.name}</h3>
+						<h2 className="font-semibold">{pet.name}</h2>
 						<span className="text-muted font-mono text-xs">
 							{t("card.summary", {
 								rarity: t(`rarities.${pet.rarity}`),
@@ -62,12 +63,12 @@ export function PetCard({ view, chief, ruleMet, onChange }: PetCardProps) {
 				{unlocked ? (
 					<UnlockedBody view={view} onChange={onChange} />
 				) : (
-					<div className="flex flex-col gap-3 opacity-80">
+					<div className="flex flex-col gap-3">
 						<SkillLines view={view} showTiers />
 					</div>
 				)}
 
-				<div className={`flex flex-col gap-1 ${unlocked ? "" : "opacity-80"}`}>
+				<div className="flex flex-col gap-1">
 					{unlocked ? (
 						<div className="flex items-center justify-between gap-3">
 							<span className="text-muted">{t("card.unlockRule")}</span>

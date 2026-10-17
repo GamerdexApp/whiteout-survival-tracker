@@ -37,7 +37,7 @@ export function PetDetail({ pet }: { pet: Pet }) {
 				<div className="flex items-center gap-3">
 					<ItemIcon src={pet.img} size={64} />
 					<div className="flex flex-col gap-2">
-						<h3 className="text-xl font-semibold">{pet.name}</h3>
+						<h2 className="text-xl font-semibold">{pet.name}</h2>
 						<span>
 							<Badge tone={petRarityTone[pet.rarity]}>{pet.rarity}</Badge>
 						</span>

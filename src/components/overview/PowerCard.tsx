@@ -54,7 +54,7 @@ export function PowerCard({ chief, className = "" }: { chief: Playthrough; class
 						<div className="flex items-baseline justify-between gap-3">
 							<Link
 								href={row.href}
-								className="text-link inline-flex min-h-11 items-center font-medium underline lg:min-h-9"
+								className="text-link inline-flex min-h-11 min-w-11 items-center font-medium underline lg:min-h-9 lg:min-w-9"
 							>
 								{t(`groups.${row.id}`)}
 							</Link>
@@ -67,10 +67,12 @@ export function PowerCard({ chief, className = "" }: { chief: Playthrough; class
 										})}
 							</span>
 						</div>
-						<ProgressBar
-							value={row.possible === null ? 0 : percentOf(row.power, row.possible)}
-							label={t("progress", { group: t(`groups.${row.id}`) })}
-						/>
+						{row.possible !== null && (
+							<ProgressBar
+								value={percentOf(row.power, row.possible)}
+								label={t("progress", { group: t(`groups.${row.id}`) })}
+							/>
+						)}
 						<span className="text-muted text-xs">
 							{row.possible === null
 								? t("noMaximum")

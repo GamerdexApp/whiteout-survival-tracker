@@ -25,6 +25,8 @@ function UnlockLine({ label, state }: { label: string; state: UnlockState | null
 	);
 }
 
+const ROW_WITH_NOTE = "grid grid-cols-[1fr_auto] items-baseline gap-x-3 gap-y-0.5 py-2.5";
+
 function NextLine({ next, names }: { next: NextUnlock; names: string }) {
 	const t = useTranslations("overview.server.next");
 	const values = {
@@ -41,7 +43,7 @@ function NextLine({ next, names }: { next: NextUnlock; names: string }) {
 				? t("withDate", values)
 				: t("noDate", values);
 
-	return <p className="text-muted text-xs">{text}</p>;
+	return <dd className="text-muted col-span-2 text-xs">{text}</dd>;
 }
 
 function AreaRow({ row }: { row: AreaUnlockRow }) {
@@ -58,16 +60,14 @@ function AreaRow({ row }: { row: AreaUnlockRow }) {
 				});
 
 	return (
-		<div className="flex flex-col gap-0.5 py-2.5">
-			<div className="flex items-baseline justify-between gap-3">
-				<dt>{t(`areas.${row.area}`)}</dt>
-				<dd className="font-mono text-sm">{status}</dd>
-			</div>
+		<div className={ROW_WITH_NOTE}>
+			<dt>{t(`areas.${row.area}`)}</dt>
+			<dd className="font-mono text-sm">{status}</dd>
 			{!row.unknown &&
 				(row.next ? (
 					<NextLine next={row.next} names={row.next.names.join(", ")} />
 				) : (
-					<p className="text-muted text-xs">{t("allUnlocked")}</p>
+					<dd className="text-muted col-span-2 text-xs">{t("allUnlocked")}</dd>
 				))}
 		</div>
 	);
@@ -106,13 +106,11 @@ export function ServerAgeCard({
 			<dl className="divide-line border-line divide-y-[1.5px] border-t-[1.5px]">
 				<UnlockLine label={t("warAcademy")} state={age.warAcademy} />
 				<UnlockLine label={t("t12")} state={age.t12} />
-				<div className="flex flex-col gap-0.5 py-2.5">
-					<div className="flex items-baseline justify-between gap-3">
-						<dt>{t("heroes")}</dt>
-						<dd className="font-mono text-sm">
-							{t("generation", { number: formatNumber(age.heroGeneration) })}
-						</dd>
-					</div>
+				<div className={ROW_WITH_NOTE}>
+					<dt>{t("heroes")}</dt>
+					<dd className="font-mono text-sm">
+						{t("generation", { number: formatNumber(age.heroGeneration) })}
+					</dd>
 					{generation ? (
 						<NextLine
 							next={generation.next}
@@ -121,7 +119,7 @@ export function ServerAgeCard({
 							})}
 						/>
 					) : (
-						<p className="text-muted text-xs">{t("allGenerations")}</p>
+						<dd className="text-muted col-span-2 text-xs">{t("allGenerations")}</dd>
 					)}
 				</div>
 				<AreaRow row={areaUnlockRow(chief, "fireCrystal", now)} />

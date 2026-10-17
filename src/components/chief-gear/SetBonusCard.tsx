@@ -9,7 +9,7 @@ export function SetBonusCard({ bonuses }: { bonuses: SetBonusView[] }) {
 	return (
 		<Card className="flex flex-col gap-3 p-4">
 			<div className="flex items-baseline justify-between gap-3">
-				<h3 className="font-semibold">{t("setBonus.title")}</h3>
+				<h2 className="font-semibold">{t("setBonus.title")}</h2>
 				<span className="text-muted font-mono text-xs">{t("shared.package")}</span>
 			</div>
 			<ul className="grid gap-3 sm:grid-cols-2">

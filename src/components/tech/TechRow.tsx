@@ -32,16 +32,16 @@ export function TechRow({ view, onLevelChange, onOpen }: TechRowProps) {
 
 	return (
 		<li
-			className={`border-line grid items-center gap-x-4 gap-y-2 border-t-[1.5px] px-4 py-3 first:border-t-0 ${TECH_ROW_GRID} ${locked ? "bg-tint opacity-80" : ""}`}
+			className={`border-line grid items-center gap-x-4 gap-y-2 border-t-[1.5px] px-4 py-3 first:border-t-0 ${TECH_ROW_GRID} ${locked ? "bg-tint" : ""}`}
 		>
 			<div className="flex min-w-0 items-center gap-3">
-				<ItemIcon src={node.img} size={40} />
+				<ItemIcon src={node.img} size={40} className={locked ? "opacity-60" : ""} />
 				<span className="flex min-w-0 flex-col">
 					<button
 						type="button"
 						aria-label={t("node.open", { name: node.name })}
 						onClick={() => onOpen(node.id)}
-						className="text-ink hover:text-primary truncate text-left font-semibold"
+						className="text-ink hover:text-primary min-h-11 truncate text-left font-semibold lg:min-h-9"
 					>
 						{node.name}
 					</button>

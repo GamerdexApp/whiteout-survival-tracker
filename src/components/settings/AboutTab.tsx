@@ -14,7 +14,10 @@ export function AboutTab() {
 			>
 				<p>{t("summary")}</p>
 				<p>
-					<Link href="/wiki" className="text-link font-medium underline">
+					<Link
+						href="/wiki"
+						className="text-link inline-flex min-h-11 items-center font-medium underline lg:min-h-9"
+					>
 						{t("wiki")}
 					</Link>
 				</p>

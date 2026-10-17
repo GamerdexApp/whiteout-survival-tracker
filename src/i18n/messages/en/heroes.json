@@ -1,5 +1,7 @@
 {
-    "page": { "title": "Heroes" },
+    "page": {
+        "title": "Heroes"
+    },
     "view": {
         "tabsLabel": "Heroes",
         "heroesTab": "Heroes",
@@ -30,7 +32,9 @@
         "maxLevelSuffix": "/ {max}",
         "heroCount": "{count, plural, one {{amount} hero} other {{amount} heroes}}"
     },
-    "goalText": { "to": "to {goal}" },
+    "goalText": {
+        "to": "to {goal}"
+    },
     "card": {
         "summary": "{rarity} · {heroClass} · {generation}",
         "talentRow": "Talent {name}",
@@ -225,7 +229,8 @@
                 "skillLevels": "Skill levels",
                 "shards": "Shards",
                 "widgets": "Widgets"
-            }
+            },
+            "tableLabel": "Plan result table"
         },
         "events": {
             "svs": "SvS State of Power",

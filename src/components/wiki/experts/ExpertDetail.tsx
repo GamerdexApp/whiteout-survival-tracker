@@ -34,7 +34,7 @@ function SkillSelectButton({
 			type="button"
 			aria-pressed={selected}
 			onClick={onSelect}
-			className="flex min-h-11 items-center gap-2 text-left font-semibold hover:underline lg:min-h-9"
+			className="flex min-h-11 min-w-11 items-center gap-2 text-left font-semibold hover:underline lg:min-h-9 lg:min-w-9"
 		>
 			{children}
 		</button>
@@ -65,7 +65,7 @@ export function ExpertDetail({ expert }: { expert: Expert }) {
 				<div className="flex flex-wrap items-center gap-3">
 					<ItemIcon src={expert.img} size={64} />
 					<div className="flex min-w-0 flex-1 flex-col gap-1">
-						<h3 className="text-xl font-semibold">{expert.name}</h3>
+						<h2 className="text-xl font-semibold">{expert.name}</h2>
 						<p className="text-muted">
 							{t("subline", {
 								title: expert.title,

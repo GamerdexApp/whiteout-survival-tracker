@@ -38,6 +38,7 @@ export function Tabs<TabId extends string>({
 		<div className="flex flex-col gap-4">
 			<div
 				role="tablist"
+				data-focus-inset
 				aria-label={label}
 				onKeyDown={handleKeyDown}
 				className="border-line relative -mx-4 flex gap-1 overflow-x-auto border-b-[1.5px] px-4 lg:mx-0 lg:px-0"

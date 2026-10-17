@@ -24,6 +24,7 @@ import { Button } from "@/comps/ui/Button";
 import { Card } from "@/comps/ui/Card";
 import { Flyout } from "@/comps/ui/Flyout";
 import { ItemIcon } from "@/comps/ui/ItemIcon";
+import { ScrollRegion } from "@/comps/ui/ScrollRegion";
 import { SectionLabel } from "@/comps/ui/SectionLabel";
 import { Select } from "@/comps/ui/Select";
 import { Switch } from "@/comps/ui/Switch";
@@ -439,7 +440,7 @@ function PlanResult({ plan }: { plan: ExpertsPlan }) {
 					</div>
 				))}
 			</div>
-			<div className="overflow-x-auto">
+			<ScrollRegion label={t("tableLabel")}>
 				<table className="w-full min-w-[30rem] text-left">
 					<thead>
 						<tr>
@@ -466,7 +467,7 @@ function PlanResult({ plan }: { plan: ExpertsPlan }) {
 						))}
 					</tbody>
 				</table>
-			</div>
+			</ScrollRegion>
 		</Card>
 	);
 }

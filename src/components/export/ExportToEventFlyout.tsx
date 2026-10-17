@@ -47,7 +47,7 @@ function Chip({
 			aria-pressed={pressed}
 			disabled={disabled}
 			onClick={onClick}
-			className={`min-h-11 rounded-full border-[1.5px] px-3 font-medium disabled:opacity-50 lg:min-h-8 ${pressed ? "border-primary bg-tint text-primary" : "border-line bg-surface hover:bg-tint"}`}
+			className={`min-h-11 rounded-full border-[1.5px] px-3 font-medium disabled:opacity-50 lg:min-h-9 ${pressed ? "border-primary bg-tint text-primary" : "border-line bg-surface hover:bg-tint"}`}
 		>
 			{label}
 		</button>

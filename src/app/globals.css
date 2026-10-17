@@ -24,7 +24,7 @@
   --sb-active-bg: #7cc4ff;
   --sb-active-text: #0b1b33;
   --accent: #7cc4ff;
-  --kept: #1e7a3c;
+  --kept: #1c7439;
   --changed: #8a5a00;
   --added: #1d5fb0;
   --fixed: #4b4fa3;
@@ -115,6 +115,11 @@
   :focus-visible {
     outline: 2px solid var(--ring);
     outline-offset: 2px;
+  }
+
+  /* A container that clips overflow would cut a focus ring drawn outside the control. */
+  [data-focus-inset] :focus-visible {
+    outline-offset: -3px;
   }
 
   /* Tailwind 4 resets buttons to the default cursor. Every control a user can click needs a pointer. */

@@ -45,8 +45,7 @@ export function ItemRow({ item, count, changed, onCountChange, onOpen }: ItemRow
 				<button
 					type="button"
 					onClick={() => onOpen(item)}
-					aria-label={t("edit", { name: item.name, count: formatNumber(count) })}
-					className="flex min-h-14 w-full items-center gap-3 px-3 py-2 text-left"
+					className="relative flex min-h-14 w-full items-center gap-3 px-3 py-2 text-left"
 				>
 					{icon}
 					<span className="flex min-w-0 flex-1 flex-col">
@@ -55,6 +54,7 @@ export function ItemRow({ item, count, changed, onCountChange, onOpen }: ItemRow
 					</span>
 					<span className={`font-mono ${count === 0 ? "text-muted" : "font-medium"}`}>
 						{formatNumber(count)}
+						<span className="sr-only"> {t("owned")}</span>
 					</span>
 				</button>
 			</li>
@@ -63,7 +63,7 @@ export function ItemRow({ item, count, changed, onCountChange, onOpen }: ItemRow
 
 	return (
 		<li
-			className={`border-line grid ${ITEM_COLUMNS} items-center gap-3 border-t-[1.5px] px-4 py-2 first:border-t-0 ${tint}`}
+			className={`border-line grid ${ITEM_COLUMNS} items-center gap-3 border-t-[1.5px] px-4 py-0 first:border-t-0 ${tint}`}
 		>
 			<div className="flex min-w-0 items-center gap-3">
 				{icon}
@@ -71,7 +71,7 @@ export function ItemRow({ item, count, changed, onCountChange, onOpen }: ItemRow
 					<button
 						type="button"
 						onClick={() => onOpen(item)}
-						className="text-link truncate text-left font-medium hover:underline"
+						className="text-link min-h-9 min-w-9 truncate text-left font-medium hover:underline"
 					>
 						{item.name}
 					</button>
