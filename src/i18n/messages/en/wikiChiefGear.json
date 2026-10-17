@@ -1,0 +1,56 @@
+{
+    "line": "{rows} gear rows, {slots} slots and {rates} exchange rates. Reference only, nothing here is saved to your chief.",
+    "slots": {
+        "heading": "Gear slots",
+        "rarities": "{first} to {last} icons",
+        "detailLine": "Buffs {troopType} troops. One icon for each rarity."
+    },
+    "table": {
+        "heading": "Gear table",
+        "meta": "{rows} rows, {tiers} tiers",
+        "searchLabel": "Search",
+        "searchPlaceholder": "Search {rows} gear rows",
+        "tierLabel": "Tier",
+        "allTiers": "All tiers",
+        "starsLabel": "Stars",
+        "allStars": "All stars",
+        "starsOption": "Stars {stars}",
+        "empty": "No gear row matches your filters."
+    },
+    "columns": {
+        "row": "Row",
+        "materials": "Materials",
+        "stats": "Stats",
+        "power": "Power",
+        "score": "Score",
+        "capacity": "Deploy cap."
+    },
+    "cells": {
+        "none": "None",
+        "percent": "{value}%"
+    },
+    "tiers": {
+        "heading": "Tiers",
+        "meta": "{tiers} tier labels",
+        "tier": "Tier",
+        "rows": "Rows",
+        "stats": "Stats, first to last",
+        "power": "Power at last row",
+        "statsRange": "{first}% to {last}%"
+    },
+    "exchange": {
+        "heading": "Material exchange rates",
+        "exchange": "Exchange",
+        "from": "From",
+        "to": "To",
+        "weeklyLimit": "Weekly limit"
+    },
+    "setBonus": {
+        "heading": "Set bonuses",
+        "meta": "{tiers} tiers",
+        "hint": "Wear 3 pieces for a Defense bonus and 6 pieces for an Attack bonus. The percent depends on the tier of the pieces you wear. It applies to {types} troops.",
+        "pieceSet": "{pieces} piece set",
+        "tier": "Tier",
+        "pieces": "{pieces} pieces, {stat}"
+    }
+}

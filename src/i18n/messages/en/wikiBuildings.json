@@ -1,0 +1,71 @@
+{
+    "line": "{buildings} buildings and {facilities} facilities. Reference only, nothing here is saved to your chief.",
+    "list": {
+        "heading": "Buildings and facilities",
+        "searchLabel": "Search",
+        "searchPlaceholder": "Search buildings and facilities",
+        "categoryLabel": "Category",
+        "categories": {
+            "all": "All",
+            "Military": "Military",
+            "Inner City": "Inner City",
+            "Entertainment": "Entertainment"
+        },
+        "buildingMeta": "{category}, max {maxLevel}, {count, plural, one {{amount} level} other {{amount} levels}}",
+        "empty": "No building matches your search.",
+        "categoryOption": "{category} {count}"
+    },
+    "detail": {
+        "levelsTotal": "Levels in total",
+        "standardLevels": "Standard levels, 1 to 30",
+        "fireCrystalLevels": "Fire Crystal levels, 30-1 to FC 10",
+        "maxLevel": "Max level label",
+        "rangeLabel": "Level range",
+        "rangeOption": "{range} {count}",
+        "ranges": {
+            "all": "All",
+            "standard": "1 to 30",
+            "fc3": "30-1 to FC 3",
+            "fc5": "FC 3-1 to FC 5",
+            "fc8": "FC 5-1 to FC 8",
+            "fc10": "FC 8-1 to FC 10"
+        },
+        "tableLabel": "{name} levels",
+        "levels": "Levels",
+        "totalTitle": "Total needed, {range}, {count, plural, one {{amount} level} other {{amount} levels}}",
+        "totalTime": "Total build time"
+    },
+    "columns": {
+        "level": "Level",
+        "cost": "Cost",
+        "time": "Time",
+        "power": "Power",
+        "requires": "Requires",
+        "stats": {
+            "rallyCapacity": "Rally capacity",
+            "marchCapacity": "March capacity",
+            "trainingCapacity": "Training capacity",
+            "trainingSpeedBonusPercent": "Training speed",
+            "researchSpeedBonusPercent": "Research speed",
+            "infirmaryCapacity": "Infirmary capacity",
+            "allyAssists": "Ally assists",
+            "allyHelpTimeSeconds": "Ally help time",
+            "reinforceCapacity": "Reinforce capacity",
+            "storehouseCapacity": "Storehouse capacity",
+            "barricadeDurability": "Barricade durability",
+            "troopDeploymentCapacity": "Deployment capacity"
+        }
+    },
+    "cells": {
+        "none": "None",
+        "requirement": "{building} {level}",
+        "pricePerItem": "{price} each",
+        "percent": "{value}%"
+    },
+    "facilities": {
+        "heading": "Facilities",
+        "meta": "No levels, power or build cost",
+        "unlock": "Unlocks at Furnace level {level}",
+        "empty": "No facility matches your search."
+    }
+}

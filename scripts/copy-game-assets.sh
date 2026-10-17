@@ -7,7 +7,7 @@ set -e
 
 PACKAGE_DIR="node_modules/whiteout-survival-data/images"
 TARGET_DIR="public/images"
-FOLDERS=(skins alliance-tech daybreak-island events tundra-album buildings facilities items research heroes hero-gear chief-gear chief-charm experts pets)
+FOLDERS=(skins alliance-tech daybreak-island events tundra-album buildings facilities items research heroes hero-gear chief-gear chief-charm experts pets fire-crystal)
 
 rm -rf "$TARGET_DIR"
 mkdir -p "$TARGET_DIR"

@@ -1,0 +1,40 @@
+{
+    "line": "{skins} in {types}, with the bonus, where to get them and how long they last.",
+    "skinCount": "{count, plural, one {{amount} skin} other {{amount} skins}}",
+    "typeCount": "{count, plural, one {{amount} type} other {{amount} types}}",
+    "gallery": {
+        "title": "Skin gallery",
+        "showing": "Showing {shown} of {total}",
+        "search": "Search",
+        "searchPlaceholder": "Search skins by name or source",
+        "bonusStat": "Bonus stat",
+        "anyStat": "Any stat",
+        "noBonus": "No bonus",
+        "duration": "Duration",
+        "anyDuration": "Any duration",
+        "permanent": "Permanent",
+        "timed": "Timed",
+        "notStated": "Not stated",
+        "types": "Skin type",
+        "allTypes": "All",
+        "empty": {
+            "title": "No skins match",
+            "description": "Change the search or a filter to see skins."
+        }
+    },
+    "columns": {
+        "skin": "Skin",
+        "type": "Type",
+        "bonus": "Bonus",
+        "duration": "Duration (free text)",
+        "sources": "Sources"
+    },
+    "bonusValue": "{stat} {value}",
+    "detail": {
+        "type": "Type",
+        "bonus": "Bonus",
+        "duration": "Duration",
+        "sources": "Sources",
+        "description": "Description"
+    }
+}

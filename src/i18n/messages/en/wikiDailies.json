@@ -1,0 +1,46 @@
+{
+    "line": "The {missions} in-game daily missions with every known level, the activity bar rewards and the routine tasks.",
+    "missionCount": "{count, plural, one {{amount} mission} other {{amount} missions}}",
+    "tabs": {
+        "label": "Dailies",
+        "missions": "In-game missions",
+        "routine": "Routine tasks"
+    },
+    "totals": {
+        "title": "Activeness totals",
+        "missions": "In-game missions",
+        "levelOne": "Level 1 of every mission",
+        "allLevels": "Every known level",
+        "topReward": "Top reward level",
+        "explanation": "A mission adds the Activeness of every level done, up to the level reached. Level 1 of all {missions} missions is {levelOne} Activeness. Every known level of all {missions} missions is {allLevels}."
+    },
+    "bar": {
+        "title": "Activity bar rewards",
+        "activeness": "Activeness",
+        "rewards": "Rewards"
+    },
+    "missions": {
+        "title": "In-game missions",
+        "summary": "{missions}, {levels}",
+        "levelCount": "{count, plural, one {{amount} known level} other {{amount} known levels}}",
+        "level": "Level",
+        "task": "Task",
+        "target": "Target",
+        "activeness": "Activeness",
+        "otherRewards": "Other rewards",
+        "levelLabel": "L{level}",
+        "sumOne": "1 level: {total} Activeness",
+        "sumMany": "{count} levels: {parts} = {total} Activeness",
+        "plus": "+{amount}",
+        "noOtherRewards": "None"
+    },
+    "routine": {
+        "title": "Routine tasks",
+        "count": "{count, plural, one {{amount} task} other {{amount} tasks}}"
+    },
+    "missing": {
+        "title": "Not in the data yet",
+        "levels": "Other mission levels. Every mission has {min} to {max} known levels. Higher levels are not in the package yet, so the totals can grow.",
+        "reset": "Daily reset time. The package has none. The tracker uses its own default of {time} UTC and labels it as the app default."
+    }
+}

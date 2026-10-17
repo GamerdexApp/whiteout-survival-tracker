@@ -1,0 +1,45 @@
+{
+    "line": "{enhancement} enhancement levels, {empowerment} empowerment levels, {mastery} mastery forging rows and {stats} stat entries. Reference only, nothing here is saved.",
+    "tabsLabel": "Hero gear tables",
+    "tabs": {
+        "enhancement": "Enhancement",
+        "empowerment": "Empowerment",
+        "mastery": "Mastery forging",
+        "stats": "Stats"
+    },
+    "levels": {
+        "columns": {
+            "level": "Level",
+            "cost": "Cost",
+            "power": "Power",
+            "gain": "Gain over previous",
+            "milestonePower": "Milestone power",
+            "stage": "Stage",
+            "statsUp": "Stats up"
+        },
+        "none": "None",
+        "percent": "{value}%",
+        "gainValue": "+{value}"
+    },
+    "stats": {
+        "slot": "Slot",
+        "troopType": "Troop type",
+        "troop": {
+            "infantry": "Infantry",
+            "lancer": "Lancer",
+            "marksman": "Marksman"
+        },
+        "note": "Stats levels 101 to 200 are empowerment levels 1 to 100.",
+        "columns": {
+            "level": "Level",
+            "combat": "{stat}",
+            "health": "Health",
+            "percent": "{stat}"
+        },
+        "level": "Level {level}",
+        "empowermentLevel": "Level {level}, empowerment {empowerment}",
+        "milestonesTitle": "Milestones",
+        "milestone": "Empowerment level {level}, {event}: {stat}",
+        "percentValue": "{value}%"
+    }
+}

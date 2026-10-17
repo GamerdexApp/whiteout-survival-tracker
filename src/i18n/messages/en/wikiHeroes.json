@@ -1,0 +1,99 @@
+{
+    "line": "{heroes} heroes and {widgets} widget levels. Reference only, nothing here is saved.",
+    "roster": {
+        "title": "Roster",
+        "count": "{shown} of {total} heroes",
+        "search": "Search",
+        "searchPlaceholder": "Search {count} heroes",
+        "generation": "Generation",
+        "rarity": "Rarity",
+        "class": "Class",
+        "subClass": "Subclass",
+        "all": "All",
+        "empty": "No hero matches these filters.",
+        "columns": {
+            "hero": "Hero",
+            "generation": "Gen",
+            "rarity": "Rarity",
+            "class": "Class",
+            "subClass": "Subclass",
+            "power": "Power, 5 stars",
+            "weapon": "Exclusive weapon"
+        },
+        "none": "None"
+    },
+    "detail": {
+        "generation": "Generation {generation}",
+        "source": "Source: {sources}",
+        "noSource": "Source: Unknown",
+        "explorationAttack": "Exploration attack",
+        "explorationDefense": "Exploration defense",
+        "explorationHealth": "Exploration health",
+        "expeditionAttack": "Expedition attack",
+        "expeditionDefense": "Expedition defense",
+        "powerAtLevel80": "Power at level 80",
+        "powerAtFiveStars": "Power at 5 stars",
+        "powerAtZeroStars": "Power at 0 stars",
+        "powerMissing": "Power for hero levels and shards is missing for Generation 6 and up. It shows as Unknown until the data is obtained."
+    },
+    "skills": {
+        "title": "Skills",
+        "count": "{count, plural, one {{amount} skill} other {{amount} skills}}",
+        "branch": {
+            "exploration": "Exploration",
+            "expedition": "Expedition",
+            "talent": "Talent"
+        },
+        "levels": {
+            "columns": {
+                "level": "Level",
+                "star": "Star needed",
+                "manuals": "Manuals",
+                "power": "Power gain",
+                "effects": "Effect"
+            },
+            "effect": {
+                "percentOfAttack": "{name} {amount}% of Attack",
+                "percent": "{name} {amount}%",
+                "seconds": "{name} {amount}s",
+                "number": "{name} {amount}"
+            }
+        }
+    },
+    "shards": {
+        "title": "Shard costs by star",
+        "columns": {
+            "star": "Star",
+            "tiers": "Shards per tier",
+            "total": "Total",
+            "power": "Power at star"
+        },
+        "star": "{star} star"
+    },
+    "weapon": {
+        "title": "Exclusive weapon",
+        "power": "Weapon power",
+        "exploration": "Exploration atk / def / hp",
+        "expedition": "Expedition lethality / hp",
+        "unlocksAt": "unlocks at weapon level {level}",
+        "levelsTitle": "Weapon levels",
+        "columns": {
+            "level": "Weapon level",
+            "power": "Power",
+            "widgets": "Widgets"
+        },
+        "level": "Level {level}"
+    },
+    "levels": {
+        "title": "Hero levels",
+        "columns": {
+            "level": "Hero level",
+            "furnace": "Needs",
+            "xp": "XP to reach",
+            "power": "Power"
+        },
+        "level": "Level {level}",
+        "furnace": "Furnace {level}"
+    },
+    "recordLine": "{rarity} {heroClass}, generation {generation}. Reference only, nothing here is saved."
+}

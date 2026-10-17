@@ -1,0 +1,32 @@
+{
+    "line": "The package has {have} of the {total} albums. Each has a buff, completion rewards and {puzzles} puzzles.",
+    "note": "The other {missing} albums are added when the package has them.",
+    "albums": "Albums",
+    "puzzleCount": "{count, plural, one {{amount} puzzle} other {{amount} puzzles}}",
+    "pieceCount": "{count, plural, one {{amount} piece} other {{amount} pieces}}",
+    "view": {
+        "label": "View",
+        "puzzles": "Puzzles",
+        "pieces": "All pieces"
+    },
+    "album": {
+        "counts": "{puzzles}, {pieces}",
+        "buff": "Buff when complete",
+        "buffValue": "{stat} {value}",
+        "rewards": "Completion rewards",
+        "buffNote": "The buff counts only when all {puzzles} puzzles are done."
+    },
+    "puzzles": {
+        "title": "Puzzles",
+        "puzzle": "Puzzle",
+        "pieces": "Pieces",
+        "star": "Star {stars}",
+        "reward": "Reward"
+    },
+    "allPieces": {
+        "title": "All pieces",
+        "summary": "{pieces} in {puzzles}",
+        "imageNote": "Piece images come from the package. A piece without an image shows a plain square.",
+        "stars": "{count, plural, one {{amount} star} other {{amount} stars}}"
+    }
+}

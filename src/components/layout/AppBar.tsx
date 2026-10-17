@@ -17,7 +17,10 @@ export function AppBar() {
 	const savedLabel = useSavedLabel();
 	const routeId = getPageRouteId(pathname);
 	const title = routeId ? t(`nav.items.${routeId}`) : APP_NAME;
-	const subline = [activePlaythrough?.name, savedLabel].filter(Boolean).join(" · ");
+	const storesNothing = pathname === "/wiki" || pathname.startsWith("/wiki/");
+	const subline = [activePlaythrough?.name, storesNothing ? null : savedLabel]
+		.filter(Boolean)
+		.join(" · ");
 
 	return (
 		<header className="border-line bg-surface sticky top-0 z-30 flex h-14 items-center gap-1 border-b-[1.5px] px-2 lg:hidden">

@@ -1,0 +1,77 @@
+{
+    "line": "{nodes} research nodes in {tabs} tabs. Reference only, nothing here is saved.",
+    "tabsLabel": "Research categories",
+    "tabs": {
+        "battle": "Battle",
+        "growth": "Growth",
+        "economy": "Economy",
+        "t11": "T11",
+        "t12": "T12"
+    },
+    "search": {
+        "label": "Search",
+        "placeholder": "Search {amount} research nodes"
+    },
+    "filters": {
+        "tier": "Tier",
+        "allTiers": "All",
+        "tierOption": "Tier {tier}",
+        "troop": "Troop type",
+        "allTroops": "All",
+        "troops": {
+            "Infantry": "Infantry",
+            "Marksman": "Marksman",
+            "Lancer": "Lancer"
+        },
+        "data": "Data",
+        "dataOptions": {
+            "all": "All nodes",
+            "placeholders": "Placeholders",
+            "missingTime": "Missing time"
+        }
+    },
+    "list": {
+        "title": "Nodes",
+        "empty": "No research node matches this search.",
+        "emptyHint": "Clear the search or a filter.",
+        "columns": {
+            "node": "Node",
+            "tier": "Tier",
+            "levels": "Levels",
+            "bonus": "Bonus at level 1",
+            "time": "Time, level 1",
+            "power": "Power"
+        },
+        "mobileMeta": "{category}, tier {tier}, {levels}",
+        "count": "{count, plural, one {{amount} node} other {{amount} nodes}}"
+    },
+    "levels": "{count, plural, one {{amount} level} other {{amount} levels}}",
+    "detail": {
+        "columns": {
+            "level": "Level",
+            "requires": "Requires",
+            "cost": "Cost",
+            "time": "Time",
+            "bonus": "Bonus",
+            "power": "Power"
+        },
+        "level": "Level {level}",
+        "none": "None",
+        "placeholderNote": "This node is a placeholder. The package has no cost and no bonus for it.",
+        "requirement": {
+            "building": "{name} {level}",
+            "research": "{name} level {level}"
+        },
+        "levelsTitle": "Levels"
+    },
+    "view": {
+        "label": "View",
+        "list": "List",
+        "tree": "Tree"
+    },
+    "tree": {
+        "region": "{tab} research tree",
+        "openNode": "{name}, {levels}",
+        "tier": "T{tier}"
+    }
+}

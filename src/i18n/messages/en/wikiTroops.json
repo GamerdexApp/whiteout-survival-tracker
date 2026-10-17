@@ -1,0 +1,26 @@
+{
+    "line": "{types} troop types with {tiers} tiers each. Reference only, nothing here is saved to your chief.",
+    "tiers": {
+        "heading": "Troop tiers",
+        "meta": "{types} types by {tiers} tiers = {rows} rows",
+        "typeLabel": "Troop type",
+        "tableLabel": "{type} tiers"
+    },
+    "detail": {
+        "heading": "Record detail",
+        "meta": "Tier {tier}, all three types",
+        "tableLabel": "Tier {tier} by troop type"
+    },
+    "columns": {
+        "tier": "Tier",
+        "type": "Type",
+        "cost": "Cost per troop",
+        "topCost": "Tier cost",
+        "time": "Training time",
+        "promotion": "Promotion cost"
+    },
+    "cells": {
+        "tier": "Tier {tier}",
+        "none": "None"
+    }
+}

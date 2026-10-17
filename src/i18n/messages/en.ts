@@ -29,6 +29,27 @@ import tundraAlbum from "./en/tundraAlbum.json";
 import ui from "./en/ui.json";
 import unlocks from "./en/unlocks.json";
 import vip from "./en/vip.json";
+import wiki from "./en/wiki.json";
+import wikiAllianceStructures from "./en/wikiAllianceStructures.json";
+import wikiAllianceTech from "./en/wikiAllianceTech.json";
+import wikiBuildings from "./en/wikiBuildings.json";
+import wikiChiefCharms from "./en/wikiChiefCharms.json";
+import wikiChiefGear from "./en/wikiChiefGear.json";
+import wikiDailies from "./en/wikiDailies.json";
+import wikiDaybreak from "./en/wikiDaybreak.json";
+import wikiEventBuffs from "./en/wikiEventBuffs.json";
+import wikiEvents from "./en/wikiEvents.json";
+import wikiExperts from "./en/wikiExperts.json";
+import wikiHeroes from "./en/wikiHeroes.json";
+import wikiHeroGear from "./en/wikiHeroGear.json";
+import wikiItems from "./en/wikiItems.json";
+import wikiPets from "./en/wikiPets.json";
+import wikiResearch from "./en/wikiResearch.json";
+import wikiSkins from "./en/wikiSkins.json";
+import wikiTimeline from "./en/wikiTimeline.json";
+import wikiTroops from "./en/wikiTroops.json";
+import wikiTundraAlbum from "./en/wikiTundraAlbum.json";
+import wikiVip from "./en/wikiVip.json";
 
 /**
  * The English catalog is the source of truth for the key names and their types. One file for each
@@ -66,6 +87,27 @@ const en = {
   skins,
   vip,
   unlocks,
+  wiki,
+  wikiBuildings,
+  wikiHeroes,
+  wikiHeroGear,
+  wikiExperts,
+  wikiPets,
+  wikiChiefGear,
+  wikiChiefCharms,
+  wikiTroops,
+  wikiResearch,
+  wikiAllianceTech,
+  wikiAllianceStructures,
+  wikiDaybreak,
+  wikiEvents,
+  wikiEventBuffs,
+  wikiItems,
+  wikiSkins,
+  wikiVip,
+  wikiTundraAlbum,
+  wikiDailies,
+  wikiTimeline,
 };
 
 export default en;

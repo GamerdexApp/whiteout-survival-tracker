@@ -1,0 +1,145 @@
+{
+    "line": "{events} events: {alliance} alliance, {solo} solo, {rookie} rookie and {holiday} holiday. Phases, scoring, rewards, tips, shops and rankings where the package has them.",
+    "list": {
+        "title": "Events",
+        "showing": "Showing {shown} of {total}",
+        "search": "Search",
+        "searchPlaceholder": "Search events by name",
+        "scoringFilter": "Scoring",
+        "categoryLabel": "Category",
+        "all": "All",
+        "table": "Events",
+        "event": "Event",
+        "category": "Category",
+        "frequency": "Frequency (free text)",
+        "duration": "Duration (free text)",
+        "scoringRows": "Scoring rows",
+        "noScoringRows": "No scoring rows",
+        "emptyTitle": "No event matches",
+        "emptyDescription": "Change the search, the category or the scoring."
+    },
+    "category": {
+        "alliance": "Alliance",
+        "solo": "Solo",
+        "rookie": "Rookie",
+        "holiday": "Holiday"
+    },
+    "scoring": {
+        "any": "Any scoring",
+        "ranking": "Ranking",
+        "tier": "Tiers",
+        "milestones": "Milestones",
+        "waves": "Waves",
+        "participation": "Participation"
+    },
+    "parts": {
+        "days": "{count, plural, one {{amount} day} other {{amount} days}}",
+        "tiers": "{count, plural, one {{amount} tier} other {{amount} tiers}}",
+        "missions": "{count, plural, one {{amount} mission} other {{amount} missions}}",
+        "waves": "{count, plural, one {{amount} wave} other {{amount} waves}}",
+        "versions": "{count, plural, one {{amount} version} other {{amount} versions}}",
+        "levels": "{count, plural, one {{amount} level} other {{amount} levels}}"
+    },
+    "detail": {
+        "title": "Details",
+        "category": "Category",
+        "frequency": "Frequency",
+        "duration": "Duration",
+        "summary": "Summary",
+        "requirements": "Requirements",
+        "scoring": "Scoring",
+        "noRequirements": "None"
+    },
+    "phases": {
+        "title": "Phases",
+        "table": "Event phases",
+        "phase": "Phase",
+        "description": "Description"
+    },
+    "scoringRows": {
+        "title": "Scoring rows: {name}",
+        "table": "Scoring actions",
+        "action": "Action",
+        "points": "Points",
+        "victoryPoints": "{amount} victory points",
+        "milestones": "Milestones of {name}",
+        "allianceMilestones": "Alliance milestones of {name}"
+    },
+    "missions": {
+        "title": "Missions",
+        "table": "Event missions",
+        "mission": "Mission",
+        "group": "Group",
+        "points": "Points",
+        "rewards": "Rewards"
+    },
+    "tiers": {
+        "title": "Tiers",
+        "table": "Event tiers",
+        "tier": "Tier",
+        "score": "Target",
+        "scoreValue": "{amount} {unit}",
+        "scoreValuePoints": "{amount} points",
+        "rewards": "Rewards",
+        "note": "Note"
+    },
+    "rankings": {
+        "title": "Ranking rewards",
+        "personal": "Personal ranking rewards",
+        "alliance": "Alliance ranking rewards",
+        "basedOn": "Ranking rewards based on {basis}",
+        "table": "Ranking rewards",
+        "rank": "Rank",
+        "starChange": "Star change",
+        "rewards": "Rewards"
+    },
+    "rewards": {
+        "title": "Rewards",
+        "partial": "This reward list is not complete.",
+        "amountName": "{amount} {name}"
+    },
+    "pointLevels": {
+        "title": "Point levels",
+        "table": "Point levels",
+        "level": "Level",
+        "personal": "Personal points",
+        "alliance": "Alliance points",
+        "rewards": "Rewards"
+    },
+    "waves": {
+        "title": "Waves",
+        "table": "Attack waves",
+        "wave": "Wave",
+        "target": "Target",
+        "rule": "Rule",
+        "city": "City",
+        "headquarters": "Headquarters"
+    },
+    "zones": {
+        "title": "Zones",
+        "table": "Event zones",
+        "zone": "Zone",
+        "days": "Days",
+        "statSources": "Stat sources",
+        "unlock": "Unlock"
+    },
+    "shop": {
+        "title": "Shop",
+        "titleNamed": "Shop: {name}",
+        "table": "Shop offers",
+        "offer": "Offer",
+        "cost": "Cost",
+        "costValue": "{amount} {currency}",
+        "limit": "Limit",
+        "contents": "Contents"
+    },
+    "versions": {
+        "title": "{name}",
+        "missions": "Missions",
+        "chests": "Chests"
+    },
+    "tips": {
+        "title": "Tips"
+    },
+    "recordLine": "{category} event with its phases, scoring, rewards and rankings."
+}

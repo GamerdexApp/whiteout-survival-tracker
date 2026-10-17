@@ -1,0 +1,49 @@
+{
+    "title": "Server timeline",
+    "line": "{rows, plural, one {{amount} milestone} other {{amount} milestones}} from day {first} to day {last}",
+    "subline": "What unlocks at each server age. Reference only, nothing here is saved.",
+    "place": {
+        "label": "Show my place for",
+        "option": "{name}, about day {days}, plus or minus {window}",
+        "optionNoDate": "{name}, no server start date",
+        "jump": "Jump to my place"
+    },
+    "filters": {
+        "label": "Show",
+        "events": "Events {amount}",
+        "features": "Features {amount}",
+        "pets": "Pets {amount}",
+        "experts": "Experts {amount}",
+        "heroes": "Heroes {amount}"
+    },
+    "help": "The line is server age in days. Heroes are on the right, everything else on the left. Your place comes from the server start date on your chief, with a window of plus or minus {window} days.",
+    "noChief": "There is no chief yet, so your place is not shown.",
+    "addChief": "Add a chief",
+    "noStartDate": "{name} has no server start date. Add one to see your place on the line.",
+    "editChief": "Edit chief",
+    "columns": {
+        "left": "Events, features, pets, experts",
+        "right": "Heroes"
+    },
+    "tags": {
+        "event": "Event",
+        "feature": "Feature",
+        "pets": "Pets",
+        "experts": "Experts"
+    },
+    "fireCrystalLevels": "Fire Crystal levels {names}",
+    "heroGeneration": "Heroes, generation {generation}",
+    "day": "Day {day}",
+    "status": {
+        "unlocked": "Unlocked",
+        "near": "Near your age",
+        "future": "{count, plural, one {In {amount} day} other {In {amount} days}}"
+    },
+    "marker": {
+        "label": "You are here",
+        "title": "{name}, server age about {days} days",
+        "window": "Plus or minus {window} days: day {from} to {to}"
+    },
+    "empty": "Nothing to show with these filters.",
+    "source": "Source: the server timeline of the data package."
+}

@@ -1,0 +1,52 @@
+{
+    "line": "{pets} pets. Reference only, nothing here is saved.",
+    "roster": {
+        "title": "Pets",
+        "count": "{shown} of {total} pets",
+        "search": "Search",
+        "searchPlaceholder": "Search {count} pets",
+        "rarity": "Rarity",
+        "all": "All",
+        "empty": "No pet matches these filters.",
+        "summary": "Max level {level}, refine up to {percent}",
+        "percentValue": "{value}%"
+    },
+    "unlock": {
+        "withFurnace": "Day {days}, Furnace {level}",
+        "withPet": "Day {days}, {pet} {level}",
+        "daysOnly": "Day {days}",
+        "label": "Unlock: {requirement}"
+    },
+    "detail": {
+        "maxLevel": "Max level",
+        "maxRefinement": "Max refinement",
+        "unlock": "Unlock requirement",
+        "cooldown": "Skill cooldown",
+        "duration": "Skill duration",
+        "tierCooldown": "{value}",
+        "maxPower": "Max power",
+        "levelPower": "Level and advancement power at max level",
+        "refiningPower": "Refining power at max refinement"
+    },
+    "skill": {
+        "title": "Skill",
+        "meta": "{count, plural, one {{amount} level} other {{amount} levels}}",
+        "level": "Lv {level}",
+        "percent": "{value}%"
+    },
+    "levels": {
+        "title": "Level table",
+        "level": "Level {level}",
+        "columns": {
+            "level": "Level",
+            "food": "Pet food",
+            "attack": "Troop attack",
+            "defense": "Troop defense",
+            "power": "Troops power",
+            "materials": "Advancement materials"
+        },
+        "refined": "{value} (refined {refined})",
+        "none": "None"
+    },
+    "recordLine": "{rarity} pet, max level {level}. Reference only, nothing here is saved."
+}

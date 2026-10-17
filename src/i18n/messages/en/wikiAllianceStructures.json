@@ -1,0 +1,104 @@
+{
+    "line": "{banners} banner ranges, {facilities} facilities and {fortresses} castle, stronghold and fortress entries. Reference only, nothing here is saved.",
+    "filters": {
+        "search": "Search",
+        "searchPlaceholder": "Search ranges, facilities, fortresses",
+        "structure": "Structure",
+        "structures": {
+            "all": "All structures",
+            "banners": "Banners",
+            "facilities": "Map facilities",
+            "castle": "Castle",
+            "stronghold": "Strongholds",
+            "fortress": "Fortresses"
+        }
+    },
+    "empty": "Nothing in this list matches the search.",
+    "none": "None",
+    "banners": {
+        "title": "Banner build costs",
+        "columns": {
+            "range": "Level range",
+            "min": "Min",
+            "max": "Max",
+            "cost": "Cost per level"
+        },
+        "noCost": "None listed",
+        "count": "{count, plural, one {{amount} range} other {{amount} ranges}}",
+        "detail": {
+            "title": "Banner cost",
+            "fields": {
+                "range": "Level range",
+                "min": "Lowest level",
+                "max": "Highest level",
+                "cost": "Cost per level"
+            }
+        }
+    },
+    "facilities": {
+        "title": "Map facilities",
+        "count": "{count, plural, one {{amount} facility} other {{amount} facilities}}",
+        "columns": {
+            "facility": "Facility",
+            "bonus": "Bonus",
+            "level": "Level {level}",
+            "listed": "Levels listed",
+            "ownLimit": "Own limit"
+        },
+        "cell": "{available} on the map",
+        "listedOf": "{listed} of {total}",
+        "levelsNote": "The data lists {listed} of {total} levels for this facility. Levels it does not list show as Unknown.",
+        "detail": {
+            "title": "Levels of {name}",
+            "level": "Level {level}",
+            "columns": {
+                "level": "Level",
+                "booster": "Booster",
+                "injured": "Heavily injured",
+                "losses": "Losses",
+                "ownLimit": "Own limit",
+                "available": "On the map",
+                "locations": "Locations (x, y)"
+            },
+            "percent": "{value}%",
+            "location": "{x}, {y}"
+        }
+    },
+    "fortresses": {
+        "title": "Castle, strongholds and fortresses",
+        "kinds": {
+            "castle": "Castle",
+            "stronghold": "Stronghold",
+            "fortress": "Fortress"
+        },
+        "columns": {
+            "name": "Name",
+            "kind": "Kind",
+            "x": "X",
+            "y": "Y",
+            "phases": "Phases",
+            "phaseOne": "Phase 1 reward"
+        },
+        "mobileMeta": "{kind}, x {x}, y {y}",
+        "count": "{count, plural, one {{amount} structure} other {{amount} structures}}"
+    },
+    "map": {
+        "title": "Map placeholder",
+        "label": "Map of the castle, strongholds and fortresses by their x and y values",
+        "note": "Castle, strongholds and fortresses plotted from their x and y values on a {size} by {size} square. The square size is an estimate, the package has no map size.",
+        "legend": {
+            "castle": "Square: castle",
+            "stronghold": "Diamond: stronghold",
+            "fortress": "Circle: fortress"
+        }
+    },
+    "detail": {
+        "title": "Phase rewards",
+        "phases": "{count, plural, one {{amount} phase} other {{amount} phases}}",
+        "columns": {
+            "phase": "Phase",
+            "reward": "Reward"
+        },
+        "noRewards": "The package has no phase rewards for this structure."
+    }
+}

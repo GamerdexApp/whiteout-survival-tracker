@@ -1,0 +1,49 @@
+{
+    "line": "{rows} charm rows, {slots} slots and {rates} exchange rates. Reference only, nothing here is saved to your chief.",
+    "slots": {
+        "heading": "Charm slots",
+        "meta": "{slots} slots, one for each troop type",
+        "icons": "{count, plural, one {{amount} level icon} other {{amount} level icons}}",
+        "recordLine": "Buffs {troopType} troops. One icon for each level."
+    },
+    "table": {
+        "heading": "Charm table",
+        "meta": "{rows} rows, {levels} levels",
+        "searchLabel": "Search",
+        "searchPlaceholder": "Search {rows} charm rows",
+        "levelLabel": "Level",
+        "allLevels": "All levels",
+        "levelOption": "Level {level}",
+        "stageLabel": "Stage",
+        "allStages": "All stages",
+        "stageOption": "Stage {stage}",
+        "empty": "No charm row matches your filters."
+    },
+    "columns": {
+        "row": "Row",
+        "materials": "Materials",
+        "stats": "Stats",
+        "power": "Power",
+        "score": "Score"
+    },
+    "cells": {
+        "none": "None",
+        "percent": "{value}%"
+    },
+    "levels": {
+        "heading": "Levels",
+        "level": "Level",
+        "levelName": "Level {level}",
+        "rows": "Rows",
+        "stats": "Stats, first to last",
+        "power": "Power at last row",
+        "statsRange": "{first}% to {last}%"
+    },
+    "exchange": {
+        "heading": "Material exchange rates",
+        "exchange": "Exchange",
+        "from": "From",
+        "to": "To",
+        "weeklyLimit": "Weekly limit"
+    }
+}

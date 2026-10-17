@@ -1,0 +1,69 @@
+{
+    "line": "{experts} experts and {relationships} relationship stages. Reference only, nothing here is saved.",
+    "roster": {
+        "title": "Experts",
+        "count": "{shown} of {total} experts",
+        "search": "Search",
+        "searchPlaceholder": "Search {count} experts by name, title or specialty",
+        "generation": "Generation",
+        "all": "All",
+        "empty": "No expert matches these filters.",
+        "generationValue": "Generation {generation}",
+        "unlock": "Unlock: server day {days}",
+        "unlockUnknown": "Unlock:"
+    },
+    "detail": {
+        "subline": "{title} · specialty {specialty} · generation {generation}",
+        "baseBonus": "Base: {bonus}",
+        "bonus": "{stat} {value}",
+        "percentValue": "{value}%",
+        "skills": "Skills",
+        "talent": "Talent, max level {level}",
+        "affinityLevels": "Affinity levels",
+        "baseBonusLabel": "Base bonus",
+        "unlock": "Unlocks on server day {days}"
+    },
+    "skills": {
+        "title": "Skills and talent",
+        "columns": {
+            "skill": "Skill",
+            "max": "Max",
+            "effect": "Effect",
+            "books": "Books to max",
+            "exp": "EXP to max"
+        },
+        "talent": "{name} (talent)",
+        "none": "None",
+        "selectHint": "Select a skill to see the details."
+    },
+    "skillLevels": {
+        "title": "Skill level table",
+        "meta": "{name}, levels 1 to {max}",
+        "level": "Level {level}",
+        "columns": {
+            "level": "Level",
+            "exp": "EXP",
+            "books": "Books"
+        },
+        "none": "None"
+    },
+    "affinity": {
+        "title": "Affinity levels",
+        "level": "Level {level}",
+        "columns": {
+            "level": "Level",
+            "required": "Affinity required",
+            "bonus": "Stat bonus",
+            "affinityPower": "Affinity power",
+            "levelPower": "Level power",
+            "advancement": "Advancement cost"
+        },
+        "noAdvancement": "No advancement",
+        "startNote": "Level 1 affinity required is a start value of {start}. From level 2 the amount is the cost to reach that level."
+    },
+    "relationships": {
+        "title": "Relationship stages",
+        "fromLevel": "from level {level}"
+    },
+    "recordLine": "{title}, specialty {specialty}, generation {generation}. Reference only, nothing here is saved."
+}

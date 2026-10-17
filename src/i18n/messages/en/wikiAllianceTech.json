@@ -1,0 +1,54 @@
+{
+    "line": "{total} techs in three trees: Growth {growth}, Territory {territory}, Battle {battle}. Reference only, nothing here is saved.",
+    "list": {
+        "title": "Tech nodes",
+        "categoriesLabel": "Tech trees",
+        "categories": {
+            "all": "All",
+            "Growth": "Growth",
+            "Territory": "Territory",
+            "Battle": "Battle"
+        },
+        "search": "Search",
+        "searchPlaceholder": "Search tech by name or effect",
+        "tier": "Tier",
+        "allTiers": "All tiers",
+        "tierOption": "Tier {tier}",
+        "empty": "No tech node matches this search.",
+        "emptyHint": "Clear the search or a filter.",
+        "columns": {
+            "tech": "Tech",
+            "category": "Category",
+            "tier": "Tier",
+            "levels": "Levels",
+            "maxBonus": "Max bonus",
+            "cost": "Level 1 cost",
+            "time": "Level 1 time",
+            "requires": "Level 1 requires"
+        },
+        "mobileMeta": "{category}, tier {tier}, {levels}",
+        "count": "{count, plural, one {{amount} tech} other {{amount} techs}}"
+    },
+    "levels": "{count, plural, one {{amount} level} other {{amount} levels}}",
+    "detail": {
+        "facts": "Details",
+        "levelsTitle": "Levels",
+        "none": "None",
+        "fields": {
+            "category": "Category",
+            "tier": "Tier",
+            "effect": "Effect",
+            "stat": "Stat",
+            "levels": "Levels"
+        },
+        "columns": {
+            "level": "Level",
+            "bonus": "Bonus",
+            "cost": "Cost",
+            "time": "Time",
+            "requires": "Requires"
+        },
+        "level": "Level {level}",
+        "requirement": "{name} level {level}"
+    }
+}

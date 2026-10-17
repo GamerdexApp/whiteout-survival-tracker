@@ -1,0 +1,79 @@
+{
+    "line": "{items} items in {categories} categories, with sources and the loot rates of {chests} chests.",
+    "catalog": {
+        "title": "Item catalog",
+        "showing": "Showing {shown} of {total}",
+        "search": "Search",
+        "searchPlaceholder": "Search items by name or description",
+        "table": "Items",
+        "item": "Item",
+        "category": "Category",
+        "sources": "Sources",
+        "lootRates": "Loot rates",
+        "description": "Description",
+        "emptyTitle": "No item matches",
+        "emptyDescription": "Change the search or the filters."
+    },
+    "filters": {
+        "title": "Filters",
+        "button": "Filters",
+        "summary": "Filters: {category}. Sources: {sources}",
+        "edit": "Edit",
+        "category": "Category",
+        "all": "All",
+        "sources": "Sources",
+        "lootRates": "Loot rates",
+        "reset": "Reset",
+        "show": "{count, plural, one {Show {amount} item} other {Show {amount} items}}"
+    },
+    "sourcesFilter": {
+        "any": "Any sources",
+        "has": "Has sources",
+        "none": "No sources"
+    },
+    "sourcesChip": {
+        "any": "Any",
+        "has": "Has sources",
+        "none": "No sources ({amount})"
+    },
+    "lootFilter": {
+        "any": "Any",
+        "has": "Has loot rates"
+    },
+    "lootChip": {
+        "any": "Any",
+        "has": "Has loot rates ({amount} chests)"
+    },
+    "loot": {
+        "yes": "Yes",
+        "no": "No",
+        "notChest": "Not a chest"
+    },
+    "detail": {
+        "title": "Details",
+        "category": "Category",
+        "sources": "Sources",
+        "speedup": "Speedup",
+        "speedupValue": "{type}, {minutes} minutes",
+        "description": "Description",
+        "lootRates": "Loot rates",
+        "lootRowsListed": "{count, plural, one {{amount} row listed} other {{amount} rows listed}}",
+        "noLootRates": "No loot rates in the data for this chest",
+        "lootTitle": "Loot rates",
+        "lootMeta": "{count, plural, one {{amount} reward} other {{amount} rewards}}",
+        "lootTable": "Loot rates of the chest",
+        "reward": "Reward",
+        "amount": "Amount",
+        "chance": "Chance",
+        "chanceValue": "{percent}%",
+        "name": "Name"
+    },
+    "speedupType": {
+        "general": "General",
+        "construction": "Construction",
+        "troop": "Troop",
+        "research": "Research",
+        "learning": "Learning",
+        "healing": "Healing"
+    }
+}

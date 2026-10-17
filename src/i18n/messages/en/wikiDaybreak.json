@@ -1,0 +1,69 @@
+{
+    "line": "Lumber camp and Tree of Life level tables, plus {decorations} decorations by category with costs, prosperity and buffs.",
+    "lumberCamp": {
+        "title": "Lumber camp",
+        "levels": "{count, plural, one {{amount} level} other {{amount} levels}}",
+        "table": "Lumber camp levels",
+        "level": "Level",
+        "workers": "Workers",
+        "perSecond": "Per sec",
+        "treeLevel": "Tree level",
+        "lifeEssence": "Life Essence"
+    },
+    "tree": {
+        "title": "Tree of Life",
+        "table": "Tree of Life levels",
+        "level": "Level",
+        "prosperity": "Prosperity",
+        "lifeEssence": "Life Essence",
+        "perHour": "Per hour",
+        "buff": "Buff"
+    },
+    "decorations": {
+        "title": "Decorations",
+        "showing": "Showing {shown} of {total}",
+        "search": "Search",
+        "searchPlaceholder": "Search decorations by name or buff",
+        "categoryLabel": "Category",
+        "all": "All",
+        "costFilter": "Cost type",
+        "table": "Decorations",
+        "name": "Decoration",
+        "category": "Category",
+        "limit": "Limit",
+        "levels": "Levels",
+        "cost": "Cost",
+        "prosperityAtMax": "Prosperity at max",
+        "buffAtMax": "Buff at max level",
+        "emptyTitle": "No decoration matches",
+        "emptyDescription": "Change the search, the category or the cost type."
+    },
+    "costFilter": {
+        "any": "Any cost",
+        "lifeEssence": "Life Essence",
+        "items": "Resources",
+        "limited": "Limited",
+        "unknown": "Cost not in the data"
+    },
+    "cost": {
+        "lifeEssence": "{amount} Life Essence",
+        "limited": "None, limited decoration"
+    },
+    "detail": {
+        "title": "Details",
+        "category": "Category",
+        "limit": "Limit",
+        "cost": "Cost",
+        "levels": "Levels",
+        "image": "Image",
+        "imageMissing": "None",
+        "levelsTitle": "Levels of {name}",
+        "levelsMeta": "{count, plural, one {{amount} level} other {{amount} levels}}",
+        "levelsTable": "Levels of the decoration",
+        "level": "Level",
+        "levelCost": "Cost",
+        "prosperity": "Prosperity",
+        "buff": "Buff",
+        "noLevels": "The data has no level table for this decoration."
+    }
+}

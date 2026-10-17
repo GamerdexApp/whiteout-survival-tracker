@@ -1,0 +1,67 @@
+{
+    "line": "Which buff sources apply in each of {modes} game modes: yes, no or partial for {sources} buff types.",
+    "matrix": {
+        "title": "Buff matrix",
+        "meta": "{modes} modes, {sources} buff types",
+        "table": "Buff sources by game mode",
+        "mode": "Game mode"
+    },
+    "sources": {
+        "cityBonusWarsBuffs": {
+            "short": "City bonus",
+            "full": "City bonus and wars buffs"
+        },
+        "deploymentCapacity": {
+            "short": "Deploy cap",
+            "full": "Deployment capacity"
+        },
+        "petSkills": {
+            "short": "Pet skills",
+            "full": "Pet skills"
+        },
+        "daybreakIsland": {
+            "short": "Daybreak",
+            "full": "Daybreak Island"
+        },
+        "presidentSkills": {
+            "short": "President",
+            "full": "President skills"
+        },
+        "ministerBuff": {
+            "short": "Minister",
+            "full": "Minister buff"
+        },
+        "territoryBonuses": {
+            "short": "Territory",
+            "full": "Territory bonuses"
+        },
+        "facilityBuff": {
+            "short": "Facility",
+            "full": "Facility buff"
+        },
+        "marchAccelerator": {
+            "short": "March accel.",
+            "full": "March accelerator"
+        },
+        "frostdragonTyrantTitles": {
+            "short": "Tyrant titles",
+            "full": "Frostdragon Tyrant titles"
+        },
+        "frostSphereDomainBonus": {
+            "short": "Frost Sphere",
+            "full": "Frost Sphere domain bonus"
+        }
+    },
+    "applicability": {
+        "yes": "Yes",
+        "no": "No",
+        "partial": "Partial"
+    },
+    "notes": {
+        "title": "Notes by game mode",
+        "table": "Notes by game mode",
+        "petSkillsAutoApplied": "Pet skills auto applied",
+        "note": "Note",
+        "noNote": "None"
+    }
+}
