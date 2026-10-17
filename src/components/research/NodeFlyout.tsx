@@ -135,11 +135,11 @@ function NodeContent({
 					<Card className="flex flex-col gap-3 p-4">
 						<h3 className="font-semibold">{upcomingTitle}</h3>
 						<ScrollRegion label={upcomingTitle}>
-							<table className="w-full min-w-104 text-left">
+							<table className="w-full min-w-104 text-start">
 								<thead>
 									<tr>
 										{upcomingHeads.map((head) => (
-											<th key={head} className="py-1 pr-3">
+											<th key={head} className="py-1 pe-3">
 												<SectionLabel className="text-muted">
 													{t(`upcoming.heads.${head}`)}
 												</SectionLabel>
@@ -155,7 +155,7 @@ function NodeContent({
 												key={item.level}
 												className={inGoal ? "bg-tint" : ""}
 											>
-												<td className="py-2 pr-3 font-mono">
+												<td className="py-2 pe-3 font-mono">
 													{item.level}{" "}
 													{hasGoal && item.level === goal && (
 														<Badge tone="added">
@@ -163,10 +163,10 @@ function NodeContent({
 														</Badge>
 													)}
 												</td>
-												<td className="py-2 pr-3">
+												<td className="py-2 pe-3">
 													{bonusText(item) || t("upcoming.noBonus")}
 												</td>
-												<td className="py-2 pr-3 font-mono">
+												<td className="py-2 pe-3 font-mono">
 													{timeText(item.researchTimeSeconds)}
 												</td>
 												<td className="py-2 font-mono">
@@ -184,16 +184,16 @@ function NodeContent({
 					<Card className="flex flex-col gap-3 p-4">
 						<h3 className="font-semibold">{t("cost.title")}</h3>
 						<ScrollRegion label={t("cost.title")}>
-							<table className="w-full min-w-104 text-right">
+							<table className="w-full min-w-104 text-end">
 								<thead>
 									<tr>
-										<th className="py-1 pr-3 text-left">
+										<th className="py-1 pe-3 text-start">
 											<SectionLabel className="text-muted">
 												{t("cost.level")}
 											</SectionLabel>
 										</th>
 										{itemIds.map((id) => (
-											<th key={id} className="py-1 pl-3">
+											<th key={id} className="py-1 ps-3">
 												<SectionLabel className="text-muted">
 													{findItem(id)?.name ?? id}
 												</SectionLabel>
@@ -207,11 +207,11 @@ function NodeContent({
 											key={item.level}
 											className="border-line border-t-[1.5px]"
 										>
-											<td className="py-2 pr-3 text-left font-mono">
+											<td className="py-2 pe-3 text-start font-mono">
 												{item.level}
 											</td>
 											{itemIds.map((id) => (
-												<td key={id} className="py-2 pl-3 font-mono">
+												<td key={id} className="py-2 ps-3 font-mono">
 													{formatNumber(
 														item.cost.find((cost) => cost.itemId === id)
 															?.amount ?? 0

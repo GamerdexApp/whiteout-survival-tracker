@@ -56,7 +56,7 @@ export function SkinFiltersFlyout({
 			description={t("description")}
 			footer={
 				<>
-					<Button variant="link" onClick={onReset} className="mr-auto">
+					<Button variant="link" onClick={onReset} className="me-auto">
 						{t("reset")}
 					</Button>
 					<Button variant="primary" onClick={onClose}>

@@ -66,7 +66,7 @@ export function EventChecklistFlyout({
 			description={t("description", { day: dayLabelOf(event, dayId) })}
 			footer={
 				<>
-					<span className="mr-auto">
+					<span className="me-auto">
 						<SavedChip />
 					</span>
 					<Button

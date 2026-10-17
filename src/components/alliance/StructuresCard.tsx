@@ -30,7 +30,7 @@ function StructureLink({
 				<span className="font-semibold">{title}</span>
 				<span className="text-muted">{description}</span>
 			</span>
-			<span className="text-muted max-w-[45%] text-right font-mono text-xs">{status}</span>
+			<span className="text-muted max-w-[45%] text-end font-mono text-xs">{status}</span>
 		</Link>
 	);
 }

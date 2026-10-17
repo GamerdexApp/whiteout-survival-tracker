@@ -63,7 +63,7 @@ export function PetPlanFlyout({ open, chief, onClose, onSave }: PetPlanFlyoutPro
 				<>
 					<span
 						role="status"
-						className="border-line bg-surface text-muted mr-auto inline-flex h-8 items-center gap-2 rounded-full border-[1.5px] px-3 font-mono text-xs"
+						className="border-line bg-surface text-muted me-auto inline-flex h-8 items-center gap-2 rounded-full border-[1.5px] px-3 font-mono text-xs"
 					>
 						<span aria-hidden="true" className="bg-kept size-1.5 rounded-full" />
 						{savedAt ? t("saved", { date: formatDateTime(savedAt) }) : t("notSavedYet")}
@@ -307,13 +307,13 @@ function PlanResult({ plan }: { plan: PetPlanResult }) {
 			</div>
 			<div className="flex flex-col">
 				<SectionLabel className="text-muted pb-1">{t("byPet")}</SectionLabel>
-				<table className="w-full text-left">
+				<table className="w-full text-start">
 					<thead>
 						<tr className="text-muted font-mono text-[11px] uppercase">
-							<th className="py-1 pr-2 font-normal">{t("heads.pet")}</th>
-							<th className="px-2 text-right font-normal">{t("heads.levels")}</th>
-							<th className="px-2 text-right font-normal">{t("heads.food")}</th>
-							<th className="pl-2 text-right font-normal">{t("heads.power")}</th>
+							<th className="py-1 pe-2 font-normal">{t("heads.pet")}</th>
+							<th className="px-2 text-end font-normal">{t("heads.levels")}</th>
+							<th className="px-2 text-end font-normal">{t("heads.food")}</th>
+							<th className="ps-2 text-end font-normal">{t("heads.power")}</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -324,14 +324,14 @@ function PlanResult({ plan }: { plan: PetPlanResult }) {
 							const gain = petPowerGain(row.calculation);
 							return (
 								<tr key={row.view.pet.id} className="border-line border-t-[1.5px]">
-									<td className="py-2 pr-2">{row.view.pet.name}</td>
-									<td className="px-2 text-right font-mono">
+									<td className="py-2 pe-2">{row.view.pet.name}</td>
+									<td className="px-2 text-end font-mono">
 										{formatNumber(row.calculation.levels)}
 									</td>
-									<td className="px-2 text-right font-mono">
+									<td className="px-2 text-end font-mono">
 										{formatNumber(food?.amount ?? 0)}
 									</td>
-									<td className="pl-2 text-right font-mono">
+									<td className="ps-2 text-end font-mono">
 										{gain === null
 											? unknown
 											: t("powerGain", { value: formatNumber(gain) })}

@@ -120,7 +120,7 @@ export function ResearchPlanFlyout({ open, chief, onClose, onSave }: ResearchPla
 				footer={
 					<>
 						{savedAt && (
-							<span className="border-line bg-surface text-muted mr-auto inline-flex h-8 items-center gap-2 rounded-full border-[1.5px] px-3 font-mono text-xs">
+							<span className="border-line bg-surface text-muted me-auto inline-flex h-8 items-center gap-2 rounded-full border-[1.5px] px-3 font-mono text-xs">
 								<span
 									aria-hidden="true"
 									className="bg-kept size-1.5 rounded-full"
@@ -512,7 +512,7 @@ function PlanResult({
 						>
 							<span className="font-medium">{item.name}</span>
 							<span className="text-muted text-xs">{item.category}</span>
-							<span className="ml-auto text-xs">
+							<span className="ms-auto text-xs">
 								{t("plan.result.stepCount", {
 									count: item.steps,
 									amount: formatNumber(item.steps),

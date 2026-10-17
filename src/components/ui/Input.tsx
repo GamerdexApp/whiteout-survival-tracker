@@ -7,7 +7,7 @@ interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
 
 export function Input({ leadingIcon, className = "", ...props }: InputProps) {
 	const field = useFieldControl();
-	const padding = leadingIcon ? "pr-3 pl-9" : "px-3";
+	const padding = leadingIcon ? "pe-3 ps-9" : "px-3";
 
 	const input = (
 		<input
@@ -25,7 +25,7 @@ export function Input({ leadingIcon, className = "", ...props }: InputProps) {
 		<span className="relative block">
 			<span
 				aria-hidden="true"
-				className="text-muted pointer-events-none absolute top-1/2 left-3 -translate-y-1/2"
+				className="text-muted pointer-events-none absolute inset-s-3 top-1/2 -translate-y-1/2"
 			>
 				{leadingIcon}
 			</span>

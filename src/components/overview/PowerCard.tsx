@@ -58,7 +58,7 @@ export function PowerCard({ chief, className = "" }: { chief: Playthrough; class
 							>
 								{t(`groups.${row.id}`)}
 							</Link>
-							<span className="text-right font-mono">
+							<span className="text-end font-mono">
 								{row.possible === null
 									? formatNumber(row.power)
 									: t("rowOfPossible", {

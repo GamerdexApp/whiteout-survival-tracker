@@ -39,7 +39,7 @@ export function InfoPopover({ label, children }: { label: string; children: Reac
 						<IconButton
 							label={t("close")}
 							onClick={close}
-							className="text-muted hover:bg-tint -mt-2 -mr-2 size-8 lg:size-7"
+							className="text-muted hover:bg-tint -me-2 -mt-2 size-8 lg:size-7"
 						>
 							<LuX size={16} aria-hidden="true" />
 						</IconButton>

@@ -75,7 +75,7 @@ export function NodeCard({ view, onLevelChange, onOpen, onManageJob }: NodeCardP
 				<button
 					type="button"
 					onClick={() => onOpen(node.id)}
-					className="hover:text-link min-h-11 min-w-0 flex-1 text-left font-semibold lg:min-h-9"
+					className="hover:text-link min-h-11 min-w-0 flex-1 text-start font-semibold lg:min-h-9"
 				>
 					{node.name}
 				</button>

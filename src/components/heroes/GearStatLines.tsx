@@ -12,12 +12,12 @@ export function GearStatLines({ set }: { set: HeroGearSet }) {
 		<Card className="flex flex-col gap-3 p-4">
 			<h3 className="font-semibold">{t("title")}</h3>
 			<ScrollRegion label={t("title")}>
-				<table className="w-full min-w-136 text-left">
+				<table className="w-full min-w-136 text-start">
 					<thead>
 						<tr>
 							<th className="w-24" />
 							{allTroopTypes.map((troop) => (
-								<th key={troop} className="py-1 pr-3">
+								<th key={troop} className="py-1 pe-3">
 									<SectionLabel
 										className={
 											troop === set.troopType ? "text-primary" : "text-muted"
@@ -34,7 +34,7 @@ export function GearStatLines({ set }: { set: HeroGearSet }) {
 					<tbody>
 						{slotIds.map((slot) => (
 							<tr key={slot} className="border-line border-t-[1.5px] align-top">
-								<th scope="row" className="py-2 pr-3 font-semibold">
+								<th scope="row" className="py-2 pe-3 font-semibold">
 									{slotName(slot)}
 								</th>
 								{allTroopTypes.map((troop) => {
@@ -42,7 +42,7 @@ export function GearStatLines({ set }: { set: HeroGearSet }) {
 									return (
 										<td
 											key={troop}
-											className={`py-2 pr-3 font-mono text-xs ${troop === set.troopType ? "bg-tint" : ""}`}
+											className={`py-2 pe-3 font-mono text-xs ${troop === set.troopType ? "bg-tint" : ""}`}
 										>
 											{stats && set.pieces[slot].enhancement > 0 ? (
 												<span className="flex flex-col px-2">

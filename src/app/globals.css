@@ -142,6 +142,11 @@
     cursor: pointer;
   }
 
+  /* A header cell centers unless its parent sets text-align to left or right. The value start does not count, so the cell must repeat it. */
+  .text-start th {
+    text-align: start;
+  }
+
   button:disabled,
   select:disabled,
   input:disabled,

@@ -79,15 +79,15 @@ function PuzzleTable({ puzzles }: { puzzles: TundraAlbumPuzzle[] }) {
 		<Card className="hidden overflow-hidden lg:block">
 			<table className="w-full border-collapse">
 				<thead>
-					<tr className="text-muted text-left">
+					<tr className="text-muted text-start">
 						<th scope="col" className="px-2 py-2">
 							<SectionLabel>{t("puzzle")}</SectionLabel>
 						</th>
-						<th scope="col" className="px-2 py-2 text-right">
+						<th scope="col" className="px-2 py-2 text-end">
 							<SectionLabel>{t("pieces")}</SectionLabel>
 						</th>
 						{STAR_LEVELS.map((stars) => (
-							<th key={stars} scope="col" className="px-2 py-2 text-right">
+							<th key={stars} scope="col" className="px-2 py-2 text-end">
 								<SectionLabel>
 									{t("star", { stars: formatNumber(stars) })}
 								</SectionLabel>
@@ -103,17 +103,17 @@ function PuzzleTable({ puzzles }: { puzzles: TundraAlbumPuzzle[] }) {
 						const split = tundraPuzzlePieceCounts(puzzle);
 						return (
 							<tr key={puzzle.id} className="border-line border-t">
-								<th scope="row" className="px-2 py-2 text-left">
+								<th scope="row" className="px-2 py-2 text-start">
 									<span className="flex items-center gap-3 font-semibold">
 										<ItemIcon src={puzzle.img} size={40} />
 										{puzzle.name}
 									</span>
 								</th>
-								<td className="px-2 py-2 text-right font-mono">
+								<td className="px-2 py-2 text-end font-mono">
 									{formatNumber(puzzle.pieces.length)}
 								</td>
 								{STAR_LEVELS.map((stars) => (
-									<td key={stars} className="px-2 py-2 text-right font-mono">
+									<td key={stars} className="px-2 py-2 text-end font-mono">
 										{formatNumber(split[stars])}
 									</td>
 								))}
@@ -296,7 +296,7 @@ function AlbumTiles({ albums, activeId, onChange }: AlbumTilesProps) {
 								type="button"
 								aria-pressed={active}
 								onClick={() => onChange(candidate.id)}
-								className={`flex min-h-11 w-full flex-col gap-1 rounded-md border-[1.5px] p-3 text-left ${active ? "border-primary bg-tint" : "border-line bg-surface hover:bg-tint"}`}
+								className={`flex min-h-11 w-full flex-col gap-1 rounded-md border-[1.5px] p-3 text-start ${active ? "border-primary bg-tint" : "border-line bg-surface hover:bg-tint"}`}
 							>
 								<span className="font-semibold">{candidate.name}</span>
 								<span className="text-muted font-mono text-xs">

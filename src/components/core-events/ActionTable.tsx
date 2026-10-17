@@ -57,9 +57,9 @@ export function ActionTable({ chief, event, day, result, onCount }: ActionTableP
 				className={`border-line text-muted border-y-[1.5px] font-mono text-[11px] tracking-[0.08em] uppercase max-lg:hidden ${ROW_GRID} ${DESKTOP_GRID}`}
 			>
 				<span>{t("action")}</span>
-				<span className="text-right">{t("pointsEach")}</span>
+				<span className="text-end">{t("pointsEach")}</span>
 				<span className="text-center">{t("count")}</span>
-				<span className="text-right">{t("points")}</span>
+				<span className="text-end">{t("points")}</span>
 			</div>
 			<ul>
 				{rows.map((row) => {
@@ -74,7 +74,7 @@ export function ActionTable({ chief, event, day, result, onCount }: ActionTableP
 							<div className="col-span-3 flex flex-col gap-1 lg:col-span-1">
 								<span>{row.action}</span>
 							</div>
-							<span className="text-muted lg:text-ink font-mono text-sm lg:text-right lg:text-base">
+							<span className="text-muted lg:text-ink font-mono text-sm lg:text-end lg:text-base">
 								{formatNumber(row.points)}
 							</span>
 							<div className="flex flex-col items-center gap-1">
@@ -111,7 +111,7 @@ export function ActionTable({ chief, event, day, result, onCount }: ActionTableP
 									</span>
 								)}
 							</div>
-							<span className="text-right font-mono font-semibold">
+							<span className="text-end font-mono font-semibold">
 								{formatNumber(count * row.points)}
 							</span>
 						</li>

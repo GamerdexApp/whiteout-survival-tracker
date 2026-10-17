@@ -104,7 +104,7 @@ export function ManageUpgradeFlyout({
 								<Field label={t("speedup.minutesUsed")}>
 									<Input
 										inputMode="numeric"
-										className="text-right"
+										className="text-end"
 										value={speedup}
 										onChange={(event) =>
 											setSpeedup(

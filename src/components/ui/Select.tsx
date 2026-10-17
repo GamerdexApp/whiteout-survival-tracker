@@ -11,13 +11,13 @@ export function Select({ className = "", ...props }: SelectHTMLAttributes<HTMLSe
 				id={field?.id}
 				aria-describedby={field?.describedBy}
 				aria-invalid={field?.invalid || undefined}
-				className={`${controlClasses} ${controlHeightClasses} ${controlBorder(field?.invalid ?? false)} appearance-none pr-9 pl-3 ${className}`}
+				className={`${controlClasses} ${controlHeightClasses} ${controlBorder(field?.invalid ?? false)} appearance-none ps-3 pe-9 ${className}`}
 				{...props}
 			/>
 			<LuChevronDown
 				size={16}
 				aria-hidden="true"
-				className="text-muted pointer-events-none absolute top-1/2 right-3 -translate-y-1/2"
+				className="text-muted pointer-events-none absolute inset-e-3 top-1/2 -translate-y-1/2"
 			/>
 		</span>
 	);

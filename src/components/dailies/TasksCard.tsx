@@ -95,7 +95,7 @@ export function TasksCard({ state, cycle, actions, onEditList, onAddTask }: Task
 											{task.label}
 										</span>
 									</label>
-									<div className="flex gap-3 pb-1 pl-8 max-lg:hidden">
+									<div className="flex gap-3 ps-8 pb-1 max-lg:hidden">
 										<button
 											type="button"
 											className="text-link min-h-9 text-sm"

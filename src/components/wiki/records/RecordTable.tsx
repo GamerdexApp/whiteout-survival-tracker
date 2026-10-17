@@ -20,7 +20,7 @@ interface RecordTableProps<Row> {
 export function RecordTable<Row>({ columns, rows, rowKey, isSelected }: RecordTableProps<Row>) {
 	return (
 		<Card className="relative overflow-hidden max-lg:border-0 max-lg:bg-transparent">
-			<table className="w-full text-left max-lg:block">
+			<table className="w-full text-start max-lg:block">
 				<thead className="max-lg:sr-only">
 					<tr className="border-line border-b-[1.5px]">
 						{columns.map((column) => (
@@ -55,9 +55,7 @@ export function RecordTable<Row>({ columns, rows, rowKey, isSelected }: RecordTa
 									{column.heading ? (
 										column.cell(row)
 									) : (
-										<span className="max-lg:text-right">
-											{column.cell(row)}
-										</span>
+										<span className="max-lg:text-end">{column.cell(row)}</span>
 									)}
 								</td>
 							))}

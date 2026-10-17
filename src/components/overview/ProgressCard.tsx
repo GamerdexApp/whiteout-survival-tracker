@@ -23,7 +23,7 @@ function ProgressRow({ href, label, ratio, value }: ProgressRowProps) {
 			>
 				<span>{label}</span>
 				<ProgressBar value={ratio} label={label} />
-				<span className="text-right font-mono text-sm">{value}</span>
+				<span className="text-end font-mono text-sm">{value}</span>
 			</Link>
 		</li>
 	);

@@ -62,7 +62,7 @@ export function ShardsInput({
 			aria-label={label}
 			value={formatNumber(value)}
 			onChange={(event) => onChange(parseCount(event.target.value))}
-			className="border-line bg-surface text-ink min-h-11 w-24 rounded-md border-[1.5px] px-2 text-right font-mono font-medium lg:min-h-9"
+			className="border-line bg-surface text-ink min-h-11 w-24 rounded-md border-[1.5px] px-2 text-end font-mono font-medium lg:min-h-9"
 		/>
 	);
 }

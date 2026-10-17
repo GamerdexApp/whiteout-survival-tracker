@@ -21,19 +21,19 @@ function DayLine({ event, row }: { event: CoreEventId; row: DayRow }) {
 		<li className="border-line border-t-[1.5px] py-3 first:border-t-0">
 			<div className={COLUMNS}>
 				<span className="font-semibold whitespace-nowrap">{label}</span>
-				<span className="text-muted text-right font-mono">{formatNumber(row.plan)}</span>
-				<span className="text-right font-mono font-semibold">
+				<span className="text-muted text-end font-mono">{formatNumber(row.plan)}</span>
+				<span className="text-end font-mono font-semibold">
 					{row.actual === null ? "-" : formatNumber(row.actual)}
 				</span>
-				<span className="text-right">
+				<span className="text-end">
 					{row.difference === null ? (
 						<span className="font-mono">-</span>
 					) : (
 						<DiffText difference={row.difference} />
 					)}
 				</span>
-				<span className="hidden text-right font-mono lg:block">{rankOf(row.rank)}</span>
-				<span className="hidden text-right font-mono lg:block">
+				<span className="hidden text-end font-mono lg:block">{rankOf(row.rank)}</span>
+				<span className="hidden text-end font-mono lg:block">
 					{rankOf(row.allianceRank)}
 				</span>
 			</div>
@@ -46,7 +46,7 @@ function DayLine({ event, row }: { event: CoreEventId; row: DayRow }) {
 						ally: rankOf(row.allianceRank),
 					})}
 				</span>
-				<span className="text-muted hidden w-30 text-right font-mono text-xs lg:block">
+				<span className="text-muted hidden w-30 text-end font-mono text-xs lg:block">
 					{t("share", { percent })}
 				</span>
 			</div>
@@ -63,11 +63,11 @@ function ColumnHeads() {
 			className={`${COLUMNS} text-muted border-line border-b-[1.5px] pb-2 font-mono text-[11px] tracking-[0.08em] uppercase`}
 		>
 			<span>{t("day")}</span>
-			<span className="text-right">{t("plan")}</span>
-			<span className="text-right">{t("actual")}</span>
-			<span className="text-right">{t("diff")}</span>
-			<span className="hidden text-right lg:block">{t("rank")}</span>
-			<span className="hidden text-right lg:block">{t("ally")}</span>
+			<span className="text-end">{t("plan")}</span>
+			<span className="text-end">{t("actual")}</span>
+			<span className="text-end">{t("diff")}</span>
+			<span className="hidden text-end lg:block">{t("rank")}</span>
+			<span className="hidden text-end lg:block">{t("ally")}</span>
 		</div>
 	);
 }
@@ -95,13 +95,13 @@ export function PlanAgainstActual({ event, days, total }: PlanAgainstActualProps
 				</ul>
 				<div className={`${COLUMNS} border-line border-t-[1.5px] pt-3`}>
 					<span className="font-semibold">{t("total")}</span>
-					<span className="text-muted text-right font-mono">
+					<span className="text-muted text-end font-mono">
 						{formatNumber(total.plan)}
 					</span>
-					<span className="text-right font-mono font-semibold">
+					<span className="text-end font-mono font-semibold">
 						{formatNumber(total.actual)}
 					</span>
-					<span className="text-right">
+					<span className="text-end">
 						<DiffText difference={total.difference} />
 					</span>
 				</div>

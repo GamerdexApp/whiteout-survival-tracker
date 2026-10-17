@@ -52,7 +52,7 @@ export function ThresholdsCard({ chief, event, dayId, result }: ThresholdsCardPr
 							<span className="text-muted">{milestone.rewards}</span>
 						</div>
 						<span
-							className={`shrink-0 text-right font-mono text-xs ${milestone.reached ? "text-kept" : "text-muted"}`}
+							className={`shrink-0 text-end font-mono text-xs ${milestone.reached ? "text-kept" : "text-muted"}`}
 						>
 							{milestone.reached
 								? t("reached")

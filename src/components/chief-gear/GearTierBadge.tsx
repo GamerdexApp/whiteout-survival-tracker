@@ -49,7 +49,7 @@ export function GearTierBadge({ tier, stars }: GearTierBadgeProps) {
 			{starCount > 0 && (
 				<span
 					aria-hidden="true"
-					className="absolute bottom-0 left-0.5 flex flex-col-reverse"
+					className="absolute inset-s-0.5 bottom-0 flex flex-col-reverse"
 				>
 					{Array.from({ length: starCount }, (_, index) => (
 						<LuStar

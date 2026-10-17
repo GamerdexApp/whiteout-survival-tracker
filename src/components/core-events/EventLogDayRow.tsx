@@ -142,11 +142,11 @@ export function ResultField({
 					disabled
 					aria-label={ariaLabel}
 					placeholder={placeholder}
-					className="text-right"
+					className="text-end"
 				/>
 			) : locked ? (
 				<span
-					className={`relative block px-3 py-2 text-right font-mono lg:px-0 ${value === undefined ? "text-muted" : ""}`}
+					className={`relative block px-3 py-2 text-end font-mono lg:px-0 ${value === undefined ? "text-muted" : ""}`}
 				>
 					<span className="sr-only">{ariaLabel}</span>
 					{value === undefined ? t("empty") : formatNumber(value)}

@@ -19,7 +19,7 @@ export function RankCard({ event, dayId }: { event: CoreEventId; dayId: string }
 						<p>{table.basedOn}</p>
 						<p>{t("note")}</p>
 					</div>
-					<table className="w-full text-left">
+					<table className="w-full text-start">
 						<thead className="text-muted font-mono text-[11px] tracking-[0.08em] uppercase">
 							<tr>
 								<th className="w-24 py-1 font-normal">{t("rank")}</th>
@@ -39,7 +39,7 @@ export function RankCard({ event, dayId }: { event: CoreEventId; dayId: string }
 											t("gems", { amount: formatNumber(row.gems) })
 										)}
 										{row.notConfirmed && (
-											<span className="text-muted ml-2 font-mono text-xs font-normal">
+											<span className="text-muted ms-2 font-mono text-xs font-normal">
 												{t("notConfirmed")}
 											</span>
 										)}

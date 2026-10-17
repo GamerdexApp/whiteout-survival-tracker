@@ -58,22 +58,22 @@ export function TroopsPlanResultCard({
 			<div className="flex flex-col gap-2">
 				<SectionLabel className="text-muted">{t("changes")}</SectionLabel>
 				<ScrollRegion label={t("changes")}>
-					<table className="w-full text-right">
+					<table className="w-full text-end">
 						<thead>
 							<tr>
-								<th className="py-1 text-left font-normal">
+								<th className="py-1 text-start font-normal">
 									<SectionLabel className="text-muted">
 										{t("heads.tier")}
 									</SectionLabel>
 								</th>
 								{TROOP_IDS.map((id) => (
-									<th key={id} className="py-1 pl-2 font-normal">
+									<th key={id} className="py-1 ps-2 font-normal">
 										<SectionLabel className="text-muted">
 											{t(`heads.${id}`)}
 										</SectionLabel>
 									</th>
 								))}
-								<th className="py-1 pl-2 font-normal">
+								<th className="py-1 ps-2 font-normal">
 									<SectionLabel className="text-muted">
 										{t("heads.all")}
 									</SectionLabel>
@@ -83,25 +83,25 @@ export function TroopsPlanResultCard({
 						<tbody>
 							{changedTiers.map((row) => (
 								<tr key={row.tier} className="border-line border-t-[1.5px]">
-									<td className="py-1.5 text-left">
+									<td className="py-1.5 text-start">
 										{t("tier", { tier: formatNumber(row.tier) })}
 									</td>
 									{TROOP_IDS.map((id) => (
-										<td key={id} className="pl-2 font-mono">
+										<td key={id} className="ps-2 font-mono">
 											{signed(row[id])}
 										</td>
 									))}
-									<td className="pl-2 font-mono">{signed(row.total)}</td>
+									<td className="ps-2 font-mono">{signed(row.total)}</td>
 								</tr>
 							))}
 							<tr className="border-line border-t-[1.5px] font-semibold">
-								<td className="py-1.5 text-left">{t("total")}</td>
+								<td className="py-1.5 text-start">{t("total")}</td>
 								{TROOP_IDS.map((id) => (
-									<td key={id} className="pl-2 font-mono">
+									<td key={id} className="ps-2 font-mono">
 										{signed(calculation.totals[id])}
 									</td>
 								))}
-								<td className="pl-2 font-mono">
+								<td className="ps-2 font-mono">
 									{signed(calculation.totals.total)}
 								</td>
 							</tr>

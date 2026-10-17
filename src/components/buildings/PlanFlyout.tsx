@@ -111,7 +111,7 @@ export function PlanFlyout({ open, chief, onClose, onSave }: PlanFlyoutProps) {
 				footer={
 					<>
 						{savedAt && (
-							<span className="border-line bg-surface text-muted mr-auto inline-flex h-8 items-center gap-2 rounded-full border-[1.5px] px-3 font-mono text-xs">
+							<span className="border-line bg-surface text-muted me-auto inline-flex h-8 items-center gap-2 rounded-full border-[1.5px] px-3 font-mono text-xs">
 								<span
 									aria-hidden="true"
 									className="bg-kept size-1.5 rounded-full"
@@ -553,7 +553,7 @@ function PlanResult({
 							{group.prerequisite && (
 								<Badge tone="added">{t("plan.result.prerequisite")}</Badge>
 							)}
-							<span className="ml-auto text-xs">
+							<span className="ms-auto text-xs">
 								{t("plan.result.steps", {
 									count: group.steps,
 									amount: formatNumber(group.steps),

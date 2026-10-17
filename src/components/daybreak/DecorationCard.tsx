@@ -25,7 +25,7 @@ function Row({ label, children }: { label: string; children: ReactNode }) {
 	return (
 		<div className="flex items-baseline justify-between gap-3">
 			<span className="text-muted">{label}</span>
-			<span className="text-right font-mono">{children}</span>
+			<span className="text-end font-mono">{children}</span>
 		</div>
 	);
 }

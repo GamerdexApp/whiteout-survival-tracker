@@ -161,7 +161,7 @@ export function FortressesTab() {
 				description={t("filtersDescription")}
 				footer={
 					<>
-						<Button variant="link" onClick={reset} className="mr-auto">
+						<Button variant="link" onClick={reset} className="me-auto">
 							{t("reset")}
 						</Button>
 						<Button variant="primary" onClick={() => setFiltersOpen(false)}>

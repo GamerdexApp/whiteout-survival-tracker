@@ -76,7 +76,7 @@ export function EventLogFlyout({ open, chief, event, onClose }: EventLogFlyoutPr
 				footer={
 					tab === "current" ? (
 						<>
-							<span className="mr-auto">
+							<span className="me-auto">
 								<SavedChip />
 							</span>
 							<Button onClick={onClose}>{t("footer.close")}</Button>
@@ -86,7 +86,7 @@ export function EventLogFlyout({ open, chief, event, onClose }: EventLogFlyoutPr
 						</>
 					) : (
 						<>
-							<span className="text-muted mr-auto text-sm">
+							<span className="text-muted me-auto text-sm">
 								{t("footer.readOnly")}
 							</span>
 							<Button onClick={onClose}>{t("footer.close")}</Button>

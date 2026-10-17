@@ -27,7 +27,7 @@ export function AlbumPicker({ views, activeId, onChange }: AlbumPickerProps) {
 								type="button"
 								aria-pressed={active}
 								onClick={() => onChange(view.album.id)}
-								className={`flex min-h-11 w-full flex-col gap-1.5 rounded-md border-[1.5px] p-3 text-left ${active ? "border-primary bg-tint" : "border-line bg-surface hover:bg-tint"}`}
+								className={`flex min-h-11 w-full flex-col gap-1.5 rounded-md border-[1.5px] p-3 text-start ${active ? "border-primary bg-tint" : "border-line bg-surface hover:bg-tint"}`}
 							>
 								<span className="flex items-start justify-between gap-2">
 									<span className="font-semibold">{view.album.name}</span>

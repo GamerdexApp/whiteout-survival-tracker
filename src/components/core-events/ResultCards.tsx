@@ -89,7 +89,7 @@ export function PerDayCard({ event, dayId, result }: ResultCardProps) {
 								label={t("bar", { day: label })}
 								className="h-2"
 							/>
-							<span className="text-right font-mono">
+							<span className="text-end font-mono">
 								{formatNumber(dayTotalOf(result, day.id))}
 							</span>
 						</li>

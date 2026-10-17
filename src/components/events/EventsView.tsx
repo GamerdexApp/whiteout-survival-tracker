@@ -172,7 +172,7 @@ export function EventsView({ chief }: { chief: Playthrough }) {
 					<Button variant="primary" onClick={() => setAddOpen(true)}>
 						{t("actions.addEvent")}
 					</Button>
-					<ol className="flex max-w-xl flex-col gap-3 text-left">
+					<ol className="flex max-w-xl flex-col gap-3 text-start">
 						{(["pick", "start", "roll"] as const).map((step, index) => (
 							<li key={step} className="flex items-start gap-3">
 								<span
@@ -214,7 +214,7 @@ export function EventsView({ chief }: { chief: Playthrough }) {
 					activeId={tab}
 					onChange={setTab}
 				>
-					<div className="flex gap-3 lg:absolute lg:-top-2 lg:right-0">
+					<div className="flex gap-3 lg:absolute lg:inset-e-0 lg:-top-2">
 						<Button
 							className="flex-1 lg:flex-none"
 							onClick={() => setResult({ kind: "new" })}

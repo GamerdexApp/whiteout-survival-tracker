@@ -66,7 +66,7 @@ export function PetRoster() {
 						<li key={pet.id}>
 							<Link
 								href={`/wiki/pets/${encodeURIComponent(pet.id)}`}
-								className="border-line bg-surface hover:border-primary flex min-h-11 w-full items-start gap-3 rounded-md border-[1.5px] p-3 text-left"
+								className="border-line bg-surface hover:border-primary flex min-h-11 w-full items-start gap-3 rounded-md border-[1.5px] p-3 text-start"
 							>
 								<ItemIcon src={pet.img} size={40} />
 								<span className="flex min-w-0 flex-col gap-1">

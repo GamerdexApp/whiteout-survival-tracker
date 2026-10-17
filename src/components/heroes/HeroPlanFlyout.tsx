@@ -79,7 +79,7 @@ export function HeroPlanFlyout({ open, chief, focusHeroId, onClose, onSave }: He
 			footer={
 				<>
 					{savedAt && (
-						<span className="border-line bg-surface text-muted mr-auto inline-flex h-8 items-center gap-2 rounded-full border-[1.5px] px-3 font-mono text-xs">
+						<span className="border-line bg-surface text-muted me-auto inline-flex h-8 items-center gap-2 rounded-full border-[1.5px] px-3 font-mono text-xs">
 							<span aria-hidden="true" className="bg-kept size-1.5 rounded-full" />
 							{t("saved", { date: formatDateTime(savedAt) })}
 						</span>
@@ -375,11 +375,11 @@ function PlanResult({ plan }: { plan: HeroPlanResult }) {
 				)}
 			</div>
 			<ScrollRegion label={t("result.tableLabel")}>
-				<table className="w-full min-w-104 text-left">
+				<table className="w-full min-w-104 text-start">
 					<thead>
 						<tr>
 							{TABLE_HEADS.map((head) => (
-								<th key={head} className="py-1 pr-3">
+								<th key={head} className="py-1 pe-3">
 									<SectionLabel className="text-muted">
 										{t(`result.heads.${head}`)}
 									</SectionLabel>
@@ -390,10 +390,10 @@ function PlanResult({ plan }: { plan: HeroPlanResult }) {
 					<tbody>
 						{plan.rows.map((row) => (
 							<tr key={row.view.hero.id} className="border-line border-t-[1.5px]">
-								<td className="py-1.5 pr-3 font-medium">{row.view.hero.name}</td>
-								<td className="pr-3 font-mono">{row.calculation.stars.steps}</td>
-								<td className="pr-3 font-mono">{row.calculation.skills.levels}</td>
-								<td className="pr-3 font-mono">
+								<td className="py-1.5 pe-3 font-medium">{row.view.hero.name}</td>
+								<td className="pe-3 font-mono">{row.calculation.stars.steps}</td>
+								<td className="pe-3 font-mono">{row.calculation.skills.levels}</td>
+								<td className="pe-3 font-mono">
 									{formatNumber(row.calculation.stars.shards)}
 								</td>
 								<td className="font-mono">

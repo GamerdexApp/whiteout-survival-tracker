@@ -68,7 +68,7 @@ export function HeroFlyout({ view, chief, onChange, onPlan, onClose }: HeroFlyou
 			footer={
 				<>
 					{view?.owned && (
-						<Button onClick={() => onPlan(view.hero.id)} className="mr-auto">
+						<Button onClick={() => onPlan(view.hero.id)} className="me-auto">
 							<LuClipboardList
 								size={16}
 								aria-hidden="true"
@@ -464,7 +464,7 @@ function ShardsSection({
 				</>
 			)}
 			<HeroRow label={t("sources")}>
-				<span className={sources.length === 0 ? "text-muted" : "text-right"}>
+				<span className={sources.length === 0 ? "text-muted" : "text-end"}>
 					{sources.length === 0 ? tc("unknown") : sources.join(", ")}
 				</span>
 			</HeroRow>

@@ -40,7 +40,7 @@ function BuffMatrix() {
 						<tr>
 							<th
 								scope="col"
-								className="text-muted px-2 py-2 text-left font-mono text-xs font-normal uppercase"
+								className="text-muted px-2 py-2 text-start font-mono text-xs font-normal uppercase"
 							>
 								{t("matrix.mode")}
 							</th>
@@ -48,7 +48,7 @@ function BuffMatrix() {
 								<th
 									key={source}
 									scope="col"
-									className="text-muted px-2 py-2 text-left font-mono text-xs font-normal uppercase"
+									className="text-muted px-2 py-2 text-start font-mono text-xs font-normal uppercase"
 								>
 									{t(`sources.${source}.short`)}
 								</th>
@@ -58,7 +58,7 @@ function BuffMatrix() {
 					<tbody>
 						{allEventBuffs.map((mode) => (
 							<tr key={mode.id} className="border-line border-t-[1.5px]">
-								<th scope="row" className="px-2 py-2.5 text-left font-semibold">
+								<th scope="row" className="px-2 py-2.5 text-start font-semibold">
 									{mode.name}
 								</th>
 								{BUFF_SOURCE_IDS.map((source) => (

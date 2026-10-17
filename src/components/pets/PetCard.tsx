@@ -72,7 +72,7 @@ export function PetCard({ view, chief, ruleMet, onChange }: PetCardProps) {
 					{unlocked ? (
 						<div className="flex items-center justify-between gap-3">
 							<span className="text-muted">{t("card.unlockRule")}</span>
-							<span className="text-right font-medium">{unlockRuleText(pet)}</span>
+							<span className="text-end font-medium">{unlockRuleText(pet)}</span>
 						</div>
 					) : (
 						<>

@@ -30,7 +30,7 @@ export function VipTable({ chief }: { chief: Playthrough }) {
 					total: formatNumber(MAX_VIP_XP),
 				})}
 			</h2>
-			<table className="w-full border-collapse text-left max-lg:hidden">
+			<table className="w-full border-collapse text-start max-lg:hidden">
 				<thead>
 					<tr className="border-line text-muted border-y-[1.5px] font-mono text-xs uppercase">
 						<th className="px-4 py-2 font-medium">{t("level")}</th>

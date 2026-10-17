@@ -112,7 +112,7 @@ export function AddEventFlyout({ open, chief, onPick, onClose }: AddEventFlyoutP
 								className="flex items-center justify-between gap-3 p-3"
 							>
 								<div
-									className={`flex min-w-0 flex-col gap-1 border-l-[3px] pl-3 ${CATEGORY_BORDER[event.category]}`}
+									className={`flex min-w-0 flex-col gap-1 border-s-[3px] ps-3 ${CATEGORY_BORDER[event.category]}`}
 								>
 									<span className="font-semibold">{event.name}</span>
 									<span className="text-muted text-sm">

@@ -22,11 +22,11 @@ export function HistoryList({ rows }: { rows: HistoryRow[] }) {
 				className={`border-line text-muted hidden border-b-[1.5px] px-5 py-3 font-mono text-[11px] tracking-[0.08em] uppercase lg:grid ${DESKTOP_COLUMNS}`}
 			>
 				<span>{t("event")}</span>
-				<span className="text-right">{t("plan")}</span>
-				<span className="text-right">{t("actual")}</span>
-				<span className="text-right">{t("diff")}</span>
-				<span className="text-right">{t("rank")}</span>
-				<span className="text-right">{t("alliance")}</span>
+				<span className="text-end">{t("plan")}</span>
+				<span className="text-end">{t("actual")}</span>
+				<span className="text-end">{t("diff")}</span>
+				<span className="text-end">{t("rank")}</span>
+				<span className="text-end">{t("alliance")}</span>
 				<span />
 			</div>
 			<ul className="divide-line divide-y-[1.5px]">
@@ -41,17 +41,17 @@ export function HistoryList({ rows }: { rows: HistoryRow[] }) {
 								<span className="font-semibold">{title}</span>
 								<span className="text-muted">{endedOf(row.entry)}</span>
 							</div>
-							<div className="flex flex-col lg:block lg:text-right">
+							<div className="flex flex-col lg:block lg:text-end">
 								<span className="text-muted lg:sr-only">{t("plan")}</span>
 								<span className="font-mono">{formatNumber(row.plan)}</span>
 							</div>
-							<div className="flex flex-col lg:block lg:text-right">
+							<div className="flex flex-col lg:block lg:text-end">
 								<span className="text-muted lg:sr-only">{t("actual")}</span>
 								<span className="font-mono font-semibold">
 									{formatNumber(row.actual)}
 								</span>
 							</div>
-							<div className="flex flex-col lg:block lg:text-right">
+							<div className="flex flex-col lg:block lg:text-end">
 								<span className="text-muted lg:sr-only">{t("diff")}</span>
 								<DiffText difference={row.difference} percent={row.percent} />
 							</div>
@@ -61,10 +61,10 @@ export function HistoryList({ rows }: { rows: HistoryRow[] }) {
 									alliance: rankOf(row.allianceRank),
 								})}
 							</span>
-							<span className="hidden text-right font-mono lg:block">
+							<span className="hidden text-end font-mono lg:block">
 								{rankOf(row.rank)}
 							</span>
-							<span className="hidden text-right font-mono lg:block">
+							<span className="hidden text-end font-mono lg:block">
 								{rankOf(row.allianceRank)}
 							</span>
 							<Link

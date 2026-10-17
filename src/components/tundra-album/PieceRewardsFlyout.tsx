@@ -85,7 +85,7 @@ export function PieceRewardsFlyout({
 					{tiers.map((tier) => (
 						<li
 							key={tier.tier}
-							className={`border-line relative flex gap-3 border-l-2 pb-4 pl-4 last:pb-0 ${tier.reached ? "border-primary" : ""}`}
+							className={`border-line relative flex gap-3 border-s-2 ps-4 pb-4 last:pb-0 ${tier.reached ? "border-primary" : ""}`}
 						>
 							<span
 								aria-hidden="true"

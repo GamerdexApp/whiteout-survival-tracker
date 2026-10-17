@@ -79,7 +79,7 @@ export function GearPlanFlyout({ open, chief, onClose, onSave }: GearPlanFlyoutP
 			footer={
 				<>
 					{savedAt && (
-						<span className="border-line bg-surface text-muted mr-auto inline-flex h-8 items-center gap-2 rounded-full border-[1.5px] px-3 font-mono text-xs">
+						<span className="border-line bg-surface text-muted me-auto inline-flex h-8 items-center gap-2 rounded-full border-[1.5px] px-3 font-mono text-xs">
 							<span aria-hidden="true" className="bg-kept size-1.5 rounded-full" />
 							{t("saved", { time: formatDateTime(savedAt) })}
 						</span>
@@ -418,11 +418,11 @@ function PlanResult({ plan }: { plan: GearPlanResult }) {
 				))}
 			</div>
 			<ScrollRegion label={t("result.tableLabel")}>
-				<table className="w-full min-w-104 text-left">
+				<table className="w-full min-w-104 text-start">
 					<thead>
 						<tr>
 							{resultColumnIds.map((id) => (
-								<th key={id} className="py-1 pr-3">
+								<th key={id} className="py-1 pe-3">
 									<SectionLabel className="text-muted">
 										{t(`result.columns.${id}`)}
 									</SectionLabel>
@@ -436,13 +436,13 @@ function PlanResult({ plan }: { plan: GearPlanResult }) {
 								key={`${row.ref.setId}/${row.ref.slot}`}
 								className="border-line border-t-[1.5px]"
 							>
-								<td className="py-1.5 pr-3 font-medium">
+								<td className="py-1.5 pe-3 font-medium">
 									{t("pieceTitle", {
 										set: row.set.name,
 										slot: slotName(row.ref.slot),
 									})}
 								</td>
-								<td className="pr-3 font-mono">
+								<td className="pe-3 font-mono">
 									{t("result.forgingStatsUp", {
 										percent: formatDecimal(
 											row.calculation.masteryForging.statsUpPercent

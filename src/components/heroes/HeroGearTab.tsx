@@ -194,7 +194,7 @@ export function HeroGearTab({ chief }: { chief: Playthrough }) {
 										type="button"
 										aria-pressed={set.id === selected?.id}
 										onClick={() => setSelectedId(set.id)}
-										className={`flex w-full flex-col gap-1 rounded-md border-[1.5px] p-3 text-left ${
+										className={`flex w-full flex-col gap-1 rounded-md border-[1.5px] p-3 text-start ${
 											set.id === selected?.id
 												? "border-primary bg-tint"
 												: "border-line bg-surface"
@@ -240,7 +240,7 @@ export function HeroGearTab({ chief }: { chief: Playthrough }) {
 									</Badge>
 								)}
 								<span className="text-muted">{t("troopHint")}</span>
-								<span className="ml-auto flex gap-2">
+								<span className="ms-auto flex gap-2">
 									<Button onClick={() => setEditing(selected.id)}>
 										{t("editSet")}
 									</Button>

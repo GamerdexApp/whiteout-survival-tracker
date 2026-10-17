@@ -39,7 +39,7 @@ export function Switch({
 			<span
 				aria-hidden="true"
 				className={`absolute top-0.5 size-5 rounded-full transition-all ${
-					checked ? "bg-on-primary left-5.5" : "bg-muted left-0.5"
+					checked ? "bg-on-primary inset-s-5.5" : "bg-muted inset-s-0.5"
 				}`}
 			/>
 			<span className="sr-only">{checked ? t("on") : t("off")}</span>

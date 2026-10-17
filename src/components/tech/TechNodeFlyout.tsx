@@ -21,7 +21,7 @@ interface TechNodeFlyoutProps {
 	onClose: () => void;
 }
 
-const linkClass = "text-link text-left font-semibold underline";
+const linkClass = "text-link text-start font-semibold underline";
 
 export function TechNodeFlyout({
 	chief,
@@ -198,7 +198,7 @@ export function TechNodeFlyout({
 										{needs && <span className="text-muted">{needs}</span>}
 									</span>
 									<span
-										className={`text-right font-medium ${state === "done" ? "text-kept" : state === "next" ? "text-primary" : "text-muted"}`}
+										className={`text-end font-medium ${state === "done" ? "text-kept" : state === "next" ? "text-primary" : "text-muted"}`}
 									>
 										{tf(state)}
 									</span>

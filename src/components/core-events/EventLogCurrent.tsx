@@ -103,9 +103,9 @@ function ResultsHeader({ title, hint }: { title: string; hint?: string }) {
 				className={`text-muted mt-2 hidden font-mono text-[11px] tracking-[0.08em] uppercase lg:grid lg:gap-3 ${DAY_ROW_COLUMNS}`}
 			>
 				<span />
-				<span className="text-right">{t("score")}</span>
-				<span className="text-right">{t("rank")}</span>
-				<span className="text-right">{t("alliance")}</span>
+				<span className="text-end">{t("score")}</span>
+				<span className="text-end">{t("rank")}</span>
+				<span className="text-end">{t("alliance")}</span>
 				<span />
 			</div>
 		</div>

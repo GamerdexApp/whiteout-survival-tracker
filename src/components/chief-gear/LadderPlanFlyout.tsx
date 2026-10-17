@@ -75,7 +75,7 @@ export function LadderPlanFlyout({ open, chief, kind, onClose, onSave }: LadderP
 			footer={
 				<>
 					{savedAt && (
-						<span className="border-line bg-surface text-muted mr-auto inline-flex h-8 items-center gap-2 rounded-full border-[1.5px] px-3 font-mono text-xs">
+						<span className="border-line bg-surface text-muted me-auto inline-flex h-8 items-center gap-2 rounded-full border-[1.5px] px-3 font-mono text-xs">
 							<span aria-hidden="true" className="bg-kept size-1.5 rounded-full" />
 							{t("saved", { date: formatDateTime(savedAt) })}
 						</span>
@@ -266,7 +266,7 @@ function PlanBody({
 						{kind === "gear" ? t("bySlot") : t("byCharm")}
 					</h3>
 					<ScrollRegion label={kind === "gear" ? t("bySlot") : t("byCharm")}>
-						<table className="w-full min-w-[24rem] text-left">
+						<table className="w-full min-w-[24rem] text-start">
 							<thead>
 								<tr>
 									{[
@@ -275,7 +275,7 @@ function PlanBody({
 										t("score"),
 										t("powerGain"),
 									].map((head) => (
-										<th key={head} className="py-1 pr-3">
+										<th key={head} className="py-1 pe-3">
 											<SectionLabel className="text-muted">
 												{head}
 											</SectionLabel>
@@ -286,7 +286,7 @@ function PlanBody({
 							<tbody>
 								{plan.byItem.map(({ item, result }) => (
 									<tr key={item.key} className="border-line border-t-[1.5px]">
-										<td className="py-1.5 pr-3 font-medium">
+										<td className="py-1.5 pe-3 font-medium">
 											{kind === "gear"
 												? item.label
 												: t("slotCharm", {
@@ -297,8 +297,8 @@ function PlanBody({
 														charm: item.label,
 													})}
 										</td>
-										<td className="pr-3 font-mono">{result.steps}</td>
-										<td className="pr-3 font-mono">
+										<td className="pe-3 font-mono">{result.steps}</td>
+										<td className="pe-3 font-mono">
 											{formatNumber(result.score)}
 										</td>
 										<td className="font-mono">{formatCompact(result.power)}</td>
@@ -313,7 +313,7 @@ function PlanBody({
 			<Card className="flex flex-col gap-2 p-4">
 				<h3 className="font-semibold">{t("converter.title")}</h3>
 				<ScrollRegion label={t("converter.title")}>
-					<table className="w-full min-w-88 text-left">
+					<table className="w-full min-w-88 text-start">
 						<thead>
 							<tr>
 								{[
@@ -321,7 +321,7 @@ function PlanBody({
 									t("converter.get"),
 									t("converter.limit"),
 								].map((head) => (
-									<th key={head} className="py-1 pr-3">
+									<th key={head} className="py-1 pe-3">
 										<SectionLabel className="text-muted">{head}</SectionLabel>
 									</th>
 								))}
@@ -330,14 +330,14 @@ function PlanBody({
 						<tbody>
 							{converter.map((rate) => (
 								<tr key={rate.id} className="border-line border-t-[1.5px]">
-									<td className="py-1.5 pr-3">
+									<td className="py-1.5 pe-3">
 										{t("converter.amount", {
 											quantity: String(rate.fromQuantity),
 											name:
 												findItem(rate.fromItemId)?.name ?? rate.fromItemId,
 										})}
 									</td>
-									<td className="pr-3">
+									<td className="pe-3">
 										{t("converter.amount", {
 											quantity: String(rate.toQuantity),
 											name: findItem(rate.toItemId)?.name ?? rate.toItemId,

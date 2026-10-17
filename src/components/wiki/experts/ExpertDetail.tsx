@@ -34,7 +34,7 @@ function SkillSelectButton({
 			type="button"
 			aria-pressed={selected}
 			onClick={onSelect}
-			className="flex min-h-11 min-w-11 items-center gap-2 text-left font-semibold hover:underline lg:min-h-9 lg:min-w-9"
+			className="flex min-h-11 min-w-11 items-center gap-2 text-start font-semibold hover:underline lg:min-h-9 lg:min-w-9"
 		>
 			{children}
 		</button>

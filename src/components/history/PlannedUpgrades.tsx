@@ -80,7 +80,7 @@ function UpgradeRow({ chief, event, upgrade }: UpgradeRowProps) {
 					<span className="font-semibold">{upgrade.item}</span>{" "}
 					<LevelText upgrade={upgrade} />
 				</span>
-				<span className="lg:order-last lg:text-right">
+				<span className="lg:order-last lg:text-end">
 					<DonePill done={done} />
 				</span>
 			</div>
@@ -88,7 +88,7 @@ function UpgradeRow({ chief, event, upgrade }: UpgradeRowProps) {
 				<span className="border-line text-muted w-fit rounded-full border-[1.5px] px-2 py-0.5 font-mono text-[11px] whitespace-nowrap">
 					{day}
 				</span>
-				<span className="text-kept font-mono lg:text-right">
+				<span className="text-kept font-mono lg:text-end">
 					{t("power", { power: formatNumber(upgrade.power) })}
 				</span>
 			</div>

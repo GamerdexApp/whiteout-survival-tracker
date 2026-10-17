@@ -128,7 +128,7 @@ function ChiefGearList() {
 									type="button"
 									aria-haspopup="dialog"
 									onClick={() => setOpenSlot(slot)}
-									className="bg-surface border-line hover:border-primary flex h-full min-h-11 w-full flex-col items-start gap-2 rounded-md border-[1.5px] p-3 text-left"
+									className="bg-surface border-line hover:border-primary flex h-full min-h-11 w-full flex-col items-start gap-2 rounded-md border-[1.5px] p-3 text-start"
 								>
 									<span className="font-semibold">{slot.name}</span>
 									<span className="text-muted">{slot.troopType}</span>

@@ -26,7 +26,7 @@ export function HoursMinutesFields({
 			<Field label={hoursLabel ?? t("hours")}>
 				<Input
 					inputMode="numeric"
-					className="text-right"
+					className="text-end"
 					value={hours}
 					onChange={(event) => onChange(digits(event.target.value), minutes)}
 				/>
@@ -34,7 +34,7 @@ export function HoursMinutesFields({
 			<Field label={t("minutes")}>
 				<Input
 					inputMode="numeric"
-					className="text-right"
+					className="text-end"
 					value={minutes}
 					onChange={(event) => onChange(hours, digits(event.target.value))}
 				/>

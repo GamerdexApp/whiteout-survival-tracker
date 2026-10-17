@@ -83,7 +83,7 @@ export function PetNumberField({
 					onKeyDown={(event) => event.key === "Enter" && event.currentTarget.blur()}
 					className="text-ink min-w-0 flex-1 self-stretch bg-transparent px-1 text-center font-mono font-medium outline-none disabled:opacity-60"
 				/>
-				{suffix && <span className="text-muted pr-2 font-mono text-xs">{suffix}</span>}
+				{suffix && <span className="text-muted pe-2 font-mono text-xs">{suffix}</span>}
 			</span>
 			<IconButton
 				label={t("raise", { label })}

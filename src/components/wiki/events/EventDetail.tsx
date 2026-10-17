@@ -289,7 +289,7 @@ function ExtraSections({ event }: { event: GameEvent }) {
 			)}
 			{event.tips && (
 				<RecordSection title={tTips("title")}>
-					<ul className="flex list-disc flex-col gap-1 pl-5">
+					<ul className="flex list-disc flex-col gap-1 ps-5">
 						{event.tips.map((tip) => (
 							<li key={tip}>{tip}</li>
 						))}
@@ -316,7 +316,7 @@ export function EventDetail({ event }: { event: GameEvent }) {
 						{
 							label: t("requirements"),
 							value: event.requirements?.length ? (
-								<ul className="flex list-disc flex-col gap-1 pl-5">
+								<ul className="flex list-disc flex-col gap-1 ps-5">
 									{event.requirements.map((requirement) => (
 										<li key={requirement}>{requirement}</li>
 									))}

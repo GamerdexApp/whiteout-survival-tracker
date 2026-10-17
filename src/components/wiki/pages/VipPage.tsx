@@ -44,7 +44,7 @@ function Ladder({ onOpen }: { onOpen: (level: VipLevel) => void }) {
 				<table className="w-full border-collapse">
 					<thead>
 						<tr>
-							<th scope="col" className="px-2 py-2 text-left">
+							<th scope="col" className="px-2 py-2 text-start">
 								<SectionLabel className="text-muted">{t("row")}</SectionLabel>
 							</th>
 							{vipLevels.map((level) => (
@@ -60,7 +60,7 @@ function Ladder({ onOpen }: { onOpen: (level: VipLevel) => void }) {
 					</thead>
 					<tbody>
 						<tr className="border-line border-t">
-							<th scope="row" className="px-2 py-2 text-left font-normal">
+							<th scope="row" className="px-2 py-2 text-start font-normal">
 								{t("xp")}
 							</th>
 							{vipLevels.map((level) => (
@@ -70,7 +70,7 @@ function Ladder({ onOpen }: { onOpen: (level: VipLevel) => void }) {
 							))}
 						</tr>
 						<tr className="border-line border-t">
-							<th scope="row" className="px-2 py-2 text-left font-normal">
+							<th scope="row" className="px-2 py-2 text-start font-normal">
 								{t("running")}
 							</th>
 							{vipLevels.map((level) => (
@@ -81,7 +81,7 @@ function Ladder({ onOpen }: { onOpen: (level: VipLevel) => void }) {
 						</tr>
 						{vipStatRows.map((row) => (
 							<tr key={row.statKey} className="border-line border-t">
-								<th scope="row" className="px-2 py-2 text-left font-normal">
+								<th scope="row" className="px-2 py-2 text-start font-normal">
 									{row.stat}
 								</th>
 								{vipLevels.map((level) => {

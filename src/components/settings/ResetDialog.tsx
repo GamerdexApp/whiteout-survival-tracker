@@ -53,7 +53,7 @@ export function ResetDialog({
 			<p className="text-muted">{t("resetDialog.settingsNote")}</p>
 			<Note>{t("resetDialog.undoNote")}</Note>
 			<div>
-				<Button variant="ghost" className="text-link -ml-4" onClick={onExportBackup}>
+				<Button variant="ghost" className="text-link -ms-4" onClick={onExportBackup}>
 					{t("resetDialog.exportFirst")}
 				</Button>
 			</div>

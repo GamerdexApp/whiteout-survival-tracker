@@ -42,7 +42,7 @@ export function BannerTable({ chief }: { chief: Playthrough }) {
 				label={t("title")}
 				className="relative max-h-128 overflow-auto"
 			>
-				<table className="w-full min-w-136 border-collapse text-left">
+				<table className="w-full min-w-136 border-collapse text-start">
 					<thead className="bg-surface sticky top-0">
 						<tr className="border-line text-muted border-y-[1.5px] font-mono text-xs uppercase">
 							<th className="px-4 py-2 font-medium">{t("range")}</th>

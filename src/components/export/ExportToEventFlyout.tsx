@@ -245,7 +245,7 @@ export function ExportToEventFlyout({ open, chief, spec, onClose }: ExportToEven
 						<span className="font-semibold">
 							{t(`events.${id}`)}
 							{id === event && (
-								<span className="border-primary text-primary ml-2 rounded-full border px-1.5 text-xs font-normal">
+								<span className="border-primary text-primary ms-2 rounded-full border px-1.5 text-xs font-normal">
 									{t("selected")}
 								</span>
 							)}

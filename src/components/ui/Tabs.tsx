@@ -63,7 +63,7 @@ export function Tabs<TabId extends string>({
 						>
 							{tab.label}
 							{tab.count !== undefined && (
-								<span className="text-muted ml-2 font-mono text-xs">
+								<span className="text-muted ms-2 font-mono text-xs">
 									{tab.count}
 								</span>
 							)}
@@ -72,7 +72,7 @@ export function Tabs<TabId extends string>({
 									<LuLock
 										size={12}
 										aria-hidden="true"
-										className="text-muted ml-1.5 inline"
+										className="text-muted ms-1.5 inline"
 									/>
 									<span className="sr-only">{t("locked")}</span>
 								</>

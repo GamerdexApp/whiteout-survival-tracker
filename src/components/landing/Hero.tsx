@@ -35,7 +35,7 @@ function ContinueCard() {
 					className="text-link flex min-h-11 items-center gap-1.5 font-medium hover:underline lg:min-h-9"
 				>
 					{t("action.allChiefs")}
-					<LuArrowRight size={16} aria-hidden="true" />
+					<LuArrowRight className="rtl:rotate-180" size={16} aria-hidden="true" />
 				</Link>
 			</div>
 			<span className="text-muted text-[13px]">

@@ -58,7 +58,7 @@ export function DeleteChiefDialog({
 					<div>
 						<Button
 							variant="ghost"
-							className="text-link -ml-4"
+							className="text-link -ms-4"
 							onClick={onExportBackup}
 						>
 							{t("exportBackup")}

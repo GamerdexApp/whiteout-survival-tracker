@@ -307,7 +307,7 @@ export function ResourcesView({ chief }: { chief: Playthrough }) {
 						>
 							<SectionLabel className="text-muted">{tv("columns.item")}</SectionLabel>
 							<SectionLabel className="text-muted">{t("sources")}</SectionLabel>
-							<SectionLabel className="text-muted text-right">
+							<SectionLabel className="text-muted text-end">
 								{t("owned")}
 							</SectionLabel>
 						</div>

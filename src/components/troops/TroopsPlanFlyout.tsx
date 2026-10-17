@@ -48,7 +48,7 @@ export function TroopsPlanFlyout({ open, chief, onClose, onSave }: TroopsPlanFly
 			footer={
 				<>
 					{savedAt && (
-						<span className="border-line bg-surface text-muted inline-flex h-8 items-center gap-2 rounded-full border-[1.5px] px-3 font-mono text-xs max-lg:w-full lg:mr-auto">
+						<span className="border-line bg-surface text-muted inline-flex h-8 items-center gap-2 rounded-full border-[1.5px] px-3 font-mono text-xs max-lg:w-full lg:me-auto">
 							<span aria-hidden="true" className="bg-kept size-1.5 rounded-full" />
 							{t("saved", { date: formatDateTime(savedAt) })}
 						</span>

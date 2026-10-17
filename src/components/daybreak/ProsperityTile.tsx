@@ -12,7 +12,7 @@ function Row({ label, value, max }: { label: string; value: number; max: number 
 	return (
 		<div className="flex items-baseline justify-between gap-3">
 			<span className="text-muted">{label}</span>
-			<span className="text-right font-mono">
+			<span className="text-end font-mono">
 				{t("ofMax", { value: formatNumber(value), max: formatNumber(max) })}
 			</span>
 		</div>

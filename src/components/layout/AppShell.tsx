@@ -18,7 +18,7 @@ export function AppShell({ children }: { children: ReactNode }) {
 	const skipLink = (
 		<a
 			href="#main"
-			className="focus:bg-surface sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 focus:rounded-md focus:px-3 focus:py-2"
+			className="focus:bg-surface sr-only focus:not-sr-only focus:fixed focus:inset-s-2 focus:top-2 focus:z-50 focus:rounded-md focus:px-3 focus:py-2"
 		>
 			{t("skipToContent")}
 		</a>

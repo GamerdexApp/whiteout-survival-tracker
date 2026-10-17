@@ -161,9 +161,9 @@ function HistoryDayRow({
 	return (
 		<div className="grid grid-cols-[minmax(0,1fr)_auto_3.5rem_3.5rem] items-center gap-3 py-2.5">
 			<span>{name}</span>
-			<span className="text-right font-mono">{text(result?.score)}</span>
-			<span className="text-right font-mono">{text(result?.rank)}</span>
-			<span className="text-right font-mono">{text(result?.allianceRank)}</span>
+			<span className="text-end font-mono">{text(result?.score)}</span>
+			<span className="text-end font-mono">{text(result?.rank)}</span>
+			<span className="text-end font-mono">{text(result?.allianceRank)}</span>
 		</div>
 	);
 }
@@ -177,9 +177,9 @@ function HistoryColumns() {
 			className="text-muted grid grid-cols-[minmax(0,1fr)_auto_3.5rem_3.5rem] gap-3 pb-1 font-mono text-[11px] tracking-[0.08em] uppercase"
 		>
 			<span />
-			<span className="text-right">{t("score")}</span>
-			<span className="text-right">{t("rank")}</span>
-			<span className="text-right">{t("allianceShort")}</span>
+			<span className="text-end">{t("score")}</span>
+			<span className="text-end">{t("rank")}</span>
+			<span className="text-end">{t("allianceShort")}</span>
 		</div>
 	);
 }

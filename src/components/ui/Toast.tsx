@@ -89,7 +89,7 @@ export function ToastProvider({ children }: { children: React.ReactNode }) {
 					return (
 						<div
 							key={toast.id}
-							className="border-line bg-surface text-ink pointer-events-auto flex items-start gap-2 rounded-md border-[1.5px] py-2 pr-1 pl-4"
+							className="border-line bg-surface text-ink pointer-events-auto flex items-start gap-2 rounded-md border-[1.5px] py-2 ps-4 pe-1"
 						>
 							<Icon
 								aria-hidden="true"

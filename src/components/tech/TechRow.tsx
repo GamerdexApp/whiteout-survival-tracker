@@ -41,7 +41,7 @@ export function TechRow({ view, onLevelChange, onOpen }: TechRowProps) {
 						type="button"
 						aria-label={t("node.open", { name: node.name })}
 						onClick={() => onOpen(node.id)}
-						className="text-ink hover:text-primary min-h-11 truncate text-left font-semibold lg:min-h-9"
+						className="text-ink hover:text-primary min-h-11 truncate text-start font-semibold lg:min-h-9"
 					>
 						{node.name}
 					</button>

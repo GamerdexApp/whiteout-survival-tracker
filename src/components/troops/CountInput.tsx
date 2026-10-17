@@ -58,7 +58,7 @@ export function CountInput({
 			onKeyDown={(event) => {
 				if (event.key === "Enter") event.currentTarget.blur();
 			}}
-			className={`text-right font-mono ${dashed ? "bg-tint border-dashed" : ""} ${className}`}
+			className={`text-end font-mono ${dashed ? "bg-tint border-dashed" : ""} ${className}`}
 		/>
 	);
 }

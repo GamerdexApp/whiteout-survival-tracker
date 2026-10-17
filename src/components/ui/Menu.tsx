@@ -82,7 +82,7 @@ export function Menu({ label, trigger, children, className = "" }: MenuProps) {
 }
 
 const menuItemClasses =
-	"flex min-h-11 w-full items-center rounded-md px-2.5 py-1 text-left hover:bg-tint lg:min-h-9";
+	"flex min-h-11 w-full items-center rounded-md px-2.5 py-1 text-start hover:bg-tint lg:min-h-9";
 
 interface MenuItemProps {
 	children: ReactNode;

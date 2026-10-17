@@ -276,7 +276,7 @@ export function StartTrainingFlyout({
 					<div className="flex gap-2">
 						<Input
 							inputMode="numeric"
-							className="text-right font-mono"
+							className="text-end font-mono"
 							value={countText === "" ? "" : formatNumber(Number(countText))}
 							onChange={(event) => setCountText(digits(event.target.value))}
 						/>

@@ -77,7 +77,7 @@ export function EndEventFlyout({ open, chief, event, onCancel, onConfirm }: EndE
 			</Card>
 			<div className="flex flex-col gap-2">
 				<h3 className="font-semibold">{te("what")}</h3>
-				<ul className="flex list-disc flex-col gap-2 pl-5">
+				<ul className="flex list-disc flex-col gap-2 ps-5">
 					<li>{te("saves")}</li>
 					<li>{te("clearsCounts")}</li>
 					<li>{te("clearsPlans")}</li>

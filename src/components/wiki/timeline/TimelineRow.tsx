@@ -39,7 +39,7 @@ function LineCard({ lines, dashed }: { lines: TimelineLine[]; dashed: boolean })
 
 	return (
 		<div
-			className={`bg-surface flex flex-col gap-2 rounded-md border-[1.5px] p-3 lg:items-end lg:text-right ${
+			className={`bg-surface flex flex-col gap-2 rounded-md border-[1.5px] p-3 lg:items-end lg:text-end ${
 				dashed ? "border-line border-dashed" : "border-line"
 			}`}
 		>
@@ -166,12 +166,12 @@ export function TimelineRowView({ row, phase, daysLeft }: TimelineRowViewProps) 
 				)}
 			</p>
 			{row.lines.length > 0 && (
-				<div className="col-start-2 row-start-2 pb-3 lg:col-start-1 lg:row-start-1 lg:py-2 lg:pr-4">
+				<div className="col-start-2 row-start-2 pb-3 lg:col-start-1 lg:row-start-1 lg:py-2 lg:pe-4">
 					<LineCard lines={row.lines} dashed={dashed} />
 				</div>
 			)}
 			{row.heroGenerations.length > 0 && (
-				<div className="col-start-2 row-start-3 pb-3 lg:col-start-3 lg:row-start-1 lg:py-2 lg:pb-2 lg:pl-4">
+				<div className="col-start-2 row-start-3 pb-3 lg:col-start-3 lg:row-start-1 lg:py-2 lg:ps-4 lg:pb-2">
 					<HeroCard generations={row.heroGenerations} dashed={dashed} />
 				</div>
 			)}
@@ -209,8 +209,8 @@ export function TimelineMarker({ name, days, from, to, markerRef }: TimelineMark
 					className="bg-primary relative my-3 size-3 self-center rounded-full lg:hidden"
 				/>
 			</div>
-			<div className="col-start-2 row-start-1 py-2 lg:col-start-1 lg:pr-4">
-				<div className="bg-surface border-primary flex flex-col gap-1 rounded-md border-[1.5px] p-3 lg:text-right">
+			<div className="col-start-2 row-start-1 py-2 lg:col-start-1 lg:pe-4">
+				<div className="bg-surface border-primary flex flex-col gap-1 rounded-md border-[1.5px] p-3 lg:text-end">
 					<span className="text-primary font-semibold lg:hidden">
 						{t("marker.label")}
 					</span>

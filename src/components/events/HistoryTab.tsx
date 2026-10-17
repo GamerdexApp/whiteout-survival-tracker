@@ -273,7 +273,7 @@ export function HistoryTab({ chief, zone, nowMs, onEdit }: HistoryTabProps) {
 					<Card className="max-lg:hidden">
 						<table className="w-full">
 							<thead>
-								<tr className="text-muted border-line border-b-[1.5px] text-left font-mono text-[11px] tracking-[0.08em] uppercase">
+								<tr className="text-muted border-line border-b-[1.5px] text-start font-mono text-[11px] tracking-[0.08em] uppercase">
 									<th className="px-4 py-3 font-normal">
 										{t("history.colDate")}
 									</th>
@@ -282,19 +282,19 @@ export function HistoryTab({ chief, zone, nowMs, onEdit }: HistoryTabProps) {
 											{t("history.colEvent")}
 										</th>
 									)}
-									<th className="py-3 text-right font-normal">
+									<th className="py-3 text-end font-normal">
 										{t("history.colScore")}
 									</th>
-									<th className="py-3 pl-4 text-right font-normal">
+									<th className="py-3 ps-4 text-end font-normal">
 										{t("history.colRank")}
 									</th>
-									<th className="py-3 pl-4 text-right font-normal">
+									<th className="py-3 ps-4 text-end font-normal">
 										{t("history.colAlliance")}
 									</th>
-									<th className="py-3 pl-4 font-normal">
+									<th className="py-3 ps-4 font-normal">
 										{t("history.colResult")}
 									</th>
-									<th className="py-3 pr-4 font-normal">
+									<th className="py-3 pe-4 font-normal">
 										<span className="sr-only">{t("history.colActions")}</span>
 									</th>
 								</tr>
@@ -319,19 +319,19 @@ export function HistoryTab({ chief, zone, nowMs, onEdit }: HistoryTabProps) {
 												</span>
 											</td>
 										)}
-										<td className="py-4 text-right font-mono font-semibold">
+										<td className="py-4 text-end font-mono font-semibold">
 											{scoreText(row) ?? dash}
 										</td>
-										<td className="py-4 pl-4 text-right font-mono">
+										<td className="py-4 ps-4 text-end font-mono">
 											{row.result.rank === undefined
 												? dash
 												: formatNumber(row.result.rank)}
 										</td>
-										<td className="py-4 pl-4 text-right font-mono whitespace-nowrap">
+										<td className="py-4 ps-4 text-end font-mono whitespace-nowrap">
 											{allianceText(row) ?? dash}
 										</td>
-										<td className="text-muted py-4 pl-4">{resultLine(row)}</td>
-										<td className="py-4 pr-4 text-right">
+										<td className="text-muted py-4 ps-4">{resultLine(row)}</td>
+										<td className="py-4 pe-4 text-end">
 											<EditButton
 												result={row.result}
 												name={row.event.name}

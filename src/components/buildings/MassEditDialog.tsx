@@ -65,7 +65,7 @@ export function MassEditDialog({ open, chief, onClose, onSave }: MassEditDialogP
 			description={t("massEdit.description")}
 			footer={
 				<>
-					<span className="text-muted mr-auto" role="status">
+					<span className="text-muted me-auto" role="status">
 						{changes.length === 0
 							? t("massEdit.noChanges")
 							: t("massEdit.changes", changeCount)}

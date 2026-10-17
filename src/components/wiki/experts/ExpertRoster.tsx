@@ -74,7 +74,7 @@ export function ExpertRoster() {
 						<li key={expert.id}>
 							<Link
 								href={`/wiki/experts/${encodeURIComponent(expert.id)}`}
-								className="border-line bg-surface hover:border-primary flex h-full min-h-11 w-full items-stretch overflow-hidden rounded-md border-[1.5px] text-left"
+								className="border-line bg-surface hover:border-primary flex h-full min-h-11 w-full items-stretch overflow-hidden rounded-md border-[1.5px] text-start"
 							>
 								{expert.img ? (
 									<img
@@ -115,7 +115,7 @@ export function ExpertRoster() {
 						<li key={expert.id}>
 							<div
 								aria-disabled="true"
-								className="border-line bg-surface flex h-full min-h-11 w-full cursor-not-allowed items-stretch overflow-hidden rounded-md border-[1.5px] border-dashed text-left opacity-70"
+								className="border-line bg-surface flex h-full min-h-11 w-full cursor-not-allowed items-stretch overflow-hidden rounded-md border-[1.5px] border-dashed text-start opacity-70"
 							>
 								{expert.img ? (
 									<img

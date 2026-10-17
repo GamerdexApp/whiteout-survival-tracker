@@ -24,7 +24,7 @@ interface ResponsiveTableProps<Row> {
 	onRowSelect?: (row: Row) => void;
 }
 
-const headerClasses = "text-muted px-3 py-2 text-left font-mono text-xs font-normal uppercase";
+const headerClasses = "text-muted px-3 py-2 text-start font-mono text-xs font-normal uppercase";
 
 /** A table from 1024 px and a list of cards below it. Each row can link to a record page. */
 export function ResponsiveTable<Row>({
@@ -50,7 +50,7 @@ export function ResponsiveTable<Row>({
 									key={column.id}
 									scope="col"
 									style={column.width ? { width: column.width } : undefined}
-									className={`${headerClasses} ${column.numeric ? "text-right" : ""}`}
+									className={`${headerClasses} ${column.numeric ? "text-end" : ""}`}
 								>
 									{column.header}
 								</th>
@@ -69,7 +69,7 @@ export function ResponsiveTable<Row>({
 									{columns.map((column) => (
 										<td
 											key={column.id}
-											className={`px-3 py-2.5 ${column.numeric ? "text-right font-mono" : ""}`}
+											className={`px-3 py-2.5 ${column.numeric ? "text-end font-mono" : ""}`}
 										>
 											{column === titleColumn && href ? (
 												<Link
@@ -83,7 +83,7 @@ export function ResponsiveTable<Row>({
 													type="button"
 													aria-haspopup="dialog"
 													onClick={() => onRowSelect(row)}
-													className="inline-flex min-h-11 min-w-11 items-center text-left font-semibold underline lg:min-h-9 lg:min-w-9"
+													className="inline-flex min-h-11 min-w-11 items-center text-start font-semibold underline lg:min-h-9 lg:min-w-9"
 												>
 													{column.render(row)}
 												</button>
@@ -120,7 +120,7 @@ export function ResponsiveTable<Row>({
 							</span>
 						</>
 					);
-					const cardClasses = `border-line bg-surface block min-h-11 w-full rounded-md border-[1.5px] p-3 text-left`;
+					const cardClasses = `border-line bg-surface block min-h-11 w-full rounded-md border-[1.5px] p-3 text-start`;
 					return (
 						<li key={key}>
 							{href ? (

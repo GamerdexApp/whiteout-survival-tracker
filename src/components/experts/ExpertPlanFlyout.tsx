@@ -61,7 +61,7 @@ export function ExpertPlanFlyout({ open, chief, onClose, onSave }: ExpertPlanFly
 			footer={
 				<>
 					{savedAt && (
-						<span className="border-line bg-surface text-muted mr-auto inline-flex h-8 items-center gap-2 rounded-full border-[1.5px] px-3 font-mono text-xs">
+						<span className="border-line bg-surface text-muted me-auto inline-flex h-8 items-center gap-2 rounded-full border-[1.5px] px-3 font-mono text-xs">
 							<span aria-hidden="true" className="bg-kept size-1.5 rounded-full" />
 							{t("saved", { date: formatDateTime(savedAt) })}
 						</span>
@@ -441,11 +441,11 @@ function PlanResult({ plan }: { plan: ExpertsPlan }) {
 				))}
 			</div>
 			<ScrollRegion label={t("tableLabel")}>
-				<table className="w-full min-w-120 text-left">
+				<table className="w-full min-w-120 text-start">
 					<thead>
 						<tr>
 							{TABLE_HEADS.map((head) => (
-								<th key={head} className="py-1 pr-3">
+								<th key={head} className="py-1 pe-3">
 									<SectionLabel className="text-muted">
 										{t(`heads.${head}`)}
 									</SectionLabel>
@@ -456,12 +456,12 @@ function PlanResult({ plan }: { plan: ExpertsPlan }) {
 					<tbody>
 						{plan.rows.map((row) => (
 							<tr key={row.view.expert.id} className="border-line border-t-[1.5px]">
-								<td className="py-1.5 pr-3 font-medium">{row.view.expert.name}</td>
-								<td className="pr-3 font-mono">{formatNumber(row.books)}</td>
-								<td className="pr-3 font-mono">{formatNumber(row.sigils)}</td>
-								<td className="pr-3 font-mono">{formatNumber(row.exp)}</td>
-								<td className="pr-3 font-mono">{formatNumber(row.levels)}</td>
-								<td className="pr-3 font-mono">{formatNumber(row.advancements)}</td>
+								<td className="py-1.5 pe-3 font-medium">{row.view.expert.name}</td>
+								<td className="pe-3 font-mono">{formatNumber(row.books)}</td>
+								<td className="pe-3 font-mono">{formatNumber(row.sigils)}</td>
+								<td className="pe-3 font-mono">{formatNumber(row.exp)}</td>
+								<td className="pe-3 font-mono">{formatNumber(row.levels)}</td>
+								<td className="pe-3 font-mono">{formatNumber(row.advancements)}</td>
 								<td className="font-mono">{formatNumber(row.affinity)}</td>
 							</tr>
 						))}

@@ -71,14 +71,14 @@ export function TroopTiers({
 				className={`border-line hidden items-end gap-x-3 border-b-[1.5px] px-2 pb-2 lg:grid ${COLUMNS}`}
 			>
 				<SectionLabel className="text-muted">{t("heads.tier")}</SectionLabel>
-				<SectionLabel className="text-muted text-right">{t("heads.troops")}</SectionLabel>
+				<SectionLabel className="text-muted text-end">{t("heads.troops")}</SectionLabel>
 				<SectionLabel className="text-muted">{t("heads.train")}</SectionLabel>
 				{view.tiers[0].cost.map((material) => (
 					<SectionLabel key={material.itemId} className="text-muted">
 						{findItem(material.itemId)?.name ?? material.itemId}
 					</SectionLabel>
 				))}
-				<SectionLabel className="text-muted text-right">{t("heads.power")}</SectionLabel>
+				<SectionLabel className="text-muted text-end">{t("heads.power")}</SectionLabel>
 			</div>
 			<ul className="flex flex-col gap-3 lg:gap-0">
 				{tiers.map((tier) => (
@@ -172,12 +172,12 @@ function TierRow({
 				))}
 			</div>
 			<span className="col-span-2 font-mono text-xs lg:contents lg:text-sm">
-				<span className="mr-3 lg:order-3 lg:mr-0">
+				<span className="me-3 lg:order-3 lg:me-0">
 					<span className="font-sans lg:hidden">{t("train")} </span>
 					{t("seconds", { value: formatNumber(tier.seconds) })}
 					<span className="font-sans lg:hidden"> {t("each")}</span>
 				</span>
-				<span className="lg:order-8 lg:text-right">
+				<span className="lg:order-8 lg:text-end">
 					<span className="font-sans lg:hidden">{t("mobilePower")} </span>
 					{formatNumber(tier.power)}
 				</span>

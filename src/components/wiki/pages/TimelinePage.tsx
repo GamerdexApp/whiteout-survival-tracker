@@ -176,9 +176,9 @@ export function TimelinePage() {
 						aria-hidden="true"
 						className="text-muted grid grid-cols-[minmax(0,1fr)_8rem_minmax(0,1fr)] font-mono text-xs uppercase max-lg:hidden"
 					>
-						<span className="pr-4 text-right">{t("columns.left")}</span>
+						<span className="pe-4 text-end">{t("columns.left")}</span>
 						<span />
-						<span className="pl-4">{t("columns.right")}</span>
+						<span className="ps-4">{t("columns.right")}</span>
 					</div>
 					<ol className="flex flex-col">
 						{shownRows.map((row, index) => (

@@ -137,8 +137,8 @@ function MissionLevelRow({ level }: { level: DailyMissionLevel }) {
 				{t("levelLabel", { level: formatNumber(level.level) })}
 			</span>
 			<span>{level.task}</span>
-			<span className="font-mono lg:text-right">{formatNumber(level.target)}</span>
-			<span className="font-mono lg:text-right">
+			<span className="font-mono lg:text-end">{formatNumber(level.target)}</span>
+			<span className="font-mono lg:text-end">
 				{t("plus", { amount: formatNumber(missionActiveness(level)) })}
 			</span>
 			{otherRewards.length > 0 ? (
@@ -197,8 +197,8 @@ function MissionsCard() {
 				<div aria-hidden="true" className={`text-muted hidden px-2 ${MISSION_COLUMNS}`}>
 					<SectionLabel>{t("level")}</SectionLabel>
 					<SectionLabel>{t("task")}</SectionLabel>
-					<SectionLabel className="text-right">{t("target")}</SectionLabel>
-					<SectionLabel className="text-right">{t("activeness")}</SectionLabel>
+					<SectionLabel className="text-end">{t("target")}</SectionLabel>
+					<SectionLabel className="text-end">{t("activeness")}</SectionLabel>
 					<SectionLabel>{t("otherRewards")}</SectionLabel>
 				</div>
 				<ul className="flex flex-col gap-3">

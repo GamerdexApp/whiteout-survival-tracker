@@ -310,7 +310,7 @@ function CatalogCard() {
 							sources: tSources(filters.sources),
 						})}
 					</span>
-					<Button variant="link" className="-mr-3" onClick={() => setSheetOpen(true)}>
+					<Button variant="link" className="-me-3" onClick={() => setSheetOpen(true)}>
 						{tFilters("edit")}
 					</Button>
 				</div>

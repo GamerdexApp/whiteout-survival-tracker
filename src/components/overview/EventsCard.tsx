@@ -62,7 +62,7 @@ export function EventsCard({ chief, now, zone, className }: EventsCardProps) {
 					</SectionLabel>
 					<ul className="flex flex-col gap-3">
 						{liveCore.map((live) => (
-							<li key={live.event} className="border-primary border-l-[3px] pl-3">
+							<li key={live.event} className="border-primary border-s-[3px] ps-3">
 								<Link href="/core-events" className="flex min-h-11 flex-col gap-1">
 									<span className="flex items-center justify-between gap-2">
 										<span className="font-semibold">{tCore(live.event)}</span>
@@ -85,7 +85,7 @@ export function EventsCard({ chief, now, zone, className }: EventsCardProps) {
 						{liveRuns.map((run) => (
 							<li
 								key={run.key}
-								className={`border-l-[3px] pl-3 ${CATEGORY_BORDER[run.entry.event.category]}`}
+								className={`border-s-[3px] ps-3 ${CATEGORY_BORDER[run.entry.event.category]}`}
 							>
 								<Link href="/events" className="flex min-h-11 flex-col gap-1">
 									<span className="flex items-center justify-between gap-2">
@@ -114,7 +114,7 @@ export function EventsCard({ chief, now, zone, className }: EventsCardProps) {
 						{nextRuns.map((run) => (
 							<li
 								key={run.key}
-								className={`border-l-[3px] pl-3 ${CATEGORY_BORDER[run.entry.event.category]}`}
+								className={`border-s-[3px] ps-3 ${CATEGORY_BORDER[run.entry.event.category]}`}
 							>
 								<Link
 									href="/events"

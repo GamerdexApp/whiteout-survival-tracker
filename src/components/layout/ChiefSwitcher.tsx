@@ -101,7 +101,7 @@ export function ChiefSwitcher({ onNavigate }: { onNavigate?: () => void }) {
 			type="button"
 			disabled={!isLoaded}
 			{...props}
-			className="border-sb-line text-sb-text flex h-12 w-full items-center justify-between gap-2 rounded-md border-[1.5px] px-3 text-left"
+			className="border-sb-line text-sb-text flex h-12 w-full items-center justify-between gap-2 rounded-md border-[1.5px] px-3 text-start"
 		>
 			<span className="flex min-w-0 items-center gap-2.5">
 				<span

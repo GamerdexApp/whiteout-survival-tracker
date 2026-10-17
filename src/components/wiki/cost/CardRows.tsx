@@ -24,7 +24,7 @@ export function CardRows<Row>({ columns, rows, rowKey }: CardRowsProps<Row>) {
 							<span>{heading.header}</span>
 							{heading.cell(row)}
 						</span>
-						<span className="min-w-0 text-right">{field.cell(row)}</span>
+						<span className="min-w-0 text-end">{field.cell(row)}</span>
 					</li>
 				))}
 			</ul>
@@ -42,7 +42,7 @@ export function CardRows<Row>({ columns, rows, rowKey }: CardRowsProps<Row>) {
 					{fields.map((column) => (
 						<div key={column.id} className="flex justify-between gap-3">
 							<span className="text-muted shrink-0">{column.header}</span>
-							<span className="min-w-0 text-right">{column.cell(row)}</span>
+							<span className="min-w-0 text-end">{column.cell(row)}</span>
 						</div>
 					))}
 				</li>

@@ -106,16 +106,16 @@ export function ImportDialog({
 					<div className="flex flex-col gap-2">
 						<h3 className="font-medium">{t("whatChanges")}</h3>
 						<ScrollRegion label={t("whatChanges")}>
-							<table className="w-full text-left">
+							<table className="w-full text-start">
 								<thead className="text-muted text-xs">
 									<tr>
-										<th className="py-1 pr-3 font-medium">
+										<th className="py-1 pe-3 font-medium">
 											{t("columns.chief")}
 										</th>
-										<th className="py-1 pr-3 font-medium">
+										<th className="py-1 pe-3 font-medium">
 											{t("columns.inFile")}
 										</th>
-										<th className="py-1 pr-3 font-medium">
+										<th className="py-1 pe-3 font-medium">
 											{t("columns.onDevice")}
 										</th>
 										<th className="py-1 font-medium">{t("columns.result")}</th>
@@ -127,11 +127,11 @@ export function ImportDialog({
 											key={index}
 											className="border-line border-t-[1.5px] align-top"
 										>
-											<td className="py-2 pr-3 font-medium">{row.name}</td>
-											<td className="py-2 pr-3">
+											<td className="py-2 pe-3 font-medium">{row.name}</td>
+											<td className="py-2 pe-3">
 												{formatDate(row.fileModified)}
 											</td>
-											<td className="py-2 pr-3">
+											<td className="py-2 pe-3">
 												{formatDate(row.deviceModified)}
 											</td>
 											<td className="py-2">{t(`results.${row.result}`)}</td>

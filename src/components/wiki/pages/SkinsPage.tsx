@@ -112,7 +112,7 @@ function SkinsList() {
 					type="button"
 					aria-haspopup="dialog"
 					onClick={() => setOpenSkin(skin)}
-					className="flex min-h-11 w-full items-center gap-2 text-left font-semibold hover:underline lg:min-h-9"
+					className="flex min-h-11 w-full items-center gap-2 text-start font-semibold hover:underline lg:min-h-9"
 				>
 					<ItemIcon src={skin.img} size={32} />
 					{skin.name}

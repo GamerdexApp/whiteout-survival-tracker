@@ -50,7 +50,7 @@ export function PlannerCard({ chief, className }: { chief: Playthrough; classNam
 							</span>
 						</span>
 						<span
-							className={`text-right font-mono text-sm ${row.short > 0 ? "text-danger" : "text-kept"}`}
+							className={`text-end font-mono text-sm ${row.short > 0 ? "text-danger" : "text-kept"}`}
 						>
 							{row.short > 0
 								? t("shortBy", { amount: formatNumber(row.short) })

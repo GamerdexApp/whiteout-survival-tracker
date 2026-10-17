@@ -92,7 +92,11 @@ export function CalendarTab({ entries, cycles, zone, nowMs, onZone }: CalendarTa
 							className="border-line bg-surface hover:bg-tint border-[1.5px]"
 							onClick={() => setOffset(offset - 1)}
 						>
-							<LuChevronLeft size={18} aria-hidden="true" />
+							<LuChevronLeft
+								className="rtl:rotate-180"
+								size={18}
+								aria-hidden="true"
+							/>
 						</IconButton>
 						<h2 className="min-w-36 text-center text-lg font-semibold">
 							{monthTitleText(year, month)}
@@ -102,7 +106,11 @@ export function CalendarTab({ entries, cycles, zone, nowMs, onZone }: CalendarTa
 							className="border-line bg-surface hover:bg-tint border-[1.5px]"
 							onClick={() => setOffset(offset + 1)}
 						>
-							<LuChevronRight size={18} aria-hidden="true" />
+							<LuChevronRight
+								className="rtl:rotate-180"
+								size={18}
+								aria-hidden="true"
+							/>
 						</IconButton>
 						<Button className="max-lg:hidden" onClick={() => setOffset(0)}>
 							{t("calendar.today")}
@@ -135,7 +143,7 @@ export function CalendarTab({ entries, cycles, zone, nowMs, onZone }: CalendarTa
 					{WEEKDAY_IDS.map((id) => (
 						<div
 							key={id}
-							className="border-line text-muted border-b-[1.5px] px-2 py-1.5 font-mono text-[11px] tracking-[0.08em] uppercase max-lg:justify-self-center max-lg:border-0 lg:border-l-[1.5px] lg:first:border-l-0"
+							className="border-line text-muted border-b-[1.5px] px-2 py-1.5 font-mono text-[11px] tracking-[0.08em] uppercase max-lg:justify-self-center max-lg:border-0 lg:border-s-[1.5px] lg:first:border-s-0"
 						>
 							<span className="max-lg:hidden">{t(`weekdays.short.${id}`)}</span>
 							<span aria-hidden="true" className="lg:hidden">
@@ -152,7 +160,7 @@ export function CalendarTab({ entries, cycles, zone, nowMs, onZone }: CalendarTa
 						return (
 							<div
 								key={day.key}
-								className={`border-line relative flex min-w-0 flex-col gap-1 p-1.5 max-lg:items-center max-lg:py-2 lg:min-h-26 lg:border-t-[1.5px] lg:border-l-[1.5px] lg:nth-[7n+1]:border-l-0 ${
+								className={`border-line relative flex min-w-0 flex-col gap-1 p-1.5 max-lg:items-center max-lg:py-2 lg:min-h-26 lg:border-s-[1.5px] lg:border-t-[1.5px] lg:nth-[7n+1]:border-s-0 ${
 									day.inMonth ? "" : "bg-tint/50 text-muted"
 								}`}
 							>
@@ -167,7 +175,7 @@ export function CalendarTab({ entries, cycles, zone, nowMs, onZone }: CalendarTa
 									{dayChips.map((chip) => (
 										<li
 											key={`${chip.entry.event.id}-${chip.instance.runIndex}-${chip.instance.startMs}`}
-											className={`bg-tint flex gap-1 rounded-sm border-l-[3px] px-1.5 py-0.5 text-xs ${CATEGORY_BORDER[chip.entry.event.category]}`}
+											className={`bg-tint flex gap-1 rounded-sm border-s-[3px] px-1.5 py-0.5 text-xs ${CATEGORY_BORDER[chip.entry.event.category]}`}
 										>
 											<span className="truncate">
 												{chipParts(chip, day).name}

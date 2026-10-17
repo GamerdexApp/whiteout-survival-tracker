@@ -247,9 +247,13 @@ function StatRow({
 				type="button"
 				aria-expanded={open}
 				onClick={onToggle}
-				className="hover:bg-tint flex min-h-12 w-full items-center gap-3 px-4 py-2 text-left"
+				className="hover:bg-tint flex min-h-12 w-full items-center gap-3 px-4 py-2 text-start"
 			>
-				<Chevron size={16} aria-hidden="true" className="text-muted shrink-0" />
+				<Chevron
+					size={16}
+					aria-hidden="true"
+					className="text-muted shrink-0 rtl:-scale-x-100"
+				/>
 				<span className="flex min-w-0 flex-1 flex-col">
 					<span className="font-semibold">{category.name}</span>
 					<span className="text-muted text-xs">
@@ -268,19 +272,19 @@ function StatRow({
 					<div className="border-line text-muted hidden grid-cols-[1fr_12rem_6rem] gap-3 border-t-[1.5px] px-4 py-1 lg:grid">
 						<SectionLabel>{tv("columns.statAndSource")}</SectionLabel>
 						<SectionLabel>{tv("columns.sourceType")}</SectionLabel>
-						<SectionLabel className="text-right">{tv("columns.counted")}</SectionLabel>
+						<SectionLabel className="text-end">{tv("columns.counted")}</SectionLabel>
 					</div>
 					<ul>
 						{category.sources.map((source, index) => (
 							<li
 								key={`${source.type}-${source.id}-${index}`}
-								className="border-line grid gap-x-3 gap-y-0.5 border-t-[1.5px] py-2 pr-4 pl-11 lg:grid-cols-[1fr_12rem_6rem]"
+								className="border-line grid gap-x-3 gap-y-0.5 border-t-[1.5px] py-2 ps-11 pe-4 lg:grid-cols-[1fr_12rem_6rem]"
 							>
 								<span className="wrap-break-word">{source.label}</span>
 								<span className="text-muted">
 									{t(`sourceTypes.${source.type}`)}
 								</span>
-								<span className="font-mono lg:text-right">
+								<span className="font-mono lg:text-end">
 									{formatBuffValue(source.amount, category.unit)}
 								</span>
 							</li>

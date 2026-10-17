@@ -51,7 +51,7 @@ export function UpcomingList({ entries, zone, nowMs }: UpcomingListProps) {
 									{group.items.map(({ entry, instance }) => (
 										<li
 											key={`${entry.event.id}-${instance.runIndex}-${instance.startMs}`}
-											className={`flex items-start justify-between gap-2 border-l-[3px] pl-2.5 ${CATEGORY_BORDER[entry.event.category]}`}
+											className={`flex items-start justify-between gap-2 border-s-[3px] ps-2.5 ${CATEGORY_BORDER[entry.event.category]}`}
 										>
 											<div className="flex min-w-0 flex-col">
 												<span className="font-semibold">

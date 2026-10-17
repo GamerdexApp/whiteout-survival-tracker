@@ -30,7 +30,7 @@ export function CountInput({ label, value, onChange, className = "" }: CountInpu
 				const digits = event.target.value.replace(/\D/g, "").slice(0, 12);
 				onChange(Math.min(MAX_COUNT, Number(digits || 0)));
 			}}
-			className={`border-line bg-surface text-ink min-h-11 min-w-0 rounded-md border-[1.5px] px-3 text-right font-mono lg:min-h-9 ${className}`}
+			className={`border-line bg-surface text-ink min-h-11 min-w-0 rounded-md border-[1.5px] px-3 text-end font-mono lg:min-h-9 ${className}`}
 		/>
 	);
 }
