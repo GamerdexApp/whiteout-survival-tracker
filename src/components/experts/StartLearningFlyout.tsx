@@ -3,9 +3,14 @@
 import { useTranslations } from "next-intl";
 import { useState } from "react";
 import type { Playthrough } from "@/types/app";
-import { formatDateTime, formatNumber } from "@/lib/format";
+import { formatDateTime, formatDuration, formatNumber } from "@/lib/format";
 import { useNow } from "@/lib/hooks/useNow";
-import { learningTargets, sessions, startLearning } from "@/service/expertLearning";
+import {
+	learningTargets,
+	sessions,
+	sessionWithinRoom,
+	startLearning,
+} from "@/service/expertLearning";
 import { learningJob, secondsFrom } from "@/service/queues";
 import { HoursMinutesFields } from "@/comps/queues/HoursMinutesFields";
 import { Button } from "@/comps/ui/Button";
@@ -53,11 +58,14 @@ export function StartLearningFlyout({ open, chief, onClose, onStart }: StartLear
 
 	const target = targets.find((item) => item.expertId === expertId);
 	const skill = target?.skills.find((item) => item.index === skillIndex);
-	const session = sessions[sessionIndex];
+	const chosenSession = sessions[sessionIndex];
+	const session = skill ? sessionWithinRoom(chosenSession, skill.room) : chosenSession;
 	const ready = Boolean(target && skill) && !busy;
 	const sessionSeconds = session.minutes * 60;
 	const seconds =
-		mode === "now" ? sessionSeconds : secondsFrom(Number(hours || 0), Number(minutes || 0));
+		mode === "now"
+			? sessionSeconds
+			: Math.min(secondsFrom(Number(hours || 0), Number(minutes || 0)), sessionSeconds);
 	const endsAt = new Date(now + seconds * 1_000);
 
 	const chooseExpert = (next: string) => {
@@ -67,7 +75,10 @@ export function StartLearningFlyout({ open, chief, onClose, onStart }: StartLear
 
 	const chooseSession = (next: number) => {
 		setSessionIndex(next);
-		if (mode === "already") fillTimeLeft(sessions[next].minutes * 60);
+		if (mode === "already") {
+			const adjusted = skill ? sessionWithinRoom(sessions[next], skill.room) : sessions[next];
+			fillTimeLeft(adjusted.minutes * 60);
+		}
 	};
 
 	const fillTimeLeft = (total: number) => {
@@ -184,9 +195,12 @@ export function StartLearningFlyout({ open, chief, onClose, onStart }: StartLear
 									)}
 								</span>
 							</div>
-							{session.exp > skill.room && (
+							{chosenSession.exp > skill.room && (
 								<p className="text-muted text-xs">
-									{t("tooMuch", { room: formatNumber(skill.room) })}
+									{t("tooMuch", {
+										room: formatNumber(skill.room),
+										time: formatDuration(session.minutes * 60),
+									})}
 								</p>
 							)}
 						</Card>
