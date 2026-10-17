@@ -67,5 +67,38 @@
         "meta": "Sin niveles, poder ni costo de construcción",
         "unlock": "Se desbloquea en Furnace nivel {level}",
         "empty": "Ninguna instalación coincide con tu búsqueda."
+    },
+    "tables": {
+        "building": "Edificio",
+        "research": "Investigación",
+        "total": "Total"
+    },
+    "fireCrystal": {
+        "heading": "Costos de Fire Crystal",
+        "description": "Fire Crystals y Refined Fire Crystals que necesita cada edificio para llegar a cada nivel de Fire Crystal. Un nivel suma las cinco mejoras que terminan en su fila base. Un guion significa que el edificio no tiene costo en ese nivel.",
+        "rangeLabel": "Niveles",
+        "ranges": {
+            "all": "Todos los niveles, de FC 1 a FC 10",
+            "early": "De FC 1 a FC 5",
+            "late": "De FC 6 a FC 10"
+        },
+        "tableLabel": "Costo de Fire Crystal de cada edificio"
+    },
+    "shards": {
+        "heading": "Costos de Fire Crystal Shard",
+        "description": "Fire Crystal Shards y Refined Fire Crystals para la investigación de tropas T11 y T12. La fila Desbloqueo suma las investigaciones que desbloquean la tropa: rangos 1 a 5 para T11 y rango 1 para T12. Los extras son las investigaciones posteriores. T11 no cuesta Refined Fire Crystals. Un guion significa que la investigación no tiene costo en esa columna.",
+        "tierLabel": "Rango de tropa",
+        "tiers": {
+            "all": "T11 y T12",
+            "T11": "T11",
+            "T12": "T12"
+        },
+        "tableLabel": "Costo de Fire Crystal Shard de cada investigación de tropa",
+        "rows": {
+            "unlock": "Desbloqueo",
+            "tier": "Rango {tier}",
+            "extrasTotal": "Extras",
+            "total": "Total"
+        }
     }
 }

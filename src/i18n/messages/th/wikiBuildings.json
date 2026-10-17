@@ -67,5 +67,38 @@
         "meta": "ไม่มีเลเวล พลัง หรือค่าก่อสร้าง",
         "unlock": "ปลดล็อกที่ Furnace เลเวล {level}",
         "empty": "ไม่มีสิ่งปลูกสร้างที่ตรงกับการค้นหา"
+    },
+    "tables": {
+        "building": "อาคาร",
+        "research": "วิจัย",
+        "total": "รวม"
+    },
+    "fireCrystal": {
+        "heading": "ค่าใช้จ่าย Fire Crystal",
+        "description": "จำนวน Fire Crystal และ Refined Fire Crystal ที่อาคารแต่ละหลังต้องใช้เพื่อไปถึงเลเวล Fire Crystal แต่ละเลเวล แต่ละเลเวลรวมการอัปเกรดห้าครั้งที่จบที่แถวฐานของเลเวลนั้น เครื่องหมายขีดหมายความว่าอาคารไม่มีค่าใช้จ่ายสำหรับเลเวลนั้น",
+        "rangeLabel": "เลเวล",
+        "ranges": {
+            "all": "ทุกเลเวล FC 1 ถึง FC 10",
+            "early": "FC 1 ถึง FC 5",
+            "late": "FC 6 ถึง FC 10"
+        },
+        "tableLabel": "ค่าใช้จ่าย Fire Crystal ของอาคารแต่ละหลัง"
+    },
+    "shards": {
+        "heading": "ค่าใช้จ่าย Fire Crystal Shard",
+        "description": "จำนวน Fire Crystal Shard และ Refined Fire Crystal สำหรับการวิจัยทหาร T11 และ T12 แถวปลดล็อกรวมการวิจัยที่ปลดล็อกทหาร: ระดับ 1 ถึง 5 สำหรับ T11 และระดับ 1 สำหรับ T12 ส่วนเพิ่มเติมคือการวิจัยหลังจากนั้น T11 ไม่ต้องใช้ Refined Fire Crystal เครื่องหมายขีดหมายความว่าการวิจัยไม่มีค่าใช้จ่ายในคอลัมน์นั้น",
+        "tierLabel": "ระดับทหาร",
+        "tiers": {
+            "all": "T11 และ T12",
+            "T11": "T11",
+            "T12": "T12"
+        },
+        "tableLabel": "ค่าใช้จ่าย Fire Crystal Shard ของการวิจัยทหารแต่ละรายการ",
+        "rows": {
+            "unlock": "ปลดล็อก",
+            "tier": "ระดับ {tier}",
+            "extrasTotal": "ส่วนเพิ่มเติม",
+            "total": "รวม"
+        }
     }
 }

@@ -67,5 +67,38 @@
         "meta": "レベル、戦力、建設コストなし",
         "unlock": "Furnaceレベル{level}で解放",
         "empty": "検索に一致する施設がありません。"
+    },
+    "tables": {
+        "building": "建物",
+        "research": "研究",
+        "total": "合計"
+    },
+    "fireCrystal": {
+        "heading": "Fire Crystalのコスト",
+        "description": "各建物が各Fire Crystalレベルに到達するために必要なFire CrystalとRefined Fire Crystalです。各レベルは、そのベース行で終わる5回のアップグレードの合計です。ダッシュは、そのレベルでは建物にコストがないことを示します。",
+        "rangeLabel": "レベル",
+        "ranges": {
+            "all": "全レベル、FC 1からFC 10",
+            "early": "FC 1からFC 5",
+            "late": "FC 6からFC 10"
+        },
+        "tableLabel": "各建物のFire Crystalコスト"
+    },
+    "shards": {
+        "heading": "Fire Crystal Shardのコスト",
+        "description": "T11とT12の兵種研究に必要なFire Crystal ShardとRefined Fire Crystalです。解放行は、その兵種を解放する研究の合計です。T11はティア1から5、T12はティア1です。追加分はそれ以降の研究です。T11にRefined Fire Crystalは不要です。ダッシュは、その列ではこの研究にコストがないことを示します。",
+        "tierLabel": "兵種ティア",
+        "tiers": {
+            "all": "T11とT12",
+            "T11": "T11",
+            "T12": "T12"
+        },
+        "tableLabel": "各兵種研究のFire Crystal Shardコスト",
+        "rows": {
+            "unlock": "解放",
+            "tier": "ティア{tier}",
+            "extrasTotal": "追加分",
+            "total": "合計"
+        }
     }
 }

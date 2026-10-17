@@ -14,6 +14,8 @@ import { Input } from "@/comps/ui/Input";
 import { ItemIcon } from "@/comps/ui/ItemIcon";
 import { Select } from "@/comps/ui/Select";
 import { BuildingLevels } from "../buildings/BuildingLevels";
+import { FireCrystalCostCard } from "../buildings/FireCrystalCostCard";
+import { FireCrystalShardCard } from "../buildings/FireCrystalShardCard";
 import { RecordFilters } from "../records/RecordParts";
 import { UnknownValue } from "../UnknownValue";
 import type { WikiPageProps } from "../WikiPageProps";
@@ -183,6 +185,9 @@ function BuildingsList() {
 					</ul>
 				)}
 			</section>
+
+			<FireCrystalCostCard />
+			<FireCrystalShardCard />
 		</WikiPageShell>
 	);
 }
