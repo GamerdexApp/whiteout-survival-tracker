@@ -13,6 +13,7 @@ import { Input } from "@/comps/ui/Input";
 import { ItemIcon } from "@/comps/ui/ItemIcon";
 import { Select } from "@/comps/ui/Select";
 import { RecordFilters, RecordSection } from "../records/RecordParts";
+import { useGameLabels } from "../useGameLabels";
 import { petRarityTone } from "./petRarityTone";
 import { unlockRequirementText } from "./petText";
 
@@ -20,6 +21,7 @@ const ALL = "all";
 
 export function PetRoster() {
 	const t = useTranslations("wikiPets");
+	const labels = useGameLabels();
 	const [search, setSearch] = useState("");
 	const [rarity, setRarity] = useState(ALL);
 
@@ -52,7 +54,7 @@ export function PetRoster() {
 						<option value={ALL}>{t("roster.all")}</option>
 						{petRarities.map((value) => (
 							<option key={value} value={value}>
-								{value}
+								{labels.rarity(value)}
 							</option>
 						))}
 					</Select>
@@ -72,7 +74,9 @@ export function PetRoster() {
 								<span className="flex min-w-0 flex-col gap-1">
 									<span className="flex flex-wrap items-center gap-2">
 										<span className="font-semibold">{pet.name}</span>
-										<Badge tone={petRarityTone[pet.rarity]}>{pet.rarity}</Badge>
+										<Badge tone={petRarityTone[pet.rarity]}>
+											{labels.rarity(pet.rarity)}
+										</Badge>
 									</span>
 									<span>
 										{t("roster.summary", {

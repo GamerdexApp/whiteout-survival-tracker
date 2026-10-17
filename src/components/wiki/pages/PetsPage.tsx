@@ -5,12 +5,14 @@ import { formatNumber } from "@/lib/format";
 import { allPets, findPet } from "@/data/game/pets";
 import { PetDetail } from "../pets/PetDetail";
 import { PetRoster } from "../pets/PetRoster";
+import { useGameLabels } from "../useGameLabels";
 import type { WikiPageProps } from "../WikiPageProps";
 import { WikiPageShell } from "../WikiPageShell";
 import { WikiRecordMissing } from "../WikiRecordMissing";
 
 export function PetsPage({ recordId }: WikiPageProps) {
 	const t = useTranslations("wikiPets");
+	const labels = useGameLabels();
 
 	if (recordId === undefined) {
 		return (
@@ -27,7 +29,10 @@ export function PetsPage({ recordId }: WikiPageProps) {
 		<WikiPageShell
 			id="pets"
 			recordName={pet.name}
-			line={t("recordLine", { rarity: pet.rarity, level: formatNumber(pet.maxLevel) })}
+			line={t("recordLine", {
+				rarity: labels.rarity(pet.rarity),
+				level: formatNumber(pet.maxLevel),
+			})}
 		>
 			<PetDetail pet={pet} />
 		</WikiPageShell>

@@ -9,12 +9,14 @@ import { SegmentedControl } from "@/comps/ui/SegmentedControl";
 import { ResourceList } from "../tables/ResourceList";
 import { StackTable } from "../tables/StackTable";
 import type { StackColumn } from "../tables/StackTable";
+import { useGameLabels } from "../useGameLabels";
 import { WikiPageShell } from "../WikiPageShell";
 
 type TroopId = TroopData["id"];
 
 export function TroopsPage() {
 	const t = useTranslations("wikiTroops");
+	const labels = useGameLabels();
 	const [troopId, setTroopId] = useState<TroopId>(allTroops[0].id);
 	const troop = allTroops.find((entry) => entry.id === troopId) ?? allTroops[0];
 
@@ -62,7 +64,7 @@ export function TroopsPage() {
 			id: "type",
 			header: t("columns.type"),
 			width: "6rem",
-			render: (entry) => <span className="font-semibold">{entry.name}</span>,
+			render: (entry) => <span className="font-semibold">{labels.troopId(entry.id)}</span>,
 		},
 		{
 			id: "cost",
@@ -106,13 +108,16 @@ export function TroopsPage() {
 				<div>
 					<SegmentedControl
 						label={t("tiers.typeLabel")}
-						options={allTroops.map((entry) => ({ id: entry.id, label: entry.name }))}
+						options={allTroops.map((entry) => ({
+							id: entry.id,
+							label: labels.troopId(entry.id),
+						}))}
 						value={troopId}
 						onChange={setTroopId}
 					/>
 				</div>
 				<StackTable
-					label={t("tiers.tableLabel", { type: troop.name })}
+					label={t("tiers.tableLabel", { type: labels.troopId(troop.id) })}
 					columns={tierColumns}
 					rows={troop.tiers}
 					rowKey={(tier) => String(tier.tier)}

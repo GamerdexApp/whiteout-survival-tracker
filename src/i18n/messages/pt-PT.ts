@@ -13,6 +13,7 @@ import eventLog from "./pt-PT/eventLog.json";
 import events from "./pt-PT/events.json";
 import experts from "./pt-PT/experts.json";
 import facilities from "./pt-PT/facilities.json";
+import gameLabels from "./pt-PT/gameLabels.json";
 import heroes from "./pt-PT/heroes.json";
 import heroGear from "./pt-PT/heroGear.json";
 import history from "./pt-PT/history.json";
@@ -69,6 +70,7 @@ const ptPT: PartialMessages = {
   events,
   experts,
   facilities,
+  gameLabels,
   heroGear,
   heroes,
   history,

@@ -13,6 +13,7 @@ import eventLog from "./vi/eventLog.json";
 import events from "./vi/events.json";
 import experts from "./vi/experts.json";
 import facilities from "./vi/facilities.json";
+import gameLabels from "./vi/gameLabels.json";
 import heroes from "./vi/heroes.json";
 import heroGear from "./vi/heroGear.json";
 import history from "./vi/history.json";
@@ -69,6 +70,7 @@ const vi: PartialMessages = {
   events,
   experts,
   facilities,
+  gameLabels,
   heroGear,
   heroes,
   history,

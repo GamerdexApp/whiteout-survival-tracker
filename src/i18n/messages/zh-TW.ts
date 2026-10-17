@@ -13,6 +13,7 @@ import eventLog from "./zh-TW/eventLog.json";
 import events from "./zh-TW/events.json";
 import experts from "./zh-TW/experts.json";
 import facilities from "./zh-TW/facilities.json";
+import gameLabels from "./zh-TW/gameLabels.json";
 import heroes from "./zh-TW/heroes.json";
 import heroGear from "./zh-TW/heroGear.json";
 import history from "./zh-TW/history.json";
@@ -69,6 +70,7 @@ const zhTW: PartialMessages = {
   events,
   experts,
   facilities,
+  gameLabels,
   heroGear,
   heroes,
   history,

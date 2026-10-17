@@ -13,6 +13,7 @@ import eventLog from "./ko/eventLog.json";
 import events from "./ko/events.json";
 import experts from "./ko/experts.json";
 import facilities from "./ko/facilities.json";
+import gameLabels from "./ko/gameLabels.json";
 import heroes from "./ko/heroes.json";
 import heroGear from "./ko/heroGear.json";
 import history from "./ko/history.json";
@@ -69,6 +70,7 @@ const ko: PartialMessages = {
   events,
   experts,
   facilities,
+  gameLabels,
   heroGear,
   heroes,
   history,

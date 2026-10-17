@@ -16,6 +16,7 @@ import { Select } from "@/comps/ui/Select";
 import { KnownNumber, RecordFilters, RecordLink, RecordSection } from "../records/RecordParts";
 import { RecordTable } from "../records/RecordTable";
 import type { RecordColumn } from "../records/RecordTable";
+import { useGameLabels } from "../useGameLabels";
 
 const ALL = "all";
 const generations = [...new Set(allHeroes.map((hero) => hero.generation))];
@@ -24,6 +25,7 @@ const rarityTone = { Legendary: "changed", Epic: "added", Rare: "kept" } as cons
 
 export function HeroRoster() {
 	const t = useTranslations("wikiHeroes.roster");
+	const labels = useGameLabels();
 	const [search, setSearch] = useState("");
 	const [generation, setGeneration] = useState(ALL);
 	const [rarity, setRarity] = useState(ALL);
@@ -59,10 +61,16 @@ export function HeroRoster() {
 		{
 			id: "rarity",
 			header: t("columns.rarity"),
-			cell: (hero) => <Badge tone={rarityTone[hero.rarity]}>{hero.rarity}</Badge>,
+			cell: (hero) => (
+				<Badge tone={rarityTone[hero.rarity]}>{labels.rarity(hero.rarity)}</Badge>
+			),
 		},
-		{ id: "class", header: t("columns.class"), cell: (hero) => hero.class },
-		{ id: "subClass", header: t("columns.subClass"), cell: (hero) => hero.subClass },
+		{ id: "class", header: t("columns.class"), cell: (hero) => labels.heroClass(hero.class) },
+		{
+			id: "subClass",
+			header: t("columns.subClass"),
+			cell: (hero) => labels.subClass(hero.subClass),
+		},
 		{
 			id: "power",
 			header: t("columns.power"),
@@ -113,7 +121,7 @@ export function HeroRoster() {
 						<option value={ALL}>{t("all")}</option>
 						{heroRarities.map((value) => (
 							<option key={value} value={value}>
-								{value}
+								{labels.rarity(value)}
 							</option>
 						))}
 					</Select>
@@ -126,7 +134,7 @@ export function HeroRoster() {
 						<option value={ALL}>{t("all")}</option>
 						{heroClassIds.map((value) => (
 							<option key={value} value={value}>
-								{value}
+								{labels.heroClass(value)}
 							</option>
 						))}
 					</Select>
@@ -136,7 +144,7 @@ export function HeroRoster() {
 						<option value={ALL}>{t("all")}</option>
 						{heroSubClasses.map((value) => (
 							<option key={value} value={value}>
-								{value}
+								{labels.subClass(value)}
 							</option>
 						))}
 					</Select>

@@ -12,6 +12,7 @@ import eventLog from "./en/eventLog.json";
 import events from "./en/events.json";
 import experts from "./en/experts.json";
 import facilities from "./en/facilities.json";
+import gameLabels from "./en/gameLabels.json";
 import heroes from "./en/heroes.json";
 import heroGear from "./en/heroGear.json";
 import history from "./en/history.json";
@@ -91,6 +92,7 @@ const en = {
   vip,
   unlocks,
   wiki,
+  gameLabels,
   wikiBuildings,
   wikiFireCrystal,
   wikiHeroes,

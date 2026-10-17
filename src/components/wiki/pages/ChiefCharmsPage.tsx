@@ -17,6 +17,7 @@ import { LadderSummary } from "../chief/LadderSummary";
 import { ResourceList } from "../tables/ResourceList";
 import { StackTable } from "../tables/StackTable";
 import type { StackColumn } from "../tables/StackTable";
+import { useGameLabels } from "../useGameLabels";
 import type { WikiPageProps } from "../WikiPageProps";
 import { WikiPageShell } from "../WikiPageShell";
 import { WikiRecordMissing } from "../WikiRecordMissing";
@@ -36,12 +37,13 @@ export function ChiefCharmsPage({ recordId }: WikiPageProps) {
 
 function ChiefCharmSlotRecord({ slot }: { slot: ChiefCharmSlot }) {
 	const t = useTranslations("wikiChiefCharms");
+	const labels = useGameLabels();
 
 	return (
 		<WikiPageShell
 			id="chiefCharms"
-			recordName={slot.name}
-			line={t("slots.recordLine", { troopType: slot.troopType })}
+			recordName={labels.heroClass(slot.troopType)}
+			line={t("slots.recordLine", { troopType: labels.heroClass(slot.troopType) })}
 		>
 			<ul className="grid grid-cols-3 gap-3 sm:grid-cols-4 lg:grid-cols-6">
 				{slot.images.map((image, index) => (
@@ -61,6 +63,7 @@ function ChiefCharmSlotRecord({ slot }: { slot: ChiefCharmSlot }) {
 
 function ChiefCharmsList() {
 	const t = useTranslations("wikiChiefCharms");
+	const labels = useGameLabels();
 	const [search, setSearch] = useState("");
 	const [level, setLevel] = useState("all");
 	const [stage, setStage] = useState("all");
@@ -126,7 +129,9 @@ function ChiefCharmsList() {
 								href={`/wiki/chief-charms/${encodeURIComponent(slot.id)}`}
 								className="bg-surface border-line hover:border-primary flex h-full min-h-11 flex-col gap-2 rounded-md border-[1.5px] p-3"
 							>
-								<span className="font-semibold">{slot.name}</span>
+								<span className="font-semibold">
+									{labels.heroClass(slot.troopType)}
+								</span>
 								<span className="flex flex-wrap gap-1">
 									{slot.images.map((image) => (
 										<ItemIcon key={image} src={image} size={24} />

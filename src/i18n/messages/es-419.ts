@@ -13,6 +13,7 @@ import eventLog from "./es-419/eventLog.json";
 import events from "./es-419/events.json";
 import experts from "./es-419/experts.json";
 import facilities from "./es-419/facilities.json";
+import gameLabels from "./es-419/gameLabels.json";
 import heroes from "./es-419/heroes.json";
 import heroGear from "./es-419/heroGear.json";
 import history from "./es-419/history.json";
@@ -69,6 +70,7 @@ const es419: PartialMessages = {
   events,
   experts,
   facilities,
+  gameLabels,
   heroGear,
   heroes,
   history,

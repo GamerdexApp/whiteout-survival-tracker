@@ -13,6 +13,7 @@ import { KnownNumber, RecordSection, RecordTile, RecordTiles } from "../records/
 import { RecordTable } from "../records/RecordTable";
 import type { RecordColumn } from "../records/RecordTable";
 import { UnknownValue } from "../UnknownValue";
+import { useGameLabels } from "../useGameLabels";
 
 const FIRST_GENERATION_WITHOUT_POWER = 6;
 
@@ -20,6 +21,7 @@ const joinNumbers = (values: number[]) => values.map(formatNumber).join(" · ");
 
 export function HeroDetail({ hero }: { hero: Hero }) {
 	const t = useTranslations("wikiHeroes");
+	const labels = useGameLabels();
 	const levelPower = hero.levels.find((level) => level.level === MAX_HERO_LEVEL)?.power;
 	const fiveStarPower = hero.shardCosts.at(-1)?.power;
 
@@ -34,9 +36,9 @@ export function HeroDetail({ hero }: { hero: Hero }) {
 					<div className="flex min-w-0 flex-col gap-2">
 						<h2 className="text-xl font-semibold">{hero.name}</h2>
 						<div className="flex flex-wrap gap-2">
-							<Badge tone="changed">{hero.rarity}</Badge>
-							<Badge tone="kept">{hero.class}</Badge>
-							<Badge tone="kept">{hero.subClass}</Badge>
+							<Badge tone="changed">{labels.rarity(hero.rarity)}</Badge>
+							<Badge tone="kept">{labels.heroClass(hero.class)}</Badge>
+							<Badge tone="kept">{labels.subClass(hero.subClass)}</Badge>
 							<Badge tone="kept">
 								{t("detail.generation", {
 									generation: formatNumber(hero.generation),

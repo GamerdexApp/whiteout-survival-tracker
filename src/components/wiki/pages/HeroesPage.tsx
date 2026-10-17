@@ -6,12 +6,14 @@ import { allHeroes, findHero } from "@/data/game/heroes";
 import { widgetLevels } from "@/data/game/wikiHeroes";
 import { HeroDetail } from "../heroes/HeroDetail";
 import { HeroRoster } from "../heroes/HeroRoster";
+import { useGameLabels } from "../useGameLabels";
 import type { WikiPageProps } from "../WikiPageProps";
 import { WikiPageShell } from "../WikiPageShell";
 import { WikiRecordMissing } from "../WikiRecordMissing";
 
 export function HeroesPage({ recordId }: WikiPageProps) {
 	const t = useTranslations("wikiHeroes");
+	const labels = useGameLabels();
 
 	if (recordId === undefined) {
 		return (
@@ -35,8 +37,8 @@ export function HeroesPage({ recordId }: WikiPageProps) {
 			id="heroes"
 			recordName={hero.name}
 			line={t("recordLine", {
-				rarity: hero.rarity,
-				heroClass: hero.class,
+				rarity: labels.rarity(hero.rarity),
+				heroClass: labels.heroClass(hero.class),
 				generation: formatNumber(hero.generation),
 			})}
 		>

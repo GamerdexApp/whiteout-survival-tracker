@@ -22,6 +22,7 @@ import { LadderSummary } from "../chief/LadderSummary";
 import { ResourceList } from "../tables/ResourceList";
 import { StackTable } from "../tables/StackTable";
 import type { StackColumn } from "../tables/StackTable";
+import { useGameLabels } from "../useGameLabels";
 import type { WikiPageProps } from "../WikiPageProps";
 import { WikiPageShell } from "../WikiPageShell";
 import { WikiRecordMissing } from "../WikiRecordMissing";
@@ -35,18 +36,24 @@ export function ChiefGearPage({ recordId }: WikiPageProps) {
 	return <ChiefGearList />;
 }
 
+const rarityIds = (slot: ChiefGearSlot) =>
+	Object.keys(slot.images) as (keyof ChiefGearSlot["images"])[];
+
 function SlotDetail({ slot }: { slot: ChiefGearSlot }) {
 	const t = useTranslations("wikiChiefGear");
+	const labels = useGameLabels();
 
 	return (
 		<div className="flex flex-col gap-4">
-			<p className="text-muted">{t("slots.detailLine", { troopType: slot.troopType })}</p>
+			<p className="text-muted">
+				{t("slots.detailLine", { troopType: labels.heroClass(slot.troopType) })}
+			</p>
 			<ul className="grid grid-cols-2 gap-3">
-				{Object.entries(slot.images).map(([rarity, image]) => (
+				{rarityIds(slot).map((rarity) => (
 					<li key={rarity}>
 						<Card className="flex h-full flex-col items-center gap-2 p-3">
-							<ItemIcon src={image} size={72} />
-							<span className="font-semibold">{rarity}</span>
+							<ItemIcon src={slot.images[rarity]} size={72} />
+							<span className="font-semibold">{labels.rarity(rarity)}</span>
 						</Card>
 					</li>
 				))}
@@ -57,6 +64,7 @@ function SlotDetail({ slot }: { slot: ChiefGearSlot }) {
 
 function ChiefGearList() {
 	const t = useTranslations("wikiChiefGear");
+	const labels = useGameLabels();
 	const [search, setSearch] = useState("");
 	const [tier, setTier] = useState("all");
 	const [stars, setStars] = useState("all");
@@ -131,7 +139,9 @@ function ChiefGearList() {
 									className="bg-surface border-line hover:border-primary flex h-full min-h-11 w-full flex-col items-start gap-2 rounded-md border-[1.5px] p-3 text-start"
 								>
 									<span className="font-semibold">{slot.name}</span>
-									<span className="text-muted">{slot.troopType}</span>
+									<span className="text-muted">
+										{labels.heroClass(slot.troopType)}
+									</span>
 									<span className="flex gap-1">
 										{images.map((image) => (
 											<ItemIcon key={image} src={image} size={28} />
@@ -139,8 +149,8 @@ function ChiefGearList() {
 									</span>
 									<span className="text-muted text-xs">
 										{t("slots.rarities", {
-											first: Object.keys(slot.images)[0],
-											last: Object.keys(slot.images)[images.length - 1],
+											first: labels.rarity(rarityIds(slot)[0]),
+											last: labels.rarity(rarityIds(slot)[images.length - 1]),
 										})}
 									</span>
 								</button>
@@ -182,7 +192,7 @@ function ChiefGearList() {
 						<option value="all">{t("table.allTiers")}</option>
 						{gearTiers.map((option) => (
 							<option key={option.tier} value={option.tier}>
-								{option.tier}
+								{labels.rarityTier(option.tier)}
 							</option>
 						))}
 					</Select>
@@ -227,7 +237,7 @@ function ChiefGearList() {
 						power: t("tiers.power"),
 					}}
 					groups={tierSummaries}
-					groupName={(key) => key}
+					groupName={labels.rarityTier}
 					statsRange={(first, last) => t("tiers.statsRange", { first, last })}
 				/>
 			</section>
@@ -256,6 +266,7 @@ function ChiefGearList() {
 
 function SetBonuses() {
 	const t = useTranslations("wikiChiefGear");
+	const labels = useGameLabels();
 	const { threePiece, sixPiece, troopTypes } = setBonusRule;
 	const percentOf = (tier: ChiefGearSetBonusTier) =>
 		t("cells.percent", { value: formatDecimal(tier.percent) });
@@ -265,7 +276,9 @@ function SetBonuses() {
 			id: "tier",
 			header: t("setBonus.tier"),
 			width: "minmax(0,1.2fr)",
-			render: (tier) => <span className="font-mono font-semibold">{tier.name}</span>,
+			render: (tier) => (
+				<span className="font-mono font-semibold">{labels.rarityTier(tier.name)}</span>
+			),
 		},
 		{
 			id: "three",
@@ -297,9 +310,7 @@ function SetBonuses() {
 			</h2>
 			<p className="text-muted">
 				{t("setBonus.hint", {
-					types: troopTypes
-						.map((type) => type.charAt(0).toUpperCase() + type.slice(1))
-						.join(", "),
+					types: troopTypes.map((type) => labels.troopId(type)).join(", "),
 				})}
 			</p>
 			<div className="grid gap-3 sm:grid-cols-2">

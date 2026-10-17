@@ -11,11 +11,13 @@ import { RecordItems, RecordSection, RecordTile, RecordTiles } from "../records/
 import { RecordTable } from "../records/RecordTable";
 import type { RecordColumn } from "../records/RecordTable";
 import { UnknownValue } from "../UnknownValue";
+import { useGameLabels } from "../useGameLabels";
 import { petRarityTone } from "./petRarityTone";
 import { unlockRequirementText } from "./petText";
 
 export function PetDetail({ pet }: { pet: Pet }) {
 	const t = useTranslations("wikiPets");
+	const labels = useGameLabels();
 	const { cooldownSeconds, cooldownSecondsByTier, durationSeconds } = pet.skill;
 	const maxPower = maxPowerOf(pet);
 	const valueKind = skillValueKindOf(pet);
@@ -39,7 +41,9 @@ export function PetDetail({ pet }: { pet: Pet }) {
 					<div className="flex flex-col gap-2">
 						<h2 className="text-xl font-semibold">{pet.name}</h2>
 						<span>
-							<Badge tone={petRarityTone[pet.rarity]}>{pet.rarity}</Badge>
+							<Badge tone={petRarityTone[pet.rarity]}>
+								{labels.rarity(pet.rarity)}
+							</Badge>
 						</span>
 					</div>
 				</div>

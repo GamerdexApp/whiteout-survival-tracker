@@ -13,6 +13,7 @@ import eventLog from "./ru/eventLog.json";
 import events from "./ru/events.json";
 import experts from "./ru/experts.json";
 import facilities from "./ru/facilities.json";
+import gameLabels from "./ru/gameLabels.json";
 import heroes from "./ru/heroes.json";
 import heroGear from "./ru/heroGear.json";
 import history from "./ru/history.json";
@@ -69,6 +70,7 @@ const ru: PartialMessages = {
   events,
   experts,
   facilities,
+  gameLabels,
   heroGear,
   heroes,
   history,
