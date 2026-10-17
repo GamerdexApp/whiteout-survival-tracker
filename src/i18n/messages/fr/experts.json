@@ -81,7 +81,8 @@
         "buffs": "Renforce {stats}",
         "expEnough": "Suffisant pour le niveau {level}",
         "affinityEnough": "Suffisant pour le niveau {level}",
-        "skillLocked": "Non débloquée. Montez-la au niveau 1 pour la débloquer.",
+        "skillLocked": "Se débloque au niveau de relation {level}, avancé.",
+        "skillCapped": "Le niveau {next} demande le niveau de relation {level}, avancé.",
         "sigilsOwned": "Sceaux possédés",
         "sigilsOwnedLabel": "Sceaux de {expert} possédés",
         "sigilsHint": "Le même nombre que le sceau de la page Ressources."

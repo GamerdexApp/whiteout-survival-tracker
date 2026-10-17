@@ -81,7 +81,8 @@
         "buffs": "增益 {stats}",
         "expEnough": "足夠升到 {level} 級",
         "affinityEnough": "足夠升到 {level} 級",
-        "skillLocked": "尚未解鎖。升到 1 級即可解鎖。",
+        "skillLocked": "在關係等級 {level} 且已進階時解鎖。",
+        "skillCapped": "{next} 級需要關係等級 {level} 且已進階。",
         "sigilsOwned": "持有 Sigil",
         "sigilsOwnedLabel": "{expert}持有的 Sigil",
         "sigilsHint": "與資源頁面中的 Sigil 數量相同。"

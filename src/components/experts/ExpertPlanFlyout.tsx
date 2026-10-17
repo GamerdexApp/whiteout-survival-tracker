@@ -14,6 +14,8 @@ import {
 	isAdvancementLevel,
 	learningMinutesNeeded,
 	runExpertsPlan,
+	skillGoalCapOf,
+	skillGoalGateOf,
 	startingGoalFor,
 } from "@/service/experts";
 import { EXP_PER_LEARNING_MINUTE, MAX_AFFINITY } from "@/data/game/experts";
@@ -230,6 +232,7 @@ function ExpertBlock({
 	onRemove: () => void;
 }) {
 	const t = useTranslations("experts.plan.block");
+	const tCard = useTranslations("experts.card");
 	const { expert } = view;
 	const goalAffinity = Math.max(goal.affinity ?? view.affinity, view.affinity);
 	const alreadyAdvanced =
@@ -297,24 +300,39 @@ function ExpertBlock({
 				)}
 				{expert.skills.map((skill, index) => {
 					const current = view.skillLevels[index];
+					const goalCap = skillGoalCapOf(view, goal, index);
+					const gate = skillGoalGateOf(view, goal, index);
 					return (
-						<PlanRow
-							key={skill.name}
-							label={skill.name}
-							hint={t("expHeld", { amount: formatNumber(view.skillExp[index]) })}
-							current={t("currentLevel", { level: formatNumber(current) })}
-						>
-							<ValueStepper
-								label={t("skillGoalLabel", {
-									expert: expert.name,
-									skill: skill.name,
-								})}
-								value={Math.max(goal.skills?.[index] ?? current, current)}
-								min={current}
-								max={skill.maxLevel}
-								onChange={(level) => setSkill(index, level)}
-							/>
-						</PlanRow>
+						<div key={skill.name}>
+							<PlanRow
+								label={skill.name}
+								hint={t("expHeld", { amount: formatNumber(view.skillExp[index]) })}
+								current={t("currentLevel", { level: formatNumber(current) })}
+							>
+								<ValueStepper
+									label={t("skillGoalLabel", {
+										expert: expert.name,
+										skill: skill.name,
+									})}
+									value={Math.max(goal.skills?.[index] ?? current, current)}
+									min={current}
+									max={goalCap}
+									onChange={(level) => setSkill(index, level)}
+								/>
+							</PlanRow>
+							{gate && (
+								<p className="text-muted pb-2 font-mono text-xs">
+									{gate.level === 1
+										? tCard("skillLocked", {
+												level: formatNumber(gate.affinity),
+											})
+										: tCard("skillCapped", {
+												next: formatNumber(gate.level),
+												level: formatNumber(gate.affinity),
+											})}
+								</p>
+							)}
+						</div>
 					);
 				})}
 			</div>

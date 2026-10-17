@@ -81,7 +81,8 @@
         "buffs": "バフ {stats}",
         "expEnough": "レベル{level}に十分",
         "affinityEnough": "レベル{level}に十分",
-        "skillLocked": "未解放です。レベル1に上げると解放されます。",
+        "skillLocked": "関係レベル{level}で昇格済みになると解放されます。",
+        "skillCapped": "レベル{next}には関係レベル{level}での昇格が必要です。",
         "sigilsOwned": "所持シジル",
         "sigilsOwnedLabel": "{expert}の所持シジル",
         "sigilsHint": "資源ページのシジルと同じ数です。"

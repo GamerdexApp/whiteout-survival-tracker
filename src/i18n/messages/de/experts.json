@@ -81,7 +81,8 @@
         "buffs": "Stärkt {stats}",
         "expEnough": "Genug für Stufe {level}",
         "affinityEnough": "Genug für Stufe {level}",
-        "skillLocked": "Nicht freigeschaltet. Erhöhe sie auf Stufe 1, um sie freizuschalten.",
+        "skillLocked": "Wird bei Beziehungsstufe {level} freigeschaltet, aufgestiegen.",
+        "skillCapped": "Stufe {next} braucht Beziehungsstufe {level}, aufgestiegen.",
         "sigilsOwned": "Sigils im Besitz",
         "sigilsOwnedLabel": "Sigils von {expert} im Besitz",
         "sigilsHint": "Dieselbe Anzahl wie das Sigil auf der Ressourcen-Seite."

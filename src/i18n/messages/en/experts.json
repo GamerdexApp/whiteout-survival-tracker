@@ -81,7 +81,8 @@
         "buffs": "Buffs {stats}",
         "expEnough": "Enough for level {level}",
         "affinityEnough": "Enough for level {level}",
-        "skillLocked": "Not unlocked. Raise it to level 1 to unlock it.",
+        "skillLocked": "Unlocks at relationship level {level}, advanced.",
+        "skillCapped": "Level {next} needs relationship level {level}, advanced.",
         "sigilsOwned": "Sigils owned",
         "sigilsOwnedLabel": "{expert} sigils owned",
         "sigilsHint": "The same count as the sigil on the Resources page."

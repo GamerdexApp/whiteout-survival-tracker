@@ -1,6 +1,6 @@
 import type { LearningJobState, Playthrough } from "@/types/app";
 import { learningSessions } from "@/data/game/experts";
-import { buildExpertViews, skillExpToMax } from "./experts";
+import { buildExpertViews, skillCapOf, skillExpBetween } from "./experts";
 import { learningJob, withLearningJob } from "./queues";
 
 export interface LearningSession {
@@ -36,15 +36,16 @@ export const learningTargets = (chief: Playthrough): LearningTarget[] =>
       expertName: view.expert.name,
       skills: view.expert.skills.flatMap((skill, index) => {
         const level = view.skillLevels[index];
-        if (level < 1 || level >= skill.maxLevel) return [];
+        const cap = skillCapOf(view, index);
+        if (level < 1 || level >= cap) return [];
         return [
           {
             index,
             name: skill.name,
             level,
-            maxLevel: skill.maxLevel,
+            maxLevel: cap,
             held: view.skillExp[index],
-            room: skillExpToMax(skill, level) - view.skillExp[index],
+            room: skillExpBetween(skill, level, cap) - view.skillExp[index],
           },
         ];
       }),

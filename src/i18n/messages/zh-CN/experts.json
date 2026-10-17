@@ -81,7 +81,8 @@
         "buffs": "增益{stats}",
         "expEnough": "足够升到{level}级",
         "affinityEnough": "足够升到{level}级",
-        "skillLocked": "未解锁。升到 1 级即可解锁。",
+        "skillLocked": "在关系等级 {level} 且已进阶时解锁。",
+        "skillCapped": "{next}级需要关系等级 {level} 且已进阶。",
         "sigilsOwned": "已有徽章",
         "sigilsOwnedLabel": "{expert}已有徽章",
         "sigilsHint": "与资源页中的徽章数量相同。"

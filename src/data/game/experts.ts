@@ -4,6 +4,7 @@ import {
   EXPERT_SKILL_EXP_PER_LEARNING_MINUTE,
   expertRelationships,
   experts,
+  expertSkillMaxLevel,
   items,
   unreleasedExperts,
 } from "whiteout-survival-data";
@@ -67,3 +68,26 @@ export const sigilItemIdOf = (expertId: string) =>
 
 /** The learning sessions of the game: a label, the minutes and the EXP they earn. */
 export const learningSessions = [...EXPERT_LEARNING_QUEUE_OPTIONS];
+
+export { expertSkillMaxLevel };
+
+const AFFINITY_STEP = 10;
+
+/**
+ * The lowest affinity level, above `affinity`, at which a skill can reach `level`. It is null when
+ * the data states no such level, so the skill has no known cap to wait for.
+ */
+export const affinityForSkillLevel = (
+  skill: ExpertSkill,
+  affinity: number,
+  level: number,
+) => {
+  for (
+    let step = AFFINITY_STEP * (Math.floor(affinity / AFFINITY_STEP) + 1);
+    step <= MAX_AFFINITY;
+    step += AFFINITY_STEP
+  ) {
+    if (expertSkillMaxLevel(skill, step) >= level) return step;
+  }
+  return null;
+};

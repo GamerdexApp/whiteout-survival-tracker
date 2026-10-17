@@ -14,7 +14,9 @@ import {
 	isAdvancementLevel,
 	nextAdvancementOf,
 	relationshipNameOf,
+	skillCapOf,
 	skillExpNeededFor,
+	skillGateOf,
 	skillGoalOf,
 	statNamesOf,
 	talentEffectOf,
@@ -255,6 +257,8 @@ function RecruitedBody({
 				<SectionLabel className="text-muted pb-1">{t("card.skills")}</SectionLabel>
 				{expert.skills.map((skill, index) => {
 					const skillLevel = view.skillLevels[index];
+					const skillCap = skillCapOf(view, index);
+					const gate = skillGateOf(view, index);
 					const skillNeeded = skillExpNeededFor(skill, skillLevel);
 					return (
 						<div
@@ -273,8 +277,8 @@ function RecruitedBody({
 											skill: skill.name,
 										})}
 										value={skillLevel}
-										min={0}
-										max={skill.maxLevel}
+										min={Math.min(1, skillCap)}
+										max={skillCap}
 										display={t("card.skillDisplay", {
 											level: formatNumber(skillLevel),
 											max: formatNumber(skill.maxLevel),
@@ -321,11 +325,21 @@ function RecruitedBody({
 								</div>
 							) : skillLevel === 0 ? (
 								<span className="text-muted font-mono text-xs">
-									{t("card.skillLocked")}
+									{t("card.skillLocked", {
+										level: formatNumber(gate?.affinity ?? 0),
+									})}
 								</span>
 							) : (
 								<span className="text-muted font-mono text-xs">
 									{t("card.maxLevel")}
+								</span>
+							)}
+							{gate && skillLevel > 0 && (
+								<span className="text-muted font-mono text-xs">
+									{t("card.skillCapped", {
+										next: formatNumber(gate.level),
+										level: formatNumber(gate.affinity),
+									})}
 								</span>
 							)}
 						</div>
