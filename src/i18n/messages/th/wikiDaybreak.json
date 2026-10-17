@@ -1,0 +1,69 @@
+{
+    "line": "ตารางเลเวลของ Lumber camp และ Tree of Life รวมถึงของตกแต่ง {decorations} ชิ้นตามหมวดหมู่พร้อมค่าใช้จ่าย Prosperity และบัฟ",
+    "lumberCamp": {
+        "title": "Lumber camp",
+        "levels": "{count, plural, other {{amount} เลเวล}}",
+        "table": "เลเวลของ Lumber camp",
+        "level": "เลเวล",
+        "workers": "คนงาน",
+        "perSecond": "ต่อวิ",
+        "treeLevel": "เลเวลต้นไม้",
+        "lifeEssence": "Life Essence"
+    },
+    "tree": {
+        "title": "Tree of Life",
+        "table": "เลเวลของ Tree of Life",
+        "level": "เลเวล",
+        "prosperity": "Prosperity",
+        "lifeEssence": "Life Essence",
+        "perHour": "ต่อชั่วโมง",
+        "buff": "บัฟ"
+    },
+    "decorations": {
+        "title": "ของตกแต่ง",
+        "showing": "แสดง {shown} จาก {total}",
+        "search": "ค้นหา",
+        "searchPlaceholder": "ค้นหาของตกแต่งตามชื่อหรือบัฟ",
+        "categoryLabel": "หมวดหมู่",
+        "all": "ทั้งหมด",
+        "costFilter": "ประเภทค่าใช้จ่าย",
+        "table": "ของตกแต่ง",
+        "name": "ของตกแต่ง",
+        "category": "หมวดหมู่",
+        "limit": "จำกัด",
+        "levels": "เลเวล",
+        "cost": "ค่าใช้จ่าย",
+        "prosperityAtMax": "Prosperity ที่สูงสุด",
+        "buffAtMax": "บัฟที่เลเวลสูงสุด",
+        "emptyTitle": "ไม่พบของตกแต่งที่ตรงกัน",
+        "emptyDescription": "เปลี่ยนคำค้นหา หมวดหมู่ หรือประเภทค่าใช้จ่าย"
+    },
+    "costFilter": {
+        "any": "ทุกค่าใช้จ่าย",
+        "lifeEssence": "Life Essence",
+        "items": "ทรัพยากร",
+        "limited": "จำกัดจำนวน",
+        "unknown": "ค่าใช้จ่ายไม่อยู่ในข้อมูล"
+    },
+    "cost": {
+        "lifeEssence": "{amount} Life Essence",
+        "limited": "ไม่มี ของตกแต่งจำกัดจำนวน"
+    },
+    "detail": {
+        "title": "รายละเอียด",
+        "category": "หมวดหมู่",
+        "limit": "จำกัด",
+        "cost": "ค่าใช้จ่าย",
+        "levels": "เลเวล",
+        "image": "รูปภาพ",
+        "imageMissing": "ไม่มี",
+        "levelsTitle": "เลเวลของ {name}",
+        "levelsMeta": "{count, plural, other {{amount} เลเวล}}",
+        "levelsTable": "เลเวลของของตกแต่ง",
+        "level": "เลเวล",
+        "levelCost": "ค่าใช้จ่าย",
+        "prosperity": "Prosperity",
+        "buff": "บัฟ",
+        "noLevels": "ข้อมูลไม่มีตารางเลเวลของของตกแต่งนี้"
+    }
+}

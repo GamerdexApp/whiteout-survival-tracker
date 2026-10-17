@@ -1,0 +1,52 @@
+{
+    "line": "{pets} evcil hayvan. Yalnızca başvuru, burada hiçbir şey kaydedilmez.",
+    "roster": {
+        "title": "Evcil Hayvanlar",
+        "count": "{total} evcil hayvanın {shown} tanesi",
+        "search": "Ara",
+        "searchPlaceholder": "{count} evcil hayvanı ara",
+        "rarity": "Nadirlik",
+        "all": "Tümü",
+        "empty": "Bu filtrelerle eşleşen evcil hayvan yok.",
+        "summary": "Son seviye {level}, rafine en fazla {percent}",
+        "percentValue": "%{value}"
+    },
+    "unlock": {
+        "withFurnace": "{days}. gün, Furnace {level}",
+        "withPet": "{days}. gün, {pet} {level}",
+        "daysOnly": "{days}. gün",
+        "label": "Açılma: {requirement}"
+    },
+    "detail": {
+        "maxLevel": "Son seviye",
+        "maxRefinement": "En yüksek rafine",
+        "unlock": "Açılma gereksinimi",
+        "cooldown": "Beceri bekleme süresi",
+        "duration": "Beceri süresi",
+        "tierCooldown": "{value}",
+        "maxPower": "Maks. güç",
+        "levelPower": "Son seviyedeki seviye ve aşama atlama gücü",
+        "refiningPower": "En yüksek rafinedeki rafine gücü"
+    },
+    "skill": {
+        "title": "Beceri",
+        "meta": "{count, plural, one {{amount} seviye} other {{amount} seviye}}",
+        "level": "Lv {level}",
+        "percent": "%{value}"
+    },
+    "levels": {
+        "title": "Seviye tablosu",
+        "level": "Seviye {level}",
+        "columns": {
+            "level": "Seviye",
+            "food": "Evcil hayvan yiyeceği",
+            "attack": "Birlik saldırısı",
+            "defense": "Birlik savunması",
+            "power": "Birlik gücü",
+            "materials": "Aşama atlama malzemeleri"
+        },
+        "refined": "{value} (rafine {refined})",
+        "none": "Yok"
+    },
+    "recordLine": "{rarity} evcil hayvan, son seviye {level}. Yalnızca başvuru, burada hiçbir şey kaydedilmez."
+}

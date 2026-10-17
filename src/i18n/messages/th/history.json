@@ -1,0 +1,109 @@
+{
+    "page": {
+        "title": "ประวัติ"
+    },
+    "events": {
+        "svs": "SvS",
+        "showdown": "Alliance Showdown",
+        "king": "King of Icefield",
+        "hall": "Hall of Chief"
+    },
+    "title": {
+        "dated": "{event}, {start} ถึง {end}",
+        "undated": "{event}"
+    },
+    "ended": "จบเมื่อ {date}",
+    "tabs": {
+        "label": "กรองตามกิจกรรม",
+        "all": "ทุกกิจกรรม"
+    },
+    "list": {
+        "intro": "กิจกรรมที่คุณจบจากบันทึกกิจกรรม ใหม่สุดก่อน คะแนนของ SvS คือวันที่ 1 ถึง 5 และช่วงการรบแยกต่างหาก เปิดกิจกรรมเพื่อดูแผนเทียบกับที่ทำจริงและการอัปเกรดตามแผน",
+        "event": "กิจกรรม",
+        "plan": "แผน",
+        "actual": "ที่ทำจริง",
+        "diff": "ผลต่าง",
+        "rank": "อันดับ",
+        "alliance": "พันธมิตร",
+        "rankLine": "อันดับ {rank} พันธมิตร {alliance}",
+        "open": "เปิด",
+        "openEvent": "เปิด {name}",
+        "none": "ยังไม่มีกิจกรรมประเภทนี้ที่จบแล้ว",
+        "diffWithPercent": "{amount} ({percent}%)"
+    },
+    "empty": {
+        "title": "ยังไม่มีกิจกรรม",
+        "description": "กิจกรรมที่คุณจบจากบันทึกกิจกรรมใน Core Events จะถูกบันทึกที่นี่พร้อมแผนและผลลัพธ์",
+        "action": "เปิด Core Events"
+    },
+    "notFound": {
+        "title": "ไม่พบกิจกรรม",
+        "description": "กิจกรรมนี้ไม่อยู่ในประวัติของหัวหน้าที่ใช้งานอยู่ อาจถูกลบแล้ว หรือกิจกรรมถูกซ่อนใน Core Events",
+        "action": "กลับไปที่ประวัติ"
+    },
+    "unknown": "ยังไม่ได้ตั้ง",
+    "belowPlan": "ต่ำกว่าแผน",
+    "atOrAbovePlan": "ตามหรือสูงกว่าแผน",
+    "breadcrumb": {
+        "label": "เส้นทางนำทาง"
+    },
+    "tiles": {
+        "plan": "แผน",
+        "actual": "ที่ทำจริง",
+        "difference": "ผลต่าง",
+        "overall": "รวม",
+        "alliance": "พันธมิตร",
+        "days": "วันที่ 1 ถึง 5",
+        "rank": "อันดับ",
+        "rankDays": "อันดับ วันที่ 1 ถึง 5",
+        "percent": "{percent}%"
+    },
+    "compare": {
+        "title": "แผนเทียบกับที่ทำจริง",
+        "titleDays": "แผนเทียบกับที่ทำจริง วันที่ 1 ถึง 5",
+        "day": "วัน",
+        "plan": "แผน",
+        "actual": "ที่ทำจริง",
+        "diff": "ผลต่าง",
+        "rank": "อันดับ",
+        "ally": "พันธมิตร",
+        "total": "รวม",
+        "share": "{percent}% ของแผน",
+        "shareLine": "{percent}% ของแผน อันดับ {rank} พันธมิตร {ally}",
+        "barLabel": "{day} ที่ทำจริงเป็นสัดส่วนของแผน"
+    },
+    "battle": {
+        "title": "ช่วงการรบ",
+        "note": "มีคะแนนและอันดับของตัวเอง ไม่รวมในยอดรวมวันที่ 1 ถึง 5"
+    },
+    "upgrades": {
+        "title": "การอัปเกรดตามแผน",
+        "titleCount": "การอัปเกรดตามแผน {count}",
+        "summary": "การอัปเกรดในแผนของกิจกรรมนี้ จัดกลุ่มตามประเภท ทำแล้ว {done} จาก {count}",
+        "summaryUnchecked": "การอัปเกรดในแผนของกิจกรรมนี้ จัดกลุ่มตามประเภท",
+        "none": "ไม่ได้ส่งออกแผนมายังกิจกรรมนี้ จึงไม่มีการอัปเกรดตามแผนให้แสดง",
+        "groupTitle": "{name} {count}",
+        "groupStats": "ทำแล้ว {done} จาก {count} พลัง +{power} Fire Crystals {fireCrystals}",
+        "groupStatsUnchecked": "พลัง +{power} Fire Crystals {fireCrystals}",
+        "power": "พลัง +{power}",
+        "plannedDay": "วางแผน {day}",
+        "done": "ทำแล้ว",
+        "notDone": "ยังไม่ทำ",
+        "levelsFrom": "{from} ถึง {to}",
+        "levelsTo": "ถึง {to}",
+        "levelsResearchFrom": "เลเวล {from} ถึง {to}",
+        "levelsResearchTo": "ถึงเลเวล {to}",
+        "costAmount": "{amount} {name}"
+    },
+    "pages": {
+        "buildings": "อาคาร",
+        "research": "วิจัย",
+        "chiefGear": "อุปกรณ์หัวหน้า",
+        "chiefCharms": "เครื่องรางหัวหน้า",
+        "heroGear": "อุปกรณ์ฮีโร่",
+        "heroes": "ฮีโร่",
+        "pets": "สัตว์เลี้ยง",
+        "experts": "ผู้เชี่ยวชาญ",
+        "troops": "กองทหาร"
+    }
+}

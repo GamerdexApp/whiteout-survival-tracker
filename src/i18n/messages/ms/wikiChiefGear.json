@@ -1,0 +1,56 @@
+{
+    "line": "{rows} baris gear, {slots} slot dan {rates} kadar tukaran. Rujukan sahaja, tiada apa di sini disimpan pada chief anda.",
+    "slots": {
+        "heading": "Slot gear",
+        "rarities": "Ikon {first} hingga {last}",
+        "detailLine": "Menguatkan tentera {troopType}. Satu ikon bagi setiap kelangkaan."
+    },
+    "table": {
+        "heading": "Jadual gear",
+        "meta": "{rows} baris, {tiers} peringkat",
+        "searchLabel": "Cari",
+        "searchPlaceholder": "Cari {rows} baris gear",
+        "tierLabel": "Peringkat",
+        "allTiers": "Semua peringkat",
+        "starsLabel": "Bintang",
+        "allStars": "Semua bintang",
+        "starsOption": "Bintang {stars}",
+        "empty": "Tiada baris gear sepadan dengan penapis anda."
+    },
+    "columns": {
+        "row": "Baris",
+        "materials": "Bahan",
+        "stats": "Statistik",
+        "power": "Kuasa",
+        "score": "Skor",
+        "capacity": "Kap. kerah"
+    },
+    "cells": {
+        "none": "Tiada",
+        "percent": "{value}%"
+    },
+    "tiers": {
+        "heading": "Peringkat",
+        "meta": "{tiers} label peringkat",
+        "tier": "Peringkat",
+        "rows": "Baris",
+        "stats": "Statistik, pertama hingga terakhir",
+        "power": "Kuasa pada baris terakhir",
+        "statsRange": "{first}% hingga {last}%"
+    },
+    "exchange": {
+        "heading": "Kadar tukaran bahan",
+        "exchange": "Tukaran",
+        "from": "Daripada",
+        "to": "Kepada",
+        "weeklyLimit": "Had mingguan"
+    },
+    "setBonus": {
+        "heading": "Bonus set",
+        "meta": "{tiers} peringkat",
+        "hint": "Pakai 3 keping untuk bonus Pertahanan dan 6 keping untuk bonus Serangan. Peratusnya bergantung pada peringkat keping yang anda pakai. Ia terpakai pada tentera {types}.",
+        "pieceSet": "Set {pieces} keping",
+        "tier": "Peringkat",
+        "pieces": "{pieces} keping, {stat}"
+    }
+}

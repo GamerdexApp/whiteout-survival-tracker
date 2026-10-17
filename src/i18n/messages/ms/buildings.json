@@ -1,0 +1,282 @@
+{
+    "title": "Bangunan",
+    "tabs": {
+        "buildings": "Bangunan",
+        "facilities": "Kemudahan"
+    },
+    "notBuilt": "Belum dibina",
+    "built": "Dibina",
+    "none": "Tiada",
+    "unknown": "Tidak diketahui",
+    "close": "Tutup",
+    "cancel": "Batal",
+    "undo": "Buat asal",
+    "ofTotal": "{count} daripada {total}",
+    "noOtherRequirements": "Tiada keperluan lain",
+    "builderName": "Pembina {number}",
+    "shelterName": "Shelter {number}",
+    "levelOf": "Tahap {name}",
+    "levelRange": "{from} ke {to}",
+    "requirement": {
+        "shelter": "{building} pada tahap {level}",
+        "heroHall": "Hero Hall dibina",
+        "level": "{building} {level}"
+    },
+    "columns": {
+        "building": "Bangunan",
+        "current": "Semasa",
+        "goal": "Matlamat",
+        "power": "Kuasa",
+        "progress": "Kemajuan dan tahap seterusnya",
+        "upgrade": "Naik taraf"
+    },
+    "entry": {
+        "notes": {
+            "furnace": "Mengawal setiap bangunan lain",
+            "shelter": "Sehingga 8 shelter, setiap satu dengan tahapnya sendiri"
+        },
+        "subline": {
+            "size": "Maks {max} · {count} tahap",
+            "withNote": "{note} · {size}",
+            "single": "Satu binaan · kuasa {power}"
+        },
+        "progress": {
+            "requires": "Memerlukan {list}",
+            "noRequirements": "Tiada keperluan",
+            "maxLevel": "Tahap maksimum",
+            "blocked": "Disekat: perlu {list}",
+            "needs": "Perlu {list}",
+            "levelAgeLocked": "Tahap tersimpan {level} belum dibuka pada pelayan ini. {text}",
+            "goalAgeLocked": "Matlamat {goal} belum dibuka pada pelayan ini. {text}",
+            "nextAgeLocked": "Tahap seterusnya {level} dikunci. {text}"
+        },
+        "builtSwitch": "{name} dibina",
+        "shelters": {
+            "none": "Tiada dibina",
+            "editLabel": "Shelter ({count}), sunting tahap",
+            "button": "Shelter ({count})"
+        },
+        "levels": "Tahap",
+        "levelsLabel": "Tahap {name}",
+        "upgrading": "{name} sedang dinaik taraf",
+        "startLabel": "Mula naik taraf {name}",
+        "start": "Mula",
+        "startUpgrade": "Mula naik taraf",
+        "devIndex": "Indeks pemb. {value}",
+        "powerLine": "Kuasa {power} · Indeks pemb. {index}",
+        "progressLabel": "Kemajuan {name}"
+    },
+    "builders": {
+        "label": "Pembina",
+        "hint": "Naik taraf yang anda mulakan di sini dipaparkan pada Gambaran Keseluruhan sebagai baris gilir berjalan.",
+        "idle": "Tekan Mula pada bangunan untuk memulakan naik taraf.",
+        "jobTitle": "{name}, {from} ke {to}",
+        "locked": "Terkunci",
+        "lockedText": "Pembina kedua memerlukan Construction Pack.",
+        "lockedLink": "Hidupkan dalam Sunting chief"
+    },
+    "upgrade": {
+        "option": "{subject}, {from} ke {to}",
+        "busy": "Sibuk: {name} ke {level}, {timeLeft}"
+    },
+    "facilities": {
+        "intro": "Kemudahan dalam bandar anda. Tandakan yang telah anda bina. Ini kemudahan bandar, bukan kemudahan alliance pada menu Alliance.",
+        "builtLabel": "Kemudahan dibina",
+        "unlockedLabel": "Dibuka pada tahap Furnace anda",
+        "requires": "Memerlukan Furnace {level}",
+        "unlocksAt": "Dibuka pada Furnace {level}"
+    },
+    "tab": {
+        "intro": "Tahap semasa dan matlamat untuk setiap bangunan. Furnace menentukan apa yang boleh dicapai oleh yang lain.",
+        "searchLabel": "Cari bangunan",
+        "filters": "Penapis",
+        "massEdit": "Sunting pukal",
+        "startUpgrade": "Mula naik taraf",
+        "plan": "Rancang",
+        "status": "Menunjukkan {shown} daripada {total} bangunan. Matlamat hanya boleh dibaca di sini dan ditetapkan dalam Rancang. Matlamat yang sama dengan tahap semasa bermakna tiada matlamat. Butang tambah/kurang bergerak satu tahap pada satu masa mengikut susunan permainan.",
+        "groupPinned": "Disemat",
+        "stats": {
+            "furnace": "Furnace, mengawal setiap bangunan lain",
+            "power": "Kuasa semasa, semua bangunan",
+            "developmentIndex": "Indeks pembangunan, semua bangunan",
+            "withGoal": "Bangunan dengan matlamat",
+            "atMax": "Pada tahap maksimum",
+            "entertainment": "Hiburan dibina"
+        },
+        "empty": {
+            "title": "Tiada bangunan sepadan",
+            "description": "Ubah carian atau tetapkan semula penapis untuk melihat setiap bangunan.",
+            "reset": "Tetapkan semula carian dan penapis"
+        },
+        "start": {
+            "description": "Tandakan bangunan sedang dinaik taraf",
+            "selectLabel": "Bangunan untuk dinaik taraf",
+            "selectHelp": "Hanya bangunan yang boleh anda mulakan sekarang disenaraikan. Bangunan terkunci, maksimum dan sedang berjalan ditinggalkan. Setiap naik taraf menggunakan satu daripada dua pembina.",
+            "timeLabel": "Masa pembinaan",
+            "speedLabel": "Kelajuan pembinaan",
+            "slotLabel": "Pembina",
+            "slotHelp": "Pilih pembina yang melahu. Pembina yang sibuk menunjukkan bila ia bebas."
+        },
+        "toasts": {
+            "started": {
+                "title": "Naik taraf bermula",
+                "message": "{name}, {subtitle}."
+            },
+            "finished": {
+                "title": "{name} dinaik taraf",
+                "message": "Kini {level}. Ditambah ke Sejarah."
+            },
+            "cancelled": {
+                "title": "Naik taraf {name} dibatalkan",
+                "message": "Tahap kekal seperti sebelumnya. Betulkan stok anda pada Sumber jika perlu."
+            },
+            "massEdit": {
+                "title": "Sunting pukal digunakan",
+                "message": "{count, plural, other {{amount} bangunan}} dikemas kini."
+            }
+        },
+        "manage": {
+            "finishText": "Siapkan naik taraf menetapkan {name} kepada {level}, membebaskan Pembina {builder} dan menambah naik taraf ke Sejarah anda. Apabila masa tinggal sifar, kad bangunan dan pembina menyatakan Sedia untuk disiapkan. Tiada apa yang siap sendiri, kerana anda mungkin telah menggunakan pecutan."
+        }
+    },
+    "filters": {
+        "title": "Penapis",
+        "description": "Pilih apa yang ditunjukkan senarai Bangunan",
+        "reset": "Tetap semula",
+        "show": "{count, plural, other {Tunjuk {amount} bangunan}}",
+        "category": "Kategori",
+        "categoryAll": "Semua, {count}",
+        "categoryOption": "{category}, {count}",
+        "showSection": "Tunjuk",
+        "hideMaxed": "Sembunyikan bangunan maksimum",
+        "hideLocked": "Sembunyikan bangunan terkunci",
+        "goalsOnly": "Hanya bangunan dengan matlamat",
+        "order": "Susunan",
+        "orders": {
+            "game": "Susunan permainan, Furnace dahulu",
+            "name": "Nama, A hingga Z",
+            "progress": "Kemajuan, terendah dahulu"
+        },
+        "pinned": "Furnace kekal disemat di atas apa pun penapisnya. Penapis tidak disimpan."
+    },
+    "levels": {
+        "title": "Tahap",
+        "description": "{category} · Maks {max} · {count} tahap",
+        "noDescription": "Belum ada penerangan dalam data.",
+        "current": "Tahap semasa",
+        "goal": "Tahap matlamat",
+        "nextNeeds": "Tahap seterusnya memerlukan",
+        "noGoal": "Tiada matlamat",
+        "tableNote": "Jadual ini hanya menyenaraikan tahap selepas tahap semasa anda, kerana yang lain sudah siap.",
+        "maxed": "Tahap maksimum. Tiada lagi untuk dinaik taraf.",
+        "nextAfter": "Tahap seterusnya selepas {level}",
+        "first": "Tahap pertama",
+        "level": "Tahap",
+        "time": "Masa",
+        "power": "Kuasa",
+        "capacity": "Kapasiti",
+        "requires": "Memerlukan",
+        "goalBadge": "Matlamat",
+        "capacityNote": "Kapasiti hanya ditetapkan pada baris asas peringkat dalam pakej, jadi subtahap menunjukkan Tidak diketahui."
+    },
+    "massEdit": {
+        "title": "Sunting pukal bangunan",
+        "description": "Tetapkan banyak bangunan sekali gus. Tiada apa disimpan sehingga anda menekan Tetapkan bangunan.",
+        "noChanges": "Belum ada perubahan",
+        "changes": "{count, plural, other {{amount} bangunan berubah}}",
+        "set": "{count, plural, other {Tetapkan {amount} bangunan}}",
+        "raiseTitle": "Naikkan setiap bangunan ke satu tahap",
+        "raiseLabel": "Naikkan semua bangunan ke tahap",
+        "raiseAll": "Naikkan semua",
+        "raiseHint": "Setiap bangunan naik ke tahap tertingginya pada atau di bawah tahap ini. Bangunan yang sudah lebih tinggi kekal, dan yang bermula kemudian kekal belum dibina. Matlamat tidak diubah.",
+        "blockedTitle": "Sesetengah bangunan memerlukan bangunan lain dahulu.",
+        "blocked": "{count, plural, other {{amount} bangunan}} melebihi apa yang dibenarkan oleh keperluannya.",
+        "lowerBlocked": "Turunkan kepada yang dibenarkan",
+        "levels": "Tahap",
+        "needsFirst": "Perlu {list} dahulu",
+        "was": "tadinya {level}",
+        "entertainment": "Hiburan",
+        "markAllBuilt": "Tandakan semua dibina",
+        "clearAll": "Kosongkan semua",
+        "footnote": "Sunting pukal hanya mengubah tahap tersimpan. Ia tidak pernah menurunkan tahap dengan sendirinya dan tidak pernah mengubah matlamat. Setiap shelter mempunyai tahap sendiri, jadi tetapkan dengan butang Shelter, dan tetapkan Hero Hall pada tab Kemudahan."
+    },
+    "shelters": {
+        "title": "Shelter",
+        "description": "Sehingga {max} boleh dibina. Tetapkan tahap setiap satu.",
+        "locked": "Shelter masih dikunci oleh tahap Furnace anda.",
+        "empty": "Belum ada shelter.",
+        "power": "Kuasa {power}",
+        "add": "Tambah shelter",
+        "remove": "Buang Shelter {number}",
+        "allBuilt": "Semua {max} shelter telah dibina.",
+        "furnaceNeeds": "Apa yang Furnace anda perlukan daripada shelter",
+        "requirement": "Furnace {furnaceLevel} memerlukan Shelter {number} pada tahap {level}.",
+        "met": "Dipenuhi.",
+        "notMet": "Belum dipenuhi.",
+        "footnote": "Pelan dan bar kemajuan menggunakan shelter terendah anda, iaitu yang seterusnya untuk dinaik taraf."
+    },
+    "plan": {
+        "title": "Rancang Bangunan",
+        "description": "Sumber, masa dan kuasa dari tahap semasa ke matlamat",
+        "saved": "Pelan disimpan {time}",
+        "save": "Simpan pelan",
+        "failed": "Pelan tidak dapat dikira.",
+        "goalsHeading": "{count, plural, other {Matlamat, {amount} bangunan}}",
+        "noGoals": "Belum ada matlamat. Tambah bangunan di atas, kemudian pilih tahap yang anda mahu dicapai.",
+        "prerequisiteNote": "Langkah prasyarat ditambah untuk anda. Tahap yang memerlukan bangunan lain pada tahap lebih tinggi mengira langkah itu dan menandakannya.",
+        "timeNote": "Pelan mengambil {time} selepas bonus kelajuan {percent}%. Stok anda: Pembinaan {construction} min, Am {general} min. Pecutan Am dikira untuk pembinaan.",
+        "add": {
+            "title": "Tambah bangunan",
+            "allAdded": "Setiap bangunan sudah ada dalam pelan.",
+            "selectLabel": "Bangunan untuk ditambah",
+            "button": "Tambah bangunan"
+        },
+        "speed": {
+            "title": "Kelajuan pembinaan",
+            "percent": "{value}%",
+            "plusPercent": "+{value}%",
+            "readOnly": "Baca sahaja",
+            "bonusesOn": "Dibawa daripada halaman Bonus.",
+            "bonusesOff": "Dimatikan dalam Tetapan, di bawah Guna jumlah Bonus saya.",
+            "openBonuses": "Buka Bonus",
+            "appointment": "Faedah Presiden dan pelantikan",
+            "appointments": {
+                "none": "Tiada",
+                "regular": "Biasa",
+                "supreme": "Tertinggi"
+            },
+            "appointmentNote": "Biasa 10 peratus, Tertinggi 15 peratus. <strong>Anggaran:</strong> pakej menyatakan nilai ini untuk penyelidikan sahaja.",
+            "petSkill": "Kemahiran haiwan peliharaan, Builder's Aide",
+            "petSkillNote": "Peratus datang daripada Cave Hyena pada halaman Haiwan Peliharaan, pada tahap semasanya.",
+            "chiefOrder": "Arahan chief, Double Time",
+            "chiefOrderNote": "<strong>Anggaran:</strong> menambah {percent} peratus kelajuan pembinaan selama 5 minit. Pakej tiada data arahan chief, jadi nilai dimasukkan oleh aplikasi dan digunakan pada keseluruhan masa.",
+            "total": "Jumlah kelajuan pembinaan",
+            "petSkillNoteLocked": "Cave Hyena belum dibuka pada halaman Haiwan Peliharaan, jadi kemahiran itu tidak menambah apa-apa. Buka di sana untuk menghidupkan ini."
+        },
+        "goal": {
+            "to": "ke",
+            "label": "Matlamat {name}",
+            "remove": "Buang {name} daripada pelan"
+        },
+        "result": {
+            "title": "Hasil, {count} langkah",
+            "powerGained": "Kuasa diperoleh",
+            "speedupMinutes": "Minit pecutan diperlukan",
+            "baseTime": "Masa asas",
+            "timeWithBonus": "Masa dengan bonus {percent}%",
+            "eventPoints": "Mata acara: SvS {svs}, King of Icefield {king} (<strong>Anggaran</strong>, daripada baris pemarkahan acara).",
+            "prerequisite": "Prasyarat",
+            "steps": "{count, plural, other {{amount} langkah}}",
+            "unmetHeading": "Prasyarat belum dipenuhi",
+            "unmetNone": "Tiada untuk matlamat ini. Bangunan di luar senarai, seperti Hero Hall, akan dipaparkan di sini."
+        },
+        "export": {
+            "button": "Eksport ke Acara Utama",
+            "empty": "Tambah matlamat ke pelan untuk mengeksportnya.",
+            "speedupMinutes": "Minit pecutan pembinaan",
+            "power": "Kuasa diperoleh melalui pembinaan",
+            "stockDetail": "Pelan memerlukan {needed}, anda ada {held}.",
+            "unscored": "Tiada acara yang memarkahkan {name}."
+        }
+    }
+}

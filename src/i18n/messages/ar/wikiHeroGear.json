@@ -1,0 +1,45 @@
+{
+    "line": "{enhancement} من مستويات التحسين، و{empowerment} من مستويات التمكين، و{mastery} من صفوف سبك الإتقان، و{stats} من مدخلات الإحصائيات. للمرجع فقط، لا يُحفظ شيء هنا.",
+    "tabsLabel": "جداول معدات الأبطال",
+    "tabs": {
+        "enhancement": "التحسين",
+        "empowerment": "التمكين",
+        "mastery": "سبك الإتقان",
+        "stats": "الإحصائيات"
+    },
+    "levels": {
+        "columns": {
+            "level": "المستوى",
+            "cost": "التكلفة",
+            "power": "القوة",
+            "gain": "الزيادة عن السابق",
+            "milestonePower": "قوة المرحلة",
+            "stage": "المرحلة",
+            "statsUp": "ارتفاع الإحصائيات"
+        },
+        "none": "لا شيء",
+        "percent": "{value}%",
+        "gainValue": "‎+{value}"
+    },
+    "stats": {
+        "slot": "الخانة",
+        "troopType": "نوع القوات",
+        "troop": {
+            "infantry": "المشاة",
+            "lancer": "الفرسان",
+            "marksman": "الرماة"
+        },
+        "note": "مستويات الإحصائيات من 101 إلى 200 هي مستويات التمكين من 1 إلى 100.",
+        "columns": {
+            "level": "المستوى",
+            "combat": "{stat}",
+            "health": "الصحة",
+            "percent": "{stat}"
+        },
+        "level": "المستوى {level}",
+        "empowermentLevel": "المستوى {level}، التمكين {empowerment}",
+        "milestonesTitle": "المراحل",
+        "milestone": "مستوى التمكين {level}، {event}: {stat}",
+        "percentValue": "{value}%"
+    }
+}

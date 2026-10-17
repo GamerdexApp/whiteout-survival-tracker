@@ -1,0 +1,67 @@
+{
+    "line": "Hangi bonus kaynaklarının {modes} oyun modunun her birinde geçerli olduğu: {sources} bonus türü için evet, hayır ya da kısmen.",
+    "matrix": {
+        "title": "Bonus matrisi",
+        "meta": "{modes} mod, {sources} bonus türü",
+        "table": "Oyun moduna göre bonus kaynakları",
+        "mode": "Oyun modu"
+    },
+    "sources": {
+        "cityBonusWarsBuffs": {
+            "short": "Şehir bonusu",
+            "full": "Şehir bonusu ve savaş bonusları"
+        },
+        "deploymentCapacity": {
+            "short": "Sevk kap.",
+            "full": "Sevk kapasitesi"
+        },
+        "petSkills": {
+            "short": "Evcil beceri",
+            "full": "Evcil hayvan becerileri"
+        },
+        "daybreakIsland": {
+            "short": "Daybreak",
+            "full": "Daybreak Island"
+        },
+        "presidentSkills": {
+            "short": "Başkan",
+            "full": "Başkan becerileri"
+        },
+        "ministerBuff": {
+            "short": "Bakan",
+            "full": "Bakan bonusu"
+        },
+        "territoryBonuses": {
+            "short": "Bölge",
+            "full": "Bölge bonusları"
+        },
+        "facilityBuff": {
+            "short": "Tesis",
+            "full": "Tesis bonusu"
+        },
+        "marchAccelerator": {
+            "short": "Yürüyüş hız.",
+            "full": "Yürüyüş hızlandırıcı"
+        },
+        "frostdragonTyrantTitles": {
+            "short": "Tyrant unvan.",
+            "full": "Frostdragon Tyrant unvanları"
+        },
+        "frostSphereDomainBonus": {
+            "short": "Frost Sphere",
+            "full": "Frost Sphere domain bonusu"
+        }
+    },
+    "applicability": {
+        "yes": "Evet",
+        "no": "Hayır",
+        "partial": "Kısmen"
+    },
+    "notes": {
+        "title": "Oyun moduna göre notlar",
+        "table": "Oyun moduna göre notlar",
+        "petSkillsAutoApplied": "Evcil hayvan becerileri otomatik uygulanır",
+        "note": "Not",
+        "noNote": "Yok"
+    }
+}

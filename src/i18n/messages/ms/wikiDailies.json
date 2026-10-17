@@ -1,0 +1,46 @@
+{
+    "line": "{missions} misi harian dalam permainan dengan setiap tahap yang diketahui, ganjaran bar aktiviti dan tugas rutin.",
+    "missionCount": "{count, plural, other {{amount} misi}}",
+    "tabs": {
+        "label": "Harian",
+        "missions": "Misi dalam permainan",
+        "routine": "Tugas rutin"
+    },
+    "totals": {
+        "title": "Jumlah Keaktifan",
+        "missions": "Misi dalam permainan",
+        "levelOne": "Tahap 1 bagi setiap misi",
+        "allLevels": "Setiap tahap yang diketahui",
+        "topReward": "Tahap ganjaran tertinggi",
+        "explanation": "Misi menambah Keaktifan setiap tahap yang selesai, sehingga tahap yang dicapai. Tahap 1 bagi semua {missions} misi ialah {levelOne} Keaktifan. Setiap tahap yang diketahui bagi semua {missions} misi ialah {allLevels}."
+    },
+    "bar": {
+        "title": "Ganjaran bar aktiviti",
+        "activeness": "Keaktifan",
+        "rewards": "Ganjaran"
+    },
+    "missions": {
+        "title": "Misi dalam permainan",
+        "summary": "{missions}, {levels}",
+        "levelCount": "{count, plural, other {{amount} tahap diketahui}}",
+        "level": "Tahap",
+        "task": "Tugas",
+        "target": "Sasaran",
+        "activeness": "Keaktifan",
+        "otherRewards": "Ganjaran lain",
+        "levelLabel": "L{level}",
+        "sumOne": "1 tahap: {total} Keaktifan",
+        "sumMany": "{count} tahap: {parts} = {total} Keaktifan",
+        "plus": "+{amount}",
+        "noOtherRewards": "Tiada"
+    },
+    "routine": {
+        "title": "Tugas rutin",
+        "count": "{count, plural, other {{amount} tugas}}"
+    },
+    "missing": {
+        "title": "Belum ada dalam data",
+        "levels": "Tahap misi lain. Setiap misi mempunyai {min} hingga {max} tahap yang diketahui. Tahap lebih tinggi belum ada dalam pakej, jadi jumlah boleh bertambah.",
+        "reset": "Masa tetapan semula harian. Pakej tiada. Penjejak menggunakan lalainya sendiri iaitu {time} UTC dan melabelkannya sebagai lalai aplikasi."
+    }
+}

@@ -1,0 +1,90 @@
+{
+    "page": {
+        "title": "Tundra Albümü"
+    },
+    "view": {
+        "subline": "{chief} · {details} · {total} albümün {complete} tanesi tamam"
+    },
+    "summary": {
+        "label": "Tamamlanan albümler",
+        "value": "{total} içinden {done}",
+        "progress": "Tamamlanan albümler",
+        "inData": "{all} albümün {shown} tanesi veride var"
+    },
+    "buffs": {
+        "title": "Şu an sayılan bonuslar",
+        "derived": "Türetildi",
+        "none": "Henüz tamamlanan albüm yok, bu yüzden hiçbir Tundra Albümü bonusu sayılmıyor.",
+        "note": "Yalnızca tamamlanan albümler sayılır. Bu bonuslar <link>Bonuslar</link> sayfasını besler."
+    },
+    "album": {
+        "status": {
+            "complete": "Tamam",
+            "inProgress": "Sürüyor"
+        },
+        "buffWhenComplete": "Tamamlanınca bonus",
+        "puzzlesDone": "Biten bulmacalar",
+        "puzzlesValue": "{total} içinden {done}",
+        "puzzlesProgress": "Biten bulmacalar: {album}",
+        "completionRewards": "Tamamlama ödülleri",
+        "markComplete": "Albümü tamamlandı işaretle",
+        "notCounting": "Henüz sayılmıyor. {buff}, Bonuslar sayfasında yalnızca {total} bulmacanın hepsi bitince sayılır. Albümü tamamlandı işaretle, {total} bulmacanın hepsini ayarlar ve bir Geri al bildirimi gösterir.",
+        "counting": "Şu an sayılıyor. {buff} Bonuslar sayfasında. Bir bulmacanın işaretini kaldırmak onu yine çıkarır.",
+        "piecesValue": "{total} parçanın {collected} tanesi toplandı"
+    },
+    "puzzle": {
+        "pieces": "{count, plural, one {{amount} parça} other {{amount} parça}}, yıldız 1 - 5: {split}",
+        "reward": "Ödül",
+        "done": "Bulmaca tamam, tüm parçalar toplandı",
+        "doneFor": "Tamam: {puzzle}",
+        "collectedLabel": "Toplanan parçalar",
+        "collected": "{total} içinden {collected}",
+        "pieceLabel": "{name}, {stars} yıldız",
+        "pieceHint": "Sahip olduğun parçaları seç. Bulmacayı tamam işaretlemek hepsini toplar.",
+        "allCollected": "Bulmaca tamam, bu yüzden her parça toplandı."
+    },
+    "reward": {
+        "line": "{amount} {item}",
+        "sized": "{amount} {item} ({size})",
+        "unknownItem": "Bilinmeyen öğe"
+    },
+    "toast": {
+        "markedTitle": "Tamamlandı olarak işaretlendi: {album}",
+        "markedMessage": "{total} bulmacanın hepsi tamam.",
+        "unmarkedTitle": "İşaret kaldırıldı: {puzzle}",
+        "unmarkedMessage": "{album} yeniden sürüyor ve bonusu Bonuslar'dan çıktı.",
+        "undo": "Geri al"
+    },
+    "notInData": "{total} Tundra Albümünden diğer {count} tanesi henüz veride yok. Pakette olunca eklenirler.",
+    "pieces": {
+        "label": "Toplanan parçalar",
+        "value": "{available} içinden {collected}",
+        "progress": "Tüm albümlerde toplanan parçalar",
+        "viewRewards": "Parça ödüllerini gör"
+    },
+    "rewardsFlyout": {
+        "title": "Parça sayısı ödülleri",
+        "description": "Tüm albümlerde topladığın parçalar arttıkça aldığın ödüller",
+        "close": "Kapat",
+        "collected": "Toplanan parçalar",
+        "collectedValue": "{available} içinden {collected}",
+        "progress": "Tüm albümlerde toplanan parçalar",
+        "reached": "{all} parça sayısı ödülünün {reached} tanesine ulaşıldı",
+        "next": "Sıradaki ödül {pieces} parçada, {missing} parça daha topla.",
+        "allReached": "Veride yer alan her parça sayısı ödülüne ulaşıldı.",
+        "totalSoFar": "Şimdiye kadar kazanılan ödüller",
+        "tree": "Toplanan parçaya göre ödüller",
+        "tier": "{pieces} parçada ödül {tier}",
+        "stateReached": "Toplandı",
+        "stateNext": "Sıradaki, {missing} daha",
+        "stateLater": "{missing} daha"
+    },
+    "picker": {
+        "label": "Albümler",
+        "title": "Albümler",
+        "complete": "Albüm tamam",
+        "puzzles": "{total} bulmacanın {done} tanesi",
+        "pieces": "{total} parçanın {collected} tanesi",
+        "piecesProgress": "Toplanan parçalar: {album}"
+    }
+}

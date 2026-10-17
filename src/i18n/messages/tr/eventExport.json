@@ -1,0 +1,32 @@
+{
+    "title": "Ana Etkinlikler'e aktar",
+    "description": "Önce etkinliği, sonra günleri seç",
+    "events": {
+        "svs": "SvS",
+        "showdown": "Alliance Showdown",
+        "king": "King of Icefield",
+        "hall": "Hall of Chief"
+    },
+    "stepEvent": "1. Etkinlik",
+    "stepDay": "{number}. Etkinlik günü {group}",
+    "stepDayPlain": "Etkinlik günü",
+    "stepItems": "{number}. Bu plandaki öğeler",
+    "noDay": "{event} etkinliğinde bu öğeler için puanlama satırı yok.",
+    "daysHint": "Yalnızca puanlama satırları bir öğeyi sayan günler listelenir. Hall of Chief gün yerine aşama listeler. Her öğe grubunun kendi günü olur.",
+    "lineEach": "{day} günü tanesi {points}.",
+    "lineNotScored": "{event} etkinliğinde bunun için puanlama satırı yok.",
+    "notScored": "Puan verilmiyor",
+    "points": "{points} puan",
+    "addedTo": "Eklendi: {event}",
+    "nothingScores": "Bu plandaki hiçbir şey, seçilen günlerde {event} etkinliğinde puan getirmez.",
+    "summaryTitle": "Aktarım özeti",
+    "summaryHint": "Aynı öğeler, her öğe onu puanlayan bir güne harcandığında her etkinlikte ne kadar puan getirir. Yalnızca seçilen etkinlik ve günler bunları alır. Ana Etkinlikler sayfası bunları değiştirebileceğin sayılar olarak gösterir.",
+    "selected": "Seçili",
+    "cancel": "İptal",
+    "export": "Aktar: {event}",
+    "toast": {
+        "title": "Ana Etkinlikler'e aktarıldı",
+        "message": "{event} etkinliğine {points} puan eklendi.",
+        "undo": "Geri al"
+    }
+}

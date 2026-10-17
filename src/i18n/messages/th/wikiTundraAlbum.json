@@ -1,0 +1,32 @@
+{
+    "line": "แพ็กเกจข้อมูลมี {have} จาก {total} อัลบั้ม แต่ละอัลบั้มมีบัฟ รางวัลเมื่อครบ และปริศนา {puzzles} ชิ้น",
+    "note": "อีก {missing} อัลบั้มจะเพิ่มเมื่อแพ็กเกจข้อมูลมี",
+    "albums": "อัลบั้ม",
+    "puzzleCount": "{count, plural, other {{amount} ปริศนา}}",
+    "pieceCount": "{count, plural, other {{amount} ชิ้น}}",
+    "view": {
+        "label": "มุมมอง",
+        "puzzles": "ปริศนา",
+        "pieces": "ทุกชิ้น"
+    },
+    "album": {
+        "counts": "{puzzles} {pieces}",
+        "buff": "บัฟเมื่อครบ",
+        "buffValue": "{stat} {value}",
+        "rewards": "รางวัลเมื่อครบ",
+        "buffNote": "บัฟนับเมื่อทำปริศนาครบทั้ง {puzzles} ชิ้นเท่านั้น"
+    },
+    "puzzles": {
+        "title": "ปริศนา",
+        "puzzle": "ปริศนา",
+        "pieces": "ชิ้น",
+        "star": "ดาว {stars}",
+        "reward": "รางวัล"
+    },
+    "allPieces": {
+        "title": "ทุกชิ้น",
+        "summary": "{pieces} ใน {puzzles}",
+        "imageNote": "รูปของชิ้นมาจากแพ็กเกจข้อมูล ชิ้นที่ไม่มีรูปจะแสดงเป็นสี่เหลี่ยมเปล่า",
+        "stars": "{count, plural, other {{amount} ดาว}}"
+    }
+}

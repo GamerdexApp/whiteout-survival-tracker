@@ -1,0 +1,32 @@
+{
+    "line": "تحتوي الحزمة على {have} من أصل {total} ألبومًا. لكل ألبوم تعزيز ومكافآت اكتمال و{puzzles} ألغاز.",
+    "note": "تُضاف الألبومات الأخرى البالغ عددها {missing} عندما تحتويها الحزمة.",
+    "albums": "الألبومات",
+    "puzzleCount": "{count, plural, zero {{amount} لغز} one {{amount} لغز} two {{amount} لغزان} few {{amount} ألغاز} many {{amount} لغزًا} other {{amount} لغز}}",
+    "pieceCount": "{count, plural, zero {{amount} قطعة} one {{amount} قطعة} two {{amount} قطعتان} few {{amount} قطع} many {{amount} قطعة} other {{amount} قطعة}}",
+    "view": {
+        "label": "العرض",
+        "puzzles": "الألغاز",
+        "pieces": "كل القطع"
+    },
+    "album": {
+        "counts": "{puzzles}، {pieces}",
+        "buff": "التعزيز عند الاكتمال",
+        "buffValue": "{stat} {value}",
+        "rewards": "مكافآت الاكتمال",
+        "buffNote": "لا يُحتسب التعزيز إلا عند إنجاز كل الألغاز الـ {puzzles}."
+    },
+    "puzzles": {
+        "title": "الألغاز",
+        "puzzle": "اللغز",
+        "pieces": "القطع",
+        "star": "النجمة {stars}",
+        "reward": "المكافأة"
+    },
+    "allPieces": {
+        "title": "كل القطع",
+        "summary": "{pieces} في {puzzles}",
+        "imageNote": "صور القطع تأتي من الحزمة. القطعة بلا صورة تظهر كمربع عادي.",
+        "stars": "{count, plural, zero {{amount} نجمة} one {{amount} نجمة} two {{amount} نجمتان} few {{amount} نجوم} many {{amount} نجمة} other {{amount} نجمة}}"
+    }
+}

@@ -1,0 +1,251 @@
+{
+    "page": {
+        "title": "القوات"
+    },
+    "view": {
+        "title": "القوات",
+        "subline": "{chief} · {camps}",
+        "campLevel": "معسكر {name} المستوى {level}",
+        "notBuilt": "غير مبني",
+        "intro": "مستويات المعسكرات والسعة ومزايا السرعة تأتي من صفحات أخرى وهي للقراءة فقط. تحسب الخطة ما يستغرقه التدريب والارتقاء. بدء التدريب يحدد دفعة يعمل عليها معسكر.",
+        "plan": "الخطة"
+    },
+    "cards": {
+        "tileSummary": "جندي · القوة {power}",
+        "allTroops": "كل القوات",
+        "totalPower": "إجمالي القوة",
+        "troops": "القوات",
+        "power": "القوة",
+        "powerNote": "قوة كل جندي تأتي من الحزمة. الفئتان 10 و11 تتبعان مستوى Fire Crystal لكل معسكر.",
+        "campLevel": "معسكر {level}",
+        "campNotBuilt": "المعسكر غير مبني",
+        "campAgeLocked": "مستوى المعسكر المحفوظ غير مفتوح في هذا الخادم بعد. {text}",
+        "highestTier": "أعلى فئة",
+        "tierShort": "T{tier}",
+        "noTier": "لا شيء"
+    },
+    "tiers": {
+        "title": "فئات {name}",
+        "hideLow": "إخفاء الفئة 9 وما دونها",
+        "typeLabel": "نوع القوات",
+        "hiddenNote": "الفئات من 1 إلى 9 مخفية. مستوى Furnace {furnace} هو 30 أو أعلى.",
+        "heads": {
+            "tier": "الفئة",
+            "troops": "القوات",
+            "train": "تدريب",
+            "power": "القوة"
+        },
+        "requires": {
+            "list": "يحتاج إلى {list}",
+            "camp": "معسكر {name} المستوى {level}",
+            "building": "{name} {level}",
+            "research": "{name} المستوى {level}"
+        },
+        "tier": "الفئة {tier}",
+        "locked": "مقفل",
+        "countLabel": "قوات {name} {tier}",
+        "train": "تدريب",
+        "seconds": "{value} ث",
+        "each": "للجندي",
+        "mobilePower": "القوة"
+    },
+    "plan": {
+        "title": "خطة القوات",
+        "description": "التدريب والارتقاء لأنواع القوات الثلاثة",
+        "saved": "تم حفظ الخطة {date}",
+        "close": "إغلاق",
+        "save": "حفظ الخطة",
+        "export": {
+            "button": "تصدير إلى الفعاليات الأساسية",
+            "emptyHint": "أضف تدريبًا لتصديره.",
+            "computed": "حسبها التطبيق.",
+            "trainedGroup": "للقوات المدرَّبة",
+            "speedupGroup": "لدقائق التسريع",
+            "trainedTier": "قوات الفئة {tier} المدرَّبة",
+            "speedupMinutes": "دقائق تسريع التدريب المستخدمة",
+            "promoted": "القوات المرتقية",
+            "promotedReason": "يُحتسب الارتقاء بالنقاط عبر دقائق التسريع فقط.",
+            "power": "القوة من التدريب والارتقاء",
+            "powerReason": "لا تحتوي الحزمة على قوة حقيقية لكل فئة بعد."
+        },
+        "noRuns": "لا توجد تدريبات بعد. أضف قوات لبدء خطة.",
+        "add": {
+            "title": "إضافة قوات",
+            "typeLabel": "نوع القوات",
+            "modeLabel": "التدريب أو الارتقاء",
+            "button": "إضافة القوات"
+        },
+        "run": {
+            "tier": "الفئة {tier}",
+            "modes": {
+                "training": "التدريب",
+                "promotion": "الارتقاء"
+            },
+            "remove": "إزالة تدريب {name}",
+            "removeButton": "إزالة",
+            "modeLabel": "تدريب {name} أو ارتقاؤه",
+            "tierLabel": "فئة {name}",
+            "fromLabel": "ارتقاء {name} من الفئة",
+            "toLabel": "ارتقاء {name} إلى الفئة",
+            "to": "إلى",
+            "troops": "القوات",
+            "max": "الأقصى",
+            "maxValue": "الأقصى ({capacity})",
+            "batches": "الدفعات"
+        },
+        "speed": {
+            "readOnlyNote": "القيم للقراءة فقط منقولة من صفحات أخرى. غيّرها هناك.",
+            "openBonuses": "فتح المزايا",
+            "title": "السعة والسرعة",
+            "appointment": "التعيين",
+            "position": "المنصب",
+            "rank": "الرتبة",
+            "positions": {
+                "none": "بلا",
+                "ministerOfEducation": "وزير التعليم",
+                "vicePresident": "نائب الرئيس"
+            },
+            "ranks": {
+                "regular": "عادية",
+                "supreme": "أعلى"
+            },
+            "appointmentEffect": "‎+{capacity} سعة، ‎+{speed}% سرعة",
+            "appointmentNote": "يمكن تفعيل أحد التعيينين فقط. وزير التعليم يضيف {moeCapacity} سعة و{moeSpeed} بالمئة سرعة (الأعلى {moeCapacitySupreme} و{moeSpeedSupreme}). نائب الرئيس يضيف {vpSpeed} بالمئة سرعة (الأعلى {vpSpeedSupreme}).",
+            "capacity": "السعة",
+            "researchCapacity": "سعة الأبحاث",
+            "troops": "{value} جندي",
+            "readOnly": "للقراءة فقط",
+            "capacityBoost": "تعزيز السعة",
+            "boostTotal": "الإجمالي x{multiplier}",
+            "capacityPerBatch": "السعة لكل دفعة",
+            "trainingSpeed": "سرعة التدريب",
+            "gameSpeed": "سرعة التدريب في اللعبة",
+            "appointmentSpeed": "التعيين",
+            "mobilize": "Mobilize",
+            "advancedTraining": "Advanced Training",
+            "speedUsed": "سرعة التدريب المستخدمة",
+            "percent": "{value}%",
+            "percentPlus": "‎+{value}%"
+        },
+        "stock": {
+            "name": "تسريعات التدريب",
+            "minutesUnit": "د",
+            "note": "مخزونك: التدريب {training} د، العام {general} د. التسريعات العامة تُحتسب ضمن التدريب. التدريب الذي لا يغطيه تسريع ينتهي في وقته العادي، لذا تُستخدم التسريعات التي تملكها فقط: {used} د."
+        },
+        "result": {
+            "title": "النتيجة",
+            "resources": "الموارد",
+            "changes": "تغيّر القوات حسب الفئة",
+            "heads": {
+                "tier": "الفئة",
+                "infantry": "مشاة",
+                "lancer": "فرسان",
+                "marksman": "رماة",
+                "all": "الكل"
+            },
+            "tier": "الفئة {tier}",
+            "total": "الإجمالي",
+            "time": "الوقت، بدون تسريعات",
+            "totalTime": "الإجمالي لكل أنواع القوات (وقت التسريع)",
+            "longest": "أطول نوع قوات",
+            "minutesNeeded": "دقائق التسريع المطلوبة",
+            "minutesUsed": "دقائق التسريع المستخدمة (من المخزون)",
+            "minutes": "{value} د",
+            "tier12Note": "تذكر الحزمة أن تكاليف الفئة 12 مشتقة جزئيًا. تكلفة ارتقاء الرماة قيست في اللعبة، أما تكلفتا المشاة والفرسان فقد حُسبتا بالتناسب منها."
+        }
+    },
+    "queue": {
+        "title": "طوابير التدريب",
+        "note": "يدرّب كل معسكر دفعة واحدة في كل مرة. الإنهاء يضيف القوات إلى أعدادك.",
+        "idle": "لا شيء قيد التدريب. ابدأ دفعة لاستخدام هذا المعسكر.",
+        "startButton": "بدء التدريب",
+        "jobTitle": {
+            "training": "تدريب {count} {name} T{tier}",
+            "promotion": "ارتقاء {count} {name} من T{from} إلى T{to}"
+        },
+        "manage": {
+            "slotLabel": "{camp}، دفعة واحدة في كل مرة",
+            "finishText": "إنهاء الترقية يضيف القوات إلى أعدادك، ويحرر المعسكر، ويضيف الدفعة إلى السجل. عند بلوغ الوقت المتبقي صفرًا تعرض البطاقة عبارة جاهز للإنهاء. لا ينتهي شيء من تلقاء نفسه لأنك قد تكون استخدمت التسريعات."
+        },
+        "flyout": {
+            "title": "بدء التدريب",
+            "description": "حدّد دفعة على أنها قيد التدريب أو الارتقاء في معسكر",
+            "camp": "المعسكر",
+            "campHelp": "دفعة واحدة في كل مرة في كل معسكر. المعسكر المشغول يعرض موعد تفرغه.",
+            "busy": "مشغول حتى {date}",
+            "notBuilt": "المعسكر غير مبني",
+            "action": "الإجراء",
+            "training": "التدريب",
+            "promotion": "الارتقاء",
+            "tier": "الفئة",
+            "tierOption": "الفئة {tier}",
+            "fromTier": "من الفئة",
+            "toTier": "إلى الفئة",
+            "troops": "القوات في الدفعة",
+            "max": "الأقصى",
+            "capacityHint": "تتسع الدفعة لما يصل إلى {capacity} جندي. وهي سعة الأبحاث مضافًا إليها مستويات معسكراتك.",
+            "noTiers": "ليس لهذا المعسكر فئة للتدريب بعد. ارفع مستوى المعسكر من صفحة المباني.",
+            "cost": "تكلفة الدفعة",
+            "time": "وقت التدريب",
+            "packageTime": "وقت الحزمة",
+            "speed": "سرعة التدريب",
+            "readOnly": "للقراءة فقط",
+            "openBonuses": "فتح المزايا",
+            "yourTime": "وقتك",
+            "timeHint": "سرعة التدريب تأتي من صفحة المزايا. استخدم بدأت بالفعل عندما تعرض اللعبة وقتًا مختلفًا.",
+            "whenStarted": "متى بدأت؟",
+            "modes": {
+                "now": "تبدأ الآن",
+                "already": "بدأت بالفعل"
+            },
+            "timeLeftHours": "الوقت المتبقي بالساعات",
+            "ends": "تنتهي",
+            "takeCost": {
+                "title": "خصم التكلفة من مخزوني",
+                "hint": "يخصم موارد الدفعة من صفحة الموارد. لا ينزل أي عدد عن 0.",
+                "enough": "لديك ما يكفي.",
+                "short": "ينقصك {names}. يصبح المخزون 0 لها."
+            },
+            "cancel": "إلغاء",
+            "start": "بدء التدريب",
+            "allCamps": "كل المعسكرات الفارغة ({count})",
+            "allCampsHint": "يبدأ الدفعة نفسها في كل معسكر فارغ دفعة واحدة. يحتفظ كل معسكر بوقته الخاص. الفئات المعروضة هي التي يستطيع كل معسكر فارغ تدريبها.",
+            "campTime": "{camp}: {time}"
+        },
+        "toasts": {
+            "started": {
+                "title": "بدأ التدريب",
+                "message": "{what}"
+            },
+            "finished": {
+                "title": "اكتمل {what}",
+                "message": "أُضيف إلى أعداد قواتك وإلى السجل."
+            },
+            "cancelled": {
+                "title": "أُلغي {what}",
+                "message": "تبقى أعداد قواتك كما كانت. عدّل مخزونك في الموارد إن لزم."
+            },
+            "undo": "تراجع"
+        },
+        "batchName": {
+            "training": "{count} {name} T{tier}",
+            "promotion": "{count} {name} من T{from} إلى T{to}"
+        }
+    },
+    "callOfWar": {
+        "title": "Call of War",
+        "note": "مهارة Romulus. مطالبة مجانية واحدة لكل يوم UTC لجميع المعسكرات معًا. تُعاد عند 00:00 بتوقيت UTC.",
+        "available": "{troops} جندي مجانًا اليوم",
+        "claimed": "تمت المطالبة اليوم. تتوفر مطالبة مجانية جديدة بعد {time}.",
+        "notUnlocked": "يتطلب تجنيد Romulus وCall of War بالمستوى 1 أو أعلى في صفحة الخبراء.",
+        "level": "مستوى Call of War {level}",
+        "add": "إضافة إلى {camp}",
+        "addHint": "{troops} جندي يذهبون إلى الفئة {tier}",
+        "noTier": "لا توجد فئة مفتوحة",
+        "toast": {
+            "title": "تمت المطالبة بـ Call of War",
+            "message": "أُضيف {troops} جندي إلى {camp} الفئة {tier}.",
+            "undo": "تراجع"
+        }
+    }
+}

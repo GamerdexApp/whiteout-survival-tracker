@@ -1,0 +1,50 @@
+{
+    "page": {
+        "title": "التحالف"
+    },
+    "view": {
+        "subline": "{chief} · {details} · مستوى الراية {level}"
+    },
+    "banner": {
+        "title": "راية التحالف",
+        "currentLevel": "المستوى الحالي",
+        "levelLabel": "مستوى الراية",
+        "maxHint": "مستويات صحيحة من 0 إلى {max}.",
+        "rangeChip": "{range}",
+        "costHeading": "التكلفة لكل مستوى في {range}",
+        "noTimeOrPower": "ليس للرايات وقت بناء أو قوة في الحزمة، لذا لا يُعرض شيء منهما.",
+        "noCost": "بلا تكلفة",
+        "none": "لا شيء",
+        "lower": "تقليل مستوى الراية",
+        "raise": "زيادة مستوى الراية"
+    },
+    "structures": {
+        "title": "منشآت التحالف",
+        "tech": {
+            "title": "التقنيات",
+            "description": "{count} عقدة في النمو والأراضي والمعركة",
+            "status": "{maxed} مكتملة، {progress} قيد التنفيذ، {locked} مقفلة"
+        },
+        "facilities": {
+            "title": "المرافق",
+            "description": "{count} من مرافق الخريطة",
+            "owned": "مملوك {owned}"
+        },
+        "fortresses": {
+            "title": "القلاع الحصينة",
+            "description": "القلعة، {strongholds} من الحصون، {fortresses} من القلاع الحصينة",
+            "reference": "للمرجع فقط"
+        }
+    },
+    "table": {
+        "title": "تكلفة الراية حسب نطاق المستويات",
+        "note": "{count} نطاقات، وكل مستوى في النطاق يكلف المبلغ نفسه",
+        "range": "النطاق",
+        "state": "الحالة",
+        "built": "مبنية",
+        "current": "الحالي",
+        "notBuilt": "غير مبنية",
+        "none": "لا شيء",
+        "noCost": "بلا تكلفة"
+    }
+}

@@ -1,0 +1,129 @@
+{
+    "title": "Log acara",
+    "events": {
+        "svs": "SvS, State of Power",
+        "showdown": "Alliance Showdown",
+        "king": "King of Icefield",
+        "hall": "Hall of Chief"
+    },
+    "tabs": {
+        "label": "Paparan log acara",
+        "current": "Acara semasa",
+        "history": "Sejarah"
+    },
+    "dates": {
+        "title": "Tarikh acara",
+        "start": "Mula",
+        "end": "Tamat",
+        "days": "{count, plural, other {{amount} hari}}",
+        "endBeforeStart": "Tarikh tamat sebelum tarikh mula."
+    },
+    "results": {
+        "rank": "Kedudukan",
+        "alliance": "Alliance",
+        "score": "Skor",
+        "allianceShort": "Alli.",
+        "scoreOf": "{day}, skor",
+        "rankOf": "{day}, kedudukan",
+        "allianceOf": "{day}, kedudukan alliance",
+        "plan": "Pelan {total}",
+        "notStarted": "Belum bermula",
+        "opensLater": "Dibuka kemudian",
+        "empty": "Kosong",
+        "locked": "Dikunci",
+        "lock": "Kunci",
+        "unlock": "Buka kunci",
+        "lockDay": "Kunci {day}",
+        "unlockDay": "Buka kunci {day}"
+    },
+    "cards": {
+        "svsDays": "Hari persediaan 1 hingga 5",
+        "days": "Hari",
+        "stages": "Peringkat",
+        "rankHint": "Kedudukan ialah kedudukan state anda. Alliance ialah kedudukan alliance anda.",
+        "battleTitle": "Battle Phase",
+        "battleNote": "Skor dan kedudukan Battle ialah hasil tersendiri. Ia tidak ditambah kepada Hari 1 hingga 5."
+    },
+    "overall": {
+        "svsTitle": "Hasil keseluruhan, Hari 1 hingga 5",
+        "title": "Hasil keseluruhan",
+        "rank": "Kedudukan keseluruhan",
+        "alliance": "Kedudukan alliance keseluruhan",
+        "svsTotal": "Jumlah hari 1 hingga 5 yang dikunci",
+        "daysTotal": "Jumlah hari yang dikunci",
+        "stagesTotal": "Jumlah peringkat yang dikunci",
+        "hint": "Mengunci menghalang nombor berubah semasa anda terus bermain. Nombor yang dikunci boleh dibuka kuncinya."
+    },
+    "footer": {
+        "close": "Tutup",
+        "endEvent": "Tamatkan acara",
+        "readOnly": "Sejarah hanya boleh dibaca"
+    },
+    "end": {
+        "title": "Tamatkan {event} dan simpan ke sejarah?",
+        "dates": "{event}, {start} hingga {end}",
+        "noDates": "{event}, tiada tarikh dimasukkan",
+        "lockedTotal": "Jumlah hari yang dikunci: {total}.",
+        "lockedTotalSvs": "Jumlah hari 1 hingga 5 yang dikunci: {total}.",
+        "noRanks": "Kedudukan keseluruhan dan kedudukan alliance kosong.",
+        "allLocked": "Setiap hari dikunci.",
+        "unlocked": "{count, plural, other {{amount} hari tidak dikunci.}} Ia disimpan seperti dimasukkan, dan hari tanpa nombor kekal kosong.",
+        "unlockedList": "Tidak dikunci: {days}.",
+        "what": "Apa yang berlaku",
+        "saves": "Menyimpan tarikh, skor dan kedudukan harian, dan hasil keseluruhan ke Sejarah, bersama jumlah yang dirancang bagi setiap hari.",
+        "clearsCounts": "Mengosongkan bilangan untuk setiap hari, jadi setiap hari dalam pelan bermula pada 0.",
+        "clearsPlans": "Mengosongkan pelan yang dieksport ke acara ini dan semakan senarai semak.",
+        "keeps": "Hanya acara ini dikosongkan. Matlamat dan pelan anda pada halaman lain kekal.",
+        "cancel": "Batal",
+        "confirm": "Tamatkan acara dan mula baharu",
+        "toastTitle": "Acara ditamatkan",
+        "toastMessage": "{event} disimpan ke Sejarah. Acara bermula baharu tanpa tarikh.",
+        "undo": "Buat asal",
+        "lockedTotalStages": "Jumlah peringkat yang dikunci: {total}."
+    },
+    "history": {
+        "intro": "Acara {event} yang anda tamatkan, terkini dahulu. Menamatkan acara menyimpan lognya di sini dan tidak boleh disunting kemudian, hanya dibuang. <link>Buka Sejarah untuk pelan berbanding sebenar dan naik taraf yang dirancang.</link>",
+        "empty": "Belum ada acara ditamatkan. Tamatkan acara untuk menyimpan lognya di sini.",
+        "cardTitle": "{event}, {start} hingga {end}",
+        "cardNoDates": "{event}, tiada tarikh",
+        "ended": "Tamat {date}",
+        "svsTotal": "Hari 1 hingga 5",
+        "total": "Jumlah skor",
+        "overallRank": "Kedudukan keseluruhan",
+        "allianceRank": "Kedudukan alliance",
+        "notSet": "Tidak ditetapkan",
+        "showDays": "Tunjuk hari",
+        "hideDays": "Sembunyikan hari",
+        "remove": "Buang daripada sejarah",
+        "removedTitle": "Dibuang daripada sejarah",
+        "removedMessage": "{event} dibuang daripada Sejarah.",
+        "undo": "Buat asal",
+        "noValue": "-"
+    },
+    "checklist": {
+        "title": "Senarai semak pelan",
+        "description": "{day}, apa yang perlu dibuat",
+        "dayChips": "Hari",
+        "castleTitle": "Daftar untuk kedudukan Castle bagi {day}",
+        "castleBody": "Kedudukan Castle memberi bonus untuk hari berikutnya. Daftar sebelum hari ini tamat supaya bonus aktif untuk {day}.",
+        "castleCheck": "Telah mendaftar untuk {day}",
+        "done": "{done} daripada {total} selesai",
+        "progress": "Tindakan disemak",
+        "planLine": "Pelan untuk hari ini: {points} mata. Hanya tindakan dengan bilangan melebihi 0 disenaraikan. Bilangan datang daripada halaman Acara Utama.",
+        "empty": "Tiada tindakan mempunyai bilangan untuk hari ini. Tambah bilangan pada halaman Acara Utama.",
+        "resources": "Sumber untuk digunakan",
+        "resourcesHint": "Item yang dibelanjakan pada hari itu. Semak stok anda sebelum bermula.",
+        "actions": "Tindakan",
+        "count": "x{count}",
+        "points": "{points} mata",
+        "clear": "Kosongkan semakan",
+        "close": "Tutup",
+        "dayTitle": "{day}: {name}"
+    },
+    "eventShort": {
+        "svs": "SvS",
+        "showdown": "Alliance Showdown",
+        "king": "King of Icefield",
+        "hall": "Hall of Chief"
+    }
+}

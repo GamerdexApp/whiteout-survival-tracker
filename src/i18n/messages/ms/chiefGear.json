@@ -1,0 +1,176 @@
+{
+    "none": "Tiada",
+    "charmLabel": "Charm {number}",
+    "view": {
+        "title": "Gear Chief",
+        "tabsLabel": "Gear chief",
+        "gearSubline": "{name} · enam slot, 150 baris naik taraf",
+        "charmsSubline": "{name} · 6 keping gear, 3 charm setiap satu, 75 baris naik taraf",
+        "tabs": {
+            "gear": "Gear Chief",
+            "charms": "Chief Charms"
+        }
+    },
+    "shared": {
+        "plan": "Rancang",
+        "autoSaveHint": "Setiap perubahan disimpan serta-merta. Butang tambah/kurang bergerak satu baris pada satu masa mengikut susunan pakej.",
+        "scoreToGain": "Skor masih perlu diperoleh",
+        "notes": "Nota",
+        "package": "Pakej"
+    },
+    "gear": {
+        "scoreNow": "Skor gear sekarang, enam slot",
+        "powerNow": "Kuasa gear sekarang",
+        "stepsToGoals": "Langkah ke semua matlamat",
+        "goalsHint": "Matlamat hanya boleh dibaca di sini. Tetapkan dalam Rancang dan tekan Simpan pelan.",
+        "stepWord": "langkah",
+        "tiers": {
+            "title": "Peringkat",
+            "description": "Pakej melabelkan 150 baris dengan {count} peringkat. Peringkat yang diserlahkan mengandungi sekurang-kurangnya satu keping anda.",
+            "rows": "{rows} baris",
+            "names": {
+                "EpicT1": "Epic T1",
+                "MythicT1": "Mythic T1",
+                "MythicT2": "Mythic T2",
+                "LegendaryT1": "Legendary T1",
+                "LegendaryT2": "Legendary T2",
+                "LegendaryT3": "Legendary T3",
+                "LegendaryT4": "Legendary T4",
+                "LegendaryT5": "Legendary T5",
+                "LegendaryT6": "Legendary T6"
+            }
+        },
+        "notes": {
+            "setBonus": {
+                "title": "Peraturan bonus set",
+                "body": "3 keping peringkat yang sama memberi Pertahanan dan 6 keping memberi Serangan, untuk ketiga-tiga jenis tentera. Keping tanpa tahap tidak dikira. Setiap peringkat mempunyai satu nilai."
+            },
+            "troopType": {
+                "title": "Jenis tentera dimasukkan secara manual",
+                "body": "Cap dan Watch menguatkan Lancer, Coat dan Pants menguatkan Infantry, Ring dan Weapon menguatkan Marksman. Penulis pakej menaipnya daripada teks wiki."
+            },
+            "capacity": {
+                "title": "Kapasiti ialah 0 pada baris awal",
+                "body": "26 baris pertama tiada kapasiti pengerahan dalam pakej, jadi ia menunjukkan 0 sehingga data mempunyai nilai."
+            }
+        }
+    },
+    "charms": {
+        "scoreNow": "Skor charm sekarang, 18 charm",
+        "powerNow": "Kuasa charm sekarang",
+        "stagesToGoals": "Peringkat ke semua matlamat",
+        "goalsHint": "Matlamat hanya boleh dibaca di sini dan ditetapkan dalam Rancang.",
+        "stepWord": "peringkat",
+        "slotMeta": "{troop} · 3 charm",
+        "slotStages": ", {stages} peringkat ke matlamat",
+        "notes": {
+            "secrets": {
+                "title": "Charm Secrets bermula pada tahap 11",
+                "body": "Dari Tahap 11 Peringkat 1, satu peringkat memerlukan Charm Secrets. Peringkat awal hanya menyenaraikan Charm Guide dan Charm Design."
+            },
+            "look": {
+                "title": "Charm bertukar rupa pada setiap tahap",
+                "body": "Setiap charm mempunyai 18 ikon, satu bagi setiap tahap. Setiap keping gear membawa tiga charm, dan ia mengikut jenis tentera keping itu."
+            },
+            "estimate": {
+                "title": "Skor peringkat ialah anggaran",
+                "body": "Skor tahap dibahagi sama rata kepada peringkat yang menuju ke tahap itu. Permainan tidak mengesahkan pembahagian ini."
+            }
+        }
+    },
+    "badge": {
+        "tier": "Peringkat {tier}",
+        "stars": "{count, plural, other {{amount} bintang}}",
+        "tierAndStars": "{tier}, {stars}"
+    },
+    "row": {
+        "level": "Tahap {title}",
+        "progressLabel": "Kemajuan {title} dalam {total} baris",
+        "progress": "{progress} daripada {total}",
+        "stepsToGoal": " · {steps} ke matlamat",
+        "goal": "Matlamat {name}",
+        "noGoal": "Tiada matlamat",
+        "stats": "Statistik {stat} · Kuasa {power}",
+        "statPercent": "{percent}%",
+        "capacity": " · Kapasiti {capacity}",
+        "lockedCurrent": "Tahap tersimpan {name} dikunci oleh usia pelayan dan tidak dikira. {requirement}.",
+        "lockedGoal": "Matlamat tersimpan {name} dikunci oleh usia pelayan dan tidak dirancang. {requirement}."
+    },
+    "summary": {
+        "title": "Baki untuk mencapai semua matlamat",
+        "derived": "Diperoleh",
+        "score": "skor",
+        "powerGain": "perolehan kuasa",
+        "noGoals": "Tiada matlamat ditetapkan. Tetapkan matlamat dalam Rancang.",
+        "openPlan": "Buka Rancang untuk mata acara dan pecahan"
+    },
+    "setBonus": {
+        "title": "Bonus set dibuka",
+        "pieceSet": "Set {pieces} keping",
+        "active": "Aktif",
+        "notActive": "Tidak aktif",
+        "value": "{stat} +{percent}%",
+        "appliesTo": "Keping {tierName}, untuk Infantry, Lancer dan Marksman",
+        "needs": "Perlu {pieces} keping peringkat yang sama. {stat} +0% buat masa ini."
+    },
+    "plan": {
+        "gear": {
+            "title": "Rancang Gear Chief",
+            "description": "Bahan, skor dan kuasa dari tahap semasa ke matlamat",
+            "stepWord": "Langkah",
+            "conversionNote": "Semakan tidak mengira penukaran. Penukar mempunyai tujuh kadar tukaran, masing-masing dengan had mingguan, contohnya 10 Design Plans kepada 1 Lunar Amber sehingga 500 seminggu."
+        },
+        "charm": {
+            "title": "Rancang Chief Charms",
+            "description": "Bahan, skor dan kuasa dari tahap semasa ke matlamat",
+            "stepWord": "Peringkat",
+            "conversionNote": "Semakan tidak mengira penukaran: 2 Charm Guide menjadi 1 Charm Design dan sebaliknya, dan 40 daripada mana-mana menjadi 1 Charm Secrets."
+        },
+        "saved": "Pelan disimpan {date}",
+        "close": "Tutup",
+        "save": "Simpan pelan",
+        "export": {
+            "button": "Eksport ke Acara Utama",
+            "nothingToExport": "Tetapkan matlamat di atas tahap semasa untuk mengeksport pelan.",
+            "gearScore": "Skor Gear Chief",
+            "charmScore": "Skor Chief Charm",
+            "power": "Kuasa diperoleh",
+            "powerReason": "Tiada baris Acara Utama yang memarkahkan kuasa Gear Chief atau Chief Charm."
+        },
+        "inputs": "Input",
+        "slotTroop": "{slot}, {troop}",
+        "from": "Dari {level}",
+        "goalLabel": "Matlamat {label}",
+        "slotGoalLabel": "Matlamat {label} {slot}",
+        "inputsHint": "Tahap semasa ialah yang ada pada halaman. Ubah di sana. Matlamat hanya boleh dibaca pada halaman dan ditetapkan di sini.",
+        "result": "Hasil",
+        "score": "Skor",
+        "powerGain": "Perolehan kuasa",
+        "events": {
+            "svs": "SvS State of Power",
+            "allianceShowdown": "Alliance Showdown",
+            "kingOfIcefield": "King of Icefield",
+            "hallOfChief": "Hall of Chief"
+        },
+        "bySlot": "Mengikut slot",
+        "byCharm": "Mengikut charm",
+        "columnSlot": "Slot",
+        "columnCharm": "Charm",
+        "slotCharm": "{slot} {charm}",
+        "converter": {
+            "title": "Penukar bahan",
+            "spend": "Belanja",
+            "get": "Dapat",
+            "limit": "Had",
+            "amount": "{quantity} {name}",
+            "perWeek": "{limit} seminggu",
+            "noLimit": "Tiada had mingguan"
+        },
+        "lockedCurrent": "Tahap tersimpan {name} dikunci oleh usia pelayan. {requirement}."
+    },
+    "lock": {
+        "title": "Dikunci oleh usia pelayan",
+        "stop": "{name} (terkunci, hari {day})",
+        "group": "Dari {name}: {requirement}."
+    }
+}

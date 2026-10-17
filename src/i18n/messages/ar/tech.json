@@ -1,0 +1,98 @@
+{
+    "page": {
+        "title": "التقنيات"
+    },
+    "view": {
+        "subline": "{chief} · {count} عقدة تقنية تحالف في النمو والأراضي والمعركة"
+    },
+    "summary": {
+        "maxed": "مكتمل",
+        "inProgress": "قيد التنفيذ",
+        "notStarted": "لم يبدأ",
+        "locked": "مقفل"
+    },
+    "status": {
+        "maxed": "مكتمل",
+        "inProgress": "قيد التنفيذ",
+        "notStarted": "لم يبدأ",
+        "locked": "مقفل"
+    },
+    "tabs": {
+        "label": "فئات التقنيات"
+    },
+    "categories": {
+        "Growth": "النمو",
+        "Territory": "الأراضي",
+        "Battle": "المعركة"
+    },
+    "filters": {
+        "search": "بحث",
+        "searchLabel": "بحث في عقد التقنيات",
+        "searchPlaceholder": "اسم العقدة",
+        "tier": "الفئة",
+        "allTiers": "كل الفئات",
+        "tierOption": "الفئة {tier}",
+        "status": "الحالة",
+        "allStatuses": "الكل",
+        "button": "البحث وعوامل التصفية",
+        "title": "البحث وعوامل التصفية",
+        "description": "ابحث عن عقد التقنيات بالاسم والفئة والحالة",
+        "reset": "إعادة ضبط عوامل التصفية",
+        "done": "عرض {count}",
+        "shown": "عرض {shown} من {total} عقدة"
+    },
+    "table": {
+        "node": "العقدة",
+        "level": "المستوى",
+        "bonus": "الميزة",
+        "cost": "تكلفة المستوى التالي",
+        "time": "الوقت",
+        "needs": "المتطلبات"
+    },
+    "node": {
+        "tierDescription": "الفئة {tier} · {description}",
+        "levelLabel": "مستوى {name}",
+        "levelOf": "{level} / {max}",
+        "open": "فتح {name}",
+        "bonusOf": "{now} من {max}",
+        "bonusNone": "لا شيء بعد، الأقصى {max}",
+        "noBonus": "لا توجد ميزة",
+        "maxed": "مكتمل",
+        "noTime": "لا يوجد وقت",
+        "readyToUpgrade": "جاهز للترقية",
+        "nothingNeeded": "لا حاجة لشيء",
+        "needsPart": "يحتاج إلى {name} المستوى {level}",
+        "costLine": "{name} {amount}",
+        "lockedHint": "مقفل حتى {names}",
+        "requirementPart": "{name} المستوى {level}"
+    },
+    "flyout": {
+        "title": "{name}",
+        "subtitle": "{category}، الفئة {tier}. {description}",
+        "close": "إغلاق",
+        "level": "المستوى",
+        "bonusNow": "الميزة الآن",
+        "needsFor": "المتطلبات للمستوى {level}",
+        "needsNothing": "لا حاجة لشيء.",
+        "needsLine": "يحتاج إلى المستوى {need}، ولديك المستوى {have}",
+        "met": "مستوفى",
+        "notMet": "غير مستوفى",
+        "requiredBy": "مطلوب من",
+        "requiredByNone": "لا توجد عقدة أخرى تحتاج إلى هذه العقدة.",
+        "requiredByLine": "{category}، الفئة {tier}، من المستوى {from} تحتاج إلى {name} المستوى {need}",
+        "allLevels": "كل المستويات",
+        "levelRow": "المستوى {level}",
+        "done": "تم",
+        "next": "التالي",
+        "later": "لاحقًا",
+        "remaining": "المتبقي حتى الأقصى",
+        "derived": "مشتق",
+        "remainingNone": "لم يتبقَّ شيء. هذه العقدة مكتملة.",
+        "remainingLine": "{cost}",
+        "remainingTime": "{time}"
+    },
+    "empty": {
+        "title": "لا توجد عقد مطابقة",
+        "description": "غيّر البحث أو عوامل التصفية لعرض مزيد من العقد."
+    }
+}

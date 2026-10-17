@@ -1,0 +1,99 @@
+{
+    "line": "{heroes} من الأبطال و{widgets} من مستويات Widgets. للمرجع فقط، لا يُحفظ شيء هنا.",
+    "roster": {
+        "title": "القائمة",
+        "count": "{shown} من {total} بطلًا",
+        "search": "بحث",
+        "searchPlaceholder": "ابحث في {count} بطلًا",
+        "generation": "الجيل",
+        "rarity": "الندرة",
+        "class": "الصنف",
+        "subClass": "الصنف الفرعي",
+        "all": "الكل",
+        "empty": "لا يوجد بطل يطابق عوامل التصفية هذه.",
+        "columns": {
+            "hero": "البطل",
+            "generation": "الجيل",
+            "rarity": "الندرة",
+            "class": "الصنف",
+            "subClass": "الصنف الفرعي",
+            "power": "القوة، 5 نجوم",
+            "weapon": "السلاح الحصري"
+        },
+        "none": "لا شيء"
+    },
+    "detail": {
+        "generation": "الجيل {generation}",
+        "source": "المصدر: {sources}",
+        "noSource": "المصدر: غير معروف",
+        "explorationAttack": "هجوم الاستكشاف",
+        "explorationDefense": "دفاع الاستكشاف",
+        "explorationHealth": "صحة الاستكشاف",
+        "expeditionAttack": "هجوم الحملة",
+        "expeditionDefense": "دفاع الحملة",
+        "powerAtLevel80": "القوة عند المستوى 80",
+        "powerAtFiveStars": "القوة عند 5 نجوم",
+        "powerAtZeroStars": "القوة عند 0 نجوم",
+        "powerMissing": "قوة مستويات الأبطال والشظايا مفقودة للجيل 6 وما بعده. تظهر كغير معروفة حتى الحصول على البيانات."
+    },
+    "skills": {
+        "title": "المهارات",
+        "count": "{count, plural, zero {{amount} مهارة} one {{amount} مهارة} two {{amount} مهارتان} few {{amount} مهارات} many {{amount} مهارة} other {{amount} مهارة}}",
+        "branch": {
+            "exploration": "الاستكشاف",
+            "expedition": "الحملة",
+            "talent": "الموهبة"
+        },
+        "levels": {
+            "columns": {
+                "level": "المستوى",
+                "star": "النجمة المطلوبة",
+                "manuals": "الكتب",
+                "power": "زيادة القوة",
+                "effects": "التأثير"
+            },
+            "effect": {
+                "percentOfAttack": "{name} {amount}% من الهجوم",
+                "percent": "{name} {amount}%",
+                "seconds": "{name} {amount} ث",
+                "number": "{name} {amount}"
+            }
+        }
+    },
+    "shards": {
+        "title": "تكاليف الشظايا حسب النجمة",
+        "columns": {
+            "star": "النجمة",
+            "tiers": "الشظايا لكل فئة",
+            "total": "الإجمالي",
+            "power": "القوة عند النجمة"
+        },
+        "star": "النجمة {star}"
+    },
+    "weapon": {
+        "title": "السلاح الحصري",
+        "power": "قوة السلاح",
+        "exploration": "هجوم / دفاع / صحة الاستكشاف",
+        "expedition": "فتك / صحة الحملة",
+        "unlocksAt": "يُفتح عند مستوى السلاح {level}",
+        "levelsTitle": "مستويات السلاح",
+        "columns": {
+            "level": "مستوى السلاح",
+            "power": "القوة",
+            "widgets": "Widgets"
+        },
+        "level": "المستوى {level}"
+    },
+    "levels": {
+        "title": "مستويات الأبطال",
+        "columns": {
+            "level": "مستوى البطل",
+            "furnace": "المتطلب",
+            "xp": "XP لبلوغه",
+            "power": "القوة"
+        },
+        "level": "المستوى {level}",
+        "furnace": "Furnace {level}"
+    },
+    "recordLine": "{rarity} {heroClass}، الجيل {generation}. للمرجع فقط، لا يُحفظ شيء هنا."
+}

@@ -1,0 +1,46 @@
+{
+    "line": "ภารกิจรายวันในเกม {missions} ภารกิจพร้อมทุกเลเวลที่ทราบ รางวัลแถบกิจกรรม และงานกิจวัตร",
+    "missionCount": "{count, plural, other {{amount} ภารกิจ}}",
+    "tabs": {
+        "label": "ภารกิจรายวัน",
+        "missions": "ภารกิจในเกม",
+        "routine": "งานกิจวัตร"
+    },
+    "totals": {
+        "title": "ยอดรวมค่าความขยัน",
+        "missions": "ภารกิจในเกม",
+        "levelOne": "เลเวล 1 ของทุกภารกิจ",
+        "allLevels": "ทุกเลเวลที่ทราบ",
+        "topReward": "เลเวลรางวัลสูงสุด",
+        "explanation": "ภารกิจเพิ่มค่าความขยันของทุกเลเวลที่ทำ จนถึงเลเวลที่ถึง เลเวล 1 ของทั้ง {missions} ภารกิจคือค่าความขยัน {levelOne} ทุกเลเวลที่ทราบของทั้ง {missions} ภารกิจคือ {allLevels}"
+    },
+    "bar": {
+        "title": "รางวัลแถบกิจกรรม",
+        "activeness": "ค่าความขยัน",
+        "rewards": "รางวัล"
+    },
+    "missions": {
+        "title": "ภารกิจในเกม",
+        "summary": "{missions} {levels}",
+        "levelCount": "{count, plural, other {{amount} เลเวลที่ทราบ}}",
+        "level": "เลเวล",
+        "task": "งาน",
+        "target": "เป้าหมาย",
+        "activeness": "ค่าความขยัน",
+        "otherRewards": "รางวัลอื่น",
+        "levelLabel": "Lv{level}",
+        "sumOne": "1 เลเวล: ค่าความขยัน {total}",
+        "sumMany": "{count} เลเวล: {parts} = ค่าความขยัน {total}",
+        "plus": "+{amount}",
+        "noOtherRewards": "ไม่มี"
+    },
+    "routine": {
+        "title": "งานกิจวัตร",
+        "count": "{count, plural, other {{amount} งาน}}"
+    },
+    "missing": {
+        "title": "ยังไม่อยู่ในข้อมูล",
+        "levels": "เลเวลอื่นของภารกิจ ทุกภารกิจมี {min} ถึง {max} เลเวลที่ทราบ เลเวลที่สูงกว่ายังไม่อยู่ในแพ็กเกจข้อมูล ยอดรวมจึงอาจเพิ่มขึ้น",
+        "reset": "เวลารีเซ็ตรายวัน แพ็กเกจข้อมูลไม่มี ตัวติดตามใช้ค่าเริ่มต้นของตัวเองคือ {time} UTC และระบุว่าเป็นค่าเริ่มต้นของแอป"
+    }
+}

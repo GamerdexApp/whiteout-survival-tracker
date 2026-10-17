@@ -1,0 +1,99 @@
+{
+    "line": "{heroes} kahraman ve {widgets} Widget seviyesi. Yalnızca başvuru, burada hiçbir şey kaydedilmez.",
+    "roster": {
+        "title": "Kadro",
+        "count": "{total} kahramanın {shown} tanesi",
+        "search": "Ara",
+        "searchPlaceholder": "{count} kahramanı ara",
+        "generation": "Nesil",
+        "rarity": "Nadirlik",
+        "class": "Sınıf",
+        "subClass": "Alt sınıf",
+        "all": "Tümü",
+        "empty": "Bu filtrelerle eşleşen kahraman yok.",
+        "columns": {
+            "hero": "Kahraman",
+            "generation": "Nes.",
+            "rarity": "Nadirlik",
+            "class": "Sınıf",
+            "subClass": "Alt sınıf",
+            "power": "Güç, 5 yıldız",
+            "weapon": "Özel silah"
+        },
+        "none": "Yok"
+    },
+    "detail": {
+        "generation": "Nesil {generation}",
+        "source": "Kaynak: {sources}",
+        "noSource": "Kaynak: Bilinmiyor",
+        "explorationAttack": "Keşif saldırısı",
+        "explorationDefense": "Keşif savunması",
+        "explorationHealth": "Keşif sağlığı",
+        "expeditionAttack": "Sefer saldırısı",
+        "expeditionDefense": "Sefer savunması",
+        "powerAtLevel80": "Seviye 80'deki güç",
+        "powerAtFiveStars": "5 yıldızdaki güç",
+        "powerAtZeroStars": "0 yıldızdaki güç",
+        "powerMissing": "Kahraman seviyeleri ve Shard için güç, Nesil 6 ve üstü için eksik. Veri elde edilene kadar Bilinmiyor görünür."
+    },
+    "skills": {
+        "title": "Beceriler",
+        "count": "{count, plural, one {{amount} beceri} other {{amount} beceri}}",
+        "branch": {
+            "exploration": "Keşif",
+            "expedition": "Sefer",
+            "talent": "Yetenek"
+        },
+        "levels": {
+            "columns": {
+                "level": "Seviye",
+                "star": "Gereken yıldız",
+                "manuals": "Kılavuz",
+                "power": "Güç kazancı",
+                "effects": "Etki"
+            },
+            "effect": {
+                "percentOfAttack": "{name}: Saldırının %{amount} kadarı",
+                "percent": "{name} %{amount}",
+                "seconds": "{name} {amount} sn",
+                "number": "{name} {amount}"
+            }
+        }
+    },
+    "shards": {
+        "title": "Yıldıza göre Shard maliyetleri",
+        "columns": {
+            "star": "Yıldız",
+            "tiers": "Kademe başına Shard",
+            "total": "Toplam",
+            "power": "Yıldızdaki güç"
+        },
+        "star": "{star} yıldız"
+    },
+    "weapon": {
+        "title": "Özel silah",
+        "power": "Silah gücü",
+        "exploration": "Keşif sld / svn / can",
+        "expedition": "Sefer öldürücülük / can",
+        "unlocksAt": "silah seviyesi {level} olunca açılır",
+        "levelsTitle": "Silah seviyeleri",
+        "columns": {
+            "level": "Silah seviyesi",
+            "power": "Güç",
+            "widgets": "Widgets"
+        },
+        "level": "Seviye {level}"
+    },
+    "levels": {
+        "title": "Kahraman seviyeleri",
+        "columns": {
+            "level": "Kahraman seviyesi",
+            "furnace": "Gereksinim",
+            "xp": "Ulaşmak için XP",
+            "power": "Güç"
+        },
+        "level": "Seviye {level}",
+        "furnace": "Furnace {level}"
+    },
+    "recordLine": "{rarity} {heroClass}, nesil {generation}. Yalnızca başvuru, burada hiçbir şey kaydedilmez."
+}

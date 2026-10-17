@@ -1,0 +1,85 @@
+{
+    "nav": {
+        "main": "الرئيسية",
+        "groups": {
+            "chief": "القائد",
+            "alliance": "التحالف",
+            "account": "الحساب",
+            "planner": "المخطِّط",
+            "wiki": "الويكي"
+        },
+        "items": {
+            "overview": "نظرة عامة",
+            "buildings": "المباني",
+            "daybreakIsland": "جزيرة الفجر",
+            "heroes": "الأبطال",
+            "chiefGear": "معدات القائد",
+            "experts": "الخبراء",
+            "pets": "الحيوانات الأليفة",
+            "troops": "القوات",
+            "research": "الأبحاث",
+            "alliance": "التحالف",
+            "facilities": "المرافق",
+            "tech": "التقنيات",
+            "resources": "الموارد",
+            "bonuses": "المزايا",
+            "vip": "VIP",
+            "skins": "المظاهر",
+            "events": "الفعاليات",
+            "tundraAlbum": "ألبوم التندرا",
+            "coreEvents": "الفعاليات الأساسية",
+            "dailies": "المهام اليومية",
+            "history": "السجل",
+            "wikiReference": "المرجع",
+            "wikiTimeline": "الجدول الزمني",
+            "settings": "الإعدادات",
+            "chiefs": "القادة"
+        },
+        "upgradesRunning": "{count, plural, zero {، {amount} ترقية قيد التنفيذ} one {، {amount} ترقية قيد التنفيذ} two {، {amount} ترقيتان قيد التنفيذ} few {، {amount} ترقيات قيد التنفيذ} many {، {amount} ترقية قيد التنفيذ} other {، {amount} ترقية قيد التنفيذ}}"
+    },
+    "appShell": {
+        "skipToContent": "التخطي إلى المحتوى",
+        "closeMenu": "إغلاق القائمة"
+    },
+    "appBar": {
+        "openMenu": "فتح القائمة"
+    },
+    "chiefGate": {
+        "emptyTitle": "لم يتم اختيار قائد",
+        "emptyDescription": "أنشئ قائدًا لبدء التتبع. كل شيء يبقى في هذا المتصفح.",
+        "newChief": "قائد جديد"
+    },
+    "chiefSwitcher": {
+        "chiefs": "القادة",
+        "active": "النشط",
+        "allChiefs": "كل القادة",
+        "newChief": "قائد جديد",
+        "loading": "جارٍ التحميل",
+        "noChiefYet": "لا يوجد قائد بعد",
+        "sectionLabel": "القائد",
+        "switchChief": "تبديل القائد"
+    },
+    "footer": {
+        "tagline": "تتبّع قادتك ومبانيك وأبطالك وأبحاثك في Whiteout Survival في مكان واحد.",
+        "product": "المتتبّع",
+        "support": "الدعم",
+        "wikiReference": "مرجع الويكي",
+        "wikiTimeline": "الجدول الزمني للويكي",
+        "backupAndData": "النسخ الاحتياطي والبيانات",
+        "aboutApp": "حول التطبيق",
+        "disclaimerTitle": "إخلاء المسؤولية",
+        "disclaimer": "هذا التطبيق غير تابع لـ Whiteout Survival أو Century Games ولا تدعمه ولا ترتبط به. جميع العلامات التجارية ومحتوى اللعبة ملك لأصحابها.",
+        "copyright": "© {year} {appName}",
+        "framework": "بُني بإطار Gamerdex، وهو أساس مشترك لمتتبعات تقدم الألعاب المجانية. بياناتك تبقى في متصفحك."
+    },
+    "notFound": {
+        "title": "هذه الصفحة غير موجودة",
+        "description": "قد يكون الرابط قديمًا أو مكتوبًا بشكل خاطئ. قادتك بأمان ولم يتغير شيء.",
+        "didYouMean": "هل تقصد <link>{name}</link>؟",
+        "goToOverview": "الانتقال إلى نظرة عامة",
+        "jumpTo": "أو انتقل إلى"
+    },
+    "pageHeader": {
+        "wiki": "الويكي"
+    }
+}

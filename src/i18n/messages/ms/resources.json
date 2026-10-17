@@ -1,0 +1,88 @@
+{
+    "title": "Sumber",
+    "all": "Semua",
+    "owned": "Dimiliki",
+    "sources": "Sumber",
+    "sourcesUnknown": "Sumber tidak diketahui",
+    "done": "Selesai",
+    "undo": "Buat asal",
+    "list": {
+        "separator": ", ",
+        "andLast": "{rest} dan {last}"
+    },
+    "countControl": {
+        "remove": "Buang {step} {name}",
+        "add": "Tambah {step} {name}",
+        "owned": "{name} dimiliki"
+    },
+    "itemRow": {
+        "owned": "dimiliki"
+    },
+    "itemSheet": {
+        "title": "Sunting bilangan dimiliki",
+        "step": "Langkah",
+        "setToZero": "Tetapkan ke 0",
+        "description": "Penerangan",
+        "unknown": "Tidak diketahui"
+    },
+    "view": {
+        "subline": "{items} item dalam {categories} kategori",
+        "sublineInCategory": "{items} item dalam {categories} kategori · {inCategory} dalam {category}",
+        "unsaved": "Belum disimpan",
+        "shortages": "Matlamat perancang kurang {names}.",
+        "shortagesLink": "Buka pelan Bangunan",
+        "show": {
+            "label": "Tunjuk",
+            "owned": "Dimiliki",
+            "unknown": "Sumber tidak diketahui"
+        },
+        "speedups": {
+            "none": "Tiada",
+            "noneOwned": "Tiada pecutan dimiliki",
+            "owned": "{minutes} min: {parts}",
+            "part": "{count} x {name}",
+            "partSeparator": " + ",
+            "types": {
+                "general": "Am",
+                "construction": "Pembinaan",
+                "troop": "Latihan tentera",
+                "research": "Penyelidikan",
+                "learning": "Pembelajaran",
+                "healing": "Rawatan"
+            }
+        },
+        "search": {
+            "label": "Cari item",
+            "placeholder": "Cari {total} item"
+        },
+        "setSeveral": "Tetapkan beberapa",
+        "showing": {
+            "several": "Menunjukkan {visible} daripada {total} item. Tetapkan beberapa dihidupkan. Perubahan menunggu sehingga anda menekan Simpan perubahan.",
+            "instant": "Menunjukkan {visible} daripada {total} item. Setiap perubahan disimpan serta-merta."
+        },
+        "empty": {
+            "title": "Tiada item sepadan",
+            "description": "Ubah carian, kategori atau penapis Tunjuk.",
+            "reset": "Tetapkan semula penapis"
+        },
+        "columns": {
+            "item": "Item"
+        },
+        "bar": {
+            "noChanges": "Tiada perubahan belum disimpan",
+            "changes": "{count, plural, other {{amount} perubahan belum disimpan}}",
+            "discard": "Buang",
+            "save": "Simpan perubahan"
+        },
+        "toast": {
+            "setToZero": "{name} ditetapkan ke 0",
+            "savedTitle": "Bilangan disimpan",
+            "savedMessage": "{count, plural, other {{amount} bilangan}} berubah."
+        }
+    },
+    "planStock": {
+        "constructionTime": "Masa pembinaan, sebagai pecutan",
+        "researchTime": "Masa penyelidikan, sebagai pecutan",
+        "minutesUnit": "min"
+    }
+}

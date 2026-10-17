@@ -148,4 +148,25 @@
   [aria-disabled="true"] {
     cursor: not-allowed;
   }
+
+  /* Adds a thin space between Chinese, Japanese or Korean text and Latin letters or digits. */
+  :lang(ja),
+  :lang(ko),
+  :lang(zh-CN),
+  :lang(zh-TW) {
+    text-autospace: normal;
+  }
+}
+
+/*
+ * Letter spacing is written for Latin capitals. It breaks the joins of Arabic letters and looks
+ * loose in Chinese, Japanese, Korean and Thai, so these languages read with none.
+ */
+:lang(ar) *,
+:lang(th) *,
+:lang(ja) *,
+:lang(ko) *,
+:lang(zh-CN) *,
+:lang(zh-TW) * {
+  letter-spacing: normal;
 }

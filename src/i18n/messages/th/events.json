@@ -1,0 +1,373 @@
+{
+    "page": {
+        "title": "กิจกรรม",
+        "subline": "{chief} · {details}"
+    },
+    "tabs": {
+        "label": "มุมมองกิจกรรม",
+        "calendar": "ปฏิทิน",
+        "mine": "กิจกรรมของฉัน",
+        "history": "ประวัติกิจกรรม"
+    },
+    "actions": {
+        "addDetails": "เพิ่มรายละเอียดกิจกรรม",
+        "addEvent": "เพิ่มกิจกรรม"
+    },
+    "categories": {
+        "alliance": "พันธมิตร",
+        "solo": "เดี่ยว",
+        "rookie": "มือใหม่",
+        "holiday": "เทศกาล"
+    },
+    "gives": {
+        "rewards": "รางวัลเท่านั้น",
+        "personal": "อันดับส่วนตัว",
+        "alliance": "อันดับพันธมิตร",
+        "both": "ทั้งสองอันดับ"
+    },
+    "weekdays": {
+        "short": {
+            "sunday": "อา.",
+            "monday": "จ.",
+            "tuesday": "อ.",
+            "wednesday": "พ.",
+            "thursday": "พฤ.",
+            "friday": "ศ.",
+            "saturday": "ส."
+        },
+        "initial": {
+            "sunday": "อา",
+            "monday": "จ",
+            "tuesday": "อ",
+            "wednesday": "พ",
+            "thursday": "พฤ",
+            "friday": "ศ",
+            "saturday": "ส"
+        }
+    },
+    "months": {
+        "january": "มกราคม",
+        "february": "กุมภาพันธ์",
+        "march": "มีนาคม",
+        "april": "เมษายน",
+        "may": "พฤษภาคม",
+        "june": "มิถุนายน",
+        "july": "กรกฎาคม",
+        "august": "สิงหาคม",
+        "september": "กันยายน",
+        "october": "ตุลาคม",
+        "november": "พฤศจิกายน",
+        "december": "ธันวาคม"
+    },
+    "monthsShort": {
+        "january": "ม.ค.",
+        "february": "ก.พ.",
+        "march": "มี.ค.",
+        "april": "เม.ย.",
+        "may": "พ.ค.",
+        "june": "มิ.ย.",
+        "july": "ก.ค.",
+        "august": "ส.ค.",
+        "september": "ก.ย.",
+        "october": "ต.ค.",
+        "november": "พ.ย.",
+        "december": "ธ.ค."
+    },
+    "format": {
+        "weekdayDay": "{weekday} {date}",
+        "utcTime": "{time} UTC",
+        "dateTime": "{date} {time}",
+        "range": "{start} ถึง {end}",
+        "length": {
+            "minutes": "{count, plural, other {{amount} นาที}}",
+            "hours": "{count, plural, other {{amount} ชั่วโมง}}",
+            "days": "{count, plural, other {{amount} วัน}}",
+            "weeks": "{count, plural, other {{amount} สัปดาห์}}",
+            "months": "{count, plural, other {{amount} เดือน}}"
+        }
+    },
+    "repeat": {
+        "none": "ไม่ทำซ้ำ",
+        "weekly": "ทุกสัปดาห์ใน{days}",
+        "weeklyAny": "ทุกสัปดาห์",
+        "every": {
+            "hours": "{count, plural, other {ทุก {amount} ชั่วโมง}}",
+            "days": "{count, plural, other {ทุก {amount} วัน}}",
+            "weeks": "{count, plural, other {ทุก {amount} สัปดาห์}}",
+            "months": "{count, plural, other {ทุก {amount} เดือน}}"
+        }
+    },
+    "empty": {
+        "title": "ยังไม่มีกิจกรรม",
+        "description": "เพิ่มกิจกรรมที่คุณเล่น ตั้งวันและเวลาเริ่มครั้งเดียว ปฏิทินและรายการที่กำลังจะมาถึงจะอัปเดตเอง",
+        "steps": {
+            "pick": {
+                "title": "เลือกกิจกรรม",
+                "text": "เลือกจากกิจกรรมในข้อมูลเกม"
+            },
+            "start": {
+                "title": "ตั้งเวลาเริ่ม",
+                "text": "ใส่วันและเวลาของรอบถัดไป บางกิจกรรมมีสองรอบหรือกินเวลาหลายวัน"
+            },
+            "roll": {
+                "title": "ปล่อยให้เดินต่อ",
+                "text": "เมื่อรอบจบ วันที่ถัดไปจะเติมให้เองตามกฎการทำซ้ำ"
+            }
+        }
+    },
+    "calendar": {
+        "previous": "เดือนก่อนหน้า",
+        "next": "เดือนถัดไป",
+        "today": "วันนี้",
+        "zoneLabel": "เขตเวลา",
+        "utc": "UTC",
+        "local": "เวลาของฉัน",
+        "monthTitle": "{month} {year}",
+        "nameWithRun": "{name} {run}",
+        "dayTail": "ว.{day}",
+        "chipText": "{name} {tail}"
+    },
+    "upcoming": {
+        "title": "กำลังจะมาถึง",
+        "empty": "ไม่มีรอบใน 30 วันข้างหน้า",
+        "now": "กำลังจัด",
+        "today": "วันนี้",
+        "tomorrow": "พรุ่งนี้",
+        "inDays": "{count, plural, other {อีก {amount} วัน}}",
+        "timeAndLength": "{time} {length}"
+    },
+    "mine": {
+        "intro": "{count, plural, other {{amount} กิจกรรม}} เมื่อรอบจบ วันที่ของรอบถัดไปจะอัปเดตเองตามกฎการทำซ้ำ ปฏิทินจึงแสดงสิ่งที่จะมาถึงเสมอ",
+        "run": "รอบ",
+        "rangeLine": "{range} {time}",
+        "shortLine": "{when} {length}",
+        "repeat": "ทำซ้ำ: {rule}",
+        "coreTag": "ผลลัพธ์อยู่ใน Core Events",
+        "coreLink": "เปิด Core Events",
+        "ended": "จบแล้ว",
+        "logged": "บันทึกแล้ว",
+        "edit": "แก้ไข",
+        "remove": "ลบ"
+    },
+    "toast": {
+        "removedTitle": "ลบ {name} แล้ว",
+        "removedMessage": "ผลลัพธ์ที่บันทึกไว้ยังอยู่ในประวัติกิจกรรม",
+        "undo": "เลิกทำ",
+        "resultSavedTitle": "บันทึกผลลัพธ์แล้ว",
+        "resultSavedMessage": "เพิ่ม {name} ลงในประวัติกิจกรรมแล้ว"
+    },
+    "add": {
+        "title": "เพิ่มกิจกรรม",
+        "description": "เลือกกิจกรรมจากข้อมูลเกม",
+        "close": "ปิด",
+        "searchLabel": "ค้นหากิจกรรม",
+        "searchPlaceholder": "ค้นหา {amount} กิจกรรม",
+        "categoryLabel": "หมวดหมู่กิจกรรม",
+        "all": "ทั้งหมด",
+        "categoryTab": "{name} {amount}",
+        "showing": "แสดง {shown} จาก {total} กิจกรรม เลือกหนึ่งกิจกรรมเพื่อตั้งวันและเวลาเริ่ม",
+        "none": "ไม่พบกิจกรรมที่ตรงกับคำค้นหา",
+        "noDuration": "ไม่มีระยะเวลาในข้อมูลเกม",
+        "added": "เพิ่มแล้ว",
+        "button": "เพิ่ม",
+        "addNamed": "เพิ่ม {name}",
+        "showMore": "แสดงเพิ่ม"
+    },
+    "schedule": {
+        "description": "ตั้งเวลาที่จัด รอบถัดไปจะอัปเดตเอง",
+        "cancel": "ยกเลิก",
+        "add": "เพิ่มกิจกรรม",
+        "save": "บันทึกตารางเวลา",
+        "howTitle": "รูปแบบการจัดกิจกรรม",
+        "shape": {
+            "one": "หนึ่งวัน",
+            "several": "หลายวัน",
+            "two": "สองรอบต่อวงจร"
+        },
+        "shapeHint": {
+            "one": "หนึ่งรอบยาวหนึ่งวัน เปลี่ยนความยาวสำหรับรอบสั้นเป็นนาทีหรือชั่วโมง",
+            "several": "หนึ่งรอบที่กินเวลาหลายวัน",
+            "two": "สองรอบในแต่ละวงจร เช่น สองซีซันหรือสองวันในสัปดาห์ แต่ละรอบมีเวลาเริ่ม ความยาว และชื่อของตัวเอง"
+        },
+        "runTitle": "รอบ {number}",
+        "runSingle": "รอบ",
+        "name": "ชื่อ",
+        "startDate": "วันที่เริ่ม",
+        "startTime": "เวลาเริ่ม (UTC)",
+        "length": "ความยาว",
+        "unit": "หน่วย",
+        "runUnits": {
+            "minutes": "นาที",
+            "hours": "ชั่วโมง",
+            "days": "วัน"
+        },
+        "repeatTitle": "ทำซ้ำ",
+        "repeatKind": {
+            "none": "ไม่ทำซ้ำ",
+            "every": "ทุก",
+            "weekly": "รายสัปดาห์ในวันที่เลือก"
+        },
+        "every": "ทุก",
+        "weekdays": "วันในสัปดาห์",
+        "repeatUnits": {
+            "hours": "ชั่วโมง",
+            "days": "วัน",
+            "weeks": "สัปดาห์",
+            "months": "เดือน"
+        },
+        "gameSays": "ข้อมูลเกมระบุ: {text}",
+        "gameSaysNoRule": "ข้อมูลเกมระบุ: {text}",
+        "useSuggestion": "ใช้ค่าที่แนะนำ",
+        "everyError": "ใส่ตัวเลขที่มากกว่า 0",
+        "givesTitle": "สิ่งที่กิจกรรมให้",
+        "givesHint": "ตั้งจากข้อมูลเกม แก้ไขได้ ค่านี้กำหนดว่าแบบฟอร์มผลลัพธ์จะถามอะไร",
+        "previewTitle": "สิ่งที่ปฏิทินจะแสดง",
+        "previewEmpty": "ใส่วันที่และความยาวที่ถูกต้องเพื่อดูรอบ",
+        "previewShort": "{range} {time}",
+        "previewNote": "เมื่อรอบจบ วันที่จะเลื่อนไปข้างหน้าตามกฎการทำซ้ำ คุณแก้ไขวันที่ใดก็ได้"
+    },
+    "result": {
+        "title": "เพิ่มรายละเอียดกิจกรรม",
+        "description": {
+            "participation": "บันทึกว่าคุณเข้าร่วมและได้อะไร",
+            "milestones": "คะแนนและเป้าหมายที่ถึง",
+            "ranking": "คะแนน อันดับ และเป้าหมายที่ถึง",
+            "tier": "ระดับลีกและตำแหน่ง",
+            "waves": "ความยาก เวฟ คะแนน และอันดับ",
+            "skipped": "บันทึกว่าคุณข้ามรอบนี้"
+        },
+        "cancel": "ยกเลิก",
+        "save": "บันทึกผลลัพธ์",
+        "noEvents": "เพิ่มกิจกรรมก่อน บันทึกได้เฉพาะกิจกรรมในกิจกรรมของฉัน ส่วน Core events บันทึกใน Core events",
+        "whichTitle": "กิจกรรมใด",
+        "event": "กิจกรรม",
+        "versionsTag": "เวอร์ชัน",
+        "run": "รอบ",
+        "otherDate": "วันอื่น",
+        "runDate": "วันที่ของรอบ",
+        "runLong": "{range} ({length})",
+        "runNamed": "{when} {name}",
+        "notLogged": "{run} ยังไม่ได้บันทึก",
+        "tookPartQuestion": "คุณเข้าร่วมหรือไม่",
+        "tookPart": "เข้าร่วม",
+        "skipped": "ข้าม",
+        "coreNote": "แสดงเฉพาะกิจกรรมที่คุณเพิ่ม Core events บันทึกใน Core events ไม่ใช่ที่นี่",
+        "versionTitle": "เวอร์ชัน",
+        "versionKnown": "เป้าหมายของเวอร์ชันนี้อยู่ในข้อมูล จึงตรวจจากคะแนนของคุณ",
+        "versionUnknown": "เวอร์ชันนี้มีเป้าหมายที่คะแนนยังไม่อยู่ในข้อมูล ตรวจเป้าหมายเหล่านั้นด้วยตัวเอง",
+        "participationTitle": "กิจกรรมนี้ไม่มีคะแนนหรืออันดับ",
+        "participationText": "ข้อมูลเกมระบุเฉพาะรางวัล จึงไม่มีอะไรให้ให้คะแนน บันทึกว่าคุณเข้าร่วม รางวัลที่ได้ และหมายเหตุ",
+        "pointsFallback": "คะแนน",
+        "pointsReached": "{unit} ที่ถึง",
+        "pointsHint": "ยอดรวมเมื่อสิ้นสุดกิจกรรม",
+        "finalScore": "คะแนนสุดท้าย ({unit})",
+        "finalScoreHint": "ยอด {unit} รวมของคุณเมื่อสิ้นสุดกิจกรรม",
+        "rankingTitle": "อันดับ",
+        "yourRank": "อันดับของคุณ",
+        "allianceRank": "อันดับพันธมิตร",
+        "rankGroup": "กลุ่มอันดับ",
+        "rankGroupsHint": "กลุ่มอันดับมาจากข้อมูลเกม: {groups} และอื่น ๆ",
+        "targetsTitle": "เป้าหมายที่ถึง จากคะแนนของคุณ",
+        "targetsCount": "ถึงแล้ว {reached} จาก {total}",
+        "targetPoints": "{points} {unit}",
+        "pointsMissing": "{unit}: คะแนนยังไม่อยู่ในข้อมูล",
+        "needsPurchase": "ต้องซื้อหนึ่งครั้งไม่ว่ามูลค่าเท่าใด",
+        "targetsHint": "ตรวจจากคะแนน เป้าหมายและรางวัลมาจากข้อมูลเกม",
+        "targetsHintUnknown": "เป้าหมายที่คะแนนยังไม่อยู่ในข้อมูลจะไม่ถูกตรวจจากคะแนน ตรวจด้วยตัวเอง",
+        "tierTitle": "ลีก",
+        "tier": "ระดับ",
+        "placement": "ตำแหน่งของคุณในกลุ่ม",
+        "starChange": "ดาวที่เปลี่ยน จากข้อมูลเกม",
+        "stars": "{count, plural, other {{amount} ดาว}}",
+        "tiersHint": "ระดับ: {tiers}",
+        "allianceTitle": "พันธมิตร",
+        "outcome": "ผลของพันธมิตรในรอบนี้",
+        "outcomeHint": "ไม่บังคับ ชนะ แพ้ หรือเสมอ",
+        "outcomes": {
+            "none": "ยังไม่ได้ตั้ง",
+            "won": "ชนะ",
+            "lost": "แพ้",
+            "drawn": "เสมอ"
+        },
+        "wavesTitle": "ความยากและเวฟ",
+        "difficulty": "ความยากที่คุณเล่น",
+        "difficultyFrom": "{name} จากคะแนนพันธมิตร {points}",
+        "wavesCleared": "เวฟที่ผ่าน 0 ถึง {count}",
+        "wavesHint": "ข้อมูลเกมระบุ {count} เวฟสำหรับ {name}",
+        "defenseTitle": "คะแนนป้องกัน",
+        "yourPoints": "คะแนนของคุณ",
+        "alliancePoints": "คะแนนพันธมิตร",
+        "rewardLevel": "ระดับรางวัลที่ถึง",
+        "rewardLevelNone": "ยังไม่มี",
+        "level": "เลเวล {level}",
+        "levelsHint": "เลเวลต้องใช้ทั้งคะแนนส่วนตัวและคะแนนพันธมิตร จากข้อมูลเกม",
+        "rankingsTitle": "อันดับ",
+        "notesTitle": "บันทึก",
+        "rewards": "รางวัลที่ได้",
+        "rewardsPlaceholder": "เช่น Hero Shards 2 ชิ้น, Gems 500",
+        "notes": "บันทึก",
+        "notesPlaceholder": "สิ่งที่อยากจำเกี่ยวกับรอบนี้"
+    },
+    "history": {
+        "emptyTitle": "ยังไม่มีผลลัพธ์ที่บันทึก",
+        "emptyText": "กดเพิ่มรายละเอียดกิจกรรมเพื่อบันทึกสิ่งที่ได้ในรอบของกิจกรรม ผลลัพธ์และแนวโน้มของคุณจะแสดงที่นี่",
+        "eventFilter": "กิจกรรม",
+        "allEvents": "ทุกกิจกรรม",
+        "period": "ช่วงเวลา",
+        "months3": "3 เดือน",
+        "months6": "6 เดือน",
+        "allTime": "ทั้งหมด",
+        "intro": "ทุกผลลัพธ์ที่คุณบันทึก ใหม่สุดก่อน Core events บันทึกใน Core events และไม่แสดงที่นี่",
+        "showing": "แสดง {shown} จาก {total} ผลลัพธ์",
+        "showingEvent": "{count, plural, other {แสดง {amount} ผลลัพธ์ของ {name}}}",
+        "noneInPeriod": "ไม่มีผลลัพธ์ในช่วงเวลานี้",
+        "showMore": "แสดงเพิ่ม",
+        "colDate": "วันที่",
+        "colEvent": "กิจกรรม",
+        "colScore": "คะแนน",
+        "colRank": "อันดับ",
+        "colAlliance": "พันธมิตร",
+        "colResult": "ผลลัพธ์",
+        "colActions": "การดำเนินการ",
+        "none": "-",
+        "edit": "แก้ไข",
+        "editNamed": "แก้ไขผลลัพธ์ของ {name}",
+        "skipped": "ข้าม",
+        "tierOnly": "{tier} {placement}",
+        "stars": "{count, plural, other {{amount} ดาว}}",
+        "waves": "{count, plural, other {{difficulty} {amount} เวฟ}}",
+        "targets": "{unit} ถึง {reached} จาก {total} เป้าหมาย",
+        "tookPart": "เข้าร่วม",
+        "tookPartRewards": "เข้าร่วม {rewards}",
+        "rankText": "อันดับ {rank}",
+        "allianceRankText": "พันธมิตร {rank}",
+        "separator": " · ",
+        "defensePoints": "คะแนนป้องกัน {score}",
+        "scoreUnit": "{score} {unit}",
+        "noScore": "ไม่มีคะแนน",
+        "trendTitle": "แนวโน้ม {name}",
+        "trendScore": "{unit} เมื่อสิ้นสุดแต่ละกิจกรรม",
+        "trendRank": "อันดับของคุณเมื่อสิ้นสุดแต่ละกิจกรรม",
+        "metricLabel": "ตัวชี้วัดแนวโน้ม",
+        "metricScore": "คะแนน",
+        "metricRank": "อันดับส่วนตัว",
+        "chartLabel": "กราฟแนวโน้มของ {name}",
+        "best": "ดีที่สุด",
+        "average": "เฉลี่ย",
+        "latest": "ล่าสุด",
+        "change": "การเปลี่ยนแปลง",
+        "events": "{count, plural, other {{amount} กิจกรรม}}",
+        "changeVs": "เทียบกับ {month}",
+        "changePercentVs": "{percent}% เทียบกับ {month}",
+        "noPrevious": "ไม่มีผลลัพธ์ก่อนหน้า",
+        "noTrend": "กิจกรรมนี้ไม่มีคะแนนหรืออันดับให้ทำกราฟ ผลลัพธ์อยู่ในรายการด้านล่าง"
+    },
+    "cycles": {
+        "title": "วงจร Core event",
+        "hint": "SvS, Alliance Showdown และ King of Icefield จัดตามวงจรคงที่ ตั้งวันเริ่มครั้งถัดไปครั้งเดียว แล้วจะทำซ้ำในปฏิทิน",
+        "next": "ครั้งถัดไป {date} ทำซ้ำ{repeat}",
+        "notSet": "ยังไม่ได้ตั้ง",
+        "set": "ตั้งวงจร",
+        "edit": "แก้ไขวงจร"
+    }
+}

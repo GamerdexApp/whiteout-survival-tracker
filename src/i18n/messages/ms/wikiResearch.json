@@ -1,0 +1,77 @@
+{
+    "line": "{nodes} nod penyelidikan dalam {tabs} tab. Rujukan sahaja, tiada apa di sini disimpan.",
+    "tabsLabel": "Kategori penyelidikan",
+    "tabs": {
+        "battle": "Battle",
+        "growth": "Growth",
+        "economy": "Economy",
+        "t11": "T11",
+        "t12": "T12"
+    },
+    "search": {
+        "label": "Cari",
+        "placeholder": "Cari {amount} nod penyelidikan"
+    },
+    "filters": {
+        "tier": "Peringkat",
+        "allTiers": "Semua",
+        "tierOption": "Peringkat {tier}",
+        "troop": "Jenis tentera",
+        "allTroops": "Semua",
+        "troops": {
+            "Infantry": "Infantry",
+            "Marksman": "Marksman",
+            "Lancer": "Lancer"
+        },
+        "data": "Data",
+        "dataOptions": {
+            "all": "Semua nod",
+            "placeholders": "Tempat letak",
+            "missingTime": "Masa tiada"
+        }
+    },
+    "list": {
+        "title": "Nod",
+        "empty": "Tiada nod penyelidikan sepadan dengan carian ini.",
+        "emptyHint": "Kosongkan carian atau penapis.",
+        "columns": {
+            "node": "Nod",
+            "tier": "Peringkat",
+            "levels": "Tahap",
+            "bonus": "Bonus pada tahap 1",
+            "time": "Masa, tahap 1",
+            "power": "Kuasa"
+        },
+        "mobileMeta": "{category}, peringkat {tier}, {levels}",
+        "count": "{count, plural, other {{amount} nod}}"
+    },
+    "levels": "{count, plural, other {{amount} tahap}}",
+    "detail": {
+        "columns": {
+            "level": "Tahap",
+            "requires": "Memerlukan",
+            "cost": "Kos",
+            "time": "Masa",
+            "bonus": "Bonus",
+            "power": "Kuasa"
+        },
+        "level": "Tahap {level}",
+        "none": "Tiada",
+        "placeholderNote": "Nod ini ialah tempat letak. Pakej tiada kos dan bonus untuknya.",
+        "requirement": {
+            "building": "{name} {level}",
+            "research": "{name} tahap {level}"
+        },
+        "levelsTitle": "Tahap"
+    },
+    "view": {
+        "label": "Paparan",
+        "list": "Senarai",
+        "tree": "Pokok"
+    },
+    "tree": {
+        "region": "Pokok penyelidikan {tab}",
+        "openNode": "{name}, {levels}",
+        "tier": "T{tier}"
+    }
+}

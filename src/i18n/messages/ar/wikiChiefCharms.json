@@ -1,0 +1,49 @@
+{
+    "line": "{rows} من صفوف التمائم، و{slots} من الخانات، و{rates} من أسعار التبادل. للمرجع فقط، لا يُحفظ شيء هنا في قائدك.",
+    "slots": {
+        "heading": "خانات التمائم",
+        "meta": "{slots} خانات، واحدة لكل نوع قوات",
+        "icons": "{count, plural, zero {{amount} أيقونة مستوى} one {{amount} أيقونة مستوى} two {{amount} أيقونتا مستوى} few {{amount} أيقونات مستوى} many {{amount} أيقونة مستوى} other {{amount} أيقونة مستوى}}",
+        "recordLine": "تعزز قوات {troopType}. أيقونة واحدة لكل مستوى."
+    },
+    "table": {
+        "heading": "جدول التمائم",
+        "meta": "{rows} صفًا، {levels} مستوى",
+        "searchLabel": "بحث",
+        "searchPlaceholder": "ابحث في {rows} صفًا من صفوف التمائم",
+        "levelLabel": "المستوى",
+        "allLevels": "كل المستويات",
+        "levelOption": "المستوى {level}",
+        "stageLabel": "المرحلة",
+        "allStages": "كل المراحل",
+        "stageOption": "المرحلة {stage}",
+        "empty": "لا يوجد صف تمائم يطابق عوامل التصفية."
+    },
+    "columns": {
+        "row": "الصف",
+        "materials": "المواد",
+        "stats": "الإحصائيات",
+        "power": "القوة",
+        "score": "النقاط"
+    },
+    "cells": {
+        "none": "لا شيء",
+        "percent": "{value}%"
+    },
+    "levels": {
+        "heading": "المستويات",
+        "level": "المستوى",
+        "levelName": "المستوى {level}",
+        "rows": "الصفوف",
+        "stats": "الإحصائيات، من الأول إلى الأخير",
+        "power": "القوة عند الصف الأخير",
+        "statsRange": "من {first}% إلى {last}%"
+    },
+    "exchange": {
+        "heading": "أسعار تبادل المواد",
+        "exchange": "التبادل",
+        "from": "من",
+        "to": "إلى",
+        "weeklyLimit": "الحد الأسبوعي"
+    }
+}

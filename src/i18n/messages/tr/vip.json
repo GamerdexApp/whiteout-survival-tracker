@@ -1,0 +1,63 @@
+{
+    "page": {
+        "title": "VIP"
+    },
+    "view": {
+        "sublineKnown": "{chief} · {details} · VIP {level}, {xp} XP",
+        "sublineUnknown": "{chief} · {details} · VIP ayarlanmadı"
+    },
+    "input": {
+        "title": "VIP'in",
+        "enterAs": "VIP giriş türü",
+        "modeXp": "Toplam XP",
+        "modeLevel": "VIP seviyesi",
+        "xpLabel": "Toplam VIP XP",
+        "xpHint": "0 ile {max} arasında tam sayı XP.",
+        "levelLabel": "VIP seviyesi",
+        "notSet": "Ayarlanmadı",
+        "levelHint": "Seviye seçince toplam XP o seviyenin en düşük toplamına ayarlanır. Tam değer için gerçek XP'ni yaz.",
+        "reached": "Ulaşılan seviye",
+        "levelName": "VIP {level}",
+        "unknown": "Bilinmiyor"
+    },
+    "progress": {
+        "label": "VIP {level} içindeki ilerleme",
+        "toNext": "VIP {level} için {xp} XP",
+        "percent": "%{percent}",
+        "range": "Bu seviye için toplam {from} ile {to} XP arası.",
+        "estimate": "Tahmin. Seviye girildiği için XP, VIP {level} seviyesinin en düşük toplamıdır. Tam değer için gerçek XP'ni yaz.",
+        "maxLevel": "Son seviye",
+        "maxHint": "Son seviye VIP {level}."
+    },
+    "perks": {
+        "title": "VIP {level} neler verir",
+        "subtitle": "Bu seviyedeki toplamlar, bir önceki seviyeden fark değil.",
+        "unknown": "Verdiklerini görmek için VIP'ini gir."
+    },
+    "next": {
+        "title": "VIP {level} ile gelenler",
+        "subtitle": "VIP {from} ile karşılaştırma.",
+        "new": "yeni",
+        "was": "eskiden {value}",
+        "maxLevel": "Son seviye. Önizlenecek başka seviye yok.",
+        "unknown": "Sonraki seviyeyi görmek için VIP'ini gir."
+    },
+    "table": {
+        "title": "Tüm {count} seviye, toplam {total} XP",
+        "level": "Seviye",
+        "xpFromLast": "Öncekinden XP",
+        "totalXp": "Toplam XP",
+        "bonuses": "Yeni veya artan bonuslar",
+        "state": "Durum",
+        "xpFromLastMobile": "Öncekinden XP: {xp}",
+        "totalMobile": "Toplam: {xp}",
+        "unknown": "Bilinmiyor",
+        "states": {
+            "reached": "Ulaşıldı",
+            "current": "Mevcut",
+            "ahead": "Önde",
+            "unknown": "Bilinmiyor"
+        },
+        "levelName": "VIP {level}"
+    }
+}

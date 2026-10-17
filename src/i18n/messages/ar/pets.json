@@ -1,0 +1,209 @@
+{
+    "page": {
+        "title": "الحيوانات الأليفة"
+    },
+    "view": {
+        "subline": "{chief} · {details} · مفتوح {unlocked} من {total} حيوانًا أليفًا"
+    },
+    "rarities": {
+        "Common": "شائع",
+        "Uncommon": "غير شائع",
+        "Rare": "نادر",
+        "Epic": "ملحمي",
+        "Legendary": "أسطوري"
+    },
+    "unlock": {
+        "afterFurnace": "اليوم {days} و Furnace {level}",
+        "afterPet": "اليوم {days} و{pet} المستوى {level}"
+    },
+    "summary": {
+        "unlocked": "المفتوحة",
+        "unlockedValue": "{count} من {total}",
+        "unlockedNote": "من تحديدك",
+        "power": "إجمالي القوة",
+        "powerNote": "قوة المستوى والارتقاء والصقل للحيوانات المفتوحة",
+        "powerUnknown": "قوة المستوى والارتقاء والصقل للحيوانات المفتوحة، {amount} غير معروفة",
+        "next": "التالي في الفتح",
+        "allUnlocked": "الكل مفتوح",
+        "allUnlockedNote": "كل الحيوانات مفتوحة",
+        "lockedNote": "{count} مقفلة حتى يوم خادم لاحق"
+    },
+    "totals": {
+        "attackDefense": "هجوم القوات ودفاعها",
+        "attack": "الهجوم",
+        "defense": "الدفاع",
+        "lethality": "الفتك",
+        "health": "الصحة",
+        "gain": "‎+{value}%",
+        "types": {
+            "infantry": "المشاة",
+            "lancer": "الفرسان",
+            "marksman": "الرماة"
+        }
+    },
+    "search": {
+        "label": "بحث في الحيوانات الأليفة",
+        "placeholder": "ابحث في {amount} حيوانًا أليفًا بالاسم"
+    },
+    "status": {
+        "showing": "عرض {shown} من {total} {count, plural, zero {حيوان أليف} one {حيوان أليف} two {حيوانين أليفين} few {حيوانات أليفة} many {حيوانًا أليفًا} other {حيوان أليف}}.",
+        "filters": " عوامل التصفية: {list}.",
+        "filterNames": {
+            "rarity": "الندرة",
+            "status": "الحالة",
+            "advanced": "الارتقاء",
+            "order": "الترتيب"
+        },
+        "readOnlyGoals": "الأهداف للقراءة فقط هنا وتُحدَّد في الخطة. الهدف المساوي للقيمة الحالية يعني عدم وجود هدف.",
+        "showMore": "عرض {count, plural, zero {{amount} حيوان أليف إضافي} one {{amount} حيوان أليف إضافي} two {{amount} حيوانين أليفين إضافيين} few {{amount} حيوانات أليفة إضافية} many {{amount} حيوانًا أليفًا إضافيًا} other {{amount} حيوان أليف إضافي}}"
+    },
+    "empty": {
+        "title": "لا توجد حيوانات أليفة مطابقة",
+        "description": "غيّر البحث أو عوامل التصفية لعرض مزيد من الحيوانات الأليفة.",
+        "reset": "إعادة ضبط عوامل التصفية"
+    },
+    "toast": {
+        "lockedTitle": "تم قفل {name}",
+        "lockedMessage": "يبقى مستواه وارتقاؤه وصقله محفوظًا.",
+        "undo": "تراجع"
+    },
+    "card": {
+        "summary": "{rarity} · أقصى مستوى {max}",
+        "unlocked": "مفتوح",
+        "unlockedLabel": "{pet} مفتوح",
+        "cooldown": "فترة التهدئة {time}",
+        "cooldownByTier": "تتغير فترة التهدئة حسب الفئة",
+        "cooldownUnknown": "فترة التهدئة غير معروفة",
+        "skillTiers": "{count, plural, zero {{amount} مستوى مهارة} one {{amount} مستوى مهارة} two {{amount} مستويا مهارة} few {{amount} مستويات مهارة} many {{amount} مستوى مهارة} other {{amount} مستوى مهارة}}",
+        "unlockRule": "قاعدة الفتح",
+        "ruleMet": "أنت تستوفي هذه القاعدة",
+        "level": "المستوى (الأقصى {max})",
+        "levelLabel": "مستوى {pet}",
+        "goal": "الهدف {level}",
+        "noGoal": "لا يوجد هدف",
+        "advanced": "مرتقٍ",
+        "advancedHint": "يمكن ضبط الارتقاء عند المستويات 10 و20 و30 وهكذا.",
+        "refinement": "الصقل",
+        "refinementMax": "الأقصى {max}% لكل واحد",
+        "refineLabel": "{stat} لدى {pet}",
+        "percentSign": "%",
+        "attack": "هجوم ‎+{value}%",
+        "defense": "دفاع ‎+{value}%",
+        "power": "القوة {value}",
+        "powerUnknown": "القوة غير معروفة",
+        "powerParts": "المستوى والارتقاء {base}، الصقل {refining}"
+    },
+    "filters": {
+        "button": "عوامل التصفية",
+        "title": "عوامل التصفية",
+        "description": "اختر ما تعرضه قائمة الحيوانات الأليفة",
+        "rarity": "الندرة",
+        "rarityAll": "الكل {amount}",
+        "rarityOption": "{rarity} {amount}",
+        "rarities": {
+            "Common": "شائع",
+            "Uncommon": "غير شائع",
+            "Rare": "نادر",
+            "Epic": "ملحمي",
+            "Legendary": "أسطوري"
+        },
+        "status": "الحالة",
+        "statusOptions": {
+            "all": "كل الحيوانات",
+            "unlocked": "مفتوح",
+            "locked": "مقفل"
+        },
+        "advanced": "الارتقاء",
+        "advancedOptions": {
+            "any": "أي",
+            "advanced": "مرتقٍ",
+            "notAdvanced": "غير مرتقٍ"
+        },
+        "order": "الترتيب",
+        "orderOptions": {
+            "game": "ترتيب اللعبة",
+            "name": "الاسم، من A إلى Z",
+            "level": "المستوى، الأعلى أولًا"
+        },
+        "notSaved": "عوامل التصفية لا تُحفظ.",
+        "reset": "إعادة ضبط",
+        "show": "عرض {count, plural, zero {{amount} حيوان أليف} one {{amount} حيوان أليف} two {{amount} حيوانين أليفين} few {{amount} حيوانات أليفة} many {{amount} حيوانًا أليفًا} other {{amount} حيوان أليف}}"
+    },
+    "plan": {
+        "button": "الخطة",
+        "title": "خطة الحيوانات الأليفة",
+        "description": "الطعام والعناصر والإحصائيات ونقاط الفعاليات لبلوغ أهدافك",
+        "saved": "تم حفظ الخطة {date}",
+        "notSavedYet": "لم تُحفظ الخطة بعد",
+        "close": "إغلاق",
+        "save": "حفظ الخطة",
+        "exportButton": "تصدير إلى الفعاليات الأساسية",
+        "exportNothing": "ليس في الخطة نتيجة ارتقاء لتصديرها.",
+        "export": {
+            "advancement": "نتيجة ارتقاء الحيوانات الأليفة",
+            "commonMark": "Common Wild Marks",
+            "advancedMark": "Advanced Wild Marks",
+            "marksDetail": "محسوبة من الموارد."
+        },
+        "noPets": "أضف حيوانًا أليفًا مفتوحًا لتخطط لمستوياته.",
+        "add": {
+            "title": "إضافة حيوان أليف",
+            "selectLabel": "الحيوان المراد إضافته",
+            "button": "إضافة الحيوان",
+            "allIn": "كل الحيوانات الأليفة المفتوحة موجودة في الخطة.",
+            "noneUnlocked": "افتح حيوانًا أليفًا من صفحة الحيوانات الأليفة لتخطط له."
+        },
+        "block": {
+            "rarities": {
+                "Common": "شائع",
+                "Uncommon": "غير شائع",
+                "Rare": "نادر",
+                "Epic": "ملحمي",
+                "Legendary": "أسطوري"
+            },
+            "maxLevel": "أقصى مستوى {max}",
+            "remove": "إزالة",
+            "removeLabel": "إزالة {pet} من الخطة",
+            "current": "المستوى الحالي",
+            "to": "إلى",
+            "goal": "مستوى الهدف (الأقصى {max})",
+            "goalLabel": "مستوى هدف {pet}",
+            "payAdvancement": "دفع تكلفة الارتقاء عند الهدف",
+            "paysCurrent": "غير مرتقٍ عند المستوى {level}، لذا تُدفع تكلفة ذلك الارتقاء."
+        },
+        "result": {
+            "title": "نتيجة {count, plural, zero {{amount} حيوان أليف} one {{amount} حيوان أليف} two {{amount} حيوانين أليفين} few {{amount} حيوانات أليفة} many {{amount} حيوانًا أليفًا} other {{amount} حيوان أليف}}",
+            "resources": "الموارد، كل الحيوانات",
+            "byPet": "حسب الحيوان",
+            "heads": {
+                "pet": "الحيوان",
+                "levels": "المستويات",
+                "food": "الطعام",
+                "power": "القوة"
+            },
+            "powerGain": "‎+{value}",
+            "percentGain": "‎+{value}%",
+            "unknown": "غير معروف",
+            "gains": "المكاسب",
+            "gainNames": {
+                "levels": "المستويات المكتسبة",
+                "advancements": "مرات الارتقاء",
+                "attack": "هجوم القوات",
+                "defense": "دفاع القوات",
+                "power": "القوة",
+                "score": "نتيجة الارتقاء"
+            },
+            "unknownPowerNote": "لا تحتوي الحزمة على قوة مرتقية لمستوى في هذه الخطة، لذا مكسب القوة غير معروف.",
+            "eventPoints": "نقاط الفعاليات",
+            "events": {
+                "svs": "SvS",
+                "allianceShowdown": "Alliance Showdown",
+                "kingOfIcefield": "King of Icefield",
+                "hallOfChief": "Hall of Chief"
+            },
+            "notScored": "لا تُحتسب نقاطًا",
+            "eventNote": "نقاط الفعالية هي نتيجة الارتقاء مضروبة في نقاط صف الاحتساب لكل فعالية.",
+            "scoreSourceNote": "نتائج الارتقاء للمستويات من 40 إلى 100 تطابق ملاحظات الفعاليات. المستويات من 10 إلى 30 من مصدر واحد (WoS Tools)."
+        }
+    }
+}

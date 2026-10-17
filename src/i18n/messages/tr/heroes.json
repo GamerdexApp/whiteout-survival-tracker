@@ -1,0 +1,262 @@
+{
+    "page": {
+        "title": "Kahramanlar"
+    },
+    "view": {
+        "tabsLabel": "Kahramanlar",
+        "heroesTab": "Kahramanlar",
+        "gearTab": "Kahraman Ekipmanı",
+        "heroesSubline": "{chief} · {total} kahramanın {owned} tanesine sahip",
+        "gearSubline": "{chief} · {count, plural, one {{amount} ekipman seti} other {{amount} ekipman seti}}"
+    },
+    "common": {
+        "owned": "Sahip",
+        "ownedLabel": "Sahip: {hero}",
+        "starLabel": "Yıldız: {hero}",
+        "levelLabel": "Seviye: {hero}",
+        "talentLabel": "Yetenek: {hero}",
+        "skillLabel": "{hero} {skill}",
+        "weaponLevelLabel": "{hero} {weapon} seviyesi",
+        "shardsOwnedLabel": "Sahip olunan Shard: {hero}",
+        "starAndTier": "Yıldız ve kademe",
+        "level": "Seviye",
+        "noGoal": "Hedef yok",
+        "shards": "Shard",
+        "totalPower": "Toplam güç",
+        "unknown": "Bilinmiyor",
+        "plan": "Plan",
+        "generation": "Nesil {generation}",
+        "exploration": "Keşif",
+        "expedition": "Sefer",
+        "talent": "Yetenek",
+        "maxLevelSuffix": "/ {max}",
+        "heroCount": "{count, plural, one {{amount} kahraman} other {{amount} kahraman}}"
+    },
+    "goalText": {
+        "to": "hedef {goal}"
+    },
+    "card": {
+        "summary": "{rarity} · {heroClass} · {generation}",
+        "talentRow": "Yetenek {name}",
+        "shardsOf": "/ {needed}",
+        "enoughShards": " Yeterli Shard",
+        "shortBy": " Eksik: {amount}",
+        "gearSet": "Ekipman seti",
+        "notOwnedHint": "Yıldızı, seviyeyi ve becerileri takip etmek için Sahip'i aç.",
+        "details": "Ayrıntılar"
+    },
+    "tab": {
+        "stats": {
+            "generations": "Açılan nesiller",
+            "generationsValue": "0 - {max}",
+            "heroesOwned": "Açılanlar arasında sahip olunan kahramanlar",
+            "legendaryOwned": "Açılanlar arasında sahip olunan Efsanevi kahramanlar",
+            "atMaxLevel": "Seviye 80'de",
+            "heroPower": "Kahraman gücü",
+            "heroPowerUnknown": "Kahraman gücü, {amount} Bilinmiyor hariç",
+            "withGoal": "Hedefi olan"
+        },
+        "search": {
+            "label": "Kahraman ara",
+            "placeholder": "{amount} kahramanı ada göre ara"
+        },
+        "filters": "Filtreler",
+        "maxOut": "Maksimumla",
+        "status": "{total} kahramanın {shown} tanesi gösteriliyor. Bu şefte 0 - {max} nesilleri açık. Hedefler burada salt okunurdur ve Plan'da ayarlanır.",
+        "empty": {
+            "title": "Eşleşen kahraman yok",
+            "description": "Her kahramanı görmek için aramayı değiştir ya da filtreleri sıfırla.",
+            "reset": "Sıfırla"
+        },
+        "showMore": "Daha fazla göster, {amount} {count, plural, one {kahraman} other {kahraman}} daha",
+        "toast": {
+            "notOwnedTitle": "Sahip değilsin: {name}",
+            "notOwnedMessage": "Yıldızı, seviyesi ve becerileri, Sahip'i tekrar açtığında kullanılmak üzere saklanır.",
+            "undo": "Geri al",
+            "maxedTitle": "Kahramanlar maksimuma çıkarıldı",
+            "maxedMessage": "Güncellendi: {heroes}."
+        }
+    },
+    "filtersFlyout": {
+        "title": "Filtreler",
+        "description": "Sayfanın hangi kahramanları göstereceğini seç",
+        "reset": "Sıfırla",
+        "show": "Göster: {heroes}",
+        "all": "Tümü",
+        "generation": "Nesil",
+        "rarity": "Nadirlik",
+        "heroClass": "Sınıf",
+        "ownership": "Sahiplik",
+        "order": "Sıralama",
+        "notSaved": "Filtreler kaydedilmez.",
+        "rarities": {
+            "Legendary": "Efsanevi",
+            "Epic": "Epik",
+            "Rare": "Nadir"
+        },
+        "classes": {
+            "Infantry": "Piyade",
+            "Lancer": "Mızrakçı",
+            "Marksman": "Nişancı"
+        },
+        "ownershipOptions": {
+            "all": "Tümü",
+            "owned": "Sahip",
+            "notOwned": "Sahip değil"
+        },
+        "orderOptions": {
+            "owned": "Önce sahip olunanlar, sonra en yeni nesil",
+            "generation": "Nesil, en yeni önce",
+            "name": "Ad, A'dan Z'ye",
+            "power": "Toplam güç, en yüksek önce"
+        }
+    },
+    "maxOut": {
+        "title": "Kahramanları maksimuma çıkar",
+        "scopeLabel": "Maksimuma çıkarılacak kahramanlar",
+        "scope": {
+            "owned": "Sahip olunan kahramanlar",
+            "unlocked": "Açılan tüm kahramanlar, sahip olunan olarak işaretlenir",
+            "selected": "Kahramanları seç, sahip olunan olarak işaretlenir"
+        },
+        "searchLabel": "Seçilecek kahramanları ara",
+        "searchPlaceholder": "Kahramanları ada göre ara",
+        "selectShown": "Gösterilenleri seç",
+        "clear": "Temizle",
+        "ownedTag": "sahip",
+        "starAndTier": "Yıldız ve kademe 5.0'a",
+        "level": "Seviye 80'e",
+        "levelHint": "Beceriler maksimumdaysa ve eski kahramanların seviyesi 1'de kalacaksa kapat.",
+        "skills": "Beceriler 5'e",
+        "skillsHint": "Keşif, Sefer ve Yetenek.",
+        "weapon": "Özel silah 10'a",
+        "note": "Kapalı bıraktığın her şey olduğu gibi kalır. Shard sayıları ve hedefler değişmez. Uyguladıktan sonra geri alabilirsin.",
+        "cancel": "İptal",
+        "apply": "Maksimuma çıkar: {heroes}"
+    },
+    "flyout": {
+        "fallbackTitle": "Kahraman",
+        "description": "{rarity} {heroClass}, nesil {generation}",
+        "done": "Tamam",
+        "status": {
+            "title": "Durum",
+            "furnaceNeeded": "Seviye {level} için gereken Furnace",
+            "met": "Karşılandı",
+            "needsFurnace": "Furnace {required} gerekir",
+            "levelPower": "Seviye gücü",
+            "skillPower": "Beceri gücü",
+            "starPower": "Yıldız gücü",
+            "weaponPower": "Silah gücü",
+            "totalPower": "Toplam güç",
+            "note": "Güç; seviyeyi, becerileri, yıldız etiketini ve silah seviyesini sayar."
+        },
+        "skills": {
+            "title": "Beceriler",
+            "aside": "Beceri başına beş seviye",
+            "toLevel": "Seviye {level} için: {manuals} kılavuz",
+            "needsStar": "Yıldız {star} gerekir",
+            "starMet": "Yıldız {star} karşılandı",
+            "talentTop": "Yetenek en üst seviyede.",
+            "talentNeedsStar": "Seviye {level} için yıldız {star} gerekir",
+            "talentStarMet": "Seviye {level}: yıldız {star} karşılandı"
+        },
+        "weapon": {
+            "title": "Özel silah: {name}",
+            "level": "Silah seviyesi",
+            "widgetsForLevel": "Seviye {level} için Widgets",
+            "widgetsForLevels": "Seviye {from} - {to} için Widgets",
+            "expeditionBonus": "Sefer bonusu",
+            "bonus": "Öldürücülük %{lethality} · Sağlık %{health}",
+            "power": "Silah gücü",
+            "unlocksAt": "Silah seviyesi {level} olunca açılır"
+        },
+        "shards": {
+            "title": "Shard",
+            "owned": "Sahip olunan Shard",
+            "goal": "Hedef",
+            "neededForGoal": "Hedef {goal} için gereken",
+            "enough": "Yeterli Shard",
+            "shortBy": "Eksik",
+            "yes": "Evet",
+            "sources": "Shard kaynakları"
+        },
+        "stats": {
+            "title": "Seviye 80'deki istatistikler",
+            "explorationAt": "Keşif, {stars}",
+            "expeditionAt": "Sefer, {stars}",
+            "explorationFull": "Keşif, 5.0",
+            "expeditionFull": "Sefer, 5.0",
+            "exploration": "Sld {attack} · Svn {defense} · Can {health}",
+            "expedition": "Sld %{attack} · Svn %{defense}",
+            "estimate": "Tahmin"
+        }
+    },
+    "plan": {
+        "title": "Kahraman Planı",
+        "description": "Mevcuttan hedefe Shard, beceri kılavuzları ve Widgets",
+        "saved": "Plan kaydedildi: {date}",
+        "close": "Kapat",
+        "save": "Planı kaydet",
+        "noHeroes": "Planda henüz kahraman yok. Yukarıdan sahip olduğun bir kahraman ekle, sonra hedeflerini yükselt.",
+        "add": {
+            "title": "Kahraman ekle",
+            "allIn": "Sahip olduğun her kahraman planda. Bir kahramanı planlamak için onun Sahip ayarını aç.",
+            "selectLabel": "Eklenecek kahraman",
+            "button": "Kahraman ekle"
+        },
+        "block": {
+            "remove": "Plandan kaldır: {hero}",
+            "starTo": "{stars}, hedef",
+            "starGoal": "Yıldız hedefi: {hero}",
+            "levelTo": "{current}, hedef",
+            "goalLabel": "Hedef: {hero} {name}",
+            "note": "Mevcut değerler sayfadaki kahramandan gelir. Onları orada değiştir."
+        },
+        "unmet": {
+            "title": "Beceri seviyeleri için daha yüksek bir yıldız gerekir.",
+            "item": "{hero}: {skill} seviye {level} için yıldız {star} gerekir",
+            "message": "{items}. Yıldız hedefini yükselt ya da beceri hedefini düşür."
+        },
+        "shardsUsed": "Kullanılan Shard: kahramandan {own}, genel {general}, toplam {total}. Kahraman önce kendi Shard'larını kullanır.",
+        "result": {
+            "title": "Sonuç, {steps} adım",
+            "widgets": "Widgets",
+            "weaponSkills": "{count, plural, one {{amount} silah becerisi açıldı} other {{amount} silah becerisi açıldı}}",
+            "note": "Güç, Kahraman Planı'nın bir parçası değildir. Hesaplayıcı süre döndürmez ve hız girdisi almaz.",
+            "heads": {
+                "hero": "Kahraman",
+                "starSteps": "Yıldız adımları",
+                "skillLevels": "Beceri seviyeleri",
+                "shards": "Shard",
+                "widgets": "Widgets"
+            },
+            "tableLabel": "Plan sonuç tablosu"
+        },
+        "events": {
+            "svs": "SvS State of Power",
+            "allianceShowdown": "Alliance Showdown",
+            "kingOfIcefield": "King of Icefield",
+            "hallOfChief": "Hall of Chief"
+        }
+    },
+    "export": {
+        "button": "Ana Etkinlikler'e aktar",
+        "nothing": "Plan, aktarılacak Shard ya da Widgets gerektirmiyor.",
+        "shardsGroup": "Shard için",
+        "widgetsGroup": "Widgets için",
+        "widgets": "Widgets",
+        "manualsReason": "Hiçbir etkinlik beceri kılavuzlarına puan vermez",
+        "shards": {
+            "Legendary": "Mythic Hero Shards",
+            "Epic": "Epic Hero Shards",
+            "Rare": "Rare Hero Shards"
+        }
+    },
+    "service": {
+        "generalShard": {
+            "Legendary": "Mythic General Hero Shard",
+            "Epic": "Epic General Hero Shard",
+            "Rare": "Rare General Hero Shard"
+        }
+    }
+}

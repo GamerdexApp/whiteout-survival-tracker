@@ -1,0 +1,145 @@
+{
+    "line": "{events} etkinlik: {alliance} ittifak, {solo} bireysel, {rookie} acemi ve {holiday} tatil. Pakette varsa aşamalar, puanlama, ödüller, ipuçları, mağazalar ve sıralamalar.",
+    "list": {
+        "title": "Etkinlikler",
+        "showing": "{total} içinden {shown} gösteriliyor",
+        "search": "Ara",
+        "searchPlaceholder": "Etkinlikleri ada göre ara",
+        "scoringFilter": "Puanlama",
+        "categoryLabel": "Kategori",
+        "all": "Tümü",
+        "table": "Etkinlikler",
+        "event": "Etkinlik",
+        "category": "Kategori",
+        "frequency": "Sıklık (serbest metin)",
+        "duration": "Süre (serbest metin)",
+        "scoringRows": "Puanlama satırları",
+        "noScoringRows": "Puanlama satırı yok",
+        "emptyTitle": "Eşleşen etkinlik yok",
+        "emptyDescription": "Aramayı, kategoriyi ya da puanlamayı değiştir."
+    },
+    "category": {
+        "alliance": "İttifak",
+        "solo": "Bireysel",
+        "rookie": "Acemi",
+        "holiday": "Tatil"
+    },
+    "scoring": {
+        "any": "Her puanlama",
+        "ranking": "Sıralama",
+        "tier": "Kademeler",
+        "milestones": "Kilometre taşları",
+        "waves": "Dalgalar",
+        "participation": "Katılım"
+    },
+    "parts": {
+        "days": "{count, plural, one {{amount} gün} other {{amount} gün}}",
+        "tiers": "{count, plural, one {{amount} kademe} other {{amount} kademe}}",
+        "missions": "{count, plural, one {{amount} görev} other {{amount} görev}}",
+        "waves": "{count, plural, one {{amount} dalga} other {{amount} dalga}}",
+        "versions": "{count, plural, one {{amount} sürüm} other {{amount} sürüm}}",
+        "levels": "{count, plural, one {{amount} seviye} other {{amount} seviye}}"
+    },
+    "detail": {
+        "title": "Ayrıntılar",
+        "category": "Kategori",
+        "frequency": "Sıklık",
+        "duration": "Süre",
+        "summary": "Özet",
+        "requirements": "Gereksinimler",
+        "scoring": "Puanlama",
+        "noRequirements": "Yok"
+    },
+    "phases": {
+        "title": "Aşamalar",
+        "table": "Etkinlik aşamaları",
+        "phase": "Aşama",
+        "description": "Açıklama"
+    },
+    "scoringRows": {
+        "title": "Puanlama satırları: {name}",
+        "table": "Puanlama eylemleri",
+        "action": "Eylem",
+        "points": "Puan",
+        "victoryPoints": "{amount} zafer puanı",
+        "milestones": "Kilometre taşları: {name}",
+        "allianceMilestones": "İttifak kilometre taşları: {name}"
+    },
+    "missions": {
+        "title": "Görevler",
+        "table": "Etkinlik görevleri",
+        "mission": "Görev",
+        "group": "Grup",
+        "points": "Puan",
+        "rewards": "Ödüller"
+    },
+    "tiers": {
+        "title": "Kademeler",
+        "table": "Etkinlik kademeleri",
+        "tier": "Kademe",
+        "score": "Hedef",
+        "scoreValue": "{amount} {unit}",
+        "scoreValuePoints": "{amount} puan",
+        "rewards": "Ödüller",
+        "note": "Not"
+    },
+    "rankings": {
+        "title": "Sıralama ödülleri",
+        "personal": "Kişisel sıralama ödülleri",
+        "alliance": "İttifak sıralama ödülleri",
+        "basedOn": "Sıralama ödülleri, ölçüt: {basis}",
+        "table": "Sıralama ödülleri",
+        "rank": "Sıra",
+        "starChange": "Yıldız değişimi",
+        "rewards": "Ödüller"
+    },
+    "rewards": {
+        "title": "Ödüller",
+        "partial": "Bu ödül listesi eksik.",
+        "amountName": "{amount} {name}"
+    },
+    "pointLevels": {
+        "title": "Puan seviyeleri",
+        "table": "Puan seviyeleri",
+        "level": "Seviye",
+        "personal": "Kişisel puanlar",
+        "alliance": "İttifak puanları",
+        "rewards": "Ödüller"
+    },
+    "waves": {
+        "title": "Dalgalar",
+        "table": "Saldırı dalgaları",
+        "wave": "Dalga",
+        "target": "Hedef",
+        "rule": "Kural",
+        "city": "Şehir",
+        "headquarters": "Karargah"
+    },
+    "zones": {
+        "title": "Bölgeler",
+        "table": "Etkinlik bölgeleri",
+        "zone": "Bölge",
+        "days": "Günler",
+        "statSources": "İstatistik kaynakları",
+        "unlock": "Açılma"
+    },
+    "shop": {
+        "title": "Mağaza",
+        "titleNamed": "Mağaza: {name}",
+        "table": "Mağaza teklifleri",
+        "offer": "Teklif",
+        "cost": "Maliyet",
+        "costValue": "{amount} {currency}",
+        "limit": "Sınır",
+        "contents": "İçerik"
+    },
+    "versions": {
+        "title": "{name}",
+        "missions": "Görevler",
+        "chests": "Sandıklar"
+    },
+    "tips": {
+        "title": "İpuçları"
+    },
+    "recordLine": "{category} etkinliği; aşamaları, puanlaması, ödülleri ve sıralamalarıyla."
+}

@@ -1,0 +1,88 @@
+{
+    "title": "ทรัพยากร",
+    "all": "ทั้งหมด",
+    "owned": "ที่มี",
+    "sources": "แหล่งที่มา",
+    "sourcesUnknown": "ไม่ทราบแหล่งที่มา",
+    "done": "เสร็จสิ้น",
+    "undo": "เลิกทำ",
+    "list": {
+        "separator": ", ",
+        "andLast": "{rest} และ {last}"
+    },
+    "countControl": {
+        "remove": "ลด {name} {step}",
+        "add": "เพิ่ม {name} {step}",
+        "owned": "{name} ที่มี"
+    },
+    "itemRow": {
+        "owned": "ที่มี"
+    },
+    "itemSheet": {
+        "title": "แก้ไขจำนวนที่มี",
+        "step": "ขั้น",
+        "setToZero": "ตั้งเป็น 0",
+        "description": "คำอธิบาย",
+        "unknown": "ไม่ทราบ"
+    },
+    "view": {
+        "subline": "{items} ไอเทมใน {categories} หมวดหมู่",
+        "sublineInCategory": "{items} ไอเทมใน {categories} หมวดหมู่ · {inCategory} ใน {category}",
+        "unsaved": "ยังไม่บันทึก",
+        "shortages": "เป้าหมายในแผนขาด {names}",
+        "shortagesLink": "เปิดแผนอาคาร",
+        "show": {
+            "label": "แสดง",
+            "owned": "ที่มี",
+            "unknown": "ไม่ทราบแหล่งที่มา"
+        },
+        "speedups": {
+            "none": "ไม่มี",
+            "noneOwned": "ไม่มีตัวเร่งเวลา",
+            "owned": "{minutes} นาที: {parts}",
+            "part": "{count} x {name}",
+            "partSeparator": " + ",
+            "types": {
+                "general": "ทั่วไป",
+                "construction": "ก่อสร้าง",
+                "troop": "ฝึกทหาร",
+                "research": "วิจัย",
+                "learning": "การเรียนรู้",
+                "healing": "รักษา"
+            }
+        },
+        "search": {
+            "label": "ค้นหาไอเทม",
+            "placeholder": "ค้นหา {total} ไอเทม"
+        },
+        "setSeveral": "ตั้งหลายรายการ",
+        "showing": {
+            "several": "แสดง {visible} จาก {total} ไอเทม ตั้งหลายรายการเปิดอยู่ การเปลี่ยนแปลงรอจนกว่าจะกดบันทึกการเปลี่ยนแปลง",
+            "instant": "แสดง {visible} จาก {total} ไอเทม ทุกการเปลี่ยนแปลงบันทึกทันที"
+        },
+        "empty": {
+            "title": "ไม่พบไอเทมที่ตรงกัน",
+            "description": "เปลี่ยนคำค้นหา หมวดหมู่ หรือตัวกรองแสดง",
+            "reset": "รีเซ็ตตัวกรอง"
+        },
+        "columns": {
+            "item": "ไอเทม"
+        },
+        "bar": {
+            "noChanges": "ไม่มีการเปลี่ยนแปลงที่ยังไม่บันทึก",
+            "changes": "{count, plural, other {มี {amount} การเปลี่ยนแปลงที่ยังไม่บันทึก}}",
+            "discard": "ทิ้ง",
+            "save": "บันทึกการเปลี่ยนแปลง"
+        },
+        "toast": {
+            "setToZero": "ตั้ง {name} เป็น 0 แล้ว",
+            "savedTitle": "บันทึกจำนวนแล้ว",
+            "savedMessage": "{count, plural, other {เปลี่ยน {amount} จำนวน}}"
+        }
+    },
+    "planStock": {
+        "constructionTime": "เวลาก่อสร้าง ในรูปตัวเร่งเวลา",
+        "researchTime": "เวลาวิจัย ในรูปตัวเร่งเวลา",
+        "minutesUnit": "นาที"
+    }
+}

@@ -13,8 +13,8 @@ import eventLog from "./zh-TW/eventLog.json";
 import events from "./zh-TW/events.json";
 import experts from "./zh-TW/experts.json";
 import facilities from "./zh-TW/facilities.json";
-import heroGear from "./zh-TW/heroGear.json";
 import heroes from "./zh-TW/heroes.json";
+import heroGear from "./zh-TW/heroGear.json";
 import history from "./zh-TW/history.json";
 import landing from "./zh-TW/landing.json";
 import overview from "./zh-TW/overview.json";
@@ -42,8 +42,8 @@ import wikiDaybreak from "./zh-TW/wikiDaybreak.json";
 import wikiEventBuffs from "./zh-TW/wikiEventBuffs.json";
 import wikiEvents from "./zh-TW/wikiEvents.json";
 import wikiExperts from "./zh-TW/wikiExperts.json";
-import wikiHeroGear from "./zh-TW/wikiHeroGear.json";
 import wikiHeroes from "./zh-TW/wikiHeroes.json";
+import wikiHeroGear from "./zh-TW/wikiHeroGear.json";
 import wikiItems from "./zh-TW/wikiItems.json";
 import wikiPets from "./zh-TW/wikiPets.json";
 import wikiResearch from "./zh-TW/wikiResearch.json";
@@ -53,6 +53,60 @@ import wikiTroops from "./zh-TW/wikiTroops.json";
 import wikiTundraAlbum from "./zh-TW/wikiTundraAlbum.json";
 import wikiVip from "./zh-TW/wikiVip.json";
 
-const zhTW: PartialMessages = { alliance, bonuses, buildings, chiefGear, chiefs, common, coreEvents, dailies, daybreak, eventExport, eventLog, events, experts, facilities, heroGear, heroes, history, landing, overview, pets, queues, research, resources, settings, shell, skins, tech, troops, tundraAlbum, ui, unlocks, vip, wiki, wikiAllianceStructures, wikiAllianceTech, wikiBuildings, wikiChiefCharms, wikiChiefGear, wikiDailies, wikiDaybreak, wikiEventBuffs, wikiEvents, wikiExperts, wikiHeroGear, wikiHeroes, wikiItems, wikiPets, wikiResearch, wikiSkins, wikiTimeline, wikiTroops, wikiTundraAlbum, wikiVip };
+const zhTW: PartialMessages = {
+  alliance,
+  bonuses,
+  buildings,
+  chiefGear,
+  chiefs,
+  common,
+  coreEvents,
+  dailies,
+  daybreak,
+  eventExport,
+  eventLog,
+  events,
+  experts,
+  facilities,
+  heroGear,
+  heroes,
+  history,
+  landing,
+  overview,
+  pets,
+  queues,
+  research,
+  resources,
+  settings,
+  shell,
+  skins,
+  tech,
+  troops,
+  tundraAlbum,
+  ui,
+  unlocks,
+  vip,
+  wiki,
+  wikiAllianceStructures,
+  wikiAllianceTech,
+  wikiBuildings,
+  wikiChiefCharms,
+  wikiChiefGear,
+  wikiDailies,
+  wikiDaybreak,
+  wikiEventBuffs,
+  wikiEvents,
+  wikiExperts,
+  wikiHeroGear,
+  wikiHeroes,
+  wikiItems,
+  wikiPets,
+  wikiResearch,
+  wikiSkins,
+  wikiTimeline,
+  wikiTroops,
+  wikiTundraAlbum,
+  wikiVip,
+};
 
 export default zhTW;

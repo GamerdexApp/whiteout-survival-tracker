@@ -1,0 +1,46 @@
+{
+    "line": "Bilinen her seviyesiyle {missions} oyun içi günlük görev, aktiflik çubuğu ödülleri ve rutin görevler.",
+    "missionCount": "{count, plural, one {{amount} görev} other {{amount} görev}}",
+    "tabs": {
+        "label": "Günlük Görevler",
+        "missions": "Oyun içi görevler",
+        "routine": "Rutin görevler"
+    },
+    "totals": {
+        "title": "Aktiflik toplamları",
+        "missions": "Oyun içi görevler",
+        "levelOne": "Her görevin seviye 1'i",
+        "allLevels": "Bilinen her seviye",
+        "topReward": "En yüksek ödül seviyesi",
+        "explanation": "Bir görev, ulaşılan seviyeye kadar biten her seviyenin Aktifliğini ekler. {missions} görevin hepsinin seviye 1'i {levelOne} Aktiflik eder. {missions} görevin bilinen tüm seviyeleri {allLevels} eder."
+    },
+    "bar": {
+        "title": "Aktiflik çubuğu ödülleri",
+        "activeness": "Aktiflik",
+        "rewards": "Ödüller"
+    },
+    "missions": {
+        "title": "Oyun içi görevler",
+        "summary": "{missions}, {levels}",
+        "levelCount": "{count, plural, one {{amount} bilinen seviye} other {{amount} bilinen seviye}}",
+        "level": "Seviye",
+        "task": "Görev",
+        "target": "Hedef",
+        "activeness": "Aktiflik",
+        "otherRewards": "Diğer ödüller",
+        "levelLabel": "Sv {level}",
+        "sumOne": "1 seviye: {total} Aktiflik",
+        "sumMany": "{count} seviye: {parts} = {total} Aktiflik",
+        "plus": "+{amount}",
+        "noOtherRewards": "Yok"
+    },
+    "routine": {
+        "title": "Rutin görevler",
+        "count": "{count, plural, one {{amount} görev} other {{amount} görev}}"
+    },
+    "missing": {
+        "title": "Henüz veride yok",
+        "levels": "Diğer görev seviyeleri. Her görevin {min} ile {max} arasında bilinen seviyesi var. Daha yüksek seviyeler henüz pakette yok, bu yüzden toplamlar artabilir.",
+        "reset": "Günlük sıfırlanma saati. Pakette yok. Takipçi kendi varsayılanı olan {time} UTC'yi kullanır ve bunu uygulama varsayılanı olarak etiketler."
+    }
+}

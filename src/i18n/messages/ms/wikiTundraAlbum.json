@@ -1,0 +1,32 @@
+{
+    "line": "Pakej mempunyai {have} daripada {total} album. Setiap satu mempunyai buff, ganjaran kelengkapan dan {puzzles} teka-teki.",
+    "note": "{missing} album lain ditambah apabila pakej memilikinya.",
+    "albums": "Album",
+    "puzzleCount": "{count, plural, other {{amount} teka-teki}}",
+    "pieceCount": "{count, plural, other {{amount} kepingan}}",
+    "view": {
+        "label": "Paparan",
+        "puzzles": "Teka-teki",
+        "pieces": "Semua kepingan"
+    },
+    "album": {
+        "counts": "{puzzles}, {pieces}",
+        "buff": "Buff apabila lengkap",
+        "buffValue": "{stat} {value}",
+        "rewards": "Ganjaran kelengkapan",
+        "buffNote": "Buff dikira hanya apabila semua {puzzles} teka-teki selesai."
+    },
+    "puzzles": {
+        "title": "Teka-teki",
+        "puzzle": "Teka-teki",
+        "pieces": "Kepingan",
+        "star": "Bintang {stars}",
+        "reward": "Ganjaran"
+    },
+    "allPieces": {
+        "title": "Semua kepingan",
+        "summary": "{pieces} dalam {puzzles}",
+        "imageNote": "Imej kepingan datang daripada pakej. Kepingan tanpa imej menunjukkan petak kosong.",
+        "stars": "{count, plural, other {{amount} bintang}}"
+    }
+}

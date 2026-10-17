@@ -1,0 +1,54 @@
+{
+    "line": "{total} teknologi dalam tiga pokok: Growth {growth}, Territory {territory}, Battle {battle}. Rujukan sahaja, tiada apa di sini disimpan.",
+    "list": {
+        "title": "Nod teknologi",
+        "categoriesLabel": "Pokok teknologi",
+        "categories": {
+            "all": "Semua",
+            "Growth": "Growth",
+            "Territory": "Territory",
+            "Battle": "Battle"
+        },
+        "search": "Cari",
+        "searchPlaceholder": "Cari teknologi mengikut nama atau kesan",
+        "tier": "Peringkat",
+        "allTiers": "Semua peringkat",
+        "tierOption": "Peringkat {tier}",
+        "empty": "Tiada nod teknologi sepadan dengan carian ini.",
+        "emptyHint": "Kosongkan carian atau penapis.",
+        "columns": {
+            "tech": "Teknologi",
+            "category": "Kategori",
+            "tier": "Peringkat",
+            "levels": "Tahap",
+            "maxBonus": "Bonus maks",
+            "cost": "Kos tahap 1",
+            "time": "Masa tahap 1",
+            "requires": "Tahap 1 memerlukan"
+        },
+        "mobileMeta": "{category}, peringkat {tier}, {levels}",
+        "count": "{count, plural, other {{amount} teknologi}}"
+    },
+    "levels": "{count, plural, other {{amount} tahap}}",
+    "detail": {
+        "facts": "Butiran",
+        "levelsTitle": "Tahap",
+        "none": "Tiada",
+        "fields": {
+            "category": "Kategori",
+            "tier": "Peringkat",
+            "effect": "Kesan",
+            "stat": "Statistik",
+            "levels": "Tahap"
+        },
+        "columns": {
+            "level": "Tahap",
+            "bonus": "Bonus",
+            "cost": "Kos",
+            "time": "Masa",
+            "requires": "Memerlukan"
+        },
+        "level": "Tahap {level}",
+        "requirement": "{name} tahap {level}"
+    }
+}

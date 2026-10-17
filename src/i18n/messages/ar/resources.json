@@ -1,0 +1,88 @@
+{
+    "title": "الموارد",
+    "all": "الكل",
+    "owned": "مملوك",
+    "sources": "المصادر",
+    "sourcesUnknown": "المصادر غير معروفة",
+    "done": "تم",
+    "undo": "تراجع",
+    "list": {
+        "separator": "، ",
+        "andLast": "{rest} و{last}"
+    },
+    "countControl": {
+        "remove": "إزالة {step} من {name}",
+        "add": "إضافة {step} إلى {name}",
+        "owned": "{name} المملوك"
+    },
+    "itemRow": {
+        "owned": "مملوك"
+    },
+    "itemSheet": {
+        "title": "تعديل العدد المملوك",
+        "step": "الخطوة",
+        "setToZero": "ضبط على 0",
+        "description": "الوصف",
+        "unknown": "غير معروف"
+    },
+    "view": {
+        "subline": "{items} عنصر في {categories} فئة",
+        "sublineInCategory": "{items} عنصر في {categories} فئة · {inCategory} في {category}",
+        "unsaved": "غير محفوظ",
+        "shortages": "ينقص {names} لإتمام أهداف المخطِّط.",
+        "shortagesLink": "فتح خطة المباني",
+        "show": {
+            "label": "عرض",
+            "owned": "مملوك",
+            "unknown": "المصادر غير معروفة"
+        },
+        "speedups": {
+            "none": "لا شيء",
+            "noneOwned": "لا تملك تسريعات",
+            "owned": "{minutes} د: {parts}",
+            "part": "{count} × {name}",
+            "partSeparator": " + ",
+            "types": {
+                "general": "عام",
+                "construction": "البناء",
+                "troop": "تدريب القوات",
+                "research": "الأبحاث",
+                "learning": "التعلم",
+                "healing": "العلاج"
+            }
+        },
+        "search": {
+            "label": "بحث في العناصر",
+            "placeholder": "بحث في {total} عنصر"
+        },
+        "setSeveral": "ضبط عدة عناصر",
+        "showing": {
+            "several": "عرض {visible} من {total} عنصر. ضبط عدة عناصر مفعّل. تنتظر التغييرات حتى تضغط على حفظ التغييرات.",
+            "instant": "عرض {visible} من {total} عنصر. كل تغيير يُحفظ فورًا."
+        },
+        "empty": {
+            "title": "لا توجد عناصر مطابقة",
+            "description": "غيّر البحث أو الفئة أو عامل التصفية في عرض.",
+            "reset": "إعادة ضبط عوامل التصفية"
+        },
+        "columns": {
+            "item": "العنصر"
+        },
+        "bar": {
+            "noChanges": "لا توجد تغييرات غير محفوظة",
+            "changes": "{count, plural, zero {{amount} تغيير غير محفوظ} one {{amount} تغيير غير محفوظ} two {{amount} تغييران غير محفوظين} few {{amount} تغييرات غير محفوظة} many {{amount} تغييرًا غير محفوظ} other {{amount} تغيير غير محفوظ}}",
+            "discard": "تجاهل",
+            "save": "حفظ التغييرات"
+        },
+        "toast": {
+            "setToZero": "تم ضبط {name} على 0",
+            "savedTitle": "تم حفظ الأعداد",
+            "savedMessage": "تغيّر {count, plural, zero {{amount} عدد} one {{amount} عدد} two {{amount} عددان} few {{amount} أعداد} many {{amount} عددًا} other {{amount} عدد}}."
+        }
+    },
+    "planStock": {
+        "constructionTime": "وقت البناء، كتسريعات",
+        "researchTime": "وقت البحث، كتسريعات",
+        "minutesUnit": "د"
+    }
+}

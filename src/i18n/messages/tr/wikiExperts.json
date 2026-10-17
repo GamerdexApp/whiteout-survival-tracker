@@ -1,0 +1,70 @@
+{
+    "line": "{experts} uzman ve {relationships} ilişki aşaması. Yalnızca başvuru, burada hiçbir şey kaydedilmez.",
+    "roster": {
+        "title": "Uzmanlar",
+        "count": "{total} uzmanın {shown} tanesi",
+        "search": "Ara",
+        "searchPlaceholder": "{count} uzmanı ada, unvana ya da uzmanlığa göre ara",
+        "generation": "Nesil",
+        "all": "Tümü",
+        "empty": "Bu filtrelerle eşleşen uzman yok.",
+        "generationValue": "Nesil {generation}",
+        "unlock": "Açılma: sunucu günü {days}",
+        "unlockUnknown": "Açılma:",
+        "unreleased": "Henüz yayınlanmadı"
+    },
+    "detail": {
+        "subline": "{title} · uzmanlık {specialty} · nesil {generation}",
+        "baseBonus": "Temel: {bonus}",
+        "bonus": "{stat} {value}",
+        "percentValue": "%{value}",
+        "skills": "Beceriler",
+        "talent": "Yetenek, son seviye {level}",
+        "affinityLevels": "Yakınlık seviyeleri",
+        "baseBonusLabel": "Temel bonus",
+        "unlock": "Sunucu gününde açılır: {days}"
+    },
+    "skills": {
+        "title": "Beceriler ve yetenek",
+        "columns": {
+            "skill": "Beceri",
+            "max": "Maks.",
+            "effect": "Etki",
+            "books": "Maks. için kitap",
+            "exp": "Maks. için EXP"
+        },
+        "talent": "{name} (yetenek)",
+        "none": "Yok",
+        "selectHint": "Ayrıntıları görmek için bir beceri seç."
+    },
+    "skillLevels": {
+        "title": "Beceri seviye tablosu",
+        "meta": "{name}, seviye 1 - {max}",
+        "level": "Seviye {level}",
+        "columns": {
+            "level": "Seviye",
+            "exp": "EXP",
+            "books": "Kitap"
+        },
+        "none": "Yok"
+    },
+    "affinity": {
+        "title": "Yakınlık seviyeleri",
+        "level": "Seviye {level}",
+        "columns": {
+            "level": "Seviye",
+            "required": "Gereken yakınlık",
+            "bonus": "Özellik bonusu",
+            "affinityPower": "Yakınlık gücü",
+            "levelPower": "Seviye gücü",
+            "advancement": "Aşama atlama maliyeti"
+        },
+        "noAdvancement": "Aşama atlama yok",
+        "startNote": "Seviye 1 için gereken yakınlık, {start} başlangıç değeridir. Seviye 2'den itibaren miktar, o seviyeye ulaşmanın maliyetidir."
+    },
+    "relationships": {
+        "title": "İlişki aşamaları",
+        "fromLevel": "seviye {level} itibarıyla"
+    },
+    "recordLine": "{title}, uzmanlık {specialty}, nesil {generation}. Yalnızca başvuru, burada hiçbir şey kaydedilmez."
+}

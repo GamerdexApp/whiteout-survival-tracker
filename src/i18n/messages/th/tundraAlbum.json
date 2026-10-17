@@ -1,0 +1,90 @@
+{
+    "page": {
+        "title": "Tundra Album"
+    },
+    "view": {
+        "subline": "{chief} · {details} · อัลบั้มครบ {complete} จาก {total}"
+    },
+    "summary": {
+        "label": "อัลบั้มที่ครบ",
+        "value": "{done} จาก {total}",
+        "progress": "อัลบั้มที่ครบ",
+        "inData": "มี {shown} จาก {all} อัลบั้มในข้อมูล"
+    },
+    "buffs": {
+        "title": "บัฟที่นับตอนนี้",
+        "derived": "คำนวณจากข้อมูล",
+        "none": "ยังไม่มีอัลบั้มที่ครบ จึงไม่มีบัฟ Tundra Album ที่นับ",
+        "note": "นับเฉพาะอัลบั้มที่ครบ บัฟเหล่านี้ส่งไปยังหน้า<link>โบนัส</link>"
+    },
+    "album": {
+        "status": {
+            "complete": "ครบแล้ว",
+            "inProgress": "กำลังดำเนินการ"
+        },
+        "buffWhenComplete": "บัฟเมื่อครบ",
+        "puzzlesDone": "ปริศนาที่ทำแล้ว",
+        "puzzlesValue": "{done} จาก {total}",
+        "puzzlesProgress": "ปริศนา {album} ที่ทำแล้ว",
+        "completionRewards": "รางวัลเมื่อครบ",
+        "markComplete": "ทำเครื่องหมายว่าอัลบั้มครบ",
+        "notCounting": "ยังไม่นับ {buff} จะนับในหน้าโบนัสเมื่อทำปริศนาครบทั้ง {total} ชิ้นเท่านั้น ทำเครื่องหมายว่าอัลบั้มครบจะตั้งปริศนาทั้ง {total} ชิ้นและแสดงการแจ้งเตือนเลิกทำ",
+        "counting": "นับตอนนี้ {buff} อยู่ในหน้าโบนัส การยกเลิกเครื่องหมายปริศนาจะเอาออกอีกครั้ง",
+        "piecesValue": "เก็บได้ {collected} จาก {total} ชิ้น"
+    },
+    "puzzle": {
+        "pieces": "{count, plural, other {{amount} ชิ้น}} ดาว 1 ถึง 5: {split}",
+        "reward": "รางวัล",
+        "done": "ทำปริศนาแล้ว เก็บครบทุกชิ้น",
+        "doneFor": "ทำแล้ว {puzzle}",
+        "collectedLabel": "ชิ้นที่เก็บได้",
+        "collected": "{collected} จาก {total}",
+        "pieceLabel": "{name} {stars} ดาว",
+        "pieceHint": "เลือกชิ้นที่คุณมี การทำเครื่องหมายว่าปริศนาเสร็จจะเก็บทุกชิ้น",
+        "allCollected": "ปริศนาเสร็จแล้ว จึงเก็บครบทุกชิ้น"
+    },
+    "reward": {
+        "line": "{amount} {item}",
+        "sized": "{amount} {item} ({size})",
+        "unknownItem": "ไอเทมที่ไม่ทราบ"
+    },
+    "toast": {
+        "markedTitle": "ทำเครื่องหมายว่า {album} ครบแล้ว",
+        "markedMessage": "ทำปริศนาครบทั้ง {total} ชิ้นแล้ว",
+        "unmarkedTitle": "ยกเลิกเครื่องหมาย {puzzle} แล้ว",
+        "unmarkedMessage": "{album} กลับมากำลังดำเนินการและบัฟออกจากหน้าโบนัสแล้ว",
+        "undo": "เลิกทำ"
+    },
+    "notInData": "อีก {count} จาก {total} Tundra Album ยังไม่อยู่ในข้อมูล จะเพิ่มเมื่อแพ็กเกจข้อมูลมี",
+    "pieces": {
+        "label": "ชิ้นที่เก็บได้",
+        "value": "{collected} จาก {available}",
+        "progress": "ชิ้นที่เก็บได้ในทุกอัลบั้ม",
+        "viewRewards": "ดูรางวัลตามจำนวนชิ้น"
+    },
+    "rewardsFlyout": {
+        "title": "รางวัลตามจำนวนชิ้น",
+        "description": "รางวัลที่ได้เมื่อชิ้นที่คุณเก็บในทุกอัลบั้มรวมกัน",
+        "close": "ปิด",
+        "collected": "ชิ้นที่เก็บได้",
+        "collectedValue": "{collected} จาก {available}",
+        "progress": "ชิ้นที่เก็บได้ในทุกอัลบั้ม",
+        "reached": "ถึงรางวัลตามจำนวนชิ้นแล้ว {reached} จาก {all}",
+        "next": "รางวัลถัดไปที่ {pieces} ชิ้น ต้องเก็บอีก {missing}",
+        "allReached": "ถึงทุกรางวัลตามจำนวนชิ้นในข้อมูลแล้ว",
+        "totalSoFar": "รางวัลที่ได้รับแล้ว",
+        "tree": "รางวัลตามจำนวนชิ้นที่เก็บ",
+        "tier": "รางวัล {tier} ที่ {pieces} ชิ้น",
+        "stateReached": "เก็บแล้ว",
+        "stateNext": "ถัดไป อีก {missing}",
+        "stateLater": "อีก {missing}"
+    },
+    "picker": {
+        "label": "อัลบั้ม",
+        "title": "อัลบั้ม",
+        "complete": "อัลบั้มครบ",
+        "puzzles": "{done} จาก {total} ปริศนา",
+        "pieces": "{collected} จาก {total} ชิ้น",
+        "piecesProgress": "ชิ้นของ {album} ที่เก็บได้"
+    }
+}

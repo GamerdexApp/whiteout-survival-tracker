@@ -1,0 +1,70 @@
+{
+    "line": "ผู้เชี่ยวชาญ {experts} คนและขั้นความสัมพันธ์ {relationships} ขั้น ข้อมูลอ้างอิงเท่านั้น ไม่มีอะไรที่นี่ถูกบันทึก",
+    "roster": {
+        "title": "ผู้เชี่ยวชาญ",
+        "count": "{shown} จาก {total} คน",
+        "search": "ค้นหา",
+        "searchPlaceholder": "ค้นหา {count} ผู้เชี่ยวชาญตามชื่อ ตำแหน่ง หรือความถนัด",
+        "generation": "รุ่น",
+        "all": "ทั้งหมด",
+        "empty": "ไม่มีผู้เชี่ยวชาญที่ตรงกับตัวกรองนี้",
+        "generationValue": "รุ่น {generation}",
+        "unlock": "ปลดล็อก: วันที่ {days} ของเซิร์ฟเวอร์",
+        "unlockUnknown": "ปลดล็อก:",
+        "unreleased": "ยังไม่เปิดตัว"
+    },
+    "detail": {
+        "subline": "{title} · ความถนัด {specialty} · รุ่น {generation}",
+        "baseBonus": "พื้นฐาน: {bonus}",
+        "bonus": "{stat} {value}",
+        "percentValue": "{value}%",
+        "skills": "ทักษะ",
+        "talent": "พรสวรรค์ เลเวลสูงสุด {level}",
+        "affinityLevels": "เลเวลความสนิท",
+        "baseBonusLabel": "โบนัสพื้นฐาน",
+        "unlock": "ปลดล็อกวันที่ {days} ของเซิร์ฟเวอร์"
+    },
+    "skills": {
+        "title": "ทักษะและพรสวรรค์",
+        "columns": {
+            "skill": "ทักษะ",
+            "max": "สูงสุด",
+            "effect": "ผล",
+            "books": "หนังสือถึงสูงสุด",
+            "exp": "EXP ถึงสูงสุด"
+        },
+        "talent": "{name} (พรสวรรค์)",
+        "none": "ไม่มี",
+        "selectHint": "เลือกทักษะเพื่อดูรายละเอียด"
+    },
+    "skillLevels": {
+        "title": "ตารางเลเวลทักษะ",
+        "meta": "{name} เลเวล 1 ถึง {max}",
+        "level": "เลเวล {level}",
+        "columns": {
+            "level": "เลเวล",
+            "exp": "EXP",
+            "books": "หนังสือ"
+        },
+        "none": "ไม่มี"
+    },
+    "affinity": {
+        "title": "เลเวลความสนิท",
+        "level": "เลเวล {level}",
+        "columns": {
+            "level": "เลเวล",
+            "required": "ความสนิทที่ต้องใช้",
+            "bonus": "โบนัสค่าสถานะ",
+            "affinityPower": "พลังความสนิท",
+            "levelPower": "พลังเลเวล",
+            "advancement": "ค่าเลื่อนขั้น"
+        },
+        "noAdvancement": "ไม่มีการเลื่อนขั้น",
+        "startNote": "ความสนิทที่ต้องใช้ของเลเวล 1 คือค่าเริ่มต้น {start} ตั้งแต่เลเวล 2 จำนวนคือค่าใช้จ่ายเพื่อถึงเลเวลนั้น"
+    },
+    "relationships": {
+        "title": "ขั้นความสัมพันธ์",
+        "fromLevel": "ตั้งแต่เลเวล {level}"
+    },
+    "recordLine": "{title} ความถนัด {specialty} รุ่น {generation} ข้อมูลอ้างอิงเท่านั้น ไม่มีอะไรที่นี่ถูกบันทึก"
+}

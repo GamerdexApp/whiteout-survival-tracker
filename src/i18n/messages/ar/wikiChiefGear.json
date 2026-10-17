@@ -1,0 +1,56 @@
+{
+    "line": "{rows} من صفوف المعدات، و{slots} من الخانات، و{rates} من أسعار التبادل. للمرجع فقط، لا يُحفظ شيء هنا في قائدك.",
+    "slots": {
+        "heading": "خانات المعدات",
+        "rarities": "أيقونات من {first} إلى {last}",
+        "detailLine": "تعزز قوات {troopType}. أيقونة واحدة لكل ندرة."
+    },
+    "table": {
+        "heading": "جدول المعدات",
+        "meta": "{rows} صفًا، {tiers} فئات",
+        "searchLabel": "بحث",
+        "searchPlaceholder": "ابحث في {rows} صفًا من صفوف المعدات",
+        "tierLabel": "الفئة",
+        "allTiers": "كل الفئات",
+        "starsLabel": "النجوم",
+        "allStars": "كل النجوم",
+        "starsOption": "النجوم {stars}",
+        "empty": "لا يوجد صف معدات يطابق عوامل التصفية."
+    },
+    "columns": {
+        "row": "الصف",
+        "materials": "المواد",
+        "stats": "الإحصائيات",
+        "power": "القوة",
+        "score": "النقاط",
+        "capacity": "سعة الانتشار"
+    },
+    "cells": {
+        "none": "لا شيء",
+        "percent": "{value}%"
+    },
+    "tiers": {
+        "heading": "الفئات",
+        "meta": "{tiers} تسميات للفئات",
+        "tier": "الفئة",
+        "rows": "الصفوف",
+        "stats": "الإحصائيات، من الأول إلى الأخير",
+        "power": "القوة عند الصف الأخير",
+        "statsRange": "من {first}% إلى {last}%"
+    },
+    "exchange": {
+        "heading": "أسعار تبادل المواد",
+        "exchange": "التبادل",
+        "from": "من",
+        "to": "إلى",
+        "weeklyLimit": "الحد الأسبوعي"
+    },
+    "setBonus": {
+        "heading": "مزايا الطقم",
+        "meta": "{tiers} فئات",
+        "hint": "ارتدِ 3 قطع لميزة الدفاع و6 قطع لميزة الهجوم. تعتمد النسبة على فئة القطع التي ترتديها. وتنطبق على قوات {types}.",
+        "pieceSet": "طقم من {pieces} قطع",
+        "tier": "الفئة",
+        "pieces": "{pieces} قطع، {stat}"
+    }
+}

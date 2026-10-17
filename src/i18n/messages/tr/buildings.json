@@ -1,0 +1,282 @@
+{
+    "title": "Binalar",
+    "tabs": {
+        "buildings": "Binalar",
+        "facilities": "Tesisler"
+    },
+    "notBuilt": "İnşa edilmedi",
+    "built": "İnşa edildi",
+    "none": "Yok",
+    "unknown": "Bilinmiyor",
+    "close": "Kapat",
+    "cancel": "İptal",
+    "undo": "Geri al",
+    "ofTotal": "{total} içinden {count}",
+    "noOtherRequirements": "Başka gereksinim yok",
+    "builderName": "İnşaatçı {number}",
+    "shelterName": "Shelter {number}",
+    "levelOf": "Seviye: {name}",
+    "levelRange": "{from} - {to}",
+    "requirement": {
+        "shelter": "{building}, seviye {level}",
+        "heroHall": "Hero Hall inşa edildi",
+        "level": "{building} {level}"
+    },
+    "columns": {
+        "building": "Bina",
+        "current": "Mevcut",
+        "goal": "Hedef",
+        "power": "Güç",
+        "progress": "İlerleme ve sonraki seviye",
+        "upgrade": "Yükseltme"
+    },
+    "entry": {
+        "notes": {
+            "furnace": "Diğer tüm binaları sınırlar",
+            "shelter": "En fazla 8 Shelter, her birinin kendi seviyesi var"
+        },
+        "subline": {
+            "size": "Maks. {max} · {count} seviye",
+            "withNote": "{note} · {size}",
+            "single": "Tek yapı · {power} güç"
+        },
+        "progress": {
+            "requires": "Gerekenler: {list}",
+            "noRequirements": "Gereksinim yok",
+            "maxLevel": "Son seviye",
+            "blocked": "Engelli: {list} gerekir",
+            "needs": "Gerekenler: {list}",
+            "levelAgeLocked": "Kayıtlı seviye {level} bu sunucuda henüz açık değil. {text}",
+            "goalAgeLocked": "Hedef {goal} bu sunucuda henüz açık değil. {text}",
+            "nextAgeLocked": "Sonraki seviye {level} kilitli. {text}"
+        },
+        "builtSwitch": "İnşa edildi: {name}",
+        "shelters": {
+            "none": "İnşa edilmedi",
+            "editLabel": "Shelter ({count}), seviyeleri düzenle",
+            "button": "Shelter ({count})"
+        },
+        "levels": "Seviyeler",
+        "levelsLabel": "Seviyeler: {name}",
+        "upgrading": "Yükseltiliyor: {name}",
+        "startLabel": "Yükseltmeyi başlat: {name}",
+        "start": "Başlat",
+        "startUpgrade": "Yükseltmeyi başlat",
+        "devIndex": "Gel. endeksi {value}",
+        "powerLine": "Güç {power} · Gel. endeksi {index}",
+        "progressLabel": "İlerleme: {name}"
+    },
+    "builders": {
+        "label": "İnşaatçılar",
+        "hint": "Burada başlattığın bir yükseltme Genel Bakış'ta çalışan sıra olarak görünür.",
+        "idle": "Yükseltmeye başlamak için bir binada Başlat'a bas.",
+        "jobTitle": "{name}, {from} - {to}",
+        "locked": "Kilitli",
+        "lockedText": "İkinci inşaatçı için Construction Pack gerekir.",
+        "lockedLink": "Şefi düzenle bölümünden aç"
+    },
+    "upgrade": {
+        "option": "{subject}, {from} - {to}",
+        "busy": "Meşgul: {name}, hedef {level}, {timeLeft}"
+    },
+    "facilities": {
+        "intro": "Şehrindeki tesisler. İnşa ettiklerini işaretle. Bunlar şehir tesisleridir, İttifak menüsündeki ittifak tesisleri değil.",
+        "builtLabel": "İnşa edilen tesisler",
+        "unlockedLabel": "Furnace seviyende açılanlar",
+        "requires": "Furnace {level} gerekir",
+        "unlocksAt": "Furnace {level} seviyesinde açılır"
+    },
+    "tab": {
+        "intro": "Her bina için mevcut seviye ve hedef. Furnace, diğerlerinin ulaşabileceği seviyeyi belirler.",
+        "searchLabel": "Bina ara",
+        "filters": "Filtreler",
+        "massEdit": "Toplu düzenleme",
+        "startUpgrade": "Yükseltmeyi başlat",
+        "plan": "Plan",
+        "status": "{total} binanın {shown} tanesi gösteriliyor. Hedefler burada salt okunurdur ve Plan'da ayarlanır. Mevcut seviyeye eşit hedef, hedef yok demektir. Artır/azalt düğmeleri oyun sırasına göre her seferinde bir seviye ilerler.",
+        "groupPinned": "Sabitlenen",
+        "stats": {
+            "furnace": "Furnace, diğer tüm binaları sınırlar",
+            "power": "Mevcut güç, tüm binalar",
+            "developmentIndex": "Gelişim endeksi, tüm binalar",
+            "withGoal": "Hedefi olan binalar",
+            "atMax": "Son seviyede",
+            "entertainment": "Eğlence inşa edildi"
+        },
+        "empty": {
+            "title": "Eşleşen bina yok",
+            "description": "Her binayı görmek için aramayı değiştir ya da filtreleri sıfırla.",
+            "reset": "Aramayı ve filtreleri sıfırla"
+        },
+        "start": {
+            "description": "Bir binayı yükseltiliyor olarak işaretle",
+            "selectLabel": "Yükseltilecek bina",
+            "selectHelp": "Yalnızca şu an başlatabileceğin binalar listelenir. Kilitli, tamamlanmış ve çalışan binalar dışarıda bırakılır. Her yükseltme iki inşaatçıdan birini kullanır.",
+            "timeLabel": "İnşaat süresi",
+            "speedLabel": "İnşaat hızı",
+            "slotLabel": "İnşaatçı",
+            "slotHelp": "Boştaki bir inşaatçıyı seç. Meşgul inşaatçı ne zaman boşalacağını gösterir."
+        },
+        "toasts": {
+            "started": {
+                "title": "Yükseltme başladı",
+                "message": "{name}, {subtitle}."
+            },
+            "finished": {
+                "title": "Yükseltildi: {name}",
+                "message": "Şimdi {level}. Geçmiş'e eklendi."
+            },
+            "cancelled": {
+                "title": "Yükseltme iptal edildi: {name}",
+                "message": "Seviye eskisi gibi kalır. Gerekirse stokunu Kaynaklar'da düzelt."
+            },
+            "massEdit": {
+                "title": "Toplu düzenleme uygulandı",
+                "message": "{count, plural, one {{amount} bina} other {{amount} bina}} güncellendi."
+            }
+        },
+        "manage": {
+            "finishText": "Yükseltmeyi bitir, {name} seviyesini {level} yapar, İnşaatçı {builder} boşaltır ve yükseltmeyi Geçmiş'ine ekler. Kalan süre sıfır olunca bina ve inşaatçı kartında Bitirmeye hazır yazar. Hızlandırma kullanmış olabileceğin için hiçbir şey kendiliğinden bitmez."
+        }
+    },
+    "filters": {
+        "title": "Filtreler",
+        "description": "Bina listesinde nelerin gösterileceğini seç",
+        "reset": "Sıfırla",
+        "show": "{count, plural, one {{amount} binayı göster} other {{amount} binayı göster}}",
+        "category": "Kategori",
+        "categoryAll": "Tümü, {count}",
+        "categoryOption": "{category}, {count}",
+        "showSection": "Göster",
+        "hideMaxed": "Tamamlanan binaları gizle",
+        "hideLocked": "Kilitli binaları gizle",
+        "goalsOnly": "Yalnızca hedefi olan binalar",
+        "order": "Sıralama",
+        "orders": {
+            "game": "Oyun sırası, önce Furnace",
+            "name": "Ad, A'dan Z'ye",
+            "progress": "İlerleme, en düşük önce"
+        },
+        "pinned": "Filtre ne olursa olsun Furnace en üstte sabit kalır. Filtreler kaydedilmez."
+    },
+    "levels": {
+        "title": "Seviyeler",
+        "description": "{category} · Maks. {max} · {count} seviye",
+        "noDescription": "Veride henüz açıklama yok.",
+        "current": "Mevcut seviye",
+        "goal": "Hedef seviye",
+        "nextNeeds": "Sonraki seviye için gerekenler",
+        "noGoal": "Hedef yok",
+        "tableNote": "Bu tablo yalnızca mevcut seviyenden sonraki seviyeleri listeler, çünkü öncekiler tamamlandı.",
+        "maxed": "Son seviye. Yükseltilecek bir şey kalmadı.",
+        "nextAfter": "{level} sonrasındaki seviyeler",
+        "first": "İlk seviyeler",
+        "level": "Seviye",
+        "time": "Süre",
+        "power": "Güç",
+        "capacity": "Kapasite",
+        "requires": "Gereksinim",
+        "goalBadge": "Hedef",
+        "capacityNote": "Kapasite pakette yalnızca kademe taban satırlarında ayarlıdır, bu yüzden alt seviyelerde Bilinmiyor görünür."
+    },
+    "massEdit": {
+        "title": "Binaları toplu düzenle",
+        "description": "Birçok binayı bir seferde ayarla. Binaları ayarla'ya basana kadar hiçbir şey kaydedilmez.",
+        "noChanges": "Henüz değişiklik yok",
+        "changes": "{count, plural, one {{amount} bina değişiyor} other {{amount} bina değişiyor}}",
+        "set": "{count, plural, one {{amount} binayı ayarla} other {{amount} binayı ayarla}}",
+        "raiseTitle": "Her binayı bir seviyeye yükselt",
+        "raiseLabel": "Tüm binaları şu seviyeye yükselt",
+        "raiseAll": "Hepsini yükselt",
+        "raiseHint": "Her bina, bu seviyede ya da altındaki en yüksek seviyesine çıkar. Zaten daha yüksek olan bina kalır, daha sonra başlayan bina inşa edilmemiş kalır. Hedefler değişmez.",
+        "blockedTitle": "Bazı binalar için önce başka bir bina gerekir.",
+        "blocked": "{count, plural, one {{amount} bina} other {{amount} bina}} gereksinimlerinin izin verdiğinin üstünde.",
+        "lowerBlocked": "İzin verilen seviyeye indir",
+        "levels": "Seviyeler",
+        "needsFirst": "Önce gerekir: {list}",
+        "was": "eskiden {level}",
+        "entertainment": "Eğlence",
+        "markAllBuilt": "Hepsini inşa edildi işaretle",
+        "clearAll": "Hepsini temizle",
+        "footnote": "Toplu düzenleme yalnızca kayıtlı seviyeleri değiştirir. Hiçbir seviyeyi kendiliğinden düşürmez ve hedefleri değiştirmez. Her Shelter'ın ayrı seviyesi vardır, bu yüzden onları Shelter düğmesiyle ayarla ve Hero Hall'u Tesisler sekmesinde ayarla."
+    },
+    "shelters": {
+        "title": "Shelter",
+        "description": "En fazla {max} tane inşa edilebilir. Her birinin seviyesini ayarla.",
+        "locked": "Shelter, Furnace seviyen yüzünden hâlâ kilitli.",
+        "empty": "Henüz Shelter yok.",
+        "power": "Güç {power}",
+        "add": "Shelter ekle",
+        "remove": "Kaldır: Shelter {number}",
+        "allBuilt": "{max} Shelter'ın hepsi inşa edildi.",
+        "furnaceNeeds": "Furnace'in Shelter'lardan neler istediği",
+        "requirement": "Furnace {furnaceLevel} için Shelter {number} seviye {level} olmalı.",
+        "met": "Karşılandı.",
+        "notMet": "Karşılanmadı.",
+        "footnote": "Plan ve ilerleme çubuğu en düşük Shelter'ını, yani yükseltilecek sıradakini kullanır."
+    },
+    "plan": {
+        "title": "Bina Planı",
+        "description": "Mevcut seviyeden hedefe kaynaklar, süre ve güç",
+        "saved": "Plan kaydedildi: {time}",
+        "save": "Planı kaydet",
+        "failed": "Plan hesaplanamadı.",
+        "goalsHeading": "{count, plural, one {Hedefler, {amount} bina} other {Hedefler, {amount} bina}}",
+        "noGoals": "Henüz hedef yok. Yukarıdan bir bina ekle, sonra ulaşmasını istediğin seviyeyi seç.",
+        "prerequisiteNote": "Ön koşul adımları senin için eklenir. Daha yüksek seviyede başka bir bina gerektiren seviye, o adımları sayar ve işaretler.",
+        "timeNote": "%{percent} hız bonusundan sonra plan {time} sürer. Stokun: İnşaat {construction} dk, Genel {general} dk. Genel hızlandırmalar inşaata sayılır.",
+        "add": {
+            "title": "Bina ekle",
+            "allAdded": "Her bina zaten planda.",
+            "selectLabel": "Eklenecek bina",
+            "button": "Bina ekle"
+        },
+        "speed": {
+            "title": "İnşaat hızı",
+            "percent": "%{value}",
+            "plusPercent": "+%{value}",
+            "readOnly": "Salt okunur",
+            "bonusesOn": "Bonuslar sayfasından aktarıldı.",
+            "bonusesOff": "Ayarlar'da Bonuslar toplamlarımı uygula altında kapalı.",
+            "openBonuses": "Bonuslar'ı aç",
+            "appointment": "Başkan ayrıcalıkları ve atama",
+            "appointments": {
+                "none": "Yok",
+                "regular": "Normal",
+                "supreme": "Üstün"
+            },
+            "appointmentNote": "Normal yüzde 10, Üstün yüzde 15. <strong>Tahmin:</strong> paket bu değerleri yalnızca araştırma için belirtir.",
+            "petSkill": "Evcil hayvan becerisi, Builder's Aide",
+            "petSkillNote": "Yüzde, Evcil Hayvanlar sayfasındaki Cave Hyena'dan ve onun mevcut seviyesinden gelir.",
+            "chiefOrder": "Şef emri, Double Time",
+            "chiefOrderNote": "<strong>Tahmin:</strong> 5 dakika boyunca yüzde {percent} inşaat hızı ekler. Pakette şef emri verisi yok, bu yüzden değer uygulama tarafından girilir ve tüm süreye uygulanır.",
+            "total": "Toplam inşaat hızı",
+            "petSkillNoteLocked": "Cave Hyena, Evcil Hayvanlar sayfasında açılmadı, bu yüzden beceri bir şey eklemez. Bunu açmak için orada aç."
+        },
+        "goal": {
+            "to": "hedef",
+            "label": "Hedef: {name}",
+            "remove": "Plandan kaldır: {name}"
+        },
+        "result": {
+            "title": "Sonuç, {count} adım",
+            "powerGained": "Kazanılan güç",
+            "speedupMinutes": "Gereken hızlandırma dakikası",
+            "baseTime": "Temel süre",
+            "timeWithBonus": "%{percent} bonusla süre",
+            "eventPoints": "Etkinlik puanları: SvS {svs}, King of Icefield {king} (<strong>Tahmin</strong>, etkinliklerin puanlama satırlarından).",
+            "prerequisite": "Ön koşul",
+            "steps": "{count, plural, one {{amount} adım} other {{amount} adım}}",
+            "unmetHeading": "Karşılanmayan ön koşullar",
+            "unmetNone": "Bu hedefler için yok. Hero Hall gibi listede olmayan bir bina burada görünür."
+        },
+        "export": {
+            "button": "Ana Etkinlikler'e aktar",
+            "empty": "Aktarmak için plana bir hedef ekle.",
+            "speedupMinutes": "İnşaat hızlandırma dakikası",
+            "power": "İnşaattan kazanılan güç",
+            "stockDetail": "Plan {needed} ister, sende {held} var.",
+            "unscored": "Hiçbir etkinlik {name} için puan vermez."
+        }
+    }
+}

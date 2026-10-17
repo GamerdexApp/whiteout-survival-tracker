@@ -1,0 +1,50 @@
+{
+    "page": {
+        "title": "พันธมิตร"
+    },
+    "view": {
+        "subline": "{chief} · {details} · ธงเลเวล {level}"
+    },
+    "banner": {
+        "title": "ธงพันธมิตร",
+        "currentLevel": "เลเวลปัจจุบัน",
+        "levelLabel": "เลเวลธง",
+        "maxHint": "เลเวลจำนวนเต็มตั้งแต่ 0 ถึง {max}",
+        "rangeChip": "{range}",
+        "costHeading": "ค่าใช้จ่ายต่อเลเวลใน {range}",
+        "noTimeOrPower": "แพ็กเกจข้อมูลไม่มีเวลาสร้างหรือพลังของธง จึงไม่แสดง",
+        "noCost": "ไม่มีค่าใช้จ่าย",
+        "none": "ไม่มี",
+        "lower": "ลดเลเวลธง",
+        "raise": "เพิ่มเลเวลธง"
+    },
+    "structures": {
+        "title": "สิ่งก่อสร้างพันธมิตร",
+        "tech": {
+            "title": "เทคโนโลยี",
+            "description": "{count} โหนดใน Growth, Territory และ Battle",
+            "status": "สูงสุด {maxed} กำลังทำ {progress} ล็อก {locked}"
+        },
+        "facilities": {
+            "title": "สิ่งปลูกสร้าง",
+            "description": "{count} สิ่งปลูกสร้างบนแผนที่",
+            "owned": "มีแล้ว {owned}"
+        },
+        "fortresses": {
+            "title": "ป้อมปราการ",
+            "description": "ปราสาท ฐานที่มั่น {strongholds} แห่ง ป้อมปราการ {fortresses} แห่ง",
+            "reference": "ข้อมูลอ้างอิงเท่านั้น"
+        }
+    },
+    "table": {
+        "title": "ค่าใช้จ่ายธงตามช่วงเลเวล",
+        "note": "{count} ช่วง ทุกเลเวลในช่วงเดียวกันมีค่าใช้จ่ายเท่ากัน",
+        "range": "ช่วง",
+        "state": "สถานะ",
+        "built": "สร้างแล้ว",
+        "current": "ปัจจุบัน",
+        "notBuilt": "ยังไม่สร้าง",
+        "none": "ไม่มี",
+        "noCost": "ไม่มีค่าใช้จ่าย"
+    }
+}

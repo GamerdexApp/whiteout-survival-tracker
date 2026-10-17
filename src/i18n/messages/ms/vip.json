@@ -1,0 +1,63 @@
+{
+    "page": {
+        "title": "VIP"
+    },
+    "view": {
+        "sublineKnown": "{chief} · {details} · VIP {level} dengan {xp} XP",
+        "sublineUnknown": "{chief} · {details} · VIP belum ditetapkan"
+    },
+    "input": {
+        "title": "VIP anda",
+        "enterAs": "Masukkan VIP sebagai",
+        "modeXp": "Jumlah XP",
+        "modeLevel": "Tahap VIP",
+        "xpLabel": "Jumlah XP VIP",
+        "xpHint": "XP bulat dari 0 hingga {max}.",
+        "levelLabel": "Tahap VIP",
+        "notSet": "Belum ditetapkan",
+        "levelHint": "Satu tahap menetapkan jumlah XP kepada jumlah terendah tahap itu. Taip XP sebenar untuk tepat.",
+        "reached": "Tahap dicapai",
+        "levelName": "VIP {level}",
+        "unknown": "Tidak diketahui"
+    },
+    "progress": {
+        "label": "Kemajuan dalam VIP {level}",
+        "toNext": "{xp} XP ke VIP {level}",
+        "percent": "{percent}%",
+        "range": "{from} hingga {to} jumlah XP untuk tahap ini.",
+        "estimate": "Anggaran. Tahap dimasukkan, jadi XP ialah jumlah terendah VIP {level}. Taip XP sebenar untuk nilai tepat.",
+        "maxLevel": "Tahap maksimum",
+        "maxHint": "VIP {level} ialah tahap terakhir."
+    },
+    "perks": {
+        "title": "Apa yang VIP {level} berikan",
+        "subtitle": "Jumlah pada tahap ini, bukan perubahan daripada yang terakhir.",
+        "unknown": "Masukkan VIP anda untuk melihat apa yang diberikan."
+    },
+    "next": {
+        "title": "VIP {level} menambah",
+        "subtitle": "Berbanding VIP {from}.",
+        "new": "baharu",
+        "was": "tadinya {value}",
+        "maxLevel": "Tahap maksimum. Tiada tahap seterusnya untuk dipratonton.",
+        "unknown": "Masukkan VIP anda untuk melihat tahap seterusnya."
+    },
+    "table": {
+        "title": "Semua {count} tahap, {total} XP keseluruhan",
+        "level": "Tahap",
+        "xpFromLast": "XP dari yang terakhir",
+        "totalXp": "Jumlah XP",
+        "bonuses": "Bonus baharu atau lebih tinggi",
+        "state": "Keadaan",
+        "xpFromLastMobile": "XP dari yang terakhir {xp}",
+        "totalMobile": "Jumlah {xp}",
+        "unknown": "Tidak diketahui",
+        "states": {
+            "reached": "Dicapai",
+            "current": "Semasa",
+            "ahead": "Di hadapan",
+            "unknown": "Tidak diketahui"
+        },
+        "levelName": "VIP {level}"
+    }
+}

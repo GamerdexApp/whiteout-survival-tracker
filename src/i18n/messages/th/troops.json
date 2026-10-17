@@ -1,0 +1,251 @@
+{
+    "page": {
+        "title": "กองทหาร"
+    },
+    "view": {
+        "title": "กองทหาร",
+        "subline": "{chief} · {camps}",
+        "campLevel": "ค่าย {name} {level}",
+        "notBuilt": "ยังไม่สร้าง",
+        "intro": "เลเวลค่าย ความจุ และโบนัสความเร็วมาจากหน้าอื่นและอ่านได้อย่างเดียว แผนคำนวณสิ่งที่การฝึกและการเลื่อนขั้นต้องใช้ เริ่มฝึกทำเครื่องหมายชุดที่ค่ายกำลังฝึก",
+        "plan": "แผน"
+    },
+    "cards": {
+        "tileSummary": "ทหาร · พลัง {power}",
+        "allTroops": "ทหารทั้งหมด",
+        "totalPower": "พลังรวม",
+        "troops": "ทหาร",
+        "power": "พลัง",
+        "powerNote": "พลังต่อทหารมาจากแพ็กเกจข้อมูล ระดับ 10 และ 11 ตามเลเวล Fire Crystal ของแต่ละค่าย",
+        "campLevel": "ค่ายเลเวล {level}",
+        "campNotBuilt": "ยังไม่สร้างค่าย",
+        "campAgeLocked": "เลเวลค่ายที่บันทึกไว้ยังไม่เปิดในเซิร์ฟเวอร์นี้ {text}",
+        "highestTier": "ระดับสูงสุด",
+        "tierShort": "T{tier}",
+        "noTier": "ไม่มี"
+    },
+    "tiers": {
+        "title": "ระดับของ {name}",
+        "hideLow": "ซ่อนระดับ 9 และต่ำกว่า",
+        "typeLabel": "ประเภททหาร",
+        "hiddenNote": "ซ่อนระดับ 1 ถึง 9 Furnace {furnace} เป็นเลเวล 30 ขึ้นไป",
+        "heads": {
+            "tier": "ระดับ",
+            "troops": "ทหาร",
+            "train": "ฝึก",
+            "power": "พลัง"
+        },
+        "requires": {
+            "list": "ต้องมี {list}",
+            "camp": "ค่าย {name} {level}",
+            "building": "{name} {level}",
+            "research": "{name} เลเวล {level}"
+        },
+        "tier": "ระดับ {tier}",
+        "locked": "ล็อก",
+        "countLabel": "ทหาร {name} {tier}",
+        "train": "ฝึก",
+        "seconds": "{value} วิ",
+        "each": "ต่อนาย",
+        "mobilePower": "พลัง"
+    },
+    "plan": {
+        "title": "วางแผนกองทหาร",
+        "description": "การฝึกและการเลื่อนขั้นของทหารทั้งสามประเภท",
+        "saved": "บันทึกแผนเมื่อ {date}",
+        "close": "ปิด",
+        "save": "บันทึกแผน",
+        "export": {
+            "button": "ส่งออกไปยัง Core Events",
+            "emptyHint": "เพิ่มการฝึกเพื่อส่งออก",
+            "computed": "แอปคำนวณให้",
+            "trainedGroup": "สำหรับทหารที่ฝึก",
+            "speedupGroup": "สำหรับนาทีตัวเร่งเวลา",
+            "trainedTier": "ทหารระดับ {tier} ที่ฝึก",
+            "speedupMinutes": "นาทีตัวเร่งเวลาฝึกที่ใช้",
+            "promoted": "ทหารที่เลื่อนขั้น",
+            "promotedReason": "การเลื่อนขั้นให้คะแนนผ่านนาทีตัวเร่งเวลาเท่านั้น",
+            "power": "พลังจากการฝึกและเลื่อนขั้น",
+            "powerReason": "แพ็กเกจข้อมูลยังไม่มีพลังจริงต่อระดับ"
+        },
+        "noRuns": "ยังไม่มีการฝึก เพิ่มทหารเพื่อเริ่มแผน",
+        "add": {
+            "title": "เพิ่มทหาร",
+            "typeLabel": "ประเภททหาร",
+            "modeLabel": "ฝึกหรือเลื่อนขั้น",
+            "button": "เพิ่มทหาร"
+        },
+        "run": {
+            "tier": "ระดับ {tier}",
+            "modes": {
+                "training": "ฝึก",
+                "promotion": "เลื่อนขั้น"
+            },
+            "remove": "ลบการฝึก {name}",
+            "removeButton": "ลบ",
+            "modeLabel": "{name} ฝึกหรือเลื่อนขั้น",
+            "tierLabel": "ระดับ {name}",
+            "fromLabel": "{name} เลื่อนขั้นจากระดับ",
+            "toLabel": "{name} เลื่อนขั้นเป็นระดับ",
+            "to": "ถึง",
+            "troops": "ทหาร",
+            "max": "สูงสุด",
+            "maxValue": "สูงสุด ({capacity})",
+            "batches": "ชุด"
+        },
+        "speed": {
+            "readOnlyNote": "ค่าที่อ่านได้อย่างเดียวนำมาจากหน้าอื่น เปลี่ยนที่นั่น",
+            "openBonuses": "เปิดโบนัส",
+            "title": "ความจุและความเร็ว",
+            "appointment": "ตำแหน่งแต่งตั้ง",
+            "position": "ตำแหน่ง",
+            "rank": "ระดับ",
+            "positions": {
+                "none": "ไม่มี",
+                "ministerOfEducation": "รัฐมนตรีศึกษา",
+                "vicePresident": "รองประธานาธิบดี"
+            },
+            "ranks": {
+                "regular": "ปกติ",
+                "supreme": "สูงสุด"
+            },
+            "appointmentEffect": "ความจุ +{capacity}, ความเร็ว +{speed}%",
+            "appointmentNote": "เปิดได้เพียงหนึ่งในสองตำแหน่ง รัฐมนตรีศึกษาเพิ่มความจุ {moeCapacity} และความเร็ว {moeSpeed}% (สูงสุด {moeCapacitySupreme} และ {moeSpeedSupreme}) รองประธานาธิบดีเพิ่มความเร็ว {vpSpeed}% (สูงสุด {vpSpeedSupreme})",
+            "capacity": "ความจุ",
+            "researchCapacity": "ความจุจากวิจัย",
+            "troops": "ทหาร {value} นาย",
+            "readOnly": "อ่านอย่างเดียว",
+            "capacityBoost": "ตัวเสริมความจุ",
+            "boostTotal": "รวม x{multiplier}",
+            "capacityPerBatch": "ความจุต่อชุด",
+            "trainingSpeed": "ความเร็วฝึก",
+            "gameSpeed": "ความเร็วฝึกในเกม",
+            "appointmentSpeed": "ตำแหน่งแต่งตั้ง",
+            "mobilize": "Mobilize",
+            "advancedTraining": "Advanced Training",
+            "speedUsed": "ความเร็วฝึกที่ใช้",
+            "percent": "{value}%",
+            "percentPlus": "+{value}%"
+        },
+        "stock": {
+            "name": "ตัวเร่งเวลาฝึก",
+            "minutesUnit": "นาที",
+            "note": "สต็อกของคุณ: Training {training} นาที, General {general} นาที ตัวเร่งเวลา General นับรวมเป็นเวลาฝึก การฝึกที่ตัวเร่งเวลาไม่ครอบคลุมจะเสร็จตามเวลาปกติ จึงใช้เฉพาะตัวเร่งเวลาที่คุณมี: {used} นาที"
+        },
+        "result": {
+            "title": "ผลลัพธ์",
+            "resources": "ทรัพยากร",
+            "changes": "ทหารที่เปลี่ยนตามระดับ",
+            "heads": {
+                "tier": "ระดับ",
+                "infantry": "Inf.",
+                "lancer": "Lan.",
+                "marksman": "Mark.",
+                "all": "ทั้งหมด"
+            },
+            "tier": "ระดับ {tier}",
+            "total": "รวม",
+            "time": "เวลา ไม่ใช้ตัวเร่งเวลา",
+            "totalTime": "รวม ทุกประเภททหาร (เวลาตัวเร่งเวลา)",
+            "longest": "ประเภททหารที่ใช้เวลานานที่สุด",
+            "minutesNeeded": "นาทีตัวเร่งเวลาที่ต้องใช้",
+            "minutesUsed": "นาทีตัวเร่งเวลาที่ใช้ (ในสต็อก)",
+            "minutes": "{value} นาที",
+            "tier12Note": "แพ็กเกจข้อมูลระบุว่าค่าใช้จ่ายระดับ 12 คำนวณจากข้อมูลอื่นบางส่วน ค่าเลื่อนขั้นของ Marksman วัดจากในเกม ส่วนค่าของ Infantry และ Lancer ปรับสัดส่วนจากค่านั้น"
+        }
+    },
+    "queue": {
+        "title": "คิวฝึกทหาร",
+        "note": "แต่ละค่ายฝึกได้ครั้งละหนึ่งชุด เสร็จสิ้นจะเพิ่มทหารลงในจำนวนของคุณ",
+        "idle": "ไม่มีการฝึก เริ่มชุดเพื่อใช้ค่ายนี้",
+        "startButton": "เริ่มฝึก",
+        "jobTitle": {
+            "training": "ฝึก {name} T{tier} {count} นาย",
+            "promotion": "เลื่อนขั้น {name} T{from} เป็น T{to} {count} นาย"
+        },
+        "manage": {
+            "slotLabel": "{camp} ครั้งละหนึ่งชุด",
+            "finishText": "เสร็จสิ้นการอัปเกรดจะเพิ่มทหารลงในจำนวนของคุณ ปล่อยค่าย และเพิ่มชุดนี้ลงในประวัติ เมื่อเวลาที่เหลือเป็นศูนย์ การ์ดจะแสดงว่าพร้อมเสร็จสิ้น ไม่มีอะไรเสร็จเอง เพราะคุณอาจใช้ตัวเร่งเวลาไปแล้ว"
+        },
+        "flyout": {
+            "title": "เริ่มฝึก",
+            "description": "ทำเครื่องหมายชุดที่กำลังฝึกหรือเลื่อนขั้นในค่าย",
+            "camp": "ค่าย",
+            "campHelp": "ครั้งละหนึ่งชุดในแต่ละค่าย ค่ายที่ไม่ว่างจะบอกว่าจะว่างเมื่อใด",
+            "busy": "ไม่ว่างจนถึง {date}",
+            "notBuilt": "ยังไม่สร้างค่าย",
+            "action": "การดำเนินการ",
+            "training": "ฝึก",
+            "promotion": "เลื่อนขั้น",
+            "tier": "ระดับ",
+            "tierOption": "ระดับ {tier}",
+            "fromTier": "จากระดับ",
+            "toTier": "เป็นระดับ",
+            "troops": "ทหารในชุด",
+            "max": "สูงสุด",
+            "capacityHint": "หนึ่งชุดมีทหารได้สูงสุด {capacity} นาย คือความจุจากวิจัยบวกเลเวลค่ายของคุณ",
+            "noTiers": "ค่ายนี้ยังไม่มีระดับให้ฝึก เพิ่มเลเวลค่ายในหน้าอาคาร",
+            "cost": "ค่าใช้จ่ายของชุด",
+            "time": "เวลาฝึก",
+            "packageTime": "เวลาในแพ็กเกจข้อมูล",
+            "speed": "ความเร็วฝึก",
+            "readOnly": "อ่านอย่างเดียว",
+            "openBonuses": "เปิดโบนัส",
+            "yourTime": "เวลาของคุณ",
+            "timeHint": "ความเร็วฝึกมาจากหน้าโบนัส ใช้เริ่มไปแล้วเมื่อเกมแสดงเวลาต่างออกไป",
+            "whenStarted": "เริ่มเมื่อใด",
+            "modes": {
+                "now": "เริ่มตอนนี้",
+                "already": "เริ่มไปแล้ว"
+            },
+            "timeLeftHours": "เวลาที่เหลือ ชั่วโมง",
+            "ends": "สิ้นสุด",
+            "takeCost": {
+                "title": "หักค่าใช้จ่ายจากสต็อกของฉัน",
+                "hint": "หักทรัพยากรของชุดจากทรัพยากร จำนวนจะไม่ต่ำกว่า 0",
+                "enough": "คุณมีเพียงพอ",
+                "short": "ขาด {names} สต็อกของรายการเหล่านั้นจะเป็น 0"
+            },
+            "cancel": "ยกเลิก",
+            "start": "เริ่มฝึก",
+            "allCamps": "ทุกค่ายที่ว่าง ({count})",
+            "allCampsHint": "เริ่มชุดเดียวกันในทุกค่ายที่ว่างพร้อมกัน แต่ละค่ายมีเวลาของตัวเอง ระดับที่แสดงคือระดับที่ทุกค่ายที่ว่างฝึกได้",
+            "campTime": "{camp}: {time}"
+        },
+        "toasts": {
+            "started": {
+                "title": "เริ่มฝึกแล้ว",
+                "message": "{what}"
+            },
+            "finished": {
+                "title": "ฝึก {what} แล้ว",
+                "message": "เพิ่มลงในจำนวนทหารและประวัติแล้ว"
+            },
+            "cancelled": {
+                "title": "ยกเลิก {what} แล้ว",
+                "message": "จำนวนทหารของคุณคงเดิม แก้ไขสต็อกในหน้าทรัพยากรหากจำเป็น"
+            },
+            "undo": "เลิกทำ"
+        },
+        "batchName": {
+            "training": "{name} T{tier} {count} นาย",
+            "promotion": "{name} T{from} เป็น T{to} {count} นาย"
+        }
+    },
+    "callOfWar": {
+        "title": "Call of War",
+        "note": "ทักษะของ Romulus รับฟรีหนึ่งครั้งต่อวัน UTC สำหรับทุกค่ายรวมกัน รีเซ็ตเวลา 00:00 UTC",
+        "available": "ทหารฟรีวันนี้ {troops} นาย",
+        "claimed": "รับแล้ววันนี้ รับครั้งใหม่ฟรีได้ในอีก {time}",
+        "notUnlocked": "ต้องสรรหา Romulus และมี Call of War ตั้งแต่เลเวล 1 ในหน้าผู้เชี่ยวชาญ",
+        "level": "Call of War เลเวล {level}",
+        "add": "เพิ่มไปที่ {camp}",
+        "addHint": "ทหาร {troops} นายไปที่ระดับ {tier}",
+        "noTier": "ยังไม่ปลดล็อกระดับ",
+        "toast": {
+            "title": "รับ Call of War แล้ว",
+            "message": "เพิ่มทหาร {troops} นายใน {camp} ระดับ {tier} แล้ว",
+            "undo": "เลิกทำ"
+        }
+    }
+}

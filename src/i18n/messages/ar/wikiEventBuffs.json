@@ -1,0 +1,67 @@
+{
+    "line": "مصادر التعزيز التي تنطبق في كل نمط من أنماط اللعب الـ {modes}: نعم أو لا أو جزئي لـ {sources} نوعًا من التعزيزات.",
+    "matrix": {
+        "title": "مصفوفة التعزيزات",
+        "meta": "{modes} أنماط، {sources} نوعًا من التعزيزات",
+        "table": "مصادر التعزيز حسب نمط اللعب",
+        "mode": "نمط اللعب"
+    },
+    "sources": {
+        "cityBonusWarsBuffs": {
+            "short": "ميزة المدينة",
+            "full": "ميزة المدينة وتعزيزات الحروب"
+        },
+        "deploymentCapacity": {
+            "short": "سعة الانتشار",
+            "full": "سعة الانتشار"
+        },
+        "petSkills": {
+            "short": "مهارات الحيوانات",
+            "full": "مهارات الحيوانات الأليفة"
+        },
+        "daybreakIsland": {
+            "short": "الفجر",
+            "full": "جزيرة الفجر"
+        },
+        "presidentSkills": {
+            "short": "الرئيس",
+            "full": "مهارات الرئيس"
+        },
+        "ministerBuff": {
+            "short": "الوزير",
+            "full": "تعزيز الوزير"
+        },
+        "territoryBonuses": {
+            "short": "الأراضي",
+            "full": "مزايا الأراضي"
+        },
+        "facilityBuff": {
+            "short": "المرفق",
+            "full": "تعزيز المرفق"
+        },
+        "marchAccelerator": {
+            "short": "تسريع المسيرة",
+            "full": "مسرّع المسيرة"
+        },
+        "frostdragonTyrantTitles": {
+            "short": "ألقاب Tyrant",
+            "full": "ألقاب Frostdragon Tyrant"
+        },
+        "frostSphereDomainBonus": {
+            "short": "Frost Sphere",
+            "full": "ميزة نطاق Frost Sphere"
+        }
+    },
+    "applicability": {
+        "yes": "نعم",
+        "no": "لا",
+        "partial": "جزئي"
+    },
+    "notes": {
+        "title": "ملاحظات حسب نمط اللعب",
+        "table": "ملاحظات حسب نمط اللعب",
+        "petSkillsAutoApplied": "مهارات الحيوانات الأليفة تُطبَّق تلقائيًا",
+        "note": "ملاحظة",
+        "noNote": "لا شيء"
+    }
+}

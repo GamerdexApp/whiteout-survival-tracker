@@ -1,0 +1,85 @@
+{
+    "nav": {
+        "main": "เมนูหลัก",
+        "groups": {
+            "chief": "หัวหน้า",
+            "alliance": "พันธมิตร",
+            "account": "บัญชี",
+            "planner": "ตัววางแผน",
+            "wiki": "วิกิ"
+        },
+        "items": {
+            "overview": "ภาพรวม",
+            "buildings": "อาคาร",
+            "daybreakIsland": "Daybreak Island",
+            "heroes": "ฮีโร่",
+            "chiefGear": "อุปกรณ์หัวหน้า",
+            "experts": "ผู้เชี่ยวชาญ",
+            "pets": "สัตว์เลี้ยง",
+            "troops": "กองทหาร",
+            "research": "วิจัย",
+            "alliance": "พันธมิตร",
+            "facilities": "สิ่งปลูกสร้าง",
+            "tech": "เทคโนโลยี",
+            "resources": "ทรัพยากร",
+            "bonuses": "โบนัส",
+            "vip": "VIP",
+            "skins": "สกิน",
+            "events": "กิจกรรม",
+            "tundraAlbum": "Tundra Album",
+            "coreEvents": "กิจกรรมหลัก",
+            "dailies": "ภารกิจรายวัน",
+            "history": "ประวัติ",
+            "wikiReference": "ข้อมูลอ้างอิง",
+            "wikiTimeline": "ไทม์ไลน์",
+            "settings": "ตั้งค่า",
+            "chiefs": "หัวหน้า"
+        },
+        "upgradesRunning": ", {count, plural, other {กำลังอัปเกรด {amount} รายการ}}"
+    },
+    "appShell": {
+        "skipToContent": "ข้ามไปยังเนื้อหา",
+        "closeMenu": "ปิดเมนู"
+    },
+    "appBar": {
+        "openMenu": "เปิดเมนู"
+    },
+    "chiefGate": {
+        "emptyTitle": "ยังไม่ได้เลือกหัวหน้า",
+        "emptyDescription": "สร้างหัวหน้าเพื่อเริ่มติดตาม ข้อมูลทั้งหมดอยู่ในเบราว์เซอร์นี้",
+        "newChief": "หัวหน้าใหม่"
+    },
+    "chiefSwitcher": {
+        "chiefs": "หัวหน้า",
+        "active": "ใช้งานอยู่",
+        "allChiefs": "หัวหน้าทั้งหมด",
+        "newChief": "หัวหน้าใหม่",
+        "loading": "กำลังโหลด",
+        "noChiefYet": "ยังไม่มีหัวหน้า",
+        "sectionLabel": "หัวหน้า",
+        "switchChief": "สลับหัวหน้า"
+    },
+    "footer": {
+        "tagline": "ติดตามหัวหน้า อาคาร ฮีโร่ และงานวิจัยใน Whiteout Survival ได้ในที่เดียว",
+        "product": "ตัวติดตาม",
+        "support": "ช่วยเหลือ",
+        "wikiReference": "วิกิ: ข้อมูลอ้างอิง",
+        "wikiTimeline": "วิกิ: ไทม์ไลน์",
+        "backupAndData": "ข้อมูลสำรองและข้อมูล",
+        "aboutApp": "เกี่ยวกับ",
+        "disclaimerTitle": "ข้อสงวนสิทธิ์",
+        "disclaimer": "แอปพลิเคชันนี้ไม่มีส่วนเกี่ยวข้อง ไม่ได้รับการรับรอง และไม่ได้เชื่อมโยงกับ Whiteout Survival หรือ Century Games เครื่องหมายการค้าและเนื้อหาเกมทั้งหมดเป็นทรัพย์สินของเจ้าของนั้น ๆ",
+        "copyright": "© {year} {appName}",
+        "framework": "สร้างด้วยเฟรมเวิร์ก Gamerdex ซึ่งเป็นพื้นฐานร่วมของตัวติดตามความคืบหน้าเกมฟรี ข้อมูลของคุณอยู่ในเบราว์เซอร์ของคุณ"
+    },
+    "notFound": {
+        "title": "ไม่พบหน้านี้",
+        "description": "ลิงก์อาจเก่าหรือพิมพ์ผิด หัวหน้าของคุณปลอดภัยและไม่มีอะไรเปลี่ยนแปลง",
+        "didYouMean": "คุณหมายถึง <link>{name}</link> หรือไม่",
+        "goToOverview": "ไปที่ภาพรวม",
+        "jumpTo": "หรือไปที่"
+    },
+    "pageHeader": {
+        "wiki": "วิกิ"
+    }
+}

@@ -1,0 +1,102 @@
+{
+    "page": { "title": "Sejarah" },
+    "events": {
+        "svs": "SvS",
+        "showdown": "Alliance Showdown",
+        "king": "King of Icefield",
+        "hall": "Hall of Chief"
+    },
+    "title": {
+        "dated": "{event}, {start} hingga {end}",
+        "undated": "{event}"
+    },
+    "ended": "Tamat {date}",
+    "tabs": { "label": "Tapis mengikut acara", "all": "Semua acara" },
+    "list": {
+        "intro": "Acara yang anda tamatkan daripada Log acara, terkini dahulu. Skor ialah Hari 1 hingga 5 untuk SvS, dan Battle Phase diasingkan. Buka acara untuk melihat pelan berbanding sebenar dan naik taraf yang dirancang.",
+        "event": "Acara",
+        "plan": "Pelan",
+        "actual": "Sebenar",
+        "diff": "Beza",
+        "rank": "Kedudukan",
+        "alliance": "Alliance",
+        "rankLine": "Kedudukan {rank}, alliance {alliance}",
+        "open": "Buka",
+        "openEvent": "Buka {name}",
+        "none": "Belum ada acara jenis ini yang ditamatkan.",
+        "diffWithPercent": "{amount} ({percent}%)"
+    },
+    "empty": {
+        "title": "Belum ada acara",
+        "description": "Acara yang anda tamatkan daripada Log acara pada Acara Utama disimpan di sini bersama pelan dan hasilnya.",
+        "action": "Buka Acara Utama"
+    },
+    "notFound": {
+        "title": "Acara tidak ditemui",
+        "description": "Acara ini tiada dalam sejarah chief aktif. Ia mungkin telah dibuang, atau acara itu disembunyikan pada Acara Utama.",
+        "action": "Kembali ke Sejarah"
+    },
+    "unknown": "Tidak ditetapkan",
+    "belowPlan": "Di bawah pelan",
+    "atOrAbovePlan": "Pada atau di atas pelan",
+    "breadcrumb": { "label": "Jejak navigasi" },
+    "tiles": {
+        "plan": "Pelan",
+        "actual": "Sebenar",
+        "difference": "Perbezaan",
+        "overall": "Keseluruhan",
+        "alliance": "Alliance",
+        "days": "Hari 1 hingga 5",
+        "rank": "Kedudukan",
+        "rankDays": "Kedudukan, Hari 1 hingga 5",
+        "percent": "{percent}%"
+    },
+    "compare": {
+        "title": "Pelan berbanding sebenar",
+        "titleDays": "Pelan berbanding sebenar, Hari 1 hingga 5",
+        "day": "Hari",
+        "plan": "Pelan",
+        "actual": "Sebenar",
+        "diff": "Beza",
+        "rank": "Kedudukan",
+        "ally": "Alli.",
+        "total": "Jumlah",
+        "share": "{percent}% daripada pelan",
+        "shareLine": "{percent}% daripada pelan, kedudukan {rank}, alli. {ally}",
+        "barLabel": "{day}, sebenar sebagai bahagian pelan"
+    },
+    "battle": {
+        "title": "Battle Phase",
+        "note": "Skor dan kedudukan tersendiri. Tidak ditambah kepada jumlah Hari 1 hingga 5."
+    },
+    "upgrades": {
+        "title": "Naik taraf yang dirancang",
+        "titleCount": "Naik taraf yang dirancang, {count}",
+        "summary": "Naik taraf dalam pelan acara ini, dikumpulkan mengikut jenis. {done} daripada {count} telah siap.",
+        "summaryUnchecked": "Naik taraf dalam pelan acara ini, dikumpulkan mengikut jenis.",
+        "none": "Tiada pelan dieksport ke acara ini, jadi tiada naik taraf yang dirancang untuk ditunjukkan.",
+        "groupTitle": "{name}, {count}",
+        "groupStats": "{done} daripada {count} siap, kuasa +{power}, Fire Crystals {fireCrystals}",
+        "groupStatsUnchecked": "Kuasa +{power}, Fire Crystals {fireCrystals}",
+        "power": "Kuasa +{power}",
+        "plannedDay": "Dirancang {day}",
+        "done": "Siap",
+        "notDone": "Belum siap",
+        "levelsFrom": "{from} ke {to}",
+        "levelsTo": "ke {to}",
+        "levelsResearchFrom": "Tahap {from} ke {to}",
+        "levelsResearchTo": "ke tahap {to}",
+        "costAmount": "{amount} {name}"
+    },
+    "pages": {
+        "buildings": "Bangunan",
+        "research": "Penyelidikan",
+        "chiefGear": "Gear Chief",
+        "chiefCharms": "Chief Charms",
+        "heroGear": "Gear Hero",
+        "heroes": "Hero",
+        "pets": "Haiwan Peliharaan",
+        "experts": "Pakar",
+        "troops": "Tentera"
+    }
+}

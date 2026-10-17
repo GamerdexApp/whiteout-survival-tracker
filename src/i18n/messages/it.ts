@@ -13,8 +13,8 @@ import eventLog from "./it/eventLog.json";
 import events from "./it/events.json";
 import experts from "./it/experts.json";
 import facilities from "./it/facilities.json";
-import heroGear from "./it/heroGear.json";
 import heroes from "./it/heroes.json";
+import heroGear from "./it/heroGear.json";
 import history from "./it/history.json";
 import landing from "./it/landing.json";
 import overview from "./it/overview.json";
@@ -42,8 +42,8 @@ import wikiDaybreak from "./it/wikiDaybreak.json";
 import wikiEventBuffs from "./it/wikiEventBuffs.json";
 import wikiEvents from "./it/wikiEvents.json";
 import wikiExperts from "./it/wikiExperts.json";
-import wikiHeroGear from "./it/wikiHeroGear.json";
 import wikiHeroes from "./it/wikiHeroes.json";
+import wikiHeroGear from "./it/wikiHeroGear.json";
 import wikiItems from "./it/wikiItems.json";
 import wikiPets from "./it/wikiPets.json";
 import wikiResearch from "./it/wikiResearch.json";
@@ -53,6 +53,60 @@ import wikiTroops from "./it/wikiTroops.json";
 import wikiTundraAlbum from "./it/wikiTundraAlbum.json";
 import wikiVip from "./it/wikiVip.json";
 
-const it: PartialMessages = { alliance, bonuses, buildings, chiefGear, chiefs, common, coreEvents, dailies, daybreak, eventExport, eventLog, events, experts, facilities, heroGear, heroes, history, landing, overview, pets, queues, research, resources, settings, shell, skins, tech, troops, tundraAlbum, ui, unlocks, vip, wiki, wikiAllianceStructures, wikiAllianceTech, wikiBuildings, wikiChiefCharms, wikiChiefGear, wikiDailies, wikiDaybreak, wikiEventBuffs, wikiEvents, wikiExperts, wikiHeroGear, wikiHeroes, wikiItems, wikiPets, wikiResearch, wikiSkins, wikiTimeline, wikiTroops, wikiTundraAlbum, wikiVip };
+const it: PartialMessages = {
+  alliance,
+  bonuses,
+  buildings,
+  chiefGear,
+  chiefs,
+  common,
+  coreEvents,
+  dailies,
+  daybreak,
+  eventExport,
+  eventLog,
+  events,
+  experts,
+  facilities,
+  heroGear,
+  heroes,
+  history,
+  landing,
+  overview,
+  pets,
+  queues,
+  research,
+  resources,
+  settings,
+  shell,
+  skins,
+  tech,
+  troops,
+  tundraAlbum,
+  ui,
+  unlocks,
+  vip,
+  wiki,
+  wikiAllianceStructures,
+  wikiAllianceTech,
+  wikiBuildings,
+  wikiChiefCharms,
+  wikiChiefGear,
+  wikiDailies,
+  wikiDaybreak,
+  wikiEventBuffs,
+  wikiEvents,
+  wikiExperts,
+  wikiHeroGear,
+  wikiHeroes,
+  wikiItems,
+  wikiPets,
+  wikiResearch,
+  wikiSkins,
+  wikiTimeline,
+  wikiTroops,
+  wikiTundraAlbum,
+  wikiVip,
+};
 
 export default it;

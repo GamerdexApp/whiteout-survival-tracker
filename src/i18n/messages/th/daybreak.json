@@ -1,0 +1,114 @@
+{
+    "page": {
+        "title": "Daybreak Island"
+    },
+    "view": {
+        "subline": "Lumber Camp, Tree of Life และของตกแต่งของคุณ"
+    },
+    "locked": {
+        "title": "ต้องมี Furnace {level}",
+        "description": "Daybreak Island ปลดล็อกที่ Furnace {level} ตอนนี้ Furnace ของคุณคือ {current} เหลืออีก {missing} หน้านี้ยังแสดงอยู่เพื่อให้เห็นสิ่งที่จะมาถึง การแก้ไขปิดอยู่จนถึงตอนนั้น",
+        "noFurnace": "Daybreak Island ปลดล็อกที่ Furnace {level} ยังไม่ได้ตั้งเลเวล Furnace ของคุณ หน้านี้ยังแสดงอยู่เพื่อให้เห็นสิ่งที่จะมาถึง การแก้ไขปิดอยู่จนถึงตอนนั้น",
+        "missing": "{count, plural, other {อีก {amount} เลเวล}}",
+        "link": "ไปที่อาคาร"
+    },
+    "levelOf": "Lv{level} จาก {max}",
+    "camp": {
+        "title": "Lumber Camp",
+        "levelLabel": "เลเวล Lumber Camp",
+        "workers": "คนงาน",
+        "rate": "อัตราต่อวินาที",
+        "essence": "Life Essence ที่ใช้ถึงเลเวลนี้",
+        "needsTree": "ต้องมี Tree of Life เลเวล {required} ของคุณคือ {current}",
+        "treeTooLow": "Tree of Life เลเวล {current} ต่ำเกินไป Lumber Camp เลเวล {level} ต้องมี Tree of Life เลเวล {required}",
+        "next": "ถัดไป เลเวล {level}: Life Essence {essence} ต้องมี Tree of Life เลเวล {tree}",
+        "highest": "นี่คือเลเวลสูงสุด"
+    },
+    "tree": {
+        "title": "Tree of Life",
+        "levelLabel": "เลเวล Tree of Life",
+        "prosperity": "Prosperity ที่ใช้ถึงเลเวลนี้",
+        "essence": "Life Essence ที่ใช้ถึงเลเวลนี้",
+        "perHour": "Life Essence ต่อชั่วโมง",
+        "buff": "บัฟ",
+        "next": "ถัดไป เลเวล {level}: Prosperity {prosperity} Life Essence {essence}",
+        "highest": "นี่คือเลเวลสูงสุด"
+    },
+    "decorations": {
+        "title": "ของตกแต่ง",
+        "owned": "มีแล้ว {owned} จาก {total}",
+        "imageNote": "มีเพียง {withImage} จาก {total} ของตกแต่งที่มีรูปในแพ็กเกจข้อมูล สี่เหลี่ยมทึบแทนอันที่มีรูป สี่เหลี่ยมเส้นประแทนที่เหลือ"
+    },
+    "search": {
+        "label": "ค้นหาของตกแต่ง",
+        "placeholder": "ค้นหาของตกแต่ง"
+    },
+    "status": {
+        "showing": "แสดง {shown} จาก {total} ของตกแต่ง",
+        "showMore": "{count, plural, other {แสดงของตกแต่งเพิ่ม {amount} ชิ้น}}"
+    },
+    "empty": {
+        "title": "ไม่พบของตกแต่งที่ตรงกัน",
+        "description": "เปลี่ยนคำค้นหาหรือตัวกรองเพื่อดูของตกแต่ง",
+        "reset": "รีเซ็ตตัวกรอง"
+    },
+    "card": {
+        "costEach": "ราคาต่อชิ้น",
+        "cost": "{amount} {item}",
+        "limit": "จำกัด",
+        "buffAtLevel": "บัฟที่เลเวล {level}",
+        "buffAtMax": "บัฟที่เลเวลสูงสุด",
+        "buffValue": "{value} {stat}",
+        "prosperityAtMax": "Prosperity ที่สูงสุด",
+        "essenceCost": "ค่า Life Essence",
+        "unknown": "ไม่ทราบ",
+        "owned": "มีแล้ว",
+        "notOwned": "ยังไม่มี",
+        "ownedLabel": "มี {name} แล้ว",
+        "levelLabel": "เลเวล {name}",
+        "countLabel": "จำนวน {name}",
+        "limited": "จำกัดจำนวน",
+        "ownedCount": "มี {count} จาก {limit}"
+    },
+    "categories": {
+        "Basic": "พื้นฐาน",
+        "Vegetation": "พืชพรรณ",
+        "Common": "Common",
+        "Uncommon": "Uncommon",
+        "Rare": "Rare",
+        "Epic": "Epic",
+        "Mythic": "Mythic",
+        "Unique": "Unique"
+    },
+    "filters": {
+        "button": "ตัวกรอง",
+        "title": "ตัวกรอง",
+        "description": "จำกัดรายการของตกแต่ง ตัวกรองไม่ถูกบันทึก",
+        "category": "หมวดหมู่",
+        "categoryAll": "ทั้งหมด {amount}",
+        "categoryOption": "{category} {amount}",
+        "show": "แสดง",
+        "ownedOnly": "เฉพาะที่มีแล้ว",
+        "limitedOnly": "เฉพาะที่จำกัดจำนวน",
+        "unknownBuffOnly": "เฉพาะบัฟที่ไม่ทราบ",
+        "sort": "เรียงลำดับ",
+        "order": {
+            "game": "ลำดับตามแพ็กเกจ",
+            "name": "ชื่อ A ถึง Z",
+            "level": "เลเวลสูงสุดก่อน"
+        },
+        "reset": "รีเซ็ต",
+        "showButton": "{count, plural, other {แสดง {amount} ชิ้น}}",
+        "nonLimitedOnly": "เฉพาะที่ไม่จำกัดจำนวน",
+        "notOwnedOnly": "เฉพาะที่ยังไม่มี"
+    },
+    "prosperity": {
+        "label": "คะแนน Prosperity ของคุณ",
+        "progress": "คะแนน Prosperity ของของตกแต่งคุณ",
+        "possible": "จากสูงสุด {max} เมื่อของตกแต่งทุกชิ้นอยู่ที่เลเวลสูงสุดและจำนวนสูงสุด",
+        "levelled": "ของตกแต่งที่มีเลเวล Prosperity ของเลเวลที่ถึง",
+        "limited": "ของตกแต่งที่จำกัดจำนวน จำนวนที่มีคูณ Prosperity ต่อชิ้น",
+        "ofMax": "{value} จาก {max}",
+        "withoutValue": "{count, plural, other {ของตกแต่งที่มีอยู่ {amount} ชิ้น}}ไม่มีค่า Prosperity ในข้อมูลและ{count, plural, other {ไม่ถูกนับ}}"
+    }
+}

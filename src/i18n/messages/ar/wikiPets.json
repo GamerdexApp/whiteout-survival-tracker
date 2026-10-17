@@ -1,0 +1,52 @@
+{
+    "line": "{pets} من الحيوانات الأليفة. للمرجع فقط، لا يُحفظ شيء هنا.",
+    "roster": {
+        "title": "الحيوانات الأليفة",
+        "count": "{shown} من {total} حيوانًا أليفًا",
+        "search": "بحث",
+        "searchPlaceholder": "ابحث في {count} حيوانًا أليفًا",
+        "rarity": "الندرة",
+        "all": "الكل",
+        "empty": "لا يوجد حيوان أليف يطابق عوامل التصفية هذه.",
+        "summary": "أقصى مستوى {level}، صقل حتى {percent}",
+        "percentValue": "{value}%"
+    },
+    "unlock": {
+        "withFurnace": "اليوم {days}، Furnace {level}",
+        "withPet": "اليوم {days}، {pet} {level}",
+        "daysOnly": "اليوم {days}",
+        "label": "الفتح: {requirement}"
+    },
+    "detail": {
+        "maxLevel": "أقصى مستوى",
+        "maxRefinement": "أقصى صقل",
+        "unlock": "متطلب الفتح",
+        "cooldown": "فترة تهدئة المهارة",
+        "duration": "مدة المهارة",
+        "tierCooldown": "{value}",
+        "maxPower": "أقصى قوة",
+        "levelPower": "قوة المستوى والارتقاء عند أقصى مستوى",
+        "refiningPower": "قوة الصقل عند أقصى صقل"
+    },
+    "skill": {
+        "title": "المهارة",
+        "meta": "{count, plural, zero {{amount} مستوى} one {{amount} مستوى} two {{amount} مستويان} few {{amount} مستويات} many {{amount} مستوى} other {{amount} مستوى}}",
+        "level": "Lv {level}",
+        "percent": "{value}%"
+    },
+    "levels": {
+        "title": "جدول المستويات",
+        "level": "المستوى {level}",
+        "columns": {
+            "level": "المستوى",
+            "food": "طعام الحيوان",
+            "attack": "هجوم القوات",
+            "defense": "دفاع القوات",
+            "power": "قوة القوات",
+            "materials": "مواد الارتقاء"
+        },
+        "refined": "{value} (مصقول {refined})",
+        "none": "لا شيء"
+    },
+    "recordLine": "حيوان أليف {rarity}، أقصى مستوى {level}. للمرجع فقط، لا يُحفظ شيء هنا."
+}

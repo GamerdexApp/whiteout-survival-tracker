@@ -1,0 +1,216 @@
+{
+    "chiefCount": "{count, plural, other {{amount} chief}}",
+    "localStorageNote": {
+        "title": "Storan setempat.",
+        "body": "Chief anda disimpan dalam pelayar ini sahaja. Ia hilang jika cache pelayar dikosongkan. Eksport sandaran dengan kerap."
+    },
+    "page": {
+        "title": "Tetapan",
+        "subline": "Urus data, tetapan chief dan penampilan anda",
+        "tabsLabel": "Tetapan",
+        "tabs": {
+            "preferences": "Keutamaan",
+            "data": "Sandaran dan data",
+            "about": "Perihal"
+        }
+    },
+    "about": {
+        "version": "Versi {version}",
+        "summary": "Jejak kemajuan Whiteout Survival anda: bangunan, hero, gear chief, pakar, haiwan peliharaan, tentera, penyelidikan, teknologi alliance, sumber dan perancang anda. Semuanya disimpan dalam pelayar ini.",
+        "wiki": "Wiki Whiteout Survival",
+        "disclaimer": "Tidak berkaitan dengan atau disokong oleh Century Games. Whiteout Survival ialah tanda dagangan Century Games."
+    },
+    "preferences": {
+        "chiefSettings": {
+            "title": "Tetapan chief",
+            "description": "Terpakai pada setiap chief. Disimpan serta-merta.",
+            "footnote": "Menukar pilihan dalam kalkulator tidak mengubah lalai ini. Paparan Furnace hanya mengubah cara tahap ditulis, bukan tahap itu sendiri. Menambah atau memadam chief tidak pernah menetapkan semula tetapan ini.",
+            "groups": {
+                "furnaceDisplay": "Paparan Furnace",
+                "lists": "Senarai",
+                "calculatorOptions": "Pilihan kalkulator lalai"
+            },
+            "fullLevelLabels": {
+                "label": "Tunjuk label tahap penuh",
+                "description": "Menunjukkan subtahap pada Furnace, contohnya FC 5-2 dan bukan FC 5, dalam bar sisi, pada Gambaran Keseluruhan dan pada Bangunan. Bangunan lain sudah menunjukkan label penuhnya."
+            },
+            "hideMaxed": {
+                "label": "Sembunyikan item maksimum",
+                "description": "Menyembunyikan bangunan, hero, haiwan peliharaan dan pakar yang berada pada tahap tertinggi. Setiap senarai mempunyai penapis Tunjuk maksimum, jadi tiada yang hilang."
+            },
+            "useBonuses": {
+                "label": "Guna jumlah Bonus saya",
+                "description": "Kalkulator baharu bermula dengan peratus kelajuan pembinaan daripada halaman Bonus. Kalkulator masih boleh mengubahnya untuk satu pengiraan."
+            },
+            "showSpeedups": {
+                "label": "Tunjuk minit pecutan",
+                "description": "Menunjukkan minit pecutan yang diperlukan di bawah masa dalam setiap hasil kalkulator."
+            },
+            "showEventPoints": {
+                "label": "Tunjuk mata acara",
+                "description": "Menambah baris mata acara pada hasil kalkulator yang memberikannya."
+            }
+        },
+        "appearance": {
+            "title": "Penampilan",
+            "description": "Pilih rupa aplikasi. Disimpan bersama data anda.",
+            "themeLabel": "Tema",
+            "themeNote": "Sistem mengikut peranti anda dan sekarang ialah {current}. Pilihan ini sebahagian daripada sandaran anda."
+        },
+        "themes": {
+            "light": "Cerah",
+            "dark": "Gelap",
+            "system": "Sistem"
+        }
+    },
+    "data": {
+        "backupDownloaded": "Sandaran dimuat turun",
+        "merged": "Sandaran digabungkan",
+        "replaced": "Sandaran diganti",
+        "undo": "Buat asal",
+        "resetDone": "Semua data ditetapkan semula",
+        "resetDoneMessage": "{chiefs} dibuang dan tetapan dikosongkan.",
+        "management": {
+            "title": "Pengurusan data",
+            "description": "Satu fail sandaran memuatkan setiap chief dan tetapan anda."
+        },
+        "export": {
+            "title": "Eksport data",
+            "description": "Muat turun fail sandaran semua chief tersimpan anda. Nama fail: <file>{fileName}</file>. Tarikh ialah hari setempat anda.",
+            "button": "Eksport semua chief"
+        },
+        "import": {
+            "title": "Import data",
+            "description": "Muat naik fail yang pernah dieksport (.json). Ia disemak dahulu, kemudian anda pilih Gabung atau Ganti dan lihat apa yang berubah. Tiada apa yang berubah sehingga anda mengesahkan.",
+            "chooseFile": "Pilih fail",
+            "noFile": "Tiada fail dipilih",
+            "review": "Semak import"
+        },
+        "reset": {
+            "title": "Tetapkan semula semua data",
+            "warningTitle": "Amaran:",
+            "warning": "Ini akan memadam semua chief dan menetapkan semula tetapan chief dan tema anda. Anda boleh buat asal selama 10 saat, jadi eksport sandaran dahulu jika mahu menyimpan salinan.",
+            "button": "Tetapkan semula semua data"
+        },
+        "chiefs": {
+            "title": "Chief",
+            "description": "Cipta, namakan semula, sunting dan padam chief pada halaman tersendiri. Eksport, import dan tetapan semula terpakai pada kesemuanya.",
+            "manage": "Urus chief"
+        }
+    },
+    "importDialog": {
+        "title": "Import sandaran",
+        "cancel": "Batal",
+        "close": "Tutup",
+        "merge": "Gabung",
+        "replace": "Ganti",
+        "failedTitle": "Import gagal.",
+        "checksTitle": "Semakan pada fail.",
+        "checks": "Senarai chief ditemui dan {count, plural, other {{amount} entri}} dibaca. Belum ada yang disimpan, jadi chief semasa anda tidak terusik.",
+        "howToApply": "Bagaimana fail itu patut digunakan?",
+        "modeLabel": "Mod import",
+        "modes": {
+            "merge": "Gabung (disyorkan)",
+            "replace": "Ganti semuanya pada peranti ini"
+        },
+        "modeNotes": {
+            "merge": "Menambah chief yang baharu dan mengekalkan salinan lebih baharu bagi chief yang ada dalam kedua-duanya. Chief yang hanya ada pada peranti ini kekal. Tetapan anda kekal.",
+            "replace": "Membuang setiap chief pada peranti ini dan memuatkan fail seperti sedia ada, termasuk tetapannya. Gunakan ini untuk memulihkan salinan yang tepat."
+        },
+        "whatChanges": "Apa yang berubah",
+        "columns": {
+            "chief": "Chief",
+            "inFile": "Dalam fail",
+            "onDevice": "Pada peranti ini",
+            "result": "Hasil"
+        },
+        "results": {
+            "added": "Ditambah",
+            "updated": "Dikemas kini daripada fail",
+            "kept": "Salinan pada peranti ini dikekalkan",
+            "replaced": "Dimuatkan daripada fail",
+            "removed": "Dibuang"
+        },
+        "notThere": "Tiada",
+        "noChiefs": "Tiada chief dalam fail.",
+        "undoNote": "Buat asal tersedia selama 10 saat selepas import.",
+        "bytes": "{amount} B",
+        "kilobytes": "{amount} KB",
+        "fileInfo": "{name} · {size}"
+    },
+    "resetDialog": {
+        "title": "Tetapkan semula semua data",
+        "cancel": "Batal",
+        "confirm": "Ya, tetapkan semula semua data",
+        "question": "Padam semua {chiefs} daripada pelayar ini?",
+        "removedTitle": "Apa yang dibuang",
+        "settingsNote": "Pilihan Cerah, Gelap atau Sistem anda kembali kepada Sistem. Tetapan chief kembali kepada lalai. Chief aktif dikosongkan.",
+        "undoNote": "Buat asal tersedia selama 10 saat selepas tetapan semula. Eksport sandaran dahulu jika anda mahu salinan fail yang kekal.",
+        "exportFirst": "Eksport sandaran dahulu"
+    },
+    "backup": {
+        "notJson": "Fail ini bukan JSON yang sah. Tiada apa yang diubah.",
+        "noChiefsList": "Senarai chief tiada. Tiada apa yang diubah.",
+        "duplicateId": "Dua chief berkongsi satu id. Tiada apa yang diubah.",
+        "withNothingChanged": "{reason} Tiada apa yang diubah.",
+        "chief": {
+            "notObject": "Chief {position} bukan objek.",
+            "noId": "Chief {position} tiada id.",
+            "noName": "Chief {position} tiada nama.",
+            "noDates": "Chief {position} tiada tarikhnya.",
+            "badStateNumber": "Chief {position} mempunyai nombor state yang bukan nombor bulat.",
+            "badCoreEvent": "Chief {position} mempunyai acara Utama yang tidak dikenali.",
+            "badUnlock": "Chief {position} mempunyai tetapan buka kunci yang bukan hari pelayan bagi bahagian yang dikenali.",
+            "badPack": "Chief {position} mempunyai tetapan pek yang bukan hidup atau mati."
+        },
+        "settings": {
+            "notObject": "Tetapan bukan objek.",
+            "badTheme": "Tema bukan Cerah, Gelap atau Sistem.",
+            "notText": "Tetapan {key} bukan teks.",
+            "uiNotObject": "Tetapan antara muka bukan objek.",
+            "badTimeZone": "Zon waktu itu tidak dikenali oleh pelayar."
+        },
+        "summary": {
+            "added": "{amount} ditambah",
+            "updated": "{amount} dikemas kini daripada fail",
+            "kept": "{amount} dikekalkan seperti pada peranti ini",
+            "replaced": "{amount} dimuatkan daripada fail",
+            "removed": "{amount} dibuang"
+        }
+    },
+    "region": {
+        "title": "Bahasa dan rantau",
+        "description": "Pilih bahasa dan cara nombor serta tarikh ditulis. Disimpan bersama data anda.",
+        "language": {
+            "label": "Bahasa",
+            "hint": "Nama hero, item, bangunan dan penyelidikan datang daripada data permainan dan kekal dalam bahasa Inggeris buat masa ini."
+        },
+        "numberFormat": {
+            "label": "Format nombor",
+            "hint": "Contoh: {example}",
+            "options": {
+                "auto": "Automatik, ikut bahasa",
+                "us": "1,234.56 (Amerika Syarikat)",
+                "european": "1.234,56 (Jerman)",
+                "french": "1 234,56 (Perancis)",
+                "swiss": "1’234.56 (Switzerland)",
+                "indian": "12,34,567.89 (India)"
+            }
+        },
+        "dateFormat": {
+            "label": "Format tarikh",
+            "hint": "Contoh: {example}",
+            "options": {
+                "auto": "Automatik, ikut bahasa",
+                "mdy": "Bulan/Hari/Tahun",
+                "dmy": "Hari/Bulan/Tahun",
+                "ymd": "Tahun-Bulan-Hari"
+            }
+        },
+        "timeZone": {
+            "label": "Zon waktu",
+            "hint": "Digunakan untuk tarikh dan masa, dan untuk Masa saya pada Acara. Contoh: 14:05 UTC dipaparkan sebagai {example}.",
+            "auto": "Automatik, ikut peranti anda ({zone})"
+        }
+    }
+}

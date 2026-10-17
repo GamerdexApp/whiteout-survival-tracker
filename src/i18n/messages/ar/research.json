@@ -1,0 +1,303 @@
+{
+    "title": "الأبحاث",
+    "unknown": "غير معروف",
+    "nodeCount": "{count, plural, zero {{amount} عقدة} one {{amount} عقدة} two {{amount} عقدتان} few {{amount} عقد} many {{amount} عقدة} other {{amount} عقدة}}",
+    "jobTitle": "{name}، المستوى {from} إلى {to}",
+    "tabs": {
+        "growth": "النمو",
+        "economy": "الاقتصاد",
+        "battle": "المعركة",
+        "war-academy-troops": "War Academy T11",
+        "t12-infantry": "المشاة T12",
+        "t12-marksman": "الرماة T12",
+        "t12-lancer": "الفرسان T12"
+    },
+    "tier": {
+        "plain": "الفئة {tier}",
+        "troopLine": "{line} T{tier}"
+    },
+    "requirement": {
+        "yours": "مستواك {level}",
+        "notBuilt": "غير مبني",
+        "researchLevel": "{name} المستوى {level}",
+        "yoursLevel": "مستواك هو {level}",
+        "notReleased": "{id} (لم يصدر بعد)"
+    },
+    "tabLock": {
+        "unknownAge": "تُفتح أبحاث {tab} عند عمر خادم {days} يومًا. عمر خادمك غير معروف. أضف تاريخ بدء الخادم من تعديل القائد.",
+        "knownAge": "تُفتح أبحاث {tab} عند عمر خادم {days} يومًا. عمر خادمك {yours}."
+    },
+    "option": {
+        "label": "{name}، {tab}، المستوى {from} إلى {to}",
+        "subtitle": "من المستوى {from} إلى المستوى {to}، تبويب {tab}",
+        "busy": "مشغول: {name} المستوى {level}، {timeLeft}"
+    },
+    "nodeCard": {
+        "allResearched": "تم بحث كل المستويات",
+        "nextTime": "وقت المستوى {level}: {time}",
+        "power": {
+            "researched": "{power} مبحوثة",
+            "next": "‎+{power} للمستوى التالي",
+            "some": "القوة {parts}",
+            "none": "القوة 0"
+        },
+        "maxed": "بلغ الأقصى. {bonus}",
+        "noBonus": "لا توجد ميزة في البيانات",
+        "level": "المستوى {level} / {max}",
+        "goal": "الهدف {goal}",
+        "noGoal": "لا يوجد هدف",
+        "progress": "تقدم {name}",
+        "lockedByTab": "مقفل: {reason}",
+        "lockedByRequirement": "مقفل: يتطلب {requirement}",
+        "placeholder": "عنصر مؤقت. التكلفة والميزة فارغتان في الحزمة.",
+        "needsFirst": "يحتاج إلى {names} أولًا",
+        "researching": "{name} قيد البحث",
+        "levelStepper": "مستوى {name}",
+        "detailsOf": "تفاصيل {name}",
+        "details": "التفاصيل"
+    },
+    "queuesStrip": {
+        "title": "طوابير الأبحاث",
+        "note": "النمو والاقتصاد والمعركة تتشارك طابورًا واحدًا. T11 وT12 يستخدمان طابور War Academy.",
+        "idle": "بحث واحد في كل مرة. اضغط على بدء الترقية لبدء بحث."
+    },
+    "filters": {
+        "title": "عوامل التصفية",
+        "description": "اختر ما يعرضه تبويب {tab}",
+        "reset": "إعادة ضبط",
+        "show": "عرض {nodes}",
+        "tier": "الفئة",
+        "statusLabel": "الحالة",
+        "troopLine": "نوع القوات",
+        "orderLabel": "الترتيب",
+        "notSaved": "عوامل التصفية لا تُحفظ.",
+        "all": "الكل",
+        "status": {
+            "all": "الكل",
+            "progress": "قيد التنفيذ",
+            "goal": "له هدف",
+            "maxed": "مكتمل",
+            "locked": "مقفل",
+            "notStarted": "لم يبدأ"
+        },
+        "order": {
+            "game": "ترتيب اللعبة",
+            "name": "الاسم، من A إلى Z",
+            "level": "المستوى، الأعلى أولًا"
+        }
+    },
+    "massSet": {
+        "stop": "{level} من {max}",
+        "title": "ضبط جماعي، {tab}",
+        "description": "اختر عقدة ومستوى. كل ما يسبقها في الشجرة يصل إلى الحد الأقصى.",
+        "cancel": "إلغاء",
+        "set": "ضبط {nodes}",
+        "node": "العقدة",
+        "level": "المستوى",
+        "levelToSet": "المستوى المراد ضبطه",
+        "whatChanges": "ما الذي سيتغير في تبويب {tab}",
+        "nothingChanges": "لا يتغير شيء. كل عقدة هنا في هذا المستوى أو أعلى منه أصلًا.",
+        "change": "{from} إلى {to}",
+        "hidden": "و{amount} من العقد السابقة الأخرى",
+        "alreadyMax": "لا تتغير العقد السابقة التي بلغت أقصى مستوى بالفعل ({count, plural, zero {{amount} عقدة} one {{amount} عقدة} two {{amount} عقدتان} few {{amount} عقد} many {{amount} عقدة} other {{amount} عقدة}}). لا تُمَسّ العقد اللاحقة في الشجرة. والمستوى الأعلى أصلًا يبقى كما هو.",
+        "blockersTitle": "بعض العقد تحتاج إلى مبنى أولًا.",
+        "blocker": "{name} يحتاج إلى {building}",
+        "blockersMore": " و{amount} أخرى",
+        "blockers": "{list}{more}. اختر عقدة أسبق أو ارفع المبنى من صفحة المباني.",
+        "footnote": "الضبط الجماعي يغيّر المستويات المحفوظة لهذا التبويب فقط. لا يخفض أي مستوى. ولا تتغير الأهداف."
+    },
+    "nodeFlyout": {
+        "fallbackTitle": "البحث",
+        "description": "{category}، الفئة {tier}، {levels} مستويات",
+        "close": "إغلاق",
+        "unknown": "غير معروف",
+        "levelOf": "المستوى {level} من {max}",
+        "status": {
+            "notStarted": "لم يبدأ",
+            "maxed": "مكتمل",
+            "inProgress": "قيد التنفيذ"
+        },
+        "goal": "الهدف {goal}",
+        "noGoal": "لا يوجد هدف",
+        "openPlan": "فتح الخطة",
+        "maxLevel": {
+            "title": "أقصى مستوى",
+            "nothingLeft": "لا يوجد ما يمكن بحثه.",
+            "noBonus": "لا توجد ميزة في البيانات."
+        },
+        "placeholder": {
+            "title": "عنصر مؤقت",
+            "description": "ليس لهذه العقدة تكلفة ولا ميزة في الحزمة بعد. يظهر وقت البحث والتكلفة كغير معروف."
+        },
+        "upcoming": {
+            "first": "المستويات الأولى",
+            "after": "المستويات التالية بعد {level}",
+            "heads": {
+                "level": "المستوى",
+                "bonus": "الميزة",
+                "time": "الوقت",
+                "power": "القوة"
+            },
+            "goalBadge": "الهدف",
+            "noBonus": "لا شيء",
+            "shaded": "الصفوف المظللة هي المستويات بين مستواك وهدفك."
+        },
+        "cost": {
+            "title": "تكلفة المستويات التالية",
+            "level": "Lvl"
+        },
+        "total": {
+            "title": "الإجمالي حتى هدفك، المستوى {level} إلى {goal}",
+            "knownTime": "وقت البحث المعروف",
+            "power": "القوة",
+            "missingTimes": "لا يوجد في الحزمة وقت لـ {count, plural, zero {{amount} مستوى} one {{amount} مستوى} two {{amount} مستويين} few {{amount} مستويات} many {{amount} مستوى} other {{amount} مستوى}}، وتُحتسب بصفر هنا."
+        },
+        "requirements": {
+            "title": "متطلبات المستوى {level}",
+            "none": "لا توجد متطلبات.",
+            "met": "مستوفى",
+            "notMet": "غير مستوفى",
+            "later": "المستويات اللاحقة تتطلب: {list}."
+        }
+    },
+    "tree": {
+        "legend": {
+            "max": "الأقصى",
+            "inProgress": "قيد التنفيذ",
+            "notStarted": "لم يبدأ",
+            "locked": "مقفل"
+        },
+        "pillMax": "الأقصى {max}",
+        "pillLevel": "Lv {level} من {max}",
+        "region": "شجرة أبحاث {tab}",
+        "openNode": "{name}، {pill}. فتح التفاصيل"
+    },
+    "plan": {
+        "title": "خطة الأبحاث",
+        "description": "الموارد والوقت والقوة من المستوى الحالي إلى الهدف",
+        "saved": "تم حفظ الخطة {date}",
+        "close": "إغلاق",
+        "save": "حفظ الخطة",
+        "goals": "الأهداف، {nodes}",
+        "noGoals": "لا توجد أهداف بعد. أضف عقدة بحث أعلاه، ثم اختر المستوى الذي تريد بلوغه.",
+        "goalsHint": "المستوى الحالي هو المعروض في الصفحة. غيّره هناك. الأهداف للقراءة فقط في الصفحة وتُحدَّد هنا.",
+        "failed": "تعذر حساب الخطة.",
+        "timeNote": "تستغرق الخطة {time} بعد مكافأة السرعة {percent}%. مخزونك: البحث {research} د، العام {general} د. التسريعات العامة تُحتسب ضمن البحث.",
+        "percent": "{value}%",
+        "percentPlus": "‎+{value}%",
+        "appointment": {
+            "none": "بلا",
+            "regular": "عادي",
+            "supreme": "أعلى"
+        },
+        "add": {
+            "title": "إضافة عقدة بحث",
+            "none": "كل العقد موجودة في الخطة أو في أعلى مستوى لها.",
+            "select": "عقدة البحث المراد إضافتها",
+            "button": "إضافة البحث"
+        },
+        "speed": {
+            "title": "سرعة البحث",
+            "readOnly": "للقراءة فقط",
+            "carriedOver": "منقولة من صفحة المزايا.",
+            "turnedOff": "مُعطّلة في الإعدادات، ضمن تطبيق إجماليات المزايا.",
+            "openBonuses": "فتح المزايا",
+            "stateBuff": "تعزيز الولاية",
+            "vicePresident": "نائب الرئيس",
+            "total": "إجمالي سرعة البحث"
+        },
+        "goal": {
+            "level": "المستوى {level}",
+            "to": "إلى",
+            "label": "هدف {name}",
+            "remove": "إزالة {name} من الخطة"
+        },
+        "result": {
+            "title": "النتيجة، {steps} خطوات",
+            "powerGained": "القوة المكتسبة",
+            "speedupMinutes": "دقائق التسريع المطلوبة",
+            "baseTime": "الوقت الأساسي",
+            "timeWithBonus": "الوقت مع مكافأة {percent}%",
+            "stepsWithoutTime": "لا يوجد في الحزمة وقت لـ {count, plural, zero {{amount} خطوة} one {{amount} خطوة} two {{amount} خطوتين} few {{amount} خطوات} many {{amount} خطوة} other {{amount} خطوة}}، وتُحتسب بصفر ثانية.",
+            "stepCount": "{count, plural, zero {{amount} خطوة} one {{amount} خطوة} two {{amount} خطوتان} few {{amount} خطوات} many {{amount} خطوة} other {{amount} خطوة}}",
+            "buildingRequirements": "متطلبات المباني",
+            "unmet": "المتطلبات غير المستوفاة",
+            "unmetNone": "لا يوجد منها لهذه الأهداف.",
+            "unmetItem": "{name} المستوى {level} يحتاج إلى {requires} المستوى {requiresLevel}"
+        },
+        "export": {
+            "button": "تصدير إلى الفعاليات الأساسية",
+            "empty": "أضف هدفًا إلى الخطة لتصديرها.",
+            "speedupMinutes": "دقائق تسريع البحث",
+            "power": "القوة المكتسبة من الأبحاث",
+            "computed": "حسبها التطبيق من نتيجة الخطة.",
+            "unscored": "لا توجد فعالية تحتسب نقاطًا لـ {name}."
+        }
+    },
+    "view": {
+        "ofTotal": "{count} من {total}",
+        "undo": "تراجع",
+        "massSetApplied": {
+            "title": "تم تطبيق الضبط الجماعي",
+            "message": "تم تحديث {nodes}."
+        },
+        "started": {
+            "title": "بدأ البحث",
+            "message": "{name}، المستوى {from} إلى {to}"
+        },
+        "manage": {
+            "slotLabel": "{queue}، {category}",
+            "finishText": "إنهاء الترقية يضبط {name} على المستوى {level}، ويحرر طابور {queue}، ويضيف الترقية إلى السجل. عند بلوغ الوقت المتبقي صفرًا تعرض بطاقة العقدة وبطاقة الطابور عبارة جاهز للإنهاء. لا ينتهي شيء من تلقاء نفسه لأنك قد تكون استخدمت التسريعات."
+        },
+        "finished": {
+            "title": "تم بحث {name}",
+            "message": "أصبح الآن المستوى {level}. أُضيف إلى السجل."
+        },
+        "cancelled": {
+            "title": "أُلغي بحث {name}",
+            "message": "يبقى المستوى كما كان. عدّل مخزونك في الموارد إن لزم."
+        },
+        "subline": {
+            "researchCenter": "Research Center {level}",
+            "warAcademy": "War Academy {level}"
+        },
+        "stats": {
+            "maxed": "العقد المكتملة، {percent}% من الشجرة",
+            "power": "قوة الأبحاث، قوة كل مستوى تم بحثه",
+            "withoutTimeNone": "من دون وقت بحث، لكل مستوى وقت",
+            "withoutTimeSome": "من دون وقت بحث، يظهر كغير معروف",
+            "locked": "مقفل بسبب عمر الخادم أو المتطلبات"
+        },
+        "tabLockedNote": "{reason} لا يزال بإمكانك تحديد الأهداف في الخطة.",
+        "lockedByRequirement": "{count} من {total} عقدة في هذا التبويب مقفلة بسبب متطلب.",
+        "search": {
+            "label": "بحث في العقد",
+            "placeholder": "ابحث في العقد بالاسم أو الميزة"
+        },
+        "massSet": "ضبط جماعي",
+        "layout": {
+            "label": "التخطيط",
+            "grid": "شبكة",
+            "tree": "شجرة"
+        },
+        "plan": "الخطة",
+        "status": {
+            "tree": "{count} عقدة في شجرة {tab}. قوة الأبحاث في هذا التبويب: {power}. مرّر للتحريك. العقد التي لا تطابق البحث أو عوامل التصفية تظهر باهتة.",
+            "grid": "عرض {shown} من {count} عقدة في {tab}. قوة الأبحاث في هذا التبويب: {power}. الأهداف للقراءة فقط هنا وتُحدَّد في الخطة."
+        },
+        "empty": {
+            "title": "لا توجد عقد مطابقة",
+            "description": "غيّر البحث أو أعد ضبط عوامل التصفية لعرض كل العقد.",
+            "reset": "إعادة ضبط البحث وعوامل التصفية"
+        },
+        "start": {
+            "description": "حدّد بحثًا على أنه قيد الترقية",
+            "selectLabel": "البحث المراد ترقيته",
+            "selectHelp": "تظهر فقط الأبحاث التي يمكنك بدءها الآن. الأبحاث المقفلة والمكتملة وقيد التنفيذ مستبعدة. بحث النمو أو الاقتصاد أو المعركة يستخدم طابور الأبحاث. وبحث T11 أو T12 يستخدم طابور War Academy.",
+            "timeLabel": "وقت البحث",
+            "speedLabel": "سرعة البحث",
+            "slotLabel": "الطابور",
+            "slotHelp": "بحث واحد في كل مرة في كل طابور. عندما يكون الطابور مشغولًا تعرض هذه البطاقة موعد تفرغه."
+        }
+    }
+}

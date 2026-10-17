@@ -1,0 +1,86 @@
+{
+    "page": {
+        "title": "المرافق"
+    },
+    "view": {
+        "subline": "{chief} · {facilities} من مرافق الخريطة، والقلعة، و{strongholds} من الحصون، و{fortresses} من القلاع الحصينة"
+    },
+    "summary": {
+        "owned": "المرافق المملوكة",
+        "ownedValue": "{owned} من {total}",
+        "strongholds": "الحصون، مرجع",
+        "fortresses": "القلاع الحصينة، مرجع",
+        "castle": "القلعة، مرجع"
+    },
+    "tabs": {
+        "label": "عروض المرافق",
+        "facilities": "المرافق",
+        "fortresses": "القلاع الحصينة",
+        "map": "الخريطة"
+    },
+    "show": {
+        "label": "عرض",
+        "all": "الكل",
+        "owned": "مملوك",
+        "notOwned": "غير مملوك"
+    },
+    "card": {
+        "owned": "مملوك {count}",
+        "level": "المستوى {level}",
+        "ownedSwitch": "مملوك",
+        "switchLabel": "المستوى {level} من {facility} مملوك",
+        "booster": "المعزِّز",
+        "injured": "جرحى بشدة",
+        "losses": "الخسائر",
+        "ownLimit": "حد التملك {limit}. {spots} {spotWord} على الخريطة.",
+        "spot": "موقع",
+        "spots": "مواقع"
+    },
+    "empty": {
+        "title": "لا شيء لعرضه",
+        "description": "لا يوجد مستوى مرفق يطابق عامل التصفية هذا.",
+        "reset": "عرض الكل"
+    },
+    "fortress": {
+        "kind": {
+            "castle": "القلعة",
+            "stronghold": "الحصن",
+            "fortress": "القلعة الحصينة"
+        },
+        "coordinates": "x {x}، y {y}",
+        "rewardsHeading": "المكافأة حسب المرحلة",
+        "phase": "المرحلة {phase}",
+        "noRewards": "لا توجد مكافآت للقلعة في الحزمة.",
+        "referenceNote": "للمرجع فقط. تتغير القلعة والحصون والقلاع الحصينة كل أسبوع، لذا لا شيء هنا مملوك أو متتبَّع.",
+        "kindLabel": "النوع",
+        "allKinds": "كل الأنواع",
+        "rewardLabel": "المكافأة",
+        "allRewards": "كل المكافآت",
+        "shown": "عرض {shown} من {total} منشأة",
+        "empty": "لا توجد منشأة تطابق عوامل التصفية.",
+        "reset": "إعادة ضبط عوامل التصفية",
+        "filters": "عوامل التصفية",
+        "filtersTitle": "عوامل التصفية",
+        "filtersDescription": "صفِّ المنشآت حسب النوع والمكافأة",
+        "done": "عرض {count}"
+    },
+    "map": {
+        "highlight": "تمييز مرفق",
+        "layers": "الطبقات",
+        "layerFacilities": "المرافق",
+        "layerStrongholds": "الحصون",
+        "layerFortresses": "القلاع الحصينة",
+        "spotsHeading": "مواقع المرافق، {count} في المجموع",
+        "spotLegend": "{name} ({count})",
+        "codeHint": "الرقم بعد الرمز هو المستوى، مثلًا Co1 هو Construction المستوى 1. المرفق المميّز يظهر ممتلئًا.",
+        "structures": "المنشآت",
+        "castleStrongholdLegend": "القلعة (1) والحصون S1 إلى S4 ({count})",
+        "fortressLegend": "القلعة الحصينة 1 إلى {count}",
+        "selected": "المحدد على الخريطة",
+        "selectedNone": "حدّد قلعة أو حصنًا أو قلعة حصينة على الخريطة.",
+        "mapLabel": "خريطة التحالف",
+        "note": "مخطط هيكلي لخريطة التحالف. تستخدم المواقع إحداثيات x وy من الحزمة على شبكة {size} في {size}، ومربع الشبكة الواحد يساوي {step}. الموقع هو مكان يمكن أن يظهر فيه مرفق، لذا لا تُعلَّم المرافق المملوكة. لا توجد رسومات تضاريس في الحزمة.",
+        "spotLabel": "{name} المستوى {level}، x {x}، y {y}",
+        "structureLabel": "{name}، x {x}، y {y}"
+    }
+}

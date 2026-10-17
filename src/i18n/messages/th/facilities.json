@@ -1,0 +1,86 @@
+{
+    "page": {
+        "title": "สิ่งปลูกสร้าง"
+    },
+    "view": {
+        "subline": "{chief} · สิ่งปลูกสร้างบนแผนที่ {facilities} แห่ง ปราสาท ฐานที่มั่น {strongholds} แห่ง และป้อมปราการ {fortresses} แห่ง"
+    },
+    "summary": {
+        "owned": "สิ่งปลูกสร้างที่มี",
+        "ownedValue": "{owned} จาก {total}",
+        "strongholds": "ฐานที่มั่น ข้อมูลอ้างอิง",
+        "fortresses": "ป้อมปราการ ข้อมูลอ้างอิง",
+        "castle": "ปราสาท ข้อมูลอ้างอิง"
+    },
+    "tabs": {
+        "label": "มุมมองสิ่งปลูกสร้าง",
+        "facilities": "สิ่งปลูกสร้าง",
+        "fortresses": "ป้อมปราการ",
+        "map": "แผนที่"
+    },
+    "show": {
+        "label": "แสดง",
+        "all": "ทั้งหมด",
+        "owned": "ที่มีแล้ว",
+        "notOwned": "ที่ยังไม่มี"
+    },
+    "card": {
+        "owned": "มี {count}",
+        "level": "เลเวล {level}",
+        "ownedSwitch": "มีแล้ว",
+        "switchLabel": "มี {facility} เลเวล {level} แล้ว",
+        "booster": "ตัวเสริม",
+        "injured": "บาดเจ็บสาหัส",
+        "losses": "สูญเสีย",
+        "ownLimit": "จำกัดที่ถือครอง {limit} มี {spots} {spotWord}บนแผนที่",
+        "spot": "จุด",
+        "spots": "จุด"
+    },
+    "empty": {
+        "title": "ไม่มีสิ่งที่จะแสดง",
+        "description": "ไม่มีสิ่งปลูกสร้างเลเวลใดตรงกับตัวกรองนี้",
+        "reset": "แสดงทั้งหมด"
+    },
+    "fortress": {
+        "kind": {
+            "castle": "ปราสาท",
+            "stronghold": "ฐานที่มั่น",
+            "fortress": "ป้อมปราการ"
+        },
+        "coordinates": "x {x}, y {y}",
+        "rewardsHeading": "รางวัลตามช่วง",
+        "phase": "ช่วง {phase}",
+        "noRewards": "ปราสาทไม่มีรางวัลในแพ็กเกจข้อมูล",
+        "referenceNote": "ข้อมูลอ้างอิงเท่านั้น ปราสาท ฐานที่มั่น และป้อมปราการเปลี่ยนทุกสัปดาห์ จึงไม่มีสิ่งใดที่นี่ที่ถือครองหรือติดตาม",
+        "kindLabel": "ชนิด",
+        "allKinds": "ทุกชนิด",
+        "rewardLabel": "รางวัล",
+        "allRewards": "ทุกรางวัล",
+        "shown": "แสดง {shown} จาก {total} สิ่งก่อสร้าง",
+        "empty": "ไม่มีสิ่งก่อสร้างที่ตรงกับตัวกรอง",
+        "reset": "รีเซ็ตตัวกรอง",
+        "filters": "ตัวกรอง",
+        "filtersTitle": "ตัวกรอง",
+        "filtersDescription": "กรองสิ่งก่อสร้างตามชนิดและรางวัล",
+        "done": "แสดง {count}"
+    },
+    "map": {
+        "highlight": "เน้นสิ่งปลูกสร้าง",
+        "layers": "ชั้น",
+        "layerFacilities": "สิ่งปลูกสร้าง",
+        "layerStrongholds": "ฐานที่มั่น",
+        "layerFortresses": "ป้อมปราการ",
+        "spotsHeading": "จุดสิ่งปลูกสร้าง รวม {count}",
+        "spotLegend": "{name} ({count})",
+        "codeHint": "ตัวเลขหลังรหัสคือเลเวล เช่น Co1 คือ Construction เลเวล 1 สิ่งปลูกสร้างที่เน้นจะถูกเติมสี",
+        "structures": "สิ่งก่อสร้าง",
+        "castleStrongholdLegend": "ปราสาท (1) และฐานที่มั่น S1 ถึง S4 ({count})",
+        "fortressLegend": "ป้อมปราการ 1 ถึง {count}",
+        "selected": "เลือกบนแผนที่",
+        "selectedNone": "เลือกปราสาท ฐานที่มั่น หรือป้อมปราการบนแผนที่",
+        "mapLabel": "แผนที่พันธมิตร",
+        "note": "ภาพร่างของแผนที่พันธมิตร ตำแหน่งใช้ x และ y จากแพ็กเกจข้อมูลบนตาราง {size} คูณ {size} ช่องละ {step} จุดคือที่ที่สิ่งปลูกสร้างปรากฏได้ จึงไม่มีการทำเครื่องหมายสิ่งที่มีแล้ว แพ็กเกจข้อมูลไม่มีภาพภูมิประเทศ",
+        "spotLabel": "{name} เลเวล {level}, x {x}, y {y}",
+        "structureLabel": "{name}, x {x}, y {y}"
+    }
+}

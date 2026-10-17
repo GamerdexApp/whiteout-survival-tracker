@@ -1,0 +1,165 @@
+{
+    "topBar": {
+        "navLabel": "Halaman utama",
+        "links": {
+            "how": "Cara kerja",
+            "features": "Ciri",
+            "privacy": "Data anda",
+            "faq": "Soalan Lazim"
+        }
+    },
+    "action": {
+        "createFirstChief": "Cipta chief pertama anda",
+        "goToOverview": "Ke Gambaran Keseluruhan",
+        "newChief": "Chief baharu",
+        "allChiefs": "Semua chief"
+    },
+    "hero": {
+        "label": "Whiteout Survival Tracker",
+        "title": "Jejak setiap chief. Rancang setiap naik taraf.",
+        "description": "Rakan percuma untuk Whiteout Survival. Simpan bangunan, hero, gear dan penyelidikan anda di satu tempat, rancang naik taraf seterusnya, dan jalankan acara Utama anda dari hari pertama hingga sejarahnya.",
+        "note": "Percuma. Data anda kekal dalam pelayar ini.",
+        "learnMore": "Ketahui lebih lanjut"
+    },
+    "continue": {
+        "label": "Selamat kembali",
+        "title": "Teruskan dengan {name}",
+        "chiefCount": "{count, plural, other {{amount} chief disimpan dalam pelayar ini}}"
+    },
+    "how": {
+        "label": "Cara ia berfungsi",
+        "title": "Dari chief pertama anda hingga sejarah acara dalam empat langkah",
+        "steps": {
+            "create": {
+                "title": "Cipta chief",
+                "description": "Beri nama. Nombor pelayan dan nota adalah pilihan."
+            },
+            "levels": {
+                "title": "Tetapkan tahap anda",
+                "description": "Masukkan tahap Furnace dan bangunan anda, kemudian isi hero, gear dan penyelidikan semasa anda bermain."
+            },
+            "plan": {
+                "title": "Rancang naik taraf",
+                "description": "Lihat sumber, masa dan kuasa untuk matlamat anda, dan apa yang masih kurang."
+            },
+            "events": {
+                "title": "Jalankan acara anda",
+                "description": "Kira mata, catat skor dan kedudukan, kemudian simpan acara ke Sejarah."
+            }
+        }
+    },
+    "features": {
+        "label": "Apa yang boleh anda lakukan",
+        "title": "Rancang, main, kemudian imbas kembali",
+        "open": "Buka {page}",
+        "items": {
+            "plan": {
+                "title": "Rancang sebarang naik taraf",
+                "description": "Tetapkan matlamat dalam panel Rancang pada Bangunan, Hero, Gear Chief dan Penyelidikan. Lihat sumber, masa dan kuasa yang diperlukan, dengan pecutan dan bonus dibaca daripada halaman Bonus anda.",
+                "page": "Bangunan"
+            },
+            "coreEvents": {
+                "title": "Kalkulator acara Utama",
+                "description": "SvS, Alliance Showdown, King of Icefield dan Hall of Chief. Kira mata untuk setiap tindakan, tambah bonus pakar anda, dan semak ambang serta ganjaran kedudukan.",
+                "page": "Acara Utama"
+            },
+            "eventLog": {
+                "title": "Log acara dan senarai semak harian",
+                "description": "Catat skor dan kedudukan untuk setiap hari acara. Senarai semak menunjukkan tindakan yang boleh anda lakukan setiap hari.",
+                "page": "Acara Utama"
+            },
+            "history": {
+                "title": "Sejarah: pelan berbanding sebenar",
+                "description": "Tamatkan acara untuk menyimpannya. Bandingkan pelan anda dengan apa yang anda lakukan, dan lihat setiap naik taraf yang dirancang sebagai siap atau belum siap.",
+                "page": "Sejarah"
+            },
+            "research": {
+                "title": "Pokok penyelidikan",
+                "description": "Growth, Economy, Battle, War Academy dan tab T12, sebagai grid atau pokok, dengan buka kunci mengikut usia pelayan.",
+                "page": "Penyelidikan"
+            },
+            "alliance": {
+                "title": "Teknologi dan peta alliance",
+                "description": "Jejak sepanduk, teknologi dan kemudahan alliance anda, dan baca susun atur istana, kubu dan kota.",
+                "page": "Alliance"
+            }
+        }
+    },
+    "numbers": {
+        "title": "Apa yang diliputi penjejak",
+        "buildings": "bangunan dengan kos dan masa",
+        "heroes": "hero",
+        "research": "teknologi penyelidikan",
+        "coreEvents": "kalkulator acara Utama",
+        "wiki": "halaman rujukan wiki, serta garis masa"
+    },
+    "pages": {
+        "label": "Setiap halaman",
+        "title": "Dikumpulkan mengikut susunan permainan",
+        "description": "Halaman yang sama seperti bar sisi dalam aplikasi.",
+        "listLabel": "Halaman {group}",
+        "general": "Umum"
+    },
+    "privacy": {
+        "label": "Data anda",
+        "title": "Peribadi secara lalai, mudah alih bila anda mahu",
+        "items": {
+            "browser": {
+                "title": "Kekal dalam pelayar anda",
+                "description": "Tidak perlu membuat akaun. Chief anda disimpan dalam pelayar ini pada peranti ini."
+            },
+            "file": {
+                "title": "Satu fail tersimpan",
+                "description": "Semua yang anda masukkan disimpan dalam satu fail tersimpan di pelayar, jadi ia dimuatkan dengan pantas dan tiada yang berselerak di merata tempat."
+            },
+            "chiefs": {
+                "title": "Beberapa chief",
+                "description": "Simpan chief utama dan alt anda. Tukar antara mereka dari bar sisi."
+            },
+            "backup": {
+                "title": "Sandaran dan pemulihan",
+                "description": "Eksport data anda ke fail dari Tetapan dan import pada pelayar atau peranti lain."
+            }
+        },
+        "backupLink": "Buka Sandaran dan data"
+    },
+    "faq": {
+        "label": "Ada soalan",
+        "title": "Soalan lazim",
+        "items": {
+            "free": {
+                "question": "Adakah ia percuma?",
+                "answer": "Ya. Tiada yang perlu dibayar dan tiada yang perlu dibuka."
+            },
+            "data": {
+                "question": "Di mana data saya?",
+                "answer": "Dalam pelayar ini, dalam storan setempat untuk laman ini. Ia tidak dihantar ke pelayan. Jika anda kosongkan data laman untuk halaman ini, chief akan dipadam, jadi eksport sandaran dahulu."
+            },
+            "move": {
+                "question": "Bagaimana saya berpindah ke peranti lain?",
+                "answer": "Buka Tetapan, kemudian Sandaran dan data, dan eksport fail sandaran. Pada peranti lain, buka halaman yang sama, pergi ke Tetapan, Sandaran dan data, dan import fail itu."
+            },
+            "chiefs": {
+                "question": "Bolehkah saya mempunyai beberapa chief?",
+                "answer": "Ya. Tiada had. Setiap chief mempunyai bangunan, hero, penyelidikan dan acaranya sendiri, dan anda bertukar antara mereka di bar sisi."
+            },
+            "account": {
+                "question": "Adakah saya perlukan akaun atau fail simpanan daripada permainan?",
+                "answer": "Tidak. Anda menaip tahap anda sendiri. Data permainan untuk kos, masa dan statistik disertakan bersama penjejak."
+            },
+            "official": {
+                "question": "Adakah ini aplikasi rasmi?",
+                "answer": "Tidak. Ia ialah alat peminat tidak rasmi. Ia tidak berkaitan dengan Whiteout Survival atau Century Games. Pemberitahuan penuh ada di pengaki."
+            },
+            "wiki": {
+                "question": "Apakah Wiki?",
+                "answer": "Satu set halaman rujukan untuk data permainan, seperti bangunan, hero, haiwan peliharaan, item dan acara, serta garis masa pelayan. Anda boleh membacanya tanpa mencipta chief."
+            }
+        }
+    },
+    "closing": {
+        "title": "Mula menjejak hari ini",
+        "description": "Chief pertama anda hanya perlukan satu nama. Anda boleh mengubah segalanya kemudian.",
+        "wiki": "Semak imbas Wiki"
+    }
+}

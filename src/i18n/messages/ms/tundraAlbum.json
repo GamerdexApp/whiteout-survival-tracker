@@ -1,0 +1,90 @@
+{
+    "page": {
+        "title": "Tundra Album"
+    },
+    "view": {
+        "subline": "{chief} · {details} · {complete} daripada {total} album lengkap"
+    },
+    "summary": {
+        "label": "Album lengkap",
+        "value": "{done} daripada {total}",
+        "progress": "Album lengkap",
+        "inData": "{shown} daripada {all} album ada dalam data"
+    },
+    "buffs": {
+        "title": "Buff yang dikira sekarang",
+        "derived": "Diperoleh",
+        "none": "Belum ada album yang lengkap, jadi tiada buff Tundra Album dikira.",
+        "note": "Hanya album lengkap dikira. Buff ini masuk ke halaman <link>Bonus</link>."
+    },
+    "album": {
+        "status": {
+            "complete": "Lengkap",
+            "inProgress": "Sedang berjalan"
+        },
+        "buffWhenComplete": "Buff apabila lengkap",
+        "puzzlesDone": "Teka-teki selesai",
+        "puzzlesValue": "{done} daripada {total}",
+        "puzzlesProgress": "Teka-teki {album} selesai",
+        "completionRewards": "Ganjaran kelengkapan",
+        "markComplete": "Tandakan album lengkap",
+        "notCounting": "Belum dikira. {buff} dikira pada halaman Bonus hanya apabila semua {total} teka-teki selesai. Tandakan album lengkap menetapkan semua {total} teka-teki dan menunjukkan toast Buat asal.",
+        "counting": "Dikira sekarang. {buff} ada pada halaman Bonus. Menyahtanda teka-teki mengeluarkannya semula.",
+        "piecesValue": "{collected} daripada {total} kepingan dikumpul"
+    },
+    "puzzle": {
+        "pieces": "{count, plural, other {{amount} kepingan}}, bintang 1 hingga 5: {split}",
+        "reward": "Ganjaran",
+        "done": "Teka-teki selesai, semua kepingan dikumpul",
+        "doneFor": "Selesai, {puzzle}",
+        "collectedLabel": "Kepingan dikumpul",
+        "collected": "{collected} daripada {total}",
+        "pieceLabel": "{name}, {stars} bintang",
+        "pieceHint": "Pilih kepingan yang anda ada. Menandakan teka-teki selesai mengumpul semuanya.",
+        "allCollected": "Teka-teki selesai, jadi setiap kepingan dikumpul."
+    },
+    "reward": {
+        "line": "{amount} {item}",
+        "sized": "{amount} {item} ({size})",
+        "unknownItem": "Item tidak diketahui"
+    },
+    "toast": {
+        "markedTitle": "{album} ditandakan lengkap",
+        "markedMessage": "Semua {total} teka-teki selesai.",
+        "unmarkedTitle": "{puzzle} dinyahtanda",
+        "unmarkedMessage": "{album} sedang berjalan semula dan buffnya keluar daripada Bonus.",
+        "undo": "Buat asal"
+    },
+    "notInData": "{count} lagi daripada {total} Tundra Album belum ada dalam data. Ia ditambah apabila pakej memilikinya.",
+    "pieces": {
+        "label": "Kepingan dikumpul",
+        "value": "{collected} daripada {available}",
+        "progress": "Kepingan dikumpul dalam semua album",
+        "viewRewards": "Lihat ganjaran kepingan"
+    },
+    "rewardsFlyout": {
+        "title": "Ganjaran bilangan kepingan",
+        "description": "Ganjaran yang anda dapat apabila kepingan yang dikumpul dalam semua album bertambah",
+        "close": "Tutup",
+        "collected": "Kepingan dikumpul",
+        "collectedValue": "{collected} daripada {available}",
+        "progress": "Kepingan dikumpul dalam semua album",
+        "reached": "{reached} daripada {all} ganjaran bilangan kepingan dicapai",
+        "next": "Ganjaran seterusnya pada {pieces} kepingan, {missing} lagi untuk dikumpul.",
+        "allReached": "Setiap ganjaran bilangan kepingan dalam data telah dicapai.",
+        "totalSoFar": "Ganjaran diperoleh setakat ini",
+        "tree": "Ganjaran mengikut kepingan dikumpul",
+        "tier": "Ganjaran {tier} pada {pieces} kepingan",
+        "stateReached": "Dikumpul",
+        "stateNext": "Seterusnya, {missing} lagi",
+        "stateLater": "{missing} lagi"
+    },
+    "picker": {
+        "label": "Album",
+        "title": "Album",
+        "complete": "Album lengkap",
+        "puzzles": "{done} daripada {total} teka-teki",
+        "pieces": "{collected} daripada {total} kepingan",
+        "piecesProgress": "Kepingan {album} dikumpul"
+    }
+}

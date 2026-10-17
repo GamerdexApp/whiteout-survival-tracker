@@ -13,8 +13,8 @@ import eventLog from "./es-419/eventLog.json";
 import events from "./es-419/events.json";
 import experts from "./es-419/experts.json";
 import facilities from "./es-419/facilities.json";
-import heroGear from "./es-419/heroGear.json";
 import heroes from "./es-419/heroes.json";
+import heroGear from "./es-419/heroGear.json";
 import history from "./es-419/history.json";
 import landing from "./es-419/landing.json";
 import overview from "./es-419/overview.json";
@@ -42,8 +42,8 @@ import wikiDaybreak from "./es-419/wikiDaybreak.json";
 import wikiEventBuffs from "./es-419/wikiEventBuffs.json";
 import wikiEvents from "./es-419/wikiEvents.json";
 import wikiExperts from "./es-419/wikiExperts.json";
-import wikiHeroGear from "./es-419/wikiHeroGear.json";
 import wikiHeroes from "./es-419/wikiHeroes.json";
+import wikiHeroGear from "./es-419/wikiHeroGear.json";
 import wikiItems from "./es-419/wikiItems.json";
 import wikiPets from "./es-419/wikiPets.json";
 import wikiResearch from "./es-419/wikiResearch.json";
@@ -53,6 +53,60 @@ import wikiTroops from "./es-419/wikiTroops.json";
 import wikiTundraAlbum from "./es-419/wikiTundraAlbum.json";
 import wikiVip from "./es-419/wikiVip.json";
 
-const es419: PartialMessages = { alliance, bonuses, buildings, chiefGear, chiefs, common, coreEvents, dailies, daybreak, eventExport, eventLog, events, experts, facilities, heroGear, heroes, history, landing, overview, pets, queues, research, resources, settings, shell, skins, tech, troops, tundraAlbum, ui, unlocks, vip, wiki, wikiAllianceStructures, wikiAllianceTech, wikiBuildings, wikiChiefCharms, wikiChiefGear, wikiDailies, wikiDaybreak, wikiEventBuffs, wikiEvents, wikiExperts, wikiHeroGear, wikiHeroes, wikiItems, wikiPets, wikiResearch, wikiSkins, wikiTimeline, wikiTroops, wikiTundraAlbum, wikiVip };
+const es419: PartialMessages = {
+  alliance,
+  bonuses,
+  buildings,
+  chiefGear,
+  chiefs,
+  common,
+  coreEvents,
+  dailies,
+  daybreak,
+  eventExport,
+  eventLog,
+  events,
+  experts,
+  facilities,
+  heroGear,
+  heroes,
+  history,
+  landing,
+  overview,
+  pets,
+  queues,
+  research,
+  resources,
+  settings,
+  shell,
+  skins,
+  tech,
+  troops,
+  tundraAlbum,
+  ui,
+  unlocks,
+  vip,
+  wiki,
+  wikiAllianceStructures,
+  wikiAllianceTech,
+  wikiBuildings,
+  wikiChiefCharms,
+  wikiChiefGear,
+  wikiDailies,
+  wikiDaybreak,
+  wikiEventBuffs,
+  wikiEvents,
+  wikiExperts,
+  wikiHeroGear,
+  wikiHeroes,
+  wikiItems,
+  wikiPets,
+  wikiResearch,
+  wikiSkins,
+  wikiTimeline,
+  wikiTroops,
+  wikiTundraAlbum,
+  wikiVip,
+};
 
 export default es419;

@@ -1,0 +1,117 @@
+{
+    "unknown": "Tidak diketahui",
+    "describe": {
+        "state": "State {number}",
+        "empty": "Belum ada butiran"
+    },
+    "coreEvents": {
+        "svs": "SvS",
+        "showdown": "Alliance Showdown",
+        "king": "King of Icefield",
+        "hall": "Hall of Chief"
+    },
+    "count": "{count, plural, other {{amount} chief}}",
+    "card": {
+        "active": "Aktif",
+        "noNotes": "Tiada nota",
+        "furnace": "Furnace",
+        "state": "State",
+        "created": "Dicipta: {date}",
+        "lastModified": "Terakhir diubah: {date}",
+        "setActive": "Tetapkan sebagai aktif",
+        "edit": "Sunting",
+        "delete": "Padam"
+    },
+    "dialog": {
+        "editTitle": "Sunting chief",
+        "newTitle": "Chief baharu",
+        "newDescription": "Beri nama. Selebihnya adalah pilihan.",
+        "cancel": "Batal",
+        "save": "Simpan perubahan",
+        "create": "Cipta chief",
+        "errors": {
+            "name": "Masukkan nama untuk chief ini.",
+            "stateNumber": "Masukkan nombor bulat dari 1 hingga {max}.",
+            "serverStartDate": "Masukkan tarikh yang bukan pada masa hadapan."
+        },
+        "name": "Nama",
+        "stateNumber": {
+            "label": "Nombor state",
+            "hint": "State tempat chief anda berada. Nombor bulat."
+        },
+        "serverStartDate": {
+            "label": "Tarikh mula pelayan",
+            "info": {
+                "label": "Di mana mencari tarikh mula pelayan",
+                "screen": "Buka permainan dan pergi ke skrin Pelayan daripada profil anda.",
+                "date": "Baca tarikh pelayan dibuka. Jika ia hanya menunjukkan nombor hari pelayan, kira ke belakang sebanyak hari itu dari hari ini.",
+                "missing": "Tiada tarikh di skrin? Tanya ketua alliance anda atau semak sembang state.",
+                "tolerance": "Tarikh dalam lingkungan 21 hari lebih atau kurang sudah memadai. Buka kunci penyelidikan menggunakan 150 dan 600 hari, jadi ralat tiga minggu jarang mengubah hasilnya."
+            }
+        },
+        "generation": {
+            "label": "Hero dibuka sehingga",
+            "hint": "Hero generasi kemudian kekal tersembunyi pada halaman Hero dan dalam Rancang.",
+            "preLegendary": "Generasi 0 (pra-Legendary)",
+            "numbered": "Generasi {generation}"
+        },
+        "events": {
+            "legend": "Acara Utama dipaparkan",
+            "shownOf": "{shown} daripada {total}",
+            "hint": "Acara tersembunyi keluar daripada tab Acara Utama dan Log acaranya. Hidupkan semula bila-bila masa."
+        },
+        "notes": "Nota",
+        "packs": {
+            "legend": "Pek",
+            "constructionLabel": "Construction Pack",
+            "constructionHint": "Membuka pembina kedua pada halaman Bangunan.",
+            "constructionBusy": "Pembina kedua sedang menjalankan naik taraf. Siapkan atau batalkannya dahulu untuk mematikan ini.",
+            "marchLabel": "March Queue Pack",
+            "marchHint": "Menambah satu baris gilir march. Ia dikira pada halaman Bonus."
+        }
+    },
+    "delete": {
+        "title": "Padam chief",
+        "cancel": "Batal",
+        "confirmButton": "Padam chief",
+        "confirm": "Adakah anda pasti mahu memadam “<strong>{name}</strong>”?",
+        "summary": "{details} · dicipta {date}",
+        "note": "Ini membuang chief dan semua tahap, matlamat serta notanya daripada peranti ini. Tiada cara untuk memulihkannya selepas Buat asal 10 saat tamat.",
+        "exportBackup": "Eksport sandaran dahulu"
+    },
+    "page": {
+        "title": "Chief",
+        "newChief": "Chief baharu",
+        "sort": {
+            "label": "Isih mengikut",
+            "options": {
+                "lastModified": "Terakhir diubah",
+                "createdAt": "Tarikh dicipta",
+                "name": "Nama"
+            }
+        },
+        "subline": {
+            "none": "Belum ada chief.",
+            "total": "{chiefs}.",
+            "withActive": "{chiefs}. {name} aktif."
+        },
+        "toasts": {
+            "backupTitle": "Sandaran dimuat turun",
+            "deleted": "{name} dipadam",
+            "undo": "Buat asal"
+        },
+        "loading": "Membaca data tersimpan daripada pelayar ini. Senarai dipaparkan apabila sedia.",
+        "empty": {
+            "title": "Belum ada chief",
+            "description": "Cipta chief untuk menjejak bangunan, hero, gear, penyelidikan dan pelan naik taraf anda. Semuanya kekal dalam pelayar ini.",
+            "restore": "Pulihkan sandaran dalam Tetapan"
+        },
+        "search": {
+            "label": "Cari mengikut nama",
+            "showing": "Menunjukkan {shown} daripada {total}",
+            "noMatchTitle": "Tiada chief sepadan dengan “{search}”",
+            "noMatchDescription": "Semak ejaan atau kosongkan carian untuk melihat semua {count} chief.",
+            "clear": "Kosongkan carian"
+        }
+    }
+}

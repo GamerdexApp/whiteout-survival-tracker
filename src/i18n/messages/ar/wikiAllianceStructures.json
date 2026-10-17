@@ -1,0 +1,104 @@
+{
+    "line": "{banners} من نطاقات الرايات، و{facilities} من المرافق، و{fortresses} من مدخلات القلعة والحصون والقلاع الحصينة. للمرجع فقط، لا يُحفظ شيء هنا.",
+    "filters": {
+        "search": "بحث",
+        "searchPlaceholder": "ابحث في النطاقات والمرافق والقلاع الحصينة",
+        "structure": "المنشأة",
+        "structures": {
+            "all": "كل المنشآت",
+            "banners": "الرايات",
+            "facilities": "مرافق الخريطة",
+            "castle": "القلعة",
+            "stronghold": "الحصون",
+            "fortress": "القلاع الحصينة"
+        }
+    },
+    "empty": "لا شيء في هذه القائمة يطابق البحث.",
+    "none": "لا شيء",
+    "banners": {
+        "title": "تكاليف بناء الرايات",
+        "columns": {
+            "range": "نطاق المستويات",
+            "min": "الأدنى",
+            "max": "الأقصى",
+            "cost": "التكلفة لكل مستوى"
+        },
+        "noCost": "لا شيء مدرج",
+        "count": "{count, plural, zero {{amount} نطاق} one {{amount} نطاق} two {{amount} نطاقان} few {{amount} نطاقات} many {{amount} نطاقًا} other {{amount} نطاق}}",
+        "detail": {
+            "title": "تكلفة الراية",
+            "fields": {
+                "range": "نطاق المستويات",
+                "min": "أدنى مستوى",
+                "max": "أعلى مستوى",
+                "cost": "التكلفة لكل مستوى"
+            }
+        }
+    },
+    "facilities": {
+        "title": "مرافق الخريطة",
+        "count": "{count, plural, zero {{amount} مرفق} one {{amount} مرفق} two {{amount} مرفقان} few {{amount} مرافق} many {{amount} مرفقًا} other {{amount} مرفق}}",
+        "columns": {
+            "facility": "المرفق",
+            "bonus": "الميزة",
+            "level": "المستوى {level}",
+            "listed": "المستويات المدرجة",
+            "ownLimit": "حد التملك"
+        },
+        "cell": "{available} على الخريطة",
+        "listedOf": "{listed} من {total}",
+        "levelsNote": "تسرد البيانات {listed} من {total} مستوى لهذا المرفق. المستويات غير المدرجة تظهر كغير معروفة.",
+        "detail": {
+            "title": "مستويات {name}",
+            "level": "المستوى {level}",
+            "columns": {
+                "level": "المستوى",
+                "booster": "المعزِّز",
+                "injured": "جرحى بشدة",
+                "losses": "الخسائر",
+                "ownLimit": "حد التملك",
+                "available": "على الخريطة",
+                "locations": "المواقع (x, y)"
+            },
+            "percent": "{value}%",
+            "location": "{x}, {y}"
+        }
+    },
+    "fortresses": {
+        "title": "القلعة والحصون والقلاع الحصينة",
+        "kinds": {
+            "castle": "القلعة",
+            "stronghold": "الحصن",
+            "fortress": "القلعة الحصينة"
+        },
+        "columns": {
+            "name": "الاسم",
+            "kind": "النوع",
+            "x": "X",
+            "y": "Y",
+            "phases": "المراحل",
+            "phaseOne": "مكافأة المرحلة 1"
+        },
+        "mobileMeta": "{kind}، x {x}، y {y}",
+        "count": "{count, plural, zero {{amount} منشأة} one {{amount} منشأة} two {{amount} منشأتان} few {{amount} منشآت} many {{amount} منشأة} other {{amount} منشأة}}"
+    },
+    "map": {
+        "title": "نموذج الخريطة",
+        "label": "خريطة القلعة والحصون والقلاع الحصينة بحسب قيم x وy",
+        "note": "القلعة والحصون والقلاع الحصينة مرسومة من قيم x وy على مربع {size} في {size}. حجم المربع تقدير، فلا تحتوي الحزمة على حجم للخريطة.",
+        "legend": {
+            "castle": "المربع: القلعة",
+            "stronghold": "المعين: الحصن",
+            "fortress": "الدائرة: القلعة الحصينة"
+        }
+    },
+    "detail": {
+        "title": "مكافآت المراحل",
+        "phases": "{count, plural, zero {{amount} مرحلة} one {{amount} مرحلة} two {{amount} مرحلتان} few {{amount} مراحل} many {{amount} مرحلة} other {{amount} مرحلة}}",
+        "columns": {
+            "phase": "المرحلة",
+            "reward": "المكافأة"
+        },
+        "noRewards": "لا تحتوي الحزمة على مكافآت مراحل لهذه المنشأة."
+    }
+}

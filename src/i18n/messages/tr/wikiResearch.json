@@ -1,0 +1,77 @@
+{
+    "line": "{tabs} sekmede {nodes} araştırma düğümü. Yalnızca başvuru, burada hiçbir şey kaydedilmez.",
+    "tabsLabel": "Araştırma kategorileri",
+    "tabs": {
+        "battle": "Savaş",
+        "growth": "Büyüme",
+        "economy": "Ekonomi",
+        "t11": "T11",
+        "t12": "T12"
+    },
+    "search": {
+        "label": "Ara",
+        "placeholder": "{amount} araştırma düğümünde ara"
+    },
+    "filters": {
+        "tier": "Kademe",
+        "allTiers": "Tümü",
+        "tierOption": "Kademe {tier}",
+        "troop": "Birlik türü",
+        "allTroops": "Tümü",
+        "troops": {
+            "Infantry": "Piyade",
+            "Marksman": "Nişancı",
+            "Lancer": "Mızrakçı"
+        },
+        "data": "Veri",
+        "dataOptions": {
+            "all": "Tüm düğümler",
+            "placeholders": "Yer tutucular",
+            "missingTime": "Süresi eksik"
+        }
+    },
+    "list": {
+        "title": "Düğümler",
+        "empty": "Bu aramayla eşleşen araştırma düğümü yok.",
+        "emptyHint": "Aramayı ya da bir filtreyi temizle.",
+        "columns": {
+            "node": "Düğüm",
+            "tier": "Kademe",
+            "levels": "Seviyeler",
+            "bonus": "Seviye 1 bonusu",
+            "time": "Süre, seviye 1",
+            "power": "Güç"
+        },
+        "mobileMeta": "{category}, kademe {tier}, {levels}",
+        "count": "{count, plural, one {{amount} düğüm} other {{amount} düğüm}}"
+    },
+    "levels": "{count, plural, one {{amount} seviye} other {{amount} seviye}}",
+    "detail": {
+        "columns": {
+            "level": "Seviye",
+            "requires": "Gereksinim",
+            "cost": "Maliyet",
+            "time": "Süre",
+            "bonus": "Bonus",
+            "power": "Güç"
+        },
+        "level": "Seviye {level}",
+        "none": "Yok",
+        "placeholderNote": "Bu düğüm bir yer tutucudur. Pakette maliyeti ve bonusu yok.",
+        "requirement": {
+            "building": "{name} {level}",
+            "research": "{name} seviye {level}"
+        },
+        "levelsTitle": "Seviyeler"
+    },
+    "view": {
+        "label": "Görünüm",
+        "list": "Liste",
+        "tree": "Ağaç"
+    },
+    "tree": {
+        "region": "{tab} araştırma ağacı",
+        "openNode": "{name}, {levels}",
+        "tier": "T{tier}"
+    }
+}

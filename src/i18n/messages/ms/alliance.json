@@ -1,0 +1,50 @@
+{
+    "page": {
+        "title": "Alliance"
+    },
+    "view": {
+        "subline": "{chief} · {details} · tahap sepanduk {level}"
+    },
+    "banner": {
+        "title": "Sepanduk alliance",
+        "currentLevel": "Tahap semasa",
+        "levelLabel": "Tahap sepanduk",
+        "maxHint": "Tahap bulat dari 0 hingga {max}.",
+        "rangeChip": "{range}",
+        "costHeading": "Kos setiap tahap dalam {range}",
+        "noTimeOrPower": "Sepanduk tiada masa binaan atau kuasa dalam pakej, jadi tiada yang ditunjukkan.",
+        "noCost": "Tiada kos",
+        "none": "Tiada",
+        "lower": "Kurangkan tahap sepanduk",
+        "raise": "Tambah tahap sepanduk"
+    },
+    "structures": {
+        "title": "Struktur alliance",
+        "tech": {
+            "title": "Teknologi",
+            "description": "{count} nod dalam Growth, Territory dan Battle",
+            "status": "{maxed} maksimum, {progress} sedang berjalan, {locked} terkunci"
+        },
+        "facilities": {
+            "title": "Kemudahan",
+            "description": "{count} kemudahan peta",
+            "owned": "{owned} dimiliki"
+        },
+        "fortresses": {
+            "title": "Fortress",
+            "description": "Castle, {strongholds} stronghold, {fortresses} fortress",
+            "reference": "Rujukan sahaja"
+        }
+    },
+    "table": {
+        "title": "Kos sepanduk mengikut julat tahap",
+        "note": "{count} julat, setiap tahap dalam satu julat berkos sama",
+        "range": "Julat",
+        "state": "Keadaan",
+        "built": "Dibina",
+        "current": "Semasa",
+        "notBuilt": "Belum dibina",
+        "none": "Tiada",
+        "noCost": "Tiada kos"
+    }
+}

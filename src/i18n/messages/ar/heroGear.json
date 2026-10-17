@@ -1,0 +1,215 @@
+{
+    "defaultSetName": "الطقم {number}",
+    "troop": {
+        "infantry": "المشاة",
+        "lancer": "الفرسان",
+        "marksman": "الرماة"
+    },
+    "lock": {
+        "needsMythic": "يتطلب معدات خرافية",
+        "needsBoth": "يتطلب تحسينًا 100 ومستوى سبك الإتقان 10",
+        "needsEnhancement": "يتطلب تحسينًا 100",
+        "needsForging": "يتطلب مستوى سبك الإتقان 10"
+    },
+    "tab": {
+        "deletedTitle": "تم حذف {name}",
+        "deletedMessage": "أُزيلت القطع الأربع وأهدافها.",
+        "undo": "تراجع",
+        "tiles": {
+            "sets": "أطقم المعدات",
+            "power": "قوة المعدات، كل الأطقم",
+            "ofPieces": "{count} من {total}",
+            "atEnhancementMax": "القطع عند التحسين 100",
+            "empowered": "القطع الممكَّنة",
+            "ready": "القطع الجاهزة للتمكين"
+        },
+        "search": "بحث في أطقم المعدات",
+        "filters": "عوامل التصفية",
+        "plan": "الخطة",
+        "showing": "عرض {shown} من {total} طقم معدات. الأهداف للقراءة فقط هنا وتُحدَّد في الخطة.",
+        "empty": {
+            "title": "لا توجد أطقم معدات بعد",
+            "description": "يضم طقم المعدات قطعة واحدة من Goggles وGloves وBelt وBoots. أضف طقمًا لتتبع مستوياته."
+        },
+        "addSet": "إضافة طقم معدات",
+        "unknownHero": "بطل غير معروف",
+        "power": "القوة {amount}",
+        "enhancementLine": "تحسين {line}",
+        "troopHint": "نوع القوات يحدد عمود الإحصائيات أدناه.",
+        "editSet": "تعديل الطقم",
+        "deleteSet": "حذف الطقم"
+    },
+    "pieceCard": {
+        "name": "{set} {slot}",
+        "forgingRow": "{name} (‎+{percent}%)",
+        "none": "لا شيء",
+        "noGoal": "لا يوجد هدف",
+        "goal": "الهدف: {value}",
+        "quality": "جودة المعدات",
+        "qualities": {
+            "mythic": "خرافي",
+            "epic": "ملحمي",
+            "rare": "نادر",
+            "uncommon": "غير شائع",
+            "common": "شائع"
+        },
+        "forgingRowLabel": "صف سبك الإتقان",
+        "forgingStops": "يتوقف سبك الإتقان عند المستوى 10 حتى يبلغ التحسين 100.",
+        "lowQualityNote": "المعدات الخرافية فقط يمكن سبكها وتمكينها. تتبع القوة جداول الخرافي مع القوة الأساسية لهذه الجودة، ولم تؤكدها اللعبة.",
+        "enhancement": "التحسين",
+        "enhancementLabel": "تحسين {name}",
+        "enhancementSlider": "شريط تحسين {name}",
+        "empowerment": "التمكين",
+        "empowermentLabel": "تمكين {name}",
+        "empowermentSlider": "شريط تمكين {name}",
+        "outOf": "/ {max}",
+        "milestone": "تم بلوغ التمكين {level}: {stat}",
+        "piecePower": "قوة القطعة",
+        "health": "الصحة",
+        "percent": "{value}%"
+    },
+    "statLines": {
+        "title": "خطوط الإحصائيات، 4 خانات في 3 أنواع من القوات",
+        "troopThisSet": "{troop} (هذا الطقم)",
+        "stat": "{name} {value}",
+        "health": "صحة {value}",
+        "percentStat": "{name} {value}%",
+        "none": "لا شيء",
+        "note": "القيم عند مستويات قطع {name}، شاملة سبك الإتقان، مقرّبة للأسفل. الإحصائيات من WoS Tools التي تتوقف عند 192 من 200 مستوى. العمود المظلل هو نوع قوات الطقم."
+    },
+    "filters": {
+        "title": "عوامل التصفية",
+        "description": "اختر أطقم المعدات التي تعرضها القائمة",
+        "reset": "إعادة ضبط",
+        "show": "عرض {amount} {count, plural, zero {طقم} one {طقم} two {طقمين} few {أطقم} many {طقمًا} other {طقم}}",
+        "all": "الكل",
+        "troopType": "نوع القوات",
+        "linkedHero": "البطل المرتبط",
+        "heroOptions": {
+            "all": "الكل",
+            "linked": "مرتبط ببطل",
+            "unlinked": "غير مرتبط"
+        },
+        "order": "الترتيب",
+        "orderOptions": {
+            "power": "إجمالي القوة، الأعلى أولًا",
+            "created": "ترتيب الإضافة",
+            "name": "الاسم، من A إلى Z",
+            "hero": "اسم البطل، من A إلى Z"
+        },
+        "notSaved": "عوامل التصفية لا تُحفظ."
+    },
+    "setDialogs": {
+        "cancel": "إلغاء",
+        "setName": "اسم الطقم",
+        "nameRequired": "أدخل اسمًا.",
+        "linkedHero": "البطل المرتبط",
+        "add": {
+            "title": "إضافة طقم معدات",
+            "linkedHeroHint": "اختيار بطل يضبط نوع القوات على صنفه.",
+            "troopType": "نوع القوات",
+            "troopTypeHint": "نوع القوات يحدد عمود إحصائيات الطقم.",
+            "quality": "جودة المعدات",
+            "qualityHint": "المعدات الخرافية فقط يمكن سبكها وتمكينها.",
+            "qualityHintCopy": "الطقم المنسوخ يحتفظ بجودة كل قطعة.",
+            "qualities": {
+                "mythic": "خرافي",
+                "epic": "ملحمي",
+                "rare": "نادر",
+                "uncommon": "غير شائع",
+                "common": "شائع"
+            },
+            "startFrom": "البدء من",
+            "startFromHint": "لا تُنسخ الأهداف. تُحدَّد الأهداف في الخطة.",
+            "emptySet": "طقم فارغ",
+            "copyFrom": "نسخ المستويات من {name}",
+            "savesAtOnce": "كل تغيير يُحفظ فورًا ويظهر الطقم الجديد محددًا.",
+            "submit": "إضافة طقم معدات"
+        },
+        "delete": {
+            "title": "حذف {name}؟",
+            "titleFallback": "حذف الطقم",
+            "confirm": "حذف الطقم",
+            "body": "ستُزال القطع الأربع في {name} وأهدافها من هذا الجهاز.",
+            "undoNote": "يمكنك التراجع خلال 10 ثوانٍ بعد الحذف.",
+            "exportBackup": "صدّر نسخة احتياطية أولًا"
+        },
+        "edit": {
+            "title": "تعديل {name}",
+            "titleFallback": "تعديل الطقم",
+            "submit": "حفظ الطقم"
+        },
+        "heroSelect": {
+            "none": "بلا بطل",
+            "option": "{name} ({class}، الجيل {generation})"
+        }
+    },
+    "plan": {
+        "title": "خطة معدات الأبطال",
+        "description": "سبك الإتقان والتحسين والتمكين لأي قطع من أي طقم",
+        "saved": "تم حفظ الخطة {time}",
+        "close": "إغلاق",
+        "save": "حفظ الخطة",
+        "empty": "لا توجد قطع في الخطة بعد. أضف قطعة أعلاه، ثم ارفع أهدافها.",
+        "pieceTitle": "{set} · {slot}",
+        "milestone": "التمكين {level}، {event}، {stat}",
+        "addPiece": {
+            "title": "إضافة قطعة",
+            "noSets": "أضف طقم معدات في تبويب معدات الأبطال أولًا.",
+            "set": "طقم المعدات",
+            "setOption": "{name} ({troop})",
+            "piece": "القطعة",
+            "submit": "إضافة القطعة",
+            "taken": "هذه القطعة موجودة في الخطة أصلًا."
+        },
+        "qualities": {
+            "mythic": "خرافية",
+            "epic": "ملحمية",
+            "rare": "نادرة",
+            "uncommon": "غير شائعة",
+            "common": "شائعة"
+        },
+        "remove": "إزالة {title} من الخطة",
+        "forgingRow": "{name} (‎+{percent}%)",
+        "none": "لا شيء",
+        "forgingCurrent": "صف السبك الحالي",
+        "forgingGoal": "صف هدف السبك",
+        "forgingGoalLabel": "هدف سبك {title}",
+        "forgingStops": "يتوقف سبك الإتقان عند المستوى 10 حتى يبلغ هدف التحسين 100.",
+        "enhancement": "التحسين",
+        "enhancementGoal": "هدف تحسين {title}",
+        "empowerment": "التمكين",
+        "empowermentGoal": "هدف تمكين {title}",
+        "from": "{value} إلى",
+        "result": {
+            "title": "نتيجة {amount} {count, plural, zero {قطعة} one {قطعة} two {قطعتين} few {قطع} many {قطعة} other {قطعة}}",
+            "power": "القوة",
+            "powerLines": {
+                "gained": "القوة المكتسبة",
+                "before": "قوة هذه القطع قبل",
+                "after": "قوة هذه القطع بعد"
+            },
+            "columns": {
+                "piece": "القطعة",
+                "forgingStatsUp": "ارتفاع إحصائيات السبك",
+                "powerGained": "القوة المكتسبة"
+            },
+            "forgingStatsUp": "‎+{percent}% ({steps} خطوات)",
+            "milestones": "المراحل المفتوحة",
+            "milestoneLine": "{label}: {stat}",
+            "events": {
+                "svs": "SvS",
+                "allianceShowdown": "Alliance Showdown",
+                "kingOfIcefield": "King of Icefield"
+            },
+            "note": "ليس في خطة معدات الأبطال عناصر تحكم بالسرعة أو الميزات. لا تعيد الحاسبة وقتًا.",
+            "tableLabel": "جدول نتيجة الخطة"
+        }
+    },
+    "export": {
+        "button": "تصدير إلى الفعاليات الأساسية",
+        "nothing": "لا تحتاج الخطة إلى Essence Stones أو Mithril لتصديرها.",
+        "essenceStones": "Essence Stones",
+        "mithril": "Mithril"
+    }
+}

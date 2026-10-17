@@ -1,0 +1,108 @@
+{
+    "days": {
+        "day": "{number}. Gün",
+        "battle": "Savaş",
+        "range": "Günler {range}",
+        "stage": "Aşama {number}"
+    },
+    "page": {
+        "title": "Ana Etkinlikler",
+        "subline": "{chief} · {details}"
+    },
+    "events": {
+        "svs": "SvS",
+        "showdown": "Alliance Showdown",
+        "king": "King of Icefield",
+        "hall": "Hall of Chief"
+    },
+    "tabs": {
+        "label": "Ana etkinlikler"
+    },
+    "empty": {
+        "title": "Gösterilecek etkinlik yok",
+        "description": "Bu şef için dört etkinlik de gizli. Şefi düzenle bölümünden aç.",
+        "action": "Şefi düzenle"
+    },
+    "strip": {
+        "live": "Etkinlik canlı",
+        "dates": "{start} - {end}",
+        "noDates": "Tarihler Etkinlik kaydında ayarlanır.",
+        "today": "Bugün: {day}",
+        "checklist": "Kontrol listesi",
+        "log": "Etkinlik kaydı"
+    },
+    "bonus": {
+        "title": "{expert} {skill} seviyesi",
+        "level": "Seviye {level}",
+        "levelWithPercent": "Seviye {level} · %{percent}",
+        "none": "Seviye ayarlanmadı, bu yüzden bonus eklenmez.",
+        "readOnly": "Salt okunur",
+        "openExperts": "Uzmanlar'ı aç",
+        "svsHelp": "1. günden 5. güne puanlara seviye başına %2 ekler (her gün için yuvarlanır) ve puan eşiklerine ek kademeler ekler. Savaş Aşaması bonus almaz. Burada salt okunurdur, seviye Uzmanlar sayfasında ayarlanır.",
+        "showdownHelp": "Her eyleme seviye başına %5 ekler. Burada salt okunurdur, seviye Uzmanlar sayfasında ayarlanır.",
+        "noneTitle": "Uzman bonusu yok",
+        "kingNote": "Hiçbir uzman King of Icefield puanlarını değiştirmez.",
+        "hallNote": "Hiçbir uzman Hall of Chief puanlarını değiştirmez."
+    },
+    "daysSection": {
+        "title": "Günler",
+        "stages": "Aşamalar",
+        "totalPerDay": "Gün başına toplam puan",
+        "totalPerStage": "Aşama başına toplam puan",
+        "hallSeason": "Sezon hesapta ayarlanır, o zamana kadar Sezon 1'dir.",
+        "showdownScope": "Yalnızca kişisel puanlar. İttifak toplamı ve zafer puanı yok."
+    },
+    "table": {
+        "title": "{day}: {name}",
+        "phasePreparation": "Hazırlık Aşaması",
+        "phaseBattle": "Savaş Aşaması",
+        "action": "Eylem",
+        "pointsEach": "Eylem başı puan",
+        "count": "Sayı",
+        "points": "Puan",
+        "lower": "Azalt: {action} sayısı",
+        "raise": "Artır: {action} sayısı",
+        "countLabel": "Sayı: {action}",
+        "fromPlans": "Planlardan {amount}",
+        "base": "Temel {amount}",
+        "bonus": "Bonus {amount}",
+        "total": "Toplam {amount}"
+    },
+    "result": {
+        "totalTitle": "Toplam puan, tüm günler",
+        "totalTitleHall": "Toplam puan, seçili aşama",
+        "baseBonus": "Temel {base}, bonus {bonus}",
+        "battle": "Savaş Aşaması",
+        "battleNoBonus": "Savaş Aşamasında bonus yok",
+        "seasonSum": "Sezon aşamalarının toplamı: {amount}. Sıralama değildir.",
+        "selectedDayTotal": "{day}: {amount}",
+        "selectedDayBonus": "Bonus %{percent}"
+    },
+    "perDay": {
+        "title": "Gün başına puan",
+        "titleHall": "Aşama başına puan",
+        "bar": "En büyük günün payı: {day}"
+    },
+    "thresholds": {
+        "title": "Puan eşikleri",
+        "estimate": "Tahmin",
+        "help": "{day} için kilometre taşları, gün toplamıyla karşılaştırılır.",
+        "reached": "Ulaşıldı",
+        "needs": "{amount} daha gerekir",
+        "extraTier": "Ek kademe {number}, Valeria'dan",
+        "extraTierUnknown": "Puanlar ve ödül pakette yok",
+        "unknown": "Bilinmiyor",
+        "noneEvent": "Pakette bu etkinlik için puan eşiği yok.",
+        "noneDay": "Pakette bu gün için puan eşiği yok."
+    },
+    "ranks": {
+        "title": "Sıralama eşikleri",
+        "note": "Bunlar oyuncu sıralamalarıdır. Bir sıranın puan sınırı yoktur.",
+        "rank": "Sıra",
+        "reward": "Ödül",
+        "gems": "{amount} Gems",
+        "unknown": "Bilinmiyor",
+        "notConfirmed": "Doğrulanmadı",
+        "noneShowdown": "Pakette Alliance Showdown için kişisel sıralama yok."
+    }
+}

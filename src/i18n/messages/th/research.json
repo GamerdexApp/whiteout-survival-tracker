@@ -1,0 +1,303 @@
+{
+    "title": "วิจัย",
+    "unknown": "ไม่ทราบ",
+    "nodeCount": "{count, plural, other {{amount} โหนด}}",
+    "jobTitle": "{name} เลเวล {from} ถึง {to}",
+    "tabs": {
+        "growth": "Growth",
+        "economy": "Economy",
+        "battle": "Battle",
+        "war-academy-troops": "War Academy T11",
+        "t12-infantry": "Infantry T12",
+        "t12-marksman": "Marksman T12",
+        "t12-lancer": "Lancer T12"
+    },
+    "tier": {
+        "plain": "ระดับ {tier}",
+        "troopLine": "{line} T{tier}"
+    },
+    "requirement": {
+        "yours": "ของคุณคือ {level}",
+        "notBuilt": "ยังไม่สร้าง",
+        "researchLevel": "{name} เลเวล {level}",
+        "yoursLevel": "ของคุณคือเลเวล {level}",
+        "notReleased": "{id} (ยังไม่เปิดตัว)"
+    },
+    "tabLock": {
+        "unknownAge": "วิจัย {tab} เปิดที่อายุเซิร์ฟเวอร์ {days} วัน ของคุณยังไม่ทราบ เพิ่มวันที่เซิร์ฟเวอร์เริ่มในแก้ไขหัวหน้า",
+        "knownAge": "วิจัย {tab} เปิดที่อายุเซิร์ฟเวอร์ {days} วัน ของคุณคือ {yours}"
+    },
+    "option": {
+        "label": "{name} {tab} เลเวล {from} ถึง {to}",
+        "subtitle": "เลเวล {from} ถึงเลเวล {to} แท็บ {tab}",
+        "busy": "ไม่ว่าง: {name} เลเวล {level} {timeLeft}"
+    },
+    "nodeCard": {
+        "allResearched": "วิจัยครบทุกเลเวลแล้ว",
+        "nextTime": "เวลาเลเวล {level}: {time}",
+        "power": {
+            "researched": "วิจัยแล้ว {power}",
+            "next": "+{power} เลเวลถัดไป",
+            "some": "พลัง {parts}",
+            "none": "พลัง 0"
+        },
+        "maxed": "เลเวลสูงสุด {bonus}",
+        "noBonus": "ไม่มีโบนัสในข้อมูล",
+        "level": "เลเวล {level} / {max}",
+        "goal": "เป้าหมาย {goal}",
+        "noGoal": "ไม่มีเป้าหมาย",
+        "progress": "ความคืบหน้าของ {name}",
+        "lockedByTab": "ล็อก: {reason}",
+        "lockedByRequirement": "ล็อก: ต้องมี {requirement}",
+        "placeholder": "ตัวแทน ค่าใช้จ่ายและโบนัสว่างในแพ็กเกจข้อมูล",
+        "needsFirst": "ต้องมี {names} ก่อน",
+        "researching": "กำลังวิจัย {name}",
+        "levelStepper": "เลเวล {name}",
+        "detailsOf": "รายละเอียดของ {name}",
+        "details": "รายละเอียด"
+    },
+    "queuesStrip": {
+        "title": "คิววิจัย",
+        "note": "Growth, Economy และ Battle ใช้คิวเดียวกัน T11 และ T12 ใช้คิว War Academy",
+        "idle": "วิจัยได้ครั้งละหนึ่งอย่าง กดเริ่มอัปเกรดเพื่อเริ่ม"
+    },
+    "filters": {
+        "title": "ตัวกรอง",
+        "description": "เลือกสิ่งที่แท็บ {tab} แสดง",
+        "reset": "รีเซ็ต",
+        "show": "แสดง {nodes}",
+        "tier": "ระดับ",
+        "statusLabel": "สถานะ",
+        "troopLine": "สายทหาร",
+        "orderLabel": "ลำดับ",
+        "notSaved": "ตัวกรองไม่ถูกบันทึก",
+        "all": "ทั้งหมด",
+        "status": {
+            "all": "ทั้งหมด",
+            "progress": "กำลังดำเนินการ",
+            "goal": "มีเป้าหมาย",
+            "maxed": "เลเวลสูงสุด",
+            "locked": "ล็อก",
+            "notStarted": "ยังไม่เริ่ม"
+        },
+        "order": {
+            "game": "ลำดับตามเกม",
+            "name": "ชื่อ A ถึง Z",
+            "level": "เลเวล สูงสุดก่อน"
+        }
+    },
+    "massSet": {
+        "stop": "{level} จาก {max}",
+        "title": "ตั้งหลายรายการ {tab}",
+        "description": "เลือกโหนดและเลเวล ทุกโหนดก่อนหน้าในแผนผังจะถูกตั้งเป็นสูงสุด",
+        "cancel": "ยกเลิก",
+        "set": "ตั้งค่า {nodes}",
+        "node": "โหนด",
+        "level": "เลเวล",
+        "levelToSet": "เลเวลที่จะตั้ง",
+        "whatChanges": "สิ่งที่เปลี่ยนในแท็บ {tab}",
+        "nothingChanges": "ไม่มีอะไรเปลี่ยน ทุกโหนดที่นี่อยู่ที่ระดับนี้หรือสูงกว่าแล้ว",
+        "change": "{from} ถึง {to}",
+        "hidden": "และโหนดก่อนหน้าอีก {amount}",
+        "alreadyMax": "{count, plural, other {โหนดก่อนหน้า {amount} โหนด}}อยู่ที่เลเวลสูงสุดแล้วและคงเดิม โหนดที่อยู่หลังในแผนผังไม่ถูกแตะต้อง เลเวลที่สูงกว่าอยู่แล้วจะคงเดิม",
+        "blockersTitle": "บางโหนดต้องมีอาคารก่อน",
+        "blocker": "{name} ต้องมี {building}",
+        "blockersMore": " และอีก {amount}",
+        "blockers": "{list}{more} เลือกโหนดก่อนหน้านี้หรืออัปเกรดอาคารในหน้าอาคาร",
+        "footnote": "ตั้งหลายรายการเปลี่ยนเฉพาะเลเวลที่บันทึกไว้ของแท็บนี้ ไม่ลดเลเวลเลย และไม่เปลี่ยนเป้าหมาย"
+    },
+    "nodeFlyout": {
+        "fallbackTitle": "วิจัย",
+        "description": "{category} ระดับ {tier} {levels} เลเวล",
+        "close": "ปิด",
+        "unknown": "ไม่ทราบ",
+        "levelOf": "เลเวล {level} จาก {max}",
+        "status": {
+            "notStarted": "ยังไม่เริ่ม",
+            "maxed": "เลเวลสูงสุด",
+            "inProgress": "กำลังดำเนินการ"
+        },
+        "goal": "เป้าหมาย {goal}",
+        "noGoal": "ไม่มีเป้าหมาย",
+        "openPlan": "เปิดแผน",
+        "maxLevel": {
+            "title": "เลเวลสูงสุด",
+            "nothingLeft": "ไม่เหลืออะไรให้วิจัย",
+            "noBonus": "ไม่มีโบนัสในข้อมูล"
+        },
+        "placeholder": {
+            "title": "ตัวแทน",
+            "description": "โหนดนี้ยังไม่มีค่าใช้จ่ายและโบนัสในแพ็กเกจข้อมูล เวลาและค่าใช้จ่ายวิจัยแสดงว่าไม่ทราบ"
+        },
+        "upcoming": {
+            "first": "เลเวลแรก ๆ",
+            "after": "เลเวลถัดจาก {level}",
+            "heads": {
+                "level": "เลเวล",
+                "bonus": "โบนัส",
+                "time": "เวลา",
+                "power": "พลัง"
+            },
+            "goalBadge": "เป้าหมาย",
+            "noBonus": "ไม่มี",
+            "shaded": "แถวที่แรเงาคือเลเวลระหว่างเลเวลของคุณกับเป้าหมาย"
+        },
+        "cost": {
+            "title": "ค่าใช้จ่ายของเลเวลถัดไป",
+            "level": "Lv"
+        },
+        "total": {
+            "title": "รวมถึงเป้าหมายของคุณ เลเวล {level} ถึง {goal}",
+            "knownTime": "เวลาวิจัยที่ทราบ",
+            "power": "พลัง",
+            "missingTimes": "{count, plural, other {{amount} เลเวล}}ไม่มีเวลาในแพ็กเกจข้อมูลและนับเป็น 0 ที่นี่"
+        },
+        "requirements": {
+            "title": "เงื่อนไขของเลเวล {level}",
+            "none": "ไม่มีเงื่อนไข",
+            "met": "ครบแล้ว",
+            "notMet": "ยังไม่ครบ",
+            "later": "เลเวลถัดไปต้องการ: {list}"
+        }
+    },
+    "tree": {
+        "legend": {
+            "max": "สูงสุด",
+            "inProgress": "กำลังดำเนินการ",
+            "notStarted": "ยังไม่เริ่ม",
+            "locked": "ล็อก"
+        },
+        "pillMax": "สูงสุด {max}",
+        "pillLevel": "Lv {level} จาก {max}",
+        "region": "แผนผังวิจัย {tab}",
+        "openNode": "{name} {pill} เปิดรายละเอียด"
+    },
+    "plan": {
+        "title": "วางแผนวิจัย",
+        "description": "ทรัพยากร เวลา และพลังจากเลเวลปัจจุบันถึงเป้าหมาย",
+        "saved": "บันทึกแผนเมื่อ {date}",
+        "close": "ปิด",
+        "save": "บันทึกแผน",
+        "goals": "เป้าหมาย {nodes}",
+        "noGoals": "ยังไม่มีเป้าหมาย เพิ่มโหนดวิจัยด้านบน แล้วเลือกเลเวลที่ต้องการ",
+        "goalsHint": "เลเวลปัจจุบันคือเลเวลที่อยู่ในหน้านั้น เปลี่ยนที่นั่น เป้าหมายอ่านได้อย่างเดียวในหน้านั้นและตั้งที่นี่",
+        "failed": "คำนวณแผนไม่ได้",
+        "timeNote": "แผนใช้เวลา {time} หลังโบนัสความเร็ว {percent}% สต็อกของคุณ: Research {research} นาที, General {general} นาที ตัวเร่งเวลา General นับรวมเป็นเวลาวิจัย",
+        "percent": "{value}%",
+        "percentPlus": "+{value}%",
+        "appointment": {
+            "none": "ไม่มี",
+            "regular": "ปกติ",
+            "supreme": "สูงสุด"
+        },
+        "add": {
+            "title": "เพิ่มโหนดวิจัย",
+            "none": "ทุกโหนดอยู่ในแผนหรืออยู่ที่เลเวลสูงสุดแล้ว",
+            "select": "โหนดวิจัยที่จะเพิ่ม",
+            "button": "เพิ่มวิจัย"
+        },
+        "speed": {
+            "title": "ความเร็ววิจัย",
+            "readOnly": "อ่านอย่างเดียว",
+            "carriedOver": "นำมาจากหน้าโบนัส",
+            "turnedOff": "ปิดอยู่ในตั้งค่า ใต้ใช้ยอดรวมโบนัสของฉัน",
+            "openBonuses": "เปิดโบนัส",
+            "stateBuff": "บัฟสเตท",
+            "vicePresident": "รองประธานาธิบดี",
+            "total": "ความเร็ววิจัยรวม"
+        },
+        "goal": {
+            "level": "เลเวล {level}",
+            "to": "ถึง",
+            "label": "เป้าหมาย {name}",
+            "remove": "ลบ {name} ออกจากแผน"
+        },
+        "result": {
+            "title": "ผลลัพธ์ {steps} ขั้นตอน",
+            "powerGained": "พลังที่ได้รับ",
+            "speedupMinutes": "นาทีตัวเร่งเวลาที่ต้องใช้",
+            "baseTime": "เวลาพื้นฐาน",
+            "timeWithBonus": "เวลาเมื่อมีโบนัส {percent}%",
+            "stepsWithoutTime": "{count, plural, other {{amount} ขั้นตอน}}ไม่มีเวลาในแพ็กเกจข้อมูลและนับเป็น 0 วินาที",
+            "stepCount": "{count, plural, other {{amount} ขั้นตอน}}",
+            "buildingRequirements": "เงื่อนไขด้านอาคาร",
+            "unmet": "เงื่อนไขที่ยังไม่ครบ",
+            "unmetNone": "ไม่มีสำหรับเป้าหมายเหล่านี้",
+            "unmetItem": "{name} เลเวล {level} ต้องมี {requires} เลเวล {requiresLevel}"
+        },
+        "export": {
+            "button": "ส่งออกไปยัง Core Events",
+            "empty": "เพิ่มเป้าหมายในแผนเพื่อส่งออก",
+            "speedupMinutes": "นาทีตัวเร่งเวลาวิจัย",
+            "power": "พลังที่ได้จากการวิจัย",
+            "computed": "แอปคำนวณจากผลลัพธ์ของแผน",
+            "unscored": "ไม่มีกิจกรรมที่ให้คะแนน {name}"
+        }
+    },
+    "view": {
+        "ofTotal": "{count} จาก {total}",
+        "undo": "เลิกทำ",
+        "massSetApplied": {
+            "title": "ตั้งหลายรายการแล้ว",
+            "message": "อัปเดต {nodes} แล้ว"
+        },
+        "started": {
+            "title": "เริ่มวิจัยแล้ว",
+            "message": "{name} เลเวล {from} ถึง {to}"
+        },
+        "manage": {
+            "slotLabel": "{queue} {category}",
+            "finishText": "เสร็จสิ้นการอัปเกรดจะตั้ง {name} เป็นเลเวล {level} ปล่อยคิว {queue} และเพิ่มการอัปเกรดลงในประวัติ เมื่อเวลาที่เหลือเป็นศูนย์ โหนดและการ์ดคิวจะแสดงว่าพร้อมเสร็จสิ้น ไม่มีอะไรเสร็จเอง เพราะคุณอาจใช้ตัวเร่งเวลาไปแล้ว"
+        },
+        "finished": {
+            "title": "วิจัย {name} แล้ว",
+            "message": "ตอนนี้เลเวล {level} เพิ่มลงในประวัติแล้ว"
+        },
+        "cancelled": {
+            "title": "ยกเลิกการวิจัย {name} แล้ว",
+            "message": "เลเวลคงเดิม แก้ไขสต็อกในหน้าทรัพยากรหากจำเป็น"
+        },
+        "subline": {
+            "researchCenter": "Research Center {level}",
+            "warAcademy": "War Academy {level}"
+        },
+        "stats": {
+            "maxed": "โหนดที่เลเวลสูงสุด {percent}% ของแผนผัง",
+            "power": "พลังวิจัย พลังของทุกเลเวลที่วิจัยแล้ว",
+            "withoutTimeNone": "ที่ไม่มีเวลาวิจัย ทุกเลเวลมีเวลา",
+            "withoutTimeSome": "ที่ไม่มีเวลาวิจัย แสดงว่าไม่ทราบ",
+            "locked": "ล็อกด้วยอายุเซิร์ฟเวอร์หรือเงื่อนไข"
+        },
+        "tabLockedNote": "{reason} ยังตั้งเป้าหมายในแผนได้",
+        "lockedByRequirement": "{count} จาก {total} โหนดในแท็บนี้ถูกล็อกด้วยเงื่อนไข",
+        "search": {
+            "label": "ค้นหาโหนด",
+            "placeholder": "ค้นหาโหนดตามชื่อหรือโบนัส"
+        },
+        "massSet": "ตั้งหลายรายการ",
+        "layout": {
+            "label": "รูปแบบ",
+            "grid": "ตาราง",
+            "tree": "แผนผัง"
+        },
+        "plan": "แผน",
+        "status": {
+            "tree": "{count} โหนดในแผนผัง {tab} พลังวิจัยในแท็บนี้: {power} เลื่อนเพื่อเลื่อนดู โหนดที่ไม่ตรงกับการค้นหาหรือตัวกรองจะจางลง",
+            "grid": "แสดง {shown} จาก {count} โหนด {tab} พลังวิจัยในแท็บนี้: {power} เป้าหมายอ่านได้อย่างเดียวที่นี่ และตั้งในแผน"
+        },
+        "empty": {
+            "title": "ไม่พบโหนดที่ตรงกัน",
+            "description": "เปลี่ยนคำค้นหาหรือรีเซ็ตตัวกรองเพื่อดูทุกโหนด",
+            "reset": "รีเซ็ตการค้นหาและตัวกรอง"
+        },
+        "start": {
+            "description": "ทำเครื่องหมายการวิจัยว่ากำลังอัปเกรด",
+            "selectLabel": "วิจัยที่จะอัปเกรด",
+            "selectHelp": "แสดงเฉพาะวิจัยที่เริ่มได้ตอนนี้ วิจัยที่ล็อก เลเวลสูงสุดแล้ว หรือกำลังทำงานจะไม่แสดง วิจัย Growth, Economy หรือ Battle ใช้คิววิจัย วิจัย T11 หรือ T12 ใช้คิว War Academy",
+            "timeLabel": "เวลาวิจัย",
+            "speedLabel": "ความเร็ววิจัย",
+            "slotLabel": "คิว",
+            "slotHelp": "วิจัยได้ครั้งละหนึ่งอย่างในแต่ละคิว เมื่อคิวไม่ว่าง การ์ดนี้จะบอกว่าจะว่างเมื่อใด"
+        }
+    }
+}

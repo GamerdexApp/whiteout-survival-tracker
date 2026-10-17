@@ -1,0 +1,49 @@
+{
+    "title": "الجدول الزمني للخادم",
+    "line": "{rows, plural, zero {{amount} معلم} one {{amount} معلم} two {{amount} معلمان} few {{amount} معالم} many {{amount} معلمًا} other {{amount} معلم}} من اليوم {first} إلى اليوم {last}",
+    "subline": "ما يُفتح عند كل عمر للخادم. للمرجع فقط، لا يُحفظ شيء هنا.",
+    "place": {
+        "label": "عرض موقعي لـ",
+        "option": "{name}، حوالي اليوم {days}، بزيادة أو نقصان {window}",
+        "optionNoDate": "{name}، لا يوجد تاريخ بدء للخادم",
+        "jump": "الانتقال إلى موقعي"
+    },
+    "filters": {
+        "label": "عرض",
+        "events": "الفعاليات {amount}",
+        "features": "الميزات {amount}",
+        "pets": "الحيوانات الأليفة {amount}",
+        "experts": "الخبراء {amount}",
+        "heroes": "الأبطال {amount}"
+    },
+    "help": "الخط يمثل عمر الخادم بالأيام. الأبطال على اليمين، وكل شيء آخر على اليسار. يأتي موقعك من تاريخ بدء الخادم في قائدك، بنافذة زيادة أو نقصان قدرها {window} يومًا.",
+    "noChief": "لا يوجد قائد بعد، لذا لا يُعرض موقعك.",
+    "addChief": "إضافة قائد",
+    "noStartDate": "ليس لدى {name} تاريخ بدء للخادم. أضف تاريخًا لترى موقعك على الخط.",
+    "editChief": "تعديل القائد",
+    "columns": {
+        "left": "الفعاليات والميزات والحيوانات الأليفة والخبراء",
+        "right": "الأبطال"
+    },
+    "tags": {
+        "event": "فعالية",
+        "feature": "ميزة",
+        "pets": "الحيوانات الأليفة",
+        "experts": "الخبراء"
+    },
+    "fireCrystalLevels": "مستويات Fire Crystal {names}",
+    "heroGeneration": "الأبطال، الجيل {generation}",
+    "day": "اليوم {day}",
+    "status": {
+        "unlocked": "مفتوح",
+        "near": "قريب من عمرك",
+        "future": "{count, plural, zero {خلال {amount} يوم} one {خلال {amount} يوم} two {خلال {amount} يومين} few {خلال {amount} أيام} many {خلال {amount} يومًا} other {خلال {amount} يوم}}"
+    },
+    "marker": {
+        "label": "أنت هنا",
+        "title": "{name}، عمر الخادم حوالي {days} يومًا",
+        "window": "زيادة أو نقصان {window} يومًا: من اليوم {from} إلى {to}"
+    },
+    "empty": "لا شيء لعرضه بهذه العوامل.",
+    "source": "المصدر: الجدول الزمني للخادم في حزمة البيانات."
+}

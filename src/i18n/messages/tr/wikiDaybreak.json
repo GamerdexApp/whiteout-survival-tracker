@@ -1,0 +1,69 @@
+{
+    "line": "Lumber Camp ve Tree of Life seviye tabloları, ayrıca kategoriye göre {decorations} dekorasyon; maliyet, refah ve bonuslarıyla.",
+    "lumberCamp": {
+        "title": "Lumber Camp",
+        "levels": "{count, plural, one {{amount} seviye} other {{amount} seviye}}",
+        "table": "Lumber Camp seviyeleri",
+        "level": "Seviye",
+        "workers": "İşçiler",
+        "perSecond": "Saniyede",
+        "treeLevel": "Tree seviyesi",
+        "lifeEssence": "Life Essence"
+    },
+    "tree": {
+        "title": "Tree of Life",
+        "table": "Tree of Life seviyeleri",
+        "level": "Seviye",
+        "prosperity": "Refah",
+        "lifeEssence": "Life Essence",
+        "perHour": "Saatte",
+        "buff": "Bonus"
+    },
+    "decorations": {
+        "title": "Dekorasyonlar",
+        "showing": "{total} içinden {shown} gösteriliyor",
+        "search": "Ara",
+        "searchPlaceholder": "Dekorasyonları ada ya da bonusa göre ara",
+        "categoryLabel": "Kategori",
+        "all": "Tümü",
+        "costFilter": "Maliyet türü",
+        "table": "Dekorasyonlar",
+        "name": "Dekorasyon",
+        "category": "Kategori",
+        "limit": "Sınır",
+        "levels": "Seviyeler",
+        "cost": "Maliyet",
+        "prosperityAtMax": "Son seviyedeki refah",
+        "buffAtMax": "Son seviyedeki bonus",
+        "emptyTitle": "Eşleşen dekorasyon yok",
+        "emptyDescription": "Aramayı, kategoriyi ya da maliyet türünü değiştir."
+    },
+    "costFilter": {
+        "any": "Her maliyet",
+        "lifeEssence": "Life Essence",
+        "items": "Kaynaklar",
+        "limited": "Sınırlı",
+        "unknown": "Maliyet veride yok"
+    },
+    "cost": {
+        "lifeEssence": "{amount} Life Essence",
+        "limited": "Yok, sınırlı dekorasyon"
+    },
+    "detail": {
+        "title": "Ayrıntılar",
+        "category": "Kategori",
+        "limit": "Sınır",
+        "cost": "Maliyet",
+        "levels": "Seviyeler",
+        "image": "Görsel",
+        "imageMissing": "Yok",
+        "levelsTitle": "Seviyeler: {name}",
+        "levelsMeta": "{count, plural, one {{amount} seviye} other {{amount} seviye}}",
+        "levelsTable": "Dekorasyonun seviyeleri",
+        "level": "Seviye",
+        "levelCost": "Maliyet",
+        "prosperity": "Refah",
+        "buff": "Bonus",
+        "noLevels": "Verilerde bu dekorasyon için seviye tablosu yok."
+    }
+}

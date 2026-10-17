@@ -1,0 +1,88 @@
+{
+    "title": "Kaynaklar",
+    "all": "Tümü",
+    "owned": "Sahip",
+    "sources": "Kaynaklar",
+    "sourcesUnknown": "Kaynaklar bilinmiyor",
+    "done": "Tamam",
+    "undo": "Geri al",
+    "list": {
+        "separator": ", ",
+        "andLast": "{rest} ve {last}"
+    },
+    "countControl": {
+        "remove": "Kaldır: {step} {name}",
+        "add": "Ekle: {step} {name}",
+        "owned": "Sahip olunan: {name}"
+    },
+    "itemRow": {
+        "owned": "sahip"
+    },
+    "itemSheet": {
+        "title": "Sahip olunan sayıyı düzenle",
+        "step": "Adım",
+        "setToZero": "0 yap",
+        "description": "Açıklama",
+        "unknown": "Bilinmiyor"
+    },
+    "view": {
+        "subline": "{categories} kategoride {items} öğe",
+        "sublineInCategory": "{categories} kategoride {items} öğe · {category} içinde {inCategory}",
+        "unsaved": "Kaydedilmedi",
+        "shortages": "Planlayıcı hedeflerinde eksik: {names}.",
+        "shortagesLink": "Bina planını aç",
+        "show": {
+            "label": "Göster",
+            "owned": "Sahip",
+            "unknown": "Kaynaklar bilinmiyor"
+        },
+        "speedups": {
+            "none": "Yok",
+            "noneOwned": "Hızlandırma yok",
+            "owned": "{minutes} dk: {parts}",
+            "part": "{count} x {name}",
+            "partSeparator": " + ",
+            "types": {
+                "general": "Genel",
+                "construction": "İnşaat",
+                "troop": "Birlik eğitimi",
+                "research": "Araştırma",
+                "learning": "Öğrenme",
+                "healing": "İyileştirme"
+            }
+        },
+        "search": {
+            "label": "Öğe ara",
+            "placeholder": "{total} öğe ara"
+        },
+        "setSeveral": "Birkaçını ayarla",
+        "showing": {
+            "several": "{total} öğenin {visible} tanesi gösteriliyor. Birkaçını ayarla açık. Değişiklikler Değişiklikleri kaydet'e basana kadar bekler.",
+            "instant": "{total} öğenin {visible} tanesi gösteriliyor. Her değişiklik hemen kaydedilir."
+        },
+        "empty": {
+            "title": "Eşleşen öğe yok",
+            "description": "Aramayı, kategoriyi ya da Göster filtresini değiştir.",
+            "reset": "Filtreleri sıfırla"
+        },
+        "columns": {
+            "item": "Öğe"
+        },
+        "bar": {
+            "noChanges": "Kaydedilmemiş değişiklik yok",
+            "changes": "{count, plural, one {{amount} kaydedilmemiş değişiklik} other {{amount} kaydedilmemiş değişiklik}}",
+            "discard": "Vazgeç",
+            "save": "Değişiklikleri kaydet"
+        },
+        "toast": {
+            "setToZero": "0 yapıldı: {name}",
+            "savedTitle": "Sayılar kaydedildi",
+            "savedMessage": "{count, plural, one {{amount} sayı} other {{amount} sayı}} değişti."
+        }
+    },
+    "planStock": {
+        "constructionTime": "İnşaat süresi, hızlandırma olarak",
+        "researchTime": "Araştırma süresi, hızlandırma olarak",
+        "minutesUnit": "dk"
+    }
+}

@@ -1,0 +1,231 @@
+{
+    "page": {
+        "title": "Gambaran Keseluruhan"
+    },
+    "header": {
+        "state": "State {number}",
+        "furnace": "Furnace {level}",
+        "serverAge": "Usia pelayan kira-kira {days} hari",
+        "derived": "Dibina daripada halaman anda yang lain"
+    },
+    "tiles": {
+        "furnace": {
+            "label": "Furnace",
+            "steps": "{order} daripada {total} langkah",
+            "unknown": "Tidak diketahui",
+            "unknownHint": "Tetapkan Furnace pada Bangunan"
+        },
+        "dailies": {
+            "label": "Harian",
+            "value": "{done} / {total}",
+            "tasks": "Tugas saya selesai hari ini",
+            "missions": "Misi dalam permainan selesai"
+        },
+        "events": {
+            "label": "Acara",
+            "live": "{amount} sedang berlangsung",
+            "coreDay": "{event} {day}",
+            "moreThisWeek": "{amount} lagi minggu ini",
+            "noneThisWeek": "Tiada minggu ini"
+        },
+        "skins": {
+            "label": "Skin",
+            "value": "{owned} / {total}",
+            "hint": "Skin dimiliki"
+        },
+        "vip": {
+            "label": "VIP",
+            "value": "VIP {level}",
+            "unknown": "Tidak diketahui",
+            "hint": "Daripada VIP XP anda",
+            "unknownHint": "Masukkan VIP XP anda pada VIP"
+        },
+        "prosperity": {
+            "label": "Kemakmuran pulau",
+            "possible": "daripada {max} yang mungkin",
+            "locked": "Terkunci",
+            "lockedHint": "Perlu Furnace {level}"
+        },
+        "generation": {
+            "label": "Generasi hero",
+            "allUnlocked": "Setiap generasi telah dibuka",
+            "shouldBeOpen": "Generasi {next} sepatutnya sudah dibuka",
+            "onDay": "Generasi {next} pada hari pelayan {day}",
+            "inDays": "Generasi {next} dalam kira-kira {days} hari"
+        }
+    },
+    "events": {
+        "title": "Acara",
+        "openCalendar": "Buka kalendar",
+        "liveNow": "Sedang berlangsung",
+        "liveBadge": "Sedang berlangsung",
+        "nextUp": "Seterusnya, daripada halaman acara anda",
+        "coreLine": "{day} daripada {count}, {name}. Acara Utama",
+        "runLine": "{length}. Sedang berlangsung",
+        "empty": "Tiada acara ditambah",
+        "addEvent": "Tambah acara",
+        "noLive": "Tiada apa yang berjalan sekarang."
+    },
+    "coreToday": {
+        "title": "{event} hari ini",
+        "open": "Acara Utama",
+        "dayLine": "{day}, {name}",
+        "plan": "Pelan hari ini {points} mata",
+        "checklist": "Senarai semak",
+        "done": "{done} daripada {total} selesai",
+        "progress": "Kemajuan senarai semak",
+        "noActions": "Tiada tindakan dirancang untuk hari ini.",
+        "castleSignedUp": "Telah mendaftar untuk kedudukan Castle bagi {day}",
+        "castleOpen": "Daftar untuk kedudukan Castle bagi {day}",
+        "logLocked": "{locked} daripada {total} hari dikunci dalam Log acara.",
+        "todayLocked": "{day} dikunci.",
+        "todayOpen": "{day} belum dilog.",
+        "openChecklist": "Buka senarai semak",
+        "openLog": "Buka log acara"
+    },
+    "queues": {
+        "title": "Baris gilir berjalan",
+        "running": "{count} berjalan",
+        "construction": "Pembinaan {number}",
+        "researchMain": "Penyelidikan",
+        "researchWarAcademy": "War Academy",
+        "training": "Latihan {name}",
+        "learning": "Pembelajaran",
+        "task": {
+            "construction": "{name} ke {level}",
+            "research": "{name} ke tahap {level}",
+            "training": "Tentera {tier}",
+            "learning": "{name}, {skill}"
+        },
+        "idle": "Melahu",
+        "idleBuildings": "Melahu, tekan Mula naik taraf pada Bangunan",
+        "idleResearch": "Melahu, tekan Mula naik taraf pada Penyelidikan",
+        "progress": "Kemajuan {title}"
+    },
+    "lastResult": {
+        "title": "Keputusan acara terakhir",
+        "open": "Buka dalam Sejarah",
+        "days": "Hari 1 hingga 5. Battle Phase diasingkan.",
+        "plan": "Pelan",
+        "actual": "Sebenar",
+        "difference": "Perbezaan",
+        "overall": "Kedudukan keseluruhan",
+        "alliance": "Kedudukan alliance",
+        "upgrades": "Naik taraf dirancang siap",
+        "upgradesOf": "{done} daripada {total}"
+    },
+    "server": {
+        "title": "Usia pelayan",
+        "edit": "Sunting chief",
+        "age": "Kira-kira {days} hari, tambah atau tolak {tolerance}",
+        "unknown": "Tidak diketahui. Tambah tarikh mula pelayan dalam Sunting chief.",
+        "fromDate": "Daripada tarikh mula pelayan, {date}.",
+        "warAcademy": "Penyelidikan War Academy",
+        "t12": "Penyelidikan T12",
+        "open": "Dibuka",
+        "opensIn": "Dibuka dalam kira-kira {days} hari",
+        "unknownUnlock": "Tidak diketahui",
+        "heroes": "Hero dibuka sehingga",
+        "generation": "Generasi {number}",
+        "estimate": "Hari buka kunci datang daripada garis masa pelayan. Ubah dalam Sunting chief jika pelayan anda agak berbeza.",
+        "areas": {
+            "fireCrystal": "Tahap Fire Crystal",
+            "pets": "Haiwan Peliharaan",
+            "experts": "Pakar"
+        },
+        "fcUpTo": "Sehingga {level}",
+        "nothingYet": "Belum ada",
+        "countOf": "{unlocked} daripada {total} dibuka",
+        "allUnlocked": "Semuanya telah dibuka.",
+        "generationName": "Generasi {number}",
+        "allGenerations": "Setiap generasi telah dibuka.",
+        "next": {
+            "withDate": "Seterusnya: {names}, hari pelayan {day}, {date}. Dalam kira-kira {days} hari.",
+            "noDate": "Seterusnya: {names}, hari pelayan {day}. Dalam kira-kira {days} hari.",
+            "unknownAge": "Seterusnya: {names}, hari pelayan {day}.",
+            "passed": "{names} sepatutnya sudah dibuka mengikut usia pelayan anda, hari pelayan {day}. Naikkan tetapan dalam Sunting chief."
+        }
+    },
+    "dailies": {
+        "title": "Harian hari ini",
+        "open": "Buka Harian",
+        "activeness": "{now} daripada {top} Keaktifan",
+        "activenessBar": "Keaktifan hari ini",
+        "missions": "Misi dalam permainan: {done} daripada {total} selesai",
+        "tasks": "{done} daripada {total} Tugas saya",
+        "tasksBar": "Tugas saya selesai hari ini",
+        "stillOpen": "Masih terbuka dalam Tugas saya, {shown} pertama daripada {total}",
+        "allDone": "Setiap tugas dalam Tugas saya telah selesai hari ini.",
+        "noTasks": "Belum ada tugas dalam Tugas saya."
+    },
+    "planner": {
+        "title": "Kekurangan perancang",
+        "short": "Kurang {amount}",
+        "covered": "Tiada kekurangan",
+        "goals": "Matlamat daripada {pages}. Kos datang daripada pakej, stok daripada Sumber.",
+        "noGoals": "Tiada matlamat ditetapkan. Tetapkan matlamat dengan Rancang pada Bangunan, Penyelidikan dan halaman lain.",
+        "pages": {
+            "buildings": "Bangunan",
+            "research": "Penyelidikan",
+            "heroes": "Hero",
+            "troops": "Tentera",
+            "pets": "Haiwan Peliharaan",
+            "chiefGear": "Gear Chief",
+            "chiefCharms": "Chief Charms"
+        },
+        "separator": ", ",
+        "line": "Perlu {need} · Ada {have}",
+        "shortBy": "Kurang {amount}",
+        "enough": "Cukup",
+        "updateStock": "Kemas kini stok dalam Sumber",
+        "incomplete": "Tahap matlamat mempunyai kos Tidak diketahui dalam pakej, jadi jumlah ini tidak lengkap."
+    },
+    "progress": {
+        "title": "Kemajuan setiap bahagian",
+        "hint": "Dimiliki atau ditingkatkan berbanding jumlah pakej",
+        "count": "{owned} / {total}",
+        "furnace": "Furnace",
+        "furnaceOf": "{level} daripada {max}",
+        "furnaceUnknown": "Tidak diketahui",
+        "areas": {
+            "buildings": "Bangunan",
+            "heroes": "Hero",
+            "chiefGear": "Gear chief",
+            "chiefCharms": "Chief charms",
+            "experts": "Pakar",
+            "pets": "Haiwan peliharaan",
+            "research": "Penyelidikan",
+            "allianceTech": "Teknologi alliance",
+            "skins": "Skin"
+        },
+        "locked": {
+            "daybreakIsland": "Daybreak Island",
+            "requirement": "Terkunci. Perlu Furnace {level}, {count, plural, other {{amount} tahap}} lagi"
+        }
+    },
+    "power": {
+        "title": "Kuasa",
+        "total": "Jumlah kuasa",
+        "complete": "Kuasa semasa berbanding paling banyak yang boleh diberikan setiap kumpulan dengan semuanya pada tahap tertinggi dalam kandungan yang dibuka oleh tetapan buka kunci anda. Kumpulan tanpa maksimum dikira seadanya.",
+        "incomplete": "Perbandingan yang sama. {count, plural, other {{amount} item}} tiada nilai kuasa dalam data dan {count, plural, other {tidak dikira}}.",
+        "groupWithoutValue": "{count, plural, other {{amount} item}} tiada nilai kuasa dalam data",
+        "groups": {
+            "buildings": "Bangunan",
+            "research": "Penyelidikan",
+            "heroes": "Hero",
+            "heroGear": "Gear Hero",
+            "chiefGear": "Gear Chief",
+            "chiefCharms": "Chief Charms",
+            "experts": "Pakar",
+            "pets": "Haiwan Peliharaan",
+            "troops": "Tentera"
+        },
+        "ofPossible": "daripada {possible} yang mungkin",
+        "totalProgress": "Jumlah kuasa berbanding yang paling mungkin",
+        "percentOfPossible": "{percent}% daripada yang paling mungkin",
+        "rowOfPossible": "{power} daripada {possible}",
+        "progress": "Kuasa {group} berbanding yang paling mungkin",
+        "noMaximum": "Tiada maksimum, bergantung pada apa yang anda masukkan",
+        "noCapNote": "Tentera dan Gear Hero tiada had, jadi jumlah kuasa anda boleh melebihi jumlah yang mungkin dengan melatih lebih banyak tentera dan menambah baik gear hero. Kedua-duanya dikira seadanya dalam jumlah yang mungkin."
+    }
+}

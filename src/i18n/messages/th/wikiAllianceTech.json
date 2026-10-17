@@ -1,0 +1,54 @@
+{
+    "line": "เทคโนโลยี {total} รายการใน 3 แผนผัง: Growth {growth}, Territory {territory}, Battle {battle} ข้อมูลอ้างอิงเท่านั้น ไม่มีอะไรที่นี่ถูกบันทึก",
+    "list": {
+        "title": "โหนดเทคโนโลยี",
+        "categoriesLabel": "แผนผังเทคโนโลยี",
+        "categories": {
+            "all": "ทั้งหมด",
+            "Growth": "Growth",
+            "Territory": "Territory",
+            "Battle": "Battle"
+        },
+        "search": "ค้นหา",
+        "searchPlaceholder": "ค้นหาเทคโนโลยีตามชื่อหรือผล",
+        "tier": "ระดับ",
+        "allTiers": "ทุกระดับ",
+        "tierOption": "ระดับ {tier}",
+        "empty": "ไม่มีโหนดเทคโนโลยีที่ตรงกับการค้นหานี้",
+        "emptyHint": "ล้างการค้นหาหรือตัวกรอง",
+        "columns": {
+            "tech": "เทคโนโลยี",
+            "category": "หมวดหมู่",
+            "tier": "ระดับ",
+            "levels": "เลเวล",
+            "maxBonus": "โบนัสสูงสุด",
+            "cost": "ค่าใช้จ่ายเลเวล 1",
+            "time": "เวลาเลเวล 1",
+            "requires": "เงื่อนไขเลเวล 1"
+        },
+        "mobileMeta": "{category} ระดับ {tier} {levels}",
+        "count": "{count, plural, other {เทคโนโลยี {amount} รายการ}}"
+    },
+    "levels": "{count, plural, other {{amount} เลเวล}}",
+    "detail": {
+        "facts": "รายละเอียด",
+        "levelsTitle": "เลเวล",
+        "none": "ไม่มี",
+        "fields": {
+            "category": "หมวดหมู่",
+            "tier": "ระดับ",
+            "effect": "ผล",
+            "stat": "ค่าสถานะ",
+            "levels": "เลเวล"
+        },
+        "columns": {
+            "level": "เลเวล",
+            "bonus": "โบนัส",
+            "cost": "ค่าใช้จ่าย",
+            "time": "เวลา",
+            "requires": "เงื่อนไข"
+        },
+        "level": "เลเวล {level}",
+        "requirement": "{name} เลเวล {level}"
+    }
+}

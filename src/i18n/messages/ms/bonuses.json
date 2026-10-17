@@ -1,0 +1,115 @@
+{
+    "title": "Bonus",
+    "all": "Semua",
+    "list": {
+        "separator": ", ",
+        "andLast": "{rest} dan {last}"
+    },
+    "sourceTypes": {
+        "account": "Akaun",
+        "hero": "Hero",
+        "expert": "Pakar",
+        "research": "Penyelidikan",
+        "allianceTech": "Teknologi Alliance",
+        "allianceFacility": "Kemudahan Alliance",
+        "alliancePrestige": "Alliance Prestige Buildings",
+        "vip": "VIP",
+        "building": "Bangunan",
+        "skin": "Skin",
+        "tundraAlbum": "Tundra Album",
+        "collection": "Koleksi",
+        "decoration": "My Island",
+        "treeOfLife": "My Island",
+        "castleAppointment": "Kedudukan Castle",
+        "pet": "Haiwan Peliharaan",
+        "chiefGear": "Gear Chief",
+        "chiefGearSet": "Bonus set Gear Chief",
+        "chiefCharm": "Chief Charms",
+        "chiefOrder": "Chief Orders",
+        "presidentSkill": "Kemahiran Presiden",
+        "marchQueuePack": "pek March Queue"
+    },
+    "unit": {
+        "percent": "{value}%",
+        "hours": "{value} j",
+        "seconds": "{value} s",
+        "plain": "{value}"
+    },
+    "view": {
+        "subline": "{name} · setiap bonus dijumlahkan daripada halaman lain. Halaman ini tidak menyimpan apa-apa.",
+        "tiles": {
+            "stats": "Statistik dalam hasil",
+            "groups": "Kumpulan dengan statistik",
+            "sources": "Jenis sumber yang memberi sesuatu"
+        },
+        "pending": {
+            "title": "Belum semua sumber dikira.",
+            "text": "Setiap sumber di bawah dibaca daripada halaman yang menyimpannya. Sehingga halaman ini dibina, ia tidak menambah apa-apa: {pending}. {unstored} belum disimpan oleh mana-mana halaman."
+        },
+        "rulesTitle": "Cara nombor dikira",
+        "rules": {
+            "affinity": {
+                "title": "Afiniti pakar",
+                "text": "Pakar memberi bonus asas yang meningkat dengan tahap afiniti. Pada tahap 10, 20 hingga 100 pakar mesti naik pangkat. Sehingga itu, bonus tahap sebelumnya dikira."
+            },
+            "albums": {
+                "title": "Album dikira apabila lengkap",
+                "text": "Tundra Album memberi buffnya hanya apabila semua 9 teka-teki selesai."
+            },
+            "pets": {
+                "title": "Haiwan peliharaan guna nilai tapisan",
+                "text": "Setiap haiwan peliharaan mengira nilai biasa atau nilai tapisannya, seperti yang anda tetapkan pada halaman Haiwan Peliharaan."
+            },
+            "noNumber": {
+                "title": "Tiada nombor, tidak dikira",
+                "text": "Sumber yang tiada nombor dalam data tidak menambah apa-apa. Ia tidak dipaparkan sebagai 0."
+            },
+            "apart": {
+                "title": "Diasingkan",
+                "text": "Nilai peratus dan nilai tetap tidak pernah dicampur. Statistik Infantry, Lancer dan Marksman berasingan daripada statistik Tentera."
+            },
+            "time": {
+                "title": "Statistik masa",
+                "text": "Construction Speed Boost ialah jam yang dijimatkan bagi setiap binaan. Ally Help Time dalam saat. Setiap satu menunjukkan unitnya."
+            }
+        },
+        "search": {
+            "label": "Cari statistik",
+            "placeholder": "Cari statistik"
+        },
+        "views": {
+            "label": "Paparan",
+            "stat": "Mengikut statistik",
+            "source": "Mengikut sumber"
+        },
+        "empty": {
+            "noBonusesTitle": "Belum ada bonus",
+            "noBonusesDescription": "Bonus dipaparkan apabila halaman yang menyimpannya diisi.",
+            "noMatchTitle": "Tiada statistik sepadan",
+            "noMatchDescription": "Ubah carian atau kumpulan."
+        },
+        "statCount": "{count, plural, other {{amount} statistik}}",
+        "sourceCount": "{count, plural, other {{amount} sumber}}",
+        "columns": {
+            "statAndSource": "Statistik dan sumber",
+            "sourceType": "Jenis sumber",
+            "counted": "Dikira"
+        }
+    },
+    "eventRules": {
+        "title": "Peraturan buff acara",
+        "intro": "Ia menyatakan jenis bonus yang masih terpakai semasa acara. Ini peraturan, bukan nombor, jadi tiada apa di sini ditambah kepada jumlah di atas.",
+        "event": "Acara",
+        "columns": {
+            "cityBonusWarsBuffs": "Bonus bandar",
+            "deploymentCapacity": "Pengerahan",
+            "territoryBonuses": "Wilayah",
+            "marchAccelerator": "Pecut march"
+        },
+        "applicability": {
+            "yes": "Ya",
+            "no": "Tidak",
+            "partial": "Sebahagian"
+        }
+    }
+}

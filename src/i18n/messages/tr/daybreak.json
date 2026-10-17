@@ -1,0 +1,114 @@
+{
+    "page": {
+        "title": "Daybreak Island"
+    },
+    "view": {
+        "subline": "Lumber Camp, Tree of Life ve dekorasyonların."
+    },
+    "locked": {
+        "title": "Furnace {level} gerekir",
+        "description": "Daybreak Island, Furnace {level} seviyesinde açılır. Furnace seviyen {current}, yani {missing} kaldı. Sayfa, nelerin geleceğini görebilmen için görünür kalır. O zamana kadar düzenleme kapalı.",
+        "noFurnace": "Daybreak Island, Furnace {level} seviyesinde açılır. Furnace seviyen henüz ayarlanmadı. Sayfa, nelerin geleceğini görebilmen için görünür kalır. O zamana kadar düzenleme kapalı.",
+        "missing": "{count, plural, one {{amount} seviye daha} other {{amount} seviye daha}}",
+        "link": "Binalar'a git"
+    },
+    "levelOf": "Lv {level} / {max}",
+    "camp": {
+        "title": "Lumber Camp",
+        "levelLabel": "Lumber Camp seviyesi",
+        "workers": "İşçiler",
+        "rate": "Saniye başına hız",
+        "essence": "Bu seviyeye ulaşmak için Life Essence",
+        "needsTree": "Tree of Life seviye {required} gerekir. Seninki {current}.",
+        "treeTooLow": "Tree of Life seviye {current} çok düşük. Lumber Camp seviye {level} için Tree of Life seviye {required} gerekir.",
+        "next": "Sıradaki, seviye {level}: {essence} Life Essence, Tree of Life seviye {tree} gerekir.",
+        "highest": "Bu en yüksek seviye."
+    },
+    "tree": {
+        "title": "Tree of Life",
+        "levelLabel": "Tree of Life seviyesi",
+        "prosperity": "Bu seviyeye ulaşmak için refah",
+        "essence": "Bu seviyeye ulaşmak için Life Essence",
+        "perHour": "Saat başına Life Essence",
+        "buff": "Bonus",
+        "next": "Sıradaki, seviye {level}: {prosperity} refah, {essence} Life Essence.",
+        "highest": "Bu en yüksek seviye."
+    },
+    "decorations": {
+        "title": "Dekorasyonlar",
+        "owned": "{total} içinden {owned} tanesine sahip",
+        "imageNote": "Pakette {total} dekorasyonun yalnızca {withImage} tanesinin görseli var. Düz kare görseli olanları, kesik çizgili kare kalanları işaretler."
+    },
+    "search": {
+        "label": "Dekorasyon ara",
+        "placeholder": "Dekorasyon ara"
+    },
+    "status": {
+        "showing": "{total} dekorasyonun {shown} tanesi gösteriliyor.",
+        "showMore": "{count, plural, one {{amount} dekorasyon daha göster} other {{amount} dekorasyon daha göster}}"
+    },
+    "empty": {
+        "title": "Eşleşen dekorasyon yok",
+        "description": "Dekorasyonları görmek için aramayı ya da filtreleri değiştir.",
+        "reset": "Filtreleri sıfırla"
+    },
+    "card": {
+        "costEach": "Tanesinin maliyeti",
+        "cost": "{amount} {item}",
+        "limit": "Sınır",
+        "buffAtLevel": "Seviye {level} bonusu",
+        "buffAtMax": "Son seviyedeki bonus",
+        "buffValue": "{value} {stat}",
+        "prosperityAtMax": "Son seviyedeki refah",
+        "essenceCost": "Life Essence maliyeti",
+        "unknown": "Bilinmiyor",
+        "owned": "Sahip",
+        "notOwned": "Sahip değil",
+        "ownedLabel": "Sahip: {name}",
+        "levelLabel": "Seviye: {name}",
+        "countLabel": "Sayı: {name}",
+        "limited": "Sınırlı",
+        "ownedCount": "{limit} içinden {count} tanesine sahip"
+    },
+    "categories": {
+        "Basic": "Temel",
+        "Vegetation": "Bitki Örtüsü",
+        "Common": "Yaygın",
+        "Uncommon": "Yaygın Dışı",
+        "Rare": "Nadir",
+        "Epic": "Epik",
+        "Mythic": "Mitik",
+        "Unique": "Benzersiz"
+    },
+    "filters": {
+        "button": "Filtreler",
+        "title": "Filtreler",
+        "description": "Dekorasyon listesini daralt. Filtreler kaydedilmez.",
+        "category": "Kategori",
+        "categoryAll": "Tümü {amount}",
+        "categoryOption": "{category} {amount}",
+        "show": "Göster",
+        "ownedOnly": "Yalnızca sahip olunanlar",
+        "limitedOnly": "Yalnızca sınırlılar",
+        "unknownBuffOnly": "Yalnızca bonusu bilinmeyenler",
+        "sort": "Sırala",
+        "order": {
+            "game": "Paket sırası",
+            "name": "Ad, A'dan Z'ye",
+            "level": "Seviye, en yüksek önce"
+        },
+        "reset": "Sıfırla",
+        "showButton": "{count, plural, one {{amount} dekorasyonu göster} other {{amount} dekorasyonu göster}}",
+        "nonLimitedOnly": "Yalnızca sınırsızlar",
+        "notOwnedOnly": "Yalnızca sahip olunmayanlar"
+    },
+    "prosperity": {
+        "label": "Refah skorun",
+        "progress": "Dekorasyonlarının refah skoru",
+        "possible": "Her dekorasyon en üst seviyede ve sınırda iken {max} üzerinden",
+        "levelled": "Seviyeli dekorasyonlar, ulaşılan seviyenin refahı",
+        "limited": "Sınırı olan dekorasyonlar, sahip olunan sayı çarpı tanesinin refahı",
+        "ofMax": "{max} içinden {value}",
+        "withoutValue": "Verilerde {count, plural, one {sahip olunan {amount} dekorasyonun} other {sahip olunan {amount} dekorasyonun}} refah değeri yok ve {count, plural, one {sayılmıyor} other {sayılmıyor}}."
+    }
+}

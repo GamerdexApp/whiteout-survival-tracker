@@ -1,0 +1,45 @@
+{
+    "line": "{enhancement} geliştirme seviyesi, {empowerment} güçlendirme seviyesi, {mastery} ustalık dövme satırı ve {stats} özellik girdisi. Yalnızca başvuru, burada hiçbir şey kaydedilmez.",
+    "tabsLabel": "Kahraman ekipmanı tabloları",
+    "tabs": {
+        "enhancement": "Geliştirme",
+        "empowerment": "Güçlendirme",
+        "mastery": "Ustalık dövme",
+        "stats": "Özellikler"
+    },
+    "levels": {
+        "columns": {
+            "level": "Seviye",
+            "cost": "Maliyet",
+            "power": "Güç",
+            "gain": "Öncekine göre kazanç",
+            "milestonePower": "Kilometre taşı gücü",
+            "stage": "Aşama",
+            "statsUp": "Özellik artışı"
+        },
+        "none": "Yok",
+        "percent": "%{value}",
+        "gainValue": "+{value}"
+    },
+    "stats": {
+        "slot": "Slot",
+        "troopType": "Birlik türü",
+        "troop": {
+            "infantry": "Piyade",
+            "lancer": "Mızrakçı",
+            "marksman": "Nişancı"
+        },
+        "note": "Özellik seviyeleri 101 - 200, güçlendirme seviyeleri 1 - 100'dür.",
+        "columns": {
+            "level": "Seviye",
+            "combat": "{stat}",
+            "health": "Sağlık",
+            "percent": "{stat}"
+        },
+        "level": "Seviye {level}",
+        "empowermentLevel": "Seviye {level}, güçlendirme {empowerment}",
+        "milestonesTitle": "Kilometre taşları",
+        "milestone": "Güçlendirme seviye {level}, {event}: {stat}",
+        "percentValue": "%{value}"
+    }
+}

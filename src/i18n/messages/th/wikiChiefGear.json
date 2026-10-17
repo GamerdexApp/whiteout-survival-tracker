@@ -1,0 +1,56 @@
+{
+    "line": "{rows} แถวอุปกรณ์ {slots} ช่อง และอัตราแลกเปลี่ยน {rates} แบบ ข้อมูลอ้างอิงเท่านั้น ไม่มีอะไรที่นี่ถูกบันทึกลงหัวหน้าของคุณ",
+    "slots": {
+        "heading": "ช่องอุปกรณ์",
+        "rarities": "ไอคอน {first} ถึง {last}",
+        "detailLine": "เสริมทหาร {troopType} หนึ่งไอคอนต่อความหายาก"
+    },
+    "table": {
+        "heading": "ตารางอุปกรณ์",
+        "meta": "{rows} แถว {tiers} ระดับ",
+        "searchLabel": "ค้นหา",
+        "searchPlaceholder": "ค้นหา {rows} แถวอุปกรณ์",
+        "tierLabel": "ระดับ",
+        "allTiers": "ทุกระดับ",
+        "starsLabel": "ดาว",
+        "allStars": "ทุกดาว",
+        "starsOption": "ดาว {stars}",
+        "empty": "ไม่มีแถวอุปกรณ์ที่ตรงกับตัวกรอง"
+    },
+    "columns": {
+        "row": "แถว",
+        "materials": "วัสดุ",
+        "stats": "ค่าสถานะ",
+        "power": "พลัง",
+        "score": "คะแนน",
+        "capacity": "ความจุส่ง"
+    },
+    "cells": {
+        "none": "ไม่มี",
+        "percent": "{value}%"
+    },
+    "tiers": {
+        "heading": "ระดับ",
+        "meta": "ป้ายระดับ {tiers} ป้าย",
+        "tier": "ระดับ",
+        "rows": "แถว",
+        "stats": "ค่าสถานะ แถวแรกถึงแถวสุดท้าย",
+        "power": "พลังที่แถวสุดท้าย",
+        "statsRange": "{first}% ถึง {last}%"
+    },
+    "exchange": {
+        "heading": "อัตราแลกเปลี่ยนวัสดุ",
+        "exchange": "แลกเปลี่ยน",
+        "from": "จาก",
+        "to": "เป็น",
+        "weeklyLimit": "ขีดจำกัดรายสัปดาห์"
+    },
+    "setBonus": {
+        "heading": "โบนัสชุด",
+        "meta": "{tiers} ระดับ",
+        "hint": "สวม 3 ชิ้นได้โบนัสป้องกัน และสวม 6 ชิ้นได้โบนัสโจมตี เปอร์เซ็นต์ขึ้นกับระดับของชิ้นที่สวม มีผลกับทหาร {types}",
+        "pieceSet": "ชุด {pieces} ชิ้น",
+        "tier": "ระดับ",
+        "pieces": "{pieces} ชิ้น {stat}"
+    }
+}

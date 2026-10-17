@@ -1,0 +1,45 @@
+{
+    "line": "เลเวลเสริมแกร่ง {enhancement} เลเวลเพิ่มพลังพิเศษ {empowerment} แถวหลอมชำนาญ {mastery} แถว และรายการค่าสถานะ {stats} รายการ ข้อมูลอ้างอิงเท่านั้น ไม่มีอะไรที่นี่ถูกบันทึก",
+    "tabsLabel": "ตารางอุปกรณ์ฮีโร่",
+    "tabs": {
+        "enhancement": "เสริมแกร่ง",
+        "empowerment": "เพิ่มพลังพิเศษ",
+        "mastery": "หลอมชำนาญ",
+        "stats": "ค่าสถานะ"
+    },
+    "levels": {
+        "columns": {
+            "level": "เลเวล",
+            "cost": "ค่าใช้จ่าย",
+            "power": "พลัง",
+            "gain": "เพิ่มจากเลเวลก่อน",
+            "milestonePower": "พลังของเป้าหมาย",
+            "stage": "ขั้น",
+            "statsUp": "ค่าสถานะที่เพิ่ม"
+        },
+        "none": "ไม่มี",
+        "percent": "{value}%",
+        "gainValue": "+{value}"
+    },
+    "stats": {
+        "slot": "ช่อง",
+        "troopType": "ประเภททหาร",
+        "troop": {
+            "infantry": "Infantry",
+            "lancer": "Lancer",
+            "marksman": "Marksman"
+        },
+        "note": "ค่าสถานะเลเวล 101 ถึง 200 คือเลเวลเพิ่มพลังพิเศษ 1 ถึง 100",
+        "columns": {
+            "level": "เลเวล",
+            "combat": "{stat}",
+            "health": "พลังชีวิต",
+            "percent": "{stat}"
+        },
+        "level": "เลเวล {level}",
+        "empowermentLevel": "เลเวล {level} เพิ่มพลังพิเศษ {empowerment}",
+        "milestonesTitle": "เป้าหมาย",
+        "milestone": "เพิ่มพลังพิเศษเลเวล {level} {event}: {stat}",
+        "percentValue": "{value}%"
+    }
+}

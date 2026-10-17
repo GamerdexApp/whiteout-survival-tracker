@@ -1,0 +1,90 @@
+{
+    "page": {
+        "title": "ألبوم التندرا"
+    },
+    "view": {
+        "subline": "{chief} · {details} · اكتمل {complete} من {total} ألبومًا"
+    },
+    "summary": {
+        "label": "الألبومات المكتملة",
+        "value": "{done} من {total}",
+        "progress": "الألبومات المكتملة",
+        "inData": "{shown} من {all} ألبومًا موجودة في البيانات"
+    },
+    "buffs": {
+        "title": "التعزيزات المحتسبة الآن",
+        "derived": "مشتق",
+        "none": "لم يكتمل أي ألبوم بعد، فلا يُحتسب أي تعزيز من ألبوم التندرا.",
+        "note": "تُحتسب الألبومات المكتملة فقط. تغذي هذه التعزيزات صفحة <link>المزايا</link>."
+    },
+    "album": {
+        "status": {
+            "complete": "مكتمل",
+            "inProgress": "قيد التنفيذ"
+        },
+        "buffWhenComplete": "التعزيز عند الاكتمال",
+        "puzzlesDone": "الألغاز المنجزة",
+        "puzzlesValue": "{done} من {total}",
+        "puzzlesProgress": "الألغاز المنجزة في {album}",
+        "completionRewards": "مكافآت الاكتمال",
+        "markComplete": "تحديد الألبوم كمكتمل",
+        "notCounting": "لا يُحتسب بعد. يُحتسب {buff} في صفحة المزايا فقط عند إنجاز كل الألغاز الـ {total}. تحديد الألبوم كمكتمل يضبط كل الألغاز الـ {total} ويعرض إشعار تراجع.",
+        "counting": "يُحتسب الآن. {buff} موجود في صفحة المزايا. إلغاء تحديد لغز يزيله مجددًا.",
+        "piecesValue": "تم جمع {collected} من {total} قطعة"
+    },
+    "puzzle": {
+        "pieces": "{count, plural, zero {{amount} قطعة} one {{amount} قطعة} two {{amount} قطعتان} few {{amount} قطع} many {{amount} قطعة} other {{amount} قطعة}}، من نجمة 1 إلى 5: {split}",
+        "reward": "المكافأة",
+        "done": "تم إنجاز اللغز، وجُمعت كل القطع",
+        "doneFor": "تم، {puzzle}",
+        "collectedLabel": "القطع المجموعة",
+        "collected": "{collected} من {total}",
+        "pieceLabel": "{name}، {stars} نجوم",
+        "pieceHint": "حدّد القطع التي تملكها. تحديد اللغز كمنجز يجمع كل القطع.",
+        "allCollected": "اللغز منجز، لذا جُمعت كل القطع."
+    },
+    "reward": {
+        "line": "{amount} {item}",
+        "sized": "{amount} {item} ({size})",
+        "unknownItem": "عنصر غير معروف"
+    },
+    "toast": {
+        "markedTitle": "تم تحديد {album} كمكتمل",
+        "markedMessage": "أُنجزت كل الألغاز الـ {total}.",
+        "unmarkedTitle": "أُلغي تحديد {puzzle}",
+        "unmarkedMessage": "عاد {album} قيد التنفيذ وغادر تعزيزه صفحة المزايا.",
+        "undo": "تراجع"
+    },
+    "notInData": "الألبومات الأخرى البالغ عددها {count} من أصل {total} في ألبوم التندرا غير موجودة في البيانات بعد. ستُضاف عندما تحتويها الحزمة.",
+    "pieces": {
+        "label": "القطع المجموعة",
+        "value": "{collected} من {available}",
+        "progress": "القطع المجموعة في كل الألبومات",
+        "viewRewards": "عرض مكافآت القطع"
+    },
+    "rewardsFlyout": {
+        "title": "مكافآت عدد القطع",
+        "description": "المكافآت التي تحصل عليها كلما تراكمت القطع التي تجمعها في كل الألبومات",
+        "close": "إغلاق",
+        "collected": "القطع المجموعة",
+        "collectedValue": "{collected} من {available}",
+        "progress": "القطع المجموعة في كل الألبومات",
+        "reached": "تم بلوغ {reached} من {all} مكافأة لعدد القطع",
+        "next": "المكافأة التالية عند {pieces} قطعة، ويتبقى جمع {missing}.",
+        "allReached": "تم بلوغ كل مكافآت عدد القطع الموجودة في البيانات.",
+        "totalSoFar": "المكافآت المكتسبة حتى الآن",
+        "tree": "المكافآت حسب القطع المجموعة",
+        "tier": "المكافأة {tier} عند {pieces} قطعة",
+        "stateReached": "تم الجمع",
+        "stateNext": "التالية، ويتبقى {missing}",
+        "stateLater": "يتبقى {missing}"
+    },
+    "picker": {
+        "label": "الألبومات",
+        "title": "الألبومات",
+        "complete": "الألبوم مكتمل",
+        "puzzles": "{done} من {total} لغزًا",
+        "pieces": "{collected} من {total} قطعة",
+        "piecesProgress": "القطع المجموعة في {album}"
+    }
+}

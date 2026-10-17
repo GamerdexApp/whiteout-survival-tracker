@@ -1,0 +1,69 @@
+{
+    "line": "Jadual tahap Lumber camp dan Tree of Life, serta {decorations} hiasan mengikut kategori dengan kos, kemakmuran dan buff.",
+    "lumberCamp": {
+        "title": "Lumber camp",
+        "levels": "{count, plural, other {{amount} tahap}}",
+        "table": "Tahap Lumber camp",
+        "level": "Tahap",
+        "workers": "Pekerja",
+        "perSecond": "Sesaat",
+        "treeLevel": "Tahap pokok",
+        "lifeEssence": "Life Essence"
+    },
+    "tree": {
+        "title": "Tree of Life",
+        "table": "Tahap Tree of Life",
+        "level": "Tahap",
+        "prosperity": "Kemakmuran",
+        "lifeEssence": "Life Essence",
+        "perHour": "Sejam",
+        "buff": "Buff"
+    },
+    "decorations": {
+        "title": "Hiasan",
+        "showing": "Menunjukkan {shown} daripada {total}",
+        "search": "Cari",
+        "searchPlaceholder": "Cari hiasan mengikut nama atau buff",
+        "categoryLabel": "Kategori",
+        "all": "Semua",
+        "costFilter": "Jenis kos",
+        "table": "Hiasan",
+        "name": "Hiasan",
+        "category": "Kategori",
+        "limit": "Had",
+        "levels": "Tahap",
+        "cost": "Kos",
+        "prosperityAtMax": "Kemakmuran pada maksimum",
+        "buffAtMax": "Buff pada tahap maksimum",
+        "emptyTitle": "Tiada hiasan sepadan",
+        "emptyDescription": "Ubah carian, kategori atau jenis kos."
+    },
+    "costFilter": {
+        "any": "Sebarang kos",
+        "lifeEssence": "Life Essence",
+        "items": "Sumber",
+        "limited": "Terhad",
+        "unknown": "Kos tiada dalam data"
+    },
+    "cost": {
+        "lifeEssence": "{amount} Life Essence",
+        "limited": "Tiada, hiasan terhad"
+    },
+    "detail": {
+        "title": "Butiran",
+        "category": "Kategori",
+        "limit": "Had",
+        "cost": "Kos",
+        "levels": "Tahap",
+        "image": "Imej",
+        "imageMissing": "Tiada",
+        "levelsTitle": "Tahap {name}",
+        "levelsMeta": "{count, plural, other {{amount} tahap}}",
+        "levelsTable": "Tahap hiasan",
+        "level": "Tahap",
+        "levelCost": "Kos",
+        "prosperity": "Kemakmuran",
+        "buff": "Buff",
+        "noLevels": "Data tiada jadual tahap untuk hiasan ini."
+    }
+}

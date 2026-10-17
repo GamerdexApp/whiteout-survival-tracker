@@ -1,0 +1,95 @@
+{
+    "hoursMinutes": {
+        "hours": "Jam",
+        "minutes": "Minit"
+    },
+    "jobCard": {
+        "idle": "Melahu",
+        "progress": "Kemajuan {title}",
+        "ends": "Tamat {date}",
+        "manage": "Urus",
+        "finish": "Siap"
+    },
+    "timeLeftPill": {
+        "manage": "{label}, {timeLeft}. Urus naik taraf"
+    },
+    "manage": {
+        "fallbackTitle": "Urus naik taraf",
+        "description": "Urus naik taraf yang sedang berjalan",
+        "close": "Tutup",
+        "finish": "Siapkan naik taraf",
+        "progress": "Kemajuan naik taraf",
+        "started": "Bermula {date}",
+        "ends": "Tamat {date}",
+        "speedup": {
+            "title": "Guna pecutan",
+            "minutesUsed": "Minit digunakan",
+            "apply": "Guna",
+            "timeLeftAfter": "Masa tinggal selepas digunakan",
+            "hint": "Pecutan apa jenis pun menolak minitnya daripada masa tinggal."
+        },
+        "setTime": {
+            "title": "Tetapkan masa tinggal",
+            "button": "Tetapkan masa tinggal",
+            "hint": "Gunakan ini apabila permainan menunjukkan masa yang berbeza."
+        },
+        "done": {
+            "title": "Apabila ia siap",
+            "cancel": "Batalkan naik taraf ini"
+        }
+    },
+    "planStock": {
+        "title": "Adakah anda mempunyai cukup?",
+        "shortCount": "{short} daripada {total} kurang",
+        "description": "Apa yang diambil pelan daripada stok anda, disemak berbanding apa yang anda pegang. Pelan penuh ada dalam hasil di bawah.",
+        "enough": "Cukup",
+        "notEnough": "Tidak cukup",
+        "covered": "{name} mencukupi",
+        "available": "Tersedia {amount}",
+        "needed": "Diperlukan {amount}",
+        "leftOver": "{amount} berbaki",
+        "shortBy": "Kurang {amount}",
+        "stillNeeded": "Masih diperlukan untuk pelan penuh: {list}.",
+        "openResources": "Buka Sumber"
+    },
+    "start": {
+        "title": "Mula naik taraf",
+        "cancel": "Batal",
+        "nothingToStart": "Tiada apa yang boleh dimulakan sekarang. Setiap item berada pada tahap tertinggi, terkunci, atau sedang dinaik taraf.",
+        "powerGained": "Kuasa diperoleh",
+        "packageTime": "Masa pakej",
+        "unknown": "Tidak diketahui",
+        "readOnly": "Baca sahaja",
+        "openBonuses": "Buka Bonus",
+        "yourTime": "Masa anda",
+        "timeHint": "Hanya kelajuan daripada halaman Bonus anda dikira. Jika permainan menunjukkan masa lain, ubah di bawah Bila ia bermula.",
+        "allBusy": "Semuanya di sini sibuk. Mula naik taraf dimatikan sehingga satu bebas.",
+        "whenStarted": "Bila ia bermula",
+        "timeLeftHours": "Masa tinggal, jam",
+        "ends": "Tamat",
+        "startedHint": "Pilih Sudah bermula untuk memasukkan masa yang ditunjukkan permainan. Masa tamat dikira daripadanya.",
+        "takeCost": {
+            "title": "Ambil kos daripada Sumber",
+            "hint": "Menolak kos di atas daripada stok anda.",
+            "enough": "Anda mempunyai cukup setiap sumber.",
+            "short": "Anda kurang {names}. Anda masih boleh bermula, dan stok berhenti pada 0."
+        },
+        "modes": {
+            "now": "Bermula sekarang",
+            "already": "Sudah bermula"
+        }
+    },
+    "researchQueues": {
+        "label": "{name}, {tabs}",
+        "main": {
+            "name": "Baris gilir penyelidikan",
+            "tabs": "Growth, Economy dan Battle",
+            "shortName": "Penyelidikan"
+        },
+        "warAcademy": {
+            "name": "Baris gilir War Academy",
+            "tabs": "T11 dan T12",
+            "shortName": "War Academy"
+        }
+    }
+}

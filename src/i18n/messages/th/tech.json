@@ -1,0 +1,98 @@
+{
+    "page": {
+        "title": "เทคโนโลยี"
+    },
+    "view": {
+        "subline": "{chief} · {count} โหนดเทคโนโลยีพันธมิตรใน Growth, Territory และ Battle"
+    },
+    "summary": {
+        "maxed": "เลเวลสูงสุด",
+        "inProgress": "กำลังดำเนินการ",
+        "notStarted": "ยังไม่เริ่ม",
+        "locked": "ล็อก"
+    },
+    "status": {
+        "maxed": "เลเวลสูงสุด",
+        "inProgress": "กำลังดำเนินการ",
+        "notStarted": "ยังไม่เริ่ม",
+        "locked": "ล็อก"
+    },
+    "tabs": {
+        "label": "หมวดหมู่เทคโนโลยี"
+    },
+    "categories": {
+        "Growth": "Growth",
+        "Territory": "Territory",
+        "Battle": "Battle"
+    },
+    "filters": {
+        "search": "ค้นหา",
+        "searchLabel": "ค้นหาโหนดเทคโนโลยี",
+        "searchPlaceholder": "ชื่อโหนด",
+        "tier": "ระดับ",
+        "allTiers": "ทุกระดับ",
+        "tierOption": "ระดับ {tier}",
+        "status": "สถานะ",
+        "allStatuses": "ทั้งหมด",
+        "button": "ค้นหาและกรอง",
+        "title": "ค้นหาและกรอง",
+        "description": "ค้นหาโหนดเทคโนโลยีตามชื่อ ระดับ และสถานะ",
+        "reset": "รีเซ็ตตัวกรอง",
+        "done": "แสดง {count}",
+        "shown": "แสดง {shown} จาก {total} โหนด"
+    },
+    "table": {
+        "node": "โหนด",
+        "level": "เลเวล",
+        "bonus": "โบนัส",
+        "cost": "ค่าใช้จ่ายเลเวลถัดไป",
+        "time": "เวลา",
+        "needs": "ต้องมี"
+    },
+    "node": {
+        "tierDescription": "ระดับ {tier} · {description}",
+        "levelLabel": "เลเวล {name}",
+        "levelOf": "{level} / {max}",
+        "open": "เปิด {name}",
+        "bonusOf": "{now} จาก {max}",
+        "bonusNone": "ยังไม่มี สูงสุด {max}",
+        "noBonus": "ไม่มีโบนัส",
+        "maxed": "เลเวลสูงสุด",
+        "noTime": "ไม่มีเวลา",
+        "readyToUpgrade": "พร้อมอัปเกรด",
+        "nothingNeeded": "ไม่ต้องใช้อะไร",
+        "needsPart": "ต้องมี {name} เลเวล {level}",
+        "costLine": "{name} {amount}",
+        "lockedHint": "ล็อกจนกว่าจะมี {names}",
+        "requirementPart": "{name} เลเวล {level}"
+    },
+    "flyout": {
+        "title": "{name}",
+        "subtitle": "{category} ระดับ {tier} {description}",
+        "close": "ปิด",
+        "level": "เลเวล",
+        "bonusNow": "โบนัสตอนนี้",
+        "needsFor": "ที่ต้องมีสำหรับเลเวล {level}",
+        "needsNothing": "ไม่ต้องใช้อะไร",
+        "needsLine": "ต้องมีเลเวล {need} คุณมีเลเวล {have}",
+        "met": "ครบแล้ว",
+        "notMet": "ยังไม่ครบ",
+        "requiredBy": "จำเป็นสำหรับ",
+        "requiredByNone": "ไม่มีโหนดอื่นที่ต้องใช้โหนดนี้",
+        "requiredByLine": "{category} ระดับ {tier} ตั้งแต่เลเวล {from} ต้องมี {name} เลเวล {need}",
+        "allLevels": "ทุกเลเวล",
+        "levelRow": "เลเวล {level}",
+        "done": "เสร็จแล้ว",
+        "next": "ถัดไป",
+        "later": "ภายหลัง",
+        "remaining": "ที่เหลือถึงสูงสุด",
+        "derived": "คำนวณจากข้อมูล",
+        "remainingNone": "ไม่เหลืออะไร โหนดนี้เลเวลสูงสุดแล้ว",
+        "remainingLine": "{cost}",
+        "remainingTime": "{time}"
+    },
+    "empty": {
+        "title": "ไม่พบโหนดที่ตรงกัน",
+        "description": "เปลี่ยนคำค้นหาหรือตัวกรองเพื่อดูโหนดเพิ่ม"
+    }
+}

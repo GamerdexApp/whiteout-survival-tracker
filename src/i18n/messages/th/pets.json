@@ -1,0 +1,209 @@
+{
+    "page": {
+        "title": "สัตว์เลี้ยง"
+    },
+    "view": {
+        "subline": "{chief} · {details} · ปลดล็อกสัตว์เลี้ยง {unlocked} จาก {total}"
+    },
+    "rarities": {
+        "Common": "Common",
+        "Uncommon": "Uncommon",
+        "Rare": "Rare",
+        "Epic": "Epic",
+        "Legendary": "Legendary"
+    },
+    "unlock": {
+        "afterFurnace": "วันที่ {days} และ Furnace {level}",
+        "afterPet": "วันที่ {days} และ {pet} เลเวล {level}"
+    },
+    "summary": {
+        "unlocked": "ปลดล็อกแล้ว",
+        "unlockedValue": "{count} จาก {total}",
+        "unlockedNote": "ตั้งโดยคุณ",
+        "power": "พลังรวม",
+        "powerNote": "พลังจากเลเวล การเลื่อนขั้น และการปรับแต่งของสัตว์เลี้ยงที่ปลดล็อกแล้ว",
+        "powerUnknown": "พลังจากเลเวล การเลื่อนขั้น และการปรับแต่งของสัตว์เลี้ยงที่ปลดล็อกแล้ว ไม่ทราบ {amount}",
+        "next": "ปลดล็อกถัดไป",
+        "allUnlocked": "ปลดล็อกทั้งหมดแล้ว",
+        "allUnlockedNote": "ปลดล็อกสัตว์เลี้ยงทุกตัวแล้ว",
+        "lockedNote": "ล็อก {count} ตัวจนถึงวันที่ของเซิร์ฟเวอร์ในภายหลัง"
+    },
+    "totals": {
+        "attackDefense": "Attack และ Defense ของทหาร",
+        "attack": "Attack",
+        "defense": "Defense",
+        "lethality": "Lethality",
+        "health": "Health",
+        "gain": "+{value}%",
+        "types": {
+            "infantry": "Infantry",
+            "lancer": "Lancer",
+            "marksman": "Marksman"
+        }
+    },
+    "search": {
+        "label": "ค้นหาสัตว์เลี้ยง",
+        "placeholder": "ค้นหา {amount} สัตว์เลี้ยงตามชื่อ"
+    },
+    "status": {
+        "showing": "แสดง {shown} จาก {total} {count, plural, other {สัตว์เลี้ยง}}",
+        "filters": " ตัวกรอง: {list}",
+        "filterNames": {
+            "rarity": "ความหายาก",
+            "status": "สถานะ",
+            "advanced": "เลื่อนขั้น",
+            "order": "ลำดับ"
+        },
+        "readOnlyGoals": "เป้าหมายอ่านได้อย่างเดียวที่นี่ และตั้งในแผน เป้าหมายเท่ากับค่าปัจจุบันหมายถึงไม่มีเป้าหมาย",
+        "showMore": "แสดง{count, plural, other {สัตว์เลี้ยงเพิ่ม {amount} ตัว}}"
+    },
+    "empty": {
+        "title": "ไม่พบสัตว์เลี้ยงที่ตรงกัน",
+        "description": "เปลี่ยนคำค้นหาหรือตัวกรองเพื่อดูสัตว์เลี้ยงเพิ่ม",
+        "reset": "รีเซ็ตตัวกรอง"
+    },
+    "toast": {
+        "lockedTitle": "ล็อก {name} แล้ว",
+        "lockedMessage": "เลเวล การเลื่อนขั้น และการปรับแต่งยังเก็บไว้",
+        "undo": "เลิกทำ"
+    },
+    "card": {
+        "summary": "{rarity} · เลเวลสูงสุด {max}",
+        "unlocked": "ปลดล็อกแล้ว",
+        "unlockedLabel": "ปลดล็อก {pet} แล้ว",
+        "cooldown": "คูลดาวน์ {time}",
+        "cooldownByTier": "คูลดาวน์เปลี่ยนตามระดับ",
+        "cooldownUnknown": "ไม่ทราบคูลดาวน์",
+        "skillTiers": "{count, plural, other {ทักษะ {amount} ระดับ}}",
+        "unlockRule": "เงื่อนไขปลดล็อก",
+        "ruleMet": "คุณเข้าเงื่อนไขนี้แล้ว",
+        "level": "เลเวล (สูงสุด {max})",
+        "levelLabel": "เลเวล {pet}",
+        "goal": "เป้าหมาย {level}",
+        "noGoal": "ไม่มีเป้าหมาย",
+        "advanced": "เลื่อนขั้นแล้ว",
+        "advancedHint": "ตั้งเลื่อนขั้นได้ที่เลเวล 10, 20, 30 และต่อไป",
+        "refinement": "การปรับแต่ง",
+        "refinementMax": "สูงสุด {max}% ต่อค่า",
+        "refineLabel": "{stat} ของ {pet}",
+        "percentSign": "%",
+        "attack": "Atk +{value}%",
+        "defense": "Def +{value}%",
+        "power": "พลัง {value}",
+        "powerUnknown": "ไม่ทราบพลัง",
+        "powerParts": "เลเวลและการเลื่อนขั้น {base} ปรับแต่ง {refining}"
+    },
+    "filters": {
+        "button": "ตัวกรอง",
+        "title": "ตัวกรอง",
+        "description": "เลือกสิ่งที่รายการสัตว์เลี้ยงแสดง",
+        "rarity": "ความหายาก",
+        "rarityAll": "ทั้งหมด {amount}",
+        "rarityOption": "{rarity} {amount}",
+        "rarities": {
+            "Common": "Common",
+            "Uncommon": "Uncommon",
+            "Rare": "Rare",
+            "Epic": "Epic",
+            "Legendary": "Legendary"
+        },
+        "status": "สถานะ",
+        "statusOptions": {
+            "all": "สัตว์เลี้ยงทั้งหมด",
+            "unlocked": "ปลดล็อกแล้ว",
+            "locked": "ล็อก"
+        },
+        "advanced": "เลื่อนขั้น",
+        "advancedOptions": {
+            "any": "ทั้งหมด",
+            "advanced": "เลื่อนขั้นแล้ว",
+            "notAdvanced": "ยังไม่เลื่อนขั้น"
+        },
+        "order": "ลำดับ",
+        "orderOptions": {
+            "game": "ลำดับตามเกม",
+            "name": "ชื่อ A ถึง Z",
+            "level": "เลเวล สูงสุดก่อน"
+        },
+        "notSaved": "ตัวกรองไม่ถูกบันทึก",
+        "reset": "รีเซ็ต",
+        "show": "แสดง{count, plural, other {สัตว์เลี้ยง {amount} ตัว}}"
+    },
+    "plan": {
+        "button": "แผน",
+        "title": "วางแผนสัตว์เลี้ยง",
+        "description": "อาหาร ไอเทม ค่าสถานะ และคะแนนกิจกรรมเพื่อถึงเป้าหมาย",
+        "saved": "บันทึกแผนเมื่อ {date}",
+        "notSavedYet": "ยังไม่ได้บันทึกแผน",
+        "close": "ปิด",
+        "save": "บันทึกแผน",
+        "exportButton": "ส่งออกไปยัง Core Events",
+        "exportNothing": "แผนไม่มีคะแนนการเลื่อนขั้นที่จะส่งออก",
+        "export": {
+            "advancement": "คะแนนการเลื่อนขั้นสัตว์เลี้ยง",
+            "commonMark": "Common Wild Marks",
+            "advancedMark": "Advanced Wild Marks",
+            "marksDetail": "นับจากทรัพยากร"
+        },
+        "noPets": "เพิ่มสัตว์เลี้ยงที่ปลดล็อกแล้วเพื่อวางแผนเลเวล",
+        "add": {
+            "title": "เพิ่มสัตว์เลี้ยง",
+            "selectLabel": "สัตว์เลี้ยงที่จะเพิ่ม",
+            "button": "เพิ่มสัตว์เลี้ยง",
+            "allIn": "สัตว์เลี้ยงที่ปลดล็อกแล้วทุกตัวอยู่ในแผนแล้ว",
+            "noneUnlocked": "ปลดล็อกสัตว์เลี้ยงในหน้าสัตว์เลี้ยงเพื่อวางแผน"
+        },
+        "block": {
+            "rarities": {
+                "Common": "Common",
+                "Uncommon": "Uncommon",
+                "Rare": "Rare",
+                "Epic": "Epic",
+                "Legendary": "Legendary"
+            },
+            "maxLevel": "เลเวลสูงสุด {max}",
+            "remove": "ลบ",
+            "removeLabel": "ลบ {pet} ออกจากแผน",
+            "current": "เลเวลปัจจุบัน",
+            "to": "ถึง",
+            "goal": "เลเวลเป้าหมาย (สูงสุด {max})",
+            "goalLabel": "เลเวลเป้าหมายของ {pet}",
+            "payAdvancement": "จ่ายการเลื่อนขั้นที่เป้าหมาย",
+            "paysCurrent": "ยังไม่เลื่อนขั้นที่เลเวล {level} จึงต้องจ่ายการเลื่อนขั้นนั้น"
+        },
+        "result": {
+            "title": "ผลลัพธ์ของ{count, plural, other {สัตว์เลี้ยง {amount} ตัว}}",
+            "resources": "ทรัพยากร สัตว์เลี้ยงทั้งหมด",
+            "byPet": "ตามสัตว์เลี้ยง",
+            "heads": {
+                "pet": "สัตว์เลี้ยง",
+                "levels": "เลเวล",
+                "food": "อาหาร",
+                "power": "พลัง"
+            },
+            "powerGain": "+{value}",
+            "percentGain": "+{value}%",
+            "unknown": "ไม่ทราบ",
+            "gains": "ที่ได้รับ",
+            "gainNames": {
+                "levels": "เลเวลที่เพิ่ม",
+                "advancements": "การเลื่อนขั้น",
+                "attack": "Attack ของทหาร",
+                "defense": "Defense ของทหาร",
+                "power": "พลัง",
+                "score": "คะแนนการเลื่อนขั้น"
+            },
+            "unknownPowerNote": "แพ็กเกจข้อมูลไม่มีพลังหลังเลื่อนขั้นของเลเวลในแผนนี้ จึงไม่ทราบพลังที่เพิ่ม",
+            "eventPoints": "คะแนนกิจกรรม",
+            "events": {
+                "svs": "SvS",
+                "allianceShowdown": "Alliance Showdown",
+                "kingOfIcefield": "King of Icefield",
+                "hallOfChief": "Hall of Chief"
+            },
+            "notScored": "ไม่มีคะแนน",
+            "eventNote": "คะแนนกิจกรรมคือคะแนนการเลื่อนขั้นคูณคะแนนของแถวคะแนนของแต่ละกิจกรรม",
+            "scoreSourceNote": "คะแนนการเลื่อนขั้นของเลเวล 40 ถึง 100 ตรงกับบันทึกของกิจกรรม เลเวล 10 ถึง 30 มาจากแหล่งเดียว (WoS Tools)"
+        }
+    }
+}

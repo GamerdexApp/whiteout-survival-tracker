@@ -1,0 +1,40 @@
+{
+    "line": "{types} içinde {skins}; bonusları, nereden alınacakları ve ne kadar sürdükleriyle.",
+    "skinCount": "{count, plural, one {{amount} görünüm} other {{amount} görünüm}}",
+    "typeCount": "{count, plural, one {{amount} tür} other {{amount} tür}}",
+    "gallery": {
+        "title": "Görünüm galerisi",
+        "showing": "{total} içinden {shown} gösteriliyor",
+        "search": "Ara",
+        "searchPlaceholder": "Görünümleri ada ya da kaynağa göre ara",
+        "bonusStat": "Bonus özelliği",
+        "anyStat": "Her özellik",
+        "noBonus": "Bonus yok",
+        "duration": "Süre",
+        "anyDuration": "Her süre",
+        "permanent": "Kalıcı",
+        "timed": "Süreli",
+        "notStated": "Belirtilmemiş",
+        "types": "Görünüm türü",
+        "allTypes": "Tümü",
+        "empty": {
+            "title": "Eşleşen görünüm yok",
+            "description": "Görünümleri görmek için aramayı ya da bir filtreyi değiştir."
+        }
+    },
+    "columns": {
+        "skin": "Görünüm",
+        "type": "Tür",
+        "bonus": "Bonus",
+        "duration": "Süre (serbest metin)",
+        "sources": "Kaynaklar"
+    },
+    "bonusValue": "{stat} {value}",
+    "detail": {
+        "type": "Tür",
+        "bonus": "Bonus",
+        "duration": "Süre",
+        "sources": "Kaynaklar",
+        "description": "Açıklama"
+    }
+}

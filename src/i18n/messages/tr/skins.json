@@ -1,0 +1,78 @@
+{
+    "page": {
+        "title": "Görünümler"
+    },
+    "view": {
+        "subline": "{chief} · {details} · {total} görünümün {owned} tanesine sahip"
+    },
+    "owned": {
+        "label": "Sahip",
+        "value": "{total} içinden {owned}",
+        "progress": "Sahip olunan görünümler",
+        "withBonus": "{total} görünümün {withBonus} tanesinde bonus var"
+    },
+    "totals": {
+        "title": "Sahip olunan görünümlerin bonusları",
+        "estimate": "Tahmin",
+        "percent": "+%{amount}",
+        "flat": "+{amount}",
+        "none": "Sahip olunan hiçbir görünümde henüz bonus yok.",
+        "note": "{count, plural, one {Sahip olunan {amount} görünümün bonus toplamı} other {Sahip olunan {amount} görünümün bonus toplamı}}, istatistik başına, uygulama tarafından hesaplanır. Sahip olunan her görünümün aynı anda geçerli olduğunu varsayar. Troop Attack ve Troops Attack birlikte toplanır."
+    },
+    "expiry": {
+        "title": "Süre bitişi takip edilmez.",
+        "text": "Süre (kalıcı, 30 gün, sıraya göre) yalnızca açıklama metnindedir. Süreli görünüm, sen temizleyene kadar sahip olunan olarak kalır."
+    },
+    "search": {
+        "label": "Görünüm ara",
+        "placeholder": "Görünümleri ada ya da kaynağa göre ara"
+    },
+    "filters": {
+        "button": "Filtreler",
+        "title": "Filtreler",
+        "description": "Görünüm listesinde nelerin gösterileceğini seç",
+        "reset": "Sıfırla",
+        "showButton": "{count, plural, one {{amount} görünümü göster} other {{amount} görünümü göster}}",
+        "skinType": "Görünüm türü",
+        "typeAll": "Tümü {amount}",
+        "typeOption": "{type} {amount}",
+        "owned": "Sahip",
+        "bonus": "Bonus",
+        "order": "Sıralama",
+        "notSaved": "Filtreler kaydedilmez.",
+        "ownedOptions": {
+            "all": "Tüm görünümler",
+            "owned": "Sahip",
+            "notOwned": "Sahip değil"
+        },
+        "bonusOptions": {
+            "any": "Fark etmez",
+            "has": "Bonusu var",
+            "none": "Bonus yok"
+        },
+        "orderOptions": {
+            "game": "Oyun sırası",
+            "name": "Ad, A'dan Z'ye",
+            "owned": "Önce sahip olunanlar"
+        }
+    },
+    "status": {
+        "showing": "{total} görünümün {shown} tanesi gösteriliyor.",
+        "showingFiltered": "{total} görünümün {shown} tanesi gösteriliyor. Filtreler: {filters}.",
+        "showMore": "{count, plural, one {{amount} görünüm daha göster} other {{amount} görünüm daha göster}}"
+    },
+    "empty": {
+        "title": "Eşleşen görünüm yok",
+        "description": "Görünümleri görmek için aramayı ya da filtreleri değiştir.",
+        "reset": "Filtreleri sıfırla"
+    },
+    "card": {
+        "bonus": "Bonus",
+        "source": "Kaynak",
+        "unknown": "Bilinmiyor",
+        "bonusValue": "{value} {stat}",
+        "owned": "Sahip",
+        "ownedLabel": "Sahip: {name}, {type}",
+        "domainWarning": "Domain bonusu metni açıklamadadır ve sayılmaz."
+    }
+}

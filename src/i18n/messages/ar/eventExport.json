@@ -1,0 +1,32 @@
+{
+    "title": "التصدير إلى الفعاليات الأساسية",
+    "description": "اختر الفعالية ثم الأيام",
+    "events": {
+        "svs": "SvS",
+        "showdown": "Alliance Showdown",
+        "king": "King of Icefield",
+        "hall": "Hall of Chief"
+    },
+    "stepEvent": "1. الفعالية",
+    "stepDay": "{number}. يوم الفعالية {group}",
+    "stepDayPlain": "يوم الفعالية",
+    "stepItems": "{number}. عناصر هذه الخطة",
+    "noDay": "ليس لدى {event} صف احتساب لهذه العناصر.",
+    "daysHint": "تُسرد فقط الأيام التي تحتسب صفوف نقاطها عنصرًا. يسرد Hall of Chief المراحل بدل الأيام. تحصل كل مجموعة عناصر على يومها الخاص.",
+    "lineEach": "{points} لكل واحد في {day}.",
+    "lineNotScored": "ليس لدى {event} صف احتساب لهذا.",
+    "notScored": "لا يُحتسب",
+    "points": "{points} نقطة",
+    "addedTo": "أُضيف إلى {event}",
+    "nothingScores": "لا شيء في هذه الخطة يُحتسب في {event} في الأيام المختارة.",
+    "summaryTitle": "ملخص التصدير",
+    "summaryHint": "ما ستحققه العناصر نفسها في كل فعالية عندما يُنفق كل عنصر في يوم يحتسبه. الفعالية والأيام المحددة فقط تستقبلها. تعرضها صفحة الفعاليات الأساسية كأعداد يمكنك تغييرها.",
+    "selected": "المحددة",
+    "cancel": "إلغاء",
+    "export": "التصدير إلى {event}",
+    "toast": {
+        "title": "تم التصدير إلى الفعاليات الأساسية",
+        "message": "أُضيفت {points} نقطة إلى {event}.",
+        "undo": "تراجع"
+    }
+}

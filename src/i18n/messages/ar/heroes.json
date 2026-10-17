@@ -1,0 +1,262 @@
+{
+    "page": {
+        "title": "الأبطال"
+    },
+    "view": {
+        "tabsLabel": "الأبطال",
+        "heroesTab": "الأبطال",
+        "gearTab": "معدات الأبطال",
+        "heroesSubline": "{chief} · مملوك {owned} من {total}",
+        "gearSubline": "{chief} · {count, plural, zero {{amount} طقم معدات} one {{amount} طقم معدات} two {{amount} طقما معدات} few {{amount} أطقم معدات} many {{amount} طقم معدات} other {{amount} طقم معدات}}"
+    },
+    "common": {
+        "owned": "مملوك",
+        "ownedLabel": "{hero} مملوك",
+        "starLabel": "نجمة {hero}",
+        "levelLabel": "مستوى {hero}",
+        "talentLabel": "موهبة {hero}",
+        "skillLabel": "{skill} لدى {hero}",
+        "weaponLevelLabel": "مستوى {weapon} لدى {hero}",
+        "shardsOwnedLabel": "شظايا {hero} المملوكة",
+        "starAndTier": "النجمة والفئة",
+        "level": "المستوى",
+        "noGoal": "لا يوجد هدف",
+        "shards": "الشظايا",
+        "totalPower": "إجمالي القوة",
+        "unknown": "غير معروف",
+        "plan": "الخطة",
+        "generation": "الجيل {generation}",
+        "exploration": "الاستكشاف",
+        "expedition": "الحملة",
+        "talent": "الموهبة",
+        "maxLevelSuffix": "/ {max}",
+        "heroCount": "{count, plural, zero {{amount} بطل} one {{amount} بطل} two {{amount} بطلان} few {{amount} أبطال} many {{amount} بطلًا} other {{amount} بطل}}"
+    },
+    "goalText": {
+        "to": "إلى {goal}"
+    },
+    "card": {
+        "summary": "{rarity} · {heroClass} · {generation}",
+        "talentRow": "الموهبة {name}",
+        "shardsOf": "من {needed}",
+        "enoughShards": " الشظايا كافية",
+        "shortBy": " ينقص {amount}",
+        "gearSet": "طقم المعدات",
+        "notOwnedHint": "فعّل مملوك لتتبع النجمة والمستوى والمهارات.",
+        "details": "التفاصيل"
+    },
+    "tab": {
+        "stats": {
+            "generations": "الأجيال المفتوحة",
+            "generationsValue": "من 0 إلى {max}",
+            "heroesOwned": "الأبطال المملوكون من المفتوحين",
+            "legendaryOwned": "الأسطوريون المملوكون من المفتوحين",
+            "atMaxLevel": "في المستوى 80",
+            "heroPower": "قوة الأبطال",
+            "heroPowerUnknown": "قوة الأبطال، مع استبعاد {amount} غير معروف",
+            "withGoal": "لهم هدف"
+        },
+        "search": {
+            "label": "بحث في الأبطال",
+            "placeholder": "ابحث في {amount} بطل بالاسم"
+        },
+        "filters": "عوامل التصفية",
+        "maxOut": "رفع إلى الأقصى",
+        "status": "عرض {shown} من {total} بطل. الأجيال من 0 إلى {max} مفتوحة لهذا القائد. الأهداف للقراءة فقط هنا وتُحدَّد في الخطة.",
+        "empty": {
+            "title": "لا يوجد أبطال مطابقون",
+            "description": "غيّر البحث أو أعد ضبط عوامل التصفية لعرض كل الأبطال.",
+            "reset": "إعادة ضبط"
+        },
+        "showMore": "عرض المزيد، {amount} {count, plural, zero {بطل إضافي} one {بطل إضافي} two {بطلين إضافيين} few {أبطال إضافيين} many {بطلًا إضافيًا} other {بطل إضافي}}",
+        "toast": {
+            "notOwnedTitle": "{name} غير مملوك",
+            "notOwnedMessage": "تبقى نجمته ومستواه ومهاراته محفوظة إلى أن تفعّل مملوك مجددًا.",
+            "undo": "تراجع",
+            "maxedTitle": "تم رفع الأبطال إلى الأقصى",
+            "maxedMessage": "تم تحديث {heroes}."
+        }
+    },
+    "filtersFlyout": {
+        "title": "عوامل التصفية",
+        "description": "اختر الأبطال الذين تعرضهم الصفحة",
+        "reset": "إعادة ضبط",
+        "show": "عرض {heroes}",
+        "all": "الكل",
+        "generation": "الجيل",
+        "rarity": "الندرة",
+        "heroClass": "الصنف",
+        "ownership": "الملكية",
+        "order": "الترتيب",
+        "notSaved": "عوامل التصفية لا تُحفظ.",
+        "rarities": {
+            "Legendary": "أسطوري",
+            "Epic": "ملحمي",
+            "Rare": "نادر"
+        },
+        "classes": {
+            "Infantry": "المشاة",
+            "Lancer": "الفرسان",
+            "Marksman": "الرماة"
+        },
+        "ownershipOptions": {
+            "all": "الكل",
+            "owned": "مملوك",
+            "notOwned": "غير مملوك"
+        },
+        "orderOptions": {
+            "owned": "المملوك أولًا، ثم أحدث جيل",
+            "generation": "الجيل، الأحدث أولًا",
+            "name": "الاسم، من A إلى Z",
+            "power": "إجمالي القوة، الأعلى أولًا"
+        }
+    },
+    "maxOut": {
+        "title": "رفع الأبطال إلى الأقصى",
+        "scopeLabel": "الأبطال المراد رفعهم",
+        "scope": {
+            "owned": "الأبطال المملوكون",
+            "unlocked": "كل الأبطال المفتوحين، مع تحديدهم كمملوكين",
+            "selected": "اختر الأبطال، مع تحديدهم كمملوكين"
+        },
+        "searchLabel": "ابحث عن أبطال لاختيارهم",
+        "searchPlaceholder": "ابحث في الأبطال بالاسم",
+        "selectShown": "تحديد المعروض",
+        "clear": "مسح",
+        "ownedTag": "مملوك",
+        "starAndTier": "النجمة والفئة حتى 5.0",
+        "level": "المستوى حتى 80",
+        "levelHint": "أوقفه عندما تكون المهارات في الأقصى ويبقى مستوى الأبطال الأقدم عند 1.",
+        "skills": "المهارات حتى 5",
+        "skillsHint": "الاستكشاف والحملة والموهبة.",
+        "weapon": "السلاح الحصري حتى 10",
+        "note": "أي خيار موقوف يبقى كما هو. لا تتغير أعداد الشظايا والأهداف. يمكنك التراجع بعد التطبيق.",
+        "cancel": "إلغاء",
+        "apply": "رفع {heroes} إلى الأقصى"
+    },
+    "flyout": {
+        "fallbackTitle": "البطل",
+        "description": "{rarity} {heroClass}، الجيل {generation}",
+        "done": "تم",
+        "status": {
+            "title": "الحالة",
+            "furnaceNeeded": "Furnace المطلوب للمستوى {level}",
+            "met": "مستوفى",
+            "needsFurnace": "يتطلب Furnace {required}",
+            "levelPower": "قوة المستوى",
+            "skillPower": "قوة المهارات",
+            "starPower": "قوة النجوم",
+            "weaponPower": "قوة السلاح",
+            "totalPower": "إجمالي القوة",
+            "note": "تشمل القوة المستوى والمهارات وتسمية النجوم ومستوى السلاح."
+        },
+        "skills": {
+            "title": "المهارات",
+            "aside": "خمسة مستويات لكل مهارة",
+            "toLevel": "إلى {level}: {manuals} كتاب مهارة",
+            "needsStar": "يتطلب النجمة {star}",
+            "starMet": "النجمة {star} مستوفاة",
+            "talentTop": "الموهبة في أعلى مستوى.",
+            "talentNeedsStar": "المستوى {level} يتطلب النجمة {star}",
+            "talentStarMet": "المستوى {level}: النجمة {star} مستوفاة"
+        },
+        "weapon": {
+            "title": "السلاح الحصري: {name}",
+            "level": "مستوى السلاح",
+            "widgetsForLevel": "Widgets للمستوى {level}",
+            "widgetsForLevels": "Widgets للمستويات من {from} إلى {to}",
+            "expeditionBonus": "ميزة الحملة",
+            "bonus": "الفتك {lethality}% · الصحة {health}%",
+            "power": "قوة السلاح",
+            "unlocksAt": "يُفتح عند مستوى السلاح {level}"
+        },
+        "shards": {
+            "title": "الشظايا",
+            "owned": "الشظايا المملوكة",
+            "goal": "الهدف",
+            "neededForGoal": "المطلوب للهدف {goal}",
+            "enough": "الشظايا كافية",
+            "shortBy": "ينقص",
+            "yes": "نعم",
+            "sources": "مصادر الشظايا"
+        },
+        "stats": {
+            "title": "الإحصائيات عند المستوى 80",
+            "explorationAt": "الاستكشاف عند {stars}",
+            "expeditionAt": "الحملة عند {stars}",
+            "explorationFull": "الاستكشاف عند 5.0",
+            "expeditionFull": "الحملة عند 5.0",
+            "exploration": "هجوم {attack} · دفاع {defense} · صحة {health}",
+            "expedition": "هجوم {attack}% · دفاع {defense}%",
+            "estimate": "تقدير"
+        }
+    },
+    "plan": {
+        "title": "خطة الأبطال",
+        "description": "الشظايا وكتب المهارات وWidgets من الحالي إلى الهدف",
+        "saved": "تم حفظ الخطة {date}",
+        "close": "إغلاق",
+        "save": "حفظ الخطة",
+        "noHeroes": "لا يوجد أبطال في الخطة بعد. أضف بطلًا مملوكًا أعلاه، ثم ارفع أهدافه.",
+        "add": {
+            "title": "إضافة بطل",
+            "allIn": "كل الأبطال المملوكين في الخطة. فعّل مملوك لبطل ما لتخطط له.",
+            "selectLabel": "البطل المراد إضافته",
+            "button": "إضافة البطل"
+        },
+        "block": {
+            "remove": "إزالة {hero} من الخطة",
+            "starTo": "{stars} إلى",
+            "starGoal": "هدف نجمة {hero}",
+            "levelTo": "{current} إلى",
+            "goalLabel": "هدف {name} لدى {hero}",
+            "note": "القيم الحالية تأتي من البطل في الصفحة. غيّرها هناك."
+        },
+        "unmet": {
+            "title": "مستويات المهارات تحتاج إلى نجمة أعلى.",
+            "item": "{hero}: {skill} المستوى {level} يتطلب النجمة {star}",
+            "message": "{items}. ارفع هدف النجمة أو اخفض هدف المهارة."
+        },
+        "shardsUsed": "الشظايا المستخدمة: {own} من البطل و{general} عامة، بإجمالي {total}. يستخدم البطل شظاياه الخاصة أولًا.",
+        "result": {
+            "title": "النتيجة، {steps} خطوات",
+            "widgets": "Widgets",
+            "weaponSkills": "{count, plural, zero {فُتحت {amount} مهارة سلاح} one {فُتحت {amount} مهارة سلاح} two {فُتحت {amount} مهارتا سلاح} few {فُتحت {amount} مهارات سلاح} many {فُتحت {amount} مهارة سلاح} other {فُتحت {amount} مهارة سلاح}}",
+            "note": "القوة ليست جزءًا من خطة الأبطال. لا تعيد الحاسبة وقتًا ولا تقبل مدخل سرعة.",
+            "heads": {
+                "hero": "البطل",
+                "starSteps": "خطوات النجوم",
+                "skillLevels": "مستويات المهارات",
+                "shards": "الشظايا",
+                "widgets": "Widgets"
+            },
+            "tableLabel": "جدول نتيجة الخطة"
+        },
+        "events": {
+            "svs": "SvS State of Power",
+            "allianceShowdown": "Alliance Showdown",
+            "kingOfIcefield": "King of Icefield",
+            "hallOfChief": "Hall of Chief"
+        }
+    },
+    "export": {
+        "button": "تصدير إلى الفعاليات الأساسية",
+        "nothing": "لا تحتاج الخطة إلى شظايا أو Widgets لتصديرها.",
+        "shardsGroup": "للشظايا",
+        "widgetsGroup": "لـ Widgets",
+        "widgets": "Widgets",
+        "manualsReason": "لا توجد فعالية تحتسب نقاطًا لكتب المهارات",
+        "shards": {
+            "Legendary": "Mythic Hero Shards",
+            "Epic": "Epic Hero Shards",
+            "Rare": "Rare Hero Shards"
+        }
+    },
+    "service": {
+        "generalShard": {
+            "Legendary": "Mythic General Hero Shard",
+            "Epic": "Epic General Hero Shard",
+            "Rare": "Rare General Hero Shard"
+        }
+    }
+}

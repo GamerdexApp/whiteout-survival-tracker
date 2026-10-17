@@ -1,0 +1,215 @@
+{
+    "defaultSetName": "Set {number}",
+    "troop": {
+        "infantry": "Piyade",
+        "lancer": "Mızrakçı",
+        "marksman": "Nişancı"
+    },
+    "lock": {
+        "needsMythic": "Mitik ekipman gerekir",
+        "needsBoth": "Geliştirme 100 ve ustalık dövme seviye 10 gerekir",
+        "needsEnhancement": "Geliştirme 100 gerekir",
+        "needsForging": "Ustalık dövme seviye 10 gerekir"
+    },
+    "tab": {
+        "deletedTitle": "Silindi: {name}",
+        "deletedMessage": "Dört parça ve hedefleri kaldırıldı.",
+        "undo": "Geri al",
+        "tiles": {
+            "sets": "Ekipman setleri",
+            "power": "Ekipman gücü, tüm setler",
+            "ofPieces": "{total} içinden {count}",
+            "atEnhancementMax": "Geliştirme 100'deki parçalar",
+            "empowered": "Güçlendirilen parçalar",
+            "ready": "Güçlendirmeye hazır parçalar"
+        },
+        "search": "Ekipman seti ara",
+        "filters": "Filtreler",
+        "plan": "Plan",
+        "showing": "{total} ekipman setinin {shown} tanesi gösteriliyor. Hedefler burada salt okunurdur ve Plan'da ayarlanır.",
+        "empty": {
+            "title": "Henüz ekipman seti yok",
+            "description": "Bir ekipman seti Goggles, Gloves, Belt ve Boots parçalarından birer tane tutar. Seviyelerini takip etmek için bir set ekle."
+        },
+        "addSet": "Ekipman seti ekle",
+        "unknownHero": "Bilinmeyen kahraman",
+        "power": "{amount} güç",
+        "enhancementLine": "Gel. {line}",
+        "troopHint": "Birlik türü, aşağıdaki özellik sütununu seçer.",
+        "editSet": "Seti düzenle",
+        "deleteSet": "Seti sil"
+    },
+    "pieceCard": {
+        "name": "{set} {slot}",
+        "forgingRow": "{name} (+%{percent})",
+        "none": "Yok",
+        "noGoal": "Hedef yok",
+        "goal": "Hedef: {value}",
+        "quality": "Ekipman kalitesi",
+        "qualities": {
+            "mythic": "Mitik",
+            "epic": "Epik",
+            "rare": "Nadir",
+            "uncommon": "Yaygın Dışı",
+            "common": "Yaygın"
+        },
+        "forgingRowLabel": "Ustalık dövme satırı",
+        "forgingStops": "Geliştirme 100 olana kadar ustalık dövme seviye 10'da durur.",
+        "lowQualityNote": "Yalnızca Mitik ekipman dövülebilir ve güçlendirilebilir. Güç, bu kalitenin temel gücüyle Mitik tabloları izler. Oyun bunu doğrulamadı.",
+        "enhancement": "Geliştirme",
+        "enhancementLabel": "Geliştirme: {name}",
+        "enhancementSlider": "Geliştirme kaydırıcısı: {name}",
+        "empowerment": "Güçlendirme",
+        "empowermentLabel": "Güçlendirme: {name}",
+        "empowermentSlider": "Güçlendirme kaydırıcısı: {name}",
+        "outOf": "/ {max}",
+        "milestone": "Güçlendirme {level} tamam: {stat}",
+        "piecePower": "Parça gücü",
+        "health": "Sağlık",
+        "percent": "%{value}"
+    },
+    "statLines": {
+        "title": "Özellik satırları, 3 birlik türü için 4 slot",
+        "troopThisSet": "{troop} (bu set)",
+        "stat": "{name} {value}",
+        "health": "HP {value}",
+        "percentStat": "{name} %{value}",
+        "none": "Yok",
+        "note": "{name} parça seviyelerindeki değerler, ustalık dövme dahil, aşağı yuvarlanmış. Özellikler, 200 seviyenin 192'sinde duran WoS Tools'tan gelir. Vurgulu sütun, setin birlik türüdür."
+    },
+    "filters": {
+        "title": "Filtreler",
+        "description": "Listenin hangi ekipman setlerini göstereceğini seç",
+        "reset": "Sıfırla",
+        "show": "Göster: {amount} {count, plural, one {set} other {set}}",
+        "all": "Tümü",
+        "troopType": "Birlik türü",
+        "linkedHero": "Bağlı kahraman",
+        "heroOptions": {
+            "all": "Tümü",
+            "linked": "Bir kahramana bağlı",
+            "unlinked": "Bağlı değil"
+        },
+        "order": "Sıralama",
+        "orderOptions": {
+            "power": "Toplam güç, en yüksek önce",
+            "created": "Eklenme sırası",
+            "name": "Ad, A'dan Z'ye",
+            "hero": "Kahraman adı, A'dan Z'ye"
+        },
+        "notSaved": "Filtreler kaydedilmez."
+    },
+    "setDialogs": {
+        "cancel": "İptal",
+        "setName": "Set adı",
+        "nameRequired": "Bir ad gir.",
+        "linkedHero": "Bağlı kahraman",
+        "add": {
+            "title": "Ekipman seti ekle",
+            "linkedHeroHint": "Bir kahraman seçmek birlik türünü onun sınıfına ayarlar.",
+            "troopType": "Birlik türü",
+            "troopTypeHint": "Birlik türü, setin özellik sütununu seçer.",
+            "quality": "Ekipman kalitesi",
+            "qualityHint": "Yalnızca Mitik ekipman dövülebilir ve güçlendirilebilir.",
+            "qualityHintCopy": "Kopyalanan set her parçanın kalitesini korur.",
+            "qualities": {
+                "mythic": "Mitik",
+                "epic": "Epik",
+                "rare": "Nadir",
+                "uncommon": "Yaygın Dışı",
+                "common": "Yaygın"
+            },
+            "startFrom": "Başlangıç",
+            "startFromHint": "Hedefler kopyalanmaz. Hedefler Plan'da ayarlanır.",
+            "emptySet": "Boş set",
+            "copyFrom": "Seviyeleri kopyala: {name}",
+            "savesAtOnce": "Her değişiklik hemen kaydedilir ve yeni set seçili görünür.",
+            "submit": "Ekipman seti ekle"
+        },
+        "delete": {
+            "title": "Şu set silinsin mi: {name}?",
+            "titleFallback": "Seti sil",
+            "confirm": "Seti sil",
+            "body": "{name} setinin dört parçası ve hedefleri bu cihazdan kaldırılır.",
+            "undoNote": "Silmeden sonra 10 saniye boyunca geri alabilirsin.",
+            "exportBackup": "Önce yedek dışa aktar"
+        },
+        "edit": {
+            "title": "Düzenle: {name}",
+            "titleFallback": "Seti düzenle",
+            "submit": "Seti kaydet"
+        },
+        "heroSelect": {
+            "none": "Kahraman yok",
+            "option": "{name} ({class}, Nesil {generation})"
+        }
+    },
+    "plan": {
+        "title": "Kahraman Ekipmanı Planı",
+        "description": "Herhangi bir setten herhangi bir parçanın ustalık dövme, geliştirme ve güçlendirmesi",
+        "saved": "Plan kaydedildi: {time}",
+        "close": "Kapat",
+        "save": "Planı kaydet",
+        "empty": "Planda henüz parça yok. Yukarıdan bir parça ekle, sonra hedeflerini yükselt.",
+        "pieceTitle": "{set} · {slot}",
+        "milestone": "güçlendirme {level}, {event}, {stat}",
+        "addPiece": {
+            "title": "Parça ekle",
+            "noSets": "Önce Kahraman Ekipmanı sekmesinde bir ekipman seti ekle.",
+            "set": "Ekipman seti",
+            "setOption": "{name} ({troop})",
+            "piece": "Parça",
+            "submit": "Parça ekle",
+            "taken": "Bu parça zaten planda."
+        },
+        "qualities": {
+            "mythic": "mitik",
+            "epic": "epik",
+            "rare": "nadir",
+            "uncommon": "yaygın dışı",
+            "common": "yaygın"
+        },
+        "remove": "Plandan kaldır: {title}",
+        "forgingRow": "{name} (+%{percent})",
+        "none": "Yok",
+        "forgingCurrent": "Dövme mevcut satırı",
+        "forgingGoal": "Dövme hedef satırı",
+        "forgingGoalLabel": "Dövme hedefi: {title}",
+        "forgingStops": "Geliştirme hedefi 100 olana kadar ustalık dövme seviye 10'da durur.",
+        "enhancement": "Geliştirme",
+        "enhancementGoal": "Geliştirme hedefi: {title}",
+        "empowerment": "Güçlendirme",
+        "empowermentGoal": "Güçlendirme hedefi: {title}",
+        "from": "{value}, hedef",
+        "result": {
+            "title": "Sonuç: {amount} {count, plural, one {parça} other {parça}}",
+            "power": "Güç",
+            "powerLines": {
+                "gained": "Kazanılan güç",
+                "before": "Bu parçaların önceki gücü",
+                "after": "Bu parçaların sonraki gücü"
+            },
+            "columns": {
+                "piece": "Parça",
+                "forgingStatsUp": "Dövme özellik artışı",
+                "powerGained": "Kazanılan güç"
+            },
+            "forgingStatsUp": "+%{percent} ({steps} adım)",
+            "milestones": "Açılan kilometre taşları",
+            "milestoneLine": "{label}: {stat}",
+            "events": {
+                "svs": "SvS",
+                "allianceShowdown": "Alliance Showdown",
+                "kingOfIcefield": "King of Icefield"
+            },
+            "note": "Kahraman Ekipmanı Planı'nda hız ya da bonus ayarı yoktur. Hesaplayıcı süre döndürmez.",
+            "tableLabel": "Plan sonuç tablosu"
+        }
+    },
+    "export": {
+        "button": "Ana Etkinlikler'e aktar",
+        "nothing": "Plan, aktarılacak Essence Stones ya da Mithril gerektirmiyor.",
+        "essenceStones": "Essence Stones",
+        "mithril": "Mithril"
+    }
+}

@@ -1,0 +1,176 @@
+{
+    "none": "Yok",
+    "charmLabel": "Tılsım {number}",
+    "view": {
+        "title": "Şef Ekipmanı",
+        "tabsLabel": "Şef ekipmanı",
+        "gearSubline": "{name} · altı slot, 150 yükseltme satırı",
+        "charmsSubline": "{name} · 6 ekipman parçası, her birinde 3 tılsım, 75 yükseltme satırı",
+        "tabs": {
+            "gear": "Şef Ekipmanı",
+            "charms": "Şef Tılsımları"
+        }
+    },
+    "shared": {
+        "plan": "Plan",
+        "autoSaveHint": "Her değişiklik hemen kaydedilir. Artır/azalt düğmeleri paket sırasıyla her seferinde bir satır ilerler.",
+        "scoreToGain": "Kazanılacak skor",
+        "notes": "Notlar",
+        "package": "Paket"
+    },
+    "gear": {
+        "scoreNow": "Şu anki ekipman skoru, altı slot",
+        "powerNow": "Şu anki ekipman gücü",
+        "stepsToGoals": "Tüm hedeflere adımlar",
+        "goalsHint": "Hedefler burada salt okunurdur. Hedefleri Plan'da ayarla ve Planı kaydet'e bas.",
+        "stepWord": "adım",
+        "tiers": {
+            "title": "Kademeler",
+            "description": "Paket 150 satırı {count} kademeyle etiketler. Vurgulu kademe, parçalarından en az birini içerir.",
+            "rows": "{rows} satır",
+            "names": {
+                "EpicT1": "Epic T1",
+                "MythicT1": "Mythic T1",
+                "MythicT2": "Mythic T2",
+                "LegendaryT1": "Legendary T1",
+                "LegendaryT2": "Legendary T2",
+                "LegendaryT3": "Legendary T3",
+                "LegendaryT4": "Legendary T4",
+                "LegendaryT5": "Legendary T5",
+                "LegendaryT6": "Legendary T6"
+            }
+        },
+        "notes": {
+            "setBonus": {
+                "title": "Set bonusu kuralları",
+                "body": "Aynı kademeden 3 parça Savunma, 6 parça Saldırı verir, üç birlik türü için de. Seviyesi olmayan parça sayılmaz. Her kademenin tek değeri vardır."
+            },
+            "troopType": {
+                "title": "Birlik türü elle girilmiş",
+                "body": "Cap ve Watch Mızrakçıları, Coat ve Pants Piyadeleri, Ring ve Weapon Nişancıları güçlendirir. Paket yazarı bunu wiki metninden elle yazdı."
+            },
+            "capacity": {
+                "title": "İlk satırlarda kapasite 0",
+                "body": "İlk 26 satırın pakette sevk kapasitesi yok, bu yüzden veri değer alana kadar 0 görünür."
+            }
+        }
+    },
+    "charms": {
+        "scoreNow": "Şu anki tılsım skoru, 18 tılsım",
+        "powerNow": "Şu anki tılsım gücü",
+        "stagesToGoals": "Tüm hedeflere aşamalar",
+        "goalsHint": "Hedefler burada salt okunurdur ve Plan'da ayarlanır.",
+        "stepWord": "aşama",
+        "slotMeta": "{troop} · 3 tılsım",
+        "slotStages": ", hedeflere {stages} aşama",
+        "notes": {
+            "secrets": {
+                "title": "Charm Secrets seviye 11'de başlar",
+                "body": "Seviye 11 Aşama 1'den itibaren bir aşama için Charm Secrets gerekir. Önceki aşamalarda yalnızca Charm Guide ve Charm Design listelenir."
+            },
+            "look": {
+                "title": "Tılsımların görünümü her seviyede değişir",
+                "body": "Her tılsımın 18 simgesi vardır, seviye başına bir tane. Her ekipman parçası üç tılsım taşır ve parçanın birlik türünü izler."
+            },
+            "estimate": {
+                "title": "Aşama skorları tahmindir",
+                "body": "Bir seviye skoru, ona götüren aşamalara eşit bölünür. Oyun bu bölünmeyi doğrulamaz."
+            }
+        }
+    },
+    "badge": {
+        "tier": "Kademe {tier}",
+        "stars": "{count, plural, one {{amount} yıldız} other {{amount} yıldız}}",
+        "tierAndStars": "{tier}, {stars}"
+    },
+    "row": {
+        "level": "Seviye: {title}",
+        "progressLabel": "İlerleme: {title}, {total} satır",
+        "progress": "{total} içinden {progress}",
+        "stepsToGoal": " · hedefe {steps}",
+        "goal": "Hedef {name}",
+        "noGoal": "Hedef yok",
+        "stats": "Özellik {stat} · Güç {power}",
+        "statPercent": "%{percent}",
+        "capacity": " · Kapasite {capacity}",
+        "lockedCurrent": "Kayıtlı seviye {name} sunucu yaşı yüzünden kilitli ve sayılmıyor. {requirement}.",
+        "lockedGoal": "Kayıtlı hedef {name} sunucu yaşı yüzünden kilitli ve planlanmıyor. {requirement}."
+    },
+    "summary": {
+        "title": "Tüm hedeflere kalan",
+        "derived": "Türetildi",
+        "score": "skor",
+        "powerGain": "güç kazancı",
+        "noGoals": "Hedef belirlenmedi. Hedefleri Plan'da ayarla.",
+        "openPlan": "Etkinlik puanları ve döküm için Plan'ı aç"
+    },
+    "setBonus": {
+        "title": "Açılan set bonusları",
+        "pieceSet": "{pieces} parçalı set",
+        "active": "Etkin",
+        "notActive": "Etkin değil",
+        "value": "{stat} +%{percent}",
+        "appliesTo": "{tierName} parçaları: Piyade, Mızrakçı ve Nişancı için",
+        "needs": "Aynı kademeden {pieces} parça gerekir. Şimdilik {stat} +%0."
+    },
+    "plan": {
+        "gear": {
+            "title": "Şef Ekipmanı Planı",
+            "description": "Mevcut seviyeden hedefe malzemeler, skor ve güç",
+            "stepWord": "Adım",
+            "conversionNote": "Kontrol dönüşümleri saymaz. Dönüştürücüde her birinin haftalık sınırı olan yedi takas oranı vardır, örneğin 10 Design Plans karşılığında 1 Lunar Amber, haftada en fazla 500."
+        },
+        "charm": {
+            "title": "Şef Tılsımı Planı",
+            "description": "Mevcut seviyeden hedefe malzemeler, skor ve güç",
+            "stepWord": "Aşama",
+            "conversionNote": "Kontrol dönüşümleri saymaz: 2 Charm Guide 1 Charm Design yapar ve tersi de geçerlidir, ikisinden de 40 tane 1 Charm Secrets yapar."
+        },
+        "saved": "Plan kaydedildi: {date}",
+        "close": "Kapat",
+        "save": "Planı kaydet",
+        "export": {
+            "button": "Ana Etkinlikler'e aktar",
+            "nothingToExport": "Plan aktarmak için mevcut seviyenin üstünde bir hedef belirle.",
+            "gearScore": "Şef Ekipmanı skoru",
+            "charmScore": "Şef Tılsımı skoru",
+            "power": "Kazanılan güç",
+            "powerReason": "Hiçbir Ana Etkinlik satırı Şef Ekipmanı ya da Şef Tılsımı gücüne puan vermez."
+        },
+        "inputs": "Girdiler",
+        "slotTroop": "{slot}, {troop}",
+        "from": "Başlangıç: {level}",
+        "goalLabel": "Hedef: {label}",
+        "slotGoalLabel": "Hedef: {slot} {label}",
+        "inputsHint": "Mevcut seviye sayfadaki seviyedir. Onu orada değiştir. Hedefler sayfada salt okunurdur ve burada ayarlanır.",
+        "result": "Sonuç",
+        "score": "Skor",
+        "powerGain": "Güç kazancı",
+        "events": {
+            "svs": "SvS State of Power",
+            "allianceShowdown": "Alliance Showdown",
+            "kingOfIcefield": "King of Icefield",
+            "hallOfChief": "Hall of Chief"
+        },
+        "bySlot": "Slota göre",
+        "byCharm": "Tılsıma göre",
+        "columnSlot": "Slot",
+        "columnCharm": "Tılsım",
+        "slotCharm": "{slot} {charm}",
+        "converter": {
+            "title": "Malzeme dönüştürücü",
+            "spend": "Harca",
+            "get": "Al",
+            "limit": "Sınır",
+            "amount": "{quantity} {name}",
+            "perWeek": "Haftada {limit}",
+            "noLimit": "Haftalık sınır yok"
+        },
+        "lockedCurrent": "Kayıtlı seviye {name} sunucu yaşı yüzünden kilitli. {requirement}."
+    },
+    "lock": {
+        "title": "Sunucu yaşı yüzünden kilitli",
+        "stop": "{name} (kilitli, {day}. gün)",
+        "group": "{name} itibarıyla: {requirement}."
+    }
+}

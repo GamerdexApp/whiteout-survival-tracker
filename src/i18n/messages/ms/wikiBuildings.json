@@ -1,0 +1,71 @@
+{
+    "line": "{buildings} bangunan dan {facilities} kemudahan. Rujukan sahaja, tiada apa di sini disimpan pada chief anda.",
+    "list": {
+        "heading": "Bangunan dan kemudahan",
+        "searchLabel": "Cari",
+        "searchPlaceholder": "Cari bangunan dan kemudahan",
+        "categoryLabel": "Kategori",
+        "categories": {
+            "all": "Semua",
+            "Military": "Military",
+            "Inner City": "Inner City",
+            "Entertainment": "Entertainment"
+        },
+        "buildingMeta": "{category}, maks {maxLevel}, {count, plural, other {{amount} tahap}}",
+        "empty": "Tiada bangunan sepadan dengan carian anda.",
+        "categoryOption": "{category} {count}"
+    },
+    "detail": {
+        "levelsTotal": "Jumlah tahap",
+        "standardLevels": "Tahap standard, 1 hingga 30",
+        "fireCrystalLevels": "Tahap Fire Crystal, 30-1 hingga FC 10",
+        "maxLevel": "Label tahap maksimum",
+        "rangeLabel": "Julat tahap",
+        "rangeOption": "{range} {count}",
+        "ranges": {
+            "all": "Semua",
+            "standard": "1 hingga 30",
+            "fc3": "30-1 hingga FC 3",
+            "fc5": "FC 3-1 hingga FC 5",
+            "fc8": "FC 5-1 hingga FC 8",
+            "fc10": "FC 8-1 hingga FC 10"
+        },
+        "tableLabel": "Tahap {name}",
+        "levels": "Tahap",
+        "totalTitle": "Jumlah diperlukan, {range}, {count, plural, other {{amount} tahap}}",
+        "totalTime": "Jumlah masa binaan"
+    },
+    "columns": {
+        "level": "Tahap",
+        "cost": "Kos",
+        "time": "Masa",
+        "power": "Kuasa",
+        "requires": "Memerlukan",
+        "stats": {
+            "rallyCapacity": "Kapasiti rally",
+            "marchCapacity": "Kapasiti march",
+            "trainingCapacity": "Kapasiti latihan",
+            "trainingSpeedBonusPercent": "Kelajuan latihan",
+            "researchSpeedBonusPercent": "Kelajuan penyelidikan",
+            "infirmaryCapacity": "Kapasiti infirmary",
+            "allyAssists": "Bantuan sekutu",
+            "allyHelpTimeSeconds": "Masa bantuan sekutu",
+            "reinforceCapacity": "Kapasiti bantuan tentera",
+            "storehouseCapacity": "Kapasiti gudang",
+            "barricadeDurability": "Ketahanan penghadang",
+            "troopDeploymentCapacity": "Kapasiti pengerahan"
+        }
+    },
+    "cells": {
+        "none": "Tiada",
+        "requirement": "{building} {level}",
+        "pricePerItem": "{price} setiap satu",
+        "percent": "{value}%"
+    },
+    "facilities": {
+        "heading": "Kemudahan",
+        "meta": "Tiada tahap, kuasa atau kos binaan",
+        "unlock": "Dibuka pada tahap Furnace {level}",
+        "empty": "Tiada kemudahan sepadan dengan carian anda."
+    }
+}

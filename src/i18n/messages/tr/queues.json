@@ -1,0 +1,95 @@
+{
+    "hoursMinutes": {
+        "hours": "Saat",
+        "minutes": "Dakika"
+    },
+    "jobCard": {
+        "idle": "Boşta",
+        "progress": "İlerleme: {title}",
+        "ends": "Bitiş: {date}",
+        "manage": "Yönet",
+        "finish": "Bitir"
+    },
+    "timeLeftPill": {
+        "manage": "{label}, {timeLeft}. Yükseltmeyi yönet"
+    },
+    "manage": {
+        "fallbackTitle": "Yükseltmeyi yönet",
+        "description": "Çalışan yükseltmeyi yönet",
+        "close": "Kapat",
+        "finish": "Yükseltmeyi bitir",
+        "progress": "Yükseltme ilerlemesi",
+        "started": "Başlangıç: {date}",
+        "ends": "Bitiş: {date}",
+        "speedup": {
+            "title": "Hızlandırma kullandım",
+            "minutesUsed": "Kullanılan dakika",
+            "apply": "Uygula",
+            "timeLeftAfter": "Uyguladıktan sonra kalan süre",
+            "hint": "Her türlü hızlandırma, dakikalarını kalan süreden düşer."
+        },
+        "setTime": {
+            "title": "Kalan süreyi ayarla",
+            "button": "Kalan süreyi ayarla",
+            "hint": "Oyun farklı bir süre gösteriyorsa bunu kullan."
+        },
+        "done": {
+            "title": "Bittiğinde",
+            "cancel": "Bu yükseltmeyi iptal et"
+        }
+    },
+    "planStock": {
+        "title": "Yeterli mi?",
+        "shortCount": "{total} içinden {short} eksik",
+        "description": "Planın stokundan aldıkları, elindekilerle karşılaştırılır. Planın tamamı aşağıdaki sonuçtadır.",
+        "enough": "Yeterli",
+        "notEnough": "Yeterli değil",
+        "covered": "Karşılandı: {name}",
+        "available": "Mevcut {amount}",
+        "needed": "Gereken {amount}",
+        "leftOver": "{amount} artar",
+        "shortBy": "Eksik: {amount}",
+        "stillNeeded": "Planın tamamı için hâlâ gereken: {list}.",
+        "openResources": "Kaynaklar'ı aç"
+    },
+    "start": {
+        "title": "Yükseltmeyi başlat",
+        "cancel": "İptal",
+        "nothingToStart": "Şu an başlatılabilecek bir şey yok. Her öğe son seviyede, kilitli ya da zaten yükseltiliyor.",
+        "powerGained": "Kazanılan güç",
+        "packageTime": "Paket süresi",
+        "unknown": "Bilinmiyor",
+        "readOnly": "Salt okunur",
+        "openBonuses": "Bonuslar'ı aç",
+        "yourTime": "Senin süren",
+        "timeHint": "Yalnızca Bonuslar sayfandaki hız sayılır. Oyun başka bir süre gösteriyorsa Ne zaman başladı altından değiştir.",
+        "allBusy": "Buradaki her şey meşgul. Biri boşalana kadar Yükseltmeyi başlat kapalı.",
+        "whenStarted": "Ne zaman başladı",
+        "timeLeftHours": "Kalan süre, saat",
+        "ends": "Biter",
+        "startedHint": "Oyunun gösterdiği süreyi girmek için Zaten başladı'yı seç. Bitiş zamanı bundan hesaplanır.",
+        "takeCost": {
+            "title": "Maliyeti Kaynaklar'dan düş",
+            "hint": "Yukarıdaki maliyeti stokundan çıkarır.",
+            "enough": "Her kaynaktan yeterince var.",
+            "short": "Eksik: {names}. Yine de başlatabilirsin, stok 0'da durur."
+        },
+        "modes": {
+            "now": "Şimdi başlıyor",
+            "already": "Zaten başladı"
+        }
+    },
+    "researchQueues": {
+        "label": "{name}, {tabs}",
+        "main": {
+            "name": "Araştırma sırası",
+            "tabs": "Büyüme, Ekonomi ve Savaş",
+            "shortName": "Araştırma"
+        },
+        "warAcademy": {
+            "name": "War Academy sırası",
+            "tabs": "T11 ve T12",
+            "shortName": "War Academy"
+        }
+    }
+}

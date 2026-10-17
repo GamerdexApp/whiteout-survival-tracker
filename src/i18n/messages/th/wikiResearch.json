@@ -1,0 +1,77 @@
+{
+    "line": "{nodes} โหนดวิจัยใน {tabs} แท็บ ข้อมูลอ้างอิงเท่านั้น ไม่มีอะไรที่นี่ถูกบันทึก",
+    "tabsLabel": "หมวดหมู่วิจัย",
+    "tabs": {
+        "battle": "Battle",
+        "growth": "Growth",
+        "economy": "Economy",
+        "t11": "T11",
+        "t12": "T12"
+    },
+    "search": {
+        "label": "ค้นหา",
+        "placeholder": "ค้นหา {amount} โหนดวิจัย"
+    },
+    "filters": {
+        "tier": "ระดับ",
+        "allTiers": "ทั้งหมด",
+        "tierOption": "ระดับ {tier}",
+        "troop": "ประเภททหาร",
+        "allTroops": "ทั้งหมด",
+        "troops": {
+            "Infantry": "Infantry",
+            "Marksman": "Marksman",
+            "Lancer": "Lancer"
+        },
+        "data": "ข้อมูล",
+        "dataOptions": {
+            "all": "ทุกโหนด",
+            "placeholders": "ตัวแทน",
+            "missingTime": "ไม่มีเวลา"
+        }
+    },
+    "list": {
+        "title": "โหนด",
+        "empty": "ไม่มีโหนดวิจัยที่ตรงกับการค้นหานี้",
+        "emptyHint": "ล้างการค้นหาหรือตัวกรอง",
+        "columns": {
+            "node": "โหนด",
+            "tier": "ระดับ",
+            "levels": "เลเวล",
+            "bonus": "โบนัสที่เลเวล 1",
+            "time": "เวลา เลเวล 1",
+            "power": "พลัง"
+        },
+        "mobileMeta": "{category} ระดับ {tier} {levels}",
+        "count": "{count, plural, other {{amount} โหนด}}"
+    },
+    "levels": "{count, plural, other {{amount} เลเวล}}",
+    "detail": {
+        "columns": {
+            "level": "เลเวล",
+            "requires": "เงื่อนไข",
+            "cost": "ค่าใช้จ่าย",
+            "time": "เวลา",
+            "bonus": "โบนัส",
+            "power": "พลัง"
+        },
+        "level": "เลเวล {level}",
+        "none": "ไม่มี",
+        "placeholderNote": "โหนดนี้เป็นตัวแทน แพ็กเกจข้อมูลไม่มีค่าใช้จ่ายและโบนัสของโหนดนี้",
+        "requirement": {
+            "building": "{name} {level}",
+            "research": "{name} เลเวล {level}"
+        },
+        "levelsTitle": "เลเวล"
+    },
+    "view": {
+        "label": "มุมมอง",
+        "list": "รายการ",
+        "tree": "แผนผัง"
+    },
+    "tree": {
+        "region": "แผนผังวิจัย {tab}",
+        "openNode": "{name} {levels}",
+        "tier": "T{tier}"
+    }
+}

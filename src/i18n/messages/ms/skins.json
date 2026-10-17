@@ -1,0 +1,78 @@
+{
+    "page": {
+        "title": "Skin"
+    },
+    "view": {
+        "subline": "{chief} · {details} · {owned} daripada {total} skin dimiliki"
+    },
+    "owned": {
+        "label": "Dimiliki",
+        "value": "{owned} daripada {total}",
+        "progress": "Skin dimiliki",
+        "withBonus": "{withBonus} daripada {total} skin mempunyai bonus"
+    },
+    "totals": {
+        "title": "Bonus daripada skin dimiliki",
+        "estimate": "Anggaran",
+        "percent": "+{amount}%",
+        "flat": "+{amount}",
+        "none": "Belum ada skin dimiliki yang mempunyai bonus.",
+        "note": "{count, plural, other {Jumlah bonus {amount} skin dimiliki}}, bagi setiap statistik, dikira oleh aplikasi. Ia menganggap setiap skin dimiliki terpakai serentak. Troop Attack dan Troops Attack ditambah bersama."
+    },
+    "expiry": {
+        "title": "Tarikh luput tidak dijejak.",
+        "text": "Tempoh (kekal, 30 hari, mengikut kedudukan) hanya ada dalam teks penerangan. Skin bermasa kekal dimiliki sehingga anda mengosongkannya."
+    },
+    "search": {
+        "label": "Cari skin",
+        "placeholder": "Cari skin mengikut nama atau sumber"
+    },
+    "filters": {
+        "button": "Penapis",
+        "title": "Penapis",
+        "description": "Pilih apa yang ditunjukkan senarai Skin",
+        "reset": "Tetap semula",
+        "showButton": "{count, plural, other {Tunjuk {amount} skin}}",
+        "skinType": "Jenis skin",
+        "typeAll": "Semua {amount}",
+        "typeOption": "{type} {amount}",
+        "owned": "Dimiliki",
+        "bonus": "Bonus",
+        "order": "Susunan",
+        "notSaved": "Penapis tidak disimpan.",
+        "ownedOptions": {
+            "all": "Semua skin",
+            "owned": "Dimiliki",
+            "notOwned": "Tidak dimiliki"
+        },
+        "bonusOptions": {
+            "any": "Mana-mana",
+            "has": "Ada bonus",
+            "none": "Tiada bonus"
+        },
+        "orderOptions": {
+            "game": "Susunan permainan",
+            "name": "Nama, A hingga Z",
+            "owned": "Dimiliki dahulu"
+        }
+    },
+    "status": {
+        "showing": "Menunjukkan {shown} daripada {total} skin.",
+        "showingFiltered": "Menunjukkan {shown} daripada {total} skin. Penapis: {filters}.",
+        "showMore": "{count, plural, other {Tunjuk {amount} lagi skin}}"
+    },
+    "empty": {
+        "title": "Tiada skin sepadan",
+        "description": "Ubah carian atau penapis untuk melihat skin.",
+        "reset": "Tetapkan semula penapis"
+    },
+    "card": {
+        "bonus": "Bonus",
+        "source": "Sumber",
+        "unknown": "Tidak diketahui",
+        "bonusValue": "{value} {stat}",
+        "owned": "Dimiliki",
+        "ownedLabel": "Dimiliki: {name}, {type}",
+        "domainWarning": "Teks bonus domain ada dalam penerangan dan tidak dikira."
+    }
+}

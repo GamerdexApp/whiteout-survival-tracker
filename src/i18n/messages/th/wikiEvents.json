@@ -1,0 +1,145 @@
+{
+    "line": "{events} กิจกรรม: พันธมิตร {alliance} เดี่ยว {solo} มือใหม่ {rookie} และเทศกาล {holiday} มีช่วง การให้คะแนน รางวัล เคล็ดลับ ร้านค้า และอันดับ เท่าที่แพ็กเกจข้อมูลมี",
+    "list": {
+        "title": "กิจกรรม",
+        "showing": "แสดง {shown} จาก {total}",
+        "search": "ค้นหา",
+        "searchPlaceholder": "ค้นหากิจกรรมตามชื่อ",
+        "scoringFilter": "การให้คะแนน",
+        "categoryLabel": "หมวดหมู่",
+        "all": "ทั้งหมด",
+        "table": "กิจกรรม",
+        "event": "กิจกรรม",
+        "category": "หมวดหมู่",
+        "frequency": "ความถี่ (ข้อความอิสระ)",
+        "duration": "ระยะเวลา (ข้อความอิสระ)",
+        "scoringRows": "แถวคะแนน",
+        "noScoringRows": "ไม่มีแถวคะแนน",
+        "emptyTitle": "ไม่พบกิจกรรมที่ตรงกัน",
+        "emptyDescription": "เปลี่ยนคำค้นหา หมวดหมู่ หรือการให้คะแนน"
+    },
+    "category": {
+        "alliance": "พันธมิตร",
+        "solo": "เดี่ยว",
+        "rookie": "มือใหม่",
+        "holiday": "เทศกาล"
+    },
+    "scoring": {
+        "any": "การให้คะแนนทุกแบบ",
+        "ranking": "อันดับ",
+        "tier": "ระดับ",
+        "milestones": "เป้าหมาย",
+        "waves": "เวฟ",
+        "participation": "การเข้าร่วม"
+    },
+    "parts": {
+        "days": "{count, plural, other {{amount} วัน}}",
+        "tiers": "{count, plural, other {{amount} ระดับ}}",
+        "missions": "{count, plural, other {{amount} ภารกิจ}}",
+        "waves": "{count, plural, other {{amount} เวฟ}}",
+        "versions": "{count, plural, other {{amount} เวอร์ชัน}}",
+        "levels": "{count, plural, other {{amount} เลเวล}}"
+    },
+    "detail": {
+        "title": "รายละเอียด",
+        "category": "หมวดหมู่",
+        "frequency": "ความถี่",
+        "duration": "ระยะเวลา",
+        "summary": "สรุป",
+        "requirements": "เงื่อนไข",
+        "scoring": "การให้คะแนน",
+        "noRequirements": "ไม่มี"
+    },
+    "phases": {
+        "title": "ช่วง",
+        "table": "ช่วงของกิจกรรม",
+        "phase": "ช่วง",
+        "description": "คำอธิบาย"
+    },
+    "scoringRows": {
+        "title": "แถวคะแนน: {name}",
+        "table": "การกระทำที่ให้คะแนน",
+        "action": "การกระทำ",
+        "points": "คะแนน",
+        "victoryPoints": "คะแนนชัยชนะ {amount}",
+        "milestones": "เป้าหมายของ {name}",
+        "allianceMilestones": "เป้าหมายพันธมิตรของ {name}"
+    },
+    "missions": {
+        "title": "ภารกิจ",
+        "table": "ภารกิจของกิจกรรม",
+        "mission": "ภารกิจ",
+        "group": "กลุ่ม",
+        "points": "คะแนน",
+        "rewards": "รางวัล"
+    },
+    "tiers": {
+        "title": "ระดับ",
+        "table": "ระดับของกิจกรรม",
+        "tier": "ระดับ",
+        "score": "เป้าหมาย",
+        "scoreValue": "{amount} {unit}",
+        "scoreValuePoints": "{amount} คะแนน",
+        "rewards": "รางวัล",
+        "note": "หมายเหตุ"
+    },
+    "rankings": {
+        "title": "รางวัลอันดับ",
+        "personal": "รางวัลอันดับส่วนตัว",
+        "alliance": "รางวัลอันดับพันธมิตร",
+        "basedOn": "รางวัลอันดับตาม {basis}",
+        "table": "รางวัลอันดับ",
+        "rank": "อันดับ",
+        "starChange": "ดาวที่เปลี่ยน",
+        "rewards": "รางวัล"
+    },
+    "rewards": {
+        "title": "รางวัล",
+        "partial": "รายการรางวัลนี้ไม่ครบ",
+        "amountName": "{amount} {name}"
+    },
+    "pointLevels": {
+        "title": "เลเวลคะแนน",
+        "table": "เลเวลคะแนน",
+        "level": "เลเวล",
+        "personal": "คะแนนส่วนตัว",
+        "alliance": "คะแนนพันธมิตร",
+        "rewards": "รางวัล"
+    },
+    "waves": {
+        "title": "เวฟ",
+        "table": "เวฟการโจมตี",
+        "wave": "เวฟ",
+        "target": "เป้าหมาย",
+        "rule": "กฎ",
+        "city": "เมือง",
+        "headquarters": "กองบัญชาการ"
+    },
+    "zones": {
+        "title": "โซน",
+        "table": "โซนของกิจกรรม",
+        "zone": "โซน",
+        "days": "วัน",
+        "statSources": "แหล่งค่าสถานะ",
+        "unlock": "ปลดล็อก"
+    },
+    "shop": {
+        "title": "ร้านค้า",
+        "titleNamed": "ร้านค้า: {name}",
+        "table": "ข้อเสนอในร้านค้า",
+        "offer": "ข้อเสนอ",
+        "cost": "ค่าใช้จ่าย",
+        "costValue": "{amount} {currency}",
+        "limit": "จำกัด",
+        "contents": "เนื้อหา"
+    },
+    "versions": {
+        "title": "{name}",
+        "missions": "ภารกิจ",
+        "chests": "หีบ"
+    },
+    "tips": {
+        "title": "เคล็ดลับ"
+    },
+    "recordLine": "กิจกรรมหมวด{category} พร้อมช่วง การให้คะแนน รางวัล และอันดับ"
+}

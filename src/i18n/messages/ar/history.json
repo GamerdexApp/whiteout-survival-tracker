@@ -1,0 +1,102 @@
+{
+    "page": { "title": "السجل" },
+    "events": {
+        "svs": "SvS",
+        "showdown": "Alliance Showdown",
+        "king": "King of Icefield",
+        "hall": "Hall of Chief"
+    },
+    "title": {
+        "dated": "{event}، من {start} إلى {end}",
+        "undated": "{event}"
+    },
+    "ended": "انتهت {date}",
+    "tabs": { "label": "التصفية حسب الفعالية", "all": "كل الفعاليات" },
+    "list": {
+        "intro": "الفعاليات التي أنهيتها من سجل الفعاليات، الأحدث أولًا. النتائج هي الأيام من 1 إلى 5 في SvS، وتُحتسب مرحلة المعركة بشكل منفصل. افتح فعالية لترى المخطط مقابل الفعلي والترقيات المخططة.",
+        "event": "الفعالية",
+        "plan": "المخطط",
+        "actual": "الفعلي",
+        "diff": "الفرق",
+        "rank": "المرتبة",
+        "alliance": "التحالف",
+        "rankLine": "المرتبة {rank}، التحالف {alliance}",
+        "open": "فتح",
+        "openEvent": "فتح {name}",
+        "none": "لا توجد فعاليات منتهية من هذا النوع بعد.",
+        "diffWithPercent": "{amount} ({percent}%)"
+    },
+    "empty": {
+        "title": "لا توجد فعاليات بعد",
+        "description": "الفعاليات التي تنهيها من سجل الفعاليات في الفعاليات الأساسية تُحفظ هنا مع خطتها ونتائجها.",
+        "action": "فتح الفعاليات الأساسية"
+    },
+    "notFound": {
+        "title": "الفعالية غير موجودة",
+        "description": "هذه الفعالية ليست في سجل القائد النشط. ربما أُزيلت، أو أن الفعالية مخفية في الفعاليات الأساسية.",
+        "action": "العودة إلى السجل"
+    },
+    "unknown": "غير محدد",
+    "belowPlan": "أقل من المخطط",
+    "atOrAbovePlan": "يساوي المخطط أو أعلى",
+    "breadcrumb": { "label": "مسار التنقل" },
+    "tiles": {
+        "plan": "المخطط",
+        "actual": "الفعلي",
+        "difference": "الفرق",
+        "overall": "الإجمالي",
+        "alliance": "التحالف",
+        "days": "الأيام من 1 إلى 5",
+        "rank": "المرتبة",
+        "rankDays": "المرتبة، الأيام من 1 إلى 5",
+        "percent": "{percent}%"
+    },
+    "compare": {
+        "title": "المخطط مقابل الفعلي",
+        "titleDays": "المخطط مقابل الفعلي، الأيام من 1 إلى 5",
+        "day": "اليوم",
+        "plan": "المخطط",
+        "actual": "الفعلي",
+        "diff": "الفرق",
+        "rank": "المرتبة",
+        "ally": "التحالف",
+        "total": "الإجمالي",
+        "share": "{percent}% من المخطط",
+        "shareLine": "{percent}% من المخطط، المرتبة {rank}، التحالف {ally}",
+        "barLabel": "{day}، الفعلي كنسبة من المخطط"
+    },
+    "battle": {
+        "title": "مرحلة المعركة",
+        "note": "نتيجتها ومرتبتها مستقلتان. لا تُضافان إلى إجمالي الأيام من 1 إلى 5."
+    },
+    "upgrades": {
+        "title": "الترقيات المخططة",
+        "titleCount": "الترقيات المخططة، {count}",
+        "summary": "الترقيات الموجودة في خطة هذه الفعالية، مجمّعة حسب النوع. أُنجز {done} من {count}.",
+        "summaryUnchecked": "الترقيات الموجودة في خطة هذه الفعالية، مجمّعة حسب النوع.",
+        "none": "لم تُصدَّر خطة إلى هذه الفعالية، فلا توجد ترقيات مخططة لعرضها.",
+        "groupTitle": "{name}، {count}",
+        "groupStats": "أُنجز {done} من {count}، القوة ‎+{power}، Fire Crystals {fireCrystals}",
+        "groupStatsUnchecked": "القوة ‎+{power}، Fire Crystals {fireCrystals}",
+        "power": "القوة ‎+{power}",
+        "plannedDay": "مخطط {day}",
+        "done": "تم",
+        "notDone": "لم يتم",
+        "levelsFrom": "{from} إلى {to}",
+        "levelsTo": "إلى {to}",
+        "levelsResearchFrom": "من المستوى {from} إلى {to}",
+        "levelsResearchTo": "إلى المستوى {to}",
+        "costAmount": "{amount} {name}"
+    },
+    "pages": {
+        "buildings": "المباني",
+        "research": "الأبحاث",
+        "chiefGear": "معدات القائد",
+        "chiefCharms": "تمائم القائد",
+        "heroGear": "معدات الأبطال",
+        "heroes": "الأبطال",
+        "pets": "الحيوانات الأليفة",
+        "experts": "الخبراء",
+        "troops": "القوات"
+    }
+}

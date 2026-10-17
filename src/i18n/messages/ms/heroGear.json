@@ -1,0 +1,215 @@
+{
+    "defaultSetName": "Set {number}",
+    "troop": {
+        "infantry": "Infantry",
+        "lancer": "Lancer",
+        "marksman": "Marksman"
+    },
+    "lock": {
+        "needsMythic": "Perlu gear Mythic",
+        "needsBoth": "Perlu peningkatan 100 dan tahap penempaan penguasaan 10",
+        "needsEnhancement": "Perlu peningkatan 100",
+        "needsForging": "Perlu tahap penempaan penguasaan 10"
+    },
+    "tab": {
+        "deletedTitle": "{name} dipadam",
+        "deletedMessage": "Empat keping dan matlamatnya dibuang.",
+        "undo": "Buat asal",
+        "tiles": {
+            "sets": "Set gear",
+            "power": "Kuasa gear, semua set",
+            "ofPieces": "{count} daripada {total}",
+            "atEnhancementMax": "Keping pada peningkatan 100",
+            "empowered": "Keping diperkasa",
+            "ready": "Keping sedia untuk pemerkasaan"
+        },
+        "search": "Cari set gear",
+        "filters": "Penapis",
+        "plan": "Rancang",
+        "showing": "Menunjukkan {shown} daripada {total} set gear. Matlamat hanya boleh dibaca di sini dan ditetapkan dalam Rancang.",
+        "empty": {
+            "title": "Belum ada set gear",
+            "description": "Satu set gear memuatkan satu keping Goggles, Gloves, Belt dan Boots. Tambah set untuk menjejak tahapnya."
+        },
+        "addSet": "Tambah set gear",
+        "unknownHero": "Hero tidak diketahui",
+        "power": "Kuasa {amount}",
+        "enhancementLine": "Ping. {line}",
+        "troopHint": "Jenis tentera memilih lajur statistik di bawah.",
+        "editSet": "Sunting set",
+        "deleteSet": "Padam set"
+    },
+    "pieceCard": {
+        "name": "{set} {slot}",
+        "forgingRow": "{name} (+{percent}%)",
+        "none": "Tiada",
+        "noGoal": "Tiada matlamat",
+        "goal": "Matlamat: {value}",
+        "quality": "Kualiti gear",
+        "qualities": {
+            "mythic": "Mythic",
+            "epic": "Epic",
+            "rare": "Rare",
+            "uncommon": "Uncommon",
+            "common": "Common"
+        },
+        "forgingRowLabel": "Baris penempaan penguasaan",
+        "forgingStops": "Penempaan penguasaan berhenti pada tahap 10 sehingga peningkatan ialah 100.",
+        "lowQualityNote": "Hanya gear Mythic boleh ditempa dan diperkasa. Kuasa mengikut jadual Mythic dengan kuasa asas kualiti ini, yang belum disahkan oleh permainan.",
+        "enhancement": "Peningkatan",
+        "enhancementLabel": "Peningkatan {name}",
+        "enhancementSlider": "Peluncur peningkatan {name}",
+        "empowerment": "Pemerkasaan",
+        "empowermentLabel": "Pemerkasaan {name}",
+        "empowermentSlider": "Peluncur pemerkasaan {name}",
+        "outOf": "/ {max}",
+        "milestone": "Pemerkasaan {level} dicapai: {stat}",
+        "piecePower": "Kuasa keping",
+        "health": "Health",
+        "percent": "{value}%"
+    },
+    "statLines": {
+        "title": "Baris statistik, 4 slot darab 3 jenis tentera",
+        "troopThisSet": "{troop} (set ini)",
+        "stat": "{name} {value}",
+        "health": "HP {value}",
+        "percentStat": "{name} {value}%",
+        "none": "Tiada",
+        "note": "Nilai pada tahap keping {name}, termasuk penempaan penguasaan, dibundarkan ke bawah. Statistik datang daripada WoS Tools, yang berhenti pada 192 daripada 200 tahap. Lajur yang diserlahkan ialah jenis tentera set."
+    },
+    "filters": {
+        "title": "Penapis",
+        "description": "Pilih set gear yang ditunjukkan senarai",
+        "reset": "Tetap semula",
+        "show": "Tunjuk {amount} {count, plural, other {set}}",
+        "all": "Semua",
+        "troopType": "Jenis tentera",
+        "linkedHero": "Hero dipautkan",
+        "heroOptions": {
+            "all": "Semua",
+            "linked": "Dipautkan kepada hero",
+            "unlinked": "Tidak dipautkan"
+        },
+        "order": "Susunan",
+        "orderOptions": {
+            "power": "Jumlah kuasa, tertinggi dahulu",
+            "created": "Susunan ditambah",
+            "name": "Nama, A hingga Z",
+            "hero": "Nama hero, A hingga Z"
+        },
+        "notSaved": "Penapis tidak disimpan."
+    },
+    "setDialogs": {
+        "cancel": "Batal",
+        "setName": "Nama set",
+        "nameRequired": "Masukkan nama.",
+        "linkedHero": "Hero dipautkan",
+        "add": {
+            "title": "Tambah set gear",
+            "linkedHeroHint": "Memilih hero menetapkan jenis tentera kepada kelasnya.",
+            "troopType": "Jenis tentera",
+            "troopTypeHint": "Jenis tentera memilih lajur statistik set.",
+            "quality": "Kualiti gear",
+            "qualityHint": "Hanya gear Mythic boleh ditempa dan diperkasa.",
+            "qualityHintCopy": "Set yang disalin mengekalkan kualiti setiap keping.",
+            "qualities": {
+                "mythic": "Mythic",
+                "epic": "Epic",
+                "rare": "Rare",
+                "uncommon": "Uncommon",
+                "common": "Common"
+            },
+            "startFrom": "Mula dari",
+            "startFromHint": "Matlamat tidak disalin. Matlamat ditetapkan dalam Rancang.",
+            "emptySet": "Set kosong",
+            "copyFrom": "Salin tahap daripada {name}",
+            "savesAtOnce": "Setiap perubahan disimpan serta-merta dan set baharu dipaparkan sebagai terpilih.",
+            "submit": "Tambah set gear"
+        },
+        "delete": {
+            "title": "Padam {name}?",
+            "titleFallback": "Padam set",
+            "confirm": "Padam set",
+            "body": "Empat keping {name} dan matlamatnya dibuang daripada peranti ini.",
+            "undoNote": "Anda boleh buat asal selama 10 saat selepas memadam.",
+            "exportBackup": "Eksport sandaran dahulu"
+        },
+        "edit": {
+            "title": "Sunting {name}",
+            "titleFallback": "Sunting set",
+            "submit": "Simpan set"
+        },
+        "heroSelect": {
+            "none": "Tiada hero",
+            "option": "{name} ({class}, Gen {generation})"
+        }
+    },
+    "plan": {
+        "title": "Rancang Gear Hero",
+        "description": "Penempaan penguasaan, peningkatan dan pemerkasaan mana-mana keping, daripada mana-mana set",
+        "saved": "Pelan disimpan {time}",
+        "close": "Tutup",
+        "save": "Simpan pelan",
+        "empty": "Belum ada keping dalam pelan. Tambah keping di atas, kemudian naikkan matlamatnya.",
+        "pieceTitle": "{set} · {slot}",
+        "milestone": "pemerkasaan {level}, {event}, {stat}",
+        "addPiece": {
+            "title": "Tambah keping",
+            "noSets": "Tambah set gear pada tab Gear Hero dahulu.",
+            "set": "Set gear",
+            "setOption": "{name} ({troop})",
+            "piece": "Keping",
+            "submit": "Tambah keping",
+            "taken": "Keping ini sudah ada dalam pelan."
+        },
+        "qualities": {
+            "mythic": "mythic",
+            "epic": "epic",
+            "rare": "rare",
+            "uncommon": "uncommon",
+            "common": "common"
+        },
+        "remove": "Buang {title} daripada pelan",
+        "forgingRow": "{name} (+{percent}%)",
+        "none": "Tiada",
+        "forgingCurrent": "Baris penempaan semasa",
+        "forgingGoal": "Baris matlamat penempaan",
+        "forgingGoalLabel": "Matlamat penempaan {title}",
+        "forgingStops": "Penempaan penguasaan berhenti pada tahap 10 sehingga matlamat peningkatan ialah 100.",
+        "enhancement": "Peningkatan",
+        "enhancementGoal": "Matlamat peningkatan {title}",
+        "empowerment": "Pemerkasaan",
+        "empowermentGoal": "Matlamat pemerkasaan {title}",
+        "from": "{value} ke",
+        "result": {
+            "title": "Hasil untuk {amount} {count, plural, other {keping}}",
+            "power": "Kuasa",
+            "powerLines": {
+                "gained": "Kuasa diperoleh",
+                "before": "Kuasa keping ini sebelum",
+                "after": "Kuasa keping ini selepas"
+            },
+            "columns": {
+                "piece": "Keping",
+                "forgingStatsUp": "Statistik penempaan naik",
+                "powerGained": "Kuasa diperoleh"
+            },
+            "forgingStatsUp": "+{percent}% ({steps} langkah)",
+            "milestones": "Pencapaian dibuka",
+            "milestoneLine": "{label}: {stat}",
+            "events": {
+                "svs": "SvS",
+                "allianceShowdown": "Alliance Showdown",
+                "kingOfIcefield": "King of Icefield"
+            },
+            "note": "Rancang Gear Hero tiada kawalan kelajuan atau bonus. Kalkulator tidak memberi masa.",
+            "tableLabel": "Jadual hasil pelan"
+        }
+    },
+    "export": {
+        "button": "Eksport ke Acara Utama",
+        "nothing": "Pelan tidak memerlukan Essence Stones atau Mithril untuk dieksport.",
+        "essenceStones": "Essence Stones",
+        "mithril": "Mithril"
+    }
+}

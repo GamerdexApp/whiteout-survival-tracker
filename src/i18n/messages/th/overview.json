@@ -1,0 +1,231 @@
+{
+    "page": {
+        "title": "ภาพรวม"
+    },
+    "header": {
+        "state": "สเตท {number}",
+        "furnace": "Furnace {level}",
+        "serverAge": "อายุเซิร์ฟเวอร์ประมาณ {days} วัน",
+        "derived": "สร้างจากหน้าอื่นของคุณ"
+    },
+    "tiles": {
+        "furnace": {
+            "label": "Furnace",
+            "steps": "ขั้นที่ {order} จาก {total}",
+            "unknown": "ไม่ทราบ",
+            "unknownHint": "ตั้ง Furnace ในหน้าอาคาร"
+        },
+        "dailies": {
+            "label": "ภารกิจรายวัน",
+            "value": "{done} / {total}",
+            "tasks": "งานของฉันที่ทำวันนี้",
+            "missions": "ภารกิจในเกมที่ทำแล้ว"
+        },
+        "events": {
+            "label": "กิจกรรม",
+            "live": "กำลังจัด {amount}",
+            "coreDay": "{event} {day}",
+            "moreThisWeek": "สัปดาห์นี้อีก {amount}",
+            "noneThisWeek": "สัปดาห์นี้ไม่มี"
+        },
+        "skins": {
+            "label": "สกิน",
+            "value": "{owned} / {total}",
+            "hint": "สกินที่มี"
+        },
+        "vip": {
+            "label": "VIP",
+            "value": "VIP {level}",
+            "unknown": "ไม่ทราบ",
+            "hint": "จาก VIP XP ของคุณ",
+            "unknownHint": "ใส่ VIP XP ของคุณในหน้า VIP"
+        },
+        "prosperity": {
+            "label": "Prosperity ของเกาะ",
+            "possible": "จากสูงสุด {max}",
+            "locked": "ล็อก",
+            "lockedHint": "ต้องมี Furnace {level}"
+        },
+        "generation": {
+            "label": "รุ่นของฮีโร่",
+            "allUnlocked": "ปลดล็อกทุกรุ่นแล้ว",
+            "shouldBeOpen": "รุ่น {next} ควรเปิดแล้ว",
+            "onDay": "รุ่น {next} ในวันที่ {day} ของเซิร์ฟเวอร์",
+            "inDays": "รุ่น {next} ในอีกประมาณ {days} วัน"
+        }
+    },
+    "events": {
+        "title": "กิจกรรม",
+        "openCalendar": "เปิดปฏิทิน",
+        "liveNow": "กำลังจัดอยู่",
+        "liveBadge": "กำลังจัดอยู่",
+        "nextUp": "ถัดไป จากหน้ากิจกรรมของคุณ",
+        "coreLine": "{day} จาก {count} {name} Core events",
+        "runLine": "{length} กำลังจัดอยู่",
+        "empty": "ยังไม่ได้เพิ่มกิจกรรม",
+        "addEvent": "เพิ่มกิจกรรม",
+        "noLive": "ตอนนี้ไม่มีกิจกรรมที่กำลังจัด"
+    },
+    "coreToday": {
+        "title": "{event} วันนี้",
+        "open": "Core events",
+        "dayLine": "{day} {name}",
+        "plan": "แผนวันนี้ {points} คะแนน",
+        "checklist": "เช็กลิสต์",
+        "done": "ทำแล้ว {done} จาก {total}",
+        "progress": "ความคืบหน้าของเช็กลิสต์",
+        "noActions": "วันนี้ไม่ได้วางแผนการกระทำใด",
+        "castleSignedUp": "สมัครตำแหน่งในปราสาทสำหรับ {day} แล้ว",
+        "castleOpen": "สมัครตำแหน่งในปราสาทสำหรับ {day}",
+        "logLocked": "ล็อก {locked} จาก {total} วันในบันทึกกิจกรรม",
+        "todayLocked": "{day} ถูกล็อกแล้ว",
+        "todayOpen": "{day} ยังไม่ได้บันทึก",
+        "openChecklist": "เปิดเช็กลิสต์",
+        "openLog": "เปิดบันทึกกิจกรรม"
+    },
+    "queues": {
+        "title": "คิวที่กำลังทำงาน",
+        "running": "กำลังทำงาน {count}",
+        "construction": "ก่อสร้าง {number}",
+        "researchMain": "วิจัย",
+        "researchWarAcademy": "War Academy",
+        "training": "ฝึก {name}",
+        "learning": "การเรียนรู้",
+        "task": {
+            "construction": "{name} ไป {level}",
+            "research": "{name} ไปเลเวล {level}",
+            "training": "ทหาร {tier}",
+            "learning": "{name} {skill}"
+        },
+        "idle": "ว่าง",
+        "idleBuildings": "ว่าง กดเริ่มอัปเกรดในหน้าอาคาร",
+        "idleResearch": "ว่าง กดเริ่มอัปเกรดในหน้าวิจัย",
+        "progress": "ความคืบหน้าของ {title}"
+    },
+    "lastResult": {
+        "title": "ผลกิจกรรมล่าสุด",
+        "open": "เปิดในประวัติ",
+        "days": "วันที่ 1 ถึง 5 ช่วงการรบแยกต่างหาก",
+        "plan": "แผน",
+        "actual": "ที่ทำจริง",
+        "difference": "ผลต่าง",
+        "overall": "อันดับรวม",
+        "alliance": "อันดับพันธมิตร",
+        "upgrades": "การอัปเกรดตามแผนที่ทำแล้ว",
+        "upgradesOf": "{done} จาก {total}"
+    },
+    "server": {
+        "title": "อายุเซิร์ฟเวอร์",
+        "edit": "แก้ไขหัวหน้า",
+        "age": "ประมาณ {days} วัน บวกลบ {tolerance}",
+        "unknown": "ไม่ทราบ เพิ่มวันที่เซิร์ฟเวอร์เริ่มในแก้ไขหัวหน้า",
+        "fromDate": "จากวันที่เซิร์ฟเวอร์เริ่ม {date}",
+        "warAcademy": "วิจัย War Academy",
+        "t12": "วิจัย T12",
+        "open": "เปิดแล้ว",
+        "opensIn": "เปิดในอีกประมาณ {days} วัน",
+        "unknownUnlock": "ไม่ทราบ",
+        "heroes": "ปลดล็อกฮีโร่ถึง",
+        "generation": "รุ่น {number}",
+        "estimate": "วันปลดล็อกมาจากไทม์ไลน์ของเซิร์ฟเวอร์ เปลี่ยนในแก้ไขหัวหน้าหากเซิร์ฟเวอร์ของคุณคลาดเคลื่อนเล็กน้อย",
+        "areas": {
+            "fireCrystal": "เลเวล Fire Crystal",
+            "pets": "สัตว์เลี้ยง",
+            "experts": "ผู้เชี่ยวชาญ"
+        },
+        "fcUpTo": "ถึง {level}",
+        "nothingYet": "ยังไม่มี",
+        "countOf": "ปลดล็อก {unlocked} จาก {total}",
+        "allUnlocked": "ปลดล็อกทุกอย่างแล้ว",
+        "generationName": "รุ่น {number}",
+        "allGenerations": "ปลดล็อกทุกรุ่นแล้ว",
+        "next": {
+            "withDate": "ถัดไป: {names} วันที่ {day} ของเซิร์ฟเวอร์ {date} ในอีกประมาณ {days} วัน",
+            "noDate": "ถัดไป: {names} วันที่ {day} ของเซิร์ฟเวอร์ ในอีกประมาณ {days} วัน",
+            "unknownAge": "ถัดไป: {names} วันที่ {day} ของเซิร์ฟเวอร์",
+            "passed": "{names} ควรเปิดแล้วตามอายุเซิร์ฟเวอร์ของคุณ วันที่ {day} ของเซิร์ฟเวอร์ เพิ่มค่าตั้งในแก้ไขหัวหน้า"
+        }
+    },
+    "dailies": {
+        "title": "ภารกิจรายวันวันนี้",
+        "open": "เปิดภารกิจรายวัน",
+        "activeness": "ค่าความขยัน {now} จาก {top}",
+        "activenessBar": "ค่าความขยันวันนี้",
+        "missions": "ภารกิจในเกม: ทำแล้ว {done} จาก {total}",
+        "tasks": "งานของฉัน {done} จาก {total}",
+        "tasksBar": "งานของฉันที่ทำวันนี้",
+        "stillOpen": "ยังไม่ทำในงานของฉัน แสดง {shown} จาก {total}",
+        "allDone": "ทุกงานในงานของฉันทำเสร็จสำหรับวันนี้แล้ว",
+        "noTasks": "ยังไม่มีงานในงานของฉัน"
+    },
+    "planner": {
+        "title": "ทรัพยากรที่ขาดตามแผน",
+        "short": "ขาด {amount}",
+        "covered": "ไม่ขาด",
+        "goals": "เป้าหมายจาก {pages} ค่าใช้จ่ายมาจากแพ็กเกจข้อมูล สต็อกมาจากทรัพยากร",
+        "noGoals": "ยังไม่ได้ตั้งเป้าหมาย ตั้งเป้าหมายด้วยแผนในหน้าอาคาร วิจัย และหน้าอื่น ๆ",
+        "pages": {
+            "buildings": "อาคาร",
+            "research": "วิจัย",
+            "heroes": "ฮีโร่",
+            "troops": "กองทหาร",
+            "pets": "สัตว์เลี้ยง",
+            "chiefGear": "อุปกรณ์หัวหน้า",
+            "chiefCharms": "เครื่องรางหัวหน้า"
+        },
+        "separator": ", ",
+        "line": "ต้องใช้ {need} · มี {have}",
+        "shortBy": "ขาด {amount}",
+        "enough": "เพียงพอ",
+        "updateStock": "อัปเดตสต็อกในทรัพยากร",
+        "incomplete": "เป้าหมายบางเลเวลมีค่าใช้จ่ายที่ไม่ทราบในแพ็กเกจข้อมูล ยอดรวมเหล่านี้จึงไม่ครบ"
+    },
+    "progress": {
+        "title": "ความคืบหน้าแต่ละส่วน",
+        "hint": "ที่มีหรืออัปเกรดแล้ว เทียบกับยอดรวมของแพ็กเกจข้อมูล",
+        "count": "{owned} / {total}",
+        "furnace": "Furnace",
+        "furnaceOf": "{level} จาก {max}",
+        "furnaceUnknown": "ไม่ทราบ",
+        "areas": {
+            "buildings": "อาคาร",
+            "heroes": "ฮีโร่",
+            "chiefGear": "อุปกรณ์หัวหน้า",
+            "chiefCharms": "เครื่องรางหัวหน้า",
+            "experts": "ผู้เชี่ยวชาญ",
+            "pets": "สัตว์เลี้ยง",
+            "research": "วิจัย",
+            "allianceTech": "เทคโนโลยีพันธมิตร",
+            "skins": "สกิน"
+        },
+        "locked": {
+            "daybreakIsland": "Daybreak Island",
+            "requirement": "ล็อก ต้องมี Furnace {level} อีก {count, plural, other {{amount} เลเวล}}"
+        }
+    },
+    "power": {
+        "title": "พลัง",
+        "total": "พลังรวม",
+        "complete": "พลังปัจจุบันเทียบกับค่าสูงสุดที่แต่ละกลุ่มให้ได้เมื่อทุกอย่างอยู่ที่เลเวลสูงสุดในเนื้อหาที่การตั้งค่าปลดล็อกของคุณเปิดไว้ กลุ่มที่ไม่มีค่าสูงสุดนับตามที่เป็น",
+        "incomplete": "เปรียบเทียบแบบเดียวกัน {count, plural, other {{amount} รายการ}}ไม่มีค่าพลังในข้อมูลและ{count, plural, other {ไม่ถูกนับ}}",
+        "groupWithoutValue": "{count, plural, other {{amount} รายการ}}ไม่มีค่าพลังในข้อมูล",
+        "groups": {
+            "buildings": "อาคาร",
+            "research": "วิจัย",
+            "heroes": "ฮีโร่",
+            "heroGear": "อุปกรณ์ฮีโร่",
+            "chiefGear": "อุปกรณ์หัวหน้า",
+            "chiefCharms": "เครื่องรางหัวหน้า",
+            "experts": "ผู้เชี่ยวชาญ",
+            "pets": "สัตว์เลี้ยง",
+            "troops": "กองทหาร"
+        },
+        "ofPossible": "จากสูงสุด {possible}",
+        "totalProgress": "พลังรวมเทียบกับค่าสูงสุดที่เป็นไปได้",
+        "percentOfPossible": "{percent}% ของค่าสูงสุดที่เป็นไปได้",
+        "rowOfPossible": "{power} จาก {possible}",
+        "progress": "พลัง{group}เทียบกับค่าสูงสุดที่เป็นไปได้",
+        "noMaximum": "ไม่มีค่าสูงสุด ขึ้นอยู่กับสิ่งที่คุณกรอก",
+        "noCapNote": "กองทหารและอุปกรณ์ฮีโร่ไม่มีเพดาน พลังรวมของคุณจึงเกินยอดรวมที่เป็นไปได้ได้เมื่อฝึกทหารเพิ่มและพัฒนาอุปกรณ์ฮีโร่ ทั้งสองนับตามที่เป็นในยอดรวมที่เป็นไปได้"
+    }
+}

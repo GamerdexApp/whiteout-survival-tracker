@@ -1,0 +1,70 @@
+{
+    "line": "{experts} من الخبراء و{relationships} من مراحل العلاقة. للمرجع فقط، لا يُحفظ شيء هنا.",
+    "roster": {
+        "title": "الخبراء",
+        "count": "{shown} من {total} خبيرًا",
+        "search": "بحث",
+        "searchPlaceholder": "ابحث في {count} خبيرًا بالاسم أو اللقب أو التخصص",
+        "generation": "الجيل",
+        "all": "الكل",
+        "empty": "لا يوجد خبير يطابق عوامل التصفية هذه.",
+        "generationValue": "الجيل {generation}",
+        "unlock": "الفتح: يوم الخادم {days}",
+        "unlockUnknown": "الفتح:",
+        "unreleased": "لم يصدر بعد"
+    },
+    "detail": {
+        "subline": "{title} · التخصص {specialty} · الجيل {generation}",
+        "baseBonus": "الأساسي: {bonus}",
+        "bonus": "{stat} {value}",
+        "percentValue": "{value}%",
+        "skills": "المهارات",
+        "talent": "الموهبة، أقصى مستوى {level}",
+        "affinityLevels": "مستويات الألفة",
+        "baseBonusLabel": "الميزة الأساسية",
+        "unlock": "يُفتح في يوم الخادم {days}"
+    },
+    "skills": {
+        "title": "المهارات والموهبة",
+        "columns": {
+            "skill": "المهارة",
+            "max": "الأقصى",
+            "effect": "التأثير",
+            "books": "الكتب حتى الأقصى",
+            "exp": "EXP حتى الأقصى"
+        },
+        "talent": "{name} (موهبة)",
+        "none": "لا شيء",
+        "selectHint": "اختر مهارة لرؤية التفاصيل."
+    },
+    "skillLevels": {
+        "title": "جدول مستويات المهارة",
+        "meta": "{name}، المستويات من 1 إلى {max}",
+        "level": "المستوى {level}",
+        "columns": {
+            "level": "المستوى",
+            "exp": "EXP",
+            "books": "الكتب"
+        },
+        "none": "لا شيء"
+    },
+    "affinity": {
+        "title": "مستويات الألفة",
+        "level": "المستوى {level}",
+        "columns": {
+            "level": "المستوى",
+            "required": "الألفة المطلوبة",
+            "bonus": "ميزة الإحصائية",
+            "affinityPower": "قوة الألفة",
+            "levelPower": "قوة المستوى",
+            "advancement": "تكلفة الارتقاء"
+        },
+        "noAdvancement": "بلا ارتقاء",
+        "startNote": "الألفة المطلوبة للمستوى 1 قيمة بداية تساوي {start}. من المستوى 2 فصاعدًا يكون المقدار هو تكلفة بلوغ ذلك المستوى."
+    },
+    "relationships": {
+        "title": "مراحل العلاقة",
+        "fromLevel": "من المستوى {level}"
+    },
+    "recordLine": "{title}، التخصص {specialty}، الجيل {generation}. للمرجع فقط، لا يُحفظ شيء هنا."
+}

@@ -1,0 +1,54 @@
+{
+    "line": "{total} تقنية في ثلاث أشجار: النمو {growth}، الأراضي {territory}، المعركة {battle}. للمرجع فقط، لا يُحفظ شيء هنا.",
+    "list": {
+        "title": "عقد التقنيات",
+        "categoriesLabel": "أشجار التقنيات",
+        "categories": {
+            "all": "الكل",
+            "Growth": "النمو",
+            "Territory": "الأراضي",
+            "Battle": "المعركة"
+        },
+        "search": "بحث",
+        "searchPlaceholder": "ابحث في التقنيات بالاسم أو التأثير",
+        "tier": "الفئة",
+        "allTiers": "كل الفئات",
+        "tierOption": "الفئة {tier}",
+        "empty": "لا توجد عقدة تقنية تطابق هذا البحث.",
+        "emptyHint": "امسح البحث أو أحد عوامل التصفية.",
+        "columns": {
+            "tech": "التقنية",
+            "category": "الفئة",
+            "tier": "المرتبة",
+            "levels": "المستويات",
+            "maxBonus": "أقصى ميزة",
+            "cost": "تكلفة المستوى 1",
+            "time": "وقت المستوى 1",
+            "requires": "متطلبات المستوى 1"
+        },
+        "mobileMeta": "{category}، الفئة {tier}، {levels}",
+        "count": "{count, plural, zero {{amount} تقنية} one {{amount} تقنية} two {{amount} تقنيتان} few {{amount} تقنيات} many {{amount} تقنية} other {{amount} تقنية}}"
+    },
+    "levels": "{count, plural, zero {{amount} مستوى} one {{amount} مستوى} two {{amount} مستويان} few {{amount} مستويات} many {{amount} مستوى} other {{amount} مستوى}}",
+    "detail": {
+        "facts": "التفاصيل",
+        "levelsTitle": "المستويات",
+        "none": "لا شيء",
+        "fields": {
+            "category": "الفئة",
+            "tier": "المرتبة",
+            "effect": "التأثير",
+            "stat": "الإحصائية",
+            "levels": "المستويات"
+        },
+        "columns": {
+            "level": "المستوى",
+            "bonus": "الميزة",
+            "cost": "التكلفة",
+            "time": "الوقت",
+            "requires": "المتطلبات"
+        },
+        "level": "المستوى {level}",
+        "requirement": "{name} المستوى {level}"
+    }
+}

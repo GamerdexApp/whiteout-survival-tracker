@@ -1,0 +1,373 @@
+{
+    "page": {
+        "title": "Etkinlikler",
+        "subline": "{chief} · {details}"
+    },
+    "tabs": {
+        "label": "Etkinlik görünümleri",
+        "calendar": "Takvim",
+        "mine": "Etkinliklerim",
+        "history": "Etkinlik geçmişi"
+    },
+    "actions": {
+        "addDetails": "Etkinlik ayrıntısı ekle",
+        "addEvent": "Etkinlik ekle"
+    },
+    "categories": {
+        "alliance": "İttifak",
+        "solo": "Bireysel",
+        "rookie": "Acemi",
+        "holiday": "Tatil"
+    },
+    "gives": {
+        "rewards": "Yalnızca ödüller",
+        "personal": "Kişisel sıralama",
+        "alliance": "İttifak sıralaması",
+        "both": "Her iki sıralama"
+    },
+    "weekdays": {
+        "short": {
+            "sunday": "Paz",
+            "monday": "Pzt",
+            "tuesday": "Sal",
+            "wednesday": "Çar",
+            "thursday": "Per",
+            "friday": "Cum",
+            "saturday": "Cmt"
+        },
+        "initial": {
+            "sunday": "P",
+            "monday": "P",
+            "tuesday": "S",
+            "wednesday": "Ç",
+            "thursday": "P",
+            "friday": "C",
+            "saturday": "C"
+        }
+    },
+    "months": {
+        "january": "Ocak",
+        "february": "Şubat",
+        "march": "Mart",
+        "april": "Nisan",
+        "may": "Mayıs",
+        "june": "Haziran",
+        "july": "Temmuz",
+        "august": "Ağustos",
+        "september": "Eylül",
+        "october": "Ekim",
+        "november": "Kasım",
+        "december": "Aralık"
+    },
+    "monthsShort": {
+        "january": "Oca",
+        "february": "Şub",
+        "march": "Mar",
+        "april": "Nis",
+        "may": "May",
+        "june": "Haz",
+        "july": "Tem",
+        "august": "Ağu",
+        "september": "Eyl",
+        "october": "Eki",
+        "november": "Kas",
+        "december": "Ara"
+    },
+    "format": {
+        "weekdayDay": "{weekday}, {date}",
+        "utcTime": "{time} UTC",
+        "dateTime": "{date}, {time}",
+        "range": "{start} - {end}",
+        "length": {
+            "minutes": "{count, plural, one {{amount} dk} other {{amount} dk}}",
+            "hours": "{count, plural, one {{amount} saat} other {{amount} saat}}",
+            "days": "{count, plural, one {{amount} gün} other {{amount} gün}}",
+            "weeks": "{count, plural, one {{amount} hafta} other {{amount} hafta}}",
+            "months": "{count, plural, one {{amount} ay} other {{amount} ay}}"
+        }
+    },
+    "repeat": {
+        "none": "Tekrarlanmaz",
+        "weekly": "Her hafta: {days}",
+        "weeklyAny": "Her hafta",
+        "every": {
+            "hours": "{count, plural, one {Her saat} other {Her {amount} saatte bir}}",
+            "days": "{count, plural, one {Her gün} other {Her {amount} günde bir}}",
+            "weeks": "{count, plural, one {Her hafta} other {Her {amount} haftada bir}}",
+            "months": "{count, plural, one {Her ay} other {Her {amount} ayda bir}}"
+        }
+    },
+    "empty": {
+        "title": "Henüz etkinlik yok",
+        "description": "Oynadığın etkinlikleri ekle. Başlangıç tarihini ve saatini bir kez ayarla, takvim ve yaklaşan liste güncel kalsın.",
+        "steps": {
+            "pick": {
+                "title": "Bir etkinlik seç.",
+                "text": "Oyun verisindeki etkinliklerden birini seç."
+            },
+            "start": {
+                "title": "Başlangıcını ayarla.",
+                "text": "Sıradaki turun tarihini ve saatini gir. Bazı etkinliklerin iki turu vardır ya da birkaç gün sürer."
+            },
+            "roll": {
+                "title": "Kendi ilerlesin.",
+                "text": "Bir tur bitince sıradaki tarih tekrar kuralından doldurulur."
+            }
+        }
+    },
+    "calendar": {
+        "previous": "Önceki ay",
+        "next": "Sonraki ay",
+        "today": "Bugün",
+        "zoneLabel": "Saat dilimi",
+        "utc": "UTC",
+        "local": "Saatim",
+        "monthTitle": "{month} {year}",
+        "nameWithRun": "{name}, {run}",
+        "dayTail": "g{day}",
+        "chipText": "{name} {tail}"
+    },
+    "upcoming": {
+        "title": "Yaklaşanlar",
+        "empty": "Önümüzdeki 30 günde tur yok.",
+        "now": "Şu an açık",
+        "today": "Bugün",
+        "tomorrow": "Yarın",
+        "inDays": "{count, plural, one {{amount} gün sonra} other {{amount} gün sonra}}",
+        "timeAndLength": "{time}, {length}"
+    },
+    "mine": {
+        "intro": "{count, plural, one {{amount} etkinlik.} other {{amount} etkinlik.}} Bir tur bitince sıradaki tur tarihi tekrar kuralından kendiliğinden güncellenir, böylece takvim her zaman sıradakini gösterir.",
+        "run": "Tur",
+        "rangeLine": "{range}, {time}",
+        "shortLine": "{when}, {length}",
+        "repeat": "Tekrar: {rule}",
+        "coreTag": "Sonuçlar Ana Etkinlikler'de",
+        "coreLink": "Ana Etkinlikler'i aç",
+        "ended": "Bitti",
+        "logged": "Kaydedildi",
+        "edit": "Düzenle",
+        "remove": "Kaldır"
+    },
+    "toast": {
+        "removedTitle": "Kaldırıldı: {name}",
+        "removedMessage": "Kayıtlı sonuçlar Etkinlik geçmişinde kalır.",
+        "undo": "Geri al",
+        "resultSavedTitle": "Sonuç kaydedildi",
+        "resultSavedMessage": "{name} Etkinlik geçmişine eklendi."
+    },
+    "add": {
+        "title": "Etkinlik ekle",
+        "description": "Oyun verisinden bir etkinlik seç",
+        "close": "Kapat",
+        "searchLabel": "Etkinlik ara",
+        "searchPlaceholder": "{amount} etkinlik ara",
+        "categoryLabel": "Etkinlik kategorisi",
+        "all": "Tümü",
+        "categoryTab": "{name}, {amount}",
+        "showing": "{total} etkinliğin {shown} tanesi gösteriliyor. Başlangıç tarihini ve saatini ayarlamak için birini seç.",
+        "none": "Aramanla eşleşen etkinlik yok.",
+        "noDuration": "Süre oyun verisinde yok",
+        "added": "Eklendi",
+        "button": "Ekle",
+        "addNamed": "Ekle: {name}",
+        "showMore": "Daha fazla göster"
+    },
+    "schedule": {
+        "description": "Ne zaman çalışacağını ayarla. Sonraki turlar kendiliğinden güncellenir.",
+        "cancel": "İptal",
+        "add": "Etkinlik ekle",
+        "save": "Programı kaydet",
+        "howTitle": "Etkinlik nasıl işler",
+        "shape": {
+            "one": "Bir gün",
+            "several": "Birkaç gün",
+            "two": "Döngü başına iki tur"
+        },
+        "shapeHint": {
+            "one": "Bir günlük tek tur. Dakika veya saat cinsinden kısa bir tur için süreyi değiştir.",
+            "several": "Birkaç gün süren tek bir tur.",
+            "two": "Her döngüde iki tur, örneğin iki sezon ya da iki hafta içi gün. Her turun kendi başlangıcı, süresi ve adı vardır."
+        },
+        "runTitle": "Tur {number}",
+        "runSingle": "Tur",
+        "name": "Ad",
+        "startDate": "Başlangıç tarihi",
+        "startTime": "Başlangıç saati (UTC)",
+        "length": "Süre",
+        "unit": "Birim",
+        "runUnits": {
+            "minutes": "dakika",
+            "hours": "saat",
+            "days": "gün"
+        },
+        "repeatTitle": "Tekrar",
+        "repeatKind": {
+            "none": "Tekrarlanmaz",
+            "every": "Her",
+            "weekly": "Haftalık, seçili günlerde"
+        },
+        "every": "Her",
+        "weekdays": "Hafta günleri",
+        "repeatUnits": {
+            "hours": "saat",
+            "days": "gün",
+            "weeks": "hafta",
+            "months": "ay"
+        },
+        "gameSays": "Oyun verisi diyor ki: {text}",
+        "gameSaysNoRule": "Oyun verisi diyor ki: {text}",
+        "useSuggestion": "Öneriyi kullan",
+        "everyError": "0'dan büyük bir sayı gir.",
+        "givesTitle": "Etkinliğin verdikleri",
+        "givesHint": "Oyun verisine göre ayarlanır. Değiştirebilirsin. Sonuç formunun ne isteyeceğini belirler.",
+        "previewTitle": "Takvimde görünecekler",
+        "previewEmpty": "Turları görmek için geçerli bir tarih ve süre gir.",
+        "previewShort": "{range}, {time}",
+        "previewNote": "Bir tur bitince tarihi tekrar kuralına göre ilerler. İstediğin tarihi düzenleyebilirsin."
+    },
+    "result": {
+        "title": "Etkinlik ayrıntısı ekle",
+        "description": {
+            "participation": "Katıldığını ve neler aldığını kaydet",
+            "milestones": "Puanlar ve ulaştığın hedefler",
+            "ranking": "Skor, sıra ve ulaştığın kilometre taşları",
+            "tier": "Lig kademesi ve yerleşim",
+            "waves": "Zorluk, dalgalar, puanlar ve sıralar",
+            "skipped": "Bu turu atladığını kaydet"
+        },
+        "cancel": "İptal",
+        "save": "Sonucu kaydet",
+        "noEvents": "Önce bir etkinlik ekle. Yalnızca Etkinliklerim'deki etkinlikler kaydedilebilir, Ana Etkinlikler ise Ana Etkinlikler'de kaydedilir.",
+        "whichTitle": "Hangi etkinlik",
+        "event": "Etkinlik",
+        "versionsTag": "Sürümler",
+        "run": "Tur",
+        "otherDate": "Başka tarih",
+        "runDate": "Tur tarihi",
+        "runLong": "{range} ({length})",
+        "runNamed": "{when}, {name}",
+        "notLogged": "{run}, henüz kaydedilmedi",
+        "tookPartQuestion": "Katıldın mı?",
+        "tookPart": "Katıldım",
+        "skipped": "Atladım",
+        "coreNote": "Yalnızca senin eklediğin etkinlikler listelenir. Ana Etkinlikler burada değil, Ana Etkinlikler sayfasında kaydedilir.",
+        "versionTitle": "Sürüm",
+        "versionKnown": "Bu sürümün hedefleri veride var, bu yüzden puanlarından kontrol edilir.",
+        "versionUnknown": "Bu sürümde puanları henüz veride olmayan hedefler var. Bu hedefleri elle işaretle.",
+        "participationTitle": "Bu etkinlikte skor ya da sıralama yok",
+        "participationText": "Oyun verisi yalnızca ödülleri listeler, bu yüzden puanlanacak bir şey yok. Katıldığını, aldığın ödülleri ve bir not kaydet.",
+        "pointsFallback": "Puan",
+        "pointsReached": "Ulaşılan {unit}",
+        "pointsHint": "Etkinlik sonundaki toplam.",
+        "finalScore": "Son skor ({unit})",
+        "finalScoreHint": "Etkinlik sonundaki toplam {unit} değerin.",
+        "rankingTitle": "Sıralama",
+        "yourRank": "Senin sıran",
+        "allianceRank": "İttifak sırası",
+        "rankGroup": "Sıra grubu",
+        "rankGroupsHint": "Sıra grupları oyun verisinden gelir: {groups} ve daha fazlası.",
+        "targetsTitle": "Ulaşılan hedefler, puanlarından",
+        "targetsCount": "{total} hedefin {reached} tanesine ulaşıldı",
+        "targetPoints": "{points} {unit}",
+        "pointsMissing": "{unit}: puanlar henüz veride yok",
+        "needsPurchase": "Herhangi bir tutarda bir satın alma gerekir.",
+        "targetsHint": "Skora göre kontrol edilir. Hedefler ve ödüller oyun verisinden gelir.",
+        "targetsHintUnknown": "Puanları henüz veride olmayan hedefler skordan hiç kontrol edilmez. Onları elle işaretle.",
+        "tierTitle": "Lig",
+        "tier": "Kademe",
+        "placement": "Gruptaki yerin",
+        "starChange": "Yıldız değişimi, oyun verisinden",
+        "stars": "{count, plural, one {{amount} yıldız} other {{amount} yıldız}}",
+        "tiersHint": "Kademeler: {tiers}.",
+        "allianceTitle": "İttifak",
+        "outcome": "Bu turda ittifak sonucu",
+        "outcomeHint": "İsteğe bağlı. Galibiyet, mağlubiyet ya da beraberlik.",
+        "outcomes": {
+            "none": "Ayarlanmadı",
+            "won": "Kazanıldı",
+            "lost": "Kaybedildi",
+            "drawn": "Berabere"
+        },
+        "wavesTitle": "Zorluk ve dalgalar",
+        "difficulty": "Oynadığın zorluk",
+        "difficultyFrom": "{name}, {points} ittifak puanından itibaren",
+        "wavesCleared": "Geçilen dalgalar, 0 - {count}",
+        "wavesHint": "Oyun verisi, {name} için {count} dalga listeler.",
+        "defenseTitle": "Savunma puanları",
+        "yourPoints": "Senin puanların",
+        "alliancePoints": "İttifak puanları",
+        "rewardLevel": "Ulaşılan ödül seviyesi",
+        "rewardLevelNone": "Henüz yok",
+        "level": "Seviye {level}",
+        "levelsHint": "Seviyeler oyun verisine göre hem kişisel hem ittifak puanı ister.",
+        "rankingsTitle": "Sıralamalar",
+        "notesTitle": "Notlar",
+        "rewards": "Aldığın ödüller",
+        "rewardsPlaceholder": "Örneğin 2 Hero Shards, 500 Gems",
+        "notes": "Notlar",
+        "notesPlaceholder": "Bu tur hakkında hatırlanacak her şey"
+    },
+    "history": {
+        "emptyTitle": "Henüz kayıtlı sonuç yok",
+        "emptyText": "Bir etkinlik turunda neler aldığını kaydetmek için Etkinlik ayrıntısı ekle'ye bas. Sonuçların ve eğilimler burada görünür.",
+        "eventFilter": "Etkinlik",
+        "allEvents": "Tüm etkinlikler",
+        "period": "Dönem",
+        "months3": "3 ay",
+        "months6": "6 ay",
+        "allTime": "Tüm zamanlar",
+        "intro": "Kaydettiğin her sonuç, en yeniden başlayarak. Ana Etkinlikler Ana Etkinlikler sayfasında kaydedilir ve burada görünmez.",
+        "showing": "{total} sonucun {shown} tanesi gösteriliyor.",
+        "showingEvent": "{count, plural, one {{name} için {amount} sonuç gösteriliyor.} other {{name} için {amount} sonuç gösteriliyor.}}",
+        "noneInPeriod": "Bu dönemde sonuç yok.",
+        "showMore": "Daha fazla göster",
+        "colDate": "Tarih",
+        "colEvent": "Etkinlik",
+        "colScore": "Skor",
+        "colRank": "Sıra",
+        "colAlliance": "İttifak",
+        "colResult": "Sonuç",
+        "colActions": "İşlemler",
+        "none": "-",
+        "edit": "Düzenle",
+        "editNamed": "Sonucu düzenle: {name}",
+        "skipped": "Atlandı",
+        "tierOnly": "{tier} {placement}",
+        "stars": "{count, plural, one {{amount} yıldız} other {{amount} yıldız}}",
+        "waves": "{count, plural, one {{difficulty}, {amount} dalga} other {{difficulty}, {amount} dalga}}",
+        "targets": "{unit}, {total} hedefin {reached} tanesi",
+        "tookPart": "Katıldı",
+        "tookPartRewards": "Katıldı, {rewards}",
+        "rankText": "Sıra {rank}",
+        "allianceRankText": "ittifak {rank}",
+        "separator": " · ",
+        "defensePoints": "{score} Savunma puanı",
+        "scoreUnit": "{score} {unit}",
+        "noScore": "Skor yok",
+        "trendTitle": "Eğilim: {name}",
+        "trendScore": "Her etkinlik sonunda {unit}",
+        "trendRank": "Her etkinlik sonunda sıran",
+        "metricLabel": "Eğilim ölçütü",
+        "metricScore": "Skor",
+        "metricRank": "Kişisel sıra",
+        "chartLabel": "Eğilim grafiği: {name}",
+        "best": "En iyi",
+        "average": "Ortalama",
+        "latest": "Son",
+        "change": "Değişim",
+        "events": "{count, plural, one {{amount} etkinlik} other {{amount} etkinlik}}",
+        "changeVs": "{month} ayına göre",
+        "changePercentVs": "{month} ayına göre %{percent}",
+        "noPrevious": "Önceki sonuç yok",
+        "noTrend": "Bu etkinlikte grafiğe dökülecek skor ya da sıra yok. Sonuçları aşağıdaki listede."
+    },
+    "cycles": {
+        "title": "Ana Etkinlik döngüleri",
+        "hint": "SvS, Alliance Showdown ve King of Icefield sabit bir döngüyle çalışır. Sıradaki başlangıcı bir kez ayarla, takvimde tekrarlanırlar.",
+        "next": "Sıradaki {date}, tekrar: {repeat}",
+        "notSet": "Ayarlanmadı",
+        "set": "Döngüyü ayarla",
+        "edit": "Döngüyü düzenle"
+    }
+}

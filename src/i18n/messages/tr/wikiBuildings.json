@@ -1,0 +1,71 @@
+{
+    "line": "{buildings} bina ve {facilities} tesis. Yalnızca başvuru, burada şefine hiçbir şey kaydedilmez.",
+    "list": {
+        "heading": "Binalar ve tesisler",
+        "searchLabel": "Ara",
+        "searchPlaceholder": "Bina ve tesis ara",
+        "categoryLabel": "Kategori",
+        "categories": {
+            "all": "Tümü",
+            "Military": "Askeri",
+            "Inner City": "İç Şehir",
+            "Entertainment": "Eğlence"
+        },
+        "buildingMeta": "{category}, maks. {maxLevel}, {count, plural, one {{amount} seviye} other {{amount} seviye}}",
+        "empty": "Aramanla eşleşen bina yok.",
+        "categoryOption": "{category} {count}"
+    },
+    "detail": {
+        "levelsTotal": "Toplam seviye",
+        "standardLevels": "Standart seviyeler, 1 - 30",
+        "fireCrystalLevels": "Fire Crystal seviyeleri, 30-1 → FC 10",
+        "maxLevel": "Son seviye etiketi",
+        "rangeLabel": "Seviye aralığı",
+        "rangeOption": "{range} {count}",
+        "ranges": {
+            "all": "Tümü",
+            "standard": "1 - 30",
+            "fc3": "30-1 → FC 3",
+            "fc5": "FC 3-1 → FC 5",
+            "fc8": "FC 5-1 → FC 8",
+            "fc10": "FC 8-1 → FC 10"
+        },
+        "tableLabel": "Seviyeler: {name}",
+        "levels": "Seviyeler",
+        "totalTitle": "Toplam gereken, {range}, {count, plural, one {{amount} seviye} other {{amount} seviye}}",
+        "totalTime": "Toplam inşa süresi"
+    },
+    "columns": {
+        "level": "Seviye",
+        "cost": "Maliyet",
+        "time": "Süre",
+        "power": "Güç",
+        "requires": "Gereksinim",
+        "stats": {
+            "rallyCapacity": "Rally kapasitesi",
+            "marchCapacity": "Yürüyüş kapasitesi",
+            "trainingCapacity": "Eğitim kapasitesi",
+            "trainingSpeedBonusPercent": "Eğitim hızı",
+            "researchSpeedBonusPercent": "Araştırma hızı",
+            "infirmaryCapacity": "Revir kapasitesi",
+            "allyAssists": "İttifak yardımları",
+            "allyHelpTimeSeconds": "İttifak yardım süresi",
+            "reinforceCapacity": "Takviye kapasitesi",
+            "storehouseCapacity": "Depo kapasitesi",
+            "barricadeDurability": "Barikat dayanıklılığı",
+            "troopDeploymentCapacity": "Sevk kapasitesi"
+        }
+    },
+    "cells": {
+        "none": "Yok",
+        "requirement": "{building} {level}",
+        "pricePerItem": "tanesi {price}",
+        "percent": "%{value}"
+    },
+    "facilities": {
+        "heading": "Tesisler",
+        "meta": "Seviye, güç ya da inşa maliyeti yok",
+        "unlock": "Furnace seviye {level} olunca açılır",
+        "empty": "Aramanla eşleşen tesis yok."
+    }
+}

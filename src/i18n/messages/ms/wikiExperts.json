@@ -1,0 +1,70 @@
+{
+    "line": "{experts} pakar dan {relationships} peringkat hubungan. Rujukan sahaja, tiada apa di sini disimpan.",
+    "roster": {
+        "title": "Pakar",
+        "count": "{shown} daripada {total} pakar",
+        "search": "Cari",
+        "searchPlaceholder": "Cari {count} pakar mengikut nama, gelaran atau kepakaran",
+        "generation": "Generasi",
+        "all": "Semua",
+        "empty": "Tiada pakar sepadan dengan penapis ini.",
+        "generationValue": "Generasi {generation}",
+        "unlock": "Buka kunci: hari pelayan {days}",
+        "unlockUnknown": "Buka kunci:",
+        "unreleased": "Belum dikeluarkan"
+    },
+    "detail": {
+        "subline": "{title} · kepakaran {specialty} · generasi {generation}",
+        "baseBonus": "Asas: {bonus}",
+        "bonus": "{stat} {value}",
+        "percentValue": "{value}%",
+        "skills": "Kemahiran",
+        "talent": "Talent, tahap maks {level}",
+        "affinityLevels": "Tahap afiniti",
+        "baseBonusLabel": "Bonus asas",
+        "unlock": "Dibuka pada hari pelayan {days}"
+    },
+    "skills": {
+        "title": "Kemahiran dan talent",
+        "columns": {
+            "skill": "Kemahiran",
+            "max": "Maks",
+            "effect": "Kesan",
+            "books": "Buku ke maks",
+            "exp": "EXP ke maks"
+        },
+        "talent": "{name} (talent)",
+        "none": "Tiada",
+        "selectHint": "Pilih kemahiran untuk melihat butiran."
+    },
+    "skillLevels": {
+        "title": "Jadual tahap kemahiran",
+        "meta": "{name}, tahap 1 hingga {max}",
+        "level": "Tahap {level}",
+        "columns": {
+            "level": "Tahap",
+            "exp": "EXP",
+            "books": "Buku"
+        },
+        "none": "Tiada"
+    },
+    "affinity": {
+        "title": "Tahap afiniti",
+        "level": "Tahap {level}",
+        "columns": {
+            "level": "Tahap",
+            "required": "Afiniti diperlukan",
+            "bonus": "Bonus statistik",
+            "affinityPower": "Kuasa afiniti",
+            "levelPower": "Kuasa tahap",
+            "advancement": "Kos kenaikan pangkat"
+        },
+        "noAdvancement": "Tiada kenaikan pangkat",
+        "startNote": "Afiniti diperlukan untuk tahap 1 ialah nilai permulaan {start}. Dari tahap 2 jumlahnya ialah kos untuk mencapai tahap itu."
+    },
+    "relationships": {
+        "title": "Peringkat hubungan",
+        "fromLevel": "dari tahap {level}"
+    },
+    "recordLine": "{title}, kepakaran {specialty}, generasi {generation}. Rujukan sahaja, tiada apa di sini disimpan."
+}

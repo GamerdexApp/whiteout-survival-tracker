@@ -1,0 +1,63 @@
+{
+    "page": {
+        "title": "VIP"
+    },
+    "view": {
+        "sublineKnown": "{chief} · {details} · VIP {level} XP {xp}",
+        "sublineUnknown": "{chief} · {details} · ยังไม่ได้ตั้ง VIP"
+    },
+    "input": {
+        "title": "VIP ของคุณ",
+        "enterAs": "ใส่ VIP เป็น",
+        "modeXp": "XP รวม",
+        "modeLevel": "เลเวล VIP",
+        "xpLabel": "VIP XP รวม",
+        "xpHint": "XP จำนวนเต็มตั้งแต่ 0 ถึง {max}",
+        "levelLabel": "เลเวล VIP",
+        "notSet": "ยังไม่ได้ตั้ง",
+        "levelHint": "เลเวลจะตั้ง XP รวมเป็นยอดรวมต่ำสุดของเลเวลนั้น พิมพ์ XP จริงเพื่อให้แม่นยำ",
+        "reached": "เลเวลที่ถึง",
+        "levelName": "VIP {level}",
+        "unknown": "ไม่ทราบ"
+    },
+    "progress": {
+        "label": "ความคืบหน้าภายใน VIP {level}",
+        "toNext": "อีก {xp} XP ถึง VIP {level}",
+        "percent": "{percent}%",
+        "range": "XP รวม {from} ถึง {to} สำหรับเลเวลนี้",
+        "estimate": "ค่าประมาณ ใส่เป็นเลเวล XP จึงเป็นยอดรวมต่ำสุดของ VIP {level} พิมพ์ XP จริงเพื่อค่าที่แม่นยำ",
+        "maxLevel": "เลเวลสูงสุด",
+        "maxHint": "VIP {level} คือเลเวลสุดท้าย"
+    },
+    "perks": {
+        "title": "สิ่งที่ VIP {level} ให้",
+        "subtitle": "ยอดรวมที่เลเวลนี้ ไม่ใช่ส่วนที่เปลี่ยนจากเลเวลก่อน",
+        "unknown": "ใส่ VIP ของคุณเพื่อดูสิ่งที่ได้"
+    },
+    "next": {
+        "title": "VIP {level} เพิ่ม",
+        "subtitle": "เทียบกับ VIP {from}",
+        "new": "ใหม่",
+        "was": "เดิม {value}",
+        "maxLevel": "เลเวลสูงสุด ไม่มีเลเวลถัดไปให้ดูตัวอย่าง",
+        "unknown": "ใส่ VIP ของคุณเพื่อดูเลเวลถัดไป"
+    },
+    "table": {
+        "title": "ทั้ง {count} เลเวล รวม {total} XP",
+        "level": "เลเวล",
+        "xpFromLast": "XP จากเลเวลก่อน",
+        "totalXp": "XP รวม",
+        "bonuses": "โบนัสใหม่หรือสูงขึ้น",
+        "state": "สถานะ",
+        "xpFromLastMobile": "XP จากเลเวลก่อน {xp}",
+        "totalMobile": "รวม {xp}",
+        "unknown": "ไม่ทราบ",
+        "states": {
+            "reached": "ถึงแล้ว",
+            "current": "ปัจจุบัน",
+            "ahead": "ข้างหน้า",
+            "unknown": "ไม่ทราบ"
+        },
+        "levelName": "VIP {level}"
+    }
+}

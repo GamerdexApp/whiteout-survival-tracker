@@ -1,0 +1,303 @@
+{
+    "title": "Penyelidikan",
+    "unknown": "Tidak diketahui",
+    "nodeCount": "{count, plural, other {{amount} nod}}",
+    "jobTitle": "{name}, tahap {from} ke {to}",
+    "tabs": {
+        "growth": "Growth",
+        "economy": "Economy",
+        "battle": "Battle",
+        "war-academy-troops": "War Academy T11",
+        "t12-infantry": "Infantry T12",
+        "t12-marksman": "Marksman T12",
+        "t12-lancer": "Lancer T12"
+    },
+    "tier": {
+        "plain": "Peringkat {tier}",
+        "troopLine": "{line} T{tier}"
+    },
+    "requirement": {
+        "yours": "Anda ada {level}",
+        "notBuilt": "Belum dibina",
+        "researchLevel": "{name} tahap {level}",
+        "yoursLevel": "Anda ada tahap {level}",
+        "notReleased": "{id} (belum dikeluarkan)"
+    },
+    "tabLock": {
+        "unknownAge": "Penyelidikan {tab} dibuka pada usia pelayan {days} hari. Usia anda tidak diketahui. Tambah tarikh mula pelayan dalam Sunting chief.",
+        "knownAge": "Penyelidikan {tab} dibuka pada usia pelayan {days} hari. Anda ada {yours}."
+    },
+    "option": {
+        "label": "{name}, {tab}, tahap {from} ke {to}",
+        "subtitle": "Tahap {from} ke tahap {to}, tab {tab}",
+        "busy": "Sibuk: {name} tahap {level}, {timeLeft}"
+    },
+    "nodeCard": {
+        "allResearched": "Semua tahap diselidik",
+        "nextTime": "Masa tahap {level}: {time}",
+        "power": {
+            "researched": "{power} diselidik",
+            "next": "+{power} tahap seterusnya",
+            "some": "Kuasa {parts}",
+            "none": "Kuasa 0"
+        },
+        "maxed": "Maksimum. {bonus}",
+        "noBonus": "Tiada bonus dalam data",
+        "level": "Tahap {level} / {max}",
+        "goal": "Matlamat {goal}",
+        "noGoal": "Tiada matlamat",
+        "progress": "Kemajuan {name}",
+        "lockedByTab": "Terkunci: {reason}",
+        "lockedByRequirement": "Terkunci: memerlukan {requirement}",
+        "placeholder": "Tempat letak. Kos dan bonus kosong dalam pakej.",
+        "needsFirst": "Perlu {names} dahulu",
+        "researching": "{name} sedang diselidik",
+        "levelStepper": "Tahap {name}",
+        "detailsOf": "Butiran {name}",
+        "details": "Butiran"
+    },
+    "queuesStrip": {
+        "title": "Baris gilir penyelidikan",
+        "note": "Growth, Economy dan Battle berkongsi satu baris gilir. T11 dan T12 menggunakan baris gilir War Academy.",
+        "idle": "Satu penyelidikan pada satu masa. Tekan Mula naik taraf untuk memulakannya."
+    },
+    "filters": {
+        "title": "Penapis",
+        "description": "Pilih apa yang ditunjukkan tab {tab}",
+        "reset": "Tetap semula",
+        "show": "Tunjuk {nodes}",
+        "tier": "Peringkat",
+        "statusLabel": "Status",
+        "troopLine": "Barisan tentera",
+        "orderLabel": "Susunan",
+        "notSaved": "Penapis tidak disimpan.",
+        "all": "Semua",
+        "status": {
+            "all": "Semua",
+            "progress": "Sedang berjalan",
+            "goal": "Ada matlamat",
+            "maxed": "Maksimum",
+            "locked": "Terkunci",
+            "notStarted": "Belum bermula"
+        },
+        "order": {
+            "game": "Susunan permainan",
+            "name": "Nama, A hingga Z",
+            "level": "Tahap, tertinggi dahulu"
+        }
+    },
+    "massSet": {
+        "stop": "{level} daripada {max}",
+        "title": "Tetapan pukal, {tab}",
+        "description": "Pilih nod dan tahap. Semua yang sebelumnya dalam pokok naik ke maksimum.",
+        "cancel": "Batal",
+        "set": "Tetapkan {nodes}",
+        "node": "Nod",
+        "level": "Tahap",
+        "levelToSet": "Tahap untuk ditetapkan",
+        "whatChanges": "Apa yang berubah dalam tab {tab}",
+        "nothingChanges": "Tiada yang berubah. Setiap nod di sini sudah pada atau melebihi tahap ini.",
+        "change": "{from} ke {to}",
+        "hidden": "dan {amount} lagi nod sebelumnya",
+        "alreadyMax": "{count, plural, other {{amount} nod sebelumnya}} sudah pada maksimum dan kekal seperti sedia ada. Nod yang kemudian dalam pokok tidak disentuh. Tahap yang sudah lebih tinggi kekal.",
+        "blockersTitle": "Sesetengah nod memerlukan bangunan dahulu.",
+        "blocker": "{name} memerlukan {building}",
+        "blockersMore": " dan {amount} lagi",
+        "blockers": "{list}{more}. Pilih nod yang lebih awal atau naikkan bangunan pada halaman Bangunan.",
+        "footnote": "Tetapan pukal hanya mengubah tahap tersimpan tab ini. Ia tidak pernah menurunkan tahap. Matlamat tidak diubah."
+    },
+    "nodeFlyout": {
+        "fallbackTitle": "Penyelidikan",
+        "description": "{category}, peringkat {tier}, {levels} tahap",
+        "close": "Tutup",
+        "unknown": "Tidak diketahui",
+        "levelOf": "Tahap {level} daripada {max}",
+        "status": {
+            "notStarted": "belum bermula",
+            "maxed": "maksimum",
+            "inProgress": "sedang berjalan"
+        },
+        "goal": "Matlamat {goal}",
+        "noGoal": "Tiada matlamat",
+        "openPlan": "Buka Rancang",
+        "maxLevel": {
+            "title": "Tahap maksimum",
+            "nothingLeft": "Tiada lagi untuk diselidik.",
+            "noBonus": "Tiada bonus dalam data."
+        },
+        "placeholder": {
+            "title": "Tempat letak",
+            "description": "Nod ini belum mempunyai kos dan bonus dalam pakej. Masa dan kos penyelidikan menunjukkan Tidak diketahui."
+        },
+        "upcoming": {
+            "first": "Tahap pertama",
+            "after": "Tahap seterusnya selepas {level}",
+            "heads": {
+                "level": "Tahap",
+                "bonus": "Bonus",
+                "time": "Masa",
+                "power": "Kuasa"
+            },
+            "goalBadge": "Matlamat",
+            "noBonus": "Tiada",
+            "shaded": "Baris berlorek ialah tahap antara tahap anda dan matlamat anda."
+        },
+        "cost": {
+            "title": "Kos tahap seterusnya",
+            "level": "Lv"
+        },
+        "total": {
+            "title": "Jumlah ke matlamat anda, tahap {level} ke {goal}",
+            "knownTime": "Masa penyelidikan diketahui",
+            "power": "Kuasa",
+            "missingTimes": "{count, plural, other {{amount} tahap}} tiada masa dalam pakej dan dikira sebagai 0 di sini."
+        },
+        "requirements": {
+            "title": "Keperluan untuk tahap {level}",
+            "none": "Tiada keperluan.",
+            "met": "Dipenuhi",
+            "notMet": "Belum dipenuhi",
+            "later": "Tahap kemudian memerlukan: {list}."
+        }
+    },
+    "tree": {
+        "legend": {
+            "max": "Maks",
+            "inProgress": "Sedang berjalan",
+            "notStarted": "Belum bermula",
+            "locked": "Terkunci"
+        },
+        "pillMax": "Maks {max}",
+        "pillLevel": "Lv {level} daripada {max}",
+        "region": "Pokok penyelidikan {tab}",
+        "openNode": "{name}, {pill}. Buka butiran"
+    },
+    "plan": {
+        "title": "Rancang Penyelidikan",
+        "description": "Sumber, masa dan kuasa dari tahap semasa ke matlamat",
+        "saved": "Pelan disimpan {date}",
+        "close": "Tutup",
+        "save": "Simpan pelan",
+        "goals": "Matlamat, {nodes}",
+        "noGoals": "Belum ada matlamat. Tambah nod penyelidikan di atas, kemudian pilih tahap yang anda mahu dicapai.",
+        "goalsHint": "Tahap semasa ialah yang ada pada halaman. Ubah di sana. Matlamat hanya boleh dibaca pada halaman dan ditetapkan di sini.",
+        "failed": "Pelan tidak dapat dikira.",
+        "timeNote": "Pelan mengambil {time} selepas bonus kelajuan {percent}%. Stok anda: Penyelidikan {research} min, Am {general} min. Pecutan Am dikira untuk penyelidikan.",
+        "percent": "{value}%",
+        "percentPlus": "+{value}%",
+        "appointment": {
+            "none": "Tiada",
+            "regular": "Biasa",
+            "supreme": "Tertinggi"
+        },
+        "add": {
+            "title": "Tambah nod penyelidikan",
+            "none": "Setiap nod sudah ada dalam pelan atau pada tahap tertingginya.",
+            "select": "Nod penyelidikan untuk ditambah",
+            "button": "Tambah penyelidikan"
+        },
+        "speed": {
+            "title": "Kelajuan penyelidikan",
+            "readOnly": "Baca sahaja",
+            "carriedOver": "Dibawa daripada halaman Bonus.",
+            "turnedOff": "Dimatikan dalam Tetapan, di bawah Guna jumlah Bonus saya.",
+            "openBonuses": "Buka Bonus",
+            "stateBuff": "Buff State",
+            "vicePresident": "Naib presiden",
+            "total": "Jumlah kelajuan penyelidikan"
+        },
+        "goal": {
+            "level": "Tahap {level}",
+            "to": "ke",
+            "label": "Matlamat {name}",
+            "remove": "Buang {name} daripada pelan"
+        },
+        "result": {
+            "title": "Hasil, {steps} langkah",
+            "powerGained": "Kuasa diperoleh",
+            "speedupMinutes": "Minit pecutan diperlukan",
+            "baseTime": "Masa asas",
+            "timeWithBonus": "Masa dengan bonus {percent}%",
+            "stepsWithoutTime": "{count, plural, other {{amount} langkah}} tiada masa dalam pakej dan dikira sebagai 0 saat.",
+            "stepCount": "{count, plural, other {{amount} langkah}}",
+            "buildingRequirements": "Keperluan bangunan",
+            "unmet": "Prasyarat belum dipenuhi",
+            "unmetNone": "Tiada untuk matlamat ini.",
+            "unmetItem": "{name} tahap {level} memerlukan {requires} tahap {requiresLevel}"
+        },
+        "export": {
+            "button": "Eksport ke Acara Utama",
+            "empty": "Tambah matlamat ke pelan untuk mengeksportnya.",
+            "speedupMinutes": "Minit pecutan penyelidikan",
+            "power": "Kuasa diperoleh melalui penyelidikan",
+            "computed": "Dikira oleh aplikasi daripada hasil pelan.",
+            "unscored": "Tiada acara yang memarkahkan {name}."
+        }
+    },
+    "view": {
+        "ofTotal": "{count} daripada {total}",
+        "undo": "Buat asal",
+        "massSetApplied": {
+            "title": "Tetapan pukal digunakan",
+            "message": "{nodes} dikemas kini."
+        },
+        "started": {
+            "title": "Penyelidikan bermula",
+            "message": "{name}, tahap {from} ke {to}."
+        },
+        "manage": {
+            "slotLabel": "{queue}, {category}",
+            "finishText": "Siapkan naik taraf menetapkan {name} kepada tahap {level}, membebaskan baris gilir {queue} dan menambah naik taraf ke Sejarah anda. Apabila masa tinggal sifar, nod dan kad baris gilir menyatakan Sedia untuk disiapkan. Tiada apa yang siap sendiri, kerana anda mungkin telah menggunakan pecutan."
+        },
+        "finished": {
+            "title": "{name} diselidik",
+            "message": "Kini tahap {level}. Ditambah ke Sejarah."
+        },
+        "cancelled": {
+            "title": "Penyelidikan {name} dibatalkan",
+            "message": "Tahap kekal seperti sebelumnya. Betulkan stok anda pada Sumber jika perlu."
+        },
+        "subline": {
+            "researchCenter": "Research Center {level}",
+            "warAcademy": "War Academy {level}"
+        },
+        "stats": {
+            "maxed": "Nod maksimum, {percent}% daripada pokok",
+            "power": "Kuasa penyelidikan, kuasa setiap tahap yang diselidik",
+            "withoutTimeNone": "Tanpa masa penyelidikan, setiap tahap ada satu",
+            "withoutTimeSome": "Tanpa masa penyelidikan, dipaparkan sebagai Tidak diketahui",
+            "locked": "Dikunci oleh usia pelayan atau keperluan"
+        },
+        "tabLockedNote": "{reason} Anda masih boleh menetapkan matlamat dalam Rancang.",
+        "lockedByRequirement": "{count} daripada {total} nod dalam tab ini dikunci oleh keperluan.",
+        "search": {
+            "label": "Cari nod",
+            "placeholder": "Cari nod mengikut nama atau bonus"
+        },
+        "massSet": "Tetapan pukal",
+        "layout": {
+            "label": "Susun atur",
+            "grid": "Grid",
+            "tree": "Pokok"
+        },
+        "plan": "Rancang",
+        "status": {
+            "tree": "{count} nod dalam pokok {tab}. Kuasa penyelidikan dalam tab ini: {power}. Tatal untuk menggerakkan. Nod yang tidak sepadan dengan carian atau penapis dimalapkan.",
+            "grid": "Menunjukkan {shown} daripada {count} nod {tab}. Kuasa penyelidikan dalam tab ini: {power}. Matlamat hanya boleh dibaca di sini dan ditetapkan dalam Rancang."
+        },
+        "empty": {
+            "title": "Tiada nod sepadan",
+            "description": "Ubah carian atau tetapkan semula penapis untuk melihat setiap nod.",
+            "reset": "Tetapkan semula carian dan penapis"
+        },
+        "start": {
+            "description": "Tandakan penyelidikan sedang dinaik taraf",
+            "selectLabel": "Penyelidikan untuk dinaik taraf",
+            "selectHelp": "Hanya penyelidikan yang boleh anda mulakan sekarang disenaraikan. Penyelidikan terkunci, maksimum dan sedang berjalan ditinggalkan. Penyelidikan Growth, Economy atau Battle menggunakan baris gilir Penyelidikan. Penyelidikan T11 atau T12 menggunakan baris gilir War Academy.",
+            "timeLabel": "Masa penyelidikan",
+            "speedLabel": "Kelajuan penyelidikan",
+            "slotLabel": "Baris gilir",
+            "slotHelp": "Satu penyelidikan pada satu masa dalam setiap baris gilir. Apabila baris gilir sibuk, kad ini menyatakan bila ia bebas."
+        }
+    }
+}

@@ -1,0 +1,63 @@
+{
+    "page": {
+        "title": "VIP"
+    },
+    "view": {
+        "sublineKnown": "{chief} · {details} · VIP {level} مع {xp} XP",
+        "sublineUnknown": "{chief} · {details} · لم يُضبط VIP"
+    },
+    "input": {
+        "title": "VIP الخاص بك",
+        "enterAs": "إدخال VIP على شكل",
+        "modeXp": "إجمالي XP",
+        "modeLevel": "مستوى VIP",
+        "xpLabel": "إجمالي VIP XP",
+        "xpHint": "XP عدد صحيح من 0 إلى {max}.",
+        "levelLabel": "مستوى VIP",
+        "notSet": "غير محدد",
+        "levelHint": "المستوى يضبط إجمالي XP على أدنى إجمالي لذلك المستوى. اكتب XP الحقيقي للدقة.",
+        "reached": "المستوى المحقق",
+        "levelName": "VIP {level}",
+        "unknown": "غير معروف"
+    },
+    "progress": {
+        "label": "التقدم داخل VIP {level}",
+        "toNext": "{xp} XP حتى VIP {level}",
+        "percent": "{percent}%",
+        "range": "من {from} إلى {to} إجمالي XP لهذا المستوى.",
+        "estimate": "تقدير. أُدخل المستوى، لذا XP هو أدنى إجمالي لـ VIP {level}. اكتب XP الحقيقي للحصول على قيمة دقيقة.",
+        "maxLevel": "أقصى مستوى",
+        "maxHint": "VIP {level} هو المستوى الأخير."
+    },
+    "perks": {
+        "title": "ما يمنحه VIP {level}",
+        "subtitle": "الإجماليات عند هذا المستوى، وليس التغيير عن المستوى السابق.",
+        "unknown": "أدخل VIP لترى ما يمنحه."
+    },
+    "next": {
+        "title": "ما يضيفه VIP {level}",
+        "subtitle": "مقارنة بـ VIP {from}.",
+        "new": "جديد",
+        "was": "كان {value}",
+        "maxLevel": "أقصى مستوى. لا يوجد مستوى آخر للمعاينة.",
+        "unknown": "أدخل VIP لترى المستوى التالي."
+    },
+    "table": {
+        "title": "كل المستويات البالغ عددها {count}، بإجمالي {total} XP",
+        "level": "المستوى",
+        "xpFromLast": "XP من السابق",
+        "totalXp": "إجمالي XP",
+        "bonuses": "مزايا جديدة أو أعلى",
+        "state": "الحالة",
+        "xpFromLastMobile": "XP من السابق {xp}",
+        "totalMobile": "الإجمالي {xp}",
+        "unknown": "غير معروف",
+        "states": {
+            "reached": "تم بلوغه",
+            "current": "الحالي",
+            "ahead": "قادم",
+            "unknown": "غير معروف"
+        },
+        "levelName": "VIP {level}"
+    }
+}

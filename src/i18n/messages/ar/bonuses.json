@@ -1,0 +1,115 @@
+{
+    "title": "المزايا",
+    "all": "الكل",
+    "list": {
+        "separator": "، ",
+        "andLast": "{rest} و{last}"
+    },
+    "sourceTypes": {
+        "account": "الحساب",
+        "hero": "الأبطال",
+        "expert": "الخبراء",
+        "research": "الأبحاث",
+        "allianceTech": "تقنيات التحالف",
+        "allianceFacility": "مرافق التحالف",
+        "alliancePrestige": "مباني هيبة التحالف",
+        "vip": "VIP",
+        "building": "المباني",
+        "skin": "المظاهر",
+        "tundraAlbum": "ألبوم التندرا",
+        "collection": "المجموعة",
+        "decoration": "جزيرتي",
+        "treeOfLife": "جزيرتي",
+        "castleAppointment": "منصب القلعة",
+        "pet": "الحيوانات الأليفة",
+        "chiefGear": "معدات القائد",
+        "chiefGearSet": "ميزة طقم معدات القائد",
+        "chiefCharm": "تمائم القائد",
+        "chiefOrder": "أوامر القائد",
+        "presidentSkill": "مهارات الرئيس",
+        "marchQueuePack": "حزمة طابور المسيرة"
+    },
+    "unit": {
+        "percent": "{value}%",
+        "hours": "{value} س",
+        "seconds": "{value} ث",
+        "plain": "{value}"
+    },
+    "view": {
+        "subline": "{name} · كل ميزة مجمّعة من الصفحات الأخرى. هذه الصفحة لا تخزّن شيئًا.",
+        "tiles": {
+            "stats": "الإحصائيات في النتيجة",
+            "groups": "المجموعات التي لها إحصائيات",
+            "sources": "أنواع المصادر التي تمنح شيئًا"
+        },
+        "pending": {
+            "title": "لم تُحتسب كل المصادر بعد.",
+            "text": "يُقرأ كل مصدر أدناه من الصفحة التي تخزنه. إلى أن تُبنى هذه الصفحات لا تضيف شيئًا: {pending}. {unstored} غير مخزنة في أي صفحة بعد."
+        },
+        "rulesTitle": "كيف تُحتسب الأرقام",
+        "rules": {
+            "affinity": {
+                "title": "ألفة الخبير",
+                "text": "يمنح الخبير ميزة أساسية تنمو مع مستوى الألفة. عند المستويات 10 و20 حتى 100 يجب أن يرتقي الخبير. وإلى ذلك الحين تُحتسب ميزة المستوى السابق."
+            },
+            "albums": {
+                "title": "الألبومات تُحتسب عند اكتمالها",
+                "text": "لا يمنح ألبوم التندرا تعزيزه إلا عند إنجاز الألغاز التسعة كلها."
+            },
+            "pets": {
+                "title": "الحيوانات الأليفة تستخدم القيمة المصقولة",
+                "text": "يحتسب كل حيوان أليف قيمته العادية أو المصقولة، بحسب ما تضبطه في صفحة الحيوانات الأليفة."
+            },
+            "noNumber": {
+                "title": "بلا رقم، لا يُحتسب",
+                "text": "المصدر الذي ليس له رقم في البيانات لا يضيف شيئًا. ولا يظهر على أنه 0."
+            },
+            "apart": {
+                "title": "تُحفظ منفصلة",
+                "text": "لا تُجمع القيم النسبية والثابتة معًا أبدًا. إحصائيات المشاة والفرسان والرماة منفصلة عن إحصائيات القوات."
+            },
+            "time": {
+                "title": "إحصائيات الوقت",
+                "text": "Construction Speed Boost هو الساعات الموفَّرة لكل بناء. Ally Help Time بالثواني. وتعرض كل واحدة وحدتها."
+            }
+        },
+        "search": {
+            "label": "بحث في الإحصائيات",
+            "placeholder": "بحث في الإحصائيات"
+        },
+        "views": {
+            "label": "العرض",
+            "stat": "حسب الإحصائية",
+            "source": "حسب المصدر"
+        },
+        "empty": {
+            "noBonusesTitle": "لا توجد مزايا بعد",
+            "noBonusesDescription": "تظهر المزايا كلما اكتملت الصفحات التي تخزنها.",
+            "noMatchTitle": "لا توجد إحصائيات مطابقة",
+            "noMatchDescription": "غيّر البحث أو المجموعة."
+        },
+        "statCount": "{count, plural, zero {{amount} إحصائية} one {{amount} إحصائية} two {{amount} إحصائيتان} few {{amount} إحصائيات} many {{amount} إحصائية} other {{amount} إحصائية}}",
+        "sourceCount": "{count, plural, zero {{amount} مصدر} one {{amount} مصدر} two {{amount} مصدران} few {{amount} مصادر} many {{amount} مصدرًا} other {{amount} مصدر}}",
+        "columns": {
+            "statAndSource": "الإحصائية والمصدر",
+            "sourceType": "نوع المصدر",
+            "counted": "المحتسب"
+        }
+    },
+    "eventRules": {
+        "title": "قواعد تعزيزات الفعاليات",
+        "intro": "توضح أنواع المزايا التي تبقى سارية أثناء الفعالية. هذه قواعد وليست أرقامًا، لذا لا يُضاف شيء هنا إلى الإجماليات أعلاه.",
+        "event": "الفعالية",
+        "columns": {
+            "cityBonusWarsBuffs": "ميزة المدينة",
+            "deploymentCapacity": "الانتشار",
+            "territoryBonuses": "الأراضي",
+            "marchAccelerator": "تسريع المسيرة"
+        },
+        "applicability": {
+            "yes": "نعم",
+            "no": "لا",
+            "partial": "جزئي"
+        }
+    }
+}

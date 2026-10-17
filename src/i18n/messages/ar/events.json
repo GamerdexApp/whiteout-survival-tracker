@@ -1,0 +1,373 @@
+{
+    "page": {
+        "title": "الفعاليات",
+        "subline": "{chief} · {details}"
+    },
+    "tabs": {
+        "label": "عروض الفعاليات",
+        "calendar": "التقويم",
+        "mine": "فعالياتي",
+        "history": "سجل الفعاليات"
+    },
+    "actions": {
+        "addDetails": "إضافة تفاصيل فعالية",
+        "addEvent": "إضافة فعالية"
+    },
+    "categories": {
+        "alliance": "التحالف",
+        "solo": "فردية",
+        "rookie": "المبتدئين",
+        "holiday": "الأعياد"
+    },
+    "gives": {
+        "rewards": "مكافآت فقط",
+        "personal": "ترتيب شخصي",
+        "alliance": "ترتيب التحالف",
+        "both": "الترتيبان معًا"
+    },
+    "weekdays": {
+        "short": {
+            "sunday": "أحد",
+            "monday": "اثنين",
+            "tuesday": "ثلاثاء",
+            "wednesday": "أربعاء",
+            "thursday": "خميس",
+            "friday": "جمعة",
+            "saturday": "سبت"
+        },
+        "initial": {
+            "sunday": "ح",
+            "monday": "ن",
+            "tuesday": "ث",
+            "wednesday": "ر",
+            "thursday": "خ",
+            "friday": "ج",
+            "saturday": "س"
+        }
+    },
+    "months": {
+        "january": "يناير",
+        "february": "فبراير",
+        "march": "مارس",
+        "april": "أبريل",
+        "may": "مايو",
+        "june": "يونيو",
+        "july": "يوليو",
+        "august": "أغسطس",
+        "september": "سبتمبر",
+        "october": "أكتوبر",
+        "november": "نوفمبر",
+        "december": "ديسمبر"
+    },
+    "monthsShort": {
+        "january": "يناير",
+        "february": "فبراير",
+        "march": "مارس",
+        "april": "أبريل",
+        "may": "مايو",
+        "june": "يونيو",
+        "july": "يوليو",
+        "august": "أغسطس",
+        "september": "سبتمبر",
+        "october": "أكتوبر",
+        "november": "نوفمبر",
+        "december": "ديسمبر"
+    },
+    "format": {
+        "weekdayDay": "{weekday}، {date}",
+        "utcTime": "{time} UTC",
+        "dateTime": "{date}، {time}",
+        "range": "من {start} إلى {end}",
+        "length": {
+            "minutes": "{count, plural, zero {{amount} د} one {{amount} د} two {{amount} د} few {{amount} د} many {{amount} د} other {{amount} د}}",
+            "hours": "{count, plural, zero {{amount} ساعة} one {{amount} ساعة} two {{amount} ساعتان} few {{amount} ساعات} many {{amount} ساعة} other {{amount} ساعة}}",
+            "days": "{count, plural, zero {{amount} يوم} one {{amount} يوم} two {{amount} يومان} few {{amount} أيام} many {{amount} يومًا} other {{amount} يوم}}",
+            "weeks": "{count, plural, zero {{amount} أسبوع} one {{amount} أسبوع} two {{amount} أسبوعان} few {{amount} أسابيع} many {{amount} أسبوعًا} other {{amount} أسبوع}}",
+            "months": "{count, plural, zero {{amount} شهر} one {{amount} شهر} two {{amount} شهران} few {{amount} أشهر} many {{amount} شهرًا} other {{amount} شهر}}"
+        }
+    },
+    "repeat": {
+        "none": "لا يتكرر",
+        "weekly": "أسبوعيًا في {days}",
+        "weeklyAny": "كل أسبوع",
+        "every": {
+            "hours": "{count, plural, zero {كل {amount} ساعة} one {كل ساعة} two {كل {amount} ساعتين} few {كل {amount} ساعات} many {كل {amount} ساعة} other {كل {amount} ساعة}}",
+            "days": "{count, plural, zero {كل {amount} يوم} one {كل يوم} two {كل {amount} يومين} few {كل {amount} أيام} many {كل {amount} يومًا} other {كل {amount} يوم}}",
+            "weeks": "{count, plural, zero {كل {amount} أسبوع} one {كل أسبوع} two {كل {amount} أسبوعين} few {كل {amount} أسابيع} many {كل {amount} أسبوعًا} other {كل {amount} أسبوع}}",
+            "months": "{count, plural, zero {كل {amount} شهر} one {كل شهر} two {كل {amount} شهرين} few {كل {amount} أشهر} many {كل {amount} شهرًا} other {كل {amount} شهر}}"
+        }
+    },
+    "empty": {
+        "title": "لا توجد فعاليات بعد",
+        "description": "أضف الفعاليات التي تلعبها. حدّد تاريخ البدء ووقته مرة واحدة، فيبقى التقويم وقائمة القادم محدّثين.",
+        "steps": {
+            "pick": {
+                "title": "اختر فعالية.",
+                "text": "اختر من الفعاليات الموجودة في بيانات اللعبة."
+            },
+            "start": {
+                "title": "حدّد موعد البدء.",
+                "text": "أدخل تاريخ الجولة القادمة ووقتها. بعض الفعاليات لها جولتان أو تستمر عدة أيام."
+            },
+            "roll": {
+                "title": "اتركها تدور.",
+                "text": "بعد انتهاء الجولة، يُملأ التاريخ التالي من قاعدة التكرار."
+            }
+        }
+    },
+    "calendar": {
+        "previous": "الشهر السابق",
+        "next": "الشهر التالي",
+        "today": "اليوم",
+        "zoneLabel": "المنطقة الزمنية",
+        "utc": "UTC",
+        "local": "وقتي",
+        "monthTitle": "{month} {year}",
+        "nameWithRun": "{name}، {run}",
+        "dayTail": "ي{day}",
+        "chipText": "{name} {tail}"
+    },
+    "upcoming": {
+        "title": "القادم",
+        "empty": "لا توجد جولات في الأيام الثلاثين القادمة.",
+        "now": "جارية الآن",
+        "today": "اليوم",
+        "tomorrow": "غدًا",
+        "inDays": "{count, plural, zero {خلال {amount} يوم} one {خلال {amount} يوم} two {خلال {amount} يومين} few {خلال {amount} أيام} many {خلال {amount} يومًا} other {خلال {amount} يوم}}",
+        "timeAndLength": "{time}، {length}"
+    },
+    "mine": {
+        "intro": "{count, plural, zero {{amount} فعالية.} one {{amount} فعالية.} two {{amount} فعاليتان.} few {{amount} فعاليات.} many {{amount} فعالية.} other {{amount} فعالية.}} بعد انتهاء الجولة، يتحدث تاريخ جولتها التالية تلقائيًا من قاعدة التكرار، فيعرض التقويم دائمًا ما هو قادم.",
+        "run": "الجولة",
+        "rangeLine": "{range}، {time}",
+        "shortLine": "{when}، {length}",
+        "repeat": "التكرار: {rule}",
+        "coreTag": "النتائج في الفعاليات الأساسية",
+        "coreLink": "فتح الفعاليات الأساسية",
+        "ended": "انتهت",
+        "logged": "سُجلت",
+        "edit": "تعديل",
+        "remove": "إزالة"
+    },
+    "toast": {
+        "removedTitle": "تمت إزالة {name}",
+        "removedMessage": "النتائج المحفوظة تبقى في سجل الفعاليات.",
+        "undo": "تراجع",
+        "resultSavedTitle": "تم حفظ النتيجة",
+        "resultSavedMessage": "أُضيفت الفعالية {name} إلى سجل الفعاليات."
+    },
+    "add": {
+        "title": "إضافة فعالية",
+        "description": "اختر فعالية من بيانات اللعبة",
+        "close": "إغلاق",
+        "searchLabel": "بحث في الفعاليات",
+        "searchPlaceholder": "بحث في {amount} فعالية",
+        "categoryLabel": "فئة الفعالية",
+        "all": "الكل",
+        "categoryTab": "{name}، {amount}",
+        "showing": "عرض {shown} من {total} فعالية. اختر واحدة لتحديد تاريخ بدئها ووقته.",
+        "none": "لا توجد فعاليات مطابقة لبحثك.",
+        "noDuration": "المدة غير موجودة في بيانات اللعبة",
+        "added": "مضافة",
+        "button": "إضافة",
+        "addNamed": "إضافة {name}",
+        "showMore": "عرض المزيد"
+    },
+    "schedule": {
+        "description": "حدّد موعد تشغيلها. تتحدث الجولات التالية تلقائيًا.",
+        "cancel": "إلغاء",
+        "add": "إضافة فعالية",
+        "save": "حفظ الجدول",
+        "howTitle": "كيف تعمل الفعالية",
+        "shape": {
+            "one": "يوم واحد",
+            "several": "عدة أيام",
+            "two": "جولتان في كل دورة"
+        },
+        "shapeHint": {
+            "one": "جولة واحدة مدتها يوم. غيّر المدة لجولة قصيرة بالدقائق أو الساعات.",
+            "several": "جولة واحدة تستمر عدة أيام.",
+            "two": "جولتان في كل دورة، مثل موسمين أو يومين من أيام الأسبوع. لكل جولة بدايتها ومدتها واسمها."
+        },
+        "runTitle": "الجولة {number}",
+        "runSingle": "الجولة",
+        "name": "الاسم",
+        "startDate": "تاريخ البدء",
+        "startTime": "وقت البدء (UTC)",
+        "length": "المدة",
+        "unit": "الوحدة",
+        "runUnits": {
+            "minutes": "دقائق",
+            "hours": "ساعات",
+            "days": "أيام"
+        },
+        "repeatTitle": "التكرار",
+        "repeatKind": {
+            "none": "لا يتكرر",
+            "every": "كل",
+            "weekly": "أسبوعيًا في أيام محددة"
+        },
+        "every": "كل",
+        "weekdays": "أيام الأسبوع",
+        "repeatUnits": {
+            "hours": "ساعات",
+            "days": "أيام",
+            "weeks": "أسابيع",
+            "months": "أشهر"
+        },
+        "gameSays": "بيانات اللعبة تقول: {text}",
+        "gameSaysNoRule": "بيانات اللعبة تقول: {text}",
+        "useSuggestion": "استخدام الاقتراح",
+        "everyError": "أدخل عددًا أكبر من 0.",
+        "givesTitle": "ما تمنحه الفعالية",
+        "givesHint": "مأخوذ من بيانات اللعبة. يمكنك تغييره. وهو يحدد ما يطلبه نموذج النتيجة.",
+        "previewTitle": "ما سيعرضه التقويم",
+        "previewEmpty": "أدخل تاريخًا ومدة صالحين لعرض الجولات.",
+        "previewShort": "{range}، {time}",
+        "previewNote": "عند انتهاء الجولة يتقدم تاريخها وفق قاعدة التكرار. يمكنك تعديل أي تاريخ."
+    },
+    "result": {
+        "title": "إضافة تفاصيل فعالية",
+        "description": {
+            "participation": "سجّل أنك شاركت وما حصلت عليه",
+            "milestones": "النقاط والأهداف التي بلغتها",
+            "ranking": "النتيجة والترتيب والأهداف التي بلغتها",
+            "tier": "فئة الدوري والمركز",
+            "waves": "الصعوبة والموجات والنقاط والمراتب",
+            "skipped": "سجّل أنك تخطيت هذه الجولة"
+        },
+        "cancel": "إلغاء",
+        "save": "حفظ النتيجة",
+        "noEvents": "أضف فعالية أولًا. يمكن تسجيل الفعاليات الموجودة في فعالياتي فقط، وتُسجَّل الفعاليات الأساسية في الفعاليات الأساسية.",
+        "whichTitle": "أي فعالية",
+        "event": "الفعالية",
+        "versionsTag": "الإصدارات",
+        "run": "الجولة",
+        "otherDate": "تاريخ آخر",
+        "runDate": "تاريخ الجولة",
+        "runLong": "{range} ({length})",
+        "runNamed": "{when}، {name}",
+        "notLogged": "{run}، لم تُسجَّل بعد",
+        "tookPartQuestion": "هل شاركت؟",
+        "tookPart": "شاركت",
+        "skipped": "تخطيتها",
+        "coreNote": "تظهر هنا الفعاليات التي أضفتها فقط. تُسجَّل الفعاليات الأساسية في الفعاليات الأساسية، وليس هنا.",
+        "versionTitle": "الإصدار",
+        "versionKnown": "أهداف هذا الإصدار موجودة في البيانات، لذا تُفحص من نقاطك.",
+        "versionUnknown": "لهذا الإصدار أهداف نقاطها غير موجودة في البيانات بعد. افحص هذه الأهداف يدويًا.",
+        "participationTitle": "لا توجد نتيجة أو ترتيب لهذه الفعالية",
+        "participationText": "تسرد بيانات اللعبة المكافآت فقط، فلا شيء يُحتسب. سجّل أنك شاركت والمكافآت التي حصلت عليها وملاحظة.",
+        "pointsFallback": "النقاط",
+        "pointsReached": "{unit} المحققة",
+        "pointsHint": "المجموع في نهاية الفعالية.",
+        "finalScore": "النتيجة النهائية ({unit})",
+        "finalScoreHint": "مجموع {unit} لديك في نهاية الفعالية.",
+        "rankingTitle": "الترتيب",
+        "yourRank": "مرتبتك",
+        "allianceRank": "مرتبة التحالف",
+        "rankGroup": "مجموعة المرتبة",
+        "rankGroupsHint": "تأتي مجموعات المراتب من بيانات اللعبة: {groups} وغيرها.",
+        "targetsTitle": "الأهداف المحققة، من نقاطك",
+        "targetsCount": "تحقق {reached} من {total}",
+        "targetPoints": "{points} {unit}",
+        "pointsMissing": "{unit}: النقاط غير موجودة في البيانات بعد",
+        "needsPurchase": "يتطلب عملية شراء واحدة بأي حجم.",
+        "targetsHint": "تُفحص من النتيجة. الأهداف والمكافآت من بيانات اللعبة.",
+        "targetsHintUnknown": "الأهداف التي نقاطها غير موجودة في البيانات بعد لا تُفحص من النتيجة أبدًا. افحصها يدويًا.",
+        "tierTitle": "الدوري",
+        "tier": "الفئة",
+        "placement": "مركزك في المجموعة",
+        "starChange": "تغيّر النجوم، من بيانات اللعبة",
+        "stars": "{count, plural, zero {{amount} نجمة} one {{amount} نجمة} two {{amount} نجمتان} few {{amount} نجوم} many {{amount} نجمة} other {{amount} نجمة}}",
+        "tiersHint": "الفئات: {tiers}.",
+        "allianceTitle": "التحالف",
+        "outcome": "نتيجة التحالف في هذه الجولة",
+        "outcomeHint": "اختياري. فوز أو خسارة أو تعادل.",
+        "outcomes": {
+            "none": "غير محدد",
+            "won": "فوز",
+            "lost": "خسارة",
+            "drawn": "تعادل"
+        },
+        "wavesTitle": "الصعوبة والموجات",
+        "difficulty": "الصعوبة التي لعبتها",
+        "difficultyFrom": "{name}، من {points} نقطة تحالف",
+        "wavesCleared": "الموجات المُنجزة، من 0 إلى {count}",
+        "wavesHint": "تسرد بيانات اللعبة {count} موجة لـ {name}.",
+        "defenseTitle": "نقاط الدفاع",
+        "yourPoints": "نقاطك",
+        "alliancePoints": "نقاط التحالف",
+        "rewardLevel": "مستوى المكافأة المحقق",
+        "rewardLevelNone": "لا شيء بعد",
+        "level": "المستوى {level}",
+        "levelsHint": "تتطلب المستويات نقاطًا شخصية ونقاط تحالف معًا، من بيانات اللعبة.",
+        "rankingsTitle": "المراتب",
+        "notesTitle": "ملاحظات",
+        "rewards": "المكافآت التي حصلت عليها",
+        "rewardsPlaceholder": "مثال: 2 Hero Shards و500 Gems",
+        "notes": "ملاحظات",
+        "notesPlaceholder": "أي شيء تريد تذكره عن هذه الجولة"
+    },
+    "history": {
+        "emptyTitle": "لا توجد نتائج مسجلة بعد",
+        "emptyText": "اضغط على إضافة تفاصيل فعالية لتسجيل ما حصلت عليه في جولة فعالية. تظهر هنا نتائجك واتجاهاتها.",
+        "eventFilter": "الفعالية",
+        "allEvents": "كل الفعاليات",
+        "period": "الفترة",
+        "months3": "3 أشهر",
+        "months6": "6 أشهر",
+        "allTime": "كل الأوقات",
+        "intro": "كل نتيجة سجلتها، الأحدث أولًا. تُسجَّل الفعاليات الأساسية في الفعاليات الأساسية ولا تظهر هنا.",
+        "showing": "عرض {shown} من {total} نتيجة.",
+        "showingEvent": "{count, plural, zero {عرض {amount} نتيجة لـ {name}.} one {عرض {amount} نتيجة لـ {name}.} two {عرض {amount} نتيجتين لـ {name}.} few {عرض {amount} نتائج لـ {name}.} many {عرض {amount} نتيجة لـ {name}.} other {عرض {amount} نتيجة لـ {name}.}}",
+        "noneInPeriod": "لا توجد نتائج في هذه الفترة.",
+        "showMore": "عرض المزيد",
+        "colDate": "التاريخ",
+        "colEvent": "الفعالية",
+        "colScore": "النتيجة",
+        "colRank": "المرتبة",
+        "colAlliance": "التحالف",
+        "colResult": "الحصيلة",
+        "colActions": "الإجراءات",
+        "none": "-",
+        "edit": "تعديل",
+        "editNamed": "تعديل نتيجة {name}",
+        "skipped": "تم التخطي",
+        "tierOnly": "{tier} {placement}",
+        "stars": "{count, plural, zero {{amount} نجمة} one {{amount} نجمة} two {{amount} نجمتان} few {{amount} نجوم} many {{amount} نجمة} other {{amount} نجمة}}",
+        "waves": "{count, plural, zero {{difficulty}، {amount} موجة} one {{difficulty}، {amount} موجة} two {{difficulty}، {amount} موجتان} few {{difficulty}، {amount} موجات} many {{difficulty}، {amount} موجة} other {{difficulty}، {amount} موجة}}",
+        "targets": "{unit}، {reached} من {total} هدفًا",
+        "tookPart": "شاركت",
+        "tookPartRewards": "شاركت، {rewards}",
+        "rankText": "المرتبة {rank}",
+        "allianceRankText": "التحالف {rank}",
+        "separator": " · ",
+        "defensePoints": "{score} نقطة دفاع",
+        "scoreUnit": "{score} {unit}",
+        "noScore": "بلا نتيجة",
+        "trendTitle": "اتجاه {name}",
+        "trendScore": "{unit} في نهاية كل فعالية",
+        "trendRank": "مرتبتك في نهاية كل فعالية",
+        "metricLabel": "مقياس الاتجاه",
+        "metricScore": "النتيجة",
+        "metricRank": "المرتبة الشخصية",
+        "chartLabel": "مخطط اتجاه {name}",
+        "best": "الأفضل",
+        "average": "المتوسط",
+        "latest": "الأحدث",
+        "change": "التغيّر",
+        "events": "{count, plural, zero {{amount} فعالية} one {{amount} فعالية} two {{amount} فعاليتان} few {{amount} فعاليات} many {{amount} فعالية} other {{amount} فعالية}}",
+        "changeVs": "مقابل {month}",
+        "changePercentVs": "{percent}% مقابل {month}",
+        "noPrevious": "لا توجد نتيجة سابقة",
+        "noTrend": "ليس لهذه الفعالية نتيجة أو مرتبة لرسمها. نتائجها في القائمة أدناه."
+    },
+    "cycles": {
+        "title": "دورات الفعاليات الأساسية",
+        "hint": "تعمل SvS وAlliance Showdown وKing of Icefield وفق دورة ثابتة. حدّد موعد البدء القادم مرة واحدة فتتكرر في التقويم.",
+        "next": "القادم {date}، يتكرر {repeat}",
+        "notSet": "غير محدد",
+        "set": "تحديد الدورة",
+        "edit": "تعديل الدورة"
+    }
+}

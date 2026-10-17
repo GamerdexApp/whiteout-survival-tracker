@@ -1,0 +1,176 @@
+{
+    "none": "لا شيء",
+    "charmLabel": "التميمة {number}",
+    "view": {
+        "title": "معدات القائد",
+        "tabsLabel": "معدات القائد",
+        "gearSubline": "{name} · ست خانات، 150 صف ترقية",
+        "charmsSubline": "{name} · 6 قطع معدات، 3 تمائم لكل قطعة، 75 صف ترقية",
+        "tabs": {
+            "gear": "معدات القائد",
+            "charms": "تمائم القائد"
+        }
+    },
+    "shared": {
+        "plan": "الخطة",
+        "autoSaveHint": "كل تغيير يُحفظ فورًا. تتحرك أزرار الزيادة والنقصان صفًا واحدًا في كل مرة بترتيب الحزمة.",
+        "scoreToGain": "النقاط المتبقية للكسب",
+        "notes": "ملاحظات",
+        "package": "الحزمة"
+    },
+    "gear": {
+        "scoreNow": "نقاط المعدات الآن، ست خانات",
+        "powerNow": "قوة المعدات الآن",
+        "stepsToGoals": "الخطوات حتى كل الأهداف",
+        "goalsHint": "الأهداف للقراءة فقط هنا. حدّدها في الخطة ثم اضغط على حفظ الخطة.",
+        "stepWord": "خطوات",
+        "tiers": {
+            "title": "الفئات",
+            "description": "تصنّف الحزمة 150 صفًا في {count} فئات. الفئة المظللة تضم قطعة واحدة على الأقل من قطعك.",
+            "rows": "{rows} صفًا",
+            "names": {
+                "EpicT1": "Epic T1",
+                "MythicT1": "Mythic T1",
+                "MythicT2": "Mythic T2",
+                "LegendaryT1": "Legendary T1",
+                "LegendaryT2": "Legendary T2",
+                "LegendaryT3": "Legendary T3",
+                "LegendaryT4": "Legendary T4",
+                "LegendaryT5": "Legendary T5",
+                "LegendaryT6": "Legendary T6"
+            }
+        },
+        "notes": {
+            "setBonus": {
+                "title": "قواعد ميزة الطقم",
+                "body": "3 قطع من الفئة نفسها تمنح الدفاع و6 قطع تمنح الهجوم، لأنواع القوات الثلاثة. القطعة التي لا مستوى لها لا تُحتسب. لكل فئة قيمة واحدة."
+            },
+            "troopType": {
+                "title": "نوع القوات مُدخل يدويًا",
+                "body": "Cap وWatch تعززان الفرسان، وCoat وPants تعززان المشاة، وRing وWeapon تعززان الرماة. كاتب الحزمة أدخل هذا من نص الويكي."
+            },
+            "capacity": {
+                "title": "السعة 0 في الصفوف الأولى",
+                "body": "الصفوف الستة والعشرون الأولى بلا سعة انتشار في الحزمة، لذا تظهر 0 حتى تتوفر قيم في البيانات."
+            }
+        }
+    },
+    "charms": {
+        "scoreNow": "نقاط التمائم الآن، 18 تميمة",
+        "powerNow": "قوة التمائم الآن",
+        "stagesToGoals": "المراحل حتى كل الأهداف",
+        "goalsHint": "الأهداف للقراءة فقط هنا وتُحدَّد في الخطة.",
+        "stepWord": "مراحل",
+        "slotMeta": "{troop} · 3 تمائم",
+        "slotStages": "، {stages} مراحل للأهداف",
+        "notes": {
+            "secrets": {
+                "title": "Charm Secrets يبدأ من المستوى 11",
+                "body": "من المستوى 11 المرحلة 1 تحتاج المرحلة إلى Charm Secrets. المراحل السابقة تسرد Charm Guide وCharm Design فقط."
+            },
+            "look": {
+                "title": "تتغير هيئة التمائم في كل مستوى",
+                "body": "لكل تميمة 18 أيقونة، واحدة لكل مستوى. تحمل كل قطعة معدات ثلاث تمائم، وتتبع نوع قوات القطعة."
+            },
+            "estimate": {
+                "title": "نقاط المراحل تقدير",
+                "body": "تُقسَّم نقاط المستوى بالتساوي على المراحل المؤدية إليه. لا تؤكد اللعبة هذا التقسيم."
+            }
+        }
+    },
+    "badge": {
+        "tier": "الفئة {tier}",
+        "stars": "{count, plural, zero {{amount} نجمة} one {{amount} نجمة} two {{amount} نجمتان} few {{amount} نجوم} many {{amount} نجمة} other {{amount} نجمة}}",
+        "tierAndStars": "{tier}، {stars}"
+    },
+    "row": {
+        "level": "مستوى {title}",
+        "progressLabel": "تقدم {title} في {total} صفًا",
+        "progress": "{progress} من {total}",
+        "stepsToGoal": " · {steps} للهدف",
+        "goal": "الهدف {name}",
+        "noGoal": "لا يوجد هدف",
+        "stats": "الإحصائية {stat} · القوة {power}",
+        "statPercent": "{percent}%",
+        "capacity": " · السعة {capacity}",
+        "lockedCurrent": "المستوى المحفوظ {name} مقفل بسبب عمر الخادم ولا يُحتسب. {requirement}.",
+        "lockedGoal": "الهدف المحفوظ {name} مقفل بسبب عمر الخادم وغير مخطط له. {requirement}."
+    },
+    "summary": {
+        "title": "المتبقي لبلوغ كل الأهداف",
+        "derived": "مشتق",
+        "score": "نقاط",
+        "powerGain": "مكسب القوة",
+        "noGoals": "لم تُحدَّد أهداف. حدّدها في الخطة.",
+        "openPlan": "افتح الخطة لنقاط الفعاليات والتفاصيل"
+    },
+    "setBonus": {
+        "title": "مزايا الطقم المفتوحة",
+        "pieceSet": "طقم من {pieces} قطع",
+        "active": "مفعّل",
+        "notActive": "غير مفعّل",
+        "value": "{stat} ‎+{percent}%",
+        "appliesTo": "قطع {tierName}، للمشاة والفرسان والرماة",
+        "needs": "يحتاج إلى {pieces} قطع من الفئة نفسها. {stat} ‎+0% حاليًا."
+    },
+    "plan": {
+        "gear": {
+            "title": "خطة معدات القائد",
+            "description": "المواد والنقاط والقوة من المستوى الحالي إلى الهدف",
+            "stepWord": "الخطوات",
+            "conversionNote": "لا يحتسب الفحص التحويلات. يحتوي المحوّل على سبعة أسعار صرف، لكل منها حد أسبوعي، مثل 10 Design Plans إلى 1 Lunar Amber بحد أقصى 500 في الأسبوع."
+        },
+        "charm": {
+            "title": "خطة تمائم القائد",
+            "description": "المواد والنقاط والقوة من المستوى الحالي إلى الهدف",
+            "stepWord": "المراحل",
+            "conversionNote": "لا يحتسب الفحص التحويلات: كل 2 Charm Guide تصنع 1 Charm Design والعكس، وكل 40 من أي منهما تصنع 1 Charm Secrets."
+        },
+        "saved": "تم حفظ الخطة {date}",
+        "close": "إغلاق",
+        "save": "حفظ الخطة",
+        "export": {
+            "button": "تصدير إلى الفعاليات الأساسية",
+            "nothingToExport": "حدّد هدفًا أعلى من المستوى الحالي لتصدير خطة.",
+            "gearScore": "نقاط معدات القائد",
+            "charmScore": "نقاط تمائم القائد",
+            "power": "القوة المكتسبة",
+            "powerReason": "لا يوجد صف في الفعاليات الأساسية يحتسب قوة معدات القائد أو تمائمه."
+        },
+        "inputs": "المدخلات",
+        "slotTroop": "{slot}، {troop}",
+        "from": "من {level}",
+        "goalLabel": "هدف {label}",
+        "slotGoalLabel": "هدف {label} لـ {slot}",
+        "inputsHint": "المستوى الحالي هو المعروض في الصفحة. غيّره هناك. الأهداف للقراءة فقط في الصفحة وتُحدَّد هنا.",
+        "result": "النتيجة",
+        "score": "النقاط",
+        "powerGain": "مكسب القوة",
+        "events": {
+            "svs": "SvS State of Power",
+            "allianceShowdown": "Alliance Showdown",
+            "kingOfIcefield": "King of Icefield",
+            "hallOfChief": "Hall of Chief"
+        },
+        "bySlot": "حسب الخانة",
+        "byCharm": "حسب التميمة",
+        "columnSlot": "الخانة",
+        "columnCharm": "التميمة",
+        "slotCharm": "{slot} {charm}",
+        "converter": {
+            "title": "محوّل المواد",
+            "spend": "تنفق",
+            "get": "تحصل على",
+            "limit": "الحد",
+            "amount": "{quantity} {name}",
+            "perWeek": "{limit} في الأسبوع",
+            "noLimit": "لا يوجد حد أسبوعي"
+        },
+        "lockedCurrent": "المستوى المحفوظ {name} مقفل بسبب عمر الخادم. {requirement}."
+    },
+    "lock": {
+        "title": "مقفل بسبب عمر الخادم",
+        "stop": "{name} (مقفل، اليوم {day})",
+        "group": "من {name}: {requirement}."
+    }
+}

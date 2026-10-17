@@ -1,0 +1,79 @@
+{
+    "line": "{items} item dalam {categories} kategori, dengan sumber dan kadar dapat daripada {chests} peti.",
+    "catalog": {
+        "title": "Katalog item",
+        "showing": "Menunjukkan {shown} daripada {total}",
+        "search": "Cari",
+        "searchPlaceholder": "Cari item mengikut nama atau penerangan",
+        "table": "Item",
+        "item": "Item",
+        "category": "Kategori",
+        "sources": "Sumber",
+        "lootRates": "Kadar dapat",
+        "description": "Penerangan",
+        "emptyTitle": "Tiada item sepadan",
+        "emptyDescription": "Ubah carian atau penapis."
+    },
+    "filters": {
+        "title": "Penapis",
+        "button": "Penapis",
+        "summary": "Penapis: {category}. Sumber: {sources}",
+        "edit": "Sunting",
+        "category": "Kategori",
+        "all": "Semua",
+        "sources": "Sumber",
+        "lootRates": "Kadar dapat",
+        "reset": "Tetap semula",
+        "show": "{count, plural, other {Tunjuk {amount} item}}"
+    },
+    "sourcesFilter": {
+        "any": "Sebarang sumber",
+        "has": "Ada sumber",
+        "none": "Tiada sumber"
+    },
+    "sourcesChip": {
+        "any": "Mana-mana",
+        "has": "Ada sumber",
+        "none": "Tiada sumber ({amount})"
+    },
+    "lootFilter": {
+        "any": "Mana-mana",
+        "has": "Ada kadar dapat"
+    },
+    "lootChip": {
+        "any": "Mana-mana",
+        "has": "Ada kadar dapat ({amount} peti)"
+    },
+    "loot": {
+        "yes": "Ya",
+        "no": "Tidak",
+        "notChest": "Bukan peti"
+    },
+    "detail": {
+        "title": "Butiran",
+        "category": "Kategori",
+        "sources": "Sumber",
+        "speedup": "Pecutan",
+        "speedupValue": "{type}, {minutes} minit",
+        "description": "Penerangan",
+        "lootRates": "Kadar dapat",
+        "lootRowsListed": "{count, plural, other {{amount} baris disenaraikan}}",
+        "noLootRates": "Tiada kadar dapat dalam data untuk peti ini",
+        "lootTitle": "Kadar dapat",
+        "lootMeta": "{count, plural, other {{amount} ganjaran}}",
+        "lootTable": "Kadar dapat peti",
+        "reward": "Ganjaran",
+        "amount": "Jumlah",
+        "chance": "Peluang",
+        "chanceValue": "{percent}%",
+        "name": "Nama"
+    },
+    "speedupType": {
+        "general": "Am",
+        "construction": "Pembinaan",
+        "troop": "Tentera",
+        "research": "Penyelidikan",
+        "learning": "Pembelajaran",
+        "healing": "Rawatan"
+    }
+}

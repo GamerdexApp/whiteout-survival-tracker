@@ -1,0 +1,19 @@
+{
+    "duration": {
+        "days": "{value}ي",
+        "hours": "{value}س",
+        "minutes": "{value}د",
+        "seconds": "{value}ث",
+        "zero": "0ث",
+        "separator": " "
+    },
+    "timeLeft": {
+        "left": "المتبقي {duration}",
+        "ready": "جاهز للإنهاء"
+    },
+    "saveFailed": {
+        "title": "لم يتم الحفظ",
+        "message": "مساحة تخزين المتصفح ممتلئة. صدّر نسخة احتياطية الآن.",
+        "exportBackup": "تصدير نسخة احتياطية"
+    }
+}

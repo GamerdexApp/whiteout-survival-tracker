@@ -1,0 +1,282 @@
+{
+    "title": "المباني",
+    "tabs": {
+        "buildings": "المباني",
+        "facilities": "المرافق"
+    },
+    "notBuilt": "غير مبني",
+    "built": "مبني",
+    "none": "لا شيء",
+    "unknown": "غير معروف",
+    "close": "إغلاق",
+    "cancel": "إلغاء",
+    "undo": "تراجع",
+    "ofTotal": "{count} من {total}",
+    "noOtherRequirements": "لا توجد متطلبات أخرى",
+    "builderName": "البنّاء {number}",
+    "shelterName": "Shelter {number}",
+    "levelOf": "مستوى {name}",
+    "levelRange": "{from} إلى {to}",
+    "requirement": {
+        "shelter": "{building} بالمستوى {level}",
+        "heroHall": "تم بناء Hero Hall",
+        "level": "{building} {level}"
+    },
+    "columns": {
+        "building": "المبنى",
+        "current": "الحالي",
+        "goal": "الهدف",
+        "power": "القوة",
+        "progress": "التقدم والمستوى التالي",
+        "upgrade": "الترقية"
+    },
+    "entry": {
+        "notes": {
+            "furnace": "يتحكم في فتح كل مبنى آخر",
+            "shelter": "حتى 8 ملاجئ، ولكل منها مستواه"
+        },
+        "subline": {
+            "size": "الحد الأقصى {max} · {count} مستويات",
+            "withNote": "{note} · {size}",
+            "single": "بناء واحد · القوة {power}"
+        },
+        "progress": {
+            "requires": "يتطلب {list}",
+            "noRequirements": "لا توجد متطلبات",
+            "maxLevel": "أقصى مستوى",
+            "blocked": "محظور، يحتاج إلى {list}",
+            "needs": "يحتاج إلى {list}",
+            "levelAgeLocked": "المستوى المحفوظ {level} غير مفتوح في هذا الخادم بعد. {text}",
+            "goalAgeLocked": "الهدف {goal} غير مفتوح في هذا الخادم بعد. {text}",
+            "nextAgeLocked": "المستوى التالي {level} مقفل. {text}"
+        },
+        "builtSwitch": "تم بناء {name}",
+        "shelters": {
+            "none": "لم يُبنَ أي ملجأ",
+            "editLabel": "الملاجئ ({count})، تعديل المستويات",
+            "button": "الملاجئ ({count})"
+        },
+        "levels": "المستويات",
+        "levelsLabel": "مستويات {name}",
+        "upgrading": "{name} قيد الترقية",
+        "startLabel": "بدء ترقية {name}",
+        "start": "ابدأ",
+        "startUpgrade": "بدء الترقية",
+        "devIndex": "مؤشر التطوير {value}",
+        "powerLine": "القوة {power} · مؤشر التطوير {index}",
+        "progressLabel": "تقدم {name}"
+    },
+    "builders": {
+        "label": "البنّاؤون",
+        "hint": "الترقية التي تبدأها هنا تظهر في نظرة عامة كطابور قيد التنفيذ.",
+        "idle": "اضغط على ابدأ في أحد المباني لبدء ترقية.",
+        "jobTitle": "{name}، {from} إلى {to}",
+        "locked": "مقفل",
+        "lockedText": "البنّاء الثاني يحتاج إلى حزمة البناء.",
+        "lockedLink": "فعّلها من تعديل القائد"
+    },
+    "upgrade": {
+        "option": "{subject}، {from} إلى {to}",
+        "busy": "مشغول: {name} إلى {level}، {timeLeft}"
+    },
+    "facilities": {
+        "intro": "مرافق مدينتك. حدّد المرافق التي بنيتها. هذه مرافق المدينة، وليست مرافق التحالف في قائمة التحالف.",
+        "builtLabel": "المرافق المبنية",
+        "unlockedLabel": "مفتوح عند مستوى Furnace لديك",
+        "requires": "يتطلب Furnace {level}",
+        "unlocksAt": "يُفتح عند Furnace {level}"
+    },
+    "tab": {
+        "intro": "المستوى الحالي والهدف لكل مبنى. يحدد Furnace ما يمكن للبقية بلوغه.",
+        "searchLabel": "بحث في المباني",
+        "filters": "عوامل التصفية",
+        "massEdit": "تعديل جماعي",
+        "startUpgrade": "بدء الترقية",
+        "plan": "الخطة",
+        "status": "عرض {shown} من {total} مبنى. الأهداف للقراءة فقط هنا وتُحدَّد في الخطة. الهدف المساوي للمستوى الحالي يعني عدم وجود هدف. تتحرك أزرار الزيادة والنقصان مستوى واحدًا في كل مرة وفق ترتيب اللعبة.",
+        "groupPinned": "مثبّت",
+        "stats": {
+            "furnace": "Furnace، يتحكم في فتح كل مبنى آخر",
+            "power": "القوة الحالية لكل المباني",
+            "developmentIndex": "مؤشر التطوير لكل المباني",
+            "withGoal": "مبانٍ لها هدف",
+            "atMax": "في أقصى مستوى",
+            "entertainment": "مباني الترفيه المبنية"
+        },
+        "empty": {
+            "title": "لا توجد مبانٍ مطابقة",
+            "description": "غيّر البحث أو أعد ضبط عوامل التصفية لعرض كل المباني.",
+            "reset": "إعادة ضبط البحث وعوامل التصفية"
+        },
+        "start": {
+            "description": "حدّد مبنى على أنه قيد الترقية",
+            "selectLabel": "المبنى المراد ترقيته",
+            "selectHelp": "تظهر فقط المباني التي يمكنك بدء ترقيتها الآن. المباني المقفلة والمكتملة وقيد التنفيذ مستبعدة. كل ترقية تستخدم أحد البنّائين الاثنين.",
+            "timeLabel": "مدة البناء",
+            "speedLabel": "سرعة البناء",
+            "slotLabel": "البنّاء",
+            "slotHelp": "اختر بنّاءً متاحًا. البنّاء المشغول يعرض موعد تفرغه."
+        },
+        "toasts": {
+            "started": {
+                "title": "بدأت الترقية",
+                "message": "{name}، {subtitle}"
+            },
+            "finished": {
+                "title": "تمت ترقية {name}",
+                "message": "أصبح الآن {level}. أُضيف إلى السجل."
+            },
+            "cancelled": {
+                "title": "أُلغيت ترقية {name}",
+                "message": "يبقى المستوى كما كان. عدّل مخزونك في الموارد إن لزم."
+            },
+            "massEdit": {
+                "title": "تم تطبيق التعديل الجماعي",
+                "message": "تم تحديث {count, plural, zero {{amount} مبنى} one {{amount} مبنى} two {{amount} مبنيين} few {{amount} مبانٍ} many {{amount} مبنى} other {{amount} مبنى}}."
+            }
+        },
+        "manage": {
+            "finishText": "إنهاء الترقية يضبط {name} على {level}، ويحرر البنّاء {builder}، ويضيف الترقية إلى السجل. عند بلوغ الوقت المتبقي صفرًا تعرض بطاقة المبنى وبطاقة البنّاء عبارة جاهز للإنهاء. لا ينتهي شيء من تلقاء نفسه لأنك قد تكون استخدمت التسريعات."
+        }
+    },
+    "filters": {
+        "title": "عوامل التصفية",
+        "description": "اختر ما تعرضه قائمة المباني",
+        "reset": "إعادة ضبط",
+        "show": "{count, plural, zero {عرض {amount} مبنى} one {عرض {amount} مبنى} two {عرض {amount} مبنيين} few {عرض {amount} مبانٍ} many {عرض {amount} مبنى} other {عرض {amount} مبنى}}",
+        "category": "الفئة",
+        "categoryAll": "الكل، {count}",
+        "categoryOption": "{category}، {count}",
+        "showSection": "عرض",
+        "hideMaxed": "إخفاء المباني المكتملة",
+        "hideLocked": "إخفاء المباني المقفلة",
+        "goalsOnly": "المباني التي لها هدف فقط",
+        "order": "الترتيب",
+        "orders": {
+            "game": "ترتيب اللعبة، Furnace أولًا",
+            "name": "الاسم، من A إلى Z",
+            "progress": "التقدم، الأدنى أولًا"
+        },
+        "pinned": "يبقى Furnace مثبّتًا في الأعلى مهما كانت عوامل التصفية. عوامل التصفية لا تُحفظ."
+    },
+    "levels": {
+        "title": "المستويات",
+        "description": "{category} · الحد الأقصى {max} · {count} مستويات",
+        "noDescription": "لا يوجد وصف في البيانات بعد.",
+        "current": "المستوى الحالي",
+        "goal": "مستوى الهدف",
+        "nextNeeds": "ما يحتاجه المستوى التالي",
+        "noGoal": "لا يوجد هدف",
+        "tableNote": "يعرض هذا الجدول المستويات التي تلي مستواك الحالي فقط، لأن ما قبله قد اكتمل.",
+        "maxed": "أقصى مستوى. لا يوجد ما يمكن ترقيته.",
+        "nextAfter": "المستويات التالية بعد {level}",
+        "first": "المستويات الأولى",
+        "level": "المستوى",
+        "time": "الوقت",
+        "power": "القوة",
+        "capacity": "السعة",
+        "requires": "المتطلبات",
+        "goalBadge": "الهدف",
+        "capacityNote": "تُحدَّد السعة في صفوف المستوى الأساسي فقط ضمن الحزمة، لذا تظهر المستويات الفرعية كغير معروفة."
+    },
+    "massEdit": {
+        "title": "تعديل جماعي للمباني",
+        "description": "اضبط عدة مبانٍ دفعة واحدة. لا يُحفظ شيء حتى تضغط على ضبط المباني.",
+        "noChanges": "لا توجد تغييرات بعد",
+        "changes": "{count, plural, zero {التغييرات تشمل {amount} مبنى} one {التغييرات تشمل {amount} مبنى} two {التغييرات تشمل {amount} مبنيين} few {التغييرات تشمل {amount} مبانٍ} many {التغييرات تشمل {amount} مبنى} other {التغييرات تشمل {amount} مبنى}}",
+        "set": "{count, plural, zero {ضبط {amount} مبنى} one {ضبط {amount} مبنى} two {ضبط {amount} مبنيين} few {ضبط {amount} مبانٍ} many {ضبط {amount} مبنى} other {ضبط {amount} مبنى}}",
+        "raiseTitle": "رفع كل المباني إلى مستوى",
+        "raiseLabel": "رفع كل المباني إلى المستوى",
+        "raiseAll": "رفع الكل",
+        "raiseHint": "يرتفع كل مبنى إلى أعلى مستوى له يساوي هذا المستوى أو يقل عنه. المبنى الأعلى منه يبقى كما هو، والمبنى الذي يبدأ لاحقًا يبقى غير مبني. لا تتغير الأهداف.",
+        "blockedTitle": "بعض المباني تحتاج إلى مبنى آخر أولًا.",
+        "blocked": "{count, plural, zero {مستوى {amount} مبنى أعلى مما تسمح به المتطلبات.} one {مستوى {amount} مبنى أعلى مما تسمح به المتطلبات.} two {مستوى {amount} مبنيين أعلى مما تسمح به المتطلبات.} few {مستوى {amount} مبانٍ أعلى مما تسمح به المتطلبات.} many {مستوى {amount} مبنى أعلى مما تسمح به المتطلبات.} other {مستوى {amount} مبنى أعلى مما تسمح به المتطلبات.}}",
+        "lowerBlocked": "خفضها إلى المسموح به",
+        "levels": "المستويات",
+        "needsFirst": "يحتاج إلى {list} أولًا",
+        "was": "كان {level}",
+        "entertainment": "الترفيه",
+        "markAllBuilt": "تحديد الكل كمبني",
+        "clearAll": "مسح الكل",
+        "footnote": "التعديل الجماعي يغيّر المستويات المحفوظة فقط. لا يخفض مستوى من تلقاء نفسه ولا يغيّر الأهداف. لكل ملجأ مستواه، لذا اضبطها بزر الملاجئ، واضبط Hero Hall من تبويب المرافق."
+    },
+    "shelters": {
+        "title": "الملاجئ",
+        "description": "يمكن بناء حتى {max}. اضبط مستوى كل واحد.",
+        "locked": "الملجأ لا يزال مقفلًا بسبب مستوى Furnace لديك.",
+        "empty": "لا توجد ملاجئ بعد.",
+        "power": "القوة {power}",
+        "add": "إضافة ملجأ",
+        "remove": "إزالة Shelter {number}",
+        "allBuilt": "تم بناء كل الملاجئ البالغ عددها {max}.",
+        "furnaceNeeds": "ما يحتاجه Furnace من الملاجئ",
+        "requirement": "Furnace {furnaceLevel} يحتاج إلى Shelter {number} بالمستوى {level}.",
+        "met": "مستوفى.",
+        "notMet": "غير مستوفى.",
+        "footnote": "تعتمد الخطة وشريط التقدم على أدنى ملجأ لديك، وهو التالي في الترقية."
+    },
+    "plan": {
+        "title": "خطة المباني",
+        "description": "الموارد والوقت والقوة من المستوى الحالي إلى الهدف",
+        "saved": "تم حفظ الخطة {time}",
+        "save": "حفظ الخطة",
+        "failed": "تعذر حساب الخطة.",
+        "goalsHeading": "{count, plural, zero {الأهداف، {amount} مبنى} one {الأهداف، {amount} مبنى} two {الأهداف، {amount} مبنيين} few {الأهداف، {amount} مبانٍ} many {الأهداف، {amount} مبنى} other {الأهداف، {amount} مبنى}}",
+        "noGoals": "لا توجد أهداف بعد. أضف مبنى أعلاه، ثم اختر المستوى الذي تريد بلوغه.",
+        "prerequisiteNote": "تُضاف خطوات المتطلبات تلقائيًا. المستوى الذي يحتاج إلى مبنى آخر بمستوى أعلى تُحتسب خطواته وتُوسَم.",
+        "timeNote": "تستغرق الخطة {time} بعد مكافأة السرعة {percent}%. مخزونك: البناء {construction} د، العام {general} د. التسريعات العامة تُحتسب ضمن البناء.",
+        "add": {
+            "title": "إضافة مبنى",
+            "allAdded": "كل المباني موجودة في الخطة أصلًا.",
+            "selectLabel": "المبنى المراد إضافته",
+            "button": "إضافة المبنى"
+        },
+        "speed": {
+            "title": "سرعة البناء",
+            "percent": "{value}%",
+            "plusPercent": "‎+{value}%",
+            "readOnly": "للقراءة فقط",
+            "bonusesOn": "منقولة من صفحة المزايا.",
+            "bonusesOff": "مُعطّلة في الإعدادات، ضمن تطبيق إجماليات المزايا.",
+            "openBonuses": "فتح المزايا",
+            "appointment": "مزايا الرئيس والتعيين",
+            "appointments": {
+                "none": "بلا",
+                "regular": "عادي",
+                "supreme": "أعلى"
+            },
+            "appointmentNote": "العادي 10 بالمئة، والأعلى 15 بالمئة. <strong>تقدير:</strong> تذكر الحزمة هذه القيم للأبحاث فقط.",
+            "petSkill": "مهارة الحيوان الأليف، Builder's Aide",
+            "petSkillNote": "تأتي النسبة من Cave Hyena في صفحة الحيوانات الأليفة عند مستواه الحالي.",
+            "chiefOrder": "أمر القائد، Double Time",
+            "chiefOrderNote": "<strong>تقدير:</strong> يضيف {percent} بالمئة من سرعة البناء لمدة 5 دقائق. لا تحتوي الحزمة على بيانات أوامر القائد، لذا يُدخل التطبيق القيمة ويطبقها على الوقت كله.",
+            "total": "إجمالي سرعة البناء",
+            "petSkillNoteLocked": "Cave Hyena غير مفتوح في صفحة الحيوانات الأليفة، لذا لا تضيف المهارة شيئًا. افتحه هناك لتفعيل هذا."
+        },
+        "goal": {
+            "to": "إلى",
+            "label": "هدف {name}",
+            "remove": "إزالة {name} من الخطة"
+        },
+        "result": {
+            "title": "النتيجة، {count} خطوات",
+            "powerGained": "القوة المكتسبة",
+            "speedupMinutes": "دقائق التسريع المطلوبة",
+            "baseTime": "الوقت الأساسي",
+            "timeWithBonus": "الوقت مع مكافأة {percent}%",
+            "eventPoints": "نقاط الفعالية: SvS {svs}، King of Icefield {king} (<strong>تقدير</strong>، من صفوف احتساب النقاط في الفعاليات).",
+            "prerequisite": "متطلب",
+            "steps": "{count, plural, zero {{amount} خطوة} one {{amount} خطوة} two {{amount} خطوتان} few {{amount} خطوات} many {{amount} خطوة} other {{amount} خطوة}}",
+            "unmetHeading": "المتطلبات غير المستوفاة",
+            "unmetNone": "لا يوجد منها لهذه الأهداف. أي مبنى خارج القائمة، مثل Hero Hall، سيظهر هنا."
+        },
+        "export": {
+            "button": "تصدير إلى الفعاليات الأساسية",
+            "empty": "أضف هدفًا إلى الخطة لتصديرها.",
+            "speedupMinutes": "دقائق تسريع البناء",
+            "power": "القوة المكتسبة من البناء",
+            "stockDetail": "تحتاج الخطة إلى {needed} وتملك {held}.",
+            "unscored": "لا توجد فعالية تحتسب نقاطًا لـ {name}."
+        }
+    }
+}

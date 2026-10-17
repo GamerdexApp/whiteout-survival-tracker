@@ -1,0 +1,79 @@
+{
+    "line": "{items} عنصر في {categories} فئة، مع المصادر ونسب غنائم {chests} صندوقًا.",
+    "catalog": {
+        "title": "فهرس العناصر",
+        "showing": "عرض {shown} من {total}",
+        "search": "بحث",
+        "searchPlaceholder": "ابحث في العناصر بالاسم أو الوصف",
+        "table": "العناصر",
+        "item": "العنصر",
+        "category": "الفئة",
+        "sources": "المصادر",
+        "lootRates": "نسب الغنائم",
+        "description": "الوصف",
+        "emptyTitle": "لا توجد عناصر مطابقة",
+        "emptyDescription": "غيّر البحث أو عوامل التصفية."
+    },
+    "filters": {
+        "title": "عوامل التصفية",
+        "button": "عوامل التصفية",
+        "summary": "عوامل التصفية: {category}. المصادر: {sources}",
+        "edit": "تعديل",
+        "category": "الفئة",
+        "all": "الكل",
+        "sources": "المصادر",
+        "lootRates": "نسب الغنائم",
+        "reset": "إعادة ضبط",
+        "show": "{count, plural, zero {عرض {amount} عنصر} one {عرض {amount} عنصر} two {عرض {amount} عنصرين} few {عرض {amount} عناصر} many {عرض {amount} عنصرًا} other {عرض {amount} عنصر}}"
+    },
+    "sourcesFilter": {
+        "any": "أي مصادر",
+        "has": "له مصادر",
+        "none": "بلا مصادر"
+    },
+    "sourcesChip": {
+        "any": "أي",
+        "has": "له مصادر",
+        "none": "بلا مصادر ({amount})"
+    },
+    "lootFilter": {
+        "any": "أي",
+        "has": "له نسب غنائم"
+    },
+    "lootChip": {
+        "any": "أي",
+        "has": "له نسب غنائم ({amount} صندوقًا)"
+    },
+    "loot": {
+        "yes": "نعم",
+        "no": "لا",
+        "notChest": "ليس صندوقًا"
+    },
+    "detail": {
+        "title": "التفاصيل",
+        "category": "الفئة",
+        "sources": "المصادر",
+        "speedup": "التسريع",
+        "speedupValue": "{type}، {minutes} دقيقة",
+        "description": "الوصف",
+        "lootRates": "نسب الغنائم",
+        "lootRowsListed": "{count, plural, zero {{amount} صف مدرج} one {{amount} صف مدرج} two {{amount} صفان مدرجان} few {{amount} صفوف مدرجة} many {{amount} صفًا مدرجًا} other {{amount} صف مدرج}}",
+        "noLootRates": "لا توجد نسب غنائم في البيانات لهذا الصندوق",
+        "lootTitle": "نسب الغنائم",
+        "lootMeta": "{count, plural, zero {{amount} مكافأة} one {{amount} مكافأة} two {{amount} مكافأتان} few {{amount} مكافآت} many {{amount} مكافأة} other {{amount} مكافأة}}",
+        "lootTable": "نسب غنائم الصندوق",
+        "reward": "المكافأة",
+        "amount": "الكمية",
+        "chance": "الاحتمال",
+        "chanceValue": "{percent}%",
+        "name": "الاسم"
+    },
+    "speedupType": {
+        "general": "عام",
+        "construction": "البناء",
+        "troop": "القوات",
+        "research": "الأبحاث",
+        "learning": "التعلم",
+        "healing": "العلاج"
+    }
+}

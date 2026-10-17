@@ -1,0 +1,251 @@
+{
+    "page": {
+        "title": "Tentera"
+    },
+    "view": {
+        "title": "Tentera",
+        "subline": "{chief} · {camps}",
+        "campLevel": "{name} Camp {level}",
+        "notBuilt": "belum dibina",
+        "intro": "Tahap camp, kapasiti dan bonus kelajuan datang daripada halaman lain dan hanya boleh dibaca. Rancang mengira apa yang diambil oleh latihan dan kenaikan pangkat. Mula latihan menandakan kumpulan yang sedang dijalankan oleh sebuah camp.",
+        "plan": "Rancang"
+    },
+    "cards": {
+        "tileSummary": "tentera · kuasa {power}",
+        "allTroops": "Semua tentera",
+        "totalPower": "Jumlah kuasa",
+        "troops": "Tentera",
+        "power": "Kuasa",
+        "powerNote": "Kuasa bagi setiap tentera datang daripada pakej. Peringkat 10 dan 11 mengikut tahap Fire Crystal setiap camp.",
+        "campLevel": "Camp {level}",
+        "campNotBuilt": "Camp belum dibina",
+        "campAgeLocked": "Tahap camp tersimpan belum dibuka pada pelayan ini. {text}",
+        "highestTier": "Peringkat tertinggi",
+        "tierShort": "T{tier}",
+        "noTier": "Tiada"
+    },
+    "tiers": {
+        "title": "Peringkat {name}",
+        "hideLow": "Sembunyikan Peringkat 9 dan ke bawah",
+        "typeLabel": "Jenis tentera",
+        "hiddenNote": "Peringkat 1 hingga 9 disembunyikan. Furnace {furnace} ialah tahap 30 atau lebih tinggi.",
+        "heads": {
+            "tier": "Peringkat",
+            "troops": "Tentera",
+            "train": "Latih",
+            "power": "Kuasa"
+        },
+        "requires": {
+            "list": "Perlu {list}",
+            "camp": "{name} Camp {level}",
+            "building": "{name} {level}",
+            "research": "{name} tahap {level}"
+        },
+        "tier": "Peringkat {tier}",
+        "locked": "Terkunci",
+        "countLabel": "Tentera {name} {tier}",
+        "train": "Latih",
+        "seconds": "{value} s",
+        "each": "setiap satu",
+        "mobilePower": "Kuasa"
+    },
+    "plan": {
+        "title": "Rancang Tentera",
+        "description": "Latihan dan kenaikan pangkat untuk tiga jenis tentera",
+        "saved": "Pelan disimpan {date}",
+        "close": "Tutup",
+        "save": "Simpan pelan",
+        "export": {
+            "button": "Eksport ke Acara Utama",
+            "emptyHint": "Tambah latihan untuk mengeksportnya.",
+            "computed": "Dikira oleh aplikasi.",
+            "trainedGroup": "untuk tentera dilatih",
+            "speedupGroup": "untuk minit pecutan",
+            "trainedTier": "Tentera Peringkat {tier} dilatih",
+            "speedupMinutes": "Minit pecutan latihan digunakan",
+            "promoted": "Tentera dinaikkan pangkat",
+            "promotedReason": "Kenaikan pangkat hanya dimarkahkan melalui minit pecutan.",
+            "power": "Kuasa daripada latihan dan kenaikan pangkat",
+            "powerReason": "Pakej belum mempunyai kuasa sebenar bagi setiap peringkat."
+        },
+        "noRuns": "Belum ada latihan. Tambah tentera untuk memulakan pelan.",
+        "add": {
+            "title": "Tambah Tentera",
+            "typeLabel": "Jenis tentera",
+            "modeLabel": "Latihan atau Kenaikan pangkat",
+            "button": "Tambah Tentera"
+        },
+        "run": {
+            "tier": "Peringkat {tier}",
+            "modes": {
+                "training": "Latihan",
+                "promotion": "Kenaikan pangkat"
+            },
+            "remove": "Buang latihan {name}",
+            "removeButton": "Buang",
+            "modeLabel": "Latihan atau kenaikan pangkat {name}",
+            "tierLabel": "Peringkat {name}",
+            "fromLabel": "{name} naik pangkat dari peringkat",
+            "toLabel": "{name} naik pangkat ke peringkat",
+            "to": "ke",
+            "troops": "Tentera",
+            "max": "Maks",
+            "maxValue": "Maks ({capacity})",
+            "batches": "Kumpulan"
+        },
+        "speed": {
+            "readOnlyNote": "Nilai baca sahaja dibawa daripada halaman lain. Ubah di sana.",
+            "openBonuses": "Buka Bonus",
+            "title": "Kapasiti dan kelajuan",
+            "appointment": "Pelantikan",
+            "position": "Jawatan",
+            "rank": "Pangkat",
+            "positions": {
+                "none": "Tiada",
+                "ministerOfEducation": "Menteri Pendidikan",
+                "vicePresident": "Naib Presiden"
+            },
+            "ranks": {
+                "regular": "Biasa",
+                "supreme": "Tertinggi"
+            },
+            "appointmentEffect": "+{capacity} kapasiti, +{speed}% kelajuan",
+            "appointmentNote": "Hanya satu daripada dua pelantikan boleh dihidupkan. Menteri Pendidikan menambah {moeCapacity} kapasiti dan {moeSpeed} peratus kelajuan (Tertinggi {moeCapacitySupreme} dan {moeSpeedSupreme}). Naib Presiden menambah {vpSpeed} peratus kelajuan (Tertinggi {vpSpeedSupreme}).",
+            "capacity": "Kapasiti",
+            "researchCapacity": "Kapasiti penyelidikan",
+            "troops": "{value} tentera",
+            "readOnly": "Baca sahaja",
+            "capacityBoost": "Peningkatan kapasiti",
+            "boostTotal": "Jumlah x{multiplier}",
+            "capacityPerBatch": "Kapasiti setiap kumpulan",
+            "trainingSpeed": "Kelajuan latihan",
+            "gameSpeed": "Kelajuan latihan permainan",
+            "appointmentSpeed": "Pelantikan",
+            "mobilize": "Mobilize",
+            "advancedTraining": "Advanced Training",
+            "speedUsed": "Kelajuan latihan digunakan",
+            "percent": "{value}%",
+            "percentPlus": "+{value}%"
+        },
+        "stock": {
+            "name": "Pecutan latihan",
+            "minutesUnit": "min",
+            "note": "Stok anda: Latihan {training} min, Am {general} min. Pecutan Am dikira untuk latihan. Latihan yang tidak dilindungi pecutan siap dalam masa biasa, jadi hanya pecutan yang anda pegang digunakan: {used} min."
+        },
+        "result": {
+            "title": "Hasil",
+            "resources": "Sumber",
+            "changes": "Perubahan tentera mengikut peringkat",
+            "heads": {
+                "tier": "Peringkat",
+                "infantry": "Inf.",
+                "lancer": "Lan.",
+                "marksman": "Mark.",
+                "all": "Semua"
+            },
+            "tier": "Peringkat {tier}",
+            "total": "Jumlah",
+            "time": "Masa, tanpa pecutan",
+            "totalTime": "Jumlah, semua jenis tentera (masa pecutan)",
+            "longest": "Jenis tentera terlama",
+            "minutesNeeded": "Minit pecutan diperlukan",
+            "minutesUsed": "Minit pecutan digunakan (dalam stok)",
+            "minutes": "{value} min",
+            "tier12Note": "Pakej menyatakan kos Peringkat 12 sebahagiannya diperoleh. Kos kenaikan pangkat Marksman diukur dalam permainan, dan kos Infantry dan Lancer diskalakan daripadanya."
+        }
+    },
+    "queue": {
+        "title": "Baris gilir latihan",
+        "note": "Setiap camp melatih satu kumpulan pada satu masa. Siap menambah tentera ke bilangan anda.",
+        "idle": "Tiada yang dilatih. Mulakan kumpulan untuk menggunakan camp ini.",
+        "startButton": "Mula latihan",
+        "jobTitle": {
+            "training": "Melatih {count} {name} T{tier}",
+            "promotion": "Menaikkan pangkat {count} {name} T{from} ke T{to}"
+        },
+        "manage": {
+            "slotLabel": "{camp}, satu kumpulan pada satu masa",
+            "finishText": "Siapkan naik taraf menambah tentera ke bilangan anda, membebaskan camp dan menambah kumpulan ke Sejarah anda. Apabila masa tinggal sifar, kad menyatakan Sedia untuk disiapkan. Tiada apa yang siap sendiri, kerana anda mungkin telah menggunakan pecutan."
+        },
+        "flyout": {
+            "title": "Mula latihan",
+            "description": "Tandakan kumpulan sedang dilatih atau dinaikkan pangkat dalam camp",
+            "camp": "Camp",
+            "campHelp": "Satu kumpulan pada satu masa dalam setiap camp. Camp yang sibuk menyatakan bila ia bebas.",
+            "busy": "Sibuk sehingga {date}",
+            "notBuilt": "Camp belum dibina",
+            "action": "Tindakan",
+            "training": "Latihan",
+            "promotion": "Kenaikan pangkat",
+            "tier": "Peringkat",
+            "tierOption": "Peringkat {tier}",
+            "fromTier": "Dari peringkat",
+            "toTier": "Ke peringkat",
+            "troops": "Tentera dalam kumpulan",
+            "max": "Maks",
+            "capacityHint": "Satu kumpulan memuatkan sehingga {capacity} tentera. Ini ialah kapasiti penyelidikan tambah tahap camp anda.",
+            "noTiers": "Camp ini belum mempunyai peringkat untuk dilatih. Naikkan tahap camp pada halaman Bangunan.",
+            "cost": "Kos kumpulan",
+            "time": "Masa latihan",
+            "packageTime": "Masa pakej",
+            "speed": "Kelajuan latihan",
+            "readOnly": "Baca sahaja",
+            "openBonuses": "Buka Bonus",
+            "yourTime": "Masa anda",
+            "timeHint": "Kelajuan latihan datang daripada halaman Bonus. Gunakan Sudah bermula apabila permainan menunjukkan masa yang berbeza.",
+            "whenStarted": "Bila ia bermula?",
+            "modes": {
+                "now": "Bermula sekarang",
+                "already": "Sudah bermula"
+            },
+            "timeLeftHours": "Masa tinggal, jam",
+            "ends": "Tamat",
+            "takeCost": {
+                "title": "Ambil kos daripada stok saya",
+                "hint": "Mengambil sumber kumpulan daripada Sumber. Bilangan tidak pernah jatuh di bawah 0.",
+                "enough": "Anda mempunyai cukup.",
+                "short": "Kurang {names}. Stok jadi 0 bagi sumber itu."
+            },
+            "cancel": "Batal",
+            "start": "Mula latihan",
+            "allCamps": "Semua camp bebas ({count})",
+            "allCampsHint": "Memulakan kumpulan yang sama dalam setiap camp bebas sekali gus. Setiap camp mengekalkan masanya sendiri. Peringkat yang ditunjukkan ialah yang boleh dilatih oleh setiap camp bebas.",
+            "campTime": "{camp}: {time}"
+        },
+        "toasts": {
+            "started": {
+                "title": "Latihan bermula",
+                "message": "{what}."
+            },
+            "finished": {
+                "title": "{what} dilatih",
+                "message": "Ditambah ke bilangan tentera anda dan ke Sejarah."
+            },
+            "cancelled": {
+                "title": "{what} dibatalkan",
+                "message": "Bilangan tentera anda kekal seperti sebelumnya. Betulkan stok anda pada Sumber jika perlu."
+            },
+            "undo": "Buat asal"
+        },
+        "batchName": {
+            "training": "{count} {name} T{tier}",
+            "promotion": "{count} {name} T{from} ke T{to}"
+        }
+    },
+    "callOfWar": {
+        "title": "Call of War",
+        "note": "Kemahiran Romulus. Satu tuntutan percuma setiap hari UTC, untuk semua camp bersama. Ia ditetapkan semula pada 00:00 UTC.",
+        "available": "{troops} tentera percuma hari ini",
+        "claimed": "Dituntut hari ini. Tuntutan baharu percuma dalam {time}.",
+        "notUnlocked": "Perlu Romulus direkrut dan Call of War pada tahap 1 atau lebih tinggi pada halaman Pakar.",
+        "level": "Call of War tahap {level}",
+        "add": "Tambah ke {camp}",
+        "addHint": "{troops} tentera pergi ke peringkat {tier}",
+        "noTier": "Tiada peringkat dibuka",
+        "toast": {
+            "title": "Call of War dituntut",
+            "message": "{troops} tentera ditambah ke {camp} peringkat {tier}.",
+            "undo": "Buat asal"
+        }
+    }
+}

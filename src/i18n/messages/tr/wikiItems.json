@@ -1,0 +1,79 @@
+{
+    "line": "{categories} kategoride {items} öğe; kaynakları ve {chests} sandığın ganimet oranlarıyla.",
+    "catalog": {
+        "title": "Öğe kataloğu",
+        "showing": "{total} içinden {shown} gösteriliyor",
+        "search": "Ara",
+        "searchPlaceholder": "Öğeleri ada ya da açıklamaya göre ara",
+        "table": "Öğeler",
+        "item": "Öğe",
+        "category": "Kategori",
+        "sources": "Kaynaklar",
+        "lootRates": "Ganimet oranları",
+        "description": "Açıklama",
+        "emptyTitle": "Eşleşen öğe yok",
+        "emptyDescription": "Aramayı ya da filtreleri değiştir."
+    },
+    "filters": {
+        "title": "Filtreler",
+        "button": "Filtreler",
+        "summary": "Filtreler: {category}. Kaynaklar: {sources}",
+        "edit": "Düzenle",
+        "category": "Kategori",
+        "all": "Tümü",
+        "sources": "Kaynaklar",
+        "lootRates": "Ganimet oranları",
+        "reset": "Sıfırla",
+        "show": "{count, plural, one {{amount} öğeyi göster} other {{amount} öğeyi göster}}"
+    },
+    "sourcesFilter": {
+        "any": "Her kaynak",
+        "has": "Kaynağı var",
+        "none": "Kaynağı yok"
+    },
+    "sourcesChip": {
+        "any": "Fark etmez",
+        "has": "Kaynağı var",
+        "none": "Kaynağı yok ({amount})"
+    },
+    "lootFilter": {
+        "any": "Fark etmez",
+        "has": "Ganimet oranı var"
+    },
+    "lootChip": {
+        "any": "Fark etmez",
+        "has": "Ganimet oranı var ({amount} sandık)"
+    },
+    "loot": {
+        "yes": "Evet",
+        "no": "Hayır",
+        "notChest": "Sandık değil"
+    },
+    "detail": {
+        "title": "Ayrıntılar",
+        "category": "Kategori",
+        "sources": "Kaynaklar",
+        "speedup": "Hızlandırma",
+        "speedupValue": "{type}, {minutes} dakika",
+        "description": "Açıklama",
+        "lootRates": "Ganimet oranları",
+        "lootRowsListed": "{count, plural, one {{amount} satır listelendi} other {{amount} satır listelendi}}",
+        "noLootRates": "Verilerde bu sandık için ganimet oranı yok",
+        "lootTitle": "Ganimet oranları",
+        "lootMeta": "{count, plural, one {{amount} ödül} other {{amount} ödül}}",
+        "lootTable": "Sandığın ganimet oranları",
+        "reward": "Ödül",
+        "amount": "Miktar",
+        "chance": "Şans",
+        "chanceValue": "%{percent}",
+        "name": "Ad"
+    },
+    "speedupType": {
+        "general": "Genel",
+        "construction": "İnşaat",
+        "troop": "Birlik",
+        "research": "Araştırma",
+        "learning": "Öğrenme",
+        "healing": "İyileştirme"
+    }
+}

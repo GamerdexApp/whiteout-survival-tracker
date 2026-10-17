@@ -1,0 +1,35 @@
+{
+    "close": "إغلاق",
+    "field": {
+        "optional": "اختياري"
+    },
+    "stepper": {
+        "lower": "تقليل {label}",
+        "raise": "زيادة {label}",
+        "labelPrefix": "{label}، "
+    },
+    "switch": {
+        "on": "مفعّل",
+        "off": "معطّل"
+    },
+    "tabs": {
+        "locked": " (مقفل)"
+    },
+    "toast": {
+        "dismiss": "تجاهل",
+        "variants": {
+            "success": "تم بنجاح",
+            "info": "معلومة",
+            "warning": "تنبيه",
+            "error": "خطأ"
+        },
+        "missingProvider": "يجب استخدام useToast داخل ToastProvider"
+    },
+    "savedChip": {
+        "automatic": "يُحفظ تلقائيًا",
+        "justNow": "تم الحفظ الآن",
+        "minutesAgo": "تم الحفظ منذ {count} د",
+        "at": "تم الحفظ {time}",
+        "failed": "لم يتم الحفظ، التخزين ممتلئ"
+    }
+}

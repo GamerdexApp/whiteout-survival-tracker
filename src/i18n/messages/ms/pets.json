@@ -1,0 +1,209 @@
+{
+    "page": {
+        "title": "Haiwan Peliharaan"
+    },
+    "view": {
+        "subline": "{chief} · {details} · {unlocked} daripada {total} haiwan peliharaan dibuka"
+    },
+    "rarities": {
+        "Common": "Common",
+        "Uncommon": "Uncommon",
+        "Rare": "Rare",
+        "Epic": "Epic",
+        "Legendary": "Legendary"
+    },
+    "unlock": {
+        "afterFurnace": "Hari {days} dan Furnace {level}",
+        "afterPet": "Hari {days} dan {pet} tahap {level}"
+    },
+    "summary": {
+        "unlocked": "Dibuka",
+        "unlockedValue": "{count} daripada {total}",
+        "unlockedNote": "Ditetapkan oleh anda",
+        "power": "Jumlah kuasa",
+        "powerNote": "Kuasa tahap, kenaikan pangkat dan penapisan haiwan peliharaan yang dibuka",
+        "powerUnknown": "Kuasa tahap, kenaikan pangkat dan penapisan haiwan peliharaan yang dibuka, {amount} tidak diketahui",
+        "next": "Seterusnya dibuka",
+        "allUnlocked": "Semua dibuka",
+        "allUnlockedNote": "Setiap haiwan peliharaan telah dibuka",
+        "lockedNote": "{count} dikunci sehingga hari pelayan kemudian"
+    },
+    "totals": {
+        "attackDefense": "Serangan dan Pertahanan Tentera",
+        "attack": "Serangan",
+        "defense": "Pertahanan",
+        "lethality": "Lethality",
+        "health": "Health",
+        "gain": "+{value}%",
+        "types": {
+            "infantry": "Infantry",
+            "lancer": "Lancer",
+            "marksman": "Marksman"
+        }
+    },
+    "search": {
+        "label": "Cari haiwan peliharaan",
+        "placeholder": "Cari {amount} haiwan peliharaan mengikut nama"
+    },
+    "status": {
+        "showing": "Menunjukkan {shown} daripada {total} {count, plural, other {haiwan peliharaan}}.",
+        "filters": " Penapis: {list}.",
+        "filterNames": {
+            "rarity": "Kelangkaan",
+            "status": "Status",
+            "advanced": "Naik pangkat",
+            "order": "Susunan"
+        },
+        "readOnlyGoals": "Matlamat hanya boleh dibaca di sini dan ditetapkan dalam Rancang. Matlamat yang sama dengan nilai semasa bermakna tiada matlamat.",
+        "showMore": "Tunjuk {count, plural, other {{amount} lagi haiwan peliharaan}}"
+    },
+    "empty": {
+        "title": "Tiada haiwan peliharaan sepadan",
+        "description": "Ubah carian atau penapis untuk melihat lebih banyak haiwan peliharaan.",
+        "reset": "Tetapkan semula penapis"
+    },
+    "toast": {
+        "lockedTitle": "{name} dikunci",
+        "lockedMessage": "Tahap, kenaikan pangkat dan penapisannya dikekalkan.",
+        "undo": "Buat asal"
+    },
+    "card": {
+        "summary": "{rarity} · tahap maks {max}",
+        "unlocked": "Dibuka",
+        "unlockedLabel": "{pet} dibuka",
+        "cooldown": "Masa henti {time}",
+        "cooldownByTier": "Masa henti berubah mengikut peringkat",
+        "cooldownUnknown": "Masa henti Tidak diketahui",
+        "skillTiers": "{count, plural, other {{amount} peringkat kemahiran}}",
+        "unlockRule": "Syarat buka kunci",
+        "ruleMet": "Anda memenuhi syarat ini",
+        "level": "Tahap (maks {max})",
+        "levelLabel": "Tahap {pet}",
+        "goal": "Matlamat {level}",
+        "noGoal": "Tiada matlamat",
+        "advanced": "Naik pangkat",
+        "advancedHint": "Naik pangkat boleh ditetapkan pada tahap 10, 20, 30 dan seterusnya.",
+        "refinement": "Penapisan",
+        "refinementMax": "maks {max}% setiap satu",
+        "refineLabel": "{pet} {stat}",
+        "percentSign": "%",
+        "attack": "Atk +{value}%",
+        "defense": "Def +{value}%",
+        "power": "Kuasa {value}",
+        "powerUnknown": "Kuasa Tidak diketahui",
+        "powerParts": "Tahap dan kenaikan pangkat {base}, penapisan {refining}"
+    },
+    "filters": {
+        "button": "Penapis",
+        "title": "Penapis",
+        "description": "Pilih apa yang ditunjukkan senarai Haiwan Peliharaan",
+        "rarity": "Kelangkaan",
+        "rarityAll": "Semua {amount}",
+        "rarityOption": "{rarity} {amount}",
+        "rarities": {
+            "Common": "Common",
+            "Uncommon": "Uncommon",
+            "Rare": "Rare",
+            "Epic": "Epic",
+            "Legendary": "Legendary"
+        },
+        "status": "Status",
+        "statusOptions": {
+            "all": "Semua haiwan peliharaan",
+            "unlocked": "Dibuka",
+            "locked": "Terkunci"
+        },
+        "advanced": "Naik pangkat",
+        "advancedOptions": {
+            "any": "Mana-mana",
+            "advanced": "Naik pangkat",
+            "notAdvanced": "Belum naik pangkat"
+        },
+        "order": "Susunan",
+        "orderOptions": {
+            "game": "Susunan permainan",
+            "name": "Nama, A hingga Z",
+            "level": "Tahap, tertinggi dahulu"
+        },
+        "notSaved": "Penapis tidak disimpan.",
+        "reset": "Tetap semula",
+        "show": "Tunjuk {count, plural, other {{amount} haiwan peliharaan}}"
+    },
+    "plan": {
+        "button": "Rancang",
+        "title": "Rancang Haiwan Peliharaan",
+        "description": "Makanan, item, statistik dan mata acara untuk mencapai matlamat anda",
+        "saved": "Pelan disimpan {date}",
+        "notSavedYet": "Pelan belum disimpan",
+        "close": "Tutup",
+        "save": "Simpan pelan",
+        "exportButton": "Eksport ke Acara Utama",
+        "exportNothing": "Pelan tiada skor kenaikan pangkat untuk dieksport.",
+        "export": {
+            "advancement": "Skor kenaikan pangkat haiwan peliharaan",
+            "commonMark": "Common Wild Marks",
+            "advancedMark": "Advanced Wild Marks",
+            "marksDetail": "Dikira daripada Sumber."
+        },
+        "noPets": "Tambah haiwan peliharaan yang dibuka untuk merancang tahapnya.",
+        "add": {
+            "title": "Tambah haiwan peliharaan",
+            "selectLabel": "Haiwan peliharaan untuk ditambah",
+            "button": "Tambah haiwan peliharaan",
+            "allIn": "Setiap haiwan peliharaan yang dibuka sudah ada dalam pelan.",
+            "noneUnlocked": "Buka haiwan peliharaan pada halaman Haiwan Peliharaan untuk merancangnya."
+        },
+        "block": {
+            "rarities": {
+                "Common": "Common",
+                "Uncommon": "Uncommon",
+                "Rare": "Rare",
+                "Epic": "Epic",
+                "Legendary": "Legendary"
+            },
+            "maxLevel": "Tahap maks {max}",
+            "remove": "Buang",
+            "removeLabel": "Buang {pet} daripada pelan",
+            "current": "Tahap semasa",
+            "to": "ke",
+            "goal": "Tahap matlamat (maks {max})",
+            "goalLabel": "Tahap matlamat {pet}",
+            "payAdvancement": "Bayar kenaikan pangkat pada matlamat",
+            "paysCurrent": "Belum naik pangkat pada tahap {level}, jadi kenaikan pangkat itu dibayar."
+        },
+        "result": {
+            "title": "Hasil untuk {count, plural, other {{amount} haiwan peliharaan}}",
+            "resources": "Sumber, semua haiwan peliharaan",
+            "byPet": "Mengikut haiwan peliharaan",
+            "heads": {
+                "pet": "Haiwan",
+                "levels": "Tahap",
+                "food": "Makanan",
+                "power": "Kuasa"
+            },
+            "powerGain": "+{value}",
+            "percentGain": "+{value}%",
+            "unknown": "Tidak diketahui",
+            "gains": "Perolehan",
+            "gainNames": {
+                "levels": "Tahap diperoleh",
+                "advancements": "Kenaikan pangkat",
+                "attack": "Serangan Tentera",
+                "defense": "Pertahanan Tentera",
+                "power": "Kuasa",
+                "score": "Skor kenaikan pangkat"
+            },
+            "unknownPowerNote": "Pakej tiada kuasa naik pangkat untuk tahap dalam pelan ini, jadi perolehan kuasa Tidak diketahui.",
+            "eventPoints": "Mata acara",
+            "events": {
+                "svs": "SvS",
+                "allianceShowdown": "Alliance Showdown",
+                "kingOfIcefield": "King of Icefield",
+                "hallOfChief": "Hall of Chief"
+            },
+            "notScored": "Tidak dimarkahkan",
+            "eventNote": "Mata acara ialah skor kenaikan pangkat darab mata baris pemarkahan setiap acara.",
+            "scoreSourceNote": "Skor kenaikan pangkat bagi tahap 40 hingga 100 sepadan dengan nota acara. Tahap 10 hingga 30 datang daripada satu sumber (WoS Tools)."
+        }
+    }
+}

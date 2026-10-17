@@ -1,0 +1,49 @@
+{
+    "line": "{rows} แถวเครื่องราง {slots} ช่อง และอัตราแลกเปลี่ยน {rates} แบบ ข้อมูลอ้างอิงเท่านั้น ไม่มีอะไรที่นี่ถูกบันทึกลงหัวหน้าของคุณ",
+    "slots": {
+        "heading": "ช่องเครื่องราง",
+        "meta": "{slots} ช่อง หนึ่งช่องต่อประเภททหาร",
+        "icons": "{count, plural, other {ไอคอนเลเวล {amount} ไอคอน}}",
+        "recordLine": "เสริมทหาร {troopType} หนึ่งไอคอนต่อเลเวล"
+    },
+    "table": {
+        "heading": "ตารางเครื่องราง",
+        "meta": "{rows} แถว {levels} เลเวล",
+        "searchLabel": "ค้นหา",
+        "searchPlaceholder": "ค้นหา {rows} แถวเครื่องราง",
+        "levelLabel": "เลเวล",
+        "allLevels": "ทุกเลเวล",
+        "levelOption": "เลเวล {level}",
+        "stageLabel": "ขั้น",
+        "allStages": "ทุกขั้น",
+        "stageOption": "ขั้น {stage}",
+        "empty": "ไม่มีแถวเครื่องรางที่ตรงกับตัวกรอง"
+    },
+    "columns": {
+        "row": "แถว",
+        "materials": "วัสดุ",
+        "stats": "ค่าสถานะ",
+        "power": "พลัง",
+        "score": "คะแนน"
+    },
+    "cells": {
+        "none": "ไม่มี",
+        "percent": "{value}%"
+    },
+    "levels": {
+        "heading": "เลเวล",
+        "level": "เลเวล",
+        "levelName": "เลเวล {level}",
+        "rows": "แถว",
+        "stats": "ค่าสถานะ แถวแรกถึงแถวสุดท้าย",
+        "power": "พลังที่แถวสุดท้าย",
+        "statsRange": "{first}% ถึง {last}%"
+    },
+    "exchange": {
+        "heading": "อัตราแลกเปลี่ยนวัสดุ",
+        "exchange": "แลกเปลี่ยน",
+        "from": "จาก",
+        "to": "เป็น",
+        "weeklyLimit": "ขีดจำกัดรายสัปดาห์"
+    }
+}

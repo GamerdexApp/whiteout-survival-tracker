@@ -1,0 +1,19 @@
+{
+    "duration": {
+        "days": "{value}g",
+        "hours": "{value}sa",
+        "minutes": "{value}dk",
+        "seconds": "{value}sn",
+        "zero": "0sn",
+        "separator": " "
+    },
+    "timeLeft": {
+        "left": "{duration} kaldı",
+        "ready": "Bitirmeye hazır"
+    },
+    "saveFailed": {
+        "title": "Kaydedilmedi",
+        "message": "Tarayıcı depolama alanı dolu. Şimdi bir yedek dışa aktar.",
+        "exportBackup": "Yedeği dışa aktar"
+    }
+}

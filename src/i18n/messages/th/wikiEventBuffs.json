@@ -1,0 +1,67 @@
+{
+    "line": "แหล่งบัฟใดมีผลในแต่ละโหมดเกมทั้ง {modes} โหมด: ใช่ ไม่ หรือบางส่วน สำหรับบัฟ {sources} ชนิด",
+    "matrix": {
+        "title": "ตารางบัฟ",
+        "meta": "{modes} โหมด บัฟ {sources} ชนิด",
+        "table": "แหล่งบัฟตามโหมดเกม",
+        "mode": "โหมดเกม"
+    },
+    "sources": {
+        "cityBonusWarsBuffs": {
+            "short": "โบนัสเมือง",
+            "full": "โบนัสเมืองและบัฟสงคราม"
+        },
+        "deploymentCapacity": {
+            "short": "ความจุส่ง",
+            "full": "ความจุการส่งกำลัง"
+        },
+        "petSkills": {
+            "short": "ทักษะสัตว์เลี้ยง",
+            "full": "ทักษะสัตว์เลี้ยง"
+        },
+        "daybreakIsland": {
+            "short": "Daybreak",
+            "full": "Daybreak Island"
+        },
+        "presidentSkills": {
+            "short": "ประธานาธิบดี",
+            "full": "ทักษะประธานาธิบดี"
+        },
+        "ministerBuff": {
+            "short": "รัฐมนตรี",
+            "full": "บัฟรัฐมนตรี"
+        },
+        "territoryBonuses": {
+            "short": "อาณาเขต",
+            "full": "โบนัสอาณาเขต"
+        },
+        "facilityBuff": {
+            "short": "สิ่งปลูกสร้าง",
+            "full": "บัฟสิ่งปลูกสร้าง"
+        },
+        "marchAccelerator": {
+            "short": "เร่งเดินทัพ",
+            "full": "ตัวเร่งเดินทัพ"
+        },
+        "frostdragonTyrantTitles": {
+            "short": "ฉายา Tyrant",
+            "full": "ฉายา Frostdragon Tyrant"
+        },
+        "frostSphereDomainBonus": {
+            "short": "Frost Sphere",
+            "full": "โบนัสโดเมน Frost Sphere"
+        }
+    },
+    "applicability": {
+        "yes": "ใช่",
+        "no": "ไม่",
+        "partial": "บางส่วน"
+    },
+    "notes": {
+        "title": "หมายเหตุตามโหมดเกม",
+        "table": "หมายเหตุตามโหมดเกม",
+        "petSkillsAutoApplied": "ทักษะสัตว์เลี้ยงทำงานอัตโนมัติ",
+        "note": "หมายเหตุ",
+        "noNote": "ไม่มี"
+    }
+}

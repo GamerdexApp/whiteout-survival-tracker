@@ -1,0 +1,239 @@
+{
+    "page": {
+        "title": "ผู้เชี่ยวชาญ"
+    },
+    "view": {
+        "subline": "{chief} · ผู้เชี่ยวชาญของ Dawn Academy ในเกมมี {total} คน",
+        "ghost": "ผู้เชี่ยวชาญ"
+    },
+    "common": {
+        "plan": "แผน",
+        "generation": "รุ่น {generation}",
+        "unknown": "ไม่ทราบ",
+        "and": "{first} และ {last}",
+        "expertCount": "{count, plural, other {ผู้เชี่ยวชาญ {amount} คน}}"
+    },
+    "stats": {
+        "recruited": "ผู้เชี่ยวชาญที่สรรหาแล้ว",
+        "recruitedValue": "{count} จาก {total}",
+        "powerNow": "พลังผู้เชี่ยวชาญตอนนี้ เฉพาะที่สรรหาแล้ว",
+        "powerAtMax": "พลังที่สูงสุด ทั้ง {total} คน",
+        "highest": "ความสนิทสูงสุด",
+        "highestValue": "{name} ที่ {affinity}",
+        "highestNone": "ยังไม่ได้สรรหา"
+    },
+    "toolbar": {
+        "searchLabel": "ค้นหาผู้เชี่ยวชาญ",
+        "searchPlaceholder": "ค้นหาผู้เชี่ยวชาญ",
+        "filters": "ตัวกรอง",
+        "emptyTitle": "ไม่พบผู้เชี่ยวชาญที่ตรงกัน",
+        "emptyDescription": "เปลี่ยนคำค้นหาหรือตัวกรองเพื่อดูผู้เชี่ยวชาญเพิ่ม",
+        "reset": "รีเซ็ตตัวกรอง",
+        "status": "แสดง {shown} จาก {total} เป้าหมายอ่านได้อย่างเดียวที่นี่ และตั้งในแผน ที่เลเวลที่หารด้วย 10 ลงตัว จะนับโบนัสของเลเวลก่อนหน้าจนกว่าผู้เชี่ยวชาญจะเลื่อนขั้น ทุกการเปลี่ยนแปลงบันทึกทันที",
+        "lockedNote": "ล็อก {count} คนจนถึงวันที่ของเซิร์ฟเวอร์ในภายหลัง"
+    },
+    "toast": {
+        "notRecruitedTitle": "ยังไม่ได้สรรหา {name}",
+        "notRecruitedMessage": "เลเวลยังคงบันทึกไว้และกลับมาใช้ได้เมื่อเปิดสรรหาแล้ว",
+        "undo": "เลิกทำ"
+    },
+    "card": {
+        "recruited": "สรรหาแล้ว",
+        "recruitedLabel": "สรรหา {expert} แล้ว",
+        "summary": "{title} · {specialty} · {generation}",
+        "affinityLevel": "เลเวลความสนิท",
+        "affinityLabel": "เลเวลความสนิทของ {expert}",
+        "affinityDisplay": "{level} / {max}",
+        "affinityProgress": "ความคืบหน้าความสนิทของ {expert}",
+        "goal": "เป้าหมาย {goal}",
+        "advanced": "เลื่อนขั้นแล้ว",
+        "notAdvanced": "ยังไม่เลื่อนขั้น",
+        "advancedLabel": "{expert} เลื่อนขั้นที่เลเวล {level}",
+        "relationship": "เลเวลความสัมพันธ์",
+        "affinityAvailable": "แต้มความสนิทที่มี",
+        "affinityAvailableLabel": "แต้มความสนิทที่ {expert} มี",
+        "affinityOf": "จาก {need} สำหรับเลเวล {level}",
+        "bonusTitle": "โบนัสพื้นฐานตอนนี้",
+        "bonusNow": "{amount}% {stats}",
+        "bonusOwnLevel": "เลเวล {level} ไม่ใช่ผลคูณของ 10 จึงนับโบนัสของเลเวลนั้นเอง",
+        "bonusAdvanced": "เลเวล {level} เลื่อนขั้นแล้ว จึงนับโบนัสของเลเวลนั้นเอง",
+        "bonusNotAdvanced": "เลเวล {level} ยังไม่เลื่อนขั้น จึงนับโบนัสของเลเวล {counted}",
+        "bonusAtMax": "ที่เลเวล 100: {amount}%",
+        "feeds": "เสริมให้",
+        "bonuses": "โบนัส",
+        "nextAdvancement": "การเลื่อนขั้นถัดไป: เลเวล {level} Sigil {sigils} ชิ้น",
+        "allAdvanced": "เลื่อนขั้นครบทุกขั้นแล้ว",
+        "skills": "ทักษะ",
+        "skillLabel": "เลเวล {skill} ของ {expert}",
+        "skillDisplay": "{level} / {max}",
+        "expAvailable": "EXP ที่มี",
+        "expAvailableLabel": "EXP ของ {skill} ที่ {expert} มี",
+        "expOf": "จาก {need} สำหรับเลเวล {level}",
+        "maxLevel": "เลเวลสูงสุด ไม่ต้องใช้ EXP",
+        "talent": "พรสวรรค์: {name}",
+        "talentLevel": "เลเวล {level} จาก {max}",
+        "talentFollows": "ตาม {relationship} {effect}",
+        "power": "พลัง {now} จาก {max}",
+        "derived": "คำนวณจากข้อมูล",
+        "notRecruitedHint": "ยังไม่ได้สรรหา สรรหาผู้เชี่ยวชาญนี้ใน Tundra Trek แล้วเปิดสรรหาแล้ว",
+        "recruitmentCost": "ค่าสรรหา: {cost}",
+        "maxPower": "พลังสูงสุด {max}",
+        "buffs": "บัฟ {stats}",
+        "expEnough": "เพียงพอสำหรับเลเวล {level}",
+        "affinityEnough": "เพียงพอสำหรับเลเวล {level}",
+        "skillLocked": "ยังไม่ปลดล็อก เพิ่มเป็นเลเวล 1 เพื่อปลดล็อก",
+        "sigilsOwned": "Sigil ที่มี",
+        "sigilsOwnedLabel": "Sigil ของ {expert} ที่มี",
+        "sigilsHint": "จำนวนเดียวกับ Sigil ในหน้าทรัพยากร"
+    },
+    "filtersFlyout": {
+        "title": "ตัวกรอง",
+        "description": "จำกัดรายการผู้เชี่ยวชาญและเลือกลำดับ",
+        "generation": "รุ่น",
+        "all": "ทั้งหมด",
+        "show": "แสดง",
+        "order": "ลำดับ",
+        "reset": "รีเซ็ต",
+        "showButton": "แสดง {experts}",
+        "notSaved": "ตัวกรองไม่ถูกบันทึก",
+        "showOptions": {
+            "everything": "ทั้งหมด",
+            "recruited": "เฉพาะที่สรรหาแล้ว",
+            "notRecruited": "เฉพาะที่ยังไม่สรรหา"
+        },
+        "orderOptions": {
+            "generation": "รุ่น",
+            "affinity": "เลเวลความสนิท",
+            "power": "พลัง",
+            "name": "ชื่อ"
+        }
+    },
+    "plan": {
+        "title": "วางแผนผู้เชี่ยวชาญ",
+        "description": "Books of Knowledge, Sigil, EXP ทักษะ และแต้มความสนิทสำหรับเป้าหมายความสนิทและทักษะ",
+        "saved": "บันทึกแผนเมื่อ {date}",
+        "close": "ปิด",
+        "save": "บันทึกแผน",
+        "exportButton": "ส่งออกไปยัง Core Events",
+        "exportNothing": "แผนไม่ต้องใช้หนังสือหรือ Sigil ที่จะส่งออก",
+        "export": {
+            "books": "Books of Knowledge",
+            "sigils": "Expert Sigil",
+            "exp": "EXP ทักษะ",
+            "expReason": "ไม่มีกิจกรรมที่ให้คะแนนจาก EXP ทักษะ"
+        },
+        "noExperts": "ยังไม่มีผู้เชี่ยวชาญในแผน เพิ่มผู้เชี่ยวชาญที่สรรหาแล้วเพื่อตั้งเป้าหมาย",
+        "add": {
+            "title": "เพิ่มผู้เชี่ยวชาญ",
+            "selectLabel": "ผู้เชี่ยวชาญที่จะเพิ่ม",
+            "button": "เพิ่มผู้เชี่ยวชาญ",
+            "allIn": "ผู้เชี่ยวชาญที่สรรหาแล้วทุกคนอยู่ในแผนแล้ว",
+            "noneRecruited": "สรรหาผู้เชี่ยวชาญในหน้านั้นเพื่อวางแผน"
+        },
+        "block": {
+            "remove": "ลบ",
+            "removeLabel": "ลบ {expert} ออกจากแผน",
+            "part": "ส่วน",
+            "current": "ปัจจุบัน",
+            "goalHeading": "เป้าหมาย",
+            "affinity": "เลเวลความสนิท",
+            "affinityHeld": "แต้มความสนิทที่มี {amount}",
+            "expHeld": "EXP ที่มี {amount}",
+            "currentLevel": "เลเวล {level}",
+            "currentAffinity": "{level} เลื่อนขั้นแล้ว",
+            "currentAffinityPlain": "{level}",
+            "affinityGoalLabel": "เป้าหมายความสนิทของ {expert}",
+            "skillGoalLabel": "เป้าหมาย {skill} ของ {expert}",
+            "advanceAtGoal": "เลื่อนขั้นที่เลเวล {level}",
+            "advanceAtGoalLabel": "{expert} เลื่อนขั้นที่เป้าหมาย"
+        },
+        "checks": {
+            "affinity": "แต้มความสนิท",
+            "learning": "EXP ทักษะจากตัวเร่งการเรียนรู้",
+            "minutesUnit": "นาที"
+        },
+        "stock": {
+            "sigils": "แผนต้องใช้ Sigil {total} ชิ้น Sigil ของผู้เชี่ยวชาญที่คุณมีครอบคลุม {own} ชิ้น ส่วนอีก {common} ชิ้นต้องมาจาก Common Expert Sigils Sigil ของผู้เชี่ยวชาญแต่ละคนนับให้เฉพาะคนนั้น",
+            "books": "แผนต้องใช้ Books of Knowledge {amount} เล่มสำหรับเลเวลทักษะ",
+            "affinity": "แผนต้องใช้แต้มความสนิท {needed} แต้ม แต้มที่คุณมีในการ์ดผู้เชี่ยวชาญครอบคลุม {held} แต้ม จึงยังต้องหาอีก {left} แต้ม แพ็กเกจข้อมูลไม่มีไอเทมความสนิท จึงไม่มีการตรวจกับสต็อก",
+            "learning": "แผนต้องใช้ EXP ทักษะ {exp} ทักษะของคุณมี {held} จึงต้องมาจากตัวเร่งการเรียนรู้อีก {left} การเรียนรู้หนึ่งนาทีให้ EXP {rate} จึงต้องใช้ {minutes} นาที"
+        },
+        "byExpert": {
+            "title": "ตามผู้เชี่ยวชาญ",
+            "sigils": "Sigil: ต้องใช้ {needed} ครอบคลุมด้วย Sigil ของ {name} {own} ที่เหลือ {common} มาจาก Common Expert Sigils",
+            "affinity": "ความสนิท: ต้องใช้ {needed} มี {held} ยังต้องหาอีก {left}",
+            "exp": "EXP ทักษะ: ต้องใช้ {needed} มี {held} ยังต้องหาอีก {left}"
+        },
+        "result": {
+            "title": "ผลลัพธ์",
+            "derived": "คำนวณจากข้อมูล",
+            "books": "Books of Knowledge",
+            "sigils": "Sigil",
+            "exp": "EXP ทักษะ",
+            "affinity": "แต้มความสนิท",
+            "advancements": "การเลื่อนขั้น",
+            "skillLevels": "เลเวลทักษะ",
+            "affinityLevels": "เลเวลความสนิท",
+            "heads": {
+                "expert": "ผู้เชี่ยวชาญ",
+                "books": "หนังสือ",
+                "sigils": "Sigil",
+                "exp": "EXP",
+                "levels": "เลเวล",
+                "advancements": "เลื่อนขั้น",
+                "affinity": "ความสนิท"
+            },
+            "empty": "เพิ่มผู้เชี่ยวชาญและเพิ่มเป้าหมายเพื่อดูผลลัพธ์",
+            "tableLabel": "ตารางผลลัพธ์ของแผน"
+        }
+    },
+    "learning": {
+        "title": "การเรียนรู้",
+        "note": "เรียนรู้ได้ครั้งละหนึ่งทักษะ เสร็จสิ้นจะเพิ่ม EXP ให้ทักษะนั้น",
+        "idle": "ไม่มีการเรียนรู้ เริ่มรอบเพื่อเพิ่ม EXP ให้ทักษะ",
+        "startButton": "เริ่มเรียนรู้",
+        "slotLabel": "การเรียนรู้ ครั้งละหนึ่งรอบ",
+        "jobTitle": "{expert} {skill} {session}",
+        "manageFinishText": "เสร็จสิ้นการอัปเกรดจะเพิ่ม EXP ของรอบให้ทักษะ ปล่อยคิวการเรียนรู้ และเพิ่มรอบนี้ลงในประวัติ เมื่อเวลาที่เหลือเป็นศูนย์ การ์ดจะแสดงว่าพร้อมเสร็จสิ้น ไม่มีอะไรเสร็จเอง เพราะคุณอาจใช้ตัวเร่งเวลาไปแล้ว",
+        "flyout": {
+            "title": "เริ่มเรียนรู้",
+            "description": "ทำเครื่องหมายว่ารอบการเรียนรู้กำลังทำงานสำหรับทักษะของผู้เชี่ยวชาญ",
+            "expert": "ผู้เชี่ยวชาญ",
+            "skill": "ทักษะ",
+            "skillOption": "{name} เลเวล {level} จาก {max}",
+            "session": "รอบ",
+            "sessionOption": "{label} EXP {exp}",
+            "sessionHint": "หนึ่งรอบได้ EXP 60 ต่อนาที รอบต่าง ๆ เป็นแบบเดียวกับในเกม",
+            "expEarned": "EXP ที่ได้",
+            "heldAfter": "EXP ที่มีหลังจากนั้น",
+            "tooMuch": "ทักษะรับ EXP ได้อีกเพียง {room} ส่วนที่เหลือจะเสียไป",
+            "whenStarted": "เริ่มเมื่อใด",
+            "modes": {
+                "now": "เริ่มตอนนี้",
+                "already": "เริ่มไปแล้ว"
+            },
+            "timeLeftHours": "เวลาที่เหลือ ชั่วโมง",
+            "ends": "สิ้นสุด",
+            "startedHint": "ใช้ เริ่มไปแล้ว เมื่อรอบกำลังทำงานอยู่ในเกม ใส่เวลาที่เกมแสดง",
+            "nothingToLearn": "ตอนนี้ไม่มีทักษะที่เรียนรู้ได้ สรรหาผู้เชี่ยวชาญและปลดล็อกทักษะที่ยังไม่ถึงเลเวลสูงสุด",
+            "busy": "มีรอบที่กำลังทำงานอยู่แล้ว ทำให้เสร็จหรือยกเลิกในจัดการก่อน",
+            "cancel": "ยกเลิก",
+            "start": "เริ่มเรียนรู้"
+        },
+        "toasts": {
+            "started": {
+                "title": "เริ่มเรียนรู้แล้ว",
+                "message": "{what}"
+            },
+            "finished": {
+                "title": "เรียนรู้ {what} แล้ว",
+                "message": "เพิ่ม EXP ให้ทักษะและประวัติแล้ว"
+            },
+            "cancelled": {
+                "title": "ยกเลิก {what} แล้ว",
+                "message": "ทักษะยังคงมี EXP เท่าเดิม"
+            },
+            "undo": "เลิกทำ"
+        }
+    }
+}

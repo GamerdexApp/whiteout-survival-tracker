@@ -1,0 +1,114 @@
+{
+    "page": {
+        "title": "جزيرة الفجر"
+    },
+    "view": {
+        "subline": "Lumber Camp وTree of Life وزينتك."
+    },
+    "locked": {
+        "title": "يتطلب Furnace {level}",
+        "description": "تُفتح جزيرة الفجر عند Furnace {level}. مستوى Furnace لديك {current}، ويتبقى {missing}. تبقى الصفحة ظاهرة لترى ما هو قادم. التعديل متوقف حتى ذلك الحين.",
+        "noFurnace": "تُفتح جزيرة الفجر عند Furnace {level}. لم يُضبط مستوى Furnace لديك بعد. تبقى الصفحة ظاهرة لترى ما هو قادم. التعديل متوقف حتى ذلك الحين.",
+        "missing": "{count, plural, zero {{amount} مستوى إضافي} one {{amount} مستوى إضافي} two {{amount} مستويان إضافيان} few {{amount} مستويات إضافية} many {{amount} مستوى إضافي} other {{amount} مستوى إضافي}}",
+        "link": "الانتقال إلى المباني"
+    },
+    "levelOf": "Lv {level} من {max}",
+    "camp": {
+        "title": "Lumber Camp",
+        "levelLabel": "مستوى Lumber Camp",
+        "workers": "العمال",
+        "rate": "المعدل في الثانية",
+        "essence": "Life Essence لبلوغ هذا المستوى",
+        "needsTree": "يتطلب Tree of Life بالمستوى {required}. مستواك {current}.",
+        "treeTooLow": "مستوى Tree of Life {current} منخفض جدًا. المستوى {level} من Lumber Camp يتطلب Tree of Life بالمستوى {required}.",
+        "next": "التالي، المستوى {level}: {essence} Life Essence، ويتطلب Tree of Life بالمستوى {tree}.",
+        "highest": "هذا أعلى مستوى."
+    },
+    "tree": {
+        "title": "Tree of Life",
+        "levelLabel": "مستوى Tree of Life",
+        "prosperity": "الازدهار لبلوغ هذا المستوى",
+        "essence": "Life Essence لبلوغ هذا المستوى",
+        "perHour": "Life Essence في الساعة",
+        "buff": "التعزيز",
+        "next": "التالي، المستوى {level}: {prosperity} ازدهار، {essence} Life Essence.",
+        "highest": "هذا أعلى مستوى."
+    },
+    "decorations": {
+        "title": "الزينة",
+        "owned": "مملوك {owned} من {total}",
+        "imageNote": "{withImage} فقط من {total} زينة لها صورة في الحزمة. المربع المصمت يشير إلى ما له صورة، والمربع المتقطع يشير إلى الباقي."
+    },
+    "search": {
+        "label": "بحث في الزينة",
+        "placeholder": "بحث في الزينة"
+    },
+    "status": {
+        "showing": "عرض {shown} من {total} زينة.",
+        "showMore": "{count, plural, zero {عرض {amount} زينة إضافية} one {عرض {amount} زينة إضافية} two {عرض {amount} زينتين إضافيتين} few {عرض {amount} زينات إضافية} many {عرض {amount} زينة إضافية} other {عرض {amount} زينة إضافية}}"
+    },
+    "empty": {
+        "title": "لا توجد زينة مطابقة",
+        "description": "غيّر البحث أو عوامل التصفية لعرض الزينة.",
+        "reset": "إعادة ضبط عوامل التصفية"
+    },
+    "card": {
+        "costEach": "تكلفة الواحدة",
+        "cost": "{amount} {item}",
+        "limit": "الحد",
+        "buffAtLevel": "التعزيز عند المستوى {level}",
+        "buffAtMax": "التعزيز عند أقصى مستوى",
+        "buffValue": "{value} {stat}",
+        "prosperityAtMax": "الازدهار عند الأقصى",
+        "essenceCost": "تكلفة Life Essence",
+        "unknown": "غير معروف",
+        "owned": "مملوكة",
+        "notOwned": "غير مملوكة",
+        "ownedLabel": "{name} مملوكة",
+        "levelLabel": "مستوى {name}",
+        "countLabel": "عدد {name}",
+        "limited": "محدودة",
+        "ownedCount": "مملوك {count} من {limit}"
+    },
+    "categories": {
+        "Basic": "أساسي",
+        "Vegetation": "نباتات",
+        "Common": "شائع",
+        "Uncommon": "غير شائع",
+        "Rare": "نادر",
+        "Epic": "ملحمي",
+        "Mythic": "خرافي",
+        "Unique": "فريد"
+    },
+    "filters": {
+        "button": "عوامل التصفية",
+        "title": "عوامل التصفية",
+        "description": "ضيّق قائمة الزينة. عوامل التصفية لا تُحفظ.",
+        "category": "الفئة",
+        "categoryAll": "الكل {amount}",
+        "categoryOption": "{category} {amount}",
+        "show": "عرض",
+        "ownedOnly": "المملوك فقط",
+        "limitedOnly": "المحدود فقط",
+        "unknownBuffOnly": "التعزيز غير المعروف فقط",
+        "sort": "الترتيب",
+        "order": {
+            "game": "ترتيب الحزمة",
+            "name": "الاسم من A إلى Z",
+            "level": "المستوى الأعلى أولًا"
+        },
+        "reset": "إعادة ضبط",
+        "showButton": "{count, plural, zero {عرض {amount} زينة} one {عرض {amount} زينة} two {عرض {amount} زينتين} few {عرض {amount} زينات} many {عرض {amount} زينة} other {عرض {amount} زينة}}",
+        "nonLimitedOnly": "غير المحدود فقط",
+        "notOwnedOnly": "غير المملوك فقط"
+    },
+    "prosperity": {
+        "label": "نقاط ازدهارك",
+        "progress": "نقاط ازدهار زينتك",
+        "possible": "من أصل {max} عندما تكون كل زينة في أعلى مستوى وحد",
+        "levelled": "الزينة ذات المستويات، ازدهار المستوى المحقق",
+        "limited": "الزينة ذات الحد، المملوك مضروبًا في ازدهار كل واحدة",
+        "ofMax": "{value} من {max}",
+        "withoutValue": "لا توجد قيمة ازدهار في البيانات لـ {count, plural, zero {{amount} زينة مملوكة} one {{amount} زينة مملوكة} two {{amount} زينتين مملوكتين} few {{amount} زينات مملوكة} many {{amount} زينة مملوكة} other {{amount} زينة مملوكة}}، {count, plural, zero {ولذلك لا تُحتسب} one {ولذلك لا تُحتسب} two {ولذلك لا تُحتسبان} few {ولذلك لا تُحتسب} many {ولذلك لا تُحتسب} other {ولذلك لا تُحتسب}}."
+    }
+}

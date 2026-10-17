@@ -1,0 +1,145 @@
+{
+    "line": "{events} فعالية: {alliance} للتحالف، و{solo} فردية، و{rookie} للمبتدئين، و{holiday} للأعياد. المراحل واحتساب النقاط والمكافآت والنصائح والمتاجر والترتيبات حيثما توفرت في الحزمة.",
+    "list": {
+        "title": "الفعاليات",
+        "showing": "عرض {shown} من {total}",
+        "search": "بحث",
+        "searchPlaceholder": "ابحث في الفعاليات بالاسم",
+        "scoringFilter": "احتساب النقاط",
+        "categoryLabel": "الفئة",
+        "all": "الكل",
+        "table": "الفعاليات",
+        "event": "الفعالية",
+        "category": "الفئة",
+        "frequency": "التكرار (نص حر)",
+        "duration": "المدة (نص حر)",
+        "scoringRows": "صفوف الاحتساب",
+        "noScoringRows": "لا توجد صفوف احتساب",
+        "emptyTitle": "لا توجد فعاليات مطابقة",
+        "emptyDescription": "غيّر البحث أو الفئة أو احتساب النقاط."
+    },
+    "category": {
+        "alliance": "التحالف",
+        "solo": "فردية",
+        "rookie": "المبتدئين",
+        "holiday": "الأعياد"
+    },
+    "scoring": {
+        "any": "أي احتساب",
+        "ranking": "الترتيب",
+        "tier": "الفئات",
+        "milestones": "المعالم",
+        "waves": "الموجات",
+        "participation": "المشاركة"
+    },
+    "parts": {
+        "days": "{count, plural, zero {{amount} يوم} one {{amount} يوم} two {{amount} يومان} few {{amount} أيام} many {{amount} يومًا} other {{amount} يوم}}",
+        "tiers": "{count, plural, zero {{amount} فئة} one {{amount} فئة} two {{amount} فئتان} few {{amount} فئات} many {{amount} فئة} other {{amount} فئة}}",
+        "missions": "{count, plural, zero {{amount} مهمة} one {{amount} مهمة} two {{amount} مهمتان} few {{amount} مهام} many {{amount} مهمة} other {{amount} مهمة}}",
+        "waves": "{count, plural, zero {{amount} موجة} one {{amount} موجة} two {{amount} موجتان} few {{amount} موجات} many {{amount} موجة} other {{amount} موجة}}",
+        "versions": "{count, plural, zero {{amount} إصدار} one {{amount} إصدار} two {{amount} إصداران} few {{amount} إصدارات} many {{amount} إصدارًا} other {{amount} إصدار}}",
+        "levels": "{count, plural, zero {{amount} مستوى} one {{amount} مستوى} two {{amount} مستويان} few {{amount} مستويات} many {{amount} مستوى} other {{amount} مستوى}}"
+    },
+    "detail": {
+        "title": "التفاصيل",
+        "category": "الفئة",
+        "frequency": "التكرار",
+        "duration": "المدة",
+        "summary": "الملخص",
+        "requirements": "المتطلبات",
+        "scoring": "احتساب النقاط",
+        "noRequirements": "لا شيء"
+    },
+    "phases": {
+        "title": "المراحل",
+        "table": "مراحل الفعالية",
+        "phase": "المرحلة",
+        "description": "الوصف"
+    },
+    "scoringRows": {
+        "title": "صفوف الاحتساب: {name}",
+        "table": "إجراءات الاحتساب",
+        "action": "الإجراء",
+        "points": "النقاط",
+        "victoryPoints": "{amount} نقطة انتصار",
+        "milestones": "معالم {name}",
+        "allianceMilestones": "معالم التحالف في {name}"
+    },
+    "missions": {
+        "title": "المهام",
+        "table": "مهام الفعالية",
+        "mission": "المهمة",
+        "group": "المجموعة",
+        "points": "النقاط",
+        "rewards": "المكافآت"
+    },
+    "tiers": {
+        "title": "الفئات",
+        "table": "فئات الفعالية",
+        "tier": "الفئة",
+        "score": "الهدف",
+        "scoreValue": "{amount} {unit}",
+        "scoreValuePoints": "{amount} نقطة",
+        "rewards": "المكافآت",
+        "note": "ملاحظة"
+    },
+    "rankings": {
+        "title": "مكافآت الترتيب",
+        "personal": "مكافآت الترتيب الشخصي",
+        "alliance": "مكافآت ترتيب التحالف",
+        "basedOn": "مكافآت الترتيب بحسب {basis}",
+        "table": "مكافآت الترتيب",
+        "rank": "المرتبة",
+        "starChange": "تغيّر النجوم",
+        "rewards": "المكافآت"
+    },
+    "rewards": {
+        "title": "المكافآت",
+        "partial": "قائمة المكافآت هذه غير مكتملة.",
+        "amountName": "{amount} {name}"
+    },
+    "pointLevels": {
+        "title": "مستويات النقاط",
+        "table": "مستويات النقاط",
+        "level": "المستوى",
+        "personal": "النقاط الشخصية",
+        "alliance": "نقاط التحالف",
+        "rewards": "المكافآت"
+    },
+    "waves": {
+        "title": "الموجات",
+        "table": "موجات الهجوم",
+        "wave": "الموجة",
+        "target": "الهدف",
+        "rule": "القاعدة",
+        "city": "المدينة",
+        "headquarters": "المقر الرئيسي"
+    },
+    "zones": {
+        "title": "المناطق",
+        "table": "مناطق الفعالية",
+        "zone": "المنطقة",
+        "days": "الأيام",
+        "statSources": "مصادر الإحصائيات",
+        "unlock": "الفتح"
+    },
+    "shop": {
+        "title": "المتجر",
+        "titleNamed": "المتجر: {name}",
+        "table": "عروض المتجر",
+        "offer": "العرض",
+        "cost": "التكلفة",
+        "costValue": "{amount} {currency}",
+        "limit": "الحد",
+        "contents": "المحتويات"
+    },
+    "versions": {
+        "title": "{name}",
+        "missions": "المهام",
+        "chests": "الصناديق"
+    },
+    "tips": {
+        "title": "نصائح"
+    },
+    "recordLine": "فعالية {category} بمراحلها واحتساب نقاطها ومكافآتها وترتيباتها."
+}

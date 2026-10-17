@@ -1,0 +1,54 @@
+{
+    "line": "Üç ağaçta {total} teknoloji: Büyüme {growth}, Bölge {territory}, Savaş {battle}. Yalnızca başvuru, burada hiçbir şey kaydedilmez.",
+    "list": {
+        "title": "Teknoloji düğümleri",
+        "categoriesLabel": "Teknoloji ağaçları",
+        "categories": {
+            "all": "Tümü",
+            "Growth": "Büyüme",
+            "Territory": "Bölge",
+            "Battle": "Savaş"
+        },
+        "search": "Ara",
+        "searchPlaceholder": "Teknolojiyi ada ya da etkiye göre ara",
+        "tier": "Kademe",
+        "allTiers": "Tüm kademeler",
+        "tierOption": "Kademe {tier}",
+        "empty": "Bu aramayla eşleşen teknoloji düğümü yok.",
+        "emptyHint": "Aramayı ya da bir filtreyi temizle.",
+        "columns": {
+            "tech": "Teknoloji",
+            "category": "Kategori",
+            "tier": "Kademe",
+            "levels": "Seviyeler",
+            "maxBonus": "Maks. bonus",
+            "cost": "Seviye 1 maliyeti",
+            "time": "Seviye 1 süresi",
+            "requires": "Seviye 1 gereksinimi"
+        },
+        "mobileMeta": "{category}, kademe {tier}, {levels}",
+        "count": "{count, plural, one {{amount} teknoloji} other {{amount} teknoloji}}"
+    },
+    "levels": "{count, plural, one {{amount} seviye} other {{amount} seviye}}",
+    "detail": {
+        "facts": "Ayrıntılar",
+        "levelsTitle": "Seviyeler",
+        "none": "Yok",
+        "fields": {
+            "category": "Kategori",
+            "tier": "Kademe",
+            "effect": "Etki",
+            "stat": "İstatistik",
+            "levels": "Seviyeler"
+        },
+        "columns": {
+            "level": "Seviye",
+            "bonus": "Bonus",
+            "cost": "Maliyet",
+            "time": "Süre",
+            "requires": "Gereksinim"
+        },
+        "level": "Seviye {level}",
+        "requirement": "{name} seviye {level}"
+    }
+}

@@ -1,0 +1,78 @@
+{
+    "page": {
+        "title": "المظاهر"
+    },
+    "view": {
+        "subline": "{chief} · {details} · مملوك {owned} من {total} مظهرًا"
+    },
+    "owned": {
+        "label": "مملوكة",
+        "value": "{owned} من {total}",
+        "progress": "المظاهر المملوكة",
+        "withBonus": "{withBonus} من {total} مظهرًا لها ميزة"
+    },
+    "totals": {
+        "title": "مزايا المظاهر المملوكة",
+        "estimate": "تقدير",
+        "percent": "‎+{amount}%",
+        "flat": "‎+{amount}",
+        "none": "لا يوجد مظهر مملوك له ميزة بعد.",
+        "note": "مجموع ميزة {count, plural, zero {{amount} مظهر مملوك} one {{amount} مظهر مملوك} two {{amount} مظهرين مملوكين} few {{amount} مظاهر مملوكة} many {{amount} مظهرًا مملوكًا} other {{amount} مظهر مملوك}}، لكل إحصائية، يحسبه التطبيق. يفترض أن كل مظهر مملوك يُطبَّق في وقت واحد. تُجمع Troop Attack وTroops Attack معًا."
+    },
+    "expiry": {
+        "title": "انتهاء الصلاحية غير متتبَّع.",
+        "text": "المدة (دائم، 30 يومًا، حسب الرتبة) موجودة في نص الوصف فقط. يبقى المظهر المؤقت مملوكًا حتى تمسحه."
+    },
+    "search": {
+        "label": "بحث في المظاهر",
+        "placeholder": "ابحث في المظاهر بالاسم أو المصدر"
+    },
+    "filters": {
+        "button": "عوامل التصفية",
+        "title": "عوامل التصفية",
+        "description": "اختر ما تعرضه قائمة المظاهر",
+        "reset": "إعادة ضبط",
+        "showButton": "{count, plural, zero {عرض {amount} مظهر} one {عرض {amount} مظهر} two {عرض {amount} مظهرين} few {عرض {amount} مظاهر} many {عرض {amount} مظهرًا} other {عرض {amount} مظهر}}",
+        "skinType": "نوع المظهر",
+        "typeAll": "الكل {amount}",
+        "typeOption": "{type} {amount}",
+        "owned": "المملوك",
+        "bonus": "الميزة",
+        "order": "الترتيب",
+        "notSaved": "عوامل التصفية لا تُحفظ.",
+        "ownedOptions": {
+            "all": "كل المظاهر",
+            "owned": "مملوك",
+            "notOwned": "غير مملوك"
+        },
+        "bonusOptions": {
+            "any": "أي",
+            "has": "له ميزة",
+            "none": "بلا ميزة"
+        },
+        "orderOptions": {
+            "game": "ترتيب اللعبة",
+            "name": "الاسم، من A إلى Z",
+            "owned": "المملوك أولًا"
+        }
+    },
+    "status": {
+        "showing": "عرض {shown} من {total} مظهرًا.",
+        "showingFiltered": "عرض {shown} من {total} مظهرًا. عوامل التصفية: {filters}.",
+        "showMore": "{count, plural, zero {عرض {amount} مظهر إضافي} one {عرض {amount} مظهر إضافي} two {عرض {amount} مظهرين إضافيين} few {عرض {amount} مظاهر إضافية} many {عرض {amount} مظهرًا إضافيًا} other {عرض {amount} مظهر إضافي}}"
+    },
+    "empty": {
+        "title": "لا توجد مظاهر مطابقة",
+        "description": "غيّر البحث أو عوامل التصفية لعرض المظاهر.",
+        "reset": "إعادة ضبط عوامل التصفية"
+    },
+    "card": {
+        "bonus": "الميزة",
+        "source": "المصدر",
+        "unknown": "غير معروف",
+        "bonusValue": "{value} {stat}",
+        "owned": "مملوك",
+        "ownedLabel": "مملوك: {name}، {type}",
+        "domainWarning": "نص ميزة النطاق موجود في الوصف ولا يُحتسب."
+    }
+}

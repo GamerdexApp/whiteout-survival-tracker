@@ -1,0 +1,303 @@
+{
+    "title": "Araştırma",
+    "unknown": "Bilinmiyor",
+    "nodeCount": "{count, plural, one {{amount} düğüm} other {{amount} düğüm}}",
+    "jobTitle": "{name}, seviye {from} - {to}",
+    "tabs": {
+        "growth": "Büyüme",
+        "economy": "Ekonomi",
+        "battle": "Savaş",
+        "war-academy-troops": "War Academy T11",
+        "t12-infantry": "Piyade T12",
+        "t12-marksman": "Nişancı T12",
+        "t12-lancer": "Mızrakçı T12"
+    },
+    "tier": {
+        "plain": "Kademe {tier}",
+        "troopLine": "{line} T{tier}"
+    },
+    "requirement": {
+        "yours": "Seninki: {level}",
+        "notBuilt": "İnşa edilmedi",
+        "researchLevel": "{name} seviye {level}",
+        "yoursLevel": "Seninki: seviye {level}",
+        "notReleased": "{id} (henüz yayınlanmadı)"
+    },
+    "tabLock": {
+        "unknownAge": "{tab} araştırması sunucu yaşı {days} günde açılır. Seninki bilinmiyor. Şefi düzenle bölümünde sunucu başlangıç tarihi ekle.",
+        "knownAge": "{tab} araştırması sunucu yaşı {days} günde açılır. Seninki: {yours}."
+    },
+    "option": {
+        "label": "{name}, {tab}, seviye {from} - {to}",
+        "subtitle": "Seviye {from} - {to}, {tab} sekmesi",
+        "busy": "Meşgul: {name} seviye {level}, {timeLeft}"
+    },
+    "nodeCard": {
+        "allResearched": "Tüm seviyeler araştırıldı",
+        "nextTime": "Seviye {level} süresi: {time}",
+        "power": {
+            "researched": "{power} araştırıldı",
+            "next": "Sonraki seviye +{power}",
+            "some": "Güç {parts}",
+            "none": "Güç 0"
+        },
+        "maxed": "Tamamlandı. {bonus}",
+        "noBonus": "Veride bonus yok",
+        "level": "Seviye {level} / {max}",
+        "goal": "Hedef {goal}",
+        "noGoal": "Hedef yok",
+        "progress": "İlerleme: {name}",
+        "lockedByTab": "Kilitli: {reason}",
+        "lockedByRequirement": "Kilitli: {requirement} gerekir",
+        "placeholder": "Yer tutucu. Maliyet ve bonus pakette boş.",
+        "needsFirst": "Önce gerekir: {names}",
+        "researching": "Araştırılıyor: {name}",
+        "levelStepper": "Seviye: {name}",
+        "detailsOf": "Ayrıntılar: {name}",
+        "details": "Ayrıntılar"
+    },
+    "queuesStrip": {
+        "title": "Araştırma sıraları",
+        "note": "Büyüme, Ekonomi ve Savaş tek bir sırayı paylaşır. T11 ve T12, War Academy sırasını kullanır.",
+        "idle": "Aynı anda tek araştırma. Birini başlatmak için Yükseltmeyi başlat'a bas."
+    },
+    "filters": {
+        "title": "Filtreler",
+        "description": "{tab} sekmesinde nelerin gösterileceğini seç",
+        "reset": "Sıfırla",
+        "show": "Göster: {nodes}",
+        "tier": "Kademe",
+        "statusLabel": "Durum",
+        "troopLine": "Birlik hattı",
+        "orderLabel": "Sıralama",
+        "notSaved": "Filtreler kaydedilmez.",
+        "all": "Tümü",
+        "status": {
+            "all": "Tümü",
+            "progress": "Sürüyor",
+            "goal": "Hedefi var",
+            "maxed": "Tamamlandı",
+            "locked": "Kilitli",
+            "notStarted": "Başlamadı"
+        },
+        "order": {
+            "game": "Oyun sırası",
+            "name": "Ad, A'dan Z'ye",
+            "level": "Seviye, en yüksek önce"
+        }
+    },
+    "massSet": {
+        "stop": "{level} / {max}",
+        "title": "Toplu ayarla, {tab}",
+        "description": "Bir düğüm ve bir seviye seç. Ağaçta ondan öncekilerin hepsi son seviyeye çıkar.",
+        "cancel": "İptal",
+        "set": "Ayarla: {nodes}",
+        "node": "Düğüm",
+        "level": "Seviye",
+        "levelToSet": "Ayarlanacak seviye",
+        "whatChanges": "{tab} sekmesinde neler değişir",
+        "nothingChanges": "Hiçbir şey değişmez. Buradaki her düğüm zaten bunun üstünde ya da bu seviyede.",
+        "change": "{from} - {to}",
+        "hidden": "ve {amount} önceki düğüm daha",
+        "alreadyMax": "{count, plural, one {{amount} önceki düğüm} other {{amount} önceki düğüm}} zaten son seviyede ve olduğu gibi kalır. Ağaçta sonraki düğümlere dokunulmaz. Zaten daha yüksek olan seviye kalır.",
+        "blockersTitle": "Bazı düğümler için önce bir bina gerekir.",
+        "blocker": "{name} için {building} gerekir",
+        "blockersMore": " ve {amount} tane daha",
+        "blockers": "{list}{more}. Daha önceki bir düğüm seç ya da binayı Binalar sayfasında yükselt.",
+        "footnote": "Toplu ayarlama yalnızca bu sekmenin kayıtlı seviyelerini değiştirir. Hiçbir seviyeyi düşürmez. Hedefler değişmez."
+    },
+    "nodeFlyout": {
+        "fallbackTitle": "Araştırma",
+        "description": "{category}, kademe {tier}, {levels} seviye",
+        "close": "Kapat",
+        "unknown": "Bilinmiyor",
+        "levelOf": "Seviye {level} / {max}",
+        "status": {
+            "notStarted": "başlamadı",
+            "maxed": "tamamlandı",
+            "inProgress": "sürüyor"
+        },
+        "goal": "Hedef {goal}",
+        "noGoal": "Hedef yok",
+        "openPlan": "Planı aç",
+        "maxLevel": {
+            "title": "Son seviye",
+            "nothingLeft": "Araştırılacak bir şey kalmadı.",
+            "noBonus": "Veride bonus yok."
+        },
+        "placeholder": {
+            "title": "Yer tutucu",
+            "description": "Bu düğümün pakette henüz maliyeti ve bonusu yok. Araştırma süresi ve maliyeti Bilinmiyor görünür."
+        },
+        "upcoming": {
+            "first": "İlk seviyeler",
+            "after": "{level} sonrasındaki seviyeler",
+            "heads": {
+                "level": "Seviye",
+                "bonus": "Bonus",
+                "time": "Süre",
+                "power": "Güç"
+            },
+            "goalBadge": "Hedef",
+            "noBonus": "Yok",
+            "shaded": "Gölgeli satırlar, seviyenle hedefin arasındaki seviyelerdir."
+        },
+        "cost": {
+            "title": "Sonraki seviyelerin maliyeti",
+            "level": "Sv"
+        },
+        "total": {
+            "title": "Hedefine toplam, seviye {level} - {goal}",
+            "knownTime": "Bilinen araştırma süresi",
+            "power": "Güç",
+            "missingTimes": "{count, plural, one {{amount} seviyenin} other {{amount} seviyenin}} pakette süresi yok ve burada 0 sayılır."
+        },
+        "requirements": {
+            "title": "Seviye {level} gereksinimleri",
+            "none": "Gereksinim yok.",
+            "met": "Karşılandı",
+            "notMet": "Karşılanmadı",
+            "later": "Sonraki seviyeler şunları ister: {list}."
+        }
+    },
+    "tree": {
+        "legend": {
+            "max": "Son",
+            "inProgress": "Sürüyor",
+            "notStarted": "Başlamadı",
+            "locked": "Kilitli"
+        },
+        "pillMax": "Maks. {max}",
+        "pillLevel": "Lv {level} / {max}",
+        "region": "{tab} araştırma ağacı",
+        "openNode": "{name}, {pill}. Ayrıntıları aç"
+    },
+    "plan": {
+        "title": "Araştırma Planı",
+        "description": "Mevcut seviyeden hedefe kaynaklar, süre ve güç",
+        "saved": "Plan kaydedildi: {date}",
+        "close": "Kapat",
+        "save": "Planı kaydet",
+        "goals": "Hedefler, {nodes}",
+        "noGoals": "Henüz hedef yok. Yukarıdan bir araştırma düğümü ekle, sonra ulaşmasını istediğin seviyeyi seç.",
+        "goalsHint": "Mevcut seviye sayfadaki seviyedir. Onu orada değiştir. Hedefler sayfada salt okunurdur ve burada ayarlanır.",
+        "failed": "Plan hesaplanamadı.",
+        "timeNote": "%{percent} hız bonusundan sonra plan {time} sürer. Stokun: Araştırma {research} dk, Genel {general} dk. Genel hızlandırmalar araştırmaya sayılır.",
+        "percent": "%{value}",
+        "percentPlus": "+%{value}",
+        "appointment": {
+            "none": "Yok",
+            "regular": "Normal",
+            "supreme": "Üstün"
+        },
+        "add": {
+            "title": "Araştırma düğümü ekle",
+            "none": "Her düğüm zaten planda ya da son seviyesinde.",
+            "select": "Eklenecek araştırma düğümü",
+            "button": "Araştırma ekle"
+        },
+        "speed": {
+            "title": "Araştırma hızı",
+            "readOnly": "Salt okunur",
+            "carriedOver": "Bonuslar sayfasından aktarıldı.",
+            "turnedOff": "Ayarlar'da Bonuslar toplamlarımı uygula altında kapalı.",
+            "openBonuses": "Bonuslar'ı aç",
+            "stateBuff": "State bonusu",
+            "vicePresident": "Başkan yardımcısı",
+            "total": "Toplam araştırma hızı"
+        },
+        "goal": {
+            "level": "Seviye {level}",
+            "to": "hedef",
+            "label": "Hedef: {name}",
+            "remove": "Plandan kaldır: {name}"
+        },
+        "result": {
+            "title": "Sonuç, {steps} adım",
+            "powerGained": "Kazanılan güç",
+            "speedupMinutes": "Gereken hızlandırma dakikası",
+            "baseTime": "Temel süre",
+            "timeWithBonus": "%{percent} bonusla süre",
+            "stepsWithoutTime": "{count, plural, one {{amount} adımın} other {{amount} adımın}} pakette süresi yok ve 0 saniye sayılır.",
+            "stepCount": "{count, plural, one {{amount} adım} other {{amount} adım}}",
+            "buildingRequirements": "Bina gereksinimleri",
+            "unmet": "Karşılanmayan ön koşullar",
+            "unmetNone": "Bu hedefler için yok.",
+            "unmetItem": "{name} seviye {level} için {requires} seviye {requiresLevel} gerekir"
+        },
+        "export": {
+            "button": "Ana Etkinlikler'e aktar",
+            "empty": "Aktarmak için plana bir hedef ekle.",
+            "speedupMinutes": "Araştırma hızlandırma dakikası",
+            "power": "Araştırmadan kazanılan güç",
+            "computed": "Uygulama tarafından plan sonucundan hesaplandı.",
+            "unscored": "Hiçbir etkinlik {name} için puan vermez."
+        }
+    },
+    "view": {
+        "ofTotal": "{total} içinden {count}",
+        "undo": "Geri al",
+        "massSetApplied": {
+            "title": "Toplu ayar uygulandı",
+            "message": "Güncellendi: {nodes}."
+        },
+        "started": {
+            "title": "Araştırma başladı",
+            "message": "{name}, seviye {from} - {to}."
+        },
+        "manage": {
+            "slotLabel": "{queue}, {category}",
+            "finishText": "Yükseltmeyi bitir, {name} seviyesini {level} yapar, {queue} sırasını boşaltır ve yükseltmeyi Geçmiş'ine ekler. Kalan süre sıfır olunca düğüm ve sıra kartında Bitirmeye hazır yazar. Hızlandırma kullanmış olabileceğin için hiçbir şey kendiliğinden bitmez."
+        },
+        "finished": {
+            "title": "Araştırıldı: {name}",
+            "message": "Şimdi seviye {level}. Geçmiş'e eklendi."
+        },
+        "cancelled": {
+            "title": "Araştırma iptal edildi: {name}",
+            "message": "Seviye eskisi gibi kalır. Gerekirse stokunu Kaynaklar'da düzelt."
+        },
+        "subline": {
+            "researchCenter": "Research Center {level}",
+            "warAcademy": "War Academy {level}"
+        },
+        "stats": {
+            "maxed": "Tamamlanan düğümler, ağaç yüzdesi: %{percent}",
+            "power": "Araştırma gücü, araştırılan her seviyenin gücü",
+            "withoutTimeNone": "Araştırma süresi olmayan yok, her seviyenin süresi var",
+            "withoutTimeSome": "Araştırma süresi olmayanlar Bilinmiyor görünür",
+            "locked": "Sunucu yaşı ya da gereksinimlerle kilitli"
+        },
+        "tabLockedNote": "{reason} Plan'da yine de hedef belirleyebilirsin.",
+        "lockedByRequirement": "Bu sekmedeki {total} düğümün {count} tanesi bir gereksinim yüzünden kilitli.",
+        "search": {
+            "label": "Düğüm ara",
+            "placeholder": "Düğümleri ada ya da bonusa göre ara"
+        },
+        "massSet": "Toplu ayarla",
+        "layout": {
+            "label": "Düzen",
+            "grid": "Izgara",
+            "tree": "Ağaç"
+        },
+        "plan": "Plan",
+        "status": {
+            "tree": "{tab} ağacında {count} düğüm. Bu sekmedeki araştırma gücü: {power}. Kaydırarak gez. Aramaya ya da filtrelere uymayan düğümler soluk görünür.",
+            "grid": "{tab} sekmesinin {count} düğümünden {shown} tanesi gösteriliyor. Bu sekmedeki araştırma gücü: {power}. Hedefler burada salt okunurdur ve Plan'da ayarlanır."
+        },
+        "empty": {
+            "title": "Eşleşen düğüm yok",
+            "description": "Her düğümü görmek için aramayı değiştir ya da filtreleri sıfırla.",
+            "reset": "Aramayı ve filtreleri sıfırla"
+        },
+        "start": {
+            "description": "Bir araştırmayı yükseltiliyor olarak işaretle",
+            "selectLabel": "Yükseltilecek araştırma",
+            "selectHelp": "Yalnızca şu an başlatabileceğin araştırmalar listelenir. Kilitli, tamamlanmış ve çalışan araştırmalar dışarıda bırakılır. Büyüme, Ekonomi ya da Savaş araştırması Araştırma sırasını kullanır. T11 ya da T12 araştırması War Academy sırasını kullanır.",
+            "timeLabel": "Araştırma süresi",
+            "speedLabel": "Araştırma hızı",
+            "slotLabel": "Sıra",
+            "slotHelp": "Her sırada aynı anda tek araştırma. Sıra meşgulken bu kart ne zaman boşalacağını söyler."
+        }
+    }
+}

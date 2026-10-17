@@ -1,0 +1,176 @@
+{
+    "none": "ไม่มี",
+    "charmLabel": "เครื่องราง {number}",
+    "view": {
+        "title": "อุปกรณ์หัวหน้า",
+        "tabsLabel": "อุปกรณ์หัวหน้า",
+        "gearSubline": "{name} · 6 ช่อง 150 แถวอัปเกรด",
+        "charmsSubline": "{name} · อุปกรณ์ 6 ชิ้น ชิ้นละ 3 เครื่องราง 75 แถวอัปเกรด",
+        "tabs": {
+            "gear": "อุปกรณ์หัวหน้า",
+            "charms": "เครื่องรางหัวหน้า"
+        }
+    },
+    "shared": {
+        "plan": "แผน",
+        "autoSaveHint": "ทุกการเปลี่ยนแปลงบันทึกทันที ปุ่มเพิ่มลดเลื่อนทีละแถวตามลำดับในแพ็กเกจข้อมูล",
+        "scoreToGain": "คะแนนที่ยังต้องได้",
+        "notes": "หมายเหตุ",
+        "package": "แพ็กเกจ"
+    },
+    "gear": {
+        "scoreNow": "คะแนนอุปกรณ์ตอนนี้ 6 ช่อง",
+        "powerNow": "พลังอุปกรณ์ตอนนี้",
+        "stepsToGoals": "ขั้นตอนถึงทุกเป้าหมาย",
+        "goalsHint": "เป้าหมายอ่านได้อย่างเดียวที่นี่ ตั้งในแผนแล้วกดบันทึกแผน",
+        "stepWord": "ขั้นตอน",
+        "tiers": {
+            "title": "ระดับ",
+            "description": "แพ็กเกจข้อมูลแบ่ง 150 แถวเป็น {count} ระดับ ระดับที่เน้นสีมีอุปกรณ์ของคุณอย่างน้อยหนึ่งชิ้น",
+            "rows": "{rows} แถว",
+            "names": {
+                "EpicT1": "Epic T1",
+                "MythicT1": "Mythic T1",
+                "MythicT2": "Mythic T2",
+                "LegendaryT1": "Legendary T1",
+                "LegendaryT2": "Legendary T2",
+                "LegendaryT3": "Legendary T3",
+                "LegendaryT4": "Legendary T4",
+                "LegendaryT5": "Legendary T5",
+                "LegendaryT6": "Legendary T6"
+            }
+        },
+        "notes": {
+            "setBonus": {
+                "title": "กฎโบนัสชุด",
+                "body": "อุปกรณ์ระดับเดียวกัน 3 ชิ้นให้ป้องกัน และ 6 ชิ้นให้โจมตี กับทหารทั้งสามประเภท อุปกรณ์ที่ไม่มีเลเวลไม่นับ แต่ละระดับมีค่าเดียว"
+            },
+            "troopType": {
+                "title": "ประเภททหารกรอกด้วยมือ",
+                "body": "Cap และ Watch เสริม Lancer, Coat และ Pants เสริม Infantry, Ring และ Weapon เสริม Marksman ผู้จัดทำแพ็กเกจพิมพ์ข้อมูลนี้จากข้อความในวิกิ"
+            },
+            "capacity": {
+                "title": "ความจุเป็น 0 ในแถวแรก ๆ",
+                "body": "26 แถวแรกไม่มีความจุการส่งกำลังในแพ็กเกจข้อมูล จึงแสดง 0 จนกว่าข้อมูลจะมีค่า"
+            }
+        }
+    },
+    "charms": {
+        "scoreNow": "คะแนนเครื่องรางตอนนี้ 18 ชิ้น",
+        "powerNow": "พลังเครื่องรางตอนนี้",
+        "stagesToGoals": "ขั้นถึงทุกเป้าหมาย",
+        "goalsHint": "เป้าหมายอ่านได้อย่างเดียวที่นี่ และตั้งในแผน",
+        "stepWord": "ขั้น",
+        "slotMeta": "{troop} · 3 เครื่องราง",
+        "slotStages": ", อีก {stages} ขั้นถึงเป้าหมาย",
+        "notes": {
+            "secrets": {
+                "title": "Charm Secrets เริ่มที่เลเวล 11",
+                "body": "ตั้งแต่เลเวล 11 ขั้น 1 แต่ละขั้นต้องใช้ Charm Secrets ขั้นก่อนหน้านั้นใช้เพียง Charm Guide และ Charm Design"
+            },
+            "look": {
+                "title": "เครื่องรางเปลี่ยนรูปลักษณ์ทุกเลเวล",
+                "body": "เครื่องรางแต่ละชิ้นมี 18 ไอคอน เลเวลละหนึ่งไอคอน อุปกรณ์แต่ละชิ้นมีเครื่องราง 3 ชิ้น และตามประเภททหารของอุปกรณ์"
+            },
+            "estimate": {
+                "title": "คะแนนของแต่ละขั้นเป็นค่าประมาณ",
+                "body": "คะแนนของเลเวลถูกแบ่งเท่า ๆ กันให้ทุกขั้นที่นำไปสู่เลเวลนั้น เกมไม่ยืนยันการแบ่งนี้"
+            }
+        }
+    },
+    "badge": {
+        "tier": "ระดับ {tier}",
+        "stars": "{count, plural, other {{amount} ดาว}}",
+        "tierAndStars": "{tier}, {stars}"
+    },
+    "row": {
+        "level": "เลเวล {title}",
+        "progressLabel": "ความคืบหน้าของ {title} ใน {total} แถว",
+        "progress": "{progress} จาก {total}",
+        "stepsToGoal": " · อีก {steps} ถึงเป้าหมาย",
+        "goal": "เป้าหมาย {name}",
+        "noGoal": "ไม่มีเป้าหมาย",
+        "stats": "ค่าสถานะ {stat} · พลัง {power}",
+        "statPercent": "{percent}%",
+        "capacity": " · ความจุ {capacity}",
+        "lockedCurrent": "เลเวล {name} ที่บันทึกไว้ถูกล็อกด้วยอายุเซิร์ฟเวอร์และไม่ถูกนับ {requirement}",
+        "lockedGoal": "เป้าหมาย {name} ที่บันทึกไว้ถูกล็อกด้วยอายุเซิร์ฟเวอร์และไม่ถูกวางแผน {requirement}"
+    },
+    "summary": {
+        "title": "ที่เหลือเพื่อถึงทุกเป้าหมาย",
+        "derived": "คำนวณจากข้อมูล",
+        "score": "คะแนน",
+        "powerGain": "พลังที่เพิ่ม",
+        "noGoals": "ยังไม่ได้ตั้งเป้าหมาย ตั้งเป้าหมายในแผน",
+        "openPlan": "เปิดแผนเพื่อดูคะแนนกิจกรรมและรายละเอียด"
+    },
+    "setBonus": {
+        "title": "โบนัสชุดที่ปลดล็อกแล้ว",
+        "pieceSet": "ชุด {pieces} ชิ้น",
+        "active": "ใช้งานอยู่",
+        "notActive": "ยังไม่ใช้งาน",
+        "value": "{stat} +{percent}%",
+        "appliesTo": "อุปกรณ์ {tierName} สำหรับ Infantry, Lancer และ Marksman",
+        "needs": "ต้องมีอุปกรณ์ระดับเดียวกัน {pieces} ชิ้น {stat} +0% ในตอนนี้"
+    },
+    "plan": {
+        "gear": {
+            "title": "วางแผนอุปกรณ์หัวหน้า",
+            "description": "วัสดุ คะแนน และพลังจากเลเวลปัจจุบันถึงเป้าหมาย",
+            "stepWord": "ขั้นตอน",
+            "conversionNote": "การตรวจสอบไม่นับการแปลงวัสดุ ตัวแปลงมีอัตราแลกเปลี่ยนเจ็ดแบบ แต่ละแบบมีขีดจำกัดรายสัปดาห์ เช่น 10 Design Plans เป็น 1 Lunar Amber สูงสุด 500 ต่อสัปดาห์"
+        },
+        "charm": {
+            "title": "วางแผนเครื่องรางหัวหน้า",
+            "description": "วัสดุ คะแนน และพลังจากเลเวลปัจจุบันถึงเป้าหมาย",
+            "stepWord": "ขั้น",
+            "conversionNote": "การตรวจสอบไม่นับการแปลงวัสดุ: Charm Guide 2 ชิ้นแปลงเป็น Charm Design 1 ชิ้นและแปลงกลับได้ และอย่างใดอย่างหนึ่ง 40 ชิ้นแปลงเป็น Charm Secrets 1 ชิ้น"
+        },
+        "saved": "บันทึกแผนเมื่อ {date}",
+        "close": "ปิด",
+        "save": "บันทึกแผน",
+        "export": {
+            "button": "ส่งออกไปยัง Core Events",
+            "nothingToExport": "ตั้งเป้าหมายให้สูงกว่าเลเวลปัจจุบันเพื่อส่งออกแผน",
+            "gearScore": "คะแนนอุปกรณ์หัวหน้า",
+            "charmScore": "คะแนนเครื่องรางหัวหน้า",
+            "power": "พลังที่ได้รับ",
+            "powerReason": "ไม่มีแถวใน Core Events ที่ให้คะแนนจากพลังอุปกรณ์หรือเครื่องรางหัวหน้า"
+        },
+        "inputs": "ข้อมูลนำเข้า",
+        "slotTroop": "{slot}, {troop}",
+        "from": "จาก {level}",
+        "goalLabel": "เป้าหมาย {label}",
+        "slotGoalLabel": "เป้าหมาย {label} ของ {slot}",
+        "inputsHint": "เลเวลปัจจุบันคือเลเวลที่อยู่ในหน้านั้น เปลี่ยนที่นั่น เป้าหมายอ่านได้อย่างเดียวในหน้านั้นและตั้งที่นี่",
+        "result": "ผลลัพธ์",
+        "score": "คะแนน",
+        "powerGain": "พลังที่เพิ่ม",
+        "events": {
+            "svs": "SvS State of Power",
+            "allianceShowdown": "Alliance Showdown",
+            "kingOfIcefield": "King of Icefield",
+            "hallOfChief": "Hall of Chief"
+        },
+        "bySlot": "ตามช่อง",
+        "byCharm": "ตามเครื่องราง",
+        "columnSlot": "ช่อง",
+        "columnCharm": "เครื่องราง",
+        "slotCharm": "{slot} {charm}",
+        "converter": {
+            "title": "ตัวแปลงวัสดุ",
+            "spend": "จ่าย",
+            "get": "ได้รับ",
+            "limit": "ขีดจำกัด",
+            "amount": "{quantity} {name}",
+            "perWeek": "{limit} ต่อสัปดาห์",
+            "noLimit": "ไม่จำกัดรายสัปดาห์"
+        },
+        "lockedCurrent": "เลเวล {name} ที่บันทึกไว้ถูกล็อกด้วยอายุเซิร์ฟเวอร์ {requirement}"
+    },
+    "lock": {
+        "title": "ล็อกด้วยอายุเซิร์ฟเวอร์",
+        "stop": "{name} (ล็อก วันที่ {day})",
+        "group": "ตั้งแต่ {name}: {requirement}"
+    }
+}

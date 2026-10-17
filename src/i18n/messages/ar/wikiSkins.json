@@ -1,0 +1,40 @@
+{
+    "line": "{skins} في {types}، مع الميزة ومكان الحصول عليها ومدة بقائها.",
+    "skinCount": "{count, plural, zero {{amount} مظهر} one {{amount} مظهر} two {{amount} مظهران} few {{amount} مظاهر} many {{amount} مظهرًا} other {{amount} مظهر}}",
+    "typeCount": "{count, plural, zero {{amount} نوع} one {{amount} نوع} two {{amount} نوعان} few {{amount} أنواع} many {{amount} نوعًا} other {{amount} نوع}}",
+    "gallery": {
+        "title": "معرض المظاهر",
+        "showing": "عرض {shown} من {total}",
+        "search": "بحث",
+        "searchPlaceholder": "ابحث في المظاهر بالاسم أو المصدر",
+        "bonusStat": "إحصائية الميزة",
+        "anyStat": "أي إحصائية",
+        "noBonus": "بلا ميزة",
+        "duration": "المدة",
+        "anyDuration": "أي مدة",
+        "permanent": "دائم",
+        "timed": "مؤقت",
+        "notStated": "غير مذكورة",
+        "types": "نوع المظهر",
+        "allTypes": "الكل",
+        "empty": {
+            "title": "لا توجد مظاهر مطابقة",
+            "description": "غيّر البحث أو أحد عوامل التصفية لعرض المظاهر."
+        }
+    },
+    "columns": {
+        "skin": "المظهر",
+        "type": "النوع",
+        "bonus": "الميزة",
+        "duration": "المدة (نص حر)",
+        "sources": "المصادر"
+    },
+    "bonusValue": "{stat} {value}",
+    "detail": {
+        "type": "النوع",
+        "bonus": "الميزة",
+        "duration": "المدة",
+        "sources": "المصادر",
+        "description": "الوصف"
+    }
+}

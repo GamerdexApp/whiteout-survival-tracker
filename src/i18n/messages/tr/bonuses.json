@@ -1,0 +1,115 @@
+{
+    "title": "Bonuslar",
+    "all": "Tümü",
+    "list": {
+        "separator": ", ",
+        "andLast": "{rest} ve {last}"
+    },
+    "sourceTypes": {
+        "account": "Hesap",
+        "hero": "Kahramanlar",
+        "expert": "Uzmanlar",
+        "research": "Araştırma",
+        "allianceTech": "İttifak Teknolojisi",
+        "allianceFacility": "İttifak Tesisleri",
+        "alliancePrestige": "İttifak Prestij Binaları",
+        "vip": "VIP",
+        "building": "Binalar",
+        "skin": "Görünümler",
+        "tundraAlbum": "Tundra Albümü",
+        "collection": "Koleksiyon",
+        "decoration": "Adam",
+        "treeOfLife": "Adam",
+        "castleAppointment": "Castle pozisyonu",
+        "pet": "Evcil Hayvanlar",
+        "chiefGear": "Şef Ekipmanı",
+        "chiefGearSet": "Şef Ekipmanı set bonusu",
+        "chiefCharm": "Şef Tılsımları",
+        "chiefOrder": "Şef Emirleri",
+        "presidentSkill": "Başkan becerileri",
+        "marchQueuePack": "March Queue paketi"
+    },
+    "unit": {
+        "percent": "%{value}",
+        "hours": "{value} sa",
+        "seconds": "{value} sn",
+        "plain": "{value}"
+    },
+    "view": {
+        "subline": "{name} · diğer sayfalardan toplanan her bonus. Bu sayfa hiçbir şey saklamaz.",
+        "tiles": {
+            "stats": "Sonuçtaki istatistikler",
+            "groups": "İstatistiği olan gruplar",
+            "sources": "Bir şey veren kaynak türleri"
+        },
+        "pending": {
+            "title": "Her kaynak henüz sayılmıyor.",
+            "text": "Aşağıdaki her kaynak, onu saklayan sayfadan okunur. Bu sayfalar hazır olana kadar hiçbir şey eklemezler: {pending}. {unstored} henüz hiçbir sayfa tarafından saklanmıyor."
+        },
+        "rulesTitle": "Sayılar nasıl hesaplanır",
+        "rules": {
+            "affinity": {
+                "title": "Uzman yakınlığı",
+                "text": "Bir uzman, yakınlık seviyesiyle büyüyen bir temel bonus verir. 10, 20 ve 100'e kadar olan seviyelerde uzmanın aşama atlaması gerekir. O zamana kadar önceki seviyenin bonusu sayılır."
+            },
+            "albums": {
+                "title": "Albümler tamamlanınca sayılır",
+                "text": "Bir Tundra Albümü, bonusunu yalnızca 9 bulmacanın hepsi bittiğinde verir."
+            },
+            "pets": {
+                "title": "Evcil hayvanlar rafine değeri kullanır",
+                "text": "Her evcil hayvan, Evcil Hayvanlar sayfasında ayarladığın gibi normal ya da rafine değeriyle sayılır."
+            },
+            "noNumber": {
+                "title": "Sayı yoksa sayılmaz",
+                "text": "Verisinde sayı olmayan kaynak hiçbir şey eklemez. 0 olarak gösterilmez."
+            },
+            "apart": {
+                "title": "Ayrı tutulur",
+                "text": "Yüzde ve sabit değerler asla birlikte toplanmaz. Piyade, Mızrakçı ve Nişancı istatistikleri Birlikler istatistiklerinden ayrıdır."
+            },
+            "time": {
+                "title": "Süre istatistikleri",
+                "text": "Construction Speed Boost, her yapı için kazanılan saattir. Ally Help Time saniye cinsindendir. Her biri birimini gösterir."
+            }
+        },
+        "search": {
+            "label": "İstatistik ara",
+            "placeholder": "İstatistik ara"
+        },
+        "views": {
+            "label": "Görünüm",
+            "stat": "İstatistiğe göre",
+            "source": "Kaynağa göre"
+        },
+        "empty": {
+            "noBonusesTitle": "Henüz bonus yok",
+            "noBonusesDescription": "Bonuslar, onları saklayan sayfalar doldurulunca görünür.",
+            "noMatchTitle": "Eşleşen istatistik yok",
+            "noMatchDescription": "Aramayı ya da grubu değiştir."
+        },
+        "statCount": "{count, plural, one {{amount} istatistik} other {{amount} istatistik}}",
+        "sourceCount": "{count, plural, one {{amount} kaynak} other {{amount} kaynak}}",
+        "columns": {
+            "statAndSource": "İstatistik ve kaynak",
+            "sourceType": "Kaynak türü",
+            "counted": "Sayılan"
+        }
+    },
+    "eventRules": {
+        "title": "Etkinlik bonusu kuralları",
+        "intro": "Bir etkinlik sırasında hangi bonus türlerinin geçerli kaldığını söyler. Bunlar sayı değil kuraldır, bu yüzden buradaki hiçbir şey yukarıdaki toplamlara eklenmez.",
+        "event": "Etkinlik",
+        "columns": {
+            "cityBonusWarsBuffs": "Şehir bonusu",
+            "deploymentCapacity": "Sevk",
+            "territoryBonuses": "Bölge",
+            "marchAccelerator": "Yürüyüş hız."
+        },
+        "applicability": {
+            "yes": "Evet",
+            "no": "Hayır",
+            "partial": "Kısmen"
+        }
+    }
+}

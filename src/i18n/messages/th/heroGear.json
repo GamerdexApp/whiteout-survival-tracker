@@ -1,0 +1,215 @@
+{
+    "defaultSetName": "ชุด {number}",
+    "troop": {
+        "infantry": "Infantry",
+        "lancer": "Lancer",
+        "marksman": "Marksman"
+    },
+    "lock": {
+        "needsMythic": "ต้องใช้อุปกรณ์ Mythic",
+        "needsBoth": "ต้องเสริมแกร่ง 100 และเลเวลหลอมชำนาญ 10",
+        "needsEnhancement": "ต้องเสริมแกร่ง 100",
+        "needsForging": "ต้องเลเวลหลอมชำนาญ 10"
+    },
+    "tab": {
+        "deletedTitle": "ลบ {name} แล้ว",
+        "deletedMessage": "ลบอุปกรณ์ทั้งสี่ชิ้นและเป้าหมายแล้ว",
+        "undo": "เลิกทำ",
+        "tiles": {
+            "sets": "ชุดอุปกรณ์",
+            "power": "พลังอุปกรณ์ ทุกชุด",
+            "ofPieces": "{count} จาก {total}",
+            "atEnhancementMax": "ชิ้นที่เสริมแกร่ง 100",
+            "empowered": "ชิ้นที่เพิ่มพลังพิเศษแล้ว",
+            "ready": "ชิ้นที่พร้อมเพิ่มพลังพิเศษ"
+        },
+        "search": "ค้นหาชุดอุปกรณ์",
+        "filters": "ตัวกรอง",
+        "plan": "แผน",
+        "showing": "แสดง {shown} จาก {total} ชุดอุปกรณ์ เป้าหมายอ่านได้อย่างเดียวที่นี่ และตั้งในแผน",
+        "empty": {
+            "title": "ยังไม่มีชุดอุปกรณ์",
+            "description": "ชุดอุปกรณ์มี Goggles, Gloves, Belt และ Boots อย่างละชิ้น เพิ่มชุดเพื่อติดตามเลเวล"
+        },
+        "addSet": "เพิ่มชุดอุปกรณ์",
+        "unknownHero": "ฮีโร่ที่ไม่ทราบ",
+        "power": "พลัง {amount}",
+        "enhancementLine": "เสริม {line}",
+        "troopHint": "ประเภททหารเลือกคอลัมน์ค่าสถานะด้านล่าง",
+        "editSet": "แก้ไขชุด",
+        "deleteSet": "ลบชุด"
+    },
+    "pieceCard": {
+        "name": "{set} {slot}",
+        "forgingRow": "{name} (+{percent}%)",
+        "none": "ไม่มี",
+        "noGoal": "ไม่มีเป้าหมาย",
+        "goal": "เป้าหมาย: {value}",
+        "quality": "คุณภาพอุปกรณ์",
+        "qualities": {
+            "mythic": "Mythic",
+            "epic": "Epic",
+            "rare": "Rare",
+            "uncommon": "Uncommon",
+            "common": "Common"
+        },
+        "forgingRowLabel": "แถวหลอมชำนาญ",
+        "forgingStops": "การหลอมชำนาญหยุดที่เลเวล 10 จนกว่าการเสริมแกร่งจะถึง 100",
+        "lowQualityNote": "เฉพาะอุปกรณ์ Mythic เท่านั้นที่หลอมและเพิ่มพลังพิเศษได้ พลังใช้ตาราง Mythic กับพลังพื้นฐานของคุณภาพนี้ ซึ่งเกมยังไม่ยืนยัน",
+        "enhancement": "เสริมแกร่ง",
+        "enhancementLabel": "เสริมแกร่ง {name}",
+        "enhancementSlider": "แถบเลื่อนเสริมแกร่ง {name}",
+        "empowerment": "เพิ่มพลังพิเศษ",
+        "empowermentLabel": "เพิ่มพลังพิเศษ {name}",
+        "empowermentSlider": "แถบเลื่อนเพิ่มพลังพิเศษ {name}",
+        "outOf": "/ {max}",
+        "milestone": "ถึงเพิ่มพลังพิเศษ {level}: {stat}",
+        "piecePower": "พลังของชิ้น",
+        "health": "พลังชีวิต",
+        "percent": "{value}%"
+    },
+    "statLines": {
+        "title": "บรรทัดค่าสถานะ 4 ช่อง คูณ 3 ประเภททหาร",
+        "troopThisSet": "{troop} (ชุดนี้)",
+        "stat": "{name} {value}",
+        "health": "HP {value}",
+        "percentStat": "{name} {value}%",
+        "none": "ไม่มี",
+        "note": "ค่าที่เลเวลของชิ้นใน {name} รวมการหลอมชำนาญ ปัดเศษลง ค่าสถานะมาจาก WoS Tools ซึ่งมีถึง 192 จาก 200 เลเวล คอลัมน์ที่เน้นคือประเภททหารของชุด"
+    },
+    "filters": {
+        "title": "ตัวกรอง",
+        "description": "เลือกชุดอุปกรณ์ที่รายการแสดง",
+        "reset": "รีเซ็ต",
+        "show": "แสดง {amount} {count, plural, other {ชุด}}",
+        "all": "ทั้งหมด",
+        "troopType": "ประเภททหาร",
+        "linkedHero": "ฮีโร่ที่เชื่อมไว้",
+        "heroOptions": {
+            "all": "ทั้งหมด",
+            "linked": "เชื่อมกับฮีโร่",
+            "unlinked": "ไม่ได้เชื่อม"
+        },
+        "order": "ลำดับ",
+        "orderOptions": {
+            "power": "พลังรวม สูงสุดก่อน",
+            "created": "ลำดับที่เพิ่ม",
+            "name": "ชื่อ A ถึง Z",
+            "hero": "ชื่อฮีโร่ A ถึง Z"
+        },
+        "notSaved": "ตัวกรองไม่ถูกบันทึก"
+    },
+    "setDialogs": {
+        "cancel": "ยกเลิก",
+        "setName": "ชื่อชุด",
+        "nameRequired": "ใส่ชื่อ",
+        "linkedHero": "ฮีโร่ที่เชื่อมไว้",
+        "add": {
+            "title": "เพิ่มชุดอุปกรณ์",
+            "linkedHeroHint": "การเลือกฮีโร่จะตั้งประเภททหารตามคลาสของฮีโร่",
+            "troopType": "ประเภททหาร",
+            "troopTypeHint": "ประเภททหารเลือกคอลัมน์ค่าสถานะของชุด",
+            "quality": "คุณภาพอุปกรณ์",
+            "qualityHint": "เฉพาะอุปกรณ์ Mythic เท่านั้นที่หลอมและเพิ่มพลังพิเศษได้",
+            "qualityHintCopy": "ชุดที่คัดลอกจะคงคุณภาพของแต่ละชิ้น",
+            "qualities": {
+                "mythic": "Mythic",
+                "epic": "Epic",
+                "rare": "Rare",
+                "uncommon": "Uncommon",
+                "common": "Common"
+            },
+            "startFrom": "เริ่มจาก",
+            "startFromHint": "ไม่คัดลอกเป้าหมาย ตั้งเป้าหมายในแผน",
+            "emptySet": "ชุดว่าง",
+            "copyFrom": "คัดลอกเลเวลจาก {name}",
+            "savesAtOnce": "ทุกการเปลี่ยนแปลงบันทึกทันที และชุดใหม่จะปรากฏเป็นที่เลือก",
+            "submit": "เพิ่มชุดอุปกรณ์"
+        },
+        "delete": {
+            "title": "ลบ {name} หรือไม่",
+            "titleFallback": "ลบชุด",
+            "confirm": "ลบชุด",
+            "body": "อุปกรณ์ทั้งสี่ชิ้นของ {name} และเป้าหมายจะถูกลบออกจากอุปกรณ์นี้",
+            "undoNote": "เลิกทำได้ภายใน 10 วินาทีหลังลบ",
+            "exportBackup": "ส่งออกข้อมูลสำรองก่อน"
+        },
+        "edit": {
+            "title": "แก้ไข {name}",
+            "titleFallback": "แก้ไขชุด",
+            "submit": "บันทึกชุด"
+        },
+        "heroSelect": {
+            "none": "ไม่มีฮีโร่",
+            "option": "{name} ({class}, รุ่น {generation})"
+        }
+    },
+    "plan": {
+        "title": "วางแผนอุปกรณ์ฮีโร่",
+        "description": "หลอมชำนาญ เสริมแกร่ง และเพิ่มพลังพิเศษของชิ้นใดก็ได้จากชุดใดก็ได้",
+        "saved": "บันทึกแผนเมื่อ {time}",
+        "close": "ปิด",
+        "save": "บันทึกแผน",
+        "empty": "ยังไม่มีชิ้นในแผน เพิ่มชิ้นด้านบน แล้วเพิ่มเป้าหมาย",
+        "pieceTitle": "{set} · {slot}",
+        "milestone": "เพิ่มพลังพิเศษ {level}, {event}, {stat}",
+        "addPiece": {
+            "title": "เพิ่มชิ้น",
+            "noSets": "เพิ่มชุดอุปกรณ์ในแท็บอุปกรณ์ฮีโร่ก่อน",
+            "set": "ชุดอุปกรณ์",
+            "setOption": "{name} ({troop})",
+            "piece": "ชิ้น",
+            "submit": "เพิ่มชิ้น",
+            "taken": "ชิ้นนี้อยู่ในแผนแล้ว"
+        },
+        "qualities": {
+            "mythic": "Mythic",
+            "epic": "Epic",
+            "rare": "Rare",
+            "uncommon": "Uncommon",
+            "common": "Common"
+        },
+        "remove": "ลบ {title} ออกจากแผน",
+        "forgingRow": "{name} (+{percent}%)",
+        "none": "ไม่มี",
+        "forgingCurrent": "แถวหลอมปัจจุบัน",
+        "forgingGoal": "แถวหลอมเป้าหมาย",
+        "forgingGoalLabel": "เป้าหมายการหลอมของ {title}",
+        "forgingStops": "การหลอมชำนาญหยุดที่เลเวล 10 จนกว่าเป้าหมายการเสริมแกร่งจะเป็น 100",
+        "enhancement": "เสริมแกร่ง",
+        "enhancementGoal": "เป้าหมายเสริมแกร่งของ {title}",
+        "empowerment": "เพิ่มพลังพิเศษ",
+        "empowermentGoal": "เป้าหมายเพิ่มพลังพิเศษของ {title}",
+        "from": "{value} ไป",
+        "result": {
+            "title": "ผลลัพธ์ของ {amount} {count, plural, other {ชิ้น}}",
+            "power": "พลัง",
+            "powerLines": {
+                "gained": "พลังที่ได้รับ",
+                "before": "พลังของชิ้นเหล่านี้ก่อน",
+                "after": "พลังของชิ้นเหล่านี้หลัง"
+            },
+            "columns": {
+                "piece": "ชิ้น",
+                "forgingStatsUp": "ค่าสถานะหลอมที่เพิ่ม",
+                "powerGained": "พลังที่ได้รับ"
+            },
+            "forgingStatsUp": "+{percent}% ({steps} ขั้นตอน)",
+            "milestones": "เป้าหมายที่ปลดล็อก",
+            "milestoneLine": "{label}: {stat}",
+            "events": {
+                "svs": "SvS",
+                "allianceShowdown": "Alliance Showdown",
+                "kingOfIcefield": "King of Icefield"
+            },
+            "note": "วางแผนอุปกรณ์ฮีโร่ไม่มีตัวควบคุมความเร็วหรือโบนัส ตัวคำนวณจึงไม่ให้เวลา",
+            "tableLabel": "ตารางผลลัพธ์ของแผน"
+        }
+    },
+    "export": {
+        "button": "ส่งออกไปยัง Core Events",
+        "nothing": "แผนไม่ต้องใช้ Essence Stones หรือ Mithril ที่จะส่งออก",
+        "essenceStones": "Essence Stones",
+        "mithril": "Mithril"
+    }
+}

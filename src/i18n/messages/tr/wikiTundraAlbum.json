@@ -1,0 +1,32 @@
+{
+    "line": "Pakette {total} albümün {have} tanesi var. Her birinin bir bonusu, tamamlama ödülleri ve {puzzles} bulmacası var.",
+    "note": "Diğer {missing} albüm, pakette olunca eklenir.",
+    "albums": "Albümler",
+    "puzzleCount": "{count, plural, one {{amount} bulmaca} other {{amount} bulmaca}}",
+    "pieceCount": "{count, plural, one {{amount} parça} other {{amount} parça}}",
+    "view": {
+        "label": "Görünüm",
+        "puzzles": "Bulmacalar",
+        "pieces": "Tüm parçalar"
+    },
+    "album": {
+        "counts": "{puzzles}, {pieces}",
+        "buff": "Tamamlanınca bonus",
+        "buffValue": "{stat} {value}",
+        "rewards": "Tamamlama ödülleri",
+        "buffNote": "Bonus yalnızca {puzzles} bulmacanın hepsi bitince sayılır."
+    },
+    "puzzles": {
+        "title": "Bulmacalar",
+        "puzzle": "Bulmaca",
+        "pieces": "Parçalar",
+        "star": "Yıldız {stars}",
+        "reward": "Ödül"
+    },
+    "allPieces": {
+        "title": "Tüm parçalar",
+        "summary": "{puzzles} içinde {pieces}",
+        "imageNote": "Parça görselleri paketten gelir. Görseli olmayan parça düz bir kare olarak görünür.",
+        "stars": "{count, plural, one {{amount} yıldız} other {{amount} yıldız}}"
+    }
+}

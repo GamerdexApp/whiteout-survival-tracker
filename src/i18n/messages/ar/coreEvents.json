@@ -1,0 +1,108 @@
+{
+    "days": {
+        "day": "اليوم {number}",
+        "battle": "المعركة",
+        "range": "الأيام {range}",
+        "stage": "المرحلة {number}"
+    },
+    "page": {
+        "title": "الفعاليات الأساسية",
+        "subline": "{chief} · {details}"
+    },
+    "events": {
+        "svs": "SvS",
+        "showdown": "Alliance Showdown",
+        "king": "King of Icefield",
+        "hall": "Hall of Chief"
+    },
+    "tabs": {
+        "label": "الفعاليات الأساسية"
+    },
+    "empty": {
+        "title": "لا توجد فعاليات معروضة",
+        "description": "الفعاليات الأربع كلها مخفية لهذا القائد. فعّلها من تعديل القائد.",
+        "action": "تعديل القائد"
+    },
+    "strip": {
+        "live": "الفعالية جارية",
+        "dates": "من {start} إلى {end}",
+        "noDates": "تُحدَّد التواريخ في سجل الفعاليات.",
+        "today": "اليوم هو {day}",
+        "checklist": "قائمة المهام",
+        "log": "سجل الفعاليات"
+    },
+    "bonus": {
+        "title": "مستوى {skill} لدى {expert}",
+        "level": "المستوى {level}",
+        "levelWithPercent": "المستوى {level} · {percent}%",
+        "none": "لم يُضبط مستوى، فلا تُضاف ميزة.",
+        "readOnly": "للقراءة فقط",
+        "openExperts": "فتح الخبراء",
+        "svsHelp": "يضيف 2% لكل مستوى إلى نقاط الأيام من 1 إلى 5، مقرّبة لكل يوم، ويضيف فئات إضافية إلى حدود النقاط. مرحلة المعركة لا تحصل على ميزة. للقراءة فقط هنا، ويُضبط المستوى في صفحة الخبراء.",
+        "showdownHelp": "يضيف 5% لكل مستوى إلى كل إجراء. للقراءة فقط هنا، ويُضبط المستوى في صفحة الخبراء.",
+        "noneTitle": "لا توجد ميزة خبير",
+        "kingNote": "لا يغيّر أي خبير نقاط King of Icefield.",
+        "hallNote": "لا يغيّر أي خبير نقاط Hall of Chief."
+    },
+    "daysSection": {
+        "title": "الأيام",
+        "stages": "المراحل",
+        "totalPerDay": "إجمالي النقاط لكل يوم",
+        "totalPerStage": "إجمالي النقاط لكل مرحلة",
+        "hallSeason": "يُضبط الموسم على الحساب، وهو الموسم 1 حتى ذلك الحين.",
+        "showdownScope": "النقاط الشخصية فقط. لا إجماليات للتحالف ولا نقاط انتصار."
+    },
+    "table": {
+        "title": "{day}: {name}",
+        "phasePreparation": "مرحلة التحضير",
+        "phaseBattle": "مرحلة المعركة",
+        "action": "الإجراء",
+        "pointsEach": "نقاط الواحد",
+        "count": "العدد",
+        "points": "النقاط",
+        "lower": "تقليل عدد {action}",
+        "raise": "زيادة عدد {action}",
+        "countLabel": "عدد {action}",
+        "fromPlans": "{amount} من الخطط",
+        "base": "الأساسي {amount}",
+        "bonus": "الميزة {amount}",
+        "total": "الإجمالي {amount}"
+    },
+    "result": {
+        "totalTitle": "إجمالي النقاط، كل الأيام",
+        "totalTitleHall": "إجمالي النقاط، المرحلة المحددة",
+        "baseBonus": "الأساسي {base}، الميزة {bonus}",
+        "battle": "مرحلة المعركة",
+        "battleNoBonus": "لا توجد ميزة في مرحلة المعركة",
+        "seasonSum": "مجموع مراحل الموسم: {amount}. ليس ترتيبًا.",
+        "selectedDayTotal": "{day}: {amount}",
+        "selectedDayBonus": "الميزة {percent}%"
+    },
+    "perDay": {
+        "title": "النقاط لكل يوم",
+        "titleHall": "النقاط لكل مرحلة",
+        "bar": "نسبة {day} من أكبر يوم"
+    },
+    "thresholds": {
+        "title": "حدود النقاط",
+        "estimate": "تقدير",
+        "help": "معالم {day}، مقارنة بإجمالي اليوم.",
+        "reached": "تم بلوغه",
+        "needs": "يحتاج إلى {amount} إضافية",
+        "extraTier": "الفئة الإضافية {number}، من Valeria",
+        "extraTierUnknown": "النقاط والمكافأة غير موجودة في الحزمة",
+        "unknown": "غير معروف",
+        "noneEvent": "لا تحتوي الحزمة على حدود نقاط لهذه الفعالية.",
+        "noneDay": "لا تحتوي الحزمة على حدود نقاط لهذا اليوم."
+    },
+    "ranks": {
+        "title": "حدود المراتب",
+        "note": "هذه ترتيبات اللاعبين. المرتبة ليس لها حد أدنى للنقاط.",
+        "rank": "المرتبة",
+        "reward": "المكافأة",
+        "gems": "{amount} Gems",
+        "unknown": "غير معروف",
+        "notConfirmed": "غير مؤكد",
+        "noneShowdown": "لا تحتوي الحزمة على ترتيب شخصي لـ Alliance Showdown."
+    }
+}

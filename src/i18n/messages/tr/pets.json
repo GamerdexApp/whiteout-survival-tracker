@@ -1,0 +1,209 @@
+{
+    "page": {
+        "title": "Evcil Hayvanlar"
+    },
+    "view": {
+        "subline": "{chief} · {details} · {total} evcil hayvanın {unlocked} tanesi açık"
+    },
+    "rarities": {
+        "Common": "Yaygın",
+        "Uncommon": "Yaygın Dışı",
+        "Rare": "Nadir",
+        "Epic": "Epik",
+        "Legendary": "Efsanevi"
+    },
+    "unlock": {
+        "afterFurnace": "{days}. gün ve Furnace {level}",
+        "afterPet": "{days}. gün ve {pet} seviye {level}"
+    },
+    "summary": {
+        "unlocked": "Açık",
+        "unlockedValue": "{total} içinden {count}",
+        "unlockedNote": "Senin ayarın",
+        "power": "Toplam güç",
+        "powerNote": "Açık evcil hayvanların seviye, aşama atlama ve rafine gücü",
+        "powerUnknown": "Açık evcil hayvanların seviye, aşama atlama ve rafine gücü, {amount} bilinmiyor",
+        "next": "Sıradaki açılacak",
+        "allUnlocked": "Hepsi açık",
+        "allUnlockedNote": "Her evcil hayvan açık",
+        "lockedNote": "{count} tanesi daha sonraki bir sunucu gününe kadar kilitli"
+    },
+    "totals": {
+        "attackDefense": "Birlik Saldırısı ve Savunması",
+        "attack": "Saldırı",
+        "defense": "Savunma",
+        "lethality": "Öldürücülük",
+        "health": "Sağlık",
+        "gain": "+%{value}",
+        "types": {
+            "infantry": "Piyade",
+            "lancer": "Mızrakçı",
+            "marksman": "Nişancı"
+        }
+    },
+    "search": {
+        "label": "Evcil hayvan ara",
+        "placeholder": "{amount} evcil hayvanı ada göre ara"
+    },
+    "status": {
+        "showing": "{total} evcil {count, plural, one {hayvanın} other {hayvanın}} {shown} tanesi gösteriliyor.",
+        "filters": " Filtreler: {list}.",
+        "filterNames": {
+            "rarity": "Nadirlik",
+            "status": "Durum",
+            "advanced": "Aşama atlama",
+            "order": "Sıralama"
+        },
+        "readOnlyGoals": "Hedefler burada salt okunurdur ve Plan'da ayarlanır. Mevcut değere eşit hedef, hedef yok demektir.",
+        "showMore": "{count, plural, one {{amount} evcil hayvan daha göster} other {{amount} evcil hayvan daha göster}}"
+    },
+    "empty": {
+        "title": "Eşleşen evcil hayvan yok",
+        "description": "Daha fazla evcil hayvan görmek için aramayı ya da filtreleri değiştir.",
+        "reset": "Filtreleri sıfırla"
+    },
+    "toast": {
+        "lockedTitle": "Kilitlendi: {name}",
+        "lockedMessage": "Seviyesi, aşama atlaması ve rafinesi saklanır.",
+        "undo": "Geri al"
+    },
+    "card": {
+        "summary": "{rarity} · son seviye {max}",
+        "unlocked": "Açık",
+        "unlockedLabel": "Açık: {pet}",
+        "cooldown": "{time} bekleme",
+        "cooldownByTier": "Bekleme süresi kademeye göre değişir",
+        "cooldownUnknown": "Bekleme süresi Bilinmiyor",
+        "skillTiers": "{count, plural, one {{amount} beceri kademesi} other {{amount} beceri kademesi}}",
+        "unlockRule": "Açılma kuralı",
+        "ruleMet": "Bu kuralı karşılıyorsun",
+        "level": "Seviye (maks. {max})",
+        "levelLabel": "Seviye: {pet}",
+        "goal": "Hedef {level}",
+        "noGoal": "Hedef yok",
+        "advanced": "Aşama atladı",
+        "advancedHint": "Aşama atlama 10, 20, 30 gibi seviyelerde ayarlanabilir.",
+        "refinement": "Rafine",
+        "refinementMax": "her biri için maks. %{max}",
+        "refineLabel": "{pet} {stat}",
+        "percentSign": "%",
+        "attack": "Sld +%{value}",
+        "defense": "Svn +%{value}",
+        "power": "Güç {value}",
+        "powerUnknown": "Güç Bilinmiyor",
+        "powerParts": "Seviye ve aşama atlama {base}, rafine {refining}"
+    },
+    "filters": {
+        "button": "Filtreler",
+        "title": "Filtreler",
+        "description": "Evcil hayvan listesinde nelerin gösterileceğini seç",
+        "rarity": "Nadirlik",
+        "rarityAll": "Tümü {amount}",
+        "rarityOption": "{rarity} {amount}",
+        "rarities": {
+            "Common": "Yaygın",
+            "Uncommon": "Yaygın Dışı",
+            "Rare": "Nadir",
+            "Epic": "Epik",
+            "Legendary": "Efsanevi"
+        },
+        "status": "Durum",
+        "statusOptions": {
+            "all": "Tüm evcil hayvanlar",
+            "unlocked": "Açık",
+            "locked": "Kilitli"
+        },
+        "advanced": "Aşama atlama",
+        "advancedOptions": {
+            "any": "Fark etmez",
+            "advanced": "Aşama atladı",
+            "notAdvanced": "Aşama atlamadı"
+        },
+        "order": "Sıralama",
+        "orderOptions": {
+            "game": "Oyun sırası",
+            "name": "Ad, A'dan Z'ye",
+            "level": "Seviye, en yüksek önce"
+        },
+        "notSaved": "Filtreler kaydedilmez.",
+        "reset": "Sıfırla",
+        "show": "{count, plural, one {{amount} evcil hayvanı göster} other {{amount} evcil hayvanı göster}}"
+    },
+    "plan": {
+        "button": "Plan",
+        "title": "Evcil Hayvan Planı",
+        "description": "Hedeflerine ulaşmak için yiyecek, öğeler, istatistikler ve etkinlik puanları",
+        "saved": "Plan kaydedildi: {date}",
+        "notSavedYet": "Plan henüz kaydedilmedi",
+        "close": "Kapat",
+        "save": "Planı kaydet",
+        "exportButton": "Ana Etkinlikler'e aktar",
+        "exportNothing": "Planda aktarılacak aşama atlama skoru yok.",
+        "export": {
+            "advancement": "Evcil hayvan aşama atlama skoru",
+            "commonMark": "Common Wild Marks",
+            "advancedMark": "Advanced Wild Marks",
+            "marksDetail": "Kaynaklar'dan sayıldı."
+        },
+        "noPets": "Seviyelerini planlamak için açık bir evcil hayvan ekle.",
+        "add": {
+            "title": "Evcil hayvan ekle",
+            "selectLabel": "Eklenecek evcil hayvan",
+            "button": "Evcil hayvan ekle",
+            "allIn": "Her açık evcil hayvan planda.",
+            "noneUnlocked": "Planlamak için Evcil Hayvanlar sayfasında bir evcil hayvanı aç."
+        },
+        "block": {
+            "rarities": {
+                "Common": "Yaygın",
+                "Uncommon": "Yaygın Dışı",
+                "Rare": "Nadir",
+                "Epic": "Epik",
+                "Legendary": "Efsanevi"
+            },
+            "maxLevel": "Son seviye {max}",
+            "remove": "Kaldır",
+            "removeLabel": "Plandan kaldır: {pet}",
+            "current": "Mevcut seviye",
+            "to": "hedef",
+            "goal": "Hedef seviye (maks. {max})",
+            "goalLabel": "Hedef seviye: {pet}",
+            "payAdvancement": "Hedefte aşama atlamayı öde",
+            "paysCurrent": "Seviye {level} için aşama atlanmadı, bu yüzden o aşama atlama ödenir."
+        },
+        "result": {
+            "title": "Sonuç: {count, plural, one {{amount} evcil hayvan} other {{amount} evcil hayvan}}",
+            "resources": "Kaynaklar, tüm evcil hayvanlar",
+            "byPet": "Evcil hayvana göre",
+            "heads": {
+                "pet": "Evcil hayvan",
+                "levels": "Seviyeler",
+                "food": "Yiyecek",
+                "power": "Güç"
+            },
+            "powerGain": "+{value}",
+            "percentGain": "+%{value}",
+            "unknown": "Bilinmiyor",
+            "gains": "Kazanımlar",
+            "gainNames": {
+                "levels": "Kazanılan seviyeler",
+                "advancements": "Aşama atlamalar",
+                "attack": "Birlik Saldırısı",
+                "defense": "Birlik Savunması",
+                "power": "Güç",
+                "score": "Aşama atlama skoru"
+            },
+            "unknownPowerNote": "Pakette bu plandaki bir seviye için aşama atlama gücü yok, bu yüzden güç kazancı Bilinmiyor.",
+            "eventPoints": "Etkinlik puanları",
+            "events": {
+                "svs": "SvS",
+                "allianceShowdown": "Alliance Showdown",
+                "kingOfIcefield": "King of Icefield",
+                "hallOfChief": "Hall of Chief"
+            },
+            "notScored": "Puan verilmiyor",
+            "eventNote": "Etkinlik puanları, aşama atlama skorunun her etkinliğin puanlama satırının puanıyla çarpımıdır.",
+            "scoreSourceNote": "Seviye 40 - 100 aşama atlama skorları etkinlik notlarıyla eşleşir. Seviye 10 - 30 tek bir kaynaktan gelir (WoS Tools)."
+        }
+    }
+}

@@ -13,8 +13,8 @@ import eventLog from "./pt-BR/eventLog.json";
 import events from "./pt-BR/events.json";
 import experts from "./pt-BR/experts.json";
 import facilities from "./pt-BR/facilities.json";
-import heroGear from "./pt-BR/heroGear.json";
 import heroes from "./pt-BR/heroes.json";
+import heroGear from "./pt-BR/heroGear.json";
 import history from "./pt-BR/history.json";
 import landing from "./pt-BR/landing.json";
 import overview from "./pt-BR/overview.json";
@@ -42,8 +42,8 @@ import wikiDaybreak from "./pt-BR/wikiDaybreak.json";
 import wikiEventBuffs from "./pt-BR/wikiEventBuffs.json";
 import wikiEvents from "./pt-BR/wikiEvents.json";
 import wikiExperts from "./pt-BR/wikiExperts.json";
-import wikiHeroGear from "./pt-BR/wikiHeroGear.json";
 import wikiHeroes from "./pt-BR/wikiHeroes.json";
+import wikiHeroGear from "./pt-BR/wikiHeroGear.json";
 import wikiItems from "./pt-BR/wikiItems.json";
 import wikiPets from "./pt-BR/wikiPets.json";
 import wikiResearch from "./pt-BR/wikiResearch.json";
@@ -53,6 +53,60 @@ import wikiTroops from "./pt-BR/wikiTroops.json";
 import wikiTundraAlbum from "./pt-BR/wikiTundraAlbum.json";
 import wikiVip from "./pt-BR/wikiVip.json";
 
-const ptBR: PartialMessages = { alliance, bonuses, buildings, chiefGear, chiefs, common, coreEvents, dailies, daybreak, eventExport, eventLog, events, experts, facilities, heroGear, heroes, history, landing, overview, pets, queues, research, resources, settings, shell, skins, tech, troops, tundraAlbum, ui, unlocks, vip, wiki, wikiAllianceStructures, wikiAllianceTech, wikiBuildings, wikiChiefCharms, wikiChiefGear, wikiDailies, wikiDaybreak, wikiEventBuffs, wikiEvents, wikiExperts, wikiHeroGear, wikiHeroes, wikiItems, wikiPets, wikiResearch, wikiSkins, wikiTimeline, wikiTroops, wikiTundraAlbum, wikiVip };
+const ptBR: PartialMessages = {
+  alliance,
+  bonuses,
+  buildings,
+  chiefGear,
+  chiefs,
+  common,
+  coreEvents,
+  dailies,
+  daybreak,
+  eventExport,
+  eventLog,
+  events,
+  experts,
+  facilities,
+  heroGear,
+  heroes,
+  history,
+  landing,
+  overview,
+  pets,
+  queues,
+  research,
+  resources,
+  settings,
+  shell,
+  skins,
+  tech,
+  troops,
+  tundraAlbum,
+  ui,
+  unlocks,
+  vip,
+  wiki,
+  wikiAllianceStructures,
+  wikiAllianceTech,
+  wikiBuildings,
+  wikiChiefCharms,
+  wikiChiefGear,
+  wikiDailies,
+  wikiDaybreak,
+  wikiEventBuffs,
+  wikiEvents,
+  wikiExperts,
+  wikiHeroGear,
+  wikiHeroes,
+  wikiItems,
+  wikiPets,
+  wikiResearch,
+  wikiSkins,
+  wikiTimeline,
+  wikiTroops,
+  wikiTundraAlbum,
+  wikiVip,
+};
 
 export default ptBR;

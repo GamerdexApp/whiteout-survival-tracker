@@ -1,0 +1,35 @@
+{
+    "close": "ปิด",
+    "field": {
+        "optional": "ไม่บังคับ"
+    },
+    "stepper": {
+        "lower": "ลด {label}",
+        "raise": "เพิ่ม {label}",
+        "labelPrefix": "{label}, "
+    },
+    "switch": {
+        "on": "เปิด",
+        "off": "ปิด"
+    },
+    "tabs": {
+        "locked": " (ล็อก)"
+    },
+    "toast": {
+        "dismiss": "ปิดการแจ้งเตือน",
+        "variants": {
+            "success": "สำเร็จ",
+            "info": "ข้อมูล",
+            "warning": "คำเตือน",
+            "error": "ข้อผิดพลาด"
+        },
+        "missingProvider": "ต้องใช้ useToast ภายใน ToastProvider"
+    },
+    "savedChip": {
+        "automatic": "บันทึกอัตโนมัติ",
+        "justNow": "เพิ่งบันทึก",
+        "minutesAgo": "บันทึกเมื่อ {count} นาทีที่แล้ว",
+        "at": "บันทึกเมื่อ {time}",
+        "failed": "ยังไม่ได้บันทึก พื้นที่จัดเก็บเต็ม"
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "line": "{skins} ใน {types} พร้อมโบนัส แหล่งที่ได้ และระยะเวลาที่ใช้งานได้",
+    "skinCount": "{count, plural, other {{amount} สกิน}}",
+    "typeCount": "{count, plural, other {{amount} ประเภท}}",
+    "gallery": {
+        "title": "แกลเลอรีสกิน",
+        "showing": "แสดง {shown} จาก {total}",
+        "search": "ค้นหา",
+        "searchPlaceholder": "ค้นหาสกินตามชื่อหรือแหล่งที่มา",
+        "bonusStat": "ค่าสถานะโบนัส",
+        "anyStat": "ทุกค่าสถานะ",
+        "noBonus": "ไม่มีโบนัส",
+        "duration": "ระยะเวลา",
+        "anyDuration": "ทุกระยะเวลา",
+        "permanent": "ถาวร",
+        "timed": "มีเวลา",
+        "notStated": "ไม่ระบุ",
+        "types": "ประเภทสกิน",
+        "allTypes": "ทั้งหมด",
+        "empty": {
+            "title": "ไม่พบสกินที่ตรงกัน",
+            "description": "เปลี่ยนคำค้นหาหรือตัวกรองเพื่อดูสกิน"
+        }
+    },
+    "columns": {
+        "skin": "สกิน",
+        "type": "ประเภท",
+        "bonus": "โบนัส",
+        "duration": "ระยะเวลา (ข้อความอิสระ)",
+        "sources": "แหล่งที่มา"
+    },
+    "bonusValue": "{stat} {value}",
+    "detail": {
+        "type": "ประเภท",
+        "bonus": "โบนัส",
+        "duration": "ระยะเวลา",
+        "sources": "แหล่งที่มา",
+        "description": "คำอธิบาย"
+    }
+}

@@ -1,0 +1,69 @@
+{
+    "line": "جداول مستويات Lumber Camp وTree of Life، إضافة إلى {decorations} زينة حسب الفئة بتكاليفها وازدهارها وتعزيزاتها.",
+    "lumberCamp": {
+        "title": "Lumber Camp",
+        "levels": "{count, plural, zero {{amount} مستوى} one {{amount} مستوى} two {{amount} مستويان} few {{amount} مستويات} many {{amount} مستوى} other {{amount} مستوى}}",
+        "table": "مستويات Lumber Camp",
+        "level": "المستوى",
+        "workers": "العمال",
+        "perSecond": "في الثانية",
+        "treeLevel": "مستوى الشجرة",
+        "lifeEssence": "Life Essence"
+    },
+    "tree": {
+        "title": "Tree of Life",
+        "table": "مستويات Tree of Life",
+        "level": "المستوى",
+        "prosperity": "الازدهار",
+        "lifeEssence": "Life Essence",
+        "perHour": "في الساعة",
+        "buff": "التعزيز"
+    },
+    "decorations": {
+        "title": "الزينة",
+        "showing": "عرض {shown} من {total}",
+        "search": "بحث",
+        "searchPlaceholder": "ابحث في الزينة بالاسم أو التعزيز",
+        "categoryLabel": "الفئة",
+        "all": "الكل",
+        "costFilter": "نوع التكلفة",
+        "table": "الزينة",
+        "name": "الزينة",
+        "category": "الفئة",
+        "limit": "الحد",
+        "levels": "المستويات",
+        "cost": "التكلفة",
+        "prosperityAtMax": "الازدهار عند الأقصى",
+        "buffAtMax": "التعزيز عند أقصى مستوى",
+        "emptyTitle": "لا توجد زينة مطابقة",
+        "emptyDescription": "غيّر البحث أو الفئة أو نوع التكلفة."
+    },
+    "costFilter": {
+        "any": "أي تكلفة",
+        "lifeEssence": "Life Essence",
+        "items": "الموارد",
+        "limited": "محدودة",
+        "unknown": "التكلفة غير موجودة في البيانات"
+    },
+    "cost": {
+        "lifeEssence": "{amount} Life Essence",
+        "limited": "لا شيء، زينة محدودة"
+    },
+    "detail": {
+        "title": "التفاصيل",
+        "category": "الفئة",
+        "limit": "الحد",
+        "cost": "التكلفة",
+        "levels": "المستويات",
+        "image": "الصورة",
+        "imageMissing": "لا شيء",
+        "levelsTitle": "مستويات {name}",
+        "levelsMeta": "{count, plural, zero {{amount} مستوى} one {{amount} مستوى} two {{amount} مستويان} few {{amount} مستويات} many {{amount} مستوى} other {{amount} مستوى}}",
+        "levelsTable": "مستويات الزينة",
+        "level": "المستوى",
+        "levelCost": "التكلفة",
+        "prosperity": "الازدهار",
+        "buff": "التعزيز",
+        "noLevels": "لا يوجد جدول مستويات لهذه الزينة في البيانات."
+    }
+}

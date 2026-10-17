@@ -1,0 +1,32 @@
+{
+    "title": "ส่งออกไปยัง Core Events",
+    "description": "เลือกกิจกรรม แล้วเลือกวัน",
+    "events": {
+        "svs": "SvS",
+        "showdown": "Alliance Showdown",
+        "king": "King of Icefield",
+        "hall": "Hall of Chief"
+    },
+    "stepEvent": "1. กิจกรรม",
+    "stepDay": "{number}. วันของกิจกรรม {group}",
+    "stepDayPlain": "วันของกิจกรรม",
+    "stepItems": "{number}. ไอเทมจากแผนนี้",
+    "noDay": "{event} ไม่มีแถวคะแนนสำหรับไอเทมเหล่านี้",
+    "daysHint": "แสดงเฉพาะวันที่แถวคะแนนนับไอเทมนั้น Hall of Chief แสดงเป็นขั้นแทนวัน ไอเทมแต่ละกลุ่มมีวันของตัวเอง",
+    "lineEach": "{points} ต่อชิ้นใน {day}",
+    "lineNotScored": "{event} ไม่มีแถวคะแนนสำหรับสิ่งนี้",
+    "notScored": "ไม่มีคะแนน",
+    "points": "{points} คะแนน",
+    "addedTo": "เพิ่มลงใน {event} แล้ว",
+    "nothingScores": "ไม่มีสิ่งใดในแผนนี้ที่ได้คะแนนใน {event} ในวันที่เลือก",
+    "summaryTitle": "สรุปการส่งออก",
+    "summaryHint": "คะแนนที่ไอเทมชุดเดียวกันจะได้ในแต่ละกิจกรรม เมื่อใช้ทุกไอเทมในวันที่ให้คะแนน เฉพาะกิจกรรมและวันที่เลือกเท่านั้นที่ได้รับคะแนน หน้า Core Events แสดงเป็นจำนวนที่คุณเปลี่ยนได้",
+    "selected": "เลือกแล้ว",
+    "cancel": "ยกเลิก",
+    "export": "ส่งออกไปยัง {event}",
+    "toast": {
+        "title": "ส่งออกไปยัง Core Events แล้ว",
+        "message": "เพิ่ม {points} คะแนนลงใน {event} แล้ว",
+        "undo": "เลิกทำ"
+    }
+}

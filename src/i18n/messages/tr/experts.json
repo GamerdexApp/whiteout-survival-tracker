@@ -1,0 +1,239 @@
+{
+    "page": {
+        "title": "Uzmanlar"
+    },
+    "view": {
+        "subline": "{chief} · Dawn Academy uzmanları, oyunda toplam {total}",
+        "ghost": "Uzmanlar"
+    },
+    "common": {
+        "plan": "Plan",
+        "generation": "Nesil {generation}",
+        "unknown": "Bilinmiyor",
+        "and": "{first} ve {last}",
+        "expertCount": "{count, plural, one {{amount} uzman} other {{amount} uzman}}"
+    },
+    "stats": {
+        "recruited": "İşe alınan uzmanlar",
+        "recruitedValue": "{total} içinden {count}",
+        "powerNow": "Şu anki uzman gücü, yalnızca işe alınanlar",
+        "powerAtMax": "Maksimumdaki güç, {total} uzmanın hepsi",
+        "highest": "En yüksek yakınlık",
+        "highestValue": "{name}: {affinity}",
+        "highestNone": "İşe alınan yok"
+    },
+    "toolbar": {
+        "searchLabel": "Uzman ara",
+        "searchPlaceholder": "Uzman ara",
+        "filters": "Filtreler",
+        "emptyTitle": "Eşleşen uzman yok",
+        "emptyDescription": "Daha fazla uzman görmek için aramayı ya da filtreleri değiştir.",
+        "reset": "Filtreleri sıfırla",
+        "status": "{total} uzmanın {shown} tanesi gösteriliyor. Hedefler burada salt okunurdur ve Plan'da ayarlanır. 10'a bölünen bir seviyede, uzman aşama atlayana kadar önceki seviyenin bonusu sayılır. Her değişiklik hemen kaydedilir.",
+        "lockedNote": "{count} tanesi daha sonraki bir sunucu gününe kadar kilitli."
+    },
+    "toast": {
+        "notRecruitedTitle": "{name} işe alınmadı",
+        "notRecruitedMessage": "Seviyeler kayıtlı kalır ve İşe alındı'yı açınca geri gelir.",
+        "undo": "Geri al"
+    },
+    "card": {
+        "recruited": "İşe alındı",
+        "recruitedLabel": "İşe alındı: {expert}",
+        "summary": "{title} · {specialty} · {generation}",
+        "affinityLevel": "Yakınlık seviyesi",
+        "affinityLabel": "Yakınlık seviyesi: {expert}",
+        "affinityDisplay": "{level} / {max}",
+        "affinityProgress": "Yakınlık ilerlemesi: {expert}",
+        "goal": "Hedef {goal}",
+        "advanced": "Aşama atladı",
+        "notAdvanced": "Aşama atlamadı",
+        "advancedLabel": "{expert} seviye {level} için aşama atladı",
+        "relationship": "İlişki seviyesi",
+        "affinityAvailable": "Mevcut yakınlık",
+        "affinityAvailableLabel": "Sahip olunan yakınlık puanı: {expert}",
+        "affinityOf": "seviye {level} için {need} gerekir",
+        "bonusTitle": "Şu anki temel bonus",
+        "bonusNow": "%{amount} {stats}",
+        "bonusOwnLevel": "Seviye {level}, 10'un katı değil, bu yüzden kendi bonusu sayılır.",
+        "bonusAdvanced": "Seviye {level} aşama atladı, bu yüzden kendi bonusu sayılır.",
+        "bonusNotAdvanced": "Seviye {level} aşama atlamadı, bu yüzden seviye {counted} bonusu sayılır.",
+        "bonusAtMax": "Seviye 100'de: %{amount}.",
+        "feeds": "Etkiler",
+        "bonuses": "Bonuslar",
+        "nextAdvancement": "Sonraki aşama atlama: seviye {level}, {sigils} sigil",
+        "allAdvanced": "Tüm aşama atlamalar tamam.",
+        "skills": "Beceriler",
+        "skillLabel": "Seviye: {expert} {skill}",
+        "skillDisplay": "{level} / {max}",
+        "expAvailable": "Mevcut EXP",
+        "expAvailableLabel": "Sahip olunan EXP: {expert} {skill}",
+        "expOf": "seviye {level} için {need} gerekir",
+        "maxLevel": "Son seviye, EXP gerekmez",
+        "talent": "Yetenek: {name}",
+        "talentLevel": "Seviye {level} / {max}",
+        "talentFollows": "İzlenen: {relationship}. {effect}.",
+        "power": "Güç {now} / {max}",
+        "derived": "Türetildi",
+        "notRecruitedHint": "İşe alınmadı. Bu uzmanı Tundra Trek'te işe al, sonra İşe alındı'yı aç.",
+        "recruitmentCost": "İşe alım maliyeti: {cost}",
+        "maxPower": "Maks. güç {max}",
+        "buffs": "Güçlendirir: {stats}",
+        "expEnough": "Seviye {level} için yeterli",
+        "affinityEnough": "Seviye {level} için yeterli",
+        "skillLocked": "Açılmadı. Açmak için seviye 1'e yükselt.",
+        "sigilsOwned": "Sahip olunan sigil",
+        "sigilsOwnedLabel": "Sahip olunan sigil: {expert}",
+        "sigilsHint": "Kaynaklar sayfasındaki sigil ile aynı sayı."
+    },
+    "filtersFlyout": {
+        "title": "Filtreler",
+        "description": "Uzman listesini daralt ve sıralamayı seç.",
+        "generation": "Nesil",
+        "all": "Tümü",
+        "show": "Göster",
+        "order": "Sıralama",
+        "reset": "Sıfırla",
+        "showButton": "Göster: {experts}",
+        "notSaved": "Filtreler kaydedilmez.",
+        "showOptions": {
+            "everything": "Hepsi",
+            "recruited": "Yalnızca işe alınanlar",
+            "notRecruited": "Yalnızca işe alınmayanlar"
+        },
+        "orderOptions": {
+            "generation": "Nesil",
+            "affinity": "Yakınlık seviyesi",
+            "power": "Güç",
+            "name": "Ad"
+        }
+    },
+    "plan": {
+        "title": "Uzman Planı",
+        "description": "Yakınlık ve beceri hedefleri için Books of Knowledge, sigil, beceri EXP'si ve yakınlık puanları.",
+        "saved": "Plan kaydedildi: {date}",
+        "close": "Kapat",
+        "save": "Planı kaydet",
+        "exportButton": "Ana Etkinlikler'e aktar",
+        "exportNothing": "Plan, aktarılacak kitap ya da sigil gerektirmiyor.",
+        "export": {
+            "books": "Books of Knowledge",
+            "sigils": "Uzman sigilleri",
+            "exp": "Beceri EXP",
+            "expReason": "Hiçbir etkinlik beceri EXP'sine puan vermez."
+        },
+        "noExperts": "Planda henüz uzman yok. Hedeflerini ayarlamak için işe alınmış bir uzman ekle.",
+        "add": {
+            "title": "Uzman ekle",
+            "selectLabel": "Eklenecek uzman",
+            "button": "Uzman ekle",
+            "allIn": "İşe alınan her uzman planda.",
+            "noneRecruited": "Planlamak için sayfada bir uzmanı işe al."
+        },
+        "block": {
+            "remove": "Kaldır",
+            "removeLabel": "Plandan kaldır: {expert}",
+            "part": "Bölüm",
+            "current": "Mevcut",
+            "goalHeading": "Hedef",
+            "affinity": "Yakınlık seviyesi",
+            "affinityHeld": "Mevcut yakınlık {amount}",
+            "expHeld": "Mevcut EXP {amount}",
+            "currentLevel": "Seviye {level}",
+            "currentAffinity": "{level}, aşama atladı",
+            "currentAffinityPlain": "{level}",
+            "affinityGoalLabel": "Yakınlık hedefi: {expert}",
+            "skillGoalLabel": "Hedef: {expert} {skill}",
+            "advanceAtGoal": "Seviye {level} için aşama atla",
+            "advanceAtGoalLabel": "Hedefte aşama atla: {expert}"
+        },
+        "checks": {
+            "affinity": "Yakınlık puanı",
+            "learning": "Öğrenme hızlandırması olarak beceri EXP",
+            "minutesUnit": "dk"
+        },
+        "stock": {
+            "sigils": "Plan {total} sigil ister. Uzman sigillerin bunun {own} tanesini karşılar, kalan {common} tanesi Common Expert Sigils ile karşılanmalı. Sahip olduğun her uzman sigili yalnızca o uzman için sayılır.",
+            "books": "Plan, beceri seviyeleri için {amount} Books of Knowledge ister.",
+            "affinity": "Plan {needed} yakınlık puanı ister. Uzman kartlarında elinde olanlar {held} tanesini karşılar, yani {left} tane daha gerekir. Pakette yakınlık öğesi yok, bu yüzden stokla karşılaştırılan bir şey yok.",
+            "learning": "Plan {exp} beceri EXP ister. Becerilerinde {held} var, yani {left} tanesi öğrenme hızlandırmalarından gelmeli. Bir dakikalık öğrenme {rate} EXP verir, bu da {minutes} dakika eder."
+        },
+        "byExpert": {
+            "title": "Uzmana göre",
+            "sigils": "Sigil: {needed} gerekir, {name} sigilin {own} tanesini karşılar, {common} tanesi Common Expert Sigils'ten gelmeli",
+            "affinity": "Yakınlık: {needed} gerekir, {held} mevcut, {left} tane daha gerekir",
+            "exp": "Beceri EXP: {needed} gerekir, {held} mevcut, {left} tane daha gerekir"
+        },
+        "result": {
+            "title": "Sonuç",
+            "derived": "Türetildi",
+            "books": "Books of Knowledge",
+            "sigils": "Sigil",
+            "exp": "Beceri EXP",
+            "affinity": "Yakınlık puanı",
+            "advancements": "Aşama atlamalar",
+            "skillLevels": "Beceri seviyeleri",
+            "affinityLevels": "Yakınlık seviyeleri",
+            "heads": {
+                "expert": "Uzman",
+                "books": "Kitap",
+                "sigils": "Sigil",
+                "exp": "EXP",
+                "levels": "Seviye",
+                "advancements": "Aşm.",
+                "affinity": "Yakınlık"
+            },
+            "empty": "Sonucu görmek için bir uzman ekle ve bir hedefi yükselt.",
+            "tableLabel": "Plan sonuç tablosu"
+        }
+    },
+    "learning": {
+        "title": "Öğrenme",
+        "note": "Aynı anda tek beceri öğrenilir. Bitir, EXP'yi o beceriye ekler.",
+        "idle": "Öğrenilen bir şey yok. Bir beceriye EXP eklemek için bir oturum başlat.",
+        "startButton": "Öğrenmeyi başlat",
+        "slotLabel": "Öğrenme, aynı anda tek oturum",
+        "jobTitle": "{expert}, {skill}, {session}",
+        "manageFinishText": "Yükseltmeyi bitir, oturumun EXP'sini beceriye ekler, öğrenme sırasını boşaltır ve oturumu Geçmiş'ine ekler. Kalan süre sıfır olunca kartta Bitirmeye hazır yazar. Hızlandırma kullanmış olabileceğin için hiçbir şey kendiliğinden bitmez.",
+        "flyout": {
+            "title": "Öğrenmeyi başlat",
+            "description": "Bir uzman becerisi için öğrenme oturumunu çalışıyor olarak işaretle",
+            "expert": "Uzman",
+            "skill": "Beceri",
+            "skillOption": "{name}, seviye {level} / {max}",
+            "session": "Oturum",
+            "sessionOption": "{label}, {exp} EXP",
+            "sessionHint": "Bir oturum dakika başına 60 EXP kazandırır. Oturumlar oyundakilerdir.",
+            "expEarned": "Kazanılan EXP",
+            "heldAfter": "Sonrasında sahip olunan EXP",
+            "tooMuch": "Beceri yalnızca {room} EXP daha kullanabilir, kalanı kaybolur.",
+            "whenStarted": "Ne zaman başladı?",
+            "modes": {
+                "now": "Şimdi başlıyor",
+                "already": "Zaten başladı"
+            },
+            "timeLeftHours": "Kalan süre, saat",
+            "ends": "Biter",
+            "startedHint": "Oturum oyunda çalışıyorsa Zaten başladı'yı kullan. Gösterdiği süreyi gir.",
+            "nothingToLearn": "Şu an öğrenebilecek beceri yok. Bir uzmanı işe al ve son seviyede olmayan bir beceriyi aç.",
+            "busy": "Bir oturum zaten çalışıyor. Önce onu Yönet'ten bitir ya da iptal et.",
+            "cancel": "İptal",
+            "start": "Öğrenmeyi başlat"
+        },
+        "toasts": {
+            "started": {
+                "title": "Öğrenme başladı",
+                "message": "{what}."
+            },
+            "finished": {
+                "title": "Öğrenildi: {what}",
+                "message": "EXP beceriye ve Geçmiş'e eklendi."
+            },
+            "cancelled": {
+                "title": "İptal edildi: {what}",
+                "message": "Beceri sahip olduğu EXP'yi korur."
+            },
+            "undo": "Geri al"
+        }
+    }
+}

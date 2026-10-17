@@ -1,0 +1,104 @@
+{
+    "line": "{banners} bayrak aralığı, {facilities} tesis ve {fortresses} Castle, Stronghold ve Fortress girdisi. Yalnızca başvuru, burada hiçbir şey kaydedilmez.",
+    "filters": {
+        "search": "Ara",
+        "searchPlaceholder": "Aralık, tesis, Fortress ara",
+        "structure": "Yapı",
+        "structures": {
+            "all": "Tüm yapılar",
+            "banners": "Bayraklar",
+            "facilities": "Harita tesisleri",
+            "castle": "Castle",
+            "stronghold": "Stronghold",
+            "fortress": "Fortress"
+        }
+    },
+    "empty": "Bu listede aramayla eşleşen bir şey yok.",
+    "none": "Yok",
+    "banners": {
+        "title": "Bayrak inşa maliyetleri",
+        "columns": {
+            "range": "Seviye aralığı",
+            "min": "Min",
+            "max": "Maks",
+            "cost": "Seviye başına maliyet"
+        },
+        "noCost": "Listelenmedi",
+        "count": "{count, plural, one {{amount} aralık} other {{amount} aralık}}",
+        "detail": {
+            "title": "Bayrak maliyeti",
+            "fields": {
+                "range": "Seviye aralığı",
+                "min": "En düşük seviye",
+                "max": "En yüksek seviye",
+                "cost": "Seviye başına maliyet"
+            }
+        }
+    },
+    "facilities": {
+        "title": "Harita tesisleri",
+        "count": "{count, plural, one {{amount} tesis} other {{amount} tesis}}",
+        "columns": {
+            "facility": "Tesis",
+            "bonus": "Bonus",
+            "level": "Seviye {level}",
+            "listed": "Listelenen seviyeler",
+            "ownLimit": "Sahip olma sınırı"
+        },
+        "cell": "Haritada {available}",
+        "listedOf": "{total} içinden {listed}",
+        "levelsNote": "Veri bu tesis için {total} seviyenin {listed} tanesini listeler. Listelemediği seviyeler Bilinmiyor görünür.",
+        "detail": {
+            "title": "Seviyeler: {name}",
+            "level": "Seviye {level}",
+            "columns": {
+                "level": "Seviye",
+                "booster": "Güçlendirici",
+                "injured": "Ağır yaralı",
+                "losses": "Kayıplar",
+                "ownLimit": "Sahip olma sınırı",
+                "available": "Haritada",
+                "locations": "Konumlar (x, y)"
+            },
+            "percent": "%{value}",
+            "location": "{x}, {y}"
+        }
+    },
+    "fortresses": {
+        "title": "Castle, Stronghold ve Fortress",
+        "kinds": {
+            "castle": "Castle",
+            "stronghold": "Stronghold",
+            "fortress": "Fortress"
+        },
+        "columns": {
+            "name": "Ad",
+            "kind": "Tür",
+            "x": "X",
+            "y": "Y",
+            "phases": "Aşamalar",
+            "phaseOne": "Aşama 1 ödülü"
+        },
+        "mobileMeta": "{kind}, x {x}, y {y}",
+        "count": "{count, plural, one {{amount} yapı} other {{amount} yapı}}"
+    },
+    "map": {
+        "title": "Harita yer tutucusu",
+        "label": "Castle, Stronghold ve Fortress haritası, x ve y değerlerine göre",
+        "note": "Castle, Stronghold ve Fortress, x ve y değerlerinden {size} x {size} karede çizilir. Kare boyutu bir tahmindir, pakette harita boyutu yok.",
+        "legend": {
+            "castle": "Kare: Castle",
+            "stronghold": "Eşkenar dörtgen: Stronghold",
+            "fortress": "Daire: Fortress"
+        }
+    },
+    "detail": {
+        "title": "Aşama ödülleri",
+        "phases": "{count, plural, one {{amount} aşama} other {{amount} aşama}}",
+        "columns": {
+            "phase": "Aşama",
+            "reward": "Ödül"
+        },
+        "noRewards": "Pakette bu yapı için aşama ödülü yok."
+    }
+}

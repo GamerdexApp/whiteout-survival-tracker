@@ -1,0 +1,71 @@
+{
+    "line": "{buildings} من المباني و{facilities} من المرافق. للمرجع فقط، لا يُحفظ شيء هنا في قائدك.",
+    "list": {
+        "heading": "المباني والمرافق",
+        "searchLabel": "بحث",
+        "searchPlaceholder": "ابحث في المباني والمرافق",
+        "categoryLabel": "الفئة",
+        "categories": {
+            "all": "الكل",
+            "Military": "عسكرية",
+            "Inner City": "المدينة الداخلية",
+            "Entertainment": "الترفيه"
+        },
+        "buildingMeta": "{category}، الأقصى {maxLevel}، {count, plural, zero {{amount} مستوى} one {{amount} مستوى} two {{amount} مستويان} few {{amount} مستويات} many {{amount} مستوى} other {{amount} مستوى}}",
+        "empty": "لا يوجد مبنى يطابق بحثك.",
+        "categoryOption": "{category} {count}"
+    },
+    "detail": {
+        "levelsTotal": "إجمالي المستويات",
+        "standardLevels": "المستويات العادية، من 1 إلى 30",
+        "fireCrystalLevels": "مستويات Fire Crystal، من 30-1 إلى FC 10",
+        "maxLevel": "تسمية أقصى مستوى",
+        "rangeLabel": "نطاق المستويات",
+        "rangeOption": "{range} {count}",
+        "ranges": {
+            "all": "الكل",
+            "standard": "من 1 إلى 30",
+            "fc3": "من 30-1 إلى FC 3",
+            "fc5": "من FC 3-1 إلى FC 5",
+            "fc8": "من FC 5-1 إلى FC 8",
+            "fc10": "من FC 8-1 إلى FC 10"
+        },
+        "tableLabel": "مستويات {name}",
+        "levels": "المستويات",
+        "totalTitle": "المطلوب إجمالًا، {range}، {count, plural, zero {{amount} مستوى} one {{amount} مستوى} two {{amount} مستويان} few {{amount} مستويات} many {{amount} مستوى} other {{amount} مستوى}}",
+        "totalTime": "إجمالي وقت البناء"
+    },
+    "columns": {
+        "level": "المستوى",
+        "cost": "التكلفة",
+        "time": "الوقت",
+        "power": "القوة",
+        "requires": "المتطلبات",
+        "stats": {
+            "rallyCapacity": "سعة التجمّع",
+            "marchCapacity": "سعة المسيرة",
+            "trainingCapacity": "سعة التدريب",
+            "trainingSpeedBonusPercent": "سرعة التدريب",
+            "researchSpeedBonusPercent": "سرعة البحث",
+            "infirmaryCapacity": "سعة المشفى",
+            "allyAssists": "مساعدات الحلفاء",
+            "allyHelpTimeSeconds": "وقت مساعدة الحلفاء",
+            "reinforceCapacity": "سعة التعزيز",
+            "storehouseCapacity": "سعة المخزن",
+            "barricadeDurability": "متانة المتاريس",
+            "troopDeploymentCapacity": "سعة الانتشار"
+        }
+    },
+    "cells": {
+        "none": "لا شيء",
+        "requirement": "{building} {level}",
+        "pricePerItem": "{price} للواحد",
+        "percent": "{value}%"
+    },
+    "facilities": {
+        "heading": "المرافق",
+        "meta": "بلا مستويات أو قوة أو تكلفة بناء",
+        "unlock": "يُفتح عند مستوى Furnace {level}",
+        "empty": "لا يوجد مرفق يطابق بحثك."
+    }
+}

@@ -1,0 +1,108 @@
+{
+    "days": {
+        "day": "วันที่ {number}",
+        "battle": "การรบ",
+        "range": "วันที่ {range}",
+        "stage": "ขั้น {number}"
+    },
+    "page": {
+        "title": "กิจกรรมหลัก",
+        "subline": "{chief} · {details}"
+    },
+    "events": {
+        "svs": "SvS",
+        "showdown": "Alliance Showdown",
+        "king": "King of Icefield",
+        "hall": "Hall of Chief"
+    },
+    "tabs": {
+        "label": "Core events"
+    },
+    "empty": {
+        "title": "ไม่มีกิจกรรมที่แสดง",
+        "description": "กิจกรรมทั้งสี่ถูกซ่อนสำหรับหัวหน้านี้ เปิดใหม่ได้ในแก้ไขหัวหน้า",
+        "action": "แก้ไขหัวหน้า"
+    },
+    "strip": {
+        "live": "กิจกรรมกำลังดำเนินอยู่",
+        "dates": "{start} ถึง {end}",
+        "noDates": "ตั้งวันที่ในบันทึกกิจกรรม",
+        "today": "วันนี้คือ {day}",
+        "checklist": "เช็กลิสต์",
+        "log": "บันทึกกิจกรรม"
+    },
+    "bonus": {
+        "title": "เลเวล {skill} ของ {expert}",
+        "level": "เลเวล {level}",
+        "levelWithPercent": "เลเวล {level} · {percent}%",
+        "none": "ยังไม่ได้ตั้งเลเวล จึงไม่เพิ่มโบนัส",
+        "readOnly": "อ่านอย่างเดียว",
+        "openExperts": "เปิดผู้เชี่ยวชาญ",
+        "svsHelp": "เพิ่ม 2% ต่อเลเวลให้คะแนนของวันที่ 1 ถึง 5 ปัดเศษทีละวัน และเพิ่มขั้นพิเศษให้เกณฑ์คะแนน ช่วงการรบไม่ได้โบนัส อ่านอย่างเดียวที่นี่ ตั้งเลเวลในหน้าผู้เชี่ยวชาญ",
+        "showdownHelp": "เพิ่ม 5% ต่อเลเวลให้ทุกการกระทำ อ่านอย่างเดียวที่นี่ ตั้งเลเวลในหน้าผู้เชี่ยวชาญ",
+        "noneTitle": "ไม่มีโบนัสผู้เชี่ยวชาญ",
+        "kingNote": "ไม่มีผู้เชี่ยวชาญที่เปลี่ยนคะแนนของ King of Icefield",
+        "hallNote": "ไม่มีผู้เชี่ยวชาญที่เปลี่ยนคะแนนของ Hall of Chief"
+    },
+    "daysSection": {
+        "title": "วัน",
+        "stages": "ขั้น",
+        "totalPerDay": "คะแนนรวมต่อวัน",
+        "totalPerStage": "คะแนนรวมต่อขั้น",
+        "hallSeason": "ซีซันตั้งในบัญชี และเป็นซีซัน 1 จนกว่าจะตั้ง",
+        "showdownScope": "เฉพาะคะแนนส่วนตัว ไม่มียอดรวมพันธมิตรและไม่มีคะแนนชัยชนะ"
+    },
+    "table": {
+        "title": "{day}: {name}",
+        "phasePreparation": "ช่วงเตรียมการ",
+        "phaseBattle": "ช่วงการรบ",
+        "action": "การกระทำ",
+        "pointsEach": "คะแนนต่อครั้ง",
+        "count": "จำนวน",
+        "points": "คะแนน",
+        "lower": "ลดจำนวนของ {action}",
+        "raise": "เพิ่มจำนวนของ {action}",
+        "countLabel": "จำนวนของ {action}",
+        "fromPlans": "{amount} จากแผน",
+        "base": "พื้นฐาน {amount}",
+        "bonus": "โบนัส {amount}",
+        "total": "รวม {amount}"
+    },
+    "result": {
+        "totalTitle": "คะแนนรวมทุกวัน",
+        "totalTitleHall": "คะแนนรวมของขั้นที่เลือก",
+        "baseBonus": "พื้นฐาน {base} โบนัส {bonus}",
+        "battle": "ช่วงการรบ",
+        "battleNoBonus": "ช่วงการรบไม่มีโบนัส",
+        "seasonSum": "ผลรวมของทุกขั้นในซีซัน: {amount} ไม่ใช่อันดับ",
+        "selectedDayTotal": "{day}: {amount}",
+        "selectedDayBonus": "โบนัส {percent}%"
+    },
+    "perDay": {
+        "title": "คะแนนต่อวัน",
+        "titleHall": "คะแนนต่อขั้น",
+        "bar": "สัดส่วนเทียบกับวันที่มากที่สุดของ {day}"
+    },
+    "thresholds": {
+        "title": "เกณฑ์คะแนน",
+        "estimate": "ค่าประมาณ",
+        "help": "เป้าหมายสำหรับ {day} เทียบกับคะแนนรวมของวัน",
+        "reached": "ถึงแล้ว",
+        "needs": "ต้องการอีก {amount}",
+        "extraTier": "ขั้นพิเศษ {number} จาก Valeria",
+        "extraTierUnknown": "คะแนนและรางวัลไม่อยู่ในแพ็กเกจข้อมูล",
+        "unknown": "ไม่ทราบ",
+        "noneEvent": "แพ็กเกจข้อมูลไม่มีเกณฑ์คะแนนสำหรับกิจกรรมนี้",
+        "noneDay": "แพ็กเกจข้อมูลไม่มีเกณฑ์คะแนนสำหรับวันนี้"
+    },
+    "ranks": {
+        "title": "เกณฑ์อันดับ",
+        "note": "นี่คืออันดับผู้เล่น อันดับไม่มีคะแนนขั้นต่ำ",
+        "rank": "อันดับ",
+        "reward": "รางวัล",
+        "gems": "{amount} Gems",
+        "unknown": "ไม่ทราบ",
+        "notConfirmed": "ยังไม่ยืนยัน",
+        "noneShowdown": "แพ็กเกจข้อมูลไม่มีอันดับส่วนตัวสำหรับ Alliance Showdown"
+    }
+}

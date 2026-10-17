@@ -1,0 +1,49 @@
+{
+    "line": "{rows} tılsım satırı, {slots} slot ve {rates} takas oranı. Yalnızca başvuru, burada şefine hiçbir şey kaydedilmez.",
+    "slots": {
+        "heading": "Tılsım slotları",
+        "meta": "{slots} slot, her birlik türü için bir tane",
+        "icons": "{count, plural, one {{amount} seviye simgesi} other {{amount} seviye simgesi}}",
+        "recordLine": "Güçlendirir: {troopType} birlikleri. Her seviye için bir simge."
+    },
+    "table": {
+        "heading": "Tılsım tablosu",
+        "meta": "{rows} satır, {levels} seviye",
+        "searchLabel": "Ara",
+        "searchPlaceholder": "{rows} tılsım satırında ara",
+        "levelLabel": "Seviye",
+        "allLevels": "Tüm seviyeler",
+        "levelOption": "Seviye {level}",
+        "stageLabel": "Aşama",
+        "allStages": "Tüm aşamalar",
+        "stageOption": "Aşama {stage}",
+        "empty": "Filtrelerinle eşleşen tılsım satırı yok."
+    },
+    "columns": {
+        "row": "Satır",
+        "materials": "Malzemeler",
+        "stats": "Özellikler",
+        "power": "Güç",
+        "score": "Skor"
+    },
+    "cells": {
+        "none": "Yok",
+        "percent": "%{value}"
+    },
+    "levels": {
+        "heading": "Seviyeler",
+        "level": "Seviye",
+        "levelName": "Seviye {level}",
+        "rows": "Satırlar",
+        "stats": "Özellikler, ilkinden sonuncuya",
+        "power": "Son satırdaki güç",
+        "statsRange": "%{first} - %{last}"
+    },
+    "exchange": {
+        "heading": "Malzeme takas oranları",
+        "exchange": "Takas",
+        "from": "Verilen",
+        "to": "Alınan",
+        "weeklyLimit": "Haftalık sınır"
+    }
+}

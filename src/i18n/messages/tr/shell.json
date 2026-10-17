@@ -1,0 +1,85 @@
+{
+    "nav": {
+        "main": "Ana menü",
+        "groups": {
+            "chief": "Şef",
+            "alliance": "İttifak",
+            "account": "Hesap",
+            "planner": "Planlayıcı",
+            "wiki": "Wiki"
+        },
+        "items": {
+            "overview": "Genel Bakış",
+            "buildings": "Binalar",
+            "daybreakIsland": "Daybreak Island",
+            "heroes": "Kahramanlar",
+            "chiefGear": "Şef Ekipmanı",
+            "experts": "Uzmanlar",
+            "pets": "Evcil Hayvanlar",
+            "troops": "Birlikler",
+            "research": "Araştırma",
+            "alliance": "İttifak",
+            "facilities": "Tesisler",
+            "tech": "Teknoloji",
+            "resources": "Kaynaklar",
+            "bonuses": "Bonuslar",
+            "vip": "VIP",
+            "skins": "Görünümler",
+            "events": "Etkinlikler",
+            "tundraAlbum": "Tundra Albümü",
+            "coreEvents": "Ana Etkinlikler",
+            "dailies": "Günlük Görevler",
+            "history": "Geçmiş",
+            "wikiReference": "Başvuru",
+            "wikiTimeline": "Zaman Çizelgesi",
+            "settings": "Ayarlar",
+            "chiefs": "Şefler"
+        },
+        "upgradesRunning": ", {amount} {count, plural, one {yükseltme} other {yükseltme}} sürüyor"
+    },
+    "appShell": {
+        "skipToContent": "İçeriğe geç",
+        "closeMenu": "Menüyü kapat"
+    },
+    "appBar": {
+        "openMenu": "Menüyü aç"
+    },
+    "chiefGate": {
+        "emptyTitle": "Şef seçilmedi",
+        "emptyDescription": "Takibe başlamak için bir şef oluştur. Her şey bu tarayıcıda kalır.",
+        "newChief": "Yeni şef"
+    },
+    "chiefSwitcher": {
+        "chiefs": "Şefler",
+        "active": "Etkin",
+        "allChiefs": "Tüm şefler",
+        "newChief": "Yeni şef",
+        "loading": "Yükleniyor",
+        "noChiefYet": "Henüz şef yok",
+        "sectionLabel": "Şef",
+        "switchChief": "Şef değiştir"
+    },
+    "footer": {
+        "tagline": "Whiteout Survival şeflerini, binalarını, kahramanlarını ve araştırmalarını tek yerden takip et.",
+        "product": "Takipçi",
+        "support": "Destek",
+        "wikiReference": "Wiki Başvuru",
+        "wikiTimeline": "Wiki Zaman Çizelgesi",
+        "backupAndData": "Yedek ve veri",
+        "aboutApp": "Hakkında",
+        "disclaimerTitle": "Sorumluluk reddi",
+        "disclaimer": "Bu uygulama Whiteout Survival veya Century Games ile bağlantılı değildir, onlar tarafından onaylanmamıştır ve onlarla ilişkisi yoktur. Tüm ticari markalar ve oyun içeriği ilgili sahiplerine aittir.",
+        "copyright": "© {year} {appName}",
+        "framework": "Ücretsiz oyun ilerleme takipçileri için ortak bir temel olan Gamerdex çatısıyla geliştirildi. Verilerin tarayıcında kalır."
+    },
+    "notFound": {
+        "title": "Bu sayfa yok",
+        "description": "Bağlantı eski olabilir ya da yanlış yazılmış olabilir. Şeflerin güvende ve hiçbir şey değişmedi.",
+        "didYouMean": "Şunu mu demek istedin: <link>{name}</link>?",
+        "goToOverview": "Genel Bakış'a git",
+        "jumpTo": "Ya da şuraya geç"
+    },
+    "pageHeader": {
+        "wiki": "Wiki"
+    }
+}

@@ -1,0 +1,45 @@
+{
+    "line": "{enhancement} tahap peningkatan, {empowerment} tahap pemerkasaan, {mastery} baris penempaan penguasaan dan {stats} entri statistik. Rujukan sahaja, tiada apa di sini disimpan.",
+    "tabsLabel": "Jadual gear hero",
+    "tabs": {
+        "enhancement": "Peningkatan",
+        "empowerment": "Pemerkasaan",
+        "mastery": "Penempaan penguasaan",
+        "stats": "Statistik"
+    },
+    "levels": {
+        "columns": {
+            "level": "Tahap",
+            "cost": "Kos",
+            "power": "Kuasa",
+            "gain": "Perolehan berbanding sebelumnya",
+            "milestonePower": "Kuasa pencapaian",
+            "stage": "Peringkat",
+            "statsUp": "Statistik naik"
+        },
+        "none": "Tiada",
+        "percent": "{value}%",
+        "gainValue": "+{value}"
+    },
+    "stats": {
+        "slot": "Slot",
+        "troopType": "Jenis tentera",
+        "troop": {
+            "infantry": "Infantry",
+            "lancer": "Lancer",
+            "marksman": "Marksman"
+        },
+        "note": "Tahap statistik 101 hingga 200 ialah tahap pemerkasaan 1 hingga 100.",
+        "columns": {
+            "level": "Tahap",
+            "combat": "{stat}",
+            "health": "Health",
+            "percent": "{stat}"
+        },
+        "level": "Tahap {level}",
+        "empowermentLevel": "Tahap {level}, pemerkasaan {empowerment}",
+        "milestonesTitle": "Pencapaian",
+        "milestone": "Tahap pemerkasaan {level}, {event}: {stat}",
+        "percentValue": "{value}%"
+    }
+}

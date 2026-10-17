@@ -1,0 +1,49 @@
+{
+    "title": "Garis masa pelayan",
+    "line": "{rows, plural, other {{amount} pencapaian}} dari hari {first} hingga hari {last}",
+    "subline": "Apa yang dibuka pada setiap usia pelayan. Rujukan sahaja, tiada apa di sini disimpan.",
+    "place": {
+        "label": "Tunjuk kedudukan saya untuk",
+        "option": "{name}, kira-kira hari {days}, tambah atau tolak {window}",
+        "optionNoDate": "{name}, tiada tarikh mula pelayan",
+        "jump": "Pergi ke kedudukan saya"
+    },
+    "filters": {
+        "label": "Tunjuk",
+        "events": "Acara {amount}",
+        "features": "Ciri {amount}",
+        "pets": "Haiwan Peliharaan {amount}",
+        "experts": "Pakar {amount}",
+        "heroes": "Hero {amount}"
+    },
+    "help": "Garis ialah usia pelayan dalam hari. Hero di sebelah kanan, yang lain di sebelah kiri. Kedudukan anda datang daripada tarikh mula pelayan pada chief anda, dengan tetingkap tambah atau tolak {window} hari.",
+    "noChief": "Belum ada chief, jadi kedudukan anda tidak ditunjukkan.",
+    "addChief": "Tambah chief",
+    "noStartDate": "{name} tiada tarikh mula pelayan. Tambah satu untuk melihat kedudukan anda pada garis.",
+    "editChief": "Sunting chief",
+    "columns": {
+        "left": "Acara, ciri, haiwan peliharaan, pakar",
+        "right": "Hero"
+    },
+    "tags": {
+        "event": "Acara",
+        "feature": "Ciri",
+        "pets": "Haiwan Peliharaan",
+        "experts": "Pakar"
+    },
+    "fireCrystalLevels": "Tahap Fire Crystal {names}",
+    "heroGeneration": "Hero, generasi {generation}",
+    "day": "Hari {day}",
+    "status": {
+        "unlocked": "Dibuka",
+        "near": "Hampir usia anda",
+        "future": "{count, plural, other {Dalam {amount} hari}}"
+    },
+    "marker": {
+        "label": "Anda di sini",
+        "title": "{name}, usia pelayan kira-kira {days} hari",
+        "window": "Tambah atau tolak {window} hari: hari {from} hingga {to}"
+    },
+    "empty": "Tiada apa untuk ditunjukkan dengan penapis ini.",
+    "source": "Sumber: garis masa pelayan daripada pakej data."
+}

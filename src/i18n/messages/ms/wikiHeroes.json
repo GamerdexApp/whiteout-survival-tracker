@@ -1,0 +1,99 @@
+{
+    "line": "{heroes} hero dan {widgets} tahap widget. Rujukan sahaja, tiada apa di sini disimpan.",
+    "roster": {
+        "title": "Senarai",
+        "count": "{shown} daripada {total} hero",
+        "search": "Cari",
+        "searchPlaceholder": "Cari {count} hero",
+        "generation": "Generasi",
+        "rarity": "Kelangkaan",
+        "class": "Kelas",
+        "subClass": "Subkelas",
+        "all": "Semua",
+        "empty": "Tiada hero sepadan dengan penapis ini.",
+        "columns": {
+            "hero": "Hero",
+            "generation": "Gen",
+            "rarity": "Kelangkaan",
+            "class": "Kelas",
+            "subClass": "Subkelas",
+            "power": "Kuasa, 5 bintang",
+            "weapon": "Senjata eksklusif"
+        },
+        "none": "Tiada"
+    },
+    "detail": {
+        "generation": "Generasi {generation}",
+        "source": "Sumber: {sources}",
+        "noSource": "Sumber: Tidak diketahui",
+        "explorationAttack": "Serangan Exploration",
+        "explorationDefense": "Pertahanan Exploration",
+        "explorationHealth": "Health Exploration",
+        "expeditionAttack": "Serangan Expedition",
+        "expeditionDefense": "Pertahanan Expedition",
+        "powerAtLevel80": "Kuasa pada tahap 80",
+        "powerAtFiveStars": "Kuasa pada 5 bintang",
+        "powerAtZeroStars": "Kuasa pada 0 bintang",
+        "powerMissing": "Kuasa untuk tahap hero dan serpihan tiada bagi Generasi 6 ke atas. Ia ditunjukkan sebagai Tidak diketahui sehingga data diperoleh."
+    },
+    "skills": {
+        "title": "Kemahiran",
+        "count": "{count, plural, other {{amount} kemahiran}}",
+        "branch": {
+            "exploration": "Exploration",
+            "expedition": "Expedition",
+            "talent": "Talent"
+        },
+        "levels": {
+            "columns": {
+                "level": "Tahap",
+                "star": "Bintang diperlukan",
+                "manuals": "Manual",
+                "power": "Perolehan kuasa",
+                "effects": "Kesan"
+            },
+            "effect": {
+                "percentOfAttack": "{name} {amount}% daripada Serangan",
+                "percent": "{name} {amount}%",
+                "seconds": "{name} {amount}s",
+                "number": "{name} {amount}"
+            }
+        }
+    },
+    "shards": {
+        "title": "Kos serpihan mengikut bintang",
+        "columns": {
+            "star": "Bintang",
+            "tiers": "Serpihan setiap peringkat",
+            "total": "Jumlah",
+            "power": "Kuasa pada bintang"
+        },
+        "star": "{star} bintang"
+    },
+    "weapon": {
+        "title": "Senjata eksklusif",
+        "power": "Kuasa senjata",
+        "exploration": "Exploration atk / def / hp",
+        "expedition": "Expedition lethality / hp",
+        "unlocksAt": "dibuka pada tahap senjata {level}",
+        "levelsTitle": "Tahap senjata",
+        "columns": {
+            "level": "Tahap senjata",
+            "power": "Kuasa",
+            "widgets": "Widget"
+        },
+        "level": "Tahap {level}"
+    },
+    "levels": {
+        "title": "Tahap hero",
+        "columns": {
+            "level": "Tahap hero",
+            "furnace": "Perlu",
+            "xp": "XP untuk dicapai",
+            "power": "Kuasa"
+        },
+        "level": "Tahap {level}",
+        "furnace": "Furnace {level}"
+    },
+    "recordLine": "{rarity} {heroClass}, generasi {generation}. Rujukan sahaja, tiada apa di sini disimpan."
+}

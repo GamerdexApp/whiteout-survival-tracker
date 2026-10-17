@@ -1,0 +1,86 @@
+{
+    "page": {
+        "title": "Tesisler"
+    },
+    "view": {
+        "subline": "{chief} · {facilities} harita tesisi, Castle, {strongholds} Stronghold ve {fortresses} Fortress"
+    },
+    "summary": {
+        "owned": "Sahip olunan tesisler",
+        "ownedValue": "{total} içinden {owned}",
+        "strongholds": "Stronghold, başvuru",
+        "fortresses": "Fortress, başvuru",
+        "castle": "Castle, başvuru"
+    },
+    "tabs": {
+        "label": "Tesis görünümleri",
+        "facilities": "Tesisler",
+        "fortresses": "Fortresses",
+        "map": "Harita"
+    },
+    "show": {
+        "label": "Göster",
+        "all": "Tümü",
+        "owned": "Sahip",
+        "notOwned": "Sahip değil"
+    },
+    "card": {
+        "owned": "{count} sahip",
+        "level": "Seviye {level}",
+        "ownedSwitch": "Sahip",
+        "switchLabel": "Sahip: {facility} seviye {level}",
+        "booster": "Güçlendirici",
+        "injured": "Ağır yaralı",
+        "losses": "Kayıplar",
+        "ownLimit": "Sahip olma sınırı {limit}. Haritada {spots} {spotWord}.",
+        "spot": "nokta",
+        "spots": "nokta"
+    },
+    "empty": {
+        "title": "Gösterilecek bir şey yok",
+        "description": "Bu filtreyle eşleşen tesis seviyesi yok.",
+        "reset": "Tümünü göster"
+    },
+    "fortress": {
+        "kind": {
+            "castle": "Castle",
+            "stronghold": "Stronghold",
+            "fortress": "Fortress"
+        },
+        "coordinates": "x {x}, y {y}",
+        "rewardsHeading": "Aşamaya göre ödül",
+        "phase": "Aşama {phase}",
+        "noRewards": "Pakette Castle için ödül yok.",
+        "referenceNote": "Yalnızca başvuru. Castle, Stronghold ve Fortress her hafta değişir, bu yüzden burada hiçbir şey sahip olunan ya da takip edilen değildir.",
+        "kindLabel": "Tür",
+        "allKinds": "Tüm türler",
+        "rewardLabel": "Ödül",
+        "allRewards": "Tüm ödüller",
+        "shown": "{total} yapının {shown} tanesi gösteriliyor",
+        "empty": "Filtrelerle eşleşen yapı yok.",
+        "reset": "Filtreleri sıfırla",
+        "filters": "Filtreler",
+        "filtersTitle": "Filtreler",
+        "filtersDescription": "Yapıları türe ve ödüle göre filtrele",
+        "done": "Göster: {count}"
+    },
+    "map": {
+        "highlight": "Bir tesisi vurgula",
+        "layers": "Katmanlar",
+        "layerFacilities": "Tesisler",
+        "layerStrongholds": "Stronghold",
+        "layerFortresses": "Fortress",
+        "spotsHeading": "Tesis noktaları, toplam {count}",
+        "spotLegend": "{name} ({count})",
+        "codeHint": "Koddan sonraki rakam seviyedir, örneğin Co1, İnşaat seviye 1'dir. Vurgulanan tesis dolu gösterilir.",
+        "structures": "Yapılar",
+        "castleStrongholdLegend": "Castle (1) ve Stronghold S1 - S4 ({count})",
+        "fortressLegend": "Fortress 1 - {count}",
+        "selected": "Haritada seçili",
+        "selectedNone": "Haritada bir Castle, Stronghold ya da Fortress seç.",
+        "mapLabel": "İttifak haritası",
+        "note": "İttifak haritasının tel kafes çizimi. Konumlar paketteki x ve y değerlerini {size} x {size} ızgarada kullanır, bir ızgara karesi {step}. Nokta, bir tesisin görünebileceği yerdir, bu yüzden sahip olunan tesisler işaretlenmez. Pakette arazi çizimi yok.",
+        "spotLabel": "{name} seviye {level}, x {x}, y {y}",
+        "structureLabel": "{name}, x {x}, y {y}"
+    }
+}

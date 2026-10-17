@@ -1,0 +1,56 @@
+{
+    "line": "{rows} ekipman satırı, {slots} slot ve {rates} takas oranı. Yalnızca başvuru, burada şefine hiçbir şey kaydedilmez.",
+    "slots": {
+        "heading": "Ekipman slotları",
+        "rarities": "{first} - {last} simgeleri",
+        "detailLine": "Güçlendirir: {troopType} birlikleri. Her nadirlik için bir simge."
+    },
+    "table": {
+        "heading": "Ekipman tablosu",
+        "meta": "{rows} satır, {tiers} kademe",
+        "searchLabel": "Ara",
+        "searchPlaceholder": "{rows} ekipman satırında ara",
+        "tierLabel": "Kademe",
+        "allTiers": "Tüm kademeler",
+        "starsLabel": "Yıldız",
+        "allStars": "Tüm yıldızlar",
+        "starsOption": "Yıldız {stars}",
+        "empty": "Filtrelerinle eşleşen ekipman satırı yok."
+    },
+    "columns": {
+        "row": "Satır",
+        "materials": "Malzemeler",
+        "stats": "Özellikler",
+        "power": "Güç",
+        "score": "Skor",
+        "capacity": "Sevk kap."
+    },
+    "cells": {
+        "none": "Yok",
+        "percent": "%{value}"
+    },
+    "tiers": {
+        "heading": "Kademeler",
+        "meta": "{tiers} kademe etiketi",
+        "tier": "Kademe",
+        "rows": "Satırlar",
+        "stats": "Özellikler, ilkinden sonuncuya",
+        "power": "Son satırdaki güç",
+        "statsRange": "%{first} - %{last}"
+    },
+    "exchange": {
+        "heading": "Malzeme takas oranları",
+        "exchange": "Takas",
+        "from": "Verilen",
+        "to": "Alınan",
+        "weeklyLimit": "Haftalık sınır"
+    },
+    "setBonus": {
+        "heading": "Set bonusları",
+        "meta": "{tiers} kademe",
+        "hint": "3 parça giyersen Savunma bonusu, 6 parça giyersen Saldırı bonusu alırsın. Yüzde, giydiğin parçaların kademesine bağlıdır. {types} birliklerine uygulanır.",
+        "pieceSet": "{pieces} parçalı set",
+        "tier": "Kademe",
+        "pieces": "{pieces} parça, {stat}"
+    }
+}

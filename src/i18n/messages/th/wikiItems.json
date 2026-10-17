@@ -1,0 +1,79 @@
+{
+    "line": "{items} ไอเทมใน {categories} หมวดหมู่ พร้อมแหล่งที่มาและอัตราของที่ได้จากหีบ {chests} ใบ",
+    "catalog": {
+        "title": "แคตตาล็อกไอเทม",
+        "showing": "แสดง {shown} จาก {total}",
+        "search": "ค้นหา",
+        "searchPlaceholder": "ค้นหาไอเทมตามชื่อหรือคำอธิบาย",
+        "table": "ไอเทม",
+        "item": "ไอเทม",
+        "category": "หมวดหมู่",
+        "sources": "แหล่งที่มา",
+        "lootRates": "อัตราของที่ได้",
+        "description": "คำอธิบาย",
+        "emptyTitle": "ไม่พบไอเทมที่ตรงกัน",
+        "emptyDescription": "เปลี่ยนคำค้นหาหรือตัวกรอง"
+    },
+    "filters": {
+        "title": "ตัวกรอง",
+        "button": "ตัวกรอง",
+        "summary": "ตัวกรอง: {category} แหล่งที่มา: {sources}",
+        "edit": "แก้ไข",
+        "category": "หมวดหมู่",
+        "all": "ทั้งหมด",
+        "sources": "แหล่งที่มา",
+        "lootRates": "อัตราของที่ได้",
+        "reset": "รีเซ็ต",
+        "show": "{count, plural, other {แสดง {amount} ไอเทม}}"
+    },
+    "sourcesFilter": {
+        "any": "แหล่งที่มาทุกแบบ",
+        "has": "มีแหล่งที่มา",
+        "none": "ไม่มีแหล่งที่มา"
+    },
+    "sourcesChip": {
+        "any": "ทั้งหมด",
+        "has": "มีแหล่งที่มา",
+        "none": "ไม่มีแหล่งที่มา ({amount})"
+    },
+    "lootFilter": {
+        "any": "ทั้งหมด",
+        "has": "มีอัตราของที่ได้"
+    },
+    "lootChip": {
+        "any": "ทั้งหมด",
+        "has": "มีอัตราของที่ได้ (หีบ {amount} ใบ)"
+    },
+    "loot": {
+        "yes": "ใช่",
+        "no": "ไม่",
+        "notChest": "ไม่ใช่หีบ"
+    },
+    "detail": {
+        "title": "รายละเอียด",
+        "category": "หมวดหมู่",
+        "sources": "แหล่งที่มา",
+        "speedup": "ตัวเร่งเวลา",
+        "speedupValue": "{type} {minutes} นาที",
+        "description": "คำอธิบาย",
+        "lootRates": "อัตราของที่ได้",
+        "lootRowsListed": "{count, plural, other {มี {amount} แถว}}",
+        "noLootRates": "ข้อมูลไม่มีอัตราของที่ได้สำหรับหีบนี้",
+        "lootTitle": "อัตราของที่ได้",
+        "lootMeta": "{count, plural, other {รางวัล {amount} รายการ}}",
+        "lootTable": "อัตราของที่ได้จากหีบ",
+        "reward": "รางวัล",
+        "amount": "จำนวน",
+        "chance": "โอกาส",
+        "chanceValue": "{percent}%",
+        "name": "ชื่อ"
+    },
+    "speedupType": {
+        "general": "ทั่วไป",
+        "construction": "ก่อสร้าง",
+        "troop": "ทหาร",
+        "research": "วิจัย",
+        "learning": "การเรียนรู้",
+        "healing": "รักษา"
+    }
+}

@@ -1,0 +1,86 @@
+{
+    "page": {
+        "title": "Kemudahan"
+    },
+    "view": {
+        "subline": "{chief} · {facilities} kemudahan peta, castle, {strongholds} stronghold dan {fortresses} fortress"
+    },
+    "summary": {
+        "owned": "Kemudahan dimiliki",
+        "ownedValue": "{owned} daripada {total}",
+        "strongholds": "Stronghold, rujukan",
+        "fortresses": "Fortress, rujukan",
+        "castle": "Castle, rujukan"
+    },
+    "tabs": {
+        "label": "Paparan kemudahan",
+        "facilities": "Kemudahan",
+        "fortresses": "Fortress",
+        "map": "Peta"
+    },
+    "show": {
+        "label": "Tunjuk",
+        "all": "Semua",
+        "owned": "Dimiliki",
+        "notOwned": "Tidak dimiliki"
+    },
+    "card": {
+        "owned": "{count} dimiliki",
+        "level": "Tahap {level}",
+        "ownedSwitch": "Dimiliki",
+        "switchLabel": "{facility} tahap {level} dimiliki",
+        "booster": "Penggalak",
+        "injured": "Cedera parah",
+        "losses": "Kerugian",
+        "ownLimit": "Had sendiri {limit}. {spots} {spotWord} pada peta.",
+        "spot": "tempat",
+        "spots": "tempat"
+    },
+    "empty": {
+        "title": "Tiada apa untuk ditunjukkan",
+        "description": "Tiada tahap kemudahan sepadan dengan penapis ini.",
+        "reset": "Tunjuk semua"
+    },
+    "fortress": {
+        "kind": {
+            "castle": "Castle",
+            "stronghold": "Stronghold",
+            "fortress": "Fortress"
+        },
+        "coordinates": "x {x}, y {y}",
+        "rewardsHeading": "Ganjaran mengikut fasa",
+        "phase": "Fasa {phase}",
+        "noRewards": "Castle tiada ganjaran dalam pakej.",
+        "referenceNote": "Rujukan sahaja. Castle, stronghold dan fortress berubah setiap minggu, jadi tiada apa di sini dimiliki atau dijejak.",
+        "kindLabel": "Jenis",
+        "allKinds": "Semua jenis",
+        "rewardLabel": "Ganjaran",
+        "allRewards": "Semua ganjaran",
+        "shown": "{shown} daripada {total} struktur ditunjukkan",
+        "empty": "Tiada struktur sepadan dengan penapis.",
+        "reset": "Tetapkan semula penapis",
+        "filters": "Penapis",
+        "filtersTitle": "Penapis",
+        "filtersDescription": "Tapis struktur mengikut jenis dan ganjaran",
+        "done": "Tunjuk {count}"
+    },
+    "map": {
+        "highlight": "Serlahkan kemudahan",
+        "layers": "Lapisan",
+        "layerFacilities": "Kemudahan",
+        "layerStrongholds": "Stronghold",
+        "layerFortresses": "Fortress",
+        "spotsHeading": "Tempat kemudahan, {count} semuanya",
+        "spotLegend": "{name} ({count})",
+        "codeHint": "Digit selepas kod ialah tahap, contohnya Co1 ialah Construction tahap 1. Kemudahan yang diserlahkan diisi.",
+        "structures": "Struktur",
+        "castleStrongholdLegend": "Castle (1) dan stronghold S1 hingga S4 ({count})",
+        "fortressLegend": "Fortress 1 hingga {count}",
+        "selected": "Dipilih pada peta",
+        "selectedNone": "Pilih castle, stronghold atau fortress pada peta.",
+        "mapLabel": "Peta alliance",
+        "note": "Kerangka wayar peta alliance. Kedudukan menggunakan x dan y pakej pada grid {size} kali {size}, satu petak grid ialah {step}. Tempat ialah lokasi di mana kemudahan boleh muncul, jadi kemudahan yang dimiliki tidak ditandakan. Tiada seni rupa bumi dalam pakej.",
+        "spotLabel": "{name} tahap {level}, x {x}, y {y}",
+        "structureLabel": "{name}, x {x}, y {y}"
+    }
+}

@@ -1,0 +1,77 @@
+{
+    "line": "{nodes} من عقد الأبحاث في {tabs} من التبويبات. للمرجع فقط، لا يُحفظ شيء هنا.",
+    "tabsLabel": "فئات الأبحاث",
+    "tabs": {
+        "battle": "المعركة",
+        "growth": "النمو",
+        "economy": "الاقتصاد",
+        "t11": "T11",
+        "t12": "T12"
+    },
+    "search": {
+        "label": "بحث",
+        "placeholder": "ابحث في {amount} من عقد الأبحاث"
+    },
+    "filters": {
+        "tier": "الفئة",
+        "allTiers": "الكل",
+        "tierOption": "الفئة {tier}",
+        "troop": "نوع القوات",
+        "allTroops": "الكل",
+        "troops": {
+            "Infantry": "المشاة",
+            "Marksman": "الرماة",
+            "Lancer": "الفرسان"
+        },
+        "data": "البيانات",
+        "dataOptions": {
+            "all": "كل العقد",
+            "placeholders": "العناصر المؤقتة",
+            "missingTime": "الوقت مفقود"
+        }
+    },
+    "list": {
+        "title": "العقد",
+        "empty": "لا توجد عقدة بحث تطابق هذا البحث.",
+        "emptyHint": "امسح البحث أو أحد عوامل التصفية.",
+        "columns": {
+            "node": "العقدة",
+            "tier": "الفئة",
+            "levels": "المستويات",
+            "bonus": "الميزة عند المستوى 1",
+            "time": "الوقت، المستوى 1",
+            "power": "القوة"
+        },
+        "mobileMeta": "{category}، الفئة {tier}، {levels}",
+        "count": "{count, plural, zero {{amount} عقدة} one {{amount} عقدة} two {{amount} عقدتان} few {{amount} عقد} many {{amount} عقدة} other {{amount} عقدة}}"
+    },
+    "levels": "{count, plural, zero {{amount} مستوى} one {{amount} مستوى} two {{amount} مستويان} few {{amount} مستويات} many {{amount} مستوى} other {{amount} مستوى}}",
+    "detail": {
+        "columns": {
+            "level": "المستوى",
+            "requires": "المتطلبات",
+            "cost": "التكلفة",
+            "time": "الوقت",
+            "bonus": "الميزة",
+            "power": "القوة"
+        },
+        "level": "المستوى {level}",
+        "none": "لا شيء",
+        "placeholderNote": "هذه العقدة عنصر مؤقت. لا تحتوي الحزمة على تكلفة أو ميزة لها.",
+        "requirement": {
+            "building": "{name} {level}",
+            "research": "{name} المستوى {level}"
+        },
+        "levelsTitle": "المستويات"
+    },
+    "view": {
+        "label": "العرض",
+        "list": "قائمة",
+        "tree": "شجرة"
+    },
+    "tree": {
+        "region": "شجرة أبحاث {tab}",
+        "openNode": "{name}، {levels}",
+        "tier": "T{tier}"
+    }
+}

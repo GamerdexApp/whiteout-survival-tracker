@@ -1,0 +1,49 @@
+{
+    "line": "{rows} baris charm, {slots} slot dan {rates} kadar tukaran. Rujukan sahaja, tiada apa di sini disimpan pada chief anda.",
+    "slots": {
+        "heading": "Slot charm",
+        "meta": "{slots} slot, satu untuk setiap jenis tentera",
+        "icons": "{count, plural, other {{amount} ikon tahap}}",
+        "recordLine": "Menguatkan tentera {troopType}. Satu ikon bagi setiap tahap."
+    },
+    "table": {
+        "heading": "Jadual charm",
+        "meta": "{rows} baris, {levels} tahap",
+        "searchLabel": "Cari",
+        "searchPlaceholder": "Cari {rows} baris charm",
+        "levelLabel": "Tahap",
+        "allLevels": "Semua tahap",
+        "levelOption": "Tahap {level}",
+        "stageLabel": "Peringkat",
+        "allStages": "Semua peringkat",
+        "stageOption": "Peringkat {stage}",
+        "empty": "Tiada baris charm sepadan dengan penapis anda."
+    },
+    "columns": {
+        "row": "Baris",
+        "materials": "Bahan",
+        "stats": "Statistik",
+        "power": "Kuasa",
+        "score": "Skor"
+    },
+    "cells": {
+        "none": "Tiada",
+        "percent": "{value}%"
+    },
+    "levels": {
+        "heading": "Tahap",
+        "level": "Tahap",
+        "levelName": "Tahap {level}",
+        "rows": "Baris",
+        "stats": "Statistik, pertama hingga terakhir",
+        "power": "Kuasa pada baris terakhir",
+        "statsRange": "{first}% hingga {last}%"
+    },
+    "exchange": {
+        "heading": "Kadar tukaran bahan",
+        "exchange": "Tukaran",
+        "from": "Daripada",
+        "to": "Kepada",
+        "weeklyLimit": "Had mingguan"
+    }
+}

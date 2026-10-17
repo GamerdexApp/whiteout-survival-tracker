@@ -1,0 +1,231 @@
+{
+    "page": {
+        "title": "Genel Bakış"
+    },
+    "header": {
+        "state": "State {number}",
+        "furnace": "Furnace {level}",
+        "serverAge": "Sunucu yaşı yaklaşık {days} gün",
+        "derived": "Diğer sayfalarından derlendi"
+    },
+    "tiles": {
+        "furnace": {
+            "label": "Furnace",
+            "steps": "{total} adımın {order}. adımı",
+            "unknown": "Bilinmiyor",
+            "unknownHint": "Furnace seviyesini Binalar sayfasında ayarla"
+        },
+        "dailies": {
+            "label": "Günlük Görevler",
+            "value": "{done} / {total}",
+            "tasks": "Bugün biten görevlerim",
+            "missions": "Biten oyun içi görevler"
+        },
+        "events": {
+            "label": "Etkinlikler",
+            "live": "{amount} canlı",
+            "coreDay": "{event} {day}",
+            "moreThisWeek": "Bu hafta {amount} daha",
+            "noneThisWeek": "Bu hafta yok"
+        },
+        "skins": {
+            "label": "Görünümler",
+            "value": "{owned} / {total}",
+            "hint": "Sahip olunan görünümler"
+        },
+        "vip": {
+            "label": "VIP",
+            "value": "VIP {level}",
+            "unknown": "Bilinmiyor",
+            "hint": "VIP XP'inden",
+            "unknownHint": "VIP XP'ini VIP sayfasına gir"
+        },
+        "prosperity": {
+            "label": "Ada refahı",
+            "possible": "/ {max} mümkün",
+            "locked": "Kilitli",
+            "lockedHint": "Furnace {level} gerekir"
+        },
+        "generation": {
+            "label": "Kahraman nesli",
+            "allUnlocked": "Tüm nesiller açık",
+            "shouldBeOpen": "Nesil {next} açık olmalı",
+            "onDay": "Nesil {next}: sunucunun {day}. günü",
+            "inDays": "Nesil {next}: yaklaşık {days} gün sonra"
+        }
+    },
+    "events": {
+        "title": "Etkinlikler",
+        "openCalendar": "Takvimi aç",
+        "liveNow": "Şu an canlı",
+        "liveBadge": "Şu an canlı",
+        "nextUp": "Sıradaki, etkinlikler sayfandan",
+        "coreLine": "{day} (toplam {count} gün), {name}. Ana Etkinlikler",
+        "runLine": "{length}. Şu an canlı",
+        "empty": "Etkinlik eklenmedi",
+        "addEvent": "Etkinlik ekle",
+        "noLive": "Şu an çalışan bir şey yok."
+    },
+    "coreToday": {
+        "title": "Bugün: {event}",
+        "open": "Ana Etkinlikler",
+        "dayLine": "{day}, {name}",
+        "plan": "Bugünün planı: {points} puan",
+        "checklist": "Kontrol listesi",
+        "done": "{total} işten {done} tamam",
+        "progress": "Kontrol listesi ilerlemesi",
+        "noActions": "Bugün için planlı eylem yok.",
+        "castleSignedUp": "Castle pozisyonu için kayıt yapıldı: {day}",
+        "castleOpen": "Castle pozisyonu için kayıt ol: {day}",
+        "logLocked": "{total} günün {locked} günü Etkinlik kaydında kilitli.",
+        "todayLocked": "{day} kilitli.",
+        "todayOpen": "{day} henüz kaydedilmedi.",
+        "openChecklist": "Kontrol listesini aç",
+        "openLog": "Etkinlik kaydını aç"
+    },
+    "queues": {
+        "title": "Çalışan sıralar",
+        "running": "{count} çalışıyor",
+        "construction": "İnşaat {number}",
+        "researchMain": "Araştırma",
+        "researchWarAcademy": "War Academy",
+        "training": "Eğitim: {name}",
+        "learning": "Öğrenme",
+        "task": {
+            "construction": "{name}: {level}",
+            "research": "{name}: seviye {level}",
+            "training": "Birlikler: {tier}",
+            "learning": "{name}, {skill}"
+        },
+        "idle": "Boşta",
+        "idleBuildings": "Boşta, Binalar'da Yükseltmeyi başlat'a bas",
+        "idleResearch": "Boşta, Araştırma'da Yükseltmeyi başlat'a bas",
+        "progress": "İlerleme: {title}"
+    },
+    "lastResult": {
+        "title": "Son etkinlik sonucu",
+        "open": "Geçmiş'te aç",
+        "days": "1. günden 5. güne. Savaş Aşaması ayrı tutulur.",
+        "plan": "Plan",
+        "actual": "Gerçekleşen",
+        "difference": "Fark",
+        "overall": "Genel sıralama",
+        "alliance": "İttifak sıralaması",
+        "upgrades": "Yapılan planlı yükseltmeler",
+        "upgradesOf": "{total} içinden {done}"
+    },
+    "server": {
+        "title": "Sunucu yaşı",
+        "edit": "Şefi düzenle",
+        "age": "Yaklaşık {days} gün, artı eksi {tolerance}",
+        "unknown": "Bilinmiyor. Sunucu başlangıç tarihini Şefi düzenle bölümünde ekle.",
+        "fromDate": "Sunucu başlangıç tarihinden: {date}.",
+        "warAcademy": "War Academy araştırması",
+        "t12": "T12 araştırması",
+        "open": "Açık",
+        "opensIn": "Yaklaşık {days} gün sonra açılır",
+        "unknownUnlock": "Bilinmiyor",
+        "heroes": "Açık kahramanlar, şuna kadar",
+        "generation": "Nesil {number}",
+        "estimate": "Açılma günleri sunucu zaman çizelgesinden gelir. Sunucun biraz farklıysa Şefi düzenle bölümünden değiştir.",
+        "areas": {
+            "fireCrystal": "Fire Crystal seviyeleri",
+            "pets": "Evcil Hayvanlar",
+            "experts": "Uzmanlar"
+        },
+        "fcUpTo": "{level} dahil",
+        "nothingYet": "Henüz yok",
+        "countOf": "{total} içinden {unlocked} açık",
+        "allUnlocked": "Her şey açık.",
+        "generationName": "Nesil {number}",
+        "allGenerations": "Tüm nesiller açık.",
+        "next": {
+            "withDate": "Sıradaki: {names}, sunucunun {day}. günü, {date}. Yaklaşık {days} gün sonra.",
+            "noDate": "Sıradaki: {names}, sunucunun {day}. günü. Yaklaşık {days} gün sonra.",
+            "unknownAge": "Sıradaki: {names}, sunucunun {day}. günü.",
+            "passed": "Sunucu yaşına göre {names} açık olmalı (sunucunun {day}. günü). Şefi düzenle bölümünde ayarı yükselt."
+        }
+    },
+    "dailies": {
+        "title": "Bugünün günlük görevleri",
+        "open": "Günlük Görevler'i aç",
+        "activeness": "Aktiflik: {now} / {top}",
+        "activenessBar": "Bugünkü aktiflik",
+        "missions": "Oyun içi görevler: {total} içinden {done} tamam",
+        "tasks": "Görevlerim: {total} içinden {done}",
+        "tasksBar": "Bugün biten görevlerim",
+        "stillOpen": "Görevlerim'de hâlâ açık, {total} içinden ilk {shown}",
+        "allDone": "Görevlerim'deki her görev bugün için tamam.",
+        "noTasks": "Görevlerim'de henüz görev yok."
+    },
+    "planner": {
+        "title": "Planlayıcı eksikleri",
+        "short": "{amount} eksik",
+        "covered": "Eksik yok",
+        "goals": "Hedefler şu sayfalardan: {pages}. Maliyetler paketten, stok Kaynaklar'dan gelir.",
+        "noGoals": "Hedef belirlenmedi. Binalar, Araştırma ve diğer sayfalarda Plan ile hedef belirle.",
+        "pages": {
+            "buildings": "Binalar",
+            "research": "Araştırma",
+            "heroes": "Kahramanlar",
+            "troops": "Birlikler",
+            "pets": "Evcil Hayvanlar",
+            "chiefGear": "Şef Ekipmanı",
+            "chiefCharms": "Şef Tılsımları"
+        },
+        "separator": ", ",
+        "line": "Gereken {need} · Elinde {have}",
+        "shortBy": "Eksik {amount}",
+        "enough": "Yeterli",
+        "updateStock": "Stoku Kaynaklar'da güncelle",
+        "incomplete": "Bir hedef seviyesinin paketteki maliyeti Bilinmiyor, bu yüzden bu toplamlar eksik."
+    },
+    "progress": {
+        "title": "Alan başına ilerleme",
+        "hint": "Sahip olunan ya da seviyelenen, paket toplamlarına göre",
+        "count": "{owned} / {total}",
+        "furnace": "Furnace",
+        "furnaceOf": "{level} / {max}",
+        "furnaceUnknown": "Bilinmiyor",
+        "areas": {
+            "buildings": "Binalar",
+            "heroes": "Kahramanlar",
+            "chiefGear": "Şef ekipmanı",
+            "chiefCharms": "Şef tılsımları",
+            "experts": "Uzmanlar",
+            "pets": "Evcil hayvanlar",
+            "research": "Araştırma",
+            "allianceTech": "İttifak teknolojisi",
+            "skins": "Görünümler"
+        },
+        "locked": {
+            "daybreakIsland": "Daybreak Island",
+            "requirement": "Kilitli. Furnace {level} gerekir, kalan: {count, plural, one {{amount} seviye} other {{amount} seviye}}"
+        }
+    },
+    "power": {
+        "title": "Güç",
+        "total": "Toplam güç",
+        "complete": "Mevcut güç, açılma ayarlarının açtığı içerikte her şey en üst seviyedeyken her grubun verebileceği en yüksek değerle karşılaştırılır. En yüksek değeri olmayan gruplar olduğu gibi sayılır.",
+        "incomplete": "Aynı karşılaştırma. Verilerde {count, plural, one {{amount} öğenin} other {{amount} öğenin}} güç değeri yok ve {count, plural, one {sayılmıyor} other {sayılmıyor}}.",
+        "groupWithoutValue": "Verilerde {count, plural, one {{amount} öğenin} other {{amount} öğenin}} güç değeri yok",
+        "groups": {
+            "buildings": "Binalar",
+            "research": "Araştırma",
+            "heroes": "Kahramanlar",
+            "heroGear": "Kahraman Ekipmanı",
+            "chiefGear": "Şef Ekipmanı",
+            "chiefCharms": "Şef Tılsımları",
+            "experts": "Uzmanlar",
+            "pets": "Evcil Hayvanlar",
+            "troops": "Birlikler"
+        },
+        "ofPossible": "/ {possible} mümkün",
+        "totalProgress": "Toplam güç, mümkün olan en yüksek değerle karşılaştırılır",
+        "percentOfPossible": "Mümkün olan en yüksek değer: %{percent}",
+        "rowOfPossible": "{possible} içinden {power}",
+        "progress": "{group} gücü, mümkün olan en yüksek değerle karşılaştırılır",
+        "noMaximum": "En yüksek değer yok, girdiklerine bağlı",
+        "noCapNote": "Birlikler ve Kahraman Ekipmanı için üst sınır yoktur. Daha fazla birlik eğitip kahraman ekipmanını geliştirerek toplam gücün mümkün toplamı aşabilir. İkisi de mümkün toplamda olduğu gibi sayılır."
+    }
+}

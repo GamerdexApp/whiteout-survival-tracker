@@ -1,0 +1,129 @@
+{
+    "title": "سجل الفعاليات",
+    "events": {
+        "svs": "SvS, State of Power",
+        "showdown": "Alliance Showdown",
+        "king": "King of Icefield",
+        "hall": "Hall of Chief"
+    },
+    "tabs": {
+        "label": "عروض سجل الفعاليات",
+        "current": "الفعالية الحالية",
+        "history": "السجل"
+    },
+    "dates": {
+        "title": "تواريخ الفعالية",
+        "start": "البداية",
+        "end": "النهاية",
+        "days": "{count, plural, zero {{amount} يوم} one {{amount} يوم} two {{amount} يومان} few {{amount} أيام} many {{amount} يومًا} other {{amount} يوم}}",
+        "endBeforeStart": "تاريخ النهاية يسبق تاريخ البداية."
+    },
+    "results": {
+        "rank": "المرتبة",
+        "alliance": "التحالف",
+        "score": "النتيجة",
+        "allianceShort": "التحالف",
+        "scoreOf": "{day}، النتيجة",
+        "rankOf": "{day}، المرتبة",
+        "allianceOf": "{day}، مرتبة التحالف",
+        "plan": "المخطط {total}",
+        "notStarted": "لم تبدأ",
+        "opensLater": "تُفتح لاحقًا",
+        "empty": "فارغة",
+        "locked": "مقفلة",
+        "lock": "قفل",
+        "unlock": "فتح",
+        "lockDay": "قفل {day}",
+        "unlockDay": "فتح {day}"
+    },
+    "cards": {
+        "svsDays": "أيام التحضير من 1 إلى 5",
+        "days": "الأيام",
+        "stages": "المراحل",
+        "rankHint": "المرتبة هي مرتبتك في الولاية. التحالف هو مرتبة تحالفك.",
+        "battleTitle": "مرحلة المعركة",
+        "battleNote": "نتيجة المعركة ومرتبتها حصيلة مستقلة. لا تُضاف إلى الأيام من 1 إلى 5."
+    },
+    "overall": {
+        "svsTitle": "الحصيلة الإجمالية، الأيام من 1 إلى 5",
+        "title": "الحصيلة الإجمالية",
+        "rank": "المرتبة الإجمالية",
+        "alliance": "مرتبة التحالف الإجمالية",
+        "svsTotal": "مجموع الأيام المقفلة من 1 إلى 5",
+        "daysTotal": "مجموع الأيام المقفلة",
+        "stagesTotal": "مجموع المراحل المقفلة",
+        "hint": "القفل يمنع تغيّر الرقم أثناء متابعتك اللعب. يمكن فتح الأرقام المقفلة."
+    },
+    "footer": {
+        "close": "إغلاق",
+        "endEvent": "إنهاء الفعالية",
+        "readOnly": "السجل للقراءة فقط"
+    },
+    "end": {
+        "title": "هل تريد إنهاء {event} وحفظها في السجل؟",
+        "dates": "{event}، من {start} إلى {end}",
+        "noDates": "{event}، لم تُدخل تواريخ",
+        "lockedTotal": "مجموع الأيام المقفلة: {total}.",
+        "lockedTotalSvs": "مجموع الأيام المقفلة من 1 إلى 5: {total}.",
+        "noRanks": "المرتبة الإجمالية ومرتبة التحالف فارغتان.",
+        "allLocked": "كل الأيام مقفلة.",
+        "unlocked": "الأيام غير المقفلة: {count, plural, zero {{amount} يوم} one {{amount} يوم} two {{amount} يومان} few {{amount} أيام} many {{amount} يومًا} other {{amount} يوم}}. تُحفظ كما أُدخلت، وتبقى الأيام التي بلا أرقام فارغة.",
+        "unlockedList": "غير مقفلة: {days}.",
+        "what": "ما الذي سيحدث",
+        "saves": "يحفظ التواريخ والنتائج والمراتب اليومية والحصيلة الإجمالية في السجل، مع المجموع المخطط لكل يوم.",
+        "clearsCounts": "يمسح الأعداد لكل يوم، فيبدأ كل يوم في الخطة من 0.",
+        "clearsPlans": "يمسح الخطط المصدَّرة إلى هذه الفعالية وعلامات قائمة المهام.",
+        "keeps": "تُمسح هذه الفعالية فقط. تبقى أهدافك وخططك في الصفحات الأخرى.",
+        "cancel": "إلغاء",
+        "confirm": "إنهاء الفعالية وبدء فعالية جديدة",
+        "toastTitle": "انتهت الفعالية",
+        "toastMessage": "تم حفظ {event} في السجل. تبدأ الفعالية من جديد بلا تواريخ.",
+        "undo": "تراجع",
+        "lockedTotalStages": "مجموع المراحل المقفلة: {total}."
+    },
+    "history": {
+        "intro": "فعاليات {event} التي أنهيتها، الأحدث أولًا. إنهاء الفعالية يحفظ سجلها هنا ولا يمكن تعديله لاحقًا، بل إزالته فقط. <link>افتح السجل لمقارنة المخطط بالفعلي وللترقيات المخططة.</link>",
+        "empty": "لا توجد فعاليات منتهية بعد. أنهِ فعالية لحفظ سجلها هنا.",
+        "cardTitle": "{event}، من {start} إلى {end}",
+        "cardNoDates": "{event}، بلا تواريخ",
+        "ended": "انتهت {date}",
+        "svsTotal": "الأيام من 1 إلى 5",
+        "total": "إجمالي النتيجة",
+        "overallRank": "المرتبة الإجمالية",
+        "allianceRank": "مرتبة التحالف",
+        "notSet": "غير محدد",
+        "showDays": "عرض الأيام",
+        "hideDays": "إخفاء الأيام",
+        "remove": "إزالة من السجل",
+        "removedTitle": "تمت الإزالة من السجل",
+        "removedMessage": "تمت إزالة {event} من السجل.",
+        "undo": "تراجع",
+        "noValue": "-"
+    },
+    "checklist": {
+        "title": "قائمة مهام الخطة",
+        "description": "{day}، ما يجب فعله",
+        "dayChips": "اليوم",
+        "castleTitle": "سجّل لمنصب القلعة ليوم {day}",
+        "castleBody": "تمنح مناصب القلعة مزايا لليوم التالي. سجّل قبل انتهاء اليوم لتكون الميزة فعالة ليوم {day}.",
+        "castleCheck": "تم التسجيل ليوم {day}",
+        "done": "تم {done} من {total}",
+        "progress": "الإجراءات المؤشَّر عليها",
+        "planLine": "خطة اليوم: {points} نقطة. تُسرد الإجراءات التي عددها أكبر من 0 فقط. تأتي الأعداد من صفحة الفعاليات الأساسية.",
+        "empty": "لا يوجد إجراء له عدد في هذا اليوم. أضف الأعداد في صفحة الفعاليات الأساسية.",
+        "resources": "الموارد المستخدمة",
+        "resourcesHint": "عناصر ينفقها اليوم. افحص مخزونك قبل أن تبدأ.",
+        "actions": "الإجراءات",
+        "count": "x{count}",
+        "points": "{points} نقطة",
+        "clear": "مسح العلامات",
+        "close": "إغلاق",
+        "dayTitle": "{day} · {name}"
+    },
+    "eventShort": {
+        "svs": "SvS",
+        "showdown": "Alliance Showdown",
+        "king": "King of Icefield",
+        "hall": "Hall of Chief"
+    }
+}

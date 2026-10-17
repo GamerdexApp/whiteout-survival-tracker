@@ -1,0 +1,67 @@
+{
+    "line": "Sumber buff yang terpakai dalam setiap {modes} mod permainan: ya, tidak atau sebahagian untuk {sources} jenis buff.",
+    "matrix": {
+        "title": "Matriks buff",
+        "meta": "{modes} mod, {sources} jenis buff",
+        "table": "Sumber buff mengikut mod permainan",
+        "mode": "Mod permainan"
+    },
+    "sources": {
+        "cityBonusWarsBuffs": {
+            "short": "Bonus bandar",
+            "full": "Bonus bandar dan buff peperangan"
+        },
+        "deploymentCapacity": {
+            "short": "Kap. kerah",
+            "full": "Kapasiti pengerahan"
+        },
+        "petSkills": {
+            "short": "Kem. haiwan",
+            "full": "Kemahiran haiwan peliharaan"
+        },
+        "daybreakIsland": {
+            "short": "Daybreak",
+            "full": "Daybreak Island"
+        },
+        "presidentSkills": {
+            "short": "Presiden",
+            "full": "Kemahiran Presiden"
+        },
+        "ministerBuff": {
+            "short": "Menteri",
+            "full": "Buff Menteri"
+        },
+        "territoryBonuses": {
+            "short": "Wilayah",
+            "full": "Bonus wilayah"
+        },
+        "facilityBuff": {
+            "short": "Kemudahan",
+            "full": "Buff kemudahan"
+        },
+        "marchAccelerator": {
+            "short": "Pecut march",
+            "full": "Pemecut march"
+        },
+        "frostdragonTyrantTitles": {
+            "short": "Gelaran Tyrant",
+            "full": "Gelaran Frostdragon Tyrant"
+        },
+        "frostSphereDomainBonus": {
+            "short": "Frost Sphere",
+            "full": "Bonus domain Frost Sphere"
+        }
+    },
+    "applicability": {
+        "yes": "Ya",
+        "no": "Tidak",
+        "partial": "Sebahagian"
+    },
+    "notes": {
+        "title": "Nota mengikut mod permainan",
+        "table": "Nota mengikut mod permainan",
+        "petSkillsAutoApplied": "Kemahiran haiwan peliharaan digunakan secara automatik",
+        "note": "Nota",
+        "noNote": "Tiada"
+    }
+}

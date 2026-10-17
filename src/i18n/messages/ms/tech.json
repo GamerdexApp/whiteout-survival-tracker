@@ -1,0 +1,98 @@
+{
+    "page": {
+        "title": "Teknologi"
+    },
+    "view": {
+        "subline": "{chief} · {count} nod teknologi alliance dalam Growth, Territory dan Battle"
+    },
+    "summary": {
+        "maxed": "Maksimum",
+        "inProgress": "Sedang berjalan",
+        "notStarted": "Belum bermula",
+        "locked": "Terkunci"
+    },
+    "status": {
+        "maxed": "Maksimum",
+        "inProgress": "Sedang berjalan",
+        "notStarted": "Belum bermula",
+        "locked": "Terkunci"
+    },
+    "tabs": {
+        "label": "Kategori teknologi"
+    },
+    "categories": {
+        "Growth": "Growth",
+        "Territory": "Territory",
+        "Battle": "Battle"
+    },
+    "filters": {
+        "search": "Cari",
+        "searchLabel": "Cari nod teknologi",
+        "searchPlaceholder": "Nama nod",
+        "tier": "Peringkat",
+        "allTiers": "Semua peringkat",
+        "tierOption": "Peringkat {tier}",
+        "status": "Status",
+        "allStatuses": "Semua",
+        "button": "Carian dan penapis",
+        "title": "Carian dan penapis",
+        "description": "Cari nod teknologi mengikut nama, peringkat dan status",
+        "reset": "Tetapkan semula penapis",
+        "done": "Tunjuk {count}",
+        "shown": "{shown} daripada {total} nod ditunjukkan"
+    },
+    "table": {
+        "node": "Nod",
+        "level": "Tahap",
+        "bonus": "Bonus",
+        "cost": "Kos tahap seterusnya",
+        "time": "Masa",
+        "needs": "Perlu"
+    },
+    "node": {
+        "tierDescription": "Peringkat {tier} · {description}",
+        "levelLabel": "Tahap {name}",
+        "levelOf": "{level} / {max}",
+        "open": "Buka {name}",
+        "bonusOf": "{now} daripada {max}",
+        "bonusNone": "Belum ada, maks {max}",
+        "noBonus": "Tiada bonus",
+        "maxed": "Maksimum",
+        "noTime": "Tiada masa",
+        "readyToUpgrade": "Sedia dinaik taraf",
+        "nothingNeeded": "Tiada yang diperlukan",
+        "needsPart": "Perlu {name} tahap {level}",
+        "costLine": "{name} {amount}",
+        "lockedHint": "Terkunci sehingga {names}",
+        "requirementPart": "{name} tahap {level}"
+    },
+    "flyout": {
+        "title": "{name}",
+        "subtitle": "{category}, peringkat {tier}. {description}",
+        "close": "Tutup",
+        "level": "Tahap",
+        "bonusNow": "Bonus sekarang",
+        "needsFor": "Perlu untuk tahap {level}",
+        "needsNothing": "Tiada yang diperlukan.",
+        "needsLine": "Perlu tahap {need}, anda ada tahap {have}",
+        "met": "Dipenuhi",
+        "notMet": "Belum dipenuhi",
+        "requiredBy": "Diperlukan oleh",
+        "requiredByNone": "Tiada nod lain yang memerlukan yang ini.",
+        "requiredByLine": "{category}, peringkat {tier}, dari tahap {from} perlu {name} tahap {need}",
+        "allLevels": "Semua tahap",
+        "levelRow": "Tahap {level}",
+        "done": "Siap",
+        "next": "Seterusnya",
+        "later": "Kemudian",
+        "remaining": "Baki ke maksimum",
+        "derived": "Diperoleh",
+        "remainingNone": "Tiada lagi. Nod ini maksimum.",
+        "remainingLine": "{cost}",
+        "remainingTime": "{time}"
+    },
+    "empty": {
+        "title": "Tiada nod sepadan",
+        "description": "Ubah carian atau penapis untuk melihat lebih banyak nod."
+    }
+}

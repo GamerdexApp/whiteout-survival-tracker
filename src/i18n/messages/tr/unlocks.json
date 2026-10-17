@@ -1,0 +1,27 @@
+{
+    "lock": {
+        "day": "Sunucunun {day}. gününde açılır",
+        "dayAndDate": "Sunucunun {day}. gününde açılır, {date}"
+    },
+    "areas": {
+        "pets": "Evcil Hayvanlar",
+        "fireCrystal": "Fire Crystal seviyeleri",
+        "experts": "Uzmanlar",
+        "chiefGear": "Şef Ekipmanı",
+        "chiefCharms": "Şef Tılsımları",
+        "warAcademy": "War Academy ve T12 araştırması"
+    },
+    "dialog": {
+        "legend": "Açılan içerik",
+        "hint": "Kilitler, sunucunun başlangıç tarihinden itibaren geçen yaşına göre ilerler. Sunucun biraz farklıysa gerçekte olduğun adımı seç. Kilitli öğeler görünür kalır ve kayıtlı verilerin korunur.",
+        "auto": "Otomatik, {current}",
+        "autoUnknown": "Otomatik, kullanmak için sunucu başlangıç tarihini ayarla",
+        "autoNone": "henüz hiçbir şey açılmadı",
+        "none": "Hiçbir şey açılmadı",
+        "stepPets": "{day}. gün, {total} evcil hayvandan {count}",
+        "stepExperts": "{day}. gün, {total} uzmandan {count}",
+        "stepFc": "{day}. gün, {last} dahil, aşamaları olmadan",
+        "stepNamed": "{day}. gün, {name}",
+        "pickLabel": "{area}: açılma noktası"
+    }
+}

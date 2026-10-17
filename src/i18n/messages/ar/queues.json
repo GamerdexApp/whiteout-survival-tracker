@@ -1,0 +1,95 @@
+{
+    "hoursMinutes": {
+        "hours": "ساعات",
+        "minutes": "دقائق"
+    },
+    "jobCard": {
+        "idle": "فارغ",
+        "progress": "تقدم {title}",
+        "ends": "ينتهي {date}",
+        "manage": "إدارة",
+        "finish": "إنهاء"
+    },
+    "timeLeftPill": {
+        "manage": "{label}، {timeLeft}. إدارة الترقية"
+    },
+    "manage": {
+        "fallbackTitle": "إدارة الترقية",
+        "description": "إدارة الترقية الجارية",
+        "close": "إغلاق",
+        "finish": "إنهاء الترقية",
+        "progress": "تقدم الترقية",
+        "started": "بدأت {date}",
+        "ends": "تنتهي {date}",
+        "speedup": {
+            "title": "استخدام تسريع",
+            "minutesUsed": "الدقائق المستخدمة",
+            "apply": "تطبيق",
+            "timeLeftAfter": "الوقت المتبقي بعد التطبيق",
+            "hint": "التسريعات بكل أنواعها تخصم دقائقها من الوقت المتبقي."
+        },
+        "setTime": {
+            "title": "ضبط الوقت المتبقي",
+            "button": "ضبط الوقت المتبقي",
+            "hint": "استخدم هذا عندما تعرض اللعبة وقتًا مختلفًا."
+        },
+        "done": {
+            "title": "عند الانتهاء",
+            "cancel": "إلغاء هذه الترقية"
+        }
+    },
+    "planStock": {
+        "title": "هل لديك ما يكفي؟",
+        "shortCount": "ينقص {short} من {total}",
+        "description": "ما تأخذه الخطة من مخزونك، مقارنة بما تملكه. الخطة الكاملة في النتيجة أدناه.",
+        "enough": "كافٍ",
+        "notEnough": "غير كافٍ",
+        "covered": "{name} متوفر",
+        "available": "المتاح {amount}",
+        "needed": "المطلوب {amount}",
+        "leftOver": "يتبقى {amount}",
+        "shortBy": "ينقص {amount}",
+        "stillNeeded": "ما زال {list} مطلوبًا لإتمام الخطة الكاملة.",
+        "openResources": "فتح الموارد"
+    },
+    "start": {
+        "title": "بدء الترقية",
+        "cancel": "إلغاء",
+        "nothingToStart": "لا يمكن بدء شيء الآن. كل العناصر في أعلى مستوى أو مقفلة أو قيد الترقية بالفعل.",
+        "powerGained": "القوة المكتسبة",
+        "packageTime": "وقت الحزمة",
+        "unknown": "غير معروف",
+        "readOnly": "للقراءة فقط",
+        "openBonuses": "فتح المزايا",
+        "yourTime": "وقتك",
+        "timeHint": "تُحتسب السرعة من صفحة المزايا فقط. إذا عرضت اللعبة وقتًا آخر فغيّره ضمن متى بدأت.",
+        "allBusy": "كل ما هنا مشغول. بدء الترقية معطّل حتى يتفرغ أحدها.",
+        "whenStarted": "متى بدأت",
+        "timeLeftHours": "الوقت المتبقي بالساعات",
+        "ends": "تنتهي",
+        "startedHint": "اختر بدأت بالفعل لإدخال الوقت الذي تعرضه اللعبة. يُحسب وقت الانتهاء منه.",
+        "takeCost": {
+            "title": "خصم التكلفة من الموارد",
+            "hint": "يطرح التكلفة أعلاه من مخزونك.",
+            "enough": "لديك ما يكفي من كل مورد.",
+            "short": "ينقصك {names}. يمكنك البدء رغم ذلك، ويتوقف المخزون عند 0."
+        },
+        "modes": {
+            "now": "تبدأ الآن",
+            "already": "بدأت بالفعل"
+        }
+    },
+    "researchQueues": {
+        "label": "{name}، {tabs}",
+        "main": {
+            "name": "طابور الأبحاث",
+            "tabs": "النمو والاقتصاد والمعركة",
+            "shortName": "الأبحاث"
+        },
+        "warAcademy": {
+            "name": "طابور War Academy",
+            "tabs": "T11 وT12",
+            "shortName": "War Academy"
+        }
+    }
+}

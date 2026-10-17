@@ -1,0 +1,114 @@
+{
+    "page": {
+        "title": "Daybreak Island"
+    },
+    "view": {
+        "subline": "Lumber Camp, Tree of Life dan hiasan anda."
+    },
+    "locked": {
+        "title": "Memerlukan Furnace {level}",
+        "description": "Daybreak Island dibuka pada Furnace {level}. Furnace anda ialah {current}, jadi {missing} lagi. Halaman kekal kelihatan supaya anda dapat melihat apa yang akan datang. Penyuntingan dimatikan sehingga itu.",
+        "noFurnace": "Daybreak Island dibuka pada Furnace {level}. Tahap Furnace anda belum ditetapkan. Halaman kekal kelihatan supaya anda dapat melihat apa yang akan datang. Penyuntingan dimatikan sehingga itu.",
+        "missing": "{count, plural, other {{amount} tahap}}",
+        "link": "Pergi ke Bangunan"
+    },
+    "levelOf": "L{level} daripada {max}",
+    "camp": {
+        "title": "Lumber Camp",
+        "levelLabel": "Tahap Lumber Camp",
+        "workers": "Pekerja",
+        "rate": "Kadar sesaat",
+        "essence": "Life Essence untuk mencapai tahap ini",
+        "needsTree": "Perlu Tree of Life tahap {required}. Anda ada {current}.",
+        "treeTooLow": "Tree of Life tahap {current} terlalu rendah. Tahap {level} Lumber Camp memerlukan Tree of Life tahap {required}.",
+        "next": "Seterusnya, tahap {level}: {essence} Life Essence, perlu Tree of Life tahap {tree}.",
+        "highest": "Ini ialah tahap tertinggi."
+    },
+    "tree": {
+        "title": "Tree of Life",
+        "levelLabel": "Tahap Tree of Life",
+        "prosperity": "Kemakmuran untuk mencapai tahap ini",
+        "essence": "Life Essence untuk mencapai tahap ini",
+        "perHour": "Life Essence sejam",
+        "buff": "Buff",
+        "next": "Seterusnya, tahap {level}: {prosperity} Kemakmuran, {essence} Life Essence.",
+        "highest": "Ini ialah tahap tertinggi."
+    },
+    "decorations": {
+        "title": "Hiasan",
+        "owned": "{owned} daripada {total} dimiliki",
+        "imageNote": "Hanya {withImage} daripada {total} hiasan mempunyai imej dalam pakej. Petak penuh menandakan yang mempunyai imej, petak bergaris menandakan selebihnya."
+    },
+    "search": {
+        "label": "Cari hiasan",
+        "placeholder": "Cari hiasan"
+    },
+    "status": {
+        "showing": "Menunjukkan {shown} daripada {total} hiasan.",
+        "showMore": "{count, plural, other {Tunjuk {amount} lagi hiasan}}"
+    },
+    "empty": {
+        "title": "Tiada hiasan sepadan",
+        "description": "Ubah carian atau penapis untuk melihat hiasan.",
+        "reset": "Tetapkan semula penapis"
+    },
+    "card": {
+        "costEach": "Kos setiap satu",
+        "cost": "{amount} {item}",
+        "limit": "Had",
+        "buffAtLevel": "Buff pada tahap {level}",
+        "buffAtMax": "Buff pada tahap maksimum",
+        "buffValue": "{value} {stat}",
+        "prosperityAtMax": "Kemakmuran pada maksimum",
+        "essenceCost": "Kos Life Essence",
+        "unknown": "Tidak diketahui",
+        "owned": "Dimiliki",
+        "notOwned": "Tidak dimiliki",
+        "ownedLabel": "{name} dimiliki",
+        "levelLabel": "Tahap {name}",
+        "countLabel": "Bilangan {name}",
+        "limited": "Terhad",
+        "ownedCount": "Dimiliki {count} daripada {limit}"
+    },
+    "categories": {
+        "Basic": "Basic",
+        "Vegetation": "Vegetation",
+        "Common": "Common",
+        "Uncommon": "Uncommon",
+        "Rare": "Rare",
+        "Epic": "Epic",
+        "Mythic": "Mythic",
+        "Unique": "Unique"
+    },
+    "filters": {
+        "button": "Penapis",
+        "title": "Penapis",
+        "description": "Sempitkan senarai hiasan. Penapis tidak disimpan.",
+        "category": "Kategori",
+        "categoryAll": "Semua {amount}",
+        "categoryOption": "{category} {amount}",
+        "show": "Tunjuk",
+        "ownedOnly": "Dimiliki sahaja",
+        "limitedOnly": "Terhad sahaja",
+        "unknownBuffOnly": "Buff tidak diketahui sahaja",
+        "sort": "Isih",
+        "order": {
+            "game": "Susunan pakej",
+            "name": "Nama A hingga Z",
+            "level": "Tahap tertinggi dahulu"
+        },
+        "reset": "Tetap semula",
+        "showButton": "{count, plural, other {Tunjuk {amount} hiasan}}",
+        "nonLimitedOnly": "Tidak terhad sahaja",
+        "notOwnedOnly": "Tidak dimiliki sahaja"
+    },
+    "prosperity": {
+        "label": "Skor kemakmuran anda",
+        "progress": "Skor kemakmuran hiasan anda",
+        "possible": "Daripada {max} dengan setiap hiasan pada tahap dan had tertinggi",
+        "levelled": "Hiasan bertahap, kemakmuran tahap yang dicapai",
+        "limited": "Hiasan dengan had, dimiliki darab kemakmuran setiap satu",
+        "ofMax": "{value} daripada {max}",
+        "withoutValue": "{count, plural, other {{amount} hiasan dimiliki}} tiada nilai kemakmuran dalam data dan {count, plural, other {tidak dikira}}."
+    }
+}

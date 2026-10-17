@@ -1,0 +1,102 @@
+{
+    "page": { "title": "Geçmiş" },
+    "events": {
+        "svs": "SvS",
+        "showdown": "Alliance Showdown",
+        "king": "King of Icefield",
+        "hall": "Hall of Chief"
+    },
+    "title": {
+        "dated": "{event}, {start} - {end}",
+        "undated": "{event}"
+    },
+    "ended": "Bitiş: {date}",
+    "tabs": { "label": "Etkinliğe göre filtrele", "all": "Tüm etkinlikler" },
+    "list": {
+        "intro": "Etkinlik kaydından bitirdiğin etkinlikler, en yeniden başlayarak. SvS için skorlar 1. günden 5. güne kadardır, Savaş Aşaması ayrı tutulur. Planını gerçekleşenle ve planlanan yükseltmeleri görmek için bir etkinliği aç.",
+        "event": "Etkinlik",
+        "plan": "Plan",
+        "actual": "Gerçekleşen",
+        "diff": "Fark",
+        "rank": "Sıra",
+        "alliance": "İttifak",
+        "rankLine": "Sıra {rank}, ittifak {alliance}",
+        "open": "Aç",
+        "openEvent": "Aç: {name}",
+        "none": "Bu türde bitmiş etkinlik henüz yok.",
+        "diffWithPercent": "{amount} (%{percent})"
+    },
+    "empty": {
+        "title": "Henüz etkinlik yok",
+        "description": "Ana Etkinlikler'deki Etkinlik kaydından bitirdiğin etkinlikler planları ve sonuçlarıyla burada saklanır.",
+        "action": "Ana Etkinlikler'i aç"
+    },
+    "notFound": {
+        "title": "Etkinlik bulunamadı",
+        "description": "Bu etkinlik etkin şefin geçmişinde yok. Kaldırılmış olabilir ya da etkinlik Ana Etkinlikler'de gizli.",
+        "action": "Geçmiş'e dön"
+    },
+    "unknown": "Ayarlanmadı",
+    "belowPlan": "Planın altında",
+    "atOrAbovePlan": "Planda ya da üstünde",
+    "breadcrumb": { "label": "Gezinti yolu" },
+    "tiles": {
+        "plan": "Plan",
+        "actual": "Gerçekleşen",
+        "difference": "Fark",
+        "overall": "Genel",
+        "alliance": "İttifak",
+        "days": "1. günden 5. güne",
+        "rank": "Sıra",
+        "rankDays": "Sıra, 1. günden 5. güne",
+        "percent": "%{percent}"
+    },
+    "compare": {
+        "title": "Plan ve gerçekleşen",
+        "titleDays": "Plan ve gerçekleşen, 1. günden 5. güne",
+        "day": "Gün",
+        "plan": "Plan",
+        "actual": "Gerçekleşen",
+        "diff": "Fark",
+        "rank": "Sıra",
+        "ally": "İttifak",
+        "total": "Toplam",
+        "share": "Planın %{percent}'i",
+        "shareLine": "Planın %{percent}'i, sıra {rank}, ittifak {ally}",
+        "barLabel": "{day}, gerçekleşenin plana oranı"
+    },
+    "battle": {
+        "title": "Savaş Aşaması",
+        "note": "Kendi skoru ve sırası var. 1. günden 5. güne toplamına eklenmez."
+    },
+    "upgrades": {
+        "title": "Planlanan yükseltmeler",
+        "titleCount": "Planlanan yükseltmeler, {count}",
+        "summary": "Bu etkinliğin planındaki yükseltmeler, türe göre gruplanmış. {count} yükseltmenin {done} tanesi yapıldı.",
+        "summaryUnchecked": "Bu etkinliğin planındaki yükseltmeler, türe göre gruplanmış.",
+        "none": "Bu etkinliğe plan aktarılmadı, bu yüzden gösterilecek planlı yükseltme yok.",
+        "groupTitle": "{name}, {count}",
+        "groupStats": "{count} içinden {done} tamam, güç +{power}, Fire Crystal {fireCrystals}",
+        "groupStatsUnchecked": "Güç +{power}, Fire Crystal {fireCrystals}",
+        "power": "+{power} güç",
+        "plannedDay": "Planlanan: {day}",
+        "done": "Yapıldı",
+        "notDone": "Yapılmadı",
+        "levelsFrom": "{from} - {to}",
+        "levelsTo": "hedef {to}",
+        "levelsResearchFrom": "Seviye {from} - {to}",
+        "levelsResearchTo": "hedef seviye {to}",
+        "costAmount": "{amount} {name}"
+    },
+    "pages": {
+        "buildings": "Binalar",
+        "research": "Araştırma",
+        "chiefGear": "Şef Ekipmanı",
+        "chiefCharms": "Şef Tılsımları",
+        "heroGear": "Kahraman Ekipmanı",
+        "heroes": "Kahramanlar",
+        "pets": "Evcil Hayvanlar",
+        "experts": "Uzmanlar",
+        "troops": "Birlikler"
+    }
+}

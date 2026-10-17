@@ -1,0 +1,49 @@
+{
+    "title": "Sunucu zaman çizelgesi",
+    "line": "{rows, plural, one {{amount} kilometre taşı} other {{amount} kilometre taşı}}, {first}. günden {last}. güne",
+    "subline": "Her sunucu yaşında nelerin açıldığı. Yalnızca başvuru, burada hiçbir şey kaydedilmez.",
+    "place": {
+        "label": "Yerimi şunun için göster",
+        "option": "{name}, yaklaşık {days}. gün, artı eksi {window}",
+        "optionNoDate": "{name}, sunucu başlangıç tarihi yok",
+        "jump": "Yerime git"
+    },
+    "filters": {
+        "label": "Göster",
+        "events": "Etkinlikler {amount}",
+        "features": "Özellikler {amount}",
+        "pets": "Evcil Hayvanlar {amount}",
+        "experts": "Uzmanlar {amount}",
+        "heroes": "Kahramanlar {amount}"
+    },
+    "help": "Çizgi, gün olarak sunucu yaşıdır. Kahramanlar sağda, geri kalan her şey solda. Yerin, şefindeki sunucu başlangıç tarihinden gelir ve artı eksi {window} gün aralığı vardır.",
+    "noChief": "Henüz şef yok, bu yüzden yerin gösterilmiyor.",
+    "addChief": "Şef ekle",
+    "noStartDate": "{name} için sunucu başlangıç tarihi yok. Çizgideki yerini görmek için ekle.",
+    "editChief": "Şefi düzenle",
+    "columns": {
+        "left": "Etkinlikler, özellikler, evcil hayvanlar, uzmanlar",
+        "right": "Kahramanlar"
+    },
+    "tags": {
+        "event": "Etkinlik",
+        "feature": "Özellik",
+        "pets": "Evcil Hayvanlar",
+        "experts": "Uzmanlar"
+    },
+    "fireCrystalLevels": "Fire Crystal seviyeleri {names}",
+    "heroGeneration": "Kahramanlar, nesil {generation}",
+    "day": "{day}. gün",
+    "status": {
+        "unlocked": "Açık",
+        "near": "Yaşına yakın",
+        "future": "{count, plural, one {{amount} gün sonra} other {{amount} gün sonra}}"
+    },
+    "marker": {
+        "label": "Buradasın",
+        "title": "{name}, sunucu yaşı yaklaşık {days} gün",
+        "window": "Artı eksi {window} gün: {from}. günden {to}. güne"
+    },
+    "empty": "Bu filtrelerle gösterilecek bir şey yok.",
+    "source": "Kaynak: veri paketinin sunucu zaman çizelgesi."
+}

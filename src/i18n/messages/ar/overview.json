@@ -1,0 +1,231 @@
+{
+    "page": {
+        "title": "نظرة عامة"
+    },
+    "header": {
+        "state": "الولاية {number}",
+        "furnace": "Furnace {level}",
+        "serverAge": "عمر الخادم حوالي {days} يومًا",
+        "derived": "مبني على صفحاتك الأخرى"
+    },
+    "tiles": {
+        "furnace": {
+            "label": "Furnace",
+            "steps": "{order} من {total} خطوة",
+            "unknown": "غير معروف",
+            "unknownHint": "اضبط Furnace من صفحة المباني"
+        },
+        "dailies": {
+            "label": "المهام اليومية",
+            "value": "{done} / {total}",
+            "tasks": "مهامي المنجزة اليوم",
+            "missions": "مهام اللعبة المنجزة"
+        },
+        "events": {
+            "label": "الفعاليات",
+            "live": "{amount} جارية",
+            "coreDay": "{event} {day}",
+            "moreThisWeek": "{amount} أخرى هذا الأسبوع",
+            "noneThisWeek": "لا شيء هذا الأسبوع"
+        },
+        "skins": {
+            "label": "المظاهر",
+            "value": "{owned} / {total}",
+            "hint": "المظاهر المملوكة"
+        },
+        "vip": {
+            "label": "VIP",
+            "value": "VIP {level}",
+            "unknown": "غير معروف",
+            "hint": "من VIP XP لديك",
+            "unknownHint": "أدخل VIP XP في صفحة VIP"
+        },
+        "prosperity": {
+            "label": "ازدهار الجزيرة",
+            "possible": "من {max} ممكنة",
+            "locked": "مقفل",
+            "lockedHint": "يتطلب Furnace {level}"
+        },
+        "generation": {
+            "label": "جيل الأبطال",
+            "allUnlocked": "كل الأجيال مفتوحة",
+            "shouldBeOpen": "يجب أن يكون الجيل {next} مفتوحًا",
+            "onDay": "الجيل {next} في يوم الخادم {day}",
+            "inDays": "الجيل {next} بعد حوالي {days} يومًا"
+        }
+    },
+    "events": {
+        "title": "الفعاليات",
+        "openCalendar": "فتح التقويم",
+        "liveNow": "جارية الآن",
+        "liveBadge": "جارية الآن",
+        "nextUp": "القادم، من صفحة فعالياتك",
+        "coreLine": "اليوم {day} من {count}، {name}. الفعاليات الأساسية",
+        "runLine": "{length}. جارية الآن",
+        "empty": "لم تُضف فعاليات",
+        "addEvent": "إضافة فعالية",
+        "noLive": "لا شيء يعمل الآن."
+    },
+    "coreToday": {
+        "title": "{event} اليوم",
+        "open": "الفعاليات الأساسية",
+        "dayLine": "{day}، {name}",
+        "plan": "خطة اليوم {points} نقطة",
+        "checklist": "قائمة المهام",
+        "done": "تم {done} من {total}",
+        "progress": "تقدم قائمة المهام",
+        "noActions": "لا توجد إجراءات مخططة لليوم.",
+        "castleSignedUp": "تم التسجيل لمنصب القلعة ليوم {day}",
+        "castleOpen": "سجّل لمنصب القلعة ليوم {day}",
+        "logLocked": "{locked} من {total} أيام مقفلة في سجل الفعاليات.",
+        "todayLocked": "اليوم {day} مقفل.",
+        "todayOpen": "اليوم {day} لم يُسجَّل بعد.",
+        "openChecklist": "فتح قائمة المهام",
+        "openLog": "فتح سجل الفعاليات"
+    },
+    "queues": {
+        "title": "الطوابير الجارية",
+        "running": "{count} جارية",
+        "construction": "البناء {number}",
+        "researchMain": "الأبحاث",
+        "researchWarAcademy": "War Academy",
+        "training": "تدريب {name}",
+        "learning": "التعلم",
+        "task": {
+            "construction": "{name} إلى {level}",
+            "research": "{name} إلى المستوى {level}",
+            "training": "قوات {tier}",
+            "learning": "{name}، {skill}"
+        },
+        "idle": "فارغ",
+        "idleBuildings": "فارغ، اضغط على بدء الترقية في المباني",
+        "idleResearch": "فارغ، اضغط على بدء الترقية في الأبحاث",
+        "progress": "تقدم {title}"
+    },
+    "lastResult": {
+        "title": "نتيجة آخر فعالية",
+        "open": "فتح في السجل",
+        "days": "الأيام من 1 إلى 5. تُحتسب مرحلة المعركة بشكل منفصل.",
+        "plan": "المخطط",
+        "actual": "الفعلي",
+        "difference": "الفرق",
+        "overall": "المرتبة العامة",
+        "alliance": "مرتبة التحالف",
+        "upgrades": "الترقيات المخططة المنجزة",
+        "upgradesOf": "{done} من {total}"
+    },
+    "server": {
+        "title": "عمر الخادم",
+        "edit": "تعديل القائد",
+        "age": "حوالي {days} يومًا، بزيادة أو نقصان {tolerance}",
+        "unknown": "غير معروف. أضف تاريخ بدء الخادم من تعديل القائد.",
+        "fromDate": "من تاريخ بدء الخادم، {date}.",
+        "warAcademy": "أبحاث War Academy",
+        "t12": "أبحاث T12",
+        "open": "مفتوح",
+        "opensIn": "يُفتح بعد حوالي {days} يومًا",
+        "unknownUnlock": "غير معروف",
+        "heroes": "الأبطال المفتوحون حتى",
+        "generation": "الجيل {number}",
+        "estimate": "تأتي أيام الفتح من الجدول الزمني للخادم. غيّرها من تعديل القائد إن كان خادمك يختلف قليلًا.",
+        "areas": {
+            "fireCrystal": "مستويات Fire Crystal",
+            "pets": "الحيوانات الأليفة",
+            "experts": "الخبراء"
+        },
+        "fcUpTo": "حتى {level}",
+        "nothingYet": "لا شيء بعد",
+        "countOf": "{unlocked} من {total} مفتوح",
+        "allUnlocked": "كل شيء مفتوح.",
+        "generationName": "الجيل {number}",
+        "allGenerations": "كل الأجيال مفتوحة.",
+        "next": {
+            "withDate": "التالي: {names}، يوم الخادم {day}، {date}. بعد حوالي {days} يومًا.",
+            "noDate": "التالي: {names}، يوم الخادم {day}. بعد حوالي {days} يومًا.",
+            "unknownAge": "التالي: {names}، يوم الخادم {day}.",
+            "passed": "يجب أن يكون {names} مفتوحًا بحسب عمر خادمك، يوم الخادم {day}. ارفع الإعداد من تعديل القائد."
+        }
+    },
+    "dailies": {
+        "title": "المهام اليومية اليوم",
+        "open": "فتح المهام اليومية",
+        "activeness": "{now} من {top} النشاط",
+        "activenessBar": "النشاط اليوم",
+        "missions": "مهام اللعبة: تم {done} من {total}",
+        "tasks": "{done} من {total} في مهامي",
+        "tasksBar": "مهامي المنجزة اليوم",
+        "stillOpen": "ما زال مفتوحًا في مهامي، أول {shown} من {total}",
+        "allDone": "كل مهام مهامي منجزة لهذا اليوم.",
+        "noTasks": "لا توجد مهام في مهامي بعد."
+    },
+    "planner": {
+        "title": "نواقص المخطِّط",
+        "short": "ينقص {amount}",
+        "covered": "لا توجد نواقص",
+        "goals": "الأهداف من {pages}. التكاليف من الحزمة والمخزون من الموارد.",
+        "noGoals": "لم تُحدَّد أهداف. حدّدها من الخطة في المباني والأبحاث والصفحات الأخرى.",
+        "pages": {
+            "buildings": "المباني",
+            "research": "الأبحاث",
+            "heroes": "الأبطال",
+            "troops": "القوات",
+            "pets": "الحيوانات الأليفة",
+            "chiefGear": "معدات القائد",
+            "chiefCharms": "تمائم القائد"
+        },
+        "separator": "، ",
+        "line": "المطلوب {need} · لديك {have}",
+        "shortBy": "ينقص {amount}",
+        "enough": "كافٍ",
+        "updateStock": "حدّث المخزون في الموارد",
+        "incomplete": "تكلفة أحد مستويات الأهداف غير معروفة في الحزمة، لذا هذه الإجماليات ناقصة."
+    },
+    "progress": {
+        "title": "التقدم لكل مجال",
+        "hint": "المملوك أو المرتقي مقابل إجماليات الحزمة",
+        "count": "{owned} / {total}",
+        "furnace": "Furnace",
+        "furnaceOf": "{level} من {max}",
+        "furnaceUnknown": "غير معروف",
+        "areas": {
+            "buildings": "المباني",
+            "heroes": "الأبطال",
+            "chiefGear": "معدات القائد",
+            "chiefCharms": "تمائم القائد",
+            "experts": "الخبراء",
+            "pets": "الحيوانات الأليفة",
+            "research": "الأبحاث",
+            "allianceTech": "تقنيات التحالف",
+            "skins": "المظاهر"
+        },
+        "locked": {
+            "daybreakIsland": "جزيرة الفجر",
+            "requirement": "مقفل. يتطلب Furnace {level}، ويتبقى {count, plural, zero {{amount} مستوى} one {{amount} مستوى} two {{amount} مستويان} few {{amount} مستويات} many {{amount} مستوى} other {{amount} مستوى}}"
+        }
+    },
+    "power": {
+        "title": "القوة",
+        "total": "إجمالي القوة",
+        "complete": "القوة الحالية مقارنة بأقصى ما يمكن أن تمنحه كل مجموعة عندما يكون كل شيء في أعلى مستوى ضمن المحتوى الذي تفتحه إعدادات الفتح لديك. المجموعات التي ليس لها حد أقصى تُحتسب كما هي.",
+        "incomplete": "المقارنة نفسها. لا توجد قيمة قوة في البيانات لـ {count, plural, zero {{amount} عنصر} one {{amount} عنصر} two {{amount} عنصرين} few {{amount} عناصر} many {{amount} عنصرًا} other {{amount} عنصر}}، {count, plural, zero {ولذلك لا يُحتسب} one {ولذلك لا يُحتسب} two {ولذلك لا يُحتسبان} few {ولذلك لا تُحتسب} many {ولذلك لا يُحتسب} other {ولذلك لا يُحتسب}}.",
+        "groupWithoutValue": "لا توجد قيمة قوة في البيانات لـ {count, plural, zero {{amount} عنصر} one {{amount} عنصر} two {{amount} عنصرين} few {{amount} عناصر} many {{amount} عنصرًا} other {{amount} عنصر}}",
+        "groups": {
+            "buildings": "المباني",
+            "research": "الأبحاث",
+            "heroes": "الأبطال",
+            "heroGear": "معدات الأبطال",
+            "chiefGear": "معدات القائد",
+            "chiefCharms": "تمائم القائد",
+            "experts": "الخبراء",
+            "pets": "الحيوانات الأليفة",
+            "troops": "القوات"
+        },
+        "ofPossible": "من {possible} ممكنة",
+        "totalProgress": "إجمالي القوة مقارنة بالأقصى الممكن",
+        "percentOfPossible": "{percent}% من الأقصى الممكن",
+        "rowOfPossible": "{power} من {possible}",
+        "progress": "قوة {group} مقارنة بالأقصى الممكن",
+        "noMaximum": "لا يوجد حد أقصى، يعتمد على ما تدخله",
+        "noCapNote": "القوات ومعدات الأبطال ليس لها سقف، لذا يمكن أن يتجاوز إجمالي قوتك الإجمالي الممكن بتدريب مزيد من القوات وتحسين معدات الأبطال. وكلاهما يُحتسب كما هو في الإجمالي الممكن."
+    }
+}

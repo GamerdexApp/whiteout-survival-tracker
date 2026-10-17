@@ -1,0 +1,26 @@
+{
+    "line": "Her biri {tiers} kademeli {types} birlik türü. Yalnızca başvuru, burada şefine hiçbir şey kaydedilmez.",
+    "tiers": {
+        "heading": "Birlik kademeleri",
+        "meta": "{types} tür x {tiers} kademe = {rows} satır",
+        "typeLabel": "Birlik türü",
+        "tableLabel": "Kademeler: {type}"
+    },
+    "detail": {
+        "heading": "Kayıt ayrıntısı",
+        "meta": "Kademe {tier}, üç tür de",
+        "tableLabel": "Birlik türüne göre kademe {tier}"
+    },
+    "columns": {
+        "tier": "Kademe",
+        "type": "Tür",
+        "cost": "Birlik başına maliyet",
+        "topCost": "Kademe maliyeti",
+        "time": "Eğitim süresi",
+        "promotion": "Terfi maliyeti"
+    },
+    "cells": {
+        "tier": "Kademe {tier}",
+        "none": "Yok"
+    }
+}

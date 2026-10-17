@@ -1,0 +1,52 @@
+{
+    "line": "สัตว์เลี้ยง {pets} ตัว ข้อมูลอ้างอิงเท่านั้น ไม่มีอะไรที่นี่ถูกบันทึก",
+    "roster": {
+        "title": "สัตว์เลี้ยง",
+        "count": "{shown} จาก {total} ตัว",
+        "search": "ค้นหา",
+        "searchPlaceholder": "ค้นหา {count} สัตว์เลี้ยง",
+        "rarity": "ความหายาก",
+        "all": "ทั้งหมด",
+        "empty": "ไม่มีสัตว์เลี้ยงที่ตรงกับตัวกรองนี้",
+        "summary": "เลเวลสูงสุด {level} ปรับแต่งได้ถึง {percent}",
+        "percentValue": "{value}%"
+    },
+    "unlock": {
+        "withFurnace": "วันที่ {days} Furnace {level}",
+        "withPet": "วันที่ {days} {pet} {level}",
+        "daysOnly": "วันที่ {days}",
+        "label": "ปลดล็อก: {requirement}"
+    },
+    "detail": {
+        "maxLevel": "เลเวลสูงสุด",
+        "maxRefinement": "การปรับแต่งสูงสุด",
+        "unlock": "เงื่อนไขปลดล็อก",
+        "cooldown": "คูลดาวน์ทักษะ",
+        "duration": "ระยะเวลาทักษะ",
+        "tierCooldown": "{value}",
+        "maxPower": "พลังสูงสุด",
+        "levelPower": "พลังจากเลเวลและการเลื่อนขั้นที่เลเวลสูงสุด",
+        "refiningPower": "พลังจากการปรับแต่งที่การปรับแต่งสูงสุด"
+    },
+    "skill": {
+        "title": "ทักษะ",
+        "meta": "{count, plural, other {{amount} เลเวล}}",
+        "level": "Lv {level}",
+        "percent": "{value}%"
+    },
+    "levels": {
+        "title": "ตารางเลเวล",
+        "level": "เลเวล {level}",
+        "columns": {
+            "level": "เลเวล",
+            "food": "อาหารสัตว์เลี้ยง",
+            "attack": "Attack ของทหาร",
+            "defense": "Defense ของทหาร",
+            "power": "พลังกองทหาร",
+            "materials": "วัสดุเลื่อนขั้น"
+        },
+        "refined": "{value} (ปรับแต่ง {refined})",
+        "none": "ไม่มี"
+    },
+    "recordLine": "สัตว์เลี้ยง {rarity} เลเวลสูงสุด {level} ข้อมูลอ้างอิงเท่านั้น ไม่มีอะไรที่นี่ถูกบันทึก"
+}

@@ -1,0 +1,52 @@
+{
+    "line": "{pets} haiwan peliharaan. Rujukan sahaja, tiada apa di sini disimpan.",
+    "roster": {
+        "title": "Haiwan Peliharaan",
+        "count": "{shown} daripada {total} haiwan peliharaan",
+        "search": "Cari",
+        "searchPlaceholder": "Cari {count} haiwan peliharaan",
+        "rarity": "Kelangkaan",
+        "all": "Semua",
+        "empty": "Tiada haiwan peliharaan sepadan dengan penapis ini.",
+        "summary": "Tahap maks {level}, tapis sehingga {percent}",
+        "percentValue": "{value}%"
+    },
+    "unlock": {
+        "withFurnace": "Hari {days}, Furnace {level}",
+        "withPet": "Hari {days}, {pet} {level}",
+        "daysOnly": "Hari {days}",
+        "label": "Buka kunci: {requirement}"
+    },
+    "detail": {
+        "maxLevel": "Tahap maksimum",
+        "maxRefinement": "Penapisan maksimum",
+        "unlock": "Keperluan buka kunci",
+        "cooldown": "Masa henti kemahiran",
+        "duration": "Tempoh kemahiran",
+        "tierCooldown": "{value}",
+        "maxPower": "Kuasa maksimum",
+        "levelPower": "Kuasa tahap dan kenaikan pangkat pada tahap maksimum",
+        "refiningPower": "Kuasa penapisan pada penapisan maksimum"
+    },
+    "skill": {
+        "title": "Kemahiran",
+        "meta": "{count, plural, other {{amount} tahap}}",
+        "level": "Lv {level}",
+        "percent": "{value}%"
+    },
+    "levels": {
+        "title": "Jadual tahap",
+        "level": "Tahap {level}",
+        "columns": {
+            "level": "Tahap",
+            "food": "Makanan haiwan",
+            "attack": "Serangan tentera",
+            "defense": "Pertahanan tentera",
+            "power": "Kuasa tentera",
+            "materials": "Bahan kenaikan pangkat"
+        },
+        "refined": "{value} (ditapis {refined})",
+        "none": "Tiada"
+    },
+    "recordLine": "Haiwan peliharaan {rarity}, tahap maks {level}. Rujukan sahaja, tiada apa di sini disimpan."
+}

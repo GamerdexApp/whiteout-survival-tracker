@@ -1,0 +1,145 @@
+{
+    "line": "{events} acara: {alliance} alliance, {solo} solo, {rookie} rookie dan {holiday} cuti. Fasa, pemarkahan, ganjaran, petua, kedai dan kedudukan jika pakej memilikinya.",
+    "list": {
+        "title": "Acara",
+        "showing": "Menunjukkan {shown} daripada {total}",
+        "search": "Cari",
+        "searchPlaceholder": "Cari acara mengikut nama",
+        "scoringFilter": "Pemarkahan",
+        "categoryLabel": "Kategori",
+        "all": "Semua",
+        "table": "Acara",
+        "event": "Acara",
+        "category": "Kategori",
+        "frequency": "Kekerapan (teks bebas)",
+        "duration": "Tempoh (teks bebas)",
+        "scoringRows": "Baris pemarkahan",
+        "noScoringRows": "Tiada baris pemarkahan",
+        "emptyTitle": "Tiada acara sepadan",
+        "emptyDescription": "Ubah carian, kategori atau pemarkahan."
+    },
+    "category": {
+        "alliance": "Alliance",
+        "solo": "Solo",
+        "rookie": "Rookie",
+        "holiday": "Cuti"
+    },
+    "scoring": {
+        "any": "Sebarang pemarkahan",
+        "ranking": "Kedudukan",
+        "tier": "Peringkat",
+        "milestones": "Pencapaian",
+        "waves": "Gelombang",
+        "participation": "Penyertaan"
+    },
+    "parts": {
+        "days": "{count, plural, other {{amount} hari}}",
+        "tiers": "{count, plural, other {{amount} peringkat}}",
+        "missions": "{count, plural, other {{amount} misi}}",
+        "waves": "{count, plural, other {{amount} gelombang}}",
+        "versions": "{count, plural, other {{amount} versi}}",
+        "levels": "{count, plural, other {{amount} tahap}}"
+    },
+    "detail": {
+        "title": "Butiran",
+        "category": "Kategori",
+        "frequency": "Kekerapan",
+        "duration": "Tempoh",
+        "summary": "Ringkasan",
+        "requirements": "Keperluan",
+        "scoring": "Pemarkahan",
+        "noRequirements": "Tiada"
+    },
+    "phases": {
+        "title": "Fasa",
+        "table": "Fasa acara",
+        "phase": "Fasa",
+        "description": "Penerangan"
+    },
+    "scoringRows": {
+        "title": "Baris pemarkahan: {name}",
+        "table": "Tindakan pemarkahan",
+        "action": "Tindakan",
+        "points": "Mata",
+        "victoryPoints": "{amount} mata kemenangan",
+        "milestones": "Pencapaian {name}",
+        "allianceMilestones": "Pencapaian alliance {name}"
+    },
+    "missions": {
+        "title": "Misi",
+        "table": "Misi acara",
+        "mission": "Misi",
+        "group": "Kumpulan",
+        "points": "Mata",
+        "rewards": "Ganjaran"
+    },
+    "tiers": {
+        "title": "Peringkat",
+        "table": "Peringkat acara",
+        "tier": "Peringkat",
+        "score": "Sasaran",
+        "scoreValue": "{amount} {unit}",
+        "scoreValuePoints": "{amount} mata",
+        "rewards": "Ganjaran",
+        "note": "Nota"
+    },
+    "rankings": {
+        "title": "Ganjaran kedudukan",
+        "personal": "Ganjaran kedudukan peribadi",
+        "alliance": "Ganjaran kedudukan alliance",
+        "basedOn": "Ganjaran kedudukan berdasarkan {basis}",
+        "table": "Ganjaran kedudukan",
+        "rank": "Kedudukan",
+        "starChange": "Perubahan bintang",
+        "rewards": "Ganjaran"
+    },
+    "rewards": {
+        "title": "Ganjaran",
+        "partial": "Senarai ganjaran ini tidak lengkap.",
+        "amountName": "{amount} {name}"
+    },
+    "pointLevels": {
+        "title": "Tahap mata",
+        "table": "Tahap mata",
+        "level": "Tahap",
+        "personal": "Mata peribadi",
+        "alliance": "Mata alliance",
+        "rewards": "Ganjaran"
+    },
+    "waves": {
+        "title": "Gelombang",
+        "table": "Gelombang serangan",
+        "wave": "Gelombang",
+        "target": "Sasaran",
+        "rule": "Peraturan",
+        "city": "Bandar",
+        "headquarters": "Ibu pejabat"
+    },
+    "zones": {
+        "title": "Zon",
+        "table": "Zon acara",
+        "zone": "Zon",
+        "days": "Hari",
+        "statSources": "Sumber statistik",
+        "unlock": "Buka kunci"
+    },
+    "shop": {
+        "title": "Kedai",
+        "titleNamed": "Kedai: {name}",
+        "table": "Tawaran kedai",
+        "offer": "Tawaran",
+        "cost": "Kos",
+        "costValue": "{amount} {currency}",
+        "limit": "Had",
+        "contents": "Kandungan"
+    },
+    "versions": {
+        "title": "{name}",
+        "missions": "Misi",
+        "chests": "Peti"
+    },
+    "tips": {
+        "title": "Petua"
+    },
+    "recordLine": "Acara {category} dengan fasa, pemarkahan, ganjaran dan kedudukannya."
+}

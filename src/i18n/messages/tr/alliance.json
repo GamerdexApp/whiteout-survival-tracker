@@ -1,0 +1,50 @@
+{
+    "page": {
+        "title": "İttifak"
+    },
+    "view": {
+        "subline": "{chief} · {details} · bayrak seviyesi {level}"
+    },
+    "banner": {
+        "title": "İttifak bayrağı",
+        "currentLevel": "Mevcut seviye",
+        "levelLabel": "Bayrak seviyesi",
+        "maxHint": "0 ile {max} arasında tam sayı seviyeler.",
+        "rangeChip": "{range}",
+        "costHeading": "Seviye başına maliyet: {range}",
+        "noTimeOrPower": "Pakette bayrakların inşa süresi veya gücü yok, bu yüzden gösterilmez.",
+        "noCost": "Maliyet yok",
+        "none": "Yok",
+        "lower": "Bayrak seviyesini azalt",
+        "raise": "Bayrak seviyesini artır"
+    },
+    "structures": {
+        "title": "İttifak yapıları",
+        "tech": {
+            "title": "Teknoloji",
+            "description": "Büyüme, Bölge ve Savaş dallarında {count} düğüm",
+            "status": "{maxed} tamamlandı, {progress} sürüyor, {locked} kilitli"
+        },
+        "facilities": {
+            "title": "Tesisler",
+            "description": "{count} harita tesisi",
+            "owned": "{owned} sahip"
+        },
+        "fortresses": {
+            "title": "Fortresses",
+            "description": "Castle, {strongholds} stronghold, {fortresses} fortress",
+            "reference": "Yalnızca başvuru"
+        }
+    },
+    "table": {
+        "title": "Seviye aralığına göre bayrak maliyeti",
+        "note": "{count} aralık, aralıktaki her seviye aynı maliyette",
+        "range": "Aralık",
+        "state": "Durum",
+        "built": "İnşa edildi",
+        "current": "Mevcut",
+        "notBuilt": "İnşa edilmedi",
+        "none": "Yok",
+        "noCost": "Maliyet yok"
+    }
+}

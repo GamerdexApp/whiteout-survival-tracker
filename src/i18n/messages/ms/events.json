@@ -1,0 +1,373 @@
+{
+    "page": {
+        "title": "Acara",
+        "subline": "{chief} · {details}"
+    },
+    "tabs": {
+        "label": "Paparan acara",
+        "calendar": "Kalendar",
+        "mine": "Acara saya",
+        "history": "Sejarah acara"
+    },
+    "actions": {
+        "addDetails": "Tambah butiran acara",
+        "addEvent": "Tambah acara"
+    },
+    "categories": {
+        "alliance": "Alliance",
+        "solo": "Solo",
+        "rookie": "Rookie",
+        "holiday": "Cuti"
+    },
+    "gives": {
+        "rewards": "Ganjaran sahaja",
+        "personal": "Kedudukan peribadi",
+        "alliance": "Kedudukan alliance",
+        "both": "Kedua-dua kedudukan"
+    },
+    "weekdays": {
+        "short": {
+            "sunday": "Ahd",
+            "monday": "Isn",
+            "tuesday": "Sel",
+            "wednesday": "Rab",
+            "thursday": "Kha",
+            "friday": "Jum",
+            "saturday": "Sab"
+        },
+        "initial": {
+            "sunday": "A",
+            "monday": "I",
+            "tuesday": "S",
+            "wednesday": "R",
+            "thursday": "K",
+            "friday": "J",
+            "saturday": "S"
+        }
+    },
+    "months": {
+        "january": "Januari",
+        "february": "Februari",
+        "march": "Mac",
+        "april": "April",
+        "may": "Mei",
+        "june": "Jun",
+        "july": "Julai",
+        "august": "Ogos",
+        "september": "September",
+        "october": "Oktober",
+        "november": "November",
+        "december": "Disember"
+    },
+    "monthsShort": {
+        "january": "Jan",
+        "february": "Feb",
+        "march": "Mac",
+        "april": "Apr",
+        "may": "Mei",
+        "june": "Jun",
+        "july": "Jul",
+        "august": "Ogo",
+        "september": "Sep",
+        "october": "Okt",
+        "november": "Nov",
+        "december": "Dis"
+    },
+    "format": {
+        "weekdayDay": "{weekday}, {date}",
+        "utcTime": "{time} UTC",
+        "dateTime": "{date}, {time}",
+        "range": "{start} hingga {end}",
+        "length": {
+            "minutes": "{count, plural, other {{amount} min}}",
+            "hours": "{count, plural, other {{amount} jam}}",
+            "days": "{count, plural, other {{amount} hari}}",
+            "weeks": "{count, plural, other {{amount} minggu}}",
+            "months": "{count, plural, other {{amount} bulan}}"
+        }
+    },
+    "repeat": {
+        "none": "Tidak berulang",
+        "weekly": "Setiap minggu pada {days}",
+        "weeklyAny": "Setiap minggu",
+        "every": {
+            "hours": "{count, plural, other {Setiap {amount} jam}}",
+            "days": "{count, plural, other {Setiap {amount} hari}}",
+            "weeks": "{count, plural, other {Setiap {amount} minggu}}",
+            "months": "{count, plural, other {Setiap {amount} bulan}}"
+        }
+    },
+    "empty": {
+        "title": "Belum ada acara",
+        "description": "Tambah acara yang anda main. Tetapkan tarikh dan masa mula sekali, dan kalendar serta senarai akan datang sentiasa terkini.",
+        "steps": {
+            "pick": {
+                "title": "Pilih acara.",
+                "text": "Pilih daripada acara dalam data permainan."
+            },
+            "start": {
+                "title": "Tetapkan permulaannya.",
+                "text": "Masukkan tarikh dan masa pusingan seterusnya. Sesetengah acara mempunyai dua pusingan atau berjalan beberapa hari."
+            },
+            "roll": {
+                "title": "Biarkan ia berjalan.",
+                "text": "Selepas pusingan tamat, tarikh seterusnya diisi daripada peraturan ulangan."
+            }
+        }
+    },
+    "calendar": {
+        "previous": "Bulan sebelumnya",
+        "next": "Bulan seterusnya",
+        "today": "Hari ini",
+        "zoneLabel": "Zon waktu",
+        "utc": "UTC",
+        "local": "Masa saya",
+        "monthTitle": "{month} {year}",
+        "nameWithRun": "{name}, {run}",
+        "dayTail": "h{day}",
+        "chipText": "{name} {tail}"
+    },
+    "upcoming": {
+        "title": "Akan datang",
+        "empty": "Tiada pusingan dalam 30 hari akan datang.",
+        "now": "Sedang berlangsung",
+        "today": "Hari ini",
+        "tomorrow": "Esok",
+        "inDays": "{count, plural, other {Dalam {amount} hari}}",
+        "timeAndLength": "{time}, {length}"
+    },
+    "mine": {
+        "intro": "{count, plural, other {{amount} acara.}} Selepas pusingan tamat, tarikh pusingan seterusnya dikemas kini sendiri daripada peraturan ulangan, jadi kalendar sentiasa menunjukkan yang seterusnya.",
+        "run": "Pusingan",
+        "rangeLine": "{range}, {time}",
+        "shortLine": "{when}, {length}",
+        "repeat": "Ulang: {rule}",
+        "coreTag": "Hasil dalam Acara Utama",
+        "coreLink": "Buka Acara Utama",
+        "ended": "Tamat",
+        "logged": "Dilog",
+        "edit": "Sunting",
+        "remove": "Buang"
+    },
+    "toast": {
+        "removedTitle": "{name} dibuang",
+        "removedMessage": "Hasil tersimpan kekal dalam Sejarah acara.",
+        "undo": "Buat asal",
+        "resultSavedTitle": "Hasil disimpan",
+        "resultSavedMessage": "{name} ditambah ke Sejarah acara."
+    },
+    "add": {
+        "title": "Tambah acara",
+        "description": "Pilih acara daripada data permainan",
+        "close": "Tutup",
+        "searchLabel": "Cari acara",
+        "searchPlaceholder": "Cari {amount} acara",
+        "categoryLabel": "Kategori acara",
+        "all": "Semua",
+        "categoryTab": "{name}, {amount}",
+        "showing": "Menunjukkan {shown} daripada {total} acara. Pilih satu untuk menetapkan tarikh dan masa mulanya.",
+        "none": "Tiada acara sepadan dengan carian anda.",
+        "noDuration": "Tempoh tiada dalam data permainan",
+        "added": "Ditambah",
+        "button": "Tambah",
+        "addNamed": "Tambah {name}",
+        "showMore": "Tunjuk lagi"
+    },
+    "schedule": {
+        "description": "Tetapkan bila ia berjalan. Pusingan seterusnya dikemas kini sendiri.",
+        "cancel": "Batal",
+        "add": "Tambah acara",
+        "save": "Simpan jadual",
+        "howTitle": "Cara acara berjalan",
+        "shape": {
+            "one": "Satu hari",
+            "several": "Beberapa hari",
+            "two": "Dua pusingan setiap kitaran"
+        },
+        "shapeHint": {
+            "one": "Satu pusingan sehari. Ubah tempoh untuk pusingan pendek dalam minit atau jam.",
+            "several": "Satu pusingan yang berlangsung beberapa hari.",
+            "two": "Dua pusingan dalam setiap kitaran, seperti dua musim atau dua hari dalam minggu. Setiap pusingan mempunyai mula, tempoh dan nama sendiri."
+        },
+        "runTitle": "Pusingan {number}",
+        "runSingle": "Pusingan",
+        "name": "Nama",
+        "startDate": "Tarikh mula",
+        "startTime": "Masa mula (UTC)",
+        "length": "Tempoh",
+        "unit": "Unit",
+        "runUnits": {
+            "minutes": "minit",
+            "hours": "jam",
+            "days": "hari"
+        },
+        "repeatTitle": "Ulang",
+        "repeatKind": {
+            "none": "Tidak berulang",
+            "every": "Setiap",
+            "weekly": "Setiap minggu pada hari"
+        },
+        "every": "Setiap",
+        "weekdays": "Hari dalam minggu",
+        "repeatUnits": {
+            "hours": "jam",
+            "days": "hari",
+            "weeks": "minggu",
+            "months": "bulan"
+        },
+        "gameSays": "Data permainan menyatakan: {text}",
+        "gameSaysNoRule": "Data permainan menyatakan: {text}",
+        "useSuggestion": "Guna cadangan",
+        "everyError": "Masukkan nombor lebih daripada 0.",
+        "givesTitle": "Apa yang acara berikan",
+        "givesHint": "Ditetapkan daripada data permainan. Anda boleh mengubahnya. Ia menentukan apa yang diminta borang hasil.",
+        "previewTitle": "Apa yang kalendar akan tunjukkan",
+        "previewEmpty": "Masukkan tarikh dan tempoh yang sah untuk melihat pusingan.",
+        "previewShort": "{range}, {time}",
+        "previewNote": "Apabila pusingan tamat, tarikhnya bergerak ke hadapan mengikut peraturan ulangan. Anda boleh menyunting sebarang tarikh."
+    },
+    "result": {
+        "title": "Tambah butiran acara",
+        "description": {
+            "participation": "Log bahawa anda menyertai dan apa yang anda dapat",
+            "milestones": "Mata dan sasaran yang anda capai",
+            "ranking": "Skor, kedudukan dan pencapaian yang anda capai",
+            "tier": "Peringkat liga dan penempatan",
+            "waves": "Kesukaran, gelombang, mata dan kedudukan",
+            "skipped": "Log bahawa anda melangkau pusingan ini"
+        },
+        "cancel": "Batal",
+        "save": "Simpan hasil",
+        "noEvents": "Tambah acara dahulu. Hanya acara pada Acara saya boleh dilog, dan acara Utama dilog dalam Acara Utama.",
+        "whichTitle": "Acara yang mana",
+        "event": "Acara",
+        "versionsTag": "Versi",
+        "run": "Pusingan",
+        "otherDate": "Tarikh lain",
+        "runDate": "Tarikh pusingan",
+        "runLong": "{range} ({length})",
+        "runNamed": "{when}, {name}",
+        "notLogged": "{run}, belum dilog",
+        "tookPartQuestion": "Adakah anda menyertai?",
+        "tookPart": "Menyertai",
+        "skipped": "Melangkaunya",
+        "coreNote": "Hanya acara yang anda tambah disenaraikan. Acara Utama dilog dalam Acara Utama, bukan di sini.",
+        "versionTitle": "Versi",
+        "versionKnown": "Sasaran untuk versi ini ada dalam data, jadi ia disemak daripada mata anda.",
+        "versionUnknown": "Versi ini mempunyai sasaran dengan mata yang belum ada dalam data. Semak sasaran itu secara manual.",
+        "participationTitle": "Acara ini tiada skor atau kedudukan",
+        "participationText": "Data permainan hanya menyenaraikan ganjaran, jadi tiada apa untuk dimarkahkan. Log bahawa anda menyertai, ganjaran yang anda dapat dan satu nota.",
+        "pointsFallback": "Mata",
+        "pointsReached": "{unit} dicapai",
+        "pointsHint": "Jumlah pada akhir acara.",
+        "finalScore": "Skor akhir ({unit})",
+        "finalScoreHint": "Jumlah {unit} anda pada akhir acara.",
+        "rankingTitle": "Kedudukan",
+        "yourRank": "Kedudukan anda",
+        "allianceRank": "Kedudukan alliance",
+        "rankGroup": "Kumpulan kedudukan",
+        "rankGroupsHint": "Kumpulan kedudukan datang daripada data permainan: {groups} dan lagi.",
+        "targetsTitle": "Sasaran dicapai, daripada mata anda",
+        "targetsCount": "{reached} daripada {total} dicapai",
+        "targetPoints": "{points} {unit}",
+        "pointsMissing": "{unit}: mata belum ada dalam data",
+        "needsPurchase": "Perlukan satu pembelian dalam sebarang jumlah.",
+        "targetsHint": "Disemak daripada skor. Sasaran dan ganjaran datang daripada data permainan.",
+        "targetsHintUnknown": "Sasaran dengan mata yang belum ada dalam data tidak pernah disemak daripada skor. Semak secara manual.",
+        "tierTitle": "Liga",
+        "tier": "Peringkat",
+        "placement": "Penempatan anda dalam kumpulan",
+        "starChange": "Perubahan bintang, daripada data permainan",
+        "stars": "{count, plural, other {{amount} bintang}}",
+        "tiersHint": "Peringkat: {tiers}.",
+        "allianceTitle": "Alliance",
+        "outcome": "Keputusan alliance dalam pusingan ini",
+        "outcomeHint": "Pilihan. Menang, kalah atau seri.",
+        "outcomes": {
+            "none": "Tidak ditetapkan",
+            "won": "Menang",
+            "lost": "Kalah",
+            "drawn": "Seri"
+        },
+        "wavesTitle": "Kesukaran dan gelombang",
+        "difficulty": "Kesukaran yang anda main",
+        "difficultyFrom": "{name}, dari {points} mata alliance",
+        "wavesCleared": "Gelombang diselesaikan, 0 hingga {count}",
+        "wavesHint": "Data permainan menyenaraikan {count} gelombang untuk {name}.",
+        "defenseTitle": "Mata pertahanan",
+        "yourPoints": "Mata anda",
+        "alliancePoints": "Mata alliance",
+        "rewardLevel": "Tahap ganjaran dicapai",
+        "rewardLevelNone": "Belum ada",
+        "level": "Tahap {level}",
+        "levelsHint": "Tahap memerlukan mata peribadi dan alliance, daripada data permainan.",
+        "rankingsTitle": "Kedudukan",
+        "notesTitle": "Nota",
+        "rewards": "Ganjaran yang anda dapat",
+        "rewardsPlaceholder": "Contohnya 2 Hero Shards, 500 Gems",
+        "notes": "Nota",
+        "notesPlaceholder": "Apa-apa yang perlu diingat tentang pusingan ini"
+    },
+    "history": {
+        "emptyTitle": "Belum ada hasil dilog",
+        "emptyText": "Tekan Tambah butiran acara untuk melog apa yang anda dapat dalam pusingan acara. Hasil dan aliran anda dipaparkan di sini.",
+        "eventFilter": "Acara",
+        "allEvents": "Semua acara",
+        "period": "Tempoh",
+        "months3": "3 bulan",
+        "months6": "6 bulan",
+        "allTime": "Sepanjang masa",
+        "intro": "Setiap hasil yang anda log, terkini dahulu. Acara Utama dilog dalam Acara Utama dan tidak dipaparkan di sini.",
+        "showing": "Menunjukkan {shown} daripada {total} hasil.",
+        "showingEvent": "{count, plural, other {Menunjukkan {amount} hasil untuk {name}.}}",
+        "noneInPeriod": "Tiada hasil dalam tempoh ini.",
+        "showMore": "Tunjuk lagi",
+        "colDate": "Tarikh",
+        "colEvent": "Acara",
+        "colScore": "Skor",
+        "colRank": "Kedudukan",
+        "colAlliance": "Alliance",
+        "colResult": "Hasil",
+        "colActions": "Tindakan",
+        "none": "-",
+        "edit": "Sunting",
+        "editNamed": "Sunting hasil untuk {name}",
+        "skipped": "Dilangkau",
+        "tierOnly": "{tier} {placement}",
+        "stars": "{count, plural, other {{amount} bintang}}",
+        "waves": "{count, plural, other {{difficulty}, {amount} gelombang}}",
+        "targets": "{unit}, {reached} daripada {total} sasaran",
+        "tookPart": "Menyertai",
+        "tookPartRewards": "Menyertai, {rewards}",
+        "rankText": "Kedudukan {rank}",
+        "allianceRankText": "alliance {rank}",
+        "separator": " · ",
+        "defensePoints": "{score} mata pertahanan",
+        "scoreUnit": "{score} {unit}",
+        "noScore": "Tiada skor",
+        "trendTitle": "Aliran {name}",
+        "trendScore": "{unit} pada akhir setiap acara",
+        "trendRank": "Kedudukan anda pada akhir setiap acara",
+        "metricLabel": "Metrik aliran",
+        "metricScore": "Skor",
+        "metricRank": "Kedudukan peribadi",
+        "chartLabel": "Carta aliran untuk {name}",
+        "best": "Terbaik",
+        "average": "Purata",
+        "latest": "Terkini",
+        "change": "Perubahan",
+        "events": "{count, plural, other {{amount} acara}}",
+        "changeVs": "berbanding {month}",
+        "changePercentVs": "{percent}% berbanding {month}",
+        "noPrevious": "Tiada hasil terdahulu",
+        "noTrend": "Acara ini tiada skor atau kedudukan untuk dicartkan. Hasilnya ada dalam senarai di bawah."
+    },
+    "cycles": {
+        "title": "Kitaran acara Utama",
+        "hint": "SvS, Alliance Showdown dan King of Icefield berjalan pada kitaran tetap. Tetapkan permulaan seterusnya sekali dan ia berulang pada kalendar.",
+        "next": "Seterusnya {date}, berulang {repeat}",
+        "notSet": "Tidak ditetapkan",
+        "set": "Tetapkan kitaran",
+        "edit": "Sunting kitaran"
+    }
+}

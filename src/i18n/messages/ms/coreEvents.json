@@ -1,0 +1,108 @@
+{
+    "days": {
+        "day": "Hari {number}",
+        "battle": "Battle",
+        "range": "Hari {range}",
+        "stage": "Peringkat {number}"
+    },
+    "page": {
+        "title": "Acara Utama",
+        "subline": "{chief} · {details}"
+    },
+    "events": {
+        "svs": "SvS",
+        "showdown": "Alliance Showdown",
+        "king": "King of Icefield",
+        "hall": "Hall of Chief"
+    },
+    "tabs": {
+        "label": "Acara Utama"
+    },
+    "empty": {
+        "title": "Tiada acara dipaparkan",
+        "description": "Keempat-empat acara disembunyikan untuk chief ini. Hidupkan dalam Sunting chief.",
+        "action": "Sunting chief"
+    },
+    "strip": {
+        "live": "Acara sedang berlangsung",
+        "dates": "{start} hingga {end}",
+        "noDates": "Tarikh ditetapkan dalam Log acara.",
+        "today": "Hari ini ialah {day}",
+        "checklist": "Senarai semak",
+        "log": "Log acara"
+    },
+    "bonus": {
+        "title": "Tahap {skill} {expert}",
+        "level": "Tahap {level}",
+        "levelWithPercent": "Tahap {level} · {percent}%",
+        "none": "Tiada tahap ditetapkan, jadi tiada bonus ditambah.",
+        "readOnly": "Baca sahaja",
+        "openExperts": "Buka Pakar",
+        "svsHelp": "Menambah 2% setiap tahap kepada mata hari 1 hingga 5, dibundarkan setiap hari, dan peringkat tambahan kepada ambang mata. Battle Phase tidak mendapat bonus. Baca sahaja di sini, tahap ditetapkan pada halaman Pakar.",
+        "showdownHelp": "Menambah 5% setiap tahap kepada setiap tindakan. Baca sahaja di sini, tahap ditetapkan pada halaman Pakar.",
+        "noneTitle": "Tiada bonus pakar",
+        "kingNote": "Tiada pakar yang mengubah mata King of Icefield.",
+        "hallNote": "Tiada pakar yang mengubah mata Hall of Chief."
+    },
+    "daysSection": {
+        "title": "Hari",
+        "stages": "Peringkat",
+        "totalPerDay": "Jumlah mata setiap hari",
+        "totalPerStage": "Jumlah mata setiap peringkat",
+        "hallSeason": "Musim ditetapkan pada akaun dan ialah Musim 1 sehingga itu.",
+        "showdownScope": "Mata peribadi sahaja. Tiada jumlah alliance dan tiada mata kemenangan."
+    },
+    "table": {
+        "title": "{day}: {name}",
+        "phasePreparation": "Preparation Phase",
+        "phaseBattle": "Battle Phase",
+        "action": "Tindakan",
+        "pointsEach": "Mata setiap satu",
+        "count": "Bilangan",
+        "points": "Mata",
+        "lower": "Kurangkan bilangan untuk {action}",
+        "raise": "Tambah bilangan untuk {action}",
+        "countLabel": "Bilangan untuk {action}",
+        "fromPlans": "{amount} daripada pelan",
+        "base": "Asas {amount}",
+        "bonus": "Bonus {amount}",
+        "total": "Jumlah {amount}"
+    },
+    "result": {
+        "totalTitle": "Jumlah mata, semua hari",
+        "totalTitleHall": "Jumlah mata, peringkat dipilih",
+        "baseBonus": "Asas {base}, bonus {bonus}",
+        "battle": "Battle Phase",
+        "battleNoBonus": "Tiada bonus pada Battle Phase",
+        "seasonSum": "Peringkat musim ditambah: {amount}. Bukan kedudukan.",
+        "selectedDayTotal": "{day}: {amount}",
+        "selectedDayBonus": "Bonus {percent}%"
+    },
+    "perDay": {
+        "title": "Mata setiap hari",
+        "titleHall": "Mata setiap peringkat",
+        "bar": "Bahagian daripada hari terbesar untuk {day}"
+    },
+    "thresholds": {
+        "title": "Ambang mata",
+        "estimate": "Anggaran",
+        "help": "Pencapaian untuk {day}, berbanding jumlah hari.",
+        "reached": "Dicapai",
+        "needs": "Perlu {amount} lagi",
+        "extraTier": "Peringkat tambahan {number}, daripada Valeria",
+        "extraTierUnknown": "Mata dan ganjaran tiada dalam pakej",
+        "unknown": "Tidak diketahui",
+        "noneEvent": "Pakej tiada ambang mata untuk acara ini.",
+        "noneDay": "Pakej tiada ambang mata untuk hari ini."
+    },
+    "ranks": {
+        "title": "Ambang kedudukan",
+        "note": "Ini ialah kedudukan pemain. Kedudukan tiada had mata.",
+        "rank": "Kedudukan",
+        "reward": "Ganjaran",
+        "gems": "{amount} Gems",
+        "unknown": "Tidak diketahui",
+        "notConfirmed": "Belum disahkan",
+        "noneShowdown": "Pakej tiada kedudukan peribadi untuk Alliance Showdown."
+    }
+}

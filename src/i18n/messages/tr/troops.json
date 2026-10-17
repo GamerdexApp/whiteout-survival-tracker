@@ -1,0 +1,251 @@
+{
+    "page": {
+        "title": "Birlikler"
+    },
+    "view": {
+        "title": "Birlikler",
+        "subline": "{chief} · {camps}",
+        "campLevel": "{name} Kampı {level}",
+        "notBuilt": "inşa edilmedi",
+        "intro": "Kamp seviyeleri, kapasite ve hız bonusları diğer sayfalardan gelir ve salt okunurdur. Plan, eğitimin ve terfinin neler gerektirdiğini hesaplar. Eğitimi başlat, bir kampın çalıştırdığı grubu işaretler.",
+        "plan": "Plan"
+    },
+    "cards": {
+        "tileSummary": "birlik · güç {power}",
+        "allTroops": "Tüm birlikler",
+        "totalPower": "Toplam güç",
+        "troops": "Birlikler",
+        "power": "Güç",
+        "powerNote": "Birlik başına güç paketten gelir. Kademe 10 ve 11, her kampın Fire Crystal seviyesini izler.",
+        "campLevel": "{level} kamp",
+        "campNotBuilt": "Kamp inşa edilmedi",
+        "campAgeLocked": "Kayıtlı kamp seviyesi bu sunucuda henüz açık değil. {text}",
+        "highestTier": "En yüksek kademe",
+        "tierShort": "T{tier}",
+        "noTier": "Yok"
+    },
+    "tiers": {
+        "title": "Kademeler: {name}",
+        "hideLow": "Kademe 9 ve altını gizle",
+        "typeLabel": "Birlik türü",
+        "hiddenNote": "Kademe 1 - 9 gizli. Furnace {furnace}, seviye 30 ya da üstü.",
+        "heads": {
+            "tier": "Kademe",
+            "troops": "Birlikler",
+            "train": "Eğit",
+            "power": "Güç"
+        },
+        "requires": {
+            "list": "Gerekenler: {list}",
+            "camp": "{name} Kampı {level}",
+            "building": "{name} {level}",
+            "research": "{name} seviye {level}"
+        },
+        "tier": "Kademe {tier}",
+        "locked": "Kilitli",
+        "countLabel": "Birlikler: {name} {tier}",
+        "train": "Eğit",
+        "seconds": "{value} sn",
+        "each": "tanesi",
+        "mobilePower": "Güç"
+    },
+    "plan": {
+        "title": "Birlik Planı",
+        "description": "Üç birlik türü için eğitim ve terfi",
+        "saved": "Plan kaydedildi: {date}",
+        "close": "Kapat",
+        "save": "Planı kaydet",
+        "export": {
+            "button": "Ana Etkinlikler'e aktar",
+            "emptyHint": "Aktarmak için bir eğitim ekle.",
+            "computed": "Uygulama tarafından hesaplandı.",
+            "trainedGroup": "eğitilen birlikler için",
+            "speedupGroup": "hızlandırma dakikası için",
+            "trainedTier": "Eğitilen kademe {tier} birlikleri",
+            "speedupMinutes": "Kullanılan eğitim hızlandırma dakikası",
+            "promoted": "Terfi eden birlikler",
+            "promotedReason": "Terfi yalnızca hızlandırma dakikası üzerinden puan verir.",
+            "power": "Eğitim ve terfiden gelen güç",
+            "powerReason": "Pakette henüz kademe başına gerçek güç yok."
+        },
+        "noRuns": "Henüz eğitim yok. Plan başlatmak için bir birlik ekle.",
+        "add": {
+            "title": "Birlik ekle",
+            "typeLabel": "Birlik türü",
+            "modeLabel": "Eğitim ya da Terfi",
+            "button": "Birlik ekle"
+        },
+        "run": {
+            "tier": "Kademe {tier}",
+            "modes": {
+                "training": "Eğitim",
+                "promotion": "Terfi"
+            },
+            "remove": "Eğitimi kaldır: {name}",
+            "removeButton": "Kaldır",
+            "modeLabel": "Eğitim ya da terfi: {name}",
+            "tierLabel": "Kademe: {name}",
+            "fromLabel": "Terfi başlangıç kademesi: {name}",
+            "toLabel": "Terfi hedef kademesi: {name}",
+            "to": "→",
+            "troops": "Birlikler",
+            "max": "Maks.",
+            "maxValue": "Maks. ({capacity})",
+            "batches": "Gruplar"
+        },
+        "speed": {
+            "readOnlyNote": "Salt okunur değerler diğer sayfalardan aktarılır. Onları orada değiştir.",
+            "openBonuses": "Bonuslar'ı aç",
+            "title": "Kapasite ve hız",
+            "appointment": "Atama",
+            "position": "Görev",
+            "rank": "Rütbe",
+            "positions": {
+                "none": "Yok",
+                "ministerOfEducation": "Eğitim Bakanı",
+                "vicePresident": "Başkan Yardımcısı"
+            },
+            "ranks": {
+                "regular": "Normal",
+                "supreme": "Üstün"
+            },
+            "appointmentEffect": "+{capacity} kapasite, +%{speed} hız",
+            "appointmentNote": "İki atamadan yalnızca biri açık olabilir. Eğitim Bakanı {moeCapacity} kapasite ve yüzde {moeSpeed} hız ekler (Üstün: {moeCapacitySupreme} ve {moeSpeedSupreme}). Başkan Yardımcısı yüzde {vpSpeed} hız ekler (Üstün: {vpSpeedSupreme}).",
+            "capacity": "Kapasite",
+            "researchCapacity": "Araştırma kapasitesi",
+            "troops": "{value} birlik",
+            "readOnly": "Salt okunur",
+            "capacityBoost": "Kapasite artışı",
+            "boostTotal": "Toplam x{multiplier}",
+            "capacityPerBatch": "Grup başına kapasite",
+            "trainingSpeed": "Eğitim hızı",
+            "gameSpeed": "Oyundaki eğitim hızı",
+            "appointmentSpeed": "Atama",
+            "mobilize": "Mobilize",
+            "advancedTraining": "Advanced Training",
+            "speedUsed": "Kullanılan eğitim hızı",
+            "percent": "%{value}",
+            "percentPlus": "+%{value}"
+        },
+        "stock": {
+            "name": "Eğitim hızlandırmaları",
+            "minutesUnit": "dk",
+            "note": "Stokun: Eğitim {training} dk, Genel {general} dk. Genel hızlandırmalar eğitime sayılır. Hızlandırmanın karşılamadığı eğitim normal sürede biter, bu yüzden yalnızca elindeki hızlandırmalar kullanılır: {used} dk."
+        },
+        "result": {
+            "title": "Sonuç",
+            "resources": "Kaynaklar",
+            "changes": "Kademeye göre birlik değişimleri",
+            "heads": {
+                "tier": "Kademe",
+                "infantry": "Piy.",
+                "lancer": "Mız.",
+                "marksman": "Niş.",
+                "all": "Tümü"
+            },
+            "tier": "Kademe {tier}",
+            "total": "Toplam",
+            "time": "Süre, hızlandırmasız",
+            "totalTime": "Toplam, tüm birlik türleri (hızlandırma süresi)",
+            "longest": "En uzun birlik türü",
+            "minutesNeeded": "Gereken hızlandırma dakikası",
+            "minutesUsed": "Kullanılan hızlandırma dakikası (stoktan)",
+            "minutes": "{value} dk",
+            "tier12Note": "Paket, Kademe 12 maliyetlerinin kısmen türetildiğini söyler. Nişancı terfi maliyeti oyunda ölçüldü, Piyade ve Mızrakçı maliyetleri ondan ölçeklendi."
+        }
+    },
+    "queue": {
+        "title": "Eğitim sıraları",
+        "note": "Her kamp aynı anda tek grup eğitir. Bitir, birlikleri sayılarına ekler.",
+        "idle": "Eğitilen bir şey yok. Bu kampı kullanmak için bir grup başlat.",
+        "startButton": "Eğitimi başlat",
+        "jobTitle": {
+            "training": "Eğitim: {count} {name} T{tier}",
+            "promotion": "Terfi: {count} {name} T{from} → T{to}"
+        },
+        "manage": {
+            "slotLabel": "{camp}, aynı anda tek grup",
+            "finishText": "Yükseltmeyi bitir, birlikleri sayılarına ekler, kampı boşaltır ve grubu Geçmiş'ine ekler. Kalan süre sıfır olunca kartta Bitirmeye hazır yazar. Hızlandırma kullanmış olabileceğin için hiçbir şey kendiliğinden bitmez."
+        },
+        "flyout": {
+            "title": "Eğitimi başlat",
+            "description": "Bir kampta bir grubu eğitiliyor ya da terfi ediyor olarak işaretle",
+            "camp": "Kamp",
+            "campHelp": "Her kampta aynı anda tek grup. Meşgul kamp ne zaman boşalacağını söyler.",
+            "busy": "Şu tarihe kadar meşgul: {date}",
+            "notBuilt": "Kamp inşa edilmedi",
+            "action": "İşlem",
+            "training": "Eğitim",
+            "promotion": "Terfi",
+            "tier": "Kademe",
+            "tierOption": "Kademe {tier}",
+            "fromTier": "Başlangıç kademesi",
+            "toTier": "Hedef kademe",
+            "troops": "Gruptaki birlikler",
+            "max": "Maks.",
+            "capacityHint": "Bir grup en fazla {capacity} birlik alır. Bu, araştırma kapasitesi ve kamp seviyelerinin toplamıdır.",
+            "noTiers": "Bu kampta henüz eğitilecek kademe yok. Kamp seviyesini Binalar sayfasında yükselt.",
+            "cost": "Grubun maliyeti",
+            "time": "Eğitim süresi",
+            "packageTime": "Paket süresi",
+            "speed": "Eğitim hızı",
+            "readOnly": "Salt okunur",
+            "openBonuses": "Bonuslar'ı aç",
+            "yourTime": "Senin süren",
+            "timeHint": "Eğitim hızı Bonuslar sayfasından gelir. Oyun farklı bir süre gösteriyorsa Zaten başladı'yı kullan.",
+            "whenStarted": "Ne zaman başladı?",
+            "modes": {
+                "now": "Şimdi başlıyor",
+                "already": "Zaten başladı"
+            },
+            "timeLeftHours": "Kalan süre, saat",
+            "ends": "Biter",
+            "takeCost": {
+                "title": "Maliyeti stokumdan düş",
+                "hint": "Grubun kaynaklarını Kaynaklar'dan düşer. Sayı hiçbir zaman 0'ın altına inmez.",
+                "enough": "Yeterli stokun var.",
+                "short": "Eksik: {names}. Bunların stoku 0 olur."
+            },
+            "cancel": "İptal",
+            "start": "Eğitimi başlat",
+            "allCamps": "Tüm boş kamplar ({count})",
+            "allCampsHint": "Aynı grubu boştaki her kampta bir seferde başlatır. Her kamp kendi süresini tutar. Gösterilen kademeler, her boş kampın eğitebildiği kademelerdir.",
+            "campTime": "{camp}: {time}"
+        },
+        "toasts": {
+            "started": {
+                "title": "Eğitim başladı",
+                "message": "{what}."
+            },
+            "finished": {
+                "title": "Eğitildi: {what}",
+                "message": "Birlik sayılarına ve Geçmiş'e eklendi."
+            },
+            "cancelled": {
+                "title": "İptal edildi: {what}",
+                "message": "Birlik sayıların eskisi gibi kalır. Gerekirse stokunu Kaynaklar'da düzelt."
+            },
+            "undo": "Geri al"
+        },
+        "batchName": {
+            "training": "{count} {name} T{tier}",
+            "promotion": "{count} {name} T{from} → T{to}"
+        }
+    },
+    "callOfWar": {
+        "title": "Call of War",
+        "note": "Romulus becerisi. Her UTC günü için, tüm kamplar birlikte tek ücretsiz hak. 00:00 UTC'de sıfırlanır.",
+        "available": "Bugün {troops} ücretsiz birlik",
+        "claimed": "Bugün alındı. Yeni hak {time} sonra ücretsiz.",
+        "notUnlocked": "Romulus'un işe alınmış olması ve Uzmanlar sayfasında Call of War'un seviye 1 ya da üstü olması gerekir.",
+        "level": "Call of War seviye {level}",
+        "add": "Ekle: {camp}",
+        "addHint": "{troops} birlik, kademe: {tier}",
+        "noTier": "Açılan kademe yok",
+        "toast": {
+            "title": "Call of War alındı",
+            "message": "{camp} için kademe {tier}: {troops} birlik eklendi.",
+            "undo": "Geri al"
+        }
+    }
+}

@@ -1,0 +1,117 @@
+{
+    "unknown": "Bilinmiyor",
+    "describe": {
+        "state": "State {number}",
+        "empty": "Henüz ayrıntı yok"
+    },
+    "coreEvents": {
+        "svs": "SvS",
+        "showdown": "Alliance Showdown",
+        "king": "King of Icefield",
+        "hall": "Hall of Chief"
+    },
+    "count": "{count, plural, one {{amount} şef} other {{amount} şef}}",
+    "card": {
+        "active": "Etkin",
+        "noNotes": "Not yok",
+        "furnace": "Furnace",
+        "state": "State",
+        "created": "Oluşturulma: {date}",
+        "lastModified": "Son değişiklik: {date}",
+        "setActive": "Etkin yap",
+        "edit": "Düzenle",
+        "delete": "Sil"
+    },
+    "dialog": {
+        "editTitle": "Şefi düzenle",
+        "newTitle": "Yeni şef",
+        "newDescription": "Ona bir ad ver. Gerisi isteğe bağlı.",
+        "cancel": "İptal",
+        "save": "Değişiklikleri kaydet",
+        "create": "Şef oluştur",
+        "errors": {
+            "name": "Bu şef için bir ad gir.",
+            "stateNumber": "1 ile {max} arasında tam sayı gir.",
+            "serverStartDate": "Gelecekte olmayan bir tarih gir."
+        },
+        "name": "Ad",
+        "stateNumber": {
+            "label": "State numarası",
+            "hint": "Şefinin yaşadığı State. Tam sayı."
+        },
+        "serverStartDate": {
+            "label": "Sunucu başlangıç tarihi",
+            "info": {
+                "label": "Sunucu başlangıç tarihi nerede bulunur",
+                "screen": "Oyunu aç ve profilinden Sunucu ekranına git.",
+                "date": "Sunucunun açıldığı tarihi oku. Yalnızca sunucu günü sayısını gösteriyorsa, bugünden o kadar gün geri say.",
+                "missing": "Ekranda tarih yok mu? İttifak liderine sor ya da State sohbetine bak.",
+                "tolerance": "Her iki yönde 21 gün içindeki bir tarih yeterlidir. Araştırma açılmaları 150 ve 600 günü kullanır, bu yüzden üç haftalık hata sonucu nadiren değiştirir."
+            }
+        },
+        "generation": {
+            "label": "Açılan kahramanlar, şuna kadar",
+            "hint": "Sonraki nesillerin kahramanları Kahramanlar sayfasında ve Plan'da gizli kalır.",
+            "preLegendary": "Nesil 0 (Efsanevi öncesi)",
+            "numbered": "Nesil {generation}"
+        },
+        "events": {
+            "legend": "Gösterilen Ana Etkinlikler",
+            "shownOf": "{total} içinden {shown}",
+            "hint": "Gizli etkinlikler Ana Etkinlikler sekmelerinden ve Etkinlik kaydından çıkar. İstediğin zaman tekrar aç."
+        },
+        "notes": "Notlar",
+        "packs": {
+            "legend": "Paketler",
+            "constructionLabel": "Construction Pack",
+            "constructionHint": "Binalar sayfasında ikinci inşaatçıyı açar.",
+            "constructionBusy": "İkinci inşaatçı bir yükseltme yapıyor. Bunu kapatmak için önce bitir ya da iptal et.",
+            "marchLabel": "March Queue Pack",
+            "marchHint": "Bir yürüyüş sırası ekler. Bonuslar sayfasında sayılır."
+        }
+    },
+    "delete": {
+        "title": "Şefi sil",
+        "cancel": "İptal",
+        "confirmButton": "Şefi sil",
+        "confirm": "“<strong>{name}</strong>” adlı şef silinsin mi?",
+        "summary": "{details} · oluşturulma {date}",
+        "note": "Bu işlem şefi ve tüm seviyelerini, hedeflerini ve notlarını bu cihazdan kaldırır. 10 saniyelik Geri al süresi bitince geri getirmenin yolu yok.",
+        "exportBackup": "Önce yedek dışa aktar"
+    },
+    "page": {
+        "title": "Şefler",
+        "newChief": "Yeni şef",
+        "sort": {
+            "label": "Sırala",
+            "options": {
+                "lastModified": "Son değişiklik",
+                "createdAt": "Oluşturulma tarihi",
+                "name": "Ad"
+            }
+        },
+        "subline": {
+            "none": "Henüz şef yok.",
+            "total": "{chiefs}.",
+            "withActive": "{chiefs}. Etkin: {name}."
+        },
+        "toasts": {
+            "backupTitle": "Yedek indirildi",
+            "deleted": "Silindi: {name}",
+            "undo": "Geri al"
+        },
+        "loading": "Kayıtlı veriler bu tarayıcıdan okunuyor. Liste hazır olunca görünür.",
+        "empty": {
+            "title": "Henüz şef yok",
+            "description": "Binaları, kahramanları, ekipmanı, araştırmayı ve yükseltme planını takip etmek için bir şef oluştur. Her şey bu tarayıcıda kalır.",
+            "restore": "Ayarlar'da bir yedeği geri yükle"
+        },
+        "search": {
+            "label": "Ada göre ara",
+            "showing": "{total} şefin {shown} tanesi gösteriliyor",
+            "noMatchTitle": "“{search}” ile eşleşen şef yok",
+            "noMatchDescription": "Yazımı kontrol et ya da {count} şefin hepsini görmek için aramayı temizle.",
+            "clear": "Aramayı temizle"
+        }
+    }
+}

@@ -1,0 +1,239 @@
+{
+    "page": {
+        "title": "Pakar"
+    },
+    "view": {
+        "subline": "{chief} · pakar Dawn Academy, {total} dalam permainan",
+        "ghost": "Pakar"
+    },
+    "common": {
+        "plan": "Rancang",
+        "generation": "Generasi {generation}",
+        "unknown": "Tidak diketahui",
+        "and": "{first} dan {last}",
+        "expertCount": "{count, plural, other {{amount} pakar}}"
+    },
+    "stats": {
+        "recruited": "Pakar direkrut",
+        "recruitedValue": "{count} daripada {total}",
+        "powerNow": "Kuasa pakar sekarang, yang direkrut sahaja",
+        "powerAtMax": "Kuasa pada maksimum, semua {total}",
+        "highest": "Afiniti tertinggi",
+        "highestValue": "{name} pada {affinity}",
+        "highestNone": "Tiada direkrut"
+    },
+    "toolbar": {
+        "searchLabel": "Cari pakar",
+        "searchPlaceholder": "Cari pakar",
+        "filters": "Penapis",
+        "emptyTitle": "Tiada pakar sepadan",
+        "emptyDescription": "Ubah carian atau penapis untuk melihat lebih ramai pakar.",
+        "reset": "Tetapkan semula penapis",
+        "status": "Menunjukkan {shown} daripada {total}. Matlamat hanya boleh dibaca di sini dan ditetapkan dalam Rancang. Pada tahap yang boleh dibahagi 10, bonus tahap sebelumnya dikira sehingga pakar dinaikkan pangkat. Setiap perubahan disimpan serta-merta.",
+        "lockedNote": "{count} dikunci sehingga hari pelayan kemudian."
+    },
+    "toast": {
+        "notRecruitedTitle": "{name} tidak direkrut",
+        "notRecruitedMessage": "Tahap kekal tersimpan dan hidup semula dengan Direkrut.",
+        "undo": "Buat asal"
+    },
+    "card": {
+        "recruited": "Direkrut",
+        "recruitedLabel": "{expert} direkrut",
+        "summary": "{title} · {specialty} · {generation}",
+        "affinityLevel": "Tahap afiniti",
+        "affinityLabel": "Tahap afiniti {expert}",
+        "affinityDisplay": "{level} / {max}",
+        "affinityProgress": "Kemajuan afiniti {expert}",
+        "goal": "Matlamat {goal}",
+        "advanced": "Naik pangkat",
+        "notAdvanced": "Belum naik pangkat",
+        "advancedLabel": "{expert} naik pangkat pada tahap {level}",
+        "relationship": "Tahap hubungan",
+        "affinityAvailable": "Afiniti tersedia",
+        "affinityAvailableLabel": "Mata afiniti {expert} dipegang",
+        "affinityOf": "daripada {need} untuk tahap {level}",
+        "bonusTitle": "Bonus asas sekarang",
+        "bonusNow": "{amount}% {stats}",
+        "bonusOwnLevel": "Tahap {level} bukan gandaan 10, jadi bonusnya sendiri dikira.",
+        "bonusAdvanced": "Tahap {level} sudah naik pangkat, jadi bonusnya sendiri dikira.",
+        "bonusNotAdvanced": "Tahap {level} belum naik pangkat, jadi bonus tahap {counted} dikira.",
+        "bonusAtMax": "Pada tahap 100: {amount}%.",
+        "feeds": "Menyokong",
+        "bonuses": "Bonus",
+        "nextAdvancement": "Naik pangkat seterusnya: tahap {level}, {sigils} sigil",
+        "allAdvanced": "Semua kenaikan pangkat telah selesai.",
+        "skills": "Kemahiran",
+        "skillLabel": "Tahap {skill} {expert}",
+        "skillDisplay": "{level} / {max}",
+        "expAvailable": "EXP tersedia",
+        "expAvailableLabel": "EXP {skill} {expert} dipegang",
+        "expOf": "daripada {need} untuk tahap {level}",
+        "maxLevel": "Tahap maksimum, tiada EXP diperlukan",
+        "talent": "Talent: {name}",
+        "talentLevel": "Tahap {level} daripada {max}",
+        "talentFollows": "Mengikut {relationship}. {effect}.",
+        "power": "Kuasa {now} daripada {max}",
+        "derived": "Diperoleh",
+        "notRecruitedHint": "Tidak direkrut. Rekrut pakar ini dalam Tundra Trek, kemudian hidupkan Direkrut.",
+        "recruitmentCost": "Kos rekrut: {cost}",
+        "maxPower": "Kuasa maks {max}",
+        "buffs": "Meningkatkan {stats}",
+        "expEnough": "Cukup untuk tahap {level}",
+        "affinityEnough": "Cukup untuk tahap {level}",
+        "skillLocked": "Tidak dibuka. Naikkan ke tahap 1 untuk membukanya.",
+        "sigilsOwned": "Sigil dimiliki",
+        "sigilsOwnedLabel": "Sigil {expert} dimiliki",
+        "sigilsHint": "Bilangan yang sama dengan sigil pada halaman Sumber."
+    },
+    "filtersFlyout": {
+        "title": "Penapis",
+        "description": "Sempitkan senarai pakar dan pilih susunan.",
+        "generation": "Generasi",
+        "all": "Semua",
+        "show": "Tunjuk",
+        "order": "Susunan",
+        "reset": "Tetap semula",
+        "showButton": "Tunjuk {experts}",
+        "notSaved": "Penapis tidak disimpan.",
+        "showOptions": {
+            "everything": "Semuanya",
+            "recruited": "Yang direkrut sahaja",
+            "notRecruited": "Yang tidak direkrut sahaja"
+        },
+        "orderOptions": {
+            "generation": "Generasi",
+            "affinity": "Tahap afiniti",
+            "power": "Kuasa",
+            "name": "Nama"
+        }
+    },
+    "plan": {
+        "title": "Rancang pakar",
+        "description": "Books of Knowledge, sigil, EXP kemahiran dan mata afiniti untuk matlamat afiniti dan kemahiran.",
+        "saved": "Pelan disimpan {date}",
+        "close": "Tutup",
+        "save": "Simpan pelan",
+        "exportButton": "Eksport ke Acara Utama",
+        "exportNothing": "Pelan tidak memerlukan buku atau sigil untuk dieksport.",
+        "export": {
+            "books": "Books of Knowledge",
+            "sigils": "Sigil pakar",
+            "exp": "EXP kemahiran",
+            "expReason": "Tiada acara yang memarkahkan EXP kemahiran."
+        },
+        "noExperts": "Belum ada pakar dalam pelan. Tambah pakar yang direkrut untuk menetapkan matlamatnya.",
+        "add": {
+            "title": "Tambah pakar",
+            "selectLabel": "Pakar untuk ditambah",
+            "button": "Tambah pakar",
+            "allIn": "Setiap pakar yang direkrut sudah ada dalam pelan.",
+            "noneRecruited": "Rekrut pakar pada halaman untuk merancangnya."
+        },
+        "block": {
+            "remove": "Buang",
+            "removeLabel": "Buang {expert} daripada pelan",
+            "part": "Bahagian",
+            "current": "Semasa",
+            "goalHeading": "Matlamat",
+            "affinity": "Tahap afiniti",
+            "affinityHeld": "Afiniti tersedia {amount}",
+            "expHeld": "EXP tersedia {amount}",
+            "currentLevel": "Tahap {level}",
+            "currentAffinity": "{level}, naik pangkat",
+            "currentAffinityPlain": "{level}",
+            "affinityGoalLabel": "Matlamat afiniti {expert}",
+            "skillGoalLabel": "Matlamat {skill} {expert}",
+            "advanceAtGoal": "Naik pangkat pada tahap {level}",
+            "advanceAtGoalLabel": "{expert} naik pangkat pada matlamat"
+        },
+        "checks": {
+            "affinity": "Mata afiniti",
+            "learning": "EXP kemahiran sebagai pecutan pembelajaran",
+            "minutesUnit": "min"
+        },
+        "stock": {
+            "sigils": "Pelan memerlukan {total} sigil. Sigil pakar anda meliputi {own} daripadanya, jadi {common} mesti datang daripada Common Expert Sigils. Setiap sigil pakar yang anda pegang hanya dikira untuk pakar itu.",
+            "books": "Pelan memerlukan {amount} Books of Knowledge untuk tahap kemahiran.",
+            "affinity": "Pelan memerlukan {needed} mata afiniti. Apa yang anda pegang pada kad pakar meliputi {held}, jadi {left} masih perlu diperoleh. Pakej tiada item afiniti, jadi tiada apa disemak berbanding stok.",
+            "learning": "Pelan memerlukan {exp} EXP kemahiran. Kemahiran anda memegang {held}, jadi {left} mesti datang daripada pecutan pembelajaran. Satu minit pembelajaran memberi {rate} EXP, jadi itu {minutes} minit."
+        },
+        "byExpert": {
+            "title": "Mengikut pakar",
+            "sigils": "Sigil: {needed} diperlukan, {own} dilindungi sigil {name} anda, {common} datang daripada Common Expert Sigils",
+            "affinity": "Afiniti: {needed} diperlukan, {held} tersedia, {left} masih perlu diperoleh",
+            "exp": "EXP kemahiran: {needed} diperlukan, {held} tersedia, {left} masih perlu diperoleh"
+        },
+        "result": {
+            "title": "Hasil",
+            "derived": "Diperoleh",
+            "books": "Books of Knowledge",
+            "sigils": "Sigil",
+            "exp": "EXP kemahiran",
+            "affinity": "Mata afiniti",
+            "advancements": "Kenaikan pangkat",
+            "skillLevels": "Tahap kemahiran",
+            "affinityLevels": "Tahap afiniti",
+            "heads": {
+                "expert": "Pakar",
+                "books": "Buku",
+                "sigils": "Sigil",
+                "exp": "EXP",
+                "levels": "Tahap",
+                "advancements": "Pkt.",
+                "affinity": "Afiniti"
+            },
+            "empty": "Tambah pakar dan naikkan matlamat untuk melihat hasil.",
+            "tableLabel": "Jadual hasil pelan"
+        }
+    },
+    "learning": {
+        "title": "Pembelajaran",
+        "note": "Satu kemahiran dipelajari pada satu masa. Siap menambah EXP kepada kemahiran itu.",
+        "idle": "Tiada yang dipelajari. Mulakan sesi untuk menambah EXP kepada kemahiran.",
+        "startButton": "Mula belajar",
+        "slotLabel": "Pembelajaran, satu sesi pada satu masa",
+        "jobTitle": "{expert}, {skill}, {session}",
+        "manageFinishText": "Siapkan naik taraf menambah EXP sesi kepada kemahiran, membebaskan baris gilir pembelajaran dan menambah sesi ke Sejarah anda. Apabila masa tinggal sifar, kad menyatakan Sedia untuk disiapkan. Tiada apa yang siap sendiri, kerana anda mungkin telah menggunakan pecutan.",
+        "flyout": {
+            "title": "Mula belajar",
+            "description": "Tandakan sesi pembelajaran sedang berjalan untuk kemahiran pakar",
+            "expert": "Pakar",
+            "skill": "Kemahiran",
+            "skillOption": "{name}, tahap {level} daripada {max}",
+            "session": "Sesi",
+            "sessionOption": "{label}, {exp} EXP",
+            "sessionHint": "Satu sesi memperoleh 60 EXP setiap minit. Sesi ialah sesi dalam permainan.",
+            "expEarned": "EXP diperoleh",
+            "heldAfter": "EXP dipegang selepas",
+            "tooMuch": "Kemahiran hanya boleh menggunakan {room} EXP lagi, jadi selebihnya hilang.",
+            "whenStarted": "Bila ia bermula?",
+            "modes": {
+                "now": "Bermula sekarang",
+                "already": "Sudah bermula"
+            },
+            "timeLeftHours": "Masa tinggal, jam",
+            "ends": "Tamat",
+            "startedHint": "Gunakan Sudah bermula apabila sesi sedang berjalan dalam permainan. Masukkan masa yang dipaparkan.",
+            "nothingToLearn": "Tiada kemahiran yang boleh dipelajari sekarang. Rekrut pakar dan buka kemahiran yang belum pada tahap tertinggi.",
+            "busy": "Satu sesi sudah berjalan. Siapkan atau batalkannya dalam Urus dahulu.",
+            "cancel": "Batal",
+            "start": "Mula belajar"
+        },
+        "toasts": {
+            "started": {
+                "title": "Pembelajaran bermula",
+                "message": "{what}."
+            },
+            "finished": {
+                "title": "{what} dipelajari",
+                "message": "EXP ditambah kepada kemahiran dan Sejarah."
+            },
+            "cancelled": {
+                "title": "{what} dibatalkan",
+                "message": "Kemahiran mengekalkan EXP yang dimilikinya."
+            },
+            "undo": "Buat asal"
+        }
+    }
+}

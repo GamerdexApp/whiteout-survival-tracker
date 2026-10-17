@@ -1,0 +1,98 @@
+{
+    "page": {
+        "title": "Teknoloji"
+    },
+    "view": {
+        "subline": "{chief} · Büyüme, Bölge ve Savaş dallarında {count} ittifak teknolojisi düğümü"
+    },
+    "summary": {
+        "maxed": "Tamamlandı",
+        "inProgress": "Sürüyor",
+        "notStarted": "Başlamadı",
+        "locked": "Kilitli"
+    },
+    "status": {
+        "maxed": "Tamamlandı",
+        "inProgress": "Sürüyor",
+        "notStarted": "Başlamadı",
+        "locked": "Kilitli"
+    },
+    "tabs": {
+        "label": "Teknoloji kategorileri"
+    },
+    "categories": {
+        "Growth": "Büyüme",
+        "Territory": "Bölge",
+        "Battle": "Savaş"
+    },
+    "filters": {
+        "search": "Ara",
+        "searchLabel": "Teknoloji düğümü ara",
+        "searchPlaceholder": "Düğüm adı",
+        "tier": "Kademe",
+        "allTiers": "Tüm kademeler",
+        "tierOption": "Kademe {tier}",
+        "status": "Durum",
+        "allStatuses": "Tümü",
+        "button": "Ara ve filtrele",
+        "title": "Ara ve filtrele",
+        "description": "Teknoloji düğümlerini ada, kademeye ve duruma göre bul",
+        "reset": "Filtreleri sıfırla",
+        "done": "Göster: {count}",
+        "shown": "{total} düğümün {shown} tanesi gösteriliyor"
+    },
+    "table": {
+        "node": "Düğüm",
+        "level": "Seviye",
+        "bonus": "Bonus",
+        "cost": "Sonraki seviye maliyeti",
+        "time": "Süre",
+        "needs": "Gereksinim"
+    },
+    "node": {
+        "tierDescription": "Kademe {tier} · {description}",
+        "levelLabel": "Seviye: {name}",
+        "levelOf": "{level} / {max}",
+        "open": "Aç: {name}",
+        "bonusOf": "{now} / {max}",
+        "bonusNone": "Henüz yok, maks. {max}",
+        "noBonus": "Bonus yok",
+        "maxed": "Tamamlandı",
+        "noTime": "Süre yok",
+        "readyToUpgrade": "Yükseltmeye hazır",
+        "nothingNeeded": "Gereksinim yok",
+        "needsPart": "{name} seviye {level} gerekir",
+        "costLine": "{name} {amount}",
+        "lockedHint": "Şu kadar açılana dek kilitli: {names}",
+        "requirementPart": "{name} seviye {level}"
+    },
+    "flyout": {
+        "title": "{name}",
+        "subtitle": "{category}, kademe {tier}. {description}",
+        "close": "Kapat",
+        "level": "Seviye",
+        "bonusNow": "Şu anki bonus",
+        "needsFor": "Seviye {level} için gerekenler",
+        "needsNothing": "Gereksinim yok.",
+        "needsLine": "Seviye {need} gerekir, sende seviye {have} var",
+        "met": "Karşılandı",
+        "notMet": "Karşılanmadı",
+        "requiredBy": "Şunlar için gerekli",
+        "requiredByNone": "Başka hiçbir düğüm buna ihtiyaç duymaz.",
+        "requiredByLine": "{category}, kademe {tier}, seviye {from} itibarıyla {name} seviye {need} ister",
+        "allLevels": "Tüm seviyeler",
+        "levelRow": "Seviye {level}",
+        "done": "Tamam",
+        "next": "Sıradaki",
+        "later": "Sonra",
+        "remaining": "Son seviyeye kalan",
+        "derived": "Türetildi",
+        "remainingNone": "Kalan yok. Bu düğüm tamamlandı.",
+        "remainingLine": "{cost}",
+        "remainingTime": "{time}"
+    },
+    "empty": {
+        "title": "Eşleşen düğüm yok",
+        "description": "Daha fazla düğüm görmek için aramayı ya da filtreleri değiştir."
+    }
+}

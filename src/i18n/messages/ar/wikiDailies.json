@@ -1,0 +1,46 @@
+{
+    "line": "المهام اليومية داخل اللعبة وعددها {missions} بكل مستوى معروف، ومكافآت شريط النشاط، والمهام الروتينية.",
+    "missionCount": "{count, plural, zero {{amount} مهمة} one {{amount} مهمة} two {{amount} مهمتان} few {{amount} مهام} many {{amount} مهمة} other {{amount} مهمة}}",
+    "tabs": {
+        "label": "المهام اليومية",
+        "missions": "مهام اللعبة",
+        "routine": "المهام الروتينية"
+    },
+    "totals": {
+        "title": "إجماليات النشاط",
+        "missions": "مهام اللعبة",
+        "levelOne": "المستوى 1 من كل مهمة",
+        "allLevels": "كل مستوى معروف",
+        "topReward": "مستوى أعلى مكافأة",
+        "explanation": "تضيف المهمة نشاط كل مستوى أُنجز، حتى المستوى المحقق. المستوى 1 من كل المهام الـ {missions} يساوي {levelOne} نشاط. وكل مستوى معروف من كل المهام الـ {missions} يساوي {allLevels}."
+    },
+    "bar": {
+        "title": "مكافآت شريط النشاط",
+        "activeness": "النشاط",
+        "rewards": "المكافآت"
+    },
+    "missions": {
+        "title": "مهام اللعبة",
+        "summary": "{missions}، {levels}",
+        "levelCount": "{count, plural, zero {{amount} مستوى معروف} one {{amount} مستوى معروف} two {{amount} مستويان معروفان} few {{amount} مستويات معروفة} many {{amount} مستوى معروفًا} other {{amount} مستوى معروف}}",
+        "level": "المستوى",
+        "task": "المهمة",
+        "target": "الهدف",
+        "activeness": "النشاط",
+        "otherRewards": "مكافآت أخرى",
+        "levelLabel": "Lv{level}",
+        "sumOne": "مستوى واحد: {total} نشاط",
+        "sumMany": "{count} مستويات: {parts} = {total} نشاط",
+        "plus": "‎+{amount}",
+        "noOtherRewards": "لا شيء"
+    },
+    "routine": {
+        "title": "المهام الروتينية",
+        "count": "{count, plural, zero {{amount} مهمة} one {{amount} مهمة} two {{amount} مهمتان} few {{amount} مهام} many {{amount} مهمة} other {{amount} مهمة}}"
+    },
+    "missing": {
+        "title": "غير موجودة في البيانات بعد",
+        "levels": "مستويات المهام الأخرى. لكل مهمة من {min} إلى {max} مستوى معروف. المستويات الأعلى غير موجودة في الحزمة بعد، لذا قد تزيد الإجماليات.",
+        "reset": "وقت إعادة التهيئة اليومية. لا تحتوي الحزمة على وقت. يستخدم المتتبّع افتراضيه الخاص {time} بتوقيت UTC ويصفه بأنه الافتراضي في التطبيق."
+    }
+}

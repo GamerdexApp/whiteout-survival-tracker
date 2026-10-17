@@ -1,0 +1,32 @@
+{
+    "title": "Eksport ke Acara Utama",
+    "description": "Pilih acara, kemudian hari",
+    "events": {
+        "svs": "SvS",
+        "showdown": "Alliance Showdown",
+        "king": "King of Icefield",
+        "hall": "Hall of Chief"
+    },
+    "stepEvent": "1. Acara",
+    "stepDay": "{number}. Hari acara {group}",
+    "stepDayPlain": "Hari acara",
+    "stepItems": "{number}. Item daripada pelan ini",
+    "noDay": "{event} tiada baris pemarkahan untuk item ini.",
+    "daysHint": "Hanya hari yang baris pemarkahannya mengira item disenaraikan. Hall of Chief menyenaraikan peringkat dan bukan hari. Setiap kumpulan item mendapat harinya sendiri.",
+    "lineEach": "{points} setiap satu pada {day}.",
+    "lineNotScored": "{event} tiada baris pemarkahan untuk ini.",
+    "notScored": "Tidak dimarkahkan",
+    "points": "{points} mata",
+    "addedTo": "Ditambah ke {event}",
+    "nothingScores": "Tiada apa dalam pelan ini yang dimarkahkan dalam {event} pada hari yang dipilih.",
+    "summaryTitle": "Ringkasan eksport",
+    "summaryHint": "Apa yang item yang sama akan dimarkahkan dalam setiap acara apabila setiap item dibelanjakan pada hari yang memarkahkannya. Hanya acara dan hari yang dipilih menerimanya. Halaman Acara Utama menunjukkannya sebagai bilangan yang boleh anda ubah.",
+    "selected": "Dipilih",
+    "cancel": "Batal",
+    "export": "Eksport ke {event}",
+    "toast": {
+        "title": "Dieksport ke Acara Utama",
+        "message": "{points} mata ditambah ke {event}.",
+        "undo": "Buat asal"
+    }
+}

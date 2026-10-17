@@ -1,6 +1,7 @@
 // Writes src/i18n/messages/<code>.ts for every language folder src/i18n/messages/<code>/.
 // A catalog file is <namespace>.json and has the same keys as the English one.
 // Usage: node scripts/gen-locale-indexes.mjs
+import { execFileSync } from "node:child_process";
 import { existsSync, readdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
@@ -37,4 +38,14 @@ for (const code of locales) {
     `import type { PartialMessages } from "../locales";\n${imports}\nconst ${ident}: PartialMessages = ${body};\n\nexport default ${ident};\n`,
   );
 }
+execFileSync(
+  "pnpm",
+  [
+    "exec",
+    "prettier",
+    "--write",
+    ...locales.map((code) => join(DIR, `${code}.ts`)),
+  ],
+  { stdio: "ignore" },
+);
 console.log(`wrote ${locales.length} language indexes`);

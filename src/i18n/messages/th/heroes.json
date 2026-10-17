@@ -1,0 +1,262 @@
+{
+    "page": {
+        "title": "ฮีโร่"
+    },
+    "view": {
+        "tabsLabel": "ฮีโร่",
+        "heroesTab": "ฮีโร่",
+        "gearTab": "อุปกรณ์ฮีโร่",
+        "heroesSubline": "{chief} · มีแล้ว {owned} จาก {total}",
+        "gearSubline": "{chief} · {count, plural, other {ชุดอุปกรณ์ {amount} ชุด}}"
+    },
+    "common": {
+        "owned": "มีแล้ว",
+        "ownedLabel": "มี {hero} แล้ว",
+        "starLabel": "ดาวของ {hero}",
+        "levelLabel": "เลเวล {hero}",
+        "talentLabel": "พรสวรรค์ของ {hero}",
+        "skillLabel": "{skill} ของ {hero}",
+        "weaponLevelLabel": "เลเวล {weapon} ของ {hero}",
+        "shardsOwnedLabel": "เศษของ {hero} ที่มี",
+        "starAndTier": "ดาวและระดับ",
+        "level": "เลเวล",
+        "noGoal": "ไม่มีเป้าหมาย",
+        "shards": "เศษ",
+        "totalPower": "พลังรวม",
+        "unknown": "ไม่ทราบ",
+        "plan": "แผน",
+        "generation": "รุ่น {generation}",
+        "exploration": "Exploration",
+        "expedition": "Expedition",
+        "talent": "พรสวรรค์",
+        "maxLevelSuffix": "/ {max}",
+        "heroCount": "{count, plural, other {ฮีโร่ {amount} คน}}"
+    },
+    "goalText": {
+        "to": "ถึง {goal}"
+    },
+    "card": {
+        "summary": "{rarity} · {heroClass} · {generation}",
+        "talentRow": "พรสวรรค์ {name}",
+        "shardsOf": "จาก {needed}",
+        "enoughShards": " เศษเพียงพอ",
+        "shortBy": " ขาดอีก {amount}",
+        "gearSet": "ชุดอุปกรณ์",
+        "notOwnedHint": "เปิดมีแล้วเพื่อติดตามดาว เลเวล และทักษะ",
+        "details": "รายละเอียด"
+    },
+    "tab": {
+        "stats": {
+            "generations": "รุ่นที่ปลดล็อก",
+            "generationsValue": "0 ถึง {max}",
+            "heroesOwned": "ฮีโร่ที่มีจากที่ปลดล็อก",
+            "legendaryOwned": "Legendary ที่มีจากที่ปลดล็อก",
+            "atMaxLevel": "เลเวล 80",
+            "heroPower": "พลังฮีโร่",
+            "heroPowerUnknown": "พลังฮีโร่ ไม่รวมที่ไม่ทราบ {amount}",
+            "withGoal": "ที่มีเป้าหมาย"
+        },
+        "search": {
+            "label": "ค้นหาฮีโร่",
+            "placeholder": "ค้นหา {amount} ฮีโร่ตามชื่อ"
+        },
+        "filters": "ตัวกรอง",
+        "maxOut": "ทำให้สูงสุด",
+        "status": "แสดง {shown} จาก {total} ฮีโร่ รุ่น 0 ถึง {max} ปลดล็อกแล้วสำหรับหัวหน้านี้ เป้าหมายอ่านได้อย่างเดียวที่นี่ และตั้งในแผน",
+        "empty": {
+            "title": "ไม่พบฮีโร่ที่ตรงกัน",
+            "description": "เปลี่ยนคำค้นหาหรือรีเซ็ตตัวกรองเพื่อดูทุกฮีโร่",
+            "reset": "รีเซ็ต"
+        },
+        "showMore": "แสดงเพิ่ม อีก {amount} {count, plural, other {ฮีโร่}}",
+        "toast": {
+            "notOwnedTitle": "ยังไม่มี {name}",
+            "notOwnedMessage": "ดาว เลเวล และทักษะยังเก็บไว้เมื่อเปิดมีแล้วอีกครั้ง",
+            "undo": "เลิกทำ",
+            "maxedTitle": "ทำให้ฮีโร่สูงสุดแล้ว",
+            "maxedMessage": "อัปเดต {heroes} แล้ว"
+        }
+    },
+    "filtersFlyout": {
+        "title": "ตัวกรอง",
+        "description": "เลือกฮีโร่ที่หน้านี้แสดง",
+        "reset": "รีเซ็ต",
+        "show": "แสดง {heroes}",
+        "all": "ทั้งหมด",
+        "generation": "รุ่น",
+        "rarity": "ความหายาก",
+        "heroClass": "คลาส",
+        "ownership": "การครอบครอง",
+        "order": "ลำดับ",
+        "notSaved": "ตัวกรองไม่ถูกบันทึก",
+        "rarities": {
+            "Legendary": "Legendary",
+            "Epic": "Epic",
+            "Rare": "Rare"
+        },
+        "classes": {
+            "Infantry": "Infantry",
+            "Lancer": "Lancer",
+            "Marksman": "Marksman"
+        },
+        "ownershipOptions": {
+            "all": "ทั้งหมด",
+            "owned": "มีแล้ว",
+            "notOwned": "ยังไม่มี"
+        },
+        "orderOptions": {
+            "owned": "ที่มีแล้วก่อน แล้วตามด้วยรุ่นล่าสุด",
+            "generation": "รุ่น ล่าสุดก่อน",
+            "name": "ชื่อ A ถึง Z",
+            "power": "พลังรวม สูงสุดก่อน"
+        }
+    },
+    "maxOut": {
+        "title": "ทำให้ฮีโร่สูงสุด",
+        "scopeLabel": "ฮีโร่ที่จะทำให้สูงสุด",
+        "scope": {
+            "owned": "ฮีโร่ที่มีแล้ว",
+            "unlocked": "ฮีโร่ที่ปลดล็อกทั้งหมด ทำเครื่องหมายว่ามีแล้ว",
+            "selected": "เลือกฮีโร่ ทำเครื่องหมายว่ามีแล้ว"
+        },
+        "searchLabel": "ค้นหาฮีโร่ที่จะเลือก",
+        "searchPlaceholder": "ค้นหาฮีโร่ตามชื่อ",
+        "selectShown": "เลือกที่แสดง",
+        "clear": "ล้าง",
+        "ownedTag": "มีแล้ว",
+        "starAndTier": "ดาวและระดับถึง 5.0",
+        "level": "เลเวลถึง 80",
+        "levelHint": "ปิดเมื่อทักษะเต็มแล้วและเลเวลของฮีโร่รุ่นเก่าคงอยู่ที่ 1",
+        "skills": "ทักษะถึง 5",
+        "skillsHint": "Exploration, Expedition และพรสวรรค์",
+        "weapon": "อาวุธเฉพาะถึง 10",
+        "note": "สิ่งที่ปิดไว้จะคงเดิม จำนวนเศษและเป้าหมายไม่เปลี่ยน เลิกทำได้หลังจากใช้",
+        "cancel": "ยกเลิก",
+        "apply": "ทำให้ {heroes} สูงสุด"
+    },
+    "flyout": {
+        "fallbackTitle": "ฮีโร่",
+        "description": "{heroClass} {rarity} รุ่น {generation}",
+        "done": "เสร็จสิ้น",
+        "status": {
+            "title": "สถานะ",
+            "furnaceNeeded": "ต้องมี Furnace สำหรับเลเวล {level}",
+            "met": "ครบแล้ว",
+            "needsFurnace": "ต้องมี Furnace {required}",
+            "levelPower": "พลังจากเลเวล",
+            "skillPower": "พลังจากทักษะ",
+            "starPower": "พลังจากดาว",
+            "weaponPower": "พลังจากอาวุธ",
+            "totalPower": "พลังรวม",
+            "note": "พลังนับจากเลเวล ทักษะ ป้ายดาว และเลเวลอาวุธ"
+        },
+        "skills": {
+            "title": "ทักษะ",
+            "aside": "ห้าเลเวลต่อทักษะ",
+            "toLevel": "ถึง {level}: คู่มือ {manuals} เล่ม",
+            "needsStar": "ต้องมีดาว {star}",
+            "starMet": "ครบดาว {star} แล้ว",
+            "talentTop": "พรสวรรค์อยู่ที่เลเวลสูงสุด",
+            "talentNeedsStar": "เลเวล {level} ต้องมีดาว {star}",
+            "talentStarMet": "เลเวล {level}: ครบดาว {star} แล้ว"
+        },
+        "weapon": {
+            "title": "อาวุธเฉพาะ: {name}",
+            "level": "เลเวลอาวุธ",
+            "widgetsForLevel": "Widgets สำหรับเลเวล {level}",
+            "widgetsForLevels": "Widgets สำหรับเลเวล {from} ถึง {to}",
+            "expeditionBonus": "โบนัส Expedition",
+            "bonus": "Lethality {lethality}% · Health {health}%",
+            "power": "พลังอาวุธ",
+            "unlocksAt": "ปลดล็อกที่เลเวลอาวุธ {level}"
+        },
+        "shards": {
+            "title": "เศษ",
+            "owned": "เศษที่มี",
+            "goal": "เป้าหมาย",
+            "neededForGoal": "ที่ต้องใช้สำหรับเป้าหมาย {goal}",
+            "enough": "เศษเพียงพอ",
+            "shortBy": "ขาดอีก",
+            "yes": "ใช่",
+            "sources": "แหล่งเศษ"
+        },
+        "stats": {
+            "title": "ค่าสถานะที่เลเวล 80",
+            "explorationAt": "Exploration ที่ {stars}",
+            "expeditionAt": "Expedition ที่ {stars}",
+            "explorationFull": "Exploration ที่ 5.0",
+            "expeditionFull": "Expedition ที่ 5.0",
+            "exploration": "Atk {attack} · Def {defense} · HP {health}",
+            "expedition": "Atk {attack}% · Def {defense}%",
+            "estimate": "ค่าประมาณ"
+        }
+    },
+    "plan": {
+        "title": "วางแผนฮีโร่",
+        "description": "เศษ คู่มือทักษะ และ Widgets จากปัจจุบันถึงเป้าหมาย",
+        "saved": "บันทึกแผนเมื่อ {date}",
+        "close": "ปิด",
+        "save": "บันทึกแผน",
+        "noHeroes": "ยังไม่มีฮีโร่ในแผน เพิ่มฮีโร่ที่มีแล้วด้านบน แล้วเพิ่มเป้าหมาย",
+        "add": {
+            "title": "เพิ่มฮีโร่",
+            "allIn": "ฮีโร่ที่มีแล้วทุกคนอยู่ในแผนแล้ว เปิดมีแล้วของฮีโร่เพื่อวางแผน",
+            "selectLabel": "ฮีโร่ที่จะเพิ่ม",
+            "button": "เพิ่มฮีโร่"
+        },
+        "block": {
+            "remove": "ลบ {hero} ออกจากแผน",
+            "starTo": "{stars} ถึง",
+            "starGoal": "เป้าหมายดาวของ {hero}",
+            "levelTo": "{current} ถึง",
+            "goalLabel": "เป้าหมาย {name} ของ {hero}",
+            "note": "ค่าปัจจุบันมาจากฮีโร่ในหน้านั้น เปลี่ยนที่นั่น"
+        },
+        "unmet": {
+            "title": "เลเวลทักษะต้องใช้ดาวที่สูงกว่า",
+            "item": "{hero}: {skill} เลเวล {level} ต้องมีดาว {star}",
+            "message": "{items} เพิ่มเป้าหมายดาวหรือลดเป้าหมายทักษะ"
+        },
+        "shardsUsed": "เศษที่ใช้: {own} จากฮีโร่และ {general} เศษทั่วไป รวม {total} ฮีโร่ใช้เศษของตัวเองก่อน",
+        "result": {
+            "title": "ผลลัพธ์ {steps} ขั้นตอน",
+            "widgets": "Widgets",
+            "weaponSkills": "{count, plural, other {ปลดล็อกทักษะอาวุธ {amount} ทักษะ}}",
+            "note": "พลังไม่เป็นส่วนของการวางแผนฮีโร่ ตัวคำนวณไม่ให้เวลาและไม่รับค่าความเร็ว",
+            "heads": {
+                "hero": "ฮีโร่",
+                "starSteps": "ขั้นของดาว",
+                "skillLevels": "เลเวลทักษะ",
+                "shards": "เศษ",
+                "widgets": "Widgets"
+            },
+            "tableLabel": "ตารางผลลัพธ์ของแผน"
+        },
+        "events": {
+            "svs": "SvS State of Power",
+            "allianceShowdown": "Alliance Showdown",
+            "kingOfIcefield": "King of Icefield",
+            "hallOfChief": "Hall of Chief"
+        }
+    },
+    "export": {
+        "button": "ส่งออกไปยัง Core Events",
+        "nothing": "แผนไม่ต้องใช้เศษหรือ Widgets ที่จะส่งออก",
+        "shardsGroup": "สำหรับเศษ",
+        "widgetsGroup": "สำหรับ Widgets",
+        "widgets": "Widgets",
+        "manualsReason": "ไม่มีกิจกรรมที่ให้คะแนนจากคู่มือทักษะ",
+        "shards": {
+            "Legendary": "Mythic Hero Shards",
+            "Epic": "Epic Hero Shards",
+            "Rare": "Rare Hero Shards"
+        }
+    },
+    "service": {
+        "generalShard": {
+            "Legendary": "Mythic General Hero Shard",
+            "Epic": "Epic General Hero Shard",
+            "Rare": "Rare General Hero Shard"
+        }
+    }
+}

@@ -1,0 +1,78 @@
+{
+    "page": {
+        "title": "สกิน"
+    },
+    "view": {
+        "subline": "{chief} · {details} · มีสกิน {owned} จาก {total}"
+    },
+    "owned": {
+        "label": "มีแล้ว",
+        "value": "{owned} จาก {total}",
+        "progress": "สกินที่มี",
+        "withBonus": "{withBonus} จาก {total} สกินมีโบนัส"
+    },
+    "totals": {
+        "title": "โบนัสจากสกินที่มี",
+        "estimate": "ค่าประมาณ",
+        "percent": "+{amount}%",
+        "flat": "+{amount}",
+        "none": "ยังไม่มีสกินที่มีโบนัส",
+        "note": "{count, plural, other {ผลรวมโบนัสของสกินที่มี {amount} สกิน}} แยกตามค่าสถานะ คำนวณโดยแอป โดยสมมติว่าสกินที่มีทุกสกินมีผลพร้อมกัน Troop Attack และ Troops Attack ถูกบวกรวมกัน"
+    },
+    "expiry": {
+        "title": "ไม่ติดตามวันหมดอายุ",
+        "text": "ระยะเวลา (ถาวร 30 วัน ตามอันดับ) อยู่เฉพาะในข้อความคำอธิบาย สกินแบบมีเวลาจะยังนับว่ามีจนกว่าคุณจะล้าง"
+    },
+    "search": {
+        "label": "ค้นหาสกิน",
+        "placeholder": "ค้นหาสกินตามชื่อหรือแหล่งที่มา"
+    },
+    "filters": {
+        "button": "ตัวกรอง",
+        "title": "ตัวกรอง",
+        "description": "เลือกสิ่งที่รายการสกินแสดง",
+        "reset": "รีเซ็ต",
+        "showButton": "{count, plural, other {แสดง {amount} สกิน}}",
+        "skinType": "ประเภทสกิน",
+        "typeAll": "ทั้งหมด {amount}",
+        "typeOption": "{type} {amount}",
+        "owned": "มีแล้ว",
+        "bonus": "โบนัส",
+        "order": "ลำดับ",
+        "notSaved": "ตัวกรองไม่ถูกบันทึก",
+        "ownedOptions": {
+            "all": "สกินทั้งหมด",
+            "owned": "มีแล้ว",
+            "notOwned": "ยังไม่มี"
+        },
+        "bonusOptions": {
+            "any": "ทั้งหมด",
+            "has": "มีโบนัส",
+            "none": "ไม่มีโบนัส"
+        },
+        "orderOptions": {
+            "game": "ลำดับตามเกม",
+            "name": "ชื่อ A ถึง Z",
+            "owned": "ที่มีแล้วก่อน"
+        }
+    },
+    "status": {
+        "showing": "แสดง {shown} จาก {total} สกิน",
+        "showingFiltered": "แสดง {shown} จาก {total} สกิน ตัวกรอง: {filters}",
+        "showMore": "{count, plural, other {แสดงสกินเพิ่ม {amount} สกิน}}"
+    },
+    "empty": {
+        "title": "ไม่พบสกินที่ตรงกัน",
+        "description": "เปลี่ยนคำค้นหาหรือตัวกรองเพื่อดูสกิน",
+        "reset": "รีเซ็ตตัวกรอง"
+    },
+    "card": {
+        "bonus": "โบนัส",
+        "source": "แหล่งที่มา",
+        "unknown": "ไม่ทราบ",
+        "bonusValue": "{value} {stat}",
+        "owned": "มีแล้ว",
+        "ownedLabel": "มีแล้ว: {name} {type}",
+        "domainWarning": "ข้อความโบนัสโดเมนอยู่ในคำอธิบายและไม่ถูกนับ"
+    }
+}

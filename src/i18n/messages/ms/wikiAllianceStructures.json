@@ -1,0 +1,104 @@
+{
+    "line": "{banners} julat sepanduk, {facilities} kemudahan dan {fortresses} entri castle, stronghold dan fortress. Rujukan sahaja, tiada apa di sini disimpan.",
+    "filters": {
+        "search": "Cari",
+        "searchPlaceholder": "Cari julat, kemudahan, fortress",
+        "structure": "Struktur",
+        "structures": {
+            "all": "Semua struktur",
+            "banners": "Sepanduk",
+            "facilities": "Kemudahan peta",
+            "castle": "Castle",
+            "stronghold": "Stronghold",
+            "fortress": "Fortress"
+        }
+    },
+    "empty": "Tiada apa dalam senarai ini sepadan dengan carian.",
+    "none": "Tiada",
+    "banners": {
+        "title": "Kos binaan sepanduk",
+        "columns": {
+            "range": "Julat tahap",
+            "min": "Min",
+            "max": "Maks",
+            "cost": "Kos setiap tahap"
+        },
+        "noCost": "Tiada disenaraikan",
+        "count": "{count, plural, other {{amount} julat}}",
+        "detail": {
+            "title": "Kos sepanduk",
+            "fields": {
+                "range": "Julat tahap",
+                "min": "Tahap terendah",
+                "max": "Tahap tertinggi",
+                "cost": "Kos setiap tahap"
+            }
+        }
+    },
+    "facilities": {
+        "title": "Kemudahan peta",
+        "count": "{count, plural, other {{amount} kemudahan}}",
+        "columns": {
+            "facility": "Kemudahan",
+            "bonus": "Bonus",
+            "level": "Tahap {level}",
+            "listed": "Tahap disenaraikan",
+            "ownLimit": "Had sendiri"
+        },
+        "cell": "{available} pada peta",
+        "listedOf": "{listed} daripada {total}",
+        "levelsNote": "Data menyenaraikan {listed} daripada {total} tahap untuk kemudahan ini. Tahap yang tidak disenaraikan ditunjukkan sebagai Tidak diketahui.",
+        "detail": {
+            "title": "Tahap {name}",
+            "level": "Tahap {level}",
+            "columns": {
+                "level": "Tahap",
+                "booster": "Penggalak",
+                "injured": "Cedera parah",
+                "losses": "Kerugian",
+                "ownLimit": "Had sendiri",
+                "available": "Pada peta",
+                "locations": "Lokasi (x, y)"
+            },
+            "percent": "{value}%",
+            "location": "{x}, {y}"
+        }
+    },
+    "fortresses": {
+        "title": "Castle, stronghold dan fortress",
+        "kinds": {
+            "castle": "Castle",
+            "stronghold": "Stronghold",
+            "fortress": "Fortress"
+        },
+        "columns": {
+            "name": "Nama",
+            "kind": "Jenis",
+            "x": "X",
+            "y": "Y",
+            "phases": "Fasa",
+            "phaseOne": "Ganjaran Fasa 1"
+        },
+        "mobileMeta": "{kind}, x {x}, y {y}",
+        "count": "{count, plural, other {{amount} struktur}}"
+    },
+    "map": {
+        "title": "Ruang peta",
+        "label": "Peta castle, stronghold dan fortress mengikut nilai x dan y",
+        "note": "Castle, stronghold dan fortress diplot daripada nilai x dan y pada petak {size} kali {size}. Saiz petak ialah anggaran, pakej tiada saiz peta.",
+        "legend": {
+            "castle": "Petak: castle",
+            "stronghold": "Berlian: stronghold",
+            "fortress": "Bulatan: fortress"
+        }
+    },
+    "detail": {
+        "title": "Ganjaran fasa",
+        "phases": "{count, plural, other {{amount} fasa}}",
+        "columns": {
+            "phase": "Fasa",
+            "reward": "Ganjaran"
+        },
+        "noRewards": "Pakej tiada ganjaran fasa untuk struktur ini."
+    }
+}

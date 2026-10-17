@@ -1,0 +1,99 @@
+{
+    "line": "{heroes} ฮีโร่และ {widgets} เลเวล Widget ข้อมูลอ้างอิงเท่านั้น ไม่มีอะไรที่นี่ถูกบันทึก",
+    "roster": {
+        "title": "รายชื่อ",
+        "count": "{shown} จาก {total} ฮีโร่",
+        "search": "ค้นหา",
+        "searchPlaceholder": "ค้นหา {count} ฮีโร่",
+        "generation": "รุ่น",
+        "rarity": "ความหายาก",
+        "class": "คลาส",
+        "subClass": "คลาสย่อย",
+        "all": "ทั้งหมด",
+        "empty": "ไม่มีฮีโร่ที่ตรงกับตัวกรองนี้",
+        "columns": {
+            "hero": "ฮีโร่",
+            "generation": "รุ่น",
+            "rarity": "ความหายาก",
+            "class": "คลาส",
+            "subClass": "คลาสย่อย",
+            "power": "พลัง 5 ดาว",
+            "weapon": "อาวุธเฉพาะ"
+        },
+        "none": "ไม่มี"
+    },
+    "detail": {
+        "generation": "รุ่น {generation}",
+        "source": "แหล่งที่มา: {sources}",
+        "noSource": "แหล่งที่มา: ไม่ทราบ",
+        "explorationAttack": "Exploration attack",
+        "explorationDefense": "Exploration defense",
+        "explorationHealth": "Exploration health",
+        "expeditionAttack": "Expedition attack",
+        "expeditionDefense": "Expedition defense",
+        "powerAtLevel80": "พลังที่เลเวล 80",
+        "powerAtFiveStars": "พลังที่ 5 ดาว",
+        "powerAtZeroStars": "พลังที่ 0 ดาว",
+        "powerMissing": "ไม่มีพลังของเลเวลฮีโร่และเศษสำหรับรุ่น 6 ขึ้นไป จะแสดงว่าไม่ทราบจนกว่าจะได้ข้อมูล"
+    },
+    "skills": {
+        "title": "ทักษะ",
+        "count": "{count, plural, other {{amount} ทักษะ}}",
+        "branch": {
+            "exploration": "Exploration",
+            "expedition": "Expedition",
+            "talent": "พรสวรรค์"
+        },
+        "levels": {
+            "columns": {
+                "level": "เลเวล",
+                "star": "ดาวที่ต้องมี",
+                "manuals": "คู่มือ",
+                "power": "พลังที่เพิ่ม",
+                "effects": "ผล"
+            },
+            "effect": {
+                "percentOfAttack": "{name} {amount}% ของ Attack",
+                "percent": "{name} {amount}%",
+                "seconds": "{name} {amount} วิ",
+                "number": "{name} {amount}"
+            }
+        }
+    },
+    "shards": {
+        "title": "ค่าใช้จ่ายเศษตามดาว",
+        "columns": {
+            "star": "ดาว",
+            "tiers": "เศษต่อระดับ",
+            "total": "รวม",
+            "power": "พลังที่ดาวนั้น"
+        },
+        "star": "{star} ดาว"
+    },
+    "weapon": {
+        "title": "อาวุธเฉพาะ",
+        "power": "พลังอาวุธ",
+        "exploration": "Exploration atk / def / hp",
+        "expedition": "Expedition lethality / hp",
+        "unlocksAt": "ปลดล็อกที่เลเวลอาวุธ {level}",
+        "levelsTitle": "เลเวลอาวุธ",
+        "columns": {
+            "level": "เลเวลอาวุธ",
+            "power": "พลัง",
+            "widgets": "Widgets"
+        },
+        "level": "เลเวล {level}"
+    },
+    "levels": {
+        "title": "เลเวลฮีโร่",
+        "columns": {
+            "level": "เลเวลฮีโร่",
+            "furnace": "ต้องมี",
+            "xp": "XP ที่ต้องใช้",
+            "power": "พลัง"
+        },
+        "level": "เลเวล {level}",
+        "furnace": "Furnace {level}"
+    },
+    "recordLine": "{heroClass} {rarity} รุ่น {generation} ข้อมูลอ้างอิงเท่านั้น ไม่มีอะไรที่นี่ถูกบันทึก"
+}

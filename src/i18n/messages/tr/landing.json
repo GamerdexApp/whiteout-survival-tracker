@@ -1,0 +1,165 @@
+{
+    "topBar": {
+        "navLabel": "Açılış sayfası",
+        "links": {
+            "how": "Nasıl çalışır",
+            "features": "Özellikler",
+            "privacy": "Verilerin",
+            "faq": "SSS"
+        }
+    },
+    "action": {
+        "createFirstChief": "İlk şefini oluştur",
+        "goToOverview": "Genel Bakış'a git",
+        "newChief": "Yeni şef",
+        "allChiefs": "Tüm şefler"
+    },
+    "hero": {
+        "label": "Whiteout Survival Tracker",
+        "title": "Her şefi takip et. Her yükseltmeyi planla.",
+        "description": "Whiteout Survival için ücretsiz bir yardımcı. Binalarını, kahramanlarını, ekipmanlarını ve araştırmalarını tek yerde tut, sıradaki yükseltmeyi planla ve Ana Etkinliklerini ilk günden geçmişe kadar yönet.",
+        "note": "Ücretsiz. Verilerin bu tarayıcıda kalır.",
+        "learnMore": "Daha fazla bilgi"
+    },
+    "continue": {
+        "label": "Tekrar hoş geldin",
+        "title": "Devam et: {name}",
+        "chiefCount": "{count, plural, one {Bu tarayıcıda {amount} şef kayıtlı} other {Bu tarayıcıda {amount} şef kayıtlı}}"
+    },
+    "how": {
+        "label": "Nasıl çalışır",
+        "title": "İlk şefinden etkinlik geçmişine dört adımda",
+        "steps": {
+            "create": {
+                "title": "Şef oluştur",
+                "description": "Ona bir ad ver. Sunucu numarası ve notlar isteğe bağlıdır."
+            },
+            "levels": {
+                "title": "Seviyelerini gir",
+                "description": "Furnace ve bina seviyelerini gir, sonra ilerledikçe kahramanları, ekipmanı ve araştırmayı doldur."
+            },
+            "plan": {
+                "title": "Yükseltmeleri planla",
+                "description": "Hedeflerin için gereken kaynakları, süreyi ve gücü, ayrıca nelerin eksik olduğunu gör."
+            },
+            "events": {
+                "title": "Etkinliklerini yönet",
+                "description": "Puanları say, skorları ve sıralamaları kaydet, sonra etkinliği Geçmiş'e kaydet."
+            }
+        }
+    },
+    "features": {
+        "label": "Neler yapabilirsin",
+        "title": "Planla, oyna, sonra geriye bak",
+        "open": "Aç: {page}",
+        "items": {
+            "plan": {
+                "title": "Her yükseltmeyi planla",
+                "description": "Binalar, Kahramanlar, Şef Ekipmanı ve Araştırma sayfalarındaki Plan panelinde bir hedef belirle. Gereken kaynakları, süreyi ve gücü hızlandırmalar ve Bonuslar sayfandaki bonuslarla birlikte gör.",
+                "page": "Binalar"
+            },
+            "coreEvents": {
+                "title": "Ana Etkinlik hesaplayıcıları",
+                "description": "SvS, Alliance Showdown, King of Icefield ve Hall of Chief. Her eylemin puanını say, uzman bonuslarını ekle, eşikleri ve sıralama ödüllerini kontrol et.",
+                "page": "Ana Etkinlikler"
+            },
+            "eventLog": {
+                "title": "Etkinlik kaydı ve günlük kontrol listesi",
+                "description": "Etkinliğin her günü için skoru ve sıralamayı kaydet. Kontrol listesi her gün yapabileceğin eylemleri sıralar.",
+                "page": "Ana Etkinlikler"
+            },
+            "history": {
+                "title": "Geçmiş: plan ve gerçekleşen",
+                "description": "Etkinliği bitirip kaydet. Planını yaptıklarınla karşılaştır ve planlanan her yükseltmeyi yapıldı ya da yapılmadı olarak gör.",
+                "page": "Geçmiş"
+            },
+            "research": {
+                "title": "Araştırma ağaçları",
+                "description": "Büyüme, Ekonomi, Savaş, War Academy ve T12 sekmeleri; ızgara ya da ağaç görünümünde, sunucu yaşına göre açılan içerikle.",
+                "page": "Araştırma"
+            },
+            "alliance": {
+                "title": "İttifak teknolojisi ve haritalar",
+                "description": "İttifak bayrağını, teknolojisini ve tesislerini takip et; Castle, stronghold ve fortress yerleşimini oku.",
+                "page": "İttifak"
+            }
+        }
+    },
+    "numbers": {
+        "title": "Takipçinin kapsadıkları",
+        "buildings": "maliyetleri ve süreleriyle bina",
+        "heroes": "kahraman",
+        "research": "araştırma teknolojisi",
+        "coreEvents": "Ana Etkinlik hesaplayıcısı",
+        "wiki": "wiki başvuru sayfası ve bir zaman çizelgesi"
+    },
+    "pages": {
+        "label": "Tüm sayfalar",
+        "title": "Oyundaki gibi gruplanmış",
+        "description": "Uygulamanın içindeki kenar çubuğuyla aynı sayfalar.",
+        "listLabel": "{group} sayfaları",
+        "general": "Genel"
+    },
+    "privacy": {
+        "label": "Verilerin",
+        "title": "Varsayılan olarak özel, istediğinde taşınabilir",
+        "items": {
+            "browser": {
+                "title": "Tarayıcında kalır",
+                "description": "Hesap açmana gerek yok. Şeflerin bu cihazdaki bu tarayıcıda kaydedilir."
+            },
+            "file": {
+                "title": "Tek bir kayıt dosyası",
+                "description": "Girdiğin her şey tarayıcıda tek bir kayıt dosyasında tutulur. Hızlı yüklenir ve hiçbir şey farklı yerlere bölünmez."
+            },
+            "chiefs": {
+                "title": "Birden çok şef",
+                "description": "Ana hesabını ve yan hesaplarını tut. Aralarında kenar çubuğundan geçiş yap."
+            },
+            "backup": {
+                "title": "Yedekle ve geri yükle",
+                "description": "Verilerini Ayarlar'dan bir dosyaya aktar ve başka bir tarayıcıda ya da cihazda içe aktar."
+            }
+        },
+        "backupLink": "Yedek ve veriyi aç"
+    },
+    "faq": {
+        "label": "Sorular mı var",
+        "title": "Sık sorulan sorular",
+        "items": {
+            "free": {
+                "question": "Ücretsiz mi?",
+                "answer": "Evet. Ödenecek ya da açılacak bir şey yok."
+            },
+            "data": {
+                "question": "Verilerim nerede?",
+                "answer": "Bu tarayıcıda, bu sitenin yerel depolamasında. Bir sunucuya gönderilmez. Bu sayfanın site verilerini silersen şefler de silinir, bu yüzden önce bir yedek dışa aktar."
+            },
+            "move": {
+                "question": "Başka bir cihaza nasıl geçerim?",
+                "answer": "Ayarlar'ı, sonra Yedek ve veri bölümünü aç ve bir yedek dosyası dışa aktar. Diğer cihazda aynı sayfayı aç, Ayarlar'da Yedek ve veri bölümüne git ve o dosyayı içe aktar."
+            },
+            "chiefs": {
+                "question": "Birden çok şefim olabilir mi?",
+                "answer": "Evet. Sınır yok. Her şefin kendi binaları, kahramanları, araştırması ve etkinlikleri vardır; aralarında kenar çubuğundan geçiş yaparsın."
+            },
+            "account": {
+                "question": "Oyundan bir hesaba ya da kayıt dosyasına ihtiyacım var mı?",
+                "answer": "Hayır. Seviyelerini kendin girersin. Maliyet, süre ve istatistik verileri takipçiyle birlikte gelir."
+            },
+            "official": {
+                "question": "Bu resmi bir uygulama mı?",
+                "answer": "Hayır. Resmi olmayan bir hayran aracıdır. Whiteout Survival veya Century Games ile bağlantılı değildir. Tam bildirim alt bilgidedir."
+            },
+            "wiki": {
+                "question": "Wiki nedir?",
+                "answer": "Binalar, kahramanlar, evcil hayvanlar, öğeler ve etkinlikler gibi oyun verileri için başvuru sayfaları ve bir sunucu zaman çizelgesi. Şef oluşturmadan okuyabilirsin."
+            }
+        }
+    },
+    "closing": {
+        "title": "Bugün takibe başla",
+        "description": "İlk şefin için bir ad yeter. Her şeyi sonradan değiştirebilirsin.",
+        "wiki": "Wiki'ye göz at"
+    }
+}

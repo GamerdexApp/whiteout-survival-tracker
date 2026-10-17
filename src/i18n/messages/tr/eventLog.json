@@ -1,0 +1,129 @@
+{
+    "title": "Etkinlik kaydı",
+    "events": {
+        "svs": "SvS, State of Power",
+        "showdown": "Alliance Showdown",
+        "king": "King of Icefield",
+        "hall": "Hall of Chief"
+    },
+    "tabs": {
+        "label": "Etkinlik kaydı görünümleri",
+        "current": "Mevcut etkinlik",
+        "history": "Geçmiş"
+    },
+    "dates": {
+        "title": "Etkinlik tarihleri",
+        "start": "Başlangıç",
+        "end": "Bitiş",
+        "days": "{count, plural, one {{amount} gün} other {{amount} gün}}",
+        "endBeforeStart": "Bitiş tarihi başlangıç tarihinden önce."
+    },
+    "results": {
+        "rank": "Sıra",
+        "alliance": "İttifak",
+        "score": "Skor",
+        "allianceShort": "İtt.",
+        "scoreOf": "{day}, skor",
+        "rankOf": "{day}, sıra",
+        "allianceOf": "{day}, ittifak sırası",
+        "plan": "Plan {total}",
+        "notStarted": "Başlamadı",
+        "opensLater": "Sonra açılır",
+        "empty": "Boş",
+        "locked": "Kilitli",
+        "lock": "Kilitle",
+        "unlock": "Kilidi aç",
+        "lockDay": "Kilitle: {day}",
+        "unlockDay": "Kilidi aç: {day}"
+    },
+    "cards": {
+        "svsDays": "Hazırlık günleri 1 - 5",
+        "days": "Günler",
+        "stages": "Aşamalar",
+        "rankHint": "Sıra, State sıralamandır. İttifak, ittifak sıralamandır.",
+        "battleTitle": "Savaş Aşaması",
+        "battleNote": "Battle skoru ve sırası ayrı bir sonuçtur. 1. günden 5. güne toplamına eklenmez."
+    },
+    "overall": {
+        "svsTitle": "Genel sonuç, 1. günden 5. güne",
+        "title": "Genel sonuç",
+        "rank": "Genel sıra",
+        "alliance": "Genel ittifak sırası",
+        "svsTotal": "Kilitli 1 - 5. günlerin toplamı",
+        "daysTotal": "Kilitli günlerin toplamı",
+        "stagesTotal": "Kilitli aşamaların toplamı",
+        "hint": "Kilitlemek, sen oynarken bir sayının değişmesini engeller. Kilitli sayıların kilidi açılabilir."
+    },
+    "footer": {
+        "close": "Kapat",
+        "endEvent": "Etkinliği bitir",
+        "readOnly": "Geçmiş salt okunur"
+    },
+    "end": {
+        "title": "{event} etkinliği bitirilsin ve geçmişe kaydedilsin mi?",
+        "dates": "{event}, {start} - {end}",
+        "noDates": "{event}, tarih girilmedi",
+        "lockedTotal": "Kilitli günlerin toplamı: {total}.",
+        "lockedTotalSvs": "Kilitli 1 - 5. günlerin toplamı: {total}.",
+        "noRanks": "Genel sıra ve ittifak sırası boş.",
+        "allLocked": "Her gün kilitli.",
+        "unlocked": "{count, plural, one {{amount} gün kilitli değil.} other {{amount} gün kilitli değil.}} Girildiği gibi kaydedilir, sayısı olmayan günler boş kalır.",
+        "unlockedList": "Kilitli olmayanlar: {days}.",
+        "what": "Ne olur",
+        "saves": "Tarihleri, günlük skorları ve sıraları ve genel sonucu, her günün planlanan toplamıyla birlikte Geçmiş'e kaydeder.",
+        "clearsCounts": "Her günün sayılarını temizler, böylece planın her günü 0'dan başlar.",
+        "clearsPlans": "Bu etkinliğe aktarılan planları ve kontrol listesi işaretlerini temizler.",
+        "keeps": "Yalnızca bu etkinlik temizlenir. Diğer sayfalardaki hedeflerin ve planların kalır.",
+        "cancel": "İptal",
+        "confirm": "Etkinliği bitir ve yenisini başlat",
+        "toastTitle": "Etkinlik bitti",
+        "toastMessage": "{event} Geçmiş'e kaydedildi. Etkinlik tarihsiz olarak yeniden başlar.",
+        "undo": "Geri al",
+        "lockedTotalStages": "Kilitli aşamaların toplamı: {total}."
+    },
+    "history": {
+        "intro": "{event} için bitirdiğin etkinlikler, en yeniden başlayarak. Etkinliği bitirmek kaydını buraya kaydeder, sonradan düzenlenemez, yalnızca kaldırılabilir. <link>Plan ve gerçekleşen ile planlanan yükseltmeler için Geçmiş'i aç.</link>",
+        "empty": "Henüz bitmiş etkinlik yok. Kaydını buraya kaydetmek için bir etkinliği bitir.",
+        "cardTitle": "{event}, {start} - {end}",
+        "cardNoDates": "{event}, tarih yok",
+        "ended": "Bitiş: {date}",
+        "svsTotal": "1. günden 5. güne",
+        "total": "Toplam skor",
+        "overallRank": "Genel sıra",
+        "allianceRank": "İttifak sırası",
+        "notSet": "Ayarlanmadı",
+        "showDays": "Günleri göster",
+        "hideDays": "Günleri gizle",
+        "remove": "Geçmişten kaldır",
+        "removedTitle": "Geçmişten kaldırıldı",
+        "removedMessage": "{event} Geçmiş'ten kaldırıldı.",
+        "undo": "Geri al",
+        "noValue": "-"
+    },
+    "checklist": {
+        "title": "Plan kontrol listesi",
+        "description": "{day}, yapılacaklar",
+        "dayChips": "Gün",
+        "castleTitle": "Castle pozisyonu için kayıt ol: {day}",
+        "castleBody": "Castle pozisyonları ertesi gün için bonus verir. Bonusun ilgili gün açık olması için bugün bitmeden kayıt ol: {day}.",
+        "castleCheck": "Kayıt yapıldı: {day}",
+        "done": "{total} işten {done} tamam",
+        "progress": "İşaretlenen eylemler",
+        "planLine": "Günün planı: {points} puan. Yalnızca sayısı 0'dan büyük eylemler listelenir. Sayılar Ana Etkinlikler sayfasından gelir.",
+        "empty": "Bu gün için sayısı olan bir eylem yok. Sayıları Ana Etkinlikler sayfasında ekle.",
+        "resources": "Kullanılacak kaynaklar",
+        "resourcesHint": "Günün harcadığı öğeler. Başlamadan önce stokunu kontrol et.",
+        "actions": "Eylemler",
+        "count": "x{count}",
+        "points": "{points} puan",
+        "clear": "İşaretleri temizle",
+        "close": "Kapat",
+        "dayTitle": "{day}: {name}"
+    },
+    "eventShort": {
+        "svs": "SvS",
+        "showdown": "Alliance Showdown",
+        "king": "King of Icefield",
+        "hall": "Hall of Chief"
+    }
+}

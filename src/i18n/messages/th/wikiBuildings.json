@@ -1,0 +1,71 @@
+{
+    "line": "{buildings} อาคารและ {facilities} สิ่งปลูกสร้าง ข้อมูลอ้างอิงเท่านั้น ไม่มีอะไรที่นี่ถูกบันทึกลงหัวหน้าของคุณ",
+    "list": {
+        "heading": "อาคารและสิ่งปลูกสร้าง",
+        "searchLabel": "ค้นหา",
+        "searchPlaceholder": "ค้นหาอาคารและสิ่งปลูกสร้าง",
+        "categoryLabel": "หมวดหมู่",
+        "categories": {
+            "all": "ทั้งหมด",
+            "Military": "Military",
+            "Inner City": "Inner City",
+            "Entertainment": "Entertainment"
+        },
+        "buildingMeta": "{category} สูงสุด {maxLevel} {count, plural, other {{amount} เลเวล}}",
+        "empty": "ไม่มีอาคารที่ตรงกับการค้นหา",
+        "categoryOption": "{category} {count}"
+    },
+    "detail": {
+        "levelsTotal": "เลเวลทั้งหมด",
+        "standardLevels": "เลเวลมาตรฐาน 1 ถึง 30",
+        "fireCrystalLevels": "เลเวล Fire Crystal 30-1 ถึง FC 10",
+        "maxLevel": "ป้ายเลเวลสูงสุด",
+        "rangeLabel": "ช่วงเลเวล",
+        "rangeOption": "{range} {count}",
+        "ranges": {
+            "all": "ทั้งหมด",
+            "standard": "1 ถึง 30",
+            "fc3": "30-1 ถึง FC 3",
+            "fc5": "FC 3-1 ถึง FC 5",
+            "fc8": "FC 5-1 ถึง FC 8",
+            "fc10": "FC 8-1 ถึง FC 10"
+        },
+        "tableLabel": "เลเวลของ {name}",
+        "levels": "เลเวล",
+        "totalTitle": "ที่ต้องใช้รวม {range} {count, plural, other {{amount} เลเวล}}",
+        "totalTime": "เวลาสร้างรวม"
+    },
+    "columns": {
+        "level": "เลเวล",
+        "cost": "ค่าใช้จ่าย",
+        "time": "เวลา",
+        "power": "พลัง",
+        "requires": "เงื่อนไข",
+        "stats": {
+            "rallyCapacity": "ความจุ Rally",
+            "marchCapacity": "ความจุเดินทัพ",
+            "trainingCapacity": "ความจุการฝึก",
+            "trainingSpeedBonusPercent": "ความเร็วฝึก",
+            "researchSpeedBonusPercent": "ความเร็ววิจัย",
+            "infirmaryCapacity": "ความจุ Infirmary",
+            "allyAssists": "การช่วยเหลือจากพันธมิตร",
+            "allyHelpTimeSeconds": "เวลาช่วยเหลือจากพันธมิตร",
+            "reinforceCapacity": "ความจุการเสริมกำลัง",
+            "storehouseCapacity": "ความจุคลัง",
+            "barricadeDurability": "ความทนทานของแนวป้องกัน",
+            "troopDeploymentCapacity": "ความจุการส่งกำลัง"
+        }
+    },
+    "cells": {
+        "none": "ไม่มี",
+        "requirement": "{building} {level}",
+        "pricePerItem": "{price} ต่อชิ้น",
+        "percent": "{value}%"
+    },
+    "facilities": {
+        "heading": "สิ่งปลูกสร้าง",
+        "meta": "ไม่มีเลเวล พลัง หรือค่าก่อสร้าง",
+        "unlock": "ปลดล็อกที่ Furnace เลเวล {level}",
+        "empty": "ไม่มีสิ่งปลูกสร้างที่ตรงกับการค้นหา"
+    }
+}

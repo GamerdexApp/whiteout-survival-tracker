@@ -1,0 +1,262 @@
+{
+    "page": {
+        "title": "Hero"
+    },
+    "view": {
+        "tabsLabel": "Hero",
+        "heroesTab": "Hero",
+        "gearTab": "Gear Hero",
+        "heroesSubline": "{chief} · {owned} daripada {total} dimiliki",
+        "gearSubline": "{chief} · {count, plural, other {{amount} set gear}}"
+    },
+    "common": {
+        "owned": "Dimiliki",
+        "ownedLabel": "{hero} dimiliki",
+        "starLabel": "Bintang {hero}",
+        "levelLabel": "Tahap {hero}",
+        "talentLabel": "Talent {hero}",
+        "skillLabel": "{hero} {skill}",
+        "weaponLevelLabel": "Tahap {weapon} {hero}",
+        "shardsOwnedLabel": "Serpihan {hero} dimiliki",
+        "starAndTier": "Bintang dan peringkat",
+        "level": "Tahap",
+        "noGoal": "Tiada matlamat",
+        "shards": "Serpihan",
+        "totalPower": "Jumlah kuasa",
+        "unknown": "Tidak diketahui",
+        "plan": "Rancang",
+        "generation": "Gen {generation}",
+        "exploration": "Exploration",
+        "expedition": "Expedition",
+        "talent": "Talent",
+        "maxLevelSuffix": "/ {max}",
+        "heroCount": "{count, plural, other {{amount} hero}}"
+    },
+    "goalText": {
+        "to": "ke {goal}"
+    },
+    "card": {
+        "summary": "{rarity} · {heroClass} · {generation}",
+        "talentRow": "Talent {name}",
+        "shardsOf": "daripada {needed}",
+        "enoughShards": " Serpihan cukup",
+        "shortBy": " Kurang {amount}",
+        "gearSet": "Set gear",
+        "notOwnedHint": "Hidupkan Dimiliki untuk menjejak bintang, tahap dan kemahiran.",
+        "details": "Butiran"
+    },
+    "tab": {
+        "stats": {
+            "generations": "Generasi dibuka",
+            "generationsValue": "0 hingga {max}",
+            "heroesOwned": "Hero dimiliki daripada yang dibuka",
+            "legendaryOwned": "Legendary dimiliki daripada yang dibuka",
+            "atMaxLevel": "Pada tahap 80",
+            "heroPower": "Kuasa hero",
+            "heroPowerUnknown": "Kuasa hero, {amount} Tidak diketahui ditinggalkan",
+            "withGoal": "Dengan matlamat"
+        },
+        "search": {
+            "label": "Cari hero",
+            "placeholder": "Cari {amount} hero mengikut nama"
+        },
+        "filters": "Penapis",
+        "maxOut": "Maks",
+        "status": "Menunjukkan {shown} daripada {total} hero. Generasi 0 hingga {max} dibuka pada chief ini. Matlamat hanya boleh dibaca di sini dan ditetapkan dalam Rancang.",
+        "empty": {
+            "title": "Tiada hero sepadan",
+            "description": "Ubah carian atau tetapkan semula penapis untuk melihat setiap hero.",
+            "reset": "Tetap semula"
+        },
+        "showMore": "Tunjuk lagi, {amount} {count, plural, other {hero}} lagi",
+        "toast": {
+            "notOwnedTitle": "{name} tidak dimiliki",
+            "notOwnedMessage": "Bintang, tahap dan kemahirannya disimpan untuk apabila anda menghidupkan Dimiliki semula.",
+            "undo": "Buat asal",
+            "maxedTitle": "Hero dimaksimumkan",
+            "maxedMessage": "{heroes} dikemas kini."
+        }
+    },
+    "filtersFlyout": {
+        "title": "Penapis",
+        "description": "Pilih hero yang ditunjukkan halaman",
+        "reset": "Tetap semula",
+        "show": "Tunjuk {heroes}",
+        "all": "Semua",
+        "generation": "Generasi",
+        "rarity": "Kelangkaan",
+        "heroClass": "Kelas",
+        "ownership": "Pemilikan",
+        "order": "Susunan",
+        "notSaved": "Penapis tidak disimpan.",
+        "rarities": {
+            "Legendary": "Legendary",
+            "Epic": "Epic",
+            "Rare": "Rare"
+        },
+        "classes": {
+            "Infantry": "Infantry",
+            "Lancer": "Lancer",
+            "Marksman": "Marksman"
+        },
+        "ownershipOptions": {
+            "all": "Semua",
+            "owned": "Dimiliki",
+            "notOwned": "Tidak dimiliki"
+        },
+        "orderOptions": {
+            "owned": "Dimiliki dahulu, kemudian generasi terkini",
+            "generation": "Generasi, terkini dahulu",
+            "name": "Nama, A hingga Z",
+            "power": "Jumlah kuasa, tertinggi dahulu"
+        }
+    },
+    "maxOut": {
+        "title": "Maksimumkan hero",
+        "scopeLabel": "Hero untuk dimaksimumkan",
+        "scope": {
+            "owned": "Hero dimiliki",
+            "unlocked": "Semua hero dibuka, ditanda sebagai dimiliki",
+            "selected": "Pilih hero, ditanda sebagai dimiliki"
+        },
+        "searchLabel": "Cari hero untuk dipilih",
+        "searchPlaceholder": "Cari hero mengikut nama",
+        "selectShown": "Pilih yang ditunjukkan",
+        "clear": "Kosongkan",
+        "ownedTag": "dimiliki",
+        "starAndTier": "Bintang dan peringkat ke 5.0",
+        "level": "Tahap ke 80",
+        "levelHint": "Matikan apabila kemahiran sudah maksimum dan tahap hero lama kekal pada 1.",
+        "skills": "Kemahiran ke 5",
+        "skillsHint": "Exploration, Expedition dan Talent.",
+        "weapon": "Senjata eksklusif ke 10",
+        "note": "Apa-apa yang dimatikan kekal seperti sedia ada. Bilangan serpihan dan matlamat tidak diubah. Anda boleh buat asal selepas menggunakannya.",
+        "cancel": "Batal",
+        "apply": "Maksimumkan {heroes}"
+    },
+    "flyout": {
+        "fallbackTitle": "Hero",
+        "description": "{rarity} {heroClass}, generasi {generation}",
+        "done": "Selesai",
+        "status": {
+            "title": "Status",
+            "furnaceNeeded": "Furnace diperlukan untuk tahap {level}",
+            "met": "Dipenuhi",
+            "needsFurnace": "Perlu Furnace {required}",
+            "levelPower": "Kuasa tahap",
+            "skillPower": "Kuasa kemahiran",
+            "starPower": "Kuasa bintang",
+            "weaponPower": "Kuasa senjata",
+            "totalPower": "Jumlah kuasa",
+            "note": "Kuasa mengira tahap, kemahiran, label bintang dan tahap senjata."
+        },
+        "skills": {
+            "title": "Kemahiran",
+            "aside": "Lima tahap bagi setiap kemahiran",
+            "toLevel": "Ke {level}: {manuals} manual",
+            "needsStar": "Perlu bintang {star}",
+            "starMet": "Bintang {star} dipenuhi",
+            "talentTop": "Talent berada pada tahap tertingginya.",
+            "talentNeedsStar": "Tahap {level} perlu bintang {star}",
+            "talentStarMet": "Tahap {level}: bintang {star} dipenuhi"
+        },
+        "weapon": {
+            "title": "Senjata eksklusif: {name}",
+            "level": "Tahap senjata",
+            "widgetsForLevel": "Widget untuk tahap {level}",
+            "widgetsForLevels": "Widget untuk tahap {from} hingga {to}",
+            "expeditionBonus": "Bonus Expedition",
+            "bonus": "Lethality {lethality}% · Health {health}%",
+            "power": "Kuasa senjata",
+            "unlocksAt": "Dibuka pada tahap senjata {level}"
+        },
+        "shards": {
+            "title": "Serpihan",
+            "owned": "Serpihan dimiliki",
+            "goal": "Matlamat",
+            "neededForGoal": "Diperlukan untuk matlamat {goal}",
+            "enough": "Serpihan cukup",
+            "shortBy": "Kurang",
+            "yes": "Ya",
+            "sources": "Sumber serpihan"
+        },
+        "stats": {
+            "title": "Statistik pada tahap 80",
+            "explorationAt": "Exploration pada {stars}",
+            "expeditionAt": "Expedition pada {stars}",
+            "explorationFull": "Exploration pada 5.0",
+            "expeditionFull": "Expedition pada 5.0",
+            "exploration": "Atk {attack} · Def {defense} · HP {health}",
+            "expedition": "Atk {attack}% · Def {defense}%",
+            "estimate": "Anggaran"
+        }
+    },
+    "plan": {
+        "title": "Rancang Hero",
+        "description": "Serpihan, manual kemahiran dan Widget dari semasa ke matlamat",
+        "saved": "Pelan disimpan {date}",
+        "close": "Tutup",
+        "save": "Simpan pelan",
+        "noHeroes": "Belum ada hero dalam pelan. Tambah hero yang dimiliki di atas, kemudian naikkan matlamatnya.",
+        "add": {
+            "title": "Tambah hero",
+            "allIn": "Setiap hero yang dimiliki sudah ada dalam pelan. Hidupkan Dimiliki untuk merancang hero.",
+            "selectLabel": "Hero untuk ditambah",
+            "button": "Tambah hero"
+        },
+        "block": {
+            "remove": "Buang {hero} daripada pelan",
+            "starTo": "{stars} ke",
+            "starGoal": "Matlamat bintang {hero}",
+            "levelTo": "{current} ke",
+            "goalLabel": "Matlamat {name} {hero}",
+            "note": "Nilai semasa datang daripada hero pada halaman. Ubah di sana."
+        },
+        "unmet": {
+            "title": "Tahap kemahiran perlukan bintang lebih tinggi.",
+            "item": "{hero}: {skill} tahap {level} perlu bintang {star}",
+            "message": "{items}. Naikkan matlamat bintang atau turunkan matlamat kemahiran."
+        },
+        "shardsUsed": "Serpihan digunakan: {own} daripada hero dan {general} am, {total} semuanya. Hero menggunakan serpihannya sendiri dahulu.",
+        "result": {
+            "title": "Hasil, {steps} langkah",
+            "widgets": "Widget",
+            "weaponSkills": "{count, plural, other {{amount} kemahiran senjata dibuka}}",
+            "note": "Kuasa bukan sebahagian daripada Rancang Hero. Kalkulator tidak memberi masa dan tidak menerima input kelajuan.",
+            "heads": {
+                "hero": "Hero",
+                "starSteps": "Langkah bintang",
+                "skillLevels": "Tahap kemahiran",
+                "shards": "Serpihan",
+                "widgets": "Widget"
+            },
+            "tableLabel": "Jadual hasil pelan"
+        },
+        "events": {
+            "svs": "SvS State of Power",
+            "allianceShowdown": "Alliance Showdown",
+            "kingOfIcefield": "King of Icefield",
+            "hallOfChief": "Hall of Chief"
+        }
+    },
+    "export": {
+        "button": "Eksport ke Acara Utama",
+        "nothing": "Pelan tidak memerlukan serpihan atau Widget untuk dieksport.",
+        "shardsGroup": "untuk serpihan",
+        "widgetsGroup": "untuk Widget",
+        "widgets": "Widget",
+        "manualsReason": "Tiada acara yang memarkahkan manual kemahiran",
+        "shards": {
+            "Legendary": "Mythic Hero Shards",
+            "Epic": "Epic Hero Shards",
+            "Rare": "Rare Hero Shards"
+        }
+    },
+    "service": {
+        "generalShard": {
+            "Legendary": "Mythic General Hero Shard",
+            "Epic": "Epic General Hero Shard",
+            "Rare": "Rare General Hero Shard"
+        }
+    }
+}
