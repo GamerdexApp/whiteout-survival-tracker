@@ -18,7 +18,6 @@ import type {
   Playthrough,
 } from "@/types/app";
 import {
-  ALLIANCE_SHOWDOWN_TRUCK_ACTION,
   BALDUR_ID,
   BALDUR_SKILL,
   CORE_EVENT_IDS,
@@ -99,7 +98,6 @@ export interface ScoringRow {
   action: string;
   points: number;
   itemId?: string;
-  noBonus: boolean;
 }
 
 export const scoringRowsOf = (
@@ -113,8 +111,6 @@ export const scoringRowsOf = (
     action: row.action,
     points: row.points,
     itemId: row.itemId,
-    noBonus:
-      event === "showdown" && ALLIANCE_SHOWDOWN_TRUCK_ACTION.test(row.action),
   }));
 
 export const dayNoteOf = (
@@ -309,9 +305,15 @@ export const calculateEvent = (
       usage,
       level === null ? {} : { dawnHymnLevel: level },
     );
+    // The package leaves the truck actions out of Dawn Hymn. In the game the percent applies to
+    // every action, so the bonus is taken from the whole day.
+    const days = result.days.map((day) => {
+      const bonus = Math.round((day.base * result.dawnHymnBonusPercent) / 100);
+      return toDay({ ...day, bonus, total: day.base + bonus });
+    });
     return {
-      days: result.days.map(toDay),
-      event: result.event,
+      days,
+      event: sumScores(days),
       bonusPercent: result.dawnHymnBonusPercent,
     };
   }

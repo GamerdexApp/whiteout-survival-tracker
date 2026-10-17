@@ -73,11 +73,6 @@ export function ActionTable({ chief, event, day, result, onCount }: ActionTableP
 						>
 							<div className="col-span-3 flex flex-col gap-1 lg:col-span-1">
 								<span>{row.action}</span>
-								{row.noBonus && (
-									<span className="border-line text-muted w-fit rounded-full border-[1.5px] px-2 font-mono text-[11px]">
-										{t("noDawnHymn")}
-									</span>
-								)}
 							</div>
 							<span className="text-muted lg:text-ink font-mono text-sm lg:text-right lg:text-base">
 								{formatNumber(row.points)}

@@ -1,5 +1,4 @@
 import {
-  ALLIANCE_SHOWDOWN_TRUCK_ACTION,
   eventRankingTables,
   events,
   SVS_BATTLE_DAY_ID,
@@ -7,7 +6,7 @@ import {
 import type { GameEvent } from "whiteout-survival-data";
 import type { CoreEventId } from "@/types/app";
 
-export { ALLIANCE_SHOWDOWN_TRUCK_ACTION, SVS_BATTLE_DAY_ID };
+export { SVS_BATTLE_DAY_ID };
 
 export const CORE_EVENT_IDS: CoreEventId[] = [
   "svs",
