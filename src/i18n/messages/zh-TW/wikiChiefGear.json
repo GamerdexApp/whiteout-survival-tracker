@@ -1,0 +1,56 @@
+{
+    "line": "{rows} 列裝備、{slots} 個欄位和 {rates} 種兌換比率。僅供參考，這裡不會儲存到你的領主。",
+    "slots": {
+        "heading": "裝備欄位",
+        "rarities": "{first} 到 {last}圖示",
+        "detailLine": "增益{troopType}部隊。每種稀有度一個圖示。"
+    },
+    "table": {
+        "heading": "裝備表",
+        "meta": "{rows} 列，{tiers} 個階級",
+        "searchLabel": "搜尋",
+        "searchPlaceholder": "搜尋 {rows} 列裝備",
+        "tierLabel": "階級",
+        "allTiers": "所有階級",
+        "starsLabel": "星級",
+        "allStars": "所有星級",
+        "starsOption": "{stars} 星",
+        "empty": "沒有符合篩選的裝備列。"
+    },
+    "columns": {
+        "row": "列",
+        "materials": "材料",
+        "stats": "屬性",
+        "power": "戰力",
+        "score": "分數",
+        "capacity": "出兵容量"
+    },
+    "cells": {
+        "none": "無",
+        "percent": "{value}%"
+    },
+    "tiers": {
+        "heading": "階級",
+        "meta": "{tiers} 個階級標示",
+        "tier": "階級",
+        "rows": "列數",
+        "stats": "屬性，由首列到末列",
+        "power": "末列戰力",
+        "statsRange": "{first}% 到 {last}%"
+    },
+    "exchange": {
+        "heading": "材料兌換比率",
+        "exchange": "兌換",
+        "from": "從",
+        "to": "換成",
+        "weeklyLimit": "每週上限"
+    },
+    "setBonus": {
+        "heading": "套裝加成",
+        "meta": "{tiers} 個階級",
+        "hint": "穿戴 3 件可獲得防禦加成，穿戴 6 件可獲得攻擊加成。百分比取決於你所穿戴裝備的階級，適用於{types}部隊。",
+        "pieceSet": "{pieces} 件套裝",
+        "tier": "階級",
+        "pieces": "{pieces} 件，{stat}"
+    }
+}

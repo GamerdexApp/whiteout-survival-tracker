@@ -1,0 +1,46 @@
+{
+    "line": "{missions} nhiệm vụ hằng ngày trong game với mọi cấp đã biết, phần thưởng thanh hoạt động và các việc thường ngày.",
+    "missionCount": "{count, plural, other {{amount} nhiệm vụ}}",
+    "tabs": {
+        "label": "Hằng ngày",
+        "missions": "Nhiệm vụ trong game",
+        "routine": "Việc thường ngày"
+    },
+    "totals": {
+        "title": "Tổng Độ hoạt động",
+        "missions": "Nhiệm vụ trong game",
+        "levelOne": "Cấp 1 của mọi nhiệm vụ",
+        "allLevels": "Mọi cấp đã biết",
+        "topReward": "Cấp thưởng cao nhất",
+        "explanation": "Một nhiệm vụ cộng Độ hoạt động của mọi cấp đã xong, đến cấp đã đạt. Cấp 1 của cả {missions} nhiệm vụ là {levelOne} Độ hoạt động. Mọi cấp đã biết của cả {missions} nhiệm vụ là {allLevels}."
+    },
+    "bar": {
+        "title": "Phần thưởng thanh hoạt động",
+        "activeness": "Độ hoạt động",
+        "rewards": "Phần thưởng"
+    },
+    "missions": {
+        "title": "Nhiệm vụ trong game",
+        "summary": "{missions}, {levels}",
+        "levelCount": "{count, plural, other {{amount} cấp đã biết}}",
+        "level": "Cấp",
+        "task": "Việc",
+        "target": "Mục tiêu",
+        "activeness": "Độ hoạt động",
+        "otherRewards": "Phần thưởng khác",
+        "levelLabel": "Cấp {level}",
+        "sumOne": "1 cấp: {total} Độ hoạt động",
+        "sumMany": "{count} cấp: {parts} = {total} Độ hoạt động",
+        "plus": "+{amount}",
+        "noOtherRewards": "Không có"
+    },
+    "routine": {
+        "title": "Việc thường ngày",
+        "count": "{count, plural, other {{amount} việc}}"
+    },
+    "missing": {
+        "title": "Chưa có trong dữ liệu",
+        "levels": "Các cấp nhiệm vụ khác. Mỗi nhiệm vụ có từ {min} đến {max} cấp đã biết. Các cấp cao hơn chưa có trong gói dữ liệu, nên tổng có thể tăng.",
+        "reset": "Giờ đặt lại hằng ngày. Gói dữ liệu không có. Công cụ dùng mặc định riêng là {time} UTC và ghi rõ đó là mặc định của ứng dụng."
+    }
+}

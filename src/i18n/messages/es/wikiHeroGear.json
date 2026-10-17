@@ -1,0 +1,45 @@
+{
+  "line": "{enhancement} niveles de refuerzo, {empowerment} niveles de potenciación, {mastery} filas de forja de maestría y {stats} entradas de estadísticas. Solo referencia, aquí no se guarda nada.",
+  "tabsLabel": "Tablas de equipo de héroe",
+  "tabs": {
+    "enhancement": "Refuerzo",
+    "empowerment": "Potenciación",
+    "mastery": "Forja de maestría",
+    "stats": "Estadísticas"
+  },
+  "levels": {
+    "columns": {
+      "level": "Nivel",
+      "cost": "Coste",
+      "power": "Poder",
+      "gain": "Aumento sobre el anterior",
+      "milestonePower": "Poder del hito",
+      "stage": "Etapa",
+      "statsUp": "Subida de estadísticas"
+    },
+    "none": "Ninguno",
+    "percent": "{value}%",
+    "gainValue": "+{value}"
+  },
+  "stats": {
+    "slot": "Ranura",
+    "troopType": "Tipo de tropa",
+    "troop": {
+      "infantry": "Infantry",
+      "lancer": "Lancer",
+      "marksman": "Marksman"
+    },
+    "note": "Los niveles de estadísticas 101 a 200 son los niveles de potenciación 1 a 100.",
+    "columns": {
+      "level": "Nivel",
+      "combat": "{stat}",
+      "health": "Salud",
+      "percent": "{stat}"
+    },
+    "level": "Nivel {level}",
+    "empowermentLevel": "Nivel {level}, potenciación {empowerment}",
+    "milestonesTitle": "Hitos",
+    "milestone": "Nivel de potenciación {level}, {event}: {stat}",
+    "percentValue": "{value}%"
+  }
+}

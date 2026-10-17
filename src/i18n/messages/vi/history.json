@@ -1,0 +1,102 @@
+{
+    "page": { "title": "Lịch sử" },
+    "events": {
+        "svs": "SvS",
+        "showdown": "Alliance Showdown",
+        "king": "King of Icefield",
+        "hall": "Hall of Chief"
+    },
+    "title": {
+        "dated": "{event}, {start} đến {end}",
+        "undated": "{event}"
+    },
+    "ended": "Kết thúc {date}",
+    "tabs": { "label": "Lọc theo sự kiện", "all": "Mọi sự kiện" },
+    "list": {
+        "intro": "Các sự kiện bạn đã kết thúc từ Nhật ký sự kiện, mới nhất trước. Điểm là Ngày 1 đến 5 với SvS, còn Giai đoạn Chiến đấu được tách riêng. Mở một sự kiện để xem kế hoạch so với thực tế và các nâng cấp đã lên kế hoạch.",
+        "event": "Sự kiện",
+        "plan": "Kế hoạch",
+        "actual": "Thực tế",
+        "diff": "Chênh",
+        "rank": "Hạng",
+        "alliance": "Liên minh",
+        "rankLine": "Hạng {rank}, liên minh {alliance}",
+        "open": "Mở",
+        "openEvent": "Mở {name}",
+        "none": "Chưa có sự kiện nào đã kết thúc thuộc loại này.",
+        "diffWithPercent": "{amount} ({percent}%)"
+    },
+    "empty": {
+        "title": "Chưa có sự kiện",
+        "description": "Các sự kiện bạn kết thúc từ Nhật ký sự kiện trong Sự kiện chính được lưu ở đây cùng kế hoạch và kết quả.",
+        "action": "Mở Sự kiện chính"
+    },
+    "notFound": {
+        "title": "Không tìm thấy sự kiện",
+        "description": "Sự kiện này không có trong lịch sử của thủ lĩnh đang dùng. Có thể nó đã bị xóa, hoặc sự kiện đang bị ẩn trong Sự kiện chính.",
+        "action": "Quay lại Lịch sử"
+    },
+    "unknown": "Chưa đặt",
+    "belowPlan": "Dưới kế hoạch",
+    "atOrAbovePlan": "Bằng hoặc trên kế hoạch",
+    "breadcrumb": { "label": "Đường dẫn" },
+    "tiles": {
+        "plan": "Kế hoạch",
+        "actual": "Thực tế",
+        "difference": "Chênh lệch",
+        "overall": "Tổng thể",
+        "alliance": "Liên minh",
+        "days": "Ngày 1 đến 5",
+        "rank": "Hạng",
+        "rankDays": "Hạng, Ngày 1 đến 5",
+        "percent": "{percent}%"
+    },
+    "compare": {
+        "title": "Kế hoạch so với thực tế",
+        "titleDays": "Kế hoạch so với thực tế, Ngày 1 đến 5",
+        "day": "Ngày",
+        "plan": "Kế hoạch",
+        "actual": "Thực tế",
+        "diff": "Chênh",
+        "rank": "Hạng",
+        "ally": "LM",
+        "total": "Tổng",
+        "share": "{percent}% kế hoạch",
+        "shareLine": "{percent}% kế hoạch, hạng {rank}, LM {ally}",
+        "barLabel": "{day}, thực tế so với kế hoạch"
+    },
+    "battle": {
+        "title": "Giai đoạn Chiến đấu",
+        "note": "Điểm và hạng riêng. Không cộng vào tổng Ngày 1 đến 5."
+    },
+    "upgrades": {
+        "title": "Nâng cấp đã lên kế hoạch",
+        "titleCount": "Nâng cấp đã lên kế hoạch, {count}",
+        "summary": "Các nâng cấp trong kế hoạch của sự kiện này, nhóm theo loại. Đã xong {done} trên {count}.",
+        "summaryUnchecked": "Các nâng cấp trong kế hoạch của sự kiện này, nhóm theo loại.",
+        "none": "Chưa có kế hoạch nào được xuất sang sự kiện này, nên không có nâng cấp đã lên kế hoạch để hiển thị.",
+        "groupTitle": "{name}, {count}",
+        "groupStats": "Xong {done} trên {count}, sức mạnh +{power}, Fire Crystals {fireCrystals}",
+        "groupStatsUnchecked": "Sức mạnh +{power}, Fire Crystals {fireCrystals}",
+        "power": "+{power} sức mạnh",
+        "plannedDay": "Dự kiến {day}",
+        "done": "Xong",
+        "notDone": "Chưa xong",
+        "levelsFrom": "{from} đến {to}",
+        "levelsTo": "đến {to}",
+        "levelsResearchFrom": "Cấp {from} đến {to}",
+        "levelsResearchTo": "đến cấp {to}",
+        "costAmount": "{amount} {name}"
+    },
+    "pages": {
+        "buildings": "Công trình",
+        "research": "Nghiên cứu",
+        "chiefGear": "Trang bị Thủ lĩnh",
+        "chiefCharms": "Bùa Thủ lĩnh",
+        "heroGear": "Trang bị Anh hùng",
+        "heroes": "Anh hùng",
+        "pets": "Thú cưng",
+        "experts": "Chuyên gia",
+        "troops": "Quân đội"
+    }
+}

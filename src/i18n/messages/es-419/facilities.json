@@ -1,0 +1,86 @@
+{
+  "page": {
+    "title": "Instalaciones"
+  },
+  "view": {
+    "subline": "{chief} · {facilities} instalaciones del mapa, castillo, {strongholds} baluartes y {fortresses} fortalezas"
+  },
+  "summary": {
+    "owned": "Instalaciones propias",
+    "ownedValue": "{owned} de {total}",
+    "strongholds": "Baluartes, referencia",
+    "fortresses": "Fortalezas, referencia",
+    "castle": "Castillo, referencia"
+  },
+  "tabs": {
+    "label": "Vistas de instalaciones",
+    "facilities": "Instalaciones",
+    "fortresses": "Fortalezas",
+    "map": "Mapa"
+  },
+  "show": {
+    "label": "Mostrar",
+    "all": "Todas",
+    "owned": "Propias",
+    "notOwned": "No propias"
+  },
+  "card": {
+    "owned": "{count} propias",
+    "level": "Nivel {level}",
+    "ownedSwitch": "Propia",
+    "switchLabel": "{facility} nivel {level} propia",
+    "booster": "Potenciador",
+    "injured": "Heridos graves",
+    "losses": "Bajas",
+    "ownLimit": "Límite propio {limit}. {spots} {spotWord} en el mapa.",
+    "spot": "lugar",
+    "spots": "lugares"
+  },
+  "empty": {
+    "title": "Nada que mostrar",
+    "description": "Ningún nivel de instalación coincide con este filtro.",
+    "reset": "Mostrar todas"
+  },
+  "fortress": {
+    "kind": {
+      "castle": "Castillo",
+      "stronghold": "Baluarte",
+      "fortress": "Fortaleza"
+    },
+    "coordinates": "x {x}, y {y}",
+    "rewardsHeading": "Recompensa por fase",
+    "phase": "Fase {phase}",
+    "noRewards": "El castillo no tiene recompensas en el paquete de datos.",
+    "referenceNote": "Solo referencia. El castillo, los baluartes y las fortalezas cambian cada semana, así que nada de aquí se posee ni se registra.",
+    "kindLabel": "Tipo",
+    "allKinds": "Todos los tipos",
+    "rewardLabel": "Recompensa",
+    "allRewards": "Todas las recompensas",
+    "shown": "{shown} de {total} estructuras mostradas",
+    "empty": "Ninguna estructura coincide con los filtros.",
+    "reset": "Restablecer filtros",
+    "filters": "Filtros",
+    "filtersTitle": "Filtros",
+    "filtersDescription": "Filtra las estructuras por tipo y recompensa",
+    "done": "Mostrar {count}"
+  },
+  "map": {
+    "highlight": "Resaltar una instalación",
+    "layers": "Capas",
+    "layerFacilities": "Instalaciones",
+    "layerStrongholds": "Baluartes",
+    "layerFortresses": "Fortalezas",
+    "spotsHeading": "Lugares de instalaciones, {count} en total",
+    "spotLegend": "{name} ({count})",
+    "codeHint": "El dígito después del código es el nivel. Por ejemplo, Co1 es Construction nivel 1. La instalación resaltada aparece rellena.",
+    "structures": "Estructuras",
+    "castleStrongholdLegend": "Castillo (1) y baluartes S1 a S4 ({count})",
+    "fortressLegend": "Fortaleza 1 a {count}",
+    "selected": "Seleccionado en el mapa",
+    "selectedNone": "Selecciona un castillo, baluarte o fortaleza en el mapa.",
+    "mapLabel": "Mapa de la alianza",
+    "note": "Esquema del mapa de la alianza. Las posiciones usan la x y la y del paquete de datos en una cuadrícula de {size} por {size}, y un cuadro de la cuadrícula mide {step}. Un lugar es donde puede aparecer una instalación, por eso las instalaciones propias no se marcan. El paquete de datos no incluye arte del terreno.",
+    "spotLabel": "{name} nivel {level}, x {x}, y {y}",
+    "structureLabel": "{name}, x {x}, y {y}"
+  }
+}

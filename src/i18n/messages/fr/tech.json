@@ -1,0 +1,98 @@
+{
+  "page": {
+    "title": "Technologie"
+  },
+  "view": {
+    "subline": "{chief} · {count} nœuds de technologie d'alliance en Croissance, Territoire et Combat"
+  },
+  "summary": {
+    "maxed": "Au max",
+    "inProgress": "En cours",
+    "notStarted": "Non commencés",
+    "locked": "Verrouillés"
+  },
+  "status": {
+    "maxed": "Au max",
+    "inProgress": "En cours",
+    "notStarted": "Non commencé",
+    "locked": "Verrouillé"
+  },
+  "tabs": {
+    "label": "Catégories de technologie"
+  },
+  "categories": {
+    "Growth": "Croissance",
+    "Territory": "Territoire",
+    "Battle": "Combat"
+  },
+  "filters": {
+    "search": "Rechercher",
+    "searchLabel": "Rechercher des nœuds de technologie",
+    "searchPlaceholder": "Nom du nœud",
+    "tier": "Palier",
+    "allTiers": "Tous les paliers",
+    "tierOption": "Palier {tier}",
+    "status": "Statut",
+    "allStatuses": "Tous",
+    "button": "Recherche et filtres",
+    "title": "Recherche et filtres",
+    "description": "Trouvez des nœuds de technologie par nom, palier et statut",
+    "reset": "Réinitialiser les filtres",
+    "done": "Afficher {count}",
+    "shown": "{shown} nœuds affichés sur {total}"
+  },
+  "table": {
+    "node": "Nœud",
+    "level": "Niveau",
+    "bonus": "Bonus",
+    "cost": "Coût du niveau suivant",
+    "time": "Durée",
+    "needs": "Prérequis"
+  },
+  "node": {
+    "tierDescription": "Palier {tier} · {description}",
+    "levelLabel": "Niveau de {name}",
+    "levelOf": "{level} / {max}",
+    "open": "Ouvrir {name}",
+    "bonusOf": "{now} sur {max}",
+    "bonusNone": "Aucun pour l'instant, max {max}",
+    "noBonus": "Aucun bonus",
+    "maxed": "Au max",
+    "noTime": "Aucune durée",
+    "readyToUpgrade": "Prêt à améliorer",
+    "nothingNeeded": "Rien de nécessaire",
+    "needsPart": "Nécessite {name} niveau {level}",
+    "costLine": "{name} {amount}",
+    "lockedHint": "Verrouillé jusqu'à {names}",
+    "requirementPart": "{name} niveau {level}"
+  },
+  "flyout": {
+    "title": "{name}",
+    "subtitle": "{category}, palier {tier}. {description}",
+    "close": "Fermer",
+    "level": "Niveau",
+    "bonusNow": "Bonus actuel",
+    "needsFor": "Prérequis pour le niveau {level}",
+    "needsNothing": "Rien de nécessaire.",
+    "needsLine": "Nécessite le niveau {need}, vous avez le niveau {have}",
+    "met": "Rempli",
+    "notMet": "Non rempli",
+    "requiredBy": "Requis par",
+    "requiredByNone": "Aucun autre nœud n'a besoin de celui-ci.",
+    "requiredByLine": "{category}, palier {tier}, à partir du niveau {from}, nécessite {name} niveau {need}",
+    "allLevels": "Tous les niveaux",
+    "levelRow": "Niveau {level}",
+    "done": "Fait",
+    "next": "Suivant",
+    "later": "Plus tard",
+    "remaining": "Restant jusqu'au max",
+    "derived": "Calculé",
+    "remainingNone": "Il ne reste rien. Ce nœud est au max.",
+    "remainingLine": "{cost}",
+    "remainingTime": "{time}"
+  },
+  "empty": {
+    "title": "Aucun nœud ne correspond",
+    "description": "Modifiez la recherche ou les filtres pour voir plus de nœuds."
+  }
+}

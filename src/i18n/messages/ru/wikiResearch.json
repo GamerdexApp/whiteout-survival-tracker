@@ -1,0 +1,77 @@
+{
+  "line": "Узлов исследований: {nodes}, вкладок: {tabs}. Только справка, здесь ничего не сохраняется.",
+  "tabsLabel": "Категории исследований",
+  "tabs": {
+    "battle": "Бой",
+    "growth": "Рост",
+    "economy": "Экономика",
+    "t11": "T11",
+    "t12": "T12"
+  },
+  "search": {
+    "label": "Поиск",
+    "placeholder": "Поиск среди узлов исследований: {amount}"
+  },
+  "filters": {
+    "tier": "Ступень",
+    "allTiers": "Все",
+    "tierOption": "Ступень {tier}",
+    "troop": "Тип войск",
+    "allTroops": "Все",
+    "troops": {
+      "Infantry": "Infantry",
+      "Marksman": "Marksman",
+      "Lancer": "Lancer"
+    },
+    "data": "Данные",
+    "dataOptions": {
+      "all": "Все узлы",
+      "placeholders": "Заглушки",
+      "missingTime": "Нет времени"
+    }
+  },
+  "list": {
+    "title": "Узлы",
+    "empty": "Подходящих узлов исследований нет.",
+    "emptyHint": "Очистите поиск или фильтр.",
+    "columns": {
+      "node": "Узел",
+      "tier": "Ступень",
+      "levels": "Уровни",
+      "bonus": "Бонус на уровне 1",
+      "time": "Время, уровень 1",
+      "power": "Мощь"
+    },
+    "mobileMeta": "{category}, ступень {tier}, {levels}",
+    "count": "{count, plural, one {{amount} узел} few {{amount} узла} many {{amount} узлов} other {{amount} узла}}"
+  },
+  "levels": "{count, plural, one {{amount} уровень} few {{amount} уровня} many {{amount} уровней} other {{amount} уровня}}",
+  "detail": {
+    "columns": {
+      "level": "Уровень",
+      "requires": "Требуется",
+      "cost": "Цена",
+      "time": "Время",
+      "bonus": "Бонус",
+      "power": "Мощь"
+    },
+    "level": "Уровень {level}",
+    "none": "Нет",
+    "placeholderNote": "Этот узел это заглушка. В пакете для него нет цены и бонуса.",
+    "requirement": {
+      "building": "{name} {level}",
+      "research": "{name} уровня {level}"
+    },
+    "levelsTitle": "Уровни"
+  },
+  "view": {
+    "label": "Вид",
+    "list": "Список",
+    "tree": "Дерево"
+  },
+  "tree": {
+    "region": "Дерево исследований: {tab}",
+    "openNode": "{name}, {levels}",
+    "tier": "T{tier}"
+  }
+}

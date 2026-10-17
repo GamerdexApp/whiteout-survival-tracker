@@ -1,0 +1,26 @@
+{
+    "line": "{types} Truppentypen mit je {tiers} Tiers. Nur Referenz, hier wird nichts bei deinem Häuptling gespeichert.",
+    "tiers": {
+        "heading": "Truppen-Tiers",
+        "meta": "{types} Typen mal {tiers} Tiers = {rows} Zeilen",
+        "typeLabel": "Truppentyp",
+        "tableLabel": "Tiers {type}"
+    },
+    "detail": {
+        "heading": "Eintragsdetails",
+        "meta": "Tier {tier}, alle drei Typen",
+        "tableLabel": "Tier {tier} nach Truppentyp"
+    },
+    "columns": {
+        "tier": "Tier",
+        "type": "Typ",
+        "cost": "Kosten pro Truppe",
+        "topCost": "Tier-Kosten",
+        "time": "Trainingszeit",
+        "promotion": "Beförderungskosten"
+    },
+    "cells": {
+        "tier": "Tier {tier}",
+        "none": "Keine"
+    }
+}

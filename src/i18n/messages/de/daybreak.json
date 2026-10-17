@@ -1,0 +1,114 @@
+{
+    "page": {
+        "title": "Daybreak Island"
+    },
+    "view": {
+        "subline": "Lumber Camp, Tree of Life und deine Dekorationen."
+    },
+    "locked": {
+        "title": "Braucht Furnace {level}",
+        "description": "Daybreak Island wird bei Furnace {level} freigeschaltet. Deine Furnace ist {current}, es fehlen also {missing}. Die Seite bleibt sichtbar, damit du siehst, was kommt. Bearbeiten ist bis dahin aus.",
+        "noFurnace": "Daybreak Island wird bei Furnace {level} freigeschaltet. Deine Furnace-Stufe ist noch nicht gesetzt. Die Seite bleibt sichtbar, damit du siehst, was kommt. Bearbeiten ist bis dahin aus.",
+        "missing": "{count, plural, one {{amount} weitere Stufe} other {{amount} weitere Stufen}}",
+        "link": "Zu Gebäude"
+    },
+    "levelOf": "L{level} von {max}",
+    "camp": {
+        "title": "Lumber Camp",
+        "levelLabel": "Stufe Lumber Camp",
+        "workers": "Arbeiter",
+        "rate": "Rate pro Sekunde",
+        "essence": "Life Essence für diese Stufe",
+        "needsTree": "Braucht Tree of Life Stufe {required}. Deiner ist {current}.",
+        "treeTooLow": "Tree of Life Stufe {current} ist zu niedrig. Stufe {level} des Lumber Camp braucht Tree of Life Stufe {required}.",
+        "next": "Als Nächstes, Stufe {level}: {essence} Life Essence, braucht Tree of Life Stufe {tree}.",
+        "highest": "Das ist die höchste Stufe."
+    },
+    "tree": {
+        "title": "Tree of Life",
+        "levelLabel": "Stufe Tree of Life",
+        "prosperity": "Wohlstand für diese Stufe",
+        "essence": "Life Essence für diese Stufe",
+        "perHour": "Life Essence pro Stunde",
+        "buff": "Buff",
+        "next": "Als Nächstes, Stufe {level}: {prosperity} Wohlstand, {essence} Life Essence.",
+        "highest": "Das ist die höchste Stufe."
+    },
+    "decorations": {
+        "title": "Dekorationen",
+        "owned": "{owned} von {total} im Besitz",
+        "imageNote": "Nur {withImage} von {total} Dekorationen haben im Paket ein Bild. Ein volles Quadrat markiert die mit Bild, ein gestricheltes Quadrat den Rest."
+    },
+    "search": {
+        "label": "Dekorationen suchen",
+        "placeholder": "Dekorationen suchen"
+    },
+    "status": {
+        "showing": "{shown} von {total} Dekorationen angezeigt.",
+        "showMore": "{count, plural, one {{amount} weitere Dekoration zeigen} other {{amount} weitere Dekorationen zeigen}}"
+    },
+    "empty": {
+        "title": "Keine passenden Dekorationen",
+        "description": "Ändere die Suche oder die Filter, um Dekorationen zu sehen.",
+        "reset": "Filter zurücksetzen"
+    },
+    "card": {
+        "costEach": "Kosten je",
+        "cost": "{amount} {item}",
+        "limit": "Limit",
+        "buffAtLevel": "Buff auf Stufe {level}",
+        "buffAtMax": "Buff auf Maximalstufe",
+        "buffValue": "{value} {stat}",
+        "prosperityAtMax": "Wohlstand auf Maximum",
+        "essenceCost": "Kosten in Life Essence",
+        "unknown": "Unbekannt",
+        "owned": "Im Besitz",
+        "notOwned": "Nicht im Besitz",
+        "ownedLabel": "{name} im Besitz",
+        "levelLabel": "Stufe {name}",
+        "countLabel": "Anzahl {name}",
+        "limited": "Begrenzt",
+        "ownedCount": "Im Besitz {count} von {limit}"
+    },
+    "categories": {
+        "Basic": "Basis",
+        "Vegetation": "Vegetation",
+        "Common": "Gewöhnlich",
+        "Uncommon": "Ungewöhnlich",
+        "Rare": "Selten",
+        "Epic": "Episch",
+        "Mythic": "Mythisch",
+        "Unique": "Einzigartig"
+    },
+    "filters": {
+        "button": "Filter",
+        "title": "Filter",
+        "description": "Grenze die Dekorationsliste ein. Filter werden nicht gespeichert.",
+        "category": "Kategorie",
+        "categoryAll": "Alle {amount}",
+        "categoryOption": "{category} {amount}",
+        "show": "Anzeigen",
+        "ownedOnly": "Nur im Besitz",
+        "limitedOnly": "Nur begrenzte",
+        "unknownBuffOnly": "Nur unbekannter Buff",
+        "sort": "Sortierung",
+        "order": {
+            "game": "Paketreihenfolge",
+            "name": "Name A bis Z",
+            "level": "Stufe höchste zuerst"
+        },
+        "reset": "Zurücksetzen",
+        "showButton": "{count, plural, one {{amount} Dekoration zeigen} other {{amount} Dekorationen zeigen}}",
+        "nonLimitedOnly": "Nur unbegrenzte",
+        "notOwnedOnly": "Nur nicht im Besitz"
+    },
+    "prosperity": {
+        "label": "Dein Wohlstandswert",
+        "progress": "Wohlstandswert deiner Dekorationen",
+        "possible": "Von {max}, wenn jede Dekoration auf Höchststufe und am Limit ist",
+        "levelled": "Dekorationen mit Stufen, Wohlstand der erreichten Stufe",
+        "limited": "Dekorationen mit Limit, Anzahl im Besitz mal Wohlstand je",
+        "ofMax": "{value} von {max}",
+        "withoutValue": "{count, plural, one {{amount} Dekoration im Besitz hat} other {{amount} Dekorationen im Besitz haben}} keinen Wohlstandswert in den Daten und {count, plural, one {wird} other {werden}} nicht gezählt."
+    }
+}

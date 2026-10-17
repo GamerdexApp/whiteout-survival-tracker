@@ -1,0 +1,216 @@
+{
+    "chiefCount": "{count, plural, other {チーフ{amount}人}}",
+    "localStorageNote": {
+        "title": "ローカルストレージ。",
+        "body": "チーフはこのブラウザにのみ保存されます。ブラウザのキャッシュを消去すると失われます。定期的にバックアップをエクスポートしてください。"
+    },
+    "page": {
+        "title": "設定",
+        "subline": "データ、チーフの設定、外観を管理します",
+        "tabsLabel": "設定",
+        "tabs": {
+            "preferences": "環境設定",
+            "data": "バックアップとデータ",
+            "about": "このアプリについて"
+        }
+    },
+    "about": {
+        "version": "バージョン{version}",
+        "summary": "Whiteout Survivalの進行状況を記録します。建物、ヒーロー、チーフ装備、エキスパート、ペット、部隊、研究、同盟テック、資源、プランナーに対応しています。データはすべてこのブラウザに保存されます。",
+        "wiki": "Whiteout Survival Wiki",
+        "disclaimer": "Century Gamesとは提携しておらず、公認も受けていません。Whiteout SurvivalはCentury Gamesの商標です。"
+    },
+    "preferences": {
+        "chiefSettings": {
+            "title": "チーフの設定",
+            "description": "すべてのチーフに適用されます。すぐに保存されます。",
+            "footnote": "計算機の中でオプションを変えても、これらの初期設定は変わりません。Furnaceの表示はレベルの書き方を変えるだけで、レベル自体は変わりません。チーフを追加または削除しても、これらの設定がリセットされることはありません。",
+            "groups": {
+                "furnaceDisplay": "Furnaceの表示",
+                "lists": "リスト",
+                "calculatorOptions": "計算機の初期オプション"
+            },
+            "fullLevelLabels": {
+                "label": "レベル表記を省略しない",
+                "description": "サイドバー、概要、建物で、FurnaceのサブレベルをFC 5ではなくFC 5-2のように表示します。他の建物は、すでに完全な表記で表示されます。"
+            },
+            "hideMaxed": {
+                "label": "最大の項目を隠す",
+                "description": "最高レベルの建物、ヒーロー、ペット、エキスパートを隠します。各リストには「最大を表示」フィルターがあるため、何も失われません。"
+            },
+            "useBonuses": {
+                "label": "ボーナスの合計を適用",
+                "description": "新しい計算機は、ボーナスページの建設速度のパーセントから始まります。計算機内で1回分だけ変更することもできます。"
+            },
+            "showSpeedups": {
+                "label": "スピードアップの分数を表示",
+                "description": "各計算機の結果の時間の下に、必要なスピードアップの分数を表示します。"
+            },
+            "showEventPoints": {
+                "label": "イベントポイントを表示",
+                "description": "イベントポイントを返す計算機の結果に、イベントポイントの行を追加します。"
+            }
+        },
+        "appearance": {
+            "title": "外観",
+            "description": "アプリの見た目を選びます。データと一緒に保存されます。",
+            "themeLabel": "テーマ",
+            "themeNote": "システムはデバイスの設定に従い、現在は{current}です。この選択はバックアップに含まれます。"
+        },
+        "themes": {
+            "light": "ライト",
+            "dark": "ダーク",
+            "system": "システム"
+        }
+    },
+    "data": {
+        "backupDownloaded": "バックアップをダウンロードしました",
+        "merged": "バックアップを統合しました",
+        "replaced": "バックアップで置き換えました",
+        "undo": "元に戻す",
+        "resetDone": "すべてのデータをリセットしました",
+        "resetDoneMessage": "{chiefs}を削除し、設定をクリアしました。",
+        "management": {
+            "title": "データ管理",
+            "description": "ひとつのバックアップファイルに、すべてのチーフと設定が含まれます。"
+        },
+        "export": {
+            "title": "データをエクスポート",
+            "description": "保存されているすべてのチーフのバックアップファイルをダウンロードします。ファイル名: <file>{fileName}</file>。日付はお使いの地域の日付です。",
+            "button": "すべてのチーフをエクスポート"
+        },
+        "import": {
+            "title": "データをインポート",
+            "description": "以前にエクスポートしたファイル（.json）をアップロードします。最初にファイルを検査し、その後「統合」か「置き換え」を選んで変更内容を確認します。確定するまで何も変更されません。",
+            "chooseFile": "ファイルを選択",
+            "noFile": "ファイルが選択されていません",
+            "review": "インポートを確認"
+        },
+        "reset": {
+            "title": "すべてのデータをリセット",
+            "warningTitle": "警告:",
+            "warning": "すべてのチーフを削除し、チーフの設定とテーマをリセットします。10秒間は元に戻せます。コピーを残したい場合は、先にバックアップをエクスポートしてください。",
+            "button": "すべてのデータをリセット"
+        },
+        "chiefs": {
+            "title": "チーフ",
+            "description": "チーフの作成、名前の変更、編集、削除は専用ページで行います。エクスポート、インポート、リセットはすべてのチーフに適用されます。",
+            "manage": "チーフを管理"
+        }
+    },
+    "importDialog": {
+        "title": "バックアップをインポート",
+        "cancel": "キャンセル",
+        "close": "閉じる",
+        "merge": "統合",
+        "replace": "置き換え",
+        "failedTitle": "インポートに失敗しました。",
+        "checksTitle": "ファイルの検査結果。",
+        "checks": "チーフのリストが見つかり、{count, plural, other {{amount}件のエントリー}}を読み込みました。まだ何も保存されていないため、現在のチーフはそのままです。",
+        "howToApply": "ファイルをどのように適用しますか？",
+        "modeLabel": "インポート方式",
+        "modes": {
+            "merge": "統合（推奨）",
+            "replace": "このデバイスのすべてを置き換え"
+        },
+        "modeNotes": {
+            "merge": "新しいチーフを追加し、両方にあるチーフは新しいほうのコピーを残します。このデバイスにだけあるチーフはそのまま残ります。設定も変わりません。",
+            "replace": "このデバイスのすべてのチーフを削除し、ファイルの内容を設定も含めてそのまま読み込みます。正確なコピーを復元するときに使います。"
+        },
+        "whatChanges": "変更内容",
+        "columns": {
+            "chief": "チーフ",
+            "inFile": "ファイル内",
+            "onDevice": "このデバイス",
+            "result": "結果"
+        },
+        "results": {
+            "added": "追加",
+            "updated": "ファイルから更新",
+            "kept": "このデバイスのコピーを保持",
+            "replaced": "ファイルから読み込み",
+            "removed": "削除"
+        },
+        "notThere": "なし",
+        "noChiefs": "ファイルにチーフがいません。",
+        "undoNote": "インポート後の10秒間は元に戻せます。",
+        "bytes": "{amount} B",
+        "kilobytes": "{amount} KB",
+        "fileInfo": "{name} · {size}"
+    },
+    "resetDialog": {
+        "title": "すべてのデータをリセット",
+        "cancel": "キャンセル",
+        "confirm": "はい、すべてのデータをリセットします",
+        "question": "このブラウザから{chiefs}をすべて削除しますか？",
+        "removedTitle": "削除される内容",
+        "settingsNote": "ライト、ダーク、システムの選択はシステムに戻ります。チーフの設定は初期値に戻ります。使用中のチーフは解除されます。",
+        "undoNote": "リセット後の10秒間は元に戻せます。ファイルのコピーを残したい場合は、先にバックアップをエクスポートしてください。",
+        "exportFirst": "先にバックアップをエクスポート"
+    },
+    "backup": {
+        "notJson": "ファイルが有効なJSONではありません。何も変更されていません。",
+        "noChiefsList": "チーフのリストがありません。何も変更されていません。",
+        "duplicateId": "2人のチーフが同じIDを持っています。何も変更されていません。",
+        "withNothingChanged": "{reason}何も変更されていません。",
+        "chief": {
+            "notObject": "チーフ{position}はオブジェクトではありません。",
+            "noId": "チーフ{position}にIDがありません。",
+            "noName": "チーフ{position}に名前がありません。",
+            "noDates": "チーフ{position}に日付がありません。",
+            "badStateNumber": "チーフ{position}のステート番号が整数ではありません。",
+            "badCoreEvent": "チーフ{position}に不明なコアイベントがあります。",
+            "badUnlock": "チーフ{position}の解放設定が、既知の分野のサーバー日数ではありません。",
+            "badPack": "チーフ{position}のパック設定がオンでもオフでもありません。"
+        },
+        "settings": {
+            "notObject": "設定がオブジェクトではありません。",
+            "badTheme": "テーマがライト、ダーク、システムのいずれでもありません。",
+            "notText": "{key}の設定がテキストではありません。",
+            "uiNotObject": "インターフェースの設定がオブジェクトではありません。",
+            "badTimeZone": "ブラウザが認識できないタイムゾーンです。"
+        },
+        "summary": {
+            "added": "{amount}件を追加",
+            "updated": "{amount}件をファイルから更新",
+            "kept": "{amount}件をこのデバイスのまま保持",
+            "replaced": "{amount}件をファイルから読み込み",
+            "removed": "{amount}件を削除"
+        }
+    },
+    "region": {
+        "title": "言語と地域",
+        "description": "言語と、数値や日付の書き方を選びます。データと一緒に保存されます。",
+        "language": {
+            "label": "言語",
+            "hint": "ヒーロー、アイテム、建物、研究の名前はゲームデータに基づくため、当面は英語のままです。"
+        },
+        "numberFormat": {
+            "label": "数値の形式",
+            "hint": "例: {example}",
+            "options": {
+                "auto": "自動（言語に合わせる）",
+                "us": "1,234.56（アメリカ）",
+                "european": "1.234,56（ドイツ）",
+                "french": "1 234,56（フランス）",
+                "swiss": "1’234.56（スイス）",
+                "indian": "12,34,567.89（インド）"
+            }
+        },
+        "dateFormat": {
+            "label": "日付の形式",
+            "hint": "例: {example}",
+            "options": {
+                "auto": "自動（言語に合わせる）",
+                "mdy": "月/日/年",
+                "dmy": "日/月/年",
+                "ymd": "年-月-日"
+            }
+        },
+        "timeZone": {
+            "label": "タイムゾーン",
+            "hint": "日付と時刻、およびイベントのマイタイムに使用します。例: 14:05 UTCは{example}と表示されます。",
+            "auto": "自動（デバイスに合わせる）（{zone}）"
+        }
+    }
+}

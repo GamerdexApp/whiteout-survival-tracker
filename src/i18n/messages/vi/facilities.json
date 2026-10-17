@@ -1,0 +1,86 @@
+{
+    "page": {
+        "title": "Cơ sở"
+    },
+    "view": {
+        "subline": "{chief} · {facilities} cơ sở trên bản đồ, lâu đài, {strongholds} thành trì và {fortresses} pháo đài"
+    },
+    "summary": {
+        "owned": "Cơ sở đã sở hữu",
+        "ownedValue": "{owned} trên {total}",
+        "strongholds": "Thành trì, tham khảo",
+        "fortresses": "Pháo đài, tham khảo",
+        "castle": "Lâu đài, tham khảo"
+    },
+    "tabs": {
+        "label": "Chế độ xem cơ sở",
+        "facilities": "Cơ sở",
+        "fortresses": "Pháo đài",
+        "map": "Bản đồ"
+    },
+    "show": {
+        "label": "Hiển thị",
+        "all": "Tất cả",
+        "owned": "Đã sở hữu",
+        "notOwned": "Chưa sở hữu"
+    },
+    "card": {
+        "owned": "{count} đã sở hữu",
+        "level": "Cấp {level}",
+        "ownedSwitch": "Đã sở hữu",
+        "switchLabel": "{facility} cấp {level} đã sở hữu",
+        "booster": "Tăng cường",
+        "injured": "Trọng thương",
+        "losses": "Tổn thất",
+        "ownLimit": "Giới hạn sở hữu {limit}. {spots} {spotWord} trên bản đồ.",
+        "spot": "vị trí",
+        "spots": "vị trí"
+    },
+    "empty": {
+        "title": "Không có gì để hiển thị",
+        "description": "Không có cấp cơ sở nào khớp bộ lọc này.",
+        "reset": "Hiện tất cả"
+    },
+    "fortress": {
+        "kind": {
+            "castle": "Lâu đài",
+            "stronghold": "Thành trì",
+            "fortress": "Pháo đài"
+        },
+        "coordinates": "x {x}, y {y}",
+        "rewardsHeading": "Phần thưởng theo giai đoạn",
+        "phase": "Giai đoạn {phase}",
+        "noRewards": "Lâu đài không có phần thưởng trong gói dữ liệu.",
+        "referenceNote": "Chỉ để tham khảo. Lâu đài, thành trì và pháo đài thay đổi mỗi tuần, nên ở đây không có gì để sở hữu hay theo dõi.",
+        "kindLabel": "Loại",
+        "allKinds": "Mọi loại",
+        "rewardLabel": "Phần thưởng",
+        "allRewards": "Mọi phần thưởng",
+        "shown": "Hiển thị {shown} trên {total} công trình",
+        "empty": "Không có công trình nào khớp bộ lọc.",
+        "reset": "Đặt lại bộ lọc",
+        "filters": "Bộ lọc",
+        "filtersTitle": "Bộ lọc",
+        "filtersDescription": "Lọc công trình theo loại và phần thưởng",
+        "done": "Hiện {count}"
+    },
+    "map": {
+        "highlight": "Làm nổi bật một cơ sở",
+        "layers": "Lớp",
+        "layerFacilities": "Cơ sở",
+        "layerStrongholds": "Thành trì",
+        "layerFortresses": "Pháo đài",
+        "spotsHeading": "Vị trí cơ sở, tổng {count}",
+        "spotLegend": "{name} ({count})",
+        "codeHint": "Chữ số sau mã là cấp, ví dụ Co1 là Construction cấp 1. Cơ sở được làm nổi bật sẽ được tô đầy.",
+        "structures": "Công trình",
+        "castleStrongholdLegend": "Lâu đài (1) và thành trì S1 đến S4 ({count})",
+        "fortressLegend": "Pháo đài 1 đến {count}",
+        "selected": "Đang chọn trên bản đồ",
+        "selectedNone": "Chọn một lâu đài, thành trì hoặc pháo đài trên bản đồ.",
+        "mapLabel": "Bản đồ liên minh",
+        "note": "Bản phác thảo của bản đồ liên minh. Vị trí dùng tọa độ x và y của gói dữ liệu trên lưới {size} x {size}, mỗi ô lưới là {step}. Vị trí là nơi một cơ sở có thể xuất hiện, nên cơ sở đã sở hữu không được đánh dấu. Gói dữ liệu không có hình địa hình.",
+        "spotLabel": "{name} cấp {level}, x {x}, y {y}",
+        "structureLabel": "{name}, x {x}, y {y}"
+    }
+}

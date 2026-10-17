@@ -1,0 +1,50 @@
+{
+    "page": {
+        "title": "聯盟"
+    },
+    "view": {
+        "subline": "{chief} · {details} · 旗幟 {level} 級"
+    },
+    "banner": {
+        "title": "聯盟旗幟",
+        "currentLevel": "目前等級",
+        "levelLabel": "旗幟等級",
+        "maxHint": "整數等級，從 0 到 {max}。",
+        "rangeChip": "{range}",
+        "costHeading": "{range} 每級花費",
+        "noTimeOrPower": "資料包中的旗幟沒有建造時間或戰力，所以不顯示。",
+        "noCost": "無花費",
+        "none": "無",
+        "lower": "降低旗幟等級",
+        "raise": "提高旗幟等級"
+    },
+    "structures": {
+        "title": "聯盟建築",
+        "tech": {
+            "title": "科技",
+            "description": "成長、領地和戰鬥共 {count} 個節點",
+            "status": "{maxed} 個已滿級，{progress} 個進行中，{locked} 個已鎖定"
+        },
+        "facilities": {
+            "title": "設施",
+            "description": "{count} 個地圖設施",
+            "owned": "已擁有 {owned}"
+        },
+        "fortresses": {
+            "title": "要塞",
+            "description": "城堡、{strongholds} 個據點、{fortresses} 個要塞",
+            "reference": "僅供參考"
+        }
+    },
+    "table": {
+        "title": "各等級區間的旗幟花費",
+        "note": "共 {count} 個區間，同一區間內每級花費相同",
+        "range": "區間",
+        "state": "狀態",
+        "built": "已建造",
+        "current": "目前",
+        "notBuilt": "未建造",
+        "none": "無",
+        "noCost": "無花費"
+    }
+}

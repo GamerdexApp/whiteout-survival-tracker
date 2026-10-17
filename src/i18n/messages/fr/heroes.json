@@ -1,0 +1,262 @@
+{
+  "page": {
+    "title": "Héros"
+  },
+  "view": {
+    "tabsLabel": "Héros",
+    "heroesTab": "Héros",
+    "gearTab": "Équipement de héros",
+    "heroesSubline": "{chief} · {owned} sur {total} possédés",
+    "gearSubline": "{chief} · {count, plural, one {{amount} set d'équipement} other {{amount} sets d'équipement}}"
+  },
+  "common": {
+    "owned": "Possédé",
+    "ownedLabel": "{hero} possédé",
+    "starLabel": "Étoile de {hero}",
+    "levelLabel": "Niveau de {hero}",
+    "talentLabel": "Talent de {hero}",
+    "skillLabel": "{skill} de {hero}",
+    "weaponLevelLabel": "Niveau de {weapon} de {hero}",
+    "shardsOwnedLabel": "Fragments de {hero} possédés",
+    "starAndTier": "Étoile et palier",
+    "level": "Niveau",
+    "noGoal": "Aucun objectif",
+    "shards": "Fragments",
+    "totalPower": "Puissance totale",
+    "unknown": "Inconnu",
+    "plan": "Plan",
+    "generation": "Gén. {generation}",
+    "exploration": "Exploration",
+    "expedition": "Expédition",
+    "talent": "Talent",
+    "maxLevelSuffix": "/ {max}",
+    "heroCount": "{count, plural, one {{amount} héros} other {{amount} héros}}"
+  },
+  "goalText": {
+    "to": "à {goal}"
+  },
+  "card": {
+    "summary": "{rarity} · {heroClass} · {generation}",
+    "talentRow": "Talent {name}",
+    "shardsOf": "sur {needed}",
+    "enoughShards": " Fragments suffisants",
+    "shortBy": " Il manque {amount}",
+    "gearSet": "Set d'équipement",
+    "notOwnedHint": "Activez Possédé pour suivre l'étoile, le niveau et les compétences.",
+    "details": "Détails"
+  },
+  "tab": {
+    "stats": {
+      "generations": "Générations débloquées",
+      "generationsValue": "0 à {max}",
+      "heroesOwned": "Héros possédés parmi les débloqués",
+      "legendaryOwned": "Legendary possédés parmi les débloqués",
+      "atMaxLevel": "Au niveau 80",
+      "heroPower": "Puissance des héros",
+      "heroPowerUnknown": "Puissance des héros, {amount} Inconnu exclus",
+      "withGoal": "Avec un objectif"
+    },
+    "search": {
+      "label": "Rechercher des héros",
+      "placeholder": "Rechercher parmi {amount} héros par nom"
+    },
+    "filters": "Filtres",
+    "maxOut": "Tout maximiser",
+    "status": "{shown} héros affichés sur {total}. Les générations 0 à {max} sont débloquées pour ce chef. Les objectifs sont en lecture seule ici et se définissent dans Plan.",
+    "empty": {
+      "title": "Aucun héros ne correspond",
+      "description": "Modifiez la recherche ou réinitialisez les filtres pour voir tous les héros.",
+      "reset": "Réinitialiser"
+    },
+    "showMore": "Afficher plus, {amount} {count, plural, one {héros} other {héros}} de plus",
+    "toast": {
+      "notOwnedTitle": "{name} non possédé",
+      "notOwnedMessage": "Son étoile, son niveau et ses compétences sont conservés pour quand vous réactiverez Possédé.",
+      "undo": "Annuler",
+      "maxedTitle": "Héros maximisés",
+      "maxedMessage": "{heroes} mis à jour."
+    }
+  },
+  "filtersFlyout": {
+    "title": "Filtres",
+    "description": "Choisissez les héros que la page affiche",
+    "reset": "Réinitialiser",
+    "show": "Afficher {heroes}",
+    "all": "Tous",
+    "generation": "Génération",
+    "rarity": "Rareté",
+    "heroClass": "Classe",
+    "ownership": "Possession",
+    "order": "Ordre",
+    "notSaved": "Les filtres ne sont pas enregistrés.",
+    "rarities": {
+      "Legendary": "Legendary",
+      "Epic": "Epic",
+      "Rare": "Rare"
+    },
+    "classes": {
+      "Infantry": "Infantry",
+      "Lancer": "Lancer",
+      "Marksman": "Marksman"
+    },
+    "ownershipOptions": {
+      "all": "Tous",
+      "owned": "Possédés",
+      "notOwned": "Non possédés"
+    },
+    "orderOptions": {
+      "owned": "Possédés d'abord, puis dernière génération",
+      "generation": "Génération, la plus récente d'abord",
+      "name": "Nom, A à Z",
+      "power": "Puissance totale, la plus haute d'abord"
+    }
+  },
+  "maxOut": {
+    "title": "Maximiser les héros",
+    "scopeLabel": "Héros à maximiser",
+    "scope": {
+      "owned": "Héros possédés",
+      "unlocked": "Tous les héros débloqués, marqués comme possédés",
+      "selected": "Choisir des héros, marqués comme possédés"
+    },
+    "searchLabel": "Rechercher des héros à choisir",
+    "searchPlaceholder": "Rechercher des héros par nom",
+    "selectShown": "Sélectionner l'affichage",
+    "clear": "Effacer",
+    "ownedTag": "possédé",
+    "starAndTier": "Étoile et palier jusqu'à 5.0",
+    "level": "Niveau jusqu'à 80",
+    "levelHint": "Désactivez quand les compétences sont au max et que le niveau des anciens héros reste à 1.",
+    "skills": "Compétences jusqu'à 5",
+    "skillsHint": "Exploration, Expédition et Talent.",
+    "weapon": "Arme exclusive jusqu'à 10",
+    "note": "Tout ce qui est désactivé reste tel quel. Les nombres de fragments et les objectifs ne changent pas. Vous pouvez annuler après l'application.",
+    "cancel": "Annuler",
+    "apply": "Maximiser {heroes}"
+  },
+  "flyout": {
+    "fallbackTitle": "Héros",
+    "description": "{rarity} {heroClass}, génération {generation}",
+    "done": "Terminé",
+    "status": {
+      "title": "Statut",
+      "furnaceNeeded": "Furnace requis pour le niveau {level}",
+      "met": "Rempli",
+      "needsFurnace": "Nécessite Furnace {required}",
+      "levelPower": "Puissance du niveau",
+      "skillPower": "Puissance des compétences",
+      "starPower": "Puissance de l'étoile",
+      "weaponPower": "Puissance de l'arme",
+      "totalPower": "Puissance totale",
+      "note": "La puissance compte le niveau, les compétences, le palier d'étoile et le niveau de l'arme."
+    },
+    "skills": {
+      "title": "Compétences",
+      "aside": "Cinq niveaux par compétence",
+      "toLevel": "Jusqu'à {level} : {manuals} manuels",
+      "needsStar": "Nécessite l'étoile {star}",
+      "starMet": "Étoile {star} atteinte",
+      "talentTop": "Le talent est à son niveau maximum.",
+      "talentNeedsStar": "Le niveau {level} nécessite l'étoile {star}",
+      "talentStarMet": "Niveau {level} : étoile {star} atteinte"
+    },
+    "weapon": {
+      "title": "Arme exclusive : {name}",
+      "level": "Niveau de l'arme",
+      "widgetsForLevel": "Widgets pour le niveau {level}",
+      "widgetsForLevels": "Widgets pour les niveaux {from} à {to}",
+      "expeditionBonus": "Bonus d'expédition",
+      "bonus": "Létalité {lethality} % · Santé {health} %",
+      "power": "Puissance de l'arme",
+      "unlocksAt": "Se débloque au niveau d'arme {level}"
+    },
+    "shards": {
+      "title": "Fragments",
+      "owned": "Fragments possédés",
+      "goal": "Objectif",
+      "neededForGoal": "Nécessaires pour l'objectif {goal}",
+      "enough": "Fragments suffisants",
+      "shortBy": "Il manque",
+      "yes": "Oui",
+      "sources": "Sources de fragments"
+    },
+    "stats": {
+      "title": "Stats au niveau 80",
+      "explorationAt": "Exploration à {stars}",
+      "expeditionAt": "Expédition à {stars}",
+      "explorationFull": "Exploration à 5.0",
+      "expeditionFull": "Expédition à 5.0",
+      "exploration": "Att {attack} · Déf {defense} · PV {health}",
+      "expedition": "Att {attack} % · Déf {defense} %",
+      "estimate": "Estimation"
+    }
+  },
+  "plan": {
+    "title": "Planifier les héros",
+    "description": "Fragments, manuels de compétence et Widgets du niveau actuel à l'objectif",
+    "saved": "Plan enregistré {date}",
+    "close": "Fermer",
+    "save": "Enregistrer le plan",
+    "noHeroes": "Aucun héros dans le plan pour l'instant. Ajoutez un héros possédé ci-dessus, puis augmentez ses objectifs.",
+    "add": {
+      "title": "Ajouter un héros",
+      "allIn": "Tous les héros possédés sont dans le plan. Activez Possédé pour un héros afin de le planifier.",
+      "selectLabel": "Héros à ajouter",
+      "button": "Ajouter le héros"
+    },
+    "block": {
+      "remove": "Retirer {hero} du plan",
+      "starTo": "{stars} à",
+      "starGoal": "Objectif d'étoile de {hero}",
+      "levelTo": "{current} à",
+      "goalLabel": "Objectif {name} de {hero}",
+      "note": "Les valeurs actuelles viennent du héros sur la page. Modifiez-les là-bas."
+    },
+    "unmet": {
+      "title": "Les niveaux de compétence nécessitent une étoile plus haute.",
+      "item": "{hero} : {skill} niveau {level} nécessite l'étoile {star}",
+      "message": "{items}. Augmentez l'objectif d'étoile ou baissez l'objectif de compétence."
+    },
+    "shardsUsed": "Fragments utilisés : {own} du héros et {general} généraux, {total} au total. Un héros utilise d'abord ses propres fragments.",
+    "result": {
+      "title": "Résultat, {steps} étapes",
+      "widgets": "Widgets",
+      "weaponSkills": "{count, plural, one {{amount} compétence d'arme débloquée} other {{amount} compétences d'arme débloquées}}",
+      "note": "La puissance ne fait pas partie de Planifier les héros. Le calculateur ne renvoie aucune durée et n'accepte aucune vitesse.",
+      "heads": {
+        "hero": "Héros",
+        "starSteps": "Paliers d'étoile",
+        "skillLevels": "Niveaux de compétence",
+        "shards": "Fragments",
+        "widgets": "Widgets"
+      },
+      "tableLabel": "Tableau du résultat du plan"
+    },
+    "events": {
+      "svs": "SvS State of Power",
+      "allianceShowdown": "Alliance Showdown",
+      "kingOfIcefield": "King of Icefield",
+      "hallOfChief": "Hall of Chief"
+    }
+  },
+  "export": {
+    "button": "Exporter vers Événements clés",
+    "nothing": "Le plan n'a besoin ni de fragments ni de Widgets à exporter.",
+    "shardsGroup": "pour les fragments",
+    "widgetsGroup": "pour les Widgets",
+    "widgets": "Widgets",
+    "manualsReason": "Aucun événement ne note les manuels de compétence",
+    "shards": {
+      "Legendary": "Mythic Hero Shards",
+      "Epic": "Epic Hero Shards",
+      "Rare": "Rare Hero Shards"
+    }
+  },
+  "service": {
+    "generalShard": {
+      "Legendary": "Mythic General Hero Shard",
+      "Epic": "Epic General Hero Shard",
+      "Rare": "Rare General Hero Shard"
+    }
+  }
+}

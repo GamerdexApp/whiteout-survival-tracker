@@ -1,0 +1,99 @@
+{
+    "line": "{heroes} Helden und {widgets} Widget-Stufen. Nur Referenz, hier wird nichts gespeichert.",
+    "roster": {
+        "title": "Heldenliste",
+        "count": "{shown} von {total} Helden",
+        "search": "Suche",
+        "searchPlaceholder": "{count} Helden suchen",
+        "generation": "Generation",
+        "rarity": "Seltenheit",
+        "class": "Klasse",
+        "subClass": "Unterklasse",
+        "all": "Alle",
+        "empty": "Kein Held passt zu diesen Filtern.",
+        "columns": {
+            "hero": "Held",
+            "generation": "Gen",
+            "rarity": "Seltenheit",
+            "class": "Klasse",
+            "subClass": "Unterklasse",
+            "power": "Macht, 5 Sterne",
+            "weapon": "Exklusivwaffe"
+        },
+        "none": "Keine"
+    },
+    "detail": {
+        "generation": "Generation {generation}",
+        "source": "Quelle: {sources}",
+        "noSource": "Quelle: Unbekannt",
+        "explorationAttack": "Erkundungsangriff",
+        "explorationDefense": "Erkundungsverteidigung",
+        "explorationHealth": "Erkundungsgesundheit",
+        "expeditionAttack": "Expeditionsangriff",
+        "expeditionDefense": "Expeditionsverteidigung",
+        "powerAtLevel80": "Macht auf Stufe 80",
+        "powerAtFiveStars": "Macht mit 5 Sternen",
+        "powerAtZeroStars": "Macht mit 0 Sternen",
+        "powerMissing": "Die Macht für Heldenstufen und Splitter fehlt ab Generation 6. Sie erscheint als Unbekannt, bis die Daten vorliegen."
+    },
+    "skills": {
+        "title": "Fähigkeiten",
+        "count": "{count, plural, one {{amount} Fähigkeit} other {{amount} Fähigkeiten}}",
+        "branch": {
+            "exploration": "Erkundung",
+            "expedition": "Expedition",
+            "talent": "Talent"
+        },
+        "levels": {
+            "columns": {
+                "level": "Stufe",
+                "star": "Nötiger Stern",
+                "manuals": "Handbücher",
+                "power": "Machtgewinn",
+                "effects": "Effekt"
+            },
+            "effect": {
+                "percentOfAttack": "{name} {amount}% des Angriffs",
+                "percent": "{name} {amount}%",
+                "seconds": "{name} {amount}s",
+                "number": "{name} {amount}"
+            }
+        }
+    },
+    "shards": {
+        "title": "Splitterkosten je Stern",
+        "columns": {
+            "star": "Stern",
+            "tiers": "Splitter je Tier",
+            "total": "Gesamt",
+            "power": "Macht beim Stern"
+        },
+        "star": "{star} Stern"
+    },
+    "weapon": {
+        "title": "Exklusivwaffe",
+        "power": "Waffenmacht",
+        "exploration": "Erkundung Ang / Vert / LP",
+        "expedition": "Expedition Letalität / LP",
+        "unlocksAt": "wird bei Waffenstufe {level} freigeschaltet",
+        "levelsTitle": "Waffenstufen",
+        "columns": {
+            "level": "Waffenstufe",
+            "power": "Macht",
+            "widgets": "Widgets"
+        },
+        "level": "Stufe {level}"
+    },
+    "levels": {
+        "title": "Heldenstufen",
+        "columns": {
+            "level": "Heldenstufe",
+            "furnace": "Braucht",
+            "xp": "XP bis dahin",
+            "power": "Macht"
+        },
+        "level": "Stufe {level}",
+        "furnace": "Furnace {level}"
+    },
+    "recordLine": "{rarity} {heroClass}, Generation {generation}. Nur Referenz, hier wird nichts gespeichert."
+}

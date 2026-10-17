@@ -1,0 +1,88 @@
+{
+    "title": "資源",
+    "all": "全部",
+    "owned": "已持有",
+    "sources": "來源",
+    "sourcesUnknown": "來源未知",
+    "done": "完成",
+    "undo": "復原",
+    "list": {
+        "separator": "、",
+        "andLast": "{rest}和{last}"
+    },
+    "countControl": {
+        "remove": "減少 {step} 個{name}",
+        "add": "增加 {step} 個{name}",
+        "owned": "持有{name}"
+    },
+    "itemRow": {
+        "owned": "持有"
+    },
+    "itemSheet": {
+        "title": "編輯持有數量",
+        "step": "級距",
+        "setToZero": "設為 0",
+        "description": "說明",
+        "unknown": "未知"
+    },
+    "view": {
+        "subline": "{categories} 個分類共 {items} 個道具",
+        "sublineInCategory": "{categories} 個分類共 {items} 個道具 · {category}有 {inCategory} 個",
+        "unsaved": "未儲存",
+        "shortages": "規劃目標缺少{names}。",
+        "shortagesLink": "開啟建築規劃",
+        "show": {
+            "label": "顯示",
+            "owned": "已持有",
+            "unknown": "來源未知"
+        },
+        "speedups": {
+            "none": "無",
+            "noneOwned": "沒有加速道具",
+            "owned": "{minutes} 分：{parts}",
+            "part": "{count} x {name}",
+            "partSeparator": " + ",
+            "types": {
+                "general": "通用",
+                "construction": "建造",
+                "troop": "部隊訓練",
+                "research": "研究",
+                "learning": "學習",
+                "healing": "治療"
+            }
+        },
+        "search": {
+            "label": "搜尋道具",
+            "placeholder": "搜尋 {total} 個道具"
+        },
+        "setSeveral": "批次設定",
+        "showing": {
+            "several": "顯示 {visible} / {total} 個道具。已開啟批次設定。變更要等你按「儲存變更」才會生效。",
+            "instant": "顯示 {visible} / {total} 個道具。每次變更都會立即儲存。"
+        },
+        "empty": {
+            "title": "沒有符合的道具",
+            "description": "請更改搜尋、分類或「顯示」篩選。",
+            "reset": "重設篩選"
+        },
+        "columns": {
+            "item": "道具"
+        },
+        "bar": {
+            "noChanges": "沒有未儲存的變更",
+            "changes": "{count, plural, other {{amount} 項未儲存的變更}}",
+            "discard": "捨棄",
+            "save": "儲存變更"
+        },
+        "toast": {
+            "setToZero": "{name}已設為 0",
+            "savedTitle": "已儲存數量",
+            "savedMessage": "已變更 {count, plural, other {{amount} 項數量}}。"
+        }
+    },
+    "planStock": {
+        "constructionTime": "建造時間，以加速道具計",
+        "researchTime": "研究時間，以加速道具計",
+        "minutesUnit": "分"
+    }
+}

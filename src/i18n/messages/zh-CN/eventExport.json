@@ -1,0 +1,32 @@
+{
+  "title": "导出到核心活动",
+  "description": "先选择活动，再选择天数",
+  "events": {
+    "svs": "SvS",
+    "showdown": "Alliance Showdown",
+    "king": "King of Icefield",
+    "hall": "Hall of Chief"
+  },
+  "stepEvent": "1. 活动",
+  "stepDay": "{number}. 活动日{group}",
+  "stepDayPlain": "活动日",
+  "stepItems": "{number}. 此计划中的道具",
+  "noDay": "{event}没有为这些道具计分的行。",
+  "daysHint": "只列出计分行包含某个道具的天数。Hall of Chief 列出的是阶段而不是天数。每组道具有各自的天数。",
+  "lineEach": "{day}每个{points}。",
+  "lineNotScored": "{event}没有为此计分的行。",
+  "notScored": "不计分",
+  "points": "{points}分",
+  "addedTo": "已添加到{event}",
+  "nothingScores": "在所选天数，此计划中没有任何内容在{event}中计分。",
+  "summaryTitle": "导出摘要",
+  "summaryHint": "当每个道具都用在能计分的一天时，同样的道具在各个活动中的得分。只有所选的活动和天数会收到它们。核心活动页面会以可修改的数量显示它们。",
+  "selected": "已选择",
+  "cancel": "取消",
+  "export": "导出到{event}",
+  "toast": {
+    "title": "已导出到核心活动",
+    "message": "已向{event}添加{points}分。",
+    "undo": "撤销"
+  }
+}

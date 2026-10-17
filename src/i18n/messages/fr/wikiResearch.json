@@ -1,0 +1,77 @@
+{
+  "line": "{nodes} nœuds de recherche dans {tabs} onglets. Référence uniquement, rien ici n'est enregistré.",
+  "tabsLabel": "Catégories de recherche",
+  "tabs": {
+    "battle": "Combat",
+    "growth": "Croissance",
+    "economy": "Économie",
+    "t11": "T11",
+    "t12": "T12"
+  },
+  "search": {
+    "label": "Rechercher",
+    "placeholder": "Rechercher parmi {amount} nœuds de recherche"
+  },
+  "filters": {
+    "tier": "Palier",
+    "allTiers": "Tous",
+    "tierOption": "Palier {tier}",
+    "troop": "Type de troupe",
+    "allTroops": "Tous",
+    "troops": {
+      "Infantry": "Infantry",
+      "Marksman": "Marksman",
+      "Lancer": "Lancer"
+    },
+    "data": "Données",
+    "dataOptions": {
+      "all": "Tous les nœuds",
+      "placeholders": "Espaces réservés",
+      "missingTime": "Durée manquante"
+    }
+  },
+  "list": {
+    "title": "Nœuds",
+    "empty": "Aucun nœud de recherche ne correspond à cette recherche.",
+    "emptyHint": "Effacez la recherche ou un filtre.",
+    "columns": {
+      "node": "Nœud",
+      "tier": "Palier",
+      "levels": "Niveaux",
+      "bonus": "Bonus au niveau 1",
+      "time": "Durée, niveau 1",
+      "power": "Puissance"
+    },
+    "mobileMeta": "{category}, palier {tier}, {levels}",
+    "count": "{count, plural, one {{amount} nœud} other {{amount} nœuds}}"
+  },
+  "levels": "{count, plural, one {{amount} niveau} other {{amount} niveaux}}",
+  "detail": {
+    "columns": {
+      "level": "Niveau",
+      "requires": "Prérequis",
+      "cost": "Coût",
+      "time": "Durée",
+      "bonus": "Bonus",
+      "power": "Puissance"
+    },
+    "level": "Niveau {level}",
+    "none": "Aucun",
+    "placeholderNote": "Ce nœud est un espace réservé. Les données n'ont ni coût ni bonus pour lui.",
+    "requirement": {
+      "building": "{name} {level}",
+      "research": "{name} niveau {level}"
+    },
+    "levelsTitle": "Niveaux"
+  },
+  "view": {
+    "label": "Vue",
+    "list": "Liste",
+    "tree": "Arbre"
+  },
+  "tree": {
+    "region": "Arbre de recherche {tab}",
+    "openNode": "{name}, {levels}",
+    "tier": "T{tier}"
+  }
+}

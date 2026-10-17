@@ -1,0 +1,262 @@
+{
+  "page": {
+    "title": "Eroi"
+  },
+  "view": {
+    "tabsLabel": "Eroi",
+    "heroesTab": "Eroi",
+    "gearTab": "Equip. degli eroi",
+    "heroesSubline": "{chief} · {owned} di {total} posseduti",
+    "gearSubline": "{chief} · {count, plural, one {{amount} set di equipaggiamento} other {{amount} set di equipaggiamento}}"
+  },
+  "common": {
+    "owned": "Posseduto",
+    "ownedLabel": "{hero} posseduto",
+    "starLabel": "Stelle di {hero}",
+    "levelLabel": "Livello di {hero}",
+    "talentLabel": "Talento di {hero}",
+    "skillLabel": "{hero} {skill}",
+    "weaponLevelLabel": "Livello di {weapon} di {hero}",
+    "shardsOwnedLabel": "Frammenti posseduti di {hero}",
+    "starAndTier": "Stelle e grado",
+    "level": "Livello",
+    "noGoal": "Nessun obiettivo",
+    "shards": "Frammenti",
+    "totalPower": "Potenza totale",
+    "unknown": "Sconosciuto",
+    "plan": "Piano",
+    "generation": "Gen {generation}",
+    "exploration": "Esplorazione",
+    "expedition": "Spedizione",
+    "talent": "Talento",
+    "maxLevelSuffix": "/ {max}",
+    "heroCount": "{count, plural, one {{amount} eroe} other {{amount} eroi}}"
+  },
+  "goalText": {
+    "to": "a {goal}"
+  },
+  "card": {
+    "summary": "{rarity} · {heroClass} · {generation}",
+    "talentRow": "Talento {name}",
+    "shardsOf": "su {needed}",
+    "enoughShards": " Frammenti sufficienti",
+    "shortBy": " Mancano {amount}",
+    "gearSet": "Set di equipaggiamento",
+    "notOwnedHint": "Attiva Posseduto per tracciare stelle, livello e abilità.",
+    "details": "Dettagli"
+  },
+  "tab": {
+    "stats": {
+      "generations": "Generazioni sbloccate",
+      "generationsValue": "da 0 a {max}",
+      "heroesOwned": "Eroi posseduti tra quelli sbloccati",
+      "legendaryOwned": "Leggendari posseduti tra quelli sbloccati",
+      "atMaxLevel": "Al livello 80",
+      "heroPower": "Potenza eroi",
+      "heroPowerUnknown": "Potenza eroi, {amount} Sconosciuti esclusi",
+      "withGoal": "Con un obiettivo"
+    },
+    "search": {
+      "label": "Cerca eroi",
+      "placeholder": "Cerca tra {amount} eroi per nome"
+    },
+    "filters": "Filtri",
+    "maxOut": "Al massimo",
+    "status": "Mostrati {shown} eroi su {total}. Le generazioni da 0 a {max} sono sbloccate per questo capo. Qui gli obiettivi sono in sola lettura e si impostano in Piano.",
+    "empty": {
+      "title": "Nessun eroe corrisponde",
+      "description": "Cambia la ricerca o azzera i filtri per vedere tutti gli eroi.",
+      "reset": "Azzera"
+    },
+    "showMore": "Mostra altri, {amount} {count, plural, one {eroe} other {eroi}} in più",
+    "toast": {
+      "notOwnedTitle": "{name} non posseduto",
+      "notOwnedMessage": "Stelle, livello e abilità restano salvati per quando riattiverai Posseduto.",
+      "undo": "Annulla",
+      "maxedTitle": "Eroi portati al massimo",
+      "maxedMessage": "{heroes} aggiornati."
+    }
+  },
+  "filtersFlyout": {
+    "title": "Filtri",
+    "description": "Scegli quali eroi mostra la pagina",
+    "reset": "Azzera",
+    "show": "Mostra {heroes}",
+    "all": "Tutti",
+    "generation": "Generazione",
+    "rarity": "Rarità",
+    "heroClass": "Classe",
+    "ownership": "Possesso",
+    "order": "Ordine",
+    "notSaved": "I filtri non vengono salvati.",
+    "rarities": {
+      "Legendary": "Leggendario",
+      "Epic": "Epico",
+      "Rare": "Raro"
+    },
+    "classes": {
+      "Infantry": "Fanteria",
+      "Lancer": "Lanciere",
+      "Marksman": "Tiratore"
+    },
+    "ownershipOptions": {
+      "all": "Tutti",
+      "owned": "Posseduti",
+      "notOwned": "Non posseduti"
+    },
+    "orderOptions": {
+      "owned": "Prima i posseduti, poi l'ultima generazione",
+      "generation": "Generazione, prima l'ultima",
+      "name": "Nome, dalla A alla Z",
+      "power": "Potenza totale, prima la più alta"
+    }
+  },
+  "maxOut": {
+    "title": "Porta gli eroi al massimo",
+    "scopeLabel": "Eroi da portare al massimo",
+    "scope": {
+      "owned": "Eroi posseduti",
+      "unlocked": "Tutti gli eroi sbloccati, segnati come posseduti",
+      "selected": "Scegli gli eroi, segnati come posseduti"
+    },
+    "searchLabel": "Cerca gli eroi da scegliere",
+    "searchPlaceholder": "Cerca eroi per nome",
+    "selectShown": "Seleziona i mostrati",
+    "clear": "Deseleziona",
+    "ownedTag": "posseduto",
+    "starAndTier": "Stelle e grado a 5.0",
+    "level": "Livello a 80",
+    "levelHint": "Disattiva quando le abilità sono al massimo e il livello degli eroi più vecchi resta a 1.",
+    "skills": "Abilità a 5",
+    "skillsHint": "Esplorazione, Spedizione e Talento.",
+    "weapon": "Arma esclusiva a 10",
+    "note": "Ciò che è disattivato resta com'è. Frammenti e obiettivi non cambiano. Puoi annullare dopo aver applicato.",
+    "cancel": "Annulla",
+    "apply": "Porta al massimo {heroes}"
+  },
+  "flyout": {
+    "fallbackTitle": "Eroe",
+    "description": "{heroClass} {rarity}, generazione {generation}",
+    "done": "Fatto",
+    "status": {
+      "title": "Stato",
+      "furnaceNeeded": "Furnace necessaria per il livello {level}",
+      "met": "Soddisfatto",
+      "needsFurnace": "Richiede Furnace {required}",
+      "levelPower": "Potenza del livello",
+      "skillPower": "Potenza delle abilità",
+      "starPower": "Potenza delle stelle",
+      "weaponPower": "Potenza dell'arma",
+      "totalPower": "Potenza totale",
+      "note": "La potenza conta il livello, le abilità, l'etichetta delle stelle e il livello dell'arma."
+    },
+    "skills": {
+      "title": "Abilità",
+      "aside": "Cinque livelli per abilità",
+      "toLevel": "Al livello {level}: {manuals} manuali",
+      "needsStar": "Richiede stella {star}",
+      "starMet": "Stella {star} raggiunta",
+      "talentTop": "Il talento è al livello massimo.",
+      "talentNeedsStar": "Il livello {level} richiede stella {star}",
+      "talentStarMet": "Livello {level}: stella {star} raggiunta"
+    },
+    "weapon": {
+      "title": "Arma esclusiva: {name}",
+      "level": "Livello dell'arma",
+      "widgetsForLevel": "Widget per il livello {level}",
+      "widgetsForLevels": "Widget per i livelli da {from} a {to}",
+      "expeditionBonus": "Bonus Spedizione",
+      "bonus": "Letalità {lethality}% · Salute {health}%",
+      "power": "Potenza dell'arma",
+      "unlocksAt": "Si sblocca al livello arma {level}"
+    },
+    "shards": {
+      "title": "Frammenti",
+      "owned": "Frammenti posseduti",
+      "goal": "Obiettivo",
+      "neededForGoal": "Necessari per l'obiettivo {goal}",
+      "enough": "Frammenti sufficienti",
+      "shortBy": "Mancano",
+      "yes": "Sì",
+      "sources": "Fonti di frammenti"
+    },
+    "stats": {
+      "title": "Statistiche al livello 80",
+      "explorationAt": "Esplorazione a {stars}",
+      "expeditionAt": "Spedizione a {stars}",
+      "explorationFull": "Esplorazione a 5.0",
+      "expeditionFull": "Spedizione a 5.0",
+      "exploration": "Att {attack} · Dif {defense} · PS {health}",
+      "expedition": "Att {attack}% · Dif {defense}%",
+      "estimate": "Stima"
+    }
+  },
+  "plan": {
+    "title": "Pianifica Eroi",
+    "description": "Frammenti, manuali delle abilità e Widget dall'attuale all'obiettivo",
+    "saved": "Piano salvato {date}",
+    "close": "Chiudi",
+    "save": "Salva piano",
+    "noHeroes": "Ancora nessun eroe nel piano. Aggiungi sopra un eroe posseduto, poi alza i suoi obiettivi.",
+    "add": {
+      "title": "Aggiungi un eroe",
+      "allIn": "Ogni eroe posseduto è nel piano. Attiva Posseduto su un eroe per pianificarlo.",
+      "selectLabel": "Eroe da aggiungere",
+      "button": "Aggiungi eroe"
+    },
+    "block": {
+      "remove": "Rimuovi {hero} dal piano",
+      "starTo": "{stars} a",
+      "starGoal": "Obiettivo stelle di {hero}",
+      "levelTo": "{current} a",
+      "goalLabel": "Obiettivo {name} di {hero}",
+      "note": "I valori attuali vengono dall'eroe nella pagina. Cambiali lì."
+    },
+    "unmet": {
+      "title": "I livelli delle abilità richiedono una stella più alta.",
+      "item": "{hero}: {skill} livello {level} richiede stella {star}",
+      "message": "{items}. Alza l'obiettivo delle stelle o abbassa quello delle abilità."
+    },
+    "shardsUsed": "Frammenti usati: {own} dell'eroe e {general} generali, {total} in tutto. Un eroe usa prima i propri frammenti.",
+    "result": {
+      "title": "Risultato, {steps} passi",
+      "widgets": "Widget",
+      "weaponSkills": "{count, plural, one {{amount} abilità dell'arma sbloccata} other {{amount} abilità dell'arma sbloccate}}",
+      "note": "La potenza non fa parte di Pianifica Eroi. Il calcolatore non restituisce tempi e non accetta la velocità.",
+      "heads": {
+        "hero": "Eroe",
+        "starSteps": "Passi di stella",
+        "skillLevels": "Livelli abilità",
+        "shards": "Frammenti",
+        "widgets": "Widget"
+      },
+      "tableLabel": "Tabella del risultato del piano"
+    },
+    "events": {
+      "svs": "SvS State of Power",
+      "allianceShowdown": "Alliance Showdown",
+      "kingOfIcefield": "King of Icefield",
+      "hallOfChief": "Hall of Chief"
+    }
+  },
+  "export": {
+    "button": "Esporta negli Eventi principali",
+    "nothing": "Il piano non richiede frammenti o Widget da esportare.",
+    "shardsGroup": "per i frammenti",
+    "widgetsGroup": "per i Widget",
+    "widgets": "Widget",
+    "manualsReason": "Nessun evento assegna punti ai manuali delle abilità",
+    "shards": {
+      "Legendary": "Mythic Hero Shards",
+      "Epic": "Epic Hero Shards",
+      "Rare": "Rare Hero Shards"
+    }
+  },
+  "service": {
+    "generalShard": {
+      "Legendary": "Mythic General Hero Shard",
+      "Epic": "Epic General Hero Shard",
+      "Rare": "Rare General Hero Shard"
+    }
+  }
+}

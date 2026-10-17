@@ -1,0 +1,117 @@
+{
+  "unknown": "Desconocido",
+  "describe": {
+    "state": "Estado {number}",
+    "empty": "Aún sin detalles"
+  },
+  "coreEvents": {
+    "svs": "SvS",
+    "showdown": "Alliance Showdown",
+    "king": "King of Icefield",
+    "hall": "Hall of Chief"
+  },
+  "count": "{count, plural, one {{amount} jefe} other {{amount} jefes}}",
+  "card": {
+    "active": "Activo",
+    "noNotes": "Sin notas",
+    "furnace": "Furnace",
+    "state": "Estado",
+    "created": "Creado: {date}",
+    "lastModified": "Última modificación: {date}",
+    "setActive": "Definir como activo",
+    "edit": "Editar",
+    "delete": "Eliminar"
+  },
+  "dialog": {
+    "editTitle": "Editar jefe",
+    "newTitle": "Nuevo jefe",
+    "newDescription": "Ponle un nombre. Lo demás es opcional.",
+    "cancel": "Cancelar",
+    "save": "Guardar cambios",
+    "create": "Crear jefe",
+    "errors": {
+      "name": "Escribe un nombre para este jefe.",
+      "stateNumber": "Escribe un número entero de 1 a {max}.",
+      "serverStartDate": "Escribe una fecha que no sea futura."
+    },
+    "name": "Nombre",
+    "stateNumber": {
+      "label": "Número de estado",
+      "hint": "El estado donde vive tu jefe. Número entero."
+    },
+    "serverStartDate": {
+      "label": "Fecha de inicio del servidor",
+      "info": {
+        "label": "Dónde encontrar la fecha de inicio del servidor",
+        "screen": "Abre el juego y ve a la pantalla Servidor desde tu perfil.",
+        "date": "Lee la fecha en que abrió el servidor. Si solo muestra el número de día del servidor, cuenta esa cantidad de días hacia atrás desde hoy.",
+        "missing": "¿No hay fecha en pantalla? Pregunta al líder de tu alianza o revisa el chat del estado.",
+        "tolerance": "Una fecha con 21 días de diferencia hacia cualquier lado es suficiente. Los desbloqueos de investigación usan 150 y 600 días, así que tres semanas de error rara vez cambian el resultado."
+      }
+    },
+    "generation": {
+      "label": "Héroes desbloqueados hasta",
+      "hint": "Los héroes de generaciones posteriores siguen ocultos en la página de Héroes y en el Plan.",
+      "preLegendary": "Generación 0 (antes de Legendary)",
+      "numbered": "Generación {generation}"
+    },
+    "events": {
+      "legend": "Eventos principales mostrados",
+      "shownOf": "{shown} de {total}",
+      "hint": "Los eventos ocultos salen de las pestañas de Eventos principales y de su Registro de eventos. Puedes volver a activarlos cuando quieras."
+    },
+    "notes": "Notas",
+    "packs": {
+      "legend": "Paquetes",
+      "constructionLabel": "Paquete de construcción",
+      "constructionHint": "Abre el segundo constructor en la página de Edificios.",
+      "constructionBusy": "El segundo constructor está haciendo una mejora. Termínala o cancélala primero para desactivar esto.",
+      "marchLabel": "Paquete de cola de marcha",
+      "marchHint": "Agrega una cola de marcha. Cuenta en la página de Bonificaciones."
+    }
+  },
+  "delete": {
+    "title": "Eliminar jefe",
+    "cancel": "Cancelar",
+    "confirmButton": "Eliminar jefe",
+    "confirm": "¿Seguro que quieres eliminar “<strong>{name}</strong>”?",
+    "summary": "{details} · creado {date}",
+    "note": "Esto quita al jefe y todos sus niveles, metas y notas de este dispositivo. No hay forma de recuperarlo cuando termine el Deshacer de 10 segundos.",
+    "exportBackup": "Exportar un respaldo primero"
+  },
+  "page": {
+    "title": "Jefes",
+    "newChief": "Nuevo jefe",
+    "sort": {
+      "label": "Ordenar por",
+      "options": {
+        "lastModified": "Última modificación",
+        "createdAt": "Fecha de creación",
+        "name": "Nombre"
+      }
+    },
+    "subline": {
+      "none": "Aún no hay jefes.",
+      "total": "{chiefs}.",
+      "withActive": "{chiefs}. {name} está activo."
+    },
+    "toasts": {
+      "backupTitle": "Respaldo descargado",
+      "deleted": "{name} eliminado",
+      "undo": "Deshacer"
+    },
+    "loading": "Leyendo los datos guardados en este navegador. La lista aparece cuando esté lista.",
+    "empty": {
+      "title": "Aún no hay jefes",
+      "description": "Crea un jefe para llevar el registro de edificios, héroes, equipo, investigación y tu plan de mejoras. Todo se queda en este navegador.",
+      "restore": "Restaurar un respaldo en Ajustes"
+    },
+    "search": {
+      "label": "Buscar por nombre",
+      "showing": "Mostrando {shown} de {total}",
+      "noMatchTitle": "Ningún jefe coincide con “{search}”",
+      "noMatchDescription": "Revisa la ortografía o borra la búsqueda para ver los {count} jefes.",
+      "clear": "Borrar búsqueda"
+    }
+  }
+}

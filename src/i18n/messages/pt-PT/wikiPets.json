@@ -1,0 +1,52 @@
+{
+  "line": "{pets} mascotes. Só referência, nada aqui é guardado.",
+  "roster": {
+    "title": "Mascotes",
+    "count": "{shown} de {total} mascotes",
+    "search": "Pesquisar",
+    "searchPlaceholder": "Pesquisar {count} mascotes",
+    "rarity": "Raridade",
+    "all": "Todos",
+    "empty": "Nenhum mascote corresponde a estes filtros.",
+    "summary": "Nível máximo {level}, refinamento até {percent}",
+    "percentValue": "{value}%"
+  },
+  "unlock": {
+    "withFurnace": "Dia {days}, Furnace {level}",
+    "withPet": "Dia {days}, {pet} {level}",
+    "daysOnly": "Dia {days}",
+    "label": "Desbloqueio: {requirement}"
+  },
+  "detail": {
+    "maxLevel": "Nível máximo",
+    "maxRefinement": "Refinamento máximo",
+    "unlock": "Requisito de desbloqueio",
+    "cooldown": "Recarga da habilidade",
+    "duration": "Duração da habilidade",
+    "tierCooldown": "{value}",
+    "maxPower": "Poder máximo",
+    "levelPower": "Poder de nível e avanço no nível máximo",
+    "refiningPower": "Poder de refinamento no refinamento máximo"
+  },
+  "skill": {
+    "title": "Habilidade",
+    "meta": "{count, plural, one {{amount} nível} other {{amount} níveis}}",
+    "level": "Nív. {level}",
+    "percent": "{value}%"
+  },
+  "levels": {
+    "title": "Tabela de níveis",
+    "level": "Nível {level}",
+    "columns": {
+      "level": "Nível",
+      "food": "Comida do mascote",
+      "attack": "Ataque das tropas",
+      "defense": "Defesa das tropas",
+      "power": "Poder das tropas",
+      "materials": "Materiais de avanço"
+    },
+    "refined": "{value} (refinado {refined})",
+    "none": "Nenhum"
+  },
+  "recordLine": "Mascote {rarity}, nível máximo {level}. Só referência, nada aqui é guardado."
+}

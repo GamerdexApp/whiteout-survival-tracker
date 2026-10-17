@@ -1,0 +1,231 @@
+{
+  "page": {
+    "title": "Ringkasan"
+  },
+  "header": {
+    "state": "State {number}",
+    "furnace": "Furnace {level}",
+    "serverAge": "Usia server sekitar {days} hari",
+    "derived": "Disusun dari halaman lainmu"
+  },
+  "tiles": {
+    "furnace": {
+      "label": "Furnace",
+      "steps": "{order} dari {total} langkah",
+      "unknown": "Tidak diketahui",
+      "unknownHint": "Atur Furnace di Bangunan"
+    },
+    "dailies": {
+      "label": "Harian",
+      "value": "{done} / {total}",
+      "tasks": "Tugasku selesai hari ini",
+      "missions": "Misi dalam game selesai"
+    },
+    "events": {
+      "label": "Event",
+      "live": "{amount} berlangsung",
+      "coreDay": "{event} {day}",
+      "moreThisWeek": "{amount} lagi minggu ini",
+      "noneThisWeek": "Tidak ada minggu ini"
+    },
+    "skins": {
+      "label": "Skin",
+      "value": "{owned} / {total}",
+      "hint": "Skin dimiliki"
+    },
+    "vip": {
+      "label": "VIP",
+      "value": "VIP {level}",
+      "unknown": "Tidak diketahui",
+      "hint": "Dari XP VIP-mu",
+      "unknownHint": "Isi XP VIP-mu di VIP"
+    },
+    "prosperity": {
+      "label": "Kemakmuran pulau",
+      "possible": "dari {max} maksimum",
+      "locked": "Terkunci",
+      "lockedHint": "Butuh Furnace {level}"
+    },
+    "generation": {
+      "label": "Generasi pahlawan",
+      "allUnlocked": "Semua generasi terbuka",
+      "shouldBeOpen": "Generasi {next} seharusnya terbuka",
+      "onDay": "Generasi {next} di hari server {day}",
+      "inDays": "Generasi {next} sekitar {days} hari lagi"
+    }
+  },
+  "events": {
+    "title": "Event",
+    "openCalendar": "Buka kalender",
+    "liveNow": "Berlangsung",
+    "liveBadge": "Berlangsung",
+    "nextUp": "Berikutnya, dari halaman eventmu",
+    "coreLine": "{day} dari {count}, {name}. Core events",
+    "runLine": "{length}. Berlangsung",
+    "empty": "Belum ada event ditambahkan",
+    "addEvent": "Tambah event",
+    "noLive": "Tidak ada yang berjalan sekarang."
+  },
+  "coreToday": {
+    "title": "{event} hari ini",
+    "open": "Core events",
+    "dayLine": "{day}, {name}",
+    "plan": "Rencana hari ini {points} poin",
+    "checklist": "Daftar periksa",
+    "done": "{done} dari {total} selesai",
+    "progress": "Progres daftar periksa",
+    "noActions": "Tidak ada aksi yang direncanakan hari ini.",
+    "castleSignedUp": "Sudah daftar jabatan Castle untuk {day}",
+    "castleOpen": "Daftar jabatan Castle untuk {day}",
+    "logLocked": "{locked} dari {total} hari terkunci di Log event.",
+    "todayLocked": "{day} terkunci.",
+    "todayOpen": "{day} belum dicatat.",
+    "openChecklist": "Buka daftar periksa",
+    "openLog": "Buka log event"
+  },
+  "queues": {
+    "title": "Antrean berjalan",
+    "running": "{count} berjalan",
+    "construction": "Konstruksi {number}",
+    "researchMain": "Riset",
+    "researchWarAcademy": "War Academy",
+    "training": "Latihan {name}",
+    "learning": "Belajar",
+    "task": {
+      "construction": "{name} ke {level}",
+      "research": "{name} ke level {level}",
+      "training": "Pasukan {tier}",
+      "learning": "{name}, {skill}"
+    },
+    "idle": "Kosong",
+    "idleBuildings": "Kosong, tekan Mulai upgrade di Bangunan",
+    "idleResearch": "Kosong, tekan Mulai upgrade di Riset",
+    "progress": "Progres {title}"
+  },
+  "lastResult": {
+    "title": "Hasil event terakhir",
+    "open": "Buka di Riwayat",
+    "days": "Hari 1 sampai 5. Battle Phase dipisah.",
+    "plan": "Rencana",
+    "actual": "Aktual",
+    "difference": "Selisih",
+    "overall": "Peringkat keseluruhan",
+    "alliance": "Peringkat aliansi",
+    "upgrades": "Upgrade terencana selesai",
+    "upgradesOf": "{done} dari {total}"
+  },
+  "server": {
+    "title": "Usia server",
+    "edit": "Ubah Chief",
+    "age": "Sekitar {days} hari, lebih kurang {tolerance}",
+    "unknown": "Tidak diketahui. Isi tanggal mulai server di Ubah Chief.",
+    "fromDate": "Dari tanggal mulai server, {date}.",
+    "warAcademy": "Riset War Academy",
+    "t12": "Riset T12",
+    "open": "Terbuka",
+    "opensIn": "Terbuka sekitar {days} hari lagi",
+    "unknownUnlock": "Tidak diketahui",
+    "heroes": "Pahlawan terbuka sampai",
+    "generation": "Generasi {number}",
+    "estimate": "Hari pembukaan berasal dari linimasa server. Ubah di Ubah Chief jika servermu agak berbeda.",
+    "areas": {
+      "fireCrystal": "Level Fire Crystal",
+      "pets": "Hewan Peliharaan",
+      "experts": "Ahli"
+    },
+    "fcUpTo": "Sampai {level}",
+    "nothingYet": "Belum ada",
+    "countOf": "{unlocked} dari {total} terbuka",
+    "allUnlocked": "Semuanya terbuka.",
+    "generationName": "Generasi {number}",
+    "allGenerations": "Semua generasi terbuka.",
+    "next": {
+      "withDate": "Berikutnya: {names}, hari server {day}, {date}. Sekitar {days} hari lagi.",
+      "noDate": "Berikutnya: {names}, hari server {day}. Sekitar {days} hari lagi.",
+      "unknownAge": "Berikutnya: {names}, hari server {day}.",
+      "passed": "{names} seharusnya sudah terbuka menurut usia servermu, hari server {day}. Naikkan pengaturan di Ubah Chief."
+    }
+  },
+  "dailies": {
+    "title": "Harian hari ini",
+    "open": "Buka Harian",
+    "activeness": "{now} dari {top} Activeness",
+    "activenessBar": "Activeness hari ini",
+    "missions": "Misi dalam game: {done} dari {total} selesai",
+    "tasks": "{done} dari {total} Tugasku",
+    "tasksBar": "Tugasku selesai hari ini",
+    "stillOpen": "Masih terbuka di Tugasku, {shown} pertama dari {total}",
+    "allDone": "Semua tugas di Tugasku sudah selesai hari ini.",
+    "noTasks": "Belum ada tugas di Tugasku."
+  },
+  "planner": {
+    "title": "Kekurangan perencana",
+    "short": "Kurang {amount}",
+    "covered": "Tidak ada kekurangan",
+    "goals": "Target dari {pages}. Biaya dari paket data, stok dari Sumber Daya.",
+    "noGoals": "Belum ada target. Atur target dengan Rencana di Bangunan, Riset, dan halaman lain.",
+    "pages": {
+      "buildings": "Bangunan",
+      "research": "Riset",
+      "heroes": "Pahlawan",
+      "troops": "Pasukan",
+      "pets": "Hewan Peliharaan",
+      "chiefGear": "Perlengkapan Chief",
+      "chiefCharms": "Jimat Chief"
+    },
+    "separator": ", ",
+    "line": "Butuh {need} · Punya {have}",
+    "shortBy": "Kurang {amount}",
+    "enough": "Cukup",
+    "updateStock": "Perbarui stok di Sumber Daya",
+    "incomplete": "Level target punya biaya Tidak diketahui di paket data, jadi total ini belum lengkap."
+  },
+  "progress": {
+    "title": "Progres per area",
+    "hint": "Dimiliki atau di-level dibanding total paket data",
+    "count": "{owned} / {total}",
+    "furnace": "Furnace",
+    "furnaceOf": "{level} dari {max}",
+    "furnaceUnknown": "Tidak diketahui",
+    "areas": {
+      "buildings": "Bangunan",
+      "heroes": "Pahlawan",
+      "chiefGear": "Perlengkapan Chief",
+      "chiefCharms": "Jimat Chief",
+      "experts": "Ahli",
+      "pets": "Hewan Peliharaan",
+      "research": "Riset",
+      "allianceTech": "Teknologi aliansi",
+      "skins": "Skin"
+    },
+    "locked": {
+      "daybreakIsland": "Daybreak Island",
+      "requirement": "Terkunci. Butuh Furnace {level}, kurang {count, plural, other {{amount} level}}"
+    }
+  },
+  "power": {
+    "title": "Kekuatan",
+    "total": "Total kekuatan",
+    "complete": "Kekuatan saat ini dibanding yang paling banyak bisa diberikan tiap grup jika semuanya di level tertinggi pada konten yang dibuka pengaturan unlock-mu. Grup tanpa maksimum dihitung apa adanya.",
+    "incomplete": "Perbandingan yang sama. {count, plural, other {{amount} item}} tidak punya nilai kekuatan di data, jadi {count, plural, other {tidak dihitung}}.",
+    "groupWithoutValue": "{count, plural, other {{amount} item}} tidak punya nilai kekuatan di data",
+    "groups": {
+      "buildings": "Bangunan",
+      "research": "Riset",
+      "heroes": "Pahlawan",
+      "heroGear": "Perlengkapan Pahlawan",
+      "chiefGear": "Perlengkapan Chief",
+      "chiefCharms": "Jimat Chief",
+      "experts": "Ahli",
+      "pets": "Hewan Peliharaan",
+      "troops": "Pasukan"
+    },
+    "ofPossible": "dari {possible} maksimum",
+    "totalProgress": "Total kekuatan dibanding yang paling mungkin",
+    "percentOfPossible": "{percent}% dari yang paling mungkin",
+    "rowOfPossible": "{power} dari {possible}",
+    "progress": "Kekuatan {group} dibanding yang paling mungkin",
+    "noMaximum": "Tanpa maksimum, bergantung pada yang kamu isi",
+    "noCapNote": "Pasukan dan Perlengkapan Pahlawan tidak punya batas, jadi total kekuatanmu bisa melewati total maksimum dengan melatih lebih banyak pasukan dan meningkatkan perlengkapan pahlawan. Keduanya dihitung apa adanya dalam total maksimum."
+  }
+}

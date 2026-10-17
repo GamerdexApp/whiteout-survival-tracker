@@ -1,0 +1,67 @@
+{
+  "line": "Qué fuentes de mejoras se aplican en cada uno de los {modes} modos de juego: sí, no o parcial para {sources} tipos de mejora.",
+  "matrix": {
+    "title": "Matriz de mejoras",
+    "meta": "{modes} modos, {sources} tipos de mejora",
+    "table": "Fuentes de mejoras por modo de juego",
+    "mode": "Modo de juego"
+  },
+  "sources": {
+    "cityBonusWarsBuffs": {
+      "short": "Bonif. ciudad",
+      "full": "Bonificación de ciudad y mejoras de guerra"
+    },
+    "deploymentCapacity": {
+      "short": "Cap. despl.",
+      "full": "Capacidad de despliegue"
+    },
+    "petSkills": {
+      "short": "Hab. mascota",
+      "full": "Habilidades de mascota"
+    },
+    "daybreakIsland": {
+      "short": "Daybreak",
+      "full": "Daybreak Island"
+    },
+    "presidentSkills": {
+      "short": "Presidente",
+      "full": "Habilidades del presidente"
+    },
+    "ministerBuff": {
+      "short": "Ministro",
+      "full": "Mejora de ministro"
+    },
+    "territoryBonuses": {
+      "short": "Territorio",
+      "full": "Bonificaciones de territorio"
+    },
+    "facilityBuff": {
+      "short": "Instalación",
+      "full": "Mejora de instalación"
+    },
+    "marchAccelerator": {
+      "short": "Acel. marcha",
+      "full": "Acelerador de marcha"
+    },
+    "frostdragonTyrantTitles": {
+      "short": "Tyrant",
+      "full": "Títulos de Frostdragon Tyrant"
+    },
+    "frostSphereDomainBonus": {
+      "short": "Frost Sphere",
+      "full": "Bonificación de dominio de Frost Sphere"
+    }
+  },
+  "applicability": {
+    "yes": "Sí",
+    "no": "No",
+    "partial": "Parcial"
+  },
+  "notes": {
+    "title": "Notas por modo de juego",
+    "table": "Notas por modo de juego",
+    "petSkillsAutoApplied": "Habilidades de mascota aplicadas automáticamente",
+    "note": "Nota",
+    "noNote": "Ninguna"
+  }
+}

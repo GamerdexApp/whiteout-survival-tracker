@@ -1,0 +1,262 @@
+{
+  "page": {
+    "title": "영웅"
+  },
+  "view": {
+    "tabsLabel": "영웅",
+    "heroesTab": "영웅",
+    "gearTab": "영웅 장비",
+    "heroesSubline": "{chief} · {total}명 중 {owned}명 보유",
+    "gearSubline": "{chief} · {count, plural, other {장비 세트 {amount}개}}"
+  },
+  "common": {
+    "owned": "보유",
+    "ownedLabel": "{hero} 보유",
+    "starLabel": "{hero} 별",
+    "levelLabel": "{hero} 레벨",
+    "talentLabel": "{hero} 재능",
+    "skillLabel": "{hero} {skill}",
+    "weaponLevelLabel": "{hero} {weapon} 레벨",
+    "shardsOwnedLabel": "{hero} 보유 조각",
+    "starAndTier": "별과 단계",
+    "level": "레벨",
+    "noGoal": "목표 없음",
+    "shards": "조각",
+    "totalPower": "총 전투력",
+    "unknown": "알 수 없음",
+    "plan": "계획",
+    "generation": "{generation}세대",
+    "exploration": "탐험",
+    "expedition": "원정",
+    "talent": "재능",
+    "maxLevelSuffix": "/ {max}",
+    "heroCount": "{count, plural, other {영웅 {amount}명}}"
+  },
+  "goalText": {
+    "to": "{goal}까지"
+  },
+  "card": {
+    "summary": "{rarity} · {heroClass} · {generation}",
+    "talentRow": "재능 {name}",
+    "shardsOf": "/ {needed}",
+    "enoughShards": " 조각 충분",
+    "shortBy": " {amount} 부족",
+    "gearSet": "장비 세트",
+    "notOwnedHint": "별, 레벨, 스킬을 추적하려면 보유를 켜세요.",
+    "details": "상세"
+  },
+  "tab": {
+    "stats": {
+      "generations": "해금된 세대",
+      "generationsValue": "0~{max}",
+      "heroesOwned": "해금된 영웅 중 보유",
+      "legendaryOwned": "해금된 전설 중 보유",
+      "atMaxLevel": "80레벨",
+      "heroPower": "영웅 전투력",
+      "heroPowerUnknown": "영웅 전투력, 알 수 없음 {amount} 제외",
+      "withGoal": "목표 있음"
+    },
+    "search": {
+      "label": "영웅 검색",
+      "placeholder": "이름으로 영웅 {amount}명 검색"
+    },
+    "filters": "필터",
+    "maxOut": "최대로 올리기",
+    "status": "영웅 {total}명 중 {shown}명 표시 중. 이 영주는 0~{max}세대가 해금돼 있어요. 목표는 여기서 읽기 전용이며 계획에서 설정해요.",
+    "empty": {
+      "title": "일치하는 영웅이 없어요",
+      "description": "검색어를 바꾸거나 필터를 초기화해 모든 영웅을 보세요.",
+      "reset": "초기화"
+    },
+    "showMore": "{count, plural, other {영웅 {amount}명 더 보기}}",
+    "toast": {
+      "notOwnedTitle": "{name} 미보유",
+      "notOwnedMessage": "별, 레벨, 스킬은 보유를 다시 켤 때를 위해 유지돼요.",
+      "undo": "실행 취소",
+      "maxedTitle": "영웅을 최대로 올렸어요",
+      "maxedMessage": "{heroes}을(를) 업데이트했어요."
+    }
+  },
+  "filtersFlyout": {
+    "title": "필터",
+    "description": "페이지에 표시할 영웅을 고르세요",
+    "reset": "초기화",
+    "show": "{heroes} 보기",
+    "all": "전체",
+    "generation": "세대",
+    "rarity": "희귀도",
+    "heroClass": "직업",
+    "ownership": "보유 여부",
+    "order": "정렬",
+    "notSaved": "필터는 저장되지 않아요.",
+    "rarities": {
+      "Legendary": "전설",
+      "Epic": "에픽",
+      "Rare": "희귀"
+    },
+    "classes": {
+      "Infantry": "보병",
+      "Lancer": "창병",
+      "Marksman": "궁병"
+    },
+    "ownershipOptions": {
+      "all": "전체",
+      "owned": "보유",
+      "notOwned": "미보유"
+    },
+    "orderOptions": {
+      "owned": "보유 우선, 그다음 최신 세대",
+      "generation": "최신 세대순",
+      "name": "이름순",
+      "power": "총 전투력 높은 순"
+    }
+  },
+  "maxOut": {
+    "title": "영웅 최대로 올리기",
+    "scopeLabel": "최대로 올릴 영웅",
+    "scope": {
+      "owned": "보유 영웅",
+      "unlocked": "해금된 모든 영웅, 보유로 표시",
+      "selected": "영웅 선택, 보유로 표시"
+    },
+    "searchLabel": "선택할 영웅 검색",
+    "searchPlaceholder": "이름으로 영웅 검색",
+    "selectShown": "표시된 영웅 선택",
+    "clear": "선택 해제",
+    "ownedTag": "보유",
+    "starAndTier": "별과 단계 5.0까지",
+    "level": "80레벨까지",
+    "levelHint": "스킬이 최대이고 오래된 영웅의 레벨을 1로 두려면 끄세요.",
+    "skills": "스킬 5까지",
+    "skillsHint": "탐험, 원정, 재능.",
+    "weapon": "전용 무기 10까지",
+    "note": "꺼 둔 항목은 그대로 유지돼요. 조각 수와 목표는 바뀌지 않아요. 적용 후 실행 취소할 수 있어요.",
+    "cancel": "취소",
+    "apply": "{heroes} 최대로 올리기"
+  },
+  "flyout": {
+    "fallbackTitle": "영웅",
+    "description": "{rarity} {heroClass}, {generation}세대",
+    "done": "완료",
+    "status": {
+      "title": "상태",
+      "furnaceNeeded": "{level}레벨에 필요한 Furnace",
+      "met": "충족",
+      "needsFurnace": "Furnace {required} 필요",
+      "levelPower": "레벨 전투력",
+      "skillPower": "스킬 전투력",
+      "starPower": "별 전투력",
+      "weaponPower": "무기 전투력",
+      "totalPower": "총 전투력",
+      "note": "전투력에는 레벨, 스킬, 별 표기, 무기 레벨이 포함돼요."
+    },
+    "skills": {
+      "title": "스킬",
+      "aside": "스킬당 5레벨",
+      "toLevel": "{level}레벨까지: 매뉴얼 {manuals}개",
+      "needsStar": "별 {star} 필요",
+      "starMet": "별 {star} 충족",
+      "talentTop": "재능이 최고 레벨이에요.",
+      "talentNeedsStar": "{level}레벨에 별 {star} 필요",
+      "talentStarMet": "{level}레벨: 별 {star} 충족"
+    },
+    "weapon": {
+      "title": "전용 무기: {name}",
+      "level": "무기 레벨",
+      "widgetsForLevel": "{level}레벨에 필요한 Widgets",
+      "widgetsForLevels": "{from}~{to}레벨에 필요한 Widgets",
+      "expeditionBonus": "원정 보너스",
+      "bonus": "살상력 {lethality}% · 체력 {health}%",
+      "power": "무기 전투력",
+      "unlocksAt": "무기 {level}레벨에 해금"
+    },
+    "shards": {
+      "title": "조각",
+      "owned": "보유 조각",
+      "goal": "목표",
+      "neededForGoal": "목표 {goal}에 필요",
+      "enough": "조각 충분",
+      "shortBy": "부족분",
+      "yes": "예",
+      "sources": "조각 획득처"
+    },
+    "stats": {
+      "title": "80레벨 능력치",
+      "explorationAt": "{stars}의 탐험",
+      "expeditionAt": "{stars}의 원정",
+      "explorationFull": "5.0의 탐험",
+      "expeditionFull": "5.0의 원정",
+      "exploration": "공격 {attack} · 방어 {defense} · HP {health}",
+      "expedition": "공격 {attack}% · 방어 {defense}%",
+      "estimate": "추정"
+    }
+  },
+  "plan": {
+    "title": "영웅 계획",
+    "description": "현재에서 목표까지 필요한 조각, 스킬 매뉴얼, Widgets",
+    "saved": "{date}에 계획 저장됨",
+    "close": "닫기",
+    "save": "계획 저장",
+    "noHeroes": "계획에 영웅이 아직 없어요. 위에서 보유 영웅을 추가한 뒤 목표를 올리세요.",
+    "add": {
+      "title": "영웅 추가",
+      "allIn": "보유한 모든 영웅이 계획에 있어요. 계획하려면 영웅의 보유를 켜세요.",
+      "selectLabel": "추가할 영웅",
+      "button": "영웅 추가"
+    },
+    "block": {
+      "remove": "계획에서 {hero} 삭제",
+      "starTo": "{stars}에서",
+      "starGoal": "{hero} 별 목표",
+      "levelTo": "{current}에서",
+      "goalLabel": "{hero} {name} 목표",
+      "note": "현재 값은 페이지의 영웅에서 가져와요. 거기서 바꾸세요."
+    },
+    "unmet": {
+      "title": "스킬 레벨에 더 높은 별이 필요해요.",
+      "item": "{hero}: {skill} {level}레벨에 별 {star} 필요",
+      "message": "{items}. 별 목표를 올리거나 스킬 목표를 낮추세요."
+    },
+    "shardsUsed": "사용한 조각: 영웅 고유 {own}개, 범용 {general}개, 총 {total}개. 영웅은 고유 조각을 먼저 써요.",
+    "result": {
+      "title": "결과, {steps}단계",
+      "widgets": "Widgets",
+      "weaponSkills": "{count, plural, other {무기 스킬 {amount}개 해금}}",
+      "note": "전투력은 영웅 계획에 포함되지 않아요. 계산기는 시간을 반환하지 않고 속도 입력도 받지 않아요.",
+      "heads": {
+        "hero": "영웅",
+        "starSteps": "별 단계",
+        "skillLevels": "스킬 레벨",
+        "shards": "조각",
+        "widgets": "Widgets"
+      },
+      "tableLabel": "계획 결과 표"
+    },
+    "events": {
+      "svs": "SvS State of Power",
+      "allianceShowdown": "Alliance Showdown",
+      "kingOfIcefield": "King of Icefield",
+      "hallOfChief": "Hall of Chief"
+    }
+  },
+  "export": {
+    "button": "핵심 이벤트로 내보내기",
+    "nothing": "내보낼 계획에 조각이나 Widgets가 필요하지 않아요.",
+    "shardsGroup": "조각용",
+    "widgetsGroup": "Widgets용",
+    "widgets": "Widgets",
+    "manualsReason": "스킬 매뉴얼에 점수를 주는 이벤트는 없어요",
+    "shards": {
+      "Legendary": "Mythic Hero Shards",
+      "Epic": "Epic Hero Shards",
+      "Rare": "Rare Hero Shards"
+    }
+  },
+  "service": {
+    "generalShard": {
+      "Legendary": "Mythic General Hero Shard",
+      "Epic": "Epic General Hero Shard",
+      "Rare": "Rare General Hero Shard"
+    }
+  }
+}

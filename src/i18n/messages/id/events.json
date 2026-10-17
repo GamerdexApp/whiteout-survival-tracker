@@ -1,0 +1,373 @@
+{
+  "page": {
+    "title": "Event",
+    "subline": "{chief} · {details}"
+  },
+  "tabs": {
+    "label": "Tampilan event",
+    "calendar": "Kalender",
+    "mine": "Eventku",
+    "history": "Riwayat event"
+  },
+  "actions": {
+    "addDetails": "Tambah detail event",
+    "addEvent": "Tambah event"
+  },
+  "categories": {
+    "alliance": "Aliansi",
+    "solo": "Solo",
+    "rookie": "Pemula",
+    "holiday": "Perayaan"
+  },
+  "gives": {
+    "rewards": "Hanya hadiah",
+    "personal": "Peringkat pribadi",
+    "alliance": "Peringkat aliansi",
+    "both": "Kedua peringkat"
+  },
+  "weekdays": {
+    "short": {
+      "sunday": "Min",
+      "monday": "Sen",
+      "tuesday": "Sel",
+      "wednesday": "Rab",
+      "thursday": "Kam",
+      "friday": "Jum",
+      "saturday": "Sab"
+    },
+    "initial": {
+      "sunday": "M",
+      "monday": "S",
+      "tuesday": "S",
+      "wednesday": "R",
+      "thursday": "K",
+      "friday": "J",
+      "saturday": "S"
+    }
+  },
+  "months": {
+    "january": "Januari",
+    "february": "Februari",
+    "march": "Maret",
+    "april": "April",
+    "may": "Mei",
+    "june": "Juni",
+    "july": "Juli",
+    "august": "Agustus",
+    "september": "September",
+    "october": "Oktober",
+    "november": "November",
+    "december": "Desember"
+  },
+  "monthsShort": {
+    "january": "Jan",
+    "february": "Feb",
+    "march": "Mar",
+    "april": "Apr",
+    "may": "Mei",
+    "june": "Jun",
+    "july": "Jul",
+    "august": "Agu",
+    "september": "Sep",
+    "october": "Okt",
+    "november": "Nov",
+    "december": "Des"
+  },
+  "format": {
+    "weekdayDay": "{weekday}, {date}",
+    "utcTime": "{time} UTC",
+    "dateTime": "{date}, {time}",
+    "range": "{start} sampai {end}",
+    "length": {
+      "minutes": "{count, plural, other {{amount} mnt}}",
+      "hours": "{count, plural, other {{amount} jam}}",
+      "days": "{count, plural, other {{amount} hari}}",
+      "weeks": "{count, plural, other {{amount} minggu}}",
+      "months": "{count, plural, other {{amount} bulan}}"
+    }
+  },
+  "repeat": {
+    "none": "Tidak berulang",
+    "weekly": "Mingguan pada {days}",
+    "weeklyAny": "Setiap minggu",
+    "every": {
+      "hours": "{count, plural, other {Setiap {amount} jam}}",
+      "days": "{count, plural, other {Setiap {amount} hari}}",
+      "weeks": "{count, plural, other {Setiap {amount} minggu}}",
+      "months": "{count, plural, other {Setiap {amount} bulan}}"
+    }
+  },
+  "empty": {
+    "title": "Belum ada event",
+    "description": "Tambah event yang kamu mainkan. Atur tanggal dan jam mulai sekali, dan kalender serta daftar mendatang tetap terbarui.",
+    "steps": {
+      "pick": {
+        "title": "Pilih event.",
+        "text": "Pilih dari event di data game."
+      },
+      "start": {
+        "title": "Atur mulainya.",
+        "text": "Isi tanggal dan jam putaran berikutnya. Beberapa event punya dua putaran atau berjalan beberapa hari."
+      },
+      "roll": {
+        "title": "Biarkan berjalan.",
+        "text": "Setelah putaran berakhir, tanggal berikutnya terisi dari aturan pengulangan."
+      }
+    }
+  },
+  "calendar": {
+    "previous": "Bulan sebelumnya",
+    "next": "Bulan berikutnya",
+    "today": "Hari ini",
+    "zoneLabel": "Zona waktu",
+    "utc": "UTC",
+    "local": "Waktuku",
+    "monthTitle": "{month} {year}",
+    "nameWithRun": "{name}, {run}",
+    "dayTail": "h{day}",
+    "chipText": "{name} {tail}"
+  },
+  "upcoming": {
+    "title": "Mendatang",
+    "empty": "Tidak ada putaran dalam 30 hari ke depan.",
+    "now": "Sedang berlangsung",
+    "today": "Hari ini",
+    "tomorrow": "Besok",
+    "inDays": "{count, plural, other {{amount} hari lagi}}",
+    "timeAndLength": "{time}, {length}"
+  },
+  "mine": {
+    "intro": "{count, plural, other {{amount} event.}} Setelah putaran berakhir, tanggal putaran berikutnya diperbarui sendiri dari aturan pengulangan, jadi kalender selalu menampilkan yang berikutnya.",
+    "run": "Putaran",
+    "rangeLine": "{range}, {time}",
+    "shortLine": "{when}, {length}",
+    "repeat": "Ulangi: {rule}",
+    "coreTag": "Hasil di Core Events",
+    "coreLink": "Buka Core Events",
+    "ended": "Berakhir",
+    "logged": "Tercatat",
+    "edit": "Ubah",
+    "remove": "Hapus"
+  },
+  "toast": {
+    "removedTitle": "{name} dihapus",
+    "removedMessage": "Hasil tersimpan tetap ada di Riwayat event.",
+    "undo": "Urungkan",
+    "resultSavedTitle": "Hasil tersimpan",
+    "resultSavedMessage": "{name} ditambahkan ke Riwayat event."
+  },
+  "add": {
+    "title": "Tambah event",
+    "description": "Pilih event dari data game",
+    "close": "Tutup",
+    "searchLabel": "Cari event",
+    "searchPlaceholder": "Cari {amount} event",
+    "categoryLabel": "Kategori event",
+    "all": "Semua",
+    "categoryTab": "{name}, {amount}",
+    "showing": "Menampilkan {shown} dari {total} event. Pilih satu untuk mengatur tanggal dan jam mulainya.",
+    "none": "Tidak ada event yang cocok dengan pencarianmu.",
+    "noDuration": "Durasi tidak ada di data game",
+    "added": "Ditambahkan",
+    "button": "Tambah",
+    "addNamed": "Tambah {name}",
+    "showMore": "Tampilkan lagi"
+  },
+  "schedule": {
+    "description": "Atur kapan berjalan. Putaran berikutnya diperbarui sendiri.",
+    "cancel": "Batal",
+    "add": "Tambah event",
+    "save": "Simpan jadwal",
+    "howTitle": "Cara event berjalan",
+    "shape": {
+      "one": "Satu hari",
+      "several": "Beberapa hari",
+      "two": "Dua putaran per siklus"
+    },
+    "shapeHint": {
+      "one": "Satu putaran sehari. Ubah durasi untuk putaran singkat dalam menit atau jam.",
+      "several": "Satu putaran yang berlangsung beberapa hari.",
+      "two": "Dua putaran di tiap siklus, seperti dua musim atau dua hari kerja. Tiap putaran punya mulai, durasi, dan nama sendiri."
+    },
+    "runTitle": "Putaran {number}",
+    "runSingle": "Putaran",
+    "name": "Nama",
+    "startDate": "Tanggal mulai",
+    "startTime": "Jam mulai (UTC)",
+    "length": "Durasi",
+    "unit": "Satuan",
+    "runUnits": {
+      "minutes": "menit",
+      "hours": "jam",
+      "days": "hari"
+    },
+    "repeatTitle": "Ulangi",
+    "repeatKind": {
+      "none": "Tidak berulang",
+      "every": "Setiap",
+      "weekly": "Mingguan pada hari"
+    },
+    "every": "Setiap",
+    "weekdays": "Hari dalam seminggu",
+    "repeatUnits": {
+      "hours": "jam",
+      "days": "hari",
+      "weeks": "minggu",
+      "months": "bulan"
+    },
+    "gameSays": "Data game menyebut: {text}",
+    "gameSaysNoRule": "Data game menyebut: {text}",
+    "useSuggestion": "Pakai saran",
+    "everyError": "Isi angka di atas 0.",
+    "givesTitle": "Yang diberikan event",
+    "givesHint": "Diatur dari data game. Kamu bisa mengubahnya. Ini menentukan yang ditanyakan formulir hasil.",
+    "previewTitle": "Yang akan ditampilkan kalender",
+    "previewEmpty": "Isi tanggal dan durasi yang valid untuk melihat putarannya.",
+    "previewShort": "{range}, {time}",
+    "previewNote": "Saat putaran berakhir, tanggalnya maju sesuai aturan pengulangan. Kamu bisa mengubah tanggal apa pun."
+  },
+  "result": {
+    "title": "Tambah detail event",
+    "description": {
+      "participation": "Catat bahwa kamu ikut dan apa yang kamu dapat",
+      "milestones": "Poin dan target yang kamu capai",
+      "ranking": "Skor, peringkat, dan tonggak yang kamu capai",
+      "tier": "Tier liga dan posisi",
+      "waves": "Kesulitan, gelombang, poin, dan peringkat",
+      "skipped": "Catat bahwa kamu melewatkan putaran ini"
+    },
+    "cancel": "Batal",
+    "save": "Simpan hasil",
+    "noEvents": "Tambah event dulu. Hanya event di Eventku yang bisa dicatat, dan Core events dicatat di Core events.",
+    "whichTitle": "Event mana",
+    "event": "Event",
+    "versionsTag": "Versi",
+    "run": "Putaran",
+    "otherDate": "Tanggal lain",
+    "runDate": "Tanggal putaran",
+    "runLong": "{range} ({length})",
+    "runNamed": "{when}, {name}",
+    "notLogged": "{run}, belum dicatat",
+    "tookPartQuestion": "Apakah kamu ikut?",
+    "tookPart": "Ikut",
+    "skipped": "Melewatkan",
+    "coreNote": "Hanya event yang kamu tambahkan yang tercantum. Core events dicatat di Core events, bukan di sini.",
+    "versionTitle": "Versi",
+    "versionKnown": "Target untuk versi ini ada di data, jadi dicek dari poinmu.",
+    "versionUnknown": "Versi ini punya target dengan poin yang belum ada di data. Cek target itu secara manual.",
+    "participationTitle": "Event ini tidak punya skor atau peringkat",
+    "participationText": "Data game hanya mencantumkan hadiah, jadi tidak ada yang diskor. Catat bahwa kamu ikut, hadiah yang kamu dapat, dan catatan.",
+    "pointsFallback": "Poin",
+    "pointsReached": "{unit} tercapai",
+    "pointsHint": "Total di akhir event.",
+    "finalScore": "Skor akhir ({unit})",
+    "finalScoreHint": "Total {unit}-mu di akhir event.",
+    "rankingTitle": "Peringkat",
+    "yourRank": "Peringkatmu",
+    "allianceRank": "Peringkat aliansi",
+    "rankGroup": "Kelompok peringkat",
+    "rankGroupsHint": "Kelompok peringkat berasal dari data game: {groups} dan lainnya.",
+    "targetsTitle": "Target tercapai, dari poinmu",
+    "targetsCount": "{reached} dari {total} tercapai",
+    "targetPoints": "{points} {unit}",
+    "pointsMissing": "{unit}: poin belum ada di data",
+    "needsPurchase": "Butuh satu pembelian dengan nominal berapa pun.",
+    "targetsHint": "Dicek dari skor. Target dan hadiah berasal dari data game.",
+    "targetsHintUnknown": "Target dengan poin yang belum ada di data tidak pernah dicek dari skor. Cek secara manual.",
+    "tierTitle": "Liga",
+    "tier": "Tier",
+    "placement": "Posisimu di grup",
+    "starChange": "Perubahan bintang, dari data game",
+    "stars": "{count, plural, other {{amount} bintang}}",
+    "tiersHint": "Tier: {tiers}.",
+    "allianceTitle": "Aliansi",
+    "outcome": "Hasil aliansi di putaran ini",
+    "outcomeHint": "Opsional. Menang, kalah, atau seri.",
+    "outcomes": {
+      "none": "Belum diatur",
+      "won": "Menang",
+      "lost": "Kalah",
+      "drawn": "Seri"
+    },
+    "wavesTitle": "Kesulitan dan gelombang",
+    "difficulty": "Kesulitan yang kamu jalankan",
+    "difficultyFrom": "{name}, dari {points} poin aliansi",
+    "wavesCleared": "Gelombang selesai, 0 sampai {count}",
+    "wavesHint": "Data game mencantumkan {count} gelombang untuk {name}.",
+    "defenseTitle": "Poin pertahanan",
+    "yourPoints": "Poinmu",
+    "alliancePoints": "Poin aliansi",
+    "rewardLevel": "Level hadiah tercapai",
+    "rewardLevelNone": "Belum ada",
+    "level": "Level {level}",
+    "levelsHint": "Level butuh poin pribadi dan poin aliansi, dari data game.",
+    "rankingsTitle": "Peringkat",
+    "notesTitle": "Catatan",
+    "rewards": "Hadiah yang kamu dapat",
+    "rewardsPlaceholder": "Contoh: 2 Hero Shards, 500 Gems",
+    "notes": "Catatan",
+    "notesPlaceholder": "Apa pun yang perlu diingat tentang putaran ini"
+  },
+  "history": {
+    "emptyTitle": "Belum ada hasil tercatat",
+    "emptyText": "Tekan Tambah detail event untuk mencatat yang kamu dapat di putaran event. Hasil dan tren-mu tampil di sini.",
+    "eventFilter": "Event",
+    "allEvents": "Semua event",
+    "period": "Periode",
+    "months3": "3 bulan",
+    "months6": "6 bulan",
+    "allTime": "Semua waktu",
+    "intro": "Setiap hasil yang kamu catat, terbaru dulu. Core events dicatat di Core events dan tidak tampil di sini.",
+    "showing": "Menampilkan {shown} dari {total} hasil.",
+    "showingEvent": "{count, plural, other {Menampilkan {amount} hasil untuk {name}.}}",
+    "noneInPeriod": "Tidak ada hasil di periode ini.",
+    "showMore": "Tampilkan lagi",
+    "colDate": "Tanggal",
+    "colEvent": "Event",
+    "colScore": "Skor",
+    "colRank": "Peringkat",
+    "colAlliance": "Aliansi",
+    "colResult": "Hasil",
+    "colActions": "Aksi",
+    "none": "-",
+    "edit": "Ubah",
+    "editNamed": "Ubah hasil {name}",
+    "skipped": "Dilewatkan",
+    "tierOnly": "{tier} {placement}",
+    "stars": "{count, plural, other {{amount} bintang}}",
+    "waves": "{count, plural, other {{difficulty}, {amount} gelombang}}",
+    "targets": "{unit}, {reached} dari {total} target",
+    "tookPart": "Ikut",
+    "tookPartRewards": "Ikut, {rewards}",
+    "rankText": "Peringkat {rank}",
+    "allianceRankText": "aliansi {rank}",
+    "separator": " · ",
+    "defensePoints": "{score} poin pertahanan",
+    "scoreUnit": "{score} {unit}",
+    "noScore": "Tanpa skor",
+    "trendTitle": "Tren {name}",
+    "trendScore": "{unit} di akhir tiap event",
+    "trendRank": "Peringkatmu di akhir tiap event",
+    "metricLabel": "Metrik tren",
+    "metricScore": "Skor",
+    "metricRank": "Peringkat pribadi",
+    "chartLabel": "Grafik tren {name}",
+    "best": "Terbaik",
+    "average": "Rata-rata",
+    "latest": "Terbaru",
+    "change": "Perubahan",
+    "events": "{count, plural, other {{amount} event}}",
+    "changeVs": "dibanding {month}",
+    "changePercentVs": "{percent}% dibanding {month}",
+    "noPrevious": "Belum ada hasil sebelumnya",
+    "noTrend": "Event ini tidak punya skor atau peringkat untuk digrafikkan. Hasilnya ada di daftar di bawah."
+  },
+  "cycles": {
+    "title": "Siklus Core event",
+    "hint": "SvS, Alliance Showdown, dan King of Icefield berjalan dalam siklus tetap. Atur mulai berikutnya sekali dan semuanya berulang di kalender.",
+    "next": "Berikutnya {date}, berulang {repeat}",
+    "notSet": "Belum diatur",
+    "set": "Atur siklus",
+    "edit": "Ubah siklus"
+  }
+}

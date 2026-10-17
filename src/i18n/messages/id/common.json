@@ -1,0 +1,19 @@
+{
+  "duration": {
+    "days": "{value}h",
+    "hours": "{value}j",
+    "minutes": "{value}m",
+    "seconds": "{value}d",
+    "zero": "0d",
+    "separator": " "
+  },
+  "timeLeft": {
+    "left": "Sisa {duration}",
+    "ready": "Siap diselesaikan"
+  },
+  "saveFailed": {
+    "title": "Tidak tersimpan",
+    "message": "Penyimpanan browser penuh. Ekspor cadangan sekarang.",
+    "exportBackup": "Ekspor cadangan"
+  }
+}

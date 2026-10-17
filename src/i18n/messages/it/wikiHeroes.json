@@ -1,0 +1,99 @@
+{
+  "line": "{heroes} eroi e {widgets} livelli di widget. Solo riferimento, qui nulla viene salvato.",
+  "roster": {
+    "title": "Elenco",
+    "count": "{shown} eroi su {total}",
+    "search": "Cerca",
+    "searchPlaceholder": "Cerca tra {count} eroi",
+    "generation": "Generazione",
+    "rarity": "Rarità",
+    "class": "Classe",
+    "subClass": "Sottoclasse",
+    "all": "Tutti",
+    "empty": "Nessun eroe corrisponde a questi filtri.",
+    "columns": {
+      "hero": "Eroe",
+      "generation": "Gen",
+      "rarity": "Rarità",
+      "class": "Classe",
+      "subClass": "Sottoclasse",
+      "power": "Potenza, 5 stelle",
+      "weapon": "Arma esclusiva"
+    },
+    "none": "Nessuna"
+  },
+  "detail": {
+    "generation": "Generazione {generation}",
+    "source": "Fonte: {sources}",
+    "noSource": "Fonte: Sconosciuta",
+    "explorationAttack": "Attacco in Esplorazione",
+    "explorationDefense": "Difesa in Esplorazione",
+    "explorationHealth": "Salute in Esplorazione",
+    "expeditionAttack": "Attacco in Spedizione",
+    "expeditionDefense": "Difesa in Spedizione",
+    "powerAtLevel80": "Potenza al livello 80",
+    "powerAtFiveStars": "Potenza a 5 stelle",
+    "powerAtZeroStars": "Potenza a 0 stelle",
+    "powerMissing": "Mancano i dati di potenza per livelli e frammenti degli eroi dalla Generazione 6 in su. Compare come Sconosciuto finché i dati non vengono ottenuti."
+  },
+  "skills": {
+    "title": "Abilità",
+    "count": "{count, plural, one {{amount} abilità} other {{amount} abilità}}",
+    "branch": {
+      "exploration": "Esplorazione",
+      "expedition": "Spedizione",
+      "talent": "Talento"
+    },
+    "levels": {
+      "columns": {
+        "level": "Livello",
+        "star": "Stella richiesta",
+        "manuals": "Manuali",
+        "power": "Aumento di potenza",
+        "effects": "Effetto"
+      },
+      "effect": {
+        "percentOfAttack": "{name} {amount}% dell'Attacco",
+        "percent": "{name} {amount}%",
+        "seconds": "{name} {amount}s",
+        "number": "{name} {amount}"
+      }
+    }
+  },
+  "shards": {
+    "title": "Costi dei frammenti per stella",
+    "columns": {
+      "star": "Stella",
+      "tiers": "Frammenti per grado",
+      "total": "Totale",
+      "power": "Potenza alla stella"
+    },
+    "star": "{star} stella"
+  },
+  "weapon": {
+    "title": "Arma esclusiva",
+    "power": "Potenza dell'arma",
+    "exploration": "Esplorazione att / dif / ps",
+    "expedition": "Spedizione letalità / ps",
+    "unlocksAt": "si sblocca al livello arma {level}",
+    "levelsTitle": "Livelli dell'arma",
+    "columns": {
+      "level": "Livello arma",
+      "power": "Potenza",
+      "widgets": "Widget"
+    },
+    "level": "Livello {level}"
+  },
+  "levels": {
+    "title": "Livelli dell'eroe",
+    "columns": {
+      "level": "Livello eroe",
+      "furnace": "Richiede",
+      "xp": "XP per raggiungerlo",
+      "power": "Potenza"
+    },
+    "level": "Livello {level}",
+    "furnace": "Furnace {level}"
+  },
+  "recordLine": "{heroClass} {rarity}, generazione {generation}. Solo riferimento, qui nulla viene salvato."
+}

@@ -1,0 +1,35 @@
+{
+  "close": "Cerrar",
+  "field": {
+    "optional": "Opcional"
+  },
+  "stepper": {
+    "lower": "Reducir {label}",
+    "raise": "Aumentar {label}",
+    "labelPrefix": "{label}, "
+  },
+  "switch": {
+    "on": "Activado",
+    "off": "Desactivado"
+  },
+  "tabs": {
+    "locked": " (bloqueado)"
+  },
+  "toast": {
+    "dismiss": "Descartar",
+    "variants": {
+      "success": "Correcto",
+      "info": "Info",
+      "warning": "Aviso",
+      "error": "Error"
+    },
+    "missingProvider": "useToast debe usarse dentro de un ToastProvider"
+  },
+  "savedChip": {
+    "automatic": "Se guarda solo",
+    "justNow": "Guardado ahora mismo",
+    "minutesAgo": "Guardado hace {count} min",
+    "at": "Guardado {time}",
+    "failed": "No guardado, almacenamiento lleno"
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "none": "Aucun",
+  "charmLabel": "Charme {number}",
+  "view": {
+    "title": "Équipement du chef",
+    "tabsLabel": "Équipement du chef",
+    "gearSubline": "{name} · six emplacements, 150 lignes d'amélioration",
+    "charmsSubline": "{name} · 6 pièces d'équipement, 3 charmes chacune, 75 lignes d'amélioration",
+    "tabs": {
+      "gear": "Équipement du chef",
+      "charms": "Charmes du chef"
+    }
+  },
+  "shared": {
+    "plan": "Plan",
+    "autoSaveHint": "Chaque modification est enregistrée aussitôt. Les boutons +/- avancent d'une ligne à la fois, dans l'ordre des données.",
+    "scoreToGain": "Score restant à gagner",
+    "notes": "Notes",
+    "package": "Données"
+  },
+  "gear": {
+    "scoreNow": "Score d'équipement actuel, six emplacements",
+    "powerNow": "Puissance d'équipement actuelle",
+    "stepsToGoals": "Étapes jusqu'aux objectifs",
+    "goalsHint": "Les objectifs sont en lecture seule ici. Définissez-les dans Plan et appuyez sur Enregistrer le plan.",
+    "stepWord": "étapes",
+    "tiers": {
+      "title": "Paliers",
+      "description": "Les données répartissent 150 lignes en {count} paliers. Un palier en surbrillance contient au moins une de vos pièces.",
+      "rows": "{rows} lignes",
+      "names": {
+        "EpicT1": "Epic T1",
+        "MythicT1": "Mythic T1",
+        "MythicT2": "Mythic T2",
+        "LegendaryT1": "Legendary T1",
+        "LegendaryT2": "Legendary T2",
+        "LegendaryT3": "Legendary T3",
+        "LegendaryT4": "Legendary T4",
+        "LegendaryT5": "Legendary T5",
+        "LegendaryT6": "Legendary T6"
+      }
+    },
+    "notes": {
+      "setBonus": {
+        "title": "Règles du bonus de set",
+        "body": "3 pièces du même palier donnent la Défense et 6 pièces donnent l'Attaque, pour les trois types de troupes. Une pièce sans niveau ne compte pas. Chaque palier a une seule valeur."
+      },
+      "troopType": {
+        "title": "Le type de troupe est saisi à la main",
+        "body": "Cap et Watch renforcent les Lancer, Coat et Pants renforcent l'Infantry, Ring et Weapon renforcent les Marksman. L'auteur des données l'a saisi d'après le texte du wiki."
+      },
+      "capacity": {
+        "title": "La capacité vaut 0 sur les premières lignes",
+        "body": "Les 26 premières lignes n'ont pas de capacité de déploiement dans les données, elle affiche donc 0 tant qu'il n'y a pas de valeurs."
+      }
+    }
+  },
+  "charms": {
+    "scoreNow": "Score de charmes actuel, 18 charmes",
+    "powerNow": "Puissance des charmes actuelle",
+    "stagesToGoals": "Stades jusqu'aux objectifs",
+    "goalsHint": "Les objectifs sont en lecture seule ici et se définissent dans Plan.",
+    "stepWord": "stades",
+    "slotMeta": "{troop} · 3 charmes",
+    "slotStages": ", {stages} stades jusqu'aux objectifs",
+    "notes": {
+      "secrets": {
+        "title": "Charm Secrets commence au niveau 11",
+        "body": "À partir du niveau 11 stade 1, un stade nécessite des Charm Secrets. Les stades précédents listent seulement Charm Guide et Charm Design."
+      },
+      "look": {
+        "title": "Les charmes changent d'apparence à chaque niveau",
+        "body": "Chaque charme a 18 icônes, une par niveau. Chaque pièce d'équipement porte trois charmes, qui suivent le type de troupe de la pièce."
+      },
+      "estimate": {
+        "title": "Les scores par stade sont une estimation",
+        "body": "Le score d'un niveau est réparti à parts égales sur les stades qui y mènent. Le jeu ne confirme pas cette répartition."
+      }
+    }
+  },
+  "badge": {
+    "tier": "Palier {tier}",
+    "stars": "{count, plural, one {{amount} étoile} other {{amount} étoiles}}",
+    "tierAndStars": "{tier}, {stars}"
+  },
+  "row": {
+    "level": "Niveau de {title}",
+    "progressLabel": "Progression de {title} sur {total} lignes",
+    "progress": "{progress} sur {total}",
+    "stepsToGoal": " · {steps} jusqu'à l'objectif",
+    "goal": "Objectif {name}",
+    "noGoal": "Aucun objectif",
+    "stats": "Stat {stat} · Puissance {power}",
+    "statPercent": "{percent} %",
+    "capacity": " · Capacité {capacity}",
+    "lockedCurrent": "Le niveau enregistré {name} est verrouillé par l'âge du serveur et n'est pas compté. {requirement}.",
+    "lockedGoal": "L'objectif enregistré {name} est verrouillé par l'âge du serveur et n'est pas planifié. {requirement}."
+  },
+  "summary": {
+    "title": "Reste à faire pour tous les objectifs",
+    "derived": "Calculé",
+    "score": "score",
+    "powerGain": "gain de puissance",
+    "noGoals": "Aucun objectif défini. Définissez-les dans Plan.",
+    "openPlan": "Ouvrir Plan pour les points d'événement et le détail"
+  },
+  "setBonus": {
+    "title": "Bonus de set débloqués",
+    "pieceSet": "Set de {pieces} pièces",
+    "active": "Actif",
+    "notActive": "Inactif",
+    "value": "{stat} +{percent} %",
+    "appliesTo": "Pièces {tierName}, pour Infantry, Lancer et Marksman",
+    "needs": "Nécessite {pieces} pièces du même palier. {stat} +0 % pour l'instant."
+  },
+  "plan": {
+    "gear": {
+      "title": "Planifier l'équipement du chef",
+      "description": "Matériaux, score et puissance du niveau actuel à l'objectif",
+      "stepWord": "Étapes",
+      "conversionNote": "Le contrôle ne compte pas les conversions. Le convertisseur a sept taux d'échange, chacun avec une limite hebdomadaire, par exemple 10 Design Plans contre 1 Lunar Amber jusqu'à 500 par semaine."
+    },
+    "charm": {
+      "title": "Planifier les charmes du chef",
+      "description": "Matériaux, score et puissance du niveau actuel à l'objectif",
+      "stepWord": "Stades",
+      "conversionNote": "Le contrôle ne compte pas les conversions : 2 Charm Guides donnent 1 Charm Design et inversement, et 40 de l'un ou l'autre donnent 1 Charm Secrets."
+    },
+    "saved": "Plan enregistré {date}",
+    "close": "Fermer",
+    "save": "Enregistrer le plan",
+    "export": {
+      "button": "Exporter vers Événements clés",
+      "nothingToExport": "Définissez un objectif au-dessus d'un niveau actuel pour exporter un plan.",
+      "gearScore": "Score d'équipement du chef",
+      "charmScore": "Score de charmes du chef",
+      "power": "Puissance gagnée",
+      "powerReason": "Aucune ligne des Événements clés ne note la puissance de l'équipement ou des charmes du chef."
+    },
+    "inputs": "Entrées",
+    "slotTroop": "{slot}, {troop}",
+    "from": "Depuis {level}",
+    "goalLabel": "Objectif {label}",
+    "slotGoalLabel": "Objectif {label} de {slot}",
+    "inputsHint": "Le niveau actuel est celui de la page. Modifiez-le là-bas. Les objectifs sont en lecture seule sur la page et se définissent ici.",
+    "result": "Résultat",
+    "score": "Score",
+    "powerGain": "Gain de puissance",
+    "events": {
+      "svs": "SvS State of Power",
+      "allianceShowdown": "Alliance Showdown",
+      "kingOfIcefield": "King of Icefield",
+      "hallOfChief": "Hall of Chief"
+    },
+    "bySlot": "Par emplacement",
+    "byCharm": "Par charme",
+    "columnSlot": "Emplacement",
+    "columnCharm": "Charme",
+    "slotCharm": "{slot} {charm}",
+    "converter": {
+      "title": "Convertisseur de matériaux",
+      "spend": "Dépenser",
+      "get": "Obtenir",
+      "limit": "Limite",
+      "amount": "{quantity} {name}",
+      "perWeek": "{limit} par semaine",
+      "noLimit": "Aucune limite hebdomadaire"
+    },
+    "lockedCurrent": "Le niveau enregistré {name} est verrouillé par l'âge du serveur. {requirement}."
+  },
+  "lock": {
+    "title": "Verrouillé par l'âge du serveur",
+    "stop": "{name} (verrouillé, jour {day})",
+    "group": "À partir de {name} : {requirement}."
+  }
+}

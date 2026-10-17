@@ -1,0 +1,303 @@
+{
+    "title": "研究",
+    "unknown": "未知",
+    "nodeCount": "{count, plural, other {{amount} 個節點}}",
+    "jobTitle": "{name}，{from} 到 {to} 級",
+    "tabs": {
+        "growth": "成長",
+        "economy": "經濟",
+        "battle": "戰鬥",
+        "war-academy-troops": "War Academy T11",
+        "t12-infantry": "步兵 T12",
+        "t12-marksman": "弓兵 T12",
+        "t12-lancer": "騎兵 T12"
+    },
+    "tier": {
+        "plain": "第 {tier} 階",
+        "troopLine": "{line} T{tier}"
+    },
+    "requirement": {
+        "yours": "你的是 {level}",
+        "notBuilt": "未建造",
+        "researchLevel": "{name} {level} 級",
+        "yoursLevel": "你的是 {level} 級",
+        "notReleased": "{id}（尚未推出）"
+    },
+    "tabLock": {
+        "unknownAge": "{tab}研究在伺服器開服 {days} 天後開放。你的天數未知。請在編輯領主中加入伺服器開服日期。",
+        "knownAge": "{tab}研究在伺服器開服 {days} 天後開放。你的是 {yours}。"
+    },
+    "option": {
+        "label": "{name}，{tab}，{from} 到 {to} 級",
+        "subtitle": "{from} 級到 {to} 級，{tab}分頁",
+        "busy": "忙碌中：{name} {level} 級，{timeLeft}"
+    },
+    "nodeCard": {
+        "allResearched": "已研究所有等級",
+        "nextTime": "{level} 級時間：{time}",
+        "power": {
+            "researched": "已研究 {power}",
+            "next": "下一級 +{power}",
+            "some": "戰力 {parts}",
+            "none": "戰力 0"
+        },
+        "maxed": "已滿級。{bonus}",
+        "noBonus": "資料中沒有加成",
+        "level": "等級 {level} / {max}",
+        "goal": "目標 {goal}",
+        "noGoal": "沒有目標",
+        "progress": "{name}進度",
+        "lockedByTab": "已鎖定：{reason}",
+        "lockedByRequirement": "已鎖定：需要 {requirement}",
+        "placeholder": "預留項目。資料包中的花費和加成為空。",
+        "needsFirst": "需要先有 {names}",
+        "researching": "{name}研究中",
+        "levelStepper": "{name}等級",
+        "detailsOf": "{name}的詳細資料",
+        "details": "詳細資料"
+    },
+    "queuesStrip": {
+        "title": "研究佇列",
+        "note": "成長、經濟和戰鬥共用一個佇列。T11 和 T12 使用 War Academy 佇列。",
+        "idle": "一次只能研究一項。按「開始升級」即可開始。"
+    },
+    "filters": {
+        "title": "篩選",
+        "description": "選擇{tab}分頁要顯示的內容",
+        "reset": "重設",
+        "show": "顯示{nodes}",
+        "tier": "階級",
+        "statusLabel": "狀態",
+        "troopLine": "兵種系",
+        "orderLabel": "排序",
+        "notSaved": "篩選條件不會儲存。",
+        "all": "全部",
+        "status": {
+            "all": "全部",
+            "progress": "進行中",
+            "goal": "有目標",
+            "maxed": "已滿級",
+            "locked": "已鎖定",
+            "notStarted": "未開始"
+        },
+        "order": {
+            "game": "遊戲順序",
+            "name": "名稱，A 到 Z",
+            "level": "等級，由高到低"
+        }
+    },
+    "massSet": {
+        "stop": "{level} / {max}",
+        "title": "批次設定，{tab}",
+        "description": "選擇一個節點和等級。樹狀圖中在它之前的所有節點都會升到滿級。",
+        "cancel": "取消",
+        "set": "設定{nodes}",
+        "node": "節點",
+        "level": "等級",
+        "levelToSet": "要設定的等級",
+        "whatChanges": "{tab}分頁會有哪些變更",
+        "nothingChanges": "沒有任何變更。這裡的每個節點都已達到或超過此等級。",
+        "change": "{from} 到 {to}",
+        "hidden": "還有 {amount} 個較前面的節點",
+        "alreadyMax": "{count, plural, other {{amount} 個較前面的節點}}已是滿級，維持原樣。樹狀圖中較後面的節點不會變動。已經更高的等級會保留。",
+        "blockersTitle": "部分節點需要先有建築。",
+        "blocker": "{name}需要 {building}",
+        "blockersMore": "，還有 {amount} 項",
+        "blockers": "{list}{more}。請選擇較前面的節點，或到建築頁面提升建築。",
+        "footnote": "批次設定只會變更此分頁已儲存的等級，不會調降任何等級，也不會變更目標。"
+    },
+    "nodeFlyout": {
+        "fallbackTitle": "研究",
+        "description": "{category}，第 {tier} 階，{levels} 級",
+        "close": "關閉",
+        "unknown": "未知",
+        "levelOf": "等級 {level} / {max}",
+        "status": {
+            "notStarted": "未開始",
+            "maxed": "已滿級",
+            "inProgress": "進行中"
+        },
+        "goal": "目標 {goal}",
+        "noGoal": "沒有目標",
+        "openPlan": "開啟規劃",
+        "maxLevel": {
+            "title": "最高等級",
+            "nothingLeft": "沒有可研究的了。",
+            "noBonus": "資料中沒有加成。"
+        },
+        "placeholder": {
+            "title": "預留項目",
+            "description": "這個節點在資料包中還沒有花費和加成。研究時間和花費顯示為未知。"
+        },
+        "upcoming": {
+            "first": "最初幾級",
+            "after": "{level} 之後的等級",
+            "heads": {
+                "level": "等級",
+                "bonus": "加成",
+                "time": "時間",
+                "power": "戰力"
+            },
+            "goalBadge": "目標",
+            "noBonus": "無",
+            "shaded": "有底色的列是你目前等級到目標之間的等級。"
+        },
+        "cost": {
+            "title": "接下來幾級的花費",
+            "level": "Lv"
+        },
+        "total": {
+            "title": "達成目標的合計，{level} 到 {goal} 級",
+            "knownTime": "已知研究時間",
+            "power": "戰力",
+            "missingTimes": "{count, plural, other {{amount} 個等級}}在資料包中沒有時間，這裡以 0 計算。"
+        },
+        "requirements": {
+            "title": "{level} 級的條件",
+            "none": "沒有條件。",
+            "met": "已達成",
+            "notMet": "未達成",
+            "later": "之後的等級需要：{list}。"
+        }
+    },
+    "tree": {
+        "legend": {
+            "max": "滿級",
+            "inProgress": "進行中",
+            "notStarted": "未開始",
+            "locked": "已鎖定"
+        },
+        "pillMax": "最高 {max}",
+        "pillLevel": "Lv {level} / {max}",
+        "region": "{tab}研究樹",
+        "openNode": "{name}，{pill}。開啟詳細資料"
+    },
+    "plan": {
+        "title": "規劃研究",
+        "description": "從目前等級到目標所需的資源、時間和戰力",
+        "saved": "規劃已儲存 {date}",
+        "close": "關閉",
+        "save": "儲存規劃",
+        "goals": "目標，{nodes}",
+        "noGoals": "尚無目標。請先在上方新增研究節點，再選擇要升到的等級。",
+        "goalsHint": "目前等級是頁面上的等級，請到那裡修改。目標在頁面上唯讀，請在這裡設定。",
+        "failed": "無法算出這份規劃。",
+        "timeNote": "套用 {percent}% 速度加成後，規劃需要 {time}。你的庫存：研究 {research} 分，通用 {general} 分。通用加速道具可用於研究。",
+        "percent": "{value}%",
+        "percentPlus": "+{value}%",
+        "appointment": {
+            "none": "無",
+            "regular": "一般",
+            "supreme": "最高"
+        },
+        "add": {
+            "title": "新增研究節點",
+            "none": "所有節點都已在規劃中，或已達最高等級。",
+            "select": "要新增的研究節點",
+            "button": "新增研究"
+        },
+        "speed": {
+            "title": "研究速度",
+            "readOnly": "唯讀",
+            "carriedOver": "沿用自加成頁面。",
+            "turnedOff": "已在設定的「套用我的加成合計」中關閉。",
+            "openBonuses": "開啟加成",
+            "stateBuff": "州增益",
+            "vicePresident": "副總統",
+            "total": "研究速度合計"
+        },
+        "goal": {
+            "level": "{level} 級",
+            "to": "到",
+            "label": "{name}目標",
+            "remove": "從規劃中移除{name}"
+        },
+        "result": {
+            "title": "結果，{steps} 步",
+            "powerGained": "獲得戰力",
+            "speedupMinutes": "所需加速分鐘數",
+            "baseTime": "基本時間",
+            "timeWithBonus": "套用 {percent}% 加成後的時間",
+            "stepsWithoutTime": "{count, plural, other {{amount} 個步驟}}在資料包中沒有時間，以 0 秒計算。",
+            "stepCount": "{count, plural, other {{amount} 步}}",
+            "buildingRequirements": "建築條件",
+            "unmet": "未達成的前置條件",
+            "unmetNone": "這些目標沒有。",
+            "unmetItem": "{name} {level} 級需要 {requires} {requiresLevel} 級"
+        },
+        "export": {
+            "button": "匯出到核心活動",
+            "empty": "請先在規劃中新增目標才能匯出。",
+            "speedupMinutes": "研究加速分鐘數",
+            "power": "透過研究獲得的戰力",
+            "computed": "由應用程式依規劃結果計算。",
+            "unscored": "沒有活動會為{name}計分。"
+        }
+    },
+    "view": {
+        "ofTotal": "{count} / {total}",
+        "undo": "復原",
+        "massSetApplied": {
+            "title": "已套用批次設定",
+            "message": "已更新{nodes}。"
+        },
+        "started": {
+            "title": "已開始研究",
+            "message": "{name}，{from} 到 {to} 級。"
+        },
+        "manage": {
+            "slotLabel": "{queue}，{category}",
+            "finishText": "「完成升級」會把{name}設為 {level} 級、釋放{queue}佇列，並將這次升級加入你的紀錄。剩餘時間為零時，節點和佇列卡片會顯示「可完成」。不會自動完成，因為你可能用了加速道具。"
+        },
+        "finished": {
+            "title": "已研究{name}",
+            "message": "現為 {level} 級。已加入紀錄。"
+        },
+        "cancelled": {
+            "title": "已取消{name}的研究",
+            "message": "等級維持原樣。如有需要，請到資源頁面修正庫存。"
+        },
+        "subline": {
+            "researchCenter": "Research Center {level}",
+            "warAcademy": "War Academy {level}"
+        },
+        "stats": {
+            "maxed": "已滿級節點，占研究樹 {percent}%",
+            "power": "研究戰力，所有已研究等級的戰力",
+            "withoutTimeNone": "沒有研究時間時，每個等級都有",
+            "withoutTimeSome": "沒有研究時間時，顯示為未知",
+            "locked": "受伺服器天數或條件鎖定"
+        },
+        "tabLockedNote": "{reason}你仍可在「規劃」中設定目標。",
+        "lockedByRequirement": "此分頁有 {count} / {total} 個節點因條件而鎖定。",
+        "search": {
+            "label": "搜尋節點",
+            "placeholder": "依名稱或加成搜尋節點"
+        },
+        "massSet": "批次設定",
+        "layout": {
+            "label": "版面",
+            "grid": "網格",
+            "tree": "樹狀圖"
+        },
+        "plan": "規劃",
+        "status": {
+            "tree": "{tab}研究樹有 {count} 個節點。此分頁的研究戰力：{power}。捲動可平移。不符合搜尋或篩選的節點會變暗。",
+            "grid": "顯示 {shown} / {count} 個{tab}節點。此分頁的研究戰力：{power}。目標在這裡唯讀，請在「規劃」中設定。"
+        },
+        "empty": {
+            "title": "沒有符合的節點",
+            "description": "請更改搜尋，或重設篩選以查看所有節點。",
+            "reset": "重設搜尋與篩選"
+        },
+        "start": {
+            "description": "將研究標記為升級中",
+            "selectLabel": "要升級的研究",
+            "selectHelp": "只列出現在可以開始的研究。已鎖定、已滿級和進行中的研究不會列出。成長、經濟或戰鬥研究使用研究佇列，T11 或 T12 研究使用 War Academy 佇列。",
+            "timeLabel": "研究時間",
+            "speedLabel": "研究速度",
+            "slotLabel": "佇列",
+            "slotHelp": "每個佇列一次只能研究一項。佇列忙碌時，這張卡片會顯示何時空出。"
+        }
+    }
+}

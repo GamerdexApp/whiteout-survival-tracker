@@ -1,0 +1,215 @@
+{
+    "defaultSetName": "裝備組 {number}",
+    "troop": {
+        "infantry": "步兵",
+        "lancer": "騎兵",
+        "marksman": "弓兵"
+    },
+    "lock": {
+        "needsMythic": "需要神話裝備",
+        "needsBoth": "需要強化 100 和精通鍛造 10 級",
+        "needsEnhancement": "需要強化 100",
+        "needsForging": "需要精通鍛造 10 級"
+    },
+    "tab": {
+        "deletedTitle": "已刪除{name}",
+        "deletedMessage": "四件裝備及其目標已移除。",
+        "undo": "復原",
+        "tiles": {
+            "sets": "裝備組",
+            "power": "裝備戰力，所有裝備組",
+            "ofPieces": "{count} / {total}",
+            "atEnhancementMax": "強化達 100 的裝備",
+            "empowered": "已賦能的裝備",
+            "ready": "可賦能的裝備"
+        },
+        "search": "搜尋裝備組",
+        "filters": "篩選",
+        "plan": "規劃",
+        "showing": "顯示 {shown} / {total} 組裝備。目標在這裡唯讀，請在「規劃」中設定。",
+        "empty": {
+            "title": "尚無裝備組",
+            "description": "一組裝備包含護目鏡、手套、腰帶和靴子各一件。新增裝備組即可追蹤它的等級。"
+        },
+        "addSet": "新增裝備組",
+        "unknownHero": "未知英雄",
+        "power": "戰力 {amount}",
+        "enhancementLine": "強化 {line}",
+        "troopHint": "部隊類型決定下方使用哪一欄數值。",
+        "editSet": "編輯裝備組",
+        "deleteSet": "刪除裝備組"
+    },
+    "pieceCard": {
+        "name": "{set} {slot}",
+        "forgingRow": "{name}（+{percent}%）",
+        "none": "無",
+        "noGoal": "沒有目標",
+        "goal": "目標：{value}",
+        "quality": "裝備品質",
+        "qualities": {
+            "mythic": "神話",
+            "epic": "史詩",
+            "rare": "稀有",
+            "uncommon": "優良",
+            "common": "普通"
+        },
+        "forgingRowLabel": "精通鍛造列",
+        "forgingStops": "強化未達 100 之前，精通鍛造只能到 10 級。",
+        "lowQualityNote": "只有神話裝備可以鍛造和賦能。戰力依神話表格，並套用此品質的基礎戰力，遊戲尚未確認這些數值。",
+        "enhancement": "強化",
+        "enhancementLabel": "{name}強化",
+        "enhancementSlider": "{name}強化滑桿",
+        "empowerment": "賦能",
+        "empowermentLabel": "{name}賦能",
+        "empowermentSlider": "{name}賦能滑桿",
+        "outOf": "/ {max}",
+        "milestone": "已達賦能 {level}：{stat}",
+        "piecePower": "單件戰力",
+        "health": "生命",
+        "percent": "{value}%"
+    },
+    "statLines": {
+        "title": "數值列，4 個欄位乘 3 種部隊",
+        "troopThisSet": "{troop}（此裝備組）",
+        "stat": "{name} {value}",
+        "health": "HP {value}",
+        "percentStat": "{name} {value}%",
+        "none": "無",
+        "note": "{name}目前裝備等級的數值，含精通鍛造，無條件捨去。數值來自 WoS Tools，只到 200 級中的 192 級。標示的欄位是這組裝備的部隊類型。"
+    },
+    "filters": {
+        "title": "篩選",
+        "description": "選擇清單要顯示的裝備組",
+        "reset": "重設",
+        "show": "顯示 {amount} {count, plural, other {組}}",
+        "all": "全部",
+        "troopType": "部隊類型",
+        "linkedHero": "連結的英雄",
+        "heroOptions": {
+            "all": "全部",
+            "linked": "已連結英雄",
+            "unlinked": "未連結"
+        },
+        "order": "排序",
+        "orderOptions": {
+            "power": "總戰力，由高到低",
+            "created": "新增順序",
+            "name": "名稱，A 到 Z",
+            "hero": "英雄名稱，A 到 Z"
+        },
+        "notSaved": "篩選條件不會儲存。"
+    },
+    "setDialogs": {
+        "cancel": "取消",
+        "setName": "裝備組名稱",
+        "nameRequired": "請輸入名稱。",
+        "linkedHero": "連結的英雄",
+        "add": {
+            "title": "新增裝備組",
+            "linkedHeroHint": "選擇英雄後，部隊類型會設為該英雄的職業。",
+            "troopType": "部隊類型",
+            "troopTypeHint": "部隊類型決定這組裝備使用哪一欄數值。",
+            "quality": "裝備品質",
+            "qualityHint": "只有神話裝備可以鍛造和賦能。",
+            "qualityHintCopy": "複製的裝備組會保留每件裝備的品質。",
+            "qualities": {
+                "mythic": "神話",
+                "epic": "史詩",
+                "rare": "稀有",
+                "uncommon": "優良",
+                "common": "普通"
+            },
+            "startFrom": "起始內容",
+            "startFromHint": "不會複製目標。目標請在「規劃」中設定。",
+            "emptySet": "空白裝備組",
+            "copyFrom": "複製{name}的等級",
+            "savesAtOnce": "每次變更都會立即儲存，新的裝備組會顯示為已選取。",
+            "submit": "新增裝備組"
+        },
+        "delete": {
+            "title": "要刪除{name}嗎？",
+            "titleFallback": "刪除裝備組",
+            "confirm": "刪除裝備組",
+            "body": "{name}的四件裝備及其目標會從這部裝置中移除。",
+            "undoNote": "刪除後 10 秒內可以復原。",
+            "exportBackup": "請先匯出備份"
+        },
+        "edit": {
+            "title": "編輯{name}",
+            "titleFallback": "編輯裝備組",
+            "submit": "儲存裝備組"
+        },
+        "heroSelect": {
+            "none": "沒有英雄",
+            "option": "{name}（{class}，第 {generation} 世代）"
+        }
+    },
+    "plan": {
+        "title": "規劃英雄裝備",
+        "description": "任何裝備組中任何裝備的精通鍛造、強化和賦能",
+        "saved": "規劃已儲存 {time}",
+        "close": "關閉",
+        "save": "儲存規劃",
+        "empty": "規劃中還沒有裝備。請先在上方新增裝備，再提高它的目標。",
+        "pieceTitle": "{set} · {slot}",
+        "milestone": "賦能 {level}，{event}，{stat}",
+        "addPiece": {
+            "title": "新增裝備",
+            "noSets": "請先在英雄裝備分頁新增裝備組。",
+            "set": "裝備組",
+            "setOption": "{name}（{troop}）",
+            "piece": "裝備",
+            "submit": "新增裝備",
+            "taken": "這件裝備已在規劃中。"
+        },
+        "qualities": {
+            "mythic": "神話",
+            "epic": "史詩",
+            "rare": "稀有",
+            "uncommon": "優良",
+            "common": "普通"
+        },
+        "remove": "從規劃中移除{title}",
+        "forgingRow": "{name}（+{percent}%）",
+        "none": "無",
+        "forgingCurrent": "目前的鍛造列",
+        "forgingGoal": "目標的鍛造列",
+        "forgingGoalLabel": "{title}鍛造目標",
+        "forgingStops": "強化目標未達 100 之前，精通鍛造只能到 10 級。",
+        "enhancement": "強化",
+        "enhancementGoal": "{title}強化目標",
+        "empowerment": "賦能",
+        "empowermentGoal": "{title}賦能目標",
+        "from": "{value} 至",
+        "result": {
+            "title": "{amount} {count, plural, other {件裝備}}的結果",
+            "power": "戰力",
+            "powerLines": {
+                "gained": "獲得戰力",
+                "before": "這些裝備之前的戰力",
+                "after": "這些裝備之後的戰力"
+            },
+            "columns": {
+                "piece": "裝備",
+                "forgingStatsUp": "鍛造數值提升",
+                "powerGained": "獲得戰力"
+            },
+            "forgingStatsUp": "+{percent}%（{steps} 步）",
+            "milestones": "已解鎖的里程碑",
+            "milestoneLine": "{label}：{stat}",
+            "events": {
+                "svs": "SvS",
+                "allianceShowdown": "Alliance Showdown",
+                "kingOfIcefield": "King of Icefield"
+            },
+            "note": "英雄裝備規劃沒有速度或加成控制項。計算器不會回傳時間。",
+            "tableLabel": "規劃結果表"
+        }
+    },
+    "export": {
+        "button": "匯出到核心活動",
+        "nothing": "這份規劃不需要 Essence Stones 或 Mithril，沒有內容可匯出。",
+        "essenceStones": "Essence Stones",
+        "mithril": "Mithril"
+    }
+}

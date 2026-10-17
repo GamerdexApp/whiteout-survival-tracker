@@ -1,0 +1,54 @@
+{
+  "line": "{total} tecnologias em três árvores: Crescimento {growth}, Território {territory}, Batalha {battle}. Só referência, nada aqui é salvo.",
+  "list": {
+    "title": "Nós de tecnologia",
+    "categoriesLabel": "Árvores de tecnologia",
+    "categories": {
+      "all": "Todas",
+      "Growth": "Crescimento",
+      "Territory": "Território",
+      "Battle": "Batalha"
+    },
+    "search": "Buscar",
+    "searchPlaceholder": "Buscar tecnologia por nome ou efeito",
+    "tier": "Tier",
+    "allTiers": "Todos os tiers",
+    "tierOption": "Tier {tier}",
+    "empty": "Nenhum nó de tecnologia corresponde a esta busca.",
+    "emptyHint": "Limpe a busca ou um filtro.",
+    "columns": {
+      "tech": "Tecnologia",
+      "category": "Categoria",
+      "tier": "Tier",
+      "levels": "Níveis",
+      "maxBonus": "Bônus máx.",
+      "cost": "Custo do nível 1",
+      "time": "Tempo do nível 1",
+      "requires": "Requisito do nível 1"
+    },
+    "mobileMeta": "{category}, tier {tier}, {levels}",
+    "count": "{count, plural, one {{amount} tecnologia} other {{amount} tecnologias}}"
+  },
+  "levels": "{count, plural, one {{amount} nível} other {{amount} níveis}}",
+  "detail": {
+    "facts": "Detalhes",
+    "levelsTitle": "Níveis",
+    "none": "Nenhum",
+    "fields": {
+      "category": "Categoria",
+      "tier": "Tier",
+      "effect": "Efeito",
+      "stat": "Atributo",
+      "levels": "Níveis"
+    },
+    "columns": {
+      "level": "Nível",
+      "bonus": "Bônus",
+      "cost": "Custo",
+      "time": "Tempo",
+      "requires": "Requer"
+    },
+    "level": "Nível {level}",
+    "requirement": "{name} nível {level}"
+  }
+}

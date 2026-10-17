@@ -1,0 +1,71 @@
+{
+    "line": "建物{buildings}件と施設{facilities}件。参考情報のみで、チーフには何も保存されません。",
+    "list": {
+        "heading": "建物と施設",
+        "searchLabel": "検索",
+        "searchPlaceholder": "建物と施設を検索",
+        "categoryLabel": "カテゴリー",
+        "categories": {
+            "all": "すべて",
+            "Military": "軍事",
+            "Inner City": "市街",
+            "Entertainment": "エンターテインメント"
+        },
+        "buildingMeta": "{category}、最大{maxLevel}、{count, plural, other {{amount}レベル}}",
+        "empty": "検索に一致する建物がありません。",
+        "categoryOption": "{category} {count}"
+    },
+    "detail": {
+        "levelsTotal": "レベル総数",
+        "standardLevels": "標準レベル、1から30",
+        "fireCrystalLevels": "Fire Crystalレベル、30-1からFC 10",
+        "maxLevel": "最大レベルの表記",
+        "rangeLabel": "レベル範囲",
+        "rangeOption": "{range} {count}",
+        "ranges": {
+            "all": "すべて",
+            "standard": "1から30",
+            "fc3": "30-1からFC 3",
+            "fc5": "FC 3-1からFC 5",
+            "fc8": "FC 5-1からFC 8",
+            "fc10": "FC 8-1からFC 10"
+        },
+        "tableLabel": "{name}のレベル",
+        "levels": "レベル",
+        "totalTitle": "必要な合計、{range}、{count, plural, other {{amount}レベル}}",
+        "totalTime": "建設時間の合計"
+    },
+    "columns": {
+        "level": "レベル",
+        "cost": "コスト",
+        "time": "時間",
+        "power": "戦力",
+        "requires": "必要条件",
+        "stats": {
+            "rallyCapacity": "集結容量",
+            "marchCapacity": "行軍容量",
+            "trainingCapacity": "訓練容量",
+            "trainingSpeedBonusPercent": "訓練速度",
+            "researchSpeedBonusPercent": "研究速度",
+            "infirmaryCapacity": "医療所の容量",
+            "allyAssists": "同盟援助",
+            "allyHelpTimeSeconds": "同盟援助時間",
+            "reinforceCapacity": "増援容量",
+            "storehouseCapacity": "倉庫の容量",
+            "barricadeDurability": "バリケードの耐久",
+            "troopDeploymentCapacity": "出撃容量"
+        }
+    },
+    "cells": {
+        "none": "なし",
+        "requirement": "{building} {level}",
+        "pricePerItem": "1個あたり{price}",
+        "percent": "{value}%"
+    },
+    "facilities": {
+        "heading": "施設",
+        "meta": "レベル、戦力、建設コストなし",
+        "unlock": "Furnaceレベル{level}で解放",
+        "empty": "検索に一致する施設がありません。"
+    }
+}

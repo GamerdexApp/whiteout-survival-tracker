@@ -1,0 +1,373 @@
+{
+    "page": {
+        "title": "イベント",
+        "subline": "{chief} · {details}"
+    },
+    "tabs": {
+        "label": "イベントの表示",
+        "calendar": "カレンダー",
+        "mine": "マイイベント",
+        "history": "イベント履歴"
+    },
+    "actions": {
+        "addDetails": "イベント詳細を追加",
+        "addEvent": "イベントを追加"
+    },
+    "categories": {
+        "alliance": "同盟",
+        "solo": "ソロ",
+        "rookie": "新人",
+        "holiday": "祝日"
+    },
+    "gives": {
+        "rewards": "報酬のみ",
+        "personal": "個人ランキング",
+        "alliance": "同盟ランキング",
+        "both": "両方のランキング"
+    },
+    "weekdays": {
+        "short": {
+            "sunday": "日",
+            "monday": "月",
+            "tuesday": "火",
+            "wednesday": "水",
+            "thursday": "木",
+            "friday": "金",
+            "saturday": "土"
+        },
+        "initial": {
+            "sunday": "日",
+            "monday": "月",
+            "tuesday": "火",
+            "wednesday": "水",
+            "thursday": "木",
+            "friday": "金",
+            "saturday": "土"
+        }
+    },
+    "months": {
+        "january": "1月",
+        "february": "2月",
+        "march": "3月",
+        "april": "4月",
+        "may": "5月",
+        "june": "6月",
+        "july": "7月",
+        "august": "8月",
+        "september": "9月",
+        "october": "10月",
+        "november": "11月",
+        "december": "12月"
+    },
+    "monthsShort": {
+        "january": "1月",
+        "february": "2月",
+        "march": "3月",
+        "april": "4月",
+        "may": "5月",
+        "june": "6月",
+        "july": "7月",
+        "august": "8月",
+        "september": "9月",
+        "october": "10月",
+        "november": "11月",
+        "december": "12月"
+    },
+    "format": {
+        "weekdayDay": "{date}（{weekday}）",
+        "utcTime": "{time} UTC",
+        "dateTime": "{date} {time}",
+        "range": "{start}から{end}まで",
+        "length": {
+            "minutes": "{count, plural, other {{amount}分}}",
+            "hours": "{count, plural, other {{amount}時間}}",
+            "days": "{count, plural, other {{amount}日}}",
+            "weeks": "{count, plural, other {{amount}週間}}",
+            "months": "{count, plural, other {{amount}か月}}"
+        }
+    },
+    "repeat": {
+        "none": "繰り返しなし",
+        "weekly": "毎週{days}",
+        "weeklyAny": "毎週",
+        "every": {
+            "hours": "{count, plural, other {{amount}時間ごと}}",
+            "days": "{count, plural, other {{amount}日ごと}}",
+            "weeks": "{count, plural, other {{amount}週間ごと}}",
+            "months": "{count, plural, other {{amount}か月ごと}}"
+        }
+    },
+    "empty": {
+        "title": "イベントはまだありません",
+        "description": "プレイするイベントを追加してください。開始日時を一度設定すると、カレンダーと予定リストが常に最新になります。",
+        "steps": {
+            "pick": {
+                "title": "イベントを選ぶ。",
+                "text": "ゲームデータにあるイベントから選びます。"
+            },
+            "start": {
+                "title": "開始を設定する。",
+                "text": "次回の開催日時を入力します。1サイクルに2回開催されるイベントや、数日間続くイベントもあります。"
+            },
+            "roll": {
+                "title": "あとは自動で。",
+                "text": "開催が終わると、繰り返しルールから次の日付が入力されます。"
+            }
+        }
+    },
+    "calendar": {
+        "previous": "前の月",
+        "next": "次の月",
+        "today": "今日",
+        "zoneLabel": "タイムゾーン",
+        "utc": "UTC",
+        "local": "現地時間",
+        "monthTitle": "{year}年{month}",
+        "nameWithRun": "{name}、{run}",
+        "dayTail": "{day}日目",
+        "chipText": "{name} {tail}"
+    },
+    "upcoming": {
+        "title": "今後の予定",
+        "empty": "今後30日間の開催はありません。",
+        "now": "開催中",
+        "today": "今日",
+        "tomorrow": "明日",
+        "inDays": "{count, plural, other {{amount}日後}}",
+        "timeAndLength": "{time}、{length}"
+    },
+    "mine": {
+        "intro": "{count, plural, other {イベント{amount}件。}}開催が終わると、繰り返しルールにより次回の日付が自動で更新されるため、カレンダーには常に次の予定が表示されます。",
+        "run": "開催",
+        "rangeLine": "{range}、{time}",
+        "shortLine": "{when}、{length}",
+        "repeat": "繰り返し: {rule}",
+        "coreTag": "結果はコアイベントに記録",
+        "coreLink": "コアイベントを開く",
+        "ended": "終了",
+        "logged": "記録済み",
+        "edit": "編集",
+        "remove": "削除"
+    },
+    "toast": {
+        "removedTitle": "{name}を削除しました",
+        "removedMessage": "保存済みの結果はイベント履歴に残ります。",
+        "undo": "元に戻す",
+        "resultSavedTitle": "結果を保存しました",
+        "resultSavedMessage": "{name}をイベント履歴に追加しました。"
+    },
+    "add": {
+        "title": "イベントを追加",
+        "description": "ゲームデータからイベントを選びます",
+        "close": "閉じる",
+        "searchLabel": "イベントを検索",
+        "searchPlaceholder": "{amount}件のイベントから検索",
+        "categoryLabel": "イベントのカテゴリー",
+        "all": "すべて",
+        "categoryTab": "{name}、{amount}",
+        "showing": "{total}件中{shown}件のイベントを表示。ひとつ選んで、開始日時を設定してください。",
+        "none": "検索に一致するイベントがありません。",
+        "noDuration": "ゲームデータに期間なし",
+        "added": "追加済み",
+        "button": "追加",
+        "addNamed": "{name}を追加",
+        "showMore": "さらに表示"
+    },
+    "schedule": {
+        "description": "開催時期を設定します。次回以降は自動で更新されます。",
+        "cancel": "キャンセル",
+        "add": "イベントを追加",
+        "save": "スケジュールを保存",
+        "howTitle": "イベントの開催形式",
+        "shape": {
+            "one": "1日",
+            "several": "数日間",
+            "two": "1サイクルに2回"
+        },
+        "shapeHint": {
+            "one": "1日だけの開催です。短い開催の場合は、分または時間で長さを変更してください。",
+            "several": "数日間続く1回の開催です。",
+            "two": "1サイクルに2回開催されます（2つのシーズンや2つの曜日など）。開催ごとに、開始、長さ、名前を設定します。"
+        },
+        "runTitle": "開催{number}",
+        "runSingle": "開催",
+        "name": "名前",
+        "startDate": "開始日",
+        "startTime": "開始時刻（UTC）",
+        "length": "長さ",
+        "unit": "単位",
+        "runUnits": {
+            "minutes": "分",
+            "hours": "時間",
+            "days": "日"
+        },
+        "repeatTitle": "繰り返し",
+        "repeatKind": {
+            "none": "繰り返しなし",
+            "every": "間隔",
+            "weekly": "曜日を指定して毎週"
+        },
+        "every": "間隔",
+        "weekdays": "曜日",
+        "repeatUnits": {
+            "hours": "時間",
+            "days": "日",
+            "weeks": "週間",
+            "months": "か月"
+        },
+        "gameSays": "ゲームデータ: {text}",
+        "gameSaysNoRule": "ゲームデータ: {text}",
+        "useSuggestion": "提案を使う",
+        "everyError": "0より大きい数を入力してください。",
+        "givesTitle": "イベントで得られるもの",
+        "givesHint": "ゲームデータから設定されます。変更もできます。結果フォームで入力する項目が決まります。",
+        "previewTitle": "カレンダーの表示内容",
+        "previewEmpty": "有効な日付と長さを入力すると、開催が表示されます。",
+        "previewShort": "{range}、{time}",
+        "previewNote": "開催が終わると、日付は繰り返しルールに従って進みます。どの日付も編集できます。"
+    },
+    "result": {
+        "title": "イベント詳細を追加",
+        "description": {
+            "participation": "参加したことと、獲得したものを記録します",
+            "milestones": "ポイントと、達成した目標を記録します",
+            "ranking": "スコア、ランク、達成したマイルストーンを記録します",
+            "tier": "リーグのティアと順位を記録します",
+            "waves": "難易度、ウェーブ、ポイント、ランクを記録します",
+            "skipped": "この開催を見送ったことを記録します"
+        },
+        "cancel": "キャンセル",
+        "save": "結果を保存",
+        "noEvents": "先にイベントを追加してください。記録できるのはマイイベントにあるイベントだけで、コアイベントはコアイベントで記録します。",
+        "whichTitle": "イベントの選択",
+        "event": "イベント",
+        "versionsTag": "バージョン",
+        "run": "開催",
+        "otherDate": "別の日付",
+        "runDate": "開催日",
+        "runLong": "{range}（{length}）",
+        "runNamed": "{when}、{name}",
+        "notLogged": "{run}、未記録",
+        "tookPartQuestion": "参加しましたか？",
+        "tookPart": "参加した",
+        "skipped": "見送った",
+        "coreNote": "追加したイベントだけを表示しています。コアイベントはここではなく、コアイベントで記録します。",
+        "versionTitle": "バージョン",
+        "versionKnown": "このバージョンの目標はデータにあるため、ポイントから自動で判定されます。",
+        "versionUnknown": "このバージョンには、ポイントがまだデータにない目標があります。それらの目標は手動で確認してください。",
+        "participationTitle": "このイベントにスコアやランキングはありません",
+        "participationText": "ゲームデータには報酬しかないため、スコアにするものがありません。参加したこと、獲得した報酬、メモを記録してください。",
+        "pointsFallback": "ポイント",
+        "pointsReached": "到達した{unit}",
+        "pointsHint": "イベント終了時の合計です。",
+        "finalScore": "最終スコア（{unit}）",
+        "finalScoreHint": "イベント終了時の{unit}の合計です。",
+        "rankingTitle": "ランキング",
+        "yourRank": "あなたのランク",
+        "allianceRank": "同盟ランク",
+        "rankGroup": "ランクグループ",
+        "rankGroupsHint": "ランクグループはゲームデータに基づきます: {groups}など。",
+        "targetsTitle": "達成した目標（ポイントから判定）",
+        "targetsCount": "{total}件中{reached}件達成",
+        "targetPoints": "{unit} {points}",
+        "pointsMissing": "{unit}: ポイントはまだデータにありません",
+        "needsPurchase": "金額を問わず1回の購入が必要です。",
+        "targetsHint": "スコアから判定しています。目標と報酬はゲームデータに基づきます。",
+        "targetsHintUnknown": "ポイントがまだデータにない目標は、スコアから判定されません。手動で確認してください。",
+        "tierTitle": "リーグ",
+        "tier": "ティア",
+        "placement": "グループ内の順位",
+        "starChange": "星の増減（ゲームデータより）",
+        "stars": "{count, plural, other {星{amount}個}}",
+        "tiersHint": "ティア: {tiers}。",
+        "allianceTitle": "同盟",
+        "outcome": "この開催での同盟の結果",
+        "outcomeHint": "任意です。勝ち、負け、引き分けのいずれかです。",
+        "outcomes": {
+            "none": "未設定",
+            "won": "勝ち",
+            "lost": "負け",
+            "drawn": "引き分け"
+        },
+        "wavesTitle": "難易度とウェーブ",
+        "difficulty": "挑戦した難易度",
+        "difficultyFrom": "{name}、同盟ポイント{points}から",
+        "wavesCleared": "クリアしたウェーブ、0から{count}",
+        "wavesHint": "ゲームデータでは、{name}のウェーブは{count}個です。",
+        "defenseTitle": "防衛ポイント",
+        "yourPoints": "あなたのポイント",
+        "alliancePoints": "同盟ポイント",
+        "rewardLevel": "到達した報酬レベル",
+        "rewardLevelNone": "まだなし",
+        "level": "レベル{level}",
+        "levelsHint": "レベルには、ゲームデータに基づく個人ポイントと同盟ポイントの両方が必要です。",
+        "rankingsTitle": "ランキング",
+        "notesTitle": "メモ",
+        "rewards": "獲得した報酬",
+        "rewardsPlaceholder": "例: Hero Shards 2個、Gems 500",
+        "notes": "メモ",
+        "notesPlaceholder": "この開催について覚えておきたいこと"
+    },
+    "history": {
+        "emptyTitle": "記録された結果はまだありません",
+        "emptyText": "「イベント詳細を追加」を押すと、イベント開催で得たものを記録できます。結果と推移はここに表示されます。",
+        "eventFilter": "イベント",
+        "allEvents": "すべてのイベント",
+        "period": "期間",
+        "months3": "3か月",
+        "months6": "6か月",
+        "allTime": "全期間",
+        "intro": "記録したすべての結果を新しい順に表示します。コアイベントはコアイベントで記録するため、ここには表示されません。",
+        "showing": "{total}件中{shown}件の結果を表示。",
+        "showingEvent": "{count, plural, other {{name}の結果{amount}件を表示。}}",
+        "noneInPeriod": "この期間の結果はありません。",
+        "showMore": "さらに表示",
+        "colDate": "日付",
+        "colEvent": "イベント",
+        "colScore": "スコア",
+        "colRank": "ランク",
+        "colAlliance": "同盟",
+        "colResult": "結果",
+        "colActions": "操作",
+        "none": "-",
+        "edit": "編集",
+        "editNamed": "{name}の結果を編集",
+        "skipped": "見送り",
+        "tierOnly": "{tier} {placement}",
+        "stars": "{count, plural, other {星{amount}個}}",
+        "waves": "{count, plural, other {{difficulty}、{amount}ウェーブ}}",
+        "targets": "{unit}、目標{total}件中{reached}件",
+        "tookPart": "参加",
+        "tookPartRewards": "参加、{rewards}",
+        "rankText": "ランク{rank}",
+        "allianceRankText": "同盟{rank}",
+        "separator": " · ",
+        "defensePoints": "防衛ポイント{score}",
+        "scoreUnit": "{unit} {score}",
+        "noScore": "スコアなし",
+        "trendTitle": "{name}の推移",
+        "trendScore": "各イベント終了時の{unit}",
+        "trendRank": "各イベント終了時のあなたのランク",
+        "metricLabel": "推移の指標",
+        "metricScore": "スコア",
+        "metricRank": "個人ランク",
+        "chartLabel": "{name}の推移グラフ",
+        "best": "最高",
+        "average": "平均",
+        "latest": "最新",
+        "change": "変化",
+        "events": "{count, plural, other {{amount}イベント}}",
+        "changeVs": "{month}比",
+        "changePercentVs": "{month}比{percent}%",
+        "noPrevious": "以前の結果なし",
+        "noTrend": "このイベントには、グラフにできるスコアやランクがありません。結果は下のリストにあります。"
+    },
+    "cycles": {
+        "title": "コアイベントのサイクル",
+        "hint": "SvS、Alliance Showdown、King of Icefieldは固定のサイクルで開催されます。次の開始を一度設定すると、カレンダーに繰り返し表示されます。",
+        "next": "次回 {date}、{repeat}",
+        "notSet": "未設定",
+        "set": "サイクルを設定",
+        "edit": "サイクルを編集"
+    }
+}

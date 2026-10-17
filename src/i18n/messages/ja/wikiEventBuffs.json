@@ -1,0 +1,67 @@
+{
+    "line": "{modes}のゲームモードごとに、どのバフの入手元が適用されるか。{sources}種類のバフについて、はい、いいえ、一部で示します。",
+    "matrix": {
+        "title": "バフの一覧表",
+        "meta": "{modes}モード、{sources}種類のバフ",
+        "table": "ゲームモード別のバフの入手元",
+        "mode": "ゲームモード"
+    },
+    "sources": {
+        "cityBonusWarsBuffs": {
+            "short": "都市ボーナス",
+            "full": "都市ボーナスと戦争バフ"
+        },
+        "deploymentCapacity": {
+            "short": "出撃容量",
+            "full": "出撃容量"
+        },
+        "petSkills": {
+            "short": "ペットスキル",
+            "full": "ペットスキル"
+        },
+        "daybreakIsland": {
+            "short": "Daybreak",
+            "full": "Daybreak Island"
+        },
+        "presidentSkills": {
+            "short": "大統領",
+            "full": "大統領スキル"
+        },
+        "ministerBuff": {
+            "short": "大臣",
+            "full": "大臣バフ"
+        },
+        "territoryBonuses": {
+            "short": "領土",
+            "full": "領土ボーナス"
+        },
+        "facilityBuff": {
+            "short": "施設",
+            "full": "施設バフ"
+        },
+        "marchAccelerator": {
+            "short": "行軍加速",
+            "full": "行軍加速"
+        },
+        "frostdragonTyrantTitles": {
+            "short": "称号",
+            "full": "Frostdragon Tyrantの称号"
+        },
+        "frostSphereDomainBonus": {
+            "short": "Frost Sphere",
+            "full": "Frost Sphereの領域ボーナス"
+        }
+    },
+    "applicability": {
+        "yes": "はい",
+        "no": "いいえ",
+        "partial": "一部"
+    },
+    "notes": {
+        "title": "ゲームモード別のメモ",
+        "table": "ゲームモード別のメモ",
+        "petSkillsAutoApplied": "ペットスキルは自動適用",
+        "note": "メモ",
+        "noNote": "なし"
+    }
+}

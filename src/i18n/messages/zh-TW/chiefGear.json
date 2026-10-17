@@ -1,0 +1,176 @@
+{
+    "none": "無",
+    "charmLabel": "護符 {number}",
+    "view": {
+        "title": "領主裝備",
+        "tabsLabel": "領主裝備",
+        "gearSubline": "{name} · 六個欄位，150 列升級",
+        "charmsSubline": "{name} · 6 件裝備，每件 3 個護符，75 列升級",
+        "tabs": {
+            "gear": "領主裝備",
+            "charms": "領主護符"
+        }
+    },
+    "shared": {
+        "plan": "規劃",
+        "autoSaveHint": "每次變更都會立即儲存。加減按鈕會依資料包順序每次移動一列。",
+        "scoreToGain": "尚待獲得的分數",
+        "notes": "備註",
+        "package": "資料包"
+    },
+    "gear": {
+        "scoreNow": "目前裝備分數，六個欄位",
+        "powerNow": "目前裝備戰力",
+        "stepsToGoals": "達成所有目標的步數",
+        "goalsHint": "目標在這裡唯讀。請在「規劃」中設定並按「儲存規劃」。",
+        "stepWord": "步",
+        "tiers": {
+            "title": "階級",
+            "description": "資料包把 150 列標成 {count} 個階級。標示的階級至少有一件你的裝備。",
+            "rows": "{rows} 列",
+            "names": {
+                "EpicT1": "史詩 T1",
+                "MythicT1": "神話 T1",
+                "MythicT2": "神話 T2",
+                "LegendaryT1": "傳說 T1",
+                "LegendaryT2": "傳說 T2",
+                "LegendaryT3": "傳說 T3",
+                "LegendaryT4": "傳說 T4",
+                "LegendaryT5": "傳說 T5",
+                "LegendaryT6": "傳說 T6"
+            }
+        },
+        "notes": {
+            "setBonus": {
+                "title": "套裝加成規則",
+                "body": "同階級 3 件提供防禦，6 件提供攻擊，對三種部隊都有效。沒有等級的裝備不計入。每個階級各有一個數值。"
+            },
+            "troopType": {
+                "title": "部隊類型為手動輸入",
+                "body": "Cap 和 Watch 增益騎兵，Coat 和 Pants 增益步兵，Ring 和 Weapon 增益弓兵。這是資料包作者依百科文字輸入的。"
+            },
+            "capacity": {
+                "title": "前幾列的容量為 0",
+                "body": "前 26 列在資料包中沒有出兵容量，所以在資料補上數值之前會顯示 0。"
+            }
+        }
+    },
+    "charms": {
+        "scoreNow": "目前護符分數，18 個護符",
+        "powerNow": "目前護符戰力",
+        "stagesToGoals": "達成所有目標的階段數",
+        "goalsHint": "目標在這裡唯讀，請在「規劃」中設定。",
+        "stepWord": "階段",
+        "slotMeta": "{troop} · 3 個護符",
+        "slotStages": "，距離目標還有 {stages} 個階段",
+        "notes": {
+            "secrets": {
+                "title": "Charm Secrets 從 11 級開始",
+                "body": "從 11 級第 1 階段起，每個階段都需要 Charm Secrets。之前的階段只列出 Charm Guide 和 Charm Design。"
+            },
+            "look": {
+                "title": "護符每升一級外觀就會改變",
+                "body": "每個護符有 18 個圖示，每級一個。每件裝備帶有三個護符，並依該裝備的部隊類型而定。"
+            },
+            "estimate": {
+                "title": "階段分數為估計值",
+                "body": "每級的分數會平均分配給通往該級的各個階段。遊戲沒有確認這種分配方式。"
+            }
+        }
+    },
+    "badge": {
+        "tier": "第 {tier} 階",
+        "stars": "{count, plural, other {{amount} 顆星}}",
+        "tierAndStars": "{tier}，{stars}"
+    },
+    "row": {
+        "level": "{title}等級",
+        "progressLabel": "{title}進度，共 {total} 列",
+        "progress": "{progress} / {total}",
+        "stepsToGoal": " · 距離目標 {steps} 步",
+        "goal": "目標 {name}",
+        "noGoal": "沒有目標",
+        "stats": "數值 {stat} · 戰力 {power}",
+        "statPercent": "{percent}%",
+        "capacity": " · 容量 {capacity}",
+        "lockedCurrent": "儲存的等級 {name} 受伺服器天數鎖定，未計入。{requirement}。",
+        "lockedGoal": "儲存的目標 {name} 受伺服器天數鎖定，未納入規劃。{requirement}。"
+    },
+    "summary": {
+        "title": "達成所有目標還差",
+        "derived": "推算值",
+        "score": "分數",
+        "powerGain": "戰力增加",
+        "noGoals": "尚未設定目標。請在「規劃」中設定目標。",
+        "openPlan": "開啟規劃以查看活動積分和明細"
+    },
+    "setBonus": {
+        "title": "已解鎖的套裝加成",
+        "pieceSet": "{pieces} 件套裝",
+        "active": "已啟用",
+        "notActive": "未啟用",
+        "value": "{stat} +{percent}%",
+        "appliesTo": "{tierName}裝備，適用於步兵、騎兵和弓兵",
+        "needs": "需要 {pieces} 件同階級裝備。目前 {stat} +0%。"
+    },
+    "plan": {
+        "gear": {
+            "title": "規劃領主裝備",
+            "description": "從目前等級到目標所需的材料、分數和戰力",
+            "stepWord": "步",
+            "conversionNote": "檢查時不會計入轉換。轉換器有七種兌換比率，各有每週上限，例如 10 個 Design Plans 換 1 個 Lunar Amber，每週最多 500 個。"
+        },
+        "charm": {
+            "title": "規劃領主護符",
+            "description": "從目前等級到目標所需的材料、分數和戰力",
+            "stepWord": "階段",
+            "conversionNote": "檢查時不會計入轉換：2 個 Charm Guide 可換 1 個 Charm Design，反過來也可以；任一種 40 個可換 1 個 Charm Secrets。"
+        },
+        "saved": "規劃已儲存 {date}",
+        "close": "關閉",
+        "save": "儲存規劃",
+        "export": {
+            "button": "匯出到核心活動",
+            "nothingToExport": "請先把目標設得比目前等級高，才能匯出規劃。",
+            "gearScore": "領主裝備分數",
+            "charmScore": "領主護符分數",
+            "power": "獲得戰力",
+            "powerReason": "核心活動沒有任何一列會為領主裝備或領主護符的戰力計分。"
+        },
+        "inputs": "輸入",
+        "slotTroop": "{slot}，{troop}",
+        "from": "從 {level}",
+        "goalLabel": "{label}目標",
+        "slotGoalLabel": "{slot}{label}目標",
+        "inputsHint": "目前等級是頁面上的等級，請到那裡修改。目標在頁面上唯讀，請在這裡設定。",
+        "result": "結果",
+        "score": "分數",
+        "powerGain": "戰力增加",
+        "events": {
+            "svs": "SvS State of Power",
+            "allianceShowdown": "Alliance Showdown",
+            "kingOfIcefield": "King of Icefield",
+            "hallOfChief": "Hall of Chief"
+        },
+        "bySlot": "依欄位",
+        "byCharm": "依護符",
+        "columnSlot": "欄位",
+        "columnCharm": "護符",
+        "slotCharm": "{slot} {charm}",
+        "converter": {
+            "title": "材料轉換器",
+            "spend": "花費",
+            "get": "獲得",
+            "limit": "上限",
+            "amount": "{quantity} {name}",
+            "perWeek": "每週 {limit}",
+            "noLimit": "沒有每週上限"
+        },
+        "lockedCurrent": "儲存的等級 {name} 受伺服器天數鎖定。{requirement}。"
+    },
+    "lock": {
+        "title": "受伺服器天數鎖定",
+        "stop": "{name}（已鎖定，第 {day} 天）",
+        "group": "從 {name}：{requirement}。"
+    }
+}

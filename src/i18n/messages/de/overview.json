@@ -1,0 +1,231 @@
+{
+    "page": {
+        "title": "Übersicht"
+    },
+    "header": {
+        "state": "State {number}",
+        "furnace": "Furnace {level}",
+        "serverAge": "Serveralter ca. {days} Tage",
+        "derived": "Aus deinen anderen Seiten erstellt"
+    },
+    "tiles": {
+        "furnace": {
+            "label": "Furnace",
+            "steps": "Schritt {order} von {total}",
+            "unknown": "Unbekannt",
+            "unknownHint": "Furnace bei Gebäude festlegen"
+        },
+        "dailies": {
+            "label": "Tagesaufgaben",
+            "value": "{done} / {total}",
+            "tasks": "Meine Aufgaben heute erledigt",
+            "missions": "Spielmissionen erledigt"
+        },
+        "events": {
+            "label": "Events",
+            "live": "{amount} live",
+            "coreDay": "{event} {day}",
+            "moreThisWeek": "{amount} weitere diese Woche",
+            "noneThisWeek": "Keine diese Woche"
+        },
+        "skins": {
+            "label": "Skins",
+            "value": "{owned} / {total}",
+            "hint": "Skins im Besitz"
+        },
+        "vip": {
+            "label": "VIP",
+            "value": "VIP {level}",
+            "unknown": "Unbekannt",
+            "hint": "Aus deinen VIP-XP",
+            "unknownHint": "VIP-XP bei VIP eintragen"
+        },
+        "prosperity": {
+            "label": "Inselwohlstand",
+            "possible": "von {max} möglich",
+            "locked": "Gesperrt",
+            "lockedHint": "Braucht Furnace {level}"
+        },
+        "generation": {
+            "label": "Heldengeneration",
+            "allUnlocked": "Alle Generationen freigeschaltet",
+            "shouldBeOpen": "Generation {next} sollte offen sein",
+            "onDay": "Generation {next} an Serverstag {day}",
+            "inDays": "Generation {next} in ca. {days} Tagen"
+        }
+    },
+    "events": {
+        "title": "Events",
+        "openCalendar": "Kalender öffnen",
+        "liveNow": "Läuft jetzt",
+        "liveBadge": "Läuft jetzt",
+        "nextUp": "Als Nächstes, von deiner Event-Seite",
+        "coreLine": "Tag {day} von {count}, {name}. Kern-Events",
+        "runLine": "{length}. Läuft jetzt",
+        "empty": "Keine Events hinzugefügt",
+        "addEvent": "Event hinzufügen",
+        "noLive": "Gerade läuft nichts."
+    },
+    "coreToday": {
+        "title": "{event} heute",
+        "open": "Kern-Events",
+        "dayLine": "{day}, {name}",
+        "plan": "Plan für heute: {points} Punkte",
+        "checklist": "Checkliste",
+        "done": "{done} von {total} erledigt",
+        "progress": "Fortschritt der Checkliste",
+        "noActions": "Für heute sind keine Aktionen geplant.",
+        "castleSignedUp": "Für {day} für eine Schlossposition angemeldet",
+        "castleOpen": "Für {day} für eine Schlossposition anmelden",
+        "logLocked": "{locked} von {total} Tagen sind im Event-Log gesperrt.",
+        "todayLocked": "{day} ist gesperrt.",
+        "todayOpen": "{day} ist noch nicht erfasst.",
+        "openChecklist": "Checkliste öffnen",
+        "openLog": "Event-Log öffnen"
+    },
+    "queues": {
+        "title": "Laufende Warteschlangen",
+        "running": "{count} aktiv",
+        "construction": "Bau {number}",
+        "researchMain": "Forschung",
+        "researchWarAcademy": "War Academy",
+        "training": "Training {name}",
+        "learning": "Lernen",
+        "task": {
+            "construction": "{name} auf {level}",
+            "research": "{name} auf Stufe {level}",
+            "training": "{tier}-Truppen",
+            "learning": "{name}, {skill}"
+        },
+        "idle": "Frei",
+        "idleBuildings": "Frei, bei Gebäude auf Upgrade starten tippen",
+        "idleResearch": "Frei, bei Forschung auf Upgrade starten tippen",
+        "progress": "Fortschritt von {title}"
+    },
+    "lastResult": {
+        "title": "Letztes Event-Ergebnis",
+        "open": "Im Verlauf öffnen",
+        "days": "Tag 1 bis 5. Die Kampfphase wird getrennt geführt.",
+        "plan": "Plan",
+        "actual": "Ist",
+        "difference": "Differenz",
+        "overall": "Gesamtrang",
+        "alliance": "Allianzrang",
+        "upgrades": "Geplante Upgrades erledigt",
+        "upgradesOf": "{done} von {total}"
+    },
+    "server": {
+        "title": "Serveralter",
+        "edit": "Häuptling bearbeiten",
+        "age": "Ca. {days} Tage, plus/minus {tolerance}",
+        "unknown": "Unbekannt. Trage das Serverstartdatum unter Häuptling bearbeiten ein.",
+        "fromDate": "Vom Serverstartdatum, {date}.",
+        "warAcademy": "War-Academy-Forschung",
+        "t12": "T12-Forschung",
+        "open": "Offen",
+        "opensIn": "Öffnet in ca. {days} Tagen",
+        "unknownUnlock": "Unbekannt",
+        "heroes": "Helden freigeschaltet bis",
+        "generation": "Generation {number}",
+        "estimate": "Die Freischalttage stammen aus der Server-Zeitleiste. Ändere sie unter Häuptling bearbeiten, falls dein Server etwas abweicht.",
+        "areas": {
+            "fireCrystal": "Fire-Crystal-Stufen",
+            "pets": "Haustiere",
+            "experts": "Experten"
+        },
+        "fcUpTo": "Bis {level}",
+        "nothingYet": "Noch keine",
+        "countOf": "{unlocked} von {total} freigeschaltet",
+        "allUnlocked": "Alles ist freigeschaltet.",
+        "generationName": "Generation {number}",
+        "allGenerations": "Alle Generationen sind freigeschaltet.",
+        "next": {
+            "withDate": "Als Nächstes: {names}, Serverstag {day}, {date}. In ca. {days} Tagen.",
+            "noDate": "Als Nächstes: {names}, Serverstag {day}. In ca. {days} Tagen.",
+            "unknownAge": "Als Nächstes: {names}, Serverstag {day}.",
+            "passed": "{names} sollte bei deinem Serveralter offen sein, Serverstag {day}. Erhöhe die Einstellung unter Häuptling bearbeiten."
+        }
+    },
+    "dailies": {
+        "title": "Tagesaufgaben heute",
+        "open": "Tagesaufgaben öffnen",
+        "activeness": "{now} von {top} Aktivität",
+        "activenessBar": "Aktivität heute",
+        "missions": "Spielmissionen: {done} von {total} erledigt",
+        "tasks": "{done} von {total} Meine Aufgaben",
+        "tasksBar": "Meine Aufgaben heute erledigt",
+        "stillOpen": "Noch offen in Meine Aufgaben, die ersten {shown} von {total}",
+        "allDone": "Alle Aufgaben in Meine Aufgaben sind für heute erledigt.",
+        "noTasks": "Noch keine Aufgaben in Meine Aufgaben."
+    },
+    "planner": {
+        "title": "Planer-Engpässe",
+        "short": "{amount} fehlen",
+        "covered": "Keine Engpässe",
+        "goals": "Ziele von {pages}. Kosten stammen aus dem Paket, Bestand aus Ressourcen.",
+        "noGoals": "Keine Ziele gesetzt. Setze Ziele mit Plan bei Gebäude, Forschung und den anderen Seiten.",
+        "pages": {
+            "buildings": "Gebäude",
+            "research": "Forschung",
+            "heroes": "Helden",
+            "troops": "Truppen",
+            "pets": "Haustiere",
+            "chiefGear": "Häuptlingsgear",
+            "chiefCharms": "Häuptlingsamulette"
+        },
+        "separator": ", ",
+        "line": "Nötig {need} · Vorhanden {have}",
+        "shortBy": "Es fehlen {amount}",
+        "enough": "Genug",
+        "updateStock": "Bestand unter Ressourcen aktualisieren",
+        "incomplete": "Eine Zielstufe hat im Paket keine bekannten Kosten, daher sind diese Summen unvollständig."
+    },
+    "progress": {
+        "title": "Fortschritt pro Bereich",
+        "hint": "Besitz oder Stufe gegen die Paketsummen",
+        "count": "{owned} / {total}",
+        "furnace": "Furnace",
+        "furnaceOf": "{level} von {max}",
+        "furnaceUnknown": "Unbekannt",
+        "areas": {
+            "buildings": "Gebäude",
+            "heroes": "Helden",
+            "chiefGear": "Häuptlingsgear",
+            "chiefCharms": "Häuptlingsamulette",
+            "experts": "Experten",
+            "pets": "Haustiere",
+            "research": "Forschung",
+            "allianceTech": "Allianz-Tech",
+            "skins": "Skins"
+        },
+        "locked": {
+            "daybreakIsland": "Daybreak Island",
+            "requirement": "Gesperrt. Braucht Furnace {level}, noch {count, plural, one {{amount} Stufe} other {{amount} Stufen}}"
+        }
+    },
+    "power": {
+        "title": "Macht",
+        "total": "Gesamtmacht",
+        "complete": "Aktuelle Macht im Vergleich zum Maximum jeder Gruppe, wenn alles auf Höchststufe ist, in den Inhalten, die deine Freischalt-Einstellungen öffnen. Gruppen ohne Maximum zählen, wie sie sind.",
+        "incomplete": "Gleicher Vergleich. {count, plural, one {{amount} Eintrag hat} other {{amount} Einträge haben}} keinen Machtwert in den Daten und {count, plural, one {wird} other {werden}} nicht gezählt.",
+        "groupWithoutValue": "{count, plural, one {{amount} Eintrag hat} other {{amount} Einträge haben}} keinen Machtwert in den Daten",
+        "groups": {
+            "buildings": "Gebäude",
+            "research": "Forschung",
+            "heroes": "Helden",
+            "heroGear": "Heldengear",
+            "chiefGear": "Häuptlingsgear",
+            "chiefCharms": "Häuptlingsamulette",
+            "experts": "Experten",
+            "pets": "Haustiere",
+            "troops": "Truppen"
+        },
+        "ofPossible": "von {possible} möglich",
+        "totalProgress": "Gesamtmacht im Vergleich zum Möglichen",
+        "percentOfPossible": "{percent}% des Möglichen",
+        "rowOfPossible": "{power} von {possible}",
+        "progress": "Macht von {group} im Vergleich zum Möglichen",
+        "noMaximum": "Kein Maximum, es hängt von deinen Eingaben ab",
+        "noCapNote": "Truppen und Heldengear haben keine Obergrenze. Deine Gesamtmacht kann daher über der möglichen Summe liegen, wenn du mehr Truppen trainierst und Heldengear verbesserst. Beides zählt in der möglichen Summe, wie es ist."
+    }
+}

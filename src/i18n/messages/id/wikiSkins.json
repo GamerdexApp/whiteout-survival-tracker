@@ -1,0 +1,40 @@
+{
+  "line": "{skins} dalam {types}, dengan bonus, cara mendapatkan, dan masa berlakunya.",
+  "skinCount": "{count, plural, other {{amount} skin}}",
+  "typeCount": "{count, plural, other {{amount} jenis}}",
+  "gallery": {
+    "title": "Galeri skin",
+    "showing": "Menampilkan {shown} dari {total}",
+    "search": "Cari",
+    "searchPlaceholder": "Cari skin menurut nama atau sumber",
+    "bonusStat": "Statistik bonus",
+    "anyStat": "Semua statistik",
+    "noBonus": "Tanpa bonus",
+    "duration": "Durasi",
+    "anyDuration": "Semua durasi",
+    "permanent": "Permanen",
+    "timed": "Terbatas waktu",
+    "notStated": "Tidak disebutkan",
+    "types": "Jenis skin",
+    "allTypes": "Semua",
+    "empty": {
+      "title": "Tidak ada skin yang cocok",
+      "description": "Ubah pencarian atau filter untuk melihat skin."
+    }
+  },
+  "columns": {
+    "skin": "Skin",
+    "type": "Jenis",
+    "bonus": "Bonus",
+    "duration": "Durasi (teks bebas)",
+    "sources": "Sumber"
+  },
+  "bonusValue": "{stat} {value}",
+  "detail": {
+    "type": "Jenis",
+    "bonus": "Bonus",
+    "duration": "Durasi",
+    "sources": "Sumber",
+    "description": "Deskripsi"
+  }
+}

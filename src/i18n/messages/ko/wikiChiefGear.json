@@ -1,0 +1,56 @@
+{
+  "line": "장비 {rows}행, 슬롯 {slots}개, 교환 비율 {rates}개예요. 참고용이며 영주에게 저장되지 않아요.",
+  "slots": {
+    "heading": "장비 슬롯",
+    "rarities": "{first}부터 {last}까지 아이콘",
+    "detailLine": "{troopType} 병력을 강화해요. 희귀도마다 아이콘이 하나씩 있어요."
+  },
+  "table": {
+    "heading": "장비 표",
+    "meta": "{rows}행, {tiers}단계",
+    "searchLabel": "검색",
+    "searchPlaceholder": "장비 {rows}행 검색",
+    "tierLabel": "단계",
+    "allTiers": "모든 단계",
+    "starsLabel": "별",
+    "allStars": "모든 별",
+    "starsOption": "별 {stars}",
+    "empty": "필터에 맞는 장비 행이 없어요."
+  },
+  "columns": {
+    "row": "행",
+    "materials": "재료",
+    "stats": "능력치",
+    "power": "전투력",
+    "score": "점수",
+    "capacity": "출정 한도"
+  },
+  "cells": {
+    "none": "없음",
+    "percent": "{value}%"
+  },
+  "tiers": {
+    "heading": "단계",
+    "meta": "단계 이름 {tiers}개",
+    "tier": "단계",
+    "rows": "행",
+    "stats": "능력치, 처음부터 마지막까지",
+    "power": "마지막 행의 전투력",
+    "statsRange": "{first}%에서 {last}%"
+  },
+  "exchange": {
+    "heading": "재료 교환 비율",
+    "exchange": "교환",
+    "from": "교환 전",
+    "to": "교환 후",
+    "weeklyLimit": "주간 한도"
+  },
+  "setBonus": {
+    "heading": "세트 보너스",
+    "meta": "{tiers}단계",
+    "hint": "3부위를 착용하면 방어 보너스, 6부위를 착용하면 공격 보너스를 받아요. 비율은 착용한 장비의 단계에 따라 달라요. {types} 병력에 적용돼요.",
+    "pieceSet": "{pieces}부위 세트",
+    "tier": "단계",
+    "pieces": "{pieces}부위, {stat}"
+  }
+}

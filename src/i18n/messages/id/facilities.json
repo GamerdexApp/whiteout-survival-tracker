@@ -1,0 +1,86 @@
+{
+  "page": {
+    "title": "Fasilitas"
+  },
+  "view": {
+    "subline": "{chief} · {facilities} fasilitas peta, castle, {strongholds} stronghold, dan {fortresses} benteng"
+  },
+  "summary": {
+    "owned": "Fasilitas dimiliki",
+    "ownedValue": "{owned} dari {total}",
+    "strongholds": "Stronghold, referensi",
+    "fortresses": "Benteng, referensi",
+    "castle": "Castle, referensi"
+  },
+  "tabs": {
+    "label": "Tampilan fasilitas",
+    "facilities": "Fasilitas",
+    "fortresses": "Benteng",
+    "map": "Peta"
+  },
+  "show": {
+    "label": "Tampilkan",
+    "all": "Semua",
+    "owned": "Dimiliki",
+    "notOwned": "Belum dimiliki"
+  },
+  "card": {
+    "owned": "{count} dimiliki",
+    "level": "Level {level}",
+    "ownedSwitch": "Dimiliki",
+    "switchLabel": "{facility} level {level} dimiliki",
+    "booster": "Booster",
+    "injured": "Luka berat",
+    "losses": "Kerugian",
+    "ownLimit": "Batas kepemilikan {limit}. {spots} {spotWord} di peta.",
+    "spot": "titik",
+    "spots": "titik"
+  },
+  "empty": {
+    "title": "Tidak ada yang ditampilkan",
+    "description": "Tidak ada level fasilitas yang cocok dengan filter ini.",
+    "reset": "Tampilkan semua"
+  },
+  "fortress": {
+    "kind": {
+      "castle": "Castle",
+      "stronghold": "Stronghold",
+      "fortress": "Benteng"
+    },
+    "coordinates": "x {x}, y {y}",
+    "rewardsHeading": "Hadiah per fase",
+    "phase": "Fase {phase}",
+    "noRewards": "Castle tidak punya hadiah di paket data.",
+    "referenceNote": "Hanya referensi. Castle, stronghold, dan benteng berubah tiap minggu, jadi tidak ada yang dimiliki atau dilacak di sini.",
+    "kindLabel": "Jenis",
+    "allKinds": "Semua jenis",
+    "rewardLabel": "Hadiah",
+    "allRewards": "Semua hadiah",
+    "shown": "{shown} dari {total} struktur ditampilkan",
+    "empty": "Tidak ada struktur yang cocok dengan filter.",
+    "reset": "Atur ulang filter",
+    "filters": "Filter",
+    "filtersTitle": "Filter",
+    "filtersDescription": "Filter struktur menurut jenis dan hadiah",
+    "done": "Tampilkan {count}"
+  },
+  "map": {
+    "highlight": "Sorot sebuah fasilitas",
+    "layers": "Lapisan",
+    "layerFacilities": "Fasilitas",
+    "layerStrongholds": "Stronghold",
+    "layerFortresses": "Benteng",
+    "spotsHeading": "Titik fasilitas, {count} semuanya",
+    "spotLegend": "{name} ({count})",
+    "codeHint": "Angka setelah kode adalah level, misalnya Co1 adalah Construction level 1. Fasilitas yang disorot terisi warna.",
+    "structures": "Struktur",
+    "castleStrongholdLegend": "Castle (1) dan stronghold S1 sampai S4 ({count})",
+    "fortressLegend": "Benteng 1 sampai {count}",
+    "selected": "Dipilih di peta",
+    "selectedNone": "Pilih castle, stronghold, atau benteng di peta.",
+    "mapLabel": "Peta aliansi",
+    "note": "Kerangka peta aliansi. Posisi memakai x dan y dari paket data pada kisi {size} kali {size}, satu kotak kisi adalah {step}. Titik adalah tempat fasilitas bisa muncul, jadi fasilitas yang dimiliki tidak ditandai. Paket data tidak punya gambar medan.",
+    "spotLabel": "{name} level {level}, x {x}, y {y}",
+    "structureLabel": "{name}, x {x}, y {y}"
+  }
+}

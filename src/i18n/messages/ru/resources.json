@@ -1,0 +1,88 @@
+{
+  "title": "Ресурсы",
+  "all": "Все",
+  "owned": "Есть",
+  "sources": "Источники",
+  "sourcesUnknown": "Источники неизвестны",
+  "done": "Готово",
+  "undo": "Отменить",
+  "list": {
+    "separator": ", ",
+    "andLast": "{rest} и {last}"
+  },
+  "countControl": {
+    "remove": "Убрать {step}: {name}",
+    "add": "Добавить {step}: {name}",
+    "owned": "{name}: есть"
+  },
+  "itemRow": {
+    "owned": "есть"
+  },
+  "itemSheet": {
+    "title": "Изменить количество",
+    "step": "Шаг",
+    "setToZero": "Обнулить",
+    "description": "Описание",
+    "unknown": "Неизвестно"
+  },
+  "view": {
+    "subline": "Предметов: {items}, категорий: {categories}",
+    "sublineInCategory": "Предметов: {items}, категорий: {categories} · в категории «{category}»: {inCategory}",
+    "unsaved": "Не сохранено",
+    "shortages": "Целям планировщика не хватает: {names}.",
+    "shortagesLink": "Открыть план зданий",
+    "show": {
+      "label": "Показывать",
+      "owned": "Есть",
+      "unknown": "Источники неизвестны"
+    },
+    "speedups": {
+      "none": "Нет",
+      "noneOwned": "Ускорений нет",
+      "owned": "{minutes} мин: {parts}",
+      "part": "{count} x {name}",
+      "partSeparator": " + ",
+      "types": {
+        "general": "Общие",
+        "construction": "Строительство",
+        "troop": "Тренировка войск",
+        "research": "Исследования",
+        "learning": "Обучение",
+        "healing": "Лечение"
+      }
+    },
+    "search": {
+      "label": "Поиск предметов",
+      "placeholder": "Поиск среди предметов: {total}"
+    },
+    "setSeveral": "Задать несколько",
+    "showing": {
+      "several": "Показано предметов: {visible} из {total}. Режим «Задать несколько» включён. Изменения ждут, пока вы не нажмёте «Сохранить».",
+      "instant": "Показано предметов: {visible} из {total}. Каждое изменение сохраняется сразу."
+    },
+    "empty": {
+      "title": "Подходящих предметов нет",
+      "description": "Измените поиск, категорию или фильтр «Показывать».",
+      "reset": "Сбросить фильтры"
+    },
+    "columns": {
+      "item": "Предмет"
+    },
+    "bar": {
+      "noChanges": "Несохранённых изменений нет",
+      "changes": "{count, plural, one {{amount} несохранённое изменение} few {{amount} несохранённых изменения} many {{amount} несохранённых изменений} other {{amount} несохранённого изменения}}",
+      "discard": "Отменить",
+      "save": "Сохранить"
+    },
+    "toast": {
+      "setToZero": "{name}: обнулено",
+      "savedTitle": "Количества сохранены",
+      "savedMessage": "{count, plural, one {Изменено {amount} количество.} few {Изменено {amount} количества.} many {Изменено {amount} количеств.} other {Изменено {amount} количества.}}"
+    }
+  },
+  "planStock": {
+    "constructionTime": "Время строительства, в ускорениях",
+    "researchTime": "Время исследований, в ускорениях",
+    "minutesUnit": "мин"
+  }
+}

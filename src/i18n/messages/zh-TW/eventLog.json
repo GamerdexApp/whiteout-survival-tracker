@@ -1,0 +1,129 @@
+{
+    "title": "活動紀錄",
+    "events": {
+        "svs": "SvS, State of Power",
+        "showdown": "Alliance Showdown",
+        "king": "King of Icefield",
+        "hall": "Hall of Chief"
+    },
+    "tabs": {
+        "label": "活動紀錄檢視",
+        "current": "目前活動",
+        "history": "紀錄"
+    },
+    "dates": {
+        "title": "活動日期",
+        "start": "開始",
+        "end": "結束",
+        "days": "{count, plural, other {{amount} 天}}",
+        "endBeforeStart": "結束日期早於開始日期。"
+    },
+    "results": {
+        "rank": "名次",
+        "alliance": "聯盟",
+        "score": "分數",
+        "allianceShort": "聯盟",
+        "scoreOf": "{day}，分數",
+        "rankOf": "{day}，名次",
+        "allianceOf": "{day}，聯盟名次",
+        "plan": "計畫 {total}",
+        "notStarted": "尚未開始",
+        "opensLater": "稍後開放",
+        "empty": "空白",
+        "locked": "已鎖定",
+        "lock": "鎖定",
+        "unlock": "解鎖",
+        "lockDay": "鎖定{day}",
+        "unlockDay": "解鎖{day}"
+    },
+    "cards": {
+        "svsDays": "準備階段第 1 到 5 天",
+        "days": "天數",
+        "stages": "階段",
+        "rankHint": "名次是你在州內的名次。聯盟是你的聯盟名次。",
+        "battleTitle": "戰鬥階段",
+        "battleNote": "戰鬥階段的分數和名次是獨立的成績，不會加到第 1 到 5 天。"
+    },
+    "overall": {
+        "svsTitle": "總成績，第 1 到 5 天",
+        "title": "總成績",
+        "rank": "總名次",
+        "alliance": "聯盟總名次",
+        "svsTotal": "已鎖定的第 1 到 5 天合計",
+        "daysTotal": "已鎖定天數合計",
+        "stagesTotal": "已鎖定階段合計",
+        "hint": "鎖定可避免數字在你繼續遊玩時被改動。已鎖定的數字可以解鎖。"
+    },
+    "footer": {
+        "close": "關閉",
+        "endEvent": "結束活動",
+        "readOnly": "紀錄為唯讀"
+    },
+    "end": {
+        "title": "要結束{event}並存入紀錄嗎？",
+        "dates": "{event}，{start} 至 {end}",
+        "noDates": "{event}，未輸入日期",
+        "lockedTotal": "已鎖定天數合計：{total}。",
+        "lockedTotalSvs": "已鎖定的第 1 到 5 天合計：{total}。",
+        "noRanks": "總名次和聯盟名次為空白。",
+        "allLocked": "每一天都已鎖定。",
+        "unlocked": "{count, plural, other {有 {amount} 天未鎖定。}}它們會照輸入的內容儲存，沒有數字的天數維持空白。",
+        "unlockedList": "未鎖定：{days}。",
+        "what": "會發生什麼事",
+        "saves": "將日期、每日分數和名次，以及總成績連同每天的計畫合計一起存入紀錄。",
+        "clearsCounts": "清除每天的數量，所以計畫中的每一天都從 0 開始。",
+        "clearsPlans": "清除匯出到這個活動的規劃和清單勾選。",
+        "keeps": "只會清除這個活動。你在其他頁面的目標和規劃會保留。",
+        "cancel": "取消",
+        "confirm": "結束活動並重新開始",
+        "toastTitle": "活動已結束",
+        "toastMessage": "{event}已存入紀錄。活動會重新開始，且沒有日期。",
+        "undo": "復原",
+        "lockedTotalStages": "已鎖定階段合計：{total}。"
+    },
+    "history": {
+        "intro": "你已結束的{event}活動，最新的在前。結束活動會把它的紀錄存在這裡，之後無法編輯，只能移除。<link>開啟紀錄，查看計畫與實際對照以及計畫中的升級。</link>",
+        "empty": "尚無已結束的活動。結束活動即可將紀錄存在這裡。",
+        "cardTitle": "{event}，{start} 至 {end}",
+        "cardNoDates": "{event}，無日期",
+        "ended": "結束於 {date}",
+        "svsTotal": "第 1 到 5 天",
+        "total": "總分",
+        "overallRank": "總名次",
+        "allianceRank": "聯盟名次",
+        "notSet": "未設定",
+        "showDays": "顯示天數",
+        "hideDays": "隱藏天數",
+        "remove": "從紀錄移除",
+        "removedTitle": "已從紀錄移除",
+        "removedMessage": "{event}已從紀錄中移除。",
+        "undo": "復原",
+        "noValue": "-"
+    },
+    "checklist": {
+        "title": "規劃清單",
+        "description": "{day}，要做的事",
+        "dayChips": "天",
+        "castleTitle": "報名{day}的城堡職位",
+        "castleBody": "城堡職位會提供隔天的加成。請在今天結束前報名，這樣{day}就能有加成。",
+        "castleCheck": "已報名{day}",
+        "done": "已完成 {done} / {total}",
+        "progress": "已勾選的行動",
+        "planLine": "當天計畫：{points} 分。只列出數量大於 0 的行動。數量來自核心活動頁面。",
+        "empty": "這一天沒有任何行動有數量。請在核心活動頁面新增數量。",
+        "resources": "要使用的資源",
+        "resourcesHint": "當天會消耗的道具。開始前請先確認庫存。",
+        "actions": "行動",
+        "count": "x{count}",
+        "points": "{points} 分",
+        "clear": "清除勾選",
+        "close": "關閉",
+        "dayTitle": "{day}：{name}"
+    },
+    "eventShort": {
+        "svs": "SvS",
+        "showdown": "Alliance Showdown",
+        "king": "King of Icefield",
+        "hall": "Hall of Chief"
+    }
+}

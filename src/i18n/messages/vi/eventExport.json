@@ -1,0 +1,32 @@
+{
+    "title": "Xuất sang Sự kiện chính",
+    "description": "Chọn sự kiện, rồi chọn các ngày",
+    "events": {
+        "svs": "SvS",
+        "showdown": "Alliance Showdown",
+        "king": "King of Icefield",
+        "hall": "Hall of Chief"
+    },
+    "stepEvent": "1. Sự kiện",
+    "stepDay": "{number}. Ngày sự kiện {group}",
+    "stepDayPlain": "Ngày sự kiện",
+    "stepItems": "{number}. Vật phẩm từ kế hoạch này",
+    "noDay": "{event} không có dòng tính điểm cho các vật phẩm này.",
+    "daysHint": "Chỉ liệt kê những ngày có dòng tính điểm cho một vật phẩm. Hall of Chief liệt kê các giai đoạn thay vì ngày. Mỗi nhóm vật phẩm có một ngày riêng.",
+    "lineEach": "{points} mỗi cái vào {day}.",
+    "lineNotScored": "{event} không có dòng tính điểm cho mục này.",
+    "notScored": "Không tính điểm",
+    "points": "{points} điểm",
+    "addedTo": "Đã thêm vào {event}",
+    "nothingScores": "Không có gì trong kế hoạch này được tính điểm ở {event} vào các ngày đã chọn.",
+    "summaryTitle": "Tóm tắt lần xuất",
+    "summaryHint": "Các vật phẩm này sẽ được bao nhiêu điểm ở từng sự kiện nếu mỗi vật phẩm dùng vào một ngày có tính điểm. Chỉ sự kiện và ngày đã chọn nhận chúng. Trang Sự kiện chính hiển thị chúng dưới dạng số lần bạn có thể đổi.",
+    "selected": "Đã chọn",
+    "cancel": "Hủy",
+    "export": "Xuất sang {event}",
+    "toast": {
+        "title": "Đã xuất sang Sự kiện chính",
+        "message": "Đã thêm {points} điểm vào {event}.",
+        "undo": "Hoàn tác"
+    }
+}

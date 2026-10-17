@@ -1,0 +1,78 @@
+{
+  "page": {
+    "title": "Skin"
+  },
+  "view": {
+    "subline": "{chief} · {details} · {owned} dari {total} skin dimiliki"
+  },
+  "owned": {
+    "label": "Dimiliki",
+    "value": "{owned} dari {total}",
+    "progress": "Skin dimiliki",
+    "withBonus": "{withBonus} dari {total} skin punya bonus"
+  },
+  "totals": {
+    "title": "Bonus dari skin yang dimiliki",
+    "estimate": "Perkiraan",
+    "percent": "+{amount}%",
+    "flat": "+{amount}",
+    "none": "Belum ada skin yang dimiliki dengan bonus.",
+    "note": "{count, plural, other {Jumlah bonus dari {amount} skin yang dimiliki}}, per statistik, dihitung oleh aplikasi. Dianggap semua skin yang dimiliki berlaku sekaligus. Troop Attack dan Troops Attack dijumlahkan."
+  },
+  "expiry": {
+    "title": "Masa berlaku tidak dilacak.",
+    "text": "Durasi (permanen, 30 hari, per peringkat) hanya ada di teks deskripsi. Skin terbatas waktu tetap dimiliki sampai kamu menghapusnya."
+  },
+  "search": {
+    "label": "Cari skin",
+    "placeholder": "Cari skin menurut nama atau sumber"
+  },
+  "filters": {
+    "button": "Filter",
+    "title": "Filter",
+    "description": "Pilih yang ditampilkan di daftar Skin",
+    "reset": "Atur ulang",
+    "showButton": "{count, plural, other {Tampilkan {amount} skin}}",
+    "skinType": "Jenis skin",
+    "typeAll": "Semua {amount}",
+    "typeOption": "{type} {amount}",
+    "owned": "Dimiliki",
+    "bonus": "Bonus",
+    "order": "Urutan",
+    "notSaved": "Filter tidak disimpan.",
+    "ownedOptions": {
+      "all": "Semua skin",
+      "owned": "Dimiliki",
+      "notOwned": "Belum dimiliki"
+    },
+    "bonusOptions": {
+      "any": "Semua",
+      "has": "Punya bonus",
+      "none": "Tanpa bonus"
+    },
+    "orderOptions": {
+      "game": "Urutan game",
+      "name": "Nama, A ke Z",
+      "owned": "Dimiliki dulu"
+    }
+  },
+  "status": {
+    "showing": "Menampilkan {shown} dari {total} skin.",
+    "showingFiltered": "Menampilkan {shown} dari {total} skin. Filter: {filters}.",
+    "showMore": "{count, plural, other {Tampilkan {amount} skin lagi}}"
+  },
+  "empty": {
+    "title": "Tidak ada skin yang cocok",
+    "description": "Ubah pencarian atau filter untuk melihat skin.",
+    "reset": "Atur ulang filter"
+  },
+  "card": {
+    "bonus": "Bonus",
+    "source": "Sumber",
+    "unknown": "Tidak diketahui",
+    "bonusValue": "{value} {stat}",
+    "owned": "Dimiliki",
+    "ownedLabel": "Dimiliki: {name}, {type}",
+    "domainWarning": "Teks bonus domain ada di deskripsi dan tidak dihitung."
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "line": "{skins} em {types}, com o bónus, onde obter e quanto tempo duram.",
+  "skinCount": "{count, plural, one {{amount} skin} other {{amount} skins}}",
+  "typeCount": "{count, plural, one {{amount} tipo} other {{amount} tipos}}",
+  "gallery": {
+    "title": "Galeria de skins",
+    "showing": "A mostrar {shown} de {total}",
+    "search": "Pesquisar",
+    "searchPlaceholder": "Pesquisar skins por nome ou fonte",
+    "bonusStat": "Atributo do bónus",
+    "anyStat": "Qualquer atributo",
+    "noBonus": "Sem bónus",
+    "duration": "Duração",
+    "anyDuration": "Qualquer duração",
+    "permanent": "Permanente",
+    "timed": "Temporária",
+    "notStated": "Não indicada",
+    "types": "Tipo de skin",
+    "allTypes": "Todos",
+    "empty": {
+      "title": "Nenhuma skin corresponde",
+      "description": "Alterar a pesquisa ou um filtro para ver skins."
+    }
+  },
+  "columns": {
+    "skin": "Skin",
+    "type": "Tipo",
+    "bonus": "Bónus",
+    "duration": "Duração (texto livre)",
+    "sources": "Fontes"
+  },
+  "bonusValue": "{stat} {value}",
+  "detail": {
+    "type": "Tipo",
+    "bonus": "Bónus",
+    "duration": "Duração",
+    "sources": "Fontes",
+    "description": "Descrição"
+  }
+}

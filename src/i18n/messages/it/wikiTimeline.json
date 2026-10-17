@@ -1,0 +1,49 @@
+{
+  "title": "Linea temporale del server",
+  "line": "{rows, plural, one {{amount} traguardo} other {{amount} traguardi}} dal giorno {first} al giorno {last}",
+  "subline": "Cosa si sblocca a ogni età del server. Solo riferimento, qui nulla viene salvato.",
+  "place": {
+    "label": "Mostra la mia posizione per",
+    "option": "{name}, circa giorno {days}, più o meno {window}",
+    "optionNoDate": "{name}, nessuna data di avvio del server",
+    "jump": "Vai alla mia posizione"
+  },
+  "filters": {
+    "label": "Mostra",
+    "events": "Eventi {amount}",
+    "features": "Funzioni {amount}",
+    "pets": "Animali {amount}",
+    "experts": "Esperti {amount}",
+    "heroes": "Eroi {amount}"
+  },
+  "help": "La linea è l'età del server in giorni. Gli eroi sono a destra, tutto il resto a sinistra. La tua posizione viene dalla data di avvio del server del tuo capo, con un margine di più o meno {window} giorni.",
+  "noChief": "Non c'è ancora nessun capo, quindi la tua posizione non viene mostrata.",
+  "addChief": "Aggiungi un capo",
+  "noStartDate": "{name} non ha una data di avvio del server. Aggiungine una per vedere la tua posizione sulla linea.",
+  "editChief": "Modifica capo",
+  "columns": {
+    "left": "Eventi, funzioni, animali, esperti",
+    "right": "Eroi"
+  },
+  "tags": {
+    "event": "Evento",
+    "feature": "Funzione",
+    "pets": "Animali",
+    "experts": "Esperti"
+  },
+  "fireCrystalLevels": "Livelli Fire Crystal {names}",
+  "heroGeneration": "Eroi, generazione {generation}",
+  "day": "Giorno {day}",
+  "status": {
+    "unlocked": "Sbloccato",
+    "near": "Vicino alla tua età",
+    "future": "{count, plural, one {Tra {amount} giorno} other {Tra {amount} giorni}}"
+  },
+  "marker": {
+    "label": "Sei qui",
+    "title": "{name}, età del server circa {days} giorni",
+    "window": "Più o meno {window} giorni: dal giorno {from} al {to}"
+  },
+  "empty": "Nulla da mostrare con questi filtri.",
+  "source": "Fonte: la linea temporale del server del pacchetto dati."
+}

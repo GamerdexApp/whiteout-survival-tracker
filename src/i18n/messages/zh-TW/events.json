@@ -1,0 +1,373 @@
+{
+    "page": {
+        "title": "活動",
+        "subline": "{chief} · {details}"
+    },
+    "tabs": {
+        "label": "活動檢視",
+        "calendar": "日曆",
+        "mine": "我的活動",
+        "history": "活動紀錄"
+    },
+    "actions": {
+        "addDetails": "新增活動詳情",
+        "addEvent": "新增活動"
+    },
+    "categories": {
+        "alliance": "聯盟",
+        "solo": "個人",
+        "rookie": "新手",
+        "holiday": "節慶"
+    },
+    "gives": {
+        "rewards": "僅獎勵",
+        "personal": "個人排名",
+        "alliance": "聯盟排名",
+        "both": "兩種排名"
+    },
+    "weekdays": {
+        "short": {
+            "sunday": "週日",
+            "monday": "週一",
+            "tuesday": "週二",
+            "wednesday": "週三",
+            "thursday": "週四",
+            "friday": "週五",
+            "saturday": "週六"
+        },
+        "initial": {
+            "sunday": "日",
+            "monday": "一",
+            "tuesday": "二",
+            "wednesday": "三",
+            "thursday": "四",
+            "friday": "五",
+            "saturday": "六"
+        }
+    },
+    "months": {
+        "january": "1月",
+        "february": "2月",
+        "march": "3月",
+        "april": "4月",
+        "may": "5月",
+        "june": "6月",
+        "july": "7月",
+        "august": "8月",
+        "september": "9月",
+        "october": "10月",
+        "november": "11月",
+        "december": "12月"
+    },
+    "monthsShort": {
+        "january": "1月",
+        "february": "2月",
+        "march": "3月",
+        "april": "4月",
+        "may": "5月",
+        "june": "6月",
+        "july": "7月",
+        "august": "8月",
+        "september": "9月",
+        "october": "10月",
+        "november": "11月",
+        "december": "12月"
+    },
+    "format": {
+        "weekdayDay": "{date} {weekday}",
+        "utcTime": "{time} UTC",
+        "dateTime": "{date} {time}",
+        "range": "{start} 至 {end}",
+        "length": {
+            "minutes": "{count, plural, other {{amount} 分}}",
+            "hours": "{count, plural, other {{amount} 小時}}",
+            "days": "{count, plural, other {{amount} 天}}",
+            "weeks": "{count, plural, other {{amount} 週}}",
+            "months": "{count, plural, other {{amount} 個月}}"
+        }
+    },
+    "repeat": {
+        "none": "不重複",
+        "weekly": "每週 {days}",
+        "weeklyAny": "每週",
+        "every": {
+            "hours": "{count, plural, other {每 {amount} 小時}}",
+            "days": "{count, plural, other {每 {amount} 天}}",
+            "weeks": "{count, plural, other {每 {amount} 週}}",
+            "months": "{count, plural, other {每 {amount} 個月}}"
+        }
+    },
+    "empty": {
+        "title": "尚無活動",
+        "description": "新增你參加的活動。只要設定一次開始日期和時間，日曆和即將到來的清單就會保持最新。",
+        "steps": {
+            "pick": {
+                "title": "選擇活動。",
+                "text": "從遊戲資料中的活動挑選。"
+            },
+            "start": {
+                "title": "設定開始時間。",
+                "text": "輸入下一輪的日期和時間。有些活動有兩輪，或持續好幾天。"
+            },
+            "roll": {
+                "title": "讓它自動推進。",
+                "text": "一輪結束後，下一個日期會依重複規則自動填入。"
+            }
+        }
+    },
+    "calendar": {
+        "previous": "上個月",
+        "next": "下個月",
+        "today": "今天",
+        "zoneLabel": "時區",
+        "utc": "UTC",
+        "local": "我的時間",
+        "monthTitle": "{year}年{month}",
+        "nameWithRun": "{name}，{run}",
+        "dayTail": "第{day}天",
+        "chipText": "{name} {tail}"
+    },
+    "upcoming": {
+        "title": "即將到來",
+        "empty": "未來 30 天沒有活動。",
+        "now": "進行中",
+        "today": "今天",
+        "tomorrow": "明天",
+        "inDays": "{count, plural, other {{amount} 天後}}",
+        "timeAndLength": "{time}，{length}"
+    },
+    "mine": {
+        "intro": "{count, plural, other {{amount} 個活動。}}一輪結束後，下一輪的日期會依重複規則自動更新，所以日曆會一直顯示接下來的活動。",
+        "run": "輪次",
+        "rangeLine": "{range}，{time}",
+        "shortLine": "{when}，{length}",
+        "repeat": "重複：{rule}",
+        "coreTag": "成績在核心活動中",
+        "coreLink": "開啟核心活動",
+        "ended": "已結束",
+        "logged": "已記錄",
+        "edit": "編輯",
+        "remove": "移除"
+    },
+    "toast": {
+        "removedTitle": "已移除{name}",
+        "removedMessage": "已儲存的成績會保留在活動紀錄中。",
+        "undo": "復原",
+        "resultSavedTitle": "已儲存成績",
+        "resultSavedMessage": "{name}已加入活動紀錄。"
+    },
+    "add": {
+        "title": "新增活動",
+        "description": "從遊戲資料中選擇活動",
+        "close": "關閉",
+        "searchLabel": "搜尋活動",
+        "searchPlaceholder": "搜尋 {amount} 個活動",
+        "categoryLabel": "活動分類",
+        "all": "全部",
+        "categoryTab": "{name}，{amount}",
+        "showing": "顯示 {shown} / {total} 個活動。選擇一個即可設定開始日期和時間。",
+        "none": "沒有符合搜尋的活動。",
+        "noDuration": "遊戲資料中沒有時長",
+        "added": "已新增",
+        "button": "新增",
+        "addNamed": "新增{name}",
+        "showMore": "顯示更多"
+    },
+    "schedule": {
+        "description": "設定活動何時進行。之後的輪次會自動更新。",
+        "cancel": "取消",
+        "add": "新增活動",
+        "save": "儲存排程",
+        "howTitle": "活動進行方式",
+        "shape": {
+            "one": "一天",
+            "several": "多天",
+            "two": "每個週期兩輪"
+        },
+        "shapeHint": {
+            "one": "單輪、一天。若是以分鐘或小時計的短時活動，請修改時長。",
+            "several": "單輪，持續多天。",
+            "two": "每個週期兩輪，例如兩個賽季或每週兩天。每輪各有自己的開始時間、時長和名稱。"
+        },
+        "runTitle": "第 {number} 輪",
+        "runSingle": "輪次",
+        "name": "名稱",
+        "startDate": "開始日期",
+        "startTime": "開始時間（UTC）",
+        "length": "時長",
+        "unit": "單位",
+        "runUnits": {
+            "minutes": "分鐘",
+            "hours": "小時",
+            "days": "天"
+        },
+        "repeatTitle": "重複",
+        "repeatKind": {
+            "none": "不重複",
+            "every": "每隔",
+            "weekly": "每週指定日"
+        },
+        "every": "每隔",
+        "weekdays": "星期",
+        "repeatUnits": {
+            "hours": "小時",
+            "days": "天",
+            "weeks": "週",
+            "months": "個月"
+        },
+        "gameSays": "遊戲資料說明：{text}",
+        "gameSaysNoRule": "遊戲資料說明：{text}",
+        "useSuggestion": "使用建議",
+        "everyError": "請輸入大於 0 的數字。",
+        "givesTitle": "活動提供的內容",
+        "givesHint": "依遊戲資料設定。你可以更改。這會決定成績表單要填哪些欄位。",
+        "previewTitle": "日曆會顯示的內容",
+        "previewEmpty": "輸入有效的日期和時長即可查看各輪。",
+        "previewShort": "{range}，{time}",
+        "previewNote": "一輪結束後，日期會依重複規則往後推。你可以編輯任何日期。"
+    },
+    "result": {
+        "title": "新增活動詳情",
+        "description": {
+            "participation": "記錄你是否參加以及獲得的內容",
+            "milestones": "積分與你達成的目標",
+            "ranking": "分數、名次與你達成的里程碑",
+            "tier": "聯賽階級與名次",
+            "waves": "難度、波數、積分與名次",
+            "skipped": "記錄你跳過了這一輪"
+        },
+        "cancel": "取消",
+        "save": "儲存成績",
+        "noEvents": "請先新增活動。只有「我的活動」中的活動可以記錄，核心活動請在核心活動中記錄。",
+        "whichTitle": "哪個活動",
+        "event": "活動",
+        "versionsTag": "版本",
+        "run": "輪次",
+        "otherDate": "其他日期",
+        "runDate": "輪次日期",
+        "runLong": "{range}（{length}）",
+        "runNamed": "{when}，{name}",
+        "notLogged": "{run}，尚未記錄",
+        "tookPartQuestion": "你有參加嗎？",
+        "tookPart": "有參加",
+        "skipped": "跳過了",
+        "coreNote": "只列出你新增的活動。核心活動請在核心活動中記錄，不是在這裡。",
+        "versionTitle": "版本",
+        "versionKnown": "此版本的目標已在資料中，所以會依你的積分檢查。",
+        "versionUnknown": "此版本有些目標的積分還不在資料中。請手動檢查這些目標。",
+        "participationTitle": "這個活動沒有分數或排名",
+        "participationText": "遊戲資料只列出獎勵，沒有可計分的內容。請記錄你是否參加、獲得的獎勵和備註。",
+        "pointsFallback": "積分",
+        "pointsReached": "達成{unit}",
+        "pointsHint": "活動結束時的總計。",
+        "finalScore": "最終分數（{unit}）",
+        "finalScoreHint": "活動結束時你的{unit}總計。",
+        "rankingTitle": "排名",
+        "yourRank": "你的名次",
+        "allianceRank": "聯盟名次",
+        "rankGroup": "名次組別",
+        "rankGroupsHint": "名次組別來自遊戲資料：{groups}等。",
+        "targetsTitle": "已達成的目標，依你的積分",
+        "targetsCount": "已達成 {reached} / {total}",
+        "targetPoints": "{points} {unit}",
+        "pointsMissing": "{unit}：積分尚未收錄於資料中",
+        "needsPurchase": "需要任意金額的一次購買。",
+        "targetsHint": "依分數檢查。目標和獎勵來自遊戲資料。",
+        "targetsHintUnknown": "積分尚未收錄於資料中的目標不會依分數檢查，請手動檢查。",
+        "tierTitle": "聯賽",
+        "tier": "階級",
+        "placement": "你在組內的名次",
+        "starChange": "星數變化，依遊戲資料",
+        "stars": "{count, plural, other {{amount} 顆星}}",
+        "tiersHint": "階級：{tiers}。",
+        "allianceTitle": "聯盟",
+        "outcome": "聯盟在這一輪的結果",
+        "outcomeHint": "選填。勝、敗或平手。",
+        "outcomes": {
+            "none": "未設定",
+            "won": "勝",
+            "lost": "敗",
+            "drawn": "平手"
+        },
+        "wavesTitle": "難度與波數",
+        "difficulty": "你挑戰的難度",
+        "difficultyFrom": "{name}，聯盟積分 {points} 起",
+        "wavesCleared": "已通關波數，0 到 {count}",
+        "wavesHint": "遊戲資料列出{name}共有 {count} 波。",
+        "defenseTitle": "防禦積分",
+        "yourPoints": "你的積分",
+        "alliancePoints": "聯盟積分",
+        "rewardLevel": "已達成的獎勵等級",
+        "rewardLevelNone": "尚無",
+        "level": "{level} 級",
+        "levelsHint": "等級需要個人積分和聯盟積分，兩者都來自遊戲資料。",
+        "rankingsTitle": "排名",
+        "notesTitle": "備註",
+        "rewards": "你獲得的獎勵",
+        "rewardsPlaceholder": "例如 2 個英雄碎片、500 寶石",
+        "notes": "備註",
+        "notesPlaceholder": "關於這一輪想記住的事"
+    },
+    "history": {
+        "emptyTitle": "尚未記錄任何成績",
+        "emptyText": "按「新增活動詳情」即可記錄你在某一輪活動中獲得的內容。你的成績和趨勢會顯示在這裡。",
+        "eventFilter": "活動",
+        "allEvents": "所有活動",
+        "period": "期間",
+        "months3": "3 個月",
+        "months6": "6 個月",
+        "allTime": "全部時間",
+        "intro": "你記錄的每筆成績，最新的在前。核心活動請在核心活動中記錄，不會顯示在這裡。",
+        "showing": "顯示 {shown} / {total} 筆成績。",
+        "showingEvent": "{count, plural, other {顯示{name}的 {amount} 筆成績。}}",
+        "noneInPeriod": "這段期間沒有成績。",
+        "showMore": "顯示更多",
+        "colDate": "日期",
+        "colEvent": "活動",
+        "colScore": "分數",
+        "colRank": "名次",
+        "colAlliance": "聯盟",
+        "colResult": "成績",
+        "colActions": "操作",
+        "none": "-",
+        "edit": "編輯",
+        "editNamed": "編輯{name}的成績",
+        "skipped": "跳過",
+        "tierOnly": "{tier} {placement}",
+        "stars": "{count, plural, other {{amount} 顆星}}",
+        "waves": "{count, plural, other {{difficulty}，{amount} 波}}",
+        "targets": "{unit}，目標 {reached} / {total}",
+        "tookPart": "有參加",
+        "tookPartRewards": "有參加，{rewards}",
+        "rankText": "第 {rank} 名",
+        "allianceRankText": "聯盟第 {rank} 名",
+        "separator": " · ",
+        "defensePoints": "{score} 防禦積分",
+        "scoreUnit": "{score} {unit}",
+        "noScore": "沒有分數",
+        "trendTitle": "{name}趨勢",
+        "trendScore": "每次活動結束時的{unit}",
+        "trendRank": "每次活動結束時你的名次",
+        "metricLabel": "趨勢指標",
+        "metricScore": "分數",
+        "metricRank": "個人名次",
+        "chartLabel": "{name}的趨勢圖",
+        "best": "最佳",
+        "average": "平均",
+        "latest": "最新",
+        "change": "變化",
+        "events": "{count, plural, other {{amount} 個活動}}",
+        "changeVs": "對比 {month}",
+        "changePercentVs": "對比 {month} {percent}%",
+        "noPrevious": "沒有更早的成績",
+        "noTrend": "這個活動沒有可繪製圖表的分數或名次。成績請見下方清單。"
+    },
+    "cycles": {
+        "title": "核心活動週期",
+        "hint": "SvS、Alliance Showdown 和 King of Icefield 依固定週期進行。只要設定一次下次開始時間，它們就會在日曆上重複出現。",
+        "next": "下次 {date}，重複 {repeat}",
+        "notSet": "未設定",
+        "set": "設定週期",
+        "edit": "編輯週期"
+    }
+}

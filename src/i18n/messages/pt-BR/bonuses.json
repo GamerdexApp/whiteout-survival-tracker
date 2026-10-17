@@ -1,0 +1,115 @@
+{
+  "title": "Bônus",
+  "all": "Todos",
+  "list": {
+    "separator": ", ",
+    "andLast": "{rest} e {last}"
+  },
+  "sourceTypes": {
+    "account": "Conta",
+    "hero": "Heróis",
+    "expert": "Especialistas",
+    "research": "Pesquisa",
+    "allianceTech": "Tecnologia da Aliança",
+    "allianceFacility": "Instalações da Aliança",
+    "alliancePrestige": "Construções de Prestígio da Aliança",
+    "vip": "VIP",
+    "building": "Construções",
+    "skin": "Skins",
+    "tundraAlbum": "Álbum da Tundra",
+    "collection": "Coleção",
+    "decoration": "Minha Ilha",
+    "treeOfLife": "Minha Ilha",
+    "castleAppointment": "Posição do Castelo",
+    "pet": "Pets",
+    "chiefGear": "Equipamento do Chefe",
+    "chiefGearSet": "Bônus de conjunto do Equipamento do Chefe",
+    "chiefCharm": "Amuletos do Chefe",
+    "chiefOrder": "Ordens do Chefe",
+    "presidentSkill": "Habilidades do Presidente",
+    "marchQueuePack": "o Pacote de Fila de Marcha"
+  },
+  "unit": {
+    "percent": "{value}%",
+    "hours": "{value} h",
+    "seconds": "{value} s",
+    "plain": "{value}"
+  },
+  "view": {
+    "subline": "{name} · todos os bônus somados das outras páginas. Esta página não guarda nada.",
+    "tiles": {
+      "stats": "Atributos no resultado",
+      "groups": "Grupos com atributos",
+      "sources": "Tipos de fonte que contribuem"
+    },
+    "pending": {
+      "title": "Nem todas as fontes são contadas ainda.",
+      "text": "Cada fonte abaixo é lida da página que a guarda. Enquanto estas páginas não estiverem prontas, elas não somam nada: {pending}. {unstored} ainda não são guardados por nenhuma página."
+    },
+    "rulesTitle": "Como os números são contados",
+    "rules": {
+      "affinity": {
+        "title": "Afinidade dos especialistas",
+        "text": "Um especialista dá um bônus base que cresce com o nível de afinidade. Nos níveis 10, 20 até 100, o especialista precisa avançar. Até lá, vale o bônus do nível anterior."
+      },
+      "albums": {
+        "title": "Os álbuns contam quando completos",
+        "text": "Um Álbum da Tundra só dá o buff quando os 9 quebra-cabeças estão feitos."
+      },
+      "pets": {
+        "title": "Os pets usam o valor refinado",
+        "text": "Cada pet conta o valor normal ou o refinado, conforme você definiu na página Pets."
+      },
+      "noNumber": {
+        "title": "Sem número, não conta",
+        "text": "Uma fonte sem número nos dados não soma nada. Ela não é mostrada como 0."
+      },
+      "apart": {
+        "title": "Mantidos separados",
+        "text": "Valores percentuais e fixos nunca são somados. Os atributos de Infantaria, Lanceiros e Atiradores são separados dos atributos de Tropas."
+      },
+      "time": {
+        "title": "Atributos de tempo",
+        "text": "Construction Speed Boost são as horas economizadas em cada construção. Ally Help Time é em segundos. Cada um mostra sua unidade."
+      }
+    },
+    "search": {
+      "label": "Buscar atributos",
+      "placeholder": "Buscar atributos"
+    },
+    "views": {
+      "label": "Visualização",
+      "stat": "Por atributo",
+      "source": "Por fonte"
+    },
+    "empty": {
+      "noBonusesTitle": "Nenhum bônus ainda",
+      "noBonusesDescription": "Os bônus aparecem conforme as páginas que os guardam são preenchidas.",
+      "noMatchTitle": "Nenhum atributo encontrado",
+      "noMatchDescription": "Mude a busca ou o grupo."
+    },
+    "statCount": "{count, plural, one {{amount} atributo} other {{amount} atributos}}",
+    "sourceCount": "{count, plural, one {{amount} fonte} other {{amount} fontes}}",
+    "columns": {
+      "statAndSource": "Atributo e fonte",
+      "sourceType": "Tipo de fonte",
+      "counted": "Contado"
+    }
+  },
+  "eventRules": {
+    "title": "Regras de buffs em eventos",
+    "intro": "Diz quais tipos de bônus continuam valendo durante um evento. São regras, não números, então nada aqui entra nos totais acima.",
+    "event": "Evento",
+    "columns": {
+      "cityBonusWarsBuffs": "Bônus da cidade",
+      "deploymentCapacity": "Mobilização",
+      "territoryBonuses": "Território",
+      "marchAccelerator": "Acel. marcha"
+    },
+    "applicability": {
+      "yes": "Sim",
+      "no": "Não",
+      "partial": "Parcial"
+    }
+  }
+}

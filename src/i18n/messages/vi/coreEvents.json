@@ -1,0 +1,108 @@
+{
+    "days": {
+        "day": "Ngày {number}",
+        "battle": "Chiến đấu",
+        "range": "Ngày {range}",
+        "stage": "Giai đoạn {number}"
+    },
+    "page": {
+        "title": "Sự kiện chính",
+        "subline": "{chief} · {details}"
+    },
+    "events": {
+        "svs": "SvS",
+        "showdown": "Alliance Showdown",
+        "king": "King of Icefield",
+        "hall": "Hall of Chief"
+    },
+    "tabs": {
+        "label": "Sự kiện chính"
+    },
+    "empty": {
+        "title": "Không có sự kiện nào hiển thị",
+        "description": "Cả bốn sự kiện đang bị ẩn với thủ lĩnh này. Hãy bật chúng trong Sửa thủ lĩnh.",
+        "action": "Sửa thủ lĩnh"
+    },
+    "strip": {
+        "live": "Sự kiện đang diễn ra",
+        "dates": "{start} đến {end}",
+        "noDates": "Ngày được đặt trong Nhật ký sự kiện.",
+        "today": "Hôm nay là {day}",
+        "checklist": "Danh sách việc",
+        "log": "Nhật ký sự kiện"
+    },
+    "bonus": {
+        "title": "Cấp {skill} của {expert}",
+        "level": "Cấp {level}",
+        "levelWithPercent": "Cấp {level} · {percent}%",
+        "none": "Chưa đặt cấp, nên không cộng thêm gì.",
+        "readOnly": "Chỉ xem",
+        "openExperts": "Mở Chuyên gia",
+        "svsHelp": "Cộng 2% mỗi cấp vào điểm của ngày 1 đến 5, làm tròn theo từng ngày, và thêm bậc phụ vào các mốc điểm. Giai đoạn Chiến đấu không được cộng. Ở đây chỉ xem, cấp được đặt ở trang Chuyên gia.",
+        "showdownHelp": "Cộng 5% mỗi cấp cho mọi hành động. Ở đây chỉ xem, cấp được đặt ở trang Chuyên gia.",
+        "noneTitle": "Không có cộng thêm từ chuyên gia",
+        "kingNote": "Không chuyên gia nào đổi điểm của King of Icefield.",
+        "hallNote": "Không chuyên gia nào đổi điểm của Hall of Chief."
+    },
+    "daysSection": {
+        "title": "Các ngày",
+        "stages": "Các giai đoạn",
+        "totalPerDay": "Tổng điểm mỗi ngày",
+        "totalPerStage": "Tổng điểm mỗi giai đoạn",
+        "hallSeason": "Mùa được đặt ở tài khoản và là Mùa 1 cho đến lúc đó.",
+        "showdownScope": "Chỉ điểm cá nhân. Không có tổng liên minh và không có điểm chiến thắng."
+    },
+    "table": {
+        "title": "{day}: {name}",
+        "phasePreparation": "Giai đoạn Chuẩn bị",
+        "phaseBattle": "Giai đoạn Chiến đấu",
+        "action": "Hành động",
+        "pointsEach": "Điểm mỗi lần",
+        "count": "Số lần",
+        "points": "Điểm",
+        "lower": "Giảm số lần của {action}",
+        "raise": "Tăng số lần của {action}",
+        "countLabel": "Số lần của {action}",
+        "fromPlans": "{amount} từ kế hoạch",
+        "base": "Gốc {amount}",
+        "bonus": "Cộng thêm {amount}",
+        "total": "Tổng {amount}"
+    },
+    "result": {
+        "totalTitle": "Tổng điểm, mọi ngày",
+        "totalTitleHall": "Tổng điểm, giai đoạn đã chọn",
+        "baseBonus": "Gốc {base}, cộng thêm {bonus}",
+        "battle": "Giai đoạn Chiến đấu",
+        "battleNoBonus": "Giai đoạn Chiến đấu không có cộng thêm",
+        "seasonSum": "Tổng các giai đoạn của mùa: {amount}. Không phải xếp hạng.",
+        "selectedDayTotal": "{day}: {amount}",
+        "selectedDayBonus": "Cộng thêm {percent}%"
+    },
+    "perDay": {
+        "title": "Điểm mỗi ngày",
+        "titleHall": "Điểm mỗi giai đoạn",
+        "bar": "Tỉ lệ so với ngày lớn nhất cho {day}"
+    },
+    "thresholds": {
+        "title": "Mốc điểm",
+        "estimate": "Ước tính",
+        "help": "Các mốc cho {day}, so với tổng của ngày.",
+        "reached": "Đã đạt",
+        "needs": "Cần thêm {amount}",
+        "extraTier": "Bậc phụ {number}, từ Valeria",
+        "extraTierUnknown": "Điểm và phần thưởng không có trong gói dữ liệu",
+        "unknown": "Không rõ",
+        "noneEvent": "Gói dữ liệu không có mốc điểm cho sự kiện này.",
+        "noneDay": "Gói dữ liệu không có mốc điểm cho ngày này."
+    },
+    "ranks": {
+        "title": "Mốc hạng",
+        "note": "Đây là xếp hạng người chơi. Một hạng không có ngưỡng điểm.",
+        "rank": "Hạng",
+        "reward": "Phần thưởng",
+        "gems": "{amount} Gems",
+        "unknown": "Không rõ",
+        "notConfirmed": "Chưa xác nhận",
+        "noneShowdown": "Gói dữ liệu không có xếp hạng cá nhân cho Alliance Showdown."
+    }
+}

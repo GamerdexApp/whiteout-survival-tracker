@@ -1,0 +1,49 @@
+{
+  "line": "참 {rows}행, 슬롯 {slots}개, 교환 비율 {rates}개예요. 참고용이며 영주에게 저장되지 않아요.",
+  "slots": {
+    "heading": "참 슬롯",
+    "meta": "슬롯 {slots}개, 병종마다 하나씩",
+    "icons": "{count, plural, other {레벨 아이콘 {amount}개}}",
+    "recordLine": "{troopType} 병력을 강화해요. 레벨마다 아이콘이 하나씩 있어요."
+  },
+  "table": {
+    "heading": "참 표",
+    "meta": "{rows}행, {levels}레벨",
+    "searchLabel": "검색",
+    "searchPlaceholder": "참 {rows}행 검색",
+    "levelLabel": "레벨",
+    "allLevels": "모든 레벨",
+    "levelOption": "{level}레벨",
+    "stageLabel": "단계",
+    "allStages": "모든 단계",
+    "stageOption": "{stage}단계",
+    "empty": "필터에 맞는 참 행이 없어요."
+  },
+  "columns": {
+    "row": "행",
+    "materials": "재료",
+    "stats": "능력치",
+    "power": "전투력",
+    "score": "점수"
+  },
+  "cells": {
+    "none": "없음",
+    "percent": "{value}%"
+  },
+  "levels": {
+    "heading": "레벨",
+    "level": "레벨",
+    "levelName": "{level}레벨",
+    "rows": "행",
+    "stats": "능력치, 처음부터 마지막까지",
+    "power": "마지막 행의 전투력",
+    "statsRange": "{first}%에서 {last}%"
+  },
+  "exchange": {
+    "heading": "재료 교환 비율",
+    "exchange": "교환",
+    "from": "교환 전",
+    "to": "교환 후",
+    "weeklyLimit": "주간 한도"
+  }
+}

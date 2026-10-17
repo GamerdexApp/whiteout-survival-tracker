@@ -1,0 +1,79 @@
+{
+    "line": "{categories} 個分類共 {items} 個道具，含來源以及 {chests} 個寶箱的掉落率。",
+    "catalog": {
+        "title": "道具目錄",
+        "showing": "顯示 {shown} / {total}",
+        "search": "搜尋",
+        "searchPlaceholder": "依名稱或說明搜尋道具",
+        "table": "道具",
+        "item": "道具",
+        "category": "分類",
+        "sources": "來源",
+        "lootRates": "掉落率",
+        "description": "說明",
+        "emptyTitle": "沒有符合的道具",
+        "emptyDescription": "請更改搜尋或篩選。"
+    },
+    "filters": {
+        "title": "篩選",
+        "button": "篩選",
+        "summary": "篩選：{category}。來源：{sources}",
+        "edit": "編輯",
+        "category": "分類",
+        "all": "全部",
+        "sources": "來源",
+        "lootRates": "掉落率",
+        "reset": "重設",
+        "show": "{count, plural, other {顯示 {amount} 個道具}}"
+    },
+    "sourcesFilter": {
+        "any": "不限來源",
+        "has": "有來源",
+        "none": "沒有來源"
+    },
+    "sourcesChip": {
+        "any": "不限",
+        "has": "有來源",
+        "none": "沒有來源（{amount}）"
+    },
+    "lootFilter": {
+        "any": "不限",
+        "has": "有掉落率"
+    },
+    "lootChip": {
+        "any": "不限",
+        "has": "有掉落率（{amount} 個寶箱）"
+    },
+    "loot": {
+        "yes": "是",
+        "no": "否",
+        "notChest": "不是寶箱"
+    },
+    "detail": {
+        "title": "詳細資料",
+        "category": "分類",
+        "sources": "來源",
+        "speedup": "加速道具",
+        "speedupValue": "{type}，{minutes} 分鐘",
+        "description": "說明",
+        "lootRates": "掉落率",
+        "lootRowsListed": "{count, plural, other {已列出 {amount} 列}}",
+        "noLootRates": "資料中沒有這個寶箱的掉落率",
+        "lootTitle": "掉落率",
+        "lootMeta": "{count, plural, other {{amount} 種獎勵}}",
+        "lootTable": "寶箱的掉落率",
+        "reward": "獎勵",
+        "amount": "數量",
+        "chance": "機率",
+        "chanceValue": "{percent}%",
+        "name": "名稱"
+    },
+    "speedupType": {
+        "general": "通用",
+        "construction": "建造",
+        "troop": "部隊",
+        "research": "研究",
+        "learning": "學習",
+        "healing": "治療"
+    }
+}

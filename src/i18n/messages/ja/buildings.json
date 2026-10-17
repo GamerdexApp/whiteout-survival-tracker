@@ -1,0 +1,282 @@
+{
+    "title": "建物",
+    "tabs": {
+        "buildings": "建物",
+        "facilities": "施設"
+    },
+    "notBuilt": "未建設",
+    "built": "建設済み",
+    "none": "なし",
+    "unknown": "不明",
+    "close": "閉じる",
+    "cancel": "キャンセル",
+    "undo": "元に戻す",
+    "ofTotal": "{total}中{count}",
+    "noOtherRequirements": "他の必要条件はありません",
+    "builderName": "ビルダー{number}",
+    "shelterName": "Shelter {number}",
+    "levelOf": "{name}のレベル",
+    "levelRange": "{from}から{to}",
+    "requirement": {
+        "shelter": "{building}レベル{level}",
+        "heroHall": "Hero Hall建設済み",
+        "level": "{building} {level}"
+    },
+    "columns": {
+        "building": "建物",
+        "current": "現在",
+        "goal": "目標",
+        "power": "戦力",
+        "progress": "進行状況と次のレベル",
+        "upgrade": "アップグレード"
+    },
+    "entry": {
+        "notes": {
+            "furnace": "他のすべての建物の上限を決めます",
+            "shelter": "最大8棟、それぞれに個別のレベル"
+        },
+        "subline": {
+            "size": "最大{max} · {count}レベル",
+            "withNote": "{note} · {size}",
+            "single": "1回のみ建設 · 戦力{power}"
+        },
+        "progress": {
+            "requires": "必要条件: {list}",
+            "noRequirements": "必要条件なし",
+            "maxLevel": "最大レベル",
+            "blocked": "進行不可: {list}が必要",
+            "needs": "{list}が必要",
+            "levelAgeLocked": "保存済みのレベル{level}は、このサーバーではまだ開放されていません。{text}",
+            "goalAgeLocked": "目標{goal}は、このサーバーではまだ開放されていません。{text}",
+            "nextAgeLocked": "次のレベル{level}はロック中です。{text}"
+        },
+        "builtSwitch": "{name}を建設済み",
+        "shelters": {
+            "none": "建設なし",
+            "editLabel": "Shelter（{count}）、レベルを編集",
+            "button": "Shelter（{count}）"
+        },
+        "levels": "レベル",
+        "levelsLabel": "{name}のレベル",
+        "upgrading": "{name}をアップグレード中",
+        "startLabel": "{name}のアップグレードを開始",
+        "start": "開始",
+        "startUpgrade": "アップグレードを開始",
+        "devIndex": "開発指数 {value}",
+        "powerLine": "戦力 {power} · 開発指数 {index}",
+        "progressLabel": "{name}の進行状況"
+    },
+    "builders": {
+        "label": "ビルダー",
+        "hint": "ここで開始したアップグレードは、概要に実行中のキューとして表示されます。",
+        "idle": "建物の「開始」を押すと、アップグレードを始められます。",
+        "jobTitle": "{name}、{from}から{to}",
+        "locked": "ロック中",
+        "lockedText": "2人目のビルダーには建設パックが必要です。",
+        "lockedLink": "チーフの編集でオンにする"
+    },
+    "upgrade": {
+        "option": "{subject}、{from}から{to}",
+        "busy": "使用中: {name}を{level}へ、{timeLeft}"
+    },
+    "facilities": {
+        "intro": "都市の施設です。建設したものにチェックを付けてください。ここは都市の施設であり、同盟メニューの同盟施設ではありません。",
+        "builtLabel": "建設済みの施設",
+        "unlockedLabel": "Furnaceのレベルで解放済み",
+        "requires": "Furnace {level}が必要",
+        "unlocksAt": "Furnace {level}で解放"
+    },
+    "tab": {
+        "intro": "すべての建物の現在のレベルと目標です。Furnaceが他の建物の上限を決めます。",
+        "searchLabel": "建物を検索",
+        "filters": "フィルター",
+        "massEdit": "一括編集",
+        "startUpgrade": "アップグレードを開始",
+        "plan": "プラン",
+        "status": "{total}棟中{shown}棟の建物を表示。目標はここでは読み取り専用で、プランで設定します。現在のレベルと同じ目標は、目標なしを意味します。ステッパーはゲームの順に1レベルずつ動きます。",
+        "groupPinned": "固定",
+        "stats": {
+            "furnace": "Furnace、他のすべての建物の上限",
+            "power": "現在の戦力（全建物）",
+            "developmentIndex": "開発指数（全建物）",
+            "withGoal": "目標のある建物",
+            "atMax": "最大レベル",
+            "entertainment": "建設済みのエンターテインメント"
+        },
+        "empty": {
+            "title": "一致する建物がありません",
+            "description": "検索条件を変更するかフィルターをリセットすると、全建物を表示します。",
+            "reset": "検索とフィルターをリセット"
+        },
+        "start": {
+            "description": "建物をアップグレード中にします",
+            "selectLabel": "アップグレードする建物",
+            "selectHelp": "今すぐ開始できる建物だけを表示します。ロック中、最大、実行中の建物は含まれません。各アップグレードは2人のビルダーのどちらかを使います。",
+            "timeLabel": "建設時間",
+            "speedLabel": "建設速度",
+            "slotLabel": "ビルダー",
+            "slotHelp": "空いているビルダーを選んでください。使用中のビルダーには、空く時刻が表示されます。"
+        },
+        "toasts": {
+            "started": {
+                "title": "アップグレードを開始しました",
+                "message": "{name}、{subtitle}。"
+            },
+            "finished": {
+                "title": "{name}をアップグレードしました",
+                "message": "現在は{level}です。履歴に追加しました。"
+            },
+            "cancelled": {
+                "title": "{name}のアップグレードをキャンセルしました",
+                "message": "レベルは変わりません。必要に応じて、資源で在庫を修正してください。"
+            },
+            "massEdit": {
+                "title": "一括編集を適用しました",
+                "message": "{count, plural, other {建物{amount}棟}}を更新しました。"
+            }
+        },
+        "manage": {
+            "finishText": "「アップグレードを完了」を押すと、{name}が{level}になり、ビルダー{builder}が空き、アップグレードが履歴に追加されます。残り時間が0になると、建物とビルダーのカードに「完了可能」と表示されます。スピードアップを使った可能性があるため、自動では完了しません。"
+        }
+    },
+    "filters": {
+        "title": "フィルター",
+        "description": "建物の一覧に表示する内容を選びます",
+        "reset": "リセット",
+        "show": "{count, plural, other {建物{amount}棟を表示}}",
+        "category": "カテゴリー",
+        "categoryAll": "すべて、{count}",
+        "categoryOption": "{category}、{count}",
+        "showSection": "表示",
+        "hideMaxed": "最大の建物を隠す",
+        "hideLocked": "ロック中の建物を隠す",
+        "goalsOnly": "目標のある建物のみ",
+        "order": "並び順",
+        "orders": {
+            "game": "ゲームの順（Furnaceが先頭）",
+            "name": "名前順（A→Z）",
+            "progress": "進行状況順（低い順）"
+        },
+        "pinned": "Furnaceはフィルターに関係なく先頭に固定されます。フィルターは保存されません。"
+    },
+    "levels": {
+        "title": "レベル",
+        "description": "{category} · 最大{max} · {count}レベル",
+        "noDescription": "データに説明はまだありません。",
+        "current": "現在のレベル",
+        "goal": "目標レベル",
+        "nextNeeds": "次のレベルの必要条件",
+        "noGoal": "目標なし",
+        "tableNote": "この表には、現在より上のレベルだけを表示します。それ以前のレベルは完了済みです。",
+        "maxed": "最大レベルです。アップグレードできるものは残っていません。",
+        "nextAfter": "{level}以降のレベル",
+        "first": "最初のレベル",
+        "level": "レベル",
+        "time": "時間",
+        "power": "戦力",
+        "capacity": "容量",
+        "requires": "必要条件",
+        "goalBadge": "目標",
+        "capacityNote": "容量はパッケージのティア基準行にしか設定されていないため、サブレベルは不明と表示されます。"
+    },
+    "massEdit": {
+        "title": "建物の一括編集",
+        "description": "多くの建物を一度に設定します。「建物を設定」を押すまで何も保存されません。",
+        "noChanges": "変更はまだありません",
+        "changes": "{count, plural, other {{amount}棟が変更されます}}",
+        "set": "{count, plural, other {建物{amount}棟を設定}}",
+        "raiseTitle": "すべての建物を指定レベルまで上げる",
+        "raiseLabel": "すべての建物を次のレベルまで上げる",
+        "raiseAll": "すべて上げる",
+        "raiseHint": "各建物は、このレベル以下の最高レベルまで上がります。すでに高い建物はそのままで、後から始まる建物は未建設のままです。目標は変更されません。",
+        "blockedTitle": "先に別の建物が必要な建物があります。",
+        "blocked": "{count, plural, other {{amount}棟}}が、必要条件で許されるレベルを超えています。",
+        "lowerBlocked": "許されるレベルまで下げる",
+        "levels": "レベル",
+        "needsFirst": "先に{list}が必要",
+        "was": "以前は{level}",
+        "entertainment": "エンターテインメント",
+        "markAllBuilt": "すべて建設済みにする",
+        "clearAll": "すべてクリア",
+        "footnote": "一括編集は、保存済みのレベルだけを変更します。レベルを自動で下げることはなく、目標も変更しません。Shelterはそれぞれレベルを持つため、Sheltersボタンで設定してください。Hero Hallは施設タブで設定します。"
+    },
+    "shelters": {
+        "title": "Shelters",
+        "description": "最大{max}棟まで建設できます。それぞれのレベルを設定してください。",
+        "locked": "Shelterは、Furnaceのレベルによりまだロックされています。",
+        "empty": "Shelterはまだありません。",
+        "power": "戦力 {power}",
+        "add": "Shelterを追加",
+        "remove": "Shelter {number}を削除",
+        "allBuilt": "{max}棟のShelterをすべて建設済みです。",
+        "furnaceNeeds": "FurnaceがShelterに求める条件",
+        "requirement": "Furnace {furnaceLevel}には、Shelter {number}のレベル{level}が必要です。",
+        "met": "達成。",
+        "notMet": "未達成。",
+        "footnote": "プランと進行バーは、次にアップグレードする、最もレベルの低いShelterを使います。"
+    },
+    "plan": {
+        "title": "建物のプラン",
+        "description": "現在のレベルから目標までの資源、時間、戦力",
+        "saved": "プランを保存しました（{time}）",
+        "save": "プランを保存",
+        "failed": "プランを計算できませんでした。",
+        "goalsHeading": "{count, plural, other {目標、建物{amount}棟}}",
+        "noGoals": "目標はまだありません。上で建物を追加してから、到達したいレベルを選んでください。",
+        "prerequisiteNote": "前提となるステップは自動で追加されます。別の建物のより高いレベルを必要とするレベルは、そのステップを数えて印を付けます。",
+        "timeNote": "プランには、速度ボーナス{percent}%を適用して{time}かかります。在庫: 建設 {construction}分、汎用 {general}分。汎用のスピードアップは建設に使われます。",
+        "add": {
+            "title": "建物を追加",
+            "allAdded": "すべての建物がすでにプランに入っています。",
+            "selectLabel": "追加する建物",
+            "button": "建物を追加"
+        },
+        "speed": {
+            "title": "建設速度",
+            "percent": "{value}%",
+            "plusPercent": "+{value}%",
+            "readOnly": "読み取り専用",
+            "bonusesOn": "ボーナスページの値を引き継いでいます。",
+            "bonusesOff": "設定の「ボーナスの合計を適用」でオフになっています。",
+            "openBonuses": "ボーナスを開く",
+            "appointment": "大統領の特典と任命",
+            "appointments": {
+                "none": "なし",
+                "regular": "通常",
+                "supreme": "最上級"
+            },
+            "appointmentNote": "通常は10パーセント、最上級は15パーセントです。<strong>推定:</strong> パッケージはこの値を研究についてのみ示しています。",
+            "petSkill": "ペットスキル、Builder's Aide",
+            "petSkillNote": "パーセントは、ペットページのCave Hyenaの現在のレベルから取得します。",
+            "chiefOrder": "チーフオーダー、Double Time",
+            "chiefOrderNote": "<strong>推定:</strong> 5分間、建設速度を{percent}パーセント上げます。パッケージにチーフオーダーのデータはないため、値はアプリが入力し、全体の時間に適用します。",
+            "total": "建設速度の合計",
+            "petSkillNoteLocked": "ペットページでCave Hyenaが解放されていないため、このスキルは何も加算しません。そちらで解放するとオンになります。"
+        },
+        "goal": {
+            "to": "→",
+            "label": "{name}の目標",
+            "remove": "{name}をプランから削除"
+        },
+        "result": {
+            "title": "結果、{count}ステップ",
+            "powerGained": "獲得戦力",
+            "speedupMinutes": "必要なスピードアップの分数",
+            "baseTime": "基本時間",
+            "timeWithBonus": "{percent}%ボーナス適用後の時間",
+            "eventPoints": "イベントポイント: SvS {svs}、King of Icefield {king}（<strong>推定</strong>、イベントのポイント行より）。",
+            "prerequisite": "前提条件",
+            "steps": "{count, plural, other {{amount}ステップ}}",
+            "unmetHeading": "未達成の前提条件",
+            "unmetNone": "これらの目標にはありません。Hero Hallなど、リストにない建物があればここに表示されます。"
+        },
+        "export": {
+            "button": "コアイベントへエクスポート",
+            "empty": "エクスポートするには、プランに目標を追加してください。",
+            "speedupMinutes": "建設スピードアップの分数",
+            "power": "建設で獲得した戦力",
+            "stockDetail": "プランに必要な数は{needed}、所持数は{held}です。",
+            "unscored": "{name}をポイント対象にするイベントはありません。"
+        }
+    }
+}

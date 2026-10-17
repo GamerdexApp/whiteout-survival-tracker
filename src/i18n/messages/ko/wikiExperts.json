@@ -1,0 +1,70 @@
+{
+  "line": "전문가 {experts}명, 관계 단계 {relationships}개예요. 참고용이며 저장되지 않아요.",
+  "roster": {
+    "title": "전문가",
+    "count": "전문가 {total}명 중 {shown}명",
+    "search": "검색",
+    "searchPlaceholder": "이름, 칭호, 전문 분야로 전문가 {count}명 검색",
+    "generation": "세대",
+    "all": "전체",
+    "empty": "필터에 맞는 전문가가 없어요.",
+    "generationValue": "{generation}세대",
+    "unlock": "해금: 서버 {days}일차",
+    "unlockUnknown": "해금:",
+    "unreleased": "아직 출시 전"
+  },
+  "detail": {
+    "subline": "{title} · 전문 분야 {specialty} · {generation}세대",
+    "baseBonus": "기본: {bonus}",
+    "bonus": "{stat} {value}",
+    "percentValue": "{value}%",
+    "skills": "스킬",
+    "talent": "재능, 최대 레벨 {level}",
+    "affinityLevels": "친밀도 레벨",
+    "baseBonusLabel": "기본 보너스",
+    "unlock": "서버 {days}일차에 해금돼요"
+  },
+  "skills": {
+    "title": "스킬과 재능",
+    "columns": {
+      "skill": "스킬",
+      "max": "최대",
+      "effect": "효과",
+      "books": "최대까지 책",
+      "exp": "최대까지 경험치"
+    },
+    "talent": "{name} (재능)",
+    "none": "없음",
+    "selectHint": "스킬을 선택하면 상세를 볼 수 있어요."
+  },
+  "skillLevels": {
+    "title": "스킬 레벨 표",
+    "meta": "{name}, 1레벨부터 {max}레벨까지",
+    "level": "{level}레벨",
+    "columns": {
+      "level": "레벨",
+      "exp": "경험치",
+      "books": "책"
+    },
+    "none": "없음"
+  },
+  "affinity": {
+    "title": "친밀도 레벨",
+    "level": "{level}레벨",
+    "columns": {
+      "level": "레벨",
+      "required": "필요 친밀도",
+      "bonus": "능력치 보너스",
+      "affinityPower": "친밀도 전투력",
+      "levelPower": "레벨 전투력",
+      "advancement": "승급 비용"
+    },
+    "noAdvancement": "승급 없음",
+    "startNote": "1레벨의 필요 친밀도는 시작값 {start}이에요. 2레벨부터는 그 레벨에 도달하는 데 드는 비용이에요."
+  },
+  "relationships": {
+    "title": "관계 단계",
+    "fromLevel": "{level}레벨부터"
+  },
+  "recordLine": "{title}, 전문 분야 {specialty}, {generation}세대. 참고용이며 저장되지 않아요."
+}

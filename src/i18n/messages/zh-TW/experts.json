@@ -1,0 +1,239 @@
+{
+    "page": {
+        "title": "專家"
+    },
+    "view": {
+        "subline": "{chief} · Dawn Academy 專家，遊戲中共 {total} 位",
+        "ghost": "專家"
+    },
+    "common": {
+        "plan": "規劃",
+        "generation": "第 {generation} 世代",
+        "unknown": "未知",
+        "and": "{first}和{last}",
+        "expertCount": "{count, plural, other {{amount} 位專家}}"
+    },
+    "stats": {
+        "recruited": "已招募專家",
+        "recruitedValue": "{count} / {total}",
+        "powerNow": "目前專家戰力，僅計已招募",
+        "powerAtMax": "滿級戰力，全部 {total} 位",
+        "highest": "最高親密度",
+        "highestValue": "{name} 達 {affinity}",
+        "highestNone": "尚未招募"
+    },
+    "toolbar": {
+        "searchLabel": "搜尋專家",
+        "searchPlaceholder": "搜尋專家",
+        "filters": "篩選",
+        "emptyTitle": "沒有符合的專家",
+        "emptyDescription": "請更改搜尋或篩選以查看更多專家。",
+        "reset": "重設篩選",
+        "status": "顯示 {shown} / {total}。目標在這裡唯讀，請在「規劃」中設定。等級為 10 的倍數時，專家進階之前會以前一級的加成計算。每次變更都會立即儲存。",
+        "lockedNote": "{count} 位在較晚的伺服器天數前鎖定。"
+    },
+    "toast": {
+        "notRecruitedTitle": "尚未招募 {name}",
+        "notRecruitedMessage": "等級會保留，重新開啟「已招募」後恢復。",
+        "undo": "復原"
+    },
+    "card": {
+        "recruited": "已招募",
+        "recruitedLabel": "{expert}已招募",
+        "summary": "{title} · {specialty} · {generation}",
+        "affinityLevel": "親密度等級",
+        "affinityLabel": "{expert}親密度等級",
+        "affinityDisplay": "{level} / {max}",
+        "affinityProgress": "{expert}親密度進度",
+        "goal": "目標 {goal}",
+        "advanced": "已進階",
+        "notAdvanced": "未進階",
+        "advancedLabel": "{expert}在 {level} 級已進階",
+        "relationship": "關係等級",
+        "affinityAvailable": "可用親密度",
+        "affinityAvailableLabel": "{expert}持有的親密度點數",
+        "affinityOf": "{level} 級需要 {need}",
+        "bonusTitle": "目前基礎加成",
+        "bonusNow": "{amount}% {stats}",
+        "bonusOwnLevel": "{level} 級不是 10 的倍數，所以以它自己的加成計算。",
+        "bonusAdvanced": "{level} 級已進階，所以以它自己的加成計算。",
+        "bonusNotAdvanced": "{level} 級未進階，所以以 {counted} 級的加成計算。",
+        "bonusAtMax": "100 級時：{amount}%。",
+        "feeds": "提供",
+        "bonuses": "加成",
+        "nextAdvancement": "下次進階：{level} 級，{sigils} 個 Sigil",
+        "allAdvanced": "所有進階都已完成。",
+        "skills": "技能",
+        "skillLabel": "{expert}{skill}等級",
+        "skillDisplay": "{level} / {max}",
+        "expAvailable": "可用 EXP",
+        "expAvailableLabel": "{expert}{skill}持有的 EXP",
+        "expOf": "{level} 級需要 {need}",
+        "maxLevel": "最高等級，不需要 EXP",
+        "talent": "天賦：{name}",
+        "talentLevel": "等級 {level} / {max}",
+        "talentFollows": "依{relationship}。{effect}。",
+        "power": "戰力 {now} / {max}",
+        "derived": "推算值",
+        "notRecruitedHint": "尚未招募。請在 Tundra Trek 招募這位專家，再開啟「已招募」。",
+        "recruitmentCost": "招募花費：{cost}",
+        "maxPower": "最高戰力 {max}",
+        "buffs": "增益 {stats}",
+        "expEnough": "足夠升到 {level} 級",
+        "affinityEnough": "足夠升到 {level} 級",
+        "skillLocked": "尚未解鎖。升到 1 級即可解鎖。",
+        "sigilsOwned": "持有 Sigil",
+        "sigilsOwnedLabel": "{expert}持有的 Sigil",
+        "sigilsHint": "與資源頁面中的 Sigil 數量相同。"
+    },
+    "filtersFlyout": {
+        "title": "篩選",
+        "description": "縮小專家清單範圍並選擇排序。",
+        "generation": "世代",
+        "all": "全部",
+        "show": "顯示",
+        "order": "排序",
+        "reset": "重設",
+        "showButton": "顯示{experts}",
+        "notSaved": "篩選條件不會儲存。",
+        "showOptions": {
+            "everything": "全部",
+            "recruited": "僅已招募",
+            "notRecruited": "僅未招募"
+        },
+        "orderOptions": {
+            "generation": "世代",
+            "affinity": "親密度等級",
+            "power": "戰力",
+            "name": "名稱"
+        }
+    },
+    "plan": {
+        "title": "規劃專家",
+        "description": "達成親密度與技能目標所需的 Books of Knowledge、Sigil、技能 EXP 和親密度點數。",
+        "saved": "規劃已儲存 {date}",
+        "close": "關閉",
+        "save": "儲存規劃",
+        "exportButton": "匯出到核心活動",
+        "exportNothing": "這份規劃不需要書或 Sigil，沒有內容可匯出。",
+        "export": {
+            "books": "Books of Knowledge",
+            "sigils": "Expert Sigils",
+            "exp": "技能 EXP",
+            "expReason": "沒有活動為技能 EXP 計分。"
+        },
+        "noExperts": "規劃中還沒有專家。請新增已招募的專家以設定它的目標。",
+        "add": {
+            "title": "新增專家",
+            "selectLabel": "要新增的專家",
+            "button": "新增專家",
+            "allIn": "所有已招募的專家都已在規劃中。",
+            "noneRecruited": "請先在頁面上招募專家才能規劃。"
+        },
+        "block": {
+            "remove": "移除",
+            "removeLabel": "從規劃中移除{expert}",
+            "part": "項目",
+            "current": "目前",
+            "goalHeading": "目標",
+            "affinity": "親密度等級",
+            "affinityHeld": "可用親密度 {amount}",
+            "expHeld": "可用 EXP {amount}",
+            "currentLevel": "{level} 級",
+            "currentAffinity": "{level}，已進階",
+            "currentAffinityPlain": "{level}",
+            "affinityGoalLabel": "{expert}親密度目標",
+            "skillGoalLabel": "{expert}{skill}目標",
+            "advanceAtGoal": "在 {level} 級進階",
+            "advanceAtGoalLabel": "{expert}在目標等級進階"
+        },
+        "checks": {
+            "affinity": "親密度點數",
+            "learning": "技能 EXP（以學習加速計）",
+            "minutesUnit": "分"
+        },
+        "stock": {
+            "sigils": "這份規劃需要 {total} 個 Sigil。你的專家 Sigil 涵蓋其中 {own} 個，所以 {common} 個必須來自 Common Expert Sigils。你持有的每個專家 Sigil 只能用於該專家。",
+            "books": "這份規劃的技能等級需要 {amount} 本 Books of Knowledge。",
+            "affinity": "這份規劃需要 {needed} 點親密度。專家卡片上持有的涵蓋 {held}，還差 {left}。資料包沒有親密度道具，所以不會與庫存核對。",
+            "learning": "這份規劃需要 {exp} 技能 EXP。你的技能持有 {held}，所以 {left} 必須來自學習加速。學習 1 分鐘可得 {rate} EXP，因此需要 {minutes} 分鐘。"
+        },
+        "byExpert": {
+            "title": "依專家",
+            "sigils": "Sigil：需要 {needed}，你的 {name} Sigil 涵蓋 {own}，另需 {common} 個來自 Common Expert Sigils",
+            "affinity": "親密度：需要 {needed}，可用 {held}，還差 {left}",
+            "exp": "技能 EXP：需要 {needed}，可用 {held}，還差 {left}"
+        },
+        "result": {
+            "title": "結果",
+            "derived": "推算值",
+            "books": "Books of Knowledge",
+            "sigils": "Sigil",
+            "exp": "技能 EXP",
+            "affinity": "親密度點數",
+            "advancements": "進階",
+            "skillLevels": "技能等級",
+            "affinityLevels": "親密度等級",
+            "heads": {
+                "expert": "專家",
+                "books": "書",
+                "sigils": "Sigil",
+                "exp": "EXP",
+                "levels": "等級",
+                "advancements": "進階",
+                "affinity": "親密度"
+            },
+            "empty": "新增專家並提高目標即可查看結果。",
+            "tableLabel": "規劃結果表"
+        }
+    },
+    "learning": {
+        "title": "學習",
+        "note": "一次只能學習一項技能。完成後會將 EXP 加到該技能。",
+        "idle": "目前沒有學習。開始一次學習即可為技能增加 EXP。",
+        "startButton": "開始學習",
+        "slotLabel": "學習，一次一場",
+        "jobTitle": "{expert}，{skill}，{session}",
+        "manageFinishText": "「完成升級」會將這場學習的 EXP 加到技能、釋放學習佇列，並將這場學習加入你的紀錄。剩餘時間為零時，卡片會顯示「可完成」。不會自動完成，因為你可能用了加速道具。",
+        "flyout": {
+            "title": "開始學習",
+            "description": "將專家技能的一場學習標記為進行中",
+            "expert": "專家",
+            "skill": "技能",
+            "skillOption": "{name}，{level} / {max} 級",
+            "session": "學習場次",
+            "sessionOption": "{label}，{exp} EXP",
+            "sessionHint": "每分鐘可得 60 EXP。場次與遊戲中的相同。",
+            "expEarned": "獲得 EXP",
+            "heldAfter": "之後持有 EXP",
+            "tooMuch": "這個技能只能再使用 {room} EXP，多出的部分會浪費。",
+            "whenStarted": "何時開始？",
+            "modes": {
+                "now": "現在開始",
+                "already": "已開始"
+            },
+            "timeLeftHours": "剩餘時間（小時）",
+            "ends": "結束時間",
+            "startedHint": "如果這場學習已在遊戲中進行，請用「已開始」，並輸入遊戲顯示的時間。",
+            "nothingToLearn": "目前沒有可學習的技能。請招募專家，並解鎖尚未達最高等級的技能。",
+            "busy": "已有一場學習在進行。請先在管理中完成或取消它。",
+            "cancel": "取消",
+            "start": "開始學習"
+        },
+        "toasts": {
+            "started": {
+                "title": "已開始學習",
+                "message": "{what}。"
+            },
+            "finished": {
+                "title": "已學習{what}",
+                "message": "EXP 已加到技能和紀錄中。"
+            },
+            "cancelled": {
+                "title": "已取消{what}",
+                "message": "技能保留原有的 EXP。"
+            },
+            "undo": "復原"
+        }
+    }
+}

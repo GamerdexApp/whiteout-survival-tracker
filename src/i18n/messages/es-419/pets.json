@@ -1,0 +1,209 @@
+{
+  "page": {
+    "title": "Mascotas"
+  },
+  "view": {
+    "subline": "{chief} · {details} · {unlocked} de {total} mascotas desbloqueadas"
+  },
+  "rarities": {
+    "Common": "Común",
+    "Uncommon": "Poco común",
+    "Rare": "Rara",
+    "Epic": "Épica",
+    "Legendary": "Legendaria"
+  },
+  "unlock": {
+    "afterFurnace": "Día {days} y Furnace {level}",
+    "afterPet": "Día {days} y {pet} nivel {level}"
+  },
+  "summary": {
+    "unlocked": "Desbloqueadas",
+    "unlockedValue": "{count} de {total}",
+    "unlockedNote": "Lo defines tú",
+    "power": "Poder total",
+    "powerNote": "Poder de nivel, avance y refinamiento de las mascotas desbloqueadas",
+    "powerUnknown": "Poder de nivel, avance y refinamiento de las mascotas desbloqueadas, {amount} desconocido",
+    "next": "Próxima por desbloquear",
+    "allUnlocked": "Todas desbloqueadas",
+    "allUnlockedNote": "Todas las mascotas están desbloqueadas",
+    "lockedNote": "{count} bloqueadas hasta un día posterior del servidor"
+  },
+  "totals": {
+    "attackDefense": "Ataque y Defensa de tropas",
+    "attack": "Ataque",
+    "defense": "Defensa",
+    "lethality": "Letalidad",
+    "health": "Salud",
+    "gain": "+{value}%",
+    "types": {
+      "infantry": "Infantería",
+      "lancer": "Lancero",
+      "marksman": "Tirador"
+    }
+  },
+  "search": {
+    "label": "Buscar mascotas",
+    "placeholder": "Busca entre {amount} mascotas por nombre"
+  },
+  "status": {
+    "showing": "Mostrando {shown} de {total} {count, plural, one {mascota} other {mascotas}}.",
+    "filters": " Filtros: {list}.",
+    "filterNames": {
+      "rarity": "Rareza",
+      "status": "Estado",
+      "advanced": "Avanzada",
+      "order": "Orden"
+    },
+    "readOnlyGoals": "Aquí las metas son de solo lectura y se definen en Plan. Una meta igual al valor actual significa que no hay meta.",
+    "showMore": "Mostrar {count, plural, one {{amount} mascota más} other {{amount} mascotas más}}"
+  },
+  "empty": {
+    "title": "Ninguna mascota coincide",
+    "description": "Cambia la búsqueda o los filtros para ver más mascotas.",
+    "reset": "Restablecer filtros"
+  },
+  "toast": {
+    "lockedTitle": "{name} bloqueada",
+    "lockedMessage": "Se conservan su nivel, avance y refinamiento.",
+    "undo": "Deshacer"
+  },
+  "card": {
+    "summary": "{rarity} · nivel máx. {max}",
+    "unlocked": "Desbloqueada",
+    "unlockedLabel": "{pet} desbloqueada",
+    "cooldown": "Enfriamiento de {time}",
+    "cooldownByTier": "El enfriamiento cambia según el rango",
+    "cooldownUnknown": "Enfriamiento desconocido",
+    "skillTiers": "{count, plural, one {{amount} rango de habilidad} other {{amount} rangos de habilidad}}",
+    "unlockRule": "Regla de desbloqueo",
+    "ruleMet": "Cumples esta regla",
+    "level": "Nivel (máx. {max})",
+    "levelLabel": "Nivel de {pet}",
+    "goal": "Meta {level}",
+    "noGoal": "Sin meta",
+    "advanced": "Avanzada",
+    "advancedHint": "Avanzada se puede definir en los niveles 10, 20, 30 y así sucesivamente.",
+    "refinement": "Refinamiento",
+    "refinementMax": "máx. {max}% cada uno",
+    "refineLabel": "{pet} {stat}",
+    "percentSign": "%",
+    "attack": "Atq +{value}%",
+    "defense": "Def +{value}%",
+    "power": "Poder {value}",
+    "powerUnknown": "Poder desconocido",
+    "powerParts": "Nivel y avance {base}, refinamiento {refining}"
+  },
+  "filters": {
+    "button": "Filtros",
+    "title": "Filtros",
+    "description": "Elige qué muestra la lista de Mascotas",
+    "rarity": "Rareza",
+    "rarityAll": "Todas {amount}",
+    "rarityOption": "{rarity} {amount}",
+    "rarities": {
+      "Common": "Común",
+      "Uncommon": "Poco común",
+      "Rare": "Rara",
+      "Epic": "Épica",
+      "Legendary": "Legendaria"
+    },
+    "status": "Estado",
+    "statusOptions": {
+      "all": "Todas las mascotas",
+      "unlocked": "Desbloqueadas",
+      "locked": "Bloqueadas"
+    },
+    "advanced": "Avanzada",
+    "advancedOptions": {
+      "any": "Cualquiera",
+      "advanced": "Avanzada",
+      "notAdvanced": "Sin avanzar"
+    },
+    "order": "Orden",
+    "orderOptions": {
+      "game": "Orden del juego",
+      "name": "Nombre, de la A a la Z",
+      "level": "Nivel, de mayor a menor"
+    },
+    "notSaved": "Los filtros no se guardan.",
+    "reset": "Restablecer",
+    "show": "Mostrar {count, plural, one {{amount} mascota} other {{amount} mascotas}}"
+  },
+  "plan": {
+    "button": "Plan",
+    "title": "Planificar Mascotas",
+    "description": "Comida, objetos, estadísticas y puntos de eventos para alcanzar tus metas",
+    "saved": "Plan guardado {date}",
+    "notSavedYet": "El plan aún no se guarda",
+    "close": "Cerrar",
+    "save": "Guardar plan",
+    "exportButton": "Exportar a Eventos principales",
+    "exportNothing": "El plan no tiene puntaje de avance para exportar.",
+    "export": {
+      "advancement": "Puntaje de avance de mascotas",
+      "commonMark": "Common Wild Marks",
+      "advancedMark": "Advanced Wild Marks",
+      "marksDetail": "Contado desde Recursos."
+    },
+    "noPets": "Agrega una mascota desbloqueada para planificar sus niveles.",
+    "add": {
+      "title": "Agregar una mascota",
+      "selectLabel": "Mascota por agregar",
+      "button": "Agregar mascota",
+      "allIn": "Todas las mascotas desbloqueadas están en el plan.",
+      "noneUnlocked": "Desbloquea una mascota en la página de Mascotas para planificarla."
+    },
+    "block": {
+      "rarities": {
+        "Common": "Común",
+        "Uncommon": "Poco común",
+        "Rare": "Rara",
+        "Epic": "Épica",
+        "Legendary": "Legendaria"
+      },
+      "maxLevel": "Nivel máximo {max}",
+      "remove": "Quitar",
+      "removeLabel": "Quitar a {pet} del plan",
+      "current": "Nivel actual",
+      "to": "a",
+      "goal": "Nivel meta (máx. {max})",
+      "goalLabel": "Nivel meta de {pet}",
+      "payAdvancement": "Pagar el avance en la meta",
+      "paysCurrent": "Sin avanzar en el nivel {level}, así que se paga ese avance."
+    },
+    "result": {
+      "title": "Resultado para {count, plural, one {{amount} mascota} other {{amount} mascotas}}",
+      "resources": "Recursos, todas las mascotas",
+      "byPet": "Por mascota",
+      "heads": {
+        "pet": "Mascota",
+        "levels": "Niveles",
+        "food": "Comida",
+        "power": "Poder"
+      },
+      "powerGain": "+{value}",
+      "percentGain": "+{value}%",
+      "unknown": "Desconocido",
+      "gains": "Ganancias",
+      "gainNames": {
+        "levels": "Niveles ganados",
+        "advancements": "Avances",
+        "attack": "Ataque de tropas",
+        "defense": "Defensa de tropas",
+        "power": "Poder",
+        "score": "Puntaje de avance"
+      },
+      "unknownPowerNote": "El paquete de datos no tiene poder avanzado para un nivel de este plan, así que el aumento de poder es Desconocido.",
+      "eventPoints": "Puntos de eventos",
+      "events": {
+        "svs": "SvS",
+        "allianceShowdown": "Alliance Showdown",
+        "kingOfIcefield": "King of Icefield",
+        "hallOfChief": "Hall of Chief"
+      },
+      "notScored": "Sin puntos",
+      "eventNote": "Los puntos de eventos son el puntaje de avance por los puntos de la fila de puntuación de cada evento.",
+      "scoreSourceNote": "Los puntajes de avance de los niveles 40 a 100 coinciden con las notas de eventos. Los niveles 10 a 30 vienen de una sola fuente (WoS Tools)."
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "title": "Cronología del servidor",
+  "line": "{rows, plural, one {{amount} hito} other {{amount} hitos}} del día {first} al día {last}",
+  "subline": "Qué se desbloquea en cada antigüedad del servidor. Solo es referencia, nada de aquí se guarda.",
+  "place": {
+    "label": "Mostrar mi posición para",
+    "option": "{name}, cerca del día {days}, más o menos {window}",
+    "optionNoDate": "{name}, sin fecha de inicio del servidor",
+    "jump": "Ir a mi posición"
+  },
+  "filters": {
+    "label": "Mostrar",
+    "events": "Eventos {amount}",
+    "features": "Funciones {amount}",
+    "pets": "Mascotas {amount}",
+    "experts": "Expertos {amount}",
+    "heroes": "Héroes {amount}"
+  },
+  "help": "La línea es la antigüedad del servidor en días. Los héroes van a la derecha y todo lo demás a la izquierda. Tu posición sale de la fecha de inicio del servidor de tu jefe, con un margen de más o menos {window} días.",
+  "noChief": "Aún no hay jefes, así que no se muestra tu posición.",
+  "addChief": "Agregar un jefe",
+  "noStartDate": "{name} no tiene fecha de inicio del servidor. Agrega una para ver tu posición en la línea.",
+  "editChief": "Editar jefe",
+  "columns": {
+    "left": "Eventos, funciones, mascotas, expertos",
+    "right": "Héroes"
+  },
+  "tags": {
+    "event": "Evento",
+    "feature": "Función",
+    "pets": "Mascotas",
+    "experts": "Expertos"
+  },
+  "fireCrystalLevels": "Niveles de Fire Crystal {names}",
+  "heroGeneration": "Héroes, generación {generation}",
+  "day": "Día {day}",
+  "status": {
+    "unlocked": "Desbloqueado",
+    "near": "Cerca de tu antigüedad",
+    "future": "{count, plural, one {En {amount} día} other {En {amount} días}}"
+  },
+  "marker": {
+    "label": "Estás aquí",
+    "title": "{name}, antigüedad del servidor de unos {days} días",
+    "window": "Más o menos {window} días: del día {from} al {to}"
+  },
+  "empty": "Nada que mostrar con estos filtros.",
+  "source": "Fuente: la cronología del servidor del paquete de datos."
+}

@@ -1,0 +1,95 @@
+{
+  "hoursMinutes": {
+    "hours": "Heures",
+    "minutes": "Minutes"
+  },
+  "jobCard": {
+    "idle": "Libre",
+    "progress": "Progression de {title}",
+    "ends": "Fin {date}",
+    "manage": "Gérer",
+    "finish": "Terminer"
+  },
+  "timeLeftPill": {
+    "manage": "{label}, {timeLeft}. Gérer l'amélioration"
+  },
+  "manage": {
+    "fallbackTitle": "Gérer l'amélioration",
+    "description": "Gérer l'amélioration en cours",
+    "close": "Fermer",
+    "finish": "Terminer l'amélioration",
+    "progress": "Progression de l'amélioration",
+    "started": "Début {date}",
+    "ends": "Fin {date}",
+    "speedup": {
+      "title": "Accélération utilisée",
+      "minutesUsed": "Minutes utilisées",
+      "apply": "Appliquer",
+      "timeLeftAfter": "Temps restant après application",
+      "hint": "Les accélérations de tout type retirent leurs minutes du temps restant."
+    },
+    "setTime": {
+      "title": "Régler le temps restant",
+      "button": "Régler le temps restant",
+      "hint": "Utilisez-le quand le jeu affiche un temps différent."
+    },
+    "done": {
+      "title": "Quand c'est terminé",
+      "cancel": "Annuler cette amélioration"
+    }
+  },
+  "planStock": {
+    "title": "En avez-vous assez ?",
+    "shortCount": "{short} sur {total} en manque",
+    "description": "Ce que le plan prélève sur votre stock, comparé à ce que vous avez. Le plan complet est dans le résultat ci-dessous.",
+    "enough": "Suffisant",
+    "notEnough": "Insuffisant",
+    "covered": "{name} couvert",
+    "available": "Disponible {amount}",
+    "needed": "Nécessaire {amount}",
+    "leftOver": "{amount} en trop",
+    "shortBy": "Il manque {amount}",
+    "stillNeeded": "Encore nécessaire pour le plan complet : {list}.",
+    "openResources": "Ouvrir Ressources"
+  },
+  "start": {
+    "title": "Lancer l'amélioration",
+    "cancel": "Annuler",
+    "nothingToStart": "Rien ne peut être lancé pour l'instant. Tous les éléments sont à leur niveau maximum, verrouillés ou déjà en amélioration.",
+    "powerGained": "Puissance gagnée",
+    "packageTime": "Durée des données",
+    "unknown": "Inconnu",
+    "readOnly": "Lecture seule",
+    "openBonuses": "Ouvrir Bonus",
+    "yourTime": "Votre durée",
+    "timeHint": "Seule la vitesse de votre page Bonus est comptée. Si le jeu affiche une autre durée, modifiez-la sous Quand elle a commencé.",
+    "allBusy": "Tout est occupé ici. Lancer l'amélioration est désactivé jusqu'à ce que l'un se libère.",
+    "whenStarted": "Quand elle a commencé",
+    "timeLeftHours": "Temps restant, heures",
+    "ends": "Fin",
+    "startedHint": "Choisissez Déjà commencée pour saisir la durée affichée par le jeu. L'heure de fin en est déduite.",
+    "takeCost": {
+      "title": "Prélever le coût sur Ressources",
+      "hint": "Soustrait le coût ci-dessus de votre stock.",
+      "enough": "Vous avez assez de chaque ressource.",
+      "short": "Il vous manque {names}. Vous pouvez quand même lancer, et le stock s'arrête à 0."
+    },
+    "modes": {
+      "now": "Commence maintenant",
+      "already": "Déjà commencée"
+    }
+  },
+  "researchQueues": {
+    "label": "{name}, {tabs}",
+    "main": {
+      "name": "File de recherche",
+      "tabs": "Croissance, Économie et Combat",
+      "shortName": "Recherche"
+    },
+    "warAcademy": {
+      "name": "File de la War Academy",
+      "tabs": "T11 et T12",
+      "shortName": "War Academy"
+    }
+  }
+}

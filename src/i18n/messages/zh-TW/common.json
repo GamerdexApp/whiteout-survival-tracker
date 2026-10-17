@@ -1,0 +1,19 @@
+{
+    "duration": {
+        "days": "{value}天",
+        "hours": "{value}小時",
+        "minutes": "{value}分",
+        "seconds": "{value}秒",
+        "zero": "0秒",
+        "separator": " "
+    },
+    "timeLeft": {
+        "left": "剩餘 {duration}",
+        "ready": "可完成"
+    },
+    "saveFailed": {
+        "title": "未儲存",
+        "message": "瀏覽器儲存空間已滿。請立即匯出備份。",
+        "exportBackup": "匯出備份"
+    }
+}

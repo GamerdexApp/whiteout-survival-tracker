@@ -1,0 +1,49 @@
+{
+    "title": "サーバーのタイムライン",
+    "line": "{rows, plural, other {{amount}件のマイルストーン}}（{first}日目から{last}日目）",
+    "subline": "サーバー経過日数ごとに何が解放されるか。参考情報のみで、ここには何も保存されません。",
+    "place": {
+        "label": "現在地を表示するチーフ",
+        "option": "{name}、約{days}日目（±{window}日）",
+        "optionNoDate": "{name}、サーバー開始日なし",
+        "jump": "現在地へ移動"
+    },
+    "filters": {
+        "label": "表示",
+        "events": "イベント {amount}",
+        "features": "機能 {amount}",
+        "pets": "ペット {amount}",
+        "experts": "エキスパート {amount}",
+        "heroes": "ヒーロー {amount}"
+    },
+    "help": "この線はサーバーの経過日数です。ヒーローは右側、それ以外は左側に表示されます。現在地は、チーフのサーバー開始日をもとに、前後{window}日の幅で表示されます。",
+    "noChief": "チーフがまだいないため、現在地は表示されません。",
+    "addChief": "チーフを追加",
+    "noStartDate": "{name}にはサーバー開始日がありません。追加すると、線上に現在地が表示されます。",
+    "editChief": "チーフを編集",
+    "columns": {
+        "left": "イベント、機能、ペット、エキスパート",
+        "right": "ヒーロー"
+    },
+    "tags": {
+        "event": "イベント",
+        "feature": "機能",
+        "pets": "ペット",
+        "experts": "エキスパート"
+    },
+    "fireCrystalLevels": "Fire Crystalレベル {names}",
+    "heroGeneration": "ヒーロー、第{generation}世代",
+    "day": "{day}日目",
+    "status": {
+        "unlocked": "解放済み",
+        "near": "現在の日数に近い",
+        "future": "{count, plural, other {{amount}日後}}"
+    },
+    "marker": {
+        "label": "現在地",
+        "title": "{name}、サーバー経過日数は約{days}日",
+        "window": "±{window}日: {from}日目から{to}日目"
+    },
+    "empty": "このフィルターで表示できるものはありません。",
+    "source": "出典: データパッケージのサーバータイムライン。"
+}

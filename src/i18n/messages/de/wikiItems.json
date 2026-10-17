@@ -1,0 +1,79 @@
+{
+    "line": "{items} Items in {categories} Kategorien, mit Quellen und den Dropraten von {chests} Truhen.",
+    "catalog": {
+        "title": "Item-Katalog",
+        "showing": "{shown} von {total} angezeigt",
+        "search": "Suche",
+        "searchPlaceholder": "Items nach Name oder Beschreibung suchen",
+        "table": "Items",
+        "item": "Item",
+        "category": "Kategorie",
+        "sources": "Quellen",
+        "lootRates": "Dropraten",
+        "description": "Beschreibung",
+        "emptyTitle": "Kein passendes Item",
+        "emptyDescription": "Ändere die Suche oder die Filter."
+    },
+    "filters": {
+        "title": "Filter",
+        "button": "Filter",
+        "summary": "Filter: {category}. Quellen: {sources}",
+        "edit": "Bearbeiten",
+        "category": "Kategorie",
+        "all": "Alle",
+        "sources": "Quellen",
+        "lootRates": "Dropraten",
+        "reset": "Zurücksetzen",
+        "show": "{count, plural, one {{amount} Item zeigen} other {{amount} Items zeigen}}"
+    },
+    "sourcesFilter": {
+        "any": "Beliebige Quellen",
+        "has": "Mit Quellen",
+        "none": "Ohne Quellen"
+    },
+    "sourcesChip": {
+        "any": "Beliebig",
+        "has": "Mit Quellen",
+        "none": "Ohne Quellen ({amount})"
+    },
+    "lootFilter": {
+        "any": "Beliebig",
+        "has": "Mit Dropraten"
+    },
+    "lootChip": {
+        "any": "Beliebig",
+        "has": "Mit Dropraten ({amount} Truhen)"
+    },
+    "loot": {
+        "yes": "Ja",
+        "no": "Nein",
+        "notChest": "Keine Truhe"
+    },
+    "detail": {
+        "title": "Details",
+        "category": "Kategorie",
+        "sources": "Quellen",
+        "speedup": "Beschleuniger",
+        "speedupValue": "{type}, {minutes} Minuten",
+        "description": "Beschreibung",
+        "lootRates": "Dropraten",
+        "lootRowsListed": "{count, plural, one {{amount} Zeile aufgeführt} other {{amount} Zeilen aufgeführt}}",
+        "noLootRates": "Keine Dropraten in den Daten für diese Truhe",
+        "lootTitle": "Dropraten",
+        "lootMeta": "{count, plural, one {{amount} Belohnung} other {{amount} Belohnungen}}",
+        "lootTable": "Dropraten der Truhe",
+        "reward": "Belohnung",
+        "amount": "Menge",
+        "chance": "Chance",
+        "chanceValue": "{percent}%",
+        "name": "Name"
+    },
+    "speedupType": {
+        "general": "Allgemein",
+        "construction": "Bau",
+        "troop": "Truppen",
+        "research": "Forschung",
+        "learning": "Lernen",
+        "healing": "Heilung"
+    }
+}

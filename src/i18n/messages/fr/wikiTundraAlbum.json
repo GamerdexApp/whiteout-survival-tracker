@@ -1,0 +1,32 @@
+{
+  "line": "Les données contiennent {have} albums sur {total}. Chacun a un bonus, des récompenses de complétion et {puzzles} puzzles.",
+  "note": "Les {missing} autres albums sont ajoutés quand les données les contiennent.",
+  "albums": "Albums",
+  "puzzleCount": "{count, plural, one {{amount} puzzle} other {{amount} puzzles}}",
+  "pieceCount": "{count, plural, one {{amount} pièce} other {{amount} pièces}}",
+  "view": {
+    "label": "Vue",
+    "puzzles": "Puzzles",
+    "pieces": "Toutes les pièces"
+  },
+  "album": {
+    "counts": "{puzzles}, {pieces}",
+    "buff": "Bonus une fois complet",
+    "buffValue": "{stat} {value}",
+    "rewards": "Récompenses de complétion",
+    "buffNote": "Le bonus ne compte que lorsque les {puzzles} puzzles sont terminés."
+  },
+  "puzzles": {
+    "title": "Puzzles",
+    "puzzle": "Puzzle",
+    "pieces": "Pièces",
+    "star": "Étoile {stars}",
+    "reward": "Récompense"
+  },
+  "allPieces": {
+    "title": "Toutes les pièces",
+    "summary": "{pieces} dans {puzzles}",
+    "imageNote": "Les images des pièces viennent des données. Une pièce sans image affiche un carré uni.",
+    "stars": "{count, plural, one {{amount} étoile} other {{amount} étoiles}}"
+  }
+}

@@ -1,0 +1,91 @@
+{
+    "title": "參考資料",
+    "subline": "遊戲資料的唯讀頁面。這裡不會儲存任何內容。",
+    "status": "資料包仍在持續完善中。尚未收錄的數值會顯示為未知。",
+    "breadcrumb": "百科",
+    "openInTracker": "在追蹤器中開啟",
+    "unknown": "未知",
+    "pages": {
+        "buildings": {
+            "title": "建築",
+            "description": "所有建築及其各等級的花費、時間、戰力和條件，另有九個設施。"
+        },
+        "heroes": {
+            "title": "英雄",
+            "description": "英雄名單，含數值、技能、碎片花費、專屬武器和 Widgets。"
+        },
+        "heroGear": {
+            "title": "英雄裝備表",
+            "description": "英雄裝備的強化、賦能、精通鍛造和數值表。"
+        },
+        "experts": {
+            "title": "專家",
+            "description": "十位專家的技能、天賦、親密度等級和關係階段。"
+        },
+        "pets": {
+            "title": "寵物",
+            "description": "每隻寵物的技能、等級表、食物花費、數值和進階材料。"
+        },
+        "chiefGear": {
+            "title": "領主裝備",
+            "description": "裝備欄位與階級的戰力和分數，以及兌換比率。"
+        },
+        "chiefCharms": {
+            "title": "領主護符",
+            "description": "護符欄位、等級和階段，以及兌換比率。"
+        },
+        "troops": {
+            "title": "部隊",
+            "description": "三種部隊類型及其十二個階級的花費和訓練時間。"
+        },
+        "research": {
+            "title": "研究樹",
+            "description": "依分類列出的研究節點，含各等級花費、前置條件、加成和時間。"
+        },
+        "allianceTech": {
+            "title": "聯盟科技",
+            "description": "依分類和階級列出的聯盟科技。"
+        },
+        "allianceStructures": {
+            "title": "聯盟建築",
+            "description": "旗幟、地圖設施、城堡、據點和要塞。"
+        },
+        "daybreak": {
+            "title": "破曉島",
+            "description": "Lumber Camp、Tree of Life 和所有裝飾。"
+        },
+        "events": {
+            "title": "活動",
+            "description": "所有遊戲活動的階段、計分和獎勵。"
+        },
+        "eventBuffs": {
+            "title": "活動增益",
+            "description": "各遊戲模式適用哪些增益來源。"
+        },
+        "items": {
+            "title": "道具",
+            "description": "依分類列出的道具目錄，含來源和寶箱掉落率。"
+        },
+        "skins": {
+            "title": "外觀",
+            "description": "依類型列出的外觀圖庫，含增益和期限。"
+        },
+        "vip": {
+            "title": "VIP",
+            "description": "VIP 1 到 12 級的 XP 和新增的加成。"
+        },
+        "tundraAlbum": {
+            "title": "凍原圖鑑",
+            "description": "圖鑑的增益、完成獎勵、拼圖和碎片。"
+        },
+        "dailies": {
+            "title": "每日任務",
+            "description": "遊戲內任務、活躍度進度條獎勵和例行任務。"
+        }
+    },
+    "recordMissing": {
+        "title": "找不到紀錄",
+        "description": "資料中沒有這個位址的紀錄。",
+        "back": "返回{page}"
+    }
+}

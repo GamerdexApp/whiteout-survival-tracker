@@ -1,0 +1,262 @@
+{
+    "page": {
+        "title": "Anh hùng"
+    },
+    "view": {
+        "tabsLabel": "Anh hùng",
+        "heroesTab": "Anh hùng",
+        "gearTab": "Trang bị Anh hùng",
+        "heroesSubline": "{chief} · đã sở hữu {owned} trên {total}",
+        "gearSubline": "{chief} · {count, plural, other {{amount} bộ trang bị}}"
+    },
+    "common": {
+        "owned": "Đã sở hữu",
+        "ownedLabel": "{hero} đã sở hữu",
+        "starLabel": "Sao của {hero}",
+        "levelLabel": "Cấp của {hero}",
+        "talentLabel": "Thiên phú của {hero}",
+        "skillLabel": "{skill} của {hero}",
+        "weaponLevelLabel": "Cấp {weapon} của {hero}",
+        "shardsOwnedLabel": "Mảnh của {hero} đang có",
+        "starAndTier": "Sao và bậc",
+        "level": "Cấp",
+        "noGoal": "Không có mục tiêu",
+        "shards": "Mảnh",
+        "totalPower": "Tổng sức mạnh",
+        "unknown": "Không rõ",
+        "plan": "Kế hoạch",
+        "generation": "Thế hệ {generation}",
+        "exploration": "Thám hiểm",
+        "expedition": "Viễn chinh",
+        "talent": "Thiên phú",
+        "maxLevelSuffix": "/ {max}",
+        "heroCount": "{count, plural, other {{amount} anh hùng}}"
+    },
+    "goalText": {
+        "to": "đến {goal}"
+    },
+    "card": {
+        "summary": "{rarity} · {heroClass} · {generation}",
+        "talentRow": "Thiên phú {name}",
+        "shardsOf": "trên {needed}",
+        "enoughShards": " Đủ mảnh",
+        "shortBy": " Thiếu {amount}",
+        "gearSet": "Bộ trang bị",
+        "notOwnedHint": "Bật Đã sở hữu để theo dõi sao, cấp và kỹ năng.",
+        "details": "Chi tiết"
+    },
+    "tab": {
+        "stats": {
+            "generations": "Thế hệ đã mở",
+            "generationsValue": "0 đến {max}",
+            "heroesOwned": "Anh hùng đã sở hữu trong số đã mở",
+            "legendaryOwned": "Legendary đã sở hữu trong số đã mở",
+            "atMaxLevel": "Ở cấp 80",
+            "heroPower": "Sức mạnh anh hùng",
+            "heroPowerUnknown": "Sức mạnh anh hùng, bỏ qua {amount} không rõ",
+            "withGoal": "Có mục tiêu"
+        },
+        "search": {
+            "label": "Tìm anh hùng",
+            "placeholder": "Tìm trong {amount} anh hùng theo tên"
+        },
+        "filters": "Bộ lọc",
+        "maxOut": "Nâng tối đa",
+        "status": "Hiển thị {shown} trên {total} anh hùng. Thế hệ 0 đến {max} đã mở với thủ lĩnh này. Mục tiêu ở đây chỉ để xem và được đặt trong Kế hoạch.",
+        "empty": {
+            "title": "Không có anh hùng phù hợp",
+            "description": "Đổi từ khóa hoặc đặt lại bộ lọc để xem mọi anh hùng.",
+            "reset": "Đặt lại"
+        },
+        "showMore": "Xem thêm, còn {amount} {count, plural, other {anh hùng}}",
+        "toast": {
+            "notOwnedTitle": "{name} chưa sở hữu",
+            "notOwnedMessage": "Sao, cấp và kỹ năng của anh hùng được giữ lại cho khi bạn bật lại Đã sở hữu.",
+            "undo": "Hoàn tác",
+            "maxedTitle": "Đã nâng tối đa anh hùng",
+            "maxedMessage": "Đã cập nhật {heroes}."
+        }
+    },
+    "filtersFlyout": {
+        "title": "Bộ lọc",
+        "description": "Chọn anh hùng nào hiển thị trên trang",
+        "reset": "Đặt lại",
+        "show": "Hiện {heroes}",
+        "all": "Tất cả",
+        "generation": "Thế hệ",
+        "rarity": "Độ hiếm",
+        "heroClass": "Lớp",
+        "ownership": "Sở hữu",
+        "order": "Thứ tự",
+        "notSaved": "Bộ lọc không được lưu.",
+        "rarities": {
+            "Legendary": "Legendary",
+            "Epic": "Epic",
+            "Rare": "Rare"
+        },
+        "classes": {
+            "Infantry": "Bộ binh",
+            "Lancer": "Kỵ binh",
+            "Marksman": "Xạ thủ"
+        },
+        "ownershipOptions": {
+            "all": "Tất cả",
+            "owned": "Đã sở hữu",
+            "notOwned": "Chưa sở hữu"
+        },
+        "orderOptions": {
+            "owned": "Đã sở hữu trước, rồi thế hệ mới nhất",
+            "generation": "Thế hệ, mới nhất trước",
+            "name": "Tên, A đến Z",
+            "power": "Tổng sức mạnh, cao nhất trước"
+        }
+    },
+    "maxOut": {
+        "title": "Nâng tối đa anh hùng",
+        "scopeLabel": "Anh hùng cần nâng tối đa",
+        "scope": {
+            "owned": "Anh hùng đã sở hữu",
+            "unlocked": "Mọi anh hùng đã mở, đánh dấu là đã sở hữu",
+            "selected": "Chọn anh hùng, đánh dấu là đã sở hữu"
+        },
+        "searchLabel": "Tìm anh hùng để chọn",
+        "searchPlaceholder": "Tìm anh hùng theo tên",
+        "selectShown": "Chọn các mục đang hiện",
+        "clear": "Bỏ chọn",
+        "ownedTag": "đã sở hữu",
+        "starAndTier": "Sao và bậc lên 5.0",
+        "level": "Cấp lên 80",
+        "levelHint": "Hãy tắt khi kỹ năng đã tối đa và cấp của anh hùng cũ vẫn ở 1.",
+        "skills": "Kỹ năng lên 5",
+        "skillsHint": "Thám hiểm, Viễn chinh và Thiên phú.",
+        "weapon": "Vũ khí độc quyền lên 10",
+        "note": "Mục nào tắt sẽ giữ nguyên. Số mảnh và mục tiêu không đổi. Bạn có thể hoàn tác sau khi áp dụng.",
+        "cancel": "Hủy",
+        "apply": "Nâng tối đa {heroes}"
+    },
+    "flyout": {
+        "fallbackTitle": "Anh hùng",
+        "description": "{heroClass} {rarity}, thế hệ {generation}",
+        "done": "Xong",
+        "status": {
+            "title": "Trạng thái",
+            "furnaceNeeded": "Cần Furnace cho cấp {level}",
+            "met": "Đạt",
+            "needsFurnace": "Cần Furnace {required}",
+            "levelPower": "Sức mạnh cấp",
+            "skillPower": "Sức mạnh kỹ năng",
+            "starPower": "Sức mạnh sao",
+            "weaponPower": "Sức mạnh vũ khí",
+            "totalPower": "Tổng sức mạnh",
+            "note": "Sức mạnh tính theo cấp, kỹ năng, nhãn sao và cấp vũ khí."
+        },
+        "skills": {
+            "title": "Kỹ năng",
+            "aside": "Năm cấp mỗi kỹ năng",
+            "toLevel": "Lên {level}: {manuals} sách",
+            "needsStar": "Cần sao {star}",
+            "starMet": "Đạt sao {star}",
+            "talentTop": "Thiên phú đang ở cấp cao nhất.",
+            "talentNeedsStar": "Cấp {level} cần sao {star}",
+            "talentStarMet": "Cấp {level}: đạt sao {star}"
+        },
+        "weapon": {
+            "title": "Vũ khí độc quyền: {name}",
+            "level": "Cấp vũ khí",
+            "widgetsForLevel": "Widgets cho cấp {level}",
+            "widgetsForLevels": "Widgets cho cấp {from} đến {to}",
+            "expeditionBonus": "Cộng thêm Viễn chinh",
+            "bonus": "Sát thương {lethality}% · Máu {health}%",
+            "power": "Sức mạnh vũ khí",
+            "unlocksAt": "Mở ở cấp vũ khí {level}"
+        },
+        "shards": {
+            "title": "Mảnh",
+            "owned": "Mảnh đang có",
+            "goal": "Mục tiêu",
+            "neededForGoal": "Cần cho mục tiêu {goal}",
+            "enough": "Đủ mảnh",
+            "shortBy": "Thiếu",
+            "yes": "Có",
+            "sources": "Nguồn mảnh"
+        },
+        "stats": {
+            "title": "Chỉ số ở cấp 80",
+            "explorationAt": "Thám hiểm ở {stars}",
+            "expeditionAt": "Viễn chinh ở {stars}",
+            "explorationFull": "Thám hiểm ở 5.0",
+            "expeditionFull": "Viễn chinh ở 5.0",
+            "exploration": "Tấn {attack} · Thủ {defense} · HP {health}",
+            "expedition": "Tấn {attack}% · Thủ {defense}%",
+            "estimate": "Ước tính"
+        }
+    },
+    "plan": {
+        "title": "Lập kế hoạch Anh hùng",
+        "description": "Mảnh, sách kỹ năng và Widgets từ hiện tại đến mục tiêu",
+        "saved": "Đã lưu kế hoạch {date}",
+        "close": "Đóng",
+        "save": "Lưu kế hoạch",
+        "noHeroes": "Kế hoạch chưa có anh hùng nào. Hãy thêm một anh hùng đã sở hữu ở trên, rồi nâng mục tiêu của họ.",
+        "add": {
+            "title": "Thêm anh hùng",
+            "allIn": "Mọi anh hùng đã sở hữu đều có trong kế hoạch. Bật Đã sở hữu cho một anh hùng để lập kế hoạch cho họ.",
+            "selectLabel": "Anh hùng cần thêm",
+            "button": "Thêm anh hùng"
+        },
+        "block": {
+            "remove": "Xóa {hero} khỏi kế hoạch",
+            "starTo": "{stars} đến",
+            "starGoal": "Mục tiêu sao của {hero}",
+            "levelTo": "{current} đến",
+            "goalLabel": "Mục tiêu {name} của {hero}",
+            "note": "Giá trị hiện tại lấy từ anh hùng trên trang. Hãy đổi ở đó."
+        },
+        "unmet": {
+            "title": "Cấp kỹ năng cần sao cao hơn.",
+            "item": "{hero}: {skill} cấp {level} cần sao {star}",
+            "message": "{items}. Hãy nâng mục tiêu sao hoặc hạ mục tiêu kỹ năng."
+        },
+        "shardsUsed": "Mảnh đã dùng: {own} từ anh hùng và {general} chung, tổng {total}. Anh hùng dùng mảnh của chính mình trước.",
+        "result": {
+            "title": "Kết quả, {steps} bước",
+            "widgets": "Widgets",
+            "weaponSkills": "{count, plural, other {Mở {amount} kỹ năng vũ khí}}",
+            "note": "Sức mạnh không nằm trong Lập kế hoạch Anh hùng. Bộ tính không trả về thời gian và không nhận đầu vào tốc độ.",
+            "heads": {
+                "hero": "Anh hùng",
+                "starSteps": "Bước sao",
+                "skillLevels": "Cấp kỹ năng",
+                "shards": "Mảnh",
+                "widgets": "Widgets"
+            },
+            "tableLabel": "Bảng kết quả kế hoạch"
+        },
+        "events": {
+            "svs": "SvS State of Power",
+            "allianceShowdown": "Alliance Showdown",
+            "kingOfIcefield": "King of Icefield",
+            "hallOfChief": "Hall of Chief"
+        }
+    },
+    "export": {
+        "button": "Xuất sang Sự kiện chính",
+        "nothing": "Kế hoạch không cần mảnh hay Widgets để xuất.",
+        "shardsGroup": "cho mảnh",
+        "widgetsGroup": "cho Widgets",
+        "widgets": "Widgets",
+        "manualsReason": "Không sự kiện nào tính điểm cho sách kỹ năng",
+        "shards": {
+            "Legendary": "Mythic Hero Shards",
+            "Epic": "Epic Hero Shards",
+            "Rare": "Rare Hero Shards"
+        }
+    },
+    "service": {
+        "generalShard": {
+            "Legendary": "Mythic General Hero Shard",
+            "Epic": "Epic General Hero Shard",
+            "Rare": "Rare General Hero Shard"
+        }
+    }
+}

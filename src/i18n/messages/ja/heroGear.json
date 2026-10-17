@@ -1,0 +1,215 @@
+{
+    "defaultSetName": "セット{number}",
+    "troop": {
+        "infantry": "歩兵",
+        "lancer": "槍兵",
+        "marksman": "弓兵"
+    },
+    "lock": {
+        "needsMythic": "ミシック装備が必要",
+        "needsBoth": "強化100とマスタリー鍛造レベル10が必要",
+        "needsEnhancement": "強化100が必要",
+        "needsForging": "マスタリー鍛造レベル10が必要"
+    },
+    "tab": {
+        "deletedTitle": "{name}を削除しました",
+        "deletedMessage": "4つの装備と、その目標を削除しました。",
+        "undo": "元に戻す",
+        "tiles": {
+            "sets": "装備セット",
+            "power": "装備戦力（全セット）",
+            "ofPieces": "{total}個中{count}個",
+            "atEnhancementMax": "強化100の装備",
+            "empowered": "エンパワー済みの装備",
+            "ready": "エンパワー可能な装備"
+        },
+        "search": "装備セットを検索",
+        "filters": "フィルター",
+        "plan": "プラン",
+        "showing": "{total}セット中{shown}セットを表示。目標はここでは読み取り専用で、プランで設定します。",
+        "empty": {
+            "title": "装備セットはまだありません",
+            "description": "装備セットは、Goggles、Gloves、Belt、Bootsを1つずつ含みます。セットを追加すると、レベルを記録できます。"
+        },
+        "addSet": "装備セットを追加",
+        "unknownHero": "不明なヒーロー",
+        "power": "戦力{amount}",
+        "enhancementLine": "強化 {line}",
+        "troopHint": "部隊の種類により、下のステータス列が決まります。",
+        "editSet": "セットを編集",
+        "deleteSet": "セットを削除"
+    },
+    "pieceCard": {
+        "name": "{set} {slot}",
+        "forgingRow": "{name}（+{percent}%）",
+        "none": "なし",
+        "noGoal": "目標なし",
+        "goal": "目標: {value}",
+        "quality": "装備の品質",
+        "qualities": {
+            "mythic": "ミシック",
+            "epic": "エピック",
+            "rare": "レア",
+            "uncommon": "アンコモン",
+            "common": "コモン"
+        },
+        "forgingRowLabel": "マスタリー鍛造の行",
+        "forgingStops": "強化が100になるまで、マスタリー鍛造はレベル10で止まります。",
+        "lowQualityNote": "鍛造とエンパワーができるのはミシック装備だけです。戦力は、この品質の基本戦力を使ったミシックの表に従いますが、ゲームでは確認されていません。",
+        "enhancement": "強化",
+        "enhancementLabel": "{name}の強化",
+        "enhancementSlider": "{name}の強化スライダー",
+        "empowerment": "エンパワー",
+        "empowermentLabel": "{name}のエンパワー",
+        "empowermentSlider": "{name}のエンパワースライダー",
+        "outOf": "/ {max}",
+        "milestone": "エンパワー{level}に到達: {stat}",
+        "piecePower": "装備の戦力",
+        "health": "体力",
+        "percent": "{value}%"
+    },
+    "statLines": {
+        "title": "ステータス行、4スロット×3部隊タイプ",
+        "troopThisSet": "{troop}（このセット）",
+        "stat": "{name} {value}",
+        "health": "HP {value}",
+        "percentStat": "{name} {value}%",
+        "none": "なし",
+        "note": "{name}の装備レベルでの値で、マスタリー鍛造を含み、小数点以下は切り捨てです。ステータスはWoS Toolsのデータで、200レベルのうち192レベルまでです。ハイライトされた列がセットの部隊タイプです。"
+    },
+    "filters": {
+        "title": "フィルター",
+        "description": "一覧に表示する装備セットを選びます",
+        "reset": "リセット",
+        "show": "{count, plural, other {{amount}セットを表示}}",
+        "all": "すべて",
+        "troopType": "部隊タイプ",
+        "linkedHero": "紐づけたヒーロー",
+        "heroOptions": {
+            "all": "すべて",
+            "linked": "ヒーローに紐づけ済み",
+            "unlinked": "紐づけなし"
+        },
+        "order": "並び順",
+        "orderOptions": {
+            "power": "総戦力順（高い順）",
+            "created": "追加した順",
+            "name": "名前順（A→Z）",
+            "hero": "ヒーロー名順（A→Z）"
+        },
+        "notSaved": "フィルターは保存されません。"
+    },
+    "setDialogs": {
+        "cancel": "キャンセル",
+        "setName": "セット名",
+        "nameRequired": "名前を入力してください。",
+        "linkedHero": "紐づけるヒーロー",
+        "add": {
+            "title": "装備セットを追加",
+            "linkedHeroHint": "ヒーローを選ぶと、部隊タイプがそのヒーローの兵種になります。",
+            "troopType": "部隊タイプ",
+            "troopTypeHint": "部隊タイプにより、セットのステータス列が決まります。",
+            "quality": "装備の品質",
+            "qualityHint": "鍛造とエンパワーができるのはミシック装備だけです。",
+            "qualityHintCopy": "コピーしたセットは、各装備の品質を引き継ぎます。",
+            "qualities": {
+                "mythic": "ミシック",
+                "epic": "エピック",
+                "rare": "レア",
+                "uncommon": "アンコモン",
+                "common": "コモン"
+            },
+            "startFrom": "開始方法",
+            "startFromHint": "目標はコピーされません。目標はプランで設定します。",
+            "emptySet": "空のセット",
+            "copyFrom": "{name}からレベルをコピー",
+            "savesAtOnce": "変更はすべてすぐに保存され、新しいセットが選択された状態で表示されます。",
+            "submit": "装備セットを追加"
+        },
+        "delete": {
+            "title": "{name}を削除しますか？",
+            "titleFallback": "セットを削除",
+            "confirm": "セットを削除",
+            "body": "{name}の4つの装備と、その目標をこのデバイスから削除します。",
+            "undoNote": "削除後の10秒間は元に戻せます。",
+            "exportBackup": "先にバックアップをエクスポート"
+        },
+        "edit": {
+            "title": "{name}を編集",
+            "titleFallback": "セットを編集",
+            "submit": "セットを保存"
+        },
+        "heroSelect": {
+            "none": "ヒーローなし",
+            "option": "{name}（{class}、第{generation}世代）"
+        }
+    },
+    "plan": {
+        "title": "ヒーロー装備のプラン",
+        "description": "任意のセットの任意の装備について、マスタリー鍛造、強化、エンパワーを計画します",
+        "saved": "プランを保存しました（{time}）",
+        "close": "閉じる",
+        "save": "プランを保存",
+        "empty": "プランに装備がまだありません。上で装備を追加してから、目標を引き上げてください。",
+        "pieceTitle": "{set} · {slot}",
+        "milestone": "エンパワー{level}、{event}、{stat}",
+        "addPiece": {
+            "title": "装備を追加",
+            "noSets": "先にヒーロー装備タブで装備セットを追加してください。",
+            "set": "装備セット",
+            "setOption": "{name}（{troop}）",
+            "piece": "装備",
+            "submit": "装備を追加",
+            "taken": "この装備はすでにプランに入っています。"
+        },
+        "qualities": {
+            "mythic": "ミシック",
+            "epic": "エピック",
+            "rare": "レア",
+            "uncommon": "アンコモン",
+            "common": "コモン"
+        },
+        "remove": "{title}をプランから削除",
+        "forgingRow": "{name}（+{percent}%）",
+        "none": "なし",
+        "forgingCurrent": "現在の鍛造の行",
+        "forgingGoal": "鍛造目標の行",
+        "forgingGoalLabel": "{title}の鍛造目標",
+        "forgingStops": "強化の目標が100になるまで、マスタリー鍛造はレベル10で止まります。",
+        "enhancement": "強化",
+        "enhancementGoal": "{title}の強化目標",
+        "empowerment": "エンパワー",
+        "empowermentGoal": "{title}のエンパワー目標",
+        "from": "{value}から",
+        "result": {
+            "title": "{count, plural, other {装備{amount}個}}の結果",
+            "power": "戦力",
+            "powerLines": {
+                "gained": "獲得戦力",
+                "before": "これらの装備の現在の戦力",
+                "after": "これらの装備の完了後の戦力"
+            },
+            "columns": {
+                "piece": "装備",
+                "forgingStatsUp": "鍛造によるステータス上昇",
+                "powerGained": "獲得戦力"
+            },
+            "forgingStatsUp": "+{percent}%（{steps}ステップ）",
+            "milestones": "解放されたマイルストーン",
+            "milestoneLine": "{label}: {stat}",
+            "events": {
+                "svs": "SvS",
+                "allianceShowdown": "Alliance Showdown",
+                "kingOfIcefield": "King of Icefield"
+            },
+            "note": "ヒーロー装備のプランには、速度やボーナスの設定がありません。この計算機は時間を返しません。",
+            "tableLabel": "プラン結果の表"
+        }
+    },
+    "export": {
+        "button": "コアイベントへエクスポート",
+        "nothing": "このプランには、エクスポートするEssence StonesもMithrilも必要ありません。",
+        "essenceStones": "Essence Stones",
+        "mithril": "Mithril"
+    }
+}

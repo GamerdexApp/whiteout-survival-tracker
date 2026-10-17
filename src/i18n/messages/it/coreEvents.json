@@ -1,0 +1,108 @@
+{
+  "days": {
+    "day": "Giorno {number}",
+    "battle": "Battaglia",
+    "range": "Giorni {range}",
+    "stage": "Fase {number}"
+  },
+  "page": {
+    "title": "Eventi principali",
+    "subline": "{chief} · {details}"
+  },
+  "events": {
+    "svs": "SvS",
+    "showdown": "Alliance Showdown",
+    "king": "King of Icefield",
+    "hall": "Hall of Chief"
+  },
+  "tabs": {
+    "label": "Eventi principali"
+  },
+  "empty": {
+    "title": "Nessun evento mostrato",
+    "description": "Tutti e quattro gli eventi sono nascosti per questo capo. Attivali in Modifica capo.",
+    "action": "Modifica capo"
+  },
+  "strip": {
+    "live": "Evento in corso",
+    "dates": "da {start} a {end}",
+    "noDates": "Le date si impostano nel Registro eventi.",
+    "today": "Oggi è {day}",
+    "checklist": "Lista",
+    "log": "Registro eventi"
+  },
+  "bonus": {
+    "title": "Livello {skill} di {expert}",
+    "level": "Livello {level}",
+    "levelWithPercent": "Livello {level} · {percent}%",
+    "none": "Nessun livello impostato, quindi nessun bonus aggiunto.",
+    "readOnly": "Sola lettura",
+    "openExperts": "Apri Esperti",
+    "svsHelp": "Aggiunge il 2% per livello ai punti dei giorni da 1 a 5, arrotondato per giorno, e gradi extra alle soglie di punti. La Fase di battaglia non ha bonus. Qui è in sola lettura, il livello si imposta nella pagina Esperti.",
+    "showdownHelp": "Aggiunge il 5% per livello a ogni azione. Qui è in sola lettura, il livello si imposta nella pagina Esperti.",
+    "noneTitle": "Nessun bonus degli esperti",
+    "kingNote": "Nessun esperto cambia i punti di King of Icefield.",
+    "hallNote": "Nessun esperto cambia i punti di Hall of Chief."
+  },
+  "daysSection": {
+    "title": "Giorni",
+    "stages": "Fasi",
+    "totalPerDay": "Punti totali per giorno",
+    "totalPerStage": "Punti totali per fase",
+    "hallSeason": "La stagione si imposta nell'account ed è la Stagione 1 finché non lo fai.",
+    "showdownScope": "Solo punti personali. Nessun totale dell'alleanza e nessun punto vittoria."
+  },
+  "table": {
+    "title": "{day}: {name}",
+    "phasePreparation": "Fase di preparazione",
+    "phaseBattle": "Fase di battaglia",
+    "action": "Azione",
+    "pointsEach": "Punti ciascuno",
+    "count": "Quantità",
+    "points": "Punti",
+    "lower": "Diminuisci la quantità per {action}",
+    "raise": "Aumenta la quantità per {action}",
+    "countLabel": "Quantità per {action}",
+    "fromPlans": "{amount} dai piani",
+    "base": "Base {amount}",
+    "bonus": "Bonus {amount}",
+    "total": "Totale {amount}"
+  },
+  "result": {
+    "totalTitle": "Punti totali, tutti i giorni",
+    "totalTitleHall": "Punti totali, fase selezionata",
+    "baseBonus": "Base {base}, bonus {bonus}",
+    "battle": "Fase di battaglia",
+    "battleNoBonus": "Nessun bonus nella Fase di battaglia",
+    "seasonSum": "Fasi della stagione sommate: {amount}. Non è una classifica.",
+    "selectedDayTotal": "{day}: {amount}",
+    "selectedDayBonus": "Bonus {percent}%"
+  },
+  "perDay": {
+    "title": "Punti per giorno",
+    "titleHall": "Punti per fase",
+    "bar": "Quota del giorno più grande per {day}"
+  },
+  "thresholds": {
+    "title": "Soglie di punti",
+    "estimate": "Stima",
+    "help": "Traguardi per {day}, a confronto con il totale del giorno.",
+    "reached": "Raggiunto",
+    "needs": "Ne mancano {amount}",
+    "extraTier": "Grado extra {number}, da Valeria",
+    "extraTierUnknown": "Punti e ricompensa non sono nel pacchetto",
+    "unknown": "Sconosciuto",
+    "noneEvent": "Il pacchetto non ha soglie di punti per questo evento.",
+    "noneDay": "Il pacchetto non ha soglie di punti per questo giorno."
+  },
+  "ranks": {
+    "title": "Soglie di posizione",
+    "note": "Sono classifiche dei giocatori. Una posizione non ha una soglia di punti.",
+    "rank": "Posizione",
+    "reward": "Ricompensa",
+    "gems": "{amount} Gems",
+    "unknown": "Sconosciuto",
+    "notConfirmed": "Non confermato",
+    "noneShowdown": "Il pacchetto non ha una classifica personale per Alliance Showdown."
+  }
+}

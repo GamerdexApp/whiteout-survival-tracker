@@ -1,0 +1,251 @@
+{
+  "page": {
+    "title": "Truppe"
+  },
+  "view": {
+    "title": "Truppe",
+    "subline": "{chief} · {camps}",
+    "campLevel": "{name} Camp {level}",
+    "notBuilt": "non costruito",
+    "intro": "Livelli dei campi, capacità e bonus di velocità vengono da altre pagine e sono in sola lettura. Piano calcola cosa richiedono addestramento e promozione. Avvia addestramento segna un gruppo che un campo sta addestrando.",
+    "plan": "Piano"
+  },
+  "cards": {
+    "tileSummary": "truppe · potenza {power}",
+    "allTroops": "Tutte le truppe",
+    "totalPower": "Potenza totale",
+    "troops": "Truppe",
+    "power": "Potenza",
+    "powerNote": "La potenza per truppa viene dal pacchetto. I gradi 10 e 11 seguono il livello Fire Crystal di ogni campo.",
+    "campLevel": "Campo {level}",
+    "campNotBuilt": "Campo non costruito",
+    "campAgeLocked": "Il livello salvato del campo non è ancora aperto su questo server. {text}",
+    "highestTier": "Grado più alto",
+    "tierShort": "T{tier}",
+    "noTier": "Nessuno"
+  },
+  "tiers": {
+    "title": "Gradi {name}",
+    "hideLow": "Nascondi Grado 9 e inferiori",
+    "typeLabel": "Tipo di truppa",
+    "hiddenNote": "I gradi da 1 a 9 sono nascosti. La Furnace {furnace} è al livello 30 o superiore.",
+    "heads": {
+      "tier": "Grado",
+      "troops": "Truppe",
+      "train": "Addestra",
+      "power": "Potenza"
+    },
+    "requires": {
+      "list": "Richiede {list}",
+      "camp": "{name} Camp {level}",
+      "building": "{name} {level}",
+      "research": "{name} livello {level}"
+    },
+    "tier": "Grado {tier}",
+    "locked": "Bloccato",
+    "countLabel": "Truppe {name} {tier}",
+    "train": "Addestra",
+    "seconds": "{value} s",
+    "each": "ciascuna",
+    "mobilePower": "Potenza"
+  },
+  "plan": {
+    "title": "Pianifica Truppe",
+    "description": "Addestramento e promozione per i tre tipi di truppa",
+    "saved": "Piano salvato {date}",
+    "close": "Chiudi",
+    "save": "Salva piano",
+    "export": {
+      "button": "Esporta negli Eventi principali",
+      "emptyHint": "Aggiungi un addestramento per esportarlo.",
+      "computed": "Calcolato dall'app.",
+      "trainedGroup": "per truppe addestrate",
+      "speedupGroup": "per minuti di accelerazione",
+      "trainedTier": "Truppe di grado {tier} addestrate",
+      "speedupMinutes": "Minuti di accelerazione addestramento usati",
+      "promoted": "Truppe promosse",
+      "promotedReason": "La promozione dà punti solo tramite i minuti di accelerazione.",
+      "power": "Potenza da addestramento e promozione",
+      "powerReason": "Il pacchetto non ha ancora una vera potenza per grado."
+    },
+    "noRuns": "Ancora nessun addestramento. Aggiungi una truppa per iniziare un piano.",
+    "add": {
+      "title": "Aggiungi una truppa",
+      "typeLabel": "Tipo di truppa",
+      "modeLabel": "Addestramento o promozione",
+      "button": "Aggiungi truppa"
+    },
+    "run": {
+      "tier": "Grado {tier}",
+      "modes": {
+        "training": "Addestramento",
+        "promotion": "Promozione"
+      },
+      "remove": "Rimuovi l'addestramento di {name}",
+      "removeButton": "Rimuovi",
+      "modeLabel": "Addestramento o promozione di {name}",
+      "tierLabel": "Grado di {name}",
+      "fromLabel": "Promozione di {name} dal grado",
+      "toLabel": "Promozione di {name} al grado",
+      "to": "a",
+      "troops": "Truppe",
+      "max": "Max",
+      "maxValue": "Max ({capacity})",
+      "batches": "Gruppi"
+    },
+    "speed": {
+      "readOnlyNote": "I valori in sola lettura vengono da altre pagine. Cambiali lì.",
+      "openBonuses": "Apri Bonus",
+      "title": "Capacità e velocità",
+      "appointment": "Nomina",
+      "position": "Carica",
+      "rank": "Rango",
+      "positions": {
+        "none": "Nessuna",
+        "ministerOfEducation": "Minister of Education",
+        "vicePresident": "Vice President"
+      },
+      "ranks": {
+        "regular": "Normale",
+        "supreme": "Supremo"
+      },
+      "appointmentEffect": "+{capacity} capacità, +{speed}% velocità",
+      "appointmentNote": "Solo una delle due nomine può essere attiva. Minister of Education aggiunge {moeCapacity} di capacità e {moeSpeed} percento di velocità (Supremo {moeCapacitySupreme} e {moeSpeedSupreme}). Vice President aggiunge {vpSpeed} percento di velocità (Supremo {vpSpeedSupreme}).",
+      "capacity": "Capacità",
+      "researchCapacity": "Capacità da ricerca",
+      "troops": "{value} truppe",
+      "readOnly": "Sola lettura",
+      "capacityBoost": "Aumento di capacità",
+      "boostTotal": "Totale x{multiplier}",
+      "capacityPerBatch": "Capacità per gruppo",
+      "trainingSpeed": "Velocità di addestramento",
+      "gameSpeed": "Velocità di addestramento del gioco",
+      "appointmentSpeed": "Nomina",
+      "mobilize": "Mobilize",
+      "advancedTraining": "Advanced Training",
+      "speedUsed": "Velocità di addestramento usata",
+      "percent": "{value}%",
+      "percentPlus": "+{value}%"
+    },
+    "stock": {
+      "name": "Accelerazioni di addestramento",
+      "minutesUnit": "min",
+      "note": "Le tue scorte: Addestramento {training} min, Generale {general} min. Le accelerazioni generali contano per l'addestramento. L'addestramento non coperto da un'accelerazione termina in tempo normale, quindi si usano solo le accelerazioni che possiedi: {used} min."
+    },
+    "result": {
+      "title": "Risultato",
+      "resources": "Risorse",
+      "changes": "Variazioni delle truppe per grado",
+      "heads": {
+        "tier": "Grado",
+        "infantry": "Fan.",
+        "lancer": "Lan.",
+        "marksman": "Tir.",
+        "all": "Tutte"
+      },
+      "tier": "Grado {tier}",
+      "total": "Totale",
+      "time": "Tempo, senza accelerazioni",
+      "totalTime": "Totale, tutti i tipi di truppa (tempo di accelerazione)",
+      "longest": "Tipo di truppa più lungo",
+      "minutesNeeded": "Minuti di accelerazione necessari",
+      "minutesUsed": "Minuti di accelerazione usati (in scorta)",
+      "minutes": "{value} min",
+      "tier12Note": "Il pacchetto indica che i costi del Grado 12 sono in parte derivati. Il costo di promozione dei Tiratori è stato misurato nel gioco, mentre i costi di Fanteria e Lancieri sono stati scalati da quello."
+    }
+  },
+  "queue": {
+    "title": "Code di addestramento",
+    "note": "Ogni campo addestra un gruppo alla volta. Completa aggiunge le truppe ai tuoi conteggi.",
+    "idle": "Nessun addestramento in corso. Avvia un gruppo per usare questo campo.",
+    "startButton": "Avvia addestramento",
+    "jobTitle": {
+      "training": "Addestramento di {count} {name} T{tier}",
+      "promotion": "Promozione di {count} {name} da T{from} a T{to}"
+    },
+    "manage": {
+      "slotLabel": "{camp}, un gruppo alla volta",
+      "finishText": "Completa potenziamento aggiunge le truppe ai tuoi conteggi, libera il campo e aggiunge il gruppo alla tua Cronologia. A zero tempo rimasto, la scheda dice Pronto da completare. Niente si completa da solo, perché potresti aver usato accelerazioni."
+    },
+    "flyout": {
+      "title": "Avvia addestramento",
+      "description": "Segna un gruppo come in addestramento o promozione in un campo",
+      "camp": "Campo",
+      "campHelp": "Un gruppo alla volta in ogni campo. Un campo occupato dice quando si libera.",
+      "busy": "Occupato fino a {date}",
+      "notBuilt": "Campo non costruito",
+      "action": "Azione",
+      "training": "Addestramento",
+      "promotion": "Promozione",
+      "tier": "Grado",
+      "tierOption": "Grado {tier}",
+      "fromTier": "Dal grado",
+      "toTier": "Al grado",
+      "troops": "Truppe nel gruppo",
+      "max": "Max",
+      "capacityHint": "Un gruppo contiene fino a {capacity} truppe. È la capacità da ricerca più i livelli dei campi.",
+      "noTiers": "Questo campo non ha ancora un grado da addestrare. Alza il livello del campo nella pagina Edifici.",
+      "cost": "Costo del gruppo",
+      "time": "Tempo di addestramento",
+      "packageTime": "Tempo del pacchetto",
+      "speed": "Velocità di addestramento",
+      "readOnly": "Sola lettura",
+      "openBonuses": "Apri Bonus",
+      "yourTime": "Il tuo tempo",
+      "timeHint": "La velocità di addestramento viene dalla pagina Bonus. Usa Già avviato quando il gioco mostra un tempo diverso.",
+      "whenStarted": "Quando è iniziato?",
+      "modes": {
+        "now": "Inizia ora",
+        "already": "Già avviato"
+      },
+      "timeLeftHours": "Tempo rimanente, ore",
+      "ends": "Termina",
+      "takeCost": {
+        "title": "Scala il costo dalle mie scorte",
+        "hint": "Toglie da Risorse le risorse del gruppo. Un conteggio non scende mai sotto 0.",
+        "enough": "Ne hai abbastanza.",
+        "short": "Mancano {names}. Le scorte vanno a 0 per queste."
+      },
+      "cancel": "Annulla",
+      "start": "Avvia addestramento",
+      "allCamps": "Tutti i campi liberi ({count})",
+      "allCampsHint": "Avvia lo stesso gruppo in ogni campo libero insieme. Ogni campo mantiene il proprio tempo. I gradi mostrati sono quelli che ogni campo libero può addestrare.",
+      "campTime": "{camp}: {time}"
+    },
+    "toasts": {
+      "started": {
+        "title": "Addestramento avviato",
+        "message": "{what}."
+      },
+      "finished": {
+        "title": "{what} addestrati",
+        "message": "Aggiunti ai conteggi delle truppe e alla Cronologia."
+      },
+      "cancelled": {
+        "title": "{what} annullato",
+        "message": "I conteggi delle truppe restano com'erano. Correggi le scorte in Risorse se serve."
+      },
+      "undo": "Annulla"
+    },
+    "batchName": {
+      "training": "{count} {name} T{tier}",
+      "promotion": "{count} {name} da T{from} a T{to}"
+    }
+  },
+  "callOfWar": {
+    "title": "Call of War",
+    "note": "Abilità di Romulus. Un ritiro gratuito per ogni giorno UTC, per tutti i campi insieme. Si azzera alle 00:00 UTC.",
+    "available": "{troops} truppe gratuite oggi",
+    "claimed": "Ritirato oggi. Un nuovo ritiro è gratuito tra {time}.",
+    "notUnlocked": "Richiede Romulus reclutato e Call of War al livello 1 o superiore nella pagina Esperti.",
+    "level": "Call of War livello {level}",
+    "add": "Aggiungi a {camp}",
+    "addHint": "{troops} truppe vanno al grado {tier}",
+    "noTier": "Nessun grado sbloccato",
+    "toast": {
+      "title": "Call of War ritirato",
+      "message": "{troops} truppe aggiunte a {camp} grado {tier}.",
+      "undo": "Annulla"
+    }
+  }
+}

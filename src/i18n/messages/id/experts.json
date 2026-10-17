@@ -1,0 +1,239 @@
+{
+  "page": {
+    "title": "Ahli"
+  },
+  "view": {
+    "subline": "{chief} · ahli Dawn Academy, {total} di dalam game",
+    "ghost": "Ahli"
+  },
+  "common": {
+    "plan": "Rencana",
+    "generation": "Generasi {generation}",
+    "unknown": "Tidak diketahui",
+    "and": "{first} dan {last}",
+    "expertCount": "{count, plural, other {{amount} ahli}}"
+  },
+  "stats": {
+    "recruited": "Ahli direkrut",
+    "recruitedValue": "{count} dari {total}",
+    "powerNow": "Kekuatan ahli saat ini, hanya yang direkrut",
+    "powerAtMax": "Kekuatan di maks, semua {total}",
+    "highest": "Afinitas tertinggi",
+    "highestValue": "{name} di {affinity}",
+    "highestNone": "Belum ada yang direkrut"
+  },
+  "toolbar": {
+    "searchLabel": "Cari ahli",
+    "searchPlaceholder": "Cari ahli",
+    "filters": "Filter",
+    "emptyTitle": "Tidak ada ahli yang cocok",
+    "emptyDescription": "Ubah pencarian atau filter untuk melihat lebih banyak ahli.",
+    "reset": "Atur ulang filter",
+    "status": "Menampilkan {shown} dari {total}. Target hanya bisa dibaca di sini dan diatur di Rencana. Di level yang habis dibagi 10, bonus level sebelumnya dihitung sampai ahli naik tingkat. Setiap perubahan langsung tersimpan.",
+    "lockedNote": "{count} terkunci sampai hari server berikutnya."
+  },
+  "toast": {
+    "notRecruitedTitle": "{name} tidak direkrut",
+    "notRecruitedMessage": "Levelnya tetap tersimpan dan aktif kembali dengan Direkrut.",
+    "undo": "Urungkan"
+  },
+  "card": {
+    "recruited": "Direkrut",
+    "recruitedLabel": "{expert} direkrut",
+    "summary": "{title} · {specialty} · {generation}",
+    "affinityLevel": "Level afinitas",
+    "affinityLabel": "Level afinitas {expert}",
+    "affinityDisplay": "{level} / {max}",
+    "affinityProgress": "Progres afinitas {expert}",
+    "goal": "Target {goal}",
+    "advanced": "Naik tingkat",
+    "notAdvanced": "Belum naik tingkat",
+    "advancedLabel": "{expert} naik tingkat di level {level}",
+    "relationship": "Level hubungan",
+    "affinityAvailable": "Afinitas tersedia",
+    "affinityAvailableLabel": "Poin afinitas {expert} yang dimiliki",
+    "affinityOf": "dari {need} untuk level {level}",
+    "bonusTitle": "Bonus dasar saat ini",
+    "bonusNow": "{amount}% {stats}",
+    "bonusOwnLevel": "Level {level} bukan kelipatan 10, jadi bonusnya sendiri yang dihitung.",
+    "bonusAdvanced": "Level {level} sudah naik tingkat, jadi bonusnya sendiri yang dihitung.",
+    "bonusNotAdvanced": "Level {level} belum naik tingkat, jadi bonus level {counted} yang dihitung.",
+    "bonusAtMax": "Di level 100: {amount}%.",
+    "feeds": "Mengalir ke",
+    "bonuses": "Bonus",
+    "nextAdvancement": "Kenaikan tingkat berikutnya: level {level}, {sigils} sigil",
+    "allAdvanced": "Semua kenaikan tingkat selesai.",
+    "skills": "Skill",
+    "skillLabel": "Level {skill} {expert}",
+    "skillDisplay": "{level} / {max}",
+    "expAvailable": "EXP tersedia",
+    "expAvailableLabel": "EXP {skill} {expert} yang dimiliki",
+    "expOf": "dari {need} untuk level {level}",
+    "maxLevel": "Level maks, tidak butuh EXP",
+    "talent": "Bakat: {name}",
+    "talentLevel": "Level {level} dari {max}",
+    "talentFollows": "Mengikuti {relationship}. {effect}.",
+    "power": "Kekuatan {now} dari {max}",
+    "derived": "Turunan",
+    "notRecruitedHint": "Belum direkrut. Rekrut ahli ini di Tundra Trek, lalu aktifkan Direkrut.",
+    "recruitmentCost": "Biaya rekrutmen: {cost}",
+    "maxPower": "Kekuatan maks {max}",
+    "buffs": "Buff {stats}",
+    "expEnough": "Cukup untuk level {level}",
+    "affinityEnough": "Cukup untuk level {level}",
+    "skillLocked": "Belum terbuka. Naikkan ke level 1 untuk membukanya.",
+    "sigilsOwned": "Sigil dimiliki",
+    "sigilsOwnedLabel": "Sigil {expert} dimiliki",
+    "sigilsHint": "Jumlah yang sama dengan sigil di halaman Sumber Daya."
+  },
+  "filtersFlyout": {
+    "title": "Filter",
+    "description": "Persempit daftar ahli dan pilih urutannya.",
+    "generation": "Generasi",
+    "all": "Semua",
+    "show": "Tampilkan",
+    "order": "Urutan",
+    "reset": "Atur ulang",
+    "showButton": "Tampilkan {experts}",
+    "notSaved": "Filter tidak disimpan.",
+    "showOptions": {
+      "everything": "Semuanya",
+      "recruited": "Hanya yang direkrut",
+      "notRecruited": "Hanya yang belum direkrut"
+    },
+    "orderOptions": {
+      "generation": "Generasi",
+      "affinity": "Level afinitas",
+      "power": "Kekuatan",
+      "name": "Nama"
+    }
+  },
+  "plan": {
+    "title": "Rencanakan ahli",
+    "description": "Books of Knowledge, sigil, EXP skill, dan poin afinitas untuk target afinitas dan skill.",
+    "saved": "Rencana disimpan {date}",
+    "close": "Tutup",
+    "save": "Simpan rencana",
+    "exportButton": "Ekspor ke Core Events",
+    "exportNothing": "Rencana tidak butuh buku atau sigil untuk diekspor.",
+    "export": {
+      "books": "Books of Knowledge",
+      "sigils": "Sigil ahli",
+      "exp": "EXP skill",
+      "expReason": "Tidak ada event yang menskor EXP skill."
+    },
+    "noExperts": "Belum ada ahli di rencana. Tambah ahli yang direkrut untuk mengatur targetnya.",
+    "add": {
+      "title": "Tambah ahli",
+      "selectLabel": "Ahli yang ditambah",
+      "button": "Tambah ahli",
+      "allIn": "Semua ahli yang direkrut sudah ada di rencana.",
+      "noneRecruited": "Rekrut ahli di halaman untuk merencanakannya."
+    },
+    "block": {
+      "remove": "Hapus",
+      "removeLabel": "Hapus {expert} dari rencana",
+      "part": "Bagian",
+      "current": "Saat ini",
+      "goalHeading": "Target",
+      "affinity": "Level afinitas",
+      "affinityHeld": "Afinitas tersedia {amount}",
+      "expHeld": "EXP tersedia {amount}",
+      "currentLevel": "Level {level}",
+      "currentAffinity": "{level}, naik tingkat",
+      "currentAffinityPlain": "{level}",
+      "affinityGoalLabel": "Target afinitas {expert}",
+      "skillGoalLabel": "Target {skill} {expert}",
+      "advanceAtGoal": "Naik tingkat di level {level}",
+      "advanceAtGoalLabel": "{expert} naik tingkat di target"
+    },
+    "checks": {
+      "affinity": "Poin afinitas",
+      "learning": "EXP skill sebagai percepatan belajar",
+      "minutesUnit": "mnt"
+    },
+    "stock": {
+      "sigils": "Rencana butuh {total} sigil. Sigil ahlimu mencakup {own} di antaranya, jadi {common} harus dari Common Expert Sigils. Tiap sigil ahli yang kamu punya hanya berlaku untuk ahli itu.",
+      "books": "Rencana butuh {amount} Books of Knowledge untuk level skill.",
+      "affinity": "Rencana butuh {needed} poin afinitas. Yang kamu punya di kartu ahli mencakup {held}, jadi {left} masih harus didapat. Paket data tidak punya item afinitas, jadi tidak ada yang dicek terhadap stok.",
+      "learning": "Rencana butuh {exp} EXP skill. Skill-mu menyimpan {held}, jadi {left} harus dari percepatan belajar. Satu menit belajar memberi {rate} EXP, jadi itu {minutes} menit."
+    },
+    "byExpert": {
+      "title": "Menurut ahli",
+      "sigils": "Sigil: butuh {needed}, tercakup {own} oleh sigil {name}-mu, {common} dari Common Expert Sigils",
+      "affinity": "Afinitas: butuh {needed}, tersedia {held}, masih kurang {left}",
+      "exp": "EXP skill: butuh {needed}, tersedia {held}, masih kurang {left}"
+    },
+    "result": {
+      "title": "Hasil",
+      "derived": "Turunan",
+      "books": "Books of Knowledge",
+      "sigils": "Sigil",
+      "exp": "EXP skill",
+      "affinity": "Poin afinitas",
+      "advancements": "Kenaikan tingkat",
+      "skillLevels": "Level skill",
+      "affinityLevels": "Level afinitas",
+      "heads": {
+        "expert": "Ahli",
+        "books": "Buku",
+        "sigils": "Sigil",
+        "exp": "EXP",
+        "levels": "Level",
+        "advancements": "Naik",
+        "affinity": "Afinitas"
+      },
+      "empty": "Tambah ahli dan naikkan target untuk melihat hasil.",
+      "tableLabel": "Tabel hasil rencana"
+    }
+  },
+  "learning": {
+    "title": "Belajar",
+    "note": "Satu skill belajar sekaligus. Selesaikan menambah EXP ke skill itu.",
+    "idle": "Tidak ada yang belajar. Mulai sesi untuk menambah EXP ke skill.",
+    "startButton": "Mulai belajar",
+    "slotLabel": "Belajar, satu sesi sekaligus",
+    "jobTitle": "{expert}, {skill}, {session}",
+    "manageFinishText": "Selesaikan upgrade menambah EXP sesi ke skill, mengosongkan antrean belajar, dan menambah sesi ke Riwayat. Saat sisa waktu nol, kartu menampilkan Siap diselesaikan. Tidak ada yang selesai sendiri, karena kamu mungkin memakai percepatan.",
+    "flyout": {
+      "title": "Mulai belajar",
+      "description": "Tandai sesi belajar berjalan untuk skill ahli",
+      "expert": "Ahli",
+      "skill": "Skill",
+      "skillOption": "{name}, level {level} dari {max}",
+      "session": "Sesi",
+      "sessionOption": "{label}, {exp} EXP",
+      "sessionHint": "Sesi memberi 60 EXP tiap menit. Sesinya sama dengan yang ada di game.",
+      "expEarned": "EXP didapat",
+      "heldAfter": "EXP tersimpan setelahnya",
+      "tooMuch": "Skill hanya bisa memakai {room} EXP lagi, jadi sisanya hilang.",
+      "whenStarted": "Kapan mulainya?",
+      "modes": {
+        "now": "Mulai sekarang",
+        "already": "Sudah dimulai"
+      },
+      "timeLeftHours": "Sisa waktu, jam",
+      "ends": "Selesai",
+      "startedHint": "Pakai Sudah dimulai saat sesi berjalan di game. Isi waktu yang ditampilkan.",
+      "nothingToLearn": "Tidak ada skill yang bisa belajar sekarang. Rekrut ahli dan buka skill yang belum di level tertinggi.",
+      "busy": "Sesi sedang berjalan. Selesaikan atau batalkan di Kelola dulu.",
+      "cancel": "Batal",
+      "start": "Mulai belajar"
+    },
+    "toasts": {
+      "started": {
+        "title": "Belajar dimulai",
+        "message": "{what}."
+      },
+      "finished": {
+        "title": "{what} selesai dipelajari",
+        "message": "EXP ditambahkan ke skill dan ke Riwayat."
+      },
+      "cancelled": {
+        "title": "{what} dibatalkan",
+        "message": "Skill tetap memegang EXP yang dimilikinya."
+      },
+      "undo": "Urungkan"
+    }
+  }
+}

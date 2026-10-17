@@ -1,0 +1,46 @@
+{
+    "line": "Die {missions} täglichen Spielmissionen mit jeder bekannten Stufe, die Belohnungen der Aktivitätsleiste und die Routineaufgaben.",
+    "missionCount": "{count, plural, one {{amount} Mission} other {{amount} Missionen}}",
+    "tabs": {
+        "label": "Tagesaufgaben",
+        "missions": "Spielmissionen",
+        "routine": "Routineaufgaben"
+    },
+    "totals": {
+        "title": "Aktivität gesamt",
+        "missions": "Spielmissionen",
+        "levelOne": "Stufe 1 jeder Mission",
+        "allLevels": "Jede bekannte Stufe",
+        "topReward": "Stufe der Top-Belohnung",
+        "explanation": "Eine Mission addiert die Aktivität jeder erledigten Stufe bis zur erreichten Stufe. Stufe 1 aller {missions} Missionen ergibt {levelOne} Aktivität. Jede bekannte Stufe aller {missions} Missionen ergibt {allLevels}."
+    },
+    "bar": {
+        "title": "Belohnungen der Aktivitätsleiste",
+        "activeness": "Aktivität",
+        "rewards": "Belohnungen"
+    },
+    "missions": {
+        "title": "Spielmissionen",
+        "summary": "{missions}, {levels}",
+        "levelCount": "{count, plural, one {{amount} bekannte Stufe} other {{amount} bekannte Stufen}}",
+        "level": "Stufe",
+        "task": "Aufgabe",
+        "target": "Ziel",
+        "activeness": "Aktivität",
+        "otherRewards": "Weitere Belohnungen",
+        "levelLabel": "S{level}",
+        "sumOne": "1 Stufe: {total} Aktivität",
+        "sumMany": "{count} Stufen: {parts} = {total} Aktivität",
+        "plus": "+{amount}",
+        "noOtherRewards": "Keine"
+    },
+    "routine": {
+        "title": "Routineaufgaben",
+        "count": "{count, plural, one {{amount} Aufgabe} other {{amount} Aufgaben}}"
+    },
+    "missing": {
+        "title": "Noch nicht in den Daten",
+        "levels": "Weitere Missionsstufen. Jede Mission hat {min} bis {max} bekannte Stufen. Höhere Stufen sind noch nicht im Paket, daher können die Summen wachsen.",
+        "reset": "Zeit der täglichen Zurücksetzung. Das Paket hat keine. Der Tracker nutzt seinen eigenen Standard von {time} UTC und kennzeichnet ihn als App-Standard."
+    }
+}

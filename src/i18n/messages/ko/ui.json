@@ -1,0 +1,35 @@
+{
+  "close": "닫기",
+  "field": {
+    "optional": "선택"
+  },
+  "stepper": {
+    "lower": "{label} 낮추기",
+    "raise": "{label} 올리기",
+    "labelPrefix": "{label}, "
+  },
+  "switch": {
+    "on": "켜짐",
+    "off": "꺼짐"
+  },
+  "tabs": {
+    "locked": " (잠김)"
+  },
+  "toast": {
+    "dismiss": "닫기",
+    "variants": {
+      "success": "성공",
+      "info": "정보",
+      "warning": "경고",
+      "error": "오류"
+    },
+    "missingProvider": "useToast must be used within a ToastProvider"
+  },
+  "savedChip": {
+    "automatic": "자동 저장",
+    "justNow": "방금 저장됨",
+    "minutesAgo": "{count}분 전에 저장됨",
+    "at": "{time}에 저장됨",
+    "failed": "저장되지 않음, 저장 공간이 가득 찼어요"
+  }
+}

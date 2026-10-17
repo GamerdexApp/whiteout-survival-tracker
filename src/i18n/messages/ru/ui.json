@@ -1,0 +1,35 @@
+{
+  "close": "Закрыть",
+  "field": {
+    "optional": "Необязательно"
+  },
+  "stepper": {
+    "lower": "Уменьшить: {label}",
+    "raise": "Увеличить: {label}",
+    "labelPrefix": "{label}, "
+  },
+  "switch": {
+    "on": "Вкл.",
+    "off": "Выкл."
+  },
+  "tabs": {
+    "locked": " (закрыто)"
+  },
+  "toast": {
+    "dismiss": "Скрыть",
+    "variants": {
+      "success": "Готово",
+      "info": "Инфо",
+      "warning": "Внимание",
+      "error": "Ошибка"
+    },
+    "missingProvider": "useToast must be used within a ToastProvider"
+  },
+  "savedChip": {
+    "automatic": "Сохраняется автоматически",
+    "justNow": "Только что сохранено",
+    "minutesAgo": "Сохранено {count} мин назад",
+    "at": "Сохранено {time}",
+    "failed": "Не сохранено, хранилище заполнено"
+  }
+}

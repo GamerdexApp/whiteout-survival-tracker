@@ -1,0 +1,108 @@
+{
+    "days": {
+        "day": "{number}日目",
+        "battle": "バトル",
+        "range": "{range}日目",
+        "stage": "ステージ{number}"
+    },
+    "page": {
+        "title": "コアイベント",
+        "subline": "{chief} · {details}"
+    },
+    "events": {
+        "svs": "SvS",
+        "showdown": "Alliance Showdown",
+        "king": "King of Icefield",
+        "hall": "Hall of Chief"
+    },
+    "tabs": {
+        "label": "コアイベント"
+    },
+    "empty": {
+        "title": "表示するイベントがありません",
+        "description": "このチーフでは4つのイベントがすべて非表示です。チーフの編集でオンにしてください。",
+        "action": "チーフを編集"
+    },
+    "strip": {
+        "live": "開催中",
+        "dates": "{start}から{end}まで",
+        "noDates": "日付はイベントログで設定します。",
+        "today": "今日は{day}です",
+        "checklist": "チェックリスト",
+        "log": "イベントログ"
+    },
+    "bonus": {
+        "title": "{expert}の{skill}レベル",
+        "level": "レベル{level}",
+        "levelWithPercent": "レベル{level} · {percent}%",
+        "none": "レベルが未設定のため、ボーナスは加算されません。",
+        "readOnly": "読み取り専用",
+        "openExperts": "エキスパートを開く",
+        "svsHelp": "1日目から5日目のポイントにレベルごとに2%を加算します（日ごとに端数処理）。ポイント基準に追加の段階も加わります。バトルフェーズにはボーナスがありません。ここでは読み取り専用で、レベルはエキスパートページで設定します。",
+        "showdownHelp": "すべての行動にレベルごとに5%を加算します。ここでは読み取り専用で、レベルはエキスパートページで設定します。",
+        "noneTitle": "エキスパートボーナスなし",
+        "kingNote": "King of Icefieldのポイントを変えるエキスパートはいません。",
+        "hallNote": "Hall of Chiefのポイントを変えるエキスパートはいません。"
+    },
+    "daysSection": {
+        "title": "日程",
+        "stages": "ステージ",
+        "totalPerDay": "1日ごとの合計ポイント",
+        "totalPerStage": "ステージごとの合計ポイント",
+        "hallSeason": "シーズンはアカウントで設定します。設定するまではシーズン1です。",
+        "showdownScope": "個人ポイントのみです。同盟の合計と勝利ポイントは含まれません。"
+    },
+    "table": {
+        "title": "{day}: {name}",
+        "phasePreparation": "準備フェーズ",
+        "phaseBattle": "バトルフェーズ",
+        "action": "行動",
+        "pointsEach": "1回あたりのポイント",
+        "count": "回数",
+        "points": "ポイント",
+        "lower": "{action}の回数を減らす",
+        "raise": "{action}の回数を増やす",
+        "countLabel": "{action}の回数",
+        "fromPlans": "プランから{amount}",
+        "base": "基本{amount}",
+        "bonus": "ボーナス{amount}",
+        "total": "合計{amount}"
+    },
+    "result": {
+        "totalTitle": "合計ポイント（全日程）",
+        "totalTitleHall": "合計ポイント（選択したステージ）",
+        "baseBonus": "基本{base}、ボーナス{bonus}",
+        "battle": "バトルフェーズ",
+        "battleNoBonus": "バトルフェーズにボーナスはありません",
+        "seasonSum": "シーズンのステージ合計: {amount}。順位ではありません。",
+        "selectedDayTotal": "{day}: {amount}",
+        "selectedDayBonus": "ボーナス{percent}%"
+    },
+    "perDay": {
+        "title": "1日ごとのポイント",
+        "titleHall": "ステージごとのポイント",
+        "bar": "{day}の最大の日に対する割合"
+    },
+    "thresholds": {
+        "title": "ポイント基準",
+        "estimate": "推定",
+        "help": "{day}のマイルストーンを、その日の合計と比較しています。",
+        "reached": "達成済み",
+        "needs": "あと{amount}必要",
+        "extraTier": "追加段階{number}（Valeria）",
+        "extraTierUnknown": "ポイントと報酬はパッケージにありません",
+        "unknown": "不明",
+        "noneEvent": "パッケージにこのイベントのポイント基準はありません。",
+        "noneDay": "パッケージにこの日のポイント基準はありません。"
+    },
+    "ranks": {
+        "title": "ランク基準",
+        "note": "プレイヤー同士の順位です。ランクにポイントの足切りはありません。",
+        "rank": "ランク",
+        "reward": "報酬",
+        "gems": "{amount} Gems",
+        "unknown": "不明",
+        "notConfirmed": "未確認",
+        "noneShowdown": "パッケージにAlliance Showdownの個人ランキングはありません。"
+    }
+}

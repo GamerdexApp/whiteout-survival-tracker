@@ -1,0 +1,108 @@
+{
+  "days": {
+    "day": "Dia {number}",
+    "battle": "Batalha",
+    "range": "Dias {range}",
+    "stage": "Fase {number}"
+  },
+  "page": {
+    "title": "Eventos principais",
+    "subline": "{chief} · {details}"
+  },
+  "events": {
+    "svs": "SvS",
+    "showdown": "Alliance Showdown",
+    "king": "King of Icefield",
+    "hall": "Hall of Chief"
+  },
+  "tabs": {
+    "label": "Eventos principais"
+  },
+  "empty": {
+    "title": "Nenhum evento visível",
+    "description": "Os quatro eventos estão ocultos para este chefe. Ativá-los em Editar chefe.",
+    "action": "Editar chefe"
+  },
+  "strip": {
+    "live": "Evento a decorrer",
+    "dates": "{start} a {end}",
+    "noDates": "As datas definem-se no Registo de eventos.",
+    "today": "Hoje é {day}",
+    "checklist": "Lista de tarefas",
+    "log": "Registo de eventos"
+  },
+  "bonus": {
+    "title": "Nível de {skill} de {expert}",
+    "level": "Nível {level}",
+    "levelWithPercent": "Nível {level} · {percent}%",
+    "none": "Sem nível definido, por isso não se acrescenta bónus.",
+    "readOnly": "Só leitura",
+    "openExperts": "Abrir Especialistas",
+    "svsHelp": "Acrescenta 2% por nível aos pontos dos dias 1 a 5, arredondado por dia, e tiers extra aos limiares de pontos. A Fase de batalha não tem bónus. Aqui é só de leitura, o nível define-se na página Especialistas.",
+    "showdownHelp": "Acrescenta 5% por nível a cada ação. Aqui é só de leitura, o nível define-se na página Especialistas.",
+    "noneTitle": "Sem bónus de especialista",
+    "kingNote": "Nenhum especialista altera os pontos de King of Icefield.",
+    "hallNote": "Nenhum especialista altera os pontos de Hall of Chief."
+  },
+  "daysSection": {
+    "title": "Dias",
+    "stages": "Fases",
+    "totalPerDay": "Total de pontos por dia",
+    "totalPerStage": "Total de pontos por fase",
+    "hallSeason": "A temporada é definida na conta e é a Temporada 1 até lá.",
+    "showdownScope": "Só pontos pessoais. Sem totais da aliança nem pontos de vitória."
+  },
+  "table": {
+    "title": "{day}: {name}",
+    "phasePreparation": "Fase de preparação",
+    "phaseBattle": "Fase de batalha",
+    "action": "Ação",
+    "pointsEach": "Pontos cada",
+    "count": "Quantidade",
+    "points": "Pontos",
+    "lower": "Diminuir quantidade de {action}",
+    "raise": "Aumentar quantidade de {action}",
+    "countLabel": "Quantidade de {action}",
+    "fromPlans": "{amount} dos planos",
+    "base": "Base {amount}",
+    "bonus": "Bónus {amount}",
+    "total": "Total {amount}"
+  },
+  "result": {
+    "totalTitle": "Total de pontos, todos os dias",
+    "totalTitleHall": "Total de pontos, fase selecionada",
+    "baseBonus": "Base {base}, bónus {bonus}",
+    "battle": "Fase de batalha",
+    "battleNoBonus": "Sem bónus na Fase de batalha",
+    "seasonSum": "Fases da temporada somadas: {amount}. Não é uma classificação.",
+    "selectedDayTotal": "{day}: {amount}",
+    "selectedDayBonus": "Bónus {percent}%"
+  },
+  "perDay": {
+    "title": "Pontos por dia",
+    "titleHall": "Pontos por fase",
+    "bar": "Proporção do maior dia para {day}"
+  },
+  "thresholds": {
+    "title": "Limiares de pontos",
+    "estimate": "Estimativa",
+    "help": "Marcos de {day}, comparados com o total do dia.",
+    "reached": "Atingido",
+    "needs": "Faltam {amount}",
+    "extraTier": "Tier extra {number}, de Valeria",
+    "extraTierUnknown": "Os pontos e a recompensa não estão no pacote de dados",
+    "unknown": "Desconhecido",
+    "noneEvent": "O pacote de dados não tem limiares de pontos para este evento.",
+    "noneDay": "O pacote de dados não tem limiares de pontos para este dia."
+  },
+  "ranks": {
+    "title": "Limiares de classificação",
+    "note": "São classificações de jogadores. Uma posição não tem limite de pontos.",
+    "rank": "Posição",
+    "reward": "Recompensa",
+    "gems": "{amount} Gems",
+    "unknown": "Desconhecido",
+    "notConfirmed": "Não confirmado",
+    "noneShowdown": "O pacote de dados não tem classificação pessoal para Alliance Showdown."
+  }
+}

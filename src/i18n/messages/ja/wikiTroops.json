@@ -1,0 +1,26 @@
+{
+    "line": "{types}種類の部隊タイプと、それぞれ{tiers}ティア。参考情報のみで、チーフには何も保存されません。",
+    "tiers": {
+        "heading": "部隊のティア",
+        "meta": "{types}タイプ×{tiers}ティア = {rows}行",
+        "typeLabel": "部隊タイプ",
+        "tableLabel": "{type}のティア"
+    },
+    "detail": {
+        "heading": "レコードの詳細",
+        "meta": "ティア{tier}、3つのタイプすべて",
+        "tableLabel": "部隊タイプ別のティア{tier}"
+    },
+    "columns": {
+        "tier": "ティア",
+        "type": "タイプ",
+        "cost": "1体あたりのコスト",
+        "topCost": "ティアのコスト",
+        "time": "訓練時間",
+        "promotion": "昇格コスト"
+    },
+    "cells": {
+        "tier": "ティア{tier}",
+        "none": "なし"
+    }
+}

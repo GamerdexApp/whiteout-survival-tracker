@@ -1,0 +1,104 @@
+{
+  "line": "{banners} tranches de bannière, {facilities} installations et {fortresses} entrées de château, bastions et forteresses. Référence uniquement, rien ici n'est enregistré.",
+  "filters": {
+    "search": "Rechercher",
+    "searchPlaceholder": "Rechercher tranches, installations, forteresses",
+    "structure": "Structure",
+    "structures": {
+      "all": "Toutes les structures",
+      "banners": "Bannières",
+      "facilities": "Installations de la carte",
+      "castle": "Château",
+      "stronghold": "Bastions",
+      "fortress": "Forteresses"
+    }
+  },
+  "empty": "Rien dans cette liste ne correspond à la recherche.",
+  "none": "Aucun",
+  "banners": {
+    "title": "Coûts de construction de la bannière",
+    "columns": {
+      "range": "Tranche de niveaux",
+      "min": "Min",
+      "max": "Max",
+      "cost": "Coût par niveau"
+    },
+    "noCost": "Aucun indiqué",
+    "count": "{count, plural, one {{amount} tranche} other {{amount} tranches}}",
+    "detail": {
+      "title": "Coût de la bannière",
+      "fields": {
+        "range": "Tranche de niveaux",
+        "min": "Niveau le plus bas",
+        "max": "Niveau le plus haut",
+        "cost": "Coût par niveau"
+      }
+    }
+  },
+  "facilities": {
+    "title": "Installations de la carte",
+    "count": "{count, plural, one {{amount} installation} other {{amount} installations}}",
+    "columns": {
+      "facility": "Installation",
+      "bonus": "Bonus",
+      "level": "Niveau {level}",
+      "listed": "Niveaux listés",
+      "ownLimit": "Limite personnelle"
+    },
+    "cell": "{available} sur la carte",
+    "listedOf": "{listed} sur {total}",
+    "levelsNote": "Les données listent {listed} niveaux sur {total} pour cette installation. Les niveaux non listés s'affichent comme Inconnu.",
+    "detail": {
+      "title": "Niveaux de {name}",
+      "level": "Niveau {level}",
+      "columns": {
+        "level": "Niveau",
+        "booster": "Booster",
+        "injured": "Grièvement blessés",
+        "losses": "Pertes",
+        "ownLimit": "Limite personnelle",
+        "available": "Sur la carte",
+        "locations": "Emplacements (x, y)"
+      },
+      "percent": "{value} %",
+      "location": "{x}, {y}"
+    }
+  },
+  "fortresses": {
+    "title": "Château, bastions et forteresses",
+    "kinds": {
+      "castle": "Château",
+      "stronghold": "Bastion",
+      "fortress": "Forteresse"
+    },
+    "columns": {
+      "name": "Nom",
+      "kind": "Type",
+      "x": "X",
+      "y": "Y",
+      "phases": "Phases",
+      "phaseOne": "Récompense phase 1"
+    },
+    "mobileMeta": "{kind}, x {x}, y {y}",
+    "count": "{count, plural, one {{amount} structure} other {{amount} structures}}"
+  },
+  "map": {
+    "title": "Carte provisoire",
+    "label": "Carte du château, des bastions et des forteresses selon leurs valeurs x et y",
+    "note": "Château, bastions et forteresses placés d'après leurs valeurs x et y sur un carré de {size} par {size}. La taille du carré est une estimation, les données n'ont pas de taille de carte.",
+    "legend": {
+      "castle": "Carré : château",
+      "stronghold": "Losange : bastion",
+      "fortress": "Cercle : forteresse"
+    }
+  },
+  "detail": {
+    "title": "Récompenses de phase",
+    "phases": "{count, plural, one {{amount} phase} other {{amount} phases}}",
+    "columns": {
+      "phase": "Phase",
+      "reward": "Récompense"
+    },
+    "noRewards": "Les données n'ont aucune récompense de phase pour cette structure."
+  }
+}

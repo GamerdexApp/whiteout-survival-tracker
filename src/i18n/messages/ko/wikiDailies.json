@@ -1,0 +1,46 @@
+{
+  "line": "게임 내 일일 임무 {missions}개의 알려진 모든 레벨, 활동 바 보상, 정기 작업이에요.",
+  "missionCount": "{count, plural, other {임무 {amount}개}}",
+  "tabs": {
+    "label": "일일 과제",
+    "missions": "게임 내 임무",
+    "routine": "정기 작업"
+  },
+  "totals": {
+    "title": "활동도 합계",
+    "missions": "게임 내 임무",
+    "levelOne": "모든 임무의 1레벨",
+    "allLevels": "알려진 모든 레벨",
+    "topReward": "최고 보상 레벨",
+    "explanation": "임무는 도달한 레벨까지 완료한 모든 레벨의 활동도를 더해요. 임무 {missions}개의 1레벨은 활동도 {levelOne}이에요. 임무 {missions}개의 알려진 모든 레벨은 {allLevels}이에요."
+  },
+  "bar": {
+    "title": "활동 바 보상",
+    "activeness": "활동도",
+    "rewards": "보상"
+  },
+  "missions": {
+    "title": "게임 내 임무",
+    "summary": "{missions}, {levels}",
+    "levelCount": "{count, plural, other {알려진 레벨 {amount}개}}",
+    "level": "레벨",
+    "task": "작업",
+    "target": "목표",
+    "activeness": "활동도",
+    "otherRewards": "기타 보상",
+    "levelLabel": "L{level}",
+    "sumOne": "1레벨: 활동도 {total}",
+    "sumMany": "{count}레벨: {parts} = 활동도 {total}",
+    "plus": "+{amount}",
+    "noOtherRewards": "없음"
+  },
+  "routine": {
+    "title": "정기 작업",
+    "count": "{count, plural, other {작업 {amount}개}}"
+  },
+  "missing": {
+    "title": "아직 데이터에 없음",
+    "levels": "다른 임무 레벨. 모든 임무는 알려진 레벨이 {min}개에서 {max}개예요. 더 높은 레벨은 아직 패키지에 없어서 합계가 늘어날 수 있어요.",
+    "reset": "일일 초기화 시간. 패키지에 없어요. 앱은 자체 기본값 {time} UTC를 쓰며 앱 기본값으로 표시해요."
+  }
+}

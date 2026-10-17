@@ -1,0 +1,102 @@
+{
+    "page": { "title": "Verlauf" },
+    "events": {
+        "svs": "SvS",
+        "showdown": "Alliance Showdown",
+        "king": "King of Icefield",
+        "hall": "Hall of Chief"
+    },
+    "title": {
+        "dated": "{event}, {start} bis {end}",
+        "undated": "{event}"
+    },
+    "ended": "Beendet {date}",
+    "tabs": { "label": "Nach Event filtern", "all": "Alle Events" },
+    "list": {
+        "intro": "Events, die du im Event-Log beendet hast, neueste zuerst. Scores sind Tag 1 bis 5 bei SvS, die Kampfphase wird getrennt geführt. Öffne ein Event, um Plan gegen Ist und die geplanten Upgrades zu sehen.",
+        "event": "Event",
+        "plan": "Plan",
+        "actual": "Ist",
+        "diff": "Diff",
+        "rank": "Rang",
+        "alliance": "Allianz",
+        "rankLine": "Rang {rank}, Allianz {alliance}",
+        "open": "Öffnen",
+        "openEvent": "{name} öffnen",
+        "none": "Noch keine beendeten Events dieser Art.",
+        "diffWithPercent": "{amount} ({percent}%)"
+    },
+    "empty": {
+        "title": "Noch keine Events",
+        "description": "Events, die du im Event-Log bei Kern-Events beendest, werden hier mit Plan und Ergebnissen gespeichert.",
+        "action": "Kern-Events öffnen"
+    },
+    "notFound": {
+        "title": "Event nicht gefunden",
+        "description": "Dieses Event ist nicht im Verlauf des aktiven Häuptlings. Es wurde vielleicht entfernt, oder das Event ist bei Kern-Events ausgeblendet.",
+        "action": "Zurück zum Verlauf"
+    },
+    "unknown": "Nicht gesetzt",
+    "belowPlan": "Unter Plan",
+    "atOrAbovePlan": "Auf oder über Plan",
+    "breadcrumb": { "label": "Brotkrumen-Navigation" },
+    "tiles": {
+        "plan": "Plan",
+        "actual": "Ist",
+        "difference": "Differenz",
+        "overall": "Gesamt",
+        "alliance": "Allianz",
+        "days": "Tag 1 bis 5",
+        "rank": "Rang",
+        "rankDays": "Rang, Tag 1 bis 5",
+        "percent": "{percent}%"
+    },
+    "compare": {
+        "title": "Plan gegen Ist",
+        "titleDays": "Plan gegen Ist, Tag 1 bis 5",
+        "day": "Tag",
+        "plan": "Plan",
+        "actual": "Ist",
+        "diff": "Diff",
+        "rank": "Rang",
+        "ally": "Alli",
+        "total": "Gesamt",
+        "share": "{percent}% vom Plan",
+        "shareLine": "{percent}% vom Plan, Rang {rank}, Alli {ally}",
+        "barLabel": "{day}, Ist als Anteil am Plan"
+    },
+    "battle": {
+        "title": "Kampfphase",
+        "note": "Eigener Score und Rang. Nicht in der Summe von Tag 1 bis 5."
+    },
+    "upgrades": {
+        "title": "Geplante Upgrades",
+        "titleCount": "Geplante Upgrades, {count}",
+        "summary": "Die Upgrades im Plan dieses Events, nach Art gruppiert. {done} von {count} wurden erledigt.",
+        "summaryUnchecked": "Die Upgrades im Plan dieses Events, nach Art gruppiert.",
+        "none": "Es wurde kein Plan in dieses Event exportiert, daher gibt es keine geplanten Upgrades zu zeigen.",
+        "groupTitle": "{name}, {count}",
+        "groupStats": "{done} von {count} erledigt, Macht +{power}, Fire Crystals {fireCrystals}",
+        "groupStatsUnchecked": "Macht +{power}, Fire Crystals {fireCrystals}",
+        "power": "+{power} Macht",
+        "plannedDay": "Geplant {day}",
+        "done": "Erledigt",
+        "notDone": "Offen",
+        "levelsFrom": "{from} bis {to}",
+        "levelsTo": "bis {to}",
+        "levelsResearchFrom": "Stufe {from} bis {to}",
+        "levelsResearchTo": "bis Stufe {to}",
+        "costAmount": "{amount} {name}"
+    },
+    "pages": {
+        "buildings": "Gebäude",
+        "research": "Forschung",
+        "chiefGear": "Häuptlingsgear",
+        "chiefCharms": "Häuptlingsamulette",
+        "heroGear": "Heldengear",
+        "heroes": "Helden",
+        "pets": "Haustiere",
+        "experts": "Experten",
+        "troops": "Truppen"
+    }
+}

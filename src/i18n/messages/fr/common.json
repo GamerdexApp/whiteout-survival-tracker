@@ -1,0 +1,19 @@
+{
+  "duration": {
+    "days": "{value} j",
+    "hours": "{value} h",
+    "minutes": "{value} min",
+    "seconds": "{value} s",
+    "zero": "0 s",
+    "separator": " "
+  },
+  "timeLeft": {
+    "left": "{duration} restant",
+    "ready": "Prêt à terminer"
+  },
+  "saveFailed": {
+    "title": "Non enregistré",
+    "message": "Le stockage du navigateur est plein. Exportez une sauvegarde maintenant.",
+    "exportBackup": "Exporter la sauvegarde"
+  }
+}

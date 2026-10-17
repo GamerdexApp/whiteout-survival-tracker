@@ -1,0 +1,88 @@
+{
+  "title": "Recursos",
+  "all": "Todos",
+  "owned": "Tengo",
+  "sources": "Orígenes",
+  "sourcesUnknown": "Orígenes desconocidos",
+  "done": "Listo",
+  "undo": "Deshacer",
+  "list": {
+    "separator": ", ",
+    "andLast": "{rest} y {last}"
+  },
+  "countControl": {
+    "remove": "Quitar {step} de {name}",
+    "add": "Agregar {step} de {name}",
+    "owned": "{name} que tienes"
+  },
+  "itemRow": {
+    "owned": "tienes"
+  },
+  "itemSheet": {
+    "title": "Editar cantidad que tienes",
+    "step": "Paso",
+    "setToZero": "Poner en 0",
+    "description": "Descripción",
+    "unknown": "Desconocido"
+  },
+  "view": {
+    "subline": "{items} objetos en {categories} categorías",
+    "sublineInCategory": "{items} objetos en {categories} categorías · {inCategory} en {category}",
+    "unsaved": "Sin guardar",
+    "shortages": "A las metas del planificador les falta {names}.",
+    "shortagesLink": "Abrir el plan de Edificios",
+    "show": {
+      "label": "Mostrar",
+      "owned": "Tengo",
+      "unknown": "Orígenes desconocidos"
+    },
+    "speedups": {
+      "none": "Ninguna",
+      "noneOwned": "No tienes aceleraciones",
+      "owned": "{minutes} min: {parts}",
+      "part": "{count} x {name}",
+      "partSeparator": " + ",
+      "types": {
+        "general": "General",
+        "construction": "Construcción",
+        "troop": "Entrenamiento de tropas",
+        "research": "Investigación",
+        "learning": "Aprendizaje",
+        "healing": "Curación"
+      }
+    },
+    "search": {
+      "label": "Buscar objetos",
+      "placeholder": "Busca entre {total} objetos"
+    },
+    "setSeveral": "Editar varios",
+    "showing": {
+      "several": "Mostrando {visible} de {total} objetos. Editar varios está activado. Los cambios esperan hasta que presiones Guardar cambios.",
+      "instant": "Mostrando {visible} de {total} objetos. Cada cambio se guarda al instante."
+    },
+    "empty": {
+      "title": "Ningún objeto coincide",
+      "description": "Cambia la búsqueda, la categoría o el filtro Mostrar.",
+      "reset": "Restablecer filtros"
+    },
+    "columns": {
+      "item": "Objeto"
+    },
+    "bar": {
+      "noChanges": "Sin cambios por guardar",
+      "changes": "{count, plural, one {{amount} cambio sin guardar} other {{amount} cambios sin guardar}}",
+      "discard": "Descartar",
+      "save": "Guardar cambios"
+    },
+    "toast": {
+      "setToZero": "{name} puesto en 0",
+      "savedTitle": "Cantidades guardadas",
+      "savedMessage": "{count, plural, one {Cambió {amount} cantidad} other {Cambiaron {amount} cantidades}}."
+    }
+  },
+  "planStock": {
+    "constructionTime": "Tiempo de construcción, en aceleraciones",
+    "researchTime": "Tiempo de investigación, en aceleraciones",
+    "minutesUnit": "min"
+  }
+}

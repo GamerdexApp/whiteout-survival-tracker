@@ -1,0 +1,373 @@
+{
+  "page": {
+    "title": "Eventi",
+    "subline": "{chief} · {details}"
+  },
+  "tabs": {
+    "label": "Viste degli eventi",
+    "calendar": "Calendario",
+    "mine": "I miei eventi",
+    "history": "Cronologia eventi"
+  },
+  "actions": {
+    "addDetails": "Aggiungi dettagli evento",
+    "addEvent": "Aggiungi evento"
+  },
+  "categories": {
+    "alliance": "Alleanza",
+    "solo": "Singolo",
+    "rookie": "Novizi",
+    "holiday": "Festività"
+  },
+  "gives": {
+    "rewards": "Solo ricompense",
+    "personal": "Classifica personale",
+    "alliance": "Classifica alleanza",
+    "both": "Entrambe le classifiche"
+  },
+  "weekdays": {
+    "short": {
+      "sunday": "Dom",
+      "monday": "Lun",
+      "tuesday": "Mar",
+      "wednesday": "Mer",
+      "thursday": "Gio",
+      "friday": "Ven",
+      "saturday": "Sab"
+    },
+    "initial": {
+      "sunday": "D",
+      "monday": "L",
+      "tuesday": "M",
+      "wednesday": "M",
+      "thursday": "G",
+      "friday": "V",
+      "saturday": "S"
+    }
+  },
+  "months": {
+    "january": "Gennaio",
+    "february": "Febbraio",
+    "march": "Marzo",
+    "april": "Aprile",
+    "may": "Maggio",
+    "june": "Giugno",
+    "july": "Luglio",
+    "august": "Agosto",
+    "september": "Settembre",
+    "october": "Ottobre",
+    "november": "Novembre",
+    "december": "Dicembre"
+  },
+  "monthsShort": {
+    "january": "Gen",
+    "february": "Feb",
+    "march": "Mar",
+    "april": "Apr",
+    "may": "Mag",
+    "june": "Giu",
+    "july": "Lug",
+    "august": "Ago",
+    "september": "Set",
+    "october": "Ott",
+    "november": "Nov",
+    "december": "Dic"
+  },
+  "format": {
+    "weekdayDay": "{weekday}, {date}",
+    "utcTime": "{time} UTC",
+    "dateTime": "{date}, {time}",
+    "range": "da {start} a {end}",
+    "length": {
+      "minutes": "{count, plural, one {{amount} min} other {{amount} min}}",
+      "hours": "{count, plural, one {{amount} ora} other {{amount} ore}}",
+      "days": "{count, plural, one {{amount} giorno} other {{amount} giorni}}",
+      "weeks": "{count, plural, one {{amount} settimana} other {{amount} settimane}}",
+      "months": "{count, plural, one {{amount} mese} other {{amount} mesi}}"
+    }
+  },
+  "repeat": {
+    "none": "Non si ripete",
+    "weekly": "Ogni settimana: {days}",
+    "weeklyAny": "Ogni settimana",
+    "every": {
+      "hours": "{count, plural, one {Ogni ora} other {Ogni {amount} ore}}",
+      "days": "{count, plural, one {Ogni giorno} other {Ogni {amount} giorni}}",
+      "weeks": "{count, plural, one {Ogni settimana} other {Ogni {amount} settimane}}",
+      "months": "{count, plural, one {Ogni mese} other {Ogni {amount} mesi}}"
+    }
+  },
+  "empty": {
+    "title": "Ancora nessun evento",
+    "description": "Aggiungi gli eventi a cui giochi. Imposta una volta data e ora di inizio, e il calendario e l'elenco dei prossimi restano aggiornati.",
+    "steps": {
+      "pick": {
+        "title": "Scegli un evento.",
+        "text": "Scegli tra gli eventi dei dati di gioco."
+      },
+      "start": {
+        "title": "Imposta l'inizio.",
+        "text": "Inserisci data e ora della prossima edizione. Alcuni eventi hanno due edizioni o durano più giorni."
+      },
+      "roll": {
+        "title": "Lascia fare all'app.",
+        "text": "Quando un'edizione finisce, la data successiva si compila dalla regola di ripetizione."
+      }
+    }
+  },
+  "calendar": {
+    "previous": "Mese precedente",
+    "next": "Mese successivo",
+    "today": "Oggi",
+    "zoneLabel": "Fuso orario",
+    "utc": "UTC",
+    "local": "Il mio orario",
+    "monthTitle": "{month} {year}",
+    "nameWithRun": "{name}, {run}",
+    "dayTail": "g{day}",
+    "chipText": "{name} {tail}"
+  },
+  "upcoming": {
+    "title": "Prossimi",
+    "empty": "Nessuna edizione nei prossimi 30 giorni.",
+    "now": "In corso",
+    "today": "Oggi",
+    "tomorrow": "Domani",
+    "inDays": "{count, plural, one {Tra {amount} giorno} other {Tra {amount} giorni}}",
+    "timeAndLength": "{time}, {length}"
+  },
+  "mine": {
+    "intro": "{count, plural, one {{amount} evento.} other {{amount} eventi.}} Quando un'edizione finisce, la data della successiva si aggiorna da sola in base alla regola di ripetizione, così il calendario mostra sempre cosa viene dopo.",
+    "run": "Edizione",
+    "rangeLine": "{range}, {time}",
+    "shortLine": "{when}, {length}",
+    "repeat": "Ripetizione: {rule}",
+    "coreTag": "Risultati negli Eventi principali",
+    "coreLink": "Apri Eventi principali",
+    "ended": "Terminato",
+    "logged": "Registrato",
+    "edit": "Modifica",
+    "remove": "Rimuovi"
+  },
+  "toast": {
+    "removedTitle": "{name} rimosso",
+    "removedMessage": "I risultati salvati restano nella Cronologia eventi.",
+    "undo": "Annulla",
+    "resultSavedTitle": "Risultato salvato",
+    "resultSavedMessage": "{name} è stato aggiunto alla Cronologia eventi."
+  },
+  "add": {
+    "title": "Aggiungi evento",
+    "description": "Scegli un evento dai dati di gioco",
+    "close": "Chiudi",
+    "searchLabel": "Cerca eventi",
+    "searchPlaceholder": "Cerca tra {amount} eventi",
+    "categoryLabel": "Categoria dell'evento",
+    "all": "Tutti",
+    "categoryTab": "{name}, {amount}",
+    "showing": "Mostrati {shown} eventi su {total}. Scegline uno per impostare data e ora di inizio.",
+    "none": "Nessun evento corrisponde alla ricerca.",
+    "noDuration": "Durata non presente nei dati di gioco",
+    "added": "Aggiunto",
+    "button": "Aggiungi",
+    "addNamed": "Aggiungi {name}",
+    "showMore": "Mostra altri"
+  },
+  "schedule": {
+    "description": "Imposta quando si svolge. Le edizioni successive si aggiornano da sole.",
+    "cancel": "Annulla",
+    "add": "Aggiungi evento",
+    "save": "Salva programma",
+    "howTitle": "Come si svolge l'evento",
+    "shape": {
+      "one": "Un giorno",
+      "several": "Più giorni",
+      "two": "Due edizioni per ciclo"
+    },
+    "shapeHint": {
+      "one": "Un'edizione di un giorno. Cambia la durata per un'edizione breve in minuti o ore.",
+      "several": "Un'edizione che dura più giorni.",
+      "two": "Due edizioni in ogni ciclo, come due stagioni o due giorni della settimana. Ogni edizione ha il proprio inizio, durata e nome."
+    },
+    "runTitle": "Edizione {number}",
+    "runSingle": "Edizione",
+    "name": "Nome",
+    "startDate": "Data di inizio",
+    "startTime": "Ora di inizio (UTC)",
+    "length": "Durata",
+    "unit": "Unità",
+    "runUnits": {
+      "minutes": "minuti",
+      "hours": "ore",
+      "days": "giorni"
+    },
+    "repeatTitle": "Ripetizione",
+    "repeatKind": {
+      "none": "Non si ripete",
+      "every": "Ogni",
+      "weekly": "Ogni settimana nei giorni"
+    },
+    "every": "Ogni",
+    "weekdays": "Giorni della settimana",
+    "repeatUnits": {
+      "hours": "ore",
+      "days": "giorni",
+      "weeks": "settimane",
+      "months": "mesi"
+    },
+    "gameSays": "Dati di gioco: {text}",
+    "gameSaysNoRule": "Dati di gioco: {text}",
+    "useSuggestion": "Usa il suggerimento",
+    "everyError": "Inserisci un numero maggiore di 0.",
+    "givesTitle": "Cosa dà l'evento",
+    "givesHint": "Impostato dai dati di gioco. Puoi cambiarlo. Decide cosa chiede il modulo del risultato.",
+    "previewTitle": "Cosa mostrerà il calendario",
+    "previewEmpty": "Inserisci una data e una durata valide per vedere le edizioni.",
+    "previewShort": "{range}, {time}",
+    "previewNote": "Quando un'edizione finisce, la sua data avanza secondo la regola di ripetizione. Puoi modificare qualsiasi data."
+  },
+  "result": {
+    "title": "Aggiungi dettagli evento",
+    "description": {
+      "participation": "Registra che hai partecipato e cosa hai ottenuto",
+      "milestones": "Punti e obiettivi raggiunti",
+      "ranking": "Punteggio, posizione e traguardi raggiunti",
+      "tier": "Grado della lega e piazzamento",
+      "waves": "Difficoltà, ondate, punti e posizioni",
+      "skipped": "Registra che hai saltato questa edizione"
+    },
+    "cancel": "Annulla",
+    "save": "Salva risultato",
+    "noEvents": "Aggiungi prima un evento. Si possono registrare solo gli eventi in I miei eventi, e gli Eventi principali si registrano in Eventi principali.",
+    "whichTitle": "Quale evento",
+    "event": "Evento",
+    "versionsTag": "Versioni",
+    "run": "Edizione",
+    "otherDate": "Un'altra data",
+    "runDate": "Data dell'edizione",
+    "runLong": "{range} ({length})",
+    "runNamed": "{when}, {name}",
+    "notLogged": "{run}, non ancora registrata",
+    "tookPartQuestion": "Hai partecipato?",
+    "tookPart": "Ho partecipato",
+    "skipped": "L'ho saltato",
+    "coreNote": "Sono elencati solo gli eventi che hai aggiunto. Gli Eventi principali si registrano in Eventi principali, non qui.",
+    "versionTitle": "Versione",
+    "versionKnown": "Gli obiettivi di questa versione sono nei dati, quindi vengono controllati dai tuoi punti.",
+    "versionUnknown": "Questa versione ha obiettivi con punti non ancora presenti nei dati. Controllali a mano.",
+    "participationTitle": "Questo evento non ha punteggio né classifica",
+    "participationText": "I dati di gioco elencano solo ricompense, quindi non c'è nulla da valutare. Registra che hai partecipato, le ricompense ottenute e una nota.",
+    "pointsFallback": "Punti",
+    "pointsReached": "{unit} raggiunti",
+    "pointsHint": "Totale a fine evento.",
+    "finalScore": "Punteggio finale ({unit})",
+    "finalScoreHint": "Il tuo totale di {unit} a fine evento.",
+    "rankingTitle": "Classifica",
+    "yourRank": "La tua posizione",
+    "allianceRank": "Posizione alleanza",
+    "rankGroup": "Gruppo di posizione",
+    "rankGroupsHint": "I gruppi di posizione vengono dai dati di gioco: {groups} e altri.",
+    "targetsTitle": "Obiettivi raggiunti, dai tuoi punti",
+    "targetsCount": "{reached} di {total} raggiunti",
+    "targetPoints": "{points} {unit}",
+    "pointsMissing": "{unit}: punti non ancora presenti nei dati",
+    "needsPurchase": "Richiede un acquisto di qualsiasi importo.",
+    "targetsHint": "Controllati dal punteggio. Obiettivi e ricompense vengono dai dati di gioco.",
+    "targetsHintUnknown": "Gli obiettivi con punti non ancora presenti nei dati non vengono mai controllati dal punteggio. Controllali a mano.",
+    "tierTitle": "Lega",
+    "tier": "Grado",
+    "placement": "Il tuo piazzamento nel gruppo",
+    "starChange": "Variazione di stelle, dai dati di gioco",
+    "stars": "{count, plural, one {{amount} stella} other {{amount} stelle}}",
+    "tiersHint": "Gradi: {tiers}.",
+    "allianceTitle": "Alleanza",
+    "outcome": "Esito dell'alleanza in questa edizione",
+    "outcomeHint": "Facoltativo. Vittoria, sconfitta o pareggio.",
+    "outcomes": {
+      "none": "Non impostato",
+      "won": "Vittoria",
+      "lost": "Sconfitta",
+      "drawn": "Pareggio"
+    },
+    "wavesTitle": "Difficoltà e ondate",
+    "difficulty": "Difficoltà giocata",
+    "difficultyFrom": "{name}, da {points} punti alleanza",
+    "wavesCleared": "Ondate superate, da 0 a {count}",
+    "wavesHint": "I dati di gioco elencano {count} ondate per {name}.",
+    "defenseTitle": "Punti difesa",
+    "yourPoints": "I tuoi punti",
+    "alliancePoints": "Punti alleanza",
+    "rewardLevel": "Livello di ricompensa raggiunto",
+    "rewardLevelNone": "Ancora nessuno",
+    "level": "Livello {level}",
+    "levelsHint": "I livelli richiedono sia punti personali sia punti alleanza, dai dati di gioco.",
+    "rankingsTitle": "Classifiche",
+    "notesTitle": "Note",
+    "rewards": "Ricompense ottenute",
+    "rewardsPlaceholder": "Per esempio 2 Hero Shards, 500 Gems",
+    "notes": "Note",
+    "notesPlaceholder": "Qualsiasi cosa da ricordare di questa edizione"
+  },
+  "history": {
+    "emptyTitle": "Ancora nessun risultato registrato",
+    "emptyText": "Premi Aggiungi dettagli evento per registrare cosa hai ottenuto in un'edizione. Risultati e andamenti compaiono qui.",
+    "eventFilter": "Evento",
+    "allEvents": "Tutti gli eventi",
+    "period": "Periodo",
+    "months3": "3 mesi",
+    "months6": "6 mesi",
+    "allTime": "Sempre",
+    "intro": "Ogni risultato che hai registrato, dal più recente. Gli Eventi principali si registrano in Eventi principali e qui non compaiono.",
+    "showing": "Mostrati {shown} risultati su {total}.",
+    "showingEvent": "{count, plural, one {Mostrato {amount} risultato per {name}.} other {Mostrati {amount} risultati per {name}.}}",
+    "noneInPeriod": "Nessun risultato in questo periodo.",
+    "showMore": "Mostra altri",
+    "colDate": "Data",
+    "colEvent": "Evento",
+    "colScore": "Punteggio",
+    "colRank": "Posizione",
+    "colAlliance": "Alleanza",
+    "colResult": "Risultato",
+    "colActions": "Azioni",
+    "none": "-",
+    "edit": "Modifica",
+    "editNamed": "Modifica il risultato di {name}",
+    "skipped": "Saltato",
+    "tierOnly": "{tier} {placement}",
+    "stars": "{count, plural, one {{amount} stella} other {{amount} stelle}}",
+    "waves": "{count, plural, one {{difficulty}, {amount} ondata} other {{difficulty}, {amount} ondate}}",
+    "targets": "{unit}, {reached} obiettivi su {total}",
+    "tookPart": "Ha partecipato",
+    "tookPartRewards": "Ha partecipato, {rewards}",
+    "rankText": "Posizione {rank}",
+    "allianceRankText": "alleanza {rank}",
+    "separator": " · ",
+    "defensePoints": "{score} punti difesa",
+    "scoreUnit": "{score} {unit}",
+    "noScore": "Nessun punteggio",
+    "trendTitle": "Andamento di {name}",
+    "trendScore": "{unit} a fine di ogni evento",
+    "trendRank": "La tua posizione a fine di ogni evento",
+    "metricLabel": "Misura dell'andamento",
+    "metricScore": "Punteggio",
+    "metricRank": "Posizione personale",
+    "chartLabel": "Grafico dell'andamento di {name}",
+    "best": "Migliore",
+    "average": "Media",
+    "latest": "Ultimo",
+    "change": "Variazione",
+    "events": "{count, plural, one {{amount} evento} other {{amount} eventi}}",
+    "changeVs": "rispetto a {month}",
+    "changePercentVs": "{percent}% rispetto a {month}",
+    "noPrevious": "Nessun risultato precedente",
+    "noTrend": "Questo evento non ha punteggio o posizione da mostrare nel grafico. I suoi risultati sono nell'elenco qui sotto."
+  },
+  "cycles": {
+    "title": "Cicli degli eventi principali",
+    "hint": "SvS, Alliance Showdown e King of Icefield seguono un ciclo fisso. Imposta una volta il prossimo inizio e si ripetono nel calendario.",
+    "next": "Prossimo {date}, si ripete {repeat}",
+    "notSet": "Non impostato",
+    "set": "Imposta ciclo",
+    "edit": "Modifica ciclo"
+  }
+}

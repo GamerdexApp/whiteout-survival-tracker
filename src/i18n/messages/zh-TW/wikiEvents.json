@@ -1,0 +1,145 @@
+{
+    "line": "{events} 個活動：{alliance} 個聯盟、{solo} 個個人、{rookie} 個新手和 {holiday} 個節慶。資料包有的，會列出階段、計分、獎勵、提示、商店和排名。",
+    "list": {
+        "title": "活動",
+        "showing": "顯示 {shown} / {total}",
+        "search": "搜尋",
+        "searchPlaceholder": "依名稱搜尋活動",
+        "scoringFilter": "計分",
+        "categoryLabel": "分類",
+        "all": "全部",
+        "table": "活動",
+        "event": "活動",
+        "category": "分類",
+        "frequency": "頻率（自由文字）",
+        "duration": "時長（自由文字）",
+        "scoringRows": "計分列",
+        "noScoringRows": "沒有計分列",
+        "emptyTitle": "沒有符合的活動",
+        "emptyDescription": "請更改搜尋、分類或計分。"
+    },
+    "category": {
+        "alliance": "聯盟",
+        "solo": "個人",
+        "rookie": "新手",
+        "holiday": "節慶"
+    },
+    "scoring": {
+        "any": "任何計分",
+        "ranking": "排名",
+        "tier": "階級",
+        "milestones": "里程碑",
+        "waves": "波數",
+        "participation": "參與"
+    },
+    "parts": {
+        "days": "{count, plural, other {{amount} 天}}",
+        "tiers": "{count, plural, other {{amount} 個階級}}",
+        "missions": "{count, plural, other {{amount} 項任務}}",
+        "waves": "{count, plural, other {{amount} 波}}",
+        "versions": "{count, plural, other {{amount} 個版本}}",
+        "levels": "{count, plural, other {{amount} 級}}"
+    },
+    "detail": {
+        "title": "詳細資料",
+        "category": "分類",
+        "frequency": "頻率",
+        "duration": "時長",
+        "summary": "摘要",
+        "requirements": "條件",
+        "scoring": "計分",
+        "noRequirements": "無"
+    },
+    "phases": {
+        "title": "階段",
+        "table": "活動階段",
+        "phase": "階段",
+        "description": "說明"
+    },
+    "scoringRows": {
+        "title": "計分列：{name}",
+        "table": "計分行動",
+        "action": "行動",
+        "points": "積分",
+        "victoryPoints": "{amount} 勝利積分",
+        "milestones": "{name}的里程碑",
+        "allianceMilestones": "{name}的聯盟里程碑"
+    },
+    "missions": {
+        "title": "任務",
+        "table": "活動任務",
+        "mission": "任務",
+        "group": "組別",
+        "points": "積分",
+        "rewards": "獎勵"
+    },
+    "tiers": {
+        "title": "階級",
+        "table": "活動階級",
+        "tier": "階級",
+        "score": "目標",
+        "scoreValue": "{amount} {unit}",
+        "scoreValuePoints": "{amount} 分",
+        "rewards": "獎勵",
+        "note": "備註"
+    },
+    "rankings": {
+        "title": "排名獎勵",
+        "personal": "個人排名獎勵",
+        "alliance": "聯盟排名獎勵",
+        "basedOn": "依{basis}的排名獎勵",
+        "table": "排名獎勵",
+        "rank": "名次",
+        "starChange": "星數變化",
+        "rewards": "獎勵"
+    },
+    "rewards": {
+        "title": "獎勵",
+        "partial": "這份獎勵清單並不完整。",
+        "amountName": "{amount} {name}"
+    },
+    "pointLevels": {
+        "title": "積分等級",
+        "table": "積分等級",
+        "level": "等級",
+        "personal": "個人積分",
+        "alliance": "聯盟積分",
+        "rewards": "獎勵"
+    },
+    "waves": {
+        "title": "波數",
+        "table": "進攻波數",
+        "wave": "波",
+        "target": "目標",
+        "rule": "規則",
+        "city": "城市",
+        "headquarters": "總部"
+    },
+    "zones": {
+        "title": "區域",
+        "table": "活動區域",
+        "zone": "區域",
+        "days": "天數",
+        "statSources": "屬性來源",
+        "unlock": "解鎖"
+    },
+    "shop": {
+        "title": "商店",
+        "titleNamed": "商店：{name}",
+        "table": "商店商品",
+        "offer": "商品",
+        "cost": "花費",
+        "costValue": "{amount} {currency}",
+        "limit": "限購",
+        "contents": "內容"
+    },
+    "versions": {
+        "title": "{name}",
+        "missions": "任務",
+        "chests": "寶箱"
+    },
+    "tips": {
+        "title": "提示"
+    },
+    "recordLine": "{category}活動，含階段、計分、獎勵和排名。"
+}

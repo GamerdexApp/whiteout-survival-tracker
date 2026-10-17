@@ -1,0 +1,239 @@
+{
+    "page": {
+        "title": "Experten"
+    },
+    "view": {
+        "subline": "{chief} · Experten der Dawn Academy, {total} im Spiel",
+        "ghost": "Experten"
+    },
+    "common": {
+        "plan": "Plan",
+        "generation": "Generation {generation}",
+        "unknown": "Unbekannt",
+        "and": "{first} und {last}",
+        "expertCount": "{count, plural, one {{amount} Experte} other {{amount} Experten}}"
+    },
+    "stats": {
+        "recruited": "Rekrutierte Experten",
+        "recruitedValue": "{count} von {total}",
+        "powerNow": "Expertenmacht jetzt, nur rekrutierte",
+        "powerAtMax": "Macht auf Maximum, alle {total}",
+        "highest": "Höchste Affinität",
+        "highestValue": "{name} bei {affinity}",
+        "highestNone": "Keiner rekrutiert"
+    },
+    "toolbar": {
+        "searchLabel": "Experten suchen",
+        "searchPlaceholder": "Experten suchen",
+        "filters": "Filter",
+        "emptyTitle": "Keine passenden Experten",
+        "emptyDescription": "Ändere die Suche oder die Filter, um mehr Experten zu sehen.",
+        "reset": "Filter zurücksetzen",
+        "status": "{shown} von {total} angezeigt. Ziele sind hier nur lesbar und werden im Plan gesetzt. Bei einer durch 10 teilbaren Stufe zählt der Bonus der vorherigen Stufe, bis der Experte aufsteigt. Jede Änderung wird sofort gespeichert.",
+        "lockedNote": "{count} gesperrt bis zu einem späteren Serverstag."
+    },
+    "toast": {
+        "notRecruitedTitle": "{name} ist nicht rekrutiert",
+        "notRecruitedMessage": "Die Stufen bleiben gespeichert und gelten wieder, sobald du Rekrutiert einschaltest.",
+        "undo": "Rückgängig"
+    },
+    "card": {
+        "recruited": "Rekrutiert",
+        "recruitedLabel": "{expert} rekrutiert",
+        "summary": "{title} · {specialty} · {generation}",
+        "affinityLevel": "Affinitätsstufe",
+        "affinityLabel": "Affinitätsstufe {expert}",
+        "affinityDisplay": "{level} / {max}",
+        "affinityProgress": "Affinitätsfortschritt {expert}",
+        "goal": "Ziel {goal}",
+        "advanced": "Aufgestiegen",
+        "notAdvanced": "Nicht aufgestiegen",
+        "advancedLabel": "{expert} aufgestiegen auf Stufe {level}",
+        "relationship": "Beziehungsstufe",
+        "affinityAvailable": "Affinität verfügbar",
+        "affinityAvailableLabel": "Affinitätspunkte von {expert}",
+        "affinityOf": "von {need} für Stufe {level}",
+        "bonusTitle": "Grundbonus jetzt",
+        "bonusNow": "{amount}% {stats}",
+        "bonusOwnLevel": "Stufe {level} ist kein Vielfaches von 10, daher zählt ihr eigener Bonus.",
+        "bonusAdvanced": "Stufe {level} ist aufgestiegen, daher zählt ihr eigener Bonus.",
+        "bonusNotAdvanced": "Stufe {level} ist nicht aufgestiegen, daher zählt der Bonus von Stufe {counted}.",
+        "bonusAtMax": "Auf Stufe 100: {amount}%.",
+        "feeds": "Speist",
+        "bonuses": "Boni",
+        "nextAdvancement": "Nächster Aufstieg: Stufe {level}, {sigils} Sigils",
+        "allAdvanced": "Alle Aufstiege sind erledigt.",
+        "skills": "Fähigkeiten",
+        "skillLabel": "Stufe {skill} von {expert}",
+        "skillDisplay": "{level} / {max}",
+        "expAvailable": "EXP verfügbar",
+        "expAvailableLabel": "EXP {skill} von {expert}",
+        "expOf": "von {need} für Stufe {level}",
+        "maxLevel": "Maximale Stufe, keine EXP nötig",
+        "talent": "Talent: {name}",
+        "talentLevel": "Stufe {level} von {max}",
+        "talentFollows": "Folgt {relationship}. {effect}.",
+        "power": "Macht {now} von {max}",
+        "derived": "Abgeleitet",
+        "notRecruitedHint": "Nicht rekrutiert. Rekrutiere diesen Experten in Tundra Trek und schalte dann Rekrutiert ein.",
+        "recruitmentCost": "Rekrutierungskosten: {cost}",
+        "maxPower": "Maximale Macht {max}",
+        "buffs": "Stärkt {stats}",
+        "expEnough": "Genug für Stufe {level}",
+        "affinityEnough": "Genug für Stufe {level}",
+        "skillLocked": "Nicht freigeschaltet. Erhöhe sie auf Stufe 1, um sie freizuschalten.",
+        "sigilsOwned": "Sigils im Besitz",
+        "sigilsOwnedLabel": "Sigils von {expert} im Besitz",
+        "sigilsHint": "Dieselbe Anzahl wie das Sigil auf der Ressourcen-Seite."
+    },
+    "filtersFlyout": {
+        "title": "Filter",
+        "description": "Grenze die Expertenliste ein und wähle die Reihenfolge.",
+        "generation": "Generation",
+        "all": "Alle",
+        "show": "Anzeigen",
+        "order": "Reihenfolge",
+        "reset": "Zurücksetzen",
+        "showButton": "{experts} zeigen",
+        "notSaved": "Filter werden nicht gespeichert.",
+        "showOptions": {
+            "everything": "Alle",
+            "recruited": "Nur rekrutierte",
+            "notRecruited": "Nur nicht rekrutierte"
+        },
+        "orderOptions": {
+            "generation": "Generation",
+            "affinity": "Affinitätsstufe",
+            "power": "Macht",
+            "name": "Name"
+        }
+    },
+    "plan": {
+        "title": "Experten planen",
+        "description": "Books of Knowledge, Sigils, Fähigkeits-EXP und Affinitätspunkte für Affinitäts- und Fähigkeitsziele.",
+        "saved": "Plan gespeichert {date}",
+        "close": "Schließen",
+        "save": "Plan speichern",
+        "exportButton": "In Kern-Events exportieren",
+        "exportNothing": "Der Plan braucht keine Books oder Sigils zum Exportieren.",
+        "export": {
+            "books": "Books of Knowledge",
+            "sigils": "Experten-Sigils",
+            "exp": "Fähigkeits-EXP",
+            "expReason": "Kein Event wertet Fähigkeits-EXP."
+        },
+        "noExperts": "Noch keine Experten im Plan. Füge einen rekrutierten Experten hinzu, um seine Ziele zu setzen.",
+        "add": {
+            "title": "Experten hinzufügen",
+            "selectLabel": "Experte zum Hinzufügen",
+            "button": "Experten hinzufügen",
+            "allIn": "Jeder rekrutierte Experte ist im Plan.",
+            "noneRecruited": "Rekrutiere einen Experten auf der Seite, um ihn zu planen."
+        },
+        "block": {
+            "remove": "Entfernen",
+            "removeLabel": "{expert} aus dem Plan entfernen",
+            "part": "Teil",
+            "current": "Aktuell",
+            "goalHeading": "Ziel",
+            "affinity": "Affinitätsstufe",
+            "affinityHeld": "Affinität verfügbar {amount}",
+            "expHeld": "EXP verfügbar {amount}",
+            "currentLevel": "Stufe {level}",
+            "currentAffinity": "{level}, aufgestiegen",
+            "currentAffinityPlain": "{level}",
+            "affinityGoalLabel": "Affinitätsziel {expert}",
+            "skillGoalLabel": "Ziel {skill} von {expert}",
+            "advanceAtGoal": "Aufstieg auf Stufe {level}",
+            "advanceAtGoalLabel": "{expert} steigt am Ziel auf"
+        },
+        "checks": {
+            "affinity": "Affinitätspunkte",
+            "learning": "Fähigkeits-EXP als Lern-Beschleuniger",
+            "minutesUnit": "Min"
+        },
+        "stock": {
+            "sigils": "Der Plan braucht {total} Sigils. Deine Experten-Sigils decken {own} davon, daher müssen {common} aus Common Expert Sigils kommen. Jedes Experten-Sigil, das du hast, zählt nur für diesen Experten.",
+            "books": "Der Plan braucht {amount} Books of Knowledge für die Fähigkeitsstufen.",
+            "affinity": "Der Plan braucht {needed} Affinitätspunkte. Was du auf den Expertenkarten hast, deckt {held}, daher sind noch {left} zu holen. Das Paket hat kein Affinitäts-Item, daher wird nichts gegen einen Bestand geprüft.",
+            "learning": "Der Plan braucht {exp} Fähigkeits-EXP. Deine Fähigkeiten halten {held}, daher müssen {left} aus Lern-Beschleunigern kommen. Eine Minute Lernen gibt {rate} EXP, das sind {minutes} Minuten."
+        },
+        "byExpert": {
+            "title": "Nach Experte",
+            "sigils": "Sigils: {needed} nötig, {own} durch dein Sigil von {name} gedeckt, {common} aus Common Expert Sigils",
+            "affinity": "Affinität: {needed} nötig, {held} verfügbar, {left} noch zu holen",
+            "exp": "Fähigkeits-EXP: {needed} nötig, {held} verfügbar, {left} noch zu holen"
+        },
+        "result": {
+            "title": "Ergebnis",
+            "derived": "Abgeleitet",
+            "books": "Books of Knowledge",
+            "sigils": "Sigils",
+            "exp": "Fähigkeits-EXP",
+            "affinity": "Affinitätspunkte",
+            "advancements": "Aufstiege",
+            "skillLevels": "Fähigkeitsstufen",
+            "affinityLevels": "Affinitätsstufen",
+            "heads": {
+                "expert": "Experte",
+                "books": "Books",
+                "sigils": "Sigils",
+                "exp": "EXP",
+                "levels": "Stufen",
+                "advancements": "Aufst.",
+                "affinity": "Affinität"
+            },
+            "empty": "Füge einen Experten hinzu und erhöhe ein Ziel, um das Ergebnis zu sehen.",
+            "tableLabel": "Ergebnistabelle des Plans"
+        }
+    },
+    "learning": {
+        "title": "Lernen",
+        "note": "Eine Fähigkeit lernt gleichzeitig. Abschließen fügt der Fähigkeit die EXP hinzu.",
+        "idle": "Nichts wird gelernt. Starte eine Sitzung, um einer Fähigkeit EXP hinzuzufügen.",
+        "startButton": "Lernen starten",
+        "slotLabel": "Lernen, eine Sitzung nach der anderen",
+        "jobTitle": "{expert}, {skill}, {session}",
+        "manageFinishText": "Upgrade abschließen fügt der Fähigkeit die EXP der Sitzung hinzu, gibt die Lern-Warteschlange frei und fügt die Sitzung deinem Verlauf hinzu. Bei null Restzeit zeigt die Karte Bereit zum Abschließen. Nichts wird von selbst fertig, weil du Beschleuniger genutzt haben könntest.",
+        "flyout": {
+            "title": "Lernen starten",
+            "description": "Markiere eine Lernsitzung für eine Expertenfähigkeit als laufend",
+            "expert": "Experte",
+            "skill": "Fähigkeit",
+            "skillOption": "{name}, Stufe {level} von {max}",
+            "session": "Sitzung",
+            "sessionOption": "{label}, {exp} EXP",
+            "sessionHint": "Eine Sitzung bringt 60 EXP pro Minute. Die Sitzungen sind die des Spiels.",
+            "expEarned": "Verdiente EXP",
+            "heldAfter": "EXP danach",
+            "tooMuch": "Die Fähigkeit kann nur noch {room} EXP aufnehmen, der Rest geht verloren.",
+            "whenStarted": "Wann hat es begonnen?",
+            "modes": {
+                "now": "Startet jetzt",
+                "already": "Schon gestartet"
+            },
+            "timeLeftHours": "Restzeit, Stunden",
+            "ends": "Endet",
+            "startedHint": "Nutze Schon gestartet, wenn die Sitzung im Spiel läuft. Gib die Zeit ein, die es anzeigt.",
+            "nothingToLearn": "Gerade kann keine Fähigkeit lernen. Rekrutiere einen Experten und schalte eine Fähigkeit frei, die nicht auf Höchststufe ist.",
+            "busy": "Eine Sitzung läuft bereits. Schließe sie unter Verwalten ab oder brich sie ab.",
+            "cancel": "Abbrechen",
+            "start": "Lernen starten"
+        },
+        "toasts": {
+            "started": {
+                "title": "Lernen gestartet",
+                "message": "{what}."
+            },
+            "finished": {
+                "title": "{what} gelernt",
+                "message": "Die EXP wurden der Fähigkeit und dem Verlauf hinzugefügt."
+            },
+            "cancelled": {
+                "title": "{what} abgebrochen",
+                "message": "Die Fähigkeit behält die EXP, die sie hatte."
+            },
+            "undo": "Rückgängig"
+        }
+    }
+}

@@ -1,0 +1,26 @@
+{
+  "line": "{types} tipos de tropa con {tiers} rangos cada uno. Solo es referencia, nada de aquí se guarda en tu jefe.",
+  "tiers": {
+    "heading": "Rangos de tropas",
+    "meta": "{types} tipos por {tiers} rangos = {rows} filas",
+    "typeLabel": "Tipo de tropa",
+    "tableLabel": "Rangos de {type}"
+  },
+  "detail": {
+    "heading": "Detalle del registro",
+    "meta": "Rango {tier}, los tres tipos",
+    "tableLabel": "Rango {tier} por tipo de tropa"
+  },
+  "columns": {
+    "tier": "Rango",
+    "type": "Tipo",
+    "cost": "Costo por tropa",
+    "topCost": "Costo del rango",
+    "time": "Tiempo de entrenamiento",
+    "promotion": "Costo de ascenso"
+  },
+  "cells": {
+    "tier": "Rango {tier}",
+    "none": "Ninguno"
+  }
+}

@@ -1,0 +1,70 @@
+{
+    "line": "{experts} Experten und {relationships} Beziehungsstufen. Nur Referenz, hier wird nichts gespeichert.",
+    "roster": {
+        "title": "Experten",
+        "count": "{shown} von {total} Experten",
+        "search": "Suche",
+        "searchPlaceholder": "{count} Experten nach Name, Titel oder Spezialgebiet suchen",
+        "generation": "Generation",
+        "all": "Alle",
+        "empty": "Kein Experte passt zu diesen Filtern.",
+        "generationValue": "Generation {generation}",
+        "unlock": "Freischaltung: Serverstag {days}",
+        "unlockUnknown": "Freischaltung:",
+        "unreleased": "Noch nicht erschienen"
+    },
+    "detail": {
+        "subline": "{title} · Spezialgebiet {specialty} · Generation {generation}",
+        "baseBonus": "Basis: {bonus}",
+        "bonus": "{stat} {value}",
+        "percentValue": "{value}%",
+        "skills": "Fähigkeiten",
+        "talent": "Talent, max. Stufe {level}",
+        "affinityLevels": "Affinitätsstufen",
+        "baseBonusLabel": "Grundbonus",
+        "unlock": "Wird an Serverstag {days} freigeschaltet"
+    },
+    "skills": {
+        "title": "Fähigkeiten und Talent",
+        "columns": {
+            "skill": "Fähigkeit",
+            "max": "Max",
+            "effect": "Effekt",
+            "books": "Books bis Max",
+            "exp": "EXP bis Max"
+        },
+        "talent": "{name} (Talent)",
+        "none": "Keine",
+        "selectHint": "Wähle eine Fähigkeit, um die Details zu sehen."
+    },
+    "skillLevels": {
+        "title": "Tabelle der Fähigkeitsstufen",
+        "meta": "{name}, Stufe 1 bis {max}",
+        "level": "Stufe {level}",
+        "columns": {
+            "level": "Stufe",
+            "exp": "EXP",
+            "books": "Books"
+        },
+        "none": "Keine"
+    },
+    "affinity": {
+        "title": "Affinitätsstufen",
+        "level": "Stufe {level}",
+        "columns": {
+            "level": "Stufe",
+            "required": "Nötige Affinität",
+            "bonus": "Wertebonus",
+            "affinityPower": "Affinitätsmacht",
+            "levelPower": "Stufenmacht",
+            "advancement": "Aufstiegskosten"
+        },
+        "noAdvancement": "Kein Aufstieg",
+        "startNote": "Die nötige Affinität für Stufe 1 ist ein Startwert von {start}. Ab Stufe 2 ist der Betrag der Preis, um diese Stufe zu erreichen."
+    },
+    "relationships": {
+        "title": "Beziehungsstufen",
+        "fromLevel": "ab Stufe {level}"
+    },
+    "recordLine": "{title}, Spezialgebiet {specialty}, Generation {generation}. Nur Referenz, hier wird nichts gespeichert."
+}

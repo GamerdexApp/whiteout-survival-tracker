@@ -1,0 +1,46 @@
+{
+  "line": "As {missions} missões diárias do jogo com todos os níveis conhecidos, as recompensas da barra de atividade e as tarefas de rotina.",
+  "missionCount": "{count, plural, one {{amount} missão} other {{amount} missões}}",
+  "tabs": {
+    "label": "Diárias",
+    "missions": "Missões do jogo",
+    "routine": "Tarefas de rotina"
+  },
+  "totals": {
+    "title": "Totais de Atividade",
+    "missions": "Missões do jogo",
+    "levelOne": "Nível 1 de todas as missões",
+    "allLevels": "Todos os níveis conhecidos",
+    "topReward": "Nível da recompensa máxima",
+    "explanation": "Uma missão soma a Atividade de cada nível feito, até ao nível atingido. O nível 1 das {missions} missões dá {levelOne} de Atividade. Todos os níveis conhecidos das {missions} missões dão {allLevels}."
+  },
+  "bar": {
+    "title": "Recompensas da barra de atividade",
+    "activeness": "Atividade",
+    "rewards": "Recompensas"
+  },
+  "missions": {
+    "title": "Missões do jogo",
+    "summary": "{missions}, {levels}",
+    "levelCount": "{count, plural, one {{amount} nível conhecido} other {{amount} níveis conhecidos}}",
+    "level": "Nível",
+    "task": "Tarefa",
+    "target": "Objetivo",
+    "activeness": "Atividade",
+    "otherRewards": "Outras recompensas",
+    "levelLabel": "N{level}",
+    "sumOne": "1 nível: {total} de Atividade",
+    "sumMany": "{count} níveis: {parts} = {total} de Atividade",
+    "plus": "+{amount}",
+    "noOtherRewards": "Nenhuma"
+  },
+  "routine": {
+    "title": "Tarefas de rotina",
+    "count": "{count, plural, one {{amount} tarefa} other {{amount} tarefas}}"
+  },
+  "missing": {
+    "title": "Ainda não está nos dados",
+    "levels": "Outros níveis de missões. Cada missão tem de {min} a {max} níveis conhecidos. Os níveis mais altos ainda não estão no pacote de dados, por isso os totais podem crescer.",
+    "reset": "Hora de reposição diária. O pacote de dados não tem. O tracker usa a sua predefinição de {time} UTC e indica-a como predefinição da aplicação."
+  }
+}

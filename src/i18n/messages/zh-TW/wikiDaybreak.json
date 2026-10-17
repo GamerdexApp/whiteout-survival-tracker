@@ -1,0 +1,69 @@
+{
+    "line": "Lumber Camp 和 Tree of Life 的等級表，以及依分類列出的 {decorations} 個裝飾，含花費、繁榮度和增益。",
+    "lumberCamp": {
+        "title": "Lumber Camp",
+        "levels": "{count, plural, other {{amount} 級}}",
+        "table": "Lumber Camp 等級",
+        "level": "等級",
+        "workers": "工人",
+        "perSecond": "每秒",
+        "treeLevel": "Tree 等級",
+        "lifeEssence": "Life Essence"
+    },
+    "tree": {
+        "title": "Tree of Life",
+        "table": "Tree of Life 等級",
+        "level": "等級",
+        "prosperity": "繁榮度",
+        "lifeEssence": "Life Essence",
+        "perHour": "每小時",
+        "buff": "增益"
+    },
+    "decorations": {
+        "title": "裝飾",
+        "showing": "顯示 {shown} / {total}",
+        "search": "搜尋",
+        "searchPlaceholder": "依名稱或增益搜尋裝飾",
+        "categoryLabel": "分類",
+        "all": "全部",
+        "costFilter": "花費類型",
+        "table": "裝飾",
+        "name": "裝飾",
+        "category": "分類",
+        "limit": "上限",
+        "levels": "等級數",
+        "cost": "花費",
+        "prosperityAtMax": "滿級繁榮度",
+        "buffAtMax": "滿級增益",
+        "emptyTitle": "沒有符合的裝飾",
+        "emptyDescription": "請更改搜尋、分類或花費類型。"
+    },
+    "costFilter": {
+        "any": "任何花費",
+        "lifeEssence": "Life Essence",
+        "items": "資源",
+        "limited": "限量",
+        "unknown": "資料中沒有花費"
+    },
+    "cost": {
+        "lifeEssence": "{amount} Life Essence",
+        "limited": "無，限量裝飾"
+    },
+    "detail": {
+        "title": "詳細資料",
+        "category": "分類",
+        "limit": "上限",
+        "cost": "花費",
+        "levels": "等級數",
+        "image": "圖片",
+        "imageMissing": "無",
+        "levelsTitle": "{name}的等級",
+        "levelsMeta": "{count, plural, other {{amount} 級}}",
+        "levelsTable": "裝飾的等級",
+        "level": "等級",
+        "levelCost": "花費",
+        "prosperity": "繁榮度",
+        "buff": "增益",
+        "noLevels": "資料中沒有這個裝飾的等級表。"
+    }
+}

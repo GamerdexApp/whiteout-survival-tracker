@@ -1,0 +1,95 @@
+{
+    "hoursMinutes": {
+        "hours": "時間",
+        "minutes": "分"
+    },
+    "jobCard": {
+        "idle": "待機中",
+        "progress": "{title}の進行状況",
+        "ends": "{date}に完了",
+        "manage": "管理",
+        "finish": "完了"
+    },
+    "timeLeftPill": {
+        "manage": "{label}、{timeLeft}。アップグレードを管理"
+    },
+    "manage": {
+        "fallbackTitle": "アップグレードを管理",
+        "description": "実行中のアップグレードを管理します",
+        "close": "閉じる",
+        "finish": "アップグレードを完了",
+        "progress": "アップグレードの進行状況",
+        "started": "{date}に開始",
+        "ends": "{date}に完了",
+        "speedup": {
+            "title": "スピードアップを使用",
+            "minutesUsed": "使用した分数",
+            "apply": "適用",
+            "timeLeftAfter": "適用後の残り時間",
+            "hint": "どの種類のスピードアップでも、その分数が残り時間から引かれます。"
+        },
+        "setTime": {
+            "title": "残り時間を設定",
+            "button": "残り時間を設定",
+            "hint": "ゲームの表示と時間が異なるときに使います。"
+        },
+        "done": {
+            "title": "完了時",
+            "cancel": "このアップグレードをキャンセル"
+        }
+    },
+    "planStock": {
+        "title": "足りていますか？",
+        "shortCount": "{total}件中{short}件が不足",
+        "description": "プランが在庫から使う量を、所持数と照らし合わせて確認します。プラン全体は下の結果にあります。",
+        "enough": "十分",
+        "notEnough": "不足",
+        "covered": "{name}は足りています",
+        "available": "所持 {amount}",
+        "needed": "必要 {amount}",
+        "leftOver": "{amount}余ります",
+        "shortBy": "{amount}不足",
+        "stillNeeded": "プラン全体にまだ必要な分: {list}。",
+        "openResources": "資源を開く"
+    },
+    "start": {
+        "title": "アップグレードを開始",
+        "cancel": "キャンセル",
+        "nothingToStart": "今は開始できるものがありません。すべての項目が最高レベル、ロック中、またはアップグレード中です。",
+        "powerGained": "獲得戦力",
+        "packageTime": "パッケージの時間",
+        "unknown": "不明",
+        "readOnly": "読み取り専用",
+        "openBonuses": "ボーナスを開く",
+        "yourTime": "あなたの時間",
+        "timeHint": "ボーナスページの速度だけが反映されます。ゲームの表示と異なる場合は、「開始のタイミング」で変更してください。",
+        "allBusy": "ここはすべて使用中です。空きが出るまで、アップグレードの開始はオフです。",
+        "whenStarted": "開始のタイミング",
+        "timeLeftHours": "残り時間（時間）",
+        "ends": "完了",
+        "startedHint": "ゲームに表示されている時間を入力するには「開始済み」を選んでください。完了時刻はそこから計算されます。",
+        "takeCost": {
+            "title": "コストを資源から引く",
+            "hint": "上のコストを在庫から差し引きます。",
+            "enough": "すべての資源が足りています。",
+            "short": "{names}が不足しています。開始はできますが、在庫は0で止まります。"
+        },
+        "modes": {
+            "now": "今すぐ開始",
+            "already": "開始済み"
+        }
+    },
+    "researchQueues": {
+        "label": "{name}、{tabs}",
+        "main": {
+            "name": "研究キュー",
+            "tabs": "成長、経済、戦闘",
+            "shortName": "研究"
+        },
+        "warAcademy": {
+            "name": "War Academyキュー",
+            "tabs": "T11とT12",
+            "shortName": "War Academy"
+        }
+    }
+}

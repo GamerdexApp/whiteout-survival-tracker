@@ -1,0 +1,262 @@
+{
+  "page": {
+    "title": "Heróis"
+  },
+  "view": {
+    "tabsLabel": "Heróis",
+    "heroesTab": "Heróis",
+    "gearTab": "Equipamento de herói",
+    "heroesSubline": "{chief} · {owned} de {total} obtidos",
+    "gearSubline": "{chief} · {count, plural, one {{amount} conjunto de equipamento} other {{amount} conjuntos de equipamento}}"
+  },
+  "common": {
+    "owned": "Obtido",
+    "ownedLabel": "{hero} obtido",
+    "starLabel": "Estrela de {hero}",
+    "levelLabel": "Nível de {hero}",
+    "talentLabel": "Talento de {hero}",
+    "skillLabel": "{hero} {skill}",
+    "weaponLevelLabel": "Nível de {weapon} de {hero}",
+    "shardsOwnedLabel": "Fragmentos de {hero} obtidos",
+    "starAndTier": "Estrela e tier",
+    "level": "Nível",
+    "noGoal": "Sem objetivo",
+    "shards": "Fragmentos",
+    "totalPower": "Poder total",
+    "unknown": "Desconhecido",
+    "plan": "Plano",
+    "generation": "Ger. {generation}",
+    "exploration": "Exploration",
+    "expedition": "Expedition",
+    "talent": "Talento",
+    "maxLevelSuffix": "/ {max}",
+    "heroCount": "{count, plural, one {{amount} herói} other {{amount} heróis}}"
+  },
+  "goalText": {
+    "to": "para {goal}"
+  },
+  "card": {
+    "summary": "{rarity} · {heroClass} · {generation}",
+    "talentRow": "Talento {name}",
+    "shardsOf": "de {needed}",
+    "enoughShards": " Fragmentos suficientes",
+    "shortBy": " Faltam {amount}",
+    "gearSet": "Conjunto de equipamento",
+    "notOwnedHint": "Ativar Obtido para registar estrela, nível e habilidades.",
+    "details": "Detalhes"
+  },
+  "tab": {
+    "stats": {
+      "generations": "Gerações desbloqueadas",
+      "generationsValue": "0 a {max}",
+      "heroesOwned": "Heróis obtidos entre os desbloqueados",
+      "legendaryOwned": "Legendary obtidos entre os desbloqueados",
+      "atMaxLevel": "No nível 80",
+      "heroPower": "Poder dos heróis",
+      "heroPowerUnknown": "Poder dos heróis, {amount} Desconhecidos de fora",
+      "withGoal": "Com objetivo"
+    },
+    "search": {
+      "label": "Pesquisar heróis",
+      "placeholder": "Pesquisar {amount} heróis por nome"
+    },
+    "filters": "Filtros",
+    "maxOut": "Maximizar",
+    "status": "A mostrar {shown} de {total} heróis. As gerações 0 a {max} estão desbloqueadas neste chefe. Aqui os objetivos são só de leitura e definem-se no Plano.",
+    "empty": {
+      "title": "Nenhum herói corresponde",
+      "description": "Alterar a pesquisa ou repor os filtros para ver todos os heróis.",
+      "reset": "Repor"
+    },
+    "showMore": "Mostrar mais, {amount} {count, plural, one {herói} other {heróis}}",
+    "toast": {
+      "notOwnedTitle": "{name} não obtido",
+      "notOwnedMessage": "A estrela, o nível e as habilidades ficam guardados para quando Obtido voltar a ser ativado.",
+      "undo": "Anular",
+      "maxedTitle": "Heróis maximizados",
+      "maxedMessage": "{heroes} atualizados."
+    }
+  },
+  "filtersFlyout": {
+    "title": "Filtros",
+    "description": "Escolher que heróis a página mostra",
+    "reset": "Repor",
+    "show": "Mostrar {heroes}",
+    "all": "Todos",
+    "generation": "Geração",
+    "rarity": "Raridade",
+    "heroClass": "Classe",
+    "ownership": "Posse",
+    "order": "Ordem",
+    "notSaved": "Os filtros não são guardados.",
+    "rarities": {
+      "Legendary": "Legendary",
+      "Epic": "Epic",
+      "Rare": "Rare"
+    },
+    "classes": {
+      "Infantry": "Infantry",
+      "Lancer": "Lancer",
+      "Marksman": "Marksman"
+    },
+    "ownershipOptions": {
+      "all": "Todos",
+      "owned": "Obtidos",
+      "notOwned": "Não obtidos"
+    },
+    "orderOptions": {
+      "owned": "Obtidos primeiro, depois a geração mais recente",
+      "generation": "Geração, mais recente primeiro",
+      "name": "Nome, A a Z",
+      "power": "Poder total, maior primeiro"
+    }
+  },
+  "maxOut": {
+    "title": "Maximizar heróis",
+    "scopeLabel": "Heróis a maximizar",
+    "scope": {
+      "owned": "Heróis obtidos",
+      "unlocked": "Todos os heróis desbloqueados, marcados como obtidos",
+      "selected": "Escolher heróis, marcados como obtidos"
+    },
+    "searchLabel": "Pesquisar heróis a escolher",
+    "searchPlaceholder": "Pesquisar heróis por nome",
+    "selectShown": "Selecionar visíveis",
+    "clear": "Limpar",
+    "ownedTag": "obtido",
+    "starAndTier": "Estrela e tier até 5.0",
+    "level": "Nível até 80",
+    "levelHint": "Desativar quando as habilidades estão no máximo e o nível dos heróis mais antigos fica em 1.",
+    "skills": "Habilidades até 5",
+    "skillsHint": "Exploration, Expedition e Talento.",
+    "weapon": "Arma exclusiva até 10",
+    "note": "O que estiver desativado fica como está. As quantidades de fragmentos e os objetivos não mudam. É possível anular depois de aplicar.",
+    "cancel": "Cancelar",
+    "apply": "Maximizar {heroes}"
+  },
+  "flyout": {
+    "fallbackTitle": "Herói",
+    "description": "{rarity} {heroClass}, geração {generation}",
+    "done": "Concluído",
+    "status": {
+      "title": "Estado",
+      "furnaceNeeded": "Furnace necessário para o nível {level}",
+      "met": "Cumprido",
+      "needsFurnace": "Requer Furnace {required}",
+      "levelPower": "Poder do nível",
+      "skillPower": "Poder das habilidades",
+      "starPower": "Poder das estrelas",
+      "weaponPower": "Poder da arma",
+      "totalPower": "Poder total",
+      "note": "O poder conta o nível, as habilidades, a etiqueta de estrela e o nível da arma."
+    },
+    "skills": {
+      "title": "Habilidades",
+      "aside": "Cinco níveis por habilidade",
+      "toLevel": "Para {level}: {manuals} manuais",
+      "needsStar": "Requer estrela {star}",
+      "starMet": "Estrela {star} cumprida",
+      "talentTop": "O talento está no nível máximo.",
+      "talentNeedsStar": "O nível {level} requer estrela {star}",
+      "talentStarMet": "Nível {level}: estrela {star} cumprida"
+    },
+    "weapon": {
+      "title": "Arma exclusiva: {name}",
+      "level": "Nível da arma",
+      "widgetsForLevel": "Widgets para o nível {level}",
+      "widgetsForLevels": "Widgets para os níveis {from} a {to}",
+      "expeditionBonus": "Bónus de Expedition",
+      "bonus": "Letalidade {lethality}% · Vida {health}%",
+      "power": "Poder da arma",
+      "unlocksAt": "Desbloqueia no nível de arma {level}"
+    },
+    "shards": {
+      "title": "Fragmentos",
+      "owned": "Fragmentos obtidos",
+      "goal": "Objetivo",
+      "neededForGoal": "Necessários para o objetivo {goal}",
+      "enough": "Fragmentos suficientes",
+      "shortBy": "Faltam",
+      "yes": "Sim",
+      "sources": "Fontes de fragmentos"
+    },
+    "stats": {
+      "title": "Atributos no nível 80",
+      "explorationAt": "Exploration a {stars}",
+      "expeditionAt": "Expedition a {stars}",
+      "explorationFull": "Exploration a 5.0",
+      "expeditionFull": "Expedition a 5.0",
+      "exploration": "Atq {attack} · Def {defense} · PV {health}",
+      "expedition": "Atq {attack}% · Def {defense}%",
+      "estimate": "Estimativa"
+    }
+  },
+  "plan": {
+    "title": "Plano de Heróis",
+    "description": "Fragmentos, manuais de habilidade e Widgets do atual ao objetivo",
+    "saved": "Plano guardado {date}",
+    "close": "Fechar",
+    "save": "Guardar plano",
+    "noHeroes": "Ainda sem heróis no plano. Adicionar um herói obtido acima e depois subir os objetivos.",
+    "add": {
+      "title": "Adicionar um herói",
+      "allIn": "Todos os heróis obtidos estão no plano. Ativar Obtido num herói para o planear.",
+      "selectLabel": "Herói a adicionar",
+      "button": "Adicionar herói"
+    },
+    "block": {
+      "remove": "Remover {hero} do plano",
+      "starTo": "{stars} para",
+      "starGoal": "Objetivo de estrela de {hero}",
+      "levelTo": "{current} para",
+      "goalLabel": "Objetivo de {name} de {hero}",
+      "note": "Os valores atuais vêm do herói na página. Alterá-los lá."
+    },
+    "unmet": {
+      "title": "Os níveis de habilidade requerem uma estrela mais alta.",
+      "item": "{hero}: {skill} nível {level} requer estrela {star}",
+      "message": "{items}. Subir o objetivo de estrela ou baixar o objetivo de habilidade."
+    },
+    "shardsUsed": "Fragmentos usados: {own} do herói e {general} gerais, {total} no total. Um herói usa primeiro os seus próprios fragmentos.",
+    "result": {
+      "title": "Resultado, {steps} passos",
+      "widgets": "Widgets",
+      "weaponSkills": "{count, plural, one {{amount} habilidade de arma desbloqueada} other {{amount} habilidades de arma desbloqueadas}}",
+      "note": "O poder não faz parte do Plano de Heróis. A calculadora não devolve tempo nem aceita velocidade.",
+      "heads": {
+        "hero": "Herói",
+        "starSteps": "Passos de estrela",
+        "skillLevels": "Níveis de habilidade",
+        "shards": "Fragmentos",
+        "widgets": "Widgets"
+      },
+      "tableLabel": "Tabela de resultado do plano"
+    },
+    "events": {
+      "svs": "SvS State of Power",
+      "allianceShowdown": "Alliance Showdown",
+      "kingOfIcefield": "King of Icefield",
+      "hallOfChief": "Hall of Chief"
+    }
+  },
+  "export": {
+    "button": "Exportar para Eventos principais",
+    "nothing": "O plano não requer fragmentos nem Widgets para exportar.",
+    "shardsGroup": "para fragmentos",
+    "widgetsGroup": "para Widgets",
+    "widgets": "Widgets",
+    "manualsReason": "Nenhum evento pontua manuais de habilidade",
+    "shards": {
+      "Legendary": "Mythic Hero Shards",
+      "Epic": "Epic Hero Shards",
+      "Rare": "Rare Hero Shards"
+    }
+  },
+  "service": {
+    "generalShard": {
+      "Legendary": "Mythic General Hero Shard",
+      "Epic": "Epic General Hero Shard",
+      "Rare": "Rare General Hero Shard"
+    }
+  }
+}

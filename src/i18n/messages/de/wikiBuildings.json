@@ -1,0 +1,71 @@
+{
+    "line": "{buildings} Gebäude und {facilities} Anlagen. Nur Referenz, hier wird nichts bei deinem Häuptling gespeichert.",
+    "list": {
+        "heading": "Gebäude und Anlagen",
+        "searchLabel": "Suche",
+        "searchPlaceholder": "Gebäude und Anlagen suchen",
+        "categoryLabel": "Kategorie",
+        "categories": {
+            "all": "Alle",
+            "Military": "Militär",
+            "Inner City": "Innenstadt",
+            "Entertainment": "Entertainment"
+        },
+        "buildingMeta": "{category}, max. {maxLevel}, {count, plural, one {{amount} Stufe} other {{amount} Stufen}}",
+        "empty": "Kein Gebäude passt zu deiner Suche.",
+        "categoryOption": "{category} {count}"
+    },
+    "detail": {
+        "levelsTotal": "Stufen insgesamt",
+        "standardLevels": "Standardstufen, 1 bis 30",
+        "fireCrystalLevels": "Fire-Crystal-Stufen, 30-1 bis FC 10",
+        "maxLevel": "Bezeichnung der Maximalstufe",
+        "rangeLabel": "Stufenbereich",
+        "rangeOption": "{range} {count}",
+        "ranges": {
+            "all": "Alle",
+            "standard": "1 bis 30",
+            "fc3": "30-1 bis FC 3",
+            "fc5": "FC 3-1 bis FC 5",
+            "fc8": "FC 5-1 bis FC 8",
+            "fc10": "FC 8-1 bis FC 10"
+        },
+        "tableLabel": "Stufen von {name}",
+        "levels": "Stufen",
+        "totalTitle": "Gesamt nötig, {range}, {count, plural, one {{amount} Stufe} other {{amount} Stufen}}",
+        "totalTime": "Gesamte Bauzeit"
+    },
+    "columns": {
+        "level": "Stufe",
+        "cost": "Kosten",
+        "time": "Zeit",
+        "power": "Macht",
+        "requires": "Braucht",
+        "stats": {
+            "rallyCapacity": "Rally-Kapazität",
+            "marchCapacity": "Marschkapazität",
+            "trainingCapacity": "Trainingskapazität",
+            "trainingSpeedBonusPercent": "Trainingstempo",
+            "researchSpeedBonusPercent": "Forschungstempo",
+            "infirmaryCapacity": "Infirmary-Kapazität",
+            "allyAssists": "Allianzhilfen",
+            "allyHelpTimeSeconds": "Allianz-Hilfszeit",
+            "reinforceCapacity": "Verstärkungskapazität",
+            "storehouseCapacity": "Lagerkapazität",
+            "barricadeDurability": "Barrikaden-Haltbarkeit",
+            "troopDeploymentCapacity": "Einsatzkapazität"
+        }
+    },
+    "cells": {
+        "none": "Keine",
+        "requirement": "{building} {level}",
+        "pricePerItem": "{price} je",
+        "percent": "{value}%"
+    },
+    "facilities": {
+        "heading": "Anlagen",
+        "meta": "Keine Stufen, Macht oder Baukosten",
+        "unlock": "Ab Furnace-Stufe {level}",
+        "empty": "Keine Anlage passt zu deiner Suche."
+    }
+}

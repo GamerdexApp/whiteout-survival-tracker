@@ -1,0 +1,108 @@
+{
+  "days": {
+    "day": "第{number}天",
+    "battle": "战斗",
+    "range": "第{range}天",
+    "stage": "第{number}阶段"
+  },
+  "page": {
+    "title": "核心活动",
+    "subline": "{chief} · {details}"
+  },
+  "events": {
+    "svs": "SvS",
+    "showdown": "Alliance Showdown",
+    "king": "King of Icefield",
+    "hall": "Hall of Chief"
+  },
+  "tabs": {
+    "label": "核心活动"
+  },
+  "empty": {
+    "title": "没有显示的活动",
+    "description": "此领主的四个活动都已隐藏。请在编辑领主中开启。",
+    "action": "编辑领主"
+  },
+  "strip": {
+    "live": "活动进行中",
+    "dates": "{start}至{end}",
+    "noDates": "日期在活动记录中设置。",
+    "today": "今天是{day}",
+    "checklist": "清单",
+    "log": "活动记录"
+  },
+  "bonus": {
+    "title": "{expert} {skill}等级",
+    "level": "{level}级",
+    "levelWithPercent": "{level}级 · {percent}%",
+    "none": "未设置等级，因此不加成。",
+    "readOnly": "只读",
+    "openExperts": "打开专家",
+    "svsHelp": "每级使第 1 到 5 天的积分增加 2%（按天取整），并为积分门槛增加额外档位。Battle Phase 没有加成。此处只读，等级在专家页设置。",
+    "showdownHelp": "每级使每项行动增加 5%。此处只读，等级在专家页设置。",
+    "noneTitle": "无专家加成",
+    "kingNote": "没有专家会改变 King of Icefield 的积分。",
+    "hallNote": "没有专家会改变 Hall of Chief 的积分。"
+  },
+  "daysSection": {
+    "title": "天数",
+    "stages": "阶段",
+    "totalPerDay": "每天总积分",
+    "totalPerStage": "每阶段总积分",
+    "hallSeason": "赛季在账号上设置，在此之前为第 1 赛季。",
+    "showdownScope": "仅个人积分。不含联盟合计，也不含胜利积分。"
+  },
+  "table": {
+    "title": "{day}：{name}",
+    "phasePreparation": "Preparation Phase",
+    "phaseBattle": "Battle Phase",
+    "action": "行动",
+    "pointsEach": "单次积分",
+    "count": "数量",
+    "points": "积分",
+    "lower": "减少{action}的数量",
+    "raise": "增加{action}的数量",
+    "countLabel": "{action}的数量",
+    "fromPlans": "来自计划{amount}",
+    "base": "基础{amount}",
+    "bonus": "加成{amount}",
+    "total": "合计{amount}"
+  },
+  "result": {
+    "totalTitle": "总积分，所有天数",
+    "totalTitleHall": "总积分，所选阶段",
+    "baseBonus": "基础{base}，加成{bonus}",
+    "battle": "Battle Phase",
+    "battleNoBonus": "Battle Phase 没有加成",
+    "seasonSum": "赛季各阶段累计：{amount}。不是排名。",
+    "selectedDayTotal": "{day}：{amount}",
+    "selectedDayBonus": "加成{percent}%"
+  },
+  "perDay": {
+    "title": "每天积分",
+    "titleHall": "每阶段积分",
+    "bar": "{day}占最大一天的比例"
+  },
+  "thresholds": {
+    "title": "积分门槛",
+    "estimate": "估算",
+    "help": "{day}的里程碑，与当天合计对比。",
+    "reached": "已达成",
+    "needs": "还需{amount}",
+    "extraTier": "额外第{number}档，来自 Valeria",
+    "extraTierUnknown": "积分和奖励不在数据包中",
+    "unknown": "未知",
+    "noneEvent": "数据包中没有此活动的积分门槛。",
+    "noneDay": "数据包中没有这一天的积分门槛。"
+  },
+  "ranks": {
+    "title": "排名门槛",
+    "note": "这些是玩家排名。排名没有积分分界线。",
+    "rank": "排名",
+    "reward": "奖励",
+    "gems": "{amount} Gems",
+    "unknown": "未知",
+    "notConfirmed": "未确认",
+    "noneShowdown": "数据包中没有 Alliance Showdown 的个人排名。"
+  }
+}

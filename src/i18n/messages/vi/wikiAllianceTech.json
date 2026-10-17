@@ -1,0 +1,54 @@
+{
+    "line": "{total} công nghệ trong ba cây: Growth {growth}, Territory {territory}, Battle {battle}. Chỉ để tham khảo, không có gì ở đây được lưu.",
+    "list": {
+        "title": "Nút công nghệ",
+        "categoriesLabel": "Cây công nghệ",
+        "categories": {
+            "all": "Tất cả",
+            "Growth": "Growth",
+            "Territory": "Territory",
+            "Battle": "Battle"
+        },
+        "search": "Tìm kiếm",
+        "searchPlaceholder": "Tìm công nghệ theo tên hoặc hiệu ứng",
+        "tier": "Bậc",
+        "allTiers": "Mọi bậc",
+        "tierOption": "Bậc {tier}",
+        "empty": "Không có nút công nghệ nào khớp tìm kiếm này.",
+        "emptyHint": "Hãy xóa từ khóa hoặc một bộ lọc.",
+        "columns": {
+            "tech": "Công nghệ",
+            "category": "Danh mục",
+            "tier": "Bậc",
+            "levels": "Cấp",
+            "maxBonus": "Cộng thêm tối đa",
+            "cost": "Chi phí cấp 1",
+            "time": "Thời gian cấp 1",
+            "requires": "Yêu cầu của cấp 1"
+        },
+        "mobileMeta": "{category}, bậc {tier}, {levels}",
+        "count": "{count, plural, other {{amount} công nghệ}}"
+    },
+    "levels": "{count, plural, other {{amount} cấp}}",
+    "detail": {
+        "facts": "Chi tiết",
+        "levelsTitle": "Các cấp",
+        "none": "Không có",
+        "fields": {
+            "category": "Danh mục",
+            "tier": "Bậc",
+            "effect": "Hiệu ứng",
+            "stat": "Chỉ số",
+            "levels": "Cấp"
+        },
+        "columns": {
+            "level": "Cấp",
+            "bonus": "Cộng thêm",
+            "cost": "Chi phí",
+            "time": "Thời gian",
+            "requires": "Yêu cầu"
+        },
+        "level": "Cấp {level}",
+        "requirement": "{name} cấp {level}"
+    }
+}

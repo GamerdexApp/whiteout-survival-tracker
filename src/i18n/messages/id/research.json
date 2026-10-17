@@ -1,0 +1,303 @@
+{
+  "title": "Riset",
+  "unknown": "Tidak diketahui",
+  "nodeCount": "{count, plural, other {{amount} node}}",
+  "jobTitle": "{name}, level {from} ke {to}",
+  "tabs": {
+    "growth": "Pertumbuhan",
+    "economy": "Ekonomi",
+    "battle": "Pertempuran",
+    "war-academy-troops": "War Academy T11",
+    "t12-infantry": "Infanteri T12",
+    "t12-marksman": "Marksman T12",
+    "t12-lancer": "Lancer T12"
+  },
+  "tier": {
+    "plain": "Tier {tier}",
+    "troopLine": "{line} T{tier}"
+  },
+  "requirement": {
+    "yours": "Milikmu {level}",
+    "notBuilt": "Belum dibangun",
+    "researchLevel": "{name} level {level}",
+    "yoursLevel": "Milikmu level {level}",
+    "notReleased": "{id} (belum dirilis)"
+  },
+  "tabLock": {
+    "unknownAge": "Riset {tab} terbuka di usia server {days} hari. Usiamu tidak diketahui. Isi tanggal mulai server di Ubah Chief.",
+    "knownAge": "Riset {tab} terbuka di usia server {days} hari. Usiamu {yours}."
+  },
+  "option": {
+    "label": "{name}, {tab}, level {from} ke {to}",
+    "subtitle": "Level {from} ke level {to}, tab {tab}",
+    "busy": "Sibuk: {name} level {level}, {timeLeft}"
+  },
+  "nodeCard": {
+    "allResearched": "Semua level sudah diriset",
+    "nextTime": "Waktu level {level}: {time}",
+    "power": {
+      "researched": "{power} sudah diriset",
+      "next": "+{power} level berikutnya",
+      "some": "Kekuatan {parts}",
+      "none": "Kekuatan 0"
+    },
+    "maxed": "Maksimal. {bonus}",
+    "noBonus": "Tanpa bonus di data",
+    "level": "Level {level} / {max}",
+    "goal": "Target {goal}",
+    "noGoal": "Tanpa target",
+    "progress": "Progres {name}",
+    "lockedByTab": "Terkunci: {reason}",
+    "lockedByRequirement": "Terkunci: butuh {requirement}",
+    "placeholder": "Placeholder. Biaya dan bonus kosong di paket data.",
+    "needsFirst": "Butuh {names} dulu",
+    "researching": "{name} sedang diriset",
+    "levelStepper": "Level {name}",
+    "detailsOf": "Detail {name}",
+    "details": "Detail"
+  },
+  "queuesStrip": {
+    "title": "Antrean riset",
+    "note": "Pertumbuhan, Ekonomi, dan Pertempuran berbagi satu antrean. T11 dan T12 memakai antrean War Academy.",
+    "idle": "Satu riset sekaligus. Tekan Mulai upgrade untuk memulai."
+  },
+  "filters": {
+    "title": "Filter",
+    "description": "Pilih yang ditampilkan tab {tab}",
+    "reset": "Atur ulang",
+    "show": "Tampilkan {nodes}",
+    "tier": "Tier",
+    "statusLabel": "Status",
+    "troopLine": "Jalur pasukan",
+    "orderLabel": "Urutan",
+    "notSaved": "Filter tidak disimpan.",
+    "all": "Semua",
+    "status": {
+      "all": "Semua",
+      "progress": "Berjalan",
+      "goal": "Punya target",
+      "maxed": "Maksimal",
+      "locked": "Terkunci",
+      "notStarted": "Belum mulai"
+    },
+    "order": {
+      "game": "Urutan game",
+      "name": "Nama, A ke Z",
+      "level": "Level, tertinggi dulu"
+    }
+  },
+  "massSet": {
+    "stop": "{level} dari {max}",
+    "title": "Atur massal, {tab}",
+    "description": "Pilih node dan level. Semua sebelumnya di pohon menjadi maksimal.",
+    "cancel": "Batal",
+    "set": "Atur {nodes}",
+    "node": "Node",
+    "level": "Level",
+    "levelToSet": "Level yang diatur",
+    "whatChanges": "Yang berubah di tab {tab}",
+    "nothingChanges": "Tidak ada yang berubah. Semua node di sini sudah sama atau lebih tinggi.",
+    "change": "{from} ke {to}",
+    "hidden": "dan {amount} node sebelumnya lagi",
+    "alreadyMax": "{count, plural, other {{amount} node sebelumnya}} sudah maksimal dan tetap seperti adanya. Node yang lebih akhir di pohon tidak disentuh. Level yang sudah lebih tinggi tetap.",
+    "blockersTitle": "Beberapa node butuh bangunan dulu.",
+    "blocker": "{name} butuh {building}",
+    "blockersMore": " dan {amount} lagi",
+    "blockers": "{list}{more}. Pilih node yang lebih awal atau naikkan bangunan di halaman Bangunan.",
+    "footnote": "Atur massal hanya mengubah level tersimpan di tab ini. Tidak pernah menurunkan level. Target tidak berubah."
+  },
+  "nodeFlyout": {
+    "fallbackTitle": "Riset",
+    "description": "{category}, tier {tier}, {levels} level",
+    "close": "Tutup",
+    "unknown": "Tidak diketahui",
+    "levelOf": "Level {level} dari {max}",
+    "status": {
+      "notStarted": "belum mulai",
+      "maxed": "maksimal",
+      "inProgress": "berjalan"
+    },
+    "goal": "Target {goal}",
+    "noGoal": "Tanpa target",
+    "openPlan": "Buka Rencana",
+    "maxLevel": {
+      "title": "Level maks",
+      "nothingLeft": "Tidak ada yang tersisa untuk diriset.",
+      "noBonus": "Tanpa bonus di data."
+    },
+    "placeholder": {
+      "title": "Placeholder",
+      "description": "Node ini belum punya biaya dan bonus di paket data. Waktu dan biaya riset tampil Tidak diketahui."
+    },
+    "upcoming": {
+      "first": "Level pertama",
+      "after": "Level berikutnya setelah {level}",
+      "heads": {
+        "level": "Level",
+        "bonus": "Bonus",
+        "time": "Waktu",
+        "power": "Kekuatan"
+      },
+      "goalBadge": "Target",
+      "noBonus": "Tidak ada",
+      "shaded": "Baris yang diarsir adalah level di antara levelmu dan targetmu."
+    },
+    "cost": {
+      "title": "Biaya level berikutnya",
+      "level": "Lv"
+    },
+    "total": {
+      "title": "Total sampai targetmu, level {level} ke {goal}",
+      "knownTime": "Waktu riset yang diketahui",
+      "power": "Kekuatan",
+      "missingTimes": "{count, plural, other {{amount} level}} tidak punya waktu di paket data dan dihitung 0 di sini."
+    },
+    "requirements": {
+      "title": "Syarat untuk level {level}",
+      "none": "Tanpa syarat.",
+      "met": "Terpenuhi",
+      "notMet": "Belum terpenuhi",
+      "later": "Level berikutnya meminta: {list}."
+    }
+  },
+  "tree": {
+    "legend": {
+      "max": "Maks",
+      "inProgress": "Berjalan",
+      "notStarted": "Belum mulai",
+      "locked": "Terkunci"
+    },
+    "pillMax": "Maks {max}",
+    "pillLevel": "Lv {level} dari {max}",
+    "region": "Pohon riset {tab}",
+    "openNode": "{name}, {pill}. Buka detail"
+  },
+  "plan": {
+    "title": "Rencanakan Riset",
+    "description": "Sumber daya, waktu, dan kekuatan dari level saat ini sampai target",
+    "saved": "Rencana disimpan {date}",
+    "close": "Tutup",
+    "save": "Simpan rencana",
+    "goals": "Target, {nodes}",
+    "noGoals": "Belum ada target. Tambah node riset di atas, lalu pilih level yang ingin dicapai.",
+    "goalsHint": "Level saat ini adalah yang ada di halaman. Ubah di sana. Target hanya bisa dibaca di halaman dan diatur di sini.",
+    "failed": "Rencana tidak bisa dihitung.",
+    "timeNote": "Rencana memakan {time} setelah bonus kecepatan {percent}%. Stokmu: Riset {research} mnt, Umum {general} mnt. Percepatan Umum dihitung untuk riset.",
+    "percent": "{value}%",
+    "percentPlus": "+{value}%",
+    "appointment": {
+      "none": "Tidak ada",
+      "regular": "Biasa",
+      "supreme": "Supreme"
+    },
+    "add": {
+      "title": "Tambah node riset",
+      "none": "Semua node sudah ada di rencana atau di level tertingginya.",
+      "select": "Node riset yang ditambah",
+      "button": "Tambah riset"
+    },
+    "speed": {
+      "title": "Kecepatan riset",
+      "readOnly": "Hanya baca",
+      "carriedOver": "Dibawa dari halaman Bonus.",
+      "turnedOff": "Dimatikan di Pengaturan, di bawah Terapkan total Bonus-ku.",
+      "openBonuses": "Buka Bonus",
+      "stateBuff": "Buff state",
+      "vicePresident": "Vice President",
+      "total": "Total kecepatan riset"
+    },
+    "goal": {
+      "level": "Level {level}",
+      "to": "ke",
+      "label": "Target {name}",
+      "remove": "Hapus {name} dari rencana"
+    },
+    "result": {
+      "title": "Hasil, {steps} langkah",
+      "powerGained": "Kekuatan didapat",
+      "speedupMinutes": "Menit percepatan dibutuhkan",
+      "baseTime": "Waktu dasar",
+      "timeWithBonus": "Waktu dengan bonus {percent}%",
+      "stepsWithoutTime": "{count, plural, other {{amount} langkah}} tidak punya waktu di paket data dan dihitung 0 detik.",
+      "stepCount": "{count, plural, other {{amount} langkah}}",
+      "buildingRequirements": "Syarat bangunan",
+      "unmet": "Prasyarat belum terpenuhi",
+      "unmetNone": "Tidak ada untuk target ini.",
+      "unmetItem": "{name} level {level} butuh {requires} level {requiresLevel}"
+    },
+    "export": {
+      "button": "Ekspor ke Core Events",
+      "empty": "Tambah target ke rencana untuk mengekspornya.",
+      "speedupMinutes": "Menit percepatan riset",
+      "power": "Kekuatan didapat lewat riset",
+      "computed": "Dihitung oleh aplikasi dari hasil rencana.",
+      "unscored": "Tidak ada event yang menskor {name}."
+    }
+  },
+  "view": {
+    "ofTotal": "{count} dari {total}",
+    "undo": "Urungkan",
+    "massSetApplied": {
+      "title": "Atur massal diterapkan",
+      "message": "{nodes} diperbarui."
+    },
+    "started": {
+      "title": "Riset dimulai",
+      "message": "{name}, level {from} ke {to}."
+    },
+    "manage": {
+      "slotLabel": "{queue}, {category}",
+      "finishText": "Selesaikan upgrade mengatur {name} ke level {level}, mengosongkan antrean {queue}, dan menambah upgrade ke Riwayat. Saat sisa waktu nol, node dan kartu antrean menampilkan Siap diselesaikan. Tidak ada yang selesai sendiri, karena kamu mungkin memakai percepatan."
+    },
+    "finished": {
+      "title": "{name} selesai diriset",
+      "message": "Sekarang level {level}. Ditambahkan ke Riwayat."
+    },
+    "cancelled": {
+      "title": "Riset {name} dibatalkan",
+      "message": "Level tetap seperti semula. Perbaiki stokmu di Sumber Daya jika perlu."
+    },
+    "subline": {
+      "researchCenter": "Research Center {level}",
+      "warAcademy": "War Academy {level}"
+    },
+    "stats": {
+      "maxed": "Node maksimal, {percent}% dari pohon",
+      "power": "Kekuatan riset, kekuatan dari setiap level yang sudah diriset",
+      "withoutTimeNone": "Tanpa waktu riset, setiap level punya waktu",
+      "withoutTimeSome": "Tanpa waktu riset, tampil sebagai Tidak diketahui",
+      "locked": "Terkunci oleh usia server atau syarat"
+    },
+    "tabLockedNote": "{reason} Kamu tetap bisa mengatur target di Rencana.",
+    "lockedByRequirement": "{count} dari {total} node di tab ini terkunci oleh syarat.",
+    "search": {
+      "label": "Cari node",
+      "placeholder": "Cari node menurut nama atau bonus"
+    },
+    "massSet": "Atur massal",
+    "layout": {
+      "label": "Tata letak",
+      "grid": "Kisi",
+      "tree": "Pohon"
+    },
+    "plan": "Rencana",
+    "status": {
+      "tree": "{count} node di pohon {tab}. Kekuatan riset di tab ini: {power}. Gulir untuk menggeser. Node yang tidak cocok dengan pencarian atau filter diredupkan.",
+      "grid": "Menampilkan {shown} dari {count} node {tab}. Kekuatan riset di tab ini: {power}. Target hanya bisa dibaca di sini dan diatur di Rencana."
+    },
+    "empty": {
+      "title": "Tidak ada node yang cocok",
+      "description": "Ubah pencarian atau atur ulang filter untuk melihat semua node.",
+      "reset": "Atur ulang pencarian dan filter"
+    },
+    "start": {
+      "description": "Tandai riset sebagai sedang di-upgrade",
+      "selectLabel": "Riset yang di-upgrade",
+      "selectHelp": "Hanya riset yang bisa dimulai sekarang yang tercantum. Riset terkunci, maksimal, dan berjalan tidak disertakan. Riset Pertumbuhan, Ekonomi, atau Pertempuran memakai antrean Riset. Riset T11 atau T12 memakai antrean War Academy.",
+      "timeLabel": "Waktu riset",
+      "speedLabel": "Kecepatan riset",
+      "slotLabel": "Antrean",
+      "slotHelp": "Satu riset sekaligus di tiap antrean. Saat antrean sibuk, kartu ini menampilkan kapan kosong."
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "title": "Exportar para Eventos principais",
+  "description": "Escolher o evento e depois os dias",
+  "events": {
+    "svs": "SvS",
+    "showdown": "Alliance Showdown",
+    "king": "King of Icefield",
+    "hall": "Hall of Chief"
+  },
+  "stepEvent": "1. Evento",
+  "stepDay": "{number}. Dia do evento {group}",
+  "stepDayPlain": "Dia do evento",
+  "stepItems": "{number}. Itens deste plano",
+  "noDay": "{event} não tem linha de pontuação para estes itens.",
+  "daysHint": "Só aparecem os dias cujas linhas de pontuação contam um item. Hall of Chief lista fases em vez de dias. Cada grupo de itens tem o seu dia.",
+  "lineEach": "{points} cada em {day}.",
+  "lineNotScored": "{event} não tem linha de pontuação para isto.",
+  "notScored": "Sem pontuação",
+  "points": "{points} pontos",
+  "addedTo": "Adicionado a {event}",
+  "nothingScores": "Nada neste plano pontua em {event} nos dias escolhidos.",
+  "summaryTitle": "Resumo da exportação",
+  "summaryHint": "O que os mesmos itens pontuariam em cada evento se cada item fosse gasto num dia que o pontue. Só o evento e os dias selecionados os recebem. A página Eventos principais mostra-os como quantidades que podem ser alteradas.",
+  "selected": "Selecionado",
+  "cancel": "Cancelar",
+  "export": "Exportar para {event}",
+  "toast": {
+    "title": "Exportado para Eventos principais",
+    "message": "{points} pontos adicionados a {event}.",
+    "undo": "Anular"
+  }
+}

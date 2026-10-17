@@ -1,0 +1,114 @@
+{
+    "page": {
+        "title": "Daybreak Island"
+    },
+    "view": {
+        "subline": "Lumber Camp, Tree of Life và đồ trang trí của bạn."
+    },
+    "locked": {
+        "title": "Cần Furnace {level}",
+        "description": "Daybreak Island mở ở Furnace {level}. Furnace của bạn là {current}, còn {missing}. Trang vẫn hiển thị để bạn xem những gì sắp tới. Chỉnh sửa bị tắt cho đến lúc đó.",
+        "noFurnace": "Daybreak Island mở ở Furnace {level}. Cấp Furnace của bạn chưa được đặt. Trang vẫn hiển thị để bạn xem những gì sắp tới. Chỉnh sửa bị tắt cho đến lúc đó.",
+        "missing": "{count, plural, other {{amount} cấp nữa}}",
+        "link": "Đến Công trình"
+    },
+    "levelOf": "Lv{level} trên {max}",
+    "camp": {
+        "title": "Lumber Camp",
+        "levelLabel": "Cấp Lumber Camp",
+        "workers": "Công nhân",
+        "rate": "Tốc độ mỗi giây",
+        "essence": "Life Essence để đạt cấp này",
+        "needsTree": "Cần Tree of Life cấp {required}. Của bạn là {current}.",
+        "treeTooLow": "Tree of Life cấp {current} quá thấp. Lumber Camp cấp {level} cần Tree of Life cấp {required}.",
+        "next": "Kế tiếp, cấp {level}: {essence} Life Essence, cần Tree of Life cấp {tree}.",
+        "highest": "Đây là cấp cao nhất."
+    },
+    "tree": {
+        "title": "Tree of Life",
+        "levelLabel": "Cấp Tree of Life",
+        "prosperity": "Prosperity để đạt cấp này",
+        "essence": "Life Essence để đạt cấp này",
+        "perHour": "Life Essence mỗi giờ",
+        "buff": "Buff",
+        "next": "Kế tiếp, cấp {level}: {prosperity} Prosperity, {essence} Life Essence.",
+        "highest": "Đây là cấp cao nhất."
+    },
+    "decorations": {
+        "title": "Đồ trang trí",
+        "owned": "{owned} trên {total} đã sở hữu",
+        "imageNote": "Chỉ {withImage} trên {total} đồ trang trí có hình trong gói dữ liệu. Ô vuông liền đánh dấu món có hình, ô vuông nét đứt đánh dấu các món còn lại."
+    },
+    "search": {
+        "label": "Tìm đồ trang trí",
+        "placeholder": "Tìm đồ trang trí"
+    },
+    "status": {
+        "showing": "Hiển thị {shown} trên {total} đồ trang trí.",
+        "showMore": "{count, plural, other {Hiện thêm {amount} đồ trang trí}}"
+    },
+    "empty": {
+        "title": "Không có đồ trang trí phù hợp",
+        "description": "Đổi từ khóa hoặc bộ lọc để xem đồ trang trí.",
+        "reset": "Đặt lại bộ lọc"
+    },
+    "card": {
+        "costEach": "Giá mỗi món",
+        "cost": "{amount} {item}",
+        "limit": "Giới hạn",
+        "buffAtLevel": "Buff ở cấp {level}",
+        "buffAtMax": "Buff ở cấp tối đa",
+        "buffValue": "{value} {stat}",
+        "prosperityAtMax": "Prosperity ở mức tối đa",
+        "essenceCost": "Giá Life Essence",
+        "unknown": "Không rõ",
+        "owned": "Đã sở hữu",
+        "notOwned": "Chưa sở hữu",
+        "ownedLabel": "{name} đã sở hữu",
+        "levelLabel": "Cấp {name}",
+        "countLabel": "Số lượng {name}",
+        "limited": "Có giới hạn",
+        "ownedCount": "Đã sở hữu {count} trên {limit}"
+    },
+    "categories": {
+        "Basic": "Cơ bản",
+        "Vegetation": "Thực vật",
+        "Common": "Common",
+        "Uncommon": "Uncommon",
+        "Rare": "Rare",
+        "Epic": "Epic",
+        "Mythic": "Mythic",
+        "Unique": "Unique"
+    },
+    "filters": {
+        "button": "Bộ lọc",
+        "title": "Bộ lọc",
+        "description": "Thu hẹp danh sách đồ trang trí. Bộ lọc không được lưu.",
+        "category": "Danh mục",
+        "categoryAll": "Tất cả {amount}",
+        "categoryOption": "{category} {amount}",
+        "show": "Hiển thị",
+        "ownedOnly": "Chỉ đã sở hữu",
+        "limitedOnly": "Chỉ có giới hạn",
+        "unknownBuffOnly": "Chỉ buff không rõ",
+        "sort": "Sắp xếp",
+        "order": {
+            "game": "Thứ tự gói dữ liệu",
+            "name": "Tên A đến Z",
+            "level": "Cấp cao nhất trước"
+        },
+        "reset": "Đặt lại",
+        "showButton": "{count, plural, other {Hiện {amount} đồ trang trí}}",
+        "nonLimitedOnly": "Chỉ không giới hạn",
+        "notOwnedOnly": "Chỉ chưa sở hữu"
+    },
+    "prosperity": {
+        "label": "Điểm Prosperity của bạn",
+        "progress": "Điểm Prosperity của đồ trang trí",
+        "possible": "Trên tối đa {max} khi mọi đồ trang trí ở cấp và giới hạn cao nhất",
+        "levelled": "Đồ trang trí có cấp, Prosperity của cấp đã đạt",
+        "limited": "Đồ trang trí có giới hạn, số đã sở hữu nhân Prosperity mỗi món",
+        "ofMax": "{value} trên {max}",
+        "withoutValue": "{count, plural, other {{amount} đồ trang trí đã sở hữu}} không có giá trị Prosperity trong dữ liệu và {count, plural, other {không}} được tính."
+    }
+}

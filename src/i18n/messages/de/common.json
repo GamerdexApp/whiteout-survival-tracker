@@ -1,0 +1,19 @@
+{
+    "duration": {
+        "days": "{value}T",
+        "hours": "{value}Std",
+        "minutes": "{value}Min",
+        "seconds": "{value}s",
+        "zero": "0s",
+        "separator": " "
+    },
+    "timeLeft": {
+        "left": "noch {duration}",
+        "ready": "Bereit zum Abschließen"
+    },
+    "saveFailed": {
+        "title": "Nicht gespeichert",
+        "message": "Der Browserspeicher ist voll. Exportiere jetzt ein Backup.",
+        "exportBackup": "Backup exportieren"
+    }
+}

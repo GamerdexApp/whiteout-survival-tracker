@@ -1,0 +1,54 @@
+{
+  "line": "{total} tecnologie in tre alberi: Crescita {growth}, Territorio {territory}, Battaglia {battle}. Solo riferimento, qui nulla viene salvato.",
+  "list": {
+    "title": "Nodi di tecnologia",
+    "categoriesLabel": "Alberi di tecnologia",
+    "categories": {
+      "all": "Tutti",
+      "Growth": "Crescita",
+      "Territory": "Territorio",
+      "Battle": "Battaglia"
+    },
+    "search": "Cerca",
+    "searchPlaceholder": "Cerca tecnologie per nome o effetto",
+    "tier": "Grado",
+    "allTiers": "Tutti i gradi",
+    "tierOption": "Grado {tier}",
+    "empty": "Nessun nodo di tecnologia corrisponde a questa ricerca.",
+    "emptyHint": "Cancella la ricerca o un filtro.",
+    "columns": {
+      "tech": "Tecnologia",
+      "category": "Categoria",
+      "tier": "Grado",
+      "levels": "Livelli",
+      "maxBonus": "Bonus massimo",
+      "cost": "Costo livello 1",
+      "time": "Tempo livello 1",
+      "requires": "Requisiti livello 1"
+    },
+    "mobileMeta": "{category}, grado {tier}, {levels}",
+    "count": "{count, plural, one {{amount} tecnologia} other {{amount} tecnologie}}"
+  },
+  "levels": "{count, plural, one {{amount} livello} other {{amount} livelli}}",
+  "detail": {
+    "facts": "Dettagli",
+    "levelsTitle": "Livelli",
+    "none": "Nessuno",
+    "fields": {
+      "category": "Categoria",
+      "tier": "Grado",
+      "effect": "Effetto",
+      "stat": "Statistica",
+      "levels": "Livelli"
+    },
+    "columns": {
+      "level": "Livello",
+      "bonus": "Bonus",
+      "cost": "Costo",
+      "time": "Tempo",
+      "requires": "Richiede"
+    },
+    "level": "Livello {level}",
+    "requirement": "{name} livello {level}"
+  }
+}

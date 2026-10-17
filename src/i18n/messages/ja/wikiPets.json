@@ -1,0 +1,52 @@
+{
+    "line": "ペット{pets}体。参考情報のみで、ここには何も保存されません。",
+    "roster": {
+        "title": "ペット",
+        "count": "{total}体中{shown}体のペット",
+        "search": "検索",
+        "searchPlaceholder": "{count}体のペットを検索",
+        "rarity": "レアリティ",
+        "all": "すべて",
+        "empty": "このフィルターに一致するペットがいません。",
+        "summary": "最大レベル{level}、精錬は最大{percent}",
+        "percentValue": "{value}%"
+    },
+    "unlock": {
+        "withFurnace": "{days}日目、Furnace {level}",
+        "withPet": "{days}日目、{pet} {level}",
+        "daysOnly": "{days}日目",
+        "label": "解放: {requirement}"
+    },
+    "detail": {
+        "maxLevel": "最大レベル",
+        "maxRefinement": "最大精錬",
+        "unlock": "解放条件",
+        "cooldown": "スキルのクールダウン",
+        "duration": "スキルの持続時間",
+        "tierCooldown": "{value}",
+        "maxPower": "最大戦力",
+        "levelPower": "最大レベル時のレベルと昇格の戦力",
+        "refiningPower": "最大精錬時の精錬の戦力"
+    },
+    "skill": {
+        "title": "スキル",
+        "meta": "{count, plural, other {{amount}レベル}}",
+        "level": "Lv {level}",
+        "percent": "{value}%"
+    },
+    "levels": {
+        "title": "レベル表",
+        "level": "レベル{level}",
+        "columns": {
+            "level": "レベル",
+            "food": "ペットフード",
+            "attack": "部隊の攻撃",
+            "defense": "部隊の防御",
+            "power": "部隊の戦力",
+            "materials": "昇格素材"
+        },
+        "refined": "{value}（精錬後{refined}）",
+        "none": "なし"
+    },
+    "recordLine": "{rarity}のペット、最大レベル{level}。参考情報のみで、ここには何も保存されません。"
+}

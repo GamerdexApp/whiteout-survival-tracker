@@ -1,0 +1,102 @@
+{
+  "page": { "title": "历史" },
+  "events": {
+    "svs": "SvS",
+    "showdown": "Alliance Showdown",
+    "king": "King of Icefield",
+    "hall": "Hall of Chief"
+  },
+  "title": {
+    "dated": "{event}，{start}至{end}",
+    "undated": "{event}"
+  },
+  "ended": "结束于{date}",
+  "tabs": { "label": "按活动筛选", "all": "全部活动" },
+  "list": {
+    "intro": "你在活动记录中结束的活动，最新在前。SvS 的得分为第 1 到 5 天，Battle Phase 单独计算。打开活动即可查看其计划与实际对比以及计划的升级。",
+    "event": "活动",
+    "plan": "计划",
+    "actual": "实际",
+    "diff": "差值",
+    "rank": "排名",
+    "alliance": "联盟",
+    "rankLine": "排名{rank}，联盟{alliance}",
+    "open": "打开",
+    "openEvent": "打开{name}",
+    "none": "还没有此类型的已结束活动。",
+    "diffWithPercent": "{amount}（{percent}%）"
+  },
+  "empty": {
+    "title": "还没有活动",
+    "description": "你在核心活动的活动记录中结束的活动，会连同计划和结果保存在这里。",
+    "action": "打开核心活动"
+  },
+  "notFound": {
+    "title": "未找到活动",
+    "description": "此活动不在当前领主的历史中。它可能已被移除，或该活动在核心活动中被隐藏。",
+    "action": "返回历史"
+  },
+  "unknown": "未设置",
+  "belowPlan": "低于计划",
+  "atOrAbovePlan": "达到或超过计划",
+  "breadcrumb": { "label": "面包屑导航" },
+  "tiles": {
+    "plan": "计划",
+    "actual": "实际",
+    "difference": "差值",
+    "overall": "总体",
+    "alliance": "联盟",
+    "days": "第 1 到 5 天",
+    "rank": "排名",
+    "rankDays": "排名，第 1 到 5 天",
+    "percent": "{percent}%"
+  },
+  "compare": {
+    "title": "计划与实际对比",
+    "titleDays": "计划与实际对比，第 1 到 5 天",
+    "day": "天",
+    "plan": "计划",
+    "actual": "实际",
+    "diff": "差值",
+    "rank": "排名",
+    "ally": "联盟",
+    "total": "合计",
+    "share": "计划的{percent}%",
+    "shareLine": "计划的{percent}%，排名{rank}，联盟{ally}",
+    "barLabel": "{day}，实际占计划的比例"
+  },
+  "battle": {
+    "title": "Battle Phase",
+    "note": "单独的得分和排名。不计入第 1 到 5 天的合计。"
+  },
+  "upgrades": {
+    "title": "计划的升级",
+    "titleCount": "计划的升级，{count}",
+    "summary": "此活动计划中的升级，按类型分组。已完成{done} / {count}。",
+    "summaryUnchecked": "此活动计划中的升级，按类型分组。",
+    "none": "没有计划导出到此活动，因此没有可显示的计划升级。",
+    "groupTitle": "{name}，{count}",
+    "groupStats": "已完成{done} / {count}，战力 +{power}，Fire Crystals {fireCrystals}",
+    "groupStatsUnchecked": "战力 +{power}，Fire Crystals {fireCrystals}",
+    "power": "战力 +{power}",
+    "plannedDay": "计划于{day}",
+    "done": "已完成",
+    "notDone": "未完成",
+    "levelsFrom": "{from}到{to}",
+    "levelsTo": "到{to}",
+    "levelsResearchFrom": "{from}到{to}级",
+    "levelsResearchTo": "到{to}级",
+    "costAmount": "{amount} {name}"
+  },
+  "pages": {
+    "buildings": "建筑",
+    "research": "研究",
+    "chiefGear": "领主装备",
+    "chiefCharms": "领主饰品",
+    "heroGear": "英雄装备",
+    "heroes": "英雄",
+    "pets": "宠物",
+    "experts": "专家",
+    "troops": "部队"
+  }
+}

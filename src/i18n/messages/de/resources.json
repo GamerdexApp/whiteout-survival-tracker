@@ -1,0 +1,88 @@
+{
+    "title": "Ressourcen",
+    "all": "Alle",
+    "owned": "Im Besitz",
+    "sources": "Quellen",
+    "sourcesUnknown": "Quellen unbekannt",
+    "done": "Fertig",
+    "undo": "Rückgängig",
+    "list": {
+        "separator": ", ",
+        "andLast": "{rest} und {last}"
+    },
+    "countControl": {
+        "remove": "{step} {name} entfernen",
+        "add": "{step} {name} hinzufügen",
+        "owned": "{name} im Besitz"
+    },
+    "itemRow": {
+        "owned": "im Besitz"
+    },
+    "itemSheet": {
+        "title": "Besitzanzahl bearbeiten",
+        "step": "Schritt",
+        "setToZero": "Auf 0 setzen",
+        "description": "Beschreibung",
+        "unknown": "Unbekannt"
+    },
+    "view": {
+        "subline": "{items} Items in {categories} Kategorien",
+        "sublineInCategory": "{items} Items in {categories} Kategorien · {inCategory} in {category}",
+        "unsaved": "Ungespeichert",
+        "shortages": "Planerziele haben zu wenig {names}.",
+        "shortagesLink": "Gebäudeplan öffnen",
+        "show": {
+            "label": "Anzeigen",
+            "owned": "Im Besitz",
+            "unknown": "Quellen unbekannt"
+        },
+        "speedups": {
+            "none": "Keine",
+            "noneOwned": "Keine Beschleuniger im Besitz",
+            "owned": "{minutes} Min: {parts}",
+            "part": "{count} x {name}",
+            "partSeparator": " + ",
+            "types": {
+                "general": "Allgemein",
+                "construction": "Bau",
+                "troop": "Truppentraining",
+                "research": "Forschung",
+                "learning": "Lernen",
+                "healing": "Heilung"
+            }
+        },
+        "search": {
+            "label": "Items suchen",
+            "placeholder": "{total} Items durchsuchen"
+        },
+        "setSeveral": "Mehrere setzen",
+        "showing": {
+            "several": "{visible} von {total} Items angezeigt. Mehrere setzen ist an. Änderungen warten, bis du auf Änderungen speichern tippst.",
+            "instant": "{visible} von {total} Items angezeigt. Jede Änderung wird sofort gespeichert."
+        },
+        "empty": {
+            "title": "Keine passenden Items",
+            "description": "Ändere die Suche, die Kategorie oder den Filter Anzeigen.",
+            "reset": "Filter zurücksetzen"
+        },
+        "columns": {
+            "item": "Item"
+        },
+        "bar": {
+            "noChanges": "Keine ungespeicherten Änderungen",
+            "changes": "{count, plural, one {{amount} ungespeicherte Änderung} other {{amount} ungespeicherte Änderungen}}",
+            "discard": "Verwerfen",
+            "save": "Änderungen speichern"
+        },
+        "toast": {
+            "setToZero": "{name} auf 0 gesetzt",
+            "savedTitle": "Anzahlen gespeichert",
+            "savedMessage": "{count, plural, one {{amount} Anzahl} other {{amount} Anzahlen}} geändert."
+        }
+    },
+    "planStock": {
+        "constructionTime": "Bauzeit, als Beschleuniger",
+        "researchTime": "Forschungszeit, als Beschleuniger",
+        "minutesUnit": "Min"
+    }
+}

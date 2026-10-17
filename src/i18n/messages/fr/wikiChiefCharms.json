@@ -1,0 +1,49 @@
+{
+  "line": "{rows} lignes de charmes, {slots} emplacements et {rates} taux d'échange. Référence uniquement, rien ici n'est enregistré pour votre chef.",
+  "slots": {
+    "heading": "Emplacements de charmes",
+    "meta": "{slots} emplacements, un par type de troupe",
+    "icons": "{count, plural, one {{amount} icône de niveau} other {{amount} icônes de niveau}}",
+    "recordLine": "Renforce les troupes {troopType}. Une icône par niveau."
+  },
+  "table": {
+    "heading": "Table des charmes",
+    "meta": "{rows} lignes, {levels} niveaux",
+    "searchLabel": "Rechercher",
+    "searchPlaceholder": "Rechercher parmi {rows} lignes de charmes",
+    "levelLabel": "Niveau",
+    "allLevels": "Tous les niveaux",
+    "levelOption": "Niveau {level}",
+    "stageLabel": "Stade",
+    "allStages": "Tous les stades",
+    "stageOption": "Stade {stage}",
+    "empty": "Aucune ligne de charmes ne correspond à vos filtres."
+  },
+  "columns": {
+    "row": "Ligne",
+    "materials": "Matériaux",
+    "stats": "Stats",
+    "power": "Puissance",
+    "score": "Score"
+  },
+  "cells": {
+    "none": "Aucun",
+    "percent": "{value} %"
+  },
+  "levels": {
+    "heading": "Niveaux",
+    "level": "Niveau",
+    "levelName": "Niveau {level}",
+    "rows": "Lignes",
+    "stats": "Stats, première à dernière",
+    "power": "Puissance à la dernière ligne",
+    "statsRange": "{first} % à {last} %"
+  },
+  "exchange": {
+    "heading": "Taux d'échange des matériaux",
+    "exchange": "Échange",
+    "from": "De",
+    "to": "Vers",
+    "weeklyLimit": "Limite hebdomadaire"
+  }
+}

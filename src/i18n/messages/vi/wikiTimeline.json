@@ -1,0 +1,49 @@
+{
+    "title": "Dòng thời gian máy chủ",
+    "line": "{rows, plural, other {{amount} mốc}} từ ngày {first} đến ngày {last}",
+    "subline": "Những gì mở ở mỗi độ tuổi máy chủ. Chỉ để tham khảo, không có gì ở đây được lưu.",
+    "place": {
+        "label": "Hiện vị trí của tôi cho",
+        "option": "{name}, khoảng ngày {days}, lệch cộng trừ {window}",
+        "optionNoDate": "{name}, chưa có ngày mở máy chủ",
+        "jump": "Đến vị trí của tôi"
+    },
+    "filters": {
+        "label": "Hiển thị",
+        "events": "Sự kiện {amount}",
+        "features": "Tính năng {amount}",
+        "pets": "Thú cưng {amount}",
+        "experts": "Chuyên gia {amount}",
+        "heroes": "Anh hùng {amount}"
+    },
+    "help": "Đường thời gian tính theo tuổi máy chủ bằng ngày. Anh hùng ở bên phải, mọi thứ khác ở bên trái. Vị trí của bạn lấy từ ngày mở máy chủ của thủ lĩnh, với khoảng lệch cộng trừ {window} ngày.",
+    "noChief": "Chưa có thủ lĩnh, nên không hiện vị trí của bạn.",
+    "addChief": "Thêm thủ lĩnh",
+    "noStartDate": "{name} chưa có ngày mở máy chủ. Hãy thêm để xem vị trí của bạn trên đường thời gian.",
+    "editChief": "Sửa thủ lĩnh",
+    "columns": {
+        "left": "Sự kiện, tính năng, thú cưng, chuyên gia",
+        "right": "Anh hùng"
+    },
+    "tags": {
+        "event": "Sự kiện",
+        "feature": "Tính năng",
+        "pets": "Thú cưng",
+        "experts": "Chuyên gia"
+    },
+    "fireCrystalLevels": "Cấp Fire Crystal {names}",
+    "heroGeneration": "Anh hùng, thế hệ {generation}",
+    "day": "Ngày {day}",
+    "status": {
+        "unlocked": "Đã mở",
+        "near": "Gần tuổi của bạn",
+        "future": "{count, plural, other {Sau {amount} ngày}}"
+    },
+    "marker": {
+        "label": "Bạn ở đây",
+        "title": "{name}, tuổi máy chủ khoảng {days} ngày",
+        "window": "Lệch cộng trừ {window} ngày: ngày {from} đến {to}"
+    },
+    "empty": "Không có gì để hiển thị với các bộ lọc này.",
+    "source": "Nguồn: dòng thời gian máy chủ của gói dữ liệu."
+}

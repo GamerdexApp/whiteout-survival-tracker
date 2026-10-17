@@ -1,0 +1,108 @@
+{
+    "days": {
+        "day": "Tag {number}",
+        "battle": "Kampf",
+        "range": "Tage {range}",
+        "stage": "Stage {number}"
+    },
+    "page": {
+        "title": "Kern-Events",
+        "subline": "{chief} · {details}"
+    },
+    "events": {
+        "svs": "SvS",
+        "showdown": "Alliance Showdown",
+        "king": "King of Icefield",
+        "hall": "Hall of Chief"
+    },
+    "tabs": {
+        "label": "Kern-Events"
+    },
+    "empty": {
+        "title": "Keine Events angezeigt",
+        "description": "Alle vier Events sind für diesen Häuptling ausgeblendet. Schalte sie unter Häuptling bearbeiten ein.",
+        "action": "Häuptling bearbeiten"
+    },
+    "strip": {
+        "live": "Event läuft",
+        "dates": "{start} bis {end}",
+        "noDates": "Die Daten werden im Event-Log gesetzt.",
+        "today": "Heute ist {day}",
+        "checklist": "Checkliste",
+        "log": "Event-Log"
+    },
+    "bonus": {
+        "title": "Stufe {skill} von {expert}",
+        "level": "Stufe {level}",
+        "levelWithPercent": "Stufe {level} · {percent}%",
+        "none": "Keine Stufe gesetzt, daher wird kein Bonus addiert.",
+        "readOnly": "Nur lesbar",
+        "openExperts": "Experten öffnen",
+        "svsHelp": "Addiert 2% pro Stufe zu den Punkten von Tag 1 bis 5, pro Tag gerundet, und zusätzliche Tiers zu den Punkteschwellen. Die Kampfphase bekommt keinen Bonus. Hier nur lesbar, die Stufe wird auf der Experten-Seite gesetzt.",
+        "showdownHelp": "Addiert 5% pro Stufe zu jeder Aktion. Hier nur lesbar, die Stufe wird auf der Experten-Seite gesetzt.",
+        "noneTitle": "Kein Expertenbonus",
+        "kingNote": "Kein Experte ändert die Punkte von King of Icefield.",
+        "hallNote": "Kein Experte ändert die Punkte von Hall of Chief."
+    },
+    "daysSection": {
+        "title": "Tage",
+        "stages": "Stages",
+        "totalPerDay": "Gesamtpunkte pro Tag",
+        "totalPerStage": "Gesamtpunkte pro Stage",
+        "hallSeason": "Die Saison wird im Account gesetzt und ist bis dahin Saison 1.",
+        "showdownScope": "Nur persönliche Punkte. Keine Allianzsummen und keine Siegpunkte."
+    },
+    "table": {
+        "title": "{day}: {name}",
+        "phasePreparation": "Vorbereitungsphase",
+        "phaseBattle": "Kampfphase",
+        "action": "Aktion",
+        "pointsEach": "Punkte je",
+        "count": "Anzahl",
+        "points": "Punkte",
+        "lower": "Anzahl für {action} verringern",
+        "raise": "Anzahl für {action} erhöhen",
+        "countLabel": "Anzahl für {action}",
+        "fromPlans": "{amount} aus Plänen",
+        "base": "Basis {amount}",
+        "bonus": "Bonus {amount}",
+        "total": "Gesamt {amount}"
+    },
+    "result": {
+        "totalTitle": "Gesamtpunkte, alle Tage",
+        "totalTitleHall": "Gesamtpunkte, gewählte Stage",
+        "baseBonus": "Basis {base}, Bonus {bonus}",
+        "battle": "Kampfphase",
+        "battleNoBonus": "Kein Bonus in der Kampfphase",
+        "seasonSum": "Stages der Saison summiert: {amount}. Keine Rangliste.",
+        "selectedDayTotal": "{day}: {amount}",
+        "selectedDayBonus": "Bonus {percent}%"
+    },
+    "perDay": {
+        "title": "Punkte pro Tag",
+        "titleHall": "Punkte pro Stage",
+        "bar": "Anteil am größten Tag für {day}"
+    },
+    "thresholds": {
+        "title": "Punkteschwellen",
+        "estimate": "Schätzung",
+        "help": "Meilensteine für {day}, verglichen mit der Tagessumme.",
+        "reached": "Erreicht",
+        "needs": "Noch {amount} nötig",
+        "extraTier": "Zusatz-Tier {number}, von Valeria",
+        "extraTierUnknown": "Punkte und Belohnung sind nicht im Paket",
+        "unknown": "Unbekannt",
+        "noneEvent": "Das Paket hat keine Punkteschwellen für dieses Event.",
+        "noneDay": "Das Paket hat keine Punkteschwellen für diesen Tag."
+    },
+    "ranks": {
+        "title": "Rangschwellen",
+        "note": "Das sind Spielerranglisten. Ein Rang hat keine Punktegrenze.",
+        "rank": "Rang",
+        "reward": "Belohnung",
+        "gems": "{amount} Gems",
+        "unknown": "Unbekannt",
+        "notConfirmed": "Nicht bestätigt",
+        "noneShowdown": "Das Paket hat keine persönliche Rangliste für Alliance Showdown."
+    }
+}

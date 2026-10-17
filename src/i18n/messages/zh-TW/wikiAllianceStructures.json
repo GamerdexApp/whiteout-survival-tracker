@@ -1,0 +1,104 @@
+{
+    "line": "{banners} 個旗幟區間、{facilities} 個設施，以及 {fortresses} 筆城堡、據點和要塞資料。僅供參考，這裡不會儲存任何內容。",
+    "filters": {
+        "search": "搜尋",
+        "searchPlaceholder": "搜尋區間、設施、要塞",
+        "structure": "建築",
+        "structures": {
+            "all": "所有建築",
+            "banners": "旗幟",
+            "facilities": "地圖設施",
+            "castle": "城堡",
+            "stronghold": "據點",
+            "fortress": "要塞"
+        }
+    },
+    "empty": "這份清單中沒有符合搜尋的項目。",
+    "none": "無",
+    "banners": {
+        "title": "旗幟建造花費",
+        "columns": {
+            "range": "等級區間",
+            "min": "最低",
+            "max": "最高",
+            "cost": "每級花費"
+        },
+        "noCost": "未列出",
+        "count": "{count, plural, other {{amount} 個區間}}",
+        "detail": {
+            "title": "旗幟花費",
+            "fields": {
+                "range": "等級區間",
+                "min": "最低等級",
+                "max": "最高等級",
+                "cost": "每級花費"
+            }
+        }
+    },
+    "facilities": {
+        "title": "地圖設施",
+        "count": "{count, plural, other {{amount} 個設施}}",
+        "columns": {
+            "facility": "設施",
+            "bonus": "加成",
+            "level": "{level} 級",
+            "listed": "已列出等級",
+            "ownLimit": "自有上限"
+        },
+        "cell": "地圖上有 {available} 個",
+        "listedOf": "{listed} / {total}",
+        "levelsNote": "資料列出了這個設施 {total} 個等級中的 {listed} 個。未列出的等級顯示為未知。",
+        "detail": {
+            "title": "{name}的等級",
+            "level": "{level} 級",
+            "columns": {
+                "level": "等級",
+                "booster": "增幅",
+                "injured": "重傷",
+                "losses": "損失",
+                "ownLimit": "自有上限",
+                "available": "地圖上",
+                "locations": "位置 (x, y)"
+            },
+            "percent": "{value}%",
+            "location": "{x}, {y}"
+        }
+    },
+    "fortresses": {
+        "title": "城堡、據點與要塞",
+        "kinds": {
+            "castle": "城堡",
+            "stronghold": "據點",
+            "fortress": "要塞"
+        },
+        "columns": {
+            "name": "名稱",
+            "kind": "種類",
+            "x": "X",
+            "y": "Y",
+            "phases": "階段",
+            "phaseOne": "第 1 階段獎勵"
+        },
+        "mobileMeta": "{kind}，x {x}，y {y}",
+        "count": "{count, plural, other {{amount} 個建築}}"
+    },
+    "map": {
+        "title": "地圖預留位置",
+        "label": "依 x 和 y 值繪製的城堡、據點和要塞地圖",
+        "note": "依 x 和 y 值繪製在 {size} x {size} 方形上的城堡、據點和要塞。方形大小是估計值，資料包中沒有地圖大小。",
+        "legend": {
+            "castle": "方形：城堡",
+            "stronghold": "菱形：據點",
+            "fortress": "圓形：要塞"
+        }
+    },
+    "detail": {
+        "title": "階段獎勵",
+        "phases": "{count, plural, other {{amount} 個階段}}",
+        "columns": {
+            "phase": "階段",
+            "reward": "獎勵"
+        },
+        "noRewards": "資料包中沒有這個建築的階段獎勵。"
+    }
+}

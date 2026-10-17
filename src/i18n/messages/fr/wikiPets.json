@@ -1,0 +1,52 @@
+{
+  "line": "{pets} familiers. Référence uniquement, rien ici n'est enregistré.",
+  "roster": {
+    "title": "Familiers",
+    "count": "{shown} familiers sur {total}",
+    "search": "Rechercher",
+    "searchPlaceholder": "Rechercher parmi {count} familiers",
+    "rarity": "Rareté",
+    "all": "Toutes",
+    "empty": "Aucun familier ne correspond à ces filtres.",
+    "summary": "Niveau max {level}, raffinage jusqu'à {percent}",
+    "percentValue": "{value} %"
+  },
+  "unlock": {
+    "withFurnace": "Jour {days}, Furnace {level}",
+    "withPet": "Jour {days}, {pet} {level}",
+    "daysOnly": "Jour {days}",
+    "label": "Déblocage : {requirement}"
+  },
+  "detail": {
+    "maxLevel": "Niveau max",
+    "maxRefinement": "Raffinage max",
+    "unlock": "Prérequis de déblocage",
+    "cooldown": "Recharge de la compétence",
+    "duration": "Durée de la compétence",
+    "tierCooldown": "{value}",
+    "maxPower": "Puissance max",
+    "levelPower": "Puissance de niveau et d'avancement au niveau max",
+    "refiningPower": "Puissance de raffinage au raffinage max"
+  },
+  "skill": {
+    "title": "Compétence",
+    "meta": "{count, plural, one {{amount} niveau} other {{amount} niveaux}}",
+    "level": "Niv {level}",
+    "percent": "{value} %"
+  },
+  "levels": {
+    "title": "Table des niveaux",
+    "level": "Niveau {level}",
+    "columns": {
+      "level": "Niveau",
+      "food": "Nourriture",
+      "attack": "Attaque des troupes",
+      "defense": "Défense des troupes",
+      "power": "Puissance des troupes",
+      "materials": "Matériaux d'avancement"
+    },
+    "refined": "{value} (raffiné {refined})",
+    "none": "Aucun"
+  },
+  "recordLine": "Familier {rarity}, niveau max {level}. Référence uniquement, rien ici n'est enregistré."
+}

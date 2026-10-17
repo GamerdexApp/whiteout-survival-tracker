@@ -1,0 +1,70 @@
+{
+    "line": "{experts} 位專家和 {relationships} 個關係階段。僅供參考，這裡不會儲存任何內容。",
+    "roster": {
+        "title": "專家",
+        "count": "{shown} / {total} 位專家",
+        "search": "搜尋",
+        "searchPlaceholder": "依名稱、頭銜或專長搜尋 {count} 位專家",
+        "generation": "世代",
+        "all": "全部",
+        "empty": "沒有符合這些篩選的專家。",
+        "generationValue": "第 {generation} 世代",
+        "unlock": "解鎖：伺服器第 {days} 天",
+        "unlockUnknown": "解鎖：",
+        "unreleased": "尚未推出"
+    },
+    "detail": {
+        "subline": "{title} · 專長 {specialty} · 第 {generation} 世代",
+        "baseBonus": "基礎：{bonus}",
+        "bonus": "{stat} {value}",
+        "percentValue": "{value}%",
+        "skills": "技能",
+        "talent": "天賦，最高 {level} 級",
+        "affinityLevels": "親密度等級",
+        "baseBonusLabel": "基礎加成",
+        "unlock": "伺服器第 {days} 天解鎖"
+    },
+    "skills": {
+        "title": "技能與天賦",
+        "columns": {
+            "skill": "技能",
+            "max": "最高",
+            "effect": "效果",
+            "books": "升到滿級所需書",
+            "exp": "升到滿級所需 EXP"
+        },
+        "talent": "{name}（天賦）",
+        "none": "無",
+        "selectHint": "選擇技能即可查看詳細資料。"
+    },
+    "skillLevels": {
+        "title": "技能等級表",
+        "meta": "{name}，1 到 {max} 級",
+        "level": "{level} 級",
+        "columns": {
+            "level": "等級",
+            "exp": "EXP",
+            "books": "書"
+        },
+        "none": "無"
+    },
+    "affinity": {
+        "title": "親密度等級",
+        "level": "{level} 級",
+        "columns": {
+            "level": "等級",
+            "required": "所需親密度",
+            "bonus": "屬性加成",
+            "affinityPower": "親密度戰力",
+            "levelPower": "等級戰力",
+            "advancement": "進階花費"
+        },
+        "noAdvancement": "無進階",
+        "startNote": "1 級所需親密度是起始值 {start}。從 2 級起，數量是升到該級的花費。"
+    },
+    "relationships": {
+        "title": "關係階段",
+        "fromLevel": "從 {level} 級起"
+    },
+    "recordLine": "{title}，專長 {specialty}，第 {generation} 世代。僅供參考，這裡不會儲存任何內容。"
+}

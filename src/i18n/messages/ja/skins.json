@@ -1,0 +1,78 @@
+{
+    "page": {
+        "title": "スキン"
+    },
+    "view": {
+        "subline": "{chief} · {details} · スキン{total}件中{owned}件所有"
+    },
+    "owned": {
+        "label": "所有",
+        "value": "{total}件中{owned}件",
+        "progress": "所有スキン",
+        "withBonus": "スキン{total}件中{withBonus}件にボーナスあり"
+    },
+    "totals": {
+        "title": "所有スキンのボーナス",
+        "estimate": "推定",
+        "percent": "+{amount}%",
+        "flat": "+{amount}",
+        "none": "ボーナスのある所有スキンはまだありません。",
+        "note": "{count, plural, other {所有スキン{amount}件のボーナスの合計}}です。ステータスごとにアプリが計算します。所有するすべてのスキンが同時に適用されると仮定しています。「Troop Attack」と「Troops Attack」は合算されます。"
+    },
+    "expiry": {
+        "title": "期限は管理しません。",
+        "text": "期間（永久、30日、ランクごと）は説明文にしか載っていません。期間限定スキンは、あなたが解除するまで所有のままです。"
+    },
+    "search": {
+        "label": "スキンを検索",
+        "placeholder": "名前または入手方法でスキンを検索"
+    },
+    "filters": {
+        "button": "フィルター",
+        "title": "フィルター",
+        "description": "スキン一覧に表示する内容を選びます",
+        "reset": "リセット",
+        "showButton": "{count, plural, other {{amount}件を表示}}",
+        "skinType": "スキンの種類",
+        "typeAll": "すべて {amount}",
+        "typeOption": "{type} {amount}",
+        "owned": "所有",
+        "bonus": "ボーナス",
+        "order": "並び順",
+        "notSaved": "フィルターは保存されません。",
+        "ownedOptions": {
+            "all": "すべてのスキン",
+            "owned": "所有",
+            "notOwned": "未所有"
+        },
+        "bonusOptions": {
+            "any": "指定なし",
+            "has": "ボーナスあり",
+            "none": "ボーナスなし"
+        },
+        "orderOptions": {
+            "game": "ゲーム内の順",
+            "name": "名前順（A→Z）",
+            "owned": "所有を先頭に"
+        }
+    },
+    "status": {
+        "showing": "{total}件中{shown}件のスキンを表示",
+        "showingFiltered": "{total}件中{shown}件のスキンを表示。フィルター: {filters}。",
+        "showMore": "{count, plural, other {さらに{amount}件のスキンを表示}}"
+    },
+    "empty": {
+        "title": "一致するスキンがありません",
+        "description": "検索条件またはフィルターを変更してください。",
+        "reset": "フィルターをリセット"
+    },
+    "card": {
+        "bonus": "ボーナス",
+        "source": "入手方法",
+        "unknown": "不明",
+        "bonusValue": "{stat} {value}",
+        "owned": "所有",
+        "ownedLabel": "所有: {name}、{type}",
+        "domainWarning": "領域ボーナスのテキストは説明文にあり、集計されません。"
+    }
+}

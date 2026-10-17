@@ -1,0 +1,49 @@
+{
+    "line": "{rows} Amulett-Zeilen, {slots} Slots und {rates} Wechselkurse. Nur Referenz, hier wird nichts bei deinem Häuptling gespeichert.",
+    "slots": {
+        "heading": "Amulett-Slots",
+        "meta": "{slots} Slots, einer je Truppentyp",
+        "icons": "{count, plural, one {{amount} Stufensymbol} other {{amount} Stufensymbole}}",
+        "recordLine": "Stärkt {troopType}-Truppen. Ein Symbol je Stufe."
+    },
+    "table": {
+        "heading": "Amulett-Tabelle",
+        "meta": "{rows} Zeilen, {levels} Stufen",
+        "searchLabel": "Suche",
+        "searchPlaceholder": "{rows} Amulett-Zeilen durchsuchen",
+        "levelLabel": "Stufe",
+        "allLevels": "Alle Stufen",
+        "levelOption": "Stufe {level}",
+        "stageLabel": "Stage",
+        "allStages": "Alle Stages",
+        "stageOption": "Stage {stage}",
+        "empty": "Keine Amulett-Zeile passt zu deinen Filtern."
+    },
+    "columns": {
+        "row": "Zeile",
+        "materials": "Material",
+        "stats": "Werte",
+        "power": "Macht",
+        "score": "Score"
+    },
+    "cells": {
+        "none": "Keine",
+        "percent": "{value}%"
+    },
+    "levels": {
+        "heading": "Stufen",
+        "level": "Stufe",
+        "levelName": "Stufe {level}",
+        "rows": "Zeilen",
+        "stats": "Werte, erste bis letzte",
+        "power": "Macht in der letzten Zeile",
+        "statsRange": "{first}% bis {last}%"
+    },
+    "exchange": {
+        "heading": "Materialwechselkurse",
+        "exchange": "Tausch",
+        "from": "Von",
+        "to": "Zu",
+        "weeklyLimit": "Wochenlimit"
+    }
+}

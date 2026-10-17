@@ -1,0 +1,262 @@
+{
+    "page": {
+        "title": "ヒーロー"
+    },
+    "view": {
+        "tabsLabel": "ヒーロー",
+        "heroesTab": "ヒーロー",
+        "gearTab": "ヒーロー装備",
+        "heroesSubline": "{chief} · {total}人中{owned}人所有",
+        "gearSubline": "{chief} · {count, plural, other {装備セット{amount}個}}"
+    },
+    "common": {
+        "owned": "所有",
+        "ownedLabel": "{hero}を所有",
+        "starLabel": "{hero}の星",
+        "levelLabel": "{hero}のレベル",
+        "talentLabel": "{hero}のタレント",
+        "skillLabel": "{hero}の{skill}",
+        "weaponLevelLabel": "{hero}の{weapon}レベル",
+        "shardsOwnedLabel": "{hero}の所有シャード",
+        "starAndTier": "星とティア",
+        "level": "レベル",
+        "noGoal": "目標なし",
+        "shards": "シャード",
+        "totalPower": "総戦力",
+        "unknown": "不明",
+        "plan": "プラン",
+        "generation": "第{generation}世代",
+        "exploration": "探索",
+        "expedition": "遠征",
+        "talent": "タレント",
+        "maxLevelSuffix": "/ {max}",
+        "heroCount": "{count, plural, other {ヒーロー{amount}人}}"
+    },
+    "goalText": {
+        "to": "{goal}へ"
+    },
+    "card": {
+        "summary": "{rarity} · {heroClass} · {generation}",
+        "talentRow": "タレント {name}",
+        "shardsOf": "/ {needed}",
+        "enoughShards": " シャードは十分です",
+        "shortBy": " {amount}不足",
+        "gearSet": "装備セット",
+        "notOwnedHint": "所有をオンにすると、星、レベル、スキルを記録できます。",
+        "details": "詳細"
+    },
+    "tab": {
+        "stats": {
+            "generations": "解放済みの世代",
+            "generationsValue": "0から{max}",
+            "heroesOwned": "解放済みヒーローのうち所有数",
+            "legendaryOwned": "解放済みレジェンドのうち所有数",
+            "atMaxLevel": "レベル80",
+            "heroPower": "ヒーロー戦力",
+            "heroPowerUnknown": "ヒーロー戦力、不明{amount}件を除く",
+            "withGoal": "目標あり"
+        },
+        "search": {
+            "label": "ヒーローを検索",
+            "placeholder": "{amount}人のヒーローを名前で検索"
+        },
+        "filters": "フィルター",
+        "maxOut": "最大化",
+        "status": "{total}人中{shown}人のヒーローを表示。このチーフでは第0世代から第{max}世代が解放済みです。目標はここでは読み取り専用で、プランで設定します。",
+        "empty": {
+            "title": "一致するヒーローがいません",
+            "description": "検索条件を変更するかフィルターをリセットすると、全ヒーローを表示します。",
+            "reset": "リセット"
+        },
+        "showMore": "さらに{amount}{count, plural, other {人}}を表示",
+        "toast": {
+            "notOwnedTitle": "{name}は未所有",
+            "notOwnedMessage": "星、レベル、スキルは保持されており、所有を再びオンにしたときに戻ります。",
+            "undo": "元に戻す",
+            "maxedTitle": "ヒーローを最大化しました",
+            "maxedMessage": "{heroes}を更新しました。"
+        }
+    },
+    "filtersFlyout": {
+        "title": "フィルター",
+        "description": "ページに表示するヒーローを選びます",
+        "reset": "リセット",
+        "show": "{heroes}を表示",
+        "all": "すべて",
+        "generation": "世代",
+        "rarity": "レアリティ",
+        "heroClass": "兵種",
+        "ownership": "所有状況",
+        "order": "並び順",
+        "notSaved": "フィルターは保存されません。",
+        "rarities": {
+            "Legendary": "レジェンド",
+            "Epic": "エピック",
+            "Rare": "レア"
+        },
+        "classes": {
+            "Infantry": "歩兵",
+            "Lancer": "槍兵",
+            "Marksman": "弓兵"
+        },
+        "ownershipOptions": {
+            "all": "すべて",
+            "owned": "所有",
+            "notOwned": "未所有"
+        },
+        "orderOptions": {
+            "owned": "所有を先頭に、次に新しい世代順",
+            "generation": "世代順（新しい順）",
+            "name": "名前順（A→Z）",
+            "power": "総戦力順（高い順）"
+        }
+    },
+    "maxOut": {
+        "title": "ヒーローを最大化",
+        "scopeLabel": "最大化するヒーロー",
+        "scope": {
+            "owned": "所有ヒーロー",
+            "unlocked": "解放済みのすべてのヒーロー（所有として設定）",
+            "selected": "ヒーローを選択（所有として設定）"
+        },
+        "searchLabel": "選択するヒーローを検索",
+        "searchPlaceholder": "名前でヒーローを検索",
+        "selectShown": "表示中をすべて選択",
+        "clear": "クリア",
+        "ownedTag": "所有",
+        "starAndTier": "星とティアを5.0まで",
+        "level": "レベルを80まで",
+        "levelHint": "スキルが最大で、古いヒーローのレベルを1のままにするときはオフにします。",
+        "skills": "スキルを5まで",
+        "skillsHint": "探索、遠征、タレント。",
+        "weapon": "専用武器を10まで",
+        "note": "オフにした項目はそのまま残ります。シャード数と目標は変更されません。適用後に元に戻せます。",
+        "cancel": "キャンセル",
+        "apply": "{heroes}を最大化"
+    },
+    "flyout": {
+        "fallbackTitle": "ヒーロー",
+        "description": "{rarity} {heroClass}、第{generation}世代",
+        "done": "完了",
+        "status": {
+            "title": "状態",
+            "furnaceNeeded": "レベル{level}に必要なFurnace",
+            "met": "達成",
+            "needsFurnace": "Furnace {required}が必要",
+            "levelPower": "レベルの戦力",
+            "skillPower": "スキルの戦力",
+            "starPower": "星の戦力",
+            "weaponPower": "武器の戦力",
+            "totalPower": "総戦力",
+            "note": "戦力には、レベル、スキル、星の表記、武器レベルが含まれます。"
+        },
+        "skills": {
+            "title": "スキル",
+            "aside": "スキルごとに5レベル",
+            "toLevel": "{level}まで: マニュアル{manuals}",
+            "needsStar": "星{star}が必要",
+            "starMet": "星{star}達成",
+            "talentTop": "タレントは最高レベルです。",
+            "talentNeedsStar": "レベル{level}には星{star}が必要",
+            "talentStarMet": "レベル{level}: 星{star}達成"
+        },
+        "weapon": {
+            "title": "専用武器: {name}",
+            "level": "武器レベル",
+            "widgetsForLevel": "レベル{level}に必要なWidgets",
+            "widgetsForLevels": "レベル{from}から{to}に必要なWidgets",
+            "expeditionBonus": "遠征ボーナス",
+            "bonus": "殺傷力 {lethality}% · 体力 {health}%",
+            "power": "武器の戦力",
+            "unlocksAt": "武器レベル{level}で解放"
+        },
+        "shards": {
+            "title": "シャード",
+            "owned": "所有シャード",
+            "goal": "目標",
+            "neededForGoal": "目標{goal}に必要な数",
+            "enough": "シャードは十分です",
+            "shortBy": "不足数",
+            "yes": "はい",
+            "sources": "シャードの入手元"
+        },
+        "stats": {
+            "title": "レベル80のステータス",
+            "explorationAt": "{stars}の探索",
+            "expeditionAt": "{stars}の遠征",
+            "explorationFull": "5.0の探索",
+            "expeditionFull": "5.0の遠征",
+            "exploration": "攻撃 {attack} · 防御 {defense} · HP {health}",
+            "expedition": "攻撃 {attack}% · 防御 {defense}%",
+            "estimate": "推定"
+        }
+    },
+    "plan": {
+        "title": "ヒーローのプラン",
+        "description": "現在から目標までのシャード、スキルのマニュアル、Widgets",
+        "saved": "プランを保存しました（{date}）",
+        "close": "閉じる",
+        "save": "プランを保存",
+        "noHeroes": "プランにヒーローがまだいません。上で所有ヒーローを追加してから、目標を引き上げてください。",
+        "add": {
+            "title": "ヒーローを追加",
+            "allIn": "所有ヒーローはすべてプランに入っています。ヒーローをプランするには、所有をオンにしてください。",
+            "selectLabel": "追加するヒーロー",
+            "button": "ヒーローを追加"
+        },
+        "block": {
+            "remove": "{hero}をプランから削除",
+            "starTo": "{stars}から",
+            "starGoal": "{hero}の星の目標",
+            "levelTo": "{current}から",
+            "goalLabel": "{hero}の{name}の目標",
+            "note": "現在の値は、ページ上のヒーローから取得します。変更はそちらで行ってください。"
+        },
+        "unmet": {
+            "title": "スキルレベルにはより高い星が必要です。",
+            "item": "{hero}: {skill}レベル{level}には星{star}が必要",
+            "message": "{items}。星の目標を上げるか、スキルの目標を下げてください。"
+        },
+        "shardsUsed": "使用するシャード: ヒーロー専用{own}、汎用{general}、合計{total}。ヒーロー専用のシャードが先に使われます。",
+        "result": {
+            "title": "結果、{steps}ステップ",
+            "widgets": "Widgets",
+            "weaponSkills": "{count, plural, other {武器スキル{amount}個を解放}}",
+            "note": "戦力はヒーローのプランに含まれません。この計算機は時間を返さず、速度の入力も受け付けません。",
+            "heads": {
+                "hero": "ヒーロー",
+                "starSteps": "星のステップ",
+                "skillLevels": "スキルレベル",
+                "shards": "シャード",
+                "widgets": "Widgets"
+            },
+            "tableLabel": "プラン結果の表"
+        },
+        "events": {
+            "svs": "SvS State of Power",
+            "allianceShowdown": "Alliance Showdown",
+            "kingOfIcefield": "King of Icefield",
+            "hallOfChief": "Hall of Chief"
+        }
+    },
+    "export": {
+        "button": "コアイベントへエクスポート",
+        "nothing": "このプランには、エクスポートするシャードもWidgetsも必要ありません。",
+        "shardsGroup": "シャード用",
+        "widgetsGroup": "Widgets用",
+        "widgets": "Widgets",
+        "manualsReason": "スキルのマニュアルをポイント対象にするイベントはありません",
+        "shards": {
+            "Legendary": "Mythic Hero Shards",
+            "Epic": "Epic Hero Shards",
+            "Rare": "Rare Hero Shards"
+        }
+    },
+    "service": {
+        "generalShard": {
+            "Legendary": "Mythic General Hero Shard",
+            "Epic": "Epic General Hero Shard",
+            "Rare": "Rare General Hero Shard"
+        }
+    }
+}

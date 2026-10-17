@@ -1,0 +1,104 @@
+{
+    "line": "{banners} Bannerbereiche, {facilities} Anlagen und {fortresses} Einträge zu Schloss, Bollwerken und Festungen. Nur Referenz, hier wird nichts gespeichert.",
+    "filters": {
+        "search": "Suche",
+        "searchPlaceholder": "Bereiche, Anlagen, Festungen suchen",
+        "structure": "Struktur",
+        "structures": {
+            "all": "Alle Strukturen",
+            "banners": "Banner",
+            "facilities": "Kartenanlagen",
+            "castle": "Schloss",
+            "stronghold": "Bollwerke",
+            "fortress": "Festungen"
+        }
+    },
+    "empty": "Nichts in dieser Liste passt zur Suche.",
+    "none": "Keine",
+    "banners": {
+        "title": "Baukosten der Banner",
+        "columns": {
+            "range": "Stufenbereich",
+            "min": "Min",
+            "max": "Max",
+            "cost": "Kosten pro Stufe"
+        },
+        "noCost": "Keine aufgeführt",
+        "count": "{count, plural, one {{amount} Bereich} other {{amount} Bereiche}}",
+        "detail": {
+            "title": "Bannerkosten",
+            "fields": {
+                "range": "Stufenbereich",
+                "min": "Niedrigste Stufe",
+                "max": "Höchste Stufe",
+                "cost": "Kosten pro Stufe"
+            }
+        }
+    },
+    "facilities": {
+        "title": "Kartenanlagen",
+        "count": "{count, plural, one {{amount} Anlage} other {{amount} Anlagen}}",
+        "columns": {
+            "facility": "Anlage",
+            "bonus": "Bonus",
+            "level": "Stufe {level}",
+            "listed": "Aufgeführte Stufen",
+            "ownLimit": "Eigenes Limit"
+        },
+        "cell": "{available} auf der Karte",
+        "listedOf": "{listed} von {total}",
+        "levelsNote": "Die Daten listen {listed} von {total} Stufen dieser Anlage. Nicht aufgeführte Stufen erscheinen als Unbekannt.",
+        "detail": {
+            "title": "Stufen von {name}",
+            "level": "Stufe {level}",
+            "columns": {
+                "level": "Stufe",
+                "booster": "Booster",
+                "injured": "Schwer verwundet",
+                "losses": "Verluste",
+                "ownLimit": "Eigenes Limit",
+                "available": "Auf der Karte",
+                "locations": "Orte (x, y)"
+            },
+            "percent": "{value}%",
+            "location": "{x}, {y}"
+        }
+    },
+    "fortresses": {
+        "title": "Schloss, Bollwerke und Festungen",
+        "kinds": {
+            "castle": "Schloss",
+            "stronghold": "Bollwerk",
+            "fortress": "Festung"
+        },
+        "columns": {
+            "name": "Name",
+            "kind": "Art",
+            "x": "X",
+            "y": "Y",
+            "phases": "Phasen",
+            "phaseOne": "Belohnung Phase 1"
+        },
+        "mobileMeta": "{kind}, x {x}, y {y}",
+        "count": "{count, plural, one {{amount} Struktur} other {{amount} Strukturen}}"
+    },
+    "map": {
+        "title": "Kartenplatzhalter",
+        "label": "Karte von Schloss, Bollwerken und Festungen nach ihren x- und y-Werten",
+        "note": "Schloss, Bollwerke und Festungen, eingezeichnet nach ihren x- und y-Werten auf einem Quadrat von {size} mal {size}. Die Quadratgröße ist eine Schätzung, das Paket hat keine Kartengröße.",
+        "legend": {
+            "castle": "Quadrat: Schloss",
+            "stronghold": "Raute: Bollwerk",
+            "fortress": "Kreis: Festung"
+        }
+    },
+    "detail": {
+        "title": "Phasenbelohnungen",
+        "phases": "{count, plural, one {{amount} Phase} other {{amount} Phasen}}",
+        "columns": {
+            "phase": "Phase",
+            "reward": "Belohnung"
+        },
+        "noRewards": "Das Paket hat für diese Struktur keine Phasenbelohnungen."
+    }
+}

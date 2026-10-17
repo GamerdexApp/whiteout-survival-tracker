@@ -1,0 +1,115 @@
+{
+  "title": "보너스",
+  "all": "전체",
+  "list": {
+    "separator": ", ",
+    "andLast": "{rest} 및 {last}"
+  },
+  "sourceTypes": {
+    "account": "계정",
+    "hero": "영웅",
+    "expert": "전문가",
+    "research": "연구",
+    "allianceTech": "연맹 기술",
+    "allianceFacility": "연맹 시설",
+    "alliancePrestige": "연맹 위상 건물",
+    "vip": "VIP",
+    "building": "건물",
+    "skin": "스킨",
+    "tundraAlbum": "Tundra Album",
+    "collection": "컬렉션",
+    "decoration": "내 섬",
+    "treeOfLife": "내 섬",
+    "castleAppointment": "성채 직책",
+    "pet": "펫",
+    "chiefGear": "영주 장비",
+    "chiefGearSet": "영주 장비 세트 보너스",
+    "chiefCharm": "영주 참",
+    "chiefOrder": "영주 명령",
+    "presidentSkill": "대통령 스킬",
+    "marchQueuePack": "행군 대열 팩"
+  },
+  "unit": {
+    "percent": "{value}%",
+    "hours": "{value}시간",
+    "seconds": "{value}초",
+    "plain": "{value}"
+  },
+  "view": {
+    "subline": "{name} · 다른 페이지의 모든 보너스를 합산했어요. 이 페이지는 아무것도 저장하지 않아요.",
+    "tiles": {
+      "stats": "결과의 능력치",
+      "groups": "능력치가 있는 그룹",
+      "sources": "효과를 주는 출처 종류"
+    },
+    "pending": {
+      "title": "아직 모든 출처가 반영된 것은 아니에요.",
+      "text": "아래 각 출처는 그것을 저장하는 페이지에서 읽어와요. 이 페이지들이 완성되기 전에는 아무것도 더하지 않아요: {pending}. {unstored}은(는) 아직 어떤 페이지에서도 저장하지 않아요."
+    },
+    "rulesTitle": "수치 계산 방식",
+    "rules": {
+      "affinity": {
+        "title": "전문가 친밀도",
+        "text": "전문가는 친밀도 레벨에 따라 커지는 기본 보너스를 줘요. 10, 20부터 100레벨까지는 전문가를 승급해야 해요. 그전까지는 이전 레벨의 보너스가 적용돼요."
+      },
+      "albums": {
+        "title": "앨범은 완성해야 적용",
+        "text": "Tundra Album은 퍼즐 9개를 모두 완료해야 버프를 줘요."
+      },
+      "pets": {
+        "title": "펫은 정제 값을 사용",
+        "text": "각 펫은 펫 페이지에서 설정한 대로 기본 값 또는 정제 값을 적용해요."
+      },
+      "noNumber": {
+        "title": "수치가 없으면 계산하지 않음",
+        "text": "데이터에 수치가 없는 출처는 아무것도 더하지 않아요. 0으로 표시하지 않아요."
+      },
+      "apart": {
+        "title": "따로 보관",
+        "text": "퍼센트 값과 고정 값은 절대 더하지 않아요. Infantry, Lancer, Marksman 능력치는 Troops 능력치와 별개예요."
+      },
+      "time": {
+        "title": "시간 능력치",
+        "text": "Construction Speed Boost는 건설마다 단축되는 시간이에요. Ally Help Time은 초 단위예요. 각각 단위를 표시해요."
+      }
+    },
+    "search": {
+      "label": "능력치 검색",
+      "placeholder": "능력치 검색"
+    },
+    "views": {
+      "label": "보기",
+      "stat": "능력치별",
+      "source": "출처별"
+    },
+    "empty": {
+      "noBonusesTitle": "아직 보너스가 없어요",
+      "noBonusesDescription": "보너스를 저장하는 페이지를 채우면 여기에 나타나요.",
+      "noMatchTitle": "일치하는 능력치가 없어요",
+      "noMatchDescription": "검색어나 그룹을 바꿔보세요."
+    },
+    "statCount": "{count, plural, other {능력치 {amount}개}}",
+    "sourceCount": "{count, plural, other {출처 {amount}개}}",
+    "columns": {
+      "statAndSource": "능력치와 출처",
+      "sourceType": "출처 종류",
+      "counted": "반영"
+    }
+  },
+  "eventRules": {
+    "title": "이벤트 버프 규칙",
+    "intro": "이벤트 중에도 적용되는 보너스 종류를 알려줘요. 수치가 아닌 규칙이므로 위 합계에는 더하지 않아요.",
+    "event": "이벤트",
+    "columns": {
+      "cityBonusWarsBuffs": "도시 보너스",
+      "deploymentCapacity": "출정",
+      "territoryBonuses": "영토",
+      "marchAccelerator": "행군 가속"
+    },
+    "applicability": {
+      "yes": "예",
+      "no": "아니요",
+      "partial": "일부"
+    }
+  }
+}

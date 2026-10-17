@@ -1,0 +1,19 @@
+{
+    "duration": {
+        "days": "{value}日",
+        "hours": "{value}時間",
+        "minutes": "{value}分",
+        "seconds": "{value}秒",
+        "zero": "0秒",
+        "separator": " "
+    },
+    "timeLeft": {
+        "left": "残り{duration}",
+        "ready": "完了可能"
+    },
+    "saveFailed": {
+        "title": "保存されていません",
+        "message": "ブラウザの保存領域がいっぱいです。今すぐバックアップをエクスポートしてください。",
+        "exportBackup": "バックアップをエクスポート"
+    }
+}

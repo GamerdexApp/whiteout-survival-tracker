@@ -1,0 +1,115 @@
+{
+    "title": "ボーナス",
+    "all": "すべて",
+    "list": {
+        "separator": "、",
+        "andLast": "{rest}、{last}"
+    },
+    "sourceTypes": {
+        "account": "アカウント",
+        "hero": "ヒーロー",
+        "expert": "エキスパート",
+        "research": "研究",
+        "allianceTech": "同盟テック",
+        "allianceFacility": "同盟施設",
+        "alliancePrestige": "同盟名声建造物",
+        "vip": "VIP",
+        "building": "建物",
+        "skin": "スキン",
+        "tundraAlbum": "Tundra Album",
+        "collection": "コレクション",
+        "decoration": "My Island",
+        "treeOfLife": "My Island",
+        "castleAppointment": "城の役職",
+        "pet": "ペット",
+        "chiefGear": "チーフ装備",
+        "chiefGearSet": "チーフ装備セットボーナス",
+        "chiefCharm": "チーフチャーム",
+        "chiefOrder": "チーフオーダー",
+        "presidentSkill": "大統領スキル",
+        "marchQueuePack": "行軍キューパック"
+    },
+    "unit": {
+        "percent": "{value}%",
+        "hours": "{value}時間",
+        "seconds": "{value}秒",
+        "plain": "{value}"
+    },
+    "view": {
+        "subline": "{name} · 他のページのボーナスをすべて合算しています。このページには何も保存されません。",
+        "tiles": {
+            "stats": "結果のステータス数",
+            "groups": "ステータスのあるグループ",
+            "sources": "効果を持つ入手元の種類"
+        },
+        "pending": {
+            "title": "まだすべての入手元が集計されているわけではありません。",
+            "text": "以下の各入手元は、それを保存するページから読み込みます。これらのページが完成するまで加算されません: {pending}。{unstored}は、まだどのページにも保存されていません。"
+        },
+        "rulesTitle": "数値の集計方法",
+        "rules": {
+            "affinity": {
+                "title": "エキスパートの親密度",
+                "text": "エキスパートは親密度レベルに応じて増える基本ボーナスを与えます。レベル10、20、100まで10ごとにエキスパートの昇格が必要です。昇格するまでは、ひとつ前のレベルのボーナスが適用されます。"
+            },
+            "albums": {
+                "title": "アルバムは完成時に集計",
+                "text": "Tundra Albumは、9枚のパズルをすべて完成させたときだけ効果を与えます。"
+            },
+            "pets": {
+                "title": "ペットは精錬後の値を使用",
+                "text": "各ペットは、ペットページで設定した通常値または精錬後の値で集計されます。"
+            },
+            "noNumber": {
+                "title": "数値がなければ集計しない",
+                "text": "データに数値がない入手元は何も加算されません。0としても表示されません。"
+            },
+            "apart": {
+                "title": "別々に管理",
+                "text": "パーセント値と固定値は合算しません。歩兵、槍兵、弓兵のステータスは、部隊全体のステータスとは別です。"
+            },
+            "time": {
+                "title": "時間のステータス",
+                "text": "建設速度ボーナスは、建設ごとに短縮される時間数です。同盟援助時間は秒単位です。それぞれ単位を表示します。"
+            }
+        },
+        "search": {
+            "label": "ステータスを検索",
+            "placeholder": "ステータスを検索"
+        },
+        "views": {
+            "label": "表示",
+            "stat": "ステータス別",
+            "source": "入手元別"
+        },
+        "empty": {
+            "noBonusesTitle": "ボーナスはまだありません",
+            "noBonusesDescription": "ボーナスを保存するページに入力すると、ここに表示されます。",
+            "noMatchTitle": "一致するステータスがありません",
+            "noMatchDescription": "検索条件またはグループを変更してください。"
+        },
+        "statCount": "{count, plural, other {ステータス{amount}件}}",
+        "sourceCount": "{count, plural, other {入手元{amount}件}}",
+        "columns": {
+            "statAndSource": "ステータスと入手元",
+            "sourceType": "入手元の種類",
+            "counted": "集計済み"
+        }
+    },
+    "eventRules": {
+        "title": "イベント効果のルール",
+        "intro": "イベント中にどの種類のボーナスが引き続き適用されるかを示します。数値ではなくルールのため、上の合計には加算されません。",
+        "event": "イベント",
+        "columns": {
+            "cityBonusWarsBuffs": "都市ボーナス",
+            "deploymentCapacity": "出撃",
+            "territoryBonuses": "領土",
+            "marchAccelerator": "行軍加速"
+        },
+        "applicability": {
+            "yes": "はい",
+            "no": "いいえ",
+            "partial": "一部"
+        }
+    }
+}

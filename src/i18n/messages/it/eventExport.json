@@ -1,0 +1,32 @@
+{
+  "title": "Esporta negli Eventi principali",
+  "description": "Scegli l'evento, poi i giorni",
+  "events": {
+    "svs": "SvS",
+    "showdown": "Alliance Showdown",
+    "king": "King of Icefield",
+    "hall": "Hall of Chief"
+  },
+  "stepEvent": "1. Evento",
+  "stepDay": "{number}. Giorno dell'evento {group}",
+  "stepDayPlain": "Giorno dell'evento",
+  "stepItems": "{number}. Oggetti di questo piano",
+  "noDay": "{event} non ha una riga di punteggio per questi oggetti.",
+  "daysHint": "Sono elencati solo i giorni le cui righe di punteggio contano un oggetto. Hall of Chief elenca le fasi invece dei giorni. Ogni gruppo di oggetti ha il suo giorno.",
+  "lineEach": "{points} ciascuno il {day}.",
+  "lineNotScored": "{event} non ha una riga di punteggio per questo.",
+  "notScored": "Senza punti",
+  "points": "{points} punti",
+  "addedTo": "Aggiunto a {event}",
+  "nothingScores": "Nulla in questo piano dà punti in {event} nei giorni scelti.",
+  "summaryTitle": "Riepilogo dell'esportazione",
+  "summaryHint": "Quanto darebbero gli stessi oggetti in ogni evento se ogni oggetto fosse speso in un giorno che lo premia. Solo l'evento e i giorni selezionati li ricevono. La pagina Eventi principali li mostra come quantità che puoi cambiare.",
+  "selected": "Selezionato",
+  "cancel": "Annulla",
+  "export": "Esporta in {event}",
+  "toast": {
+    "title": "Esportato negli Eventi principali",
+    "message": "{points} punti aggiunti a {event}.",
+    "undo": "Annulla"
+  }
+}

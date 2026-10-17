@@ -1,0 +1,90 @@
+{
+    "page": {
+        "title": "Tundra Album"
+    },
+    "view": {
+        "subline": "{chief} · {details} · アルバム{total}冊中{complete}冊が完成"
+    },
+    "summary": {
+        "label": "完成したアルバム",
+        "value": "{total}冊中{done}冊",
+        "progress": "完成したアルバム",
+        "inData": "データにあるアルバムは{all}冊中{shown}冊です"
+    },
+    "buffs": {
+        "title": "現在集計中のバフ",
+        "derived": "算出値",
+        "none": "完成したアルバムがまだないため、Tundra Albumのバフは集計されません。",
+        "note": "完成したアルバムだけが集計されます。これらのバフは<link>ボーナス</link>ページに反映されます。"
+    },
+    "album": {
+        "status": {
+            "complete": "完成",
+            "inProgress": "進行中"
+        },
+        "buffWhenComplete": "完成時のバフ",
+        "puzzlesDone": "完成したパズル",
+        "puzzlesValue": "{total}枚中{done}枚",
+        "puzzlesProgress": "{album}の完成したパズル",
+        "completionRewards": "完成報酬",
+        "markComplete": "アルバムを完成にする",
+        "notCounting": "まだ集計されていません。{buff}は、{total}枚のパズルがすべて完成したときだけボーナスページで集計されます。「アルバムを完成にする」で{total}枚すべてを設定し、元に戻すトーストを表示します。",
+        "counting": "集計中です。{buff}はボーナスページに反映されています。パズルのチェックを外すと、再び対象外になります。",
+        "piecesValue": "ピース{total}個中{collected}個収集済み"
+    },
+    "puzzle": {
+        "pieces": "{count, plural, other {ピース{amount}個}}、星1から5: {split}",
+        "reward": "報酬",
+        "done": "パズル完成、すべてのピースを収集済み",
+        "doneFor": "完成、{puzzle}",
+        "collectedLabel": "収集したピース",
+        "collected": "{total}個中{collected}個",
+        "pieceLabel": "{name}、星{stars}",
+        "pieceHint": "持っているピースを選んでください。パズルを完成にすると、すべてのピースが収集済みになります。",
+        "allCollected": "パズルが完成しているため、すべてのピースが収集済みです。"
+    },
+    "reward": {
+        "line": "{item} {amount}",
+        "sized": "{item} {amount}（{size}）",
+        "unknownItem": "不明なアイテム"
+    },
+    "toast": {
+        "markedTitle": "{album}を完成にしました",
+        "markedMessage": "{total}枚のパズルがすべて完成しました。",
+        "unmarkedTitle": "{puzzle}の完成を取り消しました",
+        "unmarkedMessage": "{album}は再び進行中になり、そのバフはボーナスから外れました。",
+        "undo": "元に戻す"
+    },
+    "notInData": "Tundra Album全{total}冊のうち、残りの{count}冊はまだデータにありません。パッケージに追加され次第、反映されます。",
+    "pieces": {
+        "label": "収集したピース",
+        "value": "{available}個中{collected}個",
+        "progress": "全アルバムの収集したピース",
+        "viewRewards": "ピース報酬を見る"
+    },
+    "rewardsFlyout": {
+        "title": "ピース数の報酬",
+        "description": "全アルバムで集めたピースの合計数に応じて受け取れる報酬です",
+        "close": "閉じる",
+        "collected": "収集したピース",
+        "collectedValue": "{available}個中{collected}個",
+        "progress": "全アルバムの収集したピース",
+        "reached": "ピース数の報酬{all}件中{reached}件に到達",
+        "next": "次の報酬はピース{pieces}個で、あと{missing}個集める必要があります。",
+        "allReached": "データにあるピース数の報酬にすべて到達しました。",
+        "totalSoFar": "これまでに獲得した報酬",
+        "tree": "収集したピース数ごとの報酬",
+        "tier": "ピース{pieces}個で報酬{tier}",
+        "stateReached": "収集済み",
+        "stateNext": "次、あと{missing}個",
+        "stateLater": "あと{missing}個"
+    },
+    "picker": {
+        "label": "アルバム",
+        "title": "アルバム",
+        "complete": "アルバム完成",
+        "puzzles": "パズル{total}枚中{done}枚",
+        "pieces": "ピース{total}個中{collected}個",
+        "piecesProgress": "{album}の収集したピース"
+    }
+}

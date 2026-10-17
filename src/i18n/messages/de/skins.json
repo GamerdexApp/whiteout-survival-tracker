@@ -1,0 +1,78 @@
+{
+    "page": {
+        "title": "Skins"
+    },
+    "view": {
+        "subline": "{chief} · {details} · {owned} von {total} Skins im Besitz"
+    },
+    "owned": {
+        "label": "Im Besitz",
+        "value": "{owned} von {total}",
+        "progress": "Skins im Besitz",
+        "withBonus": "{withBonus} von {total} Skins haben einen Bonus"
+    },
+    "totals": {
+        "title": "Boni aus Skins im Besitz",
+        "estimate": "Schätzung",
+        "percent": "+{amount}%",
+        "flat": "+{amount}",
+        "none": "Noch kein Skin im Besitz hat einen Bonus.",
+        "note": "{count, plural, one {Summe des Bonus von {amount} Skin im Besitz} other {Summe des Bonus von {amount} Skins im Besitz}}, pro Wert, von der App berechnet. Es wird angenommen, dass jeder Skin im Besitz gleichzeitig wirkt. Truppenangriff und Truppen-Angriff werden zusammengezählt."
+    },
+    "expiry": {
+        "title": "Ablauf wird nicht verfolgt.",
+        "text": "Die Dauer (permanent, 30 Tage, pro Rang) steht nur im Beschreibungstext. Ein befristeter Skin bleibt im Besitz, bis du ihn entfernst."
+    },
+    "search": {
+        "label": "Skins suchen",
+        "placeholder": "Skins nach Name oder Quelle suchen"
+    },
+    "filters": {
+        "button": "Filter",
+        "title": "Filter",
+        "description": "Wähle, was die Skin-Liste zeigt",
+        "reset": "Zurücksetzen",
+        "showButton": "{count, plural, one {{amount} Skin zeigen} other {{amount} Skins zeigen}}",
+        "skinType": "Skin-Typ",
+        "typeAll": "Alle {amount}",
+        "typeOption": "{type} {amount}",
+        "owned": "Besitz",
+        "bonus": "Bonus",
+        "order": "Reihenfolge",
+        "notSaved": "Filter werden nicht gespeichert.",
+        "ownedOptions": {
+            "all": "Alle Skins",
+            "owned": "Im Besitz",
+            "notOwned": "Nicht im Besitz"
+        },
+        "bonusOptions": {
+            "any": "Beliebig",
+            "has": "Mit Bonus",
+            "none": "Ohne Bonus"
+        },
+        "orderOptions": {
+            "game": "Spielreihenfolge",
+            "name": "Name, A bis Z",
+            "owned": "Besitz zuerst"
+        }
+    },
+    "status": {
+        "showing": "{shown} von {total} Skins angezeigt.",
+        "showingFiltered": "{shown} von {total} Skins angezeigt. Filter: {filters}.",
+        "showMore": "{count, plural, one {{amount} weiteren Skin zeigen} other {{amount} weitere Skins zeigen}}"
+    },
+    "empty": {
+        "title": "Keine passenden Skins",
+        "description": "Ändere die Suche oder die Filter, um Skins zu sehen.",
+        "reset": "Filter zurücksetzen"
+    },
+    "card": {
+        "bonus": "Bonus",
+        "source": "Quelle",
+        "unknown": "Unbekannt",
+        "bonusValue": "{value} {stat}",
+        "owned": "Im Besitz",
+        "ownedLabel": "Im Besitz: {name}, {type}",
+        "domainWarning": "Der Domain-Bonus steht im Beschreibungstext und wird nicht gezählt."
+    }
+}

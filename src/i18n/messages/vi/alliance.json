@@ -1,0 +1,50 @@
+{
+    "page": {
+        "title": "Liên minh"
+    },
+    "view": {
+        "subline": "{chief} · {details} · cấp biểu ngữ {level}"
+    },
+    "banner": {
+        "title": "Biểu ngữ liên minh",
+        "currentLevel": "Cấp hiện tại",
+        "levelLabel": "Cấp biểu ngữ",
+        "maxHint": "Số nguyên từ 0 đến {max}.",
+        "rangeChip": "{range}",
+        "costHeading": "Chi phí mỗi cấp trong {range}",
+        "noTimeOrPower": "Biểu ngữ không có thời gian xây hay sức mạnh trong gói dữ liệu, nên không hiển thị.",
+        "noCost": "Không tốn",
+        "none": "Không có",
+        "lower": "Giảm cấp biểu ngữ",
+        "raise": "Tăng cấp biểu ngữ"
+    },
+    "structures": {
+        "title": "Công trình liên minh",
+        "tech": {
+            "title": "Công nghệ",
+            "description": "{count} nút trong Growth, Territory và Battle",
+            "status": "{maxed} tối đa, {progress} đang làm, {locked} đã khóa"
+        },
+        "facilities": {
+            "title": "Cơ sở",
+            "description": "{count} cơ sở trên bản đồ",
+            "owned": "{owned} đã sở hữu"
+        },
+        "fortresses": {
+            "title": "Pháo đài",
+            "description": "Lâu đài, {strongholds} thành trì, {fortresses} pháo đài",
+            "reference": "Chỉ để tham khảo"
+        }
+    },
+    "table": {
+        "title": "Chi phí biểu ngữ theo khoảng cấp",
+        "note": "{count} khoảng, mọi cấp trong một khoảng có cùng chi phí",
+        "range": "Khoảng",
+        "state": "Trạng thái",
+        "built": "Đã xây",
+        "current": "Hiện tại",
+        "notBuilt": "Chưa xây",
+        "none": "Không có",
+        "noCost": "Không tốn"
+    }
+}

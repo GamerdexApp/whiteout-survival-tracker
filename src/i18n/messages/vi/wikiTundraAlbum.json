@@ -1,0 +1,32 @@
+{
+    "line": "Gói dữ liệu có {have} trên {total} album. Mỗi album có một buff, phần thưởng hoàn thành và {puzzles} ghép hình.",
+    "note": "{missing} album còn lại sẽ được thêm khi gói dữ liệu có.",
+    "albums": "Album",
+    "puzzleCount": "{count, plural, other {{amount} ghép hình}}",
+    "pieceCount": "{count, plural, other {{amount} mảnh ghép}}",
+    "view": {
+        "label": "Chế độ xem",
+        "puzzles": "Ghép hình",
+        "pieces": "Mọi mảnh ghép"
+    },
+    "album": {
+        "counts": "{puzzles}, {pieces}",
+        "buff": "Buff khi hoàn thành",
+        "buffValue": "{stat} {value}",
+        "rewards": "Phần thưởng hoàn thành",
+        "buffNote": "Buff chỉ được tính khi xong cả {puzzles} ghép hình."
+    },
+    "puzzles": {
+        "title": "Ghép hình",
+        "puzzle": "Ghép hình",
+        "pieces": "Mảnh ghép",
+        "star": "Sao {stars}",
+        "reward": "Phần thưởng"
+    },
+    "allPieces": {
+        "title": "Mọi mảnh ghép",
+        "summary": "{pieces} trong {puzzles}",
+        "imageNote": "Hình mảnh ghép lấy từ gói dữ liệu. Mảnh không có hình hiện là một ô vuông trơn.",
+        "stars": "{count, plural, other {{amount} sao}}"
+    }
+}

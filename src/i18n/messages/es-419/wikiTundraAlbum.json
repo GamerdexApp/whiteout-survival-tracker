@@ -1,0 +1,32 @@
+{
+  "line": "El paquete de datos tiene {have} de los {total} álbumes. Cada uno tiene una bonificación, recompensas por completarlo y {puzzles} rompecabezas.",
+  "note": "Los otros {missing} álbumes se agregan cuando el paquete de datos los incluya.",
+  "albums": "Álbumes",
+  "puzzleCount": "{count, plural, one {{amount} rompecabezas} other {{amount} rompecabezas}}",
+  "pieceCount": "{count, plural, one {{amount} pieza} other {{amount} piezas}}",
+  "view": {
+    "label": "Vista",
+    "puzzles": "Rompecabezas",
+    "pieces": "Todas las piezas"
+  },
+  "album": {
+    "counts": "{puzzles}, {pieces}",
+    "buff": "Bonificación al completar",
+    "buffValue": "{stat} {value}",
+    "rewards": "Recompensas por completar",
+    "buffNote": "La bonificación solo cuenta cuando los {puzzles} rompecabezas están terminados."
+  },
+  "puzzles": {
+    "title": "Rompecabezas",
+    "puzzle": "Rompecabezas",
+    "pieces": "Piezas",
+    "star": "Estrella {stars}",
+    "reward": "Recompensa"
+  },
+  "allPieces": {
+    "title": "Todas las piezas",
+    "summary": "{pieces} en {puzzles}",
+    "imageNote": "Las imágenes de las piezas vienen del paquete de datos. Una pieza sin imagen muestra un cuadrado liso.",
+    "stars": "{count, plural, one {{amount} estrella} other {{amount} estrellas}}"
+  }
+}

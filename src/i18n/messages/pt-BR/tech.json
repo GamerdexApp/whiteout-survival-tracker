@@ -1,0 +1,98 @@
+{
+  "page": {
+    "title": "Tecnologia"
+  },
+  "view": {
+    "subline": "{chief} · {count} nós de tecnologia da aliança em Crescimento, Território e Batalha"
+  },
+  "summary": {
+    "maxed": "No máximo",
+    "inProgress": "Em andamento",
+    "notStarted": "Não iniciado",
+    "locked": "Bloqueado"
+  },
+  "status": {
+    "maxed": "No máximo",
+    "inProgress": "Em andamento",
+    "notStarted": "Não iniciado",
+    "locked": "Bloqueado"
+  },
+  "tabs": {
+    "label": "Categorias de tecnologia"
+  },
+  "categories": {
+    "Growth": "Crescimento",
+    "Territory": "Território",
+    "Battle": "Batalha"
+  },
+  "filters": {
+    "search": "Buscar",
+    "searchLabel": "Buscar nós de tecnologia",
+    "searchPlaceholder": "Nome do nó",
+    "tier": "Tier",
+    "allTiers": "Todos os tiers",
+    "tierOption": "Tier {tier}",
+    "status": "Status",
+    "allStatuses": "Todos",
+    "button": "Busca e filtros",
+    "title": "Busca e filtros",
+    "description": "Encontre nós de tecnologia por nome, tier e status",
+    "reset": "Redefinir filtros",
+    "done": "Mostrar {count}",
+    "shown": "{shown} de {total} nós exibidos"
+  },
+  "table": {
+    "node": "Nó",
+    "level": "Nível",
+    "bonus": "Bônus",
+    "cost": "Custo do próximo nível",
+    "time": "Tempo",
+    "needs": "Requer"
+  },
+  "node": {
+    "tierDescription": "Tier {tier} · {description}",
+    "levelLabel": "Nível de {name}",
+    "levelOf": "{level} / {max}",
+    "open": "Abrir {name}",
+    "bonusOf": "{now} de {max}",
+    "bonusNone": "Nenhum ainda, máx. {max}",
+    "noBonus": "Sem bônus",
+    "maxed": "No máximo",
+    "noTime": "Sem tempo",
+    "readyToUpgrade": "Pronto para melhorar",
+    "nothingNeeded": "Nada necessário",
+    "needsPart": "Requer {name} nível {level}",
+    "costLine": "{name} {amount}",
+    "lockedHint": "Bloqueado até {names}",
+    "requirementPart": "{name} nível {level}"
+  },
+  "flyout": {
+    "title": "{name}",
+    "subtitle": "{category}, tier {tier}. {description}",
+    "close": "Fechar",
+    "level": "Nível",
+    "bonusNow": "Bônus agora",
+    "needsFor": "Requer para o nível {level}",
+    "needsNothing": "Nada necessário.",
+    "needsLine": "Requer nível {need}, você tem o nível {have}",
+    "met": "Atendido",
+    "notMet": "Não atendido",
+    "requiredBy": "Exigido por",
+    "requiredByNone": "Nenhum outro nó precisa deste.",
+    "requiredByLine": "{category}, tier {tier}, a partir do nível {from} requer {name} nível {need}",
+    "allLevels": "Todos os níveis",
+    "levelRow": "Nível {level}",
+    "done": "Feito",
+    "next": "Próximo",
+    "later": "Depois",
+    "remaining": "Falta até o máximo",
+    "derived": "Calculado",
+    "remainingNone": "Nada resta. Este nó está no máximo.",
+    "remainingLine": "{cost}",
+    "remainingTime": "{time}"
+  },
+  "empty": {
+    "title": "Nenhum nó encontrado",
+    "description": "Mude a busca ou os filtros para ver mais nós."
+  }
+}

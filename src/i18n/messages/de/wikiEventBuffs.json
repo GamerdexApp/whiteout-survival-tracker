@@ -1,0 +1,67 @@
+{
+    "line": "Welche Buffquellen in jedem der {modes} Spielmodi gelten: ja, nein oder teilweise für {sources} Buffarten.",
+    "matrix": {
+        "title": "Buff-Matrix",
+        "meta": "{modes} Modi, {sources} Buffarten",
+        "table": "Buffquellen nach Spielmodus",
+        "mode": "Spielmodus"
+    },
+    "sources": {
+        "cityBonusWarsBuffs": {
+            "short": "Stadtbonus",
+            "full": "Stadtbonus und Kriegsbuffs"
+        },
+        "deploymentCapacity": {
+            "short": "Einsatzkap.",
+            "full": "Einsatzkapazität"
+        },
+        "petSkills": {
+            "short": "Haustier",
+            "full": "Haustierfähigkeiten"
+        },
+        "daybreakIsland": {
+            "short": "Daybreak",
+            "full": "Daybreak Island"
+        },
+        "presidentSkills": {
+            "short": "Präsident",
+            "full": "Präsidentenfähigkeiten"
+        },
+        "ministerBuff": {
+            "short": "Minister",
+            "full": "Minister-Buff"
+        },
+        "territoryBonuses": {
+            "short": "Territorium",
+            "full": "Territoriumsboni"
+        },
+        "facilityBuff": {
+            "short": "Anlage",
+            "full": "Anlagen-Buff"
+        },
+        "marchAccelerator": {
+            "short": "Marschbeschl.",
+            "full": "Marschbeschleuniger"
+        },
+        "frostdragonTyrantTitles": {
+            "short": "Tyrann-Titel",
+            "full": "Titel des Frostdragon Tyrant"
+        },
+        "frostSphereDomainBonus": {
+            "short": "Frost Sphere",
+            "full": "Domain-Bonus der Frost Sphere"
+        }
+    },
+    "applicability": {
+        "yes": "Ja",
+        "no": "Nein",
+        "partial": "Teilweise"
+    },
+    "notes": {
+        "title": "Notizen nach Spielmodus",
+        "table": "Notizen nach Spielmodus",
+        "petSkillsAutoApplied": "Haustierfähigkeiten automatisch angewendet",
+        "note": "Notiz",
+        "noNote": "Keine"
+    }
+}

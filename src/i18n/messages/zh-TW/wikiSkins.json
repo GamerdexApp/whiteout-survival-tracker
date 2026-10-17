@@ -1,0 +1,40 @@
+{
+    "line": "{types}共 {skins}，含加成、取得方式和持續時間。",
+    "skinCount": "{count, plural, other {{amount} 個外觀}}",
+    "typeCount": "{count, plural, other {{amount} 種類型}}",
+    "gallery": {
+        "title": "外觀圖庫",
+        "showing": "顯示 {shown} / {total}",
+        "search": "搜尋",
+        "searchPlaceholder": "依名稱或來源搜尋外觀",
+        "bonusStat": "加成屬性",
+        "anyStat": "任何屬性",
+        "noBonus": "沒有加成",
+        "duration": "期限",
+        "anyDuration": "任何期限",
+        "permanent": "永久",
+        "timed": "限時",
+        "notStated": "未註明",
+        "types": "外觀類型",
+        "allTypes": "全部",
+        "empty": {
+            "title": "沒有符合的外觀",
+            "description": "請更改搜尋或篩選以查看外觀。"
+        }
+    },
+    "columns": {
+        "skin": "外觀",
+        "type": "類型",
+        "bonus": "加成",
+        "duration": "期限（自由文字）",
+        "sources": "來源"
+    },
+    "bonusValue": "{stat} {value}",
+    "detail": {
+        "type": "類型",
+        "bonus": "加成",
+        "duration": "期限",
+        "sources": "來源",
+        "description": "說明"
+    }
+}

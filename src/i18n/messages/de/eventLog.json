@@ -1,0 +1,129 @@
+{
+    "title": "Event-Log",
+    "events": {
+        "svs": "SvS, State of Power",
+        "showdown": "Alliance Showdown",
+        "king": "King of Icefield",
+        "hall": "Hall of Chief"
+    },
+    "tabs": {
+        "label": "Ansichten des Event-Logs",
+        "current": "Aktuelles Event",
+        "history": "Verlauf"
+    },
+    "dates": {
+        "title": "Event-Daten",
+        "start": "Start",
+        "end": "Ende",
+        "days": "{count, plural, one {{amount} Tag} other {{amount} Tage}}",
+        "endBeforeStart": "Das Enddatum liegt vor dem Startdatum."
+    },
+    "results": {
+        "rank": "Rang",
+        "alliance": "Allianz",
+        "score": "Score",
+        "allianceShort": "Alli",
+        "scoreOf": "{day}, Score",
+        "rankOf": "{day}, Rang",
+        "allianceOf": "{day}, Allianzrang",
+        "plan": "Plan {total}",
+        "notStarted": "Nicht gestartet",
+        "opensLater": "Öffnet später",
+        "empty": "Leer",
+        "locked": "Gesperrt",
+        "lock": "Sperren",
+        "unlock": "Entsperren",
+        "lockDay": "{day} sperren",
+        "unlockDay": "{day} entsperren"
+    },
+    "cards": {
+        "svsDays": "Vorbereitungstage 1 bis 5",
+        "days": "Tage",
+        "stages": "Stages",
+        "rankHint": "Rang ist dein State-Rang. Allianz ist dein Allianzrang.",
+        "battleTitle": "Kampfphase",
+        "battleNote": "Kampf-Score und -Rang sind ein eigenes Ergebnis. Sie werden nicht zu Tag 1 bis 5 addiert."
+    },
+    "overall": {
+        "svsTitle": "Gesamtergebnis, Tag 1 bis 5",
+        "title": "Gesamtergebnis",
+        "rank": "Gesamtrang",
+        "alliance": "Gesamt-Allianzrang",
+        "svsTotal": "Summe der gesperrten Tage 1 bis 5",
+        "daysTotal": "Summe der gesperrten Tage",
+        "stagesTotal": "Summe der gesperrten Stages",
+        "hint": "Sperren verhindert, dass sich eine Zahl ändert, während du weiterspielst. Gesperrte Zahlen können entsperrt werden."
+    },
+    "footer": {
+        "close": "Schließen",
+        "endEvent": "Event beenden",
+        "readOnly": "Der Verlauf ist nur lesbar"
+    },
+    "end": {
+        "title": "{event} beenden und im Verlauf speichern?",
+        "dates": "{event}, {start} bis {end}",
+        "noDates": "{event}, keine Daten eingegeben",
+        "lockedTotal": "Summe der gesperrten Tage: {total}.",
+        "lockedTotalSvs": "Summe der gesperrten Tage 1 bis 5: {total}.",
+        "noRanks": "Gesamtrang und Allianzrang sind leer.",
+        "allLocked": "Jeder Tag ist gesperrt.",
+        "unlocked": "{count, plural, one {{amount} Tag ist nicht gesperrt.} other {{amount} Tage sind nicht gesperrt.}} Sie werden wie eingegeben gespeichert, und Tage ohne Zahlen bleiben leer.",
+        "unlockedList": "Nicht gesperrt: {days}.",
+        "what": "Was passiert",
+        "saves": "Speichert die Daten, die täglichen Scores und Ränge und das Gesamtergebnis im Verlauf, mit der geplanten Summe jedes Tages.",
+        "clearsCounts": "Leert die Zähler für jeden Tag, sodass jeder Tag des Plans bei 0 beginnt.",
+        "clearsPlans": "Leert die in dieses Event exportierten Pläne und die Checklisten-Haken.",
+        "keeps": "Nur dieses Event wird geleert. Deine Ziele und Pläne auf anderen Seiten bleiben.",
+        "cancel": "Abbrechen",
+        "confirm": "Event beenden und neu starten",
+        "toastTitle": "Event beendet",
+        "toastMessage": "{event} ist im Verlauf gespeichert. Das Event startet neu ohne Daten.",
+        "undo": "Rückgängig",
+        "lockedTotalStages": "Summe der gesperrten Stages: {total}."
+    },
+    "history": {
+        "intro": "{event}-Events, die du beendet hast, neueste zuerst. Beim Beenden wird das Log hier gespeichert und kann später nicht bearbeitet, nur entfernt werden. <link>Öffne den Verlauf für Plan gegen Ist und geplante Upgrades.</link>",
+        "empty": "Noch keine beendeten Events. Beende ein Event, um sein Log hier zu speichern.",
+        "cardTitle": "{event}, {start} bis {end}",
+        "cardNoDates": "{event}, keine Daten",
+        "ended": "Beendet {date}",
+        "svsTotal": "Tag 1 bis 5",
+        "total": "Gesamtscore",
+        "overallRank": "Gesamtrang",
+        "allianceRank": "Allianzrang",
+        "notSet": "Nicht gesetzt",
+        "showDays": "Tage zeigen",
+        "hideDays": "Tage ausblenden",
+        "remove": "Aus dem Verlauf entfernen",
+        "removedTitle": "Aus dem Verlauf entfernt",
+        "removedMessage": "{event} wurde aus dem Verlauf entfernt.",
+        "undo": "Rückgängig",
+        "noValue": "-"
+    },
+    "checklist": {
+        "title": "Plan-Checkliste",
+        "description": "{day}, was zu tun ist",
+        "dayChips": "Tag",
+        "castleTitle": "Für {day} für eine Schlossposition anmelden",
+        "castleBody": "Schlosspositionen geben Boni für den nächsten Tag. Melde dich an, bevor der heutige Tag endet, damit der Bonus für {day} aktiv ist.",
+        "castleCheck": "Für {day} angemeldet",
+        "done": "{done} von {total} erledigt",
+        "progress": "Abgehakte Aktionen",
+        "planLine": "Plan für den Tag: {points} Punkte. Nur Aktionen mit einem Zähler über 0 sind aufgelistet. Die Zähler stammen von der Seite Kern-Events.",
+        "empty": "Keine Aktion hat an diesem Tag einen Zähler. Füge Zähler auf der Seite Kern-Events hinzu.",
+        "resources": "Zu nutzende Ressourcen",
+        "resourcesHint": "Items, die der Tag verbraucht. Prüfe deinen Bestand, bevor du anfängst.",
+        "actions": "Aktionen",
+        "count": "x{count}",
+        "points": "{points} Pkt",
+        "clear": "Haken löschen",
+        "close": "Schließen",
+        "dayTitle": "{day}: {name}"
+    },
+    "eventShort": {
+        "svs": "SvS",
+        "showdown": "Alliance Showdown",
+        "king": "King of Icefield",
+        "hall": "Hall of Chief"
+    }
+}

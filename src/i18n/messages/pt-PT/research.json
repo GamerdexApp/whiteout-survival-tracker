@@ -1,0 +1,303 @@
+{
+  "title": "Investigação",
+  "unknown": "Desconhecido",
+  "nodeCount": "{count, plural, one {{amount} nó} other {{amount} nós}}",
+  "jobTitle": "{name}, nível {from} a {to}",
+  "tabs": {
+    "growth": "Growth",
+    "economy": "Economy",
+    "battle": "Battle",
+    "war-academy-troops": "War Academy T11",
+    "t12-infantry": "Infantaria T12",
+    "t12-marksman": "Atirador T12",
+    "t12-lancer": "Lanceiro T12"
+  },
+  "tier": {
+    "plain": "Tier {tier}",
+    "troopLine": "{line} T{tier}"
+  },
+  "requirement": {
+    "yours": "O atual é {level}",
+    "notBuilt": "Por construir",
+    "researchLevel": "{name} nível {level}",
+    "yoursLevel": "O atual é o nível {level}",
+    "notReleased": "{id} (ainda não lançado)"
+  },
+  "tabLock": {
+    "unknownAge": "A investigação {tab} abre com {days} dias de idade do servidor. A idade atual é desconhecida. Adicionar a data de início do servidor em Editar chefe.",
+    "knownAge": "A investigação {tab} abre com {days} dias de idade do servidor. A atual é {yours}."
+  },
+  "option": {
+    "label": "{name}, {tab}, nível {from} a {to}",
+    "subtitle": "Nível {from} a nível {to}, separador {tab}",
+    "busy": "Ocupado: {name} nível {level}, {timeLeft}"
+  },
+  "nodeCard": {
+    "allResearched": "Todos os níveis investigados",
+    "nextTime": "Tempo do nível {level}: {time}",
+    "power": {
+      "researched": "{power} investigado",
+      "next": "+{power} no nível seguinte",
+      "some": "Poder {parts}",
+      "none": "Poder 0"
+    },
+    "maxed": "No máximo. {bonus}",
+    "noBonus": "Sem bónus nos dados",
+    "level": "Nível {level} / {max}",
+    "goal": "Objetivo {goal}",
+    "noGoal": "Sem objetivo",
+    "progress": "Progresso de {name}",
+    "lockedByTab": "Bloqueado: {reason}",
+    "lockedByRequirement": "Bloqueado: requer {requirement}",
+    "placeholder": "Marcador de posição. O custo e o bónus estão vazios no pacote de dados.",
+    "needsFirst": "Requer primeiro {names}",
+    "researching": "{name} em investigação",
+    "levelStepper": "Nível de {name}",
+    "detailsOf": "Detalhes de {name}",
+    "details": "Detalhes"
+  },
+  "queuesStrip": {
+    "title": "Filas de investigação",
+    "note": "Growth, Economy e Battle partilham uma fila. T11 e T12 usam a fila da War Academy.",
+    "idle": "Uma investigação de cada vez. Premir Iniciar melhoria para começar uma."
+  },
+  "filters": {
+    "title": "Filtros",
+    "description": "Escolher o que o separador {tab} mostra",
+    "reset": "Repor",
+    "show": "Mostrar {nodes}",
+    "tier": "Tier",
+    "statusLabel": "Estado",
+    "troopLine": "Linha de tropas",
+    "orderLabel": "Ordem",
+    "notSaved": "Os filtros não são guardados.",
+    "all": "Todos",
+    "status": {
+      "all": "Todos",
+      "progress": "Em curso",
+      "goal": "Com objetivo",
+      "maxed": "No máximo",
+      "locked": "Bloqueados",
+      "notStarted": "Não iniciados"
+    },
+    "order": {
+      "game": "Ordem do jogo",
+      "name": "Nome, A a Z",
+      "level": "Nível, maior primeiro"
+    }
+  },
+  "massSet": {
+    "stop": "{level} de {max}",
+    "title": "Definição em massa, {tab}",
+    "description": "Escolher um nó e um nível. Tudo o que o antecede na árvore vai para o máximo.",
+    "cancel": "Cancelar",
+    "set": "Definir {nodes}",
+    "node": "Nó",
+    "level": "Nível",
+    "levelToSet": "Nível a definir",
+    "whatChanges": "O que muda no separador {tab}",
+    "nothingChanges": "Nada muda. Todos os nós aqui já estão neste nível ou acima.",
+    "change": "{from} a {to}",
+    "hidden": "e mais {amount} nós anteriores",
+    "alreadyMax": "{count, plural, one {{amount} nó anterior já está} other {{amount} nós anteriores já estão}} no máximo e ficam como estão. Os nós mais adiante na árvore não são tocados. Um nível que já seja mais alto fica.",
+    "blockersTitle": "Alguns nós precisam primeiro de um edifício.",
+    "blocker": "{name} requer {building}",
+    "blockersMore": " e mais {amount}",
+    "blockers": "{list}{more}. Escolher um nó anterior ou subir o edifício na página Edifícios.",
+    "footnote": "A definição em massa altera apenas os níveis guardados deste separador. Nunca baixa um nível. Os objetivos não mudam."
+  },
+  "nodeFlyout": {
+    "fallbackTitle": "Investigação",
+    "description": "{category}, tier {tier}, {levels} níveis",
+    "close": "Fechar",
+    "unknown": "Desconhecido",
+    "levelOf": "Nível {level} de {max}",
+    "status": {
+      "notStarted": "não iniciado",
+      "maxed": "no máximo",
+      "inProgress": "em curso"
+    },
+    "goal": "Objetivo {goal}",
+    "noGoal": "Sem objetivo",
+    "openPlan": "Abrir Plano",
+    "maxLevel": {
+      "title": "Nível máximo",
+      "nothingLeft": "Nada mais para investigar.",
+      "noBonus": "Sem bónus nos dados."
+    },
+    "placeholder": {
+      "title": "Marcador de posição",
+      "description": "Este nó ainda não tem custo nem bónus no pacote de dados. O tempo e o custo de investigação mostram Desconhecido."
+    },
+    "upcoming": {
+      "first": "Primeiros níveis",
+      "after": "Próximos níveis a seguir a {level}",
+      "heads": {
+        "level": "Nível",
+        "bonus": "Bónus",
+        "time": "Tempo",
+        "power": "Poder"
+      },
+      "goalBadge": "Objetivo",
+      "noBonus": "Nenhum",
+      "shaded": "As linhas sombreadas são os níveis entre o nível atual e o objetivo."
+    },
+    "cost": {
+      "title": "Custo dos próximos níveis",
+      "level": "Nív."
+    },
+    "total": {
+      "title": "Total até ao objetivo, nível {level} a {goal}",
+      "knownTime": "Tempo de investigação conhecido",
+      "power": "Poder",
+      "missingTimes": "{count, plural, one {{amount} nível não tem} other {{amount} níveis não têm}} tempo no pacote de dados e contam como 0 aqui."
+    },
+    "requirements": {
+      "title": "Requisitos do nível {level}",
+      "none": "Sem requisitos.",
+      "met": "Cumprido",
+      "notMet": "Não cumprido",
+      "later": "Os níveis seguintes pedem: {list}."
+    }
+  },
+  "tree": {
+    "legend": {
+      "max": "Máx.",
+      "inProgress": "Em curso",
+      "notStarted": "Não iniciado",
+      "locked": "Bloqueado"
+    },
+    "pillMax": "Máx. {max}",
+    "pillLevel": "Nív. {level} de {max}",
+    "region": "Árvore de investigação {tab}",
+    "openNode": "{name}, {pill}. Abrir detalhes"
+  },
+  "plan": {
+    "title": "Plano de Investigação",
+    "description": "Recursos, tempo e poder do nível atual ao objetivo",
+    "saved": "Plano guardado {date}",
+    "close": "Fechar",
+    "save": "Guardar plano",
+    "goals": "Objetivos, {nodes}",
+    "noGoals": "Ainda sem objetivos. Adicionar um nó de investigação acima e escolher o nível a atingir.",
+    "goalsHint": "O nível atual é o da página. Alterá-lo lá. Os objetivos são só de leitura na página e definem-se aqui.",
+    "failed": "Não foi possível calcular o plano.",
+    "timeNote": "O plano demora {time} depois do bónus de velocidade de {percent}%. As reservas: Investigação {research} min, Geral {general} min. Os aceleradores gerais contam para a investigação.",
+    "percent": "{value}%",
+    "percentPlus": "+{value}%",
+    "appointment": {
+      "none": "Nenhuma",
+      "regular": "Normal",
+      "supreme": "Suprema"
+    },
+    "add": {
+      "title": "Adicionar um nó de investigação",
+      "none": "Todos os nós já estão no plano ou no nível máximo.",
+      "select": "Nó de investigação a adicionar",
+      "button": "Adicionar investigação"
+    },
+    "speed": {
+      "title": "Velocidade de investigação",
+      "readOnly": "Só leitura",
+      "carriedOver": "Vem da página Bónus.",
+      "turnedOff": "Desativado nas Definições, em Aplicar os totais de Bónus.",
+      "openBonuses": "Abrir Bónus",
+      "stateBuff": "Bónus do estado",
+      "vicePresident": "Vice-presidente",
+      "total": "Velocidade de investigação total"
+    },
+    "goal": {
+      "level": "Nível {level}",
+      "to": "para",
+      "label": "Objetivo de {name}",
+      "remove": "Remover {name} do plano"
+    },
+    "result": {
+      "title": "Resultado, {steps} passos",
+      "powerGained": "Poder ganho",
+      "speedupMinutes": "Minutos de aceleração necessários",
+      "baseTime": "Tempo base",
+      "timeWithBonus": "Tempo com bónus de {percent}%",
+      "stepsWithoutTime": "{count, plural, one {{amount} passo não tem} other {{amount} passos não têm}} tempo no pacote de dados e contam como 0 segundos.",
+      "stepCount": "{count, plural, one {{amount} passo} other {{amount} passos}}",
+      "buildingRequirements": "Requisitos de edifícios",
+      "unmet": "Pré-requisitos por cumprir",
+      "unmetNone": "Nenhum para estes objetivos.",
+      "unmetItem": "{name} nível {level} requer {requires} nível {requiresLevel}"
+    },
+    "export": {
+      "button": "Exportar para Eventos principais",
+      "empty": "Adicionar um objetivo ao plano para o exportar.",
+      "speedupMinutes": "Minutos de aceleração de investigação",
+      "power": "Poder ganho com a investigação",
+      "computed": "Calculado pela aplicação a partir do resultado do plano.",
+      "unscored": "Nenhum evento pontua {name}."
+    }
+  },
+  "view": {
+    "ofTotal": "{count} de {total}",
+    "undo": "Anular",
+    "massSetApplied": {
+      "title": "Definição em massa aplicada",
+      "message": "{nodes} atualizados."
+    },
+    "started": {
+      "title": "Investigação iniciada",
+      "message": "{name}, nível {from} a {to}."
+    },
+    "manage": {
+      "slotLabel": "{queue}, {category}",
+      "finishText": "Concluir melhoria define {name} como nível {level}, liberta a fila {queue} e adiciona a melhoria ao Histórico. Quando o tempo chega a zero, o nó e o cartão da fila mostram Pronto a concluir. Nada termina sozinho, porque podem ter sido usados aceleradores."
+    },
+    "finished": {
+      "title": "{name} investigado",
+      "message": "Agora nível {level}. Adicionado ao Histórico."
+    },
+    "cancelled": {
+      "title": "Investigação de {name} cancelada",
+      "message": "O nível fica como estava. Corrigir as reservas em Recursos, se necessário."
+    },
+    "subline": {
+      "researchCenter": "Research Center {level}",
+      "warAcademy": "War Academy {level}"
+    },
+    "stats": {
+      "maxed": "Nós no máximo, {percent}% da árvore",
+      "power": "Poder de investigação, o poder de cada nível investigado",
+      "withoutTimeNone": "Sem tempo de investigação, todos os níveis têm um",
+      "withoutTimeSome": "Sem tempo de investigação, mostrado como Desconhecido",
+      "locked": "Bloqueados pela idade do servidor ou por requisitos"
+    },
+    "tabLockedNote": "{reason} Ainda é possível definir objetivos no Plano.",
+    "lockedByRequirement": "{count} de {total} nós deste separador estão bloqueados por um requisito.",
+    "search": {
+      "label": "Pesquisar nós",
+      "placeholder": "Pesquisar nós por nome ou bónus"
+    },
+    "massSet": "Definição em massa",
+    "layout": {
+      "label": "Disposição",
+      "grid": "Grelha",
+      "tree": "Árvore"
+    },
+    "plan": "Plano",
+    "status": {
+      "tree": "{count} nós na árvore {tab}. Poder de investigação neste separador: {power}. Deslizar para mover. Os nós que não correspondem à pesquisa ou aos filtros ficam esbatidos.",
+      "grid": "A mostrar {shown} de {count} nós de {tab}. Poder de investigação neste separador: {power}. Aqui os objetivos são só de leitura e definem-se no Plano."
+    },
+    "empty": {
+      "title": "Nenhum nó corresponde",
+      "description": "Alterar a pesquisa ou repor os filtros para ver todos os nós.",
+      "reset": "Repor pesquisa e filtros"
+    },
+    "start": {
+      "description": "Marcar uma investigação como em melhoria",
+      "selectLabel": "Investigação a melhorar",
+      "selectHelp": "Só aparecem as investigações que podem começar agora. As bloqueadas, no máximo ou em curso ficam de fora. Uma investigação Growth, Economy ou Battle usa a fila de Investigação. Uma investigação T11 ou T12 usa a fila da War Academy.",
+      "timeLabel": "Tempo de investigação",
+      "speedLabel": "Velocidade de investigação",
+      "slotLabel": "Fila",
+      "slotHelp": "Uma investigação de cada vez em cada fila. Quando a fila está ocupada, este cartão indica quando fica livre."
+    }
+  }
+}

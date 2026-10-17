@@ -1,0 +1,67 @@
+{
+  "line": "Que fontes de bónus se aplicam em cada um dos {modes} modos de jogo: sim, não ou parcial para {sources} tipos de bónus.",
+  "matrix": {
+    "title": "Matriz de bónus",
+    "meta": "{modes} modos, {sources} tipos de bónus",
+    "table": "Fontes de bónus por modo de jogo",
+    "mode": "Modo de jogo"
+  },
+  "sources": {
+    "cityBonusWarsBuffs": {
+      "short": "Bónus cidade",
+      "full": "Bónus da cidade e bónus de guerra"
+    },
+    "deploymentCapacity": {
+      "short": "Cap. destac.",
+      "full": "Capacidade de destacamento"
+    },
+    "petSkills": {
+      "short": "Hab. mascote",
+      "full": "Habilidades de mascotes"
+    },
+    "daybreakIsland": {
+      "short": "Daybreak",
+      "full": "Daybreak Island"
+    },
+    "presidentSkills": {
+      "short": "Presidente",
+      "full": "Habilidades do presidente"
+    },
+    "ministerBuff": {
+      "short": "Ministro",
+      "full": "Bónus de ministro"
+    },
+    "territoryBonuses": {
+      "short": "Território",
+      "full": "Bónus de território"
+    },
+    "facilityBuff": {
+      "short": "Instalação",
+      "full": "Bónus de instalação"
+    },
+    "marchAccelerator": {
+      "short": "Acel. marcha",
+      "full": "Acelerador de marcha"
+    },
+    "frostdragonTyrantTitles": {
+      "short": "Títulos Tyrant",
+      "full": "Títulos Frostdragon Tyrant"
+    },
+    "frostSphereDomainBonus": {
+      "short": "Frost Sphere",
+      "full": "Bónus de domínio da Frost Sphere"
+    }
+  },
+  "applicability": {
+    "yes": "Sim",
+    "no": "Não",
+    "partial": "Parcial"
+  },
+  "notes": {
+    "title": "Notas por modo de jogo",
+    "table": "Notas por modo de jogo",
+    "petSkillsAutoApplied": "Habilidades de mascotes aplicadas automaticamente",
+    "note": "Nota",
+    "noNote": "Nenhuma"
+  }
+}

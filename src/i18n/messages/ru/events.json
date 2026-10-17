@@ -1,0 +1,373 @@
+{
+  "page": {
+    "title": "События",
+    "subline": "{chief} · {details}"
+  },
+  "tabs": {
+    "label": "Вкладки событий",
+    "calendar": "Календарь",
+    "mine": "Мои события",
+    "history": "История событий"
+  },
+  "actions": {
+    "addDetails": "Добавить итоги",
+    "addEvent": "Добавить событие"
+  },
+  "categories": {
+    "alliance": "Альянс",
+    "solo": "Одиночные",
+    "rookie": "Новичкам",
+    "holiday": "Праздники"
+  },
+  "gives": {
+    "rewards": "Только награды",
+    "personal": "Личный рейтинг",
+    "alliance": "Рейтинг альянса",
+    "both": "Оба рейтинга"
+  },
+  "weekdays": {
+    "short": {
+      "sunday": "Вс",
+      "monday": "Пн",
+      "tuesday": "Вт",
+      "wednesday": "Ср",
+      "thursday": "Чт",
+      "friday": "Пт",
+      "saturday": "Сб"
+    },
+    "initial": {
+      "sunday": "В",
+      "monday": "П",
+      "tuesday": "В",
+      "wednesday": "С",
+      "thursday": "Ч",
+      "friday": "П",
+      "saturday": "С"
+    }
+  },
+  "months": {
+    "january": "Январь",
+    "february": "Февраль",
+    "march": "Март",
+    "april": "Апрель",
+    "may": "Май",
+    "june": "Июнь",
+    "july": "Июль",
+    "august": "Август",
+    "september": "Сентябрь",
+    "october": "Октябрь",
+    "november": "Ноябрь",
+    "december": "Декабрь"
+  },
+  "monthsShort": {
+    "january": "янв",
+    "february": "фев",
+    "march": "мар",
+    "april": "апр",
+    "may": "май",
+    "june": "июн",
+    "july": "июл",
+    "august": "авг",
+    "september": "сен",
+    "october": "окт",
+    "november": "ноя",
+    "december": "дек"
+  },
+  "format": {
+    "weekdayDay": "{weekday}, {date}",
+    "utcTime": "{time} UTC",
+    "dateTime": "{date}, {time}",
+    "range": "с {start} по {end}",
+    "length": {
+      "minutes": "{count, plural, one {{amount} мин} few {{amount} мин} many {{amount} мин} other {{amount} мин}}",
+      "hours": "{count, plural, one {{amount} час} few {{amount} часа} many {{amount} часов} other {{amount} часа}}",
+      "days": "{count, plural, one {{amount} день} few {{amount} дня} many {{amount} дней} other {{amount} дня}}",
+      "weeks": "{count, plural, one {{amount} неделя} few {{amount} недели} many {{amount} недель} other {{amount} недели}}",
+      "months": "{count, plural, one {{amount} месяц} few {{amount} месяца} many {{amount} месяцев} other {{amount} месяца}}"
+    }
+  },
+  "repeat": {
+    "none": "Не повторяется",
+    "weekly": "Еженедельно: {days}",
+    "weeklyAny": "Каждую неделю",
+    "every": {
+      "hours": "{count, plural, =1 {Каждый час} one {Каждые {amount} час} few {Каждые {amount} часа} many {Каждые {amount} часов} other {Каждые {amount} часа}}",
+      "days": "{count, plural, =1 {Каждый день} one {Каждые {amount} день} few {Каждые {amount} дня} many {Каждые {amount} дней} other {Каждые {amount} дня}}",
+      "weeks": "{count, plural, =1 {Каждую неделю} one {Каждые {amount} неделю} few {Каждые {amount} недели} many {Каждые {amount} недель} other {Каждые {amount} недели}}",
+      "months": "{count, plural, =1 {Каждый месяц} one {Каждые {amount} месяц} few {Каждые {amount} месяца} many {Каждые {amount} месяцев} other {Каждые {amount} месяца}}"
+    }
+  },
+  "empty": {
+    "title": "Событий пока нет",
+    "description": "Добавьте события, в которых вы играете. Задайте дату и время старта один раз, и календарь со списком ближайших будет актуальным.",
+    "steps": {
+      "pick": {
+        "title": "Выберите событие.",
+        "text": "Выберите из событий в игровых данных."
+      },
+      "start": {
+        "title": "Задайте старт.",
+        "text": "Введите дату и время следующего запуска. У некоторых событий два запуска или несколько дней."
+      },
+      "roll": {
+        "title": "Дальше само.",
+        "text": "Когда запуск закончится, следующая дата подставится по правилу повтора."
+      }
+    }
+  },
+  "calendar": {
+    "previous": "Предыдущий месяц",
+    "next": "Следующий месяц",
+    "today": "Сегодня",
+    "zoneLabel": "Часовой пояс",
+    "utc": "UTC",
+    "local": "Моё время",
+    "monthTitle": "{month} {year}",
+    "nameWithRun": "{name}, {run}",
+    "dayTail": "д{day}",
+    "chipText": "{name} {tail}"
+  },
+  "upcoming": {
+    "title": "Ближайшие",
+    "empty": "В ближайшие 30 дней запусков нет.",
+    "now": "Идёт сейчас",
+    "today": "Сегодня",
+    "tomorrow": "Завтра",
+    "inDays": "{count, plural, one {Через {amount} день} few {Через {amount} дня} many {Через {amount} дней} other {Через {amount} дня}}",
+    "timeAndLength": "{time}, {length}"
+  },
+  "mine": {
+    "intro": "{count, plural, one {{amount} событие.} few {{amount} события.} many {{amount} событий.} other {{amount} события.}} Когда запуск заканчивается, дата следующего обновляется сама по правилу повтора, поэтому календарь всегда показывает, что дальше.",
+    "run": "Запуск",
+    "rangeLine": "{range}, {time}",
+    "shortLine": "{when}, {length}",
+    "repeat": "Повтор: {rule}",
+    "coreTag": "Итоги в главных событиях",
+    "coreLink": "Открыть главные события",
+    "ended": "Завершено",
+    "logged": "Записано",
+    "edit": "Изменить",
+    "remove": "Удалить"
+  },
+  "toast": {
+    "removedTitle": "{name}: удалено",
+    "removedMessage": "Сохранённые итоги остаются в истории событий.",
+    "undo": "Отменить",
+    "resultSavedTitle": "Итог сохранён",
+    "resultSavedMessage": "{name} добавлено в историю событий."
+  },
+  "add": {
+    "title": "Добавить событие",
+    "description": "Выберите событие из игровых данных",
+    "close": "Закрыть",
+    "searchLabel": "Поиск событий",
+    "searchPlaceholder": "Поиск среди событий: {amount}",
+    "categoryLabel": "Категория события",
+    "all": "Все",
+    "categoryTab": "{name}, {amount}",
+    "showing": "Показано {shown} из {total} событий. Выберите одно, чтобы задать дату и время старта.",
+    "none": "Подходящих событий нет.",
+    "noDuration": "Длительности нет в игровых данных",
+    "added": "Добавлено",
+    "button": "Добавить",
+    "addNamed": "Добавить: {name}",
+    "showMore": "Показать ещё"
+  },
+  "schedule": {
+    "description": "Задайте, когда оно проходит. Следующие запуски обновятся сами.",
+    "cancel": "Отмена",
+    "add": "Добавить событие",
+    "save": "Сохранить расписание",
+    "howTitle": "Как проходит событие",
+    "shape": {
+      "one": "Один день",
+      "several": "Несколько дней",
+      "two": "Два запуска в цикле"
+    },
+    "shapeHint": {
+      "one": "Один запуск на один день. Измените длительность для короткого запуска в минутах или часах.",
+      "several": "Один запуск на несколько дней.",
+      "two": "Два запуска в каждом цикле, например два сезона или два дня недели. У каждого запуска свой старт, длительность и название."
+    },
+    "runTitle": "Запуск {number}",
+    "runSingle": "Запуск",
+    "name": "Название",
+    "startDate": "Дата начала",
+    "startTime": "Время начала (UTC)",
+    "length": "Длительность",
+    "unit": "Единица",
+    "runUnits": {
+      "minutes": "минуты",
+      "hours": "часы",
+      "days": "дни"
+    },
+    "repeatTitle": "Повтор",
+    "repeatKind": {
+      "none": "Не повторяется",
+      "every": "Каждые",
+      "weekly": "Еженедельно по дням"
+    },
+    "every": "Каждые",
+    "weekdays": "Дни недели",
+    "repeatUnits": {
+      "hours": "часы",
+      "days": "дни",
+      "weeks": "недели",
+      "months": "месяцы"
+    },
+    "gameSays": "В игровых данных: {text}",
+    "gameSaysNoRule": "В игровых данных: {text}",
+    "useSuggestion": "Применить подсказку",
+    "everyError": "Введите число больше 0.",
+    "givesTitle": "Что даёт событие",
+    "givesHint": "Берётся из игровых данных. Можно изменить. От этого зависит, что спросит форма итогов.",
+    "previewTitle": "Что покажет календарь",
+    "previewEmpty": "Введите верную дату и длительность, чтобы увидеть запуски.",
+    "previewShort": "{range}, {time}",
+    "previewNote": "Когда запуск заканчивается, его дата сдвигается по правилу повтора. Любую дату можно изменить."
+  },
+  "result": {
+    "title": "Добавить итоги",
+    "description": {
+      "participation": "Отметьте, что вы участвовали, и что получили",
+      "milestones": "Очки и достигнутые цели",
+      "ranking": "Очки, место и достигнутые рубежи",
+      "tier": "Лига и занятое место",
+      "waves": "Сложность, волны, очки и места",
+      "skipped": "Отметьте, что вы пропустили этот запуск"
+    },
+    "cancel": "Отмена",
+    "save": "Сохранить итог",
+    "noEvents": "Сначала добавьте событие. Записывать итоги можно только для событий из «Моих событий», а главные события записываются в разделе главных событий.",
+    "whichTitle": "Какое событие",
+    "event": "Событие",
+    "versionsTag": "Версии",
+    "run": "Запуск",
+    "otherDate": "Другая дата",
+    "runDate": "Дата запуска",
+    "runLong": "{range} ({length})",
+    "runNamed": "{when}, {name}",
+    "notLogged": "{run}, ещё не записано",
+    "tookPartQuestion": "Вы участвовали?",
+    "tookPart": "Участвовал",
+    "skipped": "Пропустил",
+    "coreNote": "В списке только добавленные вами события. Главные события записываются в разделе главных событий, не здесь.",
+    "versionTitle": "Версия",
+    "versionKnown": "Цели этой версии есть в данных, поэтому они проверяются по вашим очкам.",
+    "versionUnknown": "У этой версии есть цели, очков для которых пока нет в данных. Проверьте такие цели вручную.",
+    "participationTitle": "У этого события нет очков и рейтинга",
+    "participationText": "В игровых данных указаны только награды, считать очки не по чему. Отметьте участие, полученные награды и заметку.",
+    "pointsFallback": "Очки",
+    "pointsReached": "Набрано: {unit}",
+    "pointsHint": "Итог на конец события.",
+    "finalScore": "Итоговый счёт ({unit})",
+    "finalScoreHint": "Ваш итог ({unit}) на конец события.",
+    "rankingTitle": "Рейтинг",
+    "yourRank": "Ваше место",
+    "allianceRank": "Место альянса",
+    "rankGroup": "Группа мест",
+    "rankGroupsHint": "Группы мест взяты из игровых данных: {groups} и другие.",
+    "targetsTitle": "Достигнутые цели по вашим очкам",
+    "targetsCount": "Достигнуто {reached} из {total}",
+    "targetPoints": "{points} {unit}",
+    "pointsMissing": "{unit}: очков пока нет в данных",
+    "needsPurchase": "Нужна одна покупка на любую сумму.",
+    "targetsHint": "Проверено по очкам. Цели и награды берутся из игровых данных.",
+    "targetsHintUnknown": "Цели, очков для которых пока нет в данных, по счёту не проверяются. Проверьте их вручную.",
+    "tierTitle": "Лига",
+    "tier": "Ступень",
+    "placement": "Ваше место в группе",
+    "starChange": "Изменение звёзд, по игровым данным",
+    "stars": "{count, plural, one {{amount} звезда} few {{amount} звезды} many {{amount} звёзд} other {{amount} звезды}}",
+    "tiersHint": "Ступени: {tiers}.",
+    "allianceTitle": "Альянс",
+    "outcome": "Результат альянса в этом запуске",
+    "outcomeHint": "Необязательно. Победа, поражение или ничья.",
+    "outcomes": {
+      "none": "Не задано",
+      "won": "Победа",
+      "lost": "Поражение",
+      "drawn": "Ничья"
+    },
+    "wavesTitle": "Сложность и волны",
+    "difficulty": "Пройденная сложность",
+    "difficultyFrom": "{name}, от {points} очков альянса",
+    "wavesCleared": "Пройдено волн, от 0 до {count}",
+    "wavesHint": "В игровых данных для {name} указано волн: {count}.",
+    "defenseTitle": "Очки обороны",
+    "yourPoints": "Ваши очки",
+    "alliancePoints": "Очки альянса",
+    "rewardLevel": "Достигнутый уровень награды",
+    "rewardLevelNone": "Пока нет",
+    "level": "Уровень {level}",
+    "levelsHint": "Для уровней нужны и личные, и очки альянса, по игровым данным.",
+    "rankingsTitle": "Рейтинги",
+    "notesTitle": "Заметки",
+    "rewards": "Полученные награды",
+    "rewardsPlaceholder": "Например, 2 Hero Shards, 500 Gems",
+    "notes": "Заметки",
+    "notesPlaceholder": "Всё, что стоит помнить об этом запуске"
+  },
+  "history": {
+    "emptyTitle": "Итогов пока нет",
+    "emptyText": "Нажмите «Добавить итоги», чтобы записать, что вы получили в запуске события. Здесь появятся ваши итоги и динамика.",
+    "eventFilter": "Событие",
+    "allEvents": "Все события",
+    "period": "Период",
+    "months3": "3 месяца",
+    "months6": "6 месяцев",
+    "allTime": "Всё время",
+    "intro": "Все записанные вами итоги, сначала новые. Главные события записываются в разделе главных событий и здесь не появляются.",
+    "showing": "Показано {shown} из {total} итогов.",
+    "showingEvent": "{count, plural, one {Показан {amount} итог: {name}.} few {Показано {amount} итога: {name}.} many {Показано {amount} итогов: {name}.} other {Показано {amount} итога: {name}.}}",
+    "noneInPeriod": "За этот период итогов нет.",
+    "showMore": "Показать ещё",
+    "colDate": "Дата",
+    "colEvent": "Событие",
+    "colScore": "Очки",
+    "colRank": "Место",
+    "colAlliance": "Альянс",
+    "colResult": "Итог",
+    "colActions": "Действия",
+    "none": "-",
+    "edit": "Изменить",
+    "editNamed": "Изменить итог: {name}",
+    "skipped": "Пропущено",
+    "tierOnly": "{tier} {placement}",
+    "stars": "{count, plural, one {{amount} звезда} few {{amount} звезды} many {{amount} звёзд} other {{amount} звезды}}",
+    "waves": "{count, plural, one {{difficulty}, {amount} волна} few {{difficulty}, {amount} волны} many {{difficulty}, {amount} волн} other {{difficulty}, {amount} волны}}",
+    "targets": "{unit}, целей {reached} из {total}",
+    "tookPart": "Участвовал",
+    "tookPartRewards": "Участвовал, {rewards}",
+    "rankText": "Место {rank}",
+    "allianceRankText": "альянс {rank}",
+    "separator": " · ",
+    "defensePoints": "Очков обороны: {score}",
+    "scoreUnit": "{score} {unit}",
+    "noScore": "Нет очков",
+    "trendTitle": "Динамика: {name}",
+    "trendScore": "{unit} в конце каждого события",
+    "trendRank": "Ваше место в конце каждого события",
+    "metricLabel": "Показатель динамики",
+    "metricScore": "Очки",
+    "metricRank": "Личное место",
+    "chartLabel": "График динамики: {name}",
+    "best": "Лучший",
+    "average": "Средний",
+    "latest": "Последний",
+    "change": "Изменение",
+    "events": "{count, plural, one {{amount} событие} few {{amount} события} many {{amount} событий} other {{amount} события}}",
+    "changeVs": "к {month}",
+    "changePercentVs": "{percent}% к {month}",
+    "noPrevious": "Раньше итогов нет",
+    "noTrend": "У этого события нет очков или мест для графика. Его итоги есть в списке ниже."
+  },
+  "cycles": {
+    "title": "Циклы главных событий",
+    "hint": "SvS, Alliance Showdown и King of Icefield идут по фиксированному циклу. Задайте следующий старт один раз, и они будут повторяться в календаре.",
+    "next": "Следующий: {date}, повтор: {repeat}",
+    "notSet": "Не задано",
+    "set": "Задать цикл",
+    "edit": "Изменить цикл"
+  }
+}

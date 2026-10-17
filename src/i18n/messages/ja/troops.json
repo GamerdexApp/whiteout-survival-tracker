@@ -1,0 +1,251 @@
+{
+    "page": {
+        "title": "部隊"
+    },
+    "view": {
+        "title": "部隊",
+        "subline": "{chief} · {camps}",
+        "campLevel": "{name} Camp {level}",
+        "notBuilt": "未建設",
+        "intro": "キャンプのレベル、容量、速度ボーナスは他のページから取得する読み取り専用の値です。プランは、訓練と昇格に必要なものを計算します。「訓練を開始」は、キャンプで実行中のバッチを記録します。",
+        "plan": "プラン"
+    },
+    "cards": {
+        "tileSummary": "部隊 · 戦力 {power}",
+        "allTroops": "全部隊",
+        "totalPower": "総戦力",
+        "troops": "部隊",
+        "power": "戦力",
+        "powerNote": "部隊1体あたりの戦力はパッケージの値です。ティア10と11は、各キャンプのFire Crystalレベルに従います。",
+        "campLevel": "キャンプ{level}",
+        "campNotBuilt": "キャンプ未建設",
+        "campAgeLocked": "保存済みのキャンプレベルは、このサーバーではまだ開放されていません。{text}",
+        "highestTier": "最高ティア",
+        "tierShort": "T{tier}",
+        "noTier": "なし"
+    },
+    "tiers": {
+        "title": "{name}のティア",
+        "hideLow": "ティア9以下を隠す",
+        "typeLabel": "部隊タイプ",
+        "hiddenNote": "ティア1から9は非表示です。Furnace {furnace}はレベル30以上です。",
+        "heads": {
+            "tier": "ティア",
+            "troops": "部隊",
+            "train": "訓練",
+            "power": "戦力"
+        },
+        "requires": {
+            "list": "{list}が必要",
+            "camp": "{name} Camp {level}",
+            "building": "{name} {level}",
+            "research": "{name}レベル{level}"
+        },
+        "tier": "ティア{tier}",
+        "locked": "ロック中",
+        "countLabel": "{name}のティア{tier}の部隊",
+        "train": "訓練",
+        "seconds": "{value}秒",
+        "each": "1体あたり",
+        "mobilePower": "戦力"
+    },
+    "plan": {
+        "title": "部隊のプラン",
+        "description": "3つの部隊タイプの訓練と昇格",
+        "saved": "プランを保存しました（{date}）",
+        "close": "閉じる",
+        "save": "プランを保存",
+        "export": {
+            "button": "コアイベントへエクスポート",
+            "emptyHint": "エクスポートするには、訓練を追加してください。",
+            "computed": "アプリが計算しました。",
+            "trainedGroup": "訓練した部隊用",
+            "speedupGroup": "スピードアップの分数用",
+            "trainedTier": "訓練したティア{tier}の部隊",
+            "speedupMinutes": "使用した訓練スピードアップの分数",
+            "promoted": "昇格した部隊",
+            "promotedReason": "昇格は、スピードアップの分数でのみポイントになります。",
+            "power": "訓練と昇格で獲得した戦力",
+            "powerReason": "パッケージには、ティアごとの正確な戦力がまだありません。"
+        },
+        "noRuns": "訓練はまだありません。部隊を追加して、プランを始めてください。",
+        "add": {
+            "title": "部隊を追加",
+            "typeLabel": "部隊タイプ",
+            "modeLabel": "訓練または昇格",
+            "button": "部隊を追加"
+        },
+        "run": {
+            "tier": "ティア{tier}",
+            "modes": {
+                "training": "訓練",
+                "promotion": "昇格"
+            },
+            "remove": "{name}の訓練を削除",
+            "removeButton": "削除",
+            "modeLabel": "{name}の訓練または昇格",
+            "tierLabel": "{name}のティア",
+            "fromLabel": "{name}の昇格元ティア",
+            "toLabel": "{name}の昇格先ティア",
+            "to": "→",
+            "troops": "部隊",
+            "max": "最大",
+            "maxValue": "最大（{capacity}）",
+            "batches": "バッチ"
+        },
+        "speed": {
+            "readOnlyNote": "読み取り専用の値は、他のページから引き継いでいます。変更はそちらで行ってください。",
+            "openBonuses": "ボーナスを開く",
+            "title": "容量と速度",
+            "appointment": "任命",
+            "position": "役職",
+            "rank": "ランク",
+            "positions": {
+                "none": "なし",
+                "ministerOfEducation": "教育大臣",
+                "vicePresident": "副大統領"
+            },
+            "ranks": {
+                "regular": "通常",
+                "supreme": "最上級"
+            },
+            "appointmentEffect": "容量+{capacity}、速度+{speed}%",
+            "appointmentNote": "2つの任命のうち、有効にできるのは片方だけです。教育大臣は容量{moeCapacity}と速度{moeSpeed}パーセントを加算します（最上級は{moeCapacitySupreme}と{moeSpeedSupreme}）。副大統領は速度{vpSpeed}パーセントを加算します（最上級は{vpSpeedSupreme}）。",
+            "capacity": "容量",
+            "researchCapacity": "研究による容量",
+            "troops": "{value}体",
+            "readOnly": "読み取り専用",
+            "capacityBoost": "容量ブースト",
+            "boostTotal": "合計 ×{multiplier}",
+            "capacityPerBatch": "バッチごとの容量",
+            "trainingSpeed": "訓練速度",
+            "gameSpeed": "ゲームの訓練速度",
+            "appointmentSpeed": "任命",
+            "mobilize": "Mobilize",
+            "advancedTraining": "Advanced Training",
+            "speedUsed": "使用する訓練速度",
+            "percent": "{value}%",
+            "percentPlus": "+{value}%"
+        },
+        "stock": {
+            "name": "訓練スピードアップ",
+            "minutesUnit": "分",
+            "note": "在庫: 訓練 {training}分、汎用 {general}分。汎用のスピードアップは訓練に使われます。スピードアップでカバーされない訓練は通常の時間で完了するため、所持しているスピードアップだけを使用します: {used}分。"
+        },
+        "result": {
+            "title": "結果",
+            "resources": "資源",
+            "changes": "ティアごとの部隊の増減",
+            "heads": {
+                "tier": "ティア",
+                "infantry": "歩兵",
+                "lancer": "槍兵",
+                "marksman": "弓兵",
+                "all": "全体"
+            },
+            "tier": "ティア{tier}",
+            "total": "合計",
+            "time": "時間（スピードアップなし）",
+            "totalTime": "合計、全部隊タイプ（スピードアップ時間）",
+            "longest": "最も長い部隊タイプ",
+            "minutesNeeded": "必要なスピードアップの分数",
+            "minutesUsed": "使用するスピードアップの分数（在庫分）",
+            "minutes": "{value}分",
+            "tier12Note": "パッケージによると、ティア12のコストは一部が推定値です。弓兵の昇格コストはゲームで実測され、歩兵と槍兵のコストはそれをもとに換算されています。"
+        }
+    },
+    "queue": {
+        "title": "訓練キュー",
+        "note": "各キャンプで一度に訓練できるバッチは1つです。完了すると、部隊が所持数に加算されます。",
+        "idle": "訓練中のものはありません。バッチを開始して、このキャンプを使ってください。",
+        "startButton": "訓練を開始",
+        "jobTitle": {
+            "training": "{name} T{tier}を{count}体訓練中",
+            "promotion": "{name} T{from}からT{to}へ{count}体を昇格中"
+        },
+        "manage": {
+            "slotLabel": "{camp}、一度に1バッチ",
+            "finishText": "「アップグレードを完了」を押すと、部隊が所持数に加算され、キャンプが空き、バッチが履歴に追加されます。残り時間が0になると、カードに「完了可能」と表示されます。スピードアップを使った可能性があるため、自動では完了しません。"
+        },
+        "flyout": {
+            "title": "訓練を開始",
+            "description": "キャンプで訓練中または昇格中のバッチを記録します",
+            "camp": "キャンプ",
+            "campHelp": "各キャンプで一度に1バッチです。使用中のキャンプには、空く時刻が表示されます。",
+            "busy": "{date}まで使用中",
+            "notBuilt": "キャンプ未建設",
+            "action": "操作",
+            "training": "訓練",
+            "promotion": "昇格",
+            "tier": "ティア",
+            "tierOption": "ティア{tier}",
+            "fromTier": "昇格元のティア",
+            "toTier": "昇格先のティア",
+            "troops": "バッチの部隊数",
+            "max": "最大",
+            "capacityHint": "1バッチには最大{capacity}体まで入ります。これは研究による容量とキャンプレベルの合計です。",
+            "noTiers": "このキャンプには、まだ訓練できるティアがありません。建物ページでキャンプのレベルを上げてください。",
+            "cost": "バッチのコスト",
+            "time": "訓練時間",
+            "packageTime": "パッケージの時間",
+            "speed": "訓練速度",
+            "readOnly": "読み取り専用",
+            "openBonuses": "ボーナスを開く",
+            "yourTime": "あなたの時間",
+            "timeHint": "訓練速度はボーナスページから取得します。ゲームの表示と時間が異なる場合は「開始済み」を使ってください。",
+            "whenStarted": "開始のタイミング",
+            "modes": {
+                "now": "今すぐ開始",
+                "already": "開始済み"
+            },
+            "timeLeftHours": "残り時間（時間）",
+            "ends": "完了",
+            "takeCost": {
+                "title": "コストを自分の在庫から引く",
+                "hint": "バッチの資源を資源ページから差し引きます。所持数は0を下回りません。",
+                "enough": "十分あります。",
+                "short": "{names}が不足しています。それらの在庫は0になります。"
+            },
+            "cancel": "キャンセル",
+            "start": "訓練を開始",
+            "allCamps": "空いているすべてのキャンプ（{count}）",
+            "allCampsHint": "空いているすべてのキャンプで、同じバッチを一度に開始します。時間はキャンプごとに管理されます。表示されるティアは、空いているすべてのキャンプが訓練できるものです。",
+            "campTime": "{camp}: {time}"
+        },
+        "toasts": {
+            "started": {
+                "title": "訓練を開始しました",
+                "message": "{what}。"
+            },
+            "finished": {
+                "title": "{what}の訓練が完了しました",
+                "message": "部隊の所持数と履歴に追加しました。"
+            },
+            "cancelled": {
+                "title": "{what}をキャンセルしました",
+                "message": "部隊の所持数は変わりません。必要に応じて、資源で在庫を修正してください。"
+            },
+            "undo": "元に戻す"
+        },
+        "batchName": {
+            "training": "{name} T{tier} ×{count}",
+            "promotion": "{name} T{from}からT{to} ×{count}"
+        }
+    },
+    "callOfWar": {
+        "title": "Call of War",
+        "note": "Romulusのスキルです。UTCの1日につき1回、全キャンプまとめて無料で受け取れます。00:00 UTCにリセットされます。",
+        "available": "今日の無料部隊 {troops}体",
+        "claimed": "今日は受け取り済みです。次の無料受け取りまであと{time}。",
+        "notUnlocked": "エキスパートページでRomulusを採用し、Call of Warをレベル1以上にする必要があります。",
+        "level": "Call of Warレベル{level}",
+        "add": "{camp}に追加",
+        "addHint": "{troops}体がティア{tier}に入ります",
+        "noTier": "解放済みのティアなし",
+        "toast": {
+            "title": "Call of Warを受け取りました",
+            "message": "{camp}のティア{tier}に部隊{troops}体を追加しました。",
+            "undo": "元に戻す"
+        }
+    }
+}

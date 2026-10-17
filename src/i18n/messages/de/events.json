@@ -1,0 +1,373 @@
+{
+    "page": {
+        "title": "Events",
+        "subline": "{chief} · {details}"
+    },
+    "tabs": {
+        "label": "Event-Ansichten",
+        "calendar": "Kalender",
+        "mine": "Meine Events",
+        "history": "Event-Verlauf"
+    },
+    "actions": {
+        "addDetails": "Event-Details hinzufügen",
+        "addEvent": "Event hinzufügen"
+    },
+    "categories": {
+        "alliance": "Allianz",
+        "solo": "Solo",
+        "rookie": "Neuling",
+        "holiday": "Feiertag"
+    },
+    "gives": {
+        "rewards": "Nur Belohnungen",
+        "personal": "Persönliche Rangliste",
+        "alliance": "Allianz-Rangliste",
+        "both": "Beide Ranglisten"
+    },
+    "weekdays": {
+        "short": {
+            "sunday": "So",
+            "monday": "Mo",
+            "tuesday": "Di",
+            "wednesday": "Mi",
+            "thursday": "Do",
+            "friday": "Fr",
+            "saturday": "Sa"
+        },
+        "initial": {
+            "sunday": "S",
+            "monday": "M",
+            "tuesday": "D",
+            "wednesday": "M",
+            "thursday": "D",
+            "friday": "F",
+            "saturday": "S"
+        }
+    },
+    "months": {
+        "january": "Januar",
+        "february": "Februar",
+        "march": "März",
+        "april": "April",
+        "may": "Mai",
+        "june": "Juni",
+        "july": "Juli",
+        "august": "August",
+        "september": "September",
+        "october": "Oktober",
+        "november": "November",
+        "december": "Dezember"
+    },
+    "monthsShort": {
+        "january": "Jan",
+        "february": "Feb",
+        "march": "Mär",
+        "april": "Apr",
+        "may": "Mai",
+        "june": "Jun",
+        "july": "Jul",
+        "august": "Aug",
+        "september": "Sep",
+        "october": "Okt",
+        "november": "Nov",
+        "december": "Dez"
+    },
+    "format": {
+        "weekdayDay": "{weekday}, {date}",
+        "utcTime": "{time} UTC",
+        "dateTime": "{date}, {time}",
+        "range": "{start} bis {end}",
+        "length": {
+            "minutes": "{count, plural, one {{amount} Min} other {{amount} Min}}",
+            "hours": "{count, plural, one {{amount} Stunde} other {{amount} Stunden}}",
+            "days": "{count, plural, one {{amount} Tag} other {{amount} Tage}}",
+            "weeks": "{count, plural, one {{amount} Woche} other {{amount} Wochen}}",
+            "months": "{count, plural, one {{amount} Monat} other {{amount} Monate}}"
+        }
+    },
+    "repeat": {
+        "none": "Wiederholt sich nicht",
+        "weekly": "Wöchentlich am {days}",
+        "weeklyAny": "Jede Woche",
+        "every": {
+            "hours": "{count, plural, one {Jede Stunde} other {Alle {amount} Stunden}}",
+            "days": "{count, plural, one {Jeden Tag} other {Alle {amount} Tage}}",
+            "weeks": "{count, plural, one {Jede Woche} other {Alle {amount} Wochen}}",
+            "months": "{count, plural, one {Jeden Monat} other {Alle {amount} Monate}}"
+        }
+    },
+    "empty": {
+        "title": "Noch keine Events",
+        "description": "Füge die Events hinzu, die du spielst. Lege Startdatum und Uhrzeit einmal fest, und Kalender und Liste der nächsten Events bleiben aktuell.",
+        "steps": {
+            "pick": {
+                "title": "Wähle ein Event.",
+                "text": "Wähle aus den Events in den Spieldaten."
+            },
+            "start": {
+                "title": "Lege den Start fest.",
+                "text": "Gib Datum und Uhrzeit des nächsten Durchlaufs ein. Manche Events haben zwei Durchläufe oder laufen mehrere Tage."
+            },
+            "roll": {
+                "title": "Lass es laufen.",
+                "text": "Nach dem Ende eines Durchlaufs füllt sich das nächste Datum aus der Wiederholungsregel."
+            }
+        }
+    },
+    "calendar": {
+        "previous": "Vorheriger Monat",
+        "next": "Nächster Monat",
+        "today": "Heute",
+        "zoneLabel": "Zeitzone",
+        "utc": "UTC",
+        "local": "Meine Zeit",
+        "monthTitle": "{month} {year}",
+        "nameWithRun": "{name}, {run}",
+        "dayTail": "T{day}",
+        "chipText": "{name} {tail}"
+    },
+    "upcoming": {
+        "title": "Demnächst",
+        "empty": "Keine Durchläufe in den nächsten 30 Tagen.",
+        "now": "Läuft",
+        "today": "Heute",
+        "tomorrow": "Morgen",
+        "inDays": "{count, plural, one {In {amount} Tag} other {In {amount} Tagen}}",
+        "timeAndLength": "{time}, {length}"
+    },
+    "mine": {
+        "intro": "{count, plural, one {{amount} Event.} other {{amount} Events.}} Nach dem Ende eines Durchlaufs aktualisiert sich das Datum des nächsten von selbst aus der Wiederholungsregel, daher zeigt der Kalender immer, was als Nächstes kommt.",
+        "run": "Durchlauf",
+        "rangeLine": "{range}, {time}",
+        "shortLine": "{when}, {length}",
+        "repeat": "Wiederholung: {rule}",
+        "coreTag": "Ergebnisse in Kern-Events",
+        "coreLink": "Kern-Events öffnen",
+        "ended": "Beendet",
+        "logged": "Erfasst",
+        "edit": "Bearbeiten",
+        "remove": "Entfernen"
+    },
+    "toast": {
+        "removedTitle": "{name} entfernt",
+        "removedMessage": "Gespeicherte Ergebnisse bleiben im Event-Verlauf.",
+        "undo": "Rückgängig",
+        "resultSavedTitle": "Ergebnis gespeichert",
+        "resultSavedMessage": "{name} wurde dem Event-Verlauf hinzugefügt."
+    },
+    "add": {
+        "title": "Event hinzufügen",
+        "description": "Wähle ein Event aus den Spieldaten",
+        "close": "Schließen",
+        "searchLabel": "Events suchen",
+        "searchPlaceholder": "{amount} Events durchsuchen",
+        "categoryLabel": "Event-Kategorie",
+        "all": "Alle",
+        "categoryTab": "{name}, {amount}",
+        "showing": "{shown} von {total} Events angezeigt. Wähle eines, um Startdatum und Uhrzeit festzulegen.",
+        "none": "Kein Event passt zu deiner Suche.",
+        "noDuration": "Dauer nicht in den Spieldaten",
+        "added": "Hinzugefügt",
+        "button": "Hinzufügen",
+        "addNamed": "{name} hinzufügen",
+        "showMore": "Mehr anzeigen"
+    },
+    "schedule": {
+        "description": "Lege fest, wann es läuft. Die nächsten Durchläufe aktualisieren sich von selbst.",
+        "cancel": "Abbrechen",
+        "add": "Event hinzufügen",
+        "save": "Zeitplan speichern",
+        "howTitle": "Wie das Event läuft",
+        "shape": {
+            "one": "Ein Tag",
+            "several": "Mehrere Tage",
+            "two": "Zwei Durchläufe pro Zyklus"
+        },
+        "shapeHint": {
+            "one": "Ein Durchlauf von einem Tag. Ändere die Dauer für einen kurzen Durchlauf in Minuten oder Stunden.",
+            "several": "Ein Durchlauf, der mehrere Tage dauert.",
+            "two": "Zwei Durchläufe pro Zyklus, etwa zwei Saisons oder zwei Wochentage. Jeder Durchlauf hat eigenen Start, eigene Dauer und eigenen Namen."
+        },
+        "runTitle": "Durchlauf {number}",
+        "runSingle": "Durchlauf",
+        "name": "Name",
+        "startDate": "Startdatum",
+        "startTime": "Startzeit (UTC)",
+        "length": "Dauer",
+        "unit": "Einheit",
+        "runUnits": {
+            "minutes": "Minuten",
+            "hours": "Stunden",
+            "days": "Tage"
+        },
+        "repeatTitle": "Wiederholung",
+        "repeatKind": {
+            "none": "Wiederholt sich nicht",
+            "every": "Alle",
+            "weekly": "Wöchentlich an Tagen"
+        },
+        "every": "Alle",
+        "weekdays": "Wochentage",
+        "repeatUnits": {
+            "hours": "Stunden",
+            "days": "Tage",
+            "weeks": "Wochen",
+            "months": "Monate"
+        },
+        "gameSays": "Laut Spieldaten: {text}",
+        "gameSaysNoRule": "Laut Spieldaten: {text}",
+        "useSuggestion": "Vorschlag nutzen",
+        "everyError": "Gib eine Zahl über 0 ein.",
+        "givesTitle": "Was das Event gibt",
+        "givesHint": "Aus den Spieldaten gesetzt. Du kannst es ändern. Es bestimmt, was das Ergebnisformular abfragt.",
+        "previewTitle": "Was der Kalender zeigt",
+        "previewEmpty": "Gib ein gültiges Datum und eine Dauer ein, um die Durchläufe zu sehen.",
+        "previewShort": "{range}, {time}",
+        "previewNote": "Wenn ein Durchlauf endet, rückt sein Datum nach der Wiederholungsregel vor. Du kannst jedes Datum bearbeiten."
+    },
+    "result": {
+        "title": "Event-Details hinzufügen",
+        "description": {
+            "participation": "Erfasse, dass du teilgenommen hast, und was du bekommen hast",
+            "milestones": "Punkte und die erreichten Ziele",
+            "ranking": "Score, Rang und die erreichten Meilensteine",
+            "tier": "Ligastufe und Platzierung",
+            "waves": "Schwierigkeit, Wellen, Punkte und Ränge",
+            "skipped": "Erfasse, dass du diesen Durchlauf übersprungen hast"
+        },
+        "cancel": "Abbrechen",
+        "save": "Ergebnis speichern",
+        "noEvents": "Füge zuerst ein Event hinzu. Nur Events unter Meine Events können erfasst werden, Kern-Events werden in Kern-Events erfasst.",
+        "whichTitle": "Welches Event",
+        "event": "Event",
+        "versionsTag": "Versionen",
+        "run": "Durchlauf",
+        "otherDate": "Anderes Datum",
+        "runDate": "Datum des Durchlaufs",
+        "runLong": "{range} ({length})",
+        "runNamed": "{when}, {name}",
+        "notLogged": "{run}, noch nicht erfasst",
+        "tookPartQuestion": "Hast du teilgenommen?",
+        "tookPart": "Teilgenommen",
+        "skipped": "Übersprungen",
+        "coreNote": "Nur von dir hinzugefügte Events sind aufgelistet. Kern-Events werden in Kern-Events erfasst, nicht hier.",
+        "versionTitle": "Version",
+        "versionKnown": "Die Ziele dieser Version sind in den Daten und werden anhand deiner Punkte geprüft.",
+        "versionUnknown": "Diese Version hat Ziele mit Punkten, die noch nicht in den Daten sind. Prüfe diese Ziele von Hand.",
+        "participationTitle": "Dieses Event hat keinen Score und keine Rangliste",
+        "participationText": "Die Spieldaten listen nur Belohnungen, daher gibt es nichts zu werten. Erfasse, dass du teilgenommen hast, die erhaltenen Belohnungen und eine Notiz.",
+        "pointsFallback": "Punkte",
+        "pointsReached": "{unit} erreicht",
+        "pointsHint": "Gesamtwert am Ende des Events.",
+        "finalScore": "Endscore ({unit})",
+        "finalScoreHint": "Dein Gesamtwert {unit} am Ende des Events.",
+        "rankingTitle": "Rangliste",
+        "yourRank": "Dein Rang",
+        "allianceRank": "Allianzrang",
+        "rankGroup": "Ranggruppe",
+        "rankGroupsHint": "Ranggruppen stammen aus den Spieldaten: {groups} und mehr.",
+        "targetsTitle": "Erreichte Ziele, aus deinen Punkten",
+        "targetsCount": "{reached} von {total} erreicht",
+        "targetPoints": "{points} {unit}",
+        "pointsMissing": "{unit}: Punkte noch nicht in den Daten",
+        "needsPurchase": "Braucht einen Kauf beliebiger Größe.",
+        "targetsHint": "Anhand des Scores geprüft. Ziele und Belohnungen stammen aus den Spieldaten.",
+        "targetsHintUnknown": "Ziele mit Punkten, die noch nicht in den Daten sind, werden nie anhand des Scores geprüft. Prüfe sie von Hand.",
+        "tierTitle": "Liga",
+        "tier": "Tier",
+        "placement": "Deine Platzierung in der Gruppe",
+        "starChange": "Sternänderung, aus den Spieldaten",
+        "stars": "{count, plural, one {{amount} Stern} other {{amount} Sterne}}",
+        "tiersHint": "Tiers: {tiers}.",
+        "allianceTitle": "Allianz",
+        "outcome": "Allianzergebnis in diesem Durchlauf",
+        "outcomeHint": "Optional. Sieg, Niederlage oder Unentschieden.",
+        "outcomes": {
+            "none": "Nicht gesetzt",
+            "won": "Gewonnen",
+            "lost": "Verloren",
+            "drawn": "Unentschieden"
+        },
+        "wavesTitle": "Schwierigkeit und Wellen",
+        "difficulty": "Gespielte Schwierigkeit",
+        "difficultyFrom": "{name}, ab {points} Allianzpunkten",
+        "wavesCleared": "Wellen geschafft, 0 bis {count}",
+        "wavesHint": "Die Spieldaten listen {count} Wellen für {name}.",
+        "defenseTitle": "Verteidigungspunkte",
+        "yourPoints": "Deine Punkte",
+        "alliancePoints": "Allianzpunkte",
+        "rewardLevel": "Erreichte Belohnungsstufe",
+        "rewardLevelNone": "Noch keine",
+        "level": "Stufe {level}",
+        "levelsHint": "Stufen brauchen sowohl persönliche als auch Allianzpunkte, aus den Spieldaten.",
+        "rankingsTitle": "Ranglisten",
+        "notesTitle": "Notizen",
+        "rewards": "Erhaltene Belohnungen",
+        "rewardsPlaceholder": "Zum Beispiel 2 Hero Shards, 500 Gems",
+        "notes": "Notizen",
+        "notesPlaceholder": "Alles, was du dir zu diesem Durchlauf merken willst"
+    },
+    "history": {
+        "emptyTitle": "Noch keine Ergebnisse erfasst",
+        "emptyText": "Tippe auf Event-Details hinzufügen, um zu erfassen, was du in einem Event-Durchlauf bekommen hast. Deine Ergebnisse und Trends erscheinen hier.",
+        "eventFilter": "Event",
+        "allEvents": "Alle Events",
+        "period": "Zeitraum",
+        "months3": "3 Monate",
+        "months6": "6 Monate",
+        "allTime": "Gesamt",
+        "intro": "Jedes erfasste Ergebnis, neueste zuerst. Kern-Events werden in Kern-Events erfasst und erscheinen hier nicht.",
+        "showing": "{shown} von {total} Ergebnissen angezeigt.",
+        "showingEvent": "{count, plural, one {{amount} Ergebnis für {name} angezeigt.} other {{amount} Ergebnisse für {name} angezeigt.}}",
+        "noneInPeriod": "Keine Ergebnisse in diesem Zeitraum.",
+        "showMore": "Mehr anzeigen",
+        "colDate": "Datum",
+        "colEvent": "Event",
+        "colScore": "Score",
+        "colRank": "Rang",
+        "colAlliance": "Allianz",
+        "colResult": "Ergebnis",
+        "colActions": "Aktionen",
+        "none": "-",
+        "edit": "Bearbeiten",
+        "editNamed": "Ergebnis für {name} bearbeiten",
+        "skipped": "Übersprungen",
+        "tierOnly": "{tier} {placement}",
+        "stars": "{count, plural, one {{amount} Stern} other {{amount} Sterne}}",
+        "waves": "{count, plural, one {{difficulty}, {amount} Welle} other {{difficulty}, {amount} Wellen}}",
+        "targets": "{unit}, {reached} von {total} Zielen",
+        "tookPart": "Teilgenommen",
+        "tookPartRewards": "Teilgenommen, {rewards}",
+        "rankText": "Rang {rank}",
+        "allianceRankText": "Allianz {rank}",
+        "separator": " · ",
+        "defensePoints": "{score} Verteidigungspunkte",
+        "scoreUnit": "{score} {unit}",
+        "noScore": "Kein Score",
+        "trendTitle": "Trend {name}",
+        "trendScore": "{unit} am Ende jedes Events",
+        "trendRank": "Dein Rang am Ende jedes Events",
+        "metricLabel": "Trendwert",
+        "metricScore": "Score",
+        "metricRank": "Persönlicher Rang",
+        "chartLabel": "Trenddiagramm für {name}",
+        "best": "Beste",
+        "average": "Schnitt",
+        "latest": "Letzte",
+        "change": "Änderung",
+        "events": "{count, plural, one {{amount} Event} other {{amount} Events}}",
+        "changeVs": "ggü. {month}",
+        "changePercentVs": "{percent}% ggü. {month}",
+        "noPrevious": "Kein früheres Ergebnis",
+        "noTrend": "Dieses Event hat keinen Score und keinen Rang für ein Diagramm. Seine Ergebnisse stehen in der Liste unten."
+    },
+    "cycles": {
+        "title": "Zyklen der Kern-Events",
+        "hint": "SvS, Alliance Showdown und King of Icefield laufen in einem festen Zyklus. Lege den nächsten Start einmal fest, und sie wiederholen sich im Kalender.",
+        "next": "Nächster {date}, wiederholt {repeat}",
+        "notSet": "Nicht gesetzt",
+        "set": "Zyklus festlegen",
+        "edit": "Zyklus bearbeiten"
+    }
+}

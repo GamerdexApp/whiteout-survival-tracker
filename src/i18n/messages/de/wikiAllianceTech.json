@@ -1,0 +1,54 @@
+{
+    "line": "{total} Techs in drei Bäumen: Wachstum {growth}, Territorium {territory}, Kampf {battle}. Nur Referenz, hier wird nichts gespeichert.",
+    "list": {
+        "title": "Tech-Knoten",
+        "categoriesLabel": "Tech-Bäume",
+        "categories": {
+            "all": "Alle",
+            "Growth": "Wachstum",
+            "Territory": "Territorium",
+            "Battle": "Kampf"
+        },
+        "search": "Suche",
+        "searchPlaceholder": "Tech nach Name oder Effekt suchen",
+        "tier": "Tier",
+        "allTiers": "Alle Tiers",
+        "tierOption": "Tier {tier}",
+        "empty": "Kein Tech-Knoten passt zu dieser Suche.",
+        "emptyHint": "Leere die Suche oder einen Filter.",
+        "columns": {
+            "tech": "Tech",
+            "category": "Kategorie",
+            "tier": "Tier",
+            "levels": "Stufen",
+            "maxBonus": "Max. Bonus",
+            "cost": "Kosten Stufe 1",
+            "time": "Zeit Stufe 1",
+            "requires": "Braucht für Stufe 1"
+        },
+        "mobileMeta": "{category}, Tier {tier}, {levels}",
+        "count": "{count, plural, one {{amount} Tech} other {{amount} Techs}}"
+    },
+    "levels": "{count, plural, one {{amount} Stufe} other {{amount} Stufen}}",
+    "detail": {
+        "facts": "Details",
+        "levelsTitle": "Stufen",
+        "none": "Keine",
+        "fields": {
+            "category": "Kategorie",
+            "tier": "Tier",
+            "effect": "Effekt",
+            "stat": "Wert",
+            "levels": "Stufen"
+        },
+        "columns": {
+            "level": "Stufe",
+            "bonus": "Bonus",
+            "cost": "Kosten",
+            "time": "Zeit",
+            "requires": "Braucht"
+        },
+        "level": "Stufe {level}",
+        "requirement": "{name} Stufe {level}"
+    }
+}

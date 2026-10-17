@@ -1,0 +1,209 @@
+{
+  "page": {
+    "title": "Animali"
+  },
+  "view": {
+    "subline": "{chief} · {details} · {unlocked} animali su {total} sbloccati"
+  },
+  "rarities": {
+    "Common": "Comune",
+    "Uncommon": "Non comune",
+    "Rare": "Raro",
+    "Epic": "Epico",
+    "Legendary": "Leggendario"
+  },
+  "unlock": {
+    "afterFurnace": "Giorno {days} e Furnace {level}",
+    "afterPet": "Giorno {days} e {pet} livello {level}"
+  },
+  "summary": {
+    "unlocked": "Sbloccati",
+    "unlockedValue": "{count} su {total}",
+    "unlockedNote": "Impostato da te",
+    "power": "Potenza totale",
+    "powerNote": "Potenza di livello, avanzamento e perfezionamento degli animali sbloccati",
+    "powerUnknown": "Potenza di livello, avanzamento e perfezionamento degli animali sbloccati, {amount} sconosciuti",
+    "next": "Prossimo da sbloccare",
+    "allUnlocked": "Tutti sbloccati",
+    "allUnlockedNote": "Ogni animale è sbloccato",
+    "lockedNote": "{count} bloccati fino a un giorno del server successivo"
+  },
+  "totals": {
+    "attackDefense": "Attacco e difesa delle truppe",
+    "attack": "Attacco",
+    "defense": "Difesa",
+    "lethality": "Letalità",
+    "health": "Salute",
+    "gain": "+{value}%",
+    "types": {
+      "infantry": "Fanteria",
+      "lancer": "Lanciere",
+      "marksman": "Tiratore"
+    }
+  },
+  "search": {
+    "label": "Cerca animali",
+    "placeholder": "Cerca tra {amount} animali per nome"
+  },
+  "status": {
+    "showing": "Mostrati {shown} {count, plural, one {animale} other {animali}} su {total}.",
+    "filters": " Filtri: {list}.",
+    "filterNames": {
+      "rarity": "Rarità",
+      "status": "Stato",
+      "advanced": "Avanzato",
+      "order": "Ordine"
+    },
+    "readOnlyGoals": "Qui gli obiettivi sono in sola lettura e si impostano in Piano. Un obiettivo uguale al valore attuale significa nessun obiettivo.",
+    "showMore": "Mostra {count, plural, one {{amount} animale in più} other {{amount} animali in più}}"
+  },
+  "empty": {
+    "title": "Nessun animale corrisponde",
+    "description": "Cambia la ricerca o i filtri per vedere altri animali.",
+    "reset": "Azzera filtri"
+  },
+  "toast": {
+    "lockedTitle": "{name} bloccato",
+    "lockedMessage": "Livello, avanzamento e perfezionamento restano salvati.",
+    "undo": "Annulla"
+  },
+  "card": {
+    "summary": "{rarity} · livello massimo {max}",
+    "unlocked": "Sbloccato",
+    "unlockedLabel": "{pet} sbloccato",
+    "cooldown": "Ricarica {time}",
+    "cooldownByTier": "La ricarica cambia con il grado",
+    "cooldownUnknown": "Ricarica sconosciuta",
+    "skillTiers": "{count, plural, one {{amount} grado di abilità} other {{amount} gradi di abilità}}",
+    "unlockRule": "Regola di sblocco",
+    "ruleMet": "Soddisfi questa regola",
+    "level": "Livello (max {max})",
+    "levelLabel": "Livello di {pet}",
+    "goal": "Obiettivo {level}",
+    "noGoal": "Nessun obiettivo",
+    "advanced": "Avanzato",
+    "advancedHint": "Avanzato si può impostare ai livelli 10, 20, 30 e così via.",
+    "refinement": "Perfezionamento",
+    "refinementMax": "max {max}% ciascuno",
+    "refineLabel": "{stat} di {pet}",
+    "percentSign": "%",
+    "attack": "Att +{value}%",
+    "defense": "Dif +{value}%",
+    "power": "Potenza {value}",
+    "powerUnknown": "Potenza sconosciuta",
+    "powerParts": "Livello e avanzamento {base}, perfezionamento {refining}"
+  },
+  "filters": {
+    "button": "Filtri",
+    "title": "Filtri",
+    "description": "Scegli cosa mostra l'elenco Animali",
+    "rarity": "Rarità",
+    "rarityAll": "Tutti {amount}",
+    "rarityOption": "{rarity} {amount}",
+    "rarities": {
+      "Common": "Comune",
+      "Uncommon": "Non comune",
+      "Rare": "Raro",
+      "Epic": "Epico",
+      "Legendary": "Leggendario"
+    },
+    "status": "Stato",
+    "statusOptions": {
+      "all": "Tutti gli animali",
+      "unlocked": "Sbloccati",
+      "locked": "Bloccati"
+    },
+    "advanced": "Avanzato",
+    "advancedOptions": {
+      "any": "Qualsiasi",
+      "advanced": "Avanzato",
+      "notAdvanced": "Non avanzato"
+    },
+    "order": "Ordine",
+    "orderOptions": {
+      "game": "Ordine del gioco",
+      "name": "Nome, dalla A alla Z",
+      "level": "Livello, prima il più alto"
+    },
+    "notSaved": "I filtri non vengono salvati.",
+    "reset": "Azzera",
+    "show": "Mostra {count, plural, one {{amount} animale} other {{amount} animali}}"
+  },
+  "plan": {
+    "button": "Piano",
+    "title": "Pianifica Animali",
+    "description": "Cibo, oggetti, statistiche e punti evento per raggiungere i tuoi obiettivi",
+    "saved": "Piano salvato {date}",
+    "notSavedYet": "Piano non ancora salvato",
+    "close": "Chiudi",
+    "save": "Salva piano",
+    "exportButton": "Esporta negli Eventi principali",
+    "exportNothing": "Il piano non ha punteggi di avanzamento da esportare.",
+    "export": {
+      "advancement": "Punteggio di avanzamento animali",
+      "commonMark": "Common Wild Marks",
+      "advancedMark": "Advanced Wild Marks",
+      "marksDetail": "Contati da Risorse."
+    },
+    "noPets": "Aggiungi un animale sbloccato per pianificarne i livelli.",
+    "add": {
+      "title": "Aggiungi un animale",
+      "selectLabel": "Animale da aggiungere",
+      "button": "Aggiungi animale",
+      "allIn": "Ogni animale sbloccato è nel piano.",
+      "noneUnlocked": "Sblocca un animale nella pagina Animali per pianificarlo."
+    },
+    "block": {
+      "rarities": {
+        "Common": "Comune",
+        "Uncommon": "Non comune",
+        "Rare": "Raro",
+        "Epic": "Epico",
+        "Legendary": "Leggendario"
+      },
+      "maxLevel": "Livello massimo {max}",
+      "remove": "Rimuovi",
+      "removeLabel": "Rimuovi {pet} dal piano",
+      "current": "Livello attuale",
+      "to": "a",
+      "goal": "Livello obiettivo (max {max})",
+      "goalLabel": "Livello obiettivo di {pet}",
+      "payAdvancement": "Paga l'avanzamento all'obiettivo",
+      "paysCurrent": "Non avanzato al livello {level}, quindi quell'avanzamento viene pagato."
+    },
+    "result": {
+      "title": "Risultato per {count, plural, one {{amount} animale} other {{amount} animali}}",
+      "resources": "Risorse, tutti gli animali",
+      "byPet": "Per animale",
+      "heads": {
+        "pet": "Animale",
+        "levels": "Livelli",
+        "food": "Cibo",
+        "power": "Potenza"
+      },
+      "powerGain": "+{value}",
+      "percentGain": "+{value}%",
+      "unknown": "Sconosciuto",
+      "gains": "Guadagni",
+      "gainNames": {
+        "levels": "Livelli guadagnati",
+        "advancements": "Avanzamenti",
+        "attack": "Attacco delle truppe",
+        "defense": "Difesa delle truppe",
+        "power": "Potenza",
+        "score": "Punteggio di avanzamento"
+      },
+      "unknownPowerNote": "Il pacchetto non ha la potenza avanzata per un livello di questo piano, quindi il guadagno di potenza è Sconosciuto.",
+      "eventPoints": "Punti evento",
+      "events": {
+        "svs": "SvS",
+        "allianceShowdown": "Alliance Showdown",
+        "kingOfIcefield": "King of Icefield",
+        "hallOfChief": "Hall of Chief"
+      },
+      "notScored": "Senza punti",
+      "eventNote": "I punti evento sono il punteggio di avanzamento per i punti della riga di punteggio di ogni evento.",
+      "scoreSourceNote": "I punteggi di avanzamento dei livelli da 40 a 100 corrispondono alle note degli eventi. I livelli da 10 a 30 vengono da una sola fonte (WoS Tools)."
+    }
+  }
+}

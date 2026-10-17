@@ -1,0 +1,95 @@
+{
+  "hoursMinutes": {
+    "hours": "Horas",
+    "minutes": "Minutos"
+  },
+  "jobCard": {
+    "idle": "Libre",
+    "progress": "Progreso de {title}",
+    "ends": "Termina {date}",
+    "manage": "Gestionar",
+    "finish": "Terminar"
+  },
+  "timeLeftPill": {
+    "manage": "{label}, {timeLeft}. Gestionar mejora"
+  },
+  "manage": {
+    "fallbackTitle": "Gestionar mejora",
+    "description": "Gestiona la mejora en curso",
+    "close": "Cerrar",
+    "finish": "Terminar mejora",
+    "progress": "Progreso de la mejora",
+    "started": "Empezó {date}",
+    "ends": "Termina {date}",
+    "speedup": {
+      "title": "He usado un acelerador",
+      "minutesUsed": "Minutos usados",
+      "apply": "Aplicar",
+      "timeLeftAfter": "Tiempo restante tras aplicar",
+      "hint": "Los aceleradores de cualquier tipo restan sus minutos al tiempo restante."
+    },
+    "setTime": {
+      "title": "Fijar el tiempo restante",
+      "button": "Fijar el tiempo restante",
+      "hint": "Úsalo cuando el juego muestre otro tiempo."
+    },
+    "done": {
+      "title": "Cuando termine",
+      "cancel": "Cancelar esta mejora"
+    }
+  },
+  "planStock": {
+    "title": "¿Tienes suficiente?",
+    "shortCount": "faltan {short} de {total}",
+    "description": "Lo que el plan toma de tus existencias, comparado con lo que tienes. El plan completo está en el resultado de abajo.",
+    "enough": "Suficiente",
+    "notEnough": "No basta",
+    "covered": "{name} cubierto",
+    "available": "Disponible {amount}",
+    "needed": "Necesario {amount}",
+    "leftOver": "Sobran {amount}",
+    "shortBy": "Faltan {amount}",
+    "stillNeeded": "Aún necesario para el plan completo: {list}.",
+    "openResources": "Abrir Recursos"
+  },
+  "start": {
+    "title": "Iniciar mejora",
+    "cancel": "Cancelar",
+    "nothingToStart": "Ahora no se puede iniciar nada. Todo está al nivel máximo, bloqueado o ya en mejora.",
+    "powerGained": "Poder ganado",
+    "packageTime": "Tiempo del paquete",
+    "unknown": "Desconocido",
+    "readOnly": "Solo lectura",
+    "openBonuses": "Abrir Bonificaciones",
+    "yourTime": "Tu tiempo",
+    "timeHint": "Solo cuenta la velocidad de tu página de Bonificaciones. Si el juego muestra otro tiempo, cámbialo en Cuándo empezó.",
+    "allBusy": "Todo está ocupado aquí. Iniciar mejora está desactivado hasta que algo quede libre.",
+    "whenStarted": "Cuándo empezó",
+    "timeLeftHours": "Tiempo restante, horas",
+    "ends": "Termina",
+    "startedHint": "Elige Ya iniciada para introducir el tiempo que muestra el juego. La hora de fin se calcula a partir de él.",
+    "takeCost": {
+      "title": "Descontar el coste de Recursos",
+      "hint": "Resta el coste de arriba de tus existencias.",
+      "enough": "Tienes suficiente de cada recurso.",
+      "short": "Te faltan {names}. Aun así puedes iniciarla, y las existencias se detienen en 0."
+    },
+    "modes": {
+      "now": "Empieza ahora",
+      "already": "Ya iniciada"
+    }
+  },
+  "researchQueues": {
+    "label": "{name}, {tabs}",
+    "main": {
+      "name": "Cola de investigación",
+      "tabs": "Growth, Economy y Battle",
+      "shortName": "Investigación"
+    },
+    "warAcademy": {
+      "name": "Cola de War Academy",
+      "tabs": "T11 y T12",
+      "shortName": "War Academy"
+    }
+  }
+}

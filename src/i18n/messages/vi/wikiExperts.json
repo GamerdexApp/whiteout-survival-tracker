@@ -1,0 +1,70 @@
+{
+    "line": "{experts} chuyên gia và {relationships} giai đoạn quan hệ. Chỉ để tham khảo, không có gì ở đây được lưu.",
+    "roster": {
+        "title": "Chuyên gia",
+        "count": "{shown} trên {total} chuyên gia",
+        "search": "Tìm kiếm",
+        "searchPlaceholder": "Tìm trong {count} chuyên gia theo tên, chức danh hoặc chuyên môn",
+        "generation": "Thế hệ",
+        "all": "Tất cả",
+        "empty": "Không có chuyên gia nào khớp các bộ lọc này.",
+        "generationValue": "Thế hệ {generation}",
+        "unlock": "Mở khóa: ngày máy chủ {days}",
+        "unlockUnknown": "Mở khóa:",
+        "unreleased": "Chưa phát hành"
+    },
+    "detail": {
+        "subline": "{title} · chuyên môn {specialty} · thế hệ {generation}",
+        "baseBonus": "Cơ bản: {bonus}",
+        "bonus": "{stat} {value}",
+        "percentValue": "{value}%",
+        "skills": "Kỹ năng",
+        "talent": "Thiên phú, cấp tối đa {level}",
+        "affinityLevels": "Cấp thân thiết",
+        "baseBonusLabel": "Chỉ số cơ bản",
+        "unlock": "Mở vào ngày máy chủ {days}"
+    },
+    "skills": {
+        "title": "Kỹ năng và thiên phú",
+        "columns": {
+            "skill": "Kỹ năng",
+            "max": "Tối đa",
+            "effect": "Hiệu ứng",
+            "books": "Sách để tối đa",
+            "exp": "EXP để tối đa"
+        },
+        "talent": "{name} (thiên phú)",
+        "none": "Không có",
+        "selectHint": "Chọn một kỹ năng để xem chi tiết."
+    },
+    "skillLevels": {
+        "title": "Bảng cấp kỹ năng",
+        "meta": "{name}, cấp 1 đến {max}",
+        "level": "Cấp {level}",
+        "columns": {
+            "level": "Cấp",
+            "exp": "EXP",
+            "books": "Sách"
+        },
+        "none": "Không có"
+    },
+    "affinity": {
+        "title": "Cấp thân thiết",
+        "level": "Cấp {level}",
+        "columns": {
+            "level": "Cấp",
+            "required": "Thân thiết cần",
+            "bonus": "Chỉ số cộng thêm",
+            "affinityPower": "Sức mạnh thân thiết",
+            "levelPower": "Sức mạnh cấp",
+            "advancement": "Chi phí thăng tiến"
+        },
+        "noAdvancement": "Không thăng tiến",
+        "startNote": "Thân thiết cần ở cấp 1 là giá trị khởi đầu {start}. Từ cấp 2, con số là chi phí để đạt cấp đó."
+    },
+    "relationships": {
+        "title": "Giai đoạn quan hệ",
+        "fromLevel": "từ cấp {level}"
+    },
+    "recordLine": "{title}, chuyên môn {specialty}, thế hệ {generation}. Chỉ để tham khảo, không có gì ở đây được lưu."
+}

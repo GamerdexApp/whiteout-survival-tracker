@@ -1,0 +1,56 @@
+{
+    "line": "{rows} dòng trang bị, {slots} ô và {rates} tỉ lệ quy đổi. Chỉ để tham khảo, không có gì ở đây được lưu vào thủ lĩnh của bạn.",
+    "slots": {
+        "heading": "Ô trang bị",
+        "rarities": "Biểu tượng {first} đến {last}",
+        "detailLine": "Tăng cường cho quân {troopType}. Mỗi độ hiếm một biểu tượng."
+    },
+    "table": {
+        "heading": "Bảng trang bị",
+        "meta": "{rows} dòng, {tiers} bậc",
+        "searchLabel": "Tìm kiếm",
+        "searchPlaceholder": "Tìm trong {rows} dòng trang bị",
+        "tierLabel": "Bậc",
+        "allTiers": "Mọi bậc",
+        "starsLabel": "Sao",
+        "allStars": "Mọi sao",
+        "starsOption": "Sao {stars}",
+        "empty": "Không có dòng trang bị nào khớp bộ lọc của bạn."
+    },
+    "columns": {
+        "row": "Dòng",
+        "materials": "Vật liệu",
+        "stats": "Chỉ số",
+        "power": "Sức mạnh",
+        "score": "Điểm",
+        "capacity": "Sức chứa TK"
+    },
+    "cells": {
+        "none": "Không có",
+        "percent": "{value}%"
+    },
+    "tiers": {
+        "heading": "Các bậc",
+        "meta": "{tiers} nhãn bậc",
+        "tier": "Bậc",
+        "rows": "Dòng",
+        "stats": "Chỉ số, từ đầu đến cuối",
+        "power": "Sức mạnh ở dòng cuối",
+        "statsRange": "{first}% đến {last}%"
+    },
+    "exchange": {
+        "heading": "Tỉ lệ quy đổi vật liệu",
+        "exchange": "Quy đổi",
+        "from": "Từ",
+        "to": "Thành",
+        "weeklyLimit": "Giới hạn hằng tuần"
+    },
+    "setBonus": {
+        "heading": "Thưởng bộ",
+        "meta": "{tiers} bậc",
+        "hint": "Mặc 3 món để nhận thưởng Phòng thủ và 6 món để nhận thưởng Tấn công. Phần trăm phụ thuộc vào bậc của các món bạn mặc. Áp dụng cho quân {types}.",
+        "pieceSet": "Bộ {pieces} món",
+        "tier": "Bậc",
+        "pieces": "{pieces} món, {stat}"
+    }
+}

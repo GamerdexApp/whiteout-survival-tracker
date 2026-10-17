@@ -1,0 +1,117 @@
+{
+    "unknown": "Unbekannt",
+    "describe": {
+        "state": "State {number}",
+        "empty": "Noch keine Details"
+    },
+    "coreEvents": {
+        "svs": "SvS",
+        "showdown": "Alliance Showdown",
+        "king": "King of Icefield",
+        "hall": "Hall of Chief"
+    },
+    "count": "{count, plural, one {{amount} Häuptling} other {{amount} Häuptlinge}}",
+    "card": {
+        "active": "Aktiv",
+        "noNotes": "Keine Notizen",
+        "furnace": "Furnace",
+        "state": "State",
+        "created": "Erstellt: {date}",
+        "lastModified": "Zuletzt geändert: {date}",
+        "setActive": "Aktiv setzen",
+        "edit": "Bearbeiten",
+        "delete": "Löschen"
+    },
+    "dialog": {
+        "editTitle": "Häuptling bearbeiten",
+        "newTitle": "Neuer Häuptling",
+        "newDescription": "Gib einen Namen ein. Der Rest ist optional.",
+        "cancel": "Abbrechen",
+        "save": "Speichern",
+        "create": "Häuptling anlegen",
+        "errors": {
+            "name": "Gib einen Namen für diesen Häuptling ein.",
+            "stateNumber": "Gib eine ganze Zahl von 1 bis {max} ein.",
+            "serverStartDate": "Gib ein Datum ein, das nicht in der Zukunft liegt."
+        },
+        "name": "Name",
+        "stateNumber": {
+            "label": "State-Nummer",
+            "hint": "Der State, in dem dein Häuptling lebt. Ganze Zahl."
+        },
+        "serverStartDate": {
+            "label": "Serverstartdatum",
+            "info": {
+                "label": "Wo du das Serverstartdatum findest",
+                "screen": "Öffne das Spiel und gehe von deinem Profil aus zum Server-Bildschirm.",
+                "date": "Lies das Datum ab, an dem der Server eröffnet wurde. Wird nur die Serverstag-Nummer angezeigt, zähle so viele Tage ab heute zurück.",
+                "missing": "Kein Datum auf dem Bildschirm? Frag deinen Allianzleiter oder schau in den State-Chat.",
+                "tolerance": "Ein Datum mit bis zu 21 Tagen Abweichung reicht aus. Forschungsfreischaltungen nutzen 150 und 600 Tage, daher ändern drei Wochen Abweichung das Ergebnis selten."
+            }
+        },
+        "generation": {
+            "label": "Helden freigeschaltet bis",
+            "hint": "Helden späterer Generationen bleiben auf der Helden-Seite und im Plan versteckt.",
+            "preLegendary": "Generation 0 (vor Legendary)",
+            "numbered": "Generation {generation}"
+        },
+        "events": {
+            "legend": "Angezeigte Kern-Events",
+            "shownOf": "{shown} von {total}",
+            "hint": "Ausgeblendete Events verschwinden aus den Kern-Event-Tabs und ihrem Event-Log. Du kannst sie jederzeit wieder einschalten."
+        },
+        "notes": "Notizen",
+        "packs": {
+            "legend": "Pakete",
+            "constructionLabel": "Bau-Paket",
+            "constructionHint": "Schaltet den zweiten Baumeister auf der Gebäude-Seite frei.",
+            "constructionBusy": "Der zweite Baumeister führt ein Upgrade aus. Schließe es zuerst ab oder brich es ab, um dies auszuschalten.",
+            "marchLabel": "Marschwarteschlangen-Paket",
+            "marchHint": "Fügt eine Marschwarteschlange hinzu. Sie zählt auf der Boni-Seite."
+        }
+    },
+    "delete": {
+        "title": "Häuptling löschen",
+        "cancel": "Abbrechen",
+        "confirmButton": "Häuptling löschen",
+        "confirm": "Möchtest du „<strong>{name}</strong>“ wirklich löschen?",
+        "summary": "{details} · erstellt {date}",
+        "note": "Das entfernt den Häuptling mit allen Stufen, Zielen und Notizen von diesem Gerät. Nach Ablauf der 10 Sekunden für Rückgängig gibt es keinen Weg zurück.",
+        "exportBackup": "Zuerst Backup exportieren"
+    },
+    "page": {
+        "title": "Häuptlinge",
+        "newChief": "Neuer Häuptling",
+        "sort": {
+            "label": "Sortieren nach",
+            "options": {
+                "lastModified": "Zuletzt geändert",
+                "createdAt": "Erstellungsdatum",
+                "name": "Name"
+            }
+        },
+        "subline": {
+            "none": "Noch keine Häuptlinge.",
+            "total": "{chiefs}.",
+            "withActive": "{chiefs}. {name} ist aktiv."
+        },
+        "toasts": {
+            "backupTitle": "Backup heruntergeladen",
+            "deleted": "{name} gelöscht",
+            "undo": "Rückgängig"
+        },
+        "loading": "Gespeicherte Daten aus diesem Browser werden gelesen. Die Liste erscheint, sobald sie bereit ist.",
+        "empty": {
+            "title": "Noch keine Häuptlinge",
+            "description": "Lege einen Häuptling an, um Gebäude, Helden, Gear, Forschung und deinen Upgrade-Plan zu verfolgen. Alles bleibt in diesem Browser.",
+            "restore": "Backup in den Einstellungen wiederherstellen"
+        },
+        "search": {
+            "label": "Nach Name suchen",
+            "showing": "{shown} von {total} angezeigt",
+            "noMatchTitle": "Kein Häuptling passt zu „{search}“",
+            "noMatchDescription": "Prüfe die Schreibweise oder leere die Suche, um alle {count} Häuptlinge zu sehen.",
+            "clear": "Suche leeren"
+        }
+    }
+}

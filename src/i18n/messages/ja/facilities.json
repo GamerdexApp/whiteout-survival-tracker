@@ -1,0 +1,86 @@
+{
+    "page": {
+        "title": "施設"
+    },
+    "view": {
+        "subline": "{chief} · マップ施設{facilities}件、城、拠点{strongholds}か所、要塞{fortresses}か所"
+    },
+    "summary": {
+        "owned": "所有施設",
+        "ownedValue": "{total}件中{owned}件",
+        "strongholds": "拠点（参考）",
+        "fortresses": "要塞（参考）",
+        "castle": "城（参考）"
+    },
+    "tabs": {
+        "label": "施設の表示",
+        "facilities": "施設",
+        "fortresses": "要塞",
+        "map": "マップ"
+    },
+    "show": {
+        "label": "表示",
+        "all": "すべて",
+        "owned": "所有",
+        "notOwned": "未所有"
+    },
+    "card": {
+        "owned": "所有{count}件",
+        "level": "レベル{level}",
+        "ownedSwitch": "所有",
+        "switchLabel": "{facility}レベル{level}を所有",
+        "booster": "ブースター",
+        "injured": "重傷",
+        "losses": "損失",
+        "ownLimit": "所有上限{limit}。マップ上に{spots}{spotWord}。",
+        "spot": "か所",
+        "spots": "か所"
+    },
+    "empty": {
+        "title": "表示するものがありません",
+        "description": "この絞り込みに一致する施設レベルはありません。",
+        "reset": "すべて表示"
+    },
+    "fortress": {
+        "kind": {
+            "castle": "城",
+            "stronghold": "拠点",
+            "fortress": "要塞"
+        },
+        "coordinates": "x {x}、y {y}",
+        "rewardsHeading": "フェーズ別の報酬",
+        "phase": "フェーズ{phase}",
+        "noRewards": "パッケージに城の報酬はありません。",
+        "referenceNote": "参考情報のみです。城、拠点、要塞は毎週変わるため、ここでは所有や進行の記録は行いません。",
+        "kindLabel": "種類",
+        "allKinds": "すべての種類",
+        "rewardLabel": "報酬",
+        "allRewards": "すべての報酬",
+        "shown": "{total}件中{shown}件の建造物を表示",
+        "empty": "フィルターに一致する建造物はありません。",
+        "reset": "フィルターをリセット",
+        "filters": "フィルター",
+        "filtersTitle": "フィルター",
+        "filtersDescription": "種類と報酬で建造物を絞り込みます",
+        "done": "{count}件を表示"
+    },
+    "map": {
+        "highlight": "施設をハイライト",
+        "layers": "レイヤー",
+        "layerFacilities": "施設",
+        "layerStrongholds": "拠点",
+        "layerFortresses": "要塞",
+        "spotsHeading": "施設の設置場所、全{count}か所",
+        "spotLegend": "{name}（{count}）",
+        "codeHint": "コードの後ろの数字はレベルです。例えばCo1は建設レベル1です。ハイライトした施設は塗りつぶされます。",
+        "structures": "建造物",
+        "castleStrongholdLegend": "城（1）と拠点S1からS4（{count}）",
+        "fortressLegend": "要塞1から{count}",
+        "selected": "マップで選択中",
+        "selectedNone": "マップ上の城、拠点、要塞を選んでください。",
+        "mapLabel": "同盟マップ",
+        "note": "同盟マップのワイヤーフレームです。位置はパッケージのxとyを使い、{size}×{size}のグリッド上に表示します。1マスは{step}です。設置場所は施設が出現し得る場所のため、所有済みの施設には印を付けません。パッケージに地形画像はありません。",
+        "spotLabel": "{name}レベル{level}、x {x}、y {y}",
+        "structureLabel": "{name}、x {x}、y {y}"
+    }
+}

@@ -1,0 +1,262 @@
+{
+  "page": {
+    "title": "Герои"
+  },
+  "view": {
+    "tabsLabel": "Герои",
+    "heroesTab": "Герои",
+    "gearTab": "Снаряжение героев",
+    "heroesSubline": "{chief} · есть {owned} из {total}",
+    "gearSubline": "{chief} · {count, plural, one {{amount} комплект снаряжения} few {{amount} комплекта снаряжения} many {{amount} комплектов снаряжения} other {{amount} комплекта снаряжения}}"
+  },
+  "common": {
+    "owned": "Есть",
+    "ownedLabel": "{hero}: есть",
+    "starLabel": "Звезда: {hero}",
+    "levelLabel": "Уровень: {hero}",
+    "talentLabel": "Талант: {hero}",
+    "skillLabel": "{hero}: {skill}",
+    "weaponLevelLabel": "Уровень оружия {weapon}: {hero}",
+    "shardsOwnedLabel": "Осколков у {hero}",
+    "starAndTier": "Звезда и ступень",
+    "level": "Уровень",
+    "noGoal": "Нет цели",
+    "shards": "Осколки",
+    "totalPower": "Общая мощь",
+    "unknown": "Неизвестно",
+    "plan": "План",
+    "generation": "Пок. {generation}",
+    "exploration": "Exploration",
+    "expedition": "Expedition",
+    "talent": "Талант",
+    "maxLevelSuffix": "/ {max}",
+    "heroCount": "{count, plural, one {{amount} герой} few {{amount} героя} many {{amount} героев} other {{amount} героя}}"
+  },
+  "goalText": {
+    "to": "до {goal}"
+  },
+  "card": {
+    "summary": "{rarity} · {heroClass} · {generation}",
+    "talentRow": "Талант {name}",
+    "shardsOf": "из {needed}",
+    "enoughShards": " Осколков хватает",
+    "shortBy": " Не хватает {amount}",
+    "gearSet": "Комплект снаряжения",
+    "notOwnedHint": "Включите «Есть», чтобы вести учёт звезды, уровня и навыков.",
+    "details": "Подробнее"
+  },
+  "tab": {
+    "stats": {
+      "generations": "Открыто поколений",
+      "generationsValue": "0–{max}",
+      "heroesOwned": "Героев из открытых",
+      "legendaryOwned": "Legendary из открытых",
+      "atMaxLevel": "На уровне 80",
+      "heroPower": "Мощь героев",
+      "heroPowerUnknown": "Мощь героев, без неизвестных: {amount}",
+      "withGoal": "С целью"
+    },
+    "search": {
+      "label": "Поиск героев",
+      "placeholder": "Поиск среди героев ({amount}) по имени"
+    },
+    "filters": "Фильтры",
+    "maxOut": "Макс.",
+    "status": "Показано героев: {shown} из {total}. У этого вождя открыты поколения от 0 до {max}. Цели здесь только для чтения, их задают в плане.",
+    "empty": {
+      "title": "Подходящих героев нет",
+      "description": "Измените поиск или сбросьте фильтры, чтобы увидеть всех героев.",
+      "reset": "Сбросить"
+    },
+    "showMore": "Показать ещё ({count, plural, one {{amount} герой} few {{amount} героя} many {{amount} героев} other {{amount} героя}})",
+    "toast": {
+      "notOwnedTitle": "{name}: нет",
+      "notOwnedMessage": "Звезда, уровень и навыки сохранены на случай, если вы снова включите «Есть».",
+      "undo": "Отменить",
+      "maxedTitle": "Герои прокачаны на максимум",
+      "maxedMessage": "Обновлено: {heroes}."
+    }
+  },
+  "filtersFlyout": {
+    "title": "Фильтры",
+    "description": "Какие герои показываются на странице",
+    "reset": "Сбросить",
+    "show": "Показать: {heroes}",
+    "all": "Все",
+    "generation": "Поколение",
+    "rarity": "Редкость",
+    "heroClass": "Класс",
+    "ownership": "Наличие",
+    "order": "Порядок",
+    "notSaved": "Фильтры не сохраняются.",
+    "rarities": {
+      "Legendary": "Legendary",
+      "Epic": "Epic",
+      "Rare": "Rare"
+    },
+    "classes": {
+      "Infantry": "Infantry",
+      "Lancer": "Lancer",
+      "Marksman": "Marksman"
+    },
+    "ownershipOptions": {
+      "all": "Все",
+      "owned": "Есть",
+      "notOwned": "Нет"
+    },
+    "orderOptions": {
+      "owned": "Сначала имеющиеся, затем новейшее поколение",
+      "generation": "По поколению, сначала новые",
+      "name": "По имени, А–Я",
+      "power": "По общей мощи, сначала большая"
+    }
+  },
+  "maxOut": {
+    "title": "Прокачать героев на максимум",
+    "scopeLabel": "Кого прокачать",
+    "scope": {
+      "owned": "Имеющиеся герои",
+      "unlocked": "Все открытые герои, отметить как имеющихся",
+      "selected": "Выбрать героев, отметить как имеющихся"
+    },
+    "searchLabel": "Поиск героев для выбора",
+    "searchPlaceholder": "Поиск героев по имени",
+    "selectShown": "Выбрать показанных",
+    "clear": "Очистить",
+    "ownedTag": "есть",
+    "starAndTier": "Звезда и ступень до 5.0",
+    "level": "Уровень до 80",
+    "levelHint": "Выключите, если навыки на максимуме, а уровень старых героев остаётся 1.",
+    "skills": "Навыки до 5",
+    "skillsHint": "Exploration, Expedition и талант.",
+    "weapon": "Эксклюзивное оружие до 10",
+    "note": "Всё, что выключено, остаётся как есть. Число осколков и цели не меняются. После применения можно отменить.",
+    "cancel": "Отмена",
+    "apply": "Прокачать: {heroes}"
+  },
+  "flyout": {
+    "fallbackTitle": "Герой",
+    "description": "{rarity} {heroClass}, поколение {generation}",
+    "done": "Готово",
+    "status": {
+      "title": "Состояние",
+      "furnaceNeeded": "Для уровня {level} нужен Furnace",
+      "met": "Выполнено",
+      "needsFurnace": "Нужен Furnace {required}",
+      "levelPower": "Мощь уровня",
+      "skillPower": "Мощь навыков",
+      "starPower": "Мощь звезды",
+      "weaponPower": "Мощь оружия",
+      "totalPower": "Общая мощь",
+      "note": "Мощь учитывает уровень, навыки, ступень звезды и уровень оружия."
+    },
+    "skills": {
+      "title": "Навыки",
+      "aside": "Пять уровней у каждого навыка",
+      "toLevel": "До {level}: руководств {manuals}",
+      "needsStar": "Нужна звезда {star}",
+      "starMet": "Звезда {star} есть",
+      "talentTop": "Талант на высшем уровне.",
+      "talentNeedsStar": "Для уровня {level} нужна звезда {star}",
+      "talentStarMet": "Уровень {level}: звезда {star} есть"
+    },
+    "weapon": {
+      "title": "Эксклюзивное оружие: {name}",
+      "level": "Уровень оружия",
+      "widgetsForLevel": "Widgets для уровня {level}",
+      "widgetsForLevels": "Widgets для уровней {from}–{to}",
+      "expeditionBonus": "Бонус Expedition",
+      "bonus": "Lethality {lethality}% · Health {health}%",
+      "power": "Мощь оружия",
+      "unlocksAt": "Откроется на уровне оружия {level}"
+    },
+    "shards": {
+      "title": "Осколки",
+      "owned": "Есть осколков",
+      "goal": "Цель",
+      "neededForGoal": "Нужно для цели {goal}",
+      "enough": "Осколков хватает",
+      "shortBy": "Не хватает",
+      "yes": "Да",
+      "sources": "Источники осколков"
+    },
+    "stats": {
+      "title": "Характеристики на уровне 80",
+      "explorationAt": "Exploration на {stars}",
+      "expeditionAt": "Expedition на {stars}",
+      "explorationFull": "Exploration на 5.0",
+      "expeditionFull": "Expedition на 5.0",
+      "exploration": "Атк {attack} · Защ {defense} · ЗДР {health}",
+      "expedition": "Атк {attack}% · Защ {defense}%",
+      "estimate": "Оценка"
+    }
+  },
+  "plan": {
+    "title": "План героев",
+    "description": "Осколки, руководства навыков и Widgets от текущего значения до цели",
+    "saved": "План сохранён {date}",
+    "close": "Закрыть",
+    "save": "Сохранить план",
+    "noHeroes": "В плане пока нет героев. Добавьте имеющегося героя выше и повысьте его цели.",
+    "add": {
+      "title": "Добавить героя",
+      "allIn": "Все имеющиеся герои уже в плане. Включите «Есть» у героя, чтобы запланировать его.",
+      "selectLabel": "Герой для добавления",
+      "button": "Добавить героя"
+    },
+    "block": {
+      "remove": "Убрать {hero} из плана",
+      "starTo": "{stars} до",
+      "starGoal": "Цель по звезде: {hero}",
+      "levelTo": "{current} до",
+      "goalLabel": "Цель ({name}): {hero}",
+      "note": "Текущие значения берутся у героя на странице. Меняйте их там."
+    },
+    "unmet": {
+      "title": "Для уровней навыков нужна звезда выше.",
+      "item": "{hero}: для навыка {skill} уровня {level} нужна звезда {star}",
+      "message": "{items}. Повысьте цель по звезде или понизьте цель по навыку."
+    },
+    "shardsUsed": "Использовано осколков: {own} своих и {general} общих, всего {total}. Герой сначала тратит свои осколки.",
+    "result": {
+      "title": "Итог, шагов: {steps}",
+      "widgets": "Widgets",
+      "weaponSkills": "{count, plural, one {Открыт {amount} навык оружия} few {Открыто {amount} навыка оружия} many {Открыто {amount} навыков оружия} other {Открыто {amount} навыка оружия}}",
+      "note": "Мощь не входит в план героев. Калькулятор не возвращает время и не принимает скорость.",
+      "heads": {
+        "hero": "Герой",
+        "starSteps": "Шаги звезды",
+        "skillLevels": "Уровни навыков",
+        "shards": "Осколки",
+        "widgets": "Widgets"
+      },
+      "tableLabel": "Таблица итогов плана"
+    },
+    "events": {
+      "svs": "SvS State of Power",
+      "allianceShowdown": "Alliance Showdown",
+      "kingOfIcefield": "King of Icefield",
+      "hallOfChief": "Hall of Chief"
+    }
+  },
+  "export": {
+    "button": "Экспорт в главные события",
+    "nothing": "Для плана не нужны осколки или Widgets, экспортировать нечего.",
+    "shardsGroup": "за осколки",
+    "widgetsGroup": "за Widgets",
+    "widgets": "Widgets",
+    "manualsReason": "Ни одно событие не начисляет очки за руководства навыков",
+    "shards": {
+      "Legendary": "Mythic Hero Shards",
+      "Epic": "Epic Hero Shards",
+      "Rare": "Rare Hero Shards"
+    }
+  },
+  "service": {
+    "generalShard": {
+      "Legendary": "Mythic General Hero Shard",
+      "Epic": "Epic General Hero Shard",
+      "Rare": "Rare General Hero Shard"
+    }
+  }
+}

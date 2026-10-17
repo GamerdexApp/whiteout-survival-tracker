@@ -1,0 +1,77 @@
+{
+    "line": "{nodes} Forschungsknoten in {tabs} Tabs. Nur Referenz, hier wird nichts gespeichert.",
+    "tabsLabel": "Forschungskategorien",
+    "tabs": {
+        "battle": "Kampf",
+        "growth": "Wachstum",
+        "economy": "Wirtschaft",
+        "t11": "T11",
+        "t12": "T12"
+    },
+    "search": {
+        "label": "Suche",
+        "placeholder": "{amount} Forschungsknoten suchen"
+    },
+    "filters": {
+        "tier": "Tier",
+        "allTiers": "Alle",
+        "tierOption": "Tier {tier}",
+        "troop": "Truppentyp",
+        "allTroops": "Alle",
+        "troops": {
+            "Infantry": "Infantry",
+            "Marksman": "Marksman",
+            "Lancer": "Lancer"
+        },
+        "data": "Daten",
+        "dataOptions": {
+            "all": "Alle Knoten",
+            "placeholders": "Platzhalter",
+            "missingTime": "Fehlende Zeit"
+        }
+    },
+    "list": {
+        "title": "Knoten",
+        "empty": "Kein Forschungsknoten passt zu dieser Suche.",
+        "emptyHint": "Leere die Suche oder einen Filter.",
+        "columns": {
+            "node": "Knoten",
+            "tier": "Tier",
+            "levels": "Stufen",
+            "bonus": "Bonus auf Stufe 1",
+            "time": "Zeit, Stufe 1",
+            "power": "Macht"
+        },
+        "mobileMeta": "{category}, Tier {tier}, {levels}",
+        "count": "{count, plural, one {{amount} Knoten} other {{amount} Knoten}}"
+    },
+    "levels": "{count, plural, one {{amount} Stufe} other {{amount} Stufen}}",
+    "detail": {
+        "columns": {
+            "level": "Stufe",
+            "requires": "Braucht",
+            "cost": "Kosten",
+            "time": "Zeit",
+            "bonus": "Bonus",
+            "power": "Macht"
+        },
+        "level": "Stufe {level}",
+        "none": "Keine",
+        "placeholderNote": "Dieser Knoten ist ein Platzhalter. Das Paket hat dafür keine Kosten und keinen Bonus.",
+        "requirement": {
+            "building": "{name} {level}",
+            "research": "{name} Stufe {level}"
+        },
+        "levelsTitle": "Stufen"
+    },
+    "view": {
+        "label": "Ansicht",
+        "list": "Liste",
+        "tree": "Baum"
+    },
+    "tree": {
+        "region": "Forschungsbaum {tab}",
+        "openNode": "{name}, {levels}",
+        "tier": "T{tier}"
+    }
+}

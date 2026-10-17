@@ -1,0 +1,85 @@
+{
+  "nav": {
+    "main": "메인",
+    "groups": {
+      "chief": "영주",
+      "alliance": "연맹",
+      "account": "계정",
+      "planner": "플래너",
+      "wiki": "위키"
+    },
+    "items": {
+      "overview": "개요",
+      "buildings": "건물",
+      "daybreakIsland": "Daybreak Island",
+      "heroes": "영웅",
+      "chiefGear": "영주 장비",
+      "experts": "전문가",
+      "pets": "펫",
+      "troops": "병력",
+      "research": "연구",
+      "alliance": "연맹",
+      "facilities": "시설",
+      "tech": "기술",
+      "resources": "자원",
+      "bonuses": "보너스",
+      "vip": "VIP",
+      "skins": "스킨",
+      "events": "이벤트",
+      "tundraAlbum": "Tundra Album",
+      "coreEvents": "핵심 이벤트",
+      "dailies": "일일 과제",
+      "history": "기록",
+      "wikiReference": "참고 자료",
+      "wikiTimeline": "타임라인",
+      "settings": "설정",
+      "chiefs": "영주 목록"
+    },
+    "upgradesRunning": ", {count, plural, other {업그레이드 {amount}개 진행 중}}"
+  },
+  "appShell": {
+    "skipToContent": "본문으로 건너뛰기",
+    "closeMenu": "메뉴 닫기"
+  },
+  "appBar": {
+    "openMenu": "메뉴 열기"
+  },
+  "chiefGate": {
+    "emptyTitle": "선택된 영주가 없어요",
+    "emptyDescription": "영주를 만들어 추적을 시작하세요. 모든 데이터는 이 브라우저에만 저장돼요.",
+    "newChief": "새 영주"
+  },
+  "chiefSwitcher": {
+    "chiefs": "영주 목록",
+    "active": "사용 중",
+    "allChiefs": "모든 영주",
+    "newChief": "새 영주",
+    "loading": "불러오는 중",
+    "noChiefYet": "아직 영주 없음",
+    "sectionLabel": "영주",
+    "switchChief": "영주 전환"
+  },
+  "footer": {
+    "tagline": "Whiteout Survival의 영주, 건물, 영웅, 연구를 한곳에서 관리하세요.",
+    "product": "트래커",
+    "support": "지원",
+    "wikiReference": "위키 참고 자료",
+    "wikiTimeline": "위키 타임라인",
+    "backupAndData": "백업과 데이터",
+    "aboutApp": "소개",
+    "disclaimerTitle": "면책 조항",
+    "disclaimer": "이 앱은 Whiteout Survival 또는 Century Games와 제휴, 보증, 연결 관계가 없어요. 모든 상표와 게임 콘텐츠는 각 소유자의 자산이에요.",
+    "copyright": "© {year} {appName}",
+    "framework": "무료 게임 진행 트래커의 공통 기반인 Gamerdex 프레임워크로 만들었어요. 데이터는 브라우저에만 저장돼요."
+  },
+  "notFound": {
+    "title": "존재하지 않는 페이지예요",
+    "description": "링크가 오래됐거나 잘못 입력됐을 수 있어요. 영주 데이터는 안전하며 아무것도 바뀌지 않았어요.",
+    "didYouMean": "<link>{name}</link>을(를) 찾으셨나요?",
+    "goToOverview": "개요로 이동",
+    "jumpTo": "또는 바로 이동"
+  },
+  "pageHeader": {
+    "wiki": "위키"
+  }
+}

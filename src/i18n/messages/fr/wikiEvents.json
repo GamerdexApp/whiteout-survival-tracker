@@ -1,0 +1,145 @@
+{
+  "line": "{events} événements : {alliance} d'alliance, {solo} solo, {rookie} débutant et {holiday} de fête. Phases, scores, récompenses, conseils, boutiques et classements quand les données les contiennent.",
+  "list": {
+    "title": "Événements",
+    "showing": "{shown} sur {total} affichés",
+    "search": "Rechercher",
+    "searchPlaceholder": "Rechercher des événements par nom",
+    "scoringFilter": "Score",
+    "categoryLabel": "Catégorie",
+    "all": "Tous",
+    "table": "Événements",
+    "event": "Événement",
+    "category": "Catégorie",
+    "frequency": "Fréquence (texte libre)",
+    "duration": "Durée (texte libre)",
+    "scoringRows": "Lignes de score",
+    "noScoringRows": "Aucune ligne de score",
+    "emptyTitle": "Aucun événement ne correspond",
+    "emptyDescription": "Modifiez la recherche, la catégorie ou le score."
+  },
+  "category": {
+    "alliance": "Alliance",
+    "solo": "Solo",
+    "rookie": "Débutant",
+    "holiday": "Fêtes"
+  },
+  "scoring": {
+    "any": "Tout score",
+    "ranking": "Classement",
+    "tier": "Paliers",
+    "milestones": "Objectifs",
+    "waves": "Vagues",
+    "participation": "Participation"
+  },
+  "parts": {
+    "days": "{count, plural, one {{amount} jour} other {{amount} jours}}",
+    "tiers": "{count, plural, one {{amount} palier} other {{amount} paliers}}",
+    "missions": "{count, plural, one {{amount} mission} other {{amount} missions}}",
+    "waves": "{count, plural, one {{amount} vague} other {{amount} vagues}}",
+    "versions": "{count, plural, one {{amount} version} other {{amount} versions}}",
+    "levels": "{count, plural, one {{amount} niveau} other {{amount} niveaux}}"
+  },
+  "detail": {
+    "title": "Détails",
+    "category": "Catégorie",
+    "frequency": "Fréquence",
+    "duration": "Durée",
+    "summary": "Résumé",
+    "requirements": "Prérequis",
+    "scoring": "Score",
+    "noRequirements": "Aucun"
+  },
+  "phases": {
+    "title": "Phases",
+    "table": "Phases de l'événement",
+    "phase": "Phase",
+    "description": "Description"
+  },
+  "scoringRows": {
+    "title": "Lignes de score : {name}",
+    "table": "Actions qui rapportent des points",
+    "action": "Action",
+    "points": "Points",
+    "victoryPoints": "{amount} points de victoire",
+    "milestones": "Objectifs de {name}",
+    "allianceMilestones": "Objectifs d'alliance de {name}"
+  },
+  "missions": {
+    "title": "Missions",
+    "table": "Missions de l'événement",
+    "mission": "Mission",
+    "group": "Groupe",
+    "points": "Points",
+    "rewards": "Récompenses"
+  },
+  "tiers": {
+    "title": "Paliers",
+    "table": "Paliers de l'événement",
+    "tier": "Palier",
+    "score": "Objectif",
+    "scoreValue": "{amount} {unit}",
+    "scoreValuePoints": "{amount} points",
+    "rewards": "Récompenses",
+    "note": "Note"
+  },
+  "rankings": {
+    "title": "Récompenses de classement",
+    "personal": "Récompenses du classement personnel",
+    "alliance": "Récompenses du classement d'alliance",
+    "basedOn": "Récompenses de classement selon {basis}",
+    "table": "Récompenses de classement",
+    "rank": "Rang",
+    "starChange": "Variation d'étoiles",
+    "rewards": "Récompenses"
+  },
+  "rewards": {
+    "title": "Récompenses",
+    "partial": "Cette liste de récompenses n'est pas complète.",
+    "amountName": "{amount} {name}"
+  },
+  "pointLevels": {
+    "title": "Niveaux de points",
+    "table": "Niveaux de points",
+    "level": "Niveau",
+    "personal": "Points personnels",
+    "alliance": "Points d'alliance",
+    "rewards": "Récompenses"
+  },
+  "waves": {
+    "title": "Vagues",
+    "table": "Vagues d'attaque",
+    "wave": "Vague",
+    "target": "Cible",
+    "rule": "Règle",
+    "city": "Ville",
+    "headquarters": "Quartier général"
+  },
+  "zones": {
+    "title": "Zones",
+    "table": "Zones de l'événement",
+    "zone": "Zone",
+    "days": "Jours",
+    "statSources": "Sources de stats",
+    "unlock": "Déblocage"
+  },
+  "shop": {
+    "title": "Boutique",
+    "titleNamed": "Boutique : {name}",
+    "table": "Offres de la boutique",
+    "offer": "Offre",
+    "cost": "Coût",
+    "costValue": "{amount} {currency}",
+    "limit": "Limite",
+    "contents": "Contenu"
+  },
+  "versions": {
+    "title": "{name}",
+    "missions": "Missions",
+    "chests": "Coffres"
+  },
+  "tips": {
+    "title": "Conseils"
+  },
+  "recordLine": "Événement {category} avec ses phases, ses scores, ses récompenses et ses classements."
+}

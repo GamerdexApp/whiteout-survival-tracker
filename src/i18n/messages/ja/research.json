@@ -1,0 +1,303 @@
+{
+    "title": "研究",
+    "unknown": "不明",
+    "nodeCount": "{count, plural, other {{amount}ノード}}",
+    "jobTitle": "{name}、レベル{from}から{to}",
+    "tabs": {
+        "growth": "成長",
+        "economy": "経済",
+        "battle": "戦闘",
+        "war-academy-troops": "War Academy T11",
+        "t12-infantry": "歩兵T12",
+        "t12-marksman": "弓兵T12",
+        "t12-lancer": "槍兵T12"
+    },
+    "tier": {
+        "plain": "ティア{tier}",
+        "troopLine": "{line} T{tier}"
+    },
+    "requirement": {
+        "yours": "現在は{level}",
+        "notBuilt": "未建設",
+        "researchLevel": "{name}レベル{level}",
+        "yoursLevel": "現在はレベル{level}",
+        "notReleased": "{id}（未リリース）"
+    },
+    "tabLock": {
+        "unknownAge": "{tab}の研究は、サーバー経過日数{days}日で開放されます。現在の日数は不明です。チーフの編集でサーバー開始日を追加してください。",
+        "knownAge": "{tab}の研究は、サーバー経過日数{days}日で開放されます。現在は{yours}です。"
+    },
+    "option": {
+        "label": "{name}、{tab}、レベル{from}から{to}",
+        "subtitle": "レベル{from}からレベル{to}、{tab}タブ",
+        "busy": "使用中: {name}レベル{level}、{timeLeft}"
+    },
+    "nodeCard": {
+        "allResearched": "すべてのレベルを研究済み",
+        "nextTime": "レベル{level}の時間: {time}",
+        "power": {
+            "researched": "研究済み{power}",
+            "next": "次のレベルで+{power}",
+            "some": "戦力 {parts}",
+            "none": "戦力 0"
+        },
+        "maxed": "最大。{bonus}",
+        "noBonus": "データにボーナスなし",
+        "level": "レベル {level} / {max}",
+        "goal": "目標 {goal}",
+        "noGoal": "目標なし",
+        "progress": "{name}の進行状況",
+        "lockedByTab": "ロック中: {reason}",
+        "lockedByRequirement": "ロック中: {requirement}が必要",
+        "placeholder": "プレースホルダーです。パッケージではコストとボーナスが空です。",
+        "needsFirst": "先に{names}が必要",
+        "researching": "{name}を研究中",
+        "levelStepper": "{name}のレベル",
+        "detailsOf": "{name}の詳細",
+        "details": "詳細"
+    },
+    "queuesStrip": {
+        "title": "研究キュー",
+        "note": "成長、経済、戦闘は1つのキューを共有します。T11とT12はWar Academyキューを使います。",
+        "idle": "研究は一度に1つです。「アップグレードを開始」を押して始めてください。"
+    },
+    "filters": {
+        "title": "フィルター",
+        "description": "{tab}タブに表示する内容を選びます",
+        "reset": "リセット",
+        "show": "{nodes}を表示",
+        "tier": "ティア",
+        "statusLabel": "状態",
+        "troopLine": "兵種",
+        "orderLabel": "並び順",
+        "notSaved": "フィルターは保存されません。",
+        "all": "すべて",
+        "status": {
+            "all": "すべて",
+            "progress": "進行中",
+            "goal": "目標あり",
+            "maxed": "最大",
+            "locked": "ロック中",
+            "notStarted": "未開始"
+        },
+        "order": {
+            "game": "ゲームの順",
+            "name": "名前順（A→Z）",
+            "level": "レベル順（高い順）"
+        }
+    },
+    "massSet": {
+        "stop": "{max}中{level}",
+        "title": "一括設定、{tab}",
+        "description": "ノードとレベルを選びます。ツリーでそれより前にあるものは、すべて最大になります。",
+        "cancel": "キャンセル",
+        "set": "{nodes}を設定",
+        "node": "ノード",
+        "level": "レベル",
+        "levelToSet": "設定するレベル",
+        "whatChanges": "{tab}タブでの変更内容",
+        "nothingChanges": "変更はありません。ここにあるノードはすべて、すでにこのレベル以上です。",
+        "change": "{from}から{to}",
+        "hidden": "ほか前のノード{amount}件",
+        "alreadyMax": "{count, plural, other {前のノード{amount}件}}はすでに最大のため、そのままです。ツリーで後ろにあるノードは変更されません。すでに高いレベルはそのまま残ります。",
+        "blockersTitle": "先に建物が必要なノードがあります。",
+        "blocker": "{name}には{building}が必要",
+        "blockersMore": "、ほか{amount}件",
+        "blockers": "{list}{more}。前のノードを選ぶか、建物ページで建物のレベルを上げてください。",
+        "footnote": "一括設定は、このタブの保存済みレベルだけを変更します。レベルを下げることはなく、目標も変更しません。"
+    },
+    "nodeFlyout": {
+        "fallbackTitle": "研究",
+        "description": "{category}、ティア{tier}、{levels}レベル",
+        "close": "閉じる",
+        "unknown": "不明",
+        "levelOf": "レベル{level} / {max}",
+        "status": {
+            "notStarted": "未開始",
+            "maxed": "最大",
+            "inProgress": "進行中"
+        },
+        "goal": "目標 {goal}",
+        "noGoal": "目標なし",
+        "openPlan": "プランを開く",
+        "maxLevel": {
+            "title": "最大レベル",
+            "nothingLeft": "研究するものは残っていません。",
+            "noBonus": "データにボーナスはありません。"
+        },
+        "placeholder": {
+            "title": "プレースホルダー",
+            "description": "このノードには、パッケージにコストもボーナスもまだありません。研究時間とコストは不明と表示されます。"
+        },
+        "upcoming": {
+            "first": "最初のレベル",
+            "after": "{level}以降のレベル",
+            "heads": {
+                "level": "レベル",
+                "bonus": "ボーナス",
+                "time": "時間",
+                "power": "戦力"
+            },
+            "goalBadge": "目標",
+            "noBonus": "なし",
+            "shaded": "網掛けの行は、現在のレベルと目標の間のレベルです。"
+        },
+        "cost": {
+            "title": "次のレベルのコスト",
+            "level": "Lv"
+        },
+        "total": {
+            "title": "目標までの合計、レベル{level}から{goal}",
+            "knownTime": "判明している研究時間",
+            "power": "戦力",
+            "missingTimes": "{count, plural, other {{amount}レベル}}はパッケージに時間がなく、ここでは0として数えます。"
+        },
+        "requirements": {
+            "title": "レベル{level}の必要条件",
+            "none": "必要条件はありません。",
+            "met": "達成",
+            "notMet": "未達成",
+            "later": "後のレベルで必要になるもの: {list}。"
+        }
+    },
+    "tree": {
+        "legend": {
+            "max": "最大",
+            "inProgress": "進行中",
+            "notStarted": "未開始",
+            "locked": "ロック中"
+        },
+        "pillMax": "最大{max}",
+        "pillLevel": "Lv {level} / {max}",
+        "region": "{tab}の研究ツリー",
+        "openNode": "{name}、{pill}。詳細を開く"
+    },
+    "plan": {
+        "title": "研究のプラン",
+        "description": "現在のレベルから目標までの資源、時間、戦力",
+        "saved": "プランを保存しました（{date}）",
+        "close": "閉じる",
+        "save": "プランを保存",
+        "goals": "目標、{nodes}",
+        "noGoals": "目標はまだありません。上で研究ノードを追加してから、到達したいレベルを選んでください。",
+        "goalsHint": "現在のレベルはページ上の値です。変更はそちらで行ってください。目標はページ上では読み取り専用で、ここで設定します。",
+        "failed": "プランを計算できませんでした。",
+        "timeNote": "プランには、速度ボーナス{percent}%を適用して{time}かかります。在庫: 研究 {research}分、汎用 {general}分。汎用のスピードアップは研究に使われます。",
+        "percent": "{value}%",
+        "percentPlus": "+{value}%",
+        "appointment": {
+            "none": "なし",
+            "regular": "通常",
+            "supreme": "最上級"
+        },
+        "add": {
+            "title": "研究ノードを追加",
+            "none": "すべてのノードがすでにプランに入っているか、最高レベルです。",
+            "select": "追加する研究ノード",
+            "button": "研究を追加"
+        },
+        "speed": {
+            "title": "研究速度",
+            "readOnly": "読み取り専用",
+            "carriedOver": "ボーナスページの値を引き継いでいます。",
+            "turnedOff": "設定の「ボーナスの合計を適用」でオフになっています。",
+            "openBonuses": "ボーナスを開く",
+            "stateBuff": "ステートバフ",
+            "vicePresident": "副大統領",
+            "total": "研究速度の合計"
+        },
+        "goal": {
+            "level": "レベル{level}",
+            "to": "→",
+            "label": "{name}の目標",
+            "remove": "{name}をプランから削除"
+        },
+        "result": {
+            "title": "結果、{steps}ステップ",
+            "powerGained": "獲得戦力",
+            "speedupMinutes": "必要なスピードアップの分数",
+            "baseTime": "基本時間",
+            "timeWithBonus": "{percent}%ボーナス適用後の時間",
+            "stepsWithoutTime": "{count, plural, other {{amount}ステップ}}はパッケージに時間がなく、0秒として数えます。",
+            "stepCount": "{count, plural, other {{amount}ステップ}}",
+            "buildingRequirements": "建物の必要条件",
+            "unmet": "未達成の前提条件",
+            "unmetNone": "これらの目標にはありません。",
+            "unmetItem": "{name}レベル{level}には{requires}レベル{requiresLevel}が必要"
+        },
+        "export": {
+            "button": "コアイベントへエクスポート",
+            "empty": "エクスポートするには、プランに目標を追加してください。",
+            "speedupMinutes": "研究スピードアップの分数",
+            "power": "研究で獲得した戦力",
+            "computed": "プランの結果からアプリが計算しました。",
+            "unscored": "{name}をポイント対象にするイベントはありません。"
+        }
+    },
+    "view": {
+        "ofTotal": "{total}中{count}",
+        "undo": "元に戻す",
+        "massSetApplied": {
+            "title": "一括設定を適用しました",
+            "message": "{nodes}を更新しました。"
+        },
+        "started": {
+            "title": "研究を開始しました",
+            "message": "{name}、レベル{from}から{to}。"
+        },
+        "manage": {
+            "slotLabel": "{queue}、{category}",
+            "finishText": "「アップグレードを完了」を押すと、{name}がレベル{level}になり、{queue}キューが空き、アップグレードが履歴に追加されます。残り時間が0になると、ノードとキューのカードに「完了可能」と表示されます。スピードアップを使った可能性があるため、自動では完了しません。"
+        },
+        "finished": {
+            "title": "{name}の研究が完了しました",
+            "message": "現在はレベル{level}です。履歴に追加しました。"
+        },
+        "cancelled": {
+            "title": "{name}の研究をキャンセルしました",
+            "message": "レベルは変わりません。必要に応じて、資源で在庫を修正してください。"
+        },
+        "subline": {
+            "researchCenter": "Research Center {level}",
+            "warAcademy": "War Academy {level}"
+        },
+        "stats": {
+            "maxed": "最大のノード、ツリーの{percent}%",
+            "power": "研究戦力、研究済みの全レベルの戦力",
+            "withoutTimeNone": "研究時間がないレベルは、すべてのレベルにあります",
+            "withoutTimeSome": "研究時間がないレベルは、不明と表示",
+            "locked": "サーバー経過日数または必要条件でロック中"
+        },
+        "tabLockedNote": "{reason}プランでは目標を設定できます。",
+        "lockedByRequirement": "このタブの{total}ノード中{count}ノードが、必要条件でロックされています。",
+        "search": {
+            "label": "ノードを検索",
+            "placeholder": "名前またはボーナスでノードを検索"
+        },
+        "massSet": "一括設定",
+        "layout": {
+            "label": "レイアウト",
+            "grid": "グリッド",
+            "tree": "ツリー"
+        },
+        "plan": "プラン",
+        "status": {
+            "tree": "{tab}ツリーに{count}ノード。このタブの研究戦力: {power}。スクロールで移動できます。検索やフィルターに一致しないノードは薄く表示されます。",
+            "grid": "{tab}の{count}ノード中{shown}ノードを表示。このタブの研究戦力: {power}。目標はここでは読み取り専用で、プランで設定します。"
+        },
+        "empty": {
+            "title": "一致するノードがありません",
+            "description": "検索条件を変更するかフィルターをリセットすると、全ノードを表示します。",
+            "reset": "検索とフィルターをリセット"
+        },
+        "start": {
+            "description": "研究をアップグレード中にします",
+            "selectLabel": "アップグレードする研究",
+            "selectHelp": "今すぐ開始できる研究だけを表示します。ロック中、最大、実行中の研究は含まれません。成長、経済、戦闘の研究は研究キューを使い、T11とT12の研究はWar Academyキューを使います。",
+            "timeLabel": "研究時間",
+            "speedLabel": "研究速度",
+            "slotLabel": "キュー",
+            "slotHelp": "各キューで一度に研究できるのは1つです。キューが使用中のときは、このカードに空く時刻が表示されます。"
+        }
+    }
+}

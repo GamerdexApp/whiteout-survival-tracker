@@ -1,0 +1,40 @@
+{
+    "line": "{types}にまたがる{skins}。ボーナス、入手方法、持続期間つき。",
+    "skinCount": "{count, plural, other {スキン{amount}件}}",
+    "typeCount": "{count, plural, other {{amount}種類}}",
+    "gallery": {
+        "title": "スキンギャラリー",
+        "showing": "{total}件中{shown}件を表示",
+        "search": "検索",
+        "searchPlaceholder": "名前または入手方法でスキンを検索",
+        "bonusStat": "ボーナスのステータス",
+        "anyStat": "すべてのステータス",
+        "noBonus": "ボーナスなし",
+        "duration": "期間",
+        "anyDuration": "すべての期間",
+        "permanent": "永久",
+        "timed": "期間限定",
+        "notStated": "記載なし",
+        "types": "スキンの種類",
+        "allTypes": "すべて",
+        "empty": {
+            "title": "一致するスキンがありません",
+            "description": "検索条件またはフィルターを変更してください。"
+        }
+    },
+    "columns": {
+        "skin": "スキン",
+        "type": "種類",
+        "bonus": "ボーナス",
+        "duration": "期間（自由記述）",
+        "sources": "入手方法"
+    },
+    "bonusValue": "{stat} {value}",
+    "detail": {
+        "type": "種類",
+        "bonus": "ボーナス",
+        "duration": "期間",
+        "sources": "入手方法",
+        "description": "説明"
+    }
+}

@@ -1,0 +1,165 @@
+{
+  "topBar": {
+    "navLabel": "Página inicial",
+    "links": {
+      "how": "Como funciona",
+      "features": "Funcionalidades",
+      "privacy": "Os dados",
+      "faq": "Perguntas"
+    }
+  },
+  "action": {
+    "createFirstChief": "Criar o primeiro chefe",
+    "goToOverview": "Ir para o Resumo",
+    "newChief": "Novo chefe",
+    "allChiefs": "Todos os chefes"
+  },
+  "hero": {
+    "label": "Whiteout Survival Tracker",
+    "title": "Todos os chefes registados. Todas as melhorias planeadas.",
+    "description": "Um companheiro gratuito para Whiteout Survival. Edifícios, heróis, equipamento e investigação num só lugar, a próxima melhoria planeada e os eventos principais geridos do primeiro dia ao histórico.",
+    "note": "Gratuito. Os dados ficam neste navegador.",
+    "learnMore": "Saber mais"
+  },
+  "continue": {
+    "label": "Bem-vindo de volta",
+    "title": "Continuar com {name}",
+    "chiefCount": "{count, plural, one {{amount} chefe guardado neste navegador} other {{amount} chefes guardados neste navegador}}"
+  },
+  "how": {
+    "label": "Como funciona",
+    "title": "Do primeiro chefe ao histórico de eventos em quatro passos",
+    "steps": {
+      "create": {
+        "title": "Criar um chefe",
+        "description": "Basta um nome. O número do servidor e as notas são opcionais."
+      },
+      "levels": {
+        "title": "Definir os níveis",
+        "description": "Indicar os níveis do Furnace e dos edifícios e depois preencher heróis, equipamento e investigação ao longo do jogo."
+      },
+      "plan": {
+        "title": "Planear melhorias",
+        "description": "Ver os recursos, o tempo e o poder necessários para os objetivos e o que ainda falta."
+      },
+      "events": {
+        "title": "Gerir os eventos",
+        "description": "Contar pontos, registar pontuações e classificações e guardar o evento no Histórico."
+      }
+    }
+  },
+  "features": {
+    "label": "O que se pode fazer",
+    "title": "Planear, jogar e depois rever",
+    "open": "Abrir {page}",
+    "items": {
+      "plan": {
+        "title": "Planear qualquer melhoria",
+        "description": "Definir um objetivo no painel de Plano em Edifícios, Heróis, Equipamento do chefe e Investigação. Ver os recursos, o tempo e o poder necessários, com aceleradores e bónus lidos da página Bónus.",
+        "page": "Edifícios"
+      },
+      "coreEvents": {
+        "title": "Calculadoras dos eventos principais",
+        "description": "SvS, Alliance Showdown, King of Icefield e Hall of Chief. Contar pontos de cada ação, somar os bónus dos especialistas e verificar limiares e recompensas por classificação.",
+        "page": "Eventos principais"
+      },
+      "eventLog": {
+        "title": "Registo de eventos e lista diária",
+        "description": "Registar pontuação e classificação de cada dia de um evento. Uma lista indica as ações possíveis em cada dia.",
+        "page": "Eventos principais"
+      },
+      "history": {
+        "title": "Histórico: planeado contra real",
+        "description": "Terminar um evento para o guardar. Comparar o plano com o que foi feito e ver cada melhoria planeada como concluída ou não.",
+        "page": "Histórico"
+      },
+      "research": {
+        "title": "Árvores de investigação",
+        "description": "Growth, Economy, Battle, War Academy e os separadores T12, em grelha ou em árvore, com desbloqueios por idade do servidor.",
+        "page": "Investigação"
+      },
+      "alliance": {
+        "title": "Tecnologia e mapas da aliança",
+        "description": "Registar o estandarte, a tecnologia e as instalações da aliança e consultar a disposição do castelo, das fortalezas e dos fortes.",
+        "page": "Aliança"
+      }
+    }
+  },
+  "numbers": {
+    "title": "O que o tracker cobre",
+    "buildings": "edifícios com custos e tempos",
+    "heroes": "heróis",
+    "research": "tecnologias de investigação",
+    "coreEvents": "calculadoras de eventos principais",
+    "wiki": "páginas de referência na wiki, mais uma cronologia"
+  },
+  "pages": {
+    "label": "Todas as páginas",
+    "title": "Agrupadas como no jogo",
+    "description": "As mesmas páginas da barra lateral dentro da aplicação.",
+    "listLabel": "Páginas de {group}",
+    "general": "Geral"
+  },
+  "privacy": {
+    "label": "Os dados",
+    "title": "Privados por defeito, portáteis quando necessário",
+    "items": {
+      "browser": {
+        "title": "Ficam no navegador",
+        "description": "Não é preciso criar conta. Os chefes ficam guardados neste navegador, neste dispositivo."
+      },
+      "file": {
+        "title": "Um único ficheiro guardado",
+        "description": "Tudo o que é introduzido fica num único ficheiro guardado no navegador, por isso carrega depressa e nada fica espalhado."
+      },
+      "chiefs": {
+        "title": "Vários chefes",
+        "description": "Manter um principal e as contas secundárias. Alternar entre eles na barra lateral."
+      },
+      "backup": {
+        "title": "Cópia de segurança e restauro",
+        "description": "Exportar os dados para um ficheiro nas Definições e importá-lo noutro navegador ou dispositivo."
+      }
+    },
+    "backupLink": "Abrir Cópia de segurança e dados"
+  },
+  "faq": {
+    "label": "Dúvidas",
+    "title": "Perguntas frequentes",
+    "items": {
+      "free": {
+        "question": "É gratuito?",
+        "answer": "Sim. Não há nada para pagar nem para desbloquear."
+      },
+      "data": {
+        "question": "Onde estão os dados?",
+        "answer": "Neste navegador, no armazenamento local deste site. Não são enviados para nenhum servidor. Se os dados do site forem apagados, os chefes são removidos, por isso convém exportar primeiro uma cópia de segurança."
+      },
+      "move": {
+        "question": "Como mudar para outro dispositivo?",
+        "answer": "Abrir as Definições, depois Cópia de segurança e dados, e exportar um ficheiro de cópia. No outro dispositivo, abrir a mesma página, ir a Definições, Cópia de segurança e dados, e importar esse ficheiro."
+      },
+      "chiefs": {
+        "question": "Posso ter vários chefes?",
+        "answer": "Sim. Não há limite. Cada chefe tem os seus edifícios, heróis, investigação e eventos, e a mudança faz-se na barra lateral."
+      },
+      "account": {
+        "question": "É preciso uma conta ou um ficheiro de gravação do jogo?",
+        "answer": "Não. Os níveis são introduzidos à mão. Os dados do jogo, como custos, tempos e estatísticas, já vêm com o tracker."
+      },
+      "official": {
+        "question": "É uma aplicação oficial?",
+        "answer": "Não. É uma ferramenta não oficial feita por fãs. Não é afiliada a Whiteout Survival nem à Century Games. O rodapé tem o aviso completo."
+      },
+      "wiki": {
+        "question": "O que é a Wiki?",
+        "answer": "Um conjunto de páginas de referência sobre os dados do jogo, como edifícios, heróis, mascotes, itens e eventos, mais uma cronologia do servidor. Pode ser lida sem criar um chefe."
+      }
+    }
+  },
+  "closing": {
+    "title": "Começar o registo hoje",
+    "description": "O primeiro chefe só precisa de um nome. Tudo o resto pode ser alterado depois.",
+    "wiki": "Explorar a Wiki"
+  }
+}

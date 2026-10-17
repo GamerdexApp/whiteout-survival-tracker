@@ -1,0 +1,117 @@
+{
+    "unknown": "不明",
+    "describe": {
+        "state": "ステート{number}",
+        "empty": "詳細はまだありません"
+    },
+    "coreEvents": {
+        "svs": "SvS",
+        "showdown": "Alliance Showdown",
+        "king": "King of Icefield",
+        "hall": "Hall of Chief"
+    },
+    "count": "{count, plural, other {チーフ{amount}人}}",
+    "card": {
+        "active": "使用中",
+        "noNotes": "メモなし",
+        "furnace": "Furnace",
+        "state": "ステート",
+        "created": "作成日: {date}",
+        "lastModified": "最終更新: {date}",
+        "setActive": "使用中にする",
+        "edit": "編集",
+        "delete": "削除"
+    },
+    "dialog": {
+        "editTitle": "チーフを編集",
+        "newTitle": "新しいチーフ",
+        "newDescription": "名前を付けてください。それ以外は任意です。",
+        "cancel": "キャンセル",
+        "save": "変更を保存",
+        "create": "チーフを作成",
+        "errors": {
+            "name": "このチーフの名前を入力してください。",
+            "stateNumber": "1から{max}までの整数を入力してください。",
+            "serverStartDate": "未来ではない日付を入力してください。"
+        },
+        "name": "名前",
+        "stateNumber": {
+            "label": "ステート番号",
+            "hint": "チーフが所属するステートです。整数で入力してください。"
+        },
+        "serverStartDate": {
+            "label": "サーバー開始日",
+            "info": {
+                "label": "サーバー開始日の確認方法",
+                "screen": "ゲームを開き、プロフィールからサーバー画面に移動します。",
+                "date": "サーバーが開始した日付を確認してください。サーバーの経過日数しか表示されない場合は、今日からその日数だけさかのぼります。",
+                "missing": "画面に日付がない場合は、同盟リーダーに聞くか、ステートチャットを確認してください。",
+                "tolerance": "前後21日以内の日付であれば問題ありません。研究の解放は150日と600日を基準にするため、3週間のずれが結果を変えることはほとんどありません。"
+            }
+        },
+        "generation": {
+            "label": "解放済みヒーローの世代",
+            "hint": "それ以降の世代のヒーローは、ヒーローページとプランに表示されません。",
+            "preLegendary": "第0世代（レジェンド以前）",
+            "numbered": "第{generation}世代"
+        },
+        "events": {
+            "legend": "表示するコアイベント",
+            "shownOf": "{total}件中{shown}件",
+            "hint": "非表示にしたイベントは、コアイベントのタブとイベントログから消えます。いつでも再表示できます。"
+        },
+        "notes": "メモ",
+        "packs": {
+            "legend": "パック",
+            "constructionLabel": "建設パック",
+            "constructionHint": "建物ページで2人目のビルダーを使えるようにします。",
+            "constructionBusy": "2人目のビルダーがアップグレード中です。オフにするには、先に完了またはキャンセルしてください。",
+            "marchLabel": "行軍キューパック",
+            "marchHint": "行軍キューを1つ追加します。ボーナスページで集計されます。"
+        }
+    },
+    "delete": {
+        "title": "チーフを削除",
+        "cancel": "キャンセル",
+        "confirmButton": "チーフを削除",
+        "confirm": "「<strong>{name}</strong>」を削除してもよろしいですか？",
+        "summary": "{details} · 作成日 {date}",
+        "note": "このデバイスから、チーフとそのレベル、目標、メモがすべて削除されます。10秒間の元に戻す期間が終わると、復元できません。",
+        "exportBackup": "先にバックアップをエクスポート"
+    },
+    "page": {
+        "title": "チーフ",
+        "newChief": "新しいチーフ",
+        "sort": {
+            "label": "並べ替え",
+            "options": {
+                "lastModified": "最終更新",
+                "createdAt": "作成日",
+                "name": "名前"
+            }
+        },
+        "subline": {
+            "none": "チーフはまだいません。",
+            "total": "{chiefs}。",
+            "withActive": "{chiefs}。使用中は{name}です。"
+        },
+        "toasts": {
+            "backupTitle": "バックアップをダウンロードしました",
+            "deleted": "{name}を削除しました",
+            "undo": "元に戻す"
+        },
+        "loading": "このブラウザから保存データを読み込んでいます。準備ができると一覧が表示されます。",
+        "empty": {
+            "title": "チーフはまだいません",
+            "description": "チーフを作成すると、建物、ヒーロー、装備、研究、アップグレードプランを記録できます。データはすべてこのブラウザに保存されます。",
+            "restore": "設定でバックアップを復元"
+        },
+        "search": {
+            "label": "名前で検索",
+            "showing": "{total}件中{shown}件を表示",
+            "noMatchTitle": "「{search}」に一致するチーフはいません",
+            "noMatchDescription": "スペルを確認するか、検索をクリアして全{count}人を表示してください。",
+            "clear": "検索をクリア"
+        }
+    }
+}

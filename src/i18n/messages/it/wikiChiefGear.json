@@ -1,0 +1,56 @@
+{
+  "line": "{rows} righe di equipaggiamento, {slots} slot e {rates} tassi di cambio. Solo riferimento, nulla viene salvato nel tuo capo.",
+  "slots": {
+    "heading": "Slot dell'equipaggiamento",
+    "rarities": "Icone da {first} a {last}",
+    "detailLine": "Potenzia le truppe {troopType}. Un'icona per ogni rarità."
+  },
+  "table": {
+    "heading": "Tabella dell'equipaggiamento",
+    "meta": "{rows} righe, {tiers} gradi",
+    "searchLabel": "Cerca",
+    "searchPlaceholder": "Cerca tra {rows} righe di equipaggiamento",
+    "tierLabel": "Grado",
+    "allTiers": "Tutti i gradi",
+    "starsLabel": "Stelle",
+    "allStars": "Tutte le stelle",
+    "starsOption": "Stelle {stars}",
+    "empty": "Nessuna riga di equipaggiamento corrisponde ai filtri."
+  },
+  "columns": {
+    "row": "Riga",
+    "materials": "Materiali",
+    "stats": "Statistiche",
+    "power": "Potenza",
+    "score": "Punteggio",
+    "capacity": "Cap. schier."
+  },
+  "cells": {
+    "none": "Nessuno",
+    "percent": "{value}%"
+  },
+  "tiers": {
+    "heading": "Gradi",
+    "meta": "{tiers} etichette di grado",
+    "tier": "Grado",
+    "rows": "Righe",
+    "stats": "Statistiche, dalla prima all'ultima",
+    "power": "Potenza all'ultima riga",
+    "statsRange": "da {first}% a {last}%"
+  },
+  "exchange": {
+    "heading": "Tassi di cambio dei materiali",
+    "exchange": "Cambio",
+    "from": "Da",
+    "to": "A",
+    "weeklyLimit": "Limite settimanale"
+  },
+  "setBonus": {
+    "heading": "Bonus set",
+    "meta": "{tiers} gradi",
+    "hint": "Indossa 3 pezzi per un bonus Difesa e 6 pezzi per un bonus Attacco. La percentuale dipende dal grado dei pezzi indossati. Vale per le truppe {types}.",
+    "pieceSet": "Set da {pieces} pezzi",
+    "tier": "Grado",
+    "pieces": "{pieces} pezzi, {stat}"
+  }
+}

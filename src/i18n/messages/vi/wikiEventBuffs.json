@@ -1,0 +1,67 @@
+{
+    "line": "Nguồn buff nào áp dụng trong từng chế độ trong {modes} chế độ game: có, không hoặc một phần cho {sources} loại buff.",
+    "matrix": {
+        "title": "Ma trận buff",
+        "meta": "{modes} chế độ, {sources} loại buff",
+        "table": "Nguồn buff theo chế độ game",
+        "mode": "Chế độ game"
+    },
+    "sources": {
+        "cityBonusWarsBuffs": {
+            "short": "Thành phố",
+            "full": "Buff thành phố và chiến tranh"
+        },
+        "deploymentCapacity": {
+            "short": "Triển khai",
+            "full": "Sức chứa triển khai"
+        },
+        "petSkills": {
+            "short": "KN thú cưng",
+            "full": "Kỹ năng thú cưng"
+        },
+        "daybreakIsland": {
+            "short": "Daybreak",
+            "full": "Daybreak Island"
+        },
+        "presidentSkills": {
+            "short": "Chủ tịch",
+            "full": "Kỹ năng Chủ tịch"
+        },
+        "ministerBuff": {
+            "short": "Bộ trưởng",
+            "full": "Buff Bộ trưởng"
+        },
+        "territoryBonuses": {
+            "short": "Lãnh thổ",
+            "full": "Cộng thêm lãnh thổ"
+        },
+        "facilityBuff": {
+            "short": "Cơ sở",
+            "full": "Buff cơ sở"
+        },
+        "marchAccelerator": {
+            "short": "Tăng tốc",
+            "full": "Tăng tốc hành quân"
+        },
+        "frostdragonTyrantTitles": {
+            "short": "Danh hiệu",
+            "full": "Danh hiệu Frostdragon Tyrant"
+        },
+        "frostSphereDomainBonus": {
+            "short": "Frost Sphere",
+            "full": "Cộng thêm domain của Frost Sphere"
+        }
+    },
+    "applicability": {
+        "yes": "Có",
+        "no": "Không",
+        "partial": "Một phần"
+    },
+    "notes": {
+        "title": "Ghi chú theo chế độ game",
+        "table": "Ghi chú theo chế độ game",
+        "petSkillsAutoApplied": "Kỹ năng thú cưng tự áp dụng",
+        "note": "Ghi chú",
+        "noNote": "Không có"
+    }
+}

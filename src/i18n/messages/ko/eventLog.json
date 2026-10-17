@@ -1,0 +1,129 @@
+{
+  "title": "이벤트 로그",
+  "events": {
+    "svs": "SvS, State of Power",
+    "showdown": "Alliance Showdown",
+    "king": "King of Icefield",
+    "hall": "Hall of Chief"
+  },
+  "tabs": {
+    "label": "이벤트 로그 보기",
+    "current": "현재 이벤트",
+    "history": "기록"
+  },
+  "dates": {
+    "title": "이벤트 날짜",
+    "start": "시작",
+    "end": "종료",
+    "days": "{count, plural, other {{amount}일}}",
+    "endBeforeStart": "종료일이 시작일보다 빨라요."
+  },
+  "results": {
+    "rank": "순위",
+    "alliance": "연맹",
+    "score": "점수",
+    "allianceShort": "연맹",
+    "scoreOf": "{day}, 점수",
+    "rankOf": "{day}, 순위",
+    "allianceOf": "{day}, 연맹 순위",
+    "plan": "계획 {total}",
+    "notStarted": "시작 전",
+    "opensLater": "나중에 열림",
+    "empty": "비어 있음",
+    "locked": "잠김",
+    "lock": "잠금",
+    "unlock": "잠금 해제",
+    "lockDay": "{day} 잠금",
+    "unlockDay": "{day} 잠금 해제"
+  },
+  "cards": {
+    "svsDays": "준비 1~5일차",
+    "days": "일차",
+    "stages": "단계",
+    "rankHint": "순위는 서버 순위예요. 연맹은 연맹 순위예요.",
+    "battleTitle": "전투 단계",
+    "battleNote": "전투 점수와 순위는 별도 결과예요. 1~5일차에 더하지 않아요."
+  },
+  "overall": {
+    "svsTitle": "전체 결과, 1~5일차",
+    "title": "전체 결과",
+    "rank": "전체 순위",
+    "alliance": "전체 연맹 순위",
+    "svsTotal": "잠근 1~5일차 합계",
+    "daysTotal": "잠근 일차 합계",
+    "stagesTotal": "잠근 단계 합계",
+    "hint": "잠그면 계속 플레이해도 숫자가 바뀌지 않아요. 잠근 숫자는 해제할 수 있어요."
+  },
+  "footer": {
+    "close": "닫기",
+    "endEvent": "이벤트 종료",
+    "readOnly": "기록은 읽기 전용이에요"
+  },
+  "end": {
+    "title": "{event}을(를) 종료하고 기록에 저장할까요?",
+    "dates": "{event}, {start}부터 {end}까지",
+    "noDates": "{event}, 입력한 날짜 없음",
+    "lockedTotal": "잠근 일차 합계: {total}.",
+    "lockedTotalSvs": "잠근 1~5일차 합계: {total}.",
+    "noRanks": "전체 순위와 연맹 순위가 비어 있어요.",
+    "allLocked": "모든 일차가 잠겨 있어요.",
+    "unlocked": "{count, plural, other {{amount}일이 잠기지 않았어요.}} 입력한 그대로 저장하며 숫자가 없는 일차는 비어 있어요.",
+    "unlockedList": "잠기지 않음: {days}.",
+    "what": "진행 내용",
+    "saves": "날짜, 일별 점수와 순위, 전체 결과를 일별 계획 합계와 함께 기록에 저장해요.",
+    "clearsCounts": "모든 일차의 수량을 지워서 계획의 모든 일차가 0에서 시작해요.",
+    "clearsPlans": "이 이벤트로 내보낸 계획과 체크리스트 체크를 지워요.",
+    "keeps": "이 이벤트만 초기화돼요. 다른 페이지의 목표와 계획은 그대로 유지돼요.",
+    "cancel": "취소",
+    "confirm": "이벤트 종료 후 새로 시작",
+    "toastTitle": "이벤트를 종료했어요",
+    "toastMessage": "{event}을(를) 기록에 저장했어요. 이벤트는 날짜 없이 새로 시작해요.",
+    "undo": "실행 취소",
+    "lockedTotalStages": "잠근 단계 합계: {total}."
+  },
+  "history": {
+    "intro": "종료한 {event} 이벤트를 최신순으로 보여줘요. 이벤트를 종료하면 로그가 여기에 저장되며 나중에 수정할 수 없고 삭제만 할 수 있어요. <link>계획과 실제 비교, 계획한 업그레이드는 기록에서 확인하세요.</link>",
+    "empty": "종료한 이벤트가 아직 없어요. 이벤트를 종료하면 로그가 여기에 저장돼요.",
+    "cardTitle": "{event}, {start}부터 {end}까지",
+    "cardNoDates": "{event}, 날짜 없음",
+    "ended": "{date} 종료",
+    "svsTotal": "1~5일차",
+    "total": "총 점수",
+    "overallRank": "전체 순위",
+    "allianceRank": "연맹 순위",
+    "notSet": "미설정",
+    "showDays": "일차 보기",
+    "hideDays": "일차 숨기기",
+    "remove": "기록에서 삭제",
+    "removedTitle": "기록에서 삭제했어요",
+    "removedMessage": "{event}을(를) 기록에서 삭제했어요.",
+    "undo": "실행 취소",
+    "noValue": "-"
+  },
+  "checklist": {
+    "title": "계획 체크리스트",
+    "description": "{day}, 할 일",
+    "dayChips": "일차",
+    "castleTitle": "{day} 성채 직책 신청",
+    "castleBody": "성채 직책은 다음 날 보너스를 줘요. 오늘이 끝나기 전에 신청해야 {day}에 보너스가 적용돼요.",
+    "castleCheck": "{day} 신청 완료",
+    "done": "{total}개 중 {done}개 완료",
+    "progress": "체크한 행동",
+    "planLine": "이 날의 계획: {points}점. 수량이 0보다 큰 행동만 표시돼요. 수량은 핵심 이벤트 페이지에서 가져와요.",
+    "empty": "이 일차에 수량이 있는 행동이 없어요. 핵심 이벤트 페이지에서 수량을 추가하세요.",
+    "resources": "사용할 자원",
+    "resourcesHint": "이 날 소비하는 아이템이에요. 시작하기 전에 재고를 확인하세요.",
+    "actions": "행동",
+    "count": "x{count}",
+    "points": "{points}점",
+    "clear": "체크 지우기",
+    "close": "닫기",
+    "dayTitle": "{day}: {name}"
+  },
+  "eventShort": {
+    "svs": "SvS",
+    "showdown": "Alliance Showdown",
+    "king": "King of Icefield",
+    "hall": "Hall of Chief"
+  }
+}

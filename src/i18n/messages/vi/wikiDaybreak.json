@@ -1,0 +1,69 @@
+{
+    "line": "Bảng cấp Lumber camp và Tree of Life, cùng {decorations} đồ trang trí theo danh mục với chi phí, Prosperity và buff.",
+    "lumberCamp": {
+        "title": "Lumber camp",
+        "levels": "{count, plural, other {{amount} cấp}}",
+        "table": "Các cấp Lumber camp",
+        "level": "Cấp",
+        "workers": "Công nhân",
+        "perSecond": "Mỗi giây",
+        "treeLevel": "Cấp cây",
+        "lifeEssence": "Life Essence"
+    },
+    "tree": {
+        "title": "Tree of Life",
+        "table": "Các cấp Tree of Life",
+        "level": "Cấp",
+        "prosperity": "Prosperity",
+        "lifeEssence": "Life Essence",
+        "perHour": "Mỗi giờ",
+        "buff": "Buff"
+    },
+    "decorations": {
+        "title": "Đồ trang trí",
+        "showing": "Hiển thị {shown} trên {total}",
+        "search": "Tìm kiếm",
+        "searchPlaceholder": "Tìm đồ trang trí theo tên hoặc buff",
+        "categoryLabel": "Danh mục",
+        "all": "Tất cả",
+        "costFilter": "Loại chi phí",
+        "table": "Đồ trang trí",
+        "name": "Đồ trang trí",
+        "category": "Danh mục",
+        "limit": "Giới hạn",
+        "levels": "Cấp",
+        "cost": "Chi phí",
+        "prosperityAtMax": "Prosperity ở mức tối đa",
+        "buffAtMax": "Buff ở cấp tối đa",
+        "emptyTitle": "Không có đồ trang trí phù hợp",
+        "emptyDescription": "Đổi từ khóa, danh mục hoặc loại chi phí."
+    },
+    "costFilter": {
+        "any": "Mọi chi phí",
+        "lifeEssence": "Life Essence",
+        "items": "Tài nguyên",
+        "limited": "Có giới hạn",
+        "unknown": "Chi phí chưa có trong dữ liệu"
+    },
+    "cost": {
+        "lifeEssence": "{amount} Life Essence",
+        "limited": "Không có, đồ trang trí có giới hạn"
+    },
+    "detail": {
+        "title": "Chi tiết",
+        "category": "Danh mục",
+        "limit": "Giới hạn",
+        "cost": "Chi phí",
+        "levels": "Cấp",
+        "image": "Hình ảnh",
+        "imageMissing": "Không có",
+        "levelsTitle": "Các cấp của {name}",
+        "levelsMeta": "{count, plural, other {{amount} cấp}}",
+        "levelsTable": "Các cấp của đồ trang trí",
+        "level": "Cấp",
+        "levelCost": "Chi phí",
+        "prosperity": "Prosperity",
+        "buff": "Buff",
+        "noLevels": "Dữ liệu không có bảng cấp cho đồ trang trí này."
+    }
+}

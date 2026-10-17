@@ -1,0 +1,216 @@
+{
+  "chiefCount": "{count, plural, other {영주 {amount}명}}",
+  "localStorageNote": {
+    "title": "로컬 저장소.",
+    "body": "영주는 이 브라우저에만 저장돼요. 브라우저 캐시를 지우면 사라져요. 정기적으로 백업을 내보내세요."
+  },
+  "page": {
+    "title": "설정",
+    "subline": "데이터, 영주 설정, 화면 모양을 관리해요",
+    "tabsLabel": "설정",
+    "tabs": {
+      "preferences": "환경설정",
+      "data": "백업과 데이터",
+      "about": "정보"
+    }
+  },
+  "about": {
+    "version": "버전 {version}",
+    "summary": "Whiteout Survival 진행 상황을 추적하세요: 건물, 영웅, 영주 장비, 전문가, 펫, 병력, 연구, 연맹 기술, 자원, 플래너. 모든 데이터는 이 브라우저에 저장돼요.",
+    "wiki": "Whiteout Survival 위키",
+    "disclaimer": "Century Games와 제휴하거나 보증받은 앱이 아니에요. Whiteout Survival은 Century Games의 상표예요."
+  },
+  "preferences": {
+    "chiefSettings": {
+      "title": "영주 설정",
+      "description": "모든 영주에 적용돼요. 바로 저장돼요.",
+      "footnote": "계산기 안에서 옵션을 바꿔도 이 기본값은 바뀌지 않아요. Furnace 표시는 레벨 표기 방식만 바꾸고 레벨 자체는 바꾸지 않아요. 영주를 추가하거나 삭제해도 이 설정은 초기화되지 않아요.",
+      "groups": {
+        "furnaceDisplay": "Furnace 표시",
+        "lists": "목록",
+        "calculatorOptions": "기본 계산기 옵션"
+      },
+      "fullLevelLabels": {
+        "label": "전체 레벨 표기 보기",
+        "description": "사이드바, 개요, 건물에서 Furnace의 세부 레벨을 표시해요. 예를 들어 FC 5 대신 FC 5-2로 보여요. 다른 건물은 이미 전체 표기를 보여줘요."
+      },
+      "hideMaxed": {
+        "label": "최대 항목 숨기기",
+        "description": "최고 레벨인 건물, 영웅, 펫, 전문가를 숨겨요. 각 목록에 최대 항목 보기 필터가 있어서 잃는 것은 없어요."
+      },
+      "useBonuses": {
+        "label": "내 보너스 합계 적용",
+        "description": "새 계산기가 보너스 페이지의 건설 속도 퍼센트로 시작해요. 계산기에서 한 번만 바꿀 수도 있어요."
+      },
+      "showSpeedups": {
+        "label": "가속 분 표시",
+        "description": "각 계산기 결과의 시간 아래에 필요한 가속 분을 표시해요."
+      },
+      "showEventPoints": {
+        "label": "이벤트 점수 표시",
+        "description": "이벤트 점수를 반환하는 계산기 결과에 이벤트 점수 줄을 추가해요."
+      }
+    },
+    "appearance": {
+      "title": "화면",
+      "description": "앱의 모양을 고르세요. 데이터와 함께 저장돼요.",
+      "themeLabel": "테마",
+      "themeNote": "시스템은 기기 설정을 따르며 지금은 {current}예요. 이 선택은 백업에 포함돼요."
+    },
+    "themes": {
+      "light": "라이트",
+      "dark": "다크",
+      "system": "시스템"
+    }
+  },
+  "data": {
+    "backupDownloaded": "백업을 다운로드했어요",
+    "merged": "백업을 병합했어요",
+    "replaced": "백업으로 교체했어요",
+    "undo": "실행 취소",
+    "resetDone": "모든 데이터를 초기화했어요",
+    "resetDoneMessage": "{chiefs}을(를) 삭제하고 설정을 지웠어요.",
+    "management": {
+      "title": "데이터 관리",
+      "description": "백업 파일 하나에 모든 영주와 설정이 들어 있어요."
+    },
+    "export": {
+      "title": "데이터 내보내기",
+      "description": "저장된 모든 영주의 백업 파일을 다운로드하세요. 파일 이름: <file>{fileName}</file>. 날짜는 현지 날짜예요.",
+      "button": "모든 영주 내보내기"
+    },
+    "import": {
+      "title": "데이터 가져오기",
+      "description": "이전에 내보낸 파일(.json)을 업로드하세요. 먼저 파일을 검사한 다음 병합이나 교체를 고르고 바뀌는 내용을 확인해요. 확인하기 전에는 아무것도 바뀌지 않아요.",
+      "chooseFile": "파일 선택",
+      "noFile": "선택된 파일 없음",
+      "review": "가져오기 검토"
+    },
+    "reset": {
+      "title": "모든 데이터 초기화",
+      "warningTitle": "경고:",
+      "warning": "모든 영주를 삭제하고 영주 설정과 테마를 초기화해요. 10초 동안 실행 취소할 수 있어요. 사본을 남기려면 먼저 백업을 내보내세요.",
+      "button": "모든 데이터 초기화"
+    },
+    "chiefs": {
+      "title": "영주 목록",
+      "description": "영주 만들기, 이름 변경, 편집, 삭제는 별도 페이지에서 해요. 내보내기, 가져오기, 초기화는 모든 영주에 적용돼요.",
+      "manage": "영주 관리"
+    }
+  },
+  "importDialog": {
+    "title": "백업 가져오기",
+    "cancel": "취소",
+    "close": "닫기",
+    "merge": "병합",
+    "replace": "교체",
+    "failedTitle": "가져오기에 실패했어요.",
+    "checksTitle": "파일 검사.",
+    "checks": "영주 목록을 찾았고 {count, plural, other {항목 {amount}개}}를 읽었어요. 아직 아무것도 저장하지 않았으므로 현재 영주는 그대로예요.",
+    "howToApply": "파일을 어떻게 적용할까요?",
+    "modeLabel": "가져오기 방식",
+    "modes": {
+      "merge": "병합 (권장)",
+      "replace": "이 기기의 모든 것을 교체"
+    },
+    "modeNotes": {
+      "merge": "새 영주를 추가하고 양쪽에 있는 영주는 더 최신 사본을 유지해요. 이 기기에만 있는 영주는 그대로 남아요. 설정도 그대로예요.",
+      "replace": "이 기기의 모든 영주를 삭제하고 파일의 설정을 포함해 파일 내용 그대로 불러와요. 정확한 사본으로 복원할 때 사용하세요."
+    },
+    "whatChanges": "바뀌는 내용",
+    "columns": {
+      "chief": "영주",
+      "inFile": "파일",
+      "onDevice": "이 기기",
+      "result": "결과"
+    },
+    "results": {
+      "added": "추가됨",
+      "updated": "파일로 업데이트됨",
+      "kept": "이 기기의 사본 유지",
+      "replaced": "파일에서 불러옴",
+      "removed": "삭제됨"
+    },
+    "notThere": "없음",
+    "noChiefs": "파일에 영주가 없어요.",
+    "undoNote": "가져온 후 10초 동안 실행 취소할 수 있어요.",
+    "bytes": "{amount} B",
+    "kilobytes": "{amount} KB",
+    "fileInfo": "{name} · {size}"
+  },
+  "resetDialog": {
+    "title": "모든 데이터 초기화",
+    "cancel": "취소",
+    "confirm": "네, 모든 데이터 초기화",
+    "question": "이 브라우저에서 {chiefs}을(를) 모두 삭제할까요?",
+    "removedTitle": "삭제되는 항목",
+    "settingsNote": "라이트, 다크, 시스템 선택은 시스템으로 돌아가요. 영주 설정은 기본값으로 돌아가요. 사용 중인 영주는 해제돼요.",
+    "undoNote": "초기화 후 10초 동안 실행 취소할 수 있어요. 계속 남는 파일 사본이 필요하면 먼저 백업을 내보내세요.",
+    "exportFirst": "먼저 백업 내보내기"
+  },
+  "backup": {
+    "notJson": "올바른 JSON 파일이 아니에요. 아무것도 바뀌지 않았어요.",
+    "noChiefsList": "영주 목록이 없어요. 아무것도 바뀌지 않았어요.",
+    "duplicateId": "영주 두 명이 같은 id를 써요. 아무것도 바뀌지 않았어요.",
+    "withNothingChanged": "{reason} 아무것도 바뀌지 않았어요.",
+    "chief": {
+      "notObject": "영주 {position}이(가) 올바른 형식이 아니에요.",
+      "noId": "영주 {position}에 id가 없어요.",
+      "noName": "영주 {position}에 이름이 없어요.",
+      "noDates": "영주 {position}에 날짜가 없어요.",
+      "badStateNumber": "영주 {position}의 서버 번호가 정수가 아니에요.",
+      "badCoreEvent": "영주 {position}에 알 수 없는 핵심 이벤트가 있어요.",
+      "badUnlock": "영주 {position}의 해금 설정이 알려진 영역의 서버 일차가 아니에요.",
+      "badPack": "영주 {position}의 팩 설정이 켜짐 또는 꺼짐이 아니에요."
+    },
+    "settings": {
+      "notObject": "설정이 올바른 형식이 아니에요.",
+      "badTheme": "테마가 라이트, 다크, 시스템 중 하나가 아니에요.",
+      "notText": "{key} 설정이 텍스트가 아니에요.",
+      "uiNotObject": "인터페이스 설정이 올바른 형식이 아니에요.",
+      "badTimeZone": "브라우저가 아는 시간대가 아니에요."
+    },
+    "summary": {
+      "added": "{amount}개 추가됨",
+      "updated": "{amount}개 파일로 업데이트됨",
+      "kept": "{amount}개 이 기기의 사본 유지",
+      "replaced": "{amount}개 파일에서 불러옴",
+      "removed": "{amount}개 삭제됨"
+    }
+  },
+  "region": {
+    "title": "언어 및 지역",
+    "description": "언어와 숫자, 날짜 표기 방식을 고르세요. 데이터와 함께 저장돼요.",
+    "language": {
+      "label": "언어",
+      "hint": "영웅, 아이템, 건물, 연구 이름은 게임 데이터에서 가져오며 당분간 영어로 표시돼요."
+    },
+    "numberFormat": {
+      "label": "숫자 형식",
+      "hint": "예: {example}",
+      "options": {
+        "auto": "자동, 언어를 따름",
+        "us": "1,234.56 (미국)",
+        "european": "1.234,56 (독일)",
+        "french": "1 234,56 (프랑스)",
+        "swiss": "1’234.56 (스위스)",
+        "indian": "12,34,567.89 (인도)"
+      }
+    },
+    "dateFormat": {
+      "label": "날짜 형식",
+      "hint": "예: {example}",
+      "options": {
+        "auto": "자동, 언어를 따름",
+        "mdy": "월/일/년",
+        "dmy": "일/월/년",
+        "ymd": "년-월-일"
+      }
+    },
+    "timeZone": {
+      "label": "시간대",
+      "hint": "날짜와 시간, 이벤트의 내 시간에 사용해요. 예: 14:05 UTC는 {example}로 표시돼요.",
+      "auto": "자동, 기기를 따름 ({zone})"
+    }
+  }
+}

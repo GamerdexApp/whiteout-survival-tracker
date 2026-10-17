@@ -1,0 +1,114 @@
+{
+  "page": {
+    "title": "Daybreak Island"
+  },
+  "view": {
+    "subline": "Lumber Camp, Tree of Life, dan dekorasimu."
+  },
+  "locked": {
+    "title": "Butuh Furnace {level}",
+    "description": "Daybreak Island terbuka di Furnace {level}. Furnace-mu {current}, jadi {missing} lagi. Halaman tetap terlihat agar kamu tahu apa yang akan datang. Pengeditan nonaktif sampai saat itu.",
+    "noFurnace": "Daybreak Island terbuka di Furnace {level}. Level Furnace-mu belum diatur. Halaman tetap terlihat agar kamu tahu apa yang akan datang. Pengeditan nonaktif sampai saat itu.",
+    "missing": "{count, plural, other {{amount} level lagi}}",
+    "link": "Ke Bangunan"
+  },
+  "levelOf": "L{level} dari {max}",
+  "camp": {
+    "title": "Lumber Camp",
+    "levelLabel": "Level Lumber Camp",
+    "workers": "Pekerja",
+    "rate": "Laju per detik",
+    "essence": "Life Essence untuk mencapai level ini",
+    "needsTree": "Butuh Tree of Life level {required}. Milikmu {current}.",
+    "treeTooLow": "Tree of Life level {current} terlalu rendah. Lumber Camp level {level} butuh Tree of Life level {required}.",
+    "next": "Berikutnya, level {level}: {essence} Life Essence, butuh Tree of Life level {tree}.",
+    "highest": "Ini level tertinggi."
+  },
+  "tree": {
+    "title": "Tree of Life",
+    "levelLabel": "Level Tree of Life",
+    "prosperity": "Kemakmuran untuk mencapai level ini",
+    "essence": "Life Essence untuk mencapai level ini",
+    "perHour": "Life Essence per jam",
+    "buff": "Buff",
+    "next": "Berikutnya, level {level}: {prosperity} Kemakmuran, {essence} Life Essence.",
+    "highest": "Ini level tertinggi."
+  },
+  "decorations": {
+    "title": "Dekorasi",
+    "owned": "{owned} dari {total} dimiliki",
+    "imageNote": "Hanya {withImage} dari {total} dekorasi yang punya gambar di paket data. Kotak penuh menandai yang bergambar, kotak putus-putus menandai sisanya."
+  },
+  "search": {
+    "label": "Cari dekorasi",
+    "placeholder": "Cari dekorasi"
+  },
+  "status": {
+    "showing": "Menampilkan {shown} dari {total} dekorasi.",
+    "showMore": "{count, plural, other {Tampilkan {amount} dekorasi lagi}}"
+  },
+  "empty": {
+    "title": "Tidak ada dekorasi yang cocok",
+    "description": "Ubah pencarian atau filter untuk melihat dekorasi.",
+    "reset": "Atur ulang filter"
+  },
+  "card": {
+    "costEach": "Biaya per buah",
+    "cost": "{amount} {item}",
+    "limit": "Batas",
+    "buffAtLevel": "Buff di level {level}",
+    "buffAtMax": "Buff di level maks",
+    "buffValue": "{value} {stat}",
+    "prosperityAtMax": "Kemakmuran di level maks",
+    "essenceCost": "Biaya Life Essence",
+    "unknown": "Tidak diketahui",
+    "owned": "Dimiliki",
+    "notOwned": "Belum dimiliki",
+    "ownedLabel": "{name} dimiliki",
+    "levelLabel": "Level {name}",
+    "countLabel": "Jumlah {name}",
+    "limited": "Terbatas",
+    "ownedCount": "Dimiliki {count} dari {limit}"
+  },
+  "categories": {
+    "Basic": "Basic",
+    "Vegetation": "Vegetation",
+    "Common": "Common",
+    "Uncommon": "Uncommon",
+    "Rare": "Rare",
+    "Epic": "Epic",
+    "Mythic": "Mythic",
+    "Unique": "Unique"
+  },
+  "filters": {
+    "button": "Filter",
+    "title": "Filter",
+    "description": "Persempit daftar dekorasi. Filter tidak disimpan.",
+    "category": "Kategori",
+    "categoryAll": "Semua {amount}",
+    "categoryOption": "{category} {amount}",
+    "show": "Tampilkan",
+    "ownedOnly": "Hanya yang dimiliki",
+    "limitedOnly": "Hanya yang terbatas",
+    "unknownBuffOnly": "Hanya buff tidak diketahui",
+    "sort": "Urutkan",
+    "order": {
+      "game": "Urutan paket data",
+      "name": "Nama A ke Z",
+      "level": "Level tertinggi dulu"
+    },
+    "reset": "Atur ulang",
+    "showButton": "{count, plural, other {Tampilkan {amount} dekorasi}}",
+    "nonLimitedOnly": "Hanya yang tidak terbatas",
+    "notOwnedOnly": "Hanya yang belum dimiliki"
+  },
+  "prosperity": {
+    "label": "Skor kemakmuranmu",
+    "progress": "Skor kemakmuran dekorasimu",
+    "possible": "Dari {max} jika semua dekorasi di level dan batas tertinggi",
+    "levelled": "Dekorasi ber-level, kemakmuran dari level yang dicapai",
+    "limited": "Dekorasi dengan batas, jumlah dimiliki dikali kemakmuran masing-masing",
+    "ofMax": "{value} dari {max}",
+    "withoutValue": "{count, plural, other {{amount} dekorasi yang dimiliki}} tidak punya nilai kemakmuran di data, jadi {count, plural, other {tidak dihitung}}."
+  }
+}

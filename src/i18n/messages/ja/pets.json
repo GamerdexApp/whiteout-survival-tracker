@@ -1,0 +1,209 @@
+{
+    "page": {
+        "title": "ペット"
+    },
+    "view": {
+        "subline": "{chief} · {details} · ペット{total}体中{unlocked}体を解放"
+    },
+    "rarities": {
+        "Common": "コモン",
+        "Uncommon": "アンコモン",
+        "Rare": "レア",
+        "Epic": "エピック",
+        "Legendary": "レジェンド"
+    },
+    "unlock": {
+        "afterFurnace": "{days}日目とFurnace {level}",
+        "afterPet": "{days}日目と{pet}レベル{level}"
+    },
+    "summary": {
+        "unlocked": "解放済み",
+        "unlockedValue": "{total}体中{count}体",
+        "unlockedNote": "あなたが設定",
+        "power": "総戦力",
+        "powerNote": "解放済みペットのレベル、昇格、精錬の戦力",
+        "powerUnknown": "解放済みペットのレベル、昇格、精錬の戦力（不明{amount}件）",
+        "next": "次に解放",
+        "allUnlocked": "すべて解放済み",
+        "allUnlockedNote": "すべてのペットが解放済みです",
+        "lockedNote": "{count}体は、後のサーバー日数までロック中です"
+    },
+    "totals": {
+        "attackDefense": "部隊の攻撃と防御",
+        "attack": "攻撃",
+        "defense": "防御",
+        "lethality": "殺傷力",
+        "health": "体力",
+        "gain": "+{value}%",
+        "types": {
+            "infantry": "歩兵",
+            "lancer": "槍兵",
+            "marksman": "弓兵"
+        }
+    },
+    "search": {
+        "label": "ペットを検索",
+        "placeholder": "{amount}体のペットを名前で検索"
+    },
+    "status": {
+        "showing": "{total}体中{shown}体の{count, plural, other {ペット}}を表示。",
+        "filters": " フィルター: {list}。",
+        "filterNames": {
+            "rarity": "レアリティ",
+            "status": "状態",
+            "advanced": "昇格",
+            "order": "並び順"
+        },
+        "readOnlyGoals": "目標はここでは読み取り専用で、プランで設定します。現在の値と同じ目標は、目標なしを意味します。",
+        "showMore": "{count, plural, other {さらに{amount}体のペットを表示}}"
+    },
+    "empty": {
+        "title": "一致するペットがいません",
+        "description": "検索条件またはフィルターを変更すると、他のペットを表示できます。",
+        "reset": "フィルターをリセット"
+    },
+    "toast": {
+        "lockedTitle": "{name}をロックしました",
+        "lockedMessage": "レベル、昇格、精錬は保持されます。",
+        "undo": "元に戻す"
+    },
+    "card": {
+        "summary": "{rarity} · 最大レベル{max}",
+        "unlocked": "解放済み",
+        "unlockedLabel": "{pet}を解放済み",
+        "cooldown": "クールダウン{time}",
+        "cooldownByTier": "クールダウンはティアで変わります",
+        "cooldownUnknown": "クールダウン不明",
+        "skillTiers": "{count, plural, other {スキルティア{amount}段階}}",
+        "unlockRule": "解放条件",
+        "ruleMet": "この条件を満たしています",
+        "level": "レベル（最大{max}）",
+        "levelLabel": "{pet}のレベル",
+        "goal": "目標 {level}",
+        "noGoal": "目標なし",
+        "advanced": "昇格済み",
+        "advancedHint": "昇格は、レベル10、20、30など10ごとに設定できます。",
+        "refinement": "精錬",
+        "refinementMax": "各最大{max}%",
+        "refineLabel": "{pet}の{stat}",
+        "percentSign": "%",
+        "attack": "攻撃 +{value}%",
+        "defense": "防御 +{value}%",
+        "power": "戦力 {value}",
+        "powerUnknown": "戦力不明",
+        "powerParts": "レベルと昇格 {base}、精錬 {refining}"
+    },
+    "filters": {
+        "button": "フィルター",
+        "title": "フィルター",
+        "description": "ペット一覧に表示する内容を選びます",
+        "rarity": "レアリティ",
+        "rarityAll": "すべて {amount}",
+        "rarityOption": "{rarity} {amount}",
+        "rarities": {
+            "Common": "コモン",
+            "Uncommon": "アンコモン",
+            "Rare": "レア",
+            "Epic": "エピック",
+            "Legendary": "レジェンド"
+        },
+        "status": "状態",
+        "statusOptions": {
+            "all": "すべてのペット",
+            "unlocked": "解放済み",
+            "locked": "ロック中"
+        },
+        "advanced": "昇格",
+        "advancedOptions": {
+            "any": "指定なし",
+            "advanced": "昇格済み",
+            "notAdvanced": "未昇格"
+        },
+        "order": "並び順",
+        "orderOptions": {
+            "game": "ゲームの順",
+            "name": "名前順（A→Z）",
+            "level": "レベル順（高い順）"
+        },
+        "notSaved": "フィルターは保存されません。",
+        "reset": "リセット",
+        "show": "{count, plural, other {ペット{amount}体を表示}}"
+    },
+    "plan": {
+        "button": "プラン",
+        "title": "ペットのプラン",
+        "description": "目標に到達するための食料、アイテム、ステータス、イベントポイント",
+        "saved": "プランを保存しました（{date}）",
+        "notSavedYet": "プランはまだ保存されていません",
+        "close": "閉じる",
+        "save": "プランを保存",
+        "exportButton": "コアイベントへエクスポート",
+        "exportNothing": "このプランには、エクスポートする昇格スコアがありません。",
+        "export": {
+            "advancement": "ペット昇格スコア",
+            "commonMark": "Common Wild Marks",
+            "advancedMark": "Advanced Wild Marks",
+            "marksDetail": "資源から集計しています。"
+        },
+        "noPets": "解放済みのペットを追加すると、レベルを計画できます。",
+        "add": {
+            "title": "ペットを追加",
+            "selectLabel": "追加するペット",
+            "button": "ペットを追加",
+            "allIn": "解放済みのペットはすべてプランに入っています。",
+            "noneUnlocked": "プランするには、ペットページでペットを解放してください。"
+        },
+        "block": {
+            "rarities": {
+                "Common": "コモン",
+                "Uncommon": "アンコモン",
+                "Rare": "レア",
+                "Epic": "エピック",
+                "Legendary": "レジェンド"
+            },
+            "maxLevel": "最大レベル{max}",
+            "remove": "削除",
+            "removeLabel": "{pet}をプランから削除",
+            "current": "現在のレベル",
+            "to": "→",
+            "goal": "目標レベル（最大{max}）",
+            "goalLabel": "{pet}の目標レベル",
+            "payAdvancement": "目標で昇格する",
+            "paysCurrent": "レベル{level}で未昇格のため、その昇格を含めます。"
+        },
+        "result": {
+            "title": "{count, plural, other {ペット{amount}体}}の結果",
+            "resources": "資源（全ペット）",
+            "byPet": "ペット別",
+            "heads": {
+                "pet": "ペット",
+                "levels": "レベル",
+                "food": "食料",
+                "power": "戦力"
+            },
+            "powerGain": "+{value}",
+            "percentGain": "+{value}%",
+            "unknown": "不明",
+            "gains": "増加分",
+            "gainNames": {
+                "levels": "上がるレベル",
+                "advancements": "昇格",
+                "attack": "部隊の攻撃",
+                "defense": "部隊の防御",
+                "power": "戦力",
+                "score": "昇格スコア"
+            },
+            "unknownPowerNote": "このプランのあるレベルについて、パッケージに昇格後の戦力がないため、戦力の増加は不明です。",
+            "eventPoints": "イベントポイント",
+            "events": {
+                "svs": "SvS",
+                "allianceShowdown": "Alliance Showdown",
+                "kingOfIcefield": "King of Icefield",
+                "hallOfChief": "Hall of Chief"
+            },
+            "notScored": "ポイント対象外",
+            "eventNote": "イベントポイントは、昇格スコアに各イベントのポイント行の値を掛けたものです。",
+            "scoreSourceNote": "レベル40から100の昇格スコアは、イベントのメモと一致します。レベル10から30は、ひとつの情報源（WoS Tools）によるものです。"
+        }
+    }
+}

@@ -1,0 +1,282 @@
+{
+    "title": "Công trình",
+    "tabs": {
+        "buildings": "Công trình",
+        "facilities": "Cơ sở"
+    },
+    "notBuilt": "Chưa xây",
+    "built": "Đã xây",
+    "none": "Không có",
+    "unknown": "Không rõ",
+    "close": "Đóng",
+    "cancel": "Hủy",
+    "undo": "Hoàn tác",
+    "ofTotal": "{count} trên {total}",
+    "noOtherRequirements": "Không có yêu cầu khác",
+    "builderName": "Thợ xây {number}",
+    "shelterName": "Nhà trú ẩn {number}",
+    "levelOf": "Cấp {name}",
+    "levelRange": "{from} đến {to}",
+    "requirement": {
+        "shelter": "{building} cấp {level}",
+        "heroHall": "Đã xây Hero Hall",
+        "level": "{building} {level}"
+    },
+    "columns": {
+        "building": "Công trình",
+        "current": "Hiện tại",
+        "goal": "Mục tiêu",
+        "power": "Sức mạnh",
+        "progress": "Tiến độ và cấp kế tiếp",
+        "upgrade": "Nâng cấp"
+    },
+    "entry": {
+        "notes": {
+            "furnace": "Quyết định giới hạn mọi công trình khác",
+            "shelter": "Tối đa 8 nhà trú ẩn, mỗi cái một cấp riêng"
+        },
+        "subline": {
+            "size": "Tối đa {max} · {count} cấp",
+            "withNote": "{note} · {size}",
+            "single": "Xây một lần · {power} sức mạnh"
+        },
+        "progress": {
+            "requires": "Cần {list}",
+            "noRequirements": "Không có yêu cầu",
+            "maxLevel": "Cấp tối đa",
+            "blocked": "Bị chặn: cần {list}",
+            "needs": "Cần {list}",
+            "levelAgeLocked": "Cấp đã lưu {level} chưa mở trên máy chủ này. {text}",
+            "goalAgeLocked": "Mục tiêu {goal} chưa mở trên máy chủ này. {text}",
+            "nextAgeLocked": "Cấp kế tiếp {level} đã khóa. {text}"
+        },
+        "builtSwitch": "{name} đã xây",
+        "shelters": {
+            "none": "Chưa xây cái nào",
+            "editLabel": "Nhà trú ẩn ({count}), sửa cấp",
+            "button": "Nhà trú ẩn ({count})"
+        },
+        "levels": "Các cấp",
+        "levelsLabel": "Các cấp của {name}",
+        "upgrading": "{name} đang nâng cấp",
+        "startLabel": "Bắt đầu nâng cấp {name}",
+        "start": "Bắt đầu",
+        "startUpgrade": "Bắt đầu nâng cấp",
+        "devIndex": "Chỉ số phát triển {value}",
+        "powerLine": "Sức mạnh {power} · Chỉ số phát triển {index}",
+        "progressLabel": "Tiến độ {name}"
+    },
+    "builders": {
+        "label": "Thợ xây",
+        "hint": "Lượt nâng cấp bạn bắt đầu ở đây sẽ hiện ở Tổng quan như một hàng chờ đang chạy.",
+        "idle": "Nhấn Bắt đầu trên một công trình để nâng cấp.",
+        "jobTitle": "{name}, {from} đến {to}",
+        "locked": "Đã khóa",
+        "lockedText": "Thợ xây thứ hai cần Construction Pack.",
+        "lockedLink": "Bật trong Sửa thủ lĩnh"
+    },
+    "upgrade": {
+        "option": "{subject}, {from} đến {to}",
+        "busy": "Đang bận: {name} lên {level}, {timeLeft}"
+    },
+    "facilities": {
+        "intro": "Các cơ sở trong thành phố của bạn. Đánh dấu những cái đã xây. Đây là cơ sở thành phố, không phải cơ sở liên minh trong menu Liên minh.",
+        "builtLabel": "Cơ sở đã xây",
+        "unlockedLabel": "Mở ở cấp Furnace của bạn",
+        "requires": "Cần Furnace {level}",
+        "unlocksAt": "Mở ở Furnace {level}"
+    },
+    "tab": {
+        "intro": "Cấp hiện tại và mục tiêu của mọi công trình. Furnace quyết định giới hạn của các công trình còn lại.",
+        "searchLabel": "Tìm công trình",
+        "filters": "Bộ lọc",
+        "massEdit": "Sửa hàng loạt",
+        "startUpgrade": "Bắt đầu nâng cấp",
+        "plan": "Kế hoạch",
+        "status": "Hiển thị {shown} trên {total} công trình. Mục tiêu ở đây chỉ để xem và được đặt trong Kế hoạch. Mục tiêu bằng cấp hiện tại nghĩa là không có mục tiêu. Nút tăng giảm đổi từng cấp một theo thứ tự trong game.",
+        "groupPinned": "Đã ghim",
+        "stats": {
+            "furnace": "Furnace, quyết định giới hạn mọi công trình khác",
+            "power": "Sức mạnh hiện tại, mọi công trình",
+            "developmentIndex": "Chỉ số phát triển, mọi công trình",
+            "withGoal": "Công trình có mục tiêu",
+            "atMax": "Ở cấp tối đa",
+            "entertainment": "Giải trí đã xây"
+        },
+        "empty": {
+            "title": "Không có công trình phù hợp",
+            "description": "Đổi từ khóa hoặc đặt lại bộ lọc để xem mọi công trình.",
+            "reset": "Đặt lại tìm kiếm và bộ lọc"
+        },
+        "start": {
+            "description": "Đánh dấu một công trình đang nâng cấp",
+            "selectLabel": "Công trình cần nâng cấp",
+            "selectHelp": "Chỉ liệt kê công trình bạn có thể bắt đầu ngay. Công trình đã khóa, đã tối đa và đang chạy được bỏ qua. Mỗi lượt nâng cấp dùng một trong hai thợ xây.",
+            "timeLabel": "Thời gian xây",
+            "speedLabel": "Tốc độ xây",
+            "slotLabel": "Thợ xây",
+            "slotHelp": "Chọn một thợ xây đang rảnh. Thợ đang bận sẽ cho biết khi nào rảnh."
+        },
+        "toasts": {
+            "started": {
+                "title": "Đã bắt đầu nâng cấp",
+                "message": "{name}, {subtitle}."
+            },
+            "finished": {
+                "title": "{name} đã nâng cấp",
+                "message": "Hiện là {level}. Đã thêm vào Lịch sử."
+            },
+            "cancelled": {
+                "title": "Đã hủy nâng cấp {name}",
+                "message": "Cấp giữ nguyên như trước. Hãy chỉnh lại kho trong Tài nguyên nếu cần."
+            },
+            "massEdit": {
+                "title": "Đã áp dụng sửa hàng loạt",
+                "message": "Đã cập nhật {count, plural, other {{amount} công trình}}."
+            }
+        },
+        "manage": {
+            "finishText": "Hoàn tất nâng cấp sẽ đặt {name} lên {level}, giải phóng Thợ xây {builder} và thêm lượt nâng cấp vào Lịch sử. Khi hết thời gian, thẻ công trình và thẻ thợ xây ghi Sẵn sàng hoàn tất. Không có gì tự hoàn tất, vì bạn có thể đã dùng vật phẩm tăng tốc."
+        }
+    },
+    "filters": {
+        "title": "Bộ lọc",
+        "description": "Chọn nội dung hiển thị trong danh sách Công trình",
+        "reset": "Đặt lại",
+        "show": "{count, plural, other {Hiện {amount} công trình}}",
+        "category": "Danh mục",
+        "categoryAll": "Tất cả, {count}",
+        "categoryOption": "{category}, {count}",
+        "showSection": "Hiển thị",
+        "hideMaxed": "Ẩn công trình đã tối đa",
+        "hideLocked": "Ẩn công trình đã khóa",
+        "goalsOnly": "Chỉ công trình có mục tiêu",
+        "order": "Thứ tự",
+        "orders": {
+            "game": "Thứ tự trong game, Furnace trước",
+            "name": "Tên, A đến Z",
+            "progress": "Tiến độ, thấp nhất trước"
+        },
+        "pinned": "Furnace luôn được ghim ở đầu dù lọc thế nào. Bộ lọc không được lưu."
+    },
+    "levels": {
+        "title": "Các cấp",
+        "description": "{category} · Tối đa {max} · {count} cấp",
+        "noDescription": "Dữ liệu chưa có mô tả.",
+        "current": "Cấp hiện tại",
+        "goal": "Cấp mục tiêu",
+        "nextNeeds": "Cấp kế tiếp cần",
+        "noGoal": "Không có mục tiêu",
+        "tableNote": "Bảng này chỉ liệt kê các cấp sau cấp hiện tại của bạn, vì các cấp trước đã xong.",
+        "maxed": "Cấp tối đa. Không còn gì để nâng cấp.",
+        "nextAfter": "Các cấp kế tiếp sau {level}",
+        "first": "Những cấp đầu",
+        "level": "Cấp",
+        "time": "Thời gian",
+        "power": "Sức mạnh",
+        "capacity": "Sức chứa",
+        "requires": "Yêu cầu",
+        "goalBadge": "Mục tiêu",
+        "capacityNote": "Gói dữ liệu chỉ đặt sức chứa ở các dòng bậc gốc, nên các cấp phụ hiển thị Không rõ."
+    },
+    "massEdit": {
+        "title": "Sửa hàng loạt công trình",
+        "description": "Đặt nhiều công trình cùng lúc. Chưa có gì được lưu cho đến khi bạn nhấn Đặt công trình.",
+        "noChanges": "Chưa có thay đổi",
+        "changes": "{count, plural, other {{amount} công trình thay đổi}}",
+        "set": "{count, plural, other {Đặt {amount} công trình}}",
+        "raiseTitle": "Nâng mọi công trình lên một cấp",
+        "raiseLabel": "Nâng mọi công trình lên cấp",
+        "raiseAll": "Nâng tất cả",
+        "raiseHint": "Mỗi công trình lên đến cấp cao nhất bằng hoặc thấp hơn cấp này. Công trình đã cao hơn thì giữ nguyên, và công trình mở muộn hơn vẫn chưa xây. Mục tiêu không đổi.",
+        "blockedTitle": "Một số công trình cần công trình khác trước.",
+        "blocked": "{count, plural, other {{amount} công trình}} vượt mức mà yêu cầu của chúng cho phép.",
+        "lowerBlocked": "Hạ xuống mức cho phép",
+        "levels": "Các cấp",
+        "needsFirst": "Cần {list} trước",
+        "was": "trước là {level}",
+        "entertainment": "Giải trí",
+        "markAllBuilt": "Đánh dấu đã xây hết",
+        "clearAll": "Xóa hết",
+        "footnote": "Sửa hàng loạt chỉ đổi các cấp đã lưu. Nó không bao giờ tự hạ cấp và không đổi mục tiêu. Mỗi nhà trú ẩn có một cấp riêng, nên hãy đặt bằng nút Nhà trú ẩn, và đặt Hero Hall ở tab Cơ sở."
+    },
+    "shelters": {
+        "title": "Nhà trú ẩn",
+        "description": "Xây được tối đa {max}. Đặt cấp cho từng cái.",
+        "locked": "Nhà trú ẩn vẫn bị khóa bởi cấp Furnace của bạn.",
+        "empty": "Chưa có nhà trú ẩn.",
+        "power": "Sức mạnh {power}",
+        "add": "Thêm nhà trú ẩn",
+        "remove": "Xóa Nhà trú ẩn {number}",
+        "allBuilt": "Đã xây đủ {max} nhà trú ẩn.",
+        "furnaceNeeds": "Furnace của bạn cần gì từ nhà trú ẩn",
+        "requirement": "Furnace {furnaceLevel} cần Nhà trú ẩn {number} ở cấp {level}.",
+        "met": "Đạt.",
+        "notMet": "Chưa đạt.",
+        "footnote": "Kế hoạch và thanh tiến độ dùng nhà trú ẩn thấp cấp nhất, cái cần nâng tiếp theo."
+    },
+    "plan": {
+        "title": "Lập kế hoạch công trình",
+        "description": "Tài nguyên, thời gian và sức mạnh từ cấp hiện tại đến mục tiêu",
+        "saved": "Đã lưu kế hoạch {time}",
+        "save": "Lưu kế hoạch",
+        "failed": "Không tính được kế hoạch.",
+        "goalsHeading": "{count, plural, other {Mục tiêu, {amount} công trình}}",
+        "noGoals": "Chưa có mục tiêu. Thêm một công trình ở trên, rồi chọn cấp bạn muốn đạt.",
+        "prerequisiteNote": "Các bước điều kiện tiên quyết được thêm sẵn cho bạn. Cấp cần công trình khác ở cấp cao hơn sẽ tính các bước đó và đánh dấu chúng.",
+        "timeNote": "Kế hoạch mất {time} sau khi áp dụng {percent}% tăng tốc. Kho của bạn: Xây dựng {construction} phút, Chung {general} phút. Tăng tốc chung được tính vào xây dựng.",
+        "add": {
+            "title": "Thêm công trình",
+            "allAdded": "Mọi công trình đã có trong kế hoạch.",
+            "selectLabel": "Công trình cần thêm",
+            "button": "Thêm công trình"
+        },
+        "speed": {
+            "title": "Tốc độ xây",
+            "percent": "{value}%",
+            "plusPercent": "+{value}%",
+            "readOnly": "Chỉ xem",
+            "bonusesOn": "Lấy từ trang Cộng thêm.",
+            "bonusesOff": "Đã tắt trong Cài đặt, mục Áp dụng tổng Cộng thêm của tôi.",
+            "openBonuses": "Mở Cộng thêm",
+            "appointment": "Đặc quyền Chủ tịch và chức vụ",
+            "appointments": {
+                "none": "Không có",
+                "regular": "Thường",
+                "supreme": "Tối cao"
+            },
+            "appointmentNote": "Thường 10 phần trăm, Tối cao 15 phần trăm. <strong>Ước tính:</strong> gói dữ liệu chỉ nêu các giá trị này cho nghiên cứu.",
+            "petSkill": "Kỹ năng thú cưng, Builder's Aide",
+            "petSkillNote": "Phần trăm lấy từ Cave Hyena ở trang Thú cưng, theo cấp hiện tại của nó.",
+            "chiefOrder": "Lệnh Thủ lĩnh, Double Time",
+            "chiefOrderNote": "<strong>Ước tính:</strong> thêm {percent} phần trăm tốc độ xây trong 5 phút. Gói dữ liệu không có dữ liệu lệnh thủ lĩnh, nên giá trị do ứng dụng nhập và áp dụng cho toàn bộ thời gian.",
+            "total": "Tổng tốc độ xây",
+            "petSkillNoteLocked": "Cave Hyena chưa được mở ở trang Thú cưng, nên kỹ năng không đóng góp gì. Hãy mở nó ở đó để bật mục này."
+        },
+        "goal": {
+            "to": "đến",
+            "label": "Mục tiêu {name}",
+            "remove": "Xóa {name} khỏi kế hoạch"
+        },
+        "result": {
+            "title": "Kết quả, {count} bước",
+            "powerGained": "Sức mạnh nhận được",
+            "speedupMinutes": "Số phút tăng tốc cần",
+            "baseTime": "Thời gian gốc",
+            "timeWithBonus": "Thời gian với {percent}% cộng thêm",
+            "eventPoints": "Điểm sự kiện: SvS {svs}, King of Icefield {king} (<strong>Ước tính</strong>, từ các dòng tính điểm của sự kiện).",
+            "prerequisite": "Điều kiện tiên quyết",
+            "steps": "{count, plural, other {{amount} bước}}",
+            "unmetHeading": "Điều kiện tiên quyết chưa đạt",
+            "unmetNone": "Không có với các mục tiêu này. Công trình ngoài danh sách, như Hero Hall, sẽ hiện ở đây."
+        },
+        "export": {
+            "button": "Xuất sang Sự kiện chính",
+            "empty": "Thêm một mục tiêu vào kế hoạch để xuất.",
+            "speedupMinutes": "Phút tăng tốc xây dựng",
+            "power": "Sức mạnh nhận được từ xây dựng",
+            "stockDetail": "Kế hoạch cần {needed}, bạn có {held}.",
+            "unscored": "Không sự kiện nào tính điểm cho {name}."
+        }
+    }
+}

@@ -1,0 +1,67 @@
+{
+  "line": "게임 모드 {modes}개에서 어떤 버프가 적용되는지 보여줘요. 버프 {sources}종에 대해 예, 아니요, 일부로 표시해요.",
+  "matrix": {
+    "title": "버프 표",
+    "meta": "모드 {modes}개, 버프 {sources}종",
+    "table": "게임 모드별 버프 출처",
+    "mode": "게임 모드"
+  },
+  "sources": {
+    "cityBonusWarsBuffs": {
+      "short": "도시 보너스",
+      "full": "도시 보너스와 전쟁 버프"
+    },
+    "deploymentCapacity": {
+      "short": "출정 한도",
+      "full": "출정 한도"
+    },
+    "petSkills": {
+      "short": "펫 스킬",
+      "full": "펫 스킬"
+    },
+    "daybreakIsland": {
+      "short": "Daybreak",
+      "full": "Daybreak Island"
+    },
+    "presidentSkills": {
+      "short": "대통령",
+      "full": "대통령 스킬"
+    },
+    "ministerBuff": {
+      "short": "장관",
+      "full": "장관 버프"
+    },
+    "territoryBonuses": {
+      "short": "영토",
+      "full": "영토 보너스"
+    },
+    "facilityBuff": {
+      "short": "시설",
+      "full": "시설 버프"
+    },
+    "marchAccelerator": {
+      "short": "행군 가속",
+      "full": "행군 가속기"
+    },
+    "frostdragonTyrantTitles": {
+      "short": "폭군 칭호",
+      "full": "Frostdragon Tyrant 칭호"
+    },
+    "frostSphereDomainBonus": {
+      "short": "Frost Sphere",
+      "full": "Frost Sphere 영역 보너스"
+    }
+  },
+  "applicability": {
+    "yes": "예",
+    "no": "아니요",
+    "partial": "일부"
+  },
+  "notes": {
+    "title": "게임 모드별 메모",
+    "table": "게임 모드별 메모",
+    "petSkillsAutoApplied": "펫 스킬 자동 적용",
+    "note": "메모",
+    "noNote": "없음"
+  }
+}

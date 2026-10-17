@@ -1,0 +1,99 @@
+{
+  "line": "영웅 {heroes}명과 Widgets {widgets}레벨이에요. 참고용이며 저장되지 않아요.",
+  "roster": {
+    "title": "목록",
+    "count": "영웅 {total}명 중 {shown}명",
+    "search": "검색",
+    "searchPlaceholder": "영웅 {count}명 검색",
+    "generation": "세대",
+    "rarity": "희귀도",
+    "class": "직업",
+    "subClass": "세부 직업",
+    "all": "전체",
+    "empty": "필터에 맞는 영웅이 없어요.",
+    "columns": {
+      "hero": "영웅",
+      "generation": "세대",
+      "rarity": "희귀도",
+      "class": "직업",
+      "subClass": "세부 직업",
+      "power": "전투력, 별 5개",
+      "weapon": "전용 무기"
+    },
+    "none": "없음"
+  },
+  "detail": {
+    "generation": "{generation}세대",
+    "source": "획득처: {sources}",
+    "noSource": "획득처: 알 수 없음",
+    "explorationAttack": "탐험 공격",
+    "explorationDefense": "탐험 방어",
+    "explorationHealth": "탐험 체력",
+    "expeditionAttack": "원정 공격",
+    "expeditionDefense": "원정 방어",
+    "powerAtLevel80": "80레벨 전투력",
+    "powerAtFiveStars": "별 5개 전투력",
+    "powerAtZeroStars": "별 0개 전투력",
+    "powerMissing": "6세대 이상은 영웅 레벨과 조각의 전투력이 없어요. 데이터를 얻을 때까지 알 수 없음으로 표시돼요."
+  },
+  "skills": {
+    "title": "스킬",
+    "count": "{count, plural, other {스킬 {amount}개}}",
+    "branch": {
+      "exploration": "탐험",
+      "expedition": "원정",
+      "talent": "재능"
+    },
+    "levels": {
+      "columns": {
+        "level": "레벨",
+        "star": "필요 별",
+        "manuals": "매뉴얼",
+        "power": "전투력 증가",
+        "effects": "효과"
+      },
+      "effect": {
+        "percentOfAttack": "{name} 공격의 {amount}%",
+        "percent": "{name} {amount}%",
+        "seconds": "{name} {amount}초",
+        "number": "{name} {amount}"
+      }
+    }
+  },
+  "shards": {
+    "title": "별 단계별 조각 비용",
+    "columns": {
+      "star": "별",
+      "tiers": "단계별 조각",
+      "total": "합계",
+      "power": "해당 별의 전투력"
+    },
+    "star": "별 {star}개"
+  },
+  "weapon": {
+    "title": "전용 무기",
+    "power": "무기 전투력",
+    "exploration": "탐험 공격 / 방어 / 체력",
+    "expedition": "원정 살상력 / 체력",
+    "unlocksAt": "무기 {level}레벨에 해금",
+    "levelsTitle": "무기 레벨",
+    "columns": {
+      "level": "무기 레벨",
+      "power": "전투력",
+      "widgets": "Widgets"
+    },
+    "level": "{level}레벨"
+  },
+  "levels": {
+    "title": "영웅 레벨",
+    "columns": {
+      "level": "영웅 레벨",
+      "furnace": "조건",
+      "xp": "필요 경험치",
+      "power": "전투력"
+    },
+    "level": "{level}레벨",
+    "furnace": "Furnace {level}"
+  },
+  "recordLine": "{rarity} {heroClass}, {generation}세대. 참고용이며 저장되지 않아요."
+}

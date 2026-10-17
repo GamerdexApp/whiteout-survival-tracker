@@ -1,0 +1,70 @@
+{
+    "line": "エキスパート{experts}人と関係の段階{relationships}件。参考情報のみで、ここには何も保存されません。",
+    "roster": {
+        "title": "エキスパート",
+        "count": "{total}人中{shown}人のエキスパート",
+        "search": "検索",
+        "searchPlaceholder": "{count}人のエキスパートを名前、肩書き、専門で検索",
+        "generation": "世代",
+        "all": "すべて",
+        "empty": "このフィルターに一致するエキスパートがいません。",
+        "generationValue": "第{generation}世代",
+        "unlock": "解放: サーバー{days}日目",
+        "unlockUnknown": "解放:",
+        "unreleased": "未リリース"
+    },
+    "detail": {
+        "subline": "{title} · 専門 {specialty} · 第{generation}世代",
+        "baseBonus": "基本: {bonus}",
+        "bonus": "{stat} {value}",
+        "percentValue": "{value}%",
+        "skills": "スキル",
+        "talent": "タレント、最大レベル{level}",
+        "affinityLevels": "親密度レベル",
+        "baseBonusLabel": "基本ボーナス",
+        "unlock": "サーバー{days}日目に解放"
+    },
+    "skills": {
+        "title": "スキルとタレント",
+        "columns": {
+            "skill": "スキル",
+            "max": "最大",
+            "effect": "効果",
+            "books": "最大までの本",
+            "exp": "最大までのEXP"
+        },
+        "talent": "{name}（タレント）",
+        "none": "なし",
+        "selectHint": "スキルを選ぶと、詳細を表示します。"
+    },
+    "skillLevels": {
+        "title": "スキルレベルの表",
+        "meta": "{name}、レベル1から{max}",
+        "level": "レベル{level}",
+        "columns": {
+            "level": "レベル",
+            "exp": "EXP",
+            "books": "本"
+        },
+        "none": "なし"
+    },
+    "affinity": {
+        "title": "親密度レベル",
+        "level": "レベル{level}",
+        "columns": {
+            "level": "レベル",
+            "required": "必要な親密度",
+            "bonus": "ステータスボーナス",
+            "affinityPower": "親密度の戦力",
+            "levelPower": "レベルの戦力",
+            "advancement": "昇格コスト"
+        },
+        "noAdvancement": "昇格なし",
+        "startNote": "レベル1の必要な親密度は、開始値の{start}です。レベル2以降の値は、そのレベルに到達するためのコストです。"
+    },
+    "relationships": {
+        "title": "関係の段階",
+        "fromLevel": "レベル{level}から"
+    },
+    "recordLine": "{title}、専門 {specialty}、第{generation}世代。参考情報のみで、ここには何も保存されません。"
+}

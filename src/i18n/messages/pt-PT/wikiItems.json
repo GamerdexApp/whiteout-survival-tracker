@@ -1,0 +1,79 @@
+{
+  "line": "{items} itens em {categories} categorias, com fontes e as taxas de saque de {chests} baús.",
+  "catalog": {
+    "title": "Catálogo de itens",
+    "showing": "A mostrar {shown} de {total}",
+    "search": "Pesquisar",
+    "searchPlaceholder": "Pesquisar itens por nome ou descrição",
+    "table": "Itens",
+    "item": "Item",
+    "category": "Categoria",
+    "sources": "Fontes",
+    "lootRates": "Taxas de saque",
+    "description": "Descrição",
+    "emptyTitle": "Nenhum item corresponde",
+    "emptyDescription": "Alterar a pesquisa ou os filtros."
+  },
+  "filters": {
+    "title": "Filtros",
+    "button": "Filtros",
+    "summary": "Filtros: {category}. Fontes: {sources}",
+    "edit": "Editar",
+    "category": "Categoria",
+    "all": "Todas",
+    "sources": "Fontes",
+    "lootRates": "Taxas de saque",
+    "reset": "Repor",
+    "show": "{count, plural, one {Mostrar {amount} item} other {Mostrar {amount} itens}}"
+  },
+  "sourcesFilter": {
+    "any": "Quaisquer fontes",
+    "has": "Com fontes",
+    "none": "Sem fontes"
+  },
+  "sourcesChip": {
+    "any": "Qualquer",
+    "has": "Com fontes",
+    "none": "Sem fontes ({amount})"
+  },
+  "lootFilter": {
+    "any": "Qualquer",
+    "has": "Com taxas de saque"
+  },
+  "lootChip": {
+    "any": "Qualquer",
+    "has": "Com taxas de saque ({amount} baús)"
+  },
+  "loot": {
+    "yes": "Sim",
+    "no": "Não",
+    "notChest": "Não é um baú"
+  },
+  "detail": {
+    "title": "Detalhes",
+    "category": "Categoria",
+    "sources": "Fontes",
+    "speedup": "Acelerador",
+    "speedupValue": "{type}, {minutes} minutos",
+    "description": "Descrição",
+    "lootRates": "Taxas de saque",
+    "lootRowsListed": "{count, plural, one {{amount} linha indicada} other {{amount} linhas indicadas}}",
+    "noLootRates": "Os dados não têm taxas de saque para este baú",
+    "lootTitle": "Taxas de saque",
+    "lootMeta": "{count, plural, one {{amount} recompensa} other {{amount} recompensas}}",
+    "lootTable": "Taxas de saque do baú",
+    "reward": "Recompensa",
+    "amount": "Quantidade",
+    "chance": "Probabilidade",
+    "chanceValue": "{percent}%",
+    "name": "Nome"
+  },
+  "speedupType": {
+    "general": "Geral",
+    "construction": "Construção",
+    "troop": "Tropas",
+    "research": "Investigação",
+    "learning": "Aprendizagem",
+    "healing": "Cura"
+  }
+}

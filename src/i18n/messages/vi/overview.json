@@ -1,0 +1,231 @@
+{
+    "page": {
+        "title": "Tổng quan"
+    },
+    "header": {
+        "state": "State {number}",
+        "furnace": "Furnace {level}",
+        "serverAge": "Máy chủ khoảng {days} ngày tuổi",
+        "derived": "Tổng hợp từ các trang khác của bạn"
+    },
+    "tiles": {
+        "furnace": {
+            "label": "Furnace",
+            "steps": "bước {order} trên {total}",
+            "unknown": "Không rõ",
+            "unknownHint": "Đặt Furnace ở Công trình"
+        },
+        "dailies": {
+            "label": "Hằng ngày",
+            "value": "{done} / {total}",
+            "tasks": "Việc của tôi đã xong hôm nay",
+            "missions": "Nhiệm vụ trong game đã xong"
+        },
+        "events": {
+            "label": "Sự kiện",
+            "live": "{amount} đang diễn ra",
+            "coreDay": "{event} {day}",
+            "moreThisWeek": "Thêm {amount} trong tuần này",
+            "noneThisWeek": "Không có trong tuần này"
+        },
+        "skins": {
+            "label": "Skin",
+            "value": "{owned} / {total}",
+            "hint": "Skin đã sở hữu"
+        },
+        "vip": {
+            "label": "VIP",
+            "value": "VIP {level}",
+            "unknown": "Không rõ",
+            "hint": "Từ VIP XP của bạn",
+            "unknownHint": "Nhập VIP XP của bạn ở VIP"
+        },
+        "prosperity": {
+            "label": "Prosperity của đảo",
+            "possible": "trên tối đa {max}",
+            "locked": "Đã khóa",
+            "lockedHint": "Cần Furnace {level}"
+        },
+        "generation": {
+            "label": "Thế hệ anh hùng",
+            "allUnlocked": "Mọi thế hệ đã mở",
+            "shouldBeOpen": "Thế hệ {next} lẽ ra đã mở",
+            "onDay": "Thế hệ {next} vào ngày máy chủ {day}",
+            "inDays": "Thế hệ {next} sau khoảng {days} ngày"
+        }
+    },
+    "events": {
+        "title": "Sự kiện",
+        "openCalendar": "Mở lịch",
+        "liveNow": "Đang diễn ra",
+        "liveBadge": "Đang diễn ra",
+        "nextUp": "Sắp tới, từ trang sự kiện của bạn",
+        "coreLine": "{day} trên {count}, {name}. Sự kiện chính",
+        "runLine": "{length}. Đang diễn ra",
+        "empty": "Chưa thêm sự kiện",
+        "addEvent": "Thêm sự kiện",
+        "noLive": "Hiện không có gì đang chạy."
+    },
+    "coreToday": {
+        "title": "{event} hôm nay",
+        "open": "Sự kiện chính",
+        "dayLine": "{day}, {name}",
+        "plan": "Kế hoạch hôm nay {points} điểm",
+        "checklist": "Danh sách việc",
+        "done": "{done} trên {total} đã xong",
+        "progress": "Tiến độ danh sách việc",
+        "noActions": "Hôm nay chưa lên kế hoạch hành động nào.",
+        "castleSignedUp": "Đã đăng ký chức vụ Lâu đài cho {day}",
+        "castleOpen": "Đăng ký chức vụ Lâu đài cho {day}",
+        "logLocked": "{locked} trên {total} ngày đã khóa trong Nhật ký sự kiện.",
+        "todayLocked": "{day} đã khóa.",
+        "todayOpen": "{day} chưa được ghi.",
+        "openChecklist": "Mở danh sách việc",
+        "openLog": "Mở nhật ký sự kiện"
+    },
+    "queues": {
+        "title": "Hàng chờ đang chạy",
+        "running": "{count} đang chạy",
+        "construction": "Xây dựng {number}",
+        "researchMain": "Nghiên cứu",
+        "researchWarAcademy": "War Academy",
+        "training": "Huấn luyện {name}",
+        "learning": "Học",
+        "task": {
+            "construction": "{name} lên {level}",
+            "research": "{name} lên cấp {level}",
+            "training": "Quân {tier}",
+            "learning": "{name}, {skill}"
+        },
+        "idle": "Rảnh",
+        "idleBuildings": "Rảnh, nhấn Bắt đầu nâng cấp ở Công trình",
+        "idleResearch": "Rảnh, nhấn Bắt đầu nâng cấp ở Nghiên cứu",
+        "progress": "Tiến độ của {title}"
+    },
+    "lastResult": {
+        "title": "Kết quả sự kiện gần nhất",
+        "open": "Mở trong Lịch sử",
+        "days": "Ngày 1 đến 5. Giai đoạn Chiến đấu được tách riêng.",
+        "plan": "Kế hoạch",
+        "actual": "Thực tế",
+        "difference": "Chênh lệch",
+        "overall": "Hạng chung",
+        "alliance": "Hạng liên minh",
+        "upgrades": "Nâng cấp đã lên kế hoạch và xong",
+        "upgradesOf": "{done} trên {total}"
+    },
+    "server": {
+        "title": "Tuổi máy chủ",
+        "edit": "Sửa thủ lĩnh",
+        "age": "Khoảng {days} ngày, lệch cộng trừ {tolerance}",
+        "unknown": "Không rõ. Hãy thêm ngày mở máy chủ trong Sửa thủ lĩnh.",
+        "fromDate": "Tính từ ngày mở máy chủ, {date}.",
+        "warAcademy": "Nghiên cứu War Academy",
+        "t12": "Nghiên cứu T12",
+        "open": "Đã mở",
+        "opensIn": "Mở sau khoảng {days} ngày",
+        "unknownUnlock": "Không rõ",
+        "heroes": "Anh hùng đã mở đến",
+        "generation": "Thế hệ {number}",
+        "estimate": "Số ngày mở lấy từ dòng thời gian máy chủ. Hãy đổi trong Sửa thủ lĩnh nếu máy chủ của bạn hơi lệch.",
+        "areas": {
+            "fireCrystal": "Cấp Fire Crystal",
+            "pets": "Thú cưng",
+            "experts": "Chuyên gia"
+        },
+        "fcUpTo": "Đến {level}",
+        "nothingYet": "Chưa có",
+        "countOf": "{unlocked} trên {total} đã mở",
+        "allUnlocked": "Mọi thứ đã mở.",
+        "generationName": "Thế hệ {number}",
+        "allGenerations": "Mọi thế hệ đã mở.",
+        "next": {
+            "withDate": "Kế tiếp: {names}, ngày máy chủ {day}, {date}. Sau khoảng {days} ngày.",
+            "noDate": "Kế tiếp: {names}, ngày máy chủ {day}. Sau khoảng {days} ngày.",
+            "unknownAge": "Kế tiếp: {names}, ngày máy chủ {day}.",
+            "passed": "{names} lẽ ra đã mở theo tuổi máy chủ của bạn, ngày máy chủ {day}. Hãy tăng thiết lập trong Sửa thủ lĩnh."
+        }
+    },
+    "dailies": {
+        "title": "Hằng ngày hôm nay",
+        "open": "Mở Hằng ngày",
+        "activeness": "{now} trên {top} Độ hoạt động",
+        "activenessBar": "Độ hoạt động hôm nay",
+        "missions": "Nhiệm vụ trong game: xong {done} trên {total}",
+        "tasks": "{done} trên {total} Việc của tôi",
+        "tasksBar": "Việc của tôi đã xong hôm nay",
+        "stillOpen": "Còn mở trong Việc của tôi, {shown} đầu tiên trên {total}",
+        "allDone": "Mọi việc trong Việc của tôi đã xong hôm nay.",
+        "noTasks": "Chưa có việc nào trong Việc của tôi."
+    },
+    "planner": {
+        "title": "Thiếu hụt theo kế hoạch",
+        "short": "Thiếu {amount}",
+        "covered": "Không thiếu",
+        "goals": "Mục tiêu từ {pages}. Chi phí lấy từ gói dữ liệu, kho lấy từ Tài nguyên.",
+        "noGoals": "Chưa đặt mục tiêu. Hãy đặt mục tiêu bằng Kế hoạch ở Công trình, Nghiên cứu và các trang khác.",
+        "pages": {
+            "buildings": "Công trình",
+            "research": "Nghiên cứu",
+            "heroes": "Anh hùng",
+            "troops": "Quân đội",
+            "pets": "Thú cưng",
+            "chiefGear": "Trang bị Thủ lĩnh",
+            "chiefCharms": "Bùa Thủ lĩnh"
+        },
+        "separator": ", ",
+        "line": "Cần {need} · Có {have}",
+        "shortBy": "Thiếu {amount}",
+        "enough": "Đủ",
+        "updateStock": "Cập nhật kho trong Tài nguyên",
+        "incomplete": "Một cấp mục tiêu có chi phí Không rõ trong gói dữ liệu, nên các tổng này chưa đầy đủ."
+    },
+    "progress": {
+        "title": "Tiến độ theo mảng",
+        "hint": "Đã sở hữu hoặc đã lên cấp so với tổng của gói dữ liệu",
+        "count": "{owned} / {total}",
+        "furnace": "Furnace",
+        "furnaceOf": "{level} trên {max}",
+        "furnaceUnknown": "Không rõ",
+        "areas": {
+            "buildings": "Công trình",
+            "heroes": "Anh hùng",
+            "chiefGear": "Trang bị thủ lĩnh",
+            "chiefCharms": "Bùa thủ lĩnh",
+            "experts": "Chuyên gia",
+            "pets": "Thú cưng",
+            "research": "Nghiên cứu",
+            "allianceTech": "Công nghệ liên minh",
+            "skins": "Skin"
+        },
+        "locked": {
+            "daybreakIsland": "Daybreak Island",
+            "requirement": "Đã khóa. Cần Furnace {level}, còn {count, plural, other {{amount} cấp}}"
+        }
+    },
+    "power": {
+        "title": "Sức mạnh",
+        "total": "Tổng sức mạnh",
+        "complete": "Sức mạnh hiện tại so với mức cao nhất mà mỗi nhóm có thể đạt khi mọi thứ ở cấp cao nhất trong nội dung mà thiết lập mở khóa của bạn cho phép. Nhóm không có mức tối đa được tính như hiện có.",
+        "incomplete": "Cùng cách so sánh. {count, plural, other {{amount} mục}} không có giá trị sức mạnh trong dữ liệu và {count, plural, other {không}} được tính.",
+        "groupWithoutValue": "{count, plural, other {{amount} mục}} không có giá trị sức mạnh trong dữ liệu",
+        "groups": {
+            "buildings": "Công trình",
+            "research": "Nghiên cứu",
+            "heroes": "Anh hùng",
+            "heroGear": "Trang bị Anh hùng",
+            "chiefGear": "Trang bị Thủ lĩnh",
+            "chiefCharms": "Bùa Thủ lĩnh",
+            "experts": "Chuyên gia",
+            "pets": "Thú cưng",
+            "troops": "Quân đội"
+        },
+        "ofPossible": "trên tối đa {possible}",
+        "totalProgress": "Tổng sức mạnh so với mức cao nhất có thể",
+        "percentOfPossible": "{percent}% mức cao nhất có thể",
+        "rowOfPossible": "{power} trên {possible}",
+        "progress": "Sức mạnh {group} so với mức cao nhất có thể",
+        "noMaximum": "Không có mức tối đa, tùy vào những gì bạn nhập",
+        "noCapNote": "Quân đội và Trang bị Anh hùng không có giới hạn, nên tổng sức mạnh của bạn có thể vượt tổng có thể bằng cách huấn luyện thêm quân và cải thiện trang bị anh hùng. Cả hai được tính như hiện có trong tổng có thể."
+    }
+}

@@ -1,0 +1,108 @@
+{
+    "days": {
+        "day": "第 {number} 天",
+        "battle": "戰鬥",
+        "range": "第 {range} 天",
+        "stage": "第 {number} 階段"
+    },
+    "page": {
+        "title": "核心活動",
+        "subline": "{chief} · {details}"
+    },
+    "events": {
+        "svs": "SvS",
+        "showdown": "Alliance Showdown",
+        "king": "King of Icefield",
+        "hall": "Hall of Chief"
+    },
+    "tabs": {
+        "label": "核心活動"
+    },
+    "empty": {
+        "title": "沒有顯示任何活動",
+        "description": "這位領主的四個活動都已隱藏。請在編輯領主中開啟。",
+        "action": "編輯領主"
+    },
+    "strip": {
+        "live": "活動進行中",
+        "dates": "{start} 至 {end}",
+        "noDates": "日期在活動紀錄中設定。",
+        "today": "今天是{day}",
+        "checklist": "清單",
+        "log": "活動紀錄"
+    },
+    "bonus": {
+        "title": "{expert}{skill}等級",
+        "level": "{level} 級",
+        "levelWithPercent": "{level} 級 · {percent}%",
+        "none": "尚未設定等級，所以不加成。",
+        "readOnly": "唯讀",
+        "openExperts": "開啟專家",
+        "svsHelp": "每級為第 1 到 5 天的積分增加 2%（每天各自四捨五入），並為積分門檻增加額外階級。戰鬥階段沒有加成。這裡唯讀，等級請在專家頁面設定。",
+        "showdownHelp": "每級為每個行動增加 5%。這裡唯讀，等級請在專家頁面設定。",
+        "noneTitle": "沒有專家加成",
+        "kingNote": "沒有專家會影響 King of Icefield 的積分。",
+        "hallNote": "沒有專家會影響 Hall of Chief 的積分。"
+    },
+    "daysSection": {
+        "title": "天數",
+        "stages": "階段",
+        "totalPerDay": "每天總積分",
+        "totalPerStage": "每階段總積分",
+        "hallSeason": "賽季由帳號設定，在設定之前為第 1 季。",
+        "showdownScope": "僅個人積分。不含聯盟總計，也不含勝利積分。"
+    },
+    "table": {
+        "title": "{day}：{name}",
+        "phasePreparation": "準備階段",
+        "phaseBattle": "戰鬥階段",
+        "action": "行動",
+        "pointsEach": "每次積分",
+        "count": "數量",
+        "points": "積分",
+        "lower": "減少{action}的數量",
+        "raise": "增加{action}的數量",
+        "countLabel": "{action}的數量",
+        "fromPlans": "來自規劃 {amount}",
+        "base": "基本 {amount}",
+        "bonus": "加成 {amount}",
+        "total": "合計 {amount}"
+    },
+    "result": {
+        "totalTitle": "總積分，所有天數",
+        "totalTitleHall": "總積分，所選階段",
+        "baseBonus": "基本 {base}，加成 {bonus}",
+        "battle": "戰鬥階段",
+        "battleNoBonus": "戰鬥階段沒有加成",
+        "seasonSum": "賽季各階段加總：{amount}。這不是排名。",
+        "selectedDayTotal": "{day}：{amount}",
+        "selectedDayBonus": "加成 {percent}%"
+    },
+    "perDay": {
+        "title": "每天積分",
+        "titleHall": "每階段積分",
+        "bar": "{day}占最大一天的比例"
+    },
+    "thresholds": {
+        "title": "積分門檻",
+        "estimate": "估計值",
+        "help": "{day}的里程碑，與當天合計比較。",
+        "reached": "已達成",
+        "needs": "還需要 {amount}",
+        "extraTier": "額外階級 {number}，來自 Valeria",
+        "extraTierUnknown": "資料包中沒有積分和獎勵",
+        "unknown": "未知",
+        "noneEvent": "資料包中沒有這個活動的積分門檻。",
+        "noneDay": "資料包中沒有這一天的積分門檻。"
+    },
+    "ranks": {
+        "title": "名次門檻",
+        "note": "這些是玩家排名。名次沒有積分下限。",
+        "rank": "名次",
+        "reward": "獎勵",
+        "gems": "{amount} 寶石",
+        "unknown": "未知",
+        "notConfirmed": "未確認",
+        "noneShowdown": "資料包中沒有 Alliance Showdown 的個人排名。"
+    }
+}

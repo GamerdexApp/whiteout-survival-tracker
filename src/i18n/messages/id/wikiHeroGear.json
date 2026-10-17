@@ -1,0 +1,45 @@
+{
+  "line": "{enhancement} level peningkatan, {empowerment} level penguatan, {mastery} baris penempaan mastery, dan {stats} entri statistik. Hanya referensi, tidak ada yang disimpan.",
+  "tabsLabel": "Tabel perlengkapan pahlawan",
+  "tabs": {
+    "enhancement": "Peningkatan",
+    "empowerment": "Penguatan",
+    "mastery": "Penempaan mastery",
+    "stats": "Statistik"
+  },
+  "levels": {
+    "columns": {
+      "level": "Level",
+      "cost": "Biaya",
+      "power": "Kekuatan",
+      "gain": "Selisih dari sebelumnya",
+      "milestonePower": "Kekuatan tonggak",
+      "stage": "Tahap",
+      "statsUp": "Statistik naik"
+    },
+    "none": "Tidak ada",
+    "percent": "{value}%",
+    "gainValue": "+{value}"
+  },
+  "stats": {
+    "slot": "Slot",
+    "troopType": "Jenis pasukan",
+    "troop": {
+      "infantry": "Infanteri",
+      "lancer": "Lancer",
+      "marksman": "Marksman"
+    },
+    "note": "Level statistik 101 sampai 200 adalah level penguatan 1 sampai 100.",
+    "columns": {
+      "level": "Level",
+      "combat": "{stat}",
+      "health": "Darah",
+      "percent": "{stat}"
+    },
+    "level": "Level {level}",
+    "empowermentLevel": "Level {level}, penguatan {empowerment}",
+    "milestonesTitle": "Tonggak",
+    "milestone": "Level penguatan {level}, {event}: {stat}",
+    "percentValue": "{value}%"
+  }
+}

@@ -1,0 +1,95 @@
+{
+    "hoursMinutes": {
+        "hours": "小時",
+        "minutes": "分鐘"
+    },
+    "jobCard": {
+        "idle": "閒置",
+        "progress": "{title}進度",
+        "ends": "結束於 {date}",
+        "manage": "管理",
+        "finish": "完成"
+    },
+    "timeLeftPill": {
+        "manage": "{label}，{timeLeft}。管理升級"
+    },
+    "manage": {
+        "fallbackTitle": "管理升級",
+        "description": "管理進行中的升級",
+        "close": "關閉",
+        "finish": "完成升級",
+        "progress": "升級進度",
+        "started": "開始於 {date}",
+        "ends": "結束於 {date}",
+        "speedup": {
+            "title": "使用了加速道具",
+            "minutesUsed": "使用的分鐘數",
+            "apply": "套用",
+            "timeLeftAfter": "套用後的剩餘時間",
+            "hint": "任何種類的加速道具，都會從剩餘時間中扣除它的分鐘數。"
+        },
+        "setTime": {
+            "title": "設定剩餘時間",
+            "button": "設定剩餘時間",
+            "hint": "遊戲顯示的時間不同時，請使用這個。"
+        },
+        "done": {
+            "title": "完成時",
+            "cancel": "取消這次升級"
+        }
+    },
+    "planStock": {
+        "title": "你的庫存夠嗎？",
+        "shortCount": "{total} 項中缺 {short} 項",
+        "description": "規劃要從你的庫存扣除的內容，並對照你持有的數量。完整規劃請見下方結果。",
+        "enough": "足夠",
+        "notEnough": "不足",
+        "covered": "{name}已足夠",
+        "available": "可用 {amount}",
+        "needed": "需要 {amount}",
+        "leftOver": "剩餘 {amount}",
+        "shortBy": "缺 {amount}",
+        "stillNeeded": "完整規劃仍需要：{list}。",
+        "openResources": "開啟資源"
+    },
+    "start": {
+        "title": "開始升級",
+        "cancel": "取消",
+        "nothingToStart": "目前沒有可以開始的項目。每一項都已達最高等級、已鎖定，或正在升級。",
+        "powerGained": "獲得戰力",
+        "packageTime": "資料包時間",
+        "unknown": "未知",
+        "readOnly": "唯讀",
+        "openBonuses": "開啟加成",
+        "yourTime": "你的時間",
+        "timeHint": "只會計入加成頁面的速度。如果遊戲顯示的時間不同，請在「開始時間」中修改。",
+        "allBusy": "這裡全部都在忙碌中。在有項目空出之前，「開始升級」無法使用。",
+        "whenStarted": "開始時間",
+        "timeLeftHours": "剩餘時間（小時）",
+        "ends": "結束時間",
+        "startedHint": "選擇「已開始」即可輸入遊戲顯示的時間，結束時間會據此算出。",
+        "takeCost": {
+            "title": "從資源扣除花費",
+            "hint": "從你的庫存中扣除上方的花費。",
+            "enough": "每種資源都足夠。",
+            "short": "{names}不足。你仍然可以開始，庫存最低會停在 0。"
+        },
+        "modes": {
+            "now": "現在開始",
+            "already": "已開始"
+        }
+    },
+    "researchQueues": {
+        "label": "{name}，{tabs}",
+        "main": {
+            "name": "研究佇列",
+            "tabs": "成長、經濟和戰鬥",
+            "shortName": "研究"
+        },
+        "warAcademy": {
+            "name": "War Academy 佇列",
+            "tabs": "T11 和 T12",
+            "shortName": "War Academy"
+        }
+    }
+}

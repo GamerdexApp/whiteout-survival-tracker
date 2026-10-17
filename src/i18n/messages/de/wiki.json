@@ -1,0 +1,91 @@
+{
+    "title": "Referenz",
+    "subline": "Nur lesbare Seiten zu den Spieldaten. Hier wird nichts gespeichert.",
+    "status": "Das Datenpaket ist noch in Arbeit. Werte, die es noch nicht hat, erscheinen als Unbekannt.",
+    "breadcrumb": "Wiki",
+    "openInTracker": "Im Tracker öffnen",
+    "unknown": "Unbekannt",
+    "pages": {
+        "buildings": {
+            "title": "Gebäude",
+            "description": "Jedes Gebäude und seine Stufen mit Kosten, Zeit, Macht und Voraussetzungen, plus die neun Anlagen."
+        },
+        "heroes": {
+            "title": "Helden",
+            "description": "Die Heldenliste mit Werten, Fähigkeiten, Splitterkosten, Exklusivwaffen und Widgets."
+        },
+        "heroGear": {
+            "title": "Tabellen Heldengear",
+            "description": "Tabellen zu Verbesserung, Stärkung, Meisterschmieden und Werten für Heldengear."
+        },
+        "experts": {
+            "title": "Experten",
+            "description": "Die zehn Experten mit Fähigkeiten, Talenten, Affinitätsstufen und Beziehungsstufen."
+        },
+        "pets": {
+            "title": "Haustiere",
+            "description": "Jedes Haustier mit Fähigkeit, Stufentabelle, Futterkosten, Werten und Aufstiegsmaterial."
+        },
+        "chiefGear": {
+            "title": "Häuptlingsgear",
+            "description": "Gear-Slots und Tiers mit Macht und Score, plus die Wechselkurse."
+        },
+        "chiefCharms": {
+            "title": "Häuptlingsamulette",
+            "description": "Amulett-Slots, Stufen und Stages, plus die Wechselkurse."
+        },
+        "troops": {
+            "title": "Truppen",
+            "description": "Die drei Truppentypen und ihre zwölf Tiers mit Kosten und Trainingszeit."
+        },
+        "research": {
+            "title": "Forschungsbaum",
+            "description": "Forschungsknoten nach Kategorie mit Stufenkosten, Voraussetzungen, Boni und Zeit."
+        },
+        "allianceTech": {
+            "title": "Allianz-Tech",
+            "description": "Allianztechnologie nach Kategorie und Tier."
+        },
+        "allianceStructures": {
+            "title": "Allianzstrukturen",
+            "description": "Banner, Kartenanlagen, das Schloss, Bollwerke und Festungen."
+        },
+        "daybreak": {
+            "title": "Daybreak Island",
+            "description": "Das Lumber Camp, der Tree of Life und jede Dekoration."
+        },
+        "events": {
+            "title": "Events",
+            "description": "Jedes Spiel-Event mit Phasen, Wertung und Belohnungen."
+        },
+        "eventBuffs": {
+            "title": "Event-Buffs",
+            "description": "Welche Buffquellen für jeden Spielmodus gelten."
+        },
+        "items": {
+            "title": "Items",
+            "description": "Der Item-Katalog nach Kategorie mit Quellen und Truhen-Dropraten."
+        },
+        "skins": {
+            "title": "Skins",
+            "description": "Die Skin-Galerie nach Typ mit Buffs und Dauer."
+        },
+        "vip": {
+            "title": "VIP",
+            "description": "VIP-Stufen 1 bis 12 mit XP und den Boni, die sie hinzufügen."
+        },
+        "tundraAlbum": {
+            "title": "Tundra Album",
+            "description": "Alben mit Buff, Abschlussbelohnungen, Puzzles und Teilen."
+        },
+        "dailies": {
+            "title": "Tagesaufgaben",
+            "description": "Spielmissionen, Belohnungen der Aktivitätsleiste und die Routineaufgaben."
+        }
+    },
+    "recordMissing": {
+        "title": "Eintrag nicht gefunden",
+        "description": "Die Daten haben unter dieser Adresse keinen Eintrag.",
+        "back": "Zurück zu {page}"
+    }
+}

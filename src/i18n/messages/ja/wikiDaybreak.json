@@ -1,0 +1,69 @@
+{
+    "line": "Lumber CampとTree of Lifeのレベル表と、カテゴリー別のデコレーション{decorations}件（コスト、繁栄度、バフ）。",
+    "lumberCamp": {
+        "title": "Lumber Camp",
+        "levels": "{count, plural, other {{amount}レベル}}",
+        "table": "Lumber Campのレベル",
+        "level": "レベル",
+        "workers": "作業員",
+        "perSecond": "毎秒",
+        "treeLevel": "ツリーのレベル",
+        "lifeEssence": "Life Essence"
+    },
+    "tree": {
+        "title": "Tree of Life",
+        "table": "Tree of Lifeのレベル",
+        "level": "レベル",
+        "prosperity": "繁栄度",
+        "lifeEssence": "Life Essence",
+        "perHour": "毎時",
+        "buff": "バフ"
+    },
+    "decorations": {
+        "title": "デコレーション",
+        "showing": "{total}件中{shown}件を表示",
+        "search": "検索",
+        "searchPlaceholder": "名前またはバフでデコレーションを検索",
+        "categoryLabel": "カテゴリー",
+        "all": "すべて",
+        "costFilter": "コストの種類",
+        "table": "デコレーション",
+        "name": "デコレーション",
+        "category": "カテゴリー",
+        "limit": "上限",
+        "levels": "レベル",
+        "cost": "コスト",
+        "prosperityAtMax": "最大時の繁栄度",
+        "buffAtMax": "最大レベルのバフ",
+        "emptyTitle": "一致するデコレーションがありません",
+        "emptyDescription": "検索条件、カテゴリー、コストの種類を変更してください。"
+    },
+    "costFilter": {
+        "any": "すべてのコスト",
+        "lifeEssence": "Life Essence",
+        "items": "資源",
+        "limited": "数量限定",
+        "unknown": "データにコストなし"
+    },
+    "cost": {
+        "lifeEssence": "Life Essence {amount}",
+        "limited": "なし、数量限定のデコレーション"
+    },
+    "detail": {
+        "title": "詳細",
+        "category": "カテゴリー",
+        "limit": "上限",
+        "cost": "コスト",
+        "levels": "レベル",
+        "image": "画像",
+        "imageMissing": "なし",
+        "levelsTitle": "{name}のレベル",
+        "levelsMeta": "{count, plural, other {{amount}レベル}}",
+        "levelsTable": "デコレーションのレベル",
+        "level": "レベル",
+        "levelCost": "コスト",
+        "prosperity": "繁栄度",
+        "buff": "バフ",
+        "noLevels": "このデコレーションのレベル表はデータにありません。"
+    }
+}

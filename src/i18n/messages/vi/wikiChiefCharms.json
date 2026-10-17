@@ -1,0 +1,49 @@
+{
+    "line": "{rows} dòng bùa, {slots} ô và {rates} tỉ lệ quy đổi. Chỉ để tham khảo, không có gì ở đây được lưu vào thủ lĩnh của bạn.",
+    "slots": {
+        "heading": "Ô bùa",
+        "meta": "{slots} ô, mỗi loại quân một ô",
+        "icons": "{count, plural, other {{amount} biểu tượng cấp}}",
+        "recordLine": "Tăng cường cho quân {troopType}. Mỗi cấp một biểu tượng."
+    },
+    "table": {
+        "heading": "Bảng bùa",
+        "meta": "{rows} dòng, {levels} cấp",
+        "searchLabel": "Tìm kiếm",
+        "searchPlaceholder": "Tìm trong {rows} dòng bùa",
+        "levelLabel": "Cấp",
+        "allLevels": "Mọi cấp",
+        "levelOption": "Cấp {level}",
+        "stageLabel": "Giai đoạn",
+        "allStages": "Mọi giai đoạn",
+        "stageOption": "Giai đoạn {stage}",
+        "empty": "Không có dòng bùa nào khớp bộ lọc của bạn."
+    },
+    "columns": {
+        "row": "Dòng",
+        "materials": "Vật liệu",
+        "stats": "Chỉ số",
+        "power": "Sức mạnh",
+        "score": "Điểm"
+    },
+    "cells": {
+        "none": "Không có",
+        "percent": "{value}%"
+    },
+    "levels": {
+        "heading": "Các cấp",
+        "level": "Cấp",
+        "levelName": "Cấp {level}",
+        "rows": "Dòng",
+        "stats": "Chỉ số, từ đầu đến cuối",
+        "power": "Sức mạnh ở dòng cuối",
+        "statsRange": "{first}% đến {last}%"
+    },
+    "exchange": {
+        "heading": "Tỉ lệ quy đổi vật liệu",
+        "exchange": "Quy đổi",
+        "from": "Từ",
+        "to": "Thành",
+        "weeklyLimit": "Giới hạn hằng tuần"
+    }
+}

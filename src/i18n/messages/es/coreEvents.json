@@ -1,0 +1,108 @@
+{
+  "days": {
+    "day": "Día {number}",
+    "battle": "Batalla",
+    "range": "Días {range}",
+    "stage": "Etapa {number}"
+  },
+  "page": {
+    "title": "Eventos clave",
+    "subline": "{chief} · {details}"
+  },
+  "events": {
+    "svs": "SvS",
+    "showdown": "Alliance Showdown",
+    "king": "King of Icefield",
+    "hall": "Hall of Chief"
+  },
+  "tabs": {
+    "label": "Eventos clave"
+  },
+  "empty": {
+    "title": "No hay eventos visibles",
+    "description": "Los cuatro eventos están ocultos para este jefe. Actívalos en Editar jefe.",
+    "action": "Editar jefe"
+  },
+  "strip": {
+    "live": "Evento en curso",
+    "dates": "{start} a {end}",
+    "noDates": "Las fechas se fijan en el Registro de eventos.",
+    "today": "Hoy es {day}",
+    "checklist": "Lista",
+    "log": "Registro de eventos"
+  },
+  "bonus": {
+    "title": "Nivel de {skill} de {expert}",
+    "level": "Nivel {level}",
+    "levelWithPercent": "Nivel {level} · {percent}%",
+    "none": "Sin nivel fijado, así que no se suma bonificación.",
+    "readOnly": "Solo lectura",
+    "openExperts": "Abrir Expertos",
+    "svsHelp": "Suma un 2% por nivel a los puntos de los días 1 a 5, redondeado por día, y tiers extra a los umbrales de puntos. La fase de batalla no recibe bonificación. Aquí es de solo lectura, el nivel se fija en la página de Expertos.",
+    "showdownHelp": "Suma un 5% por nivel a cada acción. Aquí es de solo lectura, el nivel se fija en la página de Expertos.",
+    "noneTitle": "Sin bonificación de experto",
+    "kingNote": "Ningún experto cambia los puntos de King of Icefield.",
+    "hallNote": "Ningún experto cambia los puntos de Hall of Chief."
+  },
+  "daysSection": {
+    "title": "Días",
+    "stages": "Etapas",
+    "totalPerDay": "Puntos totales por día",
+    "totalPerStage": "Puntos totales por etapa",
+    "hallSeason": "La temporada se fija en la cuenta y es la Temporada 1 hasta entonces.",
+    "showdownScope": "Solo puntos personales. Sin totales de alianza ni puntos de victoria."
+  },
+  "table": {
+    "title": "{day}: {name}",
+    "phasePreparation": "Fase de preparación",
+    "phaseBattle": "Fase de batalla",
+    "action": "Acción",
+    "pointsEach": "Puntos por unidad",
+    "count": "Cantidad",
+    "points": "Puntos",
+    "lower": "Reducir cantidad de {action}",
+    "raise": "Aumentar cantidad de {action}",
+    "countLabel": "Cantidad de {action}",
+    "fromPlans": "{amount} de planes",
+    "base": "Base {amount}",
+    "bonus": "Bonificación {amount}",
+    "total": "Total {amount}"
+  },
+  "result": {
+    "totalTitle": "Puntos totales, todos los días",
+    "totalTitleHall": "Puntos totales, etapa seleccionada",
+    "baseBonus": "Base {base}, bonificación {bonus}",
+    "battle": "Fase de batalla",
+    "battleNoBonus": "Sin bonificación en la fase de batalla",
+    "seasonSum": "Suma de las etapas de la temporada: {amount}. No es una clasificación.",
+    "selectedDayTotal": "{day}: {amount}",
+    "selectedDayBonus": "Bonificación {percent}%"
+  },
+  "perDay": {
+    "title": "Puntos por día",
+    "titleHall": "Puntos por etapa",
+    "bar": "Proporción respecto al día mayor para {day}"
+  },
+  "thresholds": {
+    "title": "Umbrales de puntos",
+    "estimate": "Estimación",
+    "help": "Hitos de {day}, comparados con el total del día.",
+    "reached": "Alcanzado",
+    "needs": "Faltan {amount}",
+    "extraTier": "Tier extra {number}, de Valeria",
+    "extraTierUnknown": "Los puntos y la recompensa no están en el paquete",
+    "unknown": "Desconocido",
+    "noneEvent": "El paquete no tiene umbrales de puntos para este evento.",
+    "noneDay": "El paquete no tiene umbrales de puntos para este día."
+  },
+  "ranks": {
+    "title": "Umbrales de puesto",
+    "note": "Son clasificaciones de jugadores. Un puesto no tiene un corte de puntos.",
+    "rank": "Puesto",
+    "reward": "Recompensa",
+    "gems": "{amount} Gems",
+    "unknown": "Desconocido",
+    "notConfirmed": "Sin confirmar",
+    "noneShowdown": "El paquete no tiene clasificación personal para Alliance Showdown."
+  }
+}

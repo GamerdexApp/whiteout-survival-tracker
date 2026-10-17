@@ -1,0 +1,129 @@
+{
+  "title": "活动记录",
+  "events": {
+    "svs": "SvS，State of Power",
+    "showdown": "Alliance Showdown",
+    "king": "King of Icefield",
+    "hall": "Hall of Chief"
+  },
+  "tabs": {
+    "label": "活动记录视图",
+    "current": "当前活动",
+    "history": "历史"
+  },
+  "dates": {
+    "title": "活动日期",
+    "start": "开始",
+    "end": "结束",
+    "days": "{count, plural, other {{amount}天}}",
+    "endBeforeStart": "结束日期早于开始日期。"
+  },
+  "results": {
+    "rank": "排名",
+    "alliance": "联盟",
+    "score": "得分",
+    "allianceShort": "联盟",
+    "scoreOf": "{day}，得分",
+    "rankOf": "{day}，排名",
+    "allianceOf": "{day}，联盟排名",
+    "plan": "计划{total}",
+    "notStarted": "未开始",
+    "opensLater": "稍后开放",
+    "empty": "空",
+    "locked": "已锁定",
+    "lock": "锁定",
+    "unlock": "解锁",
+    "lockDay": "锁定{day}",
+    "unlockDay": "解锁{day}"
+  },
+  "cards": {
+    "svsDays": "准备日第 1 到 5 天",
+    "days": "天数",
+    "stages": "阶段",
+    "rankHint": "排名是你的 State 排名。联盟是你的联盟排名。",
+    "battleTitle": "Battle Phase",
+    "battleNote": "战斗得分和排名是单独的结果，不计入第 1 到 5 天。"
+  },
+  "overall": {
+    "svsTitle": "总结果，第 1 到 5 天",
+    "title": "总结果",
+    "rank": "总排名",
+    "alliance": "联盟总排名",
+    "svsTotal": "已锁定的第 1 到 5 天合计",
+    "daysTotal": "已锁定天数合计",
+    "stagesTotal": "已锁定阶段合计",
+    "hint": "锁定可以防止数字在你继续游戏时被改动。已锁定的数字可以解锁。"
+  },
+  "footer": {
+    "close": "关闭",
+    "endEvent": "结束活动",
+    "readOnly": "历史为只读"
+  },
+  "end": {
+    "title": "结束{event}并保存到历史吗？",
+    "dates": "{event}，{start}至{end}",
+    "noDates": "{event}，未输入日期",
+    "lockedTotal": "已锁定天数合计：{total}。",
+    "lockedTotalSvs": "已锁定的第 1 到 5 天合计：{total}。",
+    "noRanks": "总排名和联盟排名为空。",
+    "allLocked": "每一天都已锁定。",
+    "unlocked": "{count, plural, other {有{amount}天未锁定。}}它们按已输入的内容保存，没有数字的天数保持为空。",
+    "unlockedList": "未锁定：{days}。",
+    "what": "会发生什么",
+    "saves": "把日期、每日得分和排名以及总结果保存到历史，并附上每天的计划合计。",
+    "clearsCounts": "清空每一天的数量，让计划的每一天都从 0 开始。",
+    "clearsPlans": "清空导出到此活动的计划和清单勾选。",
+    "keeps": "只清空这个活动。其他页面上的目标和计划会保留。",
+    "cancel": "取消",
+    "confirm": "结束活动并重新开始",
+    "toastTitle": "活动已结束",
+    "toastMessage": "{event}已保存到历史。活动重新开始，没有日期。",
+    "undo": "撤销",
+    "lockedTotalStages": "已锁定阶段合计：{total}。"
+  },
+  "history": {
+    "intro": "你已结束的{event}活动，最新在前。结束活动会把记录保存在这里，之后不能编辑，只能删除。<link>打开历史，查看计划与实际对比以及计划的升级。</link>",
+    "empty": "还没有已结束的活动。结束一个活动即可把记录保存到这里。",
+    "cardTitle": "{event}，{start}至{end}",
+    "cardNoDates": "{event}，无日期",
+    "ended": "结束于{date}",
+    "svsTotal": "第 1 到 5 天",
+    "total": "总得分",
+    "overallRank": "总排名",
+    "allianceRank": "联盟排名",
+    "notSet": "未设置",
+    "showDays": "显示每天",
+    "hideDays": "隐藏每天",
+    "remove": "从历史中移除",
+    "removedTitle": "已从历史中移除",
+    "removedMessage": "{event}已从历史中移除。",
+    "undo": "撤销",
+    "noValue": "-"
+  },
+  "checklist": {
+    "title": "计划清单",
+    "description": "{day}，要做的事",
+    "dayChips": "天",
+    "castleTitle": "报名{day}的 Castle 席位",
+    "castleBody": "Castle 席位为次日提供加成。请在今天结束前报名，这样{day}就能享受加成。",
+    "castleCheck": "已报名{day}",
+    "done": "已完成{done} / {total}",
+    "progress": "已勾选的行动",
+    "planLine": "当日计划：{points}分。只列出数量大于 0 的行动。数量来自核心活动页面。",
+    "empty": "这一天没有任何行动设有数量。请在核心活动页面添加数量。",
+    "resources": "要使用的资源",
+    "resourcesHint": "当天会消耗的物品。开始前请检查你的库存。",
+    "actions": "行动",
+    "count": "x{count}",
+    "points": "{points}分",
+    "clear": "清除勾选",
+    "close": "关闭",
+    "dayTitle": "{day}：{name}"
+  },
+  "eventShort": {
+    "svs": "SvS",
+    "showdown": "Alliance Showdown",
+    "king": "King of Icefield",
+    "hall": "Hall of Chief"
+  }
+}

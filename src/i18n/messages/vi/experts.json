@@ -1,0 +1,239 @@
+{
+    "page": {
+        "title": "Chuyên gia"
+    },
+    "view": {
+        "subline": "{chief} · chuyên gia Dawn Academy, {total} trong game",
+        "ghost": "Chuyên gia"
+    },
+    "common": {
+        "plan": "Kế hoạch",
+        "generation": "Thế hệ {generation}",
+        "unknown": "Không rõ",
+        "and": "{first} và {last}",
+        "expertCount": "{count, plural, other {{amount} chuyên gia}}"
+    },
+    "stats": {
+        "recruited": "Chuyên gia đã chiêu mộ",
+        "recruitedValue": "{count} trên {total}",
+        "powerNow": "Sức mạnh chuyên gia hiện tại, chỉ tính đã chiêu mộ",
+        "powerAtMax": "Sức mạnh ở mức tối đa, cả {total}",
+        "highest": "Độ thân thiết cao nhất",
+        "highestValue": "{name} ở {affinity}",
+        "highestNone": "Chưa chiêu mộ ai"
+    },
+    "toolbar": {
+        "searchLabel": "Tìm chuyên gia",
+        "searchPlaceholder": "Tìm chuyên gia",
+        "filters": "Bộ lọc",
+        "emptyTitle": "Không có chuyên gia phù hợp",
+        "emptyDescription": "Đổi từ khóa hoặc bộ lọc để xem thêm chuyên gia.",
+        "reset": "Đặt lại bộ lọc",
+        "status": "Hiển thị {shown} trên {total}. Mục tiêu ở đây chỉ để xem và được đặt trong Kế hoạch. Ở cấp chia hết cho 10, chỉ số của cấp trước được tính cho đến khi chuyên gia thăng tiến. Mọi thay đổi được lưu ngay.",
+        "lockedNote": "{count} đã khóa cho đến một ngày máy chủ sau này."
+    },
+    "toast": {
+        "notRecruitedTitle": "{name} chưa được chiêu mộ",
+        "notRecruitedMessage": "Các cấp vẫn được lưu và sẽ bật lại khi bạn bật Đã chiêu mộ.",
+        "undo": "Hoàn tác"
+    },
+    "card": {
+        "recruited": "Đã chiêu mộ",
+        "recruitedLabel": "{expert} đã chiêu mộ",
+        "summary": "{title} · {specialty} · {generation}",
+        "affinityLevel": "Cấp thân thiết",
+        "affinityLabel": "Cấp thân thiết của {expert}",
+        "affinityDisplay": "{level} / {max}",
+        "affinityProgress": "Tiến độ thân thiết của {expert}",
+        "goal": "Mục tiêu {goal}",
+        "advanced": "Đã thăng tiến",
+        "notAdvanced": "Chưa thăng tiến",
+        "advancedLabel": "{expert} đã thăng tiến ở cấp {level}",
+        "relationship": "Cấp quan hệ",
+        "affinityAvailable": "Điểm thân thiết đang có",
+        "affinityAvailableLabel": "Điểm thân thiết {expert} đang giữ",
+        "affinityOf": "trên {need} cho cấp {level}",
+        "bonusTitle": "Chỉ số cơ bản hiện tại",
+        "bonusNow": "{amount}% {stats}",
+        "bonusOwnLevel": "Cấp {level} không chia hết cho 10, nên chỉ số của chính nó được tính.",
+        "bonusAdvanced": "Cấp {level} đã thăng tiến, nên chỉ số của chính nó được tính.",
+        "bonusNotAdvanced": "Cấp {level} chưa thăng tiến, nên chỉ số của cấp {counted} được tính.",
+        "bonusAtMax": "Ở cấp 100: {amount}%.",
+        "feeds": "Tăng cho",
+        "bonuses": "Chỉ số cộng thêm",
+        "nextAdvancement": "Thăng tiến kế tiếp: cấp {level}, {sigils} sigil",
+        "allAdvanced": "Đã xong mọi lần thăng tiến.",
+        "skills": "Kỹ năng",
+        "skillLabel": "Cấp {skill} của {expert}",
+        "skillDisplay": "{level} / {max}",
+        "expAvailable": "EXP đang có",
+        "expAvailableLabel": "EXP {skill} của {expert} đang giữ",
+        "expOf": "trên {need} cho cấp {level}",
+        "maxLevel": "Cấp tối đa, không cần EXP",
+        "talent": "Thiên phú: {name}",
+        "talentLevel": "Cấp {level} trên {max}",
+        "talentFollows": "Theo {relationship}. {effect}.",
+        "power": "Sức mạnh {now} trên {max}",
+        "derived": "Suy ra",
+        "notRecruitedHint": "Chưa chiêu mộ. Hãy chiêu mộ chuyên gia này trong Tundra Trek, rồi bật Đã chiêu mộ.",
+        "recruitmentCost": "Chi phí chiêu mộ: {cost}",
+        "maxPower": "Sức mạnh tối đa {max}",
+        "buffs": "Buff {stats}",
+        "expEnough": "Đủ cho cấp {level}",
+        "affinityEnough": "Đủ cho cấp {level}",
+        "skillLocked": "Chưa mở. Nâng lên cấp 1 để mở.",
+        "sigilsOwned": "Sigil đang có",
+        "sigilsOwnedLabel": "Sigil của {expert} đang có",
+        "sigilsHint": "Cùng số lượng với sigil ở trang Tài nguyên."
+    },
+    "filtersFlyout": {
+        "title": "Bộ lọc",
+        "description": "Thu hẹp danh sách chuyên gia và chọn thứ tự.",
+        "generation": "Thế hệ",
+        "all": "Tất cả",
+        "show": "Hiển thị",
+        "order": "Thứ tự",
+        "reset": "Đặt lại",
+        "showButton": "Hiện {experts}",
+        "notSaved": "Bộ lọc không được lưu.",
+        "showOptions": {
+            "everything": "Tất cả",
+            "recruited": "Chỉ đã chiêu mộ",
+            "notRecruited": "Chỉ chưa chiêu mộ"
+        },
+        "orderOptions": {
+            "generation": "Thế hệ",
+            "affinity": "Cấp thân thiết",
+            "power": "Sức mạnh",
+            "name": "Tên"
+        }
+    },
+    "plan": {
+        "title": "Lập kế hoạch chuyên gia",
+        "description": "Books of Knowledge, sigil, EXP kỹ năng và điểm thân thiết cho mục tiêu thân thiết và kỹ năng.",
+        "saved": "Đã lưu kế hoạch {date}",
+        "close": "Đóng",
+        "save": "Lưu kế hoạch",
+        "exportButton": "Xuất sang Sự kiện chính",
+        "exportNothing": "Kế hoạch không cần sách hay sigil để xuất.",
+        "export": {
+            "books": "Books of Knowledge",
+            "sigils": "Sigil chuyên gia",
+            "exp": "EXP kỹ năng",
+            "expReason": "Không sự kiện nào tính điểm cho EXP kỹ năng."
+        },
+        "noExperts": "Kế hoạch chưa có chuyên gia nào. Hãy thêm một chuyên gia đã chiêu mộ để đặt mục tiêu.",
+        "add": {
+            "title": "Thêm chuyên gia",
+            "selectLabel": "Chuyên gia cần thêm",
+            "button": "Thêm chuyên gia",
+            "allIn": "Mọi chuyên gia đã chiêu mộ đều có trong kế hoạch.",
+            "noneRecruited": "Hãy chiêu mộ một chuyên gia trên trang để lập kế hoạch cho họ."
+        },
+        "block": {
+            "remove": "Xóa",
+            "removeLabel": "Xóa {expert} khỏi kế hoạch",
+            "part": "Phần",
+            "current": "Hiện tại",
+            "goalHeading": "Mục tiêu",
+            "affinity": "Cấp thân thiết",
+            "affinityHeld": "Điểm thân thiết đang có {amount}",
+            "expHeld": "EXP đang có {amount}",
+            "currentLevel": "Cấp {level}",
+            "currentAffinity": "{level}, đã thăng tiến",
+            "currentAffinityPlain": "{level}",
+            "affinityGoalLabel": "Mục tiêu thân thiết của {expert}",
+            "skillGoalLabel": "Mục tiêu {skill} của {expert}",
+            "advanceAtGoal": "Thăng tiến ở cấp {level}",
+            "advanceAtGoalLabel": "{expert} thăng tiến ở mục tiêu"
+        },
+        "checks": {
+            "affinity": "Điểm thân thiết",
+            "learning": "EXP kỹ năng bằng vật phẩm tăng tốc học",
+            "minutesUnit": "phút"
+        },
+        "stock": {
+            "sigils": "Kế hoạch cần {total} sigil. Sigil chuyên gia của bạn đủ cho {own}, nên {common} phải lấy từ Common Expert Sigils. Mỗi sigil chuyên gia bạn có chỉ tính cho chuyên gia đó.",
+            "books": "Kế hoạch cần {amount} Books of Knowledge cho các cấp kỹ năng.",
+            "affinity": "Kế hoạch cần {needed} điểm thân thiết. Số bạn đang giữ trên thẻ chuyên gia đủ cho {held}, nên còn {left} cần kiếm thêm. Gói dữ liệu không có vật phẩm thân thiết, nên không kiểm tra theo kho.",
+            "learning": "Kế hoạch cần {exp} EXP kỹ năng. Kỹ năng của bạn đang có {held}, nên {left} phải lấy từ vật phẩm tăng tốc học. Một phút học cho {rate} EXP, tức là {minutes} phút."
+        },
+        "byExpert": {
+            "title": "Theo chuyên gia",
+            "sigils": "Sigil: cần {needed}, {own} đã có từ sigil {name} của bạn, {common} lấy từ Common Expert Sigils",
+            "affinity": "Thân thiết: cần {needed}, đang có {held}, còn {left} cần kiếm thêm",
+            "exp": "EXP kỹ năng: cần {needed}, đang có {held}, còn {left} cần kiếm thêm"
+        },
+        "result": {
+            "title": "Kết quả",
+            "derived": "Suy ra",
+            "books": "Books of Knowledge",
+            "sigils": "Sigil",
+            "exp": "EXP kỹ năng",
+            "affinity": "Điểm thân thiết",
+            "advancements": "Lần thăng tiến",
+            "skillLevels": "Cấp kỹ năng",
+            "affinityLevels": "Cấp thân thiết",
+            "heads": {
+                "expert": "Chuyên gia",
+                "books": "Sách",
+                "sigils": "Sigil",
+                "exp": "EXP",
+                "levels": "Cấp",
+                "advancements": "Thăng",
+                "affinity": "Thân thiết"
+            },
+            "empty": "Thêm một chuyên gia và nâng mục tiêu để xem kết quả.",
+            "tableLabel": "Bảng kết quả kế hoạch"
+        }
+    },
+    "learning": {
+        "title": "Học",
+        "note": "Mỗi lần chỉ học một kỹ năng. Hoàn tất sẽ cộng EXP cho kỹ năng đó.",
+        "idle": "Chưa học gì. Hãy bắt đầu một buổi để cộng EXP cho một kỹ năng.",
+        "startButton": "Bắt đầu học",
+        "slotLabel": "Học, mỗi lần một buổi",
+        "jobTitle": "{expert}, {skill}, {session}",
+        "manageFinishText": "Hoàn tất nâng cấp sẽ cộng EXP của buổi học cho kỹ năng, giải phóng hàng chờ học và thêm buổi học vào Lịch sử. Khi hết thời gian, thẻ ghi Sẵn sàng hoàn tất. Không có gì tự hoàn tất, vì bạn có thể đã dùng vật phẩm tăng tốc.",
+        "flyout": {
+            "title": "Bắt đầu học",
+            "description": "Đánh dấu một buổi học đang chạy cho kỹ năng của một chuyên gia",
+            "expert": "Chuyên gia",
+            "skill": "Kỹ năng",
+            "skillOption": "{name}, cấp {level} trên {max}",
+            "session": "Buổi học",
+            "sessionOption": "{label}, {exp} EXP",
+            "sessionHint": "Một buổi học nhận 60 EXP mỗi phút. Các buổi học là những buổi có trong game.",
+            "expEarned": "EXP nhận được",
+            "heldAfter": "EXP đang có sau đó",
+            "tooMuch": "Kỹ năng chỉ nhận thêm được {room} EXP, phần còn lại bị mất.",
+            "whenStarted": "Bắt đầu khi nào?",
+            "modes": {
+                "now": "Bắt đầu bây giờ",
+                "already": "Đã bắt đầu"
+            },
+            "timeLeftHours": "Thời gian còn lại, giờ",
+            "ends": "Kết thúc",
+            "startedHint": "Dùng Đã bắt đầu khi buổi học đang chạy trong game. Nhập thời gian nó hiển thị.",
+            "nothingToLearn": "Hiện không có kỹ năng nào học được. Hãy chiêu mộ một chuyên gia và mở một kỹ năng chưa ở cấp cao nhất.",
+            "busy": "Một buổi học đang chạy. Hãy hoàn tất hoặc hủy nó trong Quản lý trước.",
+            "cancel": "Hủy",
+            "start": "Bắt đầu học"
+        },
+        "toasts": {
+            "started": {
+                "title": "Đã bắt đầu học",
+                "message": "{what}."
+            },
+            "finished": {
+                "title": "Đã học xong {what}",
+                "message": "EXP đã được cộng vào kỹ năng và Lịch sử."
+            },
+            "cancelled": {
+                "title": "Đã hủy {what}",
+                "message": "Kỹ năng giữ nguyên số EXP vốn có."
+            },
+            "undo": "Hoàn tác"
+        }
+    }
+}

@@ -1,0 +1,85 @@
+{
+    "nav": {
+        "main": "主選單",
+        "groups": {
+            "chief": "領主",
+            "alliance": "聯盟",
+            "account": "帳號",
+            "planner": "規劃",
+            "wiki": "百科"
+        },
+        "items": {
+            "overview": "總覽",
+            "buildings": "建築",
+            "daybreakIsland": "破曉島",
+            "heroes": "英雄",
+            "chiefGear": "領主裝備",
+            "experts": "專家",
+            "pets": "寵物",
+            "troops": "部隊",
+            "research": "研究",
+            "alliance": "聯盟",
+            "facilities": "設施",
+            "tech": "科技",
+            "resources": "資源",
+            "bonuses": "加成",
+            "vip": "VIP",
+            "skins": "外觀",
+            "events": "活動",
+            "tundraAlbum": "凍原圖鑑",
+            "coreEvents": "核心活動",
+            "dailies": "每日任務",
+            "history": "紀錄",
+            "wikiReference": "參考資料",
+            "wikiTimeline": "時間軸",
+            "settings": "設定",
+            "chiefs": "領主"
+        },
+        "upgradesRunning": "，{amount} {count, plural, other {項升級}}進行中"
+    },
+    "appShell": {
+        "skipToContent": "跳到內容",
+        "closeMenu": "關閉選單"
+    },
+    "appBar": {
+        "openMenu": "開啟選單"
+    },
+    "chiefGate": {
+        "emptyTitle": "尚未選擇領主",
+        "emptyDescription": "建立領主即可開始追蹤。所有資料都只存在這個瀏覽器中。",
+        "newChief": "新增領主"
+    },
+    "chiefSwitcher": {
+        "chiefs": "領主",
+        "active": "使用中",
+        "allChiefs": "所有領主",
+        "newChief": "新增領主",
+        "loading": "載入中",
+        "noChiefYet": "尚無領主",
+        "sectionLabel": "領主",
+        "switchChief": "切換領主"
+    },
+    "footer": {
+        "tagline": "在同一處追蹤你的 Whiteout Survival 領主、建築、英雄和研究。",
+        "product": "追蹤器",
+        "support": "支援",
+        "wikiReference": "百科參考資料",
+        "wikiTimeline": "百科時間軸",
+        "backupAndData": "備份與資料",
+        "aboutApp": "關於",
+        "disclaimerTitle": "免責聲明",
+        "disclaimer": "本應用程式與 Whiteout Survival 或 Century Games 無任何關聯，也未獲其認可或授權。所有商標與遊戲內容均屬其各自所有人。",
+        "copyright": "© {year} {appName}",
+        "framework": "以 Gamerdex 框架打造，這是免費遊戲進度追蹤器共用的基礎。你的資料只存在你的瀏覽器中。"
+    },
+    "notFound": {
+        "title": "找不到這個頁面",
+        "description": "連結可能已過期或輸入有誤。你的領主資料很安全，沒有任何變動。",
+        "didYouMean": "你是想前往<link>{name}</link>嗎？",
+        "goToOverview": "前往總覽",
+        "jumpTo": "或直接前往"
+    },
+    "pageHeader": {
+        "wiki": "百科"
+    }
+}

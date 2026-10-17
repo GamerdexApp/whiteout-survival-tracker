@@ -1,0 +1,176 @@
+{
+  "none": "Tidak ada",
+  "charmLabel": "Jimat {number}",
+  "view": {
+    "title": "Perlengkapan Chief",
+    "tabsLabel": "Perlengkapan Chief",
+    "gearSubline": "{name} · enam slot, 150 baris upgrade",
+    "charmsSubline": "{name} · 6 bagian perlengkapan, 3 jimat tiap bagian, 75 baris upgrade",
+    "tabs": {
+      "gear": "Perlengkapan Chief",
+      "charms": "Jimat Chief"
+    }
+  },
+  "shared": {
+    "plan": "Rencana",
+    "autoSaveHint": "Setiap perubahan langsung tersimpan. Tombol tambah-kurang bergerak satu baris sesuai urutan paket data.",
+    "scoreToGain": "Skor yang masih harus didapat",
+    "notes": "Catatan",
+    "package": "Paket data"
+  },
+  "gear": {
+    "scoreNow": "Skor perlengkapan saat ini, enam slot",
+    "powerNow": "Kekuatan perlengkapan saat ini",
+    "stepsToGoals": "Langkah ke semua target",
+    "goalsHint": "Target hanya bisa dibaca di sini. Atur di Rencana lalu tekan Simpan rencana.",
+    "stepWord": "langkah",
+    "tiers": {
+      "title": "Tier",
+      "description": "Paket data memberi label 150 baris dengan {count} tier. Tier yang disorot memuat setidaknya satu bagianmu.",
+      "rows": "{rows} baris",
+      "names": {
+        "EpicT1": "Epic T1",
+        "MythicT1": "Mythic T1",
+        "MythicT2": "Mythic T2",
+        "LegendaryT1": "Legendary T1",
+        "LegendaryT2": "Legendary T2",
+        "LegendaryT3": "Legendary T3",
+        "LegendaryT4": "Legendary T4",
+        "LegendaryT5": "Legendary T5",
+        "LegendaryT6": "Legendary T6"
+      }
+    },
+    "notes": {
+      "setBonus": {
+        "title": "Aturan bonus set",
+        "body": "3 bagian dengan tier sama memberi Pertahanan dan 6 bagian memberi Serangan, untuk ketiga jenis pasukan. Bagian tanpa level tidak dihitung. Tiap tier punya satu nilai."
+      },
+      "troopType": {
+        "title": "Jenis pasukan diisi manual",
+        "body": "Cap dan Watch memberi buff Lancer, Coat dan Pants memberi buff Infantry, Ring dan Weapon memberi buff Marksman. Penulis paket data mengetiknya dari teks wiki."
+      },
+      "capacity": {
+        "title": "Kapasitas 0 di baris awal",
+        "body": "26 baris pertama tidak punya kapasitas kerahan di paket data, jadi tampil 0 sampai data punya nilainya."
+      }
+    }
+  },
+  "charms": {
+    "scoreNow": "Skor jimat saat ini, 18 jimat",
+    "powerNow": "Kekuatan jimat saat ini",
+    "stagesToGoals": "Tahap ke semua target",
+    "goalsHint": "Target hanya bisa dibaca di sini dan diatur di Rencana.",
+    "stepWord": "tahap",
+    "slotMeta": "{troop} · 3 jimat",
+    "slotStages": ", {stages} tahap ke target",
+    "notes": {
+      "secrets": {
+        "title": "Charm Secrets mulai di level 11",
+        "body": "Mulai Level 11 Tahap 1, sebuah tahap butuh Charm Secrets. Tahap sebelumnya hanya mencantumkan Charm Guide dan Charm Design."
+      },
+      "look": {
+        "title": "Jimat berubah tampilan di setiap level",
+        "body": "Tiap jimat punya 18 ikon, satu per level. Setiap bagian perlengkapan membawa tiga jimat, dan mengikuti jenis pasukan bagian itu."
+      },
+      "estimate": {
+        "title": "Skor tahap adalah perkiraan",
+        "body": "Skor level dibagi rata ke tahap-tahap yang mengarah ke level itu. Game tidak mengonfirmasi pembagiannya."
+      }
+    }
+  },
+  "badge": {
+    "tier": "Tier {tier}",
+    "stars": "{count, plural, other {{amount} bintang}}",
+    "tierAndStars": "{tier}, {stars}"
+  },
+  "row": {
+    "level": "Level {title}",
+    "progressLabel": "Progres {title} dalam {total} baris",
+    "progress": "{progress} dari {total}",
+    "stepsToGoal": " · {steps} ke target",
+    "goal": "Target {name}",
+    "noGoal": "Tanpa target",
+    "stats": "Statistik {stat} · Kekuatan {power}",
+    "statPercent": "{percent}%",
+    "capacity": " · Kapasitas {capacity}",
+    "lockedCurrent": "Level tersimpan {name} terkunci oleh usia server dan tidak dihitung. {requirement}.",
+    "lockedGoal": "Target tersimpan {name} terkunci oleh usia server dan tidak direncanakan. {requirement}."
+  },
+  "summary": {
+    "title": "Sisa sampai semua target",
+    "derived": "Turunan",
+    "score": "skor",
+    "powerGain": "tambahan kekuatan",
+    "noGoals": "Belum ada target. Atur target di Rencana.",
+    "openPlan": "Buka Rencana untuk poin event dan rinciannya"
+  },
+  "setBonus": {
+    "title": "Bonus set terbuka",
+    "pieceSet": "Set {pieces} bagian",
+    "active": "Aktif",
+    "notActive": "Tidak aktif",
+    "value": "{stat} +{percent}%",
+    "appliesTo": "Bagian {tierName}, untuk Infantry, Lancer, dan Marksman",
+    "needs": "Butuh {pieces} bagian dengan tier sama. {stat} +0% untuk sementara."
+  },
+  "plan": {
+    "gear": {
+      "title": "Rencanakan Perlengkapan Chief",
+      "description": "Bahan, skor, dan kekuatan dari level saat ini sampai target",
+      "stepWord": "Langkah",
+      "conversionNote": "Pengecekan tidak menghitung konversi. Konverter punya tujuh kurs tukar, masing-masing dengan batas mingguan, misalnya 10 Design Plans menjadi 1 Lunar Amber sampai 500 per minggu."
+    },
+    "charm": {
+      "title": "Rencanakan Jimat Chief",
+      "description": "Bahan, skor, dan kekuatan dari level saat ini sampai target",
+      "stepWord": "Tahap",
+      "conversionNote": "Pengecekan tidak menghitung konversi: 2 Charm Guide menjadi 1 Charm Design dan sebaliknya, dan 40 dari salah satunya menjadi 1 Charm Secrets."
+    },
+    "saved": "Rencana disimpan {date}",
+    "close": "Tutup",
+    "save": "Simpan rencana",
+    "export": {
+      "button": "Ekspor ke Core Events",
+      "nothingToExport": "Atur target di atas level saat ini untuk mengekspor rencana.",
+      "gearScore": "Skor Perlengkapan Chief",
+      "charmScore": "Skor Jimat Chief",
+      "power": "Kekuatan didapat",
+      "powerReason": "Tidak ada baris Core Events yang menskor kekuatan Perlengkapan Chief atau Jimat Chief."
+    },
+    "inputs": "Input",
+    "slotTroop": "{slot}, {troop}",
+    "from": "Dari {level}",
+    "goalLabel": "Target {label}",
+    "slotGoalLabel": "Target {label} {slot}",
+    "inputsHint": "Level saat ini adalah yang ada di halaman. Ubah di sana. Target hanya bisa dibaca di halaman dan diatur di sini.",
+    "result": "Hasil",
+    "score": "Skor",
+    "powerGain": "Tambahan kekuatan",
+    "events": {
+      "svs": "SvS State of Power",
+      "allianceShowdown": "Alliance Showdown",
+      "kingOfIcefield": "King of Icefield",
+      "hallOfChief": "Hall of Chief"
+    },
+    "bySlot": "Menurut slot",
+    "byCharm": "Menurut jimat",
+    "columnSlot": "Slot",
+    "columnCharm": "Jimat",
+    "slotCharm": "{slot} {charm}",
+    "converter": {
+      "title": "Konverter bahan",
+      "spend": "Bayar",
+      "get": "Dapat",
+      "limit": "Batas",
+      "amount": "{quantity} {name}",
+      "perWeek": "{limit} per minggu",
+      "noLimit": "Tanpa batas mingguan"
+    },
+    "lockedCurrent": "Level tersimpan {name} terkunci oleh usia server. {requirement}."
+  },
+  "lock": {
+    "title": "Terkunci oleh usia server",
+    "stop": "{name} (terkunci, hari {day})",
+    "group": "Dari {name}: {requirement}."
+  }
+}

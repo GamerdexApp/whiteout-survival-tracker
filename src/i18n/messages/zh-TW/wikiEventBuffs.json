@@ -1,0 +1,67 @@
+{
+    "line": "{modes} 種遊戲模式中，各有哪些增益來源適用：{sources} 種增益類型的是、否或部分。",
+    "matrix": {
+        "title": "增益對照表",
+        "meta": "{modes} 種模式，{sources} 種增益類型",
+        "table": "各遊戲模式的增益來源",
+        "mode": "遊戲模式"
+    },
+    "sources": {
+        "cityBonusWarsBuffs": {
+            "short": "城市加成",
+            "full": "城市加成與戰爭增益"
+        },
+        "deploymentCapacity": {
+            "short": "出兵容量",
+            "full": "出兵容量"
+        },
+        "petSkills": {
+            "short": "寵物技能",
+            "full": "寵物技能"
+        },
+        "daybreakIsland": {
+            "short": "破曉島",
+            "full": "破曉島"
+        },
+        "presidentSkills": {
+            "short": "總統",
+            "full": "總統技能"
+        },
+        "ministerBuff": {
+            "short": "部長",
+            "full": "部長增益"
+        },
+        "territoryBonuses": {
+            "short": "領地",
+            "full": "領地加成"
+        },
+        "facilityBuff": {
+            "short": "設施",
+            "full": "設施增益"
+        },
+        "marchAccelerator": {
+            "short": "行軍加速",
+            "full": "行軍加速器"
+        },
+        "frostdragonTyrantTitles": {
+            "short": "暴君稱號",
+            "full": "Frostdragon Tyrant 稱號"
+        },
+        "frostSphereDomainBonus": {
+            "short": "Frost Sphere",
+            "full": "Frost Sphere 領域加成"
+        }
+    },
+    "applicability": {
+        "yes": "是",
+        "no": "否",
+        "partial": "部分"
+    },
+    "notes": {
+        "title": "各遊戲模式備註",
+        "table": "各遊戲模式備註",
+        "petSkillsAutoApplied": "寵物技能自動套用",
+        "note": "備註",
+        "noNote": "無"
+    }
+}

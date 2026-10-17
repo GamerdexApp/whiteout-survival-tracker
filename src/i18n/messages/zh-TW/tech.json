@@ -1,0 +1,98 @@
+{
+    "page": {
+        "title": "科技"
+    },
+    "view": {
+        "subline": "{chief} · 成長、領地和戰鬥共 {count} 個聯盟科技節點"
+    },
+    "summary": {
+        "maxed": "已滿級",
+        "inProgress": "進行中",
+        "notStarted": "未開始",
+        "locked": "已鎖定"
+    },
+    "status": {
+        "maxed": "已滿級",
+        "inProgress": "進行中",
+        "notStarted": "未開始",
+        "locked": "已鎖定"
+    },
+    "tabs": {
+        "label": "科技分類"
+    },
+    "categories": {
+        "Growth": "成長",
+        "Territory": "領地",
+        "Battle": "戰鬥"
+    },
+    "filters": {
+        "search": "搜尋",
+        "searchLabel": "搜尋科技節點",
+        "searchPlaceholder": "節點名稱",
+        "tier": "階級",
+        "allTiers": "所有階級",
+        "tierOption": "第 {tier} 階",
+        "status": "狀態",
+        "allStatuses": "全部",
+        "button": "搜尋與篩選",
+        "title": "搜尋與篩選",
+        "description": "依名稱、階級和狀態尋找科技節點",
+        "reset": "重設篩選",
+        "done": "顯示 {count}",
+        "shown": "顯示 {shown} / {total} 個節點"
+    },
+    "table": {
+        "node": "節點",
+        "level": "等級",
+        "bonus": "加成",
+        "cost": "下一級花費",
+        "time": "時間",
+        "needs": "條件"
+    },
+    "node": {
+        "tierDescription": "第 {tier} 階 · {description}",
+        "levelLabel": "{name}等級",
+        "levelOf": "{level} / {max}",
+        "open": "開啟{name}",
+        "bonusOf": "{now} / {max}",
+        "bonusNone": "尚無，最高 {max}",
+        "noBonus": "沒有加成",
+        "maxed": "已滿級",
+        "noTime": "沒有時間",
+        "readyToUpgrade": "可升級",
+        "nothingNeeded": "沒有條件",
+        "needsPart": "需要 {name} {level} 級",
+        "costLine": "{name} {amount}",
+        "lockedHint": "在{names}之前鎖定",
+        "requirementPart": "{name} {level} 級"
+    },
+    "flyout": {
+        "title": "{name}",
+        "subtitle": "{category}，第 {tier} 階。{description}",
+        "close": "關閉",
+        "level": "等級",
+        "bonusNow": "目前加成",
+        "needsFor": "升到 {level} 級的條件",
+        "needsNothing": "沒有條件。",
+        "needsLine": "需要 {need} 級，你是 {have} 級",
+        "met": "已達成",
+        "notMet": "未達成",
+        "requiredBy": "被以下節點需要",
+        "requiredByNone": "沒有其他節點需要這個節點。",
+        "requiredByLine": "{category}，第 {tier} 階，從 {from} 級起需要 {name} {need} 級",
+        "allLevels": "所有等級",
+        "levelRow": "{level} 級",
+        "done": "已完成",
+        "next": "下一個",
+        "later": "之後",
+        "remaining": "距離滿級還需要",
+        "derived": "推算值",
+        "remainingNone": "沒有剩餘的了。這個節點已滿級。",
+        "remainingLine": "{cost}",
+        "remainingTime": "{time}"
+    },
+    "empty": {
+        "title": "沒有符合的節點",
+        "description": "請更改搜尋或篩選以查看更多節點。"
+    }
+}

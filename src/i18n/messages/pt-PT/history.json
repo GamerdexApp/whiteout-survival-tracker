@@ -1,0 +1,102 @@
+{
+  "page": { "title": "Histórico" },
+  "events": {
+    "svs": "SvS",
+    "showdown": "Alliance Showdown",
+    "king": "King of Icefield",
+    "hall": "Hall of Chief"
+  },
+  "title": {
+    "dated": "{event}, {start} a {end}",
+    "undated": "{event}"
+  },
+  "ended": "Terminado em {date}",
+  "tabs": { "label": "Filtrar por evento", "all": "Todos os eventos" },
+  "list": {
+    "intro": "Eventos terminados no Registo de eventos, os mais recentes primeiro. As pontuações são dos Dias 1 a 5 no SvS, e a Fase de batalha fica à parte. Abrir um evento para ver o plano contra o real e as melhorias planeadas.",
+    "event": "Evento",
+    "plan": "Plano",
+    "actual": "Real",
+    "diff": "Dif.",
+    "rank": "Posição",
+    "alliance": "Aliança",
+    "rankLine": "Posição {rank}, aliança {alliance}",
+    "open": "Abrir",
+    "openEvent": "Abrir {name}",
+    "none": "Ainda sem eventos terminados deste tipo.",
+    "diffWithPercent": "{amount} ({percent}%)"
+  },
+  "empty": {
+    "title": "Ainda sem eventos",
+    "description": "Os eventos terminados no Registo de eventos, em Eventos principais, ficam guardados aqui com o plano e os resultados.",
+    "action": "Abrir Eventos principais"
+  },
+  "notFound": {
+    "title": "Evento não encontrado",
+    "description": "Este evento não está no histórico do chefe ativo. Pode ter sido removido, ou o evento está oculto em Eventos principais.",
+    "action": "Voltar ao Histórico"
+  },
+  "unknown": "Não definido",
+  "belowPlan": "Abaixo do plano",
+  "atOrAbovePlan": "No plano ou acima",
+  "breadcrumb": { "label": "Caminho de navegação" },
+  "tiles": {
+    "plan": "Plano",
+    "actual": "Real",
+    "difference": "Diferença",
+    "overall": "Geral",
+    "alliance": "Aliança",
+    "days": "Dias 1 a 5",
+    "rank": "Posição",
+    "rankDays": "Posição, Dias 1 a 5",
+    "percent": "{percent}%"
+  },
+  "compare": {
+    "title": "Plano contra real",
+    "titleDays": "Plano contra real, Dias 1 a 5",
+    "day": "Dia",
+    "plan": "Plano",
+    "actual": "Real",
+    "diff": "Dif.",
+    "rank": "Posição",
+    "ally": "Aliança",
+    "total": "Total",
+    "share": "{percent}% do plano",
+    "shareLine": "{percent}% do plano, posição {rank}, aliança {ally}",
+    "barLabel": "{day}, real como proporção do plano"
+  },
+  "battle": {
+    "title": "Fase de batalha",
+    "note": "Pontuação e posição próprias. Não somadas ao total dos Dias 1 a 5."
+  },
+  "upgrades": {
+    "title": "Melhorias planeadas",
+    "titleCount": "Melhorias planeadas, {count}",
+    "summary": "As melhorias no plano deste evento, agrupadas por tipo. {done} de {count} foram feitas.",
+    "summaryUnchecked": "As melhorias no plano deste evento, agrupadas por tipo.",
+    "none": "Nenhum plano foi exportado para este evento, por isso não há melhorias planeadas para mostrar.",
+    "groupTitle": "{name}, {count}",
+    "groupStats": "{done} de {count} feitas, poder +{power}, Fire Crystals {fireCrystals}",
+    "groupStatsUnchecked": "Poder +{power}, Fire Crystals {fireCrystals}",
+    "power": "+{power} de poder",
+    "plannedDay": "Planeado {day}",
+    "done": "Feito",
+    "notDone": "Não feito",
+    "levelsFrom": "{from} a {to}",
+    "levelsTo": "para {to}",
+    "levelsResearchFrom": "Nível {from} a {to}",
+    "levelsResearchTo": "para o nível {to}",
+    "costAmount": "{amount} {name}"
+  },
+  "pages": {
+    "buildings": "Edifícios",
+    "research": "Investigação",
+    "chiefGear": "Equipamento do chefe",
+    "chiefCharms": "Amuletos do chefe",
+    "heroGear": "Equipamento de herói",
+    "heroes": "Heróis",
+    "pets": "Mascotes",
+    "experts": "Especialistas",
+    "troops": "Tropas"
+  }
+}

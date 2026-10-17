@@ -1,0 +1,216 @@
+{
+    "chiefCount": "{count, plural, other {{amount} thủ lĩnh}}",
+    "localStorageNote": {
+        "title": "Bộ nhớ cục bộ.",
+        "body": "Các thủ lĩnh của bạn chỉ được lưu trong trình duyệt này. Chúng sẽ mất nếu bộ nhớ đệm trình duyệt bị xóa. Hãy xuất bản sao lưu thường xuyên."
+    },
+    "page": {
+        "title": "Cài đặt",
+        "subline": "Quản lý dữ liệu, thiết lập thủ lĩnh và giao diện",
+        "tabsLabel": "Cài đặt",
+        "tabs": {
+            "preferences": "Tùy chọn",
+            "data": "Sao lưu và dữ liệu",
+            "about": "Giới thiệu"
+        }
+    },
+    "about": {
+        "version": "Phiên bản {version}",
+        "summary": "Theo dõi tiến trình Whiteout Survival của bạn: công trình, anh hùng, trang bị thủ lĩnh, chuyên gia, thú cưng, quân đội, nghiên cứu, công nghệ liên minh, tài nguyên và công cụ lập kế hoạch. Mọi thứ được lưu trong trình duyệt này.",
+        "wiki": "Wiki Whiteout Survival",
+        "disclaimer": "Không liên kết hay được bảo trợ bởi Century Games. Whiteout Survival là nhãn hiệu của Century Games."
+    },
+    "preferences": {
+        "chiefSettings": {
+            "title": "Thiết lập thủ lĩnh",
+            "description": "Áp dụng cho mọi thủ lĩnh. Lưu ngay.",
+            "footnote": "Đổi một tùy chọn bên trong bộ tính không làm đổi các mặc định này. Hiển thị Furnace chỉ đổi cách viết cấp, không bao giờ đổi chính cấp đó. Thêm hay xóa thủ lĩnh không bao giờ đặt lại các thiết lập này.",
+            "groups": {
+                "furnaceDisplay": "Hiển thị Furnace",
+                "lists": "Danh sách",
+                "calculatorOptions": "Tùy chọn mặc định của bộ tính"
+            },
+            "fullLevelLabels": {
+                "label": "Hiện nhãn cấp đầy đủ",
+                "description": "Hiện cấp phụ của Furnace, ví dụ FC 5-2 thay vì FC 5, ở thanh bên, Tổng quan và Công trình. Các công trình khác đã hiện nhãn đầy đủ."
+            },
+            "hideMaxed": {
+                "label": "Ẩn mục đã tối đa",
+                "description": "Ẩn công trình, anh hùng, thú cưng và chuyên gia đang ở cấp cao nhất. Mỗi danh sách vẫn có bộ lọc Hiện mục đã tối đa, nên không mất gì."
+            },
+            "useBonuses": {
+                "label": "Áp dụng tổng Cộng thêm của tôi",
+                "description": "Bộ tính mới bắt đầu với phần trăm tốc độ xây dựng từ trang Cộng thêm. Bộ tính vẫn có thể đổi giá trị này cho một lần chạy."
+            },
+            "showSpeedups": {
+                "label": "Hiện số phút tăng tốc",
+                "description": "Hiện số phút tăng tốc cần dưới thời gian trong kết quả của mỗi bộ tính."
+            },
+            "showEventPoints": {
+                "label": "Hiện điểm sự kiện",
+                "description": "Thêm dòng điểm sự kiện vào kết quả bộ tính có trả về dòng này."
+            }
+        },
+        "appearance": {
+            "title": "Giao diện",
+            "description": "Chọn giao diện của ứng dụng. Lưu cùng dữ liệu của bạn.",
+            "themeLabel": "Chủ đề",
+            "themeNote": "Hệ thống theo thiết bị của bạn và hiện là {current}. Lựa chọn này nằm trong bản sao lưu của bạn."
+        },
+        "themes": {
+            "light": "Sáng",
+            "dark": "Tối",
+            "system": "Hệ thống"
+        }
+    },
+    "data": {
+        "backupDownloaded": "Đã tải xuống bản sao lưu",
+        "merged": "Đã gộp bản sao lưu",
+        "replaced": "Đã thay bản sao lưu",
+        "undo": "Hoàn tác",
+        "resetDone": "Đã đặt lại toàn bộ dữ liệu",
+        "resetDoneMessage": "Đã xóa {chiefs} và xóa các thiết lập.",
+        "management": {
+            "title": "Quản lý dữ liệu",
+            "description": "Một tệp sao lưu chứa mọi thủ lĩnh và thiết lập của bạn."
+        },
+        "export": {
+            "title": "Xuất dữ liệu",
+            "description": "Tải xuống tệp sao lưu của mọi thủ lĩnh đã lưu. Tên tệp: <file>{fileName}</file>. Ngày là ngày theo giờ địa phương của bạn.",
+            "button": "Xuất mọi thủ lĩnh"
+        },
+        "import": {
+            "title": "Nhập dữ liệu",
+            "description": "Tải lên tệp (.json) đã xuất trước đó. Tệp được kiểm tra trước, rồi bạn chọn Gộp hoặc Thay thế và xem những gì thay đổi. Không có gì thay đổi cho đến khi bạn xác nhận.",
+            "chooseFile": "Chọn tệp",
+            "noFile": "Chưa chọn tệp",
+            "review": "Xem lại bản nhập"
+        },
+        "reset": {
+            "title": "Đặt lại toàn bộ dữ liệu",
+            "warningTitle": "Cảnh báo:",
+            "warning": "Thao tác này sẽ xóa mọi thủ lĩnh và đặt lại thiết lập thủ lĩnh cùng chủ đề. Bạn có thể hoàn tác trong 10 giây, nên hãy xuất bản sao lưu trước nếu muốn giữ một bản.",
+            "button": "Đặt lại toàn bộ dữ liệu"
+        },
+        "chiefs": {
+            "title": "Thủ lĩnh",
+            "description": "Tạo, đổi tên, sửa và xóa thủ lĩnh ở trang riêng của chúng. Xuất, nhập và đặt lại áp dụng cho tất cả.",
+            "manage": "Quản lý thủ lĩnh"
+        }
+    },
+    "importDialog": {
+        "title": "Nhập bản sao lưu",
+        "cancel": "Hủy",
+        "close": "Đóng",
+        "merge": "Gộp",
+        "replace": "Thay thế",
+        "failedTitle": "Nhập thất bại.",
+        "checksTitle": "Kiểm tra tệp.",
+        "checks": "Đã tìm thấy danh sách thủ lĩnh và đọc được {count, plural, other {{amount} mục}}. Chưa có gì được lưu, nên các thủ lĩnh hiện tại của bạn không bị đụng đến.",
+        "howToApply": "Áp dụng tệp theo cách nào?",
+        "modeLabel": "Chế độ nhập",
+        "modes": {
+            "merge": "Gộp (khuyên dùng)",
+            "replace": "Thay thế mọi thứ trên thiết bị này"
+        },
+        "modeNotes": {
+            "merge": "Thêm thủ lĩnh mới và giữ bản mới hơn của thủ lĩnh có ở cả hai nơi. Thủ lĩnh chỉ có trên thiết bị này vẫn được giữ. Thiết lập của bạn được giữ.",
+            "replace": "Xóa mọi thủ lĩnh trên thiết bị này và nạp tệp nguyên trạng, gồm cả thiết lập. Dùng cách này để khôi phục một bản sao chính xác."
+        },
+        "whatChanges": "Những gì thay đổi",
+        "columns": {
+            "chief": "Thủ lĩnh",
+            "inFile": "Trong tệp",
+            "onDevice": "Trên thiết bị này",
+            "result": "Kết quả"
+        },
+        "results": {
+            "added": "Đã thêm",
+            "updated": "Cập nhật từ tệp",
+            "kept": "Giữ bản trên thiết bị này",
+            "replaced": "Nạp từ tệp",
+            "removed": "Đã xóa"
+        },
+        "notThere": "Không có",
+        "noChiefs": "Tệp không có thủ lĩnh nào.",
+        "undoNote": "Có thể hoàn tác trong 10 giây sau khi nhập.",
+        "bytes": "{amount} B",
+        "kilobytes": "{amount} KB",
+        "fileInfo": "{name} · {size}"
+    },
+    "resetDialog": {
+        "title": "Đặt lại toàn bộ dữ liệu",
+        "cancel": "Hủy",
+        "confirm": "Có, đặt lại toàn bộ dữ liệu",
+        "question": "Xóa toàn bộ {chiefs} khỏi trình duyệt này?",
+        "removedTitle": "Những gì bị xóa",
+        "settingsNote": "Lựa chọn Sáng, Tối hoặc Hệ thống của bạn quay về Hệ thống. Thiết lập thủ lĩnh quay về mặc định. Thủ lĩnh đang dùng bị bỏ chọn.",
+        "undoNote": "Có thể hoàn tác trong 10 giây sau khi đặt lại. Hãy xuất bản sao lưu trước nếu bạn muốn một bản tệp còn lại.",
+        "exportFirst": "Xuất sao lưu trước"
+    },
+    "backup": {
+        "notJson": "Tệp không phải JSON hợp lệ. Không có gì bị thay đổi.",
+        "noChiefsList": "Thiếu danh sách thủ lĩnh. Không có gì bị thay đổi.",
+        "duplicateId": "Hai thủ lĩnh dùng chung một id. Không có gì bị thay đổi.",
+        "withNothingChanged": "{reason} Không có gì bị thay đổi.",
+        "chief": {
+            "notObject": "Thủ lĩnh {position} không phải là một đối tượng.",
+            "noId": "Thủ lĩnh {position} không có id.",
+            "noName": "Thủ lĩnh {position} không có tên.",
+            "noDates": "Thủ lĩnh {position} thiếu các ngày.",
+            "badStateNumber": "Thủ lĩnh {position} có số State không phải số nguyên.",
+            "badCoreEvent": "Thủ lĩnh {position} có Sự kiện chính không xác định.",
+            "badUnlock": "Thủ lĩnh {position} có thiết lập mở khóa không phải ngày máy chủ của một mảng đã biết.",
+            "badPack": "Thủ lĩnh {position} có thiết lập gói không phải bật hay tắt."
+        },
+        "settings": {
+            "notObject": "Thiết lập không phải là một đối tượng.",
+            "badTheme": "Chủ đề không phải Sáng, Tối hay Hệ thống.",
+            "notText": "Thiết lập {key} không phải là văn bản.",
+            "uiNotObject": "Thiết lập giao diện không phải là một đối tượng.",
+            "badTimeZone": "Múi giờ không phải múi giờ trình duyệt nhận biết."
+        },
+        "summary": {
+            "added": "{amount} đã thêm",
+            "updated": "{amount} cập nhật từ tệp",
+            "kept": "{amount} giữ như trên thiết bị này",
+            "replaced": "{amount} nạp từ tệp",
+            "removed": "{amount} đã xóa"
+        }
+    },
+    "region": {
+        "title": "Ngôn ngữ và khu vực",
+        "description": "Chọn ngôn ngữ và cách viết số và ngày. Lưu cùng dữ liệu của bạn.",
+        "language": {
+            "label": "Ngôn ngữ",
+            "hint": "Tên anh hùng, vật phẩm, công trình và nghiên cứu lấy từ dữ liệu game và hiện vẫn giữ tiếng Anh."
+        },
+        "numberFormat": {
+            "label": "Định dạng số",
+            "hint": "Ví dụ: {example}",
+            "options": {
+                "auto": "Tự động, theo ngôn ngữ",
+                "us": "1,234.56 (Hoa Kỳ)",
+                "european": "1.234,56 (Đức)",
+                "french": "1 234,56 (Pháp)",
+                "swiss": "1’234.56 (Thụy Sĩ)",
+                "indian": "12,34,567.89 (Ấn Độ)"
+            }
+        },
+        "dateFormat": {
+            "label": "Định dạng ngày",
+            "hint": "Ví dụ: {example}",
+            "options": {
+                "auto": "Tự động, theo ngôn ngữ",
+                "mdy": "Tháng/Ngày/Năm",
+                "dmy": "Ngày/Tháng/Năm",
+                "ymd": "Năm-Tháng-Ngày"
+            }
+        },
+        "timeZone": {
+            "label": "Múi giờ",
+            "hint": "Dùng cho ngày và giờ, và cho Giờ của tôi trong Sự kiện. Ví dụ: 14:05 UTC hiển thị là {example}.",
+            "auto": "Tự động, theo thiết bị của bạn ({zone})"
+        }
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "line": "資料包有 {total} 本圖鑑中的 {have} 本。每本都有增益、完成獎勵和 {puzzles} 張拼圖。",
+    "note": "其餘 {missing} 本圖鑑會在資料包收錄後加入。",
+    "albums": "圖鑑",
+    "puzzleCount": "{count, plural, other {{amount} 張拼圖}}",
+    "pieceCount": "{count, plural, other {{amount} 片}}",
+    "view": {
+        "label": "檢視",
+        "puzzles": "拼圖",
+        "pieces": "所有碎片"
+    },
+    "album": {
+        "counts": "{puzzles}，{pieces}",
+        "buff": "完成時的增益",
+        "buffValue": "{stat} {value}",
+        "rewards": "完成獎勵",
+        "buffNote": "要完成全部 {puzzles} 張拼圖，增益才會計入。"
+    },
+    "puzzles": {
+        "title": "拼圖",
+        "puzzle": "拼圖",
+        "pieces": "碎片",
+        "star": "{stars} 星",
+        "reward": "獎勵"
+    },
+    "allPieces": {
+        "title": "所有碎片",
+        "summary": "{puzzles}中的 {pieces}",
+        "imageNote": "碎片圖片來自資料包。沒有圖片的碎片會顯示為純色方塊。",
+        "stars": "{count, plural, other {{amount} 星}}"
+    }
+}

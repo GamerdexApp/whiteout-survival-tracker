@@ -1,0 +1,115 @@
+{
+    "title": "Boni",
+    "all": "Alle",
+    "list": {
+        "separator": ", ",
+        "andLast": "{rest} und {last}"
+    },
+    "sourceTypes": {
+        "account": "Account",
+        "hero": "Helden",
+        "expert": "Experten",
+        "research": "Forschung",
+        "allianceTech": "Allianz-Tech",
+        "allianceFacility": "Allianzanlagen",
+        "alliancePrestige": "Allianz-Prestigegebäude",
+        "vip": "VIP",
+        "building": "Gebäude",
+        "skin": "Skins",
+        "tundraAlbum": "Tundra Album",
+        "collection": "Sammlung",
+        "decoration": "Meine Insel",
+        "treeOfLife": "Meine Insel",
+        "castleAppointment": "Schlossposition",
+        "pet": "Haustiere",
+        "chiefGear": "Häuptlingsgear",
+        "chiefGearSet": "Set-Bonus Häuptlingsgear",
+        "chiefCharm": "Häuptlingsamulette",
+        "chiefOrder": "Häuptlingsbefehle",
+        "presidentSkill": "Präsidentenfähigkeiten",
+        "marchQueuePack": "das Marschwarteschlangen-Paket"
+    },
+    "unit": {
+        "percent": "{value}%",
+        "hours": "{value} Std",
+        "seconds": "{value} s",
+        "plain": "{value}"
+    },
+    "view": {
+        "subline": "{name} · alle Boni aus den anderen Seiten summiert. Diese Seite speichert nichts.",
+        "tiles": {
+            "stats": "Werte im Ergebnis",
+            "groups": "Gruppen mit Werten",
+            "sources": "Quellentypen mit Beitrag"
+        },
+        "pending": {
+            "title": "Noch nicht jede Quelle wird gezählt.",
+            "text": "Jede Quelle unten wird von der Seite gelesen, die sie speichert. Bis diese Seiten gebaut sind, zählen sie nichts: {pending}. {unstored} werden noch von keiner Seite gespeichert."
+        },
+        "rulesTitle": "So werden die Zahlen gezählt",
+        "rules": {
+            "affinity": {
+                "title": "Experten-Affinität",
+                "text": "Ein Experte gibt einen Grundbonus, der mit der Affinitätsstufe wächst. Bei Stufe 10, 20 bis 100 muss der Experte aufsteigen. Bis dahin zählt der Bonus der Stufe davor."
+            },
+            "albums": {
+                "title": "Alben zählen, wenn komplett",
+                "text": "Ein Tundra Album gibt seinen Buff nur, wenn alle 9 Puzzles fertig sind."
+            },
+            "pets": {
+                "title": "Haustiere nutzen den verfeinerten Wert",
+                "text": "Jedes Haustier zählt mit seinem normalen oder verfeinerten Wert, wie du es auf der Haustier-Seite einstellst."
+            },
+            "noNumber": {
+                "title": "Keine Zahl, nicht gezählt",
+                "text": "Eine Quelle ohne Zahl in den Daten trägt nichts bei. Sie wird nicht als 0 angezeigt."
+            },
+            "apart": {
+                "title": "Getrennt geführt",
+                "text": "Prozent- und feste Werte werden nie addiert. Werte für Infantry, Lancer und Marksman sind getrennt von den Truppenwerten."
+            },
+            "time": {
+                "title": "Zeitwerte",
+                "text": "Bau-Beschleunigung sind gesparte Stunden pro Bau. Allianz-Hilfszeit ist in Sekunden. Jeder Wert zeigt seine Einheit."
+            }
+        },
+        "search": {
+            "label": "Werte suchen",
+            "placeholder": "Werte suchen"
+        },
+        "views": {
+            "label": "Ansicht",
+            "stat": "Nach Wert",
+            "source": "Nach Quelle"
+        },
+        "empty": {
+            "noBonusesTitle": "Noch keine Boni",
+            "noBonusesDescription": "Boni erscheinen, sobald die Seiten, die sie speichern, ausgefüllt sind.",
+            "noMatchTitle": "Keine passenden Werte",
+            "noMatchDescription": "Ändere die Suche oder die Gruppe."
+        },
+        "statCount": "{count, plural, one {{amount} Wert} other {{amount} Werte}}",
+        "sourceCount": "{count, plural, one {{amount} Quelle} other {{amount} Quellen}}",
+        "columns": {
+            "statAndSource": "Wert und Quelle",
+            "sourceType": "Quellentyp",
+            "counted": "Gezählt"
+        }
+    },
+    "eventRules": {
+        "title": "Regeln für Event-Buffs",
+        "intro": "Hier steht, welche Bonusarten während eines Events weiter gelten. Das sind Regeln, keine Zahlen, daher fließt hier nichts in die Summen oben ein.",
+        "event": "Event",
+        "columns": {
+            "cityBonusWarsBuffs": "Stadtbonus",
+            "deploymentCapacity": "Einsatz",
+            "territoryBonuses": "Territorium",
+            "marchAccelerator": "Marschbeschl."
+        },
+        "applicability": {
+            "yes": "Ja",
+            "no": "Nein",
+            "partial": "Teilweise"
+        }
+    }
+}

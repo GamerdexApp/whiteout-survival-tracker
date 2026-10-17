@@ -1,0 +1,78 @@
+{
+  "page": {
+    "title": "Skins"
+  },
+  "view": {
+    "subline": "{chief} · {details} · {owned} skins possédés sur {total}"
+  },
+  "owned": {
+    "label": "Possédés",
+    "value": "{owned} sur {total}",
+    "progress": "Skins possédés",
+    "withBonus": "{withBonus} skins sur {total} ont un bonus"
+  },
+  "totals": {
+    "title": "Bonus des skins possédés",
+    "estimate": "Estimation",
+    "percent": "+{amount} %",
+    "flat": "+{amount}",
+    "none": "Aucun skin possédé n'a encore de bonus.",
+    "note": "{count, plural, one {Somme du bonus de {amount} skin possédé} other {Somme du bonus de {amount} skins possédés}}, par stat, calculée par l'application. Elle suppose que chaque skin possédé s'applique en même temps. Attaque des troupes et Attaque de troupes sont additionnées."
+  },
+  "expiry": {
+    "title": "L'expiration n'est pas suivie.",
+    "text": "La durée (permanent, 30 jours, par rang) figure seulement dans le texte de description. Un skin temporaire reste possédé jusqu'à ce que vous le décochiez."
+  },
+  "search": {
+    "label": "Rechercher des skins",
+    "placeholder": "Rechercher des skins par nom ou source"
+  },
+  "filters": {
+    "button": "Filtres",
+    "title": "Filtres",
+    "description": "Choisissez ce qu'affiche la liste des skins",
+    "reset": "Réinitialiser",
+    "showButton": "{count, plural, one {Afficher {amount} skin} other {Afficher {amount} skins}}",
+    "skinType": "Type de skin",
+    "typeAll": "Tous {amount}",
+    "typeOption": "{type} {amount}",
+    "owned": "Possession",
+    "bonus": "Bonus",
+    "order": "Ordre",
+    "notSaved": "Les filtres ne sont pas enregistrés.",
+    "ownedOptions": {
+      "all": "Tous les skins",
+      "owned": "Possédés",
+      "notOwned": "Non possédés"
+    },
+    "bonusOptions": {
+      "any": "Tous",
+      "has": "Avec bonus",
+      "none": "Sans bonus"
+    },
+    "orderOptions": {
+      "game": "Ordre du jeu",
+      "name": "Nom, A à Z",
+      "owned": "Possédés d'abord"
+    }
+  },
+  "status": {
+    "showing": "{shown} skins affichés sur {total}.",
+    "showingFiltered": "{shown} skins affichés sur {total}. Filtres : {filters}.",
+    "showMore": "{count, plural, one {Afficher {amount} skin de plus} other {Afficher {amount} skins de plus}}"
+  },
+  "empty": {
+    "title": "Aucun skin ne correspond",
+    "description": "Modifiez la recherche ou les filtres pour voir des skins.",
+    "reset": "Réinitialiser les filtres"
+  },
+  "card": {
+    "bonus": "Bonus",
+    "source": "Source",
+    "unknown": "Inconnu",
+    "bonusValue": "{value} {stat}",
+    "owned": "Possédé",
+    "ownedLabel": "Possédé : {name}, {type}",
+    "domainWarning": "Le texte du bonus de domaine est dans la description et n'est pas compté."
+  }
+}

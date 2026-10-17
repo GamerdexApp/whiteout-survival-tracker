@@ -1,0 +1,98 @@
+{
+    "page": {
+        "title": "Tech"
+    },
+    "view": {
+        "subline": "{chief} · {count} Allianz-Tech-Knoten in Wachstum, Territorium und Kampf"
+    },
+    "summary": {
+        "maxed": "Maximiert",
+        "inProgress": "In Arbeit",
+        "notStarted": "Nicht begonnen",
+        "locked": "Gesperrt"
+    },
+    "status": {
+        "maxed": "Maximiert",
+        "inProgress": "In Arbeit",
+        "notStarted": "Nicht begonnen",
+        "locked": "Gesperrt"
+    },
+    "tabs": {
+        "label": "Tech-Kategorien"
+    },
+    "categories": {
+        "Growth": "Wachstum",
+        "Territory": "Territorium",
+        "Battle": "Kampf"
+    },
+    "filters": {
+        "search": "Suche",
+        "searchLabel": "Tech-Knoten suchen",
+        "searchPlaceholder": "Knotenname",
+        "tier": "Tier",
+        "allTiers": "Alle Tiers",
+        "tierOption": "Tier {tier}",
+        "status": "Status",
+        "allStatuses": "Alle",
+        "button": "Suche und Filter",
+        "title": "Suche und Filter",
+        "description": "Finde Tech-Knoten nach Name, Tier und Status",
+        "reset": "Filter zurücksetzen",
+        "done": "{count} zeigen",
+        "shown": "{shown} von {total} Knoten angezeigt"
+    },
+    "table": {
+        "node": "Knoten",
+        "level": "Stufe",
+        "bonus": "Bonus",
+        "cost": "Kosten nächste Stufe",
+        "time": "Zeit",
+        "needs": "Braucht"
+    },
+    "node": {
+        "tierDescription": "Tier {tier} · {description}",
+        "levelLabel": "Stufe {name}",
+        "levelOf": "{level} / {max}",
+        "open": "{name} öffnen",
+        "bonusOf": "{now} von {max}",
+        "bonusNone": "Noch keiner, max. {max}",
+        "noBonus": "Kein Bonus",
+        "maxed": "Maximiert",
+        "noTime": "Keine Zeit",
+        "readyToUpgrade": "Bereit zum Upgrade",
+        "nothingNeeded": "Nichts nötig",
+        "needsPart": "Braucht {name} Stufe {level}",
+        "costLine": "{name} {amount}",
+        "lockedHint": "Gesperrt bis {names}",
+        "requirementPart": "{name} Stufe {level}"
+    },
+    "flyout": {
+        "title": "{name}",
+        "subtitle": "{category}, Tier {tier}. {description}",
+        "close": "Schließen",
+        "level": "Stufe",
+        "bonusNow": "Bonus jetzt",
+        "needsFor": "Braucht für Stufe {level}",
+        "needsNothing": "Nichts nötig.",
+        "needsLine": "Braucht Stufe {need}, du hast Stufe {have}",
+        "met": "Erfüllt",
+        "notMet": "Nicht erfüllt",
+        "requiredBy": "Benötigt von",
+        "requiredByNone": "Kein anderer Knoten braucht diesen.",
+        "requiredByLine": "{category}, Tier {tier}, ab Stufe {from} braucht {name} Stufe {need}",
+        "allLevels": "Alle Stufen",
+        "levelRow": "Stufe {level}",
+        "done": "Erledigt",
+        "next": "Nächste",
+        "later": "Später",
+        "remaining": "Verbleibend bis Maximum",
+        "derived": "Abgeleitet",
+        "remainingNone": "Nichts mehr übrig. Dieser Knoten ist maximiert.",
+        "remainingLine": "{cost}",
+        "remainingTime": "{time}"
+    },
+    "empty": {
+        "title": "Keine passenden Knoten",
+        "description": "Ändere die Suche oder die Filter, um mehr Knoten zu sehen."
+    }
+}

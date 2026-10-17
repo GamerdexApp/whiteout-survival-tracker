@@ -1,0 +1,209 @@
+{
+  "page": {
+    "title": "Familiers"
+  },
+  "view": {
+    "subline": "{chief} · {details} · {unlocked} familiers débloqués sur {total}"
+  },
+  "rarities": {
+    "Common": "Common",
+    "Uncommon": "Uncommon",
+    "Rare": "Rare",
+    "Epic": "Epic",
+    "Legendary": "Legendary"
+  },
+  "unlock": {
+    "afterFurnace": "Jour {days} et Furnace {level}",
+    "afterPet": "Jour {days} et {pet} niveau {level}"
+  },
+  "summary": {
+    "unlocked": "Débloqués",
+    "unlockedValue": "{count} sur {total}",
+    "unlockedNote": "Défini par vous",
+    "power": "Puissance totale",
+    "powerNote": "Puissance de niveau, d'avancement et de raffinage des familiers débloqués",
+    "powerUnknown": "Puissance de niveau, d'avancement et de raffinage des familiers débloqués, {amount} inconnu",
+    "next": "Prochain à débloquer",
+    "allUnlocked": "Tous débloqués",
+    "allUnlockedNote": "Tous les familiers sont débloqués",
+    "lockedNote": "{count} verrouillés jusqu'à un jour de serveur ultérieur"
+  },
+  "totals": {
+    "attackDefense": "Attaque et Défense des troupes",
+    "attack": "Attaque",
+    "defense": "Défense",
+    "lethality": "Létalité",
+    "health": "Santé",
+    "gain": "+{value} %",
+    "types": {
+      "infantry": "Infantry",
+      "lancer": "Lancer",
+      "marksman": "Marksman"
+    }
+  },
+  "search": {
+    "label": "Rechercher des familiers",
+    "placeholder": "Rechercher parmi {amount} familiers par nom"
+  },
+  "status": {
+    "showing": "{shown} {count, plural, one {familier affiché} other {familiers affichés}} sur {total}.",
+    "filters": " Filtres : {list}.",
+    "filterNames": {
+      "rarity": "Rareté",
+      "status": "Statut",
+      "advanced": "Avancé",
+      "order": "Ordre"
+    },
+    "readOnlyGoals": "Les objectifs sont en lecture seule ici et se définissent dans Plan. Un objectif égal à la valeur actuelle signifie aucun objectif.",
+    "showMore": "Afficher {count, plural, one {{amount} familier de plus} other {{amount} familiers de plus}}"
+  },
+  "empty": {
+    "title": "Aucun familier ne correspond",
+    "description": "Modifiez la recherche ou les filtres pour voir plus de familiers.",
+    "reset": "Réinitialiser les filtres"
+  },
+  "toast": {
+    "lockedTitle": "{name} verrouillé",
+    "lockedMessage": "Son niveau, son avancement et son raffinage sont conservés.",
+    "undo": "Annuler"
+  },
+  "card": {
+    "summary": "{rarity} · niveau max {max}",
+    "unlocked": "Débloqué",
+    "unlockedLabel": "{pet} débloqué",
+    "cooldown": "Recharge de {time}",
+    "cooldownByTier": "La recharge change selon le palier",
+    "cooldownUnknown": "Recharge inconnue",
+    "skillTiers": "{count, plural, one {{amount} palier de compétence} other {{amount} paliers de compétence}}",
+    "unlockRule": "Règle de déblocage",
+    "ruleMet": "Vous remplissez cette règle",
+    "level": "Niveau (max {max})",
+    "levelLabel": "Niveau de {pet}",
+    "goal": "Objectif {level}",
+    "noGoal": "Aucun objectif",
+    "advanced": "Avancé",
+    "advancedHint": "Avancé peut être activé aux niveaux 10, 20, 30 et ainsi de suite.",
+    "refinement": "Raffinage",
+    "refinementMax": "max {max} % chacun",
+    "refineLabel": "{stat} de {pet}",
+    "percentSign": "%",
+    "attack": "Att +{value} %",
+    "defense": "Déf +{value} %",
+    "power": "Puissance {value}",
+    "powerUnknown": "Puissance inconnue",
+    "powerParts": "Niveau et avancement {base}, raffinage {refining}"
+  },
+  "filters": {
+    "button": "Filtres",
+    "title": "Filtres",
+    "description": "Choisissez ce qu'affiche la liste des familiers",
+    "rarity": "Rareté",
+    "rarityAll": "Toutes {amount}",
+    "rarityOption": "{rarity} {amount}",
+    "rarities": {
+      "Common": "Common",
+      "Uncommon": "Uncommon",
+      "Rare": "Rare",
+      "Epic": "Epic",
+      "Legendary": "Legendary"
+    },
+    "status": "Statut",
+    "statusOptions": {
+      "all": "Tous les familiers",
+      "unlocked": "Débloqués",
+      "locked": "Verrouillés"
+    },
+    "advanced": "Avancé",
+    "advancedOptions": {
+      "any": "Tous",
+      "advanced": "Avancés",
+      "notAdvanced": "Non avancés"
+    },
+    "order": "Ordre",
+    "orderOptions": {
+      "game": "Ordre du jeu",
+      "name": "Nom, A à Z",
+      "level": "Niveau, le plus haut d'abord"
+    },
+    "notSaved": "Les filtres ne sont pas enregistrés.",
+    "reset": "Réinitialiser",
+    "show": "Afficher {count, plural, one {{amount} familier} other {{amount} familiers}}"
+  },
+  "plan": {
+    "button": "Plan",
+    "title": "Planifier les familiers",
+    "description": "Nourriture, objets, stats et points d'événement pour atteindre vos objectifs",
+    "saved": "Plan enregistré {date}",
+    "notSavedYet": "Plan pas encore enregistré",
+    "close": "Fermer",
+    "save": "Enregistrer le plan",
+    "exportButton": "Exporter vers Événements clés",
+    "exportNothing": "Le plan n'a aucun score d'avancement à exporter.",
+    "export": {
+      "advancement": "Score d'avancement des familiers",
+      "commonMark": "Common Wild Marks",
+      "advancedMark": "Advanced Wild Marks",
+      "marksDetail": "Compté depuis Ressources."
+    },
+    "noPets": "Ajoutez un familier débloqué pour planifier ses niveaux.",
+    "add": {
+      "title": "Ajouter un familier",
+      "selectLabel": "Familier à ajouter",
+      "button": "Ajouter le familier",
+      "allIn": "Tous les familiers débloqués sont dans le plan.",
+      "noneUnlocked": "Débloquez un familier sur la page Familiers pour le planifier."
+    },
+    "block": {
+      "rarities": {
+        "Common": "Common",
+        "Uncommon": "Uncommon",
+        "Rare": "Rare",
+        "Epic": "Epic",
+        "Legendary": "Legendary"
+      },
+      "maxLevel": "Niveau max {max}",
+      "remove": "Retirer",
+      "removeLabel": "Retirer {pet} du plan",
+      "current": "Niveau actuel",
+      "to": "à",
+      "goal": "Niveau objectif (max {max})",
+      "goalLabel": "Niveau objectif de {pet}",
+      "payAdvancement": "Payer l'avancement à l'objectif",
+      "paysCurrent": "Non avancé au niveau {level}, cet avancement est donc payé."
+    },
+    "result": {
+      "title": "Résultat pour {count, plural, one {{amount} familier} other {{amount} familiers}}",
+      "resources": "Ressources, tous les familiers",
+      "byPet": "Par familier",
+      "heads": {
+        "pet": "Familier",
+        "levels": "Niveaux",
+        "food": "Nourriture",
+        "power": "Puissance"
+      },
+      "powerGain": "+{value}",
+      "percentGain": "+{value} %",
+      "unknown": "Inconnu",
+      "gains": "Gains",
+      "gainNames": {
+        "levels": "Niveaux gagnés",
+        "advancements": "Avancements",
+        "attack": "Attaque des troupes",
+        "defense": "Défense des troupes",
+        "power": "Puissance",
+        "score": "Score d'avancement"
+      },
+      "unknownPowerNote": "Les données n'ont pas de puissance avancée pour un niveau de ce plan, le gain de puissance est donc Inconnu.",
+      "eventPoints": "Points d'événement",
+      "events": {
+        "svs": "SvS",
+        "allianceShowdown": "Alliance Showdown",
+        "kingOfIcefield": "King of Icefield",
+        "hallOfChief": "Hall of Chief"
+      },
+      "notScored": "Sans score",
+      "eventNote": "Les points d'événement sont le score d'avancement multiplié par les points de la ligne de score de chaque événement.",
+      "scoreSourceNote": "Les scores d'avancement des niveaux 40 à 100 correspondent aux notes d'événement. Les niveaux 10 à 30 viennent d'une seule source (WoS Tools)."
+    }
+  }
+}

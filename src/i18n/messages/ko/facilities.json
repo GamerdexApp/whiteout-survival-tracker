@@ -1,0 +1,86 @@
+{
+  "page": {
+    "title": "시설"
+  },
+  "view": {
+    "subline": "{chief} · 지도 시설 {facilities}개, 성채, 거점 {strongholds}개, 요새 {fortresses}개"
+  },
+  "summary": {
+    "owned": "보유 시설",
+    "ownedValue": "{total}개 중 {owned}개",
+    "strongholds": "거점, 참고용",
+    "fortresses": "요새, 참고용",
+    "castle": "성채, 참고용"
+  },
+  "tabs": {
+    "label": "시설 보기",
+    "facilities": "시설",
+    "fortresses": "요새",
+    "map": "지도"
+  },
+  "show": {
+    "label": "표시",
+    "all": "전체",
+    "owned": "보유",
+    "notOwned": "미보유"
+  },
+  "card": {
+    "owned": "{count}개 보유",
+    "level": "{level}레벨",
+    "ownedSwitch": "보유",
+    "switchLabel": "{facility} {level}레벨 보유",
+    "booster": "부스터",
+    "injured": "중상",
+    "losses": "손실",
+    "ownLimit": "보유 한도 {limit}. 지도에 {spots}{spotWord}.",
+    "spot": "곳",
+    "spots": "곳"
+  },
+  "empty": {
+    "title": "표시할 항목이 없어요",
+    "description": "이 필터에 맞는 시설 레벨이 없어요.",
+    "reset": "모두 보기"
+  },
+  "fortress": {
+    "kind": {
+      "castle": "성채",
+      "stronghold": "거점",
+      "fortress": "요새"
+    },
+    "coordinates": "x {x}, y {y}",
+    "rewardsHeading": "단계별 보상",
+    "phase": "{phase}단계",
+    "noRewards": "패키지에 성채 보상이 없어요.",
+    "referenceNote": "참고용이에요. 성채, 거점, 요새는 매주 바뀌어서 여기서는 보유나 추적을 하지 않아요.",
+    "kindLabel": "종류",
+    "allKinds": "모든 종류",
+    "rewardLabel": "보상",
+    "allRewards": "모든 보상",
+    "shown": "구조물 {total}개 중 {shown}개 표시",
+    "empty": "필터에 맞는 구조물이 없어요.",
+    "reset": "필터 초기화",
+    "filters": "필터",
+    "filtersTitle": "필터",
+    "filtersDescription": "종류와 보상으로 구조물을 걸러요",
+    "done": "{count}개 보기"
+  },
+  "map": {
+    "highlight": "시설 강조",
+    "layers": "레이어",
+    "layerFacilities": "시설",
+    "layerStrongholds": "거점",
+    "layerFortresses": "요새",
+    "spotsHeading": "시설 위치, 총 {count}곳",
+    "spotLegend": "{name} ({count})",
+    "codeHint": "코드 뒤의 숫자는 레벨이에요. 예를 들어 Co1은 건설 1레벨이에요. 강조한 시설은 채워서 표시해요.",
+    "structures": "구조물",
+    "castleStrongholdLegend": "성채(1)와 거점 S1~S4 ({count})",
+    "fortressLegend": "요새 1~{count}",
+    "selected": "지도에서 선택됨",
+    "selectedNone": "지도에서 성채, 거점, 요새를 선택하세요.",
+    "mapLabel": "연맹 지도",
+    "note": "연맹 지도의 와이어프레임이에요. 위치는 패키지의 x, y 값을 {size} x {size} 격자에 그린 것이고 격자 한 칸은 {step}이에요. 위치는 시설이 나타날 수 있는 자리이므로 보유 시설은 표시하지 않아요. 패키지에 지형 이미지는 없어요.",
+    "spotLabel": "{name} {level}레벨, x {x}, y {y}",
+    "structureLabel": "{name}, x {x}, y {y}"
+  }
+}

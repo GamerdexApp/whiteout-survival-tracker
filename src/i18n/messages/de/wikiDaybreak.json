@@ -1,0 +1,69 @@
+{
+    "line": "Stufentabellen für Lumber Camp und Tree of Life, plus {decorations} Dekorationen nach Kategorie mit Kosten, Wohlstand und Buffs.",
+    "lumberCamp": {
+        "title": "Lumber Camp",
+        "levels": "{count, plural, one {{amount} Stufe} other {{amount} Stufen}}",
+        "table": "Stufen des Lumber Camp",
+        "level": "Stufe",
+        "workers": "Arbeiter",
+        "perSecond": "Pro Sek",
+        "treeLevel": "Baumstufe",
+        "lifeEssence": "Life Essence"
+    },
+    "tree": {
+        "title": "Tree of Life",
+        "table": "Stufen des Tree of Life",
+        "level": "Stufe",
+        "prosperity": "Wohlstand",
+        "lifeEssence": "Life Essence",
+        "perHour": "Pro Stunde",
+        "buff": "Buff"
+    },
+    "decorations": {
+        "title": "Dekorationen",
+        "showing": "{shown} von {total} angezeigt",
+        "search": "Suche",
+        "searchPlaceholder": "Dekorationen nach Name oder Buff suchen",
+        "categoryLabel": "Kategorie",
+        "all": "Alle",
+        "costFilter": "Kostenart",
+        "table": "Dekorationen",
+        "name": "Dekoration",
+        "category": "Kategorie",
+        "limit": "Limit",
+        "levels": "Stufen",
+        "cost": "Kosten",
+        "prosperityAtMax": "Wohlstand auf Maximum",
+        "buffAtMax": "Buff auf Maximalstufe",
+        "emptyTitle": "Keine passende Dekoration",
+        "emptyDescription": "Ändere die Suche, die Kategorie oder die Kostenart."
+    },
+    "costFilter": {
+        "any": "Beliebige Kosten",
+        "lifeEssence": "Life Essence",
+        "items": "Ressourcen",
+        "limited": "Begrenzt",
+        "unknown": "Kosten nicht in den Daten"
+    },
+    "cost": {
+        "lifeEssence": "{amount} Life Essence",
+        "limited": "Keine, begrenzte Dekoration"
+    },
+    "detail": {
+        "title": "Details",
+        "category": "Kategorie",
+        "limit": "Limit",
+        "cost": "Kosten",
+        "levels": "Stufen",
+        "image": "Bild",
+        "imageMissing": "Keins",
+        "levelsTitle": "Stufen von {name}",
+        "levelsMeta": "{count, plural, one {{amount} Stufe} other {{amount} Stufen}}",
+        "levelsTable": "Stufen der Dekoration",
+        "level": "Stufe",
+        "levelCost": "Kosten",
+        "prosperity": "Wohlstand",
+        "buff": "Buff",
+        "noLevels": "Die Daten haben für diese Dekoration keine Stufentabelle."
+    }
+}

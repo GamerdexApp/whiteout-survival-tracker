@@ -1,0 +1,54 @@
+{
+    "line": "3つのツリーに計{total}のテック: 成長{growth}、領土{territory}、戦闘{battle}。参考情報のみで、ここには何も保存されません。",
+    "list": {
+        "title": "テックノード",
+        "categoriesLabel": "テックツリー",
+        "categories": {
+            "all": "すべて",
+            "Growth": "成長",
+            "Territory": "領土",
+            "Battle": "戦闘"
+        },
+        "search": "検索",
+        "searchPlaceholder": "名前または効果でテックを検索",
+        "tier": "ティア",
+        "allTiers": "すべてのティア",
+        "tierOption": "ティア{tier}",
+        "empty": "この検索に一致するテックノードがありません。",
+        "emptyHint": "検索またはフィルターをクリアしてください。",
+        "columns": {
+            "tech": "テック",
+            "category": "カテゴリー",
+            "tier": "ティア",
+            "levels": "レベル",
+            "maxBonus": "最大ボーナス",
+            "cost": "レベル1のコスト",
+            "time": "レベル1の時間",
+            "requires": "レベル1の必要条件"
+        },
+        "mobileMeta": "{category}、ティア{tier}、{levels}",
+        "count": "{count, plural, other {テック{amount}件}}"
+    },
+    "levels": "{count, plural, other {{amount}レベル}}",
+    "detail": {
+        "facts": "詳細",
+        "levelsTitle": "レベル",
+        "none": "なし",
+        "fields": {
+            "category": "カテゴリー",
+            "tier": "ティア",
+            "effect": "効果",
+            "stat": "ステータス",
+            "levels": "レベル"
+        },
+        "columns": {
+            "level": "レベル",
+            "bonus": "ボーナス",
+            "cost": "コスト",
+            "time": "時間",
+            "requires": "必要条件"
+        },
+        "level": "レベル{level}",
+        "requirement": "{name}レベル{level}"
+    }
+}

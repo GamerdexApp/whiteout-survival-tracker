@@ -1,0 +1,99 @@
+{
+  "line": "{heroes} héroes y {widgets} niveles de widgets. Solo es referencia, nada de aquí se guarda.",
+  "roster": {
+    "title": "Lista",
+    "count": "{shown} de {total} héroes",
+    "search": "Buscar",
+    "searchPlaceholder": "Busca entre {count} héroes",
+    "generation": "Generación",
+    "rarity": "Rareza",
+    "class": "Clase",
+    "subClass": "Subclase",
+    "all": "Todos",
+    "empty": "Ningún héroe coincide con estos filtros.",
+    "columns": {
+      "hero": "Héroe",
+      "generation": "Gen",
+      "rarity": "Rareza",
+      "class": "Clase",
+      "subClass": "Subclase",
+      "power": "Poder, 5 estrellas",
+      "weapon": "Arma exclusiva"
+    },
+    "none": "Ninguna"
+  },
+  "detail": {
+    "generation": "Generación {generation}",
+    "source": "Origen: {sources}",
+    "noSource": "Origen: Desconocido",
+    "explorationAttack": "Ataque en Exploration",
+    "explorationDefense": "Defensa en Exploration",
+    "explorationHealth": "Salud en Exploration",
+    "expeditionAttack": "Ataque en Expedition",
+    "expeditionDefense": "Defensa en Expedition",
+    "powerAtLevel80": "Poder en nivel 80",
+    "powerAtFiveStars": "Poder con 5 estrellas",
+    "powerAtZeroStars": "Poder con 0 estrellas",
+    "powerMissing": "Faltan los datos de poder de los niveles y fragmentos de héroes de la Generación 6 en adelante. Aparece como Desconocido hasta que se obtengan los datos."
+  },
+  "skills": {
+    "title": "Habilidades",
+    "count": "{count, plural, one {{amount} habilidad} other {{amount} habilidades}}",
+    "branch": {
+      "exploration": "Exploration",
+      "expedition": "Expedition",
+      "talent": "Talento"
+    },
+    "levels": {
+      "columns": {
+        "level": "Nivel",
+        "star": "Estrella requerida",
+        "manuals": "Manuales",
+        "power": "Aumento de poder",
+        "effects": "Efecto"
+      },
+      "effect": {
+        "percentOfAttack": "{name} {amount}% del Ataque",
+        "percent": "{name} {amount}%",
+        "seconds": "{name} {amount}s",
+        "number": "{name} {amount}"
+      }
+    }
+  },
+  "shards": {
+    "title": "Costo de fragmentos por estrella",
+    "columns": {
+      "star": "Estrella",
+      "tiers": "Fragmentos por rango",
+      "total": "Total",
+      "power": "Poder en la estrella"
+    },
+    "star": "{star} estrellas"
+  },
+  "weapon": {
+    "title": "Arma exclusiva",
+    "power": "Poder del arma",
+    "exploration": "Exploration atq / def / ps",
+    "expedition": "Expedition letalidad / ps",
+    "unlocksAt": "se desbloquea en el nivel de arma {level}",
+    "levelsTitle": "Niveles del arma",
+    "columns": {
+      "level": "Nivel del arma",
+      "power": "Poder",
+      "widgets": "Widgets"
+    },
+    "level": "Nivel {level}"
+  },
+  "levels": {
+    "title": "Niveles de héroe",
+    "columns": {
+      "level": "Nivel del héroe",
+      "furnace": "Requiere",
+      "xp": "XP para llegar",
+      "power": "Poder"
+    },
+    "level": "Nivel {level}",
+    "furnace": "Furnace {level}"
+  },
+  "recordLine": "{heroClass} {rarity}, generación {generation}. Solo es referencia, nada de aquí se guarda."
+}

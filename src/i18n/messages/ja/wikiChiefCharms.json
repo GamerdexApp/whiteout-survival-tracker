@@ -1,0 +1,49 @@
+{
+    "line": "チャームの行{rows}件、スロット{slots}件、交換レート{rates}件。参考情報のみで、チーフには何も保存されません。",
+    "slots": {
+        "heading": "チャームのスロット",
+        "meta": "部隊タイプごとに1つ、計{slots}スロット",
+        "icons": "{count, plural, other {レベルアイコン{amount}個}}",
+        "recordLine": "{troopType}の部隊を強化します。レベルごとに1つのアイコン。"
+    },
+    "table": {
+        "heading": "チャームの表",
+        "meta": "{rows}行、{levels}レベル",
+        "searchLabel": "検索",
+        "searchPlaceholder": "{rows}行のチャームを検索",
+        "levelLabel": "レベル",
+        "allLevels": "すべてのレベル",
+        "levelOption": "レベル{level}",
+        "stageLabel": "ステージ",
+        "allStages": "すべてのステージ",
+        "stageOption": "ステージ{stage}",
+        "empty": "フィルターに一致するチャームの行がありません。"
+    },
+    "columns": {
+        "row": "行",
+        "materials": "素材",
+        "stats": "ステータス",
+        "power": "戦力",
+        "score": "スコア"
+    },
+    "cells": {
+        "none": "なし",
+        "percent": "{value}%"
+    },
+    "levels": {
+        "heading": "レベル",
+        "level": "レベル",
+        "levelName": "レベル{level}",
+        "rows": "行",
+        "stats": "ステータス、最初から最後まで",
+        "power": "最後の行の戦力",
+        "statsRange": "{first}%から{last}%"
+    },
+    "exchange": {
+        "heading": "素材の交換レート",
+        "exchange": "交換",
+        "from": "交換元",
+        "to": "交換先",
+        "weeklyLimit": "週の上限"
+    }
+}

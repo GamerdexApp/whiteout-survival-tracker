@@ -1,0 +1,251 @@
+{
+  "page": {
+    "title": "Tropas"
+  },
+  "view": {
+    "title": "Tropas",
+    "subline": "{chief} · {camps}",
+    "campLevel": "{name} Campamento {level}",
+    "notBuilt": "sin construir",
+    "intro": "Los niveles de campamento, la capacidad y las bonificaciones de velocidad vienen de otras páginas y son de solo lectura. Plan calcula lo que requieren el entrenamiento y el ascenso. Iniciar entrenamiento marca una tanda que un campamento está procesando.",
+    "plan": "Plan"
+  },
+  "cards": {
+    "tileSummary": "tropas · poder {power}",
+    "allTroops": "Todas las tropas",
+    "totalPower": "Poder total",
+    "troops": "Tropas",
+    "power": "Poder",
+    "powerNote": "El poder por tropa viene del paquete de datos. Los rangos 10 y 11 siguen el nivel de Fire Crystal de cada campamento.",
+    "campLevel": "Campamento {level}",
+    "campNotBuilt": "Campamento sin construir",
+    "campAgeLocked": "El nivel de campamento guardado aún no está abierto en este servidor. {text}",
+    "highestTier": "Rango más alto",
+    "tierShort": "T{tier}",
+    "noTier": "Ninguno"
+  },
+  "tiers": {
+    "title": "Rangos de {name}",
+    "hideLow": "Ocultar el rango 9 y menores",
+    "typeLabel": "Tipo de tropa",
+    "hiddenNote": "Los rangos 1 a 9 están ocultos. Furnace {furnace} es nivel 30 o superior.",
+    "heads": {
+      "tier": "Rango",
+      "troops": "Tropas",
+      "train": "Entrenar",
+      "power": "Poder"
+    },
+    "requires": {
+      "list": "Requiere {list}",
+      "camp": "{name} Campamento {level}",
+      "building": "{name} {level}",
+      "research": "{name} nivel {level}"
+    },
+    "tier": "Rango {tier}",
+    "locked": "Bloqueado",
+    "countLabel": "Tropas {tier} de {name}",
+    "train": "Entrenar",
+    "seconds": "{value} s",
+    "each": "c/u",
+    "mobilePower": "Poder"
+  },
+  "plan": {
+    "title": "Planificar Tropas",
+    "description": "Entrenamiento y ascenso de los tres tipos de tropa",
+    "saved": "Plan guardado {date}",
+    "close": "Cerrar",
+    "save": "Guardar plan",
+    "export": {
+      "button": "Exportar a Eventos principales",
+      "emptyHint": "Agrega un entrenamiento para exportarlo.",
+      "computed": "Calculado por la app.",
+      "trainedGroup": "por tropas entrenadas",
+      "speedupGroup": "por minutos de aceleración",
+      "trainedTier": "Tropas de rango {tier} entrenadas",
+      "speedupMinutes": "Minutos de aceleración de entrenamiento usados",
+      "promoted": "Tropas ascendidas",
+      "promotedReason": "El ascenso puntúa solo con minutos de aceleración.",
+      "power": "Poder por entrenar y ascender",
+      "powerReason": "El paquete de datos aún no tiene poder real por rango."
+    },
+    "noRuns": "Aún no hay entrenamientos. Agrega una tropa para empezar un plan.",
+    "add": {
+      "title": "Agregar una tropa",
+      "typeLabel": "Tipo de tropa",
+      "modeLabel": "Entrenamiento o ascenso",
+      "button": "Agregar tropa"
+    },
+    "run": {
+      "tier": "Rango {tier}",
+      "modes": {
+        "training": "Entrenamiento",
+        "promotion": "Ascenso"
+      },
+      "remove": "Quitar entrenamiento de {name}",
+      "removeButton": "Quitar",
+      "modeLabel": "Entrenamiento o ascenso de {name}",
+      "tierLabel": "Rango de {name}",
+      "fromLabel": "Rango de origen del ascenso de {name}",
+      "toLabel": "Rango de destino del ascenso de {name}",
+      "to": "a",
+      "troops": "Tropas",
+      "max": "Máx.",
+      "maxValue": "Máx. ({capacity})",
+      "batches": "Tandas"
+    },
+    "speed": {
+      "readOnlyNote": "Los valores de solo lectura se traen de otras páginas. Cámbialos allí.",
+      "openBonuses": "Abrir Bonificaciones",
+      "title": "Capacidad y velocidad",
+      "appointment": "Cargo",
+      "position": "Puesto",
+      "rank": "Grado",
+      "positions": {
+        "none": "Ninguno",
+        "ministerOfEducation": "Ministro de Educación",
+        "vicePresident": "Vicepresidente"
+      },
+      "ranks": {
+        "regular": "Normal",
+        "supreme": "Supremo"
+      },
+      "appointmentEffect": "+{capacity} de capacidad, +{speed}% de velocidad",
+      "appointmentNote": "Solo uno de los dos cargos puede estar activo. Ministro de Educación suma {moeCapacity} de capacidad y {moeSpeed} por ciento de velocidad (Supremo {moeCapacitySupreme} y {moeSpeedSupreme}). Vicepresidente suma {vpSpeed} por ciento de velocidad (Supremo {vpSpeedSupreme}).",
+      "capacity": "Capacidad",
+      "researchCapacity": "Capacidad de investigación",
+      "troops": "{value} tropas",
+      "readOnly": "Solo lectura",
+      "capacityBoost": "Aumento de capacidad",
+      "boostTotal": "Total x{multiplier}",
+      "capacityPerBatch": "Capacidad por tanda",
+      "trainingSpeed": "Velocidad de entrenamiento",
+      "gameSpeed": "Velocidad de entrenamiento del juego",
+      "appointmentSpeed": "Cargo",
+      "mobilize": "Mobilize",
+      "advancedTraining": "Advanced Training",
+      "speedUsed": "Velocidad de entrenamiento usada",
+      "percent": "{value}%",
+      "percentPlus": "+{value}%"
+    },
+    "stock": {
+      "name": "Aceleraciones de entrenamiento",
+      "minutesUnit": "min",
+      "note": "Tu inventario: Entrenamiento {training} min, General {general} min. Las aceleraciones generales cuentan para el entrenamiento. El entrenamiento que una aceleración no cubre termina en tiempo normal, así que solo se usan las aceleraciones que tienes: {used} min."
+    },
+    "result": {
+      "title": "Resultado",
+      "resources": "Recursos",
+      "changes": "Cambios de tropas por rango",
+      "heads": {
+        "tier": "Rango",
+        "infantry": "Inf.",
+        "lancer": "Lan.",
+        "marksman": "Tir.",
+        "all": "Todas"
+      },
+      "tier": "Rango {tier}",
+      "total": "Total",
+      "time": "Tiempo, sin aceleraciones",
+      "totalTime": "Total, todos los tipos de tropa (tiempo de aceleración)",
+      "longest": "Tipo de tropa más largo",
+      "minutesNeeded": "Minutos de aceleración necesarios",
+      "minutesUsed": "Minutos de aceleración usados (en inventario)",
+      "minutes": "{value} min",
+      "tier12Note": "El paquete de datos indica que los costos del rango 12 se derivaron en parte. El costo de ascenso de Tirador se midió en el juego, y los costos de Infantería y Lancero se escalaron a partir de él."
+    }
+  },
+  "queue": {
+    "title": "Colas de entrenamiento",
+    "note": "Cada campamento entrena una tanda a la vez. Terminar suma las tropas a tus cantidades.",
+    "idle": "No se está entrenando nada. Inicia una tanda para usar este campamento.",
+    "startButton": "Iniciar entrenamiento",
+    "jobTitle": {
+      "training": "Entrenando {count} {name} T{tier}",
+      "promotion": "Ascendiendo {count} {name} de T{from} a T{to}"
+    },
+    "manage": {
+      "slotLabel": "{camp}, una tanda a la vez",
+      "finishText": "Terminar mejora suma las tropas a tus cantidades, libera el campamento y agrega la tanda a tu Historial. Con cero tiempo restante la tarjeta dice Listo para terminar. Nada termina solo, porque puede que hayas usado aceleraciones."
+    },
+    "flyout": {
+      "title": "Iniciar entrenamiento",
+      "description": "Marca una tanda como entrenando o ascendiendo en un campamento",
+      "camp": "Campamento",
+      "campHelp": "Una tanda a la vez en cada campamento. Un campamento ocupado indica cuándo se libera.",
+      "busy": "Ocupado hasta {date}",
+      "notBuilt": "Campamento sin construir",
+      "action": "Acción",
+      "training": "Entrenamiento",
+      "promotion": "Ascenso",
+      "tier": "Rango",
+      "tierOption": "Rango {tier}",
+      "fromTier": "Del rango",
+      "toTier": "Al rango",
+      "troops": "Tropas en la tanda",
+      "max": "Máx.",
+      "capacityHint": "Una tanda admite hasta {capacity} tropas. Es la capacidad de investigación más los niveles de tus campamentos.",
+      "noTiers": "Este campamento aún no tiene rango para entrenar. Sube el nivel del campamento en la página de Edificios.",
+      "cost": "Costo de la tanda",
+      "time": "Tiempo de entrenamiento",
+      "packageTime": "Tiempo del paquete",
+      "speed": "Velocidad de entrenamiento",
+      "readOnly": "Solo lectura",
+      "openBonuses": "Abrir Bonificaciones",
+      "yourTime": "Tu tiempo",
+      "timeHint": "La velocidad de entrenamiento viene de la página de Bonificaciones. Usa Ya iniciada cuando el juego muestre un tiempo distinto.",
+      "whenStarted": "¿Cuándo empezó?",
+      "modes": {
+        "now": "Empieza ahora",
+        "already": "Ya iniciada"
+      },
+      "timeLeftHours": "Tiempo restante, horas",
+      "ends": "Termina",
+      "takeCost": {
+        "title": "Tomar el costo de mi inventario",
+        "hint": "Toma de Recursos los recursos de la tanda. Una cantidad nunca baja de 0.",
+        "enough": "Tienes suficiente.",
+        "short": "Te falta {names}. El inventario de esos queda en 0."
+      },
+      "cancel": "Cancelar",
+      "start": "Iniciar entrenamiento",
+      "allCamps": "Todos los campamentos libres ({count})",
+      "allCampsHint": "Inicia la misma tanda en cada campamento libre a la vez. Cada campamento conserva su propio tiempo. Los rangos mostrados son los que pueden entrenar todos los campamentos libres.",
+      "campTime": "{camp}: {time}"
+    },
+    "toasts": {
+      "started": {
+        "title": "Entrenamiento iniciado",
+        "message": "{what}."
+      },
+      "finished": {
+        "title": "{what} entrenados",
+        "message": "Se sumaron a tus cantidades de tropas y al Historial."
+      },
+      "cancelled": {
+        "title": "{what} cancelados",
+        "message": "Tus cantidades de tropas se quedan como estaban. Corrige tu inventario en Recursos si hace falta."
+      },
+      "undo": "Deshacer"
+    },
+    "batchName": {
+      "training": "{count} {name} T{tier}",
+      "promotion": "{count} {name} de T{from} a T{to}"
+    }
+  },
+  "callOfWar": {
+    "title": "Call of War",
+    "note": "Habilidad de Romulus. Un reclamo gratis por cada día UTC, para todos los campamentos juntos. Se reinicia a las 00:00 UTC.",
+    "available": "{troops} tropas gratis hoy",
+    "claimed": "Reclamado hoy. Un nuevo reclamo gratis estará en {time}.",
+    "notUnlocked": "Requiere tener reclutado a Romulus y Call of War en nivel 1 o superior en la página de Expertos.",
+    "level": "Call of War nivel {level}",
+    "add": "Agregar a {camp}",
+    "addHint": "{troops} tropas van al rango {tier}",
+    "noTier": "Sin rango desbloqueado",
+    "toast": {
+      "title": "Call of War reclamado",
+      "message": "Se agregaron {troops} tropas al rango {tier} de {camp}.",
+      "undo": "Deshacer"
+    }
+  }
+}

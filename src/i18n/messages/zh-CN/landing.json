@@ -1,0 +1,165 @@
+{
+  "topBar": {
+    "navLabel": "首页",
+    "links": {
+      "how": "使用方法",
+      "features": "功能",
+      "privacy": "你的数据",
+      "faq": "常见问题"
+    }
+  },
+  "action": {
+    "createFirstChief": "创建你的第一个领主",
+    "goToOverview": "前往总览",
+    "newChief": "新建领主",
+    "allChiefs": "全部领主"
+  },
+  "hero": {
+    "label": "Whiteout Survival Tracker",
+    "title": "记录每个领主，规划每次升级。",
+    "description": "Whiteout Survival 的免费助手。把建筑、英雄、装备和研究集中在一处，规划下一次升级，并从第一天起记录核心活动直到历史。",
+    "note": "免费使用。你的数据保存在此浏览器中。",
+    "learnMore": "了解更多"
+  },
+  "continue": {
+    "label": "欢迎回来",
+    "title": "继续使用{name}",
+    "chiefCount": "{count, plural, other {此浏览器中已保存{amount}个领主}}"
+  },
+  "how": {
+    "label": "使用方法",
+    "title": "四步，从第一个领主到活动历史",
+    "steps": {
+      "create": {
+        "title": "创建领主",
+        "description": "起个名字即可。服务器编号和备注可不填。"
+      },
+      "levels": {
+        "title": "设置等级",
+        "description": "填写 Furnace 和各建筑的等级，之后再逐步补充英雄、装备和研究。"
+      },
+      "plan": {
+        "title": "规划升级",
+        "description": "查看目标所需的资源、时间和战力，以及还缺多少。"
+      },
+      "events": {
+        "title": "管理活动",
+        "description": "统计积分，记录得分和排名，然后把活动存入历史。"
+      }
+    }
+  },
+  "features": {
+    "label": "你可以做什么",
+    "title": "先规划，再游玩，最后回顾",
+    "open": "打开{page}",
+    "items": {
+      "plan": {
+        "title": "规划任意升级",
+        "description": "在建筑、英雄、领主装备和研究页面的计划面板中设定目标。查看所需的资源、时间和战力，加速道具和加成取自你的加成页面。",
+        "page": "建筑"
+      },
+      "coreEvents": {
+        "title": "核心活动计算器",
+        "description": "SvS、Alliance Showdown、King of Icefield 和 Hall of Chief。统计每项行动的积分，加入专家加成，并查看门槛和排名奖励。",
+        "page": "核心活动"
+      },
+      "eventLog": {
+        "title": "活动记录与每日清单",
+        "description": "记录活动每一天的得分和排名。清单列出你每天可以做的行动。",
+        "page": "核心活动"
+      },
+      "history": {
+        "title": "历史：计划与实际对比",
+        "description": "结束活动即可保存。对比计划与实际完成情况，并查看每项计划的升级是否完成。",
+        "page": "历史"
+      },
+      "research": {
+        "title": "研究树",
+        "description": "成长、经济、战斗、War Academy 和 T12 标签页，可用网格或树状图查看，并按服务器天数显示解锁。",
+        "page": "研究"
+      },
+      "alliance": {
+        "title": "联盟科技与地图",
+        "description": "记录联盟旗帜、科技和设施，并查看城堡、据点和要塞的布局。",
+        "page": "联盟"
+      }
+    }
+  },
+  "numbers": {
+    "title": "工具涵盖的内容",
+    "buildings": "个建筑，含费用和时间",
+    "heroes": "位英雄",
+    "research": "项研究科技",
+    "coreEvents": "个核心活动计算器",
+    "wiki": "个百科资料页，另有时间线"
+  },
+  "pages": {
+    "label": "全部页面",
+    "title": "按游戏的方式分组",
+    "description": "与应用内侧边栏的页面相同。",
+    "listLabel": "{group}页面",
+    "general": "通用"
+  },
+  "privacy": {
+    "label": "你的数据",
+    "title": "默认私密，需要时可带走",
+    "items": {
+      "browser": {
+        "title": "留在你的浏览器中",
+        "description": "无需注册账号。你的领主保存在这台设备的此浏览器中。"
+      },
+      "file": {
+        "title": "单个存档文件",
+        "description": "你输入的所有内容都存放在浏览器里的一个存档中，加载快，数据也不会分散。"
+      },
+      "chiefs": {
+        "title": "多个领主",
+        "description": "主号和小号都可以记录。在侧边栏切换。"
+      },
+      "backup": {
+        "title": "备份与恢复",
+        "description": "在设置中把数据导出为文件，再在其他浏览器或设备上导入。"
+      }
+    },
+    "backupLink": "打开备份与数据"
+  },
+  "faq": {
+    "label": "有疑问",
+    "title": "常见问题",
+    "items": {
+      "free": {
+        "question": "免费吗？",
+        "answer": "是的。没有任何收费，也没有需要解锁的内容。"
+      },
+      "data": {
+        "question": "我的数据在哪里？",
+        "answer": "在此浏览器中，保存在本站的本地存储里，不会发送到服务器。如果你清除本页面的网站数据，领主也会被删除，所以请先导出备份。"
+      },
+      "move": {
+        "question": "如何换到另一台设备？",
+        "answer": "打开设置，进入备份与数据，导出备份文件。在另一台设备上打开同一页面，进入设置、备份与数据，导入该文件。"
+      },
+      "chiefs": {
+        "question": "可以有多个领主吗？",
+        "answer": "可以，没有数量限制。每个领主都有各自的建筑、英雄、研究和活动，在侧边栏即可切换。"
+      },
+      "account": {
+        "question": "需要账号或游戏的存档文件吗？",
+        "answer": "不需要。等级由你自己填写。费用、时间和属性等游戏数据已内置在工具中。"
+      },
+      "official": {
+        "question": "这是官方应用吗？",
+        "answer": "不是。这是非官方的玩家工具，与 Whiteout Survival 或 Century Games 无关。页脚有完整声明。"
+      },
+      "wiki": {
+        "question": "百科是什么？",
+        "answer": "游戏数据的资料页集合，如建筑、英雄、宠物、道具和活动，另有服务器时间线。无需创建领主即可阅读。"
+      }
+    }
+  },
+  "closing": {
+    "title": "今天就开始记录",
+    "description": "创建第一个领主只需要一个名字。之后都可以修改。",
+    "wiki": "浏览百科"
+  }
+}

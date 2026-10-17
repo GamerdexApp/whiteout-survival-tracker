@@ -1,0 +1,54 @@
+{
+  "line": "기술 {total}개, 트리 3개: 성장 {growth}, 영토 {territory}, 전투 {battle}. 참고용이며 저장되지 않아요.",
+  "list": {
+    "title": "기술 노드",
+    "categoriesLabel": "기술 트리",
+    "categories": {
+      "all": "전체",
+      "Growth": "성장",
+      "Territory": "영토",
+      "Battle": "전투"
+    },
+    "search": "검색",
+    "searchPlaceholder": "이름이나 효과로 기술 검색",
+    "tier": "단계",
+    "allTiers": "모든 단계",
+    "tierOption": "{tier}단계",
+    "empty": "검색에 맞는 기술 노드가 없어요.",
+    "emptyHint": "검색어나 필터를 지워보세요.",
+    "columns": {
+      "tech": "기술",
+      "category": "분류",
+      "tier": "단계",
+      "levels": "레벨",
+      "maxBonus": "최대 보너스",
+      "cost": "1레벨 비용",
+      "time": "1레벨 시간",
+      "requires": "1레벨 조건"
+    },
+    "mobileMeta": "{category}, {tier}단계, {levels}",
+    "count": "{count, plural, other {기술 {amount}개}}"
+  },
+  "levels": "{count, plural, other {{amount}레벨}}",
+  "detail": {
+    "facts": "상세",
+    "levelsTitle": "레벨",
+    "none": "없음",
+    "fields": {
+      "category": "분류",
+      "tier": "단계",
+      "effect": "효과",
+      "stat": "능력치",
+      "levels": "레벨"
+    },
+    "columns": {
+      "level": "레벨",
+      "bonus": "보너스",
+      "cost": "비용",
+      "time": "시간",
+      "requires": "조건"
+    },
+    "level": "{level}레벨",
+    "requirement": "{name} {level}레벨"
+  }
+}

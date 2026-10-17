@@ -1,0 +1,117 @@
+{
+  "unknown": "未知",
+  "describe": {
+    "state": "State {number}",
+    "empty": "暂无详情"
+  },
+  "coreEvents": {
+    "svs": "SvS",
+    "showdown": "Alliance Showdown",
+    "king": "King of Icefield",
+    "hall": "Hall of Chief"
+  },
+  "count": "{count, plural, other {{amount}个领主}}",
+  "card": {
+    "active": "当前",
+    "noNotes": "无备注",
+    "furnace": "Furnace",
+    "state": "State",
+    "created": "创建于：{date}",
+    "lastModified": "最后修改：{date}",
+    "setActive": "设为当前",
+    "edit": "编辑",
+    "delete": "删除"
+  },
+  "dialog": {
+    "editTitle": "编辑领主",
+    "newTitle": "新建领主",
+    "newDescription": "起个名字。其余都是可选的。",
+    "cancel": "取消",
+    "save": "保存更改",
+    "create": "创建领主",
+    "errors": {
+      "name": "请输入此领主的名称。",
+      "stateNumber": "请输入 1 到{max}的整数。",
+      "serverStartDate": "请输入不晚于今天的日期。"
+    },
+    "name": "名称",
+    "stateNumber": {
+      "label": "State 编号",
+      "hint": "你的领主所在的 State。整数。"
+    },
+    "serverStartDate": {
+      "label": "开服日期",
+      "info": {
+        "label": "在哪里找到开服日期",
+        "screen": "打开游戏，从个人资料进入服务器界面。",
+        "date": "查看服务器开服的日期。如果只显示开服天数，请从今天往前推算相应的天数。",
+        "missing": "界面上没有日期？请询问联盟盟主，或查看 State 聊天。",
+        "tolerance": "前后相差 21 天以内即可。研究解锁使用 150 天和 600 天，所以三周的误差很少会改变结果。"
+      }
+    },
+    "generation": {
+      "label": "英雄已解锁至",
+      "hint": "更晚世代的英雄会在英雄页和计划中保持隐藏。",
+      "preLegendary": "第 0 代（传说之前）",
+      "numbered": "第{generation}代"
+    },
+    "events": {
+      "legend": "显示的核心活动",
+      "shownOf": "{shown} / {total}",
+      "hint": "隐藏的活动会从核心活动标签页及其活动记录中消失。随时可以重新开启。"
+    },
+    "notes": "备注",
+    "packs": {
+      "legend": "礼包",
+      "constructionLabel": "Construction Pack",
+      "constructionHint": "在建筑页开启第二个建造者。",
+      "constructionBusy": "第二个建造者正在升级。请先完成或取消，才能关闭此项。",
+      "marchLabel": "March Queue Pack",
+      "marchHint": "增加一个行军队列。会计入加成页面。"
+    }
+  },
+  "delete": {
+    "title": "删除领主",
+    "cancel": "取消",
+    "confirmButton": "删除领主",
+    "confirm": "确定要删除“<strong>{name}</strong>”吗？",
+    "summary": "{details} · 创建于{date}",
+    "note": "这会从此设备移除该领主及其所有等级、目标和备注。10 秒撤销时间结束后无法找回。",
+    "exportBackup": "先导出备份"
+  },
+  "page": {
+    "title": "领主",
+    "newChief": "新建领主",
+    "sort": {
+      "label": "排序方式",
+      "options": {
+        "lastModified": "最后修改",
+        "createdAt": "创建日期",
+        "name": "名称"
+      }
+    },
+    "subline": {
+      "none": "还没有领主。",
+      "total": "{chiefs}。",
+      "withActive": "{chiefs}。当前领主为{name}。"
+    },
+    "toasts": {
+      "backupTitle": "备份已下载",
+      "deleted": "已删除{name}",
+      "undo": "撤销"
+    },
+    "loading": "正在读取此浏览器中的已保存数据。准备好后会显示列表。",
+    "empty": {
+      "title": "还没有领主",
+      "description": "创建一个领主，即可记录建筑、英雄、装备、研究和你的升级计划。所有内容都保存在此浏览器中。",
+      "restore": "在设置中恢复备份"
+    },
+    "search": {
+      "label": "按名称搜索",
+      "showing": "显示{shown} / {total}",
+      "noMatchTitle": "没有匹配“{search}”的领主",
+      "noMatchDescription": "请检查拼写，或清除搜索以查看全部{count}个领主。",
+      "clear": "清除搜索"
+    }
+  }
+}

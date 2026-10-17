@@ -1,0 +1,117 @@
+{
+  "unknown": "Desconhecido",
+  "describe": {
+    "state": "Estado {number}",
+    "empty": "Ainda sem detalhes"
+  },
+  "coreEvents": {
+    "svs": "SvS",
+    "showdown": "Alliance Showdown",
+    "king": "King of Icefield",
+    "hall": "Hall of Chief"
+  },
+  "count": "{count, plural, one {{amount} chefe} other {{amount} chefes}}",
+  "card": {
+    "active": "Ativo",
+    "noNotes": "Sem notas",
+    "furnace": "Furnace",
+    "state": "Estado",
+    "created": "Criado: {date}",
+    "lastModified": "Última alteração: {date}",
+    "setActive": "Definir como ativo",
+    "edit": "Editar",
+    "delete": "Apagar"
+  },
+  "dialog": {
+    "editTitle": "Editar chefe",
+    "newTitle": "Novo chefe",
+    "newDescription": "Dar-lhe um nome. O resto é opcional.",
+    "cancel": "Cancelar",
+    "save": "Guardar alterações",
+    "create": "Criar chefe",
+    "errors": {
+      "name": "Introduzir um nome para este chefe.",
+      "stateNumber": "Introduzir um número inteiro de 1 a {max}.",
+      "serverStartDate": "Introduzir uma data que não seja no futuro."
+    },
+    "name": "Nome",
+    "stateNumber": {
+      "label": "Número do estado",
+      "hint": "O estado onde vive o chefe. Número inteiro."
+    },
+    "serverStartDate": {
+      "label": "Data de início do servidor",
+      "info": {
+        "label": "Onde encontrar a data de início do servidor",
+        "screen": "Abrir o jogo e ir ao ecrã Server a partir do perfil.",
+        "date": "Ler a data em que o servidor abriu. Se só mostrar o número do dia do servidor, contar esses dias para trás a partir de hoje.",
+        "missing": "Sem data no ecrã? Perguntar ao líder da aliança ou consultar o chat do estado.",
+        "tolerance": "Uma data com diferença até 21 dias para cada lado chega. Os desbloqueios de investigação usam 150 e 600 dias, por isso três semanas de erro raramente alteram o resultado."
+      }
+    },
+    "generation": {
+      "label": "Heróis desbloqueados até",
+      "hint": "Os heróis de gerações posteriores ficam ocultos na página Heróis e no Plano.",
+      "preLegendary": "Geração 0 (pré-Legendary)",
+      "numbered": "Geração {generation}"
+    },
+    "events": {
+      "legend": "Eventos principais visíveis",
+      "shownOf": "{shown} de {total}",
+      "hint": "Os eventos ocultos saem dos separadores de Eventos principais e do respetivo Registo de eventos. Podem ser reativados a qualquer momento."
+    },
+    "notes": "Notas",
+    "packs": {
+      "legend": "Pacotes",
+      "constructionLabel": "Construction Pack",
+      "constructionHint": "Abre o segundo construtor na página Edifícios.",
+      "constructionBusy": "O segundo construtor está a fazer uma melhoria. Concluí-la ou cancelá-la primeiro para desativar isto.",
+      "marchLabel": "March Queue Pack",
+      "marchHint": "Acrescenta uma fila de marcha. Conta na página Bónus."
+    }
+  },
+  "delete": {
+    "title": "Apagar chefe",
+    "cancel": "Cancelar",
+    "confirmButton": "Apagar chefe",
+    "confirm": "Tem a certeza de que quer apagar “<strong>{name}</strong>”?",
+    "summary": "{details} · criado em {date}",
+    "note": "Isto remove o chefe e todos os níveis, objetivos e notas deste dispositivo. Não há forma de o recuperar depois de terminarem os 10 segundos de Anular.",
+    "exportBackup": "Exportar primeiro uma cópia de segurança"
+  },
+  "page": {
+    "title": "Chefes",
+    "newChief": "Novo chefe",
+    "sort": {
+      "label": "Ordenar por",
+      "options": {
+        "lastModified": "Última alteração",
+        "createdAt": "Data de criação",
+        "name": "Nome"
+      }
+    },
+    "subline": {
+      "none": "Ainda sem chefes.",
+      "total": "{chiefs}.",
+      "withActive": "{chiefs}. {name} está ativo."
+    },
+    "toasts": {
+      "backupTitle": "Cópia de segurança transferida",
+      "deleted": "{name} apagado",
+      "undo": "Anular"
+    },
+    "loading": "A ler os dados guardados neste navegador. A lista aparece quando estiver pronta.",
+    "empty": {
+      "title": "Ainda sem chefes",
+      "description": "Crie um chefe para registar edifícios, heróis, equipamento, investigação e o plano de melhorias. Tudo fica neste navegador.",
+      "restore": "Restaurar uma cópia de segurança nas Definições"
+    },
+    "search": {
+      "label": "Pesquisar por nome",
+      "showing": "A mostrar {shown} de {total}",
+      "noMatchTitle": "Nenhum chefe corresponde a “{search}”",
+      "noMatchDescription": "Verifique a ortografia ou limpe a pesquisa para ver os {count} chefes.",
+      "clear": "Limpar pesquisa"
+    }
+  }
+}

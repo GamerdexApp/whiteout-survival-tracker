@@ -1,0 +1,176 @@
+{
+    "none": "なし",
+    "charmLabel": "チャーム{number}",
+    "view": {
+        "title": "チーフ装備",
+        "tabsLabel": "チーフ装備",
+        "gearSubline": "{name} · 6スロット、150の強化段階",
+        "charmsSubline": "{name} · 装備6個、各3チャーム、75の強化段階",
+        "tabs": {
+            "gear": "チーフ装備",
+            "charms": "チーフチャーム"
+        }
+    },
+    "shared": {
+        "plan": "プラン",
+        "autoSaveHint": "変更はすべてすぐに保存されます。ステッパーはパッケージの順に1段階ずつ動きます。",
+        "scoreToGain": "あと獲得するスコア",
+        "notes": "メモ",
+        "package": "パッケージ"
+    },
+    "gear": {
+        "scoreNow": "現在の装備スコア（6スロット）",
+        "powerNow": "現在の装備戦力",
+        "stepsToGoals": "すべての目標までのステップ",
+        "goalsHint": "目標はここでは読み取り専用です。プランで設定し、「プランを保存」を押してください。",
+        "stepWord": "ステップ",
+        "tiers": {
+            "title": "ティア",
+            "description": "パッケージでは150段階が{count}ティアに分かれています。ハイライトされたティアには、あなたの装備が1つ以上含まれます。",
+            "rows": "{rows}段階",
+            "names": {
+                "EpicT1": "Epic T1",
+                "MythicT1": "Mythic T1",
+                "MythicT2": "Mythic T2",
+                "LegendaryT1": "Legendary T1",
+                "LegendaryT2": "Legendary T2",
+                "LegendaryT3": "Legendary T3",
+                "LegendaryT4": "Legendary T4",
+                "LegendaryT5": "Legendary T5",
+                "LegendaryT6": "Legendary T6"
+            }
+        },
+        "notes": {
+            "setBonus": {
+                "title": "セットボーナスのルール",
+                "body": "同じティアの装備3個で防御、6個で攻撃のボーナスが、3つの部隊タイプすべてに付きます。レベルのない装備は数えません。ティアごとに値は1つです。"
+            },
+            "troopType": {
+                "title": "部隊タイプは手入力です",
+                "body": "CapとWatchは槍兵、CoatとPantsは歩兵、RingとWeaponは弓兵を強化します。パッケージの作者がWikiの文章から入力しました。"
+            },
+            "capacity": {
+                "title": "序盤の段階では容量が0です",
+                "body": "最初の26段階には、パッケージに出撃容量がないため、データに値が入るまでは0と表示されます。"
+            }
+        }
+    },
+    "charms": {
+        "scoreNow": "現在のチャームスコア（18チャーム）",
+        "powerNow": "現在のチャーム戦力",
+        "stagesToGoals": "すべての目標までのステージ",
+        "goalsHint": "目標はここでは読み取り専用で、プランで設定します。",
+        "stepWord": "ステージ",
+        "slotMeta": "{troop} · 3チャーム",
+        "slotStages": "、目標まで{stages}ステージ",
+        "notes": {
+            "secrets": {
+                "title": "Charm Secretsはレベル11から",
+                "body": "レベル11のステージ1から、ステージにCharm Secretsが必要になります。それ以前のステージはCharm GuideとCharm Designだけを使います。"
+            },
+            "look": {
+                "title": "チャームはレベルごとに見た目が変わります",
+                "body": "各チャームにはレベルごとに1つ、計18個のアイコンがあります。各装備は3つのチャームを持ち、装備の部隊タイプに従います。"
+            },
+            "estimate": {
+                "title": "ステージのスコアは推定値です",
+                "body": "レベルのスコアは、そこに至るステージで均等に分けています。この分け方はゲームでは確認されていません。"
+            }
+        }
+    },
+    "badge": {
+        "tier": "ティア{tier}",
+        "stars": "{count, plural, other {星{amount}個}}",
+        "tierAndStars": "{tier}、{stars}"
+    },
+    "row": {
+        "level": "{title}のレベル",
+        "progressLabel": "{total}段階中の{title}の進行状況",
+        "progress": "{total}中{progress}",
+        "stepsToGoal": " · 目標まで{steps}",
+        "goal": "目標 {name}",
+        "noGoal": "目標なし",
+        "stats": "ステータス {stat} · 戦力 {power}",
+        "statPercent": "{percent}%",
+        "capacity": " · 容量 {capacity}",
+        "lockedCurrent": "保存済みのレベル{name}は、サーバー経過日数によりロックされているため集計されません。{requirement}。",
+        "lockedGoal": "保存済みの目標{name}は、サーバー経過日数によりロックされているためプランに含まれません。{requirement}。"
+    },
+    "summary": {
+        "title": "すべての目標までの残り",
+        "derived": "算出値",
+        "score": "スコア",
+        "powerGain": "戦力の増加",
+        "noGoals": "目標が設定されていません。プランで目標を設定してください。",
+        "openPlan": "プランを開いてイベントポイントと内訳を見る"
+    },
+    "setBonus": {
+        "title": "解放されたセットボーナス",
+        "pieceSet": "{pieces}個セット",
+        "active": "有効",
+        "notActive": "無効",
+        "value": "{stat} +{percent}%",
+        "appliesTo": "{tierName}の装備、歩兵、槍兵、弓兵に適用",
+        "needs": "同じティアの装備が{pieces}個必要です。現在は{stat} +0%です。"
+    },
+    "plan": {
+        "gear": {
+            "title": "チーフ装備のプラン",
+            "description": "現在のレベルから目標までの素材、スコア、戦力",
+            "stepWord": "ステップ",
+            "conversionNote": "チェックでは交換を数えません。コンバーターには7つの交換レートがあり、それぞれに週ごとの上限があります。例えば、Design Plans 10個をLunar Amber 1個に、週500個まで交換できます。"
+        },
+        "charm": {
+            "title": "チーフチャームのプラン",
+            "description": "現在のレベルから目標までの素材、スコア、戦力",
+            "stepWord": "ステージ",
+            "conversionNote": "チェックでは交換を数えません。Charm Guide 2個でCharm Design 1個、その逆も可能で、どちらも40個でCharm Secrets 1個になります。"
+        },
+        "saved": "プランを保存しました（{date}）",
+        "close": "閉じる",
+        "save": "プランを保存",
+        "export": {
+            "button": "コアイベントへエクスポート",
+            "nothingToExport": "プランをエクスポートするには、現在のレベルより上の目標を設定してください。",
+            "gearScore": "チーフ装備スコア",
+            "charmScore": "チーフチャームスコア",
+            "power": "獲得戦力",
+            "powerReason": "チーフ装備やチーフチャームの戦力をポイント対象にするコアイベントの行はありません。"
+        },
+        "inputs": "入力",
+        "slotTroop": "{slot}、{troop}",
+        "from": "{level}から",
+        "goalLabel": "{label}の目標",
+        "slotGoalLabel": "{slot}の{label}の目標",
+        "inputsHint": "現在のレベルはページ上の値です。変更はそちらで行ってください。目標はページ上では読み取り専用で、ここで設定します。",
+        "result": "結果",
+        "score": "スコア",
+        "powerGain": "戦力の増加",
+        "events": {
+            "svs": "SvS State of Power",
+            "allianceShowdown": "Alliance Showdown",
+            "kingOfIcefield": "King of Icefield",
+            "hallOfChief": "Hall of Chief"
+        },
+        "bySlot": "スロット別",
+        "byCharm": "チャーム別",
+        "columnSlot": "スロット",
+        "columnCharm": "チャーム",
+        "slotCharm": "{slot} {charm}",
+        "converter": {
+            "title": "素材コンバーター",
+            "spend": "消費",
+            "get": "入手",
+            "limit": "上限",
+            "amount": "{name} {quantity}",
+            "perWeek": "週{limit}",
+            "noLimit": "週の上限なし"
+        },
+        "lockedCurrent": "保存済みのレベル{name}は、サーバー経過日数によりロックされています。{requirement}。"
+    },
+    "lock": {
+        "title": "サーバー経過日数でロック中",
+        "stop": "{name}（ロック中、{day}日目）",
+        "group": "{name}から: {requirement}。"
+    }
+}

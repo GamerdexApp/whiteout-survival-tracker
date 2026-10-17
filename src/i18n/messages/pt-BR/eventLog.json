@@ -1,0 +1,129 @@
+{
+  "title": "Registro do evento",
+  "events": {
+    "svs": "SvS, State of Power",
+    "showdown": "Alliance Showdown",
+    "king": "King of Icefield",
+    "hall": "Hall of Chief"
+  },
+  "tabs": {
+    "label": "Visualizações do registro do evento",
+    "current": "Evento atual",
+    "history": "Histórico"
+  },
+  "dates": {
+    "title": "Datas do evento",
+    "start": "Início",
+    "end": "Fim",
+    "days": "{count, plural, one {{amount} dia} other {{amount} dias}}",
+    "endBeforeStart": "A data de fim é anterior à data de início."
+  },
+  "results": {
+    "rank": "Posição",
+    "alliance": "Aliança",
+    "score": "Pontuação",
+    "allianceShort": "Alia.",
+    "scoreOf": "{day}, pontuação",
+    "rankOf": "{day}, posição",
+    "allianceOf": "{day}, posição da aliança",
+    "plan": "Plano {total}",
+    "notStarted": "Não iniciado",
+    "opensLater": "Abre depois",
+    "empty": "Vazio",
+    "locked": "Travado",
+    "lock": "Travar",
+    "unlock": "Destravar",
+    "lockDay": "Travar {day}",
+    "unlockDay": "Destravar {day}"
+  },
+  "cards": {
+    "svsDays": "Dias de preparação 1 a 5",
+    "days": "Dias",
+    "stages": "Etapas",
+    "rankHint": "Posição é a sua posição no estado. Aliança é a posição da sua aliança.",
+    "battleTitle": "Fase de Batalha",
+    "battleNote": "A pontuação e a posição da batalha são um resultado à parte. Não são somadas aos Dias 1 a 5."
+  },
+  "overall": {
+    "svsTitle": "Resultado geral, Dias 1 a 5",
+    "title": "Resultado geral",
+    "rank": "Posição geral",
+    "alliance": "Posição geral da aliança",
+    "svsTotal": "Total dos dias 1 a 5 travados",
+    "daysTotal": "Total dos dias travados",
+    "stagesTotal": "Total das etapas travadas",
+    "hint": "Travar impede que um número mude enquanto você joga. Os números travados podem ser destravados."
+  },
+  "footer": {
+    "close": "Fechar",
+    "endEvent": "Encerrar evento",
+    "readOnly": "O Histórico é só de leitura"
+  },
+  "end": {
+    "title": "Encerrar {event} e salvar no histórico?",
+    "dates": "{event}, {start} a {end}",
+    "noDates": "{event}, sem datas informadas",
+    "lockedTotal": "Total dos dias travados: {total}.",
+    "lockedTotalSvs": "Total dos dias 1 a 5 travados: {total}.",
+    "noRanks": "A posição geral e a posição da aliança estão vazias.",
+    "allLocked": "Todos os dias estão travados.",
+    "unlocked": "{count, plural, one {{amount} dia não está travado.} other {{amount} dias não estão travados.}} Eles são salvos como informados, e dias sem números ficam vazios.",
+    "unlockedList": "Não travados: {days}.",
+    "what": "O que acontece",
+    "saves": "Salva no Histórico as datas, as pontuações e posições diárias e o resultado geral, com o total planejado de cada dia.",
+    "clearsCounts": "Zera as contagens de todos os dias, então cada dia do plano começa em 0.",
+    "clearsPlans": "Limpa os planos exportados para este evento e as marcações da lista.",
+    "keeps": "Só este evento é limpo. Suas metas e planos em outras páginas continuam.",
+    "cancel": "Cancelar",
+    "confirm": "Encerrar evento e começar um novo",
+    "toastTitle": "Evento encerrado",
+    "toastMessage": "{event} foi salvo no Histórico. O evento recomeça sem datas.",
+    "undo": "Desfazer",
+    "lockedTotalStages": "Total das etapas travadas: {total}."
+  },
+  "history": {
+    "intro": "Eventos {event} que você encerrou, do mais novo ao mais antigo. Encerrar um evento salva o registro dele aqui, e ele não pode ser editado depois, só removido. <link>Abra o Histórico para ver plano e realizado e as melhorias planejadas.</link>",
+    "empty": "Nenhum evento encerrado ainda. Encerre um evento para salvar o registro dele aqui.",
+    "cardTitle": "{event}, {start} a {end}",
+    "cardNoDates": "{event}, sem datas",
+    "ended": "Encerrado em {date}",
+    "svsTotal": "Dias 1 a 5",
+    "total": "Pontuação total",
+    "overallRank": "Posição geral",
+    "allianceRank": "Posição da aliança",
+    "notSet": "Não definido",
+    "showDays": "Mostrar dias",
+    "hideDays": "Ocultar dias",
+    "remove": "Remover do histórico",
+    "removedTitle": "Removido do histórico",
+    "removedMessage": "{event} foi removido do Histórico.",
+    "undo": "Desfazer",
+    "noValue": "-"
+  },
+  "checklist": {
+    "title": "Lista do plano",
+    "description": "{day}, o que fazer",
+    "dayChips": "Dia",
+    "castleTitle": "Inscreva-se em uma posição do Castelo para {day}",
+    "castleBody": "As posições do Castelo dão bônus para o dia seguinte. Inscreva-se antes de hoje acabar para que o bônus valha em {day}.",
+    "castleCheck": "Inscrito para {day}",
+    "done": "{done} de {total} feitas",
+    "progress": "Ações marcadas",
+    "planLine": "Plano do dia: {points} pontos. Só aparecem as ações com contagem acima de 0. As contagens vêm da página Eventos principais.",
+    "empty": "Nenhuma ação tem contagem neste dia. Adicione contagens na página Eventos principais.",
+    "resources": "Recursos a usar",
+    "resourcesHint": "Itens que o dia gasta. Confira seu estoque antes de começar.",
+    "actions": "Ações",
+    "count": "x{count}",
+    "points": "{points} pts",
+    "clear": "Limpar marcações",
+    "close": "Fechar",
+    "dayTitle": "{day}: {name}"
+  },
+  "eventShort": {
+    "svs": "SvS",
+    "showdown": "Alliance Showdown",
+    "king": "King of Icefield",
+    "hall": "Hall of Chief"
+  }
+}

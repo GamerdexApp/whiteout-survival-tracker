@@ -1,0 +1,104 @@
+{
+  "line": "깃발 구간 {banners}개, 시설 {facilities}개, 성채, 거점, 요새 항목 {fortresses}개예요. 참고용이며 저장되지 않아요.",
+  "filters": {
+    "search": "검색",
+    "searchPlaceholder": "구간, 시설, 요새 검색",
+    "structure": "구조물",
+    "structures": {
+      "all": "모든 구조물",
+      "banners": "깃발",
+      "facilities": "지도 시설",
+      "castle": "성채",
+      "stronghold": "거점",
+      "fortress": "요새"
+    }
+  },
+  "empty": "검색에 맞는 항목이 이 목록에 없어요.",
+  "none": "없음",
+  "banners": {
+    "title": "깃발 건설 비용",
+    "columns": {
+      "range": "레벨 구간",
+      "min": "최소",
+      "max": "최대",
+      "cost": "레벨당 비용"
+    },
+    "noCost": "표시된 항목 없음",
+    "count": "{count, plural, other {구간 {amount}개}}",
+    "detail": {
+      "title": "깃발 비용",
+      "fields": {
+        "range": "레벨 구간",
+        "min": "최저 레벨",
+        "max": "최고 레벨",
+        "cost": "레벨당 비용"
+      }
+    }
+  },
+  "facilities": {
+    "title": "지도 시설",
+    "count": "{count, plural, other {시설 {amount}개}}",
+    "columns": {
+      "facility": "시설",
+      "bonus": "보너스",
+      "level": "{level}레벨",
+      "listed": "등록된 레벨",
+      "ownLimit": "보유 한도"
+    },
+    "cell": "지도에 {available}곳",
+    "listedOf": "{total}개 중 {listed}개",
+    "levelsNote": "데이터에는 이 시설의 레벨 {total}개 중 {listed}개가 있어요. 없는 레벨은 알 수 없음으로 표시돼요.",
+    "detail": {
+      "title": "{name}의 레벨",
+      "level": "{level}레벨",
+      "columns": {
+        "level": "레벨",
+        "booster": "부스터",
+        "injured": "중상",
+        "losses": "손실",
+        "ownLimit": "보유 한도",
+        "available": "지도 위",
+        "locations": "위치 (x, y)"
+      },
+      "percent": "{value}%",
+      "location": "{x}, {y}"
+    }
+  },
+  "fortresses": {
+    "title": "성채, 거점, 요새",
+    "kinds": {
+      "castle": "성채",
+      "stronghold": "거점",
+      "fortress": "요새"
+    },
+    "columns": {
+      "name": "이름",
+      "kind": "종류",
+      "x": "X",
+      "y": "Y",
+      "phases": "단계",
+      "phaseOne": "1단계 보상"
+    },
+    "mobileMeta": "{kind}, x {x}, y {y}",
+    "count": "{count, plural, other {구조물 {amount}개}}"
+  },
+  "map": {
+    "title": "지도 임시 화면",
+    "label": "x, y 값으로 그린 성채, 거점, 요새 지도",
+    "note": "성채, 거점, 요새를 x, y 값에 따라 {size} x {size} 정사각형 위에 그렸어요. 정사각형 크기는 추정값이며 패키지에 지도 크기는 없어요.",
+    "legend": {
+      "castle": "사각형: 성채",
+      "stronghold": "마름모: 거점",
+      "fortress": "원: 요새"
+    }
+  },
+  "detail": {
+    "title": "단계별 보상",
+    "phases": "{count, plural, other {{amount}단계}}",
+    "columns": {
+      "phase": "단계",
+      "reward": "보상"
+    },
+    "noRewards": "이 구조물의 단계별 보상이 패키지에 없어요."
+  }
+}

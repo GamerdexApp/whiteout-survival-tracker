@@ -1,0 +1,90 @@
+{
+    "page": {
+        "title": "Tundra Album"
+    },
+    "view": {
+        "subline": "{chief} · {details} · {complete} von {total} Alben komplett"
+    },
+    "summary": {
+        "label": "Komplette Alben",
+        "value": "{done} von {total}",
+        "progress": "Komplette Alben",
+        "inData": "{shown} von {all} Alben sind in den Daten"
+    },
+    "buffs": {
+        "title": "Jetzt zählende Buffs",
+        "derived": "Abgeleitet",
+        "none": "Noch kein Album ist komplett, daher zählt kein Tundra-Album-Buff.",
+        "note": "Nur komplette Alben zählen. Diese Buffs fließen in die Seite <link>Boni</link> ein."
+    },
+    "album": {
+        "status": {
+            "complete": "Komplett",
+            "inProgress": "In Arbeit"
+        },
+        "buffWhenComplete": "Buff bei Abschluss",
+        "puzzlesDone": "Puzzles fertig",
+        "puzzlesValue": "{done} von {total}",
+        "puzzlesProgress": "{album} Puzzles fertig",
+        "completionRewards": "Abschlussbelohnungen",
+        "markComplete": "Album als komplett markieren",
+        "notCounting": "Zählt noch nicht. {buff} zählt auf der Boni-Seite erst, wenn alle {total} Puzzles fertig sind. Album als komplett markieren setzt alle {total} Puzzles und zeigt eine Meldung mit Rückgängig.",
+        "counting": "Zählt jetzt. {buff} steht auf der Boni-Seite. Ein Puzzle abzuhaken nimmt ihn wieder weg.",
+        "piecesValue": "{collected} von {total} Teilen gesammelt"
+    },
+    "puzzle": {
+        "pieces": "{count, plural, one {{amount} Teil} other {{amount} Teile}}, Sterne 1 bis 5: {split}",
+        "reward": "Belohnung",
+        "done": "Puzzle fertig, alle Teile gesammelt",
+        "doneFor": "Fertig, {puzzle}",
+        "collectedLabel": "Gesammelte Teile",
+        "collected": "{collected} von {total}",
+        "pieceLabel": "{name}, {stars} Sterne",
+        "pieceHint": "Wähle die Teile, die du hast. Das Puzzle als fertig zu markieren sammelt alle.",
+        "allCollected": "Das Puzzle ist fertig, daher sind alle Teile gesammelt."
+    },
+    "reward": {
+        "line": "{amount} {item}",
+        "sized": "{amount} {item} ({size})",
+        "unknownItem": "Unbekanntes Item"
+    },
+    "toast": {
+        "markedTitle": "{album} als komplett markiert",
+        "markedMessage": "Alle {total} Puzzles sind fertig.",
+        "unmarkedTitle": "{puzzle} nicht mehr markiert",
+        "unmarkedMessage": "{album} ist wieder in Arbeit und sein Buff ist aus den Boni verschwunden.",
+        "undo": "Rückgängig"
+    },
+    "notInData": "Die anderen {count} der {total} Tundra Alben sind noch nicht in den Daten. Sie werden hinzugefügt, sobald das Paket sie hat.",
+    "pieces": {
+        "label": "Gesammelte Teile",
+        "value": "{collected} von {available}",
+        "progress": "Gesammelte Teile in allen Alben",
+        "viewRewards": "Teile-Belohnungen ansehen"
+    },
+    "rewardsFlyout": {
+        "title": "Belohnungen nach Teileanzahl",
+        "description": "Die Belohnungen, die du erhältst, wenn sich die Teile aller Alben summieren",
+        "close": "Schließen",
+        "collected": "Gesammelte Teile",
+        "collectedValue": "{collected} von {available}",
+        "progress": "Gesammelte Teile in allen Alben",
+        "reached": "{reached} von {all} Belohnungen nach Teileanzahl erreicht",
+        "next": "Die nächste Belohnung gibt es bei {pieces} Teilen, noch {missing} zu sammeln.",
+        "allReached": "Jede Belohnung nach Teileanzahl in den Daten ist erreicht.",
+        "totalSoFar": "Bisher verdiente Belohnungen",
+        "tree": "Belohnungen nach gesammelten Teilen",
+        "tier": "Belohnung {tier} bei {pieces} Teilen",
+        "stateReached": "Gesammelt",
+        "stateNext": "Als Nächstes, noch {missing}",
+        "stateLater": "Noch {missing}"
+    },
+    "picker": {
+        "label": "Alben",
+        "title": "Alben",
+        "complete": "Album komplett",
+        "puzzles": "{done} von {total} Puzzles",
+        "pieces": "{collected} von {total} Teilen",
+        "piecesProgress": "{album} Teile gesammelt"
+    }
+}

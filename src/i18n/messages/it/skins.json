@@ -1,0 +1,78 @@
+{
+  "page": {
+    "title": "Skin"
+  },
+  "view": {
+    "subline": "{chief} · {details} · {owned} skin su {total} possedute"
+  },
+  "owned": {
+    "label": "Possedute",
+    "value": "{owned} su {total}",
+    "progress": "Skin possedute",
+    "withBonus": "{withBonus} skin su {total} hanno un bonus"
+  },
+  "totals": {
+    "title": "Bonus delle skin possedute",
+    "estimate": "Stima",
+    "percent": "+{amount}%",
+    "flat": "+{amount}",
+    "none": "Nessuna skin posseduta ha ancora un bonus.",
+    "note": "{count, plural, one {Somma del bonus di {amount} skin posseduta} other {Somma del bonus di {amount} skin possedute}}, per statistica, calcolata dall'app. Presume che ogni skin posseduta valga insieme alle altre. Troop Attack e Troops Attack vengono sommati."
+  },
+  "expiry": {
+    "title": "La scadenza non è tracciata.",
+    "text": "La durata (permanente, 30 giorni, per posizione) è solo nel testo della descrizione. Una skin a tempo resta posseduta finché non la deselezioni."
+  },
+  "search": {
+    "label": "Cerca skin",
+    "placeholder": "Cerca skin per nome o fonte"
+  },
+  "filters": {
+    "button": "Filtri",
+    "title": "Filtri",
+    "description": "Scegli cosa mostra l'elenco Skin",
+    "reset": "Azzera",
+    "showButton": "{count, plural, one {Mostra {amount} skin} other {Mostra {amount} skin}}",
+    "skinType": "Tipo di skin",
+    "typeAll": "Tutti {amount}",
+    "typeOption": "{type} {amount}",
+    "owned": "Possesso",
+    "bonus": "Bonus",
+    "order": "Ordine",
+    "notSaved": "I filtri non vengono salvati.",
+    "ownedOptions": {
+      "all": "Tutte le skin",
+      "owned": "Possedute",
+      "notOwned": "Non possedute"
+    },
+    "bonusOptions": {
+      "any": "Qualsiasi",
+      "has": "Con bonus",
+      "none": "Senza bonus"
+    },
+    "orderOptions": {
+      "game": "Ordine del gioco",
+      "name": "Nome, dalla A alla Z",
+      "owned": "Prima le possedute"
+    }
+  },
+  "status": {
+    "showing": "Mostrate {shown} skin su {total}.",
+    "showingFiltered": "Mostrate {shown} skin su {total}. Filtri: {filters}.",
+    "showMore": "{count, plural, one {Mostra {amount} skin in più} other {Mostra {amount} skin in più}}"
+  },
+  "empty": {
+    "title": "Nessuna skin corrisponde",
+    "description": "Cambia la ricerca o i filtri per vedere le skin.",
+    "reset": "Azzera filtri"
+  },
+  "card": {
+    "bonus": "Bonus",
+    "source": "Fonte",
+    "unknown": "Sconosciuta",
+    "bonusValue": "{value} {stat}",
+    "owned": "Posseduta",
+    "ownedLabel": "Posseduta: {name}, {type}",
+    "domainWarning": "Il testo del bonus dominio è nella descrizione e non viene contato."
+  }
+}

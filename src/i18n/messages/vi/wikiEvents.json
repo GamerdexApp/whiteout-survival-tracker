@@ -1,0 +1,145 @@
+{
+    "line": "{events} sự kiện: {alliance} liên minh, {solo} cá nhân, {rookie} tân thủ và {holiday} lễ hội. Có giai đoạn, cách tính điểm, phần thưởng, mẹo, cửa hàng và xếp hạng ở nơi gói dữ liệu có.",
+    "list": {
+        "title": "Sự kiện",
+        "showing": "Hiển thị {shown} trên {total}",
+        "search": "Tìm kiếm",
+        "searchPlaceholder": "Tìm sự kiện theo tên",
+        "scoringFilter": "Cách tính điểm",
+        "categoryLabel": "Danh mục",
+        "all": "Tất cả",
+        "table": "Sự kiện",
+        "event": "Sự kiện",
+        "category": "Danh mục",
+        "frequency": "Tần suất (văn bản tự do)",
+        "duration": "Thời lượng (văn bản tự do)",
+        "scoringRows": "Dòng tính điểm",
+        "noScoringRows": "Không có dòng tính điểm",
+        "emptyTitle": "Không có sự kiện phù hợp",
+        "emptyDescription": "Đổi từ khóa, danh mục hoặc cách tính điểm."
+    },
+    "category": {
+        "alliance": "Liên minh",
+        "solo": "Cá nhân",
+        "rookie": "Tân thủ",
+        "holiday": "Lễ hội"
+    },
+    "scoring": {
+        "any": "Mọi cách tính điểm",
+        "ranking": "Xếp hạng",
+        "tier": "Bậc",
+        "milestones": "Mốc",
+        "waves": "Đợt",
+        "participation": "Tham gia"
+    },
+    "parts": {
+        "days": "{count, plural, other {{amount} ngày}}",
+        "tiers": "{count, plural, other {{amount} bậc}}",
+        "missions": "{count, plural, other {{amount} nhiệm vụ}}",
+        "waves": "{count, plural, other {{amount} đợt}}",
+        "versions": "{count, plural, other {{amount} phiên bản}}",
+        "levels": "{count, plural, other {{amount} cấp}}"
+    },
+    "detail": {
+        "title": "Chi tiết",
+        "category": "Danh mục",
+        "frequency": "Tần suất",
+        "duration": "Thời lượng",
+        "summary": "Tóm tắt",
+        "requirements": "Yêu cầu",
+        "scoring": "Cách tính điểm",
+        "noRequirements": "Không có"
+    },
+    "phases": {
+        "title": "Giai đoạn",
+        "table": "Giai đoạn sự kiện",
+        "phase": "Giai đoạn",
+        "description": "Mô tả"
+    },
+    "scoringRows": {
+        "title": "Dòng tính điểm: {name}",
+        "table": "Hành động tính điểm",
+        "action": "Hành động",
+        "points": "Điểm",
+        "victoryPoints": "{amount} điểm chiến thắng",
+        "milestones": "Mốc của {name}",
+        "allianceMilestones": "Mốc liên minh của {name}"
+    },
+    "missions": {
+        "title": "Nhiệm vụ",
+        "table": "Nhiệm vụ sự kiện",
+        "mission": "Nhiệm vụ",
+        "group": "Nhóm",
+        "points": "Điểm",
+        "rewards": "Phần thưởng"
+    },
+    "tiers": {
+        "title": "Bậc",
+        "table": "Bậc sự kiện",
+        "tier": "Bậc",
+        "score": "Mục tiêu",
+        "scoreValue": "{amount} {unit}",
+        "scoreValuePoints": "{amount} điểm",
+        "rewards": "Phần thưởng",
+        "note": "Ghi chú"
+    },
+    "rankings": {
+        "title": "Phần thưởng xếp hạng",
+        "personal": "Phần thưởng xếp hạng cá nhân",
+        "alliance": "Phần thưởng xếp hạng liên minh",
+        "basedOn": "Phần thưởng xếp hạng dựa trên {basis}",
+        "table": "Phần thưởng xếp hạng",
+        "rank": "Hạng",
+        "starChange": "Thay đổi sao",
+        "rewards": "Phần thưởng"
+    },
+    "rewards": {
+        "title": "Phần thưởng",
+        "partial": "Danh sách phần thưởng này chưa đầy đủ.",
+        "amountName": "{amount} {name}"
+    },
+    "pointLevels": {
+        "title": "Cấp điểm",
+        "table": "Cấp điểm",
+        "level": "Cấp",
+        "personal": "Điểm cá nhân",
+        "alliance": "Điểm liên minh",
+        "rewards": "Phần thưởng"
+    },
+    "waves": {
+        "title": "Đợt",
+        "table": "Đợt tấn công",
+        "wave": "Đợt",
+        "target": "Mục tiêu",
+        "rule": "Quy tắc",
+        "city": "Thành phố",
+        "headquarters": "Tổng hành dinh"
+    },
+    "zones": {
+        "title": "Khu vực",
+        "table": "Khu vực sự kiện",
+        "zone": "Khu vực",
+        "days": "Ngày",
+        "statSources": "Nguồn chỉ số",
+        "unlock": "Mở khóa"
+    },
+    "shop": {
+        "title": "Cửa hàng",
+        "titleNamed": "Cửa hàng: {name}",
+        "table": "Ưu đãi cửa hàng",
+        "offer": "Ưu đãi",
+        "cost": "Giá",
+        "costValue": "{amount} {currency}",
+        "limit": "Giới hạn",
+        "contents": "Nội dung"
+    },
+    "versions": {
+        "title": "{name}",
+        "missions": "Nhiệm vụ",
+        "chests": "Rương"
+    },
+    "tips": {
+        "title": "Mẹo"
+    },
+    "recordLine": "Sự kiện {category} với giai đoạn, cách tính điểm, phần thưởng và xếp hạng."
+}

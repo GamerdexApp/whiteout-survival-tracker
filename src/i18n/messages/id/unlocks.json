@@ -1,0 +1,27 @@
+{
+  "lock": {
+    "day": "Terbuka di hari server {day}",
+    "dayAndDate": "Terbuka di hari server {day}, {date}"
+  },
+  "areas": {
+    "pets": "Hewan Peliharaan",
+    "fireCrystal": "Level Fire Crystal",
+    "experts": "Ahli",
+    "chiefGear": "Perlengkapan Chief",
+    "chiefCharms": "Jimat Chief",
+    "warAcademy": "War Academy dan riset T12"
+  },
+  "dialog": {
+    "legend": "Konten yang terbuka",
+    "hint": "Kunci mengikuti usia server dari tanggal mulai server. Kalau servermu agak berbeda, pilih tahap yang sebenarnya kamu punya. Item terkunci tetap terlihat dan datamu tetap tersimpan.",
+    "auto": "Otomatis, {current}",
+    "autoUnknown": "Otomatis, isi tanggal mulai server untuk memakainya",
+    "autoNone": "belum ada yang terbuka",
+    "none": "Belum ada yang terbuka",
+    "stepPets": "Hari {day}, {count} dari {total} hewan peliharaan",
+    "stepExperts": "Hari {day}, {count} dari {total} ahli",
+    "stepFc": "Hari {day}, sampai {last}, tanpa tahapnya",
+    "stepNamed": "Hari {day}, {name}",
+    "pickLabel": "{area} terbuka sampai"
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "page": {
+    "title": "Cronologia"
+  },
+  "events": {
+    "svs": "SvS",
+    "showdown": "Alliance Showdown",
+    "king": "King of Icefield",
+    "hall": "Hall of Chief"
+  },
+  "title": {
+    "dated": "{event}, da {start} a {end}",
+    "undated": "{event}"
+  },
+  "ended": "Terminato {date}",
+  "tabs": {
+    "label": "Filtra per evento",
+    "all": "Tutti gli eventi"
+  },
+  "list": {
+    "intro": "Eventi che hai terminato dal Registro eventi, dal più recente. I punteggi sono dei Giorni da 1 a 5 per SvS, e la Fase di battaglia è tenuta a parte. Apri un evento per vedere piano contro risultato e i potenziamenti pianificati.",
+    "event": "Evento",
+    "plan": "Piano",
+    "actual": "Effettivo",
+    "diff": "Diff",
+    "rank": "Posizione",
+    "alliance": "Alleanza",
+    "rankLine": "Posizione {rank}, alleanza {alliance}",
+    "open": "Apri",
+    "openEvent": "Apri {name}",
+    "none": "Ancora nessun evento terminato di questo tipo.",
+    "diffWithPercent": "{amount} ({percent}%)"
+  },
+  "empty": {
+    "title": "Ancora nessun evento",
+    "description": "Gli eventi che termini dal Registro eventi negli Eventi principali vengono salvati qui con piano e risultati.",
+    "action": "Apri Eventi principali"
+  },
+  "notFound": {
+    "title": "Evento non trovato",
+    "description": "Questo evento non è nella cronologia del capo attivo. Potrebbe essere stato rimosso, oppure l'evento è nascosto negli Eventi principali.",
+    "action": "Torna alla Cronologia"
+  },
+  "unknown": "Non impostato",
+  "belowPlan": "Sotto il piano",
+  "atOrAbovePlan": "Pari o sopra il piano",
+  "breadcrumb": {
+    "label": "Percorso"
+  },
+  "tiles": {
+    "plan": "Piano",
+    "actual": "Effettivo",
+    "difference": "Differenza",
+    "overall": "Generale",
+    "alliance": "Alleanza",
+    "days": "Giorni da 1 a 5",
+    "rank": "Posizione",
+    "rankDays": "Posizione, Giorni da 1 a 5",
+    "percent": "{percent}%"
+  },
+  "compare": {
+    "title": "Piano contro risultato",
+    "titleDays": "Piano contro risultato, Giorni da 1 a 5",
+    "day": "Giorno",
+    "plan": "Piano",
+    "actual": "Effettivo",
+    "diff": "Diff",
+    "rank": "Pos.",
+    "ally": "All.",
+    "total": "Totale",
+    "share": "{percent}% del piano",
+    "shareLine": "{percent}% del piano, pos. {rank}, all. {ally}",
+    "barLabel": "{day}, effettivo in percentuale del piano"
+  },
+  "battle": {
+    "title": "Fase di battaglia",
+    "note": "Ha punteggio e posizione propri. Non si somma al totale dei Giorni da 1 a 5."
+  },
+  "upgrades": {
+    "title": "Potenziamenti pianificati",
+    "titleCount": "Potenziamenti pianificati, {count}",
+    "summary": "I potenziamenti nel piano di questo evento, raggruppati per tipo. {done} su {count} sono stati fatti.",
+    "summaryUnchecked": "I potenziamenti nel piano di questo evento, raggruppati per tipo.",
+    "none": "Nessun piano è stato esportato in questo evento, quindi non ci sono potenziamenti pianificati da mostrare.",
+    "groupTitle": "{name}, {count}",
+    "groupStats": "{done} su {count} fatti, potenza +{power}, Fire Crystals {fireCrystals}",
+    "groupStatsUnchecked": "Potenza +{power}, Fire Crystals {fireCrystals}",
+    "power": "+{power} potenza",
+    "plannedDay": "Pianificato {day}",
+    "done": "Fatto",
+    "notDone": "Non fatto",
+    "levelsFrom": "da {from} a {to}",
+    "levelsTo": "a {to}",
+    "levelsResearchFrom": "Da livello {from} a {to}",
+    "levelsResearchTo": "a livello {to}",
+    "costAmount": "{amount} {name}"
+  },
+  "pages": {
+    "buildings": "Edifici",
+    "research": "Ricerca",
+    "chiefGear": "Equipaggiamento del capo",
+    "chiefCharms": "Amuleti del capo",
+    "heroGear": "Equip. degli eroi",
+    "heroes": "Eroi",
+    "pets": "Animali",
+    "experts": "Esperti",
+    "troops": "Truppe"
+  }
+}

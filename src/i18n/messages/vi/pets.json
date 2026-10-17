@@ -1,0 +1,209 @@
+{
+    "page": {
+        "title": "Thú cưng"
+    },
+    "view": {
+        "subline": "{chief} · {details} · đã mở {unlocked} trên {total} thú cưng"
+    },
+    "rarities": {
+        "Common": "Common",
+        "Uncommon": "Uncommon",
+        "Rare": "Rare",
+        "Epic": "Epic",
+        "Legendary": "Legendary"
+    },
+    "unlock": {
+        "afterFurnace": "Ngày {days} và Furnace {level}",
+        "afterPet": "Ngày {days} và {pet} cấp {level}"
+    },
+    "summary": {
+        "unlocked": "Đã mở",
+        "unlockedValue": "{count} trên {total}",
+        "unlockedNote": "Do bạn đặt",
+        "power": "Tổng sức mạnh",
+        "powerNote": "Sức mạnh cấp, thăng tiến và tinh luyện của thú cưng đã mở",
+        "powerUnknown": "Sức mạnh cấp, thăng tiến và tinh luyện của thú cưng đã mở, {amount} không rõ",
+        "next": "Mở kế tiếp",
+        "allUnlocked": "Đã mở hết",
+        "allUnlockedNote": "Mọi thú cưng đã mở",
+        "lockedNote": "{count} đã khóa cho đến một ngày máy chủ sau này"
+    },
+    "totals": {
+        "attackDefense": "Tấn công và Phòng thủ của quân",
+        "attack": "Tấn công",
+        "defense": "Phòng thủ",
+        "lethality": "Sát thương",
+        "health": "Máu",
+        "gain": "+{value}%",
+        "types": {
+            "infantry": "Bộ binh",
+            "lancer": "Kỵ binh",
+            "marksman": "Xạ thủ"
+        }
+    },
+    "search": {
+        "label": "Tìm thú cưng",
+        "placeholder": "Tìm trong {amount} thú cưng theo tên"
+    },
+    "status": {
+        "showing": "Hiển thị {shown} trên {total} {count, plural, other {thú cưng}}.",
+        "filters": " Bộ lọc: {list}.",
+        "filterNames": {
+            "rarity": "Độ hiếm",
+            "status": "Trạng thái",
+            "advanced": "Thăng tiến",
+            "order": "Thứ tự"
+        },
+        "readOnlyGoals": "Mục tiêu ở đây chỉ để xem và được đặt trong Kế hoạch. Mục tiêu bằng giá trị hiện tại nghĩa là không có mục tiêu.",
+        "showMore": "Hiện thêm {count, plural, other {{amount} thú cưng}}"
+    },
+    "empty": {
+        "title": "Không có thú cưng phù hợp",
+        "description": "Đổi từ khóa hoặc bộ lọc để xem thêm thú cưng.",
+        "reset": "Đặt lại bộ lọc"
+    },
+    "toast": {
+        "lockedTitle": "Đã khóa {name}",
+        "lockedMessage": "Cấp, thăng tiến và tinh luyện của nó được giữ lại.",
+        "undo": "Hoàn tác"
+    },
+    "card": {
+        "summary": "{rarity} · cấp tối đa {max}",
+        "unlocked": "Đã mở",
+        "unlockedLabel": "{pet} đã mở",
+        "cooldown": "Hồi chiêu {time}",
+        "cooldownByTier": "Hồi chiêu đổi theo bậc",
+        "cooldownUnknown": "Hồi chiêu không rõ",
+        "skillTiers": "{count, plural, other {{amount} bậc kỹ năng}}",
+        "unlockRule": "Điều kiện mở",
+        "ruleMet": "Bạn đạt điều kiện này",
+        "level": "Cấp (tối đa {max})",
+        "levelLabel": "Cấp của {pet}",
+        "goal": "Mục tiêu {level}",
+        "noGoal": "Không có mục tiêu",
+        "advanced": "Đã thăng tiến",
+        "advancedHint": "Có thể đặt Đã thăng tiến ở các cấp 10, 20, 30 và tiếp tục như vậy.",
+        "refinement": "Tinh luyện",
+        "refinementMax": "tối đa {max}% mỗi chỉ số",
+        "refineLabel": "{stat} của {pet}",
+        "percentSign": "%",
+        "attack": "Tấn +{value}%",
+        "defense": "Thủ +{value}%",
+        "power": "Sức mạnh {value}",
+        "powerUnknown": "Sức mạnh không rõ",
+        "powerParts": "Cấp và thăng tiến {base}, tinh luyện {refining}"
+    },
+    "filters": {
+        "button": "Bộ lọc",
+        "title": "Bộ lọc",
+        "description": "Chọn nội dung hiển thị trong danh sách Thú cưng",
+        "rarity": "Độ hiếm",
+        "rarityAll": "Tất cả {amount}",
+        "rarityOption": "{rarity} {amount}",
+        "rarities": {
+            "Common": "Common",
+            "Uncommon": "Uncommon",
+            "Rare": "Rare",
+            "Epic": "Epic",
+            "Legendary": "Legendary"
+        },
+        "status": "Trạng thái",
+        "statusOptions": {
+            "all": "Mọi thú cưng",
+            "unlocked": "Đã mở",
+            "locked": "Đã khóa"
+        },
+        "advanced": "Thăng tiến",
+        "advancedOptions": {
+            "any": "Bất kỳ",
+            "advanced": "Đã thăng tiến",
+            "notAdvanced": "Chưa thăng tiến"
+        },
+        "order": "Thứ tự",
+        "orderOptions": {
+            "game": "Thứ tự trong game",
+            "name": "Tên, A đến Z",
+            "level": "Cấp, cao nhất trước"
+        },
+        "notSaved": "Bộ lọc không được lưu.",
+        "reset": "Đặt lại",
+        "show": "Hiện {count, plural, other {{amount} thú cưng}}"
+    },
+    "plan": {
+        "button": "Kế hoạch",
+        "title": "Lập kế hoạch Thú cưng",
+        "description": "Thức ăn, vật phẩm, chỉ số và điểm sự kiện để đạt mục tiêu của bạn",
+        "saved": "Đã lưu kế hoạch {date}",
+        "notSavedYet": "Chưa lưu kế hoạch",
+        "close": "Đóng",
+        "save": "Lưu kế hoạch",
+        "exportButton": "Xuất sang Sự kiện chính",
+        "exportNothing": "Kế hoạch không có điểm thăng tiến để xuất.",
+        "export": {
+            "advancement": "Điểm thăng tiến thú cưng",
+            "commonMark": "Common Wild Marks",
+            "advancedMark": "Advanced Wild Marks",
+            "marksDetail": "Tính từ Tài nguyên."
+        },
+        "noPets": "Hãy thêm một thú cưng đã mở để lập kế hoạch cho các cấp của nó.",
+        "add": {
+            "title": "Thêm thú cưng",
+            "selectLabel": "Thú cưng cần thêm",
+            "button": "Thêm thú cưng",
+            "allIn": "Mọi thú cưng đã mở đều có trong kế hoạch.",
+            "noneUnlocked": "Hãy mở một thú cưng ở trang Thú cưng để lập kế hoạch cho nó."
+        },
+        "block": {
+            "rarities": {
+                "Common": "Common",
+                "Uncommon": "Uncommon",
+                "Rare": "Rare",
+                "Epic": "Epic",
+                "Legendary": "Legendary"
+            },
+            "maxLevel": "Cấp tối đa {max}",
+            "remove": "Xóa",
+            "removeLabel": "Xóa {pet} khỏi kế hoạch",
+            "current": "Cấp hiện tại",
+            "to": "đến",
+            "goal": "Cấp mục tiêu (tối đa {max})",
+            "goalLabel": "Cấp mục tiêu của {pet}",
+            "payAdvancement": "Trả thăng tiến ở mục tiêu",
+            "paysCurrent": "Chưa thăng tiến ở cấp {level}, nên lần thăng tiến đó được tính phí."
+        },
+        "result": {
+            "title": "Kết quả cho {count, plural, other {{amount} thú cưng}}",
+            "resources": "Tài nguyên, mọi thú cưng",
+            "byPet": "Theo thú cưng",
+            "heads": {
+                "pet": "Thú cưng",
+                "levels": "Cấp",
+                "food": "Thức ăn",
+                "power": "Sức mạnh"
+            },
+            "powerGain": "+{value}",
+            "percentGain": "+{value}%",
+            "unknown": "Không rõ",
+            "gains": "Tăng thêm",
+            "gainNames": {
+                "levels": "Cấp tăng",
+                "advancements": "Lần thăng tiến",
+                "attack": "Tấn công quân",
+                "defense": "Phòng thủ quân",
+                "power": "Sức mạnh",
+                "score": "Điểm thăng tiến"
+            },
+            "unknownPowerNote": "Gói dữ liệu không có sức mạnh thăng tiến cho một cấp trong kế hoạch này, nên mức tăng sức mạnh là Không rõ.",
+            "eventPoints": "Điểm sự kiện",
+            "events": {
+                "svs": "SvS",
+                "allianceShowdown": "Alliance Showdown",
+                "kingOfIcefield": "King of Icefield",
+                "hallOfChief": "Hall of Chief"
+            },
+            "notScored": "Không tính điểm",
+            "eventNote": "Điểm sự kiện là điểm thăng tiến nhân với điểm của dòng tính điểm trong mỗi sự kiện.",
+            "scoreSourceNote": "Điểm thăng tiến cho cấp 40 đến 100 khớp với ghi chú sự kiện. Cấp 10 đến 30 lấy từ một nguồn (WoS Tools)."
+        }
+    }
+}

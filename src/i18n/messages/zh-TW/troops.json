@@ -1,0 +1,251 @@
+{
+    "page": {
+        "title": "部隊"
+    },
+    "view": {
+        "title": "部隊",
+        "subline": "{chief} · {camps}",
+        "campLevel": "{name} Camp {level}",
+        "notBuilt": "未建造",
+        "intro": "營地等級、容量和速度加成來自其他頁面，這裡唯讀。「規劃」會算出訓練和晉升所需的內容。「開始訓練」會標記營地正在進行的一批訓練。",
+        "plan": "規劃"
+    },
+    "cards": {
+        "tileSummary": "部隊 · 戰力 {power}",
+        "allTroops": "所有部隊",
+        "totalPower": "總戰力",
+        "troops": "部隊",
+        "power": "戰力",
+        "powerNote": "每個士兵的戰力來自資料包。第 10 和 11 階依各營地的 Fire Crystal 等級而定。",
+        "campLevel": "{level} 營地",
+        "campNotBuilt": "營地未建造",
+        "campAgeLocked": "儲存的營地等級在這個伺服器尚未開放。{text}",
+        "highestTier": "最高階級",
+        "tierShort": "T{tier}",
+        "noTier": "無"
+    },
+    "tiers": {
+        "title": "{name}階級",
+        "hideLow": "隱藏第 9 階以下",
+        "typeLabel": "部隊類型",
+        "hiddenNote": "已隱藏第 1 到 9 階。Furnace {furnace} 為 30 級以上。",
+        "heads": {
+            "tier": "階級",
+            "troops": "部隊",
+            "train": "訓練",
+            "power": "戰力"
+        },
+        "requires": {
+            "list": "需要 {list}",
+            "camp": "{name} Camp {level}",
+            "building": "{name} {level}",
+            "research": "{name} {level} 級"
+        },
+        "tier": "第 {tier} 階",
+        "locked": "已鎖定",
+        "countLabel": "{name} {tier} 部隊",
+        "train": "訓練",
+        "seconds": "{value} 秒",
+        "each": "每個",
+        "mobilePower": "戰力"
+    },
+    "plan": {
+        "title": "規劃部隊",
+        "description": "三種部隊的訓練與晉升",
+        "saved": "規劃已儲存 {date}",
+        "close": "關閉",
+        "save": "儲存規劃",
+        "export": {
+            "button": "匯出到核心活動",
+            "emptyHint": "請先新增訓練項目才能匯出。",
+            "computed": "由應用程式計算。",
+            "trainedGroup": "訓練部隊用",
+            "speedupGroup": "加速分鐘數用",
+            "trainedTier": "已訓練第 {tier} 階部隊",
+            "speedupMinutes": "已使用的訓練加速分鐘數",
+            "promoted": "已晉升的部隊",
+            "promotedReason": "晉升只會透過加速分鐘數計分。",
+            "power": "訓練與晉升獲得的戰力",
+            "powerReason": "資料包中還沒有各階級的實際戰力。"
+        },
+        "noRuns": "尚無訓練項目。請新增部隊以開始規劃。",
+        "add": {
+            "title": "新增部隊",
+            "typeLabel": "部隊類型",
+            "modeLabel": "訓練或晉升",
+            "button": "新增部隊"
+        },
+        "run": {
+            "tier": "第 {tier} 階",
+            "modes": {
+                "training": "訓練",
+                "promotion": "晉升"
+            },
+            "remove": "移除{name}訓練",
+            "removeButton": "移除",
+            "modeLabel": "{name}訓練或晉升",
+            "tierLabel": "{name}階級",
+            "fromLabel": "{name}晉升起始階級",
+            "toLabel": "{name}晉升目標階級",
+            "to": "到",
+            "troops": "部隊",
+            "max": "最大",
+            "maxValue": "最大（{capacity}）",
+            "batches": "批次"
+        },
+        "speed": {
+            "readOnlyNote": "唯讀的數值沿用自其他頁面。請到那裡修改。",
+            "openBonuses": "開啟加成",
+            "title": "容量與速度",
+            "appointment": "任命",
+            "position": "職位",
+            "rank": "等級",
+            "positions": {
+                "none": "無",
+                "ministerOfEducation": "教育部長",
+                "vicePresident": "副總統"
+            },
+            "ranks": {
+                "regular": "一般",
+                "supreme": "最高"
+            },
+            "appointmentEffect": "容量 +{capacity}，速度 +{speed}%",
+            "appointmentNote": "兩種任命只能開啟其中一種。教育部長增加 {moeCapacity} 容量和 {moeSpeed}% 速度（最高等級為 {moeCapacitySupreme} 和 {moeSpeedSupreme}）。副總統增加 {vpSpeed}% 速度（最高等級為 {vpSpeedSupreme}）。",
+            "capacity": "容量",
+            "researchCapacity": "研究容量",
+            "troops": "{value} 名士兵",
+            "readOnly": "唯讀",
+            "capacityBoost": "容量加成",
+            "boostTotal": "合計 x{multiplier}",
+            "capacityPerBatch": "每批容量",
+            "trainingSpeed": "訓練速度",
+            "gameSpeed": "遊戲內訓練速度",
+            "appointmentSpeed": "任命",
+            "mobilize": "Mobilize",
+            "advancedTraining": "Advanced Training",
+            "speedUsed": "使用的訓練速度",
+            "percent": "{value}%",
+            "percentPlus": "+{value}%"
+        },
+        "stock": {
+            "name": "訓練加速道具",
+            "minutesUnit": "分",
+            "note": "你的庫存：訓練 {training} 分，通用 {general} 分。通用加速道具可用於訓練。加速道具未涵蓋的訓練會以正常時間完成，所以只會使用你持有的加速道具：{used} 分。"
+        },
+        "result": {
+            "title": "結果",
+            "resources": "資源",
+            "changes": "各階級部隊變化",
+            "heads": {
+                "tier": "階級",
+                "infantry": "步兵",
+                "lancer": "騎兵",
+                "marksman": "弓兵",
+                "all": "全部"
+            },
+            "tier": "第 {tier} 階",
+            "total": "合計",
+            "time": "時間，不使用加速道具",
+            "totalTime": "合計，所有部隊類型（加速時間）",
+            "longest": "最久的部隊類型",
+            "minutesNeeded": "所需加速分鐘數",
+            "minutesUsed": "使用的加速分鐘數（庫存）",
+            "minutes": "{value} 分",
+            "tier12Note": "資料包指出第 12 階的花費有一部分是推算的。弓兵晉升花費是在遊戲中實測的，步兵和騎兵的花費則由它按比例換算。"
+        }
+    },
+    "queue": {
+        "title": "訓練佇列",
+        "note": "每個營地一次訓練一批。完成後會將部隊加入你的數量。",
+        "idle": "目前沒有訓練。開始一批訓練以使用這個營地。",
+        "startButton": "開始訓練",
+        "jobTitle": {
+            "training": "訓練 {count} 名 {name} T{tier}",
+            "promotion": "晉升 {count} 名 {name} T{from} 到 T{to}"
+        },
+        "manage": {
+            "slotLabel": "{camp}，一次一批",
+            "finishText": "「完成升級」會將部隊加入你的數量、釋放營地，並將這批訓練加入你的紀錄。剩餘時間為零時，卡片會顯示「可完成」。不會自動完成，因為你可能用了加速道具。"
+        },
+        "flyout": {
+            "title": "開始訓練",
+            "description": "將營地中的一批部隊標記為訓練中或晉升中",
+            "camp": "營地",
+            "campHelp": "每個營地一次一批。忙碌的營地會顯示何時空出。",
+            "busy": "忙碌至 {date}",
+            "notBuilt": "營地未建造",
+            "action": "動作",
+            "training": "訓練",
+            "promotion": "晉升",
+            "tier": "階級",
+            "tierOption": "第 {tier} 階",
+            "fromTier": "起始階級",
+            "toTier": "目標階級",
+            "troops": "這批的部隊數量",
+            "max": "最大",
+            "capacityHint": "一批最多容納 {capacity} 名士兵。這是研究容量加上你的營地等級。",
+            "noTiers": "這個營地還沒有可訓練的階級。請到建築頁面提升營地等級。",
+            "cost": "這批的花費",
+            "time": "訓練時間",
+            "packageTime": "資料包時間",
+            "speed": "訓練速度",
+            "readOnly": "唯讀",
+            "openBonuses": "開啟加成",
+            "yourTime": "你的時間",
+            "timeHint": "訓練速度來自加成頁面。若遊戲顯示的時間不同，請用「已開始」。",
+            "whenStarted": "何時開始？",
+            "modes": {
+                "now": "現在開始",
+                "already": "已開始"
+            },
+            "timeLeftHours": "剩餘時間（小時）",
+            "ends": "結束時間",
+            "takeCost": {
+                "title": "從我的庫存扣除花費",
+                "hint": "從資源頁面扣除這批所需的資源。數量不會低於 0。",
+                "enough": "你的庫存足夠。",
+                "short": "{names}不足。這些資源的庫存會歸 0。"
+            },
+            "cancel": "取消",
+            "start": "開始訓練",
+            "allCamps": "所有閒置營地（{count}）",
+            "allCampsHint": "在每個閒置營地同時開始同一批訓練。每個營地各有自己的時間。顯示的階級是每個閒置營地都能訓練的階級。",
+            "campTime": "{camp}：{time}"
+        },
+        "toasts": {
+            "started": {
+                "title": "已開始訓練",
+                "message": "{what}。"
+            },
+            "finished": {
+                "title": "已訓練{what}",
+                "message": "已加入你的部隊數量和紀錄。"
+            },
+            "cancelled": {
+                "title": "已取消{what}",
+                "message": "你的部隊數量維持原樣。如有需要，請到資源頁面修正庫存。"
+            },
+            "undo": "復原"
+        },
+        "batchName": {
+            "training": "{count} 名 {name} T{tier}",
+            "promotion": "{count} 名 {name} T{from} 到 T{to}"
+        }
+    },
+    "callOfWar": {
+        "title": "Call of War",
+        "note": "Romulus 的技能。每個 UTC 日可免費領取一次，所有營地合計。於 UTC 00:00 重設。",
+        "available": "今日免費部隊 {troops} 名",
+        "claimed": "今日已領取。{time}後可再次免費領取。",
+        "notUnlocked": "需要已招募 Romulus，且專家頁面中的 Call of War 達 1 級以上。",
+        "level": "Call of War {level} 級",
+        "add": "加入 {camp}",
+        "addHint": "{troops} 名士兵會加入第 {tier} 階",
+        "noTier": "尚未解鎖任何階級",
+        "toast": {
+            "title": "已領取 Call of War",
+            "message": "已將 {troops} 名士兵加入 {camp} 第 {tier} 階。",
+            "undo": "復原"
+        }
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "line": "パッケージには、全{total}冊のうち{have}冊のアルバムがあります。それぞれにバフ、完成報酬、{puzzles}枚のパズルがあります。",
+    "note": "残りの{missing}冊のアルバムは、パッケージに追加され次第、反映されます。",
+    "albums": "アルバム",
+    "puzzleCount": "{count, plural, other {パズル{amount}枚}}",
+    "pieceCount": "{count, plural, other {ピース{amount}個}}",
+    "view": {
+        "label": "表示",
+        "puzzles": "パズル",
+        "pieces": "すべてのピース"
+    },
+    "album": {
+        "counts": "{puzzles}、{pieces}",
+        "buff": "完成時のバフ",
+        "buffValue": "{stat} {value}",
+        "rewards": "完成報酬",
+        "buffNote": "バフが有効になるのは、{puzzles}枚のパズルがすべて完成したときだけです。"
+    },
+    "puzzles": {
+        "title": "パズル",
+        "puzzle": "パズル",
+        "pieces": "ピース",
+        "star": "星{stars}",
+        "reward": "報酬"
+    },
+    "allPieces": {
+        "title": "すべてのピース",
+        "summary": "{puzzles}に{pieces}",
+        "imageNote": "ピースの画像はパッケージのものです。画像のないピースは、無地の四角で表示されます。",
+        "stars": "{count, plural, other {星{amount}個}}"
+    }
+}

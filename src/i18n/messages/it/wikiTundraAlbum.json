@@ -1,0 +1,32 @@
+{
+  "line": "Il pacchetto ha {have} album su {total}. Ognuno ha un bonus, ricompense di completamento e {puzzles} puzzle.",
+  "note": "Gli altri {missing} album verranno aggiunti quando il pacchetto li avrà.",
+  "albums": "Album",
+  "puzzleCount": "{count, plural, one {{amount} puzzle} other {{amount} puzzle}}",
+  "pieceCount": "{count, plural, one {{amount} pezzo} other {{amount} pezzi}}",
+  "view": {
+    "label": "Vista",
+    "puzzles": "Puzzle",
+    "pieces": "Tutti i pezzi"
+  },
+  "album": {
+    "counts": "{puzzles}, {pieces}",
+    "buff": "Bonus a album completo",
+    "buffValue": "{stat} {value}",
+    "rewards": "Ricompense di completamento",
+    "buffNote": "Il bonus conta solo quando tutti i {puzzles} puzzle sono completati."
+  },
+  "puzzles": {
+    "title": "Puzzle",
+    "puzzle": "Puzzle",
+    "pieces": "Pezzi",
+    "star": "Stella {stars}",
+    "reward": "Ricompensa"
+  },
+  "allPieces": {
+    "title": "Tutti i pezzi",
+    "summary": "{pieces} in {puzzles}",
+    "imageNote": "Le immagini dei pezzi vengono dal pacchetto. Un pezzo senza immagine mostra un quadrato semplice.",
+    "stars": "{count, plural, one {{amount} stella} other {{amount} stelle}}"
+  }
+}

@@ -1,0 +1,71 @@
+{
+    "line": "{buildings} công trình và {facilities} cơ sở. Chỉ để tham khảo, không có gì ở đây được lưu vào thủ lĩnh của bạn.",
+    "list": {
+        "heading": "Công trình và cơ sở",
+        "searchLabel": "Tìm kiếm",
+        "searchPlaceholder": "Tìm công trình và cơ sở",
+        "categoryLabel": "Danh mục",
+        "categories": {
+            "all": "Tất cả",
+            "Military": "Quân sự",
+            "Inner City": "Nội thành",
+            "Entertainment": "Giải trí"
+        },
+        "buildingMeta": "{category}, tối đa {maxLevel}, {count, plural, other {{amount} cấp}}",
+        "empty": "Không có công trình nào khớp tìm kiếm của bạn.",
+        "categoryOption": "{category} {count}"
+    },
+    "detail": {
+        "levelsTotal": "Tổng số cấp",
+        "standardLevels": "Cấp tiêu chuẩn, 1 đến 30",
+        "fireCrystalLevels": "Cấp Fire Crystal, 30-1 đến FC 10",
+        "maxLevel": "Nhãn cấp tối đa",
+        "rangeLabel": "Khoảng cấp",
+        "rangeOption": "{range} {count}",
+        "ranges": {
+            "all": "Tất cả",
+            "standard": "1 đến 30",
+            "fc3": "30-1 đến FC 3",
+            "fc5": "FC 3-1 đến FC 5",
+            "fc8": "FC 5-1 đến FC 8",
+            "fc10": "FC 8-1 đến FC 10"
+        },
+        "tableLabel": "Các cấp của {name}",
+        "levels": "Các cấp",
+        "totalTitle": "Tổng cần, {range}, {count, plural, other {{amount} cấp}}",
+        "totalTime": "Tổng thời gian xây"
+    },
+    "columns": {
+        "level": "Cấp",
+        "cost": "Chi phí",
+        "time": "Thời gian",
+        "power": "Sức mạnh",
+        "requires": "Yêu cầu",
+        "stats": {
+            "rallyCapacity": "Sức chứa tập kết",
+            "marchCapacity": "Sức chứa hành quân",
+            "trainingCapacity": "Sức chứa huấn luyện",
+            "trainingSpeedBonusPercent": "Tốc độ huấn luyện",
+            "researchSpeedBonusPercent": "Tốc độ nghiên cứu",
+            "infirmaryCapacity": "Sức chứa trạm xá",
+            "allyAssists": "Lượt hỗ trợ đồng minh",
+            "allyHelpTimeSeconds": "Thời gian đồng minh giúp",
+            "reinforceCapacity": "Sức chứa tăng viện",
+            "storehouseCapacity": "Sức chứa kho",
+            "barricadeDurability": "Độ bền chướng ngại",
+            "troopDeploymentCapacity": "Sức chứa triển khai"
+        }
+    },
+    "cells": {
+        "none": "Không có",
+        "requirement": "{building} {level}",
+        "pricePerItem": "{price} mỗi cái",
+        "percent": "{value}%"
+    },
+    "facilities": {
+        "heading": "Cơ sở",
+        "meta": "Không có cấp, sức mạnh hay chi phí xây",
+        "unlock": "Mở ở Furnace cấp {level}",
+        "empty": "Không có cơ sở nào khớp tìm kiếm của bạn."
+    }
+}

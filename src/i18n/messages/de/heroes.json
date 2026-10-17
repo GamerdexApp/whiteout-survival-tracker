@@ -1,0 +1,262 @@
+{
+    "page": {
+        "title": "Helden"
+    },
+    "view": {
+        "tabsLabel": "Helden",
+        "heroesTab": "Helden",
+        "gearTab": "Heldengear",
+        "heroesSubline": "{chief} · {owned} von {total} im Besitz",
+        "gearSubline": "{chief} · {count, plural, one {{amount} Gear-Set} other {{amount} Gear-Sets}}"
+    },
+    "common": {
+        "owned": "Im Besitz",
+        "ownedLabel": "{hero} im Besitz",
+        "starLabel": "Stern {hero}",
+        "levelLabel": "Stufe {hero}",
+        "talentLabel": "Talent {hero}",
+        "skillLabel": "{skill} von {hero}",
+        "weaponLevelLabel": "Stufe {weapon} von {hero}",
+        "shardsOwnedLabel": "Splitter von {hero} im Besitz",
+        "starAndTier": "Stern und Tier",
+        "level": "Stufe",
+        "noGoal": "Kein Ziel",
+        "shards": "Splitter",
+        "totalPower": "Gesamtmacht",
+        "unknown": "Unbekannt",
+        "plan": "Plan",
+        "generation": "Gen {generation}",
+        "exploration": "Erkundung",
+        "expedition": "Expedition",
+        "talent": "Talent",
+        "maxLevelSuffix": "/ {max}",
+        "heroCount": "{count, plural, one {{amount} Held} other {{amount} Helden}}"
+    },
+    "goalText": {
+        "to": "bis {goal}"
+    },
+    "card": {
+        "summary": "{rarity} · {heroClass} · {generation}",
+        "talentRow": "Talent {name}",
+        "shardsOf": "von {needed}",
+        "enoughShards": " Genug Splitter",
+        "shortBy": " Es fehlen {amount}",
+        "gearSet": "Gear-Set",
+        "notOwnedHint": "Schalte Im Besitz ein, um Stern, Stufe und Fähigkeiten zu verfolgen.",
+        "details": "Details"
+    },
+    "tab": {
+        "stats": {
+            "generations": "Freigeschaltete Generationen",
+            "generationsValue": "0 bis {max}",
+            "heroesOwned": "Helden im Besitz von den freigeschalteten",
+            "legendaryOwned": "Legendäre im Besitz von den freigeschalteten",
+            "atMaxLevel": "Auf Stufe 80",
+            "heroPower": "Heldenmacht",
+            "heroPowerUnknown": "Heldenmacht, {amount} Unbekannte nicht gezählt",
+            "withGoal": "Mit Ziel"
+        },
+        "search": {
+            "label": "Helden suchen",
+            "placeholder": "{amount} Helden nach Name suchen"
+        },
+        "filters": "Filter",
+        "maxOut": "Maximieren",
+        "status": "{shown} von {total} Helden angezeigt. Generation 0 bis {max} sind bei diesem Häuptling freigeschaltet. Ziele sind hier nur lesbar und werden im Plan gesetzt.",
+        "empty": {
+            "title": "Keine passenden Helden",
+            "description": "Ändere die Suche oder setze die Filter zurück, um alle Helden zu sehen.",
+            "reset": "Zurücksetzen"
+        },
+        "showMore": "Mehr zeigen, {amount} weitere {count, plural, one {Held} other {Helden}}",
+        "toast": {
+            "notOwnedTitle": "{name} nicht im Besitz",
+            "notOwnedMessage": "Stern, Stufe und Fähigkeiten bleiben erhalten, falls du Im Besitz wieder einschaltest.",
+            "undo": "Rückgängig",
+            "maxedTitle": "Helden maximiert",
+            "maxedMessage": "{heroes} aktualisiert."
+        }
+    },
+    "filtersFlyout": {
+        "title": "Filter",
+        "description": "Wähle, welche Helden die Seite zeigt",
+        "reset": "Zurücksetzen",
+        "show": "{heroes} zeigen",
+        "all": "Alle",
+        "generation": "Generation",
+        "rarity": "Seltenheit",
+        "heroClass": "Klasse",
+        "ownership": "Besitz",
+        "order": "Reihenfolge",
+        "notSaved": "Filter werden nicht gespeichert.",
+        "rarities": {
+            "Legendary": "Legendär",
+            "Epic": "Episch",
+            "Rare": "Selten"
+        },
+        "classes": {
+            "Infantry": "Infantry",
+            "Lancer": "Lancer",
+            "Marksman": "Marksman"
+        },
+        "ownershipOptions": {
+            "all": "Alle",
+            "owned": "Im Besitz",
+            "notOwned": "Nicht im Besitz"
+        },
+        "orderOptions": {
+            "owned": "Besitz zuerst, dann neueste Generation",
+            "generation": "Generation, neueste zuerst",
+            "name": "Name, A bis Z",
+            "power": "Gesamtmacht, höchste zuerst"
+        }
+    },
+    "maxOut": {
+        "title": "Helden maximieren",
+        "scopeLabel": "Zu maximierende Helden",
+        "scope": {
+            "owned": "Helden im Besitz",
+            "unlocked": "Alle freigeschalteten Helden, als im Besitz markiert",
+            "selected": "Helden wählen, als im Besitz markiert"
+        },
+        "searchLabel": "Helden zum Auswählen suchen",
+        "searchPlaceholder": "Helden nach Name suchen",
+        "selectShown": "Angezeigte wählen",
+        "clear": "Leeren",
+        "ownedTag": "im Besitz",
+        "starAndTier": "Stern und Tier auf 5.0",
+        "level": "Stufe auf 80",
+        "levelHint": "Schalte aus, wenn die Fähigkeiten maximiert sind und die Stufe älterer Helden auf 1 bleibt.",
+        "skills": "Fähigkeiten auf 5",
+        "skillsHint": "Erkundung, Expedition und Talent.",
+        "weapon": "Exklusivwaffe auf 10",
+        "note": "Alles, was ausgeschaltet ist, bleibt, wie es ist. Splitterzahlen und Ziele ändern sich nicht. Nach dem Anwenden kannst du rückgängig machen.",
+        "cancel": "Abbrechen",
+        "apply": "{heroes} maximieren"
+    },
+    "flyout": {
+        "fallbackTitle": "Held",
+        "description": "{rarity} {heroClass}, Generation {generation}",
+        "done": "Fertig",
+        "status": {
+            "title": "Status",
+            "furnaceNeeded": "Furnace nötig für Stufe {level}",
+            "met": "Erfüllt",
+            "needsFurnace": "Braucht Furnace {required}",
+            "levelPower": "Stufenmacht",
+            "skillPower": "Fähigkeitsmacht",
+            "starPower": "Sternmacht",
+            "weaponPower": "Waffenmacht",
+            "totalPower": "Gesamtmacht",
+            "note": "Die Macht zählt Stufe, Fähigkeiten, die Sternstufe und die Waffenstufe."
+        },
+        "skills": {
+            "title": "Fähigkeiten",
+            "aside": "Fünf Stufen pro Fähigkeit",
+            "toLevel": "Bis {level}: {manuals} Handbücher",
+            "needsStar": "Braucht Stern {star}",
+            "starMet": "Stern {star} erreicht",
+            "talentTop": "Das Talent ist auf Höchststufe.",
+            "talentNeedsStar": "Stufe {level} braucht Stern {star}",
+            "talentStarMet": "Stufe {level}: Stern {star} erreicht"
+        },
+        "weapon": {
+            "title": "Exklusivwaffe: {name}",
+            "level": "Waffenstufe",
+            "widgetsForLevel": "Widgets für Stufe {level}",
+            "widgetsForLevels": "Widgets für Stufe {from} bis {to}",
+            "expeditionBonus": "Expeditionsbonus",
+            "bonus": "Letalität {lethality}% · Gesundheit {health}%",
+            "power": "Waffenmacht",
+            "unlocksAt": "Wird bei Waffenstufe {level} freigeschaltet"
+        },
+        "shards": {
+            "title": "Splitter",
+            "owned": "Splitter im Besitz",
+            "goal": "Ziel",
+            "neededForGoal": "Nötig für Ziel {goal}",
+            "enough": "Genug Splitter",
+            "shortBy": "Es fehlen",
+            "yes": "Ja",
+            "sources": "Splitterquellen"
+        },
+        "stats": {
+            "title": "Werte auf Stufe 80",
+            "explorationAt": "Erkundung bei {stars}",
+            "expeditionAt": "Expedition bei {stars}",
+            "explorationFull": "Erkundung bei 5.0",
+            "expeditionFull": "Expedition bei 5.0",
+            "exploration": "Ang {attack} · Vert {defense} · LP {health}",
+            "expedition": "Ang {attack}% · Vert {defense}%",
+            "estimate": "Schätzung"
+        }
+    },
+    "plan": {
+        "title": "Helden planen",
+        "description": "Splitter, Fähigkeitshandbücher und Widgets von aktuell bis zum Ziel",
+        "saved": "Plan gespeichert {date}",
+        "close": "Schließen",
+        "save": "Plan speichern",
+        "noHeroes": "Noch keine Helden im Plan. Füge oben einen Helden im Besitz hinzu und erhöhe dann seine Ziele.",
+        "add": {
+            "title": "Helden hinzufügen",
+            "allIn": "Jeder Held im Besitz ist im Plan. Schalte Im Besitz bei einem Helden ein, um ihn zu planen.",
+            "selectLabel": "Held zum Hinzufügen",
+            "button": "Helden hinzufügen"
+        },
+        "block": {
+            "remove": "{hero} aus dem Plan entfernen",
+            "starTo": "{stars} bis",
+            "starGoal": "Sternziel {hero}",
+            "levelTo": "{current} bis",
+            "goalLabel": "Ziel {name} von {hero}",
+            "note": "Aktuelle Werte stammen vom Helden auf der Seite. Ändere sie dort."
+        },
+        "unmet": {
+            "title": "Fähigkeitsstufen brauchen einen höheren Stern.",
+            "item": "{hero}: {skill} Stufe {level} braucht Stern {star}",
+            "message": "{items}. Erhöhe das Sternziel oder senke das Fähigkeitsziel."
+        },
+        "shardsUsed": "Genutzte Splitter: {own} vom Helden und {general} allgemeine, {total} insgesamt. Ein Held nutzt zuerst seine eigenen Splitter.",
+        "result": {
+            "title": "Ergebnis, {steps} Schritte",
+            "widgets": "Widgets",
+            "weaponSkills": "{count, plural, one {{amount} Waffenfähigkeit freigeschaltet} other {{amount} Waffenfähigkeiten freigeschaltet}}",
+            "note": "Macht gehört nicht zum Heldenplan. Der Rechner liefert keine Zeit und nimmt kein Tempo als Eingabe.",
+            "heads": {
+                "hero": "Held",
+                "starSteps": "Sternschritte",
+                "skillLevels": "Fähigkeitsstufen",
+                "shards": "Splitter",
+                "widgets": "Widgets"
+            },
+            "tableLabel": "Ergebnistabelle des Plans"
+        },
+        "events": {
+            "svs": "SvS State of Power",
+            "allianceShowdown": "Alliance Showdown",
+            "kingOfIcefield": "King of Icefield",
+            "hallOfChief": "Hall of Chief"
+        }
+    },
+    "export": {
+        "button": "In Kern-Events exportieren",
+        "nothing": "Der Plan braucht keine Splitter oder Widgets zum Exportieren.",
+        "shardsGroup": "für Splitter",
+        "widgetsGroup": "für Widgets",
+        "widgets": "Widgets",
+        "manualsReason": "Kein Event wertet Fähigkeitshandbücher",
+        "shards": {
+            "Legendary": "Mythic Hero Shards",
+            "Epic": "Epic Hero Shards",
+            "Rare": "Rare Hero Shards"
+        }
+    },
+    "service": {
+        "generalShard": {
+            "Legendary": "Mythic General Hero Shard",
+            "Epic": "Epic General Hero Shard",
+            "Rare": "Rare General Hero Shard"
+        }
+    }
+}

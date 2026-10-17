@@ -1,0 +1,215 @@
+{
+  "defaultSetName": "Conjunto {number}",
+  "troop": {
+    "infantry": "Infantaria",
+    "lancer": "Lanceiro",
+    "marksman": "Atirador"
+  },
+  "lock": {
+    "needsMythic": "Requer equipamento Mythic",
+    "needsBoth": "Requer aprimoramento 100 e forja de mestria nível 10",
+    "needsEnhancement": "Requer aprimoramento 100",
+    "needsForging": "Requer forja de mestria nível 10"
+  },
+  "tab": {
+    "deletedTitle": "{name} apagado",
+    "deletedMessage": "As quatro peças e os respetivos objetivos foram removidos.",
+    "undo": "Anular",
+    "tiles": {
+      "sets": "Conjuntos de equipamento",
+      "power": "Poder do equipamento, todos os conjuntos",
+      "ofPieces": "{count} de {total}",
+      "atEnhancementMax": "Peças com aprimoramento 100",
+      "empowered": "Peças potenciadas",
+      "ready": "Peças prontas para potenciação"
+    },
+    "search": "Pesquisar conjuntos de equipamento",
+    "filters": "Filtros",
+    "plan": "Plano",
+    "showing": "A mostrar {shown} de {total} conjuntos de equipamento. Aqui os objetivos são só de leitura e definem-se no Plano.",
+    "empty": {
+      "title": "Ainda sem conjuntos de equipamento",
+      "description": "Um conjunto de equipamento tem uma peça de Goggles, Gloves, Belt e Boots. Adicionar um conjunto para registar os níveis."
+    },
+    "addSet": "Adicionar conjunto de equipamento",
+    "unknownHero": "Herói desconhecido",
+    "power": "{amount} de poder",
+    "enhancementLine": "Aprim. {line}",
+    "troopHint": "O tipo de tropa escolhe a coluna de atributos abaixo.",
+    "editSet": "Editar conjunto",
+    "deleteSet": "Apagar conjunto"
+  },
+  "pieceCard": {
+    "name": "{set} {slot}",
+    "forgingRow": "{name} (+{percent}%)",
+    "none": "Nenhuma",
+    "noGoal": "Sem objetivo",
+    "goal": "Objetivo: {value}",
+    "quality": "Qualidade do equipamento",
+    "qualities": {
+      "mythic": "Mythic",
+      "epic": "Epic",
+      "rare": "Rare",
+      "uncommon": "Uncommon",
+      "common": "Common"
+    },
+    "forgingRowLabel": "Linha de forja de mestria",
+    "forgingStops": "A forja de mestria pára no nível 10 até o aprimoramento chegar a 100.",
+    "lowQualityNote": "Só o equipamento Mythic pode ser forjado e potenciado. O poder segue as tabelas Mythic com o poder base desta qualidade, que o jogo não confirmou.",
+    "enhancement": "Aprimoramento",
+    "enhancementLabel": "Aprimoramento de {name}",
+    "enhancementSlider": "Controlo de aprimoramento de {name}",
+    "empowerment": "Potenciação",
+    "empowermentLabel": "Potenciação de {name}",
+    "empowermentSlider": "Controlo de potenciação de {name}",
+    "outOf": "/ {max}",
+    "milestone": "Potenciação {level} atingida: {stat}",
+    "piecePower": "Poder da peça",
+    "health": "Vida",
+    "percent": "{value}%"
+  },
+  "statLines": {
+    "title": "Linhas de atributos, 4 ranhuras por 3 tipos de tropa",
+    "troopThisSet": "{troop} (este conjunto)",
+    "stat": "{name} {value}",
+    "health": "PV {value}",
+    "percentStat": "{name} {value}%",
+    "none": "Nenhum",
+    "note": "Valores aos níveis das peças de {name}, incluindo a forja de mestria, arredondados para baixo. Os atributos vêm de WoS Tools, que pára em 192 dos 200 níveis. A coluna destacada é o tipo de tropa do conjunto."
+  },
+  "filters": {
+    "title": "Filtros",
+    "description": "Escolher que conjuntos de equipamento a lista mostra",
+    "reset": "Repor",
+    "show": "Mostrar {amount} {count, plural, one {conjunto} other {conjuntos}}",
+    "all": "Todos",
+    "troopType": "Tipo de tropa",
+    "linkedHero": "Herói associado",
+    "heroOptions": {
+      "all": "Todos",
+      "linked": "Associado a um herói",
+      "unlinked": "Não associado"
+    },
+    "order": "Ordem",
+    "orderOptions": {
+      "power": "Poder total, maior primeiro",
+      "created": "Ordem de adição",
+      "name": "Nome, A a Z",
+      "hero": "Nome do herói, A a Z"
+    },
+    "notSaved": "Os filtros não são guardados."
+  },
+  "setDialogs": {
+    "cancel": "Cancelar",
+    "setName": "Nome do conjunto",
+    "nameRequired": "Introduzir um nome.",
+    "linkedHero": "Herói associado",
+    "add": {
+      "title": "Adicionar conjunto de equipamento",
+      "linkedHeroHint": "Escolher um herói define o tipo de tropa como a sua classe.",
+      "troopType": "Tipo de tropa",
+      "troopTypeHint": "O tipo de tropa escolhe a coluna de atributos do conjunto.",
+      "quality": "Qualidade do equipamento",
+      "qualityHint": "Só o equipamento Mythic pode ser forjado e potenciado.",
+      "qualityHintCopy": "Um conjunto copiado mantém a qualidade de cada peça.",
+      "qualities": {
+        "mythic": "Mythic",
+        "epic": "Epic",
+        "rare": "Rare",
+        "uncommon": "Uncommon",
+        "common": "Common"
+      },
+      "startFrom": "Começar a partir de",
+      "startFromHint": "Os objetivos não são copiados. Os objetivos definem-se no Plano.",
+      "emptySet": "Conjunto vazio",
+      "copyFrom": "Copiar níveis de {name}",
+      "savesAtOnce": "Cada alteração é guardada de imediato e o novo conjunto aparece selecionado.",
+      "submit": "Adicionar conjunto de equipamento"
+    },
+    "delete": {
+      "title": "Apagar {name}?",
+      "titleFallback": "Apagar conjunto",
+      "confirm": "Apagar conjunto",
+      "body": "As quatro peças de {name} e os respetivos objetivos são removidos deste dispositivo.",
+      "undoNote": "É possível anular durante 10 segundos após apagar.",
+      "exportBackup": "Exportar primeiro uma cópia de segurança"
+    },
+    "edit": {
+      "title": "Editar {name}",
+      "titleFallback": "Editar conjunto",
+      "submit": "Guardar conjunto"
+    },
+    "heroSelect": {
+      "none": "Sem herói",
+      "option": "{name} ({class}, Ger. {generation})"
+    }
+  },
+  "plan": {
+    "title": "Plano do Equipamento de herói",
+    "description": "Forja de mestria, aprimoramento e potenciação de quaisquer peças, de qualquer conjunto",
+    "saved": "Plano guardado {time}",
+    "close": "Fechar",
+    "save": "Guardar plano",
+    "empty": "Ainda sem peças no plano. Adicionar uma peça acima e depois subir os objetivos.",
+    "pieceTitle": "{set} · {slot}",
+    "milestone": "potenciação {level}, {event}, {stat}",
+    "addPiece": {
+      "title": "Adicionar uma peça",
+      "noSets": "Adicionar primeiro um conjunto de equipamento no separador Equipamento de herói.",
+      "set": "Conjunto de equipamento",
+      "setOption": "{name} ({troop})",
+      "piece": "Peça",
+      "submit": "Adicionar peça",
+      "taken": "Esta peça já está no plano."
+    },
+    "qualities": {
+      "mythic": "mythic",
+      "epic": "epic",
+      "rare": "rare",
+      "uncommon": "uncommon",
+      "common": "common"
+    },
+    "remove": "Remover {title} do plano",
+    "forgingRow": "{name} (+{percent}%)",
+    "none": "Nenhuma",
+    "forgingCurrent": "Linha atual da forja",
+    "forgingGoal": "Linha objetivo da forja",
+    "forgingGoalLabel": "Objetivo de forja de {title}",
+    "forgingStops": "A forja de mestria pára no nível 10 até o objetivo de aprimoramento ser 100.",
+    "enhancement": "Aprimoramento",
+    "enhancementGoal": "Objetivo de aprimoramento de {title}",
+    "empowerment": "Potenciação",
+    "empowermentGoal": "Objetivo de potenciação de {title}",
+    "from": "{value} para",
+    "result": {
+      "title": "Resultado para {amount} {count, plural, one {peça} other {peças}}",
+      "power": "Poder",
+      "powerLines": {
+        "gained": "Poder ganho",
+        "before": "Poder destas peças antes",
+        "after": "Poder destas peças depois"
+      },
+      "columns": {
+        "piece": "Peça",
+        "forgingStatsUp": "Atributos de forja a subir",
+        "powerGained": "Poder ganho"
+      },
+      "forgingStatsUp": "+{percent}% ({steps} passos)",
+      "milestones": "Marcos desbloqueados",
+      "milestoneLine": "{label}: {stat}",
+      "events": {
+        "svs": "SvS",
+        "allianceShowdown": "Alliance Showdown",
+        "kingOfIcefield": "King of Icefield"
+      },
+      "note": "O Plano do Equipamento de herói não tem controlos de velocidade nem de bónus. A calculadora não devolve tempo.",
+      "tableLabel": "Tabela de resultado do plano"
+    }
+  },
+  "export": {
+    "button": "Exportar para Eventos principais",
+    "nothing": "O plano não requer Essence Stones nem Mithril para exportar.",
+    "essenceStones": "Essence Stones",
+    "mithril": "Mithril"
+  }
+}

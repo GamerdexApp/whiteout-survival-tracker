@@ -1,0 +1,40 @@
+{
+  "line": "{skins}: {types}, с бонусом, способом получения и сроком действия.",
+  "skinCount": "{count, plural, one {{amount} скин} few {{amount} скина} many {{amount} скинов} other {{amount} скина}}",
+  "typeCount": "{count, plural, one {{amount} тип} few {{amount} типа} many {{amount} типов} other {{amount} типа}}",
+  "gallery": {
+    "title": "Галерея скинов",
+    "showing": "Показано {shown} из {total}",
+    "search": "Поиск",
+    "searchPlaceholder": "Поиск скинов по названию или источнику",
+    "bonusStat": "Характеристика бонуса",
+    "anyStat": "Любая",
+    "noBonus": "Без бонуса",
+    "duration": "Длительность",
+    "anyDuration": "Любая",
+    "permanent": "Постоянный",
+    "timed": "Временный",
+    "notStated": "Не указано",
+    "types": "Тип скина",
+    "allTypes": "Все",
+    "empty": {
+      "title": "Подходящих скинов нет",
+      "description": "Измените поиск или фильтр, чтобы увидеть скины."
+    }
+  },
+  "columns": {
+    "skin": "Скин",
+    "type": "Тип",
+    "bonus": "Бонус",
+    "duration": "Длительность (свободный текст)",
+    "sources": "Источники"
+  },
+  "bonusValue": "{stat} {value}",
+  "detail": {
+    "type": "Тип",
+    "bonus": "Бонус",
+    "duration": "Длительность",
+    "sources": "Источники",
+    "description": "Описание"
+  }
+}

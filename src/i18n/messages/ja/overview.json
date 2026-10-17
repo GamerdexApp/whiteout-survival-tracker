@@ -1,0 +1,231 @@
+{
+    "page": {
+        "title": "概要"
+    },
+    "header": {
+        "state": "ステート{number}",
+        "furnace": "Furnace {level}",
+        "serverAge": "サーバー経過日数は約{days}日",
+        "derived": "他のページの情報から作成"
+    },
+    "tiles": {
+        "furnace": {
+            "label": "Furnace",
+            "steps": "{total}ステップ中{order}",
+            "unknown": "不明",
+            "unknownHint": "建物でFurnaceを設定してください"
+        },
+        "dailies": {
+            "label": "デイリー",
+            "value": "{done} / {total}",
+            "tasks": "今日完了したマイタスク",
+            "missions": "完了したゲーム内ミッション"
+        },
+        "events": {
+            "label": "イベント",
+            "live": "開催中{amount}件",
+            "coreDay": "{event} {day}",
+            "moreThisWeek": "今週あと{amount}件",
+            "noneThisWeek": "今週はなし"
+        },
+        "skins": {
+            "label": "スキン",
+            "value": "{owned} / {total}",
+            "hint": "所有スキン"
+        },
+        "vip": {
+            "label": "VIP",
+            "value": "VIP {level}",
+            "unknown": "不明",
+            "hint": "VIPのXPから算出",
+            "unknownHint": "VIPページでVIPのXPを入力してください"
+        },
+        "prosperity": {
+            "label": "島の繁栄度",
+            "possible": "最大{max}",
+            "locked": "ロック中",
+            "lockedHint": "Furnace {level}が必要"
+        },
+        "generation": {
+            "label": "ヒーローの世代",
+            "allUnlocked": "すべての世代が解放済み",
+            "shouldBeOpen": "第{next}世代が解放されているはずです",
+            "onDay": "第{next}世代はサーバー{day}日目",
+            "inDays": "第{next}世代まで約{days}日"
+        }
+    },
+    "events": {
+        "title": "イベント",
+        "openCalendar": "カレンダーを開く",
+        "liveNow": "開催中",
+        "liveBadge": "開催中",
+        "nextUp": "次の予定（イベントページより）",
+        "coreLine": "{count}日中{day}、{name}。コアイベント",
+        "runLine": "{length}。開催中",
+        "empty": "イベントが追加されていません",
+        "addEvent": "イベントを追加",
+        "noLive": "現在開催中のものはありません。"
+    },
+    "coreToday": {
+        "title": "今日の{event}",
+        "open": "コアイベント",
+        "dayLine": "{day}、{name}",
+        "plan": "今日のプラン{points}ポイント",
+        "checklist": "チェックリスト",
+        "done": "{total}件中{done}件完了",
+        "progress": "チェックリストの進行状況",
+        "noActions": "今日予定されている行動はありません。",
+        "castleSignedUp": "{day}の城の役職に申し込み済み",
+        "castleOpen": "{day}の城の役職に申し込む",
+        "logLocked": "イベントログでは{total}日中{locked}日がロックされています。",
+        "todayLocked": "{day}はロックされています。",
+        "todayOpen": "{day}はまだ記録されていません。",
+        "openChecklist": "チェックリストを開く",
+        "openLog": "イベントログを開く"
+    },
+    "queues": {
+        "title": "実行中のキュー",
+        "running": "実行中{count}件",
+        "construction": "建設{number}",
+        "researchMain": "研究",
+        "researchWarAcademy": "War Academy",
+        "training": "{name}の訓練",
+        "learning": "学習",
+        "task": {
+            "construction": "{name}を{level}へ",
+            "research": "{name}をレベル{level}へ",
+            "training": "{tier}部隊",
+            "learning": "{name}、{skill}"
+        },
+        "idle": "待機中",
+        "idleBuildings": "待機中。建物で「アップグレードを開始」を押してください",
+        "idleResearch": "待機中。研究で「アップグレードを開始」を押してください",
+        "progress": "{title}の進行状況"
+    },
+    "lastResult": {
+        "title": "直近のイベント結果",
+        "open": "履歴で開く",
+        "days": "1日目から5日目。バトルフェーズは別に管理します。",
+        "plan": "プラン",
+        "actual": "実績",
+        "difference": "差",
+        "overall": "総合ランク",
+        "alliance": "同盟ランク",
+        "upgrades": "完了した予定のアップグレード",
+        "upgradesOf": "{total}件中{done}件"
+    },
+    "server": {
+        "title": "サーバー経過日数",
+        "edit": "チーフを編集",
+        "age": "約{days}日（±{tolerance}日）",
+        "unknown": "不明です。チーフの編集でサーバー開始日を追加してください。",
+        "fromDate": "サーバー開始日（{date}）から算出。",
+        "warAcademy": "War Academy研究",
+        "t12": "T12研究",
+        "open": "解放済み",
+        "opensIn": "約{days}日後に解放",
+        "unknownUnlock": "不明",
+        "heroes": "解放済みヒーローの世代",
+        "generation": "第{number}世代",
+        "estimate": "解放日はサーバーのタイムラインに基づきます。サーバーの日数がずれている場合は、チーフの編集で変更してください。",
+        "areas": {
+            "fireCrystal": "Fire Crystalレベル",
+            "pets": "ペット",
+            "experts": "エキスパート"
+        },
+        "fcUpTo": "{level}まで",
+        "nothingYet": "まだなし",
+        "countOf": "{total}件中{unlocked}件解放済み",
+        "allUnlocked": "すべて解放済みです。",
+        "generationName": "第{number}世代",
+        "allGenerations": "すべての世代が解放済みです。",
+        "next": {
+            "withDate": "次: {names}、サーバー{day}日目、{date}。約{days}日後です。",
+            "noDate": "次: {names}、サーバー{day}日目。約{days}日後です。",
+            "unknownAge": "次: {names}、サーバー{day}日目。",
+            "passed": "サーバーの経過日数からすると、{names}（サーバー{day}日目）は解放されているはずです。チーフの編集で設定を引き上げてください。"
+        }
+    },
+    "dailies": {
+        "title": "今日のデイリー",
+        "open": "デイリーを開く",
+        "activeness": "アクティブ度{top}中{now}",
+        "activenessBar": "今日のアクティブ度",
+        "missions": "ゲーム内ミッション: {total}件中{done}件完了",
+        "tasks": "マイタスク{total}件中{done}件",
+        "tasksBar": "今日完了したマイタスク",
+        "stillOpen": "マイタスクの未完了分、{total}件中先頭の{shown}件",
+        "allDone": "マイタスクの今日分はすべて完了しています。",
+        "noTasks": "マイタスクにタスクはまだありません。"
+    },
+    "planner": {
+        "title": "プランナーの不足分",
+        "short": "{amount}不足",
+        "covered": "不足なし",
+        "goals": "{pages}の目標です。コストはパッケージ、在庫は資源から取得します。",
+        "noGoals": "目標が設定されていません。建物、研究などのページでプランから目標を設定してください。",
+        "pages": {
+            "buildings": "建物",
+            "research": "研究",
+            "heroes": "ヒーロー",
+            "troops": "部隊",
+            "pets": "ペット",
+            "chiefGear": "チーフ装備",
+            "chiefCharms": "チーフチャーム"
+        },
+        "separator": "、",
+        "line": "必要 {need} · 所持 {have}",
+        "shortBy": "{amount}不足",
+        "enough": "十分",
+        "updateStock": "資源で在庫を更新",
+        "incomplete": "目標レベルのコストがパッケージで不明なため、これらの合計は不完全です。"
+    },
+    "progress": {
+        "title": "分野ごとの進行状況",
+        "hint": "所有数またはレベルを、パッケージの合計と比較",
+        "count": "{owned} / {total}",
+        "furnace": "Furnace",
+        "furnaceOf": "{max}中{level}",
+        "furnaceUnknown": "不明",
+        "areas": {
+            "buildings": "建物",
+            "heroes": "ヒーロー",
+            "chiefGear": "チーフ装備",
+            "chiefCharms": "チーフチャーム",
+            "experts": "エキスパート",
+            "pets": "ペット",
+            "research": "研究",
+            "allianceTech": "同盟テック",
+            "skins": "スキン"
+        },
+        "locked": {
+            "daybreakIsland": "Daybreak Island",
+            "requirement": "ロック中。Furnace {level}が必要です。{count, plural, other {あと{amount}レベル}}"
+        }
+    },
+    "power": {
+        "title": "戦力",
+        "total": "総戦力",
+        "complete": "現在の戦力を、解放設定で開いているコンテンツがすべて最高レベルのときに各グループが出せる最大値と比較しています。最大値のないグループは、そのままの値で集計します。",
+        "incomplete": "同じ比較です。{count, plural, other {{amount}件}}はデータに戦力の値がないため、{count, plural, other {集計されていません}}。",
+        "groupWithoutValue": "{count, plural, other {{amount}件}}はデータに戦力の値がありません",
+        "groups": {
+            "buildings": "建物",
+            "research": "研究",
+            "heroes": "ヒーロー",
+            "heroGear": "ヒーロー装備",
+            "chiefGear": "チーフ装備",
+            "chiefCharms": "チーフチャーム",
+            "experts": "エキスパート",
+            "pets": "ペット",
+            "troops": "部隊"
+        },
+        "ofPossible": "最大{possible}",
+        "totalProgress": "総戦力と最大値の比較",
+        "percentOfPossible": "最大値の{percent}%",
+        "rowOfPossible": "{possible}中{power}",
+        "progress": "{group}の戦力と最大値の比較",
+        "noMaximum": "最大値はなく、入力内容によって決まります",
+        "noCapNote": "部隊とヒーロー装備には上限がないため、部隊の訓練やヒーロー装備の強化で、総戦力は最大値の合計を超えることがあります。どちらも、最大値の合計にはそのままの値で含まれます。"
+    }
+}

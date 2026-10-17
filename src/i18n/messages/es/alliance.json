@@ -1,0 +1,50 @@
+{
+  "page": {
+    "title": "Alianza"
+  },
+  "view": {
+    "subline": "{chief} · {details} · estandarte de nivel {level}"
+  },
+  "banner": {
+    "title": "Estandarte de alianza",
+    "currentLevel": "Nivel actual",
+    "levelLabel": "Nivel del estandarte",
+    "maxHint": "Niveles enteros de 0 a {max}.",
+    "rangeChip": "{range}",
+    "costHeading": "Coste por nivel en {range}",
+    "noTimeOrPower": "Los estandartes no tienen tiempo de construcción ni poder en el paquete, así que no se muestra ninguno.",
+    "noCost": "Sin coste",
+    "none": "Ninguno",
+    "lower": "Bajar nivel del estandarte",
+    "raise": "Subir nivel del estandarte"
+  },
+  "structures": {
+    "title": "Estructuras de alianza",
+    "tech": {
+      "title": "Tecnología",
+      "description": "{count} nodos en Growth, Territory y Battle",
+      "status": "{maxed} al máximo, {progress} en curso, {locked} bloqueados"
+    },
+    "facilities": {
+      "title": "Instalaciones",
+      "description": "{count} instalaciones del mapa",
+      "owned": "{owned} que tienes"
+    },
+    "fortresses": {
+      "title": "Fortalezas",
+      "description": "Castillo, {strongholds} bastiones, {fortresses} fortalezas",
+      "reference": "Solo referencia"
+    }
+  },
+  "table": {
+    "title": "Coste del estandarte por rango de niveles",
+    "note": "{count} rangos, todos los niveles de un rango cuestan lo mismo",
+    "range": "Rango",
+    "state": "Estado",
+    "built": "Construido",
+    "current": "Actual",
+    "notBuilt": "Sin construir",
+    "none": "Ninguno",
+    "noCost": "Sin coste"
+  }
+}

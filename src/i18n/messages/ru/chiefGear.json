@@ -1,0 +1,176 @@
+{
+  "none": "Нет",
+  "charmLabel": "Амулет {number}",
+  "view": {
+    "title": "Снаряжение вождя",
+    "tabsLabel": "Снаряжение вождя",
+    "gearSubline": "{name} · шесть слотов, 150 строк улучшения",
+    "charmsSubline": "{name} · 6 предметов, по 3 амулета на каждом, 75 строк улучшения",
+    "tabs": {
+      "gear": "Снаряжение вождя",
+      "charms": "Амулеты вождя"
+    }
+  },
+  "shared": {
+    "plan": "План",
+    "autoSaveHint": "Каждое изменение сохраняется сразу. Кнопки двигают на одну строку в порядке пакета.",
+    "scoreToGain": "Очков осталось набрать",
+    "notes": "Заметки",
+    "package": "Пакет"
+  },
+  "gear": {
+    "scoreNow": "Очки снаряжения сейчас, шесть слотов",
+    "powerNow": "Мощь снаряжения сейчас",
+    "stepsToGoals": "Шагов до всех целей",
+    "goalsHint": "Цели здесь только для чтения. Задайте их в плане и нажмите «Сохранить план».",
+    "stepWord": "шагов",
+    "tiers": {
+      "title": "Ступени",
+      "description": "Пакет делит 150 строк на ступени: {count}. Выделенная ступень содержит хотя бы один ваш предмет.",
+      "rows": "строк: {rows}",
+      "names": {
+        "EpicT1": "Epic T1",
+        "MythicT1": "Mythic T1",
+        "MythicT2": "Mythic T2",
+        "LegendaryT1": "Legendary T1",
+        "LegendaryT2": "Legendary T2",
+        "LegendaryT3": "Legendary T3",
+        "LegendaryT4": "Legendary T4",
+        "LegendaryT5": "Legendary T5",
+        "LegendaryT6": "Legendary T6"
+      }
+    },
+    "notes": {
+      "setBonus": {
+        "title": "Правила бонуса комплекта",
+        "body": "3 предмета одной ступени дают защиту, а 6 предметов дают атаку для всех трёх типов войск. Предмет без уровня не считается. У каждой ступени одно значение."
+      },
+      "troopType": {
+        "title": "Тип войск введён вручную",
+        "body": "Cap и Watch усиливают Lancer, Coat и Pants усиливают Infantry, Ring и Weapon усиливают Marksman. Автор пакета ввёл это по тексту вики."
+      },
+      "capacity": {
+        "title": "Вместимость 0 в первых строках",
+        "body": "У первых 26 строк в пакете нет вместимости развёртывания, поэтому показано 0, пока в данных нет значений."
+      }
+    }
+  },
+  "charms": {
+    "scoreNow": "Очки амулетов сейчас, 18 амулетов",
+    "powerNow": "Мощь амулетов сейчас",
+    "stagesToGoals": "Этапов до всех целей",
+    "goalsHint": "Цели здесь только для чтения, их задают в плане.",
+    "stepWord": "этапов",
+    "slotMeta": "{troop} · 3 амулета",
+    "slotStages": ", этапов до целей: {stages}",
+    "notes": {
+      "secrets": {
+        "title": "Charm Secrets нужны с уровня 11",
+        "body": "Начиная с уровня 11, этап 1, для этапа нужны Charm Secrets. В более ранних этапах указаны только Charm Guide и Charm Design."
+      },
+      "look": {
+        "title": "Вид амулетов меняется с каждым уровнем",
+        "body": "У каждого амулета 18 значков, по одному на уровень. На каждом предмете три амулета, и они следуют типу войск предмета."
+      },
+      "estimate": {
+        "title": "Очки этапов приблизительные",
+        "body": "Очки уровня поровну делятся между этапами, которые к нему ведут. Игра это разделение не подтверждает."
+      }
+    }
+  },
+  "badge": {
+    "tier": "Ступень {tier}",
+    "stars": "{count, plural, one {{amount} звезда} few {{amount} звезды} many {{amount} звёзд} other {{amount} звезды}}",
+    "tierAndStars": "{tier}, {stars}"
+  },
+  "row": {
+    "level": "Уровень: {title}",
+    "progressLabel": "Прогресс {title}, строк: {total}",
+    "progress": "{progress} из {total}",
+    "stepsToGoal": " · до цели: {steps}",
+    "goal": "Цель {name}",
+    "noGoal": "Нет цели",
+    "stats": "Параметр {stat} · Мощь {power}",
+    "statPercent": "{percent}%",
+    "capacity": " · Вместимость {capacity}",
+    "lockedCurrent": "Сохранённый уровень {name} закрыт возрастом сервера и не учитывается. {requirement}.",
+    "lockedGoal": "Сохранённая цель {name} закрыта возрастом сервера и не планируется. {requirement}."
+  },
+  "summary": {
+    "title": "Осталось до всех целей",
+    "derived": "Расчёт",
+    "score": "очков",
+    "powerGain": "прирост мощи",
+    "noGoals": "Цели не заданы. Задайте их в плане.",
+    "openPlan": "Открыть план: очки событий и подробности"
+  },
+  "setBonus": {
+    "title": "Открытые бонусы комплекта",
+    "pieceSet": "Комплект из {pieces}",
+    "active": "Действует",
+    "notActive": "Не действует",
+    "value": "{stat} +{percent}%",
+    "appliesTo": "Предметы {tierName}, для Infantry, Lancer и Marksman",
+    "needs": "Нужно {pieces} предметов одной ступени. {stat} +0% пока."
+  },
+  "plan": {
+    "gear": {
+      "title": "План снаряжения вождя",
+      "description": "Материалы, очки и мощь от текущего уровня до цели",
+      "stepWord": "Шаги",
+      "conversionNote": "Проверка не учитывает обмены. У конвертера семь курсов, у каждого свой недельный лимит, например 10 Design Plans на 1 Lunar Amber, до 500 в неделю."
+    },
+    "charm": {
+      "title": "План амулетов вождя",
+      "description": "Материалы, очки и мощь от текущего уровня до цели",
+      "stepWord": "Этапы",
+      "conversionNote": "Проверка не учитывает обмены: 2 Charm Guide дают 1 Charm Design и наоборот, а 40 любых дают 1 Charm Secrets."
+    },
+    "saved": "План сохранён {date}",
+    "close": "Закрыть",
+    "save": "Сохранить план",
+    "export": {
+      "button": "Экспорт в главные события",
+      "nothingToExport": "Задайте цель выше текущего уровня, чтобы экспортировать план.",
+      "gearScore": "Очки снаряжения вождя",
+      "charmScore": "Очки амулетов вождя",
+      "power": "Полученная мощь",
+      "powerReason": "Ни одна строка главных событий не начисляет очки за мощь снаряжения или амулетов вождя."
+    },
+    "inputs": "Вводные",
+    "slotTroop": "{slot}, {troop}",
+    "from": "От {level}",
+    "goalLabel": "Цель: {label}",
+    "slotGoalLabel": "Цель: {slot} {label}",
+    "inputsHint": "Текущий уровень берётся со страницы. Меняйте его там. Цели на странице только для чтения, задавайте их здесь.",
+    "result": "Итог",
+    "score": "Очки",
+    "powerGain": "Прирост мощи",
+    "events": {
+      "svs": "SvS State of Power",
+      "allianceShowdown": "Alliance Showdown",
+      "kingOfIcefield": "King of Icefield",
+      "hallOfChief": "Hall of Chief"
+    },
+    "bySlot": "По слотам",
+    "byCharm": "По амулетам",
+    "columnSlot": "Слот",
+    "columnCharm": "Амулет",
+    "slotCharm": "{slot} {charm}",
+    "converter": {
+      "title": "Конвертер материалов",
+      "spend": "Отдать",
+      "get": "Получить",
+      "limit": "Лимит",
+      "amount": "{quantity} {name}",
+      "perWeek": "{limit} в неделю",
+      "noLimit": "Без недельного лимита"
+    },
+    "lockedCurrent": "Сохранённый уровень {name} закрыт возрастом сервера. {requirement}."
+  },
+  "lock": {
+    "title": "Закрыто возрастом сервера",
+    "stop": "{name} (закрыто, день {day})",
+    "group": "С {name}: {requirement}."
+  }
+}

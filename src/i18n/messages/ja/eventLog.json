@@ -1,0 +1,129 @@
+{
+    "title": "イベントログ",
+    "events": {
+        "svs": "SvS、State of Power",
+        "showdown": "Alliance Showdown",
+        "king": "King of Icefield",
+        "hall": "Hall of Chief"
+    },
+    "tabs": {
+        "label": "イベントログの表示",
+        "current": "現在のイベント",
+        "history": "履歴"
+    },
+    "dates": {
+        "title": "イベント日程",
+        "start": "開始",
+        "end": "終了",
+        "days": "{count, plural, other {{amount}日}}",
+        "endBeforeStart": "終了日が開始日より前になっています。"
+    },
+    "results": {
+        "rank": "ランク",
+        "alliance": "同盟",
+        "score": "スコア",
+        "allianceShort": "同盟",
+        "scoreOf": "{day}のスコア",
+        "rankOf": "{day}のランク",
+        "allianceOf": "{day}の同盟ランク",
+        "plan": "プラン{total}",
+        "notStarted": "未開始",
+        "opensLater": "後日開始",
+        "empty": "未入力",
+        "locked": "ロック済み",
+        "lock": "ロック",
+        "unlock": "ロック解除",
+        "lockDay": "{day}をロック",
+        "unlockDay": "{day}のロックを解除"
+    },
+    "cards": {
+        "svsDays": "準備期間の1日目から5日目",
+        "days": "日程",
+        "stages": "ステージ",
+        "rankHint": "ランクはステート内の順位、同盟は同盟の順位です。",
+        "battleTitle": "バトルフェーズ",
+        "battleNote": "バトルのスコアとランクは独立した結果です。1日目から5日目には加算されません。"
+    },
+    "overall": {
+        "svsTitle": "総合結果、1日目から5日目",
+        "title": "総合結果",
+        "rank": "総合ランク",
+        "alliance": "総合同盟ランク",
+        "svsTotal": "ロック済みの1日目から5日目の合計",
+        "daysTotal": "ロック済みの日の合計",
+        "stagesTotal": "ロック済みのステージの合計",
+        "hint": "ロックすると、プレイを続けても数値が変わりません。ロックした数値はロック解除できます。"
+    },
+    "footer": {
+        "close": "閉じる",
+        "endEvent": "イベントを終了",
+        "readOnly": "履歴は読み取り専用です"
+    },
+    "end": {
+        "title": "{event}を終了して履歴に保存しますか？",
+        "dates": "{event}、{start}から{end}まで",
+        "noDates": "{event}、日付は未入力",
+        "lockedTotal": "ロック済みの日の合計: {total}。",
+        "lockedTotalSvs": "ロック済みの1日目から5日目の合計: {total}。",
+        "noRanks": "総合ランクと同盟ランクは空です。",
+        "allLocked": "すべての日がロックされています。",
+        "unlocked": "{count, plural, other {{amount}日分がロックされていません。}}入力したとおりに保存され、数値のない日は空のままです。",
+        "unlockedList": "ロックされていない日: {days}。",
+        "what": "実行される内容",
+        "saves": "日程、毎日のスコアとランク、総合結果を、各日のプラン合計とともに履歴に保存します。",
+        "clearsCounts": "すべての日の回数をクリアし、プランの各日が0から始まります。",
+        "clearsPlans": "このイベントにエクスポートしたプランと、チェックリストのチェックをクリアします。",
+        "keeps": "クリアされるのはこのイベントだけです。他のページの目標とプランは残ります。",
+        "cancel": "キャンセル",
+        "confirm": "イベントを終了して新規開始",
+        "toastTitle": "イベントを終了しました",
+        "toastMessage": "{event}を履歴に保存しました。イベントは日付なしの新規状態になります。",
+        "undo": "元に戻す",
+        "lockedTotalStages": "ロック済みのステージの合計: {total}。"
+    },
+    "history": {
+        "intro": "終了した{event}イベントを新しい順に表示します。イベントを終了するとログがここに保存され、後から編集はできず、削除のみ可能です。<link>プランと実績の比較、予定したアップグレードは履歴で確認できます。</link>",
+        "empty": "終了したイベントはまだありません。イベントを終了すると、ログがここに保存されます。",
+        "cardTitle": "{event}、{start}から{end}まで",
+        "cardNoDates": "{event}、日付なし",
+        "ended": "{date}に終了",
+        "svsTotal": "1日目から5日目",
+        "total": "合計スコア",
+        "overallRank": "総合ランク",
+        "allianceRank": "同盟ランク",
+        "notSet": "未設定",
+        "showDays": "日程を表示",
+        "hideDays": "日程を非表示",
+        "remove": "履歴から削除",
+        "removedTitle": "履歴から削除しました",
+        "removedMessage": "{event}を履歴から削除しました。",
+        "undo": "元に戻す",
+        "noValue": "-"
+    },
+    "checklist": {
+        "title": "プランのチェックリスト",
+        "description": "{day}にやること",
+        "dayChips": "日",
+        "castleTitle": "{day}の城の役職に申し込む",
+        "castleBody": "城の役職は翌日のボーナスを与えます。{day}にボーナスが適用されるよう、今日が終わる前に申し込んでください。",
+        "castleCheck": "{day}に申し込み済み",
+        "done": "{total}件中{done}件完了",
+        "progress": "チェック済みの行動",
+        "planLine": "その日のプラン: {points}ポイント。回数が0より大きい行動だけを表示します。回数はコアイベントページから取得します。",
+        "empty": "この日に回数が設定された行動はありません。コアイベントページで回数を追加してください。",
+        "resources": "使用する資源",
+        "resourcesHint": "その日に消費するアイテムです。始める前に在庫を確認してください。",
+        "actions": "行動",
+        "count": "×{count}",
+        "points": "{points}pt",
+        "clear": "チェックをクリア",
+        "close": "閉じる",
+        "dayTitle": "{day}: {name}"
+    },
+    "eventShort": {
+        "svs": "SvS",
+        "showdown": "Alliance Showdown",
+        "king": "King of Icefield",
+        "hall": "Hall of Chief"
+    }
+}

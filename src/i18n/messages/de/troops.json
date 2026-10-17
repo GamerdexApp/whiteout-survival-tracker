@@ -1,0 +1,251 @@
+{
+    "page": {
+        "title": "Truppen"
+    },
+    "view": {
+        "title": "Truppen",
+        "subline": "{chief} · {camps}",
+        "campLevel": "{name} Camp {level}",
+        "notBuilt": "nicht gebaut",
+        "intro": "Camp-Stufen, Kapazität und Tempoboni stammen von anderen Seiten und sind nur lesbar. Der Plan berechnet, was Training und Beförderung kosten. Training starten markiert eine Charge, die ein Camp gerade ausbildet.",
+        "plan": "Plan"
+    },
+    "cards": {
+        "tileSummary": "Truppen · Macht {power}",
+        "allTroops": "Alle Truppen",
+        "totalPower": "Gesamtmacht",
+        "troops": "Truppen",
+        "power": "Macht",
+        "powerNote": "Die Macht pro Truppe stammt aus dem Paket. Tier 10 und 11 folgen der Fire-Crystal-Stufe jedes Camps.",
+        "campLevel": "Camp Stufe {level}",
+        "campNotBuilt": "Camp nicht gebaut",
+        "campAgeLocked": "Die gespeicherte Camp-Stufe ist auf diesem Server noch nicht offen. {text}",
+        "highestTier": "Höchstes Tier",
+        "tierShort": "T{tier}",
+        "noTier": "Keins"
+    },
+    "tiers": {
+        "title": "Tiers {name}",
+        "hideLow": "Tier 9 und niedriger ausblenden",
+        "typeLabel": "Truppentyp",
+        "hiddenNote": "Tier 1 bis 9 sind ausgeblendet. Furnace {furnace} ist Stufe 30 oder höher.",
+        "heads": {
+            "tier": "Tier",
+            "troops": "Truppen",
+            "train": "Training",
+            "power": "Macht"
+        },
+        "requires": {
+            "list": "Braucht {list}",
+            "camp": "{name} Camp {level}",
+            "building": "{name} {level}",
+            "research": "{name} Stufe {level}"
+        },
+        "tier": "Tier {tier}",
+        "locked": "Gesperrt",
+        "countLabel": "{name} {tier} Truppen",
+        "train": "Training",
+        "seconds": "{value} s",
+        "each": "je",
+        "mobilePower": "Macht"
+    },
+    "plan": {
+        "title": "Truppen planen",
+        "description": "Training und Beförderung für die drei Truppentypen",
+        "saved": "Plan gespeichert {date}",
+        "close": "Schließen",
+        "save": "Plan speichern",
+        "export": {
+            "button": "In Kern-Events exportieren",
+            "emptyHint": "Füge ein Training hinzu, um es zu exportieren.",
+            "computed": "Von der App berechnet.",
+            "trainedGroup": "für ausgebildete Truppen",
+            "speedupGroup": "für Beschleuniger-Minuten",
+            "trainedTier": "Ausgebildete Truppen Tier {tier}",
+            "speedupMinutes": "Genutzte Beschleuniger-Minuten fürs Training",
+            "promoted": "Beförderte Truppen",
+            "promotedReason": "Beförderung punktet nur über Beschleuniger-Minuten.",
+            "power": "Macht aus Training und Beförderung",
+            "powerReason": "Das Paket hat noch keine echte Macht pro Tier."
+        },
+        "noRuns": "Noch keine Trainings. Füge eine Truppe hinzu, um einen Plan zu starten.",
+        "add": {
+            "title": "Truppe hinzufügen",
+            "typeLabel": "Truppentyp",
+            "modeLabel": "Training oder Beförderung",
+            "button": "Truppe hinzufügen"
+        },
+        "run": {
+            "tier": "Tier {tier}",
+            "modes": {
+                "training": "Training",
+                "promotion": "Beförderung"
+            },
+            "remove": "Training {name} entfernen",
+            "removeButton": "Entfernen",
+            "modeLabel": "{name} Training oder Beförderung",
+            "tierLabel": "Tier {name}",
+            "fromLabel": "{name} befördern von Tier",
+            "toLabel": "{name} befördern auf Tier",
+            "to": "bis",
+            "troops": "Truppen",
+            "max": "Max",
+            "maxValue": "Max ({capacity})",
+            "batches": "Chargen"
+        },
+        "speed": {
+            "readOnlyNote": "Nur lesbare Werte werden von anderen Seiten übernommen. Ändere sie dort.",
+            "openBonuses": "Boni öffnen",
+            "title": "Kapazität und Tempo",
+            "appointment": "Ernennung",
+            "position": "Position",
+            "rank": "Rang",
+            "positions": {
+                "none": "Keine",
+                "ministerOfEducation": "Minister of Education",
+                "vicePresident": "Vice President"
+            },
+            "ranks": {
+                "regular": "Regulär",
+                "supreme": "Höchste"
+            },
+            "appointmentEffect": "+{capacity} Kapazität, +{speed}% Tempo",
+            "appointmentNote": "Nur eine der beiden Ernennungen kann aktiv sein. Minister of Education gibt {moeCapacity} Kapazität und {moeSpeed} Prozent Tempo (Höchste {moeCapacitySupreme} und {moeSpeedSupreme}). Vice President gibt {vpSpeed} Prozent Tempo (Höchste {vpSpeedSupreme}).",
+            "capacity": "Kapazität",
+            "researchCapacity": "Forschungskapazität",
+            "troops": "{value} Truppen",
+            "readOnly": "Nur lesbar",
+            "capacityBoost": "Kapazitätsbonus",
+            "boostTotal": "Gesamt x{multiplier}",
+            "capacityPerBatch": "Kapazität pro Charge",
+            "trainingSpeed": "Trainingstempo",
+            "gameSpeed": "Trainingstempo im Spiel",
+            "appointmentSpeed": "Ernennung",
+            "mobilize": "Mobilize",
+            "advancedTraining": "Advanced Training",
+            "speedUsed": "Genutztes Trainingstempo",
+            "percent": "{value}%",
+            "percentPlus": "+{value}%"
+        },
+        "stock": {
+            "name": "Trainings-Beschleuniger",
+            "minutesUnit": "Min",
+            "note": "Dein Bestand: Training {training} Min, Allgemein {general} Min. Allgemeine Beschleuniger zählen für das Training. Training, das ein Beschleuniger nicht abdeckt, endet in Normalzeit, daher werden nur die Beschleuniger genutzt, die du hast: {used} Min."
+        },
+        "result": {
+            "title": "Ergebnis",
+            "resources": "Ressourcen",
+            "changes": "Truppenänderungen nach Tier",
+            "heads": {
+                "tier": "Tier",
+                "infantry": "Inf.",
+                "lancer": "Lan.",
+                "marksman": "Mark.",
+                "all": "Alle"
+            },
+            "tier": "Tier {tier}",
+            "total": "Gesamt",
+            "time": "Zeit, ohne Beschleuniger",
+            "totalTime": "Gesamt, alle Truppentypen (Beschleunigerzeit)",
+            "longest": "Längster Truppentyp",
+            "minutesNeeded": "Nötige Beschleuniger-Minuten",
+            "minutesUsed": "Genutzte Beschleuniger-Minuten (im Bestand)",
+            "minutes": "{value} Min",
+            "tier12Note": "Laut Paket sind die Kosten für Tier 12 teils abgeleitet. Die Beförderungskosten für Marksman wurden im Spiel gemessen, die für Infantry und Lancer wurden daraus skaliert."
+        }
+    },
+    "queue": {
+        "title": "Trainings-Warteschlangen",
+        "note": "Jedes Camp bildet eine Charge nach der anderen aus. Abschließen fügt die Truppen deinen Zahlen hinzu.",
+        "idle": "Nichts wird ausgebildet. Starte eine Charge, um dieses Camp zu nutzen.",
+        "startButton": "Training starten",
+        "jobTitle": {
+            "training": "Training {count} {name} T{tier}",
+            "promotion": "Beförderung {count} {name} T{from} auf T{to}"
+        },
+        "manage": {
+            "slotLabel": "{camp}, eine Charge nach der anderen",
+            "finishText": "Upgrade abschließen fügt die Truppen deinen Zahlen hinzu, gibt das Camp frei und fügt die Charge deinem Verlauf hinzu. Bei null Restzeit zeigt die Karte Bereit zum Abschließen. Nichts wird von selbst fertig, weil du Beschleuniger genutzt haben könntest."
+        },
+        "flyout": {
+            "title": "Training starten",
+            "description": "Markiere eine Charge als in Ausbildung oder Beförderung in einem Camp",
+            "camp": "Camp",
+            "campHelp": "Eine Charge nach der anderen pro Camp. Ein belegtes Camp sagt, wann es frei wird.",
+            "busy": "Belegt bis {date}",
+            "notBuilt": "Camp nicht gebaut",
+            "action": "Aktion",
+            "training": "Training",
+            "promotion": "Beförderung",
+            "tier": "Tier",
+            "tierOption": "Tier {tier}",
+            "fromTier": "Von Tier",
+            "toTier": "Auf Tier",
+            "troops": "Truppen in der Charge",
+            "max": "Max",
+            "capacityHint": "Eine Charge fasst bis zu {capacity} Truppen. Das ist die Forschungskapazität plus deine Camp-Stufen.",
+            "noTiers": "Dieses Camp hat noch kein Tier zum Ausbilden. Erhöhe die Camp-Stufe auf der Gebäude-Seite.",
+            "cost": "Kosten der Charge",
+            "time": "Trainingszeit",
+            "packageTime": "Paketzeit",
+            "speed": "Trainingstempo",
+            "readOnly": "Nur lesbar",
+            "openBonuses": "Boni öffnen",
+            "yourTime": "Deine Zeit",
+            "timeHint": "Das Trainingstempo stammt von der Boni-Seite. Nutze Schon gestartet, wenn das Spiel eine andere Zeit zeigt.",
+            "whenStarted": "Wann hat es begonnen?",
+            "modes": {
+                "now": "Startet jetzt",
+                "already": "Schon gestartet"
+            },
+            "timeLeftHours": "Restzeit, Stunden",
+            "ends": "Endet",
+            "takeCost": {
+                "title": "Kosten von meinem Bestand abziehen",
+                "hint": "Zieht die Ressourcen der Charge von Ressourcen ab. Ein Wert fällt nie unter 0.",
+                "enough": "Du hast genug.",
+                "short": "Es fehlt an {names}. Der Bestand geht dafür auf 0."
+            },
+            "cancel": "Abbrechen",
+            "start": "Training starten",
+            "allCamps": "Alle freien Camps ({count})",
+            "allCampsHint": "Startet dieselbe Charge in jedem freien Camp gleichzeitig. Jedes Camp behält seine eigene Zeit. Gezeigt werden die Tiers, die jedes freie Camp ausbilden kann.",
+            "campTime": "{camp}: {time}"
+        },
+        "toasts": {
+            "started": {
+                "title": "Training gestartet",
+                "message": "{what}."
+            },
+            "finished": {
+                "title": "{what} ausgebildet",
+                "message": "Zu deinen Truppenzahlen und zum Verlauf hinzugefügt."
+            },
+            "cancelled": {
+                "title": "{what} abgebrochen",
+                "message": "Deine Truppenzahlen bleiben, wie sie waren. Korrigiere bei Bedarf deinen Bestand unter Ressourcen."
+            },
+            "undo": "Rückgängig"
+        },
+        "batchName": {
+            "training": "{count} {name} T{tier}",
+            "promotion": "{count} {name} T{from} auf T{to}"
+        }
+    },
+    "callOfWar": {
+        "title": "Call of War",
+        "note": "Fähigkeit von Romulus. Eine kostenlose Abholung pro UTC-Tag, für alle Camps zusammen. Sie setzt sich um 00:00 UTC zurück.",
+        "available": "{troops} kostenlose Truppen heute",
+        "claimed": "Heute abgeholt. Eine neue Abholung ist kostenlos in {time}.",
+        "notUnlocked": "Braucht Romulus rekrutiert und Call of War auf Stufe 1 oder höher auf der Experten-Seite.",
+        "level": "Call of War Stufe {level}",
+        "add": "Zu {camp} hinzufügen",
+        "addHint": "{troops} Truppen gehen an Tier {tier}",
+        "noTier": "Kein Tier freigeschaltet",
+        "toast": {
+            "title": "Call of War abgeholt",
+            "message": "{troops} Truppen zu {camp} Tier {tier} hinzugefügt.",
+            "undo": "Rückgängig"
+        }
+    }
+}

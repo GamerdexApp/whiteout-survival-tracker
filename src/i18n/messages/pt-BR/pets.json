@@ -1,0 +1,209 @@
+{
+  "page": {
+    "title": "Pets"
+  },
+  "view": {
+    "subline": "{chief} · {details} · {unlocked} de {total} pets desbloqueados"
+  },
+  "rarities": {
+    "Common": "Comum",
+    "Uncommon": "Incomum",
+    "Rare": "Raro",
+    "Epic": "Épico",
+    "Legendary": "Lendário"
+  },
+  "unlock": {
+    "afterFurnace": "Dia {days} e Furnace {level}",
+    "afterPet": "Dia {days} e {pet} nível {level}"
+  },
+  "summary": {
+    "unlocked": "Desbloqueados",
+    "unlockedValue": "{count} de {total}",
+    "unlockedNote": "Definido por você",
+    "power": "Poder total",
+    "powerNote": "Poder de nível, avanço e refinamento dos pets desbloqueados",
+    "powerUnknown": "Poder de nível, avanço e refinamento dos pets desbloqueados, {amount} desconhecidos",
+    "next": "Próximo a desbloquear",
+    "allUnlocked": "Todos desbloqueados",
+    "allUnlockedNote": "Todos os pets estão desbloqueados",
+    "lockedNote": "{count} bloqueados até um dia posterior do servidor"
+  },
+  "totals": {
+    "attackDefense": "Ataque e Defesa das tropas",
+    "attack": "Ataque",
+    "defense": "Defesa",
+    "lethality": "Letalidade",
+    "health": "Vida",
+    "gain": "+{value}%",
+    "types": {
+      "infantry": "Infantaria",
+      "lancer": "Lanceiro",
+      "marksman": "Atirador"
+    }
+  },
+  "search": {
+    "label": "Buscar pets",
+    "placeholder": "Buscar entre {amount} pets pelo nome"
+  },
+  "status": {
+    "showing": "Mostrando {shown} de {total} {count, plural, one {pet} other {pets}}.",
+    "filters": " Filtros: {list}.",
+    "filterNames": {
+      "rarity": "Raridade",
+      "status": "Status",
+      "advanced": "Avançado",
+      "order": "Ordem"
+    },
+    "readOnlyGoals": "As metas são só de leitura aqui e são definidas em Plano. Uma meta igual ao valor atual significa sem meta.",
+    "showMore": "Mostrar {count, plural, one {mais {amount} pet} other {mais {amount} pets}}"
+  },
+  "empty": {
+    "title": "Nenhum pet encontrado",
+    "description": "Mude a busca ou os filtros para ver mais pets.",
+    "reset": "Redefinir filtros"
+  },
+  "toast": {
+    "lockedTitle": "{name} bloqueado",
+    "lockedMessage": "Nível, avanço e refinamento são mantidos.",
+    "undo": "Desfazer"
+  },
+  "card": {
+    "summary": "{rarity} · nível máx. {max}",
+    "unlocked": "Desbloqueado",
+    "unlockedLabel": "{pet} desbloqueado",
+    "cooldown": "Recarga de {time}",
+    "cooldownByTier": "A recarga muda por tier",
+    "cooldownUnknown": "Recarga desconhecida",
+    "skillTiers": "{count, plural, one {{amount} tier de habilidade} other {{amount} tiers de habilidade}}",
+    "unlockRule": "Regra de desbloqueio",
+    "ruleMet": "Você atende a esta regra",
+    "level": "Nível (máx. {max})",
+    "levelLabel": "Nível de {pet}",
+    "goal": "Meta {level}",
+    "noGoal": "Sem meta",
+    "advanced": "Avançado",
+    "advancedHint": "O avanço pode ser marcado nos níveis 10, 20, 30 e assim por diante.",
+    "refinement": "Refinamento",
+    "refinementMax": "máx. {max}% cada",
+    "refineLabel": "{stat} de {pet}",
+    "percentSign": "%",
+    "attack": "Atq +{value}%",
+    "defense": "Def +{value}%",
+    "power": "Poder {value}",
+    "powerUnknown": "Poder desconhecido",
+    "powerParts": "Nível e avanço {base}, refinamento {refining}"
+  },
+  "filters": {
+    "button": "Filtros",
+    "title": "Filtros",
+    "description": "Escolha o que a lista de Pets mostra",
+    "rarity": "Raridade",
+    "rarityAll": "Todos {amount}",
+    "rarityOption": "{rarity} {amount}",
+    "rarities": {
+      "Common": "Comum",
+      "Uncommon": "Incomum",
+      "Rare": "Raro",
+      "Epic": "Épico",
+      "Legendary": "Lendário"
+    },
+    "status": "Status",
+    "statusOptions": {
+      "all": "Todos os pets",
+      "unlocked": "Desbloqueados",
+      "locked": "Bloqueados"
+    },
+    "advanced": "Avançado",
+    "advancedOptions": {
+      "any": "Qualquer",
+      "advanced": "Avançados",
+      "notAdvanced": "Não avançados"
+    },
+    "order": "Ordem",
+    "orderOptions": {
+      "game": "Ordem do jogo",
+      "name": "Nome, de A a Z",
+      "level": "Nível, maior primeiro"
+    },
+    "notSaved": "Os filtros não são salvos.",
+    "reset": "Redefinir",
+    "show": "Mostrar {count, plural, one {{amount} pet} other {{amount} pets}}"
+  },
+  "plan": {
+    "button": "Plano",
+    "title": "Planejar pets",
+    "description": "Comida, itens, atributos e pontos de evento para alcançar suas metas",
+    "saved": "Plano salvo {date}",
+    "notSavedYet": "Plano ainda não salvo",
+    "close": "Fechar",
+    "save": "Salvar plano",
+    "exportButton": "Exportar para Eventos principais",
+    "exportNothing": "O plano não tem pontuação de avanço para exportar.",
+    "export": {
+      "advancement": "Pontuação de avanço dos pets",
+      "commonMark": "Common Wild Marks",
+      "advancedMark": "Advanced Wild Marks",
+      "marksDetail": "Contados a partir de Recursos."
+    },
+    "noPets": "Adicione um pet desbloqueado para planejar seus níveis.",
+    "add": {
+      "title": "Adicionar um pet",
+      "selectLabel": "Pet a adicionar",
+      "button": "Adicionar pet",
+      "allIn": "Todos os pets desbloqueados estão no plano.",
+      "noneUnlocked": "Desbloqueie um pet na página Pets para planejá-lo."
+    },
+    "block": {
+      "rarities": {
+        "Common": "Comum",
+        "Uncommon": "Incomum",
+        "Rare": "Raro",
+        "Epic": "Épico",
+        "Legendary": "Lendário"
+      },
+      "maxLevel": "Nível máx. {max}",
+      "remove": "Remover",
+      "removeLabel": "Remover {pet} do plano",
+      "current": "Nível atual",
+      "to": "para",
+      "goal": "Nível da meta (máx. {max})",
+      "goalLabel": "Nível da meta de {pet}",
+      "payAdvancement": "Pagar o avanço na meta",
+      "paysCurrent": "Não avançado no nível {level}, então esse avanço é pago."
+    },
+    "result": {
+      "title": "Resultado para {count, plural, one {{amount} pet} other {{amount} pets}}",
+      "resources": "Recursos, todos os pets",
+      "byPet": "Por pet",
+      "heads": {
+        "pet": "Pet",
+        "levels": "Níveis",
+        "food": "Comida",
+        "power": "Poder"
+      },
+      "powerGain": "+{value}",
+      "percentGain": "+{value}%",
+      "unknown": "Desconhecido",
+      "gains": "Ganhos",
+      "gainNames": {
+        "levels": "Níveis ganhos",
+        "advancements": "Avanços",
+        "attack": "Ataque das tropas",
+        "defense": "Defesa das tropas",
+        "power": "Poder",
+        "score": "Pontuação de avanço"
+      },
+      "unknownPowerNote": "O pacote de dados não tem poder avançado para um nível deste plano, então o ganho de poder é Desconhecido.",
+      "eventPoints": "Pontos de evento",
+      "events": {
+        "svs": "SvS",
+        "allianceShowdown": "Alliance Showdown",
+        "kingOfIcefield": "King of Icefield",
+        "hallOfChief": "Hall of Chief"
+      },
+      "notScored": "Não pontua",
+      "eventNote": "Os pontos de evento são a pontuação de avanço vezes os pontos da linha de pontuação de cada evento.",
+      "scoreSourceNote": "As pontuações de avanço dos níveis 40 a 100 batem com as notas dos eventos. Os níveis 10 a 30 vêm de uma só fonte (WoS Tools)."
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "page": {
+    "title": "VIP"
+  },
+  "view": {
+    "sublineKnown": "{chief} · {details} · VIP {level}, XP: {xp}",
+    "sublineUnknown": "{chief} · {details} · VIP не задан"
+  },
+  "input": {
+    "title": "Ваш VIP",
+    "enterAs": "Ввести VIP как",
+    "modeXp": "Общий XP",
+    "modeLevel": "Уровень VIP",
+    "xpLabel": "Общий VIP XP",
+    "xpHint": "Целое число XP от 0 до {max}.",
+    "levelLabel": "Уровень VIP",
+    "notSet": "Не задано",
+    "levelHint": "Уровень ставит общий XP на минимум этого уровня. Введите настоящий XP для точности.",
+    "reached": "Достигнутый уровень",
+    "levelName": "VIP {level}",
+    "unknown": "Неизвестно"
+  },
+  "progress": {
+    "label": "Прогресс внутри VIP {level}",
+    "toNext": "XP до VIP {level}: {xp}",
+    "percent": "{percent}%",
+    "range": "Общий XP для этого уровня: от {from} до {to}.",
+    "estimate": "Оценка. Введён уровень, поэтому XP равен минимуму VIP {level}. Введите настоящий XP для точного значения.",
+    "maxLevel": "Макс. уровень",
+    "maxHint": "VIP {level} это последний уровень."
+  },
+  "perks": {
+    "title": "Что даёт VIP {level}",
+    "subtitle": "Итоги на этом уровне, а не изменение относительно прошлого.",
+    "unknown": "Введите свой VIP, чтобы увидеть, что он даёт."
+  },
+  "next": {
+    "title": "VIP {level} добавляет",
+    "subtitle": "По сравнению с VIP {from}.",
+    "new": "новое",
+    "was": "было {value}",
+    "maxLevel": "Макс. уровень. Следующего уровня для просмотра нет.",
+    "unknown": "Введите свой VIP, чтобы увидеть следующий уровень."
+  },
+  "table": {
+    "title": "Все уровни ({count}), всего XP: {total}",
+    "level": "Уровень",
+    "xpFromLast": "XP от прошлого",
+    "totalXp": "Общий XP",
+    "bonuses": "Новые или возросшие бонусы",
+    "state": "Состояние",
+    "xpFromLastMobile": "XP от прошлого: {xp}",
+    "totalMobile": "Всего {xp}",
+    "unknown": "Неизвестно",
+    "states": {
+      "reached": "Достигнут",
+      "current": "Текущий",
+      "ahead": "Впереди",
+      "unknown": "Неизвестно"
+    },
+    "levelName": "VIP {level}"
+  }
+}

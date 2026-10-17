@@ -1,0 +1,40 @@
+{
+    "line": "{skins} trong {types}, kèm chỉ số cộng thêm, nơi nhận và thời hạn.",
+    "skinCount": "{count, plural, other {{amount} skin}}",
+    "typeCount": "{count, plural, other {{amount} loại}}",
+    "gallery": {
+        "title": "Bộ sưu tập skin",
+        "showing": "Hiển thị {shown} trên {total}",
+        "search": "Tìm kiếm",
+        "searchPlaceholder": "Tìm skin theo tên hoặc nguồn",
+        "bonusStat": "Chỉ số cộng thêm",
+        "anyStat": "Mọi chỉ số",
+        "noBonus": "Không cộng thêm",
+        "duration": "Thời hạn",
+        "anyDuration": "Mọi thời hạn",
+        "permanent": "Vĩnh viễn",
+        "timed": "Có thời hạn",
+        "notStated": "Không nêu",
+        "types": "Loại skin",
+        "allTypes": "Tất cả",
+        "empty": {
+            "title": "Không có skin phù hợp",
+            "description": "Đổi từ khóa hoặc bộ lọc để xem skin."
+        }
+    },
+    "columns": {
+        "skin": "Skin",
+        "type": "Loại",
+        "bonus": "Cộng thêm",
+        "duration": "Thời hạn (văn bản tự do)",
+        "sources": "Nguồn"
+    },
+    "bonusValue": "{stat} {value}",
+    "detail": {
+        "type": "Loại",
+        "bonus": "Cộng thêm",
+        "duration": "Thời hạn",
+        "sources": "Nguồn",
+        "description": "Mô tả"
+    }
+}

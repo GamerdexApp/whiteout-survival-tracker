@@ -1,0 +1,26 @@
+{
+    "line": "{types} loại quân, mỗi loại có {tiers} bậc. Chỉ để tham khảo, không có gì ở đây được lưu vào thủ lĩnh của bạn.",
+    "tiers": {
+        "heading": "Bậc quân",
+        "meta": "{types} loại x {tiers} bậc = {rows} dòng",
+        "typeLabel": "Loại quân",
+        "tableLabel": "Các bậc {type}"
+    },
+    "detail": {
+        "heading": "Chi tiết bản ghi",
+        "meta": "Bậc {tier}, cả ba loại",
+        "tableLabel": "Bậc {tier} theo loại quân"
+    },
+    "columns": {
+        "tier": "Bậc",
+        "type": "Loại",
+        "cost": "Chi phí mỗi quân",
+        "topCost": "Chi phí bậc",
+        "time": "Thời gian huấn luyện",
+        "promotion": "Chi phí thăng cấp"
+    },
+    "cells": {
+        "tier": "Bậc {tier}",
+        "none": "Không có"
+    }
+}

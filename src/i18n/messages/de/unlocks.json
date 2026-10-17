@@ -1,0 +1,27 @@
+{
+    "lock": {
+        "day": "Wird an Serverstag {day} freigeschaltet",
+        "dayAndDate": "Wird an Serverstag {day} freigeschaltet, {date}"
+    },
+    "areas": {
+        "pets": "Haustiere",
+        "fireCrystal": "Fire-Crystal-Stufen",
+        "experts": "Experten",
+        "chiefGear": "Häuptlingsgear",
+        "chiefCharms": "Häuptlingsamulette",
+        "warAcademy": "War Academy und T12-Forschung"
+    },
+    "dialog": {
+        "legend": "Freigeschaltete Inhalte",
+        "hint": "Sperren folgen dem Serveralter ab dem Serverstartdatum. Weicht dein Server etwas ab, wähle den Schritt, den du wirklich hast. Gesperrte Einträge bleiben sichtbar und deine gespeicherten Daten bleiben erhalten.",
+        "auto": "Auto, {current}",
+        "autoUnknown": "Auto, setze das Serverstartdatum, um es zu nutzen",
+        "autoNone": "noch nichts freigeschaltet",
+        "none": "Nichts freigeschaltet",
+        "stepPets": "Tag {day}, {count} von {total} Haustieren",
+        "stepExperts": "Tag {day}, {count} von {total} Experten",
+        "stepFc": "Tag {day}, bis {last}, ohne seine Stages",
+        "stepNamed": "Tag {day}, {name}",
+        "pickLabel": "{area} freigeschaltet bis"
+    }
+}

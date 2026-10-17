@@ -1,0 +1,215 @@
+{
+    "defaultSetName": "Bộ {number}",
+    "troop": {
+        "infantry": "Bộ binh",
+        "lancer": "Kỵ binh",
+        "marksman": "Xạ thủ"
+    },
+    "lock": {
+        "needsMythic": "Cần trang bị Mythic",
+        "needsBoth": "Cần cường hóa 100 và rèn tinh thông cấp 10",
+        "needsEnhancement": "Cần cường hóa 100",
+        "needsForging": "Cần rèn tinh thông cấp 10"
+    },
+    "tab": {
+        "deletedTitle": "Đã xóa {name}",
+        "deletedMessage": "Bốn món và mục tiêu của chúng đã bị xóa.",
+        "undo": "Hoàn tác",
+        "tiles": {
+            "sets": "Bộ trang bị",
+            "power": "Sức mạnh trang bị, mọi bộ",
+            "ofPieces": "{count} trên {total}",
+            "atEnhancementMax": "Món ở cường hóa 100",
+            "empowered": "Món đã gia cường",
+            "ready": "Món sẵn sàng gia cường"
+        },
+        "search": "Tìm bộ trang bị",
+        "filters": "Bộ lọc",
+        "plan": "Kế hoạch",
+        "showing": "Hiển thị {shown} trên {total} bộ trang bị. Mục tiêu ở đây chỉ để xem và được đặt trong Kế hoạch.",
+        "empty": {
+            "title": "Chưa có bộ trang bị",
+            "description": "Một bộ trang bị gồm một món Goggles, Gloves, Belt và Boots. Hãy thêm một bộ để theo dõi các cấp của nó."
+        },
+        "addSet": "Thêm bộ trang bị",
+        "unknownHero": "Anh hùng không rõ",
+        "power": "{amount} sức mạnh",
+        "enhancementLine": "CH {line}",
+        "troopHint": "Loại quân quyết định cột chỉ số bên dưới.",
+        "editSet": "Sửa bộ",
+        "deleteSet": "Xóa bộ"
+    },
+    "pieceCard": {
+        "name": "{set} {slot}",
+        "forgingRow": "{name} (+{percent}%)",
+        "none": "Không có",
+        "noGoal": "Không có mục tiêu",
+        "goal": "Mục tiêu: {value}",
+        "quality": "Phẩm chất trang bị",
+        "qualities": {
+            "mythic": "Mythic",
+            "epic": "Epic",
+            "rare": "Rare",
+            "uncommon": "Uncommon",
+            "common": "Common"
+        },
+        "forgingRowLabel": "Dòng rèn tinh thông",
+        "forgingStops": "Rèn tinh thông dừng ở cấp 10 cho đến khi cường hóa đạt 100.",
+        "lowQualityNote": "Chỉ trang bị Mythic mới rèn và gia cường được. Sức mạnh theo bảng Mythic với sức mạnh gốc của phẩm chất này, điều mà game chưa xác nhận.",
+        "enhancement": "Cường hóa",
+        "enhancementLabel": "Cường hóa {name}",
+        "enhancementSlider": "Thanh trượt cường hóa {name}",
+        "empowerment": "Gia cường",
+        "empowermentLabel": "Gia cường {name}",
+        "empowermentSlider": "Thanh trượt gia cường {name}",
+        "outOf": "/ {max}",
+        "milestone": "Đạt gia cường {level}: {stat}",
+        "piecePower": "Sức mạnh món",
+        "health": "Máu",
+        "percent": "{value}%"
+    },
+    "statLines": {
+        "title": "Dòng chỉ số, 4 ô x 3 loại quân",
+        "troopThisSet": "{troop} (bộ này)",
+        "stat": "{name} {value}",
+        "health": "HP {value}",
+        "percentStat": "{name} {value}%",
+        "none": "Không có",
+        "note": "Giá trị ở các cấp món của {name}, gồm cả rèn tinh thông, làm tròn xuống. Chỉ số lấy từ WoS Tools, chỉ có đến 192 trên 200 cấp. Cột được tô sáng là loại quân của bộ."
+    },
+    "filters": {
+        "title": "Bộ lọc",
+        "description": "Chọn bộ trang bị nào hiển thị trong danh sách",
+        "reset": "Đặt lại",
+        "show": "Hiện {amount} {count, plural, other {bộ}}",
+        "all": "Tất cả",
+        "troopType": "Loại quân",
+        "linkedHero": "Anh hùng liên kết",
+        "heroOptions": {
+            "all": "Tất cả",
+            "linked": "Đã liên kết anh hùng",
+            "unlinked": "Chưa liên kết"
+        },
+        "order": "Thứ tự",
+        "orderOptions": {
+            "power": "Tổng sức mạnh, cao nhất trước",
+            "created": "Thứ tự thêm",
+            "name": "Tên, A đến Z",
+            "hero": "Tên anh hùng, A đến Z"
+        },
+        "notSaved": "Bộ lọc không được lưu."
+    },
+    "setDialogs": {
+        "cancel": "Hủy",
+        "setName": "Tên bộ",
+        "nameRequired": "Hãy nhập tên.",
+        "linkedHero": "Anh hùng liên kết",
+        "add": {
+            "title": "Thêm bộ trang bị",
+            "linkedHeroHint": "Chọn một anh hùng sẽ đặt loại quân theo lớp của anh hùng đó.",
+            "troopType": "Loại quân",
+            "troopTypeHint": "Loại quân quyết định cột chỉ số của bộ.",
+            "quality": "Phẩm chất trang bị",
+            "qualityHint": "Chỉ trang bị Mythic mới rèn và gia cường được.",
+            "qualityHintCopy": "Bộ sao chép giữ phẩm chất của từng món.",
+            "qualities": {
+                "mythic": "Mythic",
+                "epic": "Epic",
+                "rare": "Rare",
+                "uncommon": "Uncommon",
+                "common": "Common"
+            },
+            "startFrom": "Bắt đầu từ",
+            "startFromHint": "Mục tiêu không được sao chép. Mục tiêu được đặt trong Kế hoạch.",
+            "emptySet": "Bộ trống",
+            "copyFrom": "Sao chép các cấp từ {name}",
+            "savesAtOnce": "Mọi thay đổi được lưu ngay và bộ mới xuất hiện ở trạng thái đã chọn.",
+            "submit": "Thêm bộ trang bị"
+        },
+        "delete": {
+            "title": "Xóa {name}?",
+            "titleFallback": "Xóa bộ",
+            "confirm": "Xóa bộ",
+            "body": "Bốn món của {name} và mục tiêu của chúng sẽ bị xóa khỏi thiết bị này.",
+            "undoNote": "Bạn có thể hoàn tác trong 10 giây sau khi xóa.",
+            "exportBackup": "Xuất sao lưu trước"
+        },
+        "edit": {
+            "title": "Sửa {name}",
+            "titleFallback": "Sửa bộ",
+            "submit": "Lưu bộ"
+        },
+        "heroSelect": {
+            "none": "Không có anh hùng",
+            "option": "{name} ({class}, Thế hệ {generation})"
+        }
+    },
+    "plan": {
+        "title": "Lập kế hoạch Trang bị Anh hùng",
+        "description": "Rèn tinh thông, cường hóa và gia cường cho bất kỳ món nào, từ bất kỳ bộ nào",
+        "saved": "Đã lưu kế hoạch {time}",
+        "close": "Đóng",
+        "save": "Lưu kế hoạch",
+        "empty": "Kế hoạch chưa có món nào. Hãy thêm một món ở trên, rồi nâng mục tiêu của nó.",
+        "pieceTitle": "{set} · {slot}",
+        "milestone": "gia cường {level}, {event}, {stat}",
+        "addPiece": {
+            "title": "Thêm một món",
+            "noSets": "Hãy thêm một bộ trang bị ở tab Trang bị Anh hùng trước.",
+            "set": "Bộ trang bị",
+            "setOption": "{name} ({troop})",
+            "piece": "Món",
+            "submit": "Thêm món",
+            "taken": "Món này đã có trong kế hoạch."
+        },
+        "qualities": {
+            "mythic": "mythic",
+            "epic": "epic",
+            "rare": "rare",
+            "uncommon": "uncommon",
+            "common": "common"
+        },
+        "remove": "Xóa {title} khỏi kế hoạch",
+        "forgingRow": "{name} (+{percent}%)",
+        "none": "Không có",
+        "forgingCurrent": "Dòng rèn hiện tại",
+        "forgingGoal": "Dòng rèn mục tiêu",
+        "forgingGoalLabel": "Mục tiêu rèn của {title}",
+        "forgingStops": "Rèn tinh thông dừng ở cấp 10 cho đến khi mục tiêu cường hóa là 100.",
+        "enhancement": "Cường hóa",
+        "enhancementGoal": "Mục tiêu cường hóa của {title}",
+        "empowerment": "Gia cường",
+        "empowermentGoal": "Mục tiêu gia cường của {title}",
+        "from": "{value} đến",
+        "result": {
+            "title": "Kết quả cho {amount} {count, plural, other {món}}",
+            "power": "Sức mạnh",
+            "powerLines": {
+                "gained": "Sức mạnh nhận được",
+                "before": "Sức mạnh của các món này trước đó",
+                "after": "Sức mạnh của các món này sau đó"
+            },
+            "columns": {
+                "piece": "Món",
+                "forgingStatsUp": "Chỉ số rèn tăng",
+                "powerGained": "Sức mạnh nhận được"
+            },
+            "forgingStatsUp": "+{percent}% ({steps} bước)",
+            "milestones": "Mốc đã mở",
+            "milestoneLine": "{label}: {stat}",
+            "events": {
+                "svs": "SvS",
+                "allianceShowdown": "Alliance Showdown",
+                "kingOfIcefield": "King of Icefield"
+            },
+            "note": "Lập kế hoạch Trang bị Anh hùng không có điều khiển tốc độ hay cộng thêm. Bộ tính không trả về thời gian.",
+            "tableLabel": "Bảng kết quả kế hoạch"
+        }
+    },
+    "export": {
+        "button": "Xuất sang Sự kiện chính",
+        "nothing": "Kế hoạch không cần Essence Stones hay Mithril để xuất.",
+        "essenceStones": "Essence Stones",
+        "mithril": "Mithril"
+    }
+}

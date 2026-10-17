@@ -1,0 +1,129 @@
+{
+  "title": "Journal d'événement",
+  "events": {
+    "svs": "SvS, State of Power",
+    "showdown": "Alliance Showdown",
+    "king": "King of Icefield",
+    "hall": "Hall of Chief"
+  },
+  "tabs": {
+    "label": "Vues du journal d'événement",
+    "current": "Événement en cours",
+    "history": "Historique"
+  },
+  "dates": {
+    "title": "Dates de l'événement",
+    "start": "Début",
+    "end": "Fin",
+    "days": "{count, plural, one {{amount} jour} other {{amount} jours}}",
+    "endBeforeStart": "La date de fin est avant la date de début."
+  },
+  "results": {
+    "rank": "Rang",
+    "alliance": "Alliance",
+    "score": "Score",
+    "allianceShort": "All.",
+    "scoreOf": "{day}, score",
+    "rankOf": "{day}, rang",
+    "allianceOf": "{day}, rang d'alliance",
+    "plan": "Plan {total}",
+    "notStarted": "Pas commencé",
+    "opensLater": "Ouvre plus tard",
+    "empty": "Vide",
+    "locked": "Verrouillé",
+    "lock": "Verrouiller",
+    "unlock": "Déverrouiller",
+    "lockDay": "Verrouiller {day}",
+    "unlockDay": "Déverrouiller {day}"
+  },
+  "cards": {
+    "svsDays": "Jours de préparation 1 à 5",
+    "days": "Jours",
+    "stages": "Stades",
+    "rankHint": "Rang est votre rang dans l'état. Alliance est le rang de votre alliance.",
+    "battleTitle": "Phase de bataille",
+    "battleNote": "Le score et le rang de bataille sont un résultat à part. Ils ne s'ajoutent pas aux jours 1 à 5."
+  },
+  "overall": {
+    "svsTitle": "Résultat global, jours 1 à 5",
+    "title": "Résultat global",
+    "rank": "Rang global",
+    "alliance": "Rang global de l'alliance",
+    "svsTotal": "Total des jours 1 à 5 verrouillés",
+    "daysTotal": "Total des jours verrouillés",
+    "stagesTotal": "Total des stades verrouillés",
+    "hint": "Verrouiller empêche un chiffre de changer pendant que vous jouez. Les chiffres verrouillés peuvent être déverrouillés."
+  },
+  "footer": {
+    "close": "Fermer",
+    "endEvent": "Terminer l'événement",
+    "readOnly": "L'historique est en lecture seule"
+  },
+  "end": {
+    "title": "Terminer {event} et l'enregistrer dans l'historique ?",
+    "dates": "{event}, {start} au {end}",
+    "noDates": "{event}, aucune date saisie",
+    "lockedTotal": "Total des jours verrouillés : {total}.",
+    "lockedTotalSvs": "Total des jours 1 à 5 verrouillés : {total}.",
+    "noRanks": "Le rang global et le rang d'alliance sont vides.",
+    "allLocked": "Tous les jours sont verrouillés.",
+    "unlocked": "{count, plural, one {{amount} jour n'est pas verrouillé.} other {{amount} jours ne sont pas verrouillés.}} Ils sont enregistrés tels que saisis, et les jours sans chiffres restent vides.",
+    "unlockedList": "Non verrouillés : {days}.",
+    "what": "Ce qui se passe",
+    "saves": "Enregistre dans l'Historique les dates, les scores et rangs quotidiens et le résultat global, avec le total prévu de chaque jour.",
+    "clearsCounts": "Efface les nombres de chaque jour, donc chaque jour du plan repart de 0.",
+    "clearsPlans": "Efface les plans exportés vers cet événement et les cases cochées de la liste de tâches.",
+    "keeps": "Seul cet événement est effacé. Vos objectifs et plans sur les autres pages restent.",
+    "cancel": "Annuler",
+    "confirm": "Terminer l'événement et recommencer",
+    "toastTitle": "Événement terminé",
+    "toastMessage": "{event} est enregistré dans l'Historique. L'événement repart à zéro, sans dates.",
+    "undo": "Annuler",
+    "lockedTotalStages": "Total des stades verrouillés : {total}."
+  },
+  "history": {
+    "intro": "Les événements {event} que vous avez terminés, du plus récent au plus ancien. Terminer un événement y enregistre son journal, qui ne peut plus être modifié, seulement supprimé. <link>Ouvrez l'Historique pour comparer plan et réel et voir les améliorations prévues.</link>",
+    "empty": "Aucun événement terminé pour l'instant. Terminez un événement pour enregistrer son journal ici.",
+    "cardTitle": "{event}, {start} au {end}",
+    "cardNoDates": "{event}, sans dates",
+    "ended": "Terminé le {date}",
+    "svsTotal": "Jours 1 à 5",
+    "total": "Score total",
+    "overallRank": "Rang global",
+    "allianceRank": "Rang d'alliance",
+    "notSet": "Non défini",
+    "showDays": "Afficher les jours",
+    "hideDays": "Masquer les jours",
+    "remove": "Retirer de l'historique",
+    "removedTitle": "Retiré de l'historique",
+    "removedMessage": "{event} a été retiré de l'Historique.",
+    "undo": "Annuler",
+    "noValue": "-"
+  },
+  "checklist": {
+    "title": "Liste de tâches du plan",
+    "description": "{day}, quoi faire",
+    "dayChips": "Jour",
+    "castleTitle": "S'inscrire à un poste du château pour {day}",
+    "castleBody": "Les postes du château donnent des bonus pour le jour suivant. Inscrivez-vous avant la fin d'aujourd'hui pour que le bonus soit actif le {day}.",
+    "castleCheck": "Inscrit pour {day}",
+    "done": "{done} sur {total} terminées",
+    "progress": "Actions cochées",
+    "planLine": "Plan du jour : {points} points. Seules les actions avec un nombre supérieur à 0 sont listées. Les nombres viennent de la page Événements clés.",
+    "empty": "Aucune action n'a de nombre pour ce jour. Ajoutez des nombres sur la page Événements clés.",
+    "resources": "Ressources à utiliser",
+    "resourcesHint": "Les objets que le jour dépense. Vérifiez votre stock avant de commencer.",
+    "actions": "Actions",
+    "count": "x{count}",
+    "points": "{points} pts",
+    "clear": "Effacer les coches",
+    "close": "Fermer",
+    "dayTitle": "{day} : {name}"
+  },
+  "eventShort": {
+    "svs": "SvS",
+    "showdown": "Alliance Showdown",
+    "king": "King of Icefield",
+    "hall": "Hall of Chief"
+  }
+}

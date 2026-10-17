@@ -1,0 +1,26 @@
+{
+  "line": "{types} tipi di truppa con {tiers} gradi ciascuno. Solo riferimento, nulla viene salvato nel tuo capo.",
+  "tiers": {
+    "heading": "Gradi delle truppe",
+    "meta": "{types} tipi per {tiers} gradi = {rows} righe",
+    "typeLabel": "Tipo di truppa",
+    "tableLabel": "Gradi {type}"
+  },
+  "detail": {
+    "heading": "Dettaglio",
+    "meta": "Grado {tier}, tutti e tre i tipi",
+    "tableLabel": "Grado {tier} per tipo di truppa"
+  },
+  "columns": {
+    "tier": "Grado",
+    "type": "Tipo",
+    "cost": "Costo per truppa",
+    "topCost": "Costo del grado",
+    "time": "Tempo di addestramento",
+    "promotion": "Costo di promozione"
+  },
+  "cells": {
+    "tier": "Grado {tier}",
+    "none": "Nessuno"
+  }
+}

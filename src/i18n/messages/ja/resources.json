@@ -1,0 +1,88 @@
+{
+    "title": "資源",
+    "all": "すべて",
+    "owned": "所有",
+    "sources": "入手元",
+    "sourcesUnknown": "入手元不明",
+    "done": "完了",
+    "undo": "元に戻す",
+    "list": {
+        "separator": "、",
+        "andLast": "{rest}、{last}"
+    },
+    "countControl": {
+        "remove": "{name}を{step}減らす",
+        "add": "{name}を{step}増やす",
+        "owned": "{name}の所有数"
+    },
+    "itemRow": {
+        "owned": "所有"
+    },
+    "itemSheet": {
+        "title": "所有数を編集",
+        "step": "刻み",
+        "setToZero": "0にする",
+        "description": "説明",
+        "unknown": "不明"
+    },
+    "view": {
+        "subline": "{categories}カテゴリー、{items}アイテム",
+        "sublineInCategory": "{categories}カテゴリー、{items}アイテム · {category}に{inCategory}アイテム",
+        "unsaved": "未保存",
+        "shortages": "プランナーの目標で{names}が不足しています。",
+        "shortagesLink": "建物のプランを開く",
+        "show": {
+            "label": "表示",
+            "owned": "所有",
+            "unknown": "入手元不明"
+        },
+        "speedups": {
+            "none": "なし",
+            "noneOwned": "スピードアップの所有なし",
+            "owned": "{minutes}分: {parts}",
+            "part": "{name} × {count}",
+            "partSeparator": " + ",
+            "types": {
+                "general": "汎用",
+                "construction": "建設",
+                "troop": "部隊訓練",
+                "research": "研究",
+                "learning": "学習",
+                "healing": "治療"
+            }
+        },
+        "search": {
+            "label": "アイテムを検索",
+            "placeholder": "{total}アイテムから検索"
+        },
+        "setSeveral": "まとめて設定",
+        "showing": {
+            "several": "{total}アイテム中{visible}アイテムを表示。まとめて設定がオンです。変更は「変更を保存」を押すまで保留されます。",
+            "instant": "{total}アイテム中{visible}アイテムを表示。変更はすべてすぐに保存されます。"
+        },
+        "empty": {
+            "title": "一致するアイテムがありません",
+            "description": "検索条件、カテゴリー、表示フィルターを変更してください。",
+            "reset": "フィルターをリセット"
+        },
+        "columns": {
+            "item": "アイテム"
+        },
+        "bar": {
+            "noChanges": "未保存の変更はありません",
+            "changes": "{count, plural, other {未保存の変更{amount}件}}",
+            "discard": "破棄",
+            "save": "変更を保存"
+        },
+        "toast": {
+            "setToZero": "{name}を0にしました",
+            "savedTitle": "所有数を保存しました",
+            "savedMessage": "{count, plural, other {{amount}件の所有数}}を変更しました。"
+        }
+    },
+    "planStock": {
+        "constructionTime": "建設時間（スピードアップ換算）",
+        "researchTime": "研究時間（スピードアップ換算）",
+        "minutesUnit": "分"
+    }
+}

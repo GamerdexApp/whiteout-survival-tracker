@@ -1,0 +1,49 @@
+{
+    "title": "伺服器時間軸",
+    "line": "{rows, plural, other {{amount} 個里程碑}}，從第 {first} 天到第 {last} 天",
+    "subline": "各伺服器天數會解鎖的內容。僅供參考，這裡不會儲存任何內容。",
+    "place": {
+        "label": "顯示我的位置：",
+        "option": "{name}，約第 {days} 天，誤差 ±{window}",
+        "optionNoDate": "{name}，沒有伺服器開服日期",
+        "jump": "跳到我的位置"
+    },
+    "filters": {
+        "label": "顯示",
+        "events": "活動 {amount}",
+        "features": "功能 {amount}",
+        "pets": "寵物 {amount}",
+        "experts": "專家 {amount}",
+        "heroes": "英雄 {amount}"
+    },
+    "help": "這條線是以天數計的伺服器天數。英雄在右側，其他都在左側。你的位置來自領主上的伺服器開服日期，誤差範圍為 ±{window} 天。",
+    "noChief": "目前還沒有領主，所以不會顯示你的位置。",
+    "addChief": "新增領主",
+    "noStartDate": "{name}沒有伺服器開服日期。請新增日期，才能在這條線上看到你的位置。",
+    "editChief": "編輯領主",
+    "columns": {
+        "left": "活動、功能、寵物、專家",
+        "right": "英雄"
+    },
+    "tags": {
+        "event": "活動",
+        "feature": "功能",
+        "pets": "寵物",
+        "experts": "專家"
+    },
+    "fireCrystalLevels": "Fire Crystal 等級 {names}",
+    "heroGeneration": "英雄，第 {generation} 世代",
+    "day": "第 {day} 天",
+    "status": {
+        "unlocked": "已解鎖",
+        "near": "接近你的天數",
+        "future": "{count, plural, other {{amount} 天後}}"
+    },
+    "marker": {
+        "label": "你在這裡",
+        "title": "{name}，伺服器約開服 {days} 天",
+        "window": "誤差 ±{window} 天：第 {from} 天到第 {to} 天"
+    },
+    "empty": "這些篩選條件下沒有可顯示的內容。",
+    "source": "來源：資料包的伺服器時間軸。"
+}

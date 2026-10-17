@@ -1,0 +1,78 @@
+{
+    "page": {
+        "title": "Skin"
+    },
+    "view": {
+        "subline": "{chief} · {details} · đã sở hữu {owned} trên {total} skin"
+    },
+    "owned": {
+        "label": "Đã sở hữu",
+        "value": "{owned} trên {total}",
+        "progress": "Skin đã sở hữu",
+        "withBonus": "{withBonus} trên {total} skin có chỉ số cộng thêm"
+    },
+    "totals": {
+        "title": "Cộng thêm từ skin đã sở hữu",
+        "estimate": "Ước tính",
+        "percent": "+{amount}%",
+        "flat": "+{amount}",
+        "none": "Chưa có skin đã sở hữu nào có chỉ số cộng thêm.",
+        "note": "{count, plural, other {Tổng chỉ số cộng thêm của {amount} skin đã sở hữu}}, theo từng chỉ số, do ứng dụng tính. Giả định mọi skin đã sở hữu có hiệu lực cùng lúc. Troop Attack và Troops Attack được cộng chung."
+    },
+    "expiry": {
+        "title": "Hạn dùng không được theo dõi.",
+        "text": "Thời hạn (vĩnh viễn, 30 ngày, theo hạng) chỉ có trong văn bản mô tả. Skin có thời hạn vẫn được tính là đã sở hữu cho đến khi bạn bỏ chọn."
+    },
+    "search": {
+        "label": "Tìm skin",
+        "placeholder": "Tìm skin theo tên hoặc nguồn"
+    },
+    "filters": {
+        "button": "Bộ lọc",
+        "title": "Bộ lọc",
+        "description": "Chọn nội dung hiển thị trong danh sách Skin",
+        "reset": "Đặt lại",
+        "showButton": "{count, plural, other {Hiện {amount} skin}}",
+        "skinType": "Loại skin",
+        "typeAll": "Tất cả {amount}",
+        "typeOption": "{type} {amount}",
+        "owned": "Sở hữu",
+        "bonus": "Cộng thêm",
+        "order": "Thứ tự",
+        "notSaved": "Bộ lọc không được lưu.",
+        "ownedOptions": {
+            "all": "Mọi skin",
+            "owned": "Đã sở hữu",
+            "notOwned": "Chưa sở hữu"
+        },
+        "bonusOptions": {
+            "any": "Bất kỳ",
+            "has": "Có cộng thêm",
+            "none": "Không cộng thêm"
+        },
+        "orderOptions": {
+            "game": "Thứ tự trong game",
+            "name": "Tên, A đến Z",
+            "owned": "Đã sở hữu trước"
+        }
+    },
+    "status": {
+        "showing": "Hiển thị {shown} trên {total} skin.",
+        "showingFiltered": "Hiển thị {shown} trên {total} skin. Bộ lọc: {filters}.",
+        "showMore": "{count, plural, other {Hiện thêm {amount} skin}}"
+    },
+    "empty": {
+        "title": "Không có skin phù hợp",
+        "description": "Đổi từ khóa hoặc bộ lọc để xem skin.",
+        "reset": "Đặt lại bộ lọc"
+    },
+    "card": {
+        "bonus": "Cộng thêm",
+        "source": "Nguồn",
+        "unknown": "Không rõ",
+        "bonusValue": "{value} {stat}",
+        "owned": "Đã sở hữu",
+        "ownedLabel": "Đã sở hữu: {name}, {type}",
+        "domainWarning": "Chỉ số cộng thêm Domain nằm trong mô tả và không được tính."
+    }
+}

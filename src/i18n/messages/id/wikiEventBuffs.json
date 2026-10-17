@@ -1,0 +1,67 @@
+{
+  "line": "Sumber buff mana yang berlaku di tiap dari {modes} mode permainan: ya, tidak, atau sebagian untuk {sources} jenis buff.",
+  "matrix": {
+    "title": "Matriks buff",
+    "meta": "{modes} mode, {sources} jenis buff",
+    "table": "Sumber buff menurut mode permainan",
+    "mode": "Mode permainan"
+  },
+  "sources": {
+    "cityBonusWarsBuffs": {
+      "short": "Bonus kota",
+      "full": "Bonus kota dan buff perang"
+    },
+    "deploymentCapacity": {
+      "short": "Kap. kerahan",
+      "full": "Kapasitas kerahan"
+    },
+    "petSkills": {
+      "short": "Skill peliharaan",
+      "full": "Skill hewan peliharaan"
+    },
+    "daybreakIsland": {
+      "short": "Daybreak",
+      "full": "Daybreak Island"
+    },
+    "presidentSkills": {
+      "short": "President",
+      "full": "Skill President"
+    },
+    "ministerBuff": {
+      "short": "Minister",
+      "full": "Buff Minister"
+    },
+    "territoryBonuses": {
+      "short": "Wilayah",
+      "full": "Bonus wilayah"
+    },
+    "facilityBuff": {
+      "short": "Fasilitas",
+      "full": "Buff fasilitas"
+    },
+    "marchAccelerator": {
+      "short": "Akselerasi march",
+      "full": "Akselerator march"
+    },
+    "frostdragonTyrantTitles": {
+      "short": "Gelar Tyrant",
+      "full": "Gelar Frostdragon Tyrant"
+    },
+    "frostSphereDomainBonus": {
+      "short": "Frost Sphere",
+      "full": "Bonus domain Frost Sphere"
+    }
+  },
+  "applicability": {
+    "yes": "Ya",
+    "no": "Tidak",
+    "partial": "Sebagian"
+  },
+  "notes": {
+    "title": "Catatan menurut mode permainan",
+    "table": "Catatan menurut mode permainan",
+    "petSkillsAutoApplied": "Skill peliharaan berlaku otomatis",
+    "note": "Catatan",
+    "noNote": "Tidak ada"
+  }
+}

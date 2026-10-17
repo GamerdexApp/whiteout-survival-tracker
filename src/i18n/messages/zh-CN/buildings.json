@@ -1,0 +1,282 @@
+{
+  "title": "建筑",
+  "tabs": {
+    "buildings": "建筑",
+    "facilities": "设施"
+  },
+  "notBuilt": "未建造",
+  "built": "已建造",
+  "none": "无",
+  "unknown": "未知",
+  "close": "关闭",
+  "cancel": "取消",
+  "undo": "撤销",
+  "ofTotal": "{count} / {total}",
+  "noOtherRequirements": "无其他要求",
+  "builderName": "建造者{number}",
+  "shelterName": "Shelter {number}",
+  "levelOf": "{name}等级",
+  "levelRange": "{from}到{to}",
+  "requirement": {
+    "shelter": "{building} {level}级",
+    "heroHall": "已建造 Hero Hall",
+    "level": "{building} {level}"
+  },
+  "columns": {
+    "building": "建筑",
+    "current": "当前",
+    "goal": "目标",
+    "power": "战力",
+    "progress": "进度与下一级",
+    "upgrade": "升级"
+  },
+  "entry": {
+    "notes": {
+      "furnace": "决定其他所有建筑的上限",
+      "shelter": "最多 8 个，各自有独立等级"
+    },
+    "subline": {
+      "size": "最高{max} · 共{count}级",
+      "withNote": "{note} · {size}",
+      "single": "只能建一座 · 战力{power}"
+    },
+    "progress": {
+      "requires": "需要{list}",
+      "noRequirements": "无要求",
+      "maxLevel": "已满级",
+      "blocked": "受阻：需要{list}",
+      "needs": "需要{list}",
+      "levelAgeLocked": "已保存的{level}级在此服务器尚未开放。{text}",
+      "goalAgeLocked": "目标{goal}在此服务器尚未开放。{text}",
+      "nextAgeLocked": "下一级{level}未解锁。{text}"
+    },
+    "builtSwitch": "{name}已建造",
+    "shelters": {
+      "none": "未建造",
+      "editLabel": "Shelter（{count}），编辑等级",
+      "button": "Shelter（{count}）"
+    },
+    "levels": "等级",
+    "levelsLabel": "{name}的等级",
+    "upgrading": "{name}升级中",
+    "startLabel": "开始升级{name}",
+    "start": "开始",
+    "startUpgrade": "开始升级",
+    "devIndex": "发展指数{value}",
+    "powerLine": "战力{power} · 发展指数{index}",
+    "progressLabel": "{name}进度"
+  },
+  "builders": {
+    "label": "建造者",
+    "hint": "在这里开始的升级会作为进行中的队列显示在总览页。",
+    "idle": "点击建筑上的开始即可开始升级。",
+    "jobTitle": "{name}，{from}到{to}",
+    "locked": "未解锁",
+    "lockedText": "第二个建造者需要 Construction Pack。",
+    "lockedLink": "在编辑领主中开启"
+  },
+  "upgrade": {
+    "option": "{subject}，{from}到{to}",
+    "busy": "占用中：{name}到{level}，{timeLeft}"
+  },
+  "facilities": {
+    "intro": "你城市中的设施。标记已建造的设施。这里是城市设施，不是联盟菜单中的联盟设施。",
+    "builtLabel": "已建造的设施",
+    "unlockedLabel": "已在你的 Furnace 等级解锁",
+    "requires": "需要 Furnace {level}",
+    "unlocksAt": "Furnace {level}解锁"
+  },
+  "tab": {
+    "intro": "每个建筑的当前等级和目标。Furnace 决定其余建筑能达到的等级。",
+    "searchLabel": "搜索建筑",
+    "filters": "筛选",
+    "massEdit": "批量编辑",
+    "startUpgrade": "开始升级",
+    "plan": "计划",
+    "status": "显示{shown} / {total}个建筑。目标在此处只读，请在计划中设置。目标与当前等级相同表示没有目标。加减按钮按游戏顺序每次调整一级。",
+    "groupPinned": "已置顶",
+    "stats": {
+      "furnace": "Furnace，决定其他所有建筑",
+      "power": "当前战力，全部建筑",
+      "developmentIndex": "发展指数，全部建筑",
+      "withGoal": "设有目标的建筑",
+      "atMax": "已满级",
+      "entertainment": "已建造的娱乐建筑"
+    },
+    "empty": {
+      "title": "没有匹配的建筑",
+      "description": "修改搜索或重置筛选，即可查看全部建筑。",
+      "reset": "重置搜索和筛选"
+    },
+    "start": {
+      "description": "将建筑标记为升级中",
+      "selectLabel": "要升级的建筑",
+      "selectHelp": "只列出现在可以开始的建筑。未解锁、已满级和正在升级的建筑不会列出。每次升级占用两个建造者之一。",
+      "timeLabel": "建造时间",
+      "speedLabel": "建造速度",
+      "slotLabel": "建造者",
+      "slotHelp": "选择空闲的建造者。占用中的建造者会显示空闲时间。"
+    },
+    "toasts": {
+      "started": {
+        "title": "已开始升级",
+        "message": "{name}，{subtitle}。"
+      },
+      "finished": {
+        "title": "{name}已升级",
+        "message": "现为{level}。已加入历史。"
+      },
+      "cancelled": {
+        "title": "已取消{name}的升级",
+        "message": "等级保持不变。如有需要，请在资源页修正库存。"
+      },
+      "massEdit": {
+        "title": "已应用批量编辑",
+        "message": "{count, plural, other {已更新{amount}个建筑}}。"
+      }
+    },
+    "manage": {
+      "finishText": "完成升级会把{name}设为{level}，释放建造者{builder}，并把这次升级加入历史。剩余时间为零时，建筑和建造者卡片会显示可完成。不会自动完成，因为你可能用过加速。"
+    }
+  },
+  "filters": {
+    "title": "筛选",
+    "description": "选择建筑列表显示的内容",
+    "reset": "重置",
+    "show": "{count, plural, other {显示{amount}个建筑}}",
+    "category": "分类",
+    "categoryAll": "全部，{count}",
+    "categoryOption": "{category}，{count}",
+    "showSection": "显示",
+    "hideMaxed": "隐藏已满级的建筑",
+    "hideLocked": "隐藏未解锁的建筑",
+    "goalsOnly": "仅显示设有目标的建筑",
+    "order": "排序",
+    "orders": {
+      "game": "游戏顺序，Furnace 在前",
+      "name": "名称 A 到 Z",
+      "progress": "进度，最低在前"
+    },
+    "pinned": "无论如何筛选，Furnace 始终置顶。筛选不会保存。"
+  },
+  "levels": {
+    "title": "等级",
+    "description": "{category} · 最高{max} · 共{count}级",
+    "noDescription": "数据中暂无说明。",
+    "current": "当前等级",
+    "goal": "目标等级",
+    "nextNeeds": "下一级需要",
+    "noGoal": "无目标",
+    "tableNote": "此表只列出当前等级之后的等级，之前的已完成。",
+    "maxed": "已满级。没有可升级的内容。",
+    "nextAfter": "{level}之后的等级",
+    "first": "起始等级",
+    "level": "等级",
+    "time": "时间",
+    "power": "战力",
+    "capacity": "容量",
+    "requires": "要求",
+    "goalBadge": "目标",
+    "capacityNote": "数据包只在阶段基础行上设置容量，因此子等级显示未知。"
+  },
+  "massEdit": {
+    "title": "批量编辑建筑",
+    "description": "一次设置多个建筑。点击设置建筑之前不会保存。",
+    "noChanges": "暂无更改",
+    "changes": "{count, plural, other {{amount}个建筑将更改}}",
+    "set": "{count, plural, other {设置{amount}个建筑}}",
+    "raiseTitle": "将所有建筑提升到某一等级",
+    "raiseLabel": "将所有建筑提升到等级",
+    "raiseAll": "全部提升",
+    "raiseHint": "每个建筑升到不高于此等级的最高等级。已更高的建筑保持不变，更晚才能建造的建筑仍为未建造。目标不会更改。",
+    "blockedTitle": "部分建筑需要先有另一个建筑。",
+    "blocked": "{count, plural, other {{amount}个建筑}}高于其前置要求允许的等级。",
+    "lowerBlocked": "降到允许的等级",
+    "levels": "等级",
+    "needsFirst": "需要先有{list}",
+    "was": "原为{level}",
+    "entertainment": "娱乐",
+    "markAllBuilt": "全部标为已建造",
+    "clearAll": "全部清除",
+    "footnote": "批量编辑只改变已保存的等级。它不会自行降低等级，也不会更改目标。Shelter 各有等级，请用 Shelter 按钮设置，Hero Hall 请在设施标签页设置。"
+  },
+  "shelters": {
+    "title": "Shelter",
+    "description": "最多可建{max}个。设置每个的等级。",
+    "locked": "Shelter 仍被你的 Furnace 等级锁定。",
+    "empty": "还没有 Shelter。",
+    "power": "战力{power}",
+    "add": "添加 Shelter",
+    "remove": "移除 Shelter {number}",
+    "allBuilt": "已建造全部{max}个 Shelter。",
+    "furnaceNeeds": "Furnace 对 Shelter 的要求",
+    "requirement": "Furnace {furnaceLevel}需要 Shelter {number}达到{level}级。",
+    "met": "已满足。",
+    "notMet": "未满足。",
+    "footnote": "计划和进度条使用你等级最低的 Shelter，即下一个要升级的。"
+  },
+  "plan": {
+    "title": "建筑计划",
+    "description": "从当前等级到目标所需的资源、时间和战力",
+    "saved": "计划已保存{time}",
+    "save": "保存计划",
+    "failed": "无法计算该计划。",
+    "goalsHeading": "{count, plural, other {目标，{amount}个建筑}}",
+    "noGoals": "还没有目标。请先在上方添加建筑，再选择想达到的等级。",
+    "prerequisiteNote": "前置步骤会自动加入。需要另一个建筑升到更高等级的等级，会计入这些步骤并加以标记。",
+    "timeNote": "计划在{percent}% 速度加成后需要{time}。你的库存：建造{construction}分，通用{general}分。通用加速也可用于建造。",
+    "add": {
+      "title": "添加建筑",
+      "allAdded": "所有建筑都已在计划中。",
+      "selectLabel": "要添加的建筑",
+      "button": "添加建筑"
+    },
+    "speed": {
+      "title": "建造速度",
+      "percent": "{value}%",
+      "plusPercent": "+{value}%",
+      "readOnly": "只读",
+      "bonusesOn": "取自加成页面。",
+      "bonusesOff": "已在设置中的应用我的加成合计下关闭。",
+      "openBonuses": "打开加成",
+      "appointment": "总统特权与任命",
+      "appointments": {
+        "none": "无",
+        "regular": "普通",
+        "supreme": "至高"
+      },
+      "appointmentNote": "普通 10%，至高 15%。<strong>估算：</strong>数据包只为研究给出这些数值。",
+      "petSkill": "宠物技能 Builder's Aide",
+      "petSkillNote": "百分比取自宠物页面中 Cave Hyena 的当前等级。",
+      "chiefOrder": "领主命令 Double Time",
+      "chiefOrderNote": "<strong>估算：</strong>5 分钟内增加{percent}% 建造速度。数据包没有领主命令的数据，因此数值由应用填入，并应用于全部时间。",
+      "total": "建造速度合计",
+      "petSkillNoteLocked": "宠物页面中尚未解锁 Cave Hyena，因此该技能不提供加成。请在那里解锁后再开启。"
+    },
+    "goal": {
+      "to": "到",
+      "label": "{name}目标",
+      "remove": "从计划中移除{name}"
+    },
+    "result": {
+      "title": "结果，{count}步",
+      "powerGained": "获得战力",
+      "speedupMinutes": "所需加速分钟数",
+      "baseTime": "基础时间",
+      "timeWithBonus": "含{percent}% 加成的时间",
+      "eventPoints": "活动积分：SvS {svs}，King of Icefield {king}（<strong>估算</strong>，来自活动的计分行）。",
+      "prerequisite": "前置",
+      "steps": "{count, plural, other {{amount}步}}",
+      "unmetHeading": "未满足的前置条件",
+      "unmetNone": "这些目标没有。列表之外的建筑，例如 Hero Hall，会显示在这里。"
+    },
+    "export": {
+      "button": "导出到核心活动",
+      "empty": "请先向计划添加目标，再导出。",
+      "speedupMinutes": "建造加速分钟数",
+      "power": "建造获得的战力",
+      "stockDetail": "计划需要{needed}，你持有{held}。",
+      "unscored": "没有活动为{name}计分。"
+    }
+  }
+}

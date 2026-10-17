@@ -1,0 +1,46 @@
+{
+  "line": "Le {missions} missioni giornaliere di gioco con ogni livello noto, le ricompense della barra attività e le attività di routine.",
+  "missionCount": "{count, plural, one {{amount} missione} other {{amount} missioni}}",
+  "tabs": {
+    "label": "Giornaliere",
+    "missions": "Missioni di gioco",
+    "routine": "Attività di routine"
+  },
+  "totals": {
+    "title": "Totali di Attività",
+    "missions": "Missioni di gioco",
+    "levelOne": "Livello 1 di ogni missione",
+    "allLevels": "Ogni livello noto",
+    "topReward": "Livello di ricompensa massimo",
+    "explanation": "Una missione aggiunge l'Attività di ogni livello svolto, fino al livello raggiunto. Il livello 1 di tutte le {missions} missioni vale {levelOne} di Attività. Ogni livello noto di tutte le {missions} missioni vale {allLevels}."
+  },
+  "bar": {
+    "title": "Ricompense della barra attività",
+    "activeness": "Attività",
+    "rewards": "Ricompense"
+  },
+  "missions": {
+    "title": "Missioni di gioco",
+    "summary": "{missions}, {levels}",
+    "levelCount": "{count, plural, one {{amount} livello noto} other {{amount} livelli noti}}",
+    "level": "Livello",
+    "task": "Compito",
+    "target": "Obiettivo",
+    "activeness": "Attività",
+    "otherRewards": "Altre ricompense",
+    "levelLabel": "L{level}",
+    "sumOne": "1 livello: {total} di Attività",
+    "sumMany": "{count} livelli: {parts} = {total} di Attività",
+    "plus": "+{amount}",
+    "noOtherRewards": "Nessuna"
+  },
+  "routine": {
+    "title": "Attività di routine",
+    "count": "{count, plural, one {{amount} attività} other {{amount} attività}}"
+  },
+  "missing": {
+    "title": "Non ancora nei dati",
+    "levels": "Altri livelli delle missioni. Ogni missione ha da {min} a {max} livelli noti. I livelli più alti non sono ancora nel pacchetto, quindi i totali possono crescere.",
+    "reset": "Orario di azzeramento giornaliero. Il pacchetto non ne ha. Il tracker usa il proprio valore predefinito di {time} UTC e lo indica come predefinito dell'app."
+  }
+}

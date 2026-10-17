@@ -1,0 +1,303 @@
+{
+    "title": "Forschung",
+    "unknown": "Unbekannt",
+    "nodeCount": "{count, plural, one {{amount} Knoten} other {{amount} Knoten}}",
+    "jobTitle": "{name}, Stufe {from} bis {to}",
+    "tabs": {
+        "growth": "Wachstum",
+        "economy": "Wirtschaft",
+        "battle": "Kampf",
+        "war-academy-troops": "War Academy T11",
+        "t12-infantry": "Infantry T12",
+        "t12-marksman": "Marksman T12",
+        "t12-lancer": "Lancer T12"
+    },
+    "tier": {
+        "plain": "Tier {tier}",
+        "troopLine": "{line} T{tier}"
+    },
+    "requirement": {
+        "yours": "Deine ist {level}",
+        "notBuilt": "Nicht gebaut",
+        "researchLevel": "{name} Stufe {level}",
+        "yoursLevel": "Deine ist Stufe {level}",
+        "notReleased": "{id} (noch nicht erschienen)"
+    },
+    "tabLock": {
+        "unknownAge": "Forschung {tab} öffnet bei Serveralter {days} Tage. Deines ist unbekannt. Trage unter Häuptling bearbeiten ein Serverstartdatum ein.",
+        "knownAge": "Forschung {tab} öffnet bei Serveralter {days} Tage. Deines ist {yours}."
+    },
+    "option": {
+        "label": "{name}, {tab}, Stufe {from} bis {to}",
+        "subtitle": "Stufe {from} bis Stufe {to}, Tab {tab}",
+        "busy": "Belegt: {name} Stufe {level}, {timeLeft}"
+    },
+    "nodeCard": {
+        "allResearched": "Alle Stufen erforscht",
+        "nextTime": "Zeit für Stufe {level}: {time}",
+        "power": {
+            "researched": "{power} erforscht",
+            "next": "+{power} nächste Stufe",
+            "some": "Macht {parts}",
+            "none": "Macht 0"
+        },
+        "maxed": "Maximiert. {bonus}",
+        "noBonus": "Kein Bonus in den Daten",
+        "level": "Stufe {level} / {max}",
+        "goal": "Ziel {goal}",
+        "noGoal": "Kein Ziel",
+        "progress": "Fortschritt {name}",
+        "lockedByTab": "Gesperrt: {reason}",
+        "lockedByRequirement": "Gesperrt: braucht {requirement}",
+        "placeholder": "Platzhalter. Kosten und Bonus sind im Paket leer.",
+        "needsFirst": "Braucht zuerst {names}",
+        "researching": "{name} wird erforscht",
+        "levelStepper": "Stufe {name}",
+        "detailsOf": "Details zu {name}",
+        "details": "Details"
+    },
+    "queuesStrip": {
+        "title": "Forschungs-Warteschlangen",
+        "note": "Wachstum, Wirtschaft und Kampf teilen eine Warteschlange. T11 und T12 nutzen die War-Academy-Warteschlange.",
+        "idle": "Eine Forschung gleichzeitig. Tippe auf Upgrade starten, um eine zu beginnen."
+    },
+    "filters": {
+        "title": "Filter",
+        "description": "Wähle, was der Tab {tab} zeigt",
+        "reset": "Zurücksetzen",
+        "show": "{nodes} zeigen",
+        "tier": "Tier",
+        "statusLabel": "Status",
+        "troopLine": "Truppenlinie",
+        "orderLabel": "Reihenfolge",
+        "notSaved": "Filter werden nicht gespeichert.",
+        "all": "Alle",
+        "status": {
+            "all": "Alle",
+            "progress": "In Arbeit",
+            "goal": "Mit Ziel",
+            "maxed": "Maximiert",
+            "locked": "Gesperrt",
+            "notStarted": "Nicht begonnen"
+        },
+        "order": {
+            "game": "Spielreihenfolge",
+            "name": "Name, A bis Z",
+            "level": "Stufe, höchste zuerst"
+        }
+    },
+    "massSet": {
+        "stop": "{level} von {max}",
+        "title": "Mehrfach setzen, {tab}",
+        "description": "Wähle einen Knoten und eine Stufe. Alles davor im Baum geht auf Maximum.",
+        "cancel": "Abbrechen",
+        "set": "{nodes} setzen",
+        "node": "Knoten",
+        "level": "Stufe",
+        "levelToSet": "Zu setzende Stufe",
+        "whatChanges": "Was sich im Tab {tab} ändert",
+        "nothingChanges": "Nichts ändert sich. Jeder Knoten hier ist schon auf oder über dieser Stufe.",
+        "change": "{from} bis {to}",
+        "hidden": "und {amount} weitere frühere Knoten",
+        "alreadyMax": "{count, plural, one {{amount} früherer Knoten ist} other {{amount} frühere Knoten sind}} schon auf Maximum und bleiben, wie sie sind. Spätere Knoten im Baum werden nicht berührt. Eine schon höhere Stufe bleibt.",
+        "blockersTitle": "Manche Knoten brauchen zuerst ein Gebäude.",
+        "blocker": "{name} braucht {building}",
+        "blockersMore": " und {amount} weitere",
+        "blockers": "{list}{more}. Wähle einen früheren Knoten oder erhöhe das Gebäude auf der Gebäude-Seite.",
+        "footnote": "Mehrfach setzen ändert nur die gespeicherten Stufen dieses Tabs. Es senkt nie eine Stufe. Ziele ändern sich nicht."
+    },
+    "nodeFlyout": {
+        "fallbackTitle": "Forschung",
+        "description": "{category}, Tier {tier}, {levels} Stufen",
+        "close": "Schließen",
+        "unknown": "Unbekannt",
+        "levelOf": "Stufe {level} von {max}",
+        "status": {
+            "notStarted": "nicht begonnen",
+            "maxed": "maximiert",
+            "inProgress": "in Arbeit"
+        },
+        "goal": "Ziel {goal}",
+        "noGoal": "Kein Ziel",
+        "openPlan": "Plan öffnen",
+        "maxLevel": {
+            "title": "Maximale Stufe",
+            "nothingLeft": "Nichts mehr zu erforschen.",
+            "noBonus": "Kein Bonus in den Daten."
+        },
+        "placeholder": {
+            "title": "Platzhalter",
+            "description": "Dieser Knoten hat im Paket noch keine Kosten und keinen Bonus. Forschungszeit und Kosten zeigen Unbekannt."
+        },
+        "upcoming": {
+            "first": "Erste Stufen",
+            "after": "Nächste Stufen nach {level}",
+            "heads": {
+                "level": "Stufe",
+                "bonus": "Bonus",
+                "time": "Zeit",
+                "power": "Macht"
+            },
+            "goalBadge": "Ziel",
+            "noBonus": "Keiner",
+            "shaded": "Schattierte Zeilen sind die Stufen zwischen deiner Stufe und deinem Ziel."
+        },
+        "cost": {
+            "title": "Kosten der nächsten Stufen",
+            "level": "Lv"
+        },
+        "total": {
+            "title": "Gesamt bis zu deinem Ziel, Stufe {level} bis {goal}",
+            "knownTime": "Bekannte Forschungszeit",
+            "power": "Macht",
+            "missingTimes": "{count, plural, one {{amount} Stufe hat} other {{amount} Stufen haben}} im Paket keine Zeit und zählen hier als 0."
+        },
+        "requirements": {
+            "title": "Voraussetzungen für Stufe {level}",
+            "none": "Keine Voraussetzungen.",
+            "met": "Erfüllt",
+            "notMet": "Nicht erfüllt",
+            "later": "Spätere Stufen verlangen: {list}."
+        }
+    },
+    "tree": {
+        "legend": {
+            "max": "Max",
+            "inProgress": "In Arbeit",
+            "notStarted": "Nicht begonnen",
+            "locked": "Gesperrt"
+        },
+        "pillMax": "Max {max}",
+        "pillLevel": "Lv {level} von {max}",
+        "region": "Forschungsbaum {tab}",
+        "openNode": "{name}, {pill}. Details öffnen"
+    },
+    "plan": {
+        "title": "Forschung planen",
+        "description": "Ressourcen, Zeit und Macht von der aktuellen Stufe bis zum Ziel",
+        "saved": "Plan gespeichert {date}",
+        "close": "Schließen",
+        "save": "Plan speichern",
+        "goals": "Ziele, {nodes}",
+        "noGoals": "Noch keine Ziele. Füge oben einen Forschungsknoten hinzu und wähle die Stufe, die er erreichen soll.",
+        "goalsHint": "Die aktuelle Stufe ist die auf der Seite. Ändere sie dort. Ziele sind auf der Seite nur lesbar und werden hier gesetzt.",
+        "failed": "Der Plan konnte nicht berechnet werden.",
+        "timeNote": "Der Plan dauert {time} nach dem Tempobonus von {percent}%. Dein Bestand: Forschung {research} Min, Allgemein {general} Min. Allgemeine Beschleuniger zählen für Forschung.",
+        "percent": "{value}%",
+        "percentPlus": "+{value}%",
+        "appointment": {
+            "none": "Keine",
+            "regular": "Regulär",
+            "supreme": "Höchste"
+        },
+        "add": {
+            "title": "Forschungsknoten hinzufügen",
+            "none": "Jeder Knoten ist schon im Plan oder auf Höchststufe.",
+            "select": "Forschungsknoten zum Hinzufügen",
+            "button": "Forschung hinzufügen"
+        },
+        "speed": {
+            "title": "Forschungstempo",
+            "readOnly": "Nur lesbar",
+            "carriedOver": "Von der Boni-Seite übernommen.",
+            "turnedOff": "In den Einstellungen ausgeschaltet, unter Meine Boni-Summen anwenden.",
+            "openBonuses": "Boni öffnen",
+            "stateBuff": "State-Buff",
+            "vicePresident": "Vizepräsident",
+            "total": "Gesamtes Forschungstempo"
+        },
+        "goal": {
+            "level": "Stufe {level}",
+            "to": "bis",
+            "label": "Ziel {name}",
+            "remove": "{name} aus dem Plan entfernen"
+        },
+        "result": {
+            "title": "Ergebnis, {steps} Schritte",
+            "powerGained": "Gewonnene Macht",
+            "speedupMinutes": "Nötige Beschleuniger-Minuten",
+            "baseTime": "Basiszeit",
+            "timeWithBonus": "Zeit mit {percent}% Bonus",
+            "stepsWithoutTime": "{count, plural, one {{amount} Schritt hat} other {{amount} Schritte haben}} im Paket keine Zeit und zählen als 0 Sekunden.",
+            "stepCount": "{count, plural, one {{amount} Schritt} other {{amount} Schritte}}",
+            "buildingRequirements": "Gebäude-Voraussetzungen",
+            "unmet": "Unerfüllte Vorbedingungen",
+            "unmetNone": "Keine für diese Ziele.",
+            "unmetItem": "{name} Stufe {level} braucht {requires} Stufe {requiresLevel}"
+        },
+        "export": {
+            "button": "In Kern-Events exportieren",
+            "empty": "Füge dem Plan ein Ziel hinzu, um ihn zu exportieren.",
+            "speedupMinutes": "Beschleuniger-Minuten für Forschung",
+            "power": "Durch Forschung gewonnene Macht",
+            "computed": "Von der App aus dem Planergebnis berechnet.",
+            "unscored": "Kein Event wertet {name}."
+        }
+    },
+    "view": {
+        "ofTotal": "{count} von {total}",
+        "undo": "Rückgängig",
+        "massSetApplied": {
+            "title": "Mehrfach setzen angewendet",
+            "message": "{nodes} aktualisiert."
+        },
+        "started": {
+            "title": "Forschung gestartet",
+            "message": "{name}, Stufe {from} bis {to}."
+        },
+        "manage": {
+            "slotLabel": "{queue}, {category}",
+            "finishText": "Upgrade abschließen setzt {name} auf Stufe {level}, gibt die Warteschlange {queue} frei und fügt das Upgrade deinem Verlauf hinzu. Bei null Restzeit zeigen Knoten und Warteschlangen-Karte Bereit zum Abschließen. Nichts wird von selbst fertig, weil du Beschleuniger genutzt haben könntest."
+        },
+        "finished": {
+            "title": "{name} erforscht",
+            "message": "Jetzt Stufe {level}. Zum Verlauf hinzugefügt."
+        },
+        "cancelled": {
+            "title": "Forschung {name} abgebrochen",
+            "message": "Die Stufe bleibt, wie sie war. Korrigiere bei Bedarf deinen Bestand unter Ressourcen."
+        },
+        "subline": {
+            "researchCenter": "Research Center {level}",
+            "warAcademy": "War Academy {level}"
+        },
+        "stats": {
+            "maxed": "Maximierte Knoten, {percent}% des Baums",
+            "power": "Forschungsmacht, die Macht jeder erforschten Stufe",
+            "withoutTimeNone": "Ohne Forschungszeit hat jede Stufe eine",
+            "withoutTimeSome": "Ohne Forschungszeit, als Unbekannt angezeigt",
+            "locked": "Gesperrt durch Serveralter oder Voraussetzungen"
+        },
+        "tabLockedNote": "{reason} Du kannst trotzdem Ziele im Plan setzen.",
+        "lockedByRequirement": "{count} von {total} Knoten in diesem Tab sind durch eine Voraussetzung gesperrt.",
+        "search": {
+            "label": "Knoten suchen",
+            "placeholder": "Knoten nach Name oder Bonus suchen"
+        },
+        "massSet": "Mehrfach setzen",
+        "layout": {
+            "label": "Layout",
+            "grid": "Raster",
+            "tree": "Baum"
+        },
+        "plan": "Plan",
+        "status": {
+            "tree": "{count} Knoten im Baum {tab}. Forschungsmacht in diesem Tab: {power}. Scrolle zum Verschieben. Knoten, die nicht zu Suche oder Filtern passen, sind abgedunkelt.",
+            "grid": "{shown} von {count} Knoten in {tab} angezeigt. Forschungsmacht in diesem Tab: {power}. Ziele sind hier nur lesbar und werden im Plan gesetzt."
+        },
+        "empty": {
+            "title": "Keine passenden Knoten",
+            "description": "Ändere die Suche oder setze die Filter zurück, um alle Knoten zu sehen.",
+            "reset": "Suche und Filter zurücksetzen"
+        },
+        "start": {
+            "description": "Eine Forschung als im Upgrade markieren",
+            "selectLabel": "Forschung für Upgrade",
+            "selectHelp": "Nur Forschung, die du jetzt starten kannst, ist aufgelistet. Gesperrte, maximierte und laufende Forschung fehlt. Eine Forschung aus Wachstum, Wirtschaft oder Kampf nutzt die Forschungs-Warteschlange. Eine T11- oder T12-Forschung nutzt die War-Academy-Warteschlange.",
+            "timeLabel": "Forschungszeit",
+            "speedLabel": "Forschungstempo",
+            "slotLabel": "Warteschlange",
+            "slotHelp": "Eine Forschung gleichzeitig pro Warteschlange. Ist die Warteschlange belegt, sagt diese Karte, wann sie frei wird."
+        }
+    }
+}

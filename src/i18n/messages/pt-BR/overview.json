@@ -1,0 +1,231 @@
+{
+  "page": {
+    "title": "Visão geral"
+  },
+  "header": {
+    "state": "Estado {number}",
+    "furnace": "Furnace {level}",
+    "serverAge": "Servidor com cerca de {days} dias",
+    "derived": "Montado com base nas suas outras páginas"
+  },
+  "tiles": {
+    "furnace": {
+      "label": "Furnace",
+      "steps": "{order} de {total} etapas",
+      "unknown": "Indefinido",
+      "unknownHint": "Defina a Furnace em Construções"
+    },
+    "dailies": {
+      "label": "Diárias",
+      "value": "{done} / {total}",
+      "tasks": "Minhas tarefas feitas hoje",
+      "missions": "Missões do jogo feitas"
+    },
+    "events": {
+      "label": "Eventos",
+      "live": "{amount} ao vivo",
+      "coreDay": "{event} {day}",
+      "moreThisWeek": "mais {amount} esta semana",
+      "noneThisWeek": "Nenhum esta semana"
+    },
+    "skins": {
+      "label": "Skins",
+      "value": "{owned} / {total}",
+      "hint": "Skins que você tem"
+    },
+    "vip": {
+      "label": "VIP",
+      "value": "VIP {level}",
+      "unknown": "Indefinido",
+      "hint": "Pelo seu XP de VIP",
+      "unknownHint": "Informe seu XP de VIP em VIP"
+    },
+    "prosperity": {
+      "label": "Prosperidade da ilha",
+      "possible": "de {max} possíveis",
+      "locked": "Bloqueado",
+      "lockedHint": "Requer Furnace {level}"
+    },
+    "generation": {
+      "label": "Geração de heróis",
+      "allUnlocked": "Todas as gerações estão desbloqueadas",
+      "shouldBeOpen": "A geração {next} já deveria estar aberta",
+      "onDay": "Geração {next} no dia {day} do servidor",
+      "inDays": "Geração {next} em cerca de {days} dias"
+    }
+  },
+  "events": {
+    "title": "Eventos",
+    "openCalendar": "Abrir calendário",
+    "liveNow": "Ao vivo agora",
+    "liveBadge": "Ao vivo agora",
+    "nextUp": "A seguir, da sua página de eventos",
+    "coreLine": "{day} de {count}, {name}. Eventos principais",
+    "runLine": "{length}. Ao vivo agora",
+    "empty": "Nenhum evento adicionado",
+    "addEvent": "Adicionar evento",
+    "noLive": "Nada em andamento agora."
+  },
+  "coreToday": {
+    "title": "{event} hoje",
+    "open": "Eventos principais",
+    "dayLine": "{day}, {name}",
+    "plan": "Plano de hoje: {points} pontos",
+    "checklist": "Lista",
+    "done": "{done} de {total} feitas",
+    "progress": "Progresso da lista",
+    "noActions": "Nenhuma ação planejada para hoje.",
+    "castleSignedUp": "Inscrito em uma posição do Castelo para {day}",
+    "castleOpen": "Inscreva-se em uma posição do Castelo para {day}",
+    "logLocked": "{locked} de {total} dias estão travados no Registro do evento.",
+    "todayLocked": "{day} está travado.",
+    "todayOpen": "{day} ainda não foi registrado.",
+    "openChecklist": "Abrir lista",
+    "openLog": "Abrir registro do evento"
+  },
+  "queues": {
+    "title": "Filas em andamento",
+    "running": "{count} em andamento",
+    "construction": "Construção {number}",
+    "researchMain": "Pesquisa",
+    "researchWarAcademy": "War Academy",
+    "training": "Treino {name}",
+    "learning": "Aprendizado",
+    "task": {
+      "construction": "{name} para {level}",
+      "research": "{name} para o nível {level}",
+      "training": "Tropas {tier}",
+      "learning": "{name}, {skill}"
+    },
+    "idle": "Livre",
+    "idleBuildings": "Ociosa, toque em Iniciar melhoria em Construções",
+    "idleResearch": "Ociosa, toque em Iniciar melhoria em Pesquisa",
+    "progress": "Progresso de {title}"
+  },
+  "lastResult": {
+    "title": "Último resultado de evento",
+    "open": "Abrir no Histórico",
+    "days": "Dias 1 a 5. A Fase de Batalha fica separada.",
+    "plan": "Plano",
+    "actual": "Realizado",
+    "difference": "Diferença",
+    "overall": "Posição geral",
+    "alliance": "Posição da aliança",
+    "upgrades": "Melhorias planejadas feitas",
+    "upgradesOf": "{done} de {total}"
+  },
+  "server": {
+    "title": "Idade do servidor",
+    "edit": "Editar chefe",
+    "age": "Cerca de {days} dias, com margem de {tolerance}",
+    "unknown": "Desconhecida. Informe a data de início do servidor em Editar chefe.",
+    "fromDate": "Pela data de início do servidor, {date}.",
+    "warAcademy": "Pesquisa da War Academy",
+    "t12": "Pesquisa T12",
+    "open": "Aberta",
+    "opensIn": "Abre em cerca de {days} dias",
+    "unknownUnlock": "Desconhecido",
+    "heroes": "Heróis liberados até",
+    "generation": "Geração {number}",
+    "estimate": "Os dias de desbloqueio vêm da linha do tempo do servidor. Altere em Editar chefe se o seu servidor estiver um pouco diferente.",
+    "areas": {
+      "fireCrystal": "Níveis de Fire Crystal",
+      "pets": "Pets",
+      "experts": "Especialistas"
+    },
+    "fcUpTo": "Até {level}",
+    "nothingYet": "Nenhum ainda",
+    "countOf": "{unlocked} de {total} desbloqueados",
+    "allUnlocked": "Tudo está desbloqueado.",
+    "generationName": "Geração {number}",
+    "allGenerations": "Todas as gerações estão desbloqueadas.",
+    "next": {
+      "withDate": "Próximo: {names}, dia {day} do servidor, {date}. Em cerca de {days} dias.",
+      "noDate": "Próximo: {names}, dia {day} do servidor. Em cerca de {days} dias.",
+      "unknownAge": "Próximo: {names}, dia {day} do servidor.",
+      "passed": "{names} já deveria estar aberto pela idade do seu servidor, dia {day}. Aumente a configuração em Editar chefe."
+    }
+  },
+  "dailies": {
+    "title": "Diárias de hoje",
+    "open": "Abrir Diárias",
+    "activeness": "{now} de {top} de Atividade",
+    "activenessBar": "Atividade de hoje",
+    "missions": "Missões do jogo: {done} de {total} feitas",
+    "tasks": "{done} de {total} em Minhas tarefas",
+    "tasksBar": "Minhas tarefas feitas hoje",
+    "stillOpen": "Ainda abertas em Minhas tarefas, as primeiras {shown} de {total}",
+    "allDone": "Todas as tarefas de Minhas tarefas foram feitas hoje.",
+    "noTasks": "Ainda não há tarefas em Minhas tarefas."
+  },
+  "planner": {
+    "title": "Faltas do planejador",
+    "short": "faltam {amount}",
+    "covered": "Nenhuma falta",
+    "goals": "Metas de {pages}. Os custos vêm do pacote de dados e o estoque, de Recursos.",
+    "noGoals": "Nenhuma meta definida. Defina metas com Plano em Construções, Pesquisa e nas outras páginas.",
+    "pages": {
+      "buildings": "Construções",
+      "research": "Pesquisa",
+      "heroes": "Heróis",
+      "troops": "Tropas",
+      "pets": "Pets",
+      "chiefGear": "Equipamento do Chefe",
+      "chiefCharms": "Amuletos do Chefe"
+    },
+    "separator": ", ",
+    "line": "Precisa {need} · Tem {have}",
+    "shortBy": "Faltam {amount}",
+    "enough": "Suficiente",
+    "updateStock": "Atualize o estoque em Recursos",
+    "incomplete": "O nível de uma meta tem custo Desconhecido no pacote de dados, então estes totais estão incompletos."
+  },
+  "progress": {
+    "title": "Progresso por área",
+    "hint": "Itens obtidos ou melhorados em relação aos totais do pacote de dados",
+    "count": "{owned} / {total}",
+    "furnace": "Furnace",
+    "furnaceOf": "{level} de {max}",
+    "furnaceUnknown": "Desconhecido",
+    "areas": {
+      "buildings": "Construções",
+      "heroes": "Heróis",
+      "chiefGear": "Equipamento do Chefe",
+      "chiefCharms": "Amuletos do Chefe",
+      "experts": "Especialistas",
+      "pets": "Pets",
+      "research": "Pesquisa",
+      "allianceTech": "Tecnologia da aliança",
+      "skins": "Skins"
+    },
+    "locked": {
+      "daybreakIsland": "Daybreak Island",
+      "requirement": "Bloqueado. Requer Furnace {level}, {count, plural, one {falta {amount} nível} other {faltam {amount} níveis}}"
+    }
+  },
+  "power": {
+    "title": "Poder",
+    "total": "Poder total",
+    "complete": "Poder atual em comparação com o máximo que cada grupo pode dar com tudo no nível máximo, no conteúdo que suas configurações de desbloqueio abrem. Grupos sem máximo contam como estão.",
+    "incomplete": "Mesma comparação. {count, plural, one {{amount} item não tem} other {{amount} itens não têm}} valor de poder nos dados e {count, plural, one {não é contado} other {não são contados}}.",
+    "groupWithoutValue": "{count, plural, one {{amount} item não tem} other {{amount} itens não têm}} valor de poder nos dados",
+    "groups": {
+      "buildings": "Construções",
+      "research": "Pesquisa",
+      "heroes": "Heróis",
+      "heroGear": "Equipamento de Herói",
+      "chiefGear": "Equipamento do Chefe",
+      "chiefCharms": "Amuletos do Chefe",
+      "experts": "Especialistas",
+      "pets": "Pets",
+      "troops": "Tropas"
+    },
+    "ofPossible": "de {possible} possíveis",
+    "totalProgress": "Poder total em comparação com o máximo possível",
+    "percentOfPossible": "{percent}% do máximo possível",
+    "rowOfPossible": "{power} de {possible}",
+    "progress": "Poder de {group} em comparação com o máximo possível",
+    "noMaximum": "Sem máximo, depende do que você informar",
+    "noCapNote": "Tropas e Equipamento de Herói não têm limite, então seu poder total pode passar do total possível se você treinar mais tropas e melhorar o equipamento dos heróis. Os dois contam como estão no total possível."
+  }
+}

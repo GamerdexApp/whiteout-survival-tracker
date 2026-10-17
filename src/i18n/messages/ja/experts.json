@@ -1,0 +1,239 @@
+{
+    "page": {
+        "title": "エキスパート"
+    },
+    "view": {
+        "subline": "{chief} · Dawn Academyのエキスパート、ゲーム内に全{total}人",
+        "ghost": "エキスパート"
+    },
+    "common": {
+        "plan": "プラン",
+        "generation": "第{generation}世代",
+        "unknown": "不明",
+        "and": "{first}と{last}",
+        "expertCount": "{count, plural, other {エキスパート{amount}人}}"
+    },
+    "stats": {
+        "recruited": "採用済みのエキスパート",
+        "recruitedValue": "{total}人中{count}人",
+        "powerNow": "現在のエキスパート戦力（採用済みのみ）",
+        "powerAtMax": "最大時の戦力（全{total}人）",
+        "highest": "最高の親密度",
+        "highestValue": "{name}（{affinity}）",
+        "highestNone": "採用済みなし"
+    },
+    "toolbar": {
+        "searchLabel": "エキスパートを検索",
+        "searchPlaceholder": "エキスパートを検索",
+        "filters": "フィルター",
+        "emptyTitle": "一致するエキスパートがいません",
+        "emptyDescription": "検索条件またはフィルターを変更すると、他のエキスパートを表示できます。",
+        "reset": "フィルターをリセット",
+        "status": "{total}人中{shown}人を表示。目標はここでは読み取り専用で、プランで設定します。10で割り切れるレベルでは、エキスパートを昇格させるまで、ひとつ前のレベルのボーナスが適用されます。変更はすべてすぐに保存されます。",
+        "lockedNote": "{count}人は、後のサーバー日数までロック中です。"
+    },
+    "toast": {
+        "notRecruitedTitle": "{name}は未採用です",
+        "notRecruitedMessage": "レベルは保存されたままで、「採用済み」をオンにすると元に戻ります。",
+        "undo": "元に戻す"
+    },
+    "card": {
+        "recruited": "採用済み",
+        "recruitedLabel": "{expert}を採用済み",
+        "summary": "{title} · {specialty} · {generation}",
+        "affinityLevel": "親密度レベル",
+        "affinityLabel": "{expert}の親密度レベル",
+        "affinityDisplay": "{level} / {max}",
+        "affinityProgress": "{expert}の親密度の進行状況",
+        "goal": "目標 {goal}",
+        "advanced": "昇格済み",
+        "notAdvanced": "未昇格",
+        "advancedLabel": "{expert}をレベル{level}で昇格済み",
+        "relationship": "関係レベル",
+        "affinityAvailable": "所持している親密度",
+        "affinityAvailableLabel": "{expert}の所持親密度ポイント",
+        "affinityOf": "レベル{level}に必要な{need}のうち",
+        "bonusTitle": "現在の基本ボーナス",
+        "bonusNow": "{stats} {amount}%",
+        "bonusOwnLevel": "レベル{level}は10の倍数ではないため、そのレベル自身のボーナスが適用されます。",
+        "bonusAdvanced": "レベル{level}は昇格済みのため、そのレベル自身のボーナスが適用されます。",
+        "bonusNotAdvanced": "レベル{level}は未昇格のため、レベル{counted}のボーナスが適用されます。",
+        "bonusAtMax": "レベル100では{amount}%。",
+        "feeds": "反映先",
+        "bonuses": "ボーナス",
+        "nextAdvancement": "次の昇格: レベル{level}、シジル{sigils}個",
+        "allAdvanced": "すべての昇格が完了しています。",
+        "skills": "スキル",
+        "skillLabel": "{expert}の{skill}レベル",
+        "skillDisplay": "{level} / {max}",
+        "expAvailable": "所持しているEXP",
+        "expAvailableLabel": "{expert}の{skill}の所持EXP",
+        "expOf": "レベル{level}に必要な{need}のうち",
+        "maxLevel": "最大レベル、EXPは不要",
+        "talent": "タレント: {name}",
+        "talentLevel": "レベル{level} / {max}",
+        "talentFollows": "{relationship}に連動します。{effect}。",
+        "power": "戦力 {now} / {max}",
+        "derived": "算出値",
+        "notRecruitedHint": "未採用です。Tundra Trekでこのエキスパートを採用してから、「採用済み」をオンにしてください。",
+        "recruitmentCost": "採用コスト: {cost}",
+        "maxPower": "最大戦力 {max}",
+        "buffs": "バフ {stats}",
+        "expEnough": "レベル{level}に十分",
+        "affinityEnough": "レベル{level}に十分",
+        "skillLocked": "未解放です。レベル1に上げると解放されます。",
+        "sigilsOwned": "所持シジル",
+        "sigilsOwnedLabel": "{expert}の所持シジル",
+        "sigilsHint": "資源ページのシジルと同じ数です。"
+    },
+    "filtersFlyout": {
+        "title": "フィルター",
+        "description": "エキスパートの一覧を絞り込み、並び順を選びます。",
+        "generation": "世代",
+        "all": "すべて",
+        "show": "表示",
+        "order": "並び順",
+        "reset": "リセット",
+        "showButton": "{experts}を表示",
+        "notSaved": "フィルターは保存されません。",
+        "showOptions": {
+            "everything": "すべて",
+            "recruited": "採用済みのみ",
+            "notRecruited": "未採用のみ"
+        },
+        "orderOptions": {
+            "generation": "世代",
+            "affinity": "親密度レベル",
+            "power": "戦力",
+            "name": "名前"
+        }
+    },
+    "plan": {
+        "title": "エキスパートのプラン",
+        "description": "親密度とスキルの目標に必要な、Books of Knowledge、シジル、スキルEXP、親密度ポイント。",
+        "saved": "プランを保存しました（{date}）",
+        "close": "閉じる",
+        "save": "プランを保存",
+        "exportButton": "コアイベントへエクスポート",
+        "exportNothing": "このプランには、エクスポートする本もシジルも必要ありません。",
+        "export": {
+            "books": "Books of Knowledge",
+            "sigils": "エキスパートのシジル",
+            "exp": "スキルEXP",
+            "expReason": "スキルEXPをポイント対象にするイベントはありません。"
+        },
+        "noExperts": "プランにエキスパートがまだいません。採用済みのエキスパートを追加して、目標を設定してください。",
+        "add": {
+            "title": "エキスパートを追加",
+            "selectLabel": "追加するエキスパート",
+            "button": "エキスパートを追加",
+            "allIn": "採用済みのエキスパートはすべてプランに入っています。",
+            "noneRecruited": "プランするには、ページでエキスパートを採用してください。"
+        },
+        "block": {
+            "remove": "削除",
+            "removeLabel": "{expert}をプランから削除",
+            "part": "項目",
+            "current": "現在",
+            "goalHeading": "目標",
+            "affinity": "親密度レベル",
+            "affinityHeld": "所持している親密度 {amount}",
+            "expHeld": "所持しているEXP {amount}",
+            "currentLevel": "レベル{level}",
+            "currentAffinity": "{level}、昇格済み",
+            "currentAffinityPlain": "{level}",
+            "affinityGoalLabel": "{expert}の親密度の目標",
+            "skillGoalLabel": "{expert}の{skill}の目標",
+            "advanceAtGoal": "レベル{level}で昇格",
+            "advanceAtGoalLabel": "{expert}を目標で昇格"
+        },
+        "checks": {
+            "affinity": "親密度ポイント",
+            "learning": "学習スピードアップとしてのスキルEXP",
+            "minutesUnit": "分"
+        },
+        "stock": {
+            "sigils": "プランにはシジルが{total}個必要です。エキスパート専用のシジルで{own}個を賄えるため、{common}個はCommon Expert Sigilsから用意する必要があります。所持しているエキスパート専用のシジルは、そのエキスパートにしか使えません。",
+            "books": "プランにはスキルレベル用にBooks of Knowledgeが{amount}冊必要です。",
+            "affinity": "プランには親密度ポイントが{needed}必要です。エキスパートのカードで所持している分で{held}を賄えるため、あと{left}を入手する必要があります。パッケージに親密度のアイテムはないため、在庫との照合は行いません。",
+            "learning": "プランにはスキルEXPが{exp}必要です。スキルの所持分は{held}のため、{left}は学習スピードアップで用意する必要があります。学習1分あたり{rate} EXPなので、{minutes}分になります。"
+        },
+        "byExpert": {
+            "title": "エキスパート別",
+            "sigils": "シジル: {needed}個必要、{name}のシジル{own}個で賄い、{common}個はCommon Expert Sigilsから用意",
+            "affinity": "親密度: {needed}必要、{held}所持、あと{left}を入手",
+            "exp": "スキルEXP: {needed}必要、{held}所持、あと{left}を入手"
+        },
+        "result": {
+            "title": "結果",
+            "derived": "算出値",
+            "books": "Books of Knowledge",
+            "sigils": "シジル",
+            "exp": "スキルEXP",
+            "affinity": "親密度ポイント",
+            "advancements": "昇格",
+            "skillLevels": "スキルレベル",
+            "affinityLevels": "親密度レベル",
+            "heads": {
+                "expert": "エキスパート",
+                "books": "本",
+                "sigils": "シジル",
+                "exp": "EXP",
+                "levels": "レベル",
+                "advancements": "昇格",
+                "affinity": "親密度"
+            },
+            "empty": "エキスパートを追加して目標を上げると、結果が表示されます。",
+            "tableLabel": "プラン結果の表"
+        }
+    },
+    "learning": {
+        "title": "学習",
+        "note": "学習できるスキルは一度に1つです。完了すると、そのスキルにEXPが加算されます。",
+        "idle": "学習中のものはありません。セッションを開始して、スキルにEXPを追加してください。",
+        "startButton": "学習を開始",
+        "slotLabel": "学習、一度に1セッション",
+        "jobTitle": "{expert}、{skill}、{session}",
+        "manageFinishText": "「アップグレードを完了」を押すと、セッションのEXPがスキルに加算され、学習キューが空き、セッションが履歴に追加されます。残り時間が0になると、カードに「完了可能」と表示されます。スピードアップを使った可能性があるため、自動では完了しません。",
+        "flyout": {
+            "title": "学習を開始",
+            "description": "エキスパートのスキルについて、学習セッションを実行中にします",
+            "expert": "エキスパート",
+            "skill": "スキル",
+            "skillOption": "{name}、レベル{level} / {max}",
+            "session": "セッション",
+            "sessionOption": "{label}、EXP {exp}",
+            "sessionHint": "セッションは1分あたり60 EXPを獲得します。セッションはゲーム内のものです。",
+            "expEarned": "獲得EXP",
+            "heldAfter": "加算後の所持EXP",
+            "tooMuch": "このスキルが使えるEXPはあと{room}までで、残りは失われます。",
+            "whenStarted": "開始のタイミング",
+            "modes": {
+                "now": "今すぐ開始",
+                "already": "開始済み"
+            },
+            "timeLeftHours": "残り時間（時間）",
+            "ends": "完了",
+            "startedHint": "ゲームでセッションが実行中の場合は「開始済み」を使い、表示されている時間を入力してください。",
+            "nothingToLearn": "今は学習できるスキルがありません。エキスパートを採用し、最高レベルではないスキルを解放してください。",
+            "busy": "すでにセッションが実行中です。先に管理から完了またはキャンセルしてください。",
+            "cancel": "キャンセル",
+            "start": "学習を開始"
+        },
+        "toasts": {
+            "started": {
+                "title": "学習を開始しました",
+                "message": "{what}。"
+            },
+            "finished": {
+                "title": "{what}の学習が完了しました",
+                "message": "EXPをスキルと履歴に追加しました。"
+            },
+            "cancelled": {
+                "title": "{what}をキャンセルしました",
+                "message": "スキルは元のEXPを保持します。"
+            },
+            "undo": "元に戻す"
+        }
+    }
+}

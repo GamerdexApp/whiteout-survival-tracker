@@ -1,0 +1,79 @@
+{
+  "line": "{items} item dalam {categories} kategori, dengan sumber dan peluang drop dari {chests} peti.",
+  "catalog": {
+    "title": "Katalog item",
+    "showing": "Menampilkan {shown} dari {total}",
+    "search": "Cari",
+    "searchPlaceholder": "Cari item menurut nama atau deskripsi",
+    "table": "Item",
+    "item": "Item",
+    "category": "Kategori",
+    "sources": "Sumber",
+    "lootRates": "Peluang drop",
+    "description": "Deskripsi",
+    "emptyTitle": "Tidak ada item yang cocok",
+    "emptyDescription": "Ubah pencarian atau filter."
+  },
+  "filters": {
+    "title": "Filter",
+    "button": "Filter",
+    "summary": "Filter: {category}. Sumber: {sources}",
+    "edit": "Ubah",
+    "category": "Kategori",
+    "all": "Semua",
+    "sources": "Sumber",
+    "lootRates": "Peluang drop",
+    "reset": "Atur ulang",
+    "show": "{count, plural, other {Tampilkan {amount} item}}"
+  },
+  "sourcesFilter": {
+    "any": "Semua sumber",
+    "has": "Punya sumber",
+    "none": "Tanpa sumber"
+  },
+  "sourcesChip": {
+    "any": "Semua",
+    "has": "Punya sumber",
+    "none": "Tanpa sumber ({amount})"
+  },
+  "lootFilter": {
+    "any": "Semua",
+    "has": "Punya peluang drop"
+  },
+  "lootChip": {
+    "any": "Semua",
+    "has": "Punya peluang drop ({amount} peti)"
+  },
+  "loot": {
+    "yes": "Ya",
+    "no": "Tidak",
+    "notChest": "Bukan peti"
+  },
+  "detail": {
+    "title": "Detail",
+    "category": "Kategori",
+    "sources": "Sumber",
+    "speedup": "Percepatan",
+    "speedupValue": "{type}, {minutes} menit",
+    "description": "Deskripsi",
+    "lootRates": "Peluang drop",
+    "lootRowsListed": "{count, plural, other {{amount} baris terdaftar}}",
+    "noLootRates": "Data tidak punya peluang drop untuk peti ini",
+    "lootTitle": "Peluang drop",
+    "lootMeta": "{count, plural, other {{amount} hadiah}}",
+    "lootTable": "Peluang drop peti",
+    "reward": "Hadiah",
+    "amount": "Jumlah",
+    "chance": "Peluang",
+    "chanceValue": "{percent}%",
+    "name": "Nama"
+  },
+  "speedupType": {
+    "general": "Umum",
+    "construction": "Konstruksi",
+    "troop": "Pasukan",
+    "research": "Riset",
+    "learning": "Belajar",
+    "healing": "Penyembuhan"
+  }
+}

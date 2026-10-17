@@ -1,0 +1,27 @@
+{
+  "lock": {
+    "day": "Si sblocca al giorno {day} del server",
+    "dayAndDate": "Si sblocca al giorno {day} del server, {date}"
+  },
+  "areas": {
+    "pets": "Animali",
+    "fireCrystal": "Livelli Fire Crystal",
+    "experts": "Esperti",
+    "chiefGear": "Equipaggiamento del capo",
+    "chiefCharms": "Amuleti del capo",
+    "warAcademy": "War Academy e ricerca T12"
+  },
+  "dialog": {
+    "legend": "Contenuti sbloccati",
+    "hint": "I blocchi seguono l'età del server dalla data di avvio del server. Se il tuo server è un po' diverso, scegli il passo che hai davvero. Gli elementi bloccati restano visibili e i dati salvati vengono conservati.",
+    "auto": "Auto, {current}",
+    "autoUnknown": "Auto, imposta la data di avvio del server per usarlo",
+    "autoNone": "ancora nulla sbloccato",
+    "none": "Nulla sbloccato",
+    "stepPets": "Giorno {day}, {count} animali su {total}",
+    "stepExperts": "Giorno {day}, {count} esperti su {total}",
+    "stepFc": "Giorno {day}, fino a {last}, senza le sue fasi",
+    "stepNamed": "Giorno {day}, {name}",
+    "pickLabel": "{area} sbloccati fino a"
+  }
+}

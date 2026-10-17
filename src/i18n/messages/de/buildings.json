@@ -1,0 +1,282 @@
+{
+    "title": "Gebäude",
+    "tabs": {
+        "buildings": "Gebäude",
+        "facilities": "Anlagen"
+    },
+    "notBuilt": "Nicht gebaut",
+    "built": "Gebaut",
+    "none": "Keine",
+    "unknown": "Unbekannt",
+    "close": "Schließen",
+    "cancel": "Abbrechen",
+    "undo": "Rückgängig",
+    "ofTotal": "{count} von {total}",
+    "noOtherRequirements": "Keine weiteren Voraussetzungen",
+    "builderName": "Baumeister {number}",
+    "shelterName": "Shelter {number}",
+    "levelOf": "Stufe {name}",
+    "levelRange": "{from} bis {to}",
+    "requirement": {
+        "shelter": "{building} auf Stufe {level}",
+        "heroHall": "Hero Hall gebaut",
+        "level": "{building} {level}"
+    },
+    "columns": {
+        "building": "Gebäude",
+        "current": "Aktuell",
+        "goal": "Ziel",
+        "power": "Macht",
+        "progress": "Fortschritt und nächste Stufe",
+        "upgrade": "Upgrade"
+    },
+    "entry": {
+        "notes": {
+            "furnace": "Schaltet alle anderen Gebäude frei",
+            "shelter": "Bis zu 8 Shelter, jeder mit eigener Stufe"
+        },
+        "subline": {
+            "size": "Max {max} · {count} Stufen",
+            "withNote": "{note} · {size}",
+            "single": "Einzelbau · Macht {power}"
+        },
+        "progress": {
+            "requires": "Braucht {list}",
+            "noRequirements": "Keine Voraussetzungen",
+            "maxLevel": "Max. Stufe",
+            "blocked": "Blockiert: braucht {list}",
+            "needs": "Braucht {list}",
+            "levelAgeLocked": "Die gespeicherte Stufe {level} ist auf diesem Server noch nicht offen. {text}",
+            "goalAgeLocked": "Ziel {goal} ist auf diesem Server noch nicht offen. {text}",
+            "nextAgeLocked": "Nächste Stufe {level} ist gesperrt. {text}"
+        },
+        "builtSwitch": "{name} gebaut",
+        "shelters": {
+            "none": "Keine gebaut",
+            "editLabel": "Shelter ({count}), Stufen bearbeiten",
+            "button": "Shelter ({count})"
+        },
+        "levels": "Stufen",
+        "levelsLabel": "Stufen von {name}",
+        "upgrading": "{name} wird aufgewertet",
+        "startLabel": "Upgrade von {name} starten",
+        "start": "Start",
+        "startUpgrade": "Upgrade starten",
+        "devIndex": "Entw.-Index {value}",
+        "powerLine": "Macht {power} · Entw.-Index {index}",
+        "progressLabel": "Fortschritt {name}"
+    },
+    "builders": {
+        "label": "Baumeister",
+        "hint": "Ein hier gestartetes Upgrade erscheint in der Übersicht als laufende Warteschlange.",
+        "idle": "Tippe bei einem Gebäude auf Start, um ein Upgrade zu beginnen.",
+        "jobTitle": "{name}, {from} bis {to}",
+        "locked": "Gesperrt",
+        "lockedText": "Der zweite Baumeister braucht das Bau-Paket.",
+        "lockedLink": "Unter Häuptling bearbeiten einschalten"
+    },
+    "upgrade": {
+        "option": "{subject}, {from} bis {to}",
+        "busy": "Belegt: {name} auf {level}, {timeLeft}"
+    },
+    "facilities": {
+        "intro": "Anlagen in deiner Stadt. Markiere die, die du gebaut hast. Das sind Stadtanlagen, nicht die Allianzanlagen im Allianz-Menü.",
+        "builtLabel": "Gebaute Anlagen",
+        "unlockedLabel": "Bei deiner Furnace-Stufe freigeschaltet",
+        "requires": "Braucht Furnace {level}",
+        "unlocksAt": "Ab Furnace {level}"
+    },
+    "tab": {
+        "intro": "Aktuelle Stufe und Ziel für jedes Gebäude. Die Furnace bestimmt, was der Rest erreichen kann.",
+        "searchLabel": "Gebäude suchen",
+        "filters": "Filter",
+        "massEdit": "Mehrere ändern",
+        "startUpgrade": "Upgrade starten",
+        "plan": "Plan",
+        "status": "{shown} von {total} Gebäuden angezeigt. Ziele sind hier nur lesbar und werden im Plan gesetzt. Ein Ziel gleich der aktuellen Stufe bedeutet kein Ziel. Die Stepper gehen eine Stufe nach der anderen in Spielreihenfolge.",
+        "groupPinned": "Angeheftet",
+        "stats": {
+            "furnace": "Furnace, schaltet alle anderen Gebäude frei",
+            "power": "Aktuelle Macht, alle Gebäude",
+            "developmentIndex": "Entwicklungsindex, alle Gebäude",
+            "withGoal": "Gebäude mit Ziel",
+            "atMax": "Auf Maximalstufe",
+            "entertainment": "Entertainment gebaut"
+        },
+        "empty": {
+            "title": "Keine passenden Gebäude",
+            "description": "Ändere die Suche oder setze die Filter zurück, um alle Gebäude zu sehen.",
+            "reset": "Suche und Filter zurücksetzen"
+        },
+        "start": {
+            "description": "Ein Gebäude als im Upgrade markieren",
+            "selectLabel": "Gebäude für Upgrade",
+            "selectHelp": "Nur Gebäude, die du jetzt starten kannst, sind aufgelistet. Gesperrte, maximierte und laufende Gebäude fehlen. Jedes Upgrade belegt einen der zwei Baumeister.",
+            "timeLabel": "Bauzeit",
+            "speedLabel": "Baugeschwindigkeit",
+            "slotLabel": "Baumeister",
+            "slotHelp": "Wähle einen freien Baumeister. Ein belegter Baumeister zeigt, wann er frei wird."
+        },
+        "toasts": {
+            "started": {
+                "title": "Upgrade gestartet",
+                "message": "{name}, {subtitle}."
+            },
+            "finished": {
+                "title": "{name} aufgewertet",
+                "message": "Jetzt {level}. Zum Verlauf hinzugefügt."
+            },
+            "cancelled": {
+                "title": "Upgrade von {name} abgebrochen",
+                "message": "Die Stufe bleibt, wie sie war. Korrigiere bei Bedarf deinen Bestand unter Ressourcen."
+            },
+            "massEdit": {
+                "title": "Änderung angewendet",
+                "message": "{count, plural, one {{amount} Gebäude} other {{amount} Gebäude}} aktualisiert."
+            }
+        },
+        "manage": {
+            "finishText": "Upgrade abschließen setzt {name} auf {level}, gibt Baumeister {builder} frei und fügt das Upgrade deinem Verlauf hinzu. Bei null Restzeit zeigen Gebäude und Baumeister-Karte Bereit zum Abschließen. Nichts wird von selbst fertig, weil du Beschleuniger genutzt haben könntest."
+        }
+    },
+    "filters": {
+        "title": "Filter",
+        "description": "Wähle, was die Gebäudeliste zeigt",
+        "reset": "Zurücksetzen",
+        "show": "{count, plural, one {{amount} Gebäude zeigen} other {{amount} Gebäude zeigen}}",
+        "category": "Kategorie",
+        "categoryAll": "Alle, {count}",
+        "categoryOption": "{category}, {count}",
+        "showSection": "Anzeigen",
+        "hideMaxed": "Maximierte Gebäude ausblenden",
+        "hideLocked": "Gesperrte Gebäude ausblenden",
+        "goalsOnly": "Nur Gebäude mit Ziel",
+        "order": "Reihenfolge",
+        "orders": {
+            "game": "Spielreihenfolge, Furnace zuerst",
+            "name": "Name, A bis Z",
+            "progress": "Fortschritt, niedrigster zuerst"
+        },
+        "pinned": "Die Furnace bleibt bei jedem Filter oben angeheftet. Filter werden nicht gespeichert."
+    },
+    "levels": {
+        "title": "Stufen",
+        "description": "{category} · Max {max} · {count} Stufen",
+        "noDescription": "Noch keine Beschreibung in den Daten.",
+        "current": "Aktuelle Stufe",
+        "goal": "Zielstufe",
+        "nextNeeds": "Nächste Stufe braucht",
+        "noGoal": "Kein Ziel",
+        "tableNote": "Die Tabelle listet nur die Stufen nach deiner aktuellen, da die anderen erledigt sind.",
+        "maxed": "Maximale Stufe. Nichts mehr aufzuwerten.",
+        "nextAfter": "Nächste Stufen nach {level}",
+        "first": "Erste Stufen",
+        "level": "Stufe",
+        "time": "Zeit",
+        "power": "Macht",
+        "capacity": "Kapazität",
+        "requires": "Braucht",
+        "goalBadge": "Ziel",
+        "capacityNote": "Die Kapazität ist im Paket nur bei Tier-Basiszeilen gesetzt, daher zeigen Zwischenstufen Unbekannt."
+    },
+    "massEdit": {
+        "title": "Mehrere Gebäude ändern",
+        "description": "Setze viele Gebäude auf einmal. Nichts wird gespeichert, bis du auf Gebäude setzen tippst.",
+        "noChanges": "Noch keine Änderungen",
+        "changes": "{count, plural, one {{amount} Gebäude ändert sich} other {{amount} Gebäude ändern sich}}",
+        "set": "{count, plural, one {{amount} Gebäude setzen} other {{amount} Gebäude setzen}}",
+        "raiseTitle": "Alle Gebäude auf eine Stufe anheben",
+        "raiseLabel": "Alle Gebäude anheben auf Stufe",
+        "raiseAll": "Alle anheben",
+        "raiseHint": "Jedes Gebäude geht auf seine höchste Stufe bis zu dieser. Ein Gebäude, das schon höher ist, bleibt, und eines, das später startet, bleibt ungebaut. Ziele ändern sich nicht.",
+        "blockedTitle": "Manche Gebäude brauchen zuerst ein anderes Gebäude.",
+        "blocked": "{count, plural, one {{amount} Gebäude liegt} other {{amount} Gebäude liegen}} über dem, was die Voraussetzungen erlauben.",
+        "lowerBlocked": "Auf das Erlaubte senken",
+        "levels": "Stufen",
+        "needsFirst": "Braucht zuerst {list}",
+        "was": "war {level}",
+        "entertainment": "Entertainment",
+        "markAllBuilt": "Alle als gebaut",
+        "clearAll": "Alle leeren",
+        "footnote": "Die Änderung betrifft nur gespeicherte Stufen. Sie senkt nie von selbst eine Stufe und ändert nie Ziele. Shelter haben je eine Stufe, setze sie daher mit der Shelter-Schaltfläche, und setze die Hero Hall im Tab Anlagen."
+    },
+    "shelters": {
+        "title": "Shelter",
+        "description": "Bis zu {max} können gebaut werden. Setze die Stufe jedes einzelnen.",
+        "locked": "Der Shelter ist noch durch deine Furnace-Stufe gesperrt.",
+        "empty": "Noch keine Shelter.",
+        "power": "Macht {power}",
+        "add": "Shelter hinzufügen",
+        "remove": "Shelter {number} entfernen",
+        "allBuilt": "Alle {max} Shelter sind gebaut.",
+        "furnaceNeeds": "Was deine Furnace von Shelter braucht",
+        "requirement": "Furnace {furnaceLevel} braucht Shelter {number} auf Stufe {level}.",
+        "met": "Erfüllt.",
+        "notMet": "Nicht erfüllt.",
+        "footnote": "Plan und Fortschrittsbalken nutzen deinen niedrigsten Shelter, den nächsten zum Aufwerten."
+    },
+    "plan": {
+        "title": "Gebäude planen",
+        "description": "Ressourcen, Zeit und Macht von der aktuellen Stufe bis zum Ziel",
+        "saved": "Plan gespeichert {time}",
+        "save": "Plan speichern",
+        "failed": "Der Plan konnte nicht berechnet werden.",
+        "goalsHeading": "{count, plural, one {Ziele, {amount} Gebäude} other {Ziele, {amount} Gebäude}}",
+        "noGoals": "Noch keine Ziele. Füge oben ein Gebäude hinzu und wähle die Stufe, die es erreichen soll.",
+        "prerequisiteNote": "Vorbedingungen werden für dich ergänzt. Eine Stufe, die ein anderes Gebäude auf höherer Stufe braucht, zählt diese Schritte mit und markiert sie.",
+        "timeNote": "Der Plan dauert {time} nach dem Tempobonus von {percent}%. Dein Bestand: Bau {construction} Min, Allgemein {general} Min. Allgemeine Beschleuniger zählen für den Bau.",
+        "add": {
+            "title": "Gebäude hinzufügen",
+            "allAdded": "Jedes Gebäude ist schon im Plan.",
+            "selectLabel": "Gebäude zum Hinzufügen",
+            "button": "Gebäude hinzufügen"
+        },
+        "speed": {
+            "title": "Baugeschwindigkeit",
+            "percent": "{value}%",
+            "plusPercent": "+{value}%",
+            "readOnly": "Nur lesbar",
+            "bonusesOn": "Von der Boni-Seite übernommen.",
+            "bonusesOff": "In den Einstellungen ausgeschaltet, unter Meine Boni-Summen anwenden.",
+            "openBonuses": "Boni öffnen",
+            "appointment": "Präsidentenvorteile und Ernennung",
+            "appointments": {
+                "none": "Keine",
+                "regular": "Regulär",
+                "supreme": "Höchste"
+            },
+            "appointmentNote": "Regulär 10 Prozent, Höchste 15 Prozent. <strong>Schätzung:</strong> Das Paket nennt diese Werte nur für Forschung.",
+            "petSkill": "Haustierfähigkeit, Builder's Aide",
+            "petSkillNote": "Der Prozentwert kommt von der Cave Hyena auf der Haustier-Seite, auf ihrer aktuellen Stufe.",
+            "chiefOrder": "Häuptlingsbefehl, Double Time",
+            "chiefOrderNote": "<strong>Schätzung:</strong> gibt {percent} Prozent Baugeschwindigkeit für 5 Minuten. Das Paket hat keine Daten zu Häuptlingsbefehlen, daher gibt die App den Wert vor und wendet ihn auf die ganze Zeit an.",
+            "total": "Gesamte Baugeschwindigkeit",
+            "petSkillNoteLocked": "Die Cave Hyena ist auf der Haustier-Seite nicht freigeschaltet, daher bringt die Fähigkeit nichts. Schalte sie dort frei, um dies zu aktivieren."
+        },
+        "goal": {
+            "to": "bis",
+            "label": "Ziel {name}",
+            "remove": "{name} aus dem Plan entfernen"
+        },
+        "result": {
+            "title": "Ergebnis, {count} Schritte",
+            "powerGained": "Gewonnene Macht",
+            "speedupMinutes": "Nötige Beschleuniger-Minuten",
+            "baseTime": "Basiszeit",
+            "timeWithBonus": "Zeit mit {percent}% Bonus",
+            "eventPoints": "Event-Punkte: SvS {svs}, King of Icefield {king} (<strong>Schätzung</strong>, aus den Wertungszeilen der Events).",
+            "prerequisite": "Vorbedingung",
+            "steps": "{count, plural, one {{amount} Schritt} other {{amount} Schritte}}",
+            "unmetHeading": "Unerfüllte Vorbedingungen",
+            "unmetNone": "Keine für diese Ziele. Ein Gebäude außerhalb der Liste, etwa die Hero Hall, würde hier erscheinen."
+        },
+        "export": {
+            "button": "In Kern-Events exportieren",
+            "empty": "Füge dem Plan ein Ziel hinzu, um ihn zu exportieren.",
+            "speedupMinutes": "Beschleuniger-Minuten für Bau",
+            "power": "Durch Bau gewonnene Macht",
+            "stockDetail": "Der Plan braucht {needed}, du hast {held}.",
+            "unscored": "Kein Event wertet {name}."
+        }
+    }
+}

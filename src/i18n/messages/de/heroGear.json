@@ -1,0 +1,215 @@
+{
+    "defaultSetName": "Set {number}",
+    "troop": {
+        "infantry": "Infantry",
+        "lancer": "Lancer",
+        "marksman": "Marksman"
+    },
+    "lock": {
+        "needsMythic": "Braucht mythisches Gear",
+        "needsBoth": "Braucht Verbesserung 100 und Meisterschmieden Stufe 10",
+        "needsEnhancement": "Braucht Verbesserung 100",
+        "needsForging": "Braucht Meisterschmieden Stufe 10"
+    },
+    "tab": {
+        "deletedTitle": "{name} gelöscht",
+        "deletedMessage": "Die vier Teile und ihre Ziele sind entfernt.",
+        "undo": "Rückgängig",
+        "tiles": {
+            "sets": "Gear-Sets",
+            "power": "Gear-Macht, alle Sets",
+            "ofPieces": "{count} von {total}",
+            "atEnhancementMax": "Teile auf Verbesserung 100",
+            "empowered": "Gestärkte Teile",
+            "ready": "Teile bereit zur Stärkung"
+        },
+        "search": "Gear-Sets suchen",
+        "filters": "Filter",
+        "plan": "Plan",
+        "showing": "{shown} von {total} Gear-Sets angezeigt. Ziele sind hier nur lesbar und werden im Plan gesetzt.",
+        "empty": {
+            "title": "Noch keine Gear-Sets",
+            "description": "Ein Gear-Set enthält je ein Teil Goggles, Gloves, Belt und Boots. Füge ein Set hinzu, um seine Stufen zu verfolgen."
+        },
+        "addSet": "Gear-Set hinzufügen",
+        "unknownHero": "Unbekannter Held",
+        "power": "{amount} Macht",
+        "enhancementLine": "Verb. {line}",
+        "troopHint": "Der Truppentyp wählt die Wertespalte unten.",
+        "editSet": "Set bearbeiten",
+        "deleteSet": "Set löschen"
+    },
+    "pieceCard": {
+        "name": "{set} {slot}",
+        "forgingRow": "{name} (+{percent}%)",
+        "none": "Keine",
+        "noGoal": "Kein Ziel",
+        "goal": "Ziel: {value}",
+        "quality": "Gear-Qualität",
+        "qualities": {
+            "mythic": "Mythisch",
+            "epic": "Episch",
+            "rare": "Selten",
+            "uncommon": "Ungewöhnlich",
+            "common": "Gewöhnlich"
+        },
+        "forgingRowLabel": "Zeile Meisterschmieden",
+        "forgingStops": "Meisterschmieden stoppt bei Stufe 10, bis die Verbesserung 100 ist.",
+        "lowQualityNote": "Nur mythisches Gear kann geschmiedet und gestärkt werden. Die Macht folgt den mythischen Tabellen mit der Basismacht dieser Qualität, was das Spiel nicht bestätigt hat.",
+        "enhancement": "Verbesserung",
+        "enhancementLabel": "Verbesserung {name}",
+        "enhancementSlider": "Regler Verbesserung {name}",
+        "empowerment": "Stärkung",
+        "empowermentLabel": "Stärkung {name}",
+        "empowermentSlider": "Regler Stärkung {name}",
+        "outOf": "/ {max}",
+        "milestone": "Stärkung {level} erreicht: {stat}",
+        "piecePower": "Teilmacht",
+        "health": "Gesundheit",
+        "percent": "{value}%"
+    },
+    "statLines": {
+        "title": "Wertezeilen, 4 Slots mal 3 Truppentypen",
+        "troopThisSet": "{troop} (dieses Set)",
+        "stat": "{name} {value}",
+        "health": "LP {value}",
+        "percentStat": "{name} {value}%",
+        "none": "Keine",
+        "note": "Werte auf den Teilstufen von {name}, inklusive Meisterschmieden, abgerundet. Die Werte stammen von WoS Tools, das bei 192 der 200 Stufen aufhört. Die markierte Spalte ist der Truppentyp des Sets."
+    },
+    "filters": {
+        "title": "Filter",
+        "description": "Wähle, welche Gear-Sets die Liste zeigt",
+        "reset": "Zurücksetzen",
+        "show": "{amount} {count, plural, one {Set} other {Sets}} zeigen",
+        "all": "Alle",
+        "troopType": "Truppentyp",
+        "linkedHero": "Verknüpfter Held",
+        "heroOptions": {
+            "all": "Alle",
+            "linked": "Mit Held verknüpft",
+            "unlinked": "Nicht verknüpft"
+        },
+        "order": "Reihenfolge",
+        "orderOptions": {
+            "power": "Gesamtmacht, höchste zuerst",
+            "created": "Reihenfolge des Hinzufügens",
+            "name": "Name, A bis Z",
+            "hero": "Heldenname, A bis Z"
+        },
+        "notSaved": "Filter werden nicht gespeichert."
+    },
+    "setDialogs": {
+        "cancel": "Abbrechen",
+        "setName": "Set-Name",
+        "nameRequired": "Gib einen Namen ein.",
+        "linkedHero": "Verknüpfter Held",
+        "add": {
+            "title": "Gear-Set hinzufügen",
+            "linkedHeroHint": "Die Wahl eines Helden setzt den Truppentyp auf seine Klasse.",
+            "troopType": "Truppentyp",
+            "troopTypeHint": "Der Truppentyp wählt die Wertespalte des Sets.",
+            "quality": "Gear-Qualität",
+            "qualityHint": "Nur mythisches Gear kann geschmiedet und gestärkt werden.",
+            "qualityHintCopy": "Ein kopiertes Set behält die Qualität jedes Teils.",
+            "qualities": {
+                "mythic": "Mythisch",
+                "epic": "Episch",
+                "rare": "Selten",
+                "uncommon": "Ungewöhnlich",
+                "common": "Gewöhnlich"
+            },
+            "startFrom": "Start mit",
+            "startFromHint": "Ziele werden nicht kopiert. Ziele werden im Plan gesetzt.",
+            "emptySet": "Leeres Set",
+            "copyFrom": "Stufen von {name} kopieren",
+            "savesAtOnce": "Jede Änderung wird sofort gespeichert und das neue Set erscheint ausgewählt.",
+            "submit": "Gear-Set hinzufügen"
+        },
+        "delete": {
+            "title": "{name} löschen?",
+            "titleFallback": "Set löschen",
+            "confirm": "Set löschen",
+            "body": "Die vier Teile von {name} und ihre Ziele werden von diesem Gerät entfernt.",
+            "undoNote": "Du kannst 10 Sekunden nach dem Löschen rückgängig machen.",
+            "exportBackup": "Zuerst Backup exportieren"
+        },
+        "edit": {
+            "title": "{name} bearbeiten",
+            "titleFallback": "Set bearbeiten",
+            "submit": "Set speichern"
+        },
+        "heroSelect": {
+            "none": "Kein Held",
+            "option": "{name} ({class}, Gen {generation})"
+        }
+    },
+    "plan": {
+        "title": "Heldengear planen",
+        "description": "Meisterschmieden, Verbesserung und Stärkung beliebiger Teile aus jedem Set",
+        "saved": "Plan gespeichert {time}",
+        "close": "Schließen",
+        "save": "Plan speichern",
+        "empty": "Noch keine Teile im Plan. Füge oben ein Teil hinzu und erhöhe dann seine Ziele.",
+        "pieceTitle": "{set} · {slot}",
+        "milestone": "Stärkung {level}, {event}, {stat}",
+        "addPiece": {
+            "title": "Teil hinzufügen",
+            "noSets": "Füge zuerst im Tab Heldengear ein Gear-Set hinzu.",
+            "set": "Gear-Set",
+            "setOption": "{name} ({troop})",
+            "piece": "Teil",
+            "submit": "Teil hinzufügen",
+            "taken": "Dieses Teil ist schon im Plan."
+        },
+        "qualities": {
+            "mythic": "mythisch",
+            "epic": "episch",
+            "rare": "selten",
+            "uncommon": "ungewöhnlich",
+            "common": "gewöhnlich"
+        },
+        "remove": "{title} aus dem Plan entfernen",
+        "forgingRow": "{name} (+{percent}%)",
+        "none": "Keine",
+        "forgingCurrent": "Aktuelle Schmiedezeile",
+        "forgingGoal": "Ziel-Schmiedezeile",
+        "forgingGoalLabel": "Schmiedeziel {title}",
+        "forgingStops": "Meisterschmieden stoppt bei Stufe 10, bis das Verbesserungsziel 100 ist.",
+        "enhancement": "Verbesserung",
+        "enhancementGoal": "Verbesserungsziel {title}",
+        "empowerment": "Stärkung",
+        "empowermentGoal": "Stärkungsziel {title}",
+        "from": "{value} bis",
+        "result": {
+            "title": "Ergebnis für {amount} {count, plural, one {Teil} other {Teile}}",
+            "power": "Macht",
+            "powerLines": {
+                "gained": "Gewonnene Macht",
+                "before": "Macht dieser Teile vorher",
+                "after": "Macht dieser Teile nachher"
+            },
+            "columns": {
+                "piece": "Teil",
+                "forgingStatsUp": "Schmiedewerte hoch",
+                "powerGained": "Gewonnene Macht"
+            },
+            "forgingStatsUp": "+{percent}% ({steps} Schritte)",
+            "milestones": "Freigeschaltete Meilensteine",
+            "milestoneLine": "{label}: {stat}",
+            "events": {
+                "svs": "SvS",
+                "allianceShowdown": "Alliance Showdown",
+                "kingOfIcefield": "King of Icefield"
+            },
+            "note": "Der Heldengear-Plan hat keine Tempo- oder Bonusregler. Der Rechner liefert keine Zeit.",
+            "tableLabel": "Ergebnistabelle des Plans"
+        }
+    },
+    "export": {
+        "button": "In Kern-Events exportieren",
+        "nothing": "Der Plan braucht keine Essence Stones oder Mithril zum Exportieren.",
+        "essenceStones": "Essence Stones",
+        "mithril": "Mithril"
+    }
+}

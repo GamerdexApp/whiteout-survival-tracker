@@ -1,0 +1,115 @@
+{
+    "title": "加成",
+    "all": "全部",
+    "list": {
+        "separator": "、",
+        "andLast": "{rest}和{last}"
+    },
+    "sourceTypes": {
+        "account": "帳號",
+        "hero": "英雄",
+        "expert": "專家",
+        "research": "研究",
+        "allianceTech": "聯盟科技",
+        "allianceFacility": "聯盟設施",
+        "alliancePrestige": "聯盟威望建築",
+        "vip": "VIP",
+        "building": "建築",
+        "skin": "外觀",
+        "tundraAlbum": "凍原圖鑑",
+        "collection": "收藏",
+        "decoration": "我的島嶼",
+        "treeOfLife": "我的島嶼",
+        "castleAppointment": "城堡職位",
+        "pet": "寵物",
+        "chiefGear": "領主裝備",
+        "chiefGearSet": "領主裝備套裝加成",
+        "chiefCharm": "領主護符",
+        "chiefOrder": "領主指令",
+        "presidentSkill": "總統技能",
+        "marchQueuePack": "March Queue 禮包"
+    },
+    "unit": {
+        "percent": "{value}%",
+        "hours": "{value} 小時",
+        "seconds": "{value} 秒",
+        "plain": "{value}"
+    },
+    "view": {
+        "subline": "{name} · 彙整其他頁面的所有加成。此頁面不儲存任何資料。",
+        "tiles": {
+            "stats": "結果中的屬性",
+            "groups": "有屬性的分組",
+            "sources": "有貢獻的來源類型"
+        },
+        "pending": {
+            "title": "尚未計入所有來源。",
+            "text": "下方每個來源都從儲存它的頁面讀取。這些頁面完成之前不會有任何數值：{pending}。{unstored}目前還沒有任何頁面儲存。"
+        },
+        "rulesTitle": "數字的計算方式",
+        "rules": {
+            "affinity": {
+                "title": "專家親密度",
+                "text": "專家提供基礎加成，隨親密度等級提高。在 10、20 直到 100 級時，專家必須進階。進階之前，以前一級的加成計算。"
+            },
+            "albums": {
+                "title": "圖鑑完成才計入",
+                "text": "凍原圖鑑要完成全部 9 張拼圖才會提供增益。"
+            },
+            "pets": {
+                "title": "寵物使用精煉後的數值",
+                "text": "每隻寵物依你在寵物頁面的設定，計入一般數值或精煉後的數值。"
+            },
+            "noNumber": {
+                "title": "沒有數字就不計入",
+                "text": "資料中沒有數字的來源不會增加任何數值，也不會顯示為 0。"
+            },
+            "apart": {
+                "title": "分開計算",
+                "text": "百分比和固定數值絕不會相加。步兵、騎兵和弓兵的屬性與部隊屬性是分開的。"
+            },
+            "time": {
+                "title": "時間屬性",
+                "text": "Construction Speed Boost 是每次建造節省的小時數。Ally Help Time 以秒計。每項都會顯示單位。"
+            }
+        },
+        "search": {
+            "label": "搜尋屬性",
+            "placeholder": "搜尋屬性"
+        },
+        "views": {
+            "label": "檢視",
+            "stat": "依屬性",
+            "source": "依來源"
+        },
+        "empty": {
+            "noBonusesTitle": "尚無加成",
+            "noBonusesDescription": "填寫儲存加成的頁面後，加成就會出現。",
+            "noMatchTitle": "沒有符合的屬性",
+            "noMatchDescription": "請更改搜尋或分組。"
+        },
+        "statCount": "{count, plural, other {{amount} 項屬性}}",
+        "sourceCount": "{count, plural, other {{amount} 個來源}}",
+        "columns": {
+            "statAndSource": "屬性與來源",
+            "sourceType": "來源類型",
+            "counted": "已計入"
+        }
+    },
+    "eventRules": {
+        "title": "活動增益規則",
+        "intro": "這裡說明活動期間哪些加成類型仍然有效。這些是規則而非數字，所以不會加進上方的合計。",
+        "event": "活動",
+        "columns": {
+            "cityBonusWarsBuffs": "城市加成",
+            "deploymentCapacity": "出兵",
+            "territoryBonuses": "領地",
+            "marchAccelerator": "行軍加速"
+        },
+        "applicability": {
+            "yes": "是",
+            "no": "否",
+            "partial": "部分"
+        }
+    }
+}

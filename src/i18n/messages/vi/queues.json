@@ -1,0 +1,95 @@
+{
+    "hoursMinutes": {
+        "hours": "Giờ",
+        "minutes": "Phút"
+    },
+    "jobCard": {
+        "idle": "Rảnh",
+        "progress": "Tiến độ {title}",
+        "ends": "Kết thúc {date}",
+        "manage": "Quản lý",
+        "finish": "Hoàn tất"
+    },
+    "timeLeftPill": {
+        "manage": "{label}, {timeLeft}. Quản lý nâng cấp"
+    },
+    "manage": {
+        "fallbackTitle": "Quản lý nâng cấp",
+        "description": "Quản lý lượt nâng cấp đang chạy",
+        "close": "Đóng",
+        "finish": "Hoàn tất nâng cấp",
+        "progress": "Tiến độ nâng cấp",
+        "started": "Bắt đầu {date}",
+        "ends": "Kết thúc {date}",
+        "speedup": {
+            "title": "Đã dùng tăng tốc",
+            "minutesUsed": "Số phút đã dùng",
+            "apply": "Áp dụng",
+            "timeLeftAfter": "Thời gian còn lại sau khi áp dụng",
+            "hint": "Mọi loại tăng tốc đều trừ số phút của chúng khỏi thời gian còn lại."
+        },
+        "setTime": {
+            "title": "Đặt thời gian còn lại",
+            "button": "Đặt thời gian còn lại",
+            "hint": "Dùng khi game hiển thị thời gian khác."
+        },
+        "done": {
+            "title": "Khi đã xong",
+            "cancel": "Hủy lượt nâng cấp này"
+        }
+    },
+    "planStock": {
+        "title": "Bạn có đủ không?",
+        "shortCount": "Thiếu {short} trên {total}",
+        "description": "Những gì kế hoạch lấy từ kho của bạn, so với những gì bạn đang có. Kế hoạch đầy đủ nằm ở kết quả bên dưới.",
+        "enough": "Đủ",
+        "notEnough": "Không đủ",
+        "covered": "Đủ {name}",
+        "available": "Có {amount}",
+        "needed": "Cần {amount}",
+        "leftOver": "Còn dư {amount}",
+        "shortBy": "Thiếu {amount}",
+        "stillNeeded": "Vẫn cần cho kế hoạch đầy đủ: {list}.",
+        "openResources": "Mở Tài nguyên"
+    },
+    "start": {
+        "title": "Bắt đầu nâng cấp",
+        "cancel": "Hủy",
+        "nothingToStart": "Hiện không có gì để bắt đầu. Mọi mục đều ở cấp cao nhất, đã khóa hoặc đang nâng cấp.",
+        "powerGained": "Sức mạnh nhận được",
+        "packageTime": "Thời gian trong gói dữ liệu",
+        "unknown": "Không rõ",
+        "readOnly": "Chỉ xem",
+        "openBonuses": "Mở Cộng thêm",
+        "yourTime": "Thời gian của bạn",
+        "timeHint": "Chỉ tính tốc độ từ trang Cộng thêm của bạn. Nếu game hiển thị thời gian khác, hãy đổi ở mục Khi bắt đầu.",
+        "allBusy": "Mọi thứ ở đây đang bận. Bắt đầu nâng cấp bị tắt cho đến khi có chỗ rảnh.",
+        "whenStarted": "Khi bắt đầu",
+        "timeLeftHours": "Thời gian còn lại, giờ",
+        "ends": "Kết thúc",
+        "startedHint": "Chọn Đã bắt đầu để nhập thời gian game hiển thị. Thời điểm kết thúc được tính từ đó.",
+        "takeCost": {
+            "title": "Trừ chi phí từ Tài nguyên",
+            "hint": "Trừ chi phí ở trên khỏi kho của bạn.",
+            "enough": "Bạn có đủ mọi tài nguyên.",
+            "short": "Bạn thiếu {names}. Bạn vẫn có thể bắt đầu, và kho dừng ở 0."
+        },
+        "modes": {
+            "now": "Bắt đầu bây giờ",
+            "already": "Đã bắt đầu"
+        }
+    },
+    "researchQueues": {
+        "label": "{name}, {tabs}",
+        "main": {
+            "name": "Hàng chờ nghiên cứu",
+            "tabs": "Growth, Economy và Battle",
+            "shortName": "Nghiên cứu"
+        },
+        "warAcademy": {
+            "name": "Hàng chờ War Academy",
+            "tabs": "T11 và T12",
+            "shortName": "War Academy"
+        }
+    }
+}

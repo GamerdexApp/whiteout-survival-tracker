@@ -1,0 +1,63 @@
+{
+  "page": {
+    "title": "VIP"
+  },
+  "view": {
+    "sublineKnown": "{chief} · {details} · VIP {level} com {xp} de XP",
+    "sublineUnknown": "{chief} · {details} · VIP não definido"
+  },
+  "input": {
+    "title": "Seu VIP",
+    "enterAs": "Informar o VIP como",
+    "modeXp": "XP total",
+    "modeLevel": "Nível de VIP",
+    "xpLabel": "XP total de VIP",
+    "xpHint": "XP inteiro de 0 a {max}.",
+    "levelLabel": "Nível de VIP",
+    "notSet": "Não definido",
+    "levelHint": "Um nível define o XP total como o menor total daquele nível. Digite o XP real para ser exato.",
+    "reached": "Nível alcançado",
+    "levelName": "VIP {level}",
+    "unknown": "Desconhecido"
+  },
+  "progress": {
+    "label": "Progresso dentro do VIP {level}",
+    "toNext": "{xp} de XP para o VIP {level}",
+    "percent": "{percent}%",
+    "range": "{from} a {to} de XP total para este nível.",
+    "estimate": "Estimativa. O nível foi informado, então o XP é o menor total do VIP {level}. Digite o XP real para um valor exato.",
+    "maxLevel": "Nível máximo",
+    "maxHint": "O VIP {level} é o último nível."
+  },
+  "perks": {
+    "title": "O que o VIP {level} dá",
+    "subtitle": "Totais neste nível, não a diferença em relação ao anterior.",
+    "unknown": "Informe seu VIP para ver o que ele dá."
+  },
+  "next": {
+    "title": "O VIP {level} adiciona",
+    "subtitle": "Em comparação com o VIP {from}.",
+    "new": "novo",
+    "was": "era {value}",
+    "maxLevel": "Nível máximo. Não há outro nível para prever.",
+    "unknown": "Informe seu VIP para ver o próximo nível."
+  },
+  "table": {
+    "title": "Todos os {count} níveis, {total} de XP no total",
+    "level": "Nível",
+    "xpFromLast": "XP desde o anterior",
+    "totalXp": "XP total",
+    "bonuses": "Bônus novos ou maiores",
+    "state": "Situação",
+    "xpFromLastMobile": "XP desde o anterior {xp}",
+    "totalMobile": "Total {xp}",
+    "unknown": "Desconhecido",
+    "states": {
+      "reached": "Alcançado",
+      "current": "Atual",
+      "ahead": "À frente",
+      "unknown": "Desconhecido"
+    },
+    "levelName": "VIP {level}"
+  }
+}

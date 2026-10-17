@@ -1,0 +1,49 @@
+{
+    "title": "Server-Zeitleiste",
+    "line": "{rows, plural, one {{amount} Meilenstein} other {{amount} Meilensteine}} von Tag {first} bis Tag {last}",
+    "subline": "Was bei welchem Serveralter freigeschaltet wird. Nur Referenz, hier wird nichts gespeichert.",
+    "place": {
+        "label": "Meinen Platz zeigen für",
+        "option": "{name}, ca. Tag {days}, plus/minus {window}",
+        "optionNoDate": "{name}, kein Serverstartdatum",
+        "jump": "Zu meinem Platz springen"
+    },
+    "filters": {
+        "label": "Anzeigen",
+        "events": "Events {amount}",
+        "features": "Funktionen {amount}",
+        "pets": "Haustiere {amount}",
+        "experts": "Experten {amount}",
+        "heroes": "Helden {amount}"
+    },
+    "help": "Die Linie ist das Serveralter in Tagen. Helden stehen rechts, alles andere links. Dein Platz ergibt sich aus dem Serverstartdatum deines Häuptlings, mit einem Fenster von plus/minus {window} Tagen.",
+    "noChief": "Es gibt noch keinen Häuptling, daher wird dein Platz nicht gezeigt.",
+    "addChief": "Häuptling hinzufügen",
+    "noStartDate": "{name} hat kein Serverstartdatum. Füge eines hinzu, um deinen Platz auf der Linie zu sehen.",
+    "editChief": "Häuptling bearbeiten",
+    "columns": {
+        "left": "Events, Funktionen, Haustiere, Experten",
+        "right": "Helden"
+    },
+    "tags": {
+        "event": "Event",
+        "feature": "Funktion",
+        "pets": "Haustiere",
+        "experts": "Experten"
+    },
+    "fireCrystalLevels": "Fire-Crystal-Stufen {names}",
+    "heroGeneration": "Helden, Generation {generation}",
+    "day": "Tag {day}",
+    "status": {
+        "unlocked": "Freigeschaltet",
+        "near": "Nahe deinem Alter",
+        "future": "{count, plural, one {In {amount} Tag} other {In {amount} Tagen}}"
+    },
+    "marker": {
+        "label": "Du bist hier",
+        "title": "{name}, Serveralter ca. {days} Tage",
+        "window": "Plus/minus {window} Tage: Tag {from} bis {to}"
+    },
+    "empty": "Mit diesen Filtern gibt es nichts zu zeigen.",
+    "source": "Quelle: die Server-Zeitleiste des Datenpakets."
+}

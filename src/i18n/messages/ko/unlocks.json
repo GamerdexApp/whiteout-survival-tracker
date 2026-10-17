@@ -1,0 +1,27 @@
+{
+  "lock": {
+    "day": "서버 {day}일차에 해금돼요",
+    "dayAndDate": "서버 {day}일차({date})에 해금돼요"
+  },
+  "areas": {
+    "pets": "펫",
+    "fireCrystal": "Fire Crystal 레벨",
+    "experts": "전문가",
+    "chiefGear": "영주 장비",
+    "chiefCharms": "영주 참",
+    "warAcademy": "전쟁 아카데미와 T12 연구"
+  },
+  "dialog": {
+    "legend": "해금된 콘텐츠",
+    "hint": "잠금은 서버 시작일부터 계산한 서버 경과일을 따라요. 서버와 조금 다르면 실제 단계를 선택하세요. 잠긴 항목도 계속 보이고 저장된 데이터는 유지돼요.",
+    "auto": "자동, {current}",
+    "autoUnknown": "자동, 사용하려면 서버 시작일을 설정하세요",
+    "autoNone": "아직 해금된 것 없음",
+    "none": "해금된 것 없음",
+    "stepPets": "{day}일차, 펫 {total}종 중 {count}종",
+    "stepExperts": "{day}일차, 전문가 {total}명 중 {count}명",
+    "stepFc": "{day}일차, {last}까지, 세부 단계 제외",
+    "stepNamed": "{day}일차, {name}",
+    "pickLabel": "{area} 해금 기준"
+  }
+}

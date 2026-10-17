@@ -1,0 +1,63 @@
+{
+    "page": {
+        "title": "VIP"
+    },
+    "view": {
+        "sublineKnown": "{chief} · {details} · VIP {level}（XP {xp}）",
+        "sublineUnknown": "{chief} · {details} · VIP未設定"
+    },
+    "input": {
+        "title": "あなたのVIP",
+        "enterAs": "VIPの入力方法",
+        "modeXp": "合計XP",
+        "modeLevel": "VIPレベル",
+        "xpLabel": "VIP合計XP",
+        "xpHint": "0から{max}までの整数のXPです。",
+        "levelLabel": "VIPレベル",
+        "notSet": "未設定",
+        "levelHint": "レベルを選ぶと、合計XPはそのレベルの最小値になります。正確にするには実際のXPを入力してください。",
+        "reached": "到達レベル",
+        "levelName": "VIP {level}",
+        "unknown": "不明"
+    },
+    "progress": {
+        "label": "VIP {level}内の進行状況",
+        "toNext": "VIP {level}まであと{xp} XP",
+        "percent": "{percent}%",
+        "range": "このレベルの合計XPは{from}から{to}です。",
+        "estimate": "推定値です。レベルを入力したため、XPはVIP {level}の最小値になっています。正確な値にするには実際のXPを入力してください。",
+        "maxLevel": "最大レベル",
+        "maxHint": "VIP {level}が最後のレベルです。"
+    },
+    "perks": {
+        "title": "VIP {level}の特典",
+        "subtitle": "前のレベルからの差分ではなく、このレベルでの合計です。",
+        "unknown": "VIPを入力すると特典を確認できます。"
+    },
+    "next": {
+        "title": "VIP {level}で追加される特典",
+        "subtitle": "VIP {from}との比較です。",
+        "new": "新規",
+        "was": "以前は{value}",
+        "maxLevel": "最大レベルです。プレビューできる次のレベルはありません。",
+        "unknown": "VIPを入力すると次のレベルを確認できます。"
+    },
+    "table": {
+        "title": "全{count}レベル、合計{total} XP",
+        "level": "レベル",
+        "xpFromLast": "前回からのXP",
+        "totalXp": "合計XP",
+        "bonuses": "新規または増加したボーナス",
+        "state": "状態",
+        "xpFromLastMobile": "前回から{xp} XP",
+        "totalMobile": "合計{xp}",
+        "unknown": "不明",
+        "states": {
+            "reached": "到達済み",
+            "current": "現在",
+            "ahead": "未到達",
+            "unknown": "不明"
+        },
+        "levelName": "VIP {level}"
+    }
+}

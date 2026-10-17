@@ -1,0 +1,117 @@
+{
+    "unknown": "未知",
+    "describe": {
+        "state": "州 {number}",
+        "empty": "尚無詳細資料"
+    },
+    "coreEvents": {
+        "svs": "SvS",
+        "showdown": "Alliance Showdown",
+        "king": "King of Icefield",
+        "hall": "Hall of Chief"
+    },
+    "count": "{count, plural, other {{amount} 位領主}}",
+    "card": {
+        "active": "使用中",
+        "noNotes": "沒有備註",
+        "furnace": "Furnace",
+        "state": "州",
+        "created": "建立時間：{date}",
+        "lastModified": "最後修改：{date}",
+        "setActive": "設為使用中",
+        "edit": "編輯",
+        "delete": "刪除"
+    },
+    "dialog": {
+        "editTitle": "編輯領主",
+        "newTitle": "新增領主",
+        "newDescription": "取個名字就好，其餘選填。",
+        "cancel": "取消",
+        "save": "儲存變更",
+        "create": "建立領主",
+        "errors": {
+            "name": "請輸入這位領主的名稱。",
+            "stateNumber": "請輸入 1 到 {max} 的整數。",
+            "serverStartDate": "請輸入不晚於今天的日期。"
+        },
+        "name": "名稱",
+        "stateNumber": {
+            "label": "州編號",
+            "hint": "你的領主所在的州。請輸入整數。"
+        },
+        "serverStartDate": {
+            "label": "伺服器開服日期",
+            "info": {
+                "label": "在哪裡查看伺服器開服日期",
+                "screen": "開啟遊戲，從個人檔案進入伺服器畫面。",
+                "date": "查看伺服器的開服日期。如果只顯示開服第幾天，請從今天往回推算那麼多天。",
+                "missing": "畫面上沒有日期？可以問聯盟盟主，或查看州聊天。",
+                "tolerance": "前後誤差 21 天以內就夠了。研究解鎖以 150 天和 600 天為基準，所以三週的誤差很少會改變結果。"
+            }
+        },
+        "generation": {
+            "label": "已解鎖英雄至",
+            "hint": "較後世代的英雄會在英雄頁面和規劃中隱藏。",
+            "preLegendary": "第 0 世代（傳說之前）",
+            "numbered": "第 {generation} 世代"
+        },
+        "events": {
+            "legend": "顯示的核心活動",
+            "shownOf": "{shown} / {total}",
+            "hint": "隱藏的活動會從核心活動分頁和活動紀錄中消失。隨時可以重新開啟。"
+        },
+        "notes": "備註",
+        "packs": {
+            "legend": "禮包",
+            "constructionLabel": "Construction Pack",
+            "constructionHint": "開啟建築頁面的第二位建造者。",
+            "constructionBusy": "第二位建造者正在升級。請先完成或取消，才能關閉這個選項。",
+            "marchLabel": "March Queue Pack",
+            "marchHint": "增加一個行軍佇列。會計入加成頁面。"
+        }
+    },
+    "delete": {
+        "title": "刪除領主",
+        "cancel": "取消",
+        "confirmButton": "刪除領主",
+        "confirm": "確定要刪除「<strong>{name}</strong>」嗎？",
+        "summary": "{details} · 建立於 {date}",
+        "note": "這會從這部裝置移除該領主及其所有等級、目標和備註。10 秒的復原時間結束後就無法找回。",
+        "exportBackup": "請先匯出備份"
+    },
+    "page": {
+        "title": "領主",
+        "newChief": "新增領主",
+        "sort": {
+            "label": "排序方式",
+            "options": {
+                "lastModified": "最後修改",
+                "createdAt": "建立日期",
+                "name": "名稱"
+            }
+        },
+        "subline": {
+            "none": "尚無領主。",
+            "total": "{chiefs}。",
+            "withActive": "{chiefs}。使用中：{name}。"
+        },
+        "toasts": {
+            "backupTitle": "已下載備份",
+            "deleted": "已刪除{name}",
+            "undo": "復原"
+        },
+        "loading": "正在讀取這個瀏覽器中已儲存的資料。完成後會顯示清單。",
+        "empty": {
+            "title": "尚無領主",
+            "description": "建立領主即可追蹤建築、英雄、裝備、研究和你的升級規劃。所有資料都只存在這個瀏覽器中。",
+            "restore": "在設定中還原備份"
+        },
+        "search": {
+            "label": "依名稱搜尋",
+            "showing": "顯示 {shown} / {total}",
+            "noMatchTitle": "沒有符合「{search}」的領主",
+            "noMatchDescription": "請檢查拼寫，或清除搜尋以查看全部 {count} 位領主。",
+            "clear": "清除搜尋"
+        }
+    }
+}

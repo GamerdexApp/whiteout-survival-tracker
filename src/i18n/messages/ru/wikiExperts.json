@@ -1,0 +1,70 @@
+{
+  "line": "Экспертов: {experts}, этапов отношений: {relationships}. Только справка, здесь ничего не сохраняется.",
+  "roster": {
+    "title": "Эксперты",
+    "count": "Экспертов: {shown} из {total}",
+    "search": "Поиск",
+    "searchPlaceholder": "Поиск среди экспертов ({count}) по имени, титулу или специальности",
+    "generation": "Поколение",
+    "all": "Все",
+    "empty": "Подходящих экспертов нет.",
+    "generationValue": "Поколение {generation}",
+    "unlock": "Открытие: день сервера {days}",
+    "unlockUnknown": "Открытие:",
+    "unreleased": "Ещё не вышел"
+  },
+  "detail": {
+    "subline": "{title} · специальность {specialty} · поколение {generation}",
+    "baseBonus": "База: {bonus}",
+    "bonus": "{stat} {value}",
+    "percentValue": "{value}%",
+    "skills": "Навыки",
+    "talent": "Талант, макс. уровень {level}",
+    "affinityLevels": "Уровни близости",
+    "baseBonusLabel": "Базовый бонус",
+    "unlock": "Открывается на день сервера {days}"
+  },
+  "skills": {
+    "title": "Навыки и талант",
+    "columns": {
+      "skill": "Навык",
+      "max": "Макс.",
+      "effect": "Эффект",
+      "books": "Книг до макс.",
+      "exp": "EXP до макс."
+    },
+    "talent": "{name} (талант)",
+    "none": "Нет",
+    "selectHint": "Выберите навык, чтобы увидеть подробности."
+  },
+  "skillLevels": {
+    "title": "Таблица уровней навыка",
+    "meta": "{name}, уровни с 1 до {max}",
+    "level": "Уровень {level}",
+    "columns": {
+      "level": "Уровень",
+      "exp": "EXP",
+      "books": "Книги"
+    },
+    "none": "Нет"
+  },
+  "affinity": {
+    "title": "Уровни близости",
+    "level": "Уровень {level}",
+    "columns": {
+      "level": "Уровень",
+      "required": "Нужно близости",
+      "bonus": "Бонус характеристики",
+      "affinityPower": "Мощь близости",
+      "levelPower": "Мощь уровня",
+      "advancement": "Цена продвижения"
+    },
+    "noAdvancement": "Без продвижения",
+    "startNote": "Для уровня 1 нужная близость это стартовое значение {start}. Начиная с уровня 2 указана цена достижения этого уровня."
+  },
+  "relationships": {
+    "title": "Этапы отношений",
+    "fromLevel": "с уровня {level}"
+  },
+  "recordLine": "{title}, специальность {specialty}, поколение {generation}. Только справка, здесь ничего не сохраняется."
+}

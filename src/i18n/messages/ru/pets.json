@@ -1,0 +1,209 @@
+{
+  "page": {
+    "title": "Питомцы"
+  },
+  "view": {
+    "subline": "{chief} · {details} · открыто питомцев: {unlocked} из {total}"
+  },
+  "rarities": {
+    "Common": "Common",
+    "Uncommon": "Uncommon",
+    "Rare": "Rare",
+    "Epic": "Epic",
+    "Legendary": "Legendary"
+  },
+  "unlock": {
+    "afterFurnace": "День {days} и Furnace {level}",
+    "afterPet": "День {days} и {pet} уровня {level}"
+  },
+  "summary": {
+    "unlocked": "Открыто",
+    "unlockedValue": "{count} из {total}",
+    "unlockedNote": "Задаёте вы",
+    "power": "Общая мощь",
+    "powerNote": "Мощь уровня, продвижения и доводки открытых питомцев",
+    "powerUnknown": "Мощь уровня, продвижения и доводки открытых питомцев, неизвестно: {amount}",
+    "next": "Следующий к открытию",
+    "allUnlocked": "Все открыты",
+    "allUnlockedNote": "Все питомцы открыты",
+    "lockedNote": "Закрыто до более позднего дня сервера: {count}"
+  },
+  "totals": {
+    "attackDefense": "Атака и защита войск",
+    "attack": "Атака",
+    "defense": "Защита",
+    "lethality": "Lethality",
+    "health": "Health",
+    "gain": "+{value}%",
+    "types": {
+      "infantry": "Infantry",
+      "lancer": "Lancer",
+      "marksman": "Marksman"
+    }
+  },
+  "search": {
+    "label": "Поиск питомцев",
+    "placeholder": "Поиск среди питомцев ({amount}) по имени"
+  },
+  "status": {
+    "showing": "Показано {shown} из {total} {count, plural, one {питомца} few {питомцев} many {питомцев} other {питомца}}.",
+    "filters": " Фильтры: {list}.",
+    "filterNames": {
+      "rarity": "Редкость",
+      "status": "Статус",
+      "advanced": "Продвижение",
+      "order": "Порядок"
+    },
+    "readOnlyGoals": "Цели здесь только для чтения, их задают в плане. Цель, равная текущему значению, означает отсутствие цели.",
+    "showMore": "{count, plural, one {Показать ещё {amount} питомца} few {Показать ещё {amount} питомцев} many {Показать ещё {amount} питомцев} other {Показать ещё {amount} питомца}}"
+  },
+  "empty": {
+    "title": "Подходящих питомцев нет",
+    "description": "Измените поиск или фильтры, чтобы увидеть больше питомцев.",
+    "reset": "Сбросить фильтры"
+  },
+  "toast": {
+    "lockedTitle": "{name}: закрыт",
+    "lockedMessage": "Уровень, продвижение и доводка сохранены.",
+    "undo": "Отменить"
+  },
+  "card": {
+    "summary": "{rarity} · макс. уровень {max}",
+    "unlocked": "Открыт",
+    "unlockedLabel": "{pet}: открыт",
+    "cooldown": "Перезарядка {time}",
+    "cooldownByTier": "Перезарядка зависит от ступени",
+    "cooldownUnknown": "Перезарядка неизвестна",
+    "skillTiers": "{count, plural, one {{amount} ступень навыка} few {{amount} ступени навыка} many {{amount} ступеней навыка} other {{amount} ступени навыка}}",
+    "unlockRule": "Правило открытия",
+    "ruleMet": "Вы выполняете это правило",
+    "level": "Уровень (макс. {max})",
+    "levelLabel": "Уровень: {pet}",
+    "goal": "Цель {level}",
+    "noGoal": "Нет цели",
+    "advanced": "Продвинут",
+    "advancedHint": "Продвижение можно задать на уровнях 10, 20, 30 и так далее.",
+    "refinement": "Доводка",
+    "refinementMax": "макс. {max}% каждая",
+    "refineLabel": "{pet} {stat}",
+    "percentSign": "%",
+    "attack": "Атк +{value}%",
+    "defense": "Защ +{value}%",
+    "power": "Мощь {value}",
+    "powerUnknown": "Мощь неизвестна",
+    "powerParts": "Уровень и продвижение {base}, доводка {refining}"
+  },
+  "filters": {
+    "button": "Фильтры",
+    "title": "Фильтры",
+    "description": "Что показывать в списке питомцев",
+    "rarity": "Редкость",
+    "rarityAll": "Все {amount}",
+    "rarityOption": "{rarity} {amount}",
+    "rarities": {
+      "Common": "Common",
+      "Uncommon": "Uncommon",
+      "Rare": "Rare",
+      "Epic": "Epic",
+      "Legendary": "Legendary"
+    },
+    "status": "Статус",
+    "statusOptions": {
+      "all": "Все питомцы",
+      "unlocked": "Открытые",
+      "locked": "Закрытые"
+    },
+    "advanced": "Продвижение",
+    "advancedOptions": {
+      "any": "Любое",
+      "advanced": "Продвинутые",
+      "notAdvanced": "Не продвинутые"
+    },
+    "order": "Порядок",
+    "orderOptions": {
+      "game": "Игровой порядок",
+      "name": "По имени, А–Я",
+      "level": "По уровню, сначала высшие"
+    },
+    "notSaved": "Фильтры не сохраняются.",
+    "reset": "Сбросить",
+    "show": "{count, plural, one {Показать {amount} питомца} few {Показать {amount} питомцев} many {Показать {amount} питомцев} other {Показать {amount} питомца}}"
+  },
+  "plan": {
+    "button": "План",
+    "title": "План питомцев",
+    "description": "Еда, предметы, характеристики и очки событий для достижения целей",
+    "saved": "План сохранён {date}",
+    "notSavedYet": "План ещё не сохранён",
+    "close": "Закрыть",
+    "save": "Сохранить план",
+    "exportButton": "Экспорт в главные события",
+    "exportNothing": "В плане нет очков продвижения для экспорта.",
+    "export": {
+      "advancement": "Очки продвижения питомцев",
+      "commonMark": "Common Wild Marks",
+      "advancedMark": "Advanced Wild Marks",
+      "marksDetail": "Посчитано по ресурсам."
+    },
+    "noPets": "Добавьте открытого питомца, чтобы запланировать его уровни.",
+    "add": {
+      "title": "Добавить питомца",
+      "selectLabel": "Питомец для добавления",
+      "button": "Добавить питомца",
+      "allIn": "Все открытые питомцы уже в плане.",
+      "noneUnlocked": "Откройте питомца на странице питомцев, чтобы запланировать его."
+    },
+    "block": {
+      "rarities": {
+        "Common": "Common",
+        "Uncommon": "Uncommon",
+        "Rare": "Rare",
+        "Epic": "Epic",
+        "Legendary": "Legendary"
+      },
+      "maxLevel": "Макс. уровень {max}",
+      "remove": "Убрать",
+      "removeLabel": "Убрать {pet} из плана",
+      "current": "Текущий уровень",
+      "to": "до",
+      "goal": "Целевой уровень (макс. {max})",
+      "goalLabel": "Целевой уровень: {pet}",
+      "payAdvancement": "Оплатить продвижение на цели",
+      "paysCurrent": "Не продвинут на уровне {level}, поэтому это продвижение оплачивается."
+    },
+    "result": {
+      "title": "Итог для {count, plural, one {{amount} питомца} few {{amount} питомцев} many {{amount} питомцев} other {{amount} питомца}}",
+      "resources": "Ресурсы, все питомцы",
+      "byPet": "По питомцам",
+      "heads": {
+        "pet": "Питомец",
+        "levels": "Уровни",
+        "food": "Еда",
+        "power": "Мощь"
+      },
+      "powerGain": "+{value}",
+      "percentGain": "+{value}%",
+      "unknown": "Неизвестно",
+      "gains": "Прирост",
+      "gainNames": {
+        "levels": "Получено уровней",
+        "advancements": "Продвижения",
+        "attack": "Атака войск",
+        "defense": "Защита войск",
+        "power": "Мощь",
+        "score": "Очки продвижения"
+      },
+      "unknownPowerNote": "В пакете нет мощи продвижения для уровня из этого плана, поэтому прирост мощи неизвестен.",
+      "eventPoints": "Очки событий",
+      "events": {
+        "svs": "SvS",
+        "allianceShowdown": "Alliance Showdown",
+        "kingOfIcefield": "King of Icefield",
+        "hallOfChief": "Hall of Chief"
+      },
+      "notScored": "Очки не начисляются",
+      "eventNote": "Очки события это очки продвижения, умноженные на очки строки начисления каждого события.",
+      "scoreSourceNote": "Очки продвижения для уровней 40–100 совпадают с заметками событий. Уровни 10–30 взяты из одного источника (WoS Tools)."
+    }
+  }
+}

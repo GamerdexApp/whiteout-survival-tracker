@@ -1,0 +1,78 @@
+{
+    "page": {
+        "title": "外觀"
+    },
+    "view": {
+        "subline": "{chief} · {details} · 已擁有 {owned} / {total} 個外觀"
+    },
+    "owned": {
+        "label": "已擁有",
+        "value": "{owned} / {total}",
+        "progress": "已擁有外觀",
+        "withBonus": "{total} 個外觀中有 {withBonus} 個有加成"
+    },
+    "totals": {
+        "title": "已擁有外觀的加成",
+        "estimate": "估計值",
+        "percent": "+{amount}%",
+        "flat": "+{amount}",
+        "none": "已擁有的外觀還沒有任何加成。",
+        "note": "{count, plural, other {{amount} 個已擁有外觀的加成總和}}，依屬性分開，由應用程式計算。假設所有已擁有的外觀同時生效。Troop Attack 和 Troops Attack 會相加。"
+    },
+    "expiry": {
+        "title": "不追蹤到期時間。",
+        "text": "期限（永久、30 天、依階級）只寫在說明文字中。限時外觀會一直維持為已擁有，直到你取消勾選。"
+    },
+    "search": {
+        "label": "搜尋外觀",
+        "placeholder": "依名稱或來源搜尋外觀"
+    },
+    "filters": {
+        "button": "篩選",
+        "title": "篩選",
+        "description": "選擇外觀清單要顯示的內容",
+        "reset": "重設",
+        "showButton": "{count, plural, other {顯示 {amount} 個外觀}}",
+        "skinType": "外觀類型",
+        "typeAll": "全部 {amount}",
+        "typeOption": "{type} {amount}",
+        "owned": "擁有狀態",
+        "bonus": "加成",
+        "order": "排序",
+        "notSaved": "篩選條件不會儲存。",
+        "ownedOptions": {
+            "all": "所有外觀",
+            "owned": "已擁有",
+            "notOwned": "未擁有"
+        },
+        "bonusOptions": {
+            "any": "不限",
+            "has": "有加成",
+            "none": "沒有加成"
+        },
+        "orderOptions": {
+            "game": "遊戲順序",
+            "name": "名稱，A 到 Z",
+            "owned": "已擁有優先"
+        }
+    },
+    "status": {
+        "showing": "顯示 {shown} / {total} 個外觀。",
+        "showingFiltered": "顯示 {shown} / {total} 個外觀。篩選：{filters}。",
+        "showMore": "{count, plural, other {再顯示 {amount} 個外觀}}"
+    },
+    "empty": {
+        "title": "沒有符合的外觀",
+        "description": "請更改搜尋或篩選以查看外觀。",
+        "reset": "重設篩選"
+    },
+    "card": {
+        "bonus": "加成",
+        "source": "來源",
+        "unknown": "未知",
+        "bonusValue": "{value} {stat}",
+        "owned": "已擁有",
+        "ownedLabel": "已擁有：{name}，{type}",
+        "domainWarning": "領域加成文字在說明中，未計入。"
+    }
+}

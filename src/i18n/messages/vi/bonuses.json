@@ -1,0 +1,115 @@
+{
+    "title": "Cộng thêm",
+    "all": "Tất cả",
+    "list": {
+        "separator": ", ",
+        "andLast": "{rest} và {last}"
+    },
+    "sourceTypes": {
+        "account": "Tài khoản",
+        "hero": "Anh hùng",
+        "expert": "Chuyên gia",
+        "research": "Nghiên cứu",
+        "allianceTech": "Công nghệ liên minh",
+        "allianceFacility": "Cơ sở liên minh",
+        "alliancePrestige": "Công trình danh vọng liên minh",
+        "vip": "VIP",
+        "building": "Công trình",
+        "skin": "Skin",
+        "tundraAlbum": "Tundra Album",
+        "collection": "Bộ sưu tập",
+        "decoration": "My Island",
+        "treeOfLife": "My Island",
+        "castleAppointment": "Chức vụ Lâu đài",
+        "pet": "Thú cưng",
+        "chiefGear": "Trang bị Thủ lĩnh",
+        "chiefGearSet": "Cộng thêm bộ Trang bị Thủ lĩnh",
+        "chiefCharm": "Bùa Thủ lĩnh",
+        "chiefOrder": "Lệnh Thủ lĩnh",
+        "presidentSkill": "Kỹ năng Chủ tịch",
+        "marchQueuePack": "gói Hàng chờ hành quân"
+    },
+    "unit": {
+        "percent": "{value}%",
+        "hours": "{value} g",
+        "seconds": "{value} s",
+        "plain": "{value}"
+    },
+    "view": {
+        "subline": "{name} · mọi chỉ số cộng thêm được tổng hợp từ các trang khác. Trang này không lưu gì.",
+        "tiles": {
+            "stats": "Chỉ số trong kết quả",
+            "groups": "Nhóm có chỉ số",
+            "sources": "Loại nguồn có đóng góp"
+        },
+        "pending": {
+            "title": "Chưa tính hết mọi nguồn.",
+            "text": "Mỗi nguồn bên dưới được đọc từ trang lưu nó. Khi các trang này chưa xây xong, chúng chưa đóng góp gì: {pending}. {unstored} chưa được trang nào lưu."
+        },
+        "rulesTitle": "Cách tính các con số",
+        "rules": {
+            "affinity": {
+                "title": "Độ thân thiết chuyên gia",
+                "text": "Chuyên gia cho chỉ số cơ bản tăng theo cấp thân thiết. Ở các cấp 10, 20 đến 100, chuyên gia phải thăng cấp. Cho đến lúc đó, tính theo chỉ số của cấp trước."
+            },
+            "albums": {
+                "title": "Album tính khi hoàn thành",
+                "text": "Một Tundra Album chỉ cho hiệu ứng khi hoàn thành cả 9 ghép hình."
+            },
+            "pets": {
+                "title": "Thú cưng dùng giá trị tinh luyện",
+                "text": "Mỗi thú cưng tính giá trị thường hoặc giá trị tinh luyện, theo lựa chọn của bạn ở trang Thú cưng."
+            },
+            "noNumber": {
+                "title": "Không có số, không tính",
+                "text": "Nguồn không có số trong dữ liệu sẽ không đóng góp gì. Nó không được hiển thị là 0."
+            },
+            "apart": {
+                "title": "Tách riêng",
+                "text": "Giá trị phần trăm và giá trị cố định không bao giờ cộng chung. Chỉ số Bộ binh, Kỵ binh và Xạ thủ tách biệt với chỉ số Quân đội."
+            },
+            "time": {
+                "title": "Chỉ số thời gian",
+                "text": "Construction Speed Boost là số giờ tiết kiệm cho mỗi lần xây. Ally Help Time tính bằng giây. Mỗi chỉ số hiển thị đơn vị của nó."
+            }
+        },
+        "search": {
+            "label": "Tìm chỉ số",
+            "placeholder": "Tìm chỉ số"
+        },
+        "views": {
+            "label": "Chế độ xem",
+            "stat": "Theo chỉ số",
+            "source": "Theo nguồn"
+        },
+        "empty": {
+            "noBonusesTitle": "Chưa có chỉ số cộng thêm",
+            "noBonusesDescription": "Chỉ số cộng thêm xuất hiện khi bạn điền các trang lưu chúng.",
+            "noMatchTitle": "Không có chỉ số phù hợp",
+            "noMatchDescription": "Hãy đổi từ khóa tìm kiếm hoặc nhóm."
+        },
+        "statCount": "{count, plural, other {{amount} chỉ số}}",
+        "sourceCount": "{count, plural, other {{amount} nguồn}}",
+        "columns": {
+            "statAndSource": "Chỉ số và nguồn",
+            "sourceType": "Loại nguồn",
+            "counted": "Đã tính"
+        }
+    },
+    "eventRules": {
+        "title": "Quy tắc buff sự kiện",
+        "intro": "Cho biết loại chỉ số cộng thêm nào vẫn có hiệu lực trong sự kiện. Đây là quy tắc, không phải con số, nên không cộng vào tổng ở trên.",
+        "event": "Sự kiện",
+        "columns": {
+            "cityBonusWarsBuffs": "Thành phố",
+            "deploymentCapacity": "Triển khai",
+            "territoryBonuses": "Lãnh thổ",
+            "marchAccelerator": "Tăng tốc hành quân"
+        },
+        "applicability": {
+            "yes": "Có",
+            "no": "Không",
+            "partial": "Một phần"
+        }
+    }
+}

@@ -1,0 +1,49 @@
+{
+  "line": "{rows} linhas de amuletos, {slots} ranhuras e {rates} taxas de câmbio. Só referência, nada aqui é guardado no chefe.",
+  "slots": {
+    "heading": "Ranhuras de amuletos",
+    "meta": "{slots} ranhuras, uma por tipo de tropa",
+    "icons": "{count, plural, one {{amount} ícone de nível} other {{amount} ícones de nível}}",
+    "recordLine": "Reforça as tropas {troopType}. Um ícone por nível."
+  },
+  "table": {
+    "heading": "Tabela de amuletos",
+    "meta": "{rows} linhas, {levels} níveis",
+    "searchLabel": "Pesquisar",
+    "searchPlaceholder": "Pesquisar {rows} linhas de amuletos",
+    "levelLabel": "Nível",
+    "allLevels": "Todos os níveis",
+    "levelOption": "Nível {level}",
+    "stageLabel": "Fase",
+    "allStages": "Todas as fases",
+    "stageOption": "Fase {stage}",
+    "empty": "Nenhuma linha de amuletos corresponde aos filtros."
+  },
+  "columns": {
+    "row": "Linha",
+    "materials": "Materiais",
+    "stats": "Atributos",
+    "power": "Poder",
+    "score": "Pontuação"
+  },
+  "cells": {
+    "none": "Nenhum",
+    "percent": "{value}%"
+  },
+  "levels": {
+    "heading": "Níveis",
+    "level": "Nível",
+    "levelName": "Nível {level}",
+    "rows": "Linhas",
+    "stats": "Atributos, do primeiro ao último",
+    "power": "Poder na última linha",
+    "statsRange": "{first}% a {last}%"
+  },
+  "exchange": {
+    "heading": "Taxas de câmbio de materiais",
+    "exchange": "Câmbio",
+    "from": "De",
+    "to": "Para",
+    "weeklyLimit": "Limite semanal"
+  }
+}

@@ -1,0 +1,209 @@
+{
+    "page": {
+        "title": "Haustiere"
+    },
+    "view": {
+        "subline": "{chief} · {details} · {unlocked} von {total} Haustieren freigeschaltet"
+    },
+    "rarities": {
+        "Common": "Gewöhnlich",
+        "Uncommon": "Ungewöhnlich",
+        "Rare": "Selten",
+        "Epic": "Episch",
+        "Legendary": "Legendär"
+    },
+    "unlock": {
+        "afterFurnace": "Tag {days} und Furnace {level}",
+        "afterPet": "Tag {days} und {pet} Stufe {level}"
+    },
+    "summary": {
+        "unlocked": "Freigeschaltet",
+        "unlockedValue": "{count} von {total}",
+        "unlockedNote": "Von dir gesetzt",
+        "power": "Gesamtmacht",
+        "powerNote": "Macht aus Stufe, Aufstieg und Verfeinerung freigeschalteter Haustiere",
+        "powerUnknown": "Macht aus Stufe, Aufstieg und Verfeinerung freigeschalteter Haustiere, {amount} unbekannt",
+        "next": "Nächste Freischaltung",
+        "allUnlocked": "Alle freigeschaltet",
+        "allUnlockedNote": "Jedes Haustier ist freigeschaltet",
+        "lockedNote": "{count} gesperrt bis zu einem späteren Serverstag"
+    },
+    "totals": {
+        "attackDefense": "Truppenangriff und -verteidigung",
+        "attack": "Angriff",
+        "defense": "Verteidigung",
+        "lethality": "Letalität",
+        "health": "Gesundheit",
+        "gain": "+{value}%",
+        "types": {
+            "infantry": "Infantry",
+            "lancer": "Lancer",
+            "marksman": "Marksman"
+        }
+    },
+    "search": {
+        "label": "Haustiere suchen",
+        "placeholder": "{amount} Haustiere nach Name suchen"
+    },
+    "status": {
+        "showing": "{shown} von {total} {count, plural, one {Haustier} other {Haustieren}} angezeigt.",
+        "filters": " Filter: {list}.",
+        "filterNames": {
+            "rarity": "Seltenheit",
+            "status": "Status",
+            "advanced": "Aufgestiegen",
+            "order": "Reihenfolge"
+        },
+        "readOnlyGoals": "Ziele sind hier nur lesbar und werden im Plan gesetzt. Ein Ziel gleich dem aktuellen Wert bedeutet kein Ziel.",
+        "showMore": "{count, plural, one {{amount} weiteres Haustier zeigen} other {{amount} weitere Haustiere zeigen}}"
+    },
+    "empty": {
+        "title": "Keine passenden Haustiere",
+        "description": "Ändere die Suche oder die Filter, um mehr Haustiere zu sehen.",
+        "reset": "Filter zurücksetzen"
+    },
+    "toast": {
+        "lockedTitle": "{name} gesperrt",
+        "lockedMessage": "Stufe, Aufstieg und Verfeinerung bleiben erhalten.",
+        "undo": "Rückgängig"
+    },
+    "card": {
+        "summary": "{rarity} · max. Stufe {max}",
+        "unlocked": "Freigeschaltet",
+        "unlockedLabel": "{pet} freigeschaltet",
+        "cooldown": "{time} Abklingzeit",
+        "cooldownByTier": "Abklingzeit ändert sich je Tier",
+        "cooldownUnknown": "Abklingzeit unbekannt",
+        "skillTiers": "{count, plural, one {{amount} Fähigkeits-Tier} other {{amount} Fähigkeits-Tiers}}",
+        "unlockRule": "Freischaltregel",
+        "ruleMet": "Du erfüllst diese Regel",
+        "level": "Stufe (max. {max})",
+        "levelLabel": "Stufe {pet}",
+        "goal": "Ziel {level}",
+        "noGoal": "Kein Ziel",
+        "advanced": "Aufgestiegen",
+        "advancedHint": "Aufgestiegen kann bei Stufe 10, 20, 30 und so weiter gesetzt werden.",
+        "refinement": "Verfeinerung",
+        "refinementMax": "max. {max}% je",
+        "refineLabel": "{stat} von {pet}",
+        "percentSign": "%",
+        "attack": "Ang +{value}%",
+        "defense": "Vert +{value}%",
+        "power": "Macht {value}",
+        "powerUnknown": "Macht unbekannt",
+        "powerParts": "Stufe und Aufstieg {base}, Verfeinerung {refining}"
+    },
+    "filters": {
+        "button": "Filter",
+        "title": "Filter",
+        "description": "Wähle, was die Haustierliste zeigt",
+        "rarity": "Seltenheit",
+        "rarityAll": "Alle {amount}",
+        "rarityOption": "{rarity} {amount}",
+        "rarities": {
+            "Common": "Gewöhnlich",
+            "Uncommon": "Ungewöhnlich",
+            "Rare": "Selten",
+            "Epic": "Episch",
+            "Legendary": "Legendär"
+        },
+        "status": "Status",
+        "statusOptions": {
+            "all": "Alle Haustiere",
+            "unlocked": "Freigeschaltet",
+            "locked": "Gesperrt"
+        },
+        "advanced": "Aufgestiegen",
+        "advancedOptions": {
+            "any": "Beliebig",
+            "advanced": "Aufgestiegen",
+            "notAdvanced": "Nicht aufgestiegen"
+        },
+        "order": "Reihenfolge",
+        "orderOptions": {
+            "game": "Spielreihenfolge",
+            "name": "Name, A bis Z",
+            "level": "Stufe, höchste zuerst"
+        },
+        "notSaved": "Filter werden nicht gespeichert.",
+        "reset": "Zurücksetzen",
+        "show": "{count, plural, one {{amount} Haustier zeigen} other {{amount} Haustiere zeigen}}"
+    },
+    "plan": {
+        "button": "Plan",
+        "title": "Haustiere planen",
+        "description": "Futter, Items, Werte und Event-Punkte, um deine Ziele zu erreichen",
+        "saved": "Plan gespeichert {date}",
+        "notSavedYet": "Plan noch nicht gespeichert",
+        "close": "Schließen",
+        "save": "Plan speichern",
+        "exportButton": "In Kern-Events exportieren",
+        "exportNothing": "Der Plan hat keinen Aufstiegs-Score zum Exportieren.",
+        "export": {
+            "advancement": "Aufstiegs-Score der Haustiere",
+            "commonMark": "Common Wild Marks",
+            "advancedMark": "Advanced Wild Marks",
+            "marksDetail": "Aus Ressourcen gezählt."
+        },
+        "noPets": "Füge ein freigeschaltetes Haustier hinzu, um seine Stufen zu planen.",
+        "add": {
+            "title": "Haustier hinzufügen",
+            "selectLabel": "Haustier zum Hinzufügen",
+            "button": "Haustier hinzufügen",
+            "allIn": "Jedes freigeschaltete Haustier ist im Plan.",
+            "noneUnlocked": "Schalte auf der Haustier-Seite ein Haustier frei, um es zu planen."
+        },
+        "block": {
+            "rarities": {
+                "Common": "Gewöhnlich",
+                "Uncommon": "Ungewöhnlich",
+                "Rare": "Selten",
+                "Epic": "Episch",
+                "Legendary": "Legendär"
+            },
+            "maxLevel": "Max. Stufe {max}",
+            "remove": "Entfernen",
+            "removeLabel": "{pet} aus dem Plan entfernen",
+            "current": "Aktuelle Stufe",
+            "to": "bis",
+            "goal": "Zielstufe (max. {max})",
+            "goalLabel": "Zielstufe {pet}",
+            "payAdvancement": "Aufstieg am Ziel bezahlen",
+            "paysCurrent": "Nicht aufgestiegen auf Stufe {level}, daher wird dieser Aufstieg bezahlt."
+        },
+        "result": {
+            "title": "Ergebnis für {count, plural, one {{amount} Haustier} other {{amount} Haustiere}}",
+            "resources": "Ressourcen, alle Haustiere",
+            "byPet": "Nach Haustier",
+            "heads": {
+                "pet": "Haustier",
+                "levels": "Stufen",
+                "food": "Futter",
+                "power": "Macht"
+            },
+            "powerGain": "+{value}",
+            "percentGain": "+{value}%",
+            "unknown": "Unbekannt",
+            "gains": "Zuwächse",
+            "gainNames": {
+                "levels": "Gewonnene Stufen",
+                "advancements": "Aufstiege",
+                "attack": "Truppenangriff",
+                "defense": "Truppenverteidigung",
+                "power": "Macht",
+                "score": "Aufstiegs-Score"
+            },
+            "unknownPowerNote": "Das Paket hat für eine Stufe in diesem Plan keine Macht nach Aufstieg, daher ist der Machtgewinn unbekannt.",
+            "eventPoints": "Event-Punkte",
+            "events": {
+                "svs": "SvS",
+                "allianceShowdown": "Alliance Showdown",
+                "kingOfIcefield": "King of Icefield",
+                "hallOfChief": "Hall of Chief"
+            },
+            "notScored": "Nicht gewertet",
+            "eventNote": "Event-Punkte sind der Aufstiegs-Score mal die Punkte der Wertungszeile jedes Events.",
+            "scoreSourceNote": "Aufstiegs-Scores für Stufe 40 bis 100 passen zu den Event-Notizen. Stufe 10 bis 30 stammen aus einer Quelle (WoS Tools)."
+        }
+    }
+}

@@ -1,0 +1,95 @@
+{
+    "hoursMinutes": {
+        "hours": "Stunden",
+        "minutes": "Minuten"
+    },
+    "jobCard": {
+        "idle": "Frei",
+        "progress": "Fortschritt {title}",
+        "ends": "Endet {date}",
+        "manage": "Verwalten",
+        "finish": "Abschließen"
+    },
+    "timeLeftPill": {
+        "manage": "{label}, {timeLeft}. Upgrade verwalten"
+    },
+    "manage": {
+        "fallbackTitle": "Upgrade verwalten",
+        "description": "Das laufende Upgrade verwalten",
+        "close": "Schließen",
+        "finish": "Upgrade abschließen",
+        "progress": "Upgrade-Fortschritt",
+        "started": "Gestartet {date}",
+        "ends": "Endet {date}",
+        "speedup": {
+            "title": "Beschleuniger genutzt",
+            "minutesUsed": "Genutzte Minuten",
+            "apply": "Anwenden",
+            "timeLeftAfter": "Restzeit nach dem Anwenden",
+            "hint": "Beschleuniger jeder Art ziehen ihre Minuten von der Restzeit ab."
+        },
+        "setTime": {
+            "title": "Restzeit setzen",
+            "button": "Restzeit setzen",
+            "hint": "Nutze das, wenn das Spiel eine andere Zeit zeigt."
+        },
+        "done": {
+            "title": "Wenn es fertig ist",
+            "cancel": "Dieses Upgrade abbrechen"
+        }
+    },
+    "planStock": {
+        "title": "Hast du genug?",
+        "shortCount": "{short} von {total} fehlen",
+        "description": "Was der Plan aus deinem Bestand nimmt, geprüft gegen das, was du hast. Der ganze Plan steht im Ergebnis unten.",
+        "enough": "Genug",
+        "notEnough": "Nicht genug",
+        "covered": "{name} gedeckt",
+        "available": "Verfügbar {amount}",
+        "needed": "Nötig {amount}",
+        "leftOver": "{amount} übrig",
+        "shortBy": "Es fehlen {amount}",
+        "stillNeeded": "Noch nötig für den ganzen Plan: {list}.",
+        "openResources": "Ressourcen öffnen"
+    },
+    "start": {
+        "title": "Upgrade starten",
+        "cancel": "Abbrechen",
+        "nothingToStart": "Gerade kann nichts gestartet werden. Alles ist auf Höchststufe, gesperrt oder wird schon aufgewertet.",
+        "powerGained": "Gewonnene Macht",
+        "packageTime": "Paketzeit",
+        "unknown": "Unbekannt",
+        "readOnly": "Nur lesbar",
+        "openBonuses": "Boni öffnen",
+        "yourTime": "Deine Zeit",
+        "timeHint": "Es zählt nur das Tempo von deiner Boni-Seite. Zeigt das Spiel eine andere Zeit, ändere sie unter Gestartet.",
+        "allBusy": "Hier ist alles belegt. Upgrade starten ist aus, bis etwas frei wird.",
+        "whenStarted": "Gestartet",
+        "timeLeftHours": "Restzeit, Stunden",
+        "ends": "Endet",
+        "startedHint": "Wähle Schon gestartet, um die Zeit einzugeben, die das Spiel zeigt. Die Endzeit wird daraus berechnet.",
+        "takeCost": {
+            "title": "Kosten von Ressourcen abziehen",
+            "hint": "Zieht die Kosten oben von deinem Bestand ab.",
+            "enough": "Du hast von jeder Ressource genug.",
+            "short": "Es fehlt an {names}. Du kannst trotzdem starten, und der Bestand stoppt bei 0."
+        },
+        "modes": {
+            "now": "Startet jetzt",
+            "already": "Schon gestartet"
+        }
+    },
+    "researchQueues": {
+        "label": "{name}, {tabs}",
+        "main": {
+            "name": "Forschungs-Warteschlange",
+            "tabs": "Wachstum, Wirtschaft und Kampf",
+            "shortName": "Forschung"
+        },
+        "warAcademy": {
+            "name": "War-Academy-Warteschlange",
+            "tabs": "T11 und T12",
+            "shortName": "War Academy"
+        }
+    }
+}

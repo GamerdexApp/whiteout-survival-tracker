@@ -1,0 +1,98 @@
+{
+  "page": {
+    "title": "Tecnologia"
+  },
+  "view": {
+    "subline": "{chief} · {count} nodi di tecnologia dell'alleanza in Crescita, Territorio e Battaglia"
+  },
+  "summary": {
+    "maxed": "Al massimo",
+    "inProgress": "In corso",
+    "notStarted": "Non iniziati",
+    "locked": "Bloccati"
+  },
+  "status": {
+    "maxed": "Al massimo",
+    "inProgress": "In corso",
+    "notStarted": "Non iniziato",
+    "locked": "Bloccato"
+  },
+  "tabs": {
+    "label": "Categorie di tecnologia"
+  },
+  "categories": {
+    "Growth": "Crescita",
+    "Territory": "Territorio",
+    "Battle": "Battaglia"
+  },
+  "filters": {
+    "search": "Cerca",
+    "searchLabel": "Cerca nodi di tecnologia",
+    "searchPlaceholder": "Nome del nodo",
+    "tier": "Grado",
+    "allTiers": "Tutti i gradi",
+    "tierOption": "Grado {tier}",
+    "status": "Stato",
+    "allStatuses": "Tutti",
+    "button": "Cerca e filtri",
+    "title": "Cerca e filtri",
+    "description": "Trova i nodi di tecnologia per nome, grado e stato",
+    "reset": "Azzera filtri",
+    "done": "Mostra {count}",
+    "shown": "{shown} nodi su {total} mostrati"
+  },
+  "table": {
+    "node": "Nodo",
+    "level": "Livello",
+    "bonus": "Bonus",
+    "cost": "Costo del livello successivo",
+    "time": "Tempo",
+    "needs": "Richiede"
+  },
+  "node": {
+    "tierDescription": "Grado {tier} · {description}",
+    "levelLabel": "Livello di {name}",
+    "levelOf": "{level} / {max}",
+    "open": "Apri {name}",
+    "bonusOf": "{now} su {max}",
+    "bonusNone": "Nessuno per ora, max {max}",
+    "noBonus": "Nessun bonus",
+    "maxed": "Al massimo",
+    "noTime": "Nessun tempo",
+    "readyToUpgrade": "Pronto per il potenziamento",
+    "nothingNeeded": "Non serve nulla",
+    "needsPart": "Richiede {name} livello {level}",
+    "costLine": "{name} {amount}",
+    "lockedHint": "Bloccato finché non hai {names}",
+    "requirementPart": "{name} livello {level}"
+  },
+  "flyout": {
+    "title": "{name}",
+    "subtitle": "{category}, grado {tier}. {description}",
+    "close": "Chiudi",
+    "level": "Livello",
+    "bonusNow": "Bonus attuale",
+    "needsFor": "Richiede per il livello {level}",
+    "needsNothing": "Non serve nulla.",
+    "needsLine": "Richiede il livello {need}, hai il livello {have}",
+    "met": "Soddisfatto",
+    "notMet": "Non soddisfatto",
+    "requiredBy": "Richiesto da",
+    "requiredByNone": "Nessun altro nodo richiede questo.",
+    "requiredByLine": "{category}, grado {tier}, dal livello {from} richiede {name} livello {need}",
+    "allLevels": "Tutti i livelli",
+    "levelRow": "Livello {level}",
+    "done": "Fatto",
+    "next": "Prossimo",
+    "later": "Più avanti",
+    "remaining": "Restante fino al massimo",
+    "derived": "Derivato",
+    "remainingNone": "Non resta nulla. Questo nodo è al massimo.",
+    "remainingLine": "{cost}",
+    "remainingTime": "{time}"
+  },
+  "empty": {
+    "title": "Nessun nodo corrisponde",
+    "description": "Cambia la ricerca o i filtri per vedere altri nodi."
+  }
+}

@@ -1,0 +1,114 @@
+{
+    "page": {
+        "title": "Daybreak Island"
+    },
+    "view": {
+        "subline": "Lumber Camp、Tree of Life、デコレーション。"
+    },
+    "locked": {
+        "title": "Furnace {level}が必要",
+        "description": "Daybreak IslandはFurnace {level}で解放されます。現在のFurnaceは{current}で、{missing}。先に何が来るか分かるよう、ページは表示されたままです。解放されるまで編集はできません。",
+        "noFurnace": "Daybreak IslandはFurnace {level}で解放されます。Furnaceのレベルがまだ設定されていません。先に何が来るか分かるよう、ページは表示されたままです。解放されるまで編集はできません。",
+        "missing": "{count, plural, other {あと{amount}レベル}}",
+        "link": "建物へ移動"
+    },
+    "levelOf": "Lv{level} / {max}",
+    "camp": {
+        "title": "Lumber Camp",
+        "levelLabel": "Lumber Campのレベル",
+        "workers": "作業員",
+        "rate": "毎秒の生産量",
+        "essence": "このレベルに必要なLife Essence",
+        "needsTree": "Tree of Lifeレベル{required}が必要です。現在は{current}です。",
+        "treeTooLow": "Tree of Lifeレベル{current}では足りません。Lumber Campレベル{level}にはTree of Lifeレベル{required}が必要です。",
+        "next": "次のレベル{level}: Life Essence {essence}、Tree of Lifeレベル{tree}が必要です。",
+        "highest": "最高レベルです。"
+    },
+    "tree": {
+        "title": "Tree of Life",
+        "levelLabel": "Tree of Lifeのレベル",
+        "prosperity": "このレベルに必要な繁栄度",
+        "essence": "このレベルに必要なLife Essence",
+        "perHour": "1時間あたりのLife Essence",
+        "buff": "バフ",
+        "next": "次のレベル{level}: 繁栄度{prosperity}、Life Essence {essence}。",
+        "highest": "最高レベルです。"
+    },
+    "decorations": {
+        "title": "デコレーション",
+        "owned": "{total}件中{owned}件所有",
+        "imageNote": "パッケージに画像があるデコレーションは{total}件中{withImage}件だけです。画像があるものは実線の四角、ないものは破線の四角で示します。"
+    },
+    "search": {
+        "label": "デコレーションを検索",
+        "placeholder": "デコレーションを検索"
+    },
+    "status": {
+        "showing": "{total}件中{shown}件のデコレーションを表示",
+        "showMore": "{count, plural, other {さらに{amount}件のデコレーションを表示}}"
+    },
+    "empty": {
+        "title": "一致するデコレーションがありません",
+        "description": "検索条件またはフィルターを変更してください。",
+        "reset": "フィルターをリセット"
+    },
+    "card": {
+        "costEach": "1個あたりのコスト",
+        "cost": "{item} {amount}",
+        "limit": "上限",
+        "buffAtLevel": "レベル{level}のバフ",
+        "buffAtMax": "最大レベルのバフ",
+        "buffValue": "{stat} {value}",
+        "prosperityAtMax": "最大時の繁栄度",
+        "essenceCost": "Life Essenceのコスト",
+        "unknown": "不明",
+        "owned": "所有",
+        "notOwned": "未所有",
+        "ownedLabel": "{name}を所有",
+        "levelLabel": "{name}のレベル",
+        "countLabel": "{name}の個数",
+        "limited": "数量限定",
+        "ownedCount": "{limit}個中{count}個所有"
+    },
+    "categories": {
+        "Basic": "ベーシック",
+        "Vegetation": "植物",
+        "Common": "コモン",
+        "Uncommon": "アンコモン",
+        "Rare": "レア",
+        "Epic": "エピック",
+        "Mythic": "ミシック",
+        "Unique": "ユニーク"
+    },
+    "filters": {
+        "button": "フィルター",
+        "title": "フィルター",
+        "description": "デコレーションの一覧を絞り込みます。フィルターは保存されません。",
+        "category": "カテゴリー",
+        "categoryAll": "すべて {amount}",
+        "categoryOption": "{category} {amount}",
+        "show": "表示",
+        "ownedOnly": "所有のみ",
+        "limitedOnly": "数量限定のみ",
+        "unknownBuffOnly": "バフ不明のみ",
+        "sort": "並べ替え",
+        "order": {
+            "game": "パッケージ順",
+            "name": "名前順（A→Z）",
+            "level": "レベルの高い順"
+        },
+        "reset": "リセット",
+        "showButton": "{count, plural, other {{amount}件を表示}}",
+        "nonLimitedOnly": "数量限定以外のみ",
+        "notOwnedOnly": "未所有のみ"
+    },
+    "prosperity": {
+        "label": "あなたの繁栄度スコア",
+        "progress": "デコレーションの繁栄度スコア",
+        "possible": "すべてのデコレーションが最高レベルと上限のときの最大{max}",
+        "levelled": "レベルのあるデコレーション、到達レベルの繁栄度",
+        "limited": "上限のあるデコレーション、所有数×1個あたりの繁栄度",
+        "ofMax": "{max}中{value}",
+        "withoutValue": "所有しているデコレーションのうち{count, plural, other {{amount}件}}は、データに繁栄度の値がないため、{count, plural, other {集計されていません}}。"
+    }
+}

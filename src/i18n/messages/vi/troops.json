@@ -1,0 +1,251 @@
+{
+    "page": {
+        "title": "Quân đội"
+    },
+    "view": {
+        "title": "Quân đội",
+        "subline": "{chief} · {camps}",
+        "campLevel": "{name} Camp {level}",
+        "notBuilt": "chưa xây",
+        "intro": "Cấp trại, sức chứa và chỉ số tốc độ lấy từ các trang khác và chỉ để xem. Kế hoạch tính xem huấn luyện và thăng cấp tốn gì. Bắt đầu huấn luyện đánh dấu một lô mà một trại đang chạy.",
+        "plan": "Kế hoạch"
+    },
+    "cards": {
+        "tileSummary": "quân · sức mạnh {power}",
+        "allTroops": "Toàn bộ quân",
+        "totalPower": "Tổng sức mạnh",
+        "troops": "Quân",
+        "power": "Sức mạnh",
+        "powerNote": "Sức mạnh mỗi quân lấy từ gói dữ liệu. Bậc 10 và 11 theo cấp Fire Crystal của từng trại.",
+        "campLevel": "Trại cấp {level}",
+        "campNotBuilt": "Chưa xây trại",
+        "campAgeLocked": "Cấp trại đã lưu chưa mở trên máy chủ này. {text}",
+        "highestTier": "Bậc cao nhất",
+        "tierShort": "T{tier}",
+        "noTier": "Không có"
+    },
+    "tiers": {
+        "title": "Các bậc {name}",
+        "hideLow": "Ẩn Bậc 9 trở xuống",
+        "typeLabel": "Loại quân",
+        "hiddenNote": "Bậc 1 đến 9 đang ẩn. Furnace {furnace} là cấp 30 trở lên.",
+        "heads": {
+            "tier": "Bậc",
+            "troops": "Quân",
+            "train": "Huấn luyện",
+            "power": "Sức mạnh"
+        },
+        "requires": {
+            "list": "Cần {list}",
+            "camp": "{name} Camp {level}",
+            "building": "{name} {level}",
+            "research": "{name} cấp {level}"
+        },
+        "tier": "Bậc {tier}",
+        "locked": "Đã khóa",
+        "countLabel": "Quân {name} bậc {tier}",
+        "train": "Huấn luyện",
+        "seconds": "{value} s",
+        "each": "mỗi quân",
+        "mobilePower": "Sức mạnh"
+    },
+    "plan": {
+        "title": "Lập kế hoạch Quân đội",
+        "description": "Huấn luyện và thăng cấp cho ba loại quân",
+        "saved": "Đã lưu kế hoạch {date}",
+        "close": "Đóng",
+        "save": "Lưu kế hoạch",
+        "export": {
+            "button": "Xuất sang Sự kiện chính",
+            "emptyHint": "Thêm một lượt huấn luyện để xuất.",
+            "computed": "Do ứng dụng tính.",
+            "trainedGroup": "cho quân đã huấn luyện",
+            "speedupGroup": "cho phút tăng tốc",
+            "trainedTier": "Quân bậc {tier} đã huấn luyện",
+            "speedupMinutes": "Phút tăng tốc huấn luyện đã dùng",
+            "promoted": "Quân đã thăng cấp",
+            "promotedReason": "Thăng cấp chỉ được tính điểm qua phút tăng tốc.",
+            "power": "Sức mạnh từ huấn luyện và thăng cấp",
+            "powerReason": "Gói dữ liệu chưa có sức mạnh thật cho từng bậc."
+        },
+        "noRuns": "Chưa có lượt huấn luyện. Thêm một loại quân để bắt đầu kế hoạch.",
+        "add": {
+            "title": "Thêm quân",
+            "typeLabel": "Loại quân",
+            "modeLabel": "Huấn luyện hay Thăng cấp",
+            "button": "Thêm quân"
+        },
+        "run": {
+            "tier": "Bậc {tier}",
+            "modes": {
+                "training": "Huấn luyện",
+                "promotion": "Thăng cấp"
+            },
+            "remove": "Xóa lượt huấn luyện {name}",
+            "removeButton": "Xóa",
+            "modeLabel": "{name} huấn luyện hay thăng cấp",
+            "tierLabel": "Bậc {name}",
+            "fromLabel": "{name} thăng cấp từ bậc",
+            "toLabel": "{name} thăng cấp lên bậc",
+            "to": "đến",
+            "troops": "Quân",
+            "max": "Tối đa",
+            "maxValue": "Tối đa ({capacity})",
+            "batches": "Số lô"
+        },
+        "speed": {
+            "readOnlyNote": "Các giá trị chỉ xem được lấy từ các trang khác. Hãy đổi ở đó.",
+            "openBonuses": "Mở Cộng thêm",
+            "title": "Sức chứa và tốc độ",
+            "appointment": "Chức vụ",
+            "position": "Vị trí",
+            "rank": "Hạng",
+            "positions": {
+                "none": "Không có",
+                "ministerOfEducation": "Bộ trưởng Giáo dục",
+                "vicePresident": "Phó chủ tịch"
+            },
+            "ranks": {
+                "regular": "Thường",
+                "supreme": "Tối cao"
+            },
+            "appointmentEffect": "+{capacity} sức chứa, +{speed}% tốc độ",
+            "appointmentNote": "Chỉ một trong hai chức vụ được bật. Bộ trưởng Giáo dục cộng {moeCapacity} sức chứa và {moeSpeed} phần trăm tốc độ (Tối cao {moeCapacitySupreme} và {moeSpeedSupreme}). Phó chủ tịch cộng {vpSpeed} phần trăm tốc độ (Tối cao {vpSpeedSupreme}).",
+            "capacity": "Sức chứa",
+            "researchCapacity": "Sức chứa từ nghiên cứu",
+            "troops": "{value} quân",
+            "readOnly": "Chỉ xem",
+            "capacityBoost": "Tăng sức chứa",
+            "boostTotal": "Tổng x{multiplier}",
+            "capacityPerBatch": "Sức chứa mỗi lô",
+            "trainingSpeed": "Tốc độ huấn luyện",
+            "gameSpeed": "Tốc độ huấn luyện trong game",
+            "appointmentSpeed": "Chức vụ",
+            "mobilize": "Mobilize",
+            "advancedTraining": "Advanced Training",
+            "speedUsed": "Tốc độ huấn luyện đã dùng",
+            "percent": "{value}%",
+            "percentPlus": "+{value}%"
+        },
+        "stock": {
+            "name": "Tăng tốc huấn luyện",
+            "minutesUnit": "phút",
+            "note": "Kho của bạn: Huấn luyện {training} phút, Chung {general} phút. Tăng tốc chung được tính vào huấn luyện. Phần huấn luyện không có tăng tốc che sẽ xong theo thời gian thường, nên chỉ dùng số tăng tốc bạn có: {used} phút."
+        },
+        "result": {
+            "title": "Kết quả",
+            "resources": "Tài nguyên",
+            "changes": "Thay đổi quân theo bậc",
+            "heads": {
+                "tier": "Bậc",
+                "infantry": "Bộ",
+                "lancer": "Kỵ",
+                "marksman": "Xạ",
+                "all": "Tất cả"
+            },
+            "tier": "Bậc {tier}",
+            "total": "Tổng",
+            "time": "Thời gian, không tăng tốc",
+            "totalTime": "Tổng, mọi loại quân (thời gian tăng tốc)",
+            "longest": "Loại quân lâu nhất",
+            "minutesNeeded": "Số phút tăng tốc cần",
+            "minutesUsed": "Số phút tăng tốc đã dùng (trong kho)",
+            "minutes": "{value} phút",
+            "tier12Note": "Gói dữ liệu cho biết chi phí Bậc 12 được suy ra một phần. Chi phí thăng cấp Xạ thủ được đo trong game, còn chi phí Bộ binh và Kỵ binh được quy đổi từ đó."
+        }
+    },
+    "queue": {
+        "title": "Hàng chờ huấn luyện",
+        "note": "Mỗi trại huấn luyện một lô mỗi lần. Hoàn tất sẽ cộng quân vào số lượng của bạn.",
+        "idle": "Chưa huấn luyện gì. Hãy bắt đầu một lô để dùng trại này.",
+        "startButton": "Bắt đầu huấn luyện",
+        "jobTitle": {
+            "training": "Huấn luyện {count} {name} T{tier}",
+            "promotion": "Thăng cấp {count} {name} T{from} lên T{to}"
+        },
+        "manage": {
+            "slotLabel": "{camp}, mỗi lần một lô",
+            "finishText": "Hoàn tất nâng cấp sẽ cộng quân vào số lượng của bạn, giải phóng trại và thêm lô vào Lịch sử. Khi hết thời gian, thẻ ghi Sẵn sàng hoàn tất. Không có gì tự hoàn tất, vì bạn có thể đã dùng vật phẩm tăng tốc."
+        },
+        "flyout": {
+            "title": "Bắt đầu huấn luyện",
+            "description": "Đánh dấu một lô đang huấn luyện hoặc thăng cấp trong một trại",
+            "camp": "Trại",
+            "campHelp": "Mỗi trại một lô mỗi lần. Trại đang bận cho biết khi nào rảnh.",
+            "busy": "Bận đến {date}",
+            "notBuilt": "Chưa xây trại",
+            "action": "Hành động",
+            "training": "Huấn luyện",
+            "promotion": "Thăng cấp",
+            "tier": "Bậc",
+            "tierOption": "Bậc {tier}",
+            "fromTier": "Từ bậc",
+            "toTier": "Đến bậc",
+            "troops": "Quân trong lô",
+            "max": "Tối đa",
+            "capacityHint": "Một lô chứa tối đa {capacity} quân. Đây là sức chứa từ nghiên cứu cộng với cấp trại của bạn.",
+            "noTiers": "Trại này chưa có bậc nào để huấn luyện. Hãy nâng cấp trại ở trang Công trình.",
+            "cost": "Chi phí của lô",
+            "time": "Thời gian huấn luyện",
+            "packageTime": "Thời gian trong gói dữ liệu",
+            "speed": "Tốc độ huấn luyện",
+            "readOnly": "Chỉ xem",
+            "openBonuses": "Mở Cộng thêm",
+            "yourTime": "Thời gian của bạn",
+            "timeHint": "Tốc độ huấn luyện lấy từ trang Cộng thêm. Dùng Đã bắt đầu khi game hiển thị thời gian khác.",
+            "whenStarted": "Bắt đầu khi nào?",
+            "modes": {
+                "now": "Bắt đầu bây giờ",
+                "already": "Đã bắt đầu"
+            },
+            "timeLeftHours": "Thời gian còn lại, giờ",
+            "ends": "Kết thúc",
+            "takeCost": {
+                "title": "Trừ chi phí từ kho của tôi",
+                "hint": "Trừ tài nguyên của lô khỏi Tài nguyên. Số lượng không bao giờ xuống dưới 0.",
+                "enough": "Bạn có đủ.",
+                "short": "Thiếu {names}. Kho về 0 với các mục đó."
+            },
+            "cancel": "Hủy",
+            "start": "Bắt đầu huấn luyện",
+            "allCamps": "Mọi trại rảnh ({count})",
+            "allCampsHint": "Bắt đầu cùng một lô ở mọi trại rảnh cùng lúc. Mỗi trại giữ thời gian riêng. Các bậc hiển thị là những bậc mà mọi trại rảnh đều huấn luyện được.",
+            "campTime": "{camp}: {time}"
+        },
+        "toasts": {
+            "started": {
+                "title": "Đã bắt đầu huấn luyện",
+                "message": "{what}."
+            },
+            "finished": {
+                "title": "Đã huấn luyện xong {what}",
+                "message": "Đã cộng vào số quân của bạn và vào Lịch sử."
+            },
+            "cancelled": {
+                "title": "Đã hủy {what}",
+                "message": "Số quân của bạn giữ nguyên như trước. Hãy chỉnh lại kho trong Tài nguyên nếu cần."
+            },
+            "undo": "Hoàn tác"
+        },
+        "batchName": {
+            "training": "{count} {name} T{tier}",
+            "promotion": "{count} {name} T{from} lên T{to}"
+        }
+    },
+    "callOfWar": {
+        "title": "Call of War",
+        "note": "Kỹ năng của Romulus. Một lần nhận miễn phí mỗi ngày UTC, cho tất cả trại gộp lại. Đặt lại lúc 00:00 UTC.",
+        "available": "{troops} quân miễn phí hôm nay",
+        "claimed": "Đã nhận hôm nay. Lần nhận mới miễn phí sau {time}.",
+        "notUnlocked": "Cần chiêu mộ Romulus và Call of War từ cấp 1 trở lên ở trang Chuyên gia.",
+        "level": "Call of War cấp {level}",
+        "add": "Thêm vào {camp}",
+        "addHint": "{troops} quân vào bậc {tier}",
+        "noTier": "Chưa mở bậc nào",
+        "toast": {
+            "title": "Đã nhận Call of War",
+            "message": "Đã thêm {troops} quân vào {camp} bậc {tier}.",
+            "undo": "Hoàn tác"
+        }
+    }
+}

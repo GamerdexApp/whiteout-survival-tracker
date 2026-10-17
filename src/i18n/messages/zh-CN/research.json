@@ -1,0 +1,303 @@
+{
+  "title": "研究",
+  "unknown": "未知",
+  "nodeCount": "{count, plural, other {{amount}个节点}}",
+  "jobTitle": "{name}，{from}到{to}级",
+  "tabs": {
+    "growth": "成长",
+    "economy": "经济",
+    "battle": "战斗",
+    "war-academy-troops": "War Academy T11",
+    "t12-infantry": "盾兵 T12",
+    "t12-marksman": "弓兵 T12",
+    "t12-lancer": "矛兵 T12"
+  },
+  "tier": {
+    "plain": "{tier}阶",
+    "troopLine": "{line} T{tier}"
+  },
+  "requirement": {
+    "yours": "你的是{level}",
+    "notBuilt": "未建造",
+    "researchLevel": "{name} {level}级",
+    "yoursLevel": "你的是{level}级",
+    "notReleased": "{id}（尚未上线）"
+  },
+  "tabLock": {
+    "unknownAge": "{tab}研究在开服第{days}天开放。你的服务器天数未知。请在编辑领主中添加开服日期。",
+    "knownAge": "{tab}研究在开服第{days}天开放。你的是{yours}。"
+  },
+  "option": {
+    "label": "{name}，{tab}，{from}到{to}级",
+    "subtitle": "{from}级到{to}级，{tab}标签页",
+    "busy": "占用中：{name} {level}级，{timeLeft}"
+  },
+  "nodeCard": {
+    "allResearched": "所有等级均已研究",
+    "nextTime": "{level}级耗时：{time}",
+    "power": {
+      "researched": "已研究{power}",
+      "next": "下一级 +{power}",
+      "some": "战力{parts}",
+      "none": "战力 0"
+    },
+    "maxed": "已满级。{bonus}",
+    "noBonus": "数据中没有加成",
+    "level": "{level} / {max}级",
+    "goal": "目标{goal}",
+    "noGoal": "无目标",
+    "progress": "{name}进度",
+    "lockedByTab": "未解锁：{reason}",
+    "lockedByRequirement": "未解锁：需要{requirement}",
+    "placeholder": "占位项。数据包中的费用和加成为空。",
+    "needsFirst": "需要先有{names}",
+    "researching": "{name}研究中",
+    "levelStepper": "{name}等级",
+    "detailsOf": "{name}的详情",
+    "details": "详情"
+  },
+  "queuesStrip": {
+    "title": "研究队列",
+    "note": "成长、经济和战斗共用一个队列。T11 和 T12 使用 War Academy 队列。",
+    "idle": "每次只能研究一项。点击开始升级即可开始。"
+  },
+  "filters": {
+    "title": "筛选",
+    "description": "选择{tab}标签页显示的内容",
+    "reset": "重置",
+    "show": "显示{nodes}",
+    "tier": "阶",
+    "statusLabel": "状态",
+    "troopLine": "兵种",
+    "orderLabel": "排序",
+    "notSaved": "筛选不会保存。",
+    "all": "全部",
+    "status": {
+      "all": "全部",
+      "progress": "进行中",
+      "goal": "有目标",
+      "maxed": "已满级",
+      "locked": "未解锁",
+      "notStarted": "未开始"
+    },
+    "order": {
+      "game": "游戏顺序",
+      "name": "名称 A 到 Z",
+      "level": "等级，最高在前"
+    }
+  },
+  "massSet": {
+    "stop": "{level} / {max}",
+    "title": "批量设置，{tab}",
+    "description": "选择一个节点和等级。树中它之前的所有节点升到满级。",
+    "cancel": "取消",
+    "set": "设置{nodes}",
+    "node": "节点",
+    "level": "等级",
+    "levelToSet": "要设置的等级",
+    "whatChanges": "{tab}标签页中的更改",
+    "nothingChanges": "没有更改。这里的每个节点都已达到或超过此等级。",
+    "change": "{from}到{to}",
+    "hidden": "另有{amount}个靠前的节点",
+    "alreadyMax": "{count, plural, other {{amount}个靠前的节点}}已满级，保持不变。树中靠后的节点不受影响。已经更高的等级保持不变。",
+    "blockersTitle": "部分节点需要先有建筑。",
+    "blocker": "{name}需要{building}",
+    "blockersMore": "，另有{amount}项",
+    "blockers": "{list}{more}。请选择更靠前的节点，或在建筑页提升该建筑。",
+    "footnote": "批量设置只更改此标签页已保存的等级。它不会降低任何等级，也不会更改目标。"
+  },
+  "nodeFlyout": {
+    "fallbackTitle": "研究",
+    "description": "{category}，{tier}阶，共{levels}级",
+    "close": "关闭",
+    "unknown": "未知",
+    "levelOf": "{level} / {max}级",
+    "status": {
+      "notStarted": "未开始",
+      "maxed": "已满级",
+      "inProgress": "进行中"
+    },
+    "goal": "目标{goal}",
+    "noGoal": "无目标",
+    "openPlan": "打开计划",
+    "maxLevel": {
+      "title": "已满级",
+      "nothingLeft": "没有可研究的内容。",
+      "noBonus": "数据中没有加成。"
+    },
+    "placeholder": {
+      "title": "占位项",
+      "description": "此节点在数据包中还没有费用和加成。研究时间和费用显示为未知。"
+    },
+    "upcoming": {
+      "first": "起始等级",
+      "after": "{level}之后的等级",
+      "heads": {
+        "level": "等级",
+        "bonus": "加成",
+        "time": "时间",
+        "power": "战力"
+      },
+      "goalBadge": "目标",
+      "noBonus": "无",
+      "shaded": "阴影行是你的等级与目标之间的等级。"
+    },
+    "cost": {
+      "title": "后续等级的费用",
+      "level": "Lv"
+    },
+    "total": {
+      "title": "到目标的合计，{level}到{goal}级",
+      "knownTime": "已知研究时间",
+      "power": "战力",
+      "missingTimes": "{count, plural, other {{amount}级}}在数据包中没有时间，此处按 0 计算。"
+    },
+    "requirements": {
+      "title": "{level}级的要求",
+      "none": "无要求。",
+      "met": "已满足",
+      "notMet": "未满足",
+      "later": "之后的等级要求：{list}。"
+    }
+  },
+  "tree": {
+    "legend": {
+      "max": "满级",
+      "inProgress": "进行中",
+      "notStarted": "未开始",
+      "locked": "未解锁"
+    },
+    "pillMax": "最高{max}",
+    "pillLevel": "Lv {level} / {max}",
+    "region": "{tab}研究树",
+    "openNode": "{name}，{pill}。打开详情"
+  },
+  "plan": {
+    "title": "研究计划",
+    "description": "从当前等级到目标所需的资源、时间和战力",
+    "saved": "计划已保存{date}",
+    "close": "关闭",
+    "save": "保存计划",
+    "goals": "目标，{nodes}",
+    "noGoals": "还没有目标。请先在上方添加研究节点，再选择想达到的等级。",
+    "goalsHint": "当前等级以页面上的为准，请在那里修改。目标在页面上只读，请在这里设置。",
+    "failed": "无法计算该计划。",
+    "timeNote": "计划在{percent}% 速度加成后需要{time}。你的库存：研究{research}分，通用{general}分。通用加速也可用于研究。",
+    "percent": "{value}%",
+    "percentPlus": "+{value}%",
+    "appointment": {
+      "none": "无",
+      "regular": "普通",
+      "supreme": "至高"
+    },
+    "add": {
+      "title": "添加研究节点",
+      "none": "每个节点都已在计划中，或已达最高等级。",
+      "select": "要添加的研究节点",
+      "button": "添加研究"
+    },
+    "speed": {
+      "title": "研究速度",
+      "readOnly": "只读",
+      "carriedOver": "取自加成页面。",
+      "turnedOff": "已在设置中的应用我的加成合计下关闭。",
+      "openBonuses": "打开加成",
+      "stateBuff": "State 增益",
+      "vicePresident": "副总统",
+      "total": "研究速度合计"
+    },
+    "goal": {
+      "level": "{level}级",
+      "to": "到",
+      "label": "{name}目标",
+      "remove": "从计划中移除{name}"
+    },
+    "result": {
+      "title": "结果，{steps}步",
+      "powerGained": "获得战力",
+      "speedupMinutes": "所需加速分钟数",
+      "baseTime": "基础时间",
+      "timeWithBonus": "含{percent}% 加成的时间",
+      "stepsWithoutTime": "{count, plural, other {{amount}步}}在数据包中没有时间，按 0 秒计算。",
+      "stepCount": "{count, plural, other {{amount}步}}",
+      "buildingRequirements": "建筑要求",
+      "unmet": "未满足的前置条件",
+      "unmetNone": "这些目标没有。",
+      "unmetItem": "{name} {level}级需要{requires} {requiresLevel}级"
+    },
+    "export": {
+      "button": "导出到核心活动",
+      "empty": "请先向计划添加目标，再导出。",
+      "speedupMinutes": "研究加速分钟数",
+      "power": "研究获得的战力",
+      "computed": "由应用根据计划结果计算。",
+      "unscored": "没有活动为{name}计分。"
+    }
+  },
+  "view": {
+    "ofTotal": "{count} / {total}",
+    "undo": "撤销",
+    "massSetApplied": {
+      "title": "已应用批量设置",
+      "message": "已更新{nodes}。"
+    },
+    "started": {
+      "title": "已开始研究",
+      "message": "{name}，{from}到{to}级。"
+    },
+    "manage": {
+      "slotLabel": "{queue}，{category}",
+      "finishText": "完成升级会把{name}设为{level}级，释放{queue}队列，并把这次升级加入历史。剩余时间为零时，节点和队列卡片会显示可完成。不会自动完成，因为你可能用过加速。"
+    },
+    "finished": {
+      "title": "已研究{name}",
+      "message": "现为{level}级。已加入历史。"
+    },
+    "cancelled": {
+      "title": "已取消{name}的研究",
+      "message": "等级保持不变。如有需要，请在资源页修正库存。"
+    },
+    "subline": {
+      "researchCenter": "Research Center {level}",
+      "warAcademy": "War Academy {level}"
+    },
+    "stats": {
+      "maxed": "已满级节点，占研究树的{percent}%",
+      "power": "研究战力，即所有已研究等级的战力",
+      "withoutTimeNone": "没有研究时间的等级：每个等级都有时间",
+      "withoutTimeSome": "没有研究时间，显示为未知",
+      "locked": "被服务器天数或前置要求锁定"
+    },
+    "tabLockedNote": "{reason}你仍可在计划中设置目标。",
+    "lockedByRequirement": "此标签页有{count} / {total}个节点被前置要求锁定。",
+    "search": {
+      "label": "搜索节点",
+      "placeholder": "按名称或加成搜索节点"
+    },
+    "massSet": "批量设置",
+    "layout": {
+      "label": "布局",
+      "grid": "网格",
+      "tree": "树状"
+    },
+    "plan": "计划",
+    "status": {
+      "tree": "{tab}研究树共{count}个节点。此标签页的研究战力：{power}。滚动可平移。与搜索或筛选不匹配的节点会变暗。",
+      "grid": "显示{shown} / {count}个{tab}节点。此标签页的研究战力：{power}。目标在此处只读，请在计划中设置。"
+    },
+    "empty": {
+      "title": "没有匹配的节点",
+      "description": "修改搜索或重置筛选，即可查看全部节点。",
+      "reset": "重置搜索和筛选"
+    },
+    "start": {
+      "description": "将研究标记为升级中",
+      "selectLabel": "要升级的研究",
+      "selectHelp": "只列出现在可以开始的研究。未解锁、已满级和正在进行的研究不会列出。成长、经济或战斗研究使用研究队列。T11 或 T12 研究使用 War Academy 队列。",
+      "timeLabel": "研究时间",
+      "speedLabel": "研究速度",
+      "slotLabel": "队列",
+      "slotHelp": "每个队列每次只能研究一项。队列被占用时，此卡片会显示何时空闲。"
+    }
+  }
+}

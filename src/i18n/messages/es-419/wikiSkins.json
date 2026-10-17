@@ -1,0 +1,40 @@
+{
+  "line": "{skins} en {types}, con la bonificación, dónde conseguirlas y cuánto duran.",
+  "skinCount": "{count, plural, one {{amount} skin} other {{amount} skins}}",
+  "typeCount": "{count, plural, one {{amount} tipo} other {{amount} tipos}}",
+  "gallery": {
+    "title": "Galería de skins",
+    "showing": "Mostrando {shown} de {total}",
+    "search": "Buscar",
+    "searchPlaceholder": "Busca skins por nombre u origen",
+    "bonusStat": "Estadística de bonificación",
+    "anyStat": "Cualquier estadística",
+    "noBonus": "Sin bonificación",
+    "duration": "Duración",
+    "anyDuration": "Cualquier duración",
+    "permanent": "Permanente",
+    "timed": "Temporal",
+    "notStated": "Sin indicar",
+    "types": "Tipo de skin",
+    "allTypes": "Todos",
+    "empty": {
+      "title": "Ninguna skin coincide",
+      "description": "Cambia la búsqueda o un filtro para ver skins."
+    }
+  },
+  "columns": {
+    "skin": "Skin",
+    "type": "Tipo",
+    "bonus": "Bonificación",
+    "duration": "Duración (texto libre)",
+    "sources": "Orígenes"
+  },
+  "bonusValue": "{stat} {value}",
+  "detail": {
+    "type": "Tipo",
+    "bonus": "Bonificación",
+    "duration": "Duración",
+    "sources": "Orígenes",
+    "description": "Descripción"
+  }
+}

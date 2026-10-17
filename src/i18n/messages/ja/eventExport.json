@@ -1,0 +1,32 @@
+{
+    "title": "コアイベントへエクスポート",
+    "description": "イベントを選び、次に日を選びます",
+    "events": {
+        "svs": "SvS",
+        "showdown": "Alliance Showdown",
+        "king": "King of Icefield",
+        "hall": "Hall of Chief"
+    },
+    "stepEvent": "1. イベント",
+    "stepDay": "{number}. イベント日 {group}",
+    "stepDayPlain": "イベント日",
+    "stepItems": "{number}. このプランのアイテム",
+    "noDay": "{event}には、これらのアイテムのポイント行がありません。",
+    "daysHint": "アイテムがポイント行に含まれる日だけを表示しています。Hall of Chiefは日ではなくステージを表示します。アイテムのグループごとに別の日を選べます。",
+    "lineEach": "{day}は1個あたり{points}。",
+    "lineNotScored": "{event}には、これのポイント行がありません。",
+    "notScored": "ポイント対象外",
+    "points": "{points}ポイント",
+    "addedTo": "{event}に追加しました",
+    "nothingScores": "このプランには、選んだ日に{event}でポイントになるものがありません。",
+    "summaryTitle": "エクスポートの概要",
+    "summaryHint": "すべてのアイテムをポイント対象の日に使った場合に、同じアイテムが各イベントで獲得するポイントです。選択したイベントと日だけに反映されます。コアイベントページでは、変更できる回数として表示されます。",
+    "selected": "選択中",
+    "cancel": "キャンセル",
+    "export": "{event}へエクスポート",
+    "toast": {
+        "title": "コアイベントへエクスポートしました",
+        "message": "{event}に{points}ポイントを追加しました。",
+        "undo": "元に戻す"
+    }
+}

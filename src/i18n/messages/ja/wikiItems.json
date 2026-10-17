@@ -1,0 +1,79 @@
+{
+    "line": "{categories}カテゴリー、アイテム{items}件。入手元と、宝箱{chests}件のドロップ率つき。",
+    "catalog": {
+        "title": "アイテム一覧",
+        "showing": "{total}件中{shown}件を表示",
+        "search": "検索",
+        "searchPlaceholder": "名前または説明でアイテムを検索",
+        "table": "アイテム",
+        "item": "アイテム",
+        "category": "カテゴリー",
+        "sources": "入手元",
+        "lootRates": "ドロップ率",
+        "description": "説明",
+        "emptyTitle": "一致するアイテムがありません",
+        "emptyDescription": "検索条件またはフィルターを変更してください。"
+    },
+    "filters": {
+        "title": "フィルター",
+        "button": "フィルター",
+        "summary": "フィルター: {category}。入手元: {sources}",
+        "edit": "編集",
+        "category": "カテゴリー",
+        "all": "すべて",
+        "sources": "入手元",
+        "lootRates": "ドロップ率",
+        "reset": "リセット",
+        "show": "{count, plural, other {{amount}件を表示}}"
+    },
+    "sourcesFilter": {
+        "any": "すべての入手元",
+        "has": "入手元あり",
+        "none": "入手元なし"
+    },
+    "sourcesChip": {
+        "any": "指定なし",
+        "has": "入手元あり",
+        "none": "入手元なし（{amount}）"
+    },
+    "lootFilter": {
+        "any": "指定なし",
+        "has": "ドロップ率あり"
+    },
+    "lootChip": {
+        "any": "指定なし",
+        "has": "ドロップ率あり（宝箱{amount}件）"
+    },
+    "loot": {
+        "yes": "はい",
+        "no": "いいえ",
+        "notChest": "宝箱ではありません"
+    },
+    "detail": {
+        "title": "詳細",
+        "category": "カテゴリー",
+        "sources": "入手元",
+        "speedup": "スピードアップ",
+        "speedupValue": "{type}、{minutes}分",
+        "description": "説明",
+        "lootRates": "ドロップ率",
+        "lootRowsListed": "{count, plural, other {{amount}行を掲載}}",
+        "noLootRates": "この宝箱のドロップ率はデータにありません",
+        "lootTitle": "ドロップ率",
+        "lootMeta": "{count, plural, other {報酬{amount}件}}",
+        "lootTable": "宝箱のドロップ率",
+        "reward": "報酬",
+        "amount": "数量",
+        "chance": "確率",
+        "chanceValue": "{percent}%",
+        "name": "名前"
+    },
+    "speedupType": {
+        "general": "汎用",
+        "construction": "建設",
+        "troop": "部隊",
+        "research": "研究",
+        "learning": "学習",
+        "healing": "治療"
+    }
+}

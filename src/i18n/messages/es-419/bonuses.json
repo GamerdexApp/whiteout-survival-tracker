@@ -1,0 +1,115 @@
+{
+  "title": "Bonificaciones",
+  "all": "Todas",
+  "list": {
+    "separator": ", ",
+    "andLast": "{rest} y {last}"
+  },
+  "sourceTypes": {
+    "account": "Cuenta",
+    "hero": "Héroes",
+    "expert": "Expertos",
+    "research": "Investigación",
+    "allianceTech": "Tecnología de alianza",
+    "allianceFacility": "Instalaciones de alianza",
+    "alliancePrestige": "Edificios de prestigio de la alianza",
+    "vip": "VIP",
+    "building": "Edificios",
+    "skin": "Skins",
+    "tundraAlbum": "Tundra Album",
+    "collection": "Colección",
+    "decoration": "Mi isla",
+    "treeOfLife": "Mi isla",
+    "castleAppointment": "Cargo del castillo",
+    "pet": "Mascotas",
+    "chiefGear": "Equipo del Jefe",
+    "chiefGearSet": "Bonificación de conjunto del Equipo del Jefe",
+    "chiefCharm": "Amuletos del Jefe",
+    "chiefOrder": "Órdenes del Jefe",
+    "presidentSkill": "Habilidades del presidente",
+    "marchQueuePack": "el paquete de cola de marcha"
+  },
+  "unit": {
+    "percent": "{value}%",
+    "hours": "{value} h",
+    "seconds": "{value} s",
+    "plain": "{value}"
+  },
+  "view": {
+    "subline": "{name} · todas las bonificaciones sumadas de las otras páginas. Esta página no guarda nada.",
+    "tiles": {
+      "stats": "Estadísticas en el resultado",
+      "groups": "Grupos con estadísticas",
+      "sources": "Tipos de origen que aportan algo"
+    },
+    "pending": {
+      "title": "Aún no se cuentan todos los orígenes.",
+      "text": "Cada origen de abajo se lee de la página que lo guarda. Mientras esas páginas no estén listas no suman nada: {pending}. {unstored} aún no los guarda ninguna página."
+    },
+    "rulesTitle": "Cómo se cuentan los números",
+    "rules": {
+      "affinity": {
+        "title": "Afinidad de expertos",
+        "text": "Un experto da una bonificación base que crece con el nivel de afinidad. En los niveles 10, 20 hasta 100 el experto debe avanzar. Hasta entonces cuenta la bonificación del nivel anterior."
+      },
+      "albums": {
+        "title": "Los álbumes cuentan al completarse",
+        "text": "Un Tundra Album da su bonificación solo cuando los 9 rompecabezas están hechos."
+      },
+      "pets": {
+        "title": "Las mascotas usan el valor refinado",
+        "text": "Cada mascota cuenta su valor normal o su valor refinado, según lo definas en la página de Mascotas."
+      },
+      "noNumber": {
+        "title": "Sin número, no se cuenta",
+        "text": "Un origen sin número en los datos no suma nada. No se muestra como 0."
+      },
+      "apart": {
+        "title": "Se mantienen separados",
+        "text": "Los valores porcentuales y fijos nunca se suman entre sí. Las estadísticas de Infantería, Lancero y Tirador son independientes de las de Tropas."
+      },
+      "time": {
+        "title": "Estadísticas de tiempo",
+        "text": "Construction Speed Boost son las horas ahorradas en cada construcción. Ally Help Time está en segundos. Cada una muestra su unidad."
+      }
+    },
+    "search": {
+      "label": "Buscar estadísticas",
+      "placeholder": "Buscar estadísticas"
+    },
+    "views": {
+      "label": "Vista",
+      "stat": "Por estadística",
+      "source": "Por origen"
+    },
+    "empty": {
+      "noBonusesTitle": "Aún no hay bonificaciones",
+      "noBonusesDescription": "Las bonificaciones aparecen a medida que se llenan las páginas que las guardan.",
+      "noMatchTitle": "Ninguna estadística coincide",
+      "noMatchDescription": "Cambia la búsqueda o el grupo."
+    },
+    "statCount": "{count, plural, one {{amount} estadística} other {{amount} estadísticas}}",
+    "sourceCount": "{count, plural, one {{amount} origen} other {{amount} orígenes}}",
+    "columns": {
+      "statAndSource": "Estadística y origen",
+      "sourceType": "Tipo de origen",
+      "counted": "Contado"
+    }
+  },
+  "eventRules": {
+    "title": "Reglas de bonificaciones en eventos",
+    "intro": "Indica qué tipos de bonificación siguen aplicando durante un evento. Son reglas, no números, así que nada de aquí se suma a los totales de arriba.",
+    "event": "Evento",
+    "columns": {
+      "cityBonusWarsBuffs": "Bonif. ciudad",
+      "deploymentCapacity": "Despliegue",
+      "territoryBonuses": "Territorio",
+      "marchAccelerator": "Acel. marcha"
+    },
+    "applicability": {
+      "yes": "Sí",
+      "no": "No",
+      "partial": "Parcial"
+    }
+  }
+}

@@ -1,0 +1,98 @@
+{
+    "page": {
+        "title": "Công nghệ"
+    },
+    "view": {
+        "subline": "{chief} · {count} nút công nghệ liên minh trong Growth, Territory và Battle"
+    },
+    "summary": {
+        "maxed": "Đã tối đa",
+        "inProgress": "Đang làm",
+        "notStarted": "Chưa bắt đầu",
+        "locked": "Đã khóa"
+    },
+    "status": {
+        "maxed": "Đã tối đa",
+        "inProgress": "Đang làm",
+        "notStarted": "Chưa bắt đầu",
+        "locked": "Đã khóa"
+    },
+    "tabs": {
+        "label": "Danh mục công nghệ"
+    },
+    "categories": {
+        "Growth": "Growth",
+        "Territory": "Territory",
+        "Battle": "Battle"
+    },
+    "filters": {
+        "search": "Tìm kiếm",
+        "searchLabel": "Tìm nút công nghệ",
+        "searchPlaceholder": "Tên nút",
+        "tier": "Bậc",
+        "allTiers": "Mọi bậc",
+        "tierOption": "Bậc {tier}",
+        "status": "Trạng thái",
+        "allStatuses": "Tất cả",
+        "button": "Tìm kiếm và lọc",
+        "title": "Tìm kiếm và lọc",
+        "description": "Tìm nút công nghệ theo tên, bậc và trạng thái",
+        "reset": "Đặt lại bộ lọc",
+        "done": "Hiện {count}",
+        "shown": "Hiển thị {shown} trên {total} nút"
+    },
+    "table": {
+        "node": "Nút",
+        "level": "Cấp",
+        "bonus": "Cộng thêm",
+        "cost": "Chi phí cấp kế tiếp",
+        "time": "Thời gian",
+        "needs": "Yêu cầu"
+    },
+    "node": {
+        "tierDescription": "Bậc {tier} · {description}",
+        "levelLabel": "Cấp {name}",
+        "levelOf": "{level} / {max}",
+        "open": "Mở {name}",
+        "bonusOf": "{now} trên {max}",
+        "bonusNone": "Chưa có, tối đa {max}",
+        "noBonus": "Không cộng thêm",
+        "maxed": "Đã tối đa",
+        "noTime": "Không có thời gian",
+        "readyToUpgrade": "Sẵn sàng nâng cấp",
+        "nothingNeeded": "Không cần gì",
+        "needsPart": "Cần {name} cấp {level}",
+        "costLine": "{name} {amount}",
+        "lockedHint": "Khóa cho đến khi có {names}",
+        "requirementPart": "{name} cấp {level}"
+    },
+    "flyout": {
+        "title": "{name}",
+        "subtitle": "{category}, bậc {tier}. {description}",
+        "close": "Đóng",
+        "level": "Cấp",
+        "bonusNow": "Cộng thêm hiện tại",
+        "needsFor": "Yêu cầu cho cấp {level}",
+        "needsNothing": "Không cần gì.",
+        "needsLine": "Cần cấp {need}, bạn có cấp {have}",
+        "met": "Đạt",
+        "notMet": "Chưa đạt",
+        "requiredBy": "Được yêu cầu bởi",
+        "requiredByNone": "Không nút nào khác cần nút này.",
+        "requiredByLine": "{category}, bậc {tier}, từ cấp {from} cần {name} cấp {need}",
+        "allLevels": "Mọi cấp",
+        "levelRow": "Cấp {level}",
+        "done": "Xong",
+        "next": "Kế tiếp",
+        "later": "Sau đó",
+        "remaining": "Còn lại đến tối đa",
+        "derived": "Suy ra",
+        "remainingNone": "Không còn gì. Nút này đã tối đa.",
+        "remainingLine": "{cost}",
+        "remainingTime": "{time}"
+    },
+    "empty": {
+        "title": "Không có nút phù hợp",
+        "description": "Đổi từ khóa hoặc bộ lọc để xem thêm nút."
+    }
+}

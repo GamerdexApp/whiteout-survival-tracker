@@ -1,0 +1,165 @@
+{
+    "topBar": {
+        "navLabel": "Startseite",
+        "links": {
+            "how": "So geht's",
+            "features": "Funktionen",
+            "privacy": "Deine Daten",
+            "faq": "FAQ"
+        }
+    },
+    "action": {
+        "createFirstChief": "Ersten Häuptling anlegen",
+        "goToOverview": "Zur Übersicht",
+        "newChief": "Neuer Häuptling",
+        "allChiefs": "Alle Häuptlinge"
+    },
+    "hero": {
+        "label": "Whiteout Survival Tracker",
+        "title": "Jeden Häuptling im Blick. Jedes Upgrade geplant.",
+        "description": "Ein kostenloser Begleiter für Whiteout Survival. Behalte Gebäude, Helden, Gear und Forschung an einem Ort, plane das nächste Upgrade und begleite deine Kern-Events vom ersten Tag bis zum Verlauf.",
+        "note": "Kostenlos. Deine Daten bleiben in diesem Browser.",
+        "learnMore": "Mehr erfahren"
+    },
+    "continue": {
+        "label": "Willkommen zurück",
+        "title": "Weiter mit {name}",
+        "chiefCount": "{count, plural, one {{amount} Häuptling in diesem Browser gespeichert} other {{amount} Häuptlinge in diesem Browser gespeichert}}"
+    },
+    "how": {
+        "label": "So geht's",
+        "title": "Vom ersten Häuptling bis zum Event-Verlauf in vier Schritten",
+        "steps": {
+            "create": {
+                "title": "Häuptling anlegen",
+                "description": "Gib einen Namen ein. Servernummer und Notizen sind optional."
+            },
+            "levels": {
+                "title": "Stufen eintragen",
+                "description": "Trage Furnace- und Gebäudestufen ein und ergänze Helden, Gear und Forschung nach und nach."
+            },
+            "plan": {
+                "title": "Upgrades planen",
+                "description": "Sieh Ressourcen, Zeit und Macht für deine Ziele und was noch fehlt."
+            },
+            "events": {
+                "title": "Events durchspielen",
+                "description": "Zähle Punkte, erfasse Scores und Ränge und speichere das Event im Verlauf."
+            }
+        }
+    },
+    "features": {
+        "label": "Was du tun kannst",
+        "title": "Planen, spielen, zurückblicken",
+        "open": "{page} öffnen",
+        "items": {
+            "plan": {
+                "title": "Jedes Upgrade planen",
+                "description": "Setze ein Ziel im Plan-Fenster bei Gebäuden, Helden, Häuptlingsgear und Forschung. Sieh Ressourcen, Zeit und Macht, die es braucht, mit Beschleunigern und Boni aus deiner Boni-Seite.",
+                "page": "Gebäude"
+            },
+            "coreEvents": {
+                "title": "Rechner für Kern-Events",
+                "description": "SvS, Alliance Showdown, King of Icefield und Hall of Chief. Zähle Punkte für jede Aktion, füge Experten-Boni hinzu und prüfe Schwellen und Rangbelohnungen.",
+                "page": "Kern-Events"
+            },
+            "eventLog": {
+                "title": "Event-Log und Tages-Checkliste",
+                "description": "Erfasse Score und Rang für jeden Tag eines Events. Eine Checkliste zeigt die Aktionen, die du jeden Tag machen kannst.",
+                "page": "Kern-Events"
+            },
+            "history": {
+                "title": "Verlauf: Plan gegen Ist",
+                "description": "Beende ein Event, um es zu speichern. Vergleiche deinen Plan mit dem Ergebnis und sieh jedes geplante Upgrade als erledigt oder offen.",
+                "page": "Verlauf"
+            },
+            "research": {
+                "title": "Forschungsbäume",
+                "description": "Wachstum, Wirtschaft, Kampf, War Academy und die T12-Tabs, als Raster oder Baum, mit Freischaltungen nach Serveralter.",
+                "page": "Forschung"
+            },
+            "alliance": {
+                "title": "Allianz-Tech und Karten",
+                "description": "Verfolge Allianzbanner, Tech und Anlagen und lies den Aufbau von Schloss, Festungen und Bollwerken.",
+                "page": "Allianz"
+            }
+        }
+    },
+    "numbers": {
+        "title": "Was der Tracker abdeckt",
+        "buildings": "Gebäude mit Kosten und Zeiten",
+        "heroes": "Helden",
+        "research": "Forschungen",
+        "coreEvents": "Rechner für Kern-Events",
+        "wiki": "Wiki-Referenzseiten plus Zeitleiste"
+    },
+    "pages": {
+        "label": "Alle Seiten",
+        "title": "Gruppiert wie im Spiel",
+        "description": "Dieselben Seiten wie in der Seitenleiste der App.",
+        "listLabel": "Seiten: {group}",
+        "general": "Allgemein"
+    },
+    "privacy": {
+        "label": "Deine Daten",
+        "title": "Standardmäßig privat, bei Bedarf mitnehmbar",
+        "items": {
+            "browser": {
+                "title": "Bleibt in deinem Browser",
+                "description": "Du brauchst keinen Account. Deine Häuptlinge werden in diesem Browser auf diesem Gerät gespeichert."
+            },
+            "file": {
+                "title": "Eine gespeicherte Datei",
+                "description": "Alles, was du eingibst, liegt in einer einzigen gespeicherten Datei im Browser. So lädt es schnell und nichts ist verstreut."
+            },
+            "chiefs": {
+                "title": "Mehrere Häuptlinge",
+                "description": "Führe einen Main und deine Alts. Wechsle zwischen ihnen in der Seitenleiste."
+            },
+            "backup": {
+                "title": "Backup und Wiederherstellung",
+                "description": "Exportiere deine Daten in den Einstellungen als Datei und importiere sie in einem anderen Browser oder auf einem anderen Gerät."
+            }
+        },
+        "backupLink": "Backup und Daten öffnen"
+    },
+    "faq": {
+        "label": "Fragen",
+        "title": "Häufige Fragen",
+        "items": {
+            "free": {
+                "question": "Ist es kostenlos?",
+                "answer": "Ja. Es gibt nichts zu bezahlen und nichts freizuschalten."
+            },
+            "data": {
+                "question": "Wo sind meine Daten?",
+                "answer": "In diesem Browser, im lokalen Speicher dieser Seite. Sie werden nicht an einen Server gesendet. Wenn du die Websitedaten dieser Seite löschst, sind die Häuptlinge weg. Exportiere vorher ein Backup."
+            },
+            "move": {
+                "question": "Wie ziehe ich auf ein anderes Gerät um?",
+                "answer": "Öffne Einstellungen, dann Backup und Daten, und exportiere eine Backup-Datei. Öffne auf dem anderen Gerät dieselbe Seite, gehe zu Einstellungen, Backup und Daten und importiere die Datei."
+            },
+            "chiefs": {
+                "question": "Kann ich mehrere Häuptlinge haben?",
+                "answer": "Ja. Es gibt kein Limit. Jeder Häuptling hat eigene Gebäude, Helden, Forschung und Events. Du wechselst in der Seitenleiste."
+            },
+            "account": {
+                "question": "Brauche ich einen Account oder einen Spielstand aus dem Spiel?",
+                "answer": "Nein. Du trägst deine Stufen selbst ein. Die Spieldaten für Kosten, Zeiten und Werte sind im Tracker enthalten."
+            },
+            "official": {
+                "question": "Ist das eine offizielle App?",
+                "answer": "Nein. Es ist ein inoffizielles Fan-Tool. Es steht in keiner Verbindung zu Whiteout Survival oder Century Games. Den vollständigen Hinweis findest du im Footer."
+            },
+            "wiki": {
+                "question": "Was ist das Wiki?",
+                "answer": "Eine Sammlung von Referenzseiten zu den Spieldaten, etwa Gebäude, Helden, Haustiere, Items und Events, plus eine Server-Zeitleiste. Du kannst es lesen, ohne einen Häuptling anzulegen."
+            }
+        }
+    },
+    "closing": {
+        "title": "Fang heute an",
+        "description": "Dein erster Häuptling braucht nur einen Namen. Alles andere kannst du später ändern.",
+        "wiki": "Wiki durchstöbern"
+    }
+}

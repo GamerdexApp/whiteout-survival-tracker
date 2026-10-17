@@ -1,0 +1,282 @@
+{
+  "title": "건물",
+  "tabs": {
+    "buildings": "건물",
+    "facilities": "시설"
+  },
+  "notBuilt": "미건설",
+  "built": "건설됨",
+  "none": "없음",
+  "unknown": "알 수 없음",
+  "close": "닫기",
+  "cancel": "취소",
+  "undo": "실행 취소",
+  "ofTotal": "{total}개 중 {count}개",
+  "noOtherRequirements": "다른 조건 없음",
+  "builderName": "건설자 {number}",
+  "shelterName": "Shelter {number}",
+  "levelOf": "{name} 레벨",
+  "levelRange": "{from}에서 {to}",
+  "requirement": {
+    "shelter": "{building} {level}레벨",
+    "heroHall": "Hero Hall 건설됨",
+    "level": "{building} {level}"
+  },
+  "columns": {
+    "building": "건물",
+    "current": "현재",
+    "goal": "목표",
+    "power": "전투력",
+    "progress": "진행도와 다음 레벨",
+    "upgrade": "업그레이드"
+  },
+  "entry": {
+    "notes": {
+      "furnace": "다른 모든 건물의 한도를 결정해요",
+      "shelter": "최대 8개, 각각 자신의 레벨이 있어요"
+    },
+    "subline": {
+      "size": "최대 {max} · {count}레벨",
+      "withNote": "{note} · {size}",
+      "single": "단일 건물 · 전투력 {power}"
+    },
+    "progress": {
+      "requires": "{list} 필요",
+      "noRequirements": "조건 없음",
+      "maxLevel": "최대 레벨",
+      "blocked": "막힘: {list} 필요",
+      "needs": "{list} 필요",
+      "levelAgeLocked": "저장된 레벨 {level}은(는) 이 서버에서 아직 열리지 않았어요. {text}",
+      "goalAgeLocked": "목표 {goal}은(는) 이 서버에서 아직 열리지 않았어요. {text}",
+      "nextAgeLocked": "다음 레벨 {level}은(는) 잠겨 있어요. {text}"
+    },
+    "builtSwitch": "{name} 건설됨",
+    "shelters": {
+      "none": "건설된 것 없음",
+      "editLabel": "Shelter ({count}개), 레벨 편집",
+      "button": "Shelter ({count}개)"
+    },
+    "levels": "레벨",
+    "levelsLabel": "{name}의 레벨",
+    "upgrading": "{name} 업그레이드 중",
+    "startLabel": "{name} 업그레이드 시작",
+    "start": "시작",
+    "startUpgrade": "업그레이드 시작",
+    "devIndex": "발전 지수 {value}",
+    "powerLine": "전투력 {power} · 발전 지수 {index}",
+    "progressLabel": "{name} 진행도"
+  },
+  "builders": {
+    "label": "건설자",
+    "hint": "여기서 시작한 업그레이드는 개요에 진행 중인 대기열로 표시돼요.",
+    "idle": "건물에서 시작을 눌러 업그레이드를 시작하세요.",
+    "jobTitle": "{name}, {from}에서 {to}",
+    "locked": "잠김",
+    "lockedText": "두 번째 건설자에는 건설 팩이 필요해요.",
+    "lockedLink": "영주 편집에서 켜기"
+  },
+  "upgrade": {
+    "option": "{subject}, {from}에서 {to}",
+    "busy": "사용 중: {name} {level}까지, {timeLeft}"
+  },
+  "facilities": {
+    "intro": "도시의 시설이에요. 건설한 시설을 표시하세요. 연맹 메뉴의 연맹 시설이 아닌 도시 시설이에요.",
+    "builtLabel": "건설한 시설",
+    "unlockedLabel": "내 Furnace 레벨에서 해금",
+    "requires": "Furnace {level} 필요",
+    "unlocksAt": "Furnace {level}에서 해금"
+  },
+  "tab": {
+    "intro": "모든 건물의 현재 레벨과 목표예요. Furnace가 나머지의 한도를 결정해요.",
+    "searchLabel": "건물 검색",
+    "filters": "필터",
+    "massEdit": "일괄 편집",
+    "startUpgrade": "업그레이드 시작",
+    "plan": "계획",
+    "status": "건물 {total}개 중 {shown}개 표시 중. 목표는 여기서 읽기 전용이며 계획에서 설정해요. 현재 레벨과 같은 목표는 목표 없음이에요. 스테퍼는 게임 순서대로 한 레벨씩 움직여요.",
+    "groupPinned": "고정됨",
+    "stats": {
+      "furnace": "Furnace, 다른 모든 건물의 한도",
+      "power": "현재 전투력, 모든 건물",
+      "developmentIndex": "발전 지수, 모든 건물",
+      "withGoal": "목표가 있는 건물",
+      "atMax": "최대 레벨",
+      "entertainment": "건설한 오락 건물"
+    },
+    "empty": {
+      "title": "일치하는 건물이 없어요",
+      "description": "검색어를 바꾸거나 필터를 초기화해 모든 건물을 보세요.",
+      "reset": "검색과 필터 초기화"
+    },
+    "start": {
+      "description": "건물을 업그레이드 중으로 표시해요",
+      "selectLabel": "업그레이드할 건물",
+      "selectHelp": "지금 시작할 수 있는 건물만 표시돼요. 잠겼거나, 최대이거나, 진행 중인 건물은 빠져요. 업그레이드마다 건설자 2명 중 하나를 써요.",
+      "timeLabel": "건설 시간",
+      "speedLabel": "건설 속도",
+      "slotLabel": "건설자",
+      "slotHelp": "쉬고 있는 건설자를 고르세요. 사용 중인 건설자는 비는 시간을 보여줘요."
+    },
+    "toasts": {
+      "started": {
+        "title": "업그레이드를 시작했어요",
+        "message": "{name}, {subtitle}."
+      },
+      "finished": {
+        "title": "{name} 업그레이드 완료",
+        "message": "이제 {level}이에요. 기록에 추가했어요."
+      },
+      "cancelled": {
+        "title": "{name} 업그레이드 취소됨",
+        "message": "레벨은 그대로예요. 필요하면 자원에서 재고를 고치세요."
+      },
+      "massEdit": {
+        "title": "일괄 편집을 적용했어요",
+        "message": "{count, plural, other {건물 {amount}개}}를 업데이트했어요."
+      }
+    },
+    "manage": {
+      "finishText": "업그레이드 완료를 누르면 {name}이(가) {level}(으)로 설정되고, 건설자 {builder}이(가) 비며, 업그레이드가 기록에 추가돼요. 남은 시간이 0이면 건물과 건설자 카드에 완료 가능이라고 표시돼요. 가속을 썼을 수 있으므로 저절로 완료되는 것은 없어요."
+    }
+  },
+  "filters": {
+    "title": "필터",
+    "description": "건물 목록에 표시할 항목을 고르세요",
+    "reset": "초기화",
+    "show": "{count, plural, other {건물 {amount}개 보기}}",
+    "category": "분류",
+    "categoryAll": "전체, {count}",
+    "categoryOption": "{category}, {count}",
+    "showSection": "표시",
+    "hideMaxed": "최대 건물 숨기기",
+    "hideLocked": "잠긴 건물 숨기기",
+    "goalsOnly": "목표가 있는 건물만",
+    "order": "정렬",
+    "orders": {
+      "game": "게임 순서, Furnace 먼저",
+      "name": "이름순",
+      "progress": "낮은 진행도순"
+    },
+    "pinned": "필터와 관계없이 Furnace는 맨 위에 고정돼요. 필터는 저장되지 않아요."
+  },
+  "levels": {
+    "title": "레벨",
+    "description": "{category} · 최대 {max} · {count}레벨",
+    "noDescription": "아직 데이터에 설명이 없어요.",
+    "current": "현재 레벨",
+    "goal": "목표 레벨",
+    "nextNeeds": "다음 레벨에 필요한 것",
+    "noGoal": "목표 없음",
+    "tableNote": "이 표는 현재 레벨 이후의 레벨만 보여줘요. 이전 레벨은 이미 끝났으니까요.",
+    "maxed": "최대 레벨이에요. 업그레이드할 것이 남아 있지 않아요.",
+    "nextAfter": "{level} 이후 다음 레벨",
+    "first": "첫 레벨",
+    "level": "레벨",
+    "time": "시간",
+    "power": "전투력",
+    "capacity": "한도",
+    "requires": "조건",
+    "goalBadge": "목표",
+    "capacityNote": "패키지에서 한도는 단계 기본 행에만 설정돼 있어서 세부 레벨은 알 수 없음으로 표시돼요."
+  },
+  "massEdit": {
+    "title": "건물 일괄 편집",
+    "description": "여러 건물을 한 번에 설정해요. 건물 설정을 누르기 전에는 아무것도 저장되지 않아요.",
+    "noChanges": "아직 변경 없음",
+    "changes": "{count, plural, other {건물 {amount}개 변경}}",
+    "set": "{count, plural, other {건물 {amount}개 설정}}",
+    "raiseTitle": "모든 건물을 한 레벨로 올리기",
+    "raiseLabel": "모든 건물을 다음 레벨로 올리기",
+    "raiseAll": "모두 올리기",
+    "raiseHint": "각 건물은 이 레벨 이하에서 가장 높은 레벨까지 올라가요. 이미 더 높은 건물은 그대로이고, 나중에 열리는 건물은 미건설 상태로 남아요. 목표는 바뀌지 않아요.",
+    "blockedTitle": "일부 건물은 먼저 다른 건물이 필요해요.",
+    "blocked": "{count, plural, other {건물 {amount}개}}가 조건이 허용하는 범위를 넘었어요.",
+    "lowerBlocked": "허용되는 레벨로 낮추기",
+    "levels": "레벨",
+    "needsFirst": "먼저 {list} 필요",
+    "was": "이전 {level}",
+    "entertainment": "오락",
+    "markAllBuilt": "모두 건설됨으로 표시",
+    "clearAll": "모두 해제",
+    "footnote": "일괄 편집은 저장된 레벨만 바꿔요. 스스로 레벨을 낮추지 않고 목표도 바꾸지 않아요. Shelter는 각각 레벨이 있으니 Shelter 버튼으로 설정하고, Hero Hall은 시설 탭에서 설정하세요."
+  },
+  "shelters": {
+    "title": "Shelter",
+    "description": "최대 {max}개까지 건설할 수 있어요. 각각의 레벨을 설정하세요.",
+    "locked": "Shelter는 아직 Furnace 레벨 때문에 잠겨 있어요.",
+    "empty": "아직 Shelter가 없어요.",
+    "power": "전투력 {power}",
+    "add": "Shelter 추가",
+    "remove": "Shelter {number} 삭제",
+    "allBuilt": "Shelter {max}개를 모두 건설했어요.",
+    "furnaceNeeds": "Furnace가 Shelter에 요구하는 것",
+    "requirement": "Furnace {furnaceLevel}에는 Shelter {number} {level}레벨이 필요해요.",
+    "met": "충족.",
+    "notMet": "미충족.",
+    "footnote": "계획과 진행 바는 가장 낮은 Shelter, 즉 다음에 업그레이드할 것을 기준으로 해요."
+  },
+  "plan": {
+    "title": "건물 계획",
+    "description": "현재 레벨에서 목표까지 필요한 자원, 시간, 전투력",
+    "saved": "{time}에 계획 저장됨",
+    "save": "계획 저장",
+    "failed": "계획을 계산할 수 없었어요.",
+    "goalsHeading": "{count, plural, other {목표, 건물 {amount}개}}",
+    "noGoals": "아직 목표가 없어요. 위에서 건물을 추가한 다음 도달하려는 레벨을 고르세요.",
+    "prerequisiteNote": "선행 단계는 자동으로 추가돼요. 다른 건물이 더 높은 레벨이어야 하는 레벨은 해당 단계를 계산하고 표시해요.",
+    "timeNote": "속도 보너스 {percent}%를 적용하면 계획에 {time}이 걸려요. 보유량: 건설 {construction}분, 일반 {general}분. 일반 가속도 건설에 쓸 수 있어요.",
+    "add": {
+      "title": "건물 추가",
+      "allAdded": "모든 건물이 이미 계획에 있어요.",
+      "selectLabel": "추가할 건물",
+      "button": "건물 추가"
+    },
+    "speed": {
+      "title": "건설 속도",
+      "percent": "{value}%",
+      "plusPercent": "+{value}%",
+      "readOnly": "읽기 전용",
+      "bonusesOn": "보너스 페이지에서 가져왔어요.",
+      "bonusesOff": "설정의 내 보너스 합계 적용이 꺼져 있어요.",
+      "openBonuses": "보너스 열기",
+      "appointment": "대통령 혜택과 임명",
+      "appointments": {
+        "none": "없음",
+        "regular": "일반",
+        "supreme": "최상급"
+      },
+      "appointmentNote": "일반 10%, 최상급 15%. <strong>추정:</strong> 패키지는 이 값을 연구에만 명시해요.",
+      "petSkill": "펫 스킬, Builder's Aide",
+      "petSkillNote": "퍼센트는 펫 페이지에서 Cave Hyena의 현재 레벨 기준으로 가져와요.",
+      "chiefOrder": "영주 명령, Double Time",
+      "chiefOrderNote": "<strong>추정:</strong> 5분 동안 건설 속도 {percent}%를 더해요. 패키지에 영주 명령 데이터가 없어서 값은 앱이 입력했고 전체 시간에 적용해요.",
+      "total": "총 건설 속도",
+      "petSkillNoteLocked": "펫 페이지에서 Cave Hyena가 해금되지 않아서 이 스킬은 아무것도 더하지 않아요. 거기서 해금하면 켜져요."
+    },
+    "goal": {
+      "to": "에서",
+      "label": "{name} 목표",
+      "remove": "계획에서 {name} 삭제"
+    },
+    "result": {
+      "title": "결과, {count}단계",
+      "powerGained": "얻는 전투력",
+      "speedupMinutes": "필요한 가속 분",
+      "baseTime": "기본 시간",
+      "timeWithBonus": "보너스 {percent}% 적용 시간",
+      "eventPoints": "이벤트 점수: SvS {svs}, King of Icefield {king} (<strong>추정</strong>, 이벤트 점수 항목 기준).",
+      "prerequisite": "선행 조건",
+      "steps": "{count, plural, other {{amount}단계}}",
+      "unmetHeading": "미충족 선행 조건",
+      "unmetNone": "이 목표에는 없어요. Hero Hall처럼 목록 밖의 건물은 여기에 표시돼요."
+    },
+    "export": {
+      "button": "핵심 이벤트로 내보내기",
+      "empty": "계획에 목표를 추가하면 내보낼 수 있어요.",
+      "speedupMinutes": "건설 가속 분",
+      "power": "건설로 얻는 전투력",
+      "stockDetail": "계획에 {needed} 필요, 보유 {held}.",
+      "unscored": "{name}에 점수를 주는 이벤트는 없어요."
+    }
+  }
+}

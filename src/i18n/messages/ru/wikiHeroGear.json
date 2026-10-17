@@ -1,0 +1,45 @@
+{
+  "line": "Уровней усиления: {enhancement}, уровней наделения: {empowerment}, строк ковки мастерства: {mastery}, записей характеристик: {stats}. Только справка, здесь ничего не сохраняется.",
+  "tabsLabel": "Таблицы снаряжения героев",
+  "tabs": {
+    "enhancement": "Усиление",
+    "empowerment": "Наделение",
+    "mastery": "Ковка мастерства",
+    "stats": "Характеристики"
+  },
+  "levels": {
+    "columns": {
+      "level": "Уровень",
+      "cost": "Цена",
+      "power": "Мощь",
+      "gain": "Прирост к предыдущему",
+      "milestonePower": "Мощь рубежа",
+      "stage": "Этап",
+      "statsUp": "Рост характеристик"
+    },
+    "none": "Нет",
+    "percent": "{value}%",
+    "gainValue": "+{value}"
+  },
+  "stats": {
+    "slot": "Слот",
+    "troopType": "Тип войск",
+    "troop": {
+      "infantry": "Infantry",
+      "lancer": "Lancer",
+      "marksman": "Marksman"
+    },
+    "note": "Уровни характеристик 101–200 это уровни наделения 1–100.",
+    "columns": {
+      "level": "Уровень",
+      "combat": "{stat}",
+      "health": "Здоровье",
+      "percent": "{stat}"
+    },
+    "level": "Уровень {level}",
+    "empowermentLevel": "Уровень {level}, наделение {empowerment}",
+    "milestonesTitle": "Рубежи",
+    "milestone": "Уровень наделения {level}, {event}: {stat}",
+    "percentValue": "{value}%"
+  }
+}

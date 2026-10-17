@@ -1,0 +1,88 @@
+{
+    "title": "Tài nguyên",
+    "all": "Tất cả",
+    "owned": "Đang có",
+    "sources": "Nguồn",
+    "sourcesUnknown": "Chưa rõ nguồn",
+    "done": "Xong",
+    "undo": "Hoàn tác",
+    "list": {
+        "separator": ", ",
+        "andLast": "{rest} và {last}"
+    },
+    "countControl": {
+        "remove": "Bớt {step} {name}",
+        "add": "Thêm {step} {name}",
+        "owned": "{name} đang có"
+    },
+    "itemRow": {
+        "owned": "đang có"
+    },
+    "itemSheet": {
+        "title": "Sửa số lượng đang có",
+        "step": "Bước",
+        "setToZero": "Đặt về 0",
+        "description": "Mô tả",
+        "unknown": "Không rõ"
+    },
+    "view": {
+        "subline": "{items} vật phẩm trong {categories} danh mục",
+        "sublineInCategory": "{items} vật phẩm trong {categories} danh mục · {inCategory} trong {category}",
+        "unsaved": "Chưa lưu",
+        "shortages": "Mục tiêu trong kế hoạch đang thiếu {names}.",
+        "shortagesLink": "Mở kế hoạch Công trình",
+        "show": {
+            "label": "Hiển thị",
+            "owned": "Đang có",
+            "unknown": "Chưa rõ nguồn"
+        },
+        "speedups": {
+            "none": "Không có",
+            "noneOwned": "Không có vật phẩm tăng tốc",
+            "owned": "{minutes} phút: {parts}",
+            "part": "{count} x {name}",
+            "partSeparator": " + ",
+            "types": {
+                "general": "Chung",
+                "construction": "Xây dựng",
+                "troop": "Huấn luyện quân",
+                "research": "Nghiên cứu",
+                "learning": "Học",
+                "healing": "Chữa trị"
+            }
+        },
+        "search": {
+            "label": "Tìm vật phẩm",
+            "placeholder": "Tìm trong {total} vật phẩm"
+        },
+        "setSeveral": "Đặt nhiều mục",
+        "showing": {
+            "several": "Hiển thị {visible} trên {total} vật phẩm. Đặt nhiều mục đang bật. Thay đổi chờ đến khi bạn nhấn Lưu thay đổi.",
+            "instant": "Hiển thị {visible} trên {total} vật phẩm. Mọi thay đổi được lưu ngay."
+        },
+        "empty": {
+            "title": "Không có vật phẩm phù hợp",
+            "description": "Đổi từ khóa tìm kiếm, danh mục hoặc bộ lọc Hiển thị.",
+            "reset": "Đặt lại bộ lọc"
+        },
+        "columns": {
+            "item": "Vật phẩm"
+        },
+        "bar": {
+            "noChanges": "Không có thay đổi chưa lưu",
+            "changes": "{count, plural, other {{amount} thay đổi chưa lưu}}",
+            "discard": "Bỏ",
+            "save": "Lưu thay đổi"
+        },
+        "toast": {
+            "setToZero": "Đã đặt {name} về 0",
+            "savedTitle": "Đã lưu số lượng",
+            "savedMessage": "Đã đổi {count, plural, other {{amount} số lượng}}."
+        }
+    },
+    "planStock": {
+        "constructionTime": "Thời gian xây dựng, quy ra vật phẩm tăng tốc",
+        "researchTime": "Thời gian nghiên cứu, quy ra vật phẩm tăng tốc",
+        "minutesUnit": "phút"
+    }
+}

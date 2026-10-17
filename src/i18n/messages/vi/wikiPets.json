@@ -1,0 +1,52 @@
+{
+    "line": "{pets} thú cưng. Chỉ để tham khảo, không có gì ở đây được lưu.",
+    "roster": {
+        "title": "Thú cưng",
+        "count": "{shown} trên {total} thú cưng",
+        "search": "Tìm kiếm",
+        "searchPlaceholder": "Tìm trong {count} thú cưng",
+        "rarity": "Độ hiếm",
+        "all": "Tất cả",
+        "empty": "Không có thú cưng nào khớp các bộ lọc này.",
+        "summary": "Cấp tối đa {level}, tinh luyện đến {percent}",
+        "percentValue": "{value}%"
+    },
+    "unlock": {
+        "withFurnace": "Ngày {days}, Furnace {level}",
+        "withPet": "Ngày {days}, {pet} {level}",
+        "daysOnly": "Ngày {days}",
+        "label": "Mở khóa: {requirement}"
+    },
+    "detail": {
+        "maxLevel": "Cấp tối đa",
+        "maxRefinement": "Tinh luyện tối đa",
+        "unlock": "Điều kiện mở khóa",
+        "cooldown": "Hồi chiêu kỹ năng",
+        "duration": "Thời lượng kỹ năng",
+        "tierCooldown": "{value}",
+        "maxPower": "Sức mạnh tối đa",
+        "levelPower": "Sức mạnh cấp và thăng tiến ở cấp tối đa",
+        "refiningPower": "Sức mạnh tinh luyện ở mức tinh luyện tối đa"
+    },
+    "skill": {
+        "title": "Kỹ năng",
+        "meta": "{count, plural, other {{amount} cấp}}",
+        "level": "Cấp {level}",
+        "percent": "{value}%"
+    },
+    "levels": {
+        "title": "Bảng cấp",
+        "level": "Cấp {level}",
+        "columns": {
+            "level": "Cấp",
+            "food": "Thức ăn thú cưng",
+            "attack": "Tấn công quân",
+            "defense": "Phòng thủ quân",
+            "power": "Sức mạnh quân",
+            "materials": "Vật liệu thăng tiến"
+        },
+        "refined": "{value} (tinh luyện {refined})",
+        "none": "Không có"
+    },
+    "recordLine": "Thú cưng {rarity}, cấp tối đa {level}. Chỉ để tham khảo, không có gì ở đây được lưu."
+}

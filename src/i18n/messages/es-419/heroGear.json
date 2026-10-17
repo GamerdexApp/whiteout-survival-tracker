@@ -1,0 +1,215 @@
+{
+  "defaultSetName": "Conjunto {number}",
+  "troop": {
+    "infantry": "Infantería",
+    "lancer": "Lancero",
+    "marksman": "Tirador"
+  },
+  "lock": {
+    "needsMythic": "Requiere equipo Mítico",
+    "needsBoth": "Requiere potenciación 100 y forja de maestría nivel 10",
+    "needsEnhancement": "Requiere potenciación 100",
+    "needsForging": "Requiere forja de maestría nivel 10"
+  },
+  "tab": {
+    "deletedTitle": "{name} eliminado",
+    "deletedMessage": "Se quitan las cuatro piezas y sus metas.",
+    "undo": "Deshacer",
+    "tiles": {
+      "sets": "Conjuntos de equipo",
+      "power": "Poder del equipo, todos los conjuntos",
+      "ofPieces": "{count} de {total}",
+      "atEnhancementMax": "Piezas en potenciación 100",
+      "empowered": "Piezas fortalecidas",
+      "ready": "Piezas listas para fortalecer"
+    },
+    "search": "Buscar conjuntos de equipo",
+    "filters": "Filtros",
+    "plan": "Plan",
+    "showing": "Mostrando {shown} de {total} conjuntos de equipo. Aquí las metas son de solo lectura y se definen en Plan.",
+    "empty": {
+      "title": "Aún no hay conjuntos de equipo",
+      "description": "Un conjunto de equipo tiene una pieza de Goggles, Gloves, Belt y Boots. Agrega un conjunto para llevar el registro de sus niveles."
+    },
+    "addSet": "Agregar conjunto",
+    "unknownHero": "Héroe desconocido",
+    "power": "{amount} de poder",
+    "enhancementLine": "Pot. {line}",
+    "troopHint": "El tipo de tropa elige la columna de estadísticas de abajo.",
+    "editSet": "Editar conjunto",
+    "deleteSet": "Eliminar conjunto"
+  },
+  "pieceCard": {
+    "name": "{set} {slot}",
+    "forgingRow": "{name} (+{percent}%)",
+    "none": "Ninguna",
+    "noGoal": "Sin meta",
+    "goal": "Meta: {value}",
+    "quality": "Calidad del equipo",
+    "qualities": {
+      "mythic": "Mítico",
+      "epic": "Épico",
+      "rare": "Raro",
+      "uncommon": "Poco común",
+      "common": "Común"
+    },
+    "forgingRowLabel": "Fila de forja de maestría",
+    "forgingStops": "La forja de maestría se detiene en el nivel 10 hasta que la potenciación llegue a 100.",
+    "lowQualityNote": "Solo el equipo Mítico se puede forjar y fortalecer. El poder sigue las tablas Míticas con el poder base de esta calidad, algo que el juego no ha confirmado.",
+    "enhancement": "Potenciación",
+    "enhancementLabel": "Potenciación de {name}",
+    "enhancementSlider": "Control deslizante de potenciación de {name}",
+    "empowerment": "Fortalecimiento",
+    "empowermentLabel": "Fortalecimiento de {name}",
+    "empowermentSlider": "Control deslizante de fortalecimiento de {name}",
+    "outOf": "/ {max}",
+    "milestone": "Fortalecimiento {level} alcanzado: {stat}",
+    "piecePower": "Poder de la pieza",
+    "health": "Salud",
+    "percent": "{value}%"
+  },
+  "statLines": {
+    "title": "Líneas de estadísticas, 4 ranuras por 3 tipos de tropa",
+    "troopThisSet": "{troop} (este conjunto)",
+    "stat": "{name} {value}",
+    "health": "PS {value}",
+    "percentStat": "{name} {value}%",
+    "none": "Ninguna",
+    "note": "Valores en los niveles de pieza de {name}, con la forja de maestría incluida y redondeados hacia abajo. Las estadísticas vienen de WoS Tools, que se detiene en 192 de los 200 niveles. La columna resaltada es el tipo de tropa del conjunto."
+  },
+  "filters": {
+    "title": "Filtros",
+    "description": "Elige qué conjuntos de equipo muestra la lista",
+    "reset": "Restablecer",
+    "show": "Mostrar {amount} {count, plural, one {conjunto} other {conjuntos}}",
+    "all": "Todos",
+    "troopType": "Tipo de tropa",
+    "linkedHero": "Héroe vinculado",
+    "heroOptions": {
+      "all": "Todos",
+      "linked": "Vinculado a un héroe",
+      "unlinked": "Sin vincular"
+    },
+    "order": "Orden",
+    "orderOptions": {
+      "power": "Poder total, de mayor a menor",
+      "created": "Orden de creación",
+      "name": "Nombre, de la A a la Z",
+      "hero": "Nombre del héroe, de la A a la Z"
+    },
+    "notSaved": "Los filtros no se guardan."
+  },
+  "setDialogs": {
+    "cancel": "Cancelar",
+    "setName": "Nombre del conjunto",
+    "nameRequired": "Escribe un nombre.",
+    "linkedHero": "Héroe vinculado",
+    "add": {
+      "title": "Agregar conjunto de equipo",
+      "linkedHeroHint": "Al elegir un héroe, el tipo de tropa pasa a ser el de su clase.",
+      "troopType": "Tipo de tropa",
+      "troopTypeHint": "El tipo de tropa elige la columna de estadísticas del conjunto.",
+      "quality": "Calidad del equipo",
+      "qualityHint": "Solo el equipo Mítico se puede forjar y fortalecer.",
+      "qualityHintCopy": "Un conjunto copiado conserva la calidad de cada pieza.",
+      "qualities": {
+        "mythic": "Mítico",
+        "epic": "Épico",
+        "rare": "Raro",
+        "uncommon": "Poco común",
+        "common": "Común"
+      },
+      "startFrom": "Empezar desde",
+      "startFromHint": "Las metas no se copian. Las metas se definen en Plan.",
+      "emptySet": "Conjunto vacío",
+      "copyFrom": "Copiar niveles de {name}",
+      "savesAtOnce": "Cada cambio se guarda al instante y el conjunto nuevo aparece seleccionado.",
+      "submit": "Agregar conjunto"
+    },
+    "delete": {
+      "title": "¿Eliminar {name}?",
+      "titleFallback": "Eliminar conjunto",
+      "confirm": "Eliminar conjunto",
+      "body": "Las cuatro piezas de {name} y sus metas se quitan de este dispositivo.",
+      "undoNote": "Puedes deshacer durante 10 segundos después de eliminar.",
+      "exportBackup": "Exportar un respaldo primero"
+    },
+    "edit": {
+      "title": "Editar {name}",
+      "titleFallback": "Editar conjunto",
+      "submit": "Guardar conjunto"
+    },
+    "heroSelect": {
+      "none": "Sin héroe",
+      "option": "{name} ({class}, Gen {generation})"
+    }
+  },
+  "plan": {
+    "title": "Planificar Equipo de Héroe",
+    "description": "Forja de maestría, potenciación y fortalecimiento de cualquier pieza, de cualquier conjunto",
+    "saved": "Plan guardado {time}",
+    "close": "Cerrar",
+    "save": "Guardar plan",
+    "empty": "Aún no hay piezas en el plan. Agrega una pieza arriba y luego sube sus metas.",
+    "pieceTitle": "{set} · {slot}",
+    "milestone": "fortalecimiento {level}, {event}, {stat}",
+    "addPiece": {
+      "title": "Agregar una pieza",
+      "noSets": "Primero agrega un conjunto de equipo en la pestaña Equipo de Héroe.",
+      "set": "Conjunto de equipo",
+      "setOption": "{name} ({troop})",
+      "piece": "Pieza",
+      "submit": "Agregar pieza",
+      "taken": "Esta pieza ya está en el plan."
+    },
+    "qualities": {
+      "mythic": "mítico",
+      "epic": "épico",
+      "rare": "raro",
+      "uncommon": "poco común",
+      "common": "común"
+    },
+    "remove": "Quitar {title} del plan",
+    "forgingRow": "{name} (+{percent}%)",
+    "none": "Ninguna",
+    "forgingCurrent": "Fila actual de forja",
+    "forgingGoal": "Fila meta de forja",
+    "forgingGoalLabel": "Meta de forja de {title}",
+    "forgingStops": "La forja de maestría se detiene en el nivel 10 hasta que la meta de potenciación sea 100.",
+    "enhancement": "Potenciación",
+    "enhancementGoal": "Meta de potenciación de {title}",
+    "empowerment": "Fortalecimiento",
+    "empowermentGoal": "Meta de fortalecimiento de {title}",
+    "from": "{value} a",
+    "result": {
+      "title": "Resultado para {amount} {count, plural, one {pieza} other {piezas}}",
+      "power": "Poder",
+      "powerLines": {
+        "gained": "Poder ganado",
+        "before": "Poder de estas piezas antes",
+        "after": "Poder de estas piezas después"
+      },
+      "columns": {
+        "piece": "Pieza",
+        "forgingStatsUp": "Estadísticas de forja al alza",
+        "powerGained": "Poder ganado"
+      },
+      "forgingStatsUp": "+{percent}% ({steps} pasos)",
+      "milestones": "Hitos desbloqueados",
+      "milestoneLine": "{label}: {stat}",
+      "events": {
+        "svs": "SvS",
+        "allianceShowdown": "Alliance Showdown",
+        "kingOfIcefield": "King of Icefield"
+      },
+      "note": "Planificar Equipo de Héroe no tiene controles de velocidad ni de bonificación. La calculadora no devuelve tiempo.",
+      "tableLabel": "Tabla de resultados del plan"
+    }
+  },
+  "export": {
+    "button": "Exportar a Eventos principales",
+    "nothing": "El plan no necesita Essence Stones ni Mithril para exportar.",
+    "essenceStones": "Essence Stones",
+    "mithril": "Mithril"
+  }
+}

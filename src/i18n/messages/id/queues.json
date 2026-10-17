@@ -1,0 +1,95 @@
+{
+  "hoursMinutes": {
+    "hours": "Jam",
+    "minutes": "Menit"
+  },
+  "jobCard": {
+    "idle": "Kosong",
+    "progress": "Progres {title}",
+    "ends": "Selesai {date}",
+    "manage": "Kelola",
+    "finish": "Selesaikan"
+  },
+  "timeLeftPill": {
+    "manage": "{label}, {timeLeft}. Kelola upgrade"
+  },
+  "manage": {
+    "fallbackTitle": "Kelola upgrade",
+    "description": "Kelola upgrade yang berjalan",
+    "close": "Tutup",
+    "finish": "Selesaikan upgrade",
+    "progress": "Progres upgrade",
+    "started": "Mulai {date}",
+    "ends": "Selesai {date}",
+    "speedup": {
+      "title": "Pakai percepatan",
+      "minutesUsed": "Menit terpakai",
+      "apply": "Terapkan",
+      "timeLeftAfter": "Sisa waktu setelah diterapkan",
+      "hint": "Percepatan jenis apa pun mengurangi menitnya dari sisa waktu."
+    },
+    "setTime": {
+      "title": "Atur sisa waktu",
+      "button": "Atur sisa waktu",
+      "hint": "Pakai ini saat game menampilkan waktu yang berbeda."
+    },
+    "done": {
+      "title": "Saat selesai",
+      "cancel": "Batalkan upgrade ini"
+    }
+  },
+  "planStock": {
+    "title": "Apakah cukup?",
+    "shortCount": "{short} dari {total} kurang",
+    "description": "Yang diambil rencana dari stokmu, dicek dengan yang kamu punya. Rencana lengkap ada di hasil di bawah.",
+    "enough": "Cukup",
+    "notEnough": "Tidak cukup",
+    "covered": "{name} tercukupi",
+    "available": "Tersedia {amount}",
+    "needed": "Dibutuhkan {amount}",
+    "leftOver": "Sisa {amount}",
+    "shortBy": "Kurang {amount}",
+    "stillNeeded": "Masih dibutuhkan untuk rencana lengkap: {list}.",
+    "openResources": "Buka Sumber Daya"
+  },
+  "start": {
+    "title": "Mulai upgrade",
+    "cancel": "Batal",
+    "nothingToStart": "Tidak ada yang bisa dimulai sekarang. Semua item sudah di level tertinggi, terkunci, atau sedang di-upgrade.",
+    "powerGained": "Kekuatan didapat",
+    "packageTime": "Waktu paket data",
+    "unknown": "Tidak diketahui",
+    "readOnly": "Hanya baca",
+    "openBonuses": "Buka Bonus",
+    "yourTime": "Waktumu",
+    "timeHint": "Hanya kecepatan dari halaman Bonus yang dihitung. Jika game menampilkan waktu lain, ubah di Kapan dimulai.",
+    "allBusy": "Semuanya sedang sibuk di sini. Mulai upgrade nonaktif sampai ada yang kosong.",
+    "whenStarted": "Kapan dimulai",
+    "timeLeftHours": "Sisa waktu, jam",
+    "ends": "Selesai",
+    "startedHint": "Pilih Sudah dimulai untuk mengisi waktu yang ditampilkan game. Waktu selesai dihitung dari situ.",
+    "takeCost": {
+      "title": "Ambil biaya dari Sumber Daya",
+      "hint": "Mengurangi biaya di atas dari stokmu.",
+      "enough": "Kamu punya cukup semua sumber daya.",
+      "short": "Kamu kurang {names}. Kamu tetap bisa memulai, dan stok berhenti di 0."
+    },
+    "modes": {
+      "now": "Mulai sekarang",
+      "already": "Sudah dimulai"
+    }
+  },
+  "researchQueues": {
+    "label": "{name}, {tabs}",
+    "main": {
+      "name": "Antrean riset",
+      "tabs": "Pertumbuhan, Ekonomi, dan Pertempuran",
+      "shortName": "Riset"
+    },
+    "warAcademy": {
+      "name": "Antrean War Academy",
+      "tabs": "T11 dan T12",
+      "shortName": "War Academy"
+    }
+  }
+}

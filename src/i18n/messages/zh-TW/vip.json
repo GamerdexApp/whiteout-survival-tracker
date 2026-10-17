@@ -1,0 +1,63 @@
+{
+    "page": {
+        "title": "VIP"
+    },
+    "view": {
+        "sublineKnown": "{chief} · {details} · VIP {level}，{xp} XP",
+        "sublineUnknown": "{chief} · {details} · 尚未設定 VIP"
+    },
+    "input": {
+        "title": "你的 VIP",
+        "enterAs": "輸入 VIP 方式",
+        "modeXp": "總 XP",
+        "modeLevel": "VIP 等級",
+        "xpLabel": "VIP 總 XP",
+        "xpHint": "整數 XP，從 0 到 {max}。",
+        "levelLabel": "VIP 等級",
+        "notSet": "未設定",
+        "levelHint": "選擇等級會把總 XP 設為該等級的最低總量。輸入實際 XP 才會精確。",
+        "reached": "已達等級",
+        "levelName": "VIP {level}",
+        "unknown": "未知"
+    },
+    "progress": {
+        "label": "VIP {level} 內的進度",
+        "toNext": "距離 VIP {level} 還差 {xp} XP",
+        "percent": "{percent}%",
+        "range": "此等級的總 XP 為 {from} 到 {to}。",
+        "estimate": "估計值。你輸入的是等級，所以 XP 是 VIP {level} 的最低總量。輸入實際 XP 才會精確。",
+        "maxLevel": "最高等級",
+        "maxHint": "VIP {level} 是最後一個等級。"
+    },
+    "perks": {
+        "title": "VIP {level} 的內容",
+        "subtitle": "此等級的合計，不是與上一級的差異。",
+        "unknown": "輸入你的 VIP 即可查看它的內容。"
+    },
+    "next": {
+        "title": "VIP {level} 增加",
+        "subtitle": "與 VIP {from} 相比。",
+        "new": "新增",
+        "was": "原為 {value}",
+        "maxLevel": "最高等級。沒有更高的等級可預覽。",
+        "unknown": "輸入你的 VIP 即可查看下一級。"
+    },
+    "table": {
+        "title": "全部 {count} 個等級，共 {total} XP",
+        "level": "等級",
+        "xpFromLast": "距上一級 XP",
+        "totalXp": "總 XP",
+        "bonuses": "新增或提高的加成",
+        "state": "狀態",
+        "xpFromLastMobile": "距上一級 XP {xp}",
+        "totalMobile": "總計 {xp}",
+        "unknown": "未知",
+        "states": {
+            "reached": "已達成",
+            "current": "目前",
+            "ahead": "尚未達到",
+            "unknown": "未知"
+        },
+        "levelName": "VIP {level}"
+    }
+}

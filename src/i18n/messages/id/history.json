@@ -1,0 +1,102 @@
+{
+  "page": { "title": "Riwayat" },
+  "events": {
+    "svs": "SvS",
+    "showdown": "Alliance Showdown",
+    "king": "King of Icefield",
+    "hall": "Hall of Chief"
+  },
+  "title": {
+    "dated": "{event}, {start} sampai {end}",
+    "undated": "{event}"
+  },
+  "ended": "Berakhir {date}",
+  "tabs": { "label": "Filter menurut event", "all": "Semua event" },
+  "list": {
+    "intro": "Event yang kamu akhiri dari Log event, terbaru dulu. Skor adalah Hari 1 sampai 5 untuk SvS, dan Battle Phase dipisah. Buka event untuk melihat rencananya dibanding hasil aktual dan upgrade yang direncanakan.",
+    "event": "Event",
+    "plan": "Rencana",
+    "actual": "Aktual",
+    "diff": "Selisih",
+    "rank": "Peringkat",
+    "alliance": "Aliansi",
+    "rankLine": "Peringkat {rank}, aliansi {alliance}",
+    "open": "Buka",
+    "openEvent": "Buka {name}",
+    "none": "Belum ada event berakhir dari jenis ini.",
+    "diffWithPercent": "{amount} ({percent}%)"
+  },
+  "empty": {
+    "title": "Belum ada event",
+    "description": "Event yang kamu akhiri dari Log event di Core Events disimpan di sini bersama rencana dan hasilnya.",
+    "action": "Buka Core Events"
+  },
+  "notFound": {
+    "title": "Event tidak ditemukan",
+    "description": "Event ini tidak ada di riwayat Chief yang aktif. Mungkin sudah dihapus, atau event disembunyikan di Core Events.",
+    "action": "Kembali ke Riwayat"
+  },
+  "unknown": "Belum diatur",
+  "belowPlan": "Di bawah rencana",
+  "atOrAbovePlan": "Sesuai atau di atas rencana",
+  "breadcrumb": { "label": "Breadcrumb" },
+  "tiles": {
+    "plan": "Rencana",
+    "actual": "Aktual",
+    "difference": "Selisih",
+    "overall": "Keseluruhan",
+    "alliance": "Aliansi",
+    "days": "Hari 1 sampai 5",
+    "rank": "Peringkat",
+    "rankDays": "Peringkat, Hari 1 sampai 5",
+    "percent": "{percent}%"
+  },
+  "compare": {
+    "title": "Rencana lawan aktual",
+    "titleDays": "Rencana lawan aktual, Hari 1 sampai 5",
+    "day": "Hari",
+    "plan": "Rencana",
+    "actual": "Aktual",
+    "diff": "Selisih",
+    "rank": "Peringkat",
+    "ally": "Sekutu",
+    "total": "Total",
+    "share": "{percent}% dari rencana",
+    "shareLine": "{percent}% dari rencana, peringkat {rank}, sekutu {ally}",
+    "barLabel": "{day}, aktual sebagai bagian dari rencana"
+  },
+  "battle": {
+    "title": "Battle Phase",
+    "note": "Skor dan peringkatnya sendiri. Tidak ditambahkan ke total Hari 1 sampai 5."
+  },
+  "upgrades": {
+    "title": "Upgrade yang direncanakan",
+    "titleCount": "Upgrade yang direncanakan, {count}",
+    "summary": "Upgrade di rencana event ini, dikelompokkan menurut jenis. {done} dari {count} selesai.",
+    "summaryUnchecked": "Upgrade di rencana event ini, dikelompokkan menurut jenis.",
+    "none": "Belum ada rencana yang diekspor ke event ini, jadi tidak ada upgrade terencana untuk ditampilkan.",
+    "groupTitle": "{name}, {count}",
+    "groupStats": "{done} dari {count} selesai, kekuatan +{power}, Fire Crystal {fireCrystals}",
+    "groupStatsUnchecked": "Kekuatan +{power}, Fire Crystal {fireCrystals}",
+    "power": "Kekuatan +{power}",
+    "plannedDay": "Direncanakan {day}",
+    "done": "Selesai",
+    "notDone": "Belum selesai",
+    "levelsFrom": "{from} ke {to}",
+    "levelsTo": "ke {to}",
+    "levelsResearchFrom": "Level {from} ke {to}",
+    "levelsResearchTo": "ke level {to}",
+    "costAmount": "{amount} {name}"
+  },
+  "pages": {
+    "buildings": "Bangunan",
+    "research": "Riset",
+    "chiefGear": "Perlengkapan Chief",
+    "chiefCharms": "Jimat Chief",
+    "heroGear": "Perlengkapan Pahlawan",
+    "heroes": "Pahlawan",
+    "pets": "Hewan Peliharaan",
+    "experts": "Ahli",
+    "troops": "Pasukan"
+  }
+}

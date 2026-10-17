@@ -1,0 +1,86 @@
+{
+    "page": {
+        "title": "Anlagen"
+    },
+    "view": {
+        "subline": "{chief} · {facilities} Kartenanlagen, Schloss, {strongholds} Bollwerke und {fortresses} Festungen"
+    },
+    "summary": {
+        "owned": "Anlagen im Besitz",
+        "ownedValue": "{owned} von {total}",
+        "strongholds": "Bollwerke, Referenz",
+        "fortresses": "Festungen, Referenz",
+        "castle": "Schloss, Referenz"
+    },
+    "tabs": {
+        "label": "Anlagenansichten",
+        "facilities": "Anlagen",
+        "fortresses": "Festungen",
+        "map": "Karte"
+    },
+    "show": {
+        "label": "Anzeigen",
+        "all": "Alle",
+        "owned": "Im Besitz",
+        "notOwned": "Nicht im Besitz"
+    },
+    "card": {
+        "owned": "{count} im Besitz",
+        "level": "Stufe {level}",
+        "ownedSwitch": "Im Besitz",
+        "switchLabel": "{facility} Stufe {level} im Besitz",
+        "booster": "Booster",
+        "injured": "Schwer verwundet",
+        "losses": "Verluste",
+        "ownLimit": "Eigenes Limit {limit}. {spots} {spotWord} auf der Karte.",
+        "spot": "Platz",
+        "spots": "Plätze"
+    },
+    "empty": {
+        "title": "Nichts anzuzeigen",
+        "description": "Keine Anlagenstufe passt zu diesem Filter.",
+        "reset": "Alle zeigen"
+    },
+    "fortress": {
+        "kind": {
+            "castle": "Schloss",
+            "stronghold": "Bollwerk",
+            "fortress": "Festung"
+        },
+        "coordinates": "x {x}, y {y}",
+        "rewardsHeading": "Belohnung je Phase",
+        "phase": "Phase {phase}",
+        "noRewards": "Das Schloss hat im Paket keine Belohnungen.",
+        "referenceNote": "Nur Referenz. Schloss, Bollwerke und Festungen ändern sich jede Woche, daher wird hier nichts besessen oder verfolgt.",
+        "kindLabel": "Art",
+        "allKinds": "Alle Arten",
+        "rewardLabel": "Belohnung",
+        "allRewards": "Alle Belohnungen",
+        "shown": "{shown} von {total} Strukturen angezeigt",
+        "empty": "Keine Struktur passt zu den Filtern.",
+        "reset": "Filter zurücksetzen",
+        "filters": "Filter",
+        "filtersTitle": "Filter",
+        "filtersDescription": "Filtere die Strukturen nach Art und Belohnung",
+        "done": "{count} zeigen"
+    },
+    "map": {
+        "highlight": "Anlage hervorheben",
+        "layers": "Ebenen",
+        "layerFacilities": "Anlagen",
+        "layerStrongholds": "Bollwerke",
+        "layerFortresses": "Festungen",
+        "spotsHeading": "Anlagenplätze, {count} insgesamt",
+        "spotLegend": "{name} ({count})",
+        "codeHint": "Die Ziffer nach dem Code ist die Stufe, zum Beispiel ist Co1 Bau Stufe 1. Die hervorgehobene Anlage ist gefüllt.",
+        "structures": "Strukturen",
+        "castleStrongholdLegend": "Schloss (1) und Bollwerke S1 bis S4 ({count})",
+        "fortressLegend": "Festung 1 bis {count}",
+        "selected": "Auf der Karte gewählt",
+        "selectedNone": "Wähle auf der Karte ein Schloss, Bollwerk oder eine Festung.",
+        "mapLabel": "Allianzkarte",
+        "note": "Drahtmodell der Allianzkarte. Positionen nutzen x und y des Pakets auf einem Raster von {size} mal {size}, ein Rasterfeld ist {step}. Ein Platz ist ein Ort, an dem eine Anlage erscheinen kann, daher sind Anlagen im Besitz nicht markiert. Das Paket enthält keine Geländegrafik.",
+        "spotLabel": "{name} Stufe {level}, x {x}, y {y}",
+        "structureLabel": "{name}, x {x}, y {y}"
+    }
+}

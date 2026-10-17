@@ -1,0 +1,56 @@
+{
+    "line": "{rows} Gear-Zeilen, {slots} Slots und {rates} Wechselkurse. Nur Referenz, hier wird nichts bei deinem Häuptling gespeichert.",
+    "slots": {
+        "heading": "Gear-Slots",
+        "rarities": "Symbole {first} bis {last}",
+        "detailLine": "Stärkt {troopType}-Truppen. Ein Symbol je Seltenheit."
+    },
+    "table": {
+        "heading": "Gear-Tabelle",
+        "meta": "{rows} Zeilen, {tiers} Tiers",
+        "searchLabel": "Suche",
+        "searchPlaceholder": "{rows} Gear-Zeilen durchsuchen",
+        "tierLabel": "Tier",
+        "allTiers": "Alle Tiers",
+        "starsLabel": "Sterne",
+        "allStars": "Alle Sterne",
+        "starsOption": "Sterne {stars}",
+        "empty": "Keine Gear-Zeile passt zu deinen Filtern."
+    },
+    "columns": {
+        "row": "Zeile",
+        "materials": "Material",
+        "stats": "Werte",
+        "power": "Macht",
+        "score": "Score",
+        "capacity": "Einsatzkap."
+    },
+    "cells": {
+        "none": "Keine",
+        "percent": "{value}%"
+    },
+    "tiers": {
+        "heading": "Tiers",
+        "meta": "{tiers} Tier-Bezeichnungen",
+        "tier": "Tier",
+        "rows": "Zeilen",
+        "stats": "Werte, erste bis letzte",
+        "power": "Macht in der letzten Zeile",
+        "statsRange": "{first}% bis {last}%"
+    },
+    "exchange": {
+        "heading": "Materialwechselkurse",
+        "exchange": "Tausch",
+        "from": "Von",
+        "to": "Zu",
+        "weeklyLimit": "Wochenlimit"
+    },
+    "setBonus": {
+        "heading": "Set-Boni",
+        "meta": "{tiers} Tiers",
+        "hint": "Trage 3 Teile für einen Verteidigungsbonus und 6 Teile für einen Angriffsbonus. Der Prozentwert hängt vom Tier der getragenen Teile ab. Er gilt für {types}-Truppen.",
+        "pieceSet": "Set mit {pieces} Teilen",
+        "tier": "Tier",
+        "pieces": "{pieces} Teile, {stat}"
+    }
+}

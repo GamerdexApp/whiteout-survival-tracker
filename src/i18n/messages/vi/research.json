@@ -1,0 +1,303 @@
+{
+    "title": "Nghiên cứu",
+    "unknown": "Không rõ",
+    "nodeCount": "{count, plural, other {{amount} nút}}",
+    "jobTitle": "{name}, cấp {from} đến {to}",
+    "tabs": {
+        "growth": "Growth",
+        "economy": "Economy",
+        "battle": "Battle",
+        "war-academy-troops": "War Academy T11",
+        "t12-infantry": "Bộ binh T12",
+        "t12-marksman": "Xạ thủ T12",
+        "t12-lancer": "Kỵ binh T12"
+    },
+    "tier": {
+        "plain": "Bậc {tier}",
+        "troopLine": "{line} T{tier}"
+    },
+    "requirement": {
+        "yours": "Của bạn là {level}",
+        "notBuilt": "Chưa xây",
+        "researchLevel": "{name} cấp {level}",
+        "yoursLevel": "Của bạn là cấp {level}",
+        "notReleased": "{id} (chưa phát hành)"
+    },
+    "tabLock": {
+        "unknownAge": "Nghiên cứu {tab} mở khi máy chủ được {days} ngày tuổi. Của bạn chưa rõ. Hãy thêm ngày mở máy chủ trong Sửa thủ lĩnh.",
+        "knownAge": "Nghiên cứu {tab} mở khi máy chủ được {days} ngày tuổi. Của bạn là {yours}."
+    },
+    "option": {
+        "label": "{name}, {tab}, cấp {from} đến {to}",
+        "subtitle": "Cấp {from} đến cấp {to}, tab {tab}",
+        "busy": "Đang bận: {name} cấp {level}, {timeLeft}"
+    },
+    "nodeCard": {
+        "allResearched": "Đã nghiên cứu mọi cấp",
+        "nextTime": "Thời gian cấp {level}: {time}",
+        "power": {
+            "researched": "{power} đã nghiên cứu",
+            "next": "+{power} ở cấp kế tiếp",
+            "some": "Sức mạnh {parts}",
+            "none": "Sức mạnh 0"
+        },
+        "maxed": "Đã tối đa. {bonus}",
+        "noBonus": "Dữ liệu không có chỉ số cộng thêm",
+        "level": "Cấp {level} / {max}",
+        "goal": "Mục tiêu {goal}",
+        "noGoal": "Không có mục tiêu",
+        "progress": "Tiến độ {name}",
+        "lockedByTab": "Đã khóa: {reason}",
+        "lockedByRequirement": "Đã khóa: cần {requirement}",
+        "placeholder": "Chỗ giữ chỗ. Chi phí và chỉ số cộng thêm đang trống trong gói dữ liệu.",
+        "needsFirst": "Cần {names} trước",
+        "researching": "{name} đang nghiên cứu",
+        "levelStepper": "Cấp {name}",
+        "detailsOf": "Chi tiết của {name}",
+        "details": "Chi tiết"
+    },
+    "queuesStrip": {
+        "title": "Hàng chờ nghiên cứu",
+        "note": "Growth, Economy và Battle dùng chung một hàng chờ. T11 và T12 dùng hàng chờ War Academy.",
+        "idle": "Mỗi lần một nghiên cứu. Nhấn Bắt đầu nâng cấp để bắt đầu."
+    },
+    "filters": {
+        "title": "Bộ lọc",
+        "description": "Chọn nội dung hiển thị trong tab {tab}",
+        "reset": "Đặt lại",
+        "show": "Hiện {nodes}",
+        "tier": "Bậc",
+        "statusLabel": "Trạng thái",
+        "troopLine": "Dòng quân",
+        "orderLabel": "Thứ tự",
+        "notSaved": "Bộ lọc không được lưu.",
+        "all": "Tất cả",
+        "status": {
+            "all": "Tất cả",
+            "progress": "Đang làm",
+            "goal": "Có mục tiêu",
+            "maxed": "Đã tối đa",
+            "locked": "Đã khóa",
+            "notStarted": "Chưa bắt đầu"
+        },
+        "order": {
+            "game": "Thứ tự trong game",
+            "name": "Tên, A đến Z",
+            "level": "Cấp, cao nhất trước"
+        }
+    },
+    "massSet": {
+        "stop": "{level} trên {max}",
+        "title": "Đặt hàng loạt, {tab}",
+        "description": "Chọn một nút và một cấp. Mọi nút đứng trước nó trong cây sẽ lên tối đa.",
+        "cancel": "Hủy",
+        "set": "Đặt {nodes}",
+        "node": "Nút",
+        "level": "Cấp",
+        "levelToSet": "Cấp cần đặt",
+        "whatChanges": "Những gì thay đổi trong tab {tab}",
+        "nothingChanges": "Không có gì thay đổi. Mọi nút ở đây đã bằng hoặc cao hơn mức này.",
+        "change": "{from} đến {to}",
+        "hidden": "và {amount} nút trước đó nữa",
+        "alreadyMax": "{count, plural, other {{amount} nút trước đó}} đã tối đa và giữ nguyên. Các nút sau trong cây không bị đụng đến. Cấp đã cao hơn thì giữ nguyên.",
+        "blockersTitle": "Một số nút cần một công trình trước.",
+        "blocker": "{name} cần {building}",
+        "blockersMore": " và {amount} nữa",
+        "blockers": "{list}{more}. Hãy chọn một nút trước đó hoặc nâng công trình ở trang Công trình.",
+        "footnote": "Đặt hàng loạt chỉ đổi các cấp đã lưu của tab này. Nó không bao giờ hạ cấp. Mục tiêu không đổi."
+    },
+    "nodeFlyout": {
+        "fallbackTitle": "Nghiên cứu",
+        "description": "{category}, bậc {tier}, {levels} cấp",
+        "close": "Đóng",
+        "unknown": "Không rõ",
+        "levelOf": "Cấp {level} trên {max}",
+        "status": {
+            "notStarted": "chưa bắt đầu",
+            "maxed": "đã tối đa",
+            "inProgress": "đang làm"
+        },
+        "goal": "Mục tiêu {goal}",
+        "noGoal": "Không có mục tiêu",
+        "openPlan": "Mở Kế hoạch",
+        "maxLevel": {
+            "title": "Cấp tối đa",
+            "nothingLeft": "Không còn gì để nghiên cứu.",
+            "noBonus": "Dữ liệu không có chỉ số cộng thêm."
+        },
+        "placeholder": {
+            "title": "Chỗ giữ chỗ",
+            "description": "Nút này chưa có chi phí và chỉ số cộng thêm trong gói dữ liệu. Thời gian và chi phí nghiên cứu hiển thị Không rõ."
+        },
+        "upcoming": {
+            "first": "Những cấp đầu",
+            "after": "Các cấp kế tiếp sau {level}",
+            "heads": {
+                "level": "Cấp",
+                "bonus": "Cộng thêm",
+                "time": "Thời gian",
+                "power": "Sức mạnh"
+            },
+            "goalBadge": "Mục tiêu",
+            "noBonus": "Không có",
+            "shaded": "Các dòng tô bóng là những cấp giữa cấp hiện tại và mục tiêu của bạn."
+        },
+        "cost": {
+            "title": "Chi phí các cấp kế tiếp",
+            "level": "Cấp"
+        },
+        "total": {
+            "title": "Tổng đến mục tiêu, cấp {level} đến {goal}",
+            "knownTime": "Thời gian nghiên cứu đã biết",
+            "power": "Sức mạnh",
+            "missingTimes": "{count, plural, other {{amount} cấp}} không có thời gian trong gói dữ liệu và được tính là 0 ở đây."
+        },
+        "requirements": {
+            "title": "Yêu cầu cho cấp {level}",
+            "none": "Không có yêu cầu.",
+            "met": "Đạt",
+            "notMet": "Chưa đạt",
+            "later": "Các cấp sau yêu cầu: {list}."
+        }
+    },
+    "tree": {
+        "legend": {
+            "max": "Tối đa",
+            "inProgress": "Đang làm",
+            "notStarted": "Chưa bắt đầu",
+            "locked": "Đã khóa"
+        },
+        "pillMax": "Tối đa {max}",
+        "pillLevel": "Cấp {level} / {max}",
+        "region": "Cây nghiên cứu {tab}",
+        "openNode": "{name}, {pill}. Mở chi tiết"
+    },
+    "plan": {
+        "title": "Lập kế hoạch Nghiên cứu",
+        "description": "Tài nguyên, thời gian và sức mạnh từ cấp hiện tại đến mục tiêu",
+        "saved": "Đã lưu kế hoạch {date}",
+        "close": "Đóng",
+        "save": "Lưu kế hoạch",
+        "goals": "Mục tiêu, {nodes}",
+        "noGoals": "Chưa có mục tiêu. Thêm một nút nghiên cứu ở trên, rồi chọn cấp bạn muốn đạt.",
+        "goalsHint": "Cấp hiện tại là cấp trên trang. Hãy đổi ở đó. Mục tiêu trên trang chỉ để xem và được đặt ở đây.",
+        "failed": "Không tính được kế hoạch.",
+        "timeNote": "Kế hoạch mất {time} sau khi áp dụng {percent}% tăng tốc. Kho của bạn: Nghiên cứu {research} phút, Chung {general} phút. Tăng tốc chung được tính vào nghiên cứu.",
+        "percent": "{value}%",
+        "percentPlus": "+{value}%",
+        "appointment": {
+            "none": "Không có",
+            "regular": "Thường",
+            "supreme": "Tối cao"
+        },
+        "add": {
+            "title": "Thêm nút nghiên cứu",
+            "none": "Mọi nút đã có trong kế hoạch hoặc đã ở cấp cao nhất.",
+            "select": "Nút nghiên cứu cần thêm",
+            "button": "Thêm nghiên cứu"
+        },
+        "speed": {
+            "title": "Tốc độ nghiên cứu",
+            "readOnly": "Chỉ xem",
+            "carriedOver": "Lấy từ trang Cộng thêm.",
+            "turnedOff": "Đã tắt trong Cài đặt, mục Áp dụng tổng Cộng thêm của tôi.",
+            "openBonuses": "Mở Cộng thêm",
+            "stateBuff": "Buff State",
+            "vicePresident": "Phó chủ tịch",
+            "total": "Tổng tốc độ nghiên cứu"
+        },
+        "goal": {
+            "level": "Cấp {level}",
+            "to": "đến",
+            "label": "Mục tiêu {name}",
+            "remove": "Xóa {name} khỏi kế hoạch"
+        },
+        "result": {
+            "title": "Kết quả, {steps} bước",
+            "powerGained": "Sức mạnh nhận được",
+            "speedupMinutes": "Số phút tăng tốc cần",
+            "baseTime": "Thời gian gốc",
+            "timeWithBonus": "Thời gian với {percent}% cộng thêm",
+            "stepsWithoutTime": "{count, plural, other {{amount} bước}} không có thời gian trong gói dữ liệu và được tính là 0 giây.",
+            "stepCount": "{count, plural, other {{amount} bước}}",
+            "buildingRequirements": "Yêu cầu công trình",
+            "unmet": "Điều kiện tiên quyết chưa đạt",
+            "unmetNone": "Không có với các mục tiêu này.",
+            "unmetItem": "{name} cấp {level} cần {requires} cấp {requiresLevel}"
+        },
+        "export": {
+            "button": "Xuất sang Sự kiện chính",
+            "empty": "Thêm một mục tiêu vào kế hoạch để xuất.",
+            "speedupMinutes": "Phút tăng tốc nghiên cứu",
+            "power": "Sức mạnh nhận được từ nghiên cứu",
+            "computed": "Do ứng dụng tính từ kết quả kế hoạch.",
+            "unscored": "Không sự kiện nào tính điểm cho {name}."
+        }
+    },
+    "view": {
+        "ofTotal": "{count} trên {total}",
+        "undo": "Hoàn tác",
+        "massSetApplied": {
+            "title": "Đã áp dụng đặt hàng loạt",
+            "message": "Đã cập nhật {nodes}."
+        },
+        "started": {
+            "title": "Đã bắt đầu nghiên cứu",
+            "message": "{name}, cấp {from} đến {to}."
+        },
+        "manage": {
+            "slotLabel": "{queue}, {category}",
+            "finishText": "Hoàn tất nâng cấp sẽ đặt {name} lên cấp {level}, giải phóng hàng chờ {queue} và thêm lượt nâng cấp vào Lịch sử. Khi hết thời gian, nút và thẻ hàng chờ ghi Sẵn sàng hoàn tất. Không có gì tự hoàn tất, vì bạn có thể đã dùng vật phẩm tăng tốc."
+        },
+        "finished": {
+            "title": "Đã nghiên cứu xong {name}",
+            "message": "Hiện là cấp {level}. Đã thêm vào Lịch sử."
+        },
+        "cancelled": {
+            "title": "Đã hủy nghiên cứu {name}",
+            "message": "Cấp giữ nguyên như trước. Hãy chỉnh lại kho trong Tài nguyên nếu cần."
+        },
+        "subline": {
+            "researchCenter": "Research Center {level}",
+            "warAcademy": "War Academy {level}"
+        },
+        "stats": {
+            "maxed": "Nút đã tối đa, {percent}% của cây",
+            "power": "Sức mạnh nghiên cứu, sức mạnh của mọi cấp đã nghiên cứu",
+            "withoutTimeNone": "Không tính thời gian nghiên cứu, mọi cấp đều có",
+            "withoutTimeSome": "Không tính thời gian nghiên cứu, hiển thị Không rõ",
+            "locked": "Bị khóa theo tuổi máy chủ hoặc yêu cầu"
+        },
+        "tabLockedNote": "{reason} Bạn vẫn đặt được mục tiêu trong Kế hoạch.",
+        "lockedByRequirement": "{count} trên {total} nút trong tab này bị khóa bởi một yêu cầu.",
+        "search": {
+            "label": "Tìm nút",
+            "placeholder": "Tìm nút theo tên hoặc chỉ số"
+        },
+        "massSet": "Đặt hàng loạt",
+        "layout": {
+            "label": "Bố cục",
+            "grid": "Lưới",
+            "tree": "Cây"
+        },
+        "plan": "Kế hoạch",
+        "status": {
+            "tree": "{count} nút trong cây {tab}. Sức mạnh nghiên cứu trong tab này: {power}. Cuộn để di chuyển. Nút không khớp tìm kiếm hoặc bộ lọc bị làm mờ.",
+            "grid": "Hiển thị {shown} trên {count} nút {tab}. Sức mạnh nghiên cứu trong tab này: {power}. Mục tiêu ở đây chỉ để xem và được đặt trong Kế hoạch."
+        },
+        "empty": {
+            "title": "Không có nút phù hợp",
+            "description": "Đổi từ khóa hoặc đặt lại bộ lọc để xem mọi nút.",
+            "reset": "Đặt lại tìm kiếm và bộ lọc"
+        },
+        "start": {
+            "description": "Đánh dấu một nghiên cứu đang nâng cấp",
+            "selectLabel": "Nghiên cứu cần nâng cấp",
+            "selectHelp": "Chỉ liệt kê nghiên cứu bạn có thể bắt đầu ngay. Nghiên cứu đã khóa, đã tối đa và đang chạy được bỏ qua. Nghiên cứu Growth, Economy hoặc Battle dùng hàng chờ Nghiên cứu. Nghiên cứu T11 hoặc T12 dùng hàng chờ War Academy.",
+            "timeLabel": "Thời gian nghiên cứu",
+            "speedLabel": "Tốc độ nghiên cứu",
+            "slotLabel": "Hàng chờ",
+            "slotHelp": "Mỗi hàng chờ chạy một nghiên cứu một lúc. Khi hàng chờ bận, thẻ này cho biết khi nào rảnh."
+        }
+    }
+}

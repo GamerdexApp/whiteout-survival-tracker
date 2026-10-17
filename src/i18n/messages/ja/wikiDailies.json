@@ -1,0 +1,46 @@
+{
+    "line": "ゲーム内デイリーミッション{missions}件の、判明しているすべてのレベル、アクティブ報酬、ルーティンタスク。",
+    "missionCount": "{count, plural, other {ミッション{amount}件}}",
+    "tabs": {
+        "label": "デイリー",
+        "missions": "ゲーム内ミッション",
+        "routine": "ルーティンタスク"
+    },
+    "totals": {
+        "title": "アクティブ度の合計",
+        "missions": "ゲーム内ミッション",
+        "levelOne": "すべてのミッションのレベル1",
+        "allLevels": "判明しているすべてのレベル",
+        "topReward": "最高の報酬レベル",
+        "explanation": "ミッションは、到達したレベルまでの各レベルのアクティブ度を加算します。{missions}件すべてのミッションのレベル1は、アクティブ度{levelOne}です。{missions}件すべてのミッションの判明しているすべてのレベルは、{allLevels}です。"
+    },
+    "bar": {
+        "title": "アクティブ報酬",
+        "activeness": "アクティブ度",
+        "rewards": "報酬"
+    },
+    "missions": {
+        "title": "ゲーム内ミッション",
+        "summary": "{missions}、{levels}",
+        "levelCount": "{count, plural, other {判明しているレベル{amount}件}}",
+        "level": "レベル",
+        "task": "タスク",
+        "target": "目標",
+        "activeness": "アクティブ度",
+        "otherRewards": "その他の報酬",
+        "levelLabel": "Lv{level}",
+        "sumOne": "1レベル: アクティブ度{total}",
+        "sumMany": "{count}レベル: {parts} = アクティブ度{total}",
+        "plus": "+{amount}",
+        "noOtherRewards": "なし"
+    },
+    "routine": {
+        "title": "ルーティンタスク",
+        "count": "{count, plural, other {{amount}タスク}}"
+    },
+    "missing": {
+        "title": "まだデータにないもの",
+        "levels": "ミッションのその他のレベル。どのミッションも、判明しているレベルは{min}から{max}です。それより上のレベルはパッケージにまだないため、合計は増える可能性があります。",
+        "reset": "デイリーのリセット時刻。パッケージにはありません。トラッカーは独自の初期値である{time} UTCを使い、アプリの初期値と表示します。"
+    }
+}

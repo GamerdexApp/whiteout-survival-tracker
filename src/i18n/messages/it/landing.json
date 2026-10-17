@@ -1,0 +1,165 @@
+{
+  "topBar": {
+    "navLabel": "Pagina iniziale",
+    "links": {
+      "how": "Come funziona",
+      "features": "Funzioni",
+      "privacy": "I tuoi dati",
+      "faq": "FAQ"
+    }
+  },
+  "action": {
+    "createFirstChief": "Crea il tuo primo capo",
+    "goToOverview": "Vai alla Panoramica",
+    "newChief": "Nuovo capo",
+    "allChiefs": "Tutti i capi"
+  },
+  "hero": {
+    "label": "Whiteout Survival Tracker",
+    "title": "Segui ogni capo. Pianifica ogni potenziamento.",
+    "description": "Un compagno gratuito per Whiteout Survival. Tieni in un unico posto edifici, eroi, equipaggiamento e ricerche, pianifica il prossimo potenziamento e gestisci i tuoi eventi principali dal primo giorno fino alla cronologia.",
+    "note": "Gratis. I tuoi dati restano in questo browser.",
+    "learnMore": "Scopri di più"
+  },
+  "continue": {
+    "label": "Bentornato",
+    "title": "Continua con {name}",
+    "chiefCount": "{count, plural, one {{amount} capo salvato in questo browser} other {{amount} capi salvati in questo browser}}"
+  },
+  "how": {
+    "label": "Come funziona",
+    "title": "Dal primo capo alla cronologia degli eventi in quattro passi",
+    "steps": {
+      "create": {
+        "title": "Crea un capo",
+        "description": "Scegli un nome. Numero del server e note sono facoltativi."
+      },
+      "levels": {
+        "title": "Imposta i livelli",
+        "description": "Inserisci i livelli di Furnace e degli edifici, poi compila eroi, equipaggiamento e ricerche man mano."
+      },
+      "plan": {
+        "title": "Pianifica i potenziamenti",
+        "description": "Vedi risorse, tempo e potenza per i tuoi obiettivi, e cosa ti manca ancora."
+      },
+      "events": {
+        "title": "Gestisci gli eventi",
+        "description": "Conta i punti, registra punteggi e posizioni, poi salva l'evento nella Cronologia."
+      }
+    }
+  },
+  "features": {
+    "label": "Cosa puoi fare",
+    "title": "Pianifica, gioca, poi guarda indietro",
+    "open": "Apri {page}",
+    "items": {
+      "plan": {
+        "title": "Pianifica qualsiasi potenziamento",
+        "description": "Imposta un obiettivo nel pannello Piano di Edifici, Eroi, Equipaggiamento del capo e Ricerca. Vedi risorse, tempo e potenza necessari, con accelerazioni e bonus letti dalla pagina Bonus.",
+        "page": "Edifici"
+      },
+      "coreEvents": {
+        "title": "Calcolatori degli eventi principali",
+        "description": "SvS, Alliance Showdown, King of Icefield e Hall of Chief. Conta i punti di ogni azione, aggiungi i bonus degli esperti e controlla soglie e ricompense di classifica.",
+        "page": "Eventi principali"
+      },
+      "eventLog": {
+        "title": "Registro eventi e lista giornaliera",
+        "description": "Registra punteggio e posizione per ogni giorno di un evento. Una lista elenca le azioni che puoi fare ogni giorno.",
+        "page": "Eventi principali"
+      },
+      "history": {
+        "title": "Cronologia: piano contro risultato",
+        "description": "Termina un evento per salvarlo. Confronta il piano con ciò che hai fatto e vedi ogni potenziamento pianificato come completato o no.",
+        "page": "Cronologia"
+      },
+      "research": {
+        "title": "Alberi di ricerca",
+        "description": "Crescita, Economia, Battaglia, War Academy e le schede T12, come griglia o albero, con sblocchi in base all'età del server.",
+        "page": "Ricerca"
+      },
+      "alliance": {
+        "title": "Tecnologia e mappe dell'alleanza",
+        "description": "Segui stendardo, tecnologie e strutture della tua alleanza e consulta la disposizione di castello, roccaforti e fortezze.",
+        "page": "Alleanza"
+      }
+    }
+  },
+  "numbers": {
+    "title": "Cosa copre il tracker",
+    "buildings": "edifici con costi e tempi",
+    "heroes": "eroi",
+    "research": "tecnologie di ricerca",
+    "coreEvents": "calcolatori degli eventi principali",
+    "wiki": "pagine di riferimento wiki, più una linea temporale"
+  },
+  "pages": {
+    "label": "Tutte le pagine",
+    "title": "Raggruppate come nel gioco",
+    "description": "Le stesse pagine della barra laterale dentro l'app.",
+    "listLabel": "Pagine: {group}",
+    "general": "Generale"
+  },
+  "privacy": {
+    "label": "I tuoi dati",
+    "title": "Privati per impostazione predefinita, portabili quando vuoi",
+    "items": {
+      "browser": {
+        "title": "Restano nel tuo browser",
+        "description": "Non serve creare un account. I tuoi capi sono salvati in questo browser, su questo dispositivo."
+      },
+      "file": {
+        "title": "Un solo file salvato",
+        "description": "Tutto ciò che inserisci è tenuto in un unico file salvato nel browser, così si carica in fretta e niente è sparso in più posti."
+      },
+      "chiefs": {
+        "title": "Più capi",
+        "description": "Tieni un capo principale e i tuoi alt. Passa dall'uno all'altro dalla barra laterale."
+      },
+      "backup": {
+        "title": "Backup e ripristino",
+        "description": "Esporta i dati in un file dalle Impostazioni e importalo su un altro browser o dispositivo."
+      }
+    },
+    "backupLink": "Apri Backup e dati"
+  },
+  "faq": {
+    "label": "Hai domande",
+    "title": "Domande frequenti",
+    "items": {
+      "free": {
+        "question": "È gratis?",
+        "answer": "Sì. Non c'è nulla da pagare e nulla da sbloccare."
+      },
+      "data": {
+        "question": "Dove sono i miei dati?",
+        "answer": "In questo browser, nella memoria locale di questo sito. Non vengono inviati a un server. Se cancelli i dati del sito per questa pagina, i capi vengono rimossi, quindi esporta prima un backup."
+      },
+      "move": {
+        "question": "Come passo a un altro dispositivo?",
+        "answer": "Apri Impostazioni, poi Backup e dati, ed esporta un file di backup. Sull'altro dispositivo apri la stessa pagina, vai in Impostazioni, Backup e dati, e importa quel file."
+      },
+      "chiefs": {
+        "question": "Posso avere più capi?",
+        "answer": "Sì. Non c'è limite. Ogni capo ha i propri edifici, eroi, ricerche ed eventi, e passi dall'uno all'altro nella barra laterale."
+      },
+      "account": {
+        "question": "Mi serve un account o un salvataggio del gioco?",
+        "answer": "No. Inserisci i livelli a mano. I dati di gioco per costi, tempi e statistiche sono inclusi nel tracker."
+      },
+      "official": {
+        "question": "È un'app ufficiale?",
+        "answer": "No. È uno strumento non ufficiale fatto da fan. Non è affiliato a Whiteout Survival o a Century Games. L'avvertenza completa è nel piè di pagina."
+      },
+      "wiki": {
+        "question": "Cos'è la Wiki?",
+        "answer": "Un insieme di pagine di riferimento sui dati di gioco, come edifici, eroi, animali, oggetti ed eventi, più una linea temporale del server. Puoi leggerla senza creare un capo."
+      }
+    }
+  },
+  "closing": {
+    "title": "Inizia a tracciare oggi",
+    "description": "Per il primo capo basta un nome. Potrai cambiare tutto dopo.",
+    "wiki": "Sfoglia la Wiki"
+  }
+}

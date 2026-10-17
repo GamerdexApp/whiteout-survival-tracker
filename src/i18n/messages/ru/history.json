@@ -1,0 +1,102 @@
+{
+  "page": { "title": "История" },
+  "events": {
+    "svs": "SvS",
+    "showdown": "Alliance Showdown",
+    "king": "King of Icefield",
+    "hall": "Hall of Chief"
+  },
+  "title": {
+    "dated": "{event}, с {start} по {end}",
+    "undated": "{event}"
+  },
+  "ended": "Завершено {date}",
+  "tabs": { "label": "Фильтр по событию", "all": "Все события" },
+  "list": {
+    "intro": "События, которые вы завершили в журнале событий, сначала новые. Очки: дни 1–5 для SvS, фаза боя учитывается отдельно. Откройте событие, чтобы увидеть план и факт и запланированные улучшения.",
+    "event": "Событие",
+    "plan": "План",
+    "actual": "Факт",
+    "diff": "Разница",
+    "rank": "Место",
+    "alliance": "Альянс",
+    "rankLine": "Место {rank}, альянс {alliance}",
+    "open": "Открыть",
+    "openEvent": "Открыть: {name}",
+    "none": "Завершённых событий этого типа пока нет.",
+    "diffWithPercent": "{amount} ({percent}%)"
+  },
+  "empty": {
+    "title": "Событий пока нет",
+    "description": "События, которые вы завершаете в журнале на странице главных событий, сохраняются здесь вместе с планом и итогами.",
+    "action": "Открыть главные события"
+  },
+  "notFound": {
+    "title": "Событие не найдено",
+    "description": "Этого события нет в истории активного вождя. Возможно, его удалили, или событие скрыто в главных событиях.",
+    "action": "Назад в историю"
+  },
+  "unknown": "Не задано",
+  "belowPlan": "Ниже плана",
+  "atOrAbovePlan": "На уровне плана или выше",
+  "breadcrumb": { "label": "Навигация" },
+  "tiles": {
+    "plan": "План",
+    "actual": "Факт",
+    "difference": "Разница",
+    "overall": "Общий",
+    "alliance": "Альянс",
+    "days": "Дни 1–5",
+    "rank": "Место",
+    "rankDays": "Место, дни 1–5",
+    "percent": "{percent}%"
+  },
+  "compare": {
+    "title": "План и факт",
+    "titleDays": "План и факт, дни 1–5",
+    "day": "День",
+    "plan": "План",
+    "actual": "Факт",
+    "diff": "Разница",
+    "rank": "Место",
+    "ally": "Альянс",
+    "total": "Итого",
+    "share": "{percent}% от плана",
+    "shareLine": "{percent}% от плана, место {rank}, альянс {ally}",
+    "barLabel": "{day}, факт как доля от плана"
+  },
+  "battle": {
+    "title": "Фаза боя",
+    "note": "Свои очки и место. Не входит в итог дней 1–5."
+  },
+  "upgrades": {
+    "title": "Запланированные улучшения",
+    "titleCount": "Запланированные улучшения, {count}",
+    "summary": "Улучшения из плана этого события, по типам. Выполнено {done} из {count}.",
+    "summaryUnchecked": "Улучшения из плана этого события, по типам.",
+    "none": "В это событие план не экспортировался, поэтому запланированных улучшений нет.",
+    "groupTitle": "{name}, {count}",
+    "groupStats": "Выполнено {done} из {count}, мощь +{power}, Fire Crystals {fireCrystals}",
+    "groupStatsUnchecked": "Мощь +{power}, Fire Crystals {fireCrystals}",
+    "power": "мощь +{power}",
+    "plannedDay": "План: {day}",
+    "done": "Выполнено",
+    "notDone": "Не выполнено",
+    "levelsFrom": "с {from} до {to}",
+    "levelsTo": "до {to}",
+    "levelsResearchFrom": "Уровень с {from} до {to}",
+    "levelsResearchTo": "до уровня {to}",
+    "costAmount": "{amount} {name}"
+  },
+  "pages": {
+    "buildings": "Здания",
+    "research": "Исследования",
+    "chiefGear": "Снаряжение вождя",
+    "chiefCharms": "Амулеты вождя",
+    "heroGear": "Снаряжение героев",
+    "heroes": "Герои",
+    "pets": "Питомцы",
+    "experts": "Эксперты",
+    "troops": "Войска"
+  }
+}

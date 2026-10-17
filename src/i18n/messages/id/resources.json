@@ -1,0 +1,88 @@
+{
+  "title": "Sumber Daya",
+  "all": "Semua",
+  "owned": "Dimiliki",
+  "sources": "Sumber",
+  "sourcesUnknown": "Sumber tidak diketahui",
+  "done": "Selesai",
+  "undo": "Urungkan",
+  "list": {
+    "separator": ", ",
+    "andLast": "{rest} dan {last}"
+  },
+  "countControl": {
+    "remove": "Kurangi {step} {name}",
+    "add": "Tambah {step} {name}",
+    "owned": "{name} dimiliki"
+  },
+  "itemRow": {
+    "owned": "dimiliki"
+  },
+  "itemSheet": {
+    "title": "Ubah jumlah yang dimiliki",
+    "step": "Langkah",
+    "setToZero": "Setel ke 0",
+    "description": "Deskripsi",
+    "unknown": "Tidak diketahui"
+  },
+  "view": {
+    "subline": "{items} item dalam {categories} kategori",
+    "sublineInCategory": "{items} item dalam {categories} kategori · {inCategory} di {category}",
+    "unsaved": "Belum disimpan",
+    "shortages": "Target perencana kekurangan {names}.",
+    "shortagesLink": "Buka rencana Bangunan",
+    "show": {
+      "label": "Tampilkan",
+      "owned": "Dimiliki",
+      "unknown": "Sumber tidak diketahui"
+    },
+    "speedups": {
+      "none": "Tidak ada",
+      "noneOwned": "Tidak punya percepatan",
+      "owned": "{minutes} mnt: {parts}",
+      "part": "{count} x {name}",
+      "partSeparator": " + ",
+      "types": {
+        "general": "Umum",
+        "construction": "Konstruksi",
+        "troop": "Latihan pasukan",
+        "research": "Riset",
+        "learning": "Belajar",
+        "healing": "Penyembuhan"
+      }
+    },
+    "search": {
+      "label": "Cari item",
+      "placeholder": "Cari {total} item"
+    },
+    "setSeveral": "Atur banyak",
+    "showing": {
+      "several": "Menampilkan {visible} dari {total} item. Atur banyak aktif. Perubahan menunggu sampai kamu menekan Simpan perubahan.",
+      "instant": "Menampilkan {visible} dari {total} item. Setiap perubahan langsung tersimpan."
+    },
+    "empty": {
+      "title": "Tidak ada item yang cocok",
+      "description": "Ubah pencarian, kategori, atau filter Tampilkan.",
+      "reset": "Atur ulang filter"
+    },
+    "columns": {
+      "item": "Item"
+    },
+    "bar": {
+      "noChanges": "Tidak ada perubahan belum tersimpan",
+      "changes": "{count, plural, other {{amount} perubahan belum tersimpan}}",
+      "discard": "Buang",
+      "save": "Simpan perubahan"
+    },
+    "toast": {
+      "setToZero": "{name} disetel ke 0",
+      "savedTitle": "Jumlah tersimpan",
+      "savedMessage": "{count, plural, other {{amount} jumlah}} berubah."
+    }
+  },
+  "planStock": {
+    "constructionTime": "Waktu konstruksi, sebagai percepatan",
+    "researchTime": "Waktu riset, sebagai percepatan",
+    "minutesUnit": "mnt"
+  }
+}

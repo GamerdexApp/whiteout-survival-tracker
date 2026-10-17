@@ -1,0 +1,85 @@
+{
+    "nav": {
+        "main": "メイン",
+        "groups": {
+            "chief": "チーフ",
+            "alliance": "同盟",
+            "account": "アカウント",
+            "planner": "プランナー",
+            "wiki": "Wiki"
+        },
+        "items": {
+            "overview": "概要",
+            "buildings": "建物",
+            "daybreakIsland": "Daybreak Island",
+            "heroes": "ヒーロー",
+            "chiefGear": "チーフ装備",
+            "experts": "エキスパート",
+            "pets": "ペット",
+            "troops": "部隊",
+            "research": "研究",
+            "alliance": "同盟",
+            "facilities": "施設",
+            "tech": "テック",
+            "resources": "資源",
+            "bonuses": "ボーナス",
+            "vip": "VIP",
+            "skins": "スキン",
+            "events": "イベント",
+            "tundraAlbum": "Tundra Album",
+            "coreEvents": "コアイベント",
+            "dailies": "デイリー",
+            "history": "履歴",
+            "wikiReference": "リファレンス",
+            "wikiTimeline": "タイムライン",
+            "settings": "設定",
+            "chiefs": "チーフ"
+        },
+        "upgradesRunning": "、{count, plural, other {アップグレード{amount}件を実行中}}"
+    },
+    "appShell": {
+        "skipToContent": "本文へスキップ",
+        "closeMenu": "メニューを閉じる"
+    },
+    "appBar": {
+        "openMenu": "メニューを開く"
+    },
+    "chiefGate": {
+        "emptyTitle": "チーフが選択されていません",
+        "emptyDescription": "チーフを作成すると記録を始められます。データはすべてこのブラウザに保存されます。",
+        "newChief": "新しいチーフ"
+    },
+    "chiefSwitcher": {
+        "chiefs": "チーフ",
+        "active": "使用中",
+        "allChiefs": "すべてのチーフ",
+        "newChief": "新しいチーフ",
+        "loading": "読み込み中",
+        "noChiefYet": "チーフがまだいません",
+        "sectionLabel": "チーフ",
+        "switchChief": "チーフを切り替え"
+    },
+    "footer": {
+        "tagline": "Whiteout Survivalのチーフ、建物、ヒーロー、研究をひとつの場所で記録できます。",
+        "product": "トラッカー",
+        "support": "サポート",
+        "wikiReference": "Wikiリファレンス",
+        "wikiTimeline": "Wikiタイムライン",
+        "backupAndData": "バックアップとデータ",
+        "aboutApp": "このアプリについて",
+        "disclaimerTitle": "免責事項",
+        "disclaimer": "このアプリケーションは、Whiteout SurvivalおよびCentury Gamesとは提携しておらず、公認や関連もありません。すべての商標とゲームコンテンツは、それぞれの所有者に帰属します。",
+        "copyright": "© {year} {appName}",
+        "framework": "無料のゲーム進行トラッカー共通の基盤、Gamerdexフレームワークで作られています。データはブラウザ内にのみ保存されます。"
+    },
+    "notFound": {
+        "title": "このページは存在しません",
+        "description": "リンクが古いか、入力ミスの可能性があります。チーフのデータは安全で、何も変更されていません。",
+        "didYouMean": "<link>{name}</link>をお探しですか？",
+        "goToOverview": "概要へ移動",
+        "jumpTo": "その他の移動先"
+    },
+    "pageHeader": {
+        "wiki": "Wiki"
+    }
+}

@@ -1,0 +1,88 @@
+{
+  "title": "Recursos",
+  "all": "Todos",
+  "owned": "Em estoque",
+  "sources": "Fontes",
+  "sourcesUnknown": "Fontes desconhecidas",
+  "done": "Concluído",
+  "undo": "Desfazer",
+  "list": {
+    "separator": ", ",
+    "andLast": "{rest} e {last}"
+  },
+  "countControl": {
+    "remove": "Remover {step} de {name}",
+    "add": "Adicionar {step} de {name}",
+    "owned": "{name} em estoque"
+  },
+  "itemRow": {
+    "owned": "em estoque"
+  },
+  "itemSheet": {
+    "title": "Editar quantidade em estoque",
+    "step": "Passo",
+    "setToZero": "Zerar",
+    "description": "Descrição",
+    "unknown": "Desconhecido"
+  },
+  "view": {
+    "subline": "{items} itens em {categories} categorias",
+    "sublineInCategory": "{items} itens em {categories} categorias · {inCategory} em {category}",
+    "unsaved": "Não salvo",
+    "shortages": "As metas do planejador estão faltando {names}.",
+    "shortagesLink": "Abrir o plano de Construções",
+    "show": {
+      "label": "Mostrar",
+      "owned": "Em estoque",
+      "unknown": "Fontes desconhecidas"
+    },
+    "speedups": {
+      "none": "Nenhum",
+      "noneOwned": "Nenhum acelerador em estoque",
+      "owned": "{minutes} min: {parts}",
+      "part": "{count} x {name}",
+      "partSeparator": " + ",
+      "types": {
+        "general": "Geral",
+        "construction": "Construção",
+        "troop": "Treino de tropas",
+        "research": "Pesquisa",
+        "learning": "Aprendizado",
+        "healing": "Cura"
+      }
+    },
+    "search": {
+      "label": "Buscar itens",
+      "placeholder": "Buscar entre {total} itens"
+    },
+    "setSeveral": "Definir vários",
+    "showing": {
+      "several": "Mostrando {visible} de {total} itens. Definir vários está ligado. As mudanças esperam até você tocar em Salvar alterações.",
+      "instant": "Mostrando {visible} de {total} itens. Toda mudança é salva na hora."
+    },
+    "empty": {
+      "title": "Nenhum item encontrado",
+      "description": "Mude a busca, a categoria ou o filtro Mostrar.",
+      "reset": "Redefinir filtros"
+    },
+    "columns": {
+      "item": "Item"
+    },
+    "bar": {
+      "noChanges": "Nenhuma alteração pendente",
+      "changes": "{count, plural, one {{amount} alteração pendente} other {{amount} alterações pendentes}}",
+      "discard": "Descartar",
+      "save": "Salvar alterações"
+    },
+    "toast": {
+      "setToZero": "{name} zerado",
+      "savedTitle": "Quantidades salvas",
+      "savedMessage": "{count, plural, one {{amount} quantidade alterada} other {{amount} quantidades alteradas}}."
+    }
+  },
+  "planStock": {
+    "constructionTime": "Tempo de construção, em aceleradores",
+    "researchTime": "Tempo de pesquisa, em aceleradores",
+    "minutesUnit": "min"
+  }
+}

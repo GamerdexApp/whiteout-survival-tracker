@@ -1,0 +1,19 @@
+{
+  "duration": {
+    "days": "{value}d",
+    "hours": "{value}h",
+    "minutes": "{value}m",
+    "seconds": "{value}s",
+    "zero": "0s",
+    "separator": " "
+  },
+  "timeLeft": {
+    "left": "faltam {duration}",
+    "ready": "Pronto a concluir"
+  },
+  "saveFailed": {
+    "title": "Não guardado",
+    "message": "O armazenamento do navegador está cheio. Exporte já uma cópia de segurança.",
+    "exportBackup": "Exportar cópia de segurança"
+  }
+}

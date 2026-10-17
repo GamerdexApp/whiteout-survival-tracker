@@ -1,0 +1,99 @@
+{
+    "line": "ヒーロー{heroes}人とWidgetsのレベル{widgets}件。参考情報のみで、ここには何も保存されません。",
+    "roster": {
+        "title": "一覧",
+        "count": "{total}人中{shown}人のヒーロー",
+        "search": "検索",
+        "searchPlaceholder": "{count}人のヒーローを検索",
+        "generation": "世代",
+        "rarity": "レアリティ",
+        "class": "兵種",
+        "subClass": "サブクラス",
+        "all": "すべて",
+        "empty": "このフィルターに一致するヒーローがいません。",
+        "columns": {
+            "hero": "ヒーロー",
+            "generation": "世代",
+            "rarity": "レアリティ",
+            "class": "兵種",
+            "subClass": "サブクラス",
+            "power": "戦力（星5）",
+            "weapon": "専用武器"
+        },
+        "none": "なし"
+    },
+    "detail": {
+        "generation": "第{generation}世代",
+        "source": "入手元: {sources}",
+        "noSource": "入手元: 不明",
+        "explorationAttack": "探索の攻撃",
+        "explorationDefense": "探索の防御",
+        "explorationHealth": "探索の体力",
+        "expeditionAttack": "遠征の攻撃",
+        "expeditionDefense": "遠征の防御",
+        "powerAtLevel80": "レベル80の戦力",
+        "powerAtFiveStars": "星5の戦力",
+        "powerAtZeroStars": "星0の戦力",
+        "powerMissing": "第6世代以降は、ヒーローのレベルとシャードの戦力がありません。データを入手するまでは「不明」と表示されます。"
+    },
+    "skills": {
+        "title": "スキル",
+        "count": "{count, plural, other {スキル{amount}個}}",
+        "branch": {
+            "exploration": "探索",
+            "expedition": "遠征",
+            "talent": "タレント"
+        },
+        "levels": {
+            "columns": {
+                "level": "レベル",
+                "star": "必要な星",
+                "manuals": "マニュアル",
+                "power": "戦力の増加",
+                "effects": "効果"
+            },
+            "effect": {
+                "percentOfAttack": "{name} 攻撃の{amount}%",
+                "percent": "{name} {amount}%",
+                "seconds": "{name} {amount}秒",
+                "number": "{name} {amount}"
+            }
+        }
+    },
+    "shards": {
+        "title": "星ごとのシャードコスト",
+        "columns": {
+            "star": "星",
+            "tiers": "ティアごとのシャード",
+            "total": "合計",
+            "power": "その星での戦力"
+        },
+        "star": "星{star}"
+    },
+    "weapon": {
+        "title": "専用武器",
+        "power": "武器の戦力",
+        "exploration": "探索の攻撃 / 防御 / HP",
+        "expedition": "遠征の殺傷力 / HP",
+        "unlocksAt": "武器レベル{level}で解放",
+        "levelsTitle": "武器レベル",
+        "columns": {
+            "level": "武器レベル",
+            "power": "戦力",
+            "widgets": "Widgets"
+        },
+        "level": "レベル{level}"
+    },
+    "levels": {
+        "title": "ヒーローのレベル",
+        "columns": {
+            "level": "ヒーローのレベル",
+            "furnace": "必要条件",
+            "xp": "到達に必要なXP",
+            "power": "戦力"
+        },
+        "level": "レベル{level}",
+        "furnace": "Furnace {level}"
+    },
+    "recordLine": "{rarity} {heroClass}、第{generation}世代。参考情報のみで、ここには何も保存されません。"
+}

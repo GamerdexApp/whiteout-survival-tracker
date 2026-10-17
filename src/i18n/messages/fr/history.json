@@ -1,0 +1,102 @@
+{
+  "page": { "title": "Historique" },
+  "events": {
+    "svs": "SvS",
+    "showdown": "Alliance Showdown",
+    "king": "King of Icefield",
+    "hall": "Hall of Chief"
+  },
+  "title": {
+    "dated": "{event}, {start} au {end}",
+    "undated": "{event}"
+  },
+  "ended": "Terminé le {date}",
+  "tabs": { "label": "Filtrer par événement", "all": "Tous les événements" },
+  "list": {
+    "intro": "Les événements terminés depuis le journal d'événement, du plus récent au plus ancien. Les scores correspondent aux jours 1 à 5 pour SvS, et la phase de bataille est à part. Ouvrez un événement pour voir son plan face au réel et ses améliorations prévues.",
+    "event": "Événement",
+    "plan": "Plan",
+    "actual": "Réel",
+    "diff": "Écart",
+    "rank": "Rang",
+    "alliance": "Alliance",
+    "rankLine": "Rang {rank}, alliance {alliance}",
+    "open": "Ouvrir",
+    "openEvent": "Ouvrir {name}",
+    "none": "Aucun événement terminé de ce type pour l'instant.",
+    "diffWithPercent": "{amount} ({percent} %)"
+  },
+  "empty": {
+    "title": "Aucun événement pour l'instant",
+    "description": "Les événements que vous terminez depuis le journal d'événement des Événements clés sont enregistrés ici avec leur plan et leurs résultats.",
+    "action": "Ouvrir Événements clés"
+  },
+  "notFound": {
+    "title": "Événement introuvable",
+    "description": "Cet événement n'est pas dans l'historique du chef actif. Il a peut-être été retiré, ou l'événement est masqué dans Événements clés.",
+    "action": "Retour à l'Historique"
+  },
+  "unknown": "Non défini",
+  "belowPlan": "Sous le plan",
+  "atOrAbovePlan": "Au plan ou au-dessus",
+  "breadcrumb": { "label": "Fil d'Ariane" },
+  "tiles": {
+    "plan": "Plan",
+    "actual": "Réel",
+    "difference": "Écart",
+    "overall": "Global",
+    "alliance": "Alliance",
+    "days": "Jours 1 à 5",
+    "rank": "Rang",
+    "rankDays": "Rang, jours 1 à 5",
+    "percent": "{percent} %"
+  },
+  "compare": {
+    "title": "Plan face au réel",
+    "titleDays": "Plan face au réel, jours 1 à 5",
+    "day": "Jour",
+    "plan": "Plan",
+    "actual": "Réel",
+    "diff": "Écart",
+    "rank": "Rang",
+    "ally": "All.",
+    "total": "Total",
+    "share": "{percent} % du plan",
+    "shareLine": "{percent} % du plan, rang {rank}, all. {ally}",
+    "barLabel": "{day}, réel en part du plan"
+  },
+  "battle": {
+    "title": "Phase de bataille",
+    "note": "Son propre score et son propre rang. Non ajouté au total des jours 1 à 5."
+  },
+  "upgrades": {
+    "title": "Améliorations prévues",
+    "titleCount": "Améliorations prévues, {count}",
+    "summary": "Les améliorations du plan de cet événement, groupées par type. {done} sur {count} ont été faites.",
+    "summaryUnchecked": "Les améliorations du plan de cet événement, groupées par type.",
+    "none": "Aucun plan n'a été exporté vers cet événement, il n'y a donc aucune amélioration prévue à afficher.",
+    "groupTitle": "{name}, {count}",
+    "groupStats": "{done} sur {count} faites, puissance +{power}, Fire Crystals {fireCrystals}",
+    "groupStatsUnchecked": "Puissance +{power}, Fire Crystals {fireCrystals}",
+    "power": "+{power} de puissance",
+    "plannedDay": "Prévu {day}",
+    "done": "Fait",
+    "notDone": "Non fait",
+    "levelsFrom": "{from} à {to}",
+    "levelsTo": "à {to}",
+    "levelsResearchFrom": "Niveau {from} à {to}",
+    "levelsResearchTo": "au niveau {to}",
+    "costAmount": "{amount} {name}"
+  },
+  "pages": {
+    "buildings": "Bâtiments",
+    "research": "Recherche",
+    "chiefGear": "Équipement du chef",
+    "chiefCharms": "Charmes du chef",
+    "heroGear": "Équipement de héros",
+    "heroes": "Héros",
+    "pets": "Familiers",
+    "experts": "Experts",
+    "troops": "Troupes"
+  }
+}

@@ -1,0 +1,114 @@
+{
+    "page": {
+        "title": "破曉島"
+    },
+    "view": {
+        "subline": "Lumber Camp、Tree of Life 和你的裝飾。"
+    },
+    "locked": {
+        "title": "需要 Furnace {level}",
+        "description": "破曉島在 Furnace {level} 解鎖。你的 Furnace 是 {current}，還差 {missing}。頁面仍會顯示，讓你看看接下來有什麼。在那之前無法編輯。",
+        "noFurnace": "破曉島在 Furnace {level} 解鎖。你的 Furnace 等級尚未設定。頁面仍會顯示，讓你看看接下來有什麼。在那之前無法編輯。",
+        "missing": "{count, plural, other {{amount} 級}}",
+        "link": "前往建築"
+    },
+    "levelOf": "Lv {level} / {max}",
+    "camp": {
+        "title": "Lumber Camp",
+        "levelLabel": "Lumber Camp 等級",
+        "workers": "工人",
+        "rate": "每秒產量",
+        "essence": "升到此等級所需 Life Essence",
+        "needsTree": "需要 Tree of Life {required} 級。你的是 {current}。",
+        "treeTooLow": "Tree of Life {current} 級太低。Lumber Camp {level} 級需要 Tree of Life {required} 級。",
+        "next": "下一級，{level} 級：{essence} Life Essence，需要 Tree of Life {tree} 級。",
+        "highest": "這是最高等級。"
+    },
+    "tree": {
+        "title": "Tree of Life",
+        "levelLabel": "Tree of Life 等級",
+        "prosperity": "升到此等級所需繁榮度",
+        "essence": "升到此等級所需 Life Essence",
+        "perHour": "每小時 Life Essence",
+        "buff": "增益",
+        "next": "下一級，{level} 級：{prosperity} 繁榮度，{essence} Life Essence。",
+        "highest": "這是最高等級。"
+    },
+    "decorations": {
+        "title": "裝飾",
+        "owned": "已擁有 {owned} / {total}",
+        "imageNote": "資料包中 {total} 個裝飾只有 {withImage} 個有圖片。實線方框表示有圖片，虛線方框表示其餘的。"
+    },
+    "search": {
+        "label": "搜尋裝飾",
+        "placeholder": "搜尋裝飾"
+    },
+    "status": {
+        "showing": "顯示 {shown} / {total} 個裝飾。",
+        "showMore": "{count, plural, other {再顯示 {amount} 個裝飾}}"
+    },
+    "empty": {
+        "title": "沒有符合的裝飾",
+        "description": "請更改搜尋或篩選以查看裝飾。",
+        "reset": "重設篩選"
+    },
+    "card": {
+        "costEach": "每個花費",
+        "cost": "{amount} {item}",
+        "limit": "上限",
+        "buffAtLevel": "{level} 級增益",
+        "buffAtMax": "滿級增益",
+        "buffValue": "{value} {stat}",
+        "prosperityAtMax": "滿級繁榮度",
+        "essenceCost": "Life Essence 花費",
+        "unknown": "未知",
+        "owned": "已擁有",
+        "notOwned": "未擁有",
+        "ownedLabel": "已擁有{name}",
+        "levelLabel": "{name}等級",
+        "countLabel": "{name}數量",
+        "limited": "限量",
+        "ownedCount": "已擁有 {count} / {limit}"
+    },
+    "categories": {
+        "Basic": "基礎",
+        "Vegetation": "植物",
+        "Common": "普通",
+        "Uncommon": "優良",
+        "Rare": "稀有",
+        "Epic": "史詩",
+        "Mythic": "神話",
+        "Unique": "獨特"
+    },
+    "filters": {
+        "button": "篩選",
+        "title": "篩選",
+        "description": "縮小裝飾清單範圍。篩選條件不會儲存。",
+        "category": "分類",
+        "categoryAll": "全部 {amount}",
+        "categoryOption": "{category} {amount}",
+        "show": "顯示",
+        "ownedOnly": "僅已擁有",
+        "limitedOnly": "僅限量",
+        "unknownBuffOnly": "僅增益未知",
+        "sort": "排序",
+        "order": {
+            "game": "資料包順序",
+            "name": "名稱 A 到 Z",
+            "level": "等級由高到低"
+        },
+        "reset": "重設",
+        "showButton": "{count, plural, other {顯示 {amount} 個裝飾}}",
+        "nonLimitedOnly": "僅非限量",
+        "notOwnedOnly": "僅未擁有"
+    },
+    "prosperity": {
+        "label": "你的繁榮度分數",
+        "progress": "你的裝飾繁榮度分數",
+        "possible": "所有裝飾都達最高等級和上限時，最高為 {max}",
+        "levelled": "有等級的裝飾，依所達等級的繁榮度",
+        "limited": "有上限的裝飾，持有數量乘以每個的繁榮度",
+        "ofMax": "{value} / {max}",
+        "withoutValue": "{count, plural, other {已擁有的裝飾中，有 {amount} 個在資料中沒有繁榮度數值}}，{count, plural, other {未計入}}。"
+    }
+}

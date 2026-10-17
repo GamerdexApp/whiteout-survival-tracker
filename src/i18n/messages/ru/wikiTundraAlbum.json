@@ -1,0 +1,32 @@
+{
+  "line": "В пакете альбомов: {have} из {total}. У каждого есть бонус, награды за сбор и пазлов: {puzzles}.",
+  "note": "Остальные альбомы ({missing}) добавятся, когда появятся в пакете.",
+  "albums": "Альбомы",
+  "puzzleCount": "{count, plural, one {{amount} пазл} few {{amount} пазла} many {{amount} пазлов} other {{amount} пазла}}",
+  "pieceCount": "{count, plural, one {{amount} часть} few {{amount} части} many {{amount} частей} other {{amount} части}}",
+  "view": {
+    "label": "Вид",
+    "puzzles": "Пазлы",
+    "pieces": "Все части"
+  },
+  "album": {
+    "counts": "{puzzles}, {pieces}",
+    "buff": "Бонус за сбор",
+    "buffValue": "{stat} {value}",
+    "rewards": "Награды за сбор",
+    "buffNote": "Бонус действует, только когда собраны все пазлы ({puzzles})."
+  },
+  "puzzles": {
+    "title": "Пазлы",
+    "puzzle": "Пазл",
+    "pieces": "Части",
+    "star": "Звезда {stars}",
+    "reward": "Награда"
+  },
+  "allPieces": {
+    "title": "Все части",
+    "summary": "{pieces} в пазлах: {puzzles}",
+    "imageNote": "Картинки частей берутся из пакета. Часть без картинки показана простым квадратом.",
+    "stars": "{count, plural, one {{amount} звезда} few {{amount} звезды} many {{amount} звёзд} other {{amount} звезды}}"
+  }
+}

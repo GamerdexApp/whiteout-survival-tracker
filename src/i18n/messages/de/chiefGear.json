@@ -1,0 +1,176 @@
+{
+    "none": "Keine",
+    "charmLabel": "Amulett {number}",
+    "view": {
+        "title": "Häuptlingsgear",
+        "tabsLabel": "Häuptlingsgear",
+        "gearSubline": "{name} · sechs Slots, 150 Upgrade-Zeilen",
+        "charmsSubline": "{name} · 6 Gear-Teile, je 3 Amulette, 75 Upgrade-Zeilen",
+        "tabs": {
+            "gear": "Gear",
+            "charms": "Amulette"
+        }
+    },
+    "shared": {
+        "plan": "Plan",
+        "autoSaveHint": "Jede Änderung wird sofort gespeichert. Die Stepper gehen Zeile für Zeile in Paketreihenfolge.",
+        "scoreToGain": "Noch zu holender Score",
+        "notes": "Notizen",
+        "package": "Paket"
+    },
+    "gear": {
+        "scoreNow": "Gear-Score jetzt, sechs Slots",
+        "powerNow": "Gear-Macht jetzt",
+        "stepsToGoals": "Schritte bis zu allen Zielen",
+        "goalsHint": "Ziele sind hier nur lesbar. Setze sie im Plan und tippe auf Plan speichern.",
+        "stepWord": "Schritte",
+        "tiers": {
+            "title": "Tiers",
+            "description": "Das Paket beschriftet 150 Zeilen mit {count} Tiers. Ein markiertes Tier enthält mindestens eines deiner Teile.",
+            "rows": "{rows} Zeilen",
+            "names": {
+                "EpicT1": "Epic T1",
+                "MythicT1": "Mythic T1",
+                "MythicT2": "Mythic T2",
+                "LegendaryT1": "Legendary T1",
+                "LegendaryT2": "Legendary T2",
+                "LegendaryT3": "Legendary T3",
+                "LegendaryT4": "Legendary T4",
+                "LegendaryT5": "Legendary T5",
+                "LegendaryT6": "Legendary T6"
+            }
+        },
+        "notes": {
+            "setBonus": {
+                "title": "Regeln für Set-Boni",
+                "body": "3 Teile desselben Tiers geben Verteidigung, 6 Teile geben Angriff, für alle drei Truppentypen. Ein Teil ohne Stufe zählt nicht. Jedes Tier hat einen Wert."
+            },
+            "troopType": {
+                "title": "Truppentyp ist von Hand eingetragen",
+                "body": "Cap und Watch stärken Lancer, Coat und Pants stärken Infantry, Ring und Weapon stärken Marksman. Der Paketautor hat das aus Wiki-Text abgetippt."
+            },
+            "capacity": {
+                "title": "Kapazität ist in frühen Zeilen 0",
+                "body": "Die ersten 26 Zeilen haben im Paket keine Einsatzkapazität, daher steht dort 0, bis die Daten Werte haben."
+            }
+        }
+    },
+    "charms": {
+        "scoreNow": "Amulett-Score jetzt, 18 Amulette",
+        "powerNow": "Amulett-Macht jetzt",
+        "stagesToGoals": "Stufen bis zu allen Zielen",
+        "goalsHint": "Ziele sind hier nur lesbar und werden im Plan gesetzt.",
+        "stepWord": "Stufen",
+        "slotMeta": "{troop} · 3 Amulette",
+        "slotStages": ", {stages} Stufen bis zu den Zielen",
+        "notes": {
+            "secrets": {
+                "title": "Charm Secrets beginnt bei Stufe 11",
+                "body": "Ab Level 11 Stage 1 braucht eine Stage Charm Secrets. Frühere Stages listen nur Charm Guide und Charm Design."
+            },
+            "look": {
+                "title": "Amulette ändern ihr Aussehen mit jeder Stufe",
+                "body": "Jedes Amulett hat 18 Symbole, eines pro Stufe. Jedes Gear-Teil trägt drei Amulette, und sie folgen dem Truppentyp des Teils."
+            },
+            "estimate": {
+                "title": "Stage-Scores sind geschätzt",
+                "body": "Ein Stufen-Score wird gleichmäßig auf die Stages verteilt, die dorthin führen. Das Spiel bestätigt die Aufteilung nicht."
+            }
+        }
+    },
+    "badge": {
+        "tier": "Tier {tier}",
+        "stars": "{count, plural, one {{amount} Stern} other {{amount} Sterne}}",
+        "tierAndStars": "{tier}, {stars}"
+    },
+    "row": {
+        "level": "Stufe {title}",
+        "progressLabel": "Fortschritt {title} in {total} Zeilen",
+        "progress": "{progress} von {total}",
+        "stepsToGoal": " · {steps} bis zum Ziel",
+        "goal": "Ziel {name}",
+        "noGoal": "Kein Ziel",
+        "stats": "Wert {stat} · Macht {power}",
+        "statPercent": "{percent}%",
+        "capacity": " · Kapazität {capacity}",
+        "lockedCurrent": "Die gespeicherte Stufe {name} ist durch das Serveralter gesperrt und wird nicht gezählt. {requirement}.",
+        "lockedGoal": "Das gespeicherte Ziel {name} ist durch das Serveralter gesperrt und wird nicht geplant. {requirement}."
+    },
+    "summary": {
+        "title": "Noch bis zu allen Zielen",
+        "derived": "Abgeleitet",
+        "score": "Score",
+        "powerGain": "Machtgewinn",
+        "noGoals": "Keine Ziele gesetzt. Setze Ziele im Plan.",
+        "openPlan": "Plan für Event-Punkte und Aufschlüsselung öffnen"
+    },
+    "setBonus": {
+        "title": "Freigeschaltete Set-Boni",
+        "pieceSet": "Set mit {pieces} Teilen",
+        "active": "Aktiv",
+        "notActive": "Nicht aktiv",
+        "value": "{stat} +{percent}%",
+        "appliesTo": "{tierName}-Teile, für Infantry, Lancer und Marksman",
+        "needs": "Braucht {pieces} Teile desselben Tiers. {stat} vorerst +0%."
+    },
+    "plan": {
+        "gear": {
+            "title": "Häuptlingsgear planen",
+            "description": "Material, Score und Macht von der aktuellen Stufe bis zum Ziel",
+            "stepWord": "Schritte",
+            "conversionNote": "Die Prüfung rechnet Umwandlungen nicht mit. Der Konverter hat sieben Wechselkurse mit je einem Wochenlimit, zum Beispiel 10 Design Plans zu 1 Lunar Amber bis zu 500 pro Woche."
+        },
+        "charm": {
+            "title": "Häuptlingsamulette planen",
+            "description": "Material, Score und Macht von der aktuellen Stufe bis zum Ziel",
+            "stepWord": "Stufen",
+            "conversionNote": "Die Prüfung rechnet Umwandlungen nicht mit: 2 Charm Guides ergeben 1 Charm Design und zurück, und 40 von beiden ergeben 1 Charm Secrets."
+        },
+        "saved": "Plan gespeichert {date}",
+        "close": "Schließen",
+        "save": "Plan speichern",
+        "export": {
+            "button": "In Kern-Events exportieren",
+            "nothingToExport": "Setze ein Ziel über der aktuellen Stufe, um einen Plan zu exportieren.",
+            "gearScore": "Score Häuptlingsgear",
+            "charmScore": "Score Häuptlingsamulette",
+            "power": "Gewonnene Macht",
+            "powerReason": "Keine Zeile in Kern-Events bewertet die Macht von Häuptlingsgear oder Häuptlingsamuletten."
+        },
+        "inputs": "Eingaben",
+        "slotTroop": "{slot}, {troop}",
+        "from": "Ab {level}",
+        "goalLabel": "Ziel {label}",
+        "slotGoalLabel": "Ziel {label} für {slot}",
+        "inputsHint": "Die aktuelle Stufe ist die auf der Seite. Ändere sie dort. Ziele sind auf der Seite nur lesbar und werden hier gesetzt.",
+        "result": "Ergebnis",
+        "score": "Score",
+        "powerGain": "Machtgewinn",
+        "events": {
+            "svs": "SvS State of Power",
+            "allianceShowdown": "Alliance Showdown",
+            "kingOfIcefield": "King of Icefield",
+            "hallOfChief": "Hall of Chief"
+        },
+        "bySlot": "Nach Slot",
+        "byCharm": "Nach Amulett",
+        "columnSlot": "Slot",
+        "columnCharm": "Amulett",
+        "slotCharm": "{slot} {charm}",
+        "converter": {
+            "title": "Materialkonverter",
+            "spend": "Einsatz",
+            "get": "Erhalt",
+            "limit": "Limit",
+            "amount": "{quantity} {name}",
+            "perWeek": "{limit} pro Woche",
+            "noLimit": "Kein Wochenlimit"
+        },
+        "lockedCurrent": "Die gespeicherte Stufe {name} ist durch das Serveralter gesperrt. {requirement}."
+    },
+    "lock": {
+        "title": "Durch Serveralter gesperrt",
+        "stop": "{name} (gesperrt, Tag {day})",
+        "group": "Ab {name}: {requirement}."
+    }
+}

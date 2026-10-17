@@ -1,0 +1,49 @@
+{
+  "line": "{rows}行饰品，{slots}个槽位和{rates}个兑换比例。仅供参考，这里的内容不会保存到你的领主。",
+  "slots": {
+    "heading": "饰品槽位",
+    "meta": "{slots}个槽位，每种兵种一个",
+    "icons": "{count, plural, other {{amount}个等级图标}}",
+    "recordLine": "增益{troopType}。每级一个图标。"
+  },
+  "table": {
+    "heading": "饰品表",
+    "meta": "{rows}行，{levels}级",
+    "searchLabel": "搜索",
+    "searchPlaceholder": "搜索{rows}行饰品",
+    "levelLabel": "等级",
+    "allLevels": "全部等级",
+    "levelOption": "{level}级",
+    "stageLabel": "阶段",
+    "allStages": "全部阶段",
+    "stageOption": "第{stage}阶段",
+    "empty": "没有符合筛选的饰品行。"
+  },
+  "columns": {
+    "row": "行",
+    "materials": "材料",
+    "stats": "属性",
+    "power": "战力",
+    "score": "分数"
+  },
+  "cells": {
+    "none": "无",
+    "percent": "{value}%"
+  },
+  "levels": {
+    "heading": "等级",
+    "level": "等级",
+    "levelName": "{level}级",
+    "rows": "行数",
+    "stats": "属性，从首行到末行",
+    "power": "末行战力",
+    "statsRange": "{first}% 到{last}%"
+  },
+  "exchange": {
+    "heading": "材料兑换比例",
+    "exchange": "兑换",
+    "from": "消耗",
+    "to": "获得",
+    "weeklyLimit": "每周上限"
+  }
+}

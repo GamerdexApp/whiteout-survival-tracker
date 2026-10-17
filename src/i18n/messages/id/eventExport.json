@@ -1,0 +1,32 @@
+{
+  "title": "Ekspor ke Core Events",
+  "description": "Pilih event, lalu harinya",
+  "events": {
+    "svs": "SvS",
+    "showdown": "Alliance Showdown",
+    "king": "King of Icefield",
+    "hall": "Hall of Chief"
+  },
+  "stepEvent": "1. Event",
+  "stepDay": "{number}. Hari event {group}",
+  "stepDayPlain": "Hari event",
+  "stepItems": "{number}. Item dari rencana ini",
+  "noDay": "{event} tidak punya baris skor untuk item ini.",
+  "daysHint": "Hanya hari yang baris skornya menghitung item yang ditampilkan. Hall of Chief menampilkan tahap, bukan hari. Setiap kelompok item mendapat harinya sendiri.",
+  "lineEach": "{points} per item pada {day}.",
+  "lineNotScored": "{event} tidak punya baris skor untuk ini.",
+  "notScored": "Tidak diskor",
+  "points": "{points} poin",
+  "addedTo": "Ditambahkan ke {event}",
+  "nothingScores": "Tidak ada item di rencana ini yang menghasilkan skor di {event} pada hari yang dipilih.",
+  "summaryTitle": "Ringkasan ekspor",
+  "summaryHint": "Skor item yang sama di setiap event jika tiap item dipakai pada hari yang memberi skor. Hanya event dan hari yang dipilih yang menerimanya. Halaman Core Events menampilkannya sebagai jumlah yang bisa kamu ubah.",
+  "selected": "Dipilih",
+  "cancel": "Batal",
+  "export": "Ekspor ke {event}",
+  "toast": {
+    "title": "Diekspor ke Core Events",
+    "message": "{points} poin ditambahkan ke {event}.",
+    "undo": "Urungkan"
+  }
+}

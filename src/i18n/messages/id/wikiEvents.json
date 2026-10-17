@@ -1,0 +1,145 @@
+{
+  "line": "{events} event: {alliance} aliansi, {solo} solo, {rookie} pemula, dan {holiday} perayaan. Fase, skor, hadiah, tips, toko, dan peringkat jika ada di paket data.",
+  "list": {
+    "title": "Event",
+    "showing": "Menampilkan {shown} dari {total}",
+    "search": "Cari",
+    "searchPlaceholder": "Cari event menurut nama",
+    "scoringFilter": "Skor",
+    "categoryLabel": "Kategori",
+    "all": "Semua",
+    "table": "Event",
+    "event": "Event",
+    "category": "Kategori",
+    "frequency": "Frekuensi (teks bebas)",
+    "duration": "Durasi (teks bebas)",
+    "scoringRows": "Baris skor",
+    "noScoringRows": "Tanpa baris skor",
+    "emptyTitle": "Tidak ada event yang cocok",
+    "emptyDescription": "Ubah pencarian, kategori, atau skor."
+  },
+  "category": {
+    "alliance": "Aliansi",
+    "solo": "Solo",
+    "rookie": "Pemula",
+    "holiday": "Perayaan"
+  },
+  "scoring": {
+    "any": "Semua skor",
+    "ranking": "Peringkat",
+    "tier": "Tier",
+    "milestones": "Tonggak",
+    "waves": "Gelombang",
+    "participation": "Partisipasi"
+  },
+  "parts": {
+    "days": "{count, plural, other {{amount} hari}}",
+    "tiers": "{count, plural, other {{amount} tier}}",
+    "missions": "{count, plural, other {{amount} misi}}",
+    "waves": "{count, plural, other {{amount} gelombang}}",
+    "versions": "{count, plural, other {{amount} versi}}",
+    "levels": "{count, plural, other {{amount} level}}"
+  },
+  "detail": {
+    "title": "Detail",
+    "category": "Kategori",
+    "frequency": "Frekuensi",
+    "duration": "Durasi",
+    "summary": "Ringkasan",
+    "requirements": "Syarat",
+    "scoring": "Skor",
+    "noRequirements": "Tidak ada"
+  },
+  "phases": {
+    "title": "Fase",
+    "table": "Fase event",
+    "phase": "Fase",
+    "description": "Deskripsi"
+  },
+  "scoringRows": {
+    "title": "Baris skor: {name}",
+    "table": "Aksi skor",
+    "action": "Aksi",
+    "points": "Poin",
+    "victoryPoints": "{amount} poin kemenangan",
+    "milestones": "Tonggak {name}",
+    "allianceMilestones": "Tonggak aliansi {name}"
+  },
+  "missions": {
+    "title": "Misi",
+    "table": "Misi event",
+    "mission": "Misi",
+    "group": "Grup",
+    "points": "Poin",
+    "rewards": "Hadiah"
+  },
+  "tiers": {
+    "title": "Tier",
+    "table": "Tier event",
+    "tier": "Tier",
+    "score": "Target",
+    "scoreValue": "{amount} {unit}",
+    "scoreValuePoints": "{amount} poin",
+    "rewards": "Hadiah",
+    "note": "Catatan"
+  },
+  "rankings": {
+    "title": "Hadiah peringkat",
+    "personal": "Hadiah peringkat pribadi",
+    "alliance": "Hadiah peringkat aliansi",
+    "basedOn": "Hadiah peringkat berdasarkan {basis}",
+    "table": "Hadiah peringkat",
+    "rank": "Peringkat",
+    "starChange": "Perubahan bintang",
+    "rewards": "Hadiah"
+  },
+  "rewards": {
+    "title": "Hadiah",
+    "partial": "Daftar hadiah ini belum lengkap.",
+    "amountName": "{amount} {name}"
+  },
+  "pointLevels": {
+    "title": "Level poin",
+    "table": "Level poin",
+    "level": "Level",
+    "personal": "Poin pribadi",
+    "alliance": "Poin aliansi",
+    "rewards": "Hadiah"
+  },
+  "waves": {
+    "title": "Gelombang",
+    "table": "Gelombang serangan",
+    "wave": "Gelombang",
+    "target": "Target",
+    "rule": "Aturan",
+    "city": "Kota",
+    "headquarters": "Markas"
+  },
+  "zones": {
+    "title": "Zona",
+    "table": "Zona event",
+    "zone": "Zona",
+    "days": "Hari",
+    "statSources": "Sumber statistik",
+    "unlock": "Buka"
+  },
+  "shop": {
+    "title": "Toko",
+    "titleNamed": "Toko: {name}",
+    "table": "Penawaran toko",
+    "offer": "Penawaran",
+    "cost": "Biaya",
+    "costValue": "{amount} {currency}",
+    "limit": "Batas",
+    "contents": "Isi"
+  },
+  "versions": {
+    "title": "{name}",
+    "missions": "Misi",
+    "chests": "Peti"
+  },
+  "tips": {
+    "title": "Tips"
+  },
+  "recordLine": "Event {category} dengan fase, skor, hadiah, dan peringkatnya."
+}

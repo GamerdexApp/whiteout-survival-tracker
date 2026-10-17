@@ -1,0 +1,56 @@
+{
+    "line": "装備の行{rows}件、スロット{slots}件、交換レート{rates}件。参考情報のみで、チーフには何も保存されません。",
+    "slots": {
+        "heading": "装備スロット",
+        "rarities": "{first}から{last}のアイコン",
+        "detailLine": "{troopType}の部隊を強化します。レアリティごとに1つのアイコン。"
+    },
+    "table": {
+        "heading": "装備の表",
+        "meta": "{rows}行、{tiers}ティア",
+        "searchLabel": "検索",
+        "searchPlaceholder": "{rows}行の装備を検索",
+        "tierLabel": "ティア",
+        "allTiers": "すべてのティア",
+        "starsLabel": "星",
+        "allStars": "すべての星",
+        "starsOption": "星{stars}",
+        "empty": "フィルターに一致する装備の行がありません。"
+    },
+    "columns": {
+        "row": "行",
+        "materials": "素材",
+        "stats": "ステータス",
+        "power": "戦力",
+        "score": "スコア",
+        "capacity": "出撃容量"
+    },
+    "cells": {
+        "none": "なし",
+        "percent": "{value}%"
+    },
+    "tiers": {
+        "heading": "ティア",
+        "meta": "{tiers}件のティア表記",
+        "tier": "ティア",
+        "rows": "行",
+        "stats": "ステータス、最初から最後まで",
+        "power": "最後の行の戦力",
+        "statsRange": "{first}%から{last}%"
+    },
+    "exchange": {
+        "heading": "素材の交換レート",
+        "exchange": "交換",
+        "from": "交換元",
+        "to": "交換先",
+        "weeklyLimit": "週の上限"
+    },
+    "setBonus": {
+        "heading": "セットボーナス",
+        "meta": "{tiers}ティア",
+        "hint": "3個装備すると防御ボーナス、6個装備すると攻撃ボーナスが付きます。パーセントは、装備している装備のティアで決まります。{types}の部隊に適用されます。",
+        "pieceSet": "{pieces}個セット",
+        "tier": "ティア",
+        "pieces": "{pieces}個、{stat}"
+    }
+}

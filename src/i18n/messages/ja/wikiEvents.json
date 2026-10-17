@@ -1,0 +1,145 @@
+{
+    "line": "イベント{events}件: 同盟{alliance}件、ソロ{solo}件、新人{rookie}件、祝日{holiday}件。パッケージにある範囲で、フェーズ、ポイント、報酬、ヒント、ショップ、ランキングを掲載。",
+    "list": {
+        "title": "イベント",
+        "showing": "{total}件中{shown}件を表示",
+        "search": "検索",
+        "searchPlaceholder": "名前でイベントを検索",
+        "scoringFilter": "ポイント方式",
+        "categoryLabel": "カテゴリー",
+        "all": "すべて",
+        "table": "イベント",
+        "event": "イベント",
+        "category": "カテゴリー",
+        "frequency": "頻度（自由記述）",
+        "duration": "期間（自由記述）",
+        "scoringRows": "ポイント行",
+        "noScoringRows": "ポイント行なし",
+        "emptyTitle": "一致するイベントがありません",
+        "emptyDescription": "検索条件、カテゴリー、ポイント方式を変更してください。"
+    },
+    "category": {
+        "alliance": "同盟",
+        "solo": "ソロ",
+        "rookie": "新人",
+        "holiday": "祝日"
+    },
+    "scoring": {
+        "any": "すべてのポイント方式",
+        "ranking": "ランキング",
+        "tier": "ティア",
+        "milestones": "マイルストーン",
+        "waves": "ウェーブ",
+        "participation": "参加"
+    },
+    "parts": {
+        "days": "{count, plural, other {{amount}日}}",
+        "tiers": "{count, plural, other {{amount}ティア}}",
+        "missions": "{count, plural, other {ミッション{amount}件}}",
+        "waves": "{count, plural, other {{amount}ウェーブ}}",
+        "versions": "{count, plural, other {{amount}バージョン}}",
+        "levels": "{count, plural, other {{amount}レベル}}"
+    },
+    "detail": {
+        "title": "詳細",
+        "category": "カテゴリー",
+        "frequency": "頻度",
+        "duration": "期間",
+        "summary": "概要",
+        "requirements": "必要条件",
+        "scoring": "ポイント方式",
+        "noRequirements": "なし"
+    },
+    "phases": {
+        "title": "フェーズ",
+        "table": "イベントのフェーズ",
+        "phase": "フェーズ",
+        "description": "説明"
+    },
+    "scoringRows": {
+        "title": "ポイント行: {name}",
+        "table": "ポイントの行動",
+        "action": "行動",
+        "points": "ポイント",
+        "victoryPoints": "勝利ポイント{amount}",
+        "milestones": "{name}のマイルストーン",
+        "allianceMilestones": "{name}の同盟マイルストーン"
+    },
+    "missions": {
+        "title": "ミッション",
+        "table": "イベントのミッション",
+        "mission": "ミッション",
+        "group": "グループ",
+        "points": "ポイント",
+        "rewards": "報酬"
+    },
+    "tiers": {
+        "title": "ティア",
+        "table": "イベントのティア",
+        "tier": "ティア",
+        "score": "目標",
+        "scoreValue": "{unit} {amount}",
+        "scoreValuePoints": "{amount}ポイント",
+        "rewards": "報酬",
+        "note": "メモ"
+    },
+    "rankings": {
+        "title": "ランキング報酬",
+        "personal": "個人ランキング報酬",
+        "alliance": "同盟ランキング報酬",
+        "basedOn": "{basis}に基づくランキング報酬",
+        "table": "ランキング報酬",
+        "rank": "ランク",
+        "starChange": "星の増減",
+        "rewards": "報酬"
+    },
+    "rewards": {
+        "title": "報酬",
+        "partial": "この報酬リストは完全ではありません。",
+        "amountName": "{name} {amount}"
+    },
+    "pointLevels": {
+        "title": "ポイントレベル",
+        "table": "ポイントレベル",
+        "level": "レベル",
+        "personal": "個人ポイント",
+        "alliance": "同盟ポイント",
+        "rewards": "報酬"
+    },
+    "waves": {
+        "title": "ウェーブ",
+        "table": "攻撃ウェーブ",
+        "wave": "ウェーブ",
+        "target": "目標",
+        "rule": "ルール",
+        "city": "都市",
+        "headquarters": "本部"
+    },
+    "zones": {
+        "title": "ゾーン",
+        "table": "イベントのゾーン",
+        "zone": "ゾーン",
+        "days": "日数",
+        "statSources": "ステータスの入手元",
+        "unlock": "解放"
+    },
+    "shop": {
+        "title": "ショップ",
+        "titleNamed": "ショップ: {name}",
+        "table": "ショップの商品",
+        "offer": "商品",
+        "cost": "コスト",
+        "costValue": "{currency} {amount}",
+        "limit": "上限",
+        "contents": "内容"
+    },
+    "versions": {
+        "title": "{name}",
+        "missions": "ミッション",
+        "chests": "宝箱"
+    },
+    "tips": {
+        "title": "ヒント"
+    },
+    "recordLine": "{category}イベント。フェーズ、ポイント、報酬、ランキングを掲載。"
+}

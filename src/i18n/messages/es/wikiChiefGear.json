@@ -1,0 +1,56 @@
+{
+  "line": "{rows} filas de equipo, {slots} ranuras y {rates} tasas de cambio. Solo referencia, aquí no se guarda nada en tu jefe.",
+  "slots": {
+    "heading": "Ranuras de equipo",
+    "rarities": "Iconos de {first} a {last}",
+    "detailLine": "Mejora a las tropas {troopType}. Un icono por rareza."
+  },
+  "table": {
+    "heading": "Tabla de equipo",
+    "meta": "{rows} filas, {tiers} tiers",
+    "searchLabel": "Buscar",
+    "searchPlaceholder": "Buscar entre {rows} filas de equipo",
+    "tierLabel": "Tier",
+    "allTiers": "Todos los tiers",
+    "starsLabel": "Estrellas",
+    "allStars": "Todas las estrellas",
+    "starsOption": "Estrellas {stars}",
+    "empty": "Ninguna fila de equipo coincide con tus filtros."
+  },
+  "columns": {
+    "row": "Fila",
+    "materials": "Materiales",
+    "stats": "Estadísticas",
+    "power": "Poder",
+    "score": "Puntuación",
+    "capacity": "Cap. despl."
+  },
+  "cells": {
+    "none": "Ninguno",
+    "percent": "{value}%"
+  },
+  "tiers": {
+    "heading": "Tiers",
+    "meta": "{tiers} etiquetas de tier",
+    "tier": "Tier",
+    "rows": "Filas",
+    "stats": "Estadísticas, de la primera a la última",
+    "power": "Poder en la última fila",
+    "statsRange": "{first}% a {last}%"
+  },
+  "exchange": {
+    "heading": "Tasas de cambio de materiales",
+    "exchange": "Cambio",
+    "from": "De",
+    "to": "A",
+    "weeklyLimit": "Límite semanal"
+  },
+  "setBonus": {
+    "heading": "Bonificaciones de conjunto",
+    "meta": "{tiers} tiers",
+    "hint": "Equipa 3 piezas para una bonificación de Defensa y 6 piezas para una de Ataque. El porcentaje depende del tier de las piezas que lleves. Se aplica a las tropas {types}.",
+    "pieceSet": "Conjunto de {pieces} piezas",
+    "tier": "Tier",
+    "pieces": "{pieces} piezas, {stat}"
+  }
+}

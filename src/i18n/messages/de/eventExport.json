@@ -1,0 +1,32 @@
+{
+    "title": "In Kern-Events exportieren",
+    "description": "Wähle das Event, dann die Tage",
+    "events": {
+        "svs": "SvS",
+        "showdown": "Alliance Showdown",
+        "king": "King of Icefield",
+        "hall": "Hall of Chief"
+    },
+    "stepEvent": "1. Event",
+    "stepDay": "{number}. Eventtag {group}",
+    "stepDayPlain": "Eventtag",
+    "stepItems": "{number}. Items aus diesem Plan",
+    "noDay": "{event} hat keine Wertungszeile für diese Items.",
+    "daysHint": "Nur die Tage, deren Wertungszeilen ein Item zählen, sind aufgelistet. Hall of Chief listet Stages statt Tage. Jede Itemgruppe bekommt einen eigenen Tag.",
+    "lineEach": "{points} je am {day}.",
+    "lineNotScored": "{event} hat dafür keine Wertungszeile.",
+    "notScored": "Nicht gewertet",
+    "points": "{points} Punkte",
+    "addedTo": "Zu {event} hinzugefügt",
+    "nothingScores": "Nichts in diesem Plan punktet in {event} an den gewählten Tagen.",
+    "summaryTitle": "Zusammenfassung des Exports",
+    "summaryHint": "Was dieselben Items in jedem Event punkten würden, wenn jedes Item an einem Tag eingesetzt wird, der es wertet. Nur das gewählte Event und die gewählten Tage erhalten sie. Die Seite Kern-Events zeigt sie als Zähler, die du ändern kannst.",
+    "selected": "Gewählt",
+    "cancel": "Abbrechen",
+    "export": "In {event} exportieren",
+    "toast": {
+        "title": "In Kern-Events exportiert",
+        "message": "{points} Punkte zu {event} hinzugefügt.",
+        "undo": "Rückgängig"
+    }
+}

@@ -1,0 +1,85 @@
+{
+    "nav": {
+        "main": "Hauptmenü",
+        "groups": {
+            "chief": "Häuptling",
+            "alliance": "Allianz",
+            "account": "Account",
+            "planner": "Planer",
+            "wiki": "Wiki"
+        },
+        "items": {
+            "overview": "Übersicht",
+            "buildings": "Gebäude",
+            "daybreakIsland": "Daybreak Island",
+            "heroes": "Helden",
+            "chiefGear": "Häuptlingsgear",
+            "experts": "Experten",
+            "pets": "Haustiere",
+            "troops": "Truppen",
+            "research": "Forschung",
+            "alliance": "Allianz",
+            "facilities": "Anlagen",
+            "tech": "Tech",
+            "resources": "Ressourcen",
+            "bonuses": "Boni",
+            "vip": "VIP",
+            "skins": "Skins",
+            "events": "Events",
+            "tundraAlbum": "Tundra Album",
+            "coreEvents": "Kern-Events",
+            "dailies": "Tagesaufgaben",
+            "history": "Verlauf",
+            "wikiReference": "Referenz",
+            "wikiTimeline": "Zeitleiste",
+            "settings": "Einstellungen",
+            "chiefs": "Häuptlinge"
+        },
+        "upgradesRunning": ", {amount} {count, plural, one {Upgrade} other {Upgrades}} aktiv"
+    },
+    "appShell": {
+        "skipToContent": "Zum Inhalt springen",
+        "closeMenu": "Menü schließen"
+    },
+    "appBar": {
+        "openMenu": "Menü öffnen"
+    },
+    "chiefGate": {
+        "emptyTitle": "Kein Häuptling gewählt",
+        "emptyDescription": "Lege einen Häuptling an, um loszulegen. Alles bleibt in diesem Browser.",
+        "newChief": "Neuer Häuptling"
+    },
+    "chiefSwitcher": {
+        "chiefs": "Häuptlinge",
+        "active": "Aktiv",
+        "allChiefs": "Alle Häuptlinge",
+        "newChief": "Neuer Häuptling",
+        "loading": "Lädt",
+        "noChiefYet": "Noch kein Häuptling",
+        "sectionLabel": "Häuptling",
+        "switchChief": "Häuptling wechseln"
+    },
+    "footer": {
+        "tagline": "Verfolge deine Whiteout Survival Häuptlinge, Gebäude, Helden und Forschung an einem Ort.",
+        "product": "Tracker",
+        "support": "Support",
+        "wikiReference": "Wiki-Referenz",
+        "wikiTimeline": "Wiki-Zeitleiste",
+        "backupAndData": "Backup und Daten",
+        "aboutApp": "Über",
+        "disclaimerTitle": "Haftungsausschluss",
+        "disclaimer": "Diese Anwendung steht in keiner Verbindung zu Whiteout Survival oder Century Games und wird von ihnen weder unterstützt noch gefördert. Alle Marken und Spielinhalte sind Eigentum ihrer jeweiligen Inhaber.",
+        "copyright": "© {year} {appName}",
+        "framework": "Erstellt mit dem Gamerdex-Framework, einer gemeinsamen Basis für kostenlose Spielfortschritts-Tracker. Deine Daten bleiben in deinem Browser."
+    },
+    "notFound": {
+        "title": "Diese Seite gibt es nicht",
+        "description": "Der Link ist vielleicht alt oder falsch getippt. Deine Häuptlinge sind sicher und nichts wurde geändert.",
+        "didYouMean": "Meintest du <link>{name}</link>?",
+        "goToOverview": "Zur Übersicht",
+        "jumpTo": "Oder springe zu"
+    },
+    "pageHeader": {
+        "wiki": "Wiki"
+    }
+}

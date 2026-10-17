@@ -1,0 +1,32 @@
+{
+    "line": "Das Paket hat {have} der {total} Alben. Jedes hat einen Buff, Abschlussbelohnungen und {puzzles} Puzzles.",
+    "note": "Die anderen {missing} Alben werden hinzugefügt, sobald das Paket sie hat.",
+    "albums": "Alben",
+    "puzzleCount": "{count, plural, one {{amount} Puzzle} other {{amount} Puzzles}}",
+    "pieceCount": "{count, plural, one {{amount} Teil} other {{amount} Teile}}",
+    "view": {
+        "label": "Ansicht",
+        "puzzles": "Puzzles",
+        "pieces": "Alle Teile"
+    },
+    "album": {
+        "counts": "{puzzles}, {pieces}",
+        "buff": "Buff bei Abschluss",
+        "buffValue": "{stat} {value}",
+        "rewards": "Abschlussbelohnungen",
+        "buffNote": "Der Buff zählt nur, wenn alle {puzzles} Puzzles fertig sind."
+    },
+    "puzzles": {
+        "title": "Puzzles",
+        "puzzle": "Puzzle",
+        "pieces": "Teile",
+        "star": "Stern {stars}",
+        "reward": "Belohnung"
+    },
+    "allPieces": {
+        "title": "Alle Teile",
+        "summary": "{pieces} in {puzzles}",
+        "imageNote": "Teilebilder stammen aus dem Paket. Ein Teil ohne Bild zeigt ein schlichtes Quadrat.",
+        "stars": "{count, plural, one {{amount} Stern} other {{amount} Sterne}}"
+    }
+}

@@ -1,0 +1,90 @@
+{
+    "page": {
+        "title": "Tundra Album"
+    },
+    "view": {
+        "subline": "{chief} · {details} · hoàn thành {complete} trên {total} album"
+    },
+    "summary": {
+        "label": "Album đã hoàn thành",
+        "value": "{done} trên {total}",
+        "progress": "Album đã hoàn thành",
+        "inData": "{shown} trên {all} album có trong dữ liệu"
+    },
+    "buffs": {
+        "title": "Buff đang được tính",
+        "derived": "Suy ra",
+        "none": "Chưa album nào hoàn thành, nên chưa có buff Tundra Album nào được tính.",
+        "note": "Chỉ album đã hoàn thành mới được tính. Các buff này đưa vào trang <link>Cộng thêm</link>."
+    },
+    "album": {
+        "status": {
+            "complete": "Đã hoàn thành",
+            "inProgress": "Đang làm"
+        },
+        "buffWhenComplete": "Buff khi hoàn thành",
+        "puzzlesDone": "Ghép hình đã xong",
+        "puzzlesValue": "{done} trên {total}",
+        "puzzlesProgress": "Ghép hình đã xong của {album}",
+        "completionRewards": "Phần thưởng hoàn thành",
+        "markComplete": "Đánh dấu album hoàn thành",
+        "notCounting": "Chưa được tính. {buff} chỉ được tính ở trang Cộng thêm khi xong cả {total} ghép hình. Đánh dấu album hoàn thành sẽ đặt cả {total} ghép hình và hiện thông báo Hoàn tác.",
+        "counting": "Đang được tính. {buff} có ở trang Cộng thêm. Bỏ chọn một ghép hình sẽ gỡ nó ra.",
+        "piecesValue": "Đã thu thập {collected} trên {total} mảnh ghép"
+    },
+    "puzzle": {
+        "pieces": "{count, plural, other {{amount} mảnh ghép}}, sao 1 đến 5: {split}",
+        "reward": "Phần thưởng",
+        "done": "Ghép hình đã xong, đã thu thập mọi mảnh",
+        "doneFor": "Đã xong, {puzzle}",
+        "collectedLabel": "Mảnh ghép đã thu thập",
+        "collected": "{collected} trên {total}",
+        "pieceLabel": "{name}, {stars} sao",
+        "pieceHint": "Chọn các mảnh bạn có. Đánh dấu ghép hình xong sẽ thu thập tất cả.",
+        "allCollected": "Ghép hình đã xong, nên mọi mảnh đã được thu thập."
+    },
+    "reward": {
+        "line": "{amount} {item}",
+        "sized": "{amount} {item} ({size})",
+        "unknownItem": "Vật phẩm không rõ"
+    },
+    "toast": {
+        "markedTitle": "Đã đánh dấu {album} hoàn thành",
+        "markedMessage": "Cả {total} ghép hình đã xong.",
+        "unmarkedTitle": "Đã bỏ đánh dấu {puzzle}",
+        "unmarkedMessage": "{album} lại đang làm và buff của nó đã rời khỏi Cộng thêm.",
+        "undo": "Hoàn tác"
+    },
+    "notInData": "{count} trên {total} Tundra Album còn lại chưa có trong dữ liệu. Chúng sẽ được thêm khi gói dữ liệu có.",
+    "pieces": {
+        "label": "Mảnh ghép đã thu thập",
+        "value": "{collected} trên {available}",
+        "progress": "Mảnh ghép đã thu thập ở mọi album",
+        "viewRewards": "Xem phần thưởng mảnh ghép"
+    },
+    "rewardsFlyout": {
+        "title": "Phần thưởng theo số mảnh ghép",
+        "description": "Phần thưởng bạn nhận được khi số mảnh ghép thu thập ở mọi album cộng dồn",
+        "close": "Đóng",
+        "collected": "Mảnh ghép đã thu thập",
+        "collectedValue": "{collected} trên {available}",
+        "progress": "Mảnh ghép đã thu thập ở mọi album",
+        "reached": "Đã đạt {reached} trên {all} phần thưởng theo số mảnh ghép",
+        "next": "Phần thưởng kế tiếp ở {pieces} mảnh ghép, còn {missing} mảnh nữa.",
+        "allReached": "Đã đạt mọi phần thưởng theo số mảnh ghép trong dữ liệu.",
+        "totalSoFar": "Phần thưởng đã nhận đến nay",
+        "tree": "Phần thưởng theo số mảnh ghép đã thu thập",
+        "tier": "Phần thưởng {tier} ở {pieces} mảnh ghép",
+        "stateReached": "Đã nhận",
+        "stateNext": "Kế tiếp, còn {missing}",
+        "stateLater": "Còn {missing}"
+    },
+    "picker": {
+        "label": "Album",
+        "title": "Album",
+        "complete": "Album đã hoàn thành",
+        "puzzles": "{done} trên {total} ghép hình",
+        "pieces": "{collected} trên {total} mảnh ghép",
+        "piecesProgress": "Mảnh ghép đã thu thập của {album}"
+    }
+}

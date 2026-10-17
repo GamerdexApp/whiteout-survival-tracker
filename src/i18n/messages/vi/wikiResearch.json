@@ -1,0 +1,77 @@
+{
+    "line": "{nodes} nút nghiên cứu trong {tabs} tab. Chỉ để tham khảo, không có gì ở đây được lưu.",
+    "tabsLabel": "Danh mục nghiên cứu",
+    "tabs": {
+        "battle": "Battle",
+        "growth": "Growth",
+        "economy": "Economy",
+        "t11": "T11",
+        "t12": "T12"
+    },
+    "search": {
+        "label": "Tìm kiếm",
+        "placeholder": "Tìm trong {amount} nút nghiên cứu"
+    },
+    "filters": {
+        "tier": "Bậc",
+        "allTiers": "Tất cả",
+        "tierOption": "Bậc {tier}",
+        "troop": "Loại quân",
+        "allTroops": "Tất cả",
+        "troops": {
+            "Infantry": "Bộ binh",
+            "Marksman": "Xạ thủ",
+            "Lancer": "Kỵ binh"
+        },
+        "data": "Dữ liệu",
+        "dataOptions": {
+            "all": "Mọi nút",
+            "placeholders": "Chỗ giữ chỗ",
+            "missingTime": "Thiếu thời gian"
+        }
+    },
+    "list": {
+        "title": "Nút",
+        "empty": "Không có nút nghiên cứu nào khớp tìm kiếm này.",
+        "emptyHint": "Hãy xóa từ khóa hoặc một bộ lọc.",
+        "columns": {
+            "node": "Nút",
+            "tier": "Bậc",
+            "levels": "Cấp",
+            "bonus": "Cộng thêm ở cấp 1",
+            "time": "Thời gian, cấp 1",
+            "power": "Sức mạnh"
+        },
+        "mobileMeta": "{category}, bậc {tier}, {levels}",
+        "count": "{count, plural, other {{amount} nút}}"
+    },
+    "levels": "{count, plural, other {{amount} cấp}}",
+    "detail": {
+        "columns": {
+            "level": "Cấp",
+            "requires": "Yêu cầu",
+            "cost": "Chi phí",
+            "time": "Thời gian",
+            "bonus": "Cộng thêm",
+            "power": "Sức mạnh"
+        },
+        "level": "Cấp {level}",
+        "none": "Không có",
+        "placeholderNote": "Nút này là chỗ giữ chỗ. Gói dữ liệu không có chi phí và chỉ số cộng thêm cho nó.",
+        "requirement": {
+            "building": "{name} {level}",
+            "research": "{name} cấp {level}"
+        },
+        "levelsTitle": "Các cấp"
+    },
+    "view": {
+        "label": "Chế độ xem",
+        "list": "Danh sách",
+        "tree": "Cây"
+    },
+    "tree": {
+        "region": "Cây nghiên cứu {tab}",
+        "openNode": "{name}, {levels}",
+        "tier": "T{tier}"
+    }
+}

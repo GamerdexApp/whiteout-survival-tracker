@@ -1,0 +1,303 @@
+{
+  "title": "Pesquisa",
+  "unknown": "Desconhecido",
+  "nodeCount": "{count, plural, one {{amount} nó} other {{amount} nós}}",
+  "jobTitle": "{name}, nível {from} a {to}",
+  "tabs": {
+    "growth": "Crescimento",
+    "economy": "Economia",
+    "battle": "Batalha",
+    "war-academy-troops": "War Academy T11",
+    "t12-infantry": "Infantaria T12",
+    "t12-marksman": "Atiradores T12",
+    "t12-lancer": "Lanceiros T12"
+  },
+  "tier": {
+    "plain": "Tier {tier}",
+    "troopLine": "{line} T{tier}"
+  },
+  "requirement": {
+    "yours": "O seu é {level}",
+    "notBuilt": "Não construída",
+    "researchLevel": "{name} nível {level}",
+    "yoursLevel": "O seu é o nível {level}",
+    "notReleased": "{id} (ainda não lançado)"
+  },
+  "tabLock": {
+    "unknownAge": "A pesquisa {tab} abre com o servidor a {days} dias de idade. A do seu é desconhecida. Informe a data de início do servidor em Editar chefe.",
+    "knownAge": "A pesquisa {tab} abre com o servidor a {days} dias de idade. O seu tem {yours}."
+  },
+  "option": {
+    "label": "{name}, {tab}, nível {from} a {to}",
+    "subtitle": "Nível {from} a nível {to}, aba {tab}",
+    "busy": "Ocupada: {name} nível {level}, {timeLeft}"
+  },
+  "nodeCard": {
+    "allResearched": "Todos os níveis pesquisados",
+    "nextTime": "Tempo do nível {level}: {time}",
+    "power": {
+      "researched": "{power} pesquisado",
+      "next": "+{power} no próximo nível",
+      "some": "Poder {parts}",
+      "none": "Poder 0"
+    },
+    "maxed": "No máximo. {bonus}",
+    "noBonus": "Sem bônus nos dados",
+    "level": "Nível {level} / {max}",
+    "goal": "Meta {goal}",
+    "noGoal": "Sem meta",
+    "progress": "Progresso de {name}",
+    "lockedByTab": "Bloqueado: {reason}",
+    "lockedByRequirement": "Bloqueado: requer {requirement}",
+    "placeholder": "Provisório. Custo e bônus estão vazios no pacote de dados.",
+    "needsFirst": "Requer {names} antes",
+    "researching": "{name} em pesquisa",
+    "levelStepper": "Nível de {name}",
+    "detailsOf": "Detalhes de {name}",
+    "details": "Detalhes"
+  },
+  "queuesStrip": {
+    "title": "Filas de pesquisa",
+    "note": "Crescimento, Economia e Batalha compartilham uma fila. T11 e T12 usam a fila da War Academy.",
+    "idle": "Uma pesquisa por vez. Toque em Iniciar melhoria para começar uma."
+  },
+  "filters": {
+    "title": "Filtros",
+    "description": "Escolha o que a aba {tab} mostra",
+    "reset": "Redefinir",
+    "show": "Mostrar {nodes}",
+    "tier": "Tier",
+    "statusLabel": "Status",
+    "troopLine": "Linha de tropas",
+    "orderLabel": "Ordem",
+    "notSaved": "Os filtros não são salvos.",
+    "all": "Todos",
+    "status": {
+      "all": "Todos",
+      "progress": "Em andamento",
+      "goal": "Com meta",
+      "maxed": "No máximo",
+      "locked": "Bloqueados",
+      "notStarted": "Não iniciados"
+    },
+    "order": {
+      "game": "Ordem do jogo",
+      "name": "Nome, de A a Z",
+      "level": "Nível, maior primeiro"
+    }
+  },
+  "massSet": {
+    "stop": "{level} de {max}",
+    "title": "Definição em massa, {tab}",
+    "description": "Escolha um nó e um nível. Tudo o que vem antes dele na árvore vai ao máximo.",
+    "cancel": "Cancelar",
+    "set": "Definir {nodes}",
+    "node": "Nó",
+    "level": "Nível",
+    "levelToSet": "Nível a definir",
+    "whatChanges": "O que muda na aba {tab}",
+    "nothingChanges": "Nada muda. Todos os nós aqui já estão neste nível ou acima.",
+    "change": "{from} a {to}",
+    "hidden": "e mais {amount} nós anteriores",
+    "alreadyMax": "{count, plural, one {{amount} nó anterior já está} other {{amount} nós anteriores já estão}} no máximo e continuam como estão. Os nós seguintes da árvore não são alterados. Um nível que já é maior continua.",
+    "blockersTitle": "Alguns nós precisam de uma construção antes.",
+    "blocker": "{name} requer {building}",
+    "blockersMore": " e mais {amount}",
+    "blockers": "{list}{more}. Escolha um nó anterior ou suba a construção na página Construções.",
+    "footnote": "A definição em massa muda só os níveis salvos desta aba. Ela nunca reduz um nível. As metas não mudam."
+  },
+  "nodeFlyout": {
+    "fallbackTitle": "Pesquisa",
+    "description": "{category}, tier {tier}, {levels} níveis",
+    "close": "Fechar",
+    "unknown": "Desconhecido",
+    "levelOf": "Nível {level} de {max}",
+    "status": {
+      "notStarted": "não iniciado",
+      "maxed": "no máximo",
+      "inProgress": "em andamento"
+    },
+    "goal": "Meta {goal}",
+    "noGoal": "Sem meta",
+    "openPlan": "Abrir Plano",
+    "maxLevel": {
+      "title": "Nível máximo",
+      "nothingLeft": "Nada mais a pesquisar.",
+      "noBonus": "Sem bônus nos dados."
+    },
+    "placeholder": {
+      "title": "Provisório",
+      "description": "Este nó ainda não tem custo nem bônus no pacote de dados. O tempo e o custo da pesquisa mostram Desconhecido."
+    },
+    "upcoming": {
+      "first": "Primeiros níveis",
+      "after": "Próximos níveis depois de {level}",
+      "heads": {
+        "level": "Nível",
+        "bonus": "Bônus",
+        "time": "Tempo",
+        "power": "Poder"
+      },
+      "goalBadge": "Meta",
+      "noBonus": "Nenhum",
+      "shaded": "As linhas sombreadas são os níveis entre o seu nível e a sua meta."
+    },
+    "cost": {
+      "title": "Custo dos próximos níveis",
+      "level": "Nív."
+    },
+    "total": {
+      "title": "Total até a sua meta, nível {level} a {goal}",
+      "knownTime": "Tempo de pesquisa conhecido",
+      "power": "Poder",
+      "missingTimes": "{count, plural, one {{amount} nível não tem} other {{amount} níveis não têm}} tempo no pacote de dados e contam como 0 aqui."
+    },
+    "requirements": {
+      "title": "Requisitos do nível {level}",
+      "none": "Sem requisitos.",
+      "met": "Atendido",
+      "notMet": "Não atendido",
+      "later": "Os níveis seguintes pedem: {list}."
+    }
+  },
+  "tree": {
+    "legend": {
+      "max": "Máx.",
+      "inProgress": "Em andamento",
+      "notStarted": "Não iniciado",
+      "locked": "Bloqueado"
+    },
+    "pillMax": "Máx. {max}",
+    "pillLevel": "Lv {level} de {max}",
+    "region": "Árvore de pesquisa {tab}",
+    "openNode": "{name}, {pill}. Abrir detalhes"
+  },
+  "plan": {
+    "title": "Planejar pesquisa",
+    "description": "Recursos, tempo e poder do nível atual até a meta",
+    "saved": "Plano salvo {date}",
+    "close": "Fechar",
+    "save": "Salvar plano",
+    "goals": "Metas, {nodes}",
+    "noGoals": "Nenhuma meta ainda. Adicione um nó de pesquisa acima e escolha o nível que quer alcançar.",
+    "goalsHint": "O nível atual é o da página. Mude-o lá. As metas são só de leitura na página e são definidas aqui.",
+    "failed": "Não foi possível calcular o plano.",
+    "timeNote": "O plano leva {time} depois do bônus de velocidade de {percent}%. Seu estoque: Pesquisa {research} min, Gerais {general} min. Os aceleradores gerais contam para a pesquisa.",
+    "percent": "{value}%",
+    "percentPlus": "+{value}%",
+    "appointment": {
+      "none": "Nenhuma",
+      "regular": "Comum",
+      "supreme": "Suprema"
+    },
+    "add": {
+      "title": "Adicionar um nó de pesquisa",
+      "none": "Todos os nós já estão no plano ou no nível máximo.",
+      "select": "Nó de pesquisa a adicionar",
+      "button": "Adicionar pesquisa"
+    },
+    "speed": {
+      "title": "Velocidade de pesquisa",
+      "readOnly": "Só leitura",
+      "carriedOver": "Trazida da página Bônus.",
+      "turnedOff": "Desativada em Configurações, em Aplicar meus totais de Bônus.",
+      "openBonuses": "Abrir Bônus",
+      "stateBuff": "Buff do Estado",
+      "vicePresident": "Vice-presidente",
+      "total": "Velocidade de pesquisa total"
+    },
+    "goal": {
+      "level": "Nível {level}",
+      "to": "para",
+      "label": "Meta de {name}",
+      "remove": "Remover {name} do plano"
+    },
+    "result": {
+      "title": "Resultado, {steps} passos",
+      "powerGained": "Poder ganho",
+      "speedupMinutes": "Minutos de aceleração necessários",
+      "baseTime": "Tempo base",
+      "timeWithBonus": "Tempo com bônus de {percent}%",
+      "stepsWithoutTime": "{count, plural, one {{amount} passo não tem} other {{amount} passos não têm}} tempo no pacote de dados e contam como 0 segundo.",
+      "stepCount": "{count, plural, one {{amount} passo} other {{amount} passos}}",
+      "buildingRequirements": "Requisitos de construção",
+      "unmet": "Pré-requisitos não atendidos",
+      "unmetNone": "Nenhum para estas metas.",
+      "unmetItem": "{name} nível {level} requer {requires} nível {requiresLevel}"
+    },
+    "export": {
+      "button": "Exportar para Eventos principais",
+      "empty": "Adicione uma meta ao plano para exportá-lo.",
+      "speedupMinutes": "Minutos de aceleração de pesquisa",
+      "power": "Poder ganho com pesquisa",
+      "computed": "Calculado pelo app a partir do resultado do plano.",
+      "unscored": "Nenhum evento pontua {name}."
+    }
+  },
+  "view": {
+    "ofTotal": "{count} de {total}",
+    "undo": "Desfazer",
+    "massSetApplied": {
+      "title": "Definição em massa aplicada",
+      "message": "{nodes} atualizados."
+    },
+    "started": {
+      "title": "Pesquisa iniciada",
+      "message": "{name}, nível {from} a {to}."
+    },
+    "manage": {
+      "slotLabel": "{queue}, {category}",
+      "finishText": "Concluir melhoria define {name} como nível {level}, libera a fila {queue} e adiciona a melhoria ao seu Histórico. Com zero de tempo restante, o nó e o cartão da fila mostram Pronto para concluir. Nada termina sozinho, porque você pode ter usado aceleradores."
+    },
+    "finished": {
+      "title": "{name} pesquisada",
+      "message": "Agora no nível {level}. Adicionada ao Histórico."
+    },
+    "cancelled": {
+      "title": "Pesquisa de {name} cancelada",
+      "message": "O nível continua como estava. Corrija seu estoque em Recursos se precisar."
+    },
+    "subline": {
+      "researchCenter": "Research Center {level}",
+      "warAcademy": "War Academy {level}"
+    },
+    "stats": {
+      "maxed": "Nós no máximo, {percent}% da árvore",
+      "power": "Poder de pesquisa, o poder de cada nível pesquisado",
+      "withoutTimeNone": "Sem tempo de pesquisa, todo nível tem um",
+      "withoutTimeSome": "Sem tempo de pesquisa, mostrado como Desconhecido",
+      "locked": "Bloqueados por idade do servidor ou requisitos"
+    },
+    "tabLockedNote": "{reason} Você ainda pode definir metas em Plano.",
+    "lockedByRequirement": "{count} de {total} nós desta aba estão bloqueados por um requisito.",
+    "search": {
+      "label": "Buscar nós",
+      "placeholder": "Buscar nós por nome ou bônus"
+    },
+    "massSet": "Definição em massa",
+    "layout": {
+      "label": "Layout",
+      "grid": "Grade",
+      "tree": "Árvore"
+    },
+    "plan": "Plano",
+    "status": {
+      "tree": "{count} nós na árvore {tab}. Poder de pesquisa nesta aba: {power}. Role para mover. Os nós que não correspondem à busca ou aos filtros ficam esmaecidos.",
+      "grid": "Mostrando {shown} de {count} nós de {tab}. Poder de pesquisa nesta aba: {power}. As metas são só de leitura aqui e são definidas em Plano."
+    },
+    "empty": {
+      "title": "Nenhum nó encontrado",
+      "description": "Mude a busca ou redefina os filtros para ver todos os nós.",
+      "reset": "Redefinir busca e filtros"
+    },
+    "start": {
+      "description": "Marcar uma pesquisa como em melhoria",
+      "selectLabel": "Pesquisa a melhorar",
+      "selectHelp": "Só aparecem as pesquisas que você pode iniciar agora. As bloqueadas, as no máximo e as em andamento ficam de fora. Uma pesquisa de Crescimento, Economia ou Batalha usa a fila de Pesquisa. Uma pesquisa T11 ou T12 usa a fila da War Academy.",
+      "timeLabel": "Tempo de pesquisa",
+      "speedLabel": "Velocidade de pesquisa",
+      "slotLabel": "Fila",
+      "slotHelp": "Uma pesquisa por vez em cada fila. Quando a fila está ocupada, este cartão diz quando ela libera."
+    }
+  }
+}

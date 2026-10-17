@@ -1,0 +1,145 @@
+{
+    "line": "{events} Events: {alliance} Allianz, {solo} Solo, {rookie} Neuling und {holiday} Feiertag. Phasen, Wertung, Belohnungen, Tipps, Shops und Ranglisten, soweit das Paket sie hat.",
+    "list": {
+        "title": "Events",
+        "showing": "{shown} von {total} angezeigt",
+        "search": "Suche",
+        "searchPlaceholder": "Events nach Name suchen",
+        "scoringFilter": "Wertung",
+        "categoryLabel": "Kategorie",
+        "all": "Alle",
+        "table": "Events",
+        "event": "Event",
+        "category": "Kategorie",
+        "frequency": "Häufigkeit (Freitext)",
+        "duration": "Dauer (Freitext)",
+        "scoringRows": "Wertungszeilen",
+        "noScoringRows": "Keine Wertungszeilen",
+        "emptyTitle": "Kein passendes Event",
+        "emptyDescription": "Ändere die Suche, die Kategorie oder die Wertung."
+    },
+    "category": {
+        "alliance": "Allianz",
+        "solo": "Solo",
+        "rookie": "Neuling",
+        "holiday": "Feiertag"
+    },
+    "scoring": {
+        "any": "Beliebige Wertung",
+        "ranking": "Rangliste",
+        "tier": "Tiers",
+        "milestones": "Meilensteine",
+        "waves": "Wellen",
+        "participation": "Teilnahme"
+    },
+    "parts": {
+        "days": "{count, plural, one {{amount} Tag} other {{amount} Tage}}",
+        "tiers": "{count, plural, one {{amount} Tier} other {{amount} Tiers}}",
+        "missions": "{count, plural, one {{amount} Mission} other {{amount} Missionen}}",
+        "waves": "{count, plural, one {{amount} Welle} other {{amount} Wellen}}",
+        "versions": "{count, plural, one {{amount} Version} other {{amount} Versionen}}",
+        "levels": "{count, plural, one {{amount} Stufe} other {{amount} Stufen}}"
+    },
+    "detail": {
+        "title": "Details",
+        "category": "Kategorie",
+        "frequency": "Häufigkeit",
+        "duration": "Dauer",
+        "summary": "Zusammenfassung",
+        "requirements": "Voraussetzungen",
+        "scoring": "Wertung",
+        "noRequirements": "Keine"
+    },
+    "phases": {
+        "title": "Phasen",
+        "table": "Event-Phasen",
+        "phase": "Phase",
+        "description": "Beschreibung"
+    },
+    "scoringRows": {
+        "title": "Wertungszeilen: {name}",
+        "table": "Wertungsaktionen",
+        "action": "Aktion",
+        "points": "Punkte",
+        "victoryPoints": "{amount} Siegpunkte",
+        "milestones": "Meilensteine von {name}",
+        "allianceMilestones": "Allianz-Meilensteine von {name}"
+    },
+    "missions": {
+        "title": "Missionen",
+        "table": "Event-Missionen",
+        "mission": "Mission",
+        "group": "Gruppe",
+        "points": "Punkte",
+        "rewards": "Belohnungen"
+    },
+    "tiers": {
+        "title": "Tiers",
+        "table": "Event-Tiers",
+        "tier": "Tier",
+        "score": "Ziel",
+        "scoreValue": "{amount} {unit}",
+        "scoreValuePoints": "{amount} Punkte",
+        "rewards": "Belohnungen",
+        "note": "Notiz"
+    },
+    "rankings": {
+        "title": "Ranglistenbelohnungen",
+        "personal": "Belohnungen der persönlichen Rangliste",
+        "alliance": "Belohnungen der Allianz-Rangliste",
+        "basedOn": "Ranglistenbelohnungen basierend auf {basis}",
+        "table": "Ranglistenbelohnungen",
+        "rank": "Rang",
+        "starChange": "Sternänderung",
+        "rewards": "Belohnungen"
+    },
+    "rewards": {
+        "title": "Belohnungen",
+        "partial": "Diese Belohnungsliste ist nicht vollständig.",
+        "amountName": "{amount} {name}"
+    },
+    "pointLevels": {
+        "title": "Punktestufen",
+        "table": "Punktestufen",
+        "level": "Stufe",
+        "personal": "Persönliche Punkte",
+        "alliance": "Allianzpunkte",
+        "rewards": "Belohnungen"
+    },
+    "waves": {
+        "title": "Wellen",
+        "table": "Angriffswellen",
+        "wave": "Welle",
+        "target": "Ziel",
+        "rule": "Regel",
+        "city": "Stadt",
+        "headquarters": "Hauptquartier"
+    },
+    "zones": {
+        "title": "Zonen",
+        "table": "Event-Zonen",
+        "zone": "Zone",
+        "days": "Tage",
+        "statSources": "Wertquellen",
+        "unlock": "Freischaltung"
+    },
+    "shop": {
+        "title": "Shop",
+        "titleNamed": "Shop: {name}",
+        "table": "Shop-Angebote",
+        "offer": "Angebot",
+        "cost": "Kosten",
+        "costValue": "{amount} {currency}",
+        "limit": "Limit",
+        "contents": "Inhalt"
+    },
+    "versions": {
+        "title": "{name}",
+        "missions": "Missionen",
+        "chests": "Truhen"
+    },
+    "tips": {
+        "title": "Tipps"
+    },
+    "recordLine": "{category}-Event mit Phasen, Wertung, Belohnungen und Ranglisten."
+}

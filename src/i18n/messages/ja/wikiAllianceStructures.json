@@ -1,0 +1,104 @@
+{
+    "line": "バナーの範囲{banners}件、施設{facilities}件、城・拠点・要塞{fortresses}件。参考情報のみで、ここには何も保存されません。",
+    "filters": {
+        "search": "検索",
+        "searchPlaceholder": "範囲、施設、要塞を検索",
+        "structure": "建造物",
+        "structures": {
+            "all": "すべての建造物",
+            "banners": "バナー",
+            "facilities": "マップ施設",
+            "castle": "城",
+            "stronghold": "拠点",
+            "fortress": "要塞"
+        }
+    },
+    "empty": "検索に一致するものはこの一覧にありません。",
+    "none": "なし",
+    "banners": {
+        "title": "バナーの建設コスト",
+        "columns": {
+            "range": "レベル範囲",
+            "min": "最小",
+            "max": "最大",
+            "cost": "レベルごとのコスト"
+        },
+        "noCost": "記載なし",
+        "count": "{count, plural, other {{amount}範囲}}",
+        "detail": {
+            "title": "バナーのコスト",
+            "fields": {
+                "range": "レベル範囲",
+                "min": "最低レベル",
+                "max": "最高レベル",
+                "cost": "レベルごとのコスト"
+            }
+        }
+    },
+    "facilities": {
+        "title": "マップ施設",
+        "count": "{count, plural, other {施設{amount}件}}",
+        "columns": {
+            "facility": "施設",
+            "bonus": "ボーナス",
+            "level": "レベル{level}",
+            "listed": "記載のレベル",
+            "ownLimit": "所有上限"
+        },
+        "cell": "マップ上に{available}",
+        "listedOf": "{total}中{listed}",
+        "levelsNote": "データには、この施設の{total}レベルのうち{listed}レベルが記載されています。記載のないレベルは「不明」と表示されます。",
+        "detail": {
+            "title": "{name}のレベル",
+            "level": "レベル{level}",
+            "columns": {
+                "level": "レベル",
+                "booster": "ブースター",
+                "injured": "重傷",
+                "losses": "損失",
+                "ownLimit": "所有上限",
+                "available": "マップ上",
+                "locations": "位置（x, y）"
+            },
+            "percent": "{value}%",
+            "location": "{x}, {y}"
+        }
+    },
+    "fortresses": {
+        "title": "城、拠点、要塞",
+        "kinds": {
+            "castle": "城",
+            "stronghold": "拠点",
+            "fortress": "要塞"
+        },
+        "columns": {
+            "name": "名前",
+            "kind": "種類",
+            "x": "X",
+            "y": "Y",
+            "phases": "フェーズ",
+            "phaseOne": "フェーズ1の報酬"
+        },
+        "mobileMeta": "{kind}、x {x}、y {y}",
+        "count": "{count, plural, other {建造物{amount}件}}"
+    },
+    "map": {
+        "title": "マップの仮表示",
+        "label": "xとyの値による、城、拠点、要塞のマップ",
+        "note": "城、拠点、要塞を、xとyの値から{size}×{size}の正方形にプロットしています。正方形のサイズは推定値で、パッケージにマップのサイズはありません。",
+        "legend": {
+            "castle": "四角: 城",
+            "stronghold": "ひし形: 拠点",
+            "fortress": "丸: 要塞"
+        }
+    },
+    "detail": {
+        "title": "フェーズ報酬",
+        "phases": "{count, plural, other {{amount}フェーズ}}",
+        "columns": {
+            "phase": "フェーズ",
+            "reward": "報酬"
+        },
+        "noRewards": "パッケージに、この建造物のフェーズ報酬はありません。"
+    }
+}

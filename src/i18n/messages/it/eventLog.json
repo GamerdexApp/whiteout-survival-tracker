@@ -1,0 +1,129 @@
+{
+  "title": "Registro eventi",
+  "events": {
+    "svs": "SvS, State of Power",
+    "showdown": "Alliance Showdown",
+    "king": "King of Icefield",
+    "hall": "Hall of Chief"
+  },
+  "tabs": {
+    "label": "Viste del registro eventi",
+    "current": "Evento attuale",
+    "history": "Cronologia"
+  },
+  "dates": {
+    "title": "Date dell'evento",
+    "start": "Inizio",
+    "end": "Fine",
+    "days": "{count, plural, one {{amount} giorno} other {{amount} giorni}}",
+    "endBeforeStart": "La data di fine è prima della data di inizio."
+  },
+  "results": {
+    "rank": "Posizione",
+    "alliance": "Alleanza",
+    "score": "Punteggio",
+    "allianceShort": "All.",
+    "scoreOf": "{day}, punteggio",
+    "rankOf": "{day}, posizione",
+    "allianceOf": "{day}, posizione alleanza",
+    "plan": "Piano {total}",
+    "notStarted": "Non iniziato",
+    "opensLater": "Apre più tardi",
+    "empty": "Vuoto",
+    "locked": "Bloccato",
+    "lock": "Blocca",
+    "unlock": "Sblocca",
+    "lockDay": "Blocca {day}",
+    "unlockDay": "Sblocca {day}"
+  },
+  "cards": {
+    "svsDays": "Giorni di preparazione da 1 a 5",
+    "days": "Giorni",
+    "stages": "Fasi",
+    "rankHint": "Posizione è la tua posizione nello stato. Alleanza è la posizione della tua alleanza.",
+    "battleTitle": "Fase di battaglia",
+    "battleNote": "Punteggio e posizione della battaglia sono un risultato a parte. Non si sommano ai Giorni da 1 a 5."
+  },
+  "overall": {
+    "svsTitle": "Risultato complessivo, Giorni da 1 a 5",
+    "title": "Risultato complessivo",
+    "rank": "Posizione generale",
+    "alliance": "Posizione generale alleanza",
+    "svsTotal": "Totale dei giorni bloccati da 1 a 5",
+    "daysTotal": "Totale dei giorni bloccati",
+    "stagesTotal": "Totale delle fasi bloccate",
+    "hint": "Bloccare impedisce a un numero di cambiare mentre continui a giocare. I numeri bloccati si possono sbloccare."
+  },
+  "footer": {
+    "close": "Chiudi",
+    "endEvent": "Termina evento",
+    "readOnly": "La cronologia è in sola lettura"
+  },
+  "end": {
+    "title": "Terminare {event} e salvarlo nella cronologia?",
+    "dates": "{event}, da {start} a {end}",
+    "noDates": "{event}, nessuna data inserita",
+    "lockedTotal": "Totale dei giorni bloccati: {total}.",
+    "lockedTotalSvs": "Totale dei giorni bloccati da 1 a 5: {total}.",
+    "noRanks": "Posizione generale e posizione dell'alleanza sono vuote.",
+    "allLocked": "Ogni giorno è bloccato.",
+    "unlocked": "{count, plural, one {{amount} giorno non è bloccato.} other {{amount} giorni non sono bloccati.}} Vengono salvati come inseriti, e i giorni senza numeri restano vuoti.",
+    "unlockedList": "Non bloccati: {days}.",
+    "what": "Cosa succede",
+    "saves": "Salva nella Cronologia le date, i punteggi e le posizioni giornalieri e il risultato complessivo, con il totale pianificato di ogni giorno.",
+    "clearsCounts": "Azzera i conteggi di ogni giorno, così ogni giorno del piano riparte da 0.",
+    "clearsPlans": "Cancella i piani esportati in questo evento e le spunte della lista.",
+    "keeps": "Viene azzerato solo questo evento. Obiettivi e piani nelle altre pagine restano.",
+    "cancel": "Annulla",
+    "confirm": "Termina evento e ricomincia",
+    "toastTitle": "Evento terminato",
+    "toastMessage": "{event} è salvato nella Cronologia. L'evento riparte da capo senza date.",
+    "undo": "Annulla",
+    "lockedTotalStages": "Totale delle fasi bloccate: {total}."
+  },
+  "history": {
+    "intro": "Eventi {event} che hai terminato, dal più recente. Terminare un evento ne salva qui il registro, che poi non si può modificare, solo rimuovere. <link>Apri Cronologia per piano contro risultato e potenziamenti pianificati.</link>",
+    "empty": "Ancora nessun evento terminato. Termina un evento per salvarne qui il registro.",
+    "cardTitle": "{event}, da {start} a {end}",
+    "cardNoDates": "{event}, senza date",
+    "ended": "Terminato {date}",
+    "svsTotal": "Giorni da 1 a 5",
+    "total": "Punteggio totale",
+    "overallRank": "Posizione generale",
+    "allianceRank": "Posizione alleanza",
+    "notSet": "Non impostato",
+    "showDays": "Mostra giorni",
+    "hideDays": "Nascondi giorni",
+    "remove": "Rimuovi dalla cronologia",
+    "removedTitle": "Rimosso dalla cronologia",
+    "removedMessage": "{event} è stato rimosso dalla Cronologia.",
+    "undo": "Annulla",
+    "noValue": "-"
+  },
+  "checklist": {
+    "title": "Lista del piano",
+    "description": "{day}, cosa fare",
+    "dayChips": "Giorno",
+    "castleTitle": "Iscriviti a una posizione del Castello per {day}",
+    "castleBody": "Le posizioni del Castello danno bonus per il giorno dopo. Iscriviti prima che oggi finisca, così il bonus è attivo per {day}.",
+    "castleCheck": "Iscritto per {day}",
+    "done": "{done} di {total} fatte",
+    "progress": "Azioni spuntate",
+    "planLine": "Piano del giorno: {points} punti. Sono elencate solo le azioni con un conteggio sopra 0. I conteggi vengono dalla pagina Eventi principali.",
+    "empty": "Nessuna azione ha un conteggio per questo giorno. Aggiungi i conteggi nella pagina Eventi principali.",
+    "resources": "Risorse da usare",
+    "resourcesHint": "Oggetti che il giorno consuma. Controlla le scorte prima di iniziare.",
+    "actions": "Azioni",
+    "count": "x{count}",
+    "points": "{points} pt",
+    "clear": "Cancella spunte",
+    "close": "Chiudi",
+    "dayTitle": "{day}: {name}"
+  },
+  "eventShort": {
+    "svs": "SvS",
+    "showdown": "Alliance Showdown",
+    "king": "King of Icefield",
+    "hall": "Hall of Chief"
+  }
+}

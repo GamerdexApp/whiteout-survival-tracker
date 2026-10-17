@@ -1,0 +1,90 @@
+{
+  "page": {
+    "title": "Tundra Album"
+  },
+  "view": {
+    "subline": "{chief} · {details} · {complete} dari {total} album selesai"
+  },
+  "summary": {
+    "label": "Album selesai",
+    "value": "{done} dari {total}",
+    "progress": "Album selesai",
+    "inData": "{shown} dari {all} album ada di data"
+  },
+  "buffs": {
+    "title": "Buff yang berlaku sekarang",
+    "derived": "Turunan",
+    "none": "Belum ada album selesai, jadi tidak ada buff Tundra Album yang berlaku.",
+    "note": "Hanya album selesai yang dihitung. Buff ini masuk ke halaman <link>Bonus</link>."
+  },
+  "album": {
+    "status": {
+      "complete": "Selesai",
+      "inProgress": "Berjalan"
+    },
+    "buffWhenComplete": "Buff saat selesai",
+    "puzzlesDone": "Puzzle selesai",
+    "puzzlesValue": "{done} dari {total}",
+    "puzzlesProgress": "Puzzle {album} selesai",
+    "completionRewards": "Hadiah penyelesaian",
+    "markComplete": "Tandai album selesai",
+    "notCounting": "Belum berlaku. {buff} baru dihitung di halaman Bonus saat semua {total} puzzle selesai. Tandai album selesai mengisi semua {total} puzzle dan menampilkan toast Urungkan.",
+    "counting": "Berlaku sekarang. {buff} ada di halaman Bonus. Menghapus centang puzzle akan mencabutnya lagi.",
+    "piecesValue": "{collected} dari {total} keping terkumpul"
+  },
+  "puzzle": {
+    "pieces": "{count, plural, other {{amount} keping}}, bintang 1 sampai 5: {split}",
+    "reward": "Hadiah",
+    "done": "Puzzle selesai, semua keping terkumpul",
+    "doneFor": "Selesai, {puzzle}",
+    "collectedLabel": "Keping terkumpul",
+    "collected": "{collected} dari {total}",
+    "pieceLabel": "{name}, {stars} bintang",
+    "pieceHint": "Pilih keping yang kamu punya. Menandai puzzle selesai mengumpulkan semuanya.",
+    "allCollected": "Puzzle selesai, jadi semua keping terkumpul."
+  },
+  "reward": {
+    "line": "{amount} {item}",
+    "sized": "{amount} {item} ({size})",
+    "unknownItem": "Item tidak diketahui"
+  },
+  "toast": {
+    "markedTitle": "{album} ditandai selesai",
+    "markedMessage": "Semua {total} puzzle selesai.",
+    "unmarkedTitle": "{puzzle} tidak ditandai",
+    "unmarkedMessage": "{album} berjalan lagi dan buff-nya keluar dari Bonus.",
+    "undo": "Urungkan"
+  },
+  "notInData": "{count} dari {total} Tundra Album lainnya belum ada di data. Ditambahkan saat paket data memilikinya.",
+  "pieces": {
+    "label": "Keping terkumpul",
+    "value": "{collected} dari {available}",
+    "progress": "Keping terkumpul di semua album",
+    "viewRewards": "Lihat hadiah keping"
+  },
+  "rewardsFlyout": {
+    "title": "Hadiah jumlah keping",
+    "description": "Hadiah yang kamu dapat saat keping yang terkumpul di semua album bertambah",
+    "close": "Tutup",
+    "collected": "Keping terkumpul",
+    "collectedValue": "{collected} dari {available}",
+    "progress": "Keping terkumpul di semua album",
+    "reached": "{reached} dari {all} hadiah jumlah keping tercapai",
+    "next": "Hadiah berikutnya di {pieces} keping, kurang {missing} lagi.",
+    "allReached": "Semua hadiah jumlah keping di data sudah tercapai.",
+    "totalSoFar": "Hadiah yang sudah didapat",
+    "tree": "Hadiah menurut keping terkumpul",
+    "tier": "Hadiah {tier} di {pieces} keping",
+    "stateReached": "Terkumpul",
+    "stateNext": "Berikutnya, kurang {missing}",
+    "stateLater": "Kurang {missing}"
+  },
+  "picker": {
+    "label": "Album",
+    "title": "Album",
+    "complete": "Album selesai",
+    "puzzles": "{done} dari {total} puzzle",
+    "pieces": "{collected} dari {total} keping",
+    "piecesProgress": "Keping {album} terkumpul"
+  }
+}

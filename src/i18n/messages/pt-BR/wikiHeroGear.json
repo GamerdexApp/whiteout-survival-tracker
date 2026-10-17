@@ -1,0 +1,45 @@
+{
+  "line": "{enhancement} níveis de aprimoramento, {empowerment} níveis de potencialização, {mastery} linhas de forja de maestria e {stats} entradas de atributos. Só referência, nada aqui é salvo.",
+  "tabsLabel": "Tabelas de equipamento de herói",
+  "tabs": {
+    "enhancement": "Aprimoramento",
+    "empowerment": "Potencialização",
+    "mastery": "Forja de maestria",
+    "stats": "Atributos"
+  },
+  "levels": {
+    "columns": {
+      "level": "Nível",
+      "cost": "Custo",
+      "power": "Poder",
+      "gain": "Ganho sobre o anterior",
+      "milestonePower": "Poder do marco",
+      "stage": "Etapa",
+      "statsUp": "Atributos a mais"
+    },
+    "none": "Nenhum",
+    "percent": "{value}%",
+    "gainValue": "+{value}"
+  },
+  "stats": {
+    "slot": "Espaço",
+    "troopType": "Tipo de tropa",
+    "troop": {
+      "infantry": "Infantaria",
+      "lancer": "Lanceiro",
+      "marksman": "Atirador"
+    },
+    "note": "Os níveis 101 a 200 dos atributos são os níveis de potencialização 1 a 100.",
+    "columns": {
+      "level": "Nível",
+      "combat": "{stat}",
+      "health": "Vida",
+      "percent": "{stat}"
+    },
+    "level": "Nível {level}",
+    "empowermentLevel": "Nível {level}, potencialização {empowerment}",
+    "milestonesTitle": "Marcos",
+    "milestone": "Nível de potencialização {level}, {event}: {stat}",
+    "percentValue": "{value}%"
+  }
+}

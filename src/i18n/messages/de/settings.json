@@ -1,0 +1,216 @@
+{
+    "chiefCount": "{count, plural, one {{amount} Häuptling} other {{amount} Häuptlinge}}",
+    "localStorageNote": {
+        "title": "Lokaler Speicher.",
+        "body": "Deine Häuptlinge werden nur in diesem Browser gespeichert. Sie gehen verloren, wenn der Browser-Cache geleert wird. Exportiere regelmäßig ein Backup."
+    },
+    "page": {
+        "title": "Einstellungen",
+        "subline": "Verwalte deine Daten, Häuptlingseinstellungen und das Aussehen",
+        "tabsLabel": "Einstellungen",
+        "tabs": {
+            "preferences": "Optionen",
+            "data": "Backup und Daten",
+            "about": "Info"
+        }
+    },
+    "about": {
+        "version": "Version {version}",
+        "summary": "Verfolge deinen Whiteout Survival Fortschritt: Gebäude, Helden, Häuptlingsgear, Experten, Haustiere, Truppen, Forschung, Allianz-Tech, Ressourcen und deinen Planer. Alles wird in diesem Browser gespeichert.",
+        "wiki": "Whiteout Survival Wiki",
+        "disclaimer": "Steht in keiner Verbindung zu Century Games und wird nicht von Century Games unterstützt. Whiteout Survival ist eine Marke von Century Games."
+    },
+    "preferences": {
+        "chiefSettings": {
+            "title": "Häuptlingseinstellungen",
+            "description": "Gelten für jeden Häuptling. Sofort gespeichert.",
+            "footnote": "Eine Option in einem Rechner zu ändern, ändert diese Standards nicht. Die Furnace-Anzeige ändert nur, wie eine Stufe geschrieben wird, nie die Stufe selbst. Einen Häuptling hinzuzufügen oder zu löschen setzt diese Einstellungen nie zurück.",
+            "groups": {
+                "furnaceDisplay": "Furnace-Anzeige",
+                "lists": "Listen",
+                "calculatorOptions": "Standardoptionen der Rechner"
+            },
+            "fullLevelLabels": {
+                "label": "Volle Stufenbezeichnung",
+                "description": "Zeigt die Unterstufe der Furnace, zum Beispiel FC 5-2 statt FC 5, in der Seitenleiste, in der Übersicht und bei Gebäuden. Andere Gebäude zeigen ihre volle Bezeichnung schon."
+            },
+            "hideMaxed": {
+                "label": "Maximierte ausblenden",
+                "description": "Blendet Gebäude, Helden, Haustiere und Experten auf Höchststufe aus. Jede Liste behält einen Filter Maximierte zeigen, daher geht nichts verloren."
+            },
+            "useBonuses": {
+                "label": "Meine Boni-Summen anwenden",
+                "description": "Neue Rechner starten mit dem Prozentwert der Baugeschwindigkeit von der Boni-Seite. Ein Rechner kann ihn für einen Durchlauf weiter ändern."
+            },
+            "showSpeedups": {
+                "label": "Beschleuniger-Minuten zeigen",
+                "description": "Zeigt die nötigen Beschleuniger-Minuten unter der Zeit in jedem Rechnerergebnis."
+            },
+            "showEventPoints": {
+                "label": "Event-Punkte zeigen",
+                "description": "Fügt die Zeile mit Event-Punkten zu Rechnerergebnissen hinzu, die sie liefern."
+            }
+        },
+        "appearance": {
+            "title": "Aussehen",
+            "description": "Wähle, wie die App aussieht. Wird mit deinen Daten gespeichert.",
+            "themeLabel": "Design",
+            "themeNote": "System folgt deinem Gerät und ist gerade {current}. Diese Wahl ist Teil deines Backups."
+        },
+        "themes": {
+            "light": "Hell",
+            "dark": "Dunkel",
+            "system": "System"
+        }
+    },
+    "data": {
+        "backupDownloaded": "Backup heruntergeladen",
+        "merged": "Backup zusammengeführt",
+        "replaced": "Backup ersetzt",
+        "undo": "Rückgängig",
+        "resetDone": "Alle Daten zurückgesetzt",
+        "resetDoneMessage": "{chiefs} entfernt und Einstellungen gelöscht.",
+        "management": {
+            "title": "Datenverwaltung",
+            "description": "Eine Backup-Datei enthält jeden Häuptling und deine Einstellungen."
+        },
+        "export": {
+            "title": "Daten exportieren",
+            "description": "Lade eine Backup-Datei aller gespeicherten Häuptlinge herunter. Dateiname: <file>{fileName}</file>. Das Datum ist dein lokaler Tag.",
+            "button": "Alle Häuptlinge exportieren"
+        },
+        "import": {
+            "title": "Daten importieren",
+            "description": "Lade eine zuvor exportierte Datei (.json) hoch. Sie wird zuerst geprüft, dann wählst du Zusammenführen oder Ersetzen und siehst, was sich ändert. Nichts ändert sich, bis du bestätigst.",
+            "chooseFile": "Datei wählen",
+            "noFile": "Keine Datei gewählt",
+            "review": "Import prüfen"
+        },
+        "reset": {
+            "title": "Alle Daten zurücksetzen",
+            "warningTitle": "Warnung:",
+            "warning": "Das löscht alle Häuptlinge und setzt deine Häuptlingseinstellungen und das Design zurück. Du kannst 10 Sekunden lang rückgängig machen. Exportiere vorher ein Backup, wenn du eine Kopie behalten willst.",
+            "button": "Alle Daten zurücksetzen"
+        },
+        "chiefs": {
+            "title": "Häuptlinge",
+            "description": "Lege Häuptlinge auf ihrer eigenen Seite an, benenne, bearbeite und lösche sie. Export, Import und Zurücksetzen gelten für alle.",
+            "manage": "Häuptlinge verwalten"
+        }
+    },
+    "importDialog": {
+        "title": "Backup importieren",
+        "cancel": "Abbrechen",
+        "close": "Schließen",
+        "merge": "Zusammenführen",
+        "replace": "Ersetzen",
+        "failedTitle": "Import fehlgeschlagen.",
+        "checksTitle": "Prüfungen der Datei.",
+        "checks": "Die Häuptlingsliste wurde gefunden und {count, plural, one {{amount} Eintrag wurde} other {{amount} Einträge wurden}} gelesen. Noch nichts wurde gespeichert, daher sind deine aktuellen Häuptlinge unberührt.",
+        "howToApply": "Wie soll die Datei angewendet werden?",
+        "modeLabel": "Importmodus",
+        "modes": {
+            "merge": "Zusammenführen (empfohlen)",
+            "replace": "Alles auf diesem Gerät ersetzen"
+        },
+        "modeNotes": {
+            "merge": "Fügt neue Häuptlinge hinzu und behält die neuere Kopie eines Häuptlings, der in beiden vorkommt. Häuptlinge nur auf diesem Gerät bleiben. Deine Einstellungen bleiben.",
+            "replace": "Entfernt jeden Häuptling auf diesem Gerät und lädt die Datei, wie sie ist, inklusive ihrer Einstellungen. Nutze das, um eine exakte Kopie wiederherzustellen."
+        },
+        "whatChanges": "Was sich ändert",
+        "columns": {
+            "chief": "Häuptling",
+            "inFile": "In der Datei",
+            "onDevice": "Auf diesem Gerät",
+            "result": "Ergebnis"
+        },
+        "results": {
+            "added": "Hinzugefügt",
+            "updated": "Aus der Datei aktualisiert",
+            "kept": "Kopie auf diesem Gerät behalten",
+            "replaced": "Aus der Datei geladen",
+            "removed": "Entfernt"
+        },
+        "notThere": "Nicht vorhanden",
+        "noChiefs": "Keine Häuptlinge in der Datei.",
+        "undoNote": "Rückgängig bleibt nach dem Import 10 Sekunden verfügbar.",
+        "bytes": "{amount} B",
+        "kilobytes": "{amount} KB",
+        "fileInfo": "{name} · {size}"
+    },
+    "resetDialog": {
+        "title": "Alle Daten zurücksetzen",
+        "cancel": "Abbrechen",
+        "confirm": "Ja, alle Daten zurücksetzen",
+        "question": "Alle {chiefs} aus diesem Browser löschen?",
+        "removedTitle": "Was entfernt wird",
+        "settingsNote": "Deine Wahl Hell, Dunkel oder System kehrt zu System zurück. Häuptlingseinstellungen kehren zu ihren Standards zurück. Der aktive Häuptling wird geleert.",
+        "undoNote": "Rückgängig bleibt nach dem Zurücksetzen 10 Sekunden verfügbar. Exportiere vorher ein Backup, wenn du eine dauerhafte Dateikopie willst.",
+        "exportFirst": "Zuerst Backup exportieren"
+    },
+    "backup": {
+        "notJson": "Die Datei ist kein gültiges JSON. Nichts wurde geändert.",
+        "noChiefsList": "Die Häuptlingsliste fehlt. Nichts wurde geändert.",
+        "duplicateId": "Zwei Häuptlinge teilen sich eine ID. Nichts wurde geändert.",
+        "withNothingChanged": "{reason} Nichts wurde geändert.",
+        "chief": {
+            "notObject": "Häuptling {position} ist kein Objekt.",
+            "noId": "Häuptling {position} hat keine ID.",
+            "noName": "Häuptling {position} hat keinen Namen.",
+            "noDates": "Bei Häuptling {position} fehlen die Daten.",
+            "badStateNumber": "Häuptling {position} hat eine State-Nummer, die keine ganze Zahl ist.",
+            "badCoreEvent": "Häuptling {position} hat ein unbekanntes Kern-Event.",
+            "badUnlock": "Häuptling {position} hat eine Freischalteinstellung, die kein Serverstag eines bekannten Bereichs ist.",
+            "badPack": "Häuptling {position} hat eine Paketeinstellung, die nicht an oder aus ist."
+        },
+        "settings": {
+            "notObject": "Die Einstellungen sind kein Objekt.",
+            "badTheme": "Das Design ist nicht Hell, Dunkel oder System.",
+            "notText": "Die Einstellung {key} ist kein Text.",
+            "uiNotObject": "Die Oberflächeneinstellungen sind kein Objekt.",
+            "badTimeZone": "Die Zeitzone ist dem Browser unbekannt."
+        },
+        "summary": {
+            "added": "{amount} hinzugefügt",
+            "updated": "{amount} aus der Datei aktualisiert",
+            "kept": "{amount} wie auf diesem Gerät behalten",
+            "replaced": "{amount} aus der Datei geladen",
+            "removed": "{amount} entfernt"
+        }
+    },
+    "region": {
+        "title": "Sprache und Region",
+        "description": "Wähle die Sprache und wie Zahlen und Daten geschrieben werden. Wird mit deinen Daten gespeichert.",
+        "language": {
+            "label": "Sprache",
+            "hint": "Namen von Helden, Items, Gebäuden und Forschung stammen aus den Spieldaten und bleiben vorerst Englisch."
+        },
+        "numberFormat": {
+            "label": "Zahlenformat",
+            "hint": "Beispiel: {example}",
+            "options": {
+                "auto": "Automatisch, folgt der Sprache",
+                "us": "1,234.56 (USA)",
+                "european": "1.234,56 (Deutschland)",
+                "french": "1 234,56 (Frankreich)",
+                "swiss": "1’234.56 (Schweiz)",
+                "indian": "12,34,567.89 (Indien)"
+            }
+        },
+        "dateFormat": {
+            "label": "Datumsformat",
+            "hint": "Beispiel: {example}",
+            "options": {
+                "auto": "Automatisch, folgt der Sprache",
+                "mdy": "Monat/Tag/Jahr",
+                "dmy": "Tag/Monat/Jahr",
+                "ymd": "Jahr-Monat-Tag"
+            }
+        },
+        "timeZone": {
+            "label": "Zeitzone",
+            "hint": "Wird für Datum und Uhrzeit genutzt und für Meine Zeit bei Events. Beispiel: 14:05 UTC wird als {example} angezeigt.",
+            "auto": "Automatisch, folgt deinem Gerät ({zone})"
+        }
+    }
+}

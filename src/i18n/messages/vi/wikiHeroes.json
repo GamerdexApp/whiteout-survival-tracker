@@ -1,0 +1,99 @@
+{
+    "line": "{heroes} anh hùng và {widgets} cấp widget. Chỉ để tham khảo, không có gì ở đây được lưu.",
+    "roster": {
+        "title": "Danh sách",
+        "count": "{shown} trên {total} anh hùng",
+        "search": "Tìm kiếm",
+        "searchPlaceholder": "Tìm trong {count} anh hùng",
+        "generation": "Thế hệ",
+        "rarity": "Độ hiếm",
+        "class": "Lớp",
+        "subClass": "Phân lớp",
+        "all": "Tất cả",
+        "empty": "Không có anh hùng nào khớp các bộ lọc này.",
+        "columns": {
+            "hero": "Anh hùng",
+            "generation": "Thế hệ",
+            "rarity": "Độ hiếm",
+            "class": "Lớp",
+            "subClass": "Phân lớp",
+            "power": "Sức mạnh, 5 sao",
+            "weapon": "Vũ khí độc quyền"
+        },
+        "none": "Không có"
+    },
+    "detail": {
+        "generation": "Thế hệ {generation}",
+        "source": "Nguồn: {sources}",
+        "noSource": "Nguồn: Không rõ",
+        "explorationAttack": "Tấn công thám hiểm",
+        "explorationDefense": "Phòng thủ thám hiểm",
+        "explorationHealth": "Máu thám hiểm",
+        "expeditionAttack": "Tấn công viễn chinh",
+        "expeditionDefense": "Phòng thủ viễn chinh",
+        "powerAtLevel80": "Sức mạnh ở cấp 80",
+        "powerAtFiveStars": "Sức mạnh ở 5 sao",
+        "powerAtZeroStars": "Sức mạnh ở 0 sao",
+        "powerMissing": "Chưa có sức mạnh theo cấp anh hùng và mảnh cho Thế hệ 6 trở lên. Nó hiện là Không rõ cho đến khi có dữ liệu."
+    },
+    "skills": {
+        "title": "Kỹ năng",
+        "count": "{count, plural, other {{amount} kỹ năng}}",
+        "branch": {
+            "exploration": "Thám hiểm",
+            "expedition": "Viễn chinh",
+            "talent": "Thiên phú"
+        },
+        "levels": {
+            "columns": {
+                "level": "Cấp",
+                "star": "Sao cần",
+                "manuals": "Sách",
+                "power": "Sức mạnh tăng",
+                "effects": "Hiệu ứng"
+            },
+            "effect": {
+                "percentOfAttack": "{name} {amount}% Tấn công",
+                "percent": "{name} {amount}%",
+                "seconds": "{name} {amount}s",
+                "number": "{name} {amount}"
+            }
+        }
+    },
+    "shards": {
+        "title": "Chi phí mảnh theo sao",
+        "columns": {
+            "star": "Sao",
+            "tiers": "Mảnh mỗi bậc",
+            "total": "Tổng",
+            "power": "Sức mạnh ở sao này"
+        },
+        "star": "{star} sao"
+    },
+    "weapon": {
+        "title": "Vũ khí độc quyền",
+        "power": "Sức mạnh vũ khí",
+        "exploration": "Thám hiểm tấn / thủ / hp",
+        "expedition": "Viễn chinh sát thương / hp",
+        "unlocksAt": "mở ở cấp vũ khí {level}",
+        "levelsTitle": "Cấp vũ khí",
+        "columns": {
+            "level": "Cấp vũ khí",
+            "power": "Sức mạnh",
+            "widgets": "Widgets"
+        },
+        "level": "Cấp {level}"
+    },
+    "levels": {
+        "title": "Cấp anh hùng",
+        "columns": {
+            "level": "Cấp anh hùng",
+            "furnace": "Yêu cầu",
+            "xp": "XP để đạt",
+            "power": "Sức mạnh"
+        },
+        "level": "Cấp {level}",
+        "furnace": "Furnace {level}"
+    },
+    "recordLine": "{heroClass} {rarity}, thế hệ {generation}. Chỉ để tham khảo, không có gì ở đây được lưu."
+}

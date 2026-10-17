@@ -1,0 +1,35 @@
+{
+    "close": "關閉",
+    "field": {
+        "optional": "選填"
+    },
+    "stepper": {
+        "lower": "降低{label}",
+        "raise": "提高{label}",
+        "labelPrefix": "{label}，"
+    },
+    "switch": {
+        "on": "開",
+        "off": "關"
+    },
+    "tabs": {
+        "locked": "（已鎖定）"
+    },
+    "toast": {
+        "dismiss": "關閉",
+        "variants": {
+            "success": "成功",
+            "info": "資訊",
+            "warning": "警告",
+            "error": "錯誤"
+        },
+        "missingProvider": "useToast must be used within a ToastProvider"
+    },
+    "savedChip": {
+        "automatic": "自動儲存",
+        "justNow": "剛剛儲存",
+        "minutesAgo": "{count} 分鐘前已儲存",
+        "at": "已儲存 {time}",
+        "failed": "未儲存，儲存空間已滿"
+    }
+}

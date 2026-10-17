@@ -1,0 +1,86 @@
+{
+  "page": {
+    "title": "Сооружения"
+  },
+  "view": {
+    "subline": "{chief} · сооружений на карте: {facilities}, замок, форпостов: {strongholds}, крепостей: {fortresses}"
+  },
+  "summary": {
+    "owned": "Есть сооружений",
+    "ownedValue": "{owned} из {total}",
+    "strongholds": "Форпосты, справка",
+    "fortresses": "Крепости, справка",
+    "castle": "Замок, справка"
+  },
+  "tabs": {
+    "label": "Вкладки сооружений",
+    "facilities": "Сооружения",
+    "fortresses": "Крепости",
+    "map": "Карта"
+  },
+  "show": {
+    "label": "Показывать",
+    "all": "Все",
+    "owned": "Есть",
+    "notOwned": "Нет"
+  },
+  "card": {
+    "owned": "Есть: {count}",
+    "level": "Уровень {level}",
+    "ownedSwitch": "Есть",
+    "switchLabel": "{facility} уровня {level}: есть",
+    "booster": "Усилитель",
+    "injured": "Тяжело раненые",
+    "losses": "Потери",
+    "ownLimit": "Свой лимит {limit}. На карте {spotWord}: {spots}.",
+    "spot": "точка",
+    "spots": "точек"
+  },
+  "empty": {
+    "title": "Нечего показать",
+    "description": "Ни один уровень сооружения не подходит под этот фильтр.",
+    "reset": "Показать все"
+  },
+  "fortress": {
+    "kind": {
+      "castle": "Замок",
+      "stronghold": "Форпост",
+      "fortress": "Крепость"
+    },
+    "coordinates": "x {x}, y {y}",
+    "rewardsHeading": "Награда по фазам",
+    "phase": "Фаза {phase}",
+    "noRewards": "В пакете у замка нет наград.",
+    "referenceNote": "Только справка. Замок, форпосты и крепости меняются каждую неделю, поэтому здесь ничего не учитывается как своё.",
+    "kindLabel": "Вид",
+    "allKinds": "Все виды",
+    "rewardLabel": "Награда",
+    "allRewards": "Все награды",
+    "shown": "Показано построек: {shown} из {total}",
+    "empty": "Нет построек под эти фильтры.",
+    "reset": "Сбросить фильтры",
+    "filters": "Фильтры",
+    "filtersTitle": "Фильтры",
+    "filtersDescription": "Фильтр построек по виду и награде",
+    "done": "Показать {count}"
+  },
+  "map": {
+    "highlight": "Выделить сооружение",
+    "layers": "Слои",
+    "layerFacilities": "Сооружения",
+    "layerStrongholds": "Форпосты",
+    "layerFortresses": "Крепости",
+    "spotsHeading": "Места сооружений, всего {count}",
+    "spotLegend": "{name} ({count})",
+    "codeHint": "Цифра после кода это уровень, например Co1 это Construction уровня 1. Выделенное сооружение закрашено.",
+    "structures": "Постройки",
+    "castleStrongholdLegend": "Замок (1) и форпосты S1–S4 ({count})",
+    "fortressLegend": "Крепости 1–{count}",
+    "selected": "Выбрано на карте",
+    "selectedNone": "Выберите на карте замок, форпост или крепость.",
+    "mapLabel": "Карта альянса",
+    "note": "Схема карты альянса. Позиции используют x и y из пакета на сетке {size} на {size}, одна клетка равна {step}. Точка это место, где может появиться сооружение, поэтому имеющиеся сооружения не отмечены. Рисунка местности в пакете нет.",
+    "spotLabel": "{name} уровня {level}, x {x}, y {y}",
+    "structureLabel": "{name}, x {x}, y {y}"
+  }
+}

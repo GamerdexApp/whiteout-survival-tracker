@@ -1,0 +1,231 @@
+{
+  "page": {
+    "title": "Обзор"
+  },
+  "header": {
+    "state": "Штат {number}",
+    "furnace": "Furnace {level}",
+    "serverAge": "Возраст сервера около {days} дн.",
+    "derived": "Собрано с ваших других страниц"
+  },
+  "tiles": {
+    "furnace": {
+      "label": "Furnace",
+      "steps": "шаг {order} из {total}",
+      "unknown": "Неизвестно",
+      "unknownHint": "Задайте Furnace в зданиях"
+    },
+    "dailies": {
+      "label": "Ежедневные",
+      "value": "{done} / {total}",
+      "tasks": "Моих задач выполнено сегодня",
+      "missions": "Заданий игры выполнено"
+    },
+    "events": {
+      "label": "События",
+      "live": "Идёт: {amount}",
+      "coreDay": "{event} {day}",
+      "moreThisWeek": "Ещё {amount} на этой неделе",
+      "noneThisWeek": "На этой неделе нет"
+    },
+    "skins": {
+      "label": "Скины",
+      "value": "{owned} / {total}",
+      "hint": "Скинов есть"
+    },
+    "vip": {
+      "label": "VIP",
+      "value": "VIP {level}",
+      "unknown": "Неизвестно",
+      "hint": "По вашему VIP XP",
+      "unknownHint": "Введите VIP XP на странице VIP"
+    },
+    "prosperity": {
+      "label": "Процветание острова",
+      "possible": "из {max} возможных",
+      "locked": "Закрыто",
+      "lockedHint": "Нужен Furnace {level}"
+    },
+    "generation": {
+      "label": "Поколение героев",
+      "allUnlocked": "Все поколения открыты",
+      "shouldBeOpen": "Поколение {next} уже должно быть открыто",
+      "onDay": "Поколение {next} на день сервера {day}",
+      "inDays": "Поколение {next} через ~{days} дн."
+    }
+  },
+  "events": {
+    "title": "События",
+    "openCalendar": "Открыть календарь",
+    "liveNow": "Идёт сейчас",
+    "liveBadge": "Идёт сейчас",
+    "nextUp": "Далее, со страницы событий",
+    "coreLine": "{day} из {count}, {name}. Главные события",
+    "runLine": "{length}. Идёт сейчас",
+    "empty": "События не добавлены",
+    "addEvent": "Добавить событие",
+    "noLive": "Сейчас ничего не идёт."
+  },
+  "coreToday": {
+    "title": "{event} сегодня",
+    "open": "Главные события",
+    "dayLine": "{day}, {name}",
+    "plan": "План на сегодня: очков {points}",
+    "checklist": "Чек-лист",
+    "done": "Готово {done} из {total}",
+    "progress": "Прогресс чек-листа",
+    "noActions": "На сегодня действий не запланировано.",
+    "castleSignedUp": "Записались на должность в замке на {day}",
+    "castleOpen": "Запишитесь на должность в замке на {day}",
+    "logLocked": "Дней зафиксировано в журнале событий: {locked} из {total}.",
+    "todayLocked": "{day} зафиксирован.",
+    "todayOpen": "{day} ещё не записан.",
+    "openChecklist": "Открыть чек-лист",
+    "openLog": "Открыть журнал событий"
+  },
+  "queues": {
+    "title": "Активные очереди",
+    "running": "Идёт: {count}",
+    "construction": "Строительство {number}",
+    "researchMain": "Исследования",
+    "researchWarAcademy": "War Academy",
+    "training": "Тренировка: {name}",
+    "learning": "Обучение",
+    "task": {
+      "construction": "{name} до {level}",
+      "research": "{name} до уровня {level}",
+      "training": "Войска {tier}",
+      "learning": "{name}, {skill}"
+    },
+    "idle": "Свободно",
+    "idleBuildings": "Свободно, нажмите «Начать улучшение» в зданиях",
+    "idleResearch": "Свободно, нажмите «Начать улучшение» в исследованиях",
+    "progress": "Прогресс: {title}"
+  },
+  "lastResult": {
+    "title": "Итог последнего события",
+    "open": "Открыть в истории",
+    "days": "Дни 1–5. Фаза боя учитывается отдельно.",
+    "plan": "План",
+    "actual": "Факт",
+    "difference": "Разница",
+    "overall": "Общее место",
+    "alliance": "Место альянса",
+    "upgrades": "Запланированных улучшений выполнено",
+    "upgradesOf": "{done} из {total}"
+  },
+  "server": {
+    "title": "Возраст сервера",
+    "edit": "Изменить вождя",
+    "age": "Около {days} дн., плюс-минус {tolerance}",
+    "unknown": "Неизвестно. Добавьте дату старта сервера в настройках вождя.",
+    "fromDate": "По дате старта сервера, {date}.",
+    "warAcademy": "Исследования War Academy",
+    "t12": "Исследования T12",
+    "open": "Открыто",
+    "opensIn": "Откроется через ~{days} дн.",
+    "unknownUnlock": "Неизвестно",
+    "heroes": "Герои открыты до",
+    "generation": "Поколение {number}",
+    "estimate": "Дни открытия берутся из хронологии сервера. Если ваш сервер немного отличается, измените их в настройках вождя.",
+    "areas": {
+      "fireCrystal": "Уровни Fire Crystal",
+      "pets": "Питомцы",
+      "experts": "Эксперты"
+    },
+    "fcUpTo": "До {level}",
+    "nothingYet": "Пока нет",
+    "countOf": "Открыто {unlocked} из {total}",
+    "allUnlocked": "Всё открыто.",
+    "generationName": "Поколение {number}",
+    "allGenerations": "Все поколения открыты.",
+    "next": {
+      "withDate": "Далее: {names}, день сервера {day}, {date}. Через ~{days} дн.",
+      "noDate": "Далее: {names}, день сервера {day}. Через ~{days} дн.",
+      "unknownAge": "Далее: {names}, день сервера {day}.",
+      "passed": "{names} уже должны быть открыты по возрасту вашего сервера, день сервера {day}. Поднимите значение в настройках вождя."
+    }
+  },
+  "dailies": {
+    "title": "Ежедневные сегодня",
+    "open": "Открыть ежедневные",
+    "activeness": "Активность: {now} из {top}",
+    "activenessBar": "Активность сегодня",
+    "missions": "Задания игры: готово {done} из {total}",
+    "tasks": "Моих задач: {done} из {total}",
+    "tasksBar": "Моих задач выполнено сегодня",
+    "stillOpen": "Ещё не выполнено в «Моих задачах», первые {shown} из {total}",
+    "allDone": "Все «Мои задачи» на сегодня выполнены.",
+    "noTasks": "В «Моих задачах» пока ничего нет."
+  },
+  "planner": {
+    "title": "Нехватка по планам",
+    "short": "Не хватает {amount}",
+    "covered": "Нехватки нет",
+    "goals": "Цели со страниц: {pages}. Цены берутся из пакета, запасы из ресурсов.",
+    "noGoals": "Целей нет. Задайте их через «План» в зданиях, исследованиях и на других страницах.",
+    "pages": {
+      "buildings": "Здания",
+      "research": "Исследования",
+      "heroes": "Герои",
+      "troops": "Войска",
+      "pets": "Питомцы",
+      "chiefGear": "Снаряжение вождя",
+      "chiefCharms": "Амулеты вождя"
+    },
+    "separator": ", ",
+    "line": "Нужно {need} · Есть {have}",
+    "shortBy": "Не хватает {amount}",
+    "enough": "Хватает",
+    "updateStock": "Обновить запасы в ресурсах",
+    "incomplete": "У уровня цели в пакете неизвестная цена, поэтому эти итоги неполные."
+  },
+  "progress": {
+    "title": "Прогресс по разделам",
+    "hint": "Есть или прокачано от общего числа в пакете",
+    "count": "{owned} / {total}",
+    "furnace": "Furnace",
+    "furnaceOf": "{level} из {max}",
+    "furnaceUnknown": "Неизвестно",
+    "areas": {
+      "buildings": "Здания",
+      "heroes": "Герои",
+      "chiefGear": "Снаряжение вождя",
+      "chiefCharms": "Амулеты вождя",
+      "experts": "Эксперты",
+      "pets": "Питомцы",
+      "research": "Исследования",
+      "allianceTech": "Технологии альянса",
+      "skins": "Скины"
+    },
+    "locked": {
+      "daybreakIsland": "Daybreak Island",
+      "requirement": "Закрыто. Нужен Furnace {level}, осталось: {count, plural, one {{amount} уровень} few {{amount} уровня} many {{amount} уровней} other {{amount} уровня}}"
+    }
+  },
+  "power": {
+    "title": "Мощь",
+    "total": "Общая мощь",
+    "complete": "Текущая мощь в сравнении с максимумом, который может дать каждая группа при высших уровнях всего, что открыто вашими настройками. Группы без максимума учитываются как есть.",
+    "incomplete": "То же сравнение. У {count, plural, one {{amount} предмета} few {{amount} предметов} many {{amount} предметов} other {{amount} предмета}} нет значения мощи в данных, {count, plural, one {он не учитывается} few {они не учитываются} many {они не учитываются} other {они не учитываются}}.",
+    "groupWithoutValue": "У {count, plural, one {{amount} предмета} few {{amount} предметов} many {{amount} предметов} other {{amount} предмета}} нет значения мощи в данных",
+    "groups": {
+      "buildings": "Здания",
+      "research": "Исследования",
+      "heroes": "Герои",
+      "heroGear": "Снаряжение героев",
+      "chiefGear": "Снаряжение вождя",
+      "chiefCharms": "Амулеты вождя",
+      "experts": "Эксперты",
+      "pets": "Питомцы",
+      "troops": "Войска"
+    },
+    "ofPossible": "из {possible} возможных",
+    "totalProgress": "Общая мощь в сравнении с максимально возможной",
+    "percentOfPossible": "{percent}% от максимально возможной",
+    "rowOfPossible": "{power} из {possible}",
+    "progress": "Мощь ({group}) в сравнении с максимально возможной",
+    "noMaximum": "Максимума нет, всё зависит от введённых вами значений",
+    "noCapNote": "У войск и снаряжения героев нет предела, поэтому общая мощь может превысить возможный итог, если тренировать больше войск и улучшать снаряжение героев. В возможном итоге обе группы учитываются как есть."
+  }
+}

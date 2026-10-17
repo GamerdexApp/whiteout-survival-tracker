@@ -1,0 +1,165 @@
+{
+  "topBar": {
+    "navLabel": "랜딩 페이지",
+    "links": {
+      "how": "사용 방법",
+      "features": "기능",
+      "privacy": "내 데이터",
+      "faq": "자주 묻는 질문"
+    }
+  },
+  "action": {
+    "createFirstChief": "첫 영주 만들기",
+    "goToOverview": "개요로 이동",
+    "newChief": "새 영주",
+    "allChiefs": "모든 영주"
+  },
+  "hero": {
+    "label": "Whiteout Survival Tracker",
+    "title": "모든 영주를 추적하고, 모든 업그레이드를 계획하세요.",
+    "description": "Whiteout Survival을 위한 무료 도우미예요. 건물, 영웅, 장비, 연구를 한곳에서 관리하고, 다음 업그레이드를 계획하고, 첫날부터 기록까지 핵심 이벤트를 진행하세요.",
+    "note": "무료예요. 데이터는 이 브라우저에만 저장돼요.",
+    "learnMore": "더 알아보기"
+  },
+  "continue": {
+    "label": "다시 오신 것을 환영해요",
+    "title": "{name} 이어서 하기",
+    "chiefCount": "{count, plural, other {이 브라우저에 영주 {amount}명 저장됨}}"
+  },
+  "how": {
+    "label": "사용 방법",
+    "title": "첫 영주부터 이벤트 기록까지 4단계",
+    "steps": {
+      "create": {
+        "title": "영주 만들기",
+        "description": "이름을 정하세요. 서버 번호와 메모는 선택이에요."
+      },
+      "levels": {
+        "title": "레벨 설정",
+        "description": "Furnace와 건물 레벨을 입력하고, 영웅, 장비, 연구는 진행하면서 채우세요."
+      },
+      "plan": {
+        "title": "업그레이드 계획",
+        "description": "목표에 필요한 자원, 시간, 전투력과 아직 부족한 것을 확인하세요."
+      },
+      "events": {
+        "title": "이벤트 진행",
+        "description": "점수를 세고 점수와 순위를 기록한 뒤 이벤트를 기록에 저장하세요."
+      }
+    }
+  },
+  "features": {
+    "label": "할 수 있는 일",
+    "title": "계획하고, 플레이하고, 돌아보세요",
+    "open": "{page} 열기",
+    "items": {
+      "plan": {
+        "title": "모든 업그레이드 계획",
+        "description": "건물, 영웅, 영주 장비, 연구의 계획 패널에서 목표를 설정하세요. 필요한 자원, 시간, 전투력을 확인할 수 있고 가속과 보너스는 보너스 페이지에서 가져와요.",
+        "page": "건물"
+      },
+      "coreEvents": {
+        "title": "핵심 이벤트 계산기",
+        "description": "SvS, Alliance Showdown, King of Icefield, Hall of Chief. 행동마다 점수를 세고, 전문가 보너스를 더하고, 기준 점수와 순위 보상을 확인하세요.",
+        "page": "핵심 이벤트"
+      },
+      "eventLog": {
+        "title": "이벤트 로그와 일일 체크리스트",
+        "description": "이벤트의 일차별 점수와 순위를 기록하세요. 체크리스트에 매일 할 수 있는 행동이 나와요.",
+        "page": "핵심 이벤트"
+      },
+      "history": {
+        "title": "기록: 계획과 실제 비교",
+        "description": "이벤트를 종료해 저장하세요. 계획과 실제를 비교하고 계획한 업그레이드마다 완료 여부를 확인하세요.",
+        "page": "기록"
+      },
+      "research": {
+        "title": "연구 트리",
+        "description": "성장, 경제, 전투, 전쟁 아카데미, T12 탭을 격자나 트리로 보고 서버 경과일별 해금을 확인하세요.",
+        "page": "연구"
+      },
+      "alliance": {
+        "title": "연맹 기술과 지도",
+        "description": "연맹 깃발, 기술, 시설을 추적하고 성채, 거점, 요새의 배치를 확인하세요.",
+        "page": "연맹"
+      }
+    }
+  },
+  "numbers": {
+    "title": "트래커가 다루는 범위",
+    "buildings": "비용과 시간이 있는 건물",
+    "heroes": "영웅",
+    "research": "연구 기술",
+    "coreEvents": "핵심 이벤트 계산기",
+    "wiki": "위키 참고 페이지와 타임라인"
+  },
+  "pages": {
+    "label": "모든 페이지",
+    "title": "게임 구성에 맞춰 묶었어요",
+    "description": "앱 안의 사이드바와 같은 페이지예요.",
+    "listLabel": "{group} 페이지",
+    "general": "일반"
+  },
+  "privacy": {
+    "label": "내 데이터",
+    "title": "기본은 비공개, 필요하면 옮길 수 있어요",
+    "items": {
+      "browser": {
+        "title": "브라우저에만 저장",
+        "description": "만들어야 할 계정이 없어요. 영주는 이 기기의 이 브라우저에 저장돼요."
+      },
+      "file": {
+        "title": "저장 파일 하나",
+        "description": "입력한 모든 내용이 브라우저의 저장 파일 하나에 보관돼서 빠르게 불러오고 여러 곳에 나뉘지 않아요."
+      },
+      "chiefs": {
+        "title": "여러 영주",
+        "description": "본캐와 부캐를 함께 관리하세요. 사이드바에서 전환할 수 있어요."
+      },
+      "backup": {
+        "title": "백업과 복원",
+        "description": "설정에서 데이터를 파일로 내보내고 다른 브라우저나 기기에서 가져오세요."
+      }
+    },
+    "backupLink": "백업과 데이터 열기"
+  },
+  "faq": {
+    "label": "궁금한 점",
+    "title": "자주 묻는 질문",
+    "items": {
+      "free": {
+        "question": "무료인가요?",
+        "answer": "네. 결제할 것도, 잠금 해제할 것도 없어요."
+      },
+      "data": {
+        "question": "내 데이터는 어디에 있나요?",
+        "answer": "이 브라우저의 이 사이트 로컬 저장소에 있어요. 서버로 전송되지 않아요. 이 페이지의 사이트 데이터를 지우면 영주도 삭제되니 먼저 백업을 내보내세요."
+      },
+      "move": {
+        "question": "다른 기기로 옮기려면 어떻게 하나요?",
+        "answer": "설정에서 백업과 데이터를 열고 백업 파일을 내보내세요. 다른 기기에서 같은 페이지를 열고 설정, 백업과 데이터로 가서 그 파일을 가져오세요."
+      },
+      "chiefs": {
+        "question": "영주를 여러 명 만들 수 있나요?",
+        "answer": "네. 제한이 없어요. 영주마다 건물, 영웅, 연구, 이벤트가 따로 있고 사이드바에서 전환해요."
+      },
+      "account": {
+        "question": "계정이나 게임 저장 파일이 필요한가요?",
+        "answer": "아니요. 레벨은 직접 입력해요. 비용, 시간, 능력치 같은 게임 데이터는 트래커에 포함돼 있어요."
+      },
+      "official": {
+        "question": "공식 앱인가요?",
+        "answer": "아니요. 비공식 팬 도구예요. Whiteout Survival이나 Century Games와 제휴 관계가 아니에요. 전체 안내는 하단에 있어요."
+      },
+      "wiki": {
+        "question": "위키는 무엇인가요?",
+        "answer": "건물, 영웅, 펫, 아이템, 이벤트 같은 게임 데이터의 참고 페이지 모음과 서버 타임라인이에요. 영주를 만들지 않아도 볼 수 있어요."
+      }
+    }
+  },
+  "closing": {
+    "title": "오늘부터 추적을 시작하세요",
+    "description": "첫 영주는 이름 하나면 돼요. 나머지는 나중에 모두 바꿀 수 있어요.",
+    "wiki": "위키 둘러보기"
+  }
+}

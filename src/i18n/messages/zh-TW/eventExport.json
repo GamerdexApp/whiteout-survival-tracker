@@ -1,0 +1,32 @@
+{
+    "title": "匯出到核心活動",
+    "description": "先選擇活動，再選擇天數",
+    "events": {
+        "svs": "SvS",
+        "showdown": "Alliance Showdown",
+        "king": "King of Icefield",
+        "hall": "Hall of Chief"
+    },
+    "stepEvent": "1. 活動",
+    "stepDay": "{number}. 活動天數 {group}",
+    "stepDayPlain": "活動天數",
+    "stepItems": "{number}. 這份規劃的項目",
+    "noDay": "{event}沒有為這些項目計分的列。",
+    "daysHint": "只列出計分列會計算某項目的天數。Hall of Chief 列出的是階段而非天數。每組項目各自選擇一天。",
+    "lineEach": "{day}每個 {points} 分。",
+    "lineNotScored": "{event}沒有為此計分的列。",
+    "notScored": "不計分",
+    "points": "{points} 分",
+    "addedTo": "已加入{event}",
+    "nothingScores": "在所選天數中，這份規劃沒有任何項目能在{event}計分。",
+    "summaryTitle": "匯出摘要",
+    "summaryHint": "同樣的項目，若每項都用在能計分的一天，在各活動中可得的分數。只有所選的活動和天數會收到這些項目。核心活動頁面會以可調整的數量顯示它們。",
+    "selected": "已選取",
+    "cancel": "取消",
+    "export": "匯出到{event}",
+    "toast": {
+        "title": "已匯出到核心活動",
+        "message": "已將 {points} 分加入{event}。",
+        "undo": "復原"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "lock": {
+        "day": "伺服器第 {day} 天解鎖",
+        "dayAndDate": "伺服器第 {day} 天解鎖，{date}"
+    },
+    "areas": {
+        "pets": "寵物",
+        "fireCrystal": "Fire Crystal 等級",
+        "experts": "專家",
+        "chiefGear": "領主裝備",
+        "chiefCharms": "領主護符",
+        "warAcademy": "War Academy 與 T12 研究"
+    },
+    "dialog": {
+        "legend": "已解鎖內容",
+        "hint": "鎖定依伺服器開服日期起算的天數而定。如果你的伺服器略有差異，請選擇你實際擁有的進度。被鎖定的項目仍會顯示，你已儲存的資料也會保留。",
+        "auto": "自動，{current}",
+        "autoUnknown": "自動，請設定伺服器開服日期才能使用",
+        "autoNone": "尚未解鎖任何內容",
+        "none": "未解鎖任何內容",
+        "stepPets": "第 {day} 天，{total} 隻寵物中的 {count} 隻",
+        "stepExperts": "第 {day} 天，{total} 位專家中的 {count} 位",
+        "stepFc": "第 {day} 天，最高 {last}，不含其階段",
+        "stepNamed": "第 {day} 天，{name}",
+        "pickLabel": "{area}解鎖至"
+    }
+}

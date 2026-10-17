@@ -1,0 +1,303 @@
+{
+  "title": "Recherche",
+  "unknown": "Inconnu",
+  "nodeCount": "{count, plural, one {{amount} nœud} other {{amount} nœuds}}",
+  "jobTitle": "{name}, niveau {from} à {to}",
+  "tabs": {
+    "growth": "Croissance",
+    "economy": "Économie",
+    "battle": "Combat",
+    "war-academy-troops": "War Academy T11",
+    "t12-infantry": "Infantry T12",
+    "t12-marksman": "Marksman T12",
+    "t12-lancer": "Lancer T12"
+  },
+  "tier": {
+    "plain": "Palier {tier}",
+    "troopLine": "{line} T{tier}"
+  },
+  "requirement": {
+    "yours": "Le vôtre est {level}",
+    "notBuilt": "Non construit",
+    "researchLevel": "{name} niveau {level}",
+    "yoursLevel": "Le vôtre est au niveau {level}",
+    "notReleased": "{id} (pas encore sorti)"
+  },
+  "tabLock": {
+    "unknownAge": "La recherche {tab} s'ouvre à un âge de serveur de {days} jours. Le vôtre est inconnu. Ajoutez une date de lancement du serveur dans Modifier le chef.",
+    "knownAge": "La recherche {tab} s'ouvre à un âge de serveur de {days} jours. Le vôtre est {yours}."
+  },
+  "option": {
+    "label": "{name}, {tab}, niveau {from} à {to}",
+    "subtitle": "Niveau {from} à niveau {to}, onglet {tab}",
+    "busy": "Occupé : {name} niveau {level}, {timeLeft}"
+  },
+  "nodeCard": {
+    "allResearched": "Tous les niveaux recherchés",
+    "nextTime": "Durée du niveau {level} : {time}",
+    "power": {
+      "researched": "{power} recherchés",
+      "next": "+{power} au niveau suivant",
+      "some": "Puissance {parts}",
+      "none": "Puissance 0"
+    },
+    "maxed": "Au max. {bonus}",
+    "noBonus": "Aucun bonus dans les données",
+    "level": "Niveau {level} / {max}",
+    "goal": "Objectif {goal}",
+    "noGoal": "Aucun objectif",
+    "progress": "Progression de {name}",
+    "lockedByTab": "Verrouillé : {reason}",
+    "lockedByRequirement": "Verrouillé : nécessite {requirement}",
+    "placeholder": "Espace réservé. Le coût et le bonus sont vides dans les données.",
+    "needsFirst": "Nécessite d'abord {names}",
+    "researching": "{name} en recherche",
+    "levelStepper": "Niveau de {name}",
+    "detailsOf": "Détails de {name}",
+    "details": "Détails"
+  },
+  "queuesStrip": {
+    "title": "Files de recherche",
+    "note": "Croissance, Économie et Combat partagent une file. T11 et T12 utilisent la file de la War Academy.",
+    "idle": "Une recherche à la fois. Appuyez sur Lancer l'amélioration pour en commencer une."
+  },
+  "filters": {
+    "title": "Filtres",
+    "description": "Choisissez ce qu'affiche l'onglet {tab}",
+    "reset": "Réinitialiser",
+    "show": "Afficher {nodes}",
+    "tier": "Palier",
+    "statusLabel": "Statut",
+    "troopLine": "Ligne de troupes",
+    "orderLabel": "Ordre",
+    "notSaved": "Les filtres ne sont pas enregistrés.",
+    "all": "Tous",
+    "status": {
+      "all": "Tous",
+      "progress": "En cours",
+      "goal": "Avec objectif",
+      "maxed": "Au max",
+      "locked": "Verrouillés",
+      "notStarted": "Non commencés"
+    },
+    "order": {
+      "game": "Ordre du jeu",
+      "name": "Nom, A à Z",
+      "level": "Niveau, le plus haut d'abord"
+    }
+  },
+  "massSet": {
+    "stop": "{level} sur {max}",
+    "title": "Réglage groupé, {tab}",
+    "description": "Choisissez un nœud et un niveau. Tout ce qui le précède dans l'arbre passe au max.",
+    "cancel": "Annuler",
+    "set": "Régler {nodes}",
+    "node": "Nœud",
+    "level": "Niveau",
+    "levelToSet": "Niveau à régler",
+    "whatChanges": "Ce qui change dans l'onglet {tab}",
+    "nothingChanges": "Rien ne change. Tous les nœuds ici sont déjà à ce niveau ou au-dessus.",
+    "change": "{from} à {to}",
+    "hidden": "et {amount} nœuds antérieurs de plus",
+    "alreadyMax": "{count, plural, one {{amount} nœud antérieur est} other {{amount} nœuds antérieurs sont}} déjà au max et restent tels quels. Les nœuds plus loin dans l'arbre ne sont pas touchés. Un niveau déjà plus haut reste.",
+    "blockersTitle": "Certains nœuds nécessitent d'abord un bâtiment.",
+    "blocker": "{name} nécessite {building}",
+    "blockersMore": " et {amount} de plus",
+    "blockers": "{list}{more}. Choisissez un nœud plus tôt dans l'arbre ou montez le bâtiment dans la page Bâtiments.",
+    "footnote": "Le réglage groupé ne modifie que les niveaux enregistrés de cet onglet. Il ne baisse jamais un niveau. Les objectifs ne changent pas."
+  },
+  "nodeFlyout": {
+    "fallbackTitle": "Recherche",
+    "description": "{category}, palier {tier}, {levels} niveaux",
+    "close": "Fermer",
+    "unknown": "Inconnu",
+    "levelOf": "Niveau {level} sur {max}",
+    "status": {
+      "notStarted": "non commencé",
+      "maxed": "au max",
+      "inProgress": "en cours"
+    },
+    "goal": "Objectif {goal}",
+    "noGoal": "Aucun objectif",
+    "openPlan": "Ouvrir Plan",
+    "maxLevel": {
+      "title": "Niveau max",
+      "nothingLeft": "Il n'y a plus rien à rechercher.",
+      "noBonus": "Aucun bonus dans les données."
+    },
+    "placeholder": {
+      "title": "Espace réservé",
+      "description": "Ce nœud n'a pas encore de coût ni de bonus dans les données. La durée et le coût de recherche affichent Inconnu."
+    },
+    "upcoming": {
+      "first": "Premiers niveaux",
+      "after": "Niveaux suivants après {level}",
+      "heads": {
+        "level": "Niveau",
+        "bonus": "Bonus",
+        "time": "Durée",
+        "power": "Puissance"
+      },
+      "goalBadge": "Objectif",
+      "noBonus": "Aucun",
+      "shaded": "Les lignes grisées sont les niveaux entre votre niveau et votre objectif."
+    },
+    "cost": {
+      "title": "Coût des niveaux suivants",
+      "level": "Niv."
+    },
+    "total": {
+      "title": "Total jusqu'à votre objectif, niveau {level} à {goal}",
+      "knownTime": "Durée de recherche connue",
+      "power": "Puissance",
+      "missingTimes": "{count, plural, one {{amount} niveau n'a} other {{amount} niveaux n'ont}} aucune durée dans les données et comptent pour 0 ici."
+    },
+    "requirements": {
+      "title": "Prérequis du niveau {level}",
+      "none": "Aucun prérequis.",
+      "met": "Rempli",
+      "notMet": "Non rempli",
+      "later": "Les niveaux suivants demandent : {list}."
+    }
+  },
+  "tree": {
+    "legend": {
+      "max": "Max",
+      "inProgress": "En cours",
+      "notStarted": "Non commencé",
+      "locked": "Verrouillé"
+    },
+    "pillMax": "Max {max}",
+    "pillLevel": "Niv {level} sur {max}",
+    "region": "Arbre de recherche {tab}",
+    "openNode": "{name}, {pill}. Ouvrir les détails"
+  },
+  "plan": {
+    "title": "Planifier la recherche",
+    "description": "Ressources, durée et puissance du niveau actuel à l'objectif",
+    "saved": "Plan enregistré {date}",
+    "close": "Fermer",
+    "save": "Enregistrer le plan",
+    "goals": "Objectifs, {nodes}",
+    "noGoals": "Aucun objectif pour l'instant. Ajoutez un nœud de recherche ci-dessus, puis choisissez le niveau à atteindre.",
+    "goalsHint": "Le niveau actuel est celui de la page. Modifiez-le là-bas. Les objectifs sont en lecture seule sur la page et se définissent ici.",
+    "failed": "Le plan n'a pas pu être calculé.",
+    "timeNote": "Le plan prend {time} après le bonus de vitesse de {percent} %. Votre stock : Recherche {research} min, Général {general} min. Les accélérations générales comptent pour la recherche.",
+    "percent": "{value} %",
+    "percentPlus": "+{value} %",
+    "appointment": {
+      "none": "Aucune",
+      "regular": "Normale",
+      "supreme": "Suprême"
+    },
+    "add": {
+      "title": "Ajouter un nœud de recherche",
+      "none": "Tous les nœuds sont déjà dans le plan ou à leur niveau maximum.",
+      "select": "Nœud de recherche à ajouter",
+      "button": "Ajouter la recherche"
+    },
+    "speed": {
+      "title": "Vitesse de recherche",
+      "readOnly": "Lecture seule",
+      "carriedOver": "Repris de la page Bonus.",
+      "turnedOff": "Désactivé dans Paramètres, sous Appliquer mes totaux de Bonus.",
+      "openBonuses": "Ouvrir Bonus",
+      "stateBuff": "Bonus d'état",
+      "vicePresident": "Vice-président",
+      "total": "Vitesse de recherche totale"
+    },
+    "goal": {
+      "level": "Niveau {level}",
+      "to": "à",
+      "label": "Objectif de {name}",
+      "remove": "Retirer {name} du plan"
+    },
+    "result": {
+      "title": "Résultat, {steps} étapes",
+      "powerGained": "Puissance gagnée",
+      "speedupMinutes": "Minutes d'accélération nécessaires",
+      "baseTime": "Durée de base",
+      "timeWithBonus": "Durée avec bonus de {percent} %",
+      "stepsWithoutTime": "{count, plural, one {{amount} étape n'a} other {{amount} étapes n'ont}} aucune durée dans les données et comptent pour 0 seconde.",
+      "stepCount": "{count, plural, one {{amount} étape} other {{amount} étapes}}",
+      "buildingRequirements": "Prérequis de bâtiments",
+      "unmet": "Prérequis non remplis",
+      "unmetNone": "Aucun pour ces objectifs.",
+      "unmetItem": "{name} niveau {level} nécessite {requires} niveau {requiresLevel}"
+    },
+    "export": {
+      "button": "Exporter vers Événements clés",
+      "empty": "Ajoutez un objectif au plan pour l'exporter.",
+      "speedupMinutes": "Minutes d'accélération de recherche",
+      "power": "Puissance gagnée par la recherche",
+      "computed": "Calculé par l'application d'après le résultat du plan.",
+      "unscored": "Aucun événement ne note {name}."
+    }
+  },
+  "view": {
+    "ofTotal": "{count} sur {total}",
+    "undo": "Annuler",
+    "massSetApplied": {
+      "title": "Réglage groupé appliqué",
+      "message": "{nodes} mis à jour."
+    },
+    "started": {
+      "title": "Recherche lancée",
+      "message": "{name}, niveau {from} à {to}."
+    },
+    "manage": {
+      "slotLabel": "{queue}, {category}",
+      "finishText": "Terminer l'amélioration passe {name} au niveau {level}, libère la file {queue} et ajoute l'amélioration à votre Historique. Quand il ne reste plus de temps, le nœud et la carte de la file indiquent Prêt à terminer. Rien ne se termine tout seul, car vous avez pu utiliser des accélérations."
+    },
+    "finished": {
+      "title": "{name} recherché",
+      "message": "Maintenant niveau {level}. Ajouté à l'Historique."
+    },
+    "cancelled": {
+      "title": "Recherche de {name} annulée",
+      "message": "Le niveau reste inchangé. Corrigez votre stock dans Ressources si besoin."
+    },
+    "subline": {
+      "researchCenter": "Research Center {level}",
+      "warAcademy": "War Academy {level}"
+    },
+    "stats": {
+      "maxed": "Nœuds au max, {percent} % de l'arbre",
+      "power": "Puissance de recherche, celle de chaque niveau recherché",
+      "withoutTimeNone": "Sans durée de recherche, chaque niveau en a une",
+      "withoutTimeSome": "Sans durée de recherche, affiché comme Inconnu",
+      "locked": "Verrouillé par l'âge du serveur ou des prérequis"
+    },
+    "tabLockedNote": "{reason} Vous pouvez quand même définir des objectifs dans Plan.",
+    "lockedByRequirement": "{count} nœuds sur {total} de cet onglet sont verrouillés par un prérequis.",
+    "search": {
+      "label": "Rechercher des nœuds",
+      "placeholder": "Rechercher des nœuds par nom ou bonus"
+    },
+    "massSet": "Réglage groupé",
+    "layout": {
+      "label": "Disposition",
+      "grid": "Grille",
+      "tree": "Arbre"
+    },
+    "plan": "Plan",
+    "status": {
+      "tree": "{count} nœuds dans l'arbre {tab}. Puissance de recherche de cet onglet : {power}. Faites défiler pour déplacer. Les nœuds qui ne correspondent pas à la recherche ou aux filtres sont atténués.",
+      "grid": "{shown} nœuds {tab} affichés sur {count}. Puissance de recherche de cet onglet : {power}. Les objectifs sont en lecture seule ici et se définissent dans Plan."
+    },
+    "empty": {
+      "title": "Aucun nœud ne correspond",
+      "description": "Modifiez la recherche ou réinitialisez les filtres pour voir tous les nœuds.",
+      "reset": "Réinitialiser recherche et filtres"
+    },
+    "start": {
+      "description": "Marquer une recherche comme en amélioration",
+      "selectLabel": "Recherche à améliorer",
+      "selectHelp": "Seules les recherches que vous pouvez lancer maintenant sont listées. Les recherches verrouillées, au max ou en cours sont exclues. Une recherche Croissance, Économie ou Combat utilise la file de recherche. Une recherche T11 ou T12 utilise la file de la War Academy.",
+      "timeLabel": "Durée de recherche",
+      "speedLabel": "Vitesse de recherche",
+      "slotLabel": "File",
+      "slotHelp": "Une recherche à la fois dans chaque file. Quand la file est occupée, cette carte indique quand elle se libère."
+    }
+  }
+}

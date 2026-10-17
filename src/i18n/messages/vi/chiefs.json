@@ -1,0 +1,117 @@
+{
+    "unknown": "Không rõ",
+    "describe": {
+        "state": "State {number}",
+        "empty": "Chưa có chi tiết"
+    },
+    "coreEvents": {
+        "svs": "SvS",
+        "showdown": "Alliance Showdown",
+        "king": "King of Icefield",
+        "hall": "Hall of Chief"
+    },
+    "count": "{count, plural, other {{amount} thủ lĩnh}}",
+    "card": {
+        "active": "Đang dùng",
+        "noNotes": "Không có ghi chú",
+        "furnace": "Furnace",
+        "state": "State",
+        "created": "Tạo lúc: {date}",
+        "lastModified": "Sửa lần cuối: {date}",
+        "setActive": "Đặt làm thủ lĩnh đang dùng",
+        "edit": "Sửa",
+        "delete": "Xóa"
+    },
+    "dialog": {
+        "editTitle": "Sửa thủ lĩnh",
+        "newTitle": "Thủ lĩnh mới",
+        "newDescription": "Đặt tên cho thủ lĩnh. Phần còn lại là tùy chọn.",
+        "cancel": "Hủy",
+        "save": "Lưu thay đổi",
+        "create": "Tạo thủ lĩnh",
+        "errors": {
+            "name": "Hãy nhập tên cho thủ lĩnh này.",
+            "stateNumber": "Hãy nhập một số nguyên từ 1 đến {max}.",
+            "serverStartDate": "Hãy nhập một ngày không nằm trong tương lai."
+        },
+        "name": "Tên",
+        "stateNumber": {
+            "label": "Số State",
+            "hint": "State mà thủ lĩnh của bạn đang ở. Số nguyên."
+        },
+        "serverStartDate": {
+            "label": "Ngày mở máy chủ",
+            "info": {
+                "label": "Tìm ngày mở máy chủ ở đâu",
+                "screen": "Mở game và vào màn hình Máy chủ từ hồ sơ của bạn.",
+                "date": "Đọc ngày máy chủ mở cửa. Nếu chỉ hiện số ngày của máy chủ, hãy đếm lùi từng ấy ngày từ hôm nay.",
+                "missing": "Không thấy ngày trên màn hình? Hãy hỏi trưởng liên minh hoặc xem chat State.",
+                "tolerance": "Lệch trong vòng 21 ngày là đủ. Các mốc mở nghiên cứu dùng 150 và 600 ngày, nên sai ba tuần hiếm khi đổi kết quả."
+            }
+        },
+        "generation": {
+            "label": "Anh hùng đã mở đến",
+            "hint": "Anh hùng của các thế hệ sau vẫn bị ẩn ở trang Anh hùng và trong Kế hoạch.",
+            "preLegendary": "Thế hệ 0 (trước Legendary)",
+            "numbered": "Thế hệ {generation}"
+        },
+        "events": {
+            "legend": "Sự kiện chính hiển thị",
+            "shownOf": "{shown} trên {total}",
+            "hint": "Sự kiện bị ẩn sẽ rời khỏi các tab Sự kiện chính và Nhật ký sự kiện. Bạn có thể bật lại bất cứ lúc nào."
+        },
+        "notes": "Ghi chú",
+        "packs": {
+            "legend": "Gói",
+            "constructionLabel": "Construction Pack",
+            "constructionHint": "Mở thợ xây thứ hai ở trang Công trình.",
+            "constructionBusy": "Thợ xây thứ hai đang nâng cấp. Hãy hoàn tất hoặc hủy trước để tắt mục này.",
+            "marchLabel": "March Queue Pack",
+            "marchHint": "Thêm một hàng chờ hành quân. Nó được tính ở trang Cộng thêm."
+        }
+    },
+    "delete": {
+        "title": "Xóa thủ lĩnh",
+        "cancel": "Hủy",
+        "confirmButton": "Xóa thủ lĩnh",
+        "confirm": "Bạn có chắc muốn xóa “<strong>{name}</strong>” không?",
+        "summary": "{details} · tạo lúc {date}",
+        "note": "Thao tác này xóa thủ lĩnh cùng mọi cấp, mục tiêu và ghi chú khỏi thiết bị này. Không thể khôi phục sau khi 10 giây Hoàn tác kết thúc.",
+        "exportBackup": "Xuất sao lưu trước"
+    },
+    "page": {
+        "title": "Thủ lĩnh",
+        "newChief": "Thủ lĩnh mới",
+        "sort": {
+            "label": "Sắp xếp theo",
+            "options": {
+                "lastModified": "Sửa gần nhất",
+                "createdAt": "Ngày tạo",
+                "name": "Tên"
+            }
+        },
+        "subline": {
+            "none": "Chưa có thủ lĩnh.",
+            "total": "{chiefs}.",
+            "withActive": "{chiefs}. {name} đang dùng."
+        },
+        "toasts": {
+            "backupTitle": "Đã tải xuống bản sao lưu",
+            "deleted": "Đã xóa {name}",
+            "undo": "Hoàn tác"
+        },
+        "loading": "Đang đọc dữ liệu đã lưu từ trình duyệt này. Danh sách sẽ hiện khi sẵn sàng.",
+        "empty": {
+            "title": "Chưa có thủ lĩnh",
+            "description": "Tạo một thủ lĩnh để theo dõi công trình, anh hùng, trang bị, nghiên cứu và kế hoạch nâng cấp. Mọi dữ liệu nằm trong trình duyệt này.",
+            "restore": "Khôi phục bản sao lưu trong Cài đặt"
+        },
+        "search": {
+            "label": "Tìm theo tên",
+            "showing": "Hiển thị {shown} trên {total}",
+            "noMatchTitle": "Không có thủ lĩnh nào khớp “{search}”",
+            "noMatchDescription": "Kiểm tra chính tả hoặc xóa tìm kiếm để xem cả {count} thủ lĩnh.",
+            "clear": "Xóa tìm kiếm"
+        }
+    }
+}

@@ -1,0 +1,239 @@
+{
+  "page": {
+    "title": "전문가"
+  },
+  "view": {
+    "subline": "{chief} · Dawn Academy 전문가, 게임 전체 {total}명",
+    "ghost": "전문가"
+  },
+  "common": {
+    "plan": "계획",
+    "generation": "{generation}세대",
+    "unknown": "알 수 없음",
+    "and": "{first} 및 {last}",
+    "expertCount": "{count, plural, other {전문가 {amount}명}}"
+  },
+  "stats": {
+    "recruited": "영입한 전문가",
+    "recruitedValue": "{total}명 중 {count}명",
+    "powerNow": "현재 전문가 전투력, 영입한 전문가만",
+    "powerAtMax": "최대 전투력, 전체 {total}명",
+    "highest": "최고 친밀도",
+    "highestValue": "{name} {affinity}",
+    "highestNone": "영입한 전문가 없음"
+  },
+  "toolbar": {
+    "searchLabel": "전문가 검색",
+    "searchPlaceholder": "전문가 검색",
+    "filters": "필터",
+    "emptyTitle": "일치하는 전문가가 없어요",
+    "emptyDescription": "검색어나 필터를 바꿔 더 많은 전문가를 찾아보세요.",
+    "reset": "필터 초기화",
+    "status": "{total}명 중 {shown}명 표시 중. 목표는 여기서 읽기 전용이며 계획에서 설정해요. 10으로 나누어떨어지는 레벨에서는 전문가를 승급하기 전까지 이전 레벨의 보너스가 적용돼요. 변경 사항은 바로 저장돼요.",
+    "lockedNote": "{count}명은 이후 서버 일차까지 잠김."
+  },
+  "toast": {
+    "notRecruitedTitle": "{name}을(를) 영입하지 않았어요",
+    "notRecruitedMessage": "레벨은 저장된 상태로 유지되며 영입을 켜면 다시 적용돼요.",
+    "undo": "실행 취소"
+  },
+  "card": {
+    "recruited": "영입함",
+    "recruitedLabel": "{expert} 영입함",
+    "summary": "{title} · {specialty} · {generation}",
+    "affinityLevel": "친밀도 레벨",
+    "affinityLabel": "{expert} 친밀도 레벨",
+    "affinityDisplay": "{level} / {max}",
+    "affinityProgress": "{expert} 친밀도 진행도",
+    "goal": "목표 {goal}",
+    "advanced": "승급함",
+    "notAdvanced": "승급 안 함",
+    "advancedLabel": "{expert} {level}레벨에서 승급함",
+    "relationship": "관계 레벨",
+    "affinityAvailable": "보유 친밀도",
+    "affinityAvailableLabel": "{expert} 보유 친밀도 포인트",
+    "affinityOf": "{level}레벨에 필요한 {need} 중",
+    "bonusTitle": "현재 기본 보너스",
+    "bonusNow": "{amount}% {stats}",
+    "bonusOwnLevel": "{level}레벨은 10의 배수가 아니므로 해당 레벨의 보너스가 적용돼요.",
+    "bonusAdvanced": "{level}레벨은 승급했으므로 해당 레벨의 보너스가 적용돼요.",
+    "bonusNotAdvanced": "{level}레벨은 승급하지 않았으므로 {counted}레벨의 보너스가 적용돼요.",
+    "bonusAtMax": "100레벨: {amount}%.",
+    "feeds": "적용 대상",
+    "bonuses": "보너스",
+    "nextAdvancement": "다음 승급: {level}레벨, 인장 {sigils}개",
+    "allAdvanced": "모든 승급을 마쳤어요.",
+    "skills": "스킬",
+    "skillLabel": "{expert} {skill} 레벨",
+    "skillDisplay": "{level} / {max}",
+    "expAvailable": "보유 경험치",
+    "expAvailableLabel": "{expert} {skill} 보유 경험치",
+    "expOf": "{level}레벨에 필요한 {need} 중",
+    "maxLevel": "최대 레벨, 경험치 필요 없음",
+    "talent": "재능: {name}",
+    "talentLevel": "{max}레벨 중 {level}레벨",
+    "talentFollows": "{relationship}을(를) 따라요. {effect}.",
+    "power": "전투력 {max} 중 {now}",
+    "derived": "계산값",
+    "notRecruitedHint": "영입하지 않았어요. Tundra Trek에서 이 전문가를 영입한 뒤 영입을 켜세요.",
+    "recruitmentCost": "영입 비용: {cost}",
+    "maxPower": "최대 전투력 {max}",
+    "buffs": "버프 {stats}",
+    "expEnough": "{level}레벨에 충분",
+    "affinityEnough": "{level}레벨에 충분",
+    "skillLocked": "해금되지 않았어요. 1레벨로 올리면 해금돼요.",
+    "sigilsOwned": "보유 인장",
+    "sigilsOwnedLabel": "{expert} 보유 인장",
+    "sigilsHint": "자원 페이지의 인장과 같은 수량이에요."
+  },
+  "filtersFlyout": {
+    "title": "필터",
+    "description": "전문가 목록을 좁히고 정렬을 고르세요.",
+    "generation": "세대",
+    "all": "전체",
+    "show": "표시",
+    "order": "정렬",
+    "reset": "초기화",
+    "showButton": "{experts} 보기",
+    "notSaved": "필터는 저장되지 않아요.",
+    "showOptions": {
+      "everything": "전체",
+      "recruited": "영입한 전문가만",
+      "notRecruited": "영입 안 한 전문가만"
+    },
+    "orderOptions": {
+      "generation": "세대",
+      "affinity": "친밀도 레벨",
+      "power": "전투력",
+      "name": "이름"
+    }
+  },
+  "plan": {
+    "title": "전문가 계획",
+    "description": "친밀도와 스킬 목표에 필요한 Books of Knowledge, 인장, 스킬 경험치, 친밀도 포인트.",
+    "saved": "{date}에 계획 저장됨",
+    "close": "닫기",
+    "save": "계획 저장",
+    "exportButton": "핵심 이벤트로 내보내기",
+    "exportNothing": "내보낼 계획에 책이나 인장이 필요하지 않아요.",
+    "export": {
+      "books": "Books of Knowledge",
+      "sigils": "전문가 인장",
+      "exp": "스킬 경험치",
+      "expReason": "스킬 경험치에 점수를 주는 이벤트는 없어요."
+    },
+    "noExperts": "계획에 전문가가 아직 없어요. 영입한 전문가를 추가해 목표를 설정하세요.",
+    "add": {
+      "title": "전문가 추가",
+      "selectLabel": "추가할 전문가",
+      "button": "전문가 추가",
+      "allIn": "영입한 모든 전문가가 계획에 있어요.",
+      "noneRecruited": "페이지에서 전문가를 영입하면 계획할 수 있어요."
+    },
+    "block": {
+      "remove": "삭제",
+      "removeLabel": "계획에서 {expert} 삭제",
+      "part": "항목",
+      "current": "현재",
+      "goalHeading": "목표",
+      "affinity": "친밀도 레벨",
+      "affinityHeld": "보유 친밀도 {amount}",
+      "expHeld": "보유 경험치 {amount}",
+      "currentLevel": "{level}레벨",
+      "currentAffinity": "{level}, 승급함",
+      "currentAffinityPlain": "{level}",
+      "affinityGoalLabel": "{expert} 친밀도 목표",
+      "skillGoalLabel": "{expert} {skill} 목표",
+      "advanceAtGoal": "{level}레벨에서 승급",
+      "advanceAtGoalLabel": "{expert} 목표에서 승급"
+    },
+    "checks": {
+      "affinity": "친밀도 포인트",
+      "learning": "학습 가속으로 환산한 스킬 경험치",
+      "minutesUnit": "분"
+    },
+    "stock": {
+      "sigils": "계획에 인장 {total}개가 필요해요. 보유한 전문가 인장이 {own}개를 채우므로 {common}개는 Common Expert Sigils로 채워야 해요. 보유한 전문가 인장은 해당 전문가에게만 쓸 수 있어요.",
+      "books": "계획에 스킬 레벨용 Books of Knowledge {amount}개가 필요해요.",
+      "affinity": "계획에 친밀도 포인트 {needed}가 필요해요. 전문가 카드에 있는 보유량이 {held}를 채우므로 {left}를 더 얻어야 해요. 패키지에 친밀도 아이템이 없어서 재고와 비교하지 않아요.",
+      "learning": "계획에 스킬 경험치 {exp}가 필요해요. 스킬에 {held}가 있으므로 {left}는 학습 가속으로 채워야 해요. 학습 1분에 경험치 {rate}를 얻으므로 {minutes}분이 필요해요."
+    },
+    "byExpert": {
+      "title": "전문가별",
+      "sigils": "인장: {needed}개 필요, {name} 인장 {own}개로 충당, Common Expert Sigils로 {common}개 채움",
+      "affinity": "친밀도: {needed} 필요, {held} 보유, {left} 더 필요",
+      "exp": "스킬 경험치: {needed} 필요, {held} 보유, {left} 더 필요"
+    },
+    "result": {
+      "title": "결과",
+      "derived": "계산값",
+      "books": "Books of Knowledge",
+      "sigils": "인장",
+      "exp": "스킬 경험치",
+      "affinity": "친밀도 포인트",
+      "advancements": "승급",
+      "skillLevels": "스킬 레벨",
+      "affinityLevels": "친밀도 레벨",
+      "heads": {
+        "expert": "전문가",
+        "books": "책",
+        "sigils": "인장",
+        "exp": "경험치",
+        "levels": "레벨",
+        "advancements": "승급",
+        "affinity": "친밀도"
+      },
+      "empty": "전문가를 추가하고 목표를 올리면 결과를 볼 수 있어요.",
+      "tableLabel": "계획 결과 표"
+    }
+  },
+  "learning": {
+    "title": "학습",
+    "note": "한 번에 스킬 하나를 학습해요. 완료하면 그 스킬에 경험치가 더해져요.",
+    "idle": "학습 중인 것이 없어요. 세션을 시작해 스킬에 경험치를 더하세요.",
+    "startButton": "학습 시작",
+    "slotLabel": "학습, 한 번에 세션 하나",
+    "jobTitle": "{expert}, {skill}, {session}",
+    "manageFinishText": "업그레이드 완료를 누르면 세션의 경험치가 스킬에 더해지고, 학습 대기열이 비며, 세션이 기록에 추가돼요. 남은 시간이 0이면 카드에 완료 가능이라고 표시돼요. 가속을 썼을 수 있으므로 저절로 완료되는 것은 없어요.",
+    "flyout": {
+      "title": "학습 시작",
+      "description": "전문가 스킬의 학습 세션을 진행 중으로 표시해요",
+      "expert": "전문가",
+      "skill": "스킬",
+      "skillOption": "{name}, {max}레벨 중 {level}레벨",
+      "session": "세션",
+      "sessionOption": "{label}, 경험치 {exp}",
+      "sessionHint": "세션은 1분마다 경험치 60을 얻어요. 세션은 게임과 같아요.",
+      "expEarned": "얻는 경험치",
+      "heldAfter": "이후 보유 경험치",
+      "tooMuch": "스킬은 경험치 {room}만 더 받을 수 있어서 나머지는 사라져요.",
+      "whenStarted": "언제 시작했나요?",
+      "modes": {
+        "now": "지금 시작",
+        "already": "이미 시작함"
+      },
+      "timeLeftHours": "남은 시간(시간)",
+      "ends": "종료",
+      "startedHint": "게임에서 세션이 진행 중이면 이미 시작함을 사용하세요. 게임에 표시된 시간을 입력하세요.",
+      "nothingToLearn": "지금 학습할 수 있는 스킬이 없어요. 전문가를 영입하고 최고 레벨이 아닌 스킬을 해금하세요.",
+      "busy": "이미 세션이 진행 중이에요. 먼저 관리에서 완료하거나 취소하세요.",
+      "cancel": "취소",
+      "start": "학습 시작"
+    },
+    "toasts": {
+      "started": {
+        "title": "학습을 시작했어요",
+        "message": "{what}."
+      },
+      "finished": {
+        "title": "{what} 학습 완료",
+        "message": "경험치를 스킬과 기록에 추가했어요."
+      },
+      "cancelled": {
+        "title": "{what} 취소됨",
+        "message": "스킬은 기존 경험치를 유지해요."
+      },
+      "undo": "실행 취소"
+    }
+  }
+}

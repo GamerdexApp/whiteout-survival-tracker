@@ -1,0 +1,19 @@
+{
+  "duration": {
+    "days": "{value}일",
+    "hours": "{value}시간",
+    "minutes": "{value}분",
+    "seconds": "{value}초",
+    "zero": "0초",
+    "separator": " "
+  },
+  "timeLeft": {
+    "left": "{duration} 남음",
+    "ready": "완료 가능"
+  },
+  "saveFailed": {
+    "title": "저장되지 않음",
+    "message": "브라우저 저장 공간이 가득 찼어요. 지금 백업을 내보내세요.",
+    "exportBackup": "백업 내보내기"
+  }
+}

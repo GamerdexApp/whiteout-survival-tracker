@@ -1,0 +1,86 @@
+{
+  "page": {
+    "title": "Strutture"
+  },
+  "view": {
+    "subline": "{chief} · {facilities} strutture sulla mappa, castello, {strongholds} roccaforti e {fortresses} fortezze"
+  },
+  "summary": {
+    "owned": "Strutture possedute",
+    "ownedValue": "{owned} su {total}",
+    "strongholds": "Roccaforti, riferimento",
+    "fortresses": "Fortezze, riferimento",
+    "castle": "Castello, riferimento"
+  },
+  "tabs": {
+    "label": "Viste delle strutture",
+    "facilities": "Strutture",
+    "fortresses": "Fortezze",
+    "map": "Mappa"
+  },
+  "show": {
+    "label": "Mostra",
+    "all": "Tutte",
+    "owned": "Possedute",
+    "notOwned": "Non possedute"
+  },
+  "card": {
+    "owned": "{count} possedute",
+    "level": "Livello {level}",
+    "ownedSwitch": "Posseduta",
+    "switchLabel": "{facility} livello {level} posseduta",
+    "booster": "Potenziatore",
+    "injured": "Gravemente feriti",
+    "losses": "Perdite",
+    "ownLimit": "Limite personale {limit}. {spots} {spotWord} sulla mappa.",
+    "spot": "posto",
+    "spots": "posti"
+  },
+  "empty": {
+    "title": "Nulla da mostrare",
+    "description": "Nessun livello di struttura corrisponde a questo filtro.",
+    "reset": "Mostra tutte"
+  },
+  "fortress": {
+    "kind": {
+      "castle": "Castello",
+      "stronghold": "Roccaforte",
+      "fortress": "Fortezza"
+    },
+    "coordinates": "x {x}, y {y}",
+    "rewardsHeading": "Ricompensa per fase",
+    "phase": "Fase {phase}",
+    "noRewards": "Il castello non ha ricompense nel pacchetto.",
+    "referenceNote": "Solo riferimento. Castello, roccaforti e fortezze cambiano ogni settimana, quindi qui nulla è posseduto o tracciato.",
+    "kindLabel": "Tipo",
+    "allKinds": "Tutti i tipi",
+    "rewardLabel": "Ricompensa",
+    "allRewards": "Tutte le ricompense",
+    "shown": "{shown} strutture su {total} mostrate",
+    "empty": "Nessuna struttura corrisponde ai filtri.",
+    "reset": "Azzera filtri",
+    "filters": "Filtri",
+    "filtersTitle": "Filtri",
+    "filtersDescription": "Filtra le strutture per tipo e ricompensa",
+    "done": "Mostra {count}"
+  },
+  "map": {
+    "highlight": "Evidenzia una struttura",
+    "layers": "Livelli",
+    "layerFacilities": "Strutture",
+    "layerStrongholds": "Roccaforti",
+    "layerFortresses": "Fortezze",
+    "spotsHeading": "Posti per strutture, {count} in tutto",
+    "spotLegend": "{name} ({count})",
+    "codeHint": "La cifra dopo il codice è il livello, per esempio Co1 è Costruzione livello 1. La struttura evidenziata è piena.",
+    "structures": "Strutture",
+    "castleStrongholdLegend": "Castello (1) e roccaforti da S1 a S4 ({count})",
+    "fortressLegend": "Fortezza da 1 a {count}",
+    "selected": "Selezionato sulla mappa",
+    "selectedNone": "Seleziona un castello, una roccaforte o una fortezza sulla mappa.",
+    "mapLabel": "Mappa dell'alleanza",
+    "note": "Schema della mappa dell'alleanza. Le posizioni usano x e y del pacchetto su una griglia {size} per {size}, un quadrato della griglia è {step}. Un posto è un punto dove può comparire una struttura, quindi le strutture possedute non sono segnate. Il pacchetto non ha grafica del terreno.",
+    "spotLabel": "{name} livello {level}, x {x}, y {y}",
+    "structureLabel": "{name}, x {x}, y {y}"
+  }
+}

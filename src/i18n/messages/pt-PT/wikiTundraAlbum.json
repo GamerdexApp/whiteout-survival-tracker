@@ -1,0 +1,32 @@
+{
+  "line": "O pacote de dados tem {have} dos {total} álbuns. Cada um tem um bónus, recompensas de conclusão e {puzzles} puzzles.",
+  "note": "Os outros {missing} álbuns são adicionados quando o pacote os tiver.",
+  "albums": "Álbuns",
+  "puzzleCount": "{count, plural, one {{amount} puzzle} other {{amount} puzzles}}",
+  "pieceCount": "{count, plural, one {{amount} peça} other {{amount} peças}}",
+  "view": {
+    "label": "Vista",
+    "puzzles": "Puzzles",
+    "pieces": "Todas as peças"
+  },
+  "album": {
+    "counts": "{puzzles}, {pieces}",
+    "buff": "Bónus quando completo",
+    "buffValue": "{stat} {value}",
+    "rewards": "Recompensas de conclusão",
+    "buffNote": "O bónus só conta quando os {puzzles} puzzles estão feitos."
+  },
+  "puzzles": {
+    "title": "Puzzles",
+    "puzzle": "Puzzle",
+    "pieces": "Peças",
+    "star": "Estrela {stars}",
+    "reward": "Recompensa"
+  },
+  "allPieces": {
+    "title": "Todas as peças",
+    "summary": "{pieces} em {puzzles}",
+    "imageNote": "As imagens das peças vêm do pacote de dados. Uma peça sem imagem mostra um quadrado simples.",
+    "stars": "{count, plural, one {{amount} estrela} other {{amount} estrelas}}"
+  }
+}

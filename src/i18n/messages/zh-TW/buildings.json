@@ -1,0 +1,282 @@
+{
+    "title": "建築",
+    "tabs": {
+        "buildings": "建築",
+        "facilities": "設施"
+    },
+    "notBuilt": "未建造",
+    "built": "已建造",
+    "none": "無",
+    "unknown": "未知",
+    "close": "關閉",
+    "cancel": "取消",
+    "undo": "復原",
+    "ofTotal": "{count} / {total}",
+    "noOtherRequirements": "沒有其他條件",
+    "builderName": "建造者 {number}",
+    "shelterName": "Shelter {number}",
+    "levelOf": "{name}等級",
+    "levelRange": "{from} 到 {to}",
+    "requirement": {
+        "shelter": "{building} {level} 級",
+        "heroHall": "已建造 Hero Hall",
+        "level": "{building} {level}"
+    },
+    "columns": {
+        "building": "建築",
+        "current": "目前",
+        "goal": "目標",
+        "power": "戰力",
+        "progress": "進度與下一級",
+        "upgrade": "升級"
+    },
+    "entry": {
+        "notes": {
+            "furnace": "決定其他所有建築的上限",
+            "shelter": "最多 8 個 Shelter，各有自己的等級"
+        },
+        "subline": {
+            "size": "最高 {max} · {count} 級",
+            "withNote": "{note} · {size}",
+            "single": "單次建造 · 戰力 {power}"
+        },
+        "progress": {
+            "requires": "需要 {list}",
+            "noRequirements": "沒有條件",
+            "maxLevel": "最高等級",
+            "blocked": "受阻：需要 {list}",
+            "needs": "需要 {list}",
+            "levelAgeLocked": "儲存的等級 {level} 在這個伺服器尚未開放。{text}",
+            "goalAgeLocked": "目標 {goal} 在這個伺服器尚未開放。{text}",
+            "nextAgeLocked": "下一級 {level} 已鎖定。{text}"
+        },
+        "builtSwitch": "{name}已建造",
+        "shelters": {
+            "none": "尚未建造",
+            "editLabel": "Shelter（{count}），編輯等級",
+            "button": "Shelter（{count}）"
+        },
+        "levels": "等級",
+        "levelsLabel": "{name}的等級",
+        "upgrading": "{name}升級中",
+        "startLabel": "開始升級{name}",
+        "start": "開始",
+        "startUpgrade": "開始升級",
+        "devIndex": "發展指數 {value}",
+        "powerLine": "戰力 {power} · 發展指數 {index}",
+        "progressLabel": "{name}進度"
+    },
+    "builders": {
+        "label": "建造者",
+        "hint": "你在這裡開始的升級，會在總覽中顯示為進行中的佇列。",
+        "idle": "在建築上按「開始」即可開始升級。",
+        "jobTitle": "{name}，{from} 到 {to}",
+        "locked": "已鎖定",
+        "lockedText": "第二位建造者需要 Construction Pack。",
+        "lockedLink": "在編輯領主中開啟"
+    },
+    "upgrade": {
+        "option": "{subject}，{from} 到 {to}",
+        "busy": "忙碌中：{name} 升至 {level}，{timeLeft}"
+    },
+    "facilities": {
+        "intro": "你城市中的設施。標記你已建造的設施。這些是城市設施，不是聯盟選單中的聯盟設施。",
+        "builtLabel": "已建造的設施",
+        "unlockedLabel": "已在你的 Furnace 等級解鎖",
+        "requires": "需要 Furnace {level}",
+        "unlocksAt": "Furnace {level} 解鎖"
+    },
+    "tab": {
+        "intro": "每個建築的目前等級和目標。Furnace 決定其他建築能升到的等級。",
+        "searchLabel": "搜尋建築",
+        "filters": "篩選",
+        "massEdit": "批次編輯",
+        "startUpgrade": "開始升級",
+        "plan": "規劃",
+        "status": "顯示 {shown} / {total} 個建築。目標在這裡唯讀，請在「規劃」中設定。目標與目前等級相同表示沒有目標。加減按鈕會依遊戲順序每次移動一級。",
+        "groupPinned": "已置頂",
+        "stats": {
+            "furnace": "Furnace，決定其他所有建築",
+            "power": "目前戰力，所有建築",
+            "developmentIndex": "發展指數，所有建築",
+            "withGoal": "有目標的建築",
+            "atMax": "已達最高等級",
+            "entertainment": "已建造娛樂建築"
+        },
+        "empty": {
+            "title": "沒有符合的建築",
+            "description": "請更改搜尋，或重設篩選以查看所有建築。",
+            "reset": "重設搜尋與篩選"
+        },
+        "start": {
+            "description": "將建築標記為升級中",
+            "selectLabel": "要升級的建築",
+            "selectHelp": "只列出現在可以開始升級的建築。已鎖定、已滿級和進行中的建築不會列出。每次升級會使用兩位建造者其中一位。",
+            "timeLabel": "建造時間",
+            "speedLabel": "建造速度",
+            "slotLabel": "建造者",
+            "slotHelp": "請選擇閒置的建造者。忙碌的建造者會顯示何時空出。"
+        },
+        "toasts": {
+            "started": {
+                "title": "已開始升級",
+                "message": "{name}，{subtitle}。"
+            },
+            "finished": {
+                "title": "{name}已升級",
+                "message": "現為 {level}。已加入紀錄。"
+            },
+            "cancelled": {
+                "title": "已取消{name}的升級",
+                "message": "等級維持原樣。如有需要，請到資源頁面修正庫存。"
+            },
+            "massEdit": {
+                "title": "已套用批次編輯",
+                "message": "已更新 {count, plural, other {{amount} 個建築}}。"
+            }
+        },
+        "manage": {
+            "finishText": "「完成升級」會把{name}設為 {level}、釋放建造者 {builder}，並將這次升級加入你的紀錄。剩餘時間為零時，建築和建造者卡片會顯示「可完成」。不會自動完成，因為你可能用了加速道具。"
+        }
+    },
+    "filters": {
+        "title": "篩選",
+        "description": "選擇建築清單要顯示的內容",
+        "reset": "重設",
+        "show": "{count, plural, other {顯示 {amount} 個建築}}",
+        "category": "分類",
+        "categoryAll": "全部，{count}",
+        "categoryOption": "{category}，{count}",
+        "showSection": "顯示",
+        "hideMaxed": "隱藏已滿級的建築",
+        "hideLocked": "隱藏已鎖定的建築",
+        "goalsOnly": "只顯示有目標的建築",
+        "order": "排序",
+        "orders": {
+            "game": "遊戲順序，Furnace 在最前",
+            "name": "名稱，A 到 Z",
+            "progress": "進度，由低到高"
+        },
+        "pinned": "不論如何篩選，Furnace 都固定在最上方。篩選條件不會儲存。"
+    },
+    "levels": {
+        "title": "等級",
+        "description": "{category} · 最高 {max} · {count} 級",
+        "noDescription": "資料中尚無說明。",
+        "current": "目前等級",
+        "goal": "目標等級",
+        "nextNeeds": "下一級需要",
+        "noGoal": "沒有目標",
+        "tableNote": "這個表格只列出目前等級之後的等級，因為之前的已完成。",
+        "maxed": "已達最高等級，沒有可升級的了。",
+        "nextAfter": "{level} 之後的等級",
+        "first": "最初幾級",
+        "level": "等級",
+        "time": "時間",
+        "power": "戰力",
+        "capacity": "容量",
+        "requires": "需要",
+        "goalBadge": "目標",
+        "capacityNote": "資料包只在階級的基礎列設定容量，所以子等級顯示為未知。"
+    },
+    "massEdit": {
+        "title": "批次編輯建築",
+        "description": "一次設定多個建築。按下「設定建築」之前不會儲存任何內容。",
+        "noChanges": "尚無變更",
+        "changes": "{count, plural, other {{amount} 個建築會變更}}",
+        "set": "{count, plural, other {設定 {amount} 個建築}}",
+        "raiseTitle": "將所有建築提升到指定等級",
+        "raiseLabel": "將所有建築提升到等級",
+        "raiseAll": "全部提升",
+        "raiseHint": "每個建築會升到不高於此等級的最高等級。已經更高的建築維持不變，較晚才開放的建築仍為未建造。目標不會變更。",
+        "blockedTitle": "部分建築需要先有其他建築。",
+        "blocked": "{count, plural, other {{amount} 個建築}}高於其條件所允許的等級。",
+        "lowerBlocked": "調降到允許的等級",
+        "levels": "等級",
+        "needsFirst": "需要先有 {list}",
+        "was": "原為 {level}",
+        "entertainment": "娛樂",
+        "markAllBuilt": "全部標為已建造",
+        "clearAll": "全部清除",
+        "footnote": "批次編輯只會變更已儲存的等級。它不會自行調降等級，也不會變更目標。每個 Shelter 都有各自的等級，請用 Shelter 按鈕設定，Hero Hall 則在設施分頁設定。"
+    },
+    "shelters": {
+        "title": "Shelter",
+        "description": "最多可建造 {max} 個。請設定每個的等級。",
+        "locked": "Shelter 仍被你的 Furnace 等級鎖定。",
+        "empty": "尚無 Shelter。",
+        "power": "戰力 {power}",
+        "add": "新增 Shelter",
+        "remove": "移除 Shelter {number}",
+        "allBuilt": "已建造全部 {max} 個 Shelter。",
+        "furnaceNeeds": "你的 Furnace 對 Shelter 的需求",
+        "requirement": "Furnace {furnaceLevel} 需要 Shelter {number} 達 {level} 級。",
+        "met": "已達成。",
+        "notMet": "未達成。",
+        "footnote": "規劃和進度條使用你等級最低的 Shelter，也就是下一個要升級的。"
+    },
+    "plan": {
+        "title": "規劃建築",
+        "description": "從目前等級到目標所需的資源、時間和戰力",
+        "saved": "規劃已儲存 {time}",
+        "save": "儲存規劃",
+        "failed": "無法算出這份規劃。",
+        "goalsHeading": "{count, plural, other {目標，{amount} 個建築}}",
+        "noGoals": "尚無目標。請先在上方新增建築，再選擇要升到的等級。",
+        "prerequisiteNote": "前置步驟會自動加入。若某個等級需要另一個建築達到更高等級，這些步驟會計入並加上標記。",
+        "timeNote": "套用 {percent}% 速度加成後，規劃需要 {time}。你的庫存：建造 {construction} 分，通用 {general} 分。通用加速道具可用於建造。",
+        "add": {
+            "title": "新增建築",
+            "allAdded": "所有建築都已在規劃中。",
+            "selectLabel": "要新增的建築",
+            "button": "新增建築"
+        },
+        "speed": {
+            "title": "建造速度",
+            "percent": "{value}%",
+            "plusPercent": "+{value}%",
+            "readOnly": "唯讀",
+            "bonusesOn": "沿用自加成頁面。",
+            "bonusesOff": "已在設定的「套用我的加成合計」中關閉。",
+            "openBonuses": "開啟加成",
+            "appointment": "總統特權與任命",
+            "appointments": {
+                "none": "無",
+                "regular": "一般",
+                "supreme": "最高"
+            },
+            "appointmentNote": "一般 10%，最高 15%。<strong>估計值：</strong>資料包只在研究中提供這些數值。",
+            "petSkill": "寵物技能，Builder's Aide",
+            "petSkillNote": "百分比依寵物頁面中 Cave Hyena 的目前等級。",
+            "chiefOrder": "領主指令，Double Time",
+            "chiefOrderNote": "<strong>估計值：</strong>5 分鐘內增加 {percent}% 建造速度。資料包沒有領主指令資料，所以數值由應用程式輸入，並套用到整段時間。",
+            "total": "建造速度合計",
+            "petSkillNoteLocked": "Cave Hyena 在寵物頁面尚未解鎖，所以這個技能沒有效果。請到該頁面解鎖後再開啟。"
+        },
+        "goal": {
+            "to": "到",
+            "label": "{name}目標",
+            "remove": "從規劃中移除{name}"
+        },
+        "result": {
+            "title": "結果，{count} 步",
+            "powerGained": "獲得戰力",
+            "speedupMinutes": "所需加速分鐘數",
+            "baseTime": "基本時間",
+            "timeWithBonus": "套用 {percent}% 加成後的時間",
+            "eventPoints": "活動積分：SvS {svs}，King of Icefield {king}（<strong>估計值</strong>，依活動的計分列）。",
+            "prerequisite": "前置條件",
+            "steps": "{count, plural, other {{amount} 步}}",
+            "unmetHeading": "未達成的前置條件",
+            "unmetNone": "這些目標沒有。清單之外的建築（例如 Hero Hall）會顯示在這裡。"
+        },
+        "export": {
+            "button": "匯出到核心活動",
+            "empty": "請先在規劃中新增目標才能匯出。",
+            "speedupMinutes": "建造加速分鐘數",
+            "power": "透過建造獲得的戰力",
+            "stockDetail": "規劃需要 {needed}，你持有 {held}。",
+            "unscored": "沒有活動會為{name}計分。"
+        }
+    }
+}

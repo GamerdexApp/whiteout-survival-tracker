@@ -1,0 +1,216 @@
+{
+    "chiefCount": "{count, plural, other {{amount} 位領主}}",
+    "localStorageNote": {
+        "title": "本機儲存。",
+        "body": "你的領主資料只存在這個瀏覽器中。清除瀏覽器快取後資料會遺失，請定期匯出備份。"
+    },
+    "page": {
+        "title": "設定",
+        "subline": "管理你的資料、領主設定和外觀",
+        "tabsLabel": "設定",
+        "tabs": {
+            "preferences": "偏好設定",
+            "data": "備份與資料",
+            "about": "關於"
+        }
+    },
+    "about": {
+        "version": "版本 {version}",
+        "summary": "追蹤你的 Whiteout Survival 進度：建築、英雄、領主裝備、專家、寵物、部隊、研究、聯盟科技、資源和你的規劃。所有資料都存在這個瀏覽器中。",
+        "wiki": "Whiteout Survival 百科",
+        "disclaimer": "與 Century Games 無關，也未獲其認可。Whiteout Survival 是 Century Games 的商標。"
+    },
+    "preferences": {
+        "chiefSettings": {
+            "title": "領主設定",
+            "description": "套用於所有領主。立即儲存。",
+            "footnote": "在計算器中變更選項不會改變這些預設值。Furnace 顯示方式只影響等級的寫法，不會改變等級本身。新增或刪除領主不會重設這些設定。",
+            "groups": {
+                "furnaceDisplay": "Furnace 顯示",
+                "lists": "清單",
+                "calculatorOptions": "計算器預設選項"
+            },
+            "fullLevelLabels": {
+                "label": "顯示完整等級標示",
+                "description": "在側邊欄、總覽和建築頁面顯示 Furnace 的子等級，例如顯示 FC 5-2 而不是 FC 5。其他建築本來就顯示完整標示。"
+            },
+            "hideMaxed": {
+                "label": "隱藏已滿級項目",
+                "description": "隱藏已達最高等級的建築、英雄、寵物和專家。每個清單都保留「顯示已滿級」篩選，所以不會遺失任何項目。"
+            },
+            "useBonuses": {
+                "label": "套用我的加成合計",
+                "description": "新的計算器會以加成頁面中的建造速度百分比作為起點。單次計算時仍可更改。"
+            },
+            "showSpeedups": {
+                "label": "顯示加速分鐘數",
+                "description": "在每個計算器結果的時間下方，顯示所需的加速分鐘數。"
+            },
+            "showEventPoints": {
+                "label": "顯示活動積分",
+                "description": "在會回傳活動積分的計算器結果中，加上活動積分這一行。"
+            }
+        },
+        "appearance": {
+            "title": "外觀",
+            "description": "選擇應用程式的外觀。與你的資料一起儲存。",
+            "themeLabel": "主題",
+            "themeNote": "「系統」會跟隨你的裝置，目前為{current}。這個選擇會包含在備份中。"
+        },
+        "themes": {
+            "light": "淺色",
+            "dark": "深色",
+            "system": "系統"
+        }
+    },
+    "data": {
+        "backupDownloaded": "已下載備份",
+        "merged": "已合併備份",
+        "replaced": "已取代為備份",
+        "undo": "復原",
+        "resetDone": "已重設所有資料",
+        "resetDoneMessage": "已移除{chiefs}，並清除設定。",
+        "management": {
+            "title": "資料管理",
+            "description": "一個備份檔就包含所有領主和你的設定。"
+        },
+        "export": {
+            "title": "匯出資料",
+            "description": "下載所有已儲存領主的備份檔。檔名：<file>{fileName}</file>。日期為你當地的日期。",
+            "button": "匯出所有領主"
+        },
+        "import": {
+            "title": "匯入資料",
+            "description": "上傳先前匯出的檔案（.json）。系統會先檢查檔案，接著由你選擇合併或取代，並查看會有哪些變更。在你確認之前不會有任何變更。",
+            "chooseFile": "選擇檔案",
+            "noFile": "未選擇檔案",
+            "review": "檢視匯入內容"
+        },
+        "reset": {
+            "title": "重設所有資料",
+            "warningTitle": "警告：",
+            "warning": "這會刪除所有領主，並重設領主設定和主題。你可以在 10 秒內復原，如果想保留副本，請先匯出備份。",
+            "button": "重設所有資料"
+        },
+        "chiefs": {
+            "title": "領主",
+            "description": "在專屬頁面建立、重新命名、編輯和刪除領主。匯出、匯入和重設會套用到所有領主。",
+            "manage": "管理領主"
+        }
+    },
+    "importDialog": {
+        "title": "匯入備份",
+        "cancel": "取消",
+        "close": "關閉",
+        "merge": "合併",
+        "replace": "取代",
+        "failedTitle": "匯入失敗。",
+        "checksTitle": "檔案檢查結果。",
+        "checks": "已找到領主清單，並讀取了 {count, plural, other {{amount} 筆資料}}。目前尚未儲存任何內容，所以你現有的領主資料沒有變動。",
+        "howToApply": "要如何套用這個檔案？",
+        "modeLabel": "匯入模式",
+        "modes": {
+            "merge": "合併（建議）",
+            "replace": "取代這部裝置上的所有資料"
+        },
+        "modeNotes": {
+            "merge": "加入新的領主，若同一位領主兩邊都有，則保留較新的版本。只存在這部裝置上的領主會保留。你的設定也會保留。",
+            "replace": "移除這部裝置上的所有領主，並照原樣載入檔案內容，包含其中的設定。需要還原成一模一樣的副本時請用這個。"
+        },
+        "whatChanges": "會有哪些變更",
+        "columns": {
+            "chief": "領主",
+            "inFile": "檔案中",
+            "onDevice": "這部裝置上",
+            "result": "結果"
+        },
+        "results": {
+            "added": "新增",
+            "updated": "以檔案內容更新",
+            "kept": "保留這部裝置上的版本",
+            "replaced": "從檔案載入",
+            "removed": "移除"
+        },
+        "notThere": "沒有",
+        "noChiefs": "檔案中沒有領主。",
+        "undoNote": "匯入後 10 秒內可以復原。",
+        "bytes": "{amount} B",
+        "kilobytes": "{amount} KB",
+        "fileInfo": "{name} · {size}"
+    },
+    "resetDialog": {
+        "title": "重設所有資料",
+        "cancel": "取消",
+        "confirm": "是，重設所有資料",
+        "question": "要從這個瀏覽器刪除所有{chiefs}嗎？",
+        "removedTitle": "會移除的內容",
+        "settingsNote": "你選擇的淺色、深色或系統主題會恢復為「系統」。領主設定會恢復預設值。使用中的領主會被清除。",
+        "undoNote": "重設後 10 秒內可以復原。如果想要留存的檔案副本，請先匯出備份。",
+        "exportFirst": "請先匯出備份"
+    },
+    "backup": {
+        "notJson": "這個檔案不是有效的 JSON。沒有任何變更。",
+        "noChiefsList": "缺少領主清單。沒有任何變更。",
+        "duplicateId": "有兩位領主使用相同的 id。沒有任何變更。",
+        "withNothingChanged": "{reason}沒有任何變更。",
+        "chief": {
+            "notObject": "第 {position} 位領主不是物件。",
+            "noId": "第 {position} 位領主沒有 id。",
+            "noName": "第 {position} 位領主沒有名稱。",
+            "noDates": "第 {position} 位領主缺少日期。",
+            "badStateNumber": "第 {position} 位領主的州編號不是整數。",
+            "badCoreEvent": "第 {position} 位領主有未知的核心活動。",
+            "badUnlock": "第 {position} 位領主有一項解鎖設定，不是已知區域的伺服器天數。",
+            "badPack": "第 {position} 位領主有一項禮包設定不是開或關。"
+        },
+        "settings": {
+            "notObject": "設定不是物件。",
+            "badTheme": "主題不是淺色、深色或系統。",
+            "notText": "設定 {key} 不是文字。",
+            "uiNotObject": "介面設定不是物件。",
+            "badTimeZone": "這個時區不是瀏覽器所認得的時區。"
+        },
+        "summary": {
+            "added": "新增 {amount}",
+            "updated": "以檔案內容更新 {amount}",
+            "kept": "保留這部裝置上的 {amount}",
+            "replaced": "從檔案載入 {amount}",
+            "removed": "移除 {amount}"
+        }
+    },
+    "region": {
+        "title": "語言與地區",
+        "description": "選擇語言，以及數字和日期的寫法。與你的資料一起儲存。",
+        "language": {
+            "label": "語言",
+            "hint": "英雄、道具、建築和研究的名稱來自遊戲資料，目前維持英文。"
+        },
+        "numberFormat": {
+            "label": "數字格式",
+            "hint": "範例：{example}",
+            "options": {
+                "auto": "自動，跟隨語言",
+                "us": "1,234.56（美國）",
+                "european": "1.234,56（德國）",
+                "french": "1 234,56（法國）",
+                "swiss": "1’234.56（瑞士）",
+                "indian": "12,34,567.89（印度）"
+            }
+        },
+        "dateFormat": {
+            "label": "日期格式",
+            "hint": "範例：{example}",
+            "options": {
+                "auto": "自動，跟隨語言",
+                "mdy": "月/日/年",
+                "dmy": "日/月/年",
+                "ymd": "年-月-日"
+            }
+        },
+        "timeZone": {
+            "label": "時區",
+            "hint": "用於日期和時間，以及活動頁面的「我的時間」。範例：UTC 14:05 會顯示為 {example}。",
+            "auto": "自動，跟隨你的裝置（{zone}）"
+        }
+    }
+}

@@ -1,0 +1,373 @@
+{
+  "page": {
+    "title": "活动",
+    "subline": "{chief} · {details}"
+  },
+  "tabs": {
+    "label": "活动视图",
+    "calendar": "日历",
+    "mine": "我的活动",
+    "history": "活动历史"
+  },
+  "actions": {
+    "addDetails": "添加活动详情",
+    "addEvent": "添加活动"
+  },
+  "categories": {
+    "alliance": "联盟",
+    "solo": "个人",
+    "rookie": "新手",
+    "holiday": "节日"
+  },
+  "gives": {
+    "rewards": "仅奖励",
+    "personal": "个人排名",
+    "alliance": "联盟排名",
+    "both": "两种排名"
+  },
+  "weekdays": {
+    "short": {
+      "sunday": "周日",
+      "monday": "周一",
+      "tuesday": "周二",
+      "wednesday": "周三",
+      "thursday": "周四",
+      "friday": "周五",
+      "saturday": "周六"
+    },
+    "initial": {
+      "sunday": "日",
+      "monday": "一",
+      "tuesday": "二",
+      "wednesday": "三",
+      "thursday": "四",
+      "friday": "五",
+      "saturday": "六"
+    }
+  },
+  "months": {
+    "january": "1月",
+    "february": "2月",
+    "march": "3月",
+    "april": "4月",
+    "may": "5月",
+    "june": "6月",
+    "july": "7月",
+    "august": "8月",
+    "september": "9月",
+    "october": "10月",
+    "november": "11月",
+    "december": "12月"
+  },
+  "monthsShort": {
+    "january": "1月",
+    "february": "2月",
+    "march": "3月",
+    "april": "4月",
+    "may": "5月",
+    "june": "6月",
+    "july": "7月",
+    "august": "8月",
+    "september": "9月",
+    "october": "10月",
+    "november": "11月",
+    "december": "12月"
+  },
+  "format": {
+    "weekdayDay": "{weekday}，{date}",
+    "utcTime": "{time} UTC",
+    "dateTime": "{date}，{time}",
+    "range": "{start}至{end}",
+    "length": {
+      "minutes": "{count, plural, other {{amount}分钟}}",
+      "hours": "{count, plural, other {{amount}小时}}",
+      "days": "{count, plural, other {{amount}天}}",
+      "weeks": "{count, plural, other {{amount}周}}",
+      "months": "{count, plural, other {{amount}个月}}"
+    }
+  },
+  "repeat": {
+    "none": "不重复",
+    "weekly": "每周{days}",
+    "weeklyAny": "每周",
+    "every": {
+      "hours": "{count, plural, other {每{amount}小时}}",
+      "days": "{count, plural, other {每{amount}天}}",
+      "weeks": "{count, plural, other {每{amount}周}}",
+      "months": "{count, plural, other {每{amount}个月}}"
+    }
+  },
+  "empty": {
+    "title": "还没有活动",
+    "description": "添加你参与的活动。设置一次开始日期和时间，日历和即将开始列表就会保持更新。",
+    "steps": {
+      "pick": {
+        "title": "选择活动。",
+        "text": "从游戏数据中的活动里选择。"
+      },
+      "start": {
+        "title": "设置开始时间。",
+        "text": "输入下一轮的日期和时间。有些活动有两轮，或持续数天。"
+      },
+      "roll": {
+        "title": "自动滚动。",
+        "text": "一轮结束后，下一个日期会按重复规则自动填写。"
+      }
+    }
+  },
+  "calendar": {
+    "previous": "上个月",
+    "next": "下个月",
+    "today": "今天",
+    "zoneLabel": "时区",
+    "utc": "UTC",
+    "local": "我的时间",
+    "monthTitle": "{year}年{month}",
+    "nameWithRun": "{name}，{run}",
+    "dayTail": "第{day}天",
+    "chipText": "{name} {tail}"
+  },
+  "upcoming": {
+    "title": "即将开始",
+    "empty": "未来 30 天内没有活动。",
+    "now": "进行中",
+    "today": "今天",
+    "tomorrow": "明天",
+    "inDays": "{count, plural, other {{amount}天后}}",
+    "timeAndLength": "{time}，{length}"
+  },
+  "mine": {
+    "intro": "{count, plural, other {{amount}个活动。}}一轮结束后，下一轮日期会按重复规则自动更新，因此日历始终显示接下来的内容。",
+    "run": "轮次",
+    "rangeLine": "{range}，{time}",
+    "shortLine": "{when}，{length}",
+    "repeat": "重复：{rule}",
+    "coreTag": "结果记录在核心活动",
+    "coreLink": "打开核心活动",
+    "ended": "已结束",
+    "logged": "已记录",
+    "edit": "编辑",
+    "remove": "移除"
+  },
+  "toast": {
+    "removedTitle": "已移除{name}",
+    "removedMessage": "已保存的结果仍保留在活动历史中。",
+    "undo": "撤销",
+    "resultSavedTitle": "结果已保存",
+    "resultSavedMessage": "{name}已加入活动历史。"
+  },
+  "add": {
+    "title": "添加活动",
+    "description": "从游戏数据中选择一个活动",
+    "close": "关闭",
+    "searchLabel": "搜索活动",
+    "searchPlaceholder": "搜索{amount}个活动",
+    "categoryLabel": "活动分类",
+    "all": "全部",
+    "categoryTab": "{name}，{amount}",
+    "showing": "显示{shown} / {total}个活动。选择一个即可设置开始日期和时间。",
+    "none": "没有与搜索匹配的活动。",
+    "noDuration": "游戏数据中没有时长",
+    "added": "已添加",
+    "button": "添加",
+    "addNamed": "添加{name}",
+    "showMore": "显示更多"
+  },
+  "schedule": {
+    "description": "设置活动何时进行。之后的轮次会自动更新。",
+    "cancel": "取消",
+    "add": "添加活动",
+    "save": "保存日程",
+    "howTitle": "活动的进行方式",
+    "shape": {
+      "one": "一天",
+      "several": "多天",
+      "two": "每个周期两轮"
+    },
+    "shapeHint": {
+      "one": "单轮，持续一天。如需短时间的活动，可把时长改为分钟或小时。",
+      "several": "单轮，持续多天。",
+      "two": "每个周期有两轮，例如两个赛季或一周中的两天。每轮有各自的开始时间、时长和名称。"
+    },
+    "runTitle": "第{number}轮",
+    "runSingle": "轮次",
+    "name": "名称",
+    "startDate": "开始日期",
+    "startTime": "开始时间（UTC）",
+    "length": "时长",
+    "unit": "单位",
+    "runUnits": {
+      "minutes": "分钟",
+      "hours": "小时",
+      "days": "天"
+    },
+    "repeatTitle": "重复",
+    "repeatKind": {
+      "none": "不重复",
+      "every": "每隔",
+      "weekly": "每周的指定日期"
+    },
+    "every": "每隔",
+    "weekdays": "星期",
+    "repeatUnits": {
+      "hours": "小时",
+      "days": "天",
+      "weeks": "周",
+      "months": "个月"
+    },
+    "gameSays": "游戏数据显示：{text}",
+    "gameSaysNoRule": "游戏数据显示：{text}",
+    "useSuggestion": "使用建议",
+    "everyError": "请输入大于 0 的数字。",
+    "givesTitle": "活动给予什么",
+    "givesHint": "根据游戏数据设置，可以修改。它决定结果表单要填写哪些内容。",
+    "previewTitle": "日历将显示的内容",
+    "previewEmpty": "输入有效的日期和时长即可查看各轮。",
+    "previewShort": "{range}，{time}",
+    "previewNote": "一轮结束后，其日期会按重复规则向后推移。任何日期都可以编辑。"
+  },
+  "result": {
+    "title": "添加活动详情",
+    "description": {
+      "participation": "记录你是否参与以及获得了什么",
+      "milestones": "积分和已达成的目标",
+      "ranking": "得分、排名和已达成的里程碑",
+      "tier": "联赛段位和名次",
+      "waves": "难度、波数、积分和排名",
+      "skipped": "记录你跳过了这一轮"
+    },
+    "cancel": "取消",
+    "save": "保存结果",
+    "noEvents": "请先添加活动。只有我的活动中的活动可以记录，核心活动请在核心活动中记录。",
+    "whichTitle": "哪个活动",
+    "event": "活动",
+    "versionsTag": "版本",
+    "run": "轮次",
+    "otherDate": "其他日期",
+    "runDate": "轮次日期",
+    "runLong": "{range}（{length}）",
+    "runNamed": "{when}，{name}",
+    "notLogged": "{run}，尚未记录",
+    "tookPartQuestion": "你参与了吗？",
+    "tookPart": "已参与",
+    "skipped": "已跳过",
+    "coreNote": "这里只列出你添加的活动。核心活动在核心活动中记录，不在这里。",
+    "versionTitle": "版本",
+    "versionKnown": "此版本的目标已在数据中，因此会根据你的积分检查。",
+    "versionUnknown": "此版本有些目标的积分尚未收录。请手动检查这些目标。",
+    "participationTitle": "此活动没有得分或排名",
+    "participationText": "游戏数据只列出奖励，因此没有可计分的内容。请记录你是否参与、获得的奖励和备注。",
+    "pointsFallback": "积分",
+    "pointsReached": "已达到的{unit}",
+    "pointsHint": "活动结束时的总数。",
+    "finalScore": "最终得分（{unit}）",
+    "finalScoreHint": "活动结束时你的{unit}总数。",
+    "rankingTitle": "排名",
+    "yourRank": "你的排名",
+    "allianceRank": "联盟排名",
+    "rankGroup": "排名分组",
+    "rankGroupsHint": "排名分组来自游戏数据：{groups}等。",
+    "targetsTitle": "已达成的目标，根据你的积分",
+    "targetsCount": "已达成{reached} / {total}",
+    "targetPoints": "{points} {unit}",
+    "pointsMissing": "{unit}：积分尚未收录",
+    "needsPurchase": "需要任意金额的一次购买。",
+    "targetsHint": "根据得分检查。目标和奖励来自游戏数据。",
+    "targetsHintUnknown": "积分尚未收录的目标不会根据得分检查。请手动检查。",
+    "tierTitle": "联赛",
+    "tier": "段位",
+    "placement": "你在小组中的名次",
+    "starChange": "星级变化，来自游戏数据",
+    "stars": "{count, plural, other {{amount}星}}",
+    "tiersHint": "段位：{tiers}。",
+    "allianceTitle": "联盟",
+    "outcome": "本轮联盟结果",
+    "outcomeHint": "可选。胜、负或平。",
+    "outcomes": {
+      "none": "未设置",
+      "won": "胜",
+      "lost": "负",
+      "drawn": "平"
+    },
+    "wavesTitle": "难度与波数",
+    "difficulty": "你挑战的难度",
+    "difficultyFrom": "{name}，需{points}联盟积分",
+    "wavesCleared": "已通过波数，0 到{count}",
+    "wavesHint": "游戏数据中{name}共有{count}波。",
+    "defenseTitle": "防御积分",
+    "yourPoints": "你的积分",
+    "alliancePoints": "联盟积分",
+    "rewardLevel": "已达到的奖励等级",
+    "rewardLevelNone": "暂无",
+    "level": "{level}级",
+    "levelsHint": "等级需要个人积分和联盟积分，数据来自游戏数据。",
+    "rankingsTitle": "排名",
+    "notesTitle": "备注",
+    "rewards": "你获得的奖励",
+    "rewardsPlaceholder": "例如 2 Hero Shards，500 Gems",
+    "notes": "备注",
+    "notesPlaceholder": "关于这一轮想记住的内容"
+  },
+  "history": {
+    "emptyTitle": "还没有记录结果",
+    "emptyText": "点击添加活动详情，记录你在活动中的收获。你的结果和趋势会显示在这里。",
+    "eventFilter": "活动",
+    "allEvents": "全部活动",
+    "period": "时间范围",
+    "months3": "3 个月",
+    "months6": "6 个月",
+    "allTime": "全部时间",
+    "intro": "你记录的所有结果，最新在前。核心活动在核心活动中记录，不会出现在这里。",
+    "showing": "显示{shown} / {total}个结果。",
+    "showingEvent": "{count, plural, other {显示{name}的{amount}个结果。}}",
+    "noneInPeriod": "这个时间范围内没有结果。",
+    "showMore": "显示更多",
+    "colDate": "日期",
+    "colEvent": "活动",
+    "colScore": "得分",
+    "colRank": "排名",
+    "colAlliance": "联盟",
+    "colResult": "结果",
+    "colActions": "操作",
+    "none": "-",
+    "edit": "编辑",
+    "editNamed": "编辑{name}的结果",
+    "skipped": "已跳过",
+    "tierOnly": "{tier} {placement}",
+    "stars": "{count, plural, other {{amount}星}}",
+    "waves": "{count, plural, other {{difficulty}，{amount}波}}",
+    "targets": "{unit}，已达成{reached} / {total}个目标",
+    "tookPart": "已参与",
+    "tookPartRewards": "已参与，{rewards}",
+    "rankText": "排名{rank}",
+    "allianceRankText": "联盟{rank}",
+    "separator": " · ",
+    "defensePoints": "{score}防御积分",
+    "scoreUnit": "{score} {unit}",
+    "noScore": "无得分",
+    "trendTitle": "{name}趋势",
+    "trendScore": "每次活动结束时的{unit}",
+    "trendRank": "每次活动结束时你的排名",
+    "metricLabel": "趋势指标",
+    "metricScore": "得分",
+    "metricRank": "个人排名",
+    "chartLabel": "{name}的趋势图",
+    "best": "最佳",
+    "average": "平均",
+    "latest": "最新",
+    "change": "变化",
+    "events": "{count, plural, other {{amount}个活动}}",
+    "changeVs": "对比{month}",
+    "changePercentVs": "对比{month} {percent}%",
+    "noPrevious": "没有更早的结果",
+    "noTrend": "此活动没有可绘制图表的得分或排名。其结果在下方列表中。"
+  },
+  "cycles": {
+    "title": "核心活动周期",
+    "hint": "SvS、Alliance Showdown 和 King of Icefield 按固定周期进行。设置一次下次开始时间，它们就会在日历上重复。",
+    "next": "下次{date}，{repeat}",
+    "notSet": "未设置",
+    "set": "设置周期",
+    "edit": "编辑周期"
+  }
+}

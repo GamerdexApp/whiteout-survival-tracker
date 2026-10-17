@@ -1,0 +1,239 @@
+{
+  "page": {
+    "title": "Experts"
+  },
+  "view": {
+    "subline": "{chief} · experts de la Dawn Academy, {total} dans le jeu",
+    "ghost": "Experts"
+  },
+  "common": {
+    "plan": "Plan",
+    "generation": "Génération {generation}",
+    "unknown": "Inconnu",
+    "and": "{first} et {last}",
+    "expertCount": "{count, plural, one {{amount} expert} other {{amount} experts}}"
+  },
+  "stats": {
+    "recruited": "Experts recrutés",
+    "recruitedValue": "{count} sur {total}",
+    "powerNow": "Puissance des experts actuelle, recrutés seulement",
+    "powerAtMax": "Puissance au max, les {total}",
+    "highest": "Meilleure affinité",
+    "highestValue": "{name} à {affinity}",
+    "highestNone": "Aucun recruté"
+  },
+  "toolbar": {
+    "searchLabel": "Rechercher des experts",
+    "searchPlaceholder": "Rechercher des experts",
+    "filters": "Filtres",
+    "emptyTitle": "Aucun expert ne correspond",
+    "emptyDescription": "Modifiez la recherche ou les filtres pour voir plus d'experts.",
+    "reset": "Réinitialiser les filtres",
+    "status": "{shown} affichés sur {total}. Les objectifs sont en lecture seule ici et se définissent dans Plan. À un niveau divisible par 10, le bonus du niveau précédent s'applique jusqu'à l'avancement de l'expert. Chaque modification est enregistrée aussitôt.",
+    "lockedNote": "{count} verrouillés jusqu'à un jour de serveur ultérieur."
+  },
+  "toast": {
+    "notRecruitedTitle": "{name} n'est pas recruté",
+    "notRecruitedMessage": "Les niveaux restent enregistrés et se réactivent avec Recruté.",
+    "undo": "Annuler"
+  },
+  "card": {
+    "recruited": "Recruté",
+    "recruitedLabel": "{expert} recruté",
+    "summary": "{title} · {specialty} · {generation}",
+    "affinityLevel": "Niveau d'affinité",
+    "affinityLabel": "Niveau d'affinité de {expert}",
+    "affinityDisplay": "{level} / {max}",
+    "affinityProgress": "Progression d'affinité de {expert}",
+    "goal": "Objectif {goal}",
+    "advanced": "Avancé",
+    "notAdvanced": "Non avancé",
+    "advancedLabel": "{expert} avancé au niveau {level}",
+    "relationship": "Niveau de relation",
+    "affinityAvailable": "Affinité disponible",
+    "affinityAvailableLabel": "Points d'affinité de {expert} en stock",
+    "affinityOf": "sur {need} pour le niveau {level}",
+    "bonusTitle": "Bonus de base actuel",
+    "bonusNow": "{amount} % {stats}",
+    "bonusOwnLevel": "Le niveau {level} n'est pas un multiple de 10, son propre bonus s'applique.",
+    "bonusAdvanced": "Le niveau {level} est avancé, son propre bonus s'applique.",
+    "bonusNotAdvanced": "Le niveau {level} n'est pas avancé, le bonus du niveau {counted} s'applique.",
+    "bonusAtMax": "Au niveau 100 : {amount} %.",
+    "feeds": "Alimente",
+    "bonuses": "Bonus",
+    "nextAdvancement": "Prochain avancement : niveau {level}, {sigils} sceaux",
+    "allAdvanced": "Tous les avancements sont faits.",
+    "skills": "Compétences",
+    "skillLabel": "Niveau de {skill} de {expert}",
+    "skillDisplay": "{level} / {max}",
+    "expAvailable": "EXP disponible",
+    "expAvailableLabel": "EXP de {skill} de {expert} en stock",
+    "expOf": "sur {need} pour le niveau {level}",
+    "maxLevel": "Niveau max, aucune EXP nécessaire",
+    "talent": "Talent : {name}",
+    "talentLevel": "Niveau {level} sur {max}",
+    "talentFollows": "Suit {relationship}. {effect}.",
+    "power": "Puissance {now} sur {max}",
+    "derived": "Calculé",
+    "notRecruitedHint": "Non recruté. Recrutez cet expert dans Tundra Trek, puis activez Recruté.",
+    "recruitmentCost": "Coût de recrutement : {cost}",
+    "maxPower": "Puissance max {max}",
+    "buffs": "Renforce {stats}",
+    "expEnough": "Suffisant pour le niveau {level}",
+    "affinityEnough": "Suffisant pour le niveau {level}",
+    "skillLocked": "Non débloquée. Montez-la au niveau 1 pour la débloquer.",
+    "sigilsOwned": "Sceaux possédés",
+    "sigilsOwnedLabel": "Sceaux de {expert} possédés",
+    "sigilsHint": "Le même nombre que le sceau de la page Ressources."
+  },
+  "filtersFlyout": {
+    "title": "Filtres",
+    "description": "Affinez la liste des experts et choisissez l'ordre.",
+    "generation": "Génération",
+    "all": "Toutes",
+    "show": "Afficher",
+    "order": "Ordre",
+    "reset": "Réinitialiser",
+    "showButton": "Afficher {experts}",
+    "notSaved": "Les filtres ne sont pas enregistrés.",
+    "showOptions": {
+      "everything": "Tout",
+      "recruited": "Recrutés seulement",
+      "notRecruited": "Non recrutés seulement"
+    },
+    "orderOptions": {
+      "generation": "Génération",
+      "affinity": "Niveau d'affinité",
+      "power": "Puissance",
+      "name": "Nom"
+    }
+  },
+  "plan": {
+    "title": "Planifier les experts",
+    "description": "Books of Knowledge, sceaux, EXP de compétence et points d'affinité pour les objectifs d'affinité et de compétence.",
+    "saved": "Plan enregistré {date}",
+    "close": "Fermer",
+    "save": "Enregistrer le plan",
+    "exportButton": "Exporter vers Événements clés",
+    "exportNothing": "Le plan n'a besoin ni de livres ni de sceaux à exporter.",
+    "export": {
+      "books": "Books of Knowledge",
+      "sigils": "Sceaux d'expert",
+      "exp": "EXP de compétence",
+      "expReason": "Aucun événement ne note l'EXP de compétence."
+    },
+    "noExperts": "Aucun expert dans le plan pour l'instant. Ajoutez un expert recruté pour définir ses objectifs.",
+    "add": {
+      "title": "Ajouter un expert",
+      "selectLabel": "Expert à ajouter",
+      "button": "Ajouter l'expert",
+      "allIn": "Tous les experts recrutés sont dans le plan.",
+      "noneRecruited": "Recrutez un expert sur la page pour le planifier."
+    },
+    "block": {
+      "remove": "Retirer",
+      "removeLabel": "Retirer {expert} du plan",
+      "part": "Élément",
+      "current": "Actuel",
+      "goalHeading": "Objectif",
+      "affinity": "Niveau d'affinité",
+      "affinityHeld": "Affinité disponible {amount}",
+      "expHeld": "EXP disponible {amount}",
+      "currentLevel": "Niveau {level}",
+      "currentAffinity": "{level}, avancé",
+      "currentAffinityPlain": "{level}",
+      "affinityGoalLabel": "Objectif d'affinité de {expert}",
+      "skillGoalLabel": "Objectif de {skill} de {expert}",
+      "advanceAtGoal": "Avancer au niveau {level}",
+      "advanceAtGoalLabel": "Avancement de {expert} à l'objectif"
+    },
+    "checks": {
+      "affinity": "Points d'affinité",
+      "learning": "EXP de compétence en accélérations d'apprentissage",
+      "minutesUnit": "min"
+    },
+    "stock": {
+      "sigils": "Le plan nécessite {total} sceaux. Vos sceaux d'expert en couvrent {own}, donc {common} doivent venir des Common Expert Sigils. Chaque sceau d'expert que vous possédez ne compte que pour cet expert.",
+      "books": "Le plan nécessite {amount} Books of Knowledge pour les niveaux de compétence.",
+      "affinity": "Le plan nécessite {needed} points d'affinité. Ce que vous avez sur les cartes d'experts en couvre {held}, il en reste donc {left} à obtenir. Les données n'ont pas d'objet d'affinité, rien n'est donc comparé à un stock.",
+      "learning": "Le plan nécessite {exp} EXP de compétence. Vos compétences en ont {held}, donc {left} doivent venir d'accélérations d'apprentissage. Une minute d'apprentissage donne {rate} EXP, soit {minutes} minutes."
+    },
+    "byExpert": {
+      "title": "Par expert",
+      "sigils": "Sceaux : {needed} nécessaires, {own} couverts par votre sceau {name}, {common} à obtenir via Common Expert Sigils",
+      "affinity": "Affinité : {needed} nécessaires, {held} disponibles, {left} encore à obtenir",
+      "exp": "EXP de compétence : {needed} nécessaires, {held} disponibles, {left} encore à obtenir"
+    },
+    "result": {
+      "title": "Résultat",
+      "derived": "Calculé",
+      "books": "Books of Knowledge",
+      "sigils": "Sceaux",
+      "exp": "EXP de compétence",
+      "affinity": "Points d'affinité",
+      "advancements": "Avancements",
+      "skillLevels": "Niveaux de compétence",
+      "affinityLevels": "Niveaux d'affinité",
+      "heads": {
+        "expert": "Expert",
+        "books": "Livres",
+        "sigils": "Sceaux",
+        "exp": "EXP",
+        "levels": "Niveaux",
+        "advancements": "Av.",
+        "affinity": "Affinité"
+      },
+      "empty": "Ajoutez un expert et augmentez un objectif pour voir le résultat.",
+      "tableLabel": "Tableau du résultat du plan"
+    }
+  },
+  "learning": {
+    "title": "Apprentissage",
+    "note": "Une compétence apprend à la fois. Terminer ajoute l'EXP à cette compétence.",
+    "idle": "Rien n'est en apprentissage. Lancez une session pour ajouter de l'EXP à une compétence.",
+    "startButton": "Lancer l'apprentissage",
+    "slotLabel": "Apprentissage, une session à la fois",
+    "jobTitle": "{expert}, {skill}, {session}",
+    "manageFinishText": "Terminer l'amélioration ajoute l'EXP de la session à la compétence, libère la file d'apprentissage et ajoute la session à votre Historique. Quand il ne reste plus de temps, la carte indique Prêt à terminer. Rien ne se termine tout seul, car vous avez pu utiliser des accélérations.",
+    "flyout": {
+      "title": "Lancer l'apprentissage",
+      "description": "Marquer une session d'apprentissage en cours pour une compétence d'expert",
+      "expert": "Expert",
+      "skill": "Compétence",
+      "skillOption": "{name}, niveau {level} sur {max}",
+      "session": "Session",
+      "sessionOption": "{label}, {exp} EXP",
+      "sessionHint": "Une session rapporte 60 EXP par minute. Les sessions sont celles du jeu.",
+      "expEarned": "EXP gagnée",
+      "heldAfter": "EXP en stock après",
+      "tooMuch": "La compétence ne peut utiliser que {room} EXP de plus, le reste est perdu.",
+      "whenStarted": "Quand a-t-elle commencé ?",
+      "modes": {
+        "now": "Commence maintenant",
+        "already": "Déjà commencée"
+      },
+      "timeLeftHours": "Temps restant, heures",
+      "ends": "Fin",
+      "startedHint": "Utilisez Déjà commencée quand la session tourne dans le jeu. Saisissez le temps qu'il affiche.",
+      "nothingToLearn": "Aucune compétence ne peut apprendre pour l'instant. Recrutez un expert et débloquez une compétence qui n'est pas à son niveau maximum.",
+      "busy": "Une session est déjà en cours. Terminez-la ou annulez-la d'abord dans Gérer.",
+      "cancel": "Annuler",
+      "start": "Lancer l'apprentissage"
+    },
+    "toasts": {
+      "started": {
+        "title": "Apprentissage lancé",
+        "message": "{what}."
+      },
+      "finished": {
+        "title": "{what} appris",
+        "message": "L'EXP a été ajoutée à la compétence et à l'Historique."
+      },
+      "cancelled": {
+        "title": "{what} annulé",
+        "message": "La compétence garde l'EXP qu'elle avait."
+      },
+      "undo": "Annuler"
+    }
+  }
+}

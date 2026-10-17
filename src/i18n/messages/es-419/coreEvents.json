@@ -1,0 +1,108 @@
+{
+  "days": {
+    "day": "Día {number}",
+    "battle": "Batalla",
+    "range": "Días {range}",
+    "stage": "Etapa {number}"
+  },
+  "page": {
+    "title": "Eventos principales",
+    "subline": "{chief} · {details}"
+  },
+  "events": {
+    "svs": "SvS",
+    "showdown": "Alliance Showdown",
+    "king": "King of Icefield",
+    "hall": "Hall of Chief"
+  },
+  "tabs": {
+    "label": "Eventos principales"
+  },
+  "empty": {
+    "title": "No se muestra ningún evento",
+    "description": "Los cuatro eventos están ocultos para este jefe. Actívalos en Editar jefe.",
+    "action": "Editar jefe"
+  },
+  "strip": {
+    "live": "Evento en curso",
+    "dates": "Del {start} al {end}",
+    "noDates": "Las fechas se definen en el Registro de eventos.",
+    "today": "Hoy es {day}",
+    "checklist": "Lista de tareas",
+    "log": "Registro de eventos"
+  },
+  "bonus": {
+    "title": "Nivel de {skill} de {expert}",
+    "level": "Nivel {level}",
+    "levelWithPercent": "Nivel {level} · {percent}%",
+    "none": "Sin nivel definido, así que no se suma bonificación.",
+    "readOnly": "Solo lectura",
+    "openExperts": "Abrir Expertos",
+    "svsHelp": "Suma 2% por nivel a los puntos de los días 1 a 5, redondeado por día, y rangos extra a los umbrales de puntos. La Fase de batalla no recibe bonificación. Aquí es de solo lectura, el nivel se define en la página de Expertos.",
+    "showdownHelp": "Suma 5% por nivel a cada acción. Aquí es de solo lectura, el nivel se define en la página de Expertos.",
+    "noneTitle": "Sin bonificación de experto",
+    "kingNote": "Ningún experto cambia los puntos de King of Icefield.",
+    "hallNote": "Ningún experto cambia los puntos de Hall of Chief."
+  },
+  "daysSection": {
+    "title": "Días",
+    "stages": "Etapas",
+    "totalPerDay": "Total de puntos por día",
+    "totalPerStage": "Total de puntos por etapa",
+    "hallSeason": "La temporada se define en la cuenta y es la Temporada 1 hasta entonces.",
+    "showdownScope": "Solo puntos personales. Sin totales de alianza ni puntos de victoria."
+  },
+  "table": {
+    "title": "{day}: {name}",
+    "phasePreparation": "Fase de preparación",
+    "phaseBattle": "Fase de batalla",
+    "action": "Acción",
+    "pointsEach": "Puntos c/u",
+    "count": "Cantidad",
+    "points": "Puntos",
+    "lower": "Reducir cantidad de {action}",
+    "raise": "Aumentar cantidad de {action}",
+    "countLabel": "Cantidad de {action}",
+    "fromPlans": "{amount} de planes",
+    "base": "Base {amount}",
+    "bonus": "Bonif. {amount}",
+    "total": "Total {amount}"
+  },
+  "result": {
+    "totalTitle": "Total de puntos, todos los días",
+    "totalTitleHall": "Total de puntos, etapa seleccionada",
+    "baseBonus": "Base {base}, bonificación {bonus}",
+    "battle": "Fase de batalla",
+    "battleNoBonus": "Sin bonificación en la Fase de batalla",
+    "seasonSum": "Etapas de la temporada sumadas: {amount}. No es un ranking.",
+    "selectedDayTotal": "{day}: {amount}",
+    "selectedDayBonus": "Bonificación {percent}%"
+  },
+  "perDay": {
+    "title": "Puntos por día",
+    "titleHall": "Puntos por etapa",
+    "bar": "Proporción del día más grande para {day}"
+  },
+  "thresholds": {
+    "title": "Umbrales de puntos",
+    "estimate": "Estimación",
+    "help": "Metas de {day}, comparadas con el total del día.",
+    "reached": "Alcanzado",
+    "needs": "Faltan {amount}",
+    "extraTier": "Rango extra {number}, de Valeria",
+    "extraTierUnknown": "Los puntos y la recompensa no están en el paquete de datos",
+    "unknown": "Desconocido",
+    "noneEvent": "El paquete de datos no tiene umbrales de puntos para este evento.",
+    "noneDay": "El paquete de datos no tiene umbrales de puntos para este día."
+  },
+  "ranks": {
+    "title": "Umbrales de puesto",
+    "note": "Son rankings de jugadores. Un puesto no tiene un corte de puntos.",
+    "rank": "Puesto",
+    "reward": "Recompensa",
+    "gems": "{amount} Gems",
+    "unknown": "Desconocido",
+    "notConfirmed": "Sin confirmar",
+    "noneShowdown": "El paquete de datos no tiene ranking personal para Alliance Showdown."
+  }
+}

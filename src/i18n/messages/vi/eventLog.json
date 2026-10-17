@@ -1,0 +1,129 @@
+{
+    "title": "Nhật ký sự kiện",
+    "events": {
+        "svs": "SvS, State of Power",
+        "showdown": "Alliance Showdown",
+        "king": "King of Icefield",
+        "hall": "Hall of Chief"
+    },
+    "tabs": {
+        "label": "Chế độ xem nhật ký sự kiện",
+        "current": "Sự kiện hiện tại",
+        "history": "Lịch sử"
+    },
+    "dates": {
+        "title": "Ngày sự kiện",
+        "start": "Bắt đầu",
+        "end": "Kết thúc",
+        "days": "{count, plural, other {{amount} ngày}}",
+        "endBeforeStart": "Ngày kết thúc sớm hơn ngày bắt đầu."
+    },
+    "results": {
+        "rank": "Hạng",
+        "alliance": "Liên minh",
+        "score": "Điểm",
+        "allianceShort": "LM",
+        "scoreOf": "{day}, điểm",
+        "rankOf": "{day}, hạng",
+        "allianceOf": "{day}, hạng liên minh",
+        "plan": "Kế hoạch {total}",
+        "notStarted": "Chưa bắt đầu",
+        "opensLater": "Mở sau",
+        "empty": "Trống",
+        "locked": "Đã khóa",
+        "lock": "Khóa",
+        "unlock": "Mở khóa",
+        "lockDay": "Khóa {day}",
+        "unlockDay": "Mở khóa {day}"
+    },
+    "cards": {
+        "svsDays": "Các ngày Chuẩn bị 1 đến 5",
+        "days": "Các ngày",
+        "stages": "Các giai đoạn",
+        "rankHint": "Hạng là hạng State của bạn. Liên minh là hạng liên minh của bạn.",
+        "battleTitle": "Giai đoạn Chiến đấu",
+        "battleNote": "Điểm và hạng Chiến đấu là kết quả riêng. Chúng không được cộng vào Ngày 1 đến 5."
+    },
+    "overall": {
+        "svsTitle": "Kết quả chung, Ngày 1 đến 5",
+        "title": "Kết quả chung",
+        "rank": "Hạng chung",
+        "alliance": "Hạng liên minh chung",
+        "svsTotal": "Tổng các ngày 1 đến 5 đã khóa",
+        "daysTotal": "Tổng các ngày đã khóa",
+        "stagesTotal": "Tổng các giai đoạn đã khóa",
+        "hint": "Khóa giúp một con số không đổi khi bạn tiếp tục chơi. Số đã khóa có thể mở khóa."
+    },
+    "footer": {
+        "close": "Đóng",
+        "endEvent": "Kết thúc sự kiện",
+        "readOnly": "Lịch sử chỉ để xem"
+    },
+    "end": {
+        "title": "Kết thúc {event} và lưu vào lịch sử?",
+        "dates": "{event}, {start} đến {end}",
+        "noDates": "{event}, chưa nhập ngày",
+        "lockedTotal": "Tổng các ngày đã khóa: {total}.",
+        "lockedTotalSvs": "Tổng các ngày 1 đến 5 đã khóa: {total}.",
+        "noRanks": "Hạng chung và hạng liên minh đang trống.",
+        "allLocked": "Mọi ngày đã khóa.",
+        "unlocked": "{count, plural, other {{amount} ngày chưa khóa.}} Chúng được lưu như đã nhập, và ngày không có số vẫn để trống.",
+        "unlockedList": "Chưa khóa: {days}.",
+        "what": "Điều gì xảy ra",
+        "saves": "Lưu ngày, điểm và hạng từng ngày, cùng kết quả chung vào Lịch sử, kèm tổng kế hoạch của mỗi ngày.",
+        "clearsCounts": "Xóa số lần của mọi ngày, nên mọi ngày của kế hoạch bắt đầu lại từ 0.",
+        "clearsPlans": "Xóa các kế hoạch đã xuất sang sự kiện này và các dấu trong danh sách việc.",
+        "keeps": "Chỉ sự kiện này bị xóa. Mục tiêu và kế hoạch ở các trang khác được giữ.",
+        "cancel": "Hủy",
+        "confirm": "Kết thúc sự kiện và bắt đầu mới",
+        "toastTitle": "Sự kiện đã kết thúc",
+        "toastMessage": "{event} đã được lưu vào Lịch sử. Sự kiện bắt đầu mới và chưa có ngày.",
+        "undo": "Hoàn tác",
+        "lockedTotalStages": "Tổng các giai đoạn đã khóa: {total}."
+    },
+    "history": {
+        "intro": "Các sự kiện {event} bạn đã kết thúc, mới nhất trước. Kết thúc một sự kiện sẽ lưu nhật ký của nó ở đây và không thể sửa sau đó, chỉ có thể xóa. <link>Mở Lịch sử để xem kế hoạch so với thực tế và các nâng cấp đã lên kế hoạch.</link>",
+        "empty": "Chưa có sự kiện nào đã kết thúc. Hãy kết thúc một sự kiện để lưu nhật ký của nó ở đây.",
+        "cardTitle": "{event}, {start} đến {end}",
+        "cardNoDates": "{event}, chưa có ngày",
+        "ended": "Kết thúc {date}",
+        "svsTotal": "Ngày 1 đến 5",
+        "total": "Tổng điểm",
+        "overallRank": "Hạng chung",
+        "allianceRank": "Hạng liên minh",
+        "notSet": "Chưa đặt",
+        "showDays": "Hiện các ngày",
+        "hideDays": "Ẩn các ngày",
+        "remove": "Xóa khỏi lịch sử",
+        "removedTitle": "Đã xóa khỏi lịch sử",
+        "removedMessage": "{event} đã được xóa khỏi Lịch sử.",
+        "undo": "Hoàn tác",
+        "noValue": "-"
+    },
+    "checklist": {
+        "title": "Danh sách việc của kế hoạch",
+        "description": "{day}, việc cần làm",
+        "dayChips": "Ngày",
+        "castleTitle": "Đăng ký chức vụ Lâu đài cho {day}",
+        "castleBody": "Chức vụ Lâu đài cho cộng thêm vào ngày kế tiếp. Hãy đăng ký trước khi hôm nay kết thúc để cộng thêm có hiệu lực vào {day}.",
+        "castleCheck": "Đã đăng ký cho {day}",
+        "done": "{done} trên {total} đã xong",
+        "progress": "Hành động đã đánh dấu",
+        "planLine": "Kế hoạch trong ngày: {points} điểm. Chỉ liệt kê hành động có số lần trên 0. Số lần lấy từ trang Sự kiện chính.",
+        "empty": "Không hành động nào có số lần trong ngày này. Hãy thêm số lần ở trang Sự kiện chính.",
+        "resources": "Tài nguyên cần dùng",
+        "resourcesHint": "Vật phẩm mà ngày này tiêu hao. Kiểm tra kho trước khi bắt đầu.",
+        "actions": "Hành động",
+        "count": "x{count}",
+        "points": "{points} đ",
+        "clear": "Xóa dấu",
+        "close": "Đóng",
+        "dayTitle": "{day}: {name}"
+    },
+    "eventShort": {
+        "svs": "SvS",
+        "showdown": "Alliance Showdown",
+        "king": "King of Icefield",
+        "hall": "Hall of Chief"
+    }
+}

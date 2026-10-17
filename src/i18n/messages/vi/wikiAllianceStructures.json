@@ -1,0 +1,104 @@
+{
+    "line": "{banners} khoảng biểu ngữ, {facilities} cơ sở và {fortresses} mục lâu đài, thành trì và pháo đài. Chỉ để tham khảo, không có gì ở đây được lưu.",
+    "filters": {
+        "search": "Tìm kiếm",
+        "searchPlaceholder": "Tìm khoảng, cơ sở, pháo đài",
+        "structure": "Công trình",
+        "structures": {
+            "all": "Mọi công trình",
+            "banners": "Biểu ngữ",
+            "facilities": "Cơ sở trên bản đồ",
+            "castle": "Lâu đài",
+            "stronghold": "Thành trì",
+            "fortress": "Pháo đài"
+        }
+    },
+    "empty": "Không có gì trong danh sách này khớp tìm kiếm.",
+    "none": "Không có",
+    "banners": {
+        "title": "Chi phí xây biểu ngữ",
+        "columns": {
+            "range": "Khoảng cấp",
+            "min": "Tối thiểu",
+            "max": "Tối đa",
+            "cost": "Chi phí mỗi cấp"
+        },
+        "noCost": "Không có trong danh sách",
+        "count": "{count, plural, other {{amount} khoảng}}",
+        "detail": {
+            "title": "Chi phí biểu ngữ",
+            "fields": {
+                "range": "Khoảng cấp",
+                "min": "Cấp thấp nhất",
+                "max": "Cấp cao nhất",
+                "cost": "Chi phí mỗi cấp"
+            }
+        }
+    },
+    "facilities": {
+        "title": "Cơ sở trên bản đồ",
+        "count": "{count, plural, other {{amount} cơ sở}}",
+        "columns": {
+            "facility": "Cơ sở",
+            "bonus": "Cộng thêm",
+            "level": "Cấp {level}",
+            "listed": "Cấp có trong danh sách",
+            "ownLimit": "Giới hạn sở hữu"
+        },
+        "cell": "{available} trên bản đồ",
+        "listedOf": "{listed} trên {total}",
+        "levelsNote": "Dữ liệu liệt kê {listed} trên {total} cấp của cơ sở này. Các cấp không có trong danh sách hiện là Không rõ.",
+        "detail": {
+            "title": "Các cấp của {name}",
+            "level": "Cấp {level}",
+            "columns": {
+                "level": "Cấp",
+                "booster": "Tăng cường",
+                "injured": "Trọng thương",
+                "losses": "Tổn thất",
+                "ownLimit": "Giới hạn sở hữu",
+                "available": "Trên bản đồ",
+                "locations": "Vị trí (x, y)"
+            },
+            "percent": "{value}%",
+            "location": "{x}, {y}"
+        }
+    },
+    "fortresses": {
+        "title": "Lâu đài, thành trì và pháo đài",
+        "kinds": {
+            "castle": "Lâu đài",
+            "stronghold": "Thành trì",
+            "fortress": "Pháo đài"
+        },
+        "columns": {
+            "name": "Tên",
+            "kind": "Loại",
+            "x": "X",
+            "y": "Y",
+            "phases": "Giai đoạn",
+            "phaseOne": "Thưởng giai đoạn 1"
+        },
+        "mobileMeta": "{kind}, x {x}, y {y}",
+        "count": "{count, plural, other {{amount} công trình}}"
+    },
+    "map": {
+        "title": "Bản đồ giữ chỗ",
+        "label": "Bản đồ lâu đài, thành trì và pháo đài theo giá trị x và y",
+        "note": "Lâu đài, thành trì và pháo đài được vẽ từ giá trị x và y trên hình vuông {size} x {size}. Cỡ hình vuông là ước tính, gói dữ liệu không có kích thước bản đồ.",
+        "legend": {
+            "castle": "Hình vuông: lâu đài",
+            "stronghold": "Hình thoi: thành trì",
+            "fortress": "Hình tròn: pháo đài"
+        }
+    },
+    "detail": {
+        "title": "Phần thưởng theo giai đoạn",
+        "phases": "{count, plural, other {{amount} giai đoạn}}",
+        "columns": {
+            "phase": "Giai đoạn",
+            "reward": "Phần thưởng"
+        },
+        "noRewards": "Gói dữ liệu không có phần thưởng giai đoạn cho công trình này."
+    }
+}

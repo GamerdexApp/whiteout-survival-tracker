@@ -1,0 +1,45 @@
+{
+    "line": "{enhancement} 個強化等級、{empowerment} 個賦能等級、{mastery} 列精通鍛造和 {stats} 筆數值。僅供參考，這裡不會儲存任何內容。",
+    "tabsLabel": "英雄裝備表",
+    "tabs": {
+        "enhancement": "強化",
+        "empowerment": "賦能",
+        "mastery": "精通鍛造",
+        "stats": "數值"
+    },
+    "levels": {
+        "columns": {
+            "level": "等級",
+            "cost": "花費",
+            "power": "戰力",
+            "gain": "較前一級增加",
+            "milestonePower": "里程碑戰力",
+            "stage": "階段",
+            "statsUp": "數值提升"
+        },
+        "none": "無",
+        "percent": "{value}%",
+        "gainValue": "+{value}"
+    },
+    "stats": {
+        "slot": "欄位",
+        "troopType": "部隊類型",
+        "troop": {
+            "infantry": "步兵",
+            "lancer": "騎兵",
+            "marksman": "弓兵"
+        },
+        "note": "數值等級 101 到 200 就是賦能等級 1 到 100。",
+        "columns": {
+            "level": "等級",
+            "combat": "{stat}",
+            "health": "生命",
+            "percent": "{stat}"
+        },
+        "level": "{level} 級",
+        "empowermentLevel": "{level} 級，賦能 {empowerment}",
+        "milestonesTitle": "里程碑",
+        "milestone": "賦能 {level} 級，{event}：{stat}",
+        "percentValue": "{value}%"
+    }
+}

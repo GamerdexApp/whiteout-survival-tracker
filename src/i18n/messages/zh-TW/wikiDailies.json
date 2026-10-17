@@ -1,0 +1,46 @@
+{
+    "line": "{missions} 項遊戲內每日任務的所有已知等級、活躍度進度條獎勵和例行任務。",
+    "missionCount": "{count, plural, other {{amount} 項任務}}",
+    "tabs": {
+        "label": "每日任務",
+        "missions": "遊戲內任務",
+        "routine": "例行任務"
+    },
+    "totals": {
+        "title": "活躍度合計",
+        "missions": "遊戲內任務",
+        "levelOne": "每項任務的 1 級",
+        "allLevels": "所有已知等級",
+        "topReward": "最高獎勵等級",
+        "explanation": "每項任務會累加已完成的每一級活躍度，直到所達的等級。全部 {missions} 項任務的 1 級共 {levelOne} 活躍度。全部 {missions} 項任務的所有已知等級共 {allLevels}。"
+    },
+    "bar": {
+        "title": "活躍度進度條獎勵",
+        "activeness": "活躍度",
+        "rewards": "獎勵"
+    },
+    "missions": {
+        "title": "遊戲內任務",
+        "summary": "{missions}，{levels}",
+        "levelCount": "{count, plural, other {{amount} 個已知等級}}",
+        "level": "等級",
+        "task": "任務",
+        "target": "目標",
+        "activeness": "活躍度",
+        "otherRewards": "其他獎勵",
+        "levelLabel": "Lv {level}",
+        "sumOne": "1 級：{total} 活躍度",
+        "sumMany": "{count} 級：{parts} = {total} 活躍度",
+        "plus": "+{amount}",
+        "noOtherRewards": "無"
+    },
+    "routine": {
+        "title": "例行任務",
+        "count": "{count, plural, other {{amount} 項任務}}"
+    },
+    "missing": {
+        "title": "資料中尚未收錄",
+        "levels": "其他任務等級。每項任務有 {min} 到 {max} 個已知等級。更高的等級還不在資料包中，所以合計可能增加。",
+        "reset": "每日重設時間。資料包中沒有。追蹤器使用自己的預設值 UTC {time}，並標示為應用程式預設。"
+    }
+}

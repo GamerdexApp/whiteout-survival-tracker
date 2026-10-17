@@ -1,0 +1,99 @@
+{
+    "line": "{heroes} 位英雄和 {widgets} 個 Widget 等級。僅供參考，這裡不會儲存任何內容。",
+    "roster": {
+        "title": "名單",
+        "count": "{shown} / {total} 位英雄",
+        "search": "搜尋",
+        "searchPlaceholder": "搜尋 {count} 位英雄",
+        "generation": "世代",
+        "rarity": "稀有度",
+        "class": "職業",
+        "subClass": "副職業",
+        "all": "全部",
+        "empty": "沒有符合這些篩選的英雄。",
+        "columns": {
+            "hero": "英雄",
+            "generation": "世代",
+            "rarity": "稀有度",
+            "class": "職業",
+            "subClass": "副職業",
+            "power": "戰力，5 星",
+            "weapon": "專屬武器"
+        },
+        "none": "無"
+    },
+    "detail": {
+        "generation": "第 {generation} 世代",
+        "source": "來源：{sources}",
+        "noSource": "來源：未知",
+        "explorationAttack": "探索攻擊",
+        "explorationDefense": "探索防禦",
+        "explorationHealth": "探索生命",
+        "expeditionAttack": "遠征攻擊",
+        "expeditionDefense": "遠征防禦",
+        "powerAtLevel80": "80 級戰力",
+        "powerAtFiveStars": "5 星戰力",
+        "powerAtZeroStars": "0 星戰力",
+        "powerMissing": "第 6 世代以上缺少英雄等級和碎片的戰力資料。取得資料之前會顯示為未知。"
+    },
+    "skills": {
+        "title": "技能",
+        "count": "{count, plural, other {{amount} 個技能}}",
+        "branch": {
+            "exploration": "探索",
+            "expedition": "遠征",
+            "talent": "天賦"
+        },
+        "levels": {
+            "columns": {
+                "level": "等級",
+                "star": "所需星級",
+                "manuals": "技能書",
+                "power": "戰力增加",
+                "effects": "效果"
+            },
+            "effect": {
+                "percentOfAttack": "{name}為攻擊的 {amount}%",
+                "percent": "{name} {amount}%",
+                "seconds": "{name} {amount} 秒",
+                "number": "{name} {amount}"
+            }
+        }
+    },
+    "shards": {
+        "title": "各星級碎片花費",
+        "columns": {
+            "star": "星級",
+            "tiers": "每階碎片",
+            "total": "合計",
+            "power": "該星級戰力"
+        },
+        "star": "{star} 星"
+    },
+    "weapon": {
+        "title": "專屬武器",
+        "power": "武器戰力",
+        "exploration": "探索 攻 / 防 / 生命",
+        "expedition": "遠征 殺傷 / 生命",
+        "unlocksAt": "武器 {level} 級解鎖",
+        "levelsTitle": "武器等級",
+        "columns": {
+            "level": "武器等級",
+            "power": "戰力",
+            "widgets": "Widgets"
+        },
+        "level": "{level} 級"
+    },
+    "levels": {
+        "title": "英雄等級",
+        "columns": {
+            "level": "英雄等級",
+            "furnace": "需要",
+            "xp": "升級所需 XP",
+            "power": "戰力"
+        },
+        "level": "{level} 級",
+        "furnace": "Furnace {level}"
+    },
+    "recordLine": "{rarity}{heroClass}，第 {generation} 世代。僅供參考，這裡不會儲存任何內容。"
+}

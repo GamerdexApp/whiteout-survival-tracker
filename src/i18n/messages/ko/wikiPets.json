@@ -1,0 +1,52 @@
+{
+  "line": "펫 {pets}종이에요. 참고용이며 저장되지 않아요.",
+  "roster": {
+    "title": "펫",
+    "count": "펫 {total}종 중 {shown}종",
+    "search": "검색",
+    "searchPlaceholder": "펫 {count}종 검색",
+    "rarity": "희귀도",
+    "all": "전체",
+    "empty": "필터에 맞는 펫이 없어요.",
+    "summary": "최대 레벨 {level}, 최대 {percent}까지 정제",
+    "percentValue": "{value}%"
+  },
+  "unlock": {
+    "withFurnace": "{days}일차, Furnace {level}",
+    "withPet": "{days}일차, {pet} {level}",
+    "daysOnly": "{days}일차",
+    "label": "해금: {requirement}"
+  },
+  "detail": {
+    "maxLevel": "최대 레벨",
+    "maxRefinement": "최대 정제",
+    "unlock": "해금 조건",
+    "cooldown": "스킬 쿨타임",
+    "duration": "스킬 지속 시간",
+    "tierCooldown": "{value}",
+    "maxPower": "최대 전투력",
+    "levelPower": "최대 레벨에서 레벨과 승급 전투력",
+    "refiningPower": "최대 정제에서 정제 전투력"
+  },
+  "skill": {
+    "title": "스킬",
+    "meta": "{count, plural, other {{amount}레벨}}",
+    "level": "Lv {level}",
+    "percent": "{value}%"
+  },
+  "levels": {
+    "title": "레벨 표",
+    "level": "{level}레벨",
+    "columns": {
+      "level": "레벨",
+      "food": "펫 먹이",
+      "attack": "병력 공격",
+      "defense": "병력 방어",
+      "power": "병력 전투력",
+      "materials": "승급 재료"
+    },
+    "refined": "{value} (정제 {refined})",
+    "none": "없음"
+  },
+  "recordLine": "{rarity} 펫, 최대 레벨 {level}. 참고용이며 저장되지 않아요."
+}

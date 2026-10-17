@@ -1,0 +1,50 @@
+{
+    "page": {
+        "title": "Allianz"
+    },
+    "view": {
+        "subline": "{chief} · {details} · Bannerstufe {level}"
+    },
+    "banner": {
+        "title": "Allianzbanner",
+        "currentLevel": "Aktuelle Stufe",
+        "levelLabel": "Bannerstufe",
+        "maxHint": "Ganze Stufen von 0 bis {max}.",
+        "rangeChip": "{range}",
+        "costHeading": "Kosten pro Stufe in {range}",
+        "noTimeOrPower": "Banner haben im Paket keine Bauzeit und keine Macht, daher wird nichts angezeigt.",
+        "noCost": "Keine Kosten",
+        "none": "Keine",
+        "lower": "Bannerstufe verringern",
+        "raise": "Bannerstufe erhöhen"
+    },
+    "structures": {
+        "title": "Allianzstrukturen",
+        "tech": {
+            "title": "Tech",
+            "description": "{count} Knoten in Wachstum, Territorium und Kampf",
+            "status": "{maxed} max., {progress} in Arbeit, {locked} gesperrt"
+        },
+        "facilities": {
+            "title": "Anlagen",
+            "description": "{count} Kartenanlagen",
+            "owned": "{owned} im Besitz"
+        },
+        "fortresses": {
+            "title": "Festungen",
+            "description": "Schloss, {strongholds} Bollwerke, {fortresses} Festungen",
+            "reference": "Nur Referenz"
+        }
+    },
+    "table": {
+        "title": "Bannerkosten nach Stufenbereich",
+        "note": "{count} Bereiche, jede Stufe in einem Bereich kostet gleich viel",
+        "range": "Bereich",
+        "state": "Status",
+        "built": "Gebaut",
+        "current": "Aktuell",
+        "notBuilt": "Nicht gebaut",
+        "none": "Keine",
+        "noCost": "Keine Kosten"
+    }
+}

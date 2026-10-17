@@ -1,0 +1,45 @@
+{
+    "line": "{enhancement} cấp cường hóa, {empowerment} cấp gia cường, {mastery} dòng rèn tinh thông và {stats} mục chỉ số. Chỉ để tham khảo, không có gì ở đây được lưu.",
+    "tabsLabel": "Bảng trang bị anh hùng",
+    "tabs": {
+        "enhancement": "Cường hóa",
+        "empowerment": "Gia cường",
+        "mastery": "Rèn tinh thông",
+        "stats": "Chỉ số"
+    },
+    "levels": {
+        "columns": {
+            "level": "Cấp",
+            "cost": "Chi phí",
+            "power": "Sức mạnh",
+            "gain": "Tăng so với trước",
+            "milestonePower": "Sức mạnh mốc",
+            "stage": "Giai đoạn",
+            "statsUp": "Chỉ số tăng"
+        },
+        "none": "Không có",
+        "percent": "{value}%",
+        "gainValue": "+{value}"
+    },
+    "stats": {
+        "slot": "Ô",
+        "troopType": "Loại quân",
+        "troop": {
+            "infantry": "Bộ binh",
+            "lancer": "Kỵ binh",
+            "marksman": "Xạ thủ"
+        },
+        "note": "Cấp chỉ số 101 đến 200 là cấp gia cường 1 đến 100.",
+        "columns": {
+            "level": "Cấp",
+            "combat": "{stat}",
+            "health": "Máu",
+            "percent": "{stat}"
+        },
+        "level": "Cấp {level}",
+        "empowermentLevel": "Cấp {level}, gia cường {empowerment}",
+        "milestonesTitle": "Mốc",
+        "milestone": "Cấp gia cường {level}, {event}: {stat}",
+        "percentValue": "{value}%"
+    }
+}

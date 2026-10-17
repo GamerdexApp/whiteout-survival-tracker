@@ -1,0 +1,85 @@
+{
+  "nav": {
+    "main": "Principal",
+    "groups": {
+      "chief": "Jefe",
+      "alliance": "Alianza",
+      "account": "Cuenta",
+      "planner": "Planificador",
+      "wiki": "Wiki"
+    },
+    "items": {
+      "overview": "Resumen",
+      "buildings": "Edificios",
+      "daybreakIsland": "Daybreak Island",
+      "heroes": "Héroes",
+      "chiefGear": "Equipo del Jefe",
+      "experts": "Expertos",
+      "pets": "Mascotas",
+      "troops": "Tropas",
+      "research": "Investigación",
+      "alliance": "Alianza",
+      "facilities": "Instalaciones",
+      "tech": "Tecnología",
+      "resources": "Recursos",
+      "bonuses": "Bonificaciones",
+      "vip": "VIP",
+      "skins": "Skins",
+      "events": "Eventos",
+      "tundraAlbum": "Tundra Album",
+      "coreEvents": "Eventos principales",
+      "dailies": "Tareas diarias",
+      "history": "Historial",
+      "wikiReference": "Referencia",
+      "wikiTimeline": "Cronología",
+      "settings": "Ajustes",
+      "chiefs": "Jefes"
+    },
+    "upgradesRunning": ", {amount} {count, plural, one {mejora} other {mejoras}} en curso"
+  },
+  "appShell": {
+    "skipToContent": "Saltar al contenido",
+    "closeMenu": "Cerrar menú"
+  },
+  "appBar": {
+    "openMenu": "Abrir menú"
+  },
+  "chiefGate": {
+    "emptyTitle": "Ningún jefe seleccionado",
+    "emptyDescription": "Crea un jefe para empezar a llevar el registro. Todo se queda en este navegador.",
+    "newChief": "Nuevo jefe"
+  },
+  "chiefSwitcher": {
+    "chiefs": "Jefes",
+    "active": "Activo",
+    "allChiefs": "Todos los jefes",
+    "newChief": "Nuevo jefe",
+    "loading": "Cargando",
+    "noChiefYet": "Aún no hay jefes",
+    "sectionLabel": "Jefe",
+    "switchChief": "Cambiar de jefe"
+  },
+  "footer": {
+    "tagline": "Lleva el registro de tus jefes, edificios, héroes e investigación de Whiteout Survival en un solo lugar.",
+    "product": "Rastreador",
+    "support": "Soporte",
+    "wikiReference": "Referencia de la Wiki",
+    "wikiTimeline": "Cronología de la Wiki",
+    "backupAndData": "Respaldo y datos",
+    "aboutApp": "Acerca de",
+    "disclaimerTitle": "Aviso legal",
+    "disclaimer": "Esta aplicación no está afiliada, respaldada ni conectada con Whiteout Survival ni Century Games. Todas las marcas y el contenido del juego pertenecen a sus respectivos dueños.",
+    "copyright": "© {year} {appName}",
+    "framework": "Creada con el framework de Gamerdex, una base compartida para rastreadores gratuitos de progreso en juegos. Tus datos se quedan en tu navegador."
+  },
+  "notFound": {
+    "title": "Esta página no existe",
+    "description": "Puede que el enlace sea viejo o tenga un error. Tus jefes están a salvo y no se cambió nada.",
+    "didYouMean": "¿Quisiste decir <link>{name}</link>?",
+    "goToOverview": "Ir al Resumen",
+    "jumpTo": "O ve a"
+  },
+  "pageHeader": {
+    "wiki": "Wiki"
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "title": "Bonificaciones",
+  "all": "Todas",
+  "list": {
+    "separator": ", ",
+    "andLast": "{rest} y {last}"
+  },
+  "sourceTypes": {
+    "account": "Cuenta",
+    "hero": "Héroes",
+    "expert": "Expertos",
+    "research": "Investigación",
+    "allianceTech": "Tecnología de alianza",
+    "allianceFacility": "Instalaciones de alianza",
+    "alliancePrestige": "Edificios de prestigio de alianza",
+    "vip": "VIP",
+    "building": "Edificios",
+    "skin": "Skins",
+    "tundraAlbum": "Tundra Album",
+    "collection": "Colección",
+    "decoration": "Mi isla",
+    "treeOfLife": "Mi isla",
+    "castleAppointment": "Puesto en el Castle",
+    "pet": "Mascotas",
+    "chiefGear": "Equipo del jefe",
+    "chiefGearSet": "Bonificación de conjunto del equipo del jefe",
+    "chiefCharm": "Amuletos del jefe",
+    "chiefOrder": "Órdenes del jefe",
+    "presidentSkill": "Habilidades del presidente",
+    "marchQueuePack": "el paquete March Queue"
+  },
+  "unit": {
+    "percent": "{value}%",
+    "hours": "{value} h",
+    "seconds": "{value} s",
+    "plain": "{value}"
+  },
+  "view": {
+    "subline": "{name} · todas las bonificaciones sumadas de las demás páginas. Esta página no guarda nada.",
+    "tiles": {
+      "stats": "Estadísticas en el resultado",
+      "groups": "Grupos con estadísticas",
+      "sources": "Tipos de fuente que aportan algo"
+    },
+    "pending": {
+      "title": "Aún no se cuentan todas las fuentes.",
+      "text": "Cada fuente de abajo se lee de la página que la guarda. Hasta que existan estas páginas no suman nada: {pending}. {unstored} aún no las guarda ninguna página."
+    },
+    "rulesTitle": "Cómo se cuentan los números",
+    "rules": {
+      "affinity": {
+        "title": "Afinidad de expertos",
+        "text": "Un experto da una bonificación base que crece con el nivel de afinidad. En los niveles 10, 20 hasta 100 el experto debe avanzar. Hasta entonces cuenta la bonificación del nivel anterior."
+      },
+      "albums": {
+        "title": "Los álbumes cuentan al completarse",
+        "text": "Un Tundra Album da su mejora solo cuando se han hecho los 9 puzles."
+      },
+      "pets": {
+        "title": "Las mascotas usan el valor refinado",
+        "text": "Cada mascota cuenta su valor normal o refinado, según lo que fijes en la página de Mascotas."
+      },
+      "noNumber": {
+        "title": "Sin número, no cuenta",
+        "text": "Una fuente sin número en los datos no suma nada. No se muestra como 0."
+      },
+      "apart": {
+        "title": "Por separado",
+        "text": "Los valores porcentuales y fijos nunca se suman entre sí. Las estadísticas de Infantry, Lancer y Marksman van aparte de las de Tropas."
+      },
+      "time": {
+        "title": "Estadísticas de tiempo",
+        "text": "Construction Speed Boost son horas ahorradas en cada construcción. Ally Help Time está en segundos. Cada una muestra su unidad."
+      }
+    },
+    "search": {
+      "label": "Buscar estadísticas",
+      "placeholder": "Buscar estadísticas"
+    },
+    "views": {
+      "label": "Vista",
+      "stat": "Por estadística",
+      "source": "Por fuente"
+    },
+    "empty": {
+      "noBonusesTitle": "Aún no hay bonificaciones",
+      "noBonusesDescription": "Las bonificaciones aparecen según rellenas las páginas que las guardan.",
+      "noMatchTitle": "Ninguna estadística coincide",
+      "noMatchDescription": "Cambia la búsqueda o el grupo."
+    },
+    "statCount": "{count, plural, one {{amount} estadística} other {{amount} estadísticas}}",
+    "sourceCount": "{count, plural, one {{amount} fuente} other {{amount} fuentes}}",
+    "columns": {
+      "statAndSource": "Estadística y fuente",
+      "sourceType": "Tipo de fuente",
+      "counted": "Contado"
+    }
+  },
+  "eventRules": {
+    "title": "Reglas de mejoras en eventos",
+    "intro": "Indica qué tipos de bonificación siguen aplicándose durante un evento. Son reglas, no números, así que nada de aquí se suma a los totales de arriba.",
+    "event": "Evento",
+    "columns": {
+      "cityBonusWarsBuffs": "Bonif. ciudad",
+      "deploymentCapacity": "Despliegue",
+      "territoryBonuses": "Territorio",
+      "marchAccelerator": "Acel. marcha"
+    },
+    "applicability": {
+      "yes": "Sí",
+      "no": "No",
+      "partial": "Parcial"
+    }
+  }
+}

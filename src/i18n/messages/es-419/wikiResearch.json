@@ -1,0 +1,77 @@
+{
+  "line": "{nodes} nodos de investigación en {tabs} pestañas. Solo es referencia, nada de aquí se guarda.",
+  "tabsLabel": "Categorías de investigación",
+  "tabs": {
+    "battle": "Batalla",
+    "growth": "Crecimiento",
+    "economy": "Economía",
+    "t11": "T11",
+    "t12": "T12"
+  },
+  "search": {
+    "label": "Buscar",
+    "placeholder": "Busca entre {amount} nodos de investigación"
+  },
+  "filters": {
+    "tier": "Rango",
+    "allTiers": "Todos",
+    "tierOption": "Rango {tier}",
+    "troop": "Tipo de tropa",
+    "allTroops": "Todos",
+    "troops": {
+      "Infantry": "Infantería",
+      "Marksman": "Tirador",
+      "Lancer": "Lancero"
+    },
+    "data": "Datos",
+    "dataOptions": {
+      "all": "Todos los nodos",
+      "placeholders": "Marcadores de posición",
+      "missingTime": "Sin tiempo"
+    }
+  },
+  "list": {
+    "title": "Nodos",
+    "empty": "Ningún nodo de investigación coincide con esta búsqueda.",
+    "emptyHint": "Borra la búsqueda o un filtro.",
+    "columns": {
+      "node": "Nodo",
+      "tier": "Rango",
+      "levels": "Niveles",
+      "bonus": "Bonificación en nivel 1",
+      "time": "Tiempo, nivel 1",
+      "power": "Poder"
+    },
+    "mobileMeta": "{category}, rango {tier}, {levels}",
+    "count": "{count, plural, one {{amount} nodo} other {{amount} nodos}}"
+  },
+  "levels": "{count, plural, one {{amount} nivel} other {{amount} niveles}}",
+  "detail": {
+    "columns": {
+      "level": "Nivel",
+      "requires": "Requiere",
+      "cost": "Costo",
+      "time": "Tiempo",
+      "bonus": "Bonificación",
+      "power": "Poder"
+    },
+    "level": "Nivel {level}",
+    "none": "Ninguno",
+    "placeholderNote": "Este nodo es un marcador de posición. El paquete de datos no tiene costo ni bonificación para él.",
+    "requirement": {
+      "building": "{name} {level}",
+      "research": "{name} nivel {level}"
+    },
+    "levelsTitle": "Niveles"
+  },
+  "view": {
+    "label": "Vista",
+    "list": "Lista",
+    "tree": "Árbol"
+  },
+  "tree": {
+    "region": "Árbol de investigación de {tab}",
+    "openNode": "{name}, {levels}",
+    "tier": "T{tier}"
+  }
+}

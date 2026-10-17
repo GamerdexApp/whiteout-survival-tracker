@@ -1,0 +1,373 @@
+{
+    "page": {
+        "title": "Sự kiện",
+        "subline": "{chief} · {details}"
+    },
+    "tabs": {
+        "label": "Chế độ xem sự kiện",
+        "calendar": "Lịch",
+        "mine": "Sự kiện của tôi",
+        "history": "Lịch sử sự kiện"
+    },
+    "actions": {
+        "addDetails": "Thêm chi tiết sự kiện",
+        "addEvent": "Thêm sự kiện"
+    },
+    "categories": {
+        "alliance": "Liên minh",
+        "solo": "Cá nhân",
+        "rookie": "Tân thủ",
+        "holiday": "Lễ hội"
+    },
+    "gives": {
+        "rewards": "Chỉ có phần thưởng",
+        "personal": "Xếp hạng cá nhân",
+        "alliance": "Xếp hạng liên minh",
+        "both": "Cả hai bảng xếp hạng"
+    },
+    "weekdays": {
+        "short": {
+            "sunday": "CN",
+            "monday": "T2",
+            "tuesday": "T3",
+            "wednesday": "T4",
+            "thursday": "T5",
+            "friday": "T6",
+            "saturday": "T7"
+        },
+        "initial": {
+            "sunday": "CN",
+            "monday": "2",
+            "tuesday": "3",
+            "wednesday": "4",
+            "thursday": "5",
+            "friday": "6",
+            "saturday": "7"
+        }
+    },
+    "months": {
+        "january": "Tháng 1",
+        "february": "Tháng 2",
+        "march": "Tháng 3",
+        "april": "Tháng 4",
+        "may": "Tháng 5",
+        "june": "Tháng 6",
+        "july": "Tháng 7",
+        "august": "Tháng 8",
+        "september": "Tháng 9",
+        "october": "Tháng 10",
+        "november": "Tháng 11",
+        "december": "Tháng 12"
+    },
+    "monthsShort": {
+        "january": "Th1",
+        "february": "Th2",
+        "march": "Th3",
+        "april": "Th4",
+        "may": "Th5",
+        "june": "Th6",
+        "july": "Th7",
+        "august": "Th8",
+        "september": "Th9",
+        "october": "Th10",
+        "november": "Th11",
+        "december": "Th12"
+    },
+    "format": {
+        "weekdayDay": "{weekday}, {date}",
+        "utcTime": "{time} UTC",
+        "dateTime": "{date}, {time}",
+        "range": "{start} đến {end}",
+        "length": {
+            "minutes": "{count, plural, other {{amount} phút}}",
+            "hours": "{count, plural, other {{amount} giờ}}",
+            "days": "{count, plural, other {{amount} ngày}}",
+            "weeks": "{count, plural, other {{amount} tuần}}",
+            "months": "{count, plural, other {{amount} tháng}}"
+        }
+    },
+    "repeat": {
+        "none": "Không lặp lại",
+        "weekly": "Hằng tuần vào {days}",
+        "weeklyAny": "Mỗi tuần",
+        "every": {
+            "hours": "{count, plural, other {Mỗi {amount} giờ}}",
+            "days": "{count, plural, other {Mỗi {amount} ngày}}",
+            "weeks": "{count, plural, other {Mỗi {amount} tuần}}",
+            "months": "{count, plural, other {Mỗi {amount} tháng}}"
+        }
+    },
+    "empty": {
+        "title": "Chưa có sự kiện",
+        "description": "Thêm các sự kiện bạn chơi. Đặt ngày và giờ bắt đầu một lần, lịch và danh sách sắp tới sẽ luôn được cập nhật.",
+        "steps": {
+            "pick": {
+                "title": "Chọn một sự kiện.",
+                "text": "Chọn từ các sự kiện trong dữ liệu game."
+            },
+            "start": {
+                "title": "Đặt lúc bắt đầu.",
+                "text": "Nhập ngày và giờ của lượt kế tiếp. Một số sự kiện có hai lượt hoặc kéo dài nhiều ngày."
+            },
+            "roll": {
+                "title": "Để nó tự chạy.",
+                "text": "Sau khi một lượt kết thúc, ngày kế tiếp được điền theo quy tắc lặp lại."
+            }
+        }
+    },
+    "calendar": {
+        "previous": "Tháng trước",
+        "next": "Tháng sau",
+        "today": "Hôm nay",
+        "zoneLabel": "Múi giờ",
+        "utc": "UTC",
+        "local": "Giờ của tôi",
+        "monthTitle": "{month}, {year}",
+        "nameWithRun": "{name}, {run}",
+        "dayTail": "n{day}",
+        "chipText": "{name} {tail}"
+    },
+    "upcoming": {
+        "title": "Sắp tới",
+        "empty": "Không có lượt nào trong 30 ngày tới.",
+        "now": "Đang diễn ra",
+        "today": "Hôm nay",
+        "tomorrow": "Ngày mai",
+        "inDays": "{count, plural, other {Sau {amount} ngày}}",
+        "timeAndLength": "{time}, {length}"
+    },
+    "mine": {
+        "intro": "{count, plural, other {{amount} sự kiện.}} Sau khi một lượt kết thúc, ngày của lượt kế tiếp tự cập nhật theo quy tắc lặp lại, nên lịch luôn cho thấy điều sắp đến.",
+        "run": "Lượt",
+        "rangeLine": "{range}, {time}",
+        "shortLine": "{when}, {length}",
+        "repeat": "Lặp lại: {rule}",
+        "coreTag": "Kết quả trong Sự kiện chính",
+        "coreLink": "Mở Sự kiện chính",
+        "ended": "Đã kết thúc",
+        "logged": "Đã ghi",
+        "edit": "Sửa",
+        "remove": "Xóa"
+    },
+    "toast": {
+        "removedTitle": "Đã xóa {name}",
+        "removedMessage": "Kết quả đã lưu vẫn ở trong Lịch sử sự kiện.",
+        "undo": "Hoàn tác",
+        "resultSavedTitle": "Đã lưu kết quả",
+        "resultSavedMessage": "{name} đã được thêm vào Lịch sử sự kiện."
+    },
+    "add": {
+        "title": "Thêm sự kiện",
+        "description": "Chọn một sự kiện từ dữ liệu game",
+        "close": "Đóng",
+        "searchLabel": "Tìm sự kiện",
+        "searchPlaceholder": "Tìm trong {amount} sự kiện",
+        "categoryLabel": "Danh mục sự kiện",
+        "all": "Tất cả",
+        "categoryTab": "{name}, {amount}",
+        "showing": "Hiển thị {shown} trên {total} sự kiện. Chọn một sự kiện để đặt ngày và giờ bắt đầu.",
+        "none": "Không có sự kiện nào khớp tìm kiếm.",
+        "noDuration": "Dữ liệu game không có thời lượng",
+        "added": "Đã thêm",
+        "button": "Thêm",
+        "addNamed": "Thêm {name}",
+        "showMore": "Xem thêm"
+    },
+    "schedule": {
+        "description": "Đặt thời điểm diễn ra. Các lượt sau tự cập nhật.",
+        "cancel": "Hủy",
+        "add": "Thêm sự kiện",
+        "save": "Lưu lịch",
+        "howTitle": "Cách sự kiện diễn ra",
+        "shape": {
+            "one": "Một ngày",
+            "several": "Nhiều ngày",
+            "two": "Hai lượt mỗi chu kỳ"
+        },
+        "shapeHint": {
+            "one": "Một lượt dài một ngày. Đổi thời lượng cho lượt ngắn tính bằng phút hoặc giờ.",
+            "several": "Một lượt kéo dài nhiều ngày.",
+            "two": "Hai lượt trong mỗi chu kỳ, như hai mùa hoặc hai ngày trong tuần. Mỗi lượt có lúc bắt đầu, thời lượng và tên riêng."
+        },
+        "runTitle": "Lượt {number}",
+        "runSingle": "Lượt",
+        "name": "Tên",
+        "startDate": "Ngày bắt đầu",
+        "startTime": "Giờ bắt đầu (UTC)",
+        "length": "Thời lượng",
+        "unit": "Đơn vị",
+        "runUnits": {
+            "minutes": "phút",
+            "hours": "giờ",
+            "days": "ngày"
+        },
+        "repeatTitle": "Lặp lại",
+        "repeatKind": {
+            "none": "Không lặp lại",
+            "every": "Mỗi",
+            "weekly": "Hằng tuần vào các ngày"
+        },
+        "every": "Mỗi",
+        "weekdays": "Các ngày trong tuần",
+        "repeatUnits": {
+            "hours": "giờ",
+            "days": "ngày",
+            "weeks": "tuần",
+            "months": "tháng"
+        },
+        "gameSays": "Dữ liệu game ghi: {text}",
+        "gameSaysNoRule": "Dữ liệu game ghi: {text}",
+        "useSuggestion": "Dùng gợi ý",
+        "everyError": "Hãy nhập số lớn hơn 0.",
+        "givesTitle": "Sự kiện cho gì",
+        "givesHint": "Đặt theo dữ liệu game. Bạn có thể đổi. Mục này quyết định biểu mẫu kết quả hỏi gì.",
+        "previewTitle": "Lịch sẽ hiển thị gì",
+        "previewEmpty": "Nhập ngày và thời lượng hợp lệ để xem các lượt.",
+        "previewShort": "{range}, {time}",
+        "previewNote": "Khi một lượt kết thúc, ngày của nó dời tiếp theo quy tắc lặp lại. Bạn có thể sửa bất kỳ ngày nào."
+    },
+    "result": {
+        "title": "Thêm chi tiết sự kiện",
+        "description": {
+            "participation": "Ghi lại việc bạn đã tham gia và những gì nhận được",
+            "milestones": "Điểm và các mục tiêu bạn đã đạt",
+            "ranking": "Điểm, hạng và các mốc bạn đã đạt",
+            "tier": "Bậc giải đấu và vị trí",
+            "waves": "Độ khó, đợt, điểm và hạng",
+            "skipped": "Ghi lại việc bạn bỏ qua lượt này"
+        },
+        "cancel": "Hủy",
+        "save": "Lưu kết quả",
+        "noEvents": "Hãy thêm một sự kiện trước. Chỉ sự kiện trong Sự kiện của tôi mới ghi được, còn Sự kiện chính được ghi trong Sự kiện chính.",
+        "whichTitle": "Sự kiện nào",
+        "event": "Sự kiện",
+        "versionsTag": "Phiên bản",
+        "run": "Lượt",
+        "otherDate": "Ngày khác",
+        "runDate": "Ngày diễn ra",
+        "runLong": "{range} ({length})",
+        "runNamed": "{when}, {name}",
+        "notLogged": "{run}, chưa ghi",
+        "tookPartQuestion": "Bạn có tham gia không?",
+        "tookPart": "Đã tham gia",
+        "skipped": "Bỏ qua",
+        "coreNote": "Chỉ liệt kê sự kiện bạn đã thêm. Sự kiện chính được ghi trong Sự kiện chính, không phải ở đây.",
+        "versionTitle": "Phiên bản",
+        "versionKnown": "Mục tiêu của phiên bản này có trong dữ liệu, nên được kiểm tra theo điểm của bạn.",
+        "versionUnknown": "Phiên bản này có mục tiêu mà điểm chưa có trong dữ liệu. Hãy tự kiểm tra các mục tiêu đó.",
+        "participationTitle": "Sự kiện này không có điểm hay xếp hạng",
+        "participationText": "Dữ liệu game chỉ liệt kê phần thưởng, nên không có gì để tính điểm. Hãy ghi lại việc bạn đã tham gia, phần thưởng nhận được và một ghi chú.",
+        "pointsFallback": "Điểm",
+        "pointsReached": "{unit} đã đạt",
+        "pointsHint": "Tổng khi sự kiện kết thúc.",
+        "finalScore": "Điểm cuối ({unit})",
+        "finalScoreHint": "Tổng {unit} của bạn khi sự kiện kết thúc.",
+        "rankingTitle": "Xếp hạng",
+        "yourRank": "Hạng của bạn",
+        "allianceRank": "Hạng liên minh",
+        "rankGroup": "Nhóm hạng",
+        "rankGroupsHint": "Các nhóm hạng lấy từ dữ liệu game: {groups} và nhiều hơn.",
+        "targetsTitle": "Mục tiêu đã đạt, theo điểm của bạn",
+        "targetsCount": "Đạt {reached} trên {total}",
+        "targetPoints": "{points} {unit}",
+        "pointsMissing": "{unit}: dữ liệu chưa có điểm",
+        "needsPurchase": "Cần một lần mua với bất kỳ giá nào.",
+        "targetsHint": "Kiểm tra theo điểm. Mục tiêu và phần thưởng lấy từ dữ liệu game.",
+        "targetsHintUnknown": "Mục tiêu mà điểm chưa có trong dữ liệu không bao giờ được kiểm tra theo điểm. Hãy tự kiểm tra.",
+        "tierTitle": "Giải đấu",
+        "tier": "Bậc",
+        "placement": "Vị trí của bạn trong nhóm",
+        "starChange": "Thay đổi sao, theo dữ liệu game",
+        "stars": "{count, plural, other {{amount} sao}}",
+        "tiersHint": "Các bậc: {tiers}.",
+        "allianceTitle": "Liên minh",
+        "outcome": "Kết quả liên minh trong lượt này",
+        "outcomeHint": "Tùy chọn. Thắng, thua hoặc hòa.",
+        "outcomes": {
+            "none": "Chưa đặt",
+            "won": "Thắng",
+            "lost": "Thua",
+            "drawn": "Hòa"
+        },
+        "wavesTitle": "Độ khó và các đợt",
+        "difficulty": "Độ khó bạn đã chơi",
+        "difficultyFrom": "{name}, từ {points} điểm liên minh",
+        "wavesCleared": "Số đợt đã vượt, 0 đến {count}",
+        "wavesHint": "Dữ liệu game liệt kê {count} đợt cho {name}.",
+        "defenseTitle": "Điểm phòng thủ",
+        "yourPoints": "Điểm của bạn",
+        "alliancePoints": "Điểm liên minh",
+        "rewardLevel": "Cấp thưởng đã đạt",
+        "rewardLevelNone": "Chưa có",
+        "level": "Cấp {level}",
+        "levelsHint": "Các cấp cần cả điểm cá nhân và điểm liên minh, theo dữ liệu game.",
+        "rankingsTitle": "Xếp hạng",
+        "notesTitle": "Ghi chú",
+        "rewards": "Phần thưởng bạn nhận được",
+        "rewardsPlaceholder": "Ví dụ: 2 Hero Shards, 500 Gems",
+        "notes": "Ghi chú",
+        "notesPlaceholder": "Bất cứ điều gì cần nhớ về lượt này"
+    },
+    "history": {
+        "emptyTitle": "Chưa có kết quả nào được ghi",
+        "emptyText": "Nhấn Thêm chi tiết sự kiện để ghi những gì bạn nhận được trong một lượt sự kiện. Kết quả và xu hướng của bạn hiện ở đây.",
+        "eventFilter": "Sự kiện",
+        "allEvents": "Mọi sự kiện",
+        "period": "Giai đoạn",
+        "months3": "3 tháng",
+        "months6": "6 tháng",
+        "allTime": "Mọi lúc",
+        "intro": "Mọi kết quả bạn đã ghi, mới nhất trước. Sự kiện chính được ghi trong Sự kiện chính và không xuất hiện ở đây.",
+        "showing": "Hiển thị {shown} trên {total} kết quả.",
+        "showingEvent": "{count, plural, other {Hiển thị {amount} kết quả của {name}.}}",
+        "noneInPeriod": "Không có kết quả nào trong giai đoạn này.",
+        "showMore": "Xem thêm",
+        "colDate": "Ngày",
+        "colEvent": "Sự kiện",
+        "colScore": "Điểm",
+        "colRank": "Hạng",
+        "colAlliance": "Liên minh",
+        "colResult": "Kết quả",
+        "colActions": "Thao tác",
+        "none": "-",
+        "edit": "Sửa",
+        "editNamed": "Sửa kết quả của {name}",
+        "skipped": "Bỏ qua",
+        "tierOnly": "{tier} {placement}",
+        "stars": "{count, plural, other {{amount} sao}}",
+        "waves": "{count, plural, other {{difficulty}, {amount} đợt}}",
+        "targets": "{unit}, {reached} trên {total} mục tiêu",
+        "tookPart": "Đã tham gia",
+        "tookPartRewards": "Đã tham gia, {rewards}",
+        "rankText": "Hạng {rank}",
+        "allianceRankText": "liên minh {rank}",
+        "separator": " · ",
+        "defensePoints": "{score} điểm phòng thủ",
+        "scoreUnit": "{score} {unit}",
+        "noScore": "Không có điểm",
+        "trendTitle": "Xu hướng {name}",
+        "trendScore": "{unit} khi kết thúc mỗi sự kiện",
+        "trendRank": "Hạng của bạn khi kết thúc mỗi sự kiện",
+        "metricLabel": "Chỉ số xu hướng",
+        "metricScore": "Điểm",
+        "metricRank": "Hạng cá nhân",
+        "chartLabel": "Biểu đồ xu hướng của {name}",
+        "best": "Tốt nhất",
+        "average": "Trung bình",
+        "latest": "Gần nhất",
+        "change": "Thay đổi",
+        "events": "{count, plural, other {{amount} sự kiện}}",
+        "changeVs": "so với {month}",
+        "changePercentVs": "{percent}% so với {month}",
+        "noPrevious": "Chưa có kết quả trước đó",
+        "noTrend": "Sự kiện này không có điểm hay hạng để vẽ biểu đồ. Kết quả của nó nằm trong danh sách bên dưới."
+    },
+    "cycles": {
+        "title": "Chu kỳ sự kiện chính",
+        "hint": "SvS, Alliance Showdown và King of Icefield chạy theo chu kỳ cố định. Đặt lần bắt đầu kế tiếp một lần và chúng sẽ lặp lại trên lịch.",
+        "next": "Kế tiếp {date}, lặp lại {repeat}",
+        "notSet": "Chưa đặt",
+        "set": "Đặt chu kỳ",
+        "edit": "Sửa chu kỳ"
+    }
+}

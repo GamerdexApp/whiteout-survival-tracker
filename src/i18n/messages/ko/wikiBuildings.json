@@ -1,0 +1,71 @@
+{
+  "line": "건물 {buildings}개와 시설 {facilities}개예요. 참고용이며 영주에게 저장되지 않아요.",
+  "list": {
+    "heading": "건물과 시설",
+    "searchLabel": "검색",
+    "searchPlaceholder": "건물과 시설 검색",
+    "categoryLabel": "분류",
+    "categories": {
+      "all": "전체",
+      "Military": "군사",
+      "Inner City": "내성",
+      "Entertainment": "오락"
+    },
+    "buildingMeta": "{category}, 최대 {maxLevel}, {count, plural, other {{amount}레벨}}",
+    "empty": "검색에 맞는 건물이 없어요.",
+    "categoryOption": "{category} {count}"
+  },
+  "detail": {
+    "levelsTotal": "전체 레벨",
+    "standardLevels": "일반 레벨, 1부터 30까지",
+    "fireCrystalLevels": "Fire Crystal 레벨, 30-1부터 FC 10까지",
+    "maxLevel": "최대 레벨 표기",
+    "rangeLabel": "레벨 구간",
+    "rangeOption": "{range} {count}",
+    "ranges": {
+      "all": "전체",
+      "standard": "1~30",
+      "fc3": "30-1~FC 3",
+      "fc5": "FC 3-1~FC 5",
+      "fc8": "FC 5-1~FC 8",
+      "fc10": "FC 8-1~FC 10"
+    },
+    "tableLabel": "{name} 레벨",
+    "levels": "레벨",
+    "totalTitle": "필요 합계, {range}, {count, plural, other {{amount}레벨}}",
+    "totalTime": "총 건설 시간"
+  },
+  "columns": {
+    "level": "레벨",
+    "cost": "비용",
+    "time": "시간",
+    "power": "전투력",
+    "requires": "조건",
+    "stats": {
+      "rallyCapacity": "집결 한도",
+      "marchCapacity": "행군 한도",
+      "trainingCapacity": "훈련 한도",
+      "trainingSpeedBonusPercent": "훈련 속도",
+      "researchSpeedBonusPercent": "연구 속도",
+      "infirmaryCapacity": "병원 수용량",
+      "allyAssists": "연맹원 지원",
+      "allyHelpTimeSeconds": "연맹 도움 시간",
+      "reinforceCapacity": "지원군 한도",
+      "storehouseCapacity": "창고 용량",
+      "barricadeDurability": "방벽 내구도",
+      "troopDeploymentCapacity": "출정 한도"
+    }
+  },
+  "cells": {
+    "none": "없음",
+    "requirement": "{building} {level}",
+    "pricePerItem": "개당 {price}",
+    "percent": "{value}%"
+  },
+  "facilities": {
+    "heading": "시설",
+    "meta": "레벨, 전투력, 건설 비용 없음",
+    "unlock": "Furnace {level}레벨에 해금돼요",
+    "empty": "검색에 맞는 시설이 없어요."
+  }
+}

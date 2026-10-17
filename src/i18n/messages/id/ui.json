@@ -1,0 +1,35 @@
+{
+  "close": "Tutup",
+  "field": {
+    "optional": "Opsional"
+  },
+  "stepper": {
+    "lower": "Kurangi {label}",
+    "raise": "Tambah {label}",
+    "labelPrefix": "{label}, "
+  },
+  "switch": {
+    "on": "Aktif",
+    "off": "Nonaktif"
+  },
+  "tabs": {
+    "locked": " (terkunci)"
+  },
+  "toast": {
+    "dismiss": "Tutup",
+    "variants": {
+      "success": "Berhasil",
+      "info": "Info",
+      "warning": "Peringatan",
+      "error": "Galat"
+    },
+    "missingProvider": "useToast must be used within a ToastProvider"
+  },
+  "savedChip": {
+    "automatic": "Tersimpan otomatis",
+    "justNow": "Baru saja disimpan",
+    "minutesAgo": "Disimpan {count} mnt lalu",
+    "at": "Disimpan {time}",
+    "failed": "Tidak tersimpan, penyimpanan penuh"
+  }
+}

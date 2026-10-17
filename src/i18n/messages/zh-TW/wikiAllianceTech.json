@@ -1,0 +1,54 @@
+{
+    "line": "三個科技樹共 {total} 項科技：成長 {growth}、領地 {territory}、戰鬥 {battle}。僅供參考，這裡不會儲存任何內容。",
+    "list": {
+        "title": "科技節點",
+        "categoriesLabel": "科技樹",
+        "categories": {
+            "all": "全部",
+            "Growth": "成長",
+            "Territory": "領地",
+            "Battle": "戰鬥"
+        },
+        "search": "搜尋",
+        "searchPlaceholder": "依名稱或效果搜尋科技",
+        "tier": "階級",
+        "allTiers": "所有階級",
+        "tierOption": "第 {tier} 階",
+        "empty": "沒有符合這次搜尋的科技節點。",
+        "emptyHint": "請清除搜尋或篩選。",
+        "columns": {
+            "tech": "科技",
+            "category": "分類",
+            "tier": "階級",
+            "levels": "等級數",
+            "maxBonus": "最高加成",
+            "cost": "1 級花費",
+            "time": "1 級時間",
+            "requires": "1 級條件"
+        },
+        "mobileMeta": "{category}，第 {tier} 階，{levels}",
+        "count": "{count, plural, other {{amount} 項科技}}"
+    },
+    "levels": "{count, plural, other {{amount} 級}}",
+    "detail": {
+        "facts": "詳細資料",
+        "levelsTitle": "等級",
+        "none": "無",
+        "fields": {
+            "category": "分類",
+            "tier": "階級",
+            "effect": "效果",
+            "stat": "屬性",
+            "levels": "等級數"
+        },
+        "columns": {
+            "level": "等級",
+            "bonus": "加成",
+            "cost": "花費",
+            "time": "時間",
+            "requires": "條件"
+        },
+        "level": "{level} 級",
+        "requirement": "{name} {level} 級"
+    }
+}

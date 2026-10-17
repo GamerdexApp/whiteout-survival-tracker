@@ -1,0 +1,45 @@
+{
+    "line": "強化レベル{enhancement}件、エンパワーレベル{empowerment}件、マスタリー鍛造の行{mastery}件、ステータス{stats}件。参考情報のみで、ここには何も保存されません。",
+    "tabsLabel": "ヒーロー装備の表",
+    "tabs": {
+        "enhancement": "強化",
+        "empowerment": "エンパワー",
+        "mastery": "マスタリー鍛造",
+        "stats": "ステータス"
+    },
+    "levels": {
+        "columns": {
+            "level": "レベル",
+            "cost": "コスト",
+            "power": "戦力",
+            "gain": "前回からの増加",
+            "milestonePower": "マイルストーンの戦力",
+            "stage": "ステージ",
+            "statsUp": "ステータス上昇"
+        },
+        "none": "なし",
+        "percent": "{value}%",
+        "gainValue": "+{value}"
+    },
+    "stats": {
+        "slot": "スロット",
+        "troopType": "部隊タイプ",
+        "troop": {
+            "infantry": "歩兵",
+            "lancer": "槍兵",
+            "marksman": "弓兵"
+        },
+        "note": "ステータスのレベル101から200は、エンパワーのレベル1から100です。",
+        "columns": {
+            "level": "レベル",
+            "combat": "{stat}",
+            "health": "体力",
+            "percent": "{stat}"
+        },
+        "level": "レベル{level}",
+        "empowermentLevel": "レベル{level}、エンパワー{empowerment}",
+        "milestonesTitle": "マイルストーン",
+        "milestone": "エンパワーレベル{level}、{event}: {stat}",
+        "percentValue": "{value}%"
+    }
+}

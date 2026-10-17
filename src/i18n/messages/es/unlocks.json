@@ -1,0 +1,27 @@
+{
+  "lock": {
+    "day": "Se desbloquea el día {day} del servidor",
+    "dayAndDate": "Se desbloquea el día {day} del servidor, {date}"
+  },
+  "areas": {
+    "pets": "Mascotas",
+    "fireCrystal": "Niveles de Fire Crystal",
+    "experts": "Expertos",
+    "chiefGear": "Equipo del jefe",
+    "chiefCharms": "Amuletos del jefe",
+    "warAcademy": "War Academy e investigación T12"
+  },
+  "dialog": {
+    "legend": "Contenido desbloqueado",
+    "hint": "Los bloqueos siguen la antigüedad del servidor a partir de su fecha de inicio. Si tu servidor va algo distinto, elige el paso que de verdad tienes. Los elementos bloqueados siguen visibles y tus datos guardados se conservan.",
+    "auto": "Auto, {current}",
+    "autoUnknown": "Auto, fija la fecha de inicio del servidor para usarlo",
+    "autoNone": "aún no hay nada desbloqueado",
+    "none": "Nada desbloqueado",
+    "stepPets": "Día {day}, {count} de {total} mascotas",
+    "stepExperts": "Día {day}, {count} de {total} expertos",
+    "stepFc": "Día {day}, hasta {last}, sin sus etapas",
+    "stepNamed": "Día {day}, {name}",
+    "pickLabel": "{area} desbloqueado hasta"
+  }
+}

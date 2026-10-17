@@ -1,0 +1,79 @@
+{
+  "line": "{categories}个分类共{items}个道具，含来源和{chests}个宝箱的掉落率。",
+  "catalog": {
+    "title": "道具目录",
+    "showing": "显示{shown} / {total}",
+    "search": "搜索",
+    "searchPlaceholder": "按名称或说明搜索道具",
+    "table": "道具",
+    "item": "道具",
+    "category": "分类",
+    "sources": "来源",
+    "lootRates": "掉落率",
+    "description": "说明",
+    "emptyTitle": "没有匹配的道具",
+    "emptyDescription": "修改搜索或筛选。"
+  },
+  "filters": {
+    "title": "筛选",
+    "button": "筛选",
+    "summary": "筛选：{category}。来源：{sources}",
+    "edit": "编辑",
+    "category": "分类",
+    "all": "全部",
+    "sources": "来源",
+    "lootRates": "掉落率",
+    "reset": "重置",
+    "show": "{count, plural, other {显示{amount}个道具}}"
+  },
+  "sourcesFilter": {
+    "any": "任意来源",
+    "has": "有来源",
+    "none": "无来源"
+  },
+  "sourcesChip": {
+    "any": "不限",
+    "has": "有来源",
+    "none": "无来源（{amount}）"
+  },
+  "lootFilter": {
+    "any": "不限",
+    "has": "有掉落率"
+  },
+  "lootChip": {
+    "any": "不限",
+    "has": "有掉落率（{amount}个宝箱）"
+  },
+  "loot": {
+    "yes": "是",
+    "no": "否",
+    "notChest": "不是宝箱"
+  },
+  "detail": {
+    "title": "详情",
+    "category": "分类",
+    "sources": "来源",
+    "speedup": "加速",
+    "speedupValue": "{type}，{minutes}分钟",
+    "description": "说明",
+    "lootRates": "掉落率",
+    "lootRowsListed": "{count, plural, other {列出{amount}行}}",
+    "noLootRates": "数据中没有此宝箱的掉落率",
+    "lootTitle": "掉落率",
+    "lootMeta": "{count, plural, other {{amount}种奖励}}",
+    "lootTable": "宝箱的掉落率",
+    "reward": "奖励",
+    "amount": "数量",
+    "chance": "概率",
+    "chanceValue": "{percent}%",
+    "name": "名称"
+  },
+  "speedupType": {
+    "general": "通用",
+    "construction": "建造",
+    "troop": "训练",
+    "research": "研究",
+    "learning": "学习",
+    "healing": "治疗"
+  }
+}

@@ -1,0 +1,52 @@
+{
+    "line": "{pets} Haustiere. Nur Referenz, hier wird nichts gespeichert.",
+    "roster": {
+        "title": "Haustiere",
+        "count": "{shown} von {total} Haustieren",
+        "search": "Suche",
+        "searchPlaceholder": "{count} Haustiere suchen",
+        "rarity": "Seltenheit",
+        "all": "Alle",
+        "empty": "Kein Haustier passt zu diesen Filtern.",
+        "summary": "Max. Stufe {level}, Verfeinerung bis {percent}",
+        "percentValue": "{value}%"
+    },
+    "unlock": {
+        "withFurnace": "Tag {days}, Furnace {level}",
+        "withPet": "Tag {days}, {pet} {level}",
+        "daysOnly": "Tag {days}",
+        "label": "Freischaltung: {requirement}"
+    },
+    "detail": {
+        "maxLevel": "Max. Stufe",
+        "maxRefinement": "Max. Verfeinerung",
+        "unlock": "Freischaltvoraussetzung",
+        "cooldown": "Abklingzeit der Fähigkeit",
+        "duration": "Dauer der Fähigkeit",
+        "tierCooldown": "{value}",
+        "maxPower": "Max. Macht",
+        "levelPower": "Macht aus Stufe und Aufstieg auf Maximalstufe",
+        "refiningPower": "Macht aus Verfeinerung bei max. Verfeinerung"
+    },
+    "skill": {
+        "title": "Fähigkeit",
+        "meta": "{count, plural, one {{amount} Stufe} other {{amount} Stufen}}",
+        "level": "Lv {level}",
+        "percent": "{value}%"
+    },
+    "levels": {
+        "title": "Stufentabelle",
+        "level": "Stufe {level}",
+        "columns": {
+            "level": "Stufe",
+            "food": "Haustierfutter",
+            "attack": "Truppenangriff",
+            "defense": "Truppenverteidigung",
+            "power": "Truppenmacht",
+            "materials": "Aufstiegsmaterial"
+        },
+        "refined": "{value} (verfeinert {refined})",
+        "none": "Keine"
+    },
+    "recordLine": "Haustier ({rarity}), max. Stufe {level}. Nur Referenz, hier wird nichts gespeichert."
+}

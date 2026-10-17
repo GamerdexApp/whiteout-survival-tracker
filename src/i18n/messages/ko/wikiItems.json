@@ -1,0 +1,79 @@
+{
+  "line": "분류 {categories}개에 걸친 아이템 {items}개와 획득처, 상자 {chests}개의 드롭 확률이에요.",
+  "catalog": {
+    "title": "아이템 목록",
+    "showing": "{total}개 중 {shown}개 표시",
+    "search": "검색",
+    "searchPlaceholder": "이름이나 설명으로 아이템 검색",
+    "table": "아이템",
+    "item": "아이템",
+    "category": "분류",
+    "sources": "획득처",
+    "lootRates": "드롭 확률",
+    "description": "설명",
+    "emptyTitle": "일치하는 아이템이 없어요",
+    "emptyDescription": "검색어나 필터를 바꿔보세요."
+  },
+  "filters": {
+    "title": "필터",
+    "button": "필터",
+    "summary": "필터: {category}. 획득처: {sources}",
+    "edit": "편집",
+    "category": "분류",
+    "all": "전체",
+    "sources": "획득처",
+    "lootRates": "드롭 확률",
+    "reset": "초기화",
+    "show": "{count, plural, other {아이템 {amount}개 보기}}"
+  },
+  "sourcesFilter": {
+    "any": "모든 획득처",
+    "has": "획득처 있음",
+    "none": "획득처 없음"
+  },
+  "sourcesChip": {
+    "any": "전체",
+    "has": "획득처 있음",
+    "none": "획득처 없음 ({amount})"
+  },
+  "lootFilter": {
+    "any": "전체",
+    "has": "드롭 확률 있음"
+  },
+  "lootChip": {
+    "any": "전체",
+    "has": "드롭 확률 있음 (상자 {amount}개)"
+  },
+  "loot": {
+    "yes": "예",
+    "no": "아니요",
+    "notChest": "상자 아님"
+  },
+  "detail": {
+    "title": "상세",
+    "category": "분류",
+    "sources": "획득처",
+    "speedup": "가속",
+    "speedupValue": "{type}, {minutes}분",
+    "description": "설명",
+    "lootRates": "드롭 확률",
+    "lootRowsListed": "{count, plural, other {{amount}행 표시}}",
+    "noLootRates": "이 상자의 드롭 확률이 데이터에 없어요",
+    "lootTitle": "드롭 확률",
+    "lootMeta": "{count, plural, other {보상 {amount}개}}",
+    "lootTable": "상자의 드롭 확률",
+    "reward": "보상",
+    "amount": "수량",
+    "chance": "확률",
+    "chanceValue": "{percent}%",
+    "name": "이름"
+  },
+  "speedupType": {
+    "general": "일반",
+    "construction": "건설",
+    "troop": "병력",
+    "research": "연구",
+    "learning": "학습",
+    "healing": "치료"
+  }
+}

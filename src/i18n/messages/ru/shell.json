@@ -1,0 +1,85 @@
+{
+  "nav": {
+    "main": "Главное",
+    "groups": {
+      "chief": "Вождь",
+      "alliance": "Альянс",
+      "account": "Аккаунт",
+      "planner": "Планировщик",
+      "wiki": "Вики"
+    },
+    "items": {
+      "overview": "Обзор",
+      "buildings": "Здания",
+      "daybreakIsland": "Daybreak Island",
+      "heroes": "Герои",
+      "chiefGear": "Снаряжение вождя",
+      "experts": "Эксперты",
+      "pets": "Питомцы",
+      "troops": "Войска",
+      "research": "Исследования",
+      "alliance": "Альянс",
+      "facilities": "Сооружения",
+      "tech": "Технологии",
+      "resources": "Ресурсы",
+      "bonuses": "Бонусы",
+      "vip": "VIP",
+      "skins": "Скины",
+      "events": "События",
+      "tundraAlbum": "Tundra Album",
+      "coreEvents": "Главные события",
+      "dailies": "Ежедневные",
+      "history": "История",
+      "wikiReference": "Справочник",
+      "wikiTimeline": "Хронология",
+      "settings": "Настройки",
+      "chiefs": "Вожди"
+    },
+    "upgradesRunning": ", {count, plural, one {идёт {amount} улучшение} few {идут {amount} улучшения} many {идут {amount} улучшений} other {идут {amount} улучшения}}"
+  },
+  "appShell": {
+    "skipToContent": "Перейти к содержимому",
+    "closeMenu": "Закрыть меню"
+  },
+  "appBar": {
+    "openMenu": "Открыть меню"
+  },
+  "chiefGate": {
+    "emptyTitle": "Вождь не выбран",
+    "emptyDescription": "Создайте вождя, чтобы начать учёт. Все данные хранятся в этом браузере.",
+    "newChief": "Новый вождь"
+  },
+  "chiefSwitcher": {
+    "chiefs": "Вожди",
+    "active": "Активный",
+    "allChiefs": "Все вожди",
+    "newChief": "Новый вождь",
+    "loading": "Загрузка",
+    "noChiefYet": "Вождей пока нет",
+    "sectionLabel": "Вождь",
+    "switchChief": "Сменить вождя"
+  },
+  "footer": {
+    "tagline": "Следите за вождями, зданиями, героями и исследованиями Whiteout Survival в одном месте.",
+    "product": "Трекер",
+    "support": "Поддержка",
+    "wikiReference": "Вики: справочник",
+    "wikiTimeline": "Вики: хронология",
+    "backupAndData": "Копии и данные",
+    "aboutApp": "О приложении",
+    "disclaimerTitle": "Отказ от ответственности",
+    "disclaimer": "Это приложение не связано с Whiteout Survival и Century Games, не одобрено ими и не имеет к ним отношения. Все товарные знаки и игровой контент принадлежат их владельцам.",
+    "copyright": "© {year} {appName}",
+    "framework": "Создано на платформе Gamerdex, общей основе для бесплатных трекеров прогресса в играх. Ваши данные остаются в браузере."
+  },
+  "notFound": {
+    "title": "Такой страницы нет",
+    "description": "Ссылка могла устареть или содержать опечатку. Ваши вожди в безопасности, ничего не изменилось.",
+    "didYouMean": "Возможно, вы искали <link>{name}</link>?",
+    "goToOverview": "Перейти к обзору",
+    "jumpTo": "Или перейдите в раздел"
+  },
+  "pageHeader": {
+    "wiki": "Вики"
+  }
+}

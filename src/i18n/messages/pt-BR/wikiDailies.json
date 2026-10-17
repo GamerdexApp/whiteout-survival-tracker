@@ -1,0 +1,46 @@
+{
+  "line": "As {missions} missões diárias do jogo com todos os níveis conhecidos, as recompensas da barra de atividade e as tarefas de rotina.",
+  "missionCount": "{count, plural, one {{amount} missão} other {{amount} missões}}",
+  "tabs": {
+    "label": "Diárias",
+    "missions": "Missões do jogo",
+    "routine": "Tarefas de rotina"
+  },
+  "totals": {
+    "title": "Totais de Atividade",
+    "missions": "Missões do jogo",
+    "levelOne": "Nível 1 de cada missão",
+    "allLevels": "Todos os níveis conhecidos",
+    "topReward": "Nível da maior recompensa",
+    "explanation": "Uma missão soma a Atividade de cada nível feito, até o nível alcançado. O nível 1 de todas as {missions} missões soma {levelOne} de Atividade. Todos os níveis conhecidos de todas as {missions} missões somam {allLevels}."
+  },
+  "bar": {
+    "title": "Recompensas da barra de atividade",
+    "activeness": "Atividade",
+    "rewards": "Recompensas"
+  },
+  "missions": {
+    "title": "Missões do jogo",
+    "summary": "{missions}, {levels}",
+    "levelCount": "{count, plural, one {{amount} nível conhecido} other {{amount} níveis conhecidos}}",
+    "level": "Nível",
+    "task": "Tarefa",
+    "target": "Alvo",
+    "activeness": "Atividade",
+    "otherRewards": "Outras recompensas",
+    "levelLabel": "N{level}",
+    "sumOne": "1 nível: {total} de Atividade",
+    "sumMany": "{count} níveis: {parts} = {total} de Atividade",
+    "plus": "+{amount}",
+    "noOtherRewards": "Nenhuma"
+  },
+  "routine": {
+    "title": "Tarefas de rotina",
+    "count": "{count, plural, one {{amount} tarefa} other {{amount} tarefas}}"
+  },
+  "missing": {
+    "title": "Ainda não está nos dados",
+    "levels": "Outros níveis de missão. Cada missão tem de {min} a {max} níveis conhecidos. Os níveis maiores ainda não estão no pacote de dados, então os totais podem crescer.",
+    "reset": "Horário do reinício diário. O pacote de dados não tem. O tracker usa o próprio padrão de {time} UTC e o marca como padrão do app."
+  }
+}

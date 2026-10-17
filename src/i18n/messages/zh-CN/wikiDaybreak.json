@@ -1,0 +1,69 @@
+{
+  "line": "Lumber Camp 和 Tree of Life 的等级表，另有按分类列出的{decorations}个装饰，含费用、繁荣度和增益。",
+  "lumberCamp": {
+    "title": "Lumber Camp",
+    "levels": "{count, plural, other {{amount}级}}",
+    "table": "Lumber Camp 各等级",
+    "level": "等级",
+    "workers": "工人",
+    "perSecond": "每秒",
+    "treeLevel": "Tree 等级",
+    "lifeEssence": "Life Essence"
+  },
+  "tree": {
+    "title": "Tree of Life",
+    "table": "Tree of Life 各等级",
+    "level": "等级",
+    "prosperity": "繁荣度",
+    "lifeEssence": "Life Essence",
+    "perHour": "每小时",
+    "buff": "增益"
+  },
+  "decorations": {
+    "title": "装饰",
+    "showing": "显示{shown} / {total}",
+    "search": "搜索",
+    "searchPlaceholder": "按名称或增益搜索装饰",
+    "categoryLabel": "分类",
+    "all": "全部",
+    "costFilter": "费用类型",
+    "table": "装饰",
+    "name": "装饰",
+    "category": "分类",
+    "limit": "上限",
+    "levels": "等级数",
+    "cost": "费用",
+    "prosperityAtMax": "满级繁荣度",
+    "buffAtMax": "满级增益",
+    "emptyTitle": "没有匹配的装饰",
+    "emptyDescription": "修改搜索、分类或费用类型。"
+  },
+  "costFilter": {
+    "any": "任意费用",
+    "lifeEssence": "Life Essence",
+    "items": "资源",
+    "limited": "限量",
+    "unknown": "数据中无费用"
+  },
+  "cost": {
+    "lifeEssence": "{amount} Life Essence",
+    "limited": "无，限量装饰"
+  },
+  "detail": {
+    "title": "详情",
+    "category": "分类",
+    "limit": "上限",
+    "cost": "费用",
+    "levels": "等级数",
+    "image": "图片",
+    "imageMissing": "无",
+    "levelsTitle": "{name}的各等级",
+    "levelsMeta": "{count, plural, other {{amount}级}}",
+    "levelsTable": "装饰的各等级",
+    "level": "等级",
+    "levelCost": "费用",
+    "prosperity": "繁荣度",
+    "buff": "增益",
+    "noLevels": "数据中没有此装饰的等级表。"
+  }
+}

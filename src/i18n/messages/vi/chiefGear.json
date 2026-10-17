@@ -1,0 +1,176 @@
+{
+    "none": "Không có",
+    "charmLabel": "Bùa {number}",
+    "view": {
+        "title": "Trang bị Thủ lĩnh",
+        "tabsLabel": "Trang bị thủ lĩnh",
+        "gearSubline": "{name} · sáu ô, 150 dòng nâng cấp",
+        "charmsSubline": "{name} · 6 món trang bị, mỗi món 3 bùa, 75 dòng nâng cấp",
+        "tabs": {
+            "gear": "Trang bị Thủ lĩnh",
+            "charms": "Bùa Thủ lĩnh"
+        }
+    },
+    "shared": {
+        "plan": "Kế hoạch",
+        "autoSaveHint": "Mọi thay đổi được lưu ngay. Nút tăng giảm đổi từng dòng một theo thứ tự gói dữ liệu.",
+        "scoreToGain": "Điểm còn cần đạt",
+        "notes": "Ghi chú",
+        "package": "Gói dữ liệu"
+    },
+    "gear": {
+        "scoreNow": "Điểm trang bị hiện tại, sáu ô",
+        "powerNow": "Sức mạnh trang bị hiện tại",
+        "stepsToGoals": "Số bước đến mọi mục tiêu",
+        "goalsHint": "Mục tiêu ở đây chỉ để xem. Đặt chúng trong Kế hoạch và nhấn Lưu kế hoạch.",
+        "stepWord": "bước",
+        "tiers": {
+            "title": "Bậc",
+            "description": "Gói dữ liệu gắn nhãn 150 dòng với {count} bậc. Bậc được tô sáng có ít nhất một món của bạn.",
+            "rows": "{rows} dòng",
+            "names": {
+                "EpicT1": "Epic T1",
+                "MythicT1": "Mythic T1",
+                "MythicT2": "Mythic T2",
+                "LegendaryT1": "Legendary T1",
+                "LegendaryT2": "Legendary T2",
+                "LegendaryT3": "Legendary T3",
+                "LegendaryT4": "Legendary T4",
+                "LegendaryT5": "Legendary T5",
+                "LegendaryT6": "Legendary T6"
+            }
+        },
+        "notes": {
+            "setBonus": {
+                "title": "Quy tắc thưởng bộ",
+                "body": "3 món cùng bậc cho Phòng thủ và 6 món cho Tấn công, áp dụng cho cả ba loại quân. Món chưa có cấp thì không tính. Mỗi bậc có một giá trị."
+            },
+            "troopType": {
+                "title": "Loại quân được nhập tay",
+                "body": "Cap và Watch tăng cho Kỵ binh, Coat và Pants tăng cho Bộ binh, Ring và Weapon tăng cho Xạ thủ. Tác giả gói dữ liệu gõ lại từ văn bản wiki."
+            },
+            "capacity": {
+                "title": "Sức chứa là 0 ở các dòng đầu",
+                "body": "26 dòng đầu không có sức chứa triển khai trong gói dữ liệu, nên hiển thị 0 cho đến khi dữ liệu có giá trị."
+            }
+        }
+    },
+    "charms": {
+        "scoreNow": "Điểm bùa hiện tại, 18 bùa",
+        "powerNow": "Sức mạnh bùa hiện tại",
+        "stagesToGoals": "Số giai đoạn đến mọi mục tiêu",
+        "goalsHint": "Mục tiêu ở đây chỉ để xem và được đặt trong Kế hoạch.",
+        "stepWord": "giai đoạn",
+        "slotMeta": "{troop} · 3 bùa",
+        "slotStages": ", {stages} giai đoạn đến mục tiêu",
+        "notes": {
+            "secrets": {
+                "title": "Charm Secrets bắt đầu từ cấp 11",
+                "body": "Từ Cấp 11 Giai đoạn 1, mỗi giai đoạn cần Charm Secrets. Các giai đoạn trước chỉ liệt kê Charm Guide và Charm Design."
+            },
+            "look": {
+                "title": "Bùa đổi hình ở mỗi cấp",
+                "body": "Mỗi bùa có 18 biểu tượng, mỗi cấp một cái. Mỗi món trang bị mang ba bùa, và chúng theo loại quân của món đó."
+            },
+            "estimate": {
+                "title": "Điểm giai đoạn là ước tính",
+                "body": "Điểm của một cấp được chia đều cho các giai đoạn dẫn đến nó. Game không xác nhận cách chia này."
+            }
+        }
+    },
+    "badge": {
+        "tier": "Bậc {tier}",
+        "stars": "{count, plural, other {{amount} sao}}",
+        "tierAndStars": "{tier}, {stars}"
+    },
+    "row": {
+        "level": "Cấp {title}",
+        "progressLabel": "Tiến độ {title} trong {total} dòng",
+        "progress": "{progress} trên {total}",
+        "stepsToGoal": " · còn {steps} đến mục tiêu",
+        "goal": "Mục tiêu {name}",
+        "noGoal": "Không có mục tiêu",
+        "stats": "Chỉ số {stat} · Sức mạnh {power}",
+        "statPercent": "{percent}%",
+        "capacity": " · Sức chứa {capacity}",
+        "lockedCurrent": "Cấp đã lưu {name} bị khóa theo tuổi máy chủ và không được tính. {requirement}.",
+        "lockedGoal": "Mục tiêu đã lưu {name} bị khóa theo tuổi máy chủ và không được lập kế hoạch. {requirement}."
+    },
+    "summary": {
+        "title": "Còn lại để đạt mọi mục tiêu",
+        "derived": "Suy ra",
+        "score": "điểm",
+        "powerGain": "sức mạnh tăng",
+        "noGoals": "Chưa đặt mục tiêu. Hãy đặt mục tiêu trong Kế hoạch.",
+        "openPlan": "Mở Kế hoạch để xem điểm sự kiện và chi tiết"
+    },
+    "setBonus": {
+        "title": "Thưởng bộ đã mở",
+        "pieceSet": "Bộ {pieces} món",
+        "active": "Đang hoạt động",
+        "notActive": "Chưa hoạt động",
+        "value": "{stat} +{percent}%",
+        "appliesTo": "Món {tierName}, cho Bộ binh, Kỵ binh và Xạ thủ",
+        "needs": "Cần {pieces} món cùng bậc. {stat} +0% hiện tại."
+    },
+    "plan": {
+        "gear": {
+            "title": "Lập kế hoạch Trang bị Thủ lĩnh",
+            "description": "Vật liệu, điểm và sức mạnh từ cấp hiện tại đến mục tiêu",
+            "stepWord": "Bước",
+            "conversionNote": "Phần kiểm tra không tính quy đổi. Bộ quy đổi có bảy tỉ lệ, mỗi tỉ lệ có giới hạn hằng tuần, ví dụ 10 Design Plans đổi 1 Lunar Amber, tối đa 500 mỗi tuần."
+        },
+        "charm": {
+            "title": "Lập kế hoạch Bùa Thủ lĩnh",
+            "description": "Vật liệu, điểm và sức mạnh từ cấp hiện tại đến mục tiêu",
+            "stepWord": "Giai đoạn",
+            "conversionNote": "Phần kiểm tra không tính quy đổi: 2 Charm Guide đổi 1 Charm Design và ngược lại, và 40 cái của mỗi loại đổi 1 Charm Secrets."
+        },
+        "saved": "Đã lưu kế hoạch {date}",
+        "close": "Đóng",
+        "save": "Lưu kế hoạch",
+        "export": {
+            "button": "Xuất sang Sự kiện chính",
+            "nothingToExport": "Đặt một mục tiêu cao hơn cấp hiện tại để xuất kế hoạch.",
+            "gearScore": "Điểm Trang bị Thủ lĩnh",
+            "charmScore": "Điểm Bùa Thủ lĩnh",
+            "power": "Sức mạnh nhận được",
+            "powerReason": "Không dòng Sự kiện chính nào tính điểm cho sức mạnh Trang bị Thủ lĩnh hay Bùa Thủ lĩnh."
+        },
+        "inputs": "Đầu vào",
+        "slotTroop": "{slot}, {troop}",
+        "from": "Từ {level}",
+        "goalLabel": "Mục tiêu {label}",
+        "slotGoalLabel": "Mục tiêu {label} của {slot}",
+        "inputsHint": "Cấp hiện tại là cấp trên trang. Hãy đổi ở đó. Mục tiêu trên trang chỉ để xem và được đặt ở đây.",
+        "result": "Kết quả",
+        "score": "Điểm",
+        "powerGain": "Sức mạnh tăng",
+        "events": {
+            "svs": "SvS State of Power",
+            "allianceShowdown": "Alliance Showdown",
+            "kingOfIcefield": "King of Icefield",
+            "hallOfChief": "Hall of Chief"
+        },
+        "bySlot": "Theo ô",
+        "byCharm": "Theo bùa",
+        "columnSlot": "Ô",
+        "columnCharm": "Bùa",
+        "slotCharm": "{slot} {charm}",
+        "converter": {
+            "title": "Bộ quy đổi vật liệu",
+            "spend": "Dùng",
+            "get": "Nhận",
+            "limit": "Giới hạn",
+            "amount": "{quantity} {name}",
+            "perWeek": "{limit} mỗi tuần",
+            "noLimit": "Không giới hạn hằng tuần"
+        },
+        "lockedCurrent": "Cấp đã lưu {name} bị khóa theo tuổi máy chủ. {requirement}."
+    },
+    "lock": {
+        "title": "Bị khóa theo tuổi máy chủ",
+        "stop": "{name} (đã khóa, ngày {day})",
+        "group": "Từ {name}: {requirement}."
+    }
+}

@@ -1,0 +1,282 @@
+{
+  "title": "Edifícios",
+  "tabs": {
+    "buildings": "Edifícios",
+    "facilities": "Instalações"
+  },
+  "notBuilt": "Por construir",
+  "built": "Construído",
+  "none": "Nenhum",
+  "unknown": "Desconhecido",
+  "close": "Fechar",
+  "cancel": "Cancelar",
+  "undo": "Anular",
+  "ofTotal": "{count} de {total}",
+  "noOtherRequirements": "Sem outros requisitos",
+  "builderName": "Construtor {number}",
+  "shelterName": "Abrigo {number}",
+  "levelOf": "Nível de {name}",
+  "levelRange": "{from} a {to}",
+  "requirement": {
+    "shelter": "{building} no nível {level}",
+    "heroHall": "Hero Hall construído",
+    "level": "{building} {level}"
+  },
+  "columns": {
+    "building": "Edifício",
+    "current": "Atual",
+    "goal": "Objetivo",
+    "power": "Poder",
+    "progress": "Progresso e próximo nível",
+    "upgrade": "Melhoria"
+  },
+  "entry": {
+    "notes": {
+      "furnace": "Condiciona todos os outros edifícios",
+      "shelter": "Até 8 abrigos, cada um com o seu nível"
+    },
+    "subline": {
+      "size": "Máx. {max} · {count} níveis",
+      "withNote": "{note} · {size}",
+      "single": "Construção única · poder {power}"
+    },
+    "progress": {
+      "requires": "Requer {list}",
+      "noRequirements": "Sem requisitos",
+      "maxLevel": "Nível máximo",
+      "blocked": "Bloqueado: requer {list}",
+      "needs": "Requer {list}",
+      "levelAgeLocked": "O nível guardado {level} ainda não está aberto neste servidor. {text}",
+      "goalAgeLocked": "O objetivo {goal} ainda não está aberto neste servidor. {text}",
+      "nextAgeLocked": "O próximo nível {level} está bloqueado. {text}"
+    },
+    "builtSwitch": "{name} construído",
+    "shelters": {
+      "none": "Nenhum construído",
+      "editLabel": "Abrigos ({count}), editar níveis",
+      "button": "Abrigos ({count})"
+    },
+    "levels": "Níveis",
+    "levelsLabel": "Níveis de {name}",
+    "upgrading": "{name} em melhoria",
+    "startLabel": "Iniciar melhoria de {name}",
+    "start": "Iniciar",
+    "startUpgrade": "Iniciar melhoria",
+    "devIndex": "Índ. desenv. {value}",
+    "powerLine": "Poder {power} · Índ. desenv. {index}",
+    "progressLabel": "Progresso de {name}"
+  },
+  "builders": {
+    "label": "Construtores",
+    "hint": "Uma melhoria iniciada aqui aparece no Resumo como fila em curso.",
+    "idle": "Premir Iniciar num edifício para começar uma melhoria.",
+    "jobTitle": "{name}, {from} a {to}",
+    "locked": "Bloqueado",
+    "lockedText": "O segundo construtor requer o Construction Pack.",
+    "lockedLink": "Ativar em Editar chefe"
+  },
+  "upgrade": {
+    "option": "{subject}, {from} a {to}",
+    "busy": "Ocupado: {name} para {level}, {timeLeft}"
+  },
+  "facilities": {
+    "intro": "Instalações da cidade. Marcar as que já foram construídas. São instalações da cidade, não as instalações da aliança do menu Aliança.",
+    "builtLabel": "Instalações construídas",
+    "unlockedLabel": "Desbloqueadas ao nível do Furnace",
+    "requires": "Requer Furnace {level}",
+    "unlocksAt": "Desbloqueia no Furnace {level}"
+  },
+  "tab": {
+    "intro": "Nível atual e objetivo de cada edifício. O Furnace define até onde os outros podem chegar.",
+    "searchLabel": "Pesquisar edifícios",
+    "filters": "Filtros",
+    "massEdit": "Edição em massa",
+    "startUpgrade": "Iniciar melhoria",
+    "plan": "Plano",
+    "status": "A mostrar {shown} de {total} edifícios. Aqui os objetivos são só de leitura e definem-se no Plano. Um objetivo igual ao nível atual significa sem objetivo. Os botões movem um nível de cada vez pela ordem do jogo.",
+    "groupPinned": "Fixado",
+    "stats": {
+      "furnace": "Furnace, condiciona todos os outros edifícios",
+      "power": "Poder atual, todos os edifícios",
+      "developmentIndex": "Índice de desenvolvimento, todos os edifícios",
+      "withGoal": "Edifícios com objetivo",
+      "atMax": "No nível máximo",
+      "entertainment": "Entretenimento construído"
+    },
+    "empty": {
+      "title": "Nenhum edifício corresponde",
+      "description": "Alterar a pesquisa ou repor os filtros para ver todos os edifícios.",
+      "reset": "Repor pesquisa e filtros"
+    },
+    "start": {
+      "description": "Marcar um edifício como em melhoria",
+      "selectLabel": "Edifício a melhorar",
+      "selectHelp": "Só aparecem os edifícios que podem começar agora. Os bloqueados, no máximo ou já em curso ficam de fora. Cada melhoria usa um dos dois construtores.",
+      "timeLabel": "Tempo de construção",
+      "speedLabel": "Velocidade de construção",
+      "slotLabel": "Construtor",
+      "slotHelp": "Escolher um construtor livre. Um construtor ocupado mostra quando fica livre."
+    },
+    "toasts": {
+      "started": {
+        "title": "Melhoria iniciada",
+        "message": "{name}, {subtitle}."
+      },
+      "finished": {
+        "title": "{name} melhorado",
+        "message": "Agora {level}. Adicionado ao Histórico."
+      },
+      "cancelled": {
+        "title": "Melhoria de {name} cancelada",
+        "message": "O nível fica como estava. Corrigir as reservas em Recursos, se necessário."
+      },
+      "massEdit": {
+        "title": "Edição em massa aplicada",
+        "message": "{count, plural, one {{amount} edifício atualizado} other {{amount} edifícios atualizados}}."
+      }
+    },
+    "manage": {
+      "finishText": "Concluir melhoria define {name} como {level}, liberta o Construtor {builder} e adiciona a melhoria ao Histórico. Quando o tempo chega a zero, o edifício e o cartão do construtor mostram Pronto a concluir. Nada termina sozinho, porque podem ter sido usados aceleradores."
+    }
+  },
+  "filters": {
+    "title": "Filtros",
+    "description": "Escolher o que a lista de Edifícios mostra",
+    "reset": "Repor",
+    "show": "{count, plural, one {Mostrar {amount} edifício} other {Mostrar {amount} edifícios}}",
+    "category": "Categoria",
+    "categoryAll": "Todas, {count}",
+    "categoryOption": "{category}, {count}",
+    "showSection": "Mostrar",
+    "hideMaxed": "Ocultar edifícios no máximo",
+    "hideLocked": "Ocultar edifícios bloqueados",
+    "goalsOnly": "Só edifícios com objetivo",
+    "order": "Ordem",
+    "orders": {
+      "game": "Ordem do jogo, Furnace primeiro",
+      "name": "Nome, A a Z",
+      "progress": "Progresso, menor primeiro"
+    },
+    "pinned": "O Furnace fica sempre fixado no topo, qualquer que seja o filtro. Os filtros não são guardados."
+  },
+  "levels": {
+    "title": "Níveis",
+    "description": "{category} · Máx. {max} · {count} níveis",
+    "noDescription": "Ainda sem descrição nos dados.",
+    "current": "Nível atual",
+    "goal": "Nível do objetivo",
+    "nextNeeds": "O próximo nível requer",
+    "noGoal": "Sem objetivo",
+    "tableNote": "Esta tabela lista só os níveis a seguir ao atual, porque os anteriores já estão feitos.",
+    "maxed": "Nível máximo. Não há mais nada para melhorar.",
+    "nextAfter": "Próximos níveis a seguir a {level}",
+    "first": "Primeiros níveis",
+    "level": "Nível",
+    "time": "Tempo",
+    "power": "Poder",
+    "capacity": "Capacidade",
+    "requires": "Requer",
+    "goalBadge": "Objetivo",
+    "capacityNote": "A capacidade só está definida nas linhas base de cada tier no pacote de dados, por isso os subníveis mostram Desconhecido."
+  },
+  "massEdit": {
+    "title": "Edição em massa de edifícios",
+    "description": "Definir muitos edifícios de uma vez. Nada é guardado até premir Definir edifícios.",
+    "noChanges": "Ainda sem alterações",
+    "changes": "{count, plural, one {{amount} edifício muda} other {{amount} edifícios mudam}}",
+    "set": "{count, plural, one {Definir {amount} edifício} other {Definir {amount} edifícios}}",
+    "raiseTitle": "Subir todos os edifícios para um nível",
+    "raiseLabel": "Subir todos os edifícios para o nível",
+    "raiseAll": "Subir todos",
+    "raiseHint": "Cada edifício sobe até ao seu nível mais alto igual ou inferior a este. Um edifício que já esteja acima fica como está, e um que só começa mais tarde fica por construir. Os objetivos não mudam.",
+    "blockedTitle": "Alguns edifícios precisam primeiro de outro edifício.",
+    "blocked": "{count, plural, one {{amount} edifício está} other {{amount} edifícios estão}} acima do que os requisitos permitem.",
+    "lowerBlocked": "Baixar para o que é permitido",
+    "levels": "Níveis",
+    "needsFirst": "Requer primeiro {list}",
+    "was": "era {level}",
+    "entertainment": "Entretenimento",
+    "markAllBuilt": "Marcar todos construídos",
+    "clearAll": "Limpar tudo",
+    "footnote": "A edição em massa só altera os níveis guardados. Nunca baixa um nível por si e nunca altera objetivos. Cada abrigo tem o seu nível, por isso define-se com o botão Abrigos, e o Hero Hall define-se no separador Instalações."
+  },
+  "shelters": {
+    "title": "Abrigos",
+    "description": "Podem ser construídos até {max}. Definir o nível de cada um.",
+    "locked": "O Abrigo ainda está bloqueado pelo nível do Furnace.",
+    "empty": "Ainda sem abrigos.",
+    "power": "Poder {power}",
+    "add": "Adicionar abrigo",
+    "remove": "Remover Abrigo {number}",
+    "allBuilt": "Os {max} abrigos estão construídos.",
+    "furnaceNeeds": "O que o Furnace requer dos abrigos",
+    "requirement": "O Furnace {furnaceLevel} requer o Abrigo {number} no nível {level}.",
+    "met": "Cumprido.",
+    "notMet": "Não cumprido.",
+    "footnote": "O Plano e a barra de progresso usam o abrigo mais baixo, o próximo a melhorar."
+  },
+  "plan": {
+    "title": "Plano de Edifícios",
+    "description": "Recursos, tempo e poder do nível atual ao objetivo",
+    "saved": "Plano guardado {time}",
+    "save": "Guardar plano",
+    "failed": "Não foi possível calcular o plano.",
+    "goalsHeading": "{count, plural, one {Objetivos, {amount} edifício} other {Objetivos, {amount} edifícios}}",
+    "noGoals": "Ainda sem objetivos. Adicionar um edifício acima e escolher o nível a atingir.",
+    "prerequisiteNote": "Os passos pré-requisito são adicionados automaticamente. Um nível que exija outro edifício a um nível superior conta esses passos e assinala-os.",
+    "timeNote": "O plano demora {time} depois do bónus de velocidade de {percent}%. As reservas: Construção {construction} min, Geral {general} min. Os aceleradores gerais contam para a construção.",
+    "add": {
+      "title": "Adicionar um edifício",
+      "allAdded": "Todos os edifícios já estão no plano.",
+      "selectLabel": "Edifício a adicionar",
+      "button": "Adicionar edifício"
+    },
+    "speed": {
+      "title": "Velocidade de construção",
+      "percent": "{value}%",
+      "plusPercent": "+{value}%",
+      "readOnly": "Só leitura",
+      "bonusesOn": "Vem da página Bónus.",
+      "bonusesOff": "Desativado nas Definições, em Aplicar os totais de Bónus.",
+      "openBonuses": "Abrir Bónus",
+      "appointment": "Vantagens e nomeação do presidente",
+      "appointments": {
+        "none": "Nenhuma",
+        "regular": "Normal",
+        "supreme": "Suprema"
+      },
+      "appointmentNote": "Normal 10 por cento, Suprema 15 por cento. <strong>Estimativa:</strong> o pacote de dados indica estes valores só para a investigação.",
+      "petSkill": "Habilidade de mascote, Builder's Aide",
+      "petSkillNote": "A percentagem vem da Cave Hyena na página Mascotes, ao nível atual.",
+      "chiefOrder": "Ordem do chefe, Double Time",
+      "chiefOrderNote": "<strong>Estimativa:</strong> acrescenta {percent} por cento de velocidade de construção durante 5 minutos. O pacote de dados não tem dados de ordens do chefe, por isso o valor é introduzido pela aplicação e aplicado a todo o tempo.",
+      "total": "Velocidade de construção total",
+      "petSkillNoteLocked": "A Cave Hyena não está desbloqueada na página Mascotes, por isso a habilidade não acrescenta nada. Desbloqueá-la lá para ativar isto."
+    },
+    "goal": {
+      "to": "para",
+      "label": "Objetivo de {name}",
+      "remove": "Remover {name} do plano"
+    },
+    "result": {
+      "title": "Resultado, {count} passos",
+      "powerGained": "Poder ganho",
+      "speedupMinutes": "Minutos de aceleração necessários",
+      "baseTime": "Tempo base",
+      "timeWithBonus": "Tempo com bónus de {percent}%",
+      "eventPoints": "Pontos de evento: SvS {svs}, King of Icefield {king} (<strong>Estimativa</strong>, a partir das linhas de pontuação dos eventos).",
+      "prerequisite": "Pré-requisito",
+      "steps": "{count, plural, one {{amount} passo} other {{amount} passos}}",
+      "unmetHeading": "Pré-requisitos por cumprir",
+      "unmetNone": "Nenhum para estes objetivos. Um edifício fora da lista, como o Hero Hall, apareceria aqui."
+    },
+    "export": {
+      "button": "Exportar para Eventos principais",
+      "empty": "Adicionar um objetivo ao plano para o exportar.",
+      "speedupMinutes": "Minutos de aceleração de construção",
+      "power": "Poder ganho com a construção",
+      "stockDetail": "O plano requer {needed}, existem {held}.",
+      "unscored": "Nenhum evento pontua {name}."
+    }
+  }
+}

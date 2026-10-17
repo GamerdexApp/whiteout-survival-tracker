@@ -1,0 +1,49 @@
+{
+  "title": "Linha do tempo do servidor",
+  "line": "{rows, plural, one {{amount} marco} other {{amount} marcos}} do dia {first} ao dia {last}",
+  "subline": "O que desbloqueia em cada idade do servidor. Só referência, nada aqui é salvo.",
+  "place": {
+    "label": "Mostrar minha posição para",
+    "option": "{name}, cerca do dia {days}, com margem de {window}",
+    "optionNoDate": "{name}, sem data de início do servidor",
+    "jump": "Ir para a minha posição"
+  },
+  "filters": {
+    "label": "Mostrar",
+    "events": "Eventos {amount}",
+    "features": "Recursos {amount}",
+    "pets": "Pets {amount}",
+    "experts": "Especialistas {amount}",
+    "heroes": "Heróis {amount}"
+  },
+  "help": "A linha é a idade do servidor em dias. Os heróis ficam à direita e o resto à esquerda. Sua posição vem da data de início do servidor no seu chefe, com uma margem de mais ou menos {window} dias.",
+  "noChief": "Ainda não há chefe, então sua posição não é mostrada.",
+  "addChief": "Adicionar um chefe",
+  "noStartDate": "{name} não tem data de início do servidor. Adicione uma para ver sua posição na linha.",
+  "editChief": "Editar chefe",
+  "columns": {
+    "left": "Eventos, recursos, pets, especialistas",
+    "right": "Heróis"
+  },
+  "tags": {
+    "event": "Evento",
+    "feature": "Recurso",
+    "pets": "Pets",
+    "experts": "Especialistas"
+  },
+  "fireCrystalLevels": "Níveis de Fire Crystal {names}",
+  "heroGeneration": "Heróis, geração {generation}",
+  "day": "Dia {day}",
+  "status": {
+    "unlocked": "Desbloqueado",
+    "near": "Perto da sua idade",
+    "future": "{count, plural, one {Em {amount} dia} other {Em {amount} dias}}"
+  },
+  "marker": {
+    "label": "Você está aqui",
+    "title": "{name}, servidor com cerca de {days} dias",
+    "window": "Mais ou menos {window} dias: do dia {from} ao {to}"
+  },
+  "empty": "Nada para mostrar com estes filtros.",
+  "source": "Fonte: a linha do tempo do servidor do pacote de dados."
+}

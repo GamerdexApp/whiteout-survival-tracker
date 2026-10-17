@@ -1,0 +1,27 @@
+{
+  "lock": {
+    "day": "Se débloque au jour {day} du serveur",
+    "dayAndDate": "Se débloque au jour {day} du serveur, {date}"
+  },
+  "areas": {
+    "pets": "Familiers",
+    "fireCrystal": "Niveaux de Fire Crystal",
+    "experts": "Experts",
+    "chiefGear": "Équipement du chef",
+    "chiefCharms": "Charmes du chef",
+    "warAcademy": "War Academy et recherche T12"
+  },
+  "dialog": {
+    "legend": "Contenu débloqué",
+    "hint": "Les verrous suivent l'âge du serveur depuis sa date de lancement. Si votre serveur est un peu décalé, choisissez l'étape que vous avez réellement. Les éléments verrouillés restent visibles et vos données enregistrées sont conservées.",
+    "auto": "Auto, {current}",
+    "autoUnknown": "Auto, indiquez la date de lancement du serveur pour l'utiliser",
+    "autoNone": "rien de débloqué pour l'instant",
+    "none": "Rien de débloqué",
+    "stepPets": "Jour {day}, {count} familiers sur {total}",
+    "stepExperts": "Jour {day}, {count} experts sur {total}",
+    "stepFc": "Jour {day}, jusqu'à {last}, sans ses étapes",
+    "stepNamed": "Jour {day}, {name}",
+    "pickLabel": "{area} débloqué jusqu'à"
+  }
+}

@@ -1,0 +1,209 @@
+{
+    "page": {
+        "title": "寵物"
+    },
+    "view": {
+        "subline": "{chief} · {details} · 已解鎖 {unlocked} / {total} 隻寵物"
+    },
+    "rarities": {
+        "Common": "普通",
+        "Uncommon": "優良",
+        "Rare": "稀有",
+        "Epic": "史詩",
+        "Legendary": "傳說"
+    },
+    "unlock": {
+        "afterFurnace": "第 {days} 天且 Furnace {level}",
+        "afterPet": "第 {days} 天且 {pet} {level} 級"
+    },
+    "summary": {
+        "unlocked": "已解鎖",
+        "unlockedValue": "{count} / {total}",
+        "unlockedNote": "由你設定",
+        "power": "總戰力",
+        "powerNote": "已解鎖寵物的等級、進階與精煉戰力",
+        "powerUnknown": "已解鎖寵物的等級、進階與精煉戰力，{amount} 項未知",
+        "next": "下一隻解鎖",
+        "allUnlocked": "全部已解鎖",
+        "allUnlockedNote": "所有寵物都已解鎖",
+        "lockedNote": "{count} 隻在較晚的伺服器天數前鎖定"
+    },
+    "totals": {
+        "attackDefense": "部隊攻擊與防禦",
+        "attack": "攻擊",
+        "defense": "防禦",
+        "lethality": "殺傷",
+        "health": "生命",
+        "gain": "+{value}%",
+        "types": {
+            "infantry": "步兵",
+            "lancer": "騎兵",
+            "marksman": "弓兵"
+        }
+    },
+    "search": {
+        "label": "搜尋寵物",
+        "placeholder": "依名稱搜尋 {amount} 隻寵物"
+    },
+    "status": {
+        "showing": "顯示 {shown} / {total} {count, plural, other {隻寵物}}。",
+        "filters": " 篩選：{list}。",
+        "filterNames": {
+            "rarity": "稀有度",
+            "status": "狀態",
+            "advanced": "進階",
+            "order": "排序"
+        },
+        "readOnlyGoals": "目標在這裡唯讀，請在「規劃」中設定。目標與目前數值相同表示沒有目標。",
+        "showMore": "顯示更多，還有 {count, plural, other {{amount} 隻寵物}}"
+    },
+    "empty": {
+        "title": "沒有符合的寵物",
+        "description": "請更改搜尋或篩選以查看更多寵物。",
+        "reset": "重設篩選"
+    },
+    "toast": {
+        "lockedTitle": "{name}已鎖定",
+        "lockedMessage": "等級、進階和精煉會保留。",
+        "undo": "復原"
+    },
+    "card": {
+        "summary": "{rarity} · 最高 {max} 級",
+        "unlocked": "已解鎖",
+        "unlockedLabel": "{pet}已解鎖",
+        "cooldown": "冷卻 {time}",
+        "cooldownByTier": "冷卻時間依階級而異",
+        "cooldownUnknown": "冷卻時間未知",
+        "skillTiers": "{count, plural, other {{amount} 個技能階}}",
+        "unlockRule": "解鎖條件",
+        "ruleMet": "你已符合這個條件",
+        "level": "等級（最高 {max}）",
+        "levelLabel": "{pet}等級",
+        "goal": "目標 {level}",
+        "noGoal": "沒有目標",
+        "advanced": "已進階",
+        "advancedHint": "可在 10、20、30 級等設定為進階。",
+        "refinement": "精煉",
+        "refinementMax": "每項最高 {max}%",
+        "refineLabel": "{pet}{stat}",
+        "percentSign": "%",
+        "attack": "攻 +{value}%",
+        "defense": "防 +{value}%",
+        "power": "戰力 {value}",
+        "powerUnknown": "戰力未知",
+        "powerParts": "等級與進階 {base}，精煉 {refining}"
+    },
+    "filters": {
+        "button": "篩選",
+        "title": "篩選",
+        "description": "選擇寵物清單要顯示的內容",
+        "rarity": "稀有度",
+        "rarityAll": "全部 {amount}",
+        "rarityOption": "{rarity} {amount}",
+        "rarities": {
+            "Common": "普通",
+            "Uncommon": "優良",
+            "Rare": "稀有",
+            "Epic": "史詩",
+            "Legendary": "傳說"
+        },
+        "status": "狀態",
+        "statusOptions": {
+            "all": "所有寵物",
+            "unlocked": "已解鎖",
+            "locked": "已鎖定"
+        },
+        "advanced": "進階",
+        "advancedOptions": {
+            "any": "不限",
+            "advanced": "已進階",
+            "notAdvanced": "未進階"
+        },
+        "order": "排序",
+        "orderOptions": {
+            "game": "遊戲順序",
+            "name": "名稱，A 到 Z",
+            "level": "等級，由高到低"
+        },
+        "notSaved": "篩選條件不會儲存。",
+        "reset": "重設",
+        "show": "顯示 {count, plural, other {{amount} 隻寵物}}"
+    },
+    "plan": {
+        "button": "規劃",
+        "title": "規劃寵物",
+        "description": "達成目標所需的食物、道具、數值和活動積分",
+        "saved": "規劃已儲存 {date}",
+        "notSavedYet": "規劃尚未儲存",
+        "close": "關閉",
+        "save": "儲存規劃",
+        "exportButton": "匯出到核心活動",
+        "exportNothing": "這份規劃沒有可匯出的進階分數。",
+        "export": {
+            "advancement": "寵物進階分數",
+            "commonMark": "Common Wild Marks",
+            "advancedMark": "Advanced Wild Marks",
+            "marksDetail": "依資源頁面計算。"
+        },
+        "noPets": "請新增已解鎖的寵物以規劃它的等級。",
+        "add": {
+            "title": "新增寵物",
+            "selectLabel": "要新增的寵物",
+            "button": "新增寵物",
+            "allIn": "所有已解鎖的寵物都已在規劃中。",
+            "noneUnlocked": "請先在寵物頁面解鎖寵物才能規劃。"
+        },
+        "block": {
+            "rarities": {
+                "Common": "普通",
+                "Uncommon": "優良",
+                "Rare": "稀有",
+                "Epic": "史詩",
+                "Legendary": "傳說"
+            },
+            "maxLevel": "最高 {max} 級",
+            "remove": "移除",
+            "removeLabel": "從規劃中移除{pet}",
+            "current": "目前等級",
+            "to": "到",
+            "goal": "目標等級（最高 {max}）",
+            "goalLabel": "{pet}目標等級",
+            "payAdvancement": "在目標等級支付進階",
+            "paysCurrent": "{level} 級尚未進階，所以會支付該次進階。"
+        },
+        "result": {
+            "title": "{count, plural, other {{amount} 隻寵物}}的結果",
+            "resources": "資源，所有寵物",
+            "byPet": "依寵物",
+            "heads": {
+                "pet": "寵物",
+                "levels": "等級",
+                "food": "食物",
+                "power": "戰力"
+            },
+            "powerGain": "+{value}",
+            "percentGain": "+{value}%",
+            "unknown": "未知",
+            "gains": "增益",
+            "gainNames": {
+                "levels": "提升等級",
+                "advancements": "進階",
+                "attack": "部隊攻擊",
+                "defense": "部隊防禦",
+                "power": "戰力",
+                "score": "進階分數"
+            },
+            "unknownPowerNote": "資料包中沒有這份規劃內某個等級的進階戰力，所以戰力增加量為未知。",
+            "eventPoints": "活動積分",
+            "events": {
+                "svs": "SvS",
+                "allianceShowdown": "Alliance Showdown",
+                "kingOfIcefield": "King of Icefield",
+                "hallOfChief": "Hall of Chief"
+            },
+            "notScored": "不計分",
+            "eventNote": "活動積分等於進階分數乘以各活動計分列的分數。",
+            "scoreSourceNote": "40 到 100 級的進階分數與活動說明一致。10 到 30 級來自單一來源（WoS Tools）。"
+        }
+    }
+}

@@ -1,0 +1,262 @@
+{
+    "page": {
+        "title": "英雄"
+    },
+    "view": {
+        "tabsLabel": "英雄",
+        "heroesTab": "英雄",
+        "gearTab": "英雄裝備",
+        "heroesSubline": "{chief} · 已擁有 {owned} / {total}",
+        "gearSubline": "{chief} · {count, plural, other {{amount} 組裝備}}"
+    },
+    "common": {
+        "owned": "已擁有",
+        "ownedLabel": "{hero}已擁有",
+        "starLabel": "{hero}星級",
+        "levelLabel": "{hero}等級",
+        "talentLabel": "{hero}天賦",
+        "skillLabel": "{hero}{skill}",
+        "weaponLevelLabel": "{hero}{weapon}等級",
+        "shardsOwnedLabel": "{hero}持有碎片",
+        "starAndTier": "星級與階級",
+        "level": "等級",
+        "noGoal": "沒有目標",
+        "shards": "碎片",
+        "totalPower": "總戰力",
+        "unknown": "未知",
+        "plan": "規劃",
+        "generation": "第 {generation} 世代",
+        "exploration": "探索",
+        "expedition": "遠征",
+        "talent": "天賦",
+        "maxLevelSuffix": "/ {max}",
+        "heroCount": "{count, plural, other {{amount} 位英雄}}"
+    },
+    "goalText": {
+        "to": "至 {goal}"
+    },
+    "card": {
+        "summary": "{rarity} · {heroClass} · {generation}",
+        "talentRow": "天賦 {name}",
+        "shardsOf": "需要 {needed}",
+        "enoughShards": " 碎片足夠",
+        "shortBy": " 缺 {amount}",
+        "gearSet": "裝備組",
+        "notOwnedHint": "開啟「已擁有」即可追蹤星級、等級和技能。",
+        "details": "詳細資料"
+    },
+    "tab": {
+        "stats": {
+            "generations": "已解鎖世代",
+            "generationsValue": "0 到 {max}",
+            "heroesOwned": "已解鎖英雄中的已擁有數",
+            "legendaryOwned": "已解鎖傳說英雄中的已擁有數",
+            "atMaxLevel": "達 80 級",
+            "heroPower": "英雄戰力",
+            "heroPowerUnknown": "英雄戰力，未計入 {amount} 項未知",
+            "withGoal": "有目標"
+        },
+        "search": {
+            "label": "搜尋英雄",
+            "placeholder": "依名稱搜尋 {amount} 位英雄"
+        },
+        "filters": "篩選",
+        "maxOut": "一鍵滿級",
+        "status": "顯示 {shown} / {total} 位英雄。這位領主已解鎖第 0 到 {max} 世代。目標在這裡唯讀，請在「規劃」中設定。",
+        "empty": {
+            "title": "沒有符合的英雄",
+            "description": "請更改搜尋，或重設篩選以查看所有英雄。",
+            "reset": "重設"
+        },
+        "showMore": "顯示更多，還有 {amount} {count, plural, other {位英雄}}",
+        "toast": {
+            "notOwnedTitle": "未擁有 {name}",
+            "notOwnedMessage": "星級、等級和技能會保留，等你再次開啟「已擁有」時恢復。",
+            "undo": "復原",
+            "maxedTitle": "英雄已滿級",
+            "maxedMessage": "已更新{heroes}。"
+        }
+    },
+    "filtersFlyout": {
+        "title": "篩選",
+        "description": "選擇頁面要顯示的英雄",
+        "reset": "重設",
+        "show": "顯示{heroes}",
+        "all": "全部",
+        "generation": "世代",
+        "rarity": "稀有度",
+        "heroClass": "職業",
+        "ownership": "擁有狀態",
+        "order": "排序",
+        "notSaved": "篩選條件不會儲存。",
+        "rarities": {
+            "Legendary": "傳說",
+            "Epic": "史詩",
+            "Rare": "稀有"
+        },
+        "classes": {
+            "Infantry": "步兵",
+            "Lancer": "騎兵",
+            "Marksman": "弓兵"
+        },
+        "ownershipOptions": {
+            "all": "全部",
+            "owned": "已擁有",
+            "notOwned": "未擁有"
+        },
+        "orderOptions": {
+            "owned": "已擁有優先，再依最新世代",
+            "generation": "世代，最新在前",
+            "name": "名稱，A 到 Z",
+            "power": "總戰力，由高到低"
+        }
+    },
+    "maxOut": {
+        "title": "英雄一鍵滿級",
+        "scopeLabel": "要滿級的英雄",
+        "scope": {
+            "owned": "已擁有的英雄",
+            "unlocked": "所有已解鎖的英雄，並標為已擁有",
+            "selected": "自選英雄，並標為已擁有"
+        },
+        "searchLabel": "搜尋要選擇的英雄",
+        "searchPlaceholder": "依名稱搜尋英雄",
+        "selectShown": "選取顯示的項目",
+        "clear": "清除",
+        "ownedTag": "已擁有",
+        "starAndTier": "星級與階級到 5.0",
+        "level": "等級到 80",
+        "levelHint": "如果技能已滿級，而較舊英雄的等級維持在 1，請關閉此項。",
+        "skills": "技能到 5",
+        "skillsHint": "探索、遠征和天賦。",
+        "weapon": "專屬武器到 10",
+        "note": "關閉的項目會維持原樣。碎片數量和目標不會變更。套用後可以復原。",
+        "cancel": "取消",
+        "apply": "{heroes}一鍵滿級"
+    },
+    "flyout": {
+        "fallbackTitle": "英雄",
+        "description": "{rarity}{heroClass}，第 {generation} 世代",
+        "done": "完成",
+        "status": {
+            "title": "狀態",
+            "furnaceNeeded": "{level} 級需要的 Furnace",
+            "met": "已達成",
+            "needsFurnace": "需要 Furnace {required}",
+            "levelPower": "等級戰力",
+            "skillPower": "技能戰力",
+            "starPower": "星級戰力",
+            "weaponPower": "武器戰力",
+            "totalPower": "總戰力",
+            "note": "戰力包含等級、技能、星級標示和武器等級。"
+        },
+        "skills": {
+            "title": "技能",
+            "aside": "每個技能五級",
+            "toLevel": "到 {level} 級：{manuals} 本技能書",
+            "needsStar": "需要 {star} 星",
+            "starMet": "已達 {star} 星",
+            "talentTop": "天賦已達最高等級。",
+            "talentNeedsStar": "{level} 級需要 {star} 星",
+            "talentStarMet": "{level} 級：已達 {star} 星"
+        },
+        "weapon": {
+            "title": "專屬武器：{name}",
+            "level": "武器等級",
+            "widgetsForLevel": "升到 {level} 級所需 Widgets",
+            "widgetsForLevels": "{from} 到 {to} 級所需 Widgets",
+            "expeditionBonus": "遠征加成",
+            "bonus": "殺傷 {lethality}% · 生命 {health}%",
+            "power": "武器戰力",
+            "unlocksAt": "武器 {level} 級解鎖"
+        },
+        "shards": {
+            "title": "碎片",
+            "owned": "持有碎片",
+            "goal": "目標",
+            "neededForGoal": "達成目標 {goal} 所需",
+            "enough": "碎片足夠",
+            "shortBy": "缺少",
+            "yes": "是",
+            "sources": "碎片來源"
+        },
+        "stats": {
+            "title": "80 級數值",
+            "explorationAt": "{stars}時的探索",
+            "expeditionAt": "{stars}時的遠征",
+            "explorationFull": "5.0 時的探索",
+            "expeditionFull": "5.0 時的遠征",
+            "exploration": "攻 {attack} · 防 {defense} · HP {health}",
+            "expedition": "攻 {attack}% · 防 {defense}%",
+            "estimate": "估計值"
+        }
+    },
+    "plan": {
+        "title": "規劃英雄",
+        "description": "從目前到目標所需的碎片、技能書和 Widgets",
+        "saved": "規劃已儲存 {date}",
+        "close": "關閉",
+        "save": "儲存規劃",
+        "noHeroes": "規劃中還沒有英雄。請先在上方新增已擁有的英雄，再提高它的目標。",
+        "add": {
+            "title": "新增英雄",
+            "allIn": "所有已擁有的英雄都已在規劃中。要規劃某位英雄，請先開啟它的「已擁有」。",
+            "selectLabel": "要新增的英雄",
+            "button": "新增英雄"
+        },
+        "block": {
+            "remove": "從規劃中移除{hero}",
+            "starTo": "{stars} 至",
+            "starGoal": "{hero}星級目標",
+            "levelTo": "{current} 至",
+            "goalLabel": "{hero}{name}目標",
+            "note": "目前數值來自頁面上的英雄。請到那裡修改。"
+        },
+        "unmet": {
+            "title": "技能等級需要更高的星級。",
+            "item": "{hero}：{skill} {level} 級需要 {star} 星",
+            "message": "{items}。請提高星級目標，或降低技能目標。"
+        },
+        "shardsUsed": "已使用碎片：英雄專屬 {own}，通用 {general}，共 {total}。英雄會先使用自己的碎片。",
+        "result": {
+            "title": "結果，{steps} 步",
+            "widgets": "Widgets",
+            "weaponSkills": "{count, plural, other {已解鎖 {amount} 個武器技能}}",
+            "note": "戰力不屬於英雄規劃。計算器不會回傳時間，也沒有速度輸入。",
+            "heads": {
+                "hero": "英雄",
+                "starSteps": "星級步驟",
+                "skillLevels": "技能等級",
+                "shards": "碎片",
+                "widgets": "Widgets"
+            },
+            "tableLabel": "規劃結果表"
+        },
+        "events": {
+            "svs": "SvS State of Power",
+            "allianceShowdown": "Alliance Showdown",
+            "kingOfIcefield": "King of Icefield",
+            "hallOfChief": "Hall of Chief"
+        }
+    },
+    "export": {
+        "button": "匯出到核心活動",
+        "nothing": "這份規劃不需要碎片或 Widgets，沒有內容可匯出。",
+        "shardsGroup": "碎片用",
+        "widgetsGroup": "Widgets 用",
+        "widgets": "Widgets",
+        "manualsReason": "沒有活動為技能書計分",
+        "shards": {
+            "Legendary": "Mythic Hero Shards",
+            "Epic": "Epic Hero Shards",
+            "Rare": "Rare Hero Shards"
+        }
+    },
+    "service": {
+        "generalShard": {
+            "Legendary": "Mythic General Hero Shard",
+            "Epic": "Epic General Hero Shard",
+            "Rare": "Rare General Hero Shard"
+        }
+    }
+}

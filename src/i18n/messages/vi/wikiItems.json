@@ -1,0 +1,79 @@
+{
+    "line": "{items} vật phẩm trong {categories} danh mục, kèm nguồn và tỉ lệ rơi của {chests} rương.",
+    "catalog": {
+        "title": "Danh mục vật phẩm",
+        "showing": "Hiển thị {shown} trên {total}",
+        "search": "Tìm kiếm",
+        "searchPlaceholder": "Tìm vật phẩm theo tên hoặc mô tả",
+        "table": "Vật phẩm",
+        "item": "Vật phẩm",
+        "category": "Danh mục",
+        "sources": "Nguồn",
+        "lootRates": "Tỉ lệ rơi",
+        "description": "Mô tả",
+        "emptyTitle": "Không có vật phẩm phù hợp",
+        "emptyDescription": "Đổi từ khóa hoặc bộ lọc."
+    },
+    "filters": {
+        "title": "Bộ lọc",
+        "button": "Bộ lọc",
+        "summary": "Bộ lọc: {category}. Nguồn: {sources}",
+        "edit": "Sửa",
+        "category": "Danh mục",
+        "all": "Tất cả",
+        "sources": "Nguồn",
+        "lootRates": "Tỉ lệ rơi",
+        "reset": "Đặt lại",
+        "show": "{count, plural, other {Hiện {amount} vật phẩm}}"
+    },
+    "sourcesFilter": {
+        "any": "Mọi nguồn",
+        "has": "Có nguồn",
+        "none": "Không có nguồn"
+    },
+    "sourcesChip": {
+        "any": "Bất kỳ",
+        "has": "Có nguồn",
+        "none": "Không có nguồn ({amount})"
+    },
+    "lootFilter": {
+        "any": "Bất kỳ",
+        "has": "Có tỉ lệ rơi"
+    },
+    "lootChip": {
+        "any": "Bất kỳ",
+        "has": "Có tỉ lệ rơi ({amount} rương)"
+    },
+    "loot": {
+        "yes": "Có",
+        "no": "Không",
+        "notChest": "Không phải rương"
+    },
+    "detail": {
+        "title": "Chi tiết",
+        "category": "Danh mục",
+        "sources": "Nguồn",
+        "speedup": "Tăng tốc",
+        "speedupValue": "{type}, {minutes} phút",
+        "description": "Mô tả",
+        "lootRates": "Tỉ lệ rơi",
+        "lootRowsListed": "{count, plural, other {{amount} dòng được liệt kê}}",
+        "noLootRates": "Dữ liệu không có tỉ lệ rơi cho rương này",
+        "lootTitle": "Tỉ lệ rơi",
+        "lootMeta": "{count, plural, other {{amount} phần thưởng}}",
+        "lootTable": "Tỉ lệ rơi của rương",
+        "reward": "Phần thưởng",
+        "amount": "Số lượng",
+        "chance": "Tỉ lệ",
+        "chanceValue": "{percent}%",
+        "name": "Tên"
+    },
+    "speedupType": {
+        "general": "Chung",
+        "construction": "Xây dựng",
+        "troop": "Quân",
+        "research": "Nghiên cứu",
+        "learning": "Học",
+        "healing": "Chữa trị"
+    }
+}

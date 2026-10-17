@@ -1,0 +1,109 @@
+{
+    "page": {
+        "title": "紀錄"
+    },
+    "events": {
+        "svs": "SvS",
+        "showdown": "Alliance Showdown",
+        "king": "King of Icefield",
+        "hall": "Hall of Chief"
+    },
+    "title": {
+        "dated": "{event}，{start} 至 {end}",
+        "undated": "{event}"
+    },
+    "ended": "結束於 {date}",
+    "tabs": {
+        "label": "依活動篩選",
+        "all": "所有活動"
+    },
+    "list": {
+        "intro": "你從活動紀錄結束的活動，最新的在前。SvS 的分數為第 1 到 5 天，戰鬥階段另外計算。開啟活動即可查看計畫與實際對照，以及計畫中的升級。",
+        "event": "活動",
+        "plan": "計畫",
+        "actual": "實際",
+        "diff": "差異",
+        "rank": "名次",
+        "alliance": "聯盟",
+        "rankLine": "名次 {rank}，聯盟 {alliance}",
+        "open": "開啟",
+        "openEvent": "開啟{name}",
+        "none": "尚無這個類型的已結束活動。",
+        "diffWithPercent": "{amount}（{percent}%）"
+    },
+    "empty": {
+        "title": "尚無活動",
+        "description": "你從核心活動的活動紀錄結束的活動，會連同計畫和成績存在這裡。",
+        "action": "開啟核心活動"
+    },
+    "notFound": {
+        "title": "找不到活動",
+        "description": "這個活動不在使用中領主的紀錄裡。它可能已被移除，或該活動在核心活動中被隱藏。",
+        "action": "返回紀錄"
+    },
+    "unknown": "未設定",
+    "belowPlan": "低於計畫",
+    "atOrAbovePlan": "達到或超過計畫",
+    "breadcrumb": {
+        "label": "導覽路徑"
+    },
+    "tiles": {
+        "plan": "計畫",
+        "actual": "實際",
+        "difference": "差異",
+        "overall": "總計",
+        "alliance": "聯盟",
+        "days": "第 1 到 5 天",
+        "rank": "名次",
+        "rankDays": "名次，第 1 到 5 天",
+        "percent": "{percent}%"
+    },
+    "compare": {
+        "title": "計畫與實際對照",
+        "titleDays": "計畫與實際對照，第 1 到 5 天",
+        "day": "天",
+        "plan": "計畫",
+        "actual": "實際",
+        "diff": "差異",
+        "rank": "名次",
+        "ally": "聯盟",
+        "total": "合計",
+        "share": "計畫的 {percent}%",
+        "shareLine": "計畫的 {percent}%，名次 {rank}，聯盟 {ally}",
+        "barLabel": "{day}，實際占計畫的比例"
+    },
+    "battle": {
+        "title": "戰鬥階段",
+        "note": "獨立的分數和名次，不會加到第 1 到 5 天的合計。"
+    },
+    "upgrades": {
+        "title": "計畫中的升級",
+        "titleCount": "計畫中的升級，{count}",
+        "summary": "這個活動的計畫中的升級，依類型分組。已完成 {done} / {count}。",
+        "summaryUnchecked": "這個活動的計畫中的升級，依類型分組。",
+        "none": "這個活動沒有匯出任何規劃，所以沒有計畫中的升級可顯示。",
+        "groupTitle": "{name}，{count}",
+        "groupStats": "已完成 {done} / {count}，戰力 +{power}，Fire Crystals {fireCrystals}",
+        "groupStatsUnchecked": "戰力 +{power}，Fire Crystals {fireCrystals}",
+        "power": "戰力 +{power}",
+        "plannedDay": "計畫於{day}",
+        "done": "已完成",
+        "notDone": "未完成",
+        "levelsFrom": "{from} 到 {to}",
+        "levelsTo": "到 {to}",
+        "levelsResearchFrom": "{from} 級到 {to} 級",
+        "levelsResearchTo": "到 {to} 級",
+        "costAmount": "{amount} {name}"
+    },
+    "pages": {
+        "buildings": "建築",
+        "research": "研究",
+        "chiefGear": "領主裝備",
+        "chiefCharms": "領主護符",
+        "heroGear": "英雄裝備",
+        "heroes": "英雄",
+        "pets": "寵物",
+        "experts": "專家",
+        "troops": "部隊"
+    }
+}

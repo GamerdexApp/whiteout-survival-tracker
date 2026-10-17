@@ -1,0 +1,52 @@
+{
+    "line": "{pets} 隻寵物。僅供參考，這裡不會儲存任何內容。",
+    "roster": {
+        "title": "寵物",
+        "count": "{shown} / {total} 隻寵物",
+        "search": "搜尋",
+        "searchPlaceholder": "搜尋 {count} 隻寵物",
+        "rarity": "稀有度",
+        "all": "全部",
+        "empty": "沒有符合這些篩選的寵物。",
+        "summary": "最高 {level} 級，精煉最高 {percent}",
+        "percentValue": "{value}%"
+    },
+    "unlock": {
+        "withFurnace": "第 {days} 天，Furnace {level}",
+        "withPet": "第 {days} 天，{pet} {level}",
+        "daysOnly": "第 {days} 天",
+        "label": "解鎖：{requirement}"
+    },
+    "detail": {
+        "maxLevel": "最高等級",
+        "maxRefinement": "最高精煉",
+        "unlock": "解鎖條件",
+        "cooldown": "技能冷卻",
+        "duration": "技能持續時間",
+        "tierCooldown": "{value}",
+        "maxPower": "最高戰力",
+        "levelPower": "滿級時的等級與進階戰力",
+        "refiningPower": "最高精煉時的精煉戰力"
+    },
+    "skill": {
+        "title": "技能",
+        "meta": "{count, plural, other {{amount} 級}}",
+        "level": "Lv {level}",
+        "percent": "{value}%"
+    },
+    "levels": {
+        "title": "等級表",
+        "level": "{level} 級",
+        "columns": {
+            "level": "等級",
+            "food": "寵物食物",
+            "attack": "部隊攻擊",
+            "defense": "部隊防禦",
+            "power": "部隊戰力",
+            "materials": "進階材料"
+        },
+        "refined": "{value}（精煉 {refined}）",
+        "none": "無"
+    },
+    "recordLine": "{rarity}寵物，最高 {level} 級。僅供參考，這裡不會儲存任何內容。"
+}

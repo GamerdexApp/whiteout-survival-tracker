@@ -1,0 +1,85 @@
+{
+  "nav": {
+    "main": "Principal",
+    "groups": {
+      "chief": "Chef",
+      "alliance": "Alliance",
+      "account": "Compte",
+      "planner": "Planificateur",
+      "wiki": "Wiki"
+    },
+    "items": {
+      "overview": "Vue d'ensemble",
+      "buildings": "Bâtiments",
+      "daybreakIsland": "Daybreak Island",
+      "heroes": "Héros",
+      "chiefGear": "Équipement du chef",
+      "experts": "Experts",
+      "pets": "Familiers",
+      "troops": "Troupes",
+      "research": "Recherche",
+      "alliance": "Alliance",
+      "facilities": "Installations",
+      "tech": "Technologies",
+      "resources": "Ressources",
+      "bonuses": "Bonus",
+      "vip": "VIP",
+      "skins": "Skins",
+      "events": "Événements",
+      "tundraAlbum": "Tundra Album",
+      "coreEvents": "Événements clés",
+      "dailies": "Quotidiennes",
+      "history": "Historique",
+      "wikiReference": "Référence",
+      "wikiTimeline": "Chronologie",
+      "settings": "Paramètres",
+      "chiefs": "Chefs"
+    },
+    "upgradesRunning": ", {amount} {count, plural, one {amélioration} other {améliorations}} en cours"
+  },
+  "appShell": {
+    "skipToContent": "Aller au contenu",
+    "closeMenu": "Fermer le menu"
+  },
+  "appBar": {
+    "openMenu": "Ouvrir le menu"
+  },
+  "chiefGate": {
+    "emptyTitle": "Aucun chef sélectionné",
+    "emptyDescription": "Créez un chef pour commencer le suivi. Tout reste dans ce navigateur.",
+    "newChief": "Nouveau chef"
+  },
+  "chiefSwitcher": {
+    "chiefs": "Chefs",
+    "active": "Actif",
+    "allChiefs": "Tous les chefs",
+    "newChief": "Nouveau chef",
+    "loading": "Chargement",
+    "noChiefYet": "Aucun chef pour l'instant",
+    "sectionLabel": "Chef",
+    "switchChief": "Changer de chef"
+  },
+  "footer": {
+    "tagline": "Suivez vos chefs, bâtiments, héros et recherches de Whiteout Survival au même endroit.",
+    "product": "Tracker",
+    "support": "Aide",
+    "wikiReference": "Référence du wiki",
+    "wikiTimeline": "Chronologie du wiki",
+    "backupAndData": "Sauvegarde et données",
+    "aboutApp": "À propos",
+    "disclaimerTitle": "Avertissement",
+    "disclaimer": "Cette application n'est ni affiliée à Whiteout Survival ou à Century Games, ni approuvée ou liée par eux. Toutes les marques et tous les contenus du jeu appartiennent à leurs propriétaires respectifs.",
+    "copyright": "© {year} {appName}",
+    "framework": "Créé avec le framework Gamerdex, une base commune pour des trackers de progression gratuits. Vos données restent dans votre navigateur."
+  },
+  "notFound": {
+    "title": "Cette page n'existe pas",
+    "description": "Le lien est peut-être ancien ou mal saisi. Vos chefs sont en sécurité et rien n'a été modifié.",
+    "didYouMean": "Vouliez-vous dire <link>{name}</link> ?",
+    "goToOverview": "Aller à la vue d'ensemble",
+    "jumpTo": "Ou aller à"
+  },
+  "pageHeader": {
+    "wiki": "Wiki"
+  }
+}

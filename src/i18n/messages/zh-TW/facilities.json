@@ -1,0 +1,86 @@
+{
+    "page": {
+        "title": "設施"
+    },
+    "view": {
+        "subline": "{chief} · {facilities} 個地圖設施、城堡、{strongholds} 個據點和 {fortresses} 個要塞"
+    },
+    "summary": {
+        "owned": "已擁有設施",
+        "ownedValue": "{owned} / {total}",
+        "strongholds": "據點，參考",
+        "fortresses": "要塞，參考",
+        "castle": "城堡，參考"
+    },
+    "tabs": {
+        "label": "設施檢視",
+        "facilities": "設施",
+        "fortresses": "要塞",
+        "map": "地圖"
+    },
+    "show": {
+        "label": "顯示",
+        "all": "全部",
+        "owned": "已擁有",
+        "notOwned": "未擁有"
+    },
+    "card": {
+        "owned": "已擁有 {count}",
+        "level": "{level} 級",
+        "ownedSwitch": "已擁有",
+        "switchLabel": "已擁有{facility} {level} 級",
+        "booster": "增幅",
+        "injured": "重傷",
+        "losses": "損失",
+        "ownLimit": "自有上限 {limit}。地圖上有 {spots} 個{spotWord}。",
+        "spot": "位置",
+        "spots": "位置"
+    },
+    "empty": {
+        "title": "沒有可顯示的內容",
+        "description": "沒有設施等級符合這個篩選。",
+        "reset": "顯示全部"
+    },
+    "fortress": {
+        "kind": {
+            "castle": "城堡",
+            "stronghold": "據點",
+            "fortress": "要塞"
+        },
+        "coordinates": "x {x}，y {y}",
+        "rewardsHeading": "各階段獎勵",
+        "phase": "第 {phase} 階段",
+        "noRewards": "資料包中的城堡沒有獎勵。",
+        "referenceNote": "僅供參考。城堡、據點和要塞每週都會變動，所以這裡沒有任何已擁有或追蹤的內容。",
+        "kindLabel": "種類",
+        "allKinds": "所有種類",
+        "rewardLabel": "獎勵",
+        "allRewards": "所有獎勵",
+        "shown": "顯示 {shown} / {total} 個建築",
+        "empty": "沒有符合篩選的建築。",
+        "reset": "重設篩選",
+        "filters": "篩選",
+        "filtersTitle": "篩選",
+        "filtersDescription": "依種類和獎勵篩選建築",
+        "done": "顯示 {count}"
+    },
+    "map": {
+        "highlight": "標示設施",
+        "layers": "圖層",
+        "layerFacilities": "設施",
+        "layerStrongholds": "據點",
+        "layerFortresses": "要塞",
+        "spotsHeading": "設施位置，共 {count} 個",
+        "spotLegend": "{name}（{count}）",
+        "codeHint": "代碼後面的數字是等級，例如 Co1 是 Construction 1 級。標示的設施會填滿顏色。",
+        "structures": "建築",
+        "castleStrongholdLegend": "城堡（1）與據點 S1 到 S4（{count}）",
+        "fortressLegend": "要塞 1 到 {count}",
+        "selected": "地圖上已選取",
+        "selectedNone": "請在地圖上選取城堡、據點或要塞。",
+        "mapLabel": "聯盟地圖",
+        "note": "聯盟地圖的線框圖。位置使用資料包中 {size} x {size} 網格上的 x 和 y，每個網格為 {step}。位置是設施可能出現的地方，所以不會標記已擁有的設施。資料包中沒有地形圖。",
+        "spotLabel": "{name} {level} 級，x {x}，y {y}",
+        "structureLabel": "{name}，x {x}，y {y}"
+    }
+}

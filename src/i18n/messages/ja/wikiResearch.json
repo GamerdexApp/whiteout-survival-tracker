@@ -1,0 +1,77 @@
+{
+    "line": "{tabs}タブに研究ノード{nodes}件。参考情報のみで、ここには何も保存されません。",
+    "tabsLabel": "研究のカテゴリー",
+    "tabs": {
+        "battle": "戦闘",
+        "growth": "成長",
+        "economy": "経済",
+        "t11": "T11",
+        "t12": "T12"
+    },
+    "search": {
+        "label": "検索",
+        "placeholder": "{amount}件の研究ノードを検索"
+    },
+    "filters": {
+        "tier": "ティア",
+        "allTiers": "すべて",
+        "tierOption": "ティア{tier}",
+        "troop": "部隊タイプ",
+        "allTroops": "すべて",
+        "troops": {
+            "Infantry": "歩兵",
+            "Marksman": "弓兵",
+            "Lancer": "槍兵"
+        },
+        "data": "データ",
+        "dataOptions": {
+            "all": "すべてのノード",
+            "placeholders": "プレースホルダー",
+            "missingTime": "時間なし"
+        }
+    },
+    "list": {
+        "title": "ノード",
+        "empty": "この検索に一致する研究ノードがありません。",
+        "emptyHint": "検索またはフィルターをクリアしてください。",
+        "columns": {
+            "node": "ノード",
+            "tier": "ティア",
+            "levels": "レベル",
+            "bonus": "レベル1のボーナス",
+            "time": "時間、レベル1",
+            "power": "戦力"
+        },
+        "mobileMeta": "{category}、ティア{tier}、{levels}",
+        "count": "{count, plural, other {{amount}ノード}}"
+    },
+    "levels": "{count, plural, other {{amount}レベル}}",
+    "detail": {
+        "columns": {
+            "level": "レベル",
+            "requires": "必要条件",
+            "cost": "コスト",
+            "time": "時間",
+            "bonus": "ボーナス",
+            "power": "戦力"
+        },
+        "level": "レベル{level}",
+        "none": "なし",
+        "placeholderNote": "このノードはプレースホルダーです。パッケージにコストもボーナスもありません。",
+        "requirement": {
+            "building": "{name} {level}",
+            "research": "{name}レベル{level}"
+        },
+        "levelsTitle": "レベル"
+    },
+    "view": {
+        "label": "表示",
+        "list": "リスト",
+        "tree": "ツリー"
+    },
+    "tree": {
+        "region": "{tab}の研究ツリー",
+        "openNode": "{name}、{levels}",
+        "tier": "T{tier}"
+    }
+}

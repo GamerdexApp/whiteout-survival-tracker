@@ -1,0 +1,70 @@
+{
+  "line": "{experts} esperti e {relationships} fasi di relazione. Solo riferimento, qui nulla viene salvato.",
+  "roster": {
+    "title": "Esperti",
+    "count": "{shown} esperti su {total}",
+    "search": "Cerca",
+    "searchPlaceholder": "Cerca tra {count} esperti per nome, titolo o specialità",
+    "generation": "Generazione",
+    "all": "Tutti",
+    "empty": "Nessun esperto corrisponde a questi filtri.",
+    "generationValue": "Generazione {generation}",
+    "unlock": "Sblocco: giorno {days} del server",
+    "unlockUnknown": "Sblocco:",
+    "unreleased": "Non ancora uscito"
+  },
+  "detail": {
+    "subline": "{title} · specialità {specialty} · generazione {generation}",
+    "baseBonus": "Base: {bonus}",
+    "bonus": "{stat} {value}",
+    "percentValue": "{value}%",
+    "skills": "Abilità",
+    "talent": "Talento, livello massimo {level}",
+    "affinityLevels": "Livelli di affinità",
+    "baseBonusLabel": "Bonus base",
+    "unlock": "Si sblocca al giorno {days} del server"
+  },
+  "skills": {
+    "title": "Abilità e talento",
+    "columns": {
+      "skill": "Abilità",
+      "max": "Max",
+      "effect": "Effetto",
+      "books": "Libri al massimo",
+      "exp": "EXP al massimo"
+    },
+    "talent": "{name} (talento)",
+    "none": "Nessuna",
+    "selectHint": "Seleziona un'abilità per vedere i dettagli."
+  },
+  "skillLevels": {
+    "title": "Tabella dei livelli dell'abilità",
+    "meta": "{name}, livelli da 1 a {max}",
+    "level": "Livello {level}",
+    "columns": {
+      "level": "Livello",
+      "exp": "EXP",
+      "books": "Libri"
+    },
+    "none": "Nessuno"
+  },
+  "affinity": {
+    "title": "Livelli di affinità",
+    "level": "Livello {level}",
+    "columns": {
+      "level": "Livello",
+      "required": "Affinità richiesta",
+      "bonus": "Bonus statistica",
+      "affinityPower": "Potenza di affinità",
+      "levelPower": "Potenza del livello",
+      "advancement": "Costo di avanzamento"
+    },
+    "noAdvancement": "Nessun avanzamento",
+    "startNote": "L'affinità richiesta al livello 1 è un valore iniziale di {start}. Dal livello 2 la quantità è il costo per raggiungere quel livello."
+  },
+  "relationships": {
+    "title": "Fasi di relazione",
+    "fromLevel": "dal livello {level}"
+  },
+  "recordLine": "{title}, specialità {specialty}, generazione {generation}. Solo riferimento, qui nulla viene salvato."
+}

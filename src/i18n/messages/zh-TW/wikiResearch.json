@@ -1,0 +1,77 @@
+{
+    "line": "{tabs} 個分頁共 {nodes} 個研究節點。僅供參考，這裡不會儲存任何內容。",
+    "tabsLabel": "研究分類",
+    "tabs": {
+        "battle": "戰鬥",
+        "growth": "成長",
+        "economy": "經濟",
+        "t11": "T11",
+        "t12": "T12"
+    },
+    "search": {
+        "label": "搜尋",
+        "placeholder": "搜尋 {amount} 個研究節點"
+    },
+    "filters": {
+        "tier": "階級",
+        "allTiers": "全部",
+        "tierOption": "第 {tier} 階",
+        "troop": "部隊類型",
+        "allTroops": "全部",
+        "troops": {
+            "Infantry": "步兵",
+            "Marksman": "弓兵",
+            "Lancer": "騎兵"
+        },
+        "data": "資料",
+        "dataOptions": {
+            "all": "所有節點",
+            "placeholders": "預留項目",
+            "missingTime": "缺少時間"
+        }
+    },
+    "list": {
+        "title": "節點",
+        "empty": "沒有符合這次搜尋的研究節點。",
+        "emptyHint": "請清除搜尋或篩選。",
+        "columns": {
+            "node": "節點",
+            "tier": "階級",
+            "levels": "等級數",
+            "bonus": "1 級加成",
+            "time": "時間，1 級",
+            "power": "戰力"
+        },
+        "mobileMeta": "{category}，第 {tier} 階，{levels}",
+        "count": "{count, plural, other {{amount} 個節點}}"
+    },
+    "levels": "{count, plural, other {{amount} 級}}",
+    "detail": {
+        "columns": {
+            "level": "等級",
+            "requires": "條件",
+            "cost": "花費",
+            "time": "時間",
+            "bonus": "加成",
+            "power": "戰力"
+        },
+        "level": "{level} 級",
+        "none": "無",
+        "placeholderNote": "這個節點是預留項目。資料包中沒有它的花費和加成。",
+        "requirement": {
+            "building": "{name} {level}",
+            "research": "{name} {level} 級"
+        },
+        "levelsTitle": "等級"
+    },
+    "view": {
+        "label": "檢視",
+        "list": "清單",
+        "tree": "樹狀圖"
+    },
+    "tree": {
+        "region": "{tab}研究樹",
+        "openNode": "{name}，{levels}",
+        "tier": "T{tier}"
+    }
+}

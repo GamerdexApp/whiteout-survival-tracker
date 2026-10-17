@@ -1,0 +1,165 @@
+{
+    "topBar": {
+        "navLabel": "Trang chủ",
+        "links": {
+            "how": "Cách hoạt động",
+            "features": "Tính năng",
+            "privacy": "Dữ liệu của bạn",
+            "faq": "Hỏi đáp"
+        }
+    },
+    "action": {
+        "createFirstChief": "Tạo thủ lĩnh đầu tiên",
+        "goToOverview": "Đến Tổng quan",
+        "newChief": "Thủ lĩnh mới",
+        "allChiefs": "Tất cả thủ lĩnh"
+    },
+    "hero": {
+        "label": "Whiteout Survival Tracker",
+        "title": "Theo dõi mọi thủ lĩnh. Lên kế hoạch mọi nâng cấp.",
+        "description": "Công cụ đồng hành miễn phí cho Whiteout Survival. Gom công trình, anh hùng, trang bị và nghiên cứu về một nơi, lên kế hoạch cho lần nâng cấp tiếp theo, và chạy các Sự kiện chính từ ngày đầu đến lúc lưu lịch sử.",
+        "note": "Miễn phí. Dữ liệu của bạn nằm trong trình duyệt này.",
+        "learnMore": "Tìm hiểu thêm"
+    },
+    "continue": {
+        "label": "Chào mừng quay lại",
+        "title": "Tiếp tục với {name}",
+        "chiefCount": "{count, plural, other {{amount} thủ lĩnh được lưu trong trình duyệt này}}"
+    },
+    "how": {
+        "label": "Cách hoạt động",
+        "title": "Từ thủ lĩnh đầu tiên đến lịch sử sự kiện trong bốn bước",
+        "steps": {
+            "create": {
+                "title": "Tạo thủ lĩnh",
+                "description": "Đặt một cái tên. Số máy chủ và ghi chú là tùy chọn."
+            },
+            "levels": {
+                "title": "Nhập các cấp của bạn",
+                "description": "Nhập cấp Furnace và công trình, rồi điền anh hùng, trang bị và nghiên cứu dần dần."
+            },
+            "plan": {
+                "title": "Lên kế hoạch nâng cấp",
+                "description": "Xem tài nguyên, thời gian và sức mạnh cho mục tiêu của bạn, và những gì còn thiếu."
+            },
+            "events": {
+                "title": "Chạy sự kiện của bạn",
+                "description": "Tính điểm, ghi điểm và hạng, rồi lưu sự kiện vào Lịch sử."
+            }
+        }
+    },
+    "features": {
+        "label": "Bạn làm được gì",
+        "title": "Lên kế hoạch, chơi, rồi nhìn lại",
+        "open": "Mở {page}",
+        "items": {
+            "plan": {
+                "title": "Lập kế hoạch mọi nâng cấp",
+                "description": "Đặt mục tiêu trong bảng Kế hoạch ở Công trình, Anh hùng, Trang bị Thủ lĩnh và Nghiên cứu. Xem tài nguyên, thời gian và sức mạnh cần có, với vật phẩm tăng tốc và chỉ số cộng thêm lấy từ trang Cộng thêm của bạn.",
+                "page": "Công trình"
+            },
+            "coreEvents": {
+                "title": "Bộ tính cho sự kiện chính",
+                "description": "SvS, Alliance Showdown, King of Icefield và Hall of Chief. Tính điểm cho từng hành động, cộng thêm chỉ số chuyên gia, và kiểm tra mốc điểm cùng phần thưởng hạng.",
+                "page": "Sự kiện chính"
+            },
+            "eventLog": {
+                "title": "Nhật ký sự kiện và danh sách việc hằng ngày",
+                "description": "Ghi điểm và hạng cho từng ngày của sự kiện. Danh sách việc liệt kê các hành động bạn có thể làm mỗi ngày.",
+                "page": "Sự kiện chính"
+            },
+            "history": {
+                "title": "Lịch sử: kế hoạch so với thực tế",
+                "description": "Kết thúc một sự kiện để lưu lại. So sánh kế hoạch với những gì bạn đã làm, và xem mỗi nâng cấp đã lên kế hoạch là xong hay chưa xong.",
+                "page": "Lịch sử"
+            },
+            "research": {
+                "title": "Cây nghiên cứu",
+                "description": "Growth, Economy, Battle, War Academy và các tab T12, dạng lưới hoặc dạng cây, kèm mốc mở theo tuổi máy chủ.",
+                "page": "Nghiên cứu"
+            },
+            "alliance": {
+                "title": "Công nghệ liên minh và bản đồ",
+                "description": "Theo dõi biểu ngữ, công nghệ và cơ sở liên minh, và xem bố cục lâu đài, thành trì và pháo đài.",
+                "page": "Liên minh"
+            }
+        }
+    },
+    "numbers": {
+        "title": "Những gì công cụ bao quát",
+        "buildings": "công trình có chi phí và thời gian",
+        "heroes": "anh hùng",
+        "research": "công nghệ nghiên cứu",
+        "coreEvents": "bộ tính sự kiện chính",
+        "wiki": "trang wiki tham khảo, kèm dòng thời gian"
+    },
+    "pages": {
+        "label": "Mọi trang",
+        "title": "Nhóm theo cách của game",
+        "description": "Các trang giống thanh bên trong ứng dụng.",
+        "listLabel": "Trang {group}",
+        "general": "Chung"
+    },
+    "privacy": {
+        "label": "Dữ liệu của bạn",
+        "title": "Riêng tư theo mặc định, mang đi được khi bạn cần",
+        "items": {
+            "browser": {
+                "title": "Nằm trong trình duyệt của bạn",
+                "description": "Không cần tạo tài khoản. Các thủ lĩnh được lưu trong trình duyệt này trên thiết bị này."
+            },
+            "file": {
+                "title": "Một tệp đã lưu",
+                "description": "Mọi thứ bạn nhập được giữ trong một tệp duy nhất trong trình duyệt, nên tải nhanh và không bị chia ra nhiều nơi."
+            },
+            "chiefs": {
+                "title": "Nhiều thủ lĩnh",
+                "description": "Giữ tài khoản chính và các tài khoản phụ. Chuyển đổi giữa chúng từ thanh bên."
+            },
+            "backup": {
+                "title": "Sao lưu và khôi phục",
+                "description": "Xuất dữ liệu ra tệp từ Cài đặt và nhập vào trình duyệt hoặc thiết bị khác."
+            }
+        },
+        "backupLink": "Mở Sao lưu và dữ liệu"
+    },
+    "faq": {
+        "label": "Có thắc mắc",
+        "title": "Câu hỏi thường gặp",
+        "items": {
+            "free": {
+                "question": "Có miễn phí không?",
+                "answer": "Có. Không có gì phải trả tiền và không có gì phải mở khóa."
+            },
+            "data": {
+                "question": "Dữ liệu của tôi ở đâu?",
+                "answer": "Trong trình duyệt này, ở bộ nhớ cục bộ của trang. Dữ liệu không được gửi đến máy chủ. Nếu bạn xóa dữ liệu trang này, các thủ lĩnh sẽ bị mất, nên hãy xuất bản sao lưu trước."
+            },
+            "move": {
+                "question": "Làm sao để chuyển sang thiết bị khác?",
+                "answer": "Mở Cài đặt, rồi Sao lưu và dữ liệu, và xuất một tệp sao lưu. Trên thiết bị kia, mở cùng trang này, vào Cài đặt, Sao lưu và dữ liệu, rồi nhập tệp đó."
+            },
+            "chiefs": {
+                "question": "Tôi có thể có nhiều thủ lĩnh không?",
+                "answer": "Có. Không giới hạn. Mỗi thủ lĩnh có công trình, anh hùng, nghiên cứu và sự kiện riêng, và bạn chuyển đổi giữa chúng ở thanh bên."
+            },
+            "account": {
+                "question": "Tôi có cần tài khoản hoặc tệp lưu từ game không?",
+                "answer": "Không. Bạn tự nhập các cấp của mình. Dữ liệu game về chi phí, thời gian và chỉ số đã có sẵn trong công cụ."
+            },
+            "official": {
+                "question": "Đây có phải ứng dụng chính thức không?",
+                "answer": "Không. Đây là công cụ của người hâm mộ, không chính thức. Nó không liên kết với Whiteout Survival hay Century Games. Chân trang có thông báo đầy đủ."
+            },
+            "wiki": {
+                "question": "Wiki là gì?",
+                "answer": "Một bộ trang tham khảo cho dữ liệu game, như công trình, anh hùng, thú cưng, vật phẩm và sự kiện, cùng dòng thời gian máy chủ. Bạn đọc được mà không cần tạo thủ lĩnh."
+            }
+        }
+    },
+    "closing": {
+        "title": "Bắt đầu theo dõi ngay hôm nay",
+        "description": "Thủ lĩnh đầu tiên chỉ cần một cái tên. Bạn có thể đổi mọi thứ sau.",
+        "wiki": "Xem Wiki"
+    }
+}

@@ -1,0 +1,32 @@
+{
+  "title": "핵심 이벤트로 내보내기",
+  "description": "이벤트를 고른 다음 날짜를 고르세요",
+  "events": {
+    "svs": "SvS",
+    "showdown": "Alliance Showdown",
+    "king": "King of Icefield",
+    "hall": "Hall of Chief"
+  },
+  "stepEvent": "1. 이벤트",
+  "stepDay": "{number}. 이벤트 {group} 날짜",
+  "stepDayPlain": "이벤트 날짜",
+  "stepItems": "{number}. 이 계획의 아이템",
+  "noDay": "{event}에는 이 아이템의 점수 항목이 없어요.",
+  "daysHint": "아이템을 점수로 계산하는 날짜만 표시돼요. Hall of Chief는 날짜 대신 스테이지를 보여줘요. 아이템 그룹마다 날짜를 따로 골라요.",
+  "lineEach": "{day}에 개당 {points}.",
+  "lineNotScored": "{event}에는 이 항목의 점수가 없어요.",
+  "notScored": "점수 없음",
+  "points": "{points}점",
+  "addedTo": "{event}에 추가됨",
+  "nothingScores": "선택한 날짜의 {event}에서 이 계획에 점수가 되는 항목이 없어요.",
+  "summaryTitle": "내보내기 요약",
+  "summaryHint": "점수가 되는 날짜에 모든 아이템을 사용했을 때 같은 아이템이 각 이벤트에서 받는 점수예요. 선택한 이벤트와 날짜에만 반영돼요. 핵심 이벤트 페이지에서는 직접 바꿀 수 있는 개수로 표시돼요.",
+  "selected": "선택됨",
+  "cancel": "취소",
+  "export": "{event}로 내보내기",
+  "toast": {
+    "title": "핵심 이벤트로 내보냈어요",
+    "message": "{event}에 {points}점을 추가했어요.",
+    "undo": "실행 취소"
+  }
+}

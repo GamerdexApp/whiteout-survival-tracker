@@ -1,0 +1,26 @@
+{
+    "line": "{types} 種部隊類型，每種有 {tiers} 個階級。僅供參考，這裡不會儲存到你的領主。",
+    "tiers": {
+        "heading": "部隊階級",
+        "meta": "{types} 種類型 x {tiers} 個階級 = {rows} 列",
+        "typeLabel": "部隊類型",
+        "tableLabel": "{type}階級"
+    },
+    "detail": {
+        "heading": "紀錄詳細資料",
+        "meta": "第 {tier} 階，三種類型",
+        "tableLabel": "第 {tier} 階，依部隊類型"
+    },
+    "columns": {
+        "tier": "階級",
+        "type": "類型",
+        "cost": "每名士兵花費",
+        "topCost": "階級花費",
+        "time": "訓練時間",
+        "promotion": "晉升花費"
+    },
+    "cells": {
+        "tier": "第 {tier} 階",
+        "none": "無"
+    }
+}

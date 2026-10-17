@@ -1,0 +1,70 @@
+{
+  "line": "{experts} expertos y {relationships} etapas de relación. Solo es referencia, nada de aquí se guarda.",
+  "roster": {
+    "title": "Expertos",
+    "count": "{shown} de {total} expertos",
+    "search": "Buscar",
+    "searchPlaceholder": "Busca entre {count} expertos por nombre, título o especialidad",
+    "generation": "Generación",
+    "all": "Todas",
+    "empty": "Ningún experto coincide con estos filtros.",
+    "generationValue": "Generación {generation}",
+    "unlock": "Desbloqueo: día {days} del servidor",
+    "unlockUnknown": "Desbloqueo:",
+    "unreleased": "Aún no disponible"
+  },
+  "detail": {
+    "subline": "{title} · especialidad {specialty} · generación {generation}",
+    "baseBonus": "Base: {bonus}",
+    "bonus": "{stat} {value}",
+    "percentValue": "{value}%",
+    "skills": "Habilidades",
+    "talent": "Talento, nivel máximo {level}",
+    "affinityLevels": "Niveles de afinidad",
+    "baseBonusLabel": "Bonificación base",
+    "unlock": "Se desbloquea el día {days} del servidor"
+  },
+  "skills": {
+    "title": "Habilidades y talento",
+    "columns": {
+      "skill": "Habilidad",
+      "max": "Máx.",
+      "effect": "Efecto",
+      "books": "Libros al máx.",
+      "exp": "EXP al máx."
+    },
+    "talent": "{name} (talento)",
+    "none": "Ninguna",
+    "selectHint": "Selecciona una habilidad para ver los detalles."
+  },
+  "skillLevels": {
+    "title": "Tabla de niveles de habilidad",
+    "meta": "{name}, niveles 1 a {max}",
+    "level": "Nivel {level}",
+    "columns": {
+      "level": "Nivel",
+      "exp": "EXP",
+      "books": "Libros"
+    },
+    "none": "Ninguno"
+  },
+  "affinity": {
+    "title": "Niveles de afinidad",
+    "level": "Nivel {level}",
+    "columns": {
+      "level": "Nivel",
+      "required": "Afinidad requerida",
+      "bonus": "Bonificación de estadística",
+      "affinityPower": "Poder de afinidad",
+      "levelPower": "Poder del nivel",
+      "advancement": "Costo de avance"
+    },
+    "noAdvancement": "Sin avance",
+    "startNote": "La afinidad requerida del nivel 1 es un valor inicial de {start}. Desde el nivel 2, la cantidad es el costo para llegar a ese nivel."
+  },
+  "relationships": {
+    "title": "Etapas de relación",
+    "fromLevel": "desde el nivel {level}"
+  },
+  "recordLine": "{title}, especialidad {specialty}, generación {generation}. Solo es referencia, nada de aquí se guarda."
+}

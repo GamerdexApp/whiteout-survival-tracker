@@ -1,0 +1,104 @@
+{
+  "line": "{banners} intervalos de estandartes, {facilities} instalações e {fortresses} entradas de castelo, fortes e fortalezas. Só referência, nada aqui é guardado.",
+  "filters": {
+    "search": "Pesquisar",
+    "searchPlaceholder": "Pesquisar intervalos, instalações, fortalezas",
+    "structure": "Estrutura",
+    "structures": {
+      "all": "Todas as estruturas",
+      "banners": "Estandartes",
+      "facilities": "Instalações do mapa",
+      "castle": "Castelo",
+      "stronghold": "Fortes",
+      "fortress": "Fortalezas"
+    }
+  },
+  "empty": "Nada nesta lista corresponde à pesquisa.",
+  "none": "Nenhum",
+  "banners": {
+    "title": "Custos de construção do estandarte",
+    "columns": {
+      "range": "Intervalo de níveis",
+      "min": "Mín.",
+      "max": "Máx.",
+      "cost": "Custo por nível"
+    },
+    "noCost": "Nenhum indicado",
+    "count": "{count, plural, one {{amount} intervalo} other {{amount} intervalos}}",
+    "detail": {
+      "title": "Custo do estandarte",
+      "fields": {
+        "range": "Intervalo de níveis",
+        "min": "Nível mais baixo",
+        "max": "Nível mais alto",
+        "cost": "Custo por nível"
+      }
+    }
+  },
+  "facilities": {
+    "title": "Instalações do mapa",
+    "count": "{count, plural, one {{amount} instalação} other {{amount} instalações}}",
+    "columns": {
+      "facility": "Instalação",
+      "bonus": "Bónus",
+      "level": "Nível {level}",
+      "listed": "Níveis indicados",
+      "ownLimit": "Limite próprio"
+    },
+    "cell": "{available} no mapa",
+    "listedOf": "{listed} de {total}",
+    "levelsNote": "Os dados indicam {listed} de {total} níveis desta instalação. Os níveis que não indica aparecem como Desconhecido.",
+    "detail": {
+      "title": "Níveis de {name}",
+      "level": "Nível {level}",
+      "columns": {
+        "level": "Nível",
+        "booster": "Potenciador",
+        "injured": "Gravemente feridos",
+        "losses": "Baixas",
+        "ownLimit": "Limite próprio",
+        "available": "No mapa",
+        "locations": "Localizações (x, y)"
+      },
+      "percent": "{value}%",
+      "location": "{x}, {y}"
+    }
+  },
+  "fortresses": {
+    "title": "Castelo, fortes e fortalezas",
+    "kinds": {
+      "castle": "Castelo",
+      "stronghold": "Forte",
+      "fortress": "Fortaleza"
+    },
+    "columns": {
+      "name": "Nome",
+      "kind": "Tipo",
+      "x": "X",
+      "y": "Y",
+      "phases": "Fases",
+      "phaseOne": "Recompensa da Fase 1"
+    },
+    "mobileMeta": "{kind}, x {x}, y {y}",
+    "count": "{count, plural, one {{amount} estrutura} other {{amount} estruturas}}"
+  },
+  "map": {
+    "title": "Marcador do mapa",
+    "label": "Mapa do castelo, fortes e fortalezas pelos valores x e y",
+    "note": "Castelo, fortes e fortalezas marcados pelos valores x e y num quadrado de {size} por {size}. O tamanho do quadrado é uma estimativa, o pacote de dados não tem tamanho de mapa.",
+    "legend": {
+      "castle": "Quadrado: castelo",
+      "stronghold": "Losango: forte",
+      "fortress": "Círculo: fortaleza"
+    }
+  },
+  "detail": {
+    "title": "Recompensas por fase",
+    "phases": "{count, plural, one {{amount} fase} other {{amount} fases}}",
+    "columns": {
+      "phase": "Fase",
+      "reward": "Recompensa"
+    },
+    "noRewards": "O pacote de dados não tem recompensas por fase para esta estrutura."
+  }
+}

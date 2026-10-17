@@ -1,0 +1,165 @@
+{
+    "topBar": {
+        "navLabel": "首頁",
+        "links": {
+            "how": "使用方式",
+            "features": "功能",
+            "privacy": "你的資料",
+            "faq": "常見問題"
+        }
+    },
+    "action": {
+        "createFirstChief": "建立你的第一位領主",
+        "goToOverview": "前往總覽",
+        "newChief": "新增領主",
+        "allChiefs": "所有領主"
+    },
+    "hero": {
+        "label": "Whiteout Survival Tracker",
+        "title": "追蹤每位領主，規劃每次升級。",
+        "description": "Whiteout Survival 的免費輔助工具。把建築、英雄、裝備和研究集中在同一處，規劃下一次升級，從第一天到歷史紀錄都能管理核心活動。",
+        "note": "免費。你的資料只存在這個瀏覽器中。",
+        "learnMore": "了解更多"
+    },
+    "continue": {
+        "label": "歡迎回來",
+        "title": "繼續使用 {name}",
+        "chiefCount": "{count, plural, other {這個瀏覽器已儲存 {amount} 位領主}}"
+    },
+    "how": {
+        "label": "使用方式",
+        "title": "從第一位領主到活動紀錄，只要四步",
+        "steps": {
+            "create": {
+                "title": "建立領主",
+                "description": "取個名字就好。伺服器編號和備註可以不填。"
+            },
+            "levels": {
+                "title": "設定等級",
+                "description": "輸入 Furnace 和各建築的等級，之後再慢慢補上英雄、裝備和研究。"
+            },
+            "plan": {
+                "title": "規劃升級",
+                "description": "查看達成目標所需的資源、時間和戰力，以及還缺什麼。"
+            },
+            "events": {
+                "title": "管理活動",
+                "description": "計算積分、記錄分數和名次，再把活動存入紀錄。"
+            }
+        }
+    },
+    "features": {
+        "label": "你可以做什麼",
+        "title": "先規劃，再開玩，最後回顧",
+        "open": "開啟{page}",
+        "items": {
+            "plan": {
+                "title": "規劃任何升級",
+                "description": "在建築、英雄、領主裝備和研究的規劃面板中設定目標。查看所需的資源、時間和戰力，加速道具和加成會從你的加成頁面讀取。",
+                "page": "建築"
+            },
+            "coreEvents": {
+                "title": "核心活動計算器",
+                "description": "SvS、Alliance Showdown、King of Icefield 和 Hall of Chief。計算每個行動的積分，加入專家加成，並查看門檻和名次獎勵。",
+                "page": "核心活動"
+            },
+            "eventLog": {
+                "title": "活動紀錄與每日清單",
+                "description": "記錄活動每一天的分數和名次。清單會列出你每天可以做的行動。",
+                "page": "核心活動"
+            },
+            "history": {
+                "title": "紀錄：計畫與實際對照",
+                "description": "結束活動即可儲存。比較計畫和實際執行的差異，並查看每項計畫中的升級是否完成。",
+                "page": "紀錄"
+            },
+            "research": {
+                "title": "研究樹",
+                "description": "成長、經濟、戰鬥、War Academy 和 T12 分頁，可用網格或樹狀圖查看，並依伺服器天數顯示解鎖內容。",
+                "page": "研究"
+            },
+            "alliance": {
+                "title": "聯盟科技與地圖",
+                "description": "追蹤聯盟旗幟、科技和設施，並查看城堡、據點和要塞的配置。",
+                "page": "聯盟"
+            }
+        }
+    },
+    "numbers": {
+        "title": "追蹤器涵蓋的內容",
+        "buildings": "個建築，含花費與時間",
+        "heroes": "位英雄",
+        "research": "項研究科技",
+        "coreEvents": "個核心活動計算器",
+        "wiki": "個百科參考頁面，另有時間軸"
+    },
+    "pages": {
+        "label": "所有頁面",
+        "title": "依遊戲分類整理",
+        "description": "與應用程式內側邊欄相同的頁面。",
+        "listLabel": "{group}頁面",
+        "general": "一般"
+    },
+    "privacy": {
+        "label": "你的資料",
+        "title": "預設私密，需要時可攜出",
+        "items": {
+            "browser": {
+                "title": "只存在你的瀏覽器",
+                "description": "不需要註冊帳號。你的領主資料會儲存在這部裝置的這個瀏覽器中。"
+            },
+            "file": {
+                "title": "單一儲存檔",
+                "description": "你輸入的所有內容都存在瀏覽器中的同一個儲存檔裡，載入快速，資料也不會分散。"
+            },
+            "chiefs": {
+                "title": "多位領主",
+                "description": "可同時管理主帳號和小帳。從側邊欄就能切換。"
+            },
+            "backup": {
+                "title": "備份與還原",
+                "description": "在設定中把資料匯出成檔案，再匯入到其他瀏覽器或裝置。"
+            }
+        },
+        "backupLink": "開啟備份與資料"
+    },
+    "faq": {
+        "label": "有疑問嗎",
+        "title": "常見問題",
+        "items": {
+            "free": {
+                "question": "免費嗎？",
+                "answer": "是的。不用付費，也沒有需要解鎖的內容。"
+            },
+            "data": {
+                "question": "我的資料存在哪裡？",
+                "answer": "存在這個瀏覽器中，也就是本網站的本機儲存空間。資料不會傳送到伺服器。如果你清除這個網站的資料，領主資料就會被移除，所以請先匯出備份。"
+            },
+            "move": {
+                "question": "如何換到另一部裝置？",
+                "answer": "開啟設定，進入備份與資料，匯出備份檔。在另一部裝置開啟同一個網頁，前往設定的備份與資料，再匯入該檔案。"
+            },
+            "chiefs": {
+                "question": "可以有多位領主嗎？",
+                "answer": "可以，沒有上限。每位領主都有自己的建築、英雄、研究和活動，可在側邊欄切換。"
+            },
+            "account": {
+                "question": "需要帳號或遊戲的存檔嗎？",
+                "answer": "不需要。等級由你自己輸入。花費、時間和數值等遊戲資料已內建在追蹤器中。"
+            },
+            "official": {
+                "question": "這是官方應用程式嗎？",
+                "answer": "不是。這是非官方的玩家自製工具，與 Whiteout Survival 或 Century Games 無關。完整聲明請見頁尾。"
+            },
+            "wiki": {
+                "question": "百科是什麼？",
+                "answer": "一組遊戲資料的參考頁面，例如建築、英雄、寵物、道具和活動，另有伺服器時間軸。不用建立領主也能閱讀。"
+            }
+        }
+    },
+    "closing": {
+        "title": "今天就開始追蹤",
+        "description": "建立第一位領主只需要一個名字，之後都可以修改。",
+        "wiki": "瀏覽百科"
+    }
+}

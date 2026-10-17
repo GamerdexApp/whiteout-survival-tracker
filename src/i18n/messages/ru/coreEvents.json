@@ -1,0 +1,108 @@
+{
+  "days": {
+    "day": "День {number}",
+    "battle": "Бой",
+    "range": "Дни {range}",
+    "stage": "Этап {number}"
+  },
+  "page": {
+    "title": "Главные события",
+    "subline": "{chief} · {details}"
+  },
+  "events": {
+    "svs": "SvS",
+    "showdown": "Alliance Showdown",
+    "king": "King of Icefield",
+    "hall": "Hall of Chief"
+  },
+  "tabs": {
+    "label": "Главные события"
+  },
+  "empty": {
+    "title": "Нет событий для показа",
+    "description": "Все четыре события скрыты для этого вождя. Включите их в настройках вождя.",
+    "action": "Изменить вождя"
+  },
+  "strip": {
+    "live": "Событие идёт",
+    "dates": "с {start} по {end}",
+    "noDates": "Даты задаются в журнале событий.",
+    "today": "Сегодня {day}",
+    "checklist": "Чек-лист",
+    "log": "Журнал событий"
+  },
+  "bonus": {
+    "title": "{expert}, {skill}: уровень",
+    "level": "Уровень {level}",
+    "levelWithPercent": "Уровень {level} · {percent}%",
+    "none": "Уровень не задан, бонус не добавляется.",
+    "readOnly": "Только чтение",
+    "openExperts": "Открыть экспертов",
+    "svsHelp": "Добавляет 2% за уровень к очкам дней 1–5 с округлением по каждому дню, а также дополнительные ступени к порогам очков. На фазу боя бонус не действует. Здесь только чтение, уровень задаётся на странице экспертов.",
+    "showdownHelp": "Добавляет 5% за уровень к каждому действию. Здесь только чтение, уровень задаётся на странице экспертов.",
+    "noneTitle": "Бонуса эксперта нет",
+    "kingNote": "Ни один эксперт не меняет очки King of Icefield.",
+    "hallNote": "Ни один эксперт не меняет очки Hall of Chief."
+  },
+  "daysSection": {
+    "title": "Дни",
+    "stages": "Этапы",
+    "totalPerDay": "Всего очков за день",
+    "totalPerStage": "Всего очков за этап",
+    "hallSeason": "Сезон задаётся в аккаунте, до этого действует Сезон 1.",
+    "showdownScope": "Только личные очки. Без общих очков альянса и очков победы."
+  },
+  "table": {
+    "title": "{day}: {name}",
+    "phasePreparation": "Фаза подготовки",
+    "phaseBattle": "Фаза боя",
+    "action": "Действие",
+    "pointsEach": "Очков за раз",
+    "count": "Кол-во",
+    "points": "Очки",
+    "lower": "Уменьшить количество: {action}",
+    "raise": "Увеличить количество: {action}",
+    "countLabel": "Количество: {action}",
+    "fromPlans": "{amount} из планов",
+    "base": "База {amount}",
+    "bonus": "Бонус {amount}",
+    "total": "Итого {amount}"
+  },
+  "result": {
+    "totalTitle": "Всего очков за все дни",
+    "totalTitleHall": "Всего очков за выбранный этап",
+    "baseBonus": "База {base}, бонус {bonus}",
+    "battle": "Фаза боя",
+    "battleNoBonus": "На фазу боя бонус не действует",
+    "seasonSum": "Сумма этапов сезона: {amount}. Не рейтинг.",
+    "selectedDayTotal": "{day}: {amount}",
+    "selectedDayBonus": "Бонус {percent}%"
+  },
+  "perDay": {
+    "title": "Очки по дням",
+    "titleHall": "Очки по этапам",
+    "bar": "Доля от самого большого дня: {day}"
+  },
+  "thresholds": {
+    "title": "Пороги очков",
+    "estimate": "Оценка",
+    "help": "Рубежи для дня «{day}» в сравнении с итогом дня.",
+    "reached": "Достигнуто",
+    "needs": "Нужно ещё {amount}",
+    "extraTier": "Доп. ступень {number}, от Valeria",
+    "extraTierUnknown": "Очков и награды нет в пакете",
+    "unknown": "Неизвестно",
+    "noneEvent": "В пакете нет порогов очков для этого события.",
+    "noneDay": "В пакете нет порогов очков для этого дня."
+  },
+  "ranks": {
+    "title": "Пороги мест",
+    "note": "Это рейтинг игроков. У места нет границы по очкам.",
+    "rank": "Место",
+    "reward": "Награда",
+    "gems": "{amount} Gems",
+    "unknown": "Неизвестно",
+    "notConfirmed": "Не подтверждено",
+    "noneShowdown": "В пакете нет личного рейтинга для Alliance Showdown."
+  }
+}

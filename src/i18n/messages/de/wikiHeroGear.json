@@ -1,0 +1,45 @@
+{
+    "line": "{enhancement} Verbesserungsstufen, {empowerment} Stärkungsstufen, {mastery} Zeilen Meisterschmieden und {stats} Werteeinträge. Nur Referenz, hier wird nichts gespeichert.",
+    "tabsLabel": "Tabellen Heldengear",
+    "tabs": {
+        "enhancement": "Verbesserung",
+        "empowerment": "Stärkung",
+        "mastery": "Meisterschmieden",
+        "stats": "Werte"
+    },
+    "levels": {
+        "columns": {
+            "level": "Stufe",
+            "cost": "Kosten",
+            "power": "Macht",
+            "gain": "Zuwachs zur Vorstufe",
+            "milestonePower": "Meilensteinmacht",
+            "stage": "Stage",
+            "statsUp": "Werte hoch"
+        },
+        "none": "Keine",
+        "percent": "{value}%",
+        "gainValue": "+{value}"
+    },
+    "stats": {
+        "slot": "Slot",
+        "troopType": "Truppentyp",
+        "troop": {
+            "infantry": "Infantry",
+            "lancer": "Lancer",
+            "marksman": "Marksman"
+        },
+        "note": "Werte-Stufen 101 bis 200 sind Stärkungsstufen 1 bis 100.",
+        "columns": {
+            "level": "Stufe",
+            "combat": "{stat}",
+            "health": "Gesundheit",
+            "percent": "{stat}"
+        },
+        "level": "Stufe {level}",
+        "empowermentLevel": "Stufe {level}, Stärkung {empowerment}",
+        "milestonesTitle": "Meilensteine",
+        "milestone": "Stärkungsstufe {level}, {event}: {stat}",
+        "percentValue": "{value}%"
+    }
+}

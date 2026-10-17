@@ -1,0 +1,77 @@
+{
+  "line": "{nodes} nós de investigação em {tabs} separadores. Só referência, nada aqui é guardado.",
+  "tabsLabel": "Categorias de investigação",
+  "tabs": {
+    "battle": "Battle",
+    "growth": "Growth",
+    "economy": "Economy",
+    "t11": "T11",
+    "t12": "T12"
+  },
+  "search": {
+    "label": "Pesquisar",
+    "placeholder": "Pesquisar {amount} nós de investigação"
+  },
+  "filters": {
+    "tier": "Tier",
+    "allTiers": "Todos",
+    "tierOption": "Tier {tier}",
+    "troop": "Tipo de tropa",
+    "allTroops": "Todos",
+    "troops": {
+      "Infantry": "Infantaria",
+      "Marksman": "Atirador",
+      "Lancer": "Lanceiro"
+    },
+    "data": "Dados",
+    "dataOptions": {
+      "all": "Todos os nós",
+      "placeholders": "Marcadores de posição",
+      "missingTime": "Sem tempo"
+    }
+  },
+  "list": {
+    "title": "Nós",
+    "empty": "Nenhum nó de investigação corresponde a esta pesquisa.",
+    "emptyHint": "Limpar a pesquisa ou um filtro.",
+    "columns": {
+      "node": "Nó",
+      "tier": "Tier",
+      "levels": "Níveis",
+      "bonus": "Bónus no nível 1",
+      "time": "Tempo, nível 1",
+      "power": "Poder"
+    },
+    "mobileMeta": "{category}, tier {tier}, {levels}",
+    "count": "{count, plural, one {{amount} nó} other {{amount} nós}}"
+  },
+  "levels": "{count, plural, one {{amount} nível} other {{amount} níveis}}",
+  "detail": {
+    "columns": {
+      "level": "Nível",
+      "requires": "Requisitos",
+      "cost": "Custo",
+      "time": "Tempo",
+      "bonus": "Bónus",
+      "power": "Poder"
+    },
+    "level": "Nível {level}",
+    "none": "Nenhum",
+    "placeholderNote": "Este nó é um marcador de posição. O pacote de dados não tem custo nem bónus para ele.",
+    "requirement": {
+      "building": "{name} {level}",
+      "research": "{name} nível {level}"
+    },
+    "levelsTitle": "Níveis"
+  },
+  "view": {
+    "label": "Vista",
+    "list": "Lista",
+    "tree": "Árvore"
+  },
+  "tree": {
+    "region": "Árvore de investigação {tab}",
+    "openNode": "{name}, {levels}",
+    "tier": "T{tier}"
+  }
+}

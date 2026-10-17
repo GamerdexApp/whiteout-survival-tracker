@@ -1,0 +1,85 @@
+{
+  "nav": {
+    "main": "主菜单",
+    "groups": {
+      "chief": "领主",
+      "alliance": "联盟",
+      "account": "账号",
+      "planner": "规划",
+      "wiki": "百科"
+    },
+    "items": {
+      "overview": "总览",
+      "buildings": "建筑",
+      "daybreakIsland": "黎明岛",
+      "heroes": "英雄",
+      "chiefGear": "领主装备",
+      "experts": "专家",
+      "pets": "宠物",
+      "troops": "部队",
+      "research": "研究",
+      "alliance": "联盟",
+      "facilities": "设施",
+      "tech": "科技",
+      "resources": "资源",
+      "bonuses": "加成",
+      "vip": "VIP",
+      "skins": "皮肤",
+      "events": "活动",
+      "tundraAlbum": "冰原相册",
+      "coreEvents": "核心活动",
+      "dailies": "每日任务",
+      "history": "历史",
+      "wikiReference": "资料",
+      "wikiTimeline": "时间线",
+      "settings": "设置",
+      "chiefs": "领主"
+    },
+    "upgradesRunning": "，{count, plural, other {{amount}项升级进行中}}"
+  },
+  "appShell": {
+    "skipToContent": "跳到内容",
+    "closeMenu": "关闭菜单"
+  },
+  "appBar": {
+    "openMenu": "打开菜单"
+  },
+  "chiefGate": {
+    "emptyTitle": "未选择领主",
+    "emptyDescription": "创建一个领主即可开始记录。所有数据都保存在此浏览器中。",
+    "newChief": "新建领主"
+  },
+  "chiefSwitcher": {
+    "chiefs": "领主",
+    "active": "当前",
+    "allChiefs": "全部领主",
+    "newChief": "新建领主",
+    "loading": "加载中",
+    "noChiefYet": "还没有领主",
+    "sectionLabel": "领主",
+    "switchChief": "切换领主"
+  },
+  "footer": {
+    "tagline": "在一处记录你的 Whiteout Survival 领主、建筑、英雄和研究。",
+    "product": "工具",
+    "support": "支持",
+    "wikiReference": "百科资料",
+    "wikiTimeline": "百科时间线",
+    "backupAndData": "备份与数据",
+    "aboutApp": "关于",
+    "disclaimerTitle": "免责声明",
+    "disclaimer": "本应用与 Whiteout Survival 或 Century Games 无任何隶属、认可或关联关系。所有商标和游戏内容均归其各自所有者所有。",
+    "copyright": "© {year} {appName}",
+    "framework": "基于 Gamerdex 框架构建，这是免费游戏进度追踪工具的共用基础。你的数据保存在你的浏览器中。"
+  },
+  "notFound": {
+    "title": "此页面不存在",
+    "description": "链接可能已过期或输入有误。你的领主安然无恙，没有任何改动。",
+    "didYouMean": "你是想打开<link>{name}</link>吗？",
+    "goToOverview": "前往总览",
+    "jumpTo": "或跳转到"
+  },
+  "pageHeader": {
+    "wiki": "百科"
+  }
+}

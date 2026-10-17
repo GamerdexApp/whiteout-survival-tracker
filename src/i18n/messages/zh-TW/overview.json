@@ -1,0 +1,231 @@
+{
+    "page": {
+        "title": "總覽"
+    },
+    "header": {
+        "state": "州 {number}",
+        "furnace": "Furnace {level}",
+        "serverAge": "伺服器約開服 {days} 天",
+        "derived": "整合自你的其他頁面"
+    },
+    "tiles": {
+        "furnace": {
+            "label": "Furnace",
+            "steps": "第 {order} 步，共 {total} 步",
+            "unknown": "未知",
+            "unknownHint": "請在建築頁面設定 Furnace"
+        },
+        "dailies": {
+            "label": "每日任務",
+            "value": "{done} / {total}",
+            "tasks": "今日已完成的我的任務",
+            "missions": "已完成的遊戲內任務"
+        },
+        "events": {
+            "label": "活動",
+            "live": "{amount} 個進行中",
+            "coreDay": "{event} {day}",
+            "moreThisWeek": "本週還有 {amount} 個",
+            "noneThisWeek": "本週沒有"
+        },
+        "skins": {
+            "label": "外觀",
+            "value": "{owned} / {total}",
+            "hint": "已擁有外觀"
+        },
+        "vip": {
+            "label": "VIP",
+            "value": "VIP {level}",
+            "unknown": "未知",
+            "hint": "依你的 VIP 經驗值",
+            "unknownHint": "請在 VIP 頁面輸入 VIP 經驗值"
+        },
+        "prosperity": {
+            "label": "島嶼繁榮度",
+            "possible": "上限 {max}",
+            "locked": "已鎖定",
+            "lockedHint": "需要 Furnace {level}"
+        },
+        "generation": {
+            "label": "英雄世代",
+            "allUnlocked": "所有世代皆已解鎖",
+            "shouldBeOpen": "第 {next} 世代應已開放",
+            "onDay": "第 {next} 世代於開服第 {day} 天",
+            "inDays": "第 {next} 世代約 {days} 天後"
+        }
+    },
+    "events": {
+        "title": "活動",
+        "openCalendar": "開啟日曆",
+        "liveNow": "進行中",
+        "liveBadge": "進行中",
+        "nextUp": "接下來，來自你的活動頁面",
+        "coreLine": "第 {day} 天，共 {count} 天，{name}。核心活動",
+        "runLine": "{length}。進行中",
+        "empty": "尚未新增活動",
+        "addEvent": "新增活動",
+        "noLive": "目前沒有進行中的活動。"
+    },
+    "coreToday": {
+        "title": "今日{event}",
+        "open": "核心活動",
+        "dayLine": "{day}，{name}",
+        "plan": "今日計畫 {points} 分",
+        "checklist": "清單",
+        "done": "已完成 {done} / {total}",
+        "progress": "清單進度",
+        "noActions": "今日沒有規劃行動。",
+        "castleSignedUp": "已報名 {day} 的城堡職位",
+        "castleOpen": "報名 {day} 的城堡職位",
+        "logLocked": "活動紀錄中有 {locked} / {total} 天已鎖定。",
+        "todayLocked": "{day} 已鎖定。",
+        "todayOpen": "{day} 尚未記錄。",
+        "openChecklist": "開啟清單",
+        "openLog": "開啟活動紀錄"
+    },
+    "queues": {
+        "title": "進行中的佇列",
+        "running": "{count} 個進行中",
+        "construction": "建造 {number}",
+        "researchMain": "研究",
+        "researchWarAcademy": "War Academy",
+        "training": "訓練 {name}",
+        "learning": "學習",
+        "task": {
+            "construction": "{name} 升至 {level}",
+            "research": "{name} 升至 {level} 級",
+            "training": "{tier} 部隊",
+            "learning": "{name}，{skill}"
+        },
+        "idle": "閒置",
+        "idleBuildings": "閒置，請在建築頁面按「開始升級」",
+        "idleResearch": "閒置，請在研究頁面按「開始升級」",
+        "progress": "{title}的進度"
+    },
+    "lastResult": {
+        "title": "上次活動成績",
+        "open": "在紀錄中開啟",
+        "days": "第 1 到 5 天。戰鬥階段另外計算。",
+        "plan": "計畫",
+        "actual": "實際",
+        "difference": "差異",
+        "overall": "總排名",
+        "alliance": "聯盟排名",
+        "upgrades": "已完成的計畫升級",
+        "upgradesOf": "{done} / {total}"
+    },
+    "server": {
+        "title": "伺服器天數",
+        "edit": "編輯領主",
+        "age": "約 {days} 天，誤差 ±{tolerance}",
+        "unknown": "未知。請在編輯領主中加入伺服器開服日期。",
+        "fromDate": "依伺服器開服日期 {date}。",
+        "warAcademy": "War Academy 研究",
+        "t12": "T12 研究",
+        "open": "已開放",
+        "opensIn": "約 {days} 天後開放",
+        "unknownUnlock": "未知",
+        "heroes": "已解鎖英雄至",
+        "generation": "第 {number} 世代",
+        "estimate": "解鎖天數來自伺服器時間軸。如果你的伺服器略有差異，請在編輯領主中修改。",
+        "areas": {
+            "fireCrystal": "Fire Crystal 等級",
+            "pets": "寵物",
+            "experts": "專家"
+        },
+        "fcUpTo": "最高 {level}",
+        "nothingYet": "尚無",
+        "countOf": "已解鎖 {unlocked} / {total}",
+        "allUnlocked": "全部已解鎖。",
+        "generationName": "第 {number} 世代",
+        "allGenerations": "所有世代皆已解鎖。",
+        "next": {
+            "withDate": "下一個：{names}，開服第 {day} 天，{date}。約 {days} 天後。",
+            "noDate": "下一個：{names}，開服第 {day} 天。約 {days} 天後。",
+            "unknownAge": "下一個：{names}，開服第 {day} 天。",
+            "passed": "依你的伺服器天數，{names} 應已開放（開服第 {day} 天）。請在編輯領主中調高設定。"
+        }
+    },
+    "dailies": {
+        "title": "今日每日任務",
+        "open": "開啟每日任務",
+        "activeness": "活躍度 {now} / {top}",
+        "activenessBar": "今日活躍度",
+        "missions": "遊戲內任務：已完成 {done} / {total}",
+        "tasks": "我的任務 {done} / {total}",
+        "tasksBar": "今日已完成的我的任務",
+        "stillOpen": "我的任務中尚未完成的，前 {shown} 項，共 {total} 項",
+        "allDone": "今日我的任務已全部完成。",
+        "noTasks": "我的任務中還沒有任務。"
+    },
+    "planner": {
+        "title": "規劃缺口",
+        "short": "缺 {amount}",
+        "covered": "沒有缺口",
+        "goals": "目標來自{pages}。花費來自資料包，庫存來自資源。",
+        "noGoals": "尚未設定目標。請在建築、研究等頁面用「規劃」設定目標。",
+        "pages": {
+            "buildings": "建築",
+            "research": "研究",
+            "heroes": "英雄",
+            "troops": "部隊",
+            "pets": "寵物",
+            "chiefGear": "領主裝備",
+            "chiefCharms": "領主護符"
+        },
+        "separator": "、",
+        "line": "需要 {need} · 持有 {have}",
+        "shortBy": "缺 {amount}",
+        "enough": "足夠",
+        "updateStock": "在資源頁面更新庫存",
+        "incomplete": "資料包中有目標等級的花費為未知，因此這些合計不完整。"
+    },
+    "progress": {
+        "title": "各項進度",
+        "hint": "已擁有或已升級的數量，對照資料包總數",
+        "count": "{owned} / {total}",
+        "furnace": "Furnace",
+        "furnaceOf": "{level} / {max}",
+        "furnaceUnknown": "未知",
+        "areas": {
+            "buildings": "建築",
+            "heroes": "英雄",
+            "chiefGear": "領主裝備",
+            "chiefCharms": "領主護符",
+            "experts": "專家",
+            "pets": "寵物",
+            "research": "研究",
+            "allianceTech": "聯盟科技",
+            "skins": "外觀"
+        },
+        "locked": {
+            "daybreakIsland": "破曉島",
+            "requirement": "已鎖定。需要 Furnace {level}，還差 {count, plural, other {{amount} 級}}"
+        }
+    },
+    "power": {
+        "title": "戰力",
+        "total": "總戰力",
+        "complete": "將目前戰力與各組在解鎖設定所開放的內容中，全部升到最高等級時能提供的最大戰力相比。沒有上限的組別依現況計算。",
+        "incomplete": "同樣的比較方式。{count, plural, other {資料中有 {amount} 項沒有戰力值}}，{count, plural, other {未計入}}。",
+        "groupWithoutValue": "資料中有 {count, plural, other {{amount} 項}}沒有戰力值",
+        "groups": {
+            "buildings": "建築",
+            "research": "研究",
+            "heroes": "英雄",
+            "heroGear": "英雄裝備",
+            "chiefGear": "領主裝備",
+            "chiefCharms": "領主護符",
+            "experts": "專家",
+            "pets": "寵物",
+            "troops": "部隊"
+        },
+        "ofPossible": "上限 {possible}",
+        "totalProgress": "總戰力與最大可能值的比較",
+        "percentOfPossible": "最大可能值的 {percent}%",
+        "rowOfPossible": "{power} / {possible}",
+        "progress": "{group}戰力與最大可能值的比較",
+        "noMaximum": "沒有上限，取決於你輸入的內容",
+        "noCapNote": "部隊和英雄裝備沒有上限，所以多訓練部隊、提升英雄裝備後，你的總戰力可能超過可能總值。兩者在可能總值中都依現況計算。"
+    }
+}

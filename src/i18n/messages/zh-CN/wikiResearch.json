@@ -1,0 +1,77 @@
+{
+  "line": "{tabs}个标签页共{nodes}个研究节点。仅供参考，这里的内容不会保存。",
+  "tabsLabel": "研究分类",
+  "tabs": {
+    "battle": "战斗",
+    "growth": "成长",
+    "economy": "经济",
+    "t11": "T11",
+    "t12": "T12"
+  },
+  "search": {
+    "label": "搜索",
+    "placeholder": "搜索{amount}个研究节点"
+  },
+  "filters": {
+    "tier": "阶",
+    "allTiers": "全部",
+    "tierOption": "{tier}阶",
+    "troop": "兵种",
+    "allTroops": "全部",
+    "troops": {
+      "Infantry": "盾兵",
+      "Marksman": "弓兵",
+      "Lancer": "矛兵"
+    },
+    "data": "数据",
+    "dataOptions": {
+      "all": "全部节点",
+      "placeholders": "占位项",
+      "missingTime": "缺少时间"
+    }
+  },
+  "list": {
+    "title": "节点",
+    "empty": "没有符合此搜索的研究节点。",
+    "emptyHint": "清除搜索或筛选。",
+    "columns": {
+      "node": "节点",
+      "tier": "阶",
+      "levels": "等级数",
+      "bonus": "1 级加成",
+      "time": "时间，1 级",
+      "power": "战力"
+    },
+    "mobileMeta": "{category}，{tier}阶，{levels}",
+    "count": "{count, plural, other {{amount}个节点}}"
+  },
+  "levels": "{count, plural, other {{amount}级}}",
+  "detail": {
+    "columns": {
+      "level": "等级",
+      "requires": "要求",
+      "cost": "费用",
+      "time": "时间",
+      "bonus": "加成",
+      "power": "战力"
+    },
+    "level": "{level}级",
+    "none": "无",
+    "placeholderNote": "此节点是占位项。数据包中没有它的费用和加成。",
+    "requirement": {
+      "building": "{name} {level}",
+      "research": "{name} {level}级"
+    },
+    "levelsTitle": "等级"
+  },
+  "view": {
+    "label": "视图",
+    "list": "列表",
+    "tree": "树状"
+  },
+  "tree": {
+    "region": "{tab}研究树",
+    "openNode": "{name}，{levels}",
+    "tier": "T{tier}"
+  }
+}

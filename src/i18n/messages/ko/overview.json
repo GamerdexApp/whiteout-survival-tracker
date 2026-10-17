@@ -1,0 +1,231 @@
+{
+  "page": {
+    "title": "개요"
+  },
+  "header": {
+    "state": "{number}번 서버",
+    "furnace": "Furnace {level}",
+    "serverAge": "서버 경과일 약 {days}일",
+    "derived": "다른 페이지에서 가져온 값"
+  },
+  "tiles": {
+    "furnace": {
+      "label": "Furnace",
+      "steps": "{total}단계 중 {order}",
+      "unknown": "알 수 없음",
+      "unknownHint": "건물에서 Furnace를 설정하세요"
+    },
+    "dailies": {
+      "label": "일일 과제",
+      "value": "{done} / {total}",
+      "tasks": "오늘 완료한 내 작업",
+      "missions": "완료한 게임 내 임무"
+    },
+    "events": {
+      "label": "이벤트",
+      "live": "{amount}개 진행 중",
+      "coreDay": "{event} {day}",
+      "moreThisWeek": "이번 주 {amount}개 더",
+      "noneThisWeek": "이번 주 없음"
+    },
+    "skins": {
+      "label": "스킨",
+      "value": "{owned} / {total}",
+      "hint": "보유한 스킨"
+    },
+    "vip": {
+      "label": "VIP",
+      "value": "VIP {level}",
+      "unknown": "알 수 없음",
+      "hint": "VIP 경험치 기준",
+      "unknownHint": "VIP에서 VIP 경험치를 입력하세요"
+    },
+    "prosperity": {
+      "label": "섬 번영도",
+      "possible": "최대 {max} 중",
+      "locked": "잠김",
+      "lockedHint": "Furnace {level} 필요"
+    },
+    "generation": {
+      "label": "영웅 세대",
+      "allUnlocked": "모든 세대 해금",
+      "shouldBeOpen": "{next}세대가 열려 있어야 해요",
+      "onDay": "서버 {day}일차에 {next}세대",
+      "inDays": "약 {days}일 후 {next}세대"
+    }
+  },
+  "events": {
+    "title": "이벤트",
+    "openCalendar": "캘린더 열기",
+    "liveNow": "진행 중",
+    "liveBadge": "진행 중",
+    "nextUp": "다음 예정, 이벤트 페이지 기준",
+    "coreLine": "{count}일 중 {day}, {name}. 핵심 이벤트",
+    "runLine": "{length}. 진행 중",
+    "empty": "추가된 이벤트 없음",
+    "addEvent": "이벤트 추가",
+    "noLive": "지금 진행 중인 것이 없어요."
+  },
+  "coreToday": {
+    "title": "오늘의 {event}",
+    "open": "핵심 이벤트",
+    "dayLine": "{day}, {name}",
+    "plan": "오늘 계획 {points}점",
+    "checklist": "체크리스트",
+    "done": "{total}개 중 {done}개 완료",
+    "progress": "체크리스트 진행도",
+    "noActions": "오늘 계획된 행동이 없어요.",
+    "castleSignedUp": "{day} 성채 직책 신청 완료",
+    "castleOpen": "{day} 성채 직책 신청",
+    "logLocked": "이벤트 로그에서 {total}일 중 {locked}일이 잠겨 있어요.",
+    "todayLocked": "{day}은(는) 잠겨 있어요.",
+    "todayOpen": "{day}은(는) 아직 기록되지 않았어요.",
+    "openChecklist": "체크리스트 열기",
+    "openLog": "이벤트 로그 열기"
+  },
+  "queues": {
+    "title": "진행 중인 대기열",
+    "running": "{count}개 진행 중",
+    "construction": "건설 {number}",
+    "researchMain": "연구",
+    "researchWarAcademy": "전쟁 아카데미",
+    "training": "훈련 {name}",
+    "learning": "학습",
+    "task": {
+      "construction": "{name} {level}까지",
+      "research": "{name} {level}레벨까지",
+      "training": "{tier} 병력",
+      "learning": "{name}, {skill}"
+    },
+    "idle": "대기 중",
+    "idleBuildings": "대기 중, 건물에서 업그레이드 시작을 누르세요",
+    "idleResearch": "대기 중, 연구에서 업그레이드 시작을 누르세요",
+    "progress": "{title} 진행도"
+  },
+  "lastResult": {
+    "title": "마지막 이벤트 결과",
+    "open": "기록에서 열기",
+    "days": "1~5일차. 전투 단계는 따로 보관해요.",
+    "plan": "계획",
+    "actual": "실제",
+    "difference": "차이",
+    "overall": "전체 순위",
+    "alliance": "연맹 순위",
+    "upgrades": "완료한 계획 업그레이드",
+    "upgradesOf": "{total}개 중 {done}개"
+  },
+  "server": {
+    "title": "서버 경과일",
+    "edit": "영주 편집",
+    "age": "약 {days}일, 오차 {tolerance}",
+    "unknown": "알 수 없음. 영주 편집에서 서버 시작일을 추가하세요.",
+    "fromDate": "서버 시작일 {date} 기준.",
+    "warAcademy": "전쟁 아카데미 연구",
+    "t12": "T12 연구",
+    "open": "열림",
+    "opensIn": "약 {days}일 후 열림",
+    "unknownUnlock": "알 수 없음",
+    "heroes": "해금된 영웅 세대",
+    "generation": "{number}세대",
+    "estimate": "해금 일차는 서버 타임라인에서 가져와요. 서버와 조금 다르면 영주 편집에서 바꾸세요.",
+    "areas": {
+      "fireCrystal": "Fire Crystal 레벨",
+      "pets": "펫",
+      "experts": "전문가"
+    },
+    "fcUpTo": "{level}까지",
+    "nothingYet": "아직 없음",
+    "countOf": "{total}개 중 {unlocked}개 해금",
+    "allUnlocked": "모두 해금됐어요.",
+    "generationName": "{number}세대",
+    "allGenerations": "모든 세대가 해금됐어요.",
+    "next": {
+      "withDate": "다음: {names}, 서버 {day}일차, {date}. 약 {days}일 후.",
+      "noDate": "다음: {names}, 서버 {day}일차. 약 {days}일 후.",
+      "unknownAge": "다음: {names}, 서버 {day}일차.",
+      "passed": "{names}은(는) 서버 경과일 기준으로 이미 열려 있어야 해요. 서버 {day}일차예요. 영주 편집에서 설정을 올리세요."
+    }
+  },
+  "dailies": {
+    "title": "오늘의 일일 과제",
+    "open": "일일 과제 열기",
+    "activeness": "활동도 {top} 중 {now}",
+    "activenessBar": "오늘 활동도",
+    "missions": "게임 내 임무: {total}개 중 {done}개 완료",
+    "tasks": "내 작업 {total}개 중 {done}개",
+    "tasksBar": "오늘 완료한 내 작업",
+    "stillOpen": "내 작업에서 아직 남음, {total}개 중 처음 {shown}개",
+    "allDone": "내 작업의 모든 작업을 오늘 완료했어요.",
+    "noTasks": "내 작업에 아직 작업이 없어요."
+  },
+  "planner": {
+    "title": "플래너 부족분",
+    "short": "{amount} 부족",
+    "covered": "부족분 없음",
+    "goals": "{pages}의 목표 기준이에요. 비용은 패키지, 재고는 자원에서 가져와요.",
+    "noGoals": "설정된 목표가 없어요. 건물, 연구 등 다른 페이지의 계획에서 목표를 설정하세요.",
+    "pages": {
+      "buildings": "건물",
+      "research": "연구",
+      "heroes": "영웅",
+      "troops": "병력",
+      "pets": "펫",
+      "chiefGear": "영주 장비",
+      "chiefCharms": "영주 참"
+    },
+    "separator": ", ",
+    "line": "필요 {need} · 보유 {have}",
+    "shortBy": "{amount} 부족",
+    "enough": "충분",
+    "updateStock": "자원에서 재고 업데이트",
+    "incomplete": "목표 레벨의 비용이 패키지에 없어서 이 합계는 불완전해요."
+  },
+  "progress": {
+    "title": "영역별 진행도",
+    "hint": "패키지 전체 대비 보유 또는 레벨",
+    "count": "{owned} / {total}",
+    "furnace": "Furnace",
+    "furnaceOf": "{max} 중 {level}",
+    "furnaceUnknown": "알 수 없음",
+    "areas": {
+      "buildings": "건물",
+      "heroes": "영웅",
+      "chiefGear": "영주 장비",
+      "chiefCharms": "영주 참",
+      "experts": "전문가",
+      "pets": "펫",
+      "research": "연구",
+      "allianceTech": "연맹 기술",
+      "skins": "스킨"
+    },
+    "locked": {
+      "daybreakIsland": "Daybreak Island",
+      "requirement": "잠김. Furnace {level} 필요, {count, plural, other {{amount}레벨}} 남음"
+    }
+  },
+  "power": {
+    "title": "전투력",
+    "total": "총 전투력",
+    "complete": "해금 설정으로 열린 콘텐츠에서 모든 것이 최고 레벨일 때 각 그룹이 낼 수 있는 최대치와 현재 전투력을 비교해요. 최대치가 없는 그룹은 있는 그대로 계산해요.",
+    "incomplete": "같은 비교예요. {count, plural, other {항목 {amount}개}}에는 데이터에 전투력 값이 없어서 {count, plural, other {계산에 포함되지 않아요.}}",
+    "groupWithoutValue": "{count, plural, other {항목 {amount}개}}에 데이터상 전투력 값이 없어요",
+    "groups": {
+      "buildings": "건물",
+      "research": "연구",
+      "heroes": "영웅",
+      "heroGear": "영웅 장비",
+      "chiefGear": "영주 장비",
+      "chiefCharms": "영주 참",
+      "experts": "전문가",
+      "pets": "펫",
+      "troops": "병력"
+    },
+    "ofPossible": "최대 {possible} 중",
+    "totalProgress": "최대치 대비 총 전투력",
+    "percentOfPossible": "최대치의 {percent}%",
+    "rowOfPossible": "{possible} 중 {power}",
+    "progress": "최대치 대비 {group} 전투력",
+    "noMaximum": "최대치 없음, 입력한 값에 따라 달라요",
+    "noCapNote": "병력과 영웅 장비에는 상한이 없어서 병력을 더 훈련하고 영웅 장비를 올리면 총 전투력이 가능한 합계를 넘을 수 있어요. 둘 다 가능한 합계에는 있는 그대로 포함돼요."
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "page": {
+    "title": "Álbum da Tundra"
+  },
+  "view": {
+    "subline": "{chief} · {details} · {complete} de {total} álbuns completos"
+  },
+  "summary": {
+    "label": "Álbuns completos",
+    "value": "{done} de {total}",
+    "progress": "Álbuns completos",
+    "inData": "{shown} de {all} álbuns estão nos dados"
+  },
+  "buffs": {
+    "title": "Buffs valendo agora",
+    "derived": "Calculado",
+    "none": "Nenhum álbum está completo ainda, então nenhum buff do Álbum da Tundra vale.",
+    "note": "Só os álbuns completos contam. Esses buffs alimentam a página <link>Bônus</link>."
+  },
+  "album": {
+    "status": {
+      "complete": "Completo",
+      "inProgress": "Em andamento"
+    },
+    "buffWhenComplete": "Buff ao completar",
+    "puzzlesDone": "Quebra-cabeças feitos",
+    "puzzlesValue": "{done} de {total}",
+    "puzzlesProgress": "Quebra-cabeças feitos de {album}",
+    "completionRewards": "Recompensas de conclusão",
+    "markComplete": "Marcar álbum como completo",
+    "notCounting": "Ainda não vale. {buff} só conta na página Bônus quando todos os {total} quebra-cabeças estão feitos. Marcar álbum como completo define todos os {total} quebra-cabeças e mostra um aviso com Desfazer.",
+    "counting": "Valendo agora. {buff} está na página Bônus. Desmarcar um quebra-cabeça tira o buff de novo.",
+    "piecesValue": "{collected} de {total} peças coletadas"
+  },
+  "puzzle": {
+    "pieces": "{count, plural, one {{amount} peça} other {{amount} peças}}, estrelas 1 a 5: {split}",
+    "reward": "Recompensa",
+    "done": "Quebra-cabeça feito, todas as peças coletadas",
+    "doneFor": "Feito, {puzzle}",
+    "collectedLabel": "Peças coletadas",
+    "collected": "{collected} de {total}",
+    "pieceLabel": "{name}, {stars} estrelas",
+    "pieceHint": "Selecione as peças que você tem. Marcar o quebra-cabeça como feito coleta todas.",
+    "allCollected": "O quebra-cabeça está feito, então todas as peças estão coletadas."
+  },
+  "reward": {
+    "line": "{amount} {item}",
+    "sized": "{amount} {item} ({size})",
+    "unknownItem": "Item desconhecido"
+  },
+  "toast": {
+    "markedTitle": "{album} marcado como completo",
+    "markedMessage": "Todos os {total} quebra-cabeças estão feitos.",
+    "unmarkedTitle": "{puzzle} desmarcado",
+    "unmarkedMessage": "{album} voltou a estar em andamento e o buff saiu de Bônus.",
+    "undo": "Desfazer"
+  },
+  "notInData": "Os outros {count} dos {total} Álbuns da Tundra ainda não estão nos dados. Eles são adicionados quando o pacote de dados os tiver.",
+  "pieces": {
+    "label": "Peças coletadas",
+    "value": "{collected} de {available}",
+    "progress": "Peças coletadas em todos os álbuns",
+    "viewRewards": "Ver recompensas das peças"
+  },
+  "rewardsFlyout": {
+    "title": "Recompensas por quantidade de peças",
+    "description": "As recompensas que você recebe conforme as peças coletadas em todos os álbuns somam",
+    "close": "Fechar",
+    "collected": "Peças coletadas",
+    "collectedValue": "{collected} de {available}",
+    "progress": "Peças coletadas em todos os álbuns",
+    "reached": "{reached} de {all} recompensas por quantidade de peças alcançadas",
+    "next": "A próxima recompensa é com {pieces} peças, faltam {missing} para coletar.",
+    "allReached": "Todas as recompensas por quantidade de peças nos dados foram alcançadas.",
+    "totalSoFar": "Recompensas ganhas até agora",
+    "tree": "Recompensas por peças coletadas",
+    "tier": "Recompensa {tier} com {pieces} peças",
+    "stateReached": "Coletada",
+    "stateNext": "Próxima, faltam {missing}",
+    "stateLater": "faltam {missing}"
+  },
+  "picker": {
+    "label": "Álbuns",
+    "title": "Álbuns",
+    "complete": "Álbum completo",
+    "puzzles": "{done} de {total} quebra-cabeças",
+    "pieces": "{collected} de {total} peças",
+    "piecesProgress": "Peças coletadas de {album}"
+  }
+}

@@ -1,0 +1,102 @@
+{
+    "page": { "title": "履歴" },
+    "events": {
+        "svs": "SvS",
+        "showdown": "Alliance Showdown",
+        "king": "King of Icefield",
+        "hall": "Hall of Chief"
+    },
+    "title": {
+        "dated": "{event}、{start}から{end}まで",
+        "undated": "{event}"
+    },
+    "ended": "{date}に終了",
+    "tabs": { "label": "イベントで絞り込み", "all": "すべてのイベント" },
+    "list": {
+        "intro": "イベントログから終了したイベントを新しい順に表示します。スコアはSvSでは1日目から5日目の分で、バトルフェーズは別に保持されます。イベントを開くと、プランと実績の比較、予定したアップグレードを確認できます。",
+        "event": "イベント",
+        "plan": "プラン",
+        "actual": "実績",
+        "diff": "差",
+        "rank": "ランク",
+        "alliance": "同盟",
+        "rankLine": "ランク{rank}、同盟{alliance}",
+        "open": "開く",
+        "openEvent": "{name}を開く",
+        "none": "この種類の終了したイベントはまだありません。",
+        "diffWithPercent": "{amount}（{percent}%）"
+    },
+    "empty": {
+        "title": "イベントはまだありません",
+        "description": "コアイベントのイベントログから終了したイベントは、プランと結果とともにここに保存されます。",
+        "action": "コアイベントを開く"
+    },
+    "notFound": {
+        "title": "イベントが見つかりません",
+        "description": "このイベントは、使用中のチーフの履歴にありません。削除されたか、コアイベントで非表示になっている可能性があります。",
+        "action": "履歴に戻る"
+    },
+    "unknown": "未設定",
+    "belowPlan": "プラン未達",
+    "atOrAbovePlan": "プラン達成",
+    "breadcrumb": { "label": "パンくずリスト" },
+    "tiles": {
+        "plan": "プラン",
+        "actual": "実績",
+        "difference": "差",
+        "overall": "総合",
+        "alliance": "同盟",
+        "days": "1日目から5日目",
+        "rank": "ランク",
+        "rankDays": "ランク、1日目から5日目",
+        "percent": "{percent}%"
+    },
+    "compare": {
+        "title": "プランと実績の比較",
+        "titleDays": "プランと実績の比較、1日目から5日目",
+        "day": "日",
+        "plan": "プラン",
+        "actual": "実績",
+        "diff": "差",
+        "rank": "ランク",
+        "ally": "同盟",
+        "total": "合計",
+        "share": "プランの{percent}%",
+        "shareLine": "プランの{percent}%、ランク{rank}、同盟{ally}",
+        "barLabel": "{day}、プランに対する実績の割合"
+    },
+    "battle": {
+        "title": "バトルフェーズ",
+        "note": "独立したスコアとランクです。1日目から5日目の合計には加算されません。"
+    },
+    "upgrades": {
+        "title": "予定したアップグレード",
+        "titleCount": "予定したアップグレード、{count}件",
+        "summary": "このイベントのプランにあるアップグレードを種類別にまとめています。{count}件中{done}件を実施しました。",
+        "summaryUnchecked": "このイベントのプランにあるアップグレードを種類別にまとめています。",
+        "none": "このイベントにエクスポートされたプランがないため、表示できる予定のアップグレードはありません。",
+        "groupTitle": "{name}、{count}件",
+        "groupStats": "{count}件中{done}件完了、戦力+{power}、Fire Crystals {fireCrystals}",
+        "groupStatsUnchecked": "戦力+{power}、Fire Crystals {fireCrystals}",
+        "power": "戦力+{power}",
+        "plannedDay": "{day}に予定",
+        "done": "完了",
+        "notDone": "未完了",
+        "levelsFrom": "{from}から{to}",
+        "levelsTo": "{to}まで",
+        "levelsResearchFrom": "レベル{from}から{to}",
+        "levelsResearchTo": "レベル{to}まで",
+        "costAmount": "{name} {amount}"
+    },
+    "pages": {
+        "buildings": "建物",
+        "research": "研究",
+        "chiefGear": "チーフ装備",
+        "chiefCharms": "チーフチャーム",
+        "heroGear": "ヒーロー装備",
+        "heroes": "ヒーロー",
+        "pets": "ペット",
+        "experts": "エキスパート",
+        "troops": "部隊"
+    }
+}

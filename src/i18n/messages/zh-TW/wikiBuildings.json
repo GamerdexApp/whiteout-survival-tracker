@@ -1,0 +1,71 @@
+{
+    "line": "{buildings} 個建築和 {facilities} 個設施。僅供參考，這裡不會儲存到你的領主。",
+    "list": {
+        "heading": "建築與設施",
+        "searchLabel": "搜尋",
+        "searchPlaceholder": "搜尋建築與設施",
+        "categoryLabel": "分類",
+        "categories": {
+            "all": "全部",
+            "Military": "軍事",
+            "Inner City": "內城",
+            "Entertainment": "娛樂"
+        },
+        "buildingMeta": "{category}，最高 {maxLevel}，{count, plural, other {{amount} 級}}",
+        "empty": "沒有符合搜尋的建築。",
+        "categoryOption": "{category} {count}"
+    },
+    "detail": {
+        "levelsTotal": "等級總數",
+        "standardLevels": "標準等級，1 到 30",
+        "fireCrystalLevels": "Fire Crystal 等級，30-1 到 FC 10",
+        "maxLevel": "最高等級標示",
+        "rangeLabel": "等級區間",
+        "rangeOption": "{range} {count}",
+        "ranges": {
+            "all": "全部",
+            "standard": "1 到 30",
+            "fc3": "30-1 到 FC 3",
+            "fc5": "FC 3-1 到 FC 5",
+            "fc8": "FC 5-1 到 FC 8",
+            "fc10": "FC 8-1 到 FC 10"
+        },
+        "tableLabel": "{name}等級",
+        "levels": "等級",
+        "totalTitle": "所需合計，{range}，{count, plural, other {{amount} 級}}",
+        "totalTime": "建造時間合計"
+    },
+    "columns": {
+        "level": "等級",
+        "cost": "花費",
+        "time": "時間",
+        "power": "戰力",
+        "requires": "條件",
+        "stats": {
+            "rallyCapacity": "集結容量",
+            "marchCapacity": "行軍容量",
+            "trainingCapacity": "訓練容量",
+            "trainingSpeedBonusPercent": "訓練速度",
+            "researchSpeedBonusPercent": "研究速度",
+            "infirmaryCapacity": "傷兵營容量",
+            "allyAssists": "盟友協助次數",
+            "allyHelpTimeSeconds": "盟友協助時間",
+            "reinforceCapacity": "增援容量",
+            "storehouseCapacity": "倉庫容量",
+            "barricadeDurability": "路障耐久",
+            "troopDeploymentCapacity": "出兵容量"
+        }
+    },
+    "cells": {
+        "none": "無",
+        "requirement": "{building} {level}",
+        "pricePerItem": "每個 {price}",
+        "percent": "{value}%"
+    },
+    "facilities": {
+        "heading": "設施",
+        "meta": "沒有等級、戰力或建造花費",
+        "unlock": "Furnace {level} 級解鎖",
+        "empty": "沒有符合搜尋的設施。"
+    }
+}

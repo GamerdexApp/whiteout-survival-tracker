@@ -1,0 +1,69 @@
+{
+  "line": "Tabel level Lumber camp dan Tree of Life, ditambah {decorations} dekorasi menurut kategori dengan biaya, kemakmuran, dan buff.",
+  "lumberCamp": {
+    "title": "Lumber camp",
+    "levels": "{count, plural, other {{amount} level}}",
+    "table": "Level Lumber camp",
+    "level": "Level",
+    "workers": "Pekerja",
+    "perSecond": "Per detik",
+    "treeLevel": "Level pohon",
+    "lifeEssence": "Life Essence"
+  },
+  "tree": {
+    "title": "Tree of Life",
+    "table": "Level Tree of Life",
+    "level": "Level",
+    "prosperity": "Kemakmuran",
+    "lifeEssence": "Life Essence",
+    "perHour": "Per jam",
+    "buff": "Buff"
+  },
+  "decorations": {
+    "title": "Dekorasi",
+    "showing": "Menampilkan {shown} dari {total}",
+    "search": "Cari",
+    "searchPlaceholder": "Cari dekorasi menurut nama atau buff",
+    "categoryLabel": "Kategori",
+    "all": "Semua",
+    "costFilter": "Jenis biaya",
+    "table": "Dekorasi",
+    "name": "Dekorasi",
+    "category": "Kategori",
+    "limit": "Batas",
+    "levels": "Level",
+    "cost": "Biaya",
+    "prosperityAtMax": "Kemakmuran di level maks",
+    "buffAtMax": "Buff di level maks",
+    "emptyTitle": "Tidak ada dekorasi yang cocok",
+    "emptyDescription": "Ubah pencarian, kategori, atau jenis biaya."
+  },
+  "costFilter": {
+    "any": "Semua biaya",
+    "lifeEssence": "Life Essence",
+    "items": "Sumber daya",
+    "limited": "Terbatas",
+    "unknown": "Biaya tidak ada di data"
+  },
+  "cost": {
+    "lifeEssence": "{amount} Life Essence",
+    "limited": "Tidak ada, dekorasi terbatas"
+  },
+  "detail": {
+    "title": "Detail",
+    "category": "Kategori",
+    "limit": "Batas",
+    "cost": "Biaya",
+    "levels": "Level",
+    "image": "Gambar",
+    "imageMissing": "Tidak ada",
+    "levelsTitle": "Level {name}",
+    "levelsMeta": "{count, plural, other {{amount} level}}",
+    "levelsTable": "Level dekorasi",
+    "level": "Level",
+    "levelCost": "Biaya",
+    "prosperity": "Kemakmuran",
+    "buff": "Buff",
+    "noLevels": "Data tidak punya tabel level untuk dekorasi ini."
+  }
+}

@@ -1,0 +1,50 @@
+{
+    "page": {
+        "title": "同盟"
+    },
+    "view": {
+        "subline": "{chief} · {details} · バナーレベル{level}"
+    },
+    "banner": {
+        "title": "同盟バナー",
+        "currentLevel": "現在のレベル",
+        "levelLabel": "バナーレベル",
+        "maxHint": "0から{max}までの整数です。",
+        "rangeChip": "{range}",
+        "costHeading": "{range}のレベルごとのコスト",
+        "noTimeOrPower": "パッケージにバナーの建設時間と戦力はないため、表示していません。",
+        "noCost": "コストなし",
+        "none": "なし",
+        "lower": "バナーレベルを下げる",
+        "raise": "バナーレベルを上げる"
+    },
+    "structures": {
+        "title": "同盟の建造物",
+        "tech": {
+            "title": "テック",
+            "description": "成長、領土、戦闘の{count}ノード",
+            "status": "最大{maxed}、進行中{progress}、ロック中{locked}"
+        },
+        "facilities": {
+            "title": "施設",
+            "description": "マップ施設{count}件",
+            "owned": "所有{owned}件"
+        },
+        "fortresses": {
+            "title": "要塞",
+            "description": "城、拠点{strongholds}か所、要塞{fortresses}か所",
+            "reference": "参考情報のみ"
+        }
+    },
+    "table": {
+        "title": "レベル範囲ごとのバナーコスト",
+        "note": "{count}範囲、範囲内のレベルはすべて同じコストです",
+        "range": "範囲",
+        "state": "状態",
+        "built": "建設済み",
+        "current": "現在",
+        "notBuilt": "未建設",
+        "none": "なし",
+        "noCost": "コストなし"
+    }
+}

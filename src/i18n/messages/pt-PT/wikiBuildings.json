@@ -1,0 +1,71 @@
+{
+  "line": "{buildings} edifícios e {facilities} instalações. Só referência, nada aqui é guardado no chefe.",
+  "list": {
+    "heading": "Edifícios e instalações",
+    "searchLabel": "Pesquisar",
+    "searchPlaceholder": "Pesquisar edifícios e instalações",
+    "categoryLabel": "Categoria",
+    "categories": {
+      "all": "Todas",
+      "Military": "Military",
+      "Inner City": "Inner City",
+      "Entertainment": "Entertainment"
+    },
+    "buildingMeta": "{category}, máx. {maxLevel}, {count, plural, one {{amount} nível} other {{amount} níveis}}",
+    "empty": "Nenhum edifício corresponde à pesquisa.",
+    "categoryOption": "{category} {count}"
+  },
+  "detail": {
+    "levelsTotal": "Total de níveis",
+    "standardLevels": "Níveis normais, 1 a 30",
+    "fireCrystalLevels": "Níveis Fire Crystal, 30-1 a FC 10",
+    "maxLevel": "Nome do nível máximo",
+    "rangeLabel": "Intervalo de níveis",
+    "rangeOption": "{range} {count}",
+    "ranges": {
+      "all": "Todos",
+      "standard": "1 a 30",
+      "fc3": "30-1 a FC 3",
+      "fc5": "FC 3-1 a FC 5",
+      "fc8": "FC 5-1 a FC 8",
+      "fc10": "FC 8-1 a FC 10"
+    },
+    "tableLabel": "Níveis de {name}",
+    "levels": "Níveis",
+    "totalTitle": "Total necessário, {range}, {count, plural, one {{amount} nível} other {{amount} níveis}}",
+    "totalTime": "Tempo de construção total"
+  },
+  "columns": {
+    "level": "Nível",
+    "cost": "Custo",
+    "time": "Tempo",
+    "power": "Poder",
+    "requires": "Requisitos",
+    "stats": {
+      "rallyCapacity": "Capacidade de rally",
+      "marchCapacity": "Capacidade de marcha",
+      "trainingCapacity": "Capacidade de treino",
+      "trainingSpeedBonusPercent": "Velocidade de treino",
+      "researchSpeedBonusPercent": "Velocidade de investigação",
+      "infirmaryCapacity": "Capacidade da enfermaria",
+      "allyAssists": "Ajudas de aliados",
+      "allyHelpTimeSeconds": "Tempo de ajuda de aliados",
+      "reinforceCapacity": "Capacidade de reforço",
+      "storehouseCapacity": "Capacidade do armazém",
+      "barricadeDurability": "Durabilidade da barricada",
+      "troopDeploymentCapacity": "Capacidade de destacamento"
+    }
+  },
+  "cells": {
+    "none": "Nenhum",
+    "requirement": "{building} {level}",
+    "pricePerItem": "{price} cada",
+    "percent": "{value}%"
+  },
+  "facilities": {
+    "heading": "Instalações",
+    "meta": "Sem níveis, poder nem custo de construção",
+    "unlock": "Desbloqueia no nível {level} do Furnace",
+    "empty": "Nenhuma instalação corresponde à pesquisa."
+  }
+}

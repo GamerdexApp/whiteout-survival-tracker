@@ -1,0 +1,98 @@
+{
+    "page": {
+        "title": "テック"
+    },
+    "view": {
+        "subline": "{chief} · 成長、領土、戦闘の同盟テック{count}ノード"
+    },
+    "summary": {
+        "maxed": "最大",
+        "inProgress": "進行中",
+        "notStarted": "未開始",
+        "locked": "ロック中"
+    },
+    "status": {
+        "maxed": "最大",
+        "inProgress": "進行中",
+        "notStarted": "未開始",
+        "locked": "ロック中"
+    },
+    "tabs": {
+        "label": "テックのカテゴリー"
+    },
+    "categories": {
+        "Growth": "成長",
+        "Territory": "領土",
+        "Battle": "戦闘"
+    },
+    "filters": {
+        "search": "検索",
+        "searchLabel": "テックノードを検索",
+        "searchPlaceholder": "ノード名",
+        "tier": "ティア",
+        "allTiers": "すべてのティア",
+        "tierOption": "ティア{tier}",
+        "status": "状態",
+        "allStatuses": "すべて",
+        "button": "検索とフィルター",
+        "title": "検索とフィルター",
+        "description": "名前、ティア、状態でテックノードを探します",
+        "reset": "フィルターをリセット",
+        "done": "{count}件を表示",
+        "shown": "{total}ノード中{shown}ノードを表示"
+    },
+    "table": {
+        "node": "ノード",
+        "level": "レベル",
+        "bonus": "ボーナス",
+        "cost": "次のレベルのコスト",
+        "time": "時間",
+        "needs": "必要条件"
+    },
+    "node": {
+        "tierDescription": "ティア{tier} · {description}",
+        "levelLabel": "{name}のレベル",
+        "levelOf": "{level} / {max}",
+        "open": "{name}を開く",
+        "bonusOf": "{max}中{now}",
+        "bonusNone": "まだなし、最大{max}",
+        "noBonus": "ボーナスなし",
+        "maxed": "最大",
+        "noTime": "時間なし",
+        "readyToUpgrade": "アップグレード可能",
+        "nothingNeeded": "必要条件なし",
+        "needsPart": "{name}レベル{level}が必要",
+        "costLine": "{name} {amount}",
+        "lockedHint": "{names}までロック中",
+        "requirementPart": "{name}レベル{level}"
+    },
+    "flyout": {
+        "title": "{name}",
+        "subtitle": "{category}、ティア{tier}。{description}",
+        "close": "閉じる",
+        "level": "レベル",
+        "bonusNow": "現在のボーナス",
+        "needsFor": "レベル{level}の必要条件",
+        "needsNothing": "必要条件はありません。",
+        "needsLine": "レベル{need}が必要、現在はレベル{have}",
+        "met": "達成",
+        "notMet": "未達成",
+        "requiredBy": "このノードを必要とするもの",
+        "requiredByNone": "このノードを必要とする他のノードはありません。",
+        "requiredByLine": "{category}、ティア{tier}、レベル{from}から{name}レベル{need}が必要",
+        "allLevels": "すべてのレベル",
+        "levelRow": "レベル{level}",
+        "done": "完了",
+        "next": "次",
+        "later": "以降",
+        "remaining": "最大までの残り",
+        "derived": "算出値",
+        "remainingNone": "残りはありません。このノードは最大です。",
+        "remainingLine": "{cost}",
+        "remainingTime": "{time}"
+    },
+    "empty": {
+        "title": "一致するノードがありません",
+        "description": "検索条件またはフィルターを変更すると、他のノードを表示できます。"
+    }
+}

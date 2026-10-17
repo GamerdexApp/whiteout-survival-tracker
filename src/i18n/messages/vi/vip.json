@@ -1,0 +1,63 @@
+{
+    "page": {
+        "title": "VIP"
+    },
+    "view": {
+        "sublineKnown": "{chief} · {details} · VIP {level} với {xp} XP",
+        "sublineUnknown": "{chief} · {details} · chưa đặt VIP"
+    },
+    "input": {
+        "title": "VIP của bạn",
+        "enterAs": "Nhập VIP theo",
+        "modeXp": "Tổng XP",
+        "modeLevel": "Cấp VIP",
+        "xpLabel": "Tổng VIP XP",
+        "xpHint": "XP là số nguyên từ 0 đến {max}.",
+        "levelLabel": "Cấp VIP",
+        "notSet": "Chưa đặt",
+        "levelHint": "Chọn một cấp sẽ đặt tổng XP bằng mức tổng thấp nhất của cấp đó. Hãy nhập XP thật để chính xác.",
+        "reached": "Cấp đã đạt",
+        "levelName": "VIP {level}",
+        "unknown": "Không rõ"
+    },
+    "progress": {
+        "label": "Tiến độ trong VIP {level}",
+        "toNext": "{xp} XP đến VIP {level}",
+        "percent": "{percent}%",
+        "range": "Tổng XP từ {from} đến {to} cho cấp này.",
+        "estimate": "Ước tính. Cấp được nhập, nên XP là mức tổng thấp nhất của VIP {level}. Hãy nhập XP thật để có giá trị chính xác.",
+        "maxLevel": "Cấp tối đa",
+        "maxHint": "VIP {level} là cấp cuối cùng."
+    },
+    "perks": {
+        "title": "VIP {level} mang lại gì",
+        "subtitle": "Tổng ở cấp này, không phải phần thay đổi so với cấp trước.",
+        "unknown": "Hãy nhập VIP của bạn để xem nó mang lại gì."
+    },
+    "next": {
+        "title": "VIP {level} thêm",
+        "subtitle": "So với VIP {from}.",
+        "new": "mới",
+        "was": "trước là {value}",
+        "maxLevel": "Cấp tối đa. Không còn cấp nào để xem trước.",
+        "unknown": "Hãy nhập VIP của bạn để xem cấp kế tiếp."
+    },
+    "table": {
+        "title": "Cả {count} cấp, tổng cộng {total} XP",
+        "level": "Cấp",
+        "xpFromLast": "XP từ cấp trước",
+        "totalXp": "Tổng XP",
+        "bonuses": "Cộng thêm mới hoặc cao hơn",
+        "state": "Trạng thái",
+        "xpFromLastMobile": "XP từ cấp trước {xp}",
+        "totalMobile": "Tổng {xp}",
+        "unknown": "Không rõ",
+        "states": {
+            "reached": "Đã đạt",
+            "current": "Hiện tại",
+            "ahead": "Phía trước",
+            "unknown": "Không rõ"
+        },
+        "levelName": "VIP {level}"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "lock": {
+        "day": "サーバー{day}日目に解放",
+        "dayAndDate": "サーバー{day}日目（{date}）に解放"
+    },
+    "areas": {
+        "pets": "ペット",
+        "fireCrystal": "Fire Crystalレベル",
+        "experts": "エキスパート",
+        "chiefGear": "チーフ装備",
+        "chiefCharms": "チーフチャーム",
+        "warAcademy": "War AcademyとT12研究"
+    },
+    "dialog": {
+        "legend": "解放済みコンテンツ",
+        "hint": "ロックはサーバー開始日からの経過日数に従います。サーバーの日数がずれている場合は、実際の段階を選んでください。ロック中の項目も表示されたままで、保存済みのデータは保持されます。",
+        "auto": "自動、{current}",
+        "autoUnknown": "自動、使うにはサーバー開始日を設定してください",
+        "autoNone": "まだ何も解放されていません",
+        "none": "何も解放されていません",
+        "stepPets": "{day}日目、ペット{total}体中{count}体",
+        "stepExperts": "{day}日目、エキスパート{total}人中{count}人",
+        "stepFc": "{day}日目、{last}まで（段階を除く）",
+        "stepNamed": "{day}日目、{name}",
+        "pickLabel": "{area}の解放範囲"
+    }
+}

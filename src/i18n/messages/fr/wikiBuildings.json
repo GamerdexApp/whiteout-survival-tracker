@@ -1,0 +1,71 @@
+{
+  "line": "{buildings} bâtiments et {facilities} installations. Référence uniquement, rien ici n'est enregistré pour votre chef.",
+  "list": {
+    "heading": "Bâtiments et installations",
+    "searchLabel": "Rechercher",
+    "searchPlaceholder": "Rechercher bâtiments et installations",
+    "categoryLabel": "Catégorie",
+    "categories": {
+      "all": "Toutes",
+      "Military": "Military",
+      "Inner City": "Inner City",
+      "Entertainment": "Entertainment"
+    },
+    "buildingMeta": "{category}, max {maxLevel}, {count, plural, one {{amount} niveau} other {{amount} niveaux}}",
+    "empty": "Aucun bâtiment ne correspond à votre recherche.",
+    "categoryOption": "{category} {count}"
+  },
+  "detail": {
+    "levelsTotal": "Niveaux au total",
+    "standardLevels": "Niveaux standard, 1 à 30",
+    "fireCrystalLevels": "Niveaux Fire Crystal, 30-1 à FC 10",
+    "maxLevel": "Libellé du niveau max",
+    "rangeLabel": "Tranche de niveaux",
+    "rangeOption": "{range} {count}",
+    "ranges": {
+      "all": "Tous",
+      "standard": "1 à 30",
+      "fc3": "30-1 à FC 3",
+      "fc5": "FC 3-1 à FC 5",
+      "fc8": "FC 5-1 à FC 8",
+      "fc10": "FC 8-1 à FC 10"
+    },
+    "tableLabel": "Niveaux de {name}",
+    "levels": "Niveaux",
+    "totalTitle": "Total nécessaire, {range}, {count, plural, one {{amount} niveau} other {{amount} niveaux}}",
+    "totalTime": "Durée de construction totale"
+  },
+  "columns": {
+    "level": "Niveau",
+    "cost": "Coût",
+    "time": "Durée",
+    "power": "Puissance",
+    "requires": "Prérequis",
+    "stats": {
+      "rallyCapacity": "Capacité de ralliement",
+      "marchCapacity": "Capacité de marche",
+      "trainingCapacity": "Capacité d'entraînement",
+      "trainingSpeedBonusPercent": "Vitesse d'entraînement",
+      "researchSpeedBonusPercent": "Vitesse de recherche",
+      "infirmaryCapacity": "Capacité de l'infirmerie",
+      "allyAssists": "Aides alliées",
+      "allyHelpTimeSeconds": "Temps d'aide alliée",
+      "reinforceCapacity": "Capacité de renfort",
+      "storehouseCapacity": "Capacité de l'entrepôt",
+      "barricadeDurability": "Durabilité de la barricade",
+      "troopDeploymentCapacity": "Capacité de déploiement"
+    }
+  },
+  "cells": {
+    "none": "Aucun",
+    "requirement": "{building} {level}",
+    "pricePerItem": "{price} l'unité",
+    "percent": "{value} %"
+  },
+  "facilities": {
+    "heading": "Installations",
+    "meta": "Sans niveaux, puissance ni coût de construction",
+    "unlock": "Se débloque au niveau de Furnace {level}",
+    "empty": "Aucune installation ne correspond à votre recherche."
+  }
+}
