@@ -39,6 +39,15 @@ export const manualItemId = (
 ) =>
   `${rarity === "Legendary" ? "mythic" : rarity.toLowerCase()}-${branch}-skill-manual`;
 
+/**
+ * The levels of a skill that a star allows. Level 1 of a skill needs its unlock star, so a skill
+ * below that star stays at level 0, and each next level needs the star of its own row.
+ */
+export const skillLevelRange = (skill: HeroSkill, star: number) => {
+  const max = skill.levels.filter((level) => level.starRequired <= star).length;
+  return { min: max > 0 ? 1 : 0, max };
+};
+
 export const skillsOf = (
   hero: Hero,
 ): { branch: "exploration" | "expedition"; skill: HeroSkill }[] => [

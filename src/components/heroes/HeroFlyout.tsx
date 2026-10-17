@@ -25,6 +25,7 @@ import {
 	MAX_SKILL_LEVEL,
 	MAX_TALENT_LEVEL,
 	MAX_WEAPON_LEVEL,
+	skillLevelRange,
 	widgetCostOf,
 } from "@/data/game/heroes";
 import { Badge } from "@/comps/ui/Badge";
@@ -242,6 +243,7 @@ function SkillRow({
 	const next = skill.levels[level];
 	const goal = skillGoalOf(view, skill.name);
 	const starShort = next !== undefined && view.stars.star < next.starRequired;
+	const range = skillLevelRange(skill, view.stars.star);
 
 	return (
 		<div className="border-line flex flex-col gap-1 border-t-[1.5px] py-2 first:border-t-0">
@@ -252,8 +254,8 @@ function SkillRow({
 					<ValueStepper
 						label={tc("skillLabel", { hero: view.hero.name, skill: skill.name })}
 						value={level}
-						min={1}
-						max={MAX_SKILL_LEVEL}
+						min={range.min}
+						max={range.max}
 						suffix={tc("maxLevelSuffix", { max: formatNumber(MAX_SKILL_LEVEL) })}
 						onChange={(next) =>
 							onChange({

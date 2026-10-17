@@ -17,6 +17,7 @@ import {
   MAX_TIER,
   MAX_WEAPON_LEVEL,
   shardItemIdOf,
+  skillLevelRange,
   skillsOf,
 } from "@/data/game/heroes";
 import { findItem } from "@/data/game/items";
@@ -96,18 +97,19 @@ const savedStars = (state: HeroState | undefined): StarLabel => {
 
 export const buildHeroView = (chief: Playthrough, hero: Hero): HeroView => {
   const state = chief.heroes?.[hero.id];
+  const stars = savedStars(state);
   const skillLevels = Object.fromEntries(
-    skillsOf(hero).map(({ skill }) => [
-      skill.name,
-      clamp(state?.skills?.[skill.name] ?? 1, 1, MAX_SKILL_LEVEL),
-    ]),
+    skillsOf(hero).map(({ skill }) => {
+      const { min, max } = skillLevelRange(skill, stars.star);
+      return [skill.name, clamp(state?.skills?.[skill.name] ?? min, min, max)];
+    }),
   );
   const savedGoal = chief.heroesPlan?.goals?.[hero.id];
 
   return {
     hero,
     owned: state?.owned === true,
-    stars: savedStars(state),
+    stars,
     level: clamp(state?.level ?? 1, 1, MAX_HERO_LEVEL),
     skillLevels,
     talent: clamp(state?.talent ?? 1, 1, MAX_TALENT_LEVEL),
@@ -205,7 +207,7 @@ export const heroPowerParts = (view: HeroView): HeroPowerParts => {
   const level = powerOfLevel(view.hero, view.level);
   const skills = skillsOf(view.hero).reduce(
     (total, { skill }) =>
-      total + skill.levels[view.skillLevels[skill.name] - 1].powerGain,
+      total + (skill.levels[view.skillLevels[skill.name] - 1]?.powerGain ?? 0),
     0,
   );
   const star = starPowerAt(view.hero, view.stars);
@@ -384,7 +386,7 @@ export const withHeroSkill = (
   withHeroState(chief, heroId, {
     skills: {
       ...chief.heroes?.[heroId]?.skills,
-      [skillName]: clamp(level, 1, MAX_SKILL_LEVEL),
+      [skillName]: clamp(level, 0, MAX_SKILL_LEVEL),
     },
   });
 
@@ -473,8 +475,11 @@ const goalToCalculatorInput = (view: HeroView, goal: HeroGoal) => {
   const skills = skillsOf(view.hero)
     .map(({ skill }) => ({
       name: skill.name,
-      current: view.skillLevels[skill.name],
-      goal: goal.skills?.[skill.name] ?? view.skillLevels[skill.name],
+      current: Math.max(1, view.skillLevels[skill.name]),
+      goal: Math.max(
+        1,
+        goal.skills?.[skill.name] ?? view.skillLevels[skill.name],
+      ),
     }))
     .filter((skill) => skill.goal > skill.current);
   const weaponGoal = view.hero.exclusiveWeapon

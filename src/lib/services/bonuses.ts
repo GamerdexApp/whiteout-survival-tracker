@@ -47,7 +47,12 @@ const researchLevelsOf = (chief: Playthrough) =>
 const heroSkillsOf = (chief: Playthrough) =>
   buildHeroViews(chief)
     .filter((view) => view.owned)
-    .map((view) => ({ heroId: view.hero.id, skills: view.skillLevels }));
+    .map((view) => ({
+      heroId: view.hero.id,
+      skills: Object.fromEntries(
+        Object.entries(view.skillLevels).filter(([, level]) => level > 0),
+      ),
+    }));
 
 const chiefGearOf = (chief: Playthrough) =>
   Object.fromEntries(

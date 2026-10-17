@@ -1,5 +1,6 @@
 "use client";
 
+import type { HeroSkill } from "whiteout-survival-data";
 import { useTranslations } from "next-intl";
 import { LuClipboardList } from "react-icons/lu";
 import { formatNumber } from "@/lib/format";
@@ -18,9 +19,9 @@ import {
 } from "@/service/heroes";
 import {
 	MAX_HERO_LEVEL,
-	MAX_SKILL_LEVEL,
 	MAX_TALENT_LEVEL,
 	MAX_WEAPON_LEVEL,
+	skillLevelRange,
 } from "@/data/game/heroes";
 import { Button } from "@/comps/ui/Button";
 import { Card } from "@/comps/ui/Card";
@@ -120,13 +121,13 @@ export function HeroCard({ view, onChange, onOpen, onPlan, gearSetNames }: HeroC
 						<div className="grid gap-3 sm:grid-cols-2">
 							<SkillColumn
 								title={t("common.exploration")}
-								names={exploration.map((skill) => skill.name)}
+								skills={exploration}
 								view={view}
 								onChange={onChange}
 							/>
 							<SkillColumn
 								title={t("common.expedition")}
-								names={expedition.map((skill) => skill.name)}
+								skills={expedition}
 								view={view}
 								onChange={onChange}
 							/>
@@ -234,22 +235,26 @@ export function HeroCard({ view, onChange, onOpen, onPlan, gearSetNames }: HeroC
 
 function SkillColumn({
 	title,
-	names,
+	skills,
 	view,
 	onChange,
 }: {
 	title: string;
-	names: string[];
+	skills: HeroSkill[];
 	view: HeroView;
 	onChange: (change: HeroChange) => void;
 }) {
 	const t = useTranslations("heroes.common");
+	const tSkill = useTranslations("heroes.flyout.skills");
 
 	return (
 		<div className="flex flex-col">
 			<SectionLabel className="text-muted pb-1">{title}</SectionLabel>
-			{names.map((name) => {
+			{skills.map((skill) => {
+				const { name } = skill;
 				const goal = skillGoalOf(view, name);
+				const { min, max } = skillLevelRange(skill, view.stars.star);
+				const locked = max === 0;
 				return (
 					<div
 						key={name}
@@ -258,12 +263,19 @@ function SkillColumn({
 						<span className="min-w-0 flex-1 truncate" title={name}>
 							{name}
 						</span>
+						{locked && (
+							<span className="text-muted shrink-0 font-mono text-xs">
+								{tSkill("needsStar", {
+									star: formatNumber(skill.levels[0].starRequired),
+								})}
+							</span>
+						)}
 						<GoalText goal={goal?.toString() ?? null} />
 						<ValueStepper
 							label={t("skillLabel", { hero: view.hero.name, skill: name })}
 							value={view.skillLevels[name]}
-							min={1}
-							max={MAX_SKILL_LEVEL}
+							min={min}
+							max={max}
 							onChange={(level) =>
 								onChange({
 									kind: "skill",
