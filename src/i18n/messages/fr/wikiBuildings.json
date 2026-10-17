@@ -67,38 +67,5 @@
         "meta": "Sans niveaux, puissance ni coût de construction",
         "unlock": "Se débloque au niveau de Furnace {level}",
         "empty": "Aucune installation ne correspond à votre recherche."
-    },
-    "tables": {
-        "building": "Bâtiment",
-        "research": "Recherche",
-        "total": "Total"
-    },
-    "fireCrystal": {
-        "heading": "Coûts en Fire Crystal",
-        "description": "Fire Crystals et Refined Fire Crystals dont chaque bâtiment a besoin pour atteindre chaque niveau de Fire Crystal. Un niveau additionne les cinq améliorations qui se terminent à sa ligne de base. Un tiret signifie que le bâtiment n'a aucun coût pour ce niveau.",
-        "rangeLabel": "Niveaux",
-        "ranges": {
-            "all": "Tous les niveaux, de FC 1 à FC 10",
-            "early": "De FC 1 à FC 5",
-            "late": "De FC 6 à FC 10"
-        },
-        "tableLabel": "Coût en Fire Crystal de chaque bâtiment"
-    },
-    "shards": {
-        "heading": "Coûts en Fire Crystal Shard",
-        "description": "Fire Crystal Shards et Refined Fire Crystals pour la recherche des troupes T11 et T12. La ligne Déblocage additionne les recherches qui débloquent la troupe : paliers 1 à 5 pour T11 et palier 1 pour T12. Les extras sont les recherches suivantes. T11 ne coûte aucun Refined Fire Crystal. Un tiret signifie que la recherche n'a aucun coût dans cette colonne.",
-        "tierLabel": "Palier de troupe",
-        "tiers": {
-            "all": "T11 et T12",
-            "T11": "T11",
-            "T12": "T12"
-        },
-        "tableLabel": "Coût en Fire Crystal Shard de chaque recherche de troupe",
-        "rows": {
-            "unlock": "Déblocage",
-            "tier": "Palier {tier}",
-            "extrasTotal": "Extras",
-            "total": "Total"
-        }
     }
 }

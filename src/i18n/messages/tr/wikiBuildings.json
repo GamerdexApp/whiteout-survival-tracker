@@ -67,38 +67,5 @@
         "meta": "Seviye, güç ya da inşa maliyeti yok",
         "unlock": "Furnace seviye {level} olunca açılır",
         "empty": "Aramanla eşleşen tesis yok."
-    },
-    "tables": {
-        "building": "Bina",
-        "research": "Araştırma",
-        "total": "Toplam"
-    },
-    "fireCrystal": {
-        "heading": "Fire Crystal maliyetleri",
-        "description": "Her binanın her Fire Crystal seviyesine ulaşmak için gereken Fire Crystal ve Refined Fire Crystal miktarı. Bir seviye, taban satırında biten beş yükseltmeyi toplar. Tire, binanın o seviye için maliyeti olmadığını gösterir.",
-        "rangeLabel": "Seviyeler",
-        "ranges": {
-            "all": "Tüm seviyeler, FC 1 - FC 10",
-            "early": "FC 1 - FC 5",
-            "late": "FC 6 - FC 10"
-        },
-        "tableLabel": "Her bina için Fire Crystal maliyeti"
-    },
-    "shards": {
-        "heading": "Fire Crystal Shard maliyetleri",
-        "description": "T11 ve T12 birlik araştırmaları için Fire Crystal Shard ve Refined Fire Crystal miktarı. Açılma satırı birliğin kilidini açan araştırmaları toplar: T11 için 1 ile 5 arası kademeler, T12 için 1. kademe. Ekstralar bundan sonraki araştırmalardır. T11 Refined Fire Crystal gerektirmez. Tire, araştırmanın o sütunda maliyeti olmadığını gösterir.",
-        "tierLabel": "Birlik kademesi",
-        "tiers": {
-            "all": "T11 ve T12",
-            "T11": "T11",
-            "T12": "T12"
-        },
-        "tableLabel": "Her birlik araştırması için Fire Crystal Shard maliyeti",
-        "rows": {
-            "unlock": "Açılma",
-            "tier": "Kademe {tier}",
-            "extrasTotal": "Ekstralar",
-            "total": "Toplam"
-        }
     }
 }

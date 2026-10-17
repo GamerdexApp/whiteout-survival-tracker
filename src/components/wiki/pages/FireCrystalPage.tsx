@@ -9,9 +9,10 @@ import { ItemIcon } from "@/comps/ui/ItemIcon";
 import { Select } from "@/comps/ui/Select";
 import { MatrixTable } from "../tables/MatrixTable";
 import type { MatrixGroup, MatrixRow } from "../tables/MatrixTable";
+import { WikiPageShell } from "../WikiPageShell";
 
-export function FireCrystalCostCard() {
-	const t = useTranslations("wikiBuildings");
+export function FireCrystalPage() {
+	const t = useTranslations("wikiFireCrystal");
 	const [range, setRange] = useState<FireCrystalRangeId>("all");
 	const table = buildFireCrystalTable(range);
 
@@ -59,30 +60,29 @@ export function FireCrystalCostCard() {
 	];
 
 	return (
-		<Card className="flex flex-col gap-4 p-4">
-			<div className="flex flex-col gap-1">
-				<h2 className="text-lg font-semibold">{t("fireCrystal.heading")}</h2>
+		<WikiPageShell id="fireCrystal" line={t("fireCrystal.line")}>
+			<Card className="flex flex-col gap-4 p-4">
 				<p className="text-muted">{t("fireCrystal.description")}</p>
-			</div>
-			<div className="max-w-xs">
-				<Select
-					aria-label={t("fireCrystal.rangeLabel")}
-					value={range}
-					onChange={(event) => setRange(event.target.value as FireCrystalRangeId)}
-				>
-					{FIRE_CRYSTAL_RANGE_IDS.map((id) => (
-						<option key={id} value={id}>
-							{t(`fireCrystal.ranges.${id}`)}
-						</option>
-					))}
-				</Select>
-			</div>
-			<MatrixTable
-				label={t("fireCrystal.tableLabel")}
-				rowHeader={t("tables.building")}
-				groups={groups}
-				rows={rows}
-			/>
-		</Card>
+				<div className="max-w-xs">
+					<Select
+						aria-label={t("fireCrystal.rangeLabel")}
+						value={range}
+						onChange={(event) => setRange(event.target.value as FireCrystalRangeId)}
+					>
+						{FIRE_CRYSTAL_RANGE_IDS.map((id) => (
+							<option key={id} value={id}>
+								{t(`fireCrystal.ranges.${id}`)}
+							</option>
+						))}
+					</Select>
+				</div>
+				<MatrixTable
+					label={t("fireCrystal.tableLabel")}
+					rowHeader={t("tables.building")}
+					groups={groups}
+					rows={rows}
+				/>
+			</Card>
+		</WikiPageShell>
 	);
 }

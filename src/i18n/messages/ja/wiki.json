@@ -10,6 +10,10 @@
             "title": "建物",
             "description": "すべての建物と、そのレベルごとのコスト、時間、戦力、必要条件。9つの施設も含みます。"
         },
+        "fireCrystal": {
+            "title": "Fire Crystal",
+            "description": "全建物のFire CrystalとRefined Fire Crystalのコスト、FC 1からFC 10まで。"
+        },
         "heroes": {
             "title": "ヒーロー",
             "description": "ヒーロー一覧と、ステータス、スキル、シャードのコスト、専用武器、Widgets。"
@@ -41,6 +45,10 @@
         "research": {
             "title": "研究ツリー",
             "description": "カテゴリー別の研究ノードと、レベルごとのコスト、前提条件、ボーナス、時間。"
+        },
+        "fireCrystalShards": {
+            "title": "Fire Crystal Shards",
+            "description": "T11とT12の兵種研究に必要なFire Crystal ShardとRefined Fire Crystalのコスト。"
         },
         "allianceTech": {
             "title": "同盟テック",

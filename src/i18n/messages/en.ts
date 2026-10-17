@@ -41,6 +41,7 @@ import wikiDaybreak from "./en/wikiDaybreak.json";
 import wikiEventBuffs from "./en/wikiEventBuffs.json";
 import wikiEvents from "./en/wikiEvents.json";
 import wikiExperts from "./en/wikiExperts.json";
+import wikiFireCrystal from "./en/wikiFireCrystal.json";
 import wikiHeroes from "./en/wikiHeroes.json";
 import wikiHeroGear from "./en/wikiHeroGear.json";
 import wikiItems from "./en/wikiItems.json";
@@ -91,6 +92,7 @@ const en = {
   unlocks,
   wiki,
   wikiBuildings,
+  wikiFireCrystal,
   wikiHeroes,
   wikiHeroGear,
   wikiExperts,

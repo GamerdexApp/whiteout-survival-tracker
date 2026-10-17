@@ -1,0 +1,35 @@
+{
+    "tables": {
+        "building": "Edificio",
+        "research": "Ricerca",
+        "total": "Totale"
+    },
+    "fireCrystal": {
+        "line": "Costi in Fire Crystal e Refined Fire Crystal di ogni edificio. Solo riferimento, nulla viene salvato nel tuo capo.",
+        "description": "Fire Crystals e Refined Fire Crystals che ogni edificio richiede per raggiungere ogni livello Fire Crystal. Un livello somma i cinque potenziamenti che finiscono nella sua riga base. Un trattino indica che l'edificio non ha costi per quel livello.",
+        "rangeLabel": "Livelli",
+        "ranges": {
+            "all": "Tutti i livelli, da FC 1 a FC 10",
+            "early": "Da FC 1 a FC 5",
+            "late": "Da FC 6 a FC 10"
+        },
+        "tableLabel": "Costo Fire Crystal di ogni edificio"
+    },
+    "shards": {
+        "line": "Costi in Fire Crystal Shard e Refined Fire Crystal della ricerca delle truppe T11 e T12. Solo riferimento, nulla viene salvato nel tuo capo.",
+        "description": "Fire Crystal Shards e Refined Fire Crystals per la ricerca delle truppe T11 e T12. La riga Sblocco somma le ricerche che sbloccano la truppa: gradi da 1 a 5 per T11 e grado 1 per T12. Gli extra sono le ricerche successive. T11 non costa Refined Fire Crystals. Un trattino indica che la ricerca non ha costi in quella colonna.",
+        "tierLabel": "Grado della truppa",
+        "tiers": {
+            "all": "T11 e T12",
+            "T11": "T11",
+            "T12": "T12"
+        },
+        "tableLabel": "Costo Fire Crystal Shard di ogni ricerca delle truppe",
+        "rows": {
+            "unlock": "Sblocco",
+            "tier": "Grado {tier}",
+            "extrasTotal": "Extra",
+            "total": "Totale"
+        }
+    }
+}

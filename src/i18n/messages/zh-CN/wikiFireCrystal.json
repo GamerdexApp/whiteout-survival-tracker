@@ -1,0 +1,35 @@
+{
+    "tables": {
+        "building": "建筑",
+        "research": "研究",
+        "total": "合计"
+    },
+    "fireCrystal": {
+        "line": "每座建筑的 Fire Crystal 和 Refined Fire Crystal 消耗。仅供参考，这里的内容不会保存到你的领主。",
+        "description": "每座建筑达到各 Fire Crystal 等级所需的 Fire Crystal 和 Refined Fire Crystal。每个等级是止于其基础行的五次升级之和。短横线表示该建筑在该等级没有消耗。",
+        "rangeLabel": "等级",
+        "ranges": {
+            "all": "全部等级，FC 1 到 FC 10",
+            "early": "FC 1 到 FC 5",
+            "late": "FC 6 到 FC 10"
+        },
+        "tableLabel": "每座建筑的 Fire Crystal 消耗"
+    },
+    "shards": {
+        "line": "T11 和 T12 兵种研究的 Fire Crystal Shard 和 Refined Fire Crystal 消耗。仅供参考，这里的内容不会保存到你的领主。",
+        "description": "T11 和 T12 兵种研究所需的 Fire Crystal Shard 和 Refined Fire Crystal。解锁行合计解锁该兵种的研究：T11 为 1 到 5 阶，T12 为 1 阶。额外项是之后的研究。T11 不消耗 Refined Fire Crystal。短横线表示该研究在此列没有消耗。",
+        "tierLabel": "兵种阶",
+        "tiers": {
+            "all": "T11 和 T12",
+            "T11": "T11",
+            "T12": "T12"
+        },
+        "tableLabel": "每项兵种研究的 Fire Crystal Shard 消耗",
+        "rows": {
+            "unlock": "解锁",
+            "tier": "{tier}阶",
+            "extrasTotal": "额外项",
+            "total": "合计"
+        }
+    }
+}

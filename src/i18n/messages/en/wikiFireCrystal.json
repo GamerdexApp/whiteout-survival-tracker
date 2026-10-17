@@ -1,0 +1,35 @@
+{
+    "tables": {
+        "building": "Building",
+        "research": "Research",
+        "total": "Total"
+    },
+    "fireCrystal": {
+        "line": "Fire Crystal and Refined Fire Crystal costs for each building. Reference only, nothing here is saved to your chief.",
+        "description": "Fire Crystals and Refined Fire Crystals each building needs to reach each Fire Crystal level. A level adds up the five upgrades that end at its base row. A dash means the building has no cost for that level.",
+        "rangeLabel": "Levels",
+        "ranges": {
+            "all": "All levels, FC 1 to FC 10",
+            "early": "FC 1 to FC 5",
+            "late": "FC 6 to FC 10"
+        },
+        "tableLabel": "Fire Crystal cost for each building"
+    },
+    "shards": {
+        "line": "Fire Crystal Shard and Refined Fire Crystal costs of T11 and T12 troop research. Reference only, nothing here is saved to your chief.",
+        "description": "Fire Crystal Shards and Refined Fire Crystals for T11 and T12 troop research. The Unlock row adds up the research that unlocks the troop: tiers 1 to 5 for T11 and tier 1 for T12. The extras are the research after that. T11 costs no Refined Fire Crystals. A dash means the research has no cost in that column.",
+        "tierLabel": "Troop tier",
+        "tiers": {
+            "all": "T11 and T12",
+            "T11": "T11",
+            "T12": "T12"
+        },
+        "tableLabel": "Fire Crystal Shard cost for each troop research",
+        "rows": {
+            "unlock": "Unlock",
+            "tier": "Tier {tier}",
+            "extrasTotal": "Extras",
+            "total": "Total"
+        }
+    }
+}

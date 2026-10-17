@@ -42,6 +42,7 @@ import wikiDaybreak from "./zh-CN/wikiDaybreak.json";
 import wikiEventBuffs from "./zh-CN/wikiEventBuffs.json";
 import wikiEvents from "./zh-CN/wikiEvents.json";
 import wikiExperts from "./zh-CN/wikiExperts.json";
+import wikiFireCrystal from "./zh-CN/wikiFireCrystal.json";
 import wikiHeroes from "./zh-CN/wikiHeroes.json";
 import wikiHeroGear from "./zh-CN/wikiHeroGear.json";
 import wikiItems from "./zh-CN/wikiItems.json";
@@ -97,6 +98,7 @@ const zhCN: PartialMessages = {
   wikiEventBuffs,
   wikiEvents,
   wikiExperts,
+  wikiFireCrystal,
   wikiHeroGear,
   wikiHeroes,
   wikiItems,

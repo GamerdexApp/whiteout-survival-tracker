@@ -67,38 +67,5 @@
         "meta": "Tiada tahap, kuasa atau kos binaan",
         "unlock": "Dibuka pada tahap Furnace {level}",
         "empty": "Tiada kemudahan sepadan dengan carian anda."
-    },
-    "tables": {
-        "building": "Bangunan",
-        "research": "Penyelidikan",
-        "total": "Jumlah"
-    },
-    "fireCrystal": {
-        "heading": "Kos Fire Crystal",
-        "description": "Fire Crystal dan Refined Fire Crystal yang diperlukan setiap bangunan untuk mencapai setiap tahap Fire Crystal. Satu tahap menjumlahkan lima naik taraf yang berakhir pada baris asasnya. Sengkang bermaksud bangunan tiada kos untuk tahap itu.",
-        "rangeLabel": "Tahap",
-        "ranges": {
-            "all": "Semua tahap, FC 1 hingga FC 10",
-            "early": "FC 1 hingga FC 5",
-            "late": "FC 6 hingga FC 10"
-        },
-        "tableLabel": "Kos Fire Crystal bagi setiap bangunan"
-    },
-    "shards": {
-        "heading": "Kos Fire Crystal Shard",
-        "description": "Fire Crystal Shard dan Refined Fire Crystal untuk penyelidikan tentera T11 dan T12. Baris Buka kunci menjumlahkan penyelidikan yang membuka kunci tentera: peringkat 1 hingga 5 untuk T11 dan peringkat 1 untuk T12. Tambahan ialah penyelidikan selepas itu. T11 tidak memerlukan Refined Fire Crystal. Sengkang bermaksud penyelidikan tiada kos dalam lajur itu.",
-        "tierLabel": "Peringkat tentera",
-        "tiers": {
-            "all": "T11 dan T12",
-            "T11": "T11",
-            "T12": "T12"
-        },
-        "tableLabel": "Kos Fire Crystal Shard bagi setiap penyelidikan tentera",
-        "rows": {
-            "unlock": "Buka kunci",
-            "tier": "Peringkat {tier}",
-            "extrasTotal": "Tambahan",
-            "total": "Jumlah"
-        }
     }
 }

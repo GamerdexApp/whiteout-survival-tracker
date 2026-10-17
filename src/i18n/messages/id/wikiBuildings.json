@@ -67,38 +67,5 @@
         "meta": "Tanpa level, kekuatan, atau biaya bangun",
         "unlock": "Terbuka di level Furnace {level}",
         "empty": "Tidak ada fasilitas yang cocok dengan pencarianmu."
-    },
-    "tables": {
-        "building": "Bangunan",
-        "research": "Riset",
-        "total": "Total"
-    },
-    "fireCrystal": {
-        "heading": "Biaya Fire Crystal",
-        "description": "Fire Crystal dan Refined Fire Crystal yang dibutuhkan setiap bangunan untuk mencapai tiap level Fire Crystal. Satu level menjumlahkan lima upgrade yang berakhir di baris dasarnya. Tanda strip berarti bangunan tidak punya biaya untuk level itu.",
-        "rangeLabel": "Level",
-        "ranges": {
-            "all": "Semua level, FC 1 sampai FC 10",
-            "early": "FC 1 sampai FC 5",
-            "late": "FC 6 sampai FC 10"
-        },
-        "tableLabel": "Biaya Fire Crystal setiap bangunan"
-    },
-    "shards": {
-        "heading": "Biaya Fire Crystal Shard",
-        "description": "Fire Crystal Shard dan Refined Fire Crystal untuk riset pasukan T11 dan T12. Baris Buka kunci menjumlahkan riset yang membuka kunci pasukan: tier 1 sampai 5 untuk T11 dan tier 1 untuk T12. Tambahan adalah riset sesudahnya. T11 tidak butuh Refined Fire Crystal. Tanda strip berarti riset tidak punya biaya di kolom itu.",
-        "tierLabel": "Tier pasukan",
-        "tiers": {
-            "all": "T11 dan T12",
-            "T11": "T11",
-            "T12": "T12"
-        },
-        "tableLabel": "Biaya Fire Crystal Shard setiap riset pasukan",
-        "rows": {
-            "unlock": "Buka kunci",
-            "tier": "Tier {tier}",
-            "extrasTotal": "Tambahan",
-            "total": "Total"
-        }
     }
 }

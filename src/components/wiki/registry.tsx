@@ -12,6 +12,8 @@ import { DaybreakPage } from "./pages/DaybreakPage";
 import { EventBuffsPage } from "./pages/EventBuffsPage";
 import { EventsPage } from "./pages/EventsPage";
 import { ExpertsPage } from "./pages/ExpertsPage";
+import { FireCrystalPage } from "./pages/FireCrystalPage";
+import { FireCrystalShardsPage } from "./pages/FireCrystalShardsPage";
 import { HeroesPage } from "./pages/HeroesPage";
 import { HeroGearPage } from "./pages/HeroGearPage";
 import { ItemsPage } from "./pages/ItemsPage";
@@ -25,6 +27,7 @@ import type { WikiPageProps } from "./WikiPageProps";
 
 export const wikiPageComponents: Record<WikiPageId, ComponentType<WikiPageProps>> = {
 	buildings: BuildingsPage,
+	fireCrystal: FireCrystalPage,
 	heroes: HeroesPage,
 	heroGear: HeroGearPage,
 	experts: ExpertsPage,
@@ -33,6 +36,7 @@ export const wikiPageComponents: Record<WikiPageId, ComponentType<WikiPageProps>
 	chiefCharms: ChiefCharmsPage,
 	troops: TroopsPage,
 	research: ResearchPage,
+	fireCrystalShards: FireCrystalShardsPage,
 	allianceTech: AllianceTechPage,
 	allianceStructures: AllianceStructuresPage,
 	daybreak: DaybreakPage,

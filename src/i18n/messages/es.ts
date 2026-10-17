@@ -42,6 +42,7 @@ import wikiDaybreak from "./es/wikiDaybreak.json";
 import wikiEventBuffs from "./es/wikiEventBuffs.json";
 import wikiEvents from "./es/wikiEvents.json";
 import wikiExperts from "./es/wikiExperts.json";
+import wikiFireCrystal from "./es/wikiFireCrystal.json";
 import wikiHeroes from "./es/wikiHeroes.json";
 import wikiHeroGear from "./es/wikiHeroGear.json";
 import wikiItems from "./es/wikiItems.json";
@@ -97,6 +98,7 @@ const es: PartialMessages = {
   wikiEventBuffs,
   wikiEvents,
   wikiExperts,
+  wikiFireCrystal,
   wikiHeroGear,
   wikiHeroes,
   wikiItems,

@@ -10,6 +10,10 @@
             "title": "อาคาร",
             "description": "ทุกอาคารและเลเวลพร้อมค่าใช้จ่าย เวลา พลัง และเงื่อนไข รวมถึงสิ่งปลูกสร้างทั้งเก้า"
         },
+        "fireCrystal": {
+            "title": "Fire Crystal",
+            "description": "ค่าใช้จ่าย Fire Crystal และ Refined Fire Crystal ของทุกอาคาร ตั้งแต่ FC 1 ถึง FC 10"
+        },
         "heroes": {
             "title": "ฮีโร่",
             "description": "รายชื่อฮีโร่พร้อมค่าสถานะ ทักษะ ค่าใช้จ่ายเศษ อาวุธเฉพาะ และ Widgets"
@@ -41,6 +45,10 @@
         "research": {
             "title": "แผนผังวิจัย",
             "description": "โหนดวิจัยตามหมวดหมู่พร้อมค่าใช้จ่ายแต่ละเลเวล เงื่อนไข โบนัส และเวลา"
+        },
+        "fireCrystalShards": {
+            "title": "Fire Crystal Shards",
+            "description": "ค่าใช้จ่าย Fire Crystal Shard และ Refined Fire Crystal สำหรับการวิจัยทหาร T11 และ T12"
         },
         "allianceTech": {
             "title": "เทคโนโลยีพันธมิตร",

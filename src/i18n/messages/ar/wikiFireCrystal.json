@@ -1,0 +1,35 @@
+{
+    "tables": {
+        "building": "المبنى",
+        "research": "البحث",
+        "total": "الإجمالي"
+    },
+    "fireCrystal": {
+        "line": "تكاليف Fire Crystal وRefined Fire Crystal لكل مبنى. للمرجع فقط، لا يُحفظ شيء هنا في قائدك.",
+        "description": "كمية Fire Crystal وRefined Fire Crystal التي يحتاجها كل مبنى للوصول إلى كل مستوى من مستويات Fire Crystal. يجمع المستوى الواحد خمس ترقيات تنتهي عند صفه الأساسي. تعني الشرطة أن المبنى لا تكلفة له عند ذلك المستوى.",
+        "rangeLabel": "المستويات",
+        "ranges": {
+            "all": "كل المستويات، من FC 1 إلى FC 10",
+            "early": "من FC 1 إلى FC 5",
+            "late": "من FC 6 إلى FC 10"
+        },
+        "tableLabel": "تكلفة Fire Crystal لكل مبنى"
+    },
+    "shards": {
+        "line": "تكاليف Fire Crystal Shard وRefined Fire Crystal لأبحاث القوات T11 وT12. للمرجع فقط، لا يُحفظ شيء هنا في قائدك.",
+        "description": "كمية Fire Crystal Shard وRefined Fire Crystal لأبحاث القوات T11 وT12. يجمع صف الفتح الأبحاث التي تفتح القوة: الفئات من 1 إلى 5 للقوة T11 والفئة 1 للقوة T12. الإضافات هي الأبحاث التي تأتي بعد ذلك. لا تحتاج T11 إلى Refined Fire Crystal. تعني الشرطة أن البحث لا تكلفة له في ذلك العمود.",
+        "tierLabel": "فئة القوات",
+        "tiers": {
+            "all": "T11 وT12",
+            "T11": "T11",
+            "T12": "T12"
+        },
+        "tableLabel": "تكلفة Fire Crystal Shard لكل بحث قوات",
+        "rows": {
+            "unlock": "فتح",
+            "tier": "الفئة {tier}",
+            "extrasTotal": "الإضافات",
+            "total": "الإجمالي"
+        }
+    }
+}

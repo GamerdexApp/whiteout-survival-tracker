@@ -1,0 +1,35 @@
+{
+    "tables": {
+        "building": "Gebäude",
+        "research": "Forschung",
+        "total": "Gesamt"
+    },
+    "fireCrystal": {
+        "line": "Kosten an Fire Crystal und Refined Fire Crystal für jedes Gebäude. Nur Referenz, hier wird nichts bei deinem Häuptling gespeichert.",
+        "description": "Fire Crystals und Refined Fire Crystals, die jedes Gebäude für jede Fire-Crystal-Stufe braucht. Eine Stufe summiert die fünf Upgrades, die an ihrer Basiszeile enden. Ein Strich bedeutet, dass das Gebäude für diese Stufe keine Kosten hat.",
+        "rangeLabel": "Stufen",
+        "ranges": {
+            "all": "Alle Stufen, FC 1 bis FC 10",
+            "early": "FC 1 bis FC 5",
+            "late": "FC 6 bis FC 10"
+        },
+        "tableLabel": "Fire-Crystal-Kosten für jedes Gebäude"
+    },
+    "shards": {
+        "line": "Kosten an Fire Crystal Shard und Refined Fire Crystal für die Truppenforschung von T11 und T12. Nur Referenz, hier wird nichts bei deinem Häuptling gespeichert.",
+        "description": "Fire Crystal Shards und Refined Fire Crystals für die Truppenforschung von T11 und T12. Die Zeile Freischaltung summiert die Forschung, die die Truppe freischaltet: Tier 1 bis 5 für T11 und Tier 1 für T12. Die Extras sind die Forschung danach. T11 kostet keine Refined Fire Crystals. Ein Strich bedeutet, dass die Forschung in dieser Spalte keine Kosten hat.",
+        "tierLabel": "Truppen-Tier",
+        "tiers": {
+            "all": "T11 und T12",
+            "T11": "T11",
+            "T12": "T12"
+        },
+        "tableLabel": "Fire-Crystal-Shard-Kosten für jede Truppenforschung",
+        "rows": {
+            "unlock": "Freischaltung",
+            "tier": "Tier {tier}",
+            "extrasTotal": "Extras",
+            "total": "Gesamt"
+        }
+    }
+}

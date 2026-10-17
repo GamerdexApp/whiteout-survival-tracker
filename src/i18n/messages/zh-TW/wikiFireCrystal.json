@@ -1,0 +1,35 @@
+{
+    "tables": {
+        "building": "建築",
+        "research": "研究",
+        "total": "合計"
+    },
+    "fireCrystal": {
+        "line": "每座建築的 Fire Crystal 和 Refined Fire Crystal 花費。僅供參考，這裡不會儲存到你的領主。",
+        "description": "每座建築達到各 Fire Crystal 等級所需的 Fire Crystal 和 Refined Fire Crystal。每個等級是止於其基礎列的五次升級之和。短橫線表示該建築在該等級沒有花費。",
+        "rangeLabel": "等級",
+        "ranges": {
+            "all": "所有等級，FC 1 到 FC 10",
+            "early": "FC 1 到 FC 5",
+            "late": "FC 6 到 FC 10"
+        },
+        "tableLabel": "每座建築的 Fire Crystal 花費"
+    },
+    "shards": {
+        "line": "T11 和 T12 兵種研究的 Fire Crystal Shard 和 Refined Fire Crystal 花費。僅供參考，這裡不會儲存到你的領主。",
+        "description": "T11 和 T12 兵種研究所需的 Fire Crystal Shard 和 Refined Fire Crystal。解鎖列合計解鎖該兵種的研究：T11 為第 1 到 5 階，T12 為第 1 階。額外項是之後的研究。T11 不花費 Refined Fire Crystal。短橫線表示該研究在此欄沒有花費。",
+        "tierLabel": "兵種階級",
+        "tiers": {
+            "all": "T11 和 T12",
+            "T11": "T11",
+            "T12": "T12"
+        },
+        "tableLabel": "每項兵種研究的 Fire Crystal Shard 花費",
+        "rows": {
+            "unlock": "解鎖",
+            "tier": "第 {tier} 階",
+            "extrasTotal": "額外項",
+            "total": "合計"
+        }
+    }
+}

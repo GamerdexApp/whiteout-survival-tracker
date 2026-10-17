@@ -4,6 +4,7 @@ import {
   LuCalendarDays,
   LuCpu,
   LuCrown,
+  LuFlame,
   LuFlaskConical,
   LuGem,
   LuGraduationCap,
@@ -11,6 +12,7 @@ import {
   LuListChecks,
   LuPackage,
   LuPawPrint,
+  LuShapes,
   LuShield,
   LuShirt,
   LuSwords,
@@ -23,6 +25,7 @@ import {
 
 export const WIKI_PAGE_IDS = [
   "buildings",
+  "fireCrystal",
   "heroes",
   "heroGear",
   "experts",
@@ -31,6 +34,7 @@ export const WIKI_PAGE_IDS = [
   "chiefCharms",
   "troops",
   "research",
+  "fireCrystalShards",
   "allianceTech",
   "allianceStructures",
   "daybreak",
@@ -60,6 +64,12 @@ export const wikiPages: WikiPageInfo[] = [
     icon: LuBuilding2,
     trackerHref: "/buildings",
   },
+  {
+    id: "fireCrystal",
+    slug: "fire-crystal",
+    icon: LuFlame,
+    trackerHref: "/buildings",
+  },
   { id: "heroes", slug: "heroes", icon: LuSwords, trackerHref: "/heroes" },
   { id: "heroGear", slug: "hero-gear", icon: LuWrench, trackerHref: "/heroes" },
   {
@@ -86,6 +96,12 @@ export const wikiPages: WikiPageInfo[] = [
     id: "research",
     slug: "research",
     icon: LuFlaskConical,
+    trackerHref: "/research",
+  },
+  {
+    id: "fireCrystalShards",
+    slug: "fire-crystal-shards",
+    icon: LuShapes,
     trackerHref: "/research",
   },
   {

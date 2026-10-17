@@ -1,0 +1,35 @@
+{
+    "tables": {
+        "building": "Công trình",
+        "research": "Nghiên cứu",
+        "total": "Tổng"
+    },
+    "fireCrystal": {
+        "line": "Chi phí Fire Crystal và Refined Fire Crystal cho từng công trình. Chỉ để tham khảo, không có gì ở đây được lưu vào thủ lĩnh của bạn.",
+        "description": "Số Fire Crystal và Refined Fire Crystal mà mỗi công trình cần để đạt từng cấp Fire Crystal. Một cấp cộng dồn năm lần nâng cấp kết thúc ở hàng gốc của nó. Dấu gạch ngang nghĩa là công trình không có chi phí ở cấp đó.",
+        "rangeLabel": "Các cấp",
+        "ranges": {
+            "all": "Tất cả cấp, FC 1 đến FC 10",
+            "early": "FC 1 đến FC 5",
+            "late": "FC 6 đến FC 10"
+        },
+        "tableLabel": "Chi phí Fire Crystal của từng công trình"
+    },
+    "shards": {
+        "line": "Chi phí Fire Crystal Shard và Refined Fire Crystal cho nghiên cứu quân T11 và T12. Chỉ để tham khảo, không có gì ở đây được lưu vào thủ lĩnh của bạn.",
+        "description": "Số Fire Crystal Shard và Refined Fire Crystal cho nghiên cứu quân T11 và T12. Hàng Mở khóa cộng dồn các nghiên cứu mở khóa quân: bậc 1 đến 5 cho T11 và bậc 1 cho T12. Phần thêm là các nghiên cứu sau đó. T11 không tốn Refined Fire Crystal. Dấu gạch ngang nghĩa là nghiên cứu không có chi phí ở cột đó.",
+        "tierLabel": "Bậc quân",
+        "tiers": {
+            "all": "T11 và T12",
+            "T11": "T11",
+            "T12": "T12"
+        },
+        "tableLabel": "Chi phí Fire Crystal Shard của từng nghiên cứu quân",
+        "rows": {
+            "unlock": "Mở khóa",
+            "tier": "Bậc {tier}",
+            "extrasTotal": "Phần thêm",
+            "total": "Tổng"
+        }
+    }
+}

@@ -67,38 +67,5 @@
         "meta": "레벨, 전투력, 건설 비용 없음",
         "unlock": "Furnace {level}레벨에 해금돼요",
         "empty": "검색에 맞는 시설이 없어요."
-    },
-    "tables": {
-        "building": "건물",
-        "research": "연구",
-        "total": "합계"
-    },
-    "fireCrystal": {
-        "heading": "Fire Crystal 비용",
-        "description": "각 건물이 Fire Crystal 레벨마다 도달하는 데 필요한 Fire Crystal과 Refined Fire Crystal이에요. 한 레벨은 기본 행에서 끝나는 업그레이드 다섯 번을 합한 값이에요. 대시는 그 레벨에서 건물에 비용이 없다는 뜻이에요.",
-        "rangeLabel": "레벨",
-        "ranges": {
-            "all": "전체 레벨, FC 1부터 FC 10까지",
-            "early": "FC 1부터 FC 5까지",
-            "late": "FC 6부터 FC 10까지"
-        },
-        "tableLabel": "건물별 Fire Crystal 비용"
-    },
-    "shards": {
-        "heading": "Fire Crystal Shard 비용",
-        "description": "T11과 T12 병종 연구에 필요한 Fire Crystal Shard와 Refined Fire Crystal이에요. 해금 행은 해당 병종을 해금하는 연구를 합한 값이에요. T11은 1~5단계, T12는 1단계예요. 추가분은 그 이후의 연구예요. T11에는 Refined Fire Crystal이 들지 않아요. 대시는 이 열에서 연구에 비용이 없다는 뜻이에요.",
-        "tierLabel": "병종 단계",
-        "tiers": {
-            "all": "T11과 T12",
-            "T11": "T11",
-            "T12": "T12"
-        },
-        "tableLabel": "병종 연구별 Fire Crystal Shard 비용",
-        "rows": {
-            "unlock": "해금",
-            "tier": "{tier}단계",
-            "extrasTotal": "추가분",
-            "total": "합계"
-        }
     }
 }
