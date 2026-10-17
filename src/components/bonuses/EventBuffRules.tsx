@@ -20,7 +20,7 @@ export function EventBuffRules() {
 			<h2 className="text-base font-semibold">{t("title")}</h2>
 			<p className="text-muted">{t("intro")}</p>
 			<ScrollRegion label={t("title")}>
-				<table className="w-full min-w-[32rem] text-left">
+				<table className="w-full min-w-lg text-left">
 					<thead>
 						<tr>
 							<th className="py-1 pr-3">

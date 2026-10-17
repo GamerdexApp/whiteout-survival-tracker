@@ -138,7 +138,7 @@ export function ResearchTree({ tabId, views, visibleIds, onOpen }: ResearchTreeP
 							<>
 								<span
 									title={view.node.name}
-									className="line-clamp-2 text-center text-[11px] leading-tight break-words"
+									className="line-clamp-2 text-center text-[11px] leading-tight wrap-break-word"
 								>
 									{view.node.name}
 								</span>

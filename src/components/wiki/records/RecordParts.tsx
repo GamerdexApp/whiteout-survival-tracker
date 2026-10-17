@@ -88,7 +88,7 @@ export function RecordTiles({ children }: { children: ReactNode }) {
 export function RecordTile({ value, label }: { value: ReactNode; label: string }) {
 	return (
 		<Card className="flex min-w-0 flex-col gap-1 px-4 py-3">
-			<span className="text-ink font-mono text-lg break-words">{value}</span>
+			<span className="text-ink font-mono text-lg wrap-break-word">{value}</span>
 			<span className="text-muted">{label}</span>
 		</Card>
 	);

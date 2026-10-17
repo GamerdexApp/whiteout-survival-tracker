@@ -30,7 +30,7 @@ export function Drawer({ open, onClose, closeLabel, children }: DrawerProps) {
 			onClick={(event) => {
 				if (event.target === event.currentTarget) onClose();
 			}}
-			className="bg-sb-bg text-sb-text backdrop:bg-scrim fixed top-0 left-0 m-0 h-dvh max-h-none w-[310px] max-w-[85vw] flex-col gap-3 p-4 open:flex"
+			className="bg-sb-bg text-sb-text backdrop:bg-scrim fixed top-0 left-0 m-0 h-dvh max-h-none w-77.5 max-w-[85vw] flex-col gap-3 p-4 open:flex"
 		>
 			<div className="-mb-6 flex justify-end">
 				<IconButton

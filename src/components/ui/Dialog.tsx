@@ -11,7 +11,7 @@ type DialogVariant = "modal" | "wide" | "flyout";
 const panelClasses: Record<DialogVariant, string> = {
 	modal: "fixed m-0 mt-auto max-h-[90dvh] w-full max-w-none flex-col rounded-t-lg border-[1.5px] p-0 open:flex lg:m-auto lg:w-[calc(100%-2rem)] lg:max-w-xl lg:rounded-md",
 	wide: "fixed m-0 mt-auto max-h-[90dvh] w-full max-w-none flex-col rounded-t-lg border-[1.5px] p-0 open:flex lg:m-auto lg:w-[calc(100%-2rem)] lg:max-w-3xl lg:rounded-md",
-	flyout: "fixed inset-x-0 top-auto bottom-0 m-0 max-h-[90dvh] w-full max-w-none flex-col rounded-t-lg border-[1.5px] p-0 open:flex lg:top-0 lg:right-0 lg:left-auto lg:h-dvh lg:max-h-none lg:w-[640px] lg:rounded-none lg:border-y-0 lg:border-r-0",
+	flyout: "fixed inset-x-0 top-auto bottom-0 m-0 max-h-[90dvh] w-full max-w-none flex-col rounded-t-lg border-[1.5px] p-0 open:flex lg:top-0 lg:right-0 lg:left-auto lg:h-dvh lg:max-h-none lg:w-160 lg:rounded-none lg:border-y-0 lg:border-r-0",
 };
 
 interface DialogProps {

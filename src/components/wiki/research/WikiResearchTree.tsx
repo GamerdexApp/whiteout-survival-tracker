@@ -98,7 +98,7 @@ export function WikiResearchTree({
 						<>
 							<span
 								title={node.name}
-								className="line-clamp-2 text-center text-[11px] leading-tight break-words"
+								className="line-clamp-2 text-center text-[11px] leading-tight wrap-break-word"
 							>
 								{node.name}
 							</span>

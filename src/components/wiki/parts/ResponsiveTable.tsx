@@ -109,7 +109,7 @@ export function ResponsiveTable<Row>({
 								{cardColumns.map((column) => (
 									<span
 										key={column.id}
-										className={`block min-w-0 break-words ${column.wideOnCard ? "col-span-2" : ""}`}
+										className={`block min-w-0 wrap-break-word ${column.wideOnCard ? "col-span-2" : ""}`}
 									>
 										<span className="text-muted block font-mono text-xs uppercase">
 											{column.header}

@@ -26,7 +26,7 @@ function Sources({ sources }: { sources: string[] }) {
 		return <span className="text-muted italic">{t("sourcesUnknown")}</span>;
 	const extra = sources.length - MAX_SOURCES_SHOWN;
 	return (
-		<span className="line-clamp-2 break-words">
+		<span className="line-clamp-2 wrap-break-word">
 			{sources.slice(0, MAX_SOURCES_SHOWN).join(", ")}
 			{extra > 0 && <span className="text-muted"> +{extra}</span>}
 		</span>

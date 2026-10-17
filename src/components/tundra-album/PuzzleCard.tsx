@@ -90,7 +90,7 @@ export function PuzzleCard({
 					<span className="text-muted">{t("reward")}</span>
 					<RewardLine reward={puzzle.reward} />
 				</div>
-				<label className="border-line -mb-2 flex min-h-11 items-center gap-3 border-t-[1.5px] pt-1 font-medium has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-(--ring) lg:min-h-9">
+				<label className="border-line -mb-2 flex min-h-11 items-center gap-3 border-t-[1.5px] pt-1 font-medium has-focus-visible:outline-2 has-focus-visible:outline-offset-2 has-[:focus-visible]:outline-(--ring) lg:min-h-9">
 					<input
 						type="checkbox"
 						checked={done}

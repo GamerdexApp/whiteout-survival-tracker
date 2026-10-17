@@ -418,7 +418,7 @@ function PlanResult({ plan }: { plan: GearPlanResult }) {
 				))}
 			</div>
 			<ScrollRegion label={t("result.tableLabel")}>
-				<table className="w-full min-w-[26rem] text-left">
+				<table className="w-full min-w-104 text-left">
 					<thead>
 						<tr>
 							{resultColumnIds.map((id) => (

@@ -28,7 +28,7 @@ export function ChiefCard({ chief, isActive, onSetActive, onEdit, onDelete }: Ch
 	return (
 		<Card highlighted={isActive} className="flex h-full flex-col gap-3 p-4">
 			<div className="flex items-start justify-between gap-2">
-				<h2 className="min-w-0 text-base font-semibold break-words">{chief.name}</h2>
+				<h2 className="min-w-0 text-base font-semibold wrap-break-word">{chief.name}</h2>
 				{isActive && <Badge tone="kept">{t("active")}</Badge>}
 			</div>
 			<p className="text-muted line-clamp-2">{chief.notes ?? t("noNotes")}</p>

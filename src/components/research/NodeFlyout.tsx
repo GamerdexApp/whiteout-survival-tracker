@@ -135,7 +135,7 @@ function NodeContent({
 					<Card className="flex flex-col gap-3 p-4">
 						<h3 className="font-semibold">{upcomingTitle}</h3>
 						<ScrollRegion label={upcomingTitle}>
-							<table className="w-full min-w-[26rem] text-left">
+							<table className="w-full min-w-104 text-left">
 								<thead>
 									<tr>
 										{upcomingHeads.map((head) => (
@@ -184,7 +184,7 @@ function NodeContent({
 					<Card className="flex flex-col gap-3 p-4">
 						<h3 className="font-semibold">{t("cost.title")}</h3>
 						<ScrollRegion label={t("cost.title")}>
-							<table className="w-full min-w-[26rem] text-right">
+							<table className="w-full min-w-104 text-right">
 								<thead>
 									<tr>
 										<th className="py-1 pr-3 text-left">

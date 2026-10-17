@@ -24,7 +24,7 @@ export function SegmentedControl<Value extends string>({
 			{options.map((option) => (
 				<label
 					key={option.id}
-					className={`flex min-h-11 min-w-11 cursor-pointer items-center justify-center gap-1.5 px-3 font-medium has-[:focus-visible]:outline-2 has-[:focus-visible]:-outline-offset-2 has-[:focus-visible]:outline-(--ring) lg:min-h-9 ${
+					className={`flex min-h-11 min-w-11 cursor-pointer items-center justify-center gap-1.5 px-3 font-medium has-focus-visible:outline-2 has-focus-visible:-outline-offset-2 has-[:focus-visible]:outline-(--ring) lg:min-h-9 ${
 						option.id === value ? "bg-tint text-ink" : "bg-surface text-muted"
 					}`}
 				>

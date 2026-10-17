@@ -74,7 +74,7 @@ export function PetFiltersFlyout({
 						return (
 							<label
 								key={option.id}
-								className={`flex min-h-11 cursor-pointer items-center rounded-full border-[1.5px] px-4 has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-(--ring) lg:min-h-9 ${
+								className={`flex min-h-11 cursor-pointer items-center rounded-full border-[1.5px] px-4 has-focus-visible:outline-2 has-focus-visible:outline-offset-2 has-[:focus-visible]:outline-(--ring) lg:min-h-9 ${
 									selected
 										? "border-primary bg-tint font-medium"
 										: "border-line bg-surface"

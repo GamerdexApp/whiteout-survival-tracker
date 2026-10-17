@@ -100,7 +100,7 @@ export function FacilityMap() {
 										y: formatNumber(spot.y),
 									})}
 									style={{ left: percentOf(spot.x), top: percentOf(spot.y) }}
-									className={`absolute -translate-x-1/2 -translate-y-1/2 rounded-sm border px-0.5 font-mono text-[8px] leading-4 font-semibold sm:text-[10px] ${lit ? "border-primary bg-primary text-on-primary z-[1]" : "border-muted bg-surface text-ink"}`}
+									className={`absolute -translate-x-1/2 -translate-y-1/2 rounded-sm border px-0.5 font-mono text-[8px] leading-4 font-semibold sm:text-[10px] ${lit ? "border-primary bg-primary text-on-primary z-1" : "border-muted bg-surface text-ink"}`}
 								>
 									{`${spot.code}${spot.level}`}
 								</span>
@@ -136,7 +136,7 @@ export function FacilityMap() {
 										left: percentOf(structure.x),
 										top: percentOf(structure.y),
 									}}
-									className={`bg-surface text-ink absolute z-[2] flex -translate-x-1/2 -translate-y-1/2 items-center justify-center border-[1.5px] font-mono text-[9px] font-semibold sm:text-xs ${shape} ${selectedId === structure.id ? "border-primary ring-primary ring-2" : "border-ink"}`}
+									className={`bg-surface text-ink absolute z-2 flex -translate-x-1/2 -translate-y-1/2 items-center justify-center border-[1.5px] font-mono text-[9px] font-semibold sm:text-xs ${shape} ${selectedId === structure.id ? "border-primary ring-primary ring-2" : "border-ink"}`}
 								>
 									{structure.kind === "castle" ? (
 										<span className="max-sm:hidden">{label}</span>

@@ -89,7 +89,7 @@ export function PieceRewardsFlyout({
 						>
 							<span
 								aria-hidden="true"
-								className={`absolute top-0.5 -left-[7px] flex size-3 items-center justify-center rounded-full border-2 ${tier.reached ? "border-primary bg-primary" : tier.next ? "border-primary bg-surface" : "border-line bg-surface"}`}
+								className={`absolute top-0.5 -left-1.75 flex size-3 items-center justify-center rounded-full border-2 ${tier.reached ? "border-primary bg-primary" : tier.next ? "border-primary bg-surface" : "border-line bg-surface"}`}
 							/>
 							<div className="flex min-w-0 flex-1 flex-col gap-1">
 								<div className="flex flex-wrap items-baseline justify-between gap-2">

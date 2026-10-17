@@ -106,7 +106,7 @@ export function ItemSheet({ item, count, onCountChange, onSetToZero, onClose }: 
 								{item.sources.map((source) => (
 									<li
 										key={source}
-										className="border-line border-t-[1.5px] py-2 break-words first:border-t-0"
+										className="border-line border-t-[1.5px] py-2 wrap-break-word first:border-t-0"
 									>
 										{source}
 									</li>

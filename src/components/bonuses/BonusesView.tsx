@@ -276,7 +276,7 @@ function StatRow({
 								key={`${source.type}-${source.id}-${index}`}
 								className="border-line grid gap-x-3 gap-y-0.5 border-t-[1.5px] py-2 pr-4 pl-11 lg:grid-cols-[1fr_12rem_6rem]"
 							>
-								<span className="break-words">{source.label}</span>
+								<span className="wrap-break-word">{source.label}</span>
 								<span className="text-muted">
 									{t(`sourceTypes.${source.type}`)}
 								</span>

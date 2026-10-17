@@ -15,7 +15,7 @@ export function ScrollRegion({
 			aria-label={label}
 			tabIndex={0}
 			data-focus-inset
-			className={`focus-visible:outline-offset-[-2px] ${className}`}
+			className={`focus-visible:-outline-offset-2 ${className}`}
 			{...props}
 		/>
 	);

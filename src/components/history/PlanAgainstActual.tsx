@@ -46,7 +46,7 @@ function DayLine({ event, row }: { event: CoreEventId; row: DayRow }) {
 						ally: rankOf(row.allianceRank),
 					})}
 				</span>
-				<span className="text-muted hidden w-[7.5rem] text-right font-mono text-xs lg:block">
+				<span className="text-muted hidden w-30 text-right font-mono text-xs lg:block">
 					{t("share", { percent })}
 				</span>
 			</div>

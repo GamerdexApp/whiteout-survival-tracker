@@ -12,7 +12,7 @@ export function GearStatLines({ set }: { set: HeroGearSet }) {
 		<Card className="flex flex-col gap-3 p-4">
 			<h3 className="font-semibold">{t("title")}</h3>
 			<ScrollRegion label={t("title")}>
-				<table className="w-full min-w-[34rem] text-left">
+				<table className="w-full min-w-136 text-left">
 					<thead>
 						<tr>
 							<th className="w-24" />

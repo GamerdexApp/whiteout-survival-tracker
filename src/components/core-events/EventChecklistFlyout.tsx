@@ -215,7 +215,7 @@ function DayPlan({ chief, event, dayId, onChange }: DayProps & ChangeProps) {
 					<ul className="divide-line divide-y-[1.5px]">
 						{actions.map((action) => (
 							<li key={action.action}>
-								<label className="flex min-h-11 cursor-pointer items-center gap-3 py-2 has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-(--ring)">
+								<label className="flex min-h-11 cursor-pointer items-center gap-3 py-2 has-focus-visible:outline-2 has-focus-visible:outline-offset-2 has-[:focus-visible]:outline-(--ring)">
 									<input
 										type="checkbox"
 										checked={action.checked}

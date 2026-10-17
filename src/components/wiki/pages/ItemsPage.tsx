@@ -346,7 +346,7 @@ function CatalogCard() {
 									header: t("sources"),
 									width: "9rem",
 									render: (row) => (
-										<span className="block lg:max-w-[10rem]">
+										<span className="block lg:max-w-40">
 											<SourcesValue item={row} />
 										</span>
 									),

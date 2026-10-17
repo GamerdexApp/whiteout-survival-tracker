@@ -31,7 +31,7 @@ export function TroopSegmented<Value extends string>({
 			{options.map((option) => (
 				<label
 					key={option.id}
-					className={`relative flex min-h-11 flex-1 cursor-pointer items-center justify-center px-2 text-center font-medium has-[:disabled]:cursor-not-allowed has-[:focus-visible]:outline-2 has-[:focus-visible]:-outline-offset-2 has-[:focus-visible]:outline-(--ring) lg:min-h-9 lg:px-3 ${
+					className={`relative flex min-h-11 flex-1 cursor-pointer items-center justify-center px-2 text-center font-medium has-focus-visible:outline-2 has-focus-visible:-outline-offset-2 has-disabled:cursor-not-allowed has-[:focus-visible]:outline-(--ring) lg:min-h-9 lg:px-3 ${
 						option.id === value ? "bg-tint text-ink" : "bg-surface text-muted"
 					}`}
 				>

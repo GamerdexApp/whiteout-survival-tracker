@@ -9,7 +9,7 @@ interface CheckChipProps {
 export function CheckChip({ label, checked, onChange }: CheckChipProps) {
 	return (
 		<label
-			className={`flex min-h-11 cursor-pointer items-center gap-2 rounded-md border-[1.5px] px-3 has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-(--ring) lg:min-h-9 ${
+			className={`flex min-h-11 cursor-pointer items-center gap-2 rounded-md border-[1.5px] px-3 has-focus-visible:outline-2 has-focus-visible:outline-offset-2 has-[:focus-visible]:outline-(--ring) lg:min-h-9 ${
 				checked ? "border-primary bg-tint font-medium" : "border-line"
 			}`}
 		>

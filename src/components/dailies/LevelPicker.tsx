@@ -22,7 +22,7 @@ export function LevelPicker({ name, level, knownLevels, onChange }: LevelPickerP
 			{levels.map((option) => (
 				<label
 					key={option}
-					className={`flex min-h-11 min-w-11 cursor-pointer items-center justify-center px-3 font-medium has-[:focus-visible]:outline-2 has-[:focus-visible]:-outline-offset-2 has-[:focus-visible]:outline-(--ring) lg:min-h-9 lg:min-w-9 ${option === level ? "bg-primary text-on-primary" : "bg-surface"}`}
+					className={`flex min-h-11 min-w-11 cursor-pointer items-center justify-center px-3 font-medium has-focus-visible:outline-2 has-focus-visible:-outline-offset-2 has-[:focus-visible]:outline-(--ring) lg:min-h-9 lg:min-w-9 ${option === level ? "bg-primary text-on-primary" : "bg-surface"}`}
 				>
 					<input
 						type="radio"

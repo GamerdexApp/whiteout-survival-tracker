@@ -441,7 +441,7 @@ function PlanResult({ plan }: { plan: ExpertsPlan }) {
 				))}
 			</div>
 			<ScrollRegion label={t("tableLabel")}>
-				<table className="w-full min-w-[30rem] text-left">
+				<table className="w-full min-w-120 text-left">
 					<thead>
 						<tr>
 							{TABLE_HEADS.map((head) => (

@@ -58,7 +58,7 @@ export function TroopsPlanFlyout({ open, chief, onClose, onSave }: TroopsPlanFly
 					</Button>
 					<Button
 						variant="primary"
-						className="max-lg:flex-[2]"
+						className="max-lg:flex-2"
 						onClick={() => onSave(draft)}
 					>
 						{t("save")}

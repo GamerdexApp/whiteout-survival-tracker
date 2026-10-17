@@ -189,10 +189,10 @@ function PieceTile({ piece }: { piece: TundraAlbumPiece }) {
 					src={piece.img}
 					alt=""
 					loading="lazy"
-					className="aspect-[220/198] w-full object-contain"
+					className="aspect-220/198 w-full object-contain"
 				/>
 			) : (
-				<span aria-hidden="true" className="bg-track aspect-[220/198] w-full rounded-md" />
+				<span aria-hidden="true" className="bg-track aspect-220/198 w-full rounded-md" />
 			)}
 			<span className="font-semibold">{piece.name}</span>
 			<span className="text-muted font-mono text-xs">

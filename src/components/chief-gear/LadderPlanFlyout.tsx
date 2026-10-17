@@ -313,7 +313,7 @@ function PlanBody({
 			<Card className="flex flex-col gap-2 p-4">
 				<h3 className="font-semibold">{t("converter.title")}</h3>
 				<ScrollRegion label={t("converter.title")}>
-					<table className="w-full min-w-[22rem] text-left">
+					<table className="w-full min-w-88 text-left">
 						<thead>
 							<tr>
 								{[
