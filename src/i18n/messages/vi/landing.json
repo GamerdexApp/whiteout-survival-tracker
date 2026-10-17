@@ -19,7 +19,9 @@
         "title": "Theo dõi mọi thủ lĩnh. Lên kế hoạch mọi nâng cấp.",
         "description": "Công cụ đồng hành miễn phí cho Whiteout Survival. Gom công trình, anh hùng, trang bị và nghiên cứu về một nơi, lên kế hoạch cho lần nâng cấp tiếp theo, và chạy các Sự kiện chính từ ngày đầu đến lúc lưu lịch sử.",
         "note": "Miễn phí. Dữ liệu của bạn nằm trong trình duyệt này.",
-        "learnMore": "Tìm hiểu thêm"
+        "learnMore": "Tìm hiểu thêm",
+        "screenshotAlt": "Trang Tổng quan của trình theo dõi hiển thị sức mạnh, Furnace, sự kiện và tiến độ của một Thủ lĩnh",
+        "tryCalculators": "Thử các bộ tính"
     },
     "continue": {
         "label": "Chào mừng quay lại",
@@ -91,7 +93,9 @@
         "heroes": "anh hùng",
         "research": "công nghệ nghiên cứu",
         "coreEvents": "bộ tính sự kiện chính",
-        "wiki": "trang wiki tham khảo, kèm dòng thời gian"
+        "calculators": "bộ tính nhập tự do",
+        "wiki": "trang wiki tham khảo, kèm dòng thời gian",
+        "languages": "ngôn ngữ"
     },
     "pages": {
         "label": "Mọi trang",
@@ -147,6 +151,18 @@
                 "question": "Tôi có cần tài khoản hoặc tệp lưu từ game không?",
                 "answer": "Không. Bạn tự nhập các cấp của mình. Dữ liệu game về chi phí, thời gian và chỉ số đã có sẵn trong công cụ."
             },
+            "calculators": {
+                "question": "Tôi có cần thủ lĩnh để dùng các bộ tính không?",
+                "answer": "Không. Các bộ tính và Wiki chạy mà không cần thủ lĩnh hay tài khoản. Bạn nhập số và không có gì được lưu."
+            },
+            "languages": {
+                "question": "Hỗ trợ những ngôn ngữ nào?",
+                "answer": "Tiếng Anh, tiếng Ả Rập, tiếng Tây Ban Nha (Tây Ban Nha và Mỹ Latinh), tiếng Pháp, tiếng Đức, tiếng Ý, tiếng Bồ Đào Nha (Brazil và Bồ Đào Nha), tiếng Nga, tiếng Trung (giản thể và phồn thể), tiếng Nhật, tiếng Hàn, tiếng Thổ Nhĩ Kỳ, tiếng Việt, tiếng Thái, tiếng Indonesia và tiếng Mã Lai. Chọn một ngôn ngữ trong Cài đặt."
+            },
+            "phone": {
+                "question": "Có dùng được trên điện thoại không?",
+                "answer": "Có. Mọi trang đều có bố cục cho điện thoại với nút lớn, và không cần cài đặt gì. Dữ liệu của bạn nằm trong trình duyệt bạn dùng, nên hãy xuất một bản sao lưu để chuyển sang thiết bị khác."
+            },
             "official": {
                 "question": "Đây có phải ứng dụng chính thức không?",
                 "answer": "Không. Đây là công cụ của người hâm mộ, không chính thức. Nó không liên kết với Whiteout Survival hay Century Games. Chân trang có thông báo đầy đủ."
@@ -161,5 +177,54 @@
         "title": "Bắt đầu theo dõi ngay hôm nay",
         "description": "Thủ lĩnh đầu tiên chỉ cần một cái tên. Bạn có thể đổi mọi thứ sau.",
         "wiki": "Xem Wiki"
+    },
+    "screens": {
+        "label": "Xem thực tế",
+        "title": "Điểm qua các trang",
+        "open": "Mở {page}",
+        "items": {
+            "buildings": {
+                "title": "Lập kế hoạch mọi nâng cấp công trình",
+                "description": "Cấp hiện tại và cấp mục tiêu, tài nguyên và thời gian mỗi nâng cấp cần, và việc mỗi thợ xây đang làm.",
+                "page": "Công trình",
+                "alt": "Trang Công trình với các thợ xây, cấp độ và nút nâng cấp"
+            },
+            "coreEvents": {
+                "title": "Điều hành sự kiện chính",
+                "description": "Tính điểm của từng hành động, ghi lại mỗi ngày và kiểm tra mốc điểm cho SvS, Alliance Showdown, King of Icefield và Hall of Chief.",
+                "page": "Sự kiện chính",
+                "alt": "Trang Sự kiện chính hiển thị State of Power với điểm của từng ngày"
+            },
+            "calculator": {
+                "title": "Tính toán không cần thủ lĩnh",
+                "description": "Nhập cấp và mục tiêu để xem ngay tài nguyên, thời gian, sức mạnh và điểm sự kiện.",
+                "page": "Máy tính",
+                "alt": "Máy tính quân đội hiển thị các trại, tài nguyên và điểm sự kiện"
+            }
+        }
+    },
+    "tools": {
+        "label": "Không cần thủ lĩnh",
+        "title": "Dùng Wiki và các bộ tính ngay",
+        "description": "Cả hai chạy mà không cần thủ lĩnh hay tài khoản. Những gì bạn nhập không được lưu.",
+        "open": "Mở {page}",
+        "items": {
+            "calculators": {
+                "title": "{amount} bộ tính miễn phí",
+                "description": "Quái thú, công trình, bùa, trang bị, chuyên gia, anh hùng, thú cưng, nghiên cứu và quân đội. Nhập số của bạn để xem tài nguyên, thời gian, sức mạnh và điểm sự kiện.",
+                "page": "Máy tính"
+            },
+            "wiki": {
+                "title": "Tham khảo dữ liệu game",
+                "description": "Công trình, anh hùng, trang bị, thú cưng, nghiên cứu, sự kiện, VIP và hơn thế nữa, với chi phí, thời gian và yêu cầu, cùng các bảng Fire Crystal và dòng thời gian máy chủ.",
+                "page": "Wiki"
+            }
+        }
+    },
+    "languages": {
+        "label": "Ngôn ngữ của bạn",
+        "title": "Có {amount} ngôn ngữ",
+        "description": "Chọn ngôn ngữ trong Cài đặt. Số và ngày theo ngôn ngữ, hoặc theo định dạng bạn chọn. Tiếng Ả Rập đọc từ phải sang trái.",
+        "listLabel": "Ngôn ngữ"
     }
 }

@@ -3,14 +3,22 @@ import { formatNumber } from "@/lib/format";
 import { landingCounts } from "@/data/game/landing";
 import { LandingSection } from "./LandingSection";
 
-const numberIds = ["buildings", "heroes", "research", "coreEvents", "wiki"] as const;
+const numberIds = [
+	"buildings",
+	"heroes",
+	"research",
+	"coreEvents",
+	"calculators",
+	"wiki",
+	"languages",
+] as const;
 
 export function Numbers() {
 	const t = useTranslations("landing.numbers");
 
 	return (
 		<LandingSection id="numbers" title={t("title")} hideTitle>
-			<ul className="grid grid-cols-2 gap-x-4 gap-y-6 md:grid-cols-5">
+			<ul className="grid grid-cols-2 gap-x-4 gap-y-6 sm:grid-cols-4 lg:grid-cols-7">
 				{numberIds.map((id) => (
 					<li key={id} className="flex flex-col gap-1">
 						<span className="text-primary font-mono text-3xl">

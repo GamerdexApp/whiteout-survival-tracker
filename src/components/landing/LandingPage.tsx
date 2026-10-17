@@ -8,8 +8,11 @@ import { Features } from "./Features";
 import { Hero } from "./Hero";
 import { HowItWorks } from "./HowItWorks";
 import { LandingTopBar } from "./LandingTopBar";
+import { Languages } from "./Languages";
 import { Numbers } from "./Numbers";
 import { Privacy } from "./Privacy";
+import { Screens } from "./Screens";
+import { Tools } from "./Tools";
 
 export function LandingPage() {
 	return (
@@ -18,8 +21,11 @@ export function LandingPage() {
 			<main id="main" className="flex-1">
 				<Hero />
 				<HowItWorks />
+				<Screens />
 				<Features />
+				<Tools />
 				<Numbers />
+				<Languages />
 				<AllPages />
 				<Privacy />
 				<Faq />

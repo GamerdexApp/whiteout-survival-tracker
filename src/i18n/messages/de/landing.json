@@ -19,7 +19,9 @@
         "title": "Jeden Häuptling im Blick. Jedes Upgrade geplant.",
         "description": "Ein kostenloser Begleiter für Whiteout Survival. Behalte Gebäude, Helden, Gear und Forschung an einem Ort, plane das nächste Upgrade und begleite deine Kern-Events vom ersten Tag bis zum Verlauf.",
         "note": "Kostenlos. Deine Daten bleiben in diesem Browser.",
-        "learnMore": "Mehr erfahren"
+        "learnMore": "Mehr erfahren",
+        "screenshotAlt": "Die Übersicht des Trackers mit Macht, Furnace, Events und Fortschritt eines Häuptlings",
+        "tryCalculators": "Probier die Rechner aus"
     },
     "continue": {
         "label": "Willkommen zurück",
@@ -91,7 +93,9 @@
         "heroes": "Helden",
         "research": "Forschungen",
         "coreEvents": "Rechner für Kern-Events",
-        "wiki": "Wiki-Referenzseiten plus Zeitleiste"
+        "calculators": "Rechner mit freier Eingabe",
+        "wiki": "Wiki-Referenzseiten plus Zeitleiste",
+        "languages": "Sprachen"
     },
     "pages": {
         "label": "Alle Seiten",
@@ -147,6 +151,18 @@
                 "question": "Brauche ich einen Account oder einen Spielstand aus dem Spiel?",
                 "answer": "Nein. Du trägst deine Stufen selbst ein. Die Spieldaten für Kosten, Zeiten und Werte sind im Tracker enthalten."
             },
+            "calculators": {
+                "question": "Brauche ich einen Häuptling, um die Rechner zu nutzen?",
+                "answer": "Nein. Die Rechner und das Wiki funktionieren ohne Häuptling und ohne Account. Du tippst die Zahlen ein und nichts wird gespeichert."
+            },
+            "languages": {
+                "question": "Welche Sprachen gibt es?",
+                "answer": "Englisch, Arabisch, Spanisch (Spanien und Lateinamerika), Französisch, Deutsch, Italienisch, Portugiesisch (Brasilien und Portugal), Russisch, Chinesisch (vereinfacht und traditionell), Japanisch, Koreanisch, Türkisch, Vietnamesisch, Thailändisch, Indonesisch und Malaiisch. Wähle eine in den Einstellungen."
+            },
+            "phone": {
+                "question": "Läuft es auf meinem Handy?",
+                "answer": "Ja. Jede Seite hat ein Handy-Layout mit großen Buttons, und es gibt nichts zu installieren. Deine Daten bleiben in dem Browser, den du nutzt. Exportiere ein Backup, um sie auf ein anderes Gerät zu bringen."
+            },
             "official": {
                 "question": "Ist das eine offizielle App?",
                 "answer": "Nein. Es ist ein inoffizielles Fan-Tool. Es steht in keiner Verbindung zu Whiteout Survival oder Century Games. Den vollständigen Hinweis findest du im Footer."
@@ -161,5 +177,54 @@
         "title": "Fang heute an",
         "description": "Dein erster Häuptling braucht nur einen Namen. Alles andere kannst du später ändern.",
         "wiki": "Wiki durchstöbern"
+    },
+    "screens": {
+        "label": "Live ansehen",
+        "title": "Ein Blick auf die Seiten",
+        "open": "{page} öffnen",
+        "items": {
+            "buildings": {
+                "title": "Jedes Gebäude-Upgrade planen",
+                "description": "Aktuelle Stufen und Ziele, die Ressourcen und die Zeit, die jedes Upgrade braucht, und woran jeder Baumeister arbeitet.",
+                "page": "Gebäude",
+                "alt": "Die Seite Gebäude mit den Baumeistern, Stufen und Upgrade-Buttons"
+            },
+            "coreEvents": {
+                "title": "Deine Kern-Events begleiten",
+                "description": "Zähle die Punkte jeder Aktion, erfasse jeden Tag und prüfe die Schwellen für SvS, Alliance Showdown, King of Icefield und Hall of Chief.",
+                "page": "Kern-Events",
+                "alt": "Die Seite Kern-Events mit State of Power und den Punkten jedes Tages"
+            },
+            "calculator": {
+                "title": "Ohne Häuptling rechnen",
+                "description": "Gib Stufen und Ziele ein und sieh Ressourcen, Zeit, Macht und Event-Punkte auf einmal.",
+                "page": "Rechner",
+                "alt": "Der Truppenrechner mit Lagern, Ressourcen und Event-Punkten"
+            }
+        }
+    },
+    "tools": {
+        "label": "Kein Häuptling nötig",
+        "title": "Nutze das Wiki und die Rechner sofort",
+        "description": "Beides funktioniert ohne Häuptling und ohne Account. Nichts, was du eintippst, wird gespeichert.",
+        "open": "{page} öffnen",
+        "items": {
+            "calculators": {
+                "title": "{amount} kostenlose Rechner",
+                "description": "Bestien, Gebäude, Amulette, Gear, Experten, Helden, Haustiere, Forschung und Truppen. Tippe deine Zahlen ein und sieh Ressourcen, Zeit, Macht und Event-Punkte.",
+                "page": "Rechner"
+            },
+            "wiki": {
+                "title": "Referenz zu den Spieldaten",
+                "description": "Gebäude, Helden, Gear, Haustiere, Forschung, Events, VIP und mehr, mit Kosten, Zeiten und Voraussetzungen, dazu die Fire-Crystal-Tabellen und eine Server-Zeitleiste.",
+                "page": "Wiki"
+            }
+        }
+    },
+    "languages": {
+        "label": "Deine Sprache",
+        "title": "In {amount} Sprachen verfügbar",
+        "description": "Wähle eine Sprache in den Einstellungen. Zahlen und Datumsangaben folgen der Sprache oder einem Format, das du wählst. Arabisch wird von rechts nach links gelesen.",
+        "listLabel": "Sprachen"
     }
 }

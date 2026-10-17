@@ -19,7 +19,9 @@
         "title": "追蹤每位領主，規劃每次升級。",
         "description": "Whiteout Survival 的免費輔助工具。把建築、英雄、裝備和研究集中在同一處，規劃下一次升級，從第一天到歷史紀錄都能管理核心活動。",
         "note": "免費。你的資料只存在這個瀏覽器中。",
-        "learnMore": "了解更多"
+        "learnMore": "了解更多",
+        "screenshotAlt": "追蹤器的總覽頁面，顯示一位領主的戰力、Furnace、活動和進度",
+        "tryCalculators": "試用計算器"
     },
     "continue": {
         "label": "歡迎回來",
@@ -91,7 +93,9 @@
         "heroes": "位英雄",
         "research": "項研究科技",
         "coreEvents": "個核心活動計算器",
-        "wiki": "個百科參考頁面，另有時間軸"
+        "calculators": "個自由輸入計算器",
+        "wiki": "個百科參考頁面，另有時間軸",
+        "languages": "種語言"
     },
     "pages": {
         "label": "所有頁面",
@@ -147,6 +151,18 @@
                 "question": "需要帳號或遊戲的存檔嗎？",
                 "answer": "不需要。等級由你自己輸入。花費、時間和數值等遊戲資料已內建在追蹤器中。"
             },
+            "calculators": {
+                "question": "使用計算器需要領主嗎？",
+                "answer": "不需要。計算器和百科不需要領主和帳號。輸入數字即可，不會儲存任何內容。"
+            },
+            "languages": {
+                "question": "支援哪些語言？",
+                "answer": "英文、阿拉伯文、西班牙文（西班牙和拉丁美洲）、法文、德文、義大利文、葡萄牙文（巴西和葡萄牙）、俄文、中文（簡體和繁體）、日文、韓文、土耳其文、越南文、泰文、印尼文和馬來文。可在設定中選擇。"
+            },
+            "phone": {
+                "question": "手機上能用嗎？",
+                "answer": "可以。每個頁面都有搭配大按鈕的手機版面，不需要安裝。資料存在你使用的瀏覽器中，要換到其他裝置時請先匯出備份。"
+            },
             "official": {
                 "question": "這是官方應用程式嗎？",
                 "answer": "不是。這是非官方的玩家自製工具，與 Whiteout Survival 或 Century Games 無關。完整聲明請見頁尾。"
@@ -161,5 +177,54 @@
         "title": "今天就開始追蹤",
         "description": "建立第一位領主只需要一個名字，之後都可以修改。",
         "wiki": "瀏覽百科"
+    },
+    "screens": {
+        "label": "實際畫面",
+        "title": "頁面一覽",
+        "open": "開啟{page}",
+        "items": {
+            "buildings": {
+                "title": "規劃每次建築升級",
+                "description": "目前等級和目標等級、每次升級所需的資源和時間，以及每位建造者正在做什麼。",
+                "page": "建築",
+                "alt": "建築頁面，顯示建造者、等級和升級按鈕"
+            },
+            "coreEvents": {
+                "title": "進行核心活動",
+                "description": "計算每個行動的積分，記錄每一天，並查看 SvS、Alliance Showdown、King of Icefield 和 Hall of Chief 的門檻。",
+                "page": "核心活動",
+                "alt": "核心活動頁面，顯示 State of Power 和每天的積分"
+            },
+            "calculator": {
+                "title": "不用領主也能計算",
+                "description": "輸入等級和目標，立刻查看資源、時間、戰力和活動積分。",
+                "page": "計算器",
+                "alt": "兵種計算器，顯示營地、資源和活動積分"
+            }
+        }
+    },
+    "tools": {
+        "label": "不需要領主",
+        "title": "立即使用百科和計算器",
+        "description": "兩者都不需要領主和帳號。你輸入的內容不會被儲存。",
+        "open": "開啟{page}",
+        "items": {
+            "calculators": {
+                "title": "{amount} 個免費計算器",
+                "description": "野獸、建築、魅力、裝備、專家、英雄、寵物、研究和兵種。輸入數字就能查看資源、時間、戰力和活動積分。",
+                "page": "計算器"
+            },
+            "wiki": {
+                "title": "遊戲資料參考",
+                "description": "建築、英雄、裝備、寵物、研究、活動、VIP 等內容，含花費、時間和需求，另有 Fire Crystal 表格和伺服器時間軸。",
+                "page": "百科"
+            }
+        }
+    },
+    "languages": {
+        "label": "你的語言",
+        "title": "支援 {amount} 種語言",
+        "description": "在設定中選擇語言。數字和日期會依語言顯示，也可以選擇其他格式。阿拉伯文由右向左閱讀。",
+        "listLabel": "語言"
     }
 }

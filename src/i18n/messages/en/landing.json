@@ -19,7 +19,9 @@
         "title": "Track every chief. Plan every upgrade.",
         "description": "A free companion for Whiteout Survival. Keep your buildings, heroes, gear and research in one place, plan the next upgrade, and run your Core events from the first day to the history.",
         "note": "Free. Your data stays in this browser.",
-        "learnMore": "Learn more"
+        "learnMore": "Learn more",
+        "screenshotAlt": "The Overview page of the tracker showing the power, furnace, events and progress of a chief",
+        "tryCalculators": "Try the calculators"
     },
     "continue": {
         "label": "Welcome back",
@@ -91,7 +93,9 @@
         "heroes": "heroes",
         "research": "research techs",
         "coreEvents": "Core event calculators",
-        "wiki": "wiki reference pages, plus a timeline"
+        "calculators": "free form calculators",
+        "wiki": "wiki reference pages, plus a timeline",
+        "languages": "languages"
     },
     "pages": {
         "label": "Every page",
@@ -147,6 +151,18 @@
                 "question": "Do I need an account or a save file from the game?",
                 "answer": "No. You type in your levels yourself. The game data for costs, times and stats comes with the tracker."
             },
+            "calculators": {
+                "question": "Do I need a chief to use the calculators?",
+                "answer": "No. The calculators and the Wiki work without a chief and without an account. You type the numbers and nothing is saved."
+            },
+            "languages": {
+                "question": "Which languages are supported?",
+                "answer": "English, Arabic, Spanish (Spain and Latin America), French, German, Italian, Portuguese (Brazil and Portugal), Russian, Chinese (Simplified and Traditional), Japanese, Korean, Turkish, Vietnamese, Thai, Indonesian and Malay. Pick one in Settings."
+            },
+            "phone": {
+                "question": "Does it work on my phone?",
+                "answer": "Yes. Every page has a phone layout with large buttons, and there is nothing to install. Your data stays in the browser you use, so export a backup to move it to another device."
+            },
             "official": {
                 "question": "Is this an official app?",
                 "answer": "No. It is an unofficial fan tool. It is not affiliated with Whiteout Survival or Century Games. The footer has the full notice."
@@ -161,5 +177,54 @@
         "title": "Start tracking today",
         "description": "Your first chief takes one name. You can change everything later.",
         "wiki": "Browse the Wiki"
+    },
+    "screens": {
+        "label": "See it in action",
+        "title": "A look at the pages",
+        "open": "Open {page}",
+        "items": {
+            "buildings": {
+                "title": "Plan every building upgrade",
+                "description": "Current and goal levels, the resources and time each upgrade needs, and what each builder is working on.",
+                "page": "Buildings",
+                "alt": "The Buildings page with the builders, levels and upgrade buttons"
+            },
+            "coreEvents": {
+                "title": "Run your Core events",
+                "description": "Count the points of each action, log every day and check the thresholds for SvS, Alliance Showdown, King of Icefield and Hall of Chief.",
+                "page": "Core Events",
+                "alt": "The Core Events page showing State of Power with the points of each day"
+            },
+            "calculator": {
+                "title": "Calculate without a chief",
+                "description": "Type levels and goals and see the resources, time, power and event points at once.",
+                "page": "Calculator",
+                "alt": "The troop calculator showing the camps, resources and event points"
+            }
+        }
+    },
+    "tools": {
+        "label": "No chief needed",
+        "title": "Use the Wiki and the calculators right away",
+        "description": "Both work without a chief and without an account. Nothing you type is saved.",
+        "open": "Open the {page}",
+        "items": {
+            "calculators": {
+                "title": "{amount} free calculators",
+                "description": "Beasts, buildings, charms, gear, experts, heroes, pets, research and troops. Type your numbers and see the resources, time, power and event points.",
+                "page": "Calculator"
+            },
+            "wiki": {
+                "title": "Game data reference",
+                "description": "Buildings, heroes, gear, pets, research, events, VIP and more, with costs, times and requirements, plus the Fire Crystal tables and a server timeline.",
+                "page": "Wiki"
+            }
+        }
+    },
+    "languages": {
+        "label": "Your language",
+        "title": "Available in {amount} languages",
+        "description": "Pick a language in Settings. Numbers and dates follow the language, or a format that you choose. Arabic reads from right to left.",
+        "listLabel": "Languages"
     }
 }

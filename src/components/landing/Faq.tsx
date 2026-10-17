@@ -3,7 +3,18 @@ import { LuChevronDown } from "react-icons/lu";
 import { Card } from "@/comps/ui/Card";
 import { LandingSection } from "./LandingSection";
 
-const questionIds = ["free", "data", "move", "chiefs", "account", "official", "wiki"] as const;
+const questionIds = [
+	"free",
+	"data",
+	"move",
+	"chiefs",
+	"account",
+	"calculators",
+	"languages",
+	"phone",
+	"official",
+	"wiki",
+] as const;
 
 export function Faq() {
 	const t = useTranslations("landing.faq");

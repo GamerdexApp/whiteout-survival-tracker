@@ -19,7 +19,9 @@
         "title": "Suivez chaque chef. Planifiez chaque amélioration.",
         "description": "Un compagnon gratuit pour Whiteout Survival. Gardez vos bâtiments, héros, équipement et recherches au même endroit, planifiez la prochaine amélioration et gérez vos événements clés du premier jour à l'historique.",
         "note": "Gratuit. Vos données restent dans ce navigateur.",
-        "learnMore": "En savoir plus"
+        "learnMore": "En savoir plus",
+        "screenshotAlt": "La page Vue d'ensemble du tracker avec la puissance, le Furnace, les événements et la progression d'un chef",
+        "tryCalculators": "Essayez les calculateurs"
     },
     "continue": {
         "label": "Bon retour",
@@ -91,7 +93,9 @@
         "heroes": "héros",
         "research": "technologies de recherche",
         "coreEvents": "calculateurs d'événements clés",
-        "wiki": "pages de référence du wiki, plus une chronologie"
+        "calculators": "calculateurs à saisie libre",
+        "wiki": "pages de référence du wiki, plus une chronologie",
+        "languages": "langues"
     },
     "pages": {
         "label": "Toutes les pages",
@@ -147,6 +151,18 @@
                 "question": "Ai-je besoin d'un compte ou d'une sauvegarde du jeu ?",
                 "answer": "Non. Vous saisissez vous-même vos niveaux. Les données du jeu pour les coûts, durées et stats sont fournies avec le tracker."
             },
+            "calculators": {
+                "question": "Ai-je besoin d'un chef pour utiliser les calculateurs ?",
+                "answer": "Non. Les calculateurs et le Wiki fonctionnent sans chef et sans compte. Vous saisissez les nombres et rien n'est enregistré."
+            },
+            "languages": {
+                "question": "Quelles langues sont disponibles ?",
+                "answer": "Anglais, arabe, espagnol (Espagne et Amérique latine), français, allemand, italien, portugais (Brésil et Portugal), russe, chinois (simplifié et traditionnel), japonais, coréen, turc, vietnamien, thaï, indonésien et malais. Choisissez-en une dans Paramètres."
+            },
+            "phone": {
+                "question": "Est-ce que cela marche sur mon téléphone ?",
+                "answer": "Oui. Chaque page a une mise en page pour téléphone avec de grands boutons, et il n'y a rien à installer. Vos données restent dans le navigateur que vous utilisez, alors exportez une sauvegarde pour les passer sur un autre appareil."
+            },
             "official": {
                 "question": "Est-ce une application officielle ?",
                 "answer": "Non. C'est un outil de fan non officiel. Il n'est pas affilié à Whiteout Survival ni à Century Games. Le pied de page contient l'avis complet."
@@ -161,5 +177,54 @@
         "title": "Commencez le suivi dès aujourd'hui",
         "description": "Votre premier chef ne demande qu'un nom. Vous pourrez tout changer ensuite.",
         "wiki": "Parcourir le Wiki"
+    },
+    "screens": {
+        "label": "Voyez-le en action",
+        "title": "Un aperçu des pages",
+        "open": "Ouvrir {page}",
+        "items": {
+            "buildings": {
+                "title": "Planifiez chaque amélioration de bâtiment",
+                "description": "Niveaux actuels et objectifs, les ressources et la durée de chaque amélioration, et ce sur quoi chaque bâtisseur travaille.",
+                "page": "Bâtiments",
+                "alt": "La page Bâtiments avec les bâtisseurs, les niveaux et les boutons d'amélioration"
+            },
+            "coreEvents": {
+                "title": "Gérez vos événements clés",
+                "description": "Comptez les points de chaque action, notez chaque jour et vérifiez les seuils de SvS, Alliance Showdown, King of Icefield et Hall of Chief.",
+                "page": "Événements clés",
+                "alt": "La page Événements clés avec State of Power et les points de chaque jour"
+            },
+            "calculator": {
+                "title": "Calculez sans chef",
+                "description": "Saisissez niveaux et objectifs et voyez d'un coup les ressources, la durée, la puissance et les points d'événement.",
+                "page": "Calculateur",
+                "alt": "Le calculateur de troupes avec les camps, les ressources et les points d'événement"
+            }
+        }
+    },
+    "tools": {
+        "label": "Sans chef",
+        "title": "Utilisez le Wiki et les calculateurs tout de suite",
+        "description": "Les deux fonctionnent sans chef et sans compte. Rien de ce que vous saisissez n'est enregistré.",
+        "open": "Ouvrir {page}",
+        "items": {
+            "calculators": {
+                "title": "{amount} calculateurs gratuits",
+                "description": "Bêtes, bâtiments, charmes, équipement, experts, héros, familiers, recherche et troupes. Saisissez vos nombres et voyez les ressources, la durée, la puissance et les points d'événement.",
+                "page": "Calculateur"
+            },
+            "wiki": {
+                "title": "Référence des données du jeu",
+                "description": "Bâtiments, héros, équipement, familiers, recherche, événements, VIP et plus, avec coûts, durées et prérequis, plus les tables de Fire Crystal et une chronologie du serveur.",
+                "page": "Wiki"
+            }
+        }
+    },
+    "languages": {
+        "label": "Votre langue",
+        "title": "Disponible en {amount} langues",
+        "description": "Choisissez une langue dans Paramètres. Les nombres et les dates suivent la langue, ou un format de votre choix. L'arabe se lit de droite à gauche.",
+        "listLabel": "Langues"
     }
 }

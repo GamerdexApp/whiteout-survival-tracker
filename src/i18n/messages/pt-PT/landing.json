@@ -19,7 +19,9 @@
         "title": "Todos os chefes registados. Todas as melhorias planeadas.",
         "description": "Um companheiro gratuito para Whiteout Survival. Edifícios, heróis, equipamento e investigação num só lugar, a próxima melhoria planeada e os eventos principais geridos do primeiro dia ao histórico.",
         "note": "Gratuito. Os dados ficam neste navegador.",
-        "learnMore": "Saber mais"
+        "learnMore": "Saber mais",
+        "screenshotAlt": "A página Resumo do tracker com o poder, o Furnace, os eventos e o progresso de um chefe",
+        "tryCalculators": "Experimentar as calculadoras"
     },
     "continue": {
         "label": "Bem-vindo de volta",
@@ -91,7 +93,9 @@
         "heroes": "heróis",
         "research": "tecnologias de investigação",
         "coreEvents": "calculadoras de eventos principais",
-        "wiki": "páginas de referência na wiki, mais uma cronologia"
+        "calculators": "calculadoras de formulário livre",
+        "wiki": "páginas de referência na wiki, mais uma cronologia",
+        "languages": "idiomas"
     },
     "pages": {
         "label": "Todas as páginas",
@@ -147,6 +151,18 @@
                 "question": "É preciso uma conta ou um ficheiro de gravação do jogo?",
                 "answer": "Não. Os níveis são introduzidos à mão. Os dados do jogo, como custos, tempos e estatísticas, já vêm com o tracker."
             },
+            "calculators": {
+                "question": "É preciso um chefe para usar as calculadoras?",
+                "answer": "Não. As calculadoras e a Wiki funcionam sem chefe e sem conta. Introduzem-se os números e nada é guardado."
+            },
+            "languages": {
+                "question": "Que idiomas são suportados?",
+                "answer": "Inglês, árabe, espanhol (Espanha e América Latina), francês, alemão, italiano, português (Brasil e Portugal), russo, chinês (simplificado e tradicional), japonês, coreano, turco, vietnamita, tailandês, indonésio e malaio. Escolha-se um nas Definições."
+            },
+            "phone": {
+                "question": "Funciona no telemóvel?",
+                "answer": "Sim. Cada página tem um esquema para telemóvel com botões grandes e não há nada para instalar. Os dados ficam no navegador usado, por isso convém exportar uma cópia de segurança para os mudar para outro dispositivo."
+            },
             "official": {
                 "question": "É uma aplicação oficial?",
                 "answer": "Não. É uma ferramenta não oficial feita por fãs. Não é afiliada a Whiteout Survival nem à Century Games. O rodapé tem o aviso completo."
@@ -161,5 +177,54 @@
         "title": "Começar o registo hoje",
         "description": "O primeiro chefe só precisa de um nome. Tudo o resto pode ser alterado depois.",
         "wiki": "Explorar a Wiki"
+    },
+    "screens": {
+        "label": "Veja em ação",
+        "title": "Uma vista das páginas",
+        "open": "Abrir {page}",
+        "items": {
+            "buildings": {
+                "title": "Planear todas as melhorias de edifícios",
+                "description": "Níveis atuais e objetivo, os recursos e o tempo de cada melhoria e o que cada construtor está a fazer.",
+                "page": "Edifícios",
+                "alt": "A página Edifícios com os construtores, os níveis e os botões de melhoria"
+            },
+            "coreEvents": {
+                "title": "Gerir os eventos principais",
+                "description": "Contar os pontos de cada ação, registar cada dia e verificar os limiares de SvS, Alliance Showdown, King of Icefield e Hall of Chief.",
+                "page": "Eventos principais",
+                "alt": "A página Eventos principais com o State of Power e os pontos de cada dia"
+            },
+            "calculator": {
+                "title": "Calcular sem um chefe",
+                "description": "Indicar níveis e objetivos e ver de uma vez os recursos, o tempo, o poder e os pontos de evento.",
+                "page": "Calculadora",
+                "alt": "A calculadora de tropas com os acampamentos, os recursos e os pontos de evento"
+            }
+        }
+    },
+    "tools": {
+        "label": "Sem precisar de um chefe",
+        "title": "Usar já a Wiki e as calculadoras",
+        "description": "Ambas funcionam sem chefe e sem conta. Nada do que é escrito fica guardado.",
+        "open": "Abrir {page}",
+        "items": {
+            "calculators": {
+                "title": "{amount} calculadoras gratuitas",
+                "description": "Mascotes, edifícios, amuletos, equipamento, especialistas, heróis, investigação e tropas. Introduzir os números e ver os recursos, o tempo, o poder e os pontos de evento.",
+                "page": "Calculadora"
+            },
+            "wiki": {
+                "title": "Referência dos dados do jogo",
+                "description": "Edifícios, heróis, equipamento, mascotes, investigação, eventos, VIP e mais, com custos, tempos e requisitos, mais as tabelas de Fire Crystal e uma cronologia do servidor.",
+                "page": "Wiki"
+            }
+        }
+    },
+    "languages": {
+        "label": "O idioma",
+        "title": "Disponível em {amount} idiomas",
+        "description": "Escolher um idioma nas Definições. Os números e as datas seguem o idioma ou um formato à escolha. O árabe lê-se da direita para a esquerda.",
+        "listLabel": "Idiomas"
     }
 }

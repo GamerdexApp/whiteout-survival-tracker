@@ -3,6 +3,7 @@
 import { DATE_FORMATS, NUMBER_FORMATS, numberTagOf } from "@/i18n/formats";
 import type { DateFormatId, NumberFormatId } from "@/i18n/formats";
 import { formatDateTime, getI18nState } from "@/i18n/formatter";
+import { languageName } from "@/i18n/languageName";
 import { SUPPORTED_LOCALES } from "@/i18n/locales";
 import type { Locale } from "@/i18n/locales";
 import {
@@ -21,9 +22,6 @@ const SAMPLE_NUMBER = 1234567.89;
 const SAMPLE_DATE = new Date(2026, 9, 8, 14, 5);
 const SAMPLE_INSTANT = new Date(Date.UTC(2026, 9, 8, 14, 5)).toISOString();
 const timeZones = supportedTimeZones();
-
-const languageName = (locale: Locale) =>
-	new Intl.DisplayNames([locale], { type: "language" }).of(locale) ?? locale;
 
 const dateExample = (format: DateFormatId, locale: Locale) => {
 	if (format === "auto") {

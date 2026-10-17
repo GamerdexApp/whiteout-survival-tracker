@@ -1,3 +1,5 @@
+import { SUPPORTED_LOCALES } from "@/i18n/locales";
+import { calculators } from "@/data/calculators";
 import { wikiPages } from "@/data/wiki";
 import { allBuildings } from "./buildings";
 import { CORE_EVENT_IDS } from "./coreEvents";
@@ -10,4 +12,6 @@ export const landingCounts = {
   research: allResearch.length,
   coreEvents: CORE_EVENT_IDS.length,
   wiki: wikiPages.length,
+  calculators: calculators.length,
+  languages: SUPPORTED_LOCALES.length,
 };

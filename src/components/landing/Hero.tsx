@@ -9,6 +9,7 @@ import { describeChief } from "@/service/chiefs";
 import { ButtonLink } from "@/comps/ui/Button";
 import { Card } from "@/comps/ui/Card";
 import { SectionLabel } from "@/comps/ui/SectionLabel";
+import { ScreenshotFrame } from "./ScreenshotFrame";
 import { useLandingAction } from "./useLandingAction";
 
 function ContinueCard() {
@@ -45,32 +46,15 @@ function ContinueCard() {
 	);
 }
 
-function OverviewSketch() {
+function OverviewScreenshot() {
+	const t = useTranslations("landing");
+
 	return (
-		<div
-			aria-hidden="true"
-			className="bg-surface border-line hidden overflow-hidden rounded-md border-[1.5px] lg:block"
-		>
-			<div className="border-line flex gap-1.5 border-b-[1.5px] px-3 py-2">
-				<span className="bg-track size-2 rounded-full" />
-				<span className="bg-track size-2 rounded-full" />
-				<span className="bg-track size-2 rounded-full" />
-			</div>
-			<div className="flex h-56">
-				<div className="bg-sb-bg w-1/4" />
-				<div className="flex flex-1 flex-col gap-3 p-4">
-					<div className="bg-ink h-4 w-2/5 rounded-sm" />
-					{["w-4/5", "w-3/5", "w-2/3", "w-1/2"].map((width) => (
-						<div key={width} className="flex items-center gap-3">
-							<div className="bg-track h-2.5 w-1/4 rounded-sm" />
-							<div className="bg-track h-2.5 flex-1 rounded-sm">
-								<div className={`bg-primary h-full rounded-sm ${width}`} />
-							</div>
-						</div>
-					))}
-				</div>
-			</div>
-		</div>
+		<ScreenshotFrame
+			name="overview"
+			alt={t("hero.screenshotAlt")}
+			className="hidden lg:block"
+		/>
 	);
 }
 
@@ -95,11 +79,14 @@ export function Hero() {
 							{t(`action.${primary.id}`)}
 						</ButtonLink>
 						<ButtonLink href="#how">{t("hero.learnMore")}</ButtonLink>
+						<ButtonLink href="/wiki/calculator" variant="ghost">
+							{t("hero.tryCalculators")}
+						</ButtonLink>
 					</div>
 					<p className="text-muted text-[13px]">{t("hero.note")}</p>
 					<ContinueCard />
 				</div>
-				<OverviewSketch />
+				<OverviewScreenshot />
 			</div>
 		</section>
 	);

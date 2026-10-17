@@ -19,7 +19,9 @@
         "title": "Lacak setiap Chief. Rencanakan setiap upgrade.",
         "description": "Pendamping gratis untuk Whiteout Survival. Simpan bangunan, pahlawan, perlengkapan, dan risetmu di satu tempat, rencanakan upgrade berikutnya, dan jalankan Core events dari hari pertama sampai riwayat.",
         "note": "Gratis. Datamu tetap di browser ini.",
-        "learnMore": "Pelajari lebih lanjut"
+        "learnMore": "Pelajari lebih lanjut",
+        "screenshotAlt": "Halaman Ringkasan tracker yang menampilkan kekuatan, Furnace, event, dan progres sebuah Chief",
+        "tryCalculators": "Coba kalkulatornya"
     },
     "continue": {
         "label": "Selamat datang kembali",
@@ -91,7 +93,9 @@
         "heroes": "pahlawan",
         "research": "teknologi riset",
         "coreEvents": "kalkulator Core event",
-        "wiki": "halaman referensi wiki, ditambah linimasa"
+        "calculators": "kalkulator bebas isi",
+        "wiki": "halaman referensi wiki, ditambah linimasa",
+        "languages": "bahasa"
     },
     "pages": {
         "label": "Semua halaman",
@@ -147,6 +151,18 @@
                 "question": "Apakah perlu akun atau berkas simpanan dari game?",
                 "answer": "Tidak. Kamu mengisi levelmu sendiri. Data game untuk biaya, waktu, dan statistik sudah termasuk di tracker."
             },
+            "calculators": {
+                "question": "Apakah perlu Chief untuk memakai kalkulator?",
+                "answer": "Tidak. Kalkulator dan Wiki bisa dipakai tanpa Chief dan tanpa akun. Kamu mengetik angkanya dan tidak ada yang disimpan."
+            },
+            "languages": {
+                "question": "Bahasa apa saja yang didukung?",
+                "answer": "Inggris, Arab, Spanyol (Spanyol dan Amerika Latin), Prancis, Jerman, Italia, Portugis (Brasil dan Portugal), Rusia, Mandarin (Sederhana dan Tradisional), Jepang, Korea, Turki, Vietnam, Thai, Indonesia, dan Melayu. Pilih satu di Pengaturan."
+            },
+            "phone": {
+                "question": "Apakah bisa dipakai di ponsel?",
+                "answer": "Bisa. Setiap halaman punya tampilan ponsel dengan tombol besar, dan tidak ada yang perlu diinstal. Datamu tetap di browser yang kamu pakai, jadi ekspor cadangan untuk memindahkannya ke perangkat lain."
+            },
             "official": {
                 "question": "Apakah ini aplikasi resmi?",
                 "answer": "Bukan. Ini alat penggemar tidak resmi. Tidak berafiliasi dengan Whiteout Survival atau Century Games. Pemberitahuan lengkap ada di footer."
@@ -161,5 +177,54 @@
         "title": "Mulai melacak hari ini",
         "description": "Chief pertamamu hanya butuh satu nama. Semuanya bisa diubah nanti.",
         "wiki": "Jelajahi Wiki"
+    },
+    "screens": {
+        "label": "Lihat cara kerjanya",
+        "title": "Sekilas tentang halaman-halamannya",
+        "open": "Buka {page}",
+        "items": {
+            "buildings": {
+                "title": "Rencanakan setiap upgrade bangunan",
+                "description": "Level saat ini dan target, sumber daya dan waktu yang dibutuhkan tiap upgrade, serta apa yang sedang dikerjakan tiap pembangun.",
+                "page": "Bangunan",
+                "alt": "Halaman Bangunan dengan para pembangun, level, dan tombol upgrade"
+            },
+            "coreEvents": {
+                "title": "Jalankan Core event-mu",
+                "description": "Hitung poin tiap aksi, catat setiap hari, dan cek ambang untuk SvS, Alliance Showdown, King of Icefield, dan Hall of Chief.",
+                "page": "Core Events",
+                "alt": "Halaman Core Events yang menampilkan State of Power dengan poin tiap hari"
+            },
+            "calculator": {
+                "title": "Hitung tanpa Chief",
+                "description": "Ketik level dan target, lalu lihat sumber daya, waktu, kekuatan, dan poin event sekaligus.",
+                "page": "Kalkulator",
+                "alt": "Kalkulator pasukan yang menampilkan camp, sumber daya, dan poin event"
+            }
+        }
+    },
+    "tools": {
+        "label": "Tanpa Chief",
+        "title": "Pakai Wiki dan kalkulator langsung",
+        "description": "Keduanya bisa dipakai tanpa Chief dan tanpa akun. Apa pun yang kamu ketik tidak disimpan.",
+        "open": "Buka {page}",
+        "items": {
+            "calculators": {
+                "title": "{amount} kalkulator gratis",
+                "description": "Monster, bangunan, jimat, perlengkapan, ahli, pahlawan, hewan peliharaan, riset, dan pasukan. Ketik angkamu dan lihat sumber daya, waktu, kekuatan, dan poin event.",
+                "page": "Kalkulator"
+            },
+            "wiki": {
+                "title": "Referensi data game",
+                "description": "Bangunan, pahlawan, perlengkapan, hewan peliharaan, riset, event, VIP, dan lainnya, lengkap dengan biaya, waktu, dan syarat, ditambah tabel Fire Crystal dan linimasa server.",
+                "page": "Wiki"
+            }
+        }
+    },
+    "languages": {
+        "label": "Bahasamu",
+        "title": "Tersedia dalam {amount} bahasa",
+        "description": "Pilih bahasa di Pengaturan. Angka dan tanggal mengikuti bahasa, atau format yang kamu pilih. Bahasa Arab dibaca dari kanan ke kiri.",
+        "listLabel": "Bahasa"
     }
 }

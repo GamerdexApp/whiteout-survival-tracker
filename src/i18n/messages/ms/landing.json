@@ -19,7 +19,9 @@
         "title": "Jejak setiap chief. Rancang setiap naik taraf.",
         "description": "Rakan percuma untuk Whiteout Survival. Simpan bangunan, hero, gear dan penyelidikan anda di satu tempat, rancang naik taraf seterusnya, dan jalankan acara Utama anda dari hari pertama hingga sejarahnya.",
         "note": "Percuma. Data anda kekal dalam pelayar ini.",
-        "learnMore": "Ketahui lebih lanjut"
+        "learnMore": "Ketahui lebih lanjut",
+        "screenshotAlt": "Halaman Gambaran Keseluruhan penjejak yang memaparkan kuasa, Furnace, acara dan kemajuan seorang chief",
+        "tryCalculators": "Cuba kalkulator"
     },
     "continue": {
         "label": "Selamat kembali",
@@ -91,7 +93,9 @@
         "heroes": "hero",
         "research": "teknologi penyelidikan",
         "coreEvents": "kalkulator acara Utama",
-        "wiki": "halaman rujukan wiki, serta garis masa"
+        "calculators": "kalkulator bentuk bebas",
+        "wiki": "halaman rujukan wiki, serta garis masa",
+        "languages": "bahasa"
     },
     "pages": {
         "label": "Setiap halaman",
@@ -147,6 +151,18 @@
                 "question": "Adakah saya perlukan akaun atau fail simpanan daripada permainan?",
                 "answer": "Tidak. Anda menaip tahap anda sendiri. Data permainan untuk kos, masa dan statistik disertakan bersama penjejak."
             },
+            "calculators": {
+                "question": "Adakah saya perlukan chief untuk menggunakan kalkulator?",
+                "answer": "Tidak. Kalkulator dan Wiki berfungsi tanpa chief dan tanpa akaun. Anda menaip nombor dan tiada apa disimpan."
+            },
+            "languages": {
+                "question": "Bahasa apakah yang disokong?",
+                "answer": "Inggeris, Arab, Sepanyol (Sepanyol dan Amerika Latin), Perancis, Jerman, Itali, Portugis (Brazil dan Portugal), Rusia, Cina (Ringkas dan Tradisional), Jepun, Korea, Turki, Vietnam, Thai, Indonesia dan Melayu. Pilih satu dalam Tetapan."
+            },
+            "phone": {
+                "question": "Adakah ia berfungsi pada telefon saya?",
+                "answer": "Ya. Setiap halaman mempunyai reka letak telefon dengan butang besar, dan tiada apa perlu dipasang. Data anda kekal dalam pelayar yang anda guna, jadi eksport sandaran untuk memindahkannya ke peranti lain."
+            },
             "official": {
                 "question": "Adakah ini aplikasi rasmi?",
                 "answer": "Tidak. Ia ialah alat peminat tidak rasmi. Ia tidak berkaitan dengan Whiteout Survival atau Century Games. Pemberitahuan penuh ada di pengaki."
@@ -161,5 +177,54 @@
         "title": "Mula menjejak hari ini",
         "description": "Chief pertama anda hanya perlukan satu nama. Anda boleh mengubah segalanya kemudian.",
         "wiki": "Semak imbas Wiki"
+    },
+    "screens": {
+        "label": "Lihat cara ia berfungsi",
+        "title": "Sekilas pandang pada halaman",
+        "open": "Buka {page}",
+        "items": {
+            "buildings": {
+                "title": "Rancang setiap naik taraf bangunan",
+                "description": "Tahap semasa dan matlamat, sumber dan masa yang diperlukan setiap naik taraf, dan apa yang sedang dikerjakan setiap pembina.",
+                "page": "Bangunan",
+                "alt": "Halaman Bangunan dengan pembina, tahap dan butang naik taraf"
+            },
+            "coreEvents": {
+                "title": "Jalankan acara Utama anda",
+                "description": "Kira mata setiap tindakan, log setiap hari dan semak ambang untuk SvS, Alliance Showdown, King of Icefield dan Hall of Chief.",
+                "page": "Acara Utama",
+                "alt": "Halaman Acara Utama yang menunjukkan State of Power dengan mata setiap hari"
+            },
+            "calculator": {
+                "title": "Kira tanpa chief",
+                "description": "Taip tahap dan matlamat dan lihat sumber, masa, kuasa dan mata acara serentak.",
+                "page": "Kalkulator",
+                "alt": "Kalkulator tentera yang menunjukkan camp, sumber dan mata acara"
+            }
+        }
+    },
+    "tools": {
+        "label": "Tidak perlu chief",
+        "title": "Guna Wiki dan kalkulator terus",
+        "description": "Kedua-duanya berfungsi tanpa chief dan tanpa akaun. Apa yang anda taip tidak disimpan.",
+        "open": "Buka {page}",
+        "items": {
+            "calculators": {
+                "title": "{amount} kalkulator percuma",
+                "description": "Raksasa, bangunan, charm, gear, pakar, hero, haiwan peliharaan, penyelidikan dan tentera. Taip nombor anda dan lihat sumber, masa, kuasa dan mata acara.",
+                "page": "Kalkulator"
+            },
+            "wiki": {
+                "title": "Rujukan data permainan",
+                "description": "Bangunan, hero, gear, haiwan peliharaan, penyelidikan, acara, VIP dan banyak lagi, dengan kos, masa dan keperluan, serta jadual Fire Crystal dan garis masa pelayan.",
+                "page": "Wiki"
+            }
+        }
+    },
+    "languages": {
+        "label": "Bahasa anda",
+        "title": "Tersedia dalam {amount} bahasa",
+        "description": "Pilih bahasa dalam Tetapan. Nombor dan tarikh mengikut bahasa, atau format yang anda pilih. Bahasa Arab dibaca dari kanan ke kiri.",
+        "listLabel": "Bahasa"
     }
 }

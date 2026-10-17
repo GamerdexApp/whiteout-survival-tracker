@@ -19,7 +19,9 @@
         "title": "Her şefi takip et. Her yükseltmeyi planla.",
         "description": "Whiteout Survival için ücretsiz bir yardımcı. Binalarını, kahramanlarını, ekipmanlarını ve araştırmalarını tek yerde tut, sıradaki yükseltmeyi planla ve Ana Etkinliklerini ilk günden geçmişe kadar yönet.",
         "note": "Ücretsiz. Verilerin bu tarayıcıda kalır.",
-        "learnMore": "Daha fazla bilgi"
+        "learnMore": "Daha fazla bilgi",
+        "screenshotAlt": "Bir şefin gücünü, Furnace'ini, etkinliklerini ve ilerlemesini gösteren takipçinin Genel Bakış sayfası",
+        "tryCalculators": "Hesaplayıcıları dene"
     },
     "continue": {
         "label": "Tekrar hoş geldin",
@@ -91,7 +93,9 @@
         "heroes": "kahraman",
         "research": "araştırma teknolojisi",
         "coreEvents": "Ana Etkinlik hesaplayıcısı",
-        "wiki": "wiki başvuru sayfası ve bir zaman çizelgesi"
+        "calculators": "serbest girişli hesaplayıcı",
+        "wiki": "wiki başvuru sayfası ve bir zaman çizelgesi",
+        "languages": "dil"
     },
     "pages": {
         "label": "Tüm sayfalar",
@@ -147,6 +151,18 @@
                 "question": "Oyundan bir hesaba ya da kayıt dosyasına ihtiyacım var mı?",
                 "answer": "Hayır. Seviyelerini kendin girersin. Maliyet, süre ve istatistik verileri takipçiyle birlikte gelir."
             },
+            "calculators": {
+                "question": "Hesaplayıcıları kullanmak için şef gerekir mi?",
+                "answer": "Hayır. Hesaplayıcılar ve Wiki, şef ve hesap olmadan çalışır. Sayıları yazarsın ve hiçbir şey kaydedilmez."
+            },
+            "languages": {
+                "question": "Hangi diller destekleniyor?",
+                "answer": "İngilizce, Arapça, İspanyolca (İspanya ve Latin Amerika), Fransızca, Almanca, İtalyanca, Portekizce (Brezilya ve Portekiz), Rusça, Çince (Basitleştirilmiş ve Geleneksel), Japonca, Korece, Türkçe, Vietnamca, Tayca, Endonezce ve Malayca. Ayarlar'dan birini seç."
+            },
+            "phone": {
+                "question": "Telefonumda çalışır mı?",
+                "answer": "Evet. Her sayfanın büyük düğmeli bir telefon düzeni var ve kurulacak bir şey yok. Verilerin kullandığın tarayıcıda kalır, bu yüzden başka bir cihaza taşımak için bir yedek dışa aktar."
+            },
             "official": {
                 "question": "Bu resmi bir uygulama mı?",
                 "answer": "Hayır. Resmi olmayan bir hayran aracıdır. Whiteout Survival veya Century Games ile bağlantılı değildir. Tam bildirim alt bilgidedir."
@@ -161,5 +177,54 @@
         "title": "Bugün takibe başla",
         "description": "İlk şefin için bir ad yeter. Her şeyi sonradan değiştirebilirsin.",
         "wiki": "Wiki'ye göz at"
+    },
+    "screens": {
+        "label": "Çalışırken gör",
+        "title": "Sayfalara bir bakış",
+        "open": "Aç: {page}",
+        "items": {
+            "buildings": {
+                "title": "Her bina yükseltmesini planla",
+                "description": "Mevcut ve hedef seviyeler, her yükseltmenin gerektirdiği kaynaklar ve süre, ve her inşaatçının üzerinde çalıştığı iş.",
+                "page": "Binalar",
+                "alt": "İnşaatçıları, seviyeleri ve yükseltme düğmelerini gösteren Binalar sayfası"
+            },
+            "coreEvents": {
+                "title": "Ana Etkinliklerini yönet",
+                "description": "Her eylemin puanını say, her günü kaydet ve SvS, Alliance Showdown, King of Icefield ve Hall of Chief eşiklerini kontrol et.",
+                "page": "Ana Etkinlikler",
+                "alt": "Ana Etkinlikler sayfası, State of Power ve her günün puanları"
+            },
+            "calculator": {
+                "title": "Şefsiz hesapla",
+                "description": "Seviyeleri ve hedefleri yaz, kaynakları, süreyi, gücü ve etkinlik puanını bir arada gör.",
+                "page": "Hesaplayıcı",
+                "alt": "Kampları, kaynakları ve etkinlik puanını gösteren birlik hesaplayıcısı"
+            }
+        }
+    },
+    "tools": {
+        "label": "Şef gerekmez",
+        "title": "Wiki ve hesaplayıcıları hemen kullan",
+        "description": "İkisi de şef ve hesap olmadan çalışır. Yazdığın hiçbir şey kaydedilmez.",
+        "open": "Aç: {page}",
+        "items": {
+            "calculators": {
+                "title": "{amount} ücretsiz hesaplayıcı",
+                "description": "Canavarlar, binalar, tılsımlar, ekipman, uzmanlar, kahramanlar, evcil hayvanlar, araştırma ve birlikler. Sayılarını yaz, kaynakları, süreyi, gücü ve etkinlik puanını gör.",
+                "page": "Hesaplayıcı"
+            },
+            "wiki": {
+                "title": "Oyun verisi başvurusu",
+                "description": "Binalar, kahramanlar, ekipman, evcil hayvanlar, araştırma, etkinlikler, VIP ve daha fazlası; maliyetler, süreler ve gereksinimlerle birlikte, ayrıca Fire Crystal tabloları ve bir sunucu zaman çizelgesi.",
+                "page": "Wiki"
+            }
+        }
+    },
+    "languages": {
+        "label": "Dilin",
+        "title": "Dil desteği: {amount} dil",
+        "description": "Ayarlar'dan bir dil seç. Sayılar ve tarihler dile ya da seçtiğin bir biçime uyar. Arapça sağdan sola okunur.",
+        "listLabel": "Diller"
     }
 }

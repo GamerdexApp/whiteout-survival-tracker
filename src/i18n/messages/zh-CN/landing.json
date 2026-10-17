@@ -19,7 +19,9 @@
         "title": "记录每个领主，规划每次升级。",
         "description": "Whiteout Survival 的免费助手。把建筑、英雄、装备和研究集中在一处，规划下一次升级，并从第一天起记录核心活动直到历史。",
         "note": "免费使用。你的数据保存在此浏览器中。",
-        "learnMore": "了解更多"
+        "learnMore": "了解更多",
+        "screenshotAlt": "追踪器的总览页面，显示一位领主的战力、Furnace、活动和进度",
+        "tryCalculators": "试用计算器"
     },
     "continue": {
         "label": "欢迎回来",
@@ -91,7 +93,9 @@
         "heroes": "位英雄",
         "research": "项研究科技",
         "coreEvents": "个核心活动计算器",
-        "wiki": "个百科资料页，另有时间线"
+        "calculators": "个自由输入计算器",
+        "wiki": "个百科资料页，另有时间线",
+        "languages": "种语言"
     },
     "pages": {
         "label": "全部页面",
@@ -147,6 +151,18 @@
                 "question": "需要账号或游戏的存档文件吗？",
                 "answer": "不需要。等级由你自己填写。费用、时间和属性等游戏数据已内置在工具中。"
             },
+            "calculators": {
+                "question": "使用计算器需要领主吗？",
+                "answer": "不需要。计算器和百科无需领主和账号即可使用。输入数字即可，不会保存任何内容。"
+            },
+            "languages": {
+                "question": "支持哪些语言？",
+                "answer": "英语、阿拉伯语、西班牙语（西班牙和拉丁美洲）、法语、德语、意大利语、葡萄牙语（巴西和葡萄牙）、俄语、中文（简体和繁体）、日语、韩语、土耳其语、越南语、泰语、印度尼西亚语和马来语。可在设置中选择。"
+            },
+            "phone": {
+                "question": "能在手机上使用吗？",
+                "answer": "可以。每个页面都有带大按钮的手机布局，无需安装。数据保存在你使用的浏览器中，如需转移到其他设备，请先导出备份。"
+            },
             "official": {
                 "question": "这是官方应用吗？",
                 "answer": "不是。这是非官方的玩家工具，与 Whiteout Survival 或 Century Games 无关。页脚有完整声明。"
@@ -161,5 +177,54 @@
         "title": "今天就开始记录",
         "description": "创建第一个领主只需要一个名字。之后都可以修改。",
         "wiki": "浏览百科"
+    },
+    "screens": {
+        "label": "实际效果",
+        "title": "页面一览",
+        "open": "打开{page}",
+        "items": {
+            "buildings": {
+                "title": "规划每次建筑升级",
+                "description": "当前等级和目标等级，每次升级所需的资源和时间，以及每个建造队列正在做什么。",
+                "page": "建筑",
+                "alt": "建筑页面，显示建造队列、等级和升级按钮"
+            },
+            "coreEvents": {
+                "title": "进行核心活动",
+                "description": "统计每项行动的积分，记录每一天，并查看 SvS、Alliance Showdown、King of Icefield 和 Hall of Chief 的门槛。",
+                "page": "核心活动",
+                "alt": "核心活动页面，显示 State of Power 和每天的积分"
+            },
+            "calculator": {
+                "title": "无需领主即可计算",
+                "description": "输入等级和目标，立即查看资源、时间、战力和活动积分。",
+                "page": "计算器",
+                "alt": "兵种计算器，显示营地、资源和活动积分"
+            }
+        }
+    },
+    "tools": {
+        "label": "无需领主",
+        "title": "立即使用百科和计算器",
+        "description": "两者都无需领主和账号。你输入的内容不会被保存。",
+        "open": "打开{page}",
+        "items": {
+            "calculators": {
+                "title": "{amount} 个免费计算器",
+                "description": "野兽、建筑、魅力、装备、专家、英雄、宠物、研究和兵种。输入数字即可查看资源、时间、战力和活动积分。",
+                "page": "计算器"
+            },
+            "wiki": {
+                "title": "游戏数据资料",
+                "description": "建筑、英雄、装备、宠物、研究、活动、VIP 等内容，含费用、时间和要求，另有 Fire Crystal 表格和服务器时间线。",
+                "page": "百科"
+            }
+        }
+    },
+    "languages": {
+        "label": "你的语言",
+        "title": "支持 {amount} 种语言",
+        "description": "在设置中选择语言。数字和日期会跟随语言，也可以选择其他格式。阿拉伯语从右向左阅读。",
+        "listLabel": "语言"
     }
 }
