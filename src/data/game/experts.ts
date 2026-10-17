@@ -21,6 +21,9 @@ export const findExpert = (id: string) => experts().find(id);
 export const unreleasedExpertName = (id: string) =>
   unreleasedExperts().find(id)?.name;
 
+/** Experts the game has not released yet. They show on the Wiki but have no page. */
+export const unreleasedExpertList = unreleasedExperts().get();
+
 export const MAX_AFFINITY = EXPERT_MAX_LEVEL;
 export const EXP_PER_LEARNING_MINUTE = EXPERT_SKILL_EXP_PER_LEARNING_MINUTE;
 export const ADVANCEMENT_INTERVAL = 10;
