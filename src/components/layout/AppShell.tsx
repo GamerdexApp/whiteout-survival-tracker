@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { usePathname } from "next/navigation";
 import type { ReactNode } from "react";
 import { useUI } from "@/lib/contexts/UIContext";
 import { Drawer } from "@/comps/ui/Drawer";
@@ -12,15 +13,30 @@ import { ThemeSync } from "./ThemeSync";
 export function AppShell({ children }: { children: ReactNode }) {
 	const t = useTranslations("shell.appShell");
 	const { drawerOpen, closeDrawer } = useUI();
+	const isLanding = usePathname() === "/";
+
+	const skipLink = (
+		<a
+			href="#main"
+			className="focus:bg-surface sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 focus:rounded-md focus:px-3 focus:py-2"
+		>
+			{t("skipToContent")}
+		</a>
+	);
+
+	if (isLanding) {
+		return (
+			<>
+				{skipLink}
+				<ThemeSync />
+				{children}
+			</>
+		);
+	}
 
 	return (
 		<div className="flex min-h-dvh">
-			<a
-				href="#main"
-				className="focus:bg-surface sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 focus:rounded-md focus:px-3 focus:py-2"
-			>
-				{t("skipToContent")}
-			</a>
+			{skipLink}
 			<ThemeSync />
 			<aside className="bg-sb-bg text-sb-text sticky top-0 hidden h-dvh w-62 shrink-0 flex-col px-4 pt-5 pb-4 lg:flex">
 				<SidebarContent />

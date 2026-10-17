@@ -15,6 +15,7 @@ import facilities from "./en/facilities.json";
 import heroes from "./en/heroes.json";
 import heroGear from "./en/heroGear.json";
 import history from "./en/history.json";
+import landing from "./en/landing.json";
 import overview from "./en/overview.json";
 import pets from "./en/pets.json";
 import queues from "./en/queues.json";
@@ -78,6 +79,7 @@ const en = {
   coreEvents,
   eventLog,
   history,
+  landing,
   eventExport,
   events,
   dailies,

@@ -1,0 +1,165 @@
+{
+    "topBar": {
+        "navLabel": "Landing page",
+        "links": {
+            "how": "How it works",
+            "features": "Features",
+            "privacy": "Your data",
+            "faq": "FAQ"
+        }
+    },
+    "action": {
+        "createFirstChief": "Create your first chief",
+        "goToOverview": "Go to Overview",
+        "newChief": "New chief",
+        "allChiefs": "All chiefs"
+    },
+    "hero": {
+        "label": "Whiteout Survival Tracker",
+        "title": "Track every chief. Plan every upgrade.",
+        "description": "A free companion for Whiteout Survival. Keep your buildings, heroes, gear and research in one place, plan the next upgrade, and run your Core events from the first day to the history.",
+        "note": "Free. Your data stays in this browser.",
+        "learnMore": "Learn more"
+    },
+    "continue": {
+        "label": "Welcome back",
+        "title": "Continue with {name}",
+        "chiefCount": "{count, plural, one {{amount} chief saved in this browser} other {{amount} chiefs saved in this browser}}"
+    },
+    "how": {
+        "label": "How it works",
+        "title": "From your first chief to event history in four steps",
+        "steps": {
+            "create": {
+                "title": "Create a chief",
+                "description": "Give it a name. The server number and notes are optional."
+            },
+            "levels": {
+                "title": "Set your levels",
+                "description": "Enter your Furnace and building levels, then fill in heroes, gear and research as you go."
+            },
+            "plan": {
+                "title": "Plan upgrades",
+                "description": "See the resources, time and power for your goals, and what is still missing."
+            },
+            "events": {
+                "title": "Run your events",
+                "description": "Count points, log scores and ranks, then save the event to History."
+            }
+        }
+    },
+    "features": {
+        "label": "What you can do",
+        "title": "Plan it, play it, then look back at it",
+        "open": "Open {page}",
+        "items": {
+            "plan": {
+                "title": "Plan any upgrade",
+                "description": "Set a goal in a Plan flyout on Buildings, Heroes, Chief Gear and Research. See the resources, time and power it needs, with speedups and bonuses read from your Bonuses page.",
+                "page": "Buildings"
+            },
+            "coreEvents": {
+                "title": "Core event calculators",
+                "description": "SvS, Alliance Showdown, King of Icefield and Hall of Chief. Count points for each action, add your expert bonuses, and check thresholds and rank rewards.",
+                "page": "Core Events"
+            },
+            "eventLog": {
+                "title": "Event log and daily checklist",
+                "description": "Log score and rank for each day of an event. A checklist lists the actions you can do each day.",
+                "page": "Core Events"
+            },
+            "history": {
+                "title": "History: plan against actual",
+                "description": "End an event to save it. Compare your plan with what you did, and see each planned upgrade as done or not done.",
+                "page": "History"
+            },
+            "research": {
+                "title": "Research trees",
+                "description": "Growth, Economy, Battle, War Academy and the T12 tabs, as a grid or a tree, with unlocks by server age.",
+                "page": "Research"
+            },
+            "alliance": {
+                "title": "Alliance tech and maps",
+                "description": "Track your alliance banner, tech and facilities, and read the layout of the castle, strongholds and fortresses.",
+                "page": "Alliance"
+            }
+        }
+    },
+    "numbers": {
+        "title": "What the tracker covers",
+        "buildings": "buildings with costs and times",
+        "heroes": "heroes",
+        "research": "research techs",
+        "coreEvents": "Core event calculators",
+        "wiki": "wiki reference pages, plus a timeline"
+    },
+    "pages": {
+        "label": "Every page",
+        "title": "Grouped the way the game is",
+        "description": "The same pages as the sidebar inside the app.",
+        "listLabel": "{group} pages",
+        "general": "General"
+    },
+    "privacy": {
+        "label": "Your data",
+        "title": "Private by default, portable when you want it",
+        "items": {
+            "browser": {
+                "title": "Stays in your browser",
+                "description": "There is no account to make. Your chiefs are saved in this browser on this device."
+            },
+            "file": {
+                "title": "One saved file",
+                "description": "Everything you enter is kept in a single saved file in the browser, so it loads fast and nothing is split across places."
+            },
+            "chiefs": {
+                "title": "Several chiefs",
+                "description": "Keep a main and your alts. Switch between them from the sidebar."
+            },
+            "backup": {
+                "title": "Backup and restore",
+                "description": "Export your data to a file from Settings and import it on another browser or device."
+            }
+        },
+        "backupLink": "Open Backup and data"
+    },
+    "faq": {
+        "label": "Got questions",
+        "title": "Frequently asked questions",
+        "items": {
+            "free": {
+                "question": "Is it free?",
+                "answer": "Yes. There is nothing to pay for and nothing to unlock."
+            },
+            "data": {
+                "question": "Where is my data?",
+                "answer": "In this browser, in local storage for this site. It is not sent to a server. If you clear the site data for this page, the chiefs are removed, so export a backup first."
+            },
+            "move": {
+                "question": "How do I move to another device?",
+                "answer": "Open Settings, then Backup and data, and export a backup file. On the other device, open the same page, go to Settings, Backup and data, and import that file."
+            },
+            "chiefs": {
+                "question": "Can I have several chiefs?",
+                "answer": "Yes. There is no limit. Each chief has its own buildings, heroes, research and events, and you switch between them in the sidebar."
+            },
+            "account": {
+                "question": "Do I need an account or a save file from the game?",
+                "answer": "No. You type in your levels yourself. The game data for costs, times and stats comes with the tracker."
+            },
+            "official": {
+                "question": "Is this an official app?",
+                "answer": "No. It is an unofficial fan tool. It is not affiliated with Whiteout Survival or Century Games. The footer has the full notice."
+            },
+            "wiki": {
+                "question": "What is the Wiki?",
+                "answer": "A set of reference pages for the game data, such as buildings, heroes, pets, items and events, plus a server timeline. You can read it without creating a chief."
+            }
+        }
+    },
+    "closing": {
+        "title": "Start tracking today",
+        "description": "Your first chief takes one name. You can change everything later.",
+        "wiki": "Browse the Wiki"
+    }
+}
