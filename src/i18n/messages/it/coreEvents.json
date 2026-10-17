@@ -29,7 +29,8 @@
         "noDates": "Le date si impostano nel Registro eventi.",
         "today": "Oggi è {day}",
         "checklist": "Lista",
-        "log": "Registro eventi"
+        "log": "Registro eventi",
+        "beastPlan": "Pianifica bestie"
     },
     "bonus": {
         "title": "Livello {skill} di {expert}",
@@ -104,5 +105,64 @@
         "unknown": "Sconosciuto",
         "notConfirmed": "Non confermato",
         "noneShowdown": "Il pacchetto non ha una classifica personale per Alliance Showdown."
+    },
+    "beasts": {
+        "title": "Pianifica bestie",
+        "description": "Calcola quante bestie e Polar Terror paga la tua resistenza e i punti che fanno in State of Power.",
+        "saved": "Piano salvato {date}",
+        "notSavedYet": "Piano non ancora salvato",
+        "close": "Chiudi",
+        "save": "Salva piano",
+        "exportButton": "Esporta negli Eventi principali",
+        "exportNothing": "Il piano non fa ancora punti.",
+        "levelGroup": "Livello da {low} a {high}",
+        "stamina": {
+            "title": "Resistenza",
+            "have": "Resistenza",
+            "cans": "Lattine di resistenza",
+            "cansHint": "Da Risorse, {amount} di resistenza ciascuna",
+            "gina": "Endurance Training di Gina",
+            "ginaNone": "Non usata",
+            "ginaLevel": "Livello {level}, {percent}% di resistenza in meno"
+        },
+        "planned": {
+            "title": "Cacce pianificate",
+            "hint": "Cacce che fai comunque, come le bestie delle missioni Intel. Si pagano per prime.",
+            "empty": "Nessuna caccia alle bestie pianificata.",
+            "runLevel": "Livello della bestia",
+            "runCount": "Bestie",
+            "add": "Aggiungi caccia alle bestie",
+            "remove": "Rimuovi",
+            "removeLabel": "Rimuovi la caccia alle bestie di livello {level}",
+            "polarTerrors": "Polar Terror pianificati"
+        },
+        "leftover": {
+            "title": "Resistenza rimasta",
+            "hint": "Come si spende la resistenza che resta dopo le cacce pianificate.",
+            "hunt": "Spendi la resistenza rimasta in",
+            "beasts": "Bestie",
+            "polarTerrors": "Polar Terror",
+            "beastLevel": "Livello delle bestie"
+        },
+        "result": {
+            "title": "Risultato",
+            "rows": {
+                "beastCost": "Resistenza per una bestia",
+                "polarTerrorCost": "Resistenza per un Polar Terror",
+                "plannedCost": "Resistenza per le cacce pianificate",
+                "left": "Resistenza rimasta",
+                "leftoverBeasts": "Bestie che la resistenza rimasta paga",
+                "leftoverPolarTerrors": "Polar Terror che la resistenza rimasta paga"
+            },
+            "short": "Le cacce pianificate richiedono {amount} di resistenza in più di quella che hai. La resistenza rimasta non paga cacce extra.",
+            "points": "Punti evento",
+            "plannedPoints": "Pianificato: {amount}",
+            "pointsNote": "I punti sono prima di qualsiasi bonus. Le cacce che non sono bestie o Polar Terror, come la Bear Hunt, non vengono contate."
+        },
+        "export": {
+            "beasts": "Bestie di livello {level}",
+            "leftoverBeasts": "Bestie di livello {level} con la resistenza rimasta",
+            "polarTerrors": "Polar Terror"
+        }
     }
 }

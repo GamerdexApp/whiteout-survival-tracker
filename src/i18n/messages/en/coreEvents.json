@@ -29,7 +29,8 @@
         "noDates": "Dates are set in the Event log.",
         "today": "Today is {day}",
         "checklist": "Checklist",
-        "log": "Event log"
+        "log": "Event log",
+        "beastPlan": "Plan beasts"
     },
     "bonus": {
         "title": "{expert} {skill} level",
@@ -104,5 +105,64 @@
         "unknown": "Unknown",
         "notConfirmed": "Not confirmed",
         "noneShowdown": "The package has no personal ranking for Alliance Showdown."
+    },
+    "beasts": {
+        "title": "Plan beasts",
+        "description": "Work out how many beasts and Polar Terrors your stamina pays for, and the points they score in State of Power.",
+        "saved": "Saved {date}",
+        "notSavedYet": "Not saved yet",
+        "close": "Close",
+        "save": "Save plan",
+        "exportButton": "Export to event",
+        "exportNothing": "The plan scores no points yet.",
+        "levelGroup": "Level {low} to {high}",
+        "stamina": {
+            "title": "Stamina",
+            "have": "Stamina",
+            "cans": "Stamina cans",
+            "cansHint": "From Resources, {amount} stamina each",
+            "gina": "Gina's Endurance Training",
+            "ginaNone": "Not used",
+            "ginaLevel": "Level {level}, {percent}% less stamina"
+        },
+        "planned": {
+            "title": "Planned hunts",
+            "hint": "Hunts you do anyway, such as the beasts of the Intel missions. They are paid first.",
+            "empty": "No planned beast hunts.",
+            "runLevel": "Beast level",
+            "runCount": "Beasts",
+            "add": "Add beast hunt",
+            "remove": "Remove",
+            "removeLabel": "Remove the level {level} beast hunt",
+            "polarTerrors": "Planned Polar Terrors"
+        },
+        "leftover": {
+            "title": "Stamina left",
+            "hint": "What the stamina left after the planned hunts is spent on.",
+            "hunt": "Spend the stamina left on",
+            "beasts": "Beasts",
+            "polarTerrors": "Polar Terrors",
+            "beastLevel": "Level of the beasts"
+        },
+        "result": {
+            "title": "Result",
+            "rows": {
+                "beastCost": "Stamina for one beast",
+                "polarTerrorCost": "Stamina for one Polar Terror",
+                "plannedCost": "Stamina for the planned hunts",
+                "left": "Stamina left",
+                "leftoverBeasts": "Beasts the stamina left pays for",
+                "leftoverPolarTerrors": "Polar Terrors the stamina left pays for"
+            },
+            "short": "The planned hunts need {amount} more stamina than you have. The stamina left pays for no extra hunts.",
+            "points": "Event points",
+            "plannedPoints": "Planned: {amount}",
+            "pointsNote": "The points are before any bonus. Hunts that are not beasts or Polar Terrors, such as the Bear Hunt, are not counted."
+        },
+        "export": {
+            "beasts": "Level {level} beasts",
+            "leftoverBeasts": "Level {level} beasts from the stamina left",
+            "polarTerrors": "Polar Terrors"
+        }
     }
 }

@@ -29,7 +29,8 @@
         "noDates": "날짜는 이벤트 로그에서 설정해요.",
         "today": "오늘은 {day}",
         "checklist": "체크리스트",
-        "log": "이벤트 로그"
+        "log": "이벤트 로그",
+        "beastPlan": "야수 계획"
     },
     "bonus": {
         "title": "{expert} {skill} 레벨",
@@ -104,5 +105,64 @@
         "unknown": "알 수 없음",
         "notConfirmed": "확인되지 않음",
         "noneShowdown": "Alliance Showdown의 개인 순위가 패키지에 없어요."
+    },
+    "beasts": {
+        "title": "야수 계획",
+        "description": "스태미나로 야수와 Polar Terror를 몇 마리 잡을 수 있는지, State of Power에서 점수는 얼마인지 계산해요.",
+        "saved": "{date}에 저장됨",
+        "notSavedYet": "아직 저장되지 않았어요",
+        "close": "닫기",
+        "save": "계획 저장",
+        "exportButton": "이벤트로 내보내기",
+        "exportNothing": "이 계획으로는 아직 점수를 얻지 못해요.",
+        "levelGroup": "레벨 {low}~{high}",
+        "stamina": {
+            "title": "스태미나",
+            "have": "스태미나",
+            "cans": "스태미나 캔",
+            "cansHint": "자원에서, 개당 스태미나 {amount}",
+            "gina": "Gina의 Endurance Training",
+            "ginaNone": "사용 안 함",
+            "ginaLevel": "레벨 {level}, 스태미나 {percent}% 감소"
+        },
+        "planned": {
+            "title": "계획한 사냥",
+            "hint": "어차피 하는 사냥이에요. 예를 들면 Intel 임무의 야수예요. 스태미나를 먼저 써요.",
+            "empty": "계획한 야수 사냥이 없어요.",
+            "runLevel": "야수 레벨",
+            "runCount": "야수",
+            "add": "야수 사냥 추가",
+            "remove": "삭제",
+            "removeLabel": "레벨 {level} 야수 사냥 삭제",
+            "polarTerrors": "계획한 Polar Terror"
+        },
+        "leftover": {
+            "title": "남은 스태미나",
+            "hint": "계획한 사냥 뒤에 남은 스태미나를 어디에 쓸지 정해요.",
+            "hunt": "남은 스태미나 사용처",
+            "beasts": "야수",
+            "polarTerrors": "Polar Terror",
+            "beastLevel": "야수 레벨"
+        },
+        "result": {
+            "title": "결과",
+            "rows": {
+                "beastCost": "야수 1마리당 스태미나",
+                "polarTerrorCost": "Polar Terror 1마리당 스태미나",
+                "plannedCost": "계획한 사냥의 스태미나",
+                "left": "남은 스태미나",
+                "leftoverBeasts": "남은 스태미나로 잡는 야수",
+                "leftoverPolarTerrors": "남은 스태미나로 잡는 Polar Terror"
+            },
+            "short": "계획한 사냥에 스태미나가 {amount} 더 필요해요. 남은 스태미나로는 추가 사냥을 할 수 없어요.",
+            "points": "이벤트 점수",
+            "plannedPoints": "계획: {amount}",
+            "pointsNote": "점수는 보너스를 적용하기 전 값이에요. Bear Hunt처럼 야수와 Polar Terror가 아닌 사냥은 포함하지 않아요."
+        },
+        "export": {
+            "beasts": "레벨 {level} 야수",
+            "leftoverBeasts": "남은 스태미나로 잡는 레벨 {level} 야수",
+            "polarTerrors": "Polar Terror"
+        }
     }
 }

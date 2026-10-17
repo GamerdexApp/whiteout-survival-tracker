@@ -73,6 +73,23 @@ export interface CoreEventImport {
   upgrades?: PlannedUpgrade[];
 }
 
+/** A planned beast hunt: how many beasts of one level. */
+export interface BeastRunState {
+  level: number;
+  count: number;
+}
+
+/** The saved Beast plan of State of Power. The stamina left hunts beasts or Polar Terrors. */
+export interface BeastPlanState {
+  stamina: number;
+  beastLevel: number;
+  beastRuns: BeastRunState[];
+  polarTerrors: number;
+  ginaSkillLevel?: number;
+  leftover: "beasts" | "polarTerrors";
+  savedAt: string;
+}
+
 export interface CoreEventsImports {
   imports?: Record<string, CoreEventImport>;
 }

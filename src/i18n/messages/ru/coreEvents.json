@@ -29,7 +29,8 @@
         "noDates": "Даты задаются в журнале событий.",
         "today": "Сегодня {day}",
         "checklist": "Чек-лист",
-        "log": "Журнал событий"
+        "log": "Журнал событий",
+        "beastPlan": "План зверей"
     },
     "bonus": {
         "title": "{expert}, {skill}: уровень",
@@ -104,5 +105,64 @@
         "unknown": "Неизвестно",
         "notConfirmed": "Не подтверждено",
         "noneShowdown": "В пакете нет личного рейтинга для Alliance Showdown."
+    },
+    "beasts": {
+        "title": "План зверей",
+        "description": "Узнайте, сколько зверей и Polar Terrors покрывает ваша выносливость и сколько очков они дают в State of Power.",
+        "saved": "Сохранено {date}",
+        "notSavedYet": "Ещё не сохранено",
+        "close": "Закрыть",
+        "save": "Сохранить план",
+        "exportButton": "Экспорт в событие",
+        "exportNothing": "План пока не даёт очков.",
+        "levelGroup": "Уровень с {low} до {high}",
+        "stamina": {
+            "title": "Выносливость",
+            "have": "Выносливость",
+            "cans": "Банки выносливости",
+            "cansHint": "Из ресурсов, по {amount} выносливости",
+            "gina": "Endurance Training (Gina)",
+            "ginaNone": "Не используется",
+            "ginaLevel": "Уровень {level}, на {percent}% меньше выносливости"
+        },
+        "planned": {
+            "title": "Запланированные охоты",
+            "hint": "Охоты, которые вы проведёте в любом случае, например на зверей из заданий Intel. Оплачиваются первыми.",
+            "empty": "Охот на зверей не запланировано.",
+            "runLevel": "Уровень зверя",
+            "runCount": "Звери",
+            "add": "Добавить охоту на зверей",
+            "remove": "Убрать",
+            "removeLabel": "Убрать охоту на зверей уровня {level}",
+            "polarTerrors": "Запланированные Polar Terrors"
+        },
+        "leftover": {
+            "title": "Остаток выносливости",
+            "hint": "На что тратится выносливость, оставшаяся после запланированных охот.",
+            "hunt": "Потратить остаток выносливости на",
+            "beasts": "Звери",
+            "polarTerrors": "Polar Terrors",
+            "beastLevel": "Уровень зверей"
+        },
+        "result": {
+            "title": "Итог",
+            "rows": {
+                "beastCost": "Выносливость на одного зверя",
+                "polarTerrorCost": "Выносливость на одного Polar Terror",
+                "plannedCost": "Выносливость на запланированные охоты",
+                "left": "Остаток выносливости",
+                "leftoverBeasts": "Зверей на остаток выносливости",
+                "leftoverPolarTerrors": "Polar Terrors на остаток выносливости"
+            },
+            "short": "Запланированным охотам не хватает {amount} выносливости. На дополнительные охоты остатка нет.",
+            "points": "Очки событий",
+            "plannedPoints": "План: {amount}",
+            "pointsNote": "Очки указаны без бонусов. Охоты не на зверей и не на Polar Terrors, например Bear Hunt, не считаются."
+        },
+        "export": {
+            "beasts": "Звери уровня {level}",
+            "leftoverBeasts": "Звери уровня {level} на остаток выносливости",
+            "polarTerrors": "Polar Terrors"
+        }
     }
 }

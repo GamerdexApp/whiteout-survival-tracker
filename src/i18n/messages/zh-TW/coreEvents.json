@@ -29,7 +29,8 @@
         "noDates": "日期在活動紀錄中設定。",
         "today": "今天是{day}",
         "checklist": "清單",
-        "log": "活動紀錄"
+        "log": "活動紀錄",
+        "beastPlan": "規劃野獸"
     },
     "bonus": {
         "title": "{expert}{skill}等級",
@@ -104,5 +105,64 @@
         "unknown": "未知",
         "notConfirmed": "未確認",
         "noneShowdown": "資料包中沒有 Alliance Showdown 的個人排名。"
+    },
+    "beasts": {
+        "title": "規劃野獸",
+        "description": "算出你的體力夠打多少野獸和 Polar Terror，以及它們在 State of Power 中的得分。",
+        "saved": "已儲存 {date}",
+        "notSavedYet": "尚未儲存",
+        "close": "關閉",
+        "save": "儲存規劃",
+        "exportButton": "匯出到活動",
+        "exportNothing": "這份規劃目前沒有得分。",
+        "levelGroup": "{low} 到 {high} 級",
+        "stamina": {
+            "title": "體力",
+            "have": "體力",
+            "cans": "體力罐",
+            "cansHint": "來自資源，每個 {amount} 體力",
+            "gina": "Gina 的 Endurance Training",
+            "ginaNone": "未使用",
+            "ginaLevel": "{level} 級，體力消耗減少 {percent}%"
+        },
+        "planned": {
+            "title": "規劃中的狩獵",
+            "hint": "無論如何都會進行的狩獵，例如情報任務中的野獸。會優先扣除體力。",
+            "empty": "沒有規劃中的野獸狩獵。",
+            "runLevel": "野獸等級",
+            "runCount": "野獸",
+            "add": "新增野獸狩獵",
+            "remove": "移除",
+            "removeLabel": "移除 {level} 級野獸狩獵",
+            "polarTerrors": "規劃中的 Polar Terror"
+        },
+        "leftover": {
+            "title": "剩餘體力",
+            "hint": "規劃的狩獵之後剩下的體力要用在哪裡。",
+            "hunt": "把剩餘體力用於",
+            "beasts": "野獸",
+            "polarTerrors": "Polar Terror",
+            "beastLevel": "野獸等級"
+        },
+        "result": {
+            "title": "結果",
+            "rows": {
+                "beastCost": "每隻野獸所需體力",
+                "polarTerrorCost": "每隻 Polar Terror 所需體力",
+                "plannedCost": "規劃的狩獵所需體力",
+                "left": "剩餘體力",
+                "leftoverBeasts": "剩餘體力可打的野獸數",
+                "leftoverPolarTerrors": "剩餘體力可打的 Polar Terror 數"
+            },
+            "short": "規劃的狩獵比你現有的體力多需要 {amount} 體力。剩餘體力不足以進行額外狩獵。",
+            "points": "活動積分",
+            "plannedPoints": "規劃：{amount}",
+            "pointsNote": "積分未計入任何加成。野獸和 Polar Terror 以外的狩獵，例如 Bear Hunt，不計入。"
+        },
+        "export": {
+            "beasts": "{level} 級野獸",
+            "leftoverBeasts": "剩餘體力可打的 {level} 級野獸",
+            "polarTerrors": "Polar Terror"
+        }
     }
 }

@@ -29,7 +29,8 @@
         "noDates": "Ngày được đặt trong Nhật ký sự kiện.",
         "today": "Hôm nay là {day}",
         "checklist": "Danh sách việc",
-        "log": "Nhật ký sự kiện"
+        "log": "Nhật ký sự kiện",
+        "beastPlan": "Lập kế hoạch Quái thú"
     },
     "bonus": {
         "title": "Cấp {skill} của {expert}",
@@ -104,5 +105,64 @@
         "unknown": "Không rõ",
         "notConfirmed": "Chưa xác nhận",
         "noneShowdown": "Gói dữ liệu không có xếp hạng cá nhân cho Alliance Showdown."
+    },
+    "beasts": {
+        "title": "Lập kế hoạch Quái thú",
+        "description": "Tính xem thể lực của bạn đủ cho bao nhiêu quái thú và Polar Terror, và số điểm chúng mang lại trong State of Power.",
+        "saved": "Đã lưu kế hoạch {date}",
+        "notSavedYet": "Chưa lưu kế hoạch",
+        "close": "Đóng",
+        "save": "Lưu kế hoạch",
+        "exportButton": "Xuất sang Sự kiện chính",
+        "exportNothing": "Kế hoạch chưa có điểm nào.",
+        "levelGroup": "Cấp {low} đến {high}",
+        "stamina": {
+            "title": "Thể lực",
+            "have": "Thể lực",
+            "cans": "Bình thể lực",
+            "cansHint": "Từ Tài nguyên, mỗi bình {amount} thể lực",
+            "gina": "Endurance Training của Gina",
+            "ginaNone": "Không dùng",
+            "ginaLevel": "Cấp {level}, giảm {percent}% thể lực"
+        },
+        "planned": {
+            "title": "Lượt săn đã định",
+            "hint": "Các lượt săn bạn vẫn làm, như quái thú của nhiệm vụ Intel. Chúng được trừ thể lực trước.",
+            "empty": "Chưa có lượt săn quái thú nào.",
+            "runLevel": "Cấp quái thú",
+            "runCount": "Quái thú",
+            "add": "Thêm lượt săn quái thú",
+            "remove": "Xóa",
+            "removeLabel": "Xóa lượt săn quái thú cấp {level}",
+            "polarTerrors": "Polar Terror đã định"
+        },
+        "leftover": {
+            "title": "Thể lực còn lại",
+            "hint": "Thể lực còn lại sau các lượt săn đã định sẽ dùng vào việc gì.",
+            "hunt": "Dùng thể lực còn lại để săn",
+            "beasts": "Quái thú",
+            "polarTerrors": "Polar Terror",
+            "beastLevel": "Cấp của quái thú"
+        },
+        "result": {
+            "title": "Kết quả",
+            "rows": {
+                "beastCost": "Thể lực cho một quái thú",
+                "polarTerrorCost": "Thể lực cho một Polar Terror",
+                "plannedCost": "Thể lực cho các lượt săn đã định",
+                "left": "Thể lực còn lại",
+                "leftoverBeasts": "Số quái thú thể lực còn lại đủ săn",
+                "leftoverPolarTerrors": "Số Polar Terror thể lực còn lại đủ săn"
+            },
+            "short": "Các lượt săn đã định cần thêm {amount} thể lực so với bạn có. Thể lực còn lại không đủ cho lượt săn nào thêm.",
+            "points": "Điểm sự kiện",
+            "plannedPoints": "Đã định: {amount}",
+            "pointsNote": "Điểm chưa tính cộng thêm nào. Các lượt săn không phải quái thú hay Polar Terror, như Bear Hunt, không được tính."
+        },
+        "export": {
+            "beasts": "Quái thú cấp {level}",
+            "leftoverBeasts": "Quái thú cấp {level} từ thể lực còn lại",
+            "polarTerrors": "Polar Terror"
+        }
     }
 }

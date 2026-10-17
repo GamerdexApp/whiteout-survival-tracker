@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import { LuClipboardList } from "react-icons/lu";
 import type { CoreEventId, Playthrough } from "@/types/app";
 import { formatCalendarDate } from "@/lib/format";
 import type { EventStatus } from "@/service/coreEvents";
@@ -11,9 +12,18 @@ interface EventStripProps {
 	status: EventStatus;
 	onChecklist: () => void;
 	onLog: () => void;
+	/** Only State of Power has a Beast plan. */
+	onBeastPlan?: () => void;
 }
 
-export function EventStrip({ chief, event, status, onChecklist, onLog }: EventStripProps) {
+export function EventStrip({
+	chief,
+	event,
+	status,
+	onChecklist,
+	onLog,
+	onBeastPlan,
+}: EventStripProps) {
 	const t = useTranslations("coreEvents.strip");
 	const { start, end } = logOf(chief, event);
 	const dates =
@@ -40,6 +50,12 @@ export function EventStrip({ chief, event, status, onChecklist, onLog }: EventSt
 				</span>
 			</div>
 			<div className="grid grid-cols-2 gap-3 lg:flex">
+				{onBeastPlan && (
+					<Button onClick={onBeastPlan} className="max-lg:col-span-2">
+						<LuClipboardList size={16} aria-hidden="true" />
+						{t("beastPlan")}
+					</Button>
+				)}
 				<Button onClick={onChecklist}>{t("checklist")}</Button>
 				<Button onClick={onLog}>{t("log")}</Button>
 			</div>

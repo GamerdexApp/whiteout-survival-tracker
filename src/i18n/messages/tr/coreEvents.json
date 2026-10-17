@@ -29,7 +29,8 @@
         "noDates": "Tarihler Etkinlik kaydında ayarlanır.",
         "today": "Bugün: {day}",
         "checklist": "Kontrol listesi",
-        "log": "Etkinlik kaydı"
+        "log": "Etkinlik kaydı",
+        "beastPlan": "Canavar planı"
     },
     "bonus": {
         "title": "{expert} {skill} seviyesi",
@@ -104,5 +105,64 @@
         "unknown": "Bilinmiyor",
         "notConfirmed": "Doğrulanmadı",
         "noneShowdown": "Pakette Alliance Showdown için kişisel sıralama yok."
+    },
+    "beasts": {
+        "title": "Canavar planı",
+        "description": "Dayanıklılığının kaç canavar ve Polar Terror için yettiğini ve State of Power'da kaç puan getirdiğini hesapla.",
+        "saved": "Plan kaydedildi: {date}",
+        "notSavedYet": "Plan henüz kaydedilmedi",
+        "close": "Kapat",
+        "save": "Planı kaydet",
+        "exportButton": "Ana Etkinlikler'e aktar",
+        "exportNothing": "Plan henüz puan getirmiyor.",
+        "levelGroup": "Seviye {low} - {high}",
+        "stamina": {
+            "title": "Dayanıklılık",
+            "have": "Dayanıklılık",
+            "cans": "Dayanıklılık kutuları",
+            "cansHint": "Kaynaklar'dan, her biri {amount} dayanıklılık",
+            "gina": "Gina'nın Endurance Training becerisi",
+            "ginaNone": "Kullanılmıyor",
+            "ginaLevel": "Seviye {level}, %{percent} daha az dayanıklılık"
+        },
+        "planned": {
+            "title": "Planlanan avlar",
+            "hint": "Zaten yapacağın avlar, örneğin İstihbarat görevlerinin canavarları. Dayanıklılık önce bunlara harcanır.",
+            "empty": "Planlanan canavar avı yok.",
+            "runLevel": "Canavar seviyesi",
+            "runCount": "Canavar",
+            "add": "Canavar avı ekle",
+            "remove": "Kaldır",
+            "removeLabel": "Seviye {level} canavar avını kaldır",
+            "polarTerrors": "Planlanan Polar Terror"
+        },
+        "leftover": {
+            "title": "Kalan dayanıklılık",
+            "hint": "Planlanan avlardan sonra kalan dayanıklılığın harcanacağı yer.",
+            "hunt": "Kalan dayanıklılığı şuna harca",
+            "beasts": "Canavar",
+            "polarTerrors": "Polar Terror",
+            "beastLevel": "Canavarların seviyesi"
+        },
+        "result": {
+            "title": "Sonuç",
+            "rows": {
+                "beastCost": "Bir canavar için dayanıklılık",
+                "polarTerrorCost": "Bir Polar Terror için dayanıklılık",
+                "plannedCost": "Planlanan avlar için dayanıklılık",
+                "left": "Kalan dayanıklılık",
+                "leftoverBeasts": "Kalan dayanıklılığın karşıladığı canavar",
+                "leftoverPolarTerrors": "Kalan dayanıklılığın karşıladığı Polar Terror"
+            },
+            "short": "Planlanan avlar sahip olduğundan {amount} dayanıklılık daha fazla gerektiriyor. Kalan dayanıklılık ek av karşılamıyor.",
+            "points": "Etkinlik puanı",
+            "plannedPoints": "Planlanan: {amount}",
+            "pointsNote": "Puanlar herhangi bir bonus uygulanmadan önceki değerdir. Bear Hunt gibi canavar ve Polar Terror dışındaki avlar sayılmaz."
+        },
+        "export": {
+            "beasts": "Seviye {level} canavarlar",
+            "leftoverBeasts": "Kalan dayanıklılıktan seviye {level} canavarlar",
+            "polarTerrors": "Polar Terror"
+        }
     }
 }

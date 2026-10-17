@@ -29,7 +29,8 @@
         "noDates": "تُحدَّد التواريخ في سجل الفعاليات.",
         "today": "اليوم هو {day}",
         "checklist": "قائمة المهام",
-        "log": "سجل الفعاليات"
+        "log": "سجل الفعاليات",
+        "beastPlan": "خطة الوحوش"
     },
     "bonus": {
         "title": "مستوى {skill} لدى {expert}",
@@ -104,5 +105,64 @@
         "unknown": "غير معروف",
         "notConfirmed": "غير مؤكد",
         "noneShowdown": "لا تحتوي الحزمة على ترتيب شخصي لـ Alliance Showdown."
+    },
+    "beasts": {
+        "title": "خطة الوحوش",
+        "description": "احسب عدد الوحوش وPolar Terror التي تكفيها طاقتك، والنقاط التي تحققها في State of Power.",
+        "saved": "تم حفظ الخطة {date}",
+        "notSavedYet": "لم تُحفظ الخطة بعد",
+        "close": "إغلاق",
+        "save": "حفظ الخطة",
+        "exportButton": "تصدير إلى الفعاليات الأساسية",
+        "exportNothing": "ليس في الخطة نقاط بعد.",
+        "levelGroup": "المستوى من {low} إلى {high}",
+        "stamina": {
+            "title": "الطاقة",
+            "have": "الطاقة",
+            "cans": "علب الطاقة",
+            "cansHint": "من الموارد، {amount} طاقة لكل علبة",
+            "gina": "Endurance Training لدى Gina",
+            "ginaNone": "غير مستخدمة",
+            "ginaLevel": "المستوى {level}، طاقة أقل بنسبة {percent}%"
+        },
+        "planned": {
+            "title": "الصيد المخطط له",
+            "hint": "عمليات صيد تنفذها على أي حال، مثل وحوش مهام المعلومات. تُدفع طاقتها أولًا.",
+            "empty": "لا توجد عمليات صيد وحوش مخطط لها.",
+            "runLevel": "مستوى الوحش",
+            "runCount": "الوحوش",
+            "add": "إضافة صيد وحوش",
+            "remove": "إزالة",
+            "removeLabel": "إزالة صيد الوحوش من المستوى {level}",
+            "polarTerrors": "Polar Terror المخطط لها"
+        },
+        "leftover": {
+            "title": "الطاقة المتبقية",
+            "hint": "ما تُنفق عليه الطاقة المتبقية بعد الصيد المخطط له.",
+            "hunt": "إنفاق الطاقة المتبقية على",
+            "beasts": "الوحوش",
+            "polarTerrors": "Polar Terror",
+            "beastLevel": "مستوى الوحوش"
+        },
+        "result": {
+            "title": "النتيجة",
+            "rows": {
+                "beastCost": "الطاقة لوحش واحد",
+                "polarTerrorCost": "الطاقة لـ Polar Terror واحد",
+                "plannedCost": "الطاقة للصيد المخطط له",
+                "left": "الطاقة المتبقية",
+                "leftoverBeasts": "الوحوش التي تكفيها الطاقة المتبقية",
+                "leftoverPolarTerrors": "Polar Terror التي تكفيها الطاقة المتبقية"
+            },
+            "short": "الصيد المخطط له يحتاج إلى {amount} طاقة أكثر مما لديك. لا تكفي الطاقة المتبقية لأي صيد إضافي.",
+            "points": "نقاط الفعالية",
+            "plannedPoints": "المخطط له: {amount}",
+            "pointsNote": "النقاط قبل أي ميزة إضافية. عمليات الصيد التي ليست وحوشًا أو Polar Terror، مثل Bear Hunt، لا تُحتسب."
+        },
+        "export": {
+            "beasts": "وحوش المستوى {level}",
+            "leftoverBeasts": "وحوش المستوى {level} من الطاقة المتبقية",
+            "polarTerrors": "Polar Terror"
+        }
     }
 }

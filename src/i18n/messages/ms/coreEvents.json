@@ -29,7 +29,8 @@
         "noDates": "Tarikh ditetapkan dalam Log acara.",
         "today": "Hari ini ialah {day}",
         "checklist": "Senarai semak",
-        "log": "Log acara"
+        "log": "Log acara",
+        "beastPlan": "Rancang Raksasa"
     },
     "bonus": {
         "title": "Tahap {skill} {expert}",
@@ -104,5 +105,64 @@
         "unknown": "Tidak diketahui",
         "notConfirmed": "Belum disahkan",
         "noneShowdown": "Pakej tiada kedudukan peribadi untuk Alliance Showdown."
+    },
+    "beasts": {
+        "title": "Rancang Raksasa",
+        "description": "Kira berapa raksasa dan Polar Terror yang boleh diburu dengan stamina anda, dan mata yang diperoleh dalam State of Power.",
+        "saved": "Pelan disimpan {date}",
+        "notSavedYet": "Pelan belum disimpan",
+        "close": "Tutup",
+        "save": "Simpan pelan",
+        "exportButton": "Eksport ke Acara Utama",
+        "exportNothing": "Pelan belum mendapat mata.",
+        "levelGroup": "Tahap {low} ke {high}",
+        "stamina": {
+            "title": "Stamina",
+            "have": "Stamina",
+            "cans": "Tin stamina",
+            "cansHint": "Daripada Sumber, {amount} stamina setiap satu",
+            "gina": "Endurance Training milik Gina",
+            "ginaNone": "Tidak digunakan",
+            "ginaLevel": "Tahap {level}, stamina {percent}% lebih jimat"
+        },
+        "planned": {
+            "title": "Pemburuan dirancang",
+            "hint": "Pemburuan yang anda buat juga, seperti raksasa misi Intel. Stamina digunakan untuk ini dahulu.",
+            "empty": "Tiada pemburuan raksasa dirancang.",
+            "runLevel": "Tahap raksasa",
+            "runCount": "Raksasa",
+            "add": "Tambah pemburuan raksasa",
+            "remove": "Buang",
+            "removeLabel": "Buang pemburuan raksasa tahap {level}",
+            "polarTerrors": "Polar Terror dirancang"
+        },
+        "leftover": {
+            "title": "Stamina berbaki",
+            "hint": "Untuk apa stamina yang berbaki selepas pemburuan dirancang digunakan.",
+            "hunt": "Guna stamina berbaki untuk",
+            "beasts": "Raksasa",
+            "polarTerrors": "Polar Terror",
+            "beastLevel": "Tahap raksasa"
+        },
+        "result": {
+            "title": "Hasil",
+            "rows": {
+                "beastCost": "Stamina untuk satu raksasa",
+                "polarTerrorCost": "Stamina untuk satu Polar Terror",
+                "plannedCost": "Stamina untuk pemburuan dirancang",
+                "left": "Stamina berbaki",
+                "leftoverBeasts": "Raksasa yang dibiayai stamina berbaki",
+                "leftoverPolarTerrors": "Polar Terror yang dibiayai stamina berbaki"
+            },
+            "short": "Pemburuan dirancang memerlukan {amount} stamina lebih daripada yang anda ada. Stamina berbaki tidak cukup untuk pemburuan tambahan.",
+            "points": "Mata acara",
+            "plannedPoints": "Dirancang: {amount}",
+            "pointsNote": "Mata dikira sebelum sebarang bonus. Pemburuan selain raksasa dan Polar Terror, seperti Bear Hunt, tidak dikira."
+        },
+        "export": {
+            "beasts": "Raksasa tahap {level}",
+            "leftoverBeasts": "Raksasa tahap {level} daripada stamina berbaki",
+            "polarTerrors": "Polar Terror"
+        }
     }
 }

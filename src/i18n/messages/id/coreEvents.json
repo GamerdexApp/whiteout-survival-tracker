@@ -29,7 +29,8 @@
         "noDates": "Tanggal diatur di Log event.",
         "today": "Hari ini {day}",
         "checklist": "Daftar periksa",
-        "log": "Log event"
+        "log": "Log event",
+        "beastPlan": "Rencanakan Monster"
     },
     "bonus": {
         "title": "{expert} level {skill}",
@@ -104,5 +105,64 @@
         "unknown": "Tidak diketahui",
         "notConfirmed": "Belum dipastikan",
         "noneShowdown": "Paket data tidak punya peringkat pribadi untuk Alliance Showdown."
+    },
+    "beasts": {
+        "title": "Rencanakan Monster",
+        "description": "Hitung berapa monster dan Polar Terror yang bisa kamu buru dengan stamina, dan poin yang didapat di State of Power.",
+        "saved": "Rencana disimpan {date}",
+        "notSavedYet": "Rencana belum disimpan",
+        "close": "Tutup",
+        "save": "Simpan rencana",
+        "exportButton": "Ekspor ke Core Events",
+        "exportNothing": "Rencana belum menghasilkan poin.",
+        "levelGroup": "Level {low} ke {high}",
+        "stamina": {
+            "title": "Stamina",
+            "have": "Stamina",
+            "cans": "Kaleng stamina",
+            "cansHint": "Dari Sumber Daya, {amount} stamina per kaleng",
+            "gina": "Endurance Training milik Gina",
+            "ginaNone": "Tidak dipakai",
+            "ginaLevel": "Level {level}, stamina {percent}% lebih hemat"
+        },
+        "planned": {
+            "title": "Perburuan terencana",
+            "hint": "Perburuan yang tetap kamu lakukan, seperti monster dari misi Intel. Stamina dipakai untuk ini lebih dulu.",
+            "empty": "Belum ada perburuan monster terencana.",
+            "runLevel": "Level monster",
+            "runCount": "Monster",
+            "add": "Tambah perburuan monster",
+            "remove": "Hapus",
+            "removeLabel": "Hapus perburuan monster level {level}",
+            "polarTerrors": "Polar Terror terencana"
+        },
+        "leftover": {
+            "title": "Sisa stamina",
+            "hint": "Dipakai untuk apa stamina yang tersisa setelah perburuan terencana.",
+            "hunt": "Pakai sisa stamina untuk",
+            "beasts": "Monster",
+            "polarTerrors": "Polar Terror",
+            "beastLevel": "Level monster"
+        },
+        "result": {
+            "title": "Hasil",
+            "rows": {
+                "beastCost": "Stamina untuk satu monster",
+                "polarTerrorCost": "Stamina untuk satu Polar Terror",
+                "plannedCost": "Stamina untuk perburuan terencana",
+                "left": "Sisa stamina",
+                "leftoverBeasts": "Monster yang bisa dibayar sisa stamina",
+                "leftoverPolarTerrors": "Polar Terror yang bisa dibayar sisa stamina"
+            },
+            "short": "Perburuan terencana butuh {amount} stamina lebih banyak dari yang kamu punya. Sisa stamina tidak cukup untuk perburuan tambahan.",
+            "points": "Poin event",
+            "plannedPoints": "Terencana: {amount}",
+            "pointsNote": "Poin dihitung sebelum bonus apa pun. Perburuan selain monster dan Polar Terror, seperti Bear Hunt, tidak dihitung."
+        },
+        "export": {
+            "beasts": "Monster level {level}",
+            "leftoverBeasts": "Monster level {level} dari sisa stamina",
+            "polarTerrors": "Polar Terror"
+        }
     }
 }

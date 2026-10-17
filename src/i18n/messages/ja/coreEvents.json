@@ -29,7 +29,8 @@
         "noDates": "日付はイベントログで設定します。",
         "today": "今日は{day}です",
         "checklist": "チェックリスト",
-        "log": "イベントログ"
+        "log": "イベントログ",
+        "beastPlan": "ビーストのプラン"
     },
     "bonus": {
         "title": "{expert}の{skill}レベル",
@@ -104,5 +105,64 @@
         "unknown": "不明",
         "notConfirmed": "未確認",
         "noneShowdown": "パッケージにAlliance Showdownの個人ランキングはありません。"
+    },
+    "beasts": {
+        "title": "ビーストのプラン",
+        "description": "スタミナで何体のビーストとPolar Terrorを倒せるか、State of Powerで得られるポイントはいくつかを計算します。",
+        "saved": "保存しました（{date}）",
+        "notSavedYet": "まだ保存されていません",
+        "close": "閉じる",
+        "save": "プランを保存",
+        "exportButton": "イベントへエクスポート",
+        "exportNothing": "このプランではまだポイントを獲得できません。",
+        "levelGroup": "レベル{low}から{high}",
+        "stamina": {
+            "title": "スタミナ",
+            "have": "スタミナ",
+            "cans": "スタミナ缶",
+            "cansHint": "リソースから、1個につきスタミナ{amount}",
+            "gina": "GinaのEndurance Training",
+            "ginaNone": "使わない",
+            "ginaLevel": "レベル{level}、スタミナ{percent}%減"
+        },
+        "planned": {
+            "title": "予定した討伐",
+            "hint": "どのみち行う討伐です。例えばIntelミッションのビーストです。先にスタミナを消費します。",
+            "empty": "予定したビースト討伐はありません。",
+            "runLevel": "ビーストのレベル",
+            "runCount": "ビースト",
+            "add": "ビースト討伐を追加",
+            "remove": "削除",
+            "removeLabel": "レベル{level}のビースト討伐を削除",
+            "polarTerrors": "予定したPolar Terror"
+        },
+        "leftover": {
+            "title": "残りスタミナ",
+            "hint": "予定した討伐のあとに残ったスタミナの使い道です。",
+            "hunt": "残りスタミナの使い道",
+            "beasts": "ビースト",
+            "polarTerrors": "Polar Terror",
+            "beastLevel": "ビーストのレベル"
+        },
+        "result": {
+            "title": "結果",
+            "rows": {
+                "beastCost": "ビースト1体のスタミナ",
+                "polarTerrorCost": "Polar Terror 1体のスタミナ",
+                "plannedCost": "予定した討伐のスタミナ",
+                "left": "残りスタミナ",
+                "leftoverBeasts": "残りスタミナで倒せるビースト",
+                "leftoverPolarTerrors": "残りスタミナで倒せるPolar Terror"
+            },
+            "short": "予定した討伐には、持っているスタミナより{amount}多く必要です。残りスタミナでは追加の討伐はできません。",
+            "points": "イベントポイント",
+            "plannedPoints": "予定：{amount}",
+            "pointsNote": "ポイントはボーナス適用前の値です。Bear Huntなど、ビーストとPolar Terror以外の討伐は含まれません。"
+        },
+        "export": {
+            "beasts": "レベル{level}のビースト",
+            "leftoverBeasts": "残りスタミナで倒すレベル{level}のビースト",
+            "polarTerrors": "Polar Terror"
+        }
     }
 }

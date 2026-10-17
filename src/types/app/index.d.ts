@@ -3,7 +3,11 @@ import type {
   AllianceState,
   AllianceTechNodeState,
 } from "./alliance";
-import type { CoreEventsImports, CoreEventState } from "./coreEvents";
+import type {
+  BeastPlanState,
+  CoreEventsImports,
+  CoreEventState,
+} from "./coreEvents";
 import type { DailiesState } from "./dailies";
 import type { DaybreakState } from "./daybreak";
 import type { EventResultState, UserEventState } from "./events";
@@ -217,6 +221,7 @@ export interface Playthrough {
   alliance?: AllianceState;
   events?: Partial<Record<CoreEventId, CoreEventState>>;
   coreEvents?: CoreEventsImports;
+  beastPlan?: BeastPlanState;
   userEvents?: UserEventState[];
   eventsTimeZone?: "utc" | "local";
   eventResults?: EventResultState[];

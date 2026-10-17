@@ -29,7 +29,8 @@
         "noDates": "Les dates se définissent dans le journal d'événement.",
         "today": "Aujourd'hui : {day}",
         "checklist": "Liste de tâches",
-        "log": "Journal d'événement"
+        "log": "Journal d'événement",
+        "beastPlan": "Planifier les bêtes"
     },
     "bonus": {
         "title": "{expert} {skill}, niveau",
@@ -104,5 +105,64 @@
         "unknown": "Inconnu",
         "notConfirmed": "Non confirmé",
         "noneShowdown": "Les données n'ont pas de classement personnel pour Alliance Showdown."
+    },
+    "beasts": {
+        "title": "Planifier les bêtes",
+        "description": "Calculez combien de bêtes et de Polar Terrors votre endurance paie, et les points qu'ils rapportent dans State of Power.",
+        "saved": "Plan enregistré {date}",
+        "notSavedYet": "Plan pas encore enregistré",
+        "close": "Fermer",
+        "save": "Enregistrer le plan",
+        "exportButton": "Exporter vers Événements clés",
+        "exportNothing": "Le plan ne rapporte aucun point pour l'instant.",
+        "levelGroup": "Niveau {low} à {high}",
+        "stamina": {
+            "title": "Endurance",
+            "have": "Endurance",
+            "cans": "Canettes d'endurance",
+            "cansHint": "Depuis Ressources, {amount} d'endurance chacune",
+            "gina": "Endurance Training de Gina",
+            "ginaNone": "Non utilisé",
+            "ginaLevel": "Niveau {level}, {percent} % d'endurance en moins"
+        },
+        "planned": {
+            "title": "Chasses prévues",
+            "hint": "Chasses que vous faites de toute façon, comme les bêtes des missions Intel. Elles sont payées en premier.",
+            "empty": "Aucune chasse de bêtes prévue.",
+            "runLevel": "Niveau de la bête",
+            "runCount": "Bêtes",
+            "add": "Ajouter une chasse de bêtes",
+            "remove": "Retirer",
+            "removeLabel": "Retirer la chasse de bêtes de niveau {level}",
+            "polarTerrors": "Polar Terrors prévus"
+        },
+        "leftover": {
+            "title": "Endurance restante",
+            "hint": "Ce que paie l'endurance restante après les chasses prévues.",
+            "hunt": "Dépenser l'endurance restante pour",
+            "beasts": "Bêtes",
+            "polarTerrors": "Polar Terrors",
+            "beastLevel": "Niveau des bêtes"
+        },
+        "result": {
+            "title": "Résultat",
+            "rows": {
+                "beastCost": "Endurance pour une bête",
+                "polarTerrorCost": "Endurance pour un Polar Terror",
+                "plannedCost": "Endurance pour les chasses prévues",
+                "left": "Endurance restante",
+                "leftoverBeasts": "Bêtes que paie l'endurance restante",
+                "leftoverPolarTerrors": "Polar Terrors que paie l'endurance restante"
+            },
+            "short": "Les chasses prévues demandent {amount} d'endurance de plus que vous n'en avez. L'endurance restante ne paie aucune chasse en plus.",
+            "points": "Points d'événement",
+            "plannedPoints": "Prévu : {amount}",
+            "pointsNote": "Les points sont comptés avant tout bonus. Les chasses qui ne sont ni des bêtes ni des Polar Terrors, comme la Bear Hunt, ne sont pas comptées."
+        },
+        "export": {
+            "beasts": "Bêtes de niveau {level}",
+            "leftoverBeasts": "Bêtes de niveau {level} avec l'endurance restante",
+            "polarTerrors": "Polar Terrors"
+        }
     }
 }

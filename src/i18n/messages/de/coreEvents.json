@@ -29,7 +29,8 @@
         "noDates": "Die Daten werden im Event-Log gesetzt.",
         "today": "Heute ist {day}",
         "checklist": "Checkliste",
-        "log": "Event-Log"
+        "log": "Event-Log",
+        "beastPlan": "Biester planen"
     },
     "bonus": {
         "title": "Stufe {skill} von {expert}",
@@ -104,5 +105,64 @@
         "unknown": "Unbekannt",
         "notConfirmed": "Nicht bestätigt",
         "noneShowdown": "Das Paket hat keine persönliche Rangliste für Alliance Showdown."
+    },
+    "beasts": {
+        "title": "Biester planen",
+        "description": "Berechne, wie viele Biester und Polar Terrors deine Ausdauer bezahlt und wie viele Punkte sie in State of Power bringen.",
+        "saved": "Plan gespeichert {date}",
+        "notSavedYet": "Plan noch nicht gespeichert",
+        "close": "Schließen",
+        "save": "Plan speichern",
+        "exportButton": "In Kern-Events exportieren",
+        "exportNothing": "Der Plan bringt noch keine Punkte.",
+        "levelGroup": "Stufe {low} bis {high}",
+        "stamina": {
+            "title": "Ausdauer",
+            "have": "Ausdauer",
+            "cans": "Ausdauer-Dosen",
+            "cansHint": "Aus Ressourcen, je {amount} Ausdauer",
+            "gina": "Endurance Training von Gina",
+            "ginaNone": "Nicht genutzt",
+            "ginaLevel": "Stufe {level}, {percent}% weniger Ausdauer"
+        },
+        "planned": {
+            "title": "Geplante Jagden",
+            "hint": "Jagden, die du sowieso machst, etwa die Biester der Intel-Missionen. Sie werden zuerst bezahlt.",
+            "empty": "Keine Biesterjagden geplant.",
+            "runLevel": "Biest-Stufe",
+            "runCount": "Biester",
+            "add": "Biesterjagd hinzufügen",
+            "remove": "Entfernen",
+            "removeLabel": "Biesterjagd der Stufe {level} entfernen",
+            "polarTerrors": "Geplante Polar Terrors"
+        },
+        "leftover": {
+            "title": "Restausdauer",
+            "hint": "Wofür die Ausdauer nach den geplanten Jagden ausgegeben wird.",
+            "hunt": "Restausdauer ausgeben für",
+            "beasts": "Biester",
+            "polarTerrors": "Polar Terrors",
+            "beastLevel": "Stufe der Biester"
+        },
+        "result": {
+            "title": "Ergebnis",
+            "rows": {
+                "beastCost": "Ausdauer für ein Biest",
+                "polarTerrorCost": "Ausdauer für einen Polar Terror",
+                "plannedCost": "Ausdauer für die geplanten Jagden",
+                "left": "Restausdauer",
+                "leftoverBeasts": "Biester, die die Restausdauer bezahlt",
+                "leftoverPolarTerrors": "Polar Terrors, die die Restausdauer bezahlt"
+            },
+            "short": "Die geplanten Jagden brauchen {amount} Ausdauer mehr, als du hast. Die Restausdauer bezahlt keine weiteren Jagden.",
+            "points": "Event-Punkte",
+            "plannedPoints": "Geplant: {amount}",
+            "pointsNote": "Die Punkte gelten vor jedem Bonus. Jagden, die keine Biester oder Polar Terrors sind, etwa die Bear Hunt, zählen nicht."
+        },
+        "export": {
+            "beasts": "Biester der Stufe {level}",
+            "leftoverBeasts": "Biester der Stufe {level} aus der Restausdauer",
+            "polarTerrors": "Polar Terrors"
+        }
     }
 }

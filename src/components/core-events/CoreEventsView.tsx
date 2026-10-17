@@ -6,6 +6,8 @@ import type { CoreEventId, Playthrough } from "@/types/app";
 import { usePlaythrough } from "@/lib/contexts/PlaythroughContext";
 import { useNow } from "@/lib/hooks/useNow";
 import { useUiSettings } from "@/lib/hooks/useUiSettings";
+import { withSavedBeastPlan } from "@/service/beasts";
+import type { BeastPlanDraft } from "@/service/beasts";
 import { describeChief, updateChiefById } from "@/service/chiefs";
 import {
 	calculateEvent,
@@ -19,6 +21,7 @@ import { ButtonLink } from "@/comps/ui/Button";
 import { EmptyState } from "@/comps/ui/EmptyState";
 import { Tabs } from "@/comps/ui/Tabs";
 import { ActionTable } from "./ActionTable";
+import { BeastPlanFlyout } from "./BeastPlanFlyout";
 import { BonusCard } from "./BonusCard";
 import { DaysCard } from "./DaysCard";
 import { EventChecklistFlyout } from "./EventChecklistFlyout";
@@ -38,6 +41,7 @@ export function CoreEventsView({ chief }: { chief: Playthrough }) {
 	const [pickedDays, setPickedDays] = useState<Partial<Record<CoreEventId, string>>>({});
 	const [checklistOpen, setChecklistOpen] = useState(false);
 	const [logOpen, setLogOpen] = useState(false);
+	const [beastPlanOpen, setBeastPlanOpen] = useState(false);
 
 	const event = shown.includes(pickedEvent) ? pickedEvent : shown[0];
 	const result = event ? calculateEvent(chief, event) : null;
@@ -78,6 +82,14 @@ export function CoreEventsView({ chief }: { chief: Playthrough }) {
 			)
 		);
 
+	const saveBeastPlan = (plan: BeastPlanDraft) => {
+		updateData((data) =>
+			updateChiefById(data, chief.id, (current) =>
+				withSavedBeastPlan(current, plan, new Date().toISOString())
+			)
+		);
+	};
+
 	return (
 		<>
 			{header}
@@ -93,6 +105,7 @@ export function CoreEventsView({ chief }: { chief: Playthrough }) {
 					status={status}
 					onChecklist={() => setChecklistOpen(true)}
 					onLog={() => setLogOpen(true)}
+					onBeastPlan={event === "svs" ? () => setBeastPlanOpen(true) : undefined}
 				/>
 				<div className="flex flex-col gap-4 lg:grid lg:grid-cols-[minmax(0,1fr)_380px] lg:items-start">
 					<div className="contents lg:flex lg:min-w-0 lg:flex-col lg:gap-4">
@@ -149,6 +162,12 @@ export function CoreEventsView({ chief }: { chief: Playthrough }) {
 				event={event}
 				initialDayId={dayId}
 				onClose={() => setChecklistOpen(false)}
+			/>
+			<BeastPlanFlyout
+				open={beastPlanOpen}
+				chief={chief}
+				onClose={() => setBeastPlanOpen(false)}
+				onSave={saveBeastPlan}
 			/>
 			<EventLogFlyout
 				open={logOpen}

@@ -29,7 +29,8 @@
         "noDates": "ตั้งวันที่ในบันทึกกิจกรรม",
         "today": "วันนี้คือ {day}",
         "checklist": "เช็กลิสต์",
-        "log": "บันทึกกิจกรรม"
+        "log": "บันทึกกิจกรรม",
+        "beastPlan": "วางแผนสัตว์ร้าย"
     },
     "bonus": {
         "title": "เลเวล {skill} ของ {expert}",
@@ -104,5 +105,64 @@
         "unknown": "ไม่ทราบ",
         "notConfirmed": "ยังไม่ยืนยัน",
         "noneShowdown": "แพ็กเกจข้อมูลไม่มีอันดับส่วนตัวสำหรับ Alliance Showdown"
+    },
+    "beasts": {
+        "title": "วางแผนสัตว์ร้าย",
+        "description": "คำนวณว่าสเตมินาของคุณล่าสัตว์ร้ายและ Polar Terror ได้กี่ตัว และได้คะแนนเท่าไรใน State of Power",
+        "saved": "บันทึกแผนเมื่อ {date}",
+        "notSavedYet": "ยังไม่ได้บันทึกแผน",
+        "close": "ปิด",
+        "save": "บันทึกแผน",
+        "exportButton": "ส่งออกไปยัง Core Events",
+        "exportNothing": "แผนยังไม่ได้คะแนน",
+        "levelGroup": "เลเวล {low} ถึง {high}",
+        "stamina": {
+            "title": "สเตมินา",
+            "have": "สเตมินา",
+            "cans": "ขวดสเตมินา",
+            "cansHint": "จากทรัพยากร ขวดละ {amount} สเตมินา",
+            "gina": "Endurance Training ของ Gina",
+            "ginaNone": "ไม่ใช้",
+            "ginaLevel": "เลเวล {level} ลดสเตมินา {percent}%"
+        },
+        "planned": {
+            "title": "การล่าที่วางแผนไว้",
+            "hint": "การล่าที่คุณทำอยู่แล้ว เช่น สัตว์ร้ายของภารกิจ Intel หักสเตมินาส่วนนี้ก่อน",
+            "empty": "ไม่มีการล่าสัตว์ร้ายที่วางแผนไว้",
+            "runLevel": "เลเวลสัตว์ร้าย",
+            "runCount": "สัตว์ร้าย",
+            "add": "เพิ่มการล่าสัตว์ร้าย",
+            "remove": "ลบ",
+            "removeLabel": "ลบการล่าสัตว์ร้ายเลเวล {level}",
+            "polarTerrors": "Polar Terror ที่วางแผนไว้"
+        },
+        "leftover": {
+            "title": "สเตมินาที่เหลือ",
+            "hint": "สเตมินาที่เหลือหลังการล่าที่วางแผนไว้จะใช้ทำอะไร",
+            "hunt": "ใช้สเตมินาที่เหลือล่า",
+            "beasts": "สัตว์ร้าย",
+            "polarTerrors": "Polar Terror",
+            "beastLevel": "เลเวลของสัตว์ร้าย"
+        },
+        "result": {
+            "title": "ผลลัพธ์",
+            "rows": {
+                "beastCost": "สเตมินาต่อสัตว์ร้ายหนึ่งตัว",
+                "polarTerrorCost": "สเตมินาต่อ Polar Terror หนึ่งตัว",
+                "plannedCost": "สเตมินาสำหรับการล่าที่วางแผนไว้",
+                "left": "สเตมินาที่เหลือ",
+                "leftoverBeasts": "สัตว์ร้ายที่สเตมินาที่เหลือล่าได้",
+                "leftoverPolarTerrors": "Polar Terror ที่สเตมินาที่เหลือล่าได้"
+            },
+            "short": "การล่าที่วางแผนไว้ต้องใช้สเตมินาเพิ่มอีก {amount} จากที่คุณมี สเตมินาที่เหลือจึงล่าเพิ่มไม่ได้",
+            "points": "คะแนนกิจกรรม",
+            "plannedPoints": "วางแผนไว้: {amount}",
+            "pointsNote": "คะแนนนี้ยังไม่รวมโบนัส การล่าที่ไม่ใช่สัตว์ร้ายหรือ Polar Terror เช่น Bear Hunt ไม่นับ"
+        },
+        "export": {
+            "beasts": "สัตว์ร้ายเลเวล {level}",
+            "leftoverBeasts": "สัตว์ร้ายเลเวล {level} จากสเตมินาที่เหลือ",
+            "polarTerrors": "Polar Terror"
+        }
     }
 }

@@ -29,7 +29,8 @@
         "noDates": "As datas são definidas no Registro do evento.",
         "today": "Hoje é {day}",
         "checklist": "Lista",
-        "log": "Registro do evento"
+        "log": "Registro do evento",
+        "beastPlan": "Planejar feras"
     },
     "bonus": {
         "title": "Nível de {skill} de {expert}",
@@ -104,5 +105,64 @@
         "unknown": "Desconhecido",
         "notConfirmed": "Não confirmado",
         "noneShowdown": "O pacote de dados não tem ranking pessoal para o Alliance Showdown."
+    },
+    "beasts": {
+        "title": "Planejar feras",
+        "description": "Calcule quantas feras e Polar Terrors a sua resistência paga e os pontos que elas rendem em State of Power.",
+        "saved": "Plano salvo {date}",
+        "notSavedYet": "Plano ainda não salvo",
+        "close": "Fechar",
+        "save": "Salvar plano",
+        "exportButton": "Exportar para Eventos principais",
+        "exportNothing": "O plano ainda não rende pontos.",
+        "levelGroup": "Nível {low} a {high}",
+        "stamina": {
+            "title": "Resistência",
+            "have": "Resistência",
+            "cans": "Latas de resistência",
+            "cansHint": "De Recursos, {amount} de resistência cada",
+            "gina": "Endurance Training da Gina",
+            "ginaNone": "Não usado",
+            "ginaLevel": "Nível {level}, {percent}% menos resistência"
+        },
+        "planned": {
+            "title": "Caçadas planejadas",
+            "hint": "Caçadas que você faz de qualquer jeito, como as feras das missões de Intel. Elas são pagas primeiro.",
+            "empty": "Nenhuma caçada de feras planejada.",
+            "runLevel": "Nível da fera",
+            "runCount": "Feras",
+            "add": "Adicionar caçada de feras",
+            "remove": "Remover",
+            "removeLabel": "Remover a caçada de feras de nível {level}",
+            "polarTerrors": "Polar Terrors planejados"
+        },
+        "leftover": {
+            "title": "Resistência restante",
+            "hint": "No que gastar a resistência que sobra depois das caçadas planejadas.",
+            "hunt": "Gastar a resistência restante em",
+            "beasts": "Feras",
+            "polarTerrors": "Polar Terrors",
+            "beastLevel": "Nível das feras"
+        },
+        "result": {
+            "title": "Resultado",
+            "rows": {
+                "beastCost": "Resistência para uma fera",
+                "polarTerrorCost": "Resistência para um Polar Terror",
+                "plannedCost": "Resistência para as caçadas planejadas",
+                "left": "Resistência restante",
+                "leftoverBeasts": "Feras que a resistência restante paga",
+                "leftoverPolarTerrors": "Polar Terrors que a resistência restante paga"
+            },
+            "short": "As caçadas planejadas precisam de {amount} de resistência a mais do que você tem. A resistência restante não paga caçadas extras.",
+            "points": "Pontos de evento",
+            "plannedPoints": "Planejado: {amount}",
+            "pointsNote": "Os pontos não incluem nenhum bônus. Caçadas que não são feras nem Polar Terrors, como a Bear Hunt, não são contadas."
+        },
+        "export": {
+            "beasts": "Feras de nível {level}",
+            "leftoverBeasts": "Feras de nível {level} com a resistência restante",
+            "polarTerrors": "Polar Terrors"
+        }
     }
 }

@@ -29,7 +29,8 @@
         "noDates": "Las fechas se fijan en el Registro de eventos.",
         "today": "Hoy es {day}",
         "checklist": "Lista",
-        "log": "Registro de eventos"
+        "log": "Registro de eventos",
+        "beastPlan": "Planificar bestias"
     },
     "bonus": {
         "title": "Nivel de {skill} de {expert}",
@@ -104,5 +105,64 @@
         "unknown": "Desconocido",
         "notConfirmed": "Sin confirmar",
         "noneShowdown": "El paquete no tiene clasificación personal para Alliance Showdown."
+    },
+    "beasts": {
+        "title": "Planificar bestias",
+        "description": "Calcula cuántas bestias y Polar Terrors paga tu vigor y los puntos que suman en State of Power.",
+        "saved": "Plan guardado {date}",
+        "notSavedYet": "Plan sin guardar todavía",
+        "close": "Cerrar",
+        "save": "Guardar plan",
+        "exportButton": "Exportar a Eventos clave",
+        "exportNothing": "El plan no suma puntos todavía.",
+        "levelGroup": "Nivel {low} a {high}",
+        "stamina": {
+            "title": "Vigor",
+            "have": "Vigor",
+            "cans": "Botes de vigor",
+            "cansHint": "De Recursos, {amount} de vigor cada uno",
+            "gina": "Endurance Training de Gina",
+            "ginaNone": "No se usa",
+            "ginaLevel": "Nivel {level}, {percent}% menos de vigor"
+        },
+        "planned": {
+            "title": "Cacerías planificadas",
+            "hint": "Cacerías que haces de todos modos, como las bestias de las misiones de Intel. Se pagan primero.",
+            "empty": "No hay cacerías de bestias planificadas.",
+            "runLevel": "Nivel de la bestia",
+            "runCount": "Bestias",
+            "add": "Añadir cacería de bestias",
+            "remove": "Quitar",
+            "removeLabel": "Quitar la cacería de bestias de nivel {level}",
+            "polarTerrors": "Polar Terrors planificados"
+        },
+        "leftover": {
+            "title": "Vigor restante",
+            "hint": "En qué se gasta el vigor que queda después de las cacerías planificadas.",
+            "hunt": "Gastar el vigor restante en",
+            "beasts": "Bestias",
+            "polarTerrors": "Polar Terrors",
+            "beastLevel": "Nivel de las bestias"
+        },
+        "result": {
+            "title": "Resultado",
+            "rows": {
+                "beastCost": "Vigor para una bestia",
+                "polarTerrorCost": "Vigor para un Polar Terror",
+                "plannedCost": "Vigor para las cacerías planificadas",
+                "left": "Vigor restante",
+                "leftoverBeasts": "Bestias que paga el vigor restante",
+                "leftoverPolarTerrors": "Polar Terrors que paga el vigor restante"
+            },
+            "short": "Las cacerías planificadas necesitan {amount} de vigor más del que tienes. El vigor restante no paga cacerías extra.",
+            "points": "Puntos de evento",
+            "plannedPoints": "Planificado: {amount}",
+            "pointsNote": "Los puntos no incluyen ninguna bonificación. Las cacerías que no son bestias ni Polar Terrors, como la Bear Hunt, no se cuentan."
+        },
+        "export": {
+            "beasts": "Bestias de nivel {level}",
+            "leftoverBeasts": "Bestias de nivel {level} con el vigor restante",
+            "polarTerrors": "Polar Terrors"
+        }
     }
 }
