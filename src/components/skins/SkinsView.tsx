@@ -21,7 +21,7 @@ import {
 } from "@/service/skins";
 import type { SkinFilters } from "@/service/skins";
 import { PageHeader } from "@/comps/layout/PageHeader";
-import { Button } from "@/comps/ui/Button";
+import { Button, ButtonLink } from "@/comps/ui/Button";
 import { EmptyState } from "@/comps/ui/EmptyState";
 import { Input } from "@/comps/ui/Input";
 import { SkinCard } from "./SkinCard";
@@ -33,9 +33,9 @@ const MOBILE_PAGE_SIZE = 6;
 function WikiButton({ className }: { className: string }) {
 	const t = useTranslations("skins.wiki");
 	return (
-		<Button variant="ghost" disabled title={t("unavailable")} className={className}>
+		<ButtonLink variant="ghost" href="/wiki/skins" className={className}>
 			{t("button")}
-		</Button>
+		</ButtonLink>
 	);
 }
 

@@ -29,7 +29,7 @@ import {
 } from "@/service/daybreak";
 import type { DecorationFilters, DecorationView } from "@/service/daybreak";
 import { PageHeader } from "@/comps/layout/PageHeader";
-import { Button } from "@/comps/ui/Button";
+import { Button, ButtonLink } from "@/comps/ui/Button";
 import { EmptyState } from "@/comps/ui/EmptyState";
 import { Input } from "@/comps/ui/Input";
 import { Note } from "@/comps/ui/Note";
@@ -44,9 +44,9 @@ const MOBILE_PAGE_SIZE = 8;
 function WikiButton({ className }: { className: string }) {
 	const t = useTranslations("daybreak.wiki");
 	return (
-		<Button variant="ghost" disabled title={t("unavailable")} className={className}>
+		<ButtonLink variant="ghost" href="/wiki/daybreak-island" className={className}>
 			{t("button")}
-		</Button>
+		</ButtonLink>
 	);
 }
 

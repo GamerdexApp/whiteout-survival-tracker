@@ -92,7 +92,7 @@ export function TundraAlbumView({ chief }: { chief: Playthrough }) {
 					total: formatNumber(views.length),
 				})}
 				actions={
-					<ButtonLink variant="ghost" href="/wiki" className="max-lg:w-full">
+					<ButtonLink variant="ghost" href="/wiki/tundra-album" className="max-lg:w-full">
 						{t("wiki.button")}
 					</ButtonLink>
 				}

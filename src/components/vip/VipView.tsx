@@ -9,7 +9,7 @@ import { useUiSettings } from "@/lib/hooks/useUiSettings";
 import { describeChief, updateChiefById } from "@/service/chiefs";
 import { totalXpOf, vipLevelOf, withVipLevel, withVipXp } from "@/service/vip";
 import { PageHeader } from "@/comps/layout/PageHeader";
-import { Button } from "@/comps/ui/Button";
+import { Button, ButtonLink } from "@/comps/ui/Button";
 import { NextLevelCard, PerksCard } from "./BonusCards";
 import { VipInputCard } from "./VipInputCard";
 import { VipTable } from "./VipTable";
@@ -17,9 +17,9 @@ import { VipTable } from "./VipTable";
 function WikiButton({ className }: { className: string }) {
 	const t = useTranslations("vip.wiki");
 	return (
-		<Button variant="ghost" disabled title={t("unavailable")} className={className}>
+		<ButtonLink variant="ghost" href="/wiki/vip" className={className}>
 			{t("button")}
-		</Button>
+		</ButtonLink>
 	);
 }
 
