@@ -180,7 +180,8 @@
             "notObject": "The settings are not an object.",
             "badTheme": "The theme is not Light, Dark or System.",
             "notText": "The {key} setting is not text.",
-            "uiNotObject": "The interface settings are not an object."
+            "uiNotObject": "The interface settings are not an object.",
+            "badTimeZone": "The time zone is not one the browser knows."
         },
         "summary": {
             "added": "{amount} added",
@@ -218,6 +219,11 @@
                 "dmy": "Day/Month/Year",
                 "ymd": "Year-Month-Day"
             }
+        },
+        "timeZone": {
+            "label": "Time zone",
+            "hint": "Used for dates and times, and for My time on Events. Example: 14:05 UTC shows as {example}.",
+            "auto": "Automatic, follows your device ({zone})"
         }
     }
 }

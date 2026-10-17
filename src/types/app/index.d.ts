@@ -40,6 +40,8 @@ export interface Settings {
   language?: string;
   numberFormat?: string;
   dateFormat?: string;
+  /** A time zone id such as America/New_York, or auto to follow the device. */
+  timeZone?: string;
   ui?: UiSettings;
 }
 

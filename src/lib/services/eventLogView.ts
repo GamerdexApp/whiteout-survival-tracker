@@ -1,14 +1,8 @@
-import { formatShortDate } from "@/lib/format";
+import { formatCalendarDate } from "@/lib/format";
 import { MS_PER_DAY } from "@/data/game/coreEvents";
 
-const localDateOf = (day: string) => {
-  const [year, month, date] = day.split("-").map(Number);
-  return new Date(year, month - 1, date);
-};
-
-/** Formats a typed date (YYYY-MM-DD) in the local calendar, so the day never shifts. */
-export const formatTypedDate = (day: string) =>
-  formatShortDate(localDateOf(day).toISOString());
+/** Formats a typed date (YYYY-MM-DD) so the day never shifts in any time zone. */
+export const formatTypedDate = formatCalendarDate;
 
 /** The number of days from start to end, both included. Null when a date is missing or the end is earlier. */
 export const dayCountOf = (

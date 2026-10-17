@@ -1,7 +1,7 @@
 import { translator } from "@/i18n/formatter";
 import type { UserEventRun } from "@/types/app";
-import { formatNumber, formatShortDate, formatTime } from "@/lib/format";
-import { clockText, noonIsoOf, WEEKDAY_IDS, zoneParts } from "./eventsSchedule";
+import { formatCalendarDate, formatNumber, formatTime } from "@/lib/format";
+import { clockText, WEEKDAY_IDS, zoneParts } from "./eventsSchedule";
 import type { EventsZone } from "./eventsSchedule";
 
 export const MONTH_IDS = [
@@ -19,8 +19,11 @@ export const MONTH_IDS = [
   "december",
 ] as const;
 
-export const shortDayText = (ms: number, zone: EventsZone) =>
-  formatShortDate(noonIsoOf(ms, zone));
+export const shortDayText = (ms: number, zone: EventsZone) => {
+  const { year, month, day } = zoneParts(ms, zone);
+  const pad = (value: number) => String(value).padStart(2, "0");
+  return formatCalendarDate(`${year}-${pad(month + 1)}-${pad(day)}`);
+};
 
 export const weekdayDayText = (ms: number, zone: EventsZone) =>
   translator("events")("format.weekdayDay", {

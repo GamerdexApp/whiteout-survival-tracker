@@ -1,8 +1,11 @@
 import { useTranslations } from "next-intl";
 import type { CoreEventId, EventHistoryEntry } from "@/types/app";
-import { formatDecimal, formatNumber, formatShortDate } from "@/lib/format";
-
-const localDate = (day: string) => `${day}T00:00:00`;
+import {
+  formatCalendarDate,
+  formatDecimal,
+  formatNumber,
+  formatShortDate,
+} from "@/lib/format";
 
 export const signedNumber = (value: number) =>
   value > 0 ? `+${formatNumber(value)}` : formatNumber(value);
@@ -17,8 +20,8 @@ export function useHistoryText() {
     entry.start && entry.end
       ? t("title.dated", {
           event: t(`events.${event}`),
-          start: formatShortDate(localDate(entry.start)),
-          end: formatShortDate(localDate(entry.end)),
+          start: formatCalendarDate(entry.start),
+          end: formatCalendarDate(entry.end),
         })
       : t("title.undated", { event: t(`events.${event}`) });
 

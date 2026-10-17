@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 import type { Playthrough } from "@/types/app";
-import { formatNumber, formatShortDate } from "@/lib/format";
+import { formatCalendarDate, formatNumber } from "@/lib/format";
 import { serverAgeOf } from "@/service/overviewEvents";
 import type { UnlockState } from "@/service/overviewEvents";
 import { areaUnlockRow, nextGenerationOf } from "@/service/overviewUnlocks";
@@ -99,7 +99,7 @@ export function ServerAgeCard({
 				</span>
 				{age.startDate && (
 					<span className="text-muted">
-						{t("fromDate", { date: formatShortDate(`${age.startDate}T12:00:00`) })}
+						{t("fromDate", { date: formatCalendarDate(age.startDate) })}
 					</span>
 				)}
 			</div>

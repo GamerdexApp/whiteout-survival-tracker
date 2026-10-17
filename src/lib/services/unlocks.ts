@@ -1,4 +1,4 @@
-import { formatShortDate, translator } from "@/i18n/formatter";
+import { formatCalendarDate, translator } from "@/i18n/formatter";
 import type { Expert, Pet } from "whiteout-survival-data";
 import type { Playthrough, UnlockArea } from "@/types/app";
 import { findExpert, unreleasedExpertName } from "@/data/game/experts";
@@ -264,8 +264,7 @@ export const unlockDateOf = (chief: Playthrough, day: number) =>
     : null;
 
 /** A calendar date from `unlockDateOf`, shown on the same day in any time zone. */
-export const formatUnlockDate = (date: string) =>
-  formatShortDate(`${date}T12:00:00`);
+export const formatUnlockDate = (date: string) => formatCalendarDate(date);
 
 /** The text that says why something is locked: the server day, with its date when it is known. */
 export const unlockText = (chief: Playthrough, requiredDay: number) => {

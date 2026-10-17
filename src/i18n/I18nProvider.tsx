@@ -14,6 +14,7 @@ import { configureI18n } from "./formatter";
 import { DEFAULT_LOCALE, isSupportedLocale, loadMessages } from "./locales";
 import type { Locale, Messages } from "./locales";
 import en from "./messages/en";
+import { isTimeZoneId } from "./zones";
 
 /**
  * Reads the language and formats from the saved settings and gives every component its messages.
@@ -39,6 +40,8 @@ export function I18nProvider({ children }: { children: ReactNode }) {
 		? settings.dateFormat
 		: DEFAULT_DATE_FORMAT;
 
+	const timeZone = isTimeZoneId(settings?.timeZone) ? settings.timeZone : undefined;
+
 	const [loaded, setLoaded] = useState<{ locale: Locale; messages: Messages }>({
 		locale: DEFAULT_LOCALE,
 		messages: en,
@@ -62,11 +65,13 @@ export function I18nProvider({ children }: { children: ReactNode }) {
 	const ready = loaded.locale === locale;
 	const activeLocale = ready ? locale : DEFAULT_LOCALE;
 	const messages = ready ? loaded.messages : en;
-	configureI18n({ locale: activeLocale, messages, numberFormat, dateFormat });
+	configureI18n({ locale: activeLocale, messages, numberFormat, dateFormat, timeZone });
 
 	return (
 		<NextIntlClientProvider locale={activeLocale} messages={messages}>
-			<Fragment key={`${activeLocale}|${numberFormat}|${dateFormat}`}>{children}</Fragment>
+			<Fragment key={`${activeLocale}|${numberFormat}|${dateFormat}|${timeZone ?? "auto"}`}>
+				{children}
+			</Fragment>
 		</NextIntlClientProvider>
 	);
 }

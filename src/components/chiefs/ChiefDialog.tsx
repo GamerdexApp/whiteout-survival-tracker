@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl";
 import { useId, useState } from "react";
 import type { FormEvent } from "react";
 import type { ChiefValues, CoreEventId, Playthrough, UnlockOverrides } from "@/types/app";
-import { formatNumber } from "@/lib/format";
+import { formatNumber, todayDate } from "@/lib/format";
 import { toChiefValues } from "@/service/chiefs";
 import { builderJob } from "@/service/queues";
 import {
@@ -39,11 +39,7 @@ interface FormErrors {
 	serverStartDate?: string;
 }
 
-const todayIso = () => {
-	const now = new Date();
-	const pad = (value: number) => String(value).padStart(2, "0");
-	return `${now.getFullYear()}-${pad(now.getMonth() + 1)}-${pad(now.getDate())}`;
-};
+const todayIso = todayDate;
 
 const generations = Array.from({ length: MAX_HERO_GENERATION + 1 }, (_, index) => index);
 

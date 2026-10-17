@@ -1,3 +1,5 @@
+import { activeTimeZone } from "@/i18n/formatter";
+import { zonedDayStartMs, zonedParts } from "@/i18n/zones";
 import type {
   UserEventRepeat,
   UserEventRun,
@@ -227,14 +229,7 @@ export const zoneParts = (ms: number, zone: EventsZone): ZoneParts => {
       weekday: date.getUTCDay(),
     };
   }
-  return {
-    year: date.getFullYear(),
-    month: date.getMonth(),
-    day: date.getDate(),
-    hour: date.getHours(),
-    minute: date.getMinutes(),
-    weekday: date.getDay(),
-  };
+  return zonedParts(ms, activeTimeZone());
 };
 
 export const zoneDayStartMs = (
@@ -245,7 +240,7 @@ export const zoneDayStartMs = (
 ) =>
   zone === "utc"
     ? Date.UTC(year, month, day)
-    : new Date(year, month, day).getTime();
+    : zonedDayStartMs(year, month, day, activeTimeZone());
 
 /** The calendar day of a moment as a whole number of days, so two days compare in any zone. */
 export const dayNumberOf = (ms: number, zone: EventsZone) => {
@@ -256,12 +251,6 @@ export const dayNumberOf = (ms: number, zone: EventsZone) => {
 export const clockText = (ms: number, zone: EventsZone) => {
   const parts = zoneParts(ms, zone);
   return `${String(parts.hour).padStart(2, "0")}:${String(parts.minute).padStart(2, "0")}`;
-};
-
-/** A date at noon of the zone day, so a local date formatter prints the same day. */
-export const noonIsoOf = (ms: number, zone: EventsZone) => {
-  const parts = zoneParts(ms, zone);
-  return new Date(parts.year, parts.month, parts.day, 12).toISOString();
 };
 
 export interface CalendarDay {

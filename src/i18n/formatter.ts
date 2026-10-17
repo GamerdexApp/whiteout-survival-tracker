@@ -8,6 +8,7 @@ import type { DateFormatId, NumberFormatId } from "./formats";
 import { DEFAULT_LOCALE, REGION_TAG } from "./locales";
 import type { Locale, Messages } from "./locales";
 import en from "./messages/en";
+import { deviceTimeZone, zonedDateOf } from "./zones";
 
 /**
  * The language and formats that code outside React reads. `I18nProvider` sets them, and it
@@ -19,6 +20,8 @@ interface I18nState {
   messages: Messages;
   numberFormat: NumberFormatId;
   dateFormat: DateFormatId;
+  /** A time zone id, or undefined to follow the device. */
+  timeZone?: string;
 }
 
 let state: I18nState = {
@@ -33,6 +36,9 @@ export const configureI18n = (next: I18nState) => {
 };
 
 export const getI18nState = () => state;
+
+/** The time zone of every date and time the app writes. It follows the device unless chosen. */
+export const activeTimeZone = () => state.timeZone ?? deviceTimeZone();
 
 const numberTag = () => numberTagOf(state.numberFormat, state.locale);
 const languageTag = () => REGION_TAG[state.locale];
@@ -78,9 +84,14 @@ const DATE_SEPARATOR: Record<Exclude<DateFormatId, "auto">, string> = {
   ymd: "-",
 };
 
-const numericDate = (date: Date, format: Exclude<DateFormatId, "auto">) => {
+const numericDate = (
+  date: Date,
+  format: Exclude<DateFormatId, "auto">,
+  timeZone?: string,
+) => {
   const parts = Object.fromEntries(
     new Intl.DateTimeFormat("en-US", {
+      timeZone,
       year: "numeric",
       month: "2-digit",
       day: "2-digit",
@@ -95,6 +106,7 @@ const numericDate = (date: Date, format: Exclude<DateFormatId, "auto">) => {
 
 export const formatTime = (date: Date) =>
   date.toLocaleTimeString(languageTag(), {
+    timeZone: state.timeZone,
     hour: "numeric",
     minute: "2-digit",
   });
@@ -102,9 +114,10 @@ export const formatTime = (date: Date) =>
 export const formatDateTime = (iso: string) => {
   const date = new Date(iso);
   if (state.dateFormat !== "auto") {
-    return `${numericDate(date, state.dateFormat)}, ${formatTime(date)}`;
+    return `${numericDate(date, state.dateFormat, state.timeZone)}, ${formatTime(date)}`;
   }
   return date.toLocaleString(languageTag(), {
+    timeZone: state.timeZone,
     month: "short",
     day: "numeric",
     hour: "numeric",
@@ -112,15 +125,33 @@ export const formatDateTime = (iso: string) => {
   });
 };
 
-export const formatShortDate = (iso: string) => {
-  const date = new Date(iso);
-  if (state.dateFormat !== "auto") return numericDate(date, state.dateFormat);
+const writeDate = (date: Date, timeZone: string | undefined) => {
+  if (state.dateFormat !== "auto") {
+    return numericDate(date, state.dateFormat, timeZone);
+  }
   return date.toLocaleDateString(languageTag(), {
+    timeZone,
     month: "short",
     day: "numeric",
     year: "numeric",
   });
 };
+
+/** The date of a moment, in the chosen time zone. */
+export const formatShortDate = (iso: string) =>
+  writeDate(new Date(iso), state.timeZone);
+
+/**
+ * A calendar date typed as YYYY-MM-DD, such as a server start date. It has no time and no zone,
+ * so it prints the same day in every time zone.
+ */
+export const formatCalendarDate = (day: string) => {
+  const [year, month, date] = day.split("-").map(Number);
+  return writeDate(new Date(Date.UTC(year, month - 1, date, 12)), "UTC");
+};
+
+/** Today as YYYY-MM-DD in the chosen time zone. */
+export const todayDate = () => zonedDateOf(Date.now(), activeTimeZone());
 
 /**
  * A translator for code that is not a component, such as a service that builds a sentence. A

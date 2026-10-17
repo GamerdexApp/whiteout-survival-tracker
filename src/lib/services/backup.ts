@@ -1,4 +1,5 @@
 import { translator } from "@/i18n/formatter";
+import { AUTOMATIC_TIME_ZONE, isTimeZoneId } from "@/i18n/zones";
 import type {
   AppData,
   CoreEventId,
@@ -86,10 +87,22 @@ const parseSettings = (value: unknown): Settings | string => {
   if (value.theme !== undefined && !themes.includes(value.theme as Theme)) {
     return t("backup.settings.badTheme");
   }
-  for (const key of ["language", "numberFormat", "dateFormat"] as const) {
+  for (const key of [
+    "language",
+    "numberFormat",
+    "dateFormat",
+    "timeZone",
+  ] as const) {
     if (value[key] !== undefined && typeof value[key] !== "string") {
       return t("backup.settings.notText", { key });
     }
+  }
+  if (
+    value.timeZone !== undefined &&
+    value.timeZone !== AUTOMATIC_TIME_ZONE &&
+    !isTimeZoneId(value.timeZone)
+  ) {
+    return t("backup.settings.badTimeZone");
   }
   if (value.ui !== undefined && !isRecord(value.ui))
     return t("backup.settings.uiNotObject");

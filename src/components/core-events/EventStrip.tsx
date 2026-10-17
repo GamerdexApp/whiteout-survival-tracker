@@ -1,11 +1,9 @@
 import { useTranslations } from "next-intl";
 import type { CoreEventId, Playthrough } from "@/types/app";
-import { formatShortDate } from "@/lib/format";
+import { formatCalendarDate } from "@/lib/format";
 import type { EventStatus } from "@/service/coreEvents";
 import { dayLabelOf, logOf } from "@/service/coreEvents";
 import { Button } from "@/comps/ui/Button";
-
-const localNoonOf = (date: string) => `${date}T12:00:00`;
 
 interface EventStripProps {
 	chief: Playthrough;
@@ -21,8 +19,8 @@ export function EventStrip({ chief, event, status, onChecklist, onLog }: EventSt
 	const dates =
 		start && end
 			? t("dates", {
-					start: formatShortDate(localNoonOf(start)),
-					end: formatShortDate(localNoonOf(end)),
+					start: formatCalendarDate(start),
+					end: formatCalendarDate(end),
 				})
 			: t("noDates");
 
