@@ -4,6 +4,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { Fragment, useEffect, useState, useSyncExternalStore } from "react";
 import type { ReactNode } from "react";
 import { storageService } from "@/service/storage";
+import { DocumentTitle } from "@/comps/layout/DocumentTitle";
 import {
 	DEFAULT_DATE_FORMAT,
 	DEFAULT_NUMBER_FORMAT,
@@ -75,6 +76,7 @@ export function I18nProvider({ children }: { children: ReactNode }) {
 			timeZone={timeZone ?? "UTC"}
 		>
 			<Fragment key={`${activeLocale}|${numberFormat}|${dateFormat}|${timeZone ?? "auto"}`}>
+				<DocumentTitle />
 				{children}
 			</Fragment>
 		</NextIntlClientProvider>
