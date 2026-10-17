@@ -6,10 +6,9 @@
     },
     "page": {
         "title": "Settings",
-        "subline": "Manage your data, sync, chief settings and appearance",
+        "subline": "Manage your data, chief settings and appearance",
         "tabsLabel": "Settings",
         "tabs": {
-            "sync": "Sync",
             "preferences": "Preferences",
             "data": "Backup and data",
             "about": "About"
@@ -17,21 +16,9 @@
     },
     "about": {
         "version": "Version {version}",
-        "summary": "Track your Whiteout Survival progress: buildings, heroes, chief gear, experts, pets, troops, research, alliance tech, resources and your planner. Everything is stored in this browser, with optional sync to your own cloud storage.",
+        "summary": "Track your Whiteout Survival progress: buildings, heroes, chief gear, experts, pets, troops, research, alliance tech, resources and your planner. Everything is stored in this browser.",
         "wiki": "Whiteout Survival wiki",
         "disclaimer": "Not affiliated with or endorsed by Century Games. Whiteout Survival is a trademark of Century Games."
-    },
-    "sync": {
-        "title": "Sync across devices",
-        "description": "Keep your chiefs the same on your computer and your phone. Sync is optional and free.",
-        "notConnected": "Not connected",
-        "comingLater": "Coming later",
-        "providers": {
-            "googleDrive": "Google Drive",
-            "dropbox": "Dropbox",
-            "oneDrive": "OneDrive",
-            "gitHub": "GitHub"
-        }
     },
     "preferences": {
         "chiefSettings": {

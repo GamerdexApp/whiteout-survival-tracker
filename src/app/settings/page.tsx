@@ -7,15 +7,14 @@ import { PageHeader } from "@/comps/layout/PageHeader";
 import { AboutTab } from "@/comps/settings/AboutTab";
 import { DataTab } from "@/comps/settings/DataTab";
 import { PreferencesTab } from "@/comps/settings/PreferencesTab";
-import { SyncTab } from "@/comps/settings/SyncTab";
 import { Tabs } from "@/comps/ui/Tabs";
 
-const tabIds = ["sync", "preferences", "data", "about"] as const;
+const tabIds = ["preferences", "data", "about"] as const;
 
 type SettingsTabId = (typeof tabIds)[number];
 
 const parseTab = (value: string | null): SettingsTabId =>
-	tabIds.find((id) => id === value) ?? "sync";
+	tabIds.find((id) => id === value) ?? "preferences";
 
 function SettingsContent() {
 	const t = useTranslations("settings.page");
@@ -31,7 +30,6 @@ function SettingsContent() {
 				activeId={activeTab}
 				onChange={(id) => router.replace(`/settings?tab=${id}`, { scroll: false })}
 			>
-				{activeTab === "sync" && <SyncTab />}
 				{activeTab === "preferences" && <PreferencesTab />}
 				{activeTab === "data" && <DataTab />}
 				{activeTab === "about" && <AboutTab />}
