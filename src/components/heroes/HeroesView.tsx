@@ -23,6 +23,7 @@ export function HeroesView({ chief }: { chief: Playthrough }) {
 	return (
 		<>
 			<PageHeader
+				wikiPage={tabId === "gear" ? "heroGear" : "heroes"}
 				title={t("heroesTab")}
 				subline={
 					tabId === "heroes"

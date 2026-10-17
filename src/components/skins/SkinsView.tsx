@@ -21,7 +21,7 @@ import {
 } from "@/service/skins";
 import type { SkinFilters } from "@/service/skins";
 import { PageHeader } from "@/comps/layout/PageHeader";
-import { Button, ButtonLink } from "@/comps/ui/Button";
+import { Button } from "@/comps/ui/Button";
 import { EmptyState } from "@/comps/ui/EmptyState";
 import { Input } from "@/comps/ui/Input";
 import { SkinCard } from "./SkinCard";
@@ -29,15 +29,6 @@ import { SkinFiltersFlyout } from "./SkinFiltersFlyout";
 import { BonusTotalsCard, ExpiryNote, OwnedTile } from "./SkinsSummary";
 
 const MOBILE_PAGE_SIZE = 6;
-
-function WikiButton({ className }: { className: string }) {
-	const t = useTranslations("skins.wiki");
-	return (
-		<ButtonLink variant="ghost" href="/wiki/skins" className={className}>
-			{t("button")}
-		</ButtonLink>
-	);
-}
 
 export function SkinsView({ chief }: { chief: Playthrough }) {
 	const t = useTranslations("skins");
@@ -85,7 +76,6 @@ export function SkinsView({ chief }: { chief: Playthrough }) {
 					owned: formatNumber(summary.owned),
 					total: formatNumber(summary.total),
 				})}
-				actions={<WikiButton className="max-lg:hidden" />}
 			/>
 
 			<div className="grid gap-3 lg:grid-cols-[minmax(0,1fr)_minmax(0,2.4fr)]">
@@ -116,7 +106,6 @@ export function SkinsView({ chief }: { chief: Playthrough }) {
 						</span>
 					)}
 				</Button>
-				<WikiButton className="flex-1 lg:hidden" />
 			</div>
 			<p role="status" className="text-muted">
 				{activeFilterNames.length > 0

@@ -91,11 +91,6 @@ export function TundraAlbumView({ chief }: { chief: Playthrough }) {
 					complete: formatNumber(completeCount),
 					total: formatNumber(views.length),
 				})}
-				actions={
-					<ButtonLink variant="ghost" href="/wiki/tundra-album" className="max-lg:w-full">
-						{t("wiki.button")}
-					</ButtonLink>
-				}
 			/>
 
 			<div className="grid items-start gap-4 lg:grid-cols-[1fr_2fr]">

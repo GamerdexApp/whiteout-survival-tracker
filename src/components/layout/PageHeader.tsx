@@ -1,13 +1,40 @@
+"use client";
+
+import { useTranslations } from "next-intl";
+import { usePathname } from "next/navigation";
 import type { ReactNode } from "react";
+import { LuBookOpen } from "react-icons/lu";
+import { wikiPages } from "@/data/wiki";
+import type { WikiPageId } from "@/data/wiki";
+import { ButtonLink } from "@/comps/ui/Button";
 import { SavedChip } from "@/comps/ui/SavedChip";
 
 interface PageHeaderProps {
 	title: string;
 	subline?: string;
 	actions?: ReactNode;
+	/** The Wiki page to open, for a page whose tabs each have their own Wiki page. */
+	wikiPage?: WikiPageId;
 }
 
-export function PageHeader({ title, subline, actions }: PageHeaderProps) {
+/** A link to the Wiki page of the data this page edits. Pages with no Wiki page show none. */
+function WikiLink({ wikiPage }: { wikiPage?: WikiPageId }) {
+	const t = useTranslations("shell.pageHeader");
+	const pathname = usePathname();
+	const page = wikiPage
+		? wikiPages.find((item) => item.id === wikiPage)
+		: wikiPages.find((item) => item.trackerHref === pathname);
+	if (!page) return null;
+
+	return (
+		<ButtonLink href={`/wiki/${page.slug}`} variant="secondary">
+			<LuBookOpen size={16} aria-hidden="true" />
+			{t("wiki")}
+		</ButtonLink>
+	);
+}
+
+export function PageHeader({ title, subline, actions, wikiPage }: PageHeaderProps) {
 	return (
 		<header className="flex flex-wrap items-center justify-between gap-4">
 			<div className="flex flex-col">
@@ -16,6 +43,7 @@ export function PageHeader({ title, subline, actions }: PageHeaderProps) {
 			</div>
 			<div className="flex flex-wrap items-center gap-3">
 				{actions}
+				<WikiLink wikiPage={wikiPage} />
 				<span className="max-lg:hidden">
 					<SavedChip />
 				</span>

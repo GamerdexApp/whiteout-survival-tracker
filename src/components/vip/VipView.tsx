@@ -9,19 +9,10 @@ import { useUiSettings } from "@/lib/hooks/useUiSettings";
 import { describeChief, updateChiefById } from "@/service/chiefs";
 import { totalXpOf, vipLevelOf, withVipLevel, withVipXp } from "@/service/vip";
 import { PageHeader } from "@/comps/layout/PageHeader";
-import { Button, ButtonLink } from "@/comps/ui/Button";
+import { Button } from "@/comps/ui/Button";
 import { NextLevelCard, PerksCard } from "./BonusCards";
 import { VipInputCard } from "./VipInputCard";
 import { VipTable } from "./VipTable";
-
-function WikiButton({ className }: { className: string }) {
-	const t = useTranslations("vip.wiki");
-	return (
-		<ButtonLink variant="ghost" href="/wiki/vip" className={className}>
-			{t("button")}
-		</ButtonLink>
-	);
-}
 
 export function VipView({ chief }: { chief: Playthrough }) {
 	const t = useTranslations("vip");
@@ -53,9 +44,7 @@ export function VipView({ chief }: { chief: Playthrough }) {
 								xp: formatNumber(totalXp),
 							})
 				}
-				actions={<WikiButton className="max-lg:hidden" />}
 			/>
-			<WikiButton className="w-full lg:hidden" />
 			<div className="grid items-start gap-4 lg:grid-cols-2">
 				<VipInputCard
 					totalXp={totalXp}

@@ -17,6 +17,7 @@ export function ChiefGearView({ chief }: { chief: Playthrough }) {
 	return (
 		<>
 			<PageHeader
+				wikiPage={tabId === "charms" ? "chiefCharms" : "chiefGear"}
 				title={t("title")}
 				subline={
 					tabId === "gear"

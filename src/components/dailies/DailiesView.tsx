@@ -9,7 +9,6 @@ import { useUiSettings } from "@/lib/hooks/useUiSettings";
 import { describeChief } from "@/service/chiefs";
 import { cycleDateAt, readDailies, summarizeDailies } from "@/service/dailies";
 import { PageHeader } from "@/comps/layout/PageHeader";
-import { ButtonLink } from "@/comps/ui/Button";
 import { Card } from "@/comps/ui/Card";
 import { SegmentedControl } from "@/comps/ui/SegmentedControl";
 import { ActivityCard } from "./ActivityCard";
@@ -57,11 +56,6 @@ export function DailiesView({ chief }: { chief: Playthrough }) {
 					chief: chief.name,
 					details: describeChief(chief, ui.furnaceFullLabels),
 				})}
-				actions={
-					<ButtonLink href="/wiki/dailies" variant="secondary">
-						{t("view.wiki")}
-					</ButtonLink>
-				}
 			/>
 			<SummaryCard
 				summary={summary}

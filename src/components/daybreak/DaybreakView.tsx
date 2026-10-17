@@ -29,7 +29,7 @@ import {
 } from "@/service/daybreak";
 import type { DecorationFilters, DecorationView } from "@/service/daybreak";
 import { PageHeader } from "@/comps/layout/PageHeader";
-import { Button, ButtonLink } from "@/comps/ui/Button";
+import { Button } from "@/comps/ui/Button";
 import { EmptyState } from "@/comps/ui/EmptyState";
 import { Input } from "@/comps/ui/Input";
 import { Note } from "@/comps/ui/Note";
@@ -40,15 +40,6 @@ import { LockedBanner } from "./LockedBanner";
 import { ProsperityTile } from "./ProsperityTile";
 
 const MOBILE_PAGE_SIZE = 8;
-
-function WikiButton({ className }: { className: string }) {
-	const t = useTranslations("daybreak.wiki");
-	return (
-		<ButtonLink variant="ghost" href="/wiki/daybreak-island" className={className}>
-			{t("button")}
-		</ButtonLink>
-	);
-}
 
 export function DaybreakView({ chief }: { chief: Playthrough }) {
 	const t = useTranslations("daybreak");
@@ -93,12 +84,7 @@ export function DaybreakView({ chief }: { chief: Playthrough }) {
 
 	return (
 		<>
-			<PageHeader
-				title={t("page.title")}
-				subline={t("view.subline")}
-				actions={<WikiButton className="max-lg:hidden" />}
-			/>
-			<WikiButton className="w-full lg:hidden" />
+			<PageHeader title={t("page.title")} subline={t("view.subline")} />
 			{!unlocked && (
 				<LockedBanner
 					unlockLevel={unlockFurnaceLabel}
