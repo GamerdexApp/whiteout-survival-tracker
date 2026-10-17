@@ -43,7 +43,6 @@ export function LadderRow({
 	const row = rowOf(item.kind, item.current);
 	const goalRow = rowOf(item.kind, item.goal);
 	const steps = stepsToGoal(item);
-	const capacityKnown = row?.troopsDeploymentCapacity !== undefined;
 
 	return (
 		<li className="border-line grid items-center gap-3 border-t-[1.5px] px-4 py-3 first:border-t-0 lg:grid-cols-[11rem_6rem_22rem_1fr_1fr]">
@@ -114,9 +113,8 @@ export function LadderRow({
 							: t("none"),
 						power: row ? formatCompact(row.powerTotal) : t("none"),
 					})}
-					{item.kind === "gear" && row && !capacityKnown && t("row.capacityUnknown")}
 					{item.kind === "gear" &&
-						capacityKnown &&
+						row &&
 						t("row.capacity", {
 							capacity: formatNumber(row.troopsDeploymentCapacity ?? 0),
 						})}

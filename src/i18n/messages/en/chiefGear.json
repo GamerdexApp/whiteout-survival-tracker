@@ -50,8 +50,8 @@
                 "body": "Cap and Watch buff Lancer, Coat and Pants buff Infantry, Ring and Weapon buff Marksman. The package author typed this from wiki text."
             },
             "capacity": {
-                "title": "Capacity can be Unknown",
-                "body": "The first 26 rows have no deployment capacity in the package."
+                "title": "Capacity is 0 on early rows",
+                "body": "The first 26 rows have no deployment capacity in the package, so it shows 0 until the data has values."
             }
         }
     },
@@ -92,7 +92,6 @@
         "noGoal": "No goal",
         "stats": "Stat {stat} · Power {power}",
         "statPercent": "{percent}%",
-        "capacityUnknown": " · Capacity Unknown",
         "capacity": " · Capacity {capacity}",
         "lockedCurrent": "Saved level {name} is locked by server age and not counted. {requirement}.",
         "lockedGoal": "Saved goal {name} is locked by server age and not planned. {requirement}."
