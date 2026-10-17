@@ -2,7 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { useMemo, useState } from "react";
-import { LuListFilter, LuSearch } from "react-icons/lu";
+import { LuChevronsUp, LuClipboardList, LuListFilter, LuSearch } from "react-icons/lu";
 import type { HeroGoal, Playthrough } from "@/types/app";
 import { usePlaythrough } from "@/lib/contexts/PlaythroughContext";
 import { formatNumber } from "@/lib/format";
@@ -162,6 +162,7 @@ export function HeroesTab({ chief }: { chief: Playthrough }) {
 						)}
 					</Button>
 					<Button className="flex-1 lg:flex-none" onClick={() => setMaxOpen(true)}>
+						<LuChevronsUp size={16} aria-hidden="true" className="max-[359px]:hidden" />
 						{t("maxOut")}
 					</Button>
 					<Button
@@ -169,6 +170,11 @@ export function HeroesTab({ chief }: { chief: Playthrough }) {
 						className="flex-1 lg:flex-none"
 						onClick={() => openPlan(null)}
 					>
+						<LuClipboardList
+							size={16}
+							aria-hidden="true"
+							className="max-[359px]:hidden"
+						/>
 						{tc("plan")}
 					</Button>
 				</div>

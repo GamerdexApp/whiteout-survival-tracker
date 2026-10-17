@@ -2,6 +2,7 @@
 
 import type { Hero, HeroSkill } from "whiteout-survival-data";
 import { useTranslations } from "next-intl";
+import { LuClipboardList } from "react-icons/lu";
 import type { Playthrough } from "@/types/app";
 import { formatNumber } from "@/lib/format";
 import type { HeroChange, HeroView } from "@/service/heroes";
@@ -68,6 +69,11 @@ export function HeroFlyout({ view, chief, onChange, onPlan, onClose }: HeroFlyou
 				<>
 					{view?.owned && (
 						<Button onClick={() => onPlan(view.hero.id)} className="mr-auto">
+							<LuClipboardList
+								size={16}
+								aria-hidden="true"
+								className="max-[359px]:hidden"
+							/>
 							{tc("plan")}
 						</Button>
 					)}

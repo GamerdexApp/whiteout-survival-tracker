@@ -2,7 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { useMemo, useState } from "react";
-import { LuListFilter, LuPencilLine, LuSearch } from "react-icons/lu";
+import { LuClipboardList, LuListFilter, LuPencilLine, LuPlay, LuSearch } from "react-icons/lu";
 import type { Playthrough } from "@/types/app";
 import { usePlaythrough } from "@/lib/contexts/PlaythroughContext";
 import { formatFurnaceLevel, formatNumber } from "@/lib/format";
@@ -229,6 +229,7 @@ export function BuildingsTab({ chief }: { chief: Playthrough }) {
 							className="order-4 w-full lg:order-3 lg:w-auto"
 							onClick={() => openStart()}
 						>
+							<LuPlay size={16} aria-hidden="true" className="max-[359px]:hidden" />
 							{t("tab.startUpgrade")}
 						</Button>
 					)}
@@ -237,6 +238,11 @@ export function BuildingsTab({ chief }: { chief: Playthrough }) {
 						className="order-3 flex-1 lg:order-4 lg:flex-none"
 						onClick={() => setPlanOpen(true)}
 					>
+						<LuClipboardList
+							size={16}
+							aria-hidden="true"
+							className="max-[359px]:hidden"
+						/>
 						{t("tab.plan")}
 					</Button>
 				</div>

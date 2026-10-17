@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { useMemo, useState } from "react";
+import { LuClipboardList, LuPlay } from "react-icons/lu";
 import type { Playthrough, TroopId } from "@/types/app";
 import { usePlaythrough } from "@/lib/contexts/PlaythroughContext";
 import { formatFurnaceLevel } from "@/lib/format";
@@ -182,6 +183,7 @@ export function TroopsView({ chief }: { chief: Playthrough }) {
 				<p className="text-muted max-lg:order-last">{t("intro")}</p>
 				<div className="flex gap-3 max-lg:flex-wrap">
 					<Button className="max-lg:flex-1" onClick={() => setStartOpen(true)}>
+						<LuPlay size={16} aria-hidden="true" className="max-[359px]:hidden" />
 						{tq("startButton")}
 					</Button>
 					<Button
@@ -189,6 +191,11 @@ export function TroopsView({ chief }: { chief: Playthrough }) {
 						className="max-lg:flex-1"
 						onClick={() => setPlanOpen(true)}
 					>
+						<LuClipboardList
+							size={16}
+							aria-hidden="true"
+							className="max-[359px]:hidden"
+						/>
 						{t("plan")}
 					</Button>
 				</div>

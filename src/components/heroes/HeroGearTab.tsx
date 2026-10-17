@@ -2,7 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { useMemo, useState } from "react";
-import { LuListFilter, LuPlus, LuSearch } from "react-icons/lu";
+import { LuClipboardList, LuListFilter, LuPlus, LuSearch } from "react-icons/lu";
 import type { HeroGearPiece, HeroGearSlot, Playthrough } from "@/types/app";
 import { usePlaythrough } from "@/lib/contexts/PlaythroughContext";
 import { formatNumber } from "@/lib/format";
@@ -154,6 +154,11 @@ export function HeroGearTab({ chief }: { chief: Playthrough }) {
 						className="flex-1 lg:flex-none"
 						onClick={() => setPlanOpen(true)}
 					>
+						<LuClipboardList
+							size={16}
+							aria-hidden="true"
+							className="max-[359px]:hidden"
+						/>
 						{t("plan")}
 					</Button>
 				</div>

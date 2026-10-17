@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { LuClipboardList } from "react-icons/lu";
 import { formatNumber } from "@/lib/format";
 import type { HeroChange, HeroView } from "@/service/heroes";
 import {
@@ -217,6 +218,11 @@ export function HeroCard({ view, onChange, onOpen, onPlan, gearSetNames }: HeroC
 					<Button onClick={() => onOpen(heroId)}>{t("card.details")}</Button>
 					{owned && (
 						<Button variant="secondary" onClick={() => onPlan(heroId)}>
+							<LuClipboardList
+								size={16}
+								aria-hidden="true"
+								className="max-[359px]:hidden"
+							/>
 							{t("common.plan")}
 						</Button>
 					)}

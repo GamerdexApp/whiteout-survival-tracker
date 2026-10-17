@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { useMemo, useState } from "react";
+import { LuClipboardList } from "react-icons/lu";
 import type { Playthrough } from "@/types/app";
 import { usePlaythrough } from "@/lib/contexts/PlaythroughContext";
 import { formatNumber } from "@/lib/format";
@@ -46,6 +47,7 @@ export function CharmsTab({ chief }: { chief: Playthrough }) {
 					className="max-lg:w-full"
 					onClick={() => setPlanOpen(true)}
 				>
+					<LuClipboardList size={16} aria-hidden="true" className="max-[359px]:hidden" />
 					{t("shared.plan")}
 				</Button>
 				<p className="text-muted">{t("shared.autoSaveHint")}</p>
