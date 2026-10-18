@@ -36,6 +36,7 @@ import resources from "./pt-BR/resources.json";
 import settings from "./pt-BR/settings.json";
 import shell from "./pt-BR/shell.json";
 import skins from "./pt-BR/skins.json";
+import sync from "./pt-BR/sync.json";
 import tech from "./pt-BR/tech.json";
 import troops from "./pt-BR/troops.json";
 import tundraAlbum from "./pt-BR/tundraAlbum.json";
@@ -104,6 +105,7 @@ const ptBR: PartialMessages = {
   settings,
   shell,
   skins,
+  sync,
   tech,
   troops,
   tundraAlbum,

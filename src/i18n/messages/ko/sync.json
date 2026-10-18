@@ -1,0 +1,91 @@
+{
+    "tab": {
+        "title": "클라우드 동기화",
+        "description": "영주를 GitHub 비공개 리포지토리에 보관하고 기기 간에 공유해요."
+    },
+    "unavailable": "이 빌드에서는 동기화를 사용할 수 없어요.",
+    "privacy": "데이터는 내 GitHub 계정의 비공개 리포지토리로 가요. Gamerdex에는 데이터를 저장하는 서버가 없고, 앱은 내가 고른 리포지토리 하나에만 접근할 수 있어요.",
+    "signedOut": {
+        "title": "로그인",
+        "body": "GitHub로 로그인한 뒤 데이터를 보관할 리포지토리를 고르세요.",
+        "button": "GitHub로 로그인"
+    },
+    "repository": {
+        "title": "데이터 리포지토리 설정",
+        "body": "데이터는 내 GitHub 계정의 {name}이라는 비공개 리포지토리에 보관돼요. Gamerdex Sync는 그 리포지토리 하나에만 접근할 수 있어요.",
+        "checking": "{name}을(를) 찾는 중",
+        "checkFailed": "리포지토리를 불러오지 못했어요. 연결을 확인하고 다시 확인하세요.",
+        "found": "{fullName}을(를) 찾았어요",
+        "public": "리포지토리 {fullName}은(는) 공개 상태예요. GitHub 설정에서 비공개로 바꾼 뒤 다시 확인하세요. 공개 리포지토리는 누구나 데이터를 읽을 수 있어서 사용할 수 없어요.",
+        "missing": "리포지토리 {name}을(를) 찾을 수 없어요",
+        "steps": {
+            "create": "{name}이라는 비공개 리포지토리를 만드세요. \"Add a README file\" 항목을 체크하세요.",
+            "install": "Gamerdex Sync가 그 리포지토리에만 접근하도록 허용하세요. \"Only select repositories\" 옵션을 고르고 {name}을(를) 선택하세요.",
+            "recheck": "여기로 돌아와 다시 확인하세요."
+        },
+        "createButton": "리포지토리 만들기",
+        "installButton": "GitHub에서 리포지토리 선택",
+        "recheckButton": "다시 확인"
+    },
+    "connected": {
+        "title": "연결됨",
+        "repository": "리포지토리",
+        "lastSync": "마지막 동기화",
+        "never": "아직 동기화하지 않았어요",
+        "syncNow": "지금 동기화",
+        "signOut": "로그아웃",
+        "signedOut": "로그아웃했어요. 이 기기의 데이터는 그대로예요."
+    },
+    "status": {
+        "idle": "동기화됨",
+        "syncing": "동기화 중",
+        "offline": "오프라인",
+        "reauth": "다시 로그인",
+        "needsChoice": "선택 필요",
+        "error": "동기화 실패",
+        "signedOut": "로그인 안 됨",
+        "needsRepository": "리포지토리 선택"
+    },
+    "error": {
+        "rateLimit": "GitHub가 요청을 제한하고 있어요. 몇 분 뒤에 동기화가 다시 돼요.",
+        "notFound": "리포지토리를 찾을 수 없어요. 다시 선택하세요.",
+        "server": "GitHub가 올바르게 응답하지 않았어요. 나중에 다시 시도하세요.",
+        "data": "동기화된 데이터가 올바르지 않아서 아무것도 바꾸지 않았어요.",
+        "busy": "다른 기기가 계속 데이터를 바꾸고 있어요. 잠시 뒤에 다시 시도하세요.",
+        "other": "문제가 생겼어요. 아무것도 바꾸지 않았어요.",
+        "reauth": "로그인이 만료됐어요. 동기화를 계속하려면 다시 로그인하세요.",
+        "forbidden": "GitHub가 리포지토리 접근을 거부했어요. Gamerdex Sync에 \"Contents\" \"Read and write\" 권한이 있는지 확인한 뒤 다시 동기화하세요.",
+        "httpStatus": "GitHub 응답: {status}."
+    },
+    "choice": {
+        "title": "이 기기와 클라우드 모두에 데이터가 있어요",
+        "body": "이 기기에서 하는 첫 동기화예요. 어떻게 할지 고르세요. 고르기 전에는 클라우드에서 아무것도 삭제되지 않아요.",
+        "counts": "이 기기: {local}. 클라우드: {cloud}.",
+        "merge": "둘 다 병합",
+        "mergeHint": "양쪽 데이터를 모두 유지해요. 레벨이 높은 쪽이 적용돼요.",
+        "keepLocal": "이 기기 유지",
+        "keepLocalHint": "클라우드 데이터를 이 기기의 데이터로 교체해요.",
+        "keepCloud": "클라우드 유지",
+        "keepCloudHint": "이 기기의 데이터를 클라우드 데이터로 교체해요."
+    },
+    "conflicts": {
+        "title": "병합하지 못한 변경",
+        "body": "두 기기가 같은 값을 바꿨어요. 클라우드 값을 유지했어요. 이 기기의 값을 쓰려면 그 값을 선택하세요.",
+        "cloudValue": "클라우드",
+        "deviceValue": "이 기기",
+        "keepDevice": "이 기기의 값 사용",
+        "dismiss": "닫기",
+        "empty": "없음",
+        "deletedEdited": "한 기기에서 삭제하고 다른 기기에서 바꿨어요. 바뀐 버전을 유지했어요."
+    },
+    "callback": {
+        "title": "로그인 중",
+        "working": "로그인을 마무리하는 중",
+        "back": "설정으로 돌아가기",
+        "denied": "로그인이 취소됐어요.",
+        "state": "로그인을 확인할 수 없었어요. 설정에서 다시 시작하세요.",
+        "missing": "GitHub가 로그인 코드를 보내지 않았어요. 설정에서 다시 시작하세요.",
+        "failed": "로그인을 마무리하지 못했어요. 나중에 다시 시도하세요."
+    },
+    "chiefCount": "{count, plural, other {영주 {amount}명}}"
+}

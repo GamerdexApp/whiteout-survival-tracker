@@ -1,0 +1,91 @@
+{
+    "tab": {
+        "title": "Đồng bộ đám mây",
+        "description": "Lưu các thủ lĩnh của bạn trong một kho lưu trữ riêng tư trên GitHub và chia sẻ giữa các thiết bị."
+    },
+    "unavailable": "Bản dựng này không hỗ trợ đồng bộ.",
+    "privacy": "Dữ liệu của bạn được lưu trong một kho lưu trữ riêng tư trên tài khoản GitHub của chính bạn. Gamerdex không có máy chủ nào lưu dữ liệu, và ứng dụng chỉ truy cập được kho lưu trữ bạn chọn.",
+    "signedOut": {
+        "title": "Đăng nhập",
+        "body": "Đăng nhập bằng GitHub, rồi chọn kho lưu trữ chứa dữ liệu của bạn.",
+        "button": "Đăng nhập bằng GitHub"
+    },
+    "repository": {
+        "title": "Thiết lập kho dữ liệu",
+        "body": "Dữ liệu của bạn được lưu trong một kho lưu trữ riêng tư tên {name} trên tài khoản GitHub của bạn. Gamerdex Sync chỉ truy cập được kho này.",
+        "checking": "Đang tìm {name}",
+        "checkFailed": "Không tải được danh sách kho lưu trữ. Kiểm tra kết nối rồi kiểm tra lại.",
+        "found": "Đã tìm thấy {fullName}",
+        "public": "Kho lưu trữ {fullName} đang công khai. Hãy chuyển sang riêng tư trong phần cài đặt của GitHub, rồi kiểm tra lại. Không thể dùng kho công khai vì ai cũng đọc được dữ liệu của bạn.",
+        "missing": "Không tìm thấy kho lưu trữ {name}",
+        "steps": {
+            "create": "Tạo một kho lưu trữ riêng tư tên {name}. Chọn Add a README file.",
+            "install": "Cấp cho Gamerdex Sync quyền truy cập chỉ kho đó. Chọn Only select repositories, rồi chọn {name}.",
+            "recheck": "Quay lại đây và kiểm tra lại."
+        },
+        "createButton": "Tạo kho lưu trữ",
+        "installButton": "Chọn kho lưu trữ trên GitHub",
+        "recheckButton": "Kiểm tra lại"
+    },
+    "connected": {
+        "title": "Đã kết nối",
+        "repository": "Kho lưu trữ",
+        "lastSync": "Lần đồng bộ cuối",
+        "never": "Chưa đồng bộ",
+        "syncNow": "Đồng bộ ngay",
+        "signOut": "Đăng xuất",
+        "signedOut": "Đã đăng xuất. Dữ liệu trên thiết bị này vẫn được giữ nguyên."
+    },
+    "status": {
+        "idle": "Đã đồng bộ",
+        "syncing": "Đang đồng bộ",
+        "offline": "Ngoại tuyến",
+        "reauth": "Đăng nhập lại",
+        "needsChoice": "Cần bạn chọn",
+        "error": "Đồng bộ lỗi",
+        "signedOut": "Chưa đăng nhập",
+        "needsRepository": "Chọn kho lưu trữ"
+    },
+    "error": {
+        "rateLimit": "GitHub đang giới hạn số yêu cầu. Đồng bộ sẽ hoạt động lại sau vài phút.",
+        "notFound": "Không tìm thấy kho lưu trữ. Hãy chọn lại.",
+        "server": "GitHub phản hồi không đúng. Hãy thử lại sau.",
+        "data": "Dữ liệu đồng bộ không hợp lệ nên chưa có gì bị thay đổi.",
+        "busy": "Một thiết bị khác đang liên tục thay đổi dữ liệu. Hãy thử lại sau giây lát.",
+        "other": "Đã xảy ra lỗi. Chưa có gì bị thay đổi.",
+        "reauth": "Phiên đăng nhập của bạn đã hết hạn. Hãy đăng nhập lại để tiếp tục đồng bộ.",
+        "forbidden": "GitHub từ chối quyền truy cập kho lưu trữ. Hãy kiểm tra Gamerdex Sync có quyền Read and write đối với Contents, rồi đồng bộ lại.",
+        "httpStatus": "GitHub trả về mã {status}."
+    },
+    "choice": {
+        "title": "Thiết bị này và đám mây đều có dữ liệu",
+        "body": "Đây là lần đồng bộ đầu tiên từ thiết bị này. Hãy chọn cách xử lý. Sẽ không có gì bị xóa khỏi đám mây cho đến khi bạn chọn.",
+        "counts": "Thiết bị này: {local}. Đám mây: {cloud}.",
+        "merge": "Gộp cả hai",
+        "mergeHint": "Giữ mọi thứ từ cả hai bên. Cấp độ cao hơn được ưu tiên.",
+        "keepLocal": "Giữ thiết bị này",
+        "keepLocalHint": "Thay dữ liệu trên đám mây bằng dữ liệu trên thiết bị này.",
+        "keepCloud": "Giữ đám mây",
+        "keepCloudHint": "Thay dữ liệu trên thiết bị này bằng dữ liệu trên đám mây."
+    },
+    "conflicts": {
+        "title": "Thay đổi không thể gộp",
+        "body": "Hai thiết bị đã thay đổi cùng một giá trị. Giá trị trên đám mây được giữ lại. Hãy chọn giá trị của thiết bị này để dùng thay thế.",
+        "cloudValue": "Đám mây",
+        "deviceValue": "Thiết bị này",
+        "keepDevice": "Dùng giá trị của thiết bị này",
+        "dismiss": "Bỏ qua",
+        "empty": "Trống",
+        "deletedEdited": "Một thiết bị đã xóa mục này và thiết bị khác đã sửa nó. Bản đã sửa được giữ lại."
+    },
+    "callback": {
+        "title": "Đang đăng nhập",
+        "working": "Đang hoàn tất đăng nhập",
+        "back": "Quay lại Cài đặt",
+        "denied": "Đã hủy đăng nhập.",
+        "state": "Không thể xác minh đăng nhập. Hãy bắt đầu lại từ Cài đặt.",
+        "missing": "GitHub không gửi mã đăng nhập. Hãy bắt đầu lại từ Cài đặt.",
+        "failed": "Không thể hoàn tất đăng nhập. Hãy thử lại sau."
+    },
+    "chiefCount": "{count, plural, other {{amount} thủ lĩnh}}"
+}

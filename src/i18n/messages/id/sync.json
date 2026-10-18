@@ -1,0 +1,91 @@
+{
+    "tab": {
+        "title": "Sinkronisasi cloud",
+        "description": "Simpan Chief-mu di repositori GitHub privat dan bagikan ke semua perangkatmu."
+    },
+    "unavailable": "Sinkronisasi tidak tersedia di build ini.",
+    "privacy": "Datamu dikirim ke repositori privat di akun GitHub-mu sendiri. Gamerdex tidak punya server yang menyimpannya, dan aplikasi hanya bisa mengakses satu repositori yang kamu pilih.",
+    "signedOut": {
+        "title": "Masuk",
+        "body": "Masuk dengan GitHub, lalu pilih repositori yang menyimpan datamu.",
+        "button": "Masuk dengan GitHub"
+    },
+    "repository": {
+        "title": "Siapkan repositori datamu",
+        "body": "Datamu disimpan di repositori privat bernama {name} di akun GitHub-mu. Gamerdex Sync hanya bisa mengakses satu repositori itu.",
+        "checking": "Mencari {name}",
+        "checkFailed": "Repositorimu tidak bisa dimuat. Periksa koneksimu, lalu cek lagi.",
+        "found": "{fullName} ditemukan",
+        "public": "Repositori {fullName} bersifat publik. Ubah menjadi privat di pengaturan GitHub, lalu cek lagi. Repositori publik tidak bisa dipakai karena siapa pun bisa membaca datamu.",
+        "missing": "Repositori {name} tidak ditemukan",
+        "steps": {
+            "create": "Buat repositori privat bernama {name}. Centang Add a README file.",
+            "install": "Beri Gamerdex Sync akses ke repositori itu saja. Pilih Only select repositories, lalu pilih {name}.",
+            "recheck": "Kembali ke sini dan cek lagi."
+        },
+        "createButton": "Buat repositori",
+        "installButton": "Pilih repositori di GitHub",
+        "recheckButton": "Cek lagi"
+    },
+    "connected": {
+        "title": "Terhubung",
+        "repository": "Repositori",
+        "lastSync": "Sinkronisasi terakhir",
+        "never": "Belum disinkronkan",
+        "syncNow": "Sinkronkan sekarang",
+        "signOut": "Keluar",
+        "signedOut": "Sudah keluar. Data di perangkat ini tetap seperti semula."
+    },
+    "status": {
+        "idle": "Tersinkron",
+        "syncing": "Menyinkronkan",
+        "offline": "Offline",
+        "reauth": "Masuk lagi",
+        "needsChoice": "Perlu pilihanmu",
+        "error": "Sinkronisasi gagal",
+        "signedOut": "Belum masuk",
+        "needsRepository": "Pilih repositori"
+    },
+    "error": {
+        "rateLimit": "GitHub membatasi permintaan. Sinkronisasi akan berfungsi lagi dalam beberapa menit.",
+        "notFound": "Repositori tidak ditemukan. Pilih lagi.",
+        "server": "GitHub tidak menjawab dengan benar. Coba lagi nanti.",
+        "data": "Data yang disinkronkan tidak valid, jadi tidak ada yang diubah.",
+        "busy": "Perangkat lain terus mengubah data. Coba lagi sebentar lagi.",
+        "other": "Terjadi masalah. Tidak ada yang diubah.",
+        "reauth": "Sesi masukmu berakhir. Masuk lagi untuk melanjutkan sinkronisasi.",
+        "forbidden": "GitHub menolak akses ke repositori. Pastikan Gamerdex Sync punya akses Read and write ke Contents, lalu sinkronkan lagi.",
+        "httpStatus": "GitHub menjawab {status}."
+    },
+    "choice": {
+        "title": "Perangkat ini dan cloud sama-sama punya data",
+        "body": "Ini sinkronisasi pertama dari perangkat ini. Pilih yang ingin dilakukan. Tidak ada yang dihapus dari cloud sampai kamu memilih.",
+        "counts": "Perangkat ini: {local}. Cloud: {cloud}.",
+        "merge": "Gabungkan keduanya",
+        "mergeHint": "Pertahankan semuanya dari kedua sisi. Level yang lebih tinggi dipakai.",
+        "keepLocal": "Pakai perangkat ini",
+        "keepLocalHint": "Ganti data di cloud dengan data di perangkat ini.",
+        "keepCloud": "Pakai cloud",
+        "keepCloudHint": "Ganti data di perangkat ini dengan data di cloud."
+    },
+    "conflicts": {
+        "title": "Perubahan yang tidak bisa digabung",
+        "body": "Dua perangkat mengubah nilai yang sama. Nilai dari cloud dipertahankan. Pilih nilai perangkat ini untuk memakainya.",
+        "cloudValue": "Cloud",
+        "deviceValue": "Perangkat ini",
+        "keepDevice": "Pakai nilai perangkat ini",
+        "dismiss": "Tutup",
+        "empty": "Kosong",
+        "deletedEdited": "Satu perangkat menghapus ini dan perangkat lain mengubahnya. Versi yang diubah dipertahankan."
+    },
+    "callback": {
+        "title": "Sedang masuk",
+        "working": "Menyelesaikan proses masuk",
+        "back": "Kembali ke Pengaturan",
+        "denied": "Proses masuk dibatalkan.",
+        "state": "Proses masuk tidak bisa diperiksa. Mulai lagi dari Pengaturan.",
+        "missing": "GitHub tidak mengirim kode masuk. Mulai lagi dari Pengaturan.",
+        "failed": "Proses masuk tidak bisa diselesaikan. Coba lagi nanti."
+    },
+    "chiefCount": "{count, plural, other {{amount} Chief}}"
+}

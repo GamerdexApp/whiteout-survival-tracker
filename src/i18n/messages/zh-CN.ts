@@ -36,6 +36,7 @@ import resources from "./zh-CN/resources.json";
 import settings from "./zh-CN/settings.json";
 import shell from "./zh-CN/shell.json";
 import skins from "./zh-CN/skins.json";
+import sync from "./zh-CN/sync.json";
 import tech from "./zh-CN/tech.json";
 import troops from "./zh-CN/troops.json";
 import tundraAlbum from "./zh-CN/tundraAlbum.json";
@@ -104,6 +105,7 @@ const zhCN: PartialMessages = {
   settings,
   shell,
   skins,
+  sync,
   tech,
   troops,
   tundraAlbum,

@@ -1,0 +1,91 @@
+{
+    "tab": {
+        "title": "Sync nel cloud",
+        "description": "Tieni i tuoi capi in un repository privato di GitHub e condividili tra i tuoi dispositivi."
+    },
+    "unavailable": "La sincronizzazione non è disponibile in questa versione.",
+    "privacy": "I tuoi dati vanno in un repository privato nel tuo account GitHub. Gamerdex non ha un server che li conservi, e l'app può accedere solo al repository che scegli.",
+    "signedOut": {
+        "title": "Accedi",
+        "body": "Accedi con GitHub, poi scegli il repository che contiene i tuoi dati.",
+        "button": "Accedi con GitHub"
+    },
+    "repository": {
+        "title": "Configura il repository dei dati",
+        "body": "I tuoi dati sono conservati in un repository privato chiamato {name} nel tuo account GitHub. Gamerdex Sync può accedere solo a quel repository.",
+        "checking": "Ricerca di {name}",
+        "checkFailed": "Non è stato possibile caricare i tuoi repository. Controlla la connessione e verifica di nuovo.",
+        "found": "Trovato {fullName}",
+        "public": "Il repository {fullName} è pubblico. Rendilo privato nelle sue impostazioni su GitHub, poi verifica di nuovo. Un repository pubblico non può essere usato, perché chiunque potrebbe leggere i tuoi dati.",
+        "missing": "Il repository {name} non è stato trovato",
+        "steps": {
+            "create": "Crea un repository privato chiamato {name}. Seleziona Add a README file.",
+            "install": "Dai a Gamerdex Sync l'accesso solo a quel repository. Scegli Only select repositories, poi {name}.",
+            "recheck": "Torna qui e verifica di nuovo."
+        },
+        "createButton": "Crea repository",
+        "installButton": "Scegli i repository su GitHub",
+        "recheckButton": "Verifica di nuovo"
+    },
+    "connected": {
+        "title": "Connesso",
+        "repository": "Repository",
+        "lastSync": "Ultima sincronizzazione",
+        "never": "Non ancora sincronizzato",
+        "syncNow": "Sincronizza ora",
+        "signOut": "Esci",
+        "signedOut": "Disconnesso. I dati su questo dispositivo restano come sono."
+    },
+    "status": {
+        "idle": "Sincronizzato",
+        "syncing": "Sincronizzazione",
+        "offline": "Offline",
+        "reauth": "Accedi di nuovo",
+        "needsChoice": "Serve la tua scelta",
+        "error": "Sync non riuscita",
+        "signedOut": "Non connesso",
+        "needsRepository": "Scegli un repository"
+    },
+    "error": {
+        "rateLimit": "GitHub sta limitando le richieste. La sincronizzazione tornerà a funzionare tra pochi minuti.",
+        "notFound": "Il repository non è stato trovato. Sceglilo di nuovo.",
+        "server": "GitHub non ha risposto correttamente. Riprova più tardi.",
+        "data": "I dati sincronizzati non sono validi, quindi non è stato cambiato nulla.",
+        "busy": "Un altro dispositivo continua a modificare i dati. Riprova tra un attimo.",
+        "other": "Qualcosa è andato storto. Non è stato cambiato nulla.",
+        "reauth": "Il tuo accesso è scaduto. Accedi di nuovo per continuare a sincronizzare.",
+        "forbidden": "GitHub ha negato l'accesso al repository. Controlla che Gamerdex Sync abbia accesso Read and write a Contents, poi sincronizza di nuovo.",
+        "httpStatus": "GitHub ha risposto {status}."
+    },
+    "choice": {
+        "title": "Sia questo dispositivo sia il cloud hanno dei dati",
+        "body": "Questa è la prima sincronizzazione da questo dispositivo. Scegli cosa fare. Nulla viene eliminato dal cloud finché non scegli.",
+        "counts": "Questo dispositivo: {local}. Cloud: {cloud}.",
+        "merge": "Unisci entrambi",
+        "mergeHint": "Mantiene tutto da entrambi. Vince il livello più alto.",
+        "keepLocal": "Tieni questo dispositivo",
+        "keepLocalHint": "Sostituisce i dati del cloud con quelli di questo dispositivo.",
+        "keepCloud": "Tieni il cloud",
+        "keepCloudHint": "Sostituisce i dati di questo dispositivo con quelli del cloud."
+    },
+    "conflicts": {
+        "title": "Modifiche che non è stato possibile unire",
+        "body": "Due dispositivi hanno modificato lo stesso valore. È stato mantenuto il valore del cloud. Scegli il valore di questo dispositivo per usarlo al suo posto.",
+        "cloudValue": "Cloud",
+        "deviceValue": "Questo dispositivo",
+        "keepDevice": "Usa il valore di questo dispositivo",
+        "dismiss": "Ignora",
+        "empty": "Niente",
+        "deletedEdited": "Un dispositivo lo ha rimosso e un altro lo ha modificato. È stata mantenuta la versione modificata."
+    },
+    "callback": {
+        "title": "Accesso in corso",
+        "working": "Completamento dell'accesso",
+        "back": "Torna alle Impostazioni",
+        "denied": "L'accesso è stato annullato.",
+        "state": "Non è stato possibile verificare l'accesso. Ricomincia dalle Impostazioni.",
+        "missing": "GitHub non ha inviato il codice di accesso. Ricomincia dalle Impostazioni.",
+        "failed": "Non è stato possibile completare l'accesso. Riprova più tardi."
+    },
+    "chiefCount": "{count, plural, one {{amount} capo} other {{amount} capi}}"
+}

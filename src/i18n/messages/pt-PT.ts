@@ -36,6 +36,7 @@ import resources from "./pt-PT/resources.json";
 import settings from "./pt-PT/settings.json";
 import shell from "./pt-PT/shell.json";
 import skins from "./pt-PT/skins.json";
+import sync from "./pt-PT/sync.json";
 import tech from "./pt-PT/tech.json";
 import troops from "./pt-PT/troops.json";
 import tundraAlbum from "./pt-PT/tundraAlbum.json";
@@ -104,6 +105,7 @@ const ptPT: PartialMessages = {
   settings,
   shell,
   skins,
+  sync,
   tech,
   troops,
   tundraAlbum,

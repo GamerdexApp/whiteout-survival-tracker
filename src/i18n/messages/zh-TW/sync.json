@@ -1,0 +1,91 @@
+{
+    "tab": {
+        "title": "雲端同步",
+        "description": "將你的領主存放在私人 GitHub 儲存庫中，並在多部裝置之間共用。"
+    },
+    "unavailable": "這個版本不支援同步。",
+    "privacy": "你的資料會傳送到你自己 GitHub 帳號下的私人儲存庫。Gamerdex 沒有伺服器儲存這些資料，應用程式也只能存取你選擇的那一個儲存庫。",
+    "signedOut": {
+        "title": "登入",
+        "body": "使用 GitHub 登入，然後選擇存放你資料的儲存庫。",
+        "button": "使用 GitHub 登入"
+    },
+    "repository": {
+        "title": "設定你的資料儲存庫",
+        "body": "你的資料存放在 GitHub 帳號下名為 {name} 的私人儲存庫中。Gamerdex Sync 只能存取這一個儲存庫。",
+        "checking": "正在尋找 {name}",
+        "checkFailed": "無法載入你的儲存庫。請檢查網路連線後再次檢查。",
+        "found": "已找到 {fullName}",
+        "public": "儲存庫 {fullName} 是公開的。請到它的 GitHub 設定改為私人，然後再次檢查。公開的儲存庫無法使用，因為任何人都能讀取你的資料。",
+        "missing": "找不到儲存庫 {name}",
+        "steps": {
+            "create": "建立一個名為 {name} 的私人儲存庫。勾選「Add a README file」。",
+            "install": "只授予 Gamerdex Sync 存取該儲存庫的權限。選擇「Only select repositories」，然後選取 {name}。",
+            "recheck": "回到這裡再次檢查。"
+        },
+        "createButton": "建立儲存庫",
+        "installButton": "在 GitHub 上選擇儲存庫",
+        "recheckButton": "再次檢查"
+    },
+    "connected": {
+        "title": "已連線",
+        "repository": "儲存庫",
+        "lastSync": "上次同步",
+        "never": "尚未同步",
+        "syncNow": "立即同步",
+        "signOut": "登出",
+        "signedOut": "已登出。這部裝置上的資料維持不變。"
+    },
+    "status": {
+        "idle": "已同步",
+        "syncing": "同步中",
+        "offline": "離線",
+        "reauth": "重新登入",
+        "needsChoice": "需要你選擇",
+        "error": "同步失敗",
+        "signedOut": "未登入",
+        "needsRepository": "選擇儲存庫"
+    },
+    "error": {
+        "rateLimit": "GitHub 正在限制請求。幾分鐘後同步就會恢復。",
+        "notFound": "找不到該儲存庫。請重新選擇。",
+        "server": "GitHub 沒有正確回應。請稍後再試。",
+        "data": "同步的資料無效，所以沒有變更任何內容。",
+        "busy": "另一部裝置持續在修改資料。請稍後再試。",
+        "other": "發生問題。沒有變更任何內容。",
+        "reauth": "你的登入已失效。請重新登入以繼續同步。",
+        "forbidden": "GitHub 拒絕存取該儲存庫。請確認 Gamerdex Sync 擁有「Contents」的「Read and write」權限，然後再次同步。",
+        "httpStatus": "GitHub 回應了 {status}。"
+    },
+    "choice": {
+        "title": "這部裝置和雲端都有資料",
+        "body": "這是這部裝置的第一次同步。請選擇處理方式。在你選擇之前，雲端不會刪除任何內容。",
+        "counts": "這部裝置：{local}。雲端：{cloud}。",
+        "merge": "合併兩者",
+        "mergeHint": "保留兩邊的所有內容。等級較高的一方優先。",
+        "keepLocal": "保留這部裝置",
+        "keepLocalHint": "用這部裝置上的資料取代雲端資料。",
+        "keepCloud": "保留雲端",
+        "keepCloudHint": "用雲端資料取代這部裝置上的資料。"
+    },
+    "conflicts": {
+        "title": "無法合併的變更",
+        "body": "兩部裝置修改了同一個值。已保留雲端的值。選擇這部裝置的值即可改用它。",
+        "cloudValue": "雲端",
+        "deviceValue": "這部裝置",
+        "keepDevice": "使用這部裝置的值",
+        "dismiss": "略過",
+        "empty": "無",
+        "deletedEdited": "一部裝置刪除了這項內容，另一部裝置修改了它。已保留修改後的版本。"
+    },
+    "callback": {
+        "title": "登入中",
+        "working": "正在完成登入",
+        "back": "返回設定",
+        "denied": "登入已取消。",
+        "state": "無法驗證這次登入。請從設定重新開始。",
+        "missing": "GitHub 沒有傳回登入代碼。請從設定重新開始。",
+        "failed": "無法完成登入。請稍後再試。"
+    },
+    "chiefCount": "{count, plural, other {{amount} 位領主}}"
+}

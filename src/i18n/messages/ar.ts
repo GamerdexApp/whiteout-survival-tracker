@@ -36,6 +36,7 @@ import resources from "./ar/resources.json";
 import settings from "./ar/settings.json";
 import shell from "./ar/shell.json";
 import skins from "./ar/skins.json";
+import sync from "./ar/sync.json";
 import tech from "./ar/tech.json";
 import troops from "./ar/troops.json";
 import tundraAlbum from "./ar/tundraAlbum.json";
@@ -104,6 +105,7 @@ const ar: PartialMessages = {
   settings,
   shell,
   skins,
+  sync,
   tech,
   troops,
   tundraAlbum,

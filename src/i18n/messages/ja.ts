@@ -36,6 +36,7 @@ import resources from "./ja/resources.json";
 import settings from "./ja/settings.json";
 import shell from "./ja/shell.json";
 import skins from "./ja/skins.json";
+import sync from "./ja/sync.json";
 import tech from "./ja/tech.json";
 import troops from "./ja/troops.json";
 import tundraAlbum from "./ja/tundraAlbum.json";
@@ -104,6 +105,7 @@ const ja: PartialMessages = {
   settings,
   shell,
   skins,
+  sync,
   tech,
   troops,
   tundraAlbum,

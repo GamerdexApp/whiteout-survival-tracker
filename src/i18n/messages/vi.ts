@@ -36,6 +36,7 @@ import resources from "./vi/resources.json";
 import settings from "./vi/settings.json";
 import shell from "./vi/shell.json";
 import skins from "./vi/skins.json";
+import sync from "./vi/sync.json";
 import tech from "./vi/tech.json";
 import troops from "./vi/troops.json";
 import tundraAlbum from "./vi/tundraAlbum.json";
@@ -104,6 +105,7 @@ const vi: PartialMessages = {
   settings,
   shell,
   skins,
+  sync,
   tech,
   troops,
   tundraAlbum,

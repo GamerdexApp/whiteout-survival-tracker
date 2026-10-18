@@ -1,0 +1,91 @@
+{
+    "tab": {
+        "title": "云同步",
+        "description": "将你的领主保存在私有 GitHub 仓库中，并在多台设备之间共享。"
+    },
+    "unavailable": "此版本不支持同步。",
+    "privacy": "你的数据会发送到你自己 GitHub 账号下的私有仓库。Gamerdex 没有服务器存储这些数据，应用也只能访问你选择的那一个仓库。",
+    "signedOut": {
+        "title": "登录",
+        "body": "使用 GitHub 登录，然后选择保存你数据的仓库。",
+        "button": "使用 GitHub 登录"
+    },
+    "repository": {
+        "title": "设置你的数据仓库",
+        "body": "你的数据保存在 GitHub 账号下名为 {name} 的私有仓库中。Gamerdex Sync 只能访问这一个仓库。",
+        "checking": "正在查找 {name}",
+        "checkFailed": "无法加载你的仓库。请检查网络连接后重新检查。",
+        "found": "已找到 {fullName}",
+        "public": "仓库 {fullName} 是公开的。请在其 GitHub 设置中改为私有，然后重新检查。公开仓库无法使用，因为任何人都可以读取你的数据。",
+        "missing": "未找到仓库 {name}",
+        "steps": {
+            "create": "创建一个名为 {name} 的私有仓库。勾选“Add a README file”。",
+            "install": "只授予 Gamerdex Sync 访问该仓库的权限。选择“Only select repositories”，然后选中 {name}。",
+            "recheck": "回到这里重新检查。"
+        },
+        "createButton": "创建仓库",
+        "installButton": "在 GitHub 上选择仓库",
+        "recheckButton": "重新检查"
+    },
+    "connected": {
+        "title": "已连接",
+        "repository": "仓库",
+        "lastSync": "上次同步",
+        "never": "尚未同步",
+        "syncNow": "立即同步",
+        "signOut": "退出登录",
+        "signedOut": "已退出登录。此设备上的数据保持不变。"
+    },
+    "status": {
+        "idle": "已同步",
+        "syncing": "同步中",
+        "offline": "离线",
+        "reauth": "重新登录",
+        "needsChoice": "需要你选择",
+        "error": "同步失败",
+        "signedOut": "未登录",
+        "needsRepository": "选择仓库"
+    },
+    "error": {
+        "rateLimit": "GitHub 正在限制请求。几分钟后同步会恢复。",
+        "notFound": "未找到该仓库。请重新选择。",
+        "server": "GitHub 没有正确响应。请稍后再试。",
+        "data": "同步的数据无效，因此没有做任何更改。",
+        "busy": "另一台设备正在不断修改数据。请稍后再试。",
+        "other": "出了点问题。没有做任何更改。",
+        "reauth": "你的登录已失效。请重新登录以继续同步。",
+        "forbidden": "GitHub 拒绝访问该仓库。请确认 Gamerdex Sync 拥有“Contents”的“Read and write”权限，然后再次同步。",
+        "httpStatus": "GitHub 返回了 {status}。"
+    },
+    "choice": {
+        "title": "此设备和云端都有数据",
+        "body": "这是此设备的首次同步。请选择处理方式。在你选择之前，云端不会删除任何内容。",
+        "counts": "此设备：{local}。云端：{cloud}。",
+        "merge": "合并两者",
+        "mergeHint": "保留两边的所有内容。等级较高的一方优先。",
+        "keepLocal": "保留此设备",
+        "keepLocalHint": "用此设备上的数据替换云端数据。",
+        "keepCloud": "保留云端",
+        "keepCloudHint": "用云端数据替换此设备上的数据。"
+    },
+    "conflicts": {
+        "title": "无法合并的更改",
+        "body": "两台设备修改了同一个值。已保留云端的值。选择此设备的值即可改用它。",
+        "cloudValue": "云端",
+        "deviceValue": "此设备",
+        "keepDevice": "使用此设备的值",
+        "dismiss": "忽略",
+        "empty": "无",
+        "deletedEdited": "一台设备删除了这项内容，另一台设备修改了它。已保留修改后的版本。"
+    },
+    "callback": {
+        "title": "正在登录",
+        "working": "正在完成登录",
+        "back": "返回设置",
+        "denied": "登录已取消。",
+        "state": "无法验证此次登录。请从设置重新开始。",
+        "missing": "GitHub 没有返回登录代码。请从设置重新开始。",
+        "failed": "无法完成登录。请稍后再试。"
+    },
+    "chiefCount": "{count, plural, other {{amount}个领主}}"
+}

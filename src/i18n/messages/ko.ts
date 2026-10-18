@@ -36,6 +36,7 @@ import resources from "./ko/resources.json";
 import settings from "./ko/settings.json";
 import shell from "./ko/shell.json";
 import skins from "./ko/skins.json";
+import sync from "./ko/sync.json";
 import tech from "./ko/tech.json";
 import troops from "./ko/troops.json";
 import tundraAlbum from "./ko/tundraAlbum.json";
@@ -104,6 +105,7 @@ const ko: PartialMessages = {
   settings,
   shell,
   skins,
+  sync,
   tech,
   troops,
   tundraAlbum,

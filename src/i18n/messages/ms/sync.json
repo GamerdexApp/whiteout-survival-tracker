@@ -1,0 +1,91 @@
+{
+    "tab": {
+        "title": "Segerak awan",
+        "description": "Simpan chief anda dalam repositori GitHub peribadi dan kongsikannya antara peranti anda."
+    },
+    "unavailable": "Segerak tidak tersedia dalam binaan ini.",
+    "privacy": "Data anda dihantar ke repositori peribadi dalam akaun GitHub anda sendiri. Gamerdex tidak mempunyai pelayan yang menyimpannya, dan aplikasi hanya boleh mengakses satu repositori yang anda pilih.",
+    "signedOut": {
+        "title": "Log masuk",
+        "body": "Log masuk dengan GitHub, kemudian pilih repositori yang menyimpan data anda.",
+        "button": "Log masuk dengan GitHub"
+    },
+    "repository": {
+        "title": "Sediakan repositori data anda",
+        "body": "Data anda disimpan dalam repositori peribadi bernama {name} dalam akaun GitHub anda. Gamerdex Sync hanya boleh mengakses satu repositori itu.",
+        "checking": "Mencari {name}",
+        "checkFailed": "Repositori anda tidak dapat dimuatkan. Semak sambungan anda dan semak semula.",
+        "found": "{fullName} ditemui",
+        "public": "Repositori {fullName} ialah repositori awam. Jadikan ia peribadi dalam tetapan GitHub-nya, kemudian semak semula. Repositori awam tidak boleh digunakan kerana sesiapa sahaja boleh membaca data anda.",
+        "missing": "Repositori {name} tidak ditemui",
+        "steps": {
+            "create": "Cipta repositori peribadi bernama {name}. Tandakan Add a README file.",
+            "install": "Beri Gamerdex Sync akses kepada repositori itu sahaja. Pilih Only select repositories, kemudian pilih {name}.",
+            "recheck": "Kembali ke sini dan semak semula."
+        },
+        "createButton": "Cipta repositori",
+        "installButton": "Pilih repositori di GitHub",
+        "recheckButton": "Semak semula"
+    },
+    "connected": {
+        "title": "Disambungkan",
+        "repository": "Repositori",
+        "lastSync": "Segerak terakhir",
+        "never": "Belum disegerakkan",
+        "syncNow": "Segerak sekarang",
+        "signOut": "Log keluar",
+        "signedOut": "Sudah log keluar. Data pada peranti ini kekal seperti sedia ada."
+    },
+    "status": {
+        "idle": "Disegerakkan",
+        "syncing": "Menyegerak",
+        "offline": "Luar talian",
+        "reauth": "Log masuk semula",
+        "needsChoice": "Perlu pilihan anda",
+        "error": "Segerak gagal",
+        "signedOut": "Belum log masuk",
+        "needsRepository": "Pilih repositori"
+    },
+    "error": {
+        "rateLimit": "GitHub menghadkan permintaan. Segerak akan berfungsi semula dalam beberapa minit.",
+        "notFound": "Repositori tidak ditemui. Pilih semula.",
+        "server": "GitHub tidak menjawab dengan betul. Cuba lagi nanti.",
+        "data": "Data yang disegerakkan tidak sah, jadi tiada apa yang diubah.",
+        "busy": "Peranti lain terus mengubah data. Cuba lagi sebentar lagi.",
+        "other": "Sesuatu telah berlaku. Tiada apa yang diubah.",
+        "reauth": "Sesi log masuk anda telah tamat. Log masuk semula untuk terus menyegerak.",
+        "forbidden": "GitHub menolak akses ke repositori. Pastikan Gamerdex Sync mempunyai akses Read and write untuk Contents, kemudian segerak semula.",
+        "httpStatus": "GitHub menjawab {status}."
+    },
+    "choice": {
+        "title": "Peranti ini dan awan sama-sama mempunyai data",
+        "body": "Ini ialah segerak pertama daripada peranti ini. Pilih tindakan. Tiada apa dipadam daripada awan sehingga anda memilih.",
+        "counts": "Peranti ini: {local}. Awan: {cloud}.",
+        "merge": "Gabungkan kedua-duanya",
+        "mergeHint": "Simpan semuanya daripada kedua-dua pihak. Tahap yang lebih tinggi diutamakan.",
+        "keepLocal": "Kekalkan peranti ini",
+        "keepLocalHint": "Ganti data awan dengan data pada peranti ini.",
+        "keepCloud": "Kekalkan awan",
+        "keepCloudHint": "Ganti data pada peranti ini dengan data awan."
+    },
+    "conflicts": {
+        "title": "Perubahan yang tidak dapat digabungkan",
+        "body": "Dua peranti mengubah nilai yang sama. Nilai awan telah dikekalkan. Pilih nilai peranti ini untuk menggunakannya.",
+        "cloudValue": "Awan",
+        "deviceValue": "Peranti ini",
+        "keepDevice": "Guna nilai peranti ini",
+        "dismiss": "Tutup",
+        "empty": "Tiada",
+        "deletedEdited": "Satu peranti membuang ini dan satu lagi mengubahnya. Versi yang diubah telah dikekalkan."
+    },
+    "callback": {
+        "title": "Log masuk",
+        "working": "Melengkapkan log masuk",
+        "back": "Kembali ke Tetapan",
+        "denied": "Log masuk telah dibatalkan.",
+        "state": "Log masuk tidak dapat disemak. Mulakan semula dari Tetapan.",
+        "missing": "GitHub tidak menghantar kod log masuk. Mulakan semula dari Tetapan.",
+        "failed": "Log masuk tidak dapat dilengkapkan. Cuba lagi nanti."
+    },
+    "chiefCount": "{count, plural, other {{amount} chief}}"
+}

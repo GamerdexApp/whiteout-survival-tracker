@@ -36,6 +36,7 @@ import resources from "./de/resources.json";
 import settings from "./de/settings.json";
 import shell from "./de/shell.json";
 import skins from "./de/skins.json";
+import sync from "./de/sync.json";
 import tech from "./de/tech.json";
 import troops from "./de/troops.json";
 import tundraAlbum from "./de/tundraAlbum.json";
@@ -104,6 +105,7 @@ const de: PartialMessages = {
   settings,
   shell,
   skins,
+  sync,
   tech,
   troops,
   tundraAlbum,

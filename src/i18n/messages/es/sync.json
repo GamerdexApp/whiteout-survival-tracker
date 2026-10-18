@@ -1,0 +1,91 @@
+{
+    "tab": {
+        "title": "Sincronización en la nube",
+        "description": "Guarda tus jefes en un repositorio privado de GitHub y compártelos entre tus dispositivos."
+    },
+    "unavailable": "La sincronización no está disponible en esta versión.",
+    "privacy": "Tus datos van a un repositorio privado de tu propia cuenta de GitHub. Gamerdex no tiene ningún servidor que los guarde, y la app solo puede acceder al repositorio que elijas.",
+    "signedOut": {
+        "title": "Iniciar sesión",
+        "body": "Inicia sesión con GitHub y elige el repositorio que guarda tus datos.",
+        "button": "Iniciar sesión con GitHub"
+    },
+    "repository": {
+        "title": "Configura tu repositorio de datos",
+        "body": "Tus datos se guardan en un repositorio privado llamado {name} en tu cuenta de GitHub. Gamerdex Sync solo puede acceder a ese repositorio.",
+        "checking": "Buscando {name}",
+        "checkFailed": "No se pudieron cargar tus repositorios. Revisa tu conexión y vuelve a comprobar.",
+        "found": "Encontrado {fullName}",
+        "public": "El repositorio {fullName} es público. Hazlo privado en sus ajustes de GitHub y vuelve a comprobar. No se puede usar un repositorio público porque cualquiera podría leer tus datos.",
+        "missing": "No se encontró el repositorio {name}",
+        "steps": {
+            "create": "Crea un repositorio privado llamado {name}. Marca Add a README file.",
+            "install": "Da acceso a Gamerdex Sync solo a ese repositorio. Elige Only select repositories y luego selecciona {name}.",
+            "recheck": "Vuelve aquí y comprueba de nuevo."
+        },
+        "createButton": "Crear repositorio",
+        "installButton": "Elegir repositorios en GitHub",
+        "recheckButton": "Comprobar de nuevo"
+    },
+    "connected": {
+        "title": "Conectado",
+        "repository": "Repositorio",
+        "lastSync": "Última sincronización",
+        "never": "Aún sin sincronizar",
+        "syncNow": "Sincronizar ahora",
+        "signOut": "Cerrar sesión",
+        "signedOut": "Sesión cerrada. Los datos de este dispositivo no cambian."
+    },
+    "status": {
+        "idle": "Sincronizado",
+        "syncing": "Sincronizando",
+        "offline": "Sin conexión",
+        "reauth": "Inicia sesión de nuevo",
+        "needsChoice": "Requiere tu decisión",
+        "error": "Error de sincronización",
+        "signedOut": "Sin sesión",
+        "needsRepository": "Elige un repositorio"
+    },
+    "error": {
+        "rateLimit": "GitHub está limitando las solicitudes. La sincronización volverá a funcionar en unos minutos.",
+        "notFound": "No se encontró el repositorio. Vuelve a elegirlo.",
+        "server": "GitHub no respondió correctamente. Inténtalo de nuevo más tarde.",
+        "data": "Los datos sincronizados no son válidos, así que no se cambió nada.",
+        "busy": "Otro dispositivo sigue cambiando los datos. Inténtalo de nuevo en un momento.",
+        "other": "Algo salió mal. No se cambió nada.",
+        "reauth": "Tu sesión terminó. Inicia sesión de nuevo para seguir sincronizando.",
+        "forbidden": "GitHub rechazó el acceso al repositorio. Comprueba que Gamerdex Sync tenga acceso Read and write a Contents y vuelve a sincronizar.",
+        "httpStatus": "GitHub respondió {status}."
+    },
+    "choice": {
+        "title": "Este dispositivo y la nube tienen datos",
+        "body": "Esta es la primera sincronización desde este dispositivo. Elige qué hacer. No se borra nada de la nube hasta que elijas.",
+        "counts": "Este dispositivo: {local}. Nube: {cloud}.",
+        "merge": "Combinar ambos",
+        "mergeHint": "Conserva todo de ambos. Gana el nivel más alto.",
+        "keepLocal": "Conservar este dispositivo",
+        "keepLocalHint": "Sustituye los datos de la nube por los de este dispositivo.",
+        "keepCloud": "Conservar la nube",
+        "keepCloudHint": "Sustituye los datos de este dispositivo por los de la nube."
+    },
+    "conflicts": {
+        "title": "Cambios que no se pudieron combinar",
+        "body": "Dos dispositivos cambiaron el mismo valor. Se conservó el valor de la nube. Elige el valor de este dispositivo para usarlo.",
+        "cloudValue": "Nube",
+        "deviceValue": "Este dispositivo",
+        "keepDevice": "Usar el valor de este dispositivo",
+        "dismiss": "Descartar",
+        "empty": "Nada",
+        "deletedEdited": "Un dispositivo lo eliminó y otro lo cambió. Se conservó la versión cambiada."
+    },
+    "callback": {
+        "title": "Iniciando sesión",
+        "working": "Terminando el inicio de sesión",
+        "back": "Volver a Ajustes",
+        "denied": "Se canceló el inicio de sesión.",
+        "state": "No se pudo comprobar el inicio de sesión. Empieza de nuevo desde Ajustes.",
+        "missing": "GitHub no envió ningún código de inicio de sesión. Empieza de nuevo desde Ajustes.",
+        "failed": "No se pudo terminar el inicio de sesión. Inténtalo de nuevo más tarde."
+    },
+    "chiefCount": "{count, plural, one {{amount} jefe} other {{amount} jefes}}"
+}

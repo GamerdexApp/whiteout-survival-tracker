@@ -1,0 +1,91 @@
+{
+    "tab": {
+        "title": "Bulut senkronu",
+        "description": "Şeflerini özel bir GitHub deposunda sakla ve cihazların arasında paylaş."
+    },
+    "unavailable": "Senkronizasyon bu sürümde kullanılamıyor.",
+    "privacy": "Verilerin kendi GitHub hesabındaki özel bir depoya gider. Gamerdex'in bunları saklayan bir sunucusu yoktur ve uygulama yalnızca senin seçtiğin tek depoya erişebilir.",
+    "signedOut": {
+        "title": "Giriş yap",
+        "body": "GitHub ile giriş yap, sonra verilerini tutan depoyu seç.",
+        "button": "GitHub ile giriş yap"
+    },
+    "repository": {
+        "title": "Veri deposunu kur",
+        "body": "Verilerin, GitHub hesabındaki {name} adlı özel bir depoda tutulur. Gamerdex Sync yalnızca bu tek depoya erişebilir.",
+        "checking": "{name} aranıyor",
+        "checkFailed": "Depoların yüklenemedi. Bağlantını kontrol et ve tekrar dene.",
+        "found": "{fullName} bulundu",
+        "public": "{fullName} deposu herkese açık. GitHub ayarlarından özel yap, sonra tekrar kontrol et. Herkese açık bir depo kullanılamaz, çünkü herkes verilerini okuyabilir.",
+        "missing": "{name} deposu bulunamadı",
+        "steps": {
+            "create": "{name} adlı özel bir depo oluştur. Add a README file seçeneğini işaretle.",
+            "install": "Gamerdex Sync'e yalnızca bu depoya erişim ver. Only select repositories seçeneğini seç, sonra {name} deposunu seç.",
+            "recheck": "Buraya dön ve tekrar kontrol et."
+        },
+        "createButton": "Depo oluştur",
+        "installButton": "GitHub'da depo seç",
+        "recheckButton": "Tekrar kontrol et"
+    },
+    "connected": {
+        "title": "Bağlı",
+        "repository": "Depo",
+        "lastSync": "Son senkron",
+        "never": "Henüz senkronize edilmedi",
+        "syncNow": "Şimdi senkronize et",
+        "signOut": "Çıkış yap",
+        "signedOut": "Çıkış yapıldı. Bu cihazdaki veriler olduğu gibi kalır."
+    },
+    "status": {
+        "idle": "Senkronize",
+        "syncing": "Senkronize ediliyor",
+        "offline": "Çevrimdışı",
+        "reauth": "Tekrar giriş yap",
+        "needsChoice": "Seçimin gerekli",
+        "error": "Senkron başarısız",
+        "signedOut": "Giriş yapılmadı",
+        "needsRepository": "Depo seç"
+    },
+    "error": {
+        "rateLimit": "GitHub istekleri sınırlıyor. Senkron birkaç dakika içinde tekrar çalışır.",
+        "notFound": "Depo bulunamadı. Tekrar seç.",
+        "server": "GitHub doğru yanıt vermedi. Daha sonra tekrar dene.",
+        "data": "Senkronize edilen veri geçerli değil, bu yüzden hiçbir şey değişmedi.",
+        "busy": "Başka bir cihaz veriyi sürekli değiştiriyor. Biraz sonra tekrar dene.",
+        "other": "Bir şeyler ters gitti. Hiçbir şey değişmedi.",
+        "reauth": "Girişin sona erdi. Senkronu sürdürmek için tekrar giriş yap.",
+        "forbidden": "GitHub depoya erişimi reddetti. Gamerdex Sync'in Contents için Read and write erişimi olduğunu kontrol et, sonra tekrar senkronize et.",
+        "httpStatus": "GitHub {status} yanıtını verdi."
+    },
+    "choice": {
+        "title": "Bu cihazda ve bulutta veri var",
+        "body": "Bu, bu cihazdan ilk senkron. Ne yapacağını seç. Sen seçene kadar buluttan hiçbir şey silinmez.",
+        "counts": "Bu cihaz: {local}. Bulut: {cloud}.",
+        "merge": "İkisini birleştir",
+        "mergeHint": "İkisindeki her şeyi tut. Yüksek seviye kazanır.",
+        "keepLocal": "Bu cihazı tut",
+        "keepLocalHint": "Buluttaki verileri bu cihazdaki verilerle değiştirir.",
+        "keepCloud": "Bulutu tut",
+        "keepCloudHint": "Bu cihazdaki verileri buluttaki verilerle değiştirir."
+    },
+    "conflicts": {
+        "title": "Birleştirilemeyen değişiklikler",
+        "body": "İki cihaz aynı değeri değiştirdi. Buluttaki değer tutuldu. Onun yerine bu cihazın değerini kullanmak için seç.",
+        "cloudValue": "Bulut",
+        "deviceValue": "Bu cihaz",
+        "keepDevice": "Bu cihazın değerini kullan",
+        "dismiss": "Kapat",
+        "empty": "Hiçbir şey",
+        "deletedEdited": "Bir cihaz bunu kaldırdı, başka bir cihaz değiştirdi. Değiştirilen sürüm tutuldu."
+    },
+    "callback": {
+        "title": "Giriş yapılıyor",
+        "working": "Giriş tamamlanıyor",
+        "back": "Ayarlar'a dön",
+        "denied": "Giriş iptal edildi.",
+        "state": "Giriş doğrulanamadı. Ayarlar'dan yeniden başla.",
+        "missing": "GitHub giriş kodu göndermedi. Ayarlar'dan yeniden başla.",
+        "failed": "Giriş tamamlanamadı. Daha sonra tekrar dene."
+    },
+    "chiefCount": "{count, plural, one {{amount} şef} other {{amount} şef}}"
+}

@@ -36,6 +36,7 @@ import resources from "./zh-TW/resources.json";
 import settings from "./zh-TW/settings.json";
 import shell from "./zh-TW/shell.json";
 import skins from "./zh-TW/skins.json";
+import sync from "./zh-TW/sync.json";
 import tech from "./zh-TW/tech.json";
 import troops from "./zh-TW/troops.json";
 import tundraAlbum from "./zh-TW/tundraAlbum.json";
@@ -104,6 +105,7 @@ const zhTW: PartialMessages = {
   settings,
   shell,
   skins,
+  sync,
   tech,
   troops,
   tundraAlbum,

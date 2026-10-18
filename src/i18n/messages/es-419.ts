@@ -36,6 +36,7 @@ import resources from "./es-419/resources.json";
 import settings from "./es-419/settings.json";
 import shell from "./es-419/shell.json";
 import skins from "./es-419/skins.json";
+import sync from "./es-419/sync.json";
 import tech from "./es-419/tech.json";
 import troops from "./es-419/troops.json";
 import tundraAlbum from "./es-419/tundraAlbum.json";
@@ -104,6 +105,7 @@ const es419: PartialMessages = {
   settings,
   shell,
   skins,
+  sync,
   tech,
   troops,
   tundraAlbum,
