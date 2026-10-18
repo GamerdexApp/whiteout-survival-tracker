@@ -1,14 +1,19 @@
 {
     "tab": {
         "title": "Sincronização na nuvem",
-        "description": "Guarde os seus chefes num repositório privado do GitHub e partilhe-os entre os seus dispositivos."
+        "description": "Guarde os seus chefes num repositório privado do GitHub e partilhe-os entre os seus dispositivos.",
+        "descriptionGoogle": "Guarde os seus chefes no seu Google Drive e partilhe-os entre os seus dispositivos."
     },
     "unavailable": "A sincronização não está disponível nesta versão.",
     "privacy": "Os seus dados vão para um repositório privado na sua própria conta do GitHub. O Gamerdex não tem nenhum servidor que os guarde, e a aplicação só consegue aceder ao repositório que escolher.",
     "signedOut": {
         "title": "Iniciar sessão",
         "body": "Inicie sessão com o GitHub e escolha o repositório que guarda os seus dados.",
-        "button": "Iniciar sessão com o GitHub"
+        "button": "Iniciar sessão com o GitHub",
+        "choose": "Escolha onde guardar os seus dados. Ficam na sua própria conta, e o Gamerdex não tem nenhum servidor que os guarde.",
+        "githubHint": "Um repositório privado chamado {name} na sua conta do GitHub.",
+        "googleHint": "Uma pasta chamada {name} no seu Google Drive. O Gamerdex só consegue ver os ficheiros que cria.",
+        "google": "Iniciar sessão com o Google"
     },
     "repository": {
         "title": "Configure o repositório de dados",
@@ -34,7 +39,10 @@
         "never": "Ainda não sincronizado",
         "syncNow": "Sincronizar agora",
         "signOut": "Terminar sessão",
-        "signedOut": "Sessão terminada. Os dados deste dispositivo mantêm-se como estão."
+        "signedOut": "Sessão terminada. Os dados deste dispositivo mantêm-se como estão.",
+        "storage": "Guardado em",
+        "googleValue": "Google Drive, pasta {name}",
+        "folder": "Pasta {name}"
     },
     "status": {
         "idle": "Sincronizado",
@@ -44,7 +52,8 @@
         "needsChoice": "Precisa da sua escolha",
         "error": "Falha na sincronização",
         "signedOut": "Sem sessão",
-        "needsRepository": "Escolha um repositório"
+        "needsRepository": "Escolha um repositório",
+        "conflicts": "Rever alterações"
     },
     "error": {
         "rateLimit": "O GitHub está a limitar os pedidos. A sincronização volta a funcionar dentro de alguns minutos.",
@@ -55,7 +64,10 @@
         "other": "Algo correu mal. Nada foi alterado.",
         "reauth": "A sua sessão terminou. Inicie sessão novamente para continuar a sincronizar.",
         "forbidden": "O GitHub recusou o acesso ao repositório. Verifique se o Gamerdex Sync tem acesso Read and write a Contents e sincronize novamente.",
-        "httpStatus": "O GitHub respondeu {status}."
+        "httpStatus": "O GitHub respondeu {status}.",
+        "notFoundGoogle": "Não foi encontrado um ficheiro ou uma pasta no Google Drive. Sincronize novamente.",
+        "forbiddenGoogle": "O Google recusou o acesso ao Drive. Inicie sessão novamente e permita o acesso aos ficheiros que o Gamerdex cria.",
+        "httpStatusGoogle": "O Google respondeu {status}."
     },
     "choice": {
         "title": "Este dispositivo e a nuvem têm dados",
@@ -87,5 +99,122 @@
         "missing": "O GitHub não enviou nenhum código de início de sessão. Recomece a partir das Definições.",
         "failed": "Não foi possível concluir o início de sessão. Tente novamente mais tarde."
     },
-    "chiefCount": "{count, plural, one {{amount} chefe} other {{amount} chefes}}"
+    "chiefCount": "{count, plural, one {{amount} chefe} other {{amount} chefes}}",
+    "provider": {
+        "github": {
+            "name": "GitHub",
+            "tile": "Um repositório privado que lhe pertence, chamado {name}.",
+            "badge": "Para programadores"
+        },
+        "google": {
+            "name": "Google Drive",
+            "tile": "Uma pasta Gamerdex visível no seu Drive. O Gamerdex só vê os ficheiros que cria.",
+            "badge": "Recomendado"
+        }
+    },
+    "connect": {
+        "title": "Sincronize entre dispositivos",
+        "pill": "Não ligado",
+        "intro": "Mantenha os seus chefes iguais no computador e no telemóvel. A sincronização é opcional e gratuita. Escolha onde fica a cópia.",
+        "pickerLabel": "Onde guardar a cópia",
+        "panelTitle": "Ligar {provider}",
+        "another": "Pode escolher outro fornecedor antes de iniciar sessão.",
+        "firstSync": "Escolha o que manter na primeira sincronização se ambos os lados já tiverem dados. Nada é substituído antes de decidir.",
+        "google": {
+            "step1": "Inicie sessão com o Google nesta janela.",
+            "step2": "Permita o acesso aos ficheiros que o Gamerdex cria. A aplicação não consegue ver os seus outros ficheiros.",
+            "button": "Ligar Google Drive"
+        },
+        "github": {
+            "step1": "Crie um repositório privado vazio chamado {name}. Marque Add a README file.",
+            "step2": "Inicie sessão com o GitHub e dê ao Gamerdex Sync acesso apenas a esse repositório.",
+            "button": "Ligar GitHub"
+        }
+    },
+    "how": {
+        "title": "Como funciona a sincronização",
+        "one": "Os seus chefes são guardados num único ficheiro no seu próprio armazenamento, mais um ficheiro pequeno com a lista de dispositivos.",
+        "two": "O Gamerdex não tem nenhum servidor que guarde os seus dados. O navegador comunica diretamente com o seu armazenamento.",
+        "three": "Os níveis combinam-se por entrada e ganha o mais alto. Os nomes, as notas e as definições usam a alteração mais recente.",
+        "four": "Cada dispositivo mantém o seu próprio chefe aberto. A sincronização nunca o muda.",
+        "five": "Desligue quando quiser. Os seus chefes ficam em todos os dispositivos."
+    },
+    "banner": {
+        "title": "{count, plural, one {{amount} alteração precisa de uma decisão} other {{amount} alterações precisam de uma decisão}}",
+        "body": "Dois dispositivos alteraram o mesmo valor. O valor da nuvem é mantido até decidir.",
+        "review": "Rever",
+        "waiting": "A primeira sincronização aguarda a sua escolha.",
+        "choose": "Escolher"
+    },
+    "chiefs": {
+        "title": "Chefes",
+        "thisDevice": "Este dispositivo",
+        "cloud": "Nuvem, última sincronização",
+        "notInCloud": "Ainda não está na nuvem",
+        "upload": "Carregar agora",
+        "review": "Rever",
+        "note": "Ao apagar um chefe, este é removido do ficheiro de sincronização na sincronização seguinte.",
+        "status": {
+            "synced": "Sincronizado",
+            "changedHere": "Alterado aqui",
+            "conflict": "Conflito",
+            "newHere": "Novo aqui"
+        }
+    },
+    "activity": {
+        "title": "Atividade de sincronização recente",
+        "empty": "Ainda nada foi sincronizado.",
+        "connected": "O {provider} foi ligado neste navegador.",
+        "uploaded": "As alterações deste dispositivo foram carregadas.",
+        "downloaded": "As alterações da nuvem foram transferidas.",
+        "merged": "As alterações de ambos os lados foram combinadas.",
+        "conflicts": "{count, plural, one {{amount} alteração precisa de uma decisão.} other {{amount} alterações precisam de uma decisão.}}",
+        "failed": "A sincronização falhou."
+    },
+    "settings": {
+        "title": "Definições de sincronização",
+        "auto": "Sincronizar automaticamente",
+        "autoHint": "Sincroniza ao abrir o tracker e alguns segundos após cada alteração.",
+        "focus": "Verificar alterações quando eu voltar ao separador",
+        "focusHint": "Obtém dados mais recentes da nuvem quando voltar ao tracker.",
+        "metered": "Esperar numa ligação com dados limitados",
+        "meteredHint": "Ignora as sincronizações automáticas enquanto o navegador indicar poupança de dados. Sincronizar agora continua a funcionar."
+    },
+    "lives": {
+        "title": "Onde ficam os seus dados",
+        "storage": "Armazenamento",
+        "folder": "Pasta",
+        "dataFile": "Ficheiro de dados",
+        "metaFile": "Ficheiro meta",
+        "size": "Tamanho",
+        "kb": "{amount} KB",
+        "note": "O ficheiro de dados usa o mesmo formato que o ficheiro de cópia de segurança. O ficheiro meta guarda a lista de dispositivos e nenhum dado do jogo. O seu início de sessão nunca está em nenhum dos ficheiros.",
+        "googleNote": "A pasta Gamerdex é visível no seu Drive. O Gamerdex só consegue abrir os ficheiros que criou.",
+        "githubNote": "Mantenha o repositório privado. Quem o conseguir abrir consegue ler os seus dados."
+    },
+    "device": {
+        "title": "Este dispositivo",
+        "name": "Nome do dispositivo",
+        "nameHint": "Os ficheiros de sincronização mostram este nome para este dispositivo. Ao mudá-lo, o ficheiro meta é atualizado na sincronização seguinte.",
+        "openChief": "Chefe aberto",
+        "noChief": "Nenhum",
+        "login": "Início de sessão da sincronização",
+        "loginValue": "Apenas neste dispositivo",
+        "loginHint": "O chefe aberto é uma escolha de cada dispositivo e a sincronização nunca o muda. O seu início de sessão fica neste dispositivo. Nunca está nos dados guardados, no ficheiro de cópia de segurança nem nos ficheiros de sincronização."
+    },
+    "disconnect": {
+        "title": "Desligar",
+        "body": "Para a sincronização neste navegador. Os seus chefes ficam neste dispositivo e na nuvem. Os outros dispositivos continuam a sincronizar.",
+        "button": "Desligar {provider}",
+        "googleHint": "Para apagar a cópia da nuvem por si, desligue e depois apague a pasta Gamerdex no seu Google Drive.",
+        "githubHint": "Para apagar a cópia da nuvem por si, desligue e depois apague a pasta Gamerdex no seu repositório."
+    },
+    "first": {
+        "thisDevice": "Este dispositivo",
+        "cloud": "Nuvem",
+        "recommended": "Recomendado",
+        "later": "Decidir mais tarde",
+        "apply": "Aplicar escolha",
+        "optionsLabel": "O que manter"
+    }
 }

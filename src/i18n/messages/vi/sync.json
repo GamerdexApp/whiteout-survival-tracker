@@ -1,14 +1,19 @@
 {
     "tab": {
         "title": "Đồng bộ đám mây",
-        "description": "Lưu các thủ lĩnh của bạn trong một kho lưu trữ riêng tư trên GitHub và chia sẻ giữa các thiết bị."
+        "description": "Lưu các thủ lĩnh của bạn trong một kho lưu trữ riêng tư trên GitHub và chia sẻ giữa các thiết bị.",
+        "descriptionGoogle": "Lưu các thủ lĩnh của bạn trong Google Drive của bạn và chia sẻ giữa các thiết bị."
     },
     "unavailable": "Bản dựng này không hỗ trợ đồng bộ.",
     "privacy": "Dữ liệu của bạn được lưu trong một kho lưu trữ riêng tư trên tài khoản GitHub của chính bạn. Gamerdex không có máy chủ nào lưu dữ liệu, và ứng dụng chỉ truy cập được kho lưu trữ bạn chọn.",
     "signedOut": {
         "title": "Đăng nhập",
         "body": "Đăng nhập bằng GitHub, rồi chọn kho lưu trữ chứa dữ liệu của bạn.",
-        "button": "Đăng nhập bằng GitHub"
+        "button": "Đăng nhập bằng GitHub",
+        "choose": "Hãy chọn nơi lưu dữ liệu của bạn. Dữ liệu nằm trong tài khoản của chính bạn, và Gamerdex không có máy chủ nào lưu dữ liệu.",
+        "githubHint": "Một kho lưu trữ riêng tư tên {name} trên tài khoản GitHub của bạn.",
+        "googleHint": "Một thư mục tên {name} trong Google Drive của bạn. Gamerdex chỉ thấy được các tệp do chính nó tạo ra.",
+        "google": "Đăng nhập bằng Google"
     },
     "repository": {
         "title": "Thiết lập kho dữ liệu",
@@ -34,7 +39,10 @@
         "never": "Chưa đồng bộ",
         "syncNow": "Đồng bộ ngay",
         "signOut": "Đăng xuất",
-        "signedOut": "Đã đăng xuất. Dữ liệu trên thiết bị này vẫn được giữ nguyên."
+        "signedOut": "Đã đăng xuất. Dữ liệu trên thiết bị này vẫn được giữ nguyên.",
+        "storage": "Lưu tại",
+        "googleValue": "Google Drive, thư mục {name}",
+        "folder": "Thư mục {name}"
     },
     "status": {
         "idle": "Đã đồng bộ",
@@ -44,7 +52,8 @@
         "needsChoice": "Cần bạn chọn",
         "error": "Đồng bộ lỗi",
         "signedOut": "Chưa đăng nhập",
-        "needsRepository": "Chọn kho lưu trữ"
+        "needsRepository": "Chọn kho lưu trữ",
+        "conflicts": "Xem thay đổi"
     },
     "error": {
         "rateLimit": "GitHub đang giới hạn số yêu cầu. Đồng bộ sẽ hoạt động lại sau vài phút.",
@@ -55,7 +64,10 @@
         "other": "Đã xảy ra lỗi. Chưa có gì bị thay đổi.",
         "reauth": "Phiên đăng nhập của bạn đã hết hạn. Hãy đăng nhập lại để tiếp tục đồng bộ.",
         "forbidden": "GitHub từ chối quyền truy cập kho lưu trữ. Hãy kiểm tra Gamerdex Sync có quyền Read and write đối với Contents, rồi đồng bộ lại.",
-        "httpStatus": "GitHub trả về mã {status}."
+        "httpStatus": "GitHub trả về mã {status}.",
+        "notFoundGoogle": "Không tìm thấy tệp hoặc thư mục trong Google Drive. Hãy đồng bộ lại.",
+        "forbiddenGoogle": "Google từ chối quyền truy cập Drive. Hãy đăng nhập lại và cho phép truy cập các tệp mà Gamerdex tạo ra.",
+        "httpStatusGoogle": "Google trả về mã {status}."
     },
     "choice": {
         "title": "Thiết bị này và đám mây đều có dữ liệu",
@@ -87,5 +99,122 @@
         "missing": "GitHub không gửi mã đăng nhập. Hãy bắt đầu lại từ Cài đặt.",
         "failed": "Không thể hoàn tất đăng nhập. Hãy thử lại sau."
     },
-    "chiefCount": "{count, plural, other {{amount} thủ lĩnh}}"
+    "chiefCount": "{count, plural, other {{amount} thủ lĩnh}}",
+    "provider": {
+        "github": {
+            "name": "GitHub",
+            "tile": "Một kho lưu trữ riêng tư do bạn sở hữu, tên {name}.",
+            "badge": "Dành cho lập trình viên"
+        },
+        "google": {
+            "name": "Google Drive",
+            "tile": "Một thư mục Gamerdex hiển thị trong Drive của bạn. Gamerdex chỉ thấy các tệp do chính nó tạo ra.",
+            "badge": "Khuyên dùng"
+        }
+    },
+    "connect": {
+        "title": "Đồng bộ giữa các thiết bị",
+        "pill": "Chưa kết nối",
+        "intro": "Giữ các thủ lĩnh của bạn giống nhau trên máy tính và điện thoại. Đồng bộ là tùy chọn và miễn phí. Hãy chọn nơi lưu bản sao.",
+        "pickerLabel": "Nơi lưu bản sao",
+        "panelTitle": "Kết nối {provider}",
+        "another": "Bạn có thể chọn nhà cung cấp khác trước khi đăng nhập.",
+        "firstSync": "Hãy chọn nội dung giữ lại ở lần đồng bộ đầu tiên nếu cả hai bên đã có dữ liệu. Sẽ không có gì bị thay thế trước khi bạn quyết định.",
+        "google": {
+            "step1": "Đăng nhập bằng Google trong cửa sổ này.",
+            "step2": "Cho phép truy cập các tệp mà Gamerdex tạo ra. Ứng dụng không thấy các tệp khác của bạn.",
+            "button": "Kết nối Google Drive"
+        },
+        "github": {
+            "step1": "Tạo một kho lưu trữ riêng tư trống tên {name}. Chọn Add a README file.",
+            "step2": "Đăng nhập bằng GitHub, rồi cấp cho Gamerdex Sync quyền truy cập chỉ kho đó.",
+            "button": "Kết nối GitHub"
+        }
+    },
+    "how": {
+        "title": "Đồng bộ hoạt động thế nào",
+        "one": "Các thủ lĩnh của bạn được lưu thành một tệp trong nơi lưu trữ của chính bạn, cùng một tệp nhỏ chứa danh sách thiết bị.",
+        "two": "Gamerdex không có máy chủ nào lưu dữ liệu của bạn. Trình duyệt của bạn làm việc trực tiếp với nơi lưu trữ.",
+        "three": "Cấp độ được gộp theo từng mục và lấy cấp độ cao hơn. Tên, ghi chú và thiết lập dùng thay đổi mới hơn.",
+        "four": "Mỗi thiết bị giữ thủ lĩnh đang mở của riêng nó. Đồng bộ không bao giờ đổi thủ lĩnh này.",
+        "five": "Bạn có thể ngắt kết nối bất cứ lúc nào. Các thủ lĩnh vẫn còn trên mọi thiết bị."
+    },
+    "banner": {
+        "title": "{count, plural, other {{amount} thay đổi cần bạn quyết định}}",
+        "body": "Hai thiết bị đã thay đổi cùng một giá trị. Giá trị trên đám mây được giữ lại cho đến khi bạn quyết định.",
+        "review": "Xem lại",
+        "waiting": "Lần đồng bộ đầu tiên đang chờ lựa chọn của bạn.",
+        "choose": "Chọn"
+    },
+    "chiefs": {
+        "title": "Thủ lĩnh",
+        "thisDevice": "Thiết bị này",
+        "cloud": "Đám mây, lần đồng bộ cuối",
+        "notInCloud": "Chưa có trên đám mây",
+        "upload": "Tải lên ngay",
+        "review": "Xem lại",
+        "note": "Xóa một thủ lĩnh sẽ gỡ nó khỏi tệp đồng bộ ở lần đồng bộ tiếp theo.",
+        "status": {
+            "synced": "Đã đồng bộ",
+            "changedHere": "Đổi ở đây",
+            "conflict": "Xung đột",
+            "newHere": "Mới ở đây"
+        }
+    },
+    "activity": {
+        "title": "Hoạt động đồng bộ gần đây",
+        "empty": "Chưa có gì được đồng bộ.",
+        "connected": "Đã kết nối {provider} trên trình duyệt này.",
+        "uploaded": "Đã tải lên các thay đổi từ thiết bị này.",
+        "downloaded": "Đã tải xuống các thay đổi từ đám mây.",
+        "merged": "Đã gộp các thay đổi của cả hai bên.",
+        "conflicts": "{count, plural, other {{amount} thay đổi cần bạn quyết định.}}",
+        "failed": "Đồng bộ lỗi."
+    },
+    "settings": {
+        "title": "Thiết lập đồng bộ",
+        "auto": "Tự động đồng bộ",
+        "autoHint": "Đồng bộ khi mở trình theo dõi và vài giây sau mỗi thay đổi.",
+        "focus": "Kiểm tra thay đổi khi tôi quay lại thẻ này",
+        "focusHint": "Lấy dữ liệu đám mây mới hơn khi bạn quay lại trình theo dõi.",
+        "metered": "Chờ tôi khi dùng kết nối có giới hạn",
+        "meteredHint": "Bỏ qua đồng bộ tự động khi trình duyệt báo đang bật tiết kiệm dữ liệu. Đồng bộ ngay vẫn dùng được."
+    },
+    "lives": {
+        "title": "Nơi lưu dữ liệu của bạn",
+        "storage": "Nơi lưu trữ",
+        "folder": "Thư mục",
+        "dataFile": "Tệp dữ liệu",
+        "metaFile": "Tệp meta",
+        "size": "Dung lượng",
+        "kb": "{amount} KB",
+        "note": "Tệp dữ liệu dùng cùng định dạng với tệp sao lưu. Tệp meta chứa danh sách thiết bị và không có dữ liệu trò chơi. Thông tin đăng nhập của bạn không nằm trong tệp nào.",
+        "googleNote": "Thư mục Gamerdex hiển thị trong Drive của bạn. Gamerdex chỉ mở được các tệp do chính nó tạo ra.",
+        "githubNote": "Hãy giữ kho lưu trữ ở chế độ riêng tư. Ai mở được kho đều đọc được dữ liệu của bạn."
+    },
+    "device": {
+        "title": "Thiết bị này",
+        "name": "Tên thiết bị",
+        "nameHint": "Các tệp đồng bộ hiển thị tên này cho thiết bị này. Đổi tên sẽ cập nhật tệp meta ở lần đồng bộ tiếp theo.",
+        "openChief": "Thủ lĩnh đang mở",
+        "noChief": "Không có",
+        "login": "Đăng nhập đồng bộ",
+        "loginValue": "Chỉ trên thiết bị này",
+        "loginHint": "Thủ lĩnh đang mở là lựa chọn riêng của từng thiết bị và đồng bộ không bao giờ đổi nó. Thông tin đăng nhập của bạn chỉ nằm trên thiết bị này. Nó không nằm trong dữ liệu đã lưu, tệp sao lưu hay các tệp đồng bộ."
+    },
+    "disconnect": {
+        "title": "Ngắt kết nối",
+        "body": "Dừng đồng bộ trên trình duyệt này. Các thủ lĩnh vẫn còn trên thiết bị này và trên đám mây. Các thiết bị khác tiếp tục đồng bộ.",
+        "button": "Ngắt kết nối {provider}",
+        "googleHint": "Để tự xóa bản sao trên đám mây, hãy ngắt kết nối rồi xóa thư mục Gamerdex trong Google Drive của bạn.",
+        "githubHint": "Để tự xóa bản sao trên đám mây, hãy ngắt kết nối rồi xóa thư mục Gamerdex trong kho lưu trữ của bạn."
+    },
+    "first": {
+        "thisDevice": "Thiết bị này",
+        "cloud": "Đám mây",
+        "recommended": "Khuyên dùng",
+        "later": "Quyết định sau",
+        "apply": "Áp dụng lựa chọn",
+        "optionsLabel": "Nội dung giữ lại"
+    }
 }

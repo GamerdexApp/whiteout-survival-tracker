@@ -1,14 +1,19 @@
 {
     "tab": {
         "title": "Sync nel cloud",
-        "description": "Tieni i tuoi capi in un repository privato di GitHub e condividili tra i tuoi dispositivi."
+        "description": "Tieni i tuoi capi in un repository privato di GitHub e condividili tra i tuoi dispositivi.",
+        "descriptionGoogle": "Tieni i tuoi capi nel tuo Google Drive e condividili tra i tuoi dispositivi."
     },
     "unavailable": "La sincronizzazione non è disponibile in questa versione.",
     "privacy": "I tuoi dati vanno in un repository privato nel tuo account GitHub. Gamerdex non ha un server che li conservi, e l'app può accedere solo al repository che scegli.",
     "signedOut": {
         "title": "Accedi",
         "body": "Accedi con GitHub, poi scegli il repository che contiene i tuoi dati.",
-        "button": "Accedi con GitHub"
+        "button": "Accedi con GitHub",
+        "choose": "Scegli dove conservare i tuoi dati. Restano nel tuo account, e Gamerdex non ha un server che li conservi.",
+        "githubHint": "Un repository privato chiamato {name} nel tuo account GitHub.",
+        "googleHint": "Una cartella chiamata {name} nel tuo Google Drive. Gamerdex può vedere solo i file che crea.",
+        "google": "Accedi con Google"
     },
     "repository": {
         "title": "Configura il repository dei dati",
@@ -34,7 +39,10 @@
         "never": "Non ancora sincronizzato",
         "syncNow": "Sincronizza ora",
         "signOut": "Esci",
-        "signedOut": "Disconnesso. I dati su questo dispositivo restano come sono."
+        "signedOut": "Disconnesso. I dati su questo dispositivo restano come sono.",
+        "storage": "Conservato in",
+        "googleValue": "Google Drive, cartella {name}",
+        "folder": "Cartella {name}"
     },
     "status": {
         "idle": "Sincronizzato",
@@ -44,7 +52,8 @@
         "needsChoice": "Serve la tua scelta",
         "error": "Sync non riuscita",
         "signedOut": "Non connesso",
-        "needsRepository": "Scegli un repository"
+        "needsRepository": "Scegli un repository",
+        "conflicts": "Controlla modifiche"
     },
     "error": {
         "rateLimit": "GitHub sta limitando le richieste. La sincronizzazione tornerà a funzionare tra pochi minuti.",
@@ -55,7 +64,10 @@
         "other": "Qualcosa è andato storto. Non è stato cambiato nulla.",
         "reauth": "Il tuo accesso è scaduto. Accedi di nuovo per continuare a sincronizzare.",
         "forbidden": "GitHub ha negato l'accesso al repository. Controlla che Gamerdex Sync abbia accesso Read and write a Contents, poi sincronizza di nuovo.",
-        "httpStatus": "GitHub ha risposto {status}."
+        "httpStatus": "GitHub ha risposto {status}.",
+        "notFoundGoogle": "Un file o una cartella di Google Drive non è stato trovato. Sincronizza di nuovo.",
+        "forbiddenGoogle": "Google ha negato l'accesso a Drive. Accedi di nuovo e consenti l'accesso ai file che Gamerdex crea.",
+        "httpStatusGoogle": "Google ha risposto {status}."
     },
     "choice": {
         "title": "Sia questo dispositivo sia il cloud hanno dei dati",
@@ -87,5 +99,122 @@
         "missing": "GitHub non ha inviato il codice di accesso. Ricomincia dalle Impostazioni.",
         "failed": "Non è stato possibile completare l'accesso. Riprova più tardi."
     },
-    "chiefCount": "{count, plural, one {{amount} capo} other {{amount} capi}}"
+    "chiefCount": "{count, plural, one {{amount} capo} other {{amount} capi}}",
+    "provider": {
+        "github": {
+            "name": "GitHub",
+            "tile": "Un repository privato di tua proprietà, chiamato {name}.",
+            "badge": "Per sviluppatori"
+        },
+        "google": {
+            "name": "Google Drive",
+            "tile": "Una cartella Gamerdex visibile nel tuo Drive. Gamerdex vede solo i file che crea.",
+            "badge": "Consigliato"
+        }
+    },
+    "connect": {
+        "title": "Sincronizza tra i dispositivi",
+        "pill": "Non connesso",
+        "intro": "Tieni i tuoi capi uguali sul computer e sul telefono. La sincronizzazione è facoltativa e gratuita. Scegli dove sta la copia.",
+        "pickerLabel": "Dove tenere la copia",
+        "panelTitle": "Connetti {provider}",
+        "another": "Puoi scegliere un altro provider prima di accedere.",
+        "firstSync": "Scegli cosa tenere alla prima sincronizzazione se entrambi i lati hanno già dei dati. Nulla viene sostituito prima della tua decisione.",
+        "google": {
+            "step1": "Accedi con Google in questa finestra.",
+            "step2": "Consenti l'accesso ai file che Gamerdex crea. L'app non vede gli altri tuoi file.",
+            "button": "Connetti Google Drive"
+        },
+        "github": {
+            "step1": "Crea un repository privato vuoto chiamato {name}. Seleziona Add a README file.",
+            "step2": "Accedi con GitHub, poi dai a Gamerdex Sync l'accesso solo a quel repository.",
+            "button": "Connetti GitHub"
+        }
+    },
+    "how": {
+        "title": "Come funziona la sincronizzazione",
+        "one": "I tuoi capi sono salvati in un unico file nel tuo archivio, più un piccolo file con l'elenco dei dispositivi.",
+        "two": "Gamerdex non ha un server che conservi i tuoi dati. Il browser parla direttamente con il tuo archivio.",
+        "three": "I livelli si uniscono per voce e vale il livello più alto. Nomi, note e impostazioni usano la modifica più recente.",
+        "four": "Ogni dispositivo tiene il proprio capo aperto. La sincronizzazione non lo cambia mai.",
+        "five": "Disconnetti quando vuoi. I tuoi capi restano su ogni dispositivo."
+    },
+    "banner": {
+        "title": "{count, plural, one {{amount} modifica richiede una decisione} other {{amount} modifiche richiedono una decisione}}",
+        "body": "Due dispositivi hanno modificato lo stesso valore. Il valore del cloud resta finché non decidi.",
+        "review": "Controlla",
+        "waiting": "La prima sincronizzazione aspetta la tua scelta.",
+        "choose": "Scegli"
+    },
+    "chiefs": {
+        "title": "Capi",
+        "thisDevice": "Questo dispositivo",
+        "cloud": "Cloud, ultima sincronizzazione",
+        "notInCloud": "Non ancora nel cloud",
+        "upload": "Carica ora",
+        "review": "Controlla",
+        "note": "Eliminare un capo lo rimuove dal file di sincronizzazione alla prossima sincronizzazione.",
+        "status": {
+            "synced": "Sincronizzato",
+            "changedHere": "Modificato qui",
+            "conflict": "Conflitto",
+            "newHere": "Nuovo qui"
+        }
+    },
+    "activity": {
+        "title": "Attività recente di sincronizzazione",
+        "empty": "Non è stato ancora sincronizzato nulla.",
+        "connected": "{provider} connesso su questo browser.",
+        "uploaded": "Modifiche caricate da questo dispositivo.",
+        "downloaded": "Modifiche scaricate dal cloud.",
+        "merged": "Modifiche di entrambi i lati unite.",
+        "conflicts": "{count, plural, one {{amount} modifica richiede una decisione.} other {{amount} modifiche richiedono una decisione.}}",
+        "failed": "La sincronizzazione non è riuscita."
+    },
+    "settings": {
+        "title": "Impostazioni di sincronizzazione",
+        "auto": "Sincronizza automaticamente",
+        "autoHint": "Sincronizza all'apertura del tracker e pochi secondi dopo ogni modifica.",
+        "focus": "Controlla le modifiche quando torno alla scheda",
+        "focusHint": "Scarica i dati più recenti del cloud quando torni al tracker.",
+        "metered": "Aspetta me su una connessione a consumo",
+        "meteredHint": "Salta le sincronizzazioni automatiche mentre il browser segnala il risparmio dati. Sincronizza ora funziona comunque."
+    },
+    "lives": {
+        "title": "Dove stanno i tuoi dati",
+        "storage": "Archivio",
+        "folder": "Cartella",
+        "dataFile": "File dei dati",
+        "metaFile": "File meta",
+        "size": "Dimensione",
+        "kb": "{amount} KB",
+        "note": "Il file dei dati usa lo stesso formato del file di backup. Il file meta contiene l'elenco dei dispositivi e nessun dato di gioco. Il tuo accesso non è mai in nessuno dei due.",
+        "googleNote": "La cartella Gamerdex è visibile nel tuo Drive. Gamerdex può aprire solo i file che ha creato.",
+        "githubNote": "Tieni privato il repository. Chiunque possa aprirlo può leggere i tuoi dati."
+    },
+    "device": {
+        "title": "Questo dispositivo",
+        "name": "Nome del dispositivo",
+        "nameHint": "I file di sincronizzazione mostrano questo nome per questo dispositivo. Rinominarlo aggiorna il file meta alla prossima sincronizzazione.",
+        "openChief": "Capo aperto",
+        "noChief": "Nessuno",
+        "login": "Accesso alla sincronizzazione",
+        "loginValue": "Solo su questo dispositivo",
+        "loginHint": "Il capo aperto è una scelta di ogni dispositivo, e la sincronizzazione non lo cambia mai. Il tuo accesso resta su questo dispositivo. Non è mai nei dati salvati, nel file di backup o nei file di sincronizzazione."
+    },
+    "disconnect": {
+        "title": "Disconnetti",
+        "body": "Interrompe la sincronizzazione su questo browser. I tuoi capi restano su questo dispositivo e nel cloud. Gli altri dispositivi continuano a sincronizzare.",
+        "button": "Disconnetti {provider}",
+        "googleHint": "Per eliminare tu stesso la copia nel cloud, disconnetti, poi elimina la cartella Gamerdex nel tuo Google Drive.",
+        "githubHint": "Per eliminare tu stesso la copia nel cloud, disconnetti, poi elimina la cartella Gamerdex nel tuo repository."
+    },
+    "first": {
+        "thisDevice": "Questo dispositivo",
+        "cloud": "Cloud",
+        "recommended": "Consigliato",
+        "later": "Decidi dopo",
+        "apply": "Applica la scelta",
+        "optionsLabel": "Cosa tenere"
+    }
 }

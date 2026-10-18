@@ -1,14 +1,19 @@
 {
     "tab": {
         "title": "云同步",
-        "description": "将你的领主保存在私有 GitHub 仓库中，并在多台设备之间共享。"
+        "description": "将你的领主保存在私有 GitHub 仓库中，并在多台设备之间共享。",
+        "descriptionGoogle": "将你的领主保存在你的 Google Drive 中，并在多台设备之间共享。"
     },
     "unavailable": "此版本不支持同步。",
     "privacy": "你的数据会发送到你自己 GitHub 账号下的私有仓库。Gamerdex 没有服务器存储这些数据，应用也只能访问你选择的那一个仓库。",
     "signedOut": {
         "title": "登录",
         "body": "使用 GitHub 登录，然后选择保存你数据的仓库。",
-        "button": "使用 GitHub 登录"
+        "button": "使用 GitHub 登录",
+        "choose": "选择数据的保存位置。数据保存在你自己的账号中，Gamerdex 没有服务器存储这些数据。",
+        "githubHint": "你的 GitHub 账号下名为 {name} 的私有仓库。",
+        "googleHint": "你的 Google Drive 中名为 {name} 的文件夹。Gamerdex 只能看到它自己创建的文件。",
+        "google": "使用 Google 登录"
     },
     "repository": {
         "title": "设置你的数据仓库",
@@ -34,7 +39,10 @@
         "never": "尚未同步",
         "syncNow": "立即同步",
         "signOut": "退出登录",
-        "signedOut": "已退出登录。此设备上的数据保持不变。"
+        "signedOut": "已退出登录。此设备上的数据保持不变。",
+        "storage": "保存位置",
+        "googleValue": "Google Drive，文件夹 {name}",
+        "folder": "文件夹 {name}"
     },
     "status": {
         "idle": "已同步",
@@ -44,7 +52,8 @@
         "needsChoice": "需要你选择",
         "error": "同步失败",
         "signedOut": "未登录",
-        "needsRepository": "选择仓库"
+        "needsRepository": "选择仓库",
+        "conflicts": "查看更改"
     },
     "error": {
         "rateLimit": "GitHub 正在限制请求。几分钟后同步会恢复。",
@@ -55,7 +64,10 @@
         "other": "出了点问题。没有做任何更改。",
         "reauth": "你的登录已失效。请重新登录以继续同步。",
         "forbidden": "GitHub 拒绝访问该仓库。请确认 Gamerdex Sync 拥有“Contents”的“Read and write”权限，然后再次同步。",
-        "httpStatus": "GitHub 返回了 {status}。"
+        "httpStatus": "GitHub 返回了 {status}。",
+        "notFoundGoogle": "未找到 Google Drive 中的文件或文件夹。请再次同步。",
+        "forbiddenGoogle": "Google 拒绝访问 Drive。请重新登录，并允许访问 Gamerdex 创建的文件。",
+        "httpStatusGoogle": "Google 返回了 {status}。"
     },
     "choice": {
         "title": "此设备和云端都有数据",
@@ -87,5 +99,122 @@
         "missing": "GitHub 没有返回登录代码。请从设置重新开始。",
         "failed": "无法完成登录。请稍后再试。"
     },
-    "chiefCount": "{count, plural, other {{amount}个领主}}"
+    "chiefCount": "{count, plural, other {{amount}个领主}}",
+    "provider": {
+        "github": {
+            "name": "GitHub",
+            "tile": "你拥有的私有仓库，名为 {name}。",
+            "badge": "面向开发者"
+        },
+        "google": {
+            "name": "Google Drive",
+            "tile": "你的 Drive 中可见的 Gamerdex 文件夹。Gamerdex 只能看到它自己创建的文件。",
+            "badge": "推荐"
+        }
+    },
+    "connect": {
+        "title": "跨设备同步",
+        "pill": "未连接",
+        "intro": "让你的领主在电脑和手机上保持一致。同步是可选的，而且免费。请选择副本的保存位置。",
+        "pickerLabel": "副本的保存位置",
+        "panelTitle": "连接 {provider}",
+        "another": "登录之前，你可以选择其他服务。",
+        "firstSync": "如果两边都已有数据，请选择首次同步时保留什么。在你决定之前不会替换任何内容。",
+        "google": {
+            "step1": "在此窗口中使用 Google 登录。",
+            "step2": "允许访问 Gamerdex 创建的文件。应用无法看到你的其他文件。",
+            "button": "连接 Google Drive"
+        },
+        "github": {
+            "step1": "创建一个名为 {name} 的空私有仓库。勾选“Add a README file”。",
+            "step2": "使用 GitHub 登录，然后只授予 Gamerdex Sync 访问该仓库的权限。",
+            "button": "连接 GitHub"
+        }
+    },
+    "how": {
+        "title": "同步的工作方式",
+        "one": "你的领主会保存为你自己存储空间中的一个文件，另外还有一个记录设备列表的小文件。",
+        "two": "Gamerdex 没有服务器存储你的数据。你的浏览器直接与你的存储空间通信。",
+        "three": "等级按条目合并，取较高的等级。名称、备注和设置采用较新的更改。",
+        "four": "每台设备保留各自打开的领主。同步不会切换它。",
+        "five": "可随时断开连接。你的领主会保留在每台设备上。"
+    },
+    "banner": {
+        "title": "{count, plural, other {{amount}项更改需要你决定}}",
+        "body": "两台设备修改了同一个值。在你决定之前会保留云端的值。",
+        "review": "查看",
+        "waiting": "首次同步正在等待你的选择。",
+        "choose": "选择"
+    },
+    "chiefs": {
+        "title": "领主",
+        "thisDevice": "此设备",
+        "cloud": "云端，上次同步",
+        "notInCloud": "云端还没有",
+        "upload": "立即上传",
+        "review": "查看",
+        "note": "删除领主后，下次同步时会将其从同步文件中移除。",
+        "status": {
+            "synced": "已同步",
+            "changedHere": "此处已更改",
+            "conflict": "冲突",
+            "newHere": "此处新增"
+        }
+    },
+    "activity": {
+        "title": "最近的同步活动",
+        "empty": "尚未同步任何内容。",
+        "connected": "已在此浏览器上连接 {provider}。",
+        "uploaded": "已上传此设备的更改。",
+        "downloaded": "已下载云端的更改。",
+        "merged": "已合并两边的更改。",
+        "conflicts": "{count, plural, other {{amount}项更改需要你决定。}}",
+        "failed": "同步失败。"
+    },
+    "settings": {
+        "title": "同步设置",
+        "auto": "自动同步",
+        "autoHint": "打开追踪器时以及每次更改几秒后进行同步。",
+        "focus": "回到此标签页时检查更改",
+        "focusHint": "切换回追踪器时拉取较新的云端数据。",
+        "metered": "在按流量计费的网络上等我确认",
+        "meteredHint": "浏览器报告处于省流量模式时，跳过自动同步。“立即同步”仍然可用。"
+    },
+    "lives": {
+        "title": "你的数据保存在哪里",
+        "storage": "存储",
+        "folder": "文件夹",
+        "dataFile": "数据文件",
+        "metaFile": "元数据文件",
+        "size": "大小",
+        "kb": "{amount} KB",
+        "note": "数据文件的格式与备份文件相同。元数据文件记录设备列表，不含游戏数据。你的登录信息不会出现在这两个文件中。",
+        "googleNote": "Gamerdex 文件夹在你的 Drive 中可见。Gamerdex 只能打开它自己创建的文件。",
+        "githubNote": "请保持仓库为私有。任何能打开它的人都可以读取你的数据。"
+    },
+    "device": {
+        "title": "此设备",
+        "name": "设备名称",
+        "nameHint": "同步文件会用这个名称显示此设备。重命名后，下次同步时会更新元数据文件。",
+        "openChief": "当前打开的领主",
+        "noChief": "无",
+        "login": "同步登录",
+        "loginValue": "仅在此设备上",
+        "loginHint": "当前打开的领主由每台设备各自决定，同步不会更改它。你的登录信息只保留在此设备上，不会出现在已保存的数据、备份文件或同步文件中。"
+    },
+    "disconnect": {
+        "title": "断开连接",
+        "body": "停止在此浏览器上同步。你的领主会保留在此设备和云端。其他设备继续同步。",
+        "button": "断开 {provider}",
+        "googleHint": "如需自行删除云端副本，请先断开连接，然后删除你 Google Drive 中的 Gamerdex 文件夹。",
+        "githubHint": "如需自行删除云端副本，请先断开连接，然后删除你仓库中的 Gamerdex 文件夹。"
+    },
+    "first": {
+        "thisDevice": "此设备",
+        "cloud": "云端",
+        "recommended": "推荐",
+        "later": "稍后决定",
+        "apply": "应用选择",
+        "optionsLabel": "保留什么"
+    }
 }

@@ -1,14 +1,19 @@
 {
     "tab": {
         "title": "Sinkronisasi cloud",
-        "description": "Simpan Chief-mu di repositori GitHub privat dan bagikan ke semua perangkatmu."
+        "description": "Simpan Chief-mu di repositori GitHub privat dan bagikan ke semua perangkatmu.",
+        "descriptionGoogle": "Simpan Chief-mu di Google Drive dan bagikan ke semua perangkatmu."
     },
     "unavailable": "Sinkronisasi tidak tersedia di build ini.",
     "privacy": "Datamu dikirim ke repositori privat di akun GitHub-mu sendiri. Gamerdex tidak punya server yang menyimpannya, dan aplikasi hanya bisa mengakses satu repositori yang kamu pilih.",
     "signedOut": {
         "title": "Masuk",
         "body": "Masuk dengan GitHub, lalu pilih repositori yang menyimpan datamu.",
-        "button": "Masuk dengan GitHub"
+        "button": "Masuk dengan GitHub",
+        "choose": "Pilih tempat menyimpan datamu. Data tetap ada di akunmu sendiri, dan Gamerdex tidak punya server yang menyimpannya.",
+        "githubHint": "Repositori privat bernama {name} di akun GitHub-mu.",
+        "googleHint": "Folder bernama {name} di Google Drive-mu. Gamerdex hanya bisa melihat file yang dibuatnya sendiri.",
+        "google": "Masuk dengan Google"
     },
     "repository": {
         "title": "Siapkan repositori datamu",
@@ -34,7 +39,10 @@
         "never": "Belum disinkronkan",
         "syncNow": "Sinkronkan sekarang",
         "signOut": "Keluar",
-        "signedOut": "Sudah keluar. Data di perangkat ini tetap seperti semula."
+        "signedOut": "Sudah keluar. Data di perangkat ini tetap seperti semula.",
+        "storage": "Disimpan di",
+        "googleValue": "Google Drive, folder {name}",
+        "folder": "Folder {name}"
     },
     "status": {
         "idle": "Tersinkron",
@@ -44,7 +52,8 @@
         "needsChoice": "Perlu pilihanmu",
         "error": "Sinkronisasi gagal",
         "signedOut": "Belum masuk",
-        "needsRepository": "Pilih repositori"
+        "needsRepository": "Pilih repositori",
+        "conflicts": "Tinjau perubahan"
     },
     "error": {
         "rateLimit": "GitHub membatasi permintaan. Sinkronisasi akan berfungsi lagi dalam beberapa menit.",
@@ -55,7 +64,10 @@
         "other": "Terjadi masalah. Tidak ada yang diubah.",
         "reauth": "Sesi masukmu berakhir. Masuk lagi untuk melanjutkan sinkronisasi.",
         "forbidden": "GitHub menolak akses ke repositori. Pastikan Gamerdex Sync punya akses Read and write ke Contents, lalu sinkronkan lagi.",
-        "httpStatus": "GitHub menjawab {status}."
+        "httpStatus": "GitHub menjawab {status}.",
+        "notFoundGoogle": "File atau folder di Google Drive tidak ditemukan. Sinkronkan lagi.",
+        "forbiddenGoogle": "Google menolak akses ke Drive. Masuk lagi dan izinkan akses ke file yang dibuat Gamerdex.",
+        "httpStatusGoogle": "Google menjawab {status}."
     },
     "choice": {
         "title": "Perangkat ini dan cloud sama-sama punya data",
@@ -87,5 +99,122 @@
         "missing": "GitHub tidak mengirim kode masuk. Mulai lagi dari Pengaturan.",
         "failed": "Proses masuk tidak bisa diselesaikan. Coba lagi nanti."
     },
-    "chiefCount": "{count, plural, other {{amount} Chief}}"
+    "chiefCount": "{count, plural, other {{amount} Chief}}",
+    "provider": {
+        "github": {
+            "name": "GitHub",
+            "tile": "Repositori privat milikmu dengan nama {name}.",
+            "badge": "Untuk developer"
+        },
+        "google": {
+            "name": "Google Drive",
+            "tile": "Folder Gamerdex yang terlihat di Drive-mu. Gamerdex hanya bisa melihat file yang dibuatnya sendiri.",
+            "badge": "Disarankan"
+        }
+    },
+    "connect": {
+        "title": "Sinkronkan antar perangkat",
+        "pill": "Belum terhubung",
+        "intro": "Jaga Chief-mu tetap sama di komputer dan ponselmu. Sinkronisasi bersifat opsional dan gratis. Pilih tempat menyimpan salinannya.",
+        "pickerLabel": "Tempat menyimpan salinan",
+        "panelTitle": "Hubungkan {provider}",
+        "another": "Kamu bisa memilih penyedia lain sebelum masuk.",
+        "firstSync": "Jika kedua sisi sudah punya data, pilih yang dipertahankan pada sinkronisasi pertama. Tidak ada yang diganti sebelum kamu memutuskan.",
+        "google": {
+            "step1": "Masuk dengan Google di jendela ini.",
+            "step2": "Izinkan akses ke file yang dibuat Gamerdex. Aplikasi tidak bisa melihat file lainmu.",
+            "button": "Hubungkan Google Drive"
+        },
+        "github": {
+            "step1": "Buat repositori privat kosong bernama {name}. Centang Add a README file.",
+            "step2": "Masuk dengan GitHub, lalu beri Gamerdex Sync akses ke repositori itu saja.",
+            "button": "Hubungkan GitHub"
+        }
+    },
+    "how": {
+        "title": "Cara kerja sinkronisasi",
+        "one": "Chief-mu disimpan sebagai satu file di penyimpananmu sendiri, ditambah file kecil untuk daftar perangkat.",
+        "two": "Gamerdex tidak punya server yang menyimpan datamu. Browsermu terhubung langsung ke penyimpananmu.",
+        "three": "Level digabung per entri dan memakai level yang lebih tinggi. Nama, catatan, dan pengaturan memakai perubahan yang lebih baru.",
+        "four": "Setiap perangkat menyimpan Chief yang dibukanya sendiri. Sinkronisasi tidak pernah menggantinya.",
+        "five": "Putuskan kapan saja. Chief-mu tetap ada di semua perangkat."
+    },
+    "banner": {
+        "title": "{count, plural, other {{amount} perubahan perlu keputusanmu}}",
+        "body": "Dua perangkat mengubah nilai yang sama. Nilai dari cloud dipertahankan sampai kamu memutuskan.",
+        "review": "Tinjau",
+        "waiting": "Sinkronisasi pertama menunggu pilihanmu.",
+        "choose": "Pilih"
+    },
+    "chiefs": {
+        "title": "Chief",
+        "thisDevice": "Perangkat ini",
+        "cloud": "Cloud, sinkronisasi terakhir",
+        "notInCloud": "Belum ada di cloud",
+        "upload": "Unggah sekarang",
+        "review": "Tinjau",
+        "note": "Menghapus Chief akan menghapusnya dari file sinkronisasi pada sinkronisasi berikutnya.",
+        "status": {
+            "synced": "Tersinkron",
+            "changedHere": "Diubah di sini",
+            "conflict": "Konflik",
+            "newHere": "Baru di sini"
+        }
+    },
+    "activity": {
+        "title": "Aktivitas sinkronisasi terbaru",
+        "empty": "Belum ada yang disinkronkan.",
+        "connected": "{provider} terhubung di browser ini.",
+        "uploaded": "Perubahan dari perangkat ini diunggah.",
+        "downloaded": "Perubahan dari cloud diunduh.",
+        "merged": "Perubahan dari kedua sisi digabung.",
+        "conflicts": "{count, plural, other {{amount} perubahan perlu keputusanmu.}}",
+        "failed": "Sinkronisasi gagal."
+    },
+    "settings": {
+        "title": "Pengaturan sinkronisasi",
+        "auto": "Sinkronkan otomatis",
+        "autoHint": "Menyinkronkan saat tracker dibuka dan beberapa detik setelah setiap perubahan.",
+        "focus": "Cek perubahan saat aku kembali ke tab",
+        "focusHint": "Mengambil data cloud yang lebih baru saat kamu kembali ke tracker.",
+        "metered": "Tunggu aku di koneksi berbayar",
+        "meteredHint": "Melewati sinkronisasi otomatis saat browser melaporkan koneksi hemat data. Sinkronkan sekarang tetap berfungsi."
+    },
+    "lives": {
+        "title": "Tempat datamu disimpan",
+        "storage": "Penyimpanan",
+        "folder": "Folder",
+        "dataFile": "File data",
+        "metaFile": "File meta",
+        "size": "Ukuran",
+        "kb": "{amount} KB",
+        "note": "File data memakai format yang sama dengan file cadangan. File meta berisi daftar perangkat dan tidak berisi data game. Data masukmu tidak pernah ada di kedua file.",
+        "googleNote": "Folder Gamerdex terlihat di Drive-mu. Gamerdex hanya bisa membuka file yang dibuatnya sendiri.",
+        "githubNote": "Jaga agar repositori tetap privat. Siapa pun yang bisa membukanya bisa membaca datamu."
+    },
+    "device": {
+        "title": "Perangkat ini",
+        "name": "Nama perangkat",
+        "nameHint": "File sinkronisasi menampilkan nama ini untuk perangkat ini. Mengganti nama akan memperbarui file meta pada sinkronisasi berikutnya.",
+        "openChief": "Chief yang dibuka",
+        "noChief": "Tidak ada",
+        "login": "Akun sinkronisasi",
+        "loginValue": "Hanya di perangkat ini",
+        "loginHint": "Chief yang dibuka dipilih di setiap perangkat, dan sinkronisasi tidak pernah mengubahnya. Sesi masukmu tetap di perangkat ini. Sesi itu tidak ada di data tersimpan, file cadangan, atau file sinkronisasi."
+    },
+    "disconnect": {
+        "title": "Putuskan",
+        "body": "Menghentikan sinkronisasi di browser ini. Chief-mu tetap ada di perangkat ini dan di cloud. Perangkat lain tetap menyinkronkan.",
+        "button": "Putuskan {provider}",
+        "googleHint": "Untuk menghapus salinan cloud sendiri, putuskan dulu, lalu hapus folder Gamerdex di Google Drive-mu.",
+        "githubHint": "Untuk menghapus salinan cloud sendiri, putuskan dulu, lalu hapus folder Gamerdex di repositorimu."
+    },
+    "first": {
+        "thisDevice": "Perangkat ini",
+        "cloud": "Cloud",
+        "recommended": "Disarankan",
+        "later": "Putuskan nanti",
+        "apply": "Terapkan pilihan",
+        "optionsLabel": "Yang dipertahankan"
+    }
 }

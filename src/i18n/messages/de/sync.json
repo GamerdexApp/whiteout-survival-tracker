@@ -1,14 +1,19 @@
 {
     "tab": {
         "title": "Cloud-Sync",
-        "description": "Speichere deine Häuptlinge in einem privaten GitHub-Repository und teile sie zwischen deinen Geräten."
+        "description": "Speichere deine Häuptlinge in einem privaten GitHub-Repository und teile sie zwischen deinen Geräten.",
+        "descriptionGoogle": "Speichere deine Häuptlinge in deinem Google Drive und teile sie zwischen deinen Geräten."
     },
     "unavailable": "Sync ist in dieser Version nicht verfügbar.",
     "privacy": "Deine Daten landen in einem privaten Repository in deinem eigenen GitHub-Konto. Gamerdex hat keinen Server, der sie speichert, und die App kommt nur an das eine Repository, das du auswählst.",
     "signedOut": {
         "title": "Anmelden",
         "body": "Melde dich mit GitHub an und wähle dann das Repository, das deine Daten enthält.",
-        "button": "Mit GitHub anmelden"
+        "button": "Mit GitHub anmelden",
+        "choose": "Wähle, wo deine Daten liegen sollen. Sie bleiben in deinem eigenen Konto, und Gamerdex hat keinen Server, der sie speichert.",
+        "githubHint": "Ein privates Repository namens {name} in deinem GitHub-Konto.",
+        "googleHint": "Ein Ordner namens {name} in deinem Google Drive. Gamerdex sieht nur die Dateien, die es selbst erstellt.",
+        "google": "Mit Google anmelden"
     },
     "repository": {
         "title": "Daten-Repository einrichten",
@@ -34,7 +39,10 @@
         "never": "Noch nicht synchronisiert",
         "syncNow": "Jetzt synchronisieren",
         "signOut": "Abmelden",
-        "signedOut": "Abgemeldet. Die Daten auf diesem Gerät bleiben unverändert."
+        "signedOut": "Abgemeldet. Die Daten auf diesem Gerät bleiben unverändert.",
+        "storage": "Gespeichert in",
+        "googleValue": "Google Drive, Ordner {name}",
+        "folder": "Ordner {name}"
     },
     "status": {
         "idle": "Synchronisiert",
@@ -44,7 +52,8 @@
         "needsChoice": "Auswahl nötig",
         "error": "Sync fehlgeschlagen",
         "signedOut": "Nicht angemeldet",
-        "needsRepository": "Repository wählen"
+        "needsRepository": "Repository wählen",
+        "conflicts": "Änderungen prüfen"
     },
     "error": {
         "rateLimit": "GitHub begrenzt die Anfragen. Der Sync funktioniert in ein paar Minuten wieder.",
@@ -55,7 +64,10 @@
         "other": "Etwas ist schiefgelaufen. Es wurde nichts geändert.",
         "reauth": "Deine Anmeldung ist abgelaufen. Melde dich erneut an, um weiter zu synchronisieren.",
         "forbidden": "GitHub hat den Zugriff auf das Repository verweigert. Prüfe, ob Gamerdex Sync Read and write Zugriff auf Contents hat, und synchronisiere dann erneut.",
-        "httpStatus": "GitHub hat mit {status} geantwortet."
+        "httpStatus": "GitHub hat mit {status} geantwortet.",
+        "notFoundGoogle": "Eine Datei oder ein Ordner in Google Drive wurde nicht gefunden. Synchronisiere erneut.",
+        "forbiddenGoogle": "Google hat den Zugriff auf Drive verweigert. Melde dich erneut an und erlaube den Zugriff auf die Dateien, die Gamerdex erstellt.",
+        "httpStatusGoogle": "Google hat mit {status} geantwortet."
     },
     "choice": {
         "title": "Dieses Gerät und die Cloud haben beide Daten",
@@ -87,5 +99,122 @@
         "missing": "GitHub hat keinen Anmeldecode gesendet. Starte noch einmal in den Einstellungen.",
         "failed": "Die Anmeldung konnte nicht abgeschlossen werden. Versuche es später erneut."
     },
-    "chiefCount": "{count, plural, one {{amount} Häuptling} other {{amount} Häuptlinge}}"
+    "chiefCount": "{count, plural, one {{amount} Häuptling} other {{amount} Häuptlinge}}",
+    "provider": {
+        "github": {
+            "name": "GitHub",
+            "tile": "Ein privates Repository namens {name}, das dir gehört.",
+            "badge": "Für Entwickler"
+        },
+        "google": {
+            "name": "Google Drive",
+            "tile": "Ein sichtbarer Gamerdex-Ordner in deinem Drive. Gamerdex sieht nur die Dateien, die es selbst erstellt.",
+            "badge": "Empfohlen"
+        }
+    },
+    "connect": {
+        "title": "Auf allen Geräten synchronisieren",
+        "pill": "Nicht verbunden",
+        "intro": "Halte deine Häuptlinge auf Computer und Handy gleich. Sync ist optional und kostenlos. Wähle, wo die Kopie liegt.",
+        "pickerLabel": "Wo die Kopie liegen soll",
+        "panelTitle": "{provider} verbinden",
+        "another": "Du kannst vor der Anmeldung einen anderen Anbieter wählen.",
+        "firstSync": "Wähle beim ersten Sync, was behalten wird, falls beide Seiten schon Daten haben. Nichts wird ersetzt, bevor du dich entscheidest.",
+        "google": {
+            "step1": "Melde dich in diesem Fenster mit Google an.",
+            "step2": "Erlaube den Zugriff auf die Dateien, die Gamerdex erstellt. Die App kann deine anderen Dateien nicht sehen.",
+            "button": "Google Drive verbinden"
+        },
+        "github": {
+            "step1": "Erstelle ein leeres privates Repository namens {name}. Setze den Haken bei Add a README file.",
+            "step2": "Melde dich mit GitHub an und gib Gamerdex Sync dann Zugriff nur auf dieses Repository.",
+            "button": "GitHub verbinden"
+        }
+    },
+    "how": {
+        "title": "So funktioniert Sync",
+        "one": "Deine Häuptlinge werden als eine Datei in deinem eigenen Speicher gesichert, dazu eine kleine Datei mit der Geräteliste.",
+        "two": "Gamerdex hat keinen Server, der deine Daten speichert. Dein Browser spricht direkt mit deinem Speicher.",
+        "three": "Stufen werden pro Eintrag zusammengeführt, die höhere Stufe gewinnt. Namen, Notizen und Einstellungen übernehmen die neuere Änderung.",
+        "four": "Jedes Gerät behält seinen eigenen geöffneten Häuptling. Sync wechselt ihn nie.",
+        "five": "Trenne die Verbindung jederzeit. Deine Häuptlinge bleiben auf jedem Gerät."
+    },
+    "banner": {
+        "title": "{count, plural, one {{amount} Änderung braucht eine Entscheidung} other {{amount} Änderungen brauchen eine Entscheidung}}",
+        "body": "Zwei Geräte haben denselben Wert geändert. Der Cloud-Wert bleibt, bis du dich entscheidest.",
+        "review": "Prüfen",
+        "waiting": "Der erste Sync wartet auf deine Auswahl.",
+        "choose": "Wählen"
+    },
+    "chiefs": {
+        "title": "Häuptlinge",
+        "thisDevice": "Dieses Gerät",
+        "cloud": "Cloud, letzter Sync",
+        "notInCloud": "Noch nicht in der Cloud",
+        "upload": "Jetzt hochladen",
+        "review": "Prüfen",
+        "note": "Das Löschen eines Häuptlings entfernt ihn beim nächsten Sync aus der Sync-Datei.",
+        "status": {
+            "synced": "Synchronisiert",
+            "changedHere": "Hier geändert",
+            "conflict": "Konflikt",
+            "newHere": "Neu hier"
+        }
+    },
+    "activity": {
+        "title": "Letzte Sync-Aktivität",
+        "empty": "Noch nichts synchronisiert.",
+        "connected": "{provider} in diesem Browser verbunden.",
+        "uploaded": "Änderungen von diesem Gerät hochgeladen.",
+        "downloaded": "Änderungen aus der Cloud heruntergeladen.",
+        "merged": "Änderungen beider Seiten zusammengeführt.",
+        "conflicts": "{count, plural, one {{amount} Änderung braucht eine Entscheidung.} other {{amount} Änderungen brauchen eine Entscheidung.}}",
+        "failed": "Der Sync ist fehlgeschlagen."
+    },
+    "settings": {
+        "title": "Sync-Einstellungen",
+        "auto": "Automatisch synchronisieren",
+        "autoHint": "Synchronisiert beim Öffnen des Trackers und ein paar Sekunden nach jeder Änderung.",
+        "focus": "Auf Änderungen prüfen, wenn ich zum Tab zurückkehre",
+        "focusHint": "Holt neuere Cloud-Daten, wenn du zum Tracker zurückwechselst.",
+        "metered": "Bei getakteter Verbindung auf mich warten",
+        "meteredHint": "Überspringt automatische Syncs, solange der Browser eine Datensparverbindung meldet. Jetzt synchronisieren funktioniert weiterhin."
+    },
+    "lives": {
+        "title": "Wo deine Daten liegen",
+        "storage": "Speicher",
+        "folder": "Ordner",
+        "dataFile": "Datendatei",
+        "metaFile": "Meta-Datei",
+        "size": "Größe",
+        "kb": "{amount} KB",
+        "note": "Die Datendatei hat dasselbe Format wie die Backup-Datei. Die Meta-Datei enthält die Geräteliste und keine Spieldaten. Deine Anmeldung steht in keiner der beiden Dateien.",
+        "googleNote": "Der Gamerdex-Ordner ist in deinem Drive sichtbar. Gamerdex kann nur die Dateien öffnen, die es selbst erstellt hat.",
+        "githubNote": "Halte das Repository privat. Jeder, der es öffnen kann, kann deine Daten lesen."
+    },
+    "device": {
+        "title": "Dieses Gerät",
+        "name": "Gerätename",
+        "nameHint": "Die Sync-Dateien zeigen diesen Namen für dieses Gerät. Beim Umbenennen wird die Meta-Datei beim nächsten Sync aktualisiert.",
+        "openChief": "Geöffneter Häuptling",
+        "noChief": "Keiner",
+        "login": "Sync-Anmeldung",
+        "loginValue": "Nur auf diesem Gerät",
+        "loginHint": "Der geöffnete Häuptling wird auf jedem Gerät einzeln gewählt, und Sync ändert ihn nie. Deine Anmeldung bleibt auf diesem Gerät. Sie steht nie in den gespeicherten Daten, der Backup-Datei oder den Sync-Dateien."
+    },
+    "disconnect": {
+        "title": "Verbindung trennen",
+        "body": "Beendet den Sync in diesem Browser. Deine Häuptlinge bleiben auf diesem Gerät und in der Cloud. Andere Geräte synchronisieren weiter.",
+        "button": "{provider} trennen",
+        "googleHint": "Um die Cloud-Kopie selbst zu löschen, trenne die Verbindung und lösche dann den Gamerdex-Ordner in deinem Google Drive.",
+        "githubHint": "Um die Cloud-Kopie selbst zu löschen, trenne die Verbindung und lösche dann den Gamerdex-Ordner in deinem Repository."
+    },
+    "first": {
+        "thisDevice": "Dieses Gerät",
+        "cloud": "Cloud",
+        "recommended": "Empfohlen",
+        "later": "Später entscheiden",
+        "apply": "Auswahl anwenden",
+        "optionsLabel": "Was behalten"
+    }
 }

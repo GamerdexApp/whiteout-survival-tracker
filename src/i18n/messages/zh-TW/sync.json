@@ -1,14 +1,19 @@
 {
     "tab": {
         "title": "雲端同步",
-        "description": "將你的領主存放在私人 GitHub 儲存庫中，並在多部裝置之間共用。"
+        "description": "將你的領主存放在私人 GitHub 儲存庫中，並在多部裝置之間共用。",
+        "descriptionGoogle": "將你的領主存放在你的 Google Drive 中，並在多部裝置之間共用。"
     },
     "unavailable": "這個版本不支援同步。",
     "privacy": "你的資料會傳送到你自己 GitHub 帳號下的私人儲存庫。Gamerdex 沒有伺服器儲存這些資料，應用程式也只能存取你選擇的那一個儲存庫。",
     "signedOut": {
         "title": "登入",
         "body": "使用 GitHub 登入，然後選擇存放你資料的儲存庫。",
-        "button": "使用 GitHub 登入"
+        "button": "使用 GitHub 登入",
+        "choose": "選擇資料的存放位置。資料存放在你自己的帳號中，Gamerdex 沒有伺服器儲存這些資料。",
+        "githubHint": "你的 GitHub 帳號下名為 {name} 的私人儲存庫。",
+        "googleHint": "你的 Google Drive 中名為 {name} 的資料夾。Gamerdex 只能看到它自己建立的檔案。",
+        "google": "使用 Google 登入"
     },
     "repository": {
         "title": "設定你的資料儲存庫",
@@ -34,7 +39,10 @@
         "never": "尚未同步",
         "syncNow": "立即同步",
         "signOut": "登出",
-        "signedOut": "已登出。這部裝置上的資料維持不變。"
+        "signedOut": "已登出。這部裝置上的資料維持不變。",
+        "storage": "儲存位置",
+        "googleValue": "Google Drive，資料夾 {name}",
+        "folder": "資料夾 {name}"
     },
     "status": {
         "idle": "已同步",
@@ -44,7 +52,8 @@
         "needsChoice": "需要你選擇",
         "error": "同步失敗",
         "signedOut": "未登入",
-        "needsRepository": "選擇儲存庫"
+        "needsRepository": "選擇儲存庫",
+        "conflicts": "查看變更"
     },
     "error": {
         "rateLimit": "GitHub 正在限制請求。幾分鐘後同步就會恢復。",
@@ -55,7 +64,10 @@
         "other": "發生問題。沒有變更任何內容。",
         "reauth": "你的登入已失效。請重新登入以繼續同步。",
         "forbidden": "GitHub 拒絕存取該儲存庫。請確認 Gamerdex Sync 擁有「Contents」的「Read and write」權限，然後再次同步。",
-        "httpStatus": "GitHub 回應了 {status}。"
+        "httpStatus": "GitHub 回應了 {status}。",
+        "notFoundGoogle": "找不到 Google Drive 中的檔案或資料夾。請再次同步。",
+        "forbiddenGoogle": "Google 拒絕存取 Drive。請重新登入，並允許存取 Gamerdex 建立的檔案。",
+        "httpStatusGoogle": "Google 回應了 {status}。"
     },
     "choice": {
         "title": "這部裝置和雲端都有資料",
@@ -87,5 +99,122 @@
         "missing": "GitHub 沒有傳回登入代碼。請從設定重新開始。",
         "failed": "無法完成登入。請稍後再試。"
     },
-    "chiefCount": "{count, plural, other {{amount} 位領主}}"
+    "chiefCount": "{count, plural, other {{amount} 位領主}}",
+    "provider": {
+        "github": {
+            "name": "GitHub",
+            "tile": "你擁有的私人儲存庫，名為 {name}。",
+            "badge": "適合開發人員"
+        },
+        "google": {
+            "name": "Google Drive",
+            "tile": "你的 Drive 中看得到的 Gamerdex 資料夾。Gamerdex 只能看到它自己建立的檔案。",
+            "badge": "推薦"
+        }
+    },
+    "connect": {
+        "title": "跨裝置同步",
+        "pill": "未連線",
+        "intro": "讓你的領主在電腦和手機上保持一致。同步是選用的，而且免費。請選擇副本的存放位置。",
+        "pickerLabel": "副本的存放位置",
+        "panelTitle": "連線到 {provider}",
+        "another": "登入之前，你可以選擇其他服務。",
+        "firstSync": "如果兩邊都已有資料，請選擇第一次同步時要保留什麼。在你決定之前不會取代任何內容。",
+        "google": {
+            "step1": "在這個視窗中使用 Google 登入。",
+            "step2": "允許存取 Gamerdex 建立的檔案。應用程式看不到你的其他檔案。",
+            "button": "連線 Google Drive"
+        },
+        "github": {
+            "step1": "建立一個名為 {name} 的空白私人儲存庫。勾選「Add a README file」。",
+            "step2": "使用 GitHub 登入，然後只授予 Gamerdex Sync 存取該儲存庫的權限。",
+            "button": "連線 GitHub"
+        }
+    },
+    "how": {
+        "title": "同步的運作方式",
+        "one": "你的領主會存成你自己儲存空間中的一個檔案，另外還有一個記錄裝置清單的小檔案。",
+        "two": "Gamerdex 沒有伺服器儲存你的資料。你的瀏覽器會直接與你的儲存空間連線。",
+        "three": "等級會依項目合併，並取較高的等級。名稱、備註和設定採用較新的變更。",
+        "four": "每部裝置各自保留開啟中的領主。同步不會切換它。",
+        "five": "隨時都能中斷連線。你的領主會保留在每部裝置上。"
+    },
+    "banner": {
+        "title": "{count, plural, other {有 {amount} 項變更需要你決定}}",
+        "body": "兩部裝置修改了同一個值。在你決定之前會保留雲端的值。",
+        "review": "查看",
+        "waiting": "第一次同步正在等待你的選擇。",
+        "choose": "選擇"
+    },
+    "chiefs": {
+        "title": "領主",
+        "thisDevice": "這部裝置",
+        "cloud": "雲端，上次同步",
+        "notInCloud": "雲端還沒有",
+        "upload": "立即上傳",
+        "review": "查看",
+        "note": "刪除領主後，下次同步時會將它從同步檔案中移除。",
+        "status": {
+            "synced": "已同步",
+            "changedHere": "此處已變更",
+            "conflict": "衝突",
+            "newHere": "此處新增"
+        }
+    },
+    "activity": {
+        "title": "最近的同步活動",
+        "empty": "尚未同步任何內容。",
+        "connected": "已在這個瀏覽器上連線 {provider}。",
+        "uploaded": "已上傳這部裝置的變更。",
+        "downloaded": "已下載雲端的變更。",
+        "merged": "已合併兩邊的變更。",
+        "conflicts": "{count, plural, other {有 {amount} 項變更需要你決定。}}",
+        "failed": "同步失敗。"
+    },
+    "settings": {
+        "title": "同步設定",
+        "auto": "自動同步",
+        "autoHint": "開啟追蹤器時，以及每次變更幾秒後進行同步。",
+        "focus": "回到這個分頁時檢查變更",
+        "focusHint": "切換回追蹤器時取得較新的雲端資料。",
+        "metered": "在計量付費的網路上等我確認",
+        "meteredHint": "瀏覽器回報為節省流量連線時，略過自動同步。「立即同步」仍然可用。"
+    },
+    "lives": {
+        "title": "你的資料存放在哪裡",
+        "storage": "儲存空間",
+        "folder": "資料夾",
+        "dataFile": "資料檔案",
+        "metaFile": "中繼資料檔案",
+        "size": "大小",
+        "kb": "{amount} KB",
+        "note": "資料檔案的格式與備份檔案相同。中繼資料檔案記錄裝置清單，不含遊戲資料。你的登入資訊不會出現在這兩個檔案中。",
+        "googleNote": "Gamerdex 資料夾在你的 Drive 中看得到。Gamerdex 只能開啟它自己建立的檔案。",
+        "githubNote": "請保持儲存庫為私人。任何能開啟它的人都能讀取你的資料。"
+    },
+    "device": {
+        "title": "這部裝置",
+        "name": "裝置名稱",
+        "nameHint": "同步檔案會用這個名稱顯示這部裝置。重新命名後，下次同步時會更新中繼資料檔案。",
+        "openChief": "開啟中的領主",
+        "noChief": "無",
+        "login": "同步登入",
+        "loginValue": "僅限這部裝置",
+        "loginHint": "開啟中的領主由每部裝置各自決定，同步不會變更它。你的登入資訊只保留在這部裝置上，不會出現在已儲存的資料、備份檔案或同步檔案中。"
+    },
+    "disconnect": {
+        "title": "中斷連線",
+        "body": "停止在這個瀏覽器上同步。你的領主會保留在這部裝置和雲端。其他裝置會繼續同步。",
+        "button": "中斷 {provider} 連線",
+        "googleHint": "如要自行刪除雲端副本，請先中斷連線，然後刪除你 Google Drive 中的 Gamerdex 資料夾。",
+        "githubHint": "如要自行刪除雲端副本，請先中斷連線，然後刪除你儲存庫中的 Gamerdex 資料夾。"
+    },
+    "first": {
+        "thisDevice": "這部裝置",
+        "cloud": "雲端",
+        "recommended": "推薦",
+        "later": "稍後決定",
+        "apply": "套用選擇",
+        "optionsLabel": "保留什麼"
+    }
 }

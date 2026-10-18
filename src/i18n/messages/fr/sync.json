@@ -1,14 +1,19 @@
 {
     "tab": {
         "title": "Synchro cloud",
-        "description": "Conservez vos chefs dans un dépôt GitHub privé et partagez-les entre vos appareils."
+        "description": "Conservez vos chefs dans un dépôt GitHub privé et partagez-les entre vos appareils.",
+        "descriptionGoogle": "Conservez vos chefs dans votre Google Drive et partagez-les entre vos appareils."
     },
     "unavailable": "La synchronisation n'est pas disponible dans cette version.",
     "privacy": "Vos données vont dans un dépôt privé de votre propre compte GitHub. Gamerdex n'a aucun serveur qui les stocke, et l'application ne peut accéder qu'au dépôt que vous choisissez.",
     "signedOut": {
         "title": "Connexion",
         "body": "Connectez-vous avec GitHub, puis choisissez le dépôt qui contient vos données.",
-        "button": "Se connecter avec GitHub"
+        "button": "Se connecter avec GitHub",
+        "choose": "Choisissez où conserver vos données. Elles restent dans votre propre compte, et Gamerdex n'a aucun serveur qui les stocke.",
+        "githubHint": "Un dépôt privé nommé {name} sur votre compte GitHub.",
+        "googleHint": "Un dossier nommé {name} dans votre Google Drive. Gamerdex ne peut voir que les fichiers qu'il crée.",
+        "google": "Se connecter avec Google"
     },
     "repository": {
         "title": "Configurez votre dépôt de données",
@@ -34,7 +39,10 @@
         "never": "Pas encore synchronisé",
         "syncNow": "Synchroniser",
         "signOut": "Se déconnecter",
-        "signedOut": "Déconnecté. Les données de cet appareil restent telles quelles."
+        "signedOut": "Déconnecté. Les données de cet appareil restent telles quelles.",
+        "storage": "Stocké dans",
+        "googleValue": "Google Drive, dossier {name}",
+        "folder": "Dossier {name}"
     },
     "status": {
         "idle": "Synchronisé",
@@ -44,7 +52,8 @@
         "needsChoice": "Votre choix requis",
         "error": "Échec de la synchro",
         "signedOut": "Non connecté",
-        "needsRepository": "Choisissez un dépôt"
+        "needsRepository": "Choisissez un dépôt",
+        "conflicts": "Vérifier les modifications"
     },
     "error": {
         "rateLimit": "GitHub limite les requêtes. La synchronisation fonctionnera de nouveau dans quelques minutes.",
@@ -55,7 +64,10 @@
         "other": "Une erreur s'est produite. Rien n'a été modifié.",
         "reauth": "Votre connexion a expiré. Reconnectez-vous pour continuer la synchronisation.",
         "forbidden": "GitHub a refusé l'accès au dépôt. Vérifiez que Gamerdex Sync a l'accès Read and write à Contents, puis synchronisez à nouveau.",
-        "httpStatus": "GitHub a répondu {status}."
+        "httpStatus": "GitHub a répondu {status}.",
+        "notFoundGoogle": "Un fichier ou un dossier de Google Drive est introuvable. Synchronisez à nouveau.",
+        "forbiddenGoogle": "Google a refusé l'accès à Drive. Reconnectez-vous et autorisez l'accès aux fichiers que Gamerdex crée.",
+        "httpStatusGoogle": "Google a répondu {status}."
     },
     "choice": {
         "title": "Cet appareil et le cloud contiennent des données",
@@ -87,5 +99,122 @@
         "missing": "GitHub n'a envoyé aucun code de connexion. Recommencez depuis les paramètres.",
         "failed": "La connexion n'a pas pu être terminée. Réessayez plus tard."
     },
-    "chiefCount": "{count, plural, one {{amount} chef} other {{amount} chefs}}"
+    "chiefCount": "{count, plural, one {{amount} chef} other {{amount} chefs}}",
+    "provider": {
+        "github": {
+            "name": "GitHub",
+            "tile": "Un dépôt privé qui vous appartient, nommé {name}.",
+            "badge": "Pour les développeurs"
+        },
+        "google": {
+            "name": "Google Drive",
+            "tile": "Un dossier Gamerdex visible dans votre Drive. Gamerdex ne voit que les fichiers qu'il crée.",
+            "badge": "Recommandé"
+        }
+    },
+    "connect": {
+        "title": "Synchronisez entre vos appareils",
+        "pill": "Non connecté",
+        "intro": "Gardez vos chefs identiques sur votre ordinateur et votre téléphone. La synchronisation est facultative et gratuite. Choisissez où se trouve la copie.",
+        "pickerLabel": "Où conserver la copie",
+        "panelTitle": "Connecter {provider}",
+        "another": "Vous pouvez choisir un autre fournisseur avant de vous connecter.",
+        "firstSync": "Choisissez quoi garder à la première synchro si les deux côtés ont déjà des données. Rien n'est remplacé avant votre décision.",
+        "google": {
+            "step1": "Connectez-vous avec Google dans cette fenêtre.",
+            "step2": "Autorisez l'accès aux fichiers que Gamerdex crée. L'application ne voit pas vos autres fichiers.",
+            "button": "Connecter Google Drive"
+        },
+        "github": {
+            "step1": "Créez un dépôt privé vide nommé {name}. Cochez Add a README file.",
+            "step2": "Connectez-vous avec GitHub, puis donnez à Gamerdex Sync l'accès à ce dépôt uniquement.",
+            "button": "Connecter GitHub"
+        }
+    },
+    "how": {
+        "title": "Comment fonctionne la synchro",
+        "one": "Vos chefs sont enregistrés dans un seul fichier de votre propre stockage, plus un petit fichier pour la liste des appareils.",
+        "two": "Gamerdex n'a aucun serveur qui stocke vos données. Votre navigateur parle directement à votre stockage.",
+        "three": "Les niveaux sont fusionnés par entrée et le plus élevé l'emporte. Les noms, notes et réglages gardent la modification la plus récente.",
+        "four": "Chaque appareil garde son propre chef ouvert. La synchro ne le change jamais.",
+        "five": "Déconnectez-vous à tout moment. Vos chefs restent sur chaque appareil."
+    },
+    "banner": {
+        "title": "{count, plural, one {{amount} modification attend une décision} other {{amount} modifications attendent une décision}}",
+        "body": "Deux appareils ont modifié la même valeur. La valeur du cloud est gardée jusqu'à votre décision.",
+        "review": "Vérifier",
+        "waiting": "La première synchro attend votre choix.",
+        "choose": "Choisir"
+    },
+    "chiefs": {
+        "title": "Chefs",
+        "thisDevice": "Cet appareil",
+        "cloud": "Cloud, dernière synchro",
+        "notInCloud": "Pas encore dans le cloud",
+        "upload": "Envoyer maintenant",
+        "review": "Vérifier",
+        "note": "Supprimer un chef le retire du fichier de synchro à la prochaine synchro.",
+        "status": {
+            "synced": "Synchronisé",
+            "changedHere": "Modifié ici",
+            "conflict": "Conflit",
+            "newHere": "Nouveau ici"
+        }
+    },
+    "activity": {
+        "title": "Activité récente de synchro",
+        "empty": "Rien n'a encore été synchronisé.",
+        "connected": "{provider} connecté sur ce navigateur.",
+        "uploaded": "Modifications envoyées depuis cet appareil.",
+        "downloaded": "Modifications téléchargées depuis le cloud.",
+        "merged": "Modifications des deux côtés fusionnées.",
+        "conflicts": "{count, plural, one {{amount} modification attend une décision.} other {{amount} modifications attendent une décision.}}",
+        "failed": "La synchro a échoué."
+    },
+    "settings": {
+        "title": "Réglages de synchro",
+        "auto": "Synchroniser automatiquement",
+        "autoHint": "Synchronise à l'ouverture du tracker et quelques secondes après chaque modification.",
+        "focus": "Vérifier les changements à mon retour sur l'onglet",
+        "focusHint": "Récupère les données du cloud plus récentes quand vous revenez sur le tracker.",
+        "metered": "M'attendre sur une connexion limitée",
+        "meteredHint": "Ignore les synchros automatiques tant que le navigateur signale un mode économiseur de données. Synchroniser reste disponible."
+    },
+    "lives": {
+        "title": "Où se trouvent vos données",
+        "storage": "Stockage",
+        "folder": "Dossier",
+        "dataFile": "Fichier de données",
+        "metaFile": "Fichier meta",
+        "size": "Taille",
+        "kb": "{amount} Ko",
+        "note": "Le fichier de données utilise le même format que le fichier de sauvegarde. Le fichier meta contient la liste des appareils et aucune donnée de jeu. Votre connexion n'est jamais dans l'un ou l'autre.",
+        "googleNote": "Le dossier Gamerdex est visible dans votre Drive. Gamerdex ne peut ouvrir que les fichiers qu'il a créés.",
+        "githubNote": "Gardez le dépôt privé. Quiconque peut l'ouvrir peut lire vos données."
+    },
+    "device": {
+        "title": "Cet appareil",
+        "name": "Nom de l'appareil",
+        "nameHint": "Les fichiers de synchro affichent ce nom pour cet appareil. Le renommer met à jour le fichier meta à la prochaine synchro.",
+        "openChief": "Chef ouvert",
+        "noChief": "Aucun",
+        "login": "Connexion de synchro",
+        "loginValue": "Sur cet appareil uniquement",
+        "loginHint": "Le chef ouvert est un choix propre à chaque appareil, et la synchro ne le change jamais. Votre connexion reste sur cet appareil. Elle n'est jamais dans les données enregistrées, le fichier de sauvegarde ou les fichiers de synchro."
+    },
+    "disconnect": {
+        "title": "Déconnexion",
+        "body": "Arrête la synchro sur ce navigateur. Vos chefs restent sur cet appareil et dans le cloud. Les autres appareils continuent de se synchroniser.",
+        "button": "Déconnecter {provider}",
+        "googleHint": "Pour supprimer vous-même la copie du cloud, déconnectez-vous, puis supprimez le dossier Gamerdex dans votre Google Drive.",
+        "githubHint": "Pour supprimer vous-même la copie du cloud, déconnectez-vous, puis supprimez le dossier Gamerdex dans votre dépôt."
+    },
+    "first": {
+        "thisDevice": "Cet appareil",
+        "cloud": "Cloud",
+        "recommended": "Recommandé",
+        "later": "Décider plus tard",
+        "apply": "Appliquer le choix",
+        "optionsLabel": "Quoi garder"
+    }
 }

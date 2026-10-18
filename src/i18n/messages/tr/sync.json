@@ -1,14 +1,19 @@
 {
     "tab": {
         "title": "Bulut senkronu",
-        "description": "Şeflerini özel bir GitHub deposunda sakla ve cihazların arasında paylaş."
+        "description": "Şeflerini özel bir GitHub deposunda sakla ve cihazların arasında paylaş.",
+        "descriptionGoogle": "Şeflerini Google Drive'ında sakla ve cihazların arasında paylaş."
     },
     "unavailable": "Senkronizasyon bu sürümde kullanılamıyor.",
     "privacy": "Verilerin kendi GitHub hesabındaki özel bir depoya gider. Gamerdex'in bunları saklayan bir sunucusu yoktur ve uygulama yalnızca senin seçtiğin tek depoya erişebilir.",
     "signedOut": {
         "title": "Giriş yap",
         "body": "GitHub ile giriş yap, sonra verilerini tutan depoyu seç.",
-        "button": "GitHub ile giriş yap"
+        "button": "GitHub ile giriş yap",
+        "choose": "Verilerini nerede tutacağını seç. Veriler kendi hesabında kalır ve Gamerdex'in bunları saklayan bir sunucusu yoktur.",
+        "githubHint": "GitHub hesabında {name} adlı özel bir depo.",
+        "googleHint": "Google Drive'ında {name} adlı bir klasör. Gamerdex yalnızca kendi oluşturduğu dosyaları görebilir.",
+        "google": "Google ile giriş yap"
     },
     "repository": {
         "title": "Veri deposunu kur",
@@ -34,7 +39,10 @@
         "never": "Henüz senkronize edilmedi",
         "syncNow": "Şimdi senkronize et",
         "signOut": "Çıkış yap",
-        "signedOut": "Çıkış yapıldı. Bu cihazdaki veriler olduğu gibi kalır."
+        "signedOut": "Çıkış yapıldı. Bu cihazdaki veriler olduğu gibi kalır.",
+        "storage": "Saklandığı yer",
+        "googleValue": "Google Drive, {name} klasörü",
+        "folder": "Klasör {name}"
     },
     "status": {
         "idle": "Senkronize",
@@ -44,7 +52,8 @@
         "needsChoice": "Seçimin gerekli",
         "error": "Senkron başarısız",
         "signedOut": "Giriş yapılmadı",
-        "needsRepository": "Depo seç"
+        "needsRepository": "Depo seç",
+        "conflicts": "Değişiklikleri incele"
     },
     "error": {
         "rateLimit": "GitHub istekleri sınırlıyor. Senkron birkaç dakika içinde tekrar çalışır.",
@@ -55,7 +64,10 @@
         "other": "Bir şeyler ters gitti. Hiçbir şey değişmedi.",
         "reauth": "Girişin sona erdi. Senkronu sürdürmek için tekrar giriş yap.",
         "forbidden": "GitHub depoya erişimi reddetti. Gamerdex Sync'in Contents için Read and write erişimi olduğunu kontrol et, sonra tekrar senkronize et.",
-        "httpStatus": "GitHub {status} yanıtını verdi."
+        "httpStatus": "GitHub {status} yanıtını verdi.",
+        "notFoundGoogle": "Google Drive'da bir dosya veya klasör bulunamadı. Tekrar senkronize et.",
+        "forbiddenGoogle": "Google, Drive erişimini reddetti. Tekrar giriş yap ve Gamerdex'in oluşturduğu dosyalara erişime izin ver.",
+        "httpStatusGoogle": "Google {status} yanıtını verdi."
     },
     "choice": {
         "title": "Bu cihazda ve bulutta veri var",
@@ -87,5 +99,122 @@
         "missing": "GitHub giriş kodu göndermedi. Ayarlar'dan yeniden başla.",
         "failed": "Giriş tamamlanamadı. Daha sonra tekrar dene."
     },
-    "chiefCount": "{count, plural, one {{amount} şef} other {{amount} şef}}"
+    "chiefCount": "{count, plural, one {{amount} şef} other {{amount} şef}}",
+    "provider": {
+        "github": {
+            "name": "GitHub",
+            "tile": "Sahibi senin olan, {name} adlı özel bir depo.",
+            "badge": "Geliştiriciler için"
+        },
+        "google": {
+            "name": "Google Drive",
+            "tile": "Drive'ında görünür bir Gamerdex klasörü. Gamerdex yalnızca kendi oluşturduğu dosyaları görebilir.",
+            "badge": "Önerilen"
+        }
+    },
+    "connect": {
+        "title": "Cihazlar arasında senkronize et",
+        "pill": "Bağlı değil",
+        "intro": "Şeflerini bilgisayarında ve telefonunda aynı tut. Senkron isteğe bağlı ve ücretsizdir. Kopyanın nerede duracağını seç.",
+        "pickerLabel": "Kopya nerede tutulsun",
+        "panelTitle": "Bağlan: {provider}",
+        "another": "Giriş yapmadan önce başka bir sağlayıcı seçebilirsin.",
+        "firstSync": "İki tarafta da veri varsa ilk senkronda neyi tutacağını seç. Sen karar verene kadar hiçbir şey değiştirilmez.",
+        "google": {
+            "step1": "Bu pencerede Google ile giriş yap.",
+            "step2": "Gamerdex'in oluşturduğu dosyalara erişime izin ver. Uygulama diğer dosyalarını göremez.",
+            "button": "Google Drive'a bağlan"
+        },
+        "github": {
+            "step1": "{name} adlı boş bir özel depo oluştur. Add a README file seçeneğini işaretle.",
+            "step2": "GitHub ile giriş yap, sonra Gamerdex Sync'e yalnızca o depoya erişim ver.",
+            "button": "GitHub'a bağlan"
+        }
+    },
+    "how": {
+        "title": "Senkron nasıl çalışır",
+        "one": "Şeflerin kendi depolama alanında tek bir dosya olarak, bir de cihaz listesi için küçük bir dosya olarak kaydedilir.",
+        "two": "Gamerdex'in verilerini saklayan bir sunucusu yoktur. Tarayıcın doğrudan depolama alanınla konuşur.",
+        "three": "Seviyeler kayıt başına birleştirilir ve yüksek olan alınır. İsimler, notlar ve ayarlar daha yeni değişikliği kullanır.",
+        "four": "Her cihaz kendi açık şefini tutar. Senkron onu asla değiştirmez.",
+        "five": "İstediğin zaman bağlantıyı kes. Şeflerin her cihazda kalır."
+    },
+    "banner": {
+        "title": "{count, plural, one {{amount} değişiklik karar bekliyor} other {{amount} değişiklik karar bekliyor}}",
+        "body": "İki cihaz aynı değeri değiştirdi. Sen karar verene kadar buluttaki değer tutulur.",
+        "review": "İncele",
+        "waiting": "İlk senkron seçimini bekliyor.",
+        "choose": "Seç"
+    },
+    "chiefs": {
+        "title": "Şefler",
+        "thisDevice": "Bu cihaz",
+        "cloud": "Bulut, son senkron",
+        "notInCloud": "Henüz bulutta değil",
+        "upload": "Şimdi yükle",
+        "review": "İncele",
+        "note": "Bir şefi silmek, onu sonraki senkronda senkron dosyasından kaldırır.",
+        "status": {
+            "synced": "Senkronize",
+            "changedHere": "Burada değişti",
+            "conflict": "Çakışma",
+            "newHere": "Burada yeni"
+        }
+    },
+    "activity": {
+        "title": "Son senkron etkinliği",
+        "empty": "Henüz hiçbir şey senkronize edilmedi.",
+        "connected": "Bu tarayıcıda {provider} bağlandı.",
+        "uploaded": "Bu cihazdaki değişiklikler yüklendi.",
+        "downloaded": "Buluttaki değişiklikler indirildi.",
+        "merged": "İki tarafın değişiklikleri birleştirildi.",
+        "conflicts": "{count, plural, one {{amount} değişiklik karar bekliyor.} other {{amount} değişiklik karar bekliyor.}}",
+        "failed": "Senkron başarısız oldu."
+    },
+    "settings": {
+        "title": "Senkron ayarları",
+        "auto": "Otomatik senkronize et",
+        "autoHint": "İzleyici açılırken ve her değişiklikten birkaç saniye sonra senkronize eder.",
+        "focus": "Sekmeye döndüğümde değişiklikleri kontrol et",
+        "focusHint": "İzleyiciye geri döndüğünde buluttaki daha yeni verileri çeker.",
+        "metered": "Sınırlı bağlantıda ben onaylayana kadar bekle",
+        "meteredHint": "Tarayıcı veri tasarrufu bağlantısı bildirirken otomatik senkronları atlar. Şimdi senkronize et yine çalışır."
+    },
+    "lives": {
+        "title": "Verilerin nerede duruyor",
+        "storage": "Depolama",
+        "folder": "Klasör",
+        "dataFile": "Veri dosyası",
+        "metaFile": "Meta dosyası",
+        "size": "Boyut",
+        "kb": "{amount} KB",
+        "note": "Veri dosyası yedek dosyasıyla aynı biçimi kullanır. Meta dosyası cihaz listesini tutar, oyun verisi içermez. Girişin iki dosyada da yer almaz.",
+        "googleNote": "Gamerdex klasörü Drive'ında görünür. Gamerdex yalnızca kendi oluşturduğu dosyaları açabilir.",
+        "githubNote": "Depoyu özel tut. Depoyu açabilen herkes verilerini okuyabilir."
+    },
+    "device": {
+        "title": "Bu cihaz",
+        "name": "Cihaz adı",
+        "nameHint": "Senkron dosyaları bu cihaz için bu adı gösterir. Yeniden adlandırmak meta dosyasını sonraki senkronda günceller.",
+        "openChief": "Açık şef",
+        "noChief": "Yok",
+        "login": "Senkron girişi",
+        "loginValue": "Yalnızca bu cihazda",
+        "loginHint": "Açık şef her cihazda ayrı seçilir ve senkron onu asla değiştirmez. Girişin bu cihazda kalır. Kaydedilen verilerde, yedek dosyasında ve senkron dosyalarında asla yer almaz."
+    },
+    "disconnect": {
+        "title": "Bağlantıyı kes",
+        "body": "Bu tarayıcıda senkronu durdurur. Şeflerin bu cihazda ve bulutta kalır. Diğer cihazlar senkronize etmeye devam eder.",
+        "button": "Bağlantıyı kes: {provider}",
+        "googleHint": "Buluttaki kopyayı kendin silmek için bağlantıyı kes, sonra Google Drive'ındaki Gamerdex klasörünü sil.",
+        "githubHint": "Buluttaki kopyayı kendin silmek için bağlantıyı kes, sonra depondaki Gamerdex klasörünü sil."
+    },
+    "first": {
+        "thisDevice": "Bu cihaz",
+        "cloud": "Bulut",
+        "recommended": "Önerilen",
+        "later": "Sonra karar ver",
+        "apply": "Seçimi uygula",
+        "optionsLabel": "Neyi tutacağın"
+    }
 }
