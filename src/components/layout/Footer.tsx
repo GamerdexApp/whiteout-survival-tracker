@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { APP_NAME } from "@/data/nav";
+import { GAMERDEX_URL } from "@/data/site";
 import { SectionLabel } from "@/comps/ui/SectionLabel";
 import { BrandMark } from "./BrandMark";
 
@@ -42,6 +43,12 @@ export function Footer() {
 					<Link href="/settings?tab=about" className={footerLinkClasses}>
 						{t("footer.aboutApp")}
 					</Link>
+					<a href={`${GAMERDEX_URL}/privacy`} className={footerLinkClasses}>
+						{t("footer.privacyPolicy")}
+					</a>
+					<a href={`${GAMERDEX_URL}/terms`} className={footerLinkClasses}>
+						{t("footer.termsOfService")}
+					</a>
 				</nav>
 				<div className="border-sb-line flex min-w-0 flex-col gap-1 self-start rounded-md border-[1.5px] px-3.5 py-3">
 					<span className="font-semibold">{t("footer.disclaimerTitle")}</span>

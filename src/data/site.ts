@@ -1,3 +1,5 @@
+export const GAMERDEX_URL = "https://gamerdex.app";
+
 export const SITE_URL = "https://whiteout-survival.gamerdex.app";
 
 export const SITE_DESCRIPTION =
