@@ -2,7 +2,7 @@
 
 import { ROOT_FOLDER } from "@gamerdexapp/gamerdex-sync";
 import { useTranslations } from "next-intl";
-import type { SyncProviderId } from "@/lib/sync/providers";
+import { type SyncProviderId, usesRepository } from "@/lib/sync/providers";
 import { DATA_REPOSITORY_NAME } from "@/lib/sync/repository";
 import { Button } from "@/comps/ui/Button";
 
@@ -28,7 +28,7 @@ interface ConnectPanelProps {
 
 export function ConnectPanel({ provider, pickAnother, onConnect }: ConnectPanelProps) {
 	const t = useTranslations("sync");
-	const name = provider === "google" ? ROOT_FOLDER : DATA_REPOSITORY_NAME;
+	const name = usesRepository(provider) ? DATA_REPOSITORY_NAME : ROOT_FOLDER;
 
 	return (
 		<div className="border-primary bg-tint flex flex-col gap-3 rounded-md border-[1.5px] p-4">

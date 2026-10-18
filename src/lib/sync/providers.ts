@@ -1,26 +1,53 @@
 import {
   authorizeUrl,
+  dropboxAuthorizeUrl,
+  DropboxProvider,
   GitHubProvider,
   googleAuthorizeUrl,
   GoogleDriveProvider,
+  microsoftAuthorizeUrl,
+  OneDriveProvider,
   type SyncProvider,
 } from "@gamerdexapp/gamerdex-sync";
 import type { DeviceSync } from "./device";
 
-export type SyncProviderId = "github" | "google";
+export type SyncProviderId = "github" | "google" | "dropbox" | "microsoft";
+
+type FolderProviderId = Exclude<SyncProviderId, "github">;
 
 const AUTH_URL = process.env.NEXT_PUBLIC_GAMERDEX_AUTH_URL ?? "";
-const GOOGLE_CLIENT_ID = process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID ?? "";
 
-/** The sign in service without a provider, so a value that ends in /github or /google still works. */
-const authBase = AUTH_URL.replace(/\/+$/, "").replace(/\/(github|google)$/, "");
+/** The public client IDs. A provider without one is left out of this build. */
+const CLIENT_IDS: Record<FolderProviderId, string> = {
+  google: process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID ?? "",
+  dropbox: process.env.NEXT_PUBLIC_DROPBOX_CLIENT_ID ?? "",
+  microsoft: process.env.NEXT_PUBLIC_MICROSOFT_CLIENT_ID ?? "",
+};
 
-/** The providers that this build can sign in with. Google needs its own client ID. */
+/** The sign in service without a provider, so a value that ends in a provider name still works. */
+const authBase = AUTH_URL.replace(/\/+$/, "").replace(
+  /\/(github|google|dropbox|microsoft)$/,
+  "",
+);
+
+/** The order of the picker in the design: the recommended provider first, GitHub last. */
+const PICKER_ORDER: SyncProviderId[] = [
+  "google",
+  "dropbox",
+  "microsoft",
+  "github",
+];
+
+/** The providers that this build can sign in with. */
 export const availableProviders: SyncProviderId[] = !authBase
   ? []
-  : GOOGLE_CLIENT_ID
-    ? ["github", "google"]
-    : ["github"];
+  : PICKER_ORDER.filter(
+      (provider) => provider === "github" || CLIENT_IDS[provider] !== "",
+    );
+
+/** GitHub keeps the data in a repository. The other providers keep it in a folder. */
+export const usesRepository = (provider: SyncProviderId) =>
+  provider === "github";
 
 export const authEndpoint = (provider: SyncProviderId) =>
   `${authBase}/${provider}`;
@@ -29,6 +56,12 @@ export const authEndpoint = (provider: SyncProviderId) =>
 export const providerOf = (device: DeviceSync): SyncProviderId | null =>
   device.provider ?? (device.tokens ? "github" : null);
 
+const FOLDER_SIGN_IN_URLS = {
+  google: googleAuthorizeUrl,
+  dropbox: dropboxAuthorizeUrl,
+  microsoft: microsoftAuthorizeUrl,
+};
+
 export const signInUrl = (
   provider: SyncProviderId,
   redirectUri: string,
@@ -36,7 +69,13 @@ export const signInUrl = (
 ) =>
   provider === "github"
     ? authorizeUrl(redirectUri, state)
-    : googleAuthorizeUrl(GOOGLE_CLIENT_ID, redirectUri, state);
+    : FOLDER_SIGN_IN_URLS[provider](CLIENT_IDS[provider], redirectUri, state);
+
+const FOLDER_PROVIDERS = {
+  google: GoogleDriveProvider,
+  dropbox: DropboxProvider,
+  microsoft: OneDriveProvider,
+};
 
 /** Returns null while the provider still needs a setting, such as the repository of GitHub. */
 export const createProvider = (
@@ -44,7 +83,8 @@ export const createProvider = (
   device: DeviceSync,
   getToken: () => Promise<string>,
 ): SyncProvider | null => {
-  if (provider === "google") return new GoogleDriveProvider({ getToken });
+  if (provider !== "github")
+    return new FOLDER_PROVIDERS[provider]({ getToken });
   return device.repository
     ? new GitHubProvider({ repository: device.repository, getToken })
     : null;

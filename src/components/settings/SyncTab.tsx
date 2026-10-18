@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import { usePlaythrough } from "@/lib/contexts/PlaythroughContext";
 import { type SyncErrorKind, useSync } from "@/lib/contexts/SyncContext";
 import { formatDateTime, formatNumber } from "@/lib/format";
-import { availableProviders, type SyncProviderId } from "@/lib/sync/providers";
+import { availableProviders, type SyncProviderId, usesRepository } from "@/lib/sync/providers";
 import {
 	CREATE_REPOSITORY_URL,
 	DATA_REPOSITORY_NAME,
@@ -248,12 +248,17 @@ function ConnectedView() {
 	const sync = useSync();
 	const [dismissedFor, setDismissedFor] = useState<object | null>(null);
 	const provider = sync.provider ?? "github";
-	const google = provider === "google";
+	const providerName = t(`provider.${provider}.name`);
+	const inRepository = usesRepository(provider);
 
 	const failureText: Record<SyncErrorKind | "reauth", string> = {
 		rateLimit: t("error.rateLimit"),
-		notFound: google ? t("error.notFoundGoogle") : t("error.notFound"),
-		forbidden: google ? t("error.forbiddenGoogle") : t("error.forbidden"),
+		notFound: inRepository
+			? t("error.notFound")
+			: t("error.notFoundFolder", { provider: providerName }),
+		forbidden: inRepository
+			? t("error.forbidden")
+			: t("error.forbiddenFolder", { provider: providerName }),
 		server: t("error.server"),
 		data: t("error.data"),
 		busy: t("error.busy"),
@@ -276,13 +281,11 @@ function ConnectedView() {
 								<div className="flex min-w-0 items-center gap-3">
 									<ProviderIcon provider={provider} size={22} />
 									<div className="flex min-w-0 flex-col">
-										<h2 className="text-lg font-semibold">
-											{t(`provider.${provider}.name`)}
-										</h2>
+										<h2 className="text-lg font-semibold">{providerName}</h2>
 										<span className="text-muted font-mono text-xs break-all">
-											{google
-												? t("connected.folder", { name: ROOT_FOLDER })
-												: sync.repository}
+											{inRepository
+												? sync.repository
+												: t("connected.folder", { name: ROOT_FOLDER })}
 										</span>
 									</div>
 								</div>
@@ -305,14 +308,14 @@ function ConnectedView() {
 									{failureText[failure]}
 									{sync.errorStatus !== null && (
 										<span className="block">
-											{t(
-												google
-													? "error.httpStatusGoogle"
-													: "error.httpStatus",
-												{
-													status: String(sync.errorStatus),
-												}
-											)}
+											{inRepository
+												? t("error.httpStatus", {
+														status: String(sync.errorStatus),
+													})
+												: t("error.httpStatusFolder", {
+														provider: providerName,
+														status: String(sync.errorStatus),
+													})}
 										</span>
 									)}
 								</Note>
@@ -357,7 +360,7 @@ function ConnectedView() {
 								</span>
 								{sync.status === "reauth" ? (
 									<Button variant="primary" onClick={() => sync.signIn(provider)}>
-										{google ? t("signedOut.google") : t("signedOut.button")}
+										{t("connected.signInWith", { provider: providerName })}
 									</Button>
 								) : (
 									<Button

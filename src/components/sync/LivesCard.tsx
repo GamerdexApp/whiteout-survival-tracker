@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import { useSync } from "@/lib/contexts/SyncContext";
 import { formatNumber } from "@/lib/format";
 import { SYNC_APP_ID } from "@/lib/sync/device";
+import { usesRepository } from "@/lib/sync/providers";
 import { Card } from "@/comps/ui/Card";
 
 function Row({ label, value, mono = true }: { label: string; value: string; mono?: boolean }) {
@@ -34,7 +35,7 @@ export function LivesCard() {
 					value={t(`provider.${provider}.name`)}
 					mono={false}
 				/>
-				{provider === "github" && repository && (
+				{usesRepository(provider) && repository && (
 					<Row label={t("connected.repository")} value={repository} />
 				)}
 				<Row label={t("lives.folder")} value={`${ROOT_FOLDER}/${SYNC_APP_ID}`} />
@@ -49,9 +50,7 @@ export function LivesCard() {
 				<Row label={t("lives.metaFile")} value={META_FILE} />
 			</dl>
 			<p className="text-muted">{t("lives.note")}</p>
-			<p className="text-muted">
-				{provider === "google" ? t("lives.googleNote") : t("lives.githubNote")}
-			</p>
+			<p className="text-muted">{t(`lives.${provider}Note`)}</p>
 		</Card>
 	);
 }

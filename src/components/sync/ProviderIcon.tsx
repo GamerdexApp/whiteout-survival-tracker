@@ -1,8 +1,15 @@
-import { FaGithub, FaGoogleDrive } from "react-icons/fa";
+import { FaDropbox, FaGithub, FaGoogleDrive, FaMicrosoft } from "react-icons/fa";
 import type { SyncProviderId } from "@/lib/sync/providers";
 
+const ICONS = {
+	github: FaGithub,
+	google: FaGoogleDrive,
+	dropbox: FaDropbox,
+	microsoft: FaMicrosoft,
+};
+
 export function ProviderIcon({ provider, size = 20 }: { provider: SyncProviderId; size?: number }) {
-	const Icon = provider === "google" ? FaGoogleDrive : FaGithub;
+	const Icon = ICONS[provider];
 	return (
 		<span
 			aria-hidden="true"

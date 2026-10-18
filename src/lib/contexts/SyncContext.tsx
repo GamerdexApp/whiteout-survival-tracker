@@ -31,6 +31,7 @@ import {
 	providerOf,
 	signInUrl,
 	type SyncProviderId,
+	usesRepository,
 } from "@/lib/sync/providers";
 import { runSync, syncSchema, tokenSource } from "@/lib/sync/run";
 import { storageService } from "@/service/storage";
@@ -222,7 +223,7 @@ export function SyncProvider({ children }: { children: React.ReactNode }) {
 	}, []);
 
 	const hasStorage =
-		provider === "google" || (provider === "github" && device.repository !== null);
+		provider !== null && (!usesRepository(provider) || device.repository !== null);
 	const ready = isLoaded && available && signedIn && hasStorage;
 
 	const automatic = device.autoSync && !(device.waitOnMetered && isMeteredConnection());
@@ -281,8 +282,8 @@ export function SyncProvider({ children }: { children: React.ReactNode }) {
 		try {
 			const signedInWith = providerOf(deviceStore.load()) ?? "github";
 			await tokenSource(signedInWith).signIn(callback.code, callbackUri());
-			if (signedInWith === "google") {
-				deviceStore.recordActivity({ kind: "connected", provider: "google" });
+			if (!usesRepository(signedInWith)) {
+				deviceStore.recordActivity({ kind: "connected", provider: signedInWith });
 			}
 			setFailure(null);
 			return "ok";

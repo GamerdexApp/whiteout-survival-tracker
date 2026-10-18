@@ -18,9 +18,7 @@ export function DisconnectCard() {
 					{t("disconnect.button", { provider: t(`provider.${provider}.name`) })}
 				</Button>
 			</div>
-			<p className="text-muted">
-				{provider === "google" ? t("disconnect.googleHint") : t("disconnect.githubHint")}
-			</p>
+			<p className="text-muted">{t(`disconnect.${provider}Hint`)}</p>
 		</div>
 	);
 }

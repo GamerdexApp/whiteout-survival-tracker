@@ -6,15 +6,6 @@
     },
     "unavailable": "Sync is not available in this build.",
     "privacy": "Your data goes to a private repository in your own GitHub account. Gamerdex has no server that stores it, and the app can only reach the one repository you choose.",
-    "signedOut": {
-        "title": "Sign in",
-        "body": "Sign in with GitHub, then choose the repository that holds your data.",
-        "button": "Sign in with GitHub",
-        "choose": "Choose where to keep your data. It stays in your own account, and Gamerdex has no server that stores it.",
-        "githubHint": "A private repository named {name} in your GitHub account.",
-        "googleHint": "A folder named {name} in your Google Drive. Gamerdex can only see the files that it creates.",
-        "google": "Sign in with Google"
-    },
     "repository": {
         "title": "Set up your data repository",
         "body": "Your data is kept in a private repository named {name} in your GitHub account. Gamerdex Sync can only reach that one repository.",
@@ -42,7 +33,8 @@
         "signedOut": "Signed out. The data on this device stays as it is.",
         "storage": "Stored in",
         "googleValue": "Google Drive, folder {name}",
-        "folder": "Folder {name}"
+        "folder": "Folder {name}",
+        "signInWith": "Sign in with {provider}"
     },
     "status": {
         "idle": "Synced",
@@ -65,9 +57,9 @@
         "reauth": "Your sign in ended. Sign in again to keep syncing.",
         "forbidden": "GitHub refused access to the repository. Check that Gamerdex Sync has Read and write access to Contents, then sync again.",
         "httpStatus": "GitHub answered {status}.",
-        "notFoundGoogle": "A file or folder in Google Drive was not found. Sync again.",
-        "forbiddenGoogle": "Google refused access to Drive. Sign in again and allow access to the files that Gamerdex creates.",
-        "httpStatusGoogle": "Google answered {status}."
+        "notFoundFolder": "A file or folder in {provider} was not found. Sync again.",
+        "forbiddenFolder": "{provider} refused access. Sign in again and allow access to the files that Gamerdex creates.",
+        "httpStatusFolder": "{provider} answered {status}."
     },
     "choice": {
         "title": "This device and the cloud both have data",
@@ -96,7 +88,7 @@
         "back": "Back to Settings",
         "denied": "The sign in was cancelled.",
         "state": "The sign in could not be checked. Start again from Settings.",
-        "missing": "GitHub sent no sign in code. Start again from Settings.",
+        "missing": "The sign in sent no code. Start again from Settings.",
         "failed": "The sign in could not be finished. Try again later."
     },
     "chiefCount": "{count, plural, one {{amount} chief} other {{amount} chiefs}}",
@@ -110,6 +102,16 @@
             "name": "Google Drive",
             "tile": "A visible Gamerdex folder in your Drive. Gamerdex sees only the files that it creates.",
             "badge": "Recommended"
+        },
+        "dropbox": {
+            "name": "Dropbox",
+            "tile": "A Gamerdex folder inside the Apps folder of your Dropbox. Gamerdex sees only that folder.",
+            "badge": "App folder only"
+        },
+        "microsoft": {
+            "name": "OneDrive",
+            "tile": "A Gamerdex folder inside the Apps folder of your OneDrive. Gamerdex sees only that folder.",
+            "badge": "Personal accounts"
         }
     },
     "connect": {
@@ -129,6 +131,16 @@
             "step1": "Create an empty private repository named {name}. Tick Add a README file.",
             "step2": "Sign in with GitHub, then give Gamerdex Sync access to that repository only.",
             "button": "Connect GitHub"
+        },
+        "dropbox": {
+            "step1": "Sign in with Dropbox in this window.",
+            "step2": "Allow access to the Gamerdex app folder. The app cannot see your other files.",
+            "button": "Connect Dropbox"
+        },
+        "microsoft": {
+            "step1": "Sign in with your personal Microsoft account in this window.",
+            "step2": "Allow access to the Gamerdex app folder. The app cannot see your other files.",
+            "button": "Connect OneDrive"
         }
     },
     "how": {
@@ -190,7 +202,9 @@
         "kb": "{amount} KB",
         "note": "The data file uses the same format as the backup file. The meta file holds the list of devices and no game data. Your sign in is never in either file.",
         "googleNote": "The Gamerdex folder is visible in your Drive. Gamerdex can open only the files that it created.",
-        "githubNote": "Keep the repository private. Anyone who can open it can read your data."
+        "githubNote": "Keep the repository private. Anyone who can open it can read your data.",
+        "dropboxNote": "The Gamerdex folder is inside the Apps folder of your Dropbox. Gamerdex can open only that folder.",
+        "microsoftNote": "The Gamerdex folder is inside the Apps folder of your OneDrive. Gamerdex can open only that folder."
     },
     "device": {
         "title": "This device",
@@ -207,7 +221,9 @@
         "body": "Stops syncing on this browser. Your chiefs stay on this device and in the cloud. Other devices keep syncing.",
         "button": "Disconnect {provider}",
         "googleHint": "To delete the cloud copy yourself, disconnect, then delete the Gamerdex folder in your Google Drive.",
-        "githubHint": "To delete the cloud copy yourself, disconnect, then delete the Gamerdex folder in your repository."
+        "githubHint": "To delete the cloud copy yourself, disconnect, then delete the Gamerdex folder in your repository.",
+        "dropboxHint": "To delete the cloud copy yourself, disconnect, then delete the app folder under Apps in your Dropbox.",
+        "microsoftHint": "To delete the cloud copy yourself, disconnect, then delete the app folder under Apps in your OneDrive."
     },
     "first": {
         "thisDevice": "This device",
