@@ -224,7 +224,8 @@ export function SyncProvider({ children }: { children: React.ReactNode }) {
 
 	const hasStorage =
 		provider !== null && (!usesRepository(provider) || device.repository !== null);
-	const ready = isLoaded && available && signedIn && hasStorage;
+	const signInRejected = failure?.status === "reauth";
+	const ready = isLoaded && available && signedIn && hasStorage && !signInRejected;
 
 	const automatic = device.autoSync && !(device.waitOnMetered && isMeteredConnection());
 	const firstSyncPending = device.state === null;
