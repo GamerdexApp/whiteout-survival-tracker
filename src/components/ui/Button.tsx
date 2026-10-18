@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { ButtonHTMLAttributes, ComponentProps } from "react";
+import { LuLoaderCircle } from "react-icons/lu";
 
 type ButtonVariant = "primary" | "secondary" | "ghost" | "danger" | "link";
 
@@ -19,10 +20,36 @@ export const buttonClasses = (variant: ButtonVariant = "secondary", className = 
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 	variant?: ButtonVariant;
+	/** Disables the button and shows a spinner while the action it started is running. */
+	loading?: boolean;
 }
 
-export function Button({ variant, className, type = "button", ...props }: ButtonProps) {
-	return <button type={type} className={buttonClasses(variant, className)} {...props} />;
+export function Button({
+	variant,
+	className,
+	type = "button",
+	loading = false,
+	disabled,
+	children,
+	...props
+}: ButtonProps) {
+	return (
+		<button
+			type={type}
+			className={buttonClasses(variant, className)}
+			disabled={disabled || loading}
+			aria-busy={loading || undefined}
+			{...props}
+		>
+			{loading && (
+				<LuLoaderCircle
+					aria-hidden="true"
+					className="size-4 animate-spin motion-reduce:animate-none"
+				/>
+			)}
+			{children}
+		</button>
+	);
 }
 
 interface ButtonLinkProps extends ComponentProps<typeof Link> {

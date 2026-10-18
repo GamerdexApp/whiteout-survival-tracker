@@ -40,8 +40,9 @@ interface FirstSyncDialogProps {
 
 export function FirstSyncDialog({ open, choice, onLater }: FirstSyncDialogProps) {
 	const t = useTranslations("sync");
-	const { syncNow } = useSync();
+	const { syncNow, status } = useSync();
 	const [picked, setPicked] = useState<FirstSyncChoice>("merge");
+	const working = status === "syncing";
 
 	return (
 		<Dialog
@@ -52,11 +53,15 @@ export function FirstSyncDialog({ open, choice, onLater }: FirstSyncDialogProps)
 			variant="wide"
 			footer={
 				<>
-					<Button variant="secondary" onClick={onLater}>
+					<Button variant="secondary" disabled={working} onClick={onLater}>
 						{t("first.later")}
 					</Button>
-					<Button variant="primary" onClick={() => void syncNow(picked)}>
-						{t("first.apply")}
+					<Button
+						variant="primary"
+						loading={working}
+						onClick={() => void syncNow(picked)}
+					>
+						{working ? t("status.syncing") : t("first.apply")}
 					</Button>
 				</>
 			}
@@ -65,12 +70,14 @@ export function FirstSyncDialog({ open, choice, onLater }: FirstSyncDialogProps)
 				<Summary title={t("first.thisDevice")} data={choice.local} />
 				<Summary title={t("first.cloud")} data={choice.remote} />
 			</div>
-			<fieldset className="mt-4 flex flex-col gap-2">
+			<fieldset disabled={working} className="mt-4 flex flex-col gap-2">
 				<legend className="sr-only">{t("first.optionsLabel")}</legend>
 				{options.map((option) => (
 					<label
 						key={option.id}
-						className={`flex cursor-pointer items-start gap-3 rounded-md border-[1.5px] p-3 ${
+						className={`flex items-start gap-3 rounded-md border-[1.5px] p-3 ${
+							working ? "cursor-not-allowed opacity-50" : "cursor-pointer"
+						} ${
 							picked === option.choice
 								? "border-primary bg-tint"
 								: "border-line bg-surface"
