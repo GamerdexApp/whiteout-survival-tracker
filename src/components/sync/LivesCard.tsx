@@ -1,11 +1,11 @@
 "use client";
 
-import { DATA_FILE, META_FILE, ROOT_FOLDER } from "@gamerdexapp/gamerdex-sync";
+import { DATA_FILE, META_FILE } from "@gamerdexapp/gamerdex-sync";
 import { useTranslations } from "next-intl";
 import { useSync } from "@/lib/contexts/SyncContext";
 import { formatNumber } from "@/lib/format";
 import { SYNC_APP_ID } from "@/lib/sync/device";
-import { appFolderOf, usesRepository } from "@/lib/sync/providers";
+import { dataFolderOf, usesRepository } from "@/lib/sync/providers";
 import { Card } from "@/comps/ui/Card";
 
 function Row({ label, value, mono = true }: { label: string; value: string; mono?: boolean }) {
@@ -38,12 +38,7 @@ export function LivesCard() {
 				{usesRepository(provider) && repository && (
 					<Row label={t("connected.repository")} value={repository} />
 				)}
-				<Row
-					label={t("lives.folder")}
-					value={[appFolderOf(provider), ROOT_FOLDER, SYNC_APP_ID]
-						.filter(Boolean)
-						.join("/")}
-				/>
+				<Row label={t("lives.folder")} value={dataFolderOf(provider, SYNC_APP_ID)} />
 				<Row label={t("lives.dataFile")} value={DATA_FILE} />
 				{kilobytes !== null && (
 					<Row

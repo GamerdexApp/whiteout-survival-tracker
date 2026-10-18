@@ -7,6 +7,7 @@ import {
   GoogleDriveProvider,
   microsoftAuthorizeUrl,
   OneDriveProvider,
+  ROOT_FOLDER,
   type SyncProvider,
 } from "@gamerdexapp/gamerdex-sync";
 import type { DeviceSync } from "./device";
@@ -45,13 +46,17 @@ export const availableProviders: SyncProviderId[] = !authBase
       (provider) => provider === "github" || CLIENT_IDS[provider] !== "",
     );
 
-/** OneDrive names its app folder after the Microsoft app registration, so this must match it. */
-const APP_FOLDERS: Partial<Record<SyncProviderId, string>> = {
-  microsoft: "Apps/Gamerdex Sync",
+/**
+ * The folder that holds the folder of the tracker, as the player sees it. Dropbox and OneDrive name
+ * their app folder after the app registration, so these names must match the registrations.
+ */
+const PARENT_FOLDERS: Partial<Record<SyncProviderId, string>> = {
+  dropbox: "Apps/Gamerdex",
+  microsoft: "Apps/Gamerdex Sync/Gamerdex",
 };
 
-/** The folder that the provider puts in front of the Gamerdex folder, or undefined when none. */
-export const appFolderOf = (provider: SyncProviderId) => APP_FOLDERS[provider];
+export const dataFolderOf = (provider: SyncProviderId, appId: string) =>
+  `${PARENT_FOLDERS[provider] ?? ROOT_FOLDER}/${appId}`;
 
 /** GitHub keeps the data in a repository. The other providers keep it in a folder. */
 export const usesRepository = (provider: SyncProviderId) =>
