@@ -45,6 +45,14 @@ export const availableProviders: SyncProviderId[] = !authBase
       (provider) => provider === "github" || CLIENT_IDS[provider] !== "",
     );
 
+/** OneDrive names its app folder after the Microsoft app registration, so this must match it. */
+const APP_FOLDERS: Partial<Record<SyncProviderId, string>> = {
+  microsoft: "Apps/Gamerdex Sync",
+};
+
+/** The folder that the provider puts in front of the Gamerdex folder, or undefined when none. */
+export const appFolderOf = (provider: SyncProviderId) => APP_FOLDERS[provider];
+
 /** GitHub keeps the data in a repository. The other providers keep it in a folder. */
 export const usesRepository = (provider: SyncProviderId) =>
   provider === "github";
