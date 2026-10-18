@@ -6,15 +6,6 @@
     },
     "unavailable": "A sincronização não está disponível nesta versão.",
     "privacy": "Os seus dados vão para um repositório privado na sua própria conta do GitHub. O Gamerdex não tem nenhum servidor que os guarde, e a aplicação só consegue aceder ao repositório que escolher.",
-    "signedOut": {
-        "title": "Iniciar sessão",
-        "body": "Inicie sessão com o GitHub e escolha o repositório que guarda os seus dados.",
-        "button": "Iniciar sessão com o GitHub",
-        "choose": "Escolha onde guardar os seus dados. Ficam na sua própria conta, e o Gamerdex não tem nenhum servidor que os guarde.",
-        "githubHint": "Um repositório privado chamado {name} na sua conta do GitHub.",
-        "googleHint": "Uma pasta chamada {name} no seu Google Drive. O Gamerdex só consegue ver os ficheiros que cria.",
-        "google": "Iniciar sessão com o Google"
-    },
     "repository": {
         "title": "Configure o repositório de dados",
         "body": "Os seus dados ficam guardados num repositório privado chamado {name} na sua conta do GitHub. O Gamerdex Sync só consegue aceder a esse repositório.",
@@ -42,7 +33,8 @@
         "signedOut": "Sessão terminada. Os dados deste dispositivo mantêm-se como estão.",
         "storage": "Guardado em",
         "googleValue": "Google Drive, pasta {name}",
-        "folder": "Pasta {name}"
+        "folder": "Pasta {name}",
+        "signInWith": "Iniciar sessão com o {provider}"
     },
     "status": {
         "idle": "Sincronizado",
@@ -65,9 +57,9 @@
         "reauth": "A sua sessão terminou. Inicie sessão novamente para continuar a sincronizar.",
         "forbidden": "O GitHub recusou o acesso ao repositório. Verifique se o Gamerdex Sync tem acesso Read and write a Contents e sincronize novamente.",
         "httpStatus": "O GitHub respondeu {status}.",
-        "notFoundGoogle": "Não foi encontrado um ficheiro ou uma pasta no Google Drive. Sincronize novamente.",
-        "forbiddenGoogle": "O Google recusou o acesso ao Drive. Inicie sessão novamente e permita o acesso aos ficheiros que o Gamerdex cria.",
-        "httpStatusGoogle": "O Google respondeu {status}."
+        "notFoundFolder": "Não foi encontrado um ficheiro ou uma pasta no {provider}. Sincronize novamente.",
+        "forbiddenFolder": "O {provider} recusou o acesso. Inicie sessão novamente e permita o acesso aos ficheiros que o Gamerdex cria.",
+        "httpStatusFolder": "O {provider} respondeu {status}."
     },
     "choice": {
         "title": "Este dispositivo e a nuvem têm dados",
@@ -96,7 +88,7 @@
         "back": "Voltar às Definições",
         "denied": "O início de sessão foi cancelado.",
         "state": "Não foi possível verificar o início de sessão. Recomece a partir das Definições.",
-        "missing": "O GitHub não enviou nenhum código de início de sessão. Recomece a partir das Definições.",
+        "missing": "O início de sessão não enviou nenhum código. Comece de novo nas Definições.",
         "failed": "Não foi possível concluir o início de sessão. Tente novamente mais tarde."
     },
     "chiefCount": "{count, plural, one {{amount} chefe} other {{amount} chefes}}",
@@ -110,6 +102,16 @@
             "name": "Google Drive",
             "tile": "Uma pasta Gamerdex visível no seu Drive. O Gamerdex só vê os ficheiros que cria.",
             "badge": "Recomendado"
+        },
+        "dropbox": {
+            "name": "Dropbox",
+            "tile": "Uma pasta Gamerdex dentro da pasta Apps do seu Dropbox. O Gamerdex só vê essa pasta.",
+            "badge": "Só a pasta da aplicação"
+        },
+        "microsoft": {
+            "name": "OneDrive",
+            "tile": "Uma pasta Gamerdex dentro da pasta Apps do seu OneDrive. O Gamerdex só vê essa pasta.",
+            "badge": "Contas pessoais"
         }
     },
     "connect": {
@@ -129,6 +131,16 @@
             "step1": "Crie um repositório privado vazio chamado {name}. Marque Add a README file.",
             "step2": "Inicie sessão com o GitHub e dê ao Gamerdex Sync acesso apenas a esse repositório.",
             "button": "Ligar GitHub"
+        },
+        "dropbox": {
+            "step1": "Inicie sessão com o Dropbox nesta janela.",
+            "step2": "Permita o acesso à pasta da aplicação Gamerdex. A aplicação não consegue ver os seus outros ficheiros.",
+            "button": "Ligar Dropbox"
+        },
+        "microsoft": {
+            "step1": "Inicie sessão com a sua conta Microsoft pessoal nesta janela.",
+            "step2": "Permita o acesso à pasta da aplicação Gamerdex. A aplicação não consegue ver os seus outros ficheiros.",
+            "button": "Ligar OneDrive"
         }
     },
     "how": {
@@ -190,7 +202,9 @@
         "kb": "{amount} KB",
         "note": "O ficheiro de dados usa o mesmo formato que o ficheiro de cópia de segurança. O ficheiro meta guarda a lista de dispositivos e nenhum dado do jogo. O seu início de sessão nunca está em nenhum dos ficheiros.",
         "googleNote": "A pasta Gamerdex é visível no seu Drive. O Gamerdex só consegue abrir os ficheiros que criou.",
-        "githubNote": "Mantenha o repositório privado. Quem o conseguir abrir consegue ler os seus dados."
+        "githubNote": "Mantenha o repositório privado. Quem o conseguir abrir consegue ler os seus dados.",
+        "dropboxNote": "A pasta Gamerdex fica dentro da pasta Apps do seu Dropbox. O Gamerdex só consegue abrir essa pasta.",
+        "microsoftNote": "A pasta Gamerdex fica dentro da pasta Apps do seu OneDrive. O Gamerdex só consegue abrir essa pasta."
     },
     "device": {
         "title": "Este dispositivo",
@@ -207,7 +221,9 @@
         "body": "Para a sincronização neste navegador. Os seus chefes ficam neste dispositivo e na nuvem. Os outros dispositivos continuam a sincronizar.",
         "button": "Desligar {provider}",
         "googleHint": "Para apagar a cópia da nuvem por si, desligue e depois apague a pasta Gamerdex no seu Google Drive.",
-        "githubHint": "Para apagar a cópia da nuvem por si, desligue e depois apague a pasta Gamerdex no seu repositório."
+        "githubHint": "Para apagar a cópia da nuvem por si, desligue e depois apague a pasta Gamerdex no seu repositório.",
+        "dropboxHint": "Para apagar a cópia da nuvem por si, desligue e depois apague a pasta da aplicação em Apps no seu Dropbox.",
+        "microsoftHint": "Para apagar a cópia da nuvem por si, desligue e depois apague a pasta da aplicação em Apps no seu OneDrive."
     },
     "first": {
         "thisDevice": "Este dispositivo",

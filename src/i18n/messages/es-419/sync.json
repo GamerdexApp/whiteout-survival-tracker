@@ -6,15 +6,6 @@
     },
     "unavailable": "La sincronización no está disponible en esta versión.",
     "privacy": "Tus datos van a un repositorio privado de tu propia cuenta de GitHub. Gamerdex no tiene ningún servidor que los almacene, y la app solo puede acceder al repositorio que elijas.",
-    "signedOut": {
-        "title": "Iniciar sesión",
-        "body": "Inicia sesión con GitHub y elige el repositorio que guarda tus datos.",
-        "button": "Iniciar sesión con GitHub",
-        "choose": "Elige dónde guardar tus datos. Se quedan en tu propia cuenta, y Gamerdex no tiene ningún servidor que los almacene.",
-        "githubHint": "Un repositorio privado llamado {name} en tu cuenta de GitHub.",
-        "googleHint": "Una carpeta llamada {name} en tu Google Drive. Gamerdex solo puede ver los archivos que crea.",
-        "google": "Iniciar sesión con Google"
-    },
     "repository": {
         "title": "Configura tu repositorio de datos",
         "body": "Tus datos se guardan en un repositorio privado llamado {name} en tu cuenta de GitHub. Gamerdex Sync solo puede acceder a ese repositorio.",
@@ -42,7 +33,8 @@
         "signedOut": "Sesión cerrada. Los datos de este dispositivo no cambian.",
         "storage": "Guardado en",
         "googleValue": "Google Drive, carpeta {name}",
-        "folder": "Carpeta {name}"
+        "folder": "Carpeta {name}",
+        "signInWith": "Iniciar sesión con {provider}"
     },
     "status": {
         "idle": "Sincronizado",
@@ -65,9 +57,9 @@
         "reauth": "Tu sesión terminó. Inicia sesión de nuevo para seguir sincronizando.",
         "forbidden": "GitHub rechazó el acceso al repositorio. Verifica que Gamerdex Sync tenga acceso Read and write a Contents y vuelve a sincronizar.",
         "httpStatus": "GitHub respondió {status}.",
-        "notFoundGoogle": "No se encontró un archivo o una carpeta de Google Drive. Vuelve a sincronizar.",
-        "forbiddenGoogle": "Google rechazó el acceso a Drive. Inicia sesión de nuevo y permite el acceso a los archivos que crea Gamerdex.",
-        "httpStatusGoogle": "Google respondió {status}."
+        "notFoundFolder": "No se encontró un archivo o una carpeta de {provider}. Vuelve a sincronizar.",
+        "forbiddenFolder": "{provider} negó el acceso. Inicia sesión de nuevo y permite el acceso a los archivos que crea Gamerdex.",
+        "httpStatusFolder": "{provider} respondió {status}."
     },
     "choice": {
         "title": "Este dispositivo y la nube tienen datos",
@@ -96,7 +88,7 @@
         "back": "Volver a Ajustes",
         "denied": "Se canceló el inicio de sesión.",
         "state": "No se pudo verificar el inicio de sesión. Empieza de nuevo desde Ajustes.",
-        "missing": "GitHub no envió ningún código de inicio de sesión. Empieza de nuevo desde Ajustes.",
+        "missing": "El inicio de sesión no envió ningún código. Empieza de nuevo desde Ajustes.",
         "failed": "No se pudo terminar el inicio de sesión. Inténtalo de nuevo más tarde."
     },
     "chiefCount": "{count, plural, one {{amount} jefe} other {{amount} jefes}}",
@@ -110,6 +102,16 @@
             "name": "Google Drive",
             "tile": "Una carpeta Gamerdex visible en tu Drive. Gamerdex solo ve los archivos que crea.",
             "badge": "Recomendado"
+        },
+        "dropbox": {
+            "name": "Dropbox",
+            "tile": "Una carpeta Gamerdex dentro de la carpeta Apps de tu Dropbox. Gamerdex solo ve esa carpeta.",
+            "badge": "Solo la carpeta de la app"
+        },
+        "microsoft": {
+            "name": "OneDrive",
+            "tile": "Una carpeta Gamerdex dentro de la carpeta Apps de tu OneDrive. Gamerdex solo ve esa carpeta.",
+            "badge": "Cuentas personales"
         }
     },
     "connect": {
@@ -129,6 +131,16 @@
             "step1": "Crea un repositorio privado vacío llamado {name}. Marca Add a README file.",
             "step2": "Inicia sesión con GitHub y da acceso a Gamerdex Sync solo a ese repositorio.",
             "button": "Conectar GitHub"
+        },
+        "dropbox": {
+            "step1": "Inicia sesión con Dropbox en esta ventana.",
+            "step2": "Permite el acceso a la carpeta de la app Gamerdex. La app no puede ver tus otros archivos.",
+            "button": "Conectar Dropbox"
+        },
+        "microsoft": {
+            "step1": "Inicia sesión con tu cuenta personal de Microsoft en esta ventana.",
+            "step2": "Permite el acceso a la carpeta de la app Gamerdex. La app no puede ver tus otros archivos.",
+            "button": "Conectar OneDrive"
         }
     },
     "how": {
@@ -190,7 +202,9 @@
         "kb": "{amount} KB",
         "note": "El archivo de datos usa el mismo formato que el archivo de respaldo. El archivo meta guarda la lista de dispositivos y ningún dato del juego. Tu inicio de sesión nunca está en ninguno de los dos archivos.",
         "googleNote": "La carpeta Gamerdex es visible en tu Drive. Gamerdex solo puede abrir los archivos que creó.",
-        "githubNote": "Mantén el repositorio privado. Cualquiera que pueda abrirlo puede leer tus datos."
+        "githubNote": "Mantén el repositorio privado. Cualquiera que pueda abrirlo puede leer tus datos.",
+        "dropboxNote": "La carpeta Gamerdex está dentro de la carpeta Apps de tu Dropbox. Gamerdex solo puede abrir esa carpeta.",
+        "microsoftNote": "La carpeta Gamerdex está dentro de la carpeta Apps de tu OneDrive. Gamerdex solo puede abrir esa carpeta."
     },
     "device": {
         "title": "Este dispositivo",
@@ -207,7 +221,9 @@
         "body": "Deja de sincronizar en este navegador. Tus jefes se quedan en este dispositivo y en la nube. Los demás dispositivos siguen sincronizando.",
         "button": "Desconectar {provider}",
         "googleHint": "Para borrar tú mismo la copia de la nube, desconecta y luego borra la carpeta Gamerdex en tu Google Drive.",
-        "githubHint": "Para borrar tú mismo la copia de la nube, desconecta y luego borra la carpeta Gamerdex en tu repositorio."
+        "githubHint": "Para borrar tú mismo la copia de la nube, desconecta y luego borra la carpeta Gamerdex en tu repositorio.",
+        "dropboxHint": "Para borrar tú mismo la copia de la nube, desconecta y luego borra la carpeta de la app dentro de Apps en tu Dropbox.",
+        "microsoftHint": "Para borrar tú mismo la copia de la nube, desconecta y luego borra la carpeta de la app dentro de Apps en tu OneDrive."
     },
     "first": {
         "thisDevice": "Este dispositivo",

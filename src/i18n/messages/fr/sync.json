@@ -6,15 +6,6 @@
     },
     "unavailable": "La synchronisation n'est pas disponible dans cette version.",
     "privacy": "Vos données vont dans un dépôt privé de votre propre compte GitHub. Gamerdex n'a aucun serveur qui les stocke, et l'application ne peut accéder qu'au dépôt que vous choisissez.",
-    "signedOut": {
-        "title": "Connexion",
-        "body": "Connectez-vous avec GitHub, puis choisissez le dépôt qui contient vos données.",
-        "button": "Se connecter avec GitHub",
-        "choose": "Choisissez où conserver vos données. Elles restent dans votre propre compte, et Gamerdex n'a aucun serveur qui les stocke.",
-        "githubHint": "Un dépôt privé nommé {name} sur votre compte GitHub.",
-        "googleHint": "Un dossier nommé {name} dans votre Google Drive. Gamerdex ne peut voir que les fichiers qu'il crée.",
-        "google": "Se connecter avec Google"
-    },
     "repository": {
         "title": "Configurez votre dépôt de données",
         "body": "Vos données sont conservées dans un dépôt privé nommé {name} sur votre compte GitHub. Gamerdex Sync ne peut accéder qu'à ce dépôt.",
@@ -42,7 +33,8 @@
         "signedOut": "Déconnecté. Les données de cet appareil restent telles quelles.",
         "storage": "Stocké dans",
         "googleValue": "Google Drive, dossier {name}",
-        "folder": "Dossier {name}"
+        "folder": "Dossier {name}",
+        "signInWith": "Se connecter avec {provider}"
     },
     "status": {
         "idle": "Synchronisé",
@@ -65,9 +57,9 @@
         "reauth": "Votre connexion a expiré. Reconnectez-vous pour continuer la synchronisation.",
         "forbidden": "GitHub a refusé l'accès au dépôt. Vérifiez que Gamerdex Sync a l'accès Read and write à Contents, puis synchronisez à nouveau.",
         "httpStatus": "GitHub a répondu {status}.",
-        "notFoundGoogle": "Un fichier ou un dossier de Google Drive est introuvable. Synchronisez à nouveau.",
-        "forbiddenGoogle": "Google a refusé l'accès à Drive. Reconnectez-vous et autorisez l'accès aux fichiers que Gamerdex crée.",
-        "httpStatusGoogle": "Google a répondu {status}."
+        "notFoundFolder": "Un fichier ou un dossier de {provider} est introuvable. Synchronisez à nouveau.",
+        "forbiddenFolder": "{provider} a refusé l'accès. Connectez-vous de nouveau et autorisez l'accès aux fichiers que Gamerdex crée.",
+        "httpStatusFolder": "{provider} a répondu {status}."
     },
     "choice": {
         "title": "Cet appareil et le cloud contiennent des données",
@@ -96,7 +88,7 @@
         "back": "Retour aux paramètres",
         "denied": "La connexion a été annulée.",
         "state": "La connexion n'a pas pu être vérifiée. Recommencez depuis les paramètres.",
-        "missing": "GitHub n'a envoyé aucun code de connexion. Recommencez depuis les paramètres.",
+        "missing": "La connexion n'a renvoyé aucun code. Recommencez depuis les Paramètres.",
         "failed": "La connexion n'a pas pu être terminée. Réessayez plus tard."
     },
     "chiefCount": "{count, plural, one {{amount} chef} other {{amount} chefs}}",
@@ -110,6 +102,16 @@
             "name": "Google Drive",
             "tile": "Un dossier Gamerdex visible dans votre Drive. Gamerdex ne voit que les fichiers qu'il crée.",
             "badge": "Recommandé"
+        },
+        "dropbox": {
+            "name": "Dropbox",
+            "tile": "Un dossier Gamerdex dans le dossier Apps de votre Dropbox. Gamerdex ne voit que ce dossier.",
+            "badge": "Dossier de l'app uniquement"
+        },
+        "microsoft": {
+            "name": "OneDrive",
+            "tile": "Un dossier Gamerdex dans le dossier Apps de votre OneDrive. Gamerdex ne voit que ce dossier.",
+            "badge": "Comptes personnels"
         }
     },
     "connect": {
@@ -129,6 +131,16 @@
             "step1": "Créez un dépôt privé vide nommé {name}. Cochez Add a README file.",
             "step2": "Connectez-vous avec GitHub, puis donnez à Gamerdex Sync l'accès à ce dépôt uniquement.",
             "button": "Connecter GitHub"
+        },
+        "dropbox": {
+            "step1": "Connectez-vous avec Dropbox dans cette fenêtre.",
+            "step2": "Autorisez l'accès au dossier de l'application Gamerdex. L'application ne voit pas vos autres fichiers.",
+            "button": "Connecter Dropbox"
+        },
+        "microsoft": {
+            "step1": "Connectez-vous avec votre compte Microsoft personnel dans cette fenêtre.",
+            "step2": "Autorisez l'accès au dossier de l'application Gamerdex. L'application ne voit pas vos autres fichiers.",
+            "button": "Connecter OneDrive"
         }
     },
     "how": {
@@ -190,7 +202,9 @@
         "kb": "{amount} Ko",
         "note": "Le fichier de données utilise le même format que le fichier de sauvegarde. Le fichier meta contient la liste des appareils et aucune donnée de jeu. Votre connexion n'est jamais dans l'un ou l'autre.",
         "googleNote": "Le dossier Gamerdex est visible dans votre Drive. Gamerdex ne peut ouvrir que les fichiers qu'il a créés.",
-        "githubNote": "Gardez le dépôt privé. Quiconque peut l'ouvrir peut lire vos données."
+        "githubNote": "Gardez le dépôt privé. Quiconque peut l'ouvrir peut lire vos données.",
+        "dropboxNote": "Le dossier Gamerdex se trouve dans le dossier Apps de votre Dropbox. Gamerdex ne peut ouvrir que ce dossier.",
+        "microsoftNote": "Le dossier Gamerdex se trouve dans le dossier Apps de votre OneDrive. Gamerdex ne peut ouvrir que ce dossier."
     },
     "device": {
         "title": "Cet appareil",
@@ -207,7 +221,9 @@
         "body": "Arrête la synchro sur ce navigateur. Vos chefs restent sur cet appareil et dans le cloud. Les autres appareils continuent de se synchroniser.",
         "button": "Déconnecter {provider}",
         "googleHint": "Pour supprimer vous-même la copie du cloud, déconnectez-vous, puis supprimez le dossier Gamerdex dans votre Google Drive.",
-        "githubHint": "Pour supprimer vous-même la copie du cloud, déconnectez-vous, puis supprimez le dossier Gamerdex dans votre dépôt."
+        "githubHint": "Pour supprimer vous-même la copie du cloud, déconnectez-vous, puis supprimez le dossier Gamerdex dans votre dépôt.",
+        "dropboxHint": "Pour supprimer vous-même la copie du cloud, déconnectez-vous, puis supprimez le dossier de l'application dans Apps sur votre Dropbox.",
+        "microsoftHint": "Pour supprimer vous-même la copie du cloud, déconnectez-vous, puis supprimez le dossier de l'application dans Apps sur votre OneDrive."
     },
     "first": {
         "thisDevice": "Cet appareil",

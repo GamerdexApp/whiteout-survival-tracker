@@ -6,15 +6,6 @@
     },
     "unavailable": "這個版本不支援同步。",
     "privacy": "你的資料會傳送到你自己 GitHub 帳號下的私人儲存庫。Gamerdex 沒有伺服器儲存這些資料，應用程式也只能存取你選擇的那一個儲存庫。",
-    "signedOut": {
-        "title": "登入",
-        "body": "使用 GitHub 登入，然後選擇存放你資料的儲存庫。",
-        "button": "使用 GitHub 登入",
-        "choose": "選擇資料的存放位置。資料存放在你自己的帳號中，Gamerdex 沒有伺服器儲存這些資料。",
-        "githubHint": "你的 GitHub 帳號下名為 {name} 的私人儲存庫。",
-        "googleHint": "你的 Google Drive 中名為 {name} 的資料夾。Gamerdex 只能看到它自己建立的檔案。",
-        "google": "使用 Google 登入"
-    },
     "repository": {
         "title": "設定你的資料儲存庫",
         "body": "你的資料存放在 GitHub 帳號下名為 {name} 的私人儲存庫中。Gamerdex Sync 只能存取這一個儲存庫。",
@@ -42,7 +33,8 @@
         "signedOut": "已登出。這部裝置上的資料維持不變。",
         "storage": "儲存位置",
         "googleValue": "Google Drive，資料夾 {name}",
-        "folder": "資料夾 {name}"
+        "folder": "資料夾 {name}",
+        "signInWith": "使用 {provider} 登入"
     },
     "status": {
         "idle": "已同步",
@@ -65,9 +57,9 @@
         "reauth": "你的登入已失效。請重新登入以繼續同步。",
         "forbidden": "GitHub 拒絕存取該儲存庫。請確認 Gamerdex Sync 擁有「Contents」的「Read and write」權限，然後再次同步。",
         "httpStatus": "GitHub 回應了 {status}。",
-        "notFoundGoogle": "找不到 Google Drive 中的檔案或資料夾。請再次同步。",
-        "forbiddenGoogle": "Google 拒絕存取 Drive。請重新登入，並允許存取 Gamerdex 建立的檔案。",
-        "httpStatusGoogle": "Google 回應了 {status}。"
+        "notFoundFolder": "找不到 {provider} 中的檔案或資料夾。請再次同步。",
+        "forbiddenFolder": "{provider} 拒絕了存取。請重新登入，並允許存取 Gamerdex 建立的檔案。",
+        "httpStatusFolder": "{provider} 回應了 {status}。"
     },
     "choice": {
         "title": "這部裝置和雲端都有資料",
@@ -96,7 +88,7 @@
         "back": "返回設定",
         "denied": "登入已取消。",
         "state": "無法驗證這次登入。請從設定重新開始。",
-        "missing": "GitHub 沒有傳回登入代碼。請從設定重新開始。",
+        "missing": "這次登入沒有傳回代碼。請從設定重新開始。",
         "failed": "無法完成登入。請稍後再試。"
     },
     "chiefCount": "{count, plural, other {{amount} 位領主}}",
@@ -110,6 +102,16 @@
             "name": "Google Drive",
             "tile": "你的 Drive 中看得到的 Gamerdex 資料夾。Gamerdex 只能看到它自己建立的檔案。",
             "badge": "推薦"
+        },
+        "dropbox": {
+            "name": "Dropbox",
+            "tile": "Dropbox 的 Apps 資料夾中的一個 Gamerdex 資料夾。Gamerdex 只能看到這個資料夾。",
+            "badge": "僅限應用程式資料夾"
+        },
+        "microsoft": {
+            "name": "OneDrive",
+            "tile": "OneDrive 的 Apps 資料夾中的一個 Gamerdex 資料夾。Gamerdex 只能看到這個資料夾。",
+            "badge": "個人帳號"
         }
     },
     "connect": {
@@ -129,6 +131,16 @@
             "step1": "建立一個名為 {name} 的空白私人儲存庫。勾選「Add a README file」。",
             "step2": "使用 GitHub 登入，然後只授予 Gamerdex Sync 存取該儲存庫的權限。",
             "button": "連線 GitHub"
+        },
+        "dropbox": {
+            "step1": "在這個視窗中使用 Dropbox 登入。",
+            "step2": "允許存取 Gamerdex 應用程式資料夾。應用程式看不到你的其他檔案。",
+            "button": "連線 Dropbox"
+        },
+        "microsoft": {
+            "step1": "在這個視窗中使用你的個人 Microsoft 帳號登入。",
+            "step2": "允許存取 Gamerdex 應用程式資料夾。應用程式看不到你的其他檔案。",
+            "button": "連線 OneDrive"
         }
     },
     "how": {
@@ -190,7 +202,9 @@
         "kb": "{amount} KB",
         "note": "資料檔案的格式與備份檔案相同。中繼資料檔案記錄裝置清單，不含遊戲資料。你的登入資訊不會出現在這兩個檔案中。",
         "googleNote": "Gamerdex 資料夾在你的 Drive 中看得到。Gamerdex 只能開啟它自己建立的檔案。",
-        "githubNote": "請保持儲存庫為私人。任何能開啟它的人都能讀取你的資料。"
+        "githubNote": "請保持儲存庫為私人。任何能開啟它的人都能讀取你的資料。",
+        "dropboxNote": "Gamerdex 資料夾位於你 Dropbox 的 Apps 資料夾中。Gamerdex 只能開啟這個資料夾。",
+        "microsoftNote": "Gamerdex 資料夾位於你 OneDrive 的 Apps 資料夾中。Gamerdex 只能開啟這個資料夾。"
     },
     "device": {
         "title": "這部裝置",
@@ -207,7 +221,9 @@
         "body": "停止在這個瀏覽器上同步。你的領主會保留在這部裝置和雲端。其他裝置會繼續同步。",
         "button": "中斷 {provider} 連線",
         "googleHint": "如要自行刪除雲端副本，請先中斷連線，然後刪除你 Google Drive 中的 Gamerdex 資料夾。",
-        "githubHint": "如要自行刪除雲端副本，請先中斷連線，然後刪除你儲存庫中的 Gamerdex 資料夾。"
+        "githubHint": "如要自行刪除雲端副本，請先中斷連線，然後刪除你儲存庫中的 Gamerdex 資料夾。",
+        "dropboxHint": "如要自行刪除雲端副本，請先中斷連線，然後刪除你 Dropbox 中 Apps 資料夾下的 Gamerdex 應用程式資料夾。",
+        "microsoftHint": "如要自行刪除雲端副本，請先中斷連線，然後刪除你 OneDrive 中 Apps 資料夾下的 Gamerdex 應用程式資料夾。"
     },
     "first": {
         "thisDevice": "這部裝置",

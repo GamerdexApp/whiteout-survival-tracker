@@ -6,15 +6,6 @@
     },
     "unavailable": "このビルドでは同期を利用できません。",
     "privacy": "データは、あなた自身のGitHubアカウントのプライベートリポジトリに送られます。Gamerdexにはデータを保存するサーバーがなく、アプリが利用できるのは、あなたが選んだ1つのリポジトリだけです。",
-    "signedOut": {
-        "title": "サインイン",
-        "body": "GitHubでサインインし、データを保存するリポジトリを選んでください。",
-        "button": "GitHubでサインイン",
-        "choose": "データの保存先を選んでください。データはご自身のアカウントに保存され、Gamerdexには保存するサーバーがありません。",
-        "githubHint": "GitHubアカウント内の、{name}という名前のプライベートリポジトリです。",
-        "googleHint": "Google Drive内の、{name}という名前のフォルダです。Gamerdexは自分で作成したファイルだけを見ることができます。",
-        "google": "Googleでサインイン"
-    },
     "repository": {
         "title": "データ用リポジトリを設定",
         "body": "データは、あなたのGitHubアカウントの{name}というプライベートリポジトリに保存されます。Gamerdex Syncが利用できるのは、そのリポジトリだけです。",
@@ -42,7 +33,8 @@
         "signedOut": "サインアウトしました。このデバイスのデータはそのままです。",
         "storage": "保存先",
         "googleValue": "Google Drive、フォルダ {name}",
-        "folder": "フォルダ {name}"
+        "folder": "フォルダ {name}",
+        "signInWith": "{provider}でサインイン"
     },
     "status": {
         "idle": "同期済み",
@@ -65,9 +57,9 @@
         "reauth": "サインインの有効期限が切れました。同期を続けるには、もう一度サインインしてください。",
         "forbidden": "GitHubがリポジトリへのアクセスを拒否しました。Gamerdex Syncに「Contents」の「Read and write」の権限があることを確認してから、もう一度同期してください。",
         "httpStatus": "GitHubの応答: {status}。",
-        "notFoundGoogle": "Google Drive内のファイルまたはフォルダが見つかりません。もう一度同期してください。",
-        "forbiddenGoogle": "GoogleがDriveへのアクセスを拒否しました。もう一度サインインし、Gamerdexが作成するファイルへのアクセスを許可してください。",
-        "httpStatusGoogle": "Googleの応答: {status}。"
+        "notFoundFolder": "{provider}内のファイルまたはフォルダが見つかりません。もう一度同期してください。",
+        "forbiddenFolder": "{provider}がアクセスを拒否しました。もう一度サインインして、Gamerdexが作成するファイルへのアクセスを許可してください。",
+        "httpStatusFolder": "{provider}の応答: {status}。"
     },
     "choice": {
         "title": "このデバイスとクラウドの両方にデータがあります",
@@ -96,7 +88,7 @@
         "back": "設定に戻る",
         "denied": "サインインはキャンセルされました。",
         "state": "サインインを確認できませんでした。設定からやり直してください。",
-        "missing": "GitHubからサインインコードが届きませんでした。設定からやり直してください。",
+        "missing": "サインインでコードが送られてきませんでした。設定からやり直してください。",
         "failed": "サインインを完了できませんでした。しばらくしてからもう一度お試しください。"
     },
     "chiefCount": "{count, plural, other {チーフ{amount}人}}",
@@ -110,6 +102,16 @@
             "name": "Google Drive",
             "tile": "Drive内に表示されるGamerdexフォルダです。Gamerdexは自分で作成したファイルだけを見ることができます。",
             "badge": "おすすめ"
+        },
+        "dropbox": {
+            "name": "Dropbox",
+            "tile": "DropboxのAppsフォルダ内にあるGamerdexフォルダです。Gamerdexはそのフォルダだけを見ることができます。",
+            "badge": "アプリフォルダのみ"
+        },
+        "microsoft": {
+            "name": "OneDrive",
+            "tile": "OneDriveのAppsフォルダ内にあるGamerdexフォルダです。Gamerdexはそのフォルダだけを見ることができます。",
+            "badge": "個人アカウント"
         }
     },
     "connect": {
@@ -129,6 +131,16 @@
             "step1": "{name}という名前の空のプライベートリポジトリを作成します。「Add a README file」にチェックを入れてください。",
             "step2": "GitHubでサインインし、Gamerdex Syncにそのリポジトリだけへのアクセスを許可します。",
             "button": "GitHubに接続"
+        },
+        "dropbox": {
+            "step1": "このウィンドウでDropboxにサインインします。",
+            "step2": "Gamerdexアプリフォルダへのアクセスを許可してください。アプリはほかのファイルを見ることができません。",
+            "button": "Dropboxに接続"
+        },
+        "microsoft": {
+            "step1": "このウィンドウで個人のMicrosoftアカウントにサインインします。",
+            "step2": "Gamerdexアプリフォルダへのアクセスを許可してください。アプリはほかのファイルを見ることができません。",
+            "button": "OneDriveに接続"
         }
     },
     "how": {
@@ -190,7 +202,9 @@
         "kb": "{amount} KB",
         "note": "データファイルは、バックアップファイルと同じ形式です。メタファイルにはデバイス一覧だけが入り、ゲームのデータは入りません。サインイン情報はどちらのファイルにも入りません。",
         "googleNote": "GamerdexフォルダはDrive内に表示されます。Gamerdexが開けるのは、自分で作成したファイルだけです。",
-        "githubNote": "リポジトリはプライベートのままにしてください。開ける人は誰でもデータを読めます。"
+        "githubNote": "リポジトリはプライベートのままにしてください。開ける人は誰でもデータを読めます。",
+        "dropboxNote": "GamerdexフォルダはDropboxのAppsフォルダ内にあります。Gamerdexが開けるのは、そのフォルダだけです。",
+        "microsoftNote": "GamerdexフォルダはOneDriveのAppsフォルダ内にあります。Gamerdexが開けるのは、そのフォルダだけです。"
     },
     "device": {
         "title": "このデバイス",
@@ -207,7 +221,9 @@
         "body": "このブラウザでの同期を停止します。チーフはこのデバイスとクラウドに残ります。ほかのデバイスは同期を続けます。",
         "button": "{provider}の接続を解除",
         "googleHint": "クラウドのコピーを自分で削除するには、接続を解除してから、Google DriveのGamerdexフォルダを削除してください。",
-        "githubHint": "クラウドのコピーを自分で削除するには、接続を解除してから、リポジトリのGamerdexフォルダを削除してください。"
+        "githubHint": "クラウドのコピーを自分で削除するには、接続を解除してから、リポジトリのGamerdexフォルダを削除してください。",
+        "dropboxHint": "クラウドのコピーを自分で削除するには、接続を解除してから、DropboxのAppsフォルダ内にあるアプリフォルダを削除してください。",
+        "microsoftHint": "クラウドのコピーを自分で削除するには、接続を解除してから、OneDriveのAppsフォルダ内にあるアプリフォルダを削除してください。"
     },
     "first": {
         "thisDevice": "このデバイス",

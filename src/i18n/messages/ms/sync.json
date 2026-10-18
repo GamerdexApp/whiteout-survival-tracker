@@ -6,15 +6,6 @@
     },
     "unavailable": "Segerak tidak tersedia dalam binaan ini.",
     "privacy": "Data anda dihantar ke repositori peribadi dalam akaun GitHub anda sendiri. Gamerdex tidak mempunyai pelayan yang menyimpannya, dan aplikasi hanya boleh mengakses satu repositori yang anda pilih.",
-    "signedOut": {
-        "title": "Log masuk",
-        "body": "Log masuk dengan GitHub, kemudian pilih repositori yang menyimpan data anda.",
-        "button": "Log masuk dengan GitHub",
-        "choose": "Pilih tempat untuk menyimpan data anda. Data kekal dalam akaun anda sendiri, dan Gamerdex tidak mempunyai pelayan yang menyimpannya.",
-        "githubHint": "Repositori peribadi bernama {name} dalam akaun GitHub anda.",
-        "googleHint": "Folder bernama {name} dalam Google Drive anda. Gamerdex hanya boleh melihat fail yang dicipta olehnya.",
-        "google": "Log masuk dengan Google"
-    },
     "repository": {
         "title": "Sediakan repositori data anda",
         "body": "Data anda disimpan dalam repositori peribadi bernama {name} dalam akaun GitHub anda. Gamerdex Sync hanya boleh mengakses satu repositori itu.",
@@ -42,7 +33,8 @@
         "signedOut": "Sudah log keluar. Data pada peranti ini kekal seperti sedia ada.",
         "storage": "Disimpan dalam",
         "googleValue": "Google Drive, folder {name}",
-        "folder": "Folder {name}"
+        "folder": "Folder {name}",
+        "signInWith": "Log masuk dengan {provider}"
     },
     "status": {
         "idle": "Disegerakkan",
@@ -65,9 +57,9 @@
         "reauth": "Sesi log masuk anda telah tamat. Log masuk semula untuk terus menyegerak.",
         "forbidden": "GitHub menolak akses ke repositori. Pastikan Gamerdex Sync mempunyai akses Read and write untuk Contents, kemudian segerak semula.",
         "httpStatus": "GitHub menjawab {status}.",
-        "notFoundGoogle": "Fail atau folder dalam Google Drive tidak ditemui. Segerak semula.",
-        "forbiddenGoogle": "Google menolak akses ke Drive. Log masuk semula dan benarkan akses kepada fail yang dicipta oleh Gamerdex.",
-        "httpStatusGoogle": "Google menjawab {status}."
+        "notFoundFolder": "Fail atau folder dalam {provider} tidak ditemui. Segerak semula.",
+        "forbiddenFolder": "{provider} menolak akses. Log masuk semula dan benarkan akses kepada fail yang dicipta oleh Gamerdex.",
+        "httpStatusFolder": "{provider} menjawab {status}."
     },
     "choice": {
         "title": "Peranti ini dan awan sama-sama mempunyai data",
@@ -96,7 +88,7 @@
         "back": "Kembali ke Tetapan",
         "denied": "Log masuk telah dibatalkan.",
         "state": "Log masuk tidak dapat disemak. Mulakan semula dari Tetapan.",
-        "missing": "GitHub tidak menghantar kod log masuk. Mulakan semula dari Tetapan.",
+        "missing": "Log masuk tidak menghantar kod. Mulakan semula dari Tetapan.",
         "failed": "Log masuk tidak dapat dilengkapkan. Cuba lagi nanti."
     },
     "chiefCount": "{count, plural, other {{amount} chief}}",
@@ -110,6 +102,16 @@
             "name": "Google Drive",
             "tile": "Folder Gamerdex yang kelihatan dalam Drive anda. Gamerdex hanya melihat fail yang dicipta olehnya.",
             "badge": "Disyorkan"
+        },
+        "dropbox": {
+            "name": "Dropbox",
+            "tile": "Folder Gamerdex dalam folder Apps Dropbox anda. Gamerdex hanya melihat folder itu.",
+            "badge": "Folder aplikasi sahaja"
+        },
+        "microsoft": {
+            "name": "OneDrive",
+            "tile": "Folder Gamerdex dalam folder Apps OneDrive anda. Gamerdex hanya melihat folder itu.",
+            "badge": "Akaun peribadi"
         }
     },
     "connect": {
@@ -129,6 +131,16 @@
             "step1": "Cipta repositori peribadi kosong bernama {name}. Tandakan Add a README file.",
             "step2": "Log masuk dengan GitHub, kemudian beri Gamerdex Sync akses kepada repositori itu sahaja.",
             "button": "Sambungkan GitHub"
+        },
+        "dropbox": {
+            "step1": "Log masuk dengan Dropbox dalam tetingkap ini.",
+            "step2": "Benarkan akses kepada folder aplikasi Gamerdex. Aplikasi tidak dapat melihat fail anda yang lain.",
+            "button": "Sambungkan Dropbox"
+        },
+        "microsoft": {
+            "step1": "Log masuk dengan akaun Microsoft peribadi anda dalam tetingkap ini.",
+            "step2": "Benarkan akses kepada folder aplikasi Gamerdex. Aplikasi tidak dapat melihat fail anda yang lain.",
+            "button": "Sambungkan OneDrive"
         }
     },
     "how": {
@@ -190,7 +202,9 @@
         "kb": "{amount} KB",
         "note": "Fail data menggunakan format yang sama dengan fail sandaran. Fail meta memuatkan senarai peranti dan tiada data permainan. Log masuk anda tidak pernah berada dalam kedua-dua fail.",
         "googleNote": "Folder Gamerdex kelihatan dalam Drive anda. Gamerdex hanya boleh membuka fail yang dicipta olehnya.",
-        "githubNote": "Pastikan repositori kekal peribadi. Sesiapa yang boleh membukanya boleh membaca data anda."
+        "githubNote": "Pastikan repositori kekal peribadi. Sesiapa yang boleh membukanya boleh membaca data anda.",
+        "dropboxNote": "Folder Gamerdex berada dalam folder Apps Dropbox anda. Gamerdex hanya boleh membuka folder itu.",
+        "microsoftNote": "Folder Gamerdex berada dalam folder Apps OneDrive anda. Gamerdex hanya boleh membuka folder itu."
     },
     "device": {
         "title": "Peranti ini",
@@ -207,7 +221,9 @@
         "body": "Menghentikan segerak pada pelayar ini. Chief anda kekal pada peranti ini dan dalam awan. Peranti lain terus menyegerak.",
         "button": "Putuskan sambungan {provider}",
         "googleHint": "Untuk memadam salinan awan sendiri, putuskan sambungan, kemudian padam folder Gamerdex dalam Google Drive anda.",
-        "githubHint": "Untuk memadam salinan awan sendiri, putuskan sambungan, kemudian padam folder Gamerdex dalam repositori anda."
+        "githubHint": "Untuk memadam salinan awan sendiri, putuskan sambungan, kemudian padam folder Gamerdex dalam repositori anda.",
+        "dropboxHint": "Untuk memadam salinan awan sendiri, putuskan sambungan, kemudian padam folder aplikasi di bawah Apps dalam Dropbox anda.",
+        "microsoftHint": "Untuk memadam salinan awan sendiri, putuskan sambungan, kemudian padam folder aplikasi di bawah Apps dalam OneDrive anda."
     },
     "first": {
         "thisDevice": "Peranti ini",

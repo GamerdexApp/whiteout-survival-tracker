@@ -6,15 +6,6 @@
     },
     "unavailable": "Senkronizasyon bu sürümde kullanılamıyor.",
     "privacy": "Verilerin kendi GitHub hesabındaki özel bir depoya gider. Gamerdex'in bunları saklayan bir sunucusu yoktur ve uygulama yalnızca senin seçtiğin tek depoya erişebilir.",
-    "signedOut": {
-        "title": "Giriş yap",
-        "body": "GitHub ile giriş yap, sonra verilerini tutan depoyu seç.",
-        "button": "GitHub ile giriş yap",
-        "choose": "Verilerini nerede tutacağını seç. Veriler kendi hesabında kalır ve Gamerdex'in bunları saklayan bir sunucusu yoktur.",
-        "githubHint": "GitHub hesabında {name} adlı özel bir depo.",
-        "googleHint": "Google Drive'ında {name} adlı bir klasör. Gamerdex yalnızca kendi oluşturduğu dosyaları görebilir.",
-        "google": "Google ile giriş yap"
-    },
     "repository": {
         "title": "Veri deposunu kur",
         "body": "Verilerin, GitHub hesabındaki {name} adlı özel bir depoda tutulur. Gamerdex Sync yalnızca bu tek depoya erişebilir.",
@@ -42,7 +33,8 @@
         "signedOut": "Çıkış yapıldı. Bu cihazdaki veriler olduğu gibi kalır.",
         "storage": "Saklandığı yer",
         "googleValue": "Google Drive, {name} klasörü",
-        "folder": "Klasör {name}"
+        "folder": "Klasör {name}",
+        "signInWith": "{provider} ile giriş yap"
     },
     "status": {
         "idle": "Senkronize",
@@ -65,9 +57,9 @@
         "reauth": "Girişin sona erdi. Senkronu sürdürmek için tekrar giriş yap.",
         "forbidden": "GitHub depoya erişimi reddetti. Gamerdex Sync'in Contents için Read and write erişimi olduğunu kontrol et, sonra tekrar senkronize et.",
         "httpStatus": "GitHub {status} yanıtını verdi.",
-        "notFoundGoogle": "Google Drive'da bir dosya veya klasör bulunamadı. Tekrar senkronize et.",
-        "forbiddenGoogle": "Google, Drive erişimini reddetti. Tekrar giriş yap ve Gamerdex'in oluşturduğu dosyalara erişime izin ver.",
-        "httpStatusGoogle": "Google {status} yanıtını verdi."
+        "notFoundFolder": "{provider}'da bir dosya veya klasör bulunamadı. Tekrar senkronize et.",
+        "forbiddenFolder": "{provider} erişimi reddetti. Tekrar giriş yap ve Gamerdex'in oluşturduğu dosyalara erişime izin ver.",
+        "httpStatusFolder": "{provider} {status} yanıtını verdi."
     },
     "choice": {
         "title": "Bu cihazda ve bulutta veri var",
@@ -96,7 +88,7 @@
         "back": "Ayarlar'a dön",
         "denied": "Giriş iptal edildi.",
         "state": "Giriş doğrulanamadı. Ayarlar'dan yeniden başla.",
-        "missing": "GitHub giriş kodu göndermedi. Ayarlar'dan yeniden başla.",
+        "missing": "Giriş bir kod göndermedi. Ayarlar'dan yeniden başla.",
         "failed": "Giriş tamamlanamadı. Daha sonra tekrar dene."
     },
     "chiefCount": "{count, plural, one {{amount} şef} other {{amount} şef}}",
@@ -110,6 +102,16 @@
             "name": "Google Drive",
             "tile": "Drive'ında görünür bir Gamerdex klasörü. Gamerdex yalnızca kendi oluşturduğu dosyaları görebilir.",
             "badge": "Önerilen"
+        },
+        "dropbox": {
+            "name": "Dropbox",
+            "tile": "Dropbox'ındaki Apps klasörünün içinde bir Gamerdex klasörü. Gamerdex yalnızca bu klasörü görebilir.",
+            "badge": "Yalnızca uygulama klasörü"
+        },
+        "microsoft": {
+            "name": "OneDrive",
+            "tile": "OneDrive'ındaki Apps klasörünün içinde bir Gamerdex klasörü. Gamerdex yalnızca bu klasörü görebilir.",
+            "badge": "Kişisel hesaplar"
         }
     },
     "connect": {
@@ -129,6 +131,16 @@
             "step1": "{name} adlı boş bir özel depo oluştur. Add a README file seçeneğini işaretle.",
             "step2": "GitHub ile giriş yap, sonra Gamerdex Sync'e yalnızca o depoya erişim ver.",
             "button": "GitHub'a bağlan"
+        },
+        "dropbox": {
+            "step1": "Bu pencerede Dropbox ile giriş yap.",
+            "step2": "Gamerdex uygulama klasörüne erişime izin ver. Uygulama diğer dosyalarını göremez.",
+            "button": "Dropbox'a bağlan"
+        },
+        "microsoft": {
+            "step1": "Bu pencerede kişisel Microsoft hesabınla giriş yap.",
+            "step2": "Gamerdex uygulama klasörüne erişime izin ver. Uygulama diğer dosyalarını göremez.",
+            "button": "OneDrive'a bağlan"
         }
     },
     "how": {
@@ -190,7 +202,9 @@
         "kb": "{amount} KB",
         "note": "Veri dosyası yedek dosyasıyla aynı biçimi kullanır. Meta dosyası cihaz listesini tutar, oyun verisi içermez. Girişin iki dosyada da yer almaz.",
         "googleNote": "Gamerdex klasörü Drive'ında görünür. Gamerdex yalnızca kendi oluşturduğu dosyaları açabilir.",
-        "githubNote": "Depoyu özel tut. Depoyu açabilen herkes verilerini okuyabilir."
+        "githubNote": "Depoyu özel tut. Depoyu açabilen herkes verilerini okuyabilir.",
+        "dropboxNote": "Gamerdex klasörü Dropbox'ındaki Apps klasörünün içindedir. Gamerdex yalnızca bu klasörü açabilir.",
+        "microsoftNote": "Gamerdex klasörü OneDrive'ındaki Apps klasörünün içindedir. Gamerdex yalnızca bu klasörü açabilir."
     },
     "device": {
         "title": "Bu cihaz",
@@ -207,7 +221,9 @@
         "body": "Bu tarayıcıda senkronu durdurur. Şeflerin bu cihazda ve bulutta kalır. Diğer cihazlar senkronize etmeye devam eder.",
         "button": "Bağlantıyı kes: {provider}",
         "googleHint": "Buluttaki kopyayı kendin silmek için bağlantıyı kes, sonra Google Drive'ındaki Gamerdex klasörünü sil.",
-        "githubHint": "Buluttaki kopyayı kendin silmek için bağlantıyı kes, sonra depondaki Gamerdex klasörünü sil."
+        "githubHint": "Buluttaki kopyayı kendin silmek için bağlantıyı kes, sonra depondaki Gamerdex klasörünü sil.",
+        "dropboxHint": "Buluttaki kopyayı kendin silmek için bağlantıyı kes, sonra Dropbox'ındaki Apps altında uygulama klasörünü sil.",
+        "microsoftHint": "Buluttaki kopyayı kendin silmek için bağlantıyı kes, sonra OneDrive'ındaki Apps altında uygulama klasörünü sil."
     },
     "first": {
         "thisDevice": "Bu cihaz",

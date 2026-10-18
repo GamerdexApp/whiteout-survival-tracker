@@ -6,15 +6,6 @@
     },
     "unavailable": "La sincronizzazione non è disponibile in questa versione.",
     "privacy": "I tuoi dati vanno in un repository privato nel tuo account GitHub. Gamerdex non ha un server che li conservi, e l'app può accedere solo al repository che scegli.",
-    "signedOut": {
-        "title": "Accedi",
-        "body": "Accedi con GitHub, poi scegli il repository che contiene i tuoi dati.",
-        "button": "Accedi con GitHub",
-        "choose": "Scegli dove conservare i tuoi dati. Restano nel tuo account, e Gamerdex non ha un server che li conservi.",
-        "githubHint": "Un repository privato chiamato {name} nel tuo account GitHub.",
-        "googleHint": "Una cartella chiamata {name} nel tuo Google Drive. Gamerdex può vedere solo i file che crea.",
-        "google": "Accedi con Google"
-    },
     "repository": {
         "title": "Configura il repository dei dati",
         "body": "I tuoi dati sono conservati in un repository privato chiamato {name} nel tuo account GitHub. Gamerdex Sync può accedere solo a quel repository.",
@@ -42,7 +33,8 @@
         "signedOut": "Disconnesso. I dati su questo dispositivo restano come sono.",
         "storage": "Conservato in",
         "googleValue": "Google Drive, cartella {name}",
-        "folder": "Cartella {name}"
+        "folder": "Cartella {name}",
+        "signInWith": "Accedi con {provider}"
     },
     "status": {
         "idle": "Sincronizzato",
@@ -65,9 +57,9 @@
         "reauth": "Il tuo accesso è scaduto. Accedi di nuovo per continuare a sincronizzare.",
         "forbidden": "GitHub ha negato l'accesso al repository. Controlla che Gamerdex Sync abbia accesso Read and write a Contents, poi sincronizza di nuovo.",
         "httpStatus": "GitHub ha risposto {status}.",
-        "notFoundGoogle": "Un file o una cartella di Google Drive non è stato trovato. Sincronizza di nuovo.",
-        "forbiddenGoogle": "Google ha negato l'accesso a Drive. Accedi di nuovo e consenti l'accesso ai file che Gamerdex crea.",
-        "httpStatusGoogle": "Google ha risposto {status}."
+        "notFoundFolder": "Un file o una cartella di {provider} non è stato trovato. Sincronizza di nuovo.",
+        "forbiddenFolder": "{provider} ha negato l'accesso. Accedi di nuovo e consenti l'accesso ai file che Gamerdex crea.",
+        "httpStatusFolder": "{provider} ha risposto {status}."
     },
     "choice": {
         "title": "Sia questo dispositivo sia il cloud hanno dei dati",
@@ -96,7 +88,7 @@
         "back": "Torna alle Impostazioni",
         "denied": "L'accesso è stato annullato.",
         "state": "Non è stato possibile verificare l'accesso. Ricomincia dalle Impostazioni.",
-        "missing": "GitHub non ha inviato il codice di accesso. Ricomincia dalle Impostazioni.",
+        "missing": "L'accesso non ha inviato alcun codice. Ricomincia dalle Impostazioni.",
         "failed": "Non è stato possibile completare l'accesso. Riprova più tardi."
     },
     "chiefCount": "{count, plural, one {{amount} capo} other {{amount} capi}}",
@@ -110,6 +102,16 @@
             "name": "Google Drive",
             "tile": "Una cartella Gamerdex visibile nel tuo Drive. Gamerdex vede solo i file che crea.",
             "badge": "Consigliato"
+        },
+        "dropbox": {
+            "name": "Dropbox",
+            "tile": "Una cartella Gamerdex dentro la cartella Apps del tuo Dropbox. Gamerdex vede solo quella cartella.",
+            "badge": "Solo cartella dell'app"
+        },
+        "microsoft": {
+            "name": "OneDrive",
+            "tile": "Una cartella Gamerdex dentro la cartella Apps del tuo OneDrive. Gamerdex vede solo quella cartella.",
+            "badge": "Account personali"
         }
     },
     "connect": {
@@ -129,6 +131,16 @@
             "step1": "Crea un repository privato vuoto chiamato {name}. Seleziona Add a README file.",
             "step2": "Accedi con GitHub, poi dai a Gamerdex Sync l'accesso solo a quel repository.",
             "button": "Connetti GitHub"
+        },
+        "dropbox": {
+            "step1": "Accedi con Dropbox in questa finestra.",
+            "step2": "Consenti l'accesso alla cartella dell'app Gamerdex. L'app non vede gli altri tuoi file.",
+            "button": "Connetti Dropbox"
+        },
+        "microsoft": {
+            "step1": "Accedi con il tuo account Microsoft personale in questa finestra.",
+            "step2": "Consenti l'accesso alla cartella dell'app Gamerdex. L'app non vede gli altri tuoi file.",
+            "button": "Connetti OneDrive"
         }
     },
     "how": {
@@ -190,7 +202,9 @@
         "kb": "{amount} KB",
         "note": "Il file dei dati usa lo stesso formato del file di backup. Il file meta contiene l'elenco dei dispositivi e nessun dato di gioco. Il tuo accesso non è mai in nessuno dei due.",
         "googleNote": "La cartella Gamerdex è visibile nel tuo Drive. Gamerdex può aprire solo i file che ha creato.",
-        "githubNote": "Tieni privato il repository. Chiunque possa aprirlo può leggere i tuoi dati."
+        "githubNote": "Tieni privato il repository. Chiunque possa aprirlo può leggere i tuoi dati.",
+        "dropboxNote": "La cartella Gamerdex è dentro la cartella Apps del tuo Dropbox. Gamerdex può aprire solo quella cartella.",
+        "microsoftNote": "La cartella Gamerdex è dentro la cartella Apps del tuo OneDrive. Gamerdex può aprire solo quella cartella."
     },
     "device": {
         "title": "Questo dispositivo",
@@ -207,7 +221,9 @@
         "body": "Interrompe la sincronizzazione su questo browser. I tuoi capi restano su questo dispositivo e nel cloud. Gli altri dispositivi continuano a sincronizzare.",
         "button": "Disconnetti {provider}",
         "googleHint": "Per eliminare tu stesso la copia nel cloud, disconnetti, poi elimina la cartella Gamerdex nel tuo Google Drive.",
-        "githubHint": "Per eliminare tu stesso la copia nel cloud, disconnetti, poi elimina la cartella Gamerdex nel tuo repository."
+        "githubHint": "Per eliminare tu stesso la copia nel cloud, disconnetti, poi elimina la cartella Gamerdex nel tuo repository.",
+        "dropboxHint": "Per eliminare tu stesso la copia nel cloud, disconnetti, poi elimina la cartella dell'app dentro Apps nel tuo Dropbox.",
+        "microsoftHint": "Per eliminare tu stesso la copia nel cloud, disconnetti, poi elimina la cartella dell'app dentro Apps nel tuo OneDrive."
     },
     "first": {
         "thisDevice": "Questo dispositivo",

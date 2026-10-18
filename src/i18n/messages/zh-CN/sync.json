@@ -6,15 +6,6 @@
     },
     "unavailable": "此版本不支持同步。",
     "privacy": "你的数据会发送到你自己 GitHub 账号下的私有仓库。Gamerdex 没有服务器存储这些数据，应用也只能访问你选择的那一个仓库。",
-    "signedOut": {
-        "title": "登录",
-        "body": "使用 GitHub 登录，然后选择保存你数据的仓库。",
-        "button": "使用 GitHub 登录",
-        "choose": "选择数据的保存位置。数据保存在你自己的账号中，Gamerdex 没有服务器存储这些数据。",
-        "githubHint": "你的 GitHub 账号下名为 {name} 的私有仓库。",
-        "googleHint": "你的 Google Drive 中名为 {name} 的文件夹。Gamerdex 只能看到它自己创建的文件。",
-        "google": "使用 Google 登录"
-    },
     "repository": {
         "title": "设置你的数据仓库",
         "body": "你的数据保存在 GitHub 账号下名为 {name} 的私有仓库中。Gamerdex Sync 只能访问这一个仓库。",
@@ -42,7 +33,8 @@
         "signedOut": "已退出登录。此设备上的数据保持不变。",
         "storage": "保存位置",
         "googleValue": "Google Drive，文件夹 {name}",
-        "folder": "文件夹 {name}"
+        "folder": "文件夹 {name}",
+        "signInWith": "使用 {provider} 登录"
     },
     "status": {
         "idle": "已同步",
@@ -65,9 +57,9 @@
         "reauth": "你的登录已失效。请重新登录以继续同步。",
         "forbidden": "GitHub 拒绝访问该仓库。请确认 Gamerdex Sync 拥有“Contents”的“Read and write”权限，然后再次同步。",
         "httpStatus": "GitHub 返回了 {status}。",
-        "notFoundGoogle": "未找到 Google Drive 中的文件或文件夹。请再次同步。",
-        "forbiddenGoogle": "Google 拒绝访问 Drive。请重新登录，并允许访问 Gamerdex 创建的文件。",
-        "httpStatusGoogle": "Google 返回了 {status}。"
+        "notFoundFolder": "未找到 {provider} 中的文件或文件夹。请再次同步。",
+        "forbiddenFolder": "{provider} 拒绝了访问。请重新登录，并允许访问 Gamerdex 创建的文件。",
+        "httpStatusFolder": "{provider} 返回了 {status}。"
     },
     "choice": {
         "title": "此设备和云端都有数据",
@@ -96,7 +88,7 @@
         "back": "返回设置",
         "denied": "登录已取消。",
         "state": "无法验证此次登录。请从设置重新开始。",
-        "missing": "GitHub 没有返回登录代码。请从设置重新开始。",
+        "missing": "此次登录没有返回代码。请从设置重新开始。",
         "failed": "无法完成登录。请稍后再试。"
     },
     "chiefCount": "{count, plural, other {{amount}个领主}}",
@@ -110,6 +102,16 @@
             "name": "Google Drive",
             "tile": "你的 Drive 中可见的 Gamerdex 文件夹。Gamerdex 只能看到它自己创建的文件。",
             "badge": "推荐"
+        },
+        "dropbox": {
+            "name": "Dropbox",
+            "tile": "Dropbox 的 Apps 文件夹中的一个 Gamerdex 文件夹。Gamerdex 只能看到这个文件夹。",
+            "badge": "仅限应用文件夹"
+        },
+        "microsoft": {
+            "name": "OneDrive",
+            "tile": "OneDrive 的 Apps 文件夹中的一个 Gamerdex 文件夹。Gamerdex 只能看到这个文件夹。",
+            "badge": "个人账户"
         }
     },
     "connect": {
@@ -129,6 +131,16 @@
             "step1": "创建一个名为 {name} 的空私有仓库。勾选“Add a README file”。",
             "step2": "使用 GitHub 登录，然后只授予 Gamerdex Sync 访问该仓库的权限。",
             "button": "连接 GitHub"
+        },
+        "dropbox": {
+            "step1": "在此窗口中使用 Dropbox 登录。",
+            "step2": "允许访问 Gamerdex 应用文件夹。应用无法看到你的其他文件。",
+            "button": "连接 Dropbox"
+        },
+        "microsoft": {
+            "step1": "在此窗口中使用你的个人 Microsoft 账户登录。",
+            "step2": "允许访问 Gamerdex 应用文件夹。应用无法看到你的其他文件。",
+            "button": "连接 OneDrive"
         }
     },
     "how": {
@@ -190,7 +202,9 @@
         "kb": "{amount} KB",
         "note": "数据文件的格式与备份文件相同。元数据文件记录设备列表，不含游戏数据。你的登录信息不会出现在这两个文件中。",
         "googleNote": "Gamerdex 文件夹在你的 Drive 中可见。Gamerdex 只能打开它自己创建的文件。",
-        "githubNote": "请保持仓库为私有。任何能打开它的人都可以读取你的数据。"
+        "githubNote": "请保持仓库为私有。任何能打开它的人都可以读取你的数据。",
+        "dropboxNote": "Gamerdex 文件夹位于你 Dropbox 的 Apps 文件夹中。Gamerdex 只能打开这个文件夹。",
+        "microsoftNote": "Gamerdex 文件夹位于你 OneDrive 的 Apps 文件夹中。Gamerdex 只能打开这个文件夹。"
     },
     "device": {
         "title": "此设备",
@@ -207,7 +221,9 @@
         "body": "停止在此浏览器上同步。你的领主会保留在此设备和云端。其他设备继续同步。",
         "button": "断开 {provider}",
         "googleHint": "如需自行删除云端副本，请先断开连接，然后删除你 Google Drive 中的 Gamerdex 文件夹。",
-        "githubHint": "如需自行删除云端副本，请先断开连接，然后删除你仓库中的 Gamerdex 文件夹。"
+        "githubHint": "如需自行删除云端副本，请先断开连接，然后删除你仓库中的 Gamerdex 文件夹。",
+        "dropboxHint": "如需自行删除云端副本，请先断开连接，然后删除你 Dropbox 中 Apps 文件夹下的 Gamerdex 应用文件夹。",
+        "microsoftHint": "如需自行删除云端副本，请先断开连接，然后删除你 OneDrive 中 Apps 文件夹下的 Gamerdex 应用文件夹。"
     },
     "first": {
         "thisDevice": "此设备",
