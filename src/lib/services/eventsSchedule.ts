@@ -191,6 +191,27 @@ export const instancesBetween = (
   );
 };
 
+/**
+ * The start of the run that begins on the UTC day of `dayMs`, or else of the run that is on at the
+ * start of that day. It is null when the schedule has no run there.
+ */
+export const runStartOnDay = (
+  state: UserEventState,
+  nowMs: number,
+  dayMs: number,
+): number | null => {
+  const dayStartMs = startOfUtcDayMs(dayMs);
+  const dayEndMs = dayStartMs + DAY_MS;
+  const instances = instancesBetween(state, nowMs, dayStartMs, dayEndMs);
+  const starting = instances.find(
+    (instance) => instance.startMs >= dayStartMs && instance.startMs < dayEndMs,
+  );
+  const covering = instances.find(
+    (instance) => instance.startMs < dayStartMs && instance.endMs > dayStartMs,
+  );
+  return (starting ?? covering)?.startMs ?? null;
+};
+
 /** Runs that are on now or start before `untilMs`. */
 export const upcomingInstances = (
   state: UserEventState,

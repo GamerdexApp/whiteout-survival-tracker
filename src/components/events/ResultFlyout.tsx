@@ -28,6 +28,7 @@ import {
 	isDayLong,
 	msFromDateTime,
 	rollForward,
+	runStartOnDay,
 } from "@/service/eventsSchedule";
 import type { EventsZone, RunInstance } from "@/service/eventsSchedule";
 import { gameEventById, isCoreGameEvent } from "@/data/game/gameEvents";
@@ -114,7 +115,9 @@ const loggableRuns = (
 	return endedInstances(state, nowMs)
 		.filter((instance) => {
 			const start = new Date(instance.startMs).toISOString();
-			return start === keepRunStart || !resultFor(chief, state.eventId, start);
+			return (
+				start === keepRunStart || !resultFor(chief, state.eventId, start, instance.endMs)
+			);
 		})
 		.slice(0, RUN_OPTIONS);
 };
@@ -149,14 +152,27 @@ const draftOfResult = (result: EventResultState): Draft => {
 	};
 };
 
-const runStartOf = (draft: Draft) => {
-	if (draft.runKey !== OTHER_RUN) return draft.runKey;
-	const ms = msFromDateTime(draft.otherDate, "00:00");
-	return Number.isFinite(ms) ? new Date(ms).toISOString() : undefined;
+/** A date without a time is moved to the start of the scheduled run on that day. */
+const runStartOf = (draft: Draft, state: UserEventState | undefined, nowMs: number) => {
+	const picked =
+		draft.runKey === OTHER_RUN
+			? msFromDateTime(draft.otherDate, "00:00")
+			: Date.parse(draft.runKey);
+	if (!Number.isFinite(picked)) return undefined;
+	const isDateOnly = new Date(picked).toISOString().endsWith("T00:00:00.000Z");
+	const scheduled = state && isDateOnly ? runStartOnDay(state, nowMs, picked) : null;
+	return new Date(scheduled ?? picked).toISOString();
 };
 
-const resultOfDraft = (draft: Draft, event: GameEvent, kind: ResultKind, gives: UserEventGives) => {
-	const runStart = runStartOf(draft);
+const resultOfDraft = (
+	draft: Draft,
+	event: GameEvent,
+	kind: ResultKind,
+	gives: UserEventGives,
+	state: UserEventState | undefined,
+	nowMs: number
+) => {
+	const runStart = runStartOf(draft, state, nowMs);
 	if (!runStart) return undefined;
 	const base: EventResultState = {
 		id: draft.id ?? crypto.randomUUID(),
@@ -234,7 +250,8 @@ export function ResultFlyout({ target, chief, nowMs, zone, onSave, onClose }: Re
 	const savedRunStart = editing ? draft?.runKey : undefined;
 	const eventOptions = pickableEvents(chief, draft?.eventId);
 	const runs = loggableRuns(chief, state, nowMs, savedRunStart);
-	const result = draft && event ? resultOfDraft(draft, event, kind, gives) : undefined;
+	const result =
+		draft && event ? resultOfDraft(draft, event, kind, gives, state, nowMs) : undefined;
 
 	const patch = (changes: Partial<Draft>) => draft && setDraft({ ...draft, ...changes });
 
@@ -264,7 +281,8 @@ export function ResultFlyout({ target, chief, nowMs, zone, onSave, onClose }: Re
 		const logged = resultFor(
 			chief,
 			draft?.eventId ?? "",
-			new Date(instance.startMs).toISOString()
+			new Date(instance.startMs).toISOString(),
+			instance.endMs
 		);
 		return logged ? named : t("result.notLogged", { run: named });
 	};

@@ -69,7 +69,8 @@ export function MyEventsTab({ chief, entries, zone, nowMs, onEdit, onRemove }: M
 							resultFor(
 								chief,
 								event.id,
-								new Date(lastEnded.startMs).toISOString()
+								new Date(lastEnded.startMs).toISOString(),
+								lastEnded.endMs
 							) !== undefined;
 						const coreOnly = resultsLiveInCoreEvents(event);
 						return (

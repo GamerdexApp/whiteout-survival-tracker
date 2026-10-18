@@ -198,14 +198,42 @@ export const withResult = (
   return { ...chief, eventResults: [...others, result] };
 };
 
+const isDateOnly = (runStart: string) => runStart.endsWith("T00:00:00.000Z");
+
+const isSameUtcDay = (a: string, b: string) =>
+  a.slice(0, 10) === b.slice(0, 10);
+
+const belongsToRun = (dateOnly: string, runStart: string, runEndMs: number) => {
+  const dayMs = Date.parse(dateOnly);
+  return (
+    isSameUtcDay(dateOnly, runStart) ||
+    (dayMs >= Date.parse(runStart) && dayMs < runEndMs)
+  );
+};
+
+/**
+ * The result of a run. A result that was saved with only a date starts at midnight UTC, so it
+ * also belongs to the run that starts on that day or is on at that moment. Without `runEndMs` only
+ * the day of the start counts.
+ */
 export const resultFor = (
   chief: Playthrough,
   eventId: string,
   runStart: string,
-) =>
-  (chief.eventResults ?? []).find(
-    (item) => item.eventId === eventId && item.runStart === runStart,
+  runEndMs = Date.parse(runStart),
+) => {
+  const results = (chief.eventResults ?? []).filter(
+    (item) => item.eventId === eventId,
   );
+  return (
+    results.find((item) => item.runStart === runStart) ??
+    results.find(
+      (item) =>
+        isDateOnly(item.runStart) &&
+        belongsToRun(item.runStart, runStart, runEndMs),
+    )
+  );
+};
 
 export const scoreOfResult = (
   result: EventResultState,
