@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 
-type BadgeTone = "kept" | "changed" | "added" | "fixed" | "locked";
+type BadgeTone = "kept" | "changed" | "added" | "fixed" | "locked" | "warn";
 
 const toneClasses: Record<BadgeTone, string> = {
 	kept: "text-kept",
@@ -8,6 +8,7 @@ const toneClasses: Record<BadgeTone, string> = {
 	added: "text-added",
 	fixed: "text-fixed",
 	locked: "text-locked",
+	warn: "text-warn",
 };
 
 export function Badge({ tone, children }: { tone: BadgeTone; children: ReactNode }) {

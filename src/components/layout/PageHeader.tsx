@@ -8,6 +8,7 @@ import { wikiPages } from "@/data/wiki";
 import type { WikiPageId } from "@/data/wiki";
 import { ButtonLink } from "@/comps/ui/Button";
 import { SavedChip } from "@/comps/ui/SavedChip";
+import { SyncChip } from "./SyncChip";
 
 interface PageHeaderProps {
 	title: string;
@@ -44,8 +45,9 @@ export function PageHeader({ title, subline, actions, wikiPage }: PageHeaderProp
 			<div className="flex flex-wrap items-center gap-3">
 				{actions}
 				<WikiLink wikiPage={wikiPage} />
-				<span className="max-lg:hidden">
+				<span className="flex items-center gap-3 max-lg:hidden">
 					<SavedChip />
+					<SyncChip />
 				</span>
 			</div>
 		</header>

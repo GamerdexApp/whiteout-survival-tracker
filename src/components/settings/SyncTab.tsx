@@ -1,20 +1,32 @@
 "use client";
 
-import type { Conflict } from "@gamerdexapp/gamerdex-sync";
+import { type Conflict, type InstalledRepository, ROOT_FOLDER } from "@gamerdexapp/gamerdex-sync";
 import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
-import type { AppData } from "@/types/app";
 import { usePlaythrough } from "@/lib/contexts/PlaythroughContext";
 import { type SyncErrorKind, useSync } from "@/lib/contexts/SyncContext";
 import { formatDateTime, formatNumber } from "@/lib/format";
+import { availableProviders, type SyncProviderId } from "@/lib/sync/providers";
 import {
 	CREATE_REPOSITORY_URL,
 	DATA_REPOSITORY_NAME,
 	type DataRepository,
 	findDataRepository,
 } from "@/lib/sync/repository";
+import { ActivityCard } from "@/comps/sync/ActivityCard";
+import { ChiefsList } from "@/comps/sync/ChiefsList";
+import { ConnectPanel } from "@/comps/sync/ConnectPanel";
+import { DeviceCard } from "@/comps/sync/DeviceCard";
+import { DisconnectCard } from "@/comps/sync/DisconnectCard";
+import { FirstSyncDialog } from "@/comps/sync/FirstSyncDialog";
+import { HowSyncWorks } from "@/comps/sync/HowSyncWorks";
+import { LivesCard } from "@/comps/sync/LivesCard";
+import { ProviderIcon } from "@/comps/sync/ProviderIcon";
+import { ProviderTiles } from "@/comps/sync/ProviderTiles";
+import { SyncSettingsCard } from "@/comps/sync/SyncSettingsCard";
 import { Badge } from "@/comps/ui/Badge";
 import { Button, buttonClasses } from "@/comps/ui/Button";
+import { Card } from "@/comps/ui/Card";
 import { Note } from "@/comps/ui/Note";
 import { SettingsCard } from "./SettingsCard";
 
@@ -107,42 +119,6 @@ function RepositoryPicker() {
 	);
 }
 
-function ChoiceCard({ local, remote }: { local: AppData; remote: AppData }) {
-	const t = useTranslations("sync");
-	const { syncNow } = useSync();
-	const count = (data: AppData) =>
-		t("chiefCount", {
-			count: data.playthroughs.length,
-			amount: formatNumber(data.playthroughs.length),
-		});
-
-	return (
-		<SettingsCard title={t("choice.title")} description={t("choice.body")}>
-			<p>{t("choice.counts", { local: count(local), cloud: count(remote) })}</p>
-			<div className="flex flex-col gap-3 sm:flex-row">
-				<div className="flex flex-1 flex-col gap-1">
-					<Button variant="primary" onClick={() => void syncNow("merge")}>
-						{t("choice.merge")}
-					</Button>
-					<p className="text-muted">{t("choice.mergeHint")}</p>
-				</div>
-				<div className="flex flex-1 flex-col gap-1">
-					<Button onClick={() => void syncNow("keep-local")}>
-						{t("choice.keepLocal")}
-					</Button>
-					<p className="text-muted">{t("choice.keepLocalHint")}</p>
-				</div>
-				<div className="flex flex-1 flex-col gap-1">
-					<Button onClick={() => void syncNow("keep-cloud")}>
-						{t("choice.keepCloud")}
-					</Button>
-					<p className="text-muted">{t("choice.keepCloudHint")}</p>
-				</div>
-			</div>
-		</SettingsCard>
-	);
-}
-
 function ConflictRow({ conflict }: { conflict: Conflict }) {
 	const t = useTranslations("sync.conflicts");
 	const { playthroughs } = usePlaythrough();
@@ -194,6 +170,238 @@ function ConflictsCard() {
 	);
 }
 
+function Layout({ main, side }: { main: React.ReactNode; side: React.ReactNode }) {
+	return (
+		<div className="grid items-start gap-4 lg:grid-cols-[minmax(0,3fr)_minmax(0,2fr)]">
+			<div className="flex min-w-0 flex-col gap-4">{main}</div>
+			<div className="flex min-w-0 flex-col gap-4">{side}</div>
+		</div>
+	);
+}
+
+function NotConnectedPill() {
+	const t = useTranslations("sync.connect");
+	return (
+		<span className="border-line bg-surface text-muted inline-flex h-8 items-center gap-2 rounded-full border-[1.5px] px-3 text-xs">
+			<span aria-hidden="true" className="bg-muted size-1.5 rounded-full" />
+			{t("pill")}
+		</span>
+	);
+}
+
+function SignedOutView() {
+	const t = useTranslations("sync.connect");
+	const sync = useSync();
+	const [selected, setSelected] = useState<SyncProviderId>(
+		sync.providers.includes("google") ? "google" : "github"
+	);
+
+	return (
+		<Layout
+			main={
+				<Card className="flex flex-col gap-4 p-4">
+					<div className="flex items-center justify-between gap-3">
+						<h2 className="text-lg font-semibold">{t("title")}</h2>
+						<NotConnectedPill />
+					</div>
+					<p className="text-muted">{t("intro")}</p>
+					<ProviderTiles
+						providers={sync.providers}
+						selected={selected}
+						onSelect={setSelected}
+					/>
+					<ConnectPanel
+						provider={selected}
+						pickAnother={sync.providers.length > 1}
+						onConnect={() => sync.signIn(selected)}
+					/>
+				</Card>
+			}
+			side={<HowSyncWorks />}
+		/>
+	);
+}
+
+function NeedsRepositoryView() {
+	const t = useTranslations("sync");
+	const sync = useSync();
+
+	return (
+		<Layout
+			main={
+				<>
+					<RepositoryPicker />
+					<div>
+						<Button variant="ghost" onClick={sync.signOut}>
+							{t("connected.signOut")}
+						</Button>
+					</div>
+				</>
+			}
+			side={<HowSyncWorks />}
+		/>
+	);
+}
+
+function ConnectedView() {
+	const t = useTranslations("sync");
+	const sync = useSync();
+	const [dismissedFor, setDismissedFor] = useState<object | null>(null);
+	const provider = sync.provider ?? "github";
+	const google = provider === "google";
+
+	const failureText: Record<SyncErrorKind | "reauth", string> = {
+		rateLimit: t("error.rateLimit"),
+		notFound: google ? t("error.notFoundGoogle") : t("error.notFound"),
+		forbidden: google ? t("error.forbiddenGoogle") : t("error.forbidden"),
+		server: t("error.server"),
+		data: t("error.data"),
+		busy: t("error.busy"),
+		other: t("error.other"),
+		reauth: t("error.reauth"),
+	};
+	const failure = sync.status === "reauth" ? "reauth" : sync.errorKind;
+	const conflictCount = sync.conflicts.length;
+	const choiceOpen = sync.pendingChoice !== null && dismissedFor !== sync.pendingChoice;
+	const review = () =>
+		document.getElementById("sync-conflicts")?.scrollIntoView({ behavior: "smooth" });
+
+	return (
+		<>
+			<Layout
+				main={
+					<>
+						<Card className="flex flex-col gap-4 p-4">
+							<div className="flex items-start justify-between gap-3">
+								<div className="flex min-w-0 items-center gap-3">
+									<ProviderIcon provider={provider} size={22} />
+									<div className="flex min-w-0 flex-col">
+										<h2 className="text-lg font-semibold">
+											{t(`provider.${provider}.name`)}
+										</h2>
+										<span className="text-muted font-mono text-xs break-all">
+											{google
+												? t("connected.folder", { name: ROOT_FOLDER })
+												: sync.repository}
+										</span>
+									</div>
+								</div>
+								<Badge
+									tone={
+										conflictCount > 0
+											? "warn"
+											: sync.status === "idle"
+												? "added"
+												: "changed"
+									}
+								>
+									{conflictCount > 0
+										? t("status.conflicts")
+										: t(`status.${sync.status}`)}
+								</Badge>
+							</div>
+							{failure && (
+								<Note tone="warning">
+									{failureText[failure]}
+									{sync.errorStatus !== null && (
+										<span className="block">
+											{t(
+												google
+													? "error.httpStatusGoogle"
+													: "error.httpStatus",
+												{
+													status: String(sync.errorStatus),
+												}
+											)}
+										</span>
+									)}
+								</Note>
+							)}
+							{conflictCount > 0 && (
+								<div className="border-primary bg-tint flex flex-col gap-2 rounded-md border-[1.5px] p-3">
+									<p className="font-semibold">
+										{t("banner.title", {
+											count: conflictCount,
+											amount: formatNumber(conflictCount),
+										})}
+									</p>
+									<p className="text-muted">{t("banner.body")}</p>
+									<div>
+										<Button variant="secondary" onClick={review}>
+											{t("banner.review")}
+										</Button>
+									</div>
+								</div>
+							)}
+							{sync.pendingChoice && !choiceOpen && (
+								<div className="border-primary bg-tint flex flex-col gap-2 rounded-md border-[1.5px] p-3">
+									<p className="font-semibold">{t("banner.waiting")}</p>
+									<div>
+										<Button
+											variant="secondary"
+											onClick={() => setDismissedFor(null)}
+										>
+											{t("banner.choose")}
+										</Button>
+									</div>
+								</div>
+							)}
+							<div className="flex flex-wrap items-center justify-between gap-3">
+								<span className="text-muted">
+									{t("connected.lastSync")}{" "}
+									<span className="text-ink">
+										{sync.lastSyncAt
+											? formatDateTime(sync.lastSyncAt)
+											: t("connected.never")}
+									</span>
+								</span>
+								{sync.status === "reauth" ? (
+									<Button variant="primary" onClick={() => sync.signIn(provider)}>
+										{google ? t("signedOut.google") : t("signedOut.button")}
+									</Button>
+								) : (
+									<Button
+										variant="primary"
+										disabled={
+											sync.status === "syncing" ||
+											sync.status === "needsChoice"
+										}
+										onClick={() => void sync.syncNow()}
+									>
+										{t("connected.syncNow")}
+									</Button>
+								)}
+							</div>
+							<ChiefsList onReview={review} />
+						</Card>
+						{conflictCount > 0 && (
+							<div id="sync-conflicts" className="scroll-mt-4">
+								<ConflictsCard />
+							</div>
+						)}
+						<ActivityCard />
+					</>
+				}
+				side={
+					<>
+						<SyncSettingsCard />
+						<LivesCard />
+						<DeviceCard />
+						<DisconnectCard />
+					</>
+				}
+			/>
+			{sync.pendingChoice && (
+				<FirstSyncDialog
+					open={choiceOpen}
+					choice={sync.pendingChoice}
+					onLater={() => setDismissedFor(sync.pendingChoice)}
+				/>
+			)}
+		</>
+	);
+}
+
 export function SyncTab() {
 	const t = useTranslations("sync");
 	const sync = useSync();
@@ -205,97 +413,9 @@ export function SyncTab() {
 			</SettingsCard>
 		);
 	}
-
-	const failureText: Record<SyncErrorKind | "reauth", string> = {
-		rateLimit: t("error.rateLimit"),
-		notFound: t("error.notFound"),
-		forbidden: t("error.forbidden"),
-		server: t("error.server"),
-		data: t("error.data"),
-		busy: t("error.busy"),
-		other: t("error.other"),
-		reauth: t("error.reauth"),
-	};
-	const failure = sync.status === "reauth" ? "reauth" : sync.errorKind;
-
 	if (sync.status === "signedOut") {
-		return (
-			<SettingsCard title={t("signedOut.title")} description={t("signedOut.body")}>
-				<Note>{t("privacy")}</Note>
-				<div>
-					<Button variant="primary" onClick={sync.signIn}>
-						{t("signedOut.button")}
-					</Button>
-				</div>
-			</SettingsCard>
-		);
+		return <SignedOutView />;
 	}
-
-	if (sync.status === "needsRepository") {
-		return (
-			<>
-				<RepositoryPicker />
-				<div>
-					<Button variant="ghost" onClick={sync.signOut}>
-						{t("connected.signOut")}
-					</Button>
-				</div>
-			</>
-		);
-	}
-
-	return (
-		<>
-			<SettingsCard
-				title={t("connected.title")}
-				description={t("tab.description")}
-				aside={
-					<Badge tone={sync.status === "idle" ? "added" : "changed"}>
-						{t(`status.${sync.status}`)}
-					</Badge>
-				}
-			>
-				{failure && (
-					<Note tone="warning">
-						{failureText[failure]}
-						{sync.errorStatus !== null && (
-							<span className="block">
-								{t("error.httpStatus", { status: String(sync.errorStatus) })}
-							</span>
-						)}
-					</Note>
-				)}
-				<dl className="grid grid-cols-[auto_1fr] gap-x-4 gap-y-1">
-					<dt className="text-muted">{t("connected.repository")}</dt>
-					<dd className="font-mono break-all">{sync.repository}</dd>
-					<dt className="text-muted">{t("connected.lastSync")}</dt>
-					<dd>
-						{sync.lastSyncAt ? formatDateTime(sync.lastSyncAt) : t("connected.never")}
-					</dd>
-				</dl>
-				<div className="flex flex-wrap gap-2">
-					{sync.status === "reauth" ? (
-						<Button variant="primary" onClick={sync.signIn}>
-							{t("signedOut.button")}
-						</Button>
-					) : (
-						<Button
-							variant="primary"
-							disabled={sync.status === "syncing" || sync.status === "needsChoice"}
-							onClick={() => void sync.syncNow()}
-						>
-							{t("connected.syncNow")}
-						</Button>
-					)}
-					<Button variant="danger" onClick={sync.signOut}>
-						{t("connected.signOut")}
-					</Button>
-				</div>
-			</SettingsCard>
-			{sync.pendingChoice && (
-				<ChoiceCard local={sync.pendingChoice.local} remote={sync.pendingChoice.remote} />
-			)}
-			<ConflictsCard />
-		</>
-	);
+	if (sync.status === "needsRepository") return <NeedsRepositoryView />;
+	return <ConnectedView />;
 }

@@ -1,14 +1,19 @@
 {
     "tab": {
         "title": "Cloud sync",
-        "description": "Keep your chiefs in a private GitHub repository and share them between your devices."
+        "description": "Keep your chiefs in a private GitHub repository and share them between your devices.",
+        "descriptionGoogle": "Keep your chiefs in your Google Drive and share them between your devices."
     },
     "unavailable": "Sync is not available in this build.",
     "privacy": "Your data goes to a private repository in your own GitHub account. Gamerdex has no server that stores it, and the app can only reach the one repository you choose.",
     "signedOut": {
         "title": "Sign in",
         "body": "Sign in with GitHub, then choose the repository that holds your data.",
-        "button": "Sign in with GitHub"
+        "button": "Sign in with GitHub",
+        "choose": "Choose where to keep your data. It stays in your own account, and Gamerdex has no server that stores it.",
+        "githubHint": "A private repository named {name} in your GitHub account.",
+        "googleHint": "A folder named {name} in your Google Drive. Gamerdex can only see the files that it creates.",
+        "google": "Sign in with Google"
     },
     "repository": {
         "title": "Set up your data repository",
@@ -34,7 +39,10 @@
         "never": "Not synced yet",
         "syncNow": "Sync now",
         "signOut": "Sign out",
-        "signedOut": "Signed out. The data on this device stays as it is."
+        "signedOut": "Signed out. The data on this device stays as it is.",
+        "storage": "Stored in",
+        "googleValue": "Google Drive, folder {name}",
+        "folder": "Folder {name}"
     },
     "status": {
         "idle": "Synced",
@@ -44,7 +52,8 @@
         "needsChoice": "Needs your choice",
         "error": "Sync failed",
         "signedOut": "Not signed in",
-        "needsRepository": "Choose a repository"
+        "needsRepository": "Choose a repository",
+        "conflicts": "Review changes"
     },
     "error": {
         "rateLimit": "GitHub is limiting requests. Sync will work again in a few minutes.",
@@ -55,7 +64,10 @@
         "other": "Something went wrong. Nothing was changed.",
         "reauth": "Your sign in ended. Sign in again to keep syncing.",
         "forbidden": "GitHub refused access to the repository. Check that Gamerdex Sync has Read and write access to Contents, then sync again.",
-        "httpStatus": "GitHub answered {status}."
+        "httpStatus": "GitHub answered {status}.",
+        "notFoundGoogle": "A file or folder in Google Drive was not found. Sync again.",
+        "forbiddenGoogle": "Google refused access to Drive. Sign in again and allow access to the files that Gamerdex creates.",
+        "httpStatusGoogle": "Google answered {status}."
     },
     "choice": {
         "title": "This device and the cloud both have data",
@@ -87,5 +99,122 @@
         "missing": "GitHub sent no sign in code. Start again from Settings.",
         "failed": "The sign in could not be finished. Try again later."
     },
-    "chiefCount": "{count, plural, one {{amount} chief} other {{amount} chiefs}}"
+    "chiefCount": "{count, plural, one {{amount} chief} other {{amount} chiefs}}",
+    "provider": {
+        "github": {
+            "name": "GitHub",
+            "tile": "A private repository that you own, named {name}.",
+            "badge": "For developers"
+        },
+        "google": {
+            "name": "Google Drive",
+            "tile": "A visible Gamerdex folder in your Drive. Gamerdex sees only the files that it creates.",
+            "badge": "Recommended"
+        }
+    },
+    "connect": {
+        "title": "Sync across devices",
+        "pill": "Not connected",
+        "intro": "Keep your chiefs the same on your computer and your phone. Sync is optional and free. Pick where the copy lives.",
+        "pickerLabel": "Where to keep the copy",
+        "panelTitle": "Connect {provider}",
+        "another": "You can pick another provider before you sign in.",
+        "firstSync": "Choose what to keep on the first sync if both sides already have data. Nothing is replaced before you decide.",
+        "google": {
+            "step1": "Sign in with Google in this window.",
+            "step2": "Allow access to the files that Gamerdex creates. The app cannot see your other files.",
+            "button": "Connect Google Drive"
+        },
+        "github": {
+            "step1": "Create an empty private repository named {name}. Tick Add a README file.",
+            "step2": "Sign in with GitHub, then give Gamerdex Sync access to that repository only.",
+            "button": "Connect GitHub"
+        }
+    },
+    "how": {
+        "title": "How sync works",
+        "one": "Your chiefs are saved as one file in your own storage, plus a small file for the list of devices.",
+        "two": "Gamerdex has no server that stores your data. Your browser talks to your storage directly.",
+        "three": "Levels merge per entry and take the higher level. Names, notes and settings use the newer change.",
+        "four": "Each device keeps its own open chief. Sync never switches it.",
+        "five": "Disconnect at any time. Your chiefs stay on every device."
+    },
+    "banner": {
+        "title": "{count, plural, one {{amount} change needs a decision} other {{amount} changes need a decision}}",
+        "body": "Two devices changed the same value. The cloud value is kept until you decide.",
+        "review": "Review",
+        "waiting": "The first sync is waiting for your choice.",
+        "choose": "Choose"
+    },
+    "chiefs": {
+        "title": "Chiefs",
+        "thisDevice": "This device",
+        "cloud": "Cloud, last sync",
+        "notInCloud": "Not in the cloud yet",
+        "upload": "Upload now",
+        "review": "Review",
+        "note": "Deleting a chief removes it from the sync file on the next sync.",
+        "status": {
+            "synced": "Synced",
+            "changedHere": "Changed here",
+            "conflict": "Conflict",
+            "newHere": "New here"
+        }
+    },
+    "activity": {
+        "title": "Recent sync activity",
+        "empty": "Nothing has synced yet.",
+        "connected": "Connected {provider} on this browser.",
+        "uploaded": "Uploaded changes from this device.",
+        "downloaded": "Downloaded changes from the cloud.",
+        "merged": "Merged the changes of both sides.",
+        "conflicts": "{count, plural, one {{amount} change needs a decision.} other {{amount} changes need a decision.}}",
+        "failed": "The sync failed."
+    },
+    "settings": {
+        "title": "Sync settings",
+        "auto": "Sync automatically",
+        "autoHint": "Syncs when the tracker opens and a few seconds after each change.",
+        "focus": "Check for changes when I return to the tab",
+        "focusHint": "Pulls newer cloud data when you switch back to the tracker.",
+        "metered": "Wait for me on a metered connection",
+        "meteredHint": "Skips automatic syncs while the browser reports a data saver connection. Sync now still works."
+    },
+    "lives": {
+        "title": "Where your data lives",
+        "storage": "Storage",
+        "folder": "Folder",
+        "dataFile": "Data file",
+        "metaFile": "Meta file",
+        "size": "Size",
+        "kb": "{amount} KB",
+        "note": "The data file uses the same format as the backup file. The meta file holds the list of devices and no game data. Your sign in is never in either file.",
+        "googleNote": "The Gamerdex folder is visible in your Drive. Gamerdex can open only the files that it created.",
+        "githubNote": "Keep the repository private. Anyone who can open it can read your data."
+    },
+    "device": {
+        "title": "This device",
+        "name": "Device name",
+        "nameHint": "The sync files show this name for this device. Renaming it updates the meta file on the next sync.",
+        "openChief": "Open chief",
+        "noChief": "None",
+        "login": "Sync login",
+        "loginValue": "On this device only",
+        "loginHint": "The open chief is a choice on each device, and sync never changes it. Your sign in stays on this device. It is never in the saved data, the backup file or the sync files."
+    },
+    "disconnect": {
+        "title": "Disconnect",
+        "body": "Stops syncing on this browser. Your chiefs stay on this device and in the cloud. Other devices keep syncing.",
+        "button": "Disconnect {provider}",
+        "googleHint": "To delete the cloud copy yourself, disconnect, then delete the Gamerdex folder in your Google Drive.",
+        "githubHint": "To delete the cloud copy yourself, disconnect, then delete the Gamerdex folder in your repository."
+    },
+    "first": {
+        "thisDevice": "This device",
+        "cloud": "Cloud",
+        "recommended": "Recommended",
+        "later": "Decide later",
+        "apply": "Apply choice",
+        "optionsLabel": "What to keep"
+    }
 }

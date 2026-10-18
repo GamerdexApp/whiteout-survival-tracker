@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import { useRouter, useSearchParams } from "next/navigation";
 import { Suspense } from "react";
+import { useSync } from "@/lib/contexts/SyncContext";
 import { PageHeader } from "@/comps/layout/PageHeader";
 import { AboutTab } from "@/comps/settings/AboutTab";
 import { DataTab } from "@/comps/settings/DataTab";
@@ -10,17 +11,18 @@ import { PreferencesTab } from "@/comps/settings/PreferencesTab";
 import { SyncTab } from "@/comps/settings/SyncTab";
 import { Tabs } from "@/comps/ui/Tabs";
 
-const tabIds = ["preferences", "data", "sync", "about"] as const;
+const tabIds = ["sync", "preferences", "data", "about"] as const;
 
 type SettingsTabId = (typeof tabIds)[number];
 
-const parseTab = (value: string | null): SettingsTabId =>
-	tabIds.find((id) => id === value) ?? "preferences";
+const parseTab = (value: string | null, fallback: SettingsTabId): SettingsTabId =>
+	tabIds.find((id) => id === value) ?? fallback;
 
 function SettingsContent() {
 	const t = useTranslations("settings.page");
 	const router = useRouter();
-	const activeTab = parseTab(useSearchParams().get("tab"));
+	const { available } = useSync();
+	const activeTab = parseTab(useSearchParams().get("tab"), available ? "sync" : "preferences");
 
 	return (
 		<>

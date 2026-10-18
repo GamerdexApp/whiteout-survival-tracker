@@ -1,7 +1,6 @@
 "use client";
 
 import {
-	authorizeUrl,
 	type Conflict,
 	type FirstSyncChoice,
 	type InstalledRepository,
@@ -26,11 +25,22 @@ import React, {
 } from "react";
 import type { AppData } from "@/types/app";
 import { useIsHydrated } from "@/lib/hooks/useIsHydrated";
-import { deviceStore } from "@/lib/sync/device";
-import { AUTH_ENDPOINT, runSync, syncSchema, tokenSource } from "@/lib/sync/run";
+import { type ActivityEntry, deviceStore } from "@/lib/sync/device";
+import {
+	availableProviders,
+	providerOf,
+	signInUrl,
+	type SyncProviderId,
+} from "@/lib/sync/providers";
+import { runSync, syncSchema, tokenSource } from "@/lib/sync/run";
 import { storageService } from "@/service/storage";
 
 const AUTO_SYNC_DELAY_MS = 4000;
+const RETURN_SYNC_GAP_MS = 30_000;
+
+const isMeteredConnection = () =>
+	(navigator as Navigator & { connection?: { saveData?: boolean } }).connection?.saveData ===
+	true;
 
 export type SyncStatus =
 	| "signedOut"
@@ -50,11 +60,17 @@ export interface PendingChoice {
 	remote: AppData;
 }
 
+export type SyncSettingKey = "autoSync" | "syncOnReturn" | "waitOnMetered";
+
 export type CallbackOutcome = "ok" | "denied" | "state" | "missing" | "failed";
 
 interface SyncContextType {
 	/** False when this build has no sign in service address, so syncing is not offered. */
 	available: boolean;
+	/** The providers that this build can sign in with. */
+	providers: SyncProviderId[];
+	/** The provider that this device is signed in with, or chose to sign in with. */
+	provider: SyncProviderId | null;
 	status: SyncStatus;
 	errorKind: SyncErrorKind | null;
 	/** The HTTP status of the provider answer that failed the sync, when there is one. */
@@ -63,7 +79,15 @@ interface SyncContextType {
 	lastSyncAt: string | null;
 	conflicts: Conflict[];
 	pendingChoice: PendingChoice | null;
-	signIn: () => void;
+	/** The switches of the sync settings card. They live on this device. */
+	settings: Record<SyncSettingKey, boolean>;
+	setSyncSetting: (key: SyncSettingKey, value: boolean) => void;
+	deviceName: string;
+	setDeviceName: (name: string) => void;
+	activity: ActivityEntry[];
+	/** The cloud data as this device last saw it, or null before the first sync. */
+	cloudCopy: AppData | null;
+	signIn: (provider: SyncProviderId) => void;
 	installApp: () => void;
 	completeSignIn: (search: string) => Promise<CallbackOutcome>;
 	listRepositories: () => Promise<InstalledRepository[]>;
@@ -127,14 +151,19 @@ export function SyncProvider({ children }: { children: React.ReactNode }) {
 	const running = useRef(false);
 	const rerun = useRef(false);
 	const lastSynced = useRef<AppData | null>(null);
+	const lastRun = useRef(0);
 
-	const available = AUTH_ENDPOINT !== "";
+	const available = availableProviders.length > 0;
 	const signedIn = device.tokens !== null;
+	const provider = providerOf(device);
 
 	const syncNow = useCallback(async (firstSync?: FirstSyncChoice) => {
 		if (running.current) return;
-		if (!deviceStore.load().repository) return;
+		const current = deviceStore.load();
+		if (!providerOf(current) || (providerOf(current) === "github" && !current.repository))
+			return;
 		running.current = true;
+		lastRun.current = Date.now();
 		setBusy(true);
 		try {
 			do {
@@ -153,8 +182,25 @@ export function SyncProvider({ children }: { children: React.ReactNode }) {
 					continue;
 				}
 				const merged = withValidActiveChief(result.data as AppData);
-				if (JSON.stringify(merged) !== JSON.stringify(snapshot)) {
-					storageService.save(merged);
+				const changedHere = JSON.stringify(merged) !== JSON.stringify(snapshot);
+				if (changedHere) storageService.save(merged);
+				const syncedWith = providerOf(deviceStore.load());
+				if (syncedWith) {
+					if (result.uploaded || changedHere) {
+						const kind = result.uploaded
+							? changedHere
+								? "merged"
+								: "uploaded"
+							: "downloaded";
+						deviceStore.recordActivity({ kind, provider: syncedWith });
+					}
+					if (result.conflicts.length > 0) {
+						deviceStore.recordActivity({
+							kind: "conflicts",
+							provider: syncedWith,
+							count: result.conflicts.length,
+						});
+					}
 				}
 				lastSynced.current = storageService.load();
 				deviceStore.update({ state: result.state, lastSyncAt: new Date().toISOString() });
@@ -165,33 +211,60 @@ export function SyncProvider({ children }: { children: React.ReactNode }) {
 		} catch (error) {
 			console.warn("Sync failed", error); // i18n-ignore
 			setFailure(errorKindOf(error));
+			const failedWith = providerOf(deviceStore.load());
+			if (failedWith && deviceStore.load().activity[0]?.kind !== "failed") {
+				deviceStore.recordActivity({ kind: "failed", provider: failedWith });
+			}
 		} finally {
 			running.current = false;
 			setBusy(false);
 		}
 	}, []);
 
-	const ready = isLoaded && available && signedIn && device.repository !== null;
+	const hasStorage =
+		provider === "google" || (provider === "github" && device.repository !== null);
+	const ready = isLoaded && available && signedIn && hasStorage;
+
+	const automatic = device.autoSync && !(device.waitOnMetered && isMeteredConnection());
+	const firstSyncPending = device.state === null;
 
 	useEffect(() => {
-		if (!ready || pendingChoice) return;
+		if (!ready || pendingChoice || lastSynced.current !== null) return;
+		if (!automatic && !firstSyncPending) return;
+		const timer = window.setTimeout(() => void syncNow(), 0);
+		return () => window.clearTimeout(timer);
+	}, [ready, pendingChoice, automatic, firstSyncPending, syncNow]);
+
+	useEffect(() => {
+		if (!ready || pendingChoice || !automatic) return;
 		const timer = window.setTimeout(() => {
 			if (lastSynced.current !== storageService.load()) void syncNow();
 		}, AUTO_SYNC_DELAY_MS);
 		return () => window.clearTimeout(timer);
-	}, [ready, appData, pendingChoice, syncNow]);
+	}, [ready, appData, pendingChoice, automatic, syncNow]);
 
 	useEffect(() => {
-		if (!ready) return;
+		if (!ready || !automatic) return;
 		const onOnline = () => void syncNow();
 		window.addEventListener("online", onOnline);
 		return () => window.removeEventListener("online", onOnline);
-	}, [ready, syncNow]);
+	}, [ready, automatic, syncNow]);
 
-	const signIn = () => {
+	useEffect(() => {
+		if (!ready || !automatic || !device.syncOnReturn) return;
+		const onVisible = () => {
+			if (document.visibilityState !== "visible") return;
+			if (Date.now() - lastRun.current < RETURN_SYNC_GAP_MS) return;
+			void syncNow();
+		};
+		document.addEventListener("visibilitychange", onVisible);
+		return () => document.removeEventListener("visibilitychange", onVisible);
+	}, [ready, automatic, device.syncOnReturn, syncNow]);
+
+	const signIn = (chosen: SyncProviderId) => {
 		const state = newState();
-		deviceStore.update({ signInState: state });
-		window.location.href = authorizeUrl(callbackUri(), state);
+		deviceStore.update({ signInState: state, provider: chosen });
+		window.location.href = signInUrl(chosen, callbackUri(), state);
 	};
 
 	const installApp = () => {
@@ -206,7 +279,11 @@ export function SyncProvider({ children }: { children: React.ReactNode }) {
 		const callback = readCallback(search, expected);
 		if (!callback.ok) return callback.reason;
 		try {
-			await tokenSource().signIn(callback.code, callbackUri());
+			const signedInWith = providerOf(deviceStore.load()) ?? "github";
+			await tokenSource(signedInWith).signIn(callback.code, callbackUri());
+			if (signedInWith === "google") {
+				deviceStore.recordActivity({ kind: "connected", provider: "google" });
+			}
 			setFailure(null);
 			return "ok";
 		} catch {
@@ -214,10 +291,12 @@ export function SyncProvider({ children }: { children: React.ReactNode }) {
 		}
 	};
 
-	const listRepositories = async () => listInstalledRepositories(await tokenSource().getToken());
+	const listRepositories = async () =>
+		listInstalledRepositories(await tokenSource("github").getToken());
 
 	const chooseRepository = (fullName: string) => {
 		deviceStore.update({ repository: fullName, state: null, lastSyncAt: null });
+		deviceStore.recordActivity({ kind: "connected", provider: "github" });
 		setFailure(null);
 		void syncNow();
 	};
@@ -234,16 +313,33 @@ export function SyncProvider({ children }: { children: React.ReactNode }) {
 	};
 
 	const signOut = () => {
-		deviceStore.update({ tokens: null, repository: null, state: null, lastSyncAt: null });
+		deviceStore.update({
+			provider: null,
+			tokens: null,
+			repository: null,
+			state: null,
+			lastSyncAt: null,
+			activity: [],
+		});
+		lastSynced.current = null;
 		setFailure(null);
 		setConflicts([]);
 		setPendingChoice(null);
 	};
 
+	const setSyncSetting = (key: SyncSettingKey, value: boolean) => {
+		deviceStore.update({ [key]: value });
+	};
+
+	const setDeviceName = (name: string) => {
+		const trimmed = name.trim();
+		if (trimmed !== "") deviceStore.update({ deviceName: trimmed });
+	};
+
 	let status: SyncStatus = "idle";
 	if (failure?.status === "reauth") status = "reauth";
 	else if (!signedIn) status = "signedOut";
-	else if (!device.repository) status = "needsRepository";
+	else if (provider === "github" && !device.repository) status = "needsRepository";
 	else if (busy) status = "syncing";
 	else if (pendingChoice) status = "needsChoice";
 	else if (failure) status = failure.status;
@@ -252,6 +348,8 @@ export function SyncProvider({ children }: { children: React.ReactNode }) {
 		<SyncContext.Provider
 			value={{
 				available,
+				providers: availableProviders,
+				provider,
 				status,
 				errorKind: failure?.kind ?? null,
 				errorStatus: failure?.httpStatus ?? null,
@@ -259,6 +357,16 @@ export function SyncProvider({ children }: { children: React.ReactNode }) {
 				lastSyncAt: device.lastSyncAt,
 				conflicts,
 				pendingChoice,
+				settings: {
+					autoSync: device.autoSync,
+					syncOnReturn: device.syncOnReturn,
+					waitOnMetered: device.waitOnMetered,
+				},
+				setSyncSetting,
+				deviceName: device.deviceName,
+				setDeviceName,
+				activity: device.activity,
+				cloudCopy: (device.state?.base as AppData | undefined) ?? null,
 				signIn,
 				installApp,
 				completeSignIn,
