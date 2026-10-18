@@ -2,6 +2,7 @@ import { I18nProvider } from "@/i18n/I18nProvider";
 import type { Metadata } from "next";
 import { IBM_Plex_Mono, IBM_Plex_Sans, Lilita_One } from "next/font/google";
 import { PlaythroughProvider } from "@/lib/contexts/PlaythroughContext";
+import { SyncProvider } from "@/lib/contexts/SyncContext";
 import { UIProvider } from "@/lib/contexts/UIContext";
 import { STORAGE_KEY } from "@/service/storage";
 import { APP_NAME } from "@/data/nav";
@@ -76,7 +77,9 @@ export default function RootLayout({
 					<UIProvider>
 						<ToastProvider>
 							<PlaythroughProvider>
-								<AppShell>{children}</AppShell>
+								<SyncProvider>
+									<AppShell>{children}</AppShell>
+								</SyncProvider>
 							</PlaythroughProvider>
 						</ToastProvider>
 					</UIProvider>

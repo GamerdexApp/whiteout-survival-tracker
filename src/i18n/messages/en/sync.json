@@ -1,0 +1,91 @@
+{
+    "tab": {
+        "title": "Cloud sync",
+        "description": "Keep your chiefs in a private GitHub repository and share them between your devices."
+    },
+    "unavailable": "Sync is not available in this build.",
+    "privacy": "Your data goes to a private repository in your own GitHub account. Gamerdex has no server that stores it, and the app can only reach the one repository you choose.",
+    "signedOut": {
+        "title": "Sign in",
+        "body": "Sign in with GitHub, then choose the repository that holds your data.",
+        "button": "Sign in with GitHub"
+    },
+    "repository": {
+        "title": "Set up your data repository",
+        "body": "Your data is kept in a private repository named {name} in your GitHub account. Gamerdex Sync can only reach that one repository.",
+        "checking": "Looking for {name}",
+        "checkFailed": "Your repositories could not be loaded. Check your connection and check again.",
+        "found": "Found {fullName}",
+        "public": "The repository {fullName} is public. Make it private in its GitHub settings, then check again. A public repository cannot be used, because anyone could read your data.",
+        "missing": "The repository {name} was not found",
+        "steps": {
+            "create": "Create a private repository named {name}. Tick Add a README file.",
+            "install": "Give Gamerdex Sync access to that repository only. Choose Only select repositories, then pick {name}.",
+            "recheck": "Come back here and check again."
+        },
+        "createButton": "Create repository",
+        "installButton": "Choose repositories on GitHub",
+        "recheckButton": "Check again"
+    },
+    "connected": {
+        "title": "Connected",
+        "repository": "Repository",
+        "lastSync": "Last sync",
+        "never": "Not synced yet",
+        "syncNow": "Sync now",
+        "signOut": "Sign out",
+        "signedOut": "Signed out. The data on this device stays as it is."
+    },
+    "status": {
+        "idle": "Synced",
+        "syncing": "Syncing",
+        "offline": "Offline",
+        "reauth": "Sign in again",
+        "needsChoice": "Needs your choice",
+        "error": "Sync failed",
+        "signedOut": "Not signed in",
+        "needsRepository": "Choose a repository"
+    },
+    "error": {
+        "rateLimit": "GitHub is limiting requests. Sync will work again in a few minutes.",
+        "notFound": "The repository was not found. Choose it again.",
+        "server": "GitHub did not answer correctly. Try again later.",
+        "data": "The synced data is not valid, so nothing was changed.",
+        "busy": "Another device keeps changing the data. Try again in a moment.",
+        "other": "Something went wrong. Nothing was changed.",
+        "reauth": "Your sign in ended. Sign in again to keep syncing.",
+        "forbidden": "GitHub refused access to the repository. Check that Gamerdex Sync has Read and write access to Contents, then sync again.",
+        "httpStatus": "GitHub answered {status}."
+    },
+    "choice": {
+        "title": "This device and the cloud both have data",
+        "body": "This is the first sync from this device. Pick what to do. Nothing is deleted from the cloud until you choose.",
+        "counts": "This device: {local}. Cloud: {cloud}.",
+        "merge": "Merge both",
+        "mergeHint": "Keep everything from both. The higher level wins.",
+        "keepLocal": "Keep this device",
+        "keepLocalHint": "Replace the cloud data with the data on this device.",
+        "keepCloud": "Keep the cloud",
+        "keepCloudHint": "Replace the data on this device with the cloud data."
+    },
+    "conflicts": {
+        "title": "Changes that could not be merged",
+        "body": "Two devices changed the same value. The cloud value was kept. Pick this device's value to use it instead.",
+        "cloudValue": "Cloud",
+        "deviceValue": "This device",
+        "keepDevice": "Use this device's value",
+        "dismiss": "Dismiss",
+        "empty": "Nothing",
+        "deletedEdited": "One device removed this and another changed it. The changed version was kept."
+    },
+    "callback": {
+        "title": "Signing in",
+        "working": "Finishing the sign in",
+        "back": "Back to Settings",
+        "denied": "The sign in was cancelled.",
+        "state": "The sign in could not be checked. Start again from Settings.",
+        "missing": "GitHub sent no sign in code. Start again from Settings.",
+        "failed": "The sign in could not be finished. Try again later."
+    },
+    "chiefCount": "{count, plural, one {{amount} chief} other {{amount} chiefs}}"
+}

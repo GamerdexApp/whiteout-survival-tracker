@@ -7,9 +7,10 @@ import { PageHeader } from "@/comps/layout/PageHeader";
 import { AboutTab } from "@/comps/settings/AboutTab";
 import { DataTab } from "@/comps/settings/DataTab";
 import { PreferencesTab } from "@/comps/settings/PreferencesTab";
+import { SyncTab } from "@/comps/settings/SyncTab";
 import { Tabs } from "@/comps/ui/Tabs";
 
-const tabIds = ["preferences", "data", "about"] as const;
+const tabIds = ["preferences", "data", "sync", "about"] as const;
 
 type SettingsTabId = (typeof tabIds)[number];
 
@@ -32,6 +33,7 @@ function SettingsContent() {
 			>
 				{activeTab === "preferences" && <PreferencesTab />}
 				{activeTab === "data" && <DataTab />}
+				{activeTab === "sync" && <SyncTab />}
 				{activeTab === "about" && <AboutTab />}
 			</Tabs>
 		</>

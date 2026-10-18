@@ -35,6 +35,7 @@ import resources from "./en/resources.json";
 import settings from "./en/settings.json";
 import shell from "./en/shell.json";
 import skins from "./en/skins.json";
+import sync from "./en/sync.json";
 import tech from "./en/tech.json";
 import troops from "./en/troops.json";
 import tundraAlbum from "./en/tundraAlbum.json";
@@ -75,6 +76,7 @@ const en = {
   shell,
   chiefs,
   settings,
+  sync,
   buildings,
   resources,
   bonuses,
