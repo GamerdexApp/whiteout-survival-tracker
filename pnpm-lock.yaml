@@ -12,8 +12,8 @@ importers:
   .:
     dependencies:
       '@gamerdexapp/gamerdex-sync':
-        specifier: 0.3.1
-        version: 0.3.1
+        specifier: 0.5.0
+        version: 0.5.0
       next:
         specifier: ^16.3.6
         version: 16.4.0(@babel/core@7.29.7(supports-color@7.2.0))(@types/node@26.6.5)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
@@ -226,8 +226,8 @@ packages:
   '@formatjs/intl-localematcher@0.8.14':
     resolution: {integrity: sha512-8O7V38QmbB11+ryJ3KM/znrzXtiqgpXzqNoqDsndHZZ5/zDKTTL+cf5F0mzXkQEwhx8IlWnqYvEovf2S5EwLTw==}
 
-  '@gamerdexapp/gamerdex-sync@0.3.1':
-    resolution: {integrity: sha512-SkF0RqvjhAWL0yYKIIP/d7ZZFhqwvO1jqxww/edDEOU10V3/FSdICK3KWDONo3gcy4dkh41qpN/drgU44Rup5g==}
+  '@gamerdexapp/gamerdex-sync@0.5.0':
+    resolution: {integrity: sha512-LGsDW2MD/y2AONga5OGyPpwihwi6BlbYcfcDxpCVkFmL7FvZvQWD4jLC0++G99nqMguzzx/LfIjLO59YSz1E+A==}
     engines: {node: '>=24'}
 
   '@humanfs/core@0.19.2':
@@ -2598,7 +2598,7 @@ snapshots:
     dependencies:
       '@formatjs/fast-memoize': 3.1.7
 
-  '@gamerdexapp/gamerdex-sync@0.3.1': {}
+  '@gamerdexapp/gamerdex-sync@0.5.0': {}
 
   '@humanfs/core@0.19.2':
     dependencies:

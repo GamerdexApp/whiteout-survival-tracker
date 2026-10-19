@@ -1,5 +1,7 @@
 import {
   authorizeUrl,
+  AUTH_SERVICE_URL as DEFAULT_AUTH_URL,
+  CLIENT_IDS as DEFAULT_CLIENT_IDS,
   dropboxAuthorizeUrl,
   DropboxProvider,
   GitHubProvider,
@@ -16,13 +18,22 @@ export type SyncProviderId = "github" | "google" | "dropbox" | "microsoft";
 
 type FolderProviderId = Exclude<SyncProviderId, "github">;
 
-const AUTH_URL = process.env.NEXT_PUBLIC_GAMERDEX_AUTH_URL ?? "";
+/**
+ * The sign in service. A variable replaces the default of the sync package, and a variable that is
+ * set but empty turns sync off in this build.
+ */
+const AUTH_URL = process.env.NEXT_PUBLIC_GAMERDEX_AUTH_URL ?? DEFAULT_AUTH_URL;
 
-/** The public client IDs. A provider without one is left out of this build. */
+/**
+ * The public client IDs. A variable replaces the default of the sync package, and a variable that
+ * is set but empty leaves the provider out of this build.
+ */
 const CLIENT_IDS: Record<FolderProviderId, string> = {
-  google: process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID ?? "",
-  dropbox: process.env.NEXT_PUBLIC_DROPBOX_CLIENT_ID ?? "",
-  microsoft: process.env.NEXT_PUBLIC_MICROSOFT_CLIENT_ID ?? "",
+  google: process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID ?? DEFAULT_CLIENT_IDS.google,
+  dropbox:
+    process.env.NEXT_PUBLIC_DROPBOX_CLIENT_ID ?? DEFAULT_CLIENT_IDS.dropbox,
+  microsoft:
+    process.env.NEXT_PUBLIC_MICROSOFT_CLIENT_ID ?? DEFAULT_CLIENT_IDS.microsoft,
 };
 
 /** The sign in service without a provider, so a value that ends in a provider name still works. */
