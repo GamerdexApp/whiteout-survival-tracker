@@ -200,7 +200,7 @@ function PlanBody({
 						amount: formatNumber(rows.length),
 					})}
 				</h3>
-				<SpeedControls
+				<ConstructionSpeedControls
 					controls={controls}
 					bonusesPercent={bonusesPercent}
 					bonusesOn={bonusesOn}
@@ -313,7 +313,7 @@ function AddBuilding({
 	);
 }
 
-function SpeedControls({
+export function ConstructionSpeedControls({
 	controls,
 	bonusesPercent,
 	bonusesOn,

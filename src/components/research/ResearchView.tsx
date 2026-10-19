@@ -39,6 +39,7 @@ import {
 import type { MassSetPlan } from "@/service/researchMassSet";
 import { withSavedResearchPlan } from "@/service/researchPlan";
 import type { ResearchPlanControls, ResearchPlanRow } from "@/service/researchPlan";
+import { offResearchControls, researchSpeedPercent } from "@/service/researchPlan";
 import { researchOptions, researchSlots, startResearch } from "@/service/researchUpgrades";
 import { researchTabs, tabName } from "@/data/game/research";
 import type { ResearchTab } from "@/data/game/research";
@@ -60,7 +61,7 @@ import { NodeFlyout } from "./NodeFlyout";
 import { QueuesStrip } from "./QueuesStrip";
 import { ResearchFiltersFlyout } from "./ResearchFiltersFlyout";
 import { ResearchMassSetDialog } from "./ResearchMassSetDialog";
-import { ResearchPlanFlyout } from "./ResearchPlanFlyout";
+import { ResearchPlanFlyout, ResearchSpeedControls } from "./ResearchPlanFlyout";
 import { ResearchTree } from "./ResearchTree";
 
 const researchTabIds = researchTabs.map((item) => item.id);
@@ -77,10 +78,12 @@ export function ResearchView({ chief }: { chief: Playthrough }) {
 	const [massSetOpen, setMassSetOpen] = useState(false);
 	const [openNodeId, setOpenNodeId] = useState<string | null>(null);
 	const [startOpen, setStartOpen] = useState(false);
+	const [startBoosts, setStartBoosts] = useState<ResearchPlanControls>(offResearchControls);
 	const [planOpen, setPlanOpen] = useState(false);
 	const [layout, setLayout] = useState<"grid" | "tree">("grid");
 	const [manageQueue, setManageQueue] = useState<ResearchQueueId | null>(null);
 	const now = useNow();
+	const startBonusesPercent = researchSpeedBonusPercent(chief);
 
 	const tab = researchTabs.find((item) => item.id === tabId) as ResearchTab;
 	const allViews = useMemo(() => buildAllNodeViews(chief), [chief]);
@@ -337,7 +340,10 @@ export function ResearchView({ chief }: { chief: Playthrough }) {
 						{options.length > 0 && (
 							<Button
 								className="order-4 w-full lg:order-3 lg:w-auto"
-								onClick={() => setStartOpen(true)}
+								onClick={() => {
+									setStartBoosts(offResearchControls);
+									setStartOpen(true);
+								}}
 							>
 								<LuPlay
 									size={16}
@@ -434,7 +440,16 @@ export function ResearchView({ chief }: { chief: Playthrough }) {
 				selectHelp={t("view.start.selectHelp")}
 				timeLabel={t("view.start.timeLabel")}
 				speedLabel={t("view.start.speedLabel")}
-				speedPercent={researchSpeedBonusPercent(chief)}
+				speedPercent={researchSpeedPercent(startBoosts, startBonusesPercent)}
+				speedControls={
+					<ResearchSpeedControls
+						controls={startBoosts}
+						bonusesPercent={startBonusesPercent}
+						bonusesOn
+						speedPercent={researchSpeedPercent(startBoosts, startBonusesPercent)}
+						onChange={setStartBoosts}
+					/>
+				}
 				slotLabel={t("view.start.slotLabel")}
 				slotHelp={t("view.start.slotHelp")}
 				slots={researchSlots(chief, now)}

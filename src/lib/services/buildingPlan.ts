@@ -29,6 +29,12 @@ export interface PlanControls {
   chiefOrder: boolean;
 }
 
+export const offPlanControls: PlanControls = {
+  vicePresident: "none",
+  petSkill: false,
+  chiefOrder: false,
+};
+
 export const defaultPlanControls = (chief: Playthrough): PlanControls => ({
   vicePresident: chief.buildingPlan?.vicePresident ?? "none",
   petSkill: chief.buildingPlan?.petSkill ?? false,

@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { useId, useState } from "react";
+import type { ReactNode } from "react";
 import type { Playthrough } from "@/types/app";
 import { formatDateTime, formatDuration, formatNumber } from "@/lib/format";
 import { useNow } from "@/lib/hooks/useNow";
@@ -28,7 +29,10 @@ interface StartUpgradeFlyoutProps {
 	selectHelp: string;
 	timeLabel: string;
 	speedLabel: string;
+	/** The total speed. It includes the bonuses and any boost that `speedControls` turned on. */
 	speedPercent: number;
+	/** Controls for the boosts that are on at the start. They replace the read only speed row. */
+	speedControls?: ReactNode;
 	slotLabel: string;
 	slotHelp: string;
 	slots: SlotInfo[];
@@ -53,6 +57,7 @@ export function StartUpgradeFlyout(props: StartUpgradeFlyoutProps) {
 		timeLabel,
 		speedLabel,
 		speedPercent,
+		speedControls,
 		slotLabel,
 		slotHelp,
 		slots,
@@ -205,19 +210,21 @@ export function StartUpgradeFlyout(props: StartUpgradeFlyoutProps) {
 											: formatDuration(option.baseSeconds)}
 									</span>
 								</div>
-								<div className="flex items-center justify-between gap-3">
-									<span>{speedLabel}</span>
-									<span className="flex items-center gap-2">
-										<span className="font-mono">{speedPercent}%</span>
-										<Badge tone="added">{t("readOnly")}</Badge>
-										<Link
-											href="/bonuses"
-											className="text-link text-xs underline"
-										>
-											{t("openBonuses")}
-										</Link>
-									</span>
-								</div>
+								{speedControls ?? (
+									<div className="flex items-center justify-between gap-3">
+										<span>{speedLabel}</span>
+										<span className="flex items-center gap-2">
+											<span className="font-mono">{speedPercent}%</span>
+											<Badge tone="added">{t("readOnly")}</Badge>
+											<Link
+												href="/bonuses"
+												className="text-link text-xs underline"
+											>
+												{t("openBonuses")}
+											</Link>
+										</span>
+									</div>
+								)}
 								<div className="border-line flex justify-between gap-3 border-t-[1.5px] pt-2">
 									<span className="font-semibold">{t("yourTime")}</span>
 									<span className="text-primary font-mono font-semibold">

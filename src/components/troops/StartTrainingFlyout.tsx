@@ -8,9 +8,16 @@ import { formatDateTime, formatDuration, formatNumber } from "@/lib/format";
 import { useNow } from "@/lib/hooks/useNow";
 import { campJob, secondsFrom, shortLines } from "@/service/queues";
 import type { CostLine } from "@/service/queues";
-import { batchCapacityOf, estimateBatch, trainableTiers } from "@/service/troopQueue";
-import type { StartTrainingInput, TrainingBatch } from "@/service/troopQueue";
+import {
+	batchCapacityOf,
+	draftWithBoosts,
+	estimateBatch,
+	noBoosts,
+	trainableTiers,
+} from "@/service/troopQueue";
+import type { StartTrainingInput, TrainingBatch, TrainingBoosts } from "@/service/troopQueue";
 import { campLabelOf, campOf, TROOP_IDS } from "@/service/troops";
+import { runTroopsPlan } from "@/service/troopsPlan";
 import { findItem } from "@/data/game/items";
 import { findTroop } from "@/data/game/troops";
 import { HoursMinutesFields } from "@/comps/queues/HoursMinutesFields";
@@ -24,6 +31,7 @@ import { ItemIcon } from "@/comps/ui/ItemIcon";
 import { SegmentedControl } from "@/comps/ui/SegmentedControl";
 import { Select } from "@/comps/ui/Select";
 import { Switch } from "@/comps/ui/Switch";
+import { CapacityAndSpeed } from "./TroopsPlanControls";
 
 interface StartTrainingFlyoutProps {
 	open: boolean;
@@ -80,6 +88,7 @@ export function StartTrainingFlyout({
 	const [hours, setHours] = useState("");
 	const [minutes, setMinutes] = useState("");
 	const [takeCost, setTakeCost] = useState(true);
+	const [boosts, setBoosts] = useState<TrainingBoosts>(noBoosts);
 
 	const freeCamps = TROOP_IDS.filter(
 		(id) => !campJob(chief, id) && trainableTiers(chief, id).length > 0
@@ -87,7 +96,8 @@ export function StartTrainingFlyout({
 	const allCamps = camp === ALL_CAMPS;
 	const targets: TroopId[] = allCamps ? freeCamps : [camp];
 	const tiers = commonTiers(chief, targets);
-	const capacity = batchCapacityOf(chief);
+	const capacity = batchCapacityOf(chief, boosts);
+	const boostsResult = runTroopsPlan(chief, draftWithBoosts(boosts, []));
 
 	if (open !== wasOpen) {
 		setWasOpen(open);
@@ -106,6 +116,7 @@ export function StartTrainingFlyout({
 			setCountText(String(capacity));
 			setMode("now");
 			setTakeCost(true);
+			setBoosts(noBoosts);
 		}
 	}
 
@@ -138,7 +149,7 @@ export function StartTrainingFlyout({
 		count,
 	}));
 	const ready = canBuild && count > 0 && !busy && targets.length > 0;
-	const estimates = ready ? batches.map((batch) => estimateBatch(chief, batch)) : [];
+	const estimates = ready ? batches.map((batch) => estimateBatch(chief, batch, boosts)) : [];
 	const estimate = estimates[0];
 	const cost: CostLine[] = mergeCost(estimates.flatMap((item) => item.cost));
 	const yourSeconds = estimate?.seconds ?? 0;
@@ -284,6 +295,20 @@ export function StartTrainingFlyout({
 					</div>
 				</Field>
 			</Card>
+
+			<CapacityAndSpeed
+				draft={draftWithBoosts(boosts, [])}
+				result={boostsResult}
+				onDraftChange={(next) =>
+					setBoosts({
+						position: next.position,
+						rank: next.rank,
+						capacityBoost: next.capacityBoost,
+						mobilize: next.mobilize,
+						advancedTraining: next.advancedTraining,
+					})
+				}
+			/>
 
 			{ready && estimate && (
 				<>

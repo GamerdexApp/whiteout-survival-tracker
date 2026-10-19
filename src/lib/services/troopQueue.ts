@@ -1,3 +1,4 @@
+import { TROOP_CALCULATOR } from "whiteout-survival-data";
 import type {
   Playthrough,
   TrainingJobState,
@@ -21,14 +22,24 @@ export interface TrainingBatch {
   count: number;
 }
 
-const neutralDraft = (runs: TroopRunState[]): TroopsPlanDraft => ({
-  runs,
+/** The plan switches that a start can turn on. Every one of them begins off. */
+export type TrainingBoosts = Pick<
+  TroopsPlanDraft,
+  "position" | "rank" | "capacityBoost" | "mobilize" | "advancedTraining"
+>;
+
+export const noBoosts: TrainingBoosts = {
   position: "none",
   rank: "regular",
   capacityBoost: false,
   mobilize: false,
   advancedTraining: false,
-});
+};
+
+export const draftWithBoosts = (
+  boosts: TrainingBoosts,
+  runs: TroopRunState[],
+): TroopsPlanDraft => ({ runs, ...boosts });
 
 const runOf = (batch: TrainingBatch): TroopRunState => ({
   camp: batch.camp,
@@ -42,10 +53,10 @@ const runOf = (batch: TrainingBatch): TroopRunState => ({
 
 /**
  * The troops that one batch can hold. It uses the research capacity of the Bonuses page and the
- * camp levels. The Plan switches (appointment, Capacity boost) are not part of a running queue.
+ * camp levels, and the capacity of the boosts that the start turned on.
  */
-export const batchCapacityOf = (chief: Playthrough) =>
-  runTroopsPlan(chief, neutralDraft([])).calculation.capacity;
+export const batchCapacityOf = (chief: Playthrough, boosts = noBoosts) =>
+  runTroopsPlan(chief, draftWithBoosts(boosts, [])).calculation.capacity;
 
 export interface BatchEstimate {
   speedPercent: number;
@@ -56,21 +67,34 @@ export interface BatchEstimate {
 
 /**
  * The time and cost of one batch from the package calculator. The package time is the time with
- * no speed bonus, and the time with the training speed of the Bonuses page follows from it.
+ * no speed bonus, and the time with the training speed of the Bonuses page and of the boosts that
+ * the start turned on follows from it. The package time keeps the capacity of the boosts, so a
+ * batch is not cut where the time with the boosts is not.
  */
 export const estimateBatch = (
   chief: Playthrough,
   batch: TrainingBatch,
+  boosts = noBoosts,
 ): BatchEstimate => {
   const bonuses = trainingBonusesOf(chief);
-  const draft = neutralDraft([runOf(batch)]);
+  const draft = draftWithBoosts(boosts, [runOf(batch)]);
   const withSpeed = runTroopsPlan(chief, draft, bonuses);
-  const withoutSpeed = runTroopsPlan(chief, draft, {
-    ...bonuses,
-    speedPercent: 0,
-  });
+  const withoutSpeed = runTroopsPlan(
+    chief,
+    { ...draft, position: "none", mobilize: false, advancedTraining: false },
+    {
+      capacity: bonuses.capacity + withSpeed.appointment.capacity,
+      speedPercent: 0,
+    },
+  );
   return {
-    speedPercent: bonuses.speedPercent,
+    speedPercent:
+      bonuses.speedPercent +
+      withSpeed.appointment.speedPercent +
+      (boosts.mobilize ? TROOP_CALCULATOR.mobilizeSpeedPercent : 0) +
+      (boosts.advancedTraining
+        ? TROOP_CALCULATOR.advancedTrainingSpeedPercent
+        : 0),
     packageSeconds: withoutSpeed.runSeconds[0] ?? 0,
     seconds: withSpeed.runSeconds[0] ?? 0,
     cost: withSpeed.calculation.resources.map((line) => ({

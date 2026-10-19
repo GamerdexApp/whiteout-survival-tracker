@@ -209,7 +209,7 @@ function PlanBody({
 						}),
 					})}
 				</h3>
-				<SpeedControls
+				<ResearchSpeedControls
 					controls={controls}
 					bonusesPercent={bonusesPercent}
 					bonusesOn={bonusesOn}
@@ -319,7 +319,7 @@ function AddNode({
 	);
 }
 
-function SpeedControls({
+export function ResearchSpeedControls({
 	controls,
 	bonusesPercent,
 	bonusesOn,

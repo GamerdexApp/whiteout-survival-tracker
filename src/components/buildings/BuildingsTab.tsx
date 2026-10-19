@@ -11,7 +11,8 @@ import { useNow } from "@/lib/hooks/useNow";
 import { useUiSettings } from "@/lib/hooks/useUiSettings";
 import { constructionSpeedBonusPercent } from "@/service/bonuses";
 import { applyDraft } from "@/service/buildingMassSet";
-import { withSavedPlan } from "@/service/buildingPlan";
+import type { PlanControls } from "@/service/buildingPlan";
+import { constructionSpeedPercent, offPlanControls, withSavedPlan } from "@/service/buildingPlan";
 import type { BuildingFilters, BuildingView } from "@/service/buildings";
 import {
 	buildViews,
@@ -31,6 +32,7 @@ import {
 	upgradeOptions,
 } from "@/service/buildingUpgrades";
 import { updateChiefById } from "@/service/chiefs";
+import { petSkillConstructionPercent } from "@/service/pets";
 import {
 	builderJob,
 	buildingJob,
@@ -56,7 +58,7 @@ import { BuildingEntry, DESKTOP_COLUMNS } from "./BuildingEntry";
 import { FiltersFlyout } from "./FiltersFlyout";
 import { LevelsFlyout } from "./LevelsFlyout";
 import { MassEditDialog } from "./MassEditDialog";
-import { PlanFlyout } from "./PlanFlyout";
+import { ConstructionSpeedControls, PlanFlyout } from "./PlanFlyout";
 import { ShelterDialog } from "./ShelterDialog";
 
 const TOTAL_LEVELLED = 18;
@@ -84,6 +86,7 @@ export function BuildingsTab({ chief }: { chief: Playthrough }) {
 	const [massEditOpen, setMassEditOpen] = useState(false);
 	const [startOpen, setStartOpen] = useState(false);
 	const [startInitialId, setStartInitialId] = useState<string | undefined>();
+	const [startBoosts, setStartBoosts] = useState<PlanControls>(offPlanControls);
 	const [manageBuilder, setManageBuilder] = useState<number | null>(null);
 	const now = useNow();
 
@@ -110,8 +113,16 @@ export function BuildingsTab({ chief }: { chief: Playthrough }) {
 	const options = useMemo(() => upgradeOptions(views, chief), [views, chief]);
 	const openStart = (buildingId?: string) => {
 		setStartInitialId(buildingId);
+		setStartBoosts(offPlanControls);
 		setStartOpen(true);
 	};
+	const startBonusesPercent = constructionSpeedBonusPercent(chief);
+	const startPetSkillPercent = petSkillConstructionPercent(chief);
+	const startSpeedPercent = constructionSpeedPercent(
+		startBoosts,
+		startPetSkillPercent,
+		startBonusesPercent
+	);
 
 	const startUpgrade = (payload: StartPayload) => {
 		const option = options.find((item) => item.id === payload.optionId);
@@ -405,7 +416,17 @@ export function BuildingsTab({ chief }: { chief: Playthrough }) {
 				selectHelp={t("tab.start.selectHelp")}
 				timeLabel={t("tab.start.timeLabel")}
 				speedLabel={t("tab.start.speedLabel")}
-				speedPercent={constructionSpeedBonusPercent(chief)}
+				speedPercent={startSpeedPercent}
+				speedControls={
+					<ConstructionSpeedControls
+						controls={startBoosts}
+						bonusesPercent={startBonusesPercent}
+						bonusesOn
+						petSkillPercent={startPetSkillPercent}
+						speedPercent={startSpeedPercent}
+						onChange={setStartBoosts}
+					/>
+				}
 				slotLabel={t("tab.start.slotLabel")}
 				slotHelp={t("tab.start.slotHelp")}
 				slots={builderSlots(chief, now)}

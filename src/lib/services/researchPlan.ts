@@ -23,6 +23,11 @@ export interface ResearchPlanControls {
   vicePresident: Appointment;
 }
 
+export const offResearchControls: ResearchPlanControls = {
+  stateBuff: false,
+  vicePresident: "none",
+};
+
 export const defaultResearchControls = (
   chief: Playthrough,
 ): ResearchPlanControls => ({
