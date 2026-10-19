@@ -26,7 +26,14 @@ First release.
 - Wiki: read only reference pages for the game data, record pages, and the server timeline
 - Search engine setup: sitemap, robots rules, page metadata, a social preview image and structured data for the app and the public Wiki pages
 - Footer with links to the main pages, Settings, backup and the About tab, plus the disclaimer
-- Text catalogs for every page, ready for more languages
+- 19 languages with their own number and date formats, in text catalogs for every page
+- Cloud sync to GitHub, Google Drive, Dropbox or OneDrive, with a first sync review, conflict handling and sign-in that stays valid between visits
+- The tab of every tabbed page in the address, so a link opens the same tab
+- Castle position, pet skill and Chief Order boosts on the Start upgrade and Start training flows, off at each start
+- Alliance prestige buildings with a tier for each, counted on the Bonuses page
+- Core event dates that fill in from the cycle set on the Events page
+- Footer links to the privacy policy, the terms and an optional Discord invite from `NEXT_PUBLIC_DISCORD_INVITE`
+- MIT license file
 
 ### Changed
 

@@ -1,6 +1,6 @@
 # Whiteout Survival Tracker
 
-A free progress tracker for the mobile game Whiteout Survival. Keep several Chiefs (your game accounts), record where each one stands, and plan the next upgrades. Everything is saved in your browser. There is no account and no server.
+A free progress tracker for the mobile game Whiteout Survival. Keep several Chiefs (your game accounts), record where each one stands, and plan the next upgrades. Everything is saved in your browser. There is no account. Cloud sync is optional and keeps your data in your own storage.
 
 This is an unofficial fan tool. It is not affiliated with, endorsed by, or connected to Whiteout Survival or Century Games. All trademarks and game content belong to their owners.
 
@@ -18,7 +18,7 @@ Each Chief has one page per game area. Every change saves at once, and destructi
 - **VIP, Skins, Events and Tundra Album**: account collections and event history.
 - **Core Events, Dailies and History**: event planning, daily tasks and a log of finished upgrades and events.
 - **Wiki**: read only reference pages for the game data (buildings, heroes, gear, pets, research, events and more) and the server timeline.
-- **Settings**: language and region, number and date formats, theme (light, dark or system), backup export and import, and reset.
+- **Settings**: language and region, number and date formats, theme (light, dark or system), backup export and import, optional cloud sync, and reset.
 
 Plan flyouts work out the cost and time of an upgrade from the game data. Values the data does not have yet show as Unknown or Estimate, never as 0.
 
@@ -41,6 +41,14 @@ pnpm format:check
 
 `pnpm install` also copies the game images into `public/images` (see below).
 
+### Environment variables
+
+All are optional and public (`NEXT_PUBLIC_`). Next.js reads them at build time, so redeploy after a change.
+
+- `NEXT_PUBLIC_DISCORD_INVITE`: a bare Discord invite code. The footer shows a Join Discord link when it is set.
+- `NEXT_PUBLIC_GOOGLE_CLIENT_ID`, `NEXT_PUBLIC_DROPBOX_CLIENT_ID`, `NEXT_PUBLIC_MICROSOFT_CLIENT_ID`: override the client IDs of the sync providers. The package `@gamerdexapp/gamerdex-sync` has defaults.
+- `NEXT_PUBLIC_GAMERDEX_AUTH_URL`: override the address of the sign-in service. The package has a default.
+
 ## Project structure
 
 - `src/app`: routes. Each tracker route has a `page.tsx` and a `layout.tsx` for its metadata.
@@ -56,11 +64,13 @@ The game data comes from the `whiteout-survival-data` package, pinned to one exa
 
 ## Data and privacy
 
-Everything you enter is stored in your browser under one `localStorage` key, `whiteout-survival-tracker`. The app sends nothing anywhere and has no analytics. Clearing site data removes it, so use Settings, Backup and data to export a JSON file. You can import it again later, on this device or another.
+Everything you enter is stored in your browser under one `localStorage` key, `whiteout-survival-tracker`. The tracker has no analytics code and no account. Clearing site data removes it, so use Settings, Backup and data to export a JSON file. You can import it again later, on this device or another.
+
+Cloud sync is off until you turn it on in Settings, Cloud sync. You choose GitHub, Google Drive, Dropbox or OneDrive, and the app keeps one file in your own storage. A small sign-in service, [gamerdex-auth](https://github.com/gamerdexapp/gamerdex-auth), only exchanges the login token and does not see or keep your data. The privacy policy and terms are at https://gamerdex.app/privacy and https://gamerdex.app/terms.
 
 ## Language support
 
-English is the only language today. The text lives in catalogs under `src/i18n/messages/<code>/`, so a new language is a new catalog folder and one entry in `src/i18n/locales.ts`. Number and date formats are separate choices in Settings.
+The app ships in 19 languages: English, Arabic, German, Spanish (Spain and Latin America), French, Indonesian, Italian, Japanese, Korean, Malay, Portuguese (Brazil and Portugal), Russian, Thai, Turkish, Vietnamese and Chinese (Simplified and Traditional). The text lives in catalogs under `src/i18n/messages/<code>/`, so a new language is a new catalog folder and one entry in `src/i18n/locales.ts`. Game data such as item and event names stays in English. Number and date formats are separate choices in Settings.
 
 ## Design
 
@@ -68,4 +78,4 @@ The design plan and the page boards are kept in the `gamerdex-plan` repo, folder
 
 ## License
 
-MIT. See `package.json`. The game, its name and its content belong to their owners.
+MIT. See [LICENSE](LICENSE). The game, its name and its content belong to their owners.
