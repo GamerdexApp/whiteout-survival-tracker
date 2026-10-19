@@ -3,7 +3,14 @@
 import { useTranslations } from "next-intl";
 import type { CoreEventId, Playthrough } from "@/types/app";
 import { formatNumber } from "@/lib/format";
-import { dayLabelOf, lockedTotalOf, logOf, unlockedDaysOf } from "@/service/coreEvents";
+import { useNow } from "@/lib/hooks/useNow";
+import {
+	dayLabelOf,
+	eventDatesOf,
+	lockedTotalOf,
+	logOf,
+	unlockedDaysOf,
+} from "@/service/coreEvents";
 import { formatTypedDate } from "@/service/eventLogView";
 import { Button } from "@/comps/ui/Button";
 import { Card } from "@/comps/ui/Card";
@@ -22,6 +29,8 @@ export function EndEventFlyout({ open, chief, event, onCancel, onConfirm }: EndE
 	const t = useTranslations("eventLog");
 	const te = useTranslations("eventLog.end");
 	const log = logOf(chief, event);
+	const now = useNow();
+	const { start, end } = eventDatesOf(chief, event, now);
 	const eventName = t(`eventShort.${event}`);
 	const unlocked = unlockedDaysOf(chief, event);
 	const hasRanks = log.overall?.rank !== undefined || log.overall?.allianceRank !== undefined;
@@ -49,11 +58,11 @@ export function EndEventFlyout({ open, chief, event, onCancel, onConfirm }: EndE
 		>
 			<Card className="bg-tint flex flex-col gap-2 p-4">
 				<h3 className="font-semibold">
-					{log.start && log.end
+					{start && end
 						? te("dates", {
 								event: eventName,
-								start: formatTypedDate(log.start),
-								end: formatTypedDate(log.end),
+								start: formatTypedDate(start),
+								end: formatTypedDate(end),
 							})
 						: te("noDates", { event: eventName })}
 				</h3>

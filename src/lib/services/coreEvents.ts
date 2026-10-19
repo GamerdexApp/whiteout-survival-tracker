@@ -22,6 +22,7 @@ import {
   BALDUR_SKILL,
   CORE_EVENT_IDS,
   DEFAULT_HALL_SEASON,
+  gameEventIdOf,
   gameEventOf,
   MS_PER_DAY,
   rankingTablesOf,
@@ -31,6 +32,7 @@ import {
 } from "@/data/game/coreEvents";
 import { findExpert } from "@/data/game/experts";
 import { findItem } from "@/data/game/items";
+import { DAY_MS, upcomingInstances } from "./eventsSchedule";
 import { buildExpertViews } from "./experts";
 
 export { SVS_BATTLE_DAY_ID };
@@ -440,6 +442,47 @@ export const rankTableOf = (
 
 // ---------- Event dates and the day of today ----------
 
+const CALENDAR_LOOKAHEAD_DAYS = 90;
+
+const utcDateOf = (ms: number) => new Date(ms).toISOString().slice(0, 10);
+
+/**
+ * The window of the next run in the cycle that the player defined on the Events page. A run whose
+ * start date is already in the history was ended early, so the search moves to the next run.
+ */
+const calendarDatesOf = (
+  chief: Playthrough,
+  event: CoreEventId,
+  now: number,
+): { start: string; end: string } | null => {
+  const state = (chief.userEvents ?? []).find(
+    (item) => item.eventId === gameEventIdOf[event],
+  );
+  if (!state) return null;
+  const endedStarts = new Set(
+    (stateOf(chief, event).history ?? []).map((entry) => entry.start),
+  );
+  const next = upcomingInstances(
+    state,
+    now,
+    now + CALENDAR_LOOKAHEAD_DAYS * DAY_MS,
+  ).find((instance) => !endedStarts.has(utcDateOf(instance.startMs)));
+  return next
+    ? { start: utcDateOf(next.startMs), end: utcDateOf(next.endMs - 1) }
+    : null;
+};
+
+/** The saved dates of the event. Without saved dates they come from the Events page cycle. */
+export const eventDatesOf = (
+  chief: Playthrough,
+  event: CoreEventId,
+  now: number,
+): { start?: string; end?: string } => {
+  const saved = stateOf(chief, event).log ?? {};
+  if (saved.start || saved.end) return { start: saved.start, end: saved.end };
+  return calendarDatesOf(chief, event, now) ?? {};
+};
+
 export interface EventStatus {
   live: boolean;
   /** The day or stage id of today, or null when the event is not running or has no dates. */
@@ -454,7 +497,7 @@ export const eventStatusOf = (
   event: CoreEventId,
   now: number,
 ): EventStatus => {
-  const { start, end } = stateOf(chief, event).log ?? {};
+  const { start, end } = eventDatesOf(chief, event, now);
   if (!start || !end) return { live: false, todayId: null };
   const today = new Date(now).toISOString().slice(0, 10);
   if (today < start || today > end) return { live: false, todayId: null };
@@ -478,7 +521,7 @@ export const dayOpensLater = (
   dayId: string,
   now: number,
 ) => {
-  const { start, end } = stateOf(chief, event).log ?? {};
+  const { start, end } = eventDatesOf(chief, event, now);
   if (!start || !end) return false;
   const today = new Date(now).toISOString().slice(0, 10);
   if (today > end) return false;
@@ -585,10 +628,11 @@ export const endEvent = (
   endedAt: string,
 ): Playthrough => {
   const log = logOf(chief, event);
+  const { start, end } = eventDatesOf(chief, event, Date.parse(endedAt));
   const entry: EventHistoryEntry = {
     id: endedAt,
-    start: log.start,
-    end: log.end,
+    start,
+    end,
     endedAt,
     days: log.days ?? {},
     overall: log.overall ?? {},

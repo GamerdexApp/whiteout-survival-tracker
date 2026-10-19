@@ -10,6 +10,7 @@ import {
 	calculateEvent,
 	dayLabelOf,
 	dayOpensLater,
+	eventDatesOf,
 	eventDaysOf,
 	isBattleDay,
 	lockedTotalOf,
@@ -114,7 +115,8 @@ function ResultsHeader({ title, hint }: { title: string; hint?: string }) {
 
 function DatesCard({ chief, event, onChange }: EventLogCurrentProps) {
 	const t = useTranslations("eventLog.dates");
-	const { start, end } = logOf(chief, event);
+	const now = useNow();
+	const { start, end } = eventDatesOf(chief, event, now);
 	const count = dayCountOf(start, end);
 
 	const changeDates = (nextStart: string | undefined, nextEnd: string | undefined) =>

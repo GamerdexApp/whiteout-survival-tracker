@@ -2,8 +2,9 @@ import { useTranslations } from "next-intl";
 import { LuClipboardList } from "react-icons/lu";
 import type { CoreEventId, Playthrough } from "@/types/app";
 import { formatCalendarDate } from "@/lib/format";
+import { useNow } from "@/lib/hooks/useNow";
 import type { EventStatus } from "@/service/coreEvents";
-import { dayLabelOf, logOf } from "@/service/coreEvents";
+import { dayLabelOf, eventDatesOf } from "@/service/coreEvents";
 import { Button } from "@/comps/ui/Button";
 
 interface EventStripProps {
@@ -25,7 +26,8 @@ export function EventStrip({
 	onBeastPlan,
 }: EventStripProps) {
 	const t = useTranslations("coreEvents.strip");
-	const { start, end } = logOf(chief, event);
+	const now = useNow();
+	const { start, end } = eventDatesOf(chief, event, now);
 	const dates =
 		start && end
 			? t("dates", {
