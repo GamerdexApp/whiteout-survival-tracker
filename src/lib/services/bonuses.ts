@@ -13,6 +13,7 @@ import { facilities, techNodes } from "@/data/game/alliance";
 import { entertainmentBuildings } from "@/data/game/buildings";
 import { allResearch } from "@/data/game/research";
 import { ownedLevelsOf } from "./allianceFacilities";
+import { prestigeBuffInput } from "./alliancePrestige";
 import { techLevelOf } from "./allianceTech";
 import { levelledBuildingLevels } from "./buildings";
 import { charmItems, gearItems } from "./chiefGear";
@@ -92,6 +93,7 @@ export const buffProfileOf = (chief: Playthrough): BuffProfile => ({
   ...vipBuffInputs(chief),
   skins: skinBuffInputs(chief),
   tundraAlbums: tundraAlbumBuffInputs(chief),
+  alliancePrestige: prestigeBuffInput(chief),
   allianceTech: allianceTechLevelsOf(chief),
   allianceFacilities: allianceFacilityLevelsOf(chief),
   heroSkills: heroSkillsOf(chief),

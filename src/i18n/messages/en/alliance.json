@@ -46,5 +46,15 @@
         "notBuilt": "Not built",
         "none": "None",
         "noCost": "No cost"
+    },
+    "prestige": {
+        "title": "Prestige buildings",
+        "description": "Statues and other buildings that your alliance earns in events. Pick the tier that your alliance holds for each one. Every tier adds resource gathering speed.",
+        "none": "None",
+        "source": "{event}: {requirement}",
+        "tierLabel": "{name} tier",
+        "bonus": "+{value}%",
+        "total": "Resource gathering speed",
+        "totalValue": "+{value}% for meat, wood, coal and iron"
     }
 }

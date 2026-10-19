@@ -46,5 +46,15 @@
         "notBuilt": "未建設",
         "none": "なし",
         "noCost": "コストなし"
+    },
+    "prestige": {
+        "title": "威光の建造物",
+        "description": "同盟がイベントで獲得する像などの建造物です。それぞれ同盟が持っているティアを選んでください。ティアごとに資源の採集速度が上がります。",
+        "none": "なし",
+        "source": "{event}: {requirement}",
+        "tierLabel": "{name}のティア",
+        "bonus": "+{value}%",
+        "total": "資源の採集速度",
+        "totalValue": "肉、木材、石炭、鉄に+{value}%"
     }
 }

@@ -2,6 +2,7 @@ import {
   allianceBanner,
   allianceFacility,
   allianceFortress,
+  alliancePrestige,
   allianceTech,
 } from "whiteout-survival-data";
 import type {
@@ -9,6 +10,7 @@ import type {
   AllianceFacility,
   AllianceFortress,
   AllianceFortressKind,
+  AlliancePrestigeBuilding,
   AllianceTechCategory,
   AllianceTechNode,
 } from "whiteout-survival-data";
@@ -33,6 +35,11 @@ export const techCategories: AllianceTechCategory[] = [
 ];
 
 export const TECH_TIERS = [1, 2, 3];
+
+export const prestigeBuildings: AlliancePrestigeBuilding[] =
+  alliancePrestige().get();
+
+export const findPrestigeBuilding = (id: string) => alliancePrestige().find(id);
 
 export const facilities: AllianceFacility[] = allianceFacility().get();
 

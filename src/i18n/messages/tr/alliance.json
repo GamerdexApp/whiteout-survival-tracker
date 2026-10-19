@@ -46,5 +46,15 @@
         "notBuilt": "İnşa edilmedi",
         "none": "Yok",
         "noCost": "Maliyet yok"
+    },
+    "prestige": {
+        "title": "Prestij yapıları",
+        "description": "İttifakınızın etkinliklerde kazandığı heykeller ve diğer yapılar. Her biri için ittifakınızın sahip olduğu kademeyi seçin. Her kademe kaynak toplama hızını artırır.",
+        "none": "Yok",
+        "source": "{event}: {requirement}",
+        "tierLabel": "{name} kademesi",
+        "bonus": "+%{value}",
+        "total": "Kaynak toplama hızı",
+        "totalValue": "Et, odun, kömür ve demir için +%{value}"
     }
 }

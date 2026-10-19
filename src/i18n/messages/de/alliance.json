@@ -46,5 +46,15 @@
         "notBuilt": "Nicht gebaut",
         "none": "Keine",
         "noCost": "Keine Kosten"
+    },
+    "prestige": {
+        "title": "Prestigegebäude",
+        "description": "Statuen und andere Gebäude, die deine Allianz in Events erhält. Wähle für jedes Gebäude die Stufe, die deine Allianz hält. Jede Stufe erhöht die Sammelgeschwindigkeit für Rohstoffe.",
+        "none": "Keine",
+        "source": "{event}: {requirement}",
+        "tierLabel": "Stufe {name}",
+        "bonus": "+{value}%",
+        "total": "Rohstoff-Sammelgeschwindigkeit",
+        "totalValue": "+{value}% für Fleisch, Holz, Kohle und Eisen"
     }
 }

@@ -46,5 +46,15 @@
         "notBuilt": "Belum dibangun",
         "none": "Tidak ada",
         "noCost": "Tanpa biaya"
+    },
+    "prestige": {
+        "title": "Bangunan prestise",
+        "description": "Patung dan bangunan lain yang diperoleh aliansimu dari event. Pilih tingkat yang dimiliki aliansimu untuk tiap bangunan. Setiap tingkat menambah kecepatan pengumpulan sumber daya.",
+        "none": "Tidak ada",
+        "source": "{event}: {requirement}",
+        "tierLabel": "Tingkat {name}",
+        "bonus": "+{value}%",
+        "total": "Kecepatan pengumpulan sumber daya",
+        "totalValue": "+{value}% untuk daging, kayu, batu bara, dan besi"
     }
 }

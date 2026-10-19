@@ -46,5 +46,15 @@
         "notBuilt": "미건설",
         "none": "없음",
         "noCost": "비용 없음"
+    },
+    "prestige": {
+        "title": "위신 건물",
+        "description": "연맹이 이벤트에서 얻는 동상 등의 건물이에요. 각 건물마다 연맹이 보유한 단계를 선택하세요. 단계마다 자원 채집 속도가 올라가요.",
+        "none": "없음",
+        "source": "{event}: {requirement}",
+        "tierLabel": "{name} 단계",
+        "bonus": "+{value}%",
+        "total": "자원 채집 속도",
+        "totalValue": "고기, 목재, 석탄, 철 +{value}%"
     }
 }

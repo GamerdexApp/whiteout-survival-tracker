@@ -46,5 +46,15 @@
         "notBuilt": "Chưa xây",
         "none": "Không có",
         "noCost": "Không tốn"
+    },
+    "prestige": {
+        "title": "Công trình danh vọng",
+        "description": "Tượng và các công trình khác mà liên minh nhận được qua sự kiện. Chọn cấp mà liên minh đang có cho từng công trình. Mỗi cấp tăng thêm tốc độ thu thập tài nguyên.",
+        "none": "Không có",
+        "source": "{event}: {requirement}",
+        "tierLabel": "Cấp {name}",
+        "bonus": "+{value}%",
+        "total": "Tốc độ thu thập tài nguyên",
+        "totalValue": "+{value}% cho thịt, gỗ, than và sắt"
     }
 }

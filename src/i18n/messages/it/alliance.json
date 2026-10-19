@@ -46,5 +46,15 @@
         "notBuilt": "Non costruito",
         "none": "Nessuno",
         "noCost": "Nessun costo"
+    },
+    "prestige": {
+        "title": "Edifici di prestigio",
+        "description": "Statue e altri edifici che la tua alleanza ottiene negli eventi. Scegli il livello che la tua alleanza possiede per ciascuno. Ogni livello aumenta la velocità di raccolta delle risorse.",
+        "none": "Nessuno",
+        "source": "{event}: {requirement}",
+        "tierLabel": "{name}, livello",
+        "bonus": "+{value}%",
+        "total": "Velocità di raccolta delle risorse",
+        "totalValue": "+{value}% per carne, legna, carbone e ferro"
     }
 }

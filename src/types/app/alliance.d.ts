@@ -1,5 +1,7 @@
 export interface AllianceState {
   bannerLevel?: number;
+  /** The tier name that the alliance holds of each prestige building, by building id. */
+  prestige?: Record<string, string>;
 }
 
 export interface AllianceTechNodeState {

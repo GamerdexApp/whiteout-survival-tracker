@@ -7,7 +7,7 @@ import { LuChevronDown, LuChevronRight, LuSearch } from "react-icons/lu";
 import type { Playthrough } from "@/types/app";
 import { formatNumber } from "@/lib/format";
 import { chiefBuffs, formatBuffValue, mergeResearchSources } from "@/service/bonuses";
-import { pendingSourceIds, unstoredSourceIds } from "@/data/game/bonusSources";
+import { unstoredSourceIds } from "@/data/game/bonusSources";
 import { PageHeader } from "@/comps/layout/PageHeader";
 import { Card } from "@/comps/ui/Card";
 import { EmptyState } from "@/comps/ui/EmptyState";
@@ -89,9 +89,8 @@ export function BonusesView({ chief }: { chief: Playthrough }) {
 				<StatTile value={sources.length} label={tv("tiles.sources")} />
 			</div>
 
-			<Note tone="warning" title={tv("pending.title")}>
+			<Note title={tv("pending.title")}>
 				{tv("pending.text", {
-					pending: joinNames(pendingSourceIds.map((id) => t(`sourceTypes.${id}`))),
 					unstored: joinNames(unstoredSourceIds.map((id) => t(`sourceTypes.${id}`))),
 				})}
 			</Note>

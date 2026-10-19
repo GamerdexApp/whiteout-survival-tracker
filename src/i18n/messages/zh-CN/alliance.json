@@ -46,5 +46,15 @@
         "notBuilt": "未建造",
         "none": "无",
         "noCost": "无费用"
+    },
+    "prestige": {
+        "title": "威望建筑",
+        "description": "联盟通过活动获得的雕像和其他建筑。为每座建筑选择联盟当前拥有的等阶。每提升一阶，资源采集速度都会增加。",
+        "none": "无",
+        "source": "{event}: {requirement}",
+        "tierLabel": "{name}等阶",
+        "bonus": "+{value}%",
+        "total": "资源采集速度",
+        "totalValue": "肉、木材、煤和铁 +{value}%"
     }
 }

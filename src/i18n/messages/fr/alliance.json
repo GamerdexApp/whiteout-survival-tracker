@@ -46,5 +46,15 @@
         "notBuilt": "Non construite",
         "none": "Aucune",
         "noCost": "Aucun coût"
+    },
+    "prestige": {
+        "title": "Bâtiments de prestige",
+        "description": "Statues et autres bâtiments que votre alliance obtient lors d'événements. Choisissez le palier atteint par votre alliance pour chacun. Chaque palier augmente la vitesse de récolte des ressources.",
+        "none": "Aucun",
+        "source": "{event} : {requirement}",
+        "tierLabel": "Palier : {name}",
+        "bonus": "+{value} %",
+        "total": "Vitesse de récolte des ressources",
+        "totalValue": "+{value} % pour la viande, le bois, le charbon et le fer"
     }
 }

@@ -46,5 +46,15 @@
         "notBuilt": "Não construído",
         "none": "Nenhum",
         "noCost": "Sem custo"
+    },
+    "prestige": {
+        "title": "Prédios de prestígio",
+        "description": "Estátuas e outros prédios que sua aliança conquista em eventos. Escolha o nível que sua aliança tem em cada um. Cada nível aumenta a velocidade de coleta de recursos.",
+        "none": "Nenhum",
+        "source": "{event}: {requirement}",
+        "tierLabel": "Nível de {name}",
+        "bonus": "+{value}%",
+        "total": "Velocidade de coleta de recursos",
+        "totalValue": "+{value}% para carne, madeira, carvão e ferro"
     }
 }

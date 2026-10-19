@@ -43,8 +43,8 @@
             "sources": "Source types giving something"
         },
         "pending": {
-            "title": "Not every source is counted yet.",
-            "text": "Each source below is read from the page that stores it. Until these pages are built they add nothing: {pending}. {unstored} are not stored by any page yet."
+            "title": "Some sources are not applied here.",
+            "text": "Each source below is read from the page that stores it. {unstored} are not applied to these totals. Castle position and Chief Orders are only used in the Plans and when you start a queue."
         },
         "rulesTitle": "How the numbers are counted",
         "rules": {

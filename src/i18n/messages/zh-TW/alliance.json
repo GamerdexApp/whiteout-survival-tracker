@@ -46,5 +46,15 @@
         "notBuilt": "未建造",
         "none": "無",
         "noCost": "無花費"
+    },
+    "prestige": {
+        "title": "威望建築",
+        "description": "聯盟透過活動獲得的雕像和其他建築。為每座建築選擇聯盟目前擁有的階級。每提升一階，資源採集速度都會增加。",
+        "none": "無",
+        "source": "{event}: {requirement}",
+        "tierLabel": "{name}階級",
+        "bonus": "+{value}%",
+        "total": "資源採集速度",
+        "totalValue": "肉、木材、煤和鐵 +{value}%"
     }
 }

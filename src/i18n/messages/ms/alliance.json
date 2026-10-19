@@ -46,5 +46,15 @@
         "notBuilt": "Belum dibina",
         "none": "Tiada",
         "noCost": "Tiada kos"
+    },
+    "prestige": {
+        "title": "Bangunan prestij",
+        "description": "Patung dan bangunan lain yang diperoleh alliance anda dalam acara. Pilih peringkat yang dipegang oleh alliance anda untuk setiap satu. Setiap peringkat menambah kelajuan mengumpul sumber.",
+        "none": "Tiada",
+        "source": "{event}: {requirement}",
+        "tierLabel": "Peringkat {name}",
+        "bonus": "+{value}%",
+        "total": "Kelajuan mengumpul sumber",
+        "totalValue": "+{value}% untuk daging, kayu, arang batu dan besi"
     }
 }
