@@ -1,11 +1,13 @@
 import { useTranslations } from "next-intl";
 import Link from "next/link";
+import { LuArrowUpRight } from "react-icons/lu";
 import { APP_NAME } from "@/data/nav";
-import { GAMERDEX_URL } from "@/data/site";
+import { DISCORD_URL, GAMERDEX_URL } from "@/data/site";
 import { SectionLabel } from "@/comps/ui/SectionLabel";
 import { BrandMark } from "./BrandMark";
 
 const footerLinkClasses = "flex min-h-11 items-center text-sb-text hover:underline md:min-h-9";
+const externalLinkClasses = `${footerLinkClasses} gap-1`;
 
 export function Footer() {
 	const t = useTranslations("shell");
@@ -43,16 +45,38 @@ export function Footer() {
 					<Link href="/settings?tab=about" className={footerLinkClasses}>
 						{t("footer.aboutApp")}
 					</Link>
-					<a href={`${GAMERDEX_URL}/privacy`} className={footerLinkClasses}>
+					<a href={`${GAMERDEX_URL}/privacy`} className={externalLinkClasses}>
 						{t("footer.privacyPolicy")}
+						<LuArrowUpRight
+							size={14}
+							aria-hidden="true"
+							className="shrink-0 rtl:-scale-x-100"
+						/>
 					</a>
-					<a href={`${GAMERDEX_URL}/terms`} className={footerLinkClasses}>
+					<a href={`${GAMERDEX_URL}/terms`} className={externalLinkClasses}>
 						{t("footer.termsOfService")}
+						<LuArrowUpRight
+							size={14}
+							aria-hidden="true"
+							className="shrink-0 rtl:-scale-x-100"
+						/>
 					</a>
 				</nav>
-				<div className="border-sb-line flex min-w-0 flex-col gap-1 self-start rounded-md border-[1.5px] px-3.5 py-3">
-					<span className="font-semibold">{t("footer.disclaimerTitle")}</span>
-					<span className="text-sb-muted text-[13px]">{t("footer.disclaimer")}</span>
+				<div className="flex min-w-0 flex-col gap-3 self-start">
+					{DISCORD_URL && (
+						<a href={DISCORD_URL} className={externalLinkClasses}>
+							{t("footer.discord")}
+							<LuArrowUpRight
+								size={14}
+								aria-hidden="true"
+								className="shrink-0 rtl:-scale-x-100"
+							/>
+						</a>
+					)}
+					<div className="border-sb-line flex flex-col gap-1 rounded-md border-[1.5px] px-3.5 py-3">
+						<span className="font-semibold">{t("footer.disclaimerTitle")}</span>
+						<span className="text-sb-muted text-[13px]">{t("footer.disclaimer")}</span>
+					</div>
 				</div>
 			</div>
 			<div className="border-sb-line text-sb-muted flex flex-wrap items-center justify-between gap-4 border-t-[1.5px] pt-4 text-[13px]">
