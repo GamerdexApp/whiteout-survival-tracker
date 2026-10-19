@@ -6,6 +6,7 @@ import type { CoreEventId, Playthrough } from "@/types/app";
 import { usePlaythrough } from "@/lib/contexts/PlaythroughContext";
 import { useNow } from "@/lib/hooks/useNow";
 import { useUiSettings } from "@/lib/hooks/useUiSettings";
+import { useUrlTab } from "@/lib/hooks/useUrlTab";
 import { withSavedBeastPlan } from "@/service/beasts";
 import type { BeastPlanDraft } from "@/service/beasts";
 import { describeChief, updateChiefById } from "@/service/chiefs";
@@ -31,13 +32,15 @@ import { RankCard } from "./RankCard";
 import { PerDayCard, TotalCard } from "./ResultCards";
 import { ThresholdsCard } from "./ThresholdsCard";
 
+const eventIds: CoreEventId[] = ["svs", "showdown", "king", "hall"];
+
 export function CoreEventsView({ chief }: { chief: Playthrough }) {
 	const t = useTranslations("coreEvents");
 	const { updateData } = usePlaythrough();
 	const { ui } = useUiSettings();
 	const now = useNow();
 	const shown = shownEventsOf(chief);
-	const [pickedEvent, setPickedEvent] = useState<CoreEventId>("svs");
+	const [pickedEvent, setPickedEvent] = useUrlTab(eventIds, "svs");
 	const [pickedDays, setPickedDays] = useState<Partial<Record<CoreEventId, string>>>({});
 	const [checklistOpen, setChecklistOpen] = useState(false);
 	const [logOpen, setLogOpen] = useState(false);

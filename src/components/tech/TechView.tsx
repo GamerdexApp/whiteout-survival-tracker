@@ -1,6 +1,5 @@
 "use client";
 
-import type { AllianceTechCategory } from "whiteout-survival-data";
 import { useTranslations } from "next-intl";
 import { useMemo, useState } from "react";
 import { LuListFilter } from "react-icons/lu";
@@ -8,6 +7,7 @@ import type { Playthrough } from "@/types/app";
 import { usePlaythrough } from "@/lib/contexts/PlaythroughContext";
 import { formatNumber } from "@/lib/format";
 import { useUiSettings } from "@/lib/hooks/useUiSettings";
+import { useUrlTab } from "@/lib/hooks/useUrlTab";
 import {
 	buildTechViews,
 	countTech,
@@ -34,7 +34,7 @@ export function TechView({ chief }: { chief: Playthrough }) {
 	const t = useTranslations("tech");
 	const { updateData } = usePlaythrough();
 	const { ui } = useUiSettings();
-	const [category, setCategory] = useState<AllianceTechCategory>("Growth");
+	const [category, setCategory] = useUrlTab(techCategories, "Growth");
 	const [filters, setFilters] = useState<TechFilters>(defaultTechFilters);
 	const [filtersOpen, setFiltersOpen] = useState(false);
 	const [openNodeId, setOpenNodeId] = useState<string | null>(null);

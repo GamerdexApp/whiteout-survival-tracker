@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import { useState } from "react";
 import { LuList, LuNetwork, LuSearch } from "react-icons/lu";
 import { formatNumber } from "@/lib/format";
+import { useStaticUrlTab } from "@/lib/hooks/useUrlTab";
 import {
 	filterWikiNodes,
 	hasMissingTime,
@@ -37,7 +38,8 @@ export function ResearchPage({ recordId }: WikiPageProps) {
 
 function ResearchList() {
 	const t = useTranslations("wikiResearch");
-	const [tab, setTab] = useState<WikiResearchTabId>("battle");
+	const [tab, setTab] = useStaticUrlTab(WIKI_RESEARCH_TAB_IDS, "battle");
+	const [filteredTab, setFilteredTab] = useState(tab);
 	const [query, setQuery] = useState("");
 	const [tier, setTier] = useState<number | null>(null);
 	const [troopLine, setTroopLine] = useState<TroopLine | null>(null);
@@ -55,12 +57,12 @@ function ResearchList() {
 		...(tabNodes.some(hasMissingTime) ? (["missingTime"] as const) : []),
 	];
 
-	const changeTab = (next: WikiResearchTabId) => {
-		setTab(next);
+	if (tab !== filteredTab) {
+		setFilteredTab(tab);
 		setTier(null);
 		setTroopLine(null);
 		setData("all");
-	};
+	}
 
 	return (
 		<WikiPageShell
@@ -77,7 +79,7 @@ function ResearchList() {
 				<Tabs
 					label={t("tabsLabel")}
 					activeId={tab}
-					onChange={changeTab}
+					onChange={setTab}
 					tabs={WIKI_RESEARCH_TAB_IDS.map((id) => ({
 						id,
 						label: t(`tabs.${id}`),

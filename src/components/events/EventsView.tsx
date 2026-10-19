@@ -7,6 +7,7 @@ import { usePlaythrough } from "@/lib/contexts/PlaythroughContext";
 import { formatNumber } from "@/lib/format";
 import { useNow } from "@/lib/hooks/useNow";
 import { useUiSettings } from "@/lib/hooks/useUiSettings";
+import { useUrlTab } from "@/lib/hooks/useUrlTab";
 import { describeChief, updateChiefById } from "@/service/chiefs";
 import { entriesOfChief, withoutUserEvent, withUserEvent } from "@/service/eventsPage";
 import { defaultGives } from "@/service/eventsPage";
@@ -30,7 +31,7 @@ import type { ResultTarget } from "./ResultFlyout";
 import { ScheduleFlyout } from "./ScheduleFlyout";
 import type { ScheduleTarget } from "./ScheduleFlyout";
 
-type EventsTab = "calendar" | "mine" | "history";
+const tabIds = ["calendar", "mine", "history"] as const;
 
 export function EventsView({ chief }: { chief: Playthrough }) {
 	const t = useTranslations("events");
@@ -38,7 +39,7 @@ export function EventsView({ chief }: { chief: Playthrough }) {
 	const showToast = useToast();
 	const { ui } = useUiSettings();
 	const now = useNow();
-	const [tab, setTab] = useState<EventsTab>("calendar");
+	const [tab, setTab] = useUrlTab(tabIds, "calendar");
 	const [addOpen, setAddOpen] = useState(false);
 	const [schedule, setSchedule] = useState<ScheduleTarget | null>(null);
 	const [result, setResult] = useState<ResultTarget | null>(null);
@@ -83,9 +84,7 @@ export function EventsView({ chief }: { chief: Playthrough }) {
 		const nowMs = Date.now();
 		if (!change((current) => withUserEvent(rolled(current, nowMs), state))) return;
 		setSchedule(null);
-		setTab((current) =>
-			current === "history" || CYCLE_EVENT_IDS.includes(state.eventId) ? current : "mine"
-		);
+		if (tab !== "history" && !CYCLE_EVENT_IDS.includes(state.eventId)) setTab("mine");
 	};
 
 	const removeEvent = (state: UserEventState) => {

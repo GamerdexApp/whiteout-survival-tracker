@@ -1,18 +1,18 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { useState } from "react";
 import type { Playthrough } from "@/types/app";
+import { useUrlTab } from "@/lib/hooks/useUrlTab";
 import { PageHeader } from "@/comps/layout/PageHeader";
 import { Tabs } from "@/comps/ui/Tabs";
 import { CharmsTab } from "./CharmsTab";
 import { GearTab } from "./GearTab";
 
-type ChiefGearTabId = "gear" | "charms";
+const tabIds = ["gear", "charms"] as const;
 
 export function ChiefGearView({ chief }: { chief: Playthrough }) {
 	const t = useTranslations("chiefGear.view");
-	const [tabId, setTabId] = useState<ChiefGearTabId>("gear");
+	const [tabId, setTabId] = useUrlTab(tabIds, "gear");
 
 	return (
 		<>

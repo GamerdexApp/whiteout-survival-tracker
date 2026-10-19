@@ -16,6 +16,7 @@ import type { ResearchQueueId } from "@/types/app";
 import { usePlaythrough } from "@/lib/contexts/PlaythroughContext";
 import { formatNumber } from "@/lib/format";
 import { useNow } from "@/lib/hooks/useNow";
+import { useUrlTab } from "@/lib/hooks/useUrlTab";
 import { researchSpeedBonusPercent } from "@/service/bonuses";
 import { updateChiefById } from "@/service/chiefs";
 import { cancelJob, endsAtAfter, finishResearch, queueJob, withJobEndsAt } from "@/service/queues";
@@ -62,13 +63,16 @@ import { ResearchMassSetDialog } from "./ResearchMassSetDialog";
 import { ResearchPlanFlyout } from "./ResearchPlanFlyout";
 import { ResearchTree } from "./ResearchTree";
 
+const researchTabIds = researchTabs.map((item) => item.id);
+
 export function ResearchView({ chief }: { chief: Playthrough }) {
 	const t = useTranslations("research");
 	const tq = useTranslations("queues");
 	const { updateData } = usePlaythrough();
 	const showToast = useToast();
-	const [tabId, setTabId] = useState<string>(researchTabs[0].id);
+	const [tabId, setTabId] = useUrlTab(researchTabIds, researchTabs[0].id);
 	const [filters, setFilters] = useState<ResearchFilters>(defaultResearchFilters);
+	const [filteredTabId, setFilteredTabId] = useState(tabId);
 	const [filtersOpen, setFiltersOpen] = useState(false);
 	const [massSetOpen, setMassSetOpen] = useState(false);
 	const [openNodeId, setOpenNodeId] = useState<string | null>(null);
@@ -90,10 +94,10 @@ export function ResearchView({ chief }: { chief: Playthrough }) {
 	const change = (update: (current: Playthrough) => Playthrough) =>
 		updateData((data) => updateChiefById(data, chief.id, update));
 
-	const switchTab = (id: string) => {
-		setTabId(id);
+	if (tabId !== filteredTabId) {
+		setFilteredTabId(tabId);
 		setFilters({ ...defaultResearchFilters(), search: filters.search });
-	};
+	}
 
 	const saveMassSet = (plan: MassSetPlan) => {
 		const before = chief;
@@ -254,7 +258,7 @@ export function ResearchView({ chief }: { chief: Playthrough }) {
 					locked: tabLockOf(item, chief) !== null,
 				}))}
 				activeId={tabId}
-				onChange={switchTab}
+				onChange={setTabId}
 			>
 				{tabLock && (
 					<Note tone="warning">

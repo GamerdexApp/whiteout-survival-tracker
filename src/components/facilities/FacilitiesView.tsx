@@ -6,6 +6,7 @@ import type { Playthrough } from "@/types/app";
 import { usePlaythrough } from "@/lib/contexts/PlaythroughContext";
 import { formatNumber } from "@/lib/format";
 import { useUiSettings } from "@/lib/hooks/useUiSettings";
+import { useUrlTab } from "@/lib/hooks/useUrlTab";
 import {
 	buildFacilityViews,
 	FACILITY_LEVEL_COUNT,
@@ -26,7 +27,7 @@ import { FacilityCards } from "./FacilityCards";
 import { FacilityMap } from "./FacilityMap";
 import { FortressesTab } from "./FortressesTab";
 
-type TabId = "facilities" | "fortresses" | "map";
+const tabIds = ["facilities", "fortresses", "map"] as const;
 
 const showIds: OwnedFilter[] = ["all", "owned", "notOwned"];
 
@@ -34,7 +35,7 @@ export function FacilitiesView({ chief }: { chief: Playthrough }) {
 	const t = useTranslations("facilities");
 	const { updateData } = usePlaythrough();
 	const { ui } = useUiSettings();
-	const [tabId, setTabId] = useState<TabId>("facilities");
+	const [tabId, setTabId] = useUrlTab(tabIds, "facilities");
 	const [show, setShow] = useState<OwnedFilter>("all");
 
 	const views = useMemo(() => buildFacilityViews(chief, show), [chief, show]);

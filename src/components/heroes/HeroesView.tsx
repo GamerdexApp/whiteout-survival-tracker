@@ -1,9 +1,9 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { useState } from "react";
 import type { Playthrough } from "@/types/app";
 import { formatNumber } from "@/lib/format";
+import { useUrlTab } from "@/lib/hooks/useUrlTab";
 import { buildHeroViews } from "@/service/heroes";
 import { gearSetsOf } from "@/service/heroGear";
 import { PageHeader } from "@/comps/layout/PageHeader";
@@ -11,11 +11,11 @@ import { Tabs } from "@/comps/ui/Tabs";
 import { HeroesTab } from "./HeroesTab";
 import { HeroGearTab } from "./HeroGearTab";
 
-type HeroesTabId = "heroes" | "gear";
+const tabIds = ["heroes", "gear"] as const;
 
 export function HeroesView({ chief }: { chief: Playthrough }) {
 	const t = useTranslations("heroes.view");
-	const [tabId, setTabId] = useState<HeroesTabId>("heroes");
+	const [tabId, setTabId] = useUrlTab(tabIds, "heroes");
 	const heroViews = buildHeroViews(chief);
 	const owned = heroViews.filter((view) => view.owned).length;
 	const sets = gearSetsOf(chief);

@@ -1,8 +1,8 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { useState } from "react";
 import { formatNumber } from "@/lib/format";
+import { useStaticUrlTab } from "@/lib/hooks/useUrlTab";
 import { forgingRows } from "@/data/game/heroGear";
 import { empowermentRows, enhancementRows, statEntries } from "@/data/game/wikiHeroGear";
 import { Tabs } from "@/comps/ui/Tabs";
@@ -12,11 +12,11 @@ import type { WikiPageProps } from "../WikiPageProps";
 import { WikiPageShell } from "../WikiPageShell";
 import { WikiRecordMissing } from "../WikiRecordMissing";
 
-type GearTab = "enhancement" | "empowerment" | "mastery" | "stats";
+const TAB_IDS = ["enhancement", "empowerment", "mastery", "stats"] as const;
 
 export function HeroGearPage({ recordId }: WikiPageProps) {
 	const t = useTranslations("wikiHeroGear");
-	const [tab, setTab] = useState<GearTab>("enhancement");
+	const [tab, setTab] = useStaticUrlTab(TAB_IDS, "enhancement");
 
 	if (recordId !== undefined) return <WikiRecordMissing id="heroGear" />;
 

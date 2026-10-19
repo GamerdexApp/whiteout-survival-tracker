@@ -4,6 +4,7 @@ import { useTranslations } from "next-intl";
 import { useMemo, useState } from "react";
 import type { CoreEventId, Playthrough } from "@/types/app";
 import { useUiSettings } from "@/lib/hooks/useUiSettings";
+import { useUrlTab } from "@/lib/hooks/useUrlTab";
 import { describeChief } from "@/service/chiefs";
 import { shownEventsOf } from "@/service/coreEvents";
 import { endedEventsOf } from "@/service/historyEvents";
@@ -15,10 +16,12 @@ import { HistoryList } from "./HistoryList";
 
 type EventFilter = CoreEventId | "all";
 
+const filterIds: EventFilter[] = ["all", "svs", "showdown", "king", "hall"];
+
 export function HistoryView({ chief }: { chief: Playthrough }) {
 	const t = useTranslations("history");
 	const { ui } = useUiSettings();
-	const [filter, setFilter] = useState<EventFilter>("all");
+	const [filter, setFilter] = useUrlTab(filterIds, "all");
 	const shown = shownEventsOf(chief);
 	const activeFilter = filter === "all" || shown.includes(filter) ? filter : "all";
 

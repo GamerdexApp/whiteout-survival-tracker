@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import { useState } from "react";
 import { formatNumber } from "@/lib/format";
+import { useStaticUrlTab } from "@/lib/hooks/useUrlTab";
 import { DEFAULT_RESET_TIME } from "@/service/dailies";
 import {
 	ALL_LEVELS_ACTIVENESS,
@@ -263,7 +264,7 @@ export function DailiesPage({ recordId }: WikiPageProps) {
 
 function DailiesPageContent() {
 	const t = useTranslations("wikiDailies");
-	const [tab, setTab] = useState<DailiesTab>("missions");
+	const [tab, setTab] = useStaticUrlTab(TABS, "missions");
 
 	return (
 		<WikiPageShell

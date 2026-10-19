@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import { useState } from "react";
 import { LuSearch } from "react-icons/lu";
 import { formatNumber } from "@/lib/format";
+import { useStaticUrlTab } from "@/lib/hooks/useUrlTab";
 import {
 	categoryFilters,
 	countOfCategory,
@@ -31,7 +32,7 @@ export function AllianceTechPage({ recordId }: WikiPageProps) {
 
 function TechListPage() {
 	const t = useTranslations("wikiAllianceTech");
-	const [category, setCategory] = useState<TechCategoryFilter>("all");
+	const [category, setCategory] = useStaticUrlTab(categoryFilters, "all");
 	const [tier, setTier] = useState<number | null>(null);
 	const [query, setQuery] = useState("");
 	const [openNode, setOpenNode] = useState<AllianceTechNode>();

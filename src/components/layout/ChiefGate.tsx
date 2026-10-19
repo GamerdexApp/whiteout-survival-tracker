@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { Suspense } from "react";
 import type { ReactNode } from "react";
 import type { Playthrough } from "@/types/app";
 import { usePlaythrough } from "@/lib/contexts/PlaythroughContext";
@@ -16,7 +17,8 @@ interface ChiefGateProps {
 
 /**
  * Pages that read the active chief render through this gate. It shows the loading state while
- * saved data is read and the empty state when there is no chief.
+ * saved data is read and the empty state when there is no chief. Its Suspense boundary lets the
+ * views read their tab from the address with `useUrlTab`.
  */
 export function ChiefGate({ title, children }: ChiefGateProps) {
 	const t = useTranslations("shell.chiefGate");
@@ -48,5 +50,5 @@ export function ChiefGate({ title, children }: ChiefGateProps) {
 		);
 	}
 
-	return children(activePlaythrough);
+	return <Suspense fallback={null}>{children(activePlaythrough)}</Suspense>;
 }
