@@ -43,6 +43,11 @@ updates:
       - dependency-name: "eslint"
         update-types:
           - "version-update:semver-major"
+      # typescript-eslint does not support TypeScript 7. Remove this entry when it does.
+      # https://github.com/typescript-eslint/typescript-eslint/issues/10940
+      - dependency-name: "typescript"
+        versions:
+          - "7.x"
 
   - package-ecosystem: github-actions
     directory: /
