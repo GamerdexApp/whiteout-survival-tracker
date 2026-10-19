@@ -1,4 +1,5 @@
 import type { CoreEventId, DailyTaskState, Playthrough } from "@/types/app";
+import { gameEventIdOf } from "@/data/game/coreEvents";
 import {
   NEXT_RUNS_SHOWN,
   OPEN_TASKS_SHOWN,
@@ -93,14 +94,30 @@ const upcomingRunsOf = (
     })),
   );
 
+const isLiveRun = (run: UpcomingRun) => run.countdown.kind === "now";
+
+/** A live core event already shows from the Core events page, so its calendar run is left out. */
+const liveRunsWithoutCoreOf = (
+  runs: UpcomingRun[],
+  liveCore: LiveCoreEvent[],
+) => {
+  const liveCoreGameIds = new Set(
+    liveCore.map((live) => gameEventIdOf[live.event]),
+  );
+  return runs.filter(
+    (run) => isLiveRun(run) && !liveCoreGameIds.has(run.entry.event.id),
+  );
+};
+
 export const liveRunsOf = (chief: Playthrough, now: number, zone: EventsZone) =>
-  upcomingRunsOf(chief, now, zone).filter(
-    (run) => run.countdown.kind === "now",
+  liveRunsWithoutCoreOf(
+    upcomingRunsOf(chief, now, zone),
+    liveCoreEventsOf(chief, now),
   );
 
 export const nextRunsOf = (chief: Playthrough, now: number, zone: EventsZone) =>
   upcomingRunsOf(chief, now, zone)
-    .filter((run) => run.countdown.kind !== "now")
+    .filter((run) => !isLiveRun(run))
     .slice(0, NEXT_RUNS_SHOWN);
 
 export interface EventsTile {
@@ -117,8 +134,7 @@ export const eventsTileOf = (
   const core = liveCoreEventsOf(chief, now);
   const runs = upcomingRunsOf(chief, now, zone);
   return {
-    liveCount:
-      core.length + runs.filter((run) => run.countdown.kind === "now").length,
+    liveCount: core.length + liveRunsWithoutCoreOf(runs, core).length,
     firstLiveCore: core[0],
     startingThisWeek: runs.filter(
       (run) =>
