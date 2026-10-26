@@ -11,7 +11,6 @@ import type { ExpertGoalState, ExpertState, Playthrough } from "@/types/app";
 import {
   ADVANCEMENT_INTERVAL,
   affinityForSkillLevel,
-  allExperts,
   BOOK_ITEM_ID,
   COMMON_SIGIL_ITEM_ID,
   EXP_PER_LEARNING_MINUTE,
@@ -22,6 +21,8 @@ import {
   relationshipNumberAt,
   sigilItemIdOf,
   skillPowerAt,
+  statBonusOf,
+  trackedExperts,
 } from "@/data/game/experts";
 import { findItem } from "@/data/game/items";
 import { ownedCount, speedupStock, withOwnedCount } from "./inventory";
@@ -69,7 +70,7 @@ const sigilCountOf = (chief: Playthrough, expertId: string) => {
 };
 
 export const buildExpertViews = (chief: Playthrough): ExpertView[] =>
-  allExperts.map((expert) => {
+  trackedExperts.map((expert) => {
     const saved: ExpertState = chief.experts?.[expert.id] ?? {};
     const locked = !isExpertUnlockedByAge(chief, expert);
     const affinity = clamp(wholeOr(saved.affinity, 1), 1, MAX_AFFINITY);
@@ -248,8 +249,8 @@ export const bonusNowOf = (view: ExpertView): BonusNow => {
   const countedLevel = bonusLevelFor(view.affinity, view.advanced);
   return {
     countedLevel,
-    percent: affinityRowOf(view.expert, countedLevel).statBonus,
-    atMax: affinityRowOf(view.expert, MAX_AFFINITY).statBonus,
+    percent: statBonusOf(affinityRowOf(view.expert, countedLevel)),
+    atMax: statBonusOf(affinityRowOf(view.expert, MAX_AFFINITY)),
     waitingForAdvancement: countedLevel !== view.affinity,
   };
 };
@@ -437,7 +438,7 @@ const orderComparators: Record<
 > = {
   generation: (a, b) =>
     a.expert.generation - b.expert.generation ||
-    allExperts.indexOf(a.expert) - allExperts.indexOf(b.expert),
+    trackedExperts.indexOf(a.expert) - trackedExperts.indexOf(b.expert),
   affinity: (a, b) => b.affinity - a.affinity,
   power: (a, b) => expertPowerOf(b).now - expertPowerOf(a).now,
   name: (a, b) => a.expert.name.localeCompare(b.expert.name),

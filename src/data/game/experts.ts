@@ -10,11 +10,21 @@ import {
 } from "whiteout-survival-data";
 import type {
   Expert,
+  ExpertAffinityLevel,
   ExpertRelationship,
   ExpertSkill,
 } from "whiteout-survival-data";
 
 export const allExperts: Expert[] = experts().get();
+
+const hasStatBonuses = (expert: Expert) =>
+  expert.affinityLevels.every((level) => level.statBonus !== undefined);
+
+/** The experts that the tracker can follow, which have a stat bonus on every affinity level. */
+export const trackedExperts: Expert[] = allExperts.filter(hasStatBonuses);
+
+/** The stat bonus of an affinity row of a tracked expert, which always has one. */
+export const statBonusOf = (row: ExpertAffinityLevel) => row.statBonus!;
 
 export const findExpert = (id: string) => experts().find(id);
 
