@@ -24,6 +24,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
+- Core Events: the expert level and the Read only badge on the SvS and Alliance Showdown bonus card stay on one line
 - Flyouts and dialogs: the footer no longer scrolls with the page. Hidden screen reader text, such as the label of a radio group in the Troops plan, no longer stretches the panel past the screen
 - Troops Plan: Export to Core Events puts the troops trained and the training speedup minutes on one event day, so one day is picked for both
 - Troops Plan: the Export to Core Events button is in the footer with the other plan actions, not in the result card
