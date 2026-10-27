@@ -3,7 +3,6 @@
 import { useTranslations } from "next-intl";
 import { formatDecimal, formatNumber } from "@/lib/format";
 import type { StatTotal, SkinsSummary as Summary } from "@/service/skins";
-import { Badge } from "@/comps/ui/Badge";
 import { Card } from "@/comps/ui/Card";
 import { Note } from "@/comps/ui/Note";
 import { ProgressBar } from "@/comps/ui/ProgressBar";
@@ -42,7 +41,6 @@ export function BonusTotalsCard({ totals, summary }: { totals: StatTotal[]; summ
 		<Card className="flex flex-col gap-3 px-4 py-3">
 			<div className="flex flex-wrap items-center justify-between gap-2">
 				<h2 className="font-semibold">{t("title")}</h2>
-				<Badge tone="changed">{t("estimate")}</Badge>
 			</div>
 			{totals.length === 0 ? (
 				<p className="text-muted">{t("none")}</p>

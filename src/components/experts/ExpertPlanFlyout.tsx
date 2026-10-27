@@ -495,7 +495,6 @@ function PlanResult({ plan }: { plan: ExpertsPlan }) {
 		<Card className="flex flex-col gap-4 p-4">
 			<div className="flex items-center justify-between gap-3">
 				<h3 className="font-semibold">{t("title")}</h3>
-				<Badge tone="added">{t("derived")}</Badge>
 			</div>
 			<div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
 				{tiles.map(([key, value]) => (

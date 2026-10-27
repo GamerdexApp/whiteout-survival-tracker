@@ -17,6 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- The Derived and Estimate badges and labels are removed from the Experts, Tech, Tundra Album, Skins, Heroes, Chief Gear, Core Events and Hero Upgrade calculator pages. The notes that explain an estimate stay
 - Pets and Experts: the cards sit in a grid again, in rows read left to right, not in staggered columns
 - Game data package 0.9.0: new Resources, Chief Material and Hero Gear Material item categories, a Shard item for every hero, the Enhancement XP Component split into the 10 and the 100, and new pieces and puzzle pictures in the Tundra Album
 - Experts Plan: the expert list in Add an expert and the expert card show the sigil count of the expert. The card also shows the sigils an advancement costs next to the advance switch, the affinity needed for the goal or the next level, and the EXP needed for the chosen skill levels. The EXP available of a skill adds the learning session that runs now

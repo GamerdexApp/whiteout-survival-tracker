@@ -522,7 +522,6 @@ function StatsSection({ view }: { view: HeroView }) {
 			{rows.map((row) => (
 				<HeroRow key={row.label} label={row.label}>
 					<span className="font-mono text-xs">{row.text}</span>
-					{row.estimated && <Badge tone="changed">{t("estimate")}</Badge>}
 				</HeroRow>
 			))}
 		</Section>

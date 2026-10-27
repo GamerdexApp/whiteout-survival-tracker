@@ -253,9 +253,6 @@ function StatsCard({ stats }: { stats: StarStats }) {
 						{columns.map((estimate, index) => (
 							<HeadCell key={index} numeric>
 								{formatStars(estimate)}
-								{estimate.estimated && (
-									<span className="block normal-case">{t("estimate")}</span>
-								)}
 							</HeadCell>
 						))}
 					</tr>

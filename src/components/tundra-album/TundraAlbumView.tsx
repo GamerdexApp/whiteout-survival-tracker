@@ -19,7 +19,6 @@ import {
 } from "@/service/tundraAlbum";
 import { ALBUMS_IN_GAME } from "@/data/game/tundraAlbum";
 import { PageHeader } from "@/comps/layout/PageHeader";
-import { Badge } from "@/comps/ui/Badge";
 import { Button } from "@/comps/ui/Button";
 import { ButtonLink } from "@/comps/ui/Button";
 import { Card } from "@/comps/ui/Card";
@@ -134,7 +133,6 @@ export function TundraAlbumView({ chief }: { chief: Playthrough }) {
 				<Card className="flex flex-col gap-3 p-4">
 					<div className="flex items-center justify-between gap-3">
 						<h2 className="font-semibold">{t("buffs.title")}</h2>
-						<Badge tone="locked">{t("buffs.derived")}</Badge>
 					</div>
 					{completeViews.length === 0 ? (
 						<p className="text-muted">{t("buffs.none")}</p>

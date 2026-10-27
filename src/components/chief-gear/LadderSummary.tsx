@@ -19,7 +19,6 @@ export function LadderSummaryCard({
 		<Card className="flex flex-col gap-3 p-4">
 			<div className="flex items-baseline justify-between gap-3">
 				<h2 className="font-semibold">{t("title")}</h2>
-				<span className="text-muted font-mono text-xs">{t("derived")}</span>
 			</div>
 			<div className="flex flex-wrap gap-6">
 				{[

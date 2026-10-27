@@ -379,7 +379,6 @@ function RecruitedBody({
 						max: formatNumber(power.max),
 					})}
 				</span>
-				<Badge tone="added">{t("card.derived")}</Badge>
 			</div>
 		</>
 	);

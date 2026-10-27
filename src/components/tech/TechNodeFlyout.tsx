@@ -5,7 +5,6 @@ import type { Playthrough } from "@/types/app";
 import { formatDuration, formatNumber } from "@/lib/format";
 import { buildTechView, remainingToMax, requiredByOf } from "@/service/allianceTech";
 import { findTechNode } from "@/data/game/alliance";
-import { Badge } from "@/comps/ui/Badge";
 import { Button } from "@/comps/ui/Button";
 import { Card } from "@/comps/ui/Card";
 import { Flyout } from "@/comps/ui/Flyout";
@@ -210,7 +209,6 @@ export function TechNodeFlyout({
 					<Card className="flex flex-col gap-2 p-4">
 						<div className="flex items-center justify-between gap-3">
 							<h3 className="font-semibold">{tf("remaining")}</h3>
-							<Badge tone="changed">{tf("derived")}</Badge>
 						</div>
 						{view.next === null ? (
 							<p className="text-muted">{tf("remainingNone")}</p>
