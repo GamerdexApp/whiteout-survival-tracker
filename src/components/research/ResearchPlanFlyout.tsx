@@ -130,7 +130,6 @@ export function ResearchPlanFlyout({ open, chief, onClose, onSave }: ResearchPla
 						)}
 						<Button onClick={onClose}>{t("plan.close")}</Button>
 						<Button
-							variant="ghost"
 							disabled={!exportSpec}
 							title={exportSpec ? undefined : t("plan.export.empty")}
 							onClick={openExport}

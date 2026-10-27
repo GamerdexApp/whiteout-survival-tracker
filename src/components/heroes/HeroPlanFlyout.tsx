@@ -113,7 +113,6 @@ export function HeroPlanFlyout({ open, chief, focusHeroId, onClose, onSave }: He
 							{t("close")}
 						</Button>
 						<Button
-							variant="ghost"
 							disabled={nothingToExport}
 							title={nothingToExport ? te("nothing") : undefined}
 							onClick={() => setExportOpen(true)}

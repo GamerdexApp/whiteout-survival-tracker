@@ -141,7 +141,7 @@ export function TroopsPlanResultCard({
 			</div>
 			{touchesTopTier(draft) && <p className="text-muted text-xs">{t("tier12Note")}</p>}
 			<div className="flex flex-col gap-1">
-				<Button variant="ghost" disabled={!canExport} onClick={onExport}>
+				<Button disabled={!canExport} onClick={onExport}>
 					{tExport("button")}
 				</Button>
 				{!canExport && <p className="text-muted text-xs">{tExport("emptyHint")}</p>}

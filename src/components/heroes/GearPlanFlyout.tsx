@@ -86,7 +86,6 @@ export function GearPlanFlyout({ open, chief, onClose, onSave }: GearPlanFlyoutP
 					)}
 					<Button onClick={onClose}>{t("close")}</Button>
 					<Button
-						variant="ghost"
 						disabled={nothingToExport}
 						title={nothingToExport ? te("nothing") : undefined}
 						onClick={() => setExportOpen(true)}

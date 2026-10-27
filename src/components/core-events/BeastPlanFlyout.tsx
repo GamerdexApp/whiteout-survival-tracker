@@ -79,7 +79,6 @@ export function BeastPlanFlyout({ open, chief, onClose, onSave }: BeastPlanFlyou
 					</span>
 					<Button onClick={onClose}>{t("close")}</Button>
 					<Button
-						variant="ghost"
 						disabled={!canExport}
 						title={canExport ? undefined : t("exportNothing")}
 						onClick={() => setExporting(true)}

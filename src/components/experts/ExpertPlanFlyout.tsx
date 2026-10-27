@@ -70,7 +70,6 @@ export function ExpertPlanFlyout({ open, chief, onClose, onSave }: ExpertPlanFly
 					)}
 					<Button onClick={onClose}>{t("close")}</Button>
 					<Button
-						variant="ghost"
 						disabled={!canExport}
 						title={canExport ? undefined : t("exportNothing")}
 						onClick={() => setExporting(true)}
