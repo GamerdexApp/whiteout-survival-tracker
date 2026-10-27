@@ -29,6 +29,7 @@ import { Card } from "@/comps/ui/Card";
 import { Flyout } from "@/comps/ui/Flyout";
 import { ItemIcon } from "@/comps/ui/ItemIcon";
 import { LevelStepper } from "@/comps/ui/LevelStepper";
+import { PlanFooter } from "@/comps/ui/PlanFooter";
 import { ScrollRegion } from "@/comps/ui/ScrollRegion";
 import { SectionLabel } from "@/comps/ui/SectionLabel";
 
@@ -73,25 +74,19 @@ export function LadderPlanFlyout({ open, chief, kind, onClose, onSave }: LadderP
 			title={t(`${kind}.title`)}
 			description={t(`${kind}.description`)}
 			footer={
-				<>
-					{savedAt && (
-						<span className="border-line bg-surface text-muted me-auto inline-flex h-8 items-center gap-2 rounded-full border-[1.5px] px-3 font-mono text-xs">
-							<span aria-hidden="true" className="bg-kept size-1.5 rounded-full" />
-							{t("saved", { date: formatDateTime(savedAt) })}
-						</span>
-					)}
-					<Button onClick={onClose}>{t("close")}</Button>
-					<Button
-						disabled={plan.byItem.length === 0}
-						title={plan.byItem.length === 0 ? t("export.nothingToExport") : undefined}
-						onClick={() => setExportOpen(true)}
-					>
-						{t("export.button")}
-					</Button>
-					<Button variant="primary" onClick={() => onSave(goals)}>
-						{t("save")}
-					</Button>
-				</>
+				<PlanFooter
+					savedText={savedAt ? t("saved", { date: formatDateTime(savedAt) }) : undefined}
+					closeLabel={t("close")}
+					onClose={onClose}
+					exportAction={{
+						disabled: plan.byItem.length === 0,
+						title: plan.byItem.length === 0 ? t("export.nothingToExport") : undefined,
+						onClick: () => setExportOpen(true),
+						label: t("export.button"),
+					}}
+					saveLabel={t("save")}
+					onSave={() => onSave(goals)}
+				/>
 			}
 		>
 			<PlanBody

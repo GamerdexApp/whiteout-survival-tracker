@@ -34,6 +34,7 @@ import { Flyout } from "@/comps/ui/Flyout";
 import { IconButton } from "@/comps/ui/IconButton";
 import { ItemIcon } from "@/comps/ui/ItemIcon";
 import { Note } from "@/comps/ui/Note";
+import { PlanFooter } from "@/comps/ui/PlanFooter";
 import { ScrollRegion } from "@/comps/ui/ScrollRegion";
 import { SectionLabel } from "@/comps/ui/SectionLabel";
 import { ValueStepper } from "@/comps/ui/ValueStepper";
@@ -101,32 +102,19 @@ export function HeroPlanFlyout({ open, chief, focusHeroId, onClose, onSave }: He
 			title={t("title")}
 			description={t("description")}
 			footer={
-				<div className="flex w-full flex-col gap-2">
-					{savedAt && (
-						<span className="border-line bg-surface text-muted inline-flex h-8 items-center gap-2 self-start rounded-full border-[1.5px] px-3 font-mono text-xs">
-							<span aria-hidden="true" className="bg-kept size-1.5 rounded-full" />
-							{t("saved", { date: formatDateTime(savedAt) })}
-						</span>
-					)}
-					<div className="flex flex-nowrap justify-end gap-2 *:min-w-0">
-						<Button className="me-auto" onClick={onClose}>
-							{t("close")}
-						</Button>
-						<Button
-							disabled={nothingToExport}
-							title={nothingToExport ? te("nothing") : undefined}
-							onClick={() => setExportOpen(true)}
-						>
-							{te("button")}
-						</Button>
-						<Button
-							variant="primary"
-							onClick={() => onSave(goals, savedWheelOf(chief, goals, wheel))}
-						>
-							{t("save")}
-						</Button>
-					</div>
-				</div>
+				<PlanFooter
+					savedText={savedAt ? t("saved", { date: formatDateTime(savedAt) }) : undefined}
+					closeLabel={t("close")}
+					onClose={onClose}
+					exportAction={{
+						disabled: nothingToExport,
+						title: nothingToExport ? te("nothing") : undefined,
+						onClick: () => setExportOpen(true),
+						label: te("button"),
+					}}
+					saveLabel={t("save")}
+					onSave={() => onSave(goals, savedWheelOf(chief, goals, wheel))}
+				/>
 			}
 		>
 			<PlanBody

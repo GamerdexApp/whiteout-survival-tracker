@@ -41,6 +41,7 @@ import { Flyout } from "@/comps/ui/Flyout";
 import { IconButton } from "@/comps/ui/IconButton";
 import { ItemIcon } from "@/comps/ui/ItemIcon";
 import { Note } from "@/comps/ui/Note";
+import { PlanFooter } from "@/comps/ui/PlanFooter";
 import { SectionLabel } from "@/comps/ui/SectionLabel";
 import { SegmentedControl } from "@/comps/ui/SegmentedControl";
 import { Select } from "@/comps/ui/Select";
@@ -118,28 +119,21 @@ export function ResearchPlanFlyout({ open, chief, onClose, onSave }: ResearchPla
 				title={t("plan.title")}
 				description={t("plan.description")}
 				footer={
-					<>
-						{savedAt && (
-							<span className="border-line bg-surface text-muted me-auto inline-flex h-8 items-center gap-2 rounded-full border-[1.5px] px-3 font-mono text-xs">
-								<span
-									aria-hidden="true"
-									className="bg-kept size-1.5 rounded-full"
-								/>
-								{t("plan.saved", { date: formatDateTime(savedAt) })}
-							</span>
-						)}
-						<Button onClick={onClose}>{t("plan.close")}</Button>
-						<Button
-							disabled={!exportSpec}
-							title={exportSpec ? undefined : t("plan.export.empty")}
-							onClick={openExport}
-						>
-							{t("plan.export.button")}
-						</Button>
-						<Button variant="primary" onClick={() => onSave(rows, controls)}>
-							{t("plan.save")}
-						</Button>
-					</>
+					<PlanFooter
+						savedText={
+							savedAt ? t("plan.saved", { date: formatDateTime(savedAt) }) : undefined
+						}
+						closeLabel={t("plan.close")}
+						onClose={onClose}
+						exportAction={{
+							disabled: !exportSpec,
+							title: exportSpec ? undefined : t("plan.export.empty"),
+							onClick: openExport,
+							label: t("plan.export.button"),
+						}}
+						saveLabel={t("plan.save")}
+						onSave={() => onSave(rows, controls)}
+					/>
 				}
 			>
 				<PlanBody

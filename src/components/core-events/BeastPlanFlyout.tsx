@@ -36,6 +36,7 @@ import { Field } from "@/comps/ui/Field";
 import { Flyout } from "@/comps/ui/Flyout";
 import { ItemIcon } from "@/comps/ui/ItemIcon";
 import { Note } from "@/comps/ui/Note";
+import { PlanFooter } from "@/comps/ui/PlanFooter";
 import { SectionLabel } from "@/comps/ui/SectionLabel";
 import { SegmentedControl } from "@/comps/ui/SegmentedControl";
 import { Select } from "@/comps/ui/Select";
@@ -69,26 +70,21 @@ export function BeastPlanFlyout({ open, chief, onClose, onSave }: BeastPlanFlyou
 			title={t("title")}
 			description={t("description")}
 			footer={
-				<>
-					<span
-						role="status"
-						className="border-line bg-surface text-muted me-auto inline-flex h-8 items-center gap-2 rounded-full border-[1.5px] px-3 font-mono text-xs"
-					>
-						<span aria-hidden="true" className="bg-kept size-1.5 rounded-full" />
-						{savedAt ? t("saved", { date: formatDateTime(savedAt) }) : t("notSavedYet")}
-					</span>
-					<Button onClick={onClose}>{t("close")}</Button>
-					<Button
-						disabled={!canExport}
-						title={canExport ? undefined : t("exportNothing")}
-						onClick={() => setExporting(true)}
-					>
-						{t("exportButton")}
-					</Button>
-					<Button variant="primary" onClick={() => onSave(plan)}>
-						{t("save")}
-					</Button>
-				</>
+				<PlanFooter
+					savedText={
+						savedAt ? t("saved", { date: formatDateTime(savedAt) }) : t("notSavedYet")
+					}
+					closeLabel={t("close")}
+					onClose={onClose}
+					exportAction={{
+						disabled: !canExport,
+						title: canExport ? undefined : t("exportNothing"),
+						onClick: () => setExporting(true),
+						label: t("exportButton"),
+					}}
+					saveLabel={t("save")}
+					onSave={() => onSave(plan)}
+				/>
 			}
 		>
 			<StaminaCard plan={plan} cans={staminaCansOf(chief)} onChange={setPlan} />

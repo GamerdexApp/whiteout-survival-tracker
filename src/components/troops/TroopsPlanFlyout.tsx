@@ -17,6 +17,7 @@ import { PlanStockCheck } from "@/comps/queues/PlanStockCheck";
 import { Button } from "@/comps/ui/Button";
 import { Card } from "@/comps/ui/Card";
 import { Flyout } from "@/comps/ui/Flyout";
+import { PlanFooter } from "@/comps/ui/PlanFooter";
 import { AddTroop, CapacityAndSpeed, RunCard } from "./TroopsPlanControls";
 import { TroopsPlanResultCard } from "./TroopsPlanResult";
 
@@ -46,24 +47,13 @@ export function TroopsPlanFlyout({ open, chief, onClose, onSave }: TroopsPlanFly
 			title={t("title")}
 			description={t("description")}
 			footer={
-				<>
-					{savedAt && (
-						<span className="border-line bg-surface text-muted inline-flex h-8 items-center gap-2 rounded-full border-[1.5px] px-3 font-mono text-xs max-lg:w-full lg:me-auto">
-							<span aria-hidden="true" className="bg-kept size-1.5 rounded-full" />
-							{t("saved", { date: formatDateTime(savedAt) })}
-						</span>
-					)}
-					<Button className="max-lg:flex-1" onClick={onClose}>
-						{t("close")}
-					</Button>
-					<Button
-						variant="primary"
-						className="max-lg:flex-2"
-						onClick={() => onSave(draft)}
-					>
-						{t("save")}
-					</Button>
-				</>
+				<PlanFooter
+					savedText={savedAt ? t("saved", { date: formatDateTime(savedAt) }) : undefined}
+					closeLabel={t("close")}
+					onClose={onClose}
+					saveLabel={t("save")}
+					onSave={() => onSave(draft)}
+				/>
 			}
 		>
 			<PlanBody chief={chief} draft={draft} onDraftChange={setDraft} />
