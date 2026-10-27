@@ -48,6 +48,8 @@ export interface ExpertView {
   advanced: boolean;
   skillLevels: number[];
   skillExp: number[];
+  /** The EXP of the learning session that runs now. It lands on its skill when the session ends. */
+  learningExp: number[];
   /** The sigil item of the expert on the Resources page. The count lives in the inventory. */
   sigilItemId: string | null;
   sigils: number;
@@ -68,6 +70,17 @@ const wholeOr = (value: unknown, fallback: number) =>
 const sigilCountOf = (chief: Playthrough, expertId: string) => {
   const itemId = sigilItemIdOf(expertId);
   return itemId ? ownedCount(chief, itemId) : 0;
+};
+
+const learningExpOf = (
+  chief: Playthrough,
+  expertId: string,
+  skillIndex: number,
+) => {
+  const job = chief.queues?.learning?.[0];
+  return job?.expertId === expertId && job.skillIndex === skillIndex
+    ? job.exp
+    : 0;
 };
 
 export const buildExpertViews = (chief: Playthrough): ExpertView[] =>
@@ -91,6 +104,9 @@ export const buildExpertViews = (chief: Playthrough): ExpertView[] =>
       }),
       skillExp: expert.skills.map((_, index) =>
         Math.max(0, wholeOr(saved.skillExp?.[index], 0)),
+      ),
+      learningExp: expert.skills.map((_, index) =>
+        learningExpOf(chief, expert.id, index),
       ),
       sigilItemId: sigilItemIdOf(expert.id),
       sigils: sigilCountOf(chief, expert.id),
@@ -678,7 +694,7 @@ const heldSkillExp = (view: ExpertView, goal: ExpertGoalState) =>
     return (
       sum +
       Math.min(
-        view.skillExp[index],
+        view.skillExp[index] + view.learningExp[index],
         skillExpBetween(skill, view.skillLevels[index], goalLevel),
       )
     );

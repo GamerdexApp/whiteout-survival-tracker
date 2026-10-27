@@ -337,7 +337,15 @@ function ExpertBlock({
 							<PlanRow
 								label={skill.name}
 								hints={[
-									t("expHeld", { amount: formatNumber(view.skillExp[index]) }),
+									view.learningExp[index] > 0
+										? t("expHeldLearning", {
+												amount: formatNumber(
+													view.skillExp[index] + view.learningExp[index]
+												),
+											})
+										: t("expHeld", {
+												amount: formatNumber(view.skillExp[index]),
+											}),
 									...(skillGoalLevel > current
 										? [
 												t("expNeeded", {
