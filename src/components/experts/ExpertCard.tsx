@@ -16,6 +16,7 @@ import {
 	relationshipNameOf,
 	skillCapOf,
 	skillExpNeededFor,
+	skillFloorOf,
 	skillGateOf,
 	skillGoalOf,
 	statNamesOf,
@@ -33,6 +34,7 @@ import { SectionLabel } from "@/comps/ui/SectionLabel";
 import { Switch } from "@/comps/ui/Switch";
 import { ValueStepper } from "@/comps/ui/ValueStepper";
 import { ExpertRow, GoalText, HeldInput } from "./ExpertRows";
+import { SkillGateText } from "./SkillGateText";
 
 interface ExpertCardProps {
 	view: ExpertView;
@@ -277,7 +279,7 @@ function RecruitedBody({
 											skill: skill.name,
 										})}
 										value={skillLevel}
-										min={Math.min(1, skillCap)}
+										min={skillFloorOf(view, index)}
 										max={skillCap}
 										display={t("card.skillDisplay", {
 											level: formatNumber(skillLevel),
@@ -326,7 +328,9 @@ function RecruitedBody({
 							) : skillLevel === 0 ? (
 								<span className="text-muted font-mono text-xs">
 									{t("card.skillLocked", {
-										level: formatNumber(gate?.affinity ?? 0),
+										level: formatNumber(
+											gate?.kind === "affinity" ? gate.affinity : 0
+										),
 									})}
 								</span>
 							) : (
@@ -336,10 +340,7 @@ function RecruitedBody({
 							)}
 							{gate && skillLevel > 0 && (
 								<span className="text-muted font-mono text-xs">
-									{t("card.skillCapped", {
-										next: formatNumber(gate.level),
-										level: formatNumber(gate.affinity),
-									})}
+									<SkillGateText gate={gate} />
 								</span>
 							)}
 						</div>

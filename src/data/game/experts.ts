@@ -84,6 +84,48 @@ export { expertSkillMaxLevel };
 const AFFINITY_STEP = 10;
 
 /**
+ * The affinity level that a skill level needs. The data lists the levels that raise the need, and
+ * a level keeps the need of the last row at or below it. It is 0 for a skill with no rows.
+ */
+export const affinityNeededForSkillLevel = (
+  skill: ExpertSkill,
+  level: number,
+) =>
+  (skill.affinityRequirements ?? [])
+    .filter((row) => row.level <= level)
+    .reduce((most, row) => Math.max(most, row.affinityLevel), 0);
+
+/**
+ * The total of the four skill levels that a skill level needs before the upgrade. A level keeps
+ * the need of the last row at or below it. It is 0 for a skill with no rows.
+ */
+export const totalSkillNeededForLevel = (skill: ExpertSkill, level: number) =>
+  (skill.totalSkillRequirements ?? [])
+    .filter((row) => row.level <= level)
+    .reduce((most, row) => Math.max(most, row.totalSkillLevel), 0);
+
+/**
+ * The highest level of a skill that an affinity level allows, from the unlock, the caps and the
+ * affinity that each level needs. A talent has no such rules and returns its max level.
+ */
+export const skillMaxLevelAtAffinity = (
+  skill: ExpertSkill,
+  affinity: number,
+) => {
+  const capped = expertSkillMaxLevel(skill, affinity);
+  const step = AFFINITY_STEP * Math.floor(affinity / AFFINITY_STEP);
+  let level = 0;
+  while (
+    level < capped &&
+    (skill.unlockAffinityLevel === undefined ||
+      affinityNeededForSkillLevel(skill, level + 1) <= step)
+  ) {
+    level += 1;
+  }
+  return level;
+};
+
+/**
  * The lowest affinity level, above `affinity`, at which a skill can reach `level`. It is null when
  * the data states no such level, so the skill has no known cap to wait for.
  */
@@ -97,7 +139,7 @@ export const affinityForSkillLevel = (
     step <= MAX_AFFINITY;
     step += AFFINITY_STEP
   ) {
-    if (expertSkillMaxLevel(skill, step) >= level) return step;
+    if (skillMaxLevelAtAffinity(skill, step) >= level) return step;
   }
   return null;
 };

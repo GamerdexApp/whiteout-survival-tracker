@@ -18,8 +18,10 @@ import {
 	isAdvancementLevel,
 	learningMinutesNeeded,
 	runExpertsPlan,
+	sanitizeGoal,
 	skillExpBetween,
 	skillGoalCapOf,
+	skillGoalFloorOf,
 	skillGoalGateOf,
 	startingGoalFor,
 } from "@/service/experts";
@@ -38,6 +40,7 @@ import { SectionLabel } from "@/comps/ui/SectionLabel";
 import { Select } from "@/comps/ui/Select";
 import { Switch } from "@/comps/ui/Switch";
 import { ValueStepper } from "@/comps/ui/ValueStepper";
+import { SkillGateText } from "./SkillGateText";
 
 interface ExpertPlanFlyoutProps {
 	open: boolean;
@@ -129,7 +132,9 @@ function PlanBody({
 						key={view.expert.id}
 						view={view}
 						goal={goals[view.expert.id]}
-						onGoalChange={(goal) => onGoalsChange({ ...goals, [view.expert.id]: goal })}
+						onGoalChange={(goal) =>
+							onGoalsChange({ ...goals, [view.expert.id]: sanitizeGoal(view, goal) })
+						}
 						onRemove={() =>
 							onGoalsChange(
 								Object.fromEntries(
@@ -238,7 +243,6 @@ function ExpertBlock({
 	onRemove: () => void;
 }) {
 	const t = useTranslations("experts.plan.block");
-	const tCard = useTranslations("experts.card");
 	const { expert } = view;
 	const goalAffinity = Math.max(goal.affinity ?? view.affinity, view.affinity);
 	const alreadyAdvanced =
@@ -369,21 +373,14 @@ function ExpertBlock({
 										skill: skill.name,
 									})}
 									value={skillGoalLevel}
-									min={current}
+									min={skillGoalFloorOf(view, goal, index)}
 									max={goalCap}
 									onChange={(level) => setSkill(index, level)}
 								/>
 							</PlanRow>
 							{gate && (
 								<p className="text-muted pb-2 font-mono text-xs">
-									{gate.level === 1
-										? tCard("skillLocked", {
-												level: formatNumber(gate.affinity),
-											})
-										: tCard("skillCapped", {
-												next: formatNumber(gate.level),
-												level: formatNumber(gate.affinity),
-											})}
+									<SkillGateText gate={gate} />
 								</p>
 							)}
 						</div>
