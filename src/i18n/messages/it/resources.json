@@ -27,8 +27,10 @@
     },
     "view": {
         "subline": "{items} oggetti in {categories} categorie",
-        "sublineInCategory": "{items} oggetti in {categories} categorie · {inCategory} in {category}",
-        "unsaved": "Non salvato",
+        "coreSubline": "{chief} · Quantità di risorse e pile dello zaino",
+        "tabsLabel": "Viste delle risorse",
+        "coreTab": "Risorse principali",
+        "allTab": "Tutti gli oggetti",
         "shortages": "Gli obiettivi del pianificatore sono scarsi di {names}.",
         "shortagesLink": "Apri il piano di Edifici",
         "show": {
@@ -78,7 +80,22 @@
             "setToZero": "{name} impostato a 0",
             "savedTitle": "Quantità salvate",
             "savedMessage": "{count, plural, one {{amount} quantità cambiata} other {{amount} quantità cambiate}}."
+        },
+        "totals": {
+            "loose": "Sfuso",
+            "packs": "Pacchetti",
+            "securedPacks": "Pacchetti protetti",
+            "anyTitle": "Qualsiasi (forzieri)"
         }
+    },
+    "core": {
+        "resourcesSection": "Risorse",
+        "counts": "Quantità di risorse",
+        "backpack": "Zaino",
+        "secured": "{name} (Protetto)",
+        "level": "Liv. {level}",
+        "customChests": "Forzieri risorse personalizzati",
+        "customSecuredChests": "Forzieri risorse protetti personalizzati"
     },
     "planStock": {
         "constructionTime": "Tempo di costruzione, in accelerazioni",

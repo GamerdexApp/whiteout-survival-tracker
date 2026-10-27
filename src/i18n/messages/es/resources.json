@@ -27,8 +27,10 @@
     },
     "view": {
         "subline": "{items} objetos en {categories} categorías",
-        "sublineInCategory": "{items} objetos en {categories} categorías · {inCategory} en {category}",
-        "unsaved": "Sin guardar",
+        "coreSubline": "{chief} · Cantidades de recursos y montones de la mochila",
+        "tabsLabel": "Vistas de recursos",
+        "coreTab": "Recursos básicos",
+        "allTab": "Todos los objetos",
         "shortages": "A los objetivos del planificador les faltan {names}.",
         "shortagesLink": "Abrir el plan de Edificios",
         "show": {
@@ -78,7 +80,22 @@
             "setToZero": "{name} puesto a 0",
             "savedTitle": "Cantidades guardadas",
             "savedMessage": "{count, plural, one {{amount} cantidad cambiada} other {{amount} cantidades cambiadas}}."
+        },
+        "totals": {
+            "loose": "Suelto",
+            "packs": "Paquetes",
+            "securedPacks": "Paquetes seguros",
+            "anyTitle": "Cualquiera (cofres)"
         }
+    },
+    "core": {
+        "resourcesSection": "Recursos",
+        "counts": "Cantidad de recursos",
+        "backpack": "Mochila",
+        "secured": "{name} (Seguro)",
+        "level": "Nv. {level}",
+        "customChests": "Cofres de recursos personalizados",
+        "customSecuredChests": "Cofres de recursos seguros personalizados"
     },
     "planStock": {
         "constructionTime": "Tiempo de construcción, en aceleradores",

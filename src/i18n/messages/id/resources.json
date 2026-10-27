@@ -27,8 +27,10 @@
     },
     "view": {
         "subline": "{items} item dalam {categories} kategori",
-        "sublineInCategory": "{items} item dalam {categories} kategori · {inCategory} di {category}",
-        "unsaved": "Belum disimpan",
+        "coreSubline": "{chief} · Jumlah sumber daya dan tumpukan tas",
+        "tabsLabel": "Tampilan sumber daya",
+        "coreTab": "Sumber Daya Inti",
+        "allTab": "Semua item",
         "shortages": "Target perencana kekurangan {names}.",
         "shortagesLink": "Buka rencana Bangunan",
         "show": {
@@ -78,7 +80,22 @@
             "setToZero": "{name} disetel ke 0",
             "savedTitle": "Jumlah tersimpan",
             "savedMessage": "{count, plural, other {{amount} jumlah}} berubah."
+        },
+        "totals": {
+            "loose": "Lepas",
+            "packs": "Paket",
+            "securedPacks": "Paket aman",
+            "anyTitle": "Apa pun (peti)"
         }
+    },
+    "core": {
+        "resourcesSection": "Sumber daya",
+        "counts": "Jumlah sumber daya",
+        "backpack": "Tas",
+        "secured": "{name} (Aman)",
+        "level": "Lv. {level}",
+        "customChests": "Peti Sumber Daya Kustom",
+        "customSecuredChests": "Peti Sumber Daya Aman Kustom"
     },
     "planStock": {
         "constructionTime": "Waktu konstruksi, sebagai percepatan",

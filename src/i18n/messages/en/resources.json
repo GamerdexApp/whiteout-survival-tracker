@@ -27,8 +27,10 @@
     },
     "view": {
         "subline": "{items} items in {categories} categories",
-        "sublineInCategory": "{items} items in {categories} categories · {inCategory} in {category}",
-        "unsaved": "Unsaved",
+        "coreSubline": "{chief} · Resource counts and backpack stacks",
+        "tabsLabel": "Resource views",
+        "coreTab": "Core Resources",
+        "allTab": "All items",
         "shortages": "Planner goals are short on {names}.",
         "shortagesLink": "Open the Buildings plan",
         "show": {
@@ -78,7 +80,22 @@
             "setToZero": "{name} set to 0",
             "savedTitle": "Counts saved",
             "savedMessage": "{count, plural, one {{amount} count} other {{amount} counts}} changed."
+        },
+        "totals": {
+            "loose": "Loose",
+            "packs": "Packs",
+            "securedPacks": "Secured packs",
+            "anyTitle": "Any chest"
         }
+    },
+    "core": {
+        "resourcesSection": "Resources",
+        "counts": "Resource count",
+        "backpack": "Backpack",
+        "secured": "{name} (Secured)",
+        "level": "Lv. {level}",
+        "customChests": "Custom Resource Chests",
+        "customSecuredChests": "Custom Secured Resource Chests"
     },
     "planStock": {
         "constructionTime": "Construction time, as speedups",

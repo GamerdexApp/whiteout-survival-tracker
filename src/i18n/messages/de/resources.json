@@ -27,8 +27,10 @@
     },
     "view": {
         "subline": "{items} Items in {categories} Kategorien",
-        "sublineInCategory": "{items} Items in {categories} Kategorien · {inCategory} in {category}",
-        "unsaved": "Ungespeichert",
+        "coreSubline": "{chief} · Rohstoffmengen und Rucksackstapel",
+        "tabsLabel": "Ressourcenansichten",
+        "coreTab": "Kernressourcen",
+        "allTab": "Alle Gegenstände",
         "shortages": "Planerziele haben zu wenig {names}.",
         "shortagesLink": "Gebäudeplan öffnen",
         "show": {
@@ -78,7 +80,22 @@
             "setToZero": "{name} auf 0 gesetzt",
             "savedTitle": "Anzahlen gespeichert",
             "savedMessage": "{count, plural, one {{amount} Anzahl} other {{amount} Anzahlen}} geändert."
+        },
+        "totals": {
+            "loose": "Lose",
+            "packs": "Pakete",
+            "securedPacks": "Gesicherte Pakete",
+            "anyTitle": "Beliebig (Truhen)"
         }
+    },
+    "core": {
+        "resourcesSection": "Ressourcen",
+        "counts": "Rohstoffmenge",
+        "backpack": "Rucksack",
+        "secured": "{name} (Gesichert)",
+        "level": "Stufe {level}",
+        "customChests": "Benutzerdefinierte Ressourcentruhen",
+        "customSecuredChests": "Benutzerdefinierte gesicherte Ressourcentruhen"
     },
     "planStock": {
         "constructionTime": "Bauzeit, als Beschleuniger",

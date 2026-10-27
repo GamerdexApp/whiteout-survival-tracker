@@ -27,8 +27,10 @@
     },
     "view": {
         "subline": "{items} ไอเทมใน {categories} หมวดหมู่",
-        "sublineInCategory": "{items} ไอเทมใน {categories} หมวดหมู่ · {inCategory} ใน {category}",
-        "unsaved": "ยังไม่บันทึก",
+        "coreSubline": "{chief} · จำนวนทรัพยากรและกองในกระเป๋า",
+        "tabsLabel": "มุมมองทรัพยากร",
+        "coreTab": "ทรัพยากรหลัก",
+        "allTab": "ไอเทมทั้งหมด",
         "shortages": "เป้าหมายในแผนขาด {names}",
         "shortagesLink": "เปิดแผนอาคาร",
         "show": {
@@ -78,7 +80,22 @@
             "setToZero": "ตั้ง {name} เป็น 0 แล้ว",
             "savedTitle": "บันทึกจำนวนแล้ว",
             "savedMessage": "{count, plural, other {เปลี่ยน {amount} จำนวน}}"
+        },
+        "totals": {
+            "loose": "แยก",
+            "packs": "แพ็ก",
+            "securedPacks": "แพ็กปลอดภัย",
+            "anyTitle": "ชนิดใดก็ได้ (หีบ)"
         }
+    },
+    "core": {
+        "resourcesSection": "ทรัพยากร",
+        "counts": "จำนวนทรัพยากร",
+        "backpack": "กระเป๋า",
+        "secured": "{name} (ปลอดภัย)",
+        "level": "Lv. {level}",
+        "customChests": "หีบทรัพยากรกำหนดเอง",
+        "customSecuredChests": "หีบทรัพยากรปลอดภัยกำหนดเอง"
     },
     "planStock": {
         "constructionTime": "เวลาก่อสร้าง ในรูปตัวเร่งเวลา",

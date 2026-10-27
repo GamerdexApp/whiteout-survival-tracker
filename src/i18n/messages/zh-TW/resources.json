@@ -27,8 +27,10 @@
     },
     "view": {
         "subline": "{categories} 個分類共 {items} 個道具",
-        "sublineInCategory": "{categories} 個分類共 {items} 個道具 · {category}有 {inCategory} 個",
-        "unsaved": "未儲存",
+        "coreSubline": "{chief} · 資源數量與背包堆疊",
+        "tabsLabel": "資源檢視",
+        "coreTab": "核心資源",
+        "allTab": "全部物品",
         "shortages": "規劃目標缺少{names}。",
         "shortagesLink": "開啟建築規劃",
         "show": {
@@ -78,7 +80,22 @@
             "setToZero": "{name}已設為 0",
             "savedTitle": "已儲存數量",
             "savedMessage": "已變更 {count, plural, other {{amount} 項數量}}。"
+        },
+        "totals": {
+            "loose": "散裝",
+            "packs": "禮包",
+            "securedPacks": "安全禮包",
+            "anyTitle": "任意（寶箱）"
         }
+    },
+    "core": {
+        "resourcesSection": "資源",
+        "counts": "資源數量",
+        "backpack": "背包",
+        "secured": "{name}（安全）",
+        "level": "{level} 級",
+        "customChests": "自選資源寶箱",
+        "customSecuredChests": "自選安全資源寶箱"
     },
     "planStock": {
         "constructionTime": "建造時間，以加速道具計",

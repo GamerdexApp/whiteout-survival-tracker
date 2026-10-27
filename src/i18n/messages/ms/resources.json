@@ -27,8 +27,10 @@
     },
     "view": {
         "subline": "{items} item dalam {categories} kategori",
-        "sublineInCategory": "{items} item dalam {categories} kategori · {inCategory} dalam {category}",
-        "unsaved": "Belum disimpan",
+        "coreSubline": "{chief} · Kiraan sumber dan timbunan beg galas",
+        "tabsLabel": "Paparan sumber",
+        "coreTab": "Sumber Teras",
+        "allTab": "Semua item",
         "shortages": "Matlamat perancang kurang {names}.",
         "shortagesLink": "Buka pelan Bangunan",
         "show": {
@@ -78,7 +80,22 @@
             "setToZero": "{name} ditetapkan ke 0",
             "savedTitle": "Bilangan disimpan",
             "savedMessage": "{count, plural, other {{amount} bilangan}} berubah."
+        },
+        "totals": {
+            "loose": "Longgar",
+            "packs": "Pek",
+            "securedPacks": "Pek selamat",
+            "anyTitle": "Mana-mana (peti)"
         }
+    },
+    "core": {
+        "resourcesSection": "Sumber",
+        "counts": "Kiraan sumber",
+        "backpack": "Beg galas",
+        "secured": "{name} (Selamat)",
+        "level": "Tahap {level}",
+        "customChests": "Peti Sumber Tersuai",
+        "customSecuredChests": "Peti Sumber Selamat Tersuai"
     },
     "planStock": {
         "constructionTime": "Masa pembinaan, sebagai pecutan",

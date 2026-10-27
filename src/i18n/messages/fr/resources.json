@@ -27,8 +27,10 @@
     },
     "view": {
         "subline": "{items} objets dans {categories} catégories",
-        "sublineInCategory": "{items} objets dans {categories} catégories · {inCategory} dans {category}",
-        "unsaved": "Non enregistré",
+        "coreSubline": "{chief} · Quantités de ressources et piles du sac à dos",
+        "tabsLabel": "Vues des ressources",
+        "coreTab": "Ressources de base",
+        "allTab": "Tous les objets",
         "shortages": "Les objectifs du planificateur manquent de {names}.",
         "shortagesLink": "Ouvrir le plan des Bâtiments",
         "show": {
@@ -78,7 +80,22 @@
             "setToZero": "{name} mis à 0",
             "savedTitle": "Quantités enregistrées",
             "savedMessage": "{count, plural, one {{amount} quantité modifiée} other {{amount} quantités modifiées}}."
+        },
+        "totals": {
+            "loose": "Libre",
+            "packs": "Paquets",
+            "securedPacks": "Paquets sécurisés",
+            "anyTitle": "N'importe lequel (coffres)"
         }
+    },
+    "core": {
+        "resourcesSection": "Ressources",
+        "counts": "Quantité de ressources",
+        "backpack": "Sac à dos",
+        "secured": "{name} (Sécurisé)",
+        "level": "Niv. {level}",
+        "customChests": "Coffres de ressources personnalisés",
+        "customSecuredChests": "Coffres de ressources sécurisés personnalisés"
     },
     "planStock": {
         "constructionTime": "Durée de construction, en accélérations",

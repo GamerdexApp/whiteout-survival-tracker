@@ -27,8 +27,10 @@
     },
     "view": {
         "subline": "{items} عنصر في {categories} فئة",
-        "sublineInCategory": "{items} عنصر في {categories} فئة · {inCategory} في {category}",
-        "unsaved": "غير محفوظ",
+        "coreSubline": "{chief} · كميات الموارد وحزم الحقيبة",
+        "tabsLabel": "عروض الموارد",
+        "coreTab": "الموارد الأساسية",
+        "allTab": "كل العناصر",
         "shortages": "ينقص {names} لإتمام أهداف المخطِّط.",
         "shortagesLink": "فتح خطة المباني",
         "show": {
@@ -78,7 +80,22 @@
             "setToZero": "تم ضبط {name} على 0",
             "savedTitle": "تم حفظ الأعداد",
             "savedMessage": "تغيّر {count, plural, zero {{amount} عدد} one {{amount} عدد} two {{amount} عددان} few {{amount} أعداد} many {{amount} عددًا} other {{amount} عدد}}."
+        },
+        "totals": {
+            "loose": "منفصل",
+            "packs": "حزم",
+            "securedPacks": "حزم مؤمّنة",
+            "anyTitle": "أي (صناديق)"
         }
+    },
+    "core": {
+        "resourcesSection": "الموارد",
+        "counts": "كمية الموارد",
+        "backpack": "الحقيبة",
+        "secured": "{name} (مؤمّن)",
+        "level": "مستوى {level}",
+        "customChests": "صناديق الموارد المخصصة",
+        "customSecuredChests": "صناديق الموارد المؤمّنة المخصصة"
     },
     "planStock": {
         "constructionTime": "وقت البناء، كتسريعات",

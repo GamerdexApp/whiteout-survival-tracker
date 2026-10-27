@@ -27,8 +27,10 @@
     },
     "view": {
         "subline": "분류 {categories}개, 아이템 {items}개",
-        "sublineInCategory": "분류 {categories}개, 아이템 {items}개 · {category} {inCategory}개",
-        "unsaved": "저장 안 됨",
+        "coreSubline": "{chief} · 자원 수량과 배낭 묶음",
+        "tabsLabel": "자원 보기",
+        "coreTab": "기본 자원",
+        "allTab": "모든 아이템",
         "shortages": "계획 목표에 {names}이(가) 부족해요.",
         "shortagesLink": "건물 계획 열기",
         "show": {
@@ -78,7 +80,22 @@
             "setToZero": "{name}을(를) 0으로 설정했어요",
             "savedTitle": "수량을 저장했어요",
             "savedMessage": "{count, plural, other {수량 {amount}개}}가 바뀌었어요."
+        },
+        "totals": {
+            "loose": "낱개",
+            "packs": "묶음",
+            "securedPacks": "보호 묶음",
+            "anyTitle": "아무거나 (상자)"
         }
+    },
+    "core": {
+        "resourcesSection": "자원",
+        "counts": "자원 수량",
+        "backpack": "배낭",
+        "secured": "{name} (보호)",
+        "level": "Lv. {level}",
+        "customChests": "맞춤 자원 상자",
+        "customSecuredChests": "맞춤 보호 자원 상자"
     },
     "planStock": {
         "constructionTime": "건설 시간, 가속 기준",

@@ -27,8 +27,10 @@
     },
     "view": {
         "subline": "{categories}个分类共{items}个道具",
-        "sublineInCategory": "{categories}个分类共{items}个道具 · {category}中有{inCategory}个",
-        "unsaved": "未保存",
+        "coreSubline": "{chief} · 资源数量和背包堆叠",
+        "tabsLabel": "资源视图",
+        "coreTab": "核心资源",
+        "allTab": "全部物品",
         "shortagesLink": "打开建筑计划",
         "shortages": "规划目标缺少{names}。",
         "show": {
@@ -78,7 +80,22 @@
             "setToZero": "已将{name}设为 0",
             "savedTitle": "数量已保存",
             "savedMessage": "{count, plural, other {已更改{amount}项数量}}。"
+        },
+        "totals": {
+            "loose": "散装",
+            "packs": "礼包",
+            "securedPacks": "安全礼包",
+            "anyTitle": "任意（宝箱）"
         }
+    },
+    "core": {
+        "resourcesSection": "资源",
+        "counts": "资源数量",
+        "backpack": "背包",
+        "secured": "{name}（安全）",
+        "level": "{level} 级",
+        "customChests": "自选资源宝箱",
+        "customSecuredChests": "自选安全资源宝箱"
     },
     "planStock": {
         "constructionTime": "建造时间，折合加速",

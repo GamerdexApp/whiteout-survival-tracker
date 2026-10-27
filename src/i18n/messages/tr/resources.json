@@ -27,8 +27,10 @@
     },
     "view": {
         "subline": "{categories} kategoride {items} öğe",
-        "sublineInCategory": "{categories} kategoride {items} öğe · {category} içinde {inCategory}",
-        "unsaved": "Kaydedilmedi",
+        "coreSubline": "{chief} · Kaynak miktarları ve sırt çantası yığınları",
+        "tabsLabel": "Kaynak görünümleri",
+        "coreTab": "Temel Kaynaklar",
+        "allTab": "Tüm eşyalar",
         "shortages": "Planlayıcı hedeflerinde eksik: {names}.",
         "shortagesLink": "Bina planını aç",
         "show": {
@@ -78,7 +80,22 @@
             "setToZero": "0 yapıldı: {name}",
             "savedTitle": "Sayılar kaydedildi",
             "savedMessage": "{count, plural, one {{amount} sayı} other {{amount} sayı}} değişti."
+        },
+        "totals": {
+            "loose": "Dağınık",
+            "packs": "Paketler",
+            "securedPacks": "Güvenli paketler",
+            "anyTitle": "Herhangi (sandıklar)"
         }
+    },
+    "core": {
+        "resourcesSection": "Kaynaklar",
+        "counts": "Kaynak miktarı",
+        "backpack": "Sırt çantası",
+        "secured": "{name} (Güvenli)",
+        "level": "Sv. {level}",
+        "customChests": "Özel Kaynak Sandıkları",
+        "customSecuredChests": "Özel Güvenli Kaynak Sandıkları"
     },
     "planStock": {
         "constructionTime": "İnşaat süresi, hızlandırma olarak",
