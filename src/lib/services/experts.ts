@@ -197,6 +197,12 @@ export const affinityRowOf = (expert: Expert, level: number) =>
 export const affinityNeededFor = (expert: Expert, level: number) =>
   level >= MAX_AFFINITY ? 0 : affinityRowOf(expert, level + 1).affinityRequired;
 
+/** The points of every level above `from` up to and including `to`. */
+export const affinityBetween = (expert: Expert, from: number, to: number) =>
+  expert.affinityLevels
+    .filter((row) => row.level > from && row.level <= to)
+    .reduce((sum, row) => sum + row.affinityRequired, 0);
+
 /**
  * The affinity points of every level from `level` up to the top. The player can hold more points
  * than the next level needs, so the held points are limited by this total.

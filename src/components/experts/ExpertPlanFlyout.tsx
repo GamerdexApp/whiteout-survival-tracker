@@ -9,12 +9,16 @@ import { expertPlanScores, exportSpecOf } from "@/service/expertExport";
 import type { ExpertPlanRow, ExpertsPlan, ExpertView, Goals } from "@/service/experts";
 import {
 	affinityAvailable,
+	affinityBetween,
+	affinityNeededFor,
+	affinityRowOf,
 	buildExpertViews,
 	expertPlanChecks,
 	initialExpertGoals,
 	isAdvancementLevel,
 	learningMinutesNeeded,
 	runExpertsPlan,
+	skillExpBetween,
 	skillGoalCapOf,
 	skillGoalGateOf,
 	startingGoalFor,
@@ -123,7 +127,6 @@ function PlanBody({
 					<ExpertBlock
 						key={view.expert.id}
 						view={view}
-						heldAffinity={view.affinityAvailable + plan.giftAffinity}
 						goal={goals[view.expert.id]}
 						onGoalChange={(goal) => onGoalsChange({ ...goals, [view.expert.id]: goal })}
 						onRemove={() =>
@@ -195,12 +198,12 @@ function AddExpert({
 
 function PlanRow({
 	label,
-	hint,
+	hints,
 	current,
 	children,
 }: {
 	label: string;
-	hint: string;
+	hints: string[];
 	current: string;
 	children: React.ReactNode;
 }) {
@@ -208,7 +211,11 @@ function PlanRow({
 		<div className="border-line flex flex-wrap items-center justify-between gap-x-3 gap-y-1 border-t-[1.5px] py-2 first:border-t-0">
 			<div className="flex min-w-0 flex-col">
 				<span>{label}</span>
-				<span className="text-muted font-mono text-xs">{hint}</span>
+				{hints.map((hint) => (
+					<span key={hint} className="text-muted font-mono text-xs">
+						{hint}
+					</span>
+				))}
 			</div>
 			<div className="flex flex-wrap items-center justify-end gap-2">
 				<span className="text-muted font-mono text-xs">{current}</span>
@@ -220,13 +227,11 @@ function PlanRow({
 
 function ExpertBlock({
 	view,
-	heldAffinity,
 	goal,
 	onGoalChange,
 	onRemove,
 }: {
 	view: ExpertView;
-	heldAffinity: number;
 	goal: ExpertGoalState;
 	onGoalChange: (goal: ExpertGoalState) => void;
 	onRemove: () => void;
@@ -238,6 +243,15 @@ function ExpertBlock({
 	const alreadyAdvanced =
 		goalAffinity === view.affinity && isAdvancementLevel(view.affinity) && view.advanced;
 	const canAdvance = isAdvancementLevel(goalAffinity) && !alreadyAdvanced;
+	const goalAffinityNeeded = affinityBetween(expert, view.affinity, goalAffinity);
+	const nextLevelNeeded = affinityNeededFor(expert, view.affinity);
+	const affinityNeededHints =
+		goalAffinity > view.affinity
+			? [t("affinityNeeded", { amount: formatNumber(goalAffinityNeeded) })]
+			: nextLevelNeeded > 0
+				? [t("affinityNext", { amount: formatNumber(nextLevelNeeded) })]
+				: [];
+	const advancementSigils = affinityRowOf(expert, goalAffinity).advancementCost;
 	const setSkill = (index: number, level: number) =>
 		onGoalChange({
 			...goal,
@@ -272,7 +286,10 @@ function ExpertBlock({
 			<div className="flex flex-col">
 				<PlanRow
 					label={t("affinity")}
-					hint={t("affinityHeld", { amount: formatNumber(heldAffinity) })}
+					hints={[
+						t("affinityHeld", { amount: formatNumber(view.affinityAvailable) }),
+						...affinityNeededHints,
+					]}
 					current={
 						isAdvancementLevel(view.affinity) && view.advanced
 							? t("currentAffinity", { level: formatNumber(view.affinity) })
@@ -296,22 +313,45 @@ function ExpertBlock({
 				{canAdvance && (
 					<div className="border-line flex items-center justify-between gap-3 border-t-[1.5px] py-2">
 						<span>{t("advanceAtGoal", { level: formatNumber(goalAffinity) })}</span>
-						<Switch
-							label={t("advanceAtGoalLabel", { expert: expert.name })}
-							checked={goal.advanced === true}
-							onChange={(advanced) => onGoalChange({ ...goal, advanced })}
-						/>
+						<span className="flex items-center gap-3">
+							{advancementSigils !== undefined && (
+								<span className="text-muted font-mono text-xs">
+									{t("advanceSigils", { count: formatNumber(advancementSigils) })}
+								</span>
+							)}
+							<Switch
+								label={t("advanceAtGoalLabel", { expert: expert.name })}
+								checked={goal.advanced === true}
+								onChange={(advanced) => onGoalChange({ ...goal, advanced })}
+							/>
+						</span>
 					</div>
 				)}
 				{expert.skills.map((skill, index) => {
 					const current = view.skillLevels[index];
 					const goalCap = skillGoalCapOf(view, goal, index);
 					const gate = skillGoalGateOf(view, goal, index);
+					const skillGoalLevel = Math.max(goal.skills?.[index] ?? current, current);
 					return (
 						<div key={skill.name}>
 							<PlanRow
 								label={skill.name}
-								hint={t("expHeld", { amount: formatNumber(view.skillExp[index]) })}
+								hints={[
+									t("expHeld", { amount: formatNumber(view.skillExp[index]) }),
+									...(skillGoalLevel > current
+										? [
+												t("expNeeded", {
+													amount: formatNumber(
+														skillExpBetween(
+															skill,
+															current,
+															skillGoalLevel
+														)
+													),
+												}),
+											]
+										: []),
+								]}
 								current={t("currentLevel", { level: formatNumber(current) })}
 							>
 								<ValueStepper
@@ -319,7 +359,7 @@ function ExpertBlock({
 										expert: expert.name,
 										skill: skill.name,
 									})}
-									value={Math.max(goal.skills?.[index] ?? current, current)}
+									value={skillGoalLevel}
 									min={current}
 									max={goalCap}
 									onChange={(level) => setSkill(index, level)}

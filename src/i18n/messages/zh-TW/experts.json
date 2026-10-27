@@ -148,7 +148,11 @@
             "skillGoalLabel": "{expert}{skill}目標",
             "advanceAtGoal": "在 {level} 級進階",
             "advanceAtGoalLabel": "{expert}在目標等級進階",
-            "sigils": "印記 {count}"
+            "sigils": "印記 {count}",
+            "affinityNeeded": "所需親密度 {amount}",
+            "affinityNext": "下一級需要 {amount} 親密度",
+            "expNeeded": "所需 EXP {amount}",
+            "advanceSigils": "{count} 個印記"
         },
         "checks": {
             "affinity": "親密度點數",
