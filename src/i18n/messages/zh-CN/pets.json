@@ -203,7 +203,13 @@
             },
             "notScored": "不计分",
             "eventNote": "活动积分等于进阶分数乘以各活动计分行的积分。",
-            "scoreSourceNote": "40 到 100 级的进阶分数与活动说明一致。10 到 30 级来自同一来源（WoS Tools）。"
+            "scoreSourceNote": "40 到 100 级的进阶分数与活动说明一致。10 到 30 级来自同一来源（WoS Tools）。",
+            "chestOf": "共持有 {held} 个"
+        },
+        "chest": {
+            "covers": "可用数量中有 {amount} 来自宠物进阶材料自选宝箱",
+            "allUsed": "你的 {used} 个宠物进阶材料自选宝箱已全部用完：强化血清 {serums} 个，活力药水 {potions} 个，驯服手册 {manuals} 个。",
+            "used": "你的 {held} 个宠物进阶材料自选宝箱中已用 {used} 个：强化血清 {serums} 个，活力药水 {potions} 个，驯服手册 {manuals} 个。"
         }
     }
 }

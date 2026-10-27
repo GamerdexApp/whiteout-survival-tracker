@@ -6,9 +6,10 @@ import { LuPlus } from "react-icons/lu";
 import type { Playthrough } from "@/types/app";
 import { formatDateTime, formatDecimal, formatNumber } from "@/lib/format";
 import { exportSpecOf, petPlanScores } from "@/service/petExport";
-import type { PetGoals, PetPlanResult, PetPlanRow, PetView } from "@/service/pets";
+import type { ChestUse, PetGoals, PetPlanResult, PetPlanRow, PetView } from "@/service/pets";
 import {
 	buildPetViews,
+	chestUseOf,
 	initialPetGoals,
 	isAdvanceLevel,
 	petPlanChecks,
@@ -18,7 +19,13 @@ import {
 	withGoalLevel,
 } from "@/service/pets";
 import { findItem } from "@/data/game/items";
-import { PLAN_ITEM_IDS } from "@/data/game/pets";
+import {
+	ADVANCEMENT_CHEST_ID,
+	ENERGIZING_POTION_ID,
+	PLAN_ITEM_IDS,
+	STRENGTHENING_SERUM_ID,
+	TAMING_MANUAL_ID,
+} from "@/data/game/pets";
 import { ExportToEventFlyout } from "@/comps/export/ExportToEventFlyout";
 import { PlanStockCheck } from "@/comps/queues/PlanStockCheck";
 import { Badge } from "@/comps/ui/Badge";
@@ -103,6 +110,7 @@ function PlanBody({
 	const t = useTranslations("pets.plan");
 	const views = useMemo(() => buildPetViews(chief), [chief]);
 	const addable = views.filter((view) => view.unlocked && !goals[view.pet.id]);
+	const chestUse = chestUseOf(plan, chief);
 
 	return (
 		<>
@@ -132,7 +140,18 @@ function PlanBody({
 			) : (
 				<>
 					<PlanStockCheck checks={petPlanChecks(plan, chief)} timeNote="" />
-					<PlanResult plan={plan} />
+					{chestUse.used > 0 && (
+						<Note>
+							{t(chestUse.fullyUsed ? "chest.allUsed" : "chest.used", {
+								used: formatNumber(chestUse.used),
+								held: formatNumber(chestUse.held),
+								serums: formatNumber(chestUse.chestsFor[STRENGTHENING_SERUM_ID]),
+								potions: formatNumber(chestUse.chestsFor[ENERGIZING_POTION_ID]),
+								manuals: formatNumber(chestUse.chestsFor[TAMING_MANUAL_ID]),
+							})}
+						</Note>
+					)}
+					<PlanResult plan={plan} chestUse={chestUse} />
 				</>
 			)}
 		</>
@@ -265,7 +284,7 @@ function PetBlock({
 
 const EVENT_KEYS = ["svs", "allianceShowdown", "kingOfIcefield"] as const;
 
-function PlanResult({ plan }: { plan: PetPlanResult }) {
+function PlanResult({ plan, chestUse }: { plan: PetPlanResult; chestUse: ChestUse }) {
 	const t = useTranslations("pets.plan.result");
 	const { total } = plan;
 	const unknown = t("unknown");
@@ -299,6 +318,18 @@ function PlanResult({ plan }: { plan: PetPlanResult }) {
 						</div>
 					);
 				})}
+				{chestUse.used > 0 && (
+					<div className="border-line flex min-h-9 items-center gap-2 border-t-[1.5px] py-1">
+						<ItemIcon src={findItem(ADVANCEMENT_CHEST_ID)?.img} size={24} />
+						<span className="flex-1">
+							{findItem(ADVANCEMENT_CHEST_ID)?.name ?? ADVANCEMENT_CHEST_ID}
+						</span>
+						<span className="text-muted font-mono text-xs">
+							{t("chestOf", { held: formatNumber(chestUse.held) })}
+						</span>
+						<span className="font-mono">{formatNumber(chestUse.used)}</span>
+					</div>
+				)}
 			</div>
 			<div className="flex flex-col">
 				<SectionLabel className="text-muted pb-1">{t("byPet")}</SectionLabel>

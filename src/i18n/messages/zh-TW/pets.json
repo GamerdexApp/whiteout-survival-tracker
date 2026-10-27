@@ -203,7 +203,13 @@
             },
             "notScored": "不計分",
             "eventNote": "活動積分等於進階分數乘以各活動計分列的分數。",
-            "scoreSourceNote": "40 到 100 級的進階分數與活動說明一致。10 到 30 級來自單一來源（WoS Tools）。"
+            "scoreSourceNote": "40 到 100 級的進階分數與活動說明一致。10 到 30 級來自單一來源（WoS Tools）。",
+            "chestOf": "共持有 {held} 個"
+        },
+        "chest": {
+            "covers": "可用數量中有 {amount} 來自寵物進階材料自選寶箱",
+            "allUsed": "你的 {used} 個寵物進階材料自選寶箱已全部用完：強化血清 {serums} 個，活力藥水 {potions} 個，馴服手冊 {manuals} 個。",
+            "used": "你的 {held} 個寵物進階材料自選寶箱中已用 {used} 個：強化血清 {serums} 個，活力藥水 {potions} 個，馴服手冊 {manuals} 個。"
         }
     }
 }

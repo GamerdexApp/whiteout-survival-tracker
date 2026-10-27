@@ -203,7 +203,13 @@
             },
             "notScored": "Sin puntos",
             "eventNote": "Los puntos de eventos son el puntaje de avance por los puntos de la fila de puntuación de cada evento.",
-            "scoreSourceNote": "Los puntajes de avance de los niveles 40 a 100 coinciden con las notas de eventos. Los niveles 10 a 30 vienen de una sola fuente (WoS Tools)."
+            "scoreSourceNote": "Los puntajes de avance de los niveles 40 a 100 coinciden con las notas de eventos. Los niveles 10 a 30 vienen de una sola fuente (WoS Tools).",
+            "chestOf": "de {held} que tienes"
+        },
+        "chest": {
+            "covers": "{amount} de lo disponible vienen de Cofres personalizados de materiales de avance de mascota",
+            "allUsed": "Se usan los {used} Cofres personalizados de materiales de avance de mascota que tienes: {serums} para Sueros fortalecedores, {potions} para Pociones energizantes, {manuals} para Manuales de domesticación.",
+            "used": "Se usan {used} de tus {held} Cofres personalizados de materiales de avance de mascota: {serums} para Sueros fortalecedores, {potions} para Pociones energizantes, {manuals} para Manuales de domesticación."
         }
     }
 }

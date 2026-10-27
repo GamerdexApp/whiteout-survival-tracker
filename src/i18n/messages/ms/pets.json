@@ -203,7 +203,13 @@
             },
             "notScored": "Tidak dimarkahkan",
             "eventNote": "Mata acara ialah skor kenaikan pangkat darab mata baris pemarkahan setiap acara.",
-            "scoreSourceNote": "Skor kenaikan pangkat bagi tahap 40 hingga 100 sepadan dengan nota acara. Tahap 10 hingga 30 datang daripada satu sumber (WoS Tools)."
+            "scoreSourceNote": "Skor kenaikan pangkat bagi tahap 40 hingga 100 sepadan dengan nota acara. Tahap 10 hingga 30 datang daripada satu sumber (WoS Tools).",
+            "chestOf": "daripada {held} dimiliki"
+        },
+        "chest": {
+            "covers": "{amount} daripada yang tersedia datang dari Peti Tersuai Bahan Kemajuan Haiwan Peliharaan",
+            "allUsed": "Kesemua {used} Peti Tersuai Bahan Kemajuan Haiwan Peliharaan anda digunakan: {serums} untuk Serum Penguat, {potions} untuk Ramuan Bertenaga, {manuals} untuk Manual Menjinak.",
+            "used": "{used} daripada {held} Peti Tersuai Bahan Kemajuan Haiwan Peliharaan anda digunakan: {serums} untuk Serum Penguat, {potions} untuk Ramuan Bertenaga, {manuals} untuk Manual Menjinak."
         }
     }
 }

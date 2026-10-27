@@ -203,7 +203,13 @@
             },
             "notScored": "점수 없음",
             "eventNote": "이벤트 점수는 승급 점수에 각 이벤트 점수 항목의 점수를 곱한 값이에요.",
-            "scoreSourceNote": "40~100레벨의 승급 점수는 이벤트 안내와 일치해요. 10~30레벨은 한 출처(WoS Tools)에서 가져왔어요."
+            "scoreSourceNote": "40~100레벨의 승급 점수는 이벤트 안내와 일치해요. 10~30레벨은 한 출처(WoS Tools)에서 가져왔어요.",
+            "chestOf": "보유 {held}개 중"
+        },
+        "chest": {
+            "covers": "사용 가능한 수량 중 {amount}은(는) 펫 진급 재료 맞춤 상자에서 옵니다",
+            "allUsed": "보유한 펫 진급 재료 맞춤 상자 {used}개를 모두 사용합니다: 강화 혈청 {serums}개, 활력 물약 {potions}개, 조련 교본 {manuals}개.",
+            "used": "보유한 펫 진급 재료 맞춤 상자 {held}개 중 {used}개를 사용합니다: 강화 혈청 {serums}개, 활력 물약 {potions}개, 조련 교본 {manuals}개."
         }
     }
 }

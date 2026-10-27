@@ -24,6 +24,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
+- Pets Plan: the plan counts the Strengthening Serum, which the calculator already returned. The Pet Advancement Materials Custom Chests you hold fill what the plan is short of, Serums first, then Energizing Potions, then Taming Manuals. The rows say how much a chest covers, and a note says how many held chests are used and for which item, and when every chest is used. The result lists the chests used
 - Experts: the page and the plan enforce the affinity level and the total skill level that each skill level needs, from the package. A skill stops at the level it can take now and says why, and a skill cannot drop below the level that other skill levels depend on
 - Plans: the general speedups no longer count in full in every plan. The time check of the Buildings, Research, Troops and Experts plans has a field for the percent of the general speedup minutes the plan uses. It starts at 0 and the four plans together cannot pass 100%. The speedup count adds the applied general minutes
 - Experts Plan: the available affinity counts the affinity gifts on the Resources page, so it no longer shows 0 when you hold gifts. Available affinity shows everything you hold, also when the plan needs none. The "still to get" lines share the gifts across the planned experts in order, after the points saved on each expert card

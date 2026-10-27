@@ -74,6 +74,7 @@ export function PlanStockCheck({ checks, timeNote, timeExtra }: PlanStockCheckPr
 										: t("shortBy", { amount: unitText(check, shortBy) })}
 								</span>
 							</div>
+							{check.detail && <p className="text-muted text-xs">{check.detail}</p>}
 							{check.unit && <p className="text-muted text-xs">{timeNote}</p>}
 							{check.unit && timeExtra}
 						</li>

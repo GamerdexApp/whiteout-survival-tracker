@@ -203,7 +203,13 @@
             },
             "notScored": "Tidak diskor",
             "eventNote": "Poin event adalah skor kenaikan tingkat dikali poin baris skor tiap event.",
-            "scoreSourceNote": "Skor kenaikan tingkat untuk level 40 sampai 100 sesuai catatan event. Level 10 sampai 30 berasal dari satu sumber (WoS Tools)."
+            "scoreSourceNote": "Skor kenaikan tingkat untuk level 40 sampai 100 sesuai catatan event. Level 10 sampai 30 berasal dari satu sumber (WoS Tools).",
+            "chestOf": "dari {held} dimiliki"
+        },
+        "chest": {
+            "covers": "{amount} dari yang tersedia berasal dari Peti Kustom Bahan Kemajuan Hewan Peliharaan",
+            "allUsed": "Semua {used} Peti Kustom Bahan Kemajuan Hewan Peliharaan Anda terpakai: {serums} untuk Serum Penguat, {potions} untuk Ramuan Penyemangat, {manuals} untuk Manual Penjinakan.",
+            "used": "{used} dari {held} Peti Kustom Bahan Kemajuan Hewan Peliharaan Anda terpakai: {serums} untuk Serum Penguat, {potions} untuk Ramuan Penyemangat, {manuals} untuk Manual Penjinakan."
         }
     }
 }

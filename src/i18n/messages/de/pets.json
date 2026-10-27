@@ -203,7 +203,13 @@
             },
             "notScored": "Nicht gewertet",
             "eventNote": "Event-Punkte sind der Aufstiegs-Score mal die Punkte der Wertungszeile jedes Events.",
-            "scoreSourceNote": "Aufstiegs-Scores für Stufe 40 bis 100 passen zu den Event-Notizen. Stufe 10 bis 30 stammen aus einer Quelle (WoS Tools)."
+            "scoreSourceNote": "Aufstiegs-Scores für Stufe 40 bis 100 passen zu den Event-Notizen. Stufe 10 bis 30 stammen aus einer Quelle (WoS Tools).",
+            "chestOf": "von {held} vorhanden"
+        },
+        "chest": {
+            "covers": "{amount} der verfügbaren Menge stammen aus Benutzerdefinierten Haustier-Aufstiegsmaterial-Truhen",
+            "allUsed": "Alle {used} deiner Benutzerdefinierten Haustier-Aufstiegsmaterial-Truhen werden verwendet: {serums} für Stärkungsseren, {potions} für Energietränke, {manuals} für Zähmungshandbücher.",
+            "used": "{used} von {held} deiner Benutzerdefinierten Haustier-Aufstiegsmaterial-Truhen werden verwendet: {serums} für Stärkungsseren, {potions} für Energietränke, {manuals} für Zähmungshandbücher."
         }
     }
 }

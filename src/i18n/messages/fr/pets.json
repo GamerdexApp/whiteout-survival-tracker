@@ -203,7 +203,13 @@
             },
             "notScored": "Sans score",
             "eventNote": "Les points d'événement sont le score d'avancement multiplié par les points de la ligne de score de chaque événement.",
-            "scoreSourceNote": "Les scores d'avancement des niveaux 40 à 100 correspondent aux notes d'événement. Les niveaux 10 à 30 viennent d'une seule source (WoS Tools)."
+            "scoreSourceNote": "Les scores d'avancement des niveaux 40 à 100 correspondent aux notes d'événement. Les niveaux 10 à 30 viennent d'une seule source (WoS Tools).",
+            "chestOf": "sur {held} possédés"
+        },
+        "chest": {
+            "covers": "{amount} du disponible viennent des Coffres personnalisés de matériaux d'avancement de familier",
+            "allUsed": "Les {used} Coffres personnalisés de matériaux d'avancement de familier que vous avez sont tous utilisés : {serums} pour les Sérums fortifiants, {potions} pour les Potions énergisantes, {manuals} pour les Manuels de dressage.",
+            "used": "{used} de vos {held} Coffres personnalisés de matériaux d'avancement de familier sont utilisés : {serums} pour les Sérums fortifiants, {potions} pour les Potions énergisantes, {manuals} pour les Manuels de dressage."
         }
     }
 }

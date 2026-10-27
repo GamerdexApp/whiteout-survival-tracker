@@ -203,7 +203,13 @@
             },
             "notScored": "Puan verilmiyor",
             "eventNote": "Etkinlik puanları, aşama atlama skorunun her etkinliğin puanlama satırının puanıyla çarpımıdır.",
-            "scoreSourceNote": "Seviye 40 - 100 aşama atlama skorları etkinlik notlarıyla eşleşir. Seviye 10 - 30 tek bir kaynaktan gelir (WoS Tools)."
+            "scoreSourceNote": "Seviye 40 - 100 aşama atlama skorları etkinlik notlarıyla eşleşir. Seviye 10 - 30 tek bir kaynaktan gelir (WoS Tools).",
+            "chestOf": "elindeki {held} içinden"
+        },
+        "chest": {
+            "covers": "Mevcut miktarın {amount} kadarı Evcil Hayvan İlerleme Malzemeleri Özel Sandıklarından geliyor",
+            "allUsed": "Elinizdeki {used} Evcil Hayvan İlerleme Malzemeleri Özel Sandığının hepsi kullanılıyor: Güçlendirici Serumlar için {serums}, Enerji İksirleri için {potions}, Terbiye Kılavuzları için {manuals}.",
+            "used": "{held} Evcil Hayvan İlerleme Malzemeleri Özel Sandığınızın {used} tanesi kullanılıyor: Güçlendirici Serumlar için {serums}, Enerji İksirleri için {potions}, Terbiye Kılavuzları için {manuals}."
         }
     }
 }
