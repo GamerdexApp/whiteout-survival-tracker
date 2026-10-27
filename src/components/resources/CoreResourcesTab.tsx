@@ -14,6 +14,8 @@ import {
 	EXPERT_SIGILS,
 	FIRE_CRYSTAL_ITEM_IDS,
 	packRows,
+	PET_ADVANCEMENT_ITEM_IDS,
+	PET_FOOD_AND_MARK_ITEM_IDS,
 	speedupRows,
 } from "@/service/coreResources";
 import { ownedCount, withOwnedCount } from "@/service/inventory";
@@ -37,7 +39,7 @@ function CountCell({
 	label,
 	count,
 	onChange,
-	labelClassName = "w-9 lg:w-auto",
+	labelClassName = "w-9 shrink-0 lg:w-auto",
 }: CountCellProps) {
 	const t = useTranslations("resources.countControl");
 	const item = findItem(itemId);
@@ -46,12 +48,12 @@ function CountCell({
 	return (
 		<div className="flex min-w-0 items-center gap-2">
 			<ItemIcon src={item.img} size={24} />
-			<SectionLabel className={`text-muted shrink-0 ${labelClassName}`}>{label}</SectionLabel>
+			<SectionLabel className={`text-muted ${labelClassName}`}>{label}</SectionLabel>
 			<CountInput
 				label={t("owned", { name: item.name })}
 				value={count}
 				onChange={(next) => onChange(itemId, next)}
-				className="w-full flex-1"
+				className="w-full min-w-16 flex-1"
 			/>
 		</div>
 	);
@@ -82,6 +84,7 @@ const BASE_COLUMNS = "grid-cols-1 sm:grid-cols-2";
 const FIRE_CRYSTAL_COLUMNS = "grid-cols-1 sm:grid-cols-3";
 const SIGIL_COLUMNS = "grid-cols-1 sm:grid-cols-2 lg:grid-cols-5";
 const EXPERT_ITEM_COLUMNS = "grid-cols-1 sm:grid-cols-3";
+const PET_COLUMNS = "grid-cols-1 sm:grid-cols-2 lg:grid-cols-4";
 
 export function CoreResourcesTab({ chief }: { chief: Playthrough }) {
 	const t = useTranslations("resources.core");
@@ -162,7 +165,7 @@ export function CoreResourcesTab({ chief }: { chief: Playthrough }) {
 							label={baseName(itemId)}
 							count={ownedCount(chief, itemId)}
 							onChange={setCount}
-							labelClassName="min-w-0 truncate"
+							labelClassName="shrink-0"
 						/>
 					))}
 				</CountRow>
@@ -177,7 +180,7 @@ export function CoreResourcesTab({ chief }: { chief: Playthrough }) {
 								label={formatDuration(cell.minutes * 60)}
 								count={ownedCount(chief, cell.itemId)}
 								onChange={setCount}
-								labelClassName="w-auto"
+								labelClassName="w-auto shrink-0"
 							/>
 						))}
 					</CountRow>
@@ -192,7 +195,7 @@ export function CoreResourcesTab({ chief }: { chief: Playthrough }) {
 							label={findExpert(expertId)?.name ?? expertId}
 							count={ownedCount(chief, itemId)}
 							onChange={setCount}
-							labelClassName="w-auto"
+							labelClassName="w-auto shrink-0"
 						/>
 					))}
 				</CountRow>
@@ -204,7 +207,7 @@ export function CoreResourcesTab({ chief }: { chief: Playthrough }) {
 							label={baseName(itemId)}
 							count={ownedCount(chief, itemId)}
 							onChange={setCount}
-							labelClassName="min-w-0 truncate"
+							labelClassName="shrink-0"
 						/>
 					))}
 				</CountRow>
@@ -216,7 +219,33 @@ export function CoreResourcesTab({ chief }: { chief: Playthrough }) {
 							label={baseName(itemId)}
 							count={ownedCount(chief, itemId)}
 							onChange={setCount}
-							labelClassName="min-w-0 truncate"
+							labelClassName="shrink-0"
+						/>
+					))}
+				</CountRow>
+			</CollapsibleSection>
+			<CollapsibleSection title={t("petsSection")}>
+				<CountRow title={t("petAdvancementRow")} columns={PET_COLUMNS}>
+					{PET_ADVANCEMENT_ITEM_IDS.map((itemId) => (
+						<CountCell
+							key={itemId}
+							itemId={itemId}
+							label={baseName(itemId)}
+							count={ownedCount(chief, itemId)}
+							onChange={setCount}
+							labelClassName="min-w-0 leading-tight tracking-tight"
+						/>
+					))}
+				</CountRow>
+				<CountRow title={t("petFoodAndMarksRow")} columns={PET_COLUMNS}>
+					{PET_FOOD_AND_MARK_ITEM_IDS.map((itemId) => (
+						<CountCell
+							key={itemId}
+							itemId={itemId}
+							label={baseName(itemId)}
+							count={ownedCount(chief, itemId)}
+							onChange={setCount}
+							labelClassName="min-w-0 leading-tight tracking-tight"
 						/>
 					))}
 				</CountRow>

@@ -112,3 +112,16 @@ export const COMMON_EXPERT_ITEM_IDS = [
   "common-expert-sigil",
   "book-of-knowledge",
 ] as const;
+
+export const PET_ADVANCEMENT_ITEM_IDS = [
+  "taming-manual",
+  "energizing-potion",
+  "strengthening-serum",
+  "pet-advancement-materials-custom-chest",
+] as const;
+
+export const PET_FOOD_AND_MARK_ITEM_IDS = [
+  "pet-food",
+  "common-wild-mark",
+  "advanced-wild-mark",
+] as const;
