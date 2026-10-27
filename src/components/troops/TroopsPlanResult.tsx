@@ -4,7 +4,6 @@ import { TROOP_IDS } from "@/service/troops";
 import type { TroopsPlanDraft, TroopsPlanResult } from "@/service/troopsPlan";
 import { findItem } from "@/data/game/items";
 import { allTroops, MAX_TIER } from "@/data/game/troops";
-import { Button } from "@/comps/ui/Button";
 import { Card } from "@/comps/ui/Card";
 import { ItemIcon } from "@/comps/ui/ItemIcon";
 import { ScrollRegion } from "@/comps/ui/ScrollRegion";
@@ -18,16 +17,11 @@ const touchesTopTier = (draft: TroopsPlanDraft) =>
 export function TroopsPlanResultCard({
 	draft,
 	result,
-	canExport,
-	onExport,
 }: {
 	draft: TroopsPlanDraft;
 	result: TroopsPlanResult;
-	canExport: boolean;
-	onExport: () => void;
 }) {
 	const t = useTranslations("troops.plan.result");
-	const tExport = useTranslations("troops.plan.export");
 	const { calculation } = result;
 	const changedTiers = calculation.tiers.filter(
 		(row) => row.total !== 0 || TROOP_IDS.some((id) => row[id] !== 0)
@@ -140,12 +134,6 @@ export function TroopsPlanResultCard({
 				/>
 			</div>
 			{touchesTopTier(draft) && <p className="text-muted text-xs">{t("tier12Note")}</p>}
-			<div className="flex flex-col gap-1">
-				<Button disabled={!canExport} onClick={onExport}>
-					{tExport("button")}
-				</Button>
-				{!canExport && <p className="text-muted text-xs">{tExport("emptyHint")}</p>}
-			</div>
 		</Card>
 	);
 }
