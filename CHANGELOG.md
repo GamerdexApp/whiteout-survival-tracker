@@ -24,6 +24,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
+- Flyouts and dialogs: the footer no longer scrolls with the page. Hidden screen reader text, such as the label of a radio group in the Troops plan, no longer stretches the panel past the screen
 - Troops Plan: Export to Core Events puts the troops trained and the training speedup minutes on one event day, so one day is picked for both
 - Troops Plan: the Export to Core Events button is in the footer with the other plan actions, not in the result card
 - Pets Plan: the plan counts the Strengthening Serum, which the calculator already returned. The Pet Advancement Materials Custom Chests you hold fill what the plan is short of, Serums first, then Energizing Potions, then Taming Manuals. The rows say how much a chest covers, and a note says how many held chests are used and for which item, and when every chest is used. The result lists the chests used

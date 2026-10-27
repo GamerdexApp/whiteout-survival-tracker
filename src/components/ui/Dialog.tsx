@@ -85,7 +85,7 @@ export function Dialog({
 						</IconButton>
 					</header>
 					<div
-						className={`flex min-h-0 flex-1 flex-col gap-4 overflow-y-auto px-4 py-3 ${variant === "flyout" ? "bg-bg" : ""}`}
+						className={`relative flex min-h-0 flex-1 flex-col gap-4 overflow-y-auto px-4 py-3 ${variant === "flyout" ? "bg-bg" : ""}`}
 					>
 						{children}
 					</div>
