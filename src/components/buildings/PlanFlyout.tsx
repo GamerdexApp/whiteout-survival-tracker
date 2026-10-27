@@ -264,10 +264,9 @@ function AddBuilding({
 	const t = useTranslations("buildings.plan.add");
 	const available = levelledBuildings
 		.filter((building) => !rows.some((row) => row.id === building.id))
-		.map((building) => ({
-			building,
-			ageLock: buildView(building, chief).nextAgeLock,
-		}));
+		.map((building) => ({ building, view: buildView(building, chief) }))
+		.filter(({ view }) => !view.maxed)
+		.map(({ building, view }) => ({ building, ageLock: view.nextAgeLock }));
 	const [selectedId, setSelectedId] = useState("");
 	const addable = available.filter((item) => item.ageLock === null);
 	const selected = addable.some((item) => item.building.id === selectedId)

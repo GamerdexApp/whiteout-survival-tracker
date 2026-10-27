@@ -122,7 +122,7 @@ export const rowFor = (
   const building = findBuildingById(buildingId);
   if (!building) return undefined;
   const view = buildView(building, chief);
-  if (view.nextAgeLock !== null) return undefined;
+  if (view.maxed || view.nextAgeLock !== null) return undefined;
   const goal = view.next?.label ?? view.level;
   return goal ? { id: buildingId, current: view.level, goal } : undefined;
 };

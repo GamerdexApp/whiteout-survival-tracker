@@ -18,6 +18,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Game data package 0.9.0: new Resources, Chief Material and Hero Gear Material item categories, a Shard item for every hero, the Enhancement XP Component split into the 10 and the 100, and new pieces and puzzle pictures in the Tundra Album
 - The Wiki lists Justus. The Experts page leaves him out until the package has his stat bonus
 
+### Fixed
+
+- Buildings Plan: Add a building no longer lists a building that is at its final level, such as the Research Center at level 30. Buildings that the server age has not unlocked stay in the list, greyed out
+
 ## [0.1.0] - 2026-10-18
 
 First release.
