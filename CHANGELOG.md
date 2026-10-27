@@ -24,6 +24,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
+- Troops Plan: Export to Core Events puts the troops trained and the training speedup minutes on one event day, so one day is picked for both
 - Troops Plan: the Export to Core Events button is in the footer with the other plan actions, not in the result card
 - Pets Plan: the plan counts the Strengthening Serum, which the calculator already returned. The Pet Advancement Materials Custom Chests you hold fill what the plan is short of, Serums first, then Energizing Potions, then Taming Manuals. The rows say how much a chest covers, and a note says how many held chests are used and for which item, and when every chest is used. The result lists the chests used
 - Experts: the page and the plan enforce the affinity level and the total skill level that each skill level needs, from the package. A skill stops at the level it can take now and says why, and a skill cannot drop below the level that other skill levels depend on

@@ -45,7 +45,10 @@ const sum = (values: Iterable<number>) =>
 export const hasExportLines = (spec: ExportSpec) =>
   spec.groups.some((group) => group.lines.length > 0);
 
-/** Troops trained by tier and the speedup minutes used. The package gives no event points. */
+/**
+ * Troops trained by tier and the speedup minutes used. They share one event day, so the plan picks
+ * one day for both. A day scores a line only where the package lists a row for it.
+ */
 export const exportSpecOf = (
   draft: TroopsPlanDraft,
   result: TroopsPlanResult,
@@ -108,13 +111,8 @@ export const exportSpecOf = (
       {
         id: "trained",
         label: t("plan.export.trainedGroup"),
-        lines: trainLines,
+        lines: [...trainLines, ...speedupLines],
         unscored: [...unscoredPromotion, ...unscoredPower],
-      },
-      {
-        id: "speedups",
-        label: t("plan.export.speedupGroup"),
-        lines: speedupLines,
       },
     ],
   };
