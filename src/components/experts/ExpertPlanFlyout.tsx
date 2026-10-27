@@ -55,7 +55,7 @@ export function ExpertPlanFlyout({ open, chief, onClose, onSave }: ExpertPlanFly
 	const [goals, setGoals] = useState<Goals>({});
 	const [exporting, setExporting] = useState(false);
 	const plan = useMemo(() => runExpertsPlan(chief, goals), [chief, goals]);
-	const canExport = expertPlanScores(plan);
+	const canExport = expertPlanScores(plan, chief);
 
 	if (open !== wasOpen) {
 		setWasOpen(open);
@@ -90,7 +90,7 @@ export function ExpertPlanFlyout({ open, chief, onClose, onSave }: ExpertPlanFly
 			<ExportToEventFlyout
 				open={exporting}
 				chief={chief}
-				spec={exportSpecOf(plan)}
+				spec={exportSpecOf(plan, chief)}
 				onClose={() => setExporting(false)}
 			/>
 		</Flyout>

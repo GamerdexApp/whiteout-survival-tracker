@@ -921,6 +921,10 @@ export const learningMinutesNeeded = (plan: ExpertsPlan) =>
 export const learningSpeedupMinutes = (chief: Playthrough) =>
   minutesOfSpeedup(chief, "learning") + generalMinutesApplied(chief, "experts");
 
+/** The learning speedup minutes the plan uses: what it needs, up to what the chief holds for it. */
+export const learningMinutesUsed = (plan: ExpertsPlan, chief: Playthrough) =>
+  Math.min(learningMinutesNeeded(plan), learningSpeedupMinutes(chief));
+
 /**
  * Everything the chief holds for the plan, whatever the plan needs: the gifts once, and the points
  * saved on the card of each planned expert.
