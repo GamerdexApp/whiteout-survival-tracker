@@ -110,5 +110,10 @@
         "limited": "上限のあるデコレーション、所有数×1個あたりの繁栄度",
         "ofMax": "{max}中{value}",
         "withoutValue": "所有しているデコレーションのうち{count, plural, other {{amount}件}}は、データに繁栄度の値がないため、{count, plural, other {集計されていません}}。"
+    },
+    "lifeEssence": {
+        "label": "Life Essence",
+        "note": "資源ページと同じ数です。",
+        "owned": "所持しているLife Essence"
     }
 }

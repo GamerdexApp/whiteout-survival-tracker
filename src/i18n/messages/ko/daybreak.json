@@ -110,5 +110,10 @@
         "limited": "한도가 있는 장식, 보유 수량 x 개당 번영도",
         "ofMax": "{max} 중 {value}",
         "withoutValue": "{count, plural, other {보유한 장식 {amount}개}}에는 데이터에 번영도 값이 없어서 {count, plural, other {계산에 포함되지 않아요.}}"
+    },
+    "lifeEssence": {
+        "label": "Life Essence",
+        "note": "자원 페이지와 같은 수량입니다.",
+        "owned": "보유한 Life Essence"
     }
 }
