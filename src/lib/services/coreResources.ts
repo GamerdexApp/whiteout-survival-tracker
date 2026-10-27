@@ -125,3 +125,17 @@ export const PET_FOOD_AND_MARK_ITEM_IDS = [
   "common-wild-mark",
   "advanced-wild-mark",
 ] as const;
+
+export const HERO_GEAR_MATERIAL_ITEM_IDS = [
+  "enhancement-xp-component-10",
+  "enhancement-xp-component-100",
+  "essence-stones",
+  "mithril",
+] as const;
+
+export const HERO_GEAR_ITEM_IDS = [
+  "mythic-hero-gear",
+  "custom-mythic-hero-gear-chest",
+  "custom-epic-hero-gear-chest",
+  "lucky-hero-gear-chest",
+] as const;

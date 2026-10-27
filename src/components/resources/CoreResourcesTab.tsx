@@ -13,6 +13,8 @@ import {
 	COMMON_EXPERT_ITEM_IDS,
 	EXPERT_SIGILS,
 	FIRE_CRYSTAL_ITEM_IDS,
+	HERO_GEAR_ITEM_IDS,
+	HERO_GEAR_MATERIAL_ITEM_IDS,
 	packRows,
 	PET_ADVANCEMENT_ITEM_IDS,
 	PET_FOOD_AND_MARK_ITEM_IDS,
@@ -84,7 +86,8 @@ const BASE_COLUMNS = "grid-cols-1 sm:grid-cols-2";
 const FIRE_CRYSTAL_COLUMNS = "grid-cols-1 sm:grid-cols-3";
 const SIGIL_COLUMNS = "grid-cols-1 sm:grid-cols-2 lg:grid-cols-5";
 const EXPERT_ITEM_COLUMNS = "grid-cols-1 sm:grid-cols-3";
-const PET_COLUMNS = "grid-cols-1 sm:grid-cols-2 lg:grid-cols-4";
+const WRAPPING_LABEL = "min-w-0 leading-tight tracking-tight";
+const FOUR_PER_ROW_COLUMNS = "grid-cols-1 sm:grid-cols-2 lg:grid-cols-4";
 
 export function CoreResourcesTab({ chief }: { chief: Playthrough }) {
 	const t = useTranslations("resources.core");
@@ -225,7 +228,7 @@ export function CoreResourcesTab({ chief }: { chief: Playthrough }) {
 				</CountRow>
 			</CollapsibleSection>
 			<CollapsibleSection title={t("petsSection")}>
-				<CountRow title={t("petAdvancementRow")} columns={PET_COLUMNS}>
+				<CountRow title={t("petAdvancementRow")} columns={FOUR_PER_ROW_COLUMNS}>
 					{PET_ADVANCEMENT_ITEM_IDS.map((itemId) => (
 						<CountCell
 							key={itemId}
@@ -233,11 +236,11 @@ export function CoreResourcesTab({ chief }: { chief: Playthrough }) {
 							label={baseName(itemId)}
 							count={ownedCount(chief, itemId)}
 							onChange={setCount}
-							labelClassName="min-w-0 leading-tight tracking-tight"
+							labelClassName={WRAPPING_LABEL}
 						/>
 					))}
 				</CountRow>
-				<CountRow title={t("petFoodAndMarksRow")} columns={PET_COLUMNS}>
+				<CountRow title={t("petFoodAndMarksRow")} columns={FOUR_PER_ROW_COLUMNS}>
 					{PET_FOOD_AND_MARK_ITEM_IDS.map((itemId) => (
 						<CountCell
 							key={itemId}
@@ -245,7 +248,33 @@ export function CoreResourcesTab({ chief }: { chief: Playthrough }) {
 							label={baseName(itemId)}
 							count={ownedCount(chief, itemId)}
 							onChange={setCount}
-							labelClassName="min-w-0 leading-tight tracking-tight"
+							labelClassName={WRAPPING_LABEL}
+						/>
+					))}
+				</CountRow>
+			</CollapsibleSection>
+			<CollapsibleSection title={t("heroGearSection")}>
+				<CountRow title={t("heroGearMaterialsRow")} columns={FOUR_PER_ROW_COLUMNS}>
+					{HERO_GEAR_MATERIAL_ITEM_IDS.map((itemId) => (
+						<CountCell
+							key={itemId}
+							itemId={itemId}
+							label={baseName(itemId)}
+							count={ownedCount(chief, itemId)}
+							onChange={setCount}
+							labelClassName={WRAPPING_LABEL}
+						/>
+					))}
+				</CountRow>
+				<CountRow title={t("heroGearRow")} columns={FOUR_PER_ROW_COLUMNS}>
+					{HERO_GEAR_ITEM_IDS.map((itemId) => (
+						<CountCell
+							key={itemId}
+							itemId={itemId}
+							label={baseName(itemId)}
+							count={ownedCount(chief, itemId)}
+							onChange={setCount}
+							labelClassName={WRAPPING_LABEL}
 						/>
 					))}
 				</CountRow>
