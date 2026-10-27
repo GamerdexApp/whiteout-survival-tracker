@@ -1,5 +1,10 @@
 import type { Playthrough } from "@/types/app";
-import { BASE_RESOURCE_IDS, chestRows, packRows } from "./coreResources";
+import {
+  AFFINITY_GIFT_ITEM_IDS,
+  BASE_RESOURCE_IDS,
+  chestRows,
+  packRows,
+} from "./coreResources";
 import type { BaseResourceId } from "./coreResources";
 import { ownedCount } from "./inventory";
 
@@ -65,4 +70,36 @@ export const anyResourcePossible = (
       0,
     ),
   }));
+};
+
+const AFFINITY_PER_GIFT: Record<
+  (typeof AFFINITY_GIFT_ITEM_IDS)[number],
+  number
+> = {
+  compass: 10,
+  "fiery-heart": 100,
+  "sail-of-conquest": 1_000,
+};
+
+export interface ExpertTotals {
+  commonSigils: number;
+  books: number;
+  affinity: number;
+  gifts: { itemId: string; count: number }[];
+}
+
+export const expertTotals = (chief: Playthrough): ExpertTotals => {
+  const gifts = AFFINITY_GIFT_ITEM_IDS.map((itemId) => ({
+    itemId,
+    count: ownedCount(chief, itemId),
+  }));
+  return {
+    commonSigils: ownedCount(chief, "common-expert-sigil"),
+    books: ownedCount(chief, "book-of-knowledge"),
+    affinity: gifts.reduce(
+      (sum, gift) => sum + gift.count * AFFINITY_PER_GIFT[gift.itemId],
+      0,
+    ),
+    gifts,
+  };
 };

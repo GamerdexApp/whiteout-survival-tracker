@@ -88,3 +88,27 @@ export const speedupRows: SpeedupRow[] = speedupTypes.map((type) => ({
     .map((item) => ({ itemId: item.id, minutes: item.speedup!.minutes }))
     .sort((a, b) => a.minutes - b.minutes),
 }));
+
+export const EXPERT_SIGILS = [
+  { itemId: "cyrille-sigil", expertId: "cyrille" },
+  { itemId: "agnes-sigil", expertId: "agnes" },
+  { itemId: "holger-sigil", expertId: "holger" },
+  { itemId: "romulus-sigil", expertId: "romulus" },
+  { itemId: "fabian-sigil", expertId: "fabian" },
+  { itemId: "baldurs-sigil", expertId: "baldur" },
+  { itemId: "valeria-sigil", expertId: "valeria" },
+  { itemId: "ronne-sigil", expertId: "ronne" },
+  { itemId: "kathy-sigil", expertId: "kathy" },
+  { itemId: "gareth-sigil", expertId: "gareth" },
+] as const;
+
+export const AFFINITY_GIFT_ITEM_IDS = [
+  "compass",
+  "fiery-heart",
+  "sail-of-conquest",
+] as const;
+
+export const COMMON_EXPERT_ITEM_IDS = [
+  "common-expert-sigil",
+  "book-of-knowledge",
+] as const;

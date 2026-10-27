@@ -7,13 +7,17 @@ import { usePlaythrough } from "@/lib/contexts/PlaythroughContext";
 import { formatCompact, formatDuration } from "@/lib/format";
 import { updateChiefById } from "@/service/chiefs";
 import {
+	AFFINITY_GIFT_ITEM_IDS,
 	BASE_RESOURCE_IDS,
 	chestRows,
+	COMMON_EXPERT_ITEM_IDS,
+	EXPERT_SIGILS,
 	FIRE_CRYSTAL_ITEM_IDS,
 	packRows,
 	speedupRows,
 } from "@/service/coreResources";
 import { ownedCount, withOwnedCount } from "@/service/inventory";
+import { findExpert } from "@/data/game/experts";
 import { findItem } from "@/data/game/items";
 import { CollapsibleSection } from "@/comps/ui/CollapsibleSection";
 import { ItemIcon } from "@/comps/ui/ItemIcon";
@@ -76,6 +80,8 @@ const PACK_COLUMNS = "grid-cols-1 sm:grid-cols-2 lg:grid-cols-5";
 const CHEST_COLUMNS = "grid-cols-1 sm:grid-cols-3";
 const BASE_COLUMNS = "grid-cols-1 sm:grid-cols-2";
 const FIRE_CRYSTAL_COLUMNS = "grid-cols-1 sm:grid-cols-3";
+const SIGIL_COLUMNS = "grid-cols-1 sm:grid-cols-2 lg:grid-cols-5";
+const EXPERT_ITEM_COLUMNS = "grid-cols-1 sm:grid-cols-3";
 
 export function CoreResourcesTab({ chief }: { chief: Playthrough }) {
 	const t = useTranslations("resources.core");
@@ -176,6 +182,44 @@ export function CoreResourcesTab({ chief }: { chief: Playthrough }) {
 						))}
 					</CountRow>
 				))}
+			</CollapsibleSection>
+			<CollapsibleSection title={t("expertsSection")}>
+				<CountRow title={t("expertSigilsRow")} columns={SIGIL_COLUMNS}>
+					{EXPERT_SIGILS.map(({ itemId, expertId }) => (
+						<CountCell
+							key={itemId}
+							itemId={itemId}
+							label={findExpert(expertId)?.name ?? expertId}
+							count={ownedCount(chief, itemId)}
+							onChange={setCount}
+							labelClassName="w-auto"
+						/>
+					))}
+				</CountRow>
+				<CountRow title={t("affinityGiftsRow")} columns={EXPERT_ITEM_COLUMNS}>
+					{AFFINITY_GIFT_ITEM_IDS.map((itemId) => (
+						<CountCell
+							key={itemId}
+							itemId={itemId}
+							label={baseName(itemId)}
+							count={ownedCount(chief, itemId)}
+							onChange={setCount}
+							labelClassName="min-w-0 truncate"
+						/>
+					))}
+				</CountRow>
+				<CountRow title={t("commonExpertRow")} columns={EXPERT_ITEM_COLUMNS}>
+					{COMMON_EXPERT_ITEM_IDS.map((itemId) => (
+						<CountCell
+							key={itemId}
+							itemId={itemId}
+							label={baseName(itemId)}
+							count={ownedCount(chief, itemId)}
+							onChange={setCount}
+							labelClassName="min-w-0 truncate"
+						/>
+					))}
+				</CountRow>
 			</CollapsibleSection>
 		</div>
 	);

@@ -12,7 +12,7 @@ import { useIsDesktop } from "@/lib/hooks/useMediaQuery";
 import { updateChiefById } from "@/service/chiefs";
 import { ownedCount, speedupStock, withOwnedCount, withOwnedCounts } from "@/service/inventory";
 import { plannerShortages } from "@/service/planStock";
-import { anyResourcePossible, resourceTotals } from "@/service/resourceTotals";
+import { anyResourcePossible, expertTotals, resourceTotals } from "@/service/resourceTotals";
 import { allItems, findItem, itemCategories, STOCK_STRIP_ITEM_IDS } from "@/data/game/items";
 import { Button } from "@/comps/ui/Button";
 import { Card } from "@/comps/ui/Card";
@@ -125,6 +125,7 @@ export function AllItemsTab({ chief }: { chief: Playthrough }) {
 	);
 
 	const anyPossible = anyResourcePossible(chief);
+	const experts = expertTotals(chief);
 	const shortages = useMemo(() => plannerShortages(chief), [chief]);
 	return (
 		<>
@@ -244,6 +245,39 @@ export function AllItemsTab({ chief }: { chief: Playthrough }) {
 								</span>
 							</span>
 						))}
+					</Card>
+				</div>
+			)}
+
+			{category === "Experts" && (
+				<div className="grid grid-cols-2 gap-3 lg:grid-cols-3">
+					<Card className="flex flex-col gap-0.5 px-3 py-2">
+						<SectionLabel className="text-muted">
+							{tv("totals.commonSigils")}
+						</SectionLabel>
+						<span className="font-mono text-lg font-medium">
+							{formatNumber(experts.commonSigils)}
+						</span>
+					</Card>
+					<Card className="flex flex-col gap-0.5 px-3 py-2">
+						<SectionLabel className="text-muted">{tv("totals.books")}</SectionLabel>
+						<span className="font-mono text-lg font-medium">
+							{formatNumber(experts.books)}
+						</span>
+					</Card>
+					<Card className="col-span-2 flex flex-col gap-0.5 px-3 py-2 lg:col-span-1">
+						<SectionLabel className="text-muted">{tv("totals.affinity")}</SectionLabel>
+						<span className="font-mono text-lg font-medium">
+							{formatNumber(experts.affinity)}
+						</span>
+						<span className="text-muted text-xs">
+							{experts.gifts
+								.map(
+									(gift) =>
+										`${findItem(gift.itemId)?.name} ${formatNumber(gift.count)}`
+								)
+								.join(" · ")}
+						</span>
 					</Card>
 				</div>
 			)}
