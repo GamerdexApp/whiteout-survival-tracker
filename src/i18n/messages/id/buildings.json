@@ -224,10 +224,10 @@
         "goalsHeading": "{count, plural, other {Target, {amount} bangunan}}",
         "noGoals": "Belum ada target. Tambah bangunan di atas, lalu pilih level yang ingin dicapai.",
         "prerequisiteNote": "Langkah prasyarat ditambahkan untukmu. Level yang butuh bangunan lain di level lebih tinggi menghitung langkah itu dan menandainya.",
-        "timeNote": "Rencana memakan {time} setelah bonus kecepatan {percent}%. Stokmu: Konstruksi {construction} mnt, Umum {general} mnt. Percepatan Umum dihitung untuk konstruksi.",
+        "timeNote": "Rencana memakan waktu {time} setelah bonus kecepatan {percent}%. Stok Anda: Konstruksi {construction} mnt, Umum {general} mnt diterapkan. Hanya bagian percepatan umum yang diatur di bawah yang dihitung.",
         "add": {
             "title": "Tambah bangunan",
-            "allAdded": "Semua bangunan sudah ada di rencana.",
+            "allAdded": "Semua bangunan sudah ada di rencana atau berada di level maksimum.",
             "selectLabel": "Bangunan yang ditambah",
             "button": "Tambah bangunan"
         },

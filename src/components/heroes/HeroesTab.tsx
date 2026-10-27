@@ -3,7 +3,7 @@
 import { useTranslations } from "next-intl";
 import { useMemo, useState } from "react";
 import { LuChevronsUp, LuClipboardList, LuListFilter, LuSearch } from "react-icons/lu";
-import type { HeroGoal, Playthrough } from "@/types/app";
+import type { HeroGoal, LuckyWheelPlan, Playthrough } from "@/types/app";
 import { usePlaythrough } from "@/lib/contexts/PlaythroughContext";
 import { formatNumber } from "@/lib/format";
 import { updateChiefById } from "@/service/chiefs";
@@ -98,8 +98,10 @@ export function HeroesTab({ chief }: { chief: Playthrough }) {
 		setPlanOpen(true);
 	};
 
-	const savePlan = (goals: Record<string, HeroGoal>) => {
-		change((current) => withSavedHeroesPlan(current, goals, new Date().toISOString()));
+	const savePlan = (goals: Record<string, HeroGoal>, luckyWheel: LuckyWheelPlan | undefined) => {
+		change((current) =>
+			withSavedHeroesPlan(current, goals, luckyWheel, new Date().toISOString())
+		);
 	};
 
 	const activeFilters = countHeroFilters(filters);

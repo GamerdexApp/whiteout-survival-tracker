@@ -27,8 +27,10 @@
     },
     "view": {
         "subline": "{items} objets dans {categories} catégories",
-        "sublineInCategory": "{items} objets dans {categories} catégories · {inCategory} dans {category}",
-        "unsaved": "Non enregistré",
+        "coreSubline": "{chief} · Quantités de ressources et piles du sac à dos",
+        "tabsLabel": "Vues des ressources",
+        "coreTab": "Ressources de base",
+        "allTab": "Tous les objets",
         "shortages": "Les objectifs du planificateur manquent de {names}.",
         "shortagesLink": "Ouvrir le plan des Bâtiments",
         "show": {
@@ -78,6 +80,52 @@
             "setToZero": "{name} mis à 0",
             "savedTitle": "Quantités enregistrées",
             "savedMessage": "{count, plural, one {{amount} quantité modifiée} other {{amount} quantités modifiées}}."
+        },
+        "totals": {
+            "loose": "Libre",
+            "packs": "Paquets",
+            "securedPacks": "Paquets sécurisés",
+            "anyTitle": "N'importe lequel (coffres)",
+            "commonSigils": "Sceaux communs",
+            "books": "Livres",
+            "affinity": "Affinité"
+        }
+    },
+    "core": {
+        "resourcesSection": "Ressources",
+        "counts": "Quantité de ressources",
+        "backpack": "Sac à dos",
+        "secured": "{name} (Sécurisé)",
+        "level": "Niv. {level}",
+        "customChests": "Coffres de ressources personnalisés",
+        "customSecuredChests": "Coffres de ressources sécurisés personnalisés",
+        "fireCrystalSection": "Cristal de feu",
+        "speedupsSection": "Accélérateurs",
+        "expertsSection": "Experts",
+        "expertSigilsRow": "Sceaux d'expert",
+        "affinityGiftsRow": "Cadeaux d'affinité",
+        "commonExpertRow": "Sceaux communs et livres",
+        "petsSection": "Familiers",
+        "petAdvancementRow": "Matériaux d'avancement",
+        "petFoodAndMarksRow": "Nourriture et marques sauvages",
+        "heroGearSection": "Équipement de héros",
+        "heroGearMaterialsRow": "Matériaux d'amélioration",
+        "heroGearRow": "Équipement et coffres d'équipement",
+        "chiefGearSection": "Équipement et charmes du chef",
+        "chiefGearRow": "Équipement du chef",
+        "chiefCharmRow": "Charmes du chef",
+        "chiefChestsRow": "Coffres d'équipement et de charmes",
+        "heroShards": {
+            "section": "Fragments de héros",
+            "showCompleted": "Afficher les héros terminés",
+            "hintHidden": "Héros, fragments et manuels terminés masqués : {count}",
+            "hintShown": "Affichage des héros, fragments et manuels terminés",
+            "allCompleted": "Tous les héros débloqués ont toutes les étoiles. Activez l'interrupteur pour les voir.",
+            "generation": "Gén. {generation}",
+            "shardName": "Fragment de {name}",
+            "generalShards": "Fragments généraux",
+            "expeditionManuals": "Manuels de compétence d'expédition",
+            "explorationManuals": "Manuels de compétence d'exploration"
         }
     },
     "planStock": {

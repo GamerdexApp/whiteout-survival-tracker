@@ -59,5 +59,20 @@
             "unknown": "Unbekannt"
         },
         "levelName": "VIP {level}"
+    },
+    "signIn": {
+        "title": "Tägliche Anmeldung",
+        "note": "Die tägliche Anmeldung gibt mehr XP für jeden Tag einer Serie. Die Serie endet, wenn du einen UTC-Tag verpasst, und jeder Tag beginnt um 00:00 UTC.",
+        "add": "Tägliche Anmeldung hinzufügen",
+        "addHint": "Serientag {streak}: {points} XP",
+        "claimed": "Heute angemeldet, am Serientag {streak}. Morgen gibt es {points} XP, in {time}.",
+        "needXp": "Gib zuerst deine Gesamt-XP oder deine VIP-Stufe ein.",
+        "streakLabel": "Serientag",
+        "streakHint": "Der Serientag von heute. Ändere ihn, wenn deine Serie schon läuft.",
+        "toast": {
+            "title": "Anmeldung hinzugefügt",
+            "message": "{points} XP für Serientag {streak} hinzugefügt.",
+            "undo": "Rückgängig"
+        }
     }
 }

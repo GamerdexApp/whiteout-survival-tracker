@@ -27,8 +27,10 @@
     },
     "view": {
         "subline": "{categories}カテゴリー、{items}アイテム",
-        "sublineInCategory": "{categories}カテゴリー、{items}アイテム · {category}に{inCategory}アイテム",
-        "unsaved": "未保存",
+        "coreSubline": "{chief} · 資源の数とバックパックの在庫",
+        "tabsLabel": "資源の表示",
+        "coreTab": "基本資源",
+        "allTab": "すべてのアイテム",
         "shortages": "プランナーの目標で{names}が不足しています。",
         "shortagesLink": "建物のプランを開く",
         "show": {
@@ -78,6 +80,52 @@
             "setToZero": "{name}を0にしました",
             "savedTitle": "所有数を保存しました",
             "savedMessage": "{count, plural, other {{amount}件の所有数}}を変更しました。"
+        },
+        "totals": {
+            "loose": "単体",
+            "packs": "パック",
+            "securedPacks": "保護パック",
+            "anyTitle": "任意（宝箱）",
+            "commonSigils": "共通の印章",
+            "books": "本",
+            "affinity": "親密度"
+        }
+    },
+    "core": {
+        "resourcesSection": "資源",
+        "counts": "資源の数",
+        "backpack": "バックパック",
+        "secured": "{name}（保護）",
+        "level": "Lv.{level}",
+        "customChests": "カスタム資源宝箱",
+        "customSecuredChests": "カスタム保護資源宝箱",
+        "fireCrystalSection": "ファイアクリスタル",
+        "speedupsSection": "スピードアップ",
+        "expertsSection": "エキスパート",
+        "expertSigilsRow": "エキスパートの印章",
+        "affinityGiftsRow": "親密度ギフト",
+        "commonExpertRow": "共通の印章と本",
+        "petsSection": "ペット",
+        "petAdvancementRow": "進化素材",
+        "petFoodAndMarksRow": "エサとワイルドマーク",
+        "heroGearSection": "ヒーロー装備",
+        "heroGearMaterialsRow": "強化素材",
+        "heroGearRow": "装備と装備宝箱",
+        "chiefGearSection": "酋長装備とチャーム",
+        "chiefGearRow": "酋長装備",
+        "chiefCharmRow": "酋長チャーム",
+        "chiefChestsRow": "装備とチャームの宝箱",
+        "heroShards": {
+            "section": "ヒーローの欠片",
+            "showCompleted": "完了したヒーローを表示",
+            "hintHidden": "完了したヒーロー、欠片、マニュアルは非表示：{count}",
+            "hintShown": "完了したヒーロー、欠片、マニュアルを表示中",
+            "allCompleted": "解放済みのヒーローはすべて星が揃っています。スイッチをオンにすると表示されます。",
+            "generation": "第{generation}世代",
+            "shardName": "{name}の欠片",
+            "generalShards": "汎用の欠片",
+            "expeditionManuals": "遠征スキルマニュアル",
+            "explorationManuals": "探索スキルマニュアル"
         }
     },
     "planStock": {

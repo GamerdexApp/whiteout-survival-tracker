@@ -36,6 +36,7 @@ Then open http://localhost:3000. Other commands:
 ```
 pnpm build
 pnpm lint
+pnpm test
 pnpm format:check
 ```
 

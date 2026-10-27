@@ -59,5 +59,20 @@
             "unknown": "不明"
         },
         "levelName": "VIP {level}"
+    },
+    "signIn": {
+        "title": "デイリーログイン",
+        "note": "デイリーログインは、連続日数が増えるほど多くのXPをもらえます。UTCの1日を逃すと連続は途切れ、1日は00:00 UTCに始まります。",
+        "add": "デイリーログインを追加",
+        "addHint": "連続{streak}日目：{points} XP",
+        "claimed": "今日はログイン済みです（連続{streak}日目）。明日は{points} XPで、{time}後です。",
+        "needXp": "先に合計XPまたはVIPレベルを入力してください。",
+        "streakLabel": "連続日数",
+        "streakHint": "今日の連続日数です。すでに連続中の場合は変更してください。",
+        "toast": {
+            "title": "ログインを追加しました",
+            "message": "連続{streak}日目の{points} XPを追加しました。",
+            "undo": "元に戻す"
+        }
     }
 }

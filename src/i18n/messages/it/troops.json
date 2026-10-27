@@ -59,8 +59,7 @@
             "button": "Esporta negli Eventi principali",
             "emptyHint": "Aggiungi un addestramento per esportarlo.",
             "computed": "Calcolato dall'app.",
-            "trainedGroup": "per truppe addestrate",
-            "speedupGroup": "per minuti di accelerazione",
+            "trainedGroup": "per truppe e accelerazioni",
             "trainedTier": "Truppe di grado {tier} addestrate",
             "speedupMinutes": "Minuti di accelerazione addestramento usati",
             "promoted": "Truppe promosse",
@@ -130,7 +129,7 @@
         "stock": {
             "name": "Accelerazioni di addestramento",
             "minutesUnit": "min",
-            "note": "Le tue scorte: Addestramento {training} min, Generale {general} min. Le accelerazioni generali contano per l'addestramento. L'addestramento non coperto da un'accelerazione termina in tempo normale, quindi si usano solo le accelerazioni che possiedi: {used} min."
+            "note": "Le tue scorte: Addestramento {training} min, Generale {general} min applicati. Conta solo la quota di accelerazioni generali impostata sotto. L'addestramento non coperto da un'accelerazione termina in tempo normale, quindi si usano solo le accelerazioni che possiedi: {used} min."
         },
         "result": {
             "title": "Risultato",

@@ -187,8 +187,7 @@
             "explorationFull": "5.0の探索",
             "expeditionFull": "5.0の遠征",
             "exploration": "攻撃 {attack} · 防御 {defense} · HP {health}",
-            "expedition": "攻撃 {attack}% · 防御 {defense}%",
-            "estimate": "推定"
+            "expedition": "攻撃 {attack}% · 防御 {defense}%"
         }
     },
     "plan": {
@@ -200,9 +199,10 @@
         "noHeroes": "プランにヒーローがまだいません。上で所有ヒーローを追加してから、目標を引き上げてください。",
         "add": {
             "title": "ヒーローを追加",
-            "allIn": "所有ヒーローはすべてプランに入っています。ヒーローをプランするには、所有をオンにしてください。",
+            "allIn": "所持しているヒーローはすべてプラン内か、星がすべて揃っています。プランに入れるには、そのヒーローの所持をオンにしてください。",
             "selectLabel": "追加するヒーロー",
-            "button": "ヒーローを追加"
+            "button": "ヒーローを追加",
+            "generationShort": "G{generation}"
         },
         "block": {
             "remove": "{hero}をプランから削除",
@@ -237,6 +237,18 @@
             "allianceShowdown": "Alliance Showdown",
             "kingOfIcefield": "King of Icefield",
             "hallOfChief": "Hall of Chief"
+        },
+        "luckyWheel": {
+            "title": "ラッキーホイール",
+            "description": "ヒーローのラッキーホイールを回すと、選んだヒーローの欠片の推定数が増えます。1回あたり平均{perSpin}個の欠片に加え、5回、15回、35回、70回、120回でボーナス欠片がもらえます。",
+            "noHero": "ラッキーホイールの回数を計画するには、プランにヒーローを追加してください。",
+            "hero": "ヒーロー",
+            "spins": "回数（最大{max}）",
+            "tokens": "開始時のトークン",
+            "estimate": "{hero}の推定欠片：{total}個（回数ボーナス{bonus}個、回転{spins}個）。プランでは所持している欠片として数えます。",
+            "gems": "必要なジェム：{gems}",
+            "gemsNone": "ジェムは不要です。",
+            "gemsNote": "{covered}回はトークンを使います。残りは1回{single}ジェム、または10回で{ten}ジェムです。"
         }
     },
     "export": {
@@ -250,7 +262,8 @@
             "Legendary": "Mythic Hero Shards",
             "Epic": "Epic Hero Shards",
             "Rare": "Rare Hero Shards"
-        }
+        },
+        "luckyWheel": "ラッキーホイールの回数"
     },
     "service": {
         "generalShard": {

@@ -70,7 +70,7 @@ export function PieceRewardsFlyout({
 						<span className="text-muted">{t("totalSoFar")}</span>
 						<ul className="grid gap-1 sm:grid-cols-2">
 							{summary.totals.map((total) => (
-								<li key={`${total.itemId}:${total.size}`}>
+								<li key={total.itemId}>
 									<RewardLine reward={total} />
 								</li>
 							))}
@@ -118,7 +118,7 @@ export function PieceRewardsFlyout({
 									className={`flex flex-wrap gap-x-4 gap-y-1 ${tier.reached ? "" : "text-muted"}`}
 								>
 									{tier.rewards.map((reward) => (
-										<li key={`${reward.itemId}:${reward.size}`}>
+										<li key={reward.itemId}>
 											<RewardLine reward={reward} />
 										</li>
 									))}

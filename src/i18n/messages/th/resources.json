@@ -27,8 +27,10 @@
     },
     "view": {
         "subline": "{items} ไอเทมใน {categories} หมวดหมู่",
-        "sublineInCategory": "{items} ไอเทมใน {categories} หมวดหมู่ · {inCategory} ใน {category}",
-        "unsaved": "ยังไม่บันทึก",
+        "coreSubline": "{chief} · จำนวนทรัพยากรและกองในกระเป๋า",
+        "tabsLabel": "มุมมองทรัพยากร",
+        "coreTab": "ทรัพยากรหลัก",
+        "allTab": "ไอเทมทั้งหมด",
         "shortages": "เป้าหมายในแผนขาด {names}",
         "shortagesLink": "เปิดแผนอาคาร",
         "show": {
@@ -78,6 +80,52 @@
             "setToZero": "ตั้ง {name} เป็น 0 แล้ว",
             "savedTitle": "บันทึกจำนวนแล้ว",
             "savedMessage": "{count, plural, other {เปลี่ยน {amount} จำนวน}}"
+        },
+        "totals": {
+            "loose": "แยก",
+            "packs": "แพ็ก",
+            "securedPacks": "แพ็กปลอดภัย",
+            "anyTitle": "ชนิดใดก็ได้ (หีบ)",
+            "commonSigils": "ตราทั่วไป",
+            "books": "หนังสือ",
+            "affinity": "ความสนิท"
+        }
+    },
+    "core": {
+        "resourcesSection": "ทรัพยากร",
+        "counts": "จำนวนทรัพยากร",
+        "backpack": "กระเป๋า",
+        "secured": "{name} (ปลอดภัย)",
+        "level": "Lv. {level}",
+        "customChests": "หีบทรัพยากรกำหนดเอง",
+        "customSecuredChests": "หีบทรัพยากรปลอดภัยกำหนดเอง",
+        "fireCrystalSection": "คริสตัลไฟ",
+        "speedupsSection": "ไอเทมเร่งเวลา",
+        "expertsSection": "ผู้เชี่ยวชาญ",
+        "expertSigilsRow": "ตราผู้เชี่ยวชาญ",
+        "affinityGiftsRow": "ของขวัญความสนิท",
+        "commonExpertRow": "ตราทั่วไปและหนังสือ",
+        "petsSection": "สัตว์เลี้ยง",
+        "petAdvancementRow": "วัสดุเลื่อนขั้น",
+        "petFoodAndMarksRow": "อาหารและตราป่า",
+        "heroGearSection": "อุปกรณ์ฮีโร่",
+        "heroGearMaterialsRow": "วัสดุอัปเกรด",
+        "heroGearRow": "อุปกรณ์และหีบอุปกรณ์",
+        "chiefGearSection": "อุปกรณ์และเครื่องราง หัวหน้า",
+        "chiefGearRow": "อุปกรณ์หัวหน้า",
+        "chiefCharmRow": "เครื่องรางหัวหน้า",
+        "chiefChestsRow": "หีบอุปกรณ์และเครื่องราง",
+        "heroShards": {
+            "section": "เศษฮีโร่",
+            "showCompleted": "แสดงฮีโร่ที่เสร็จแล้ว",
+            "hintHidden": "ซ่อนฮีโร่ เศษ และคู่มือที่เสร็จแล้ว: {count}",
+            "hintShown": "กำลังแสดงฮีโร่ เศษ และคู่มือที่เสร็จแล้ว",
+            "allCompleted": "ฮีโร่ที่ปลดล็อกทั้งหมดมีครบทุกดาวแล้ว เปิดสวิตช์เพื่อดู",
+            "generation": "รุ่น {generation}",
+            "shardName": "เศษ {name}",
+            "generalShards": "เศษทั่วไป",
+            "expeditionManuals": "คู่มือสกิลสำรวจไกล",
+            "explorationManuals": "คู่มือสกิลสำรวจ"
         }
     },
     "planStock": {

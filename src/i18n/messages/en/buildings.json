@@ -224,10 +224,10 @@
         "goalsHeading": "{count, plural, one {Goals, {amount} building} other {Goals, {amount} buildings}}",
         "noGoals": "No goals yet. Add a building above, then pick the level you want it to reach.",
         "prerequisiteNote": "Prerequisite steps are added for you. A level that needs another building at a higher level counts those steps and flags them.",
-        "timeNote": "The plan takes {time} after the {percent}% speed bonus. Your stock: Construction {construction} min, General {general} min. General speedups count toward construction.",
+        "timeNote": "The plan takes {time} after the {percent}% speed bonus. Your stock: Construction {construction} min, General {general} min applied. Only the share of General speedups set below counts.",
         "add": {
             "title": "Add a building",
-            "allAdded": "Every building is already in the plan.",
+            "allAdded": "Every building is already in the plan or at its maximum level.",
             "selectLabel": "Building to add",
             "button": "Add building"
         },

@@ -59,5 +59,20 @@
             "unknown": "Desconhecido"
         },
         "levelName": "VIP {level}"
+    },
+    "signIn": {
+        "title": "Início de sessão diário",
+        "note": "O início de sessão diário dá mais XP por cada dia de uma sequência. A sequência termina se perderes um dia UTC, e cada dia começa às 00:00 UTC.",
+        "add": "Adicionar início de sessão diário",
+        "addHint": "Dia {streak} da sequência: {points} XP",
+        "claimed": "Já iniciaste sessão hoje, no dia {streak} da sequência. Amanhã dá {points} XP, dentro de {time}.",
+        "needXp": "Indica primeiro o teu XP total ou o teu nível VIP.",
+        "streakLabel": "Dia da sequência",
+        "streakHint": "O dia da sequência de hoje. Altera se a tua sequência já estiver em curso.",
+        "toast": {
+            "title": "Início de sessão adicionado",
+            "message": "{points} XP adicionados pelo dia {streak} da sequência.",
+            "undo": "Anular"
+        }
     }
 }

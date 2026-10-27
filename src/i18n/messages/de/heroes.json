@@ -187,8 +187,7 @@
             "explorationFull": "Erkundung bei 5.0",
             "expeditionFull": "Expedition bei 5.0",
             "exploration": "Ang {attack} · Vert {defense} · LP {health}",
-            "expedition": "Ang {attack}% · Vert {defense}%",
-            "estimate": "Schätzung"
+            "expedition": "Ang {attack}% · Vert {defense}%"
         }
     },
     "plan": {
@@ -200,9 +199,10 @@
         "noHeroes": "Noch keine Helden im Plan. Füge oben einen Helden im Besitz hinzu und erhöhe dann seine Ziele.",
         "add": {
             "title": "Helden hinzufügen",
-            "allIn": "Jeder Held im Besitz ist im Plan. Schalte Im Besitz bei einem Helden ein, um ihn zu planen.",
+            "allIn": "Jeder Held im Besitz ist im Plan oder hat alle Sterne. Aktiviere „Im Besitz“ bei einem Helden, um ihn zu planen.",
             "selectLabel": "Held zum Hinzufügen",
-            "button": "Helden hinzufügen"
+            "button": "Helden hinzufügen",
+            "generationShort": "G{generation}"
         },
         "block": {
             "remove": "{hero} aus dem Plan entfernen",
@@ -237,6 +237,18 @@
             "allianceShowdown": "Alliance Showdown",
             "kingOfIcefield": "King of Icefield",
             "hallOfChief": "Hall of Chief"
+        },
+        "luckyWheel": {
+            "title": "Glücksrad",
+            "description": "Drehungen am Helden-Glücksrad fügen dem gewählten Helden geschätzte Splitter hinzu. Eine Drehung bringt im Schnitt {perSpin} Splitter, dazu Bonus-Splitter bei 5, 15, 35, 70 und 120 Drehungen.",
+            "noHero": "Füge dem Plan einen Helden hinzu, um Glücksrad-Drehungen zu planen.",
+            "hero": "Held",
+            "spins": "Drehungen (bis {max})",
+            "tokens": "Start-Token",
+            "estimate": "Geschätzte Splitter für {hero}: {total} ({bonus} aus Drehungs-Boni, {spins} aus Drehungen). Der Plan zählt sie als vorhandene Splitter.",
+            "gems": "Benötigte Edelsteine: {gems}",
+            "gemsNone": "Keine Edelsteine nötig.",
+            "gemsNote": "{covered} Drehungen nutzen deine Token. Weitere Drehungen kosten je {single} Edelsteine oder {ten} Edelsteine pro 10."
         }
     },
     "export": {
@@ -250,7 +262,8 @@
             "Legendary": "Mythic Hero Shards",
             "Epic": "Epic Hero Shards",
             "Rare": "Rare Hero Shards"
-        }
+        },
+        "luckyWheel": "Glücksrad-Drehungen"
     },
     "service": {
         "generalShard": {

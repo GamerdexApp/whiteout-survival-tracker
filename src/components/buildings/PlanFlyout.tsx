@@ -23,12 +23,13 @@ import {
 import type { AgeHints } from "@/service/buildings";
 import { ageHintOf, buildView, levelOrder, lockedFcHints } from "@/service/buildings";
 import { exportedPlanOf } from "@/service/eventExport";
-import { minutesOfSpeedup } from "@/service/inventory";
+import { generalMinutesApplied, minutesOfSpeedup } from "@/service/inventory";
 import { petSkillConstructionPercent } from "@/service/pets";
 import { resourceChecks } from "@/service/planStock";
 import { findBuildingById, levelledBuildings } from "@/data/game/buildings";
 import { findItem, RESOURCE_ITEM_IDS } from "@/data/game/items";
 import { ExportToEventFlyout } from "@/comps/export/ExportToEventFlyout";
+import { GeneralSpeedupShare } from "@/comps/queues/GeneralSpeedupShare";
 import { PlanStockCheck } from "@/comps/queues/PlanStockCheck";
 import { Badge } from "@/comps/ui/Badge";
 import { Button } from "@/comps/ui/Button";
@@ -36,6 +37,7 @@ import { Card } from "@/comps/ui/Card";
 import { Flyout } from "@/comps/ui/Flyout";
 import { IconButton } from "@/comps/ui/IconButton";
 import { Note } from "@/comps/ui/Note";
+import { PlanFooter } from "@/comps/ui/PlanFooter";
 import { SectionLabel } from "@/comps/ui/SectionLabel";
 import { SegmentedControl } from "@/comps/ui/SegmentedControl";
 import { Select } from "@/comps/ui/Select";
@@ -109,29 +111,21 @@ export function PlanFlyout({ open, chief, onClose, onSave }: PlanFlyoutProps) {
 				title={t("plan.title")}
 				description={t("plan.description")}
 				footer={
-					<>
-						{savedAt && (
-							<span className="border-line bg-surface text-muted me-auto inline-flex h-8 items-center gap-2 rounded-full border-[1.5px] px-3 font-mono text-xs">
-								<span
-									aria-hidden="true"
-									className="bg-kept size-1.5 rounded-full"
-								/>
-								{t("plan.saved", { time: formatDateTime(savedAt) })}
-							</span>
-						)}
-						<Button onClick={onClose}>{t("close")}</Button>
-						<Button
-							variant="ghost"
-							disabled={!exportSpec}
-							title={exportSpec ? undefined : t("plan.export.empty")}
-							onClick={openExport}
-						>
-							{t("plan.export.button")}
-						</Button>
-						<Button variant="primary" onClick={() => onSave(rows, controls)}>
-							{t("plan.save")}
-						</Button>
-					</>
+					<PlanFooter
+						savedText={
+							savedAt ? t("plan.saved", { time: formatDateTime(savedAt) }) : undefined
+						}
+						closeLabel={t("close")}
+						onClose={onClose}
+						exportAction={{
+							disabled: !exportSpec,
+							title: exportSpec ? undefined : t("plan.export.empty"),
+							onClick: openExport,
+							label: t("plan.export.button"),
+						}}
+						saveLabel={t("plan.save")}
+						onSave={() => onSave(rows, controls)}
+					/>
 				}
 			>
 				<PlanBody
@@ -236,12 +230,13 @@ function PlanBody({
 			{result && !result.ok && <Note tone="warning">{result.error}</Note>}
 			{result?.ok && (
 				<PlanStockCheck
+					timeExtra={<GeneralSpeedupShare chief={chief} use="buildings" />}
 					checks={resourceChecks(result.calculation, chief)}
 					timeNote={t("plan.timeNote", {
 						time: formatDuration(result.calculation.seconds),
 						percent: formatNumber(speedPercent),
 						construction: formatNumber(minutesOfSpeedup(chief, "construction")),
-						general: formatNumber(minutesOfSpeedup(chief, "general")),
+						general: formatNumber(generalMinutesApplied(chief, "buildings")),
 					})}
 				/>
 			)}
@@ -264,10 +259,9 @@ function AddBuilding({
 	const t = useTranslations("buildings.plan.add");
 	const available = levelledBuildings
 		.filter((building) => !rows.some((row) => row.id === building.id))
-		.map((building) => ({
-			building,
-			ageLock: buildView(building, chief).nextAgeLock,
-		}));
+		.map((building) => ({ building, view: buildView(building, chief) }))
+		.filter(({ view }) => !view.maxed)
+		.map(({ building, view }) => ({ building, ageLock: view.nextAgeLock }));
 	const [selectedId, setSelectedId] = useState("");
 	const addable = available.filter((item) => item.ageLock === null);
 	const selected = addable.some((item) => item.building.id === selectedId)

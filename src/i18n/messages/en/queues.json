@@ -91,5 +91,10 @@
             "tabs": "T11 and T12",
             "shortName": "War Academy"
         }
+    },
+    "generalShare": {
+        "label": "General speedups to use (%)",
+        "applied": "{applied} of {total} general minutes applied to this plan",
+        "limit": "Up to {max}%. The Buildings, Research, Troops and Experts plans share 100% of your general speedups."
     }
 }

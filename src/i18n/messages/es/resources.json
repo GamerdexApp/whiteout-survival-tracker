@@ -27,8 +27,10 @@
     },
     "view": {
         "subline": "{items} objetos en {categories} categorías",
-        "sublineInCategory": "{items} objetos en {categories} categorías · {inCategory} en {category}",
-        "unsaved": "Sin guardar",
+        "coreSubline": "{chief} · Cantidades de recursos y montones de la mochila",
+        "tabsLabel": "Vistas de recursos",
+        "coreTab": "Recursos básicos",
+        "allTab": "Todos los objetos",
         "shortages": "A los objetivos del planificador les faltan {names}.",
         "shortagesLink": "Abrir el plan de Edificios",
         "show": {
@@ -78,6 +80,52 @@
             "setToZero": "{name} puesto a 0",
             "savedTitle": "Cantidades guardadas",
             "savedMessage": "{count, plural, one {{amount} cantidad cambiada} other {{amount} cantidades cambiadas}}."
+        },
+        "totals": {
+            "loose": "Suelto",
+            "packs": "Paquetes",
+            "securedPacks": "Paquetes seguros",
+            "anyTitle": "Cualquiera (cofres)",
+            "commonSigils": "Sigilos comunes",
+            "books": "Libros",
+            "affinity": "Afinidad"
+        }
+    },
+    "core": {
+        "resourcesSection": "Recursos",
+        "counts": "Cantidad de recursos",
+        "backpack": "Mochila",
+        "secured": "{name} (Seguro)",
+        "level": "Nv. {level}",
+        "customChests": "Cofres de recursos personalizados",
+        "customSecuredChests": "Cofres de recursos seguros personalizados",
+        "fireCrystalSection": "Cristal de fuego",
+        "speedupsSection": "Aceleradores",
+        "expertsSection": "Expertos",
+        "expertSigilsRow": "Sigilos de experto",
+        "affinityGiftsRow": "Regalos de afinidad",
+        "commonExpertRow": "Sigilos comunes y libros",
+        "petsSection": "Mascotas",
+        "petAdvancementRow": "Materiales de avance",
+        "petFoodAndMarksRow": "Comida y marcas salvajes",
+        "heroGearSection": "Equipo de héroe",
+        "heroGearMaterialsRow": "Materiales de mejora",
+        "heroGearRow": "Equipo y cofres de equipo",
+        "chiefGearSection": "Equipo y amuletos del jefe",
+        "chiefGearRow": "Equipo del jefe",
+        "chiefCharmRow": "Amuletos del jefe",
+        "chiefChestsRow": "Cofres de equipo y amuletos",
+        "heroShards": {
+            "section": "Fragmentos de héroe",
+            "showCompleted": "Mostrar héroes completados",
+            "hintHidden": "Héroes, fragmentos y manuales completados ocultos: {count}",
+            "hintShown": "Mostrando héroes, fragmentos y manuales completados",
+            "allCompleted": "Todos los héroes desbloqueados tienen todas las estrellas. Activa el interruptor para verlos.",
+            "generation": "Gen {generation}",
+            "shardName": "Fragmento de {name}",
+            "generalShards": "Fragmentos generales",
+            "expeditionManuals": "Manuales de habilidad de expedición",
+            "explorationManuals": "Manuales de habilidad de exploración"
         }
     },
     "planStock": {

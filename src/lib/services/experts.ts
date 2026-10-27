@@ -11,7 +11,6 @@ import type { ExpertGoalState, ExpertState, Playthrough } from "@/types/app";
 import {
   ADVANCEMENT_INTERVAL,
   affinityForSkillLevel,
-  allExperts,
   BOOK_ITEM_ID,
   COMMON_SIGIL_ITEM_ID,
   EXP_PER_LEARNING_MINUTE,
@@ -21,11 +20,21 @@ import {
   relationshipAt,
   relationshipNumberAt,
   sigilItemIdOf,
+  skillMaxLevelAtAffinity,
   skillPowerAt,
+  statBonusOf,
+  totalSkillNeededForLevel,
+  trackedExperts,
 } from "@/data/game/experts";
 import { findItem } from "@/data/game/items";
-import { ownedCount, speedupStock, withOwnedCount } from "./inventory";
+import {
+  generalMinutesApplied,
+  minutesOfSpeedup,
+  ownedCount,
+  withOwnedCount,
+} from "./inventory";
 import type { StockCheck } from "./planStock";
+import { expertTotals } from "./resourceTotals";
 import { expertUnlockDay, isExpertUnlockedByAge } from "./unlocks";
 
 export const SKILL_COUNT = 4;
@@ -46,6 +55,8 @@ export interface ExpertView {
   advanced: boolean;
   skillLevels: number[];
   skillExp: number[];
+  /** The EXP of the learning session that runs now. It lands on its skill when the session ends. */
+  learningExp: number[];
   /** The sigil item of the expert on the Resources page. The count lives in the inventory. */
   sigilItemId: string | null;
   sigils: number;
@@ -68,8 +79,19 @@ const sigilCountOf = (chief: Playthrough, expertId: string) => {
   return itemId ? ownedCount(chief, itemId) : 0;
 };
 
+const learningExpOf = (
+  chief: Playthrough,
+  expertId: string,
+  skillIndex: number,
+) => {
+  const job = chief.queues?.learning?.[0];
+  return job?.expertId === expertId && job.skillIndex === skillIndex
+    ? job.exp
+    : 0;
+};
+
 export const buildExpertViews = (chief: Playthrough): ExpertView[] =>
-  allExperts.map((expert) => {
+  trackedExperts.map((expert) => {
     const saved: ExpertState = chief.experts?.[expert.id] ?? {};
     const locked = !isExpertUnlockedByAge(chief, expert);
     const affinity = clamp(wholeOr(saved.affinity, 1), 1, MAX_AFFINITY);
@@ -82,13 +104,21 @@ export const buildExpertViews = (chief: Playthrough): ExpertView[] =>
       affinity,
       affinityAvailable: Math.max(0, wholeOr(saved.affinityAvailable, 0)),
       advanced,
-      skillLevels: expert.skills.map((skill, index) => {
-        const cap = skillCapAt(skill, affinity, advanced);
-        const unlocked = Math.min(UNLOCKED_LEVEL, cap);
-        return clamp(wholeOr(saved.skills?.[index], unlocked), unlocked, cap);
-      }),
+      skillLevels: reachedLevels(
+        expert,
+        relationshipAffinityOf(affinity, advanced),
+        unlockedLevels(expert, relationshipAffinityOf(affinity, advanced)),
+        expert.skills.map((skill, index) => {
+          const cap = skillCapAt(skill, affinity, advanced);
+          const unlocked = Math.min(UNLOCKED_LEVEL, cap);
+          return clamp(wholeOr(saved.skills?.[index], unlocked), unlocked, cap);
+        }),
+      ),
       skillExp: expert.skills.map((_, index) =>
         Math.max(0, wholeOr(saved.skillExp?.[index], 0)),
+      ),
+      learningExp: expert.skills.map((_, index) =>
+        learningExpOf(chief, expert.id, index),
       ),
       sigilItemId: sigilItemIdOf(expert.id),
       sigils: sigilCountOf(chief, expert.id),
@@ -155,7 +185,7 @@ export const applyExpertChange = (
     case "skill": {
       const skill = view.expert.skills[change.index];
       const cap = skillCapOf(view, change.index);
-      const level = clamp(change.level, Math.min(UNLOCKED_LEVEL, cap), cap);
+      const level = clamp(change.level, skillFloorOf(view, change.index), cap);
       next = {
         ...current,
         skills: replaceAt(view.skillLevels, change.index, level),
@@ -194,6 +224,12 @@ export const affinityRowOf = (expert: Expert, level: number) =>
 /** Points needed to go from `level` to the next level. Zero at the top. */
 export const affinityNeededFor = (expert: Expert, level: number) =>
   level >= MAX_AFFINITY ? 0 : affinityRowOf(expert, level + 1).affinityRequired;
+
+/** The points of every level above `from` up to and including `to`. */
+export const affinityBetween = (expert: Expert, from: number, to: number) =>
+  expert.affinityLevels
+    .filter((row) => row.level > from && row.level <= to)
+    .reduce((sum, row) => sum + row.affinityRequired, 0);
 
 /**
  * The affinity points of every level from `level` up to the top. The player can hold more points
@@ -248,8 +284,8 @@ export const bonusNowOf = (view: ExpertView): BonusNow => {
   const countedLevel = bonusLevelFor(view.affinity, view.advanced);
   return {
     countedLevel,
-    percent: affinityRowOf(view.expert, countedLevel).statBonus,
-    atMax: affinityRowOf(view.expert, MAX_AFFINITY).statBonus,
+    percent: statBonusOf(affinityRowOf(view.expert, countedLevel)),
+    atMax: statBonusOf(affinityRowOf(view.expert, MAX_AFFINITY)),
     waitingForAdvancement: countedLevel !== view.affinity,
   };
 };
@@ -284,45 +320,136 @@ const relationshipAffinityOf = (affinity: number, advanced: boolean) =>
  * Where the data states no cap, it is the max level of the skill.
  */
 const skillCapAt = (skill: ExpertSkill, affinity: number, advanced: boolean) =>
-  expertSkillMaxLevel(skill, relationshipAffinityOf(affinity, advanced));
+  skillMaxLevelAtAffinity(skill, relationshipAffinityOf(affinity, advanced));
 
-export const skillCapOf = (view: ExpertView, index: number) =>
-  skillCapAt(view.expert.skills[index], view.affinity, view.advanced);
-
-export interface SkillGate {
-  /** The level that the skill cannot reach yet. */
-  level: number;
-  /** The affinity level, advanced, that allows it. */
-  affinity: number;
-}
+const skillTotal = (levels: number[]) =>
+  levels.reduce((sum, level) => sum + level, 0);
 
 /**
- * What holds a skill back when it sits at the top of what the relationship allows. It is null when
- * the skill is free to level or when the data states no affinity level that allows the next level.
+ * The levels that the skills can reach from `start` toward `targets`. A skill moves one level at a
+ * time, and only when the relationship allows the level and the total of the four skills, before
+ * the upgrade, meets what the level needs. An upgrade never blocks another one, so the order does
+ * not change the result.
+ */
+const reachedLevels = (
+  expert: Expert,
+  countedAffinity: number,
+  start: number[],
+  targets: number[],
+) => {
+  const reached = [...start];
+  let moved = true;
+  while (moved) {
+    moved = false;
+    expert.skills.forEach((skill, index) => {
+      const next = reached[index] + 1;
+      if (
+        next > targets[index] ||
+        next > skillMaxLevelAtAffinity(skill, countedAffinity) ||
+        skillTotal(reached) < totalSkillNeededForLevel(skill, next)
+      ) {
+        return;
+      }
+      reached[index] = next;
+      moved = true;
+    });
+  }
+  return reached;
+};
+
+const unlockedLevels = (expert: Expert, countedAffinity: number) =>
+  expert.skills.map((skill) =>
+    Math.min(UNLOCKED_LEVEL, skillMaxLevelAtAffinity(skill, countedAffinity)),
+  );
+
+const withLevel = (levels: number[], index: number, level: number) =>
+  replaceAt(levels, index, level);
+
+/** The highest level a skill can take now, with the other skills where they are. */
+export const skillCapOf = (view: ExpertView, index: number) => {
+  const counted = relationshipAffinityOf(view.affinity, view.advanced);
+  const top = skillMaxLevelAtAffinity(view.expert.skills[index], counted);
+  return reachedLevels(
+    view.expert,
+    counted,
+    view.skillLevels,
+    withLevel(view.skillLevels, index, top),
+  )[index];
+};
+
+/**
+ * The lowest level a skill can take now. A level of another skill may need the total that this
+ * skill gives, so the skill cannot go below what keeps those levels valid.
+ */
+export const skillFloorOf = (view: ExpertView, index: number) => {
+  const counted = relationshipAffinityOf(view.affinity, view.advanced);
+  const start = unlockedLevels(view.expert, counted);
+  for (let level = start[index]; level < view.skillLevels[index]; level += 1) {
+    const targets = withLevel(view.skillLevels, index, level);
+    const reached = reachedLevels(view.expert, counted, start, targets);
+    if (reached.every((value, position) => value === targets[position])) {
+      return level;
+    }
+  }
+  return view.skillLevels[index];
+};
+
+export type SkillGate =
+  | {
+      kind: "affinity";
+      /** The level that the skill cannot reach yet. */
+      level: number;
+      /** The affinity level, advanced, that allows it. */
+      affinity: number;
+    }
+  | {
+      kind: "total";
+      level: number;
+      /** The total of the four skill levels that the level needs. */
+      total: number;
+      /** The total of the four skill levels now. */
+      have: number;
+    };
+
+/**
+ * What holds a skill back when it sits at the top of what it can take. It is null when the skill
+ * is free to level or when the data states no affinity level that allows the next level.
  */
 const skillGateAt = (
   skill: ExpertSkill,
   level: number,
-  affinity: number,
-  advanced: boolean,
+  cap: number,
+  affinityCap: number,
+  countedAffinity: number,
+  levels: number[],
 ): SkillGate | null => {
-  const cap = skillCapAt(skill, affinity, advanced);
-  if (level < cap || cap >= skill.maxLevel) return null;
-  const needed = affinityForSkillLevel(
-    skill,
-    relationshipAffinityOf(affinity, advanced),
-    level + 1,
-  );
-  return needed === null ? null : { level: level + 1, affinity: needed };
+  if (level < cap || level >= skill.maxLevel) return null;
+  if (affinityCap <= level) {
+    const needed = affinityForSkillLevel(skill, countedAffinity, level + 1);
+    return needed === null
+      ? null
+      : { kind: "affinity", level: level + 1, affinity: needed };
+  }
+  return {
+    kind: "total",
+    level: level + 1,
+    total: totalSkillNeededForLevel(skill, level + 1),
+    have: skillTotal(levels),
+  };
 };
 
-export const skillGateOf = (view: ExpertView, index: number) =>
-  skillGateAt(
-    view.expert.skills[index],
+export const skillGateOf = (view: ExpertView, index: number) => {
+  const counted = relationshipAffinityOf(view.affinity, view.advanced);
+  const skill = view.expert.skills[index];
+  return skillGateAt(
+    skill,
     view.skillLevels[index],
-    view.affinity,
-    view.advanced,
+    skillCapOf(view, index),
+    skillMaxLevelAtAffinity(skill, counted),
+    counted,
+    view.skillLevels,
   );
+};
 
 export const talentLevelOf = (view: ExpertView) =>
   relationshipNumberAt(relationshipAffinityOf(view.affinity, view.advanced));
@@ -437,7 +564,7 @@ const orderComparators: Record<
 > = {
   generation: (a, b) =>
     a.expert.generation - b.expert.generation ||
-    allExperts.indexOf(a.expert) - allExperts.indexOf(b.expert),
+    trackedExperts.indexOf(a.expert) - trackedExperts.indexOf(b.expert),
   affinity: (a, b) => b.affinity - a.affinity,
   power: (a, b) => expertPowerOf(b).now - expertPowerOf(a).now,
   name: (a, b) => a.expert.name.localeCompare(b.expert.name),
@@ -521,17 +648,66 @@ const goalRelationshipOf = (view: ExpertView, goal: ExpertGoalState) => {
   return { affinity, advanced, counted };
 };
 
-/** The highest level of a skill that the goal relationship allows, never below the current level. */
+/** The levels the goal asks for, never below the current ones. */
+const goalLevelsOf = (view: ExpertView, goal: ExpertGoalState) =>
+  view.skillLevels.map((level, index) =>
+    Math.max(goal.skills?.[index] ?? level, level),
+  );
+
+/**
+ * The highest level of a skill that the goal can reach, with the other skills at their goals. It
+ * is never below the current level.
+ */
 export const skillGoalCapOf = (
   view: ExpertView,
   goal: ExpertGoalState,
   index: number,
 ) => {
   const { affinity, counted } = goalRelationshipOf(view, goal);
-  return Math.max(
+  const top = Math.max(
     view.skillLevels[index],
     skillCapAt(view.expert.skills[index], affinity, counted),
   );
+  const countedAffinity = relationshipAffinityOf(affinity, counted);
+  return reachedLevels(
+    view.expert,
+    countedAffinity,
+    view.skillLevels,
+    withLevel(goalLevelsOf(view, goal), index, top),
+  )[index];
+};
+
+/**
+ * The lowest goal a skill can take. The goal of another skill may need the total that this goal
+ * gives, so the goal cannot go below what keeps those goals reachable.
+ */
+export const skillGoalFloorOf = (
+  view: ExpertView,
+  goal: ExpertGoalState,
+  index: number,
+) => {
+  const { affinity, counted } = goalRelationshipOf(view, goal);
+  const countedAffinity = relationshipAffinityOf(affinity, counted);
+  const goals = goalLevelsOf(view, goal);
+  const reachable = reachedLevels(
+    view.expert,
+    countedAffinity,
+    view.skillLevels,
+    goals,
+  );
+  for (let level = view.skillLevels[index]; level < goals[index]; level += 1) {
+    const targets = withLevel(reachable, index, level);
+    const reached = reachedLevels(
+      view.expert,
+      countedAffinity,
+      view.skillLevels,
+      targets,
+    );
+    if (reached.every((value, position) => value >= targets[position])) {
+      return level;
+    }
+  }
+  return goals[index];
 };
 
 /** What holds the goal level of a skill back at the goal relationship. */
@@ -541,24 +717,34 @@ export const skillGoalGateOf = (
   index: number,
 ) => {
   const { affinity, counted } = goalRelationshipOf(view, goal);
-  const level = Math.max(goal.skills?.[index] ?? 0, view.skillLevels[index]);
-  return skillGateAt(view.expert.skills[index], level, affinity, counted);
+  const countedAffinity = relationshipAffinityOf(affinity, counted);
+  const skill = view.expert.skills[index];
+  const levels = goalLevelsOf(view, goal);
+  return skillGateAt(
+    skill,
+    levels[index],
+    skillGoalCapOf(view, goal, index),
+    skillCapAt(skill, affinity, counted),
+    countedAffinity,
+    levels,
+  );
 };
 
 /** A goal that stays valid when the chief levels up after the plan was saved. */
-const sanitizeGoal = (
+export const sanitizeGoal = (
   view: ExpertView,
   goal: ExpertGoalState,
 ): ExpertGoalState => {
-  const { affinity, advanced } = goalRelationshipOf(view, goal);
+  const { affinity, advanced, counted } = goalRelationshipOf(view, goal);
+  const countedAffinity = relationshipAffinityOf(affinity, counted);
   return {
     affinity,
     advanced,
-    skills: view.skillLevels.map((level, index) =>
-      Math.min(
-        Math.max(goal.skills?.[index] ?? level, level),
-        skillGoalCapOf(view, { ...goal, affinity, advanced }, index),
-      ),
+    skills: reachedLevels(
+      view.expert,
+      countedAffinity,
+      view.skillLevels,
+      goalLevelsOf(view, goal),
     ),
   };
 };
@@ -618,6 +804,7 @@ export interface ExpertPlanRow {
   levels: number;
   advancements: number;
   affinity: number;
+  /** The points saved on the expert card plus the share of the Resources gifts the plan gives it. */
   affinityHeld: number;
   expHeld: number;
 }
@@ -625,6 +812,8 @@ export interface ExpertPlanRow {
 export interface ExpertsPlan {
   rows: ExpertPlanRow[];
   total: ExpertCalculation;
+  /** The affinity of the gifts on the Resources page, which any expert can use. */
+  giftAffinity: number;
 }
 
 const calculatorGoalOf = (
@@ -667,7 +856,7 @@ const heldSkillExp = (view: ExpertView, goal: ExpertGoalState) =>
     return (
       sum +
       Math.min(
-        view.skillExp[index],
+        view.skillExp[index] + view.learningExp[index],
         skillExpBetween(skill, view.skillLevels[index], goalLevel),
       )
     );
@@ -683,6 +872,7 @@ export const runExpertsPlan = (
   const total = calculateExperts(
     views.map((view) => calculatorGoalOf(view, goals[view.expert.id])),
   );
+  let giftAffinityLeft = expertTotals(chief).affinity;
   const rows = views.map((view, index): ExpertPlanRow => {
     const item = total.items[index];
     const own = sigilItemIdOf(view.expert.id);
@@ -690,6 +880,9 @@ export const runExpertsPlan = (
       item.sigils,
       own ? ownedCount(chief, own) : 0,
     );
+    const heldOnCard = Math.min(view.affinityAvailable, item.affinity);
+    const fromGifts = Math.min(item.affinity - heldOnCard, giftAffinityLeft);
+    giftAffinityLeft -= fromGifts;
     return {
       view,
       goal: goals[view.expert.id],
@@ -701,7 +894,7 @@ export const runExpertsPlan = (
       levels: item.levels,
       advancements: item.advancements,
       affinity: item.affinity,
-      affinityHeld: Math.min(view.affinityAvailable, item.affinity),
+      affinityHeld: heldOnCard + fromGifts,
       expHeld: Math.min(heldSkillExp(view, goals[view.expert.id]), item.exp),
     };
   });
@@ -712,6 +905,7 @@ export const runExpertsPlan = (
   return {
     rows,
     total: { ...total, skillLevels: total.skillLevels + unlocks },
+    giftAffinity: expertTotals(chief).affinity,
   };
 };
 
@@ -725,9 +919,18 @@ export const learningMinutesNeeded = (plan: ExpertsPlan) =>
   Math.ceil(expStillToGet(plan) / EXP_PER_LEARNING_MINUTE);
 
 export const learningSpeedupMinutes = (chief: Playthrough) =>
-  speedupStock(chief)
-    .filter(({ type }) => type === "learning" || type === "general")
-    .reduce((sum, stock) => sum + stock.minutes, 0);
+  minutesOfSpeedup(chief, "learning") + generalMinutesApplied(chief, "experts");
+
+/** The learning speedup minutes the plan uses: what it needs, up to what the chief holds for it. */
+export const learningMinutesUsed = (plan: ExpertsPlan, chief: Playthrough) =>
+  Math.min(learningMinutesNeeded(plan), learningSpeedupMinutes(chief));
+
+/**
+ * Everything the chief holds for the plan, whatever the plan needs: the gifts once, and the points
+ * saved on the card of each planned expert.
+ */
+export const affinityAvailable = (plan: ExpertsPlan) =>
+  plan.giftAffinity + sumOf(plan.rows, (row) => row.view.affinityAvailable);
 
 export const expertPlanChecks = (
   plan: ExpertsPlan,
@@ -750,7 +953,7 @@ export const expertPlanChecks = (
     {
       id: "affinity",
       name: t("plan.checks.affinity"),
-      available: sumOf(plan.rows, (row) => row.affinityHeld),
+      available: affinityAvailable(plan),
       needed: plan.total.affinity,
     },
     {

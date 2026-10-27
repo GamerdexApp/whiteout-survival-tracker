@@ -8,29 +8,39 @@ import { formatDateTime, formatNumber } from "@/lib/format";
 import { expertPlanScores, exportSpecOf } from "@/service/expertExport";
 import type { ExpertPlanRow, ExpertsPlan, ExpertView, Goals } from "@/service/experts";
 import {
+	affinityAvailable,
+	affinityBetween,
+	affinityNeededFor,
+	affinityRowOf,
 	buildExpertViews,
 	expertPlanChecks,
 	initialExpertGoals,
 	isAdvancementLevel,
 	learningMinutesNeeded,
 	runExpertsPlan,
+	sanitizeGoal,
+	skillExpBetween,
 	skillGoalCapOf,
+	skillGoalFloorOf,
 	skillGoalGateOf,
 	startingGoalFor,
 } from "@/service/experts";
 import { EXP_PER_LEARNING_MINUTE, MAX_AFFINITY } from "@/data/game/experts";
 import { ExportToEventFlyout } from "@/comps/export/ExportToEventFlyout";
+import { GeneralSpeedupShare } from "@/comps/queues/GeneralSpeedupShare";
 import { PlanStockCheck } from "@/comps/queues/PlanStockCheck";
 import { Badge } from "@/comps/ui/Badge";
 import { Button } from "@/comps/ui/Button";
 import { Card } from "@/comps/ui/Card";
 import { Flyout } from "@/comps/ui/Flyout";
 import { ItemIcon } from "@/comps/ui/ItemIcon";
+import { PlanFooter } from "@/comps/ui/PlanFooter";
 import { ScrollRegion } from "@/comps/ui/ScrollRegion";
 import { SectionLabel } from "@/comps/ui/SectionLabel";
 import { Select } from "@/comps/ui/Select";
 import { Switch } from "@/comps/ui/Switch";
 import { ValueStepper } from "@/comps/ui/ValueStepper";
+import { SkillGateText } from "./SkillGateText";
 
 interface ExpertPlanFlyoutProps {
 	open: boolean;
@@ -45,7 +55,7 @@ export function ExpertPlanFlyout({ open, chief, onClose, onSave }: ExpertPlanFly
 	const [goals, setGoals] = useState<Goals>({});
 	const [exporting, setExporting] = useState(false);
 	const plan = useMemo(() => runExpertsPlan(chief, goals), [chief, goals]);
-	const canExport = expertPlanScores(plan);
+	const canExport = expertPlanScores(plan, chief);
 
 	if (open !== wasOpen) {
 		setWasOpen(open);
@@ -61,33 +71,26 @@ export function ExpertPlanFlyout({ open, chief, onClose, onSave }: ExpertPlanFly
 			title={t("title")}
 			description={t("description")}
 			footer={
-				<>
-					{savedAt && (
-						<span className="border-line bg-surface text-muted me-auto inline-flex h-8 items-center gap-2 rounded-full border-[1.5px] px-3 font-mono text-xs">
-							<span aria-hidden="true" className="bg-kept size-1.5 rounded-full" />
-							{t("saved", { date: formatDateTime(savedAt) })}
-						</span>
-					)}
-					<Button onClick={onClose}>{t("close")}</Button>
-					<Button
-						variant="ghost"
-						disabled={!canExport}
-						title={canExport ? undefined : t("exportNothing")}
-						onClick={() => setExporting(true)}
-					>
-						{t("exportButton")}
-					</Button>
-					<Button variant="primary" onClick={() => onSave(goals)}>
-						{t("save")}
-					</Button>
-				</>
+				<PlanFooter
+					savedText={savedAt ? t("saved", { date: formatDateTime(savedAt) }) : undefined}
+					closeLabel={t("close")}
+					onClose={onClose}
+					exportAction={{
+						disabled: !canExport,
+						title: canExport ? undefined : t("exportNothing"),
+						onClick: () => setExporting(true),
+						label: t("exportButton"),
+					}}
+					saveLabel={t("save")}
+					onSave={() => onSave(goals)}
+				/>
 			}
 		>
 			<PlanBody chief={chief} goals={goals} plan={plan} onGoalsChange={setGoals} />
 			<ExportToEventFlyout
 				open={exporting}
 				chief={chief}
-				spec={exportSpecOf(plan)}
+				spec={exportSpecOf(plan, chief)}
 				onClose={() => setExporting(false)}
 			/>
 		</Flyout>
@@ -107,7 +110,6 @@ function PlanBody({
 }) {
 	const t = useTranslations("experts.plan");
 	const views = useMemo(() => buildExpertViews(chief), [chief]);
-	const planned = views.filter((view) => view.recruited && goals[view.expert.id]);
 	const addable = views.filter((view) => view.recruited && !goals[view.expert.id]);
 	const hasRecruited = views.some((view) => view.recruited);
 
@@ -120,17 +122,19 @@ function PlanBody({
 					onGoalsChange({ ...goals, [view.expert.id]: startingGoalFor(view) })
 				}
 			/>
-			{planned.length === 0 ? (
+			{plan.rows.length === 0 ? (
 				<Card className="p-4">
 					<p className="text-muted">{t("noExperts")}</p>
 				</Card>
 			) : (
-				planned.map((view) => (
+				plan.rows.map(({ view }) => (
 					<ExpertBlock
 						key={view.expert.id}
 						view={view}
 						goal={goals[view.expert.id]}
-						onGoalChange={(goal) => onGoalsChange({ ...goals, [view.expert.id]: goal })}
+						onGoalChange={(goal) =>
+							onGoalsChange({ ...goals, [view.expert.id]: sanitizeGoal(view, goal) })
+						}
 						onRemove={() =>
 							onGoalsChange(
 								Object.fromEntries(
@@ -180,7 +184,10 @@ function AddExpert({
 						>
 							{addable.map((view) => (
 								<option key={view.expert.id} value={view.expert.id}>
-									{view.expert.name}
+									{t("option", {
+										name: view.expert.name,
+										count: formatNumber(view.sigils),
+									})}
 								</option>
 							))}
 						</Select>
@@ -197,12 +204,12 @@ function AddExpert({
 
 function PlanRow({
 	label,
-	hint,
+	hints,
 	current,
 	children,
 }: {
 	label: string;
-	hint: string;
+	hints: string[];
 	current: string;
 	children: React.ReactNode;
 }) {
@@ -210,7 +217,11 @@ function PlanRow({
 		<div className="border-line flex flex-wrap items-center justify-between gap-x-3 gap-y-1 border-t-[1.5px] py-2 first:border-t-0">
 			<div className="flex min-w-0 flex-col">
 				<span>{label}</span>
-				<span className="text-muted font-mono text-xs">{hint}</span>
+				{hints.map((hint) => (
+					<span key={hint} className="text-muted font-mono text-xs">
+						{hint}
+					</span>
+				))}
 			</div>
 			<div className="flex flex-wrap items-center justify-end gap-2">
 				<span className="text-muted font-mono text-xs">{current}</span>
@@ -232,12 +243,20 @@ function ExpertBlock({
 	onRemove: () => void;
 }) {
 	const t = useTranslations("experts.plan.block");
-	const tCard = useTranslations("experts.card");
 	const { expert } = view;
 	const goalAffinity = Math.max(goal.affinity ?? view.affinity, view.affinity);
 	const alreadyAdvanced =
 		goalAffinity === view.affinity && isAdvancementLevel(view.affinity) && view.advanced;
 	const canAdvance = isAdvancementLevel(goalAffinity) && !alreadyAdvanced;
+	const goalAffinityNeeded = affinityBetween(expert, view.affinity, goalAffinity);
+	const nextLevelNeeded = affinityNeededFor(expert, view.affinity);
+	const affinityNeededHints =
+		goalAffinity > view.affinity
+			? [t("affinityNeeded", { amount: formatNumber(goalAffinityNeeded) })]
+			: nextLevelNeeded > 0
+				? [t("affinityNext", { amount: formatNumber(nextLevelNeeded) })]
+				: [];
+	const advancementSigils = affinityRowOf(expert, goalAffinity).advancementCost;
 	const setSkill = (index: number, level: number) =>
 		onGoalChange({
 			...goal,
@@ -253,7 +272,12 @@ function ExpertBlock({
 					<ItemIcon src={expert.img} size={40} />
 					<div className="flex flex-col">
 						<h3 className="font-semibold">{expert.name}</h3>
-						<span className="text-muted text-xs">{expert.title}</span>
+						<span className="text-muted flex flex-wrap items-center gap-x-2 text-xs">
+							{expert.title}
+							<Badge tone="kept">
+								{t("sigils", { count: formatNumber(view.sigils) })}
+							</Badge>
+						</span>
 					</div>
 				</div>
 				<Button
@@ -267,7 +291,10 @@ function ExpertBlock({
 			<div className="flex flex-col">
 				<PlanRow
 					label={t("affinity")}
-					hint={t("affinityHeld", { amount: formatNumber(view.affinityAvailable) })}
+					hints={[
+						t("affinityHeld", { amount: formatNumber(view.affinityAvailable) }),
+						...affinityNeededHints,
+					]}
 					current={
 						isAdvancementLevel(view.affinity) && view.advanced
 							? t("currentAffinity", { level: formatNumber(view.affinity) })
@@ -291,22 +318,53 @@ function ExpertBlock({
 				{canAdvance && (
 					<div className="border-line flex items-center justify-between gap-3 border-t-[1.5px] py-2">
 						<span>{t("advanceAtGoal", { level: formatNumber(goalAffinity) })}</span>
-						<Switch
-							label={t("advanceAtGoalLabel", { expert: expert.name })}
-							checked={goal.advanced === true}
-							onChange={(advanced) => onGoalChange({ ...goal, advanced })}
-						/>
+						<span className="flex items-center gap-3">
+							{advancementSigils !== undefined && (
+								<span className="text-muted font-mono text-xs">
+									{t("advanceSigils", { count: formatNumber(advancementSigils) })}
+								</span>
+							)}
+							<Switch
+								label={t("advanceAtGoalLabel", { expert: expert.name })}
+								checked={goal.advanced === true}
+								onChange={(advanced) => onGoalChange({ ...goal, advanced })}
+							/>
+						</span>
 					</div>
 				)}
 				{expert.skills.map((skill, index) => {
 					const current = view.skillLevels[index];
 					const goalCap = skillGoalCapOf(view, goal, index);
 					const gate = skillGoalGateOf(view, goal, index);
+					const skillGoalLevel = Math.max(goal.skills?.[index] ?? current, current);
 					return (
 						<div key={skill.name}>
 							<PlanRow
 								label={skill.name}
-								hint={t("expHeld", { amount: formatNumber(view.skillExp[index]) })}
+								hints={[
+									view.learningExp[index] > 0
+										? t("expHeldLearning", {
+												amount: formatNumber(
+													view.skillExp[index] + view.learningExp[index]
+												),
+											})
+										: t("expHeld", {
+												amount: formatNumber(view.skillExp[index]),
+											}),
+									...(skillGoalLevel > current
+										? [
+												t("expNeeded", {
+													amount: formatNumber(
+														skillExpBetween(
+															skill,
+															current,
+															skillGoalLevel
+														)
+													),
+												}),
+											]
+										: []),
+								]}
 								current={t("currentLevel", { level: formatNumber(current) })}
 							>
 								<ValueStepper
@@ -314,22 +372,15 @@ function ExpertBlock({
 										expert: expert.name,
 										skill: skill.name,
 									})}
-									value={Math.max(goal.skills?.[index] ?? current, current)}
-									min={current}
+									value={skillGoalLevel}
+									min={skillGoalFloorOf(view, goal, index)}
 									max={goalCap}
 									onChange={(level) => setSkill(index, level)}
 								/>
 							</PlanRow>
 							{gate && (
 								<p className="text-muted pb-2 font-mono text-xs">
-									{gate.level === 1
-										? tCard("skillLocked", {
-												level: formatNumber(gate.affinity),
-											})
-										: tCard("skillCapped", {
-												next: formatNumber(gate.level),
-												level: formatNumber(gate.affinity),
-											})}
+									<SkillGateText gate={gate} />
 								</p>
 							)}
 						</div>
@@ -345,12 +396,13 @@ function StockSection({ plan, chief }: { plan: ExpertsPlan; chief: Playthrough }
 	const checks = expertPlanChecks(plan, chief);
 	const sigilsTotal = plan.total.sigils;
 	const sigilsOwn = plan.rows.reduce((sum, row) => sum + row.sigilsFromOwn, 0);
-	const held = checks[2].available;
+	const held = affinityAvailable(plan);
 	const expHeld = plan.rows.reduce((sum, row) => sum + row.expHeld, 0);
 
 	return (
 		<>
 			<PlanStockCheck
+				timeExtra={<GeneralSpeedupShare chief={chief} use="experts" />}
 				checks={checks}
 				timeNote={t("learning", {
 					exp: formatNumber(plan.total.exp),
@@ -373,7 +425,7 @@ function StockSection({ plan, chief }: { plan: ExpertsPlan; chief: Playthrough }
 					{t("affinity", {
 						needed: formatNumber(plan.total.affinity),
 						held: formatNumber(held),
-						left: formatNumber(plan.total.affinity - held),
+						left: formatNumber(Math.max(0, plan.total.affinity - held)),
 					})}
 				</p>
 			</Card>
@@ -443,7 +495,6 @@ function PlanResult({ plan }: { plan: ExpertsPlan }) {
 		<Card className="flex flex-col gap-4 p-4">
 			<div className="flex items-center justify-between gap-3">
 				<h3 className="font-semibold">{t("title")}</h3>
-				<Badge tone="added">{t("derived")}</Badge>
 			</div>
 			<div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
 				{tiles.map(([key, value]) => (

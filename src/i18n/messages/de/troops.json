@@ -59,8 +59,7 @@
             "button": "In Kern-Events exportieren",
             "emptyHint": "Füge ein Training hinzu, um es zu exportieren.",
             "computed": "Von der App berechnet.",
-            "trainedGroup": "für ausgebildete Truppen",
-            "speedupGroup": "für Beschleuniger-Minuten",
+            "trainedGroup": "für Truppen und Beschleuniger",
             "trainedTier": "Ausgebildete Truppen Tier {tier}",
             "speedupMinutes": "Genutzte Beschleuniger-Minuten fürs Training",
             "promoted": "Beförderte Truppen",
@@ -130,7 +129,7 @@
         "stock": {
             "name": "Trainings-Beschleuniger",
             "minutesUnit": "Min",
-            "note": "Dein Bestand: Training {training} Min, Allgemein {general} Min. Allgemeine Beschleuniger zählen für das Training. Training, das ein Beschleuniger nicht abdeckt, endet in Normalzeit, daher werden nur die Beschleuniger genutzt, die du hast: {used} Min."
+            "note": "Dein Bestand: Training {training} Min, Allgemein {general} Min angewendet. Es zählt nur der unten festgelegte Anteil der allgemeinen Beschleuniger. Training, das ein Beschleuniger nicht abdeckt, endet in Normalzeit, daher werden nur die Beschleuniger genutzt, die du hast: {used} Min."
         },
         "result": {
             "title": "Ergebnis",

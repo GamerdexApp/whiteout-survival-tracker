@@ -12,13 +12,10 @@ export function useRewardText() {
 	const t = useTranslations("tundraAlbum.reward");
 
 	return (reward: TundraAlbumReward) => {
-		const values = {
+		return t("line", {
 			amount: formatNumber(reward.amount),
 			item: rewardItem(reward)?.name ?? t("unknownItem"),
-		};
-		return reward.size === undefined
-			? t("line", values)
-			: t("sized", { ...values, size: formatNumber(reward.size) });
+		});
 	};
 }
 

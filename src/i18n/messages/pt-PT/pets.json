@@ -203,7 +203,13 @@
             },
             "notScored": "Sem pontuação",
             "eventNote": "Os pontos de evento são a pontuação de avanço vezes os pontos da linha de pontuação de cada evento.",
-            "scoreSourceNote": "As pontuações de avanço dos níveis 40 a 100 coincidem com as notas dos eventos. Os níveis 10 a 30 vêm de uma só fonte (WoS Tools)."
+            "scoreSourceNote": "As pontuações de avanço dos níveis 40 a 100 coincidem com as notas dos eventos. Os níveis 10 a 30 vêm de uma só fonte (WoS Tools).",
+            "chestOf": "de {held} que tem"
+        },
+        "chest": {
+            "covers": "{amount} do disponível vêm de Baús personalizados de materiais de avanço de mascote",
+            "allUsed": "Todos os {used} Baús personalizados de materiais de avanço de mascote que tem são usados: {serums} para Soros fortalecedores, {potions} para Poções energizantes, {manuals} para Manuais de domesticação.",
+            "used": "{used} dos seus {held} Baús personalizados de materiais de avanço de mascote são usados: {serums} para Soros fortalecedores, {potions} para Poções energizantes, {manuals} para Manuais de domesticação."
         }
     }
 }

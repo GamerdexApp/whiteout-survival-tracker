@@ -27,8 +27,10 @@
     },
     "view": {
         "subline": "{categories} kategoride {items} öğe",
-        "sublineInCategory": "{categories} kategoride {items} öğe · {category} içinde {inCategory}",
-        "unsaved": "Kaydedilmedi",
+        "coreSubline": "{chief} · Kaynak miktarları ve sırt çantası yığınları",
+        "tabsLabel": "Kaynak görünümleri",
+        "coreTab": "Temel Kaynaklar",
+        "allTab": "Tüm eşyalar",
         "shortages": "Planlayıcı hedeflerinde eksik: {names}.",
         "shortagesLink": "Bina planını aç",
         "show": {
@@ -78,6 +80,52 @@
             "setToZero": "0 yapıldı: {name}",
             "savedTitle": "Sayılar kaydedildi",
             "savedMessage": "{count, plural, one {{amount} sayı} other {{amount} sayı}} değişti."
+        },
+        "totals": {
+            "loose": "Dağınık",
+            "packs": "Paketler",
+            "securedPacks": "Güvenli paketler",
+            "anyTitle": "Herhangi (sandıklar)",
+            "commonSigils": "Ortak mühürler",
+            "books": "Kitaplar",
+            "affinity": "Yakınlık"
+        }
+    },
+    "core": {
+        "resourcesSection": "Kaynaklar",
+        "counts": "Kaynak miktarı",
+        "backpack": "Sırt çantası",
+        "secured": "{name} (Güvenli)",
+        "level": "Sv. {level}",
+        "customChests": "Özel Kaynak Sandıkları",
+        "customSecuredChests": "Özel Güvenli Kaynak Sandıkları",
+        "fireCrystalSection": "Ateş Kristali",
+        "speedupsSection": "Hızlandırmalar",
+        "expertsSection": "Uzmanlar",
+        "expertSigilsRow": "Uzman Mühürleri",
+        "affinityGiftsRow": "Yakınlık hediyeleri",
+        "commonExpertRow": "Ortak mühürler ve kitaplar",
+        "petsSection": "Evcil Hayvanlar",
+        "petAdvancementRow": "İlerleme malzemeleri",
+        "petFoodAndMarksRow": "Yem ve Vahşi İşaretler",
+        "heroGearSection": "Kahraman Teçhizatı",
+        "heroGearMaterialsRow": "Yükseltme malzemeleri",
+        "heroGearRow": "Teçhizat ve teçhizat sandıkları",
+        "chiefGearSection": "Şef Teçhizatı ve Tılsımlar",
+        "chiefGearRow": "Şef Teçhizatı",
+        "chiefCharmRow": "Şef Tılsımları",
+        "chiefChestsRow": "Teçhizat ve tılsım sandıkları",
+        "heroShards": {
+            "section": "Kahraman Parçaları",
+            "showCompleted": "Tamamlanan kahramanları göster",
+            "hintHidden": "Tamamlanan kahramanlar, parçalar ve kılavuzlar gizli: {count}",
+            "hintShown": "Tamamlanan kahramanlar, parçalar ve kılavuzlar gösteriliyor",
+            "allCompleted": "Açılan tüm kahramanların bütün yıldızları var. Görmek için anahtarı aç.",
+            "generation": "Nesil {generation}",
+            "shardName": "{name} Parçası",
+            "generalShards": "Genel parçalar",
+            "expeditionManuals": "Sefer yetenek kılavuzları",
+            "explorationManuals": "Keşif yetenek kılavuzları"
         }
     },
     "planStock": {

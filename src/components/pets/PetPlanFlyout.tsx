@@ -6,9 +6,10 @@ import { LuPlus } from "react-icons/lu";
 import type { Playthrough } from "@/types/app";
 import { formatDateTime, formatDecimal, formatNumber } from "@/lib/format";
 import { exportSpecOf, petPlanScores } from "@/service/petExport";
-import type { PetGoals, PetPlanResult, PetPlanRow, PetView } from "@/service/pets";
+import type { ChestUse, PetGoals, PetPlanResult, PetPlanRow, PetView } from "@/service/pets";
 import {
 	buildPetViews,
+	chestUseOf,
 	initialPetGoals,
 	isAdvanceLevel,
 	petPlanChecks,
@@ -18,7 +19,13 @@ import {
 	withGoalLevel,
 } from "@/service/pets";
 import { findItem } from "@/data/game/items";
-import { PLAN_ITEM_IDS } from "@/data/game/pets";
+import {
+	ADVANCEMENT_CHEST_ID,
+	ENERGIZING_POTION_ID,
+	PLAN_ITEM_IDS,
+	STRENGTHENING_SERUM_ID,
+	TAMING_MANUAL_ID,
+} from "@/data/game/pets";
 import { ExportToEventFlyout } from "@/comps/export/ExportToEventFlyout";
 import { PlanStockCheck } from "@/comps/queues/PlanStockCheck";
 import { Badge } from "@/comps/ui/Badge";
@@ -27,6 +34,7 @@ import { Card } from "@/comps/ui/Card";
 import { Flyout } from "@/comps/ui/Flyout";
 import { ItemIcon } from "@/comps/ui/ItemIcon";
 import { Note } from "@/comps/ui/Note";
+import { PlanFooter } from "@/comps/ui/PlanFooter";
 import { SectionLabel } from "@/comps/ui/SectionLabel";
 import { Select } from "@/comps/ui/Select";
 import { PetNumberField } from "./PetNumberField";
@@ -60,27 +68,21 @@ export function PetPlanFlyout({ open, chief, onClose, onSave }: PetPlanFlyoutPro
 			title={t("title")}
 			description={t("description")}
 			footer={
-				<>
-					<span
-						role="status"
-						className="border-line bg-surface text-muted me-auto inline-flex h-8 items-center gap-2 rounded-full border-[1.5px] px-3 font-mono text-xs"
-					>
-						<span aria-hidden="true" className="bg-kept size-1.5 rounded-full" />
-						{savedAt ? t("saved", { date: formatDateTime(savedAt) }) : t("notSavedYet")}
-					</span>
-					<Button onClick={onClose}>{t("close")}</Button>
-					<Button
-						variant="ghost"
-						disabled={!canExport}
-						title={canExport ? undefined : t("exportNothing")}
-						onClick={() => setExporting(true)}
-					>
-						{t("exportButton")}
-					</Button>
-					<Button variant="primary" onClick={() => onSave(goals)}>
-						{t("save")}
-					</Button>
-				</>
+				<PlanFooter
+					savedText={
+						savedAt ? t("saved", { date: formatDateTime(savedAt) }) : t("notSavedYet")
+					}
+					closeLabel={t("close")}
+					onClose={onClose}
+					exportAction={{
+						disabled: !canExport,
+						title: canExport ? undefined : t("exportNothing"),
+						onClick: () => setExporting(true),
+						label: t("exportButton"),
+					}}
+					saveLabel={t("save")}
+					onSave={() => onSave(goals)}
+				/>
 			}
 		>
 			<PlanBody chief={chief} goals={goals} plan={plan} onGoalsChange={setGoals} />
@@ -108,6 +110,7 @@ function PlanBody({
 	const t = useTranslations("pets.plan");
 	const views = useMemo(() => buildPetViews(chief), [chief]);
 	const addable = views.filter((view) => view.unlocked && !goals[view.pet.id]);
+	const chestUse = chestUseOf(plan, chief);
 
 	return (
 		<>
@@ -137,7 +140,18 @@ function PlanBody({
 			) : (
 				<>
 					<PlanStockCheck checks={petPlanChecks(plan, chief)} timeNote="" />
-					<PlanResult plan={plan} />
+					{chestUse.used > 0 && (
+						<Note>
+							{t(chestUse.fullyUsed ? "chest.allUsed" : "chest.used", {
+								used: formatNumber(chestUse.used),
+								held: formatNumber(chestUse.held),
+								serums: formatNumber(chestUse.chestsFor[STRENGTHENING_SERUM_ID]),
+								potions: formatNumber(chestUse.chestsFor[ENERGIZING_POTION_ID]),
+								manuals: formatNumber(chestUse.chestsFor[TAMING_MANUAL_ID]),
+							})}
+						</Note>
+					)}
+					<PlanResult plan={plan} chestUse={chestUse} />
 				</>
 			)}
 		</>
@@ -270,7 +284,7 @@ function PetBlock({
 
 const EVENT_KEYS = ["svs", "allianceShowdown", "kingOfIcefield"] as const;
 
-function PlanResult({ plan }: { plan: PetPlanResult }) {
+function PlanResult({ plan, chestUse }: { plan: PetPlanResult; chestUse: ChestUse }) {
 	const t = useTranslations("pets.plan.result");
 	const { total } = plan;
 	const unknown = t("unknown");
@@ -304,6 +318,18 @@ function PlanResult({ plan }: { plan: PetPlanResult }) {
 						</div>
 					);
 				})}
+				{chestUse.used > 0 && (
+					<div className="border-line flex min-h-9 items-center gap-2 border-t-[1.5px] py-1">
+						<ItemIcon src={findItem(ADVANCEMENT_CHEST_ID)?.img} size={24} />
+						<span className="flex-1">
+							{findItem(ADVANCEMENT_CHEST_ID)?.name ?? ADVANCEMENT_CHEST_ID}
+						</span>
+						<span className="text-muted font-mono text-xs">
+							{t("chestOf", { held: formatNumber(chestUse.held) })}
+						</span>
+						<span className="font-mono">{formatNumber(chestUse.used)}</span>
+					</div>
+				)}
 			</div>
 			<div className="flex flex-col">
 				<SectionLabel className="text-muted pb-1">{t("byPet")}</SectionLabel>

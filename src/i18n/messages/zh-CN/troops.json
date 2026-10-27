@@ -59,8 +59,7 @@
             "button": "导出到核心活动",
             "emptyHint": "请先添加训练，再导出。",
             "computed": "由应用计算。",
-            "trainedGroup": "训练的部队",
-            "speedupGroup": "加速分钟数",
+            "trainedGroup": "用于部队和加速",
             "trainedTier": "已训练{tier}阶部队",
             "speedupMinutes": "已用训练加速分钟数",
             "promoted": "已晋升的部队",
@@ -130,7 +129,7 @@
         "stock": {
             "name": "训练加速",
             "minutesUnit": "分",
-            "note": "你的库存：训练{training}分，通用{general}分。通用加速也可用于训练。加速未覆盖的训练按正常时间完成，因此只会用到你持有的加速：{used}分。"
+            "note": "你的库存：训练 {training} 分钟，已使用通用 {general} 分钟。只计入下方设置的通用加速比例。加速未覆盖的训练按正常时间完成，所以只使用你持有的加速：{used} 分钟。"
         },
         "result": {
             "title": "结果",

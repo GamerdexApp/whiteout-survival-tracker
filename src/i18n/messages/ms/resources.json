@@ -27,8 +27,10 @@
     },
     "view": {
         "subline": "{items} item dalam {categories} kategori",
-        "sublineInCategory": "{items} item dalam {categories} kategori · {inCategory} dalam {category}",
-        "unsaved": "Belum disimpan",
+        "coreSubline": "{chief} · Kiraan sumber dan timbunan beg galas",
+        "tabsLabel": "Paparan sumber",
+        "coreTab": "Sumber Teras",
+        "allTab": "Semua item",
         "shortages": "Matlamat perancang kurang {names}.",
         "shortagesLink": "Buka pelan Bangunan",
         "show": {
@@ -78,6 +80,52 @@
             "setToZero": "{name} ditetapkan ke 0",
             "savedTitle": "Bilangan disimpan",
             "savedMessage": "{count, plural, other {{amount} bilangan}} berubah."
+        },
+        "totals": {
+            "loose": "Longgar",
+            "packs": "Pek",
+            "securedPacks": "Pek selamat",
+            "anyTitle": "Mana-mana (peti)",
+            "commonSigils": "Sigil biasa",
+            "books": "Buku",
+            "affinity": "Afiniti"
+        }
+    },
+    "core": {
+        "resourcesSection": "Sumber",
+        "counts": "Kiraan sumber",
+        "backpack": "Beg galas",
+        "secured": "{name} (Selamat)",
+        "level": "Tahap {level}",
+        "customChests": "Peti Sumber Tersuai",
+        "customSecuredChests": "Peti Sumber Selamat Tersuai",
+        "fireCrystalSection": "Kristal Api",
+        "speedupsSection": "Pecutan",
+        "expertsSection": "Pakar",
+        "expertSigilsRow": "Sigil Pakar",
+        "affinityGiftsRow": "Hadiah afiniti",
+        "commonExpertRow": "Sigil biasa dan buku",
+        "petsSection": "Haiwan Peliharaan",
+        "petAdvancementRow": "Bahan kemajuan",
+        "petFoodAndMarksRow": "Makanan dan Tanda Liar",
+        "heroGearSection": "Gear Wira",
+        "heroGearMaterialsRow": "Bahan peningkatan",
+        "heroGearRow": "Gear dan peti gear",
+        "chiefGearSection": "Gear dan Azimat Ketua",
+        "chiefGearRow": "Gear Ketua",
+        "chiefCharmRow": "Azimat Ketua",
+        "chiefChestsRow": "Peti gear dan azimat",
+        "heroShards": {
+            "section": "Serpihan Wira",
+            "showCompleted": "Tunjukkan wira selesai",
+            "hintHidden": "Wira, serpihan dan manual selesai disembunyikan: {count}",
+            "hintShown": "Menunjukkan wira, serpihan dan manual selesai",
+            "allCompleted": "Semua wira yang dibuka mempunyai semua bintang. Hidupkan suis untuk melihatnya.",
+            "generation": "Gen {generation}",
+            "shardName": "Serpihan {name}",
+            "generalShards": "Serpihan am",
+            "expeditionManuals": "Manual kemahiran ekspedisi",
+            "explorationManuals": "Manual kemahiran penjelajahan"
         }
     },
     "planStock": {

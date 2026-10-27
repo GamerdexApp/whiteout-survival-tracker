@@ -1,6 +1,12 @@
 import type { Playthrough } from "@/types/app";
-import { MAX_VIP_LEVEL, vipLevelAtXp, vipLevels } from "@/data/game/vip";
+import {
+  MAX_VIP_LEVEL,
+  vipLevelAtXp,
+  vipLevels,
+  vipSignInPoints,
+} from "@/data/game/vip";
 import type { VipBonus } from "@/data/game/vip";
+import { utcDayBefore, utcDayOf } from "./utcDay";
 
 const cumulativeXp = vipLevels.reduce<number[]>(
   (totals, level) => [...totals, (totals.at(-1) ?? 0) + level.xpRequired],
@@ -117,4 +123,73 @@ export const vipRows = (chief: Playthrough): VipRow[] => {
 export const vipBuffInputs = (chief: Playthrough): { vipLevel?: number } => {
   const level = vipLevelOf(chief);
   return level === undefined || level < 1 ? {} : { vipLevel: level };
+};
+
+export interface VipSignIn {
+  /** The streak day that the next sign-in counts, or the streak day already counted today. */
+  streak: number;
+  /** The XP of that streak day. */
+  points: number;
+  claimedToday: boolean;
+  /** The XP of the sign-in of the next day. */
+  tomorrowPoints: number;
+}
+
+const streakDayOf = (
+  last: { streak: number; day: string } | undefined,
+  today: string,
+) => {
+  if (last === undefined) return 1;
+  if (last.day === today) return last.streak;
+  return last.day === utcDayBefore(today) ? last.streak + 1 : 1;
+};
+
+export const vipSignInOf = (chief: Playthrough, now: number): VipSignIn => {
+  const today = utcDayOf(new Date(now));
+  const streak = streakDayOf(chief.vip?.signIn, today);
+  return {
+    streak,
+    points: vipSignInPoints(streak),
+    claimedToday: chief.vip?.signIn?.day === today,
+    tomorrowPoints: vipSignInPoints(streak + 1),
+  };
+};
+
+/** Adds the XP of the next sign-in and counts the day. The chief is unchanged when it is already counted or has no XP. */
+export const withVipSignIn = (chief: Playthrough, at: Date): Playthrough => {
+  const totalXp = totalXpOf(chief);
+  const signIn = vipSignInOf(chief, at.getTime());
+  if (totalXp === undefined || signIn.claimedToday) return chief;
+  const added = withVipXp(chief, totalXp + signIn.points);
+  return {
+    ...added,
+    vip: { ...added.vip, signIn: { streak: signIn.streak, day: utcDayOf(at) } },
+  };
+};
+
+export const MAX_STREAK_DAY = 9999;
+
+const signInOfStreakDay = (day: number, claimed: boolean, today: string) => {
+  if (claimed) return { streak: day, day: today };
+  return day > 1 ? { streak: day - 1, day: utcDayBefore(today) } : undefined;
+};
+
+/**
+ * Sets the streak day of today: the day that the sign-in counted when it is already claimed, or the
+ * day that the next sign-in counts. It does not change the XP.
+ */
+export const withVipStreakDay = (
+  chief: Playthrough,
+  streakDay: number,
+  at: Date,
+): Playthrough => {
+  const day = Math.min(MAX_STREAK_DAY, Math.max(1, Math.trunc(streakDay)));
+  const claimed = vipSignInOf(chief, at.getTime()).claimedToday;
+  return {
+    ...chief,
+    vip: {
+      ...chief.vip,
+      signIn: signInOfStreakDay(day, claimed, utcDayOf(at)),
+    },
+  };
 };

@@ -3,17 +3,10 @@ import { findExpert } from "@/data/game/experts";
 import { buildExpertViews } from "./experts";
 import { countOf, withTroopCount } from "./troops";
 import { highestTierOf } from "./troops";
+import { utcDayOf } from "./utcDay";
 
 const EXPERT_ID = "romulus";
 const SKILL_NAME = "Call of War";
-const MS_PER_DAY = 86_400_000;
-
-export const utcDayOf = (at: Date) => at.toISOString().slice(0, 10);
-
-/** The milliseconds until the next UTC midnight, when a claim becomes free again. */
-export const msUntilNextUtcDay = (now: number) =>
-  MS_PER_DAY - (now % MS_PER_DAY);
-
 export interface CallOfWar {
   troops: number;
   skillLevel: number;

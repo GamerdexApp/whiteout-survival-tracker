@@ -27,8 +27,10 @@
     },
     "view": {
         "subline": "{items} عنصر في {categories} فئة",
-        "sublineInCategory": "{items} عنصر في {categories} فئة · {inCategory} في {category}",
-        "unsaved": "غير محفوظ",
+        "coreSubline": "{chief} · كميات الموارد وحزم الحقيبة",
+        "tabsLabel": "عروض الموارد",
+        "coreTab": "الموارد الأساسية",
+        "allTab": "كل العناصر",
         "shortages": "ينقص {names} لإتمام أهداف المخطِّط.",
         "shortagesLink": "فتح خطة المباني",
         "show": {
@@ -78,6 +80,52 @@
             "setToZero": "تم ضبط {name} على 0",
             "savedTitle": "تم حفظ الأعداد",
             "savedMessage": "تغيّر {count, plural, zero {{amount} عدد} one {{amount} عدد} two {{amount} عددان} few {{amount} أعداد} many {{amount} عددًا} other {{amount} عدد}}."
+        },
+        "totals": {
+            "loose": "منفصل",
+            "packs": "حزم",
+            "securedPacks": "حزم مؤمّنة",
+            "anyTitle": "أي (صناديق)",
+            "commonSigils": "الأختام العامة",
+            "books": "الكتب",
+            "affinity": "الألفة"
+        }
+    },
+    "core": {
+        "resourcesSection": "الموارد",
+        "counts": "كمية الموارد",
+        "backpack": "الحقيبة",
+        "secured": "{name} (مؤمّن)",
+        "level": "مستوى {level}",
+        "customChests": "صناديق الموارد المخصصة",
+        "customSecuredChests": "صناديق الموارد المؤمّنة المخصصة",
+        "fireCrystalSection": "بلورة النار",
+        "speedupsSection": "التسريعات",
+        "expertsSection": "الخبراء",
+        "expertSigilsRow": "أختام الخبراء",
+        "affinityGiftsRow": "هدايا الألفة",
+        "commonExpertRow": "الأختام العامة والكتب",
+        "petsSection": "الحيوانات الأليفة",
+        "petAdvancementRow": "مواد الترقية",
+        "petFoodAndMarksRow": "الطعام وعلامات البرية",
+        "heroGearSection": "معدات الأبطال",
+        "heroGearMaterialsRow": "مواد الترقية",
+        "heroGearRow": "المعدات وصناديق المعدات",
+        "chiefGearSection": "معدات وتمائم الزعيم",
+        "chiefGearRow": "معدات الزعيم",
+        "chiefCharmRow": "تمائم الزعيم",
+        "chiefChestsRow": "صناديق المعدات والتمائم",
+        "heroShards": {
+            "section": "شظايا الأبطال",
+            "showCompleted": "إظهار الأبطال المكتملين",
+            "hintHidden": "الأبطال والشظايا والكتيبات المكتملة مخفية: {count}",
+            "hintShown": "عرض الأبطال والشظايا والكتيبات المكتملة",
+            "allCompleted": "كل الأبطال المفتوحين لديهم جميع النجوم. فعّل المفتاح لرؤيتهم.",
+            "generation": "الجيل {generation}",
+            "shardName": "شظية {name}",
+            "generalShards": "الشظايا العامة",
+            "expeditionManuals": "كتيبات مهارات الحملة",
+            "explorationManuals": "كتيبات مهارات الاستكشاف"
         }
     },
     "planStock": {

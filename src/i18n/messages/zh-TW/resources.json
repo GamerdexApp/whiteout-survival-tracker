@@ -27,8 +27,10 @@
     },
     "view": {
         "subline": "{categories} 個分類共 {items} 個道具",
-        "sublineInCategory": "{categories} 個分類共 {items} 個道具 · {category}有 {inCategory} 個",
-        "unsaved": "未儲存",
+        "coreSubline": "{chief} · 資源數量與背包堆疊",
+        "tabsLabel": "資源檢視",
+        "coreTab": "核心資源",
+        "allTab": "全部物品",
         "shortages": "規劃目標缺少{names}。",
         "shortagesLink": "開啟建築規劃",
         "show": {
@@ -78,6 +80,52 @@
             "setToZero": "{name}已設為 0",
             "savedTitle": "已儲存數量",
             "savedMessage": "已變更 {count, plural, other {{amount} 項數量}}。"
+        },
+        "totals": {
+            "loose": "散裝",
+            "packs": "禮包",
+            "securedPacks": "安全禮包",
+            "anyTitle": "任意（寶箱）",
+            "commonSigils": "通用印記",
+            "books": "書籍",
+            "affinity": "親密度"
+        }
+    },
+    "core": {
+        "resourcesSection": "資源",
+        "counts": "資源數量",
+        "backpack": "背包",
+        "secured": "{name}（安全）",
+        "level": "{level} 級",
+        "customChests": "自選資源寶箱",
+        "customSecuredChests": "自選安全資源寶箱",
+        "fireCrystalSection": "火晶",
+        "speedupsSection": "加速",
+        "expertsSection": "專家",
+        "expertSigilsRow": "專家印記",
+        "affinityGiftsRow": "親密度禮物",
+        "commonExpertRow": "通用印記和書籍",
+        "petsSection": "寵物",
+        "petAdvancementRow": "進階材料",
+        "petFoodAndMarksRow": "食物與野性印記",
+        "heroGearSection": "英雄裝備",
+        "heroGearMaterialsRow": "強化材料",
+        "heroGearRow": "裝備與裝備寶箱",
+        "chiefGearSection": "首領裝備與護符",
+        "chiefGearRow": "首領裝備",
+        "chiefCharmRow": "首領護符",
+        "chiefChestsRow": "裝備與護符寶箱",
+        "heroShards": {
+            "section": "英雄碎片",
+            "showCompleted": "顯示已完成的英雄",
+            "hintHidden": "已隱藏完成的英雄、碎片和手冊：{count}",
+            "hintShown": "正在顯示已完成的英雄、碎片和手冊",
+            "allCompleted": "所有已解鎖英雄都已滿星。開啟開關即可查看。",
+            "generation": "第 {generation} 世代",
+            "shardName": "{name}碎片",
+            "generalShards": "通用碎片",
+            "expeditionManuals": "遠征技能手冊",
+            "explorationManuals": "探索技能手冊"
         }
     },
     "planStock": {

@@ -11,12 +11,13 @@ import {
 	troopSpeedupStock,
 	troopsStockChecks,
 } from "@/service/troopsPlan";
-import type { TroopsPlanDraft } from "@/service/troopsPlan";
+import type { TroopsPlanDraft, TroopsPlanResult } from "@/service/troopsPlan";
 import { ExportToEventFlyout } from "@/comps/export/ExportToEventFlyout";
+import { GeneralSpeedupShare } from "@/comps/queues/GeneralSpeedupShare";
 import { PlanStockCheck } from "@/comps/queues/PlanStockCheck";
-import { Button } from "@/comps/ui/Button";
 import { Card } from "@/comps/ui/Card";
 import { Flyout } from "@/comps/ui/Flyout";
+import { PlanFooter } from "@/comps/ui/PlanFooter";
 import { AddTroop, CapacityAndSpeed, RunCard } from "./TroopsPlanControls";
 import { TroopsPlanResultCard } from "./TroopsPlanResult";
 
@@ -38,6 +39,10 @@ export function TroopsPlanFlyout({ open, chief, onClose, onSave }: TroopsPlanFly
 	}
 
 	const savedAt = chief.troopsPlan?.savedAt;
+	const result = useMemo(() => runTroopsPlan(chief, draft), [chief, draft]);
+	const spec = useMemo(() => exportSpecOf(draft, result), [draft, result]);
+	const canExport = hasExportLines(spec);
+	const [exporting, setExporting] = useState(false);
 
 	return (
 		<Flyout
@@ -46,27 +51,28 @@ export function TroopsPlanFlyout({ open, chief, onClose, onSave }: TroopsPlanFly
 			title={t("title")}
 			description={t("description")}
 			footer={
-				<>
-					{savedAt && (
-						<span className="border-line bg-surface text-muted inline-flex h-8 items-center gap-2 rounded-full border-[1.5px] px-3 font-mono text-xs max-lg:w-full lg:me-auto">
-							<span aria-hidden="true" className="bg-kept size-1.5 rounded-full" />
-							{t("saved", { date: formatDateTime(savedAt) })}
-						</span>
-					)}
-					<Button className="max-lg:flex-1" onClick={onClose}>
-						{t("close")}
-					</Button>
-					<Button
-						variant="primary"
-						className="max-lg:flex-2"
-						onClick={() => onSave(draft)}
-					>
-						{t("save")}
-					</Button>
-				</>
+				<PlanFooter
+					savedText={savedAt ? t("saved", { date: formatDateTime(savedAt) }) : undefined}
+					closeLabel={t("close")}
+					onClose={onClose}
+					exportAction={{
+						label: t("export.button"),
+						disabled: !canExport,
+						title: canExport ? undefined : t("export.emptyHint"),
+						onClick: () => setExporting(true),
+					}}
+					saveLabel={t("save")}
+					onSave={() => onSave(draft)}
+				/>
 			}
 		>
-			<PlanBody chief={chief} draft={draft} onDraftChange={setDraft} />
+			<PlanBody chief={chief} draft={draft} result={result} onDraftChange={setDraft} />
+			<ExportToEventFlyout
+				open={exporting}
+				chief={chief}
+				spec={spec}
+				onClose={() => setExporting(false)}
+			/>
 		</Flyout>
 	);
 }
@@ -74,17 +80,16 @@ export function TroopsPlanFlyout({ open, chief, onClose, onSave }: TroopsPlanFly
 function PlanBody({
 	chief,
 	draft,
+	result,
 	onDraftChange,
 }: {
 	chief: Playthrough;
 	draft: TroopsPlanDraft;
+	result: TroopsPlanResult;
 	onDraftChange: (draft: TroopsPlanDraft) => void;
 }) {
 	const t = useTranslations("troops.plan");
-	const result = useMemo(() => runTroopsPlan(chief, draft), [chief, draft]);
 	const stock = troopSpeedupStock(chief);
-	const spec = useMemo(() => exportSpecOf(draft, result), [draft, result]);
-	const [exporting, setExporting] = useState(false);
 
 	return (
 		<>
@@ -124,6 +129,7 @@ function PlanBody({
 			{draft.runs.length > 0 && (
 				<>
 					<PlanStockCheck
+						timeExtra={<GeneralSpeedupShare chief={chief} use="troops" />}
 						checks={troopsStockChecks(chief, result)}
 						timeNote={t("stock.note", {
 							training: formatNumber(stock.training),
@@ -131,18 +137,7 @@ function PlanBody({
 							used: formatNumber(result.speedupMinutesUsed),
 						})}
 					/>
-					<TroopsPlanResultCard
-						draft={draft}
-						result={result}
-						canExport={hasExportLines(spec)}
-						onExport={() => setExporting(true)}
-					/>
-					<ExportToEventFlyout
-						open={exporting}
-						chief={chief}
-						spec={spec}
-						onClose={() => setExporting(false)}
-					/>
+					<TroopsPlanResultCard draft={draft} result={result} />
 				</>
 			)}
 		</>

@@ -74,7 +74,6 @@
         "talentLevel": "المستوى {level} من {max}",
         "talentFollows": "تتبع {relationship}. {effect}",
         "power": "القوة {now} من {max}",
-        "derived": "مشتق",
         "notRecruitedHint": "غير مجنَّد. جنّد هذا الخبير في Tundra Trek ثم فعّل مجنَّد.",
         "recruitmentCost": "تكلفة التجنيد: {cost}",
         "maxPower": "أقصى قوة {max}",
@@ -85,7 +84,8 @@
         "skillCapped": "المستوى {next} يتطلب مستوى العلاقة {level}، مرتقٍ.",
         "sigilsOwned": "الأختام المملوكة",
         "sigilsOwnedLabel": "الأختام المملوكة لـ {expert}",
-        "sigilsHint": "العدد نفسه الموجود في صفحة الموارد."
+        "sigilsHint": "العدد نفسه الموجود في صفحة الموارد.",
+        "skillTotal": "المستوى {next} يحتاج إلى مجموع مستويات المهارات {total}. الآن {have}."
     },
     "filtersFlyout": {
         "title": "عوامل التصفية",
@@ -121,7 +121,8 @@
             "books": "Books of Knowledge",
             "sigils": "أختام الخبراء",
             "exp": "EXP المهارات",
-            "expReason": "لا توجد فعالية تحتسب نقاطًا لـ EXP المهارات."
+            "expReason": "لا توجد فعالية تحتسب نقاطًا لـ EXP المهارات.",
+            "learningSpeedups": "دقائق تسريع التعلّم"
         },
         "noExperts": "لا يوجد خبراء في الخطة بعد. أضف خبيرًا مجنَّدًا لتحديد أهدافه.",
         "add": {
@@ -129,7 +130,8 @@
             "selectLabel": "الخبير المراد إضافته",
             "button": "إضافة الخبير",
             "allIn": "كل الخبراء المجنَّدين موجودون في الخطة.",
-            "noneRecruited": "جنّد خبيرًا من الصفحة لتخطط له."
+            "noneRecruited": "جنّد خبيرًا من الصفحة لتخطط له.",
+            "option": "{name}، {count} ختم"
         },
         "block": {
             "remove": "إزالة",
@@ -146,7 +148,13 @@
             "affinityGoalLabel": "هدف ألفة {expert}",
             "skillGoalLabel": "هدف {skill} لدى {expert}",
             "advanceAtGoal": "الارتقاء عند المستوى {level}",
-            "advanceAtGoalLabel": "ارتقاء {expert} عند الهدف"
+            "advanceAtGoalLabel": "ارتقاء {expert} عند الهدف",
+            "sigils": "الأختام {count}",
+            "affinityNeeded": "الألفة المطلوبة {amount}",
+            "affinityNext": "المستوى التالي يحتاج {amount} ألفة",
+            "expNeeded": "الخبرة المطلوبة {amount}",
+            "advanceSigils": "{count} ختم",
+            "expHeldLearning": "الخبرة المتاحة {amount} (الحالية + جلسة التعلّم)"
         },
         "checks": {
             "affinity": "نقاط الألفة",
@@ -156,18 +164,17 @@
         "stock": {
             "sigils": "تحتاج الخطة إلى {total} ختمًا. أختام خبرائك تغطي {own} منها، لذا يجب أن يأتي {common} من Common Expert Sigils. كل ختم خبير تملكه يُحتسب لذلك الخبير فقط.",
             "books": "تحتاج الخطة إلى {amount} من Books of Knowledge لمستويات المهارات.",
-            "affinity": "تحتاج الخطة إلى {needed} نقطة ألفة. ما تملكه في بطاقات الخبراء يغطي {held}، فيبقى {left} للحصول عليه. لا تحتوي الحزمة على عنصر للألفة، لذا لا يُفحص شيء مقابل المخزون.",
+            "affinity": "تحتاج الخطة إلى {needed} نقطة ألفة. تغطي هدايا الألفة في صفحة الموارد والنقاط على بطاقات الخبراء {held}، لذا يبقى {left} للحصول عليه.",
             "learning": "تحتاج الخطة إلى {exp} من EXP المهارات. مهاراتك تحمل {held}، لذا يجب أن يأتي {left} من تسريعات التعلم. دقيقة تعلم واحدة تمنح {rate} EXP، أي {minutes} دقيقة."
         },
         "byExpert": {
             "title": "حسب الخبير",
             "sigils": "الأختام: المطلوب {needed}، مغطى بختم {name} لديك {own}، والباقي من Common Expert Sigils {common}",
-            "affinity": "الألفة: المطلوب {needed}، المتاح {held}، المتبقي للحصول عليه {left}",
+            "affinity": "الألفة: مطلوب {needed}، مغطّى {held}، يتبقى {left}",
             "exp": "EXP المهارات: المطلوب {needed}، المتاح {held}، المتبقي للحصول عليه {left}"
         },
         "result": {
             "title": "النتيجة",
-            "derived": "مشتق",
             "books": "Books of Knowledge",
             "sigils": "الأختام",
             "exp": "EXP المهارات",

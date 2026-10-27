@@ -4,13 +4,9 @@ import { useTranslations } from "next-intl";
 import type { Playthrough, TroopId } from "@/types/app";
 import { formatDuration, formatNumber } from "@/lib/format";
 import { useNow } from "@/lib/hooks/useNow";
-import {
-	callOfWarClaimedToday,
-	callOfWarOf,
-	callOfWarTierOf,
-	msUntilNextUtcDay,
-} from "@/service/troopCallOfWar";
+import { callOfWarClaimedToday, callOfWarOf, callOfWarTierOf } from "@/service/troopCallOfWar";
 import { TROOP_IDS } from "@/service/troops";
+import { msUntilNextUtcDay } from "@/service/utcDay";
 import { findTroop } from "@/data/game/troops";
 import { Button } from "@/comps/ui/Button";
 import { Card } from "@/comps/ui/Card";

@@ -59,5 +59,20 @@
             "unknown": "Desconhecido"
         },
         "levelName": "VIP {level}"
+    },
+    "signIn": {
+        "title": "Login diário",
+        "note": "O login diário dá mais XP a cada dia de uma sequência. A sequência termina se você perder um dia UTC, e cada dia começa às 00:00 UTC.",
+        "add": "Adicionar login diário",
+        "addHint": "Dia {streak} da sequência: {points} XP",
+        "claimed": "Login de hoje feito, no dia {streak} da sequência. Amanhã dá {points} XP, em {time}.",
+        "needXp": "Informe primeiro seu XP total ou seu nível VIP.",
+        "streakLabel": "Dia da sequência",
+        "streakHint": "O dia da sequência de hoje. Altere se sua sequência já estiver em andamento.",
+        "toast": {
+            "title": "Login adicionado",
+            "message": "{points} XP adicionados pelo dia {streak} da sequência.",
+            "undo": "Desfazer"
+        }
     }
 }

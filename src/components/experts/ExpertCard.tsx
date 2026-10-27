@@ -16,6 +16,7 @@ import {
 	relationshipNameOf,
 	skillCapOf,
 	skillExpNeededFor,
+	skillFloorOf,
 	skillGateOf,
 	skillGoalOf,
 	statNamesOf,
@@ -33,6 +34,7 @@ import { SectionLabel } from "@/comps/ui/SectionLabel";
 import { Switch } from "@/comps/ui/Switch";
 import { ValueStepper } from "@/comps/ui/ValueStepper";
 import { ExpertRow, GoalText, HeldInput } from "./ExpertRows";
+import { SkillGateText } from "./SkillGateText";
 
 interface ExpertCardProps {
 	view: ExpertView;
@@ -57,8 +59,12 @@ export function ExpertCard({ view, chief, onChange }: ExpertCardProps) {
 	const stats = joinNames(statNamesOf(expert));
 
 	return (
-		<li className="mb-3 break-inside-avoid">
-			<Card dimmed={!recruited} className="flex flex-col gap-3 p-3" data-locked={locked}>
+		<li>
+			<Card
+				dimmed={!recruited}
+				className="flex h-full flex-col gap-3 p-3"
+				data-locked={locked}
+			>
 				<div className="flex items-center gap-3">
 					<ItemIcon
 						src={expert.img}
@@ -277,7 +283,7 @@ function RecruitedBody({
 											skill: skill.name,
 										})}
 										value={skillLevel}
-										min={Math.min(1, skillCap)}
+										min={skillFloorOf(view, index)}
 										max={skillCap}
 										display={t("card.skillDisplay", {
 											level: formatNumber(skillLevel),
@@ -326,7 +332,9 @@ function RecruitedBody({
 							) : skillLevel === 0 ? (
 								<span className="text-muted font-mono text-xs">
 									{t("card.skillLocked", {
-										level: formatNumber(gate?.affinity ?? 0),
+										level: formatNumber(
+											gate?.kind === "affinity" ? gate.affinity : 0
+										),
 									})}
 								</span>
 							) : (
@@ -336,10 +344,7 @@ function RecruitedBody({
 							)}
 							{gate && skillLevel > 0 && (
 								<span className="text-muted font-mono text-xs">
-									{t("card.skillCapped", {
-										next: formatNumber(gate.level),
-										level: formatNumber(gate.affinity),
-									})}
+									<SkillGateText gate={gate} />
 								</span>
 							)}
 						</div>
@@ -374,7 +379,6 @@ function RecruitedBody({
 						max: formatNumber(power.max),
 					})}
 				</span>
-				<Badge tone="added">{t("card.derived")}</Badge>
 			</div>
 		</>
 	);

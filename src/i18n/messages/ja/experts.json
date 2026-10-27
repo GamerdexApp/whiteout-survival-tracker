@@ -74,7 +74,6 @@
         "talentLevel": "レベル{level} / {max}",
         "talentFollows": "{relationship}に連動します。{effect}。",
         "power": "戦力 {now} / {max}",
-        "derived": "算出値",
         "notRecruitedHint": "未採用です。Tundra Trekでこのエキスパートを採用してから、「採用済み」をオンにしてください。",
         "recruitmentCost": "採用コスト: {cost}",
         "maxPower": "最大戦力 {max}",
@@ -85,7 +84,8 @@
         "skillCapped": "レベル{next}には関係レベル{level}での昇格が必要です。",
         "sigilsOwned": "所持シジル",
         "sigilsOwnedLabel": "{expert}の所持シジル",
-        "sigilsHint": "資源ページのシジルと同じ数です。"
+        "sigilsHint": "資源ページのシジルと同じ数です。",
+        "skillTotal": "レベル{next}にはスキルレベルの合計{total}が必要です。現在{have}。"
     },
     "filtersFlyout": {
         "title": "フィルター",
@@ -121,7 +121,8 @@
             "books": "Books of Knowledge",
             "sigils": "エキスパートのシジル",
             "exp": "スキルEXP",
-            "expReason": "スキルEXPをポイント対象にするイベントはありません。"
+            "expReason": "スキルEXPをポイント対象にするイベントはありません。",
+            "learningSpeedups": "学習スピードアップの分数"
         },
         "noExperts": "プランにエキスパートがまだいません。採用済みのエキスパートを追加して、目標を設定してください。",
         "add": {
@@ -129,7 +130,8 @@
             "selectLabel": "追加するエキスパート",
             "button": "エキスパートを追加",
             "allIn": "採用済みのエキスパートはすべてプランに入っています。",
-            "noneRecruited": "プランするには、ページでエキスパートを採用してください。"
+            "noneRecruited": "プランするには、ページでエキスパートを採用してください。",
+            "option": "{name}、印章{count}個"
         },
         "block": {
             "remove": "削除",
@@ -146,7 +148,13 @@
             "affinityGoalLabel": "{expert}の親密度の目標",
             "skillGoalLabel": "{expert}の{skill}の目標",
             "advanceAtGoal": "レベル{level}で昇格",
-            "advanceAtGoalLabel": "{expert}を目標で昇格"
+            "advanceAtGoalLabel": "{expert}を目標で昇格",
+            "sigils": "印章 {count}",
+            "affinityNeeded": "必要な親密度 {amount}",
+            "affinityNext": "次のレベルには親密度{amount}が必要",
+            "expNeeded": "必要なEXP {amount}",
+            "advanceSigils": "印章{count}個",
+            "expHeldLearning": "利用可能なEXP {amount}（現在 + 学習セッション）"
         },
         "checks": {
             "affinity": "親密度ポイント",
@@ -156,18 +164,17 @@
         "stock": {
             "sigils": "プランにはシジルが{total}個必要です。エキスパート専用のシジルで{own}個を賄えるため、{common}個はCommon Expert Sigilsから用意する必要があります。所持しているエキスパート専用のシジルは、そのエキスパートにしか使えません。",
             "books": "プランにはスキルレベル用にBooks of Knowledgeが{amount}冊必要です。",
-            "affinity": "プランには親密度ポイントが{needed}必要です。エキスパートのカードで所持している分で{held}を賄えるため、あと{left}を入手する必要があります。パッケージに親密度のアイテムはないため、在庫との照合は行いません。",
+            "affinity": "プランには親密度が{needed}ポイント必要です。資源ページの親密度ギフトとエキスパートカードのポイントで{held}をまかなえるため、あと{left}ポイント必要です。",
             "learning": "プランにはスキルEXPが{exp}必要です。スキルの所持分は{held}のため、{left}は学習スピードアップで用意する必要があります。学習1分あたり{rate} EXPなので、{minutes}分になります。"
         },
         "byExpert": {
             "title": "エキスパート別",
             "sigils": "シジル: {needed}個必要、{name}のシジル{own}個で賄い、{common}個はCommon Expert Sigilsから用意",
-            "affinity": "親密度: {needed}必要、{held}所持、あと{left}を入手",
+            "affinity": "親密度: {needed}必要、{held}まかなえる、あと{left}を入手",
             "exp": "スキルEXP: {needed}必要、{held}所持、あと{left}を入手"
         },
         "result": {
             "title": "結果",
-            "derived": "算出値",
             "books": "Books of Knowledge",
             "sigils": "シジル",
             "exp": "スキルEXP",

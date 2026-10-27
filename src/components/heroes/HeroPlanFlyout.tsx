@@ -3,13 +3,16 @@
 import { useTranslations } from "next-intl";
 import { useMemo, useState } from "react";
 import { LuPlus, LuTrash2 } from "react-icons/lu";
-import type { HeroGoal, Playthrough } from "@/types/app";
+import type { HeroGoal, LuckyWheelPlan, Playthrough } from "@/types/app";
 import { formatDateTime, formatNumber } from "@/lib/format";
 import type { HeroPlanResult, HeroView } from "@/service/heroes";
 import {
 	buildHeroViews,
+	effectiveLuckyWheel,
 	formatStars,
+	hasEveryStar,
 	heroPlanChecks,
+	heroShardRarityOf,
 	initialHeroGoals,
 	MAX_STAR_POSITION,
 	runHeroPlan,
@@ -19,6 +22,7 @@ import {
 	startingGoalFor,
 } from "@/service/heroes";
 import { exportSpecOf } from "@/service/heroExport";
+import { ownedCount } from "@/service/inventory";
 import { MAX_SKILL_LEVEL, MAX_WEAPON_LEVEL, skillsOf } from "@/data/game/heroes";
 import { findItem } from "@/data/game/items";
 import { ExportToEventFlyout } from "@/comps/export/ExportToEventFlyout";
@@ -30,34 +34,55 @@ import { Flyout } from "@/comps/ui/Flyout";
 import { IconButton } from "@/comps/ui/IconButton";
 import { ItemIcon } from "@/comps/ui/ItemIcon";
 import { Note } from "@/comps/ui/Note";
+import { PlanFooter } from "@/comps/ui/PlanFooter";
 import { ScrollRegion } from "@/comps/ui/ScrollRegion";
 import { SectionLabel } from "@/comps/ui/SectionLabel";
-import { Select } from "@/comps/ui/Select";
 import { ValueStepper } from "@/comps/ui/ValueStepper";
+import { HeroPicker } from "./HeroPicker";
 import { HeroRow } from "./HeroRows";
+import { LuckyWheelCard } from "./LuckyWheelCard";
 
 interface HeroPlanFlyoutProps {
 	open: boolean;
 	chief: Playthrough;
 	focusHeroId: string | null;
 	onClose: () => void;
-	onSave: (goals: Record<string, HeroGoal>) => void;
+	onSave: (goals: Record<string, HeroGoal>, luckyWheel: LuckyWheelPlan | undefined) => void;
 }
 
 type Goals = Record<string, HeroGoal>;
+
+const initialWheel = (chief: Playthrough): LuckyWheelPlan =>
+	chief.heroesPlan?.luckyWheel ?? {
+		heroId: "",
+		spins: 0,
+		tokens: ownedCount(chief, "lucky-chip"),
+	};
+
+/** A wheel with no spins is not saved. */
+const savedWheelOf = (
+	chief: Playthrough,
+	goals: Goals,
+	wheel: LuckyWheelPlan
+): LuckyWheelPlan | undefined =>
+	wheel.spins === 0 ? undefined : effectiveLuckyWheel(chief, goals, wheel);
 
 export function HeroPlanFlyout({ open, chief, focusHeroId, onClose, onSave }: HeroPlanFlyoutProps) {
 	const t = useTranslations("heroes.plan");
 	const te = useTranslations("heroes.export");
 	const [wasOpen, setWasOpen] = useState(false);
 	const [goals, setGoals] = useState<Goals>({});
+	const [wheel, setWheel] = useState<LuckyWheelPlan>(() => initialWheel(chief));
 	const [exportOpen, setExportOpen] = useState(false);
-	const exportSpec = useMemo(() => exportSpecOf(runHeroPlan(chief, goals)), [chief, goals]);
+	const exportSpec = exportSpecOf(
+		runHeroPlan(chief, goals, effectiveLuckyWheel(chief, goals, wheel))
+	);
 	const nothingToExport = exportSpec.groups.length === 0;
 
 	if (open !== wasOpen) {
 		setWasOpen(open);
 		if (open) {
+			setWheel(initialWheel(chief));
 			const initial = initialHeroGoals(chief);
 			const focused = buildHeroViews(chief).find((view) => view.hero.id === focusHeroId);
 			setGoals(
@@ -77,29 +102,28 @@ export function HeroPlanFlyout({ open, chief, focusHeroId, onClose, onSave }: He
 			title={t("title")}
 			description={t("description")}
 			footer={
-				<>
-					{savedAt && (
-						<span className="border-line bg-surface text-muted me-auto inline-flex h-8 items-center gap-2 rounded-full border-[1.5px] px-3 font-mono text-xs">
-							<span aria-hidden="true" className="bg-kept size-1.5 rounded-full" />
-							{t("saved", { date: formatDateTime(savedAt) })}
-						</span>
-					)}
-					<Button onClick={onClose}>{t("close")}</Button>
-					<Button
-						variant="ghost"
-						disabled={nothingToExport}
-						title={nothingToExport ? te("nothing") : undefined}
-						onClick={() => setExportOpen(true)}
-					>
-						{te("button")}
-					</Button>
-					<Button variant="primary" onClick={() => onSave(goals)}>
-						{t("save")}
-					</Button>
-				</>
+				<PlanFooter
+					savedText={savedAt ? t("saved", { date: formatDateTime(savedAt) }) : undefined}
+					closeLabel={t("close")}
+					onClose={onClose}
+					exportAction={{
+						disabled: nothingToExport,
+						title: nothingToExport ? te("nothing") : undefined,
+						onClick: () => setExportOpen(true),
+						label: te("button"),
+					}}
+					saveLabel={t("save")}
+					onSave={() => onSave(goals, savedWheelOf(chief, goals, wheel))}
+				/>
 			}
 		>
-			<PlanBody chief={chief} goals={goals} onGoalsChange={setGoals} />
+			<PlanBody
+				chief={chief}
+				goals={goals}
+				onGoalsChange={setGoals}
+				wheel={wheel}
+				onWheelChange={setWheel}
+			/>
 			<ExportToEventFlyout
 				open={exportOpen}
 				chief={chief}
@@ -114,16 +138,22 @@ function PlanBody({
 	chief,
 	goals,
 	onGoalsChange,
+	wheel,
+	onWheelChange,
 }: {
 	chief: Playthrough;
 	goals: Goals;
 	onGoalsChange: (goals: Goals) => void;
+	wheel: LuckyWheelPlan;
+	onWheelChange: (wheel: LuckyWheelPlan) => void;
 }) {
 	const t = useTranslations("heroes.plan");
 	const views = useMemo(() => buildHeroViews(chief), [chief]);
-	const plan = useMemo(() => runHeroPlan(chief, goals), [chief, goals]);
 	const planned = views.filter((view) => view.owned && goals[view.hero.id]);
-	const addable = views.filter((view) => view.owned && !goals[view.hero.id]);
+	const plan = runHeroPlan(chief, goals, effectiveLuckyWheel(chief, goals, wheel));
+	const addable = views.filter(
+		(view) => view.owned && !goals[view.hero.id] && !hasEveryStar(view)
+	);
 
 	return (
 		<>
@@ -154,6 +184,7 @@ function PlanBody({
 					/>
 				))
 			)}
+			<LuckyWheelCard plannedViews={planned} wheel={wheel} onChange={onWheelChange} />
 			{plan.unmet.length > 0 && <UnmetCard plan={plan} />}
 			{plan.rows.length > 0 && (
 				<>
@@ -177,19 +208,14 @@ function AddHero({ addable, onAdd }: { addable: HeroView[]; onAdd: (view: HeroVi
 			{!selected ? (
 				<p className="text-muted">{t("allIn")}</p>
 			) : (
-				<div className="flex gap-3">
-					<div className="flex-1">
-						<Select
-							aria-label={t("selectLabel")}
-							value={selected.hero.id}
-							onChange={(event) => setSelectedId(event.target.value)}
-						>
-							{addable.map((view) => (
-								<option key={view.hero.id} value={view.hero.id}>
-									{view.hero.name}
-								</option>
-							))}
-						</Select>
+				<div className="flex flex-col gap-3 sm:flex-row">
+					<div className="min-w-0 flex-1">
+						<HeroPicker
+							label={t("selectLabel")}
+							views={addable}
+							selectedId={selected.hero.id}
+							onChange={setSelectedId}
+						/>
 					</div>
 					<Button variant="primary" onClick={() => onAdd(selected)}>
 						<LuPlus size={16} aria-hidden="true" />
@@ -344,6 +370,7 @@ const TABLE_HEADS = ["hero", "starSteps", "skillLevels", "shards", "widgets"] as
 
 function PlanResult({ plan }: { plan: HeroPlanResult }) {
 	const t = useTranslations("heroes.plan");
+	const te = useTranslations("heroes.export");
 	const steps = plan.starSteps + plan.skillLevels + plan.weaponLevels;
 	const resources = [...plan.resources.entries()];
 
@@ -353,11 +380,16 @@ function PlanResult({ plan }: { plan: HeroPlanResult }) {
 			<div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
 				{resources.map(([itemId, amount]) => {
 					const item = findItem(itemId);
+					const shardRarity = heroShardRarityOf(itemId);
 					return (
 						<div key={itemId} className="flex items-start gap-2">
 							<ItemIcon src={item?.img} size={24} />
 							<div className="flex flex-col">
-								<span className="text-muted text-xs">{item?.name ?? itemId}</span>
+								<span className="text-muted text-xs">
+									{shardRarity
+										? te(`shards.${shardRarity}`)
+										: (item?.name ?? itemId)}
+								</span>
 								<span className="font-mono font-semibold">
 									{formatNumber(amount)}
 								</span>

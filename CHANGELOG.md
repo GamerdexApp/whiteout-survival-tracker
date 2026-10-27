@@ -7,6 +7,40 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.0] - 2026-10-27
+
+### Added
+
+- Resources: the Resources category on the All items tab shows a total card for Meat, Wood, Coal and Iron, and an Any card with the most each resource can reach from the Custom Resource chests; the Experts category shows cards for the Common Sigils, Books and total Affinity from the gifts
+- Resources: a Core Resources tab with a collapsible Resources section for the Meat, Wood, Coal and Iron counts and the backpack stacks, including the Secured packs and the Custom Resource chests. It saves to the same counts as the All items tab, which keeps the earlier Resources view; a Fire Crystal section in one compact row holds the Fire Crystal, Fire Crystal Shard and Refined Fire Crystal counts; a Speedups section has one row per speedup type with a count for each duration; an Experts section holds the Expert Sigils, the affinity gifts, and the Common Expert Sigil and Book of Knowledge counts; a Pets section holds the advancement materials with the Pet Advancement Materials Custom Chest, and the pet food with the Wild Marks; a Hero Gear section holds the Enhancement XP Components, Essence Stones and Mithril, plus Mythic Hero Gear and the hero gear chests; a Chief Gear and Charms section holds the Chief Gear materials, the Chief Charm materials, and a row for their chests; a Hero Shards section lists the shard count of each hero up to the unlocked generation, and hides heroes with every star unless a switch is on; a General shards row shows the Rare, Epic and Mythic General Hero Shards, and hides the Rare or Epic one once every hero of that rarity has every star; rows for the Expedition and Exploration skill manuals, which hide once every hero of that rarity has maxed skills in that branch
+- Daybreak Island: a Life Essence card sets the Life Essence count. It saves to the same count as the Resources page
+- Heroes Plan: a Lucky Wheel card sets the hero, the spins (up to 150) and the starting tokens. It adds the estimated shards to that hero in the plan and counts the gems the spins cost in the stock check. Export to Core Events adds the spins on the same day as the hero shards
+- VIP: a daily sign-in button that adds the XP of the streak day, with Undo. The streak grows each UTC day and starts again after a missed day, and a field to set the streak day of today
+
+### Changed
+
+- The Derived and Estimate badges and labels are removed from the Experts, Tech, Tundra Album, Skins, Heroes, Chief Gear, Core Events and Hero Upgrade calculator pages. The notes that explain an estimate stay
+- Pets and Experts: the cards sit in a grid again, in rows read left to right, not in staggered columns
+- Game data package 0.9.0: new Resources, Chief Material and Hero Gear Material item categories, a Shard item for every hero, the Enhancement XP Component split into the 10 and the 100, and new pieces and puzzle pictures in the Tundra Album
+- Experts Plan: the expert list in Add an expert and the expert card show the sigil count of the expert. The card also shows the sigils an advancement costs next to the advance switch, the affinity needed for the goal or the next level, and the EXP needed for the chosen skill levels. The EXP available of a skill adds the learning session that runs now
+- Heroes Plan: the hero list in Add a hero shows a dot for the rarity (blue Rare, purple Epic, gold Mythic) and badges for the generation and the class
+- The Wiki lists Justus. The Experts page leaves him out until the package has his stat bonus
+
+### Fixed
+
+- Experts Plan: Export to Core Events adds the learning speedup minutes the plan uses, on the same event day as the books and the sigils
+- Core Events: the expert level and the Read only badge on the SvS and Alliance Showdown bonus card stay on one line
+- Flyouts and dialogs: the footer no longer scrolls with the page. Hidden screen reader text, such as the label of a radio group in the Troops plan, no longer stretches the panel past the screen
+- Troops Plan: Export to Core Events puts the troops trained and the training speedup minutes on one event day, so one day is picked for both
+- Troops Plan: the Export to Core Events button is in the footer with the other plan actions, not in the result card
+- Pets Plan: the plan counts the Strengthening Serum, which the calculator already returned. The Pet Advancement Materials Custom Chests you hold fill what the plan is short of, Serums first, then Energizing Potions, then Taming Manuals. The rows say how much a chest covers, and a note says how many held chests are used and for which item, and when every chest is used. The result lists the chests used
+- Experts: the page and the plan enforce the affinity level and the total skill level that each skill level needs, from the package. A skill stops at the level it can take now and says why, and a skill cannot drop below the level that other skill levels depend on
+- Plans: the general speedups no longer count in full in every plan. The time check of the Buildings, Research, Troops and Experts plans has a field for the percent of the general speedup minutes the plan uses. It starts at 0 and the four plans together cannot pass 100%. The speedup count adds the applied general minutes
+- Experts Plan: the available affinity counts the affinity gifts on the Resources page, so it no longer shows 0 when you hold gifts. Available affinity shows everything you hold, also when the plan needs none. The "still to get" lines share the gifts across the planned experts in order, after the points saved on each expert card
+- Heroes Plan: Add a hero no longer lists a hero who has every star
+- Heroes Plan: the result names the shards by rarity, such as Epic Hero Shards, because the amount adds the hero shards and the general shards
+- Buildings Plan: Add a building no longer lists a building that is at its final level, such as the Research Center at level 30. Buildings that the server age has not unlocked stay in the list, greyed out
+
 ## [0.1.0] - 2026-10-18
 
 First release.

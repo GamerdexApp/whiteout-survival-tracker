@@ -74,7 +74,6 @@
         "talentLevel": "Tahap {level} daripada {max}",
         "talentFollows": "Mengikut {relationship}. {effect}.",
         "power": "Kuasa {now} daripada {max}",
-        "derived": "Diperoleh",
         "notRecruitedHint": "Tidak direkrut. Rekrut pakar ini dalam Tundra Trek, kemudian hidupkan Direkrut.",
         "recruitmentCost": "Kos rekrut: {cost}",
         "maxPower": "Kuasa maks {max}",
@@ -85,7 +84,8 @@
         "skillCapped": "Tahap {next} perlu tahap hubungan {level}, naik pangkat.",
         "sigilsOwned": "Sigil dimiliki",
         "sigilsOwnedLabel": "Sigil {expert} dimiliki",
-        "sigilsHint": "Bilangan yang sama dengan sigil pada halaman Sumber."
+        "sigilsHint": "Bilangan yang sama dengan sigil pada halaman Sumber.",
+        "skillTotal": "Tahap {next} memerlukan jumlah tahap kemahiran {total}. Kini {have}."
     },
     "filtersFlyout": {
         "title": "Penapis",
@@ -121,7 +121,8 @@
             "books": "Books of Knowledge",
             "sigils": "Sigil pakar",
             "exp": "EXP kemahiran",
-            "expReason": "Tiada acara yang memarkahkan EXP kemahiran."
+            "expReason": "Tiada acara yang memarkahkan EXP kemahiran.",
+            "learningSpeedups": "Minit pecutan pembelajaran"
         },
         "noExperts": "Belum ada pakar dalam pelan. Tambah pakar yang direkrut untuk menetapkan matlamatnya.",
         "add": {
@@ -129,7 +130,8 @@
             "selectLabel": "Pakar untuk ditambah",
             "button": "Tambah pakar",
             "allIn": "Setiap pakar yang direkrut sudah ada dalam pelan.",
-            "noneRecruited": "Rekrut pakar pada halaman untuk merancangnya."
+            "noneRecruited": "Rekrut pakar pada halaman untuk merancangnya.",
+            "option": "{name}, {count} sigil"
         },
         "block": {
             "remove": "Buang",
@@ -146,7 +148,13 @@
             "affinityGoalLabel": "Matlamat afiniti {expert}",
             "skillGoalLabel": "Matlamat {skill} {expert}",
             "advanceAtGoal": "Naik pangkat pada tahap {level}",
-            "advanceAtGoalLabel": "{expert} naik pangkat pada matlamat"
+            "advanceAtGoalLabel": "{expert} naik pangkat pada matlamat",
+            "sigils": "Sigil {count}",
+            "affinityNeeded": "Afiniti diperlukan {amount}",
+            "affinityNext": "Tahap seterusnya perlu {amount} afiniti",
+            "expNeeded": "EXP diperlukan {amount}",
+            "advanceSigils": "{count} sigil",
+            "expHeldLearning": "EXP tersedia {amount} (semasa + sesi pembelajaran)"
         },
         "checks": {
             "affinity": "Mata afiniti",
@@ -156,18 +164,17 @@
         "stock": {
             "sigils": "Pelan memerlukan {total} sigil. Sigil pakar anda meliputi {own} daripadanya, jadi {common} mesti datang daripada Common Expert Sigils. Setiap sigil pakar yang anda pegang hanya dikira untuk pakar itu.",
             "books": "Pelan memerlukan {amount} Books of Knowledge untuk tahap kemahiran.",
-            "affinity": "Pelan memerlukan {needed} mata afiniti. Apa yang anda pegang pada kad pakar meliputi {held}, jadi {left} masih perlu diperoleh. Pakej tiada item afiniti, jadi tiada apa disemak berbanding stok.",
+            "affinity": "Pelan memerlukan {needed} mata afiniti. Hadiah afiniti di halaman Sumber dan mata pada kad pakar meliputi {held}, jadi {left} lagi diperlukan.",
             "learning": "Pelan memerlukan {exp} EXP kemahiran. Kemahiran anda memegang {held}, jadi {left} mesti datang daripada pecutan pembelajaran. Satu minit pembelajaran memberi {rate} EXP, jadi itu {minutes} minit."
         },
         "byExpert": {
             "title": "Mengikut pakar",
             "sigils": "Sigil: {needed} diperlukan, {own} dilindungi sigil {name} anda, {common} datang daripada Common Expert Sigils",
-            "affinity": "Afiniti: {needed} diperlukan, {held} tersedia, {left} masih perlu diperoleh",
+            "affinity": "Afiniti: {needed} diperlukan, {held} dilindungi, {left} lagi perlu diperoleh",
             "exp": "EXP kemahiran: {needed} diperlukan, {held} tersedia, {left} masih perlu diperoleh"
         },
         "result": {
             "title": "Hasil",
-            "derived": "Diperoleh",
             "books": "Books of Knowledge",
             "sigils": "Sigil",
             "exp": "EXP kemahiran",

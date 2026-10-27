@@ -1,5 +1,5 @@
 import type { SpeedupType } from "whiteout-survival-data";
-import type { Playthrough } from "@/types/app";
+import type { GeneralSpeedupUse, Playthrough } from "@/types/app";
 import { allItems, LARGE_STEP_ITEM_IDS, speedupTypes } from "@/data/game/items";
 
 export const MAX_COUNT = 999_999_999_999;
@@ -66,21 +66,66 @@ export const speedupStock = (chief: Playthrough): SpeedupStock[] =>
     };
   });
 
-/**
- * General speedups work on construction, so a construction plan counts both.
- */
-export const constructionSpeedupMinutes = (chief: Playthrough) =>
-  speedupStock(chief)
-    .filter(({ type }) => type === "construction" || type === "general")
-    .reduce((sum, stock) => sum + stock.minutes, 0);
+export const GENERAL_SPEEDUP_USES: readonly GeneralSpeedupUse[] = [
+  "buildings",
+  "research",
+  "troops",
+  "experts",
+];
+
+/** The percent of the general speedup minutes that a plan may use. It is 0 until one is set. */
+export const generalSharePercent = (
+  chief: Playthrough,
+  use: GeneralSpeedupUse,
+) => chief.generalSpeedupShare?.[use] ?? 0;
+
+/** The most one plan can take: what the other plans leave of the 100 percent. */
+export const maxGeneralShare = (chief: Playthrough, use: GeneralSpeedupUse) =>
+  100 -
+  GENERAL_SPEEDUP_USES.filter((other) => other !== use).reduce(
+    (sum, other) => sum + generalSharePercent(chief, other),
+    0,
+  );
+
+/** Sets the share of one plan. The shares of all plans stay at 100 percent or less. */
+export const withGeneralShare = (
+  chief: Playthrough,
+  use: GeneralSpeedupUse,
+  percent: number,
+): Playthrough => {
+  const clean = Math.min(
+    maxGeneralShare(chief, use),
+    Math.max(0, Math.floor(Number.isFinite(percent) ? percent : 0)),
+  );
+  return {
+    ...chief,
+    generalSpeedupShare: { ...chief.generalSpeedupShare, [use]: clean },
+  };
+};
+
+/** The general speedup minutes that a plan applies, whole minutes of its share. */
+export const generalMinutesApplied = (
+  chief: Playthrough,
+  use: GeneralSpeedupUse,
+) =>
+  Math.floor(
+    (minutesOfSpeedup(chief, "general") * generalSharePercent(chief, use)) /
+      100,
+  );
 
 /**
- * General speedups work on research, so a research plan counts both.
+ * A construction plan counts the construction speedups and its share of the general speedups.
+ */
+export const constructionSpeedupMinutes = (chief: Playthrough) =>
+  minutesOfSpeedup(chief, "construction") +
+  generalMinutesApplied(chief, "buildings");
+
+/**
+ * A research plan counts the research speedups and its share of the general speedups.
  */
 export const researchSpeedupMinutes = (chief: Playthrough) =>
-  speedupStock(chief)
-    .filter(({ type }) => type === "research" || type === "general")
-    .reduce((sum, stock) => sum + stock.minutes, 0);
+  minutesOfSpeedup(chief, "research") +
+  generalMinutesApplied(chief, "research");
 
 export const minutesOfSpeedup = (chief: Playthrough, type: SpeedupType) =>
   speedupStock(chief).find((stock) => stock.type === type)?.minutes ?? 0;

@@ -59,8 +59,7 @@
             "button": "Ekspor ke Core Events",
             "emptyHint": "Tambah latihan untuk mengekspornya.",
             "computed": "Dihitung oleh aplikasi.",
-            "trainedGroup": "untuk pasukan yang dilatih",
-            "speedupGroup": "untuk menit percepatan",
+            "trainedGroup": "untuk pasukan dan percepatan",
             "trainedTier": "Pasukan Tier {tier} dilatih",
             "speedupMinutes": "Menit percepatan latihan terpakai",
             "promoted": "Pasukan dipromosikan",
@@ -130,7 +129,7 @@
         "stock": {
             "name": "Percepatan latihan",
             "minutesUnit": "mnt",
-            "note": "Stokmu: Latihan {training} mnt, Umum {general} mnt. Percepatan Umum dihitung untuk latihan. Latihan yang tidak tercakup percepatan selesai dalam waktu normal, jadi hanya percepatan yang kamu punya yang dipakai: {used} mnt."
+            "note": "Stok Anda: Pelatihan {training} mnt, Umum {general} mnt diterapkan. Hanya bagian percepatan umum yang diatur di bawah yang dihitung. Pelatihan yang tidak tercakup percepatan selesai dalam waktu normal, jadi hanya percepatan yang Anda miliki yang dipakai: {used} mnt."
         },
         "result": {
             "title": "Hasil",

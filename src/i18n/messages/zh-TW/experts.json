@@ -74,7 +74,6 @@
         "talentLevel": "等級 {level} / {max}",
         "talentFollows": "依{relationship}。{effect}。",
         "power": "戰力 {now} / {max}",
-        "derived": "推算值",
         "notRecruitedHint": "尚未招募。請在 Tundra Trek 招募這位專家，再開啟「已招募」。",
         "recruitmentCost": "招募花費：{cost}",
         "maxPower": "最高戰力 {max}",
@@ -85,7 +84,8 @@
         "skillCapped": "{next} 級需要關係等級 {level} 且已進階。",
         "sigilsOwned": "持有 Sigil",
         "sigilsOwnedLabel": "{expert}持有的 Sigil",
-        "sigilsHint": "與資源頁面中的 Sigil 數量相同。"
+        "sigilsHint": "與資源頁面中的 Sigil 數量相同。",
+        "skillTotal": "{next} 級需要技能等級總和 {total}。目前 {have}。"
     },
     "filtersFlyout": {
         "title": "篩選",
@@ -121,7 +121,8 @@
             "books": "Books of Knowledge",
             "sigils": "Expert Sigils",
             "exp": "技能 EXP",
-            "expReason": "沒有活動為技能 EXP 計分。"
+            "expReason": "沒有活動為技能 EXP 計分。",
+            "learningSpeedups": "學習加速分鐘數"
         },
         "noExperts": "規劃中還沒有專家。請新增已招募的專家以設定它的目標。",
         "add": {
@@ -129,7 +130,8 @@
             "selectLabel": "要新增的專家",
             "button": "新增專家",
             "allIn": "所有已招募的專家都已在規劃中。",
-            "noneRecruited": "請先在頁面上招募專家才能規劃。"
+            "noneRecruited": "請先在頁面上招募專家才能規劃。",
+            "option": "{name}，{count} 個印記"
         },
         "block": {
             "remove": "移除",
@@ -146,7 +148,13 @@
             "affinityGoalLabel": "{expert}親密度目標",
             "skillGoalLabel": "{expert}{skill}目標",
             "advanceAtGoal": "在 {level} 級進階",
-            "advanceAtGoalLabel": "{expert}在目標等級進階"
+            "advanceAtGoalLabel": "{expert}在目標等級進階",
+            "sigils": "印記 {count}",
+            "affinityNeeded": "所需親密度 {amount}",
+            "affinityNext": "下一級需要 {amount} 親密度",
+            "expNeeded": "所需 EXP {amount}",
+            "advanceSigils": "{count} 個印記",
+            "expHeldLearning": "可用 EXP {amount}（目前 + 學習進行中）"
         },
         "checks": {
             "affinity": "親密度點數",
@@ -156,18 +164,17 @@
         "stock": {
             "sigils": "這份規劃需要 {total} 個 Sigil。你的專家 Sigil 涵蓋其中 {own} 個，所以 {common} 個必須來自 Common Expert Sigils。你持有的每個專家 Sigil 只能用於該專家。",
             "books": "這份規劃的技能等級需要 {amount} 本 Books of Knowledge。",
-            "affinity": "這份規劃需要 {needed} 點親密度。專家卡片上持有的涵蓋 {held}，還差 {left}。資料包沒有親密度道具，所以不會與庫存核對。",
+            "affinity": "計畫需要 {needed} 點親密度。資源頁面的親密度禮物和專家卡片上的點數可提供 {held} 點，還差 {left} 點。",
             "learning": "這份規劃需要 {exp} 技能 EXP。你的技能持有 {held}，所以 {left} 必須來自學習加速。學習 1 分鐘可得 {rate} EXP，因此需要 {minutes} 分鐘。"
         },
         "byExpert": {
             "title": "依專家",
             "sigils": "Sigil：需要 {needed}，你的 {name} Sigil 涵蓋 {own}，另需 {common} 個來自 Common Expert Sigils",
-            "affinity": "親密度：需要 {needed}，可用 {held}，還差 {left}",
+            "affinity": "親密度：需要 {needed}，已滿足 {held}，還差 {left}",
             "exp": "技能 EXP：需要 {needed}，可用 {held}，還差 {left}"
         },
         "result": {
             "title": "結果",
-            "derived": "推算值",
             "books": "Books of Knowledge",
             "sigils": "Sigil",
             "exp": "技能 EXP",

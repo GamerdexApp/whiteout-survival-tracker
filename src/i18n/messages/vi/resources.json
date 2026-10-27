@@ -27,8 +27,10 @@
     },
     "view": {
         "subline": "{items} vật phẩm trong {categories} danh mục",
-        "sublineInCategory": "{items} vật phẩm trong {categories} danh mục · {inCategory} trong {category}",
-        "unsaved": "Chưa lưu",
+        "coreSubline": "{chief} · Số lượng tài nguyên và gói trong ba lô",
+        "tabsLabel": "Chế độ xem tài nguyên",
+        "coreTab": "Tài nguyên cốt lõi",
+        "allTab": "Tất cả vật phẩm",
         "shortages": "Mục tiêu trong kế hoạch đang thiếu {names}.",
         "shortagesLink": "Mở kế hoạch Công trình",
         "show": {
@@ -78,6 +80,52 @@
             "setToZero": "Đã đặt {name} về 0",
             "savedTitle": "Đã lưu số lượng",
             "savedMessage": "Đã đổi {count, plural, other {{amount} số lượng}}."
+        },
+        "totals": {
+            "loose": "Lẻ",
+            "packs": "Gói",
+            "securedPacks": "Gói an toàn",
+            "anyTitle": "Bất kỳ (rương)",
+            "commonSigils": "Ấn chung",
+            "books": "Sách",
+            "affinity": "Thân mật"
+        }
+    },
+    "core": {
+        "resourcesSection": "Tài nguyên",
+        "counts": "Số lượng tài nguyên",
+        "backpack": "Ba lô",
+        "secured": "{name} (An toàn)",
+        "level": "Cấp {level}",
+        "customChests": "Rương tài nguyên tùy chọn",
+        "customSecuredChests": "Rương tài nguyên an toàn tùy chọn",
+        "fireCrystalSection": "Tinh thể lửa",
+        "speedupsSection": "Tăng tốc",
+        "expertsSection": "Chuyên gia",
+        "expertSigilsRow": "Ấn chuyên gia",
+        "affinityGiftsRow": "Quà thân mật",
+        "commonExpertRow": "Ấn chung và sách",
+        "petsSection": "Thú cưng",
+        "petAdvancementRow": "Vật liệu thăng cấp",
+        "petFoodAndMarksRow": "Thức ăn và dấu hoang dã",
+        "heroGearSection": "Trang bị anh hùng",
+        "heroGearMaterialsRow": "Vật liệu nâng cấp",
+        "heroGearRow": "Trang bị và rương trang bị",
+        "chiefGearSection": "Trang bị và bùa thủ lĩnh",
+        "chiefGearRow": "Trang bị thủ lĩnh",
+        "chiefCharmRow": "Bùa thủ lĩnh",
+        "chiefChestsRow": "Rương trang bị và bùa",
+        "heroShards": {
+            "section": "Mảnh anh hùng",
+            "showCompleted": "Hiện anh hùng đã hoàn tất",
+            "hintHidden": "Anh hùng, mảnh và sách đã hoàn tất đang ẩn: {count}",
+            "hintShown": "Đang hiện anh hùng, mảnh và sách đã hoàn tất",
+            "allCompleted": "Mọi anh hùng đã mở khóa đều đủ sao. Bật công tắc để xem.",
+            "generation": "Thế hệ {generation}",
+            "shardName": "Mảnh {name}",
+            "generalShards": "Mảnh chung",
+            "expeditionManuals": "Sách kỹ năng viễn chinh",
+            "explorationManuals": "Sách kỹ năng thám hiểm"
         }
     },
     "planStock": {

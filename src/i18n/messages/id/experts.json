@@ -74,7 +74,6 @@
         "talentLevel": "Level {level} dari {max}",
         "talentFollows": "Mengikuti {relationship}. {effect}.",
         "power": "Kekuatan {now} dari {max}",
-        "derived": "Turunan",
         "notRecruitedHint": "Belum direkrut. Rekrut ahli ini di Tundra Trek, lalu aktifkan Direkrut.",
         "recruitmentCost": "Biaya rekrutmen: {cost}",
         "maxPower": "Kekuatan maks {max}",
@@ -85,7 +84,8 @@
         "skillCapped": "Level {next} butuh level hubungan {level}, naik tingkat.",
         "sigilsOwned": "Sigil dimiliki",
         "sigilsOwnedLabel": "Sigil {expert} dimiliki",
-        "sigilsHint": "Jumlah yang sama dengan sigil di halaman Sumber Daya."
+        "sigilsHint": "Jumlah yang sama dengan sigil di halaman Sumber Daya.",
+        "skillTotal": "Level {next} membutuhkan total level skill {total}. Sekarang {have}."
     },
     "filtersFlyout": {
         "title": "Filter",
@@ -121,7 +121,8 @@
             "books": "Books of Knowledge",
             "sigils": "Sigil ahli",
             "exp": "EXP skill",
-            "expReason": "Tidak ada event yang menskor EXP skill."
+            "expReason": "Tidak ada event yang menskor EXP skill.",
+            "learningSpeedups": "Menit percepatan belajar"
         },
         "noExperts": "Belum ada ahli di rencana. Tambah ahli yang direkrut untuk mengatur targetnya.",
         "add": {
@@ -129,7 +130,8 @@
             "selectLabel": "Ahli yang ditambah",
             "button": "Tambah ahli",
             "allIn": "Semua ahli yang direkrut sudah ada di rencana.",
-            "noneRecruited": "Rekrut ahli di halaman untuk merencanakannya."
+            "noneRecruited": "Rekrut ahli di halaman untuk merencanakannya.",
+            "option": "{name}, {count} sigil"
         },
         "block": {
             "remove": "Hapus",
@@ -146,7 +148,13 @@
             "affinityGoalLabel": "Target afinitas {expert}",
             "skillGoalLabel": "Target {skill} {expert}",
             "advanceAtGoal": "Naik tingkat di level {level}",
-            "advanceAtGoalLabel": "{expert} naik tingkat di target"
+            "advanceAtGoalLabel": "{expert} naik tingkat di target",
+            "sigils": "Sigil {count}",
+            "affinityNeeded": "Afinitas dibutuhkan {amount}",
+            "affinityNext": "Level berikutnya butuh {amount} afinitas",
+            "expNeeded": "EXP dibutuhkan {amount}",
+            "advanceSigils": "{count} sigil",
+            "expHeldLearning": "EXP tersedia {amount} (saat ini + sesi belajar)"
         },
         "checks": {
             "affinity": "Poin afinitas",
@@ -156,18 +164,17 @@
         "stock": {
             "sigils": "Rencana butuh {total} sigil. Sigil ahlimu mencakup {own} di antaranya, jadi {common} harus dari Common Expert Sigils. Tiap sigil ahli yang kamu punya hanya berlaku untuk ahli itu.",
             "books": "Rencana butuh {amount} Books of Knowledge untuk level skill.",
-            "affinity": "Rencana butuh {needed} poin afinitas. Yang kamu punya di kartu ahli mencakup {held}, jadi {left} masih harus didapat. Paket data tidak punya item afinitas, jadi tidak ada yang dicek terhadap stok.",
+            "affinity": "Rencana membutuhkan {needed} poin afinitas. Hadiah afinitas di halaman Sumber Daya dan poin di kartu ahli mencakup {held}, jadi masih perlu {left}.",
             "learning": "Rencana butuh {exp} EXP skill. Skill-mu menyimpan {held}, jadi {left} harus dari percepatan belajar. Satu menit belajar memberi {rate} EXP, jadi itu {minutes} menit."
         },
         "byExpert": {
             "title": "Menurut ahli",
             "sigils": "Sigil: butuh {needed}, tercakup {own} oleh sigil {name}-mu, {common} dari Common Expert Sigils",
-            "affinity": "Afinitas: butuh {needed}, tersedia {held}, masih kurang {left}",
+            "affinity": "Afinitas: {needed} dibutuhkan, {held} tercakup, {left} masih perlu didapat",
             "exp": "EXP skill: butuh {needed}, tersedia {held}, masih kurang {left}"
         },
         "result": {
             "title": "Hasil",
-            "derived": "Turunan",
             "books": "Books of Knowledge",
             "sigils": "Sigil",
             "exp": "EXP skill",

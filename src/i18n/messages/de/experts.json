@@ -74,7 +74,6 @@
         "talentLevel": "Stufe {level} von {max}",
         "talentFollows": "Folgt {relationship}. {effect}.",
         "power": "Macht {now} von {max}",
-        "derived": "Abgeleitet",
         "notRecruitedHint": "Nicht rekrutiert. Rekrutiere diesen Experten in Tundra Trek und schalte dann Rekrutiert ein.",
         "recruitmentCost": "Rekrutierungskosten: {cost}",
         "maxPower": "Maximale Macht {max}",
@@ -85,7 +84,8 @@
         "skillCapped": "Stufe {next} braucht Beziehungsstufe {level}, aufgestiegen.",
         "sigilsOwned": "Sigils im Besitz",
         "sigilsOwnedLabel": "Sigils von {expert} im Besitz",
-        "sigilsHint": "Dieselbe Anzahl wie das Sigil auf der Ressourcen-Seite."
+        "sigilsHint": "Dieselbe Anzahl wie das Sigil auf der Ressourcen-Seite.",
+        "skillTotal": "Stufe {next} braucht eine Gesamt-Fertigkeitsstufe von {total}. Jetzt {have}."
     },
     "filtersFlyout": {
         "title": "Filter",
@@ -121,7 +121,8 @@
             "books": "Books of Knowledge",
             "sigils": "Experten-Sigils",
             "exp": "Fähigkeits-EXP",
-            "expReason": "Kein Event wertet Fähigkeits-EXP."
+            "expReason": "Kein Event wertet Fähigkeits-EXP.",
+            "learningSpeedups": "Lern-Beschleuniger-Minuten"
         },
         "noExperts": "Noch keine Experten im Plan. Füge einen rekrutierten Experten hinzu, um seine Ziele zu setzen.",
         "add": {
@@ -129,7 +130,8 @@
             "selectLabel": "Experte zum Hinzufügen",
             "button": "Experten hinzufügen",
             "allIn": "Jeder rekrutierte Experte ist im Plan.",
-            "noneRecruited": "Rekrutiere einen Experten auf der Seite, um ihn zu planen."
+            "noneRecruited": "Rekrutiere einen Experten auf der Seite, um ihn zu planen.",
+            "option": "{name}, {count} Siegel"
         },
         "block": {
             "remove": "Entfernen",
@@ -146,7 +148,13 @@
             "affinityGoalLabel": "Affinitätsziel {expert}",
             "skillGoalLabel": "Ziel {skill} von {expert}",
             "advanceAtGoal": "Aufstieg auf Stufe {level}",
-            "advanceAtGoalLabel": "{expert} steigt am Ziel auf"
+            "advanceAtGoalLabel": "{expert} steigt am Ziel auf",
+            "sigils": "Siegel {count}",
+            "affinityNeeded": "Affinität nötig {amount}",
+            "affinityNext": "Nächste Stufe braucht {amount} Affinität",
+            "expNeeded": "EXP nötig {amount}",
+            "advanceSigils": "{count} Siegel",
+            "expHeldLearning": "EXP verfügbar {amount} (aktuell + Lernsitzung)"
         },
         "checks": {
             "affinity": "Affinitätspunkte",
@@ -156,18 +164,17 @@
         "stock": {
             "sigils": "Der Plan braucht {total} Sigils. Deine Experten-Sigils decken {own} davon, daher müssen {common} aus Common Expert Sigils kommen. Jedes Experten-Sigil, das du hast, zählt nur für diesen Experten.",
             "books": "Der Plan braucht {amount} Books of Knowledge für die Fähigkeitsstufen.",
-            "affinity": "Der Plan braucht {needed} Affinitätspunkte. Was du auf den Expertenkarten hast, deckt {held}, daher sind noch {left} zu holen. Das Paket hat kein Affinitäts-Item, daher wird nichts gegen einen Bestand geprüft.",
+            "affinity": "Der Plan braucht {needed} Zuneigungspunkte. Die Zuneigungsgeschenke auf der Ressourcen-Seite und die Punkte auf den Expertenkarten decken {held}, also fehlen noch {left}.",
             "learning": "Der Plan braucht {exp} Fähigkeits-EXP. Deine Fähigkeiten halten {held}, daher müssen {left} aus Lern-Beschleunigern kommen. Eine Minute Lernen gibt {rate} EXP, das sind {minutes} Minuten."
         },
         "byExpert": {
             "title": "Nach Experte",
             "sigils": "Sigils: {needed} nötig, {own} durch dein Sigil von {name} gedeckt, {common} aus Common Expert Sigils",
-            "affinity": "Affinität: {needed} nötig, {held} verfügbar, {left} noch zu holen",
+            "affinity": "Affinität: {needed} nötig, {held} gedeckt, {left} noch zu holen",
             "exp": "Fähigkeits-EXP: {needed} nötig, {held} verfügbar, {left} noch zu holen"
         },
         "result": {
             "title": "Ergebnis",
-            "derived": "Abgeleitet",
             "books": "Books of Knowledge",
             "sigils": "Sigils",
             "exp": "Fähigkeits-EXP",

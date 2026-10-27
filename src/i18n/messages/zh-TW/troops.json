@@ -59,8 +59,7 @@
             "button": "匯出到核心活動",
             "emptyHint": "請先新增訓練項目才能匯出。",
             "computed": "由應用程式計算。",
-            "trainedGroup": "訓練部隊用",
-            "speedupGroup": "加速分鐘數用",
+            "trainedGroup": "用於部隊和加速",
             "trainedTier": "已訓練第 {tier} 階部隊",
             "speedupMinutes": "已使用的訓練加速分鐘數",
             "promoted": "已晉升的部隊",
@@ -130,7 +129,7 @@
         "stock": {
             "name": "訓練加速道具",
             "minutesUnit": "分",
-            "note": "你的庫存：訓練 {training} 分，通用 {general} 分。通用加速道具可用於訓練。加速道具未涵蓋的訓練會以正常時間完成，所以只會使用你持有的加速道具：{used} 分。"
+            "note": "你的庫存：訓練 {training} 分鐘，已使用通用 {general} 分鐘。只計入下方設定的通用加速比例。加速未涵蓋的訓練按正常時間完成，所以只使用你持有的加速：{used} 分鐘。"
         },
         "result": {
             "title": "結果",

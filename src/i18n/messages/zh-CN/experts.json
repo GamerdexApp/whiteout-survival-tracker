@@ -74,7 +74,6 @@
         "talentLevel": "{level} / {max}级",
         "talentFollows": "跟随{relationship}。{effect}。",
         "power": "战力{now} / {max}",
-        "derived": "推算",
         "notRecruitedHint": "未招募。请在 Tundra Trek 中招募此专家，然后开启已招募。",
         "recruitmentCost": "招募费用：{cost}",
         "maxPower": "满级战力{max}",
@@ -85,7 +84,8 @@
         "skillCapped": "{next}级需要关系等级 {level} 且已进阶。",
         "sigilsOwned": "已有徽章",
         "sigilsOwnedLabel": "{expert}已有徽章",
-        "sigilsHint": "与资源页中的徽章数量相同。"
+        "sigilsHint": "与资源页中的徽章数量相同。",
+        "skillTotal": "{next} 级需要技能等级总和 {total}。当前 {have}。"
     },
     "filtersFlyout": {
         "title": "筛选",
@@ -121,7 +121,8 @@
             "books": "Books of Knowledge",
             "sigils": "专家徽章",
             "exp": "技能 EXP",
-            "expReason": "没有活动为技能 EXP 计分。"
+            "expReason": "没有活动为技能 EXP 计分。",
+            "learningSpeedups": "学习加速分钟数"
         },
         "noExperts": "计划中还没有专家。添加已招募的专家即可设置其目标。",
         "add": {
@@ -129,7 +130,8 @@
             "selectLabel": "要添加的专家",
             "button": "添加专家",
             "allIn": "所有已招募的专家都已在计划中。",
-            "noneRecruited": "请先在页面上招募专家，才能为其制定计划。"
+            "noneRecruited": "请先在页面上招募专家，才能为其制定计划。",
+            "option": "{name}，{count} 个印记"
         },
         "block": {
             "remove": "移除",
@@ -146,7 +148,13 @@
             "affinityGoalLabel": "{expert}亲密度目标",
             "skillGoalLabel": "{expert} {skill}目标",
             "advanceAtGoal": "在{level}级进阶",
-            "advanceAtGoalLabel": "{expert}在目标处进阶"
+            "advanceAtGoalLabel": "{expert}在目标处进阶",
+            "sigils": "印记 {count}",
+            "affinityNeeded": "所需亲密度 {amount}",
+            "affinityNext": "下一级需要 {amount} 亲密度",
+            "expNeeded": "所需 EXP {amount}",
+            "advanceSigils": "{count} 个印记",
+            "expHeldLearning": "可用 EXP {amount}（当前 + 学习进行中）"
         },
         "checks": {
             "affinity": "亲密度点数",
@@ -156,18 +164,17 @@
         "stock": {
             "sigils": "计划需要{total}个徽章。你的专家徽章可覆盖其中{own}个，其余{common}个需要来自 Common Expert Sigils。你持有的每个专家徽章只对该专家有效。",
             "books": "计划需要{amount}本 Books of Knowledge，用于技能升级。",
-            "affinity": "计划需要{needed}亲密度点数。专家卡片上持有的可覆盖{held}，还差{left}。数据包中没有亲密度道具，因此不会对照库存检查。",
+            "affinity": "计划需要 {needed} 点亲密度。资源页面的亲密度礼物和专家卡片上的点数可提供 {held} 点，还差 {left} 点。",
             "learning": "计划需要{exp}技能 EXP。你的技能持有{held}，其余{left}需要通过学习加速获得。学习 1 分钟获得{rate} EXP，因此需要{minutes}分钟。"
         },
         "byExpert": {
             "title": "按专家",
             "sigils": "徽章：需要{needed}，你的{name}徽章覆盖{own}，其余{common}来自 Common Expert Sigils",
-            "affinity": "亲密度：需要{needed}，可用{held}，还差{left}",
+            "affinity": "亲密度：需要 {needed}，已满足 {held}，还差 {left}",
             "exp": "技能 EXP：需要{needed}，可用{held}，还差{left}"
         },
         "result": {
             "title": "结果",
-            "derived": "推算",
             "books": "Books of Knowledge",
             "sigils": "徽章",
             "exp": "技能 EXP",

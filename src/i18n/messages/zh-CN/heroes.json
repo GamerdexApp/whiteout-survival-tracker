@@ -187,8 +187,7 @@
             "explorationFull": "5.0 时的探索",
             "expeditionFull": "5.0 时的远征",
             "exploration": "攻{attack} · 防{defense} · 生命{health}",
-            "expedition": "攻{attack}% · 防{defense}%",
-            "estimate": "估算"
+            "expedition": "攻{attack}% · 防{defense}%"
         }
     },
     "plan": {
@@ -200,9 +199,10 @@
         "noHeroes": "计划中还没有英雄。请先在上方添加已拥有的英雄，再提高其目标。",
         "add": {
             "title": "添加英雄",
-            "allIn": "所有已拥有的英雄都已在计划中。为英雄开启已拥有后才能加入计划。",
+            "allIn": "所有已拥有的英雄都已在计划中或已满星。为英雄打开“已拥有”即可规划。",
             "selectLabel": "要添加的英雄",
-            "button": "添加英雄"
+            "button": "添加英雄",
+            "generationShort": "G{generation}"
         },
         "block": {
             "remove": "从计划中移除{hero}",
@@ -237,6 +237,18 @@
             "allianceShowdown": "Alliance Showdown",
             "kingOfIcefield": "King of Icefield",
             "hallOfChief": "Hall of Chief"
+        },
+        "luckyWheel": {
+            "title": "幸运转盘",
+            "description": "英雄幸运转盘的转动次数会为所选英雄增加预估碎片。每次转动平均获得 {perSpin} 个碎片，另在第 5、15、35、70 和 120 次转动时获得奖励碎片。",
+            "noHero": "将英雄加入计划后，才能规划幸运转盘的转动次数。",
+            "hero": "英雄",
+            "spins": "转动次数（最多 {max}）",
+            "tokens": "初始代币",
+            "estimate": "{hero} 的预估碎片：{total}（转动奖励 {bonus}，转动获得 {spins}）。计划会把它们当作你已持有的碎片。",
+            "gems": "所需宝石：{gems}",
+            "gemsNone": "无需宝石。",
+            "gemsNote": "{covered} 次转动使用你的代币。其余每次 {single} 宝石，或每 10 次 {ten} 宝石。"
         }
     },
     "export": {
@@ -250,7 +262,8 @@
             "Legendary": "Mythic Hero Shards",
             "Epic": "Epic Hero Shards",
             "Rare": "Rare Hero Shards"
-        }
+        },
+        "luckyWheel": "幸运转盘转动次数"
     },
     "service": {
         "generalShard": {

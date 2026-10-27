@@ -74,7 +74,6 @@
         "talentLevel": "Seviye {level} / {max}",
         "talentFollows": "İzlenen: {relationship}. {effect}.",
         "power": "Güç {now} / {max}",
-        "derived": "Türetildi",
         "notRecruitedHint": "İşe alınmadı. Bu uzmanı Tundra Trek'te işe al, sonra İşe alındı'yı aç.",
         "recruitmentCost": "İşe alım maliyeti: {cost}",
         "maxPower": "Maks. güç {max}",
@@ -85,7 +84,8 @@
         "skillCapped": "Seviye {next} için ilişki seviyesi {level} aşama atlamalı.",
         "sigilsOwned": "Sahip olunan sigil",
         "sigilsOwnedLabel": "Sahip olunan sigil: {expert}",
-        "sigilsHint": "Kaynaklar sayfasındaki sigil ile aynı sayı."
+        "sigilsHint": "Kaynaklar sayfasındaki sigil ile aynı sayı.",
+        "skillTotal": "{next}. seviye için toplam yetenek seviyesi {total} gerekir. Şu an {have}."
     },
     "filtersFlyout": {
         "title": "Filtreler",
@@ -121,7 +121,8 @@
             "books": "Books of Knowledge",
             "sigils": "Uzman sigilleri",
             "exp": "Beceri EXP",
-            "expReason": "Hiçbir etkinlik beceri EXP'sine puan vermez."
+            "expReason": "Hiçbir etkinlik beceri EXP'sine puan vermez.",
+            "learningSpeedups": "Öğrenme hızlandırma dakikaları"
         },
         "noExperts": "Planda henüz uzman yok. Hedeflerini ayarlamak için işe alınmış bir uzman ekle.",
         "add": {
@@ -129,7 +130,8 @@
             "selectLabel": "Eklenecek uzman",
             "button": "Uzman ekle",
             "allIn": "İşe alınan her uzman planda.",
-            "noneRecruited": "Planlamak için sayfada bir uzmanı işe al."
+            "noneRecruited": "Planlamak için sayfada bir uzmanı işe al.",
+            "option": "{name}, {count} mühür"
         },
         "block": {
             "remove": "Kaldır",
@@ -146,7 +148,13 @@
             "affinityGoalLabel": "Yakınlık hedefi: {expert}",
             "skillGoalLabel": "Hedef: {expert} {skill}",
             "advanceAtGoal": "Seviye {level} için aşama atla",
-            "advanceAtGoalLabel": "Hedefte aşama atla: {expert}"
+            "advanceAtGoalLabel": "Hedefte aşama atla: {expert}",
+            "sigils": "Mühür {count}",
+            "affinityNeeded": "Gereken yakınlık {amount}",
+            "affinityNext": "Sonraki seviye {amount} yakınlık gerektirir",
+            "expNeeded": "Gereken EXP {amount}",
+            "advanceSigils": "{count} mühür",
+            "expHeldLearning": "Mevcut EXP {amount} (şu an + öğrenme oturumu)"
         },
         "checks": {
             "affinity": "Yakınlık puanı",
@@ -156,18 +164,17 @@
         "stock": {
             "sigils": "Plan {total} sigil ister. Uzman sigillerin bunun {own} tanesini karşılar, kalan {common} tanesi Common Expert Sigils ile karşılanmalı. Sahip olduğun her uzman sigili yalnızca o uzman için sayılır.",
             "books": "Plan, beceri seviyeleri için {amount} Books of Knowledge ister.",
-            "affinity": "Plan {needed} yakınlık puanı ister. Uzman kartlarında elinde olanlar {held} tanesini karşılar, yani {left} tane daha gerekir. Pakette yakınlık öğesi yok, bu yüzden stokla karşılaştırılan bir şey yok.",
+            "affinity": "Plan {needed} yakınlık puanı gerektiriyor. Kaynaklar sayfasındaki yakınlık hediyeleri ve uzman kartlarındaki puanlar {held} puanı karşılıyor, yani {left} puan daha gerekli.",
             "learning": "Plan {exp} beceri EXP ister. Becerilerinde {held} var, yani {left} tanesi öğrenme hızlandırmalarından gelmeli. Bir dakikalık öğrenme {rate} EXP verir, bu da {minutes} dakika eder."
         },
         "byExpert": {
             "title": "Uzmana göre",
             "sigils": "Sigil: {needed} gerekir, {name} sigilin {own} tanesini karşılar, {common} tanesi Common Expert Sigils'ten gelmeli",
-            "affinity": "Yakınlık: {needed} gerekir, {held} mevcut, {left} tane daha gerekir",
+            "affinity": "Yakınlık: {needed} gerekli, {held} karşılandı, {left} daha alınacak",
             "exp": "Beceri EXP: {needed} gerekir, {held} mevcut, {left} tane daha gerekir"
         },
         "result": {
             "title": "Sonuç",
-            "derived": "Türetildi",
             "books": "Books of Knowledge",
             "sigils": "Sigil",
             "exp": "Beceri EXP",

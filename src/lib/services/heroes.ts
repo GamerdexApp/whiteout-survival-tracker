@@ -5,7 +5,12 @@ import type {
   HeroUpgradeCalculation,
   UnmetHeroSkillRequirement,
 } from "whiteout-survival-data";
-import type { HeroGoal, HeroState, Playthrough } from "@/types/app";
+import type {
+  HeroGoal,
+  HeroState,
+  LuckyWheelPlan,
+  Playthrough,
+} from "@/types/app";
 import { furnace, FURNACE_ID } from "@/data/game/buildings";
 import {
   allHeroes,
@@ -23,6 +28,7 @@ import {
 import { findItem } from "@/data/game/items";
 import { levelOrder } from "./buildings";
 import { ownedCount, withOwnedCount } from "./inventory";
+import { estimatedShards, gemsNeeded } from "./luckyWheel";
 import type { StockCheck } from "./planStock";
 
 export interface StarLabel {
@@ -120,6 +126,8 @@ export const buildHeroView = (chief: Playthrough, hero: Hero): HeroView => {
     goal: savedGoal ?? null,
   };
 };
+
+export const hasEveryStar = (view: HeroView) => view.stars.star === MAX_STAR;
 
 export const buildHeroViews = (chief: Playthrough) =>
   unlockedHeroes(chief).map((hero) => buildHeroView(chief, hero));
@@ -426,8 +434,12 @@ export const withHeroShards = (
 export const withSavedHeroesPlan = (
   chief: Playthrough,
   goals: Record<string, HeroGoal>,
+  luckyWheel: LuckyWheelPlan | undefined,
   savedAt: string,
-): Playthrough => ({ ...chief, heroesPlan: { goals, savedAt } });
+): Playthrough => ({
+  ...chief,
+  heroesPlan: { goals, ...(luckyWheel ? { luckyWheel } : {}), savedAt },
+});
 
 /**
  * The rows a plan opens with: every owned hero that has a goal above its current state.
@@ -450,6 +462,8 @@ export interface HeroPlanRow {
   view: HeroView;
   goal: HeroGoal;
   calculation: HeroUpgradeCalculation;
+  /** The estimated shards from the planned Lucky Wheel spins, on top of the shards held. */
+  luckyShards: number;
 }
 
 export interface UnmetRequirement extends UnmetHeroSkillRequirement {
@@ -466,6 +480,12 @@ export interface HeroPlanResult {
   weaponLevels: number;
   eventPoints: HeroUpgradeCalculation["eventPoints"];
   unmet: UnmetRequirement[];
+  /** The gems the planned Lucky Wheel spins cost after the starting tokens. */
+  gems: number;
+  /** The planned Lucky Wheel spins, which count whatever pays for them. */
+  luckySpins: number;
+  /** The hero the Lucky Wheel shards go to. */
+  luckyHeroName: string | null;
 }
 
 const goalToCalculatorInput = (view: HeroView, goal: HeroGoal) => {
@@ -500,9 +520,27 @@ const goalToCalculatorInput = (view: HeroView, goal: HeroGoal) => {
  * Runs the calculator once per hero and adds the results. A hero that is not owned or not
  * unlocked is left out.
  */
+/**
+ * The wheel as the plan uses it. Its hero must be in the plan, so a missing hero falls to the first
+ * planned hero. With no planned hero there is no wheel.
+ */
+export const effectiveLuckyWheel = (
+  chief: Playthrough,
+  goals: Record<string, HeroGoal>,
+  wheel: LuckyWheelPlan,
+): LuckyWheelPlan | undefined => {
+  const planned = buildHeroViews(chief).filter(
+    (view) => view.owned && goals[view.hero.id],
+  );
+  const hero =
+    planned.find((view) => view.hero.id === wheel.heroId) ?? planned[0];
+  return hero ? { ...wheel, heroId: hero.hero.id } : undefined;
+};
+
 export const runHeroPlan = (
   chief: Playthrough,
   goals: Record<string, HeroGoal>,
+  luckyWheel?: LuckyWheelPlan,
 ): HeroPlanResult => {
   const views = new Map(
     buildHeroViews(chief).map((view) => [view.hero.id, view] as const),
@@ -517,6 +555,10 @@ export const runHeroPlan = (
             calculation: calculateHeroUpgrade(
               goalToCalculatorInput(view, goal),
             ),
+            luckyShards:
+              luckyWheel?.heroId === heroId
+                ? estimatedShards(luckyWheel.spins)
+                : 0,
           },
         ]
       : [];
@@ -534,9 +576,21 @@ export const runHeroPlan = (
   const points = (key: keyof HeroUpgradeCalculation["eventPoints"]) =>
     sum((row) => row.calculation.eventPoints[key]);
 
+  const wheelHeroIsPlanned = rows.some(
+    (row) => row.view.hero.id === luckyWheel?.heroId,
+  );
+
   return {
     rows,
     resources,
+    gems:
+      luckyWheel && wheelHeroIsPlanned
+        ? gemsNeeded(luckyWheel.spins, luckyWheel.tokens)
+        : 0,
+    luckySpins: luckyWheel && wheelHeroIsPlanned ? luckyWheel.spins : 0,
+    luckyHeroName:
+      rows.find((row) => row.view.hero.id === luckyWheel?.heroId)?.view.hero
+        .name ?? null,
     widgets: sum((row) => row.calculation.widgets.widgets),
     unlockedWeaponSkills: sum(
       (row) => row.calculation.widgets.unlockedSkills.length,
@@ -572,7 +626,7 @@ export interface ShardUse {
 export const shardUse = (plan: HeroPlanResult): ShardUse => {
   const uses = plan.rows.map((row) => {
     const needed = row.calculation.stars.shards;
-    const fromOwnHero = Math.min(needed, row.view.shards);
+    const fromOwnHero = Math.min(needed, row.view.shards + row.luckyShards);
     return { fromOwnHero, fromGeneral: needed - fromOwnHero };
   });
   const fromOwnHero = uses.reduce((total, use) => total + use.fromOwnHero, 0);
@@ -581,6 +635,10 @@ export const shardUse = (plan: HeroPlanResult): ShardUse => {
 };
 
 const RARITY_ORDER: Hero["rarity"][] = ["Legendary", "Epic", "Rare"];
+
+/** The hero rarity whose general shard has this item id. */
+export const heroShardRarityOf = (itemId: string) =>
+  RARITY_ORDER.find((rarity) => generalShardItemId(rarity) === itemId);
 
 const rarityShardName = (rarity: Hero["rarity"]) =>
   translator("heroes")(`service.generalShard.${rarity}`);
@@ -593,7 +651,11 @@ export const heroPlanChecks = (
     const rows = plan.rows.filter((row) => row.view.hero.rarity === rarity);
     const needed = rows.reduce(
       (total, row) =>
-        total + Math.max(0, row.calculation.stars.shards - row.view.shards),
+        total +
+        Math.max(
+          0,
+          row.calculation.stars.shards - row.view.shards - row.luckyShards,
+        ),
       0,
     );
     return {
@@ -613,7 +675,19 @@ export const heroPlanChecks = (
       needed,
     }));
 
-  return [...shardChecks, ...manualChecks];
+  const gemChecks =
+    plan.gems > 0
+      ? [
+          {
+            id: "gems",
+            name: findItem("gems")?.name ?? "Gems",
+            available: ownedCount(chief, "gems"),
+            needed: plan.gems,
+          },
+        ]
+      : [];
+
+  return [...shardChecks, ...manualChecks, ...gemChecks];
 };
 
 export type HeroChange =

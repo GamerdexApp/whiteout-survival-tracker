@@ -150,7 +150,6 @@ export const tundraAlbumBuffInputs = (chief: Playthrough): string[] =>
 
 export interface PieceRewardTotal {
   itemId?: string;
-  size?: 10 | 100;
   amount: number;
 }
 
@@ -166,11 +165,10 @@ export const summarizePieceRewards = (pieces: number): PieceRewardsSummary => {
   const reached = tundraAlbumPieceRewardsReached(pieces);
   const totals = new Map<string, PieceRewardTotal>();
   for (const reward of reached.flatMap((tier) => tier.rewards)) {
-    const key = `${reward.itemId ?? ""}:${reward.size ?? ""}`;
+    const key = reward.itemId ?? "";
     const known = totals.get(key);
     totals.set(key, {
       itemId: reward.itemId,
-      size: reward.size,
       amount: (known?.amount ?? 0) + reward.amount,
     });
   }

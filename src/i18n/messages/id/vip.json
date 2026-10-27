@@ -59,5 +59,20 @@
             "unknown": "Tidak diketahui"
         },
         "levelName": "VIP {level}"
+    },
+    "signIn": {
+        "title": "Masuk harian",
+        "note": "Masuk harian memberi lebih banyak XP untuk setiap hari dalam rangkaian. Rangkaian berakhir jika kamu melewatkan satu hari UTC, dan setiap hari dimulai pukul 00:00 UTC.",
+        "add": "Tambah masuk harian",
+        "addHint": "Hari ke-{streak} rangkaian: {points} XP",
+        "claimed": "Sudah masuk hari ini, pada hari ke-{streak} rangkaian. Besok memberi {points} XP, dalam {time}.",
+        "needXp": "Isi total XP atau level VIP kamu terlebih dahulu.",
+        "streakLabel": "Hari rangkaian",
+        "streakHint": "Hari rangkaian untuk hari ini. Ubah jika rangkaianmu sudah berjalan.",
+        "toast": {
+            "title": "Masuk harian ditambahkan",
+            "message": "{points} XP ditambahkan untuk hari ke-{streak} rangkaian.",
+            "undo": "Urungkan"
+        }
     }
 }

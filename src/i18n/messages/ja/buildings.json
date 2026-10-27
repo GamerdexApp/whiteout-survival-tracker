@@ -224,10 +224,10 @@
         "goalsHeading": "{count, plural, other {目標、建物{amount}棟}}",
         "noGoals": "目標はまだありません。上で建物を追加してから、到達したいレベルを選んでください。",
         "prerequisiteNote": "前提となるステップは自動で追加されます。別の建物のより高いレベルを必要とするレベルは、そのステップを数えて印を付けます。",
-        "timeNote": "プランには、速度ボーナス{percent}%を適用して{time}かかります。在庫: 建設 {construction}分、汎用 {general}分。汎用のスピードアップは建設に使われます。",
+        "timeNote": "プランには、速度ボーナス{percent}%を適用して{time}かかります。在庫: 建設 {construction}分、汎用 {general}分を適用。下で設定した割合の汎用スピードアップだけが数えられます。",
         "add": {
             "title": "建物を追加",
-            "allAdded": "すべての建物がすでにプランに入っています。",
+            "allAdded": "すべての建物がすでにプランに入っているか、最大レベルです。",
             "selectLabel": "追加する建物",
             "button": "建物を追加"
         },

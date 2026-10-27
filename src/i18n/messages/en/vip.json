@@ -59,5 +59,20 @@
             "unknown": "Unknown"
         },
         "levelName": "VIP {level}"
+    },
+    "signIn": {
+        "title": "Daily sign-in",
+        "note": "The daily sign-in gives more XP for each day of a streak. The streak ends when you miss a UTC day, and each day starts at 00:00 UTC.",
+        "add": "Add daily sign-in",
+        "addHint": "Streak day {streak}: {points} XP",
+        "claimed": "Signed in today, on streak day {streak}. Tomorrow gives {points} XP, in {time}.",
+        "needXp": "Enter your total XP or VIP level first.",
+        "streakLabel": "Streak day",
+        "streakHint": "The streak day of today. Change it when your streak is already running.",
+        "toast": {
+            "title": "Sign-in added",
+            "message": "{points} XP added for streak day {streak}.",
+            "undo": "Undo"
+        }
     }
 }

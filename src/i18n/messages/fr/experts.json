@@ -74,7 +74,6 @@
         "talentLevel": "Niveau {level} sur {max}",
         "talentFollows": "Suit {relationship}. {effect}.",
         "power": "Puissance {now} sur {max}",
-        "derived": "Calculé",
         "notRecruitedHint": "Non recruté. Recrutez cet expert dans Tundra Trek, puis activez Recruté.",
         "recruitmentCost": "Coût de recrutement : {cost}",
         "maxPower": "Puissance max {max}",
@@ -85,7 +84,8 @@
         "skillCapped": "Le niveau {next} demande le niveau de relation {level}, avancé.",
         "sigilsOwned": "Sceaux possédés",
         "sigilsOwnedLabel": "Sceaux de {expert} possédés",
-        "sigilsHint": "Le même nombre que le sceau de la page Ressources."
+        "sigilsHint": "Le même nombre que le sceau de la page Ressources.",
+        "skillTotal": "Le niveau {next} demande un niveau total de compétences de {total}. Actuellement {have}."
     },
     "filtersFlyout": {
         "title": "Filtres",
@@ -121,7 +121,8 @@
             "books": "Books of Knowledge",
             "sigils": "Sceaux d'expert",
             "exp": "EXP de compétence",
-            "expReason": "Aucun événement ne note l'EXP de compétence."
+            "expReason": "Aucun événement ne note l'EXP de compétence.",
+            "learningSpeedups": "Minutes d'accélérateurs d'apprentissage"
         },
         "noExperts": "Aucun expert dans le plan pour l'instant. Ajoutez un expert recruté pour définir ses objectifs.",
         "add": {
@@ -129,7 +130,8 @@
             "selectLabel": "Expert à ajouter",
             "button": "Ajouter l'expert",
             "allIn": "Tous les experts recrutés sont dans le plan.",
-            "noneRecruited": "Recrutez un expert sur la page pour le planifier."
+            "noneRecruited": "Recrutez un expert sur la page pour le planifier.",
+            "option": "{name}, {count} sceaux"
         },
         "block": {
             "remove": "Retirer",
@@ -146,7 +148,13 @@
             "affinityGoalLabel": "Objectif d'affinité de {expert}",
             "skillGoalLabel": "Objectif de {skill} de {expert}",
             "advanceAtGoal": "Avancer au niveau {level}",
-            "advanceAtGoalLabel": "Avancement de {expert} à l'objectif"
+            "advanceAtGoalLabel": "Avancement de {expert} à l'objectif",
+            "sigils": "Sceaux {count}",
+            "affinityNeeded": "Affinité nécessaire {amount}",
+            "affinityNext": "Le niveau suivant demande {amount} d'affinité",
+            "expNeeded": "EXP nécessaire {amount}",
+            "advanceSigils": "{count} sceaux",
+            "expHeldLearning": "EXP disponible {amount} (actuel + session d'apprentissage)"
         },
         "checks": {
             "affinity": "Points d'affinité",
@@ -156,18 +164,17 @@
         "stock": {
             "sigils": "Le plan nécessite {total} sceaux. Vos sceaux d'expert en couvrent {own}, donc {common} doivent venir des Common Expert Sigils. Chaque sceau d'expert que vous possédez ne compte que pour cet expert.",
             "books": "Le plan nécessite {amount} Books of Knowledge pour les niveaux de compétence.",
-            "affinity": "Le plan nécessite {needed} points d'affinité. Ce que vous avez sur les cartes d'experts en couvre {held}, il en reste donc {left} à obtenir. Les données n'ont pas d'objet d'affinité, rien n'est donc comparé à un stock.",
+            "affinity": "Le plan demande {needed} points d'affinité. Les cadeaux d'affinité de la page Ressources et les points des cartes d'expert couvrent {held}, il en reste donc {left} à obtenir.",
             "learning": "Le plan nécessite {exp} EXP de compétence. Vos compétences en ont {held}, donc {left} doivent venir d'accélérations d'apprentissage. Une minute d'apprentissage donne {rate} EXP, soit {minutes} minutes."
         },
         "byExpert": {
             "title": "Par expert",
             "sigils": "Sceaux : {needed} nécessaires, {own} couverts par votre sceau {name}, {common} à obtenir via Common Expert Sigils",
-            "affinity": "Affinité : {needed} nécessaires, {held} disponibles, {left} encore à obtenir",
+            "affinity": "Affinité : {needed} nécessaires, {held} couverts, {left} restent à obtenir",
             "exp": "EXP de compétence : {needed} nécessaires, {held} disponibles, {left} encore à obtenir"
         },
         "result": {
             "title": "Résultat",
-            "derived": "Calculé",
             "books": "Books of Knowledge",
             "sigils": "Sceaux",
             "exp": "EXP de compétence",

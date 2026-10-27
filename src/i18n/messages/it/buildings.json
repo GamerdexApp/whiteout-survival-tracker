@@ -224,10 +224,10 @@
         "goalsHeading": "{count, plural, one {Obiettivi, {amount} edificio} other {Obiettivi, {amount} edifici}}",
         "noGoals": "Ancora nessun obiettivo. Aggiungi un edificio qui sopra, poi scegli il livello da raggiungere.",
         "prerequisiteNote": "I passi preliminari vengono aggiunti per te. Un livello che richiede un altro edificio a un livello più alto conta quei passi e li segnala.",
-        "timeNote": "Il piano richiede {time} dopo il bonus velocità del {percent}%. Le tue scorte: Costruzione {construction} min, Generale {general} min. Le accelerazioni generali contano per la costruzione.",
+        "timeNote": "Il piano richiede {time} dopo il bonus di velocità del {percent}%. Le tue scorte: Costruzione {construction} min, Generale {general} min applicati. Conta solo la quota di accelerazioni generali impostata sotto.",
         "add": {
             "title": "Aggiungi un edificio",
-            "allAdded": "Ogni edificio è già nel piano.",
+            "allAdded": "Ogni edificio è già nel piano o al livello massimo.",
             "selectLabel": "Edificio da aggiungere",
             "button": "Aggiungi edificio"
         },

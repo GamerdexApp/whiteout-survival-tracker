@@ -27,8 +27,10 @@
     },
     "view": {
         "subline": "Предметов: {items}, категорий: {categories}",
-        "sublineInCategory": "Предметов: {items}, категорий: {categories} · в категории «{category}»: {inCategory}",
-        "unsaved": "Не сохранено",
+        "coreSubline": "{chief} · Количество ресурсов и стопки в рюкзаке",
+        "tabsLabel": "Виды ресурсов",
+        "coreTab": "Основные ресурсы",
+        "allTab": "Все предметы",
         "shortages": "Целям планировщика не хватает: {names}.",
         "shortagesLink": "Открыть план зданий",
         "show": {
@@ -78,6 +80,52 @@
             "setToZero": "{name}: обнулено",
             "savedTitle": "Количества сохранены",
             "savedMessage": "{count, plural, one {Изменено {amount} количество.} few {Изменено {amount} количества.} many {Изменено {amount} количеств.} other {Изменено {amount} количества.}}"
+        },
+        "totals": {
+            "loose": "Отдельно",
+            "packs": "Пачки",
+            "securedPacks": "Защищённые пачки",
+            "anyTitle": "Любой (сундуки)",
+            "commonSigils": "Общие печати",
+            "books": "Книги",
+            "affinity": "Близость"
+        }
+    },
+    "core": {
+        "resourcesSection": "Ресурсы",
+        "counts": "Количество ресурсов",
+        "backpack": "Рюкзак",
+        "secured": "{name} (Защищённые)",
+        "level": "Ур. {level}",
+        "customChests": "Настраиваемые сундуки ресурсов",
+        "customSecuredChests": "Настраиваемые защищённые сундуки ресурсов",
+        "fireCrystalSection": "Огненный кристалл",
+        "speedupsSection": "Ускорения",
+        "expertsSection": "Эксперты",
+        "expertSigilsRow": "Печати экспертов",
+        "affinityGiftsRow": "Подарки для близости",
+        "commonExpertRow": "Общие печати и книги",
+        "petsSection": "Питомцы",
+        "petAdvancementRow": "Материалы продвижения",
+        "petFoodAndMarksRow": "Корм и дикие метки",
+        "heroGearSection": "Снаряжение героев",
+        "heroGearMaterialsRow": "Материалы улучшения",
+        "heroGearRow": "Снаряжение и сундуки снаряжения",
+        "chiefGearSection": "Снаряжение и талисманы вождя",
+        "chiefGearRow": "Снаряжение вождя",
+        "chiefCharmRow": "Талисманы вождя",
+        "chiefChestsRow": "Сундуки снаряжения и талисманов",
+        "heroShards": {
+            "section": "Осколки героев",
+            "showCompleted": "Показать завершённых героев",
+            "hintHidden": "Скрыты завершённые герои, осколки и руководства: {count}",
+            "hintShown": "Показаны завершённые герои, осколки и руководства",
+            "allCompleted": "У всех открытых героев есть все звёзды. Включите переключатель, чтобы увидеть их.",
+            "generation": "Пок. {generation}",
+            "shardName": "Осколок: {name}",
+            "generalShards": "Общие осколки",
+            "expeditionManuals": "Руководства навыков экспедиции",
+            "explorationManuals": "Руководства навыков исследования"
         }
     },
     "planStock": {

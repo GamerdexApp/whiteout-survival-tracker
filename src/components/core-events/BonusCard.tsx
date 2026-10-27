@@ -25,14 +25,16 @@ export function BonusCard({ chief, event, bonusPercent }: BonusCardProps) {
 				</h2>
 				<p className="text-muted">{event === "svs" ? t("svsHelp") : t("showdownHelp")}</p>
 			</div>
-			<div className="flex flex-col gap-2 lg:max-w-56 lg:items-end lg:text-end">
-				<div className="flex items-center gap-2">
-					<span className="font-mono font-semibold">
+			<div className="flex flex-col gap-2 lg:max-w-80 lg:shrink-0 lg:items-end lg:text-end">
+				<div className="flex flex-wrap items-center gap-x-2 gap-y-1 lg:justify-end">
+					<span
+						className={`font-mono font-semibold ${bonus.level === null ? "" : "whitespace-nowrap"}`}
+					>
 						{bonus.level === null
 							? t("none")
 							: t("levelWithPercent", { level: bonus.level, percent: bonusPercent })}
 					</span>
-					<span className="border-line text-muted rounded-full border-[1.5px] px-2 py-0.5 font-mono text-[11px]">
+					<span className="border-line text-muted shrink-0 rounded-full border-[1.5px] px-2 py-0.5 font-mono text-[11px] whitespace-nowrap">
 						{t("readOnly")}
 					</span>
 				</div>

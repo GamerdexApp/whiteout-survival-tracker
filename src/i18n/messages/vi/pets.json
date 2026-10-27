@@ -203,7 +203,13 @@
             },
             "notScored": "Không tính điểm",
             "eventNote": "Điểm sự kiện là điểm thăng tiến nhân với điểm của dòng tính điểm trong mỗi sự kiện.",
-            "scoreSourceNote": "Điểm thăng tiến cho cấp 40 đến 100 khớp với ghi chú sự kiện. Cấp 10 đến 30 lấy từ một nguồn (WoS Tools)."
+            "scoreSourceNote": "Điểm thăng tiến cho cấp 40 đến 100 khớp với ghi chú sự kiện. Cấp 10 đến 30 lấy từ một nguồn (WoS Tools).",
+            "chestOf": "trong {held} đang có"
+        },
+        "chest": {
+            "covers": "{amount} trong số khả dụng đến từ Rương tùy chọn vật liệu thăng cấp thú cưng",
+            "allUsed": "Dùng hết cả {used} Rương tùy chọn vật liệu thăng cấp thú cưng của bạn: {serums} cho Huyết thanh tăng cường, {potions} cho Thuốc tiếp sức, {manuals} cho Sách thuần hóa.",
+            "used": "Dùng {used} trong {held} Rương tùy chọn vật liệu thăng cấp thú cưng của bạn: {serums} cho Huyết thanh tăng cường, {potions} cho Thuốc tiếp sức, {manuals} cho Sách thuần hóa."
         }
     }
 }

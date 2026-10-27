@@ -74,7 +74,6 @@
         "talentLevel": "Level {level} of {max}",
         "talentFollows": "Follows {relationship}. {effect}.",
         "power": "Power {now} of {max}",
-        "derived": "Derived",
         "notRecruitedHint": "Not recruited. Recruit this expert in Tundra Trek, then switch Recruited on.",
         "recruitmentCost": "Recruitment cost: {cost}",
         "maxPower": "Max power {max}",
@@ -85,7 +84,8 @@
         "skillCapped": "Level {next} needs relationship level {level}, advanced.",
         "sigilsOwned": "Sigils owned",
         "sigilsOwnedLabel": "{expert} sigils owned",
-        "sigilsHint": "The same count as the sigil on the Resources page."
+        "sigilsHint": "The same count as the sigil on the Resources page.",
+        "skillTotal": "Level {next} needs a total skill level of {total}. Now {have}."
     },
     "filtersFlyout": {
         "title": "Filters",
@@ -121,7 +121,8 @@
             "books": "Books of Knowledge",
             "sigils": "Expert sigils",
             "exp": "Skill EXP",
-            "expReason": "No event scores skill EXP."
+            "expReason": "No event scores skill EXP.",
+            "learningSpeedups": "Learning speedup minutes"
         },
         "noExperts": "No experts in the plan yet. Add a recruited expert to set its goals.",
         "add": {
@@ -129,7 +130,8 @@
             "selectLabel": "Expert to add",
             "button": "Add expert",
             "allIn": "Every recruited expert is in the plan.",
-            "noneRecruited": "Recruit an expert on the page to plan it."
+            "noneRecruited": "Recruit an expert on the page to plan it.",
+            "option": "{name}, {count} sigils"
         },
         "block": {
             "remove": "Remove",
@@ -146,7 +148,13 @@
             "affinityGoalLabel": "{expert} affinity goal",
             "skillGoalLabel": "{expert} {skill} goal",
             "advanceAtGoal": "Advance at level {level}",
-            "advanceAtGoalLabel": "{expert} advance at the goal"
+            "advanceAtGoalLabel": "{expert} advance at the goal",
+            "sigils": "Sigils {count}",
+            "affinityNeeded": "Affinity needed {amount}",
+            "affinityNext": "Next level needs {amount} affinity",
+            "expNeeded": "EXP needed {amount}",
+            "advanceSigils": "{count} sigils",
+            "expHeldLearning": "EXP available {amount} (current + Learning Session)"
         },
         "checks": {
             "affinity": "Affinity points",
@@ -156,18 +164,17 @@
         "stock": {
             "sigils": "The plan needs {total} sigils. Your expert sigils cover {own} of them, so {common} must come from Common Expert Sigils. Each expert sigil you hold only counts for that expert.",
             "books": "The plan needs {amount} Books of Knowledge for the skill levels.",
-            "affinity": "The plan needs {needed} affinity points. What you hold on the expert cards covers {held}, so {left} are still to get. The package has no affinity item, so nothing is checked against a stock.",
+            "affinity": "The plan needs {needed} affinity points. The affinity gifts on the Resources page and the points on the expert cards cover {held}, so {left} are still to get.",
             "learning": "The plan needs {exp} skill EXP. Your skills hold {held}, so {left} must come from learning speedups. One minute of learning gives {rate} EXP, so that is {minutes} minutes."
         },
         "byExpert": {
             "title": "By expert",
             "sigils": "Sigils: {needed} needed, {own} covered by your {name} sigil, {common} to come from Common Expert Sigils",
-            "affinity": "Affinity: {needed} needed, {held} available, {left} still to get",
+            "affinity": "Affinity: {needed} needed, {held} covered, {left} still to get",
             "exp": "Skill EXP: {needed} needed, {held} available, {left} still to get"
         },
         "result": {
             "title": "Result",
-            "derived": "Derived",
             "books": "Books of Knowledge",
             "sigils": "Sigils",
             "exp": "Skill EXP",

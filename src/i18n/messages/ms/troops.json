@@ -59,8 +59,7 @@
             "button": "Eksport ke Acara Utama",
             "emptyHint": "Tambah latihan untuk mengeksportnya.",
             "computed": "Dikira oleh aplikasi.",
-            "trainedGroup": "untuk tentera dilatih",
-            "speedupGroup": "untuk minit pecutan",
+            "trainedGroup": "untuk tentera dan pecutan",
             "trainedTier": "Tentera Peringkat {tier} dilatih",
             "speedupMinutes": "Minit pecutan latihan digunakan",
             "promoted": "Tentera dinaikkan pangkat",
@@ -130,7 +129,7 @@
         "stock": {
             "name": "Pecutan latihan",
             "minutesUnit": "min",
-            "note": "Stok anda: Latihan {training} min, Am {general} min. Pecutan Am dikira untuk latihan. Latihan yang tidak dilindungi pecutan siap dalam masa biasa, jadi hanya pecutan yang anda pegang digunakan: {used} min."
+            "note": "Stok anda: Latihan {training} min, Am {general} min digunakan. Hanya bahagian pecutan am yang ditetapkan di bawah dikira. Latihan yang tidak dilindungi pecutan siap dalam masa biasa, jadi hanya pecutan yang anda miliki digunakan: {used} min."
         },
         "result": {
             "title": "Hasil",

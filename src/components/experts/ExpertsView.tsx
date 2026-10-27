@@ -240,7 +240,7 @@ export function ExpertsView({ chief }: { chief: Playthrough }) {
 					}
 				/>
 			) : (
-				<ul className="lg:columns-2 lg:gap-3">
+				<ul className="grid gap-3 lg:grid-cols-2">
 					{visible.map((view) => (
 						<ExpertCard
 							key={view.expert.id}

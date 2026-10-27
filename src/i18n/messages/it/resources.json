@@ -27,8 +27,10 @@
     },
     "view": {
         "subline": "{items} oggetti in {categories} categorie",
-        "sublineInCategory": "{items} oggetti in {categories} categorie · {inCategory} in {category}",
-        "unsaved": "Non salvato",
+        "coreSubline": "{chief} · Quantità di risorse e pile dello zaino",
+        "tabsLabel": "Viste delle risorse",
+        "coreTab": "Risorse principali",
+        "allTab": "Tutti gli oggetti",
         "shortages": "Gli obiettivi del pianificatore sono scarsi di {names}.",
         "shortagesLink": "Apri il piano di Edifici",
         "show": {
@@ -78,6 +80,52 @@
             "setToZero": "{name} impostato a 0",
             "savedTitle": "Quantità salvate",
             "savedMessage": "{count, plural, one {{amount} quantità cambiata} other {{amount} quantità cambiate}}."
+        },
+        "totals": {
+            "loose": "Sfuso",
+            "packs": "Pacchetti",
+            "securedPacks": "Pacchetti protetti",
+            "anyTitle": "Qualsiasi (forzieri)",
+            "commonSigils": "Sigilli comuni",
+            "books": "Libri",
+            "affinity": "Affinità"
+        }
+    },
+    "core": {
+        "resourcesSection": "Risorse",
+        "counts": "Quantità di risorse",
+        "backpack": "Zaino",
+        "secured": "{name} (Protetto)",
+        "level": "Liv. {level}",
+        "customChests": "Forzieri risorse personalizzati",
+        "customSecuredChests": "Forzieri risorse protetti personalizzati",
+        "fireCrystalSection": "Cristallo di fuoco",
+        "speedupsSection": "Accelerazioni",
+        "expertsSection": "Esperti",
+        "expertSigilsRow": "Sigilli degli esperti",
+        "affinityGiftsRow": "Regali di affinità",
+        "commonExpertRow": "Sigilli comuni e libri",
+        "petsSection": "Animali",
+        "petAdvancementRow": "Materiali di avanzamento",
+        "petFoodAndMarksRow": "Cibo e marchi selvaggi",
+        "heroGearSection": "Equipaggiamento eroe",
+        "heroGearMaterialsRow": "Materiali di potenziamento",
+        "heroGearRow": "Equipaggiamento e forzieri",
+        "chiefGearSection": "Equipaggiamento e amuleti del capo",
+        "chiefGearRow": "Equipaggiamento del capo",
+        "chiefCharmRow": "Amuleti del capo",
+        "chiefChestsRow": "Forzieri di equipaggiamento e amuleti",
+        "heroShards": {
+            "section": "Frammenti eroe",
+            "showCompleted": "Mostra eroi completati",
+            "hintHidden": "Eroi, frammenti e manuali completati nascosti: {count}",
+            "hintShown": "Mostra eroi, frammenti e manuali completati",
+            "allCompleted": "Tutti gli eroi sbloccati hanno tutte le stelle. Attiva l'interruttore per vederli.",
+            "generation": "Gen {generation}",
+            "shardName": "Frammento di {name}",
+            "generalShards": "Frammenti generali",
+            "expeditionManuals": "Manuali abilità spedizione",
+            "explorationManuals": "Manuali abilità esplorazione"
         }
     },
     "planStock": {

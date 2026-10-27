@@ -74,7 +74,6 @@
         "talentLevel": "Уровень {level} из {max}",
         "talentFollows": "Зависит от: {relationship}. {effect}.",
         "power": "Мощь {now} из {max}",
-        "derived": "Расчёт",
         "notRecruitedHint": "Не нанят. Наймите эксперта в Tundra Trek и включите «Нанят».",
         "recruitmentCost": "Цена найма: {cost}",
         "maxPower": "Макс. мощь {max}",
@@ -85,7 +84,8 @@
         "skillCapped": "Для уровня {next} нужен уровень отношений {level}, продвинут.",
         "sigilsOwned": "Есть сигилов",
         "sigilsOwnedLabel": "Сигилов у {expert}",
-        "sigilsHint": "Это то же число, что и у сигила на странице ресурсов."
+        "sigilsHint": "Это то же число, что и у сигила на странице ресурсов.",
+        "skillTotal": "Уровню {next} нужна суммарная прокачка навыков {total}. Сейчас {have}."
     },
     "filtersFlyout": {
         "title": "Фильтры",
@@ -121,7 +121,8 @@
             "books": "Books of Knowledge",
             "sigils": "Сигилы экспертов",
             "exp": "EXP навыков",
-            "expReason": "Ни одно событие не начисляет очки за EXP навыков."
+            "expReason": "Ни одно событие не начисляет очки за EXP навыков.",
+            "learningSpeedups": "Минуты ускорений обучения"
         },
         "noExperts": "В плане пока нет экспертов. Добавьте нанятого эксперта, чтобы задать цели.",
         "add": {
@@ -129,7 +130,8 @@
             "selectLabel": "Эксперт для добавления",
             "button": "Добавить эксперта",
             "allIn": "Все нанятые эксперты уже в плане.",
-            "noneRecruited": "Наймите эксперта на странице, чтобы запланировать его."
+            "noneRecruited": "Наймите эксперта на странице, чтобы запланировать его.",
+            "option": "{name}, печатей: {count}"
         },
         "block": {
             "remove": "Убрать",
@@ -146,7 +148,13 @@
             "affinityGoalLabel": "Цель по близости: {expert}",
             "skillGoalLabel": "Цель по навыку {skill}: {expert}",
             "advanceAtGoal": "Продвинуть на уровне {level}",
-            "advanceAtGoalLabel": "{expert}: продвинуть на цели"
+            "advanceAtGoalLabel": "{expert}: продвинуть на цели",
+            "sigils": "Печати {count}",
+            "affinityNeeded": "Нужно близости {amount}",
+            "affinityNext": "Следующему уровню нужно {amount} близости",
+            "expNeeded": "Нужно опыта {amount}",
+            "advanceSigils": "Печатей: {count}",
+            "expHeldLearning": "Доступно опыта {amount} (сейчас + сессия обучения)"
         },
         "checks": {
             "affinity": "Очки близости",
@@ -156,18 +164,17 @@
         "stock": {
             "sigils": "Плану нужно сигилов: {total}. Ваши сигилы экспертов покрывают {own}, остальные {common} нужно взять из Common Expert Sigils. Каждый сигил эксперта считается только для этого эксперта.",
             "books": "Плану нужно Books of Knowledge для уровней навыков: {amount}.",
-            "affinity": "Плану нужно очков близости: {needed}. Того, что указано на карточках экспертов, хватает на {held}, ещё нужно добыть {left}. В пакете нет предмета близости, поэтому запас не проверяется.",
+            "affinity": "Плану нужно {needed} очков близости. Подарки на близость со страницы ресурсов и очки на карточках экспертов покрывают {held}, так что осталось получить {left}.",
             "learning": "Плану нужно EXP навыков: {exp}. В ваших навыках {held}, остальные {left} нужно взять из ускорений обучения. Одна минута обучения даёт {rate} EXP, то есть нужно минут: {minutes}."
         },
         "byExpert": {
             "title": "По экспертам",
             "sigils": "Сигилы: нужно {needed}, покрывает ваш сигил {name}: {own}, из Common Expert Sigils: {common}",
-            "affinity": "Близость: нужно {needed}, есть {held}, осталось добыть {left}",
+            "affinity": "Близость: нужно {needed}, покрыто {held}, осталось получить {left}",
             "exp": "EXP навыков: нужно {needed}, есть {held}, осталось добыть {left}"
         },
         "result": {
             "title": "Итог",
-            "derived": "Расчёт",
             "books": "Books of Knowledge",
             "sigils": "Сигилы",
             "exp": "EXP навыков",

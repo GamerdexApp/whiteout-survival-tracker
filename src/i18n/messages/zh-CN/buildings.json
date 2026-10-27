@@ -224,10 +224,10 @@
         "goalsHeading": "{count, plural, other {目标，{amount}个建筑}}",
         "noGoals": "还没有目标。请先在上方添加建筑，再选择想达到的等级。",
         "prerequisiteNote": "前置步骤会自动加入。需要另一个建筑升到更高等级的等级，会计入这些步骤并加以标记。",
-        "timeNote": "计划在{percent}% 速度加成后需要{time}。你的库存：建造{construction}分，通用{general}分。通用加速也可用于建造。",
+        "timeNote": "计划在 {percent}% 速度加成后需要 {time}。你的库存：建造 {construction} 分钟，已使用通用 {general} 分钟。只计入下方设置的通用加速比例。",
         "add": {
             "title": "添加建筑",
-            "allAdded": "所有建筑都已在计划中。",
+            "allAdded": "所有建筑都已在计划中或已满级。",
             "selectLabel": "要添加的建筑",
             "button": "添加建筑"
         },

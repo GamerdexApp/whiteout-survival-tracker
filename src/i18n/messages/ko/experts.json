@@ -74,7 +74,6 @@
         "talentLevel": "{max}레벨 중 {level}레벨",
         "talentFollows": "{relationship}을(를) 따라요. {effect}.",
         "power": "전투력 {max} 중 {now}",
-        "derived": "계산값",
         "notRecruitedHint": "영입하지 않았어요. Tundra Trek에서 이 전문가를 영입한 뒤 영입을 켜세요.",
         "recruitmentCost": "영입 비용: {cost}",
         "maxPower": "최대 전투력 {max}",
@@ -85,7 +84,8 @@
         "skillCapped": "{next}레벨은 관계 레벨 {level}에서 승급해야 해요.",
         "sigilsOwned": "보유 인장",
         "sigilsOwnedLabel": "{expert} 보유 인장",
-        "sigilsHint": "자원 페이지의 인장과 같은 수량이에요."
+        "sigilsHint": "자원 페이지의 인장과 같은 수량이에요.",
+        "skillTotal": "레벨 {next}에는 스킬 레벨 합계 {total}이(가) 필요합니다. 현재 {have}."
     },
     "filtersFlyout": {
         "title": "필터",
@@ -121,7 +121,8 @@
             "books": "Books of Knowledge",
             "sigils": "전문가 인장",
             "exp": "스킬 경험치",
-            "expReason": "스킬 경험치에 점수를 주는 이벤트는 없어요."
+            "expReason": "스킬 경험치에 점수를 주는 이벤트는 없어요.",
+            "learningSpeedups": "학습 가속 분"
         },
         "noExperts": "계획에 전문가가 아직 없어요. 영입한 전문가를 추가해 목표를 설정하세요.",
         "add": {
@@ -129,7 +130,8 @@
             "selectLabel": "추가할 전문가",
             "button": "전문가 추가",
             "allIn": "영입한 모든 전문가가 계획에 있어요.",
-            "noneRecruited": "페이지에서 전문가를 영입하면 계획할 수 있어요."
+            "noneRecruited": "페이지에서 전문가를 영입하면 계획할 수 있어요.",
+            "option": "{name}, 인장 {count}개"
         },
         "block": {
             "remove": "삭제",
@@ -146,7 +148,13 @@
             "affinityGoalLabel": "{expert} 친밀도 목표",
             "skillGoalLabel": "{expert} {skill} 목표",
             "advanceAtGoal": "{level}레벨에서 승급",
-            "advanceAtGoalLabel": "{expert} 목표에서 승급"
+            "advanceAtGoalLabel": "{expert} 목표에서 승급",
+            "sigils": "인장 {count}",
+            "affinityNeeded": "필요 친밀도 {amount}",
+            "affinityNext": "다음 레벨에 친밀도 {amount} 필요",
+            "expNeeded": "필요 EXP {amount}",
+            "advanceSigils": "인장 {count}개",
+            "expHeldLearning": "사용 가능한 EXP {amount} (현재 + 학습 세션)"
         },
         "checks": {
             "affinity": "친밀도 포인트",
@@ -156,18 +164,17 @@
         "stock": {
             "sigils": "계획에 인장 {total}개가 필요해요. 보유한 전문가 인장이 {own}개를 채우므로 {common}개는 Common Expert Sigils로 채워야 해요. 보유한 전문가 인장은 해당 전문가에게만 쓸 수 있어요.",
             "books": "계획에 스킬 레벨용 Books of Knowledge {amount}개가 필요해요.",
-            "affinity": "계획에 친밀도 포인트 {needed}가 필요해요. 전문가 카드에 있는 보유량이 {held}를 채우므로 {left}를 더 얻어야 해요. 패키지에 친밀도 아이템이 없어서 재고와 비교하지 않아요.",
+            "affinity": "계획에 친밀도 {needed}점이 필요합니다. 자원 페이지의 친밀도 선물과 전문가 카드의 점수로 {held}점을 채우므로 {left}점이 더 필요합니다.",
             "learning": "계획에 스킬 경험치 {exp}가 필요해요. 스킬에 {held}가 있으므로 {left}는 학습 가속으로 채워야 해요. 학습 1분에 경험치 {rate}를 얻으므로 {minutes}분이 필요해요."
         },
         "byExpert": {
             "title": "전문가별",
             "sigils": "인장: {needed}개 필요, {name} 인장 {own}개로 충당, Common Expert Sigils로 {common}개 채움",
-            "affinity": "친밀도: {needed} 필요, {held} 보유, {left} 더 필요",
+            "affinity": "친밀도: {needed} 필요, {held} 충당, {left} 더 필요",
             "exp": "스킬 경험치: {needed} 필요, {held} 보유, {left} 더 필요"
         },
         "result": {
             "title": "결과",
-            "derived": "계산값",
             "books": "Books of Knowledge",
             "sigils": "인장",
             "exp": "스킬 경험치",

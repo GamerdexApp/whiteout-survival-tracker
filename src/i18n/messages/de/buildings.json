@@ -224,10 +224,10 @@
         "goalsHeading": "{count, plural, one {Ziele, {amount} Gebäude} other {Ziele, {amount} Gebäude}}",
         "noGoals": "Noch keine Ziele. Füge oben ein Gebäude hinzu und wähle die Stufe, die es erreichen soll.",
         "prerequisiteNote": "Vorbedingungen werden für dich ergänzt. Eine Stufe, die ein anderes Gebäude auf höherer Stufe braucht, zählt diese Schritte mit und markiert sie.",
-        "timeNote": "Der Plan dauert {time} nach dem Tempobonus von {percent}%. Dein Bestand: Bau {construction} Min, Allgemein {general} Min. Allgemeine Beschleuniger zählen für den Bau.",
+        "timeNote": "Der Plan dauert {time} nach dem Tempobonus von {percent}%. Dein Bestand: Bau {construction} Min, Allgemein {general} Min angewendet. Es zählt nur der unten festgelegte Anteil der allgemeinen Beschleuniger.",
         "add": {
             "title": "Gebäude hinzufügen",
-            "allAdded": "Jedes Gebäude ist schon im Plan.",
+            "allAdded": "Jedes Gebäude ist bereits im Plan oder auf der Höchststufe.",
             "selectLabel": "Gebäude zum Hinzufügen",
             "button": "Gebäude hinzufügen"
         },

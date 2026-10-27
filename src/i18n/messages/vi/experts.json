@@ -74,7 +74,6 @@
         "talentLevel": "Cấp {level} trên {max}",
         "talentFollows": "Theo {relationship}. {effect}.",
         "power": "Sức mạnh {now} trên {max}",
-        "derived": "Suy ra",
         "notRecruitedHint": "Chưa chiêu mộ. Hãy chiêu mộ chuyên gia này trong Tundra Trek, rồi bật Đã chiêu mộ.",
         "recruitmentCost": "Chi phí chiêu mộ: {cost}",
         "maxPower": "Sức mạnh tối đa {max}",
@@ -85,7 +84,8 @@
         "skillCapped": "Cấp {next} cần cấp quan hệ {level}, đã thăng tiến.",
         "sigilsOwned": "Sigil đang có",
         "sigilsOwnedLabel": "Sigil của {expert} đang có",
-        "sigilsHint": "Cùng số lượng với sigil ở trang Tài nguyên."
+        "sigilsHint": "Cùng số lượng với sigil ở trang Tài nguyên.",
+        "skillTotal": "Cấp {next} cần tổng cấp kỹ năng {total}. Hiện tại {have}."
     },
     "filtersFlyout": {
         "title": "Bộ lọc",
@@ -121,7 +121,8 @@
             "books": "Books of Knowledge",
             "sigils": "Sigil chuyên gia",
             "exp": "EXP kỹ năng",
-            "expReason": "Không sự kiện nào tính điểm cho EXP kỹ năng."
+            "expReason": "Không sự kiện nào tính điểm cho EXP kỹ năng.",
+            "learningSpeedups": "Phút tăng tốc học"
         },
         "noExperts": "Kế hoạch chưa có chuyên gia nào. Hãy thêm một chuyên gia đã chiêu mộ để đặt mục tiêu.",
         "add": {
@@ -129,7 +130,8 @@
             "selectLabel": "Chuyên gia cần thêm",
             "button": "Thêm chuyên gia",
             "allIn": "Mọi chuyên gia đã chiêu mộ đều có trong kế hoạch.",
-            "noneRecruited": "Hãy chiêu mộ một chuyên gia trên trang để lập kế hoạch cho họ."
+            "noneRecruited": "Hãy chiêu mộ một chuyên gia trên trang để lập kế hoạch cho họ.",
+            "option": "{name}, {count} ấn"
         },
         "block": {
             "remove": "Xóa",
@@ -146,7 +148,13 @@
             "affinityGoalLabel": "Mục tiêu thân thiết của {expert}",
             "skillGoalLabel": "Mục tiêu {skill} của {expert}",
             "advanceAtGoal": "Thăng tiến ở cấp {level}",
-            "advanceAtGoalLabel": "{expert} thăng tiến ở mục tiêu"
+            "advanceAtGoalLabel": "{expert} thăng tiến ở mục tiêu",
+            "sigils": "Ấn {count}",
+            "affinityNeeded": "Cần thân mật {amount}",
+            "affinityNext": "Cấp tiếp theo cần {amount} thân mật",
+            "expNeeded": "Cần EXP {amount}",
+            "advanceSigils": "{count} ấn",
+            "expHeldLearning": "EXP khả dụng {amount} (hiện tại + phiên học)"
         },
         "checks": {
             "affinity": "Điểm thân thiết",
@@ -156,18 +164,17 @@
         "stock": {
             "sigils": "Kế hoạch cần {total} sigil. Sigil chuyên gia của bạn đủ cho {own}, nên {common} phải lấy từ Common Expert Sigils. Mỗi sigil chuyên gia bạn có chỉ tính cho chuyên gia đó.",
             "books": "Kế hoạch cần {amount} Books of Knowledge cho các cấp kỹ năng.",
-            "affinity": "Kế hoạch cần {needed} điểm thân thiết. Số bạn đang giữ trên thẻ chuyên gia đủ cho {held}, nên còn {left} cần kiếm thêm. Gói dữ liệu không có vật phẩm thân thiết, nên không kiểm tra theo kho.",
+            "affinity": "Kế hoạch cần {needed} điểm thân mật. Quà thân mật ở trang Tài nguyên và điểm trên thẻ chuyên gia đáp ứng {held}, nên còn cần thêm {left}.",
             "learning": "Kế hoạch cần {exp} EXP kỹ năng. Kỹ năng của bạn đang có {held}, nên {left} phải lấy từ vật phẩm tăng tốc học. Một phút học cho {rate} EXP, tức là {minutes} phút."
         },
         "byExpert": {
             "title": "Theo chuyên gia",
             "sigils": "Sigil: cần {needed}, {own} đã có từ sigil {name} của bạn, {common} lấy từ Common Expert Sigils",
-            "affinity": "Thân thiết: cần {needed}, đang có {held}, còn {left} cần kiếm thêm",
+            "affinity": "Thân mật: cần {needed}, đã đáp ứng {held}, còn cần {left}",
             "exp": "EXP kỹ năng: cần {needed}, đang có {held}, còn {left} cần kiếm thêm"
         },
         "result": {
             "title": "Kết quả",
-            "derived": "Suy ra",
             "books": "Books of Knowledge",
             "sigils": "Sigil",
             "exp": "EXP kỹ năng",

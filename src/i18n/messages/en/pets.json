@@ -203,7 +203,13 @@
             },
             "notScored": "Not scored",
             "eventNote": "Event points are the advancement score times the points of the scoring row of each event.",
-            "scoreSourceNote": "Advancement scores for levels 40 to 100 match the event notes. Levels 10 to 30 come from one source (WoS Tools)."
+            "scoreSourceNote": "Advancement scores for levels 40 to 100 match the event notes. Levels 10 to 30 come from one source (WoS Tools).",
+            "chestOf": "of {held} held"
+        },
+        "chest": {
+            "covers": "{amount} of the available come from Pet Advancement Materials Custom Chests",
+            "allUsed": "All {used} of your Pet Advancement Materials Custom Chests are used: {serums} for Strengthening Serums, {potions} for Energizing Potions, {manuals} for Taming Manuals.",
+            "used": "{used} of your {held} Pet Advancement Materials Custom Chests are used: {serums} for Strengthening Serums, {potions} for Energizing Potions, {manuals} for Taming Manuals."
         }
     }
 }

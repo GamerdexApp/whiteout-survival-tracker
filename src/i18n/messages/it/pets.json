@@ -203,7 +203,13 @@
             },
             "notScored": "Senza punti",
             "eventNote": "I punti evento sono il punteggio di avanzamento per i punti della riga di punteggio di ogni evento.",
-            "scoreSourceNote": "I punteggi di avanzamento dei livelli da 40 a 100 corrispondono alle note degli eventi. I livelli da 10 a 30 vengono da una sola fonte (WoS Tools)."
+            "scoreSourceNote": "I punteggi di avanzamento dei livelli da 40 a 100 corrispondono alle note degli eventi. I livelli da 10 a 30 vengono da una sola fonte (WoS Tools).",
+            "chestOf": "su {held} posseduti"
+        },
+        "chest": {
+            "covers": "{amount} del disponibile provengono dai Forzieri personalizzati dei materiali di avanzamento animale",
+            "allUsed": "Tutti i {used} Forzieri personalizzati dei materiali di avanzamento animale che hai sono usati: {serums} per i Sieri rinforzanti, {potions} per le Pozioni energizzanti, {manuals} per i Manuali di addomesticamento.",
+            "used": "{used} dei tuoi {held} Forzieri personalizzati dei materiali di avanzamento animale sono usati: {serums} per i Sieri rinforzanti, {potions} per le Pozioni energizzanti, {manuals} per i Manuali di addomesticamento."
         }
     }
 }

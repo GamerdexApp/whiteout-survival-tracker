@@ -74,7 +74,6 @@
         "talentLevel": "เลเวล {level} จาก {max}",
         "talentFollows": "ตาม {relationship} {effect}",
         "power": "พลัง {now} จาก {max}",
-        "derived": "คำนวณจากข้อมูล",
         "notRecruitedHint": "ยังไม่ได้สรรหา สรรหาผู้เชี่ยวชาญนี้ใน Tundra Trek แล้วเปิดสรรหาแล้ว",
         "recruitmentCost": "ค่าสรรหา: {cost}",
         "maxPower": "พลังสูงสุด {max}",
@@ -85,7 +84,8 @@
         "skillCapped": "เลเวล {next} ต้องมีเลเวลความสัมพันธ์ {level} เลื่อนขั้นแล้ว",
         "sigilsOwned": "Sigil ที่มี",
         "sigilsOwnedLabel": "Sigil ของ {expert} ที่มี",
-        "sigilsHint": "จำนวนเดียวกับ Sigil ในหน้าทรัพยากร"
+        "sigilsHint": "จำนวนเดียวกับ Sigil ในหน้าทรัพยากร",
+        "skillTotal": "เลเวล {next} ต้องมีเลเวลสกิลรวม {total} ตอนนี้ {have}"
     },
     "filtersFlyout": {
         "title": "ตัวกรอง",
@@ -121,7 +121,8 @@
             "books": "Books of Knowledge",
             "sigils": "Expert Sigil",
             "exp": "EXP ทักษะ",
-            "expReason": "ไม่มีกิจกรรมที่ให้คะแนนจาก EXP ทักษะ"
+            "expReason": "ไม่มีกิจกรรมที่ให้คะแนนจาก EXP ทักษะ",
+            "learningSpeedups": "นาทีไอเทมเร่งการเรียนรู้"
         },
         "noExperts": "ยังไม่มีผู้เชี่ยวชาญในแผน เพิ่มผู้เชี่ยวชาญที่สรรหาแล้วเพื่อตั้งเป้าหมาย",
         "add": {
@@ -129,7 +130,8 @@
             "selectLabel": "ผู้เชี่ยวชาญที่จะเพิ่ม",
             "button": "เพิ่มผู้เชี่ยวชาญ",
             "allIn": "ผู้เชี่ยวชาญที่สรรหาแล้วทุกคนอยู่ในแผนแล้ว",
-            "noneRecruited": "สรรหาผู้เชี่ยวชาญในหน้านั้นเพื่อวางแผน"
+            "noneRecruited": "สรรหาผู้เชี่ยวชาญในหน้านั้นเพื่อวางแผน",
+            "option": "{name}, ตรา {count}"
         },
         "block": {
             "remove": "ลบ",
@@ -146,7 +148,13 @@
             "affinityGoalLabel": "เป้าหมายความสนิทของ {expert}",
             "skillGoalLabel": "เป้าหมาย {skill} ของ {expert}",
             "advanceAtGoal": "เลื่อนขั้นที่เลเวล {level}",
-            "advanceAtGoalLabel": "{expert} เลื่อนขั้นที่เป้าหมาย"
+            "advanceAtGoalLabel": "{expert} เลื่อนขั้นที่เป้าหมาย",
+            "sigils": "ตรา {count}",
+            "affinityNeeded": "ความสนิทที่ต้องใช้ {amount}",
+            "affinityNext": "เลเวลถัดไปต้องใช้ความสนิท {amount}",
+            "expNeeded": "EXP ที่ต้องใช้ {amount}",
+            "advanceSigils": "ตรา {count}",
+            "expHeldLearning": "EXP ที่มี {amount} (ปัจจุบัน + รอบการเรียนรู้)"
         },
         "checks": {
             "affinity": "แต้มความสนิท",
@@ -156,18 +164,17 @@
         "stock": {
             "sigils": "แผนต้องใช้ Sigil {total} ชิ้น Sigil ของผู้เชี่ยวชาญที่คุณมีครอบคลุม {own} ชิ้น ส่วนอีก {common} ชิ้นต้องมาจาก Common Expert Sigils Sigil ของผู้เชี่ยวชาญแต่ละคนนับให้เฉพาะคนนั้น",
             "books": "แผนต้องใช้ Books of Knowledge {amount} เล่มสำหรับเลเวลทักษะ",
-            "affinity": "แผนต้องใช้แต้มความสนิท {needed} แต้ม แต้มที่คุณมีในการ์ดผู้เชี่ยวชาญครอบคลุม {held} แต้ม จึงยังต้องหาอีก {left} แต้ม แพ็กเกจข้อมูลไม่มีไอเทมความสนิท จึงไม่มีการตรวจกับสต็อก",
+            "affinity": "แผนต้องใช้แต้มความสนิท {needed} แต้ม ของขวัญความสนิทในหน้าทรัพยากรและแต้มบนการ์ดผู้เชี่ยวชาญครอบคลุม {held} แต้ม จึงยังต้องหาอีก {left} แต้ม",
             "learning": "แผนต้องใช้ EXP ทักษะ {exp} ทักษะของคุณมี {held} จึงต้องมาจากตัวเร่งการเรียนรู้อีก {left} การเรียนรู้หนึ่งนาทีให้ EXP {rate} จึงต้องใช้ {minutes} นาที"
         },
         "byExpert": {
             "title": "ตามผู้เชี่ยวชาญ",
             "sigils": "Sigil: ต้องใช้ {needed} ครอบคลุมด้วย Sigil ของ {name} {own} ที่เหลือ {common} มาจาก Common Expert Sigils",
-            "affinity": "ความสนิท: ต้องใช้ {needed} มี {held} ยังต้องหาอีก {left}",
+            "affinity": "ความสนิท: ต้องการ {needed}, ครอบคลุม {held}, ยังต้องหาอีก {left}",
             "exp": "EXP ทักษะ: ต้องใช้ {needed} มี {held} ยังต้องหาอีก {left}"
         },
         "result": {
             "title": "ผลลัพธ์",
-            "derived": "คำนวณจากข้อมูล",
             "books": "Books of Knowledge",
             "sigils": "Sigil",
             "exp": "EXP ทักษะ",

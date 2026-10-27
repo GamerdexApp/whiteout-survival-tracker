@@ -59,8 +59,7 @@
             "button": "핵심 이벤트로 내보내기",
             "emptyHint": "훈련을 추가하면 내보낼 수 있어요.",
             "computed": "앱이 계산했어요.",
-            "trainedGroup": "훈련한 병력용",
-            "speedupGroup": "가속 분용",
+            "trainedGroup": "부대와 가속용",
             "trainedTier": "{tier}단계 훈련 병력",
             "speedupMinutes": "사용한 훈련 가속 분",
             "promoted": "승급한 병력",
@@ -130,7 +129,7 @@
         "stock": {
             "name": "훈련 가속",
             "minutesUnit": "분",
-            "note": "보유량: 훈련 {training}분, 일반 {general}분. 일반 가속도 훈련에 쓸 수 있어요. 가속이 다 덮지 못하는 훈련은 일반 시간으로 끝나므로 가지고 있는 가속만 사용해요: {used}분."
+            "note": "보유량: 훈련 {training}분, 일반 {general}분 적용. 아래에서 정한 비율의 일반 가속만 계산합니다. 가속이 채우지 못하는 훈련은 정상 시간에 끝나므로 보유한 가속만 사용합니다: {used}분."
         },
         "result": {
             "title": "결과",

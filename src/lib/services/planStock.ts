@@ -24,6 +24,8 @@ export interface StockCheck {
   available: number;
   needed: number;
   unit?: string;
+  /** A line under the row, such as the part of the stock that comes from a chest. */
+  detail?: string;
 }
 
 export const stockShortBy = (check: StockCheck) =>

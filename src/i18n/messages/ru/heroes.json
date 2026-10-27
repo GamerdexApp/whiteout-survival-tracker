@@ -187,8 +187,7 @@
             "explorationFull": "Exploration на 5.0",
             "expeditionFull": "Expedition на 5.0",
             "exploration": "Атк {attack} · Защ {defense} · ЗДР {health}",
-            "expedition": "Атк {attack}% · Защ {defense}%",
-            "estimate": "Оценка"
+            "expedition": "Атк {attack}% · Защ {defense}%"
         }
     },
     "plan": {
@@ -200,9 +199,10 @@
         "noHeroes": "В плане пока нет героев. Добавьте имеющегося героя выше и повысьте его цели.",
         "add": {
             "title": "Добавить героя",
-            "allIn": "Все имеющиеся герои уже в плане. Включите «Есть» у героя, чтобы запланировать его.",
+            "allIn": "Каждый имеющийся герой уже в плане или имеет все звёзды. Включите «Есть» у героя, чтобы запланировать его.",
             "selectLabel": "Герой для добавления",
-            "button": "Добавить героя"
+            "button": "Добавить героя",
+            "generationShort": "G{generation}"
         },
         "block": {
             "remove": "Убрать {hero} из плана",
@@ -237,6 +237,18 @@
             "allianceShowdown": "Alliance Showdown",
             "kingOfIcefield": "King of Icefield",
             "hallOfChief": "Hall of Chief"
+        },
+        "luckyWheel": {
+            "title": "Колесо удачи",
+            "description": "Вращения колеса удачи героя добавляют оценочные осколки выбранному герою. Одно вращение даёт в среднем {perSpin} осколка, плюс бонусные осколки на 5, 15, 35, 70 и 120 вращениях.",
+            "noHero": "Добавьте героя в план, чтобы планировать вращения колеса удачи.",
+            "hero": "Герой",
+            "spins": "Вращения (до {max})",
+            "tokens": "Начальные жетоны",
+            "estimate": "Оценочные осколки для {hero}: {total} ({bonus} от бонусов, {spins} от вращений). План считает их осколками, которые у вас есть.",
+            "gems": "Нужно самоцветов: {gems}",
+            "gemsNone": "Самоцветы не нужны.",
+            "gemsNote": "{covered} вращений используют ваши жетоны. Остальные стоят {single} самоцветов каждое или {ten} самоцветов за 10."
         }
     },
     "export": {
@@ -250,7 +262,8 @@
             "Legendary": "Mythic Hero Shards",
             "Epic": "Epic Hero Shards",
             "Rare": "Rare Hero Shards"
-        }
+        },
+        "luckyWheel": "Вращения колеса удачи"
     },
     "service": {
         "generalShard": {

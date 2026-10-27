@@ -9,7 +9,7 @@ import { formatDateTime, formatDuration, formatNumber } from "@/lib/format";
 import { useUiSettings } from "@/lib/hooks/useUiSettings";
 import { researchSpeedBonusPercent } from "@/service/bonuses";
 import { exportedPlanOf } from "@/service/eventExport";
-import { minutesOfSpeedup } from "@/service/inventory";
+import { generalMinutesApplied, minutesOfSpeedup } from "@/service/inventory";
 import { researchChecks } from "@/service/planStock";
 import { levelOfNode } from "@/service/research";
 import { exportSpecOf } from "@/service/researchExport";
@@ -33,6 +33,7 @@ import {
 	tabName,
 } from "@/data/game/research";
 import { ExportToEventFlyout } from "@/comps/export/ExportToEventFlyout";
+import { GeneralSpeedupShare } from "@/comps/queues/GeneralSpeedupShare";
 import { PlanStockCheck } from "@/comps/queues/PlanStockCheck";
 import { Badge } from "@/comps/ui/Badge";
 import { Button } from "@/comps/ui/Button";
@@ -41,6 +42,7 @@ import { Flyout } from "@/comps/ui/Flyout";
 import { IconButton } from "@/comps/ui/IconButton";
 import { ItemIcon } from "@/comps/ui/ItemIcon";
 import { Note } from "@/comps/ui/Note";
+import { PlanFooter } from "@/comps/ui/PlanFooter";
 import { SectionLabel } from "@/comps/ui/SectionLabel";
 import { SegmentedControl } from "@/comps/ui/SegmentedControl";
 import { Select } from "@/comps/ui/Select";
@@ -118,29 +120,21 @@ export function ResearchPlanFlyout({ open, chief, onClose, onSave }: ResearchPla
 				title={t("plan.title")}
 				description={t("plan.description")}
 				footer={
-					<>
-						{savedAt && (
-							<span className="border-line bg-surface text-muted me-auto inline-flex h-8 items-center gap-2 rounded-full border-[1.5px] px-3 font-mono text-xs">
-								<span
-									aria-hidden="true"
-									className="bg-kept size-1.5 rounded-full"
-								/>
-								{t("plan.saved", { date: formatDateTime(savedAt) })}
-							</span>
-						)}
-						<Button onClick={onClose}>{t("plan.close")}</Button>
-						<Button
-							variant="ghost"
-							disabled={!exportSpec}
-							title={exportSpec ? undefined : t("plan.export.empty")}
-							onClick={openExport}
-						>
-							{t("plan.export.button")}
-						</Button>
-						<Button variant="primary" onClick={() => onSave(rows, controls)}>
-							{t("plan.save")}
-						</Button>
-					</>
+					<PlanFooter
+						savedText={
+							savedAt ? t("plan.saved", { date: formatDateTime(savedAt) }) : undefined
+						}
+						closeLabel={t("plan.close")}
+						onClose={onClose}
+						exportAction={{
+							disabled: !exportSpec,
+							title: exportSpec ? undefined : t("plan.export.empty"),
+							onClick: openExport,
+							label: t("plan.export.button"),
+						}}
+						saveLabel={t("plan.save")}
+						onSave={() => onSave(rows, controls)}
+					/>
 				}
 			>
 				<PlanBody
@@ -243,12 +237,13 @@ function PlanBody({
 			{result && !result.ok && <Note tone="warning">{result.error ?? t("plan.failed")}</Note>}
 			{result?.ok && (
 				<PlanStockCheck
+					timeExtra={<GeneralSpeedupShare chief={chief} use="research" />}
 					checks={researchChecks(result.calculation, chief)}
 					timeNote={t("plan.timeNote", {
 						time: formatDuration(result.calculation.seconds),
 						percent: formatNumber(speedPercent),
 						research: formatNumber(minutesOfSpeedup(chief, "research")),
-						general: formatNumber(minutesOfSpeedup(chief, "general")),
+						general: formatNumber(generalMinutesApplied(chief, "research")),
 					})}
 				/>
 			)}

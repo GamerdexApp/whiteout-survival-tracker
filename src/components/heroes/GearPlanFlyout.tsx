@@ -33,6 +33,7 @@ import { Card } from "@/comps/ui/Card";
 import { Flyout } from "@/comps/ui/Flyout";
 import { IconButton } from "@/comps/ui/IconButton";
 import { ItemIcon } from "@/comps/ui/ItemIcon";
+import { PlanFooter } from "@/comps/ui/PlanFooter";
 import { ScrollRegion } from "@/comps/ui/ScrollRegion";
 import { SectionLabel } from "@/comps/ui/SectionLabel";
 import { Select } from "@/comps/ui/Select";
@@ -77,26 +78,19 @@ export function GearPlanFlyout({ open, chief, onClose, onSave }: GearPlanFlyoutP
 			title={t("title")}
 			description={t("description")}
 			footer={
-				<>
-					{savedAt && (
-						<span className="border-line bg-surface text-muted me-auto inline-flex h-8 items-center gap-2 rounded-full border-[1.5px] px-3 font-mono text-xs">
-							<span aria-hidden="true" className="bg-kept size-1.5 rounded-full" />
-							{t("saved", { time: formatDateTime(savedAt) })}
-						</span>
-					)}
-					<Button onClick={onClose}>{t("close")}</Button>
-					<Button
-						variant="ghost"
-						disabled={nothingToExport}
-						title={nothingToExport ? te("nothing") : undefined}
-						onClick={() => setExportOpen(true)}
-					>
-						{te("button")}
-					</Button>
-					<Button variant="primary" onClick={() => onSave(refs, goals)}>
-						{t("save")}
-					</Button>
-				</>
+				<PlanFooter
+					savedText={savedAt ? t("saved", { time: formatDateTime(savedAt) }) : undefined}
+					closeLabel={t("close")}
+					onClose={onClose}
+					exportAction={{
+						disabled: nothingToExport,
+						title: nothingToExport ? te("nothing") : undefined,
+						onClick: () => setExportOpen(true),
+						label: te("button"),
+					}}
+					saveLabel={t("save")}
+					onSave={() => onSave(refs, goals)}
+				/>
 			}
 		>
 			<PlanBody

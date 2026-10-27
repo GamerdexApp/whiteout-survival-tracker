@@ -24,7 +24,6 @@ export function ThresholdsCard({ chief, event, dayId, result }: ThresholdsCardPr
 		<Card className="flex flex-col gap-3 p-4">
 			<div className="flex items-baseline justify-between gap-3">
 				<h2 className="font-semibold">{t("title")}</h2>
-				<span className="text-warn font-mono text-[11px] uppercase">{t("estimate")}</span>
 			</div>
 			<p className="text-muted">{t("help", { day: dayLabelOf(event, dayId) })}</p>
 			{hasNone && <p>{noneText}</p>}

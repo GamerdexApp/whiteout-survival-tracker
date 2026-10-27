@@ -27,8 +27,10 @@
     },
     "view": {
         "subline": "{items} items in {categories} categories",
-        "sublineInCategory": "{items} items in {categories} categories · {inCategory} in {category}",
-        "unsaved": "Unsaved",
+        "coreSubline": "{chief} · Resource counts and backpack stacks",
+        "tabsLabel": "Resource views",
+        "coreTab": "Core Resources",
+        "allTab": "All items",
         "shortages": "Planner goals are short on {names}.",
         "shortagesLink": "Open the Buildings plan",
         "show": {
@@ -78,6 +80,52 @@
             "setToZero": "{name} set to 0",
             "savedTitle": "Counts saved",
             "savedMessage": "{count, plural, one {{amount} count} other {{amount} counts}} changed."
+        },
+        "totals": {
+            "loose": "Loose",
+            "packs": "Packs",
+            "securedPacks": "Secured packs",
+            "anyTitle": "Any chest",
+            "commonSigils": "Common Sigils",
+            "books": "Books",
+            "affinity": "Affinity"
+        }
+    },
+    "core": {
+        "resourcesSection": "Resources",
+        "counts": "Resource count",
+        "backpack": "Backpack",
+        "secured": "{name} (Secured)",
+        "level": "Lv. {level}",
+        "customChests": "Custom Resource Chests",
+        "customSecuredChests": "Custom Secured Resource Chests",
+        "fireCrystalSection": "Fire Crystal",
+        "speedupsSection": "Speedups",
+        "expertsSection": "Experts",
+        "expertSigilsRow": "Expert Sigils",
+        "affinityGiftsRow": "Affinity gifts",
+        "commonExpertRow": "Common sigils and books",
+        "petsSection": "Pets",
+        "petAdvancementRow": "Advancement materials",
+        "petFoodAndMarksRow": "Food and Wild Marks",
+        "heroGearSection": "Hero Gear",
+        "heroGearMaterialsRow": "Upgrade materials",
+        "heroGearRow": "Gear and gear chests",
+        "chiefGearSection": "Chief Gear and Charms",
+        "chiefGearRow": "Chief Gear",
+        "chiefCharmRow": "Chief Charms",
+        "chiefChestsRow": "Gear and charm chests",
+        "heroShards": {
+            "section": "Hero Shards",
+            "showCompleted": "Show completed heroes",
+            "hintHidden": "Completed heroes, shards and manuals are hidden: {count}",
+            "hintShown": "Showing completed heroes, shards and manuals",
+            "allCompleted": "Every unlocked hero has all stars. Turn on the switch to see them.",
+            "generation": "Gen {generation}",
+            "shardName": "{name} Shard",
+            "generalShards": "General shards",
+            "expeditionManuals": "Expedition skill manuals",
+            "explorationManuals": "Exploration skill manuals"
         }
     },
     "planStock": {

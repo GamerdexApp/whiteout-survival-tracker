@@ -56,6 +56,9 @@ export interface BuildingState {
   instances?: string[];
 }
 
+/** The plans that can spend the general speedups. Their shares add up to 100 at most. */
+export type GeneralSpeedupUse = "buildings" | "research" | "troops" | "experts";
+
 export type Appointment = "none" | "regular" | "supreme";
 
 export interface BuildingPlanGoal {
@@ -128,8 +131,15 @@ export interface HeroGoal {
   weapon?: number;
 }
 
+export interface LuckyWheelPlan {
+  heroId: string;
+  spins: number;
+  tokens: number;
+}
+
 export interface HeroesPlan {
   goals: Record<string, HeroGoal>;
+  luckyWheel?: LuckyWheelPlan;
   savedAt: string;
 }
 
@@ -195,6 +205,7 @@ export interface Playthrough {
   facilities?: Record<string, { built?: boolean }>;
   buildingPlan?: BuildingPlan;
   inventory?: Record<string, number>;
+  generalSpeedupShare?: Partial<Record<GeneralSpeedupUse, number>>;
   research?: Record<string, { level: number }>;
   researchPlan?: ResearchPlan;
   queues?: {

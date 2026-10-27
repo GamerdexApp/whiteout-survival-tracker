@@ -187,8 +187,7 @@
             "explorationFull": "Exploration en 5.0",
             "expeditionFull": "Expedition en 5.0",
             "exploration": "Atq {attack} · Def {defense} · PS {health}",
-            "expedition": "Atq {attack}% · Def {defense}%",
-            "estimate": "Estimación"
+            "expedition": "Atq {attack}% · Def {defense}%"
         }
     },
     "plan": {
@@ -200,9 +199,10 @@
         "noHeroes": "Aún no hay héroes en el plan. Agrega un héroe obtenido arriba y luego sube sus metas.",
         "add": {
             "title": "Agregar un héroe",
-            "allIn": "Todos los héroes obtenidos están en el plan. Activa Obtenido en un héroe para planificarlo.",
+            "allIn": "Todos tus héroes están en el plan o tienen todas las estrellas. Activa Poseído en un héroe para planificarlo.",
             "selectLabel": "Héroe por agregar",
-            "button": "Agregar héroe"
+            "button": "Agregar héroe",
+            "generationShort": "G{generation}"
         },
         "block": {
             "remove": "Quitar a {hero} del plan",
@@ -237,6 +237,18 @@
             "allianceShowdown": "Alliance Showdown",
             "kingOfIcefield": "King of Icefield",
             "hallOfChief": "Hall of Chief"
+        },
+        "luckyWheel": {
+            "title": "Ruleta de la suerte",
+            "description": "Las tiradas de la Ruleta de la suerte del héroe suman fragmentos estimados al héroe elegido. Cada tirada da {perSpin} fragmentos en promedio, más fragmentos extra a las 5, 15, 35, 70 y 120 tiradas.",
+            "noHero": "Agrega un héroe al plan para planificar tiradas de la Ruleta de la suerte.",
+            "hero": "Héroe",
+            "spins": "Tiradas (hasta {max})",
+            "tokens": "Fichas iniciales",
+            "estimate": "Fragmentos estimados para {hero}: {total} ({bonus} de bonos de tiradas, {spins} de tiradas). El plan los cuenta como fragmentos que tienes.",
+            "gems": "Gemas necesarias: {gems}",
+            "gemsNone": "No se necesitan gemas.",
+            "gemsNote": "{covered} tiradas usan tus fichas. Las demás cuestan {single} gemas cada una, o {ten} gemas por cada 10."
         }
     },
     "export": {
@@ -250,7 +262,8 @@
             "Legendary": "Mythic Hero Shards",
             "Epic": "Epic Hero Shards",
             "Rare": "Rare Hero Shards"
-        }
+        },
+        "luckyWheel": "Tiradas de la Ruleta de la suerte"
     },
     "service": {
         "generalShard": {

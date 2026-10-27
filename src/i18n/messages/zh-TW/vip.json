@@ -59,5 +59,20 @@
             "unknown": "未知"
         },
         "levelName": "VIP {level}"
+    },
+    "signIn": {
+        "title": "每日簽到",
+        "note": "每日簽到會隨連續天數增加而給予更多 XP。漏掉一個 UTC 日連續就會中斷，每一天從 00:00 UTC 開始。",
+        "add": "新增每日簽到",
+        "addHint": "連續第 {streak} 天：{points} XP",
+        "claimed": "今天已簽到，連續第 {streak} 天。明天給予 {points} XP，{time}後。",
+        "needXp": "請先輸入總 XP 或 VIP 等級。",
+        "streakLabel": "連續天數",
+        "streakHint": "今天的連續天數。如果你的連續簽到已經在進行，請修改它。",
+        "toast": {
+            "title": "已新增簽到",
+            "message": "已為連續第 {streak} 天新增 {points} XP。",
+            "undo": "復原"
+        }
     }
 }

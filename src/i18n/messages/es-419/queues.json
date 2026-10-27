@@ -91,5 +91,10 @@
             "tabs": "T11 y T12",
             "shortName": "War Academy"
         }
+    },
+    "generalShare": {
+        "label": "Aceleradores generales a usar (%)",
+        "applied": "{applied} de {total} minutos generales aplicados a este plan",
+        "limit": "Hasta {max}%. Los planes de Edificios, Investigación, Tropas y Expertos comparten el 100% de tus aceleradores generales."
     }
 }

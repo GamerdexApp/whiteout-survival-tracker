@@ -59,5 +59,20 @@
             "unknown": "Bilinmiyor"
         },
         "levelName": "VIP {level}"
+    },
+    "signIn": {
+        "title": "Günlük giriş",
+        "note": "Günlük giriş, serinin her günü için daha fazla XP verir. Bir UTC gününü kaçırırsan seri biter ve her gün 00:00 UTC’de başlar.",
+        "add": "Günlük girişi ekle",
+        "addHint": "Serinin {streak}. günü: {points} XP",
+        "claimed": "Bugün giriş yapıldı, serinin {streak}. günü. Yarın {points} XP verir, {time} sonra.",
+        "needXp": "Önce toplam XP’ni veya VIP seviyeni gir.",
+        "streakLabel": "Seri günü",
+        "streakHint": "Bugünün seri günü. Serin zaten sürüyorsa değiştir.",
+        "toast": {
+            "title": "Giriş eklendi",
+            "message": "Serinin {streak}. günü için {points} XP eklendi.",
+            "undo": "Geri al"
+        }
     }
 }

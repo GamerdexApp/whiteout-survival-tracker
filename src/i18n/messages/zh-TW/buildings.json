@@ -224,10 +224,10 @@
         "goalsHeading": "{count, plural, other {目標，{amount} 個建築}}",
         "noGoals": "尚無目標。請先在上方新增建築，再選擇要升到的等級。",
         "prerequisiteNote": "前置步驟會自動加入。若某個等級需要另一個建築達到更高等級，這些步驟會計入並加上標記。",
-        "timeNote": "套用 {percent}% 速度加成後，規劃需要 {time}。你的庫存：建造 {construction} 分，通用 {general} 分。通用加速道具可用於建造。",
+        "timeNote": "計畫在 {percent}% 速度加成後需要 {time}。你的庫存：建造 {construction} 分鐘，已使用通用 {general} 分鐘。只計入下方設定的通用加速比例。",
         "add": {
             "title": "新增建築",
-            "allAdded": "所有建築都已在規劃中。",
+            "allAdded": "所有建築都已在計畫中或已滿級。",
             "selectLabel": "要新增的建築",
             "button": "新增建築"
         },

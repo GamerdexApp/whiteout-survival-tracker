@@ -253,7 +253,12 @@ function AffinityLevels({ levels }: { levels: ExpertAffinityLevel[] }) {
 		{
 			id: "bonus",
 			header: t("columns.bonus"),
-			cell: (row) => <span className="font-mono">{formatDecimal(row.statBonus)}</span>,
+			cell: (row) =>
+				row.statBonus === undefined ? (
+					<UnknownValue />
+				) : (
+					<span className="font-mono">{formatDecimal(row.statBonus)}</span>
+				),
 		},
 		{
 			id: "affinityPower",

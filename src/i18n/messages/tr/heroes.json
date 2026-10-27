@@ -187,8 +187,7 @@
             "explorationFull": "Keşif, 5.0",
             "expeditionFull": "Sefer, 5.0",
             "exploration": "Sld {attack} · Svn {defense} · Can {health}",
-            "expedition": "Sld %{attack} · Svn %{defense}",
-            "estimate": "Tahmin"
+            "expedition": "Sld %{attack} · Svn %{defense}"
         }
     },
     "plan": {
@@ -200,9 +199,10 @@
         "noHeroes": "Planda henüz kahraman yok. Yukarıdan sahip olduğun bir kahraman ekle, sonra hedeflerini yükselt.",
         "add": {
             "title": "Kahraman ekle",
-            "allIn": "Sahip olduğun her kahraman planda. Bir kahramanı planlamak için onun Sahip ayarını aç.",
+            "allIn": "Sahip olunan her kahraman planda veya tüm yıldızlara sahip. Planlamak için bir kahramanda Sahip'i aç.",
             "selectLabel": "Eklenecek kahraman",
-            "button": "Kahraman ekle"
+            "button": "Kahraman ekle",
+            "generationShort": "G{generation}"
         },
         "block": {
             "remove": "Plandan kaldır: {hero}",
@@ -237,6 +237,18 @@
             "allianceShowdown": "Alliance Showdown",
             "kingOfIcefield": "King of Icefield",
             "hallOfChief": "Hall of Chief"
+        },
+        "luckyWheel": {
+            "title": "Şans Çarkı",
+            "description": "Kahraman Şans Çarkı çevirmeleri seçilen kahramana tahmini parça ekler. Bir çevirme ortalama {perSpin} parça verir, ayrıca 5, 15, 35, 70 ve 120. çevirmede bonus parçalar gelir.",
+            "noHero": "Şans Çarkı çevirmelerini planlamak için plana bir kahraman ekleyin.",
+            "hero": "Kahraman",
+            "spins": "Çevirme (en çok {max})",
+            "tokens": "Başlangıç jetonları",
+            "estimate": "{hero} için tahmini parça: {total} ({bonus} çevirme bonusundan, {spins} çevirmelerden). Plan bunları elinizdeki parça olarak sayar.",
+            "gems": "Gereken elmas: {gems}",
+            "gemsNone": "Elmas gerekmiyor.",
+            "gemsNote": "{covered} çevirme jetonlarınızı kullanır. Diğer çevirmeler tanesi {single} elmas, her 10 için {ten} elmas."
         }
     },
     "export": {
@@ -250,7 +262,8 @@
             "Legendary": "Mythic Hero Shards",
             "Epic": "Epic Hero Shards",
             "Rare": "Rare Hero Shards"
-        }
+        },
+        "luckyWheel": "Şans Çarkı çevirmeleri"
     },
     "service": {
         "generalShard": {

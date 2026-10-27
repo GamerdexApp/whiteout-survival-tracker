@@ -59,8 +59,7 @@
             "button": "Exportar a Eventos clave",
             "emptyHint": "Añade un entrenamiento para exportarlo.",
             "computed": "Calculado por la app.",
-            "trainedGroup": "por tropas entrenadas",
-            "speedupGroup": "por minutos de aceleradores",
+            "trainedGroup": "para tropas y aceleradores",
             "trainedTier": "Tropas de Tier {tier} entrenadas",
             "speedupMinutes": "Minutos de aceleradores de entrenamiento usados",
             "promoted": "Tropas ascendidas",
@@ -130,7 +129,7 @@
         "stock": {
             "name": "Aceleradores de entrenamiento",
             "minutesUnit": "min",
-            "note": "Tus existencias: Entrenamiento {training} min, General {general} min. Los aceleradores generales cuentan para entrenamiento. El entrenamiento que un acelerador no cubre termina en tiempo normal, así que solo se usan los aceleradores que tienes: {used} min."
+            "note": "Tu stock: Entrenamiento {training} min, General {general} min aplicados. Solo cuenta la parte de aceleradores generales fijada abajo. El entrenamiento que un acelerador no cubre termina en tiempo normal, así que solo se usan los aceleradores que tienes: {used} min."
         },
         "result": {
             "title": "Resultado",

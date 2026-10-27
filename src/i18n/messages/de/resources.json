@@ -27,8 +27,10 @@
     },
     "view": {
         "subline": "{items} Items in {categories} Kategorien",
-        "sublineInCategory": "{items} Items in {categories} Kategorien · {inCategory} in {category}",
-        "unsaved": "Ungespeichert",
+        "coreSubline": "{chief} · Rohstoffmengen und Rucksackstapel",
+        "tabsLabel": "Ressourcenansichten",
+        "coreTab": "Kernressourcen",
+        "allTab": "Alle Gegenstände",
         "shortages": "Planerziele haben zu wenig {names}.",
         "shortagesLink": "Gebäudeplan öffnen",
         "show": {
@@ -78,6 +80,52 @@
             "setToZero": "{name} auf 0 gesetzt",
             "savedTitle": "Anzahlen gespeichert",
             "savedMessage": "{count, plural, one {{amount} Anzahl} other {{amount} Anzahlen}} geändert."
+        },
+        "totals": {
+            "loose": "Lose",
+            "packs": "Pakete",
+            "securedPacks": "Gesicherte Pakete",
+            "anyTitle": "Beliebig (Truhen)",
+            "commonSigils": "Gemeinsame Siegel",
+            "books": "Bücher",
+            "affinity": "Zuneigung"
+        }
+    },
+    "core": {
+        "resourcesSection": "Ressourcen",
+        "counts": "Rohstoffmenge",
+        "backpack": "Rucksack",
+        "secured": "{name} (Gesichert)",
+        "level": "Stufe {level}",
+        "customChests": "Benutzerdefinierte Ressourcentruhen",
+        "customSecuredChests": "Benutzerdefinierte gesicherte Ressourcentruhen",
+        "fireCrystalSection": "Feuerkristall",
+        "speedupsSection": "Beschleuniger",
+        "expertsSection": "Experten",
+        "expertSigilsRow": "Experten-Siegel",
+        "affinityGiftsRow": "Zuneigungsgeschenke",
+        "commonExpertRow": "Gemeinsame Siegel und Bücher",
+        "petsSection": "Haustiere",
+        "petAdvancementRow": "Aufstiegsmaterial",
+        "petFoodAndMarksRow": "Futter und Wildmarken",
+        "heroGearSection": "Heldenausrüstung",
+        "heroGearMaterialsRow": "Aufwertungsmaterial",
+        "heroGearRow": "Ausrüstung und Ausrüstungstruhen",
+        "chiefGearSection": "Häuptlingsausrüstung und Amulette",
+        "chiefGearRow": "Häuptlingsausrüstung",
+        "chiefCharmRow": "Häuptlingsamulette",
+        "chiefChestsRow": "Ausrüstungs- und Amulett-Truhen",
+        "heroShards": {
+            "section": "Heldensplitter",
+            "showCompleted": "Abgeschlossene Helden anzeigen",
+            "hintHidden": "Abgeschlossene Helden, Splitter und Handbücher sind ausgeblendet: {count}",
+            "hintShown": "Abgeschlossene Helden, Splitter und Handbücher werden angezeigt",
+            "allCompleted": "Alle freigeschalteten Helden haben alle Sterne. Schalte den Schalter ein, um sie zu sehen.",
+            "generation": "Gen {generation}",
+            "shardName": "{name}-Splitter",
+            "generalShards": "Allgemeine Splitter",
+            "expeditionManuals": "Expeditions-Fertigkeitshandbücher",
+            "explorationManuals": "Erkundungs-Fertigkeitshandbücher"
         }
     },
     "planStock": {

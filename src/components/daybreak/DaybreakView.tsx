@@ -28,6 +28,7 @@ import {
 	withTreeOfLife,
 } from "@/service/daybreak";
 import type { DecorationFilters, DecorationView } from "@/service/daybreak";
+import { ownedCount, withOwnedCount } from "@/service/inventory";
 import { PageHeader } from "@/comps/layout/PageHeader";
 import { Button } from "@/comps/ui/Button";
 import { EmptyState } from "@/comps/ui/EmptyState";
@@ -36,6 +37,7 @@ import { Note } from "@/comps/ui/Note";
 import { DaybreakFiltersFlyout } from "./DaybreakFiltersFlyout";
 import { DecorationCard } from "./DecorationCard";
 import { LumberCampCard, TreeOfLifeCard } from "./IslandCards";
+import { LifeEssenceCard } from "./LifeEssenceCard";
 import { LockedBanner } from "./LockedBanner";
 import { ProsperityTile } from "./ProsperityTile";
 
@@ -94,6 +96,13 @@ export function DaybreakView({ chief }: { chief: Playthrough }) {
 			)}
 
 			<ProsperityTile summary={prosperity} />
+
+			<LifeEssenceCard
+				count={ownedCount(chief, "life-essence")}
+				onChange={(count) =>
+					change((current) => withOwnedCount(current, "life-essence", count))
+				}
+			/>
 
 			<div className="grid gap-3 lg:grid-cols-2">
 				<LumberCampCard

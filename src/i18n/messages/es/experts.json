@@ -74,7 +74,6 @@
         "talentLevel": "Nivel {level} de {max}",
         "talentFollows": "Sigue a {relationship}. {effect}.",
         "power": "Poder {now} de {max}",
-        "derived": "Calculado",
         "notRecruitedHint": "Sin reclutar. Recluta a este experto en Tundra Trek y activa Reclutado.",
         "recruitmentCost": "Coste de reclutamiento: {cost}",
         "maxPower": "Poder máx. {max}",
@@ -85,7 +84,8 @@
         "skillCapped": "El nivel {next} requiere nivel de relación {level}, avanzado.",
         "sigilsOwned": "Sigilos que tienes",
         "sigilsOwnedLabel": "Sigilos de {expert}",
-        "sigilsHint": "La misma cantidad que el sigilo de la página de Recursos."
+        "sigilsHint": "La misma cantidad que el sigilo de la página de Recursos.",
+        "skillTotal": "El nivel {next} necesita un nivel total de habilidades de {total}. Ahora {have}."
     },
     "filtersFlyout": {
         "title": "Filtros",
@@ -121,7 +121,8 @@
             "books": "Books of Knowledge",
             "sigils": "Sigilos de experto",
             "exp": "EXP de habilidad",
-            "expReason": "Ningún evento puntúa la EXP de habilidad."
+            "expReason": "Ningún evento puntúa la EXP de habilidad.",
+            "learningSpeedups": "Minutos de aceleradores de aprendizaje"
         },
         "noExperts": "Aún no hay expertos en el plan. Añade un experto reclutado para fijar sus objetivos.",
         "add": {
@@ -129,7 +130,8 @@
             "selectLabel": "Experto a añadir",
             "button": "Añadir experto",
             "allIn": "Todos los expertos reclutados están en el plan.",
-            "noneRecruited": "Recluta un experto en la página para planificarlo."
+            "noneRecruited": "Recluta un experto en la página para planificarlo.",
+            "option": "{name}, {count} sigilos"
         },
         "block": {
             "remove": "Quitar",
@@ -146,7 +148,13 @@
             "affinityGoalLabel": "Objetivo de afinidad de {expert}",
             "skillGoalLabel": "Objetivo de {skill} de {expert}",
             "advanceAtGoal": "Avanzar en el nivel {level}",
-            "advanceAtGoalLabel": "Avance de {expert} en el objetivo"
+            "advanceAtGoalLabel": "Avance de {expert} en el objetivo",
+            "sigils": "Sigilos {count}",
+            "affinityNeeded": "Afinidad necesaria {amount}",
+            "affinityNext": "El siguiente nivel necesita {amount} de afinidad",
+            "expNeeded": "EXP necesaria {amount}",
+            "advanceSigils": "{count} sigilos",
+            "expHeldLearning": "EXP disponible {amount} (actual + sesión de aprendizaje)"
         },
         "checks": {
             "affinity": "Puntos de afinidad",
@@ -156,18 +164,17 @@
         "stock": {
             "sigils": "El plan necesita {total} sigilos. Tus sigilos de experto cubren {own}, así que {common} deben salir de Common Expert Sigils. Cada sigilo de experto que tienes solo cuenta para ese experto.",
             "books": "El plan necesita {amount} Books of Knowledge para los niveles de habilidad.",
-            "affinity": "El plan necesita {needed} puntos de afinidad. Lo que tienes en las tarjetas de experto cubre {held}, así que aún faltan {left}. El paquete no tiene un objeto de afinidad, así que no se comprueba contra ninguna existencia.",
+            "affinity": "El plan necesita {needed} puntos de afinidad. Los regalos de afinidad de la página de Recursos y los puntos de las tarjetas de experto cubren {held}, así que faltan {left}.",
             "learning": "El plan necesita {exp} de EXP de habilidad. Tus habilidades tienen {held}, así que {left} deben salir de aceleradores de aprendizaje. Un minuto de aprendizaje da {rate} de EXP, o sea {minutes} minutos."
         },
         "byExpert": {
             "title": "Por experto",
             "sigils": "Sigilos: {needed} necesarios, {own} cubiertos por tu sigilo de {name}, {common} por obtener de Common Expert Sigils",
-            "affinity": "Afinidad: {needed} necesarios, {held} disponibles, {left} por obtener",
+            "affinity": "Afinidad: {needed} necesarios, {held} cubiertos, {left} por conseguir",
             "exp": "EXP de habilidad: {needed} necesarios, {held} disponibles, {left} por obtener"
         },
         "result": {
             "title": "Resultado",
-            "derived": "Calculado",
             "books": "Books of Knowledge",
             "sigils": "Sigilos",
             "exp": "EXP de habilidad",

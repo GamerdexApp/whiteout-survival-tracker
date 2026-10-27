@@ -187,8 +187,7 @@
             "explorationFull": "Eksplorasi di 5.0",
             "expeditionFull": "Ekspedisi di 5.0",
             "exploration": "Atk {attack} · Def {defense} · HP {health}",
-            "expedition": "Atk {attack}% · Def {defense}%",
-            "estimate": "Perkiraan"
+            "expedition": "Atk {attack}% · Def {defense}%"
         }
     },
     "plan": {
@@ -200,9 +199,10 @@
         "noHeroes": "Belum ada pahlawan di rencana. Tambah pahlawan yang dimiliki di atas, lalu naikkan targetnya.",
         "add": {
             "title": "Tambah pahlawan",
-            "allIn": "Semua pahlawan yang dimiliki sudah ada di rencana. Aktifkan Dimiliki untuk pahlawan agar bisa direncanakan.",
+            "allIn": "Setiap pahlawan yang dimiliki sudah ada di rencana atau punya semua bintang. Aktifkan Dimiliki pada pahlawan untuk merencanakannya.",
             "selectLabel": "Pahlawan yang ditambah",
-            "button": "Tambah pahlawan"
+            "button": "Tambah pahlawan",
+            "generationShort": "G{generation}"
         },
         "block": {
             "remove": "Hapus {hero} dari rencana",
@@ -237,6 +237,18 @@
             "allianceShowdown": "Alliance Showdown",
             "kingOfIcefield": "King of Icefield",
             "hallOfChief": "Hall of Chief"
+        },
+        "luckyWheel": {
+            "title": "Roda Keberuntungan",
+            "description": "Putaran Roda Keberuntungan pahlawan menambah perkiraan pecahan untuk pahlawan yang dipilih. Satu putaran memberi rata-rata {perSpin} pecahan, ditambah pecahan bonus pada putaran ke-5, 15, 35, 70, dan 120.",
+            "noHero": "Tambahkan pahlawan ke rencana untuk merencanakan putaran Roda Keberuntungan.",
+            "hero": "Pahlawan",
+            "spins": "Putaran (maks. {max})",
+            "tokens": "Token awal",
+            "estimate": "Perkiraan pecahan untuk {hero}: {total} ({bonus} dari bonus putaran, {spins} dari putaran). Rencana menghitungnya sebagai pecahan yang Anda miliki.",
+            "gems": "Gem dibutuhkan: {gems}",
+            "gemsNone": "Tidak perlu gem.",
+            "gemsNote": "{covered} putaran memakai token Anda. Putaran lain berharga {single} gem per putaran, atau {ten} gem untuk setiap 10."
         }
     },
     "export": {
@@ -250,7 +262,8 @@
             "Legendary": "Mythic Hero Shards",
             "Epic": "Epic Hero Shards",
             "Rare": "Rare Hero Shards"
-        }
+        },
+        "luckyWheel": "Putaran Roda Keberuntungan"
     },
     "service": {
         "generalShard": {

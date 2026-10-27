@@ -15,11 +15,13 @@ import type {
   PetState,
   Playthrough,
 } from "@/types/app";
-import { formatDuration } from "@/lib/format";
+import { formatDuration, formatNumber } from "@/lib/format";
 import { furnace, FURNACE_ID } from "@/data/game/buildings";
 import { findItem } from "@/data/game/items";
 import {
+  ADVANCEMENT_CHEST_ID,
   allPets,
+  CHEST_PICKS,
   CONSTRUCTION_PET_ID,
   findPet,
   PET_ADVANCEMENT_INTERVAL,
@@ -477,16 +479,65 @@ export const runPetPlan = (
 export const petPowerGain = (calculation: PetCalculation | PetItemResult) =>
   Number.isFinite(calculation.power) ? calculation.power : null;
 
+export interface ChestUse {
+  /** The held chests that go to each item, and so the items they give. */
+  chestsFor: Record<string, number>;
+  held: number;
+  used: number;
+  /** True when the shortage uses every held chest. */
+  fullyUsed: boolean;
+}
+
+/**
+ * A Pet Advancement Materials Custom Chest gives one pick: Strengthening Serums, Energizing
+ * Potions or Taming Manuals. The held chests fill what the held items leave short. They go to the
+ * Serums first, then the Potions, then the Manuals. The chests are extra, so a shortage that they
+ * do not cover stays on the item.
+ */
+export const chestUseOf = (
+  plan: PetPlanResult,
+  chief: Playthrough,
+): ChestUse => {
+  const held = ownedCount(chief, ADVANCEMENT_CHEST_ID);
+  let left = held;
+  const chestsFor: Record<string, number> = {};
+  CHEST_PICKS.forEach(({ itemId, perChest }) => {
+    const short = Math.max(0, plan.needs[itemId] - ownedCount(chief, itemId));
+    const used = Math.min(left, Math.ceil(short / perChest));
+    chestsFor[itemId] = used;
+    left -= used;
+  });
+  return {
+    chestsFor,
+    held,
+    used: held - left,
+    fullyUsed: held > 0 && left === 0,
+  };
+};
+
 export const petPlanChecks = (
   plan: PetPlanResult,
   chief: Playthrough,
-): StockCheck[] =>
-  PLAN_ITEM_IDS.map((id) => ({
-    id,
-    name: findItem(id)?.name ?? id,
-    available: ownedCount(chief, id),
-    needed: plan.needs[id],
-  }));
+): StockCheck[] => {
+  const t = translator("pets");
+  const { chestsFor } = chestUseOf(plan, chief);
+  const perChest = Object.fromEntries(
+    CHEST_PICKS.map((pick) => [pick.itemId, pick.perChest]),
+  );
+  return PLAN_ITEM_IDS.map((id) => {
+    const fromChests = (chestsFor[id] ?? 0) * (perChest[id] ?? 0);
+    return {
+      id,
+      name: findItem(id)?.name ?? id,
+      available: ownedCount(chief, id) + fromChests,
+      needed: plan.needs[id],
+      detail:
+        fromChests > 0
+          ? t("plan.chest.covers", { amount: formatNumber(fromChests) })
+          : undefined,
+    };
+  });
+};
 
 /**
  * The Construction Speed percent of the Cave Hyena skill at its current tier. A locked pet adds

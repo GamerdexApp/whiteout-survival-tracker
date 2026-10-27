@@ -27,10 +27,10 @@ export function PetCard({ view, chief, ruleMet, onChange }: PetCardProps) {
 	const petId = pet.id;
 
 	return (
-		<li className="mb-3 break-inside-avoid">
+		<li>
 			<Card
 				dimmed={!unlocked}
-				className="flex flex-col gap-3 p-3"
+				className="flex h-full flex-col gap-3 p-3"
 				data-unlocked={unlocked}
 				data-locked={locked}
 			>

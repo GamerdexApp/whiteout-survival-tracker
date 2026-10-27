@@ -59,5 +59,20 @@
             "unknown": "Desconocido"
         },
         "levelName": "VIP {level}"
+    },
+    "signIn": {
+        "title": "Inicio de sesión diario",
+        "note": "El inicio de sesión diario da más XP por cada día de una racha. La racha termina si te pierdes un día UTC, y cada día empieza a las 00:00 UTC.",
+        "add": "Agregar inicio de sesión diario",
+        "addHint": "Día {streak} de la racha: {points} XP",
+        "claimed": "Ya iniciaste sesión hoy, en el día {streak} de la racha. Mañana da {points} XP, en {time}.",
+        "needXp": "Ingresa primero tu XP total o tu nivel VIP.",
+        "streakLabel": "Día de la racha",
+        "streakHint": "El día de la racha de hoy. Cámbialo si tu racha ya está en curso.",
+        "toast": {
+            "title": "Inicio de sesión agregado",
+            "message": "{points} XP agregados por el día {streak} de la racha.",
+            "undo": "Deshacer"
+        }
     }
 }
