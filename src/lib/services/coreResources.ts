@@ -1,4 +1,13 @@
+import type { SpeedupType } from "whiteout-survival-data";
+import { allItems, speedupTypes } from "@/data/game/items";
+
 export const BASE_RESOURCE_IDS = ["meat", "wood", "coal", "iron"] as const;
+
+export const FIRE_CRYSTAL_ITEM_IDS = [
+  "fire-crystal",
+  "fire-crystal-shard",
+  "refined-fire-crystal",
+] as const;
 
 export type BaseResourceId = (typeof BASE_RESOURCE_IDS)[number];
 
@@ -61,3 +70,21 @@ const chestRowOf = (secured: boolean): ChestRow => ({
 });
 
 export const chestRows: ChestRow[] = [chestRowOf(false), chestRowOf(true)];
+
+export interface SpeedupCell {
+  itemId: string;
+  minutes: number;
+}
+
+export interface SpeedupRow {
+  type: SpeedupType;
+  cells: SpeedupCell[];
+}
+
+export const speedupRows: SpeedupRow[] = speedupTypes.map((type) => ({
+  type,
+  cells: allItems
+    .filter((item) => item.speedup?.type === type)
+    .map((item) => ({ itemId: item.id, minutes: item.speedup!.minutes }))
+    .sort((a, b) => a.minutes - b.minutes),
+}));

@@ -10,7 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Resources: the Resources category on the All items tab shows a total card for Meat, Wood, Coal and Iron, and an Any card with the most each resource can reach from the Custom Resource chests
-- Resources: a Core Resources tab with a collapsible Resources section for the Meat, Wood, Coal and Iron counts and the backpack stacks, including the Secured packs and the Custom Resource chests. It saves to the same counts as the All items tab, which keeps the earlier Resources view
+- Resources: a Core Resources tab with a collapsible Resources section for the Meat, Wood, Coal and Iron counts and the backpack stacks, including the Secured packs and the Custom Resource chests. It saves to the same counts as the All items tab, which keeps the earlier Resources view; a Fire Crystal section in one compact row holds the Fire Crystal, Fire Crystal Shard and Refined Fire Crystal counts; a Speedups section has one row per speedup type with a count for each duration
 - VIP: a daily sign-in button that adds the XP of the streak day, with Undo. The streak grows each UTC day and starts again after a missed day, and a field to set the streak day of today
 
 ### Changed
