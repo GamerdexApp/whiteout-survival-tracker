@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- VIP: a daily sign-in button that adds the XP of the streak day, with Undo. The streak grows each UTC day and starts again after a missed day, and a field to set the streak day of today
+
 ### Changed
 
 - Game data package 0.8.0: new Resources, Chief Material and Hero Gear Material item categories, a Shard item for every hero, the Enhancement XP Component split into the 10 and the 100, and new pieces and puzzle pictures in the Tundra Album

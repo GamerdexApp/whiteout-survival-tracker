@@ -59,5 +59,20 @@
             "unknown": "Sconosciuto"
         },
         "levelName": "VIP {level}"
+    },
+    "signIn": {
+        "title": "Accesso giornaliero",
+        "note": "L’accesso giornaliero dà più XP per ogni giorno di una serie. La serie termina se salti un giorno UTC, e ogni giorno inizia alle 00:00 UTC.",
+        "add": "Aggiungi accesso giornaliero",
+        "addHint": "Giorno {streak} della serie: {points} XP",
+        "claimed": "Accesso di oggi registrato, al giorno {streak} della serie. Domani dà {points} XP, tra {time}.",
+        "needXp": "Inserisci prima i tuoi XP totali o il tuo livello VIP.",
+        "streakLabel": "Giorno della serie",
+        "streakHint": "Il giorno della serie di oggi. Cambialo se la tua serie è già in corso.",
+        "toast": {
+            "title": "Accesso aggiunto",
+            "message": "{points} XP aggiunti per il giorno {streak} della serie.",
+            "undo": "Annulla"
+        }
     }
 }

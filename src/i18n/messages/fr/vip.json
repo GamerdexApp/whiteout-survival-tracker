@@ -59,5 +59,20 @@
             "unknown": "Inconnu"
         },
         "levelName": "VIP {level}"
+    },
+    "signIn": {
+        "title": "Connexion quotidienne",
+        "note": "La connexion quotidienne donne plus d’XP pour chaque jour d’une série. La série s’arrête si tu manques un jour UTC, et chaque jour commence à 00:00 UTC.",
+        "add": "Ajouter la connexion quotidienne",
+        "addHint": "Jour {streak} de la série : {points} XP",
+        "claimed": "Connecté aujourd’hui, au jour {streak} de la série. Demain donne {points} XP, dans {time}.",
+        "needXp": "Saisis d’abord ton XP total ou ton niveau VIP.",
+        "streakLabel": "Jour de la série",
+        "streakHint": "Le jour de la série d’aujourd’hui. Modifie-le si ta série est déjà en cours.",
+        "toast": {
+            "title": "Connexion ajoutée",
+            "message": "{points} XP ajoutés pour le jour {streak} de la série.",
+            "undo": "Annuler"
+        }
     }
 }

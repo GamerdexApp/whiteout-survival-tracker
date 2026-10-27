@@ -59,5 +59,20 @@
             "unknown": "Không rõ"
         },
         "levelName": "VIP {level}"
+    },
+    "signIn": {
+        "title": "Điểm danh hằng ngày",
+        "note": "Điểm danh hằng ngày cho nhiều XP hơn ở mỗi ngày của chuỗi. Chuỗi kết thúc nếu bạn bỏ lỡ một ngày UTC, và mỗi ngày bắt đầu lúc 00:00 UTC.",
+        "add": "Thêm điểm danh hằng ngày",
+        "addHint": "Ngày {streak} của chuỗi: {points} XP",
+        "claimed": "Hôm nay đã điểm danh, ở ngày {streak} của chuỗi. Ngày mai cho {points} XP, sau {time}.",
+        "needXp": "Hãy nhập tổng XP hoặc cấp VIP của bạn trước.",
+        "streakLabel": "Ngày của chuỗi",
+        "streakHint": "Ngày của chuỗi hôm nay. Hãy đổi nếu chuỗi của bạn đang chạy.",
+        "toast": {
+            "title": "Đã thêm điểm danh",
+            "message": "Đã thêm {points} XP cho ngày {streak} của chuỗi.",
+            "undo": "Hoàn tác"
+        }
     }
 }

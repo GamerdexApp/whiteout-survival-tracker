@@ -1,7 +1,13 @@
-import { BUFF_VIP_MAX_LEVEL, vip } from "whiteout-survival-data";
+import {
+  BUFF_VIP_MAX_LEVEL,
+  vip,
+  vipSignInPoints,
+} from "whiteout-survival-data";
 import type { VipBonus, VipLevel } from "whiteout-survival-data";
 
 export type { VipBonus, VipLevel };
+
+export { vipSignInPoints };
 
 export const vipLevels: VipLevel[] = vip().get();
 

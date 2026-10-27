@@ -59,5 +59,20 @@
             "unknown": "Tidak diketahui"
         },
         "levelName": "VIP {level}"
+    },
+    "signIn": {
+        "title": "Log masuk harian",
+        "note": "Log masuk harian memberi lebih banyak XP bagi setiap hari dalam satu rentetan. Rentetan tamat jika anda terlepas satu hari UTC, dan setiap hari bermula pada 00:00 UTC.",
+        "add": "Tambah log masuk harian",
+        "addHint": "Hari ke-{streak} rentetan: {points} XP",
+        "claimed": "Sudah log masuk hari ini, pada hari ke-{streak} rentetan. Esok memberi {points} XP, dalam {time}.",
+        "needXp": "Masukkan jumlah XP atau tahap VIP anda dahulu.",
+        "streakLabel": "Hari rentetan",
+        "streakHint": "Hari rentetan bagi hari ini. Ubah jika rentetan anda sudah berjalan.",
+        "toast": {
+            "title": "Log masuk ditambah",
+            "message": "{points} XP ditambah untuk hari ke-{streak} rentetan.",
+            "undo": "Buat asal"
+        }
     }
 }

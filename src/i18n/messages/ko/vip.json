@@ -59,5 +59,20 @@
             "unknown": "알 수 없음"
         },
         "levelName": "VIP {level}"
+    },
+    "signIn": {
+        "title": "일일 출석",
+        "note": "일일 출석은 연속 일수가 늘어날수록 더 많은 XP를 줍니다. UTC 하루를 놓치면 연속이 끝나고, 하루는 00:00 UTC에 시작합니다.",
+        "add": "일일 출석 추가",
+        "addHint": "연속 {streak}일째: {points} XP",
+        "claimed": "오늘은 출석했습니다(연속 {streak}일째). 내일은 {points} XP이며, {time} 후입니다.",
+        "needXp": "먼저 총 XP 또는 VIP 레벨을 입력하세요.",
+        "streakLabel": "연속 일수",
+        "streakHint": "오늘의 연속 일수입니다. 이미 연속 중이라면 바꿔 주세요.",
+        "toast": {
+            "title": "출석을 추가했습니다",
+            "message": "연속 {streak}일째 {points} XP를 추가했습니다.",
+            "undo": "실행 취소"
+        }
     }
 }
