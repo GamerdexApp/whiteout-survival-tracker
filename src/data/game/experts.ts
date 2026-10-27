@@ -113,12 +113,11 @@ export const skillMaxLevelAtAffinity = (
   affinity: number,
 ) => {
   const capped = expertSkillMaxLevel(skill, affinity);
-  const step = AFFINITY_STEP * Math.floor(affinity / AFFINITY_STEP);
   let level = 0;
   while (
     level < capped &&
     (skill.unlockAffinityLevel === undefined ||
-      affinityNeededForSkillLevel(skill, level + 1) <= step)
+      affinityNeededForSkillLevel(skill, level + 1) <= affinity)
   ) {
     level += 1;
   }
