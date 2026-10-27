@@ -139,3 +139,40 @@ export const HERO_GEAR_ITEM_IDS = [
   "custom-epic-hero-gear-chest",
   "lucky-hero-gear-chest",
 ] as const;
+
+export const CHIEF_GEAR_ITEM_IDS = [
+  "hardened-alloy",
+  "polishing-solution",
+  "design-plans",
+  "lunar-amber",
+] as const;
+
+export const CHIEF_CHARM_ITEM_IDS = [
+  "charm-design",
+  "charm-guide",
+  "charm-secrets",
+] as const;
+
+export const CHIEF_GEAR_AND_CHARM_CHEST_ITEM_IDS = [
+  "chief-gear-materials-chest",
+  "chief-gear-variety-chest",
+  "random-chief-charm-material-chest",
+] as const;
+
+export const GENERAL_HERO_SHARDS = [
+  { itemId: "rare-general-hero-shard", rarity: "Rare" },
+  { itemId: "epic-general-hero-shard", rarity: "Epic" },
+  { itemId: "mythic-general-hero-shard", rarity: "Legendary" },
+] as const;
+
+export const EXPEDITION_MANUALS = [
+  { itemId: "rare-expedition-skill-manual", rarity: "Rare" },
+  { itemId: "epic-expedition-skill-manual", rarity: "Epic" },
+  { itemId: "mythic-expedition-skill-manual", rarity: "Legendary" },
+] as const;
+
+export const EXPLORATION_MANUALS = [
+  { itemId: "rare-exploration-skill-manual", rarity: "Rare" },
+  { itemId: "epic-exploration-skill-manual", rarity: "Epic" },
+  { itemId: "mythic-exploration-skill-manual", rarity: "Legendary" },
+] as const;

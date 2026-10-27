@@ -110,7 +110,23 @@
         "petFoodAndMarksRow": "Food and Wild Marks",
         "heroGearSection": "Hero Gear",
         "heroGearMaterialsRow": "Upgrade materials",
-        "heroGearRow": "Gear and gear chests"
+        "heroGearRow": "Gear and gear chests",
+        "chiefGearSection": "Chief Gear and Charms",
+        "chiefGearRow": "Chief Gear",
+        "chiefCharmRow": "Chief Charms",
+        "chiefChestsRow": "Gear and charm chests",
+        "heroShards": {
+            "section": "Hero Shards",
+            "showCompleted": "Show completed heroes",
+            "hintHidden": "Completed heroes, shards and manuals are hidden: {count}",
+            "hintShown": "Showing completed heroes, shards and manuals",
+            "allCompleted": "Every unlocked hero has all stars. Turn on the switch to see them.",
+            "generation": "Gen {generation}",
+            "shardName": "{name} Shard",
+            "generalShards": "General shards",
+            "expeditionManuals": "Expedition skill manuals",
+            "explorationManuals": "Exploration skill manuals"
+        }
     },
     "planStock": {
         "constructionTime": "Construction time, as speedups",

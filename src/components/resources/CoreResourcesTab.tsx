@@ -1,7 +1,6 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import type { ReactNode } from "react";
 import type { Playthrough } from "@/types/app";
 import { usePlaythrough } from "@/lib/contexts/PlaythroughContext";
 import { formatCompact, formatDuration } from "@/lib/format";
@@ -10,6 +9,9 @@ import {
 	AFFINITY_GIFT_ITEM_IDS,
 	BASE_RESOURCE_IDS,
 	chestRows,
+	CHIEF_CHARM_ITEM_IDS,
+	CHIEF_GEAR_AND_CHARM_CHEST_ITEM_IDS,
+	CHIEF_GEAR_ITEM_IDS,
 	COMMON_EXPERT_ITEM_IDS,
 	EXPERT_SIGILS,
 	FIRE_CRYSTAL_ITEM_IDS,
@@ -24,61 +26,8 @@ import { ownedCount, withOwnedCount } from "@/service/inventory";
 import { findExpert } from "@/data/game/experts";
 import { findItem } from "@/data/game/items";
 import { CollapsibleSection } from "@/comps/ui/CollapsibleSection";
-import { ItemIcon } from "@/comps/ui/ItemIcon";
-import { SectionLabel } from "@/comps/ui/SectionLabel";
-import { CountInput } from "./CountControl";
-
-interface CountCellProps {
-	itemId: string;
-	label: string;
-	count: number;
-	onChange: (itemId: string, count: number) => void;
-	labelClassName?: string;
-}
-
-function CountCell({
-	itemId,
-	label,
-	count,
-	onChange,
-	labelClassName = "w-9 shrink-0 lg:w-auto",
-}: CountCellProps) {
-	const t = useTranslations("resources.countControl");
-	const item = findItem(itemId);
-	if (!item) return null;
-
-	return (
-		<div className="flex min-w-0 items-center gap-2">
-			<ItemIcon src={item.img} size={24} />
-			<SectionLabel className={`text-muted ${labelClassName}`}>{label}</SectionLabel>
-			<CountInput
-				label={t("owned", { name: item.name })}
-				value={count}
-				onChange={(next) => onChange(itemId, next)}
-				className="w-full min-w-16 flex-1"
-			/>
-		</div>
-	);
-}
-
-function CountRow({
-	title,
-	columns,
-	children,
-}: {
-	title?: string;
-	columns: string;
-	children: ReactNode;
-}) {
-	return (
-		<div
-			className={`flex flex-col gap-1.5 lg:grid lg:items-center lg:gap-3 ${title ? "lg:grid-cols-[11rem_minmax(0,1fr)]" : ""}`}
-		>
-			{title && <SectionLabel className="text-muted">{title}</SectionLabel>}
-			<div className={`grid gap-x-3 gap-y-2 ${columns}`}>{children}</div>
-		</div>
-	);
-}
+import { CountCell, CountRow, FOUR_PER_ROW_COLUMNS, WRAPPING_LABEL } from "./CoreCells";
+import { HeroShardsSection } from "./HeroShardsSection";
 
 const PACK_COLUMNS = "grid-cols-1 sm:grid-cols-2 lg:grid-cols-5";
 const CHEST_COLUMNS = "grid-cols-1 sm:grid-cols-3";
@@ -86,8 +35,6 @@ const BASE_COLUMNS = "grid-cols-1 sm:grid-cols-2";
 const FIRE_CRYSTAL_COLUMNS = "grid-cols-1 sm:grid-cols-3";
 const SIGIL_COLUMNS = "grid-cols-1 sm:grid-cols-2 lg:grid-cols-5";
 const EXPERT_ITEM_COLUMNS = "grid-cols-1 sm:grid-cols-3";
-const WRAPPING_LABEL = "min-w-0 leading-tight tracking-tight";
-const FOUR_PER_ROW_COLUMNS = "grid-cols-1 sm:grid-cols-2 lg:grid-cols-4";
 
 export function CoreResourcesTab({ chief }: { chief: Playthrough }) {
 	const t = useTranslations("resources.core");
@@ -279,6 +226,45 @@ export function CoreResourcesTab({ chief }: { chief: Playthrough }) {
 					))}
 				</CountRow>
 			</CollapsibleSection>
+			<CollapsibleSection title={t("chiefGearSection")}>
+				<CountRow title={t("chiefGearRow")} columns={FOUR_PER_ROW_COLUMNS}>
+					{CHIEF_GEAR_ITEM_IDS.map((itemId) => (
+						<CountCell
+							key={itemId}
+							itemId={itemId}
+							label={baseName(itemId)}
+							count={ownedCount(chief, itemId)}
+							onChange={setCount}
+							labelClassName={WRAPPING_LABEL}
+						/>
+					))}
+				</CountRow>
+				<CountRow title={t("chiefCharmRow")} columns={FOUR_PER_ROW_COLUMNS}>
+					{CHIEF_CHARM_ITEM_IDS.map((itemId) => (
+						<CountCell
+							key={itemId}
+							itemId={itemId}
+							label={baseName(itemId)}
+							count={ownedCount(chief, itemId)}
+							onChange={setCount}
+							labelClassName={WRAPPING_LABEL}
+						/>
+					))}
+				</CountRow>
+				<CountRow title={t("chiefChestsRow")} columns={FOUR_PER_ROW_COLUMNS}>
+					{CHIEF_GEAR_AND_CHARM_CHEST_ITEM_IDS.map((itemId) => (
+						<CountCell
+							key={itemId}
+							itemId={itemId}
+							label={baseName(itemId)}
+							count={ownedCount(chief, itemId)}
+							onChange={setCount}
+							labelClassName={WRAPPING_LABEL}
+						/>
+					))}
+				</CountRow>
+			</CollapsibleSection>
+			<HeroShardsSection chief={chief} />
 		</div>
 	);
 }
