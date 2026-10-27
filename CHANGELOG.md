@@ -18,6 +18,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Game data package 0.9.0: new Resources, Chief Material and Hero Gear Material item categories, a Shard item for every hero, the Enhancement XP Component split into the 10 and the 100, and new pieces and puzzle pictures in the Tundra Album
+- Experts Plan: the expert list in Add an expert and the expert card show the sigil count of the expert
 - Heroes Plan: the hero list in Add a hero shows a dot for the rarity (blue Rare, purple Epic, gold Mythic) and badges for the generation and the class
 - The Wiki lists Justus. The Experts page leaves him out until the package has his stat bonus
 

@@ -129,7 +129,8 @@
             "selectLabel": "Ahli yang ditambah",
             "button": "Tambah ahli",
             "allIn": "Semua ahli yang direkrut sudah ada di rencana.",
-            "noneRecruited": "Rekrut ahli di halaman untuk merencanakannya."
+            "noneRecruited": "Rekrut ahli di halaman untuk merencanakannya.",
+            "option": "{name}, {count} sigil"
         },
         "block": {
             "remove": "Hapus",
@@ -146,7 +147,8 @@
             "affinityGoalLabel": "Target afinitas {expert}",
             "skillGoalLabel": "Target {skill} {expert}",
             "advanceAtGoal": "Naik tingkat di level {level}",
-            "advanceAtGoalLabel": "{expert} naik tingkat di target"
+            "advanceAtGoalLabel": "{expert} naik tingkat di target",
+            "sigils": "Sigil {count}"
         },
         "checks": {
             "affinity": "Poin afinitas",

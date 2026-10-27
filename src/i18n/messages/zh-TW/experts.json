@@ -129,7 +129,8 @@
             "selectLabel": "要新增的專家",
             "button": "新增專家",
             "allIn": "所有已招募的專家都已在規劃中。",
-            "noneRecruited": "請先在頁面上招募專家才能規劃。"
+            "noneRecruited": "請先在頁面上招募專家才能規劃。",
+            "option": "{name}，{count} 個印記"
         },
         "block": {
             "remove": "移除",
@@ -146,7 +147,8 @@
             "affinityGoalLabel": "{expert}親密度目標",
             "skillGoalLabel": "{expert}{skill}目標",
             "advanceAtGoal": "在 {level} 級進階",
-            "advanceAtGoalLabel": "{expert}在目標等級進階"
+            "advanceAtGoalLabel": "{expert}在目標等級進階",
+            "sigils": "印記 {count}"
         },
         "checks": {
             "affinity": "親密度點數",

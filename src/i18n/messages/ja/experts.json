@@ -129,7 +129,8 @@
             "selectLabel": "追加するエキスパート",
             "button": "エキスパートを追加",
             "allIn": "採用済みのエキスパートはすべてプランに入っています。",
-            "noneRecruited": "プランするには、ページでエキスパートを採用してください。"
+            "noneRecruited": "プランするには、ページでエキスパートを採用してください。",
+            "option": "{name}、印章{count}個"
         },
         "block": {
             "remove": "削除",
@@ -146,7 +147,8 @@
             "affinityGoalLabel": "{expert}の親密度の目標",
             "skillGoalLabel": "{expert}の{skill}の目標",
             "advanceAtGoal": "レベル{level}で昇格",
-            "advanceAtGoalLabel": "{expert}を目標で昇格"
+            "advanceAtGoalLabel": "{expert}を目標で昇格",
+            "sigils": "印章 {count}"
         },
         "checks": {
             "affinity": "親密度ポイント",

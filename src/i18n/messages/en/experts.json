@@ -129,7 +129,8 @@
             "selectLabel": "Expert to add",
             "button": "Add expert",
             "allIn": "Every recruited expert is in the plan.",
-            "noneRecruited": "Recruit an expert on the page to plan it."
+            "noneRecruited": "Recruit an expert on the page to plan it.",
+            "option": "{name}, {count} sigils"
         },
         "block": {
             "remove": "Remove",
@@ -146,7 +147,8 @@
             "affinityGoalLabel": "{expert} affinity goal",
             "skillGoalLabel": "{expert} {skill} goal",
             "advanceAtGoal": "Advance at level {level}",
-            "advanceAtGoalLabel": "{expert} advance at the goal"
+            "advanceAtGoalLabel": "{expert} advance at the goal",
+            "sigils": "Sigils {count}"
         },
         "checks": {
             "affinity": "Affinity points",

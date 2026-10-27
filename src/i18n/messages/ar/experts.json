@@ -129,7 +129,8 @@
             "selectLabel": "الخبير المراد إضافته",
             "button": "إضافة الخبير",
             "allIn": "كل الخبراء المجنَّدين موجودون في الخطة.",
-            "noneRecruited": "جنّد خبيرًا من الصفحة لتخطط له."
+            "noneRecruited": "جنّد خبيرًا من الصفحة لتخطط له.",
+            "option": "{name}، {count} ختم"
         },
         "block": {
             "remove": "إزالة",
@@ -146,7 +147,8 @@
             "affinityGoalLabel": "هدف ألفة {expert}",
             "skillGoalLabel": "هدف {skill} لدى {expert}",
             "advanceAtGoal": "الارتقاء عند المستوى {level}",
-            "advanceAtGoalLabel": "ارتقاء {expert} عند الهدف"
+            "advanceAtGoalLabel": "ارتقاء {expert} عند الهدف",
+            "sigils": "الأختام {count}"
         },
         "checks": {
             "affinity": "نقاط الألفة",

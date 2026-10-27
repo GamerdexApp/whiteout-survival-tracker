@@ -129,7 +129,8 @@
             "selectLabel": "要添加的专家",
             "button": "添加专家",
             "allIn": "所有已招募的专家都已在计划中。",
-            "noneRecruited": "请先在页面上招募专家，才能为其制定计划。"
+            "noneRecruited": "请先在页面上招募专家，才能为其制定计划。",
+            "option": "{name}，{count} 个印记"
         },
         "block": {
             "remove": "移除",
@@ -146,7 +147,8 @@
             "affinityGoalLabel": "{expert}亲密度目标",
             "skillGoalLabel": "{expert} {skill}目标",
             "advanceAtGoal": "在{level}级进阶",
-            "advanceAtGoalLabel": "{expert}在目标处进阶"
+            "advanceAtGoalLabel": "{expert}在目标处进阶",
+            "sigils": "印记 {count}"
         },
         "checks": {
             "affinity": "亲密度点数",

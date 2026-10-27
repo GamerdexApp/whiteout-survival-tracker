@@ -129,7 +129,8 @@
             "selectLabel": "Expert à ajouter",
             "button": "Ajouter l'expert",
             "allIn": "Tous les experts recrutés sont dans le plan.",
-            "noneRecruited": "Recrutez un expert sur la page pour le planifier."
+            "noneRecruited": "Recrutez un expert sur la page pour le planifier.",
+            "option": "{name}, {count} sceaux"
         },
         "block": {
             "remove": "Retirer",
@@ -146,7 +147,8 @@
             "affinityGoalLabel": "Objectif d'affinité de {expert}",
             "skillGoalLabel": "Objectif de {skill} de {expert}",
             "advanceAtGoal": "Avancer au niveau {level}",
-            "advanceAtGoalLabel": "Avancement de {expert} à l'objectif"
+            "advanceAtGoalLabel": "Avancement de {expert} à l'objectif",
+            "sigils": "Sceaux {count}"
         },
         "checks": {
             "affinity": "Points d'affinité",

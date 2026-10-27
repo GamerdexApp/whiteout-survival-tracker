@@ -129,7 +129,8 @@
             "selectLabel": "Eklenecek uzman",
             "button": "Uzman ekle",
             "allIn": "İşe alınan her uzman planda.",
-            "noneRecruited": "Planlamak için sayfada bir uzmanı işe al."
+            "noneRecruited": "Planlamak için sayfada bir uzmanı işe al.",
+            "option": "{name}, {count} mühür"
         },
         "block": {
             "remove": "Kaldır",
@@ -146,7 +147,8 @@
             "affinityGoalLabel": "Yakınlık hedefi: {expert}",
             "skillGoalLabel": "Hedef: {expert} {skill}",
             "advanceAtGoal": "Seviye {level} için aşama atla",
-            "advanceAtGoalLabel": "Hedefte aşama atla: {expert}"
+            "advanceAtGoalLabel": "Hedefte aşama atla: {expert}",
+            "sigils": "Mühür {count}"
         },
         "checks": {
             "affinity": "Yakınlık puanı",

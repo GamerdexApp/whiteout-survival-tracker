@@ -129,7 +129,8 @@
             "selectLabel": "Эксперт для добавления",
             "button": "Добавить эксперта",
             "allIn": "Все нанятые эксперты уже в плане.",
-            "noneRecruited": "Наймите эксперта на странице, чтобы запланировать его."
+            "noneRecruited": "Наймите эксперта на странице, чтобы запланировать его.",
+            "option": "{name}, печатей: {count}"
         },
         "block": {
             "remove": "Убрать",
@@ -146,7 +147,8 @@
             "affinityGoalLabel": "Цель по близости: {expert}",
             "skillGoalLabel": "Цель по навыку {skill}: {expert}",
             "advanceAtGoal": "Продвинуть на уровне {level}",
-            "advanceAtGoalLabel": "{expert}: продвинуть на цели"
+            "advanceAtGoalLabel": "{expert}: продвинуть на цели",
+            "sigils": "Печати {count}"
         },
         "checks": {
             "affinity": "Очки близости",

@@ -175,7 +175,10 @@ function AddExpert({
 						>
 							{addable.map((view) => (
 								<option key={view.expert.id} value={view.expert.id}>
-									{view.expert.name}
+									{t("option", {
+										name: view.expert.name,
+										count: formatNumber(view.sigils),
+									})}
 								</option>
 							))}
 						</Select>
@@ -250,7 +253,12 @@ function ExpertBlock({
 					<ItemIcon src={expert.img} size={40} />
 					<div className="flex flex-col">
 						<h3 className="font-semibold">{expert.name}</h3>
-						<span className="text-muted text-xs">{expert.title}</span>
+						<span className="text-muted flex flex-wrap items-center gap-x-2 text-xs">
+							{expert.title}
+							<Badge tone="kept">
+								{t("sigils", { count: formatNumber(view.sigils) })}
+							</Badge>
+						</span>
 					</div>
 				</div>
 				<Button

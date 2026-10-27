@@ -129,7 +129,8 @@
             "selectLabel": "ผู้เชี่ยวชาญที่จะเพิ่ม",
             "button": "เพิ่มผู้เชี่ยวชาญ",
             "allIn": "ผู้เชี่ยวชาญที่สรรหาแล้วทุกคนอยู่ในแผนแล้ว",
-            "noneRecruited": "สรรหาผู้เชี่ยวชาญในหน้านั้นเพื่อวางแผน"
+            "noneRecruited": "สรรหาผู้เชี่ยวชาญในหน้านั้นเพื่อวางแผน",
+            "option": "{name}, ตรา {count}"
         },
         "block": {
             "remove": "ลบ",
@@ -146,7 +147,8 @@
             "affinityGoalLabel": "เป้าหมายความสนิทของ {expert}",
             "skillGoalLabel": "เป้าหมาย {skill} ของ {expert}",
             "advanceAtGoal": "เลื่อนขั้นที่เลเวล {level}",
-            "advanceAtGoalLabel": "{expert} เลื่อนขั้นที่เป้าหมาย"
+            "advanceAtGoalLabel": "{expert} เลื่อนขั้นที่เป้าหมาย",
+            "sigils": "ตรา {count}"
         },
         "checks": {
             "affinity": "แต้มความสนิท",

@@ -129,7 +129,8 @@
             "selectLabel": "Especialista a adicionar",
             "button": "Adicionar especialista",
             "allIn": "Todos os especialistas recrutados estão no plano.",
-            "noneRecruited": "Recrutar um especialista na página para o planear."
+            "noneRecruited": "Recrutar um especialista na página para o planear.",
+            "option": "{name}, {count} sigilos"
         },
         "block": {
             "remove": "Remover",
@@ -146,7 +147,8 @@
             "affinityGoalLabel": "Objetivo de afinidade de {expert}",
             "skillGoalLabel": "Objetivo de {skill} de {expert}",
             "advanceAtGoal": "Avançar no nível {level}",
-            "advanceAtGoalLabel": "{expert} avança no objetivo"
+            "advanceAtGoalLabel": "{expert} avança no objetivo",
+            "sigils": "Sigilos {count}"
         },
         "checks": {
             "affinity": "Pontos de afinidade",

@@ -129,7 +129,8 @@
             "selectLabel": "추가할 전문가",
             "button": "전문가 추가",
             "allIn": "영입한 모든 전문가가 계획에 있어요.",
-            "noneRecruited": "페이지에서 전문가를 영입하면 계획할 수 있어요."
+            "noneRecruited": "페이지에서 전문가를 영입하면 계획할 수 있어요.",
+            "option": "{name}, 인장 {count}개"
         },
         "block": {
             "remove": "삭제",
@@ -146,7 +147,8 @@
             "affinityGoalLabel": "{expert} 친밀도 목표",
             "skillGoalLabel": "{expert} {skill} 목표",
             "advanceAtGoal": "{level}레벨에서 승급",
-            "advanceAtGoalLabel": "{expert} 목표에서 승급"
+            "advanceAtGoalLabel": "{expert} 목표에서 승급",
+            "sigils": "인장 {count}"
         },
         "checks": {
             "affinity": "친밀도 포인트",
