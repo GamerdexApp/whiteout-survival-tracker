@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.0] - 2026-10-27
+
 ### Added
 
 - Resources: the Resources category on the All items tab shows a total card for Meat, Wood, Coal and Iron, and an Any card with the most each resource can reach from the Custom Resource chests; the Experts category shows cards for the Common Sigils, Books and total Affinity from the gifts
