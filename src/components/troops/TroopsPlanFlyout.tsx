@@ -13,6 +13,7 @@ import {
 } from "@/service/troopsPlan";
 import type { TroopsPlanDraft } from "@/service/troopsPlan";
 import { ExportToEventFlyout } from "@/comps/export/ExportToEventFlyout";
+import { GeneralSpeedupShare } from "@/comps/queues/GeneralSpeedupShare";
 import { PlanStockCheck } from "@/comps/queues/PlanStockCheck";
 import { Button } from "@/comps/ui/Button";
 import { Card } from "@/comps/ui/Card";
@@ -114,6 +115,7 @@ function PlanBody({
 			{draft.runs.length > 0 && (
 				<>
 					<PlanStockCheck
+						timeExtra={<GeneralSpeedupShare chief={chief} use="troops" />}
 						checks={troopsStockChecks(chief, result)}
 						timeNote={t("stock.note", {
 							training: formatNumber(stock.training),

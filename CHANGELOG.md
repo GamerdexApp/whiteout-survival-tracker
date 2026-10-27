@@ -24,6 +24,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
+- Plans: the general speedups no longer count in full in every plan. The time check of the Buildings, Research, Troops and Experts plans has a field for the percent of the general speedup minutes the plan uses. It starts at 0 and the four plans together cannot pass 100%. The speedup count adds the applied general minutes
 - Experts Plan: the available affinity counts the affinity gifts on the Resources page, so it no longer shows 0 when you hold gifts. Available affinity shows everything you hold, also when the plan needs none. The "still to get" lines share the gifts across the planned experts in order, after the points saved on each expert card
 - Heroes Plan: Add a hero no longer lists a hero who has every star
 - Heroes Plan: the result names the shards by rarity, such as Epic Hero Shards, because the amount adds the hero shards and the general shards

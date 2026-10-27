@@ -130,7 +130,7 @@
         "stock": {
             "name": "Aceleradores de treino",
             "minutesUnit": "min",
-            "note": "Seu estoque: Treino {training} min, Gerais {general} min. Os aceleradores gerais contam para o treino. O treino que um acelerador não cobre termina no tempo normal, então só os aceleradores que você tem são usados: {used} min."
+            "note": "Seu estoque: Treinamento {training} min, Geral {general} min aplicados. Só conta a parte das acelerações gerais definida abaixo. O treinamento que uma aceleração não cobre termina em tempo normal, então só as acelerações que você tem são usadas: {used} min."
         },
         "result": {
             "title": "Resultado",

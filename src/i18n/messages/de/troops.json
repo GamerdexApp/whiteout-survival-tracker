@@ -130,7 +130,7 @@
         "stock": {
             "name": "Trainings-Beschleuniger",
             "minutesUnit": "Min",
-            "note": "Dein Bestand: Training {training} Min, Allgemein {general} Min. Allgemeine Beschleuniger zählen für das Training. Training, das ein Beschleuniger nicht abdeckt, endet in Normalzeit, daher werden nur die Beschleuniger genutzt, die du hast: {used} Min."
+            "note": "Dein Bestand: Training {training} Min, Allgemein {general} Min angewendet. Es zählt nur der unten festgelegte Anteil der allgemeinen Beschleuniger. Training, das ein Beschleuniger nicht abdeckt, endet in Normalzeit, daher werden nur die Beschleuniger genutzt, die du hast: {used} Min."
         },
         "result": {
             "title": "Ergebnis",

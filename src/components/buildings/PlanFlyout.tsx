@@ -23,12 +23,13 @@ import {
 import type { AgeHints } from "@/service/buildings";
 import { ageHintOf, buildView, levelOrder, lockedFcHints } from "@/service/buildings";
 import { exportedPlanOf } from "@/service/eventExport";
-import { minutesOfSpeedup } from "@/service/inventory";
+import { generalMinutesApplied, minutesOfSpeedup } from "@/service/inventory";
 import { petSkillConstructionPercent } from "@/service/pets";
 import { resourceChecks } from "@/service/planStock";
 import { findBuildingById, levelledBuildings } from "@/data/game/buildings";
 import { findItem, RESOURCE_ITEM_IDS } from "@/data/game/items";
 import { ExportToEventFlyout } from "@/comps/export/ExportToEventFlyout";
+import { GeneralSpeedupShare } from "@/comps/queues/GeneralSpeedupShare";
 import { PlanStockCheck } from "@/comps/queues/PlanStockCheck";
 import { Badge } from "@/comps/ui/Badge";
 import { Button } from "@/comps/ui/Button";
@@ -229,12 +230,13 @@ function PlanBody({
 			{result && !result.ok && <Note tone="warning">{result.error}</Note>}
 			{result?.ok && (
 				<PlanStockCheck
+					timeExtra={<GeneralSpeedupShare chief={chief} use="buildings" />}
 					checks={resourceChecks(result.calculation, chief)}
 					timeNote={t("plan.timeNote", {
 						time: formatDuration(result.calculation.seconds),
 						percent: formatNumber(speedPercent),
 						construction: formatNumber(minutesOfSpeedup(chief, "construction")),
-						general: formatNumber(minutesOfSpeedup(chief, "general")),
+						general: formatNumber(generalMinutesApplied(chief, "buildings")),
 					})}
 				/>
 			)}

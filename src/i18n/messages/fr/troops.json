@@ -130,7 +130,7 @@
         "stock": {
             "name": "Accélérations d'entraînement",
             "minutesUnit": "min",
-            "note": "Votre stock : Entraînement {training} min, Général {general} min. Les accélérations générales comptent pour l'entraînement. Un entraînement non couvert par une accélération se termine en temps normal, donc seules les accélérations que vous avez sont utilisées : {used} min."
+            "note": "Votre stock : Entraînement {training} min, Général {general} min appliqués. Seule la part d'accélérateurs généraux définie ci-dessous compte. L'entraînement qu'un accélérateur ne couvre pas se termine en temps normal, donc seuls les accélérateurs que vous avez sont utilisés : {used} min."
         },
         "result": {
             "title": "Résultat",

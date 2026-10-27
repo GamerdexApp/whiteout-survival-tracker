@@ -224,7 +224,7 @@
         "goalsHeading": "{count, plural, one {Metas, {amount} construção} other {Metas, {amount} construções}}",
         "noGoals": "Nenhuma meta ainda. Adicione uma construção acima e escolha o nível que quer alcançar.",
         "prerequisiteNote": "Os passos de pré-requisito são adicionados para você. Um nível que requer outra construção em nível maior conta esses passos e os sinaliza.",
-        "timeNote": "O plano leva {time} depois do bônus de velocidade de {percent}%. Seu estoque: Construção {construction} min, Gerais {general} min. Os aceleradores gerais contam para a construção.",
+        "timeNote": "O plano leva {time} após o bônus de velocidade de {percent}%. Seu estoque: Construção {construction} min, Geral {general} min aplicados. Só conta a parte das acelerações gerais definida abaixo.",
         "add": {
             "title": "Adicionar uma construção",
             "allAdded": "Todos os edifícios já estão no plano ou no nível máximo.",

@@ -20,7 +20,7 @@ import type {
   TroopRun,
 } from "@/data/game/troops";
 import { chiefBuffs } from "./bonuses";
-import { minutesOfSpeedup } from "./inventory";
+import { generalMinutesApplied, minutesOfSpeedup } from "./inventory";
 import type { StockCheck } from "./planStock";
 import { campLabelOf, campOf, highestTierOf, TROOP_IDS } from "./troops";
 
@@ -231,7 +231,7 @@ const calculatorInput = (
 
 export const troopSpeedupStock = (chief: Playthrough) => {
   const training = minutesOfSpeedup(chief, "troop");
-  const general = minutesOfSpeedup(chief, "general");
+  const general = generalMinutesApplied(chief, "troops");
   return { training, general, total: training + general };
 };
 

@@ -25,7 +25,12 @@ import {
   trackedExperts,
 } from "@/data/game/experts";
 import { findItem } from "@/data/game/items";
-import { ownedCount, speedupStock, withOwnedCount } from "./inventory";
+import {
+  generalMinutesApplied,
+  minutesOfSpeedup,
+  ownedCount,
+  withOwnedCount,
+} from "./inventory";
 import type { StockCheck } from "./planStock";
 import { expertTotals } from "./resourceTotals";
 import { expertUnlockDay, isExpertUnlockedByAge } from "./unlocks";
@@ -757,9 +762,7 @@ export const learningMinutesNeeded = (plan: ExpertsPlan) =>
   Math.ceil(expStillToGet(plan) / EXP_PER_LEARNING_MINUTE);
 
 export const learningSpeedupMinutes = (chief: Playthrough) =>
-  speedupStock(chief)
-    .filter(({ type }) => type === "learning" || type === "general")
-    .reduce((sum, stock) => sum + stock.minutes, 0);
+  minutesOfSpeedup(chief, "learning") + generalMinutesApplied(chief, "experts");
 
 /**
  * Everything the chief holds for the plan, whatever the plan needs: the gifts once, and the points

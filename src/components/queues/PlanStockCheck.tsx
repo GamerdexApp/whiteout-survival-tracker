@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import Link from "next/link";
+import type { ReactNode } from "react";
 import { formatNumber } from "@/lib/format";
 import { stockShortBy } from "@/service/planStock";
 import type { StockCheck } from "@/service/planStock";
@@ -11,12 +12,14 @@ interface PlanStockCheckProps {
 	checks: StockCheck[];
 	/** The line under the time row. It says which speedups count and how long the plan takes. */
 	timeNote: string;
+	/** Shown under the time row, such as the share of the general speedups the plan uses. */
+	timeExtra?: ReactNode;
 }
 
 const unitText = (check: StockCheck, value: number) =>
 	`${formatNumber(value)}${check.unit ? ` ${check.unit}` : ""}`;
 
-export function PlanStockCheck({ checks, timeNote }: PlanStockCheckProps) {
+export function PlanStockCheck({ checks, timeNote, timeExtra }: PlanStockCheckProps) {
 	const t = useTranslations("queues.planStock");
 	const short = checks.filter((check) => stockShortBy(check) > 0);
 
@@ -72,6 +75,7 @@ export function PlanStockCheck({ checks, timeNote }: PlanStockCheckProps) {
 								</span>
 							</div>
 							{check.unit && <p className="text-muted text-xs">{timeNote}</p>}
+							{check.unit && timeExtra}
 						</li>
 					);
 				})}

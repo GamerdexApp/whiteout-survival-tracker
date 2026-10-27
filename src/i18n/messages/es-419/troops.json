@@ -130,7 +130,7 @@
         "stock": {
             "name": "Aceleraciones de entrenamiento",
             "minutesUnit": "min",
-            "note": "Tu inventario: Entrenamiento {training} min, General {general} min. Las aceleraciones generales cuentan para el entrenamiento. El entrenamiento que una aceleración no cubre termina en tiempo normal, así que solo se usan las aceleraciones que tienes: {used} min."
+            "note": "Tu stock: Entrenamiento {training} min, General {general} min aplicados. Solo cuenta la parte de aceleradores generales fijada abajo. El entrenamiento que un acelerador no cubre termina en tiempo normal, así que solo se usan los aceleradores que tienes: {used} min."
         },
         "result": {
             "title": "Resultado",

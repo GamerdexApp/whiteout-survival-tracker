@@ -130,7 +130,7 @@
         "stock": {
             "name": "Training speedups",
             "minutesUnit": "min",
-            "note": "Your stock: Training {training} min, General {general} min. General speedups count toward training. Training that a speedup does not cover finishes in normal time, so only the speedups you hold are used: {used} min."
+            "note": "Your stock: Training {training} min, General {general} min applied. Only the share of General speedups set below counts. Training that a speedup does not cover finishes in normal time, so only the speedups you hold are used: {used} min."
         },
         "result": {
             "title": "Result",

@@ -224,7 +224,7 @@
         "goalsHeading": "{count, plural, one {Objetivos, {amount} edificio} other {Objetivos, {amount} edificios}}",
         "noGoals": "Aún no hay objetivos. Añade un edificio arriba y elige el nivel que quieres alcanzar.",
         "prerequisiteNote": "Los pasos previos se añaden solos. Un nivel que necesita otro edificio a un nivel más alto cuenta esos pasos y los marca.",
-        "timeNote": "El plan tarda {time} tras la bonificación de velocidad del {percent}%. Tus existencias: Construcción {construction} min, General {general} min. Los aceleradores generales cuentan para construcción.",
+        "timeNote": "El plan tarda {time} tras la bonificación de velocidad del {percent}%. Tu stock: Construcción {construction} min, General {general} min aplicados. Solo cuenta la parte de aceleradores generales fijada abajo.",
         "add": {
             "title": "Añadir un edificio",
             "allAdded": "Todos los edificios ya están en el plan o en su nivel máximo.",

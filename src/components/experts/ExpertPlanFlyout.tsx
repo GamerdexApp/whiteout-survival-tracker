@@ -25,6 +25,7 @@ import {
 } from "@/service/experts";
 import { EXP_PER_LEARNING_MINUTE, MAX_AFFINITY } from "@/data/game/experts";
 import { ExportToEventFlyout } from "@/comps/export/ExportToEventFlyout";
+import { GeneralSpeedupShare } from "@/comps/queues/GeneralSpeedupShare";
 import { PlanStockCheck } from "@/comps/queues/PlanStockCheck";
 import { Badge } from "@/comps/ui/Badge";
 import { Button } from "@/comps/ui/Button";
@@ -404,6 +405,7 @@ function StockSection({ plan, chief }: { plan: ExpertsPlan; chief: Playthrough }
 	return (
 		<>
 			<PlanStockCheck
+				timeExtra={<GeneralSpeedupShare chief={chief} use="experts" />}
 				checks={checks}
 				timeNote={t("learning", {
 					exp: formatNumber(plan.total.exp),

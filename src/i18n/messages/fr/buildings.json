@@ -224,7 +224,7 @@
         "goalsHeading": "{count, plural, one {Objectifs, {amount} bâtiment} other {Objectifs, {amount} bâtiments}}",
         "noGoals": "Aucun objectif pour l'instant. Ajoutez un bâtiment ci-dessus, puis choisissez le niveau à atteindre.",
         "prerequisiteNote": "Les étapes de prérequis sont ajoutées pour vous. Un niveau qui exige un autre bâtiment à un niveau plus haut compte ces étapes et les signale.",
-        "timeNote": "Le plan prend {time} après le bonus de vitesse de {percent} %. Votre stock : Construction {construction} min, Général {general} min. Les accélérations générales comptent pour la construction.",
+        "timeNote": "Le plan prend {time} après le bonus de vitesse de {percent} %. Votre stock : Construction {construction} min, Général {general} min appliqués. Seule la part d'accélérateurs généraux définie ci-dessous compte.",
         "add": {
             "title": "Ajouter un bâtiment",
             "allAdded": "Chaque bâtiment est déjà dans le plan ou à son niveau maximal.",

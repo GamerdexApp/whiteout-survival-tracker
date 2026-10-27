@@ -9,7 +9,7 @@ import { formatDateTime, formatDuration, formatNumber } from "@/lib/format";
 import { useUiSettings } from "@/lib/hooks/useUiSettings";
 import { researchSpeedBonusPercent } from "@/service/bonuses";
 import { exportedPlanOf } from "@/service/eventExport";
-import { minutesOfSpeedup } from "@/service/inventory";
+import { generalMinutesApplied, minutesOfSpeedup } from "@/service/inventory";
 import { researchChecks } from "@/service/planStock";
 import { levelOfNode } from "@/service/research";
 import { exportSpecOf } from "@/service/researchExport";
@@ -33,6 +33,7 @@ import {
 	tabName,
 } from "@/data/game/research";
 import { ExportToEventFlyout } from "@/comps/export/ExportToEventFlyout";
+import { GeneralSpeedupShare } from "@/comps/queues/GeneralSpeedupShare";
 import { PlanStockCheck } from "@/comps/queues/PlanStockCheck";
 import { Badge } from "@/comps/ui/Badge";
 import { Button } from "@/comps/ui/Button";
@@ -236,12 +237,13 @@ function PlanBody({
 			{result && !result.ok && <Note tone="warning">{result.error ?? t("plan.failed")}</Note>}
 			{result?.ok && (
 				<PlanStockCheck
+					timeExtra={<GeneralSpeedupShare chief={chief} use="research" />}
 					checks={researchChecks(result.calculation, chief)}
 					timeNote={t("plan.timeNote", {
 						time: formatDuration(result.calculation.seconds),
 						percent: formatNumber(speedPercent),
 						research: formatNumber(minutesOfSpeedup(chief, "research")),
-						general: formatNumber(minutesOfSpeedup(chief, "general")),
+						general: formatNumber(generalMinutesApplied(chief, "research")),
 					})}
 				/>
 			)}
