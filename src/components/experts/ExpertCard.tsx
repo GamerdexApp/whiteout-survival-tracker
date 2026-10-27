@@ -59,8 +59,12 @@ export function ExpertCard({ view, chief, onChange }: ExpertCardProps) {
 	const stats = joinNames(statNamesOf(expert));
 
 	return (
-		<li className="mb-3 break-inside-avoid">
-			<Card dimmed={!recruited} className="flex flex-col gap-3 p-3" data-locked={locked}>
+		<li>
+			<Card
+				dimmed={!recruited}
+				className="flex h-full flex-col gap-3 p-3"
+				data-locked={locked}
+			>
 				<div className="flex items-center gap-3">
 					<ItemIcon
 						src={expert.img}

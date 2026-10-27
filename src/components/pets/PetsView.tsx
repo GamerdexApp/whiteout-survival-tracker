@@ -165,7 +165,7 @@ export function PetsView({ chief }: { chief: Playthrough }) {
 				/>
 			) : (
 				<>
-					<ul className="gap-3 lg:columns-2 xl:columns-3">
+					<ul className="grid gap-3 lg:grid-cols-2 xl:grid-cols-3">
 						{shown.map((view) => (
 							<PetCard
 								key={view.pet.id}
