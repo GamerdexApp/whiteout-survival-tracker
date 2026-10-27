@@ -200,9 +200,10 @@
         "noHeroes": "Belum ada hero dalam pelan. Tambah hero yang dimiliki di atas, kemudian naikkan matlamatnya.",
         "add": {
             "title": "Tambah hero",
-            "allIn": "Setiap hero yang dimiliki sudah ada dalam pelan. Hidupkan Dimiliki untuk merancang hero.",
+            "allIn": "Setiap wira yang dimiliki sudah ada dalam pelan atau mempunyai semua bintang. Hidupkan Dimiliki untuk wira bagi merancangnya.",
             "selectLabel": "Hero untuk ditambah",
-            "button": "Tambah hero"
+            "button": "Tambah hero",
+            "generationShort": "G{generation}"
         },
         "block": {
             "remove": "Buang {hero} daripada pelan",
@@ -237,6 +238,18 @@
             "allianceShowdown": "Alliance Showdown",
             "kingOfIcefield": "King of Icefield",
             "hallOfChief": "Hall of Chief"
+        },
+        "luckyWheel": {
+            "title": "Roda Bertuah",
+            "description": "Pusingan Roda Bertuah wira menambah anggaran serpihan kepada wira yang dipilih. Satu pusingan memberi purata {perSpin} serpihan, serta serpihan bonus pada pusingan ke-5, 15, 35, 70 dan 120.",
+            "noHero": "Tambah wira ke dalam pelan untuk merancang pusingan Roda Bertuah.",
+            "hero": "Wira",
+            "spins": "Pusingan (sehingga {max})",
+            "tokens": "Token permulaan",
+            "estimate": "Anggaran serpihan untuk {hero}: {total} ({bonus} daripada bonus pusingan, {spins} daripada pusingan). Pelan mengiranya sebagai serpihan yang anda miliki.",
+            "gems": "Permata diperlukan: {gems}",
+            "gemsNone": "Tiada permata diperlukan.",
+            "gemsNote": "{covered} pusingan menggunakan token anda. Pusingan lain berharga {single} permata setiap satu, atau {ten} permata bagi setiap 10."
         }
     },
     "export": {
@@ -250,7 +263,8 @@
             "Legendary": "Mythic Hero Shards",
             "Epic": "Epic Hero Shards",
             "Rare": "Rare Hero Shards"
-        }
+        },
+        "luckyWheel": "Pusingan Roda Bertuah"
     },
     "service": {
         "generalShard": {

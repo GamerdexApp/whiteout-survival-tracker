@@ -200,9 +200,10 @@
         "noHeroes": "No heroes in the plan yet. Add an owned hero above, then raise its goals.",
         "add": {
             "title": "Add a hero",
-            "allIn": "Every owned hero is in the plan. Turn on Owned for a hero to plan it.",
+            "allIn": "Every owned hero is in the plan or has every star. Turn on Owned for a hero to plan it.",
             "selectLabel": "Hero to add",
-            "button": "Add hero"
+            "button": "Add hero",
+            "generationShort": "G{generation}"
         },
         "block": {
             "remove": "Remove {hero} from the plan",
@@ -237,6 +238,18 @@
             "allianceShowdown": "Alliance Showdown",
             "kingOfIcefield": "King of Icefield",
             "hallOfChief": "Hall of Chief"
+        },
+        "luckyWheel": {
+            "title": "Lucky Wheel",
+            "description": "Spins on the hero Lucky Wheel add estimated shards to the chosen hero. A spin gives {perSpin} shards on average, plus bonus shards at 5, 15, 35, 70 and 120 spins.",
+            "noHero": "Add a hero to the plan to plan Lucky Wheel spins.",
+            "hero": "Hero",
+            "spins": "Spins (up to {max})",
+            "tokens": "Starting tokens",
+            "estimate": "Estimated shards for {hero}: {total} ({bonus} from spin bonuses, {spins} from spins). The plan counts these as shards you hold.",
+            "gems": "Gems needed: {gems}",
+            "gemsNone": "No gems needed.",
+            "gemsNote": "{covered} spins use your tokens. Other spins cost {single} gems each, or {ten} gems for every 10."
         }
     },
     "export": {
@@ -250,7 +263,8 @@
             "Legendary": "Mythic Hero Shards",
             "Epic": "Epic Hero Shards",
             "Rare": "Rare Hero Shards"
-        }
+        },
+        "luckyWheel": "Lucky Wheel spins"
     },
     "service": {
         "generalShard": {

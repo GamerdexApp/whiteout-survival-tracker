@@ -200,9 +200,10 @@
         "noHeroes": "لا يوجد أبطال في الخطة بعد. أضف بطلًا مملوكًا أعلاه، ثم ارفع أهدافه.",
         "add": {
             "title": "إضافة بطل",
-            "allIn": "كل الأبطال المملوكين في الخطة. فعّل مملوك لبطل ما لتخطط له.",
+            "allIn": "كل بطل تملكه إما في الخطة أو لديه جميع النجوم. فعّل «مملوك» لبطل لتخطيطه.",
             "selectLabel": "البطل المراد إضافته",
-            "button": "إضافة البطل"
+            "button": "إضافة البطل",
+            "generationShort": "G{generation}"
         },
         "block": {
             "remove": "إزالة {hero} من الخطة",
@@ -237,6 +238,18 @@
             "allianceShowdown": "Alliance Showdown",
             "kingOfIcefield": "King of Icefield",
             "hallOfChief": "Hall of Chief"
+        },
+        "luckyWheel": {
+            "title": "عجلة الحظ",
+            "description": "تضيف لفّات عجلة حظ البطل شظايا تقديرية للبطل المختار. تعطي اللفة الواحدة {perSpin} شظية في المتوسط، إضافة إلى شظايا مكافأة عند اللفة 5 و15 و35 و70 و120.",
+            "noHero": "أضف بطلاً إلى الخطة لتخطيط لفّات عجلة الحظ.",
+            "hero": "البطل",
+            "spins": "اللفّات (حتى {max})",
+            "tokens": "الرموز الأولية",
+            "estimate": "الشظايا التقديرية لـ {hero}: {total} ({bonus} من مكافآت اللفّات، {spins} من اللفّات). تحسبها الخطة كشظايا تملكها.",
+            "gems": "الجواهر المطلوبة: {gems}",
+            "gemsNone": "لا حاجة إلى جواهر.",
+            "gemsNote": "{covered} لفّة تستخدم رموزك. تكلّف اللفّات الأخرى {single} جوهرة لكل لفة، أو {ten} جوهرة لكل 10."
         }
     },
     "export": {
@@ -250,7 +263,8 @@
             "Legendary": "Mythic Hero Shards",
             "Epic": "Epic Hero Shards",
             "Rare": "Rare Hero Shards"
-        }
+        },
+        "luckyWheel": "لفّات عجلة الحظ"
     },
     "service": {
         "generalShard": {

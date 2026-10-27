@@ -200,9 +200,10 @@
         "noHeroes": "Ancora nessun eroe nel piano. Aggiungi sopra un eroe posseduto, poi alza i suoi obiettivi.",
         "add": {
             "title": "Aggiungi un eroe",
-            "allIn": "Ogni eroe posseduto è nel piano. Attiva Posseduto su un eroe per pianificarlo.",
+            "allIn": "Ogni eroe posseduto è nel piano o ha tutte le stelle. Attiva Posseduto per un eroe per pianificarlo.",
             "selectLabel": "Eroe da aggiungere",
-            "button": "Aggiungi eroe"
+            "button": "Aggiungi eroe",
+            "generationShort": "G{generation}"
         },
         "block": {
             "remove": "Rimuovi {hero} dal piano",
@@ -237,6 +238,18 @@
             "allianceShowdown": "Alliance Showdown",
             "kingOfIcefield": "King of Icefield",
             "hallOfChief": "Hall of Chief"
+        },
+        "luckyWheel": {
+            "title": "Ruota della fortuna",
+            "description": "I giri della Ruota della fortuna dell'eroe aggiungono frammenti stimati all'eroe scelto. Un giro dà {perSpin} frammenti in media, più frammenti bonus a 5, 15, 35, 70 e 120 giri.",
+            "noHero": "Aggiungi un eroe al piano per pianificare i giri della Ruota della fortuna.",
+            "hero": "Eroe",
+            "spins": "Giri (fino a {max})",
+            "tokens": "Gettoni iniziali",
+            "estimate": "Frammenti stimati per {hero}: {total} ({bonus} dai bonus dei giri, {spins} dai giri). Il piano li conta come frammenti che possiedi.",
+            "gems": "Gemme necessarie: {gems}",
+            "gemsNone": "Nessuna gemma necessaria.",
+            "gemsNote": "{covered} giri usano i tuoi gettoni. Gli altri costano {single} gemme ciascuno, o {ten} gemme ogni 10."
         }
     },
     "export": {
@@ -250,7 +263,8 @@
             "Legendary": "Mythic Hero Shards",
             "Epic": "Epic Hero Shards",
             "Rare": "Rare Hero Shards"
-        }
+        },
+        "luckyWheel": "Giri della Ruota della fortuna"
     },
     "service": {
         "generalShard": {

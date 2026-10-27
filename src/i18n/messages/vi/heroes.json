@@ -200,9 +200,10 @@
         "noHeroes": "Kế hoạch chưa có anh hùng nào. Hãy thêm một anh hùng đã sở hữu ở trên, rồi nâng mục tiêu của họ.",
         "add": {
             "title": "Thêm anh hùng",
-            "allIn": "Mọi anh hùng đã sở hữu đều có trong kế hoạch. Bật Đã sở hữu cho một anh hùng để lập kế hoạch cho họ.",
+            "allIn": "Mọi anh hùng đang có đều đã trong kế hoạch hoặc đủ sao. Bật Đã có cho anh hùng để lên kế hoạch.",
             "selectLabel": "Anh hùng cần thêm",
-            "button": "Thêm anh hùng"
+            "button": "Thêm anh hùng",
+            "generationShort": "G{generation}"
         },
         "block": {
             "remove": "Xóa {hero} khỏi kế hoạch",
@@ -237,6 +238,18 @@
             "allianceShowdown": "Alliance Showdown",
             "kingOfIcefield": "King of Icefield",
             "hallOfChief": "Hall of Chief"
+        },
+        "luckyWheel": {
+            "title": "Vòng quay may mắn",
+            "description": "Lượt quay Vòng quay may mắn của anh hùng cộng thêm số mảnh ước tính cho anh hùng đã chọn. Mỗi lượt quay trung bình cho {perSpin} mảnh, cộng mảnh thưởng ở lượt 5, 15, 35, 70 và 120.",
+            "noHero": "Thêm một anh hùng vào kế hoạch để lên kế hoạch lượt quay Vòng quay may mắn.",
+            "hero": "Anh hùng",
+            "spins": "Lượt quay (tối đa {max})",
+            "tokens": "Token ban đầu",
+            "estimate": "Mảnh ước tính cho {hero}: {total} ({bonus} từ thưởng lượt quay, {spins} từ lượt quay). Kế hoạch tính chúng như mảnh bạn đang có.",
+            "gems": "Đá quý cần: {gems}",
+            "gemsNone": "Không cần đá quý.",
+            "gemsNote": "{covered} lượt dùng token của bạn. Các lượt khác tốn {single} đá quý mỗi lượt, hoặc {ten} đá quý cho mỗi 10 lượt."
         }
     },
     "export": {
@@ -250,7 +263,8 @@
             "Legendary": "Mythic Hero Shards",
             "Epic": "Epic Hero Shards",
             "Rare": "Rare Hero Shards"
-        }
+        },
+        "luckyWheel": "Lượt quay Vòng quay may mắn"
     },
     "service": {
         "generalShard": {

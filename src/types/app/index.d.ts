@@ -128,8 +128,15 @@ export interface HeroGoal {
   weapon?: number;
 }
 
+export interface LuckyWheelPlan {
+  heroId: string;
+  spins: number;
+  tokens: number;
+}
+
 export interface HeroesPlan {
   goals: Record<string, HeroGoal>;
+  luckyWheel?: LuckyWheelPlan;
   savedAt: string;
 }
 

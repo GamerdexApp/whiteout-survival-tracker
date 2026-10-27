@@ -200,9 +200,10 @@
         "noHeroes": "계획에 영웅이 아직 없어요. 위에서 보유 영웅을 추가한 뒤 목표를 올리세요.",
         "add": {
             "title": "영웅 추가",
-            "allIn": "보유한 모든 영웅이 계획에 있어요. 계획하려면 영웅의 보유를 켜세요.",
+            "allIn": "보유한 모든 영웅이 이미 계획에 있거나 모든 별을 채웠습니다. 계획하려면 영웅의 보유를 켜세요.",
             "selectLabel": "추가할 영웅",
-            "button": "영웅 추가"
+            "button": "영웅 추가",
+            "generationShort": "G{generation}"
         },
         "block": {
             "remove": "계획에서 {hero} 삭제",
@@ -237,6 +238,18 @@
             "allianceShowdown": "Alliance Showdown",
             "kingOfIcefield": "King of Icefield",
             "hallOfChief": "Hall of Chief"
+        },
+        "luckyWheel": {
+            "title": "행운의 룰렛",
+            "description": "영웅 행운의 룰렛을 돌리면 선택한 영웅의 예상 조각이 늘어납니다. 한 번에 평균 {perSpin}개의 조각을 얻고, 5회, 15회, 35회, 70회, 120회에 보너스 조각을 받습니다.",
+            "noHero": "행운의 룰렛 횟수를 계획하려면 계획에 영웅을 추가하세요.",
+            "hero": "영웅",
+            "spins": "횟수 (최대 {max})",
+            "tokens": "시작 토큰",
+            "estimate": "{hero}의 예상 조각: {total}개 (횟수 보너스 {bonus}개, 회전 {spins}개). 계획에서는 보유한 조각으로 계산합니다.",
+            "gems": "필요한 보석: {gems}",
+            "gemsNone": "보석이 필요하지 않습니다.",
+            "gemsNote": "{covered}회는 토큰을 사용합니다. 나머지는 1회당 보석 {single}개, 또는 10회당 보석 {ten}개입니다."
         }
     },
     "export": {
@@ -250,7 +263,8 @@
             "Legendary": "Mythic Hero Shards",
             "Epic": "Epic Hero Shards",
             "Rare": "Rare Hero Shards"
-        }
+        },
+        "luckyWheel": "행운의 룰렛 횟수"
     },
     "service": {
         "generalShard": {

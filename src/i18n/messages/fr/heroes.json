@@ -200,9 +200,10 @@
         "noHeroes": "Aucun héros dans le plan pour l'instant. Ajoutez un héros possédé ci-dessus, puis augmentez ses objectifs.",
         "add": {
             "title": "Ajouter un héros",
-            "allIn": "Tous les héros possédés sont dans le plan. Activez Possédé pour un héros afin de le planifier.",
+            "allIn": "Chaque héros possédé est dans le plan ou a toutes ses étoiles. Activez Possédé pour un héros afin de le planifier.",
             "selectLabel": "Héros à ajouter",
-            "button": "Ajouter le héros"
+            "button": "Ajouter le héros",
+            "generationShort": "G{generation}"
         },
         "block": {
             "remove": "Retirer {hero} du plan",
@@ -237,6 +238,18 @@
             "allianceShowdown": "Alliance Showdown",
             "kingOfIcefield": "King of Icefield",
             "hallOfChief": "Hall of Chief"
+        },
+        "luckyWheel": {
+            "title": "Roue de la chance",
+            "description": "Les tours de la Roue de la chance du héros ajoutent des fragments estimés au héros choisi. Un tour donne {perSpin} fragments en moyenne, plus des fragments bonus à 5, 15, 35, 70 et 120 tours.",
+            "noHero": "Ajoutez un héros au plan pour planifier des tours de la Roue de la chance.",
+            "hero": "Héros",
+            "spins": "Tours (jusqu'à {max})",
+            "tokens": "Jetons de départ",
+            "estimate": "Fragments estimés pour {hero} : {total} ({bonus} des bonus de tours, {spins} des tours). Le plan les compte comme des fragments que vous avez.",
+            "gems": "Gemmes nécessaires : {gems}",
+            "gemsNone": "Aucune gemme nécessaire.",
+            "gemsNote": "{covered} tours utilisent vos jetons. Les autres coûtent {single} gemmes chacun, ou {ten} gemmes pour 10."
         }
     },
     "export": {
@@ -250,7 +263,8 @@
             "Legendary": "Mythic Hero Shards",
             "Epic": "Epic Hero Shards",
             "Rare": "Rare Hero Shards"
-        }
+        },
+        "luckyWheel": "Tours de la Roue de la chance"
     },
     "service": {
         "generalShard": {

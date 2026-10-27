@@ -10,7 +10,7 @@ import {
 	EXPLORATION_MANUALS,
 	GENERAL_HERO_SHARDS,
 } from "@/service/coreResources";
-import { buildHeroViews, withHeroShards } from "@/service/heroes";
+import { buildHeroViews, hasEveryStar, withHeroShards } from "@/service/heroes";
 import type { HeroView } from "@/service/heroes";
 import { ownedCount, withOwnedCount } from "@/service/inventory";
 import { MAX_STAR, skillLevelRange, skillsOf } from "@/data/game/heroes";
@@ -19,8 +19,6 @@ import { CollapsibleSection } from "@/comps/ui/CollapsibleSection";
 import { Note } from "@/comps/ui/Note";
 import { SwitchRow } from "@/comps/ui/Switch";
 import { CountCell, CountField, CountRow, FOUR_PER_ROW_COLUMNS, WRAPPING_LABEL } from "./CoreCells";
-
-const isCompleted = (view: HeroView) => view.stars.star === MAX_STAR;
 
 const hasMaxedSkills = (view: HeroView, branch: "exploration" | "expedition") =>
 	skillsOf(view.hero)
@@ -42,9 +40,9 @@ export function HeroShardsSection({ chief }: { chief: Playthrough }) {
 	const [showCompleted, setShowCompleted] = useState(false);
 
 	const views = buildHeroViews(chief);
-	const shown = showCompleted ? views : views.filter((view) => !isCompleted(view));
+	const shown = showCompleted ? views : views.filter((view) => !hasEveryStar(view));
 	const isRarityCompleted = (rarity: string) =>
-		views.filter((view) => view.hero.rarity === rarity).every(isCompleted);
+		views.filter((view) => view.hero.rarity === rarity).every(hasEveryStar);
 	const shownGeneralShards = GENERAL_HERO_SHARDS.filter(
 		({ rarity }) => showCompleted || !isRarityCompleted(rarity)
 	);
