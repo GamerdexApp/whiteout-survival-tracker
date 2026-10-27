@@ -156,13 +156,13 @@
         "stock": {
             "sigils": "Rencana butuh {total} sigil. Sigil ahlimu mencakup {own} di antaranya, jadi {common} harus dari Common Expert Sigils. Tiap sigil ahli yang kamu punya hanya berlaku untuk ahli itu.",
             "books": "Rencana butuh {amount} Books of Knowledge untuk level skill.",
-            "affinity": "Rencana butuh {needed} poin afinitas. Yang kamu punya di kartu ahli mencakup {held}, jadi {left} masih harus didapat. Paket data tidak punya item afinitas, jadi tidak ada yang dicek terhadap stok.",
+            "affinity": "Rencana membutuhkan {needed} poin afinitas. Hadiah afinitas di halaman Sumber Daya dan poin di kartu ahli mencakup {held}, jadi masih perlu {left}.",
             "learning": "Rencana butuh {exp} EXP skill. Skill-mu menyimpan {held}, jadi {left} harus dari percepatan belajar. Satu menit belajar memberi {rate} EXP, jadi itu {minutes} menit."
         },
         "byExpert": {
             "title": "Menurut ahli",
             "sigils": "Sigil: butuh {needed}, tercakup {own} oleh sigil {name}-mu, {common} dari Common Expert Sigils",
-            "affinity": "Afinitas: butuh {needed}, tersedia {held}, masih kurang {left}",
+            "affinity": "Afinitas: {needed} dibutuhkan, {held} tercakup, {left} masih perlu didapat",
             "exp": "EXP skill: butuh {needed}, tersedia {held}, masih kurang {left}"
         },
         "result": {

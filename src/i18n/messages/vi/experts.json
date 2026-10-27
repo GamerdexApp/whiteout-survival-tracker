@@ -156,13 +156,13 @@
         "stock": {
             "sigils": "Kế hoạch cần {total} sigil. Sigil chuyên gia của bạn đủ cho {own}, nên {common} phải lấy từ Common Expert Sigils. Mỗi sigil chuyên gia bạn có chỉ tính cho chuyên gia đó.",
             "books": "Kế hoạch cần {amount} Books of Knowledge cho các cấp kỹ năng.",
-            "affinity": "Kế hoạch cần {needed} điểm thân thiết. Số bạn đang giữ trên thẻ chuyên gia đủ cho {held}, nên còn {left} cần kiếm thêm. Gói dữ liệu không có vật phẩm thân thiết, nên không kiểm tra theo kho.",
+            "affinity": "Kế hoạch cần {needed} điểm thân mật. Quà thân mật ở trang Tài nguyên và điểm trên thẻ chuyên gia đáp ứng {held}, nên còn cần thêm {left}.",
             "learning": "Kế hoạch cần {exp} EXP kỹ năng. Kỹ năng của bạn đang có {held}, nên {left} phải lấy từ vật phẩm tăng tốc học. Một phút học cho {rate} EXP, tức là {minutes} phút."
         },
         "byExpert": {
             "title": "Theo chuyên gia",
             "sigils": "Sigil: cần {needed}, {own} đã có từ sigil {name} của bạn, {common} lấy từ Common Expert Sigils",
-            "affinity": "Thân thiết: cần {needed}, đang có {held}, còn {left} cần kiếm thêm",
+            "affinity": "Thân mật: cần {needed}, đã đáp ứng {held}, còn cần {left}",
             "exp": "EXP kỹ năng: cần {needed}, đang có {held}, còn {left} cần kiếm thêm"
         },
         "result": {

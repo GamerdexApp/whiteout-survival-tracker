@@ -156,13 +156,13 @@
         "stock": {
             "sigils": "计划需要{total}个徽章。你的专家徽章可覆盖其中{own}个，其余{common}个需要来自 Common Expert Sigils。你持有的每个专家徽章只对该专家有效。",
             "books": "计划需要{amount}本 Books of Knowledge，用于技能升级。",
-            "affinity": "计划需要{needed}亲密度点数。专家卡片上持有的可覆盖{held}，还差{left}。数据包中没有亲密度道具，因此不会对照库存检查。",
+            "affinity": "计划需要 {needed} 点亲密度。资源页面的亲密度礼物和专家卡片上的点数可提供 {held} 点，还差 {left} 点。",
             "learning": "计划需要{exp}技能 EXP。你的技能持有{held}，其余{left}需要通过学习加速获得。学习 1 分钟获得{rate} EXP，因此需要{minutes}分钟。"
         },
         "byExpert": {
             "title": "按专家",
             "sigils": "徽章：需要{needed}，你的{name}徽章覆盖{own}，其余{common}来自 Common Expert Sigils",
-            "affinity": "亲密度：需要{needed}，可用{held}，还差{left}",
+            "affinity": "亲密度：需要 {needed}，已满足 {held}，还差 {left}",
             "exp": "技能 EXP：需要{needed}，可用{held}，还差{left}"
         },
         "result": {

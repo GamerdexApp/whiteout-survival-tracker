@@ -27,6 +27,7 @@ import {
 import { findItem } from "@/data/game/items";
 import { ownedCount, speedupStock, withOwnedCount } from "./inventory";
 import type { StockCheck } from "./planStock";
+import { expertTotals } from "./resourceTotals";
 import { expertUnlockDay, isExpertUnlockedByAge } from "./unlocks";
 
 export const SKILL_COUNT = 4;
@@ -619,6 +620,7 @@ export interface ExpertPlanRow {
   levels: number;
   advancements: number;
   affinity: number;
+  /** The points saved on the expert card plus the share of the Resources gifts the plan gives it. */
   affinityHeld: number;
   expHeld: number;
 }
@@ -626,6 +628,8 @@ export interface ExpertPlanRow {
 export interface ExpertsPlan {
   rows: ExpertPlanRow[];
   total: ExpertCalculation;
+  /** The affinity of the gifts on the Resources page, which any expert can use. */
+  giftAffinity: number;
 }
 
 const calculatorGoalOf = (
@@ -684,6 +688,7 @@ export const runExpertsPlan = (
   const total = calculateExperts(
     views.map((view) => calculatorGoalOf(view, goals[view.expert.id])),
   );
+  let giftAffinityLeft = expertTotals(chief).affinity;
   const rows = views.map((view, index): ExpertPlanRow => {
     const item = total.items[index];
     const own = sigilItemIdOf(view.expert.id);
@@ -691,6 +696,9 @@ export const runExpertsPlan = (
       item.sigils,
       own ? ownedCount(chief, own) : 0,
     );
+    const heldOnCard = Math.min(view.affinityAvailable, item.affinity);
+    const fromGifts = Math.min(item.affinity - heldOnCard, giftAffinityLeft);
+    giftAffinityLeft -= fromGifts;
     return {
       view,
       goal: goals[view.expert.id],
@@ -702,7 +710,7 @@ export const runExpertsPlan = (
       levels: item.levels,
       advancements: item.advancements,
       affinity: item.affinity,
-      affinityHeld: Math.min(view.affinityAvailable, item.affinity),
+      affinityHeld: heldOnCard + fromGifts,
       expHeld: Math.min(heldSkillExp(view, goals[view.expert.id]), item.exp),
     };
   });
@@ -713,6 +721,7 @@ export const runExpertsPlan = (
   return {
     rows,
     total: { ...total, skillLevels: total.skillLevels + unlocks },
+    giftAffinity: expertTotals(chief).affinity,
   };
 };
 
@@ -729,6 +738,13 @@ export const learningSpeedupMinutes = (chief: Playthrough) =>
   speedupStock(chief)
     .filter(({ type }) => type === "learning" || type === "general")
     .reduce((sum, stock) => sum + stock.minutes, 0);
+
+/**
+ * Everything the chief holds for the plan, whatever the plan needs: the gifts once, and the points
+ * saved on the card of each planned expert.
+ */
+export const affinityAvailable = (plan: ExpertsPlan) =>
+  plan.giftAffinity + sumOf(plan.rows, (row) => row.view.affinityAvailable);
 
 export const expertPlanChecks = (
   plan: ExpertsPlan,
@@ -751,7 +767,7 @@ export const expertPlanChecks = (
     {
       id: "affinity",
       name: t("plan.checks.affinity"),
-      available: sumOf(plan.rows, (row) => row.affinityHeld),
+      available: affinityAvailable(plan),
       needed: plan.total.affinity,
     },
     {

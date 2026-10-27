@@ -156,13 +156,13 @@
         "stock": {
             "sigils": "O plano requer {total} sigilos. Seus sigilos de especialista cobrem {own}, então {common} precisam vir de Common Expert Sigils. Cada sigilo de especialista que você tem só conta para esse especialista.",
             "books": "O plano requer {amount} Books of Knowledge para os níveis de habilidade.",
-            "affinity": "O plano requer {needed} pontos de afinidade. O que você tem nos cartões dos especialistas cobre {held}, então ainda faltam {left}. O pacote de dados não tem item de afinidade, então nada é conferido com um estoque.",
+            "affinity": "O plano precisa de {needed} pontos de afinidade. Os presentes de afinidade da página de Recursos e os pontos nos cartões de especialista cobrem {held}, então faltam {left}.",
             "learning": "O plano requer {exp} de EXP de habilidade. Suas habilidades têm {held}, então {left} precisam vir de aceleradores de aprendizado. Um minuto de aprendizado dá {rate} de EXP, ou seja, {minutes} minutos."
         },
         "byExpert": {
             "title": "Por especialista",
             "sigils": "Sigilos: {needed} necessários, {own} cobertos pelo seu sigilo de {name}, {common} a vir de Common Expert Sigils",
-            "affinity": "Afinidade: {needed} necessários, {held} disponíveis, {left} ainda a obter",
+            "affinity": "Afinidade: {needed} necessários, {held} cobertos, {left} ainda a obter",
             "exp": "EXP de habilidade: {needed} necessários, {held} disponíveis, {left} ainda a obter"
         },
         "result": {

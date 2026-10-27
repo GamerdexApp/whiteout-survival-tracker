@@ -8,6 +8,7 @@ import { formatDateTime, formatNumber } from "@/lib/format";
 import { expertPlanScores, exportSpecOf } from "@/service/expertExport";
 import type { ExpertPlanRow, ExpertsPlan, ExpertView, Goals } from "@/service/experts";
 import {
+	affinityAvailable,
 	buildExpertViews,
 	expertPlanChecks,
 	initialExpertGoals,
@@ -101,7 +102,6 @@ function PlanBody({
 }) {
 	const t = useTranslations("experts.plan");
 	const views = useMemo(() => buildExpertViews(chief), [chief]);
-	const planned = views.filter((view) => view.recruited && goals[view.expert.id]);
 	const addable = views.filter((view) => view.recruited && !goals[view.expert.id]);
 	const hasRecruited = views.some((view) => view.recruited);
 
@@ -114,15 +114,16 @@ function PlanBody({
 					onGoalsChange({ ...goals, [view.expert.id]: startingGoalFor(view) })
 				}
 			/>
-			{planned.length === 0 ? (
+			{plan.rows.length === 0 ? (
 				<Card className="p-4">
 					<p className="text-muted">{t("noExperts")}</p>
 				</Card>
 			) : (
-				planned.map((view) => (
+				plan.rows.map(({ view }) => (
 					<ExpertBlock
 						key={view.expert.id}
 						view={view}
+						heldAffinity={view.affinityAvailable + plan.giftAffinity}
 						goal={goals[view.expert.id]}
 						onGoalChange={(goal) => onGoalsChange({ ...goals, [view.expert.id]: goal })}
 						onRemove={() =>
@@ -216,11 +217,13 @@ function PlanRow({
 
 function ExpertBlock({
 	view,
+	heldAffinity,
 	goal,
 	onGoalChange,
 	onRemove,
 }: {
 	view: ExpertView;
+	heldAffinity: number;
 	goal: ExpertGoalState;
 	onGoalChange: (goal: ExpertGoalState) => void;
 	onRemove: () => void;
@@ -261,7 +264,7 @@ function ExpertBlock({
 			<div className="flex flex-col">
 				<PlanRow
 					label={t("affinity")}
-					hint={t("affinityHeld", { amount: formatNumber(view.affinityAvailable) })}
+					hint={t("affinityHeld", { amount: formatNumber(heldAffinity) })}
 					current={
 						isAdvancementLevel(view.affinity) && view.advanced
 							? t("currentAffinity", { level: formatNumber(view.affinity) })
@@ -339,7 +342,7 @@ function StockSection({ plan, chief }: { plan: ExpertsPlan; chief: Playthrough }
 	const checks = expertPlanChecks(plan, chief);
 	const sigilsTotal = plan.total.sigils;
 	const sigilsOwn = plan.rows.reduce((sum, row) => sum + row.sigilsFromOwn, 0);
-	const held = checks[2].available;
+	const held = affinityAvailable(plan);
 	const expHeld = plan.rows.reduce((sum, row) => sum + row.expHeld, 0);
 
 	return (
@@ -367,7 +370,7 @@ function StockSection({ plan, chief }: { plan: ExpertsPlan; chief: Playthrough }
 					{t("affinity", {
 						needed: formatNumber(plan.total.affinity),
 						held: formatNumber(held),
-						left: formatNumber(plan.total.affinity - held),
+						left: formatNumber(Math.max(0, plan.total.affinity - held)),
 					})}
 				</p>
 			</Card>

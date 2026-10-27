@@ -156,13 +156,13 @@
         "stock": {
             "sigils": "Le plan nécessite {total} sceaux. Vos sceaux d'expert en couvrent {own}, donc {common} doivent venir des Common Expert Sigils. Chaque sceau d'expert que vous possédez ne compte que pour cet expert.",
             "books": "Le plan nécessite {amount} Books of Knowledge pour les niveaux de compétence.",
-            "affinity": "Le plan nécessite {needed} points d'affinité. Ce que vous avez sur les cartes d'experts en couvre {held}, il en reste donc {left} à obtenir. Les données n'ont pas d'objet d'affinité, rien n'est donc comparé à un stock.",
+            "affinity": "Le plan demande {needed} points d'affinité. Les cadeaux d'affinité de la page Ressources et les points des cartes d'expert couvrent {held}, il en reste donc {left} à obtenir.",
             "learning": "Le plan nécessite {exp} EXP de compétence. Vos compétences en ont {held}, donc {left} doivent venir d'accélérations d'apprentissage. Une minute d'apprentissage donne {rate} EXP, soit {minutes} minutes."
         },
         "byExpert": {
             "title": "Par expert",
             "sigils": "Sceaux : {needed} nécessaires, {own} couverts par votre sceau {name}, {common} à obtenir via Common Expert Sigils",
-            "affinity": "Affinité : {needed} nécessaires, {held} disponibles, {left} encore à obtenir",
+            "affinity": "Affinité : {needed} nécessaires, {held} couverts, {left} restent à obtenir",
             "exp": "EXP de compétence : {needed} nécessaires, {held} disponibles, {left} encore à obtenir"
         },
         "result": {

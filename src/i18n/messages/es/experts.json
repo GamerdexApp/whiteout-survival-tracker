@@ -156,13 +156,13 @@
         "stock": {
             "sigils": "El plan necesita {total} sigilos. Tus sigilos de experto cubren {own}, así que {common} deben salir de Common Expert Sigils. Cada sigilo de experto que tienes solo cuenta para ese experto.",
             "books": "El plan necesita {amount} Books of Knowledge para los niveles de habilidad.",
-            "affinity": "El plan necesita {needed} puntos de afinidad. Lo que tienes en las tarjetas de experto cubre {held}, así que aún faltan {left}. El paquete no tiene un objeto de afinidad, así que no se comprueba contra ninguna existencia.",
+            "affinity": "El plan necesita {needed} puntos de afinidad. Los regalos de afinidad de la página de Recursos y los puntos de las tarjetas de experto cubren {held}, así que faltan {left}.",
             "learning": "El plan necesita {exp} de EXP de habilidad. Tus habilidades tienen {held}, así que {left} deben salir de aceleradores de aprendizaje. Un minuto de aprendizaje da {rate} de EXP, o sea {minutes} minutos."
         },
         "byExpert": {
             "title": "Por experto",
             "sigils": "Sigilos: {needed} necesarios, {own} cubiertos por tu sigilo de {name}, {common} por obtener de Common Expert Sigils",
-            "affinity": "Afinidad: {needed} necesarios, {held} disponibles, {left} por obtener",
+            "affinity": "Afinidad: {needed} necesarios, {held} cubiertos, {left} por conseguir",
             "exp": "EXP de habilidad: {needed} necesarios, {held} disponibles, {left} por obtener"
         },
         "result": {

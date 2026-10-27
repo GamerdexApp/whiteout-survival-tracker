@@ -156,13 +156,13 @@
         "stock": {
             "sigils": "Pelan memerlukan {total} sigil. Sigil pakar anda meliputi {own} daripadanya, jadi {common} mesti datang daripada Common Expert Sigils. Setiap sigil pakar yang anda pegang hanya dikira untuk pakar itu.",
             "books": "Pelan memerlukan {amount} Books of Knowledge untuk tahap kemahiran.",
-            "affinity": "Pelan memerlukan {needed} mata afiniti. Apa yang anda pegang pada kad pakar meliputi {held}, jadi {left} masih perlu diperoleh. Pakej tiada item afiniti, jadi tiada apa disemak berbanding stok.",
+            "affinity": "Pelan memerlukan {needed} mata afiniti. Hadiah afiniti di halaman Sumber dan mata pada kad pakar meliputi {held}, jadi {left} lagi diperlukan.",
             "learning": "Pelan memerlukan {exp} EXP kemahiran. Kemahiran anda memegang {held}, jadi {left} mesti datang daripada pecutan pembelajaran. Satu minit pembelajaran memberi {rate} EXP, jadi itu {minutes} minit."
         },
         "byExpert": {
             "title": "Mengikut pakar",
             "sigils": "Sigil: {needed} diperlukan, {own} dilindungi sigil {name} anda, {common} datang daripada Common Expert Sigils",
-            "affinity": "Afiniti: {needed} diperlukan, {held} tersedia, {left} masih perlu diperoleh",
+            "affinity": "Afiniti: {needed} diperlukan, {held} dilindungi, {left} lagi perlu diperoleh",
             "exp": "EXP kemahiran: {needed} diperlukan, {held} tersedia, {left} masih perlu diperoleh"
         },
         "result": {

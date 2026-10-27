@@ -156,13 +156,13 @@
         "stock": {
             "sigils": "계획에 인장 {total}개가 필요해요. 보유한 전문가 인장이 {own}개를 채우므로 {common}개는 Common Expert Sigils로 채워야 해요. 보유한 전문가 인장은 해당 전문가에게만 쓸 수 있어요.",
             "books": "계획에 스킬 레벨용 Books of Knowledge {amount}개가 필요해요.",
-            "affinity": "계획에 친밀도 포인트 {needed}가 필요해요. 전문가 카드에 있는 보유량이 {held}를 채우므로 {left}를 더 얻어야 해요. 패키지에 친밀도 아이템이 없어서 재고와 비교하지 않아요.",
+            "affinity": "계획에 친밀도 {needed}점이 필요합니다. 자원 페이지의 친밀도 선물과 전문가 카드의 점수로 {held}점을 채우므로 {left}점이 더 필요합니다.",
             "learning": "계획에 스킬 경험치 {exp}가 필요해요. 스킬에 {held}가 있으므로 {left}는 학습 가속으로 채워야 해요. 학습 1분에 경험치 {rate}를 얻으므로 {minutes}분이 필요해요."
         },
         "byExpert": {
             "title": "전문가별",
             "sigils": "인장: {needed}개 필요, {name} 인장 {own}개로 충당, Common Expert Sigils로 {common}개 채움",
-            "affinity": "친밀도: {needed} 필요, {held} 보유, {left} 더 필요",
+            "affinity": "친밀도: {needed} 필요, {held} 충당, {left} 더 필요",
             "exp": "스킬 경험치: {needed} 필요, {held} 보유, {left} 더 필요"
         },
         "result": {

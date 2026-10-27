@@ -156,13 +156,13 @@
         "stock": {
             "sigils": "The plan needs {total} sigils. Your expert sigils cover {own} of them, so {common} must come from Common Expert Sigils. Each expert sigil you hold only counts for that expert.",
             "books": "The plan needs {amount} Books of Knowledge for the skill levels.",
-            "affinity": "The plan needs {needed} affinity points. What you hold on the expert cards covers {held}, so {left} are still to get. The package has no affinity item, so nothing is checked against a stock.",
+            "affinity": "The plan needs {needed} affinity points. The affinity gifts on the Resources page and the points on the expert cards cover {held}, so {left} are still to get.",
             "learning": "The plan needs {exp} skill EXP. Your skills hold {held}, so {left} must come from learning speedups. One minute of learning gives {rate} EXP, so that is {minutes} minutes."
         },
         "byExpert": {
             "title": "By expert",
             "sigils": "Sigils: {needed} needed, {own} covered by your {name} sigil, {common} to come from Common Expert Sigils",
-            "affinity": "Affinity: {needed} needed, {held} available, {left} still to get",
+            "affinity": "Affinity: {needed} needed, {held} covered, {left} still to get",
             "exp": "Skill EXP: {needed} needed, {held} available, {left} still to get"
         },
         "result": {

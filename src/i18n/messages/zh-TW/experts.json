@@ -156,13 +156,13 @@
         "stock": {
             "sigils": "這份規劃需要 {total} 個 Sigil。你的專家 Sigil 涵蓋其中 {own} 個，所以 {common} 個必須來自 Common Expert Sigils。你持有的每個專家 Sigil 只能用於該專家。",
             "books": "這份規劃的技能等級需要 {amount} 本 Books of Knowledge。",
-            "affinity": "這份規劃需要 {needed} 點親密度。專家卡片上持有的涵蓋 {held}，還差 {left}。資料包沒有親密度道具，所以不會與庫存核對。",
+            "affinity": "計畫需要 {needed} 點親密度。資源頁面的親密度禮物和專家卡片上的點數可提供 {held} 點，還差 {left} 點。",
             "learning": "這份規劃需要 {exp} 技能 EXP。你的技能持有 {held}，所以 {left} 必須來自學習加速。學習 1 分鐘可得 {rate} EXP，因此需要 {minutes} 分鐘。"
         },
         "byExpert": {
             "title": "依專家",
             "sigils": "Sigil：需要 {needed}，你的 {name} Sigil 涵蓋 {own}，另需 {common} 個來自 Common Expert Sigils",
-            "affinity": "親密度：需要 {needed}，可用 {held}，還差 {left}",
+            "affinity": "親密度：需要 {needed}，已滿足 {held}，還差 {left}",
             "exp": "技能 EXP：需要 {needed}，可用 {held}，還差 {left}"
         },
         "result": {

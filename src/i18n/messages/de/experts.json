@@ -156,13 +156,13 @@
         "stock": {
             "sigils": "Der Plan braucht {total} Sigils. Deine Experten-Sigils decken {own} davon, daher müssen {common} aus Common Expert Sigils kommen. Jedes Experten-Sigil, das du hast, zählt nur für diesen Experten.",
             "books": "Der Plan braucht {amount} Books of Knowledge für die Fähigkeitsstufen.",
-            "affinity": "Der Plan braucht {needed} Affinitätspunkte. Was du auf den Expertenkarten hast, deckt {held}, daher sind noch {left} zu holen. Das Paket hat kein Affinitäts-Item, daher wird nichts gegen einen Bestand geprüft.",
+            "affinity": "Der Plan braucht {needed} Zuneigungspunkte. Die Zuneigungsgeschenke auf der Ressourcen-Seite und die Punkte auf den Expertenkarten decken {held}, also fehlen noch {left}.",
             "learning": "Der Plan braucht {exp} Fähigkeits-EXP. Deine Fähigkeiten halten {held}, daher müssen {left} aus Lern-Beschleunigern kommen. Eine Minute Lernen gibt {rate} EXP, das sind {minutes} Minuten."
         },
         "byExpert": {
             "title": "Nach Experte",
             "sigils": "Sigils: {needed} nötig, {own} durch dein Sigil von {name} gedeckt, {common} aus Common Expert Sigils",
-            "affinity": "Affinität: {needed} nötig, {held} verfügbar, {left} noch zu holen",
+            "affinity": "Affinität: {needed} nötig, {held} gedeckt, {left} noch zu holen",
             "exp": "Fähigkeits-EXP: {needed} nötig, {held} verfügbar, {left} noch zu holen"
         },
         "result": {

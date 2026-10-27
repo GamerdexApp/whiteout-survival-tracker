@@ -156,13 +156,13 @@
         "stock": {
             "sigils": "Plan {total} sigil ister. Uzman sigillerin bunun {own} tanesini karşılar, kalan {common} tanesi Common Expert Sigils ile karşılanmalı. Sahip olduğun her uzman sigili yalnızca o uzman için sayılır.",
             "books": "Plan, beceri seviyeleri için {amount} Books of Knowledge ister.",
-            "affinity": "Plan {needed} yakınlık puanı ister. Uzman kartlarında elinde olanlar {held} tanesini karşılar, yani {left} tane daha gerekir. Pakette yakınlık öğesi yok, bu yüzden stokla karşılaştırılan bir şey yok.",
+            "affinity": "Plan {needed} yakınlık puanı gerektiriyor. Kaynaklar sayfasındaki yakınlık hediyeleri ve uzman kartlarındaki puanlar {held} puanı karşılıyor, yani {left} puan daha gerekli.",
             "learning": "Plan {exp} beceri EXP ister. Becerilerinde {held} var, yani {left} tanesi öğrenme hızlandırmalarından gelmeli. Bir dakikalık öğrenme {rate} EXP verir, bu da {minutes} dakika eder."
         },
         "byExpert": {
             "title": "Uzmana göre",
             "sigils": "Sigil: {needed} gerekir, {name} sigilin {own} tanesini karşılar, {common} tanesi Common Expert Sigils'ten gelmeli",
-            "affinity": "Yakınlık: {needed} gerekir, {held} mevcut, {left} tane daha gerekir",
+            "affinity": "Yakınlık: {needed} gerekli, {held} karşılandı, {left} daha alınacak",
             "exp": "Beceri EXP: {needed} gerekir, {held} mevcut, {left} tane daha gerekir"
         },
         "result": {

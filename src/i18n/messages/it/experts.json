@@ -156,13 +156,13 @@
         "stock": {
             "sigils": "Il piano richiede {total} sigilli. I sigilli dei tuoi esperti ne coprono {own}, quindi {common} devono venire da Common Expert Sigils. Ogni sigillo di esperto che possiedi conta solo per quell'esperto.",
             "books": "Il piano richiede {amount} Books of Knowledge per i livelli delle abilità.",
-            "affinity": "Il piano richiede {needed} punti affinità. Quelli che hai nelle schede degli esperti ne coprono {held}, quindi ne restano {left} da ottenere. Il pacchetto non ha un oggetto di affinità, quindi nulla viene controllato su una scorta.",
+            "affinity": "Il piano richiede {needed} punti di affinità. I regali di affinità della pagina Risorse e i punti sulle schede degli esperti coprono {held}, quindi ne mancano {left}.",
             "learning": "Il piano richiede {exp} EXP delle abilità. Le tue abilità ne hanno {held}, quindi {left} devono venire dalle accelerazioni di apprendimento. Un minuto di apprendimento dà {rate} EXP, quindi sono {minutes} minuti."
         },
         "byExpert": {
             "title": "Per esperto",
             "sigils": "Sigilli: {needed} necessari, {own} coperti dal tuo sigillo {name}, {common} da ottenere da Common Expert Sigils",
-            "affinity": "Affinità: {needed} necessari, {held} disponibili, {left} ancora da ottenere",
+            "affinity": "Affinità: {needed} necessari, {held} coperti, {left} ancora da ottenere",
             "exp": "EXP delle abilità: {needed} necessari, {held} disponibili, {left} ancora da ottenere"
         },
         "result": {
