@@ -14,6 +14,8 @@ interface PageHeaderProps {
 	title: string;
 	subline?: string;
 	actions?: ReactNode;
+	/** Shown at the start of the title on desktop. The mobile app bar already names the page. */
+	icon?: ReactNode;
 	/** The Wiki page to open, for a page whose tabs each have their own Wiki page. */
 	wikiPage?: WikiPageId;
 }
@@ -35,12 +37,15 @@ function WikiLink({ wikiPage }: { wikiPage?: WikiPageId }) {
 	);
 }
 
-export function PageHeader({ title, subline, actions, wikiPage }: PageHeaderProps) {
+export function PageHeader({ title, subline, actions, icon, wikiPage }: PageHeaderProps) {
 	return (
 		<header className="flex flex-wrap items-center justify-between gap-4">
-			<div className="flex flex-col">
-				<h1 className="text-2xl font-semibold max-lg:sr-only">{title}</h1>
-				{subline && <span className="text-muted max-lg:sr-only">{subline}</span>}
+			<div className="flex items-center gap-3">
+				{icon && <span className="max-lg:hidden">{icon}</span>}
+				<div className="flex flex-col">
+					<h1 className="text-2xl font-semibold max-lg:sr-only">{title}</h1>
+					{subline && <span className="text-muted max-lg:sr-only">{subline}</span>}
+				</div>
 			</div>
 			<div className="flex flex-wrap items-center gap-3">
 				{actions}

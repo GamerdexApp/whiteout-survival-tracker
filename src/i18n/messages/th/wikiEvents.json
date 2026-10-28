@@ -121,7 +121,10 @@
         "zone": "โซน",
         "days": "วัน",
         "statSources": "แหล่งค่าสถานะ",
-        "unlock": "ปลดล็อก"
+        "unlock": "ปลดล็อก",
+        "stages": "Stages",
+        "troops": "Troops",
+        "note": "Note"
     },
     "shop": {
         "title": "ร้านค้า",
@@ -141,5 +144,17 @@
     "tips": {
         "title": "เคล็ดลับ"
     },
-    "recordLine": "กิจกรรมหมวด{category} พร้อมช่วง การให้คะแนน รางวัล และอันดับ"
+    "recordLine": "กิจกรรมหมวด{category} พร้อมช่วง การให้คะแนน รางวัล และอันดับ",
+    "labyrinthGlowstone": {
+        "title": "Glowstone",
+        "perStage": "Per cleared stage",
+        "perStageValue": "{amount} Glowstone",
+        "paid": "When it is paid",
+        "paidValue": "Once a week for each zone, on the first day the zone opens.",
+        "fullClear": "Full clear a week",
+        "fullClearValue": "{amount} Glowstone from {stages} stages",
+        "justus": "Expert bonus",
+        "justusValue": "{expert}'s {skill} skill adds {perLevel}% for each level, up to {max}% at level {level}.",
+        "openTracker": "Open the Labyrinth tracker"
+    }
 }

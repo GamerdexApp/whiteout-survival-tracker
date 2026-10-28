@@ -27,6 +27,7 @@ import gameLabels from "./pt-PT/gameLabels.json";
 import heroes from "./pt-PT/heroes.json";
 import heroGear from "./pt-PT/heroGear.json";
 import history from "./pt-PT/history.json";
+import labyrinth from "./pt-PT/labyrinth.json";
 import landing from "./pt-PT/landing.json";
 import overview from "./pt-PT/overview.json";
 import pets from "./pt-PT/pets.json";
@@ -96,6 +97,7 @@ const ptPT: PartialMessages = {
   heroGear,
   heroes,
   history,
+  labyrinth,
   landing,
   overview,
   pets,

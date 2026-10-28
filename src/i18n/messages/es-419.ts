@@ -27,6 +27,7 @@ import gameLabels from "./es-419/gameLabels.json";
 import heroes from "./es-419/heroes.json";
 import heroGear from "./es-419/heroGear.json";
 import history from "./es-419/history.json";
+import labyrinth from "./es-419/labyrinth.json";
 import landing from "./es-419/landing.json";
 import overview from "./es-419/overview.json";
 import pets from "./es-419/pets.json";
@@ -96,6 +97,7 @@ const es419: PartialMessages = {
   heroGear,
   heroes,
   history,
+  labyrinth,
   landing,
   overview,
   pets,

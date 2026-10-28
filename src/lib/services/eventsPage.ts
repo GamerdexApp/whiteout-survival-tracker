@@ -1,6 +1,6 @@
 import type { Playthrough, UserEventGives, UserEventState } from "@/types/app";
 import {
-  allGameEvents,
+  addableGameEvents,
   EVENT_CATEGORIES,
   gameEventById,
   isCoreGameEvent,
@@ -40,7 +40,7 @@ export const resultsLiveInCoreEvents = (event: GameEvent) =>
   isCoreGameEvent(event.id);
 
 export const categoryCounts = (): Record<CategoryFilter, number> => {
-  const events = allGameEvents();
+  const events = addableGameEvents();
   const counts = { all: events.length } as Record<CategoryFilter, number>;
   EVENT_CATEGORIES.forEach((category) => {
     counts[category] = events.filter(
@@ -55,7 +55,7 @@ export const catalogMatches = (
   category: CategoryFilter,
 ): GameEvent[] => {
   const needle = search.trim().toLowerCase();
-  return allGameEvents().filter(
+  return addableGameEvents().filter(
     (event) =>
       (category === "all" || event.category === category) &&
       event.name.toLowerCase().includes(needle),

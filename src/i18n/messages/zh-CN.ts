@@ -27,6 +27,7 @@ import gameLabels from "./zh-CN/gameLabels.json";
 import heroes from "./zh-CN/heroes.json";
 import heroGear from "./zh-CN/heroGear.json";
 import history from "./zh-CN/history.json";
+import labyrinth from "./zh-CN/labyrinth.json";
 import landing from "./zh-CN/landing.json";
 import overview from "./zh-CN/overview.json";
 import pets from "./zh-CN/pets.json";
@@ -96,6 +97,7 @@ const zhCN: PartialMessages = {
   heroGear,
   heroes,
   history,
+  labyrinth,
   landing,
   overview,
   pets,

@@ -121,7 +121,10 @@
         "zone": "ゾーン",
         "days": "日数",
         "statSources": "ステータスの入手元",
-        "unlock": "解放"
+        "unlock": "解放",
+        "stages": "Stages",
+        "troops": "Troops",
+        "note": "Note"
     },
     "shop": {
         "title": "ショップ",
@@ -141,5 +144,17 @@
     "tips": {
         "title": "ヒント"
     },
-    "recordLine": "{category}イベント。フェーズ、ポイント、報酬、ランキングを掲載。"
+    "recordLine": "{category}イベント。フェーズ、ポイント、報酬、ランキングを掲載。",
+    "labyrinthGlowstone": {
+        "title": "Glowstone",
+        "perStage": "Per cleared stage",
+        "perStageValue": "{amount} Glowstone",
+        "paid": "When it is paid",
+        "paidValue": "Once a week for each zone, on the first day the zone opens.",
+        "fullClear": "Full clear a week",
+        "fullClearValue": "{amount} Glowstone from {stages} stages",
+        "justus": "Expert bonus",
+        "justusValue": "{expert}'s {skill} skill adds {perLevel}% for each level, up to {max}% at level {level}.",
+        "openTracker": "Open the Labyrinth tracker"
+    }
 }

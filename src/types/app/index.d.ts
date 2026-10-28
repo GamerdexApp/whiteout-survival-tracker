@@ -16,6 +16,7 @@ import type {
   ExpertState,
   LearningJobState,
 } from "./experts";
+import type { LabyrinthState } from "./labyrinth";
 import type { PetsPlanState, PetState } from "./pets";
 import type { SkinState } from "./skins";
 import type { TrainingJobState, TroopsPlanState, TroopsState } from "./troops";
@@ -239,6 +240,7 @@ export interface Playthrough {
   dailies?: DailiesState;
   daybreak?: DaybreakState;
   tundraAlbum?: Record<string, TundraAlbumState>;
+  labyrinth?: LabyrinthState;
   skins?: Record<string, SkinState>;
   vip?: VipState;
   allianceTech?: Record<string, AllianceTechNodeState>;
@@ -270,6 +272,7 @@ export type * from "./dailies";
 export type * from "./daybreak";
 export type * from "./events";
 export type * from "./skins";
+export type * from "./labyrinth";
 export type * from "./tundraAlbum";
 export type * from "./unlocks";
 export type * from "./vip";

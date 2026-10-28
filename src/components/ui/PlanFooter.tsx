@@ -14,6 +14,7 @@ interface PlanFooterProps {
 	onClose: () => void;
 	exportAction?: ExportAction;
 	saveLabel: string;
+	saveDisabled?: boolean;
 	onSave: () => void;
 }
 
@@ -27,6 +28,7 @@ export function PlanFooter({
 	onClose,
 	exportAction,
 	saveLabel,
+	saveDisabled = false,
 	onSave,
 }: PlanFooterProps) {
 	return (
@@ -53,7 +55,7 @@ export function PlanFooter({
 						{exportAction.label}
 					</Button>
 				)}
-				<Button variant="primary" onClick={onSave}>
+				<Button variant="primary" disabled={saveDisabled} onClick={onSave}>
 					{saveLabel}
 				</Button>
 			</div>

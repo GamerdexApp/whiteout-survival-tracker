@@ -121,7 +121,10 @@
         "zone": "Khu vực",
         "days": "Ngày",
         "statSources": "Nguồn chỉ số",
-        "unlock": "Mở khóa"
+        "unlock": "Mở khóa",
+        "stages": "Stages",
+        "troops": "Troops",
+        "note": "Note"
     },
     "shop": {
         "title": "Cửa hàng",
@@ -141,5 +144,17 @@
     "tips": {
         "title": "Mẹo"
     },
-    "recordLine": "Sự kiện {category} với giai đoạn, cách tính điểm, phần thưởng và xếp hạng."
+    "recordLine": "Sự kiện {category} với giai đoạn, cách tính điểm, phần thưởng và xếp hạng.",
+    "labyrinthGlowstone": {
+        "title": "Glowstone",
+        "perStage": "Per cleared stage",
+        "perStageValue": "{amount} Glowstone",
+        "paid": "When it is paid",
+        "paidValue": "Once a week for each zone, on the first day the zone opens.",
+        "fullClear": "Full clear a week",
+        "fullClearValue": "{amount} Glowstone from {stages} stages",
+        "justus": "Expert bonus",
+        "justusValue": "{expert}'s {skill} skill adds {perLevel}% for each level, up to {max}% at level {level}.",
+        "openTracker": "Open the Labyrinth tracker"
+    }
 }

@@ -1,4 +1,5 @@
 import type { IconType } from "react-icons";
+import { GiCaveEntrance } from "react-icons/gi";
 import {
   LuBookOpen,
   LuBuilding2,
@@ -47,6 +48,7 @@ export type NavItemId =
   | "skins"
   | "events"
   | "tundraAlbum"
+  | "labyrinth"
   | "coreEvents"
   | "dailies"
   | "history"
@@ -105,6 +107,7 @@ export const navGroups: NavGroup[] = [
       { id: "skins", href: "/skins", icon: LuShirt },
       { id: "events", href: "/events", icon: LuCalendarDays },
       { id: "tundraAlbum", href: "/tundra-album", icon: LuImages },
+      { id: "labyrinth", href: "/labyrinth", icon: GiCaveEntrance },
     ],
   },
   {

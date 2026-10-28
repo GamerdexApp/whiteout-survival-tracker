@@ -27,6 +27,7 @@ import gameLabels from "./zh-TW/gameLabels.json";
 import heroes from "./zh-TW/heroes.json";
 import heroGear from "./zh-TW/heroGear.json";
 import history from "./zh-TW/history.json";
+import labyrinth from "./zh-TW/labyrinth.json";
 import landing from "./zh-TW/landing.json";
 import overview from "./zh-TW/overview.json";
 import pets from "./zh-TW/pets.json";
@@ -96,6 +97,7 @@ const zhTW: PartialMessages = {
   heroGear,
   heroes,
   history,
+  labyrinth,
   landing,
   overview,
   pets,

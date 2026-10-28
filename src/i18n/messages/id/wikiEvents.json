@@ -121,7 +121,10 @@
         "zone": "Zona",
         "days": "Hari",
         "statSources": "Sumber statistik",
-        "unlock": "Buka"
+        "unlock": "Buka",
+        "stages": "Stages",
+        "troops": "Troops",
+        "note": "Note"
     },
     "shop": {
         "title": "Toko",
@@ -141,5 +144,17 @@
     "tips": {
         "title": "Tips"
     },
-    "recordLine": "Event {category} dengan fase, skor, hadiah, dan peringkatnya."
+    "recordLine": "Event {category} dengan fase, skor, hadiah, dan peringkatnya.",
+    "labyrinthGlowstone": {
+        "title": "Glowstone",
+        "perStage": "Per cleared stage",
+        "perStageValue": "{amount} Glowstone",
+        "paid": "When it is paid",
+        "paidValue": "Once a week for each zone, on the first day the zone opens.",
+        "fullClear": "Full clear a week",
+        "fullClearValue": "{amount} Glowstone from {stages} stages",
+        "justus": "Expert bonus",
+        "justusValue": "{expert}'s {skill} skill adds {perLevel}% for each level, up to {max}% at level {level}.",
+        "openTracker": "Open the Labyrinth tracker"
+    }
 }

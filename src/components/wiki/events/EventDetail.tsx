@@ -5,10 +5,19 @@ import type {
 	GameEventDay,
 	GameEventShopOffer,
 	GameEventVersion,
+	GameEventZone,
 } from "whiteout-survival-data";
 import { useTranslations } from "next-intl";
 import { formatNumber } from "@/lib/format";
 import { findItem } from "@/data/game/items";
+import {
+	JUSTUS_GLOWSTONE_SKILL,
+	JUSTUS_NAME,
+	LABYRINTH_EVENT_ID,
+	LABYRINTH_GLOWSTONE_PER_STAGE,
+	labyrinthZones,
+} from "@/data/game/labyrinth";
+import { ButtonLink } from "@/comps/ui/Button";
 import { DetailRows } from "../parts/DetailRows";
 import { ResponsiveTable } from "../parts/ResponsiveTable";
 import { RecordSection } from "../records/RecordParts";
@@ -136,6 +145,48 @@ function ShopTable({ offers, event }: { offers: GameEventShopOffer[]; event: Gam
 	);
 }
 
+function LabyrinthGlowstone() {
+	const t = useTranslations("wikiEvents.labyrinthGlowstone");
+	const { name, bonusPercentByLevel } = JUSTUS_GLOWSTONE_SKILL;
+	const fullClearStages = labyrinthZones.reduce((total, zone) => total + zone.stages, 0);
+
+	return (
+		<RecordSection title={t("title")}>
+			<DetailRows
+				rows={[
+					{
+						label: t("perStage"),
+						value: t("perStageValue", {
+							amount: formatNumber(LABYRINTH_GLOWSTONE_PER_STAGE),
+						}),
+					},
+					{ label: t("paid"), value: t("paidValue") },
+					{
+						label: t("fullClear"),
+						value: t("fullClearValue", {
+							amount: formatNumber(fullClearStages * LABYRINTH_GLOWSTONE_PER_STAGE),
+							stages: formatNumber(fullClearStages),
+						}),
+					},
+					{
+						label: t("justus"),
+						value: t("justusValue", {
+							expert: JUSTUS_NAME,
+							skill: name,
+							perLevel: formatNumber(bonusPercentByLevel[0]),
+							max: formatNumber(bonusPercentByLevel.at(-1) ?? 0),
+							level: formatNumber(bonusPercentByLevel.length),
+						}),
+					},
+				]}
+			/>
+			<ButtonLink href="/labyrinth" variant="secondary" className="self-start">
+				{t("openTracker")}
+			</ButtonLink>
+		</RecordSection>
+	);
+}
+
 function ExtraSections({ event }: { event: GameEvent }) {
 	const tLevels = useTranslations("wikiEvents.pointLevels");
 	const tWaves = useTranslations("wikiEvents.waves");
@@ -256,22 +307,59 @@ function ExtraSections({ event }: { event: GameEvent }) {
 								header: tZones("days"),
 								render: (row) => row.days.join(", "),
 							},
+							...(event.zones.some((zone) => zone.stages !== undefined)
+								? [
+										{
+											id: "stages",
+											header: tZones("stages"),
+											render: (row: GameEventZone) =>
+												row.stages === undefined ? (
+													<UnknownValue />
+												) : (
+													formatNumber(row.stages)
+												),
+											numeric: true,
+										},
+									]
+								: []),
 							{
 								id: "stats",
 								header: tZones("statSources"),
 								render: (row) => row.statSources,
 								wideOnCard: true,
 							},
+							...(event.zones.some((zone) => zone.troops)
+								? [
+										{
+											id: "troops",
+											header: tZones("troops"),
+											render: (row: GameEventZone) =>
+												row.troops ?? <UnknownValue />,
+											wideOnCard: true,
+										},
+									]
+								: []),
 							{
 								id: "unlock",
 								header: tZones("unlock"),
 								render: (row) => row.unlock ?? <UnknownValue />,
 								wideOnCard: true,
 							},
+							...(event.zones.some((zone) => zone.note)
+								? [
+										{
+											id: "note",
+											header: tZones("note"),
+											render: (row: GameEventZone) => row.note ?? "",
+											wideOnCard: true,
+										},
+									]
+								: []),
 						]}
 					/>
 				</RecordSection>
 			)}
+			{event.id === LABYRINTH_EVENT_ID && <LabyrinthGlowstone />}
 			{event.shop && (
 				<RecordSection title={tShop("title")}>
 					<ShopTable offers={event.shop} event={event} />
