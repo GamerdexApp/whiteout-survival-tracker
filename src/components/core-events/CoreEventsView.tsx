@@ -17,9 +17,11 @@ import {
 	shownEventsOf,
 	withActionCount,
 } from "@/service/coreEvents";
+import { gameEventOf } from "@/data/game/coreEvents";
 import { PageHeader } from "@/comps/layout/PageHeader";
 import { ButtonLink } from "@/comps/ui/Button";
 import { EmptyState } from "@/comps/ui/EmptyState";
+import { ItemIcon } from "@/comps/ui/ItemIcon";
 import { Tabs } from "@/comps/ui/Tabs";
 import { ActionTable } from "./ActionTable";
 import { BeastPlanFlyout } from "./BeastPlanFlyout";
@@ -51,6 +53,7 @@ export function CoreEventsView({ chief }: { chief: Playthrough }) {
 
 	const header = (
 		<PageHeader
+			icon={event && <ItemIcon src={gameEventOf(event).img} size={44} />}
 			title={t("page.title")}
 			subline={t("page.subline", {
 				chief: chief.name,

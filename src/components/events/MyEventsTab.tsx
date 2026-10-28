@@ -18,6 +18,7 @@ import {
 import type { EventsZone } from "@/service/eventsSchedule";
 import { Button } from "@/comps/ui/Button";
 import { Card } from "@/comps/ui/Card";
+import { ItemIcon } from "@/comps/ui/ItemIcon";
 import { CATEGORY_BAR } from "./eventStyle";
 import { EventTag } from "./EventTag";
 
@@ -84,6 +85,7 @@ export function MyEventsTab({ chief, entries, zone, nowMs, onEdit, onRemove }: M
 											aria-hidden="true"
 											className={`size-2.5 rounded-sm ${CATEGORY_BAR[event.category]}`}
 										/>
+										<ItemIcon src={event.img} size={24} />
 										<span className="font-semibold">{event.name}</span>
 										<span className="text-muted">
 											{t(`categories.${event.category}`)}

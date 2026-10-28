@@ -5,10 +5,10 @@ import type { DailiesState } from "@/types/app";
 import { formatNumber } from "@/lib/format";
 import { buildMissionViews } from "@/service/dailies";
 import type { MissionView } from "@/service/dailies";
-import { itemName } from "@/data/game/dailies";
 import { Card } from "@/comps/ui/Card";
 import { Switch } from "@/comps/ui/Switch";
 import { LevelPicker } from "./LevelPicker";
+import { RewardAmounts } from "./RewardAmounts";
 import type { DailiesActions } from "./useDailiesActions";
 
 interface MissionsCardProps {
@@ -73,9 +73,7 @@ function MissionRow({ view, onLevel }: { view: MissionView; onLevel: (level: num
 						max: formatNumber(view.activenessMax),
 						breakdown,
 					});
-	const rewards = view.otherRewards
-		.map((reward) => `${formatNumber(reward.amount)} ${itemName(reward.itemId)}`)
-		.join(", ");
+	const rewards = <RewardAmounts rewards={view.otherRewards} />;
 	return (
 		<li className="border-line flex flex-col gap-3 p-4 not-last:border-b-[1.5px] lg:flex-row lg:items-start lg:justify-between">
 			<div className="flex min-w-0 flex-col gap-1">
@@ -104,8 +102,8 @@ function MissionRow({ view, onLevel }: { view: MissionView; onLevel: (level: num
 				<p className="text-muted">{activenessLine}</p>
 				<p className="text-muted">
 					{view.knownLevels > 1
-						? t("alsoGivesEach", { rewards })
-						: t("alsoGives", { rewards })}
+						? t.rich("alsoGivesEach", { rewards: () => rewards })
+						: t.rich("alsoGives", { rewards: () => rewards })}
 				</p>
 			</div>
 			<div className="flex shrink-0 items-center justify-between gap-3 lg:flex-col lg:items-end">

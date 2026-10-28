@@ -8,6 +8,7 @@ import { useUrlTab } from "@/lib/hooks/useUrlTab";
 import { describeChief } from "@/service/chiefs";
 import { shownEventsOf } from "@/service/coreEvents";
 import { endedEventsOf } from "@/service/historyEvents";
+import { gameEventOf } from "@/data/game/coreEvents";
 import { PageHeader } from "@/comps/layout/PageHeader";
 import { ButtonLink } from "@/comps/ui/Button";
 import { EmptyState } from "@/comps/ui/EmptyState";
@@ -50,7 +51,11 @@ export function HistoryView({ chief }: { chief: Playthrough }) {
 
 	const tabs = [
 		{ id: "all" as EventFilter, label: t("tabs.all") },
-		...shown.map((id) => ({ id: id as EventFilter, label: t(`events.${id}`) })),
+		...shown.map((id) => ({
+			id: id as EventFilter,
+			label: t(`events.${id}`),
+			icon: gameEventOf(id).img,
+		})),
 	];
 
 	return (

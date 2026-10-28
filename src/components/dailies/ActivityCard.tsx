@@ -11,6 +11,7 @@ import {
 	TOP_REWARD_ACTIVENESS,
 } from "@/data/game/dailies";
 import { Card } from "@/comps/ui/Card";
+import { RewardAmounts } from "./RewardAmounts";
 
 const percentOf = (activeness: number) => Math.min(100, (activeness / TOP_REWARD_ACTIVENESS) * 100);
 
@@ -97,12 +98,7 @@ export function ActivityCard({ activeness }: { activeness: number }) {
 									: t("ahead", { gap: formatNumber(view.remaining) })}
 						</span>
 						<span className="col-span-2 sm:col-span-1">
-							{view.rewards
-								.map(
-									(reward) =>
-										`${formatNumber(reward.amount)} ${itemName(reward.itemId)}`
-								)
-								.join(", ")}
+							<RewardAmounts rewards={view.rewards} />
 						</span>
 					</li>
 				))}

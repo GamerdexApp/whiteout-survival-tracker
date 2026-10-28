@@ -1,18 +1,21 @@
 import { useTranslations } from "next-intl";
 import { formatNumber } from "@/lib/format";
 import { findDecoration } from "@/data/game/daybreak";
+import type { GameEventReward } from "@/data/game/gameEvents";
 import { findItem } from "@/data/game/items";
-import type { GameEventReward } from "@/data/game/labyrinth";
-import { ItemIcon } from "@/comps/ui/ItemIcon";
+import { findSkin } from "@/data/game/skins";
+import { ItemIcon } from "./ItemIcon";
 
-const imageOf = ({ itemId, decorationId }: GameEventReward) => {
+const imageOf = ({ itemId, decorationId, skinId }: GameEventReward) => {
 	if (itemId) return findItem(itemId)?.img;
 	if (decorationId) return findDecoration(decorationId)?.img;
+	if (skinId) return findSkin(skinId)?.img;
 	return undefined;
 };
 
+/** The icon, amount and name of one event reward. The name stays English as game data. */
 export function RewardLine({ reward }: { reward: GameEventReward }) {
-	const t = useTranslations("labyrinth.rewards");
+	const t = useTranslations("ui.reward");
 
 	return (
 		<span className="inline-flex items-center gap-2">

@@ -3,8 +3,10 @@ import Link from "next/link";
 import type { Playthrough } from "@/types/app";
 import { formatNumber } from "@/lib/format";
 import { lastResultOf } from "@/service/overviewEvents";
+import { gameEventOf } from "@/data/game/coreEvents";
 import { DiffText } from "@/comps/history/DiffText";
 import { useHistoryText } from "@/comps/history/useHistoryText";
+import { ItemIcon } from "@/comps/ui/ItemIcon";
 import { OverviewCard } from "./OverviewCard";
 
 function ResultLine({ label, children }: { label: string; children: React.ReactNode }) {
@@ -26,7 +28,13 @@ export function LastResultCard({ chief, className }: { chief: Playthrough; class
 	const href = `/history/${row.event}/${encodeURIComponent(row.entry.id)}`;
 
 	return (
-		<OverviewCard title={t("title")} href={href} linkLabel={t("open")} className={className}>
+		<OverviewCard
+			icon={<ItemIcon src={gameEventOf(row.event).img} size={32} />}
+			title={t("title")}
+			href={href}
+			linkLabel={t("open")}
+			className={className}
+		>
 			<div className="flex flex-col">
 				<Link href={href} className="min-h-11 font-semibold">
 					{titleOf(row.event, row.entry)}

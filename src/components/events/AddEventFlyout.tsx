@@ -17,6 +17,7 @@ import { Button } from "@/comps/ui/Button";
 import { Card } from "@/comps/ui/Card";
 import { Flyout } from "@/comps/ui/Flyout";
 import { Input } from "@/comps/ui/Input";
+import { ItemIcon } from "@/comps/ui/ItemIcon";
 import { CATEGORY_BORDER } from "./eventStyle";
 import { EventTag } from "./EventTag";
 
@@ -112,16 +113,19 @@ export function AddEventFlyout({ open, chief, onPick, onClose }: AddEventFlyoutP
 								className="flex items-center justify-between gap-3 p-3"
 							>
 								<div
-									className={`flex min-w-0 flex-col gap-1 border-s-[3px] ps-3 ${CATEGORY_BORDER[event.category]}`}
+									className={`flex min-w-0 items-center gap-3 border-s-[3px] ps-3 ${CATEGORY_BORDER[event.category]}`}
 								>
-									<span className="font-semibold">{event.name}</span>
-									<span className="text-muted text-sm">
-										{event.duration ?? t("add.noDuration")}
-									</span>
-									<span className="flex flex-wrap gap-2">
-										<EventTag>{t(`categories.${event.category}`)}</EventTag>
-										<EventTag>{t(`gives.${defaultGives(event)}`)}</EventTag>
-									</span>
+									<ItemIcon src={event.img} size={40} />
+									<div className="flex min-w-0 flex-col gap-1">
+										<span className="font-semibold">{event.name}</span>
+										<span className="text-muted text-sm">
+											{event.duration ?? t("add.noDuration")}
+										</span>
+										<span className="flex flex-wrap gap-2">
+											<EventTag>{t(`categories.${event.category}`)}</EventTag>
+											<EventTag>{t(`gives.${defaultGives(event)}`)}</EventTag>
+										</span>
+									</div>
 								</div>
 								{added.has(event.id) ? (
 									<EventTag>{t("add.added")}</EventTag>

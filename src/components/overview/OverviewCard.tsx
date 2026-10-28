@@ -7,6 +7,8 @@ interface OverviewCardProps {
 	linkLabel?: string;
 	href?: string;
 	badge?: ReactNode;
+	/** An icon at the start of the title. */
+	icon?: ReactNode;
 	className?: string;
 	children: ReactNode;
 }
@@ -16,13 +18,17 @@ export function OverviewCard({
 	linkLabel,
 	href,
 	badge,
+	icon,
 	className = "",
 	children,
 }: OverviewCardProps) {
 	return (
 		<Card className={`flex flex-col gap-3 p-4 lg:p-5 ${className}`}>
 			<header className="flex items-center justify-between gap-3">
-				<h2 className="text-lg font-semibold">{title}</h2>
+				<h2 className="flex min-w-0 items-center gap-2 text-lg font-semibold">
+					{icon}
+					{title}
+				</h2>
 				{badge}
 				{href && linkLabel && (
 					<Link

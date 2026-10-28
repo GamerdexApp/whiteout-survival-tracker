@@ -342,19 +342,10 @@ export const dayTotalOf = (result: EventResult, dayId: string) =>
 export interface Milestone {
   name: string;
   scoreTotal: number;
-  rewards: string;
+  rewards: GameEventReward[];
   reached: boolean;
   missing: number;
 }
-
-const rewardText = (rewards: GameEventReward[] | undefined) =>
-  (rewards ?? [])
-    .map((reward) =>
-      reward.amount === undefined
-        ? reward.name
-        : `${reward.amount} ${reward.name}`,
-    )
-    .join(", ");
 
 /** The personal milestones of a day compared with the day total, which includes the bonus. */
 export const milestonesOf = (
@@ -372,7 +363,7 @@ export const milestonesOf = (
           {
             name: tier.name,
             scoreTotal: tier.scoreTotal,
-            rewards: rewardText(tier.rewards),
+            rewards: tier.rewards ?? [],
             reached: dayTotal >= tier.scoreTotal,
             missing: Math.max(0, tier.scoreTotal - dayTotal),
           },

@@ -1,8 +1,10 @@
 import { useTranslations } from "next-intl";
 import type { CoreEventId, Playthrough } from "@/types/app";
 import { eventBonusOf } from "@/service/coreEvents";
+import { findExpert } from "@/data/game/experts";
 import { ButtonLink } from "@/comps/ui/Button";
 import { Card } from "@/comps/ui/Card";
+import { ItemIcon } from "@/comps/ui/ItemIcon";
 import { Note } from "@/comps/ui/Note";
 
 interface BonusCardProps {
@@ -20,7 +22,8 @@ export function BonusCard({ chief, event, bonusPercent }: BonusCardProps) {
 	return (
 		<Card className="flex flex-col gap-3 p-4 lg:flex-row lg:items-start lg:justify-between">
 			<div className="flex flex-col gap-1">
-				<h2 className="font-semibold">
+				<h2 className="flex items-center gap-2 font-semibold">
+					<ItemIcon src={findExpert(bonus.expertId)?.img} size={28} />
 					{t("title", { expert: bonus.expertName, skill: bonus.skillName })}
 				</h2>
 				<p className="text-muted">{event === "svs" ? t("svsHelp") : t("showdownHelp")}</p>

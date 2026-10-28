@@ -21,9 +21,10 @@ import { allGameEvents, gameEventById } from "@/data/game/gameEvents";
 import { Button } from "@/comps/ui/Button";
 import { Card } from "@/comps/ui/Card";
 import { Field } from "@/comps/ui/Field";
+import { IconSelect } from "@/comps/ui/IconSelect";
+import { ItemIcon } from "@/comps/ui/ItemIcon";
 import { Note } from "@/comps/ui/Note";
 import { SegmentedControl } from "@/comps/ui/SegmentedControl";
-import { Select } from "@/comps/ui/Select";
 import { CATEGORY_BAR } from "./eventStyle";
 import { TrendChart } from "./TrendChart";
 
@@ -133,20 +134,22 @@ export function HistoryTab({ chief, zone, nowMs, onEdit }: HistoryTabProps) {
 			<div className="flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between">
 				<div className="lg:flex-1">
 					<Field label={t("history.eventFilter")}>
-						<Select
+						<IconSelect
+							label={t("history.eventFilter")}
 							value={selected}
-							onChange={(event) => {
-								setEventId(event.target.value);
+							onChange={(id) => {
+								setEventId(id);
 								setShown(PAGE_SIZE);
 							}}
-						>
-							<option value="all">{t("history.allEvents")}</option>
-							{withResults.map((event) => (
-								<option key={event.id} value={event.id}>
-									{event.name}
-								</option>
-							))}
-						</Select>
+							options={[
+								{ id: "all", label: t("history.allEvents") },
+								...withResults.map((event) => ({
+									id: event.id,
+									label: event.name,
+									icon: event.img,
+								})),
+							]}
+						/>
 					</Field>
 				</div>
 				<div className="flex flex-col gap-1.5">
@@ -315,6 +318,7 @@ export function HistoryTab({ chief, zone, nowMs, onEdit }: HistoryTabProps) {
 														aria-hidden="true"
 														className={`size-2.5 rounded-sm ${CATEGORY_BAR[row.event.category]}`}
 													/>
+													<ItemIcon src={row.event.img} size={24} />
 													{row.event.name}
 												</span>
 											</td>
@@ -369,6 +373,7 @@ export function HistoryTab({ chief, zone, nowMs, onEdit }: HistoryTabProps) {
 													aria-hidden="true"
 													className={`size-2.5 rounded-sm ${CATEGORY_BAR[row.event.category]}`}
 												/>
+												<ItemIcon src={row.event.img} size={24} />
 												{row.event.name}
 											</span>
 											<span className="text-muted font-mono text-sm">

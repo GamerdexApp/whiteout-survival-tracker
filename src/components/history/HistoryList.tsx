@@ -2,6 +2,8 @@ import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { formatNumber } from "@/lib/format";
 import type { HistoryRow } from "@/service/historyEvents";
+import { gameEventOf } from "@/data/game/coreEvents";
+import { ItemIcon } from "@/comps/ui/ItemIcon";
 import { DiffText } from "./DiffText";
 import { useHistoryText } from "./useHistoryText";
 
@@ -37,9 +39,12 @@ export function HistoryList({ rows }: { rows: HistoryRow[] }) {
 							key={`${row.event}:${row.entry.id}`}
 							className={`grid grid-cols-3 gap-x-4 gap-y-2 p-4 lg:px-5 lg:py-5 ${DESKTOP_COLUMNS}`}
 						>
-							<div className="col-span-3 flex flex-col lg:col-span-1">
-								<span className="font-semibold">{title}</span>
-								<span className="text-muted">{endedOf(row.entry)}</span>
+							<div className="col-span-3 flex items-center gap-3 lg:col-span-1">
+								<ItemIcon src={gameEventOf(row.event).img} size={36} />
+								<div className="flex min-w-0 flex-col">
+									<span className="font-semibold">{title}</span>
+									<span className="text-muted">{endedOf(row.entry)}</span>
+								</div>
 							</div>
 							<div className="flex flex-col lg:block lg:text-end">
 								<span className="text-muted lg:sr-only">{t("plan")}</span>

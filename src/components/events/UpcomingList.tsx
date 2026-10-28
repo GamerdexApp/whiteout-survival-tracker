@@ -7,6 +7,7 @@ import type { EventEntry } from "@/service/eventsPage";
 import { countdownOf, upcomingGroups } from "@/service/eventsPage";
 import type { EventsZone } from "@/service/eventsSchedule";
 import { Card } from "@/comps/ui/Card";
+import { ItemIcon } from "@/comps/ui/ItemIcon";
 import { CATEGORY_BORDER } from "./eventStyle";
 import { EventTag } from "./EventTag";
 
@@ -53,7 +54,8 @@ export function UpcomingList({ entries, zone, nowMs }: UpcomingListProps) {
 											key={`${entry.event.id}-${instance.runIndex}-${instance.startMs}`}
 											className={`flex items-start justify-between gap-2 border-s-[3px] ps-2.5 ${CATEGORY_BORDER[entry.event.category]}`}
 										>
-											<div className="flex min-w-0 flex-col">
+											<ItemIcon src={entry.event.img} size={28} />
+											<div className="flex min-w-0 flex-1 flex-col">
 												<span className="font-semibold">
 													{entry.state.runs.length > 1 && instance.label
 														? t("calendar.nameWithRun", {

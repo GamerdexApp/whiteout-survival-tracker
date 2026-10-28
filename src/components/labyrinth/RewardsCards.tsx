@@ -4,7 +4,7 @@ import { formatNumber } from "@/lib/format";
 import type { MilestoneView } from "@/service/labyrinth";
 import { labyrinthRewards, labyrinthShop } from "@/data/game/labyrinth";
 import { Card } from "@/comps/ui/Card";
-import { RewardLine } from "./RewardLine";
+import { RewardLine } from "@/comps/ui/RewardLine";
 
 export function MilestonesCard({
 	milestones,

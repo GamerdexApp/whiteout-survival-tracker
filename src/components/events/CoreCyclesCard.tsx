@@ -10,6 +10,7 @@ import { gameEventById } from "@/data/game/gameEvents";
 import type { GameEvent } from "@/data/game/gameEvents";
 import { Button } from "@/comps/ui/Button";
 import { Card } from "@/comps/ui/Card";
+import { ItemIcon } from "@/comps/ui/ItemIcon";
 import { SectionLabel } from "@/comps/ui/SectionLabel";
 import { useRepeatText } from "./MyEventsTab";
 
@@ -46,7 +47,8 @@ export function CoreCyclesCard({ states, zone, nowMs, onSet, onEdit }: CoreCycle
 							key={eventId}
 							className="flex flex-wrap items-center justify-between gap-2 py-2"
 						>
-							<div className="flex min-w-0 flex-col">
+							<ItemIcon src={event.img} size={28} />
+							<div className="flex min-w-0 flex-1 flex-col">
 								<span className="font-medium">{event.name}</span>
 								<span className="text-muted">
 									{state && next
