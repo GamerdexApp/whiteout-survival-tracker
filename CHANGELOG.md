@@ -7,6 +7,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.3.0] - 2026-10-27
+
+### Added
+
+- Labyrinth: a page under Account, with a cave icon in the sidebar and the in-game icon in the header. Set the stage you have reached in each of the six zones to see the Glowstone you earn each week, the Labyrinth Cores, the Core milestones you have reached, the Labyrinth Shop and the raid rewards. Each zone pays 10 Glowstone for every cleared stage, once a week, on the first day the zone opens
+- Labyrinth: a read only Justus card shows the level of his Glorious Gains skill from the Experts page and the Glowstone it adds to the week. The bonus stays at 0 until the package has his stat bonus and the Experts page lists him
+- Labyrinth: a Formations flyout holds the formation of each zone. Land of Heroes and Gaia Heart each have three formations with one Infantry, one Lancer and one Marksman hero and a troop split that totals 100%. A hero can be in one formation of a zone only. The hero lists show the rarity dot, the name and the power with the hero gear power added, strongest first. Cave of Monsters, Charm Mine, Research Center and Gear Forge each have one troop split. One Save writes everything, with Undo
+- Wiki: the Labyrinth event page lists the stages, troops and notes of each zone, and has a Glowstone section with the amount per stage, a full clear for the week and the Justus bonus, with a link to the Labyrinth page
+- In-game icons: the event art shows on the Core Events header, the Overview Events, Core Today and Last Result cards, the Events page rows and Add event list, and the History page tabs, rows and result pages. The Core Events bonus card shows the expert portrait, and the point thresholds and rank rewards show item icons. Dailies reward lines show item icons
+- The event filter on the History tab of the Events page shows the event icon on each row
+
+### Changed
+
+- Game data package 0.10.0: the Labyrinth zones list their troops, Gaia Heart lists all its stat sources, and each stage gives Glowstone
+- Events: Add event no longer lists the Labyrinth, which has its own page
+
 ## [0.2.0] - 2026-10-27
 
 ### Added
