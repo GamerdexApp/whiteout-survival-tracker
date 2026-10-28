@@ -26,6 +26,7 @@ import gameLabels from "./en/gameLabels.json";
 import heroes from "./en/heroes.json";
 import heroGear from "./en/heroGear.json";
 import history from "./en/history.json";
+import labyrinth from "./en/labyrinth.json";
 import landing from "./en/landing.json";
 import overview from "./en/overview.json";
 import pets from "./en/pets.json";
@@ -100,6 +101,7 @@ const en = {
   dailies,
   daybreak,
   tundraAlbum,
+  labyrinth,
   overview,
   skins,
   vip,

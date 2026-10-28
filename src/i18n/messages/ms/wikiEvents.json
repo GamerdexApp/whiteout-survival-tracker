@@ -121,7 +121,10 @@
         "zone": "Zon",
         "days": "Hari",
         "statSources": "Sumber statistik",
-        "unlock": "Buka kunci"
+        "unlock": "Buka kunci",
+        "stages": "Stages",
+        "troops": "Troops",
+        "note": "Note"
     },
     "shop": {
         "title": "Kedai",
@@ -141,5 +144,17 @@
     "tips": {
         "title": "Petua"
     },
-    "recordLine": "Acara {category} dengan fasa, pemarkahan, ganjaran dan kedudukannya."
+    "recordLine": "Acara {category} dengan fasa, pemarkahan, ganjaran dan kedudukannya.",
+    "labyrinthGlowstone": {
+        "title": "Glowstone",
+        "perStage": "Per cleared stage",
+        "perStageValue": "{amount} Glowstone",
+        "paid": "When it is paid",
+        "paidValue": "Once a week for each zone, on the first day the zone opens.",
+        "fullClear": "Full clear a week",
+        "fullClearValue": "{amount} Glowstone from {stages} stages",
+        "justus": "Expert bonus",
+        "justusValue": "{expert}'s {skill} skill adds {perLevel}% for each level, up to {max}% at level {level}.",
+        "openTracker": "Open the Labyrinth tracker"
+    }
 }

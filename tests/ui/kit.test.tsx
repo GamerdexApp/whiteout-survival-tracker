@@ -2,6 +2,7 @@ import { afterEach, describe, expect, it, vi } from "vitest";
 import { act, useState } from "react";
 import { CountInput } from "@/comps/resources/CountControl";
 import { CollapsibleSection } from "@/comps/ui/CollapsibleSection";
+import { IconSelect } from "@/comps/ui/IconSelect";
 import { PlanFooter } from "@/comps/ui/PlanFooter";
 import { Switch } from "@/comps/ui/Switch";
 import { Tabs } from "@/comps/ui/Tabs";
@@ -222,5 +223,42 @@ describe("PlanFooter", () => {
 		await click(button("Save plan"));
 		expect(onClose).toHaveBeenCalledTimes(1);
 		expect(onSave).toHaveBeenCalledTimes(1);
+	});
+});
+
+describe("IconSelect", () => {
+	const options = [
+		{ id: "all", label: "All events" },
+		{ id: "svs", label: "State of Power", icon: "/images/events/svs-state-of-power.png" },
+		{ id: "king", label: "King of Icefield", icon: "/images/events/king-of-icefield.png" },
+	];
+
+	const Demo = () => {
+		const [value, setValue] = useState("all");
+		return <IconSelect label="Event" options={options} value={value} onChange={setValue} />;
+	};
+
+	const trigger = () => page().querySelector<HTMLElement>("[aria-haspopup=listbox]")!;
+	const rows = () => Array.from(page().querySelectorAll("[role=option]"));
+
+	it("shows an icon in each option that has one and none in the others", async () => {
+		await mount(<Demo />);
+
+		await click(trigger());
+
+		expect(rows()).toHaveLength(3);
+		expect(rows().map((row) => row.querySelectorAll("img").length)).toEqual([0, 1, 1]);
+	});
+
+	it("shows the icon of the chosen option on the button and closes the list", async () => {
+		await mount(<Demo />);
+		expect(trigger().querySelector("img")).toBeNull();
+
+		await click(trigger());
+		await click(rows()[1]);
+
+		expect(trigger().textContent).toContain("State of Power");
+		expect(trigger().querySelector("img")?.getAttribute("src")).toContain("svs-state-of-power");
+		expect(rows()).toHaveLength(0);
 	});
 });

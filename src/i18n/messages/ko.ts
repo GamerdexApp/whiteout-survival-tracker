@@ -27,6 +27,7 @@ import gameLabels from "./ko/gameLabels.json";
 import heroes from "./ko/heroes.json";
 import heroGear from "./ko/heroGear.json";
 import history from "./ko/history.json";
+import labyrinth from "./ko/labyrinth.json";
 import landing from "./ko/landing.json";
 import overview from "./ko/overview.json";
 import pets from "./ko/pets.json";
@@ -96,6 +97,7 @@ const ko: PartialMessages = {
   heroGear,
   heroes,
   history,
+  labyrinth,
   landing,
   overview,
   pets,

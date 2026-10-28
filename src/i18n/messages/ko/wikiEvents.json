@@ -121,7 +121,10 @@
         "zone": "구역",
         "days": "일차",
         "statSources": "능력치 출처",
-        "unlock": "해금"
+        "unlock": "해금",
+        "stages": "Stages",
+        "troops": "Troops",
+        "note": "Note"
     },
     "shop": {
         "title": "상점",
@@ -141,5 +144,17 @@
     "tips": {
         "title": "팁"
     },
-    "recordLine": "단계, 점수, 보상, 순위가 있는 {category} 이벤트."
+    "recordLine": "단계, 점수, 보상, 순위가 있는 {category} 이벤트.",
+    "labyrinthGlowstone": {
+        "title": "Glowstone",
+        "perStage": "Per cleared stage",
+        "perStageValue": "{amount} Glowstone",
+        "paid": "When it is paid",
+        "paidValue": "Once a week for each zone, on the first day the zone opens.",
+        "fullClear": "Full clear a week",
+        "fullClearValue": "{amount} Glowstone from {stages} stages",
+        "justus": "Expert bonus",
+        "justusValue": "{expert}'s {skill} skill adds {perLevel}% for each level, up to {max}% at level {level}.",
+        "openTracker": "Open the Labyrinth tracker"
+    }
 }

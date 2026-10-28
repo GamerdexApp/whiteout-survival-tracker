@@ -1,0 +1,80 @@
+{
+    "page": {
+        "title": "Labyrinth"
+    },
+    "view": {
+        "subline": "{chief} · {details} · {done} of {total} stages cleared"
+    },
+    "summary": {
+        "stages": "Stages cleared",
+        "stagesValue": "{done} of {total}",
+        "cores": "Labyrinth Cores",
+        "weekly": "Glowstone a week",
+        "weeklyWithJustus": "Glowstone a week with Justus"
+    },
+    "zones": {
+        "title": "Zones",
+        "hint": "Set the stage you have reached in each zone. Stage progress resets every Monday.",
+        "stageLabel": "Stage reached in {zone}",
+        "ofTotal": "of {total}",
+        "progress": "{zone} stages cleared",
+        "opens": "Opens {days}",
+        "perWeek": "{amount} Glowstone a week",
+        "counts": "Counts: {sources}",
+        "troops": "Troops: {troops}",
+        "unlock": "Unlock: {unlock}"
+    },
+    "justus": {
+        "title": "{expert} {skill} level",
+        "level": "Level {level} · {percent}% more Glowstone",
+        "none": "No level set, so no bonus is added.",
+        "readOnly": "Read only",
+        "openExperts": "Open Experts",
+        "help": "Adds Glowstone to your weekly Labyrinth payout. Read only here, the level is set on the Experts page."
+    },
+    "rewards": {
+        "title": "Rewards",
+        "raidTitle": "Raid rewards"
+    },
+    "milestones": {
+        "title": "Labyrinth Core rewards",
+        "hint": "You have {cores} Cores. Each first clear of a stage gives 1 Core.",
+        "reached": "Reached",
+        "needsMore": "{amount} more Cores"
+    },
+    "shop": {
+        "title": "Labyrinth Shop",
+        "hint": "Spend Glowstone here.",
+        "cost": "{amount} Glowstone",
+        "limit": "Limit {amount}"
+    },
+    "rules": {
+        "title": "How Glowstone is counted",
+        "body": "Each zone pays Glowstone once a week, on the first day it opens. Every cleared stage in the zone gives {perStage} Glowstone. The Justus bonus is a percent of the weekly total, rounded down. The game's own rounding is not confirmed, so the total can differ by a few Glowstone."
+    },
+    "formations": {
+        "button": "Formations",
+        "title": "Labyrinth formations",
+        "description": "Choose the heroes and the troop split you use in each zone.",
+        "close": "Close",
+        "save": "Save formations",
+        "heroesHint": "Pick one hero of each class for each formation. A hero can be in only one formation of this zone. A troop split totals 100%, or leave all three at 0 to skip it.",
+        "troopsHint": "Heroes are blocked in this zone. Set the troop split. It totals 100%, or leave all three at 0 to skip it.",
+        "formationTitle": "Formation {number} of {count}",
+        "heroLabel": "{type} hero",
+        "noHero": "No hero",
+        "percentLabel": "{type} percent",
+        "troopTypes": {
+            "infantry": "Infantry",
+            "lancer": "Lancer",
+            "marksman": "Marksman"
+        },
+        "total": "Total {total}%",
+        "totalWrong": "Total {total}%, needs {needed}%",
+        "toast": {
+            "title": "Formations saved",
+            "message": "Your Labyrinth formations are up to date.",
+            "undo": "Undo"
+        }
+    }
+}

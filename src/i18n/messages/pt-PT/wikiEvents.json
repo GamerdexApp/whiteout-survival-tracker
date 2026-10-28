@@ -121,7 +121,10 @@
         "zone": "Zona",
         "days": "Dias",
         "statSources": "Fontes de atributos",
-        "unlock": "Desbloqueio"
+        "unlock": "Desbloqueio",
+        "stages": "Stages",
+        "troops": "Troops",
+        "note": "Note"
     },
     "shop": {
         "title": "Loja",
@@ -141,5 +144,17 @@
     "tips": {
         "title": "Dicas"
     },
-    "recordLine": "Evento de {category} com fases, pontuação, recompensas e classificações."
+    "recordLine": "Evento de {category} com fases, pontuação, recompensas e classificações.",
+    "labyrinthGlowstone": {
+        "title": "Glowstone",
+        "perStage": "Per cleared stage",
+        "perStageValue": "{amount} Glowstone",
+        "paid": "When it is paid",
+        "paidValue": "Once a week for each zone, on the first day the zone opens.",
+        "fullClear": "Full clear a week",
+        "fullClearValue": "{amount} Glowstone from {stages} stages",
+        "justus": "Expert bonus",
+        "justusValue": "{expert}'s {skill} skill adds {perLevel}% for each level, up to {max}% at level {level}.",
+        "openTracker": "Open the Labyrinth tracker"
+    }
 }

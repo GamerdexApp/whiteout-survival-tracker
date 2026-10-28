@@ -29,7 +29,13 @@ export const EVENT_CATEGORIES: EventCategory[] = [
 
 const CORE_GAME_EVENT_IDS = new Set<string>(Object.values(gameEventIdOf));
 
+/** Events that have a page of their own, so the Events page does not offer them. */
+const OWN_PAGE_GAME_EVENT_IDS = new Set<string>(["the-labyrinth"]);
+
 export const allGameEvents = (): GameEvent[] => events().get();
+
+export const addableGameEvents = (): GameEvent[] =>
+  allGameEvents().filter((event) => !OWN_PAGE_GAME_EVENT_IDS.has(event.id));
 
 export const gameEventById = (id: string): GameEvent | undefined =>
   events().find(id);

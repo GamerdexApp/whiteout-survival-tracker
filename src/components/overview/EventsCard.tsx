@@ -7,8 +7,10 @@ import { lengthText, timeText } from "@/service/eventsFormat";
 import type { EventsZone } from "@/service/eventsSchedule";
 import { liveCoreEventsOf, liveRunsOf, nextRunsOf } from "@/service/overviewEvents";
 import type { UpcomingRun } from "@/service/overviewEvents";
+import { gameEventOf } from "@/data/game/coreEvents";
 import { CATEGORY_BORDER } from "@/comps/events/eventStyle";
 import { ButtonLink } from "@/comps/ui/Button";
+import { ItemIcon } from "@/comps/ui/ItemIcon";
 import { ProgressBar } from "@/comps/ui/ProgressBar";
 import { SectionLabel } from "@/comps/ui/SectionLabel";
 import { OverviewCard } from "./OverviewCard";
@@ -65,7 +67,10 @@ export function EventsCard({ chief, now, zone, className }: EventsCardProps) {
 							<li key={live.event} className="border-primary border-s-[3px] ps-3">
 								<Link href="/core-events" className="flex min-h-11 flex-col gap-1">
 									<span className="flex items-center justify-between gap-2">
-										<span className="font-semibold">{tCore(live.event)}</span>
+										<span className="flex items-center gap-2 font-semibold">
+											<ItemIcon src={gameEventOf(live.event).img} size={28} />
+											{tCore(live.event)}
+										</span>
 										<span className={LIVE_BADGE}>{t("liveBadge")}</span>
 									</span>
 									<span className="text-muted">
@@ -89,7 +94,10 @@ export function EventsCard({ chief, now, zone, className }: EventsCardProps) {
 							>
 								<Link href="/events" className="flex min-h-11 flex-col gap-1">
 									<span className="flex items-center justify-between gap-2">
-										<span className="font-semibold">{runName(run)}</span>
+										<span className="flex items-center gap-2 font-semibold">
+											<ItemIcon src={run.entry.event.img} size={28} />
+											{runName(run)}
+										</span>
 										<span className={LIVE_BADGE}>{t("liveBadge")}</span>
 									</span>
 									<span className="text-muted">
@@ -120,7 +128,8 @@ export function EventsCard({ chief, now, zone, className }: EventsCardProps) {
 									href="/events"
 									className="flex min-h-11 items-start justify-between gap-3"
 								>
-									<span className="flex min-w-0 flex-col">
+									<ItemIcon src={run.entry.event.img} size={32} />
+									<span className="flex min-w-0 flex-1 flex-col">
 										<span className="font-semibold">{runName(run)}</span>
 										<span className="text-muted">
 											{tEvents("upcoming.timeAndLength", {

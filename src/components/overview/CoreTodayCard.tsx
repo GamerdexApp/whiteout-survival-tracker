@@ -4,7 +4,9 @@ import type { Playthrough } from "@/types/app";
 import { formatNumber } from "@/lib/format";
 import { dayLabelOf } from "@/service/coreEvents";
 import { coreTodayOf } from "@/service/overviewEvents";
+import { gameEventOf } from "@/data/game/coreEvents";
 import { ButtonLink } from "@/comps/ui/Button";
+import { ItemIcon } from "@/comps/ui/ItemIcon";
 import { ProgressBar } from "@/comps/ui/ProgressBar";
 import { OverviewCard } from "./OverviewCard";
 
@@ -28,6 +30,7 @@ export function CoreTodayCard({
 
 	return (
 		<OverviewCard
+			icon={<ItemIcon src={gameEventOf(today.event).img} size={32} />}
 			title={t("title", { event: tCore(today.event) })}
 			href="/core-events"
 			linkLabel={t("open")}

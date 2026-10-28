@@ -5,6 +5,7 @@ import { formatNumber } from "@/lib/format";
 import type { EventResult } from "@/service/coreEvents";
 import { dayLabelOf, dayTotalOf, extraTierCountOf, milestonesOf } from "@/service/coreEvents";
 import { Card } from "@/comps/ui/Card";
+import { RewardLine } from "@/comps/ui/RewardLine";
 
 interface ThresholdsCardProps {
 	chief: Playthrough;
@@ -48,7 +49,11 @@ export function ThresholdsCard({ chief, event, dayId, result }: ThresholdsCardPr
 						)}
 						<div className="flex min-w-0 flex-1 flex-col">
 							<span className="font-medium">{milestone.name}</span>
-							<span className="text-muted">{milestone.rewards}</span>
+							<span className="text-muted flex flex-wrap gap-x-3 gap-y-1">
+								{milestone.rewards.map((reward) => (
+									<RewardLine key={reward.name} reward={reward} />
+								))}
+							</span>
 						</div>
 						<span
 							className={`shrink-0 text-end font-mono text-xs ${milestone.reached ? "text-kept" : "text-muted"}`}

@@ -11,8 +11,10 @@ import {
 	summaryOf,
 	upgradeGroupsOf,
 } from "@/service/historyEvents";
+import { gameEventOf } from "@/data/game/coreEvents";
 import { ButtonLink } from "@/comps/ui/Button";
 import { EmptyState } from "@/comps/ui/EmptyState";
+import { ItemIcon } from "@/comps/ui/ItemIcon";
 import { Note } from "@/comps/ui/Note";
 import { SavedChip } from "@/comps/ui/SavedChip";
 import { StatTile } from "@/comps/ui/StatTile";
@@ -63,9 +65,12 @@ export function HistoryEventView({ chief, event, entryId }: HistoryEventViewProp
 		<>
 			<Breadcrumb name={title} />
 			<header className="flex flex-wrap items-center justify-between gap-4">
-				<div className="flex flex-col">
-					<h1 className="text-2xl font-semibold">{title}</h1>
-					<span className="text-muted">{endedOf(entry)}</span>
+				<div className="flex items-center gap-3">
+					<ItemIcon src={gameEventOf(eventId).img} size={44} />
+					<div className="flex flex-col">
+						<h1 className="text-2xl font-semibold">{title}</h1>
+						<span className="text-muted">{endedOf(entry)}</span>
+					</div>
 				</div>
 				<span className="max-lg:hidden">
 					<SavedChip />

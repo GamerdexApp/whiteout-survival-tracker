@@ -27,6 +27,7 @@ import gameLabels from "./th/gameLabels.json";
 import heroes from "./th/heroes.json";
 import heroGear from "./th/heroGear.json";
 import history from "./th/history.json";
+import labyrinth from "./th/labyrinth.json";
 import landing from "./th/landing.json";
 import overview from "./th/overview.json";
 import pets from "./th/pets.json";
@@ -96,6 +97,7 @@ const th: PartialMessages = {
   heroGear,
   heroes,
   history,
+  labyrinth,
   landing,
   overview,
   pets,

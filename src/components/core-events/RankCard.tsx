@@ -2,7 +2,9 @@ import { useTranslations } from "next-intl";
 import type { CoreEventId } from "@/types/app";
 import { formatNumber } from "@/lib/format";
 import { rankTableOf } from "@/service/coreEvents";
+import { findItem } from "@/data/game/items";
 import { Card } from "@/comps/ui/Card";
+import { ItemIcon } from "@/comps/ui/ItemIcon";
 
 export function RankCard({ event, dayId }: { event: CoreEventId; dayId: string }) {
 	const t = useTranslations("coreEvents.ranks");
@@ -36,7 +38,10 @@ export function RankCard({ event, dayId }: { event: CoreEventId; dayId: string }
 												{t("unknown")}
 											</span>
 										) : (
-											t("gems", { amount: formatNumber(row.gems) })
+											<span className="inline-flex items-center gap-1.5">
+												<ItemIcon src={findItem("gems")?.img} size={16} />
+												{t("gems", { amount: formatNumber(row.gems) })}
+											</span>
 										)}
 										{row.notConfirmed && (
 											<span className="text-muted ms-2 font-mono text-xs font-normal">

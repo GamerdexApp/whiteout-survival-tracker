@@ -4,10 +4,11 @@ import { useTranslations } from "next-intl";
 import { useId } from "react";
 import type { KeyboardEvent, ReactNode } from "react";
 import { LuLock } from "react-icons/lu";
+import { ItemIcon } from "./ItemIcon";
 
 interface TabsProps<TabId extends string> {
 	label: string;
-	tabs: { id: TabId; label: string; count?: number; locked?: boolean }[];
+	tabs: { id: TabId; label: string; icon?: string; count?: number; locked?: boolean }[];
 	activeId: TabId;
 	onChange: (id: TabId) => void;
 	children: ReactNode;
@@ -61,6 +62,13 @@ export function Tabs<TabId extends string>({
 									: "text-muted hover:text-ink border-transparent"
 							}`}
 						>
+							{tab.icon && (
+								<ItemIcon
+									src={tab.icon}
+									size={20}
+									className="me-2 inline-block align-middle"
+								/>
+							)}
 							{tab.label}
 							{tab.count !== undefined && (
 								<span className="text-muted ms-2 font-mono text-xs">

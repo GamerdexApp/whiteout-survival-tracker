@@ -27,6 +27,7 @@ import gameLabels from "./vi/gameLabels.json";
 import heroes from "./vi/heroes.json";
 import heroGear from "./vi/heroGear.json";
 import history from "./vi/history.json";
+import labyrinth from "./vi/labyrinth.json";
 import landing from "./vi/landing.json";
 import overview from "./vi/overview.json";
 import pets from "./vi/pets.json";
@@ -96,6 +97,7 @@ const vi: PartialMessages = {
   heroGear,
   heroes,
   history,
+  labyrinth,
   landing,
   overview,
   pets,
