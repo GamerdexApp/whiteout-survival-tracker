@@ -5,6 +5,7 @@ import { formatNumber } from "@/lib/format";
 import { lastResultOf } from "@/service/overviewEvents";
 import { gameEventOf } from "@/data/game/coreEvents";
 import { DiffText } from "@/comps/history/DiffText";
+import { entryHref } from "@/comps/history/HistoryList";
 import { useHistoryText } from "@/comps/history/useHistoryText";
 import { ItemIcon } from "@/comps/ui/ItemIcon";
 import { OverviewCard } from "./OverviewCard";
@@ -25,7 +26,7 @@ export function LastResultCard({ chief, className }: { chief: Playthrough; class
 	if (!result) return null;
 
 	const { row } = result;
-	const href = `/history/${row.event}/${encodeURIComponent(row.entry.id)}`;
+	const href = entryHref(row);
 
 	return (
 		<OverviewCard

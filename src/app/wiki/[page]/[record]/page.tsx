@@ -3,9 +3,14 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { pageMetadata } from "@/lib/pageMetadata";
 import { wikiPageBySlug } from "@/data/wiki";
+import { wikiRecordParams } from "@/data/wikiRecords";
 import { WikiPageView } from "@/comps/wiki/WikiPageView";
 
 type PageProps = { params: Promise<{ page: string; record: string }> };
+
+export const generateStaticParams = wikiRecordParams;
+
+export const dynamicParams = false;
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
 	const { page, record } = await params;

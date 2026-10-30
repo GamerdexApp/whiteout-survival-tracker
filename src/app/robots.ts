@@ -6,6 +6,8 @@ const trackerPaths = routes
   .map((route) => route.href)
   .filter((href) => !href.startsWith("/wiki"));
 
+export const dynamic = "force-static";
+
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: {

@@ -5,6 +5,7 @@ import { ImageResponse } from "next/og";
 export const alt = "Whiteout Survival Tracker";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
+export const dynamic = "force-static";
 
 const SCREENSHOT_WIDTH = 1000;
 const SCREENSHOT_HEIGHT = Math.round((SCREENSHOT_WIDTH * 760) / 1200);

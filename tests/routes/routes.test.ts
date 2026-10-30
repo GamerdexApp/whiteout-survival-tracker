@@ -30,7 +30,7 @@ const trackerHrefs = [
 ];
 
 /** Pages that people reach from another page or from a redirect, not from the sidebar. */
-const REACHED_ANOTHER_WAY = ["/history/[event]/[entryId]", "/sync/callback"];
+const REACHED_ANOTHER_WAY = ["/history/entry", "/sync/callback"];
 
 describe("navigation", () => {
   it("links only to pages that exist", () => {

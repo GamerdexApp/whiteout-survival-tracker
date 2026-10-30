@@ -11,7 +11,7 @@ const DESKTOP_COLUMNS =
 	"lg:grid-cols-[minmax(0,1fr)_7rem_7rem_12rem_4rem_5rem_4rem] lg:items-center lg:gap-x-4";
 
 export const entryHref = (row: HistoryRow) =>
-	`/history/${row.event}/${encodeURIComponent(row.entry.id)}`;
+	`/history/entry?${new URLSearchParams({ event: row.event, entry: row.entry.id })}`;
 
 export function HistoryList({ rows }: { rows: HistoryRow[] }) {
 	const t = useTranslations("history.list");
