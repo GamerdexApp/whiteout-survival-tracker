@@ -58,6 +58,7 @@ export function PuzzleCard({
 					<ul className="flex flex-wrap gap-1.5">
 						{puzzle.pieces.map((piece) => {
 							const have = collectedIds.has(piece.id);
+							const img = piece.img || puzzle.img;
 							return (
 								<li key={piece.id}>
 									<button
@@ -71,7 +72,7 @@ export function PuzzleCard({
 										onClick={() => onPieceChange(piece.id, !have)}
 										className={`relative flex size-11 items-center justify-center rounded-md border-[1.5px] lg:size-10 ${have ? "border-primary bg-tint" : "border-line opacity-50 grayscale"} ${done ? "cursor-not-allowed" : ""}`}
 									>
-										<ItemIcon src={piece.img} size={36} />
+										<ItemIcon src={img} size={36} />
 										{have && (
 											<span className="bg-primary text-on-primary absolute -top-1 -right-1 flex size-4 items-center justify-center rounded-full">
 												<LuCheck size={11} aria-hidden="true" />
