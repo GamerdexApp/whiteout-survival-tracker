@@ -1,6 +1,9 @@
 import { translator } from "@/i18n/formatter";
 import { calculateHeroGear } from "whiteout-survival-data";
-import type { HeroGearCalculation } from "whiteout-survival-data";
+import type {
+  HeroGearCalculation,
+  HeroGearComboSource,
+} from "whiteout-survival-data";
 import type {
   HeroGearGoal,
   HeroGearPiece,
@@ -605,16 +608,78 @@ export const runGearPlan = (
 export const slotName = (slot: HeroGearSlot) =>
   gearSlots.find((item) => item.id === slot)?.name ?? slot;
 
+const ENHANCEMENT_XP_ID = "enhancement-xp";
+
+const isChest = (source: HeroGearComboSource) =>
+  source.itemId.endsWith("-chest");
+
+/** Lists gear before chests, which is the order the page spends them in. */
+const gearBeforeChests = (sources: readonly HeroGearComboSource[]) =>
+  [...sources].sort((a, b) => Number(isChest(a)) - Number(isChest(b)));
+
+const itemName = (itemId: string) => findItem(itemId)?.name ?? itemId;
+
+/** The items that can pay each resource of the plan, as the calculator lists them. */
+export const planComboSources = (plan: GearPlanResult) =>
+  new Map(
+    plan.rows.flatMap(({ calculation }) =>
+      calculation.combos.map(
+        (combo) => [combo.resourceId, combo.sources] as const,
+      ),
+    ),
+  );
+
+export const planResourceName = (
+  itemId: string,
+  sources?: readonly HeroGearComboSource[],
+) => {
+  if (itemId === ENHANCEMENT_XP_ID) {
+    return translator("resources")("view.totals.enhancementXp");
+  }
+  const ordered = sources ? gearBeforeChests(sources) : [];
+  return ordered.length > 1
+    ? ordered.map((source) => itemName(source.itemId)).join(" / ")
+    : itemName(itemId);
+};
+
 export const gearPlanChecks = (
   plan: GearPlanResult,
   chief: Playthrough,
-): StockCheck[] =>
-  [...plan.resources.entries()].map(([itemId, needed]) => ({
-    id: itemId,
-    name: findItem(itemId)?.name ?? itemId,
-    available: ownedCount(chief, itemId),
-    needed,
-  }));
+): StockCheck[] => {
+  const comboSources = planComboSources(plan);
+  return [...plan.resources.entries()].map(([itemId, needed]) => {
+    const sources = comboSources.get(itemId);
+    if (!sources) {
+      return {
+        id: itemId,
+        name: itemName(itemId),
+        available: ownedCount(chief, itemId),
+        needed,
+      };
+    }
+    const owned = gearBeforeChests(sources)
+      .map((source) => ({ source, count: ownedCount(chief, source.itemId) }))
+      .filter(({ count }) => count > 0);
+    return {
+      id: itemId,
+      name: planResourceName(itemId, sources),
+      available: owned.reduce(
+        (sum, { source, count }) => sum + count * source.value,
+        0,
+      ),
+      needed,
+      detail:
+        owned.length > 0
+          ? owned
+              .map(
+                ({ source, count }) =>
+                  `${itemName(source.itemId)} ${formatNumber(count)}`,
+              )
+              .join(" · ")
+          : undefined,
+    };
+  });
+};
 
 export type GearHeroFilter = "all" | "linked" | "unlinked";
 export type GearSetOrder = "created" | "name" | "power" | "hero";

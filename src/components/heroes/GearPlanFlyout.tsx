@@ -16,6 +16,8 @@ import {
 	isMythic,
 	lockText,
 	normalizedGoal,
+	planComboSources,
+	planResourceName,
 	qualityOf,
 	runGearPlan,
 	slotIds,
@@ -362,6 +364,7 @@ const resultColumnIds = ["piece", "forgingStatsUp", "powerGained"] as const;
 
 function PlanResult({ plan }: { plan: GearPlanResult }) {
 	const t = useTranslations("heroGear.plan");
+	const comboSources = planComboSources(plan);
 	const powerByLine = {
 		gained: plan.power,
 		before: plan.currentPower,
@@ -384,11 +387,12 @@ function PlanResult({ plan }: { plan: GearPlanResult }) {
 			<div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
 				{[...plan.resources.entries()].map(([itemId, amount]) => {
 					const item = findItem(itemId);
+					const name = planResourceName(itemId, comboSources.get(itemId));
 					return (
 						<div key={itemId} className="flex items-start gap-2">
 							<ItemIcon src={item?.img} size={24} />
 							<div className="flex flex-col">
-								<span className="text-muted text-xs">{item?.name ?? itemId}</span>
+								<span className="text-muted text-xs">{name}</span>
 								<span className="font-mono font-semibold">
 									{formatNumber(amount)}
 								</span>
