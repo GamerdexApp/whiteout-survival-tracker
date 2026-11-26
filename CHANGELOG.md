@@ -7,6 +7,35 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.4.0] - 2026-11-26
+
+### Added
+
+- Plan Overview: a page under Research, shown once a plan is saved, with the number of saved plans next to it in the sidebar. It adds every saved plan together: a row of plan chips that turns a plan off everywhere on the page, tiles for the power gained, the SvS points targeted, the items short and the longest queue, a Do you have enough? table, a Points and power table, and a Full plan list with the time and power of each plan and a link to open it
+- Plan Overview: Meat, Wood, Coal and Iron are summed across the plans and checked once against the backpack packs and the Custom Resource Chests. Steel, the Fire Crystal items, the speedups and the other items sit in their own groups, and each row has a bar that shows which plan uses how much. The other items group is collapsed until opened
+- Plan Overview: the speedups show each plan's own speedups first. What they cannot cover goes to a General speedups row, with the amount each plan takes from its share. A plan with no general share stays in its own row and shows its shortage there
+- Plan Overview: a Beasts chip plans the beast hunts from the overview in the same Plan beasts flyout as the SvS page, and saves to the same plan. The plan counts in the SvS points and the other event points, and has an Edit plan button in the Full plan list
+- Heroes: tag up to five owned heroes as Top 5 and up to fifteen as Drill Camp in the Group section of the hero flyout. A Drill Camp hero takes the lowest level of the Top 5 heroes, and its level follows when a Top 5 level changes. Its level stepper is locked while the Top 5 sets it. The cards show a Top 5 or Drill Camp badge, and the Filters flyout has a Group filter. A hero that is not owned loses its tag
+- Resources: the Core Resources tab has an Other section with Steel, Stamina cans, Hero XP and Gems, and the hero gear section lists the Common, Uncommon, Rare and Epic gear and gear chests, with the gear on one link and the chests on another. The Hero Gear Material tab shows a card with the Enhancement XP on hand, counted from the components and the gear
+- Buildings, Research, Experts and Pets plans: the plan shows the core event points it can earn. The Pets plan counts the Wild Marks as if all were used
+- Troops plan: the plan shows the Meat, Wood, Coal and Iron it needs against the stock, the points it can earn in the core events, and the estimated power gain. Promotions have their own capacity: the plan checks that you hold the troops of the tier to promote and stops at the number you have
+- Experts and Heroes plans: the result shows the estimated power gain, in the same layout as the other plans
+- Chief Gear plan: the plan counts the rare materials you can convert from the items you hold, for the levels you have unlocked. For example, Design Plans count towards the Amber when the conversion is open
+
+### Changed
+
+- Plan stock checks count the packs and the Custom Resource Chests, as well as the base amounts, for Meat, Wood, Coal and Iron, and list them in that order. Chests fill Iron first, then Coal, Wood and Meat
+- Hero Gear plan: the Enhancement XP counts the components and the gear together. The Mythic gear counts the gear first and the chests after it
+- The plan pages share one layout for the points, the resources, the power gain and the speed bonus, so the Buildings, Research, Troops, Experts, Pets, Heroes, Hero Gear and Chief Gear plans read the same way
+- Game data package 0.11.0 and updated dependencies
+- Sync waits 15 seconds without a save before it runs
+
+### Fixed
+
+- Sync: a field you edit while a sync runs keeps its value, and a digit typed during the sync is no longer lost
+- Queues: a job that was already running when you started it shows the progress that has passed, not an empty bar. The Experts learning bar counts the time of the session that has run
+- Pets plan: the note about the advancement scores of levels 10 to 30 and its source is removed
+
 ## [0.3.0] - 2026-10-27
 
 ### Added
