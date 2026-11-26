@@ -32,6 +32,7 @@ import {
 	researchTabs,
 	tabName,
 } from "@/data/game/research";
+import { EarnablePoints } from "@/comps/export/EarnablePoints";
 import { ExportToEventFlyout } from "@/comps/export/ExportToEventFlyout";
 import { GeneralSpeedupShare } from "@/comps/queues/GeneralSpeedupShare";
 import { PlanStockCheck } from "@/comps/queues/PlanStockCheck";
@@ -248,7 +249,14 @@ function PlanBody({
 				/>
 			)}
 			{result?.ok && (
-				<PlanResult calculation={result.calculation} speedPercent={speedPercent} />
+				<>
+					<PlanResult calculation={result.calculation} speedPercent={speedPercent} />
+					<EarnablePoints
+						chief={chief}
+						spec={exportSpecOf(rows, result.calculation)}
+						showDetails={false}
+					/>
+				</>
 			)}
 		</>
 	);

@@ -12,7 +12,16 @@ import { Card } from "@/comps/ui/Card";
  * The points that a plan scores in each core event, on the day of the event that scores the most.
  * It shows nothing when no event scores the plan.
  */
-export function EarnablePoints({ chief, spec }: { chief: Playthrough; spec: ExportSpec }) {
+export function EarnablePoints({
+	chief,
+	spec,
+	showDetails = true,
+}: {
+	chief: Playthrough;
+	spec: ExportSpec;
+	/** Shows the text under each line, such as how much of an item the chief holds. */
+	showDetails?: boolean;
+}) {
 	const t = useTranslations("eventExport");
 	const earnable = earnablePointsOf(chief, spec);
 
@@ -55,7 +64,7 @@ export function EarnablePoints({ chief, spec }: { chief: Playthrough; spec: Expo
 												{formatNumber(points)}
 											</span>
 										</span>
-										{line.detail && (
+										{showDetails && line.detail && (
 											<span className="text-muted text-xs">
 												{line.detail}
 											</span>
