@@ -62,8 +62,6 @@
             "trainedGroup": "per truppe e accelerazioni",
             "trainedTier": "Truppe di grado {tier} addestrate",
             "speedupMinutes": "Minuti di accelerazione addestramento usati",
-            "promoted": "Truppe promosse",
-            "promotedReason": "La promozione dà punti solo tramite i minuti di accelerazione.",
             "power": "Potenza da addestramento e promozione",
             "powerReason": "Il pacchetto non ha ancora una vera potenza per grado."
         },
@@ -90,6 +88,9 @@
             "troops": "Truppe",
             "max": "Max",
             "maxValue": "Max ({capacity})",
+            "promotionHint": "Un gruppo di promozione contiene fino a {capacity} truppe. Un gruppo di addestramento ne contiene {trainingCapacity}.",
+            "promotionHeld": "Hai {held} truppe T{tier} da promuovere.",
+            "promotionOver": "Questa promozione riguarda {total} truppe, ma ne hai {held} in T{tier}.",
             "batches": "Gruppi"
         },
         "speed": {
@@ -135,6 +136,7 @@
             "title": "Risultato",
             "resources": "Risorse",
             "changes": "Variazioni delle truppe per grado",
+            "powerTitle": "Aumento di potenza stimato",
             "heads": {
                 "tier": "Grado",
                 "infantry": "Fan.",
@@ -183,6 +185,9 @@
             "troops": "Truppe nel gruppo",
             "max": "Max",
             "capacityHint": "Un gruppo contiene fino a {capacity} truppe. È la capacità da ricerca più i livelli dei campi.",
+            "promotionCapacityHint": "Un gruppo di promozione contiene fino a {capacity} truppe. Un gruppo di addestramento ne contiene {trainingCapacity}.",
+            "promotionHeld": "Hai {held} truppe T{tier} da promuovere.",
+            "promotionHeldFewest": "Il campo che ne ha meno possiede {held} truppe T{tier} da promuovere.",
             "noTiers": "Questo campo non ha ancora un grado da addestrare. Alza il livello del campo nella pagina Edifici.",
             "cost": "Costo del gruppo",
             "time": "Tempo di addestramento",

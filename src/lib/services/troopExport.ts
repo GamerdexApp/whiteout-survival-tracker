@@ -4,7 +4,7 @@ import { formatNumber } from "@/lib/format";
 import { MIN_TIER } from "@/data/game/troops";
 import { actionMatcher } from "./eventExport";
 import type { ExportLine, ExportSpec, UnscoredLine } from "./eventExport";
-import { clampTier, tierNumbers } from "./troopsPlan";
+import { clampTier, promotionTiersOf, tierNumbers } from "./troopsPlan";
 import type { TroopsPlanDraft, TroopsPlanResult } from "./troopsPlan";
 
 const TRAIN_ROW = (tier: number) =>
@@ -29,18 +29,18 @@ const troopsOfRuns = (
   });
 };
 
+/** The troops that each tier gets from the runs. A promotion gives its troops to the target tier. */
 const trainedTroopsOf = (items: RunTroops[]) => {
   const byTier = new Map<number, number>();
   for (const { run, troops } of items) {
-    if (run.mode !== "training") continue;
-    const tier = clampTier(run.tier, MIN_TIER);
+    const tier =
+      run.mode === "training"
+        ? clampTier(run.tier, MIN_TIER)
+        : promotionTiersOf(run).toTier;
     byTier.set(tier, (byTier.get(tier) ?? 0) + troops);
   }
   return byTier;
 };
-
-const sum = (values: Iterable<number>) =>
-  [...values].reduce((total, value) => total + value, 0);
 
 export const hasExportLines = (spec: ExportSpec) =>
   spec.groups.some((group) => group.lines.length > 0);
@@ -56,11 +56,6 @@ export const exportSpecOf = (
   const t = translator("troops");
   const items = troopsOfRuns(draft, result);
   const trained = trainedTroopsOf(items);
-  const promoted = sum(
-    items.flatMap(({ run, troops }) =>
-      run.mode === "promotion" ? [troops] : [],
-    ),
-  );
   const detail = t("plan.export.computed");
 
   const trainLines: ExportLine[] = tierNumbers
@@ -85,17 +80,6 @@ export const exportSpecOf = (
         ]
       : [];
 
-  const unscoredPromotion: UnscoredLine[] =
-    promoted > 0
-      ? [
-          {
-            id: "promoted",
-            label: t("plan.export.promoted"),
-            units: promoted,
-            reason: t("plan.export.promotedReason"),
-          },
-        ]
-      : [];
   const unscoredPower: UnscoredLine[] = [
     {
       id: "power",
@@ -112,7 +96,7 @@ export const exportSpecOf = (
         id: "trained",
         label: t("plan.export.trainedGroup"),
         lines: [...trainLines, ...speedupLines],
-        unscored: [...unscoredPromotion, ...unscoredPower],
+        unscored: unscoredPower,
       },
     ],
   };

@@ -112,6 +112,17 @@ export const eventSummaryOf = (
     ]),
   ) as Record<CoreEventId, number>;
 
+/**
+ * Gives each line its own group, so each line takes the day of the event where it scores the most.
+ * A plan whose items score on different days then adds the points of every day.
+ */
+export const withEachLineOnItsOwnDay = (spec: ExportSpec): ExportSpec => ({
+  ...spec,
+  groups: spec.groups.flatMap((group) =>
+    group.lines.map((line) => ({ ...group, id: line.id, lines: [line] })),
+  ),
+});
+
 export interface EarnableDay {
   groupId: string;
   groupLabel?: string;

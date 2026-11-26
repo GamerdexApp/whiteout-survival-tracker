@@ -9,6 +9,7 @@ import {
 	MAX_BATCHES,
 	promotionFromTiers,
 	promotionToTiers,
+	runCapacityOf,
 	runKindsOf,
 	trainingTiers,
 	withPromotionFrom,
@@ -79,7 +80,7 @@ export function CampCard({ type, camp, capacity, result, onChange }: CampCardPro
 					key={kind}
 					kind={kind}
 					camp={camp}
-					capacity={capacity}
+					capacity={runCapacityOf(type, camp, kind, capacity)}
 					seconds={result.runs[index].seconds}
 					onChange={onChange}
 				/>

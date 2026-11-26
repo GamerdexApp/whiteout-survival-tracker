@@ -16,8 +16,8 @@ import {
 	trainableTiers,
 } from "@/service/troopQueue";
 import type { StartTrainingInput, TrainingBatch, TrainingBoosts } from "@/service/troopQueue";
-import { campLabelOf, campOf, TROOP_IDS } from "@/service/troops";
-import { runTroopsPlan } from "@/service/troopsPlan";
+import { campLabelOf, campOf, countOf, TROOP_IDS } from "@/service/troops";
+import { promotionCapacity, runTroopsPlan } from "@/service/troopsPlan";
 import { findItem } from "@/data/game/items";
 import { findTroop } from "@/data/game/troops";
 import { HoursMinutesFields } from "@/comps/queues/HoursMinutesFields";
@@ -96,7 +96,7 @@ export function StartTrainingFlyout({
 	const allCamps = camp === ALL_CAMPS;
 	const targets: TroopId[] = allCamps ? freeCamps : [camp];
 	const tiers = commonTiers(chief, targets);
-	const capacity = batchCapacityOf(chief, boosts);
+	const trainingCapacity = batchCapacityOf(chief, boosts);
 	const boostsResult = runTroopsPlan(chief, draftWithBoosts(boosts, []));
 
 	if (open !== wasOpen) {
@@ -113,7 +113,7 @@ export function StartTrainingFlyout({
 			setTier(top);
 			setFromTier(Math.max(1, top - 1));
 			setToTier(top);
-			setCountText(String(capacity));
+			setCountText(String(trainingCapacity));
 			setMode("now");
 			setTakeCost(true);
 			setBoosts(noBoosts);
@@ -135,6 +135,15 @@ export function StartTrainingFlyout({
 		if (toTier <= next) setToTier(next + 1);
 	};
 
+	const promoting = action === "promotion" && targets.length > 0;
+	const batchCapacity = promoting
+		? promotionCapacity(trainingCapacity, targets[0], fromTier, toTier)
+		: trainingCapacity;
+	const heldAtFromTier = promoting
+		? Math.min(...targets.map((id) => countOf(chief, id, fromTier)))
+		: null;
+	const capacity =
+		heldAtFromTier === null ? trainingCapacity : Math.min(batchCapacity, heldAtFromTier);
 	const count = Math.min(capacity, Number(countText || 0));
 	const promotionTiers = tiers.slice(0, -1);
 	const toChoices = tiers.filter((value) => value > fromTier);
@@ -286,7 +295,20 @@ export function StartTrainingFlyout({
 				)}
 				<Field
 					label={t("troops")}
-					hint={t("capacityHint", { capacity: formatNumber(capacity) })}
+					hint={
+						heldAtFromTier === null
+							? t("capacityHint", { capacity: formatNumber(capacity) })
+							: [
+									t("promotionCapacityHint", {
+										capacity: formatNumber(batchCapacity),
+										trainingCapacity: formatNumber(trainingCapacity),
+									}),
+									t(allCamps ? "promotionHeldFewest" : "promotionHeld", {
+										held: formatNumber(heldAtFromTier),
+										tier: fromTier,
+									}),
+								].join(" ")
+					}
 				>
 					<div className="flex gap-2">
 						<Input

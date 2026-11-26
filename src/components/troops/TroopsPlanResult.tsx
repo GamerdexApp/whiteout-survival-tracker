@@ -22,11 +22,18 @@ export function TroopsPlanResultCard({
 	result: TroopsPlanResult;
 }) {
 	const t = useTranslations("troops.plan.result");
+	const tCalc = useTranslations("calcTroop");
 	const { calculation } = result;
 	const changedTiers = calculation.tiers.filter(
 		(row) => row.total !== 0 || TROOP_IDS.some((id) => row[id] !== 0)
 	);
 	const nameOf = (id: string) => allTroops.find((troop) => troop.id === id)?.name ?? id;
+	const fireCrystalLevels = TROOP_IDS.map((id) =>
+		tCalc("tiers.fireCrystalLevel", {
+			name: nameOf(id),
+			level: formatNumber(calculation.fireCrystalLevels[id]),
+		})
+	).join(", ");
 
 	return (
 		<Card className="flex flex-col gap-4 p-4">
@@ -103,6 +110,25 @@ export function TroopsPlanResultCard({
 					</table>
 				</ScrollRegion>
 			</div>
+			{changedTiers.length > 0 && (
+				<div className="flex flex-col gap-1">
+					<SectionLabel className="text-muted">{t("powerTitle")}</SectionLabel>
+					{TROOP_IDS.filter((id) => calculation.totalPower[id] !== 0).map((id) => (
+						<div key={id} className="flex justify-between gap-3">
+							<span>{nameOf(id)}</span>
+							<span className="font-mono">{signed(calculation.totalPower[id])}</span>
+						</div>
+					))}
+					<TotalLine
+						label={t("total")}
+						value={signed(calculation.totalPower.total)}
+						strong
+					/>
+					<p className="text-muted text-xs">
+						{tCalc("tiers.fireCrystalNote", { levels: fireCrystalLevels })}
+					</p>
+				</div>
+			)}
 			<div className="flex flex-col gap-1">
 				<SectionLabel className="text-muted">{t("time")}</SectionLabel>
 				{TROOP_IDS.map((id) => (

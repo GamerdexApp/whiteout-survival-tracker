@@ -60,7 +60,7 @@ const stockDetailOf = (stock: ResourceStock) => {
  * The stock of each item a plan takes. The base resources count the packs and, for what is still
  * short, the Custom Resource chests. Every other item counts as held.
  */
-const checksOf = (
+export const itemChecks = (
   needs: { itemId: string; amount: number }[],
   chief: Playthrough,
 ): StockCheck[] => {
@@ -105,7 +105,7 @@ export const resourceChecks = (
 ): StockCheck[] => {
   const t = translator("resources");
   return [
-    ...checksOf(
+    ...itemChecks(
       RESOURCE_ITEM_IDS.map((id) => ({
         itemId: id,
         amount:
@@ -134,7 +134,7 @@ export const researchChecks = (
 ): StockCheck[] => {
   const t = translator("resources");
   return [
-    ...checksOf(
+    ...itemChecks(
       calculation.resources.map((resource) => ({
         itemId: resource.itemId,
         amount: resource.amount,

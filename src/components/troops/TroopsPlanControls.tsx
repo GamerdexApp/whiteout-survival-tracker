@@ -9,6 +9,9 @@ import { formatDecimal, formatDuration, formatNumber } from "@/lib/format";
 import { TROOP_IDS } from "@/service/troops";
 import {
 	newRun,
+	promotableOf,
+	runCapacityOf,
+	runLimitOf,
 	tierNumbers,
 	withPromotionFrom,
 	withPromotionTo,
@@ -20,6 +23,7 @@ import { Badge } from "@/comps/ui/Badge";
 import { Button } from "@/comps/ui/Button";
 import { Card } from "@/comps/ui/Card";
 import { Field } from "@/comps/ui/Field";
+import { Note } from "@/comps/ui/Note";
 import { SectionLabel } from "@/comps/ui/SectionLabel";
 import { Select } from "@/comps/ui/Select";
 import { Switch } from "@/comps/ui/Switch";
@@ -115,19 +119,24 @@ export function RunCard({
 	chief,
 	run,
 	seconds,
-	capacity,
+	trainingCapacity,
 	onChange,
 	onRemove,
 }: {
 	chief: Playthrough;
 	run: TroopRunState;
 	seconds: number;
-	capacity: number;
+	trainingCapacity: number;
 	onChange: (run: TroopRunState) => void;
 	onRemove: () => void;
 }) {
 	const t = useTranslations("troops.plan.run");
 	const name = troopNameOf(run.camp);
+	const batchCapacity = runCapacityOf(run, trainingCapacity);
+	const limit = runLimitOf(chief, run, trainingCapacity);
+	const held = promotableOf(chief, run);
+	const fromTier = run.fromTier ?? 1;
+	const promoted = (run.count === "max" ? limit : Math.min(run.count, limit)) * run.batches;
 
 	return (
 		<Card className="flex flex-col gap-3 p-4">
@@ -191,6 +200,20 @@ export function RunCard({
 			<div className="grid gap-3 sm:grid-cols-2">
 				<Field
 					label={t("troops")}
+					hint={
+						held === null
+							? undefined
+							: [
+									t("promotionHint", {
+										capacity: formatNumber(batchCapacity),
+										trainingCapacity: formatNumber(trainingCapacity),
+									}),
+									t("promotionHeld", {
+										held: formatNumber(held),
+										tier: fromTier,
+									}),
+								].join(" ")
+					}
 					labelAction={
 						<button
 							type="button"
@@ -203,8 +226,8 @@ export function RunCard({
 				>
 					<CountInput
 						value={run.count === "max" ? null : run.count}
-						max={MAX_RUN_TROOPS}
-						emptyText={t("maxValue", { capacity: formatNumber(capacity) })}
+						max={held === null ? MAX_RUN_TROOPS : limit}
+						emptyText={t("maxValue", { capacity: formatNumber(limit) })}
 						onCommit={(count) => onChange({ ...run, count })}
 					/>
 				</Field>
@@ -217,6 +240,15 @@ export function RunCard({
 					/>
 				</Field>
 			</div>
+			{held !== null && promoted > held && (
+				<Note tone="warning">
+					{t("promotionOver", {
+						total: formatNumber(promoted),
+						held: formatNumber(held),
+						tier: fromTier,
+					})}
+				</Note>
+			)}
 		</Card>
 	);
 }

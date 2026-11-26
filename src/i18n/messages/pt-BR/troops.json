@@ -62,8 +62,6 @@
             "trainedGroup": "para tropas e acelerações",
             "trainedTier": "Tropas de Tier {tier} treinadas",
             "speedupMinutes": "Minutos de aceleração de treino usados",
-            "promoted": "Tropas promovidas",
-            "promotedReason": "A promoção só pontua por minutos de aceleração.",
             "power": "Poder de treinar e promover",
             "powerReason": "O pacote de dados ainda não tem o poder real de cada tier."
         },
@@ -90,6 +88,9 @@
             "troops": "Tropas",
             "max": "Máx.",
             "maxValue": "Máx. ({capacity})",
+            "promotionHint": "Um lote de promoção comporta até {capacity} tropas. Um lote de treino comporta {trainingCapacity}.",
+            "promotionHeld": "Você tem {held} tropas T{tier} para promover.",
+            "promotionOver": "Isso promove {total} tropas, mas você tem {held} em T{tier}.",
             "batches": "Lotes"
         },
         "speed": {
@@ -135,6 +136,7 @@
             "title": "Resultado",
             "resources": "Recursos",
             "changes": "Mudanças nas tropas por tier",
+            "powerTitle": "Aumento de poder estimado",
             "heads": {
                 "tier": "Tier",
                 "infantry": "Inf.",
@@ -183,6 +185,9 @@
             "troops": "Tropas no lote",
             "max": "Máx.",
             "capacityHint": "Um lote comporta até {capacity} tropas. Isso é a capacidade da pesquisa mais os níveis dos seus acampamentos.",
+            "promotionCapacityHint": "Um lote de promoção comporta até {capacity} tropas. Um lote de treino comporta {trainingCapacity}.",
+            "promotionHeld": "Você tem {held} tropas T{tier} para promover.",
+            "promotionHeldFewest": "O acampamento com menos tem {held} tropas T{tier} para promover.",
             "noTiers": "Este acampamento ainda não tem tier para treinar. Suba o nível do acampamento na página Construções.",
             "cost": "Custo do lote",
             "time": "Tempo de treino",

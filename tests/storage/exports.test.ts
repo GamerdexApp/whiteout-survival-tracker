@@ -1,8 +1,14 @@
 import { describe, expect, it } from "vitest";
-import type { BuildingCalculation } from "whiteout-survival-data";
+import type {
+  BuildingCalculation,
+  ResearchCalculation,
+} from "whiteout-survival-data";
 import type { Playthrough } from "@/types/app";
 import { exportSpecOf as buildingSpecOf } from "@/service/buildingExport";
-import { earnablePointsOf } from "@/service/eventExport";
+import {
+  earnablePointsOf,
+  withEachLineOnItsOwnDay,
+} from "@/service/eventExport";
 import {
   expertPlanScores,
   exportSpecOf as expertSpecOf,
@@ -12,6 +18,7 @@ import { runHeroPlan } from "@/service/heroes";
 import { exportSpecOf as heroSpecOf } from "@/service/heroExport";
 import { exportSpecOf as petSpecOf } from "@/service/petExport";
 import type { PetPlanResult } from "@/service/pets";
+import { exportSpecOf as researchSpecOf } from "@/service/researchExport";
 import {
   hasExportLines,
   exportSpecOf as troopSpecOf,
@@ -263,5 +270,131 @@ describe("buildings plan event points", () => {
 
     expect(svs.days[0].dayName).toBe("City Construction");
     expect(svs.total).toBe(40 * 2000 + 3000 * 30);
+  });
+});
+
+describe("research plan event points", () => {
+  it("scores the Fire Crystal Shards and the speedup minutes of the plan", () => {
+    const calculation = {
+      resources: [{ itemId: "fire-crystal-shard", amount: 50 }],
+      speedupMinutesNeeded: 3_000,
+      power: 1_000,
+    } as unknown as ResearchCalculation;
+    const svs = earnablePointsOf(
+      emptyChief(),
+      researchSpecOf([], calculation),
+    ).find((item) => item.event === "svs")!;
+
+    expect(svs.days[0].dayName).toBe("City Construction");
+    expect(svs.total).toBe(50 * 1000 + 3_000 * 30);
+  });
+});
+
+describe("troops plan event points", () => {
+  const chief = withInventory(veteranChief(), { "speedup-troop-1h": 10 });
+  const draft: TroopsPlanDraft = {
+    runs: [{ ...newRun(chief, "infantry", "training"), tier: 3, batches: 2 }],
+    position: "none",
+    rank: "regular",
+    capacityBoost: false,
+    mobilize: false,
+    advancedTraining: false,
+  };
+  const result = runTroopsPlan(chief, draft);
+  const spec = troopSpecOf(draft, result);
+  const unitsOf = (id: string) =>
+    spec.groups[0].lines.find((line) => line.id === id)!.units;
+
+  it("keeps the trained troops and the speedups on the one day of a group", () => {
+    const svs = earnablePointsOf(chief, spec).find(
+      (item) => item.event === "svs",
+    )!;
+
+    expect(svs.days).toHaveLength(1);
+  });
+
+  it("adds the points of each day when every line takes its own day", () => {
+    const svs = earnablePointsOf(chief, withEachLineOnItsOwnDay(spec)).find(
+      (item) => item.event === "svs",
+    )!;
+    const dayOf = (id: string) =>
+      svs.days.find((day) => day.lines.some((item) => item.line.id === id))!;
+
+    expect(svs.days).toHaveLength(2);
+    expect(dayOf("speedup-minutes").total).toBe(
+      unitsOf("speedup-minutes") * 30,
+    );
+    expect(dayOf("train-3").total).toBe(unitsOf("train-3") * 5);
+    expect(svs.total).toBe(
+      unitsOf("speedup-minutes") * 30 + unitsOf("train-3") * 5,
+    );
+  });
+});
+
+describe("troops plan promotions in the event points", () => {
+  const chief = {
+    ...withInventory(veteranChief(), { "speedup-troop-1h": 10 }),
+    troops: { infantry: { counts: { "10": 700_000 } } },
+  };
+  const draftOf = (runs: TroopsPlanDraft["runs"]): TroopsPlanDraft => ({
+    runs,
+    position: "none",
+    rank: "regular",
+    capacityBoost: false,
+    mobilize: false,
+    advancedTraining: false,
+  });
+  const promotion = {
+    camp: "infantry" as const,
+    mode: "promotion" as const,
+    fromTier: 10,
+    toTier: 11,
+    count: "max" as const,
+    batches: 62,
+  };
+  const unitsOf = (draft: TroopsPlanDraft, id: string) => {
+    const result = runTroopsPlan(chief, draft);
+    return {
+      units: troopSpecOf(draft, result).groups[0].lines.find(
+        (line) => line.id === id,
+      )?.units,
+      tiers: result.calculation.tiers,
+    };
+  };
+
+  it("counts the promoted troops at the target tier", () => {
+    const { units, tiers } = unitsOf(draftOf([promotion]), "train-11");
+
+    expect(units).toBe(tiers[10].infantry);
+    expect(units).toBeGreaterThan(0);
+  });
+
+  it("adds trained and promoted troops of the same tier", () => {
+    const training = {
+      camp: "infantry" as const,
+      mode: "training" as const,
+      tier: 11,
+      count: "max" as const,
+      batches: 10,
+    };
+    const trainedOnly = unitsOf(draftOf([training]), "train-11").units!;
+    const both = unitsOf(draftOf([training, promotion]), "train-11");
+
+    expect(both.units).toBe(both.tiers[10].infantry);
+    expect(both.units!).toBeGreaterThan(trainedOnly);
+  });
+
+  it("counts a promotion over several tiers at the last tier", () => {
+    const wide = { ...promotion, fromTier: 9, toTier: 11, batches: 1 };
+    const result = runTroopsPlan(
+      { ...chief, troops: { infantry: { counts: { "9": 700_000 } } } },
+      draftOf([wide]),
+    );
+    const ids = troopSpecOf(draftOf([wide]), result).groups[0].lines.map(
+      (line) => line.id,
+    );
+
+    expect(ids).toContain("train-11");
+    expect(ids).not.toContain("train-10");
   });
 });

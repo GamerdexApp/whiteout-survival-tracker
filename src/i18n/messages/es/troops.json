@@ -62,8 +62,6 @@
             "trainedGroup": "para tropas y aceleradores",
             "trainedTier": "Tropas de Tier {tier} entrenadas",
             "speedupMinutes": "Minutos de aceleradores de entrenamiento usados",
-            "promoted": "Tropas ascendidas",
-            "promotedReason": "El ascenso solo puntúa mediante minutos de aceleradores.",
             "power": "Poder por entrenar y ascender",
             "powerReason": "El paquete aún no tiene poder real por tier."
         },
@@ -90,6 +88,9 @@
             "troops": "Tropas",
             "max": "Máx.",
             "maxValue": "Máx. ({capacity})",
+            "promotionHint": "Un lote de ascenso admite hasta {capacity} tropas. Un lote de entrenamiento admite {trainingCapacity}.",
+            "promotionHeld": "Tienes {held} tropas T{tier} para ascender.",
+            "promotionOver": "Esto asciende {total} tropas, pero tienes {held} en T{tier}.",
             "batches": "Lotes"
         },
         "speed": {
@@ -135,6 +136,7 @@
             "title": "Resultado",
             "resources": "Recursos",
             "changes": "Cambios de tropas por tier",
+            "powerTitle": "Aumento de poder estimado",
             "heads": {
                 "tier": "Tier",
                 "infantry": "Inf.",
@@ -183,6 +185,9 @@
             "troops": "Tropas del lote",
             "max": "Máx.",
             "capacityHint": "Un lote admite hasta {capacity} tropas. Es la capacidad de investigación más los niveles de tu campamento.",
+            "promotionCapacityHint": "Un lote de ascenso admite hasta {capacity} tropas. Un lote de entrenamiento admite {trainingCapacity}.",
+            "promotionHeld": "Tienes {held} tropas T{tier} para ascender.",
+            "promotionHeldFewest": "El campamento con menos tiene {held} tropas T{tier} para ascender.",
             "noTiers": "Este campamento aún no tiene ningún tier que entrenar. Sube el nivel del campamento en la página de Edificios.",
             "cost": "Coste del lote",
             "time": "Tiempo de entrenamiento",

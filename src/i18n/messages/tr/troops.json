@@ -62,8 +62,6 @@
             "trainedGroup": "birlikler ve hızlandırmalar için",
             "trainedTier": "Eğitilen kademe {tier} birlikleri",
             "speedupMinutes": "Kullanılan eğitim hızlandırma dakikası",
-            "promoted": "Terfi eden birlikler",
-            "promotedReason": "Terfi yalnızca hızlandırma dakikası üzerinden puan verir.",
             "power": "Eğitim ve terfiden gelen güç",
             "powerReason": "Pakette henüz kademe başına gerçek güç yok."
         },
@@ -90,6 +88,9 @@
             "troops": "Birlikler",
             "max": "Maks.",
             "maxValue": "Maks. ({capacity})",
+            "promotionHint": "Bir terfi grubu en fazla {capacity} birlik alır. Bir eğitim grubu {trainingCapacity} alır.",
+            "promotionHeld": "Terfi ettirecek {held} T{tier} birliğin var.",
+            "promotionOver": "Bu, {total} birliği terfi ettirir ama T{tier} seviyesinde {held} birliğin var.",
             "batches": "Gruplar"
         },
         "speed": {
@@ -135,6 +136,7 @@
             "title": "Sonuç",
             "resources": "Kaynaklar",
             "changes": "Kademeye göre birlik değişimleri",
+            "powerTitle": "Tahmini güç artışı",
             "heads": {
                 "tier": "Kademe",
                 "infantry": "Piy.",
@@ -183,6 +185,9 @@
             "troops": "Gruptaki birlikler",
             "max": "Maks.",
             "capacityHint": "Bir grup en fazla {capacity} birlik alır. Bu, araştırma kapasitesi ve kamp seviyelerinin toplamıdır.",
+            "promotionCapacityHint": "Bir terfi grubu en fazla {capacity} birlik alır. Bir eğitim grubu {trainingCapacity} alır.",
+            "promotionHeld": "Terfi ettirecek {held} T{tier} birliğin var.",
+            "promotionHeldFewest": "En az birliği olan kampta terfi ettirilecek {held} T{tier} birliği var.",
             "noTiers": "Bu kampta henüz eğitilecek kademe yok. Kamp seviyesini Binalar sayfasında yükselt.",
             "cost": "Grubun maliyeti",
             "time": "Eğitim süresi",

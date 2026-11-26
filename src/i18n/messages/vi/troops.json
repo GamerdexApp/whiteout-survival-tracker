@@ -62,8 +62,6 @@
             "trainedGroup": "cho quân và tăng tốc",
             "trainedTier": "Quân bậc {tier} đã huấn luyện",
             "speedupMinutes": "Phút tăng tốc huấn luyện đã dùng",
-            "promoted": "Quân đã thăng cấp",
-            "promotedReason": "Thăng cấp chỉ được tính điểm qua phút tăng tốc.",
             "power": "Sức mạnh từ huấn luyện và thăng cấp",
             "powerReason": "Gói dữ liệu chưa có sức mạnh thật cho từng bậc."
         },
@@ -90,6 +88,9 @@
             "troops": "Quân",
             "max": "Tối đa",
             "maxValue": "Tối đa ({capacity})",
+            "promotionHint": "Một lô thăng cấp chứa tối đa {capacity} quân. Một lô huấn luyện chứa {trainingCapacity}.",
+            "promotionHeld": "Bạn có {held} quân T{tier} để thăng cấp.",
+            "promotionOver": "Việc này thăng cấp {total} quân, nhưng bạn chỉ có {held} quân T{tier}.",
             "batches": "Số lô"
         },
         "speed": {
@@ -135,6 +136,7 @@
             "title": "Kết quả",
             "resources": "Tài nguyên",
             "changes": "Thay đổi quân theo bậc",
+            "powerTitle": "Mức tăng sức mạnh ước tính",
             "heads": {
                 "tier": "Bậc",
                 "infantry": "Bộ",
@@ -183,6 +185,9 @@
             "troops": "Quân trong lô",
             "max": "Tối đa",
             "capacityHint": "Một lô chứa tối đa {capacity} quân. Đây là sức chứa từ nghiên cứu cộng với cấp trại của bạn.",
+            "promotionCapacityHint": "Một lô thăng cấp chứa tối đa {capacity} quân. Một lô huấn luyện chứa {trainingCapacity}.",
+            "promotionHeld": "Bạn có {held} quân T{tier} để thăng cấp.",
+            "promotionHeldFewest": "Trại có ít nhất có {held} quân T{tier} để thăng cấp.",
             "noTiers": "Trại này chưa có bậc nào để huấn luyện. Hãy nâng cấp trại ở trang Công trình.",
             "cost": "Chi phí của lô",
             "time": "Thời gian huấn luyện",

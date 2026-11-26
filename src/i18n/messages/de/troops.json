@@ -62,8 +62,6 @@
             "trainedGroup": "für Truppen und Beschleuniger",
             "trainedTier": "Ausgebildete Truppen Tier {tier}",
             "speedupMinutes": "Genutzte Beschleuniger-Minuten fürs Training",
-            "promoted": "Beförderte Truppen",
-            "promotedReason": "Beförderung punktet nur über Beschleuniger-Minuten.",
             "power": "Macht aus Training und Beförderung",
             "powerReason": "Das Paket hat noch keine echte Macht pro Tier."
         },
@@ -90,6 +88,9 @@
             "troops": "Truppen",
             "max": "Max",
             "maxValue": "Max ({capacity})",
+            "promotionHint": "Eine Beförderungs-Charge fasst bis zu {capacity} Truppen. Eine Trainings-Charge fasst {trainingCapacity}.",
+            "promotionHeld": "Du hast {held} T{tier}-Truppen zum Befördern.",
+            "promotionOver": "Das befördert {total} Truppen, aber du hast nur {held} auf T{tier}.",
             "batches": "Chargen"
         },
         "speed": {
@@ -135,6 +136,7 @@
             "title": "Ergebnis",
             "resources": "Ressourcen",
             "changes": "Truppenänderungen nach Tier",
+            "powerTitle": "Geschätzter Machtzuwachs",
             "heads": {
                 "tier": "Tier",
                 "infantry": "Inf.",
@@ -183,6 +185,9 @@
             "troops": "Truppen in der Charge",
             "max": "Max",
             "capacityHint": "Eine Charge fasst bis zu {capacity} Truppen. Das ist die Forschungskapazität plus deine Camp-Stufen.",
+            "promotionCapacityHint": "Eine Beförderungs-Charge fasst bis zu {capacity} Truppen. Eine Trainings-Charge fasst {trainingCapacity}.",
+            "promotionHeld": "Du hast {held} T{tier}-Truppen zum Befördern.",
+            "promotionHeldFewest": "Das Lager mit den wenigsten hat {held} T{tier}-Truppen zum Befördern.",
             "noTiers": "Dieses Camp hat noch kein Tier zum Ausbilden. Erhöhe die Camp-Stufe auf der Gebäude-Seite.",
             "cost": "Kosten der Charge",
             "time": "Trainingszeit",

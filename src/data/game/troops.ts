@@ -32,6 +32,11 @@ export const findTroop = (id: string) => troops().find(id);
 export const MIN_TIER = TROOP_CALCULATOR.minTier;
 export const MAX_TIER = TROOP_CALCULATOR.maxTier;
 
+/** The seconds to train one troop of the tier, with no speed bonus. 0 when the tier is unknown. */
+export const trainingSecondsOf = (troopId: string, tier: number) =>
+  findTroop(troopId)?.tiers.find((item) => item.tier === tier)
+    ?.trainingTimeSeconds ?? 0;
+
 export const campBuildingId = (troopId: string) => `${troopId}-camp`;
 
 export const WAR_ACADEMY_ID = "war-academy";

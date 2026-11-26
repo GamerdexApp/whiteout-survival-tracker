@@ -62,8 +62,6 @@
             "trainedGroup": "部隊とスピードアップ用",
             "trainedTier": "訓練したティア{tier}の部隊",
             "speedupMinutes": "使用した訓練スピードアップの分数",
-            "promoted": "昇格した部隊",
-            "promotedReason": "昇格は、スピードアップの分数でのみポイントになります。",
             "power": "訓練と昇格で獲得した戦力",
             "powerReason": "パッケージには、ティアごとの正確な戦力がまだありません。"
         },
@@ -90,6 +88,9 @@
             "troops": "部隊",
             "max": "最大",
             "maxValue": "最大（{capacity}）",
+            "promotionHint": "1バッチの昇格には最大{capacity}体まで入ります。訓練は{trainingCapacity}体です。",
+            "promotionHeld": "昇格できるT{tier}の部隊は{held}体です。",
+            "promotionOver": "{total}体を昇格しますが、T{tier}の所持は{held}体です。",
             "batches": "バッチ"
         },
         "speed": {
@@ -135,6 +136,7 @@
             "title": "結果",
             "resources": "資源",
             "changes": "ティアごとの部隊の増減",
+            "powerTitle": "推定戦力上昇",
             "heads": {
                 "tier": "ティア",
                 "infantry": "歩兵",
@@ -183,6 +185,9 @@
             "troops": "バッチの部隊数",
             "max": "最大",
             "capacityHint": "1バッチには最大{capacity}体まで入ります。これは研究による容量とキャンプレベルの合計です。",
+            "promotionCapacityHint": "1バッチの昇格には最大{capacity}体まで入ります。訓練は{trainingCapacity}体です。",
+            "promotionHeld": "昇格できるT{tier}の部隊は{held}体です。",
+            "promotionHeldFewest": "最も少ないキャンプでT{tier}の部隊は{held}体です。",
             "noTiers": "このキャンプには、まだ訓練できるティアがありません。建物ページでキャンプのレベルを上げてください。",
             "cost": "バッチのコスト",
             "time": "訓練時間",

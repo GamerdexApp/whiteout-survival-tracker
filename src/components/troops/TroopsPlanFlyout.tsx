@@ -4,6 +4,7 @@ import { useTranslations } from "next-intl";
 import { useMemo, useState } from "react";
 import type { Playthrough } from "@/types/app";
 import { formatDateTime, formatNumber } from "@/lib/format";
+import { withEachLineOnItsOwnDay } from "@/service/eventExport";
 import { exportSpecOf, hasExportLines } from "@/service/troopExport";
 import {
 	draftOfSavedPlan,
@@ -12,6 +13,7 @@ import {
 	troopsStockChecks,
 } from "@/service/troopsPlan";
 import type { TroopsPlanDraft, TroopsPlanResult } from "@/service/troopsPlan";
+import { EarnablePoints } from "@/comps/export/EarnablePoints";
 import { ExportToEventFlyout } from "@/comps/export/ExportToEventFlyout";
 import { GeneralSpeedupShare } from "@/comps/queues/GeneralSpeedupShare";
 import { PlanStockCheck } from "@/comps/queues/PlanStockCheck";
@@ -108,7 +110,7 @@ function PlanBody({
 					chief={chief}
 					run={run}
 					seconds={result.runSeconds[index]}
-					capacity={result.calculation.capacity}
+					trainingCapacity={result.calculation.capacity}
 					onChange={(next) =>
 						onDraftChange({
 							...draft,
@@ -138,6 +140,11 @@ function PlanBody({
 						})}
 					/>
 					<TroopsPlanResultCard draft={draft} result={result} />
+					<EarnablePoints
+						chief={chief}
+						spec={withEachLineOnItsOwnDay(exportSpecOf(draft, result))}
+						showDetails={false}
+					/>
 				</>
 			)}
 		</>

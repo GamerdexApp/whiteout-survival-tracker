@@ -11,6 +11,7 @@ import {
   campBuildingId,
   MAX_TIER,
   MIN_TIER,
+  trainingSecondsOf,
   TROOP_CALCULATOR,
 } from "@/data/game/troops";
 import type {
@@ -20,9 +21,17 @@ import type {
   TroopRun,
 } from "@/data/game/troops";
 import { chiefBuffs } from "./bonuses";
+import { BASE_RESOURCE_IDS } from "./coreResources";
 import { generalMinutesApplied, minutesOfSpeedup } from "./inventory";
+import { itemChecks } from "./planStock";
 import type { StockCheck } from "./planStock";
-import { campLabelOf, campOf, highestTierOf, TROOP_IDS } from "./troops";
+import {
+  campLabelOf,
+  campOf,
+  countOf,
+  highestTierOf,
+  TROOP_IDS,
+} from "./troops";
 
 export type TroopPosition = "none" | "ministerOfEducation" | "vicePresident";
 
@@ -188,21 +197,73 @@ const campLevelOf = (chief: Playthrough, camp: TroopId) =>
 export const clampTier = (tier: number | undefined, fallback: number) =>
   Math.min(MAX_TIER, Math.max(MIN_TIER, Math.floor(tier ?? fallback)));
 
-const calculatorRun = (run: TroopRunState, capacity: number): TroopRun => {
+export const promotionTiersOf = (run: TroopRunState) => {
   const fromTier = Math.min(clampTier(run.fromTier, MIN_TIER), MAX_TIER - 1);
+  return {
+    fromTier,
+    toTier: Math.max(clampTier(run.toTier, MAX_TIER), fromTier + 1),
+  };
+};
+
+/**
+ * The troops that one promotion batch can hold. A promotion takes the time between its two tiers,
+ * so the batch grows by the training time of the target tier over that step time.
+ */
+export const promotionCapacity = (
+  capacity: number,
+  camp: TroopId,
+  fromTier: number,
+  toTier: number,
+) => {
+  const toSeconds = trainingSecondsOf(camp, toTier);
+  const stepSeconds = toSeconds - trainingSecondsOf(camp, fromTier);
+  return stepSeconds <= 0
+    ? capacity
+    : Math.ceil((capacity * toSeconds) / stepSeconds);
+};
+
+/** The troops that one batch of the run can hold. */
+export const runCapacityOf = (run: TroopRunState, capacity: number) => {
+  if (run.mode === "training") return capacity;
+  const { fromTier, toTier } = promotionTiersOf(run);
+  return promotionCapacity(capacity, run.camp, fromTier, toTier);
+};
+
+/** The troops the chief holds at the tier that a promotion run takes from. Null for training. */
+export const promotableOf = (chief: Playthrough, run: TroopRunState) =>
+  run.mode === "promotion"
+    ? countOf(chief, run.camp, promotionTiersOf(run).fromTier)
+    : null;
+
+/**
+ * The most troops that one batch of the run takes: the batch capacity, and for a promotion no more
+ * than the chief holds at the lower tier.
+ */
+export const runLimitOf = (
+  chief: Playthrough,
+  run: TroopRunState,
+  capacity: number,
+) => {
+  const batchCapacity = runCapacityOf(run, capacity);
+  const held = promotableOf(chief, run);
+  return held === null ? batchCapacity : Math.min(batchCapacity, held);
+};
+
+const calculatorRun = (
+  chief: Playthrough,
+  run: TroopRunState,
+  capacity: number,
+): TroopRun => {
+  const runCapacity = runLimitOf(chief, run, capacity);
   return {
     action:
       run.mode === "training"
         ? { mode: "training", tier: clampTier(run.tier, MIN_TIER) }
-        : {
-            mode: "promotion",
-            fromTier,
-            toTier: Math.max(clampTier(run.toTier, MAX_TIER), fromTier + 1),
-          },
+        : { mode: "promotion", ...promotionTiersOf(run) },
     count:
       run.count === "max"
-        ? "max"
-        : Math.min(Math.max(0, Math.floor(run.count)), capacity),
+        ? runCapacity
+        : Math.min(Math.max(0, Math.floor(run.count)), runCapacity),
     batches: Math.max(1, Math.floor(run.batches)),
   };
 };
@@ -236,8 +297,9 @@ export const troopSpeedupStock = (chief: Playthrough) => {
 };
 
 /**
- * Runs the package calculator for the draft. A count above the capacity is cut to the capacity,
- * because the calculator rejects it.
+ * Runs the package calculator for the draft. A count above the limit of its run is cut to it. A
+ * promotion batch can hold more than the capacity of the calculator, which rejects a larger count,
+ * so the calculator runs with a capacity wide enough for the largest batch.
  */
 export const runTroopsPlan = (
   chief: Playthrough,
@@ -248,18 +310,26 @@ export const runTroopsPlan = (
   const { capacity } = calculateTroops(
     calculatorInput(chief, draft, bonuses, [[], [], []]),
   );
-  const calculation = calculateTroops(
-    calculatorInput(
-      chief,
-      draft,
-      bonuses,
-      TROOP_IDS.map((camp) =>
-        draft.runs
-          .filter((run) => run.camp === camp)
-          .map((run) => calculatorRun(run, capacity)),
-      ),
-    ),
+  const runs = TROOP_IDS.map((camp) =>
+    draft.runs
+      .filter((run) => run.camp === camp)
+      .map((run) => calculatorRun(chief, run, capacity)),
   );
+  const widest = Math.max(
+    capacity,
+    ...runs.flat().map((run) => Number(run.count)),
+  );
+  const boost = draft.capacityBoost
+    ? TROOP_CALCULATOR.capacityBoostMultiplier
+    : 1;
+  const widened = {
+    ...bonuses,
+    capacity: bonuses.capacity + Math.ceil((widest - capacity) / boost),
+  };
+  const calculation = {
+    ...calculateTroops(calculatorInput(chief, draft, widened, runs)),
+    capacity,
+  };
   const seen = new Map<TroopId, number>();
   const runSeconds = draft.runs.map((run) => {
     const index = seen.get(run.camp) ?? 0;
@@ -284,6 +354,16 @@ export const troopsStockChecks = (
 ): StockCheck[] => {
   const t = translator("troops");
   return [
+    ...itemChecks(
+      BASE_RESOURCE_IDS.map((itemId) => ({
+        itemId,
+        amount:
+          result.calculation.resources.find(
+            (resource) => resource.itemId === itemId,
+          )?.amount ?? 0,
+      })),
+      chief,
+    ),
     {
       id: "troop-time",
       name: t("plan.stock.name"),

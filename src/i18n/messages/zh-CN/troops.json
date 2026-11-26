@@ -62,8 +62,6 @@
             "trainedGroup": "用于部队和加速",
             "trainedTier": "已训练{tier}阶部队",
             "speedupMinutes": "已用训练加速分钟数",
-            "promoted": "已晋升的部队",
-            "promotedReason": "晋升只通过加速分钟数计分。",
             "power": "训练和晋升获得的战力",
             "powerReason": "数据包中还没有各阶的真实战力。"
         },
@@ -90,6 +88,9 @@
             "troops": "部队",
             "max": "最大",
             "maxValue": "最大（{capacity}）",
+            "promotionHint": "一批晋升最多{capacity}个部队，一批训练为{trainingCapacity}个。",
+            "promotionHeld": "你有{held}个T{tier}部队可晋升。",
+            "promotionOver": "此次晋升{total}个部队，但你的T{tier}只有{held}个。",
             "batches": "批次"
         },
         "speed": {
@@ -135,6 +136,7 @@
             "title": "结果",
             "resources": "资源",
             "changes": "各阶部队变化",
+            "powerTitle": "预计战力提升",
             "heads": {
                 "tier": "阶",
                 "infantry": "盾",
@@ -183,6 +185,9 @@
             "troops": "本批部队数量",
             "max": "最大",
             "capacityHint": "一批最多{capacity}个部队。这是研究容量加上兵营等级。",
+            "promotionCapacityHint": "一批晋升最多{capacity}个部队，一批训练为{trainingCapacity}个。",
+            "promotionHeld": "你有{held}个T{tier}部队可晋升。",
+            "promotionHeldFewest": "最少的兵营有{held}个T{tier}部队可晋升。",
             "noTiers": "此兵营还没有可训练的阶。请在建筑页提升兵营等级。",
             "cost": "本批费用",
             "time": "训练时间",

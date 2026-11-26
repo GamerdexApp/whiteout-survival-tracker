@@ -62,8 +62,6 @@
             "trainedGroup": "pour les troupes et les accélérateurs",
             "trainedTier": "Troupes de palier {tier} entraînées",
             "speedupMinutes": "Minutes d'accélération d'entraînement utilisées",
-            "promoted": "Troupes promues",
-            "promotedReason": "La promotion ne rapporte des points que par les minutes d'accélération.",
             "power": "Puissance de l'entraînement et de la promotion",
             "powerReason": "Les données n'ont pas encore de vraie puissance par palier."
         },
@@ -90,6 +88,9 @@
             "troops": "Troupes",
             "max": "Max",
             "maxValue": "Max ({capacity})",
+            "promotionHint": "Un lot de promotion contient jusqu'à {capacity} troupes. Un lot d'entraînement en contient {trainingCapacity}.",
+            "promotionHeld": "Vous avez {held} troupes T{tier} à promouvoir.",
+            "promotionOver": "Cela promeut {total} troupes, mais vous en avez {held} en T{tier}.",
             "batches": "Lots"
         },
         "speed": {
@@ -135,6 +136,7 @@
             "title": "Résultat",
             "resources": "Ressources",
             "changes": "Changements de troupes par palier",
+            "powerTitle": "Hausse de puissance estimée",
             "heads": {
                 "tier": "Palier",
                 "infantry": "Inf.",
@@ -183,6 +185,9 @@
             "troops": "Troupes dans le lot",
             "max": "Max",
             "capacityHint": "Un lot contient jusqu'à {capacity} troupes. C'est la capacité de recherche plus vos niveaux de camp.",
+            "promotionCapacityHint": "Un lot de promotion contient jusqu'à {capacity} troupes. Un lot d'entraînement en contient {trainingCapacity}.",
+            "promotionHeld": "Vous avez {held} troupes T{tier} à promouvoir.",
+            "promotionHeldFewest": "Le camp qui en a le moins a {held} troupes T{tier} à promouvoir.",
             "noTiers": "Ce camp n'a pas encore de palier à entraîner. Montez le niveau du camp dans la page Bâtiments.",
             "cost": "Coût du lot",
             "time": "Durée d'entraînement",

@@ -62,8 +62,6 @@
             "trainedGroup": "부대와 가속용",
             "trainedTier": "{tier}단계 훈련 병력",
             "speedupMinutes": "사용한 훈련 가속 분",
-            "promoted": "승급한 병력",
-            "promotedReason": "승급은 가속 분으로만 점수를 받아요.",
             "power": "훈련과 승급으로 얻는 전투력",
             "powerReason": "패키지에 단계별 실제 전투력이 아직 없어요."
         },
@@ -90,6 +88,9 @@
             "troops": "병력",
             "max": "최대",
             "maxValue": "최대 ({capacity})",
+            "promotionHint": "승급 배치 하나에 병력 {capacity}명까지 들어가요. 훈련 배치는 {trainingCapacity}명이에요.",
+            "promotionHeld": "승급할 수 있는 T{tier} 병력이 {held}명 있어요.",
+            "promotionOver": "{total}명을 승급하지만 T{tier} 병력은 {held}명뿐이에요.",
             "batches": "배치"
         },
         "speed": {
@@ -135,6 +136,7 @@
             "title": "결과",
             "resources": "자원",
             "changes": "단계별 병력 변화",
+            "powerTitle": "예상 전투력 증가",
             "heads": {
                 "tier": "단계",
                 "infantry": "보병",
@@ -183,6 +185,9 @@
             "troops": "배치의 병력",
             "max": "최대",
             "capacityHint": "배치 하나에 병력 {capacity}명까지 들어가요. 연구 한도에 캠프 레벨을 더한 값이에요.",
+            "promotionCapacityHint": "승급 배치 하나에 병력 {capacity}명까지 들어가요. 훈련 배치는 {trainingCapacity}명이에요.",
+            "promotionHeld": "승급할 수 있는 T{tier} 병력이 {held}명 있어요.",
+            "promotionHeldFewest": "가장 적은 캠프는 승급할 T{tier} 병력이 {held}명이에요.",
             "noTiers": "이 캠프는 아직 훈련할 단계가 없어요. 건물 페이지에서 캠프 레벨을 올리세요.",
             "cost": "배치 비용",
             "time": "훈련 시간",

@@ -62,8 +62,6 @@
             "trainedGroup": "untuk tentera dan pecutan",
             "trainedTier": "Tentera Peringkat {tier} dilatih",
             "speedupMinutes": "Minit pecutan latihan digunakan",
-            "promoted": "Tentera dinaikkan pangkat",
-            "promotedReason": "Kenaikan pangkat hanya dimarkahkan melalui minit pecutan.",
             "power": "Kuasa daripada latihan dan kenaikan pangkat",
             "powerReason": "Pakej belum mempunyai kuasa sebenar bagi setiap peringkat."
         },
@@ -90,6 +88,9 @@
             "troops": "Tentera",
             "max": "Maks",
             "maxValue": "Maks ({capacity})",
+            "promotionHint": "Satu kumpulan kenaikan pangkat memuatkan sehingga {capacity} tentera. Satu kumpulan latihan memuatkan {trainingCapacity}.",
+            "promotionHeld": "Anda ada {held} tentera T{tier} untuk dinaikkan pangkat.",
+            "promotionOver": "Ini menaikkan pangkat {total} tentera, tetapi anda hanya ada {held} pada T{tier}.",
             "batches": "Kumpulan"
         },
         "speed": {
@@ -135,6 +136,7 @@
             "title": "Hasil",
             "resources": "Sumber",
             "changes": "Perubahan tentera mengikut peringkat",
+            "powerTitle": "Anggaran peningkatan kuasa",
             "heads": {
                 "tier": "Peringkat",
                 "infantry": "Inf.",
@@ -183,6 +185,9 @@
             "troops": "Tentera dalam kumpulan",
             "max": "Maks",
             "capacityHint": "Satu kumpulan memuatkan sehingga {capacity} tentera. Ini ialah kapasiti penyelidikan tambah tahap camp anda.",
+            "promotionCapacityHint": "Satu kumpulan kenaikan pangkat memuatkan sehingga {capacity} tentera. Satu kumpulan latihan memuatkan {trainingCapacity}.",
+            "promotionHeld": "Anda ada {held} tentera T{tier} untuk dinaikkan pangkat.",
+            "promotionHeldFewest": "Kem yang paling sedikit ada {held} tentera T{tier} untuk dinaikkan pangkat.",
             "noTiers": "Camp ini belum mempunyai peringkat untuk dilatih. Naikkan tahap camp pada halaman Bangunan.",
             "cost": "Kos kumpulan",
             "time": "Masa latihan",

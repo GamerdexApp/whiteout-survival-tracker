@@ -62,8 +62,6 @@
             "trainedGroup": "untuk pasukan dan percepatan",
             "trainedTier": "Pasukan Tier {tier} dilatih",
             "speedupMinutes": "Menit percepatan latihan terpakai",
-            "promoted": "Pasukan dipromosikan",
-            "promotedReason": "Promosi hanya diskor lewat menit percepatan.",
             "power": "Kekuatan dari melatih dan mempromosikan",
             "powerReason": "Paket data belum punya kekuatan asli per tier."
         },
@@ -90,6 +88,9 @@
             "troops": "Pasukan",
             "max": "Maks",
             "maxValue": "Maks ({capacity})",
+            "promotionHint": "Satu batch promosi memuat sampai {capacity} pasukan. Satu batch latihan memuat {trainingCapacity}.",
+            "promotionHeld": "Kamu punya {held} pasukan T{tier} untuk dipromosikan.",
+            "promotionOver": "Ini mempromosikan {total} pasukan, tetapi kamu hanya punya {held} di T{tier}.",
             "batches": "Batch"
         },
         "speed": {
@@ -135,6 +136,7 @@
             "title": "Hasil",
             "resources": "Sumber daya",
             "changes": "Perubahan pasukan per tier",
+            "powerTitle": "Perkiraan kenaikan kekuatan",
             "heads": {
                 "tier": "Tier",
                 "infantry": "Inf.",
@@ -183,6 +185,9 @@
             "troops": "Pasukan dalam batch",
             "max": "Maks",
             "capacityHint": "Satu batch memuat sampai {capacity} pasukan. Ini kapasitas riset ditambah level camp-mu.",
+            "promotionCapacityHint": "Satu batch promosi memuat sampai {capacity} pasukan. Satu batch latihan memuat {trainingCapacity}.",
+            "promotionHeld": "Kamu punya {held} pasukan T{tier} untuk dipromosikan.",
+            "promotionHeldFewest": "Kamp dengan jumlah paling sedikit punya {held} pasukan T{tier} untuk dipromosikan.",
             "noTiers": "Camp ini belum punya tier untuk dilatih. Naikkan level camp di halaman Bangunan.",
             "cost": "Biaya batch",
             "time": "Waktu latihan",

@@ -62,8 +62,6 @@
             "trainedGroup": "用於部隊和加速",
             "trainedTier": "已訓練第 {tier} 階部隊",
             "speedupMinutes": "已使用的訓練加速分鐘數",
-            "promoted": "已晉升的部隊",
-            "promotedReason": "晉升只會透過加速分鐘數計分。",
             "power": "訓練與晉升獲得的戰力",
             "powerReason": "資料包中還沒有各階級的實際戰力。"
         },
@@ -90,6 +88,9 @@
             "troops": "部隊",
             "max": "最大",
             "maxValue": "最大（{capacity}）",
+            "promotionHint": "一批晉升最多容納 {capacity} 名士兵，一批訓練為 {trainingCapacity} 名。",
+            "promotionHeld": "你有 {held} 名 T{tier} 士兵可晉升。",
+            "promotionOver": "這次晉升 {total} 名士兵，但你的 T{tier} 只有 {held} 名。",
             "batches": "批次"
         },
         "speed": {
@@ -135,6 +136,7 @@
             "title": "結果",
             "resources": "資源",
             "changes": "各階級部隊變化",
+            "powerTitle": "預計戰力提升",
             "heads": {
                 "tier": "階級",
                 "infantry": "步兵",
@@ -183,6 +185,9 @@
             "troops": "這批的部隊數量",
             "max": "最大",
             "capacityHint": "一批最多容納 {capacity} 名士兵。這是研究容量加上你的營地等級。",
+            "promotionCapacityHint": "一批晉升最多容納 {capacity} 名士兵，一批訓練為 {trainingCapacity} 名。",
+            "promotionHeld": "你有 {held} 名 T{tier} 士兵可晉升。",
+            "promotionHeldFewest": "最少的營地有 {held} 名 T{tier} 士兵可晉升。",
             "noTiers": "這個營地還沒有可訓練的階級。請到建築頁面提升營地等級。",
             "cost": "這批的花費",
             "time": "訓練時間",

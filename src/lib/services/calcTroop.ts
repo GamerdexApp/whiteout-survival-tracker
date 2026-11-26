@@ -14,6 +14,7 @@ import type {
   TroopRun,
   TroopType,
 } from "@/data/game/calcTroop";
+import { promotionCapacity } from "./troopsPlan";
 
 export type CampMode = "none" | "training" | "promotion" | "both";
 export type RunKind = "training" | "promotion";
@@ -130,11 +131,37 @@ export const runKindsOf = (mode: CampMode): RunKind[] => {
 export const countWithin = (count: RunCount, capacity: number): RunCount =>
   count === "max" ? "max" : Math.min(count, capacity);
 
-const runOf = (camp: CampInput, kind: RunKind, capacity: number): TroopRun =>
+/** The troops that one batch of the run can hold. A promotion batch holds more than a training batch. */
+export const runCapacityOf = (
+  type: TroopType,
+  camp: CampInput,
+  kind: RunKind,
+  capacity: number,
+) =>
   kind === "training"
+    ? capacity
+    : promotionCapacity(
+        capacity,
+        type,
+        camp.promotion.fromTier,
+        camp.promotion.toTier,
+      );
+
+const runOf = (
+  type: TroopType,
+  camp: CampInput,
+  kind: RunKind,
+  capacity: number,
+): TroopRun => {
+  const runCapacity = runCapacityOf(type, camp, kind, capacity);
+  const count = countWithin(
+    kind === "training" ? camp.training.count : camp.promotion.count,
+    runCapacity,
+  );
+  return kind === "training"
     ? {
         action: { mode: "training", tier: camp.training.tier },
-        count: countWithin(camp.training.count, capacity),
+        count: count === "max" ? runCapacity : count,
         batches: camp.training.batches,
       }
     : {
@@ -143,17 +170,18 @@ const runOf = (camp: CampInput, kind: RunKind, capacity: number): TroopRun =>
           fromTier: camp.promotion.fromTier,
           toTier: camp.promotion.toTier,
         },
-        count: countWithin(camp.promotion.count, capacity),
+        count: count === "max" ? runCapacity : count,
         batches: camp.promotion.batches,
       };
+};
 
 const calculatorInput = (
   state: TroopCalculatorState,
-  runsOf: (camp: CampInput) => TroopRun[],
+  runsOf: (camp: CampInput, type: TroopType) => TroopRun[],
 ): TroopCalculatorInput => ({
   camps: perType((type): TroopCampConfig => ({
     level: state.camps[type].level,
-    runs: runsOf(state.camps[type]),
+    runs: runsOf(state.camps[type], type),
   })),
   researchCapacity: state.researchCapacity,
   capacityBoost: state.capacityBoost,
@@ -168,17 +196,33 @@ const calculatorInput = (
 
 /**
  * Runs the package calculator twice: once without runs to learn the shared capacity, then with
- * every count cut to that capacity.
+ * every count cut to the capacity of its batch. A promotion batch can hold more than the capacity
+ * of the calculator, which rejects a larger count, so the second run widens the research capacity.
  */
 export const runTroopCalculator = (
   state: TroopCalculatorState,
 ): TroopCalculation => {
   const { capacity } = calculateTroops(calculatorInput(state, () => []));
-  return calculateTroops(
-    calculatorInput(state, (camp) =>
-      runKindsOf(camp.mode).map((kind) => runOf(camp, kind, capacity)),
+  const runsOf = (camp: CampInput, type: TroopType) =>
+    runKindsOf(camp.mode).map((kind) => runOf(type, camp, kind, capacity));
+  const widest = Math.max(
+    capacity,
+    ...TROOP_TYPES.flatMap((type) =>
+      runsOf(state.camps[type], type).map((run) => Number(run.count)),
     ),
   );
+  const boost = state.capacityBoost
+    ? TROOP_CALCULATOR.capacityBoostMultiplier
+    : 1;
+  const widened = {
+    ...state,
+    researchCapacity:
+      state.researchCapacity + Math.ceil((widest - capacity) / boost),
+  };
+  return {
+    ...calculateTroops(calculatorInput(widened, runsOf)),
+    capacity,
+  };
 };
 
 export const campLevelOptions = perType(campLevelsOf);

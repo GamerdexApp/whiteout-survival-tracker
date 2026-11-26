@@ -62,8 +62,6 @@
             "trainedGroup": "for troops and speedups",
             "trainedTier": "Tier {tier} troops trained",
             "speedupMinutes": "Training speedup minutes used",
-            "promoted": "Troops promoted",
-            "promotedReason": "Promotion scores only through speedup minutes.",
             "power": "Power from training and promoting",
             "powerReason": "The package has no real power per tier yet."
         },
@@ -90,6 +88,9 @@
             "troops": "Troops",
             "max": "Max",
             "maxValue": "Max ({capacity})",
+            "promotionHint": "A promotion batch holds up to {capacity} troops. A training batch holds {trainingCapacity}.",
+            "promotionHeld": "You hold {held} T{tier} troops to promote.",
+            "promotionOver": "This promotes {total} troops, but you hold {held} at T{tier}.",
             "batches": "Batches"
         },
         "speed": {
@@ -135,6 +136,7 @@
             "title": "Result",
             "resources": "Resources",
             "changes": "Troop changes by tier",
+            "powerTitle": "Estimated power increase",
             "heads": {
                 "tier": "Tier",
                 "infantry": "Inf.",
@@ -183,6 +185,9 @@
             "troops": "Troops in the batch",
             "max": "Max",
             "capacityHint": "A batch holds up to {capacity} troops. This is the research capacity plus your camp levels.",
+            "promotionCapacityHint": "A promotion batch holds up to {capacity} troops. A training batch holds {trainingCapacity}.",
+            "promotionHeld": "You hold {held} T{tier} troops to promote.",
+            "promotionHeldFewest": "The camp with the fewest holds {held} T{tier} troops to promote.",
             "noTiers": "This camp has no tier to train yet. Raise the camp level on the Buildings page.",
             "cost": "Cost of the batch",
             "time": "Training time",

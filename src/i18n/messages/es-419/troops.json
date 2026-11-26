@@ -62,8 +62,6 @@
             "trainedGroup": "para tropas y aceleradores",
             "trainedTier": "Tropas de rango {tier} entrenadas",
             "speedupMinutes": "Minutos de aceleración de entrenamiento usados",
-            "promoted": "Tropas ascendidas",
-            "promotedReason": "El ascenso puntúa solo con minutos de aceleración.",
             "power": "Poder por entrenar y ascender",
             "powerReason": "El paquete de datos aún no tiene poder real por rango."
         },
@@ -90,6 +88,9 @@
             "troops": "Tropas",
             "max": "Máx.",
             "maxValue": "Máx. ({capacity})",
+            "promotionHint": "Una tanda de ascenso admite hasta {capacity} tropas. Una tanda de entrenamiento admite {trainingCapacity}.",
+            "promotionHeld": "Tienes {held} tropas T{tier} para ascender.",
+            "promotionOver": "Esto asciende {total} tropas, pero tienes {held} en T{tier}.",
             "batches": "Tandas"
         },
         "speed": {
@@ -135,6 +136,7 @@
             "title": "Resultado",
             "resources": "Recursos",
             "changes": "Cambios de tropas por rango",
+            "powerTitle": "Aumento de poder estimado",
             "heads": {
                 "tier": "Rango",
                 "infantry": "Inf.",
@@ -183,6 +185,9 @@
             "troops": "Tropas en la tanda",
             "max": "Máx.",
             "capacityHint": "Una tanda admite hasta {capacity} tropas. Es la capacidad de investigación más los niveles de tus campamentos.",
+            "promotionCapacityHint": "Una tanda de ascenso admite hasta {capacity} tropas. Una tanda de entrenamiento admite {trainingCapacity}.",
+            "promotionHeld": "Tienes {held} tropas T{tier} para ascender.",
+            "promotionHeldFewest": "El campamento con menos tiene {held} tropas T{tier} para ascender.",
             "noTiers": "Este campamento aún no tiene rango para entrenar. Sube el nivel del campamento en la página de Edificios.",
             "cost": "Costo de la tanda",
             "time": "Tiempo de entrenamiento",
