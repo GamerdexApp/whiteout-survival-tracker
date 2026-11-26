@@ -202,8 +202,7 @@
                 "hallOfChief": "Hall of Chief"
             },
             "notScored": "Nicht gewertet",
-            "eventNote": "Event-Punkte sind der Aufstiegs-Score mal die Punkte der Wertungszeile jedes Events.",
-            "scoreSourceNote": "Aufstiegs-Scores für Stufe 40 bis 100 passen zu den Event-Notizen. Stufe 10 bis 30 stammen aus einer Quelle (WoS Tools).",
+            "eventNote": "Event-Punkte sind der Aufstiegs-Score plus alle Common und Advanced Wild Marks, die du besitzt, als würden alle genutzt, mal die Punkte der Wertungszeile jedes Events. Jedes Event zählt den Tag mit den meisten Punkten.",
             "chestOf": "von {held} vorhanden"
         },
         "chest": {

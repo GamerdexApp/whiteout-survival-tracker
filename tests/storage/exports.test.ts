@@ -1,5 +1,7 @@
 import { describe, expect, it } from "vitest";
+import type { BuildingCalculation } from "whiteout-survival-data";
 import type { Playthrough } from "@/types/app";
+import { exportSpecOf as buildingSpecOf } from "@/service/buildingExport";
 import { earnablePointsOf } from "@/service/eventExport";
 import {
   expertPlanScores,
@@ -8,6 +10,8 @@ import {
 import { runExpertsPlan } from "@/service/experts";
 import { runHeroPlan } from "@/service/heroes";
 import { exportSpecOf as heroSpecOf } from "@/service/heroExport";
+import { exportSpecOf as petSpecOf } from "@/service/petExport";
+import type { PetPlanResult } from "@/service/pets";
 import {
   hasExportLines,
   exportSpecOf as troopSpecOf,
@@ -213,5 +217,51 @@ describe("earnable event points", () => {
 
   it("lists no event when the plan has nothing to spend", () => {
     expect(earnablePointsOf(emptyChief(), spec(0, 0, 0))).toEqual([]);
+  });
+});
+
+describe("pet plan event points", () => {
+  it("count the Wild Marks held, as if all were used, with the advancement score", () => {
+    const chief = withInventory(veteranChief(), {
+      "common-wild-mark": 4,
+      "advanced-wild-mark": 2,
+    });
+    const spec = petSpecOf(
+      { total: { advancementScore: 100 } } as unknown as PetPlanResult,
+      chief,
+    );
+    const svs = earnablePointsOf(chief, spec).find(
+      (item) => item.event === "svs",
+    )!;
+
+    expect(svs.total).toBe(100 * 50 + 4 * 1150 + 2 * 15000);
+    expect(svs.days[0].lines.map((item) => item.line.id)).toEqual([
+      "advancement",
+      "commonMark",
+      "advancedMark",
+    ]);
+  });
+});
+
+describe("buildings plan event points", () => {
+  const calculation = {
+    resources: [{ itemId: "fire-crystal", amount: 100 }],
+    speedupMinutesNeeded: 5000,
+    power: 1000,
+    steps: [],
+  } as unknown as BuildingCalculation;
+
+  it("scores the crystals and the construction speedups that the chief holds", () => {
+    const chief = withInventory(veteranChief(), {
+      "fire-crystal": 40,
+      "speedup-construction-1h": 50,
+    });
+    const svs = earnablePointsOf(
+      chief,
+      buildingSpecOf(chief, calculation),
+    ).find((item) => item.event === "svs")!;
+
+    expect(svs.days[0].dayName).toBe("City Construction");
+    expect(svs.total).toBe(40 * 2000 + 3000 * 30);
   });
 });

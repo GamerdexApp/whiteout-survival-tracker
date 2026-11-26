@@ -202,8 +202,7 @@
                 "hallOfChief": "Hall of Chief"
             },
             "notScored": "ポイント対象外",
-            "eventNote": "イベントポイントは、昇格スコアに各イベントのポイント行の値を掛けたものです。",
-            "scoreSourceNote": "レベル40から100の昇格スコアは、イベントのメモと一致します。レベル10から30は、ひとつの情報源（WoS Tools）によるものです。",
+            "eventNote": "イベントポイントは、昇格スコアと、所持しているCommonおよびAdvanced Wild Markをすべて使ったものとして、各イベントのポイント行の値を掛けたものです。各イベントは最も得点が高い日で数えます。",
             "chestOf": "所持{held}個中"
         },
         "chest": {

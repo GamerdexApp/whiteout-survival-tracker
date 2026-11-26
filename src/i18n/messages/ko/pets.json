@@ -202,8 +202,7 @@
                 "hallOfChief": "Hall of Chief"
             },
             "notScored": "점수 없음",
-            "eventNote": "이벤트 점수는 승급 점수에 각 이벤트 점수 항목의 점수를 곱한 값이에요.",
-            "scoreSourceNote": "40~100레벨의 승급 점수는 이벤트 안내와 일치해요. 10~30레벨은 한 출처(WoS Tools)에서 가져왔어요.",
+            "eventNote": "이벤트 점수는 승급 점수에 보유한 Common과 Advanced Wild Mark를 모두 사용한 것으로 보고 더한 뒤, 각 이벤트 점수 항목의 점수를 곱한 값이에요. 각 이벤트는 점수가 가장 높은 날로 계산해요.",
             "chestOf": "보유 {held}개 중"
         },
         "chest": {

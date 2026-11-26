@@ -5,6 +5,8 @@ import { useMemo, useState } from "react";
 import { LuPlus } from "react-icons/lu";
 import type { Playthrough } from "@/types/app";
 import { formatDateTime, formatDecimal, formatNumber } from "@/lib/format";
+import { dayLabelOf } from "@/service/coreEvents";
+import { earnablePointsOf } from "@/service/eventExport";
 import { exportSpecOf, petPlanScores } from "@/service/petExport";
 import type { ChestUse, PetGoals, PetPlanResult, PetPlanRow, PetView } from "@/service/pets";
 import {
@@ -151,7 +153,7 @@ function PlanBody({
 							})}
 						</Note>
 					)}
-					<PlanResult plan={plan} chestUse={chestUse} />
+					<PlanResult chief={chief} plan={plan} chestUse={chestUse} />
 				</>
 			)}
 		</>
@@ -283,9 +285,20 @@ function PetBlock({
 }
 
 const EVENT_KEYS = ["svs", "allianceShowdown", "kingOfIcefield"] as const;
+const CORE_EVENT_OF = { svs: "svs", allianceShowdown: "showdown", kingOfIcefield: "king" } as const;
 
-function PlanResult({ plan, chestUse }: { plan: PetPlanResult; chestUse: ChestUse }) {
+function PlanResult({
+	chief,
+	plan,
+	chestUse,
+}: {
+	chief: Playthrough;
+	plan: PetPlanResult;
+	chestUse: ChestUse;
+}) {
 	const t = useTranslations("pets.plan.result");
+	const tEvent = useTranslations("eventExport");
+	const earnable = earnablePointsOf(chief, exportSpecOf(plan, chief));
 	const { total } = plan;
 	const unknown = t("unknown");
 	const power = (value: number | null) => (value === null ? unknown : formatNumber(value));
@@ -384,24 +397,42 @@ function PlanResult({ plan, chestUse }: { plan: PetPlanResult; chestUse: ChestUs
 			<div className="flex flex-col gap-2">
 				<SectionLabel className="text-muted">{t("eventPoints")}</SectionLabel>
 				<div className="grid grid-cols-2 gap-3">
-					{EVENT_KEYS.map((key) => (
-						<div
-							key={key}
-							className="border-line flex flex-col rounded-md border-[1.5px] p-2"
-						>
-							<span className="text-muted text-xs">{t(`events.${key}`)}</span>
-							<span className="font-mono font-semibold">
-								{formatNumber(total.eventPoints[key])}
-							</span>
-						</div>
-					))}
+					{EVENT_KEYS.map((key) => {
+						const entry = earnable.find((item) => item.event === CORE_EVENT_OF[key]);
+						return (
+							<div
+								key={key}
+								className="border-line flex flex-col gap-1 rounded-md border-[1.5px] p-2"
+							>
+								<span className="text-muted text-xs">{t(`events.${key}`)}</span>
+								<span className="font-mono font-semibold">
+									{formatNumber(entry?.total ?? 0)}
+								</span>
+								{entry?.days.map((day) => (
+									<div key={day.groupId} className="flex flex-col gap-0.5">
+										<span className="text-muted text-xs">
+											{`${dayLabelOf(entry.event, day.dayId)} ${day.dayName}`}
+										</span>
+										{day.lines.map(({ line, row }) => (
+											<span key={line.id} className="text-xs">
+												{tEvent("earnable.line", {
+													label: line.label,
+													units: formatNumber(line.units),
+													each: formatNumber(row?.points ?? 0),
+												})}
+											</span>
+										))}
+									</div>
+								))}
+							</div>
+						);
+					})}
 					<div className="border-line flex flex-col rounded-md border-[1.5px] p-2">
 						<span className="text-muted text-xs">{t("events.hallOfChief")}</span>
 						<span className="font-mono font-semibold">{t("notScored")}</span>
 					</div>
 				</div>
 				<p className="text-muted text-xs">{t("eventNote")}</p>
-				<p className="text-muted text-xs">{t("scoreSourceNote")}</p>
 			</div>
 		</Card>
 	);
