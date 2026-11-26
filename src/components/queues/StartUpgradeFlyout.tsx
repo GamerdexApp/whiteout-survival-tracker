@@ -8,7 +8,7 @@ import type { Playthrough } from "@/types/app";
 import { formatDateTime, formatDuration, formatNumber } from "@/lib/format";
 import { useNow } from "@/lib/hooks/useNow";
 import type { SlotInfo, StartPayload, UpgradeOption } from "@/service/queues";
-import { secondsFrom, shortLines } from "@/service/queues";
+import { secondsFrom, shortLines, startedAtOf } from "@/service/queues";
 import { findItem } from "@/data/game/items";
 import { Badge } from "@/comps/ui/Badge";
 import { Button } from "@/comps/ui/Button";
@@ -126,12 +126,12 @@ export function StartUpgradeFlyout(props: StartUpgradeFlyoutProps) {
 						disabled={!option || !chosenSlot}
 						onClick={() => {
 							if (!option || !chosenSlot) return;
-							const startedAt = new Date();
+							const clickedAt = new Date();
 							onStart({
 								optionId: option.id,
 								slotKey: chosenSlot.key,
-								startedAt,
-								endsAt: new Date(startedAt.getTime() + seconds * 1_000),
+								startedAt: startedAtOf(clickedAt, seconds, yourSeconds),
+								endsAt: new Date(clickedAt.getTime() + seconds * 1_000),
 								takeCost,
 							});
 						}}

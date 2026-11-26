@@ -11,7 +11,7 @@ import {
 	sessionWithinRoom,
 	startLearning,
 } from "@/service/expertLearning";
-import { learningJob, secondsFrom } from "@/service/queues";
+import { learningJob, secondsFrom, startedAtOf } from "@/service/queues";
 import { HoursMinutesFields } from "@/comps/queues/HoursMinutesFields";
 import { Button } from "@/comps/ui/Button";
 import { Card } from "@/comps/ui/Card";
@@ -62,10 +62,11 @@ export function StartLearningFlyout({ open, chief, onClose, onStart }: StartLear
 	const session = skill ? sessionWithinRoom(chosenSession, skill.room) : chosenSession;
 	const ready = Boolean(target && skill) && !busy;
 	const sessionSeconds = session.minutes * 60;
+	const gameSessionSeconds = chosenSession.minutes * 60;
 	const seconds =
 		mode === "now"
 			? sessionSeconds
-			: Math.min(secondsFrom(Number(hours || 0), Number(minutes || 0)), sessionSeconds);
+			: Math.min(secondsFrom(Number(hours || 0), Number(minutes || 0)), gameSessionSeconds);
 	const endsAt = new Date(now + seconds * 1_000);
 
 	const chooseExpert = (next: string) => {
@@ -75,10 +76,7 @@ export function StartLearningFlyout({ open, chief, onClose, onStart }: StartLear
 
 	const chooseSession = (next: number) => {
 		setSessionIndex(next);
-		if (mode === "already") {
-			const adjusted = skill ? sessionWithinRoom(sessions[next], skill.room) : sessions[next];
-			fillTimeLeft(adjusted.minutes * 60);
-		}
+		if (mode === "already") fillTimeLeft(sessions[next].minutes * 60);
 	};
 
 	const fillTimeLeft = (total: number) => {
@@ -88,12 +86,12 @@ export function StartLearningFlyout({ open, chief, onClose, onStart }: StartLear
 
 	const chooseMode = (next: StartMode) => {
 		setMode(next);
-		if (next === "already") fillTimeLeft(sessionSeconds);
+		if (next === "already") fillTimeLeft(gameSessionSeconds);
 	};
 
 	const start = () => {
 		if (!target || !skill) return;
-		const startedAt = new Date();
+		const clickedAt = new Date();
 		const what = names("jobTitle", {
 			expert: target.expertName,
 			skill: skill.name,
@@ -105,8 +103,12 @@ export function StartLearningFlyout({ open, chief, onClose, onStart }: StartLear
 					expertId: target.expertId,
 					skillIndex: skill.index,
 					session,
-					startedAt,
-					endsAt: new Date(startedAt.getTime() + seconds * 1_000),
+					startedAt: startedAtOf(
+						clickedAt,
+						seconds,
+						mode === "already" ? gameSessionSeconds : seconds
+					),
+					endsAt: new Date(clickedAt.getTime() + seconds * 1_000),
 				}),
 			what
 		);

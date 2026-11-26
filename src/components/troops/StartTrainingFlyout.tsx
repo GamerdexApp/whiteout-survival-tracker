@@ -6,7 +6,7 @@ import { useState } from "react";
 import type { Playthrough, TroopId } from "@/types/app";
 import { formatDateTime, formatDuration, formatNumber } from "@/lib/format";
 import { useNow } from "@/lib/hooks/useNow";
-import { campJob, secondsFrom, shortLines } from "@/service/queues";
+import { campJob, secondsFrom, shortLines, startedAtOf } from "@/service/queues";
 import type { CostLine } from "@/service/queues";
 import {
 	batchCapacityOf,
@@ -180,14 +180,18 @@ export function StartTrainingFlyout({
 						variant="primary"
 						disabled={!ready}
 						onClick={() => {
-							const startedAt = new Date();
+							const clickedAt = new Date();
 							onStart(
 								batches.map((batch, index) => ({
 									batch,
 									cost: estimates[index].cost,
-									startedAt,
+									startedAt: startedAtOf(
+										clickedAt,
+										secondsFor(index),
+										estimates[index].seconds
+									),
 									endsAt: new Date(
-										startedAt.getTime() + secondsFor(index) * 1_000
+										clickedAt.getTime() + secondsFor(index) * 1_000
 									),
 									takeCost,
 								}))

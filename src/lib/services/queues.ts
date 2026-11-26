@@ -93,6 +93,20 @@ export const jobProgress = (job: UpgradeJob, now: number) => {
 export const isReady = (job: UpgradeJob, now: number) =>
   secondsLeft(job, now) === 0;
 
+/**
+ * The start time of a job that is already running. It lies the full time before the end, so the
+ * progress bar shows the part that has passed. A job with no known full time, or with more time left
+ * than the full time, starts now.
+ */
+export const startedAtOf = (
+  now: Date,
+  secondsLeftNow: number,
+  fullSeconds: number,
+) =>
+  new Date(
+    now.getTime() - Math.max(0, fullSeconds - secondsLeftNow) * SECOND_MS,
+  );
+
 export const endsAtAfter = (now: Date, seconds: number) =>
   new Date(now.getTime() + seconds * SECOND_MS).toISOString();
 
