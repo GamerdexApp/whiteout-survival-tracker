@@ -134,7 +134,14 @@ export const HERO_GEAR_MATERIAL_ITEM_IDS = [
 ] as const;
 
 export const HERO_GEAR_ITEM_IDS = [
+  "common-hero-gear",
+  "uncommon-hero-gear",
+  "rare-hero-gear",
+  "epic-hero-gear",
   "mythic-hero-gear",
+] as const;
+
+export const HERO_GEAR_CHEST_ITEM_IDS = [
   "custom-mythic-hero-gear-chest",
   "custom-epic-hero-gear-chest",
   "lucky-hero-gear-chest",
@@ -157,6 +164,13 @@ export const CHIEF_GEAR_AND_CHARM_CHEST_ITEM_IDS = [
   "chief-gear-materials-chest",
   "chief-gear-variety-chest",
   "random-chief-charm-material-chest",
+] as const;
+
+export const OTHER_ITEM_IDS = [
+  "steel",
+  "chief-stamina",
+  "hero-xp",
+  "gems",
 ] as const;
 
 export const GENERAL_HERO_SHARDS = [

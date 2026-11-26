@@ -15,8 +15,10 @@ import {
 	COMMON_EXPERT_ITEM_IDS,
 	EXPERT_SIGILS,
 	FIRE_CRYSTAL_ITEM_IDS,
+	HERO_GEAR_CHEST_ITEM_IDS,
 	HERO_GEAR_ITEM_IDS,
 	HERO_GEAR_MATERIAL_ITEM_IDS,
+	OTHER_ITEM_IDS,
 	packRows,
 	PET_ADVANCEMENT_ITEM_IDS,
 	PET_FOOD_AND_MARK_ITEM_IDS,
@@ -35,6 +37,7 @@ const BASE_COLUMNS = "grid-cols-1 sm:grid-cols-2";
 const FIRE_CRYSTAL_COLUMNS = "grid-cols-1 sm:grid-cols-3";
 const SIGIL_COLUMNS = "grid-cols-1 sm:grid-cols-2 lg:grid-cols-5";
 const EXPERT_ITEM_COLUMNS = "grid-cols-1 sm:grid-cols-3";
+const OTHER_COLUMNS = "grid-cols-1 sm:grid-cols-2 lg:grid-cols-4";
 
 export function CoreResourcesTab({ chief }: { chief: Playthrough }) {
 	const t = useTranslations("resources.core");
@@ -225,6 +228,18 @@ export function CoreResourcesTab({ chief }: { chief: Playthrough }) {
 						/>
 					))}
 				</CountRow>
+				<CountRow title={t("heroGearChestsRow")} columns={FOUR_PER_ROW_COLUMNS}>
+					{HERO_GEAR_CHEST_ITEM_IDS.map((itemId) => (
+						<CountCell
+							key={itemId}
+							itemId={itemId}
+							label={baseName(itemId)}
+							count={ownedCount(chief, itemId)}
+							onChange={setCount}
+							labelClassName={WRAPPING_LABEL}
+						/>
+					))}
+				</CountRow>
 			</CollapsibleSection>
 			<CollapsibleSection title={t("chiefGearSection")}>
 				<CountRow title={t("chiefGearRow")} columns={FOUR_PER_ROW_COLUMNS}>
@@ -265,6 +280,20 @@ export function CoreResourcesTab({ chief }: { chief: Playthrough }) {
 				</CountRow>
 			</CollapsibleSection>
 			<HeroShardsSection chief={chief} />
+			<CollapsibleSection title={t("otherSection")}>
+				<CountRow columns={OTHER_COLUMNS}>
+					{OTHER_ITEM_IDS.map((itemId) => (
+						<CountCell
+							key={itemId}
+							itemId={itemId}
+							label={baseName(itemId)}
+							count={ownedCount(chief, itemId)}
+							onChange={setCount}
+							labelClassName="shrink-0"
+						/>
+					))}
+				</CountRow>
+			</CollapsibleSection>
 		</div>
 	);
 }

@@ -71,11 +71,15 @@ describe("Hero shards section", () => {
 		heroes: { smith: { owned: true, star: 5, tier: 0 } },
 	};
 
+	const shardsSection = () =>
+		[...page().querySelectorAll("details")].find((section) =>
+			section.querySelector("summary")?.textContent?.includes("Hero Shards")
+		)!;
+
 	it("hides a hero with every star until the switch is on", async () => {
 		seed(chief);
 		await mount(<ResourcesView chief={chief} />);
-		const sections = [...page().querySelectorAll("details")];
-		const shards = sections[sections.length - 1];
+		const shards = shardsSection();
 		await click(shards.querySelector("summary"));
 
 		expect(field("Smith Shard owned")).toBeNull();
@@ -89,8 +93,7 @@ describe("Hero shards section", () => {
 	it("saves a hero shard count to the inventory of the hero", async () => {
 		seed(chief);
 		await mount(<ResourcesView chief={chief} />);
-		const sections = [...page().querySelectorAll("details")];
-		await click(sections[sections.length - 1].querySelector("summary"));
+		await click(shardsSection().querySelector("summary"));
 		await type(field("Eugene Shard owned"), "33");
 
 		expect(savedChief().inventory?.["eugene-shard"]).toBe(33);

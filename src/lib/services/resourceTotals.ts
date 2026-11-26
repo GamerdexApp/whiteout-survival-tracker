@@ -1,4 +1,5 @@
 import type { Playthrough } from "@/types/app";
+import { ENHANCEMENT_XP_SOURCES } from "@/data/game/heroGear";
 import {
   AFFINITY_GIFT_ITEM_IDS,
   BASE_RESOURCE_IDS,
@@ -103,3 +104,9 @@ export const expertTotals = (chief: Playthrough): ExpertTotals => {
     gifts,
   };
 };
+
+export const enhancementXpOwned = (chief: Playthrough) =>
+  ENHANCEMENT_XP_SOURCES.reduce(
+    (sum, source) => sum + ownedCount(chief, source.itemId) * source.value,
+    0,
+  );

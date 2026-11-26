@@ -12,8 +12,10 @@ import {
   EXPLORATION_MANUALS,
   FIRE_CRYSTAL_ITEM_IDS,
   GENERAL_HERO_SHARDS,
+  HERO_GEAR_CHEST_ITEM_IDS,
   HERO_GEAR_ITEM_IDS,
   HERO_GEAR_MATERIAL_ITEM_IDS,
+  OTHER_ITEM_IDS,
   packRows,
   PET_ADVANCEMENT_ITEM_IDS,
   PET_FOOD_AND_MARK_ITEM_IDS,
@@ -21,6 +23,7 @@ import {
 } from "@/service/coreResources";
 import {
   anyResourcePossible,
+  enhancementXpOwned,
   expertTotals,
   resourceTotalOf,
   resourceTotals,
@@ -41,6 +44,8 @@ const everyItemId = () => [
   ...PET_FOOD_AND_MARK_ITEM_IDS,
   ...HERO_GEAR_MATERIAL_ITEM_IDS,
   ...HERO_GEAR_ITEM_IDS,
+  ...HERO_GEAR_CHEST_ITEM_IDS,
+  ...OTHER_ITEM_IDS,
   ...CHIEF_GEAR_ITEM_IDS,
   ...CHIEF_CHARM_ITEM_IDS,
   ...CHIEF_GEAR_AND_CHARM_CHEST_ITEM_IDS,
@@ -151,5 +156,25 @@ describe("expert totals", () => {
     expect(totals.commonSigils).toBe(10);
     expect(totals.books).toBe(11);
     expect(totals.gifts.map((gift) => gift.count)).toEqual([7, 8, 9]);
+  });
+});
+
+describe("enhancement XP owned", () => {
+  it("is zero for a chief with no items", () => {
+    expect(enhancementXpOwned(emptyChief())).toBe(0);
+  });
+
+  it("adds components at their size and gear at its XP", () => {
+    const chief = withInventory(emptyChief(), {
+      "enhancement-xp-component-10": 2,
+      "enhancement-xp-component-100": 3,
+      "common-hero-gear": 4,
+      "uncommon-hero-gear": 5,
+      "rare-hero-gear": 6,
+      "epic-hero-gear": 7,
+      "mythic-hero-gear": 8,
+    });
+
+    expect(enhancementXpOwned(chief)).toBe(20 + 300 + 40 + 150 + 360 + 1050);
   });
 });

@@ -12,7 +12,12 @@ import { useIsDesktop } from "@/lib/hooks/useMediaQuery";
 import { updateChiefById } from "@/service/chiefs";
 import { ownedCount, speedupStock, withOwnedCount, withOwnedCounts } from "@/service/inventory";
 import { plannerShortages } from "@/service/planStock";
-import { anyResourcePossible, expertTotals, resourceTotals } from "@/service/resourceTotals";
+import {
+	anyResourcePossible,
+	enhancementXpOwned,
+	expertTotals,
+	resourceTotals,
+} from "@/service/resourceTotals";
 import { allItems, findItem, itemCategories, STOCK_STRIP_ITEM_IDS } from "@/data/game/items";
 import { Button } from "@/comps/ui/Button";
 import { Card } from "@/comps/ui/Card";
@@ -277,6 +282,19 @@ export function AllItemsTab({ chief }: { chief: Playthrough }) {
 										`${findItem(gift.itemId)?.name} ${formatNumber(gift.count)}`
 								)
 								.join(" · ")}
+						</span>
+					</Card>
+				</div>
+			)}
+
+			{category === "Hero Gear Material" && (
+				<div className="grid grid-cols-2 gap-3 lg:grid-cols-5">
+					<Card className="flex flex-col gap-0.5 px-3 py-2">
+						<SectionLabel className="text-muted">
+							{tv("totals.enhancementXp")}
+						</SectionLabel>
+						<span className="font-mono text-lg font-medium">
+							{formatNumber(enhancementXpOwned(chief))}
 						</span>
 					</Card>
 				</div>

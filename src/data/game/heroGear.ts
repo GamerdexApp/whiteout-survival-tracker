@@ -2,12 +2,14 @@ import {
   HERO_GEAR_EMPOWERMENT_REQUIREMENT,
   HERO_GEAR_MAX_EMPOWERMENT_LEVEL,
   HERO_GEAR_MAX_ENHANCEMENT_LEVEL,
+  HERO_GEAR_XP_SOURCES,
   heroGearMasteryForging,
   heroGearSlots,
   heroGearStats,
 } from "whiteout-survival-data";
 import type { HeroGearQuality, HeroGearSlot, TroopType } from "@/types/app";
 
+export const ENHANCEMENT_XP_SOURCES = HERO_GEAR_XP_SOURCES;
 export const MAX_ENHANCEMENT = HERO_GEAR_MAX_ENHANCEMENT_LEVEL;
 export const MAX_EMPOWERMENT = HERO_GEAR_MAX_EMPOWERMENT_LEVEL;
 export const EMPOWERMENT_FORGING_ROW_ID =
