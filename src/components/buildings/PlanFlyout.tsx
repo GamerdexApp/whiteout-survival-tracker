@@ -28,6 +28,7 @@ import { petSkillConstructionPercent } from "@/service/pets";
 import { resourceChecks } from "@/service/planStock";
 import { findBuildingById, levelledBuildings } from "@/data/game/buildings";
 import { findItem, RESOURCE_ITEM_IDS } from "@/data/game/items";
+import { EarnablePoints } from "@/comps/export/EarnablePoints";
 import { ExportToEventFlyout } from "@/comps/export/ExportToEventFlyout";
 import { GeneralSpeedupShare } from "@/comps/queues/GeneralSpeedupShare";
 import { PlanStockCheck } from "@/comps/queues/PlanStockCheck";
@@ -241,7 +242,10 @@ function PlanBody({
 				/>
 			)}
 			{result?.ok && (
-				<PlanResult calculation={result.calculation} speedPercent={speedPercent} />
+				<>
+					<PlanResult calculation={result.calculation} speedPercent={speedPercent} />
+					<EarnablePoints chief={chief} spec={exportSpecOf(chief, result.calculation)} />
+				</>
 			)}
 		</>
 	);
@@ -469,7 +473,6 @@ function PlanResult({
 	speedPercent: number;
 }) {
 	const t = useTranslations("buildings");
-	const strong = (chunks: React.ReactNode) => <strong>{chunks}</strong>;
 	const groups = groupSteps(calculation.steps);
 	const amountOf = (itemId: string) =>
 		calculation.resources.find((resource) => resource.itemId === itemId)?.amount ?? 0;
@@ -524,13 +527,6 @@ function PlanResult({
 					value={formatDuration(calculation.seconds)}
 				/>
 			</div>
-			<p className="text-muted text-xs">
-				{t.rich("plan.result.eventPoints", {
-					strong,
-					svs: formatNumber(calculation.eventPoints.svs),
-					king: formatNumber(calculation.eventPoints.kingOfIcefield),
-				})}
-			</p>
 			{groups.length > 0 && (
 				<ul className="flex flex-col">
 					{groups.map((group, index) => (

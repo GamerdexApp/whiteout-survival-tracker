@@ -42,19 +42,25 @@ export function EarnablePoints({ chief, spec }: { chief: Playthrough; spec: Expo
 									{`${dayLabelOf(event, day.dayId)} ${day.dayName}`}
 								</span>
 								{day.lines.map(({ line, row, points }) => (
-									<span
-										key={line.id}
-										className="flex justify-between gap-3 text-xs"
-									>
-										<span>
-											{t("earnable.line", {
-												label: line.label,
-												units: formatNumber(line.units),
-												each: formatNumber(row?.points ?? 0),
-											})}
+									<div key={line.id} className="flex flex-col">
+										<span className="flex justify-between gap-3 text-xs">
+											<span>
+												{t("earnable.line", {
+													label: line.label,
+													units: formatNumber(line.units),
+													each: formatNumber(row?.points ?? 0),
+												})}
+											</span>
+											<span className="font-mono">
+												{formatNumber(points)}
+											</span>
 										</span>
-										<span className="font-mono">{formatNumber(points)}</span>
-									</span>
+										{line.detail && (
+											<span className="text-muted text-xs">
+												{line.detail}
+											</span>
+										)}
+									</div>
 								))}
 							</div>
 						))}
