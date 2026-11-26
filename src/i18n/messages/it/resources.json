@@ -134,6 +134,9 @@
     "planStock": {
         "constructionTime": "Tempo di costruzione, in accelerazioni",
         "researchTime": "Tempo di ricerca, in accelerazioni",
-        "minutesUnit": "min"
+        "minutesUnit": "min",
+        "includes": "Include {parts}.",
+        "fromPacks": "{amount} dai pacchetti dello zaino",
+        "fromChests": "{amount} dai forzieri risorse personalizzati"
     }
 }

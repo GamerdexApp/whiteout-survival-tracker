@@ -134,6 +134,9 @@
     "planStock": {
         "constructionTime": "Construction time, as speedups",
         "researchTime": "Research time, as speedups",
-        "minutesUnit": "min"
+        "minutesUnit": "min",
+        "includes": "Includes {parts}.",
+        "fromPacks": "{amount} from backpack packs",
+        "fromChests": "{amount} from Custom Resource Chests"
     }
 }

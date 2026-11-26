@@ -134,6 +134,9 @@
     "planStock": {
         "constructionTime": "Bauzeit, als Beschleuniger",
         "researchTime": "Forschungszeit, als Beschleuniger",
-        "minutesUnit": "Min"
+        "minutesUnit": "Min",
+        "includes": "Enthält {parts}.",
+        "fromPacks": "{amount} aus Rucksack-Paketen",
+        "fromChests": "{amount} aus benutzerdefinierten Ressourcentruhen"
     }
 }

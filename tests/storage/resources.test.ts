@@ -21,10 +21,12 @@ import {
   PET_FOOD_AND_MARK_ITEM_IDS,
   speedupRows,
 } from "@/service/coreResources";
+import { researchChecks, resourceChecks } from "@/service/planStock";
 import {
   anyResourcePossible,
   enhancementXpOwned,
   expertTotals,
+  resourceStocks,
   resourceTotalOf,
   resourceTotals,
 } from "@/service/resourceTotals";
@@ -176,5 +178,109 @@ describe("enhancement XP owned", () => {
     });
 
     expect(enhancementXpOwned(chief)).toBe(20 + 300 + 40 + 150 + 360 + 1050);
+  });
+});
+
+describe("resource stock with packs and chests", () => {
+  it("counts loose stock and packs", () => {
+    const chief = withInventory(emptyChief(), {
+      meat: 1_000,
+      "meat-10k": 2,
+      "meat-100k-secured": 1,
+    });
+
+    expect(resourceStocks(chief, {}).meat.available).toBe(121_000);
+    expect(resourceStocks(chief, {}).meat.packs).toBe(120_000);
+  });
+
+  it("opens chests for what is short, the smallest chest that fits last", () => {
+    const chief = withInventory(emptyChief(), {
+      "lv-1-custom-resource-chest": 4,
+      "lv-2-custom-resource-chest": 1,
+    });
+    const iron = resourceStocks(chief, { iron: 5_200 }).iron;
+
+    expect(iron.fromChests).toBe(5_500);
+    expect(iron.chestsUsed).toBe(2);
+    expect(iron.available).toBe(5_500);
+  });
+
+  it("counts a Secured chest like a normal one", () => {
+    const chief = withInventory(emptyChief(), {
+      "lv-1-custom-secured-resource-chest": 1,
+    });
+
+    expect(resourceStocks(chief, { meat: 10_000 }).meat.available).toBe(10_000);
+  });
+
+  it("shares the chests between the resources, Iron first", () => {
+    const chief = withInventory(emptyChief(), {
+      "lv-1-custom-resource-chest": 1,
+    });
+    const stocks = resourceStocks(chief, { iron: 500, meat: 10_000 });
+
+    expect(stocks.iron.available).toBe(500);
+    expect(stocks.meat.available).toBe(0);
+  });
+
+  it("leaves the chests alone when nothing is short", () => {
+    const chief = withInventory(emptyChief(), {
+      meat: 5_000,
+      "lv-3-custom-resource-chest": 3,
+    });
+    const meat = resourceStocks(chief, { meat: 4_000 }).meat;
+
+    expect(meat.fromChests).toBe(0);
+    expect(meat.available).toBe(5_000);
+  });
+
+  it("tells the plan check where the stock comes from", () => {
+    const chief = withInventory(emptyChief(), {
+      "coal-10k": 1,
+      "lv-1-custom-resource-chest": 3,
+    });
+    const checks = resourceChecks(
+      {
+        resources: [{ itemId: "coal", amount: 14_000 }],
+        speedupMinutesNeeded: 0,
+      } as never,
+      chief,
+    );
+    const coal = checks.find((check) => check.id === "coal")!;
+    const meat = checks.find((check) => check.id === "meat")!;
+
+    expect(coal.available).toBe(14_000);
+    expect(coal.detail).toBe(
+      "Includes 10,000 from backpack packs and 4,000 from Custom Resource Chests.",
+    );
+    expect(meat.detail).toBeUndefined();
+  });
+});
+
+describe("plan stock order", () => {
+  it("lists Meat, Wood, Coal and Iron first, in that order", () => {
+    const needs = ["iron", "refined-fire-crystal", "wood", "meat", "coal"].map(
+      (itemId) => ({ itemId, amount: 1 }),
+    );
+    const checks = researchChecks(
+      { resources: needs, speedupMinutesNeeded: 0 } as never,
+      emptyChief(),
+    );
+
+    expect(checks.slice(0, 5).map((check) => check.id)).toEqual([
+      "meat",
+      "wood",
+      "coal",
+      "iron",
+      "refined-fire-crystal",
+    ]);
+    expect(
+      resourceChecks(
+        { resources: [], speedupMinutesNeeded: 0 } as never,
+        emptyChief(),
+      )
+        .slice(0, 4)
+        .map((check) => check.id),
+    ).toEqual(["meat", "wood", "coal", "iron"]);
   });
 });

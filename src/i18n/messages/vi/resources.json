@@ -134,6 +134,9 @@
     "planStock": {
         "constructionTime": "Thời gian xây dựng, quy ra vật phẩm tăng tốc",
         "researchTime": "Thời gian nghiên cứu, quy ra vật phẩm tăng tốc",
-        "minutesUnit": "phút"
+        "minutesUnit": "phút",
+        "includes": "Gồm {parts}.",
+        "fromPacks": "{amount} từ gói trong ba lô",
+        "fromChests": "{amount} từ rương tài nguyên tùy chọn"
     }
 }

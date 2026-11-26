@@ -134,6 +134,9 @@
     "planStock": {
         "constructionTime": "İnşaat süresi, hızlandırma olarak",
         "researchTime": "Araştırma süresi, hızlandırma olarak",
-        "minutesUnit": "dk"
+        "minutesUnit": "dk",
+        "includes": "{parts} dahil.",
+        "fromPacks": "sırt çantasındaki paketlerden {amount}",
+        "fromChests": "Özel Kaynak Sandıklarından {amount}"
     }
 }

@@ -6,10 +6,10 @@ export const allItems: Item[] = items().get();
 export const findItem = (itemId: string) => items().find(itemId);
 
 export const RESOURCE_ITEM_IDS = [
+  "meat",
   "wood",
   "coal",
   "iron",
-  "meat",
   "fire-crystal",
   "refined-fire-crystal",
 ];
