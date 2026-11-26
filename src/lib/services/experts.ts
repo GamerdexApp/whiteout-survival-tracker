@@ -807,6 +807,8 @@ export interface ExpertPlanRow {
   /** The points saved on the expert card plus the share of the Resources gifts the plan gives it. */
   affinityHeld: number;
   expHeld: number;
+  /** The power of the expert at the goal minus the power now. */
+  powerGain: number;
 }
 
 export interface ExpertsPlan {
@@ -880,6 +882,11 @@ export const runExpertsPlan = (
       item.sigils,
       own ? ownedCount(chief, own) : 0,
     );
+    const { affinity: goalAffinity, counted } = goalRelationshipOf(
+      view,
+      goals[view.expert.id],
+    );
+    const goalSkills = sanitizeGoal(view, goals[view.expert.id]).skills!;
     const heldOnCard = Math.min(view.affinityAvailable, item.affinity);
     const fromGifts = Math.min(item.affinity - heldOnCard, giftAffinityLeft);
     giftAffinityLeft -= fromGifts;
@@ -896,6 +903,9 @@ export const runExpertsPlan = (
       affinity: item.affinity,
       affinityHeld: heldOnCard + fromGifts,
       expHeld: Math.min(heldSkillExp(view, goals[view.expert.id]), item.exp),
+      powerGain:
+        powerOf(view.expert, goalAffinity, counted, goalSkills) -
+        expertPowerOf(view).now,
     };
   });
   const unlocks = views.reduce(
@@ -911,6 +921,9 @@ export const runExpertsPlan = (
 
 const sumOf = (rows: ExpertPlanRow[], pick: (row: ExpertPlanRow) => number) =>
   rows.reduce((sum, row) => sum + pick(row), 0);
+
+export const powerGainOf = (plan: ExpertsPlan) =>
+  sumOf(plan.rows, (row) => row.powerGain);
 
 export const expStillToGet = (plan: ExpertsPlan) =>
   plan.total.exp - sumOf(plan.rows, (row) => row.expHeld);

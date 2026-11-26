@@ -230,6 +230,31 @@ export const heroPowerParts = (view: HeroView): HeroPowerParts => {
   };
 };
 
+/** The hero as a goal leaves it: each star, skill and weapon level is the higher of goal and current. */
+const viewAtGoal = (view: HeroView, goal: HeroGoal): HeroView => ({
+  ...view,
+  stars:
+    starPosition(goal) > starPosition(view.stars)
+      ? { star: goal.star, tier: goal.tier }
+      : view.stars,
+  skillLevels: Object.fromEntries(
+    Object.entries(view.skillLevels).map(([name, level]) => [
+      name,
+      Math.max(level, goal.skills?.[name] ?? level),
+    ]),
+  ),
+  weapon: view.hero.exclusiveWeapon
+    ? Math.max(view.weapon, goal.weapon ?? view.weapon)
+    : 0,
+});
+
+/** The power that the goal adds to the hero, or null while a part of its power is unknown. */
+export const heroPowerGain = (view: HeroView, goal: HeroGoal) => {
+  const now = heroPowerParts(view).total;
+  const atGoal = heroPowerParts(viewAtGoal(view, goal)).total;
+  return now === null || atGoal === null ? null : atGoal - now;
+};
+
 export interface FurnaceCheck {
   requiredLabel: string;
   met: boolean;
@@ -464,6 +489,8 @@ export interface HeroPlanRow {
   calculation: HeroUpgradeCalculation;
   /** The estimated shards from the planned Lucky Wheel spins, on top of the shards held. */
   luckyShards: number;
+  /** Null while a part of the power of the hero is unknown. */
+  powerGain: number | null;
 }
 
 export interface UnmetRequirement extends UnmetHeroSkillRequirement {
@@ -479,6 +506,8 @@ export interface HeroPlanResult {
   skillLevels: number;
   weaponLevels: number;
   eventPoints: HeroUpgradeCalculation["eventPoints"];
+  /** Null while a part of the power of a planned hero is unknown. */
+  powerGain: number | null;
   unmet: UnmetRequirement[];
   /** The gems the planned Lucky Wheel spins cost after the starting tokens. */
   gems: number;
@@ -559,6 +588,7 @@ export const runHeroPlan = (
               luckyWheel?.heroId === heroId
                 ? estimatedShards(luckyWheel.spins)
                 : 0,
+            powerGain: heroPowerGain(view, goal),
           },
         ]
       : [];
@@ -591,6 +621,9 @@ export const runHeroPlan = (
     luckyHeroName:
       rows.find((row) => row.view.hero.id === luckyWheel?.heroId)?.view.hero
         .name ?? null,
+    powerGain: rows.some((row) => row.powerGain === null)
+      ? null
+      : sum((row) => row.powerGain ?? 0),
     widgets: sum((row) => row.calculation.widgets.widgets),
     unlockedWeaponSkills: sum(
       (row) => row.calculation.widgets.unlockedSkills.length,
