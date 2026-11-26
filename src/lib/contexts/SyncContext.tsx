@@ -36,7 +36,7 @@ import {
 import { runSync, syncSchema, tokenSource } from "@/lib/sync/run";
 import { storageService } from "@/service/storage";
 
-const AUTO_SYNC_DELAY_MS = 4000;
+const AUTO_SYNC_DELAY_MS = 15000;
 const RETURN_SYNC_GAP_MS = 30_000;
 
 const isMeteredConnection = () =>
@@ -172,6 +172,9 @@ export function SyncProvider({ children }: { children: React.ReactNode }) {
 				const snapshot = storageService.load();
 				const result = await runSync(snapshot, firstSync);
 				if (storageService.load() !== snapshot) {
+					// The upload already happened. Without its base the rerun sees the cloud copy as a
+					// second change to the same value and takes the cloud value over the new edit.
+					if (result.status === "synced") deviceStore.update({ state: result.state });
 					rerun.current = true;
 					continue;
 				}
