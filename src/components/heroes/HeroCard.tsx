@@ -23,6 +23,7 @@ import {
 	MAX_WEAPON_LEVEL,
 	skillLevelRange,
 } from "@/data/game/heroes";
+import { Badge } from "@/comps/ui/Badge";
 import { Button } from "@/comps/ui/Button";
 import { Card } from "@/comps/ui/Card";
 import { ItemIcon } from "@/comps/ui/ItemIcon";
@@ -56,7 +57,10 @@ export function HeroCard({ view, onChange, onOpen, onPlan, gearSetNames }: HeroC
 				<div className="flex items-center gap-3">
 					<ItemIcon src={hero.img} size={44} />
 					<div className="flex min-w-0 flex-1 flex-col">
-						<h2 className="truncate font-semibold">{hero.name}</h2>
+						<h2 className="flex items-center gap-2 font-semibold">
+							<span className="truncate">{hero.name}</span>
+							{view.tag && <Badge tone="fixed">{t(`common.tags.${view.tag}`)}</Badge>}
+						</h2>
 						<span className="text-muted font-mono text-xs">
 							{t("card.summary", {
 								rarity: hero.rarity,
@@ -113,6 +117,7 @@ export function HeroCard({ view, onChange, onOpen, onPlan, gearSetNames }: HeroC
 									suffix={t("common.maxLevelSuffix", {
 										max: formatNumber(MAX_HERO_LEVEL),
 									})}
+									disabled={view.levelFollowsTopHeroes}
 									onChange={(level) => onChange({ kind: "level", heroId, level })}
 								/>
 							</HeroRow>

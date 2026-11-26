@@ -16,6 +16,7 @@ import {
 	filterHeroViews,
 	maxOutTargets,
 	summarizeHeroes,
+	withDrillCampLevels,
 	withMaxedHeroes,
 	withSavedHeroesPlan,
 } from "@/service/heroes";
@@ -80,7 +81,7 @@ export function HeroesTab({ chief }: { chief: Playthrough }) {
 	const applyMaxOut = (options: MaxOutOptions) => {
 		const before = chief;
 		const count = maxOutTargets(chief, options).length;
-		if (!change((current) => withMaxedHeroes(current, options))) return;
+		if (!change((current) => withDrillCampLevels(withMaxedHeroes(current, options)))) return;
 		setMaxOpen(false);
 		showToast({
 			variant: "success",

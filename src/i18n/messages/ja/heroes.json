@@ -30,7 +30,12 @@
         "expedition": "遠征",
         "talent": "タレント",
         "maxLevelSuffix": "/ {max}",
-        "heroCount": "{count, plural, other {ヒーロー{amount}人}}"
+        "heroCount": "{count, plural, other {ヒーロー{amount}人}}",
+        "tags": {
+            "top5": "Top 5",
+            "drillCamp": "Drill Camp"
+        },
+        "levelFollowsTopHeroes": "レベルはTop 5で最も低いヒーローに従います。"
     },
     "goalText": {
         "to": "{goal}へ"
@@ -109,6 +114,12 @@
             "generation": "世代順（新しい順）",
             "name": "名前順（A→Z）",
             "power": "総戦力順（高い順）"
+        },
+        "group": "グループ",
+        "groupOptions": {
+            "all": "すべて",
+            "top5": "Top 5",
+            "drillCamp": "Drill Camp"
         }
     },
     "maxOut": {
@@ -188,6 +199,13 @@
             "expeditionFull": "5.0の遠征",
             "exploration": "攻撃 {attack} · 防御 {defense} · HP {health}",
             "expedition": "攻撃 {attack}% · 防御 {defense}%"
+        },
+        "group": {
+            "title": "グループ",
+            "hint": "最も強い5人のヒーローをTop 5にしてください。Drill Camp のヒーローはTop 5の最低レベルになり、そのレベルに従います。",
+            "none": "なし",
+            "top5": "Top 5 ({count} of {max})",
+            "drillCamp": "Drill Camp ({count} of {max})"
         }
     },
     "plan": {

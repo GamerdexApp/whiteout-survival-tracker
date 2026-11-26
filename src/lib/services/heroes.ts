@@ -8,6 +8,7 @@ import type {
 import type {
   HeroGoal,
   HeroState,
+  HeroTag,
   LuckyWheelPlan,
   Playthrough,
 } from "@/types/app";
@@ -83,6 +84,9 @@ export interface HeroView {
   weapon: number;
   shards: number;
   goal: HeroGoal | null;
+  tag: HeroTag | null;
+  /** True while the Drill Camp sets the level, so the level is not edited by hand. */
+  levelFollowsTopHeroes: boolean;
 }
 
 /**
@@ -99,6 +103,50 @@ const savedStars = (state: HeroState | undefined): StarLabel => {
   const star = clamp(state?.star ?? 0, 0, MAX_STAR);
   const tier = star === MAX_STAR ? 0 : clamp(state?.tier ?? 0, 0, MAX_TIER);
   return { star, tier };
+};
+
+export const MAX_TOP_HEROES = 5;
+export const MAX_DRILL_CAMP_HEROES = 15;
+
+const ownedWithTag = (chief: Playthrough, tag: HeroTag) =>
+  Object.entries(chief.heroes ?? {}).filter(
+    ([, state]) => state.owned === true && state.tag === tag,
+  );
+
+export const heroCountWithTag = (chief: Playthrough, tag: HeroTag) =>
+  ownedWithTag(chief, tag).length;
+
+/** The lowest level among the Top 5 heroes, or undefined while no hero has the Top 5 tag. */
+export const topHeroesLevel = (chief: Playthrough) => {
+  const levels = ownedWithTag(chief, "top5").map(([, state]) =>
+    clamp(state.level ?? 1, 1, MAX_HERO_LEVEL),
+  );
+  return levels.length === 0 ? undefined : Math.min(...levels);
+};
+
+/** Sets the level of every Drill Camp hero to the lowest level of the Top 5 heroes. */
+export const withDrillCampLevels = (chief: Playthrough): Playthrough => {
+  const level = topHeroesLevel(chief);
+  if (level === undefined) return chief;
+  return ownedWithTag(chief, "drillCamp").reduce(
+    (current, [heroId]) => withHeroState(current, heroId, { level }),
+    chief,
+  );
+};
+
+const tagHasRoom = (chief: Playthrough, heroId: string, tag: HeroTag) =>
+  ownedWithTag(chief, tag).filter(([id]) => id !== heroId).length <
+  (tag === "top5" ? MAX_TOP_HEROES : MAX_DRILL_CAMP_HEROES);
+
+export const withHeroTag = (
+  chief: Playthrough,
+  heroId: string,
+  tag: HeroTag | null,
+): Playthrough => {
+  if (tag !== null && !tagHasRoom(chief, heroId, tag)) return chief;
+  return withDrillCampLevels(
+    withHeroState(chief, heroId, { tag: tag ?? undefined }),
+  );
 };
 
 export const buildHeroView = (chief: Playthrough, hero: Hero): HeroView => {
@@ -124,6 +172,11 @@ export const buildHeroView = (chief: Playthrough, hero: Hero): HeroView => {
       : 0,
     shards: shardsOf(chief, hero),
     goal: savedGoal ?? null,
+    tag: state?.owned === true ? (state.tag ?? null) : null,
+    levelFollowsTopHeroes:
+      state?.owned === true &&
+      state.tag === "drillCamp" &&
+      topHeroesLevel(chief) !== undefined,
   };
 };
 
@@ -283,6 +336,7 @@ export const shardsNeededForGoal = (view: HeroView) => {
 };
 
 export type OwnedFilter = "all" | "owned" | "notOwned";
+export type TagFilter = "all" | HeroTag;
 export type HeroOrder = "owned" | "generation" | "name" | "power";
 
 export interface HeroFilters {
@@ -291,6 +345,7 @@ export interface HeroFilters {
   rarity: Hero["rarity"] | "all";
   heroClass: Hero["class"] | "all";
   ownership: OwnedFilter;
+  tag: TagFilter;
   order: HeroOrder;
 }
 
@@ -300,6 +355,7 @@ export const defaultHeroFilters = (): HeroFilters => ({
   rarity: "all",
   heroClass: "all",
   ownership: "all",
+  tag: "all",
   order: "generation",
 });
 
@@ -309,6 +365,7 @@ export const countHeroFilters = (filters: HeroFilters) =>
     filters.rarity !== "all",
     filters.heroClass !== "all",
     filters.ownership !== "all",
+    filters.tag !== "all",
     filters.order !== "generation",
   ].filter(Boolean).length;
 
@@ -326,7 +383,8 @@ export const filterHeroViews = (views: HeroView[], filters: HeroFilters) => {
   const search = filters.search.trim().toLowerCase();
   return views
     .filter(
-      ({ hero, owned }) =>
+      ({ hero, owned, tag }) =>
+        (filters.tag === "all" || filters.tag === tag) &&
         (search === "" || hero.name.toLowerCase().includes(search)) &&
         (filters.generation === "all" ||
           hero.generation === filters.generation) &&
@@ -730,7 +788,8 @@ export type HeroChange =
   | { kind: "skill"; heroId: string; skill: string; level: number }
   | { kind: "talent"; heroId: string; level: number }
   | { kind: "weapon"; heroId: string; level: number }
-  | { kind: "shards"; heroId: string; shards: number };
+  | { kind: "shards"; heroId: string; shards: number }
+  | { kind: "tag"; heroId: string; tag: HeroTag | null };
 
 export const applyHeroChange = (
   chief: Playthrough,
@@ -738,11 +797,21 @@ export const applyHeroChange = (
 ): Playthrough => {
   switch (change.kind) {
     case "owned":
-      return withHeroOwned(chief, change.heroId, change.owned);
+      return withDrillCampLevels(
+        withHeroState(
+          withHeroOwned(chief, change.heroId, change.owned),
+          change.heroId,
+          {
+            tag: change.owned ? chief.heroes?.[change.heroId]?.tag : undefined,
+          },
+        ),
+      );
     case "stars":
       return withHeroStars(chief, change.heroId, change.stars);
     case "level":
-      return withHeroLevel(chief, change.heroId, change.level);
+      return withDrillCampLevels(
+        withHeroLevel(chief, change.heroId, change.level),
+      );
     case "skill":
       return withHeroSkill(chief, change.heroId, change.skill, change.level);
     case "talent":
@@ -751,6 +820,8 @@ export const applyHeroChange = (
       return withHeroWeapon(chief, change.heroId, change.level);
     case "shards":
       return withHeroShards(chief, change.heroId, change.shards);
+    case "tag":
+      return withHeroTag(chief, change.heroId, change.tag);
   }
 };
 

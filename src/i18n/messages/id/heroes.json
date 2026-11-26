@@ -30,7 +30,12 @@
         "expedition": "Ekspedisi",
         "talent": "Bakat",
         "maxLevelSuffix": "/ {max}",
-        "heroCount": "{count, plural, other {{amount} pahlawan}}"
+        "heroCount": "{count, plural, other {{amount} pahlawan}}",
+        "tags": {
+            "top5": "Top 5",
+            "drillCamp": "Drill Camp"
+        },
+        "levelFollowsTopHeroes": "Level mengikuti pahlawan Top 5 dengan level terendah."
     },
     "goalText": {
         "to": "ke {goal}"
@@ -109,6 +114,12 @@
             "generation": "Generasi, terbaru dulu",
             "name": "Nama, A ke Z",
             "power": "Total kekuatan, tertinggi dulu"
+        },
+        "group": "Grup",
+        "groupOptions": {
+            "all": "Semua",
+            "top5": "Top 5",
+            "drillCamp": "Drill Camp"
         }
     },
     "maxOut": {
@@ -188,6 +199,13 @@
             "expeditionFull": "Ekspedisi di 5.0",
             "exploration": "Atk {attack} · Def {defense} · HP {health}",
             "expedition": "Atk {attack}% · Def {defense}%"
+        },
+        "group": {
+            "title": "Grup",
+            "hint": "Tandai lima pahlawan terkuatmu sebagai Top 5. Pahlawan di Drill Camp mengambil level terendah dari pahlawan Top 5, jadi levelnya mengikutinya.",
+            "none": "Tidak ada",
+            "top5": "Top 5 ({count} of {max})",
+            "drillCamp": "Drill Camp ({count} of {max})"
         }
     },
     "plan": {

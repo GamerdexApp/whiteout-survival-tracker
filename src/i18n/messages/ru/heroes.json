@@ -30,7 +30,12 @@
         "expedition": "Expedition",
         "talent": "Талант",
         "maxLevelSuffix": "/ {max}",
-        "heroCount": "{count, plural, one {{amount} герой} few {{amount} героя} many {{amount} героев} other {{amount} героя}}"
+        "heroCount": "{count, plural, one {{amount} герой} few {{amount} героя} many {{amount} героев} other {{amount} героя}}",
+        "tags": {
+            "top5": "Top 5",
+            "drillCamp": "Drill Camp"
+        },
+        "levelFollowsTopHeroes": "Уровень следует за самым низким героем Top 5."
     },
     "goalText": {
         "to": "до {goal}"
@@ -109,6 +114,12 @@
             "generation": "По поколению, сначала новые",
             "name": "По имени, А–Я",
             "power": "По общей мощи, сначала большая"
+        },
+        "group": "Группа",
+        "groupOptions": {
+            "all": "Все",
+            "top5": "Top 5",
+            "drillCamp": "Drill Camp"
         }
     },
     "maxOut": {
@@ -188,6 +199,13 @@
             "expeditionFull": "Expedition на 5.0",
             "exploration": "Атк {attack} · Защ {defense} · ЗДР {health}",
             "expedition": "Атк {attack}% · Защ {defense}%"
+        },
+        "group": {
+            "title": "Группа",
+            "hint": "Отметьте пятерых сильнейших героев как Top 5. Герои в Drill Camp получают самый низкий уровень среди героев Top 5, поэтому их уровень следует за ним.",
+            "none": "Нет",
+            "top5": "Top 5 ({count} of {max})",
+            "drillCamp": "Drill Camp ({count} of {max})"
         }
     },
     "plan": {

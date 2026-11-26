@@ -30,7 +30,12 @@
         "expedition": "Expedition",
         "talent": "Talento",
         "maxLevelSuffix": "/ {max}",
-        "heroCount": "{count, plural, one {{amount} herói} other {{amount} heróis}}"
+        "heroCount": "{count, plural, one {{amount} herói} other {{amount} heróis}}",
+        "tags": {
+            "top5": "Top 5",
+            "drillCamp": "Drill Camp"
+        },
+        "levelFollowsTopHeroes": "O nível acompanha o herói Top 5 de menor nível."
     },
     "goalText": {
         "to": "para {goal}"
@@ -109,6 +114,12 @@
             "generation": "Geração, mais recente primeiro",
             "name": "Nome, A a Z",
             "power": "Poder total, maior primeiro"
+        },
+        "group": "Grupo",
+        "groupOptions": {
+            "all": "Todos",
+            "top5": "Top 5",
+            "drillCamp": "Drill Camp"
         }
     },
     "maxOut": {
@@ -188,6 +199,13 @@
             "expeditionFull": "Expedition a 5.0",
             "exploration": "Atq {attack} · Def {defense} · PV {health}",
             "expedition": "Atq {attack}% · Def {defense}%"
+        },
+        "group": {
+            "title": "Grupo",
+            "hint": "Marque os seus cinco heróis mais fortes como Top 5. Os heróis do Drill Camp usam o menor nível dos heróis Top 5, por isso o nível deles acompanha-o.",
+            "none": "Nenhum",
+            "top5": "Top 5 ({count} of {max})",
+            "drillCamp": "Drill Camp ({count} of {max})"
         }
     },
     "plan": {

@@ -30,7 +30,12 @@
         "expedition": "遠征",
         "talent": "天賦",
         "maxLevelSuffix": "/ {max}",
-        "heroCount": "{count, plural, other {{amount} 位英雄}}"
+        "heroCount": "{count, plural, other {{amount} 位英雄}}",
+        "tags": {
+            "top5": "Top 5",
+            "drillCamp": "Drill Camp"
+        },
+        "levelFollowsTopHeroes": "等級跟隨 Top 5 中最低的英雄。"
     },
     "goalText": {
         "to": "至 {goal}"
@@ -109,6 +114,12 @@
             "generation": "世代，最新在前",
             "name": "名稱，A 到 Z",
             "power": "總戰力，由高到低"
+        },
+        "group": "分組",
+        "groupOptions": {
+            "all": "全部",
+            "top5": "Top 5",
+            "drillCamp": "Drill Camp"
         }
     },
     "maxOut": {
@@ -188,6 +199,13 @@
             "expeditionFull": "5.0 時的遠征",
             "exploration": "攻 {attack} · 防 {defense} · HP {health}",
             "expedition": "攻 {attack}% · 防 {defense}%"
+        },
+        "group": {
+            "title": "分組",
+            "hint": "把你最強的五位英雄標為 Top 5。Drill Camp 中的英雄會取 Top 5 英雄中最低的等級，所以他們的等級隨之變動。",
+            "none": "無",
+            "top5": "Top 5 ({count} of {max})",
+            "drillCamp": "Drill Camp ({count} of {max})"
         }
     },
     "plan": {

@@ -11,8 +11,11 @@ import {
 	formatStars,
 	furnaceCheck,
 	hasStarGoal,
+	heroCountWithTag,
 	heroPowerParts,
+	MAX_DRILL_CAMP_HEROES,
 	MAX_STAR_POSITION,
+	MAX_TOP_HEROES,
 	shardsNeededForGoal,
 	skillGoalOf,
 	starLabelAt,
@@ -34,6 +37,7 @@ import { Card } from "@/comps/ui/Card";
 import { Flyout } from "@/comps/ui/Flyout";
 import { ItemIcon } from "@/comps/ui/ItemIcon";
 import { SectionLabel } from "@/comps/ui/SectionLabel";
+import { SegmentedControl } from "@/comps/ui/SegmentedControl";
 import { Switch } from "@/comps/ui/Switch";
 import { ValueStepper } from "@/comps/ui/ValueStepper";
 import { GoalText, HeroRow, ShardsInput, ShardTile } from "./HeroRows";
@@ -123,6 +127,7 @@ function HeroContent({
 				</span>
 			</Card>
 
+			{view.owned && <GroupSection view={view} chief={chief} onChange={onChange} />}
 			{view.owned && <StatusSection view={view} chief={chief} onChange={onChange} />}
 			{view.owned && <SkillsSection view={view} onChange={onChange} />}
 			{view.owned && hero.exclusiveWeapon && (
@@ -151,6 +156,54 @@ function Section({
 			</div>
 			<div className="flex flex-col">{children}</div>
 		</Card>
+	);
+}
+
+type GroupChoice = "none" | "top5" | "drillCamp";
+
+function GroupSection({
+	view,
+	chief,
+	onChange,
+}: {
+	view: HeroView;
+	chief: Playthrough;
+	onChange: (change: HeroChange) => void;
+}) {
+	const t = useTranslations("heroes.flyout.group");
+
+	return (
+		<Section title={t("title")}>
+			<p className="text-muted">{t("hint")}</p>
+			<SegmentedControl<GroupChoice>
+				label={t("title")}
+				options={[
+					{ id: "none", label: t("none") },
+					{
+						id: "top5",
+						label: t("top5", {
+							count: formatNumber(heroCountWithTag(chief, "top5")),
+							max: formatNumber(MAX_TOP_HEROES),
+						}),
+					},
+					{
+						id: "drillCamp",
+						label: t("drillCamp", {
+							count: formatNumber(heroCountWithTag(chief, "drillCamp")),
+							max: formatNumber(MAX_DRILL_CAMP_HEROES),
+						}),
+					},
+				]}
+				value={view.tag ?? "none"}
+				onChange={(choice) =>
+					onChange({
+						kind: "tag",
+						heroId: view.hero.id,
+						tag: choice === "none" ? null : choice,
+					})
+				}
+			/>
+		</Section>
 	);
 }
 
@@ -195,9 +248,13 @@ function StatusSection({
 					min={1}
 					max={MAX_HERO_LEVEL}
 					suffix={tc("maxLevelSuffix", { max: formatNumber(MAX_HERO_LEVEL) })}
+					disabled={view.levelFollowsTopHeroes}
 					onChange={(level) => onChange({ kind: "level", heroId: hero.id, level })}
 				/>
 			</HeroRow>
+			{view.levelFollowsTopHeroes && (
+				<p className="text-muted text-xs">{tc("levelFollowsTopHeroes")}</p>
+			)}
 			<HeroRow label={t("furnaceNeeded", { level: formatNumber(view.level) })}>
 				<span className="font-mono">{furnace.requiredLabel}</span>
 				<span className={furnace.met ? "text-kept" : "text-warn"}>

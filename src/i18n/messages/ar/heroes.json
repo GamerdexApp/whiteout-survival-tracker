@@ -30,7 +30,12 @@
         "expedition": "الحملة",
         "talent": "الموهبة",
         "maxLevelSuffix": "/ {max}",
-        "heroCount": "{count, plural, zero {{amount} بطل} one {{amount} بطل} two {{amount} بطلان} few {{amount} أبطال} many {{amount} بطلًا} other {{amount} بطل}}"
+        "heroCount": "{count, plural, zero {{amount} بطل} one {{amount} بطل} two {{amount} بطلان} few {{amount} أبطال} many {{amount} بطلًا} other {{amount} بطل}}",
+        "tags": {
+            "top5": "Top 5",
+            "drillCamp": "Drill Camp"
+        },
+        "levelFollowsTopHeroes": "المستوى يتبع أدنى بطل في Top 5."
     },
     "goalText": {
         "to": "إلى {goal}"
@@ -109,6 +114,12 @@
             "generation": "الجيل، الأحدث أولًا",
             "name": "الاسم، من A إلى Z",
             "power": "إجمالي القوة، الأعلى أولًا"
+        },
+        "group": "المجموعة",
+        "groupOptions": {
+            "all": "الكل",
+            "top5": "Top 5",
+            "drillCamp": "Drill Camp"
         }
     },
     "maxOut": {
@@ -188,6 +199,13 @@
             "expeditionFull": "الحملة عند 5.0",
             "exploration": "هجوم {attack} · دفاع {defense} · صحة {health}",
             "expedition": "هجوم {attack}% · دفاع {defense}%"
+        },
+        "group": {
+            "title": "المجموعة",
+            "hint": "ضع علامة Top 5 على أقوى خمسة أبطال لديك. أبطال Drill Camp يأخذون أدنى مستوى بين أبطال Top 5، لذلك يتبع مستواهم ذلك المستوى.",
+            "none": "بلا",
+            "top5": "Top 5 ({count} of {max})",
+            "drillCamp": "Drill Camp ({count} of {max})"
         }
     },
     "plan": {

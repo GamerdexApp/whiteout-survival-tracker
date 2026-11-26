@@ -30,7 +30,12 @@
         "expedition": "Expédition",
         "talent": "Talent",
         "maxLevelSuffix": "/ {max}",
-        "heroCount": "{count, plural, one {{amount} héros} other {{amount} héros}}"
+        "heroCount": "{count, plural, one {{amount} héros} other {{amount} héros}}",
+        "tags": {
+            "top5": "Top 5",
+            "drillCamp": "Drill Camp"
+        },
+        "levelFollowsTopHeroes": "Le niveau suit le héros Top 5 le plus bas."
     },
     "goalText": {
         "to": "à {goal}"
@@ -109,6 +114,12 @@
             "generation": "Génération, la plus récente d'abord",
             "name": "Nom, A à Z",
             "power": "Puissance totale, la plus haute d'abord"
+        },
+        "group": "Groupe",
+        "groupOptions": {
+            "all": "Tous",
+            "top5": "Top 5",
+            "drillCamp": "Drill Camp"
         }
     },
     "maxOut": {
@@ -188,6 +199,13 @@
             "expeditionFull": "Expédition à 5.0",
             "exploration": "Att {attack} · Déf {defense} · PV {health}",
             "expedition": "Att {attack} % · Déf {defense} %"
+        },
+        "group": {
+            "title": "Groupe",
+            "hint": "Marquez vos cinq héros les plus forts comme Top 5. Les héros du Drill Camp prennent le niveau le plus bas des héros Top 5, leur niveau le suit donc.",
+            "none": "Aucun",
+            "top5": "Top 5 ({count} of {max})",
+            "drillCamp": "Drill Camp ({count} of {max})"
         }
     },
     "plan": {

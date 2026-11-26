@@ -30,7 +30,12 @@
         "expedition": "Expedition",
         "talent": "Talent",
         "maxLevelSuffix": "/ {max}",
-        "heroCount": "{count, plural, one {{amount} hero} other {{amount} heroes}}"
+        "heroCount": "{count, plural, one {{amount} hero} other {{amount} heroes}}",
+        "tags": {
+            "top5": "Top 5",
+            "drillCamp": "Drill Camp"
+        },
+        "levelFollowsTopHeroes": "The level follows the lowest Top 5 hero."
     },
     "goalText": {
         "to": "to {goal}"
@@ -109,6 +114,12 @@
             "generation": "Generation, latest first",
             "name": "Name, A to Z",
             "power": "Total power, highest first"
+        },
+        "group": "Group",
+        "groupOptions": {
+            "all": "All",
+            "top5": "Top 5",
+            "drillCamp": "Drill Camp"
         }
     },
     "maxOut": {
@@ -188,6 +199,13 @@
             "expeditionFull": "Expedition at 5.0",
             "exploration": "Atk {attack} · Def {defense} · HP {health}",
             "expedition": "Atk {attack}% · Def {defense}%"
+        },
+        "group": {
+            "title": "Group",
+            "hint": "Tag your five strongest heroes as Top 5. Heroes in the Drill Camp take the lowest level of the Top 5 heroes, so their level follows it.",
+            "none": "None",
+            "top5": "Top 5 ({count} of {max})",
+            "drillCamp": "Drill Camp ({count} of {max})"
         }
     },
     "plan": {

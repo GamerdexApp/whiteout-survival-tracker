@@ -30,7 +30,12 @@
         "expedition": "Expedition",
         "talent": "Talent",
         "maxLevelSuffix": "/ {max}",
-        "heroCount": "{count, plural, other {{amount} hero}}"
+        "heroCount": "{count, plural, other {{amount} hero}}",
+        "tags": {
+            "top5": "Top 5",
+            "drillCamp": "Drill Camp"
+        },
+        "levelFollowsTopHeroes": "Tahap mengikut wira Top 5 yang terendah."
     },
     "goalText": {
         "to": "ke {goal}"
@@ -109,6 +114,12 @@
             "generation": "Generasi, terkini dahulu",
             "name": "Nama, A hingga Z",
             "power": "Jumlah kuasa, tertinggi dahulu"
+        },
+        "group": "Kumpulan",
+        "groupOptions": {
+            "all": "Semua",
+            "top5": "Top 5",
+            "drillCamp": "Drill Camp"
         }
     },
     "maxOut": {
@@ -188,6 +199,13 @@
             "expeditionFull": "Expedition pada 5.0",
             "exploration": "Atk {attack} · Def {defense} · HP {health}",
             "expedition": "Atk {attack}% · Def {defense}%"
+        },
+        "group": {
+            "title": "Kumpulan",
+            "hint": "Tandakan lima wira terkuat anda sebagai Top 5. Wira dalam Drill Camp mengambil tahap terendah wira Top 5, jadi tahapnya mengikutinya.",
+            "none": "Tiada",
+            "top5": "Top 5 ({count} of {max})",
+            "drillCamp": "Drill Camp ({count} of {max})"
         }
     },
     "plan": {

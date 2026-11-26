@@ -30,7 +30,12 @@
         "expedition": "Expedition",
         "talent": "พรสวรรค์",
         "maxLevelSuffix": "/ {max}",
-        "heroCount": "{count, plural, other {ฮีโร่ {amount} คน}}"
+        "heroCount": "{count, plural, other {ฮีโร่ {amount} คน}}",
+        "tags": {
+            "top5": "Top 5",
+            "drillCamp": "Drill Camp"
+        },
+        "levelFollowsTopHeroes": "เลเวลตามฮีโร่ Top 5 ที่ต่ำที่สุด"
     },
     "goalText": {
         "to": "ถึง {goal}"
@@ -109,6 +114,12 @@
             "generation": "รุ่น ล่าสุดก่อน",
             "name": "ชื่อ A ถึง Z",
             "power": "พลังรวม สูงสุดก่อน"
+        },
+        "group": "กลุ่ม",
+        "groupOptions": {
+            "all": "ทั้งหมด",
+            "top5": "Top 5",
+            "drillCamp": "Drill Camp"
         }
     },
     "maxOut": {
@@ -188,6 +199,13 @@
             "expeditionFull": "Expedition ที่ 5.0",
             "exploration": "Atk {attack} · Def {defense} · HP {health}",
             "expedition": "Atk {attack}% · Def {defense}%"
+        },
+        "group": {
+            "title": "กลุ่ม",
+            "hint": "ทำเครื่องหมายฮีโร่ที่แข็งแกร่งที่สุดห้าคนเป็น Top 5 ฮีโร่ใน Drill Camp จะใช้เลเวลต่ำสุดของฮีโร่ Top 5 เลเวลจึงเปลี่ยนตามนั้น",
+            "none": "ไม่มี",
+            "top5": "Top 5 ({count} of {max})",
+            "drillCamp": "Drill Camp ({count} of {max})"
         }
     },
     "plan": {

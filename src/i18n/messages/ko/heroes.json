@@ -30,7 +30,12 @@
         "expedition": "원정",
         "talent": "재능",
         "maxLevelSuffix": "/ {max}",
-        "heroCount": "{count, plural, other {영웅 {amount}명}}"
+        "heroCount": "{count, plural, other {영웅 {amount}명}}",
+        "tags": {
+            "top5": "Top 5",
+            "drillCamp": "Drill Camp"
+        },
+        "levelFollowsTopHeroes": "레벨은 Top 5에서 가장 낮은 영웅을 따라가요."
     },
     "goalText": {
         "to": "{goal}까지"
@@ -109,6 +114,12 @@
             "generation": "최신 세대순",
             "name": "이름순",
             "power": "총 전투력 높은 순"
+        },
+        "group": "그룹",
+        "groupOptions": {
+            "all": "전체",
+            "top5": "Top 5",
+            "drillCamp": "Drill Camp"
         }
     },
     "maxOut": {
@@ -188,6 +199,13 @@
             "expeditionFull": "5.0의 원정",
             "exploration": "공격 {attack} · 방어 {defense} · HP {health}",
             "expedition": "공격 {attack}% · 방어 {defense}%"
+        },
+        "group": {
+            "title": "그룹",
+            "hint": "가장 강한 영웅 다섯 명을 Top 5로 지정하세요. Drill Camp 영웅은 Top 5 영웅 중 가장 낮은 레벨을 따라가요.",
+            "none": "없음",
+            "top5": "Top 5 ({count} of {max})",
+            "drillCamp": "Drill Camp ({count} of {max})"
         }
     },
     "plan": {

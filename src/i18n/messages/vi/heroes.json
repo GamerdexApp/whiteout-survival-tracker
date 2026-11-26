@@ -30,7 +30,12 @@
         "expedition": "Viễn chinh",
         "talent": "Thiên phú",
         "maxLevelSuffix": "/ {max}",
-        "heroCount": "{count, plural, other {{amount} anh hùng}}"
+        "heroCount": "{count, plural, other {{amount} anh hùng}}",
+        "tags": {
+            "top5": "Top 5",
+            "drillCamp": "Drill Camp"
+        },
+        "levelFollowsTopHeroes": "Cấp độ theo anh hùng Top 5 thấp nhất."
     },
     "goalText": {
         "to": "đến {goal}"
@@ -109,6 +114,12 @@
             "generation": "Thế hệ, mới nhất trước",
             "name": "Tên, A đến Z",
             "power": "Tổng sức mạnh, cao nhất trước"
+        },
+        "group": "Nhóm",
+        "groupOptions": {
+            "all": "Tất cả",
+            "top5": "Top 5",
+            "drillCamp": "Drill Camp"
         }
     },
     "maxOut": {
@@ -188,6 +199,13 @@
             "expeditionFull": "Viễn chinh ở 5.0",
             "exploration": "Tấn {attack} · Thủ {defense} · HP {health}",
             "expedition": "Tấn {attack}% · Thủ {defense}%"
+        },
+        "group": {
+            "title": "Nhóm",
+            "hint": "Gắn thẻ năm anh hùng mạnh nhất của bạn là Top 5. Anh hùng trong Drill Camp lấy cấp thấp nhất của các anh hùng Top 5, nên cấp của họ đi theo cấp đó.",
+            "none": "Không",
+            "top5": "Top 5 ({count} of {max})",
+            "drillCamp": "Drill Camp ({count} of {max})"
         }
     },
     "plan": {

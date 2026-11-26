@@ -2,7 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { formatNumber } from "@/lib/format";
-import type { HeroFilters, HeroOrder, OwnedFilter } from "@/service/heroes";
+import type { HeroFilters, HeroOrder, OwnedFilter, TagFilter } from "@/service/heroes";
 import { heroClasses, heroRarities } from "@/data/game/heroes";
 import { Button } from "@/comps/ui/Button";
 import { Flyout } from "@/comps/ui/Flyout";
@@ -20,6 +20,8 @@ interface HeroFiltersFlyoutProps {
 }
 
 const ownershipIds: OwnedFilter[] = ["all", "owned", "notOwned"];
+
+const tagIds: TagFilter[] = ["all", "top5", "drillCamp"];
 
 const orderIds: HeroOrder[] = ["owned", "generation", "name", "power"];
 
@@ -116,6 +118,15 @@ export function HeroFiltersFlyout({
 					}))}
 					value={filters.ownership}
 					onChange={(ownership) => onChange({ ...filters, ownership })}
+				/>
+			</div>
+			<div className="flex flex-col gap-2">
+				<SectionLabel className="text-muted">{t("group")}</SectionLabel>
+				<RadioGroup
+					label={t("group")}
+					options={tagIds.map((id) => ({ id, label: t(`groupOptions.${id}`) }))}
+					value={filters.tag}
+					onChange={(tag) => onChange({ ...filters, tag })}
 				/>
 			</div>
 			<div className="flex flex-col gap-2">

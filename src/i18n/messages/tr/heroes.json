@@ -30,7 +30,12 @@
         "expedition": "Sefer",
         "talent": "Yetenek",
         "maxLevelSuffix": "/ {max}",
-        "heroCount": "{count, plural, one {{amount} kahraman} other {{amount} kahraman}}"
+        "heroCount": "{count, plural, one {{amount} kahraman} other {{amount} kahraman}}",
+        "tags": {
+            "top5": "Top 5",
+            "drillCamp": "Drill Camp"
+        },
+        "levelFollowsTopHeroes": "Seviye, en düşük Top 5 kahramanını izler."
     },
     "goalText": {
         "to": "hedef {goal}"
@@ -109,6 +114,12 @@
             "generation": "Nesil, en yeni önce",
             "name": "Ad, A'dan Z'ye",
             "power": "Toplam güç, en yüksek önce"
+        },
+        "group": "Grup",
+        "groupOptions": {
+            "all": "Tümü",
+            "top5": "Top 5",
+            "drillCamp": "Drill Camp"
         }
     },
     "maxOut": {
@@ -188,6 +199,13 @@
             "expeditionFull": "Sefer, 5.0",
             "exploration": "Sld {attack} · Svn {defense} · Can {health}",
             "expedition": "Sld %{attack} · Svn %{defense}"
+        },
+        "group": {
+            "title": "Grup",
+            "hint": "En güçlü beş kahramanını Top 5 olarak işaretle. Drill Camp'teki kahramanlar Top 5 kahramanlarının en düşük seviyesini alır, yani seviyeleri onu izler.",
+            "none": "Yok",
+            "top5": "Top 5 ({count} of {max})",
+            "drillCamp": "Drill Camp ({count} of {max})"
         }
     },
     "plan": {

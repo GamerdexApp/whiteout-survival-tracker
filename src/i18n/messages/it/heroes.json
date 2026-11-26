@@ -30,7 +30,12 @@
         "expedition": "Spedizione",
         "talent": "Talento",
         "maxLevelSuffix": "/ {max}",
-        "heroCount": "{count, plural, one {{amount} eroe} other {{amount} eroi}}"
+        "heroCount": "{count, plural, one {{amount} eroe} other {{amount} eroi}}",
+        "tags": {
+            "top5": "Top 5",
+            "drillCamp": "Drill Camp"
+        },
+        "levelFollowsTopHeroes": "Il livello segue l'eroe Top 5 più basso."
     },
     "goalText": {
         "to": "a {goal}"
@@ -109,6 +114,12 @@
             "generation": "Generazione, prima l'ultima",
             "name": "Nome, dalla A alla Z",
             "power": "Potenza totale, prima la più alta"
+        },
+        "group": "Gruppo",
+        "groupOptions": {
+            "all": "Tutti",
+            "top5": "Top 5",
+            "drillCamp": "Drill Camp"
         }
     },
     "maxOut": {
@@ -188,6 +199,13 @@
             "expeditionFull": "Spedizione a 5.0",
             "exploration": "Att {attack} · Dif {defense} · PS {health}",
             "expedition": "Att {attack}% · Dif {defense}%"
+        },
+        "group": {
+            "title": "Gruppo",
+            "hint": "Segna i tuoi cinque eroi più forti come Top 5. Gli eroi del Drill Camp prendono il livello più basso degli eroi Top 5, quindi il loro livello lo segue.",
+            "none": "Nessuno",
+            "top5": "Top 5 ({count} of {max})",
+            "drillCamp": "Drill Camp ({count} of {max})"
         }
     },
     "plan": {

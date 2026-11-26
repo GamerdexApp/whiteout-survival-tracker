@@ -114,8 +114,11 @@ export interface UpgradeLogEntry {
   power: number;
 }
 
+export type HeroTag = "top5" | "drillCamp";
+
 export interface HeroState {
   owned?: boolean;
+  tag?: HeroTag;
   star?: number;
   tier?: number;
   level?: number;
