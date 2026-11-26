@@ -183,9 +183,7 @@
         "from": "{value}到",
         "result": {
             "title": "{amount} {count, plural, other {件装备}}的结果",
-            "power": "战力",
             "powerLines": {
-                "gained": "获得战力",
                 "before": "这些装备之前的战力",
                 "after": "这些装备之后的战力"
             },
@@ -197,11 +195,6 @@
             "forgingStatsUp": "+{percent}%（{steps}步）",
             "milestones": "已解锁的里程碑",
             "milestoneLine": "{label}：{stat}",
-            "events": {
-                "svs": "SvS",
-                "allianceShowdown": "Alliance Showdown",
-                "kingOfIcefield": "King of Icefield"
-            },
             "note": "英雄装备计划没有速度或加成选项。计算器不返回时间。",
             "tableLabel": "计划结果表"
         }

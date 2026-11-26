@@ -173,7 +173,6 @@
         },
         "result": {
             "title": "Result for {count, plural, one {{amount} pet} other {{amount} pets}}",
-            "resources": "Resources, all pets",
             "byPet": "By pet",
             "heads": {
                 "pet": "Pet",
@@ -184,25 +183,14 @@
             "powerGain": "+{value}",
             "percentGain": "+{value}%",
             "unknown": "Unknown",
-            "gains": "Gains",
             "gainNames": {
                 "levels": "Levels gained",
                 "advancements": "Advancements",
                 "attack": "Troop Attack",
                 "defense": "Troop Defense",
-                "power": "Power",
                 "score": "Advancement score"
             },
             "unknownPowerNote": "The package has no advanced power for a level in this plan, so the power gain is Unknown.",
-            "eventPoints": "Event points",
-            "events": {
-                "svs": "SvS",
-                "allianceShowdown": "Alliance Showdown",
-                "kingOfIcefield": "King of Icefield",
-                "hallOfChief": "Hall of Chief"
-            },
-            "notScored": "Not scored",
-            "eventNote": "Event points are the advancement score plus every Common and Advanced Wild Mark you hold, as if all were used, times the points of the scoring row of each event. Each event counts the day that scores the most.",
             "chestOf": "of {held} held"
         },
         "chest": {

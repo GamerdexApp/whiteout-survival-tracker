@@ -111,14 +111,12 @@
             },
             "appointmentEffect": "+{capacity} de capacidad, +{speed}% de velocidad",
             "appointmentNote": "Solo uno de los dos cargos puede estar activo. Ministro de Educación suma {moeCapacity} de capacidad y {moeSpeed} por ciento de velocidad (Supremo {moeCapacitySupreme} y {moeSpeedSupreme}). Vicepresidente suma {vpSpeed} por ciento de velocidad (Supremo {vpSpeedSupreme}).",
-            "capacity": "Capacidad",
             "researchCapacity": "Capacidad de investigación",
             "troops": "{value} tropas",
             "readOnly": "Solo lectura",
             "capacityBoost": "Aumento de capacidad",
             "boostTotal": "Total x{multiplier}",
             "capacityPerBatch": "Capacidad por tanda",
-            "trainingSpeed": "Velocidad de entrenamiento",
             "gameSpeed": "Velocidad de entrenamiento del juego",
             "appointmentSpeed": "Cargo",
             "mobilize": "Mobilize",
@@ -134,9 +132,7 @@
         },
         "result": {
             "title": "Resultado",
-            "resources": "Recursos",
             "changes": "Cambios de tropas por rango",
-            "powerTitle": "Aumento de poder estimado",
             "heads": {
                 "tier": "Rango",
                 "infantry": "Inf.",
@@ -150,7 +146,6 @@
             "totalTime": "Total, todos los tipos de tropa (tiempo de aceleración)",
             "longest": "Tipo de tropa más largo",
             "minutesNeeded": "Minutos de aceleración necesarios",
-            "minutesUsed": "Minutos de aceleración usados (en inventario)",
             "minutes": "{value} min",
             "tier12Note": "El paquete de datos indica que los costos del rango 12 se derivaron en parte. El costo de ascenso de Tirador se midió en el juego, y los costos de Infantería y Lancero se escalaron a partir de él."
         }

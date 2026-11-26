@@ -23,7 +23,6 @@ import {
 	STATE_BUFF_PERCENT,
 	VICE_PRESIDENT_PERCENT,
 } from "@/service/researchPlan";
-import { findItem } from "@/data/game/items";
 import {
 	allResearch,
 	findResearch,
@@ -34,6 +33,9 @@ import {
 } from "@/data/game/research";
 import { EarnablePoints } from "@/comps/export/EarnablePoints";
 import { ExportToEventFlyout } from "@/comps/export/ExportToEventFlyout";
+import { PanelRow, PlanPanel } from "@/comps/plans/PlanPanel";
+import { ResultResources } from "@/comps/plans/ResultResources";
+import { ResultStats } from "@/comps/plans/ResultStats";
 import { GeneralSpeedupShare } from "@/comps/queues/GeneralSpeedupShare";
 import { PlanStockCheck } from "@/comps/queues/PlanStockCheck";
 import { Badge } from "@/comps/ui/Badge";
@@ -41,7 +43,6 @@ import { Button } from "@/comps/ui/Button";
 import { Card } from "@/comps/ui/Card";
 import { Flyout } from "@/comps/ui/Flyout";
 import { IconButton } from "@/comps/ui/IconButton";
-import { ItemIcon } from "@/comps/ui/ItemIcon";
 import { Note } from "@/comps/ui/Note";
 import { PlanFooter } from "@/comps/ui/PlanFooter";
 import { SectionLabel } from "@/comps/ui/SectionLabel";
@@ -342,61 +343,52 @@ export function ResearchSpeedControls({
 	}));
 
 	return (
-		<div className="border-line bg-tint flex flex-col gap-3 rounded-md border-[1.5px] p-3">
-			<div className="flex items-center justify-between gap-3">
-				<span className="font-medium">{t("plan.speed.title")}</span>
-				<span className="flex items-center gap-2">
-					<span className="font-mono font-medium">
-						{t("plan.percent", { value: formatNumber(bonusesPercent) })}
-					</span>
-					<Badge tone="added">{t("plan.speed.readOnly")}</Badge>
+		<PlanPanel>
+			<PanelRow
+				label={t("plan.speed.title")}
+				note={
+					<>
+						{bonusesOn ? t("plan.speed.carriedOver") : t("plan.speed.turnedOff")}{" "}
+						<Link href="/bonuses" className="text-link underline">
+							{t("plan.speed.openBonuses")}
+						</Link>
+					</>
+				}
+			>
+				<span className="font-mono font-medium">
+					{t("plan.percent", { value: formatNumber(bonusesPercent) })}
 				</span>
-			</div>
-			<p className="text-muted text-xs">
-				{bonusesOn ? t("plan.speed.carriedOver") : t("plan.speed.turnedOff")}{" "}
-				<Link href="/bonuses" className="text-link underline">
-					{t("plan.speed.openBonuses")}
-				</Link>
-			</p>
-			<hr className="border-line border-t-[1.5px]" />
-			<div className="flex items-center justify-between gap-3">
-				<span className="font-medium">{t("plan.speed.stateBuff")}</span>
-				<span className="flex items-center gap-2">
-					<Switch
-						label={t("plan.speed.stateBuff")}
-						checked={controls.stateBuff}
-						onChange={(stateBuff) => onChange({ ...controls, stateBuff })}
-					/>
-					<span className="font-mono text-xs">
-						{t("plan.percentPlus", { value: formatNumber(STATE_BUFF_PERCENT) })}
-					</span>
+				<Badge tone="added">{t("plan.speed.readOnly")}</Badge>
+			</PanelRow>
+			<PanelRow label={t("plan.speed.stateBuff")}>
+				<Switch
+					label={t("plan.speed.stateBuff")}
+					checked={controls.stateBuff}
+					onChange={(stateBuff) => onChange({ ...controls, stateBuff })}
+				/>
+				<span className="font-mono text-xs">
+					{t("plan.percentPlus", { value: formatNumber(STATE_BUFF_PERCENT) })}
 				</span>
-			</div>
-			<hr className="border-line border-t-[1.5px]" />
-			<div className="flex flex-wrap items-center justify-between gap-3">
-				<span className="font-medium">{t("plan.speed.vicePresident")}</span>
-				<span className="flex items-center gap-2">
-					<SegmentedControl
-						label={t("plan.speed.vicePresident")}
-						options={appointmentOptions}
-						value={controls.vicePresident}
-						onChange={(vicePresident) => onChange({ ...controls, vicePresident })}
-					/>
-					<span className="font-mono text-xs">
-						{t("plan.percentPlus", {
-							value: formatNumber(VICE_PRESIDENT_PERCENT[controls.vicePresident]),
-						})}
-					</span>
+			</PanelRow>
+			<PanelRow label={t("plan.speed.vicePresident")}>
+				<SegmentedControl
+					label={t("plan.speed.vicePresident")}
+					options={appointmentOptions}
+					value={controls.vicePresident}
+					onChange={(vicePresident) => onChange({ ...controls, vicePresident })}
+				/>
+				<span className="font-mono text-xs">
+					{t("plan.percentPlus", {
+						value: formatNumber(VICE_PRESIDENT_PERCENT[controls.vicePresident]),
+					})}
 				</span>
-			</div>
-			<hr className="border-line border-t-[1.5px]" />
-			<div className="flex items-center justify-between gap-3">
-				<span className="font-semibold">{t("plan.speed.total")}</span>
+			</PanelRow>
+			<PanelRow label={t("plan.speed.total")} emphasis>
 				<span className="text-primary font-mono font-semibold">
 					{t("plan.percent", { value: formatNumber(speedPercent) })}
 				</span>
-			</div>
-		</div>
+			</PanelRow>
+		</PlanPanel>
 	);
 }
 
@@ -454,6 +446,7 @@ function PlanResult({
 	speedPercent: number;
 }) {
 	const t = useTranslations("research");
+	const tCommon = useTranslations("common");
 	const lines = calculation.items.filter((item) => item.steps > 0);
 
 	return (
@@ -461,43 +454,27 @@ function PlanResult({
 			<h3 className="font-semibold">
 				{t("plan.result.title", { steps: formatNumber(calculation.steps) })}
 			</h3>
-			<div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
-				{calculation.resources.map((resource) => {
-					const item = findItem(resource.itemId);
-					return (
-						<div key={resource.itemId} className="flex items-start gap-2">
-							<ItemIcon src={item?.img} size={24} />
-							<div className="flex flex-col">
-								<span className="text-muted text-xs">
-									{item?.name ?? resource.itemId}
-								</span>
-								<span className="font-mono font-semibold">
-									{formatNumber(resource.amount)}
-								</span>
-							</div>
-						</div>
-					);
-				})}
-			</div>
-			<div className="grid gap-3 sm:grid-cols-2">
-				<Stat
-					label={t("plan.result.powerGained")}
-					value={`+${formatNumber(calculation.power)}`}
-				/>
-				<Stat
-					label={t("plan.result.speedupMinutes")}
-					value={formatNumber(calculation.speedupMinutesNeeded)}
-					emphasis
-				/>
-				<Stat
-					label={t("plan.result.baseTime")}
-					value={formatDuration(calculation.baseSeconds)}
-				/>
-				<Stat
-					label={t("plan.result.timeWithBonus", { percent: formatNumber(speedPercent) })}
-					value={formatDuration(calculation.seconds)}
-				/>
-			</div>
+			<ResultResources items={calculation.resources} />
+			<ResultStats
+				stats={[
+					{ label: tCommon("powerGained"), value: `+${formatNumber(calculation.power)}` },
+					{
+						label: t("plan.result.speedupMinutes"),
+						value: formatNumber(calculation.speedupMinutesNeeded),
+						emphasis: true,
+					},
+					{
+						label: t("plan.result.baseTime"),
+						value: formatDuration(calculation.baseSeconds),
+					},
+					{
+						label: t("plan.result.timeWithBonus", {
+							percent: formatNumber(speedPercent),
+						}),
+						value: formatDuration(calculation.seconds),
+					},
+				]}
+			/>
 			{calculation.stepsWithoutTime > 0 && (
 				<p className="text-muted text-xs">
 					{t("plan.result.stepsWithoutTime", {
@@ -557,24 +534,5 @@ function PlanResult({
 				</p>
 			</div>
 		</Card>
-	);
-}
-
-function Stat({
-	label,
-	value,
-	emphasis = false,
-}: {
-	label: string;
-	value: string;
-	emphasis?: boolean;
-}) {
-	return (
-		<div className="bg-tint flex flex-col gap-0.5 rounded-md px-3 py-2">
-			<span className="text-muted text-xs">{label}</span>
-			<span className={`font-mono text-lg font-semibold ${emphasis ? "text-primary" : ""}`}>
-				{value}
-			</span>
-		</div>
 	);
 }

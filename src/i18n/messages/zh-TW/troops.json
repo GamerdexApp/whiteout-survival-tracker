@@ -111,14 +111,12 @@
             },
             "appointmentEffect": "容量 +{capacity}，速度 +{speed}%",
             "appointmentNote": "兩種任命只能開啟其中一種。教育部長增加 {moeCapacity} 容量和 {moeSpeed}% 速度（最高等級為 {moeCapacitySupreme} 和 {moeSpeedSupreme}）。副總統增加 {vpSpeed}% 速度（最高等級為 {vpSpeedSupreme}）。",
-            "capacity": "容量",
             "researchCapacity": "研究容量",
             "troops": "{value} 名士兵",
             "readOnly": "唯讀",
             "capacityBoost": "容量加成",
             "boostTotal": "合計 x{multiplier}",
             "capacityPerBatch": "每批容量",
-            "trainingSpeed": "訓練速度",
             "gameSpeed": "遊戲內訓練速度",
             "appointmentSpeed": "任命",
             "mobilize": "Mobilize",
@@ -134,9 +132,7 @@
         },
         "result": {
             "title": "結果",
-            "resources": "資源",
             "changes": "各階級部隊變化",
-            "powerTitle": "預計戰力提升",
             "heads": {
                 "tier": "階級",
                 "infantry": "步兵",
@@ -150,7 +146,6 @@
             "totalTime": "合計，所有部隊類型（加速時間）",
             "longest": "最久的部隊類型",
             "minutesNeeded": "所需加速分鐘數",
-            "minutesUsed": "使用的加速分鐘數（庫存）",
             "minutes": "{value} 分",
             "tier12Note": "資料包指出第 12 階的花費有一部分是推算的。弓兵晉升花費是在遊戲中實測的，步兵和騎兵的花費則由它按比例換算。"
         }

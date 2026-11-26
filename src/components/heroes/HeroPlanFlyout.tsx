@@ -24,8 +24,10 @@ import {
 import { exportSpecOf } from "@/service/heroExport";
 import { ownedCount } from "@/service/inventory";
 import { MAX_SKILL_LEVEL, MAX_WEAPON_LEVEL, skillsOf } from "@/data/game/heroes";
-import { findItem } from "@/data/game/items";
+import { EarnablePoints } from "@/comps/export/EarnablePoints";
 import { ExportToEventFlyout } from "@/comps/export/ExportToEventFlyout";
+import { ResultResources } from "@/comps/plans/ResultResources";
+import { ResultStats } from "@/comps/plans/ResultStats";
 import { PlanStockCheck } from "@/comps/queues/PlanStockCheck";
 import { Badge } from "@/comps/ui/Badge";
 import { Button } from "@/comps/ui/Button";
@@ -191,6 +193,7 @@ function PlanBody({
 					<PlanStockCheck checks={heroPlanChecks(plan, chief)} timeNote="" />
 					<ShardsUsed plan={plan} />
 					<PlanResult plan={plan} />
+					<EarnablePoints chief={chief} spec={exportSpecOf(plan)} />
 				</>
 			)}
 		</>
@@ -359,53 +362,43 @@ function ShardsUsed({ plan }: { plan: HeroPlanResult }) {
 	);
 }
 
-const EVENT_KEYS: (keyof HeroPlanResult["eventPoints"])[] = [
-	"svs",
-	"allianceShowdown",
-	"kingOfIcefield",
-	"hallOfChief",
-];
-
-const TABLE_HEADS = ["hero", "starSteps", "skillLevels", "shards", "widgets"] as const;
+const TABLE_HEADS = ["hero", "starSteps", "skillLevels", "shards", "widgets", "power"] as const;
 
 function PlanResult({ plan }: { plan: HeroPlanResult }) {
 	const t = useTranslations("heroes.plan");
 	const te = useTranslations("heroes.export");
+	const tCommon = useTranslations("common");
 	const steps = plan.starSteps + plan.skillLevels + plan.weaponLevels;
 	const resources = [...plan.resources.entries()];
 
 	return (
 		<Card className="flex flex-col gap-4 p-4">
 			<h3 className="font-semibold">{t("result.title", { steps: formatNumber(steps) })}</h3>
-			<div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
-				{resources.map(([itemId, amount]) => {
-					const item = findItem(itemId);
+			<ResultResources
+				items={resources.map(([itemId, amount]) => {
 					const shardRarity = heroShardRarityOf(itemId);
-					return (
-						<div key={itemId} className="flex items-start gap-2">
-							<ItemIcon src={item?.img} size={24} />
-							<div className="flex flex-col">
-								<span className="text-muted text-xs">
-									{shardRarity
-										? te(`shards.${shardRarity}`)
-										: (item?.name ?? itemId)}
-								</span>
-								<span className="font-mono font-semibold">
-									{formatNumber(amount)}
-								</span>
-							</div>
-						</div>
-					);
+					return {
+						itemId,
+						amount,
+						name: shardRarity ? te(`shards.${shardRarity}`) : undefined,
+					};
 				})}
-				{plan.widgets > 0 && (
-					<div className="flex flex-col">
-						<span className="text-muted text-xs">{t("result.widgets")}</span>
-						<span className="font-mono font-semibold">
-							{formatNumber(plan.widgets)}
-						</span>
-					</div>
-				)}
-			</div>
+			/>
+			<ResultStats
+				stats={[
+					{
+						label: tCommon("powerGained"),
+						value:
+							plan.powerGain === null
+								? t("result.unknown")
+								: `+${formatNumber(plan.powerGain)}`,
+					},
+					...(plan.widgets > 0
+						? [{ label: t("result.widgets"), value: formatNumber(plan.widgets) }]
+						: []),
+				]}
+			/>
+			{plan.powerGain === null && <Note>{t("result.unknownPowerNote")}</Note>}
 			<ScrollRegion label={t("result.tableLabel")}>
 				<table className="w-full min-w-104 text-start">
 					<thead>
@@ -428,8 +421,13 @@ function PlanResult({ plan }: { plan: HeroPlanResult }) {
 								<td className="pe-3 font-mono">
 									{formatNumber(row.calculation.stars.shards)}
 								</td>
-								<td className="font-mono">
+								<td className="pe-3 font-mono">
 									{formatNumber(row.calculation.widgets.widgets)}
+								</td>
+								<td className="font-mono">
+									{row.powerGain === null
+										? t("result.unknown")
+										: `+${formatNumber(row.powerGain)}`}
 								</td>
 							</tr>
 						))}
@@ -442,19 +440,6 @@ function PlanResult({ plan }: { plan: HeroPlanResult }) {
 					amount: formatNumber(plan.unlockedWeaponSkills),
 				})}
 			</p>
-			<div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
-				{EVENT_KEYS.map((key) => (
-					<div
-						key={key}
-						className="border-line flex flex-col rounded-md border-[1.5px] p-2"
-					>
-						<span className="text-muted text-xs">{t(`events.${key}`)}</span>
-						<span className="font-mono font-semibold">
-							{formatNumber(plan.eventPoints[key])}
-						</span>
-					</div>
-				))}
-			</div>
 			<p className="text-muted text-xs">{t("result.note")}</p>
 		</Card>
 	);

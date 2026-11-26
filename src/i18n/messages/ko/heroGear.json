@@ -183,9 +183,7 @@
         "from": "{value}에서",
         "result": {
             "title": "{count, plural, other {장비 {amount}개}} 결과",
-            "power": "전투력",
             "powerLines": {
-                "gained": "얻는 전투력",
                 "before": "이 장비들의 이전 전투력",
                 "after": "이 장비들의 이후 전투력"
             },
@@ -197,11 +195,6 @@
             "forgingStatsUp": "+{percent}% ({steps}단계)",
             "milestones": "해금된 이정표",
             "milestoneLine": "{label}: {stat}",
-            "events": {
-                "svs": "SvS",
-                "allianceShowdown": "Alliance Showdown",
-                "kingOfIcefield": "King of Icefield"
-            },
             "note": "영웅 장비 계획에는 속도나 보너스 설정이 없어요. 계산기는 시간을 반환하지 않아요.",
             "tableLabel": "계획 결과 표"
         }

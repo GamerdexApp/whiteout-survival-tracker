@@ -222,21 +222,18 @@
             "title": "Итог, шагов: {steps}",
             "widgets": "Widgets",
             "weaponSkills": "{count, plural, one {Открыт {amount} навык оружия} few {Открыто {amount} навыка оружия} many {Открыто {amount} навыков оружия} other {Открыто {amount} навыка оружия}}",
-            "note": "Мощь не входит в план героев. Калькулятор не возвращает время и не принимает скорость.",
+            "note": "Калькулятор не возвращает время и не принимает скорость.",
             "heads": {
                 "hero": "Герой",
                 "starSteps": "Шаги звезды",
                 "skillLevels": "Уровни навыков",
                 "shards": "Осколки",
-                "widgets": "Widgets"
+                "widgets": "Widgets",
+                "power": "Мощь"
             },
-            "tableLabel": "Таблица итогов плана"
-        },
-        "events": {
-            "svs": "SvS State of Power",
-            "allianceShowdown": "Alliance Showdown",
-            "kingOfIcefield": "King of Icefield",
-            "hallOfChief": "Hall of Chief"
+            "tableLabel": "Таблица итогов плана",
+            "unknown": "Неизвестно",
+            "unknownPowerNote": "В пакете нет мощи для части этого плана, поэтому прирост мощи неизвестен."
         },
         "luckyWheel": {
             "title": "Колесо удачи",

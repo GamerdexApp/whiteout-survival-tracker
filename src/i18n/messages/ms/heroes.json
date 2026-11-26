@@ -222,21 +222,18 @@
             "title": "Hasil, {steps} langkah",
             "widgets": "Widget",
             "weaponSkills": "{count, plural, other {{amount} kemahiran senjata dibuka}}",
-            "note": "Kuasa bukan sebahagian daripada Rancang Hero. Kalkulator tidak memberi masa dan tidak menerima input kelajuan.",
+            "note": "Kalkulator tidak memberi masa dan tidak menerima input kelajuan.",
             "heads": {
                 "hero": "Hero",
                 "starSteps": "Langkah bintang",
                 "skillLevels": "Tahap kemahiran",
                 "shards": "Serpihan",
-                "widgets": "Widget"
+                "widgets": "Widget",
+                "power": "Kuasa"
             },
-            "tableLabel": "Jadual hasil pelan"
-        },
-        "events": {
-            "svs": "SvS State of Power",
-            "allianceShowdown": "Alliance Showdown",
-            "kingOfIcefield": "King of Icefield",
-            "hallOfChief": "Hall of Chief"
+            "tableLabel": "Jadual hasil pelan",
+            "unknown": "Tidak diketahui",
+            "unknownPowerNote": "Pakej tiada kuasa untuk sebahagian pelan ini, jadi perolehan kuasa Tidak diketahui."
         },
         "luckyWheel": {
             "title": "Roda Bertuah",

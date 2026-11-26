@@ -19,12 +19,12 @@ import {
 } from "@/service/troopsPlan";
 import type { TroopPosition, TroopsPlanDraft, TroopsPlanResult } from "@/service/troopsPlan";
 import { allTroops, MAX_TIER, TROOP_CALCULATOR } from "@/data/game/troops";
+import { PanelRow, PlanPanel } from "@/comps/plans/PlanPanel";
 import { Badge } from "@/comps/ui/Badge";
 import { Button } from "@/comps/ui/Button";
 import { Card } from "@/comps/ui/Card";
 import { Field } from "@/comps/ui/Field";
 import { Note } from "@/comps/ui/Note";
-import { SectionLabel } from "@/comps/ui/SectionLabel";
 import { Select } from "@/comps/ui/Select";
 import { Switch } from "@/comps/ui/Switch";
 import { CountInput } from "./CountInput";
@@ -257,23 +257,6 @@ const MINISTER = TROOP_CALCULATOR.ministerOfEducation;
 
 const POSITIONS: TroopPosition[] = ["none", "ministerOfEducation", "vicePresident"];
 
-function Row({
-	label,
-	children,
-	emphasis = false,
-}: {
-	label: string;
-	children: React.ReactNode;
-	emphasis?: boolean;
-}) {
-	return (
-		<div className="border-line flex min-h-11 flex-wrap items-center justify-between gap-x-3 gap-y-1 border-t-[1.5px] py-2 first:border-t-0">
-			<span className={emphasis ? "font-semibold" : "font-medium"}>{label}</span>
-			<span className="flex items-center gap-2">{children}</span>
-		</div>
-	);
-}
-
 export function CapacityAndSpeed({
 	draft,
 	result,
@@ -286,6 +269,7 @@ export function CapacityAndSpeed({
 	const t = useTranslations("troops.plan.speed");
 	const { bonuses, appointment, calculation } = result;
 	const percent = (value: number) => t("percent", { value: formatDecimal(value) });
+	const plusPercent = (value: number) => t("percentPlus", { value: formatNumber(value) });
 	const readOnly = <Badge tone="added">{t("readOnly")}</Badge>;
 
 	return (
@@ -297,120 +281,105 @@ export function CapacityAndSpeed({
 				</Link>
 			</p>
 			<h3 className="font-semibold">{t("title")}</h3>
-			<Card className="flex flex-col gap-2 p-4">
-				<SectionLabel className="text-muted">{t("appointment")}</SectionLabel>
-				<div className="flex flex-col gap-2">
+			<PlanPanel>
+				<PanelRow
+					label={t("appointment")}
+					note={t("appointmentNote", {
+						moeCapacity: formatNumber(MINISTER.capacity.regular),
+						moeSpeed: formatNumber(MINISTER.speedPercent.regular),
+						moeCapacitySupreme: formatNumber(MINISTER.capacity.supreme),
+						moeSpeedSupreme: formatNumber(MINISTER.speedPercent.supreme),
+						vpSpeed: formatNumber(TROOP_CALCULATOR.vicePresidentSpeedPercent.regular),
+						vpSpeedSupreme: formatNumber(
+							TROOP_CALCULATOR.vicePresidentSpeedPercent.supreme
+						),
+					})}
+				>
 					<TroopSegmented
 						label={t("position")}
 						options={POSITIONS.map((id) => ({ id, label: t(`positions.${id}`) }))}
 						value={draft.position}
 						onChange={(position) => onDraftChange({ ...draft, position })}
 					/>
-					<div className="flex flex-wrap items-center justify-between gap-2">
-						<TroopSegmented
-							label={t("rank")}
-							options={[
-								{ id: "regular", label: t("ranks.regular") },
-								{ id: "supreme", label: t("ranks.supreme") },
-							]}
-							value={draft.rank}
-							disabled={draft.position === "none"}
-							onChange={(rank) => onDraftChange({ ...draft, rank })}
-						/>
-						<span className="font-mono text-xs">
-							{t("appointmentEffect", {
-								capacity: formatNumber(appointment.capacity),
-								speed: formatNumber(appointment.speedPercent),
-							})}
-						</span>
-					</div>
-					<p className="text-muted text-xs">
-						{t("appointmentNote", {
-							moeCapacity: formatNumber(MINISTER.capacity.regular),
-							moeSpeed: formatNumber(MINISTER.speedPercent.regular),
-							moeCapacitySupreme: formatNumber(MINISTER.capacity.supreme),
-							moeSpeedSupreme: formatNumber(MINISTER.speedPercent.supreme),
-							vpSpeed: formatNumber(
-								TROOP_CALCULATOR.vicePresidentSpeedPercent.regular
-							),
-							vpSpeedSupreme: formatNumber(
-								TROOP_CALCULATOR.vicePresidentSpeedPercent.supreme
-							),
+				</PanelRow>
+				<PanelRow label={t("rank")}>
+					<TroopSegmented
+						label={t("rank")}
+						options={[
+							{ id: "regular", label: t("ranks.regular") },
+							{ id: "supreme", label: t("ranks.supreme") },
+						]}
+						value={draft.rank}
+						disabled={draft.position === "none"}
+						onChange={(rank) => onDraftChange({ ...draft, rank })}
+					/>
+					<span className="font-mono text-xs">
+						{t("appointmentEffect", {
+							capacity: formatNumber(appointment.capacity),
+							speed: formatNumber(appointment.speedPercent),
 						})}
-					</p>
-				</div>
-				<SectionLabel className="text-muted mt-2">{t("capacity")}</SectionLabel>
-				<div className="flex flex-col">
-					<Row label={t("researchCapacity")}>
-						<span className="font-mono font-semibold">
-							{t("troops", { value: formatNumber(bonuses.capacity) })}
-						</span>
-						{readOnly}
-					</Row>
-					<Row label={t("capacityBoost")}>
-						<span className="text-muted font-mono text-xs">
-							{t("boostTotal", {
-								multiplier: formatNumber(TROOP_CALCULATOR.capacityBoostMultiplier),
-							})}
-						</span>
-						<Switch
-							label={t("capacityBoost")}
-							checked={draft.capacityBoost}
-							onChange={(capacityBoost) => onDraftChange({ ...draft, capacityBoost })}
-						/>
-					</Row>
-					<Row label={t("capacityPerBatch")} emphasis>
-						<span className="text-primary font-mono font-semibold">
-							{formatNumber(calculation.capacity)}
-						</span>
-					</Row>
-				</div>
-				<SectionLabel className="text-muted mt-2">{t("trainingSpeed")}</SectionLabel>
-				<div className="flex flex-col">
-					<Row label={t("gameSpeed")}>
-						<span className="font-mono font-semibold">
-							{percent(bonuses.speedPercent)}
-						</span>
-						{readOnly}
-					</Row>
-					<Row label={t("appointmentSpeed")}>
-						<span className="font-mono text-xs">
-							{t("percentPlus", { value: formatNumber(appointment.speedPercent) })}
-						</span>
-					</Row>
-					<Row label={t("mobilize")}>
-						<span className="font-mono text-xs">
-							{t("percentPlus", {
-								value: formatNumber(TROOP_CALCULATOR.mobilizeSpeedPercent),
-							})}
-						</span>
-						<Switch
-							label={t("mobilize")}
-							checked={draft.mobilize}
-							onChange={(mobilize) => onDraftChange({ ...draft, mobilize })}
-						/>
-					</Row>
-					<Row label={t("advancedTraining")}>
-						<span className="font-mono text-xs">
-							{t("percentPlus", {
-								value: formatNumber(TROOP_CALCULATOR.advancedTrainingSpeedPercent),
-							})}
-						</span>
-						<Switch
-							label={t("advancedTraining")}
-							checked={draft.advancedTraining}
-							onChange={(advancedTraining) =>
-								onDraftChange({ ...draft, advancedTraining })
-							}
-						/>
-					</Row>
-					<Row label={t("speedUsed")} emphasis>
-						<span className="text-primary font-mono font-semibold">
-							{percent(calculation.trainingSpeedPercent)}
-						</span>
-					</Row>
-				</div>
-			</Card>
+					</span>
+				</PanelRow>
+				<PanelRow label={t("researchCapacity")}>
+					<span className="font-mono font-medium">
+						{t("troops", { value: formatNumber(bonuses.capacity) })}
+					</span>
+					{readOnly}
+				</PanelRow>
+				<PanelRow label={t("capacityBoost")}>
+					<span className="font-mono text-xs">
+						{t("boostTotal", {
+							multiplier: formatNumber(TROOP_CALCULATOR.capacityBoostMultiplier),
+						})}
+					</span>
+					<Switch
+						label={t("capacityBoost")}
+						checked={draft.capacityBoost}
+						onChange={(capacityBoost) => onDraftChange({ ...draft, capacityBoost })}
+					/>
+				</PanelRow>
+				<PanelRow label={t("capacityPerBatch")} emphasis>
+					<span className="text-primary font-mono font-semibold">
+						{formatNumber(calculation.capacity)}
+					</span>
+				</PanelRow>
+				<PanelRow label={t("gameSpeed")}>
+					<span className="font-mono font-medium">{percent(bonuses.speedPercent)}</span>
+					{readOnly}
+				</PanelRow>
+				<PanelRow label={t("appointmentSpeed")}>
+					<span className="font-mono text-xs">
+						{plusPercent(appointment.speedPercent)}
+					</span>
+				</PanelRow>
+				<PanelRow label={t("mobilize")}>
+					<Switch
+						label={t("mobilize")}
+						checked={draft.mobilize}
+						onChange={(mobilize) => onDraftChange({ ...draft, mobilize })}
+					/>
+					<span className="font-mono text-xs">
+						{plusPercent(TROOP_CALCULATOR.mobilizeSpeedPercent)}
+					</span>
+				</PanelRow>
+				<PanelRow label={t("advancedTraining")}>
+					<Switch
+						label={t("advancedTraining")}
+						checked={draft.advancedTraining}
+						onChange={(advancedTraining) =>
+							onDraftChange({ ...draft, advancedTraining })
+						}
+					/>
+					<span className="font-mono text-xs">
+						{plusPercent(TROOP_CALCULATOR.advancedTrainingSpeedPercent)}
+					</span>
+				</PanelRow>
+				<PanelRow label={t("speedUsed")} emphasis>
+					<span className="text-primary font-mono font-semibold">
+						{percent(calculation.trainingSpeedPercent)}
+					</span>
+				</PanelRow>
+			</PlanPanel>
 		</>
 	);
 }

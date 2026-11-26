@@ -183,9 +183,7 @@
         "from": "{value} إلى",
         "result": {
             "title": "نتيجة {amount} {count, plural, zero {قطعة} one {قطعة} two {قطعتين} few {قطع} many {قطعة} other {قطعة}}",
-            "power": "القوة",
             "powerLines": {
-                "gained": "القوة المكتسبة",
                 "before": "قوة هذه القطع قبل",
                 "after": "قوة هذه القطع بعد"
             },
@@ -197,11 +195,6 @@
             "forgingStatsUp": "‎+{percent}% ({steps} خطوات)",
             "milestones": "المراحل المفتوحة",
             "milestoneLine": "{label}: {stat}",
-            "events": {
-                "svs": "SvS",
-                "allianceShowdown": "Alliance Showdown",
-                "kingOfIcefield": "King of Icefield"
-            },
             "note": "ليس في خطة معدات الأبطال عناصر تحكم بالسرعة أو الميزات. لا تعيد الحاسبة وقتًا.",
             "tableLabel": "جدول نتيجة الخطة"
         }

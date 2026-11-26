@@ -173,7 +173,6 @@
         },
         "result": {
             "title": "Sonuç: {count, plural, one {{amount} evcil hayvan} other {{amount} evcil hayvan}}",
-            "resources": "Kaynaklar, tüm evcil hayvanlar",
             "byPet": "Evcil hayvana göre",
             "heads": {
                 "pet": "Evcil hayvan",
@@ -184,25 +183,14 @@
             "powerGain": "+{value}",
             "percentGain": "+%{value}",
             "unknown": "Bilinmiyor",
-            "gains": "Kazanımlar",
             "gainNames": {
                 "levels": "Kazanılan seviyeler",
                 "advancements": "Aşama atlamalar",
                 "attack": "Birlik Saldırısı",
                 "defense": "Birlik Savunması",
-                "power": "Güç",
                 "score": "Aşama atlama skoru"
             },
             "unknownPowerNote": "Pakette bu plandaki bir seviye için aşama atlama gücü yok, bu yüzden güç kazancı Bilinmiyor.",
-            "eventPoints": "Etkinlik puanları",
-            "events": {
-                "svs": "SvS",
-                "allianceShowdown": "Alliance Showdown",
-                "kingOfIcefield": "King of Icefield",
-                "hallOfChief": "Hall of Chief"
-            },
-            "notScored": "Puan verilmiyor",
-            "eventNote": "Etkinlik puanları, aşama atlama skoru ile sahip olduğun tüm Common ve Advanced Wild Mark'ların (hepsi kullanılmış gibi) her etkinliğin puanlama satırının puanıyla çarpımıdır. Her etkinlik en çok puan getiren günü sayar.",
             "chestOf": "elindeki {held} içinden"
         },
         "chest": {

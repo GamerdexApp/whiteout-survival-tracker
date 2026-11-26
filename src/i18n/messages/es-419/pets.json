@@ -173,7 +173,6 @@
         },
         "result": {
             "title": "Resultado para {count, plural, one {{amount} mascota} other {{amount} mascotas}}",
-            "resources": "Recursos, todas las mascotas",
             "byPet": "Por mascota",
             "heads": {
                 "pet": "Mascota",
@@ -184,25 +183,14 @@
             "powerGain": "+{value}",
             "percentGain": "+{value}%",
             "unknown": "Desconocido",
-            "gains": "Ganancias",
             "gainNames": {
                 "levels": "Niveles ganados",
                 "advancements": "Avances",
                 "attack": "Ataque de tropas",
                 "defense": "Defensa de tropas",
-                "power": "Poder",
                 "score": "Puntaje de avance"
             },
             "unknownPowerNote": "El paquete de datos no tiene poder avanzado para un nivel de este plan, así que el aumento de poder es Desconocido.",
-            "eventPoints": "Puntos de eventos",
-            "events": {
-                "svs": "SvS",
-                "allianceShowdown": "Alliance Showdown",
-                "kingOfIcefield": "King of Icefield",
-                "hallOfChief": "Hall of Chief"
-            },
-            "notScored": "Sin puntos",
-            "eventNote": "Los puntos de eventos son el puntaje de avance más cada Common y Advanced Wild Mark que tienes, como si se usaran todas, por los puntos de la fila de puntuación de cada evento. Cada evento cuenta el día que más puntúa.",
             "chestOf": "de {held} que tienes"
         },
         "chest": {

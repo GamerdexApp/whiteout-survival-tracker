@@ -22,12 +22,13 @@ import type { LadderPlan } from "@/service/chiefGearExport";
 import { exportedPlanOf } from "@/service/eventExport";
 import { charmConverter, chiefGearSlotList, gearConverter } from "@/data/game/chiefGear";
 import { findItem } from "@/data/game/items";
+import { EarnablePoints } from "@/comps/export/EarnablePoints";
 import { ExportToEventFlyout } from "@/comps/export/ExportToEventFlyout";
+import { ResultResources } from "@/comps/plans/ResultResources";
+import { ResultStats } from "@/comps/plans/ResultStats";
 import { PlanStockCheck } from "@/comps/queues/PlanStockCheck";
-import { Button } from "@/comps/ui/Button";
 import { Card } from "@/comps/ui/Card";
 import { Flyout } from "@/comps/ui/Flyout";
-import { ItemIcon } from "@/comps/ui/ItemIcon";
 import { LevelStepper } from "@/comps/ui/LevelStepper";
 import { PlanFooter } from "@/comps/ui/PlanFooter";
 import { ScrollRegion } from "@/comps/ui/ScrollRegion";
@@ -132,6 +133,7 @@ function PlanBody({
 	plan: LadderPlan;
 }) {
 	const t = useTranslations("chiefGear.plan");
+	const tCommon = useTranslations("common");
 	const stepWord = t(`${kind}.stepWord`);
 	const converter = kind === "gear" ? gearConverter : charmConverter;
 
@@ -203,56 +205,17 @@ function PlanBody({
 
 			<Card className="flex flex-col gap-4 p-4">
 				<h3 className="font-semibold">{t("result")}</h3>
-				<div className="grid grid-cols-3 gap-3">
-					{[
-						[formatNumber(plan.total.steps), stepWord],
-						[formatNumber(plan.total.score), t("score")],
-						[formatCompact(plan.total.power), t("powerGain")],
-					].map(([value, label]) => (
-						<div
-							key={label}
-							className="border-line flex flex-col rounded-md border-[1.5px] p-2"
-						>
-							<span className="font-mono text-lg">{value}</span>
-							<span className="text-muted text-xs">{label}</span>
-						</div>
-					))}
-				</div>
-				<ul className="flex flex-col">
-					{plan.total.materials.map(({ itemId, amount }) => {
-						const item = findItem(itemId);
-						return (
-							<li
-								key={itemId}
-								className="border-line flex items-center justify-between gap-3 border-t-[1.5px] py-1.5 first:border-t-0"
-							>
-								<span className="flex items-center gap-2">
-									<ItemIcon src={item?.img} size={24} />
-									{item?.name ?? itemId}
-								</span>
-								<span className="font-mono">{formatNumber(amount)}</span>
-							</li>
-						);
-					})}
-				</ul>
-				<div className="grid grid-cols-2 gap-3">
-					{[
-						[t("events.svs"), plan.total.eventPoints.svs],
-						[t("events.allianceShowdown"), plan.total.eventPoints.allianceShowdown],
-						[t("events.kingOfIcefield"), plan.total.eventPoints.kingOfIcefield],
-						[t("events.hallOfChief"), plan.total.eventPoints.hallOfChief],
-					].map(([name, value]) => (
-						<div
-							key={name}
-							className="border-line flex flex-col rounded-md border-[1.5px] p-2"
-						>
-							<span className="text-muted text-xs">{name}</span>
-							<span className="font-mono font-semibold">
-								{formatNumber(Number(value))}
-							</span>
-						</div>
-					))}
-				</div>
+				<ResultResources items={plan.total.materials} />
+				<ResultStats
+					stats={[
+						{
+							label: tCommon("powerGained"),
+							value: `+${formatNumber(plan.total.power)}`,
+						},
+						{ label: stepWord, value: formatNumber(plan.total.steps) },
+						{ label: t("score"), value: formatNumber(plan.total.score) },
+					]}
+				/>
 			</Card>
 
 			{plan.byItem.length > 0 && (
@@ -304,6 +267,11 @@ function PlanBody({
 					</ScrollRegion>
 				</Card>
 			)}
+
+			<EarnablePoints
+				chief={chief}
+				spec={kind === "gear" ? gearExportSpecOf(plan) : charmExportSpecOf(plan)}
+			/>
 
 			<Card className="flex flex-col gap-2 p-4">
 				<h3 className="font-semibold">{t("converter.title")}</h3>

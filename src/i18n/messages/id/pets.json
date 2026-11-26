@@ -173,7 +173,6 @@
         },
         "result": {
             "title": "Hasil untuk {count, plural, other {{amount} hewan peliharaan}}",
-            "resources": "Sumber daya, semua hewan",
             "byPet": "Menurut hewan",
             "heads": {
                 "pet": "Hewan",
@@ -184,25 +183,14 @@
             "powerGain": "+{value}",
             "percentGain": "+{value}%",
             "unknown": "Tidak diketahui",
-            "gains": "Peningkatan",
             "gainNames": {
                 "levels": "Level bertambah",
                 "advancements": "Kenaikan tingkat",
                 "attack": "Serangan Pasukan",
                 "defense": "Pertahanan Pasukan",
-                "power": "Kekuatan",
                 "score": "Skor kenaikan tingkat"
             },
             "unknownPowerNote": "Paket data tidak punya kekuatan kenaikan tingkat untuk sebuah level di rencana ini, jadi tambahan kekuatan Tidak diketahui.",
-            "eventPoints": "Poin event",
-            "events": {
-                "svs": "SvS",
-                "allianceShowdown": "Alliance Showdown",
-                "kingOfIcefield": "King of Icefield",
-                "hallOfChief": "Hall of Chief"
-            },
-            "notScored": "Tidak diskor",
-            "eventNote": "Poin event adalah skor kenaikan tingkat ditambah setiap Common dan Advanced Wild Mark yang kamu miliki, seolah semuanya dipakai, dikali poin baris skor tiap event. Setiap event menghitung hari dengan poin terbanyak.",
             "chestOf": "dari {held} dimiliki"
         },
         "chest": {

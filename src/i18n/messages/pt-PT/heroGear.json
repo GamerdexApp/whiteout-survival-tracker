@@ -183,9 +183,7 @@
         "from": "{value} para",
         "result": {
             "title": "Resultado para {amount} {count, plural, one {peça} other {peças}}",
-            "power": "Poder",
             "powerLines": {
-                "gained": "Poder ganho",
                 "before": "Poder destas peças antes",
                 "after": "Poder destas peças depois"
             },
@@ -197,11 +195,6 @@
             "forgingStatsUp": "+{percent}% ({steps} passos)",
             "milestones": "Marcos desbloqueados",
             "milestoneLine": "{label}: {stat}",
-            "events": {
-                "svs": "SvS",
-                "allianceShowdown": "Alliance Showdown",
-                "kingOfIcefield": "King of Icefield"
-            },
             "note": "O Plano do Equipamento de herói não tem controlos de velocidade nem de bónus. A calculadora não devolve tempo.",
             "tableLabel": "Tabela de resultado do plano"
         }

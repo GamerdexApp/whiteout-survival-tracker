@@ -183,9 +183,7 @@
         "from": "{value} ke",
         "result": {
             "title": "Hasil untuk {amount} {count, plural, other {keping}}",
-            "power": "Kuasa",
             "powerLines": {
-                "gained": "Kuasa diperoleh",
                 "before": "Kuasa keping ini sebelum",
                 "after": "Kuasa keping ini selepas"
             },
@@ -197,11 +195,6 @@
             "forgingStatsUp": "+{percent}% ({steps} langkah)",
             "milestones": "Pencapaian dibuka",
             "milestoneLine": "{label}: {stat}",
-            "events": {
-                "svs": "SvS",
-                "allianceShowdown": "Alliance Showdown",
-                "kingOfIcefield": "King of Icefield"
-            },
             "note": "Rancang Gear Hero tiada kawalan kelajuan atau bonus. Kalkulator tidak memberi masa.",
             "tableLabel": "Jadual hasil pelan"
         }

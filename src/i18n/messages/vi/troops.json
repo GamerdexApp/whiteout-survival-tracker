@@ -111,14 +111,12 @@
             },
             "appointmentEffect": "+{capacity} sức chứa, +{speed}% tốc độ",
             "appointmentNote": "Chỉ một trong hai chức vụ được bật. Bộ trưởng Giáo dục cộng {moeCapacity} sức chứa và {moeSpeed} phần trăm tốc độ (Tối cao {moeCapacitySupreme} và {moeSpeedSupreme}). Phó chủ tịch cộng {vpSpeed} phần trăm tốc độ (Tối cao {vpSpeedSupreme}).",
-            "capacity": "Sức chứa",
             "researchCapacity": "Sức chứa từ nghiên cứu",
             "troops": "{value} quân",
             "readOnly": "Chỉ xem",
             "capacityBoost": "Tăng sức chứa",
             "boostTotal": "Tổng x{multiplier}",
             "capacityPerBatch": "Sức chứa mỗi lô",
-            "trainingSpeed": "Tốc độ huấn luyện",
             "gameSpeed": "Tốc độ huấn luyện trong game",
             "appointmentSpeed": "Chức vụ",
             "mobilize": "Mobilize",
@@ -134,9 +132,7 @@
         },
         "result": {
             "title": "Kết quả",
-            "resources": "Tài nguyên",
             "changes": "Thay đổi quân theo bậc",
-            "powerTitle": "Mức tăng sức mạnh ước tính",
             "heads": {
                 "tier": "Bậc",
                 "infantry": "Bộ",
@@ -150,7 +146,6 @@
             "totalTime": "Tổng, mọi loại quân (thời gian tăng tốc)",
             "longest": "Loại quân lâu nhất",
             "minutesNeeded": "Số phút tăng tốc cần",
-            "minutesUsed": "Số phút tăng tốc đã dùng (trong kho)",
             "minutes": "{value} phút",
             "tier12Note": "Gói dữ liệu cho biết chi phí Bậc 12 được suy ra một phần. Chi phí thăng cấp Xạ thủ được đo trong game, còn chi phí Bộ binh và Kỵ binh được quy đổi từ đó."
         }

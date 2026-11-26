@@ -183,9 +183,7 @@
         "from": "{value} ไป",
         "result": {
             "title": "ผลลัพธ์ของ {amount} {count, plural, other {ชิ้น}}",
-            "power": "พลัง",
             "powerLines": {
-                "gained": "พลังที่ได้รับ",
                 "before": "พลังของชิ้นเหล่านี้ก่อน",
                 "after": "พลังของชิ้นเหล่านี้หลัง"
             },
@@ -197,11 +195,6 @@
             "forgingStatsUp": "+{percent}% ({steps} ขั้นตอน)",
             "milestones": "เป้าหมายที่ปลดล็อก",
             "milestoneLine": "{label}: {stat}",
-            "events": {
-                "svs": "SvS",
-                "allianceShowdown": "Alliance Showdown",
-                "kingOfIcefield": "King of Icefield"
-            },
             "note": "วางแผนอุปกรณ์ฮีโร่ไม่มีตัวควบคุมความเร็วหรือโบนัส ตัวคำนวณจึงไม่ให้เวลา",
             "tableLabel": "ตารางผลลัพธ์ของแผน"
         }

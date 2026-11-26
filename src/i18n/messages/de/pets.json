@@ -173,7 +173,6 @@
         },
         "result": {
             "title": "Ergebnis für {count, plural, one {{amount} Haustier} other {{amount} Haustiere}}",
-            "resources": "Ressourcen, alle Haustiere",
             "byPet": "Nach Haustier",
             "heads": {
                 "pet": "Haustier",
@@ -184,25 +183,14 @@
             "powerGain": "+{value}",
             "percentGain": "+{value}%",
             "unknown": "Unbekannt",
-            "gains": "Zuwächse",
             "gainNames": {
                 "levels": "Gewonnene Stufen",
                 "advancements": "Aufstiege",
                 "attack": "Truppenangriff",
                 "defense": "Truppenverteidigung",
-                "power": "Macht",
                 "score": "Aufstiegs-Score"
             },
             "unknownPowerNote": "Das Paket hat für eine Stufe in diesem Plan keine Macht nach Aufstieg, daher ist der Machtgewinn unbekannt.",
-            "eventPoints": "Event-Punkte",
-            "events": {
-                "svs": "SvS",
-                "allianceShowdown": "Alliance Showdown",
-                "kingOfIcefield": "King of Icefield",
-                "hallOfChief": "Hall of Chief"
-            },
-            "notScored": "Nicht gewertet",
-            "eventNote": "Event-Punkte sind der Aufstiegs-Score plus alle Common und Advanced Wild Marks, die du besitzt, als würden alle genutzt, mal die Punkte der Wertungszeile jedes Events. Jedes Event zählt den Tag mit den meisten Punkten.",
             "chestOf": "von {held} vorhanden"
         },
         "chest": {

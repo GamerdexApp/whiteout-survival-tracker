@@ -111,14 +111,12 @@
             },
             "appointmentEffect": "+{capacity} capacità, +{speed}% velocità",
             "appointmentNote": "Solo una delle due nomine può essere attiva. Minister of Education aggiunge {moeCapacity} di capacità e {moeSpeed} percento di velocità (Supremo {moeCapacitySupreme} e {moeSpeedSupreme}). Vice President aggiunge {vpSpeed} percento di velocità (Supremo {vpSpeedSupreme}).",
-            "capacity": "Capacità",
             "researchCapacity": "Capacità da ricerca",
             "troops": "{value} truppe",
             "readOnly": "Sola lettura",
             "capacityBoost": "Aumento di capacità",
             "boostTotal": "Totale x{multiplier}",
             "capacityPerBatch": "Capacità per gruppo",
-            "trainingSpeed": "Velocità di addestramento",
             "gameSpeed": "Velocità di addestramento del gioco",
             "appointmentSpeed": "Nomina",
             "mobilize": "Mobilize",
@@ -134,9 +132,7 @@
         },
         "result": {
             "title": "Risultato",
-            "resources": "Risorse",
             "changes": "Variazioni delle truppe per grado",
-            "powerTitle": "Aumento di potenza stimato",
             "heads": {
                 "tier": "Grado",
                 "infantry": "Fan.",
@@ -150,7 +146,6 @@
             "totalTime": "Totale, tutti i tipi di truppa (tempo di accelerazione)",
             "longest": "Tipo di truppa più lungo",
             "minutesNeeded": "Minuti di accelerazione necessari",
-            "minutesUsed": "Minuti di accelerazione usati (in scorta)",
             "minutes": "{value} min",
             "tier12Note": "Il pacchetto indica che i costi del Grado 12 sono in parte derivati. Il costo di promozione dei Tiratori è stato misurato nel gioco, mentre i costi di Fanteria e Lancieri sono stati scalati da quello."
         }

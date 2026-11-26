@@ -183,9 +183,7 @@
         "from": "{value} 至",
         "result": {
             "title": "{amount} {count, plural, other {件裝備}}的結果",
-            "power": "戰力",
             "powerLines": {
-                "gained": "獲得戰力",
                 "before": "這些裝備之前的戰力",
                 "after": "這些裝備之後的戰力"
             },
@@ -197,11 +195,6 @@
             "forgingStatsUp": "+{percent}%（{steps} 步）",
             "milestones": "已解鎖的里程碑",
             "milestoneLine": "{label}：{stat}",
-            "events": {
-                "svs": "SvS",
-                "allianceShowdown": "Alliance Showdown",
-                "kingOfIcefield": "King of Icefield"
-            },
             "note": "英雄裝備規劃沒有速度或加成控制項。計算器不會回傳時間。",
             "tableLabel": "規劃結果表"
         }

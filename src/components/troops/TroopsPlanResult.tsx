@@ -2,10 +2,10 @@ import { useTranslations } from "next-intl";
 import { formatDuration, formatNumber } from "@/lib/format";
 import { TROOP_IDS } from "@/service/troops";
 import type { TroopsPlanDraft, TroopsPlanResult } from "@/service/troopsPlan";
-import { findItem } from "@/data/game/items";
 import { allTroops, MAX_TIER } from "@/data/game/troops";
+import { ResultResources } from "@/comps/plans/ResultResources";
+import { ResultStats } from "@/comps/plans/ResultStats";
 import { Card } from "@/comps/ui/Card";
-import { ItemIcon } from "@/comps/ui/ItemIcon";
 import { ScrollRegion } from "@/comps/ui/ScrollRegion";
 import { SectionLabel } from "@/comps/ui/SectionLabel";
 
@@ -22,6 +22,7 @@ export function TroopsPlanResultCard({
 	result: TroopsPlanResult;
 }) {
 	const t = useTranslations("troops.plan.result");
+	const tCommon = useTranslations("common");
 	const tCalc = useTranslations("calcTroop");
 	const { calculation } = result;
 	const changedTiers = calculation.tiers.filter(
@@ -38,24 +39,35 @@ export function TroopsPlanResultCard({
 	return (
 		<Card className="flex flex-col gap-4 p-4">
 			<h3 className="font-semibold">{t("title")}</h3>
-			<div className="flex flex-col gap-2">
-				<SectionLabel className="text-muted">{t("resources")}</SectionLabel>
-				{calculation.resources.map((resource) => {
-					const item = findItem(resource.itemId);
-					return (
-						<div
-							key={resource.itemId}
-							className="flex items-center justify-between gap-3"
-						>
-							<span className="flex items-center gap-2">
-								<ItemIcon src={item?.img} size={20} />
-								{item?.name ?? resource.itemId}
-							</span>
-							<span className="font-mono">{formatNumber(resource.amount)}</span>
-						</div>
-					);
-				})}
-			</div>
+			<ResultResources items={calculation.resources} />
+			<ResultStats
+				stats={[
+					{
+						label: tCommon("powerGained"),
+						value: signed(calculation.totalPower.total),
+					},
+					{
+						label: t("minutesNeeded"),
+						value: t("minutes", {
+							value: formatNumber(calculation.speedupMinutesNeeded),
+						}),
+						emphasis: true,
+					},
+					{
+						label: t("totalTime"),
+						value: formatDuration(calculation.totalSeconds),
+					},
+					{
+						label: t("longest"),
+						value: formatDuration(calculation.longestCampSeconds),
+					},
+				]}
+			/>
+			{changedTiers.length > 0 && (
+				<p className="text-muted text-xs">
+					{tCalc("tiers.fireCrystalNote", { levels: fireCrystalLevels })}
+				</p>
+			)}
 			<div className="flex flex-col gap-2">
 				<SectionLabel className="text-muted">{t("changes")}</SectionLabel>
 				<ScrollRegion label={t("changes")}>
@@ -110,25 +122,6 @@ export function TroopsPlanResultCard({
 					</table>
 				</ScrollRegion>
 			</div>
-			{changedTiers.length > 0 && (
-				<div className="flex flex-col gap-1">
-					<SectionLabel className="text-muted">{t("powerTitle")}</SectionLabel>
-					{TROOP_IDS.filter((id) => calculation.totalPower[id] !== 0).map((id) => (
-						<div key={id} className="flex justify-between gap-3">
-							<span>{nameOf(id)}</span>
-							<span className="font-mono">{signed(calculation.totalPower[id])}</span>
-						</div>
-					))}
-					<TotalLine
-						label={t("total")}
-						value={signed(calculation.totalPower.total)}
-						strong
-					/>
-					<p className="text-muted text-xs">
-						{tCalc("tiers.fireCrystalNote", { levels: fireCrystalLevels })}
-					</p>
-				</div>
-			)}
 			<div className="flex flex-col gap-1">
 				<SectionLabel className="text-muted">{t("time")}</SectionLabel>
 				{TROOP_IDS.map((id) => (
@@ -140,43 +133,7 @@ export function TroopsPlanResultCard({
 					</div>
 				))}
 			</div>
-			<div className="border-line flex flex-col gap-1 border-t-[1.5px] pt-3">
-				<TotalLine
-					label={t("totalTime")}
-					value={formatDuration(calculation.totalSeconds)}
-					strong
-				/>
-				<TotalLine
-					label={t("longest")}
-					value={formatDuration(calculation.longestCampSeconds)}
-				/>
-				<TotalLine
-					label={t("minutesNeeded")}
-					value={t("minutes", { value: formatNumber(calculation.speedupMinutesNeeded) })}
-				/>
-				<TotalLine
-					label={t("minutesUsed")}
-					value={t("minutes", { value: formatNumber(result.speedupMinutesUsed) })}
-				/>
-			</div>
 			{touchesTopTier(draft) && <p className="text-muted text-xs">{t("tier12Note")}</p>}
 		</Card>
-	);
-}
-
-function TotalLine({
-	label,
-	value,
-	strong = false,
-}: {
-	label: string;
-	value: string;
-	strong?: boolean;
-}) {
-	return (
-		<div className={`flex justify-between gap-3 ${strong ? "font-semibold" : ""}`}>
-			<span>{label}</span>
-			<span className="font-mono">{value}</span>
-		</div>
 	);
 }

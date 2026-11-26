@@ -173,7 +173,6 @@
         },
         "result": {
             "title": "{count, plural, other {ペット{amount}体}}の結果",
-            "resources": "資源（全ペット）",
             "byPet": "ペット別",
             "heads": {
                 "pet": "ペット",
@@ -184,25 +183,14 @@
             "powerGain": "+{value}",
             "percentGain": "+{value}%",
             "unknown": "不明",
-            "gains": "増加分",
             "gainNames": {
                 "levels": "上がるレベル",
                 "advancements": "昇格",
                 "attack": "部隊の攻撃",
                 "defense": "部隊の防御",
-                "power": "戦力",
                 "score": "昇格スコア"
             },
             "unknownPowerNote": "このプランのあるレベルについて、パッケージに昇格後の戦力がないため、戦力の増加は不明です。",
-            "eventPoints": "イベントポイント",
-            "events": {
-                "svs": "SvS",
-                "allianceShowdown": "Alliance Showdown",
-                "kingOfIcefield": "King of Icefield",
-                "hallOfChief": "Hall of Chief"
-            },
-            "notScored": "ポイント対象外",
-            "eventNote": "イベントポイントは、昇格スコアと、所持しているCommonおよびAdvanced Wild Markをすべて使ったものとして、各イベントのポイント行の値を掛けたものです。各イベントは最も得点が高い日で数えます。",
             "chestOf": "所持{held}個中"
         },
         "chest": {

@@ -111,14 +111,12 @@
             },
             "appointmentEffect": "+{capacity} de capacidade, +{speed}% de velocidade",
             "appointmentNote": "Só uma das duas nomeações pode estar ativa. O Ministro da Educação soma {moeCapacity} de capacidade e {moeSpeed} por cento de velocidade (Suprema {moeCapacitySupreme} e {moeSpeedSupreme}). O Vice-presidente soma {vpSpeed} por cento de velocidade (Suprema {vpSpeedSupreme}).",
-            "capacity": "Capacidade",
             "researchCapacity": "Capacidade da pesquisa",
             "troops": "{value} tropas",
             "readOnly": "Só leitura",
             "capacityBoost": "Reforço de capacidade",
             "boostTotal": "Total x{multiplier}",
             "capacityPerBatch": "Capacidade por lote",
-            "trainingSpeed": "Velocidade de treino",
             "gameSpeed": "Velocidade de treino do jogo",
             "appointmentSpeed": "Nomeação",
             "mobilize": "Mobilização",
@@ -134,9 +132,7 @@
         },
         "result": {
             "title": "Resultado",
-            "resources": "Recursos",
             "changes": "Mudanças nas tropas por tier",
-            "powerTitle": "Aumento de poder estimado",
             "heads": {
                 "tier": "Tier",
                 "infantry": "Inf.",
@@ -150,7 +146,6 @@
             "totalTime": "Total, todos os tipos de tropa (tempo de aceleração)",
             "longest": "Tipo de tropa mais longo",
             "minutesNeeded": "Minutos de aceleração necessários",
-            "minutesUsed": "Minutos de aceleração usados (em estoque)",
             "minutes": "{value} min",
             "tier12Note": "O pacote de dados informa que os custos do Tier 12 são em parte derivados. O custo de promoção dos Atiradores foi medido no jogo, e os custos de Infantaria e Lanceiros foram escalados a partir dele."
         }

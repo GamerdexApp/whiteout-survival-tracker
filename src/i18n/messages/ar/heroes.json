@@ -222,21 +222,18 @@
             "title": "النتيجة، {steps} خطوات",
             "widgets": "Widgets",
             "weaponSkills": "{count, plural, zero {فُتحت {amount} مهارة سلاح} one {فُتحت {amount} مهارة سلاح} two {فُتحت {amount} مهارتا سلاح} few {فُتحت {amount} مهارات سلاح} many {فُتحت {amount} مهارة سلاح} other {فُتحت {amount} مهارة سلاح}}",
-            "note": "القوة ليست جزءًا من خطة الأبطال. لا تعيد الحاسبة وقتًا ولا تقبل مدخل سرعة.",
+            "note": "لا تعيد الحاسبة وقتًا ولا تقبل مدخل سرعة.",
             "heads": {
                 "hero": "البطل",
                 "starSteps": "خطوات النجوم",
                 "skillLevels": "مستويات المهارات",
                 "shards": "الشظايا",
-                "widgets": "Widgets"
+                "widgets": "Widgets",
+                "power": "القوة"
             },
-            "tableLabel": "جدول نتيجة الخطة"
-        },
-        "events": {
-            "svs": "SvS State of Power",
-            "allianceShowdown": "Alliance Showdown",
-            "kingOfIcefield": "King of Icefield",
-            "hallOfChief": "Hall of Chief"
+            "tableLabel": "جدول نتيجة الخطة",
+            "unknown": "غير معروف",
+            "unknownPowerNote": "لا تحتوي الحزمة على القوة لجزء من هذه الخطة، لذا مكسب القوة غير معروف."
         },
         "luckyWheel": {
             "title": "عجلة الحظ",

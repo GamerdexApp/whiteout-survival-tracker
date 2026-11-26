@@ -222,21 +222,18 @@
             "title": "Résultat, {steps} étapes",
             "widgets": "Widgets",
             "weaponSkills": "{count, plural, one {{amount} compétence d'arme débloquée} other {{amount} compétences d'arme débloquées}}",
-            "note": "La puissance ne fait pas partie de Planifier les héros. Le calculateur ne renvoie aucune durée et n'accepte aucune vitesse.",
+            "note": "Le calculateur ne renvoie aucune durée et n'accepte aucune vitesse.",
             "heads": {
                 "hero": "Héros",
                 "starSteps": "Paliers d'étoile",
                 "skillLevels": "Niveaux de compétence",
                 "shards": "Fragments",
-                "widgets": "Widgets"
+                "widgets": "Widgets",
+                "power": "Puissance"
             },
-            "tableLabel": "Tableau du résultat du plan"
-        },
-        "events": {
-            "svs": "SvS State of Power",
-            "allianceShowdown": "Alliance Showdown",
-            "kingOfIcefield": "King of Icefield",
-            "hallOfChief": "Hall of Chief"
+            "tableLabel": "Tableau du résultat du plan",
+            "unknown": "Inconnu",
+            "unknownPowerNote": "Les données n'ont pas de puissance pour une partie de ce plan, le gain de puissance est donc Inconnu."
         },
         "luckyWheel": {
             "title": "Roue de la chance",

@@ -111,14 +111,12 @@
             },
             "appointmentEffect": "容量+{capacity}、速度+{speed}%",
             "appointmentNote": "2つの任命のうち、有効にできるのは片方だけです。教育大臣は容量{moeCapacity}と速度{moeSpeed}パーセントを加算します（最上級は{moeCapacitySupreme}と{moeSpeedSupreme}）。副大統領は速度{vpSpeed}パーセントを加算します（最上級は{vpSpeedSupreme}）。",
-            "capacity": "容量",
             "researchCapacity": "研究による容量",
             "troops": "{value}体",
             "readOnly": "読み取り専用",
             "capacityBoost": "容量ブースト",
             "boostTotal": "合計 ×{multiplier}",
             "capacityPerBatch": "バッチごとの容量",
-            "trainingSpeed": "訓練速度",
             "gameSpeed": "ゲームの訓練速度",
             "appointmentSpeed": "任命",
             "mobilize": "Mobilize",
@@ -134,9 +132,7 @@
         },
         "result": {
             "title": "結果",
-            "resources": "資源",
             "changes": "ティアごとの部隊の増減",
-            "powerTitle": "推定戦力上昇",
             "heads": {
                 "tier": "ティア",
                 "infantry": "歩兵",
@@ -150,7 +146,6 @@
             "totalTime": "合計、全部隊タイプ（スピードアップ時間）",
             "longest": "最も長い部隊タイプ",
             "minutesNeeded": "必要なスピードアップの分数",
-            "minutesUsed": "使用するスピードアップの分数（在庫分）",
             "minutes": "{value}分",
             "tier12Note": "パッケージによると、ティア12のコストは一部が推定値です。弓兵の昇格コストはゲームで実測され、歩兵と槍兵のコストはそれをもとに換算されています。"
         }

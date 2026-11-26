@@ -183,9 +183,7 @@
         "from": "{value} ke",
         "result": {
             "title": "Hasil untuk {amount} {count, plural, other {bagian}}",
-            "power": "Kekuatan",
             "powerLines": {
-                "gained": "Kekuatan didapat",
                 "before": "Kekuatan bagian ini sebelumnya",
                 "after": "Kekuatan bagian ini sesudahnya"
             },
@@ -197,11 +195,6 @@
             "forgingStatsUp": "+{percent}% ({steps} langkah)",
             "milestones": "Tonggak terbuka",
             "milestoneLine": "{label}: {stat}",
-            "events": {
-                "svs": "SvS",
-                "allianceShowdown": "Alliance Showdown",
-                "kingOfIcefield": "King of Icefield"
-            },
             "note": "Rencana Perlengkapan Pahlawan tidak punya kontrol kecepatan atau bonus. Kalkulator tidak mengembalikan waktu.",
             "tableLabel": "Tabel hasil rencana"
         }

@@ -173,7 +173,6 @@
         },
         "result": {
             "title": "Hasil untuk {count, plural, other {{amount} haiwan peliharaan}}",
-            "resources": "Sumber, semua haiwan peliharaan",
             "byPet": "Mengikut haiwan peliharaan",
             "heads": {
                 "pet": "Haiwan",
@@ -184,25 +183,14 @@
             "powerGain": "+{value}",
             "percentGain": "+{value}%",
             "unknown": "Tidak diketahui",
-            "gains": "Perolehan",
             "gainNames": {
                 "levels": "Tahap diperoleh",
                 "advancements": "Kenaikan pangkat",
                 "attack": "Serangan Tentera",
                 "defense": "Pertahanan Tentera",
-                "power": "Kuasa",
                 "score": "Skor kenaikan pangkat"
             },
             "unknownPowerNote": "Pakej tiada kuasa naik pangkat untuk tahap dalam pelan ini, jadi perolehan kuasa Tidak diketahui.",
-            "eventPoints": "Mata acara",
-            "events": {
-                "svs": "SvS",
-                "allianceShowdown": "Alliance Showdown",
-                "kingOfIcefield": "King of Icefield",
-                "hallOfChief": "Hall of Chief"
-            },
-            "notScored": "Tidak dimarkahkan",
-            "eventNote": "Mata acara ialah skor kenaikan pangkat campur setiap Common dan Advanced Wild Mark yang anda ada, seolah-olah semuanya digunakan, darab mata baris pemarkahan setiap acara. Setiap acara mengira hari yang memberi mata paling banyak.",
             "chestOf": "daripada {held} dimiliki"
         },
         "chest": {

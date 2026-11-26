@@ -173,7 +173,6 @@
         },
         "result": {
             "title": "ผลลัพธ์ของ{count, plural, other {สัตว์เลี้ยง {amount} ตัว}}",
-            "resources": "ทรัพยากร สัตว์เลี้ยงทั้งหมด",
             "byPet": "ตามสัตว์เลี้ยง",
             "heads": {
                 "pet": "สัตว์เลี้ยง",
@@ -184,25 +183,14 @@
             "powerGain": "+{value}",
             "percentGain": "+{value}%",
             "unknown": "ไม่ทราบ",
-            "gains": "ที่ได้รับ",
             "gainNames": {
                 "levels": "เลเวลที่เพิ่ม",
                 "advancements": "การเลื่อนขั้น",
                 "attack": "Attack ของทหาร",
                 "defense": "Defense ของทหาร",
-                "power": "พลัง",
                 "score": "คะแนนการเลื่อนขั้น"
             },
             "unknownPowerNote": "แพ็กเกจข้อมูลไม่มีพลังหลังเลื่อนขั้นของเลเวลในแผนนี้ จึงไม่ทราบพลังที่เพิ่ม",
-            "eventPoints": "คะแนนกิจกรรม",
-            "events": {
-                "svs": "SvS",
-                "allianceShowdown": "Alliance Showdown",
-                "kingOfIcefield": "King of Icefield",
-                "hallOfChief": "Hall of Chief"
-            },
-            "notScored": "ไม่มีคะแนน",
-            "eventNote": "คะแนนกิจกรรมคือคะแนนการเลื่อนขั้นรวม Common และ Advanced Wild Mark ทั้งหมดที่คุณมี เสมือนใช้ทั้งหมด คูณคะแนนของแถวคะแนนของแต่ละกิจกรรม โดยนับวันที่ได้คะแนนมากที่สุดของแต่ละกิจกรรม",
             "chestOf": "จาก {held} ที่มี"
         },
         "chest": {

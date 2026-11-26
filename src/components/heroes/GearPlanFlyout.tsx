@@ -27,14 +27,16 @@ import {
 import { exportSpecOf } from "@/service/heroGearExport";
 import { forgingIndex, forgingRows, MAX_EMPOWERMENT, MAX_ENHANCEMENT } from "@/data/game/heroGear";
 import { findItem } from "@/data/game/items";
+import { EarnablePoints } from "@/comps/export/EarnablePoints";
 import { ExportToEventFlyout } from "@/comps/export/ExportToEventFlyout";
+import { ResultResources } from "@/comps/plans/ResultResources";
+import { ResultStats } from "@/comps/plans/ResultStats";
 import { PlanStockCheck } from "@/comps/queues/PlanStockCheck";
 import { Badge } from "@/comps/ui/Badge";
 import { Button } from "@/comps/ui/Button";
 import { Card } from "@/comps/ui/Card";
 import { Flyout } from "@/comps/ui/Flyout";
 import { IconButton } from "@/comps/ui/IconButton";
-import { ItemIcon } from "@/comps/ui/ItemIcon";
 import { PlanFooter } from "@/comps/ui/PlanFooter";
 import { ScrollRegion } from "@/comps/ui/ScrollRegion";
 import { SectionLabel } from "@/comps/ui/SectionLabel";
@@ -154,6 +156,7 @@ function PlanBody({
 				<>
 					<PlanStockCheck checks={gearPlanChecks(plan, chief)} timeNote="" />
 					<PlanResult plan={plan} />
+					<EarnablePoints chief={chief} spec={exportSpecOf(plan)} />
 				</>
 			)}
 		</>
@@ -358,22 +361,16 @@ function PieceBlock({
 
 type PlanResultRow = GearPlanResult["rows"][number];
 
-const powerLineIds = ["gained", "before", "after"] as const;
-const eventIds = ["svs", "allianceShowdown", "kingOfIcefield"] as const;
 const resultColumnIds = ["piece", "forgingStatsUp", "powerGained"] as const;
 
 function PlanResult({ plan }: { plan: GearPlanResult }) {
 	const t = useTranslations("heroGear.plan");
+	const tCommon = useTranslations("common");
 	const comboSources = planComboSources(plan);
 	const powerByLine = {
 		gained: plan.power,
 		before: plan.currentPower,
 		after: plan.goalPower,
-	};
-	const pointsByEvent = {
-		svs: plan.eventPoints.svs,
-		allianceShowdown: plan.eventPoints.allianceShowdown,
-		kingOfIcefield: plan.eventPoints.kingOfIcefield,
 	};
 
 	return (
@@ -384,37 +381,30 @@ function PlanResult({ plan }: { plan: GearPlanResult }) {
 					amount: formatNumber(plan.rows.length),
 				})}
 			</h3>
-			<div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
-				{[...plan.resources.entries()].map(([itemId, amount]) => {
-					const item = findItem(itemId);
-					const name = planResourceName(itemId, comboSources.get(itemId));
-					return (
-						<div key={itemId} className="flex items-start gap-2">
-							<ItemIcon src={item?.img} size={24} />
-							<div className="flex flex-col">
-								<span className="text-muted text-xs">{name}</span>
-								<span className="font-mono font-semibold">
-									{formatNumber(amount)}
-								</span>
-							</div>
-						</div>
-					);
-				})}
-			</div>
-			<div className="flex flex-col">
-				<SectionLabel className="text-muted pb-1">{t("result.power")}</SectionLabel>
-				{powerLineIds.map((id) => (
-					<div
-						key={id}
-						className="border-line flex justify-between border-t-[1.5px] py-1.5 first:border-t-0"
-					>
-						<span>{t(`result.powerLines.${id}`)}</span>
-						<span className="font-mono font-medium">
-							{formatNumber(powerByLine[id])}
-						</span>
-					</div>
-				))}
-			</div>
+			<ResultResources
+				items={[...plan.resources.entries()].map(([itemId, amount]) => ({
+					itemId,
+					amount,
+					name: planResourceName(itemId, comboSources.get(itemId)),
+					img:
+						itemId === "enhancement-xp"
+							? findItem("enhancement-xp-component-10")?.img
+							: undefined,
+				}))}
+			/>
+			<ResultStats
+				stats={[
+					{
+						label: tCommon("powerGained"),
+						value: `+${formatNumber(powerByLine.gained)}`,
+					},
+					{
+						label: t("result.powerLines.before"),
+						value: formatNumber(powerByLine.before),
+					},
+					{ label: t("result.powerLines.after"), value: formatNumber(powerByLine.after) },
+				]}
+			/>
 			<ScrollRegion label={t("result.tableLabel")}>
 				<table className="w-full min-w-104 text-start">
 					<thead>
@@ -464,19 +454,6 @@ function PlanResult({ plan }: { plan: GearPlanResult }) {
 					))}
 				</div>
 			)}
-			<div className="grid grid-cols-3 gap-3">
-				{eventIds.map((id) => (
-					<div
-						key={id}
-						className="border-line flex flex-col rounded-md border-[1.5px] p-2"
-					>
-						<span className="text-muted text-xs">{t(`result.events.${id}`)}</span>
-						<span className="font-mono font-semibold">
-							{formatNumber(pointsByEvent[id])}
-						</span>
-					</div>
-				))}
-			</div>
 			<p className="text-muted text-xs">{t("result.note")}</p>
 		</Card>
 	);

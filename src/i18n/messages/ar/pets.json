@@ -173,7 +173,6 @@
         },
         "result": {
             "title": "نتيجة {count, plural, zero {{amount} حيوان أليف} one {{amount} حيوان أليف} two {{amount} حيوانين أليفين} few {{amount} حيوانات أليفة} many {{amount} حيوانًا أليفًا} other {{amount} حيوان أليف}}",
-            "resources": "الموارد، كل الحيوانات",
             "byPet": "حسب الحيوان",
             "heads": {
                 "pet": "الحيوان",
@@ -184,25 +183,14 @@
             "powerGain": "‎+{value}",
             "percentGain": "‎+{value}%",
             "unknown": "غير معروف",
-            "gains": "المكاسب",
             "gainNames": {
                 "levels": "المستويات المكتسبة",
                 "advancements": "مرات الارتقاء",
                 "attack": "هجوم القوات",
                 "defense": "دفاع القوات",
-                "power": "القوة",
                 "score": "نتيجة الارتقاء"
             },
             "unknownPowerNote": "لا تحتوي الحزمة على قوة مرتقية لمستوى في هذه الخطة، لذا مكسب القوة غير معروف.",
-            "eventPoints": "نقاط الفعاليات",
-            "events": {
-                "svs": "SvS",
-                "allianceShowdown": "Alliance Showdown",
-                "kingOfIcefield": "King of Icefield",
-                "hallOfChief": "Hall of Chief"
-            },
-            "notScored": "لا تُحتسب نقاطًا",
-            "eventNote": "نقاط الفعالية هي نتيجة الارتقاء مع كل Common وAdvanced Wild Marks تملكها، كما لو استُخدمت كلها، مضروبة في نقاط صف الاحتساب لكل فعالية. تحتسب كل فعالية اليوم الأعلى نقاطًا.",
             "chestOf": "من أصل {held} مملوك"
         },
         "chest": {

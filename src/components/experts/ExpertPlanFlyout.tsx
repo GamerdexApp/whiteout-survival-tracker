@@ -17,6 +17,7 @@ import {
 	initialExpertGoals,
 	isAdvancementLevel,
 	learningMinutesNeeded,
+	powerGainOf,
 	runExpertsPlan,
 	sanitizeGoal,
 	skillExpBetween,
@@ -28,6 +29,7 @@ import {
 import { EXP_PER_LEARNING_MINUTE, MAX_AFFINITY } from "@/data/game/experts";
 import { EarnablePoints } from "@/comps/export/EarnablePoints";
 import { ExportToEventFlyout } from "@/comps/export/ExportToEventFlyout";
+import { ResultStats } from "@/comps/plans/ResultStats";
 import { GeneralSpeedupShare } from "@/comps/queues/GeneralSpeedupShare";
 import { PlanStockCheck } from "@/comps/queues/PlanStockCheck";
 import { Badge } from "@/comps/ui/Badge";
@@ -480,10 +482,12 @@ const TABLE_HEADS = [
 	"levels",
 	"advancements",
 	"affinity",
+	"power",
 ] as const;
 
 function PlanResult({ plan }: { plan: ExpertsPlan }) {
 	const t = useTranslations("experts.plan.result");
+	const tCommon = useTranslations("common");
 	const tiles = [
 		["books", plan.total.books],
 		["sigils", plan.total.sigils],
@@ -498,19 +502,15 @@ function PlanResult({ plan }: { plan: ExpertsPlan }) {
 			<div className="flex items-center justify-between gap-3">
 				<h3 className="font-semibold">{t("title")}</h3>
 			</div>
-			<div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
-				{tiles.map(([key, value]) => (
-					<div
-						key={key}
-						className="border-line flex flex-col rounded-md border-[1.5px] p-3"
-					>
-						<span className="font-mono text-xl font-semibold">
-							{formatNumber(value)}
-						</span>
-						<span className="text-muted text-xs">{t(key)}</span>
-					</div>
-				))}
-			</div>
+			<ResultStats
+				stats={[
+					{
+						label: tCommon("powerGained"),
+						value: `+${formatNumber(powerGainOf(plan))}`,
+					},
+					...tiles.map(([key, value]) => ({ label: t(key), value: formatNumber(value) })),
+				]}
+			/>
 			<ScrollRegion label={t("tableLabel")}>
 				<table className="w-full min-w-120 text-start">
 					<thead>
@@ -533,7 +533,8 @@ function PlanResult({ plan }: { plan: ExpertsPlan }) {
 								<td className="pe-3 font-mono">{formatNumber(row.exp)}</td>
 								<td className="pe-3 font-mono">{formatNumber(row.levels)}</td>
 								<td className="pe-3 font-mono">{formatNumber(row.advancements)}</td>
-								<td className="font-mono">{formatNumber(row.affinity)}</td>
+								<td className="pe-3 font-mono">{formatNumber(row.affinity)}</td>
+								<td className="font-mono">{`+${formatNumber(row.powerGain)}`}</td>
 							</tr>
 						))}
 					</tbody>

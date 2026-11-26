@@ -183,9 +183,7 @@
         "from": "{value} bis",
         "result": {
             "title": "Ergebnis für {amount} {count, plural, one {Teil} other {Teile}}",
-            "power": "Macht",
             "powerLines": {
-                "gained": "Gewonnene Macht",
                 "before": "Macht dieser Teile vorher",
                 "after": "Macht dieser Teile nachher"
             },
@@ -197,11 +195,6 @@
             "forgingStatsUp": "+{percent}% ({steps} Schritte)",
             "milestones": "Freigeschaltete Meilensteine",
             "milestoneLine": "{label}: {stat}",
-            "events": {
-                "svs": "SvS",
-                "allianceShowdown": "Alliance Showdown",
-                "kingOfIcefield": "King of Icefield"
-            },
             "note": "Der Heldengear-Plan hat keine Tempo- oder Bonusregler. Der Rechner liefert keine Zeit.",
             "tableLabel": "Ergebnistabelle des Plans"
         }

@@ -183,9 +183,7 @@
         "from": "{value}から",
         "result": {
             "title": "{count, plural, other {装備{amount}個}}の結果",
-            "power": "戦力",
             "powerLines": {
-                "gained": "獲得戦力",
                 "before": "これらの装備の現在の戦力",
                 "after": "これらの装備の完了後の戦力"
             },
@@ -197,11 +195,6 @@
             "forgingStatsUp": "+{percent}%（{steps}ステップ）",
             "milestones": "解放されたマイルストーン",
             "milestoneLine": "{label}: {stat}",
-            "events": {
-                "svs": "SvS",
-                "allianceShowdown": "Alliance Showdown",
-                "kingOfIcefield": "King of Icefield"
-            },
             "note": "ヒーロー装備のプランには、速度やボーナスの設定がありません。この計算機は時間を返しません。",
             "tableLabel": "プラン結果の表"
         }

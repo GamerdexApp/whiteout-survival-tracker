@@ -183,9 +183,7 @@
         "from": "{value} đến",
         "result": {
             "title": "Kết quả cho {amount} {count, plural, other {món}}",
-            "power": "Sức mạnh",
             "powerLines": {
-                "gained": "Sức mạnh nhận được",
                 "before": "Sức mạnh của các món này trước đó",
                 "after": "Sức mạnh của các món này sau đó"
             },
@@ -197,11 +195,6 @@
             "forgingStatsUp": "+{percent}% ({steps} bước)",
             "milestones": "Mốc đã mở",
             "milestoneLine": "{label}: {stat}",
-            "events": {
-                "svs": "SvS",
-                "allianceShowdown": "Alliance Showdown",
-                "kingOfIcefield": "King of Icefield"
-            },
             "note": "Lập kế hoạch Trang bị Anh hùng không có điều khiển tốc độ hay cộng thêm. Bộ tính không trả về thời gian.",
             "tableLabel": "Bảng kết quả kế hoạch"
         }

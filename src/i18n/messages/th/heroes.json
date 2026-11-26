@@ -222,21 +222,18 @@
             "title": "ผลลัพธ์ {steps} ขั้นตอน",
             "widgets": "Widgets",
             "weaponSkills": "{count, plural, other {ปลดล็อกทักษะอาวุธ {amount} ทักษะ}}",
-            "note": "พลังไม่เป็นส่วนของการวางแผนฮีโร่ ตัวคำนวณไม่ให้เวลาและไม่รับค่าความเร็ว",
+            "note": "ตัวคำนวณไม่ให้เวลาและไม่รับค่าความเร็ว",
             "heads": {
                 "hero": "ฮีโร่",
                 "starSteps": "ขั้นของดาว",
                 "skillLevels": "เลเวลทักษะ",
                 "shards": "เศษ",
-                "widgets": "Widgets"
+                "widgets": "Widgets",
+                "power": "พลัง"
             },
-            "tableLabel": "ตารางผลลัพธ์ของแผน"
-        },
-        "events": {
-            "svs": "SvS State of Power",
-            "allianceShowdown": "Alliance Showdown",
-            "kingOfIcefield": "King of Icefield",
-            "hallOfChief": "Hall of Chief"
+            "tableLabel": "ตารางผลลัพธ์ของแผน",
+            "unknown": "ไม่ทราบ",
+            "unknownPowerNote": "แพ็กเกจข้อมูลไม่มีพลังสำหรับบางส่วนของแผนนี้ จึงไม่ทราบพลังที่เพิ่ม"
         },
         "luckyWheel": {
             "title": "วงล้อนำโชค",

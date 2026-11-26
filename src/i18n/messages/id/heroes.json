@@ -222,21 +222,18 @@
             "title": "Hasil, {steps} langkah",
             "widgets": "Widget",
             "weaponSkills": "{count, plural, other {{amount} skill senjata terbuka}}",
-            "note": "Kekuatan bukan bagian dari Rencanakan Pahlawan. Kalkulator tidak mengembalikan waktu dan tidak menerima input kecepatan.",
+            "note": "Kalkulator tidak mengembalikan waktu dan tidak menerima input kecepatan.",
             "heads": {
                 "hero": "Pahlawan",
                 "starSteps": "Langkah bintang",
                 "skillLevels": "Level skill",
                 "shards": "Pecahan",
-                "widgets": "Widget"
+                "widgets": "Widget",
+                "power": "Kekuatan"
             },
-            "tableLabel": "Tabel hasil rencana"
-        },
-        "events": {
-            "svs": "SvS State of Power",
-            "allianceShowdown": "Alliance Showdown",
-            "kingOfIcefield": "King of Icefield",
-            "hallOfChief": "Hall of Chief"
+            "tableLabel": "Tabel hasil rencana",
+            "unknown": "Tidak diketahui",
+            "unknownPowerNote": "Paket data tidak punya kekuatan untuk sebagian rencana ini, jadi tambahan kekuatan Tidak diketahui."
         },
         "luckyWheel": {
             "title": "Roda Keberuntungan",

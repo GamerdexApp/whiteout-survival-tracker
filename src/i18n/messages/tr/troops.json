@@ -111,14 +111,12 @@
             },
             "appointmentEffect": "+{capacity} kapasite, +%{speed} hız",
             "appointmentNote": "İki atamadan yalnızca biri açık olabilir. Eğitim Bakanı {moeCapacity} kapasite ve yüzde {moeSpeed} hız ekler (Üstün: {moeCapacitySupreme} ve {moeSpeedSupreme}). Başkan Yardımcısı yüzde {vpSpeed} hız ekler (Üstün: {vpSpeedSupreme}).",
-            "capacity": "Kapasite",
             "researchCapacity": "Araştırma kapasitesi",
             "troops": "{value} birlik",
             "readOnly": "Salt okunur",
             "capacityBoost": "Kapasite artışı",
             "boostTotal": "Toplam x{multiplier}",
             "capacityPerBatch": "Grup başına kapasite",
-            "trainingSpeed": "Eğitim hızı",
             "gameSpeed": "Oyundaki eğitim hızı",
             "appointmentSpeed": "Atama",
             "mobilize": "Mobilize",
@@ -134,9 +132,7 @@
         },
         "result": {
             "title": "Sonuç",
-            "resources": "Kaynaklar",
             "changes": "Kademeye göre birlik değişimleri",
-            "powerTitle": "Tahmini güç artışı",
             "heads": {
                 "tier": "Kademe",
                 "infantry": "Piy.",
@@ -150,7 +146,6 @@
             "totalTime": "Toplam, tüm birlik türleri (hızlandırma süresi)",
             "longest": "En uzun birlik türü",
             "minutesNeeded": "Gereken hızlandırma dakikası",
-            "minutesUsed": "Kullanılan hızlandırma dakikası (stoktan)",
             "minutes": "{value} dk",
             "tier12Note": "Paket, Kademe 12 maliyetlerinin kısmen türetildiğini söyler. Nişancı terfi maliyeti oyunda ölçüldü, Piyade ve Mızrakçı maliyetleri ondan ölçeklendi."
         }

@@ -183,9 +183,7 @@
         "from": "{value} to",
         "result": {
             "title": "Result for {amount} {count, plural, one {piece} other {pieces}}",
-            "power": "Power",
             "powerLines": {
-                "gained": "Power gained",
                 "before": "Power of these pieces before",
                 "after": "Power of these pieces after"
             },
@@ -197,11 +195,6 @@
             "forgingStatsUp": "+{percent}% ({steps} steps)",
             "milestones": "Milestones unlocked",
             "milestoneLine": "{label}: {stat}",
-            "events": {
-                "svs": "SvS",
-                "allianceShowdown": "Alliance Showdown",
-                "kingOfIcefield": "King of Icefield"
-            },
             "note": "Plan Hero Gear has no speed or bonus controls. The calculator returns no time.",
             "tableLabel": "Plan result table"
         }

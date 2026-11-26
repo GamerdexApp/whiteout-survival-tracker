@@ -27,9 +27,12 @@ import { generalMinutesApplied, minutesOfSpeedup } from "@/service/inventory";
 import { petSkillConstructionPercent } from "@/service/pets";
 import { resourceChecks } from "@/service/planStock";
 import { findBuildingById, levelledBuildings } from "@/data/game/buildings";
-import { findItem, RESOURCE_ITEM_IDS } from "@/data/game/items";
+import { RESOURCE_ITEM_IDS } from "@/data/game/items";
 import { EarnablePoints } from "@/comps/export/EarnablePoints";
 import { ExportToEventFlyout } from "@/comps/export/ExportToEventFlyout";
+import { PanelRow, PlanPanel } from "@/comps/plans/PlanPanel";
+import { ResultResources } from "@/comps/plans/ResultResources";
+import { ResultStats } from "@/comps/plans/ResultStats";
 import { GeneralSpeedupShare } from "@/comps/queues/GeneralSpeedupShare";
 import { PlanStockCheck } from "@/comps/queues/PlanStockCheck";
 import { Badge } from "@/comps/ui/Badge";
@@ -336,78 +339,64 @@ export function ConstructionSpeedControls({
 	}));
 
 	return (
-		<div className="border-line bg-tint flex flex-col gap-3 rounded-md border-[1.5px] p-3">
-			<div className="flex items-center justify-between gap-3">
-				<span className="font-medium">{t("title")}</span>
-				<span className="flex items-center gap-2">
-					<span className="font-mono font-medium">{percent(bonusesPercent)}</span>
-					<Badge tone="added">{t("readOnly")}</Badge>
+		<PlanPanel>
+			<PanelRow
+				label={t("title")}
+				note={
+					<>
+						{bonusesOn ? t("bonusesOn") : t("bonusesOff")}{" "}
+						<Link href="/bonuses" className="text-link underline">
+							{t("openBonuses")}
+						</Link>
+					</>
+				}
+			>
+				<span className="font-mono font-medium">{percent(bonusesPercent)}</span>
+				<Badge tone="added">{t("readOnly")}</Badge>
+			</PanelRow>
+			<PanelRow label={t("appointment")} note={t.rich("appointmentNote", { strong })}>
+				<SegmentedControl
+					label={t("appointment")}
+					options={appointmentOptions}
+					value={controls.vicePresident}
+					onChange={(vicePresident) => onChange({ ...controls, vicePresident })}
+				/>
+				<span className="font-mono text-xs">
+					{plusPercent(APPOINTMENT_PERCENT[controls.vicePresident])}
 				</span>
-			</div>
-			<p className="text-muted text-xs">
-				{bonusesOn ? t("bonusesOn") : t("bonusesOff")}{" "}
-				<Link href="/bonuses" className="text-link underline">
-					{t("openBonuses")}
-				</Link>
-			</p>
-			<hr className="border-line border-t-[1.5px]" />
-			<div className="flex flex-wrap items-center justify-between gap-3">
-				<span className="font-medium">{t("appointment")}</span>
-				<span className="flex items-center gap-2">
-					<SegmentedControl
-						label={t("appointment")}
-						options={appointmentOptions}
-						value={controls.vicePresident}
-						onChange={(vicePresident) => onChange({ ...controls, vicePresident })}
-					/>
-					<span className="font-mono text-xs">
-						{plusPercent(APPOINTMENT_PERCENT[controls.vicePresident])}
-					</span>
-				</span>
-			</div>
-			<p className="text-muted text-xs">{t.rich("appointmentNote", { strong })}</p>
-			<hr className="border-line border-t-[1.5px]" />
-			<div className="flex items-center justify-between gap-3">
-				<span className="font-medium">{t("petSkill")}</span>
-				<span className="flex items-center gap-2">
-					<Switch
-						label={t("petSkill")}
-						checked={controls.petSkill}
-						disabled={petSkillPercent === 0}
-						onChange={(petSkill) => onChange({ ...controls, petSkill })}
-					/>
-					<span className="font-mono text-xs">{plusPercent(petSkillPercent)}</span>
-				</span>
-			</div>
-			<p className="text-muted text-xs">
-				{petSkillPercent === 0 ? t("petSkillNoteLocked") : t("petSkillNote")}
-			</p>
-			<hr className="border-line border-t-[1.5px]" />
-			<div className="flex items-center justify-between gap-3">
-				<span className="font-medium">{t("chiefOrder")}</span>
-				<span className="flex items-center gap-2">
-					<Switch
-						label={t("chiefOrder")}
-						checked={controls.chiefOrder}
-						onChange={(chiefOrder) => onChange({ ...controls, chiefOrder })}
-					/>
-					<span className="font-mono text-xs">{plusPercent(DOUBLE_TIME_PERCENT)}</span>
-				</span>
-			</div>
-			<p className="text-muted text-xs">
-				{t.rich("chiefOrderNote", {
+			</PanelRow>
+			<PanelRow
+				label={t("petSkill")}
+				note={petSkillPercent === 0 ? t("petSkillNoteLocked") : t("petSkillNote")}
+			>
+				<Switch
+					label={t("petSkill")}
+					checked={controls.petSkill}
+					disabled={petSkillPercent === 0}
+					onChange={(petSkill) => onChange({ ...controls, petSkill })}
+				/>
+				<span className="font-mono text-xs">{plusPercent(petSkillPercent)}</span>
+			</PanelRow>
+			<PanelRow
+				label={t("chiefOrder")}
+				note={t.rich("chiefOrderNote", {
 					strong,
 					percent: formatNumber(DOUBLE_TIME_PERCENT),
 				})}
-			</p>
-			<hr className="border-line border-t-[1.5px]" />
-			<div className="flex items-center justify-between gap-3">
-				<span className="font-semibold">{t("total")}</span>
+			>
+				<Switch
+					label={t("chiefOrder")}
+					checked={controls.chiefOrder}
+					onChange={(chiefOrder) => onChange({ ...controls, chiefOrder })}
+				/>
+				<span className="font-mono text-xs">{plusPercent(DOUBLE_TIME_PERCENT)}</span>
+			</PanelRow>
+			<PanelRow label={t("total")} emphasis>
 				<span className="text-primary font-mono font-semibold">
 					{percent(speedPercent)}
 				</span>
-			</div>
-		</div>
+			</PanelRow>
+		</PlanPanel>
 	);
 }
 
@@ -473,6 +462,7 @@ function PlanResult({
 	speedPercent: number;
 }) {
 	const t = useTranslations("buildings");
+	const tCommon = useTranslations("common");
 	const groups = groupSteps(calculation.steps);
 	const amountOf = (itemId: string) =>
 		calculation.resources.find((resource) => resource.itemId === itemId)?.amount ?? 0;
@@ -482,51 +472,29 @@ function PlanResult({
 			<h3 className="font-semibold">
 				{t("plan.result.title", { count: formatNumber(calculation.steps.length) })}
 			</h3>
-			<div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
-				{RESOURCE_ITEM_IDS.map((itemId) => {
-					const item = findItem(itemId);
-					return (
-						<div key={itemId} className="flex items-start gap-2">
-							{item?.img ? (
-								<img
-									src={item.img}
-									alt=""
-									width={24}
-									height={24}
-									className="size-6"
-								/>
-							) : (
-								<span aria-hidden="true" className="bg-track size-6 rounded-sm" />
-							)}
-							<div className="flex flex-col">
-								<span className="text-muted text-xs">{item?.name ?? itemId}</span>
-								<span className="font-mono font-semibold">
-									{formatNumber(amountOf(itemId))}
-								</span>
-							</div>
-						</div>
-					);
-				})}
-			</div>
-			<div className="grid gap-3 sm:grid-cols-2">
-				<Stat
-					label={t("plan.result.powerGained")}
-					value={`+${formatNumber(calculation.power)}`}
-				/>
-				<Stat
-					label={t("plan.result.speedupMinutes")}
-					value={formatNumber(calculation.speedupMinutesNeeded)}
-					emphasis
-				/>
-				<Stat
-					label={t("plan.result.baseTime")}
-					value={formatDuration(calculation.baseSeconds)}
-				/>
-				<Stat
-					label={t("plan.result.timeWithBonus", { percent: formatNumber(speedPercent) })}
-					value={formatDuration(calculation.seconds)}
-				/>
-			</div>
+			<ResultResources
+				items={RESOURCE_ITEM_IDS.map((itemId) => ({ itemId, amount: amountOf(itemId) }))}
+			/>
+			<ResultStats
+				stats={[
+					{ label: tCommon("powerGained"), value: `+${formatNumber(calculation.power)}` },
+					{
+						label: t("plan.result.speedupMinutes"),
+						value: formatNumber(calculation.speedupMinutesNeeded),
+						emphasis: true,
+					},
+					{
+						label: t("plan.result.baseTime"),
+						value: formatDuration(calculation.baseSeconds),
+					},
+					{
+						label: t("plan.result.timeWithBonus", {
+							percent: formatNumber(speedPercent),
+						}),
+						value: formatDuration(calculation.seconds),
+					},
+				]}
+			/>
 			{groups.length > 0 && (
 				<ul className="flex flex-col">
 					{groups.map((group, index) => (
@@ -564,24 +532,5 @@ function PlanResult({
 				</p>
 			</div>
 		</Card>
-	);
-}
-
-function Stat({
-	label,
-	value,
-	emphasis = false,
-}: {
-	label: string;
-	value: string;
-	emphasis?: boolean;
-}) {
-	return (
-		<div className="bg-tint flex flex-col gap-0.5 rounded-md px-3 py-2">
-			<span className="text-muted text-xs">{label}</span>
-			<span className={`font-mono text-lg font-semibold ${emphasis ? "text-primary" : ""}`}>
-				{value}
-			</span>
-		</div>
 	);
 }

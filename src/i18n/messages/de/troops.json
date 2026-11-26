@@ -111,14 +111,12 @@
             },
             "appointmentEffect": "+{capacity} Kapazität, +{speed}% Tempo",
             "appointmentNote": "Nur eine der beiden Ernennungen kann aktiv sein. Minister of Education gibt {moeCapacity} Kapazität und {moeSpeed} Prozent Tempo (Höchste {moeCapacitySupreme} und {moeSpeedSupreme}). Vice President gibt {vpSpeed} Prozent Tempo (Höchste {vpSpeedSupreme}).",
-            "capacity": "Kapazität",
             "researchCapacity": "Forschungskapazität",
             "troops": "{value} Truppen",
             "readOnly": "Nur lesbar",
             "capacityBoost": "Kapazitätsbonus",
             "boostTotal": "Gesamt x{multiplier}",
             "capacityPerBatch": "Kapazität pro Charge",
-            "trainingSpeed": "Trainingstempo",
             "gameSpeed": "Trainingstempo im Spiel",
             "appointmentSpeed": "Ernennung",
             "mobilize": "Mobilize",
@@ -134,9 +132,7 @@
         },
         "result": {
             "title": "Ergebnis",
-            "resources": "Ressourcen",
             "changes": "Truppenänderungen nach Tier",
-            "powerTitle": "Geschätzter Machtzuwachs",
             "heads": {
                 "tier": "Tier",
                 "infantry": "Inf.",
@@ -150,7 +146,6 @@
             "totalTime": "Gesamt, alle Truppentypen (Beschleunigerzeit)",
             "longest": "Längster Truppentyp",
             "minutesNeeded": "Nötige Beschleuniger-Minuten",
-            "minutesUsed": "Genutzte Beschleuniger-Minuten (im Bestand)",
             "minutes": "{value} Min",
             "tier12Note": "Laut Paket sind die Kosten für Tier 12 teils abgeleitet. Die Beförderungskosten für Schützen wurden im Spiel gemessen, die für Infanterie und Lanzenträger wurden daraus skaliert."
         }

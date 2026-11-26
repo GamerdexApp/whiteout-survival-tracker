@@ -222,21 +222,18 @@
             "title": "Resultado, {steps} passos",
             "widgets": "Widgets",
             "weaponSkills": "{count, plural, one {{amount} habilidade de arma desbloqueada} other {{amount} habilidades de arma desbloqueadas}}",
-            "note": "O poder não faz parte do Planejar heróis. A calculadora não retorna tempo e não aceita velocidade.",
+            "note": "A calculadora não retorna tempo e não aceita velocidade.",
             "heads": {
                 "hero": "Herói",
                 "starSteps": "Passos de estrela",
                 "skillLevels": "Níveis de habilidade",
                 "shards": "Fragmentos",
-                "widgets": "Widgets"
+                "widgets": "Widgets",
+                "power": "Poder"
             },
-            "tableLabel": "Tabela de resultado do plano"
-        },
-        "events": {
-            "svs": "SvS State of Power",
-            "allianceShowdown": "Alliance Showdown",
-            "kingOfIcefield": "King of Icefield",
-            "hallOfChief": "Hall of Chief"
+            "tableLabel": "Tabela de resultado do plano",
+            "unknown": "Desconhecido",
+            "unknownPowerNote": "O pacote de dados não tem poder para uma parte deste plano, então o ganho de poder é Desconhecido."
         },
         "luckyWheel": {
             "title": "Roleta da Sorte",

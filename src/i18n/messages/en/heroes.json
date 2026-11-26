@@ -222,21 +222,18 @@
             "title": "Result, {steps} steps",
             "widgets": "Widgets",
             "weaponSkills": "{count, plural, one {{amount} weapon skill unlocked} other {{amount} weapon skills unlocked}}",
-            "note": "Power is not part of Plan Heroes. The calculator returns no time and takes no speed input.",
+            "note": "The calculator returns no time and takes no speed input.",
             "heads": {
                 "hero": "Hero",
                 "starSteps": "Star steps",
                 "skillLevels": "Skill levels",
                 "shards": "Shards",
-                "widgets": "Widgets"
+                "widgets": "Widgets",
+                "power": "Power"
             },
-            "tableLabel": "Plan result table"
-        },
-        "events": {
-            "svs": "SvS State of Power",
-            "allianceShowdown": "Alliance Showdown",
-            "kingOfIcefield": "King of Icefield",
-            "hallOfChief": "Hall of Chief"
+            "tableLabel": "Plan result table",
+            "unknown": "Unknown",
+            "unknownPowerNote": "The package has no power for part of this plan, so the power gain is Unknown."
         },
         "luckyWheel": {
             "title": "Lucky Wheel",

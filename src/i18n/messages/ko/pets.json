@@ -173,7 +173,6 @@
         },
         "result": {
             "title": "{count, plural, other {펫 {amount}종}} 결과",
-            "resources": "자원, 모든 펫",
             "byPet": "펫별",
             "heads": {
                 "pet": "펫",
@@ -184,25 +183,14 @@
             "powerGain": "+{value}",
             "percentGain": "+{value}%",
             "unknown": "알 수 없음",
-            "gains": "증가량",
             "gainNames": {
                 "levels": "오른 레벨",
                 "advancements": "승급",
                 "attack": "병력 공격",
                 "defense": "병력 방어",
-                "power": "전투력",
                 "score": "승급 점수"
             },
             "unknownPowerNote": "이 계획의 일부 레벨은 패키지에 승급 전투력이 없어서 전투력 증가를 알 수 없어요.",
-            "eventPoints": "이벤트 점수",
-            "events": {
-                "svs": "SvS",
-                "allianceShowdown": "Alliance Showdown",
-                "kingOfIcefield": "King of Icefield",
-                "hallOfChief": "Hall of Chief"
-            },
-            "notScored": "점수 없음",
-            "eventNote": "이벤트 점수는 승급 점수에 보유한 Common과 Advanced Wild Mark를 모두 사용한 것으로 보고 더한 뒤, 각 이벤트 점수 항목의 점수를 곱한 값이에요. 각 이벤트는 점수가 가장 높은 날로 계산해요.",
             "chestOf": "보유 {held}개 중"
         },
         "chest": {

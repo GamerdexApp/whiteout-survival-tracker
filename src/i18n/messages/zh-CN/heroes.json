@@ -222,21 +222,18 @@
             "title": "结果，{steps}步",
             "widgets": "Widgets",
             "weaponSkills": "{count, plural, other {已解锁{amount}个武器技能}}",
-            "note": "战力不属于英雄计划。计算器不返回时间，也不接受速度输入。",
+            "note": "计算器不返回时间，也不接受速度输入。",
             "heads": {
                 "hero": "英雄",
                 "starSteps": "星级步数",
                 "skillLevels": "技能等级",
                 "shards": "碎片",
-                "widgets": "Widgets"
+                "widgets": "Widgets",
+                "power": "战力"
             },
-            "tableLabel": "计划结果表"
-        },
-        "events": {
-            "svs": "SvS State of Power",
-            "allianceShowdown": "Alliance Showdown",
-            "kingOfIcefield": "King of Icefield",
-            "hallOfChief": "Hall of Chief"
+            "tableLabel": "计划结果表",
+            "unknown": "未知",
+            "unknownPowerNote": "数据包中没有此计划某一部分的战力，因此战力增加为未知。"
         },
         "luckyWheel": {
             "title": "幸运转盘",

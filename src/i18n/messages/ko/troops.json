@@ -111,14 +111,12 @@
             },
             "appointmentEffect": "한도 +{capacity}, 속도 +{speed}%",
             "appointmentNote": "두 임명 중 하나만 켤 수 있어요. Minister of Education은 한도 {moeCapacity}와 속도 {moeSpeed}%를 더해요 (최상급은 {moeCapacitySupreme}와 {moeSpeedSupreme}). Vice President는 속도 {vpSpeed}%를 더해요 (최상급은 {vpSpeedSupreme}).",
-            "capacity": "한도",
             "researchCapacity": "연구 한도",
             "troops": "병력 {value}",
             "readOnly": "읽기 전용",
             "capacityBoost": "한도 증가",
             "boostTotal": "합계 x{multiplier}",
             "capacityPerBatch": "배치당 한도",
-            "trainingSpeed": "훈련 속도",
             "gameSpeed": "게임 훈련 속도",
             "appointmentSpeed": "임명",
             "mobilize": "Mobilize",
@@ -134,9 +132,7 @@
         },
         "result": {
             "title": "결과",
-            "resources": "자원",
             "changes": "단계별 병력 변화",
-            "powerTitle": "예상 전투력 증가",
             "heads": {
                 "tier": "단계",
                 "infantry": "보병",
@@ -150,7 +146,6 @@
             "totalTime": "합계, 모든 병종 (가속 시간)",
             "longest": "가장 오래 걸리는 병종",
             "minutesNeeded": "필요한 가속 분",
-            "minutesUsed": "사용한 가속 분 (보유 기준)",
             "minutes": "{value}분",
             "tier12Note": "패키지에 따르면 12단계 비용은 일부 계산값이에요. 궁병 승급 비용은 게임에서 측정했고 보병과 창병 비용은 이를 기준으로 환산했어요."
         }

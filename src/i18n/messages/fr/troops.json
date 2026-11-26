@@ -111,14 +111,12 @@
             },
             "appointmentEffect": "+{capacity} de capacité, +{speed} % de vitesse",
             "appointmentNote": "Une seule des deux nominations peut être active. Le ministre de l'Éducation ajoute {moeCapacity} de capacité et {moeSpeed} pour cent de vitesse (Suprême {moeCapacitySupreme} et {moeSpeedSupreme}). Le vice-président ajoute {vpSpeed} pour cent de vitesse (Suprême {vpSpeedSupreme}).",
-            "capacity": "Capacité",
             "researchCapacity": "Capacité de recherche",
             "troops": "{value} troupes",
             "readOnly": "Lecture seule",
             "capacityBoost": "Boost de capacité",
             "boostTotal": "Total x{multiplier}",
             "capacityPerBatch": "Capacité par lot",
-            "trainingSpeed": "Vitesse d'entraînement",
             "gameSpeed": "Vitesse d'entraînement du jeu",
             "appointmentSpeed": "Nomination",
             "mobilize": "Mobilize",
@@ -134,9 +132,7 @@
         },
         "result": {
             "title": "Résultat",
-            "resources": "Ressources",
             "changes": "Changements de troupes par palier",
-            "powerTitle": "Hausse de puissance estimée",
             "heads": {
                 "tier": "Palier",
                 "infantry": "Inf.",
@@ -150,7 +146,6 @@
             "totalTime": "Total, tous types de troupes (durée avec accélérations)",
             "longest": "Type de troupe le plus long",
             "minutesNeeded": "Minutes d'accélération nécessaires",
-            "minutesUsed": "Minutes d'accélération utilisées (en stock)",
             "minutes": "{value} min",
             "tier12Note": "Les données indiquent que les coûts du palier 12 sont en partie déduits. Le coût de promotion des Tireurs d'élite a été mesuré dans le jeu, et les coûts de l'Infanterie et des Lanciers en ont été extrapolés."
         }

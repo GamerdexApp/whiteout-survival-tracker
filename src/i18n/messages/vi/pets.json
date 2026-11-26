@@ -173,7 +173,6 @@
         },
         "result": {
             "title": "Kết quả cho {count, plural, other {{amount} thú cưng}}",
-            "resources": "Tài nguyên, mọi thú cưng",
             "byPet": "Theo thú cưng",
             "heads": {
                 "pet": "Thú cưng",
@@ -184,25 +183,14 @@
             "powerGain": "+{value}",
             "percentGain": "+{value}%",
             "unknown": "Không rõ",
-            "gains": "Tăng thêm",
             "gainNames": {
                 "levels": "Cấp tăng",
                 "advancements": "Lần thăng tiến",
                 "attack": "Tấn công quân",
                 "defense": "Phòng thủ quân",
-                "power": "Sức mạnh",
                 "score": "Điểm thăng tiến"
             },
             "unknownPowerNote": "Gói dữ liệu không có sức mạnh thăng tiến cho một cấp trong kế hoạch này, nên mức tăng sức mạnh là Không rõ.",
-            "eventPoints": "Điểm sự kiện",
-            "events": {
-                "svs": "SvS",
-                "allianceShowdown": "Alliance Showdown",
-                "kingOfIcefield": "King of Icefield",
-                "hallOfChief": "Hall of Chief"
-            },
-            "notScored": "Không tính điểm",
-            "eventNote": "Điểm sự kiện là điểm thăng tiến cộng với mọi Common và Advanced Wild Mark bạn đang có, tính như dùng hết, nhân với điểm của dòng tính điểm trong mỗi sự kiện. Mỗi sự kiện tính ngày cho nhiều điểm nhất.",
             "chestOf": "trong {held} đang có"
         },
         "chest": {

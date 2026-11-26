@@ -183,9 +183,7 @@
         "from": "{value} a",
         "result": {
             "title": "Resultado para {amount} {count, plural, one {pieza} other {piezas}}",
-            "power": "Poder",
             "powerLines": {
-                "gained": "Poder ganado",
                 "before": "Poder de estas piezas antes",
                 "after": "Poder de estas piezas después"
             },
@@ -197,11 +195,6 @@
             "forgingStatsUp": "+{percent}% ({steps} pasos)",
             "milestones": "Hitos desbloqueados",
             "milestoneLine": "{label}: {stat}",
-            "events": {
-                "svs": "SvS",
-                "allianceShowdown": "Alliance Showdown",
-                "kingOfIcefield": "King of Icefield"
-            },
             "note": "Planificar Equipo de Héroe no tiene controles de velocidad ni de bonificación. La calculadora no devuelve tiempo.",
             "tableLabel": "Tabla de resultados del plan"
         }

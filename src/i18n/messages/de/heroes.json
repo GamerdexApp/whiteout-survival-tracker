@@ -222,21 +222,18 @@
             "title": "Ergebnis, {steps} Schritte",
             "widgets": "Widgets",
             "weaponSkills": "{count, plural, one {{amount} Waffenfähigkeit freigeschaltet} other {{amount} Waffenfähigkeiten freigeschaltet}}",
-            "note": "Macht gehört nicht zum Heldenplan. Der Rechner liefert keine Zeit und nimmt kein Tempo als Eingabe.",
+            "note": "Der Rechner liefert keine Zeit und nimmt kein Tempo als Eingabe.",
             "heads": {
                 "hero": "Held",
                 "starSteps": "Sternschritte",
                 "skillLevels": "Fähigkeitsstufen",
                 "shards": "Splitter",
-                "widgets": "Widgets"
+                "widgets": "Widgets",
+                "power": "Macht"
             },
-            "tableLabel": "Ergebnistabelle des Plans"
-        },
-        "events": {
-            "svs": "SvS State of Power",
-            "allianceShowdown": "Alliance Showdown",
-            "kingOfIcefield": "King of Icefield",
-            "hallOfChief": "Hall of Chief"
+            "tableLabel": "Ergebnistabelle des Plans",
+            "unknown": "Unbekannt",
+            "unknownPowerNote": "Das Paket hat für einen Teil dieses Plans keine Macht, daher ist der Machtgewinn unbekannt."
         },
         "luckyWheel": {
             "title": "Glücksrad",

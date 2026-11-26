@@ -183,9 +183,7 @@
         "from": "{value} a",
         "result": {
             "title": "Risultato per {amount} {count, plural, one {pezzo} other {pezzi}}",
-            "power": "Potenza",
             "powerLines": {
-                "gained": "Potenza guadagnata",
                 "before": "Potenza di questi pezzi prima",
                 "after": "Potenza di questi pezzi dopo"
             },
@@ -197,11 +195,6 @@
             "forgingStatsUp": "+{percent}% ({steps} passi)",
             "milestones": "Traguardi sbloccati",
             "milestoneLine": "{label}: {stat}",
-            "events": {
-                "svs": "SvS",
-                "allianceShowdown": "Alliance Showdown",
-                "kingOfIcefield": "King of Icefield"
-            },
             "note": "Pianifica Equip. degli eroi non ha controlli di velocità o bonus. Il calcolatore non restituisce un tempo.",
             "tableLabel": "Tabella del risultato del piano"
         }

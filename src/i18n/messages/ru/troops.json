@@ -111,14 +111,12 @@
             },
             "appointmentEffect": "+{capacity} вместимости, +{speed}% скорости",
             "appointmentNote": "Включить можно только одно из двух назначений. Министр образования добавляет {moeCapacity} вместимости и {moeSpeed} процентов скорости (высший: {moeCapacitySupreme} и {moeSpeedSupreme}). Вице-президент добавляет {vpSpeed} процентов скорости (высший: {vpSpeedSupreme}).",
-            "capacity": "Вместимость",
             "researchCapacity": "Вместимость от исследований",
             "troops": "Бойцов: {value}",
             "readOnly": "Только чтение",
             "capacityBoost": "Усиление вместимости",
             "boostTotal": "Итого x{multiplier}",
             "capacityPerBatch": "Вместимость партии",
-            "trainingSpeed": "Скорость тренировки",
             "gameSpeed": "Скорость тренировки в игре",
             "appointmentSpeed": "Назначение",
             "mobilize": "Mobilize",
@@ -134,9 +132,7 @@
         },
         "result": {
             "title": "Итог",
-            "resources": "Ресурсы",
             "changes": "Изменение войск по ступеням",
-            "powerTitle": "Ожидаемый прирост мощи",
             "heads": {
                 "tier": "Ступень",
                 "infantry": "Пех.",
@@ -150,7 +146,6 @@
             "totalTime": "Итого, все типы войск (время с ускорениями)",
             "longest": "Самый долгий тип войск",
             "minutesNeeded": "Нужно минут ускорений",
-            "minutesUsed": "Использовано минут ускорений (из запаса)",
             "minutes": "{value} мин",
             "tier12Note": "По данным пакета, цены ступени 12 частично расчётные. Цена повышения стрелков измерена в игре, а цены пехоты и копейщиков масштабированы от неё."
         }

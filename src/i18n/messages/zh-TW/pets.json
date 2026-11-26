@@ -173,7 +173,6 @@
         },
         "result": {
             "title": "{count, plural, other {{amount} 隻寵物}}的結果",
-            "resources": "資源，所有寵物",
             "byPet": "依寵物",
             "heads": {
                 "pet": "寵物",
@@ -184,25 +183,14 @@
             "powerGain": "+{value}",
             "percentGain": "+{value}%",
             "unknown": "未知",
-            "gains": "增益",
             "gainNames": {
                 "levels": "提升等級",
                 "advancements": "進階",
                 "attack": "部隊攻擊",
                 "defense": "部隊防禦",
-                "power": "戰力",
                 "score": "進階分數"
             },
             "unknownPowerNote": "資料包中沒有這份規劃內某個等級的進階戰力，所以戰力增加量為未知。",
-            "eventPoints": "活動積分",
-            "events": {
-                "svs": "SvS",
-                "allianceShowdown": "Alliance Showdown",
-                "kingOfIcefield": "King of Icefield",
-                "hallOfChief": "Hall of Chief"
-            },
-            "notScored": "不計分",
-            "eventNote": "活動積分等於進階分數，加上你持有的所有 Common 和 Advanced Wild Mark（按全部使用計算），乘以各活動計分列的分數。每個活動按得分最高的那一天計算。",
             "chestOf": "共持有 {held} 個"
         },
         "chest": {

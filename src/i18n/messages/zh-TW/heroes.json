@@ -222,21 +222,18 @@
             "title": "結果，{steps} 步",
             "widgets": "Widgets",
             "weaponSkills": "{count, plural, other {已解鎖 {amount} 個武器技能}}",
-            "note": "戰力不屬於英雄規劃。計算器不會回傳時間，也沒有速度輸入。",
+            "note": "計算器不會回傳時間，也沒有速度輸入。",
             "heads": {
                 "hero": "英雄",
                 "starSteps": "星級步驟",
                 "skillLevels": "技能等級",
                 "shards": "碎片",
-                "widgets": "Widgets"
+                "widgets": "Widgets",
+                "power": "戰力"
             },
-            "tableLabel": "規劃結果表"
-        },
-        "events": {
-            "svs": "SvS State of Power",
-            "allianceShowdown": "Alliance Showdown",
-            "kingOfIcefield": "King of Icefield",
-            "hallOfChief": "Hall of Chief"
+            "tableLabel": "規劃結果表",
+            "unknown": "未知",
+            "unknownPowerNote": "資料包中沒有這份規劃某一部分的戰力，所以戰力增加量為未知。"
         },
         "luckyWheel": {
             "title": "幸運轉盤",

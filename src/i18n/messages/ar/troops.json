@@ -111,14 +111,12 @@
             },
             "appointmentEffect": "‎+{capacity} سعة، ‎+{speed}% سرعة",
             "appointmentNote": "يمكن تفعيل أحد التعيينين فقط. وزير التعليم يضيف {moeCapacity} سعة و{moeSpeed} بالمئة سرعة (الأعلى {moeCapacitySupreme} و{moeSpeedSupreme}). نائب الرئيس يضيف {vpSpeed} بالمئة سرعة (الأعلى {vpSpeedSupreme}).",
-            "capacity": "السعة",
             "researchCapacity": "سعة الأبحاث",
             "troops": "{value} جندي",
             "readOnly": "للقراءة فقط",
             "capacityBoost": "تعزيز السعة",
             "boostTotal": "الإجمالي x{multiplier}",
             "capacityPerBatch": "السعة لكل دفعة",
-            "trainingSpeed": "سرعة التدريب",
             "gameSpeed": "سرعة التدريب في اللعبة",
             "appointmentSpeed": "التعيين",
             "mobilize": "Mobilize",
@@ -134,9 +132,7 @@
         },
         "result": {
             "title": "النتيجة",
-            "resources": "الموارد",
             "changes": "تغيّر القوات حسب الفئة",
-            "powerTitle": "الزيادة التقديرية في القوة",
             "heads": {
                 "tier": "الفئة",
                 "infantry": "مشاة",
@@ -150,7 +146,6 @@
             "totalTime": "الإجمالي لكل أنواع القوات (وقت التسريع)",
             "longest": "أطول نوع قوات",
             "minutesNeeded": "دقائق التسريع المطلوبة",
-            "minutesUsed": "دقائق التسريع المستخدمة (من المخزون)",
             "minutes": "{value} د",
             "tier12Note": "تذكر الحزمة أن تكاليف الفئة 12 مشتقة جزئيًا. تكلفة ارتقاء الرماة قيست في اللعبة، أما تكلفتا المشاة والفرسان فقد حُسبتا بالتناسب منها."
         }

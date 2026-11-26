@@ -222,21 +222,18 @@
             "title": "Kết quả, {steps} bước",
             "widgets": "Widgets",
             "weaponSkills": "{count, plural, other {Mở {amount} kỹ năng vũ khí}}",
-            "note": "Sức mạnh không nằm trong Lập kế hoạch Anh hùng. Bộ tính không trả về thời gian và không nhận đầu vào tốc độ.",
+            "note": "Bộ tính không trả về thời gian và không nhận đầu vào tốc độ.",
             "heads": {
                 "hero": "Anh hùng",
                 "starSteps": "Bước sao",
                 "skillLevels": "Cấp kỹ năng",
                 "shards": "Mảnh",
-                "widgets": "Widgets"
+                "widgets": "Widgets",
+                "power": "Sức mạnh"
             },
-            "tableLabel": "Bảng kết quả kế hoạch"
-        },
-        "events": {
-            "svs": "SvS State of Power",
-            "allianceShowdown": "Alliance Showdown",
-            "kingOfIcefield": "King of Icefield",
-            "hallOfChief": "Hall of Chief"
+            "tableLabel": "Bảng kết quả kế hoạch",
+            "unknown": "Không rõ",
+            "unknownPowerNote": "Gói dữ liệu không có sức mạnh cho một phần của kế hoạch này, nên mức tăng sức mạnh là Không rõ."
         },
         "luckyWheel": {
             "title": "Vòng quay may mắn",

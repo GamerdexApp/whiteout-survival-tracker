@@ -111,14 +111,12 @@
             },
             "appointmentEffect": "+{capacity} capacity, +{speed}% speed",
             "appointmentNote": "Only one of the two appointments can be on. Minister of Education adds {moeCapacity} capacity and {moeSpeed} percent speed (Supreme {moeCapacitySupreme} and {moeSpeedSupreme}). Vice President adds {vpSpeed} percent speed (Supreme {vpSpeedSupreme}).",
-            "capacity": "Capacity",
             "researchCapacity": "Research capacity",
             "troops": "{value} troops",
             "readOnly": "Read only",
             "capacityBoost": "Capacity boost",
             "boostTotal": "Total x{multiplier}",
             "capacityPerBatch": "Capacity per batch",
-            "trainingSpeed": "Training speed",
             "gameSpeed": "Game training speed",
             "appointmentSpeed": "Appointment",
             "mobilize": "Mobilize",
@@ -134,9 +132,7 @@
         },
         "result": {
             "title": "Result",
-            "resources": "Resources",
             "changes": "Troop changes by tier",
-            "powerTitle": "Estimated power increase",
             "heads": {
                 "tier": "Tier",
                 "infantry": "Inf.",
@@ -150,7 +146,6 @@
             "totalTime": "Total, all troop types (speedup time)",
             "longest": "Longest troop type",
             "minutesNeeded": "Speedup minutes needed",
-            "minutesUsed": "Speedup minutes used (in stock)",
             "minutes": "{value} min",
             "tier12Note": "The package says the Tier 12 costs are partly derived. The Marksman promotion cost was measured in the game, and the Infantry and Lancer costs were scaled from it."
         }

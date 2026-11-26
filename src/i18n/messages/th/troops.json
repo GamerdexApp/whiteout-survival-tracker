@@ -111,14 +111,12 @@
             },
             "appointmentEffect": "ความจุ +{capacity}, ความเร็ว +{speed}%",
             "appointmentNote": "เปิดได้เพียงหนึ่งในสองตำแหน่ง รัฐมนตรีศึกษาเพิ่มความจุ {moeCapacity} และความเร็ว {moeSpeed}% (สูงสุด {moeCapacitySupreme} และ {moeSpeedSupreme}) รองประธานาธิบดีเพิ่มความเร็ว {vpSpeed}% (สูงสุด {vpSpeedSupreme})",
-            "capacity": "ความจุ",
             "researchCapacity": "ความจุจากวิจัย",
             "troops": "ทหาร {value} นาย",
             "readOnly": "อ่านอย่างเดียว",
             "capacityBoost": "ตัวเสริมความจุ",
             "boostTotal": "รวม x{multiplier}",
             "capacityPerBatch": "ความจุต่อชุด",
-            "trainingSpeed": "ความเร็วฝึก",
             "gameSpeed": "ความเร็วฝึกในเกม",
             "appointmentSpeed": "ตำแหน่งแต่งตั้ง",
             "mobilize": "Mobilize",
@@ -134,9 +132,7 @@
         },
         "result": {
             "title": "ผลลัพธ์",
-            "resources": "ทรัพยากร",
             "changes": "ทหารที่เปลี่ยนตามระดับ",
-            "powerTitle": "พลังที่เพิ่มขึ้น (ประมาณ)",
             "heads": {
                 "tier": "ระดับ",
                 "infantry": "Inf.",
@@ -150,7 +146,6 @@
             "totalTime": "รวม ทุกประเภททหาร (เวลาตัวเร่งเวลา)",
             "longest": "ประเภททหารที่ใช้เวลานานที่สุด",
             "minutesNeeded": "นาทีตัวเร่งเวลาที่ต้องใช้",
-            "minutesUsed": "นาทีตัวเร่งเวลาที่ใช้ (ในสต็อก)",
             "minutes": "{value} นาที",
             "tier12Note": "แพ็กเกจข้อมูลระบุว่าค่าใช้จ่ายระดับ 12 คำนวณจากข้อมูลอื่นบางส่วน ค่าเลื่อนขั้นของ พลซุ่มยิง วัดจากในเกม ส่วนค่าของ ทหารราบ และ ทหารหอก ปรับสัดส่วนจากค่านั้น"
         }

@@ -111,14 +111,12 @@
             },
             "appointmentEffect": "+{capacity} kapasiti, +{speed}% kelajuan",
             "appointmentNote": "Hanya satu daripada dua pelantikan boleh dihidupkan. Menteri Pendidikan menambah {moeCapacity} kapasiti dan {moeSpeed} peratus kelajuan (Tertinggi {moeCapacitySupreme} dan {moeSpeedSupreme}). Naib Presiden menambah {vpSpeed} peratus kelajuan (Tertinggi {vpSpeedSupreme}).",
-            "capacity": "Kapasiti",
             "researchCapacity": "Kapasiti penyelidikan",
             "troops": "{value} tentera",
             "readOnly": "Baca sahaja",
             "capacityBoost": "Peningkatan kapasiti",
             "boostTotal": "Jumlah x{multiplier}",
             "capacityPerBatch": "Kapasiti setiap kumpulan",
-            "trainingSpeed": "Kelajuan latihan",
             "gameSpeed": "Kelajuan latihan permainan",
             "appointmentSpeed": "Pelantikan",
             "mobilize": "Mobilize",
@@ -134,9 +132,7 @@
         },
         "result": {
             "title": "Hasil",
-            "resources": "Sumber",
             "changes": "Perubahan tentera mengikut peringkat",
-            "powerTitle": "Anggaran peningkatan kuasa",
             "heads": {
                 "tier": "Peringkat",
                 "infantry": "Inf.",
@@ -150,7 +146,6 @@
             "totalTime": "Jumlah, semua jenis tentera (masa pecutan)",
             "longest": "Jenis tentera terlama",
             "minutesNeeded": "Minit pecutan diperlukan",
-            "minutesUsed": "Minit pecutan digunakan (dalam stok)",
             "minutes": "{value} min",
             "tier12Note": "Pakej menyatakan kos Peringkat 12 sebahagiannya diperoleh. Kos kenaikan pangkat Penembak tepat diukur dalam permainan, dan kos Infantri dan Penombak diskalakan daripadanya."
         }

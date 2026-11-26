@@ -183,9 +183,7 @@
         "from": "{value} до",
         "result": {
             "title": "Итог для {count, plural, one {{amount} предмета} few {{amount} предметов} many {{amount} предметов} other {{amount} предмета}}",
-            "power": "Мощь",
             "powerLines": {
-                "gained": "Прирост мощи",
                 "before": "Мощь этих предметов до",
                 "after": "Мощь этих предметов после"
             },
@@ -197,11 +195,6 @@
             "forgingStatsUp": "+{percent}% (шагов: {steps})",
             "milestones": "Открытые рубежи",
             "milestoneLine": "{label}: {stat}",
-            "events": {
-                "svs": "SvS",
-                "allianceShowdown": "Alliance Showdown",
-                "kingOfIcefield": "King of Icefield"
-            },
             "note": "В плане снаряжения героев нет настроек скорости и бонусов. Калькулятор не возвращает время.",
             "tableLabel": "Таблица итогов плана"
         }

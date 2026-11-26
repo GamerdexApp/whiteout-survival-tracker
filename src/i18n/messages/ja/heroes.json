@@ -222,21 +222,18 @@
             "title": "結果、{steps}ステップ",
             "widgets": "Widgets",
             "weaponSkills": "{count, plural, other {武器スキル{amount}個を解放}}",
-            "note": "戦力はヒーローのプランに含まれません。この計算機は時間を返さず、速度の入力も受け付けません。",
+            "note": "この計算機は時間を返さず、速度の入力も受け付けません。",
             "heads": {
                 "hero": "ヒーロー",
                 "starSteps": "星のステップ",
                 "skillLevels": "スキルレベル",
                 "shards": "シャード",
-                "widgets": "Widgets"
+                "widgets": "Widgets",
+                "power": "戦力"
             },
-            "tableLabel": "プラン結果の表"
-        },
-        "events": {
-            "svs": "SvS State of Power",
-            "allianceShowdown": "Alliance Showdown",
-            "kingOfIcefield": "King of Icefield",
-            "hallOfChief": "Hall of Chief"
+            "tableLabel": "プラン結果の表",
+            "unknown": "不明",
+            "unknownPowerNote": "このプランの一部について、パッケージに戦力がないため、戦力の増加は不明です。"
         },
         "luckyWheel": {
             "title": "ラッキーホイール",

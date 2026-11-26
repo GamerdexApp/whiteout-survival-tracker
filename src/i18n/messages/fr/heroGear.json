@@ -183,9 +183,7 @@
         "from": "{value} à",
         "result": {
             "title": "Résultat pour {amount} {count, plural, one {pièce} other {pièces}}",
-            "power": "Puissance",
             "powerLines": {
-                "gained": "Puissance gagnée",
                 "before": "Puissance de ces pièces avant",
                 "after": "Puissance de ces pièces après"
             },
@@ -197,11 +195,6 @@
             "forgingStatsUp": "+{percent} % ({steps} étapes)",
             "milestones": "Paliers débloqués",
             "milestoneLine": "{label} : {stat}",
-            "events": {
-                "svs": "SvS",
-                "allianceShowdown": "Alliance Showdown",
-                "kingOfIcefield": "King of Icefield"
-            },
             "note": "Planifier l'équipement de héros n'a aucun réglage de vitesse ou de bonus. Le calculateur ne renvoie aucune durée.",
             "tableLabel": "Tableau du résultat du plan"
         }

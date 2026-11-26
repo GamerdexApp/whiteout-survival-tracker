@@ -5,8 +5,6 @@ import { useMemo, useState } from "react";
 import { LuPlus } from "react-icons/lu";
 import type { Playthrough } from "@/types/app";
 import { formatDateTime, formatDecimal, formatNumber } from "@/lib/format";
-import { dayLabelOf } from "@/service/coreEvents";
-import { earnablePointsOf } from "@/service/eventExport";
 import { exportSpecOf, petPlanScores } from "@/service/petExport";
 import type { ChestUse, PetGoals, PetPlanResult, PetPlanRow, PetView } from "@/service/pets";
 import {
@@ -28,13 +26,15 @@ import {
 	STRENGTHENING_SERUM_ID,
 	TAMING_MANUAL_ID,
 } from "@/data/game/pets";
+import { EarnablePoints } from "@/comps/export/EarnablePoints";
 import { ExportToEventFlyout } from "@/comps/export/ExportToEventFlyout";
+import { ResultResources } from "@/comps/plans/ResultResources";
+import { ResultStats } from "@/comps/plans/ResultStats";
 import { PlanStockCheck } from "@/comps/queues/PlanStockCheck";
 import { Badge } from "@/comps/ui/Badge";
 import { Button } from "@/comps/ui/Button";
 import { Card } from "@/comps/ui/Card";
 import { Flyout } from "@/comps/ui/Flyout";
-import { ItemIcon } from "@/comps/ui/ItemIcon";
 import { Note } from "@/comps/ui/Note";
 import { PlanFooter } from "@/comps/ui/PlanFooter";
 import { SectionLabel } from "@/comps/ui/SectionLabel";
@@ -153,7 +153,12 @@ function PlanBody({
 							})}
 						</Note>
 					)}
-					<PlanResult chief={chief} plan={plan} chestUse={chestUse} />
+					<PlanResult plan={plan} chestUse={chestUse} />
+					<EarnablePoints
+						chief={chief}
+						spec={exportSpecOf(plan, chief)}
+						showDetails={false}
+					/>
 				</>
 			)}
 		</>
@@ -284,66 +289,45 @@ function PetBlock({
 	);
 }
 
-const EVENT_KEYS = ["svs", "allianceShowdown", "kingOfIcefield"] as const;
-const CORE_EVENT_OF = { svs: "svs", allianceShowdown: "showdown", kingOfIcefield: "king" } as const;
-
-function PlanResult({
-	chief,
-	plan,
-	chestUse,
-}: {
-	chief: Playthrough;
-	plan: PetPlanResult;
-	chestUse: ChestUse;
-}) {
+function PlanResult({ plan, chestUse }: { plan: PetPlanResult; chestUse: ChestUse }) {
 	const t = useTranslations("pets.plan.result");
-	const tEvent = useTranslations("eventExport");
-	const earnable = earnablePointsOf(chief, exportSpecOf(plan, chief));
+	const tCommon = useTranslations("common");
 	const { total } = plan;
 	const unknown = t("unknown");
-	const power = (value: number | null) => (value === null ? unknown : formatNumber(value));
-	const gains = [
-		{ id: "levels", value: formatNumber(total.levels) },
-		{ id: "advancements", value: formatNumber(total.advancements) },
-		{ id: "attack", value: t("percentGain", { value: formatDecimal(total.troopAttack) }) },
-		{ id: "defense", value: t("percentGain", { value: formatDecimal(total.troopDefense) }) },
-		{ id: "power", value: power(plan.totalPower) },
-		{ id: "score", value: formatNumber(total.advancementScore) },
-	] as const;
+	const chestItem = findItem(ADVANCEMENT_CHEST_ID);
+	const stats = [
+		{
+			label: tCommon("powerGained"),
+			value: plan.totalPower === null ? unknown : `+${formatNumber(plan.totalPower)}`,
+		},
+		{ label: t("gainNames.levels"), value: formatNumber(total.levels) },
+		{ label: t("gainNames.advancements"), value: formatNumber(total.advancements) },
+		{
+			label: t("gainNames.attack"),
+			value: t("percentGain", { value: formatDecimal(total.troopAttack) }),
+		},
+		{
+			label: t("gainNames.defense"),
+			value: t("percentGain", { value: formatDecimal(total.troopDefense) }),
+		},
+		{ label: t("gainNames.score"), value: formatNumber(total.advancementScore) },
+	];
 
 	return (
 		<Card className="flex flex-col gap-4 p-4">
 			<h3 className="font-semibold">
 				{t("title", { count: plan.rows.length, amount: formatNumber(plan.rows.length) })}
 			</h3>
-			<div className="flex flex-col">
-				<SectionLabel className="text-muted pb-1">{t("resources")}</SectionLabel>
-				{PLAN_ITEM_IDS.map((itemId) => {
-					const item = findItem(itemId);
-					return (
-						<div
-							key={itemId}
-							className="border-line flex min-h-9 items-center gap-2 border-t-[1.5px] py-1 first:border-t-0"
-						>
-							<ItemIcon src={item?.img} size={24} />
-							<span className="flex-1">{item?.name ?? itemId}</span>
-							<span className="font-mono">{formatNumber(plan.needs[itemId])}</span>
-						</div>
-					);
-				})}
-				{chestUse.used > 0 && (
-					<div className="border-line flex min-h-9 items-center gap-2 border-t-[1.5px] py-1">
-						<ItemIcon src={findItem(ADVANCEMENT_CHEST_ID)?.img} size={24} />
-						<span className="flex-1">
-							{findItem(ADVANCEMENT_CHEST_ID)?.name ?? ADVANCEMENT_CHEST_ID}
-						</span>
-						<span className="text-muted font-mono text-xs">
-							{t("chestOf", { held: formatNumber(chestUse.held) })}
-						</span>
-						<span className="font-mono">{formatNumber(chestUse.used)}</span>
-					</div>
-				)}
-			</div>
+			<ResultResources
+				items={PLAN_ITEM_IDS.map((itemId) => ({ itemId, amount: plan.needs[itemId] }))}
+			/>
+			{chestUse.used > 0 && (
+				<p className="text-muted text-xs">
+					{`${chestItem?.name ?? ADVANCEMENT_CHEST_ID} ${formatNumber(chestUse.used)}, ${t("chestOf", { held: formatNumber(chestUse.held) })}`}
+				</p>
+			)}
+			<ResultStats stats={stats} />
+			{plan.totalPower === null && <Note>{t("unknownPowerNote")}</Note>}
 			<div className="flex flex-col">
 				<SectionLabel className="text-muted pb-1">{t("byPet")}</SectionLabel>
 				<table className="w-full text-start">
@@ -380,59 +364,6 @@ function PlanResult({
 						})}
 					</tbody>
 				</table>
-			</div>
-			<div className="flex flex-col">
-				<SectionLabel className="text-muted pb-1">{t("gains")}</SectionLabel>
-				{gains.map((gain) => (
-					<div
-						key={gain.id}
-						className="border-line flex min-h-9 items-center justify-between gap-2 border-t-[1.5px] py-1 first:border-t-0"
-					>
-						<span>{t(`gainNames.${gain.id}`)}</span>
-						<span className="font-mono">{gain.value}</span>
-					</div>
-				))}
-			</div>
-			{plan.totalPower === null && <Note>{t("unknownPowerNote")}</Note>}
-			<div className="flex flex-col gap-2">
-				<SectionLabel className="text-muted">{t("eventPoints")}</SectionLabel>
-				<div className="grid grid-cols-2 gap-3">
-					{EVENT_KEYS.map((key) => {
-						const entry = earnable.find((item) => item.event === CORE_EVENT_OF[key]);
-						return (
-							<div
-								key={key}
-								className="border-line flex flex-col gap-1 rounded-md border-[1.5px] p-2"
-							>
-								<span className="text-muted text-xs">{t(`events.${key}`)}</span>
-								<span className="font-mono font-semibold">
-									{formatNumber(entry?.total ?? 0)}
-								</span>
-								{entry?.days.map((day) => (
-									<div key={day.groupId} className="flex flex-col gap-0.5">
-										<span className="text-muted text-xs">
-											{`${dayLabelOf(entry.event, day.dayId)} ${day.dayName}`}
-										</span>
-										{day.lines.map(({ line, row }) => (
-											<span key={line.id} className="text-xs">
-												{tEvent("earnable.line", {
-													label: line.label,
-													units: formatNumber(line.units),
-													each: formatNumber(row?.points ?? 0),
-												})}
-											</span>
-										))}
-									</div>
-								))}
-							</div>
-						);
-					})}
-					<div className="border-line flex flex-col rounded-md border-[1.5px] p-2">
-						<span className="text-muted text-xs">{t("events.hallOfChief")}</span>
-						<span className="font-mono font-semibold">{t("notScored")}</span>
-					</div>
-				</div>
-				<p className="text-muted text-xs">{t("eventNote")}</p>
 			</div>
 		</Card>
 	);

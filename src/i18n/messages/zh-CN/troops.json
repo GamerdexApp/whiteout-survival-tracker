@@ -111,14 +111,12 @@
             },
             "appointmentEffect": "容量 +{capacity}，速度 +{speed}%",
             "appointmentNote": "两种任命只能开启一种。教育部长增加{moeCapacity}容量和{moeSpeed}% 速度（至高为{moeCapacitySupreme}和{moeSpeedSupreme}）。副总统增加{vpSpeed}% 速度（至高为{vpSpeedSupreme}）。",
-            "capacity": "容量",
             "researchCapacity": "研究容量",
             "troops": "{value}部队",
             "readOnly": "只读",
             "capacityBoost": "容量提升",
             "boostTotal": "合计 x{multiplier}",
             "capacityPerBatch": "每批容量",
-            "trainingSpeed": "训练速度",
             "gameSpeed": "游戏训练速度",
             "appointmentSpeed": "任命",
             "mobilize": "Mobilize",
@@ -134,9 +132,7 @@
         },
         "result": {
             "title": "结果",
-            "resources": "资源",
             "changes": "各阶部队变化",
-            "powerTitle": "预计战力提升",
             "heads": {
                 "tier": "阶",
                 "infantry": "盾",
@@ -150,7 +146,6 @@
             "totalTime": "合计，所有兵种（加速时间）",
             "longest": "耗时最长的兵种",
             "minutesNeeded": "所需加速分钟数",
-            "minutesUsed": "已用加速分钟数（库存内）",
             "minutes": "{value}分",
             "tier12Note": "数据包说明 12 阶的费用有一部分是推算的。弓兵晋升费用在游戏中实测，盾兵和矛兵的费用按它换算。"
         }

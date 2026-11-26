@@ -173,7 +173,6 @@
         },
         "result": {
             "title": "Résultat pour {count, plural, one {{amount} familier} other {{amount} familiers}}",
-            "resources": "Ressources, tous les familiers",
             "byPet": "Par familier",
             "heads": {
                 "pet": "Familier",
@@ -184,25 +183,14 @@
             "powerGain": "+{value}",
             "percentGain": "+{value} %",
             "unknown": "Inconnu",
-            "gains": "Gains",
             "gainNames": {
                 "levels": "Niveaux gagnés",
                 "advancements": "Avancements",
                 "attack": "Attaque des troupes",
                 "defense": "Défense des troupes",
-                "power": "Puissance",
                 "score": "Score d'avancement"
             },
             "unknownPowerNote": "Les données n'ont pas de puissance avancée pour un niveau de ce plan, le gain de puissance est donc Inconnu.",
-            "eventPoints": "Points d'événement",
-            "events": {
-                "svs": "SvS",
-                "allianceShowdown": "Alliance Showdown",
-                "kingOfIcefield": "King of Icefield",
-                "hallOfChief": "Hall of Chief"
-            },
-            "notScored": "Sans score",
-            "eventNote": "Les points d'événement sont le score d'avancement plus chaque Common et Advanced Wild Mark que vous possédez, comme si toutes étaient utilisées, multipliés par les points de la ligne de score de chaque événement. Chaque événement compte le jour qui rapporte le plus.",
             "chestOf": "sur {held} possédés"
         },
         "chest": {

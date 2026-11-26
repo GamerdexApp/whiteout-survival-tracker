@@ -173,7 +173,6 @@
         },
         "result": {
             "title": "Итог для {count, plural, one {{amount} питомца} few {{amount} питомцев} many {{amount} питомцев} other {{amount} питомца}}",
-            "resources": "Ресурсы, все питомцы",
             "byPet": "По питомцам",
             "heads": {
                 "pet": "Питомец",
@@ -184,25 +183,14 @@
             "powerGain": "+{value}",
             "percentGain": "+{value}%",
             "unknown": "Неизвестно",
-            "gains": "Прирост",
             "gainNames": {
                 "levels": "Получено уровней",
                 "advancements": "Продвижения",
                 "attack": "Атака войск",
                 "defense": "Защита войск",
-                "power": "Мощь",
                 "score": "Очки продвижения"
             },
             "unknownPowerNote": "В пакете нет мощи продвижения для уровня из этого плана, поэтому прирост мощи неизвестен.",
-            "eventPoints": "Очки событий",
-            "events": {
-                "svs": "SvS",
-                "allianceShowdown": "Alliance Showdown",
-                "kingOfIcefield": "King of Icefield",
-                "hallOfChief": "Hall of Chief"
-            },
-            "notScored": "Очки не начисляются",
-            "eventNote": "Очки события это очки продвижения плюс все Common и Advanced Wild Mark, что у вас есть, как если бы все были использованы, умноженные на очки строки начисления каждого события. Для каждого события берётся день с наибольшим числом очков.",
             "chestOf": "из {held} имеющихся"
         },
         "chest": {

@@ -183,9 +183,7 @@
         "from": "{value}, hedef",
         "result": {
             "title": "Sonuç: {amount} {count, plural, one {parça} other {parça}}",
-            "power": "Güç",
             "powerLines": {
-                "gained": "Kazanılan güç",
                 "before": "Bu parçaların önceki gücü",
                 "after": "Bu parçaların sonraki gücü"
             },
@@ -197,11 +195,6 @@
             "forgingStatsUp": "+%{percent} ({steps} adım)",
             "milestones": "Açılan kilometre taşları",
             "milestoneLine": "{label}: {stat}",
-            "events": {
-                "svs": "SvS",
-                "allianceShowdown": "Alliance Showdown",
-                "kingOfIcefield": "King of Icefield"
-            },
             "note": "Kahraman Ekipmanı Planı'nda hız ya da bonus ayarı yoktur. Hesaplayıcı süre döndürmez.",
             "tableLabel": "Plan sonuç tablosu"
         }

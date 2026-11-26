@@ -222,21 +222,18 @@
             "title": "Sonuç, {steps} adım",
             "widgets": "Widgets",
             "weaponSkills": "{count, plural, one {{amount} silah becerisi açıldı} other {{amount} silah becerisi açıldı}}",
-            "note": "Güç, Kahraman Planı'nın bir parçası değildir. Hesaplayıcı süre döndürmez ve hız girdisi almaz.",
+            "note": "Hesaplayıcı süre döndürmez ve hız girdisi almaz.",
             "heads": {
                 "hero": "Kahraman",
                 "starSteps": "Yıldız adımları",
                 "skillLevels": "Beceri seviyeleri",
                 "shards": "Shard",
-                "widgets": "Widgets"
+                "widgets": "Widgets",
+                "power": "Güç"
             },
-            "tableLabel": "Plan sonuç tablosu"
-        },
-        "events": {
-            "svs": "SvS State of Power",
-            "allianceShowdown": "Alliance Showdown",
-            "kingOfIcefield": "King of Icefield",
-            "hallOfChief": "Hall of Chief"
+            "tableLabel": "Plan sonuç tablosu",
+            "unknown": "Bilinmiyor",
+            "unknownPowerNote": "Pakette bu planın bir bölümü için güç yok, bu yüzden güç kazancı Bilinmiyor."
         },
         "luckyWheel": {
             "title": "Şans Çarkı",

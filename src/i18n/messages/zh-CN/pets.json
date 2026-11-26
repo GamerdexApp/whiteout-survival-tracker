@@ -173,7 +173,6 @@
         },
         "result": {
             "title": "{count, plural, other {{amount}只宠物}}的结果",
-            "resources": "资源，全部宠物",
             "byPet": "按宠物",
             "heads": {
                 "pet": "宠物",
@@ -184,25 +183,14 @@
             "powerGain": "+{value}",
             "percentGain": "+{value}%",
             "unknown": "未知",
-            "gains": "收益",
             "gainNames": {
                 "levels": "提升的等级",
                 "advancements": "进阶",
                 "attack": "部队攻击",
                 "defense": "部队防御",
-                "power": "战力",
                 "score": "进阶分数"
             },
             "unknownPowerNote": "数据包中没有此计划中某个等级的进阶战力，因此战力增加为未知。",
-            "eventPoints": "活动积分",
-            "events": {
-                "svs": "SvS",
-                "allianceShowdown": "Alliance Showdown",
-                "kingOfIcefield": "King of Icefield",
-                "hallOfChief": "Hall of Chief"
-            },
-            "notScored": "不计分",
-            "eventNote": "活动积分等于进阶分数，加上你持有的所有 Common 和 Advanced Wild Mark（按全部使用计算），乘以各活动计分行的积分。每个活动按得分最高的那一天计算。",
             "chestOf": "共持有 {held} 个"
         },
         "chest": {
