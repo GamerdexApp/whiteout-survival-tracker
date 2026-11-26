@@ -112,6 +112,68 @@ export const eventSummaryOf = (
     ]),
   ) as Record<CoreEventId, number>;
 
+export interface EarnableDay {
+  groupId: string;
+  groupLabel?: string;
+  dayId: string;
+  dayName: string;
+  total: number;
+  lines: ScoredLine[];
+}
+
+export interface EarnablePoints {
+  event: CoreEventId;
+  total: number;
+  days: EarnableDay[];
+}
+
+/**
+ * What a plan scores in each event when each group of items is spent on the day of that event
+ * where it scores the most. An event that scores none of the plan has no entry.
+ */
+export const earnablePointsOf = (
+  chief: Playthrough,
+  spec: ExportSpec,
+): EarnablePoints[] =>
+  CORE_EVENT_IDS.flatMap((event) => {
+    const days = spec.groups.flatMap((group) => {
+      const best = scoringDaysOf(chief, event, group)
+        .map((day) => ({
+          day,
+          scored: scoreGroup(chief, event, day.id, group),
+        }))
+        .reduce<{
+          day: ReturnType<typeof scoringDaysOf>[number];
+          scored: ReturnType<typeof scoreGroup>;
+        } | null>(
+          (top, item) =>
+            top === null || item.scored.total > top.scored.total ? item : top,
+          null,
+        );
+      return best && best.scored.total > 0
+        ? [
+            {
+              groupId: group.id,
+              groupLabel: group.label,
+              dayId: best.day.id,
+              dayName: best.day.name,
+              total: best.scored.total,
+              lines: best.scored.lines.filter((item) => item.points > 0),
+            },
+          ]
+        : [];
+    });
+    return days.length > 0
+      ? [
+          {
+            event,
+            total: days.reduce((sum, day) => sum + day.total, 0),
+            days,
+          },
+        ]
+      : [];
+  });
+
 export const firstDayByGroup = (
   chief: Playthrough,
   event: CoreEventId,

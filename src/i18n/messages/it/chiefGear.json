@@ -117,14 +117,17 @@
             "title": "Pianifica Equip. del capo",
             "description": "Materiali, punteggio e potenza dal livello attuale all'obiettivo",
             "stepWord": "Passi",
-            "conversionNote": "Il controllo non conta le conversioni. Il convertitore ha sette tassi di cambio, ognuno con un limite settimanale, per esempio 10 Design Plans in 1 Lunar Amber fino a 500 a settimana."
+            "conversionNote": "I Design Plans in eccesso contano per Lunar Amber quando il convertitore è sbloccato: 10 Design Plans danno 1 Lunar Amber, fino a 500 volte a settimana. Il controllo non conta altre conversioni."
         },
         "charm": {
             "title": "Pianifica Amuleti del capo",
             "description": "Materiali, punteggio e potenza dal livello attuale all'obiettivo",
             "stepWord": "Fasi",
-            "conversionNote": "Il controllo non conta le conversioni: 2 Charm Guides fanno 1 Charm Design e viceversa, e 40 di entrambi fanno 1 Charm Secrets."
+            "conversionNote": "I Charm Guides e i Charm Designs in eccesso contano per Charm Secrets quando il convertitore è sbloccato: 40 dell'uno o dell'altro danno 1 Charm Secrets. Il controllo non conta altre conversioni."
         },
+        "converted": "{covered} convertendo {spend} {name}",
+        "converterLocked": "Il convertitore si sblocca al giorno {day} del server.",
+        "setAside": "{amount} messi da parte per la conversione",
         "saved": "Piano salvato {date}",
         "close": "Chiudi",
         "save": "Salva piano",

@@ -117,14 +117,17 @@
             "title": "Planifier l'équipement du chef",
             "description": "Matériaux, score et puissance du niveau actuel à l'objectif",
             "stepWord": "Étapes",
-            "conversionNote": "Le contrôle ne compte pas les conversions. Le convertisseur a sept taux d'échange, chacun avec une limite hebdomadaire, par exemple 10 Design Plans contre 1 Lunar Amber jusqu'à 500 par semaine."
+            "conversionNote": "Les Design Plans en trop comptent pour Lunar Amber une fois le convertisseur débloqué : 10 Design Plans donnent 1 Lunar Amber, jusqu'à 500 fois par semaine. Le contrôle ne compte aucune autre conversion."
         },
         "charm": {
             "title": "Planifier les charmes du chef",
             "description": "Matériaux, score et puissance du niveau actuel à l'objectif",
             "stepWord": "Stades",
-            "conversionNote": "Le contrôle ne compte pas les conversions : 2 Charm Guides donnent 1 Charm Design et inversement, et 40 de l'un ou l'autre donnent 1 Charm Secrets."
+            "conversionNote": "Les Charm Guides et Charm Designs en trop comptent pour Charm Secrets une fois le convertisseur débloqué : 40 de l'un ou l'autre donnent 1 Charm Secrets. Le contrôle ne compte aucune autre conversion."
         },
+        "converted": "{covered} en convertissant {spend} {name}",
+        "converterLocked": "Le convertisseur se débloque au jour {day} du serveur.",
+        "setAside": "{amount} mis de côté pour la conversion",
         "saved": "Plan enregistré {date}",
         "close": "Fermer",
         "save": "Enregistrer le plan",

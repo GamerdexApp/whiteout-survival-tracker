@@ -117,14 +117,17 @@
             "title": "Rancang Gear Chief",
             "description": "Bahan, skor dan kuasa dari tahap semasa ke matlamat",
             "stepWord": "Langkah",
-            "conversionNote": "Semakan tidak mengira penukaran. Penukar mempunyai tujuh kadar tukaran, masing-masing dengan had mingguan, contohnya 10 Design Plans kepada 1 Lunar Amber sehingga 500 seminggu."
+            "conversionNote": "Design Plans lebihan dikira untuk Lunar Amber apabila penukar dibuka: 10 Design Plans menjadi 1 Lunar Amber, sehingga 500 kali seminggu. Semakan tidak mengira pertukaran lain."
         },
         "charm": {
             "title": "Rancang Chief Charms",
             "description": "Bahan, skor dan kuasa dari tahap semasa ke matlamat",
             "stepWord": "Peringkat",
-            "conversionNote": "Semakan tidak mengira penukaran: 2 Charm Guide menjadi 1 Charm Design dan sebaliknya, dan 40 daripada mana-mana menjadi 1 Charm Secrets."
+            "conversionNote": "Charm Guide dan Charm Design lebihan dikira untuk Charm Secrets apabila penukar dibuka: 40 mana-mana menjadi 1 Charm Secrets. Semakan tidak mengira pertukaran lain."
         },
+        "converted": "{covered} daripada menukar {spend} {name}",
+        "converterLocked": "Penukar dibuka pada hari pelayan ke-{day}.",
+        "setAside": "{amount} diketepikan untuk penukaran",
         "saved": "Pelan disimpan {date}",
         "close": "Tutup",
         "save": "Simpan pelan",

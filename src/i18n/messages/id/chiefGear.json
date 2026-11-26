@@ -117,14 +117,17 @@
             "title": "Rencanakan Perlengkapan Chief",
             "description": "Bahan, skor, dan kekuatan dari level saat ini sampai target",
             "stepWord": "Langkah",
-            "conversionNote": "Pengecekan tidak menghitung konversi. Konverter punya tujuh kurs tukar, masing-masing dengan batas mingguan, misalnya 10 Design Plans menjadi 1 Lunar Amber sampai 500 per minggu."
+            "conversionNote": "Design Plans yang berlebih dihitung untuk Lunar Amber setelah konverter terbuka: 10 Design Plans menjadi 1 Lunar Amber, hingga 500 kali per minggu. Pemeriksaan tidak menghitung konversi lain."
         },
         "charm": {
             "title": "Rencanakan Jimat Chief",
             "description": "Bahan, skor, dan kekuatan dari level saat ini sampai target",
             "stepWord": "Tahap",
-            "conversionNote": "Pengecekan tidak menghitung konversi: 2 Charm Guide menjadi 1 Charm Design dan sebaliknya, dan 40 dari salah satunya menjadi 1 Charm Secrets."
+            "conversionNote": "Charm Guide dan Charm Design yang berlebih dihitung untuk Charm Secrets setelah konverter terbuka: 40 dari salah satunya menjadi 1 Charm Secrets. Pemeriksaan tidak menghitung konversi lain."
         },
+        "converted": "{covered} dari mengonversi {spend} {name}",
+        "converterLocked": "Konverter terbuka pada hari server ke-{day}.",
+        "setAside": "{amount} disisihkan untuk konversi",
         "saved": "Rencana disimpan {date}",
         "close": "Tutup",
         "save": "Simpan rencana",

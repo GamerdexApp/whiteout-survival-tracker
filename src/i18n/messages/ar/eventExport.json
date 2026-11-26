@@ -7,6 +7,11 @@
         "king": "King of Icefield",
         "hall": "Hall of Chief"
     },
+    "earnable": {
+        "title": "النقاط التي يمكنك كسبها",
+        "description": "ما تسجله عناصر هذه الخطة في كل حدث أساسي، في يوم الحدث الذي تسجل فيه أكثر.",
+        "line": "{label}: {units} × {each}"
+    },
     "stepEvent": "1. الفعالية",
     "stepDay": "{number}. يوم الفعالية {group}",
     "stepDayPlain": "يوم الفعالية",

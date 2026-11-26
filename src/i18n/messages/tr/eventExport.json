@@ -7,6 +7,11 @@
         "king": "King of Icefield",
         "hall": "Hall of Chief"
     },
+    "earnable": {
+        "title": "Kazanabileceğin puanlar",
+        "description": "Bu planın eşyalarının her çekirdek etkinlikte, en çok puan getirdiği günde sağladığı puanlar.",
+        "line": "{label}: {units} × {each}"
+    },
     "stepEvent": "1. Etkinlik",
     "stepDay": "{number}. Etkinlik günü {group}",
     "stepDayPlain": "Etkinlik günü",

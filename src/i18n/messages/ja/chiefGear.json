@@ -117,14 +117,17 @@
             "title": "チーフ装備のプラン",
             "description": "現在のレベルから目標までの素材、スコア、戦力",
             "stepWord": "ステップ",
-            "conversionNote": "チェックでは交換を数えません。コンバーターには7つの交換レートがあり、それぞれに週ごとの上限があります。例えば、Design Plans 10個をLunar Amber 1個に、週500個まで交換できます。"
+            "conversionNote": "コンバーターが解放されると、余ったDesign PlansはLunar Amberとして数えます。Design Plans 10個でLunar Amber 1個、週500回までです。チェックはほかの交換を数えません。"
         },
         "charm": {
             "title": "チーフチャームのプラン",
             "description": "現在のレベルから目標までの素材、スコア、戦力",
             "stepWord": "ステージ",
-            "conversionNote": "チェックでは交換を数えません。Charm Guide 2個でCharm Design 1個、その逆も可能で、どちらも40個でCharm Secrets 1個になります。"
+            "conversionNote": "コンバーターが解放されると、余ったCharm GuideとCharm DesignはCharm Secretsとして数えます。どちらも40個でCharm Secrets 1個です。チェックはほかの交換を数えません。"
         },
+        "converted": "{name} {spend}個の交換で{covered}個",
+        "converterLocked": "コンバーターはサーバー{day}日目に解放されます。",
+        "setAside": "{amount}個を交換用に確保",
         "saved": "プランを保存しました（{date}）",
         "close": "閉じる",
         "save": "プランを保存",

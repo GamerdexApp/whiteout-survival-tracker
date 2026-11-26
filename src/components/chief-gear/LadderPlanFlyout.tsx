@@ -198,7 +198,7 @@ function PlanBody({
 				<p className="text-muted text-xs">{t("inputsHint")}</p>
 			</Card>
 
-			<PlanStockCheck checks={ladderChecks(plan.total.materials, chief)} timeNote="" />
+			<PlanStockCheck checks={ladderChecks(plan.total.materials, chief, kind)} timeNote="" />
 			<p className="text-muted text-xs">{t(`${kind}.conversionNote`)}</p>
 
 			<Card className="flex flex-col gap-4 p-4">

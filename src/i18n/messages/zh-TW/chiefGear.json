@@ -117,14 +117,17 @@
             "title": "規劃領主裝備",
             "description": "從目前等級到目標所需的材料、分數和戰力",
             "stepWord": "步",
-            "conversionNote": "檢查時不會計入轉換。轉換器有七種兌換比率，各有每週上限，例如 10 個 Design Plans 換 1 個 Lunar Amber，每週最多 500 個。"
+            "conversionNote": "轉換器解鎖後，多餘的Design Plans會計入Lunar Amber：10個Design Plans換1個Lunar Amber，每週最多500次。檢查不計入其他轉換。"
         },
         "charm": {
             "title": "規劃領主護符",
             "description": "從目前等級到目標所需的材料、分數和戰力",
             "stepWord": "階段",
-            "conversionNote": "檢查時不會計入轉換：2 個 Charm Guide 可換 1 個 Charm Design，反過來也可以；任一種 40 個可換 1 個 Charm Secrets。"
+            "conversionNote": "轉換器解鎖後，多餘的Charm Guide和Charm Design會計入Charm Secrets：任一種40個換1個Charm Secrets。檢查不計入其他轉換。"
         },
+        "converted": "轉換{spend}個{name}可得{covered}個",
+        "converterLocked": "轉換器在伺服器第{day}天解鎖。",
+        "setAside": "已預留{amount}個用於轉換",
         "saved": "規劃已儲存 {date}",
         "close": "關閉",
         "save": "儲存規劃",

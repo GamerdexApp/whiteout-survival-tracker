@@ -7,6 +7,11 @@
         "king": "King of Icefield",
         "hall": "Hall of Chief"
     },
+    "earnable": {
+        "title": "Points à gagner",
+        "description": "Ce que rapportent les objets de ce plan dans chaque événement principal, le jour de l'événement où ils rapportent le plus.",
+        "line": "{label}: {units} × {each}"
+    },
     "stepEvent": "1. Événement",
     "stepDay": "{number}. Jour d'événement {group}",
     "stepDayPlain": "Jour d'événement",

@@ -7,6 +7,11 @@
         "king": "King of Icefield",
         "hall": "Hall of Chief"
     },
+    "earnable": {
+        "title": "Điểm có thể nhận",
+        "description": "Điểm các vật phẩm của kế hoạch này mang lại trong từng sự kiện cốt lõi, vào ngày của sự kiện cho nhiều điểm nhất.",
+        "line": "{label}: {units} × {each}"
+    },
     "stepEvent": "1. Sự kiện",
     "stepDay": "{number}. Ngày sự kiện {group}",
     "stepDayPlain": "Ngày sự kiện",

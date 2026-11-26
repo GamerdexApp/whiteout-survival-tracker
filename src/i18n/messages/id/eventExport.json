@@ -7,6 +7,11 @@
         "king": "King of Icefield",
         "hall": "Hall of Chief"
     },
+    "earnable": {
+        "title": "Poin yang bisa didapat",
+        "description": "Poin dari item rencana ini di setiap event inti, pada hari event yang memberi poin terbanyak.",
+        "line": "{label}: {units} × {each}"
+    },
     "stepEvent": "1. Event",
     "stepDay": "{number}. Hari event {group}",
     "stepDayPlain": "Hari event",

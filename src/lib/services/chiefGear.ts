@@ -6,13 +6,16 @@ import {
 import type { UpgradeResult } from "whiteout-survival-data";
 import type { Playthrough } from "@/types/app";
 import {
+  charmConverter,
   charmLevels,
   chiefGearSetBonus,
   chiefGearSlotList,
+  gearConverter,
   gearLevels,
   setBonusTierName,
 } from "@/data/game/chiefGear";
 import { findItem } from "@/data/game/items";
+import { unlockDayOfKey } from "@/data/game/serverTimeline";
 import { ownedCount } from "./inventory";
 import type { StockCheck } from "./planStock";
 import {
@@ -20,6 +23,7 @@ import {
   gearUnlockDay,
   isCharmLevelUnlocked,
   isGearTierUnlocked,
+  isUnlockedOnDay,
   unlockText,
 } from "./unlocks";
 
@@ -421,16 +425,170 @@ export const summarizeLadder = (items: LadderItem[]): LadderSummary => {
   };
 };
 
+const CONVERTERS = {
+  gear: {
+    rates: gearConverter,
+    rareItemIds: ["lunar-amber"],
+    area: "chiefGear",
+    unlockKey: "chief-gear-converter",
+  },
+  charm: {
+    rates: charmConverter,
+    rareItemIds: ["charm-secrets"],
+    area: "chiefCharms",
+    unlockKey: "chief-charm-converter",
+  },
+} as const;
+
+export const converterUnlockDay = (kind: LadderKind) =>
+  unlockDayOfKey(CONVERTERS[kind].unlockKey);
+
+const isConverterUnlocked = (chief: Playthrough, kind: LadderKind) =>
+  isUnlockedOnDay(chief, CONVERTERS[kind].area, converterUnlockDay(kind));
+
+interface Conversion {
+  fromItemId: string;
+  spend: number;
+  gain: number;
+}
+
+/** What the chief holds of each material beyond the plan, less what earlier conversions spent. */
+const spareStockOf = (materials: MaterialAmount[], chief: Playthrough) => {
+  const needed = new Map(
+    materials.map(({ itemId, amount }) => [itemId, amount]),
+  );
+  const spent = new Map<string, number>();
+  return {
+    of: (itemId: string) =>
+      Math.max(0, ownedCount(chief, itemId) - (needed.get(itemId) ?? 0)) -
+      (spent.get(itemId) ?? 0),
+    spend: (itemId: string, amount: number) =>
+      spent.set(itemId, (spent.get(itemId) ?? 0) + amount),
+    spentOf: (itemId: string) => spent.get(itemId) ?? 0,
+  };
+};
+
+type SpareStock = ReturnType<typeof spareStockOf>;
+
+/**
+ * Converts spare materials into a rare material that the plan is short of. Each exchange stays
+ * within its weekly limit.
+ */
+const conversionsFor = (
+  kind: LadderKind,
+  targetId: string,
+  shortBy: number,
+  spare: SpareStock,
+): Conversion[] => {
+  let remaining = shortBy;
+  return CONVERTERS[kind].rates
+    .filter((rate) => rate.toItemId === targetId)
+    .flatMap((rate) => {
+      const weeklyLimit = "weeklyLimit" in rate ? rate.weeklyLimit : undefined;
+      const times = Math.min(
+        Math.ceil(remaining / rate.toQuantity),
+        Math.floor(spare.of(rate.fromItemId) / rate.fromQuantity),
+        weeklyLimit ?? Infinity,
+      );
+      if (times <= 0) return [];
+      const spend = times * rate.fromQuantity;
+      spare.spend(rate.fromItemId, spend);
+      remaining -= times * rate.toQuantity;
+      return [
+        {
+          fromItemId: rate.fromItemId,
+          spend,
+          gain: times * rate.toQuantity,
+        },
+      ];
+    });
+};
+
+const hasSpareToConvert = (
+  kind: LadderKind,
+  targetId: string,
+  spare: SpareStock,
+) =>
+  CONVERTERS[kind].rates.some(
+    (rate) =>
+      rate.toItemId === targetId &&
+      spare.of(rate.fromItemId) >= rate.fromQuantity,
+  );
+
+/**
+ * The stock of each material the plan needs. A rare material that falls short counts what spare
+ * materials convert into once the converter is unlocked.
+ */
 export const ladderChecks = (
   materials: MaterialAmount[],
   chief: Playthrough,
-): StockCheck[] =>
-  materials.map(({ itemId, amount }) => ({
-    id: itemId,
-    name: findItem(itemId)?.name ?? itemId,
-    available: ownedCount(chief, itemId),
-    needed: amount,
-  }));
+  kind: LadderKind,
+): StockCheck[] => {
+  const t = translator("chiefGear");
+  const unlocked = isConverterUnlocked(chief, kind);
+  const spare = spareStockOf(materials, chief);
+  const rareIds: readonly string[] = CONVERTERS[kind].rareItemIds;
+  const conversionsOf = new Map(
+    unlocked
+      ? materials
+          .filter(
+            ({ itemId, amount }) =>
+              rareIds.includes(itemId) && amount > ownedCount(chief, itemId),
+          )
+          .map(({ itemId, amount }) => [
+            itemId,
+            conversionsFor(
+              kind,
+              itemId,
+              amount - ownedCount(chief, itemId),
+              spare,
+            ),
+          ])
+      : [],
+  );
+  return materials.map(({ itemId, amount }) => {
+    const owned = ownedCount(chief, itemId);
+    const base = {
+      id: itemId,
+      name: findItem(itemId)?.name ?? itemId,
+      available: owned,
+      needed: amount,
+    };
+    const conversions = conversionsOf.get(itemId) ?? [];
+    if (conversions.length > 0) {
+      return {
+        ...base,
+        available: owned + conversions.reduce((sum, { gain }) => sum + gain, 0),
+        detail: conversions
+          .map(({ fromItemId, spend, gain }) =>
+            t("plan.converted", {
+              covered: formatNumber(gain),
+              spend: formatNumber(spend),
+              name: findItem(fromItemId)?.name ?? fromItemId,
+            }),
+          )
+          .join(" · "),
+      };
+    }
+    const setAside = spare.spentOf(itemId);
+    if (setAside > 0) {
+      return {
+        ...base,
+        available: owned - setAside,
+        detail: t("plan.setAside", { amount: formatNumber(setAside) }),
+      };
+    }
+    const isShortRare = rareIds.includes(itemId) && amount > owned;
+    return !unlocked && isShortRare && hasSpareToConvert(kind, itemId, spare)
+      ? {
+          ...base,
+          detail: t("plan.converterLocked", {
+            day: formatNumber(converterUnlockDay(kind)),
+          }),
+        }
+      : base;
+  });
+};
 
 export interface SetBonusView {
   pieces: 3 | 6;

@@ -7,6 +7,11 @@
         "king": "King of Icefield",
         "hall": "Hall of Chief"
     },
+    "earnable": {
+        "title": "Erreichbare Punkte",
+        "description": "Was die Gegenstände dieses Plans in jedem Core Event bringen, am Tag des Events mit der höchsten Punktzahl.",
+        "line": "{label}: {units} × {each}"
+    },
     "stepEvent": "1. Event",
     "stepDay": "{number}. Eventtag {group}",
     "stepDayPlain": "Eventtag",

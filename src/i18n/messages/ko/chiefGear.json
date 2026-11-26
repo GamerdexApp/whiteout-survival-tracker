@@ -117,14 +117,17 @@
             "title": "영주 장비 계획",
             "description": "현재 레벨에서 목표까지 필요한 재료, 점수, 전투력",
             "stepWord": "단계",
-            "conversionNote": "점검에는 변환이 포함되지 않아요. 변환기에는 주간 한도가 있는 교환 비율이 7개 있어요. 예를 들어 Design Plans 10개를 Lunar Amber 1개로 바꾸며 주 500개까지예요."
+            "conversionNote": "변환기가 해금되면 남는 Design Plans가 Lunar Amber로 계산됩니다. Design Plans 10개로 Lunar Amber 1개, 주당 최대 500번입니다. 다른 변환은 계산하지 않습니다."
         },
         "charm": {
             "title": "영주 참 계획",
             "description": "현재 레벨에서 목표까지 필요한 재료, 점수, 전투력",
             "stepWord": "단계",
-            "conversionNote": "점검에는 변환이 포함되지 않아요. Charm Guide 2개는 Charm Design 1개가 되고 반대로도 바꿀 수 있어요. 둘 중 하나 40개는 Charm Secrets 1개가 돼요."
+            "conversionNote": "변환기가 해금되면 남는 Charm Guide와 Charm Design이 Charm Secrets로 계산됩니다. 둘 중 하나 40개로 Charm Secrets 1개입니다. 다른 변환은 계산하지 않습니다."
         },
+        "converted": "{name} {spend}개 변환으로 {covered}개",
+        "converterLocked": "변환기는 서버 {day}일차에 해금됩니다.",
+        "setAside": "{amount}개를 변환용으로 따로 둠",
         "saved": "{date}에 계획 저장됨",
         "close": "닫기",
         "save": "계획 저장",

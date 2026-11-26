@@ -117,14 +117,17 @@
             "title": "План снаряжения вождя",
             "description": "Материалы, очки и мощь от текущего уровня до цели",
             "stepWord": "Шаги",
-            "conversionNote": "Проверка не учитывает обмены. У конвертера семь курсов, у каждого свой недельный лимит, например 10 Design Plans на 1 Lunar Amber, до 500 в неделю."
+            "conversionNote": "Лишние Design Plans засчитываются как Lunar Amber, когда конвертер разблокирован: 10 Design Plans дают 1 Lunar Amber, до 500 раз в неделю. Другие обмены проверка не учитывает."
         },
         "charm": {
             "title": "План амулетов вождя",
             "description": "Материалы, очки и мощь от текущего уровня до цели",
             "stepWord": "Этапы",
-            "conversionNote": "Проверка не учитывает обмены: 2 Charm Guide дают 1 Charm Design и наоборот, а 40 любых дают 1 Charm Secrets."
+            "conversionNote": "Лишние Charm Guide и Charm Design засчитываются как Charm Secrets, когда конвертер разблокирован: 40 любых дают 1 Charm Secrets. Другие обмены проверка не учитывает."
         },
+        "converted": "{covered} от обмена {spend} {name}",
+        "converterLocked": "Конвертер разблокируется на {day}-й день сервера.",
+        "setAside": "{amount} отложено для обмена",
         "saved": "План сохранён {date}",
         "close": "Закрыть",
         "save": "Сохранить план",

@@ -7,6 +7,11 @@
         "king": "King of Icefield",
         "hall": "Hall of Chief"
     },
+    "earnable": {
+        "title": "Punti ottenibili",
+        "description": "Quanto fanno gli oggetti di questo piano in ogni evento principale, nel giorno dell'evento in cui valgono di più.",
+        "line": "{label}: {units} × {each}"
+    },
     "stepEvent": "1. Evento",
     "stepDay": "{number}. Giorno dell'evento {group}",
     "stepDayPlain": "Giorno dell'evento",

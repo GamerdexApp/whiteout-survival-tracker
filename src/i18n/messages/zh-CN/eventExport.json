@@ -7,6 +7,11 @@
         "king": "King of Icefield",
         "hall": "Hall of Chief"
     },
+    "earnable": {
+        "title": "可获得的积分",
+        "description": "此计划的物品在每个核心活动中，于得分最高的那一天可获得的积分。",
+        "line": "{label}: {units} × {each}"
+    },
     "stepEvent": "1. 活动",
     "stepDay": "{number}. 活动日{group}",
     "stepDayPlain": "活动日",

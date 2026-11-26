@@ -117,14 +117,17 @@
             "title": "领主装备计划",
             "description": "从当前等级到目标所需的材料、分数和战力",
             "stepWord": "步数",
-            "conversionNote": "检查不计入兑换。兑换器有七种兑换比例，各有每周上限，例如 10 个 Design Plans 兑换 1 个 Lunar Amber，每周最多 500。"
+            "conversionNote": "转换器解锁后，多余的Design Plans会计入Lunar Amber：10个Design Plans换1个Lunar Amber，每周最多500次。检查不计入其他转换。"
         },
         "charm": {
             "title": "领主饰品计划",
             "description": "从当前等级到目标所需的材料、分数和战力",
             "stepWord": "阶数",
-            "conversionNote": "检查不计入兑换：2 个 Charm Guide 可换 1 个 Charm Design，反之亦然，任意一种 40 个可换 1 个 Charm Secrets。"
+            "conversionNote": "转换器解锁后，多余的Charm Guide和Charm Design会计入Charm Secrets：任意一种40个换1个Charm Secrets。检查不计入其他转换。"
         },
+        "converted": "转换{spend}个{name}可得{covered}个",
+        "converterLocked": "转换器在服务器第{day}天解锁。",
+        "setAside": "已预留{amount}个用于转换",
         "saved": "计划已保存{date}",
         "close": "关闭",
         "save": "保存计划",

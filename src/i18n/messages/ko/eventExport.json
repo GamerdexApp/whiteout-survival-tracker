@@ -7,6 +7,11 @@
         "king": "King of Icefield",
         "hall": "Hall of Chief"
     },
+    "earnable": {
+        "title": "얻을 수 있는 포인트",
+        "description": "이 계획의 아이템이 각 핵심 이벤트에서 가장 많이 득점하는 날에 얻는 포인트입니다.",
+        "line": "{label}: {units} × {each}"
+    },
     "stepEvent": "1. 이벤트",
     "stepDay": "{number}. 이벤트 {group} 날짜",
     "stepDayPlain": "이벤트 날짜",

@@ -117,14 +117,17 @@
             "title": "Lập kế hoạch Trang bị Thủ lĩnh",
             "description": "Vật liệu, điểm và sức mạnh từ cấp hiện tại đến mục tiêu",
             "stepWord": "Bước",
-            "conversionNote": "Phần kiểm tra không tính quy đổi. Bộ quy đổi có bảy tỉ lệ, mỗi tỉ lệ có giới hạn hằng tuần, ví dụ 10 Design Plans đổi 1 Lunar Amber, tối đa 500 mỗi tuần."
+            "conversionNote": "Design Plans dư được tính cho Lunar Amber khi bộ chuyển đổi đã mở khóa: 10 Design Plans đổi được 1 Lunar Amber, tối đa 500 lần mỗi tuần. Phần kiểm tra không tính các chuyển đổi khác."
         },
         "charm": {
             "title": "Lập kế hoạch Bùa Thủ lĩnh",
             "description": "Vật liệu, điểm và sức mạnh từ cấp hiện tại đến mục tiêu",
             "stepWord": "Giai đoạn",
-            "conversionNote": "Phần kiểm tra không tính quy đổi: 2 Charm Guide đổi 1 Charm Design và ngược lại, và 40 cái của mỗi loại đổi 1 Charm Secrets."
+            "conversionNote": "Charm Guide và Charm Design dư được tính cho Charm Secrets khi bộ chuyển đổi đã mở khóa: 40 cái của một loại đổi được 1 Charm Secrets. Phần kiểm tra không tính các chuyển đổi khác."
         },
+        "converted": "{covered} từ việc đổi {spend} {name}",
+        "converterLocked": "Bộ chuyển đổi mở khóa vào ngày {day} của máy chủ.",
+        "setAside": "{amount} được để dành cho việc chuyển đổi",
         "saved": "Đã lưu kế hoạch {date}",
         "close": "Đóng",
         "save": "Lưu kế hoạch",

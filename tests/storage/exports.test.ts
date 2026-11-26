@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import type { Playthrough } from "@/types/app";
+import { earnablePointsOf } from "@/service/eventExport";
 import {
   expertPlanScores,
   exportSpecOf as expertSpecOf,
@@ -152,5 +153,65 @@ describe("troop export", () => {
     expect(
       hasExportLines(troopSpecOf(empty, runTroopsPlan(chief, empty))),
     ).toBe(false);
+  });
+});
+
+describe("earnable event points", () => {
+  const spec = (books: number, sigils: number, minutes: number) => ({
+    page: "experts",
+    groups: [
+      {
+        id: "items",
+        lines: [
+          {
+            id: "books",
+            label: "Books",
+            units: books,
+            matches: (_event: unknown, action: string) =>
+              action === "Use 1 Book of Knowledge",
+          },
+          {
+            id: "sigils",
+            label: "Sigils",
+            units: sigils,
+            matches: (_event: unknown, action: string) =>
+              action === "Use any 1 Expert Sigil (excluding Common Sigils)",
+          },
+          {
+            id: "speedups",
+            label: "Speedups",
+            units: minutes,
+            matches: (_event: unknown, action: string) =>
+              action.startsWith("Use 1m of Speedups to Learn Expert Skills"),
+          },
+        ],
+      },
+    ],
+  });
+
+  it("picks the SvS day that scores books, sigils and speedups together", () => {
+    const svs = earnablePointsOf(emptyChief(), spec(2, 1, 10)).find(
+      (item) => item.event === "svs",
+    )!;
+
+    expect(svs.days[0].dayName).toBe("Basic Skills Up");
+    expect(svs.total).toBe(2 * 60 + 6000 + 10 * 30);
+    expect(svs.days[0].lines.map((item) => item.line.id)).toEqual([
+      "books",
+      "sigils",
+      "speedups",
+    ]);
+  });
+
+  it("scores the other events the same way and leaves out events with no row", () => {
+    const events = earnablePointsOf(emptyChief(), spec(2, 1, 10));
+    const showdown = events.find((item) => item.event === "showdown")!;
+
+    expect(showdown.total).toBe(2 * 36 + 3600 + 10 * 18);
+    expect(events.map((item) => item.event)).toEqual(["svs", "showdown"]);
+  });
+
+  it("lists no event when the plan has nothing to spend", () => {
+    expect(earnablePointsOf(emptyChief(), spec(0, 0, 0))).toEqual([]);
   });
 });

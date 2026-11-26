@@ -117,14 +117,17 @@
             "title": "Plano do Equipamento do chefe",
             "description": "Materiais, pontuação e poder do nível atual ao objetivo",
             "stepWord": "Passos",
-            "conversionNote": "A verificação não conta conversões. O conversor tem sete taxas de câmbio, cada uma com limite semanal, por exemplo 10 Design Plans por 1 Lunar Amber até 500 por semana."
+            "conversionNote": "Os Design Plans sobrantes contam para Lunar Amber quando o conversor está desbloqueado: 10 Design Plans dão 1 Lunar Amber, até 500 vezes por semana. A verificação não conta outras conversões."
         },
         "charm": {
             "title": "Plano dos Amuletos do chefe",
             "description": "Materiais, pontuação e poder do nível atual ao objetivo",
             "stepWord": "Fases",
-            "conversionNote": "A verificação não conta conversões: 2 Charm Guides dão 1 Charm Design e vice-versa, e 40 de qualquer um dão 1 Charm Secrets."
+            "conversionNote": "Os Charm Guides e Charm Designs sobrantes contam para Charm Secrets quando o conversor está desbloqueado: 40 de qualquer um dão 1 Charm Secrets. A verificação não conta outras conversões."
         },
+        "converted": "{covered} ao converter {spend} {name}",
+        "converterLocked": "O conversor desbloqueia no dia {day} do servidor.",
+        "setAside": "{amount} reservados para a conversão",
         "saved": "Plano guardado {date}",
         "close": "Fechar",
         "save": "Guardar plano",

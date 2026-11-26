@@ -7,6 +7,11 @@
         "king": "King of Icefield",
         "hall": "Hall of Chief"
     },
+    "earnable": {
+        "title": "Points you can earn",
+        "description": "What the items of this plan score in each core event, on the day of that event where they score the most.",
+        "line": "{label}: {units} × {each}"
+    },
     "stepEvent": "1. Event",
     "stepDay": "{number}. Event day {group}",
     "stepDayPlain": "Event day",

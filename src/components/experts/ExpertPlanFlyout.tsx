@@ -26,6 +26,7 @@ import {
 	startingGoalFor,
 } from "@/service/experts";
 import { EXP_PER_LEARNING_MINUTE, MAX_AFFINITY } from "@/data/game/experts";
+import { EarnablePoints } from "@/comps/export/EarnablePoints";
 import { ExportToEventFlyout } from "@/comps/export/ExportToEventFlyout";
 import { GeneralSpeedupShare } from "@/comps/queues/GeneralSpeedupShare";
 import { PlanStockCheck } from "@/comps/queues/PlanStockCheck";
@@ -150,6 +151,7 @@ function PlanBody({
 					<StockSection plan={plan} chief={chief} />
 					<ByExpert rows={plan.rows} />
 					<PlanResult plan={plan} />
+					<EarnablePoints chief={chief} spec={exportSpecOf(plan, chief)} />
 				</>
 			)}
 		</>

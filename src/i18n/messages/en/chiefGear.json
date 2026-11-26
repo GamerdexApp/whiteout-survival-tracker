@@ -117,14 +117,17 @@
             "title": "Plan Chief Gear",
             "description": "Materials, score and power from current level to goal",
             "stepWord": "Steps",
-            "conversionNote": "The check does not count conversions. The converter has seven exchange rates, each with a weekly limit, for example 10 Design Plans into 1 Lunar Amber up to 500 a week."
+            "conversionNote": "Spare Design Plans count toward Lunar Amber once the converter is unlocked: 10 Design Plans make 1 Lunar Amber, up to 500 times a week. The check counts no other conversion."
         },
         "charm": {
             "title": "Plan Chief Charms",
             "description": "Materials, score and power from current level to goal",
             "stepWord": "Stages",
-            "conversionNote": "The check does not count conversions: 2 Charm Guides make 1 Charm Design and back, and 40 of either make 1 Charm Secrets."
+            "conversionNote": "Spare Charm Guides and Charm Designs count toward Charm Secrets once the converter is unlocked: 40 of either make 1 Charm Secrets. The check counts no other conversion."
         },
+        "converted": "{covered} from converting {spend} {name}",
+        "converterLocked": "The converter unlocks on server day {day}.",
+        "setAside": "{amount} set aside for conversion",
         "saved": "Plan saved {date}",
         "close": "Close",
         "save": "Save plan",

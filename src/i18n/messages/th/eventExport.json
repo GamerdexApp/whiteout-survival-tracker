@@ -7,6 +7,11 @@
         "king": "King of Icefield",
         "hall": "Hall of Chief"
     },
+    "earnable": {
+        "title": "คะแนนที่หาได้",
+        "description": "คะแนนของไอเทมในแผนนี้ในแต่ละอีเวนต์หลัก ในวันของอีเวนต์ที่ได้คะแนนมากที่สุด",
+        "line": "{label}: {units} × {each}"
+    },
     "stepEvent": "1. กิจกรรม",
     "stepDay": "{number}. วันของกิจกรรม {group}",
     "stepDayPlain": "วันของกิจกรรม",

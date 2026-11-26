@@ -117,14 +117,17 @@
             "title": "Şef Ekipmanı Planı",
             "description": "Mevcut seviyeden hedefe malzemeler, skor ve güç",
             "stepWord": "Adım",
-            "conversionNote": "Kontrol dönüşümleri saymaz. Dönüştürücüde her birinin haftalık sınırı olan yedi takas oranı vardır, örneğin 10 Design Plans karşılığında 1 Lunar Amber, haftada en fazla 500."
+            "conversionNote": "Dönüştürücü açıldığında artan Design Plans, Lunar Amber için sayılır: 10 Design Plans 1 Lunar Amber verir, haftada en fazla 500 kez. Kontrol başka dönüşümleri saymaz."
         },
         "charm": {
             "title": "Şef Tılsımı Planı",
             "description": "Mevcut seviyeden hedefe malzemeler, skor ve güç",
             "stepWord": "Aşama",
-            "conversionNote": "Kontrol dönüşümleri saymaz: 2 Charm Guide 1 Charm Design yapar ve tersi de geçerlidir, ikisinden de 40 tane 1 Charm Secrets yapar."
+            "conversionNote": "Dönüştürücü açıldığında artan Charm Guide ve Charm Design, Charm Secrets için sayılır: ikisinden birinin 40 tanesi 1 Charm Secrets verir. Kontrol başka dönüşümleri saymaz."
         },
+        "converted": "{spend} {name} dönüştürmekten {covered}",
+        "converterLocked": "Dönüştürücü sunucunun {day}. gününde açılır.",
+        "setAside": "{amount} dönüşüm için ayrıldı",
         "saved": "Plan kaydedildi: {date}",
         "close": "Kapat",
         "save": "Planı kaydet",

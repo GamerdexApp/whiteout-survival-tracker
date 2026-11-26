@@ -117,14 +117,17 @@
             "title": "خطة معدات القائد",
             "description": "المواد والنقاط والقوة من المستوى الحالي إلى الهدف",
             "stepWord": "الخطوات",
-            "conversionNote": "لا يحتسب الفحص التحويلات. يحتوي المحوّل على سبعة أسعار صرف، لكل منها حد أسبوعي، مثل 10 Design Plans إلى 1 Lunar Amber بحد أقصى 500 في الأسبوع."
+            "conversionNote": "تُحتسب Design Plans الفائضة ضمن Lunar Amber عند فتح المحوّل: كل 10 Design Plans تعطي 1 Lunar Amber، بحد أقصى 500 مرة في الأسبوع. لا يحتسب الفحص أي تحويلات أخرى."
         },
         "charm": {
             "title": "خطة تمائم القائد",
             "description": "المواد والنقاط والقوة من المستوى الحالي إلى الهدف",
             "stepWord": "المراحل",
-            "conversionNote": "لا يحتسب الفحص التحويلات: كل 2 Charm Guide تصنع 1 Charm Design والعكس، وكل 40 من أي منهما تصنع 1 Charm Secrets."
+            "conversionNote": "تُحتسب Charm Guide وCharm Design الفائضة ضمن Charm Secrets عند فتح المحوّل: كل 40 من أي منهما تعطي 1 Charm Secrets. لا يحتسب الفحص أي تحويلات أخرى."
         },
+        "converted": "{covered} من تحويل {spend} {name}",
+        "converterLocked": "يُفتح المحوّل في اليوم {day} من الخادم.",
+        "setAside": "{amount} محجوزة للتحويل",
         "saved": "تم حفظ الخطة {date}",
         "close": "إغلاق",
         "save": "حفظ الخطة",

@@ -7,6 +7,11 @@
         "king": "King of Icefield",
         "hall": "Hall of Chief"
     },
+    "earnable": {
+        "title": "Очки, которые можно получить",
+        "description": "Сколько очков дают предметы этого плана в каждом основном событии в тот день события, когда они приносят больше всего.",
+        "line": "{label}: {units} × {each}"
+    },
     "stepEvent": "1. Событие",
     "stepDay": "{number}. День события {group}",
     "stepDayPlain": "День события",

@@ -117,14 +117,17 @@
             "title": "Häuptlingsgear planen",
             "description": "Material, Score und Macht von der aktuellen Stufe bis zum Ziel",
             "stepWord": "Schritte",
-            "conversionNote": "Die Prüfung rechnet Umwandlungen nicht mit. Der Konverter hat sieben Wechselkurse mit je einem Wochenlimit, zum Beispiel 10 Design Plans zu 1 Lunar Amber bis zu 500 pro Woche."
+            "conversionNote": "Überzählige Design Plans zählen für Lunar Amber, sobald der Konverter freigeschaltet ist: 10 Design Plans ergeben 1 Lunar Amber, bis zu 500 Mal pro Woche. Andere Umwandlungen zählt die Prüfung nicht."
         },
         "charm": {
             "title": "Häuptlingsamulette planen",
             "description": "Material, Score und Macht von der aktuellen Stufe bis zum Ziel",
             "stepWord": "Stufen",
-            "conversionNote": "Die Prüfung rechnet Umwandlungen nicht mit: 2 Charm Guides ergeben 1 Charm Design und zurück, und 40 von beiden ergeben 1 Charm Secrets."
+            "conversionNote": "Überzählige Charm Guides und Charm Designs zählen für Charm Secrets, sobald der Konverter freigeschaltet ist: 40 von beiden ergeben 1 Charm Secrets. Andere Umwandlungen zählt die Prüfung nicht."
         },
+        "converted": "{covered} durch Umwandeln von {spend} {name}",
+        "converterLocked": "Der Konverter wird an Servertag {day} freigeschaltet.",
+        "setAside": "{amount} für die Umwandlung zurückgelegt",
         "saved": "Plan gespeichert {date}",
         "close": "Schließen",
         "save": "Plan speichern",
