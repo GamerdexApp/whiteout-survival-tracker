@@ -1,0 +1,70 @@
+{
+    "subline": "保存したプランを合計します。使うもの、得点、終わる時期がわかります。",
+    "plans": {
+        "title": "この一覧のプラン",
+        "noPlan": "プランなし",
+        "hint": "保存したプランだけがここに出ます。プランをオフにすると、このページのどこからも消えます（合計、資源、ポイント、全プラン）。プランを追加するには、そのページで保存してください。",
+        "addBeasts": "プランを追加"
+    },
+    "tiles": {
+        "svs": "狙うSvSポイント",
+        "short": "不足アイテム",
+        "longest": "最長のキュー"
+    },
+    "resources": {
+        "description": "含めたすべてのプランが在庫から使う量の合計です。Meat、Wood、Coal、Ironにはバックパックのパックと Custom Resource Chest を含めます。",
+        "usedBy": "使用元",
+        "heads": {
+            "item": "アイテム",
+            "needed": "必要",
+            "have": "所持",
+            "status": "状態"
+        },
+        "groups": {
+            "base": "基本資源",
+            "crystals": "Steel と Fire Crystal",
+            "speedups": "加速（分）",
+            "other": "その他のアイテム"
+        },
+        "show": "{count, plural, other {{amount}件を表示}}",
+        "hide": "アイテムを隠す",
+        "generalNote": "一般加速は、各プランが設定した割合で分けます。各プランは自分のページで加速を確認します。",
+        "generalSpeedups": "一般加速"
+    },
+    "points": {
+        "title": "ポイントと戦力",
+        "description": "4つのコアイベントで各プランが得られる点数です。各イベントで最も点数が高い日で数えます。戦力は各プランが示す推定値です。",
+        "show": "表示",
+        "plan": "プラン",
+        "allPlans": "全プラン",
+        "unknownPower": "戦力の合計には、戦力が不明なプランを含めません。"
+    },
+    "fullPlan": {
+        "title": "全プラン",
+        "description": "含めたプランの目標をすべて並べます。キューは並行して進むので、最も長いものが終わりを決めます。",
+        "finishes": "追加の加速なしで{time}後に完了",
+        "queues": {
+            "construction": "建設",
+            "research": "研究",
+            "training": "訓練",
+            "learning": "学習"
+        },
+        "heads": {
+            "plan": "プラン",
+            "what": "変わるもの",
+            "time": "時間"
+        },
+        "open": "プランを開く",
+        "noTimer": "タイマーなし",
+        "edit": "プランを編集"
+    },
+    "empty": {
+        "title": "保存したプランはまだありません",
+        "description": "ページで目標を決め、そのプランを保存してください。保存したプランはすべてここに出ます。"
+    },
+    "allOff": {
+        "title": "すべてのプランがオフです",
+        "description": "上でプランをオンに戻すと、合計が見られます。"
+    },
+    "beastsName": "ビースト"
+}

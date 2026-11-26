@@ -1,0 +1,70 @@
+{
+    "subline": "Kayıtlı planların toplamı: neyi kullandıkları, kaç puan getirdikleri ve ne zaman bittikleri.",
+    "plans": {
+        "title": "Bu özetteki planlar",
+        "noPlan": "Plan yok",
+        "hint": "Burada yalnızca kayıtlı planlar görünür. Bir planı kapatırsan bu sayfanın her yerinden gizlenir: toplamlar, kaynaklar, puanlar ve tam plan. Plan eklemek için onu kendi sayfasında kaydet.",
+        "addBeasts": "Plan ekle"
+    },
+    "tiles": {
+        "svs": "Hedeflenen SvS puanı",
+        "short": "Eksik eşyalar",
+        "longest": "En uzun kuyruk"
+    },
+    "resources": {
+        "description": "Dahil edilen tüm planların stokundan birlikte aldığı miktar. Meat, Wood, Coal ve Iron için sırt çantası paketleri ve Custom Resource Chest sayılır.",
+        "usedBy": "Kullanan",
+        "heads": {
+            "item": "Eşya",
+            "needed": "Gereken",
+            "have": "Sende",
+            "status": "Durum"
+        },
+        "groups": {
+            "base": "Temel kaynaklar",
+            "crystals": "Steel ve Fire Crystal",
+            "speedups": "Hızlandırmalar, dakika",
+            "other": "Diğer eşyalar"
+        },
+        "show": "{count, plural, other {{amount} eşyayı göster}}",
+        "hide": "Eşyaları gizle",
+        "generalNote": "Genel hızlandırmalar her planın belirlediği paya göre bölünür. Her plan kendi hızlandırmalarını kendi sayfasında denetler.",
+        "generalSpeedups": "Genel hızlandırmalar"
+    },
+    "points": {
+        "title": "Puan ve güç",
+        "description": "Her planın dört çekirdek etkinlikte alabileceği puan; her etkinliğin en çok puan veren günü sayılır. Güç, her planın gösterdiği tahmindir.",
+        "show": "Göster",
+        "plan": "Plan",
+        "allPlans": "Tüm planlar",
+        "unknownPower": "Güç toplamı, gücü bilinmeyen planları saymaz."
+    },
+    "fullPlan": {
+        "title": "Tam plan",
+        "description": "Dahil edilen planlardaki her hedef. Kuyruklar yan yana işler, bu yüzden en uzunu bitişi belirler.",
+        "finishes": "Ek hızlandırma olmadan {time} sonra biter",
+        "queues": {
+            "construction": "İnşaat",
+            "research": "Araştırma",
+            "training": "Eğitim",
+            "learning": "Öğrenme"
+        },
+        "heads": {
+            "plan": "Plan",
+            "what": "Neler değişiyor",
+            "time": "Süre"
+        },
+        "open": "Planı aç",
+        "noTimer": "Zamanlayıcı yok",
+        "edit": "Planı düzenle"
+    },
+    "empty": {
+        "title": "Henüz kayıtlı plan yok",
+        "description": "Bir sayfada hedefler belirle ve planını kaydet. Kayıtlı her plan burada görünür."
+    },
+    "allOff": {
+        "title": "Tüm planlar kapalı",
+        "description": "Toplamlarını görmek için yukarıdan bir planı yeniden aç."
+    },
+    "beastsName": "Canavarlar"
+}

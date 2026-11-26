@@ -1,0 +1,70 @@
+{
+    "subline": "Tus planes guardados sumados: lo que usan, lo que puntúan y cuándo terminan.",
+    "plans": {
+        "title": "Planes de este resumen",
+        "noPlan": "Sin plan",
+        "hint": "Aquí solo aparecen los planes guardados. Desactiva un plan para ocultarlo en toda esta página: los totales, los recursos, los puntos y el plan completo. Guarda un plan en su propia página para añadirlo.",
+        "addBeasts": "Agregar plan"
+    },
+    "tiles": {
+        "svs": "Puntos de SvS previstos",
+        "short": "Objetos que faltan",
+        "longest": "Cola más larga"
+    },
+    "resources": {
+        "description": "Lo que todos los planes incluidos toman juntos de tu existencia. Meat, Wood, Coal e Iron cuentan tus paquetes de la mochila y los Custom Resource Chests.",
+        "usedBy": "Usado por",
+        "heads": {
+            "item": "Objeto",
+            "needed": "Necesario",
+            "have": "Tienes",
+            "status": "Estado"
+        },
+        "groups": {
+            "base": "Recursos básicos",
+            "crystals": "Steel y Fire Crystal",
+            "speedups": "Aceleraciones, en minutos",
+            "other": "Otros objetos"
+        },
+        "show": "{count, plural, one {Mostrar {amount} objeto} other {Mostrar {amount} objetos}}",
+        "hide": "Ocultar objetos",
+        "generalNote": "Las aceleraciones generales se reparten según la parte que fija cada plan. Cada plan revisa sus aceleraciones en su página.",
+        "generalSpeedups": "Aceleraciones generales"
+    },
+    "points": {
+        "title": "Puntos y poder",
+        "description": "Lo que cada plan puede puntuar en los cuatro eventos principales, el día de cada evento en que más puntúa. El poder es la estimación que muestra cada plan.",
+        "show": "Mostrar",
+        "plan": "Plan",
+        "allPlans": "Todos los planes",
+        "unknownPower": "El total de poder deja fuera los planes con poder desconocido."
+    },
+    "fullPlan": {
+        "title": "Plan completo",
+        "description": "Cada meta de los planes incluidos. Las colas corren a la vez, así que la más larga marca el final.",
+        "finishes": "Termina en {time} sin aceleraciones extra",
+        "queues": {
+            "construction": "Construcción",
+            "research": "Investigación",
+            "training": "Entrenamiento",
+            "learning": "Aprendizaje"
+        },
+        "heads": {
+            "plan": "Plan",
+            "what": "Qué cambia",
+            "time": "Tiempo"
+        },
+        "open": "Abrir plan",
+        "noTimer": "Sin temporizador",
+        "edit": "Editar plan"
+    },
+    "empty": {
+        "title": "Aún no hay planes guardados",
+        "description": "Fija metas en una página y guarda su plan. Cada plan guardado aparece aquí."
+    },
+    "allOff": {
+        "title": "Todos los planes están desactivados",
+        "description": "Activa un plan de nuevo arriba para ver sus totales."
+    },
+    "beastsName": "Bestias"
+}

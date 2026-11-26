@@ -1,0 +1,70 @@
+{
+    "subline": "Rencana tersimpanmu digabung: apa yang dipakai, berapa skornya, dan kapan selesai.",
+    "plans": {
+        "title": "Rencana di ringkasan ini",
+        "noPlan": "Tidak ada rencana",
+        "hint": "Hanya rencana yang tersimpan muncul di sini. Matikan sebuah rencana untuk menyembunyikannya di seluruh halaman ini: total, sumber daya, poin, dan rencana lengkap. Simpan rencana di halamannya sendiri untuk menambahkannya.",
+        "addBeasts": "Tambah rencana"
+    },
+    "tiles": {
+        "svs": "Target poin SvS",
+        "short": "Item kurang",
+        "longest": "Antrean terpanjang"
+    },
+    "resources": {
+        "description": "Apa yang diambil semua rencana yang disertakan dari stokmu. Meat, Wood, Coal, dan Iron menghitung paket tas dan Custom Resource Chest milikmu.",
+        "usedBy": "Dipakai oleh",
+        "heads": {
+            "item": "Item",
+            "needed": "Dibutuhkan",
+            "have": "Kamu punya",
+            "status": "Status"
+        },
+        "groups": {
+            "base": "Sumber daya dasar",
+            "crystals": "Steel dan Fire Crystal",
+            "speedups": "Percepatan, dalam menit",
+            "other": "Item lain"
+        },
+        "show": "{count, plural, other {Tampilkan {amount} item}}",
+        "hide": "Sembunyikan item",
+        "generalNote": "Percepatan umum dibagi menurut bagian yang diatur tiap rencana. Tiap rencana memeriksa percepatannya di halamannya.",
+        "generalSpeedups": "Percepatan umum"
+    },
+    "points": {
+        "title": "Poin dan kekuatan",
+        "description": "Skor yang bisa didapat tiap rencana di empat event inti, pada hari event yang skornya paling tinggi. Kekuatan adalah perkiraan yang ditunjukkan tiap rencana.",
+        "show": "Tampilkan",
+        "plan": "Rencana",
+        "allPlans": "Semua rencana",
+        "unknownPower": "Total kekuatan tidak menghitung rencana dengan kekuatan tidak diketahui."
+    },
+    "fullPlan": {
+        "title": "Rencana lengkap",
+        "description": "Setiap tujuan di rencana yang disertakan. Antrean berjalan bersamaan, jadi yang terpanjang menentukan selesainya.",
+        "finishes": "Selesai dalam {time} tanpa percepatan tambahan",
+        "queues": {
+            "construction": "Konstruksi",
+            "research": "Riset",
+            "training": "Pelatihan",
+            "learning": "Belajar"
+        },
+        "heads": {
+            "plan": "Rencana",
+            "what": "Yang berubah",
+            "time": "Waktu"
+        },
+        "open": "Buka rencana",
+        "noTimer": "Tanpa timer",
+        "edit": "Ubah rencana"
+    },
+    "empty": {
+        "title": "Belum ada rencana tersimpan",
+        "description": "Atur tujuan di sebuah halaman dan simpan rencananya. Setiap rencana tersimpan muncul di sini."
+    },
+    "allOff": {
+        "title": "Semua rencana dimatikan",
+        "description": "Nyalakan lagi sebuah rencana di atas untuk melihat totalnya."
+    },
+    "beastsName": "Binatang buas"
+}

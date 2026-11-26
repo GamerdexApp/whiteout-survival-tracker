@@ -31,6 +31,7 @@ import labyrinth from "./de/labyrinth.json";
 import landing from "./de/landing.json";
 import overview from "./de/overview.json";
 import pets from "./de/pets.json";
+import planOverview from "./de/planOverview.json";
 import queues from "./de/queues.json";
 import research from "./de/research.json";
 import resources from "./de/resources.json";
@@ -101,6 +102,7 @@ const de: PartialMessages = {
   landing,
   overview,
   pets,
+  planOverview,
   queues,
   research,
   resources,

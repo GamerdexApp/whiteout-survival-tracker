@@ -1,0 +1,70 @@
+{
+    "subline": "Các kế hoạch đã lưu cộng lại: dùng gì, được bao nhiêu điểm và khi nào xong.",
+    "plans": {
+        "title": "Kế hoạch trong tổng quan này",
+        "noPlan": "Chưa có kế hoạch",
+        "hint": "Chỉ kế hoạch đã lưu mới hiện ở đây. Tắt một kế hoạch để ẩn nó khỏi cả trang này: tổng, tài nguyên, điểm và toàn bộ kế hoạch. Muốn thêm kế hoạch, hãy lưu nó ở trang riêng của nó.",
+        "addBeasts": "Thêm kế hoạch"
+    },
+    "tiles": {
+        "svs": "Điểm SvS nhắm tới",
+        "short": "Vật phẩm còn thiếu",
+        "longest": "Hàng đợi dài nhất"
+    },
+    "resources": {
+        "description": "Những gì mọi kế hoạch được gộp lấy chung từ kho của bạn. Meat, Wood, Coal và Iron tính cả gói trong ba lô lẫn Custom Resource Chest.",
+        "usedBy": "Dùng bởi",
+        "heads": {
+            "item": "Vật phẩm",
+            "needed": "Cần",
+            "have": "Bạn có",
+            "status": "Trạng thái"
+        },
+        "groups": {
+            "base": "Tài nguyên cơ bản",
+            "crystals": "Steel và Fire Crystal",
+            "speedups": "Tăng tốc, tính bằng phút",
+            "other": "Vật phẩm khác"
+        },
+        "show": "{count, plural, other {Hiện {amount} vật phẩm}}",
+        "hide": "Ẩn vật phẩm",
+        "generalNote": "Tăng tốc chung được chia theo phần mỗi kế hoạch đặt. Mỗi kế hoạch kiểm tra tăng tốc của mình ở trang riêng.",
+        "generalSpeedups": "Tăng tốc chung"
+    },
+    "points": {
+        "title": "Điểm và sức mạnh",
+        "description": "Điểm mỗi kế hoạch có thể ghi trong bốn sự kiện cốt lõi, vào ngày của mỗi sự kiện cho nhiều điểm nhất. Sức mạnh là ước tính mà mỗi kế hoạch hiển thị.",
+        "show": "Hiện",
+        "plan": "Kế hoạch",
+        "allPlans": "Mọi kế hoạch",
+        "unknownPower": "Tổng sức mạnh không tính các kế hoạch chưa rõ sức mạnh."
+    },
+    "fullPlan": {
+        "title": "Toàn bộ kế hoạch",
+        "description": "Mọi mục tiêu trong các kế hoạch được gộp. Các hàng đợi chạy song song, nên hàng dài nhất quyết định lúc xong.",
+        "finishes": "Xong sau {time} nếu không thêm tăng tốc",
+        "queues": {
+            "construction": "Xây dựng",
+            "research": "Nghiên cứu",
+            "training": "Huấn luyện",
+            "learning": "Học"
+        },
+        "heads": {
+            "plan": "Kế hoạch",
+            "what": "Thay đổi gì",
+            "time": "Thời gian"
+        },
+        "open": "Mở kế hoạch",
+        "noTimer": "Không có bộ đếm",
+        "edit": "Sửa kế hoạch"
+    },
+    "empty": {
+        "title": "Chưa có kế hoạch nào được lưu",
+        "description": "Đặt mục tiêu trên một trang rồi lưu kế hoạch của nó. Mọi kế hoạch đã lưu đều hiện ở đây."
+    },
+    "allOff": {
+        "title": "Mọi kế hoạch đang tắt",
+        "description": "Bật lại một kế hoạch ở trên để xem tổng của nó."
+    },
+    "beastsName": "Quái thú"
+}

@@ -31,6 +31,7 @@ import labyrinth from "./zh-TW/labyrinth.json";
 import landing from "./zh-TW/landing.json";
 import overview from "./zh-TW/overview.json";
 import pets from "./zh-TW/pets.json";
+import planOverview from "./zh-TW/planOverview.json";
 import queues from "./zh-TW/queues.json";
 import research from "./zh-TW/research.json";
 import resources from "./zh-TW/resources.json";
@@ -101,6 +102,7 @@ const zhTW: PartialMessages = {
   landing,
   overview,
   pets,
+  planOverview,
   queues,
   research,
   resources,

@@ -1,0 +1,70 @@
+{
+    "subline": "Pelan tersimpan anda digabungkan: apa yang digunakan, berapa markahnya dan bila siap.",
+    "plans": {
+        "title": "Pelan dalam gambaran ini",
+        "noPlan": "Tiada pelan",
+        "hint": "Hanya pelan yang disimpan muncul di sini. Matikan sesuatu pelan untuk menyembunyikannya di seluruh halaman ini: jumlah, sumber, mata dan pelan penuh. Simpan pelan di halamannya sendiri untuk menambahnya.",
+        "addBeasts": "Tambah pelan"
+    },
+    "tiles": {
+        "svs": "Sasaran mata SvS",
+        "short": "Item kurang",
+        "longest": "Giliran terpanjang"
+    },
+    "resources": {
+        "description": "Apa yang diambil semua pelan yang disertakan daripada stok anda. Meat, Wood, Coal dan Iron mengira bungkusan beg dan Custom Resource Chest anda.",
+        "usedBy": "Digunakan oleh",
+        "heads": {
+            "item": "Item",
+            "needed": "Diperlukan",
+            "have": "Anda ada",
+            "status": "Status"
+        },
+        "groups": {
+            "base": "Sumber asas",
+            "crystals": "Steel dan Fire Crystal",
+            "speedups": "Pecutan, dalam minit",
+            "other": "Item lain"
+        },
+        "show": "{count, plural, other {Tunjuk {amount} item}}",
+        "hide": "Sembunyi item",
+        "generalNote": "Pecutan umum dikongsi mengikut bahagian yang ditetapkan setiap pelan. Setiap pelan menyemak pecutannya di halamannya.",
+        "generalSpeedups": "Pecutan umum"
+    },
+    "points": {
+        "title": "Mata dan kuasa",
+        "description": "Apa yang boleh dimarkahkan setiap pelan dalam empat acara teras, pada hari acara yang memberi mata paling banyak. Kuasa ialah anggaran yang ditunjukkan setiap pelan.",
+        "show": "Tunjuk",
+        "plan": "Pelan",
+        "allPlans": "Semua pelan",
+        "unknownPower": "Jumlah kuasa tidak termasuk pelan yang kuasanya tidak diketahui."
+    },
+    "fullPlan": {
+        "title": "Pelan penuh",
+        "description": "Setiap matlamat dalam pelan yang disertakan. Giliran berjalan serentak, jadi yang terpanjang menentukan siapnya.",
+        "finishes": "Siap dalam {time} tanpa pecutan tambahan",
+        "queues": {
+            "construction": "Pembinaan",
+            "research": "Penyelidikan",
+            "training": "Latihan",
+            "learning": "Pembelajaran"
+        },
+        "heads": {
+            "plan": "Pelan",
+            "what": "Apa yang berubah",
+            "time": "Masa"
+        },
+        "open": "Buka pelan",
+        "noTimer": "Tiada pemasa",
+        "edit": "Ubah pelan"
+    },
+    "empty": {
+        "title": "Belum ada pelan tersimpan",
+        "description": "Tetapkan matlamat pada sesuatu halaman dan simpan pelannya. Setiap pelan tersimpan muncul di sini."
+    },
+    "allOff": {
+        "title": "Semua pelan dimatikan",
+        "description": "Hidupkan semula sesuatu pelan di atas untuk melihat jumlahnya."
+    },
+    "beastsName": "Binatang buas"
+}

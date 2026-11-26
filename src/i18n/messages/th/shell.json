@@ -34,9 +34,11 @@
             "wikiReference": "ข้อมูลอ้างอิง",
             "wikiTimeline": "ไทม์ไลน์",
             "settings": "ตั้งค่า",
-            "chiefs": "หัวหน้า"
+            "chiefs": "หัวหน้า",
+            "planOverview": "ภาพรวมแผน"
         },
-        "upgradesRunning": ", {count, plural, other {กำลังอัปเกรด {amount} รายการ}}"
+        "upgradesRunning": ", {count, plural, other {กำลังอัปเกรด {amount} รายการ}}",
+        "plansSaved": " บันทึกแล้ว {count, plural, other {{amount} แผน}}"
     },
     "appShell": {
         "skipToContent": "ข้ามไปยังเนื้อหา",

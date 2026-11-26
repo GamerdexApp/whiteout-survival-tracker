@@ -34,9 +34,11 @@
             "wikiReference": "リファレンス",
             "wikiTimeline": "タイムライン",
             "settings": "設定",
-            "chiefs": "チーフ"
+            "chiefs": "チーフ",
+            "planOverview": "プラン一覧"
         },
-        "upgradesRunning": "、{count, plural, other {アップグレード{amount}件を実行中}}"
+        "upgradesRunning": "、{count, plural, other {アップグレード{amount}件を実行中}}",
+        "plansSaved": "、{count, plural, other {{amount}件のプラン}}を保存済み"
     },
     "appShell": {
         "skipToContent": "本文へスキップ",

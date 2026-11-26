@@ -1,0 +1,70 @@
+{
+    "subline": "저장한 계획을 합쳐서 보여줘요. 무엇을 쓰고, 점수는 얼마고, 언제 끝나는지 알 수 있어요.",
+    "plans": {
+        "title": "이 개요의 계획",
+        "noPlan": "계획 없음",
+        "hint": "저장한 계획만 여기에 나와요. 계획을 끄면 이 페이지 전체(합계, 자원, 포인트, 전체 계획)에서 숨겨져요. 계획을 추가하려면 해당 페이지에서 저장하세요.",
+        "addBeasts": "계획 추가"
+    },
+    "tiles": {
+        "svs": "목표 SvS 포인트",
+        "short": "부족한 아이템",
+        "longest": "가장 긴 대기열"
+    },
+    "resources": {
+        "description": "포함한 모든 계획이 보유량에서 함께 가져가는 양이에요. Meat, Wood, Coal, Iron에는 배낭 꾸러미와 Custom Resource Chest를 포함해요.",
+        "usedBy": "사용처",
+        "heads": {
+            "item": "아이템",
+            "needed": "필요",
+            "have": "보유",
+            "status": "상태"
+        },
+        "groups": {
+            "base": "기본 자원",
+            "crystals": "Steel과 Fire Crystal",
+            "speedups": "가속(분)",
+            "other": "기타 아이템"
+        },
+        "show": "{count, plural, other {{amount}개 보기}}",
+        "hide": "아이템 숨기기",
+        "generalNote": "일반 가속은 각 계획이 정한 비율로 나눠요. 각 계획은 자기 페이지에서 가속을 확인해요.",
+        "generalSpeedups": "일반 가속"
+    },
+    "points": {
+        "title": "포인트와 전투력",
+        "description": "네 가지 핵심 이벤트에서 각 계획이 얻을 수 있는 점수예요. 이벤트마다 가장 점수가 높은 날로 계산해요. 전투력은 각 계획이 보여 주는 추정값이에요.",
+        "show": "보기",
+        "plan": "계획",
+        "allPlans": "모든 계획",
+        "unknownPower": "전투력 합계에는 전투력을 알 수 없는 계획이 빠져요."
+    },
+    "fullPlan": {
+        "title": "전체 계획",
+        "description": "포함한 계획의 모든 목표예요. 대기열은 동시에 진행되므로 가장 긴 것이 끝나는 시점을 정해요.",
+        "finishes": "추가 가속 없이 {time} 뒤에 끝나요",
+        "queues": {
+            "construction": "건설",
+            "research": "연구",
+            "training": "훈련",
+            "learning": "학습"
+        },
+        "heads": {
+            "plan": "계획",
+            "what": "바뀌는 것",
+            "time": "시간"
+        },
+        "open": "계획 열기",
+        "noTimer": "타이머 없음",
+        "edit": "계획 편집"
+    },
+    "empty": {
+        "title": "저장한 계획이 아직 없어요",
+        "description": "페이지에서 목표를 정하고 그 계획을 저장하세요. 저장한 계획은 모두 여기에 나와요."
+    },
+    "allOff": {
+        "title": "모든 계획이 꺼져 있어요",
+        "description": "위에서 계획을 다시 켜면 합계를 볼 수 있어요."
+    },
+    "beastsName": "야수"
+}

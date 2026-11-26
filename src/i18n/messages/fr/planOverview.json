@@ -1,0 +1,70 @@
+{
+    "subline": "Vos plans enregistrés additionnés : ce qu'ils utilisent, ce qu'ils rapportent et quand ils se terminent.",
+    "plans": {
+        "title": "Plans de cet aperçu",
+        "noPlan": "Aucun plan",
+        "hint": "Seuls les plans enregistrés apparaissent ici. Désactivez un plan pour le masquer partout sur cette page : les totaux, les ressources, les points et le plan complet. Enregistrez un plan sur sa propre page pour l'ajouter.",
+        "addBeasts": "Ajouter un plan"
+    },
+    "tiles": {
+        "svs": "Points SvS visés",
+        "short": "Objets manquants",
+        "longest": "File la plus longue"
+    },
+    "resources": {
+        "description": "Ce que tous les plans inclus prennent ensemble dans votre stock. Meat, Wood, Coal et Iron comptent vos paquets du sac à dos et vos Custom Resource Chests.",
+        "usedBy": "Utilisé par",
+        "heads": {
+            "item": "Objet",
+            "needed": "Nécessaire",
+            "have": "Vous avez",
+            "status": "Statut"
+        },
+        "groups": {
+            "base": "Ressources de base",
+            "crystals": "Steel et Fire Crystal",
+            "speedups": "Accélérateurs, en minutes",
+            "other": "Autres objets"
+        },
+        "show": "{count, plural, one {Afficher {amount} objet} other {Afficher {amount} objets}}",
+        "hide": "Masquer les objets",
+        "generalNote": "Les accélérateurs généraux sont répartis selon la part que fixe chaque plan. Chaque plan vérifie ses accélérateurs sur sa page.",
+        "generalSpeedups": "Accélérateurs généraux"
+    },
+    "points": {
+        "title": "Points et puissance",
+        "description": "Ce que chaque plan peut rapporter dans les quatre événements principaux, le jour de chaque événement qui rapporte le plus. La puissance est l'estimation que montre chaque plan.",
+        "show": "Afficher",
+        "plan": "Plan",
+        "allPlans": "Tous les plans",
+        "unknownPower": "Le total de puissance laisse de côté les plans à puissance inconnue."
+    },
+    "fullPlan": {
+        "title": "Plan complet",
+        "description": "Chaque objectif des plans inclus. Les files tournent en parallèle, la plus longue fixe donc la fin.",
+        "finishes": "Terminé dans {time} sans accélérateurs en plus",
+        "queues": {
+            "construction": "Construction",
+            "research": "Recherche",
+            "training": "Entraînement",
+            "learning": "Apprentissage"
+        },
+        "heads": {
+            "plan": "Plan",
+            "what": "Ce qui change",
+            "time": "Durée"
+        },
+        "open": "Ouvrir le plan",
+        "noTimer": "Aucun minuteur",
+        "edit": "Modifier le plan"
+    },
+    "empty": {
+        "title": "Aucun plan enregistré pour l'instant",
+        "description": "Fixez des objectifs sur une page et enregistrez son plan. Chaque plan enregistré apparaît ici."
+    },
+    "allOff": {
+        "title": "Tous les plans sont désactivés",
+        "description": "Réactivez un plan ci-dessus pour voir ses totaux."
+    },
+    "beastsName": "Bêtes"
+}

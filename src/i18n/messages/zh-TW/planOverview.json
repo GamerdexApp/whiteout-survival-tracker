@@ -1,0 +1,70 @@
+{
+    "subline": "已儲存的計畫合計：用了什麼、得多少分、何時完成。",
+    "plans": {
+        "title": "此總覽中的計畫",
+        "noPlan": "沒有計畫",
+        "hint": "這裡只顯示已儲存的計畫。關閉某個計畫後，它會從本頁所有區塊消失：合計、資源、積分與完整計畫。要加入計畫，請在它自己的頁面儲存。",
+        "addBeasts": "新增計畫"
+    },
+    "tiles": {
+        "svs": "目標 SvS 積分",
+        "short": "缺少的物品",
+        "longest": "最長佇列"
+    },
+    "resources": {
+        "description": "所有已納入的計畫一起從庫存中取用的量。Meat、Wood、Coal 與 Iron 會計入背包資源包與 Custom Resource Chest。",
+        "usedBy": "使用者",
+        "heads": {
+            "item": "物品",
+            "needed": "需要",
+            "have": "你有",
+            "status": "狀態"
+        },
+        "groups": {
+            "base": "基礎資源",
+            "crystals": "Steel 與 Fire Crystal",
+            "speedups": "加速，以分鐘計",
+            "other": "其他物品"
+        },
+        "show": "{count, plural, other {顯示 {amount} 個物品}}",
+        "hide": "隱藏物品",
+        "generalNote": "通用加速依各計畫設定的比例分配。每個計畫在自己的頁面檢查自己的加速。",
+        "generalSpeedups": "通用加速"
+    },
+    "points": {
+        "title": "積分與戰力",
+        "description": "每個計畫在四個核心活動中可得的分數，以每個活動得分最高的一天計算。戰力是各計畫顯示的估算值。",
+        "show": "顯示",
+        "plan": "計畫",
+        "allPlans": "全部計畫",
+        "unknownPower": "戰力合計不含戰力未知的計畫。"
+    },
+    "fullPlan": {
+        "title": "完整計畫",
+        "description": "已納入計畫中的每個目標。佇列同時進行，所以最長的一個決定完成時間。",
+        "finishes": "不加額外加速，{time}後完成",
+        "queues": {
+            "construction": "建造",
+            "research": "研究",
+            "training": "訓練",
+            "learning": "學習"
+        },
+        "heads": {
+            "plan": "計畫",
+            "what": "改變內容",
+            "time": "時間"
+        },
+        "open": "開啟計畫",
+        "noTimer": "無計時",
+        "edit": "編輯計畫"
+    },
+    "empty": {
+        "title": "還沒有已儲存的計畫",
+        "description": "在某個頁面設定目標並儲存其計畫。每個已儲存的計畫都會顯示在這裡。"
+    },
+    "allOff": {
+        "title": "所有計畫都已關閉",
+        "description": "在上方重新開啟某個計畫，即可查看它的合計。"
+    },
+    "beastsName": "野獸"
+}

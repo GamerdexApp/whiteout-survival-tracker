@@ -31,6 +31,7 @@ import labyrinth from "./ko/labyrinth.json";
 import landing from "./ko/landing.json";
 import overview from "./ko/overview.json";
 import pets from "./ko/pets.json";
+import planOverview from "./ko/planOverview.json";
 import queues from "./ko/queues.json";
 import research from "./ko/research.json";
 import resources from "./ko/resources.json";
@@ -101,6 +102,7 @@ const ko: PartialMessages = {
   landing,
   overview,
   pets,
+  planOverview,
   queues,
   research,
   resources,

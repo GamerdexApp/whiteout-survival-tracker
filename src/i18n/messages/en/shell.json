@@ -34,9 +34,11 @@
             "wikiReference": "Reference",
             "wikiTimeline": "Timeline",
             "settings": "Settings",
-            "chiefs": "Chiefs"
+            "chiefs": "Chiefs",
+            "planOverview": "Plan Overview"
         },
-        "upgradesRunning": ", {amount} {count, plural, one {upgrade} other {upgrades}} running"
+        "upgradesRunning": ", {amount} {count, plural, one {upgrade} other {upgrades}} running",
+        "plansSaved": ", {amount} {count, plural, one {plan} other {plans}} saved"
     },
     "appShell": {
         "skipToContent": "Skip to content",

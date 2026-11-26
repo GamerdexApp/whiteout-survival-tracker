@@ -1,0 +1,70 @@
+{
+    "subline": "Deine gespeicherten Pläne zusammengerechnet: was sie brauchen, was sie punkten und wann sie fertig sind.",
+    "plans": {
+        "title": "Pläne in dieser Übersicht",
+        "noPlan": "Kein Plan",
+        "hint": "Nur gespeicherte Pläne erscheinen hier. Schalte einen Plan aus, um ihn überall auf dieser Seite auszublenden: Summen, Ressourcen, Punkte und den ganzen Plan. Speichere einen Plan auf seiner eigenen Seite, um ihn hinzuzufügen.",
+        "addBeasts": "Plan hinzufügen"
+    },
+    "tiles": {
+        "svs": "Angestrebte SvS-Punkte",
+        "short": "Fehlende Posten",
+        "longest": "Längste Warteschlange"
+    },
+    "resources": {
+        "description": "Was alle einbezogenen Pläne zusammen aus deinem Bestand nehmen. Meat, Wood, Coal und Iron zählen deine Rucksack-Pakete und Custom Resource Chests mit.",
+        "usedBy": "Genutzt von",
+        "heads": {
+            "item": "Posten",
+            "needed": "Benötigt",
+            "have": "Du hast",
+            "status": "Status"
+        },
+        "groups": {
+            "base": "Basisressourcen",
+            "crystals": "Steel und Fire Crystal",
+            "speedups": "Beschleuniger in Minuten",
+            "other": "Weitere Posten"
+        },
+        "show": "{count, plural, one {{amount} Posten anzeigen} other {{amount} Posten anzeigen}}",
+        "hide": "Posten ausblenden",
+        "generalNote": "Allgemeine Beschleuniger werden nach dem Anteil aufgeteilt, den jeder Plan festlegt. Jeder Plan prüft seine Beschleuniger auf seiner Seite.",
+        "generalSpeedups": "Allgemeine Beschleuniger"
+    },
+    "points": {
+        "title": "Punkte und Macht",
+        "description": "Was jeder Plan in den vier Kernevents punkten kann, am punktstärksten Tag jedes Events. Die Macht ist die Schätzung, die jeder Plan zeigt.",
+        "show": "Anzeigen",
+        "plan": "Plan",
+        "allPlans": "Alle Pläne",
+        "unknownPower": "Die Machtsumme lässt Pläne mit unbekannter Macht aus."
+    },
+    "fullPlan": {
+        "title": "Gesamter Plan",
+        "description": "Jedes Ziel der einbezogenen Pläne. Die Warteschlangen laufen nebeneinander, die längste bestimmt das Ende.",
+        "finishes": "Fertig in {time} ohne zusätzliche Beschleuniger",
+        "queues": {
+            "construction": "Bau",
+            "research": "Forschung",
+            "training": "Training",
+            "learning": "Lernen"
+        },
+        "heads": {
+            "plan": "Plan",
+            "what": "Was sich ändert",
+            "time": "Zeit"
+        },
+        "open": "Plan öffnen",
+        "noTimer": "Kein Timer",
+        "edit": "Plan bearbeiten"
+    },
+    "empty": {
+        "title": "Noch keine gespeicherten Pläne",
+        "description": "Lege auf einer Seite Ziele fest und speichere ihren Plan. Jeder gespeicherte Plan erscheint hier."
+    },
+    "allOff": {
+        "title": "Alle Pläne sind ausgeschaltet",
+        "description": "Schalte oben einen Plan wieder ein, um seine Summen zu sehen."
+    },
+    "beastsName": "Bestien"
+}

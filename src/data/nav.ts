@@ -4,6 +4,7 @@ import {
   LuBookOpen,
   LuBuilding2,
   LuCalendarDays,
+  LuClipboardList,
   LuCpu,
   LuCrown,
   LuFlaskConical,
@@ -39,6 +40,7 @@ export type NavItemId =
   | "pets"
   | "troops"
   | "research"
+  | "planOverview"
   | "alliance"
   | "facilities"
   | "tech"
@@ -88,6 +90,7 @@ export const navGroups: NavGroup[] = [
       { id: "pets", href: "/pets", icon: LuPawPrint },
       { id: "troops", href: "/troops", icon: LuUsers },
       { id: "research", href: "/research", icon: LuFlaskConical },
+      { id: "planOverview", href: "/plan-overview", icon: LuClipboardList },
     ],
   },
   {

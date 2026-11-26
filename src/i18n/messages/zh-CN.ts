@@ -31,6 +31,7 @@ import labyrinth from "./zh-CN/labyrinth.json";
 import landing from "./zh-CN/landing.json";
 import overview from "./zh-CN/overview.json";
 import pets from "./zh-CN/pets.json";
+import planOverview from "./zh-CN/planOverview.json";
 import queues from "./zh-CN/queues.json";
 import research from "./zh-CN/research.json";
 import resources from "./zh-CN/resources.json";
@@ -101,6 +102,7 @@ const zhCN: PartialMessages = {
   landing,
   overview,
   pets,
+  planOverview,
   queues,
   research,
   resources,

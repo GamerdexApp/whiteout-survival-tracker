@@ -1,0 +1,70 @@
+{
+    "subline": "Your saved plans added together: what they use, what they score and when they finish.",
+    "plans": {
+        "title": "Plans in this overview",
+        "noPlan": "No plan",
+        "hint": "Only saved plans appear here. Turn a plan off to hide it everywhere on this page: the totals, the resources, the points and the full plan. Save a plan on its own page to add it.",
+        "addBeasts": "Add plan"
+    },
+    "tiles": {
+        "svs": "SvS points targeted",
+        "short": "Items short",
+        "longest": "Longest queue"
+    },
+    "resources": {
+        "description": "What all included plans take from your stock together. Meat, Wood, Coal and Iron count your backpack packs and Custom Resource Chests.",
+        "usedBy": "Used by",
+        "heads": {
+            "item": "Item",
+            "needed": "Needed",
+            "have": "You have",
+            "status": "Status"
+        },
+        "groups": {
+            "base": "Base resources",
+            "crystals": "Steel and Fire Crystal",
+            "speedups": "Speedups, in minutes",
+            "other": "Other items"
+        },
+        "show": "{count, plural, one {Show {amount} item} other {Show {amount} items}}",
+        "hide": "Hide items",
+        "generalNote": "General speedups are shared by the share each plan sets. Each plan checks its own speedups on its page.",
+        "generalSpeedups": "General speedups"
+    },
+    "points": {
+        "title": "Points and power",
+        "description": "What each plan can score in the four core events, on the day of each event that scores the most. Power is the estimate each plan shows.",
+        "show": "Show",
+        "plan": "Plan",
+        "allPlans": "All plans",
+        "unknownPower": "The power total leaves out plans with an unknown power."
+    },
+    "fullPlan": {
+        "title": "Full plan",
+        "description": "Every goal in the included plans. The queues run side by side, so the longest one sets the finish.",
+        "finishes": "Finishes in {time} with no extra speedups",
+        "queues": {
+            "construction": "Construction",
+            "research": "Research",
+            "training": "Training",
+            "learning": "Learning"
+        },
+        "heads": {
+            "plan": "Plan",
+            "what": "What changes",
+            "time": "Time"
+        },
+        "open": "Open plan",
+        "noTimer": "No timer",
+        "edit": "Edit plan"
+    },
+    "empty": {
+        "title": "No saved plans yet",
+        "description": "Set goals on a page and save its plan. Every saved plan appears here."
+    },
+    "allOff": {
+        "title": "Every plan is turned off",
+        "description": "Turn a plan back on above to see its totals."
+    },
+    "beastsName": "Beasts"
+}

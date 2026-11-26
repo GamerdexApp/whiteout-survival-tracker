@@ -1,0 +1,70 @@
+{
+    "subline": "Os seus planos guardados somados: o que usam, quanto pontuam e quando terminam.",
+    "plans": {
+        "title": "Planos neste resumo",
+        "noPlan": "Sem plano",
+        "hint": "Só os planos guardados aparecem aqui. Desative um plano para o esconder em toda esta página: os totais, os recursos, os pontos e o plano completo. Guarde um plano na própria página dele para o adicionar.",
+        "addBeasts": "Adicionar plano"
+    },
+    "tiles": {
+        "svs": "Pontos de SvS visados",
+        "short": "Itens em falta",
+        "longest": "Fila mais longa"
+    },
+    "resources": {
+        "description": "O que todos os planos incluídos tiram juntos do seu stock. Meat, Wood, Coal e Iron contam os seus pacotes da mochila e os Custom Resource Chests.",
+        "usedBy": "Usado por",
+        "heads": {
+            "item": "Item",
+            "needed": "Necessário",
+            "have": "Tem",
+            "status": "Estado"
+        },
+        "groups": {
+            "base": "Recursos básicos",
+            "crystals": "Steel e Fire Crystal",
+            "speedups": "Acelerações, em minutos",
+            "other": "Outros itens"
+        },
+        "show": "{count, plural, one {Mostrar {amount} item} other {Mostrar {amount} itens}}",
+        "hide": "Esconder itens",
+        "generalNote": "As acelerações gerais são divididas pela parte que cada plano define. Cada plano verifica as suas acelerações na própria página.",
+        "generalSpeedups": "Acelerações gerais"
+    },
+    "points": {
+        "title": "Pontos e poder",
+        "description": "O que cada plano pode pontuar nos quatro eventos principais, no dia de cada evento que mais pontua. O poder é a estimativa que cada plano mostra.",
+        "show": "Mostrar",
+        "plan": "Plano",
+        "allPlans": "Todos os planos",
+        "unknownPower": "O total de poder deixa de fora planos com poder desconhecido."
+    },
+    "fullPlan": {
+        "title": "Plano completo",
+        "description": "Cada meta dos planos incluídos. As filas andam em paralelo, por isso a mais longa define o fim.",
+        "finishes": "Termina em {time} sem acelerações extra",
+        "queues": {
+            "construction": "Construção",
+            "research": "Investigação",
+            "training": "Treino",
+            "learning": "Aprendizagem"
+        },
+        "heads": {
+            "plan": "Plano",
+            "what": "O que muda",
+            "time": "Tempo"
+        },
+        "open": "Abrir plano",
+        "noTimer": "Sem temporizador",
+        "edit": "Editar plano"
+    },
+    "empty": {
+        "title": "Ainda não há planos guardados",
+        "description": "Defina metas numa página e guarde o plano dela. Todo plano guardado aparece aqui."
+    },
+    "allOff": {
+        "title": "Todos os planos estão desativados",
+        "description": "Ative de novo um plano acima para ver os totais dele."
+    },
+    "beastsName": "Feras"
+}

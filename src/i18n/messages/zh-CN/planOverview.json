@@ -1,0 +1,70 @@
+{
+    "subline": "已保存的计划合计：用了什么、得多少分、何时完成。",
+    "plans": {
+        "title": "此概览中的计划",
+        "noPlan": "没有计划",
+        "hint": "这里只显示已保存的计划。关闭某个计划后，它会从本页所有部分消失：合计、资源、积分和完整计划。要添加计划，请在它自己的页面保存。",
+        "addBeasts": "添加计划"
+    },
+    "tiles": {
+        "svs": "目标 SvS 积分",
+        "short": "缺少的物品",
+        "longest": "最长队列"
+    },
+    "resources": {
+        "description": "所有已包含的计划一起从库存中取用的量。Meat、Wood、Coal 和 Iron 会计入背包资源包和 Custom Resource Chest。",
+        "usedBy": "使用方",
+        "heads": {
+            "item": "物品",
+            "needed": "需要",
+            "have": "你有",
+            "status": "状态"
+        },
+        "groups": {
+            "base": "基础资源",
+            "crystals": "Steel 和 Fire Crystal",
+            "speedups": "加速，按分钟",
+            "other": "其他物品"
+        },
+        "show": "{count, plural, other {显示 {amount} 个物品}}",
+        "hide": "隐藏物品",
+        "generalNote": "通用加速按各计划设定的份额分配。每个计划在自己的页面检查自己的加速。",
+        "generalSpeedups": "通用加速"
+    },
+    "points": {
+        "title": "积分与战力",
+        "description": "每个计划在四个核心活动中可得的分数，按每个活动得分最高的一天计算。战力是各计划显示的估算值。",
+        "show": "显示",
+        "plan": "计划",
+        "allPlans": "全部计划",
+        "unknownPower": "战力合计不含战力未知的计划。"
+    },
+    "fullPlan": {
+        "title": "完整计划",
+        "description": "已包含计划中的每个目标。队列同时进行，所以最长的一个决定完成时间。",
+        "finishes": "不加额外加速，{time}后完成",
+        "queues": {
+            "construction": "建造",
+            "research": "研究",
+            "training": "训练",
+            "learning": "学习"
+        },
+        "heads": {
+            "plan": "计划",
+            "what": "改变内容",
+            "time": "时间"
+        },
+        "open": "打开计划",
+        "noTimer": "无计时",
+        "edit": "编辑计划"
+    },
+    "empty": {
+        "title": "还没有已保存的计划",
+        "description": "在某个页面设定目标并保存其计划。每个已保存的计划都会显示在这里。"
+    },
+    "allOff": {
+        "title": "所有计划都已关闭",
+        "description": "在上方重新打开某个计划，即可查看它的合计。"
+    },
+    "beastsName": "野兽"
+}

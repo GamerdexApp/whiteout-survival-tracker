@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { usePlaythrough } from "@/lib/contexts/PlaythroughContext";
 import { formatNumber } from "@/lib/format";
+import { availablePlanIds } from "@/service/planOverview";
 import { constructionJobs, learningJobs, researchJobs, trainingJobs } from "@/service/queues";
 import type { NavItem } from "@/data/nav";
 import { isNavItemActive, navGroups, settingsNavItem } from "@/data/nav";
@@ -19,6 +20,7 @@ function useQueueCounts(): Record<string, number> {
 	const { activePlaythrough } = usePlaythrough();
 	if (!activePlaythrough) return {};
 	return {
+		"/plan-overview": availablePlanIds(activePlaythrough).length,
 		"/buildings": constructionJobs(activePlaythrough).length,
 		"/research": researchJobs(activePlaythrough).length,
 		"/troops": trainingJobs(activePlaythrough).length,
@@ -35,6 +37,7 @@ function SidebarLink({
 	count?: number;
 	onNavigate?: () => void;
 }) {
+	const countKey = item.id === "planOverview" ? "plansSaved" : "upgradesRunning";
 	const t = useTranslations("shell.nav");
 	const pathname = usePathname();
 	const active = isNavItemActive(item, pathname);
@@ -59,7 +62,7 @@ function SidebarLink({
 				>
 					<span aria-hidden="true">{formatNumber(count)}</span>
 					<span className="sr-only">
-						{t("upgradesRunning", { count, amount: formatNumber(count) })}
+						{t(countKey, { count, amount: formatNumber(count) })}
 					</span>
 				</span>
 			)}
@@ -87,14 +90,18 @@ export function SidebarContent({ onNavigate }: { onNavigate?: () => void }) {
 								{t(`groups.${group.id}`)}
 							</SectionLabel>
 						)}
-						{group.items.map((item) => (
-							<SidebarLink
-								key={item.href}
-								item={item}
-								count={queueCounts[item.href]}
-								onNavigate={onNavigate}
-							/>
-						))}
+						{group.items
+							.filter(
+								(item) => item.id !== "planOverview" || queueCounts[item.href] > 0
+							)
+							.map((item) => (
+								<SidebarLink
+									key={item.href}
+									item={item}
+									count={queueCounts[item.href]}
+									onNavigate={onNavigate}
+								/>
+							))}
 					</div>
 				))}
 			</nav>

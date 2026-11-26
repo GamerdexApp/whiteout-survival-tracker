@@ -31,6 +31,7 @@ import labyrinth from "./es-419/labyrinth.json";
 import landing from "./es-419/landing.json";
 import overview from "./es-419/overview.json";
 import pets from "./es-419/pets.json";
+import planOverview from "./es-419/planOverview.json";
 import queues from "./es-419/queues.json";
 import research from "./es-419/research.json";
 import resources from "./es-419/resources.json";
@@ -101,6 +102,7 @@ const es419: PartialMessages = {
   landing,
   overview,
   pets,
+  planOverview,
   queues,
   research,
   resources,

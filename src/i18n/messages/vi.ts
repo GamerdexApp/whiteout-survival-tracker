@@ -31,6 +31,7 @@ import labyrinth from "./vi/labyrinth.json";
 import landing from "./vi/landing.json";
 import overview from "./vi/overview.json";
 import pets from "./vi/pets.json";
+import planOverview from "./vi/planOverview.json";
 import queues from "./vi/queues.json";
 import research from "./vi/research.json";
 import resources from "./vi/resources.json";
@@ -101,6 +102,7 @@ const vi: PartialMessages = {
   landing,
   overview,
   pets,
+  planOverview,
   queues,
   research,
   resources,

@@ -30,6 +30,7 @@ import labyrinth from "./en/labyrinth.json";
 import landing from "./en/landing.json";
 import overview from "./en/overview.json";
 import pets from "./en/pets.json";
+import planOverview from "./en/planOverview.json";
 import queues from "./en/queues.json";
 import research from "./en/research.json";
 import resources from "./en/resources.json";
@@ -89,6 +90,7 @@ const en = {
   troops,
   experts,
   pets,
+  planOverview,
   alliance,
   tech,
   facilities,

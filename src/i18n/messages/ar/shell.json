@@ -34,9 +34,11 @@
             "wikiReference": "المرجع",
             "wikiTimeline": "الجدول الزمني",
             "settings": "الإعدادات",
-            "chiefs": "القادة"
+            "chiefs": "القادة",
+            "planOverview": "نظرة عامة على الخطط"
         },
-        "upgradesRunning": "{count, plural, zero {، {amount} ترقية قيد التنفيذ} one {، {amount} ترقية قيد التنفيذ} two {، {amount} ترقيتان قيد التنفيذ} few {، {amount} ترقيات قيد التنفيذ} many {، {amount} ترقية قيد التنفيذ} other {، {amount} ترقية قيد التنفيذ}}"
+        "upgradesRunning": "{count, plural, zero {، {amount} ترقية قيد التنفيذ} one {، {amount} ترقية قيد التنفيذ} two {، {amount} ترقيتان قيد التنفيذ} few {، {amount} ترقيات قيد التنفيذ} many {، {amount} ترقية قيد التنفيذ} other {، {amount} ترقية قيد التنفيذ}}",
+        "plansSaved": "، {amount} {count, plural, one {خطة} other {خطط}} محفوظة"
     },
     "appShell": {
         "skipToContent": "التخطي إلى المحتوى",

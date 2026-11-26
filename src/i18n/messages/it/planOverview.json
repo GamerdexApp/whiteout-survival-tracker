@@ -1,0 +1,70 @@
+{
+    "subline": "I tuoi piani salvati sommati: cosa usano, quanto fanno punti e quando finiscono.",
+    "plans": {
+        "title": "Piani in questo riepilogo",
+        "noPlan": "Nessun piano",
+        "hint": "Qui compaiono solo i piani salvati. Disattiva un piano per nasconderlo in tutta questa pagina: totali, risorse, punti e piano completo. Salva un piano nella sua pagina per aggiungerlo.",
+        "addBeasts": "Aggiungi piano"
+    },
+    "tiles": {
+        "svs": "Punti SvS puntati",
+        "short": "Oggetti mancanti",
+        "longest": "Coda più lunga"
+    },
+    "resources": {
+        "description": "Quello che tutti i piani inclusi prendono insieme dalle tue scorte. Meat, Wood, Coal e Iron contano i pacchetti dello zaino e i Custom Resource Chest.",
+        "usedBy": "Usato da",
+        "heads": {
+            "item": "Oggetto",
+            "needed": "Necessario",
+            "have": "Hai",
+            "status": "Stato"
+        },
+        "groups": {
+            "base": "Risorse di base",
+            "crystals": "Steel e Fire Crystal",
+            "speedups": "Accelerazioni, in minuti",
+            "other": "Altri oggetti"
+        },
+        "show": "{count, plural, one {Mostra {amount} oggetto} other {Mostra {amount} oggetti}}",
+        "hide": "Nascondi gli oggetti",
+        "generalNote": "Le accelerazioni generali si dividono secondo la quota che imposta ogni piano. Ogni piano controlla le sue accelerazioni nella sua pagina.",
+        "generalSpeedups": "Accelerazioni generali"
+    },
+    "points": {
+        "title": "Punti e potenza",
+        "description": "Quanto può fare punti ogni piano nei quattro eventi principali, nel giorno di ogni evento che vale di più. La potenza è la stima che mostra ogni piano.",
+        "show": "Mostra",
+        "plan": "Piano",
+        "allPlans": "Tutti i piani",
+        "unknownPower": "Il totale della potenza lascia fuori i piani con potenza sconosciuta."
+    },
+    "fullPlan": {
+        "title": "Piano completo",
+        "description": "Ogni obiettivo dei piani inclusi. Le code corrono in parallelo, quindi la più lunga stabilisce la fine.",
+        "finishes": "Finisce tra {time} senza accelerazioni extra",
+        "queues": {
+            "construction": "Costruzione",
+            "research": "Ricerca",
+            "training": "Addestramento",
+            "learning": "Apprendimento"
+        },
+        "heads": {
+            "plan": "Piano",
+            "what": "Cosa cambia",
+            "time": "Tempo"
+        },
+        "open": "Apri il piano",
+        "noTimer": "Nessun timer",
+        "edit": "Modifica piano"
+    },
+    "empty": {
+        "title": "Ancora nessun piano salvato",
+        "description": "Imposta degli obiettivi in una pagina e salva il suo piano. Ogni piano salvato compare qui."
+    },
+    "allOff": {
+        "title": "Tutti i piani sono disattivati",
+        "description": "Riattiva un piano qui sopra per vedere i suoi totali."
+    },
+    "beastsName": "Bestie"
+}

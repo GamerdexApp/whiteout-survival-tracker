@@ -34,9 +34,11 @@
             "wikiReference": "Справочник",
             "wikiTimeline": "Хронология",
             "settings": "Настройки",
-            "chiefs": "Вожди"
+            "chiefs": "Вожди",
+            "planOverview": "Обзор планов"
         },
-        "upgradesRunning": ", {count, plural, one {идёт {amount} улучшение} few {идут {amount} улучшения} many {идут {amount} улучшений} other {идут {amount} улучшения}}"
+        "upgradesRunning": ", {count, plural, one {идёт {amount} улучшение} few {идут {amount} улучшения} many {идут {amount} улучшений} other {идут {amount} улучшения}}",
+        "plansSaved": ", сохранено {count, plural, one {{amount} план} few {{amount} плана} many {{amount} планов} other {{amount} плана}}"
     },
     "appShell": {
         "skipToContent": "Перейти к содержимому",

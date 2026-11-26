@@ -31,6 +31,7 @@ import labyrinth from "./th/labyrinth.json";
 import landing from "./th/landing.json";
 import overview from "./th/overview.json";
 import pets from "./th/pets.json";
+import planOverview from "./th/planOverview.json";
 import queues from "./th/queues.json";
 import research from "./th/research.json";
 import resources from "./th/resources.json";
@@ -101,6 +102,7 @@ const th: PartialMessages = {
   landing,
   overview,
   pets,
+  planOverview,
   queues,
   research,
   resources,
